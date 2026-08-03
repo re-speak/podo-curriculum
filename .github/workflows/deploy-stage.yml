@@ -8,6 +8,7 @@ on:
       - "shared/**"
       - "curriculum.yaml"
       - "tools/**"
+      - ".github/workflows/deploy-stage.yml"
   workflow_dispatch:
 
 # One deploy at a time. Two concurrent applies would race on the state lock and
