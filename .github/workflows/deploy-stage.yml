@@ -1,0 +1,58 @@
+name: deploy-stage
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "courses/**"
+      - "shared/**"
+      - "curriculum.yaml"
+      - "tools/**"
+  workflow_dispatch:
+
+# One deploy at a time. Two concurrent applies would race on the state lock and
+# the loser's row ids would be lost — which means duplicate courses next run.
+concurrency:
+  group: deploy-stage
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    environment: stage
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r tools/requirements.txt
+
+      - name: validate
+        run: python3 tools/validate.py --contract --env stage
+        env:
+          PODO_LEMONBOARD_API_KEY: ${{ secrets.PODO_LEMONBOARD_API_KEY_STAGE }}
+
+      - name: apply
+        run: python3 tools/apply.py --env stage
+        env:
+          PODO_CURRICULUM_SYNC_TOKEN: ${{ secrets.PODO_CURRICULUM_SYNC_TOKEN }}
+
+      # The lock is the only record of which DB rows belong to which slug.
+      # Losing it means the next apply creates duplicates, so commit it even
+      # when apply partially failed.
+      - name: commit the state lock
+        if: always()
+        run: |
+          if git diff --quiet -- state/; then
+            echo "state unchanged"; exit 0
+          fi
+          git config user.name  "podo-curriculum[bot]"
+          git config user.email "podo-curriculum@users.noreply.github.com"
+          git add state/
+          git commit -m "chore(state): record stage apply for ${GITHUB_SHA::7}"
+          git push
