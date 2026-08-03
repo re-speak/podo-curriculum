@@ -21,7 +21,11 @@ permissions:
 
 jobs:
   apply:
-    runs-on: ubuntu-latest
+    # The org enforces an IP allow list, so GitHub-hosted runners cannot even
+    # check out. day1-runner-respeak is also inside the network, which is what
+    # lets apply reach grape at *.podo.internal at all.
+    runs-on: day1-runner-respeak
+    timeout-minutes: 20
     environment: stage
     steps:
       - uses: actions/checkout@v4
