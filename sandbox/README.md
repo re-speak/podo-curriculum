@@ -18,3 +18,9 @@ reviewed, referred back to, or picked up by someone else.
 
 Promote something by moving it into `courses/<lang>/<course>/lessons/<NN-slug>/`
 and giving it a `lesson.yaml`. That move is the promotion — there is no flag to flip.
+
+## viewers/
+
+`deck-index.html` and `viewer.html` browse decks by relative path. Both were
+written for the old `korean/tracks/…` layout and their links are stale here —
+they need repointing at `courses/<lang>/<course>/lessons/` before they work again.

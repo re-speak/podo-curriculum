@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <meta name="podo:lesson-id" content="trial-1-report">
+  <meta name="podo:content-version" content="2026-07-27">
+  <title>ニーズ把握 ＆ 맞춤 리포트 — PODO 韓国語</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <link rel="stylesheet" href="../trial.css">
+  <style>
+  /* ================================================================
+     NEEDS + REPORT · trial-1 에서 잘라낸 상담 파트
+     앞쪽(니즈 3장 + 레벨 체크)은 trial-1-hangul.html 그대로. 뒤쪽 리포트
+     3장은 _experiments/trial-report-rebuild.html v5 의 설계를 적용했다.
+
+     리포트는 학습자가 직접 읽는 화면이라 단일 언어다 — 초록 튜터 스크립트
+     박스도, 일본어 병기도 없다(지금은 한국어, 실제 출시는 일본어).
+     흐름: ① 지금 레벨 → ② 항목별 진단 → ③ 도착 예측.
+
+     클래스 이름에 lvc- 접두사를 쓴 이유: trial.css 가 .opt-row .lv-badge 를
+     이미 쓰고 있어서, 목표 선택지의 번호 배지와 충돌하지 않게 갈라 둔다.
+     ================================================================ */
+
+  /* ---------- 목표 선택지 ----------
+     이유 하나가 묶음 하나, 그 안의 세 줄이 그 이유로 갈 수 있는 거리다.
+     묶음 제목은 앞 장의 학습 동기를 글자 그대로 되받고, 오른쪽 배지는 그
+     줄이 도착하는 레벨 — 처음 보는 사람에게 "Lv.7" 은 아무 크기도 아니라서
+     /10 을 붙여 둔다. */
+  /* 카드 하나 = 도착 레벨 하나. 제목이 거리를 말하고, 속의 줄들이 그 거리가
+     이 사람에게 무슨 뜻인지를 이유별로 말한다 — 고를 것은 넷, 읽을 것은
+     자기가 고른 이유의 수만큼. */
+  /* 학습 동기 줄의 그림 — 이모지 자리를 그대로 대신한다 */
+  .opt-row .r-ico { flex: none; width: 30px; height: 30px; object-fit: contain; }
+
+  .goal-list { display: grid; gap: 12px; }
+  .glc {
+    display: block; width: 100%; padding: 15px 16px 14px; text-align: left;
+    border: 1.5px solid #1c1c1c; border-radius: 15px; background: #fff;
+    font-family: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent;
+    transition: transform .09s, background .12s, box-shadow .12s;
+  }
+  .glc:active { transform: scale(.99); }
+  .glc.on { background: #b5fd4c; box-shadow: 0 4px 0 #1c1c1c; }
+  .glc-h { display: flex; align-items: center; gap: 13px; }
+  /* 도착 지점은 숫자가 아니라 막대로 — 「Lv.7」 은 처음 보는 사람에게 크기가
+     없는 말이고, 넉 칸 중 몇 칸인지는 세지 않아도 보인다. */
+  .glc-b { flex: none; display: flex; align-items: flex-end; gap: 3.5px; height: 26px; padding: 0 2px; }
+  .glc-b i { width: 5px; border-radius: 3px; background: #dcdcd6; }
+  .glc-b i:nth-child(1) { height: 9px; }
+  .glc-b i:nth-child(2) { height: 15px; }
+  .glc-b i:nth-child(3) { height: 21px; }
+  .glc-b i:nth-child(4) { height: 26px; }
+  .glc-b i.on { background: #1c1c1c; }
+  .glc.on .glc-b i { background: rgba(28,28,28,.26); }
+  .glc.on .glc-b i.on { background: #1c1c1c; }
+  .glc-n { font-size: 15.5px; font-weight: 900; color: #1c1c1c; line-height: 1.3; }
+  .glc-n small { display: block; margin-top: 2px; font-size: 11.5px; font-weight: 700; color: #a5a5a0; }
+  .glc.on .glc-n small { color: rgba(28,28,28,.55); }
+  /* 이유별 「할 수 있게 되는 일」 — 고른 이유의 줄만 남는다 */
+  .glc-l { display: grid; gap: 7px; margin-top: 13px; padding-top: 12px; border-top: 1.5px dashed #e4e4de; }
+  .glc.on .glc-l { border-top-color: rgba(28,28,28,.22); }
+  .glc-i { display: grid; grid-template-columns: 22px 1fr; column-gap: 9px; align-items: center; }
+  .glc-i.hide, .glc-e.hide { display: none; }
+  /* 이유 그림은 PODO 앱 온보딩과 같은 것을 쓴다 — 앱에서 고른 이유와
+     상담에서 고른 이유가 같은 그림이면, 설명 없이 같은 질문으로 읽힌다. */
+  .glc-ico { width: 22px; height: 22px; object-fit: contain; }
+  .glc-i b { font-size: 13.5px; font-weight: 800; color: #1c1c1c; line-height: 1.4; word-break: keep-all; }
+  .glc-i em {
+    grid-column: 2; margin-top: 1px; font-style: normal; font-size: 11.5px;
+    font-weight: 600; color: #8a8a85; line-height: 1.4; word-break: keep-all;
+  }
+  .glc.on .glc-i em { color: rgba(28,28,28,.58); }
+  .glc-e { font-size: 12px; font-weight: 600; color: #a5a5a0; line-height: 1.45; }
+
+  /* 리포트 페이지는 튜터 스크립트 대신 담담한 부제를 쓴다 */
+  .rv-sub { margin: 8px 0 24px; font-size: 14px; font-weight: 500; color: #8a8a85; line-height: 1.55; word-break: keep-all; }
+  /* trial.css 가 700 으로 세워 둔 본문을 낮춘다 — 굵기는 제목·수치에만 */
+  .rep-page .rep-why { font-weight: 500; color: #6f6f6a; }
+  .rep-page .rf .k { font-weight: 500; }
+
+  /* ---------- ① 지금 레벨 — 리포트를 여는 초록 카드 ----------
+     헤더(키커·제목·부제) 없이 카드로 리포트를 연다.
+     읽는 순서: 마스코트+레벨 → 눈금(어디쯤) → 문단(무엇을) →
+     근거 3줄(항목별로 어디가 되고 어디가 아직인지) → TOPIK(공인 기준). */
+  .lvc { background: #f2fce0; border-radius: 15px; padding: 32px 26px; }
+  .lvc-top { display: flex; align-items: center; gap: 18px; }
+  .lvc-top img { flex: none; width: 100px; height: auto; }
+  .lvc-badge { display: inline-block; padding: 5px 13px; border-radius: 999px; background: #1c1c1c; color: #b5fd4c; font-size: 13px; font-weight: 900; letter-spacing: .01em; }
+  .lvc-line { margin: 9px 0 0; font-size: 19px; font-weight: 900; color: #1c1c1c; line-height: 1.35; word-break: keep-all; }
+  .lvc-line b { color: #4f9a1e; font-weight: 900; }
+
+  /* 레벨 눈금 — 총 10단계 중 지금 자리.
+     한 칸 = 한 레벨이라 단계 수가 세어지고, 칸·숫자 모두 flex:1 이라
+     간격이 저절로 균등해진다. */
+  .lad { margin: 22px 0 0; }
+  .lad-segs { display: flex; gap: 3px; }
+  .lad-segs span { flex: 1 1 0; height: 8px; border-radius: 3px; background: #ddeec2; }
+  .lad-segs span.on { background: #6abe36; }
+  .lad-nums { display: flex; gap: 3px; margin-top: 9px; }
+  .lad-nums span { flex: 1 1 0; text-align: center; font-size: 10.5px; font-weight: 700; color: #a8bd8c; }
+  .lad-nums span.on { font-size: 11.5px; font-weight: 900; color: #1c1c1c; }
+
+  .lvc-panel { margin: 16px 0 0; padding: 17px 18px 15px; border-radius: 14px; background: #fff; }
+  .lvc-diag { margin: 0; font-size: 14px; font-weight: 500; line-height: 1.72; color: #55554f; word-break: keep-all; }
+  .lvc-diag b { font-weight: 800; color: #1c1c1c; }
+
+  /* 오늘 수업 근거 3줄 (✓ 된 것 · · 아직인 것) */
+  .lvc-ev { margin: 15px 0 0; padding: 0; list-style: none; }
+  .lvc-ev li { display: flex; gap: 9px; align-items: flex-start; padding: 4px 0; font-size: 13px; font-weight: 600; line-height: 1.5; color: #55554f; word-break: keep-all; }
+  .lvc-ev i { flex: none; width: 17px; height: 17px; margin-top: 1px; border-radius: 50%; display: grid; place-items: center; font-size: 10px; font-style: normal; font-weight: 900; color: #fff; background: #6abe36; }
+  .lvc-ev li.miss i { background: #dcdbd6; color: #6f6f6a; }
+
+  /* 공인 시험 기준 — 급수를 숫자로 못박는다 */
+  .lvc-cert { display: flex; align-items: baseline; gap: 9px; margin-top: 15px; padding-top: 14px; border-top: 1px solid #f0efeb; }
+  .lvc-cert i { flex: none; align-self: center; padding: 4px 10px; border-radius: 999px; background: #1c1c1c; color: #fff; font-size: 11px; font-weight: 900; font-style: normal; letter-spacing: .02em; }
+  .lvc-cert b { font-size: 15px; font-weight: 900; color: #1c1c1c; }
+  .lvc-cert span { font-size: 12.5px; font-weight: 600; color: #8a8a85; word-break: keep-all; }
+
+  /* ---------- ② 레이더 (지금 채움 vs 평균 외곽) ---------- */
+  .rad-legend { display: flex; justify-content: center; gap: 24px; margin: 4px 0 0; }
+  .rad-legend span { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: #1c1c1c; }
+  .rad-legend i { width: 14px; height: 14px; border-radius: 5px; }
+  .rad-legend i.avg { border: 2px dashed #b4b4b0; background: none; border-radius: 4px; }
+  .rad { display: block; width: 100%; height: auto; margin: -2px auto 6px; }
+
+  /* ---------- 항목별 카드 ----------
+     한 항목 = 한 장. 눈금은 ① 지금 레벨 카드의 10칸 사다리를 다시 쓴다 —
+     같은 척도를 두 가지 그림으로 보여 주면 읽는 사람이 매번 환산해야 한다.
+     테두리는 없다: 리포트는 읽는 문서라 다섯 장이 먹선으로 둘러싸이면 화면이
+     칸으로 쪼개져 읽히고, 정작 눈이 가야 할 초록 눈금과 라임 배지가 묻힌다.
+     경계는 옅은 배경색만으로 낸다.
+     아이콘은 Figma「❤️ PODO JP」> 일본어 리포트 의 항목 아이콘(ㅈ/A 라인
+     아트)을 먹색으로 바꿔 가져왔다. */
+  .axcard { margin-top: 14px; border-radius: 18px; background: #fafaf7; overflow: hidden; }
+
+  .axc-top { display: flex; align-items: center; gap: 13px; padding: 17px 18px 0; }
+  .axc-ico { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 15px; background: #eaffc9; }
+  .axc-ico img { width: 33px; height: 33px; }
+  .axc-name { font-size: 16px; font-weight: 900; color: #1c1c1c; }
+  /* 레벨 숫자는 이 배지에만 있다 — 눈금·문장에서 다시 반복하지 않는다 */
+  .axc-lv { margin-left: auto; padding: 4px 11px; border-radius: 999px; background: #b5fd4c; font-size: 12.5px; font-weight: 900; color: #1c1c1c; }
+
+  /* 10칸 사다리 + 평균이 서 있는 칸 */
+  .axc-lad { padding: 16px 18px 0; }
+  .axc-segs { display: flex; gap: 3px; }
+  .axc-segs span { flex: 1 1 0; height: 8px; border-radius: 3px; background: #ebebe6; }
+  .axc-segs span.on { background: #6abe36; }
+  .axc-mark { position: relative; height: 15px; margin-top: 5px; }
+  .axc-mark b { position: absolute; transform: translateX(-50%); white-space: nowrap; font-size: 10px; font-weight: 800; color: #a6a6a1; }
+
+  .axc-tx { margin: 13px 0 0; padding: 0 18px 17px; font-size: 13.5px; font-weight: 500; line-height: 1.6; color: #5a5a56; word-break: keep-all; }
+
+  /* 추천은 카드 안의 아래층 — 살짝 짙은 바탕으로만 나눈다 */
+  .axc-tip { display: flex; gap: 10px; padding: 13px 18px; background: #f1f3ea; }
+  .axc-tip .ic { flex: none; font-size: 14px; line-height: 1.5; }
+  .axc-tip .t { font-size: 12.5px; font-weight: 500; color: #4d5a3a; line-height: 1.6; word-break: keep-all; }
+  .axc-tip .t b { margin-right: 5px; font-weight: 900; color: #3d6b1e; }
+
+  /* ---------- ③ 도착 예측 ----------
+     레이더와 같은 꼴로 둔다: 범례 한 줄 + 테두리 없는 전폭 그래프. 그래프를
+     카드에 넣으면 박스 안의 박스가 되고, 안쪽 여백만큼 선이 쪼그라든다.
+     레이더는 면(네모 칩)을 두 개 비교하지만 여기는 선 두 개라, 같은 범례
+     골격에 칩만 선으로 바꿔 끼운다. */
+  .rep-legend i { width: 18px; height: 3px; border-radius: 2px; background: #6abe36; }
+  .rep-legend i.slow { height: 0; border-top: 2px dashed #b4b4b0; border-radius: 0; background: none; }
+  .rep-legend b { font-weight: 700; }
+
+  /* ================================================================
+     ⓪ 튜터 콘솔 · 레벨 체크
+     리포트 전체가 이 선택에서 파생되므로 페이지 맨 위에 둔다. 학습자에게는
+     아예 없는 블록이고(teaching 모드에서만 뜬다), 고르고 나면 한 줄로
+     접힌다 — 튜터도 폼을 채우러 온 게 아니라 리포트를 보러 온 사람이다.
+     선택 자체는 공유된다: 컨트롤만 튜터의 것이고, 결과인 리포트는 둘 다
+     같은 걸 봐야 한다.
+     ================================================================ */
+  .tcon { display: none; }
+  body.teaching .tcon { display: block; margin: 0 0 28px; }
+  .tcon-body { padding: 18px 18px 16px; border: 1.5px dashed #1c1c1c; border-radius: 14px; background: #fbfbf8; }
+  .tcon.folded .tcon-body { display: none; }
+  .tcon:not(.folded) .tcon-sum { display: none; }
+
+  .tcon-sum { display: flex; align-items: center; gap: 10px; width: 100%; padding: 11px 14px; border: 1.5px dashed #1c1c1c; border-radius: 12px; background: #fbfbf8; font-family: inherit; text-align: left; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .tcon-sum .ts-lv { flex: none; padding: 3px 10px; border-radius: 999px; background: #1c1c1c; color: #b5fd4c; font-size: 12px; font-weight: 900; }
+  .tcon-sum .ts-ax { flex: 1 1 auto; min-width: 0; font-size: 12px; font-weight: 700; color: #6f6f6a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tcon-sum .ts-go { flex: none; font-size: 11.5px; font-weight: 800; color: #4a7a2a; }
+
+  .tcon-h { display: flex; align-items: baseline; gap: 8px; font-size: 15px; font-weight: 900; color: #1c1c1c; }
+  .tcon-h small { font-size: 11px; font-weight: 800; color: #8a8a85; }
+  .tcon-q { margin: 17px 0 0; font-size: 12.5px; font-weight: 800; color: #55554f; }
+  .tcon-q small { font-weight: 600; color: #8a8a85; }
+  .tcon .lvpick { gap: 7px; margin-top: 10px; }
+  .tcon .lvrow { gap: 11px; padding: 9px 12px; border-radius: 11px; }
+  .tcon .lvrow .lvn { width: 28px; height: 28px; border-radius: 8px; font-size: 14px; }
+  .tcon .lvrow .lvt { font-size: 13.5px; }
+  .tcon .lvrow .lvs { margin-top: 1px; font-size: 11px; }
+
+  /* 항목별 — 10칸 칩 한 줄. 종합 레벨과 다를 때만 튜터가 손을 댄다. */
+  .axpick { display: grid; gap: 8px; margin-top: 10px; }
+  .axrow { display: flex; align-items: center; gap: 10px; }
+  .axrow .axn { flex: none; width: 44px; font-size: 12.5px; font-weight: 800; color: #1c1c1c; }
+  .axchips { flex: 1 1 auto; display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; }
+  .axchips button { padding: 6px 0; border: 1.5px solid #ddddd8; border-radius: 7px; background: #fff; font-family: inherit; font-size: 11.5px; font-weight: 800; color: #9a9a95; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .axchips button.on { border-color: #1c1c1c; background: #b5fd4c; color: #1c1c1c; }
+  /* 손대지 않은 항목이 종합 레벨을 따라가고 있다는 표시 — 고른 것과는 다르게 옅다 */
+  .axchips button.echo { border-color: #cfcfc9; background: #f4f4f1; color: #55554f; }
+  .tcon-fold { width: 100%; margin-top: 18px; padding: 10px; border: 1.5px solid #1c1c1c; border-radius: 11px; background: #fff; font-family: inherit; font-size: 13px; font-weight: 800; color: #1c1c1c; cursor: pointer; }
+
+  /* ---------- 한 장으로 합친 리포트 ----------
+     ①②③ 이 한 페이지 안에서 이어지므로 블록 사이는 가는 선으로만 나눈다.
+     초록 카드는 이제 페이지가 아니라 페이지 안의 첫 블록이다. */
+  .rep-all .rep-sec { margin-top: 34px; padding-top: 30px; border-top: 1.5px solid #ececea; }
+  .rep-all .rv-sub { margin-bottom: 20px; }
+  .rep-all .lvc { margin: 0; }
+  .rep-all .trks { margin-top: 6px; }
+
+  /* ---------- 학습 순서 ----------
+     한 카드 = 한 코스. 아이콘이 먼저 보이고, 그 코스에서 실제로 하게 되는
+     말 한 줄이 증거로 붙는다. 기간·레슨 수는 일부러 넣지 않는다 — 그 숫자는
+     위 그래프가 이미 말했고, 여기서 다시 세면 카탈로그처럼 읽힌다. */
+  .cmap { margin-top: 12px; }
+  .cst { position: relative; padding: 15px 16px 16px; border-radius: 16px; background: #f6f6f3; }
+  .cst + .cst { margin-top: 28px; }
+  /* 카드 사이를 잇는 세로선 — 순서가 있다는 표시 */
+  .cst + .cst::before {
+    content: ""; position: absolute; left: 56px; top: -28px;
+    width: 2px; height: 28px; background: #cfe8b4;
+  }
+  .cst-top { display: flex; align-items: center; gap: 15px; }
+  .cst-b { flex: 1 1 auto; min-width: 0; }
+
+  /* 강의 커버 — 색 바탕 + 그림 + 짧은 이름. 원본 아이콘에 구워져 있던
+     흰 타일을 벗겨 낸 그림을 쓰기 때문에 바탕색이 그대로 보인다.
+     테두리는 없다: 카드 안의 카드가 되면 상자가 세 겹이 된다. */
+  .cst-cov {
+    position: relative; flex: none; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 1px;
+    width: 82px; height: 100px; border-radius: 16px; overflow: hidden;
+  }
+  .cst-cov img { width: 52px; height: 52px; object-fit: contain; }
+  .cst-cov em { font-style: normal; font-size: 11px; font-weight: 900; color: #1c1c1c; letter-spacing: -.01em; }
+  /* 그래프의 마디와 같은 동그라미 — 번호도 모양도 같아야 이어진다 */
+  .cst-n {
+    position: absolute; top: 6px; left: 6px; display: grid; place-items: center;
+    width: 21px; height: 21px; border: 1.5px solid #1c1c1c; border-radius: 50%;
+    background: #b5fd4c; font-size: 11.5px; font-weight: 900; color: #1c1c1c;
+  }
+  .cst-t { font-size: 17px; font-weight: 900; color: #1c1c1c; }
+  .cst-flag {
+    display: inline-block; margin-left: 8px; padding: 3px 9px; border-radius: 999px;
+    background: #1c1c1c; color: #b5fd4c; font-size: 10.5px; font-weight: 900; vertical-align: 3px;
+  }
+  .cst-s { display: block; margin-top: 5px; font-size: 12.5px; font-weight: 600; color: #8a8a85; line-height: 1.45; word-break: keep-all; }
+  /* 그 코스를 마치면 할 수 있게 되는 말 — 위 그래프의 마디에 붙어 있던 그
+     한 줄을 그대로 받아서(굵은 줄), 예문 하나로 한 번 더 푼다. */
+  .cst-l {
+    display: flex; align-items: flex-start; gap: 10px; margin-top: 14px; padding: 12px 13px;
+    border-radius: 11px; background: #fff;
+  }
+  .cst-l i {
+    flex: none; display: grid; place-items: center; width: 18px; height: 18px; margin-top: 1px;
+    border-radius: 50%; background: #6abe36; color: #fff; font-size: 10px; font-style: normal; font-weight: 900;
+  }
+  .cst-l .ct { font-size: 13.5px; font-weight: 800; color: #1c1c1c; line-height: 1.4; word-break: keep-all; }
+  .cst-l .ct em {
+    display: block; margin-top: 4px; font-style: normal;
+    font-size: 12px; font-weight: 600; color: #7d7d78; line-height: 1.5; word-break: keep-all;
+  }
+  .cst.goal { background: #f2fce0; }
+  .cst.goal .cst-l { background: #fff; }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <!-- ============ STEP 2 · NEEDS ============ -->
+    <div class="brand-page divider" data-page-id="needs-intro">
+      <img class="brand-mascot" src="../assets/podo-character.png" alt="">
+      <h2 class="brand-title">니즈 파악<span class="ja">ニーズ把握</span></h2>
+      <p class="brand-sub">あなたのことを教えてください。答えに合わせて、最後のプランが変わります。</p>
+    </div>
+
+    <div class="section" data-page-id="needs-why">
+      <h2 class="section-title">학습 동기 <span class="title-ja">(学ぶきっかけ)</span></h2>
+      <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？いくつ選んでも大丈夫です。</span></p>
+      <div class="opt-list" data-group="why" data-pick="multi" data-sync-id="needs-why" data-sync-kind="selection" data-sync-state="on">
+        <button class="opt-row" data-val="kpop" data-sync-option="kpop"><img class="r-ico" src="../assets/reasons/kpop.png" alt=""><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
+        <button class="opt-row" data-val="travel" data-sync-option="travel"><img class="r-ico" src="../assets/reasons/travel.png" alt=""><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
+        <button class="opt-row" data-val="friend" data-sync-option="friend"><img class="r-ico" src="../assets/reasons/friend.png" alt=""><span class="opt-body"><span class="opt-main">韓国人の友だち・恋人</span><span class="opt-sub">한국인 친구·연인</span></span></button>
+        <button class="opt-row" data-val="work" data-sync-option="work"><img class="r-ico" src="../assets/reasons/work.png" alt=""><span class="opt-body"><span class="opt-main">仕事・転職</span><span class="opt-sub">일·이직</span></span></button>
+        <button class="opt-row" data-val="topik" data-sync-option="topik"><img class="r-ico" src="../assets/reasons/topik.png" alt=""><span class="opt-body"><span class="opt-main">TOPIK・資格</span><span class="opt-sub">TOPIK·자격증</span></span></button>
+        <button class="opt-row" data-val="self" data-sync-option="self"><img class="r-ico" src="../assets/reasons/self.png" alt=""><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
+        <button class="opt-row" data-val="other" data-sync-option="other"><img class="r-ico" src="../assets/reasons/other.png" alt=""><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
+      </div>
+    </div>
+
+    <div class="section" id="p-goal" data-page-id="needs-goal">
+      <h2 class="section-title">목표 <span class="title-ja">(ゴール)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국어로 뭘 할 수 있게 되고 싶어요? 하나만 골라 주세요.</span><span class="ja">韓国語で何ができるようになりたいですか？1つだけ選んでください。</span></p>
+      <!-- ================================================================
+           목표 = 앞 장에서 고른 이유별 사다리
+           고르는 건 거리다. 같은 "여행" 이라도 주문만 하면 되는 사람과 현지에서
+           수다 떨고 싶은 사람은 가는 거리가 다르고, 목표가 정하는 건 주제가
+           아니라 그 거리다 — 그래서 카드 하나가 도착 레벨 하나고, 그 안에서
+           "그 레벨이 나한테 뭔데?" 를 이유별 한 줄로 답한다.
+           선택지를 이유×거리로 늘어놓으면 열여덟 줄이 된다. 고를 것은 넷인데
+           읽을 것이 열여덟이면, 고르는 데 드는 힘이 전부 읽는 데 쓰인다.
+           고르지 않은 이유의 줄은 감춘다(.hide) — 카드(=선택지)는 그대로라
+           보드가 원격 선택을 합성 클릭할 때 옵션이 없어서 놓치는 일은 없다.
+           ================================================================ -->
+      <div class="goal-list" data-group="goal" data-pick="single" data-sync-id="needs-goal" data-sync-kind="selection" data-sync-state="on">
+
+        <button class="glc" data-val="t3" data-sync-option="t3">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="glc-n">短い文で、伝えられる<small>짧은 문장으로 전하기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>好きな曲のサビが、聞き取れる</b><em>좋아하는 노래 후렴이 들리기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>カフェ・お店で注文できる</b><em>카페·가게에서 주문하기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>かんたんなメッセージが送れる</b><em>간단한 메시지 보내기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>同僚と、あいさつを交わせる</b><em>동료와 인사 주고받기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 1級レベルに届く</b><em>TOPIK 1급 수준 가기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>自分のことを、韓国語で話せる</b><em>내 이야기를 한국어로 말하기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+        <button class="glc" data-val="t5" data-sync-option="t5">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="glc-n">身近な話題なら、話が続く<small>익숙한 주제로 대화 이어가기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>歌詞の意味が、だいたい分かる</b><em>가사 뜻이 대충 이해되기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>道を聞いて、困ったときも伝えられる</b><em>길 묻고, 곤란할 때 직접 말하기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>好きなものの話で、盛り上がれる</b><em>좋아하는 것 이야기로 신나게 떠들기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>同僚と、日常のやり取りができる</b><em>동료와 일상적인 대화 하기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 2級（初級）に合格する</b><em>TOPIK 2급 따기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>韓国の人と、日常会話がつづく</b><em>한국 사람과 일상 대화 이어가기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+        <button class="glc" data-val="t7" data-sync-option="t7">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="glc-n">意見も理由も、話せる<small>의견도 이유도 말하기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>ドラマが、字幕なしで分かる</b><em>드라마를 자막 없이 알아듣기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>旅先の人と、おしゃべりが続く</b><em>여행지에서 만난 사람과 수다 떨기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>タメ口で、雑談ができる</b><em>반말로 수다 떨기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>会議が分かって、意見も言える</b><em>회의 알아듣고 의견 말하기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 3〜4級（中級）まで行く</b><em>TOPIK 3~4급까지 가기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>意見と理由まで、自分の言葉で</b><em>의견과 이유까지 내 말로 말하기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+        <button class="glc" data-val="t9" data-sync-option="t9">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="glc-n">どんな話題でも、自由に話せる<small>어떤 주제든 자유롭게 말하기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>バラエティも、そのまま楽しめる</b><em>예능도 그대로 즐기기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>どこへ行っても、言葉で困らない</b><em>어디를 가도 말로 곤란하지 않기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>気持ちも冗談も、そのまま伝わる</b><em>마음도 농담도 그대로 전하기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>韓国語で、商談・面接までできる</b><em>한국어로 상담·면접까지 하기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 5〜6級（高級）をねらう</b><em>TOPIK 5~6급 노리기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>どんな話題でも、自分の言葉で</b><em>어떤 주제든 내 말로 말하기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="section" id="p-pace" data-page-id="needs-pace">
+      <h2 class="section-title">학습 페이스 <span class="title-ja">(学習ペース)</span></h2>
+      <p class="section-subtitle"><span class="ko">일주일에 수업을 몇 번 받고 싶어요?</span><span class="ja">1週間に何回、レッスンを受けたいですか？</span></p>
+      <div class="opt-list" data-group="pace" data-pick="single" data-sync-id="needs-pace" data-sync-kind="selection" data-sync-state="on">
+        <button class="opt-row" data-val="1" data-sync-option="1"><span class="emo">🐢</span><span class="opt-body"><span class="opt-main">주 1회 <span class="title-ja">／週1</span></span><span class="opt-sub">まずは無理なく</span></span></button>
+        <button class="opt-row" data-val="2" data-sync-option="2"><span class="emo">🚶</span><span class="opt-body"><span class="opt-main">주 2회 <span class="title-ja">／週2</span></span><span class="opt-sub">こつこつ</span></span></button>
+        <button class="opt-row" data-val="3" data-sync-option="3"><span class="emo">🏃</span><span class="opt-body"><span class="opt-main">주 3회 <span class="title-ja">／週3</span></span><span class="opt-sub">しっかり</span></span></button>
+        <button class="opt-row" data-val="4" data-sync-option="4"><span class="emo">⚡</span><span class="opt-body"><span class="opt-main">주 4회 <span class="title-ja">／週4</span></span><span class="opt-sub">ぐんぐん</span></span></button>
+        <button class="opt-row" data-val="5" data-sync-option="5"><span class="emo">🚀</span><span class="opt-body"><span class="opt-main">주 5회+ <span class="title-ja">／週5以上</span></span><span class="opt-sub">最短で</span></span></button>
+      </div>
+    </div>
+
+    <!-- ============ REPORT ============ -->
+    <div class="brand-page divider" data-page-id="report-intro">
+      <img class="brand-mascot" src="../assets/podo-character.png" alt="">
+      <h2 class="brand-title">맞춤 리포트<span class="ja">カスタムレポート</span></h2>
+      <p class="brand-sub">今日のレッスンと、選んでもらった答えから作ったレポートです。</p>
+    </div>
+    <!-- ================================================================
+         맞춤 리포트 · 한 장
+         레벨 체크 → ① 지금 레벨 → ② 항목별 진단 → ③ 도착 예측을 한 페이지에
+         모았다. 리포트는 하나의 문서로 읽히는 게 맞고, 스크롤이 기본 보기라
+         따로 쪼갤 이유가 없다. 맨 위 레벨 체크만 튜터 전용이다.
+         ================================================================ -->
+    <div class="section rep-page rep-all" id="p-report" data-page-id="report">
+
+      <!-- ⓪ 튜터 콘솔 — teaching 모드에서만 보이고, 고르면 한 줄로 접힌다 -->
+      <div class="tcon" id="p-level">
+        <button class="tcon-sum" type="button">
+          <span class="ts-lv">Lv.1</span>
+          <span class="ts-ax">항목별 —</span>
+          <span class="ts-go">고치기</span>
+        </button>
+
+        <div class="tcon-body">
+          <span class="tcon-h">레벨 체크 <small>튜터만 보여요</small></span>
+
+          <p class="tcon-q">오늘 수업을 보고, 지금 레벨을 골라 주세요. <small>대부분 1이에요.</small></p>
+          <div class="lvpick" data-group="level" data-pick="single" data-sync-id="plan-level" data-sync-kind="selection" data-sync-state="on">
+            <button class="lvrow" data-val="1" data-sync-option="1"><span class="lvn">1</span><span class="lvb"><span class="lvt">이제 막 시작했어요</span><span class="lvs">A1 · TOPIK 1급 준비</span></span></button>
+            <button class="lvrow" data-val="2" data-sync-option="2"><span class="lvn">2</span><span class="lvb"><span class="lvt">한글을 읽어요</span><span class="lvs">A1+ · TOPIK 1급</span></span></button>
+            <button class="lvrow" data-val="3" data-sync-option="3"><span class="lvn">3</span><span class="lvb"><span class="lvt">짧은 문장을 만들어요</span><span class="lvs">A2 · TOPIK 2급</span></span></button>
+            <button class="lvrow" data-val="4" data-sync-option="4"><span class="lvn">4</span><span class="lvb"><span class="lvt">익숙한 주제로 대화가 이어져요</span><span class="lvs">A2+ · TOPIK 2급</span></span></button>
+            <button class="lvrow" data-val="5" data-sync-option="5"><span class="lvn">5</span><span class="lvb"><span class="lvt">익숙한 주제를 구체적으로 말해요</span><span class="lvs">B1 · TOPIK 3급</span></span></button>
+            <button class="lvrow" data-val="6" data-sync-option="6"><span class="lvn">6</span><span class="lvb"><span class="lvt">이유를 붙여 의견을 말해요</span><span class="lvs">B1+ · TOPIK 3~4급</span></span></button>
+            <button class="lvrow" data-val="7" data-sync-option="7"><span class="lvn">7</span><span class="lvb"><span class="lvt">추상적인 주제도 논리적으로 말해요</span><span class="lvs">B2 · TOPIK 4급</span></span></button>
+            <button class="lvrow" data-val="8" data-sync-option="8"><span class="lvn">8</span><span class="lvb"><span class="lvt">표현이 다양하고 흐름이 자연스러워요</span><span class="lvs">B2+ · TOPIK 4~5급</span></span></button>
+            <button class="lvrow" data-val="9" data-sync-option="9"><span class="lvn">9</span><span class="lvb"><span class="lvt">복잡한 내용도 심층적으로 다뤄요</span><span class="lvs">C1 · TOPIK 5급</span></span></button>
+            <button class="lvrow" data-val="10" data-sync-option="10"><span class="lvn">10</span><span class="lvb"><span class="lvt">전문 분야까지 자유롭게 말해요</span><span class="lvs">C1+ · TOPIK 6급</span></span></button>
+          </div>
+
+          <p class="tcon-q">항목별로 다르면 여기서 조정해 주세요. <small>안 고치면 종합 레벨을 따라가요.</small></p>
+          <div class="axpick">
+            <div class="axrow"><span class="axn">정확성</span>
+              <div class="axchips" data-group="ax-acc" data-pick="single" data-sync-id="ax-acc" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">어휘</span>
+              <div class="axchips" data-group="ax-voc" data-pick="single" data-sync-id="ax-voc" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">유창성</span>
+              <div class="axchips" data-group="ax-flu" data-pick="single" data-sync-id="ax-flu" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">발음</span>
+              <div class="axchips" data-group="ax-pron" data-pick="single" data-sync-id="ax-pron" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">듣기</span>
+              <div class="axchips" data-group="ax-lis" data-pick="single" data-sync-id="ax-lis" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+          </div>
+
+          <button class="tcon-fold" type="button">접고 리포트 보기</button>
+        </div>
+      </div>
+
+      <!-- ① 지금 레벨 · 내용은 레벨 체크에 따라 다시 그려진다 -->
+      <div class="lvc">
+        <div class="lvc-top">
+          <img class="lvc-mascot" src="../assets/mascot-newborn.svg" alt="">
+          <div>
+            <span class="lvc-badge">Lv.1 · 첫걸음</span>
+            <p class="lvc-line">한글을 <b>하나씩 읽어요</b></p>
+          </div>
+        </div>
+
+        <div class="lad">
+          <div class="lad-segs"></div>
+          <div class="lad-nums"></div>
+        </div>
+
+        <div class="lvc-panel">
+          <p class="lvc-diag"></p>
+          <ul class="lvc-ev"></ul>
+          <div class="lvc-cert"><i>TOPIK</i><b>1급</b><span>준비 단계</span></div>
+        </div>
+      </div>
+
+      <!-- ② 항목별 진단 · 레이더 + 다섯 카드. 튜터가 고른 항목별 레벨을
+           같은 수업을 받은 분들의 평균과 견준다. 목표는 여기 없다 — 목표
+           이야기는 ③ 도착 예측이 통째로 맡는다. -->
+      <div class="rep-sec">
+        <h2 class="section-title">항목별 진단</h2>
+        <p class="rv-sub">오늘 수업에서 본 다섯 가지를, 다른 분들과 나란히 놓고 봤어요.</p>
+
+        <div class="rad-legend">
+          <span><i style="background:#6abe36"></i>지금 레벨</span>
+          <span><i class="avg"></i>체험 수업 평균</span>
+        </div>
+        <!-- viewBox 는 그려지는 내용(축 라벨 포함)에 맞춰 잘라 둔 것이다.
+             넉넉히 잡아 두면 아래에 죽은 여백이 100px 넘게 생긴다. -->
+        <svg id="radar" class="rad" viewBox="-18 -12 244 204" role="img" aria-label="항목별 지금 레벨과 평균 레이더"></svg>
+
+        <div class="trks"></div>
+      </div>
+
+      <!-- ③ 도착 예측 · 목표·페이스·레벨에서 파생. 답이 덜 골라졌으면 스켈레톤 -->
+      <div class="rep-sec">
+        <h2 class="section-title">여기서 저기까지, 이렇게</h2>
+        <p class="rv-sub rep-sub">골라 주신 목표와 페이스로, 언제쯤 도착하는지 그려 봤어요.</p>
+
+        <div class="rep-empty" aria-hidden="true">
+          <div class="sk sk-plot">
+            <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+              <path d="M12 104 C 60 100, 150 88, 210 60 C 250 42, 275 26, 288 16" fill="none"
+                    stroke="#e4e4e2" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="12" cy="104" r="5" fill="#e4e4e2"/>
+              <circle cx="210" cy="60" r="5" fill="#e4e4e2"/>
+              <circle cx="288" cy="16" r="6" fill="#dedede"/>
+            </svg>
+          </div>
+          <div class="sk sk-facts"><i></i><i></i><i></i><i></i></div>
+          <div class="sk sk-course"></div>
+          <div class="sk sk-course"></div>
+        </div>
+        <a class="rep-jump" href="#p-goal"><span class="rj-t">—</span><span class="rj-s">눌러서 고르러 가기</span></a>
+
+        <div class="rep">
+          <!-- 레이더의 범례와 같은 마크업 — 그래프 안에 글자를 더 밀어 넣지
+               않으려고 밖으로 뺐다. -->
+          <div class="rad-legend rep-legend">
+            <span><i></i><b class="lg1">—</b></span>
+            <span><i class="slow"></i>독학</span>
+          </div>
+
+          <!-- 격자·축 라벨·두 곡선·마디 모두 renderPlan() 이 그린다: 세로축이
+               '지금 레벨 → 목표 레벨' 이라 눈금이 사람마다 다르고, 곡선 위의
+               점은 아래 학습 순서의 코스 하나하나라 개수도 사람마다 다르다. -->
+          <svg class="rep-plot" viewBox="0 0 340 236" role="img" aria-label="학습 진도 예측 그래프">
+            <defs>
+              <linearGradient id="repline" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#6ABE36"/><stop offset="1" stop-color="#9BEB26"/>
+              </linearGradient>
+              <linearGradient id="reparea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#6ABE36" stop-opacity=".18"/>
+                <stop offset="1" stop-color="#6ABE36" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="rep-grid"></g>
+            <path class="rep-area" d="" fill="url(#reparea)"/>
+            <path class="rep-slow" d="" fill="none"
+                  stroke="#C9C9C9" stroke-width="1.75" stroke-dasharray="4 4" stroke-linecap="round"/>
+            <path class="rep-fast" d="" fill="none"
+                  stroke="url(#repline)" stroke-width="3" stroke-linecap="round"/>
+            <circle class="d0" cx="36" cy="206" r="5" fill="#1C1C1C" stroke="#fff" stroke-width="2"/>
+            <text class="x0" x="36" y="226" font-size="10" fill="#757575" text-anchor="middle">오늘</text>
+            <!-- 코스마다 점 하나 + 그 코스를 마치면 할 수 있게 되는 말 -->
+            <g class="rep-marks"></g>
+          </svg>
+
+          <!-- 표(지금 레벨·페이스·레슨 수)와 추천 코스 목록을 이 카드들로
+               바꿨다. 표는 숫자만 있고 순서가 없었고, 코스 목록은 이름만
+               있어서 그 코스가 뭘 하는 곳인지 안 보였다. 이제 아이콘이 먼저
+               오고, 거기서 실제로 하게 되는 말 한 줄이 붙는다. -->
+          <span class="cgroup-label">나의 학습 순서</span>
+          <div class="cmap"></div>
+          <p class="rep-why"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================================================================
+       PAGER · 한 장씩 넘겨 보는 모드
+       The deck is a flat list of siblings under .phone, so paging is just
+       "show one, hide the rest" — no restructuring. Off by default:
+       scrolling stays the ground truth (printing, Cmd+F, scanning
+       ahead all rely on it), and this is the presentation layer.
+       ================================================================ -->
+  <nav class="pager" data-sync-id="deck-page" data-sync-kind="page">
+    <button class="pg-btn pg-prev" type="button" aria-label="이전 페이지">←</button>
+    <div class="pg-mid">
+      <span class="pg-label"><b class="pg-act">—</b><span class="pg-n">—</span></span>
+    </div>
+    <button class="pg-btn pg-next" type="button" aria-label="다음 페이지">→</button>
+    <button class="pg-btn pg-teach" type="button" aria-label="티칭 모드">T</button>
+    <button class="pg-btn pg-exit" type="button" aria-label="보기 모드 바꾸기">⤢</button>
+  </nav>
+
+
+  <!-- ================================================================
+       SYNC · 레몬보드의 data-sync 계약에 맞춘다
+       https://github.com/re-speak/lemonboard  (apps/web/src/views/meet/lib/html-sync)
+
+       전송(스냅샷·늦은 입장·에코 차단·수렴)은 전부 보드가 한다. 이 문서는
+       "무엇이 공유되는지"만 선언한다.
+
+         - .tap-grid  → data-sync-kind="selection"  (기본 제공)
+                        고른 집합만 오간다. 정/오답은 각자 data-ok 로 계산한다.
+         - .builder   → lessonSync.register("builder")
+         - .pager     → lessonSync.register("page")
+                        둘 다 상태가 클로저에 있어 DOM 만으로는 읽을 수 없다.
+
+       teaching 모드는 공유하지 않는다 — 튜터가 답을 여는 스위치라서,
+       보내면 학습자에게 정답을 그대로 넘기는 셈이 된다.
+
+       레몬보드 밖(로컬에서 파일을 직접 열 때)에서는 lessonSync 가 없으므로
+       아무것도 하지 않는 스텁으로 대체해, 덱 자체는 그대로 동작하게 둔다.
+       ================================================================ -->
+  <script>
+    window.lessonSync = window.lessonSync || {
+      kinds: {},
+      register: function (name, handlers) { this.kinds[name] = handlers; return this; },
+      push: function () {}
+    };
+  </script>
+
+  <!-- ================================================================
+       CONSULTATION · 상담 답변 → 개인 리포트
+       니즈(why·goal·pace)와 튜터가 체크한 레벨(종합 level + 항목별 ax-*)은
+       data-sync-kind="selection" 으로 보드가 동기화한다. 리포트는 파생 상태라
+       전송하지 않고, 양쪽이 각자 같은 입력으로 다시 그린다(정오답을 각자
+       계산하는 것과 같은 원리). 원격 선택이 도착하면 보드가 옵션을 합성 클릭
+       → 아래 핸들러가 돌아 render() 가 다시 호출되므로, 이 스크립트 자체에는
+       sync 코드가 없다.
+
+       레벨 체크 UI 는 튜터에게만 보이지만(teaching), 고른 값은 공유된다 —
+       컨트롤만 튜터의 것이고 결과인 리포트는 둘이 같은 걸 봐야 한다.
+       레슨 수는 korean/ 커리큘럼 실제 분량 기준.
+       ================================================================ -->
+  <script>
+  (function () {
+    /* ---------- 10단계 레벨 ----------
+       사내 레벨표(CEFR·JLPT 대응)를 한국어 학습으로 옮긴 것이다. 눈금 10칸이
+       곧 레벨 1~10 이고, 튜터가 고른 이 값이 리포트 전체의 기준점이 된다.
+       출처: Figma「❤️ PODO JP」> 일본어 리포트 > 레벨표. */
+    var LADDER_STEPS = 10;
+    var LV = {
+      "1":  { name: "첫걸음", mascot: "mascot-newborn.svg",
+              line: '한글을 <b>하나씩 읽어요</b>',
+              diag: '간단한 인사와 자기소개는 <b>따라 말할 수 있어요.</b> 아직 글자를 붙여 읽는 게 느리고, 문장은 한 번에 하나씩 나와요. 지금은 소리와 글자를 손에 익히는 단계예요.',
+              cert: ["1급", "준비 단계 · 아직 응시 전"] },
+      "2":  { name: "글자 떼기", mascot: "mascot-newborn.svg",
+              line: '한글을 <b>막힘 없이 읽어요</b>',
+              diag: '받침이 있는 글자까지 <b>소리 내어 읽어요.</b> 일상적인 주제로 짧은 대화가 오가고, 가게에서 메뉴를 물어보는 정도는 돼요. 아직 아는 단어가 적어서, 읽어도 뜻이 바로 붙지는 않아요.',
+              cert: ["1급", "문턱 · 어휘가 붙으면 사정권"] },
+      "3":  { name: "문장 시작", mascot: "mascot-grad.svg",
+              line: '원하는 대로 <b>주문할 수 있어요</b>',
+              diag: '배운 패턴으로 <b>짧은 문장을 스스로 만들어요.</b> 가게에서 원하는 대로 주문하고, 가족·친구·취미처럼 익숙한 주제로 간단히 이야기해요. 조사와 말끝은 아직 자주 흔들려요.',
+              cert: ["2급", "사정권"] },
+      "4":  { name: "일상 회화", mascot: "mascot-grad.svg",
+              line: '여행에서 <b>혼자서도 괜찮아요</b>',
+              diag: '익숙한 주제라면 <b>주고받는 대화가 이어져요.</b> 여행지에서 만난 한국인과 가벼운 수다도 가능해요. 낯선 화제로 넘어가면 말이 끊기고, 문법도 말할 때는 자주 흔들려요.',
+              cert: ["2급", "3급 문턱"] },
+      "5":  { name: "대화의 폭", mascot: "mascot-grad.svg",
+              line: '익숙한 주제를 <b>구체적으로 말해요</b>',
+              diag: '익숙한 주제를 <b>더 구체적이고 분명하게 말해요.</b> 일 이야기도 가벼운 스몰톡 정도는 오가요. 아직 표현의 폭이 좁아 같은 말이 반복돼요.',
+              cert: ["3급", "사정권"] },
+      "6":  { name: "내 생각", mascot: "mascot-grad.svg",
+              line: '이유를 붙여 <b>내 의견을 말해요</b>',
+              diag: '자기 생각에 <b>이유를 붙여 말할 수 있어요.</b> 가벼운 사회 이슈로도 의견을 주고받아요. 긴 이야기는 아직 앞뒤가 느슨해져요.',
+              cert: ["3~4급", "사정권"] },
+      "7":  { name: "논리", mascot: "mascot-grad.svg",
+              line: '추상적인 주제도 <b>논리적으로 말해요</b>',
+              diag: '추상적인 주제로도 <b>깊은 대화가 이어져요.</b> 사회 이슈를 두고 원어민과 논리적으로 설명하고 되받을 수 있어요. 어휘 선택은 아직 무난한 쪽으로 몰려요.',
+              cert: ["4급", "사정권"] },
+      "8":  { name: "자연스러움", mascot: "mascot-grad.svg",
+              line: '다양한 표현으로 <b>흐름을 이어가요</b>',
+              diag: '다양한 어휘와 표현을 쓰며 <b>대화의 흐름이 자연스러워요.</b> 한국에서 일하게 되어도 빠르게 적응할 수 있는 수준이에요.',
+              cert: ["4~5급", "사정권"] },
+      "9":  { name: "유학파", mascot: "mascot-grad.svg",
+              line: '복잡한 이야기도 <b>바로 알아들어요</b>',
+              diag: '복잡한 내용으로 <b>심층적인 논의가 가능해요.</b> 전문적인 어휘를 쓰고, 어려운 글의 함축적인 의미까지 읽어내요.',
+              cert: ["5급", "사정권"] },
+      "10": { name: "전문가", mascot: "mascot-grad.svg",
+              line: '어떤 자리에서도 <b>막힘이 없어요</b>',
+              diag: '까다로운 주제로 <b>깊이 있는 토론이 가능해요.</b> 전문 분야에서도 자유롭게 소통하고, 전문 지식이 필요한 글도 서슴없이 읽고 말해요.',
+              cert: ["6급", "사정권"] }
+    };
+
+    /* ---------- 항목별 문안 ----------
+       출처: 같은 Figma 파일의 항목 × 레벨대 표(1~2 / 3~4 / 5~6 / 7~8 / 9~10).
+       문장은 그대로 두고 대상 언어만 한국어로 옮겼다. 한 칸이 두 레벨을
+       덮으므로 색인은 ceil(lv / 2) 다.
+       HINT 는 같은 표의 "OO을 보완하려면?" 문단을 한 줄로 줄인 것. */
+    var AREAS = [
+      { k: "acc",  n: "정확성" },
+      { k: "voc",  n: "어휘" },
+      { k: "flu",  n: "유창성" },
+      { k: "pron", n: "발음" },
+      { k: "lis",  n: "듣기" }
+    ];
+    var BAND = {
+      flu: ["익숙한 주제로 더듬더듬 소통이 되는 정도",
+            "익숙한 주제로 간단한 소통을 천천히 하는 정도",
+            "익숙한 주제로 주저 없이 소통되는 정도",
+            "새로운 주제에도 주저 없이 소통이 되는 정도",
+            "새로운 주제에도 빠른 속도로 편하게 소통 가능"],
+      acc: ["간단한 단어와 문법으로, 기초적인 의미는 전달 가능",
+            "어려운 단어·문법은 알지만 복잡한 문장 구조와 순서는 자주 틀림",
+            "어려운 단어·문법은 알지만 복잡한 문장 구조와 순서는 가끔 틀림",
+            "문맥에 맞는 단어·문법·문장 구조 및 순서가 대개 정확",
+            "문맥에 맞는 단어·문법·문장 구조 및 순서가 완벽"],
+      pron:["아는 단어를 신경 써서 말하면, 이해되는 정도",
+            "아는 단어는 말할 수 있지만, 처음 보는 단어는 발음이 어려움",
+            "아는 단어는 능숙하며, 처음 보는 단어도 발음이 가능한 정도",
+            "능숙한 발음과 전체적인 억양, 리듬감도 적절한 정도",
+            "발음이 명확하고 억양과 리듬까지 자연스러움"],
+      lis: ["천천히, 또박또박 말하는 문장을 이해할 수 있음",
+            "천천히 말하는 문장은 이해할 수 있으나, 빨라지면 어려움",
+            "빠르게 말해도, 전반적인 내용을 파악할 수 있음",
+            "빠르게 말해도, 어떤 내용인지 뉘앙스와 함께 이해할 수 있는 정도",
+            "한국인 수준으로 빠르게 말해도 뉘앙스까지 정확히 파악 가능"],
+      voc: ["단순한 단어들로 전달하고픈 의미를 표현할 수 있음",
+            "전달하고픈 의미에 해당하는 단어 2~3개를 알고 있음",
+            "전달하고픈 의미에 맞는 단어를 골라서 적절히 표현 가능",
+            "전달하고픈 의미를 다채로운 단어로 표현 가능",
+            "상황에 맞는 다양한 단어와 표현을 적절하게 활용 가능"]
+    };
+    var HINT = {
+      flu: "다양한 상황에서 소통하는 경험을 늘리기 — 사람과 한국어로 주고받은 양이 그대로 유창성이 돼요.",
+      acc: "단어와 문법의 정확한 뜻·쓰임을 이해하고, 맞는 상황에서 직접 써 보며 충분히 연습하기.",
+      pron: "정확한 발음·억양·리듬을 쓰는 원어민의 한국어를 많이 듣고, 그대로 따라 하며 내 것으로 만들기.",
+      lis: "한국어의 다양한 억양과 속도에 친숙해지기 — 빠르게 말해도 들릴 때까지 여러 사람과 대화해 보기.",
+      voc: "많이 읽어 단어를 알고, 그 단어가 어떤 맥락에서 쓰이는지 원어민과 대화하며 계속 익히기."
+    };
+
+    /* ---------- 견줄 자리 ----------
+       체험 수업을 받은 분들의 항목별 평균. 목표선 대신 이걸 옆에 두는 이유는,
+       처음 온 사람에게 "Lv.3" 은 아무 크기도 아니어서다 — 옆에 사람이 서 있어야
+       비로소 높이가 보인다.
+       TODO(데이터): 아래 값은 실제 코호트 수치가 나오기 전까지 쓰는 임시값이다.
+       숫자만 갈아끼우면 레이더와 카드가 함께 따라간다. */
+    var AVG = { acc: 2.6, voc: 2.2, flu: 2.0, pron: 2.8, lis: 2.4 };
+
+    /* ---------- 목표 ----------
+       학습 동기 하나가 사다리 하나고, 그 사다리의 세 칸이 여기 세 줄이다.
+       같은 "여행" 이라도 주문만 하면 되는 사람과 현지에서 수다 떨고 싶은
+       사람은 가는 거리가 다르다 — 이유는 어느 사다리인지를, 목표는 그
+       사다리의 몇 칸까지인지를 정한다. 인사·자기소개처럼 지나가는 자리는
+       목표에서 뺐다: 그걸 목표로 삼는 사람은 없고, 실제로는 코스 안의
+       이정표라 그래프가 알아서 그려 준다.
+       lv 는 그 목표가 도착하는 레벨이고, 걸리는 레슨 수는 따로 두지 않고
+       DONE[lv] 에서 읽는다 — 같은 레벨인데 어느 줄을 눌렀느냐로 기간이
+       달라지면 튜터가 설명할 수 없다.
+       가는 길의 이정표는 추천 코스(c)에서 나온다 — 그래프의 마디와 아래
+       카드가 같은 목록이어야 하나의 그림으로 읽힌다. */
+    var GOALS = {
+      t3: { lv: 3, t: "짧은 문장으로 전하기" },
+      t5: { lv: 5, t: "익숙한 주제로 대화 이어가기" },
+      t7: { lv: 7, t: "의견도 이유도 말하기" },
+      t9: { lv: 9, t: "어떤 주제든 자유롭게 말하기" }
+    };
+    // 이유 -> 그 이유를 실제로 채워 주는 상황별 코스. 목표 카드는 거리만
+    // 정하고, 길에 무엇을 깔지는 이유가 정한다.
+    var WHY_COURSE = { travel: "travel", kpop: "drama", friend: "banmal",
+                       self: "travel", work: "free", topik: "free" };
+    // the tutor's level call -> lessons already effectively covered.
+    // 목표 쪽에서도 같은 표를 읽는다 — 도착 레벨 하나로 거리가 정해진다.
+    var DONE = { "1": 0, "2": 11, "3": 25, "4": 45, "5": 70,
+                 "6": 90, "7": 110, "8": 130, "9": 150, "10": 170 };
+
+    // Names, stage numbers and anchors all match the 커리큘럼 page in the
+    // full trial deck, so a recommended course can be pointed at and
+    // explained without the learner having to work out that they are the
+    // same thing.
+    // cov = 커버 그림(assets/art/cov/) + 커버에 박히는 짧은 이름 + 바탕색.
+    //       원본 아이콘에 구워져 있던 흰 타일·그림자를 벗겨 낸 그림이라,
+    //       색 바탕 위에 얹으면 강의 커버처럼 읽힌다.
+    // s = 그 코스가 뭘 하는 곳인지 한 줄,
+    // can = 그 코스를 마치면 할 수 있게 되는 말 — 그래프의 마디에 그대로 붙는다,
+    // ex = 그 말을 예문 하나로 푼 것 — 카드의 흰 줄이 마디를 이어받는다,
+    // w  = 코스 길이(그래프에서 마디가 서는 자리를 정한다).
+    // 레슨 수·기간은 일부러 두지 않는다 — 카드는 "무엇을" 만 말한다.
+    var COURSE = {
+      hangul: { t: "한글 읽기",        k: "한글",     tint: "#E7FBC5", w: 1,   s: "글자를 소리 내어 읽는 법",
+                can: "간판이 읽혀요",
+                ex: "카페 · 김밥 · 화장실 — 거리에서 보이는 글자를 소리 내어 읽어요" },
+      core:   { t: "핵심 패턴",        k: "패턴",     tint: "#DFEAFF", w: 3,   s: "하고 싶은 말을 스스로 만드는 법",
+                can: "내 이야기를 말해요",
+                ex: "「저는 일본 사람입니다」처럼, 배운 틀에 내 단어를 넣어 문장을 만들어요" },
+      travel: { t: "상황별 · 여행",     k: "여행",     tint: "#FFE8CB", w: 2,   s: "가게에서 · 길에서 진짜 쓰는 말",
+                can: "가게에서 말해요",
+                ex: "「혹시 명동역이 어딘지 아세요?」 길을 묻고, 주문하고, 되물어요" },
+      drama:  { t: "상황별 · 드라마",   k: "드라마",   tint: "#EBE2FF", w: 2.4, s: "좋아하는 드라마의 진짜 대사",
+                can: "자막 없이 들려요",
+                ex: "「우리 어디서 본 적 있지 않아요?」 드라마에 나오는 말이 그대로 들려요" },
+      banmal: { t: "상황별 · 반말 수다", k: "반말",     tint: "#FFE0E5", w: 2,   s: "친구에게 쓰는 편한 반말",
+                can: "반말로 수다 떨어요",
+                ex: "「너 지금 어디 가는 거야?」 친구에게 말을 놓고 편하게 이야기해요" },
+      free:   { t: "프리토킹",         k: "프리토킹", tint: "#D6F3EA", w: 2.4, s: "문법이 아니라 생각을 말하기",
+                can: "이유까지 말해요",
+                ex: "「돈 vs 시간, 하나만 가질 수 있다면?」 생각과 그 이유를 이어서 말해요" }
+    };
+    // why -> a closing line that ties the plan back to their own reason
+    var WHY = {
+      kpop:   "K-POP·드라마를 자막 없이 즐기는 데까지, 이 순서가 가장 빨라요.",
+      travel: "여행 전에 맞추려고 읽는 힘과 가게에서 쓰는 표현을 먼저 넣었어요.",
+      friend: "한국인 친구·연인과 이야기하려면 반말까지가 사정권이에요.",
+      work:   "일에서 쓰려면 문법 토대가 필요해서 패턴을 두껍게 잡았어요.",
+      topik:  "TOPIK의 토대가 되는 문법부터 차례대로 쌓는 순서예요.",
+      self:   "무리 없이 이어갈 수 있게, 조금씩 쌓이는 순서로 짰어요.",
+      other:  "오늘 들은 희망에 맞춰 순서를 짰어요."
+    };
+
+    var pick = { why: [], goal: null, pace: null, level: null };
+
+    /* ---- the answer groups remember what was chosen ---- */
+    document.querySelectorAll("[data-group]").forEach(function (group) {
+      var key = group.getAttribute("data-group");
+      var multi = group.getAttribute("data-pick") === "multi";
+      group.querySelectorAll("button[data-val]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var v = b.getAttribute("data-val");
+          if (multi) {
+            b.classList.toggle("on");
+            pick[key] = [].slice.call(group.querySelectorAll("button.on"))
+                          .map(function (x) { return x.getAttribute("data-val"); });
+          } else {
+            var was = b.classList.contains("on");
+            group.querySelectorAll("button").forEach(function (x) { x.classList.remove("on"); });
+            if (!was) b.classList.add("on");
+            pick[key] = was ? null : v;
+          }
+          render();
+        });
+      });
+    });
+
+    /* ---- 지금 서 있는 레벨들 ----
+       종합은 아직 안 골랐으면 1 — 레벨 체크의 "대부분 1이에요" 가 말하는 그
+       기본값이다. 항목별은 손대지 않았으면 종합을 그대로 따라간다. */
+    function overall() { return clamp(Number(pick.level || 1)); }
+    function areaLv(k) { return clamp(Number(pick["ax-" + k] || pick.level || 1)); }
+    function clamp(n) { return Math.max(1, Math.min(LADDER_STEPS, n || 1)); }
+    function band(lv) { return Math.ceil(clamp(lv) / 2) - 1; }
+    // 10칸 사다리 위의 자리. 평균은 2.6 처럼 칸 사이에 서므로 칸 중앙이 아니라
+    // 눈금값 그대로 재야 레이더(반지름 = lv/10)와 같은 곳을 가리킨다.
+    function pct(lv) { return clamp(lv) * 10; }
+
+    /* ---- ⓪ 튜터 콘솔 ---- */
+    var tcon = document.querySelector(".tcon");
+    if (tcon) {
+      // 종합 레벨을 고르는 순간 접는다 — 항목별은 다를 때만 손대는 것이라
+      // 매번 펼쳐 둘 이유가 없다. 요약 줄이나 T 를 누르면 다시 열린다.
+      tcon.querySelector(".lvpick").addEventListener("click", function (e) {
+        if (e.target.closest("button[data-val]")) tcon.classList.add("folded");
+      });
+      tcon.querySelector(".tcon-fold").addEventListener("click", function () {
+        tcon.classList.add("folded");
+      });
+      tcon.querySelector(".tcon-sum").addEventListener("click", function () {
+        tcon.classList.remove("folded");
+      });
+    }
+
+    function renderConsole() {
+      if (!tcon) return;
+      tcon.querySelector(".ts-lv").textContent = "Lv." + overall();
+      var same = true, parts = [];
+      AREAS.forEach(function (a) {
+        var lv = areaLv(a.k);
+        if (lv !== overall()) same = false;
+        parts.push(a.n + " " + lv);
+      });
+      tcon.querySelector(".ts-ax").textContent = same ? "항목별 모두 같음" : parts.join(" · ");
+
+      // 아직 손대지 않은 줄도 어느 칸에 서 있는지는 보여 준다 — 따라가는
+      // 중이라는 뜻이라, 직접 고른 칸(.on)보다 옅게 칠한다.
+      AREAS.forEach(function (a) {
+        var g = tcon.querySelector('[data-group="ax-' + a.k + '"]');
+        if (!g) return;
+        var own = !!pick["ax-" + a.k];
+        g.querySelectorAll("button").forEach(function (b) {
+          b.classList.toggle("echo", !own && Number(b.getAttribute("data-val")) === overall());
+        });
+      });
+    }
+
+    /* ---- ① 지금 레벨 카드 ---- */
+    var card = document.querySelector(".lvc");
+
+    function renderLevel() {
+      if (!card) return;
+      var n = overall(), d = LV[String(n)];
+      card.querySelector(".lvc-mascot").src = "../assets/" + d.mascot;
+      card.querySelector(".lvc-badge").textContent = "Lv." + n + " · " + d.name;
+      card.querySelector(".lvc-line").innerHTML = d.line;
+      card.querySelector(".lvc-diag").innerHTML = d.diag;
+      card.querySelector(".lvc-cert b").textContent = d.cert[0];
+      card.querySelector(".lvc-cert span").textContent = d.cert[1];
+
+      var segs = card.querySelector(".lad-segs"), nums = card.querySelector(".lad-nums");
+      segs.innerHTML = ""; nums.innerHTML = "";
+      for (var i = 1; i <= LADDER_STEPS; i++) {
+        var s = document.createElement("span");
+        if (i <= n) s.className = "on";
+        segs.appendChild(s);
+        var t = document.createElement("span");
+        if (i === n) { t.className = "on"; t.textContent = "Lv." + i; }
+        else t.textContent = String(i);
+        nums.appendChild(t);
+      }
+
+      /* 근거 세 줄은 항목별 레벨에서 나온다 — 잘 되는 두 항목과 가장 처지는
+         항목. 다섯이 모두 같으면 처지는 항목이란 게 없으므로 전부 ✓ 다. */
+      var sorted = AREAS.slice().sort(function (a, b) { return areaLv(b.k) - areaLv(a.k); });
+      var top = sorted[0], mid = sorted[1], low = sorted[sorted.length - 1];
+      var spread = areaLv(top.k) > areaLv(low.k);
+      var ul = card.querySelector(".lvc-ev");
+      ul.innerHTML = "";
+      [[1, top], [1, mid], [spread ? 0 : 1, low]].forEach(function (row) {
+        var a = row[1], li = document.createElement("li");
+        if (!row[0]) li.className = "miss";
+        li.innerHTML = '<i>' + (row[0] ? "✓" : "·") + '</i>' +
+                       '<span>' + a.n + " · " + BAND[a.k][band(areaLv(a.k))] + '</span>';
+        ul.appendChild(li);
+      });
+    }
+
+    /* ---- ② 항목별 진단 · 레이더 + 트랙 ---- */
+    var trks = document.querySelector(".trks");
+
+    function renderAspects() {
+      drawRadar();
+      if (!trks) return;
+      trks.innerHTML = "";
+      AREAS.forEach(function (a) {
+        var now = areaLv(a.k), avg = AVG[a.k];
+        var d = document.createElement("div");
+        d.className = "axcard";
+
+        var segs = "";
+        for (var i = 1; i <= LADDER_STEPS; i++) {
+          segs += '<span' + (i <= now ? ' class="on"' : "") + '></span>';
+        }
+        // 평균 표시는 라벨이 카드 밖으로 새지 않게 양 끝에서 조금 들여 세운다
+        var mp = Math.max(9, Math.min(91, pct(avg)));
+
+        d.innerHTML =
+          '<div class="axc-top">' +
+            '<span class="axc-ico"><img src="../assets/report-icons/' + a.k + '.svg" alt=""></span>' +
+            '<span class="axc-name">' + a.n + '</span>' +
+            '<span class="axc-lv">Lv.' + now + '</span>' +
+          '</div>' +
+          '<div class="axc-lad">' +
+            '<div class="axc-segs">' + segs + '</div>' +
+            '<div class="axc-mark"><b style="left:' + mp + '%">▲ 평균</b></div>' +
+          '</div>' +
+          '<p class="axc-tx">' + BAND[a.k][band(now)] + '</p>' +
+          '<div class="axc-tip"><span class="ic">💡</span>' +
+            '<span class="t"><b>추천</b>' + HINT[a.k] + '</span></div>';
+
+        trks.appendChild(d);
+      });
+    }
+
+    /* 오각형. 지금(초록 채움)은 튜터가 고른 항목별 레벨, 점선 외곽은 체험
+       수업을 받은 분들의 평균이다. 평균은 배경 쪽 정보라 점만 찍지 않고
+       윤곽선으로만 두고, 초록 면을 그 위에 얹는다. */
+    var svg = document.getElementById("radar");
+    function drawRadar() {
+      if (!svg) return;
+      var cx = 100, cy = 100, R = 82, N = AREAS.length, NS = "http://www.w3.org/2000/svg";
+      svg.innerHTML = "";
+      var el = function (t, at) {
+        var e = document.createElementNS(NS, t);
+        for (var k in at) e.setAttribute(k, at[k]);
+        return e;
+      };
+      var P = function (i, f) {
+        var a = -Math.PI / 2 + i * 2 * Math.PI / N;
+        return [cx + Math.cos(a) * R * f, cy + Math.sin(a) * R * f];
+      };
+      var poly = function (pts) {
+        return pts.map(function (p) { return p[0].toFixed(1) + "," + p[1].toFixed(1); }).join(" ");
+      };
+      var i, p, e, lp, t, d;
+      [0.25, 0.5, 0.75, 1].forEach(function (f) {
+        p = [];
+        for (i = 0; i < N; i++) p.push(P(i, f));
+        svg.appendChild(el("polygon", { points: poly(p), fill: "none", stroke: "#f0efec", "stroke-width": "1" }));
+      });
+      for (i = 0; i < N; i++) {
+        e = P(i, 1);
+        svg.appendChild(el("line", { x1: cx, y1: cy, x2: e[0], y2: e[1], stroke: "#f0efec", "stroke-width": "1" }));
+        lp = P(i, 1.18);
+        t = el("text", { x: lp[0].toFixed(1), y: (lp[1] + 4).toFixed(1), "font-size": "11.5",
+                         "font-weight": "600", fill: "#6a6a66",
+                         "text-anchor": lp[0] > cx + 4 ? "start" : (lp[0] < cx - 4 ? "end" : "middle") });
+        t.textContent = AREAS[i].n;
+        svg.appendChild(t);
+      }
+      var ap = [];
+      for (i = 0; i < N; i++) ap.push(P(i, AVG[AREAS[i].k] / LADDER_STEPS));
+      svg.appendChild(el("polygon", { points: poly(ap), fill: "none", stroke: "#b4b4b0",
+                                      "stroke-width": "1.5", "stroke-dasharray": "4 3",
+                                      "stroke-linejoin": "round" }));
+      var np = [];
+      for (i = 0; i < N; i++) np.push(P(i, areaLv(AREAS[i].k) / LADDER_STEPS));
+      svg.appendChild(el("polygon", { points: poly(np), fill: "rgba(106,190,54,.20)", stroke: "#6abe36",
+                                      "stroke-width": "1.75", "stroke-linejoin": "round" }));
+      for (i = 0; i < N; i++) {
+        d = P(i, areaLv(AREAS[i].k) / LADDER_STEPS);
+        svg.appendChild(el("circle", { cx: d[0].toFixed(1), cy: d[1].toFixed(1), r: "2.6",
+                                       fill: "#6abe36", stroke: "#fff", "stroke-width": "1" }));
+      }
+    }
+
+    /* ---- ③ 도착 예측 ---- */
+    var rep = document.querySelector(".rep");
+    var empty = document.querySelector(".rep-empty");
+    var $ = function (sel) { return rep.querySelector(sel); };
+
+    function months(lessons, perWeek) {
+      return Math.max(1, Math.round(lessons / (perWeek * 4.3)));
+    }
+
+    function gradDate(mo) {
+      var d = new Date();
+      d.setMonth(d.getMonth() + mo);
+      return d.getFullYear() + "년 " + (d.getMonth() + 1) + "월쯤";
+    }
+
+    // ---- 그래프 좌표계 ----------------------------------------------------
+    // 세로축은 '지금 레벨 → 목표 레벨'. 눈금 간격은 사람마다 다르니 여기서
+    // 만든다. 목표선은 항상 맨 위 눈금이라, 도착점이 그래프 꼭대기에 붙는다.
+    var PX0 = 36, PX1 = 324, PYB = 206, PYT = 32;
+
+    // 지금 레벨부터 목표 레벨까지 한 칸도 건너뛰지 않는다 — 건너뛴 눈금은
+    // 사이에 레벨이 없는 것처럼 보이고, 올라야 할 칸 수가 지워진다.
+    function lvTicks(cur, goal) {
+      if (goal <= cur) goal = cur + 1;
+      var span = goal - cur, out = [], v;
+      for (v = cur; v <= goal; v++) out.push({ lv: v, y: PYB - (PYB - PYT) * (v - cur) / span });
+      return out;
+    }
+
+    // 완만하다가 뒤에서 솟는 곡선. exp 가 클수록 늦게 터지고, top 은
+    // 끝점이 도달하는 높이(1 = 목표선).
+    function curveD(exp, top) {
+      var h = (PYB - PYT) * top, d = "", i, t;
+      for (i = 0; i <= 48; i++) {
+        t = i / 48;
+        d += (i ? "L" : "M") + (PX0 + (PX1 - PX0) * t).toFixed(1) +
+             " " + (PYB - h * Math.pow(t, exp)).toFixed(1);
+      }
+      return d;
+    }
+
+    var FAST_EXP = 2, SELF_TOP = 0.26;
+
+    function renderPlan() {
+      if (!rep) return;
+
+      var g = GOALS[pick.goal], pace = pick.pace, lv = String(overall());
+      // While the report is a skeleton, say which answer is missing and
+      // take the tutor straight there — the old caption only restated
+      // the problem and left them to scroll back and find it.
+      var jump = document.querySelector(".rep-jump");
+      if (!g || !pace) {
+        rep.classList.remove("ready");
+        empty.classList.remove("hide");
+        if (jump) {
+          jump.classList.remove("hide");
+          var missing = !g
+            ? { href: "#p-goal", t: "목표를 아직 안 골랐어요" }
+            : { href: "#p-pace", t: "학습 페이스를 아직 안 골랐어요" };
+          jump.href = missing.href;
+          jump.querySelector(".rj-t").textContent = missing.t;
+        }
+        return;
+      }
+      rep.classList.add("ready");
+      empty.classList.add("hide");
+      if (jump) jump.classList.add("hide");
+
+      var per = pace === "5" ? 5 : Number(pace);
+      var need = Math.max(6, DONE[String(g.lv)] - DONE[lv]);
+      var mo = months(need, per);
+
+      // 리포트가 부르는 목표 이름은, 그 카드 안에서 이 사람의 첫 번째 이유가
+       // 달고 있던 바로 그 줄이다 — 문구를 여기에 또 적어 두면 카드와 리포트가
+      // 언젠가 서로 다른 말을 하게 된다. 이유가 없으면 카드 제목을 쓴다.
+      var why0 = pick.why && pick.why.length ? pick.why[0] : null;
+      var mine = why0 && document.querySelector(
+        '.glc[data-val="' + pick.goal + '"] .glc-i[data-why="' + why0 + '"] em');
+      document.querySelector(".rep-sub").textContent =
+        "「" + (mine ? mine.textContent : g.t) + "」까지, 지금 페이스로 언제쯤 도착하는지 그려 봤어요.";
+
+      $(".lg1").textContent = "주 " + (pace === "5" ? "5회" : pace + "회") + " 수업";
+
+      /* ---- 무엇을 배우는지는 이유가, 어디까지 가는지는 목표가 ----
+         한글·핵심 패턴은 누구나 지나가는 길이고, 그 위에 얹는 상황별 코스는
+         고른 이유에서 나온다. 둘까지만 얹는다 — 마디가 다섯이 되면 그래프의
+         라벨이 서로 겹치고, 학습 순서라기보다 목록이 된다.
+         Lv.8 위는 프리토킹 없이 설명이 안 되는 높이라, 그 자리를 비워 둔다. */
+      var extras = [];
+      (pick.why || []).forEach(function (w) {
+        var k = WHY_COURSE[w];
+        if (k && extras.indexOf(k) < 0) extras.push(k);
+      });
+      extras = g.lv >= 8
+        ? extras.filter(function (k) { return k !== "free"; }).slice(0, 1).concat("free")
+        : extras.slice(0, 2);
+      // 첫 번째 이유의 코스는 맨 뒤로. 마지막 마디가 곧 「목표」 라서, 리포트가
+      // 부르는 목표 이름과 다른 코스가 끝에 서면 도착점이 두 개로 읽힌다.
+      var mainC = why0 && WHY_COURSE[why0];
+      if (mainC && extras.length > 1 && extras.indexOf(mainC) >= 0 && extras[extras.length - 1] !== "free") {
+        extras = extras.filter(function (k) { return k !== mainC; }).concat(mainC);
+      }
+
+      // never recommend a course the learner has already passed.
+      // 그래프의 마디와 아래 카드가 같은 목록에서 나오므로, 코스를 먼저 정하고
+      // 그다음에 그린다.
+      var all = ["hangul", "core"].concat(extras);
+      var courses = all.filter(function (k) {
+        if (k === "hangul") return Number(lv) < 2;
+        if (k === "core") return Number(lv) < 5;
+        return true;
+      });
+      if (!courses.length) courses = [all[all.length - 1]];
+
+      // 세로축: 지금 레벨에서 목표 레벨까지. 맨 아래 눈금(지금 레벨)만
+      // 진하게 — 그 선이 곧 x축이다.
+      var ticks = lvTicks(Number(lv), g.lv), grid = "";
+      ticks.forEach(function (t, i) {
+        grid += '<line x1="' + PX0 + '" y1="' + t.y.toFixed(1) + '" x2="332" y2="' + t.y.toFixed(1) +
+                '" stroke="' + (i ? "#F0F0F0" : "#E1E1E1") + '"/>' +
+                '<text x="28" y="' + (t.y + 3.4).toFixed(1) + '" font-size="10" fill="#A0A09B"' +
+                ' font-weight="700" text-anchor="end">Lv.' + t.lv + '</text>';
+      });
+      $(".rep-grid").innerHTML = grid;
+
+      var fast = curveD(FAST_EXP, 1);
+      $(".rep-fast").setAttribute("d", fast);
+      $(".rep-area").setAttribute("d", fast + "L" + PX1 + " " + PYB + "L" + PX0 + " " + PYB + "Z");
+      $(".rep-slow").setAttribute("d", curveD(1.15, SELF_TOP));
+
+      /* ---- 곡선 위의 마디 = 학습 순서의 코스 ----
+         점 하나가 코스 하나고, 그 옆의 한 줄은 그 코스를 마치면 할 수 있게
+         되는 말이다 — 아래 카드의 흰 줄이 같은 말을 이어서 푼다.
+         자리는 코스 길이(w)의 누적으로 잡는다. 균등하게 나누면 한글 읽기가
+         핵심 패턴과 같은 기간으로 보인다. */
+      var tot = 0, cum = 0, marks = "";
+      courses.forEach(function (k) { tot += COURSE[k].w; });
+      courses.forEach(function (k, i) {
+        var c = COURSE[k], last = i === courses.length - 1;
+        cum += c.w;
+        var t = last ? 1 : cum / tot;
+        var x = PX0 + (PX1 - PX0) * t, y = PYB - (PYB - PYT) * Math.pow(t, FAST_EXP);
+        // 한글 한 글자 ≈ 글자 크기와 같은 폭이라, 길이만으로 왼쪽 끝을 어림한다
+        var flip = x + 9 - c.can.length * 10.5 < 46;
+        if (last) marks += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) +
+                           '" r="15" fill="#B5FD4C" opacity=".35"/>';
+        marks +=
+          // 마디는 아래 카드의 커버에 붙은 번호와 같은 동그라미다 — 같은 번호를
+          // 두 곳에 같은 모양으로 두는 게, 선으로 잇는 것보다 확실하다.
+          '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) +
+            '" r="10" fill="#B5FD4C" stroke="#1C1C1C" stroke-width="1.5"/>' +
+          '<text x="' + x.toFixed(1) + '" y="' + (y + 3.9).toFixed(1) + '" font-size="11.5"' +
+            ' fill="#1C1C1C" font-weight="900" text-anchor="middle">' + (i + 1) + '</text>' +
+          // 라벨은 점의 왼쪽 위가 기본 — 오른쪽으로 두면 마지막 마디가 화면
+          // 밖으로 나간다. 다만 왼쪽으로 뻗다가 세로축 눈금(Lv.n)까지 닿는
+          // 이른 마디만 오른쪽으로 넘긴다.
+          '<text x="' + (flip ? x + 14 : x + 9).toFixed(1) + '" y="' + (y - 17).toFixed(1) +
+            '" font-size="11.5" fill="#457B23" font-weight="' + (last ? 800 : 700) +
+            '" text-anchor="' + (flip ? "start" : "end") + '"' +
+            ' paint-order="stroke" stroke="#fff" stroke-width="3.5" stroke-linejoin="round">' +
+            c.can + '</text>';
+        // 「오늘」 과 붙어 버릴 만큼 이른 마디는 개월 수를 생략한다
+        if (x - PX0 > 34) marks +=
+          '<text x="' + x.toFixed(1) + '" y="226" font-size="10" fill="#757575" text-anchor="' +
+            (last ? "end" : "middle") + '">' + Math.max(1, Math.round(mo * t)) + '개월</text>';
+      });
+      $(".rep-marks").innerHTML = marks;
+
+      /* ---- 학습 순서 ----
+         한 코스가 한 카드다. 대부분 핵심 패턴에서 시작해서, 목표·관심이
+         맞으면 상황별로, 목표가 중급 언저리면 프리토킹까지 간다 — 그
+         분기는 이미 GOALS[].c 가 들고 있고, 여기서는 그리기만 한다.
+         마지막 카드가 목표다. */
+      var map = $(".cmap");
+      map.innerHTML = "";
+      courses.forEach(function (k, i) {
+        var c = COURSE[k], last = i === courses.length - 1;
+        var card = document.createElement("div");
+        card.className = "cst" + (last ? " goal" : "");
+        card.innerHTML =
+          '<div class="cst-top">' +
+            // 커버 위의 번호가 그래프의 마디 번호와 같은 동그라미다
+            '<span class="cst-cov" style="background:' + c.tint + '">' +
+              '<b class="cst-n">' + (i + 1) + '</b>' +
+              '<img src="../assets/art/cov/' + k + '.png" alt="">' +
+              '<em>' + c.k + '</em>' +
+            '</span>' +
+            '<span class="cst-b">' +
+              '<span class="cst-t">' + c.t + '</span>' +
+              (last ? '<span class="cst-flag">목표</span>' : "") +
+              '<span class="cst-s">' + c.s + '</span>' +
+            '</span>' +
+          '</div>' +
+          // 그래프의 마디와 같은 말로 시작해서(c.can), 그 말을 한 줄 더 푼다
+          '<div class="cst-l"><i>✓</i><span class="ct">' + c.can +
+            '<em>' + c.ex + '</em></span></div>';
+        map.appendChild(card);
+      });
+
+      // 닫는 줄은 고른 목표의 이유를 따라간다 — 이유를 여럿 골랐어도,
+      // 계획이 겨냥한 곳은 목표가 선 사다리 하나다.
+      var why = g.w || (pick.why && pick.why.length ? pick.why[0] : "other");
+      $(".rep-why").textContent = WHY[why] || WHY.other;
+    }
+
+    /* ---- 목표 카드 속은 고른 이유만 남긴다 ----
+       카드(=거리)는 넷 그대로고, 그 안의 「할 수 있게 되는 일」 만 이 사람의
+       이유로 좁힌다. 아직 이유를 고르지 않았으면 여섯 줄을 다 펴는 대신
+       한 줄로 그 사실을 말한다 — 남의 이유가 여섯 줄씩 네 장이면, 정작
+       고를 것(거리)이 그 밑에 묻힌다.
+       원격 선택도 보드가 옵션을 합성 클릭해 오므로 양쪽이 같은 줄을 본다. */
+    function renderGoalCards() {
+      var items = [].slice.call(document.querySelectorAll(".glc-i[data-why]"));
+      if (!items.length) return;
+      var any = pick.why.some(function (w) { return WHY_COURSE[w]; });
+      items.forEach(function (it) {
+        it.classList.toggle("hide", pick.why.indexOf(it.getAttribute("data-why")) < 0);
+      });
+      document.querySelectorAll(".glc-e").forEach(function (e) { e.classList.toggle("hide", any); });
+    }
+
+    function render() {
+      renderGoalCards();
+      renderConsole();
+      renderLevel();
+      renderAspects();
+      renderPlan();
+    }
+
+    render();
+  })();
+  </script>
+
+  <!-- ================================================================
+       PAGER · back / next / progress, in both modes.
+       Scrolling is the default; ⤢ switches to one page at a time.
+       Page turns are shared (kind "page"); view mode and teaching mode
+       stay local.
+       ================================================================ -->
+  <script>
+  (function () {
+    var phone = document.querySelector(".phone");
+    var bar   = document.querySelector(".pager");
+    if (!phone || !bar) return;
+    var sync = window.lessonSync;
+
+    var pages = [].slice.call(phone.children);
+    // Reference pages (수업 안내 · 전체 요금표 · FAQ) hang off the 포도 안내
+    // index. Next never walks into them — the deck's spine would otherwise
+    // run through material most learners never need — but a link or Back
+    // still reaches them.
+    var flow = pages.filter(function (p) { return p.dataset.flow !== "ref"; });
+
+    // Acts come from the divider pages that already exist. They only name
+    // where you are — progress itself is measured across the whole flow.
+    var acts = [], cur = null;
+    flow.forEach(function (p, i) {
+      var isDiv = p.classList.contains("divider");
+      if (!cur || isDiv) {
+        var t = p.querySelector(".brand-title");
+        cur = { name: t ? (t.firstChild.textContent || "").trim() : "체험 레슨", from: i, to: i };
+        acts.push(cur);
+      }
+      cur.to = i;
+    });
+
+    var at = 0;                                    // index into `pages`
+    var prevBtn  = bar.querySelector(".pg-prev");
+    var nextBtn  = bar.querySelector(".pg-next");
+    var actEl    = bar.querySelector(".pg-act");
+    var nEl      = bar.querySelector(".pg-n");
+    var teachBtn = bar.querySelector(".pg-teach");
+    var exitBtn  = bar.querySelector(".pg-exit");
+
+    function paged() { return phone.classList.contains("paged"); }
+
+    function paint() {
+      var f = flow.indexOf(pages[at]);
+      prevBtn.disabled = at <= 0;
+      nextBtn.disabled = f >= 0 && f === flow.length - 1;
+      if (f < 0) {                                 // a reference page
+        actEl.textContent = "포도 안내";
+        nEl.textContent = "참고 페이지";
+      } else {
+        var a = 0;
+        acts.forEach(function (x, k) { if (f >= x.from) a = k; });
+        actEl.textContent = acts[a].name;          // the act only labels where you are
+        nEl.textContent = (f + 1) + " / " + flow.length;
+      }
+    }
+
+    // `into` is an element inside the page to land on (curriculum stages,
+    // survey questions). Layout is flushed first — the page has only just
+    // left display:none, so measuring before that reads stale geometry.
+    function show(i, into) {
+      at = Math.max(0, Math.min(pages.length - 1, i));
+      if (paged()) {
+        pages.forEach(function (p, k) { p.classList.toggle("pg-on", k === at); });
+        paint();
+        void pages[at].offsetHeight;
+        if (into && into !== pages[at]) into.scrollIntoView({ block: "start" });
+        else window.scrollTo(0, 0);
+        return;
+      }
+      // Scrolling view: nothing is hidden, so a page turn is a scroll. Mark it
+      // as ours so the scroll spy below doesn't read it back as a turn.
+      settle();
+      (into || pages[at]).scrollIntoView({ block: "start" });
+      paint();
+    }
+
+    // show() moves the page silently; goTo() is a turn someone made, so it
+    // is the one that tells the other side.
+    function goTo(i, into) {
+      if (i < 0 || i > pages.length - 1) return;
+      if (i === at && !into) return;
+      show(i, into);
+      sync.push(bar);
+    }
+
+    // Next/Prev walk the flow, skipping reference pages. Stepping off a
+    // reference page returns to the 포도 안내 index it hangs from.
+    function step(d) {
+      var f = flow.indexOf(pages[at]);
+      if (f < 0) {
+        var info = document.getElementById("p-info");
+        goTo(info ? pages.indexOf(info) : 0);
+        return;
+      }
+      var t = flow[f + d];
+      if (t) goTo(pages.indexOf(t));
+    }
+
+    prevBtn.addEventListener("click", function () { step(-1); });
+    nextBtn.addEventListener("click", function () { step(1); });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.target.matches && e.target.matches("input, textarea")) return;
+      if (e.key === "ArrowRight") step(1);
+      if (e.key === "ArrowLeft") step(-1);
+    });
+
+    /* ---- which page is on screen, while scrolling ----
+       Our own scrolls (a page turn, a mode switch) must not read back as the
+       reader turning a page: scroll-behavior is smooth, so the animation
+       outlives any fixed delay and lands a hair short of the page top — it
+       would report the page before and push that to the peer. Wait for the
+       scrolling to actually stop instead. */
+    var settling = false, settleTimer = null;
+
+    function settle() {
+      settling = true;
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(function () { settling = false; }, 180);
+    }
+
+    function onScroll() {
+      if (paged()) return;
+      if (settling) { settle(); return; }        // still our own scroll — keep waiting
+      var top = window.scrollY + 80, best = 0;
+      // Every page is on screen here, reference pages included, so the spy
+      // walks `pages` rather than `flow`.
+      pages.forEach(function (p, k) { if (p.offsetTop <= top) best = k; });
+      if (best === at) return;
+      at = best;
+      paint();
+      // Scrolling is a page turn too — otherwise the two sides silently drift
+      // apart the moment someone reads in this view.
+      sync.push(bar);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+
+    /* ---- view mode: local (a personal reading preference) ----
+       Scrolling is the ground truth — printing, Cmd+F and scanning ahead all
+       rely on it — and one page at a time is the presentation layer on top. */
+    function setPaged(on) {
+      if (!on) {
+        var keep = pages[at];
+        phone.classList.remove("paged");
+        document.body.classList.remove("paged");
+        pages.forEach(function (p) { p.classList.remove("pg-on"); });
+        settle();                                // ignore the scroll we are about to cause
+        if (keep) keep.scrollIntoView({ block: "start" });
+        paint();
+        return;
+      }
+      // Measure BEFORE .paged lands — once the siblings are display:none every
+      // offsetTop reads 0 and "last page above the fold" is always the last one.
+      var top = window.scrollY + 80, best = 0;
+      pages.forEach(function (p, k) { if (p.offsetTop <= top) best = k; });
+      phone.classList.add("paged");
+      document.body.classList.add("paged");
+      show(best);
+    }
+
+    exitBtn.addEventListener("click", function () { setPaged(!paged()); });
+
+    // In-page anchors (#c-2 inside 커리큘럼, #p-goal from the report, the
+    // 포도 안내 jump nav) have to switch page first, then scroll to the
+    // target within it.
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a) return;
+      var target = document.getElementById(a.getAttribute("href").slice(1));
+      if (!target) return;
+      e.preventDefault();
+      var page = target;
+      while (page && page.parentNode !== phone) page = page.parentNode;
+      if (page) goTo(pages.indexOf(page), target);
+    });
+
+    /* ---- page turns are shared (kind "page") ----
+       보드에는 "페이지" 개념이 없다. 넘긴 결과(어느 페이지인지)만 공유하고
+       버튼 클릭은 재생하지 않는다 — 그래야 늦게 들어오거나 새로고침한 쪽도
+       한 번에 같은 페이지로 따라온다. 칸은 순서가 아니라 data-page-id 로
+       지칭해, 페이지를 더해도 이전에 공유된 위치가 어긋나지 않는다. */
+    sync.register("page", {
+      read: function () {
+        return { pageId: pages[at].getAttribute("data-page-id") };
+      },
+      apply: function (el, state) {
+        if (!state || typeof state.pageId !== "string") return;
+        for (var i = 0; i < pages.length; i++) {
+          if (pages[i].getAttribute("data-page-id") === state.pageId) { show(i); return; }
+        }
+        // 이 덱에 없는 페이지면 그대로 둔다
+      }
+    });
+
+    /* ---- teaching mode stays on this screen ----
+       The tutor flips it to reveal answers; sending it would hand the
+       learner the whole key. 공유하지 않는 유일한 상태다. */
+    if (teachBtn) {
+      teachBtn.addEventListener("click", function () {
+        teachBtn.classList.toggle("on", document.body.classList.toggle("teaching"));
+      });
+    }
+
+    // Scrolling is the default. Set it explicitly rather than trusting the
+    // markup: Chrome restores state across reloads, so a tutor who switched to
+    // one-page-at-a-time would come back to it on refresh.
+    setPaged(false);
+  })();
+  </script>
+
+  <!-- SPOTLIGHT · 손가락 포인터 (그리기 대신 "여기 보세요"). 공유 스크립트. -->
+  <script src="../../interactive/spotlight.js"></script>
+
+
+  <!-- ================================================================
+       FIGMA CAPTURE HARNESS — generated by scratchpad/make_capture.py.
+       Not part of the deck; the original trial-1-report.html has none of
+       this. __applyState(key) drives one preset of the consultation
+       answers and isolates one page, so html.to.design captures exactly
+       one screen in one state.
+       ================================================================ -->
+  <script>
+  (function () {
+    /* pg: index into .phone children
+         0 needs-intro · 1 needs-why · 2 needs-goal · 3 needs-pace
+         4 report-intro · 5 report                                        */
+    var STATES = {
+      "01-needs-intro":      { pg: 0 },
+      "02-why-empty":        { pg: 1 },
+      "03-why-picked":       { pg: 1, why: ["kpop", "travel"] },
+      "04-goal-no-reason":   { pg: 2 },
+      "05-goal-picked":      { pg: 2, why: ["kpop", "travel"], goal: "t5" },
+      "06-goal-all-reasons": { pg: 2, why: ["kpop", "travel", "friend", "work", "topik", "self"], goal: "t7" },
+      "07-pace-empty":       { pg: 3 },
+      "08-pace-picked":      { pg: 3, pace: "2" },
+      "09-report-intro":     { pg: 4 },
+
+      /* report · states the tutor actually moves through */
+      "10-report-skeleton":     { pg: 5 },
+      "11-console-open":        { pg: 5, teach: true },
+      "12-console-folded":      { pg: 5, teach: true, folded: true, level: "3",
+                                  ax: { acc: "2", voc: "4", flu: "3", pron: "5", lis: "3" },
+                                  why: ["kpop"], goal: "t7", pace: "3" },
+
+      /* report · finished, across the option space */
+      "13-lv1-kpop-travel-t5-w2": { pg: 5, level: "1", why: ["kpop", "travel"], goal: "t5", pace: "2" },
+      "14-lv2-travel-t3-w1":      { pg: 5, level: "2", why: ["travel"], goal: "t3", pace: "1" },
+      "15-lv3-friend-t7-w3":      { pg: 5, level: "3", why: ["friend"], goal: "t7", pace: "3" },
+      "16-lv5-work-topik-t9-w5":  { pg: 5, level: "5", why: ["work", "topik"], goal: "t9", pace: "5" },
+      "17-lv8-self-t9-w4":        { pg: 5, level: "8", why: ["self"], goal: "t9", pace: "4" },
+      "18-lv4-mixed-axes":        { pg: 5, level: "4", why: ["kpop"], goal: "t7", pace: "3",
+                                    ax: { acc: "2", voc: "6", flu: "3", pron: "7", lis: "5" } }
+    };
+
+    function pick(group, val) {
+      var g = document.querySelector('[data-group="' + group + '"]');
+      if (!g) return;
+      var b = g.querySelector('button[data-val="' + val + '"]');
+      if (b) b.click();
+    }
+
+    /* Clicking an already-chosen button turns it off in every group here
+       (single-select included), so replaying the clicks is a clean reset. */
+    function clearAll() {
+      [].slice.call(document.querySelectorAll("[data-group]")).forEach(function (g) {
+        [].slice.call(g.querySelectorAll("button.on")).forEach(function (b) { b.click(); });
+      });
+      document.body.classList.remove("teaching");
+    }
+
+    function isolate(n) {
+      var phone = document.querySelector(".phone");
+      if (!phone) return;
+      phone.classList.add("paged");
+      document.body.classList.add("paged");
+      [].slice.call(phone.children).forEach(function (p, k) {
+        p.classList.toggle("pg-on", k === n);
+      });
+      var bar = document.querySelector(".pager");
+      if (bar) bar.style.display = "none";
+      window.scrollTo(0, 0);
+    }
+
+    window.__states = Object.keys(STATES);
+    window.__applyState = function (key) {
+      var s = STATES[key];
+      if (!s) throw new Error("unknown state: " + key);
+      clearAll();
+      (s.why || []).forEach(function (w) { pick("why", w); });
+      if (s.goal) pick("goal", s.goal);
+      if (s.pace) pick("pace", s.pace);
+      if (s.level) pick("level", s.level);
+      var ax = s.ax || {};
+      Object.keys(ax).forEach(function (k) { pick("ax-" + k, ax[k]); });
+      if (s.teach) document.body.classList.add("teaching");
+      /* picking a level auto-folds the console; say which one we want */
+      var t = document.querySelector(".tcon");
+      if (t) t.classList.toggle("folded", !!s.folded);
+      isolate(s.pg);
+      return { state: key, pg: s.pg, height: document.querySelector(".phone").offsetHeight };
+    };
+
+    /* ?st=KEY lets a plain page load land on one state too */
+    var m = /[?&]st=([^&]+)/.exec(location.search);
+    if (m) {
+      var key = decodeURIComponent(m[1]);
+      var go = function () { try { window.__applyState(key); } catch (e) {} };
+      go(); setTimeout(go, 60); setTimeout(go, 300);
+    }
+  })();
+  </script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+
+</body>
+</html>
