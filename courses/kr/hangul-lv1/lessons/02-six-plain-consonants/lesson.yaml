@@ -1,0 +1,23 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 02-six-plain-consonants
+
+spec:
+  week: 2
+
+  title:
+    ko: 여섯 개의 평음
+    en: The six plain consonants
+    ja: 6つの平音
+
+  decks:
+    lecture:  { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+
+  teaches:
+    letters: [ㄱ, ㄷ, ㄹ, ㅂ, ㅅ, ㅈ]
+    concepts:
+      - 시 = "shi" だけ例外
+  outcome: 고기 · 구두 · 다리 · 바다 · 아버지 · 사자 · 주스 · 모자
+  source: references/tracks/1-hangul.md
