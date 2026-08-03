@@ -39,8 +39,17 @@ jobs:
 
       - run: pip install -r tools/requirements.txt
 
+      # validate.py refuses --contract without a key rather than letting an auth
+      # rejection read as a clean pass, so decide here whether we can ask for it.
+      # Every other layer runs either way.
       - name: validate
-        run: python3 tools/validate.py --contract --env prod
+        run: |
+          if [ -n "$PODO_LEMONBOARD_API_KEY" ]; then
+            python3 tools/validate.py --contract --env prod
+          else
+            echo "::warning::PODO_LEMONBOARD_API_KEY_PROD is not set — running without the data-sync contract check"
+            python3 tools/validate.py --env prod
+          fi
         env:
           PODO_LEMONBOARD_API_KEY: ${{ secrets.PODO_LEMONBOARD_API_KEY_PROD }}
 
@@ -49,8 +58,21 @@ jobs:
           echo '## Applying to prod' >> "$GITHUB_STEP_SUMMARY"
           python3 tools/plan.py --env prod >> "$GITHUB_STEP_SUMMARY"
 
+      # The sync endpoint does not exist yet (docs/sync-contract.md). Until the
+      # token is configured, report the plan and stop cleanly rather than failing
+      # every push against an endpoint nobody has built — a permanently red
+      # pipeline is one people stop reading.
       - name: apply
-        run: python3 tools/apply.py --env prod
+        run: |
+          if [ -z "$PODO_CURRICULUM_SYNC_TOKEN" ]; then
+            echo "::notice::PODO_CURRICULUM_SYNC_TOKEN is not set — the grape sync endpoint is not live yet. Plan only."
+            {
+              echo '## Plan only — sync endpoint not configured'
+              python3 tools/plan.py --env prod
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          python3 tools/apply.py --env prod
         env:
           PODO_CURRICULUM_SYNC_TOKEN: ${{ secrets.PODO_CURRICULUM_SYNC_TOKEN }}
 

@@ -32,13 +32,35 @@ jobs:
 
       - run: pip install -r tools/requirements.txt
 
+      # validate.py refuses --contract without a key rather than letting an auth
+      # rejection read as a clean pass, so decide here whether we can ask for it.
+      # Every other layer runs either way.
       - name: validate
-        run: python3 tools/validate.py --contract --env stage
+        run: |
+          if [ -n "$PODO_LEMONBOARD_API_KEY" ]; then
+            python3 tools/validate.py --contract --env stage
+          else
+            echo "::warning::PODO_LEMONBOARD_API_KEY_STAGE is not set — running without the data-sync contract check"
+            python3 tools/validate.py --env stage
+          fi
         env:
           PODO_LEMONBOARD_API_KEY: ${{ secrets.PODO_LEMONBOARD_API_KEY_STAGE }}
 
+      # The sync endpoint does not exist yet (docs/sync-contract.md). Until the
+      # token is configured, report the plan and stop cleanly rather than failing
+      # every push against an endpoint nobody has built — a permanently red
+      # pipeline is one people stop reading.
       - name: apply
-        run: python3 tools/apply.py --env stage
+        run: |
+          if [ -z "$PODO_CURRICULUM_SYNC_TOKEN" ]; then
+            echo "::notice::PODO_CURRICULUM_SYNC_TOKEN is not set — the grape sync endpoint is not live yet. Plan only."
+            {
+              echo '## Plan only — sync endpoint not configured'
+              python3 tools/plan.py --env stage
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          python3 tools/apply.py --env stage
         env:
           PODO_CURRICULUM_SYNC_TOKEN: ${{ secrets.PODO_CURRICULUM_SYNC_TOKEN }}
 

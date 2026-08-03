@@ -5,7 +5,7 @@ The PR gate. Everything that could break a live lesson, checked before merge.
 Four layers, cheapest first:
 
   1. schema      — course.yaml / lesson.yaml against JSON Schema
-  2. structure   — slugs match directories, weeks run 1..N, both deck slots present
+  2. structure   — slugs match directories, weeks run 1..N, no orphaned state
   3. package     — every deck actually builds, with the S3-flattening audit
   4. contract    — the built HTML through lemonboard's own data-sync validator
 
@@ -38,25 +38,15 @@ def _fail(message: str) -> int:
     return 1
 
 
-def check_deck_slots(course: model.Course) -> list[str]:
-    """Both slots must exist on disk before a lesson can ship.
-
-    A missing prestudy deck leaves PRESTUDY_LEMONBOARD_KEY empty, and class
-    creation in podo-backend then duplicates /rooms/null/ and fails. Grape blocks
-    the upload for exactly this reason; we block the merge instead.
-    """
-    problems = []
-    for lesson in course.lessons:
-        for slot in lesson.incomplete:
-            problems.append(
-                f"{model._rel(lesson.root)}: {slot} deck declared but "
-                f"{lesson.spec['decks'][slot]['entry']} is not on disk"
-            )
-    return problems
-
-
 def check_enabled_is_earned(course: model.Course) -> list[str]:
-    """A course cannot be USE_YN='Y' while any lesson is unfinished."""
+    """A course cannot be USE_YN='Y' while any lesson is unfinished.
+
+    This is the only place an incomplete lesson fails the build. An unfinished
+    lesson in a course that is still disabled is just work in progress — failing
+    on it would mean a course could not be committed until it was finished,
+    which is the opposite of what a repo is for. plan marks those blocked and
+    apply skips them.
+    """
     if not course.spec.get("enabled"):
         return []
     if not course.lessons:
@@ -175,7 +165,6 @@ def main() -> int:
     for course in courses:
         print(f"\n{course.key}  ({course.lang_type} · {course.spec['curriculumType']} · "
               f"level {course.spec['classLevel']} · {len(course.lessons)} lesson(s))")
-        problems += check_deck_slots(course)
         problems += check_enabled_is_earned(course)
 
         for lesson in course.lessons:

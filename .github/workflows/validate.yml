@@ -20,11 +20,19 @@ jobs:
 
       - run: pip install -r tools/requirements.txt
 
-      # --contract calls lemonboard's own validator. It fail-opens on network
-      # trouble and 5xx, so an outage there cannot block a PR — only a real
-      # data-sync violation does.
+      # --contract calls lemonboard's own validator, which fail-opens on network
+      # trouble and 5xx — an outage there cannot block a PR, only a real
+      # data-sync violation does. validate.py refuses --contract without a key
+      # rather than letting an auth rejection read as a clean pass, so decide
+      # here whether we can ask for it. Every other layer runs either way.
       - name: validate
-        run: python3 tools/validate.py --contract --env stage
+        run: |
+          if [ -n "$PODO_LEMONBOARD_API_KEY" ]; then
+            python3 tools/validate.py --contract --env stage
+          else
+            echo "::warning::PODO_LEMONBOARD_API_KEY_STAGE is not set — running without the data-sync contract check"
+            python3 tools/validate.py --env stage
+          fi
         env:
           PODO_LEMONBOARD_API_KEY: ${{ secrets.PODO_LEMONBOARD_API_KEY_STAGE }}
 
