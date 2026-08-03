@@ -1,0 +1,22 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 11-capstone-read-anything
+
+spec:
+  week: 11
+
+  title:
+    ko: 마무리 — 무엇이든 읽기
+    en: Capstone — read anything
+    ja: 総仕上げ — 何でも読める
+
+  decks:
+    lecture:  { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+
+  teaches:
+    concepts:
+      - 新しい字はなし — 全部混合・実物の看板やメニューや名前・速読
+  outcome: 韓国の街のどの看板も — 解読して声に出して読める
+  source: references/tracks/1-hangul.md

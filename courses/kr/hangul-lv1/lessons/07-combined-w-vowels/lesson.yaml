@@ -1,0 +1,23 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 07-combined-w-vowels
+
+spec:
+  week: 7
+
+  title:
+    ko: 합성 모음 (w 계열)
+    en: Combined (w-)vowels
+    ja: 合成母音（w系）
+
+  decks:
+    lecture:  { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+
+  teaches:
+    letters: [ㅘ, ㅝ, ㅚ, ㅟ, ㅙ, ㅞ, ㅢ]
+    concepts:
+      - 既習の母音から組み立てる: ㅗ/ㅜ + 母音 = w の渡り音
+  outcome: 사과 · 가위 · 의자 · 회사 · 뭐 · 왜
+  source: references/tracks/1-hangul.md

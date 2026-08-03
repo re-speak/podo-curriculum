@@ -1,0 +1,24 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 10-reading-like-a-native
+
+spec:
+  week: 10
+
+  title:
+    ko: 원어민처럼 읽기
+    en: Reading like a native
+    ja: ネイティブのように読む
+
+  decks:
+    lecture:  { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+
+  teaches:
+    concepts:
+      - 연음 — パッチムが次の ㅇ に渡る
+      - ㅎ の弱化
+      - 基本的な同化
+  outcome: 한국어 · 음악 · 좋아요 — 聞こえるとおりに滑らかに
+  source: references/tracks/1-hangul.md
