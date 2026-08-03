@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>리포트 마지막 페이지 · 그래프 변형안 — PODO 韓国語</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <link rel="stylesheet" href="../trial.css">
+  <style>
+  /* ================================================================
+     REPORT PAGE ③ — "도착 예측" 그래프 변형안
+     문제: 지금 그래프는 축이 없는 장식용 곡선이라 "무엇이 얼마나
+           올라가는지"를 못 읽는다. 게다가 그래프 안에 커리큘럼
+           (한글 읽기 / 핵심 패턴) 칩이 들어가 있어 읽을 게 두 겹이다.
+     방향: 커리큘럼은 그래프 밖(아래 추천 코스)에만 두고,
+           그래프는 오직 레벨 10단계 위에서 지금 · 목표 · 그 다음과
+           각 레벨까지 걸리는 기간만 말한다.
+     공통: 상단 졸업 날짜 카드와 하단 추천 코스는 그대로. 그래프만 교체.
+     케이스: Lv.1 시작 · 목표 Lv.4 · 주 3회 · 약 8개월 / 약 100레슨.
+     ================================================================ */
+
+  body { background: #f4f4f2; }
+  .rv-stage { max-width: 480px; margin: 0 auto; padding: 24px 16px 80px; }
+
+  .rv-intro { margin: 0 0 22px; padding: 18px 20px; border-radius: 14px; background: #1c1c1c; color: #fff; }
+  .rv-intro h1 { margin: 0; font-size: 15px; font-weight: 900; }
+  .rv-intro p { margin: 7px 0 0; font-size: 12px; font-weight: 600; line-height: 1.5; color: rgba(255,255,255,.6); word-break: keep-all; }
+
+  .vlab { margin: 34px 0 10px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .vlab b { font-size: 15px; font-weight: 900; color: #1c1c1c; }
+  .vlab span { font-size: 12px; font-weight: 600; color: #8a8a85; word-break: keep-all; }
+
+  .vcard { background: #fff; border-radius: 22px; padding: 28px 24px 30px; }
+  .vcard .section-kicker { display: block; }
+  .vcard .section-title { margin: 6px 0 0; }
+  .rv-sub { margin: 8px 0 22px; font-size: 14px; font-weight: 500; color: #8a8a85; line-height: 1.55; word-break: keep-all; }
+
+  /* ---------- 공통: 목표 헤더 (레벨 → 레벨, 기간) ---------- */
+  .gh { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 14px; background: #1c1c1c; }
+  .gh-b { flex: 1 1 auto; min-width: 0; }
+  .gh-b .k { display: block; font-size: 11px; font-weight: 800; color: rgba(255,255,255,.5); }
+  .gh-b .v { display: block; margin-top: 3px; font-size: 14.5px; font-weight: 800; color: #fff; line-height: 1.35; word-break: keep-all; }
+  .gh-e { flex: none; text-align: right; }
+  .gh-e b { display: block; font-size: 25px; font-weight: 900; color: #b5fd4c; line-height: 1; }
+  .gh-e small { display: block; margin-top: 3px; font-size: 10.5px; font-weight: 700; color: rgba(255,255,255,.55); }
+
+  /* ---------- 공통: 그래프 프레임 ---------- */
+  .plot { display: block; width: 100%; height: auto; margin-top: 14px; }
+  .plot-box { margin-top: 14px; padding: 6px 4px 2px; border-radius: 16px; background: #fbfbf9; }
+  .plot-box .plot { margin-top: 0; }
+
+  /* ---------- 공통: 마일스톤 3줄 ---------- */
+  .ck { display: grid; gap: 8px; margin-top: 18px; }
+  .ck-row { display: flex; align-items: center; gap: 13px; padding: 12px 14px; border-radius: 12px; background: #f7f7f4; }
+  .ck-row .w { flex: none; width: 50px; text-align: center; font-size: 12.5px; font-weight: 900; color: #4a7a2a; line-height: 1.2; }
+  .ck-row .w small { display: block; font-size: 9.5px; font-weight: 800; color: #a4b795; letter-spacing: .02em; }
+  .ck-row .b { flex: 1 1 auto; min-width: 0; text-align: left; }
+  .ck-row .b b { display: block; font-size: 13px; font-weight: 900; color: #1c1c1c; }
+  .ck-row .b span { display: block; margin-top: 2px; font-size: 12.5px; font-weight: 500; color: #6f6f6a; line-height: 1.45; word-break: keep-all; }
+  .ck-row.goal { background: #1c1c1c; }
+  .ck-row.goal .w { color: #b5fd4c; }
+  .ck-row.goal .w small { color: rgba(181,253,76,.55); }
+  .ck-row.goal .b b { color: #fff; }
+  .ck-row.goal .b span { color: rgba(255,255,255,.62); }
+  .ck-row .flag { flex: none; padding: 4px 9px; border-radius: 999px; background: #b5fd4c; font-size: 10.5px; font-weight: 900; color: #1c1c1c; }
+  .ck-note { display: flex; gap: 9px; align-items: flex-start; margin: 12px 2px 0; font-size: 12px; font-weight: 600; color: #a3a29d; line-height: 1.5; word-break: keep-all; }
+  .ck-note i { flex: none; font-style: normal; color: #cfcec8; }
+
+  /* ---------- 공통: 스탯 두 장 (가까운 숫자 · 먼 숫자) ---------- */
+  .st { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 16px; }
+  .st-c { padding: 13px 15px; border-radius: 13px; background: #f7f7f4; }
+  .st-c .k { display: block; font-size: 11.5px; font-weight: 800; color: #9b9a95; }
+  .st-c .v { display: block; margin-top: 6px; font-size: 21px; font-weight: 900; color: #1c1c1c; line-height: 1; }
+  .st-c .s { display: block; margin-top: 5px; font-size: 11px; font-weight: 700; color: #a3a29d; word-break: keep-all; }
+  .st-c.hi { background: #eefad9; }
+  .st-c.hi .k { color: #6d9147; }
+  .st-c.hi .s { color: #7ba454; }
+
+  /* ================= C · 세로 로드맵 ================= */
+  .rm { margin-top: 4px; }
+  .rm-r { position: relative; display: flex; gap: 14px; padding-bottom: 10px; }
+  .rm-r:last-child { padding-bottom: 0; }
+  .rm-rail { position: relative; flex: none; width: 26px; }
+  .rm-rail::before { content: ""; position: absolute; left: 12px; top: 13px; bottom: -10px; width: 2px; background: #6abe36; }
+  .rm-r.fut .rm-rail::before { background: repeating-linear-gradient(#dedcd6 0 4px, transparent 4px 8px); }
+  .rm-r:last-child .rm-rail::before { display: none; }
+  .rm-dot { position: absolute; left: 5px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #fff; border: 3px solid #6abe36; box-sizing: border-box; }
+  .rm-r.fut .rm-dot { border-color: #dedcd6; border-width: 2px; left: 7px; top: 8px; width: 12px; height: 12px; }
+  .rm-r.now .rm-dot { background: #1c1c1c; border-color: #1c1c1c; }
+  .rm-r.goal .rm-dot { background: #6abe36; border-color: #fff; box-shadow: 0 0 0 2.5px #6abe36; }
+  .rm-c { flex: 1 1 auto; min-width: 0; padding: 11px 14px; border-radius: 13px; background: #f7f7f4; }
+  .rm-r.now .rm-c { background: #eefad9; }
+  .rm-r.goal .rm-c { background: #1c1c1c; }
+  .rm-top { display: flex; align-items: baseline; gap: 8px; }
+  .rm-lv { font-size: 12px; font-weight: 900; color: #6abe36; }
+  .rm-nm { flex: 1 1 auto; font-size: 14px; font-weight: 900; color: #1c1c1c; }
+  .rm-wh { flex: none; font-size: 12px; font-weight: 900; color: #4a7a2a; }
+  .rm-ms { margin: 4px 0 0; font-size: 12.5px; font-weight: 500; color: #6f6f6a; line-height: 1.45; word-break: keep-all; }
+  .rm-tag { display: inline-block; margin-left: 2px; padding: 3px 8px; border-radius: 999px; background: #1c1c1c; color: #b5fd4c; font-size: 10px; font-weight: 900; vertical-align: 1px; }
+  .rm-r.goal .rm-lv { color: #b5fd4c; }
+  .rm-r.goal .rm-nm { color: #fff; }
+  .rm-r.goal .rm-wh { color: #b5fd4c; }
+  .rm-r.goal .rm-ms { color: rgba(255,255,255,.62); }
+  .rm-r.goal .rm-tag { background: #b5fd4c; color: #1c1c1c; }
+  /* 이후 레벨 — 한 줄로 접힌다 */
+  .rm-r.fut .rm-c { display: flex; align-items: baseline; gap: 9px; padding: 8px 14px; background: transparent; }
+  .rm-r.fut .rm-lv { color: #b4b3ae; }
+  .rm-r.fut .rm-nm { font-size: 13px; font-weight: 800; color: #9b9a95; }
+  .rm-r.fut .rm-wh { font-size: 11.5px; font-weight: 800; color: #b4b3ae; }
+  .rm-more { margin: 14px 0 6px; padding-left: 40px; font-size: 11.5px; font-weight: 800; color: #b4b3ae; letter-spacing: .02em; }
+
+  /* ================= D · 가로 트랙 ================= */
+  .tk { margin-top: 16px; }
+  .tk-brk { display: flex; gap: 6px; margin-bottom: 9px; }
+  .tk-brk > div { position: relative; padding-bottom: 9px; text-align: center; font-size: 11px; font-weight: 900; line-height: 1.3; }
+  .tk-brk > div::after { content: ""; position: absolute; left: 1px; right: 1px; bottom: 0; height: 6px; border: 1.5px solid currentColor; border-bottom: 0; border-radius: 6px 6px 0 0; opacity: .55; }
+  .tk-brk .a { flex: 4 1 0; color: #4a7a2a; }
+  .tk-brk .b { flex: 6 1 0; color: #bfbeb9; }
+  .tk-segs { display: flex; gap: 4px; }
+  .tk-segs span { flex: 1 1 0; height: 15px; border-radius: 5px; background: #eceae4; }
+  .tk-segs span.done { background: #1c1c1c; }
+  .tk-segs span.path { background: #cdf09a; }
+  .tk-segs span.goal { background: #6abe36; }
+  .tk-pins { display: flex; gap: 4px; margin-top: 7px; }
+  .tk-pins span { flex: 1 1 0; text-align: center; font-size: 9.5px; font-weight: 900; color: transparent; }
+  .tk-pins span.now { color: #1c1c1c; }
+  .tk-pins span.goal { color: #4a7a2a; }
+  .tk-nums { display: flex; gap: 4px; margin-top: 2px; }
+  .tk-nums span { flex: 1 1 0; text-align: center; font-size: 11px; font-weight: 700; color: #b4b3ae; }
+  .tk-nums span.on { font-size: 12px; font-weight: 900; color: #1c1c1c; }
+  .tk-nums span.gl { font-size: 12px; font-weight: 900; color: #4a7a2a; }
+  .tk-mons { display: flex; gap: 4px; margin-top: 5px; }
+  .tk-mons span { flex: 1 1 0; text-align: center; font-size: 9.5px; font-weight: 700; color: #c3c2bd; }
+  .tk-mons span.on, .tk-mons span.gl { color: #8a8a85; font-weight: 800; }
+  .tk-unit { margin: 7px 2px 0; text-align: right; font-size: 10px; font-weight: 700; color: #c3c2bd; }
+  </style>
+</head>
+<body>
+  <div class="rv-stage">
+
+    <div class="rv-intro">
+      <h1>리포트 마지막 페이지 · 그래프 변형안</h1>
+      <p>그래프 안의 커리큘럼 칩(한글 읽기 / 핵심 패턴)은 빼고, 레벨 10단계 위에서 지금·목표·그 다음과 각 레벨까지 걸리는 기간만 말하도록 다시 짰어요. 상단 졸업 날짜 카드와 하단 추천 코스는 그대로입니다.</p>
+    </div>
+
+    <!-- ================= 현재안 ================= -->
+    <div class="vlab"><b>현재안</b><span>축 없는 장식 곡선 + 그래프 안에 커리큘럼 칩. 레벨도 기간도 안 읽힘</span></div>
+    <div class="vcard">
+      <span class="section-kicker">도착 예측</span>
+      <h2 class="section-title">여기서 저기까지, 이렇게</h2>
+      <p class="rv-sub">주 3회 페이스면, 목표까지 이렇게 그려져요.</p>
+      <svg class="plot" viewBox="0 0 340 210" role="img" aria-label="현재 그래프">
+        <defs>
+          <linearGradient id="oldline" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6ABE36"/><stop offset="1" stop-color="#9BEB26"/></linearGradient>
+          <linearGradient id="oldarea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ABE36" stop-opacity=".18"/><stop offset="1" stop-color="#6ABE36" stop-opacity="0"/></linearGradient>
+        </defs>
+        <line x1="16" y1="34" x2="326" y2="34" stroke="#F0F0F0"/><line x1="16" y1="86" x2="326" y2="86" stroke="#F0F0F0"/><line x1="16" y1="138" x2="326" y2="138" stroke="#F0F0F0"/>
+        <path d="M20 160 C 60 157, 120 146, 170 126 C 226 104, 280 66, 326 34" fill="none" stroke="url(#oldline)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M20 160 C 60 157, 120 146, 170 126 C 226 104, 280 66, 326 34 L326 160 Z" fill="url(#oldarea)"/>
+        <path d="M20 160 C 110 158, 230 152, 326 144" fill="none" stroke="#C9C9C9" stroke-width="1.75" stroke-dasharray="4 4" stroke-linecap="round"/>
+        <line x1="16" y1="160" x2="326" y2="160" stroke="#E1E1E1"/>
+        <circle cx="20" cy="160" r="4.5" fill="#1C1C1C" stroke="#fff" stroke-width="2"/>
+        <circle cx="170" cy="126" r="4.5" fill="#6ABE36" stroke="#fff" stroke-width="2"/>
+        <circle cx="326" cy="34" r="10" fill="#B5FD4C" opacity=".35"/><circle cx="326" cy="34" r="4.5" fill="#6ABE36" stroke="#fff" stroke-width="2"/>
+        <text x="162" y="121" font-size="9.5" fill="#457B23" font-weight="700" text-anchor="end" paint-order="stroke" stroke="#fff" stroke-width="3" stroke-linejoin="round">일상 회화의 토대</text>
+        <text x="318" y="29" font-size="10" fill="#457B23" font-weight="800" text-anchor="end" paint-order="stroke" stroke="#fff" stroke-width="3" stroke-linejoin="round">알아들어요</text>
+        <text x="20" y="176" font-size="9" fill="#757575" text-anchor="middle">오늘</text>
+        <text x="170" y="176" font-size="9" fill="#757575" text-anchor="middle">4개월</text>
+        <text x="326" y="176" font-size="9" fill="#757575" text-anchor="end">8개월</text>
+        <line x1="196" y1="16" x2="210" y2="16" stroke="#6ABE36" stroke-width="2.5" stroke-linecap="round"/><text x="214" y="19" font-size="9" fill="#757575">주 3회</text>
+        <line x1="258" y1="16" x2="272" y2="16" stroke="#A5A5A5" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round"/><text x="276" y="19" font-size="9" fill="#757575">주 1회</text>
+        <rect x="20" y="186" width="96" height="20" rx="6" fill="#F5F5F5" stroke="#E8E8E8"/><text x="68" y="200" font-size="9" fill="#575757" font-weight="700" text-anchor="middle">한글 읽기</text>
+        <rect x="120" y="186" width="206" height="20" rx="6" fill="#F5F5F5" stroke="#E8E8E8"/><text x="223" y="200" font-size="9" fill="#575757" font-weight="700" text-anchor="middle">핵심 패턴</text>
+      </svg>
+    </div>
+
+    <!-- ================= A · 레벨 계단 ================= -->
+    <div class="vlab"><b>A · 레벨 계단</b><span>10단계를 오르는 계단. 지금 서 있는 칸, 목표 칸, 칸마다 누적 개월</span></div>
+    <div class="vcard">
+      <span class="section-kicker">도착 예측</span>
+      <h2 class="section-title">한 계단씩, 여덟 달</h2>
+      <p class="rv-sub">주 3회 페이스로 올라가면 각 레벨까지 이만큼 걸려요.</p>
+
+      <div class="gh">
+        <span class="gh-b"><span class="k">Lv.1 첫걸음 → Lv.4 일상 회화</span><span class="v">노래·드라마를 자막 없이 알아듣기</span></span>
+        <span class="gh-e"><b>약 8개월</b><small>약 100레슨</small></span>
+      </div>
+
+      <svg id="stair" class="plot" viewBox="0 0 340 238" role="img" aria-label="레벨 10단계 계단 그래프"></svg>
+
+      <div class="st" id="stA"></div>
+      <div class="ck" id="ckA"></div>
+      <p class="ck-note"><i>↳</i><span>Lv.5부터는 자유 회화 · 비즈니스로 이어져요. 목표에 닿으면 그때 다시 그려 드려요.</span></p>
+    </div>
+
+    <!-- ================= B · 도달 곡선 ================= -->
+    <div class="vlab"><b>B · 도달 곡선</b><span>가로 = 개월, 세로 = 레벨. 목표가 “첫 1년” 띠 안에 있는 게 보임</span></div>
+    <div class="vcard">
+      <span class="section-kicker">도착 예측</span>
+      <h2 class="section-title">시간에 따라, 이만큼</h2>
+      <p class="rv-sub">가로는 개월, 세로는 레벨. 목표 Lv.4는 첫 1년 안에 있어요.</p>
+
+      <div class="gh">
+        <span class="gh-b"><span class="k">지금 Lv.1 · 목표 Lv.4</span><span class="v">노래·드라마를 자막 없이 알아듣기</span></span>
+        <span class="gh-e"><b>약 8개월</b><small>주 3회 기준</small></span>
+      </div>
+
+      <div class="plot-box">
+        <svg id="curve" class="plot" viewBox="0 0 340 232" role="img" aria-label="개월별 레벨 도달 곡선"></svg>
+      </div>
+
+      <div class="ck" id="ckB"></div>
+      <p class="ck-note"><i>↳</i><span>레벨이 올라갈수록 한 칸에 드는 시간이 늘어요. 초반 네 칸이 가장 빨리 오르는 구간이에요.</span></p>
+    </div>
+
+    <!-- ================= C · 세로 로드맵 ================= -->
+    <div class="vlab"><b>C · 세로 로드맵</b><span>그래프 대신 10칸 여정. 목표까지는 펼치고, 그 이후는 한 줄로 접음</span></div>
+    <div class="vcard">
+      <span class="section-kicker">레벨 로드맵</span>
+      <h2 class="section-title">Lv.1에서 Lv.4까지</h2>
+      <p class="rv-sub">한 칸 오를 때마다 무엇이 되는지, 언제쯤인지 적어 뒀어요.</p>
+
+      <div class="gh">
+        <span class="gh-b"><span class="k">전체 10단계 중 4번째 칸이 목표</span><span class="v">노래·드라마를 자막 없이 알아듣기</span></span>
+        <span class="gh-e"><b>약 8개월</b><small>약 100레슨</small></span>
+      </div>
+
+      <div class="rm" id="rmC" style="margin-top:20px"></div>
+    </div>
+
+    <!-- ================= D · 가로 트랙 ================= -->
+    <div class="vlab"><b>D · 가로 트랙</b><span>1페이지 레벨 눈금을 그대로 키운 안. 리포트 전체가 같은 그림으로 읽힘</span></div>
+    <div class="vcard">
+      <span class="section-kicker">도착 예측</span>
+      <h2 class="section-title">10단계 중, 네 번째 칸까지</h2>
+      <p class="rv-sub">1페이지에서 본 그 눈금이에요. 목표까지 남은 칸과 기간을 얹었어요.</p>
+
+      <div class="gh">
+        <span class="gh-b"><span class="k">지금 Lv.1 · 목표 Lv.4 · 남은 세 칸</span><span class="v">노래·드라마를 자막 없이 알아듣기</span></span>
+        <span class="gh-e"><b>약 8개월</b><small>약 100레슨</small></span>
+      </div>
+
+      <div class="tk">
+        <div class="tk-brk">
+          <div class="a">목표까지 · 8개월</div>
+          <div class="b">그 다음 · 자유 회화 → 비즈니스</div>
+        </div>
+        <div class="tk-segs" id="tkSegs"></div>
+        <div class="tk-pins" id="tkPins"></div>
+        <div class="tk-nums" id="tkNums"></div>
+        <div class="tk-mons" id="tkMons"></div>
+        <p class="tk-unit">누적 개월 · 주 3회 기준</p>
+      </div>
+
+      <div class="ck" id="ckD"></div>
+    </div>
+
+    <!-- ================= E · 원본 곡선 + 레벨 축 ================= -->
+    <div class="vlab"><b>E · 원본 곡선 + 레벨 축</b><span>원본 그래프 그대로. 주 1회 선·커리큘럼 칩 빼고, y축에 레벨을 매겼다. 목표까지만 그리고 물결(〜) 위에 마지막 레벨</span></div>
+    <div class="vcard">
+      <span class="section-kicker">도착 예측</span>
+      <h2 class="section-title">여기서 저기까지, 이렇게</h2>
+      <p class="rv-sub">주 3회 페이스면, 목표까지 이렇게 그려져요.</p>
+
+      <div class="gh">
+        <span class="gh-b"><span class="k">지금 Lv.1 · 목표 Lv.4</span><span class="v">노래·드라마를 자막 없이 알아듣기</span></span>
+        <span class="gh-e"><b>약 8개월</b><small>약 100레슨</small></span>
+      </div>
+
+      <svg id="orig" class="plot" viewBox="0 0 340 214" role="img" aria-label="목표 레벨까지의 학습 곡선"></svg>
+
+      <div class="st" id="stE"></div>
+    </div>
+
+    <!-- ================= F · 지금 → 목표 (축 없이) ================= -->
+    <div class="vlab"><b>F · 지금 → 목표</b><span>Opal식. 축·눈금을 다 걷어내고 지금·목표를 말풍선으로. 위쪽 알약이 남은 레벨을 알려 준다</span></div>
+    <div class="vcard">
+      <span class="section-kicker">도착 예측</span>
+      <h2 class="section-title">여기서, 저기까지</h2>
+      <p class="rv-sub">지금 Lv.1에서 목표 Lv.4까지. 날짜는 주 3회 페이스 기준이에요.</p>
+
+      <div class="gh">
+        <span class="gh-b"><span class="k">Lv.1 첫걸음 → Lv.4 일상 회화</span><span class="v">노래·드라마를 자막 없이 알아듣기</span></span>
+        <span class="gh-e"><b>약 8개월</b><small>약 100레슨</small></span>
+      </div>
+
+      <svg id="opal" class="plot" viewBox="0 0 340 196" role="img" aria-label="지금에서 목표까지의 곡선"></svg>
+
+      <div class="st" id="stF"></div>
+    </div>
+
+  </div>
+
+  <script>
+  /* ---------------- 레벨 10단계 (임시안 · 이름과 기간은 확정 전) ----------------
+     m = 지금부터 누적 개월(주 3회 · 월 약 13레슨 기준) */
+  var LV = [
+    { n: 1,  name: "첫걸음",     m: 0,  l: 0,   ms: "한글을 소리 내어 읽어요" },
+    { n: 2,  name: "단어",       m: 2,  l: 26,  ms: "인사와 단어로 짧게 주고받아요" },
+    { n: 3,  name: "문장",       m: 5,  l: 65,  ms: "내 이야기를 한두 문장으로 말해요" },
+    { n: 4,  name: "일상 회화",   m: 8,  l: 100, ms: "자막 없이 드라마 대사가 들려요" },
+    { n: 5,  name: "대화 확장",   m: 12, l: 155, ms: "과거·미래를 오가며 이야기해요" },
+    { n: 6,  name: "자유 회화",   m: 17, l: 220, ms: "이유와 의견을 막힘없이 말해요" },
+    { n: 7,  name: "뉘앙스",     m: 23, l: 300, ms: "반말·존댓말을 상황에 맞게 골라요" },
+    { n: 8,  name: "토론",       m: 30, l: 390, ms: "뉴스·사회 주제로 길게 말해요" },
+    { n: 9,  name: "비즈니스",    m: 38, l: 495, ms: "회의·발표를 한국어로 해요" },
+    { n: 10, name: "원어민처럼",  m: 48, l: 625, ms: "농담·관용구까지 자연스럽게" }
+  ];
+  var NOW = 0, GOAL = 3;               /* 인덱스 */
+  var NS = "http://www.w3.org/2000/svg";
+  function el(t, a, txt) { var e = document.createElementNS(NS, t); for (var k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; return e; }
+  function whenLabel(i) { return i === NOW ? "지금" : LV[i].m + "개월"; }
+
+  /* 경과 개월 → 실제 달력 달. "8개월"보다 "내년 3월"이 훨씬 손에 잡힌다 (ref: 02-wellbeing) */
+  var TODAY = new Date();
+  function monthLabel(m) {
+    if (m === 0) return "오늘";
+    var d = new Date(TODAY.getFullYear(), TODAY.getMonth() + m, 1);
+    var dy = d.getFullYear() - TODAY.getFullYear();
+    return (dy === 1 ? "내년 " : dy > 1 ? (d.getFullYear() % 100) + "년 " : "") + (d.getMonth() + 1) + "월";
+  }
+
+  /* 공통 · 가까운 숫자 + 먼 숫자 두 장 (ref: 06-vocabulary "Points to next level") */
+  function stats(id) {
+    var box = document.getElementById(id); if (!box) return;
+    var nx = LV[NOW + 1], gl = LV[GOAL];
+    box.innerHTML =
+      '<div class="st-c hi"><span class="k">다음 레벨까지</span><span class="v">' + (nx.l - LV[NOW].l) + '레슨</span>' +
+      '<span class="s">약 ' + nx.m + '개월 · Lv.' + nx.n + ' ' + nx.name + '</span></div>' +
+      '<div class="st-c"><span class="k">목표까지</span><span class="v">' + gl.l + '레슨</span>' +
+      '<span class="s">약 ' + gl.m + '개월 · Lv.' + gl.n + ' ' + gl.name + '</span></div>';
+  }
+  stats("stA"); stats("stE"); stats("stF");
+
+  /* ---------------- 공통 · 마일스톤 3줄 (목표까지 남은 칸) ---------------- */
+  function milestones(id) {
+    var box = document.getElementById(id); if (!box) return;
+    for (var i = NOW + 1; i <= GOAL; i++) {
+      var lv = LV[i], goal = i === GOAL;
+      var row = document.createElement("div");
+      row.className = "ck-row" + (goal ? " goal" : "");
+      row.innerHTML =
+        '<span class="w">' + lv.m + '<small>개월 뒤</small></span>' +
+        '<span class="b"><b>Lv.' + lv.n + ' ' + lv.name + '</b><span>' + lv.ms + '</span></span>' +
+        (goal ? '<span class="flag">목표</span>' : '');
+      box.appendChild(row);
+    }
+  }
+  milestones("ckA"); milestones("ckB"); milestones("ckD");
+
+  /* ================= A · 레벨 계단 ================= */
+  (function () {
+    var svg = document.getElementById("stair"); if (!svg) return;
+    var L = 16, R = 328, BY = 196, RH = 13.6, TW = (R - L) / LV.length;
+    var xL = function (i) { return L + i * TW; }, xC = function (i) { return L + (i + .5) * TW; };
+    var yT = function (i) { return BY - (i + 1) * RH; };
+    var goalRight = xL(GOAL + 1);
+
+    /* 목표 구간 배경 띠 */
+    svg.appendChild(el("rect", { x: L, y: 30, width: goalRight - L, height: BY - 30, rx: 7, fill: "#f4fde6" }));
+    svg.appendChild(el("text", { x: (L + goalRight) / 2, y: 25, "font-size": "9.5", "font-weight": "800", fill: "#7ba454", "text-anchor": "middle" }, "목표까지"));
+    svg.appendChild(el("text", { x: (goalRight + R) / 2, y: 25, "font-size": "9.5", "font-weight": "800", fill: "#c3c2bd", "text-anchor": "middle" }, "그 다음"));
+
+    /* 계단 — 목표까지는 채우고, 이후는 실루엣만 */
+    var dFill = "M" + xL(0) + " " + BY;
+    for (var i = 0; i <= GOAL; i++) dFill += " V" + yT(i).toFixed(1) + " H" + xL(i + 1).toFixed(1);
+    svg.appendChild(el("path", { d: dFill + " V" + BY + " Z", fill: "#dff3c2" }));
+
+    var dEdge = "M" + xL(0) + " " + BY;
+    for (var i = 0; i <= GOAL; i++) dEdge += " V" + yT(i).toFixed(1) + " H" + xL(i + 1).toFixed(1);
+    svg.appendChild(el("path", { d: dEdge, fill: "none", stroke: "#6abe36", "stroke-width": "3", "stroke-linejoin": "round", "stroke-linecap": "round" }));
+
+    var dGhost = "M" + xL(GOAL + 1).toFixed(1) + " " + yT(GOAL).toFixed(1);
+    for (var i = GOAL + 1; i < LV.length; i++) dGhost += " V" + yT(i).toFixed(1) + " H" + xL(i + 1).toFixed(1);
+    svg.appendChild(el("path", { d: dGhost, fill: "none", stroke: "#d3d2cc", "stroke-width": "2", "stroke-linejoin": "round", "stroke-dasharray": "5 4" }));
+
+    /* 바닥선 */
+    svg.appendChild(el("line", { x1: L, y1: BY, x2: R, y2: BY, stroke: "#e4e3dd", "stroke-width": "1.5" }));
+
+    /* 레벨 숫자 · 누적 개월 — 목표 칸은 마커가 가리므로 숫자를 옆으로 뺀다 */
+    for (var i = 0; i < LV.length; i++) {
+      var done = i <= GOAL, isGoal = i === GOAL;
+      svg.appendChild(el("text", {
+        x: (isGoal ? xC(i) + 13 : xC(i)).toFixed(1), y: (yT(i) - (isGoal ? -3.5 : 6)).toFixed(1),
+        "font-size": done ? "10" : "9.5", "font-weight": done ? "900" : "700",
+        fill: done ? "#3d6b1e" : "#b4b3ae", "text-anchor": isGoal ? "start" : "middle"
+      }, String(LV[i].n)));
+      svg.appendChild(el("text", {
+        x: xC(i).toFixed(1), y: BY + 16, "font-size": "9.5",
+        "font-weight": (i === NOW || i === GOAL) ? "900" : "700",
+        fill: i === GOAL ? "#3d6b1e" : (i === NOW ? "#1c1c1c" : "#bcbbb6"), "text-anchor": "middle"
+      }, String(LV[i].m)));
+    }
+    svg.appendChild(el("text", { x: R, y: BY + 31, "font-size": "9", "font-weight": "700", fill: "#c3c2bd", "text-anchor": "end" }, "누적 개월 · 주 3회 기준"));
+    svg.appendChild(el("text", { x: L, y: BY + 31, "font-size": "9", "font-weight": "700", fill: "#c3c2bd" }, "레벨 10단계"));
+
+    /* 지금 · 목표 마커 */
+    svg.appendChild(el("circle", { cx: xC(NOW).toFixed(1), cy: yT(NOW).toFixed(1), r: "5", fill: "#1c1c1c", stroke: "#fff", "stroke-width": "2.5" }));
+    svg.appendChild(el("text", { x: xC(NOW).toFixed(1), y: (yT(NOW) - 22).toFixed(1), "font-size": "10", "font-weight": "900", fill: "#1c1c1c", "text-anchor": "middle", "paint-order": "stroke", stroke: "#f4fde6", "stroke-width": "3.5", "stroke-linejoin": "round" }, "지금"));
+
+    svg.appendChild(el("circle", { cx: xC(GOAL).toFixed(1), cy: yT(GOAL).toFixed(1), r: "11", fill: "#b5fd4c", opacity: ".45" }));
+    svg.appendChild(el("circle", { cx: xC(GOAL).toFixed(1), cy: yT(GOAL).toFixed(1), r: "5.5", fill: "#6abe36", stroke: "#fff", "stroke-width": "2.5" }));
+    svg.appendChild(el("text", { x: (xC(GOAL) + 9).toFixed(1), y: (yT(GOAL) - 27).toFixed(1), "font-size": "11", "font-weight": "900", fill: "#1c1c1c", "text-anchor": "end", "paint-order": "stroke", stroke: "#f4fde6", "stroke-width": "3.5", "stroke-linejoin": "round" }, "목표 · " + monthLabel(LV[GOAL].m)));
+    svg.appendChild(el("text", { x: (xC(GOAL) + 9).toFixed(1), y: (yT(GOAL) - 16).toFixed(1), "font-size": "9.5", "font-weight": "800", fill: "#7ba454", "text-anchor": "end", "paint-order": "stroke", stroke: "#f4fde6", "stroke-width": "3.5", "stroke-linejoin": "round" }, "자막 없이 알아들어요"));
+  })();
+
+  /* ================= B · 도달 곡선 ================= */
+  (function () {
+    var svg = document.getElementById("curve"); if (!svg) return;
+    var L = 34, R = 326, BY = 190, TY = 34, MAX = 48;
+    /* 가로 = 누적 개월, 세로 = 레벨 */
+    var x = function (m) { return L + (m / MAX) * (R - L); };
+    var y = function (i) { return BY - (i / (LV.length - 1)) * (BY - TY); };
+
+    /* 첫 1년 띠 — 세로 기둥 */
+    svg.appendChild(el("rect", { x: L, y: TY, width: (x(12) - L).toFixed(1), height: BY - TY, fill: "#f4fde6" }));
+    svg.appendChild(el("text", { x: ((L + x(12)) / 2).toFixed(1), y: TY + 12, "font-size": "9.5", "font-weight": "800", fill: "#a7c489", "text-anchor": "middle" }, "첫 1년"));
+
+    /* 세로 눈금 = 레벨 */
+    for (var i = 0; i < LV.length; i++) {
+      svg.appendChild(el("line", { x1: L, y1: y(i).toFixed(1), x2: R, y2: y(i).toFixed(1), stroke: i === 0 ? "#e4e3dd" : (i === GOAL ? "#e0eecb" : "#f3f2ef"), "stroke-width": i === 0 ? "1.5" : "1" }));
+      svg.appendChild(el("text", {
+        x: L - 9, y: (y(i) + 3.5).toFixed(1), "font-size": (i === NOW || i === GOAL) ? "10" : "9.5",
+        "font-weight": (i === NOW || i === GOAL) ? "900" : "700",
+        fill: i === GOAL ? "#3d6b1e" : (i === NOW ? "#1c1c1c" : "#bcbbb6"), "text-anchor": "end"
+      }, String(LV[i].n)));
+    }
+    svg.appendChild(el("text", { x: L - 9, y: TY - 11, "font-size": "9", "font-weight": "800", fill: "#c3c2bd", "text-anchor": "end" }, "레벨"));
+
+    /* 가로 눈금 = 개월 */
+    [12, 24, 36].forEach(function (m) {
+      svg.appendChild(el("line", { x1: x(m).toFixed(1), y1: TY, x2: x(m).toFixed(1), y2: BY, stroke: "#f3f2ef", "stroke-width": "1" }));
+    });
+    [0, 8, 12, 24, 36, 48].forEach(function (m) {
+      svg.appendChild(el("text", {
+        x: x(m).toFixed(1), y: BY + 16, "font-size": m === 8 ? "10" : "9.5", "font-weight": m === 8 ? "900" : "700",
+        fill: m === 8 ? "#3d6b1e" : "#bcbbb6", "text-anchor": m === 48 ? "end" : (m === 0 ? "start" : "middle")
+      }, String(m)));
+    });
+    svg.appendChild(el("text", { x: R, y: BY + 31, "font-size": "9", "font-weight": "700", fill: "#c3c2bd", "text-anchor": "end" }, "누적 개월 · 주 3회 기준"));
+
+    /* 부드러운 경로 (Catmull-Rom → 베지어) */
+    function pathOf(a, b) {
+      var p = [];
+      for (var i = a; i <= b; i++) p.push([x(LV[i].m), y(i)]);
+      var d = "M" + p[0][0].toFixed(1) + " " + p[0][1].toFixed(1);
+      for (var i = 0; i < p.length - 1; i++) {
+        var p0 = p[i - 1] || p[i], p1 = p[i], p2 = p[i + 1], p3 = p[i + 2] || p2;
+        d += " C" + (p1[0] + (p2[0] - p0[0]) / 6).toFixed(1) + " " + (p1[1] + (p2[1] - p0[1]) / 6).toFixed(1) +
+             " " + (p2[0] - (p3[0] - p1[0]) / 6).toFixed(1) + " " + (p2[1] - (p3[1] - p1[1]) / 6).toFixed(1) +
+             " " + p2[0].toFixed(1) + " " + p2[1].toFixed(1);
+      }
+      return d;
+    }
+    svg.appendChild(el("path", { d: pathOf(GOAL, LV.length - 1), fill: "none", stroke: "#cfcec8", "stroke-width": "2", "stroke-dasharray": "5 4", "stroke-linecap": "round" }));
+    svg.appendChild(el("path", { d: pathOf(0, GOAL), fill: "none", stroke: "#6abe36", "stroke-width": "3.5", "stroke-linecap": "round", "stroke-linejoin": "round" }));
+
+    /* 점 */
+    for (var i = 0; i < LV.length; i++) {
+      var done = i <= GOAL;
+      svg.appendChild(el("circle", { cx: x(LV[i].m).toFixed(1), cy: y(i).toFixed(1), r: done ? "4" : "3", fill: done ? "#6abe36" : "#fff", stroke: done ? "#fff" : "#cfcec8", "stroke-width": done ? "2" : "1.5" }));
+    }
+    /* 지금 */
+    svg.appendChild(el("circle", { cx: x(0).toFixed(1), cy: y(NOW).toFixed(1), r: "4.5", fill: "#1c1c1c", stroke: "#fff", "stroke-width": "2" }));
+    svg.appendChild(el("text", { x: (x(0) + 8).toFixed(1), y: (y(NOW) - 13).toFixed(1), "font-size": "10", "font-weight": "900", fill: "#1c1c1c", "paint-order": "stroke", stroke: "#f4fde6", "stroke-width": "3.5", "stroke-linejoin": "round" }, "지금"));
+
+    /* 목표 */
+    svg.appendChild(el("line", { x1: x(LV[GOAL].m).toFixed(1), y1: y(GOAL).toFixed(1), x2: x(LV[GOAL].m).toFixed(1), y2: BY, stroke: "#6abe36", "stroke-width": "1.5", "stroke-dasharray": "3 3" }));
+    svg.appendChild(el("circle", { cx: x(LV[GOAL].m).toFixed(1), cy: y(GOAL).toFixed(1), r: "11", fill: "#b5fd4c", opacity: ".45" }));
+    svg.appendChild(el("circle", { cx: x(LV[GOAL].m).toFixed(1), cy: y(GOAL).toFixed(1), r: "5", fill: "#6abe36", stroke: "#fff", "stroke-width": "2.5" }));
+    svg.appendChild(el("text", { x: (x(LV[GOAL].m) + 14).toFixed(1), y: (y(GOAL) - 4).toFixed(1), "font-size": "11.5", "font-weight": "900", fill: "#1c1c1c", "paint-order": "stroke", stroke: "#fff", "stroke-width": "3.5", "stroke-linejoin": "round" }, "목표 · 8개월"));
+    svg.appendChild(el("text", { x: (x(LV[GOAL].m) + 14).toFixed(1), y: (y(GOAL) + 7).toFixed(1), "font-size": "9.5", "font-weight": "800", fill: "#7ba454", "paint-order": "stroke", stroke: "#fff", "stroke-width": "3.5", "stroke-linejoin": "round" }, "자막 없이 알아들어요"));
+
+    /* 마지막 칸 */
+    svg.appendChild(el("text", { x: R, y: (y(LV.length - 1) - 9).toFixed(1), "font-size": "9.5", "font-weight": "800", fill: "#b4b3ae", "text-anchor": "end" }, "원어민처럼"));
+  })();
+
+  /* ================= E · 원본 곡선 + 레벨 축 =================
+     원본과 같은 스웁 곡선·그라디언트·글로우 도트. 달라진 것:
+     주 1회 점선과 커리큘럼 칩을 빼고, y축을 레벨로 못박고,
+     목표(Lv.4)까지만 그린 뒤 물결(〜) 위에 마지막 레벨을 얹었다. */
+  (function () {
+    var svg = document.getElementById("orig"); if (!svg) return;
+    var L = 44, R = 316, BY = 176, SP = 25;          /* Lv.1 바닥, 한 레벨 25 */
+    var MAXM = LV[GOAL].m;                            /* 그래프는 목표까지만 */
+    var BRK = 58, TOPLV = 38;                         /* 물결 위치, 마지막 레벨 선 */
+    var x = function (m) { return L + (m / MAXM) * (R - L); };
+    var yL = function (i) { return BY - i * SP; };    /* i = 레벨 인덱스 */
+
+    var defs = el("defs"); svg.appendChild(defs);
+    var g1 = el("linearGradient", { id: "eline", x1: "0", y1: "1", x2: "1", y2: "0" });
+    g1.appendChild(el("stop", { offset: "0", "stop-color": "#6ABE36" }));
+    g1.appendChild(el("stop", { offset: "1", "stop-color": "#9BEB26" }));
+    var g2 = el("linearGradient", { id: "earea", x1: "0", y1: "0", x2: "0", y2: "1" });
+    g2.appendChild(el("stop", { offset: "0", "stop-color": "#6ABE36", "stop-opacity": ".18" }));
+    g2.appendChild(el("stop", { offset: "1", "stop-color": "#6ABE36", "stop-opacity": "0" }));
+    defs.appendChild(g1); defs.appendChild(g2);
+
+    /* 레벨 눈금선 + 라벨 (Lv.1 ~ 목표) */
+    for (var i = 0; i <= GOAL; i++) {
+      svg.appendChild(el("line", { x1: L, y1: yL(i), x2: R + 10, y2: yL(i), stroke: i === 0 ? "#e1e1e1" : "#f0f0f0", "stroke-width": i === 0 ? "1.25" : "1" }));
+      svg.appendChild(el("text", {
+        x: L - 11, y: yL(i) + 3.5, "font-size": i === GOAL ? "10.5" : "10",
+        "font-weight": (i === NOW || i === GOAL) ? "900" : "700",
+        fill: i === GOAL ? "#3d6b1e" : (i === NOW ? "#1c1c1c" : "#b4b3ae"), "text-anchor": "end"
+      }, "Lv." + LV[i].n));
+    }
+
+    /* 축 끊김 표시 — 물결 두 줄 */
+    function wave(yy) {
+      var d = "M" + L + " " + yy;
+      for (var xx = L; xx < R + 10; xx += 16) d += " q4 -3.5 8 0 q4 3.5 8 0";
+      return d;
+    }
+    svg.appendChild(el("path", { d: wave(BRK), fill: "none", stroke: "#e0dfd9", "stroke-width": "1.5" }));
+    svg.appendChild(el("path", { d: wave(BRK + 7), fill: "none", stroke: "#e0dfd9", "stroke-width": "1.5" }));
+
+    /* 물결 위 — 마지막 레벨 */
+    svg.appendChild(el("line", { x1: L, y1: TOPLV, x2: R + 10, y2: TOPLV, stroke: "#efeeea", "stroke-width": "1", "stroke-dasharray": "4 4" }));
+    svg.appendChild(el("text", { x: L - 11, y: TOPLV + 3.5, "font-size": "10", "font-weight": "800", fill: "#c3c2bd", "text-anchor": "end" }, "Lv." + LV[LV.length - 1].n));
+    svg.appendChild(el("text", { x: R + 10, y: TOPLV - 7, "font-size": "9.5", "font-weight": "800", fill: "#c3c2bd", "text-anchor": "end" }, "원어민처럼 · 마지막 레벨"));
+
+    /* 곡선 — 목표까지 */
+    var p = [];
+    for (var i = 0; i <= GOAL; i++) p.push([x(LV[i].m), yL(i)]);
+    var d = "M" + p[0][0].toFixed(1) + " " + p[0][1].toFixed(1);
+    for (var i = 0; i < p.length - 1; i++) {
+      var p0 = p[i - 1] || p[i], p1 = p[i], p2 = p[i + 1], p3 = p[i + 2] || p2;
+      d += " C" + (p1[0] + (p2[0] - p0[0]) / 6).toFixed(1) + " " + (p1[1] + (p2[1] - p0[1]) / 6).toFixed(1) +
+           " " + (p2[0] - (p3[0] - p1[0]) / 6).toFixed(1) + " " + (p2[1] - (p3[1] - p1[1]) / 6).toFixed(1) +
+           " " + p2[0].toFixed(1) + " " + p2[1].toFixed(1);
+    }
+    svg.appendChild(el("path", { d: d + " L" + p[p.length - 1][0].toFixed(1) + " " + BY + " L" + p[0][0].toFixed(1) + " " + BY + " Z", fill: "url(#earea)" }));
+    svg.appendChild(el("path", { d: d, fill: "none", stroke: "url(#eline)", "stroke-width": "3", "stroke-linecap": "round" }));
+
+    /* 점 */
+    svg.appendChild(el("circle", { cx: x(0), cy: yL(0), r: "4.5", fill: "#1C1C1C", stroke: "#fff", "stroke-width": "2" }));
+    for (var i = 1; i < GOAL; i++) svg.appendChild(el("circle", { cx: x(LV[i].m).toFixed(1), cy: yL(i), r: "4.5", fill: "#6ABE36", stroke: "#fff", "stroke-width": "2" }));
+    svg.appendChild(el("circle", { cx: x(LV[GOAL].m), cy: yL(GOAL), r: "10", fill: "#B5FD4C", opacity: ".35" }));
+    svg.appendChild(el("circle", { cx: x(LV[GOAL].m), cy: yL(GOAL), r: "4.5", fill: "#6ABE36", stroke: "#fff", "stroke-width": "2" }));
+
+    /* 라벨 — 중간 하나 + 목표 */
+    var mid = GOAL - 1;
+    svg.appendChild(el("text", { x: (x(LV[mid].m) - 9).toFixed(1), y: (yL(mid) - 5).toFixed(1), "font-size": "9.5", "font-weight": "700", fill: "#457B23", "text-anchor": "end", "paint-order": "stroke", stroke: "#fff", "stroke-width": "3", "stroke-linejoin": "round" }, "내 이야기를 문장으로"));
+    svg.appendChild(el("text", { x: R + 8, y: yL(GOAL) - 22, "font-size": "11", "font-weight": "900", fill: "#1c1c1c", "text-anchor": "end", "paint-order": "stroke", stroke: "#fff", "stroke-width": "3", "stroke-linejoin": "round" }, "목표"));
+    svg.appendChild(el("text", { x: R + 8, y: yL(GOAL) - 11, "font-size": "10", "font-weight": "800", fill: "#457B23", "text-anchor": "end", "paint-order": "stroke", stroke: "#fff", "stroke-width": "3", "stroke-linejoin": "round" }, "자막 없이 알아들어요"));
+
+    /* 가로축 — 개월 */
+    for (var i = 0; i <= GOAL; i++) {
+      svg.appendChild(el("text", {
+        x: x(LV[i].m).toFixed(1), y: BY + 17, "font-size": "9.5",
+        "font-weight": (i === NOW || i === GOAL) ? "900" : "700",
+        fill: i === GOAL ? "#3d6b1e" : (i === NOW ? "#1c1c1c" : "#a5a5a5"),
+        "text-anchor": i === 0 ? "start" : (i === GOAL ? "end" : "middle")
+      }, monthLabel(LV[i].m)));
+    }
+    svg.appendChild(el("text", { x: R + 10, y: BY + 32, "font-size": "9", "font-weight": "700", fill: "#c3c2bd", "text-anchor": "end" }, "주 3회 기준"));
+  })();
+
+  /* ================= F · 지금 → 목표 (축 없이) =================
+     ref 03-opal — 시간 축을 걷어내고 양 끝을 "지금 / 목표"로만 잡는다.
+     ref 04-training — 목표 값은 꼬리 달린 말풍선 + 바닥까지 내리는 세로선.
+     ref 02-wellbeing — 가로 라벨은 경과 개월이 아니라 실제 달력 달. */
+  (function () {
+    var svg = document.getElementById("opal"); if (!svg) return;
+    var L = 22, R = 308, BY = 158, GY = 74, SP = (BY - GY) / GOAL;
+    var x = function (m) { return L + (m / LV[GOAL].m) * (R - L); };
+    var yL = function (i) { return BY - i * SP; };
+
+    var defs = el("defs"); svg.appendChild(defs);
+    var g1 = el("linearGradient", { id: "fline", x1: "0", y1: "1", x2: "1", y2: "0" });
+    g1.appendChild(el("stop", { offset: "0", "stop-color": "#6ABE36" }));
+    g1.appendChild(el("stop", { offset: "1", "stop-color": "#9BEB26" }));
+    var g2 = el("linearGradient", { id: "farea", x1: "0", y1: "0", x2: "0", y2: "1" });
+    g2.appendChild(el("stop", { offset: "0", "stop-color": "#6ABE36", "stop-opacity": ".16" }));
+    g2.appendChild(el("stop", { offset: "1", "stop-color": "#6ABE36", "stop-opacity": "0" }));
+    defs.appendChild(g1); defs.appendChild(g2);
+
+    /* 아주 옅은 레벨선 — 숫자 없이 결만 */
+    for (var i = 0; i <= GOAL; i++) svg.appendChild(el("line", { x1: L, y1: yL(i).toFixed(1), x2: R + 6, y2: yL(i).toFixed(1), stroke: i === 0 ? "#e6e5e0" : "#f4f3f0", "stroke-width": i === 0 ? "1.25" : "1" }));
+
+    /* 위쪽 — 목표 너머에 레벨이 더 있다 */
+    svg.appendChild(el("line", { x1: 124, y1: 30, x2: R + 6, y2: 30, stroke: "#ebeae5", "stroke-width": "1", "stroke-dasharray": "4 4" }));
+    svg.appendChild(el("rect", { x: L, y: 20, width: 96, height: 20, rx: 10, fill: "#f2f1ed" }));
+    svg.appendChild(el("text", { x: L + 48, y: 34, "font-size": "10", "font-weight": "800", fill: "#a3a29d", "text-anchor": "middle" }, "Lv.5 – 10 더 있어요"));
+
+    /* 곡선 */
+    var p = [];
+    for (var i = 0; i <= GOAL; i++) p.push([x(LV[i].m), yL(i)]);
+    var d = "M" + p[0][0].toFixed(1) + " " + p[0][1].toFixed(1);
+    for (var i = 0; i < p.length - 1; i++) {
+      var p0 = p[i - 1] || p[i], p1 = p[i], p2 = p[i + 1], p3 = p[i + 2] || p2;
+      d += " C" + (p1[0] + (p2[0] - p0[0]) / 6).toFixed(1) + " " + (p1[1] + (p2[1] - p0[1]) / 6).toFixed(1) +
+           " " + (p2[0] - (p3[0] - p1[0]) / 6).toFixed(1) + " " + (p2[1] - (p3[1] - p1[1]) / 6).toFixed(1) +
+           " " + p2[0].toFixed(1) + " " + p2[1].toFixed(1);
+    }
+    svg.appendChild(el("path", { d: d + " L" + p[p.length - 1][0].toFixed(1) + " " + BY + " L" + p[0][0].toFixed(1) + " " + BY + " Z", fill: "url(#farea)" }));
+    svg.appendChild(el("path", { d: d, fill: "none", stroke: "url(#fline)", "stroke-width": "3.25", "stroke-linecap": "round" }));
+
+    /* 목표 — 바닥까지 내리는 선 + 꼬리 달린 말풍선 */
+    svg.appendChild(el("line", { x1: x(LV[GOAL].m).toFixed(1), y1: yL(GOAL).toFixed(1), x2: x(LV[GOAL].m).toFixed(1), y2: BY, stroke: "#cfe8b4", "stroke-width": "1.5" }));
+    svg.appendChild(el("circle", { cx: x(LV[GOAL].m).toFixed(1), cy: yL(GOAL).toFixed(1), r: "11", fill: "#B5FD4C", opacity: ".4" }));
+    svg.appendChild(el("rect", { x: R - 76, y: 42, width: 84, height: 23, rx: 7, fill: "#1c1c1c" }));
+    svg.appendChild(el("polygon", { points: (R - 4) + ",65 " + (R + 4) + ",65 " + R + ",71", fill: "#1c1c1c" }));
+    svg.appendChild(el("text", { x: R - 34, y: 58, "font-size": "11.5", "font-weight": "900", fill: "#b5fd4c", "text-anchor": "middle" }, "목표 Lv." + LV[GOAL].n));
+    svg.appendChild(el("circle", { cx: x(LV[GOAL].m).toFixed(1), cy: yL(GOAL).toFixed(1), r: "5", fill: "#6ABE36", stroke: "#fff", "stroke-width": "2.5" }));
+
+    /* 중간 점 · 시작점 */
+    for (var i = 1; i < GOAL; i++) svg.appendChild(el("circle", { cx: x(LV[i].m).toFixed(1), cy: yL(i).toFixed(1), r: "4.5", fill: "#6ABE36", stroke: "#fff", "stroke-width": "2" }));
+    /* 시작점은 아래 "오늘" 라벨이 곧 표지 — 곡선이 바로 치솟아 알약이 들어갈 자리가 없다 */
+    svg.appendChild(el("circle", { cx: x(0), cy: yL(0), r: "5", fill: "#1C1C1C", stroke: "#fff", "stroke-width": "2" }));
+
+    /* 가로 — 달력 달 */
+    for (var i = 0; i <= GOAL; i++) {
+      svg.appendChild(el("text", {
+        x: x(LV[i].m).toFixed(1), y: BY + 18, "font-size": "10",
+        "font-weight": (i === NOW || i === GOAL) ? "900" : "700",
+        fill: i === GOAL ? "#3d6b1e" : (i === NOW ? "#1c1c1c" : "#a5a5a5"),
+        "text-anchor": i === 0 ? "start" : (i === GOAL ? "end" : "middle")
+      }, monthLabel(LV[i].m)));
+    }
+    svg.appendChild(el("text", { x: R + 6, y: BY + 33, "font-size": "9", "font-weight": "700", fill: "#c3c2bd", "text-anchor": "end" }, "주 3회 기준"));
+  })();
+
+  /* ================= C · 세로 로드맵 ================= */
+  (function () {
+    var box = document.getElementById("rmC"); if (!box) return;
+    for (var i = 0; i < LV.length; i++) {
+      var lv = LV[i], fut = i > GOAL;
+      var row = document.createElement("div");
+      row.className = "rm-r" + (i === NOW ? " now" : "") + (i === GOAL ? " goal" : "") + (fut ? " fut" : "");
+      var body = fut
+        ? '<span class="rm-lv">Lv.' + lv.n + '</span><span class="rm-nm">' + lv.name + '</span><span class="rm-wh">' + lv.m + '개월</span>'
+        : '<div class="rm-top"><span class="rm-lv">Lv.' + lv.n + '</span><span class="rm-nm">' + lv.name +
+          (i === NOW ? '<span class="rm-tag">지금 여기</span>' : '') + (i === GOAL ? '<span class="rm-tag">목표</span>' : '') +
+          '</span><span class="rm-wh">' + whenLabel(i) + '</span></div><p class="rm-ms">' + lv.ms + '</p>';
+      row.innerHTML = '<span class="rm-rail"><span class="rm-dot"></span></span><div class="rm-c">' + body + '</div>';
+      if (i === GOAL + 1) {
+        var h = document.createElement("p");
+        h.className = "rm-more"; h.textContent = "목표를 넘어서면";
+        box.appendChild(h);
+      }
+      box.appendChild(row);
+    }
+  })();
+
+  /* ================= D · 가로 트랙 ================= */
+  (function () {
+    var segs = document.getElementById("tkSegs"), pins = document.getElementById("tkPins"),
+        nums = document.getElementById("tkNums"), mons = document.getElementById("tkMons");
+    if (!segs) return;
+    for (var i = 0; i < LV.length; i++) {
+      var s = document.createElement("span");
+      s.className = i === NOW ? "done" : (i === GOAL ? "goal" : (i < GOAL ? "path" : ""));
+      segs.appendChild(s);
+
+      var p = document.createElement("span");
+      p.className = i === NOW ? "now" : (i === GOAL ? "goal" : "");
+      p.textContent = i === NOW ? "지금" : (i === GOAL ? "목표" : "·");
+      pins.appendChild(p);
+
+      var n = document.createElement("span");
+      n.className = i === NOW ? "on" : (i === GOAL ? "gl" : "");
+      n.textContent = i === NOW ? "Lv.1" : String(LV[i].n);
+      nums.appendChild(n);
+
+      var m = document.createElement("span");
+      m.className = i === NOW ? "on" : (i === GOAL ? "gl" : "");
+      m.textContent = String(LV[i].m);
+      mons.appendChild(m);
+    }
+  })();
+  </script>
+</body>
+</html>

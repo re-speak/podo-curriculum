@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>첫 만남 - 드라마로 배우는 한국어</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <style>
+    /* drama-only touches, self-contained so the shared CSS is untouched */
+    .line-flag {
+      display: inline-block;
+      float: right;
+      margin-left: 8px;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: #b5fd4c;
+      border: 1.5px solid #1c1c1c;
+      font-size: 11px;
+      font-weight: 800;
+      vertical-align: middle;
+    }
+    .line-flag.exp { background: #6abe36; color: #fff; }
+    /* color code: lime = pattern, green = expression */
+    .korean .focus { border-bottom: 3px solid #b5fd4c; font-weight: 800; }
+    .korean .focus-exp { border-bottom: 3px solid #6abe36; font-weight: 800; }
+    /* batchim spotlight — the form-rule examples are the star of the page */
+    .bx-card { border: 1.5px solid #1c1c1c; border-radius: 16px; padding: 16px 18px; }
+    .bx-card + .bx-card { margin-top: 14px; }
+    .bx-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .bx-title { font-size: 19px; font-weight: 800; }
+    .bx-title .o { color: #6abe36; }
+    .bx-title .x { color: #a5a5a5; }
+    .bx-ja { color: #757575; font-size: 13px; }
+    .bx-form { margin-left: auto; padding: 5px 15px; border-radius: 999px; background: #1c1c1c; color: #fff; font-size: 17px; font-weight: 800; }
+    .bx-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 2px 6px; }
+    .bx-row + .bx-row { border-top: 1px dashed #e8e8e8; }
+    .bx-verb { font-size: 30px; font-weight: 800; line-height: 1; }
+    .bx-syl { display: inline-block; padding: 3px 8px; border-radius: 10px; }
+    .bx-syl.no { background: #efefef; }
+    .bx-syl.has { background: #cdeeb3; box-shadow: inset 0 0 0 2px #6abe36; }
+    .bx-cap { display: inline-block; margin-top: 9px; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 800; }
+    .bx-cap.no { color: #8a8a8a; background: #f0f0f0; }
+    .bx-cap.has { color: #fff; background: #6abe36; }
+    .bx-eqarrow { font-size: 20px; color: #bdbdbd; margin-right: 8px; }
+    .bx-res { font-size: 30px; font-weight: 800; white-space: nowrap; }
+    .bx-res .new { color: #6abe36; }
+  </style>
+</head>
+<body>
+  <div class="phone">
+
+    <!-- 1. Hero -->
+    <div class="hero">
+      <p class="eyebrow">드라마로 배우는 한국어 · 설렘 &amp; 고백 ① · 中級表現</p>
+      <h1>첫 만남 <span class="title-ja">(はじめての出会い)</span></h1>
+      <div class="hero-topic">
+        <span class="label">今日のパターン</span>
+        <span class="value">~(으)ㄴ 적 있어요<br>~아/어도 돼요?</span>
+        <span class="english">〜したことがあります / 〜してもいいですか？</span>
+      </div>
+    </div>
+
+    <!-- 2. The scene (hook) -->
+    <div class="section">
+      <h2 class="section-title">오늘의 장면 <span class="title-ja">(今日のワンシーン)</span></h2>
+      <p class="section-subtitle"><span class="ko">서점에서 두 사람이 처음 만났어요. 가볍게 읽어 볼까요?</span><span class="ja">書店で二人がはじめて出会います。まずは軽く読んでみましょう。</span></p>
+      <div class="dialogue">
+        <div class="turn me"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble me"><span class="korean">어… 저기요. <span class="focus-exp">혹시</span> 우리 어디서 <span class="focus">본 적</span> 있지 않아요?</span><span class="translation">あの…すみません。私たち、どこかで会ったことありませんか？</span></div></div>
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">네? 글쎄요… 잘 모르겠는데요.</span><span class="translation">え？うーん…よくわからないですけど。</span></div></div>
+        <div class="turn me"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble me"><span class="korean">아, 지난주 그 카페! 거기서 <span class="focus">본 적 있어요</span>.</span><span class="translation">あ、先週のあのカフェ！あそこで見たことがあります。</span></div></div>
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">아… 맞다! 그 카페!</span><span class="translation">あ…そうだ！あのカフェ！</span></div></div>
+        <div class="turn me"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble me"><span class="korean"><span class="focus-exp">혹시</span>… 번호 <span class="focus">물어봐도 돼요</span>?</span><span class="translation">あの…番号、聞いてもいいですか？</span></div></div>
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">ㅎㅎ 네, 좋아요.</span><span class="translation">ふふ、はい、いいですよ。</span></div></div>
+      </div>
+    </div>
+
+    <!-- 3. Goal: lift the two lines out -->
+    <div class="section">
+      <h2 class="section-title">이 두 마디만! <span class="title-ja">(このひと言ずつ)</span></h2>
+      <p class="section-subtitle"><span class="ko">장면 속 이 두 문장을 오늘 내 것으로 만들어요.</span><span class="ja">シーンのこの2文を、今日マスターします。</span></p>
+      <div class="pattern-stack">
+        <div class="review-pattern pattern-card">
+          <span class="translation">① 〜したことがあります（経験）<span class="line-flag">패턴 1</span></span>
+          <span class="korean">… <span class="focus">본 적 있어요</span>.</span>
+          <div class="example-card">
+            <span class="korean">~(으)ㄴ 적 있어요 / 없어요</span>
+            <span class="translation">〜したことが ある / ない</span>
+          </div>
+        </div>
+        <div class="review-pattern pattern-card">
+          <span class="translation">② 〜してもいいですか？（お願い・許可）<span class="line-flag">패턴 2</span></span>
+          <span class="korean">번호 <span class="focus">물어봐도 돼요</span>?</span>
+          <div class="example-card">
+            <span class="korean">~아/어도 돼요?</span>
+            <span class="translation">〜しても いいですか？</span>
+          </div>
+        </div>
+      </div>
+      <p class="section-subtitle"><span class="ko">표현도 같이 챙겨요.</span><span class="ja">表現もいっしょに。</span></p>
+      <div class="pattern-stack">
+        <div class="pattern-card">
+          <span class="translation">もしかして / あの…（やわらかく切り出す）<span class="line-flag exp">표현</span></span>
+          <span class="korean"><span class="focus-exp">혹시</span></span>
+        </div>
+        <div class="pattern-card">
+          <span class="translation">はじめての出会い<span class="line-flag exp">표현</span></span>
+          <span class="korean"><span class="focus-exp">첫 만남</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PART 1 ============ -->
+    <div class="transition-page">
+      <span class="transition-kicker">パート 1</span>
+      <h2 class="transition-title">~(으)ㄴ 적 있어요</h2>
+      <p class="transition-copy">〜したことがあります（経験を言う・たずねる）</p>
+    </div>
+
+    <!-- P1 · Teach -->
+    <div class="section">
+      <h2 class="section-title">패턴 1 <span class="title-ja">(パターン 1)</span></h2>
+      <p class="section-subtitle"><span class="ko">「해 본 경험」을 말할 때 써요. 같이 읽어 볼까요?</span><span class="ja">「した経験」を話すときに使います。一緒に読んでみましょう。</span></p>
+      <div class="pattern-stack">
+        <div class="pattern-card">
+          <span class="korean">~(으)ㄴ 적 있어요.</span>
+          <span class="translation">〜したことが あります。</span>
+          <div class="example-card">
+            <span class="korean">거기서 본 적 있어요.</span>
+            <span class="translation">そこで見たことがあります。</span>
+          </div>
+        </div>
+        <div class="pattern-card">
+          <span class="korean">~(으)ㄴ 적 없어요.</span>
+          <span class="translation">〜したことが ないです。「있어요」を「없어요」に変えるだけ。</span>
+          <div class="example-card">
+            <span class="korean">거기서 본 적 없어요.</span>
+            <span class="translation">そこで見たことはないです。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P1 · Form rule -->
+    <div class="section">
+      <h2 class="section-title">ㄴ 적? 은 적? <span class="title-ja">(ㄴ적 と 은적、どっち？)</span></h2>
+      <p class="section-subtitle"><span class="ko">동사 끝 글자에 받침이 있으면 은, 없으면 ㄴ!</span><span class="ja">最後の文字にパッチムが あれば「은」、なければ「ㄴ」！</span></p>
+      <div class="bx-card">
+        <div class="bx-head">
+          <span class="bx-title">받침 <span class="x">없음</span></span>
+          <span class="bx-ja">母音で終わる</span>
+          <span class="bx-form">+ ㄴ 적</span>
+        </div>
+        <div class="bx-row">
+          <div><div class="bx-verb"><span class="bx-syl no">보</span>다</div><span class="bx-cap no">받침 없음</span></div>
+          <div><span class="bx-eqarrow">→</span><span class="bx-res"><span class="new">본</span> 적</span></div>
+        </div>
+        <div class="bx-row">
+          <div><div class="bx-verb"><span class="bx-syl no">가</span>다</div><span class="bx-cap no">받침 없음</span></div>
+          <div><span class="bx-eqarrow">→</span><span class="bx-res"><span class="new">간</span> 적</span></div>
+        </div>
+      </div>
+      <div class="bx-card">
+        <div class="bx-head">
+          <span class="bx-title">받침 <span class="o">있음</span></span>
+          <span class="bx-ja">子音で終わる</span>
+          <span class="bx-form">+ 은 적</span>
+        </div>
+        <div class="bx-row">
+          <div><div class="bx-verb"><span class="bx-syl has">먹</span>다</div><span class="bx-cap has">받침 ㄱ</span></div>
+          <div><span class="bx-eqarrow">→</span><span class="bx-res">먹<span class="new">은</span> 적</span></div>
+        </div>
+        <div class="bx-row">
+          <div><div class="bx-verb"><span class="bx-syl has">받</span>다</div><span class="bx-cap has">받침 ㄷ</span></div>
+          <div><span class="bx-eqarrow">→</span><span class="bx-res">받<span class="new">은</span> 적</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P1 · Reading -->
+    <div class="section">
+      <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">소리 내서 읽어 주세요.</span><span class="ja">声に出して読んでください。</span></p>
+      <div class="model-list">
+        <div class="model-line"><span class="korean">한국에 간 적 있어요.</span><span class="translation">韓国に行ったことがあります。</span></div>
+        <div class="model-line"><span class="korean">그 드라마 본 적 있어요.</span><span class="translation">あのドラマ、見たことがあります。</span></div>
+        <div class="model-line"><span class="korean">김치 먹은 적 있어요.</span><span class="translation">キムチを食べたことがあります。</span></div>
+        <div class="model-line"><span class="korean">그 사람 만난 적 없어요.</span><span class="translation">あの人に会ったことはないです。</span></div>
+      </div>
+    </div>
+
+    <!-- P1 · Choose ㄴ/은 -->
+    <div class="section">
+      <h2 class="section-title">ㄴ과 은, 골라요 <span class="title-ja">(ㄴ か 은 を選ぼう)</span></h2>
+      <p class="section-subtitle"><span class="ko">받침을 보고 골라 주세요.</span><span class="ja">パッチムを見て選んでください。</span></p>
+      <div class="choose-list">
+        <div class="choose-row sentence">
+          <span class="translation">食べたことがあります。</span>
+          <span class="choose-sentence">먹<span class="opt">은</span><span class="sep">/</span><span class="opt">ㄴ</span> 적 있어요.</span>
+        </div>
+        <div class="choose-row sentence">
+          <span class="translation">行ったことがあります。</span>
+          <span class="choose-sentence">가<span class="opt">은</span><span class="sep">/</span><span class="opt">ㄴ</span> 적 있어요.</span>
+        </div>
+        <div class="choose-row sentence">
+          <span class="translation">読んだことがあります。</span>
+          <span class="choose-sentence">읽<span class="opt">은</span><span class="sep">/</span><span class="opt">ㄴ</span> 적 있어요.</span>
+        </div>
+        <div class="choose-row sentence">
+          <span class="translation">会ったことがあります。</span>
+          <span class="choose-sentence">만나<span class="opt">은</span><span class="sep">/</span><span class="opt">ㄴ</span> 적 있어요.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- P1 · Reorder -->
+    <div class="section">
+      <h2 class="section-title">문장 만들기 <span class="title-ja">(文を組み立てよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">순서대로 놓고 말해 주세요.</span><span class="ja">順番に並べて言ってみましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">韓国に行ったことがあります。</span>
+          <span class="answer-space">한국에 간 적 있어요</span>
+        </div>
+        <span class="choice">간 적 있어요</span>
+        <span class="choice">한국에</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">そのドラマ、見たことがあります。</span>
+          <span class="answer-space">그 드라마 본 적 있어요</span>
+        </div>
+        <span class="choice">본 적 있어요</span>
+        <span class="choice">그 드라마</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">キムチを食べたことがあります。</span>
+          <span class="answer-space">김치 먹은 적 있어요</span>
+        </div>
+        <span class="choice">먹은 적 있어요</span>
+        <span class="choice">김치</span>
+      </div>
+    </div>
+
+    <!-- P1 · Fill the blank -->
+    <div class="section">
+      <h2 class="section-title">빈칸을 채워요 <span class="title-ja">(空欄をうめよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">빈칸을 채워 주세요.</span><span class="ja">空欄をうめてください。</span></p>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">読んだことがあります。</span>
+          <span class="answer-fill"><span class="korean">그 책 읽<span class="slot">은</span> 적 있어요.</span></span>
+        </div>
+        <span class="hint"><span class="hint-chip">받침 있음 → 은 적</span></span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">会ったことがあります。</span>
+          <span class="answer-fill"><span class="korean">만<span class="slot">난</span> 적 있어요.</span></span>
+        </div>
+        <span class="hint"><span class="hint-chip">만나다 → 만난</span></span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">行ったことはないです。</span>
+          <span class="answer-fill"><span class="korean">간 적 <span class="slot">없</span>어요.</span></span>
+        </div>
+        <span class="hint"><span class="hint-chip">ない → 없어요</span></span>
+      </div>
+    </div>
+
+    <!-- P1 · Translate -->
+    <div class="section">
+      <h2 class="section-title">한국어로 바꿔요 <span class="title-ja">(韓国語にしよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국어로 바꿔 주세요.</span><span class="ja">韓国語にしてみましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">韓国に行ったことがあります。</span>
+          <span class="answer-space">한국에 간 적 있어요</span>
+        </div>
+        <span class="hint"><span class="hint-chip">韓国:한국</span><span class="hint-chip">行く:가다</span></span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">そのドラマ、見たことありますか？</span>
+          <span class="answer-space">그 드라마 본 적 있어요?</span>
+        </div>
+        <span class="hint"><span class="hint-chip">見る:보다</span><span class="hint-chip">最後を上げる → 質問</span></span>
+      </div>
+    </div>
+
+    <!-- P1 · Write your own -->
+    <div class="section">
+      <h2 class="section-title">스스로 써 봐요 <span class="title-ja">(自分で書こう)</span></h2>
+      <p class="section-subtitle"><span class="ko">내가 해 본 것을 하나 써 볼까요?</span><span class="ja">自分がしたことを1つ書いてみましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box tall">
+          <span class="answer-space"></span>
+        </div>
+        <span class="hint"><span class="hint-chip">먹다 · 보다 · 가다 · 만나다 …</span></span>
+      </div>
+    </div>
+
+    <!-- ============ PART 2 ============ -->
+    <div class="transition-page">
+      <span class="transition-kicker">パート 2</span>
+      <h2 class="transition-title">~아/어도 돼요?</h2>
+      <p class="transition-copy">〜してもいいですか？（やわらかく許可を求める）</p>
+    </div>
+
+    <!-- P2 · Teach -->
+    <div class="section">
+      <h2 class="section-title">패턴 2 <span class="title-ja">(パターン 2)</span></h2>
+      <p class="section-subtitle"><span class="ko">상대에게 허락을 구할 때 써요. 정말 자주 써요!</span><span class="ja">相手に許可をもらうとき。とてもよく使います！</span></p>
+      <div class="pattern-stack">
+        <div class="pattern-card">
+          <span class="korean">~아/어도 돼요?</span>
+          <span class="translation">〜しても いいですか？</span>
+          <div class="example-card">
+            <span class="korean">번호 물어봐도 돼요?</span>
+            <span class="translation">番号、聞いてもいいですか？</span>
+          </div>
+        </div>
+        <div class="pattern-card">
+          <span class="korean">네, 돼요. / 아니요, 안 돼요.</span>
+          <span class="translation">はい、いいですよ。/ いいえ、だめです。（答え方）</span>
+          <div class="example-card">
+            <span class="korean">여기 앉아도 돼요? — 네, 돼요.</span>
+            <span class="translation">ここ、座ってもいいですか？ — はい、どうぞ。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 · Form rule -->
+    <div class="section">
+      <h2 class="section-title">아도? 어도? <span class="title-ja">(아도 と 어도、どっち？)</span></h2>
+      <p class="section-subtitle"><span class="ko">동사의 마지막 모음을 봐 주세요.</span><span class="ja">動詞の最後の母音を見てください。</span></p>
+      <div class="note-grid">
+        <div class="note-box">
+          <span class="korean">ㅏ, ㅗ</span>
+          <span class="translation">最後の母音が ㅏ / ㅗ</span>
+          <span class="note-arrow">→ 아도</span>
+          <div class="note-examples">
+            <span class="korean">앉다 → <strong>앉아도</strong></span>
+            <span class="korean">받다 → <strong>받아도</strong></span>
+          </div>
+        </div>
+        <div class="note-box">
+          <span class="korean">그 외</span>
+          <span class="translation">それ以外の母音</span>
+          <span class="note-arrow">→ 어도</span>
+          <div class="note-examples">
+            <span class="korean">먹다 → <strong>먹어도</strong></span>
+            <span class="korean">찍다 → <strong>찍어도</strong></span>
+          </div>
+        </div>
+      </div>
+      <span class="hint"><span class="hint-chip">하다 → 해도 (例: 전화해도 돼요?)</span></span>
+    </div>
+
+    <!-- P2 · Reading -->
+    <div class="section">
+      <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">끝을 올려서 물어봐 주세요.</span><span class="ja">文末を上げてたずねましょう。</span></p>
+      <div class="model-list">
+        <div class="model-line"><span class="korean">여기 앉아도 돼요?</span><span class="translation">ここ、座ってもいいですか？</span></div>
+        <div class="model-line"><span class="korean">사진 찍어도 돼요?</span><span class="translation">写真、撮ってもいいですか？</span></div>
+        <div class="model-line"><span class="korean">이거 먹어도 돼요?</span><span class="translation">これ、食べてもいいですか？</span></div>
+        <div class="model-line"><span class="korean">잠깐 들어가도 돼요?</span><span class="translation">ちょっと入ってもいいですか？</span></div>
+      </div>
+    </div>
+
+    <!-- P2 · Choose 아도/어도 -->
+    <div class="section">
+      <h2 class="section-title">아도와 어도, 골라요 <span class="title-ja">(아도 か 어도 を選ぼう)</span></h2>
+      <p class="section-subtitle"><span class="ko">마지막 모음을 보고 골라 주세요.</span><span class="ja">最後の母音を見て選んでください。</span></p>
+      <div class="choose-list">
+        <div class="choose-row sentence">
+          <span class="translation">座ってもいいですか？（앉다）</span>
+          <span class="choose-sentence">앉<span class="opt">아도</span><span class="sep">/</span><span class="opt">어도</span> 돼요?</span>
+        </div>
+        <div class="choose-row sentence">
+          <span class="translation">食べてもいいですか？（먹다）</span>
+          <span class="choose-sentence">먹<span class="opt">아도</span><span class="sep">/</span><span class="opt">어도</span> 돼요?</span>
+        </div>
+        <div class="choose-row sentence">
+          <span class="translation">撮ってもいいですか？（찍다）</span>
+          <span class="choose-sentence">찍<span class="opt">아도</span><span class="sep">/</span><span class="opt">어도</span> 돼요?</span>
+        </div>
+        <div class="choose-row sentence">
+          <span class="translation">受け取ってもいいですか？（받다）</span>
+          <span class="choose-sentence">받<span class="opt">아도</span><span class="sep">/</span><span class="opt">어도</span> 돼요?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 · Reorder -->
+    <div class="section">
+      <h2 class="section-title">문장 만들기 <span class="title-ja">(文を組み立てよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">순서대로 놓고 물어봐 주세요.</span><span class="ja">順番に並べてたずねましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">ここ、座ってもいいですか？</span>
+          <span class="answer-space">여기 앉아도 돼요?</span>
+        </div>
+        <span class="choice">앉아도 돼요?</span>
+        <span class="choice">여기</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">写真、撮ってもいいですか？</span>
+          <span class="answer-space">사진 찍어도 돼요?</span>
+        </div>
+        <span class="choice">찍어도 돼요?</span>
+        <span class="choice">사진</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">番号、聞いてもいいですか？</span>
+          <span class="answer-space">번호 물어봐도 돼요?</span>
+        </div>
+        <span class="choice">물어봐도 돼요?</span>
+        <span class="choice">번호</span>
+      </div>
+    </div>
+
+    <!-- P2 · Fill the blank -->
+    <div class="section">
+      <h2 class="section-title">빈칸을 채워요 <span class="title-ja">(空欄をうめよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">빈칸을 채워 주세요.</span><span class="ja">空欄をうめてください。</span></p>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">これ、食べてもいいですか？</span>
+          <span class="answer-fill"><span class="korean">이거 먹<span class="slot">어도</span> 돼요?</span></span>
+        </div>
+        <span class="hint"><span class="hint-chip">ㅓ → 어도</span></span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">ここ、座ってもいいですか？</span>
+          <span class="answer-fill"><span class="korean">여기 앉<span class="slot">아도</span> 돼요?</span></span>
+        </div>
+        <span class="hint"><span class="hint-chip">ㅏ → 아도</span></span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">いいえ、だめです。</span>
+          <span class="answer-fill"><span class="korean">아니요, <span class="slot">안</span> 돼요.</span></span>
+        </div>
+        <span class="hint"><span class="hint-chip">だめ → 안 돼요</span></span>
+      </div>
+    </div>
+
+    <!-- P2 · Translate -->
+    <div class="section">
+      <h2 class="section-title">한국어로 바꿔요 <span class="title-ja">(韓国語にしよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국어로 바꿔 주세요.</span><span class="ja">韓国語にしてみましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">写真、撮ってもいいですか？</span>
+          <span class="answer-space">사진 찍어도 돼요?</span>
+        </div>
+        <span class="hint"><span class="hint-chip">写真:사진</span><span class="hint-chip">撮る:찍다</span></span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">番号、聞いてもいいですか？</span>
+          <span class="answer-space">번호 물어봐도 돼요?</span>
+        </div>
+        <span class="hint"><span class="hint-chip">番号:번호</span><span class="hint-chip">聞いてみる:물어보다</span></span>
+      </div>
+    </div>
+
+    <!-- P2 · Write your own -->
+    <div class="section">
+      <h2 class="section-title">스스로 써 봐요 <span class="title-ja">(自分で書こう)</span></h2>
+      <p class="section-subtitle"><span class="ko">허락을 구하는 질문을 하나 만들어 볼까요?</span><span class="ja">許可をもらう質問を1つ作ってみましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box tall">
+          <span class="answer-space"></span>
+        </div>
+        <span class="hint"><span class="hint-chip">앉다 · 먹다 · 찍다 · 들어가다 …</span></span>
+      </div>
+    </div>
+
+    <!-- ============ PART 3 ============ -->
+    <div class="transition-page">
+      <span class="transition-kicker">パート 3</span>
+      <h2 class="transition-title">이제 그 장면을!</h2>
+      <p class="transition-copy">さあ、最初のシーンに戻ろう。2つのパターンで、あなたが主人公！</p>
+    </div>
+
+    <!-- P3 · Complete the scene -->
+    <div class="section">
+      <h2 class="section-title">장면을 완성해요 <span class="title-ja">(シーンを完成させよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">먼저 다가가는 사람이 되어 빈칸을 채워 주세요.</span><span class="ja">声をかける役になって、空欄をうめましょう。</span></p>
+      <div class="dialogue">
+        <div class="turn me"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble me"><div class="answer-box"><span class="answer-label">あの…あのカフェで見たことがあります。</span><span class="answer-fill"><span class="korean">저… 그 카페에서 <span class="slot">본 적 있어요</span>.</span></span></div><span class="hint"><span class="hint-chip">見る:보다</span></span></div></div>
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">아, 맞다! 그 카페!</span><span class="translation">あ、そうだ！あのカフェ！</span></div></div>
+        <div class="turn me"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble me"><div class="answer-box"><span class="answer-label">あの…番号、聞いてもいいですか？</span><span class="answer-fill"><span class="korean">혹시… 번호 <span class="slot">물어봐도 돼요</span>?</span></span></div><span class="hint"><span class="hint-chip">聞いてみる:물어보다</span></span></div></div>
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">ㅎㅎ 네, 좋아요.</span><span class="translation">ふふ、はい、いいですよ。</span></div></div>
+      </div>
+    </div>
+
+    <!-- P3 · Mini dialogue (mix both) -->
+    <div class="section">
+      <h2 class="section-title">미니 대화 <span class="title-ja">(ミニ会話)</span></h2>
+      <p class="section-subtitle"><span class="ko">빈칸 대사를 말해 주세요. 두 패턴을 다 써요.</span><span class="ja">空欄のセリフを言ってみましょう。2つのパターンを両方使います。</span></p>
+      <div class="dialogue">
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">이 카페 자주 와요?</span><span class="translation">このカフェ、よく来ますか？</span></div></div>
+        <div class="turn me"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble me"><div class="answer-box small"><span class="answer-label">はい。前にここで会ったことがあります。</span><span class="answer-space">네. 전에 여기서 본 적 있어요</span></div><span class="hint"><span class="hint-chip">前に:전에</span><span class="hint-chip">見る:보다</span></span></div></div>
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">아, 정말요? 신기하다.</span><span class="translation">あ、本当ですか？不思議ですね。</span></div></div>
+        <div class="turn me"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble me"><div class="answer-box small"><span class="answer-label">あの、ここ座ってもいいですか？</span><span class="answer-space">저, 여기 앉아도 돼요?</span></div><span class="hint"><span class="hint-chip">座る:앉다</span></span></div></div>
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">네, 앉으세요!</span><span class="translation">はい、どうぞ！</span></div></div>
+      </div>
+    </div>
+
+    <!-- P3 · Roleplay -->
+    <div class="section">
+      <h2 class="section-title">롤플레이 <span class="title-ja">(ロールプレイ)</span></h2>
+      <p class="section-subtitle"><span class="ko">파티에서 낯익은 사람을 발견했어요. 상대가 먼저 인사해요.</span><span class="ja">パーティーで見覚えのある人を発見。相手が先にあいさつします。</span></p>
+      <span class="section-kicker">대화 시작 · スタート</span>
+      <div class="dialogue">
+        <div class="turn other"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><div class="bubble"><span class="korean">어? 안녕하세요. 우리 처음 보는 거 맞죠?</span><span class="translation">あれ？こんにちは。私たち、初めてですよね？</span></div></div>
+      </div>
+      <span class="section-kicker">미션 · ミッション</span>
+      <div class="card">
+        <ul class="mission">
+          <li>
+            <span class="mission-task"><span class="ko">「혹시」로 부드럽게 말을 걸어 보세요.</span><span class="ja">「혹시」でやわらかく切り出そう。</span></span>
+            <span class="hint"><span class="hint-chip">혹시…</span></span>
+          </li>
+          <li>
+            <span class="mission-task"><span class="ko">어디선가 본 적 있다고 말해 보세요.</span><span class="ja">どこかで会ったことがある、と言ってみよう。</span></span>
+            <span class="hint"><span class="hint-chip">~ㄴ 적 있어요</span></span>
+          </li>
+          <li>
+            <span class="mission-task"><span class="ko">사진이나 번호를 물어봐도 되는지 물어보세요.</span><span class="ja">写真や番号を聞いてもいいか、たずねよう。</span></span>
+            <span class="hint"><span class="hint-chip">~아/어도 돼요?</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- P3 · Native tip -->
+    <div class="section">
+      <h2 class="section-title">원어민 팁 <span class="title-ja">(ネイティブのひとこと)</span></h2>
+      <p class="section-subtitle"><span class="ko">드라마 속 그 말투, 이래서 부드러워요.</span><span class="ja">ドラマのあの言い方が、やわらかい理由。</span></p>
+      <div class="card">
+        <span class="tip">ネイティブのコツ</span>
+        <p>「~지 않아요?」를 붙이면 더 부드럽게 들려요. 確信せず、そっと確認するニュアンス。</p>
+        <div class="example-card">
+          <span class="korean">본 적 있어요? → 본 적 있지 않아요?</span>
+          <span class="translation">見たことありますか？ → 会ったこと、ありませんか？（やわらかい）</span>
+        </div>
+        <p class="teacher">친구 사이라면 「요」를 빼고 더 편하게 말해요.</p>
+        <div class="example-card">
+          <span class="korean">물어봐도 돼<s>요</s>? → 물어봐도 돼?</span>
+          <span class="translation">聞いてもいい？（タメ口）</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission complete -->
+    <div class="section">
+      <h2 class="section-title">미션 완료 <span class="title-ja">(ミッション完了)</span></h2>
+      <p class="section-subtitle"><span class="ko">할 수 있는 걸 체크해 주세요.</span><span class="ja">できることをチェックしてください。</span></p>
+      <div class="card">
+        <ul class="mission">
+          <li>「〜したことがあります／ないです」と言える。</li>
+          <li>ㄴ적 と 은적 を正しく選べる。</li>
+          <li>「〜してもいいですか？」と許可を求められる。</li>
+          <li>아도 と 어도 を正しく選べる。</li>
+          <li>「혹시」でやわらかく話しかけられる。</li>
+        </ul>
+      </div>
+      <p class="section-subtitle"><span class="ko">수고하셨습니다! 다음 장면에서 또 만나요!</span><span class="ja">おつかれさまでした！次のシーンでまた会いましょう！</span></p>
+    </div>
+
+  </div>
+</body>
+</html>

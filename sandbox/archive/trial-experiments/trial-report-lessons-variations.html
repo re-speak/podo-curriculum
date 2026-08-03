@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>리포트 학습 순서 · 레슨 접기 변형안 — PODO 韓国語</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <link rel="stylesheet" href="../trial.css">
+  <style>
+  /* ================================================================
+     REPORT · "나의 학습 순서" — 커리큘럼 대신 레슨을 보여 주는 변형안
+
+     지금: 커리큘럼 카드 세 장(한글 읽기 / 핵심 패턴 / 상황별). 무엇을
+           배우는지는 알겠는데, 그 안이 몇 개의 수업으로 되어 있는지,
+           내가 실제로 어떤 시간을 보내게 되는지는 안 보인다.
+     시도: 레슨 자체를 목록으로 깔되, 다 보여 주면 40줄이 되니까
+           앞 두 개 · 마지막 하나만 남기고 가운데를 "⋯ 외 N개 레슨" 로
+           접는다. 접힌 자리가 곧 "이만큼이 더 있다" 는 양감이 된다.
+
+     레슨 제목은 실제 커리큘럼(tracks/*/table-of-contents.md)에서 가져왔다.
+     케이스: Lv.1 시작 · 목표 「반말로 수다 떨기」(Lv.6) · 주 4회.
+     ================================================================ */
+
+  body { background: #f4f4f2; }
+  .rv-stage { max-width: 480px; margin: 0 auto; padding: 24px 16px 80px; }
+
+  .rv-intro { margin: 0 0 22px; padding: 18px 20px; border-radius: 14px; background: #1c1c1c; color: #fff; }
+  .rv-intro h1 { margin: 0; font-size: 15px; font-weight: 900; }
+  .rv-intro p { margin: 7px 0 0; font-size: 12px; font-weight: 600; line-height: 1.5; color: rgba(255,255,255,.6); word-break: keep-all; }
+
+  .vlab { margin: 34px 0 10px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .vlab b { font-size: 15px; font-weight: 900; color: #1c1c1c; }
+  .vlab span { font-size: 12px; font-weight: 600; color: #8a8a85; word-break: keep-all; }
+
+  .vcard { background: #fff; border-radius: 22px; padding: 26px 22px 28px; }
+  .vcard > h2 { margin: 0 0 4px; font-size: 20px; font-weight: 900; color: #1c1c1c; }
+  .vcard > p.sub { margin: 0 0 18px; font-size: 13px; font-weight: 500; color: #8a8a85; line-height: 1.55; word-break: keep-all; }
+  .cgl { display: block; margin: 0 0 12px; font-size: 12px; font-weight: 800; letter-spacing: .04em; color: #757575; text-transform: uppercase; }
+
+  /* ================================================================
+     공통 조각
+     ================================================================ */
+
+  /* 커버 — 리포트 본편과 같은 것. 색 바탕 + 그림 + 짧은 이름. */
+  .cov { position: relative; flex: none; display: flex; flex-direction: column;
+         align-items: center; justify-content: center; gap: 1px;
+         width: 76px; height: 92px; border-radius: 15px; overflow: hidden; }
+  .cov img { width: 46px; height: 46px; object-fit: contain; }
+  .cov em { font-style: normal; font-size: 10.5px; font-weight: 900; color: #1c1c1c; }
+  .cov b { position: absolute; top: 5px; left: 5px; display: grid; place-items: center;
+           width: 20px; height: 20px; border: 1.5px solid #1c1c1c; border-radius: 50%;
+           background: #b5fd4c; font-size: 11px; font-weight: 900; color: #1c1c1c; }
+
+  /* 접힌 자리 — 어느 변형에서든 같은 말투로 */
+  .fold { display: flex; align-items: center; gap: 9px; font-size: 11.5px; font-weight: 800; color: #9a9a94; }
+  .fold i { font-style: normal; letter-spacing: .18em; color: #c4c4bd; }
+
+  /* ================================================================
+     A · 커리큘럼 카드 안에 레슨을 접어 넣기
+     지금 카드를 그대로 두고, 할 수 있게 되는 말 아래에 레슨을 붙인다.
+     커리큘럼이 여전히 주인이고 레슨은 그 증거다.
+     ================================================================ */
+  .a-st { position: relative; padding: 15px 16px 14px; border-radius: 16px; background: #f6f6f3; }
+  .a-st + .a-st { margin-top: 26px; }
+  .a-st + .a-st::before { content: ""; position: absolute; left: 53px; top: -26px; width: 2px; height: 26px; background: #cfe8b4; }
+  .a-top { display: flex; align-items: center; gap: 14px; }
+  .a-b { flex: 1 1 auto; min-width: 0; }
+  .a-t { font-size: 16.5px; font-weight: 900; color: #1c1c1c; }
+  .a-flag { display: inline-block; margin-left: 7px; padding: 3px 9px; border-radius: 999px; background: #1c1c1c; color: #b5fd4c; font-size: 10px; font-weight: 900; vertical-align: 2px; }
+  .a-can { display: block; margin-top: 5px; font-size: 12.5px; font-weight: 700; color: #4a7a2a; line-height: 1.45; word-break: keep-all; }
+  .a-list { margin-top: 13px; padding: 4px 13px; border-radius: 12px; background: #fff; }
+  .a-row { display: flex; gap: 10px; align-items: baseline; padding: 9px 0; }
+  .a-row + .a-row, .a-list .fold + .a-row { border-top: 1px solid #f1f1ed; }
+  .a-row .n { flex: none; width: 20px; font-size: 11px; font-weight: 800; color: #b3b3ac; }
+  .a-row .t { flex: 1 1 auto; min-width: 0; font-size: 13px; font-weight: 700; color: #1c1c1c; line-height: 1.4; word-break: keep-all; }
+  .a-row .t small { display: block; margin-top: 2px; font-size: 11.5px; font-weight: 500; color: #9a9a94; }
+  .a-list .fold { padding: 10px 0 10px 30px; border-top: 1px solid #f1f1ed; }
+
+  /* ================================================================
+     B · 레슨 타임라인 — 커리큘럼은 구간의 이름일 뿐
+     왼쪽 레일 하나에 전부 꿰고, 커리큘럼은 그 레일 위의 굵은 매듭이
+     된다. 접힌 구간은 레일이 점선으로 바뀌어 "여기 더 있다" 를 말한다.
+     ================================================================ */
+  .b-wrap { position: relative; padding-left: 34px; }
+  .b-sec { position: relative; }
+  .b-sec + .b-sec { margin-top: 4px; }
+  .b-h { position: relative; display: flex; align-items: center; gap: 10px; padding: 16px 0 12px; }
+  .b-h .cov { width: 44px; height: 52px; border-radius: 11px; gap: 0; }
+  .b-h .cov img { width: 26px; height: 26px; }
+  .b-h .cov em { font-size: 8px; }
+  .b-h .cov b { display: none; }
+  .b-h .ht { font-size: 16.5px; font-weight: 900; color: #1c1c1c; }
+  .b-h .hs { display: block; margin-top: 2px; font-size: 11.5px; font-weight: 700; color: #9a9a94; }
+  /* 레일: 매듭(커리큘럼)은 크고 채워진 원, 레슨은 작은 빈 원 */
+  .b-dot { position: absolute; left: -34px; top: 50%; transform: translateY(-50%);
+           width: 21px; height: 21px; border: 2px solid #6abe36; border-radius: 50%; background: #b5fd4c;
+           display: grid; place-items: center; font-size: 10.5px; font-weight: 900; color: #1c1c1c; }
+  .b-row { position: relative; display: block; padding: 11px 0 11px 2px; }
+  .b-row::before { content: ""; position: absolute; left: -25px; top: 0; bottom: 0; width: 2px; background: #e6e6e1; }
+  .b-row.gap::before { background: none; border-left: 2px dotted #d5d5cf; }
+  .b-row .rd { position: absolute; left: -30px; top: 15px; width: 11px; height: 11px; border: 2px solid #d8d8d2; border-radius: 50%; background: #fff; }
+  .b-row .k { display: block; font-size: 10.5px; font-weight: 800; color: #a8a8a1; letter-spacing: .02em; }
+  .b-row .t { display: block; margin-top: 2px; font-size: 13.5px; font-weight: 800; color: #1c1c1c; line-height: 1.4; word-break: keep-all; }
+  .b-row .t small { font-weight: 600; color: #9a9a94; }
+  .b-row.gap { padding: 14px 0 14px 2px; }
+  .b-h::before { content: ""; position: absolute; left: -25px; top: 0; bottom: 50%; width: 2px; background: #e6e6e1; }
+  .b-sec:first-child .b-h::before { display: none; }
+  /* 마지막 레슨에서 레일이 끝나야 한다 — 그 아래로 흐르면 갈 길이 더 있는 것처럼 보인다 */
+  .b-sec:last-child .b-row:last-child::before { bottom: auto; height: 26px; }
+  .b-goal .b-dot { width: 25px; height: 25px; border-color: #1c1c1c; }
+
+  /* ================================================================
+     C · 썸네일 리스트 — 강의 목록처럼
+     레슨마다 커버 색을 물려받은 작은 썸네일. 무엇을 사는지가 가장
+     구체적으로 보이는 안이고, 대신 커리큘럼의 경계는 얇아진다.
+     ================================================================ */
+  .c-h { display: flex; align-items: baseline; gap: 8px; margin: 22px 0 10px; }
+  .c-h:first-child { margin-top: 0; }
+  .c-h b { font-size: 15px; font-weight: 900; color: #1c1c1c; }
+  .c-h span { font-size: 11.5px; font-weight: 700; color: #9a9a94; }
+  .c-h i { flex: none; width: 9px; height: 9px; border-radius: 3px; font-style: normal; }
+  .c-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; }
+  .c-th { flex: none; display: grid; place-items: center; width: 54px; height: 42px; border-radius: 10px; font-size: 17px; font-weight: 900; color: #1c1c1c; }
+  .c-th img { width: 26px; height: 26px; object-fit: contain; }
+  .c-b { flex: 1 1 auto; min-width: 0; }
+  .c-b .k { display: block; font-size: 10px; font-weight: 800; letter-spacing: .04em; color: #a8a8a1; text-transform: uppercase; }
+  .c-b .t { display: block; margin-top: 2px; font-size: 13.5px; font-weight: 800; color: #1c1c1c; line-height: 1.35; word-break: keep-all; }
+  .c-b .s { display: block; margin-top: 2px; font-size: 11.5px; font-weight: 500; color: #9a9a94; word-break: keep-all; }
+  .c-fold { display: flex; align-items: center; gap: 12px; padding: 6px 0; }
+  .c-fold .c-th { background: #f2f2ee; color: #c4c4bd; font-size: 15px; letter-spacing: .1em; }
+
+  /* ================================================================
+     D · 눌러서 펴 보기
+     기본은 접힌 A. 접힌 줄이 버튼이라, 궁금한 사람만 연다.
+     상담 자리에서 튜터가 "여기 눌러 볼게요" 하고 여는 장면용.
+     ================================================================ */
+  .d-more { display: flex; width: 100%; align-items: center; gap: 9px; margin: 0; padding: 11px 0 11px 30px;
+            border: 0; border-top: 1px solid #f1f1ed; background: none; font-family: inherit;
+            font-size: 11.5px; font-weight: 800; color: #6f6f6a; cursor: pointer; text-align: left;
+            -webkit-tap-highlight-color: transparent; }
+  .d-more i { font-style: normal; letter-spacing: .18em; color: #c4c4bd; }
+  .d-more .arw { margin-left: auto; font-size: 11px; color: #a8a8a1; }
+  .a-st.open .d-more .arw { transform: rotate(180deg); }
+  </style>
+</head>
+<body>
+  <div class="rv-stage">
+    <div class="rv-intro">
+      <h1>학습 순서 — 커리큘럼 대신 레슨을 보여 준다면</h1>
+      <p>같은 사람, 같은 계획입니다. Lv.1 에서 시작해 「반말로 수다 떨기」까지, 주 4회.
+         레슨은 실제 커리큘럼에서 가져왔고, 가운데는 「⋯ 외 N개 레슨」 으로 접었습니다.</p>
+    </div>
+
+    <div class="vlab"><b>A · 커리큘럼 카드 + 접힌 레슨</b><span>지금 카드를 그대로 두고, 그 아래에 레슨을 붙인다</span></div>
+    <div class="vcard">
+      <h2>여기서 저기까지, 이렇게</h2>
+      <p class="sub">「반말로 수다 떨기」까지 3개 코스 · 총 42개 레슨</p>
+      <span class="cgl">나의 학습 순서</span>
+      <div id="vA"></div>
+    </div>
+
+    <div class="vlab"><b>B · 레슨 타임라인</b><span>레일 하나에 다 꿰고, 커리큘럼은 그 위의 매듭이 된다</span></div>
+    <div class="vcard">
+      <h2>여기서 저기까지, 이렇게</h2>
+      <p class="sub">오늘부터 도착까지, 지나가는 순서 그대로</p>
+      <div class="b-wrap" id="vB"></div>
+    </div>
+
+    <div class="vlab"><b>C · 썸네일 리스트</b><span>강의 목록처럼 — 무엇을 사는지가 가장 구체적으로 보인다</span></div>
+    <div class="vcard">
+      <h2>여기서 저기까지, 이렇게</h2>
+      <p class="sub">「반말로 수다 떨기」까지 3개 코스 · 총 42개 레슨</p>
+      <div id="vC"></div>
+    </div>
+
+    <div class="vlab"><b>D · 눌러서 펴 보기</b><span>A 와 같지만 접힌 줄이 버튼 — 궁금한 사람만 연다</span></div>
+    <div class="vcard">
+      <h2>여기서 저기까지, 이렇게</h2>
+      <p class="sub">접힌 줄을 눌러 보세요</p>
+      <span class="cgl">나의 학습 순서</span>
+      <div id="vD"></div>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    /* ---------- 데이터 ----------
+       tracks/1-hangul · 2-core-patterns · 3-contextual-korean 의
+       table-of-contents.md 에서 실제 레슨 제목을 가져왔다. 핵심 패턴은
+       이 목표(Lv.6)에 필요한 앞 구간(Unit 1–3)까지만 잡았다. */
+    var PLAN = [
+      {
+        key: "hangul", t: "한글 읽기", k: "한글", tint: "#E7FBC5",
+        can: "간판이 읽혀요", s: "글자를 소리 내어 읽는 법",
+        L: [
+          ["글자 블록과 첫 소리", "나 · 너 · 나무"],
+          ["기본 자음 여섯", "고기 · 다리 · 바다"],
+          ["복습과 속도", "멈추지 않고 읽기"],
+          ["획을 더하면 거센소리", "코 · 커피 · 포도"],
+          ["쌍자음, 더 센 소리", "토끼 · 아빠"],
+          ["ㅑㅕㅛㅠ 와 ㅐㅔ", "우유 · 시계"],
+          ["합쳐진 모음", "사과 · 의자 · 뭐"],
+          ["받침 ① 콧소리", "강 · 산 · 사람"],
+          ["받침 ② 막는 소리와 ㄹ", "책 · 김밥 · 한국"],
+          ["연음 — 이어서 읽기", "한국어 · 좋아요"],
+          ["총정리 — 거리의 간판", "무엇이든 읽어 보기"]
+        ]
+      },
+      {
+        key: "core", t: "핵심 패턴", k: "패턴", tint: "#DFEAFF",
+        can: "내 이야기를 말해요", s: "하고 싶은 말을 스스로 만드는 법",
+        L: [
+          ["저는 일본 사람입니다", "자기소개"],
+          ["학생이 아닙니다", "부정하기"],
+          ["이 사람, 저 사람", "이것과 저것"],
+          ["이건 뭐예요?", "의문사"],
+          ["저도 학생이에요", "첨가와 한정"],
+          ["어디에 있어요?", "위치 말하기"],
+          ["한국어를 공부합니다", "격식체 동사"],
+          ["매일 운동해요", "비격식체 동사"],
+          ["어디에 가요?", "목적지"],
+          ["싸요, 안 추워요", "형용사"],
+          ["안 마셔요, 못 해요", "짧은 부정문"],
+          ["먹고 가요", "동작의 연결"],
+          ["친구하고, 엄마한테", "동반과 대상"],
+          ["몇 월 며칠이에요?", "날짜와 가격"],
+          ["사과 세 개 주세요", "사물 세기"],
+          ["지금 몇 시예요?", "시간 말하기"],
+          ["집에서 회사까지", "거리와 수단"],
+          ["커피보다 차가 좋아요", "비교하기"],
+          ["어제 만났어요", "과거 시제"],
+          ["아파서 못 갔어요", "이유 말하기"],
+          ["떡볶이 먹고 싶어요", "희망"]
+        ]
+      },
+      {
+        key: "banmal", t: "상황별 · 반말 수다", k: "반말", tint: "#FFE0E5",
+        can: "반말로 수다 떨어요", s: "친구에게 쓰는 편한 반말", goal: true,
+        L: [
+          ["말 놓기", "우리 말 놓을까?"],
+          ["안부 묻기", "요즘 어떻게 지내?"],
+          ["약속 잡기", "이번 주말에 뭐 해?"],
+          ["근황 나누기", "나 요즘 완전 바빠"],
+          ["맞장구", "헐, 진짜?"],
+          ["부탁하기", "이것 좀 해 줄래?"],
+          ["투정과 하소연", "나 진짜 힘들었어"],
+          ["칭찬과 놀리기", "너 오늘 좀 멋있다"],
+          ["감정 그대로", "나 지금 완전 신났어"],
+          ["카톡 말투", "ㅇㅇ 알겠어 ㅋㅋ"]
+        ]
+      }
+    ];
+
+    var HEAD = 2, TAIL = 1;   // 앞 두 개 · 마지막 하나만 남기고 접는다
+    function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+    function cover(c, i, cls) {
+      return '<span class="cov ' + (cls || "") + '" style="background:' + c.tint + '">' +
+             '<b>' + (i + 1) + '</b>' +
+             '<img src="../assets/art/cov/' + c.key + '.png" alt="">' +
+             '<em>' + c.k + '</em></span>';
+    }
+    // 접힌 구간을 [보이는 앞, 접힌 개수, 보이는 뒤] 로 자른다
+    function split(list) {
+      if (list.length <= HEAD + TAIL + 1) return { head: list, hid: 0, tail: [] };
+      return { head: list.slice(0, HEAD), hid: list.length - HEAD - TAIL, tail: list.slice(-TAIL) };
+    }
+
+    /* ---------- A ---------- */
+    function rowA(l, n) {
+      return '<div class="a-row"><span class="n">' + n + '</span><span class="t">' + esc(l[0]) +
+             '<small>' + esc(l[1]) + '</small></span></div>';
+    }
+    // 접힌 목록 한 벌. interactive 면 접힌 줄이 버튼이 되고, open 이면 다 편다.
+    function listA(c, i, interactive, open) {
+      var sp = split(c.L), rows = "", n = 0;
+      if (open) {
+        c.L.forEach(function (l, j) { rows += rowA(l, j + 1); });
+        return rows + '<button class="d-more" type="button" data-c="' + i + '">' +
+               '전체 ' + c.L.length + '개 레슨<span class="arw">▾</span></button>';
+      }
+      sp.head.forEach(function (l) { rows += rowA(l, ++n); });
+      if (sp.hid) {
+        n += sp.hid;
+        rows += interactive
+          ? '<button class="d-more" type="button" data-c="' + i + '"><i>⋯</i>외 ' + sp.hid +
+            '개 레슨<span class="arw">▾</span></button>'
+          : '<div class="fold"><i>⋯</i>외 ' + sp.hid + '개 레슨</div>';
+      }
+      sp.tail.forEach(function (l) { rows += rowA(l, ++n); });
+      return rows;
+    }
+    function renderA(host, interactive) {
+      var out = "";
+      PLAN.forEach(function (c, i) {
+        var rows = listA(c, i, interactive, false);
+        out +=
+          '<div class="a-st" data-i="' + i + '">' +
+            '<div class="a-top">' + cover(c, i) +
+              '<span class="a-b"><span class="a-t">' + c.t + '</span>' +
+              (c.goal ? '<span class="a-flag">목표</span>' : "") +
+              '<span class="a-can">' + c.can + '</span></span>' +
+            '</div>' +
+            '<div class="a-list">' + rows + '</div>' +
+          '</div>';
+      });
+      host.innerHTML = out;
+    }
+
+    /* ---------- B ---------- */
+    function renderB(host) {
+      var out = "";
+      PLAN.forEach(function (c, i) {
+        var sp = split(c.L), rows = "", n = 0;
+        function row(l, cls) {
+          return '<div class="b-row ' + (cls || "") + '"><i class="rd"></i>' +
+                 '<span class="k">레슨 ' + n + '</span>' +
+                 '<span class="t">' + esc(l[0]) + ' <small>· ' + esc(l[1]) + '</small></span></div>';
+        }
+        sp.head.forEach(function (l) { n++; rows += row(l); });
+        if (sp.hid) {
+          rows += '<div class="b-row gap"><div class="fold"><i>⋯</i>외 ' + sp.hid + '개 레슨</div></div>';
+          n += sp.hid;
+        }
+        sp.tail.forEach(function (l) { n++; rows += row(l); });
+        out +=
+          '<div class="b-sec' + (c.goal ? " b-goal" : "") + '">' +
+            '<div class="b-h"><i class="b-dot">' + (i + 1) + '</i>' + cover(c, i) +
+              '<span><span class="ht">' + c.t + '</span>' +
+              '<small class="hs">' + c.L.length + '개 레슨 · ' + c.can + '</small></span></div>' +
+            rows +
+          '</div>';
+      });
+      host.innerHTML = out;
+    }
+
+    /* ---------- C ---------- */
+    function renderC(host) {
+      var out = "";
+      PLAN.forEach(function (c, i) {
+        var sp = split(c.L), n = 0;
+        out += '<div class="c-h"><i style="background:' + c.tint + '"></i><b>' + c.t + '</b>' +
+               '<span>' + c.L.length + '개 레슨</span></div>';
+        function row(l) {
+          n++;
+          // 썸네일에는 커버 그림 대신 레슨 번호. 같은 그림이 열 줄 반복되면
+          // 줄마다 다른 수업이라는 사실이 오히려 흐려진다.
+          return '<div class="c-row"><span class="c-th" style="background:' + c.tint + '">' + n + '</span>' +
+                 // 번호는 타일이 이미 말했고, 코스 이름은 위 구분선이 말했다
+                 '<span class="c-b"><span class="t">' + esc(l[0]) + '</span>' +
+                 '<span class="s">' + esc(l[1]) + '</span></span></div>';
+        }
+        sp.head.forEach(function (l) { out += row(l); });
+        if (sp.hid) {
+          out += '<div class="c-fold"><span class="c-th">⋯</span>' +
+                 '<span class="fold">외 ' + sp.hid + '개 레슨</span></div>';
+          n += sp.hid;
+        }
+        sp.tail.forEach(function (l) { out += row(l); });
+      });
+      host.innerHTML = out;
+    }
+
+    renderA(document.getElementById("vA"), false);
+    renderB(document.getElementById("vB"));
+    renderC(document.getElementById("vC"));
+    renderA(document.getElementById("vD"), true);
+
+    /* ---------- D 의 펴기 ---------- */
+    document.getElementById("vD").addEventListener("click", function (e) {
+      var btn = e.target.closest(".d-more");
+      if (!btn) return;
+      var i = Number(btn.getAttribute("data-c")), st = btn.closest(".a-st");
+      var open = !st.classList.contains("open");
+      st.classList.toggle("open", open);
+      st.querySelector(".a-list").innerHTML = listA(PLAN[i], i, true, open);
+    });
+  })();
+  </script>
+</body>
+</html>

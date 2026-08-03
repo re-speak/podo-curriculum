@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>리포트 1페이지 · 변형안 — PODO 韓国語</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <link rel="stylesheet" href="../trial.css">
+  <style>
+  /* ================================================================
+     REPORT PAGE ① — "지금 레벨" 변형안
+     문제: 지금은 마스코트 아치가 화면을 다 먹고, 레벨을 설명하는 글이
+           한 줄(“한글을 하나씩 읽어요”)뿐이라 진단처럼 안 읽힘.
+     방향: 이미지는 작게 → 레벨 자리(눈금) → 2~3줄 진단문 → 근거.
+     레퍼런스(유폰 리포트)보다는 글을 짧게.
+     ================================================================ */
+
+  body { background: #f4f4f2; }
+  .rv-stage { max-width: 480px; margin: 0 auto; padding: 24px 16px 80px; }
+
+  .rv-page { background: #fff; border-radius: 22px; padding: 4px 24px 32px; }
+  .rv-page .section { margin: 0; padding: 34px 0; min-height: 0; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+  .rv-sub { margin: 8px 0 24px; font-size: 14px; font-weight: 500; color: #8a8a85; line-height: 1.55; word-break: keep-all; }
+
+  /* variation label */
+  .vlab { margin: 40px 0 10px; display: flex; align-items: baseline; gap: 10px; }
+  .vlab b { font-size: 15px; font-weight: 900; color: #1c1c1c; }
+  .vlab span { font-size: 12px; font-weight: 600; color: #8a8a85; word-break: keep-all; }
+  .vlab:first-of-type { margin-top: 0; }
+
+  .rv-intro { margin: 0 0 24px; padding: 18px 20px; border-radius: 14px; background: #1c1c1c; color: #fff; }
+  .rv-intro h1 { margin: 0; font-size: 15px; font-weight: 900; }
+  .rv-intro p { margin: 7px 0 0; font-size: 12px; font-weight: 600; line-height: 1.5; color: rgba(255,255,255,.6); word-break: keep-all; }
+
+  /* ---------- shared: level ladder (레벨 눈금) ---------- */
+  .lad { margin: 0; }
+  .lad-rail { position: relative; height: 8px; border-radius: 999px; background: #e7e6e1; }
+  .lad-fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: #6abe36; }
+  .lad-ticks { display: flex; margin-top: 9px; }
+  .lad-ticks span { flex: 1 1 0; font-size: 11px; font-weight: 700; color: #b0afaa; text-align: center; }
+  .lad-ticks span:first-child { text-align: left; }
+  .lad-ticks span:last-child { text-align: right; }
+  .lad-ticks .on { color: #1c1c1c; font-weight: 900; }
+  .lad-ticks .goal { color: #6abe36; font-weight: 900; }
+
+  /* ---------- shared: 진단 문단 ---------- */
+  .diag { margin: 0; font-size: 14.5px; font-weight: 500; line-height: 1.72; color: #55554f; word-break: keep-all; }
+  .diag b { font-weight: 800; color: #1c1c1c; }
+
+  /* ---------- shared: 오늘 수업 근거 ---------- */
+  .ev { margin: 16px 0 0; padding: 0; list-style: none; }
+  .ev li { display: flex; gap: 9px; align-items: flex-start; padding: 5px 0; font-size: 13px; font-weight: 600; line-height: 1.5; color: #55554f; word-break: keep-all; }
+  .ev i { flex: none; width: 17px; height: 17px; margin-top: 1px; border-radius: 50%; display: grid; place-items: center; font-size: 10px; font-style: normal; font-weight: 900; color: #fff; background: #6abe36; }
+  .ev li.miss i { background: #d9d8d3; color: #6f6f6a; }
+
+  /* ---------- shared: TOPIK 앵커 ---------- */
+  .cert { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 8px; border-radius: 999px; background: #f2f2ef; font-size: 12.5px; font-weight: 800; color: #6a6a66; }
+  .cert i { display: inline-block; padding: 3px 9px; border-radius: 999px; background: #1c1c1c; color: #fff; font-size: 11px; font-weight: 900; font-style: normal; }
+
+  /* ================= 현재안 (비교용) ================= */
+  .plv { text-align: center; }
+  .plv-arch { background: #eafcd0; border-radius: 150px 150px 22px 22px; padding: 30px 20px 40px; }
+  .plv-arch img { display: block; width: 150px; height: auto; margin: 0 auto; }
+  .plv-badge { position: relative; z-index: 1; margin: -28px auto 0; display: inline-block; padding: 10px 26px; background: #1c1c1c; border: 2px solid #1c1c1c; border-radius: 999px; font-size: 22px; font-weight: 900; color: #b5fd4c; box-shadow: 0 4px 0 #1c1c1c; }
+  .plv-line { margin: 20px 0 0; font-size: 21px; font-weight: 800; color: #1c1c1c; line-height: 1.4; word-break: keep-all; }
+  .plv-line .q { color: #6abe36; }
+  .plv-cert { margin: 16px auto 0; }
+
+  /* ================= A · 레퍼런스형 (밴드 + 안쪽 진단 패널) ================= */
+  .va { background: #f2fce0; border-radius: 20px; padding: 22px 18px 18px; }
+  .va-top { display: flex; align-items: center; gap: 16px; }
+  .va-top img { flex: none; width: 92px; height: auto; }
+  .va-badge { display: inline-block; padding: 5px 13px; border-radius: 999px; background: #1c1c1c; color: #b5fd4c; font-size: 13px; font-weight: 900; letter-spacing: .01em; }
+  .va-line { margin: 9px 0 0; font-size: 19px; font-weight: 900; color: #1c1c1c; line-height: 1.35; word-break: keep-all; }
+  .va-line b { color: #4f9a1e; font-weight: 900; }
+  .va .lad { margin: 20px 2px 0; }
+  .va .lad-rail { background: #ddeec2; }
+  .va-panel { margin: 16px 0 0; padding: 17px 18px; border-radius: 14px; background: #fff; }
+  .va-panel .diag { font-size: 14px; }
+  .va-foot { display: block; margin: 12px 4px 0; text-align: right; font-size: 12px; font-weight: 700; color: #8fae6d; }
+
+  /* ================= B · 진단 우선 (아바타 헤더, 밴드 없음) ================= */
+  .vb-head { display: flex; align-items: center; gap: 15px; }
+  .vb-head img { flex: none; width: 78px; height: 82px; padding: 7px 10px; border-radius: 22px; background: #eafcd0; object-fit: contain; }
+  .vb-badge { display: inline-block; padding: 4px 12px; border-radius: 999px; background: #b5fd4c; border: 1.5px solid #1c1c1c; color: #1c1c1c; font-size: 12.5px; font-weight: 900; }
+  .vb-line { margin: 8px 0 0; font-size: 20px; font-weight: 900; color: #1c1c1c; line-height: 1.35; word-break: keep-all; }
+  .vb .lad { margin: 24px 0 0; }
+  .vb .diag { margin-top: 22px; }
+  .vb-cert { margin-top: 20px; }
+
+  /* ================= C · 아치 축소 + 근거 리스트 ================= */
+  .vc-arch { position: relative; max-width: 176px; margin: 0 auto; background: #eafcd0; border-radius: 88px 88px 20px 20px; padding: 22px 18px 26px; text-align: center; }
+  .vc-arch img { display: block; width: 104px; height: auto; margin: 0 auto; }
+  .vc-badge { position: relative; z-index: 1; margin: -19px auto 0; display: inline-block; padding: 7px 20px; background: #1c1c1c; border-radius: 999px; font-size: 17px; font-weight: 900; color: #b5fd4c; box-shadow: 0 3px 0 #1c1c1c; }
+  .vc-line { margin: 16px 0 0; text-align: center; font-size: 20px; font-weight: 900; color: #1c1c1c; line-height: 1.35; word-break: keep-all; }
+  .vc .lad { margin: 22px 0 0; }
+  .vc .diag { margin-top: 20px; }
+  .vc-evtitle { display: block; margin: 24px 0 2px; font-size: 12px; font-weight: 800; color: #757575; letter-spacing: .04em; }
+  .vc-cert { margin-top: 22px; }
+
+  /* ================= D · 잉크 히어로 (요약 배너형) ================= */
+  .vd-hero { display: flex; align-items: center; gap: 15px; padding: 18px 20px; border-radius: 18px 18px 0 0; background: #1c1c1c; }
+  .vd-hero img { flex: none; width: 68px; height: 68px; object-fit: contain; }
+  .vd-kick { font-size: 11.5px; font-weight: 800; color: #8fca5f; letter-spacing: .04em; }
+  .vd-lv { margin: 4px 0 0; font-size: 26px; font-weight: 900; color: #b5fd4c; line-height: 1; }
+  .vd-line { margin: 7px 0 0; font-size: 14.5px; font-weight: 700; color: #fff; line-height: 1.4; word-break: keep-all; }
+  .vd-body { padding: 20px 20px 18px; border: 1.5px solid #1c1c1c; border-top: 0; border-radius: 0 0 18px 18px; }
+  .vd-body .lad { margin-bottom: 20px; }
+  .vd-foot { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 15px; border-top: 1px solid #eeede9; font-size: 12.5px; font-weight: 700; color: #8a8a85; }
+  .vd-foot i { padding: 3px 9px; border-radius: 999px; background: #1c1c1c; color: #fff; font-size: 11px; font-weight: 900; font-style: normal; }
+  </style>
+</head>
+<body>
+  <div class="rv-stage">
+
+    <div class="rv-intro">
+      <h1>리포트 ① “지금 레벨” · 변형안 4종</h1>
+      <p>공통 변경: 마스코트를 히어로에서 끌어내려 작게 · 레벨 눈금(Lv.1→5)으로 “어디쯤인지” 시각화 · 한 줄 캐치프레이즈 아래 2~3줄 진단문 추가 · 오늘 수업 근거 3줄. 레퍼런스보다 글은 짧게.</p>
+    </div>
+
+    <!-- ================= 현재안 ================= -->
+    <div class="vlab"><b>현재안</b><span>마스코트가 한 화면을 다 먹고, 레벨 설명은 한 줄뿐</span></div>
+    <div class="rv-page">
+      <div class="section">
+        <span class="section-kicker">지금 나</span>
+        <h2 class="section-title">{{이름}}님의 지금 레벨</h2>
+        <p class="rv-sub">오늘 수업을 보니, 지금은 딱 이 레벨이에요.</p>
+        <div class="plv">
+          <div class="plv-arch"><img src="../assets/mascot-newborn.svg" alt=""></div>
+          <div class="plv-badge">Lv.1</div>
+          <p class="plv-line">한글을 <span class="q">하나씩 읽어요</span></p>
+          <span class="cert plv-cert"><i>TOPIK</i>1급 준비 단계</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= A ================= -->
+    <div class="vlab"><b>A · 레퍼런스형</b><span>연한 밴드 안에 마스코트+레벨 가로 배치, 눈금, 흰 진단 패널</span></div>
+    <div class="rv-page">
+      <div class="section">
+        <span class="section-kicker">지금 나</span>
+        <h2 class="section-title">{{이름}}님의 지금 레벨</h2>
+        <p class="rv-sub">오늘 수업에서 보인 모습으로 진단했어요.</p>
+
+        <div class="va">
+          <div class="va-top">
+            <img src="../assets/mascot-newborn.svg" alt="">
+            <div>
+              <span class="va-badge">Lv.1 · 첫걸음</span>
+              <p class="va-line">한글을 <b>하나씩 읽어요</b></p>
+            </div>
+          </div>
+
+          <div class="lad">
+            <div class="lad-rail"><span class="lad-fill" style="width:11%"></span></div>
+            <div class="lad-ticks"><span class="on">Lv.1</span><span>Lv.2</span><span>Lv.3</span><span>Lv.4</span><span>Lv.5</span></div>
+          </div>
+
+          <div class="va-panel">
+            <p class="diag">자음과 모음은 <b>하나씩 소리 낼 수 있어요.</b> 아직 글자를 붙여 읽는 건 느리고, 어·오처럼 닮은 소리는 섞여 나와요. 지금은 소리를 손에 익히는 단계예요.</p>
+          </div>
+
+          <span class="va-foot">TOPIK 1급 준비 단계</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= B ================= -->
+    <div class="vlab"><b>B · 진단 우선</b><span>밴드 없이 마스코트는 작은 아바타로. 글이 주인공, 가장 가벼움</span></div>
+    <div class="rv-page">
+      <div class="section vb">
+        <span class="section-kicker">지금 나</span>
+        <h2 class="section-title">{{이름}}님의 지금 레벨</h2>
+        <p class="rv-sub">오늘 수업에서 보인 모습으로 진단했어요.</p>
+
+        <div class="vb-head">
+          <img src="../assets/mascot-newborn.svg" alt="">
+          <div>
+            <span class="vb-badge">Lv.1 · 첫걸음</span>
+            <p class="vb-line">한글을 하나씩 읽어요</p>
+          </div>
+        </div>
+
+        <div class="lad">
+          <div class="lad-rail"><span class="lad-fill" style="width:11%"></span></div>
+          <div class="lad-ticks"><span class="on">Lv.1</span><span>Lv.2</span><span>Lv.3</span><span>Lv.4</span><span>Lv.5</span></div>
+        </div>
+
+        <p class="diag">자음과 모음은 <b>하나씩 소리 낼 수 있어요.</b> 아직 글자를 붙여 읽는 건 느리고, 어·오처럼 닮은 소리는 섞여 나와요. 지금은 소리를 손에 익히는 단계예요.</p>
+
+        <ul class="ev">
+          <li><i>✓</i>아 · 이 · 우 모음 소리를 정확히 냈어요</li>
+          <li><i>✓</i>‘안녕하세요’를 통째로 따라 말했어요</li>
+          <li class="miss"><i>·</i>어 / 오는 아직 같은 소리로 나왔어요</li>
+        </ul>
+
+        <span class="cert vb-cert"><i>TOPIK</i>1급 준비 단계</span>
+      </div>
+    </div>
+
+    <!-- ================= C ================= -->
+    <div class="vlab"><b>C · 아치 축소</b><span>지금 형태 유지, 아치·마스코트만 절반으로 줄이고 진단문+근거 추가</span></div>
+    <div class="rv-page">
+      <div class="section vc">
+        <span class="section-kicker">지금 나</span>
+        <h2 class="section-title">{{이름}}님의 지금 레벨</h2>
+        <p class="rv-sub">오늘 수업에서 보인 모습으로 진단했어요.</p>
+
+        <div class="vc-arch"><img src="../assets/mascot-newborn.svg" alt=""></div>
+        <div style="text-align:center"><span class="vc-badge">Lv.1</span></div>
+        <p class="vc-line">한글을 하나씩 읽어요</p>
+
+        <div class="lad">
+          <div class="lad-rail"><span class="lad-fill" style="width:11%"></span></div>
+          <div class="lad-ticks"><span class="on">Lv.1</span><span>Lv.2</span><span>Lv.3</span><span>Lv.4</span><span>Lv.5</span></div>
+        </div>
+
+        <p class="diag">자음과 모음은 <b>하나씩 소리 낼 수 있어요.</b> 아직 글자를 붙여 읽는 건 느리고, 어·오처럼 닮은 소리는 섞여 나와요.</p>
+
+        <span class="vc-evtitle">오늘 수업에서</span>
+        <ul class="ev">
+          <li><i>✓</i>아 · 이 · 우 모음 소리를 정확히 냈어요</li>
+          <li><i>✓</i>‘안녕하세요’를 통째로 따라 말했어요</li>
+          <li class="miss"><i>·</i>어 / 오는 아직 같은 소리로 나왔어요</li>
+        </ul>
+
+        <div style="text-align:center"><span class="cert vc-cert"><i>TOPIK</i>1급 준비 단계</span></div>
+      </div>
+    </div>
+
+    <!-- ================= D ================= -->
+    <div class="vlab"><b>D · 잉크 히어로</b><span>레벨을 검정 배너로 못박고, 아래 흰 영역에 눈금·진단·근거</span></div>
+    <div class="rv-page">
+      <div class="section">
+        <span class="section-kicker">지금 나</span>
+        <h2 class="section-title">{{이름}}님의 지금 레벨</h2>
+        <p class="rv-sub">오늘 수업에서 보인 모습으로 진단했어요.</p>
+
+        <div class="vd-hero">
+          <img src="../assets/mascot-newborn.svg" alt="">
+          <div>
+            <span class="vd-kick">첫걸음</span>
+            <p class="vd-lv">Lv.1</p>
+            <p class="vd-line">한글을 하나씩 읽어요</p>
+          </div>
+        </div>
+        <div class="vd-body">
+          <div class="lad">
+            <div class="lad-rail"><span class="lad-fill" style="width:11%"></span></div>
+            <div class="lad-ticks"><span class="on">Lv.1</span><span>Lv.2</span><span>Lv.3</span><span>Lv.4</span><span>Lv.5</span></div>
+          </div>
+
+          <p class="diag">자음과 모음은 <b>하나씩 소리 낼 수 있어요.</b> 아직 글자를 붙여 읽는 건 느리고, 어·오처럼 닮은 소리는 섞여 나와요. 지금은 소리를 손에 익히는 단계예요.</p>
+
+          <ul class="ev">
+            <li><i>✓</i>아 · 이 · 우 모음 소리를 정확히 냈어요</li>
+            <li><i>✓</i>‘안녕하세요’를 통째로 따라 말했어요</li>
+            <li class="miss"><i>·</i>어 / 오는 아직 같은 소리로 나왔어요</li>
+          </ul>
+
+          <div class="vd-foot"><i>TOPIK</i>1급 준비 단계</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

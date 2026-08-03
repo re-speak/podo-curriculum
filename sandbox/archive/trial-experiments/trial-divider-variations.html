@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>体験レッスン ディバイダー — デザイン案 2</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <link rel="stylesheet" href="../trial.css">
+  <style>
+    /* ============================================================
+       Round 2. Keeping the current composition (lime page, white
+       block, mascot) and moving type into the white block, the way
+       the Korean A4 trial page does it.
+
+       Constraint carried over from round 1: the mascot's body is the
+       same lime as the page, so it can only ever sit on white.
+       ============================================================ */
+    body { background: #f2f2ef; }
+
+    .lab {
+      width: min(100%, 480px);
+      margin: 46px auto 0;
+      padding: 0 20px;
+      font-family: Pretendard, -apple-system, system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    }
+    .lab h3 { margin: 0; font-size: 15px; font-weight: 900; color: #1c1c1c; }
+    .lab p { margin: 5px 0 0; font-size: 12.5px; line-height: 1.6; font-weight: 600; color: #6b6b66; }
+    .lab .tag {
+      display: inline-block; margin-bottom: 7px; padding: 3px 9px;
+      border-radius: 999px; background: #1c1c1c; color: #b5fd4c;
+      font-size: 10.5px; font-weight: 800; letter-spacing: .04em;
+    }
+    .stage { width: min(100%, 480px); margin: 0 auto; }
+    .stage .phone { min-height: 0; padding-bottom: 0; background: none; }
+
+    /* ---------- shared pieces for the white-block family ---------- */
+    .wblock {
+      width: 100%;
+      background: #fff;
+      border: 2px solid #1c1c1c;
+      border-radius: 22px;
+      box-shadow: 5px 6px 0 #1c1c1c;
+    }
+    /* the reference's hairline rectangle inside the rounded card */
+    .wframe {
+      border: 1.5px solid #1c1c1c;
+      border-radius: 4px;
+    }
+    .wkicker {
+      display: block;
+      margin-bottom: 12px;
+      color: #1c1c1c;
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: .01em;
+      text-align: left;
+    }
+    .wmark {
+      margin: 14px 0 0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .01em;
+    }
+    /* inside a white block the sub copy can carry more contrast */
+    .wblock .brand-sub { color: rgba(28,28,28,.72); }
+
+    /* ---------- 1 · current (baseline) ---------- */
+
+    /* ---------- 2 · current, tightened ---------- */
+    .v2 .brand-page.divider { min-height: 430px; }
+    .v2 .brand-mascot {
+      width: 150px; height: 168px;
+      padding: 12px 14px; border-radius: 24px;
+      box-shadow: 4px 5px 0 #1c1c1c;
+    }
+    .v2 .brand-title { margin-top: 22px; }
+    .v2 .brand-sub { margin-top: 12px; }
+
+    /* ---------- 3 · A4 port ----------
+       The reference, squeezed to phone width: kicker, hairline frame,
+       title, JP line, body, mascot at the bottom — all on white — with
+       the wordmark on the lime underneath. */
+    .v3 .brand-page.divider {
+      min-height: 0;
+      justify-content: flex-start;
+      padding: 26px 22px 22px;
+    }
+    .v3 .wblock { padding: 16px 16px 18px; }
+    .v3 .wframe { padding: 26px 20px 18px; }
+    .v3 .brand-title { margin: 0; font-size: 31px; }
+    .v3 .brand-title .ja { margin-top: 6px; font-size: 15px; color: #3ea621; }
+    .v3 .brand-sub { margin-top: 16px; }
+    .v3 .brand-mascot {
+      width: auto; height: 150px;
+      margin-top: 18px;
+      padding: 0; background: none; border: 0; border-radius: 0;
+    }
+
+    /* ---------- 4 · mascot on top, text under ----------
+       Same single white block, but the mascot leads and the type sits
+       beneath it — closest to the current reading order. */
+    .v4 .brand-page.divider {
+      min-height: 0;
+      justify-content: flex-start;
+      padding: 30px 22px 26px;
+    }
+    .v4 .wblock { padding: 22px 24px 26px; }
+    .v4 .brand-mascot {
+      width: auto; height: 158px;
+      padding: 0; background: none; border: 0; border-radius: 0;
+    }
+    .v4 .brand-title { margin-top: 14px; font-size: 31px; }
+    .v4 .brand-sub { margin-top: 12px; }
+
+    /* ---------- 5 · title only inside ----------
+       Only the mascot and the title go on white; the promise line stays
+       on the lime underneath, so the block reads as a nameplate. */
+    .v5 .brand-page.divider {
+      min-height: 0;
+      justify-content: flex-start;
+      padding: 34px 22px 30px;
+    }
+    .v5 .wblock { padding: 22px 24px 24px; }
+    .v5 .brand-mascot {
+      width: auto; height: 150px;
+      padding: 0; background: none; border: 0; border-radius: 0;
+    }
+    .v5 .brand-title { margin-top: 12px; font-size: 31px; }
+    .v5 > .phone .brand-sub,
+    .v5 .brand-page > .brand-sub { margin-top: 18px; }
+
+    /* ---------- 6 · lime title band ----------
+       The white block carries a lime header strip holding the title, so
+       the brand colour still leads while the mascot keeps its white
+       surface below. */
+    .v6 .brand-page.divider {
+      min-height: 0;
+      justify-content: flex-start;
+      padding: 32px 22px 28px;
+    }
+    .v6 .wblock { padding: 0; overflow: hidden; }
+    .v6 .band {
+      padding: 18px 20px 16px;
+      background: #b5fd4c;
+      border-bottom: 2px solid #1c1c1c;
+    }
+    .v6 .brand-title { margin: 0; font-size: 30px; }
+    .v6 .brand-title .ja { margin-top: 5px; font-size: 15px; }
+    .v6 .body { padding: 22px 24px 24px; }
+    .v6 .brand-sub { margin: 0 auto; }
+    .v6 .brand-mascot {
+      width: auto; height: 150px;
+      margin-top: 16px;
+      padding: 0; background: none; border: 0; border-radius: 0;
+    }
+
+    /* ---------- 7 · side by side ----------
+       Mascot left, type right, inside one white block. The shortest
+       page of the set — useful if the divider shouldn't eat a full
+       screen between activities. */
+    .v7 .brand-page.divider {
+      min-height: 0;
+      justify-content: flex-start;
+      padding: 40px 22px 40px;
+    }
+    .v7 .wblock {
+      display: flex; align-items: center; gap: 16px;
+      padding: 22px 22px;
+      text-align: left;
+    }
+    .v7 .brand-mascot {
+      flex: 0 0 auto;
+      width: auto; height: 132px;
+      padding: 0; background: none; border: 0; border-radius: 0;
+    }
+    .v7 .brand-title { margin: 0; font-size: 26px; }
+    .v7 .brand-title .ja { margin-top: 4px; font-size: 14px; }
+    .v7 .brand-sub { max-width: none; margin-top: 10px; font-size: 13.5px; }
+  </style>
+</head>
+<body>
+
+  <div class="lab">
+    <span class="tag">METHOD</span>
+    <h3>ベースはそのまま、文字を白ブロックへ</h3>
+    <p>ライム面＋白ブロック＋キャラという現状の骨格は変えず、
+       韓国版 A4 のように文字を白ブロックの中に入れた案を並べました。
+       案 3〜7 が新しい方向です。<br>
+       ※ キャラの体はページと同じライムなので、キャラは必ず白の上に置いています。</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="lab">
+    <span class="tag">案 1</span>
+    <h3>現状（比較用）</h3>
+    <p>いまデッキに入っているもの。</p>
+  </div>
+  <div class="stage v1">
+    <div class="phone">
+      <div class="brand-page divider">
+        <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
+        <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+        <p class="brand-sub">ここから25分。終わるころには、本物の韓国語の単語が読めます。約束します！</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="lab">
+    <span class="tag">案 2</span>
+    <h3>現状のまま余白だけ詰める</h3>
+    <p>文字は外のまま。面を 430px に下げ、ステッカーをキャラの縦長比に合わせ、
+       デッキ共通のオフセット影を足しただけ。</p>
+  </div>
+  <div class="stage v2">
+    <div class="phone">
+      <div class="brand-page divider">
+        <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
+        <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+        <p class="brand-sub">ここから25分。終わるころには、本物の韓国語の単語が読めます。約束します！</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="lab">
+    <span class="tag">案 3</span>
+    <h3>A4 版の移植（全部入り）</h3>
+    <p>韓国版 A4 とほぼ同じ構成。左上にキッカー、内側に細い罫の枠、
+       タイトル・JP・本文・キャラを全部白ブロックへ。下のライムにワードマーク。</p>
+  </div>
+  <div class="stage v3">
+    <div class="phone">
+      <div class="brand-page divider">
+        <div class="wblock">
+          <span class="wkicker">ようこそ PODO</span>
+          <div class="wframe">
+            <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+            <p class="brand-sub">ここから25分。終わるころには、<br>本物の韓国語の単語が読めます。約束します！</p>
+            <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
+          </div>
+        </div>
+        <p class="wmark">Welcome to PODO</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="lab">
+    <span class="tag">案 4</span>
+    <h3>キャラが上・文字が下（全部白ブロック）</h3>
+    <p>白ブロックは 1 枚だけ。読む順番はいまと同じ（キャラ → タイトル → 本文）なので、
+       いちばん違和感が少ないはず。</p>
+  </div>
+  <div class="stage v4">
+    <div class="phone">
+      <div class="brand-page divider">
+        <div class="wblock">
+          <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
+          <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+          <p class="brand-sub">ここから25分。終わるころには、本物の韓国語の単語が読めます。約束します！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="lab">
+    <span class="tag">案 5</span>
+    <h3>タイトルだけ白ブロック</h3>
+    <p>白に入れるのはキャラとタイトルまで。約束の一文はライムに残す。
+       白ブロックが「章の名札」として効き、ライム面の広さも保てる。</p>
+  </div>
+  <div class="stage v5">
+    <div class="phone">
+      <div class="brand-page divider">
+        <div class="wblock">
+          <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
+          <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+        </div>
+        <p class="brand-sub">ここから25分。終わるころには、本物の韓国語の単語が読めます。約束します！</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="lab">
+    <span class="tag">案 6</span>
+    <h3>白ブロックの中にライムの見出し帯</h3>
+    <p>タイトルをライムの帯に乗せて白ブロックの上部へ。
+       ブランドカラーが主役のまま、キャラは下の白面に置ける。</p>
+  </div>
+  <div class="stage v6">
+    <div class="phone">
+      <div class="brand-page divider">
+        <div class="wblock">
+          <div class="band">
+            <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+          </div>
+          <div class="body">
+            <p class="brand-sub">ここから25分。終わるころには、本物の韓国語の単語が読めます。約束します！</p>
+            <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="lab">
+    <span class="tag">案 7</span>
+    <h3>横並び（いちばん低い）</h3>
+    <p>キャラ左・文字右で 1 枚の白ブロックに。
+       アクティビティの合間の仕切りとして、画面を使いすぎない案。</p>
+  </div>
+  <div class="stage v7">
+    <div class="phone">
+      <div class="brand-page divider">
+        <div class="wblock">
+          <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
+          <div>
+            <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+            <p class="brand-sub">ここから25分。終わるころには、本物の韓国語の単語が読めます。約束します！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lab" style="margin-bottom:60px;">
+    <p>番号を教えてください。trial.css に本採用して、
+       니즈 파악 / 앞으로의 플랜 の 2 ページにも反映します。</p>
+  </div>
+
+</body>
+</html>

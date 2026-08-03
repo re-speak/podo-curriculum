@@ -1,0 +1,1491 @@
+/* ============================================================
+   PODO lesson design system
+   ------------------------------------------------------------
+   CONSTRUCTION: white cards on a 1px gray-200 outline. Weight is
+   carried by type and by fills, not by outlines — a page of eight
+   ink-outlined rows reads as eight boxes before it reads as eight
+   choices.
+
+   COLOUR CARRIES ONE MEANING EACH, and this is the rule that keeps
+   the deck legible — breaking it is how a page stops being
+   scannable:
+     · green-500 / green-100  →  STATE. chosen, correct, active.
+       The only pair that ever means "this one".
+     · blue-100               →  the tutor's spoken script, and
+       nothing else. If it is blue, the tutor is saying it aloud.
+     · lime                   →  BRAND CHROME only. brand pages,
+       kickers, the pager. Never state — lime on one row out of
+       seven reads as the screen flashing, not as a choice.
+     · gray-200               →  every ordinary outline.
+     · the seat colours (cream = consonant, pink = vowel) are
+       pedagogy and outrank all of the above wherever they appear.
+
+   NESTING RULE: max two levels of boxes — the page card plus ONE
+   boxed component inside it. Never wrap boxed components (answer
+   boxes, bubbles, pattern cards) in another bordered card; put
+   them directly in the section. When a dialogue turn holds an
+   answer box, the box IS the bubble (see .bubble.me:has below).
+
+   Dark pages need no separate system: the components on them were
+   never dark, they are light cards on a dark ground, and the
+   outline lives on the card rather than on the page.
+
+   Previous "Podo Bold" (1.5px ink outline, hard offset shadow,
+   lime state) is what this replaced; "Sage" before that is archived
+   in 2-beginner-patterns/design-variants.html (Variant 00).
+   ============================================================ */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --ink:       #1c1c1c;
+  --lime:      #b5fd4c;   /* brand chrome only — never state */
+  --green-500: #6abe36;   /* state: the outline on a chosen/correct thing */
+  --green-100: #f2fcec;   /* state: its fill */
+  --blue-100:  #f2f5ff;   /* the tutor's spoken script */
+  --blue-200:  #e4e8f2;   /* the tutor-only note attached to that script */
+  --blue-ink:  #4f5568;   /* its text — dark enough to read, never black */
+  --gray-50:   #fafafa;   /* grouping surfaces that tiles sit ON */
+  --gray-100:  #f5f5f5;
+  --gray-200:  #e8e8e8;   /* every ordinary outline */
+  --gray-400:  #a5a5a5;
+  --gray-500:  #757575;
+
+  --line:      1px solid var(--gray-200);
+  --line-on:   1.5px solid var(--green-500);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #1c1c1c;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans JP", "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+}
+
+/* mobile-first: the lesson lives in a phone-width column everywhere,
+   and simply fills the screen on real phones narrower than the cap */
+.phone {
+  width: min(100%, 480px);
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 30px;
+  background: #ffffff;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  min-height: 420px;
+  margin: 20px 20px 0;
+  padding: 42px 32px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+  background: #1c1c1c;
+  border-radius: 16px;
+  box-shadow: 0 6px 0 var(--lime);
+}
+
+.hero.small {
+  min-height: 460px;
+}
+
+.eyebrow {
+  width: fit-content;
+  margin: 0 0 44px;
+  padding: 7px 13px;
+  background: var(--lime);
+  border-radius: 999px;
+  color: #1c1c1c;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  max-width: 360px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -.01em;
+  word-break: keep-all;
+}
+
+.hero-subtitle {
+  margin: 22px 0 0;
+  max-width: 360px;
+  color: rgba(255,255,255,.72);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+h1 .title-ja {
+  display: block;
+  margin-top: 10px;
+}
+
+.hero-topic {
+  margin-top: auto;
+  padding: 18px 20px;
+  background: var(--lime);
+  border-radius: 14px;
+}
+
+.hero-topic .label {
+  display: block;
+  color: rgba(28,28,28,.78);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.hero-topic .value {
+  display: block;
+  margin-top: 7px;
+  color: #1c1c1c;
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 850;
+}
+
+.hero-topic .english {
+  color: rgba(28,28,28,.65);
+}
+
+.down {
+  display: none;
+}
+
+/* ---------- section pages ---------- */
+.section {
+  margin: 24px 20px 0;
+  padding: 36px 30px 40px;
+  min-height: 440px;
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  box-shadow: 0 5px 0 var(--ink);
+}
+
+.section + .section {
+  margin-top: 24px;
+}
+
+.section-title {
+  margin: 0;
+  color: #1c1c1c;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -.01em;
+}
+
+/* Japanese gloss kept in parentheses after a Korean title — lighter
+   and thinner so the Korean reads as the primary title */
+.title-ja {
+  font-size: 0.6em;
+  font-weight: 500;
+  color: var(--gray-400);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+h1 .title-ja,
+.transition-title .title-ja {
+  color: rgba(255, 255, 255, .55);
+}
+
+/* THE TUTOR'S SPOKEN SCRIPT. blue-100 means exactly one thing in this
+   system — the tutor is saying this out loud — so nothing else may take
+   this fill. Full-bleed rather than fit-content: a tinted box with no
+   outline needs its edges to line up with the components under it, or it
+   reads as a stray highlight rather than as the page's instruction.
+   Korean on top, its Japanese translation under it at half strength. */
+.section-subtitle {
+  width: auto;
+  max-width: 100%;
+  margin: 16px 0 26px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--blue-100);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* The tutor reads this line aloud, so it may only break at spaces — the
+   default breaks Hangul between syllables (읽을/게요) and the orphan makes
+   the reader stumble. Korean-only: Japanese has no spaces to break at. */
+.section-subtitle .ko {
+  display: block;
+  word-break: keep-all;
+}
+
+.section-subtitle .ja {
+  display: block;
+  margin-top: 3px;
+  color: rgba(28,28,28,.5);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ---- one sentence per line, its translation directly under it ----
+   Built at load by interactive/script-lines.js, and only when the Korean and
+   Japanese split into the same number of sentences. A run-on script gave the
+   tutor no way to see which sentence they were on, and gave the learner no way
+   to tell which Japanese belonged to which Korean. The gap between pairs is
+   what does the work — bigger than the gap inside a pair, so each Korean line
+   reads as owning the grey line beneath it. */
+.section-subtitle.lined .sline {
+  display: block;
+}
+
+.section-subtitle.lined .sline + .sline {
+  margin-top: 10px;
+}
+
+.section-subtitle.lined .ja {
+  margin-top: 1px;
+}
+
+/* ---------- cards ---------- */
+.card {
+  margin: 24px 0 0;
+  padding: 26px;
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* worksheet: a plain (borderless) wrapper so the write-in blanks sit
+   directly in the section — never a box inside a box */
+.worksheet {
+  margin-top: 24px;
+}
+
+/* ---------- big letter teaching blocks ---------- */
+/* when the lesson teaches the letters themselves, each letter is the
+   hero: one full-width block (big glyph + a short sound hint), stacked
+   one per row. the .letter-row wrapper has no border, so the only boxes
+   are the section card + each letter block — two levels, never nested. */
+.letter-row {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.letter-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 16px 26px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.letter-card > .korean {
+  flex: 0 0 1.5em;
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 800;
+  text-align: center;
+}
+
+.letter-card > .english,
+.letter-card > .translation {
+  flex: 1 1 auto;
+  margin: 0;
+  color: #575753;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.task-block {
+  padding: 9px 0;
+}
+
+.task-block:first-child,
+.section-subtitle + .task-block,
+.chip-row + .task-block {
+  padding-top: 0;
+}
+
+.task-block:last-child {
+  padding-bottom: 0;
+}
+
+.task-label {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--gray-500);
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.activity-title {
+  margin: 0;
+  color: #1c1c1c;
+  font-size: 21px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -.005em;
+}
+
+.activity-subtitle {
+  margin: 6px 0 22px;
+  color: var(--gray-500);
+  font-size: 15px;
+  line-height: 1.38;
+  font-weight: 600;
+}
+
+.model-list {
+  display: grid;
+  gap: 18px;
+}
+
+/* reading lines: Japanese gloss as a header box on top, Korean below
+   — matching the dialogue bubbles and answer cards */
+.model-line {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.model-line > .translation {
+  order: -1;
+  margin: 0;
+  padding: 9px 14px;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+  color: #575753;
+  font-size: 12.5px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.model-line > .korean {
+  padding: 14px 16px;
+}
+
+.prompt-line {
+  display: block;
+  margin-bottom: 9px;
+  color: #1c1c1c;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.plain-card {
+  margin: 18px 0 0;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--gray-200);
+}
+
+.tip {
+  display: inline-block;
+  margin: 0 0 13px;
+  padding: 5px 8px;
+  border-radius: 7px;
+  background: #1c1c1c;
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 14px;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- text ---------- */
+.korean {
+  display: block;
+  color: #1c1c1c;
+  font-size: 19px;
+  line-height: 1.38;
+  font-weight: 700;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.xl {
+  font-size: 28px;
+}
+
+.english {
+  display: block;
+  margin-top: 5px;
+  color: var(--gray-500);
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.translation {
+  display: block;
+  margin-top: 5px;
+  color: var(--gray-500);
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.teacher {
+  margin: 0 0 16px;
+  color: var(--gray-500);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ---------- grids / misc ---------- */
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pill {
+  min-height: 74px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.row {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--gray-200);
+  overflow-wrap: anywhere;
+}
+
+.row:first-child {
+  padding-top: 0;
+}
+
+.row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.blank {
+  display: block;
+  height: 72px;
+  margin: 12px 0 10px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.blank.small {
+  height: 64px;
+}
+
+/* ---------- answer boxes ---------- */
+.answer-box {
+  display: block;
+  margin: 10px 0 6px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.answer-label {
+  display: block;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-100);
+  color: #575753;
+  font-size: 12.5px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+/* open write-in areas carry a very light grey so they read as
+   "fill the whole thing here" (fill-in sentences keep white). Any
+   answer placed inside is rendered barely-visible, like the pills. */
+.answer-space {
+  display: block;
+  min-height: 84px;
+  padding: 13px 16px;
+  background: #f8f8f7;
+  color: #e7e7e4;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
+  word-break: keep-all;
+}
+
+.answer-fill {
+  display: block;
+  padding: 18px 16px 20px;
+  background: #fff;
+}
+
+.answer-box.small .answer-space {
+  min-height: 64px;
+}
+
+.answer-box.tall .answer-space {
+  min-height: 112px;
+}
+
+/* inline blank: a dashed pill that auto-sizes to its answer. The
+   answer text lives inside but is rendered the same color as the
+   fill, so it's invisible while still driving the pill's width.
+   (temporarily tinted slightly off-bg so it's visible during review) */
+.slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2em;
+  height: 34px;
+  padding: 0 20px;
+  margin: 0 4px;
+  vertical-align: middle;
+  background: #f8f8f7;
+  border: 1.5px dashed var(--gray-200);
+  border-radius: 999px;
+  color: #ededeb;
+  font-size: inherit;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* the input twin of .slot — a blank someone types into. Inferred as the
+   "value" sync kind, so a data-sync-id is all it takes to mirror it live. */
+.slot-input {
+  display: inline-flex;
+  min-width: 2.5em;
+  max-width: 9em;
+  height: 34px;
+  padding: 0 14px;
+  margin: 0 4px;
+  vertical-align: middle;
+  background: #f8f8f7;
+  border: 1.5px dashed var(--gray-200);
+  border-radius: 999px;
+  color: #1c1c1c;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  field-sizing: content;
+  -webkit-appearance: none;
+}
+.slot-input::placeholder { color: #b4b4b0; font-weight: 700; }
+.slot-input:focus { outline: none; border-style: solid; background: #fff; }
+.bubble.me .slot-input { background: #f6fdf0; }
+
+.option-line {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--gray-200);
+  color: #1c1c1c;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.option-line:last-child {
+  border-bottom: 0;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+/* ---------- pattern teaching ---------- */
+.pattern-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.pattern-card {
+  padding: 20px 22px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.pattern-card .korean {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+/* examples sit a step below the pattern: muted box, smaller text */
+.example-card {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f5f5f3;
+}
+
+.example-card .korean {
+  font-size: 17px;
+  font-weight: 600;
+  color: #575753;
+}
+
+.example-card .translation {
+  font-size: 13px;
+}
+
+.note-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.pattern-stack + .note-grid {
+  margin-top: 18px;
+}
+
+.note-box {
+  padding: 18px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.note-arrow {
+  display: block;
+  margin: 8px 0 10px;
+  color: var(--green-500);
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.section-kicker {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--green-500);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* ---------- hints ---------- */
+.hint {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: var(--gray-500);
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.hint-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 10px;
+  border: 1px solid var(--gray-200);
+  border-radius: 999px;
+  background: #fff;
+  color: #1c1c1c;
+  font-size: 12.5px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+/* ---------- listen ---------- */
+.listen-card {
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.listen-line {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.listen-line > .translation {
+  order: -1;
+  margin: 0;
+  padding: 9px 14px;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+  color: #575753;
+  font-size: 12.5px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.listen-line > .korean {
+  padding: 14px 16px;
+}
+
+/* teaching cards: Japanese meaning sits above the Korean too, but as
+   a light label so the Korean stays the visual hero (tip examples are
+   excluded so their "full → casual" arrow order is preserved) */
+.pattern-card,
+.pattern-card > .example-card,
+.review-pattern {
+  display: flex;
+  flex-direction: column;
+}
+
+.pattern-card > .translation,
+.pattern-card > .example-card > .translation,
+.review-pattern > .translation {
+  order: -1;
+  margin: 0 0 6px;
+}
+
+.choice {
+  display: inline-flex;
+  margin: 8px 6px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ---------- dialogue ---------- */
+.dialogue {
+  display: grid;
+  gap: 14px;
+}
+
+.card + .dialogue {
+  margin-top: 24px;
+}
+
+/* dialogue turns: chat layout — avatar + name beside the bubble,
+   the partner on the left, the learner (me) on the right */
+.turn {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.turn.me {
+  flex-direction: row-reverse;
+}
+
+/* legacy speaker-name column (still used by other lessons) */
+.speaker {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-top: 12px;
+}
+
+.sp-ko {
+  color: #1c1c1c;
+  font-size: 15.5px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.sp-ja {
+  color: var(--gray-400);
+  font-size: 11.5px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ececea;
+}
+
+/* default icon avatar for the practice activities (not hana/haruka) */
+.avatar.icon {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: #bcbcb9;
+}
+
+.turn.me .avatar.icon {
+  background: #b3e187;
+}
+
+.avatar.icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.turn .bubble {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* the chat-tail corner — also on bubbles whose content is an answer box */
+.turn.other .bubble,
+.turn.other .bubble > .answer-box {
+  border-top-left-radius: 4px;
+}
+
+.turn.me .bubble,
+.turn.me .bubble > .answer-box {
+  border-top-right-radius: 4px;
+}
+
+/* a hint sitting inside a dialogue bubble */
+.bubble .hint {
+  margin-top: 10px;
+}
+
+.bubble {
+  padding: 14px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+}
+
+/* "you" in a dialogue. The green-100 tint alone carries it — deliberately
+   without the green-500 outline, which is reserved for state (chosen /
+   correct). A speaker is not a choice. */
+.bubble.me {
+  background: var(--green-100);
+  box-shadow: none;
+}
+
+.bubble .answer-box {
+  background: #fff;
+}
+
+/* nesting rule: when a "me" turn holds an answer box, the box IS
+   the bubble — drop the wrapper's chrome so only one box renders */
+.bubble.me:has(> .answer-box) {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.bubble.me:has(> .answer-box) > .answer-box {
+  margin: 0;
+  box-shadow: none;
+}
+
+.bubble.me:has(> .answer-box) .answer-label {
+  background: #e7f8d8;
+}
+
+/* section 3 "me" boxes are green: their write-in areas and pills follow
+   the green convention (a touch lighter than the green header) */
+.bubble.me .answer-space {
+  background: #f6fdf0;
+  color: #e3f1d5;
+}
+
+.bubble.me .slot {
+  background: #f6fdf0;
+  color: #e3f1d5;
+}
+
+.bubble.me:has(> .answer-box) > .hint {
+  margin-top: 12px;
+}
+
+/* dialogue bubbles that hold a Korean line: float the Japanese gloss
+   into a header box on top, Korean below — matching the answer cards */
+.bubble:has(> .korean) {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bubble:has(> .korean) > .translation {
+  order: -1;
+  margin: 0;
+  padding: 9px 14px;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+  color: #575753;
+  font-size: 12.5px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.bubble:has(> .korean) > .korean {
+  padding: 14px 16px;
+}
+
+.bubble.me:has(> .korean) {
+  background: #fff;
+}
+
+.bubble.me:has(> .korean) > .translation {
+  background: var(--green-100);
+}
+
+/* ---------- missions ---------- */
+.mission {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.mission li {
+  padding: 14px 0 14px 30px;
+  border-bottom: 1px solid var(--gray-200);
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mission li:first-child {
+  padding-top: 0;
+}
+
+.mission li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+/* roleplay mission: KO instruction, JA below, hint words underneath */
+.mission-task .ja {
+  display: block;
+  margin-top: 3px;
+  color: var(--gray-500);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mission li .hint {
+  margin-top: 9px;
+}
+
+/* free-talk round labels need breathing room after a card/dialogue */
+.card + .section-kicker,
+.dialogue + .section-kicker {
+  margin-top: 28px;
+}
+
+/* native tip: the dropped particle */
+.example-card s {
+  color: #b0b0b0;
+}
+
+.mission li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 11px 0 -30px;
+  border: 1px solid var(--gray-200);
+  border-radius: 5px;
+  background: #fff;
+  vertical-align: -2px;
+}
+
+.sign {
+  padding: 21px 18px;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  background: #fff;
+}
+
+strong {
+  font-weight: 800;
+}
+
+/* ---------- transitions ---------- */
+.transition-page {
+  min-height: 440px;
+  margin: 24px 20px 0;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #1c1c1c;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 0 var(--lime);
+}
+
+.transition-kicker {
+  width: fit-content;
+  margin-bottom: 18px;
+  padding: 6px 13px;
+  background: var(--lime);
+  border-radius: 999px;
+  color: #1c1c1c;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.transition-title {
+  margin: 0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -.01em;
+}
+
+.transition-copy {
+  max-width: 420px;
+  margin: 12px 0 0;
+  color: rgba(255,255,255,.72);
+  font-size: 16px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 420px;
+    margin: 14px 12px 0;
+    padding: 36px 24px 32px;
+  }
+
+  .eyebrow {
+    margin-bottom: 44px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .section {
+    margin: 20px 12px 0;
+    padding: 32px 22px 36px;
+    min-height: 440px;
+  }
+
+  .korean {
+    font-size: 18px;
+  }
+
+  .xl {
+    font-size: 27px;
+  }
+
+  .transition-page {
+    min-height: 440px;
+    margin: 20px 12px 0;
+    padding: 34px 24px;
+  }
+}
+
+/* ---------- visible (un-pilled) rule examples ---------- */
+.note-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-top: 12px;
+}
+
+.note-examples .korean {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gray-500);
+}
+
+.note-examples .korean strong {
+  color: #1c1c1c;
+}
+
+/* ---------- choose-an-option activity ---------- */
+.choose-list {
+  display: grid;
+  gap: 10px;
+}
+
+.choose-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.choose-word {
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1c1c1c;
+}
+
+/* word/option rows: the word and the "을 / 를" pills sit together,
+   centered as one group; the slash divides the two options */
+.choose-row:not(.sentence) {
+  justify-content: center;
+  gap: 18px;
+}
+
+.choose-opts {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* sentence rows: Japanese header on top, the choice sentence below */
+.choose-row.sentence {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.choose-row.sentence > .translation {
+  margin: 0;
+  padding: 9px 14px;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+  color: #575753;
+  font-size: 12.5px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.choose-row.sentence > .choose-sentence {
+  padding: 14px 20px;
+}
+
+.choose-sentence {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.9;
+  color: #1c1c1c;
+}
+
+/* each choice sits in a dashed pill (same language as the fill-in
+   blanks), with a slash dividing the two options */
+.opt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.4em;
+  padding: 9px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 999px;
+  background: #fff;
+  color: #1c1c1c;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.choose-sentence .opt {
+  min-width: 2.6em;
+  padding: 5px 13px;
+  font-size: 17px;
+  vertical-align: middle;
+}
+
+.sep {
+  color: #b0b0b0;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.choose-sentence .sep {
+  margin: 0 4px;
+}
+
+/* note boxes always stack vertically — the lesson lives in a phone-width
+   column everywhere, so a 2-up grid only ever looks cramped. one idea
+   reads top-to-bottom, roomy and instantly scannable. */
+
+/* ---------- shared spotlight (interactive/spotlight.js) ----------
+   The tutor's "look here" pointer, mirrored to the learner. A ring that
+   reads on every page background — white cards, lime brand pages, dark
+   transition pages. Only the visual lives here; the sync is in the script. */
+.is-spot {
+  border-radius: 10px;
+  outline: 3px solid #ff2d55;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(255, 45, 85, .20);
+  animation: spotPulse 1.15s ease-in-out infinite;
+}
+@keyframes spotPulse {
+  0%, 100% { box-shadow: 0 0 0 6px rgba(255, 45, 85, .20); }
+  50%      { box-shadow: 0 0 0 11px rgba(255, 45, 85, .08); }
+}
+[data-spot] { cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .is-spot { animation: none; } }
+
+/* ---------- shared highlighter (interactive/highlight.js) ----------
+   A marker stroke over the text, mirrored to the other screen. Persistent —
+   it stays until someone taps it off — so it reads as ink, not as a pointer:
+   no pulse, no outline, nothing competing with the spotlight ring above.
+   Only the visual lives here; the sync is in the script. */
+mark.hl {
+  background: #c9ff70;         /* the brand lime, on the white cards it usually lands on */
+  color: inherit;
+  padding: 0 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  /* a stroke that wraps across lines keeps its rounded ends on every line
+     rather than one box stretched behind the whole run */
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+/* Lime on lime disappears, so the one remaining lime surface — the brand page —
+   takes a warm stroke instead: the contrast is in the temperature, and the ink
+   stays black. (Amber over the white cards inside a brand page is harmless.)
+   The script box needs no override; it is blue-100 now, and lime reads on it. */
+.brand-page mark.hl { background: #ffd166; }
+
+/* the dark transition pages carry reversed text, so a bright fill would swallow
+   it — there the stroke dims to a band the white text sits on top of */
+.transition-page mark.hl { background: rgba(181, 253, 76, .32); }
+
+/* ---------- shared tutor notes (interactive/tutor-notes.js) ----------
+   One free-typing box per page, sitting under the blue script. Empty it is
+   invisible to everyone; the tutor sees it in teaching mode to write into,
+   and the moment it holds anything both screens show it.
+
+   :placeholder-shown is what makes that free — it tracks the live value, so a
+   note arriving from the other side surfaces with no event and no script. The
+   box must be display:none rather than merely transparent: pages are flex
+   columns with gaps, and only a non-rendered element leaves no gap behind.
+
+   A plain grey box, deliberately. It is scratch paper the tutor writes on
+   mid-lesson, not a component of the lesson — dressing it like the real
+   components made it compete with them for attention on every page it
+   appeared. It recedes instead. */
+.note-input {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  /* The bottom margin is real: the box is injected between two components that
+     know nothing about it, and several of them (.sign-list, .known, .letter-row)
+     bring no top margin of their own — with a 0 bottom the memo collided with
+     whatever followed it. The TOP is tightened by the adjacency rules below,
+     because the memo belongs to the instruction above it. */
+  margin: 8px 0 18px;
+  /* room on the left for the pencil */
+  padding: 8px 11px 8px 30px;
+  /* Dashed, always — not only while empty. Dashed already means "written here,
+     not printed here" everywhere else in the system (.slot, .build-slot), and
+     it is the one texture no lesson component wears, so the memo reads as
+     hand-written at a glance without needing a colour of its own. */
+  border: 1.5px dashed var(--gray-200);
+  border-radius: 8px;
+  /* Grey on grey. It is an aside written during the lesson, not lesson
+     material, so it should read as quieter than everything around it — on
+     white with near-black text it looked like an empty form field and pulled
+     rank over the card it belongs to. The dashed edge and the pencil are what
+     make it unmistakable; the colour is what keeps it quiet. */
+  background-color: var(--gray-50);
+  /* A pencil, inlined as a data URI so the packager has no file to bundle and
+     nothing can 404 from S3. Sits top-left so it stays put as the box grows. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a5a5a5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20h9'/%3E%3Cpath d='M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 9px 10px;
+  background-size: 13px 13px;
+  color: var(--gray-500);
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.5;
+  resize: none;
+}
+
+/* Grows with what is typed — and, unlike a JS autosizer, also grows for a note
+   that arrived from the other side (a value set by script fires no input
+   event). Only then does it collapse to a single line while empty; without the
+   support the box keeps its two authored rows and scrolls, which is a smaller
+   failure than a one-line box that silently clips a long note.
+
+   min-width holds it full-bleed: with content sizing the box would otherwise
+   shrink-wrap its text on the pages that lay out as blocks. The flex pages hide
+   that — a stretched flex item is full width already — so it would have shown
+   up on only some of the deck. */
+@supports (field-sizing: content) {
+  .note-input { field-sizing: content; min-height: 0; min-width: 100%; }
+}
+
+body.teaching .note-input,
+.note-input:not(:placeholder-shown) { display: block; }
+
+/* The memo is a note ON the instruction above it, so it sits with that block
+   rather than floating between it and the activity.
+
+   Two selectors, because a hidden tutor-note still occupies the sibling chain:
+   display:none removes its box, not its place, so in student view the memo is
+   the script box's grand-sibling rather than its neighbour and the first
+   selector never matches. Without the second one the gap was right only while
+   teaching mode was on. (The merged case is tightened in the track sheet,
+   which loads after this one and wins on specificity.) */
+.section-subtitle:has(+ .note-input),
+.section-subtitle:has(+ .tutor-note + .note-input) { margin-bottom: 8px; }
+
+/* empty and only the tutor can see it: quieter still, so an unused box on
+   every page never reads as content the learner is missing */
+/* Empty, only the tutor can see it — and an unused box appears on every page,
+   so it drops back to the page ground rather than sitting on a tint. */
+body.teaching .note-input:placeholder-shown { background-color: transparent; }
+
+.note-input::placeholder { color: var(--gray-400); font-weight: 500; }
+
+/* typing is the one moment it should feel like a live field */
+.note-input:focus {
+  border-color: var(--gray-400);
+  outline: none;
+  background-color: #fff;
+  color: var(--ink);
+}
+
+/* the learner gets it as a read-only note, so drop the text cursor */
+.note-input[readonly] { cursor: default; }
+
+@media print { .note-input:not(:placeholder-shown) { display: block; } }
+
+/* ---------- 참! 잘했어요 stamp ----------
+   The tutor's praise stamp, mirrored to the learner. Only the visual lives
+   here; who may stamp and what is shared is in interactive/stamp.js. */
+
+/* Hidden by default wherever it sits — the lone overlay, and the copy inside
+   the pager button until teaching mode turns that one on. */
+.stamp-art { display: none; }
+
+/* ONE overlay, a sibling of .phone rather than a child of a page. Appending it
+   to the page would make the img :last-child, and the track sheet hands that
+   child a margin-bottom: auto to centre the component pages — the stamp would
+   silently absorb it and break their layout. :has() reads the class off
+   whichever page is showing instead, so page DOM is never touched.
+
+   Fixed, not absolute: paged pages are variously block, flex, or flex-via-
+   :has() and vary in height, so the viewport is the one stable box to centre
+   in — and .phone is itself centred in the viewport, so the two coincide.
+   z-index stays under the pager's 60 so the bar is never covered. */
+.phone:has(> .pg-on.stamped) ~ .stamp-art {
+  /* Ink, not paint: the stamp lands over the activity, so it stays translucent
+     enough to read the tiles through. Declared as a property because the
+     keyframes have to fade in to exactly this value, not to 1. */
+  --stamp-ink: .9;
+
+  /* Off dead-centre, up and to the right — enough to feel hand-placed rather
+     than pasted, not enough to leave the activity. Both are doubled in the
+     inset below, because margin:auto splits whatever free space is left.
+
+     The vertical one needs a correction first: the pager reserves 118px at the
+     bottom of the viewport, so the CARD's centre already sits ~47px above the
+     viewport's. Centring on the viewport therefore reads as dead-centre on the
+     card, which is why a 40px nudge was invisible. The 94px term (118 minus
+     the card's 24px top margin) cancels that out, so --stamp-nudge-y is
+     measured from the card's centre, where the eye judges it. */
+  --stamp-nudge-x: 40px;
+  /* Spend the nudge only where there is room for it. The title-plus-script
+     header is a fixed ~190px whatever the window height, so on a short viewport
+     the card has no slack to lift a big stamp clear of the script box — below
+     ~820px the nudge relaxes back to card-centred, and on the shortest windows
+     it goes a touch negative rather than ride up into the script. */
+  --stamp-nudge-y: clamp(-14px, (100vh - 820px) / 2, 46px);
+
+  display: block;
+  position: fixed;
+  inset: 0 0 calc(94px + var(--stamp-nudge-y) * 2) calc(var(--stamp-nudge-x) * 2);
+  z-index: 50;
+  margin: auto;             /* centred on the phone column, which is itself centred */
+  /* 30vh caps it on short windows for the same reason */
+  width: min(66vw, 300px, 30vh);
+  height: auto;
+  opacity: var(--stamp-ink);
+  pointer-events: none;     /* praise must never eat a tap on the activity */
+  animation: stampPress .13s cubic-bezier(.1, .75, .2, 1) both;
+}
+
+/* A stamp does not bounce: it comes straight down, hits, and stops dead. So
+   the tilt is constant (rotating during the descent read like a screw going
+   in) and nothing overshoots the resting state — the snap comes from the
+   timing function, which spends most of its 130ms in the last few pixels. */
+@keyframes stampPress {
+  from { opacity: 0; transform: scale(1.5) rotate(-7deg); }
+  55%  { opacity: var(--stamp-ink); }
+  to   { opacity: var(--stamp-ink); transform: scale(1) rotate(-7deg); }
+}
+
+/* The button wears a small copy of the stamp, and only the tutor sees it.
+   Scoped to .pager because the track sheet loads after this one and sets
+   .pg-btn { display: grid } — an unscoped .pg-stamp ties on specificity and
+   loses on order, which would show the learner a button they cannot use. */
+/* The slot is ALWAYS in the layout — hidden, not removed. Toggling display
+   here added a sixth item to the bar the moment teaching mode came on, and
+   every other button slid sideways under the tutor's finger. Reserving the
+   space costs the learner one invisible 34px gap and keeps the bar still. */
+.pager .pg-stamp { visibility: hidden; pointer-events: none; }
+/* The art is already a bordered circle, so the button adds no ring of its own —
+   a ring inside a ring is the box-in-a-box the system rules out, and it left
+   the faces rendering at 21px as an unreadable smudge. The stamp IS the button:
+   34px, no border, no fill. */
+.pager .pg-stamp {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+body.teaching .pager .pg-stamp { visibility: visible; pointer-events: auto; }
+.pager .pg-stamp > .stamp-art { display: block; width: 34px; height: auto; }
+
+/* Five items crowd the pill's rounded end — the last one sat 1px inside the
+   flat edge, where the 999px radius has already curved away. Unconditional,
+   because the stamp now holds its slot in both modes. */
+.pager { padding-right: 15px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .phone:has(> .pg-on.stamped) ~ .stamp-art { animation: none; transform: rotate(-7deg); }
+}

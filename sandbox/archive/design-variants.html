@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Design Variants — Say what you like</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&family=Jua&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+/* ============================================================
+   BASE
+   ============================================================ */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #101113;
+  color: #1d1f24;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 28px;
+  background: rgba(16,17,19,.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.topbar strong {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.topbar a {
+  padding: 7px 13px;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  color: rgba(255,255,255,.85);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.topbar a:hover { background: rgba(255,255,255,.12); }
+
+/* variant band header */
+.v-head {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 72px 28px 36px;
+  color: #fff;
+}
+
+.v-tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 11px;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.85);
+}
+
+.v-head h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+}
+
+.v-head p {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(255,255,255,.72);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.pages {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8px 16px 88px;
+  display: grid;
+  gap: 18px;
+}
+
+.page {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* shared Korean defaults */
+.kr { display: block; word-break: keep-all; }
+.en { display: block; }
+
+/* ============================================================
+   VARIANT 0 — SAGE · archived snapshot of the original
+   sample-lesson design (lesson-card.css before the Podo Bold
+   reskin): calm green-gray palette, teal accents, soft cards.
+   ============================================================ */
+.v0 { background: #e6ebe8; }
+
+.v0 .v-head { color: #202124; }
+.v0 .v-tag { border: 1px solid rgba(32,33,36,.28); color: #5b6360; }
+.v0 .v-head h2 { color: #202124; }
+.v0 .v-head p { color: #686f6c; }
+
+.v0 .page {
+  background: #fbfcf8;
+  border: 1px solid #dfe6e2;
+  border-radius: 24px;
+  padding: 44px 38px 46px;
+}
+
+.v0 .kicker {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #e3efec;
+  color: #29655c;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.v0 h3 {
+  margin: 0;
+  color: #202124;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+.v0 .sub {
+  width: fit-content;
+  max-width: 100%;
+  margin: 16px 0 26px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #e9f1ee;
+  color: #3e524c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* hero */
+.v0 .hero {
+  background: #26322f;
+  color: #fff;
+}
+
+.v0 .hero .eyebrow {
+  display: inline-block;
+  margin: 0 0 40px;
+  padding: 7px 11px;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  color: rgba(255,255,255,.82);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.v0 .hero h3 { color: #fff; font-size: 34px; }
+
+.v0 .hero .sub {
+  background: none;
+  padding: 0;
+  margin: 16px 0 38px;
+  color: rgba(255,255,255,.8);
+  font-weight: 650;
+  max-width: 380px;
+}
+
+.v0 .spec { border-top: 1px solid rgba(255,255,255,.18); padding-top: 22px; }
+
+.v0 .spec .spec-label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255,255,255,.62);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.v0 .spec .row { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 4px 0; }
+.v0 .spec .kr { color: #fff; font-size: 22px; font-weight: 850; }
+.v0 .spec .en { color: rgba(255,255,255,.68); font-size: 14px; }
+
+/* learn */
+.v0 .pattern {
+  padding: 20px 22px;
+  border: 1px solid #e1e4e8;
+  border-left: 4px solid #2f7d73;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.v0 .pattern + .pattern { margin-top: 18px; }
+.v0 .pattern > .kr { font-size: 24px; font-weight: 800; color: #202124; }
+.v0 .pattern > .en { margin-top: 5px; color: #202124; font-size: 14px; font-weight: 650; }
+
+.v0 .example { margin-top: 14px; padding: 13px 0 0; border-top: 1px solid #e3e8e5; }
+.v0 .example .kr { font-size: 21px; font-weight: 800; color: #202124; }
+.v0 .example .en { margin-top: 3px; color: #757575; font-size: 13.5px; }
+
+/* write */
+.v0 .task { padding: 18px 0; }
+.v0 .task + .task { border-top: 1px solid #e1e3e6; }
+.v0 .task:first-of-type { padding-top: 0; }
+.v0 .task:last-child { padding-bottom: 0; }
+
+.v0 .answer {
+  border: 1.5px solid #b8bdc5;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.v0 .answer .slot-label {
+  display: block;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e3e6e9;
+  background: #f6f8f7;
+  color: #40464d;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.v0 .answer .space { display: block; min-height: 50px; }
+
+.v0 .answer .fill-body {
+  display: block;
+  padding: 16px 14px 18px;
+  color: #202124;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.v0 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+
+.v0 .chip {
+  padding: 4px 10px;
+  border: 1px solid #d9dde2;
+  border-radius: 999px;
+  background: #fff;
+  color: #555b63;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+/* dialogue */
+.v0 .line { display: grid; grid-template-columns: 48px minmax(0,1fr); gap: 10px; align-items: start; }
+.v0 .line + .line { margin-top: 12px; }
+.v0 .line .who { padding-top: 10px; color: #737780; font-size: 13px; font-weight: 850; }
+
+.v0 .bubble {
+  padding: 13px 14px;
+  border: 1px solid #e4e6e9;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.v0 .line.you .bubble { border: 1.5px solid #8fbfb4; }
+
+.v0 .bubble .kr { font-size: 21px; font-weight: 800; color: #202124; }
+.v0 .bubble .en { margin-top: 3px; color: #202124; font-size: 14px; font-weight: 650; }
+
+/* transition */
+.v0 .transition {
+  background: #26322f;
+  border-radius: 22px;
+  padding: 50px 38px;
+}
+
+.v0 .transition .kicker {
+  background: none;
+  padding: 0;
+  margin-bottom: 14px;
+  color: rgba(255,255,255,.62);
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: .04em;
+}
+
+.v0 .transition h3 { color: #fff; font-size: 28px; }
+.v0 .transition .sub { background: none; padding: 0; margin: 14px 0 0; color: rgba(255,255,255,.76); font-weight: 650; }
+
+/* ============================================================
+   VARIANT 1 — HANJI · warm paper editorial
+   ============================================================ */
+.v1 { background: #efe8d9; }
+
+.v1 .v-head { color: #211c12; }
+.v1 .v-tag { border-color: #21381c1f; border: 1px solid rgba(33,28,18,.25); color: #5c5344; }
+.v1 .v-head h2 { color: #211c12; font-family: "Noto Serif KR", serif; font-weight: 700; }
+.v1 .v-head p { color: #6b6150; }
+
+.v1 .page {
+  background: #fbf7ee;
+  border: 1px solid #ddd2bb;
+  border-radius: 10px;
+  padding: 46px 40px 50px;
+}
+
+.v1 .kicker {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+  color: #8a7c63;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.v1 .kicker::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #c4452c;
+  border-radius: 2px;
+}
+
+.v1 h3 {
+  margin: 0 0 8px;
+  font-family: "Noto Serif KR", serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #211c12;
+  letter-spacing: -.005em;
+}
+
+.v1 .sub {
+  margin: 0 0 30px;
+  color: #7b7160;
+  font-family: "Noto Serif KR", serif;
+  font-size: 15.5px;
+  font-weight: 400;
+}
+
+/* hero */
+.v1 .hero { padding-top: 54px; }
+
+.v1 .hero .seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 26px;
+  background: #c4452c;
+  border-radius: 6px;
+  color: #fbf7ee;
+  font-family: "Noto Serif KR", serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.v1 .hero .eyebrow {
+  margin: 0 0 10px;
+  color: #8a7c63;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.v1 .hero h3 {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+
+.v1 .hero .sub { margin-bottom: 40px; max-width: 430px; }
+
+.v1 .spec {
+  border-top: 1px solid #d9cdb4;
+  padding-top: 24px;
+}
+
+.v1 .spec .spec-label {
+  display: block;
+  margin-bottom: 16px;
+  color: #8a7c63;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.v1 .spec .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 9px 0;
+}
+
+.v1 .spec .row .kr {
+  font-family: "Noto Serif KR", serif;
+  font-size: 23px;
+  font-weight: 600;
+  color: #211c12;
+}
+
+.v1 .spec .row .en { color: #8a7c63; font-size: 14px; }
+
+/* pattern cards */
+.v1 .pattern {
+  padding: 24px 0;
+  border-top: 1px solid #e4dac4;
+}
+
+.v1 .pattern:last-child { padding-bottom: 0; }
+
+.v1 .pattern > .kr {
+  font-family: "Noto Serif KR", serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #211c12;
+}
+
+.v1 .pattern > .en { margin-top: 4px; color: #7b7160; font-size: 14.5px; }
+
+.v1 .example {
+  margin-top: 16px;
+  padding: 16px 18px;
+  background: #f1ead9;
+  border-left: 3px solid #c4452c;
+  border-radius: 0 8px 8px 0;
+}
+
+.v1 .example .kr {
+  font-family: "Noto Serif KR", serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #2c261a;
+}
+
+.v1 .example .en { margin-top: 3px; color: #8a7c63; font-size: 13.5px; }
+
+/* write slots: ruled worksheet lines */
+.v1 .task {
+  padding: 20px 0;
+}
+
+.v1 .task:first-of-type { padding-top: 0; }
+.v1 .task:last-child { padding-bottom: 0; }
+
+.v1 .task .prompt {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Noto Serif KR", serif;
+  color: #211c12;
+}
+
+.v1 .slot-label {
+  display: block;
+  margin-top: 14px;
+  color: #8a7c63;
+  font-size: 13.5px;
+  font-style: italic;
+}
+
+.v1 .rule {
+  display: block;
+  height: 46px;
+  border-bottom: 1.5px solid #a3957a;
+}
+
+.v1 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+
+.v1 .chip {
+  padding: 4px 10px;
+  border: 1px solid #d6c9ac;
+  border-radius: 999px;
+  background: #f5efe1;
+  color: #6b6150;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/* script-style dialogue */
+.v1 .line {
+  display: grid;
+  grid-template-columns: 58px minmax(0,1fr);
+  gap: 14px;
+  padding: 18px 0;
+  border-top: 1px solid #e4dac4;
+}
+
+.v1 .line .who {
+  padding-top: 3px;
+  color: #c4452c;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.v1 .line .kr {
+  font-family: "Noto Serif KR", serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #211c12;
+}
+
+.v1 .line .en { margin-top: 3px; color: #8a7c63; font-size: 13.5px; }
+
+.v1 .line .slot-label { margin-top: 0; }
+
+/* transition */
+.v1 .transition {
+  background: #221c12;
+  border-color: #221c12;
+  padding: 64px 40px;
+}
+
+.v1 .transition .kicker { color: #b3a285; }
+
+.v1 .transition h3 {
+  color: #f6efe0;
+  font-size: 34px;
+}
+
+.v1 .transition .sub { margin: 10px 0 0; color: #a4977e; }
+
+/* ============================================================
+   VARIANT 2 — WORKBOOK · swiss / modern textbook
+   ============================================================ */
+.v2 { background: #eef0f3; font-family: "IBM Plex Sans KR", -apple-system, sans-serif; }
+
+.v2 .v-head { color: #14161a; }
+.v2 .v-tag { border: 1px solid rgba(20,22,26,.28); color: #4c525c; }
+.v2 .v-head h2 { color: #14161a; letter-spacing: -.02em; }
+.v2 .v-head p { color: #5b626d; }
+
+.v2 .page {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e0e3e9;
+  border-radius: 14px;
+  padding: 44px 40px 48px;
+}
+
+.v2 .page::after {
+  content: attr(data-num);
+  position: absolute;
+  top: 30px;
+  right: 36px;
+  color: #e8ebf0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.v2 .kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #525a66;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.v2 .kicker::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #2949e6;
+}
+
+.v2 h3 {
+  margin: 0 0 8px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -.015em;
+  line-height: 1.2;
+  color: #14161a;
+}
+
+.v2 h3::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 4px;
+  margin-top: 14px;
+  background: #2949e6;
+  border-radius: 2px;
+}
+
+.v2 .sub {
+  margin: 14px 0 28px;
+  color: #5b626d;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* hero */
+.v2 .hero .eyebrow {
+  margin: 0 0 22px;
+  color: #525a66;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.v2 .hero h3 { font-size: 38px; }
+
+.v2 .hero .sub { max-width: 440px; margin-bottom: 36px; }
+
+.v2 .spec { border: 1px solid #e0e3e9; border-radius: 10px; overflow: hidden; }
+
+.v2 .spec .row {
+  display: grid;
+  grid-template-columns: 110px minmax(0,1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+}
+
+.v2 .spec .row + .row { border-top: 1px solid #e8ebf0; }
+
+.v2 .spec .tag {
+  color: #2949e6;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
+.v2 .spec .kr { font-size: 21px; font-weight: 700; color: #14161a; }
+.v2 .spec .en { margin-top: 2px; color: #707782; font-size: 13.5px; }
+
+/* pattern cards */
+.v2 .pattern {
+  margin-top: 14px;
+  padding: 22px;
+  background: #eef1fe;
+  border: 1px solid #d4dcfb;
+  border-radius: 12px;
+}
+
+.v2 .pattern > .kr { font-size: 26px; font-weight: 700; color: #14161a; }
+.v2 .pattern > .en { margin-top: 4px; color: #4c5564; font-size: 14px; }
+
+.v2 .example {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid #dde3f5;
+  border-radius: 9px;
+}
+
+.v2 .example .kr { font-size: 20px; font-weight: 700; color: #1c2330; }
+.v2 .example .en { margin-top: 2px; color: #707782; font-size: 13px; }
+
+/* tasks */
+.v2 .task { padding: 22px 0; border-top: 1px solid #e8ebf0; }
+.v2 .task:first-of-type { border-top: 0; padding-top: 0; }
+.v2 .task:last-child { padding-bottom: 0; }
+
+.v2 .task .prompt { font-size: 22px; font-weight: 700; color: #14161a; }
+
+.v2 .answer {
+  margin-top: 12px;
+  border: 1.5px solid #c9cfdb;
+  border-radius: 9px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.v2 .answer .slot-label {
+  display: block;
+  padding: 8px 12px;
+  background: #f4f6f9;
+  border-bottom: 1px solid #e0e3e9;
+  color: #4c5564;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.v2 .answer .space { display: block; min-height: 52px; background: #fff; }
+
+.v2 .answer .fill-body {
+  display: block;
+  padding: 14px 12px 16px;
+  color: #14161a;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.v2 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+
+.v2 .chip {
+  padding: 4px 10px;
+  border: 1px solid #d4d9e3;
+  border-radius: 6px;
+  background: #f4f6f9;
+  color: #4c5564;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* dialogue */
+.v2 .line {
+  display: grid;
+  grid-template-columns: 52px minmax(0,1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.v2 .line + .line { margin-top: 12px; }
+
+.v2 .line .who {
+  padding-top: 12px;
+  color: #707782;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.v2 .bubble {
+  padding: 14px 16px;
+  border: 1px solid #e0e3e9;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.v2 .line.you .bubble { background: #eef1fe; border-color: #d4dcfb; }
+
+.v2 .bubble .kr { font-size: 20px; font-weight: 700; color: #14161a; }
+.v2 .bubble .en { margin-top: 3px; color: #707782; font-size: 13px; }
+
+.v2 .bubble .answer { margin-top: 0; }
+.v2 .bubble .chips { margin-top: 10px; }
+
+/* transition */
+.v2 .transition {
+  background: #2342d6;
+  border-color: #2342d6;
+  padding: 62px 40px;
+}
+
+.v2 .transition::after { color: rgba(255,255,255,.18); }
+
+.v2 .transition .kicker { color: rgba(255,255,255,.75); }
+.v2 .transition .kicker::before { background: #fff; }
+
+.v2 .transition h3 { color: #fff; font-size: 32px; }
+.v2 .transition h3::after { background: #fff; }
+
+.v2 .transition .sub { margin: 14px 0 0; color: rgba(255,255,255,.78); }
+
+/* ============================================================
+   VARIANT 3 — JUA POP · playful sticker energy
+   ============================================================ */
+.v3 { background: #fff3dd; }
+
+.v3 .v-head { color: #2d2a26; }
+.v3 .v-tag { border: 2px solid #2d2a26; color: #2d2a26; font-weight: 800; }
+.v3 .v-head h2 { color: #2d2a26; font-family: "Jua", "Nunito", sans-serif; font-weight: 400; }
+.v3 .v-head p { color: #6d6557; font-family: "Nunito", sans-serif; font-weight: 700; }
+
+.v3 .page {
+  background: #fff;
+  border: 2px solid #2d2a26;
+  border-radius: 26px;
+  padding: 42px 38px 46px;
+  box-shadow: 5px 6px 0 #2d2a26;
+  font-family: "Nunito", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.v3 .kicker {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 2px solid #2d2a26;
+  border-radius: 999px;
+  background: #ffd23f;
+  color: #2d2a26;
+  font-size: 12.5px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.v3 .kicker.write { background: #9ee7dd; }
+.v3 .kicker.talk { background: #ffc4a3; }
+
+.v3 h3 {
+  margin: 0 0 8px;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 1.15;
+  color: #2d2a26;
+}
+
+.v3 .sub {
+  margin: 0 0 28px;
+  color: #6d6557;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* hero */
+.v3 .hero {
+  background: #ff8a3d;
+  padding-top: 50px;
+}
+
+.v3 .hero .eyebrow {
+  display: inline-block;
+  margin: 0 0 24px;
+  padding: 6px 14px;
+  border: 2px solid #2d2a26;
+  border-radius: 999px;
+  background: #fff;
+  color: #2d2a26;
+  font-size: 12.5px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.v3 .hero h3 {
+  font-size: 42px;
+  color: #fff;
+  text-shadow: 2.5px 2.5px 0 #2d2a26;
+}
+
+.v3 .hero .sub {
+  color: #2e1804;
+  max-width: 430px;
+  margin-bottom: 34px;
+}
+
+.v3 .sticker {
+  background: #fff;
+  border: 2px solid #2d2a26;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 4px 5px 0 #2d2a26;
+  transform: rotate(-1.2deg);
+}
+
+.v3 .sticker .spec-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #b06414;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.v3 .sticker .row { display: flex; align-items: baseline; gap: 12px; padding: 5px 0; }
+
+.v3 .sticker .kr {
+  font-family: "Jua", sans-serif;
+  font-size: 23px;
+  color: #2d2a26;
+}
+
+.v3 .sticker .en { color: #8a8071; font-size: 13.5px; font-weight: 800; }
+
+/* pattern cards */
+.v3 .pattern {
+  margin-top: 16px;
+  padding: 20px 22px;
+  border: 2px solid #2d2a26;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 6px 7px 0 #fcc419;
+}
+
+.v3 .pattern > .kr { font-family: "Jua", sans-serif; font-size: 27px; color: #2d2a26; }
+.v3 .pattern > .en { margin-top: 3px; color: #6d6557; font-size: 14px; font-weight: 800; }
+
+.v3 .example {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: #e9faf4;
+  border: 2px dashed #11b5a5;
+  border-radius: 13px;
+}
+
+.v3 .example .kr { font-family: "Jua", sans-serif; font-size: 21px; color: #1f3a35; }
+.v3 .example .en { margin-top: 2px; color: #4f8c82; font-size: 13px; font-weight: 800; }
+
+/* tasks */
+.v3 .task { padding: 16px 0; }
+.v3 .task:first-of-type { padding-top: 0; }
+.v3 .task:last-child { padding-bottom: 0; }
+
+.v3 .task .prompt { font-family: "Jua", sans-serif; font-size: 24px; color: #2d2a26; display: block; }
+
+.v3 .answer {
+  margin-top: 12px;
+  border: 2px dashed #b9ac92;
+  border-radius: 14px;
+  background: #fffdf7;
+  overflow: hidden;
+}
+
+.v3 .answer .slot-label {
+  display: block;
+  padding: 8px 13px;
+  background: #fff7e6;
+  border-bottom: 2px dashed #e3d9c4;
+  color: #6d6557;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.v3 .answer .space { display: block; min-height: 52px; }
+
+.v3 .answer .fill-body {
+  display: block;
+  padding: 13px 14px 15px;
+  font-family: "Jua", sans-serif;
+  font-size: 22px;
+  color: #2d2a26;
+}
+
+.v3 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+
+.v3 .chip {
+  padding: 4px 11px;
+  border: 2px solid #2d2a26;
+  border-radius: 999px;
+  background: #fff;
+  color: #2d2a26;
+  font-size: 12.5px;
+  font-weight: 900;
+}
+
+/* dialogue */
+.v3 .line {
+  display: grid;
+  grid-template-columns: 54px minmax(0,1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.v3 .line + .line { margin-top: 14px; }
+
+.v3 .line .who {
+  padding-top: 12px;
+  color: #8a8071;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.v3 .bubble {
+  padding: 14px 17px;
+  border: 2px solid #2d2a26;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 3px 4px 0 rgba(45,42,38,.14);
+}
+
+.v3 .line.you .bubble { background: #e9faf4; box-shadow: 3px 4px 0 #11b5a5; }
+
+.v3 .bubble .kr { font-family: "Jua", sans-serif; font-size: 21px; color: #2d2a26; }
+.v3 .bubble .en { margin-top: 3px; color: #8a8071; font-size: 13px; font-weight: 800; }
+
+.v3 .bubble .answer .space { background: #fff; }
+.v3 .bubble .chips { margin-top: 10px; }
+
+/* transition */
+.v3 .transition {
+  background: #11b5a5;
+  padding: 58px 38px;
+  box-shadow: 5px 6px 0 #0b7d72;
+}
+
+.v3 .transition .kicker { background: #fff; }
+
+.v3 .transition h3 {
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 2.5px 2.5px 0 #0b7d72;
+}
+
+.v3 .transition .sub { margin: 8px 0 0; color: #d8fff9; }
+
+/* ============================================================
+   VARIANT 4 — PODO APP · unified with the live app
+   tokens: gray-900 #1C1C1C · gray-500 #757575 · gray-200 #E8E8E8
+           gray-100 #F5F5F5 · primary #B5FD4C · green-500 #6ABE36
+           green-100 #F2FCEC · blue-100 #F2F5FF · blue-500 #6184FF
+   ============================================================ */
+.v4 { background: #efefec; font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+
+.v4 .v-head { color: #1C1C1C; }
+.v4 .v-tag { border: 1px solid rgba(28,28,28,.3); color: #575753; }
+.v4 .v-head h2 { color: #1C1C1C; letter-spacing: -.015em; }
+.v4 .v-head p { color: #6b6b66; }
+
+.v4 .page {
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  padding: 36px 34px 44px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.04);
+}
+
+.v4 .progress { display: flex; gap: 2px; height: 4px; margin: 0 0 30px; }
+.v4 .progress i { flex: 1; background: #E8E8E8; }
+.v4 .progress i:first-child { border-radius: 8px 0 0 8px; }
+.v4 .progress i:last-child { border-radius: 0 8px 8px 0; }
+.v4 .progress i.done { background: #1C1C1C; }
+
+.v4 .kicker {
+  display: block;
+  margin-bottom: 4px;
+  color: #6ABE36;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.v4 h3 {
+  margin: 0 0 8px;
+  color: #1C1C1C;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.25;
+}
+
+.v4 .sub { margin: 0 0 24px; color: #1C1C1C; font-size: 15.5px; font-weight: 500; }
+
+/* hero */
+.v4 .hero h3 { font-size: 30px; }
+.v4 .hero .sub { color: #757575; font-weight: 400; max-width: 440px; }
+
+.v4 .spec {
+  padding: 16px 20px;
+  background: #F2F5FF;
+  border: 1px solid #DFE6FF;
+  border-radius: 12px;
+}
+
+.v4 .spec .row { display: flex; align-items: baseline; gap: 16px; padding: 6px 0; }
+.v4 .spec .tag { min-width: 52px; color: #757575; font-size: 14px; font-weight: 500; }
+.v4 .spec .kr { font-size: 19px; font-weight: 600; color: #1C1C1C; }
+.v4 .spec .en { margin-top: 2px; color: #6184FF; font-size: 13px; font-weight: 500; }
+
+/* learn blocks */
+.v4 .block {
+  padding: 20px;
+  background: #F5F5F5;
+  border: 1px solid #E8E8E8;
+  border-radius: 12px;
+}
+
+.v4 .block + .block { margin-top: 12px; }
+.v4 .block > .kr { font-size: 21px; font-weight: 600; color: #1C1C1C; }
+.v4 .block > .en { margin-top: 5px; color: #757575; font-size: 14px; }
+
+.v4 .example {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+}
+
+.v4 .example .kr { font-size: 18px; font-weight: 600; color: #1C1C1C; }
+.v4 .example .en { margin-top: 2px; color: #757575; font-size: 13px; }
+
+/* fill cards — the app's exercise block: sentence with blank, translation below */
+.v4 .fillcard {
+  padding: 20px;
+  background: #F5F5F5;
+  border: 1px solid #E8E8E8;
+  border-radius: 12px;
+}
+
+.v4 .fillcard + .fillcard { margin-top: 12px; }
+.v4 .fillcard .kr { font-size: 20px; font-weight: 600; color: #1C1C1C; }
+.v4 .fillcard .en { margin-top: 8px; color: #757575; font-size: 14px; }
+
+/* dialogue */
+.v4 .line { display: grid; grid-template-columns: 52px minmax(0,1fr); gap: 12px; align-items: start; }
+.v4 .line + .line { margin-top: 12px; }
+
+.v4 .line .who {
+  padding-top: 12px;
+  color: #A5A5A5;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.v4 .bubble {
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 12px;
+}
+
+.v4 .line.you .bubble { background: #F2FCEC; border-color: #6ABE36; }
+
+.v4 .bubble .kr { font-size: 18px; font-weight: 600; color: #1C1C1C; }
+.v4 .bubble .en { margin-top: 3px; color: #757575; font-size: 13px; }
+
+.v4 .write {
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.v4 .write .slot-label {
+  display: block;
+  padding: 7px 12px;
+  background: #F5F5F5;
+  border-bottom: 1px solid #E8E8E8;
+  color: #757575;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.v4 .write .space { display: block; min-height: 46px; }
+
+.v4 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+
+.v4 .chip {
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  color: #1C1C1C;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/* transition: the brand CTA blown up to a page */
+.v4 .transition {
+  background: #B5FD4C;
+  border: 1.5px solid #1C1C1C;
+  border-radius: 20px;
+  box-shadow: 0 4px 0 #1C1C1C;
+  padding: 54px 34px;
+}
+
+.v4 .transition .kicker {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  background: #fff;
+  border: 1.5px solid #1C1C1C;
+  border-radius: 999px;
+  color: #1C1C1C;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.v4 .transition h3 { font-size: 30px; font-weight: 800; color: #1C1C1C; }
+.v4 .transition .sub { margin: 8px 0 0; color: rgba(28,28,28,.72); font-weight: 600; }
+
+/* ============================================================
+   VARIANT 5 — PODO BOLD · brand tokens, graphic weight
+   ============================================================ */
+.v5 { background: #f2f2ed; font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+
+.v5 .v-head { color: #1C1C1C; }
+.v5 .v-tag { border: 1.5px solid #1C1C1C; color: #1C1C1C; font-weight: 800; }
+.v5 .v-head h2 { color: #1C1C1C; font-weight: 800; letter-spacing: -.015em; }
+.v5 .v-head p { color: #6b6b66; }
+
+.v5 .page {
+  background: #fff;
+  border: 1.5px solid #1C1C1C;
+  border-radius: 16px;
+  box-shadow: 0 5px 0 #1C1C1C;
+  padding: 40px 36px 46px;
+}
+
+.v5 .kicker {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 13px;
+  background: #B5FD4C;
+  border: 1.5px solid #1C1C1C;
+  border-radius: 999px;
+  color: #1C1C1C;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.v5 h3 {
+  margin: 0;
+  color: #1C1C1C;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  line-height: 1.2;
+}
+
+.v5 .sub {
+  width: fit-content;
+  max-width: 100%;
+  margin: 12px 0 26px;
+  padding: 11px 14px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  color: #45453f;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* hero */
+.v5 .hero { background: #1C1C1C; border-color: #1C1C1C; box-shadow: 0 5px 0 #B5FD4C; }
+.v5 .hero h3 { color: #fff; font-size: 34px; }
+
+.v5 .hero .sub {
+  background: none;
+  padding: 0;
+  margin: 12px 0 32px;
+  color: rgba(255,255,255,.72);
+  font-weight: 500;
+  max-width: 430px;
+}
+
+.v5 .heropatterns {
+  padding: 18px 20px;
+  background: #B5FD4C;
+  border-radius: 14px;
+}
+
+.v5 .heropatterns .spec-label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(28,28,28,.6);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.v5 .heropatterns .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  padding: 5px 0;
+}
+
+.v5 .heropatterns .kr { font-size: 21px; font-weight: 800; color: #1C1C1C; }
+.v5 .heropatterns .en { color: rgba(28,28,28,.6); font-size: 13px; font-weight: 600; }
+
+/* learn */
+.v5 .pattern {
+  padding: 20px 22px;
+  border: 1.5px solid #1C1C1C;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.v5 .pattern + .pattern { margin-top: 14px; }
+.v5 .pattern > .kr { font-size: 26px; font-weight: 800; color: #1C1C1C; }
+.v5 .pattern > .en { margin-top: 4px; color: #757575; font-size: 14px; font-weight: 500; }
+
+.v5 .example { margin-top: 14px; padding: 12px 0 0; border-top: 1px solid #E8E8E8; }
+.v5 .example .kr { font-size: 20px; font-weight: 700; color: #1C1C1C; }
+.v5 .example .en { margin-top: 2px; color: #757575; font-size: 13px; }
+
+/* write */
+.v5 .task { padding: 16px 0; }
+.v5 .task:first-of-type { padding-top: 0; }
+.v5 .task:last-child { padding-bottom: 0; }
+
+.v5 .answer {
+  border: 1.5px solid #1C1C1C;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.v5 .answer .slot-label {
+  display: block;
+  padding: 8px 13px;
+  background: #F5F5F5;
+  border-bottom: 1.5px solid #1C1C1C;
+  color: #575753;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.v5 .answer .space { display: block; min-height: 50px; }
+
+.v5 .answer .fill-body {
+  display: block;
+  padding: 14px 13px 16px;
+  color: #1C1C1C;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.v5 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+
+.v5 .chip {
+  padding: 4px 11px;
+  background: #fff;
+  border: 1.5px solid #1C1C1C;
+  border-radius: 999px;
+  color: #1C1C1C;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+/* dialogue */
+.v5 .line { display: grid; grid-template-columns: 52px minmax(0,1fr); gap: 12px; align-items: start; }
+.v5 .line + .line { margin-top: 14px; }
+
+.v5 .line .who {
+  padding-top: 12px;
+  color: #A5A5A5;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.v5 .bubble {
+  padding: 14px 16px;
+  background: #fff;
+  border: 1.5px solid #1C1C1C;
+  border-radius: 13px;
+}
+
+.v5 .line.you .bubble { background: #F2FCEC; box-shadow: 3px 4px 0 #B5FD4C; }
+
+.v5 .bubble .kr { font-size: 19px; font-weight: 700; color: #1C1C1C; }
+.v5 .bubble .en { margin-top: 3px; color: #757575; font-size: 13px; }
+
+.v5 .bubble .answer { background: #fff; }
+
+/* transition */
+.v5 .transition {
+  background: #1C1C1C;
+  border-color: #1C1C1C;
+  box-shadow: 0 5px 0 #B5FD4C;
+  padding: 56px 36px;
+}
+
+.v5 .transition h3 { color: #fff; font-size: 31px; }
+
+.v5 .transition .sub {
+  background: none;
+  padding: 0;
+  margin: 10px 0 0;
+  color: rgba(255,255,255,.72);
+}
+
+/* footer note */
+.endnote {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 28px 80px;
+  color: rgba(255,255,255,.65);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.endnote strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <strong>Lesson Design Variants · 을/를 좋아해요</strong>
+  <nav>
+    <a href="#current">00 Sage (archived)</a>
+    <a href="#hanji">01 Hanji</a>
+    <a href="#workbook">02 Workbook</a>
+    <a href="#pop">03 Jua Pop</a>
+    <a href="#podo-app">04 Podo App</a>
+    <a href="#podo-bold">05 Podo Bold</a>
+  </nav>
+</div>
+
+<!-- ============================================================
+     VARIANT 0 · SAGE (archived original)
+     ============================================================ -->
+<section class="variant v0" id="current">
+  <header class="v-head">
+    <span class="v-tag">Variant 00 · Archived</span>
+    <h2>Sage — the original sample-lesson design</h2>
+    <p>Snapshot of the design the sample lesson shipped with before adopting Podo Bold: calm green-gray palette, soft tinted kickers and instruction boxes, teal-edged pattern cards, and the dark forest hero and chapter pages. Kept here for reference and easy rollback.</p>
+  </header>
+
+  <div class="pages">
+
+    <article class="page hero">
+      <span class="eyebrow">Beginner Pattern Lesson</span>
+      <h3>Say what you like</h3>
+      <p class="sub">Two patterns today: say what you like, and ask what someone else likes.</p>
+      <div class="spec">
+        <span class="spec-label">Today's patterns</span>
+        <div class="row"><span class="kr">~을/를 좋아해요</span><span class="en">I like...</span></div>
+        <div class="row"><span class="kr">~을/를 좋아해요?</span><span class="en">Do you like...?</span></div>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Learn</span>
+      <h3>Pattern 1</h3>
+      <p class="sub">Read each pattern and its example with me.</p>
+      <div class="pattern">
+        <span class="kr">~을/를 좋아해요.</span>
+        <span class="en">I like...</span>
+        <div class="example">
+          <span class="kr">커피를 좋아해요.</span>
+          <span class="en">I like coffee.</span>
+        </div>
+      </div>
+      <div class="pattern">
+        <span class="kr">~을/를 안 좋아해요.</span>
+        <span class="en">I don't like... — 안 goes right before 좋아해요.</span>
+        <div class="example">
+          <span class="kr">커피를 안 좋아해요.</span>
+          <span class="en">I don't like coffee.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page transition">
+      <span class="kicker">Part 1</span>
+      <h3>~을/를 좋아해요</h3>
+      <p class="sub">I like... / I don't like...</p>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Write</span>
+      <h3>Choose 을 or 를</h3>
+      <p class="sub">Write the correct particle in each blank.</p>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I like books.</span>
+          <span class="fill-body kr">책 ____ 좋아해요.</span>
+        </div>
+      </div>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I don't like coffee.</span>
+          <span class="fill-body kr">커피 ____ 안 좋아해요.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Talk</span>
+      <h3>Short Dialogues</h3>
+      <p class="sub">Say your missing lines out loud — no writing.</p>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">뭘 좋아해요?</span>
+          <span class="en">What do you like?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">I like music.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">music:음악</span></span>
+        </div>
+      </div>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">영화를 좋아해요?</span>
+          <span class="en">Do you like movies?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">No, I don't like movies.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">movie:영화</span></span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     VARIANT 1 · HANJI
+     ============================================================ -->
+<section class="variant v1" id="hanji">
+  <header class="v-head">
+    <span class="v-tag">Variant 01</span>
+    <h2>Hanji — warm editorial</h2>
+    <p>Korean paper, ink, and a single persimmon seal. Serif Korean type gives the language itself center stage; answers are written on worksheet rules, and dialogues read like a script. Calm and premium — best for adult learners and a "slow study" brand.</p>
+  </header>
+
+  <div class="pages">
+
+    <article class="page hero">
+      <span class="seal">3과</span>
+      <p class="eyebrow">Beginner Pattern Lesson</p>
+      <h3>Say what you like</h3>
+      <p class="sub">Two patterns today: say what you like, and ask what someone else likes.</p>
+      <div class="spec">
+        <span class="spec-label">오늘의 패턴 · Today's patterns</span>
+        <div class="row"><span class="kr">~을/를 좋아해요</span><span class="en">I like...</span></div>
+        <div class="row"><span class="kr">~을/를 좋아해요?</span><span class="en">Do you like...?</span></div>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Learn</span>
+      <h3>Pattern 1</h3>
+      <p class="sub">Read each pattern and its example with me.</p>
+      <div class="pattern">
+        <span class="kr">~을/를 좋아해요.</span>
+        <span class="en">I like...</span>
+        <div class="example">
+          <span class="kr">커피를 좋아해요.</span>
+          <span class="en">I like coffee.</span>
+        </div>
+      </div>
+      <div class="pattern">
+        <span class="kr">~을/를 안 좋아해요.</span>
+        <span class="en">I don't like... — 안 goes right before 좋아해요.</span>
+        <div class="example">
+          <span class="kr">커피를 안 좋아해요.</span>
+          <span class="en">I don't like coffee.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page transition">
+      <span class="kicker">Part 1</span>
+      <h3>~을/를 좋아해요</h3>
+      <p class="sub">I like... / I don't like...</p>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Write</span>
+      <h3>Choose 을 or 를</h3>
+      <p class="sub">Write the correct particle in each blank.</p>
+      <div class="task">
+        <span class="prompt kr">책 ____ 좋아해요.</span>
+        <span class="slot-label">I like books.</span>
+      </div>
+      <div class="task">
+        <span class="prompt kr">커피 ____ 안 좋아해요.</span>
+        <span class="slot-label">I don't like coffee.</span>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Talk</span>
+      <h3>Short Dialogues</h3>
+      <p class="sub">Say your missing lines out loud — no writing.</p>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="said">
+          <span class="kr">뭘 좋아해요?</span>
+          <span class="en">What do you like?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="said">
+          <span class="slot-label">I like music.</span>
+          <span class="rule"></span>
+          <span class="chips"><span class="chip">music · 음악</span></span>
+        </div>
+      </div>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="said">
+          <span class="kr">영화를 좋아해요?</span>
+          <span class="en">Do you like movies?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="said">
+          <span class="slot-label">No, I don't like movies.</span>
+          <span class="rule"></span>
+          <span class="chips"><span class="chip">movie · 영화</span></span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     VARIANT 2 · WORKBOOK
+     ============================================================ -->
+<section class="variant v2" id="workbook">
+  <header class="v-head">
+    <span class="v-tag">Variant 02</span>
+    <h2>Workbook — modern textbook</h2>
+    <p>Swiss discipline: one cobalt accent, mono labels, ghost page numbers, spec-sheet hero. Everything sits on a strict grid, so fifty lessons later every page still feels like the same product. Best if the curriculum should read as a serious, systematic course.</p>
+  </header>
+
+  <div class="pages">
+
+    <article class="page hero" data-num="01">
+      <p class="eyebrow">Lesson 03 — Beginner Patterns</p>
+      <h3>Say what you like</h3>
+      <p class="sub">Two patterns today: say what you like, and ask what someone else likes.</p>
+      <div class="spec">
+        <div class="row">
+          <span class="tag">PATTERN A</span>
+          <div><span class="kr">~을/를 좋아해요</span><span class="en">I like...</span></div>
+        </div>
+        <div class="row">
+          <span class="tag">PATTERN B</span>
+          <div><span class="kr">~을/를 좋아해요?</span><span class="en">Do you like...?</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="page" data-num="02">
+      <span class="kicker">Learn</span>
+      <h3>Pattern 1</h3>
+      <p class="sub">Read each pattern and its example with me.</p>
+      <div class="pattern">
+        <span class="kr">~을/를 좋아해요.</span>
+        <span class="en">I like...</span>
+        <div class="example">
+          <span class="kr">커피를 좋아해요.</span>
+          <span class="en">I like coffee.</span>
+        </div>
+      </div>
+      <div class="pattern">
+        <span class="kr">~을/를 안 좋아해요.</span>
+        <span class="en">I don't like... — 안 goes right before 좋아해요.</span>
+        <div class="example">
+          <span class="kr">커피를 안 좋아해요.</span>
+          <span class="en">I don't like coffee.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page transition" data-num="03">
+      <span class="kicker">Part 1</span>
+      <h3>~을/를 좋아해요</h3>
+      <p class="sub">I like... / I don't like...</p>
+    </article>
+
+    <article class="page" data-num="04">
+      <span class="kicker">Write</span>
+      <h3>Choose 을 or 를</h3>
+      <p class="sub">Write the correct particle in each blank.</p>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I like books.</span>
+          <span class="fill-body kr">책 ____ 좋아해요.</span>
+        </div>
+      </div>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I don't like coffee.</span>
+          <span class="fill-body kr">커피 ____ 안 좋아해요.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page" data-num="05">
+      <span class="kicker">Talk</span>
+      <h3>Short Dialogues</h3>
+      <p class="sub">Say your missing lines out loud — no writing.</p>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">뭘 좋아해요?</span>
+          <span class="en">What do you like?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">I like music.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">music · 음악</span></span>
+        </div>
+      </div>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">영화를 좋아해요?</span>
+          <span class="en">Do you like movies?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">No, I don't like movies.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">movie · 영화</span></span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     VARIANT 3 · JUA POP
+     ============================================================ -->
+<section class="variant v3" id="pop">
+  <header class="v-head">
+    <span class="v-tag">Variant 03</span>
+    <h2>Jua Pop — playful stickers</h2>
+    <p>Rounded Jua type, chunky outlines, hard candy shadows. The lesson feels like a sticker book — high energy and instantly approachable, with color-coded activity pills doing the wayfinding. Best for younger learners or a brand that wants Duolingo-level warmth without the mascot.</p>
+  </header>
+
+  <div class="pages">
+
+    <article class="page hero">
+      <span class="eyebrow">Beginner Lesson 3</span>
+      <h3>Say what you like!</h3>
+      <p class="sub">Two patterns today: say what you like, and ask what someone else likes.</p>
+      <div class="sticker">
+        <span class="spec-label">Today's patterns</span>
+        <div class="row"><span class="kr">~을/를 좋아해요</span><span class="en">I like...</span></div>
+        <div class="row"><span class="kr">~을/를 좋아해요?</span><span class="en">Do you like...?</span></div>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Learn</span>
+      <h3>Pattern 1</h3>
+      <p class="sub">Read each pattern and its example with me.</p>
+      <div class="pattern">
+        <span class="kr">~을/를 좋아해요.</span>
+        <span class="en">I like...</span>
+        <div class="example">
+          <span class="kr">커피를 좋아해요.</span>
+          <span class="en">I like coffee.</span>
+        </div>
+      </div>
+      <div class="pattern">
+        <span class="kr">~을/를 안 좋아해요.</span>
+        <span class="en">I don't like... — 안 goes right before 좋아해요.</span>
+        <div class="example">
+          <span class="kr">커피를 안 좋아해요.</span>
+          <span class="en">I don't like coffee.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page transition">
+      <span class="kicker">Part 1</span>
+      <h3>~을/를 좋아해요</h3>
+      <p class="sub">I like... / I don't like...</p>
+    </article>
+
+    <article class="page">
+      <span class="kicker write">Write</span>
+      <h3>Choose 을 or 를</h3>
+      <p class="sub">Write the correct particle in each blank.</p>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I like books.</span>
+          <span class="fill-body kr">책 ____ 좋아해요.</span>
+        </div>
+      </div>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I don't like coffee.</span>
+          <span class="fill-body kr">커피 ____ 안 좋아해요.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker talk">Talk</span>
+      <h3>Short Dialogues</h3>
+      <p class="sub">Say your missing lines out loud — no writing.</p>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">뭘 좋아해요?</span>
+          <span class="en">What do you like?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">I like music.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">music · 음악</span></span>
+        </div>
+      </div>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">영화를 좋아해요?</span>
+          <span class="en">Do you like movies?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">No, I don't like movies.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">movie · 영화</span></span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     VARIANT 4 · PODO APP
+     ============================================================ -->
+<section class="variant v4" id="podo-app">
+  <header class="v-head">
+    <span class="v-tag">Variant 04</span>
+    <h2>Podo App — unified with the product</h2>
+    <p>The lesson speaks the app's exact design language: Pretendard, gray-100 exercise blocks, the segmented lesson progress bar, green unit labels, the blue info panel, and the lime sticker-button as chapter pages. A student moving between app and lesson never changes worlds.</p>
+  </header>
+
+  <div class="pages">
+
+    <article class="page hero">
+      <div class="progress"><i class="done"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="kicker">Beginner · Lesson 3</span>
+      <h3>Say what you like</h3>
+      <p class="sub">Two patterns today: say what you like, and ask what someone else likes.</p>
+      <div class="spec">
+        <div class="row"><span class="tag">패턴 1</span><div><span class="kr">~을/를 좋아해요</span><span class="en">I like...</span></div></div>
+        <div class="row"><span class="tag">패턴 2</span><div><span class="kr">~을/를 좋아해요?</span><span class="en">Do you like...?</span></div></div>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="progress"><i class="done"></i><i class="done"></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="kicker">Learn</span>
+      <h3>Pattern 1</h3>
+      <p class="sub">Read each pattern and its example with me.</p>
+      <div class="block">
+        <span class="kr">~을/를 좋아해요.</span>
+        <span class="en">I like...</span>
+        <div class="example">
+          <span class="kr">커피를 좋아해요.</span>
+          <span class="en">I like coffee.</span>
+        </div>
+      </div>
+      <div class="block">
+        <span class="kr">~을/를 안 좋아해요.</span>
+        <span class="en">I don't like... — 안 goes right before 좋아해요.</span>
+        <div class="example">
+          <span class="kr">커피를 안 좋아해요.</span>
+          <span class="en">I don't like coffee.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page transition">
+      <span class="kicker">Part 1</span>
+      <h3>~을/를 좋아해요</h3>
+      <p class="sub">I like... / I don't like...</p>
+    </article>
+
+    <article class="page">
+      <div class="progress"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i></i><i></i><i></i></div>
+      <span class="kicker">Write</span>
+      <h3>Choose 을 or 를</h3>
+      <p class="sub">Write the correct particle in each blank.</p>
+      <div class="fillcard">
+        <span class="kr">책 ____ 좋아해요.</span>
+        <span class="en">I like books.</span>
+      </div>
+      <div class="fillcard">
+        <span class="kr">커피 ____ 안 좋아해요.</span>
+        <span class="en">I don't like coffee.</span>
+      </div>
+    </article>
+
+    <article class="page">
+      <div class="progress"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i></i><i></i></div>
+      <span class="kicker">Talk</span>
+      <h3>Short Dialogues</h3>
+      <p class="sub">Say your missing lines out loud — no writing.</p>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">뭘 좋아해요?</span>
+          <span class="en">What do you like?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="write">
+            <span class="slot-label">I like music.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">music · 음악</span></span>
+        </div>
+      </div>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">영화를 좋아해요?</span>
+          <span class="en">Do you like movies?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="write">
+            <span class="slot-label">No, I don't like movies.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">movie · 영화</span></span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     VARIANT 5 · PODO BOLD
+     ============================================================ -->
+<section class="variant v5" id="podo-bold">
+  <header class="v-head">
+    <span class="v-tag">Variant 05</span>
+    <h2>Podo Bold — brand tokens, graphic weight</h2>
+    <p>Same lime-and-ink design tokens as the app, pushed to print weight: every page is a chunky outlined card sitting on a hard shadow (the app's button construction, scaled up), lime kicker pills, and a dark hero and chapter pages shadowed in lime. Louder than Variant 04, still unmistakably the same brand.</p>
+  </header>
+
+  <div class="pages">
+
+    <article class="page hero">
+      <span class="kicker">Beginner · Lesson 3</span>
+      <h3>Say what you like</h3>
+      <p class="sub">Two patterns today: say what you like, and ask what someone else likes.</p>
+      <div class="heropatterns">
+        <span class="spec-label">Today's patterns</span>
+        <div class="row"><span class="kr">~을/를 좋아해요</span><span class="en">I like...</span></div>
+        <div class="row"><span class="kr">~을/를 좋아해요?</span><span class="en">Do you like...?</span></div>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Learn</span>
+      <h3>Pattern 1</h3>
+      <p class="sub">Read each pattern and its example with me.</p>
+      <div class="pattern">
+        <span class="kr">~을/를 좋아해요.</span>
+        <span class="en">I like...</span>
+        <div class="example">
+          <span class="kr">커피를 좋아해요.</span>
+          <span class="en">I like coffee.</span>
+        </div>
+      </div>
+      <div class="pattern">
+        <span class="kr">~을/를 안 좋아해요.</span>
+        <span class="en">I don't like... — 안 goes right before 좋아해요.</span>
+        <div class="example">
+          <span class="kr">커피를 안 좋아해요.</span>
+          <span class="en">I don't like coffee.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page transition">
+      <span class="kicker">Part 1</span>
+      <h3>~을/를 좋아해요</h3>
+      <p class="sub">I like... / I don't like...</p>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Write</span>
+      <h3>Choose 을 or 를</h3>
+      <p class="sub">Write the correct particle in each blank.</p>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I like books.</span>
+          <span class="fill-body kr">책 ____ 좋아해요.</span>
+        </div>
+      </div>
+      <div class="task">
+        <div class="answer">
+          <span class="slot-label">I don't like coffee.</span>
+          <span class="fill-body kr">커피 ____ 안 좋아해요.</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="page">
+      <span class="kicker">Talk</span>
+      <h3>Short Dialogues</h3>
+      <p class="sub">Say your missing lines out loud — no writing.</p>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">뭘 좋아해요?</span>
+          <span class="en">What do you like?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">I like music.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">music · 음악</span></span>
+        </div>
+      </div>
+      <div class="line">
+        <span class="who">Tutor</span>
+        <div class="bubble">
+          <span class="kr">영화를 좋아해요?</span>
+          <span class="en">Do you like movies?</span>
+        </div>
+      </div>
+      <div class="line you">
+        <span class="who">You</span>
+        <div class="bubble">
+          <div class="answer">
+            <span class="slot-label">No, I don't like movies.</span>
+            <span class="space"></span>
+          </div>
+          <span class="chips"><span class="chip">movie · 영화</span></span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="endnote">
+  <strong>How to choose:</strong> all five variants carry the exact same lesson structure (kicker → title → one-line instruction → single activity), so switching styles is a pure CSS swap. Hanji slows the student down and flatters the language; Workbook scales cleanest across a long curriculum; Jua Pop maximizes approachability for grammar-shy beginners. Variants 04 and 05 borrow the live app's tokens (Pretendard, #1C1C1C ink, #B5FD4C lime, gray-100 blocks): 04 is the faithful "same product" reading, 05 turns those tokens up to print weight. If brand unification matters most, start from 04 and pull 05's transition pages in for chapter breaks.
+</div>
+
+</body>
+</html>

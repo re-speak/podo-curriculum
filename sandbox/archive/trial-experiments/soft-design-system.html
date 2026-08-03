@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>ソフト・デザインシステム 検証 — PODO 韓国語</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <link rel="stylesheet" href="../trial.css">
+  <style>
+    /* ============================================================
+       SOFT SYSTEM · 시안 검증
+       ------------------------------------------------------------
+       왼쪽은 지금 쓰는 "Podo Bold", 오른쪽은 제안된 시안이다. 왼쪽은
+       진짜 스타일시트가 그대로 그린 것이고(이 파일이 두 시트를 링크한다),
+       오른쪽만 .soft 안에서 덮어쓴다 — 그래야 비교가 정직하다.
+
+       제안의 요지는 "같은 팔레트를 더 약하게 쓰기" 다. 토큰은 이미
+       lesson-card.css 머리말에 적혀 있는 것들이고(green-500 #6ABE36,
+       gray-200 #E8E8E8, gray-400/500), 새로 들어온 색은 blue-100 하나뿐이다.
+       바뀌는 것은 색이 아니라 세기다:
+
+         · 1.5px 먹선 테두리        →  1px #E8E8E8 회색 테두리
+         · 라임 채우기(선택/정답)   →  #F2FCEC 틴트 + #6ABE36 테두리
+         · 초록 스크립트 박스       →  #F2F5FF 파란 박스
+         · 대각선 오프셋 그림자     →  수직 0 5px 0 (페이지 카드에만)
+
+       ux-philosophy.md 와 부딪히는 지점이 둘 있다. 실제로 적용하기 전에
+       결정이 필요하다 — 이 파일은 그 결정을 눈으로 보고 하려고 만들었다.
+         (1) "Bold cards, 1.5px ink outline, hard offset shadow; lime accent
+             for you and highlights" — 시안은 이 문장을 거의 통째로 바꾼다.
+         (2) 초록 박스는 "튜터가 소리 내어 읽는 대사" 라는 뜻을 갖고 있다.
+             색이 바뀌면 그 약속을 파란색으로 옮기는 것이지, 없애는 게 아니다.
+       ============================================================ */
+
+    body { background: #f2f2ef; padding-bottom: 80px; }
+
+    .lab {
+      width: min(100%, 1000px);
+      margin: 46px auto 14px;
+      padding: 0 20px;
+      font-family: Pretendard, -apple-system, system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    }
+    .lab h3 { margin: 0; font-size: 15px; font-weight: 900; color: #1c1c1c; }
+    .lab p { margin: 5px 0 0; font-size: 12.5px; line-height: 1.6; font-weight: 600; color: #6b6b66; }
+    .lab .tag {
+      display: inline-block; margin-bottom: 7px; padding: 3px 9px;
+      border-radius: 999px; background: #1c1c1c; color: #b5fd4c;
+      font-size: 10.5px; font-weight: 800; letter-spacing: .04em;
+    }
+    .lab.intro { margin-top: 54px; }
+    .lab.intro h2 { margin: 0 0 10px; font-size: 24px; font-weight: 900; color: #1c1c1c; }
+
+    /* ---------- swatches ---------- */
+    .tokens { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .tok {
+      display: flex; align-items: center; gap: 7px;
+      padding: 5px 11px 5px 5px; border-radius: 999px;
+      background: #fff; border: 1px solid #e8e8e8;
+      font-size: 11px; font-weight: 700; color: #575753;
+    }
+    .tok i { width: 18px; height: 18px; border-radius: 50%; border: 1px solid rgba(0,0,0,.1); }
+    .tok.is-new { border-color: #6abe36; color: #1c1c1c; }
+
+    /* ---------- the A/B rig ---------- */
+    .ab {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 480px));
+      gap: 20px;
+      justify-content: center;
+      width: min(100%, 1000px);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    @media (max-width: 1040px) { .ab { grid-template-columns: minmax(0, 480px); } }
+
+    .col > .cap {
+      display: block; margin: 0 0 8px 2px;
+      font-family: Pretendard, sans-serif;
+      font-size: 11px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
+      color: #a5a5a5;
+    }
+    .col.now > .cap { color: #a5a5a5; }
+    .col.soft > .cap { color: #6abe36; }
+
+    /* the deck's own page shell, shrunk to sit in a column */
+    .stage .phone { min-height: 0; padding-bottom: 0; background: none; width: 100%; }
+    .stage .section,
+    .stage .transition-page { min-height: 0; }
+
+    /* ============================================================
+       THE PROPOSED SYSTEM · everything below is scoped to .soft
+       ============================================================ */
+    .soft {
+      --ink:     #1c1c1c;
+      --g200:    #e8e8e8;
+      --g400:    #a5a5a5;
+      --g500:    #757575;
+      --green500:#6abe36;
+      --green100:#f2fcec;
+      --blue100: #f2f5ff;
+    }
+
+    /* The page card keeps the hard shadow — it is the one piece of the bold
+       system the proposal holds onto — but drops the ink outline and squares
+       the shadow to straight down. */
+    .soft .phone > * {
+      border: 0;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 5px 0 var(--ink);
+      padding: 32px 22px 36px;
+    }
+
+    /* Title: same 22px, but regular-weight Korean against a lighter gloss.
+       (The Figma export says weight 400; at this size that reads as a caption
+       rather than a title, so this follows the rendered mock at 700.) */
+    .soft .section-title { font-size: 22px; font-weight: 700; letter-spacing: -.01em; }
+    .soft .title-ja { font-size: 13.2px; font-weight: 500; color: var(--g400); }
+    .soft .section-kicker { color: var(--green500); font-size: 12px; font-weight: 700; }
+
+    /* The tutor's spoken script. Same job, quieter surface: the meaning that
+       used to be carried by "the lime box" now has to be carried by "the blue
+       box", and the Japanese drops to a half-strength second line. */
+    .soft .section-subtitle {
+      width: auto;
+      margin: 16px 0 26px;
+      padding: 12px 16px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--blue100);
+      box-shadow: none;
+    }
+    .soft .section-subtitle .ko { font-size: 16px; font-weight: 700; line-height: 1.5; color: var(--ink); }
+    .soft .section-subtitle .ja { font-size: 12px; font-weight: 500; line-height: 1.5; color: rgba(28,28,28,.5); }
+
+    /* Option rows — the component the mock actually specifies. */
+    .soft .opt-list { gap: 8px; }
+    .soft .opt-row {
+      padding: 16px;
+      border: 1px solid var(--g200);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .soft .opt-row .opt-main { font-size: 16px; font-weight: 700; line-height: 1.5; }
+    .soft .opt-row .opt-sub  { margin-top: 2px; font-size: 14px; font-weight: 400; line-height: 1.4; color: var(--g500); }
+    .soft .opt-row.on {
+      border: 1.5px solid var(--green500);
+      background: var(--green100);
+      box-shadow: none;
+    }
+    .soft .opt-row.on .opt-sub { color: var(--g500); }
+    .soft .opt-row .lv-badge { background: var(--green100); color: var(--green500); }
+    .soft .opt-row.on .lv-badge { background: var(--green500); color: #fff; }
+
+    /* Everything below here the mock does NOT specify. It is this file's
+       reading of the same rules applied to the components the mock never
+       had to face — which is the actual test. */
+    .soft .tap-tile {
+      border: 1px solid var(--g200);
+      border-radius: 12px;
+    }
+    .soft .tap-tile.right { background: var(--green100); border: 1.5px solid var(--green500); box-shadow: none; }
+    .soft .tap-tile.wrong { background: #fafafa; border: 1px solid var(--g200); box-shadow: none; }
+    .soft .tap-row { background: transparent; }
+
+    .soft .letter-card {
+      border: 1px solid var(--g200);
+      border-radius: 12px;
+    }
+    .soft .known-row { border: 1px solid var(--g200); box-shadow: none; }
+    .soft .hint-chip { border: 1px solid var(--g200); box-shadow: none; font-weight: 600; }
+
+    /* The dark pages need no separate system. The components sitting on them
+       were never dark — they are light cards on a dark ground, and the grey
+       outline is on the card, not on the page. So the script box takes the
+       same blue and the blocks stay white; nothing here has to be inverted,
+       and the page keeps reading as a beat change because the ground is dark,
+       not because the pieces on it are. */
+    .soft .transition-page { background: var(--ink); }
+    /* the colour reset matters: the dark page sets color:#fff, and every child
+       that does not name its own colour would otherwise be white on white */
+    .soft .transition-page .known-row {
+      border: 1px solid var(--g200);
+      background: #fff;
+      box-shadow: none;
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lab intro">
+    <h2>ソフト・デザインシステム — 検証</h2>
+    <p>
+      左が現行の Podo Bold、右が提案。左は本物のスタイルシートがそのまま描いたもので、
+      右だけを <code>.soft</code> で上書きしている。<br>
+      トークンはすでに <code>lesson-card.css</code> の冒頭に書かれているものばかりで、
+      新しいのは <b>blue-100 #F2F5FF</b> ひとつだけ。変わるのは色ではなく<b>強さ</b>。
+    </p>
+    <div class="tokens">
+      <span class="tok"><i style="background:#1c1c1c"></i>ink 1C1C1C</span>
+      <span class="tok"><i style="background:#6abe36"></i>green-500 6ABE36</span>
+      <span class="tok"><i style="background:#f2fcec"></i>green-100 F2FCEC</span>
+      <span class="tok"><i style="background:#e8e8e8"></i>gray-200 E8E8E8</span>
+      <span class="tok"><i style="background:#a5a5a5"></i>gray-400 A5A5A5</span>
+      <span class="tok"><i style="background:#757575"></i>gray-500 757575</span>
+      <span class="tok is-new"><i style="background:#f2f5ff"></i>blue-100 F2F5FF ← 新規</span>
+      <span class="tok"><i style="background:#b5fd4c"></i>lime B5FD4C ← 出番が減る</span>
+    </div>
+  </div>
+
+  <!-- ============ 1 · the page the mock specifies ============ -->
+  <div class="lab">
+    <span class="tag">1 · 시안 그대로</span>
+    <h3>학습 동기 — モックが実際に指定しているページ</h3>
+    <p>選択肢が7つ縦に並ぶ画面。ここは提案がいちばん強い。먹선 7本が並ぶと画面が重く、
+      選択中の1つを라임で塗ると「7個中1個が光る」より「画面が点滅する」に近い。
+      薄いグレー枠＋緑틴트のほうが、選んだ項目が静かに立つ。</p>
+  </div>
+  <div class="ab">
+    <div class="col now">
+      <span class="cap">now · Podo Bold</span>
+      <div class="stage"><div class="phone">
+        <div class="section">
+          <span class="section-kicker">えらぶ</span>
+          <h2 class="section-title">학습 동기 <span class="title-ja">(学ぶきっかけ)</span></h2>
+          <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？いくつ選んでも大丈夫です。</span></p>
+          <div class="opt-list">
+            <button class="opt-row"><span class="emo">🎬</span><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
+            <button class="opt-row on"><span class="emo">✈️</span><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
+            <button class="opt-row"><span class="emo">💬</span><span class="opt-body"><span class="opt-main">韓国人の友だち・恋人</span><span class="opt-sub">한국인 친구·연인</span></span></button>
+            <button class="opt-row"><span class="emo">💼</span><span class="opt-body"><span class="opt-main">仕事・転職</span><span class="opt-sub">일·이직</span></span></button>
+            <button class="opt-row"><span class="emo">📖</span><span class="opt-body"><span class="opt-main">TOPIK・資格</span><span class="opt-sub">TOPIK·자격증</span></span></button>
+            <button class="opt-row"><span class="emo">🌱</span><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
+            <button class="opt-row"><span class="emo">✏️</span><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
+          </div>
+        </div>
+      </div></div>
+    </div>
+    <div class="col soft">
+      <span class="cap">proposed · soft</span>
+      <div class="stage soft"><div class="phone">
+        <div class="section">
+          <span class="section-kicker">えらぶ</span>
+          <h2 class="section-title">학습 동기 <span class="title-ja">(学ぶきっかけ)</span></h2>
+          <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？いくつ選んでも大丈夫です。</span></p>
+          <div class="opt-list">
+            <button class="opt-row"><span class="emo">🎬</span><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
+            <button class="opt-row on"><span class="emo">✈️</span><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
+            <button class="opt-row"><span class="emo">💬</span><span class="opt-body"><span class="opt-main">韓国人の友だち・恋人</span><span class="opt-sub">한국인 친구·연인</span></span></button>
+            <button class="opt-row"><span class="emo">💼</span><span class="opt-body"><span class="opt-main">仕事・転職</span><span class="opt-sub">일·이직</span></span></button>
+            <button class="opt-row"><span class="emo">📖</span><span class="opt-body"><span class="opt-main">TOPIK・資格</span><span class="opt-sub">TOPIK·자격증</span></span></button>
+            <button class="opt-row"><span class="emo">🌱</span><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
+            <button class="opt-row"><span class="emo">✏️</span><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- ============ 2 · a drill page ============ -->
+  <div class="lab">
+    <span class="tag">2 · 시안이 다루지 않은 곳</span>
+    <h3>듣고 고르기 — 正誤フィードバックが乗るページ</h3>
+    <p>ここが最初の分岐点。ux-philosophy は「正解はライムに✓、不正解はグレーに✕」と決めている。
+      提案の 緑틴트 に置き換えると<b>間違いのグレーと正解の淡い緑の差が縮む</b> —
+      25分の体験レッスンで、初めて韓国語に触れる学習者が一目で判別できるかどうか。
+      レッスンの<b>正誤</b>と、アンケートの<b>選択</b>は、同じ緑でいいのか？という問いでもある。</p>
+  </div>
+  <div class="ab">
+    <div class="col now">
+      <span class="cap">now · Podo Bold</span>
+      <div class="stage"><div class="phone">
+        <div class="section">
+          <h2 class="section-title">듣고 고르기 <span class="title-ja">(聞いて選ぼう)</span></h2>
+          <p class="section-subtitle"><span class="ko">아·어·이 중에서 하나씩 읽을게요. 맞는 쪽을 눌러 보세요.</span><span class="ja">「아·어·이」から1つずつ読みます。正しいほうをタップしてください。</span></p>
+          <div class="tap-grid rows">
+            <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile right">아</button><button class="tap-tile">이</button></div>
+            <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile wrong">아</button><button class="tap-tile">어</button></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+    <div class="col soft">
+      <span class="cap">proposed · soft</span>
+      <div class="stage soft"><div class="phone">
+        <div class="section">
+          <h2 class="section-title">듣고 고르기 <span class="title-ja">(聞いて選ぼう)</span></h2>
+          <p class="section-subtitle"><span class="ko">아·어·이 중에서 하나씩 읽을게요. 맞는 쪽을 눌러 보세요.</span><span class="ja">「아·어·이」から1つずつ読みます。正しいほうをタップしてください。</span></p>
+          <div class="tap-grid rows">
+            <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile right">아</button><button class="tap-tile">이</button></div>
+            <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile wrong">아</button><button class="tap-tile">어</button></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- ============ 3 · letter cards ============ -->
+  <div class="lab">
+    <span class="tag">3 · 색が意味を持つ場所</span>
+    <h3>모음 ① — 자리 색(子音＝クリーム／母音＝ピンク)が乗るページ</h3>
+    <p>座席の2色は装飾ではなく教材そのもので、デッキ全体で同じ意味を担う。
+      枠が薄くなると、カード自体の輪郭より中の座席色のほうが強くなる —
+      それが<b>良いこと</b>(色に集中できる)なのか<b>悪いこと</b>(カードが浮かない)なのかは、
+      並べて見ないと決められない。</p>
+  </div>
+  <div class="ab">
+    <div class="col now">
+      <span class="cap">now · Podo Bold</span>
+      <div class="stage"><div class="phone">
+        <div class="section">
+          <h2 class="section-title">모음 ① <span class="title-ja">(母音 3つ)</span></h2>
+          <p class="section-subtitle"><span class="ko">제가 먼저 읽을게요. 잘 듣고 따라 읽어 보세요.</span><span class="ja">私が先に読みます。よく聞いて、まねして読んでみましょう。</span></p>
+          <div class="letter-row">
+            <div class="letter-card"><span class="korean seat-lr">아</span><span class="kana-eq"><i>＝</i>ア</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">a</i></span></div>
+            <div class="letter-card"><span class="korean seat-lr">어</span><span class="kana-eq"><i>＝</i>オ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">eo</i></span></div>
+            <div class="letter-card"><span class="korean seat-lr">이</span><span class="kana-eq"><i>＝</i>イ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">i</i></span></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+    <div class="col soft">
+      <span class="cap">proposed · soft</span>
+      <div class="stage soft"><div class="phone">
+        <div class="section">
+          <h2 class="section-title">모음 ① <span class="title-ja">(母音 3つ)</span></h2>
+          <p class="section-subtitle"><span class="ko">제가 먼저 읽을게요. 잘 듣고 따라 읽어 보세요.</span><span class="ja">私が先に読みます。よく聞いて、まねして読んでみましょう。</span></p>
+          <div class="letter-row">
+            <div class="letter-card"><span class="korean seat-lr">아</span><span class="kana-eq"><i>＝</i>ア</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">a</i></span></div>
+            <div class="letter-card"><span class="korean seat-lr">어</span><span class="kana-eq"><i>＝</i>オ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">eo</i></span></div>
+            <div class="letter-card"><span class="korean seat-lr">이</span><span class="kana-eq"><i>＝</i>イ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">i</i></span></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- ============ 4 · the dark page ============ -->
+  <div class="lab">
+    <span class="tag">4 · ダークページ</span>
+    <h3>오늘의 목표 — ダークな転換ページ</h3>
+    <p>枠が #1C1C1C の上で見えない、という心配は当たらなかった。<b>枠はページではなくカードに乗っている</b> —
+      転換ページに置かれる部品はもともとダークではなく、暗い地の上の明るいカードだからだ。
+      だからスクリプトは同じ青のまま、ブロックは白のまま、反転させるものは何もない。
+      ページが「区切り」に見えるのは地が暗いからで、上に乗る部品が暗いからではない。</p>
+  </div>
+  <div class="ab">
+    <div class="col now">
+      <span class="cap">now · Podo Bold</span>
+      <div class="stage"><div class="phone">
+        <div class="transition-page">
+          <span class="transition-kicker">목표</span>
+          <h2 class="transition-title">오늘의 목표 <span class="title-ja">(今日のゴール)</span></h2>
+          <p class="section-subtitle"><span class="ko">이 세 단어를 보세요. 수업이 끝나면 스스로 읽을 수 있어요.</span><span class="ja">この3つの単語を見てください。授業が終わると、自分で読めるようになります。</span></p>
+          <div class="known">
+            <div class="known-row"><span class="k">나무</span><span class="j">木<small>ナム</small></span></div>
+            <div class="known-row"><span class="k">어머니</span><span class="j">お母さん<small>オモニ</small></span></div>
+            <div class="known-row"><span class="k">오이</span><span class="j">きゅうり<small>オイ</small></span></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+    <div class="col soft">
+      <span class="cap">proposed · soft</span>
+      <div class="stage soft"><div class="phone">
+        <div class="transition-page">
+          <span class="transition-kicker">목표</span>
+          <h2 class="transition-title">오늘의 목표 <span class="title-ja">(今日のゴール)</span></h2>
+          <p class="section-subtitle"><span class="ko">이 세 단어를 보세요. 수업이 끝나면 스스로 읽을 수 있어요.</span><span class="ja">この3つの単語を見てください。授業が終わると、自分で読めるようになります。</span></p>
+          <div class="known">
+            <div class="known-row"><span class="k">나무</span><span class="j">木<small>ナム</small></span></div>
+            <div class="known-row"><span class="k">어머니</span><span class="j">お母さん<small>オモニ</small></span></div>
+            <div class="known-row"><span class="k">오이</span><span class="j">きゅうり<small>オイ</small></span></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+
+</body>
+</html>

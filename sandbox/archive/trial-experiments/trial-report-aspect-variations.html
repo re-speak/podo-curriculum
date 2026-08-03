@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>항목 블록 A · 정리안 — PODO 韓国語</title>
+  <link rel="stylesheet" href="../../shared/lesson-card.css">
+  <link rel="stylesheet" href="../trial.css">
+  <style>
+  /* ================================================================
+     ASPECT BLOCK — 변형 A 정리안 (internal preview)
+     · 마커: 현재↑ / Lv↓ (현재=green, 목표=ink)
+     · now→goal 구간 = 목표 색(검정)
+     · 아래는 레벨 설명(Lv.1 / Lv.4), 지금·목표 라벨 대신
+     · 추천 = 노션식 힌트 블록
+     클래스는 av- 프리픽스 (trial.css .blk/.cap/.done/.rail/.hint 와 충돌 회피)
+     ================================================================ */
+  body { background: #f0f0ee; }
+  .av-stage { max-width: 480px; margin: 0 auto; padding: 24px 16px 80px; }
+  .av-intro { padding: 18px 20px; border-radius: 14px; background: #1c1c1c; color: #fff; margin-bottom: 8px; }
+  .av-intro h1 { margin: 0; font-size: 15px; font-weight: 900; }
+  .av-intro p { margin: 7px 0 0; font-size: 12px; font-weight: 500; line-height: 1.5; color: rgba(255,255,255,.62); }
+  .av-page { background: #fff; border-radius: 18px; padding: 8px 24px 26px; margin-top: 16px; }
+
+  .av-blk { padding: 24px 0; }
+  .av-blk + .av-blk { border-top: 1px solid #efefec; }
+  .av-name { font-size: 15px; font-weight: 800; color: #1c1c1c; }
+
+  /* bar: done(green 0→현재) · span(ink 현재→목표) · rail(grey) */
+  .av-bar { position: relative; height: 7px; margin: 34px 0 38px; }
+  .av-rail { position: absolute; inset: 0; border-radius: 999px; background: #ecebe7; }
+  .av-done { position: absolute; top: 0; bottom: 0; left: 0; border-radius: 999px; background: #7cc63f; }
+  .av-span { position: absolute; top: 0; bottom: 0; border-radius: 999px; background: #1c1c1c; }
+  .av-mk { position: absolute; top: 50%; width: 14px; height: 14px; border-radius: 50%; transform: translate(-50%,-50%); z-index: 2; }
+  .av-mk.now { background: #6abe36; border: 3px solid #fff; box-shadow: 0 0 0 1px #6abe36; }
+  .av-mk.goal { background: #fff; border: 3px solid #1c1c1c; }
+  .av-cap { position: absolute; bottom: calc(100% + 9px); transform: translateX(-50%); font-size: 11px; font-weight: 800; white-space: nowrap; }
+  .av-cap.now { color: #4a7a2a; }
+  .av-cap.goal { color: #1c1c1c; }
+  .av-lvl { position: absolute; top: calc(100% + 10px); transform: translateX(-50%); font-size: 13px; font-weight: 900; white-space: nowrap; }
+  .av-lvl.now { color: #4a7a2a; }
+  .av-lvl.goal { color: #1c1c1c; }
+
+  /* level explanations */
+  .av-list { margin-top: 2px; }
+  .av-ln { display: flex; gap: 11px; align-items: baseline; padding: 5px 0; font-size: 13px; line-height: 1.5; word-break: keep-all; }
+  .av-ln .lb { flex: none; width: 34px; font-size: 11.5px; font-weight: 900; }
+  .av-ln .tx { flex: 1 1 auto; font-weight: 500; color: #5a5a56; }
+  .av-ln.now .lb { color: #4a7a2a; }
+  .av-ln.goal .lb { color: #1c1c1c; }
+
+  /* Notion-style hint for 추천 */
+  .av-hint { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; padding: 12px 14px; border-radius: 10px; background: #f3f7ea; border: 1px solid #e6efd4; }
+  .av-hint .ic { flex: none; font-size: 15px; line-height: 1.45; }
+  .av-hint .t { font-size: 12.5px; font-weight: 500; color: #4d5a3a; line-height: 1.55; word-break: keep-all; }
+  .av-hint .t b { color: #3d6b1e; font-weight: 800; margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <div class="av-stage">
+
+    <div class="av-intro">
+      <h1>항목 블록 · A 정리안</h1>
+      <p>현재↑ / Lv↓ · now→goal 구간은 목표 색(검정) · 아래는 레벨 설명 · 추천은 힌트 블록. 발음·정확성 두 개로 리듬 확인.</p>
+    </div>
+
+    <div class="av-page">
+
+      <!-- 발음 -->
+      <div class="av-blk">
+        <div class="av-name">발음</div>
+        <div class="av-bar">
+          <div class="av-rail"></div>
+          <div class="av-done" style="width:34%"></div>
+          <div class="av-span" style="left:34%;right:15%"></div>
+          <span class="av-mk now" style="left:34%"></span>
+          <span class="av-mk goal" style="left:85%"></span>
+          <span class="av-cap now" style="left:34%">현재</span>
+          <span class="av-cap goal" style="left:85%">목표</span>
+          <span class="av-lvl now" style="left:34%">Lv.1</span>
+          <span class="av-lvl goal" style="left:85%">Lv.4</span>
+        </div>
+        <div class="av-list">
+          <div class="av-ln now"><span class="lb">Lv.1</span><span class="tx">모음·자음 소리를 하나씩 따라 내요</span></div>
+          <div class="av-ln goal"><span class="lb">Lv.4</span><span class="tx">드라마 대사도 자연스럽게 발음해요</span></div>
+        </div>
+        <div class="av-hint"><span class="ic">💡</span><span class="t"><b>추천</b>원어민 발음을 반복해 듣고 그대로 따라 하기</span></div>
+      </div>
+
+      <!-- 정확성 -->
+      <div class="av-blk">
+        <div class="av-name">정확성</div>
+        <div class="av-bar">
+          <div class="av-rail"></div>
+          <div class="av-done" style="width:28%"></div>
+          <div class="av-span" style="left:28%;right:18%"></div>
+          <span class="av-mk now" style="left:28%"></span>
+          <span class="av-mk goal" style="left:82%"></span>
+          <span class="av-cap now" style="left:28%">현재</span>
+          <span class="av-cap goal" style="left:82%">목표</span>
+          <span class="av-lvl now" style="left:28%">Lv.1</span>
+          <span class="av-lvl goal" style="left:82%">Lv.4</span>
+        </div>
+        <div class="av-list">
+          <div class="av-ln now"><span class="lb">Lv.1</span><span class="tx">글자 자리(자음+모음)를 맞춰요</span></div>
+          <div class="av-ln goal"><span class="lb">Lv.4</span><span class="tx">문법에 맞는 문장을 정확히 말해요</span></div>
+        </div>
+        <div class="av-hint"><span class="ic">💡</span><span class="t"><b>추천</b>한 번에 패턴 하나씩, 만들어 말하고 바로 교정받기</span></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

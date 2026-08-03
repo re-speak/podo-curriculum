@@ -1,0 +1,2842 @@
+/* ============================================================
+   PODO trial-lesson additions — loaded AFTER ../lesson-card.css
+   Adds: lime brand pages (cover / act dividers / closing),
+   greeting chat with katakana reading (yomi), needs-analysis
+   option rows, and the consultation/roadmap worksheet bits
+   (ported from onboarding-screens.html, restyled to the shared
+   lesson-card system).
+   ============================================================ */
+
+/* ---------- brand pages (cover · divider · closing) ---------- */
+.brand-page {
+  min-height: 640px;
+  margin: 24px 20px 0;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--lime);
+  border-radius: 16px;
+  box-shadow: 0 6px 0 var(--ink);
+}
+
+.phone > .brand-page:first-child {
+  margin-top: 20px;
+}
+
+.brand-page.divider {
+  min-height: 580px;
+}
+
+/* mascot on act dividers — white sticker so the lime body reads on the lime page */
+.brand-mascot {
+  width: 164px;
+  height: 164px;
+  object-fit: contain;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 26px;
+  box-sizing: border-box;
+}
+
+/* every trial page card stays taller than it is wide (no square pages on mobile) */
+.section {
+  min-height: 580px;
+}
+
+.podo-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #1c1c1c;
+  border-radius: 999px;
+  padding: 6px 6px 6px 20px;
+}
+
+.podo-badge .logo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  padding-right: 14px;
+}
+
+.podo-badge .tag {
+  background: #fff;
+  border-radius: 999px;
+  padding: 7px 15px;
+  color: #1c1c1c;
+  font-size: 13.5px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.brand-kicker {
+  margin: 26px 0 0;
+  color: rgba(28,28,28,.55);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.brand-title {
+  margin: 8px 0 0;
+  color: #1c1c1c;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -.02em;
+  word-break: keep-all;
+}
+
+.brand-page.divider .brand-title {
+  font-size: 33px;
+}
+
+.brand-title .small {
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(28,28,28,.55);
+  letter-spacing: 0;
+}
+
+/* japanese step name under a big korean divider title */
+.brand-title .ja {
+  display: block;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  color: rgba(28,28,28,.6);
+  letter-spacing: 0;
+}
+
+.brand-sub {
+  max-width: 320px;
+  margin: 16px 0 0;
+  color: rgba(28,28,28,.66);
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 700;
+  word-break: keep-all;
+}
+
+/* closing page */
+.end-head {
+  margin: 0;
+  color: #1c1c1c;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.end-card {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px 20px 36px;
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 18px;
+  text-align: left;
+}
+
+.end-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #ececea;
+  color: #1c1c1c;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.end-check {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--lime);
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.end-title {
+  margin: 36px 0 0;
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 1.28;
+  letter-spacing: -.01em;
+  word-break: keep-all;
+}
+
+/* No accent on the closing title. Green type is neither the brand lime nor
+   readable ink, and a lime highlight is the colour of the page showing round
+   the card, so it punches a hole in it. The line is large and bold already —
+   emphasising half of it adds nothing. */
+
+.end-copy {
+  margin: 16px 0 0;
+  text-align: center;
+  color: #575753;
+  font-size: 14.5px;
+  line-height: 1.6;
+  font-weight: 600;
+  word-break: keep-all;
+}
+
+/* ---------- greeting chat with reading (yomi) ---------- */
+/* same bubble language as the roleplay cards: the learner-language
+   translation sits in a header strip on top, Korean below — plus the
+   katakana reading tucked under the Korean line, in green */
+.bubble.intro > .korean {
+  padding: 13px 16px 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.bubble.intro > .yomi {
+  display: block;
+  padding: 5px 16px 13px;
+  color: #57a021;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  line-height: 1.5;
+}
+
+.bubble.me.intro {
+  background: #fff;
+}
+
+/* speaker column: avatar with the name underneath */
+.who {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 48px;
+}
+
+.who-name {
+  color: #575753;
+  font-size: 10.5px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  word-break: keep-all;
+}
+
+/* blue nudge folded into the foot of the learner's bubble:
+   "reply to the tutor!" — the instruction sits with the line to say */
+.bubble.intro > .cue {
+  display: block;
+  padding: 8px 16px;
+  border-top: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+/* ---------- needs-analysis option rows ---------- */
+.opt-list {
+  display: grid;
+  gap: 11px;
+}
+
+.opt-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.opt-row .emo {
+  flex: none;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.opt-row .opt-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.opt-row .opt-main {
+  display: block;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.opt-row .opt-sub {
+  display: block;
+  margin-top: 2px;
+  color: var(--gray-500);
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.opt-row .lv-badge {
+  flex: none;
+  min-width: 48px;
+  padding: 10px 0;
+  text-align: center;
+  background: var(--gray-100);
+  color: var(--ink);
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* numbered variant: a bare numeral, sized up so it reads at a glance */
+.opt-row .lv-badge.num {
+  min-width: 38px;
+  padding: 4px 0;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+/* ---------- consultation worksheet ---------- */
+.ws-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.ws-row:first-child {
+  padding-top: 0;
+}
+
+.ws-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.ws-row .lab {
+  flex: none;
+  width: 88px;
+  color: #1c1c1c;
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.chips {
+  display: flex;
+  gap: 7px;
+}
+
+.nchip {
+  position: relative;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.nchip input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nchip span {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.nchip input:checked + span {
+  background: var(--green-100);
+  border-color: var(--green-500);
+}
+
+/* course checkboxes */
+.cgroup-label {
+  display: block;
+  margin: 20px 0 0;
+  color: var(--gray-500);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.cgroup-label:first-child,
+.section-subtitle + .cgroup-label {
+  margin-top: 0;
+}
+
+.cgroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.ccheck {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ccheck .t {
+  color: #1c1c1c;
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.ccheck .t small {
+  margin-left: 3px;
+  color: var(--gray-500);
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.cbox {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  flex: none;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cbox:checked {
+  background: var(--green-100);
+  border-color: var(--green-500);
+}
+
+.cbox:checked::after {
+  content: "✓";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #1c1c1c;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+/* the one big write-in: months / per-week / total sessions */
+.plan-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 18px;
+  margin-top: 22px;
+  padding: 16px 18px;
+  background: #1c1c1c;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.plan-banner .k {
+  color: var(--lime);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.plan-banner .k small {
+  display: block;
+  margin-top: 2px;
+  color: rgba(255,255,255,.5);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.plan-banner .line small {
+  display: inline;
+  margin: 0;
+  color: rgba(255,255,255,.72);
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+.plan-banner .line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.write {
+  width: 56px;
+  padding: 4px 2px;
+  border: 1.5px dashed var(--gray-200);
+  border-radius: 8px;
+  background: var(--gray-100);
+  color: #1c1c1c;
+  text-align: center;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.write::placeholder {
+  color: rgba(28,28,28,.35);
+  font-size: 14px;
+}
+
+.write:focus {
+  outline: 2px solid #fff;
+}
+
+/* ---------- freetalk question ladder ---------- */
+.ladder {
+  display: grid;
+  gap: 12px;
+}
+
+.ladder-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.ladder-item .lv {
+  flex: none;
+  margin-top: 2px;
+  padding: 4px 10px;
+  border: 1.5px solid var(--green-500);
+  border-radius: 999px;
+  background: var(--green-100);
+  color: #3f7a1c;
+  font-size: 11.5px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ladder-item .lv.hot {
+  border-color: var(--green-500);
+  background: var(--green-100);
+  color: var(--green-500);
+}
+
+.ladder-item .korean {
+  font-size: 17px;
+}
+
+/* ============================================================
+   HANGUL TEACHING KIT (trial-1)
+   ------------------------------------------------------------
+   One idea runs through every page: a syllable is not a picture,
+   it is a BOX with two seats. 子音 = amber seat, 母音 = rose seat.
+   The same two colours mark the letter cards, the read drills,
+   the words and the write-in guides, so the learner stops seeing
+   a squiggle and starts seeing structure.
+
+   TRAINING WHEELS: tints are teaching aids, so they are switched
+   OFF (.plain) on the find / dictation drills — the learner has
+   to see the parts without help there.
+   ============================================================ */
+:root {
+  --c-bg: #ffeeb8;   /* 子音 seat */
+  --c-ink: #96690d;
+  --v-bg: #ffd7e5;   /* 母音 seat */
+  --v-ink: #bf1b5c;
+  --b-bg: #cfe3ff;   /* 받침 seat — never taught in the trial, only previewed
+                        on the curriculum page as "this is what comes later" */
+}
+
+/* ---------- anatomy block: the glyph sitting in its two seats ---------- */
+.anat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.blk {
+  display: block;   /* spans are inline: without this the box collapses */
+  position: relative;
+  flex: none;
+  margin: 0 auto;
+  width: 162px;
+  height: 162px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.blk.sm { width: 150px; height: 150px; }
+
+.blk .zone {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 5px 2px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.blk.lr .zone.c { inset: 0 54% 0 0; align-items: flex-end; background: var(--c-bg); color: var(--c-ink); }
+.blk.lr .zone.v { inset: 0 0 0 46%; align-items: flex-end; background: var(--v-bg); color: var(--v-ink); }
+.blk.tb .zone.c { inset: 0 0 50% 0; align-items: flex-start; background: var(--c-bg); color: var(--c-ink); }
+.blk.tb .zone.v { inset: 50% 0 0 0; align-items: flex-end; background: var(--v-bg); color: var(--v-ink); }
+
+.blk .glyph {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #1c1c1c;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.blk.sm .glyph { font-size: 86px; }
+
+.anat .eq {
+  color: #1c1c1c;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.anat .kana {
+  color: #1c1c1c;
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+}
+
+.anat .kana small {
+  display: block;
+  margin-top: 8px;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+/* the parts named underneath the block */
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.part {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.part b { font-size: 21px; line-height: 1; }
+.part em { color: #575753; font-size: 12px; font-style: normal; font-weight: 700; }
+
+/* ---------- build strip: ㅇ + ㅏ → 아 ---------- */
+.build {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.build .b { text-align: center; }
+
+.build .tile {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.build .tile.res { box-shadow: none; border-color: var(--green-500); }
+
+.build .b small {
+  display: block;
+  margin-top: 7px;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.build .op {
+  align-self: center;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* ---------- placement blocks side by side ---------- */
+.blk-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.blk-item { text-align: center; }
+
+.blk-item .cap {
+  display: block;
+  margin-top: 11px;
+  color: #1c1c1c;
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.blk-item .cap small {
+  display: block;
+  margin-top: 3px;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+/* ---------- combination table (payoff: 2 × 6 = 12 blocks) ---------- */
+.combo {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 24px;
+}
+
+.combo span {
+  display: grid;
+  place-items: center;
+  height: 64px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.combo .corner { border: none; background: transparent; }
+
+/* ---------- read drills ----------
+   the letters ARE the activity, so they fill the page: a 3-wide grid of
+   big tiles rather than a thin row of chips floating in white space */
+.read-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.read-chip {
+  display: grid;
+  place-items: center;
+  height: 148px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* whole words need width, not height */
+.read-grid.words .read-chip {
+  height: 112px;
+  font-size: 34px;
+}
+
+/* ---------- words broken into syllables ---------- */
+.wordset {
+  display: grid;
+  gap: 11px;
+  margin-top: 24px;
+}
+
+.word-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.word-card .syls {
+  display: flex;
+  flex: none;
+  gap: 5px;
+}
+
+.word-card .syl {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 9px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.word-card .body { min-width: 0; }
+
+.word-card .yomi-line {
+  display: block;
+  color: #57a021;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.word-card .mean {
+  display: block;
+  margin-top: 3px;
+  color: #575753;
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+/* ---------- the unreadable-sentence hook ---------- */
+.hook-quote {
+  margin-top: 24px;
+  padding: 26px 20px;
+  border-radius: 14px;
+  background: #1c1c1c;
+  text-align: center;
+}
+
+.hook-quote .q {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.hook-quote .m {
+  display: block;
+  margin-top: 12px;
+  color: rgba(255,255,255,.6);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ---------- "you already know some Korean" rows ---------- */
+.known {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.known-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 18px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.known-row .k {
+  flex: none;
+  width: 108px;
+  color: #1c1c1c;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.known-row .j {
+  color: #575753;
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.known-row .j small {
+  display: block;
+  margin-top: 2px;
+  color: var(--gray-400);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+/* sentences, not words: a whole sentence cannot live in the 108px word
+   column, so the row stacks instead of running two columns */
+.known.lines .known-row {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.known.lines .known-row .k {
+  width: auto;
+  font-size: 22px;
+}
+
+/* ---------- payoff counter ---------- */
+.payoff {
+  margin-top: 24px;
+  padding: 34px 20px;
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  background: var(--lime);
+  box-shadow: none;
+  text-align: center;
+}
+
+.payoff .eqline {
+  color: #1c1c1c;
+  font-size: 15.5px;
+  font-weight: 800;
+}
+
+.payoff .big {
+  display: block;
+  margin: 6px 0 2px;
+  color: #1c1c1c;
+  font-size: 84px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -.03em;
+}
+
+.payoff .cap {
+  display: block;
+  color: rgba(28,28,28,.7);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* letter cards: the glyph sits in its coloured seat(s) */
+.letter-card > .korean.seat-lr,
+.letter-card > .korean.seat-tb,
+.letter-card > .korean.seat-v,
+.letter-card > .korean.seat-c {
+  flex: 0 0 74px;
+  height: 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  font-size: 44px;
+}
+
+/* The kana anchor, big enough to read as an equal partner, in a fixed
+   column so every card lines up. A mouth hint used to sit to its right,
+   but only some letters need one, so that column was empty on half the
+   cards — that contrast now has its own comparison page. */
+.letter-card > .kana-eq {
+  flex: none;
+  min-width: 56px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #1c1c1c;
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.letter-card > .kana-eq i {
+  color: var(--gray-400);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* The sound column: the letters that spell the block, in their seat
+   colours. Present on every card, so the row never goes ragged — and it
+   does what kana cannot: ナ does not come apart, n ＋ a does. */
+.letter-card > .sound {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.letter-card > .sound i {
+  display: grid;
+  place-items: center;
+  min-width: 30px;
+  padding: 5px 7px;
+  border-radius: 9px;
+  color: #1c1c1c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.letter-card > .sound b {
+  color: var(--gray-400);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* ---------- mouth photos (Sejong 한국어 입문, 학습1/학습5) ----------
+   The lesson is audio-only, so the learner can never watch the tutor's
+   mouth. These photos put that information back into the page: front
+   view for the lip shape, side view for rounding and protrusion. */
+.letter-card > .mouth {
+  flex: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 11px;
+  border: 1px solid var(--gray-200);
+  object-fit: cover;
+  background: #fff;
+}
+
+/* the letter cards run four uniform slots once a mouth photo joins:
+   glyph · kana · sound · mouth — so the columns are retuned to fit */
+.letter-card {
+  gap: 14px;
+  padding: 15px 20px;
+}
+
+/* ---------- same-kana pairs, compared side by side ---------- */
+.pair-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.pair-row {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+}
+
+/* the shared katakana, stated once for the pair */
+.pair-kana {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  border-radius: 11px;
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.pair-side {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+}
+
+.pair-side .g {
+  display: grid;
+  place-items: center;
+  height: 74px;
+  border-radius: 12px;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* front then side: the side view is what shows rounding and protrusion */
+.pair-side .shots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.pair-side .shots img {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--gray-200);
+  border-radius: 9px;
+  object-fit: cover;
+}
+
+.pair-side small {
+  display: block;
+  margin-top: 8px;
+  color: #575753;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+/* Concept pages carry one small diagram, so the leftover space is split
+   above and below it rather than dumped at the foot of the card — the
+   activity sits in the optical centre where the eye lands. */
+.section:has(> .anat),
+.section:has(> .build),
+.section:has(> .blk-row),
+.section:has(> .combo),
+.section:has(> .payoff),
+.section:has(> .usp),
+.section:has(> .offer),
+.section:has(> .ptable) {
+  display: flex;
+  flex-direction: column;
+}
+
+/* free space opens ABOVE the diagram and BELOW whatever closes the page,
+   so a diagram and its caption/chip stay welded together as one group */
+.section > .anat,
+.section > .build,
+.section > .blk-row,
+.section > .combo,
+.section > .payoff,
+.section > .usp,
+.section > .offer,
+.section > .ptable { margin-top: auto; }
+
+/* :not(.note-input) — a page's tutor note is normally slotted under the green
+   script, but a page with no script takes it at the end, and a bare :last-child
+   would hand the spacer to the note instead of to the block that closes the
+   page (which stops the page filling the screen). display:none does not exempt
+   it: :last-child is structural. */
+.section:has(> .anat) > :last-child:not(.note-input),
+.section:has(> .build) > :last-child:not(.note-input),
+.section:has(> .blk-row) > :last-child:not(.note-input),
+.section:has(> .combo) > :last-child:not(.note-input),
+.section:has(> .payoff) > :last-child:not(.note-input),
+.section:has(> .usp) > :last-child:not(.note-input),
+.section:has(> .offer) > :last-child:not(.note-input),
+.section:has(> .ptable) > :last-child:not(.note-input) { margin-bottom: auto; }
+
+/* a hint chip sitting under a component needs air (hard shadows below) */
+.section > .hint { margin-top: 16px; }
+
+/* The two seat fills, reused by every component above. Declared last
+   and doubled (.seat-lr.seat-lr) so they always win over a component's
+   own white background — the colour code must never be overridden. */
+.seat-lr.seat-lr { background: linear-gradient(90deg, var(--c-bg) 0 46%, var(--v-bg) 46%); }
+.seat-tb.seat-tb { background: linear-gradient(180deg, var(--c-bg) 0 50%, var(--v-bg) 50%); }
+.seat-v.seat-v   { background: var(--v-bg); }
+.seat-c.seat-c   { background: var(--c-bg); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 480px) {
+  .brand-page {
+    margin: 20px 12px 0;
+    padding: 36px 22px;
+  }
+
+  .brand-title {
+    font-size: 38px;
+  }
+
+  .brand-page.divider .brand-title {
+    font-size: 29px;
+  }
+
+  .combo span { height: 58px; font-size: 24px; }
+  .read-chip { height: 128px; font-size: 66px; }
+  .anat { gap: 12px; }
+  .blk { width: 146px; height: 146px; }
+  .blk .glyph { font-size: 84px; }
+  .anat .kana { font-size: 54px; }
+  .letter-card > .kana-eq { font-size: 24px; }
+}
+
+/* ============================================================
+   TAP ACTIVITIES (no whiteboard)
+   ------------------------------------------------------------
+   Every task is answered by tapping. Two components carry all of
+   them, so the learner learns one interaction and reuses it:
+     .tap-grid  — choose the tile(s) (find / listen-and-pick)
+     .builder   — assemble a syllable from a jamo keypad, which is
+                  what "write the character" becomes without a pen
+   ============================================================ */
+
+/* ---------- tap to choose ---------- */
+.tap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.tap-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Listen-and-pick is not one six-way choice, it is three two-way ones. Laid
+   out as a plain grid the learner reads all six as a single question and the
+   drill looks far harder than it is, so each question gets its own numbered
+   band. The band is filled, never bordered — the tiles inside already carry
+   a border, and a bordered wrapper would box them twice. */
+.tap-grid.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.tap-row {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px 10px 2px;
+  border-radius: 18px;
+  /* the grouping surface has to be lighter than any tile that can sit on it,
+     or an answered-wrong tile sinks into its own row and stops reading as a
+     tile at all */
+  background: var(--gray-50);
+}
+
+.tap-n {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--gray-400);
+  text-align: center;
+}
+
+.tap-grid.rows .tap-tile { height: 100px; font-size: 48px; }
+
+.tap-tile {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 118px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+  color: #1c1c1c;
+  font-family: inherit;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .09s, background .12s, box-shadow .12s;
+}
+
+.tap-grid.words .tap-tile { height: 136px; font-size: 34px; }
+
+.tap-tile:active { transform: scale(.96); }
+
+/* ANSWERED. Right and wrong have to be told apart in about a second by
+   someone who has known the alphabet for ten minutes, and once both states
+   are pale tints, "lighter green vs lighter grey" is not enough on its own.
+   So they differ on two independent channels rather than on brightness:
+
+     right → has colour   (green-100 fill, green-500 outline, solid badge)
+             and keeps the glyph at full ink strength
+     wrong → has none     (grey fill, grey outline) and the glyph recedes
+
+   The badge is the one saturated thing on the page, and it sits in the
+   corner so the letter itself is never covered.
+
+   Wrong is deliberately NOT dashed any more: dashed grey now means
+   "write here" everywhere else in the system (.slot, .slot-input,
+   .build-slot), and a wrong answer is not an empty field. */
+.tap-tile.right {
+  background: var(--green-100);
+  border: 1.5px solid var(--green-500);
+  box-shadow: none;
+}
+
+.tap-tile.wrong {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  color: var(--gray-400);
+}
+
+.tap-tile::after {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.tap-tile.right::after { content: "✓"; background: var(--green-500); color: #fff; }
+.tap-tile.wrong::after { content: "✕"; background: var(--gray-200); color: var(--gray-500); }
+
+/* ---------- build a syllable from the keypad ---------- */
+.builder { margin-top: 24px; }
+
+.build-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.build-task {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.build-task .ask {
+  color: #575753;
+  font-size: 15px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* the slot the keypad is currently filling */
+.build-slot {
+  position: relative;
+  width: 74px;
+  height: 74px;
+  border: 1.5px dashed var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.build-slot.active {
+  border-style: solid;
+  box-shadow: 0 0 0 4px rgba(181,253,76,.55);
+}
+
+.build-slot.done { border-style: solid; }
+
+.build-slot .zone {
+  position: absolute;
+  border-radius: 9px;
+}
+
+.build-slot.lr .zone.c { inset: 4px 54% 4px 4px; }
+.build-slot.lr .zone.v { inset: 4px 4px 4px 46%; }
+.build-slot.tb .zone.c { inset: 4px 4px 50% 4px; }
+.build-slot.tb .zone.v { inset: 50% 4px 4px 4px; }
+
+.build-slot .glyph {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.build-slot .ok {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: none;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 50%;
+  background: var(--green-100);
+  border-color: var(--green-500);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.build-slot.done .ok { display: grid; }
+
+/* the tasks stack prompt over slot so three fit across a phone */
+.build-task {
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* the keypad: only the 8 parts this lesson has taught, in seat colours,
+   so the learner can never build a letter they have not met */
+.keys-label {
+  margin: 16px 0 8px;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.keys {
+  display: grid;
+  gap: 7px;
+}
+
+.keys.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.keys.v6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+/* one taught consonant so far. The key keeps the width it has in .c3 and sits
+   centred, so a single option doesn't read as two keys that failed to load. */
+.keys.c1 {
+  grid-template-columns: minmax(0, calc((100% - 14px) / 3));
+  justify-content: center;
+}
+
+.key {
+  display: grid;
+  place-items: center;
+  height: 48px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: #fff;
+  color: #1c1c1c;
+  font-family: inherit;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .09s, box-shadow .12s;
+}
+
+.key:active { transform: scale(.92); }
+.key.on { box-shadow: 0 0 0 3px rgba(28,28,28,.3); }
+
+/* a wrong pair shakes rather than scolding */
+@keyframes miss { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-5px)} 75%{transform:translateX(5px)} }
+.build-slot.miss { animation: miss .3s; border-color: #d9534f; }
+
+/* ============================================================
+   TEACHING MODE  (선생님 모드)
+   ------------------------------------------------------------
+   The blue-100 band is what the tutor SAYS to the learner. The
+   blue-200 band fused under it is what the tutor DOES — read
+   order, answers, pacing — and the learner must never see it, so
+   none of it exists in the page until the switch on the cover is
+   turned on. Student view is the default, and reloading returns to it.
+
+   Notes are written in Korean: the tutor reads Korean, and a
+   Japanese beginner cannot, which is a second lock on the answers.
+   ============================================================ */
+.tutor-note { display: none; }
+
+/* Sits directly under the blue script it belongs to — the tutor reads
+   the line, then sees what to do next. In student view it is display:none,
+   so it collapses completely and leaves no gap behind. */
+/* A blue-200 chip. The tutor reads the blue line, THEN glances here, so it has
+   to sit below the script in the hierarchy — hence a chip, hugging its own
+   text, rather than a slab. What says "do not read this one aloud" is the
+   튜터만 badge below, not the fill; see the note on it. */
+body.teaching .tutor-note {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  /* Both margins are real — several components that follow bring no top
+     margin, and a .dialogue would otherwise collide with it. */
+  margin: 14px 0 18px;
+  padding: 8px 13px;
+  border-radius: 10px;
+  background: var(--blue-200);
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* The badge is what makes softening safe. Ink used to carry the whole "do not
+   read this one aloud" load by brute contrast; against blue-100 that was an
+   ~86-point lightness slam, and the merged card looked torn in half. Say it in
+   words instead, and the fill only has to be a *step* rather than a shock —
+   blue-200 is the same family as the script it hangs off, one shade down, so
+   the two bands read as one card with a private second half.
+   Korean, like every tutor-facing string: the tutor reads it, a beginner
+   learner cannot, which is the second lock. Set from CSS so all 48 notes in
+   the decks get it without touching any markup. */
+/* A memo written against this instruction belongs WITH it — the merged
+   block's 26px would otherwise leave the memo stranded between the script and
+   the activity. Lives here rather than in the shared sheet because the merged
+   rule above ties it on specificity and this sheet loads last. */
+body.teaching .tutor-note:has(+ .note-input),
+body.teaching .section-subtitle + .tutor-note:has(+ .note-input) { margin-bottom: 8px; }
+
+.tutor-note::before {
+  content: "튜터만";
+  flex: none;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(28, 28, 28, .09);
+  color: var(--blue-ink);
+  font-size: 10.5px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* ---- MERGED WITH THE SCRIPT IT BELONGS TO ----
+   One card, two bands: the tutor reads the blue line, then their eye drops
+   straight into the footer without crossing a gap. Two separate floating
+   boxes for what is really one instruction made the page read as clutter.
+
+   Merging is only safe BECAUSE the two bands stay told apart — blue-200 a step
+   down from blue-100, a dashed fold between them, and the 튜터만 badge saying
+   it in words. One undifferentiated blue box would have put a do-not-say-this
+   line inside the surface that means "say this out loud".
+
+   Student view is untouched: the whole rule is behind body.teaching, so the
+   script box keeps its own radius and bottom margin, and the note is
+   display:none with nothing left behind. Where a tutor note does NOT follow a
+   script box (17 of the 48 in the decks) neither rule matches and it keeps the
+   standalone chip above. */
+body.teaching .section-subtitle:has(+ .tutor-note) {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+body.teaching .section-subtitle + .tutor-note {
+  width: auto;
+  max-width: none;
+  margin: 0 0 26px;
+  padding: 9px 16px 10px;
+  /* the fold between "say this out loud" and "this one is yours" */
+  border-top: 1px dashed #ccd3e4;
+  border-radius: 0 0 12px 12px;
+}
+
+.tutor-note {
+  color: var(--blue-ink);
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  word-break: keep-all;
+}
+
+/* answers surface the way .slot does in the pattern lessons: present
+   for the tutor, never loud — a ghost of the answer inside the blank */
+body.teaching .build-slot:not(.done)::after {
+  content: attr(data-a);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #e6e6e4;
+  font-size: 42px;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+body.teaching .tap-tile[data-ok]:not(.right):not(.wrong)::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 2px dashed #e2e2e0;
+  border-radius: 10px;
+}
+
+/* ---------- the switch, tucked into the cover's corner ----------
+   Deliberately quiet: a learner should not notice it, and should have
+   no reason to try it. It only asserts itself once it is on, so the
+   tutor can see at a glance that answers are showing. */
+.phone > .brand-page:first-child { position: relative; }
+
+.mode-toggle {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px 5px 6px;
+  border: 1.2px solid rgba(28,28,28,.22);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background .15s, border-color .15s;
+}
+
+.mode-toggle input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.mode-toggle .sw {
+  position: relative;
+  flex: none;
+  width: 26px;
+  height: 15px;
+  border: 1.2px solid rgba(28,28,28,.3);
+  border-radius: 999px;
+  background: transparent;
+  transition: background .15s, border-color .15s;
+}
+
+.mode-toggle .sw i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(28,28,28,.35);
+  transition: transform .15s, background .15s;
+}
+
+.mode-toggle .lbl {
+  color: rgba(28,28,28,.42);
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+/* on: no longer shy, so the tutor cannot leave it on by accident */
+.mode-toggle input:checked ~ .lbl { color: #1c1c1c; }
+.mode-toggle:has(input:checked) {
+  background: #1c1c1c;
+  border-color: #1c1c1c;
+}
+.mode-toggle:has(input:checked) .lbl { color: var(--lime); }
+.mode-toggle input:checked + .sw { background: var(--green-500); border-color: var(--green-500); }
+.mode-toggle input:checked + .sw i { transform: translateX(11px); background: #1c1c1c; }
+
+
+/* ============================================================
+   CONSULTATION · the deck remembers the answers
+   ------------------------------------------------------------
+   The needs-analysis rows are real answers now, and the report
+   page reads them back: goal + pace + the tutor's level call
+   become an expected duration, a curve and a course list.
+   ============================================================ */
+.opt-list {
+  display: grid;
+  gap: 11px;
+}
+
+button.opt-row {
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .09s, background .12s, box-shadow .12s;
+}
+
+button.opt-row:active { transform: scale(.99); }
+
+.opt-row.on {
+  background: var(--green-100);
+  border: 1.5px solid var(--green-500);
+  box-shadow: none;
+}
+
+.opt-row.on .opt-sub { color: var(--gray-500); }
+.opt-row.on .lv-badge { background: var(--green-500); color: #fff; }
+
+/* ---------- level check ---------- */
+.lvpick {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.lvrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background .12s, box-shadow .12s;
+}
+
+.lvrow.on { background: var(--green-100); border: 1.5px solid var(--green-500); box-shadow: none; }
+
+.lvrow .lvn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--gray-100);
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.lvrow.on .lvn { background: var(--green-500); color: #fff; }
+.lvrow .lvt { display: block; font-size: 15px; font-weight: 800; }
+.lvrow .lvs { display: block; margin-top: 2px; color: var(--gray-500); font-size: 12px; font-weight: 600; }
+.lvrow.on .lvs { color: var(--gray-500); }
+
+/* ---------- the report ---------- */
+/* Skeleton preview: the report's own shape in grey, so the page reads as
+   "your plan lands here" rather than as an empty card. */
+.rep-empty {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.sk {
+  border: 1.5px solid #ececea;
+  border-radius: 14px;
+  background: var(--gray-50);
+}
+
+/* 그래프 자리는 테두리 없이 — 실제 그래프도 테두리가 없다 */
+.sk-plot { height: 152px; padding: 12px 8px; border: 0; background: none; }
+.sk-plot svg { display: block; width: 100%; height: 100%; }
+
+.sk-facts { display: grid; gap: 0; padding: 4px 16px; }
+
+.sk-facts i {
+  height: 13px;
+  margin: 13px 0;
+  border-radius: 999px;
+  background: #ededeb;
+}
+
+.sk-facts i:nth-child(1) { width: 62%; }
+.sk-facts i:nth-child(2) { width: 48%; }
+.sk-facts i:nth-child(3) { width: 55%; }
+.sk-facts i:nth-child(4) { width: 44%; }
+
+.sk-course { height: 50px; }
+
+/* the skeleton's companion: names the missing answer AND goes there */
+.rep-jump {
+  display: block;
+  margin-top: 14px;
+  padding: 13px 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: var(--lime);
+  box-shadow: 0 4px 0 var(--ink);
+  color: #1c1c1c;
+  text-align: center;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rep-jump:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--ink); }
+.rep-jump .rj-t { display: block; font-size: 14px; font-weight: 900; word-break: keep-all; }
+.rep-jump .rj-s { display: block; margin-top: 3px; font-size: 11.5px; font-weight: 700; opacity: .62; }
+.rep-jump .rj-s::after { content: " ↑"; }
+
+.rep.ready ~ .rep-jump, .rep-jump.hide { display: none; }
+
+.rep { display: none; }
+.rep.ready { display: block; }
+.rep.ready + .rep-empty, .rep-empty.hide { display: none; }
+
+/* 레이더(.rad)와 같은 취급 — 테두리 없이 폭을 다 쓴다. 카드에 넣으면
+   박스 안의 박스가 되고, 안쪽 여백만큼 선이 쪼그라든다. */
+.rep-plot {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: -2px auto 2px;
+}
+
+.rep-facts {
+  display: grid;
+  gap: 0;
+  margin-top: 16px;
+  padding: 4px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.rf {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.rf:last-child { border-bottom: 0; }
+.rf .k { flex: 1 1 auto; color: var(--gray-500); font-size: 13px; font-weight: 700; }
+.rf .v { flex: none; color: #1c1c1c; font-size: 14.5px; font-weight: 800; }
+
+.rep .cgroup-label { margin-top: 20px; }
+
+
+.rep-courses {
+  display: grid;
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.rc {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+  color: #1c1c1c;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rc .rcn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--lime);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.rc .rcb { flex: 1 1 auto; min-width: 0; }
+.rc .rct { display: block; font-size: 14px; font-weight: 800; }
+.rc .rcs { display: block; margin-top: 2px; color: var(--gray-500); font-size: 11.5px; font-weight: 700; }
+.rc::after { content: "→"; flex: none; color: var(--gray-400); font-size: 14px; font-weight: 900; }
+.rc:active { transform: translateY(2px); }
+
+.rep-why {
+  margin: 14px 0 0;
+  color: #575753;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+/* ============================================================
+   INFO & SALES pages (from the PODO KOREAN deck)
+   ============================================================ */
+.jump {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  width: 100%;
+  margin-top: 26px;
+}
+
+.jbtn {
+  display: grid;
+  place-items: center;
+  padding: 13px 8px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+  color: #1c1c1c;
+  font-size: 13.5px;
+  font-weight: 800;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.jbtn:active { transform: translateY(2px); }
+
+.usp {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+  margin-top: 24px;
+}
+
+.uspc {
+  padding: 16px 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.uspc .n { display: block; color: #1c1c1c; font-size: 21px; font-weight: 900; line-height: 1.1; }
+.uspc .t { display: block; margin-top: 5px; font-size: 13.5px; font-weight: 800; }
+.uspc .s { display: block; margin-top: 4px; color: var(--gray-500); font-size: 11.5px; font-weight: 600; line-height: 1.4; word-break: keep-all; }
+
+/* ------------------------------------------------------------
+   THE OFFER — one plan, then the discounts walked down to it.
+   Built as a receipt on purpose: the learner watches the number
+   fall instead of comparing three cards and guessing.
+   ------------------------------------------------------------ */
+.offer {
+  margin-top: 22px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 0 var(--ink);
+  overflow: hidden;
+}
+
+.offer-h {
+  position: relative;
+  padding: 15px 16px 14px;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--lime);
+}
+
+.obadge {
+  display: inline-block;
+  margin-bottom: 7px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #1c1c1c;
+  color: var(--lime);
+  font-size: 10.5px;
+  font-weight: 900;
+}
+
+.offer-h .ot { display: block; font-size: 19px; font-weight: 900; letter-spacing: -.01em; }
+.offer-h .os { display: block; margin-top: 3px; color: rgba(28,28,28,.62); font-size: 12px; font-weight: 700; }
+
+.calc { padding: 6px 16px 4px; }
+
+.cl {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececea;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.cl span { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 6px; }
+.cl b { flex: none; font-size: 15px; font-weight: 800; }
+
+.cl em {
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--green-100);
+  color: var(--green-500);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.cl .d3 {
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #1c1c1c;
+  color: var(--lime);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.cl.cut b { color: var(--green-500); }
+
+.cl.total {
+  align-items: center;
+  padding: 13px 0 14px;
+  border-bottom: 0;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.cl.total b { font-size: 30px; font-weight: 900; letter-spacing: -.02em; }
+
+.offer-f {
+  padding: 11px 16px;
+  border-top: 1px solid var(--gray-200);
+  background: var(--gray-100);
+  color: #575753;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.offer-f b { color: #1c1c1c; font-weight: 900; }
+
+/* the next decision, not a competing one — shown after they're in */
+.upsell {
+  margin-top: 14px;
+  padding: 14px 16px 15px;
+  border-radius: 13px;
+  background: var(--gray-100);
+}
+
+.upsell .ut { display: block; font-size: 13.5px; font-weight: 900; }
+
+.urow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 8px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.urow.best { background: var(--green-100); box-shadow: inset 0 0 0 1.5px var(--green-500); }
+.urow .ul { flex: none; width: 48px; font-size: 12.5px; font-weight: 800; }
+.urow .uv { font-size: 16px; font-weight: 900; }
+.urow .uv small { margin-left: 2px; color: var(--gray-500); font-size: 11px; font-weight: 700; }
+.urow .usave { margin-left: auto; color: var(--green-500); font-size: 11.5px; font-weight: 900; }
+
+.unote { margin: 9px 0 0; color: var(--gray-500); font-size: 11.5px; font-weight: 700; }
+
+.morelink {
+  display: block;
+  margin-top: 14px;
+  padding: 12px;
+  border: 1.5px dashed #b0b0ac;
+  border-radius: 11px;
+  color: var(--gray-500);
+  font-size: 12.5px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+.morelink::after { content: " →"; }
+
+/* ---------- the full table, only if they ask ---------- */
+.ptable {
+  width: 100%;
+  margin-top: 22px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  font-size: 12.5px;
+}
+
+.ptable th, .ptable td { padding: 10px 8px; text-align: center; }
+
+.ptable thead th {
+  border-bottom: 1px solid var(--gray-200);
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 800;
+}
+
+.ptable tbody td { border-bottom: 1px solid #ececea; font-weight: 800; }
+.ptable tbody tr:last-child td { border-bottom: 0; }
+.ptable tbody tr.grp td { border-top: 1px solid var(--gray-200); }
+.ptable tbody tr.grp:first-child td { border-top: 0; }
+
+.ptable td[rowspan] {
+  background: var(--gray-100);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.ptable td[rowspan] small { display: block; margin-top: 3px; color: var(--gray-500); font-size: 10.5px; font-weight: 700; }
+.ptable td.hi { background: var(--green-100); color: #1c1c1c; }
+
+.pt-note { margin: 12px 0 0; color: var(--gray-500); font-size: 11.5px; font-weight: 700; line-height: 1.5; }
+
+/* FAQ */
+.faq { display: grid; gap: 11px; margin-top: 24px; }
+
+.qa {
+  padding: 14px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.qa .q { display: block; font-size: 14px; font-weight: 800; line-height: 1.4; word-break: keep-all; }
+.qa .q::before { content: "Q. "; color: var(--green-500); font-weight: 900; }
+.qa .a { display: block; margin-top: 7px; color: #575753; font-size: 13px; font-weight: 600; line-height: 1.5; word-break: keep-all; }
+
+/* ============================================================
+   LINE BREAKING
+   ------------------------------------------------------------
+   word-break:keep-all keeps Korean words whole, and several
+   components inherit it. Japanese has no spaces, so under
+   keep-all a JP sentence can only break at 。 — it then runs
+   the full width and rams the card edge. Every Japanese-bearing
+   element opts back out to normal breaking.
+   (The plan and sales pages are Korean, so they keep keep-all.)
+   ============================================================ */
+.title-ja,
+.section-subtitle .ja,
+.brand-title .ja,
+.bubble.intro > .cue,
+.who-name,
+.transition-copy,
+.known-row .j,
+.pair-side small,
+.blk-item .cap small,
+.letter-card > .english,
+.model-line > .translation,
+.word-card .mean,
+.sign .english,
+.uspc .s,
+.card .row,
+.mission li,
+.end-title,
+.end-copy,
+.hint-chip,
+.brand-page:not(#p-info) .brand-sub {
+  word-break: normal;
+  line-break: normal;
+}
+
+/* ============================================================
+   CURRICULUM PAGE
+   ------------------------------------------------------------
+   One long page instead of four thin ones. The learner reads it
+   bottom-up in the order they will actually study: 한글 first,
+   then patterns, then the worlds, then freetalking. Every stage
+   answers the same three questions in the same order —
+   what it is, what it looks like, what you can do after it.
+   ============================================================ */
+.cur-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px auto 0;
+}
+
+/* the four stages as a jump rail, so the tutor can open one directly */
+.rail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.rl {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: 11px 4px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  background: #fff;
+  color: #1c1c1c;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rl:active { transform: translateY(2px); }
+
+.rl-n {
+  display: grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 999px;
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 900;
+}
+
+.rl-t { font-size: 12px; font-weight: 800; }
+
+/* ---------- one stage ---------- */
+.stg {
+  margin-top: 14px;
+  padding: 17px 15px 19px;
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  background: #fff;
+  scroll-margin-top: 14px;
+}
+
+.stg-h { display: flex; align-items: center; gap: 10px; }
+
+.stg-n {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 999px;
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 900;
+}
+
+.stg-t { font-size: 18px; font-weight: 900; letter-spacing: -.01em; }
+
+.stg-c {
+  margin-left: auto;
+  flex: none;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.stg-p {
+  margin: 10px 0 0;
+  color: #575753;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+/* the demo area — background only, so a stage stays ONE box deep */
+.stg-viz {
+  margin-top: 13px;
+  padding: 15px 12px;
+  border-radius: 12px;
+  background: var(--gray-100);
+}
+
+.viz-cap {
+  margin: 11px 0 0;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* what you can do at the end of the stage */
+.stg-goal {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 13px;
+  padding: 11px 13px;
+  border-radius: 11px;
+  background: var(--green-100);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.stg-goal::before { content: "→"; flex: none; color: var(--green-500); font-weight: 900; }
+
+/* the lime thread that shows the stages are one road, not four products */
+.stg-link {
+  display: block;
+  width: 4px;
+  height: 18px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: var(--lime);
+}
+
+/* ---------- stage 1 · letters snapping into blocks ---------- */
+.crow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.crow + .crow { margin-top: 11px; }
+.crow i { color: var(--gray-400); font-size: 15px; font-style: normal; font-weight: 900; }
+
+.lt {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.lt.c { background: var(--c-bg); }
+.lt.v { background: var(--v-bg); }
+.lt.b { background: var(--b-bg); }
+
+/* the assembled syllable, seats showing through */
+.sq {
+  position: relative;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sq em { position: absolute; }
+.sq.lr em.zc { inset: 0 54% 0 0; background: var(--c-bg); }
+.sq.lr em.zv { inset: 0 0 0 46%; background: var(--v-bg); }
+.sq.b3 em.zc { inset: 0 54% 32% 0; background: var(--c-bg); }
+.sq.b3 em.zv { inset: 0 0 32% 46%; background: var(--v-bg); }
+.sq.b3 em.zb { inset: 68% 0 0 0; background: var(--b-bg); }
+
+.sq b {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.ck {
+  flex: none;
+  min-width: 34px;
+  color: var(--gray-500);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* ---------- stage 2 · one pattern, many sentences ---------- */
+.sent { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+
+.wrd {
+  padding: 7px 11px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14.5px;
+  font-weight: 800;
+}
+
+.wrd.hole { border-style: dashed; background: var(--green-100); border-color: var(--green-500); letter-spacing: -.06em; }
+.wrd.pat { background: #1c1c1c; color: var(--lime); }
+
+/* the whole point of the stage: ONE frame, and the sentences fall out of it */
+.pf-tag {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 9px;
+  padding: 3px 11px;
+  border-radius: 999px;
+  background: #1c1c1c;
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.pf-tag.out { margin-top: 9px; background: var(--green-500); color: #fff; }
+
+.pf-arrow {
+  display: block;
+  margin-top: 10px;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.pf-arrow::before { content: "↓"; display: block; color: var(--green-500); font-size: 15px; font-weight: 900; }
+
+.pat-out { display: grid; gap: 6px; }
+
+.po {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* highlighter, not a chip — a padded chip fakes a space into 학생입니다 */
+.po b { background: linear-gradient(transparent 48%, var(--lime) 48%); font-weight: 900; }
+.po.more { background: none; color: var(--gray-500); font-size: 12px; font-weight: 700; }
+
+/* a real line from the course, with the pattern it hands over */
+.ex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 9px;
+  padding: 10px 13px;
+  border-radius: 11px;
+  background: var(--gray-100);
+}
+
+.ex-lv {
+  flex: none;
+  width: 34px;
+  color: var(--gray-500);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ex-k { flex: 1 1 auto; min-width: 0; font-size: 13.5px; font-weight: 800; }
+
+.ex-p {
+  flex: none;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #1c1c1c;
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* ---------- stage 3 · the four worlds ---------- */
+.worlds { display: grid; gap: 10px; margin-top: 13px; }
+
+.wd {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--gray-100);
+}
+
+.wd img { width: 44px; height: 44px; }
+.wd-h { display: flex; align-items: baseline; gap: 8px; font-size: 15px; font-weight: 900; }
+.wd-h small { margin-left: auto; color: var(--gray-500); font-size: 11px; font-weight: 700; }
+
+.wd-l {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 11px;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.wd-l small { margin-left: auto; flex: none; color: var(--gray-500); font-size: 10.5px; font-weight: 700; }
+
+/* ---------- stage 4 · freetalking ---------- */
+.free-hero { display: flex; align-items: center; gap: 14px; }
+.free-hero img { flex: none; width: 96px; height: 96px; }
+
+.free-hero p {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.free-hero p small {
+  display: block;
+  margin-top: 6px;
+  color: var(--gray-500);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+/* themes read as icons first — the names are abstract, the shapes aren't */
+.tgrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tg {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 7px;
+  padding: 11px 5px 10px;
+  border-radius: 11px;
+  background: var(--gray-100);
+  font-size: 11.5px;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.tg svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: #1c1c1c;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tg svg .fill { fill: var(--lime); }
+
+.tg.more {
+  align-content: center;
+  background: var(--lime);
+  color: #1c1c1c;
+}
+
+/* one real question, so "주제" stops being an abstraction */
+.qcard {
+  margin-top: 10px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  background: var(--green-100);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.qcard small {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green-500);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* ============================================================
+   PAGED MODE  (the default)
+   ------------------------------------------------------------
+   The deck is a flat list of pages under .phone, so "one at a
+   time" costs nothing structurally: hide the siblings, show one.
+   Scrolling is one tap away and remains the fallback — printing,
+   Cmd+F and scanning ahead all depend on it, so this never
+   becomes the only way to read the deck. @media print always
+   expands the whole deck regardless of mode.
+   ============================================================ */
+.mode-toggle.view { top: 46px; }
+
+.phone.paged > * { display: none; }
+.phone.paged > .pg-on { display: flex; }
+.phone.paged > .section.pg-on { display: block; }
+
+/* the section rules that centre a lone component use :has(), which
+   still applies — but display:block above would drop the flex they
+   set up, so re-assert it for those pages only */
+.phone.paged > .section.pg-on:has(> .anat),
+.phone.paged > .section.pg-on:has(> .build),
+.phone.paged > .section.pg-on:has(> .blk-row),
+.phone.paged > .section.pg-on:has(> .combo),
+.phone.paged > .section.pg-on:has(> .payoff),
+.phone.paged > .section.pg-on:has(> .usp),
+.phone.paged > .section.pg-on:has(> .offer),
+.phone.paged > .section.pg-on:has(> .ptable) { display: flex; }
+
+body { padding-bottom: 84px; }         /* the bar must not cover the last line */
+
+/* a page on its own should fill the screen rather than leave a dead band
+   above the bar — the :has() centring rules then have room to work */
+.phone.paged > .pg-on { min-height: calc(100vh - 118px); }
+@supports (height: 100dvh) { .phone.paged > .pg-on { min-height: calc(100dvh - 118px); } }
+
+/* Paged mode fills the screen with the single active page, which already
+   reserves room for the bar (the -118px above). The scroll-mode chrome that
+   lives OUTSIDE that page — the .phone 100vh floor and the body's bottom
+   padding — would otherwise stack on top of a full-height page and force a
+   scroll even on a short one. Drop both while paged. */
+.phone.paged { min-height: 0; }
+body.paged { padding-bottom: 0; }
+
+/* The bar floats over the bottom of the screen. On a short page that is just
+   empty card, so nothing to clear; on a page tall enough to scroll, the last
+   line has to stop above it. Put that clearance INSIDE the scrollable page
+   (only .section pages ever grow tall — brand/transition pages stay short),
+   so it travels with the scroll instead of stacking onto every page the way
+   the body padding did. */
+.phone.paged > .section.pg-on { padding-bottom: 88px; }
+
+.pager {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  z-index: 60;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: min(calc(100% - 32px), 448px);
+  padding: 8px;
+  border: 1px solid var(--gray-200);
+  border-radius: 999px;
+  background: #fff;
+  /* The one blurred shadow in the system, and the only element that earns it:
+     the bar genuinely floats above the page, and a hard offset that reads as
+     construction on a card reads as a smear on something detached. Everything
+     that sits IN the page keeps flat edges. */
+  box-shadow: 0 6px 18px rgba(28, 28, 28, .10);
+}
+
+.pg-btn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--gray-200);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pg-btn:active { transform: translateY(2px); }
+.pg-next { background: var(--lime); border-color: var(--lime); }   /* the only primary action */
+.pg-btn:disabled { background: var(--gray-100); border-color: var(--gray-200); color: var(--gray-400); cursor: default; }
+.pg-next:disabled { background: var(--gray-100); border-color: var(--gray-200); }
+
+/* the browser's own focus ring landed as a stray blue circle on a page with no
+   other blue except the tutor's script — give it the system's own ring */
+.pg-btn:focus-visible { outline: 2px solid var(--green-500); outline-offset: 2px; }
+.pg-btn:disabled:active { transform: none; }
+
+.pg-mid { flex: 1 1 auto; min-width: 0; }
+
+.pg-label {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  justify-content: center;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.pg-label .pg-act { font-size: 14.5px; font-weight: 800; }
+.pg-label .pg-n { color: var(--gray-500); }
+
+/* a page opened from the 포도 안내 index is off the Next chain, so say so */
+.pg-label .pg-n.ref { color: var(--green-500); font-weight: 800; }
+
+@media print {
+  .pager { display: none; }
+  .phone.paged > * { display: block; }   /* printing always gets the whole deck */
+}
+
+.pg-teach, .pg-exit { width: 32px; height: 32px; background: #fff; font-size: 13px; font-weight: 900; }
+.phone.paged ~ .pager .pg-exit { background: var(--ink); border-color: var(--ink); color: #fff; }
+.pg-teach.on { background: var(--green-500); border-color: var(--green-500); color: #fff; }
+
+/* ============================================================
+   Frameless page cards — no black outline/offset-shadow around
+   the page itself. Inner components keep their borders; only the
+   OUTER page frame is dropped, so pages float on the background.
+   ============================================================ */
+.section        { border-color: transparent; box-shadow: none; }
+.brand-page     { box-shadow: none; }
+.transition-page { box-shadow: none; }
+
+
+/* ============================================================
+   PATTERN ACTIVITIES  (문장 활동)
+   ------------------------------------------------------------
+   The hangul deck answers everything with .tap-grid / .builder.
+   A pattern deck needs three more, and they are the three the
+   interactive core lesson already ships — so the markup, the
+   class names and the states are taken from
+   interactive/sample-lesson-interactive.html rather than invented:
+
+     .slot / .answer-space  → typed blanks     (kind "value")
+     .choose-row .opt       → tap one of two   (kind "selection")
+     .choice → .build-zone  → order the words  (kind "order")
+
+   Feedback stays quiet and immediate, the way a tap-tile's does:
+   right fills lime, wrong greys back out, and the tutor still leads.
+   ============================================================ */
+
+/* ---------- typed blanks ---------- */
+.slot-input.correct {
+  border-style: solid;
+  background: var(--green-100);
+  border-color: var(--green-500);
+}
+
+.slot-input.wrong {
+  border-color: #d9534f;
+  background: #fdf1f1;
+  color: #d9534f;
+  animation: miss .3s;               /* the builder's shake, reused */
+}
+
+/* a write-in area becomes a real field and keeps the tinted
+   "fill the whole thing here" box it already had */
+.answer-space.as-input {
+  padding: 0;
+  color: #1c1c1c;
+}
+
+.answer-space.as-input .space-input,
+.answer-space.as-input .free-input {
+  display: block;
+  width: 100%;
+  min-height: inherit;
+  padding: 13px 16px;
+  border: 0;
+  background: transparent;
+  color: #1c1c1c;
+  font: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  resize: none;
+  -webkit-appearance: none;
+}
+
+.answer-space.as-input .space-input:focus,
+.answer-space.as-input .free-input:focus { outline: none; }
+.answer-space.as-input:focus-within { background: #fff; }
+
+.answer-space.as-input .space-input::placeholder,
+.answer-space.as-input .free-input::placeholder { color: #d8d8d4; font-weight: 700; }
+
+.answer-space.as-input.correct,
+.bubble.me .answer-space.as-input.correct { background: #e9fbcf; }
+
+/* ---------- order the words ---------- */
+/* the answer area turns into the tray the chips land in; the pool
+   underneath holds the ones not placed yet */
+.build-zone {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  color: #1c1c1c;
+}
+
+.build-zone .choice,
+.chip-pool .choice { margin: 0; }
+
+.build-zone.correct,
+.bubble.me .build-zone.correct { background: #e9fbcf; }
+
+.build-zone.wrong {
+  background: #fdf1f1;
+  box-shadow: inset 0 0 0 1.5px #d9534f;
+}
+
+.chip-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 20px;
+  margin-top: 10px;
+}
+
+.choice {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.choice:active { transform: translateY(1px); }
+
+/* ---------- tap one of two ---------- */
+.opt {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.opt.correct { border-style: solid; background: var(--green-100); border-color: var(--green-500); }
+
+/* a wrong pick greys back out and STAYS greyed — `chosen` is the class
+   that travels, so the look has to survive as long as the choice does
+   (a 700ms flash is invisible to the other screen) */
+.opt.chosen:not(.correct) { background: var(--gray-100); color: var(--gray-400); }
+.opt.wrong { border-color: #d9534f; background: #fdf1f1; color: #d9534f; animation: miss .3s; }
+.opt.dim { opacity: .35; }
+
+/* ---------- which part of the Japanese line the blank asks for ----------
+   The header strip carries the whole sentence, but the blank is usually only
+   a piece of it — a particle, an ending, one clause. A highlighter swipe
+   under that piece (the same one the 안내 page uses on patterns) says "this
+   is the part you say in Korean", without adding a second line of text.
+   No mark means the whole line is the answer. */
+.answer-label .target {
+  background: linear-gradient(transparent 52%, var(--lime) 52%);
+  color: #1c1c1c;
+  font-weight: 800;
+}
+
+/* ---------- self-check list ---------- */
+.mission li {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.mission li.checked::before {
+  content: "✓";
+  background: var(--green-100);
+  border-color: var(--green-500);
+  color: #1c1c1c;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 13px;
+  text-align: center;
+}
+
+/* ---------- teaching mode ----------
+   Same rule as the letter deck: the answer is present for the tutor and
+   never loud. Typed blanks take the answer as their placeholder (set in
+   the deck's script — CSS cannot reach inside an input); these two have
+   nowhere to put one, so they get a ghost of their own. */
+body.teaching .opt[data-correct]:not(.chosen) { box-shadow: 0 0 0 2.5px #e6e6e4; }
+
+body.teaching .build-zone:not(:has(> *))::after {
+  content: attr(data-a);
+  color: #ddddd9;
+  font-size: 17px;
+  font-weight: 700;
+}

@@ -1,0 +1,34 @@
+apiVersion: podo.curriculum/v1
+kind: Course
+metadata:
+  # Permanent key into state/*.lock.yaml. Renaming this orphans the live course —
+  # tools/validate.py refuses a rename that has no matching state move.
+  slug: hangul-lv1
+
+spec:
+  curriculumType: BASIC        # BASIC | SMART_TALK | TRIAL
+  classLevel: "1"              # → CLASS_LEVEL (grape truncates past 3 decimals)
+  lessonTime: 25               # → LESSON_TIME; 15 or 25
+  enabled: false               # → USE_YN. false until every lesson has both decks.
+  difficulty: BEGINNER
+
+  # → BOOK_TITLE (json). ko/en/ja also fan out to BOOK_NAME / EN_BOOK_NAME / JP_BOOK_NAME
+  # on both the COVER row and every MAIN row, the way class_course_ps.php does it.
+  title:
+    ko: 한글 떼기
+    en: Hangul Basics
+    ja: ハングル入門
+
+  # → DESCRIPTION (json)
+  description:
+    ko: 한글을 한 번도 본 적 없는 일본어 화자가 어떤 한국어 음절이든 소리 내어 읽을 수 있게 되는 11과.
+    ja: ハングルを見たことのない日本語話者が、どんな韓国語の音節でも声に出して読めるようになる全11課。
+
+  # → BOOK_THUMBNAIL. Uploaded alongside the decks; the tool substitutes the URL.
+  # thumbnail: assets/cover.png
+
+  # → le_tutor_curriculum rows, curriculum_type = PODO_KR_BASIC
+  # allowRandom: random matching + direct assignment. assignedOnly: direct only, and wins on overlap.
+  tutorGroups:
+    allowRandom: []
+    assignedOnly: []
