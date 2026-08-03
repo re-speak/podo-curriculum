@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+# Build output. The zip is regenerated from source on every validate and deploy;
+# committing it would make the digest depend on who ran the build.
+/build/
+*.zip

@@ -1,0 +1,20 @@
+# Written by CI. Do not hand-edit. See prod.lock.yaml for why this file exists.
+#
+# Shape, once the first apply has run:
+#
+#   courses:
+#     kr/hangul-lv1:
+#       coverId: 1043                      # the CLASS_WEEK=0, BOOK_TYPE='COVER' row
+#       lessons:
+#         01-block-and-first-sounds:
+#           courseRowId: 1044              # → s3://respeak-lemonade/lemonboard-html/1044/
+#           lemonboard:
+#             lecture:  rm_a1b2c3          # CLASS_LEMONBOARD_KEY
+#             prestudy: rm_d4e5f6          # PRESTUDY_LEMONBOARD_KEY
+#           digest:
+#             lecture:  sha256:9f2a...
+#             prestudy: sha256:41cd...
+apiVersion: podo.curriculum/v1
+kind: State
+environment: stage
+courses: {}

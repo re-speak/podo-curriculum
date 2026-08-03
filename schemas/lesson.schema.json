@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/re-speak/podo-curriculum/schemas/lesson.schema.json",
+  "title": "Lesson",
+  "description": "One lesson. Materialises as a MAIN row (BOOK_TYPE='MAIN', CLASS_WEEK=week) in GT_CLASS_COURSE, with two lemonboard HTML rooms hanging off it.",
+  "type": "object",
+  "required": ["apiVersion", "kind", "metadata", "spec"],
+  "additionalProperties": false,
+  "properties": {
+    "apiVersion": { "const": "podo.curriculum/v1" },
+    "kind": { "const": "Lesson" },
+    "metadata": {
+      "type": "object",
+      "required": ["slug"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": { "type": "string", "pattern": "^[0-9]{2}-[a-z0-9]+(-[a-z0-9]+)*$" }
+      }
+    },
+    "spec": {
+      "type": "object",
+      "required": ["week", "title", "decks"],
+      "additionalProperties": false,
+      "properties": {
+        "week": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "CLASS_WEEK. 0 is reserved for the course COVER row."
+        },
+        "title": { "$ref": "course.schema.json#/$defs/localised" },
+        "decks": {
+          "type": "object",
+          "description": "Both slots are mandatory. A missing prestudy deck leaves PRESTUDY_LEMONBOARD_KEY empty, and class creation then fails at /rooms/null/duplicate — grape blocks it for the same reason.",
+          "required": ["lecture", "prestudy"],
+          "additionalProperties": false,
+          "properties": {
+            "lecture":  { "$ref": "#/$defs/deck" },
+            "prestudy": { "$ref": "#/$defs/deck" }
+          }
+        },
+        "teaches": { "type": "object" },
+        "outcome": { "type": "string" },
+        "prerequisites": { "type": "array", "items": { "type": "string" } },
+        "source": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "deck": {
+      "type": "object",
+      "required": ["entry"],
+      "additionalProperties": false,
+      "properties": {
+        "entry": {
+          "type": "string",
+          "pattern": "^(lecture|prestudy)/[^/]+\\.html$",
+          "description": "Lesson-relative path to the deck's HTML. Its sibling assets ride along in the zip."
+        }
+      }
+    }
+  }
+}

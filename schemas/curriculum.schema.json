@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/re-speak/podo-curriculum/schemas/curriculum.schema.json",
+  "title": "Curriculum",
+  "description": "Repo-level configuration. One per repository.",
+  "type": "object",
+  "required": ["apiVersion", "kind", "metadata", "spec"],
+  "additionalProperties": false,
+  "properties": {
+    "apiVersion": { "const": "podo.curriculum/v1" },
+    "kind": { "const": "Curriculum" },
+    "metadata": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "owners": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "spec": {
+      "type": "object",
+      "required": ["classType", "bookFormat", "languages", "environments"],
+      "additionalProperties": false,
+      "properties": {
+        "classType": { "const": "PODO" },
+        "bookFormat": { "const": "HTML" },
+        "languages": {
+          "type": "object",
+          "minProperties": 1,
+          "description": "Keyed by the courses/ subdirectory name.",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["langType"],
+            "additionalProperties": false,
+            "properties": {
+              "langType": {
+                "type": "string",
+                "pattern": "^[A-Z]{2,4}$",
+                "description": "GT_CLASS_COURSE.LANG_TYPE. KR for Korean (Language.KOREAN.simpleCode in podo-backend)."
+              },
+              "audience": { "type": "string" },
+              "displayName": { "type": "string" }
+            }
+          }
+        },
+        "environments": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "required": ["lemonboardApi", "grapeSyncApi", "s3Bucket", "s3Prefix", "state"],
+            "additionalProperties": false,
+            "properties": {
+              "lemonboardApi": { "type": "string", "format": "uri" },
+              "grapeSyncApi": { "type": "string", "format": "uri" },
+              "s3Bucket": { "type": "string" },
+              "s3Prefix": { "type": "string" },
+              "state": { "type": "string" }
+            }
+          }
+        },
+        "neverDeploy": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

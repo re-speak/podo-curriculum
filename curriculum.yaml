@@ -1,0 +1,43 @@
+apiVersion: podo.curriculum/v1
+kind: Curriculum
+metadata:
+  name: podo-curriculum
+  owners: [content-team]
+
+spec:
+  # Every course row this repo writes is CLASS_TYPE='PODO'. Nothing else is supported.
+  classType: PODO
+
+  # HTML 교재 only. The PDF path (podo-pdf-tool → page images → room pages) is
+  # deliberately out of scope; grape still owns it for legacy courses.
+  bookFormat: HTML
+
+  # Which languages live under courses/. The directory name IS the LANG_TYPE.
+  languages:
+    kr:
+      langType: KR
+      # Support text inside a deck is written in this language, not English.
+      audience: ja
+      displayName: 한국어
+
+  environments:
+    stage:
+      lemonboardApi: https://stage-lemonboard-api.re-speak.com
+      grapeSyncApi: https://stage-admin.podo.internal/api/curriculum/sync
+      s3Bucket: respeak-lemonade
+      s3Prefix: lemonboard-html
+      state: state/stage.lock.yaml
+    prod:
+      lemonboardApi: https://lemonboard-api.re-speak.com
+      grapeSyncApi: https://admin.podo.internal/api/curriculum/sync
+      s3Bucket: respeak-lemonade
+      s3Prefix: lemonboard-html
+      state: state/prod.lock.yaml
+
+  # Directories the sync tool will never walk, no matter what is inside them.
+  # sandbox/ is committed on purpose — experiments should be reviewable — but it
+  # is structurally undeployable, not merely conventionally so. See tools/model.py.
+  neverDeploy:
+    - sandbox
+    - references
+    - docs
