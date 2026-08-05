@@ -67,11 +67,23 @@ steps:
         echo "── plan ($_DEPLOY_ENV) ──"
         python3 tools/plan.py --env "$_DEPLOY_ENV"
 
-        # grape 의 sync 엔드포인트는 아직 없다(docs/sync-contract.md). 토큰이 설정되기 전까지는
-        # plan 만 찍고 깨끗하게 끝낸다 — 아무도 만들지 않은 엔드포인트를 향해 매번 실패하는
-        # 파이프라인은 결국 아무도 안 보게 된다.
-        if [ -z "$${PODO_CURRICULUM_SYNC_TOKEN:-}" ]; then
-          echo "PODO_CURRICULUM_SYNC_TOKEN 미설정 — grape sync 엔드포인트가 아직 없다. plan 만 수행."
+        # 인증은 Google OIDC ID 토큰이다. 저장하고 회전시킬 자격증명이 없다 — 메타데이터
+        # 서버에서 이 빌드 SA 의 토큰을 그때그때 받아 붙이고, grape 가 구글 공개키로 서명을
+        # 검증한다(수명 1시간). audience 는 호출할 바로 그 URL 이어야 한다 — 다른 서비스용으로
+        # 발급된 토큰의 재사용을 막는 장치라, curriculum.yaml 의 grapeSyncApi 와 정확히 같아야 한다.
+        SYNC_URL="$$(python3 - "$_DEPLOY_ENV" <<'PY'
+        import sys, yaml
+        env = sys.argv[1]
+        print(yaml.safe_load(open('curriculum.yaml'))['spec']['environments'][env]['grapeSyncApi'])
+        PY
+        )"
+        echo "sync 대상: $$SYNC_URL"
+
+        export PODO_CURRICULUM_SYNC_TOKEN="$$(curl -sf -H 'Metadata-Flavor: Google' \
+          "http://metadata/computeMetadata/v1/instance/service-accounts/default/identity?audience=$$SYNC_URL" || true)"
+
+        if [ -z "$${PODO_CURRICULUM_SYNC_TOKEN}" ]; then
+          echo "OIDC 토큰을 받지 못했다 — 메타데이터 서버 접근 실패. plan 만 수행하고 끝낸다."
           exit 0
         fi
         python3 tools/apply.py --env "$_DEPLOY_ENV"

@@ -27,7 +27,7 @@ functions, not a second implementation.
 
 ```
 POST {grapeSyncApi}
-Authorization: Bearer <PODO_CURRICULUM_SYNC_TOKEN>
+Authorization: Bearer <Google OIDC ID token>
 Content-Type: multipart/form-data
 ```
 
@@ -114,7 +114,12 @@ becomes an orphan course nobody can reach or update.
 - **Contract validation stays a hard gate.** Same call, same fail-open on 5xx, same block on `severity: error`.
 - **Both slots or neither.** Reject a lesson whose `prestudy` key would end up empty — class creation duplicates `/rooms/null/` and fails downstream.
 - **Removing a lesson deactivates, never deletes.** A learner mid-course holds `pl_user_lesson_progress.lesson_id` pointing at that row. Set `USE_YN='N'`; leave the row.
-- **Token auth, not admin session.** A dedicated credential with only the writes above.
+- **OIDC, not an admin session and not a shared secret.** Cloud Build mints an ID token
+  for its own service account off the metadata server and grape verifies the Google
+  signature. Nothing is stored, nothing needs rotating, and a leaked token dies in an hour.
+  Verify all four: signature, `iss`, `aud` (the called URL — stops a token minted for
+  another service being replayed here), and `email` against an allowlist. Signature alone
+  is authentication, not authorisation — anyone with a Google account can mint a token.
 
 ## Prerequisite: `LANG_TYPE = 'KR'`
 
@@ -129,9 +134,12 @@ this repo or by hand in the admin.
 
 ## Secrets
 
+`PODO_CURRICULUM_SYNC_TOKEN` is no longer a stored secret — the deploy build fills that
+env var with a freshly minted OIDC token. grape decides who may call via
+`CONF_CURRICULUM_SYNC_CALLERS` (comma-separated service-account emails).
+
 | Secret | Used by | What it is |
 |---|---|---|
-| `PODO_CURRICULUM_SYNC_TOKEN` | `deploy-stage`, `deploy-prod` | credential for the endpoint above. Prod's belongs in the `prod` Environment, not as a repo secret. |
 | `PODO_LEMONBOARD_API_KEY_STAGE` | `validate`, `deploy-stage` | lemonboard API bearer key — the same `$conf_dev_lemonboard_key` grape uses |
 | `PODO_LEMONBOARD_API_KEY_PROD` | `deploy-prod` | `$conf_prod_lemonboard_key` |
 
