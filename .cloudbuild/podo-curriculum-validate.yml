@@ -13,13 +13,19 @@ timeout: 900s
 options:
   logging: CLOUD_LOGGING_ONLY
 
-# PR 코멘트에는 classic PAT(cloud-build-github-prod)를 쓴다. cloud-build JSON 안의
-# GITHUB_PAT 은 fine-grained 라 레포별 허용 목록이 있고 podo-curriculum 이 거기 없어 403 이다
-# (reclaim-reaper 가 같은 이유로 이 토큰을 쓴다).
+# 코멘트용 토큰. cloud-build JSON 안의 GITHUB_PAT(fine-grained)을 쓴다.
+#
+# classic PAT(cloud-build-github-prod)이 더 편하지만 쓰지 않는다 — 그 시크릿은 빌드 SA
+# cloud-build@ 가 읽을 수 없고, 읽게 하려면 모든 배포 트리거가 공유하는 SA 에 조직 전체
+# 권한 PAT 을 붙이게 된다. 코멘트 하나 때문에 넓힐 권한이 아니다.
+#
+# 대신 이 fine-grained PAT 의 레포 허용 목록에 podo-curriculum 이 아직 없어서 코멘트는
+# 403 이 난다. 그래서 아래 스텝은 allowFailure 다 — 검증은 초록이고 plan 은 빌드 로그에 남는다.
+# 허용 목록에 레포가 추가되면 코멘트가 자동으로 붙기 시작한다.
 availableSecrets:
   secretManager:
-    - versionName: projects/904677155509/secrets/cloud-build-github-prod/versions/latest
-      env: GH_PAT
+    - versionName: projects/904677155509/secrets/cloud-build/versions/latest
+      env: CB_SECRET
 
 steps:
   # 검증과 계획. 여기서 실패하면 PR 체크가 빨개진다 — 그게 이 빌드의 본체다.
@@ -59,7 +65,7 @@ steps:
   - id: comment-plan
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
     entrypoint: bash
-    secretEnv: [GH_PAT]
+    secretEnv: [CB_SECRET]
     allowFailure: true
     args:
       - -ceu
@@ -67,7 +73,7 @@ steps:
         if [ -z "$${_PR_NUMBER:-}" ]; then
           echo "PR 번호가 없다 — 코멘트를 건너뛴다"; exit 0
         fi
-        export GH_TOKEN="$$GH_PAT"
+        export GH_TOKEN="$$(printf '%s' "$$CB_SECRET" | python3 -c 'import sys,json;print(json.load(sys.stdin)["GITHUB_PAT"])')"
         export PR_NUMBER="$_PR_NUMBER"
         python3 - <<'PY'
         import json, os, urllib.request
