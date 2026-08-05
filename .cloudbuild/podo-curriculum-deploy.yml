@@ -1,0 +1,97 @@
+# 커리큘럼 배포 빌드 (트리거: podo-curriculum-deploy, 수동)
+#
+#   gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
+#     --branch=<브랜치> --substitutions=_DEPLOY_ENV=<stage|prod>
+#
+# GitHub Actions 의 deploy-stage.yml / deploy-prod.yml 을 한 파일로 합쳤다. grape·podo-backend 와
+# 같은 규약이다 — 소스 브랜치와 배포 환경을 각각 고르고, 환경 분기는 case 가드가 한다.
+#
+# prod 를 태그(prod-*) 대신 수동 트리거로 바꾼 이유: 태그 push 는 GitHub 이벤트라 다시
+# Actions 를 부르게 된다. 대신 "main 조상인지"를 빌드 안에서 확인해 같은 보호를 유지한다 —
+# 리뷰를 거치지 않은 커밋이 prod 로 나가지 않아야 한다는 게 태그의 목적이었지 태그 자체가 아니다.
+timeout: 1800s
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+substitutions:
+  _DEPLOY_ENV: stage
+
+availableSecrets:
+  secretManager:
+    - versionName: projects/904677155509/secrets/cloud-build/versions/latest
+      env: CB_SECRET
+
+steps:
+  - id: guard
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    args:
+      - -ceu
+      - |
+        case "$_DEPLOY_ENV" in
+          stage|prod) ;;
+          *) echo "_DEPLOY_ENV 는 stage|prod 만 허용한다 (받은 값: $_DEPLOY_ENV)"; exit 1 ;;
+        esac
+
+        # prod 는 main 에 올라간 것만 나간다. 커리큘럼은 나쁜 덱이 수업 중인 학습자에게 그대로
+        # 보이고, 그걸 잡아줄 lint 가 없다 — 리뷰가 유일한 게이트라서 우회를 막는다.
+        if [ "$_DEPLOY_ENV" = "prod" ]; then
+          git fetch origin main --depth=200 --quiet
+          if ! git merge-base --is-ancestor "$COMMIT_SHA" origin/main; then
+            echo "$COMMIT_SHA 는 main 의 조상이 아니다 — prod 는 리뷰된 것만 배포한다"
+            exit 1
+          fi
+        fi
+
+  - id: apply
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    secretEnv: [CB_SECRET]
+    args:
+      - -ceu
+      - |
+        # cloud-sdk:slim 의 python 은 PEP 668(externally-managed) 이라 시스템 설치를 막는다.
+        # 빌드 컨테이너는 일회용이라 venv 를 만들 이유가 없으므로 그 보호를 끈다.
+        pip install --break-system-packages --quiet -r tools/requirements.txt
+
+        # 키가 없으면 --contract 를 빼고 돈다. validate.py 는 키 없는 --contract 를 거부하는데,
+        # 그건 인증 거절이 통과로 읽히지 않게 하려는 것이다.
+        if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
+          python3 tools/validate.py --contract --env "$_DEPLOY_ENV"
+        else
+          echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다"
+          python3 tools/validate.py --env "$_DEPLOY_ENV"
+        fi
+
+        echo "── plan ($_DEPLOY_ENV) ──"
+        python3 tools/plan.py --env "$_DEPLOY_ENV"
+
+        # grape 의 sync 엔드포인트는 아직 없다(docs/sync-contract.md). 토큰이 설정되기 전까지는
+        # plan 만 찍고 깨끗하게 끝낸다 — 아무도 만들지 않은 엔드포인트를 향해 매번 실패하는
+        # 파이프라인은 결국 아무도 안 보게 된다.
+        if [ -z "$${PODO_CURRICULUM_SYNC_TOKEN:-}" ]; then
+          echo "PODO_CURRICULUM_SYNC_TOKEN 미설정 — grape sync 엔드포인트가 아직 없다. plan 만 수행."
+          exit 0
+        fi
+        python3 tools/apply.py --env "$_DEPLOY_ENV"
+
+  - id: commit-state
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    secretEnv: [CB_SECRET]
+    allowFailure: true
+    args:
+      - -ceu
+      - |
+        # lock 은 어느 DB 행이 어느 slug 의 것인지에 대한 유일한 기록이다. 잃으면 다음 apply 가
+        # 갱신 대신 중복 코스를 만든다. 그래서 apply 가 부분 실패해도 커밋한다.
+        if git diff --quiet -- state/; then
+          echo "state 변경 없음"; exit 0
+        fi
+        export GH_TOKEN="$$(printf '%s' "$$CB_SECRET" | python3 -c 'import sys,json;print(json.load(sys.stdin)["GITHUB_PAT"])')"
+        git config user.name  "podo-curriculum-bot"
+        git config user.email "podo-curriculum-bot@users.noreply.github.com"
+        git add state/
+        git commit -m "chore(state): record $_DEPLOY_ENV apply for $${COMMIT_SHA:0:7}"
+        git push "https://x-access-token:$$GH_TOKEN@github.com/re-speak/podo-curriculum.git" HEAD:main

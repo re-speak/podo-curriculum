@@ -49,13 +49,14 @@
           "minProperties": 1,
           "additionalProperties": {
             "type": "object",
-            "required": ["lemonboardApi", "grapeSyncApi", "s3Bucket", "s3Prefix", "state"],
+            "required": ["lemonboardApi", "grapeSyncApi", "gcsBucket", "gcsPrefix", "publicBaseUrl", "state"],
             "additionalProperties": false,
             "properties": {
               "lemonboardApi": { "type": "string", "format": "uri" },
               "grapeSyncApi": { "type": "string", "format": "uri" },
-              "s3Bucket": { "type": "string" },
-              "s3Prefix": { "type": "string" },
+              "gcsBucket": { "type": "string" },
+              "gcsPrefix": { "type": "string" },
+              "publicBaseUrl": { "type": "string", "format": "uri" },
               "state": { "type": "string" }
             }
           }

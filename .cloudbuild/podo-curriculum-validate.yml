@@ -1,0 +1,108 @@
+# 커리큘럼 검증 빌드 (트리거: podo-curriculum-validate, PR)
+#
+# GitHub Actions `.github/workflows/validate.yml` 을 대체한다. 옮긴 이유는 두 가지다.
+#   1) 이 조직의 GitHub Actions 는 self-hosted day1-runner-respeak 을 써야 한다(IP allowlist).
+#      러너 가용성이 곧 PR 체크 가용성이 되는데, 커리큘럼은 콘텐츠 작업자가 PR 을 올리는 곳이라
+#      "러너가 안 붙어서 체크가 안 돈다"가 그대로 저작 정체로 이어진다.
+#   2) --contract 와 PR 코멘트가 GitHub secret 을 요구했다. Cloud Build 는 같은 토큰을
+#      Secret Manager 에서 빌드 SA 권한으로 읽으므로 GitHub 쪽에 secret 을 두지 않는다.
+#
+# 소스 = PR head 자동 체크아웃(repository_event_config).
+timeout: 900s
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+# 코멘트용 토큰. cloud-build JSON 안의 GITHUB_PAT(fine-grained)을 쓴다.
+#
+# classic PAT(cloud-build-github-prod)이 더 편하지만 쓰지 않는다 — 그 시크릿은 빌드 SA
+# cloud-build@ 가 읽을 수 없고, 읽게 하려면 모든 배포 트리거가 공유하는 SA 에 조직 전체
+# 권한 PAT 을 붙이게 된다. 코멘트 하나 때문에 넓힐 권한이 아니다.
+#
+# 대신 이 fine-grained PAT 의 레포 허용 목록에 podo-curriculum 이 아직 없어서 코멘트는
+# 403 이 난다. 그래서 아래 스텝은 allowFailure 다 — 검증은 초록이고 plan 은 빌드 로그에 남는다.
+# 허용 목록에 레포가 추가되면 코멘트가 자동으로 붙기 시작한다.
+availableSecrets:
+  secretManager:
+    - versionName: projects/904677155509/secrets/cloud-build/versions/latest
+      env: CB_SECRET
+
+steps:
+  # 검증과 계획. 여기서 실패하면 PR 체크가 빨개진다 — 그게 이 빌드의 본체다.
+  - id: validate-and-plan
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    args:
+      - -ceu
+      - |
+        # cloud-sdk:slim 의 python 은 PEP 668(externally-managed) 이라 시스템 설치를 막는다.
+        # 빌드 컨테이너는 일회용이라 venv 를 만들 이유가 없으므로 그 보호를 끈다.
+        pip install --break-system-packages --quiet -r tools/requirements.txt
+
+        # validate.py 는 키 없이 --contract 를 요구하면 거부한다 — 인증 거절이 "깨끗한 통과"로
+        # 읽히지 않게 하려는 것이다. 그래서 키 유무로 여기서 갈라준다. 나머지 검증층은 어느 쪽이든 돈다.
+        # (--contract 는 lemonboard 자체 검증기를 부르며 네트워크 장애·5xx 에는 fail-open 이다.
+        #  lemonboard 가 죽었다고 PR 이 막히면 안 되고, 진짜 data-sync 위반만 막아야 한다.)
+        if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
+          python3 tools/validate.py --contract --env stage
+        else
+          echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다"
+          python3 tools/validate.py --env stage
+        fi
+
+        {
+          echo '### Curriculum plan — `stage`'
+          echo
+          echo '```'
+          python3 tools/plan.py --env stage
+          echo '```'
+          echo
+          echo '_머지 후 `podo-curriculum-deploy` 트리거로 stage 에 적용한다._'
+        } | tee /workspace/plan.md
+
+  # 코멘트는 부가 기능이다. 토큰·API 문제로 코멘트를 못 달았다고 검증 결과를 뒤집지 않는다 —
+  # plan 은 앞 단계의 빌드 로그에 이미 남아 있다.
+  - id: comment-plan
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    secretEnv: [CB_SECRET]
+    allowFailure: true
+    args:
+      - -ceu
+      - |
+        if [ -z "$${_PR_NUMBER:-}" ]; then
+          echo "PR 번호가 없다 — 코멘트를 건너뛴다"; exit 0
+        fi
+        export GH_TOKEN="$$(printf '%s' "$$CB_SECRET" | python3 -c 'import sys,json;print(json.load(sys.stdin)["GITHUB_PAT"])')"
+        export PR_NUMBER="$_PR_NUMBER"
+        python3 - <<'PY'
+        import json, os, urllib.request
+
+        repo = "re-speak/podo-curriculum"
+        pr = os.environ["PR_NUMBER"]
+        body = open("/workspace/plan.md", encoding="utf-8").read()
+        marker = "### Curriculum plan"
+        token = os.environ["GH_TOKEN"]
+
+        def api(path, method="GET", payload=None):
+            req = urllib.request.Request(
+                f"https://api.github.com/repos/{repo}/{path}", method=method,
+                data=json.dumps(payload).encode() if payload else None,
+                headers={"Authorization": f"Bearer {token}",
+                         "Accept": "application/vnd.github+json",
+                         "Content-Type": "application/json"})
+            with urllib.request.urlopen(req) as r:
+                return json.loads(r.read() or "null")
+
+        # 푸시마다 새 코멘트를 쌓지 않고 자기 코멘트를 덮어쓴다.
+        mine = next((c for c in api(f"issues/{pr}/comments")
+                     if c["body"].startswith(marker)), None)
+        if mine:
+            api(f"issues/comments/{mine['id']}", "PATCH", {"body": body})
+            print(f"코멘트 갱신: {mine['id']}")
+        else:
+            api(f"issues/{pr}/comments", "POST", {"body": body})
+            print("코멘트 생성")
+        PY
+    env:
+      - "_PR_NUMBER=$_PR_NUMBER"

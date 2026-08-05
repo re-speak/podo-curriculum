@@ -20,18 +20,30 @@ spec:
       audience: ja
       displayName: 한국어
 
+  # 교재 오브젝트는 GCS(podo-assets)에 있다. AWS S3(respeak-lemonade)에서 이관했다 —
+  # grape 의 공개 자산을 podo-assets 로 모으는 방향에 맞춘 것이고, 교재 HTML/CSS/이미지는
+  # lemonboard 룸이 입장 시 공개 fetch 하는 자산이라 공개 버킷이 맞다.
+  #
+  # 여기 적힌 bucket/prefix 는 참조용이다 — apply.py 는 grape sync 엔드포인트에 POST 만 하고
+  # 오브젝트를 직접 올리지 않는다. 업로드 주체는 grape(uploadLessonHtmlZip)다.
+  #
+  # prefix 가 환경마다 다른 것에 주의: 전 환경의 grape 가 같은 SA 로 같은 버킷에 쓰고
+  # stage DB 는 prod 클론이라 교재 ID 공간이 겹친다. 그래서 비프로덕션만 -{env} 접미사를
+  # 붙여 가른다(prod 는 이미 이관된 경로라 그대로 둔다).
   environments:
     stage:
       lemonboardApi: https://stage-lemonboard-api.re-speak.com
       grapeSyncApi: https://stage-admin.podo.internal/api/curriculum/sync
-      s3Bucket: respeak-lemonade
-      s3Prefix: lemonboard-html
+      gcsBucket: podo-assets
+      gcsPrefix: lemonboard-html-stage
+      publicBaseUrl: https://storage.googleapis.com/podo-assets/
       state: state/stage.lock.yaml
     prod:
       lemonboardApi: https://lemonboard-api.re-speak.com
       grapeSyncApi: https://admin.podo.internal/api/curriculum/sync
-      s3Bucket: respeak-lemonade
-      s3Prefix: lemonboard-html
+      gcsBucket: podo-assets
+      gcsPrefix: lemonboard-html
+      publicBaseUrl: https://storage.googleapis.com/podo-assets/
       state: state/prod.lock.yaml
 
   # Directories the sync tool will never walk, no matter what is inside them.
