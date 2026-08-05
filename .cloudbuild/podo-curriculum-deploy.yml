@@ -51,7 +51,9 @@ steps:
     args:
       - -ceu
       - |
-        pip install --quiet -r tools/requirements.txt
+        # cloud-sdk:slim 의 python 은 PEP 668(externally-managed) 이라 시스템 설치를 막는다.
+        # 빌드 컨테이너는 일회용이라 venv 를 만들 이유가 없으므로 그 보호를 끈다.
+        pip install --break-system-packages --quiet -r tools/requirements.txt
 
         # 키가 없으면 --contract 를 빼고 돈다. validate.py 는 키 없는 --contract 를 거부하는데,
         # 그건 인증 거절이 통과로 읽히지 않게 하려는 것이다.
