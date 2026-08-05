@@ -1,0 +1,87 @@
+# 커리큘럼 검증 빌드 (트리거: podo-curriculum-validate, PR)
+#
+# GitHub Actions `.github/workflows/validate.yml` 을 대체한다. 옮긴 이유는 두 가지다.
+#   1) 이 조직의 GitHub Actions 는 self-hosted day1-runner-respeak 을 써야 한다(IP allowlist).
+#      러너 가용성이 곧 PR 체크 가용성이 되는데, 커리큘럼은 콘텐츠 작업자가 PR 을 올리는 곳이라
+#      "러너가 안 붙어서 체크가 안 돈다"가 그대로 저작 정체로 이어진다.
+#   2) --contract 와 PR 코멘트가 GitHub secret 을 요구했다. Cloud Build 는 같은 토큰을
+#      Secret Manager 에서 빌드 SA 권한으로 읽으므로 GitHub 쪽에 secret 을 두지 않는다.
+#
+# 소스 = PR head 자동 체크아웃(repository_event_config).
+timeout: 900s
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+availableSecrets:
+  secretManager:
+    - versionName: projects/904677155509/secrets/cloud-build/versions/latest
+      env: CB_SECRET
+
+steps:
+  - id: validate-and-plan
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    secretEnv: [CB_SECRET]
+    args:
+      - -ceu
+      - |
+        pip install --quiet -r tools/requirements.txt
+
+        # validate.py 는 키 없이 --contract 를 요구하면 거부한다 — 인증 거절이 "깨끗한 통과"로
+        # 읽히지 않게 하려는 것이다. 그래서 키 유무로 여기서 갈라준다. 나머지 검증층은 어느 쪽이든 돈다.
+        # (--contract 는 lemonboard 자체 검증기를 부르며 네트워크 장애·5xx 에는 fail-open 이다.
+        #  lemonboard 가 죽었다고 PR 이 막히면 안 되고, 진짜 data-sync 위반만 막아야 한다.)
+        if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
+          python3 tools/validate.py --contract --env stage
+        else
+          echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다"
+          python3 tools/validate.py --env stage
+        fi
+
+        # plan 을 PR 코멘트로. 푸시마다 새 코멘트를 쌓지 않고 자기 코멘트를 덮어쓴다.
+        {
+          echo '### Curriculum plan — `stage`'
+          echo
+          echo '```'
+          python3 tools/plan.py --env stage
+          echo '```'
+          echo
+          echo '_머지하면 stage 에 적용된다. prod 는 `prod-*` 태그가 필요하다._'
+        } > /workspace/plan.md
+
+        export GH_TOKEN="$$(printf '%s' "$$CB_SECRET" | python3 -c 'import sys,json;print(json.load(sys.stdin)["GITHUB_PAT"])')"
+        python3 - <<'PY'
+        import json, os, subprocess, urllib.request
+
+        repo = "re-speak/podo-curriculum"
+        pr = os.environ.get("_PR_NUMBER") or ""
+        if not pr:
+            print("PR 번호가 없다 — 코멘트를 건너뛴다")
+            raise SystemExit(0)
+
+        body = open("/workspace/plan.md", encoding="utf-8").read()
+        marker = "### Curriculum plan"
+        token = os.environ["GH_TOKEN"]
+
+        def api(path, method="GET", payload=None):
+            req = urllib.request.Request(
+                f"https://api.github.com/repos/{repo}/{path}", method=method,
+                data=json.dumps(payload).encode() if payload else None,
+                headers={"Authorization": f"Bearer {token}",
+                         "Accept": "application/vnd.github+json",
+                         "Content-Type": "application/json"})
+            with urllib.request.urlopen(req) as r:
+                return json.loads(r.read() or "null")
+
+        mine = next((c for c in api(f"issues/{pr}/comments")
+                     if c["body"].startswith(marker)), None)
+        if mine:
+            api(f"issues/comments/{mine['id']}", "PATCH", {"body": body})
+            print(f"코멘트 갱신: {mine['id']}")
+        else:
+            api(f"issues/{pr}/comments", "POST", {"body": body})
+            print("코멘트 생성")
+        PY
+    env:
+      - "_PR_NUMBER=$_PR_NUMBER"

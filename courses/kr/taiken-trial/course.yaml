@@ -1,0 +1,30 @@
+apiVersion: podo.curriculum/v1
+kind: Course
+metadata:
+  # 라이브에 이미 존재하는 코스를 레포가 넘겨받은 것이다 —
+  # GT_CLASS_COURSE CLASS_LEVEL=999.100 / LANG_TYPE=JP, 커버 BOOK_NAME "html test (john)".
+  # 덱 7주치는 gs://podo-assets/lemonboard-html/{7950,7951,7952,7957,7958,7959,8044}/ 에서
+  # 그대로 가져왔다. slug 는 영구 키이므로 바꾸지 말 것.
+  slug: taiken-trial
+
+spec:
+  curriculumType: TRIAL
+  classLevel: "999.100"        # 라이브 행의 CLASS_LEVEL 과 같아야 state 가 붙는다
+  lessonTime: 25
+  # 라이브 행이 USE_YN='N' 이다. 레포가 이 코스를 켜는 주체가 되기 전까지는 false 로 둔다 —
+  # true 로 바꾸는 순간 apply 가 학습자에게 노출시킨다.
+  enabled: false
+  difficulty: BEGINNER
+
+  title:
+    ko: 체험 레슨
+    en: Trial lesson
+    ja: 体験レッスン
+
+  description:
+    ko: 한국어를 처음 접하는 일본어 화자를 위한 체험 레슨. 초입문 6과와 초급 자기소개 1과.
+    ja: 韓国語がはじめての日本語話者のための体験レッスン。超入門6課と初級の自己紹介1課。
+
+  tutorGroups:
+    allowRandom: []
+    assignedOnly: []
