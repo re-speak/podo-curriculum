@@ -24,6 +24,12 @@ spec:
   # grape 의 공개 자산을 podo-assets 로 모으는 방향에 맞춘 것이고, 교재 HTML/CSS/이미지는
   # lemonboard 룸이 입장 시 공개 fetch 하는 자산이라 공개 버킷이 맞다.
   #
+  # 경로에 .php 가 붙는 것에 주의 — grape 는 라우터가 없는 평범한 PHP 파일 서빙이라
+  # 확장자 없는 /api/curriculum/sync 는 404 다.
+  #
+  # grapeSyncApi 는 공개 호스트를 쓴다. *.podo.internal 로 두면 Cloud Build 기본 풀에서
+  # 닿지 않아 전용 워커풀(VPC 접근)이 필요해진다 — 인증이 OIDC 라 공개 경로여도 무방하다.
+  #
   # 여기 적힌 bucket/prefix 는 참조용이다 — apply.py 는 grape sync 엔드포인트에 POST 만 하고
   # 오브젝트를 직접 올리지 않는다. 업로드 주체는 grape(uploadLessonHtmlZip)다.
   #
@@ -33,14 +39,14 @@ spec:
   environments:
     stage:
       lemonboardApi: https://stage-lemonboard-api.re-speak.com
-      grapeSyncApi: https://stage-admin.podo.internal/api/curriculum/sync
+      grapeSyncApi: https://stage-grape.re-speak.com/api/curriculum/sync.php
       gcsBucket: podo-assets
       gcsPrefix: lemonboard-html-stage
       publicBaseUrl: https://storage.googleapis.com/podo-assets/
       state: state/stage.lock.yaml
     prod:
       lemonboardApi: https://lemonboard-api.re-speak.com
-      grapeSyncApi: https://admin.podo.internal/api/curriculum/sync
+      grapeSyncApi: https://grape.re-speak.com/api/curriculum/sync.php
       gcsBucket: podo-assets
       gcsPrefix: lemonboard-html
       publicBaseUrl: https://storage.googleapis.com/podo-assets/

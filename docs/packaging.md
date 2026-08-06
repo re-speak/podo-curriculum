@@ -79,7 +79,6 @@ If you hit one, use the supported spelling rather than working around it.
 
 | File | What it is |
 |---|---|
-| [`interaction-protocol.md`](./interaction-protocol.md) | the `data-sync` contract — read before adding interactions |
 | [`sample-lesson-interactive.html`](./sample-lesson-interactive.html) | reference lesson using every kind |
 | `build_lemonboard.py` | this packager; works on any deck in the repo |
 | `lemonboard-build/` | generated output for the sample |

@@ -506,30 +506,10 @@ p {
   min-height: 112px;
 }
 
-/* inline blank: a dashed pill that auto-sizes to its answer. The
-   answer text lives inside but is rendered the same color as the
-   fill, so it's invisible while still driving the pill's width.
-   (temporarily tinted slightly off-bg so it's visible during review) */
-.slot {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2em;
-  height: 34px;
-  padding: 0 20px;
-  margin: 0 4px;
-  vertical-align: middle;
-  background: #f8f8f7;
-  border: 1.5px dashed #1c1c1c;
-  border-radius: 999px;
-  color: #ededeb;
-  font-size: inherit;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-/* the input twin of .slot — a blank someone types into. Inferred as the
-   "value" sync kind, so a data-sync-id is all it takes to mirror it live. */
+/* inline blank: a dashed pill someone types into. It is a real <input> in
+   the markup, not a span promoted at runtime — the contract validator parses
+   statically, so a span would have no resolvable sync kind. Inferred as the
+   "value" kind, which makes a data-sync-id all it takes to mirror it live. */
 .slot-input {
   display: inline-flex;
   min-width: 2.5em;
@@ -858,11 +838,6 @@ p {
 /* section 3 "me" boxes are green: their write-in areas and pills follow
    the green convention (a touch lighter than the green header) */
 .bubble.me .answer-space {
-  background: #f6fdf0;
-  color: #e3f1d5;
-}
-
-.bubble.me .slot {
   background: #f6fdf0;
   color: #e3f1d5;
 }
@@ -3907,7 +3882,7 @@ body.paged { padding-bottom: 0; }
    class names and the states are taken from
    interactive/sample-lesson-interactive.html rather than invented:
 
-     .slot / .answer-space  → typed blanks     (kind "value")
+     .slot-input / .space-input → typed blanks (kind "value")
      .choose-row .opt       → tap one of two   (kind "selection")
      .choice → .build-zone  → order the words  (kind "order")
 

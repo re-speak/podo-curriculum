@@ -30,7 +30,6 @@ by hand through 교재 등록/수정 → **html로 생성하기**.
 | `shared/` | `lesson-card.css`, the four interaction add-ons, the design and sync contracts |
 | `schemas/` | JSON Schema for the three document kinds |
 | `tools/` | build · validate · plan · apply |
-| `state/*.lock.yaml` | slug → DB row id + room key. **Written by CI, never by hand.** |
 | `sandbox/` | experiments. Committed, reviewable, and structurally undeployable |
 | `references/` | table-of-contents plans, textbook pattern maps, research |
 | `docs/` | the sync contract |
@@ -80,17 +79,25 @@ spec:
 Everything under `teaches` / `outcome` / `prerequisites` exists so a curriculum
 change reads as a diff a content person can review, instead of as a blob of HTML.
 
-## Slugs are identity
+## What identifies a course
 
-`GT_CLASS_COURSE.ID` is a DB-side autoincrement and also the S3 prefix
-(`lemonboard-html/{ID}/`), so YAML cannot know it. `state/<env>.lock.yaml` binds
-the two — exactly the job a Terraform state file does.
+grape resolves a row by its **natural key**:
 
-The consequence: **a directory slug is permanent.** Rename one and the live course
-is orphaned; the next apply creates a duplicate instead of updating it.
-`validate.py` refuses a rename that has no matching state move. Retire a course by
-setting `enabled: false`, never by deleting it — learners mid-course hold
-`pl_user_lesson_progress.lesson_id` pointing at those rows.
+```
+(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK)
+```
+
+Verified unique across 3,514 prod rows (SMART_TALK excluded — it has 18 duplicate
+groups of its own, unrelated to this repo). A COVER row is simply `CLASS_WEEK=0`.
+
+So nothing here has to remember what the last apply created. There is no lock
+file and no write-back step — which is what used to turn a failed apply into a
+duplicate course on the next run.
+
+The consequence: **changing `classLevel` or `lessonTime` makes a different
+course**, because it is one. The old rows stay; retire them with
+`enabled: false`. A directory slug is still permanent by convention — it is what
+a human uses to find the course — but it is no longer what the DB matches on.
 
 ## Working locally
 
@@ -115,11 +122,11 @@ Korean-first titles, one blue tutor-script box, one boxed component that fills t
 page, receptive → productive.
 
 Anything the learner taps, types or drags goes through lemonboard's `data-sync`
-contract — [`shared/interaction-protocol.md`](shared/interaction-protocol.md).
-Getting it wrong fails silently: the activity works on your screen and never
-reaches the other person. Copy from
-[`shared/reference-lesson.html`](shared/reference-lesson.html) rather than
-inventing markup.
+contract. The implementation in lemonboard is the SSOT; the working summary lives
+in [`CLAUDE.md`](CLAUDE.md). Getting it wrong fails silently: the activity works on
+your screen and never reaches the other person. Copy from a deck that passes the
+gate — [`06-taiken-self-intro`](courses/kr/taiken-trial/lessons/06-taiken-self-intro)
+— rather than inventing markup.
 
 Both slots are mandatory. A lesson with only a 수업용 deck leaves
 `PRESTUDY_LEMONBOARD_KEY` empty, and class creation then fails at

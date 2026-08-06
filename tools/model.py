@@ -235,27 +235,3 @@ def discover() -> list[Course]:
 # state lock
 # --------------------------------------------------------------------------- #
 
-def state_path(env: str) -> pathlib.Path:
-    return REPO / "state" / f"{env}.lock.yaml"
-
-
-def load_state(env: str) -> dict:
-    path = state_path(env)
-    if not path.is_file():
-        return {"apiVersion": "podo.curriculum/v1", "kind": "State",
-                "environment": env, "courses": {}}
-    doc = load_yaml(path)
-    doc.setdefault("courses", {})
-    if doc["courses"] is None:
-        doc["courses"] = {}
-    return doc
-
-
-def save_state(env: str, state: dict) -> None:
-    path = state_path(env)
-    header = "\n".join(
-        line for line in path.read_text(encoding="utf-8").splitlines()
-        if line.startswith("#")
-    ) if path.is_file() else ""
-    body = yaml.safe_dump(state, allow_unicode=True, sort_keys=False)
-    path.write_text((header + "\n" + body) if header else body, encoding="utf-8")

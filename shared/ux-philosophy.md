@@ -34,7 +34,7 @@ The guiding principles behind every page of the Korean curriculum.
 - **Tutor notes are written in Korean.** The tutor reads Korean; a beginner learner cannot, so the language itself is a second lock on the answers.
 - **A tutor note sits directly under the script it belongs to** — that is where the tutor looks after reading the line aloud, and being fused to it means there is no gap to cross. Placement costs the learner nothing: the note is `display:none` for them, and the script box takes its own radius and bottom margin back, so nothing hints that anything was removed. A note that follows something *other* than a script box keeps its standalone chip shape.
 - **A note is one short instruction, and never repeats an answer the page already shows.** Teaching mode marks correct tiles and ghosts answers into blanks, so the note points at them (표시된 쪽을 하나씩 읽어 주세요) rather than restating them. If the marks alone make the action obvious, the page needs no note at all. Do not write "for teachers" into the note text — the `튜터만` badge already says whose it is.
-- **Everything tutor-only lives behind the 티칭 모드 switch on the cover, and the switch is off by default.** Student view is what the page loads as, and nothing is persisted — reload returns to it. Answers reveal in the same barely-there way as `.slot`: a ghost of the answer inside the blank, never a loud key.
+- **Everything tutor-only lives behind the 티칭 모드 switch on the cover, and the switch is off by default.** Student view is what the page loads as, and nothing is persisted — reload returns to it. Answers reveal as a ghost inside the blank — the answer as the input's placeholder — never a loud key.
 
 ## Scaffolding rules
 - **Every slot in a repeated row is filled, or it isn't a slot.** If a column is only sometimes relevant, it doesn't belong in the row — the ragged holes read as broken. Give the column something true for every item, and move the sometimes-relevant thing to its own page.
@@ -75,7 +75,7 @@ The guiding principles behind every page of the Korean curriculum.
   | `gray-200` | every ordinary outline | emphasis |
   | cream / pink seats | consonant / vowel — pedagogy | anything else, anywhere |
 
-- **Dashed grey means "write here"** (`.slot`, `.slot-input`, `.build-slot`) and nothing else.
+- **Dashed grey means "write here"** (`.slot-input`, `.space-input`, `.build-slot`) and nothing else.
   A wrong answer is not an empty field, so it is never dashed.
 - **Dark pages need no separate system.** The components on a transition page were never
   dark — they are light cards on a dark ground, and the outline lives on the card, not on

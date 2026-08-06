@@ -20,31 +20,26 @@ import tempfile
 import build
 import model
 
-CREATE, UPDATE, NOOP, BLOCKED = "create", "update", "noop", "blocked"
+# state lock 이 없어진 뒤로 create 와 update 를 여기서 가를 수 없다. 그 판정은 grape 가
+# 자연키로 하고, 그걸 미리 알려면 grape 에 물어봐야 한다 — plan 이 DB 를 조회하기 시작하면
+# "적용하지 않고 볼 수 있는 것"이라는 성질을 잃는다. 그래서 apply 하나로 합쳤다.
+APPLY, BLOCKED = "apply", "blocked"
 
 
 def plan(env: str) -> list[dict]:
-    state = model.load_state(env).get("courses", {})
     actions: list[dict] = []
 
     for course in model.discover():
-        tracked = state.get(course.key)
         actions.append({
-            "action": CREATE if tracked is None else UPDATE,
+            "action": APPLY,
             "target": "course",
             "key": course.key,
             "detail": (f"COVER row · {course.lang_type} · {course.spec['curriculumType']} · "
                        f"level {course.spec['classLevel']} · USE_YN="
                        f"{'Y' if course.spec.get('enabled') else 'N'}"),
-            "rowId": (tracked or {}).get("coverId"),
         })
 
-        tracked_lessons = (tracked or {}).get("lessons", {}) or {}
         for lesson in course.lessons:
-            known = tracked_lessons.get(lesson.slug, {})
-            digests = known.get("digest", {}) or {}
-            row_id = known.get("courseRowId")
-
             for slot in sorted(lesson.decks):
                 deck = lesson.decks[slot]
                 key = f"{course.key}/{lesson.slug}/{slot}"
@@ -53,7 +48,6 @@ def plan(env: str) -> list[dict]:
                     actions.append({
                         "action": BLOCKED, "target": "deck", "key": key,
                         "detail": "no deck on disk — the lesson cannot deploy until both slots exist",
-                        "rowId": row_id,
                     })
                     continue
 
@@ -64,33 +58,18 @@ def plan(env: str) -> list[dict]:
                         actions.append({
                             "action": BLOCKED, "target": "deck", "key": key,
                             "detail": f"does not package: {str(exc).splitlines()[0]}",
-                            "rowId": row_id,
                         })
                         continue
 
-                if digests.get(slot) == digest:
-                    actions.append({
-                        "action": NOOP, "target": "deck", "key": key,
-                        "detail": "content unchanged — S3 untouched", "rowId": row_id,
-                    })
-                elif row_id is None:
-                    actions.append({
-                        "action": CREATE, "target": "deck", "key": key,
-                        "detail": (f"new MAIN row (CLASS_WEEK={lesson.week}) → upload to "
-                                   f"lemonboard-html/<new id>/{slot}.html, create HTML room"),
-                        "rowId": None,
-                    })
-                else:
-                    actions.append({
-                        "action": UPDATE, "target": "deck", "key": key,
-                        "detail": (f"overwrite lemonboard-html/{row_id}/{slot}.html "
-                                   f"(room key unchanged)"),
-                        "rowId": row_id,
-                    })
+                actions.append({
+                    "action": APPLY, "target": "deck", "key": key,
+                    "detail": (f"MAIN row (CLASS_WEEK={lesson.week}) → upload deck, "
+                               f"ensure HTML room  [{digest[:19]}]"),
+                })
     return actions
 
 
-SYMBOL = {CREATE: "+", UPDATE: "~", NOOP: " ", BLOCKED: "!"}
+SYMBOL = {APPLY: "~", BLOCKED: "!"}
 
 
 def render(actions: list[dict]) -> str:
@@ -102,10 +81,9 @@ def render(actions: list[dict]) -> str:
         lines.append(f"{SYMBOL[a['action']]:<2}{a['key']:<46} {a['action']:<8} {a['detail']}")
     lines.append("```")
 
-    counts = {k: sum(1 for a in actions if a["action"] == k) for k in (CREATE, UPDATE, NOOP, BLOCKED)}
+    counts = {k: sum(1 for a in actions if a["action"] == k) for k in (APPLY, BLOCKED)}
     lines.append("")
-    lines.append(f"**{counts[CREATE]} to create · {counts[UPDATE]} to update · "
-                 f"{counts[NOOP]} unchanged · {counts[BLOCKED]} blocked**")
+    lines.append(f"**{counts[APPLY]} to apply · {counts[BLOCKED]} blocked**")
     if counts[BLOCKED]:
         lines.append("")
         lines.append("> Blocked items are skipped by apply, not fixed by it. "
