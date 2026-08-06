@@ -103,7 +103,7 @@ no zip part is attached. Skip the S3 write. Do not touch the room.
 ```
 
 Failure is `4xx` with `{"ok": false, "errors": [...]}`. The caller writes the
-state lock from `course`, so **every row grape created or confirmed must appear
+response for logging, so **every row grape created or confirmed should appear
 there, even on partial success** — an id that grape allocated but did not report
 becomes an orphan course nobody can reach or update.
 

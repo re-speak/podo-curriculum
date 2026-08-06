@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
 """
-Push the repo's desired state at grape, one course per request, then record
-what came back in the state lock.
+Push the repo's desired state at grape, one course per request.
+
+Nothing is remembered between runs. grape resolves each row by its natural key
+(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK),
+so this tool never has to carry ids forward — which means no lock file, and no
+write-back step whose failure turns the next run into a duplicate course.
 
 Grape stays the only writer. It already owns the S3 upload, the lemonboard room
 lifecycle and the GT_CLASS_COURSE / le_tutor_curriculum writes; re-implementing
 any of that here would mean two codebases drifting apart with production between
 them. So this tool builds zips, states what it wants, and lets grape do it.
 
-The request/response contract lives in docs/sync-contract.md. Nothing here works
-until that endpoint exists — see the README's "current status".
+The request/response contract lives in docs/sync-contract.md.
 
     python3 tools/apply.py --env stage [--dry-run] [--only kr/hangul-lv1]
 
-Auth comes from PODO_CURRICULUM_SYNC_TOKEN.
+Auth is a Google OIDC ID token in PODO_CURRICULUM_SYNC_TOKEN — the deploy build
+mints it off the metadata server, so there is no stored secret.
 """
 
 from __future__ import annotations
@@ -40,15 +44,16 @@ class ApplyError(Exception):
     pass
 
 
-def build_manifest(curriculum: dict, course: model.Course, tracked: dict | None) -> tuple[dict, dict]:
+def build_manifest(curriculum: dict, course: model.Course) -> tuple[dict, dict]:
     """The desired state of one course, plus the zips that go with it.
 
-    Known ids from the state lock ride along so grape updates the rows it made
-    last time instead of inserting a second copy of the course.
+    No ids ride along. grape resolves a row by its natural key
+    (CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK),
+    so nothing here has to remember what the last apply created — and there is no
+    lock file to write back, which is what used to turn a failed apply into a
+    duplicate course on the next run.
     """
     lang_cfg = curriculum["spec"]["languages"][course.lang]
-    tracked = tracked or {}
-    tracked_lessons = tracked.get("lessons", {}) or {}
 
     lessons = []
     zips: dict[str, pathlib.Path] = {}
@@ -59,26 +64,20 @@ def build_manifest(curriculum: dict, course: model.Course, tracked: dict | None)
             print(f"  ! {lesson.slug}: skipped — missing {', '.join(lesson.incomplete)} deck")
             continue
 
-        known = tracked_lessons.get(lesson.slug, {})
-        known_digests = known.get("digest", {}) or {}
         entry = {
             "slug": lesson.slug,
             "week": lesson.week,
             "title": lesson.spec["title"],
-            "courseRowId": known.get("courseRowId"),
             "decks": {},
         }
 
         for slot, deck in sorted(lesson.decks.items()):
             zip_path, digest = build.package(deck.entry, tmpdir / lesson.slug / slot, quiet=True)
-            unchanged = known_digests.get(slot) == digest
-            entry["decks"][slot] = {
-                "digest": digest,
-                "unchanged": unchanged,          # grape skips the S3 write when true
-                "roomKey": (known.get("lemonboard", {}) or {}).get(slot),
-            }
-            if not unchanged:
-                zips[f"{lesson.slug}::{slot}"] = zip_path
+            # 매번 보낸다. digest 로 스킵하려면 지난번 값을 어딘가 기억해야 하는데, 그 기억이
+            # 바로 없애려는 state lock 이다. 덱은 코스 전체가 십수 MB 라 매번 올려도 싸고,
+            # 같은 키 덮어쓰기라 룸도 살아남는다.
+            entry["decks"][slot] = {"digest": digest, "unchanged": False}
+            zips[f"{lesson.slug}::{slot}"] = zip_path
 
         lessons.append(entry)
 
@@ -90,7 +89,6 @@ def build_manifest(curriculum: dict, course: model.Course, tracked: dict | None)
         "course": {
             "slug": course.slug,
             "key": course.key,
-            "coverId": tracked.get("coverId"),
             "curriculumType": course.spec["curriculumType"],
             "curriculumTypeKey": course.curriculum_type_key,
             "classLevel": course.spec["classLevel"],
@@ -146,27 +144,6 @@ def post(url: str, manifest: dict, zips: dict[str, pathlib.Path], token: str) ->
         raise ApplyError(f"grape unreachable: {exc}") from exc
 
 
-def record(state: dict, course: model.Course, manifest: dict, result: dict) -> None:
-    """Fold grape's response back into the lock.
-
-    Digests come from the manifest, not the response — they describe what we
-    built and sent, so they are only truthful if we are the ones writing them.
-    """
-    returned = result["course"]
-    entry = state["courses"].setdefault(course.key, {})
-    entry["coverId"] = returned["coverId"]
-    lessons = entry.setdefault("lessons", {})
-
-    sent = {l["slug"]: l for l in manifest["lessons"]}
-    for slug, info in returned.get("lessons", {}).items():
-        row = lessons.setdefault(slug, {})
-        row["courseRowId"] = info["courseRowId"]
-        row["lemonboard"] = info.get("lemonboard", {})
-        digest = row.setdefault("digest", {})
-        for slot, deck in sent.get(slug, {}).get("decks", {}).items():
-            digest[slot] = deck["digest"]
-
-
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -189,13 +166,11 @@ def main() -> int:
     print(plan_mod.render(plan_mod.plan(args.env)))
     print()
 
-    state = model.load_state(args.env)
-    state.setdefault("courses", {})
     failures = 0
 
     for course in courses:
         print(f"→ {course.key}")
-        manifest, zips = build_manifest(curriculum, course, state["courses"].get(course.key))
+        manifest, zips = build_manifest(curriculum, course)
 
         if args.dry_run:
             print(json.dumps(manifest, indent=2, ensure_ascii=False))
@@ -217,16 +192,9 @@ def main() -> int:
 
         for warning in result.get("warnings", []):
             print(f"  ~ {warning}")
-        record(state, course, manifest, result)
         print(f"  ✓ cover {result['course']['coverId']} · "
               f"{len(result['course'].get('lessons', {}))} lesson row(s) · "
               f"{len(zips)} deck(s) uploaded")
-
-    if not args.dry_run:
-        # Written even on partial failure — the courses that did land must stay
-        # tracked, or the retry creates duplicates of them.
-        model.save_state(args.env, state)
-        print(f"\nstate/{args.env}.lock.yaml updated")
 
     return 1 if failures else 0
 

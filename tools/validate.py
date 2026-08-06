@@ -5,7 +5,7 @@ The PR gate. Everything that could break a live lesson, checked before merge.
 Four layers, cheapest first:
 
   1. schema      — course.yaml / lesson.yaml against JSON Schema
-  2. structure   — slugs match directories, weeks run 1..N, no orphaned state
+  2. structure   — slugs match directories, weeks run 1..N
   3. package     — every deck actually builds, with the S3-flattening audit
   4. contract    — the built HTML through lemonboard's own data-sync validator
 
@@ -56,23 +56,6 @@ def check_enabled_is_earned(course: model.Course) -> list[str]:
         names = ", ".join(l.slug for l in holes)
         return [f"{course.key}: enabled: true but these lessons are missing a deck — {names}"]
     return []
-
-
-def check_no_orphan_rename(courses: list[model.Course], env: str) -> list[str]:
-    """A slug in state but gone from the repo means a rename or a deletion.
-
-    Either way the live course is now unreachable from the repo, and the next
-    apply would create a duplicate rather than update it. Both are recoverable,
-    but only deliberately — so stop and make someone say which it was.
-    """
-    state = model.load_state(env)
-    known = {c.key for c in courses}
-    orphans = [k for k in state.get("courses", {}) if k not in known]
-    return [
-        f"state/{env}.lock.yaml still tracks '{k}' but no such course exists in the repo — "
-        f"rename the state entry to match, or remove it deliberately if the course is retired"
-        for k in orphans
-    ]
 
 
 def validate_contract(html: str, api: str, label: str, key: str) -> list[str]:
@@ -160,7 +143,6 @@ def main() -> int:
         return 0
 
     problems: list[str] = []
-    problems += check_no_orphan_rename(courses, args.env)
 
     for course in courses:
         print(f"\n{course.key}  ({course.lang_type} · {course.spec['curriculumType']} · "
