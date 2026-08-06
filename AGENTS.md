@@ -25,9 +25,8 @@ quietly deviate.
 
 ## Interactions — the `data-sync` contract
 
-**The implementation in lemonboard is the SSOT.** Not this file, not
-`shared/interaction-protocol.md`, not what a nearby deck happens to do. When they
-disagree, lemonboard wins:
+**The implementation in lemonboard is the SSOT.** Not this file, not what a nearby
+deck happens to do. When they disagree, lemonboard wins:
 
 - `apps/web/src/views/meet/lib/html-sync/protocol.ts` — the attributes
 - `apps/web/src/views/meet/lib/html-sync/kinds.ts` — the built-in kinds and the inference
@@ -72,15 +71,25 @@ That last line is the one that bites. An element with `data-sync-id` and nothing
 else is dropped from the sync set — no warning, no error, just two screens that
 quietly disagree.
 
-### Traps that have actually happened
+### Write the real control into the HTML — never promote a shell at runtime
 
-- **`data-option-id` is not the attribute.** It must be `data-sync-option`. Several live
-  decks use the former; none of their choices sync.
-- **A `<span>` holding text is not a form control.** `<span class="slot" data-sync-id="…">`
-  resolves to nothing. If the learner types into it, make it an `<input>`; if they pick from
-  options, give the options `data-sync-option`; otherwise `register()` a kind.
-- **Declaring some ids but not others.** One deck declared 9 kinds against 41 ids — the other
-  32 were silently private. Count them.
+**A synced element must already be what it claims to be when the file is parsed.** Do not
+write a `<span>` placeholder and swap it for an `<input>` on load, even if you carry the
+`data-sync-id` across.
+
+The validator parses statically — `parseHTML(html)` via linkedom, no scripts run
+(`apps/api/src/modules/lesson-html/handlers/v1/validate-lesson-html.ts`). The binder does
+the opposite: it re-scans the live DOM on every publish (`html-sync/binder.ts`,
+`collectTargets`). So a promoted shell *works in class* and *fails the gate* — the deck
+looks broken to CI while behaving fine, and you cannot tell that apart from a deck that is
+genuinely broken. Keep the two views identical and the question never comes up.
+
+If the learner types, ship an `<input>` or `<textarea>`. If they pick, ship the options with
+`data-sync-option`. If neither can express it, `register()` a kind and name it with
+`data-sync-kind` in the markup so the validator sees a name it can resolve.
+
+- **Count your ids against your kinds.** Every `data-sync-id` must land on one of the four
+  resolution rules above. An id that resolves to nothing is silently private.
 - **Share the choice, never the verdict.** Send which option is selected and let each side
   derive `correct`/`wrong` locally. State is shared as a snapshot, not as events, so a late
   joiner or a refresh converges from one message.
@@ -96,8 +105,10 @@ It fail-opens on network trouble and 5xx (a lemonboard outage must not block a P
 blocks on any `severity: error`. Without `PODO_LEMONBOARD_API_KEY` it refuses to run rather
 than letting an auth rejection read as a clean pass.
 
-Copy from [`shared/reference-lesson.html`](shared/reference-lesson.html) rather than
-inventing markup.
+Copy from a deck that passes the gate rather than inventing markup —
+[`courses/kr/taiken-trial/lessons/06-taiken-self-intro`](courses/kr/taiken-trial/lessons/06-taiken-self-intro)
+carries all four shapes (typed blank, write-in area, tap-one-of-two, order-the-chips) with
+the controls written straight into the HTML.
 
 ## Things that will bite you
 

@@ -122,11 +122,11 @@ Korean-first titles, one blue tutor-script box, one boxed component that fills t
 page, receptive → productive.
 
 Anything the learner taps, types or drags goes through lemonboard's `data-sync`
-contract — [`shared/interaction-protocol.md`](shared/interaction-protocol.md).
-Getting it wrong fails silently: the activity works on your screen and never
-reaches the other person. Copy from
-[`shared/reference-lesson.html`](shared/reference-lesson.html) rather than
-inventing markup.
+contract. The implementation in lemonboard is the SSOT; the working summary lives
+in [`CLAUDE.md`](CLAUDE.md). Getting it wrong fails silently: the activity works on
+your screen and never reaches the other person. Copy from a deck that passes the
+gate — [`06-taiken-self-intro`](courses/kr/taiken-trial/lessons/06-taiken-self-intro)
+— rather than inventing markup.
 
 Both slots are mandatory. A lesson with only a 수업용 deck leaves
 `PRESTUDY_LEMONBOARD_KEY` empty, and class creation then fails at
