@@ -1,14 +1,19 @@
-# 커리큘럼 배포 빌드 (트리거: podo-curriculum-deploy, 수동)
+# 커리큘럼 배포 빌드 (트리거: podo-curriculum-deploy)
 #
-#   gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
-#     --branch=<브랜치> --substitutions=_DEPLOY_ENV=<stage|prod>
+#   stage — main 에 push 되면 자동으로 돈다(_DEPLOY_ENV 기본값 stage).
+#   prod  — 수동으로만 돈다:
+#     gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
+#       --branch=main --substitutions=_DEPLOY_ENV=prod
 #
 # GitHub Actions 의 deploy-stage.yml / deploy-prod.yml 을 한 파일로 합쳤다. grape·podo-backend 와
 # 같은 규약이다 — 소스 브랜치와 배포 환경을 각각 고르고, 환경 분기는 case 가드가 한다.
 #
-# prod 를 태그(prod-*) 대신 수동 트리거로 바꾼 이유: 태그 push 는 GitHub 이벤트라 다시
-# Actions 를 부르게 된다. 대신 "main 조상인지"를 빌드 안에서 확인해 같은 보호를 유지한다 —
-# 리뷰를 거치지 않은 커밋이 prod 로 나가지 않아야 한다는 게 태그의 목적이었지 태그 자체가 아니다.
+# stage 를 자동으로 두는 이유: 머지된 것과 학습자가 보는 것이 어긋나면 안 되는데, 사람이
+# 기억해서 눌러야 하는 배포는 반드시 언젠가 안 눌린다. 머지가 곧 반영이어야 그 간격이 없다.
+#
+# prod 를 태그(prod-*) 대신 수동으로 두는 이유: 태그 push 는 GitHub 이벤트라 다시 Actions 를
+# 부르게 된다. 대신 "main 조상인지"를 빌드 안에서 확인해 같은 보호를 유지한다 — 리뷰를 거치지
+# 않은 커밋이 prod 로 나가지 않아야 한다는 게 태그의 목적이었지 태그 자체가 아니다.
 timeout: 1800s
 
 options:
@@ -95,7 +100,10 @@ steps:
           "http://metadata/computeMetadata/v1/instance/service-accounts/default/identity?audience=$$SYNC_URL" || true)"
 
         if [ -z "$${PODO_CURRICULUM_SYNC_TOKEN}" ]; then
-          echo "OIDC 토큰을 받지 못했다 — 메타데이터 서버 접근 실패. plan 만 수행하고 끝낸다."
-          exit 0
+          echo "OIDC 토큰을 받지 못했다 — 메타데이터 서버 접근 실패."
+          # 여기서 성공으로 끝내면 아무것도 배포하지 않은 채 빌드가 초록으로 남는다. 그러면
+          # main 은 새 덱을, 학습자는 옛 덱을 보는 상태가 되고 그걸 알려 줄 신호가 없다.
+          # 배포 파이프라인의 초록은 "main 이 실제로 반영됐다"는 뜻이어야 한다.
+          exit 1
         fi
         python3 tools/apply.py --env "$_DEPLOY_ENV"
