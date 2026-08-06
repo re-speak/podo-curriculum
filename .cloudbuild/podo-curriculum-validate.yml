@@ -32,6 +32,10 @@ availableSecrets:
     # 빌드에 프로덕션 자격증명 전부를 노출하게 된다. 값만 복제한 전용 시크릿을 쓴다.
     - versionName: projects/904677155509/secrets/curriculum-lemonboard-key-stage/versions/latest
       env: PODO_LEMONBOARD_API_KEY
+    # Slack 알림용. podo-common 은 키가 5개뿐이라 좁고, cloud-build@ 가 이미 읽을 수 있다
+    # (db-issue·reclaim-reaper 와 같은 토큰).
+    - versionName: projects/904677155509/secrets/podo-common/versions/latest
+      env: PODO_COMMON
 
 steps:
   # 검증과 계획. 여기서 실패하면 PR 체크가 빨개진다 — 그게 이 빌드의 본체다.
@@ -50,11 +54,21 @@ steps:
         # 읽히지 않게 하려는 것이다. 그래서 키 유무로 여기서 갈라준다. 나머지 검증층은 어느 쪽이든 돈다.
         # (--contract 는 lemonboard 자체 검증기를 부르며 네트워크 장애·5xx 에는 fail-open 이다.
         #  lemonboard 가 죽었다고 PR 이 막히면 안 되고, 진짜 data-sync 위반만 막아야 한다.)
+        # 실패해도 여기서 죽이지 않는다. Slack 알림 스텝이 돌아야 하기 때문이다.
+        # 최종 판정은 마지막 verdict 스텝이 한다.
+        set +e
         if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
-          python3 tools/validate.py --contract --env stage
+          python3 tools/validate.py --contract --env stage 2>&1 | tee /workspace/validate.log
         else
-          echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다"
-          python3 tools/validate.py --env stage
+          echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다" | tee /workspace/validate.log
+          python3 tools/validate.py --env stage 2>&1 | tee -a /workspace/validate.log
+        fi
+        echo "$${PIPESTATUS[0]}" > /workspace/validate.rc
+        set -e
+
+        if [ "$(cat /workspace/validate.rc)" != "0" ]; then
+          echo "검증 실패 — plan 을 건너뛴다"
+          exit 0
         fi
 
         {
@@ -80,6 +94,8 @@ steps:
         if [ -z "$${_PR_NUMBER:-}" ]; then
           echo "PR 번호가 없다 — 코멘트를 건너뛴다"; exit 0
         fi
+        # 검증이 실패하면 plan 을 만들지 않았다. 붙일 게 없으니 조용히 넘어간다.
+        [ -f /workspace/plan.md ] || { echo "plan 없음(검증 실패) — 코멘트를 건너뛴다"; exit 0; }
         export GH_TOKEN="$$(printf '%s' "$$CB_SECRET" | python3 -c 'import sys,json;print(json.load(sys.stdin)["GITHUB_PAT"])')"
         export PR_NUMBER="$_PR_NUMBER"
         python3 - <<'PY'
@@ -113,3 +129,78 @@ steps:
         PY
     env:
       - "_PR_NUMBER=$_PR_NUMBER"
+
+  # data-sync 계약 위반을 Slack 으로 알린다.
+  #
+  # 왜 굳이 알리나 — 이 위반은 조용히 실패한다. 배포돼도 에러가 없고, 수업 중에 두 화면이
+  # 어긋날 뿐이라 아무도 신고하지 않는다. PR 체크가 빨개지는 것만으로는 덱을 올린 사람이
+  # 알아채지 못할 수 있어서, 채널로 밀어 넣는다.
+  #
+  # 알림 실패가 검증 결과를 뒤집으면 안 되므로 allowFailure 다.
+  - id: notify-contract-violation
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    secretEnv: [PODO_COMMON]
+    allowFailure: true
+    args:
+      - -ceu
+      - |
+        [ "$(cat /workspace/validate.rc)" = "0" ] && { echo "검증 통과 — 알리지 않는다"; exit 0; }
+
+        export SLACK_TOKEN="$$(printf '%s' "$$PODO_COMMON" | python3 -c 'import sys,json;print(json.load(sys.stdin)["PODO_NOTIFICATOR_SLACK_TOKEN"])')"
+        export PR_NUMBER="$_PR_NUMBER"
+        export COMMIT_SHA="$COMMIT_SHA"
+        python3 - <<'PY'
+        import json, os, re, urllib.request
+
+        CHANNEL = 'C0AM7GN9J0Y'
+        log = open('/workspace/validate.log', encoding='utf-8', errors='replace').read()
+
+        # 계약 위반만 추린다. 다른 검증 실패(스키마·구조·패키징)는 이 채널의 관심사가 아니다.
+        violations = [l.strip(' •\t') for l in log.splitlines() if 'data-sync-id=' in l]
+        if not violations:
+            print('계약 위반은 없다(다른 사유의 실패) — 알리지 않는다')
+            raise SystemExit(0)
+
+        # 덱별로 묶어 센다. 한 덱이 수십 줄을 내므로 그대로 붙이면 채널이 묻힌다.
+        by_deck = {}
+        for v in violations:
+            deck = v.split(':', 1)[0] if ':' in v else '(unknown)'
+            by_deck.setdefault(deck, []).append(v)
+
+        pr = os.environ.get('PR_NUMBER') or ''
+        sha = (os.environ.get('COMMIT_SHA') or '')[:7]
+        link = f'https://github.com/re-speak/podo-curriculum/pull/{pr}' if pr else ''
+
+        lines = [
+            '*커리큘럼 덱이 data-sync 규약을 어겼습니다*',
+            f'PR <{link}|#{pr}> · `{sha}` · 위반 {len(violations)}건 / 덱 {len(by_deck)}개' if pr
+            else f'`{sha}` · 위반 {len(violations)}건 / 덱 {len(by_deck)}개',
+            '',
+        ]
+        for deck, vs in sorted(by_deck.items()):
+            ids = [m.group(1) for v in vs for m in [re.search(r'data-sync-id="([^"]+)"', v)] if m]
+            shown = ', '.join(f'`{i}`' for i in ids[:5])
+            more = f' 외 {len(ids)-5}건' if len(ids) > 5 else ''
+            lines.append(f'• `{deck}` — {len(vs)}건: {shown}{more}')
+        lines += ['', '_이 덱은 배포돼도 수업 중 두 화면이 어긋납니다. 규약은 레포 CLAUDE.md 참고._']
+
+        req = urllib.request.Request(
+            'https://slack.com/api/chat.postMessage',
+            data=json.dumps({'channel': CHANNEL, 'text': '\n'.join(lines)}).encode(),
+            headers={'Authorization': f"Bearer {os.environ['SLACK_TOKEN']}",
+                     'Content-Type': 'application/json; charset=utf-8'})
+        res = json.loads(urllib.request.urlopen(req, timeout=15).read())
+        print('slack ok' if res.get('ok') else f"slack 실패: {res.get('error')}")
+        PY
+
+  # 최종 판정. 검증이 실패했으면 여기서 빌드를 빨갛게 만든다.
+  - id: verdict
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    args:
+      - -ceu
+      - |
+        rc="$(cat /workspace/validate.rc)"
+        [ "$$rc" = "0" ] || { echo "검증 실패(rc=$$rc)"; exit 1; }
+        echo "검증 통과"
