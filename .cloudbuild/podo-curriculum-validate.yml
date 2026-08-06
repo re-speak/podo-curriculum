@@ -27,12 +27,18 @@ availableSecrets:
   secretManager:
     - versionName: projects/904677155509/secrets/cloud-build/versions/latest
       env: CB_SECRET
+    # data-sync 계약 검증기(lemonboard) 호출용. grape-admin 번들(152개 키: DB 비번·결제·
+    # Slack 토큰…)에도 같은 값이 있지만 그걸 쓰지 않는다 — PR 을 여는 누구나 트리거하는
+    # 빌드에 프로덕션 자격증명 전부를 노출하게 된다. 값만 복제한 전용 시크릿을 쓴다.
+    - versionName: projects/904677155509/secrets/curriculum-lemonboard-key-stage/versions/latest
+      env: PODO_LEMONBOARD_API_KEY
 
 steps:
   # 검증과 계획. 여기서 실패하면 PR 체크가 빨개진다 — 그게 이 빌드의 본체다.
   - id: validate-and-plan
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
     entrypoint: bash
+    secretEnv: [PODO_LEMONBOARD_API_KEY]
     args:
       - -ceu
       - |

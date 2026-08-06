@@ -23,16 +23,81 @@ quietly deviate.
 - Every page needs `<meta name="google" content="notranslate">` or Chrome mangles the mixed ja/ko content.
 - **Verify visually.** These are visual documents — render at 480px and look at the screenshots before claiming a change works.
 
-## Interactions
+## Interactions — the `data-sync` contract
 
-Anything the learner taps, types or drags goes through lemonboard's `data-sync`
-contract — [`shared/interaction-protocol.md`](shared/interaction-protocol.md).
-Getting it wrong fails silently: it works on your screen and never reaches the
-other person. Copy from `shared/reference-lesson.html` rather than inventing markup.
+**The implementation in lemonboard is the SSOT.** Not this file, not
+`shared/interaction-protocol.md`, not what a nearby deck happens to do. When they
+disagree, lemonboard wins:
 
-Two rules catch most mistakes: an element is shared **only** if it has a
-`data-sync-id` (no id = private), and verdicts are never shared — send the choice
-and let each side derive `correct`/`wrong` locally.
+- `apps/web/src/views/meet/lib/html-sync/protocol.ts` — the attributes
+- `apps/web/src/views/meet/lib/html-sync/kinds.ts` — the built-in kinds and the inference
+- `apps/api/src/modules/lesson-html/handlers/v1/validate-lesson-html.ts` — the validator CI calls
+
+Getting it wrong **fails silently**. The activity works on your screen, the other
+person never sees it, and nothing errors. That is the whole reason the contract
+check is a merge gate rather than advice.
+
+### The four attributes
+
+| Attribute | Meaning |
+|---|---|
+| `data-sync-id` | Marks the element as shared **and** is the sync key. No id = private, never shared. |
+| `data-sync-kind` | Names the kind explicitly. Omit only if the inference below is unambiguous. |
+| `data-sync-option` | Marks a descendant as a choice for `selection`. **The attribute's value is the option id.** |
+| `data-sync-state` | Space-separated classes that count as "active" (e.g. `"right wrong"`). Defaults to `selected`. |
+
+### The three built-in kinds
+
+- **`value`** — a form control's value. `INPUT` / `TEXTAREA` / `SELECT` only.
+  Applying dispatches `input` and `change` so the page's own grading listener runs.
+- **`toggle`** — whether the element itself carries an active class. Applied by clicking it.
+- **`selection`** — the set of active `[data-sync-option]` descendants. Covers single and
+  multi select; single select is just a set with capacity one, enforced by the page's own
+  click handler. Applied by clicking only the options that differ.
+
+Anything these cannot express, the deck brings itself via
+`window.lessonSync.register('<kind>', { read, apply })`.
+
+### How kind is resolved
+
+```
+data-sync-kind present            → use it
+element is INPUT/TEXTAREA/SELECT  → value
+has a [data-sync-option] descendant → selection
+has a data-sync-state attribute   → toggle
+otherwise                          → NOT SYNCED (this is the failure)
+```
+
+That last line is the one that bites. An element with `data-sync-id` and nothing
+else is dropped from the sync set — no warning, no error, just two screens that
+quietly disagree.
+
+### Traps that have actually happened
+
+- **`data-option-id` is not the attribute.** It must be `data-sync-option`. Several live
+  decks use the former; none of their choices sync.
+- **A `<span>` holding text is not a form control.** `<span class="slot" data-sync-id="…">`
+  resolves to nothing. If the learner types into it, make it an `<input>`; if they pick from
+  options, give the options `data-sync-option`; otherwise `register()` a kind.
+- **Declaring some ids but not others.** One deck declared 9 kinds against 41 ids — the other
+  32 were silently private. Count them.
+- **Share the choice, never the verdict.** Send which option is selected and let each side
+  derive `correct`/`wrong` locally. State is shared as a snapshot, not as events, so a late
+  joiner or a refresh converges from one message.
+
+### Before you push
+
+```sh
+python3 tools/validate.py --contract --env stage
+```
+
+`--contract` runs the deck through lemonboard's own validator — the same call CI makes.
+It fail-opens on network trouble and 5xx (a lemonboard outage must not block a PR) but
+blocks on any `severity: error`. Without `PODO_LEMONBOARD_API_KEY` it refuses to run rather
+than letting an auth rejection read as a clean pass.
+
+Copy from [`shared/reference-lesson.html`](shared/reference-lesson.html) rather than
+inventing markup.
 
 ## Things that will bite you
 

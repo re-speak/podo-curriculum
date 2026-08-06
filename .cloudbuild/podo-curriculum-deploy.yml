@@ -21,6 +21,11 @@ availableSecrets:
   secretManager:
     - versionName: projects/904677155509/secrets/cloud-build/versions/latest
       env: CB_SECRET
+    # 계약 검증기 키. 환경별로 갈린다 — stage 는 stage 검증기, prod 는 prod 검증기.
+    - versionName: projects/904677155509/secrets/curriculum-lemonboard-key-stage/versions/latest
+      env: LB_KEY_STAGE
+    - versionName: projects/904677155509/secrets/curriculum-lemonboard-key-prod/versions/latest
+      env: LB_KEY_PROD
 
 steps:
   - id: guard
@@ -47,13 +52,20 @@ steps:
   - id: apply
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
     entrypoint: bash
-    secretEnv: [CB_SECRET]
+    secretEnv: [CB_SECRET, LB_KEY_STAGE, LB_KEY_PROD]
     args:
       - -ceu
       - |
         # cloud-sdk:slim 의 python 은 PEP 668(externally-managed) 이라 시스템 설치를 막는다.
         # 빌드 컨테이너는 일회용이라 venv 를 만들 이유가 없으므로 그 보호를 끈다.
         pip install --break-system-packages --quiet -r tools/requirements.txt
+
+        # 환경에 맞는 검증기 키를 고른다.
+        if [ "$_DEPLOY_ENV" = "prod" ]; then
+          export PODO_LEMONBOARD_API_KEY="$$LB_KEY_PROD"
+        else
+          export PODO_LEMONBOARD_API_KEY="$$LB_KEY_STAGE"
+        fi
 
         # 키가 없으면 --contract 를 빼고 돈다. validate.py 는 키 없는 --contract 를 거부하는데,
         # 그건 인증 거절이 통과로 읽히지 않게 하려는 것이다.
