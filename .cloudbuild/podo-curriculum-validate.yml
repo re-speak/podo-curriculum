@@ -154,15 +154,19 @@ steps:
         import json, os, re, urllib.request
 
         CHANNEL = 'C0AM7GN9J0Y'
+        SLACK_TEXT_LIMIT = 3500          # 한 메시지 4000자 제한에 여유를 둔다
         log = open('/workspace/validate.log', encoding='utf-8', errors='replace').read()
 
         # 계약 위반만 추린다. 다른 검증 실패(스키마·구조·패키징)는 이 채널의 관심사가 아니다.
-        violations = [l.strip(' •\t') for l in log.splitlines() if 'data-sync-id=' in l]
+        # warning 줄('  ~ …: warning — …')은 제외한다 — register() 로 오는 런타임 kind 처럼
+        # 정적으로는 확정할 수 없을 뿐 막을 일이 아닌데, 세면 건수가 부풀고 덱 목록에
+        # '~ 덱이름' 이라는 가짜 항목이 생긴다.
+        violations = [l.strip(' •\t') for l in log.splitlines()
+                      if 'data-sync-id=' in l and not l.lstrip().startswith('~')]
         if not violations:
             print('계약 위반은 없다(다른 사유의 실패) — 알리지 않는다')
             raise SystemExit(0)
 
-        # 덱별로 묶어 센다. 한 덱이 수십 줄을 내므로 그대로 붙이면 채널이 묻힌다.
         by_deck = {}
         for v in violations:
             deck = v.split(':', 1)[0] if ':' in v else '(unknown)'
@@ -172,26 +176,57 @@ steps:
         sha = (os.environ.get('COMMIT_SHA') or '')[:7]
         link = f'https://github.com/re-speak/podo-curriculum/pull/{pr}' if pr else ''
 
-        lines = [
+        def post(text, thread_ts=None):
+            payload = {'channel': CHANNEL, 'text': text}
+            if thread_ts:
+                payload['thread_ts'] = thread_ts
+            req = urllib.request.Request(
+                'https://slack.com/api/chat.postMessage',
+                data=json.dumps(payload).encode(),
+                headers={'Authorization': f"Bearer {os.environ['SLACK_TOKEN']}",
+                         'Content-Type': 'application/json; charset=utf-8'})
+            return json.loads(urllib.request.urlopen(req, timeout=15).read())
+
+        # 채널에는 제목만 뜬다. 어느 덱의 어느 id 가 문제인지는 스레드에서 본다 —
+        # 한 덱이 수십 줄을 내므로 본문까지 채널에 밀어 넣으면 다른 알림이 묻힌다.
+        head = '\n'.join([
             '*커리큘럼 덱이 data-sync 규약을 어겼습니다*',
             f'PR <{link}|#{pr}> · `{sha}` · 위반 {len(violations)}건 / 덱 {len(by_deck)}개' if pr
             else f'`{sha}` · 위반 {len(violations)}건 / 덱 {len(by_deck)}개',
             '',
-        ]
-        for deck, vs in sorted(by_deck.items()):
-            ids = [m.group(1) for v in vs for m in [re.search(r'data-sync-id="([^"]+)"', v)] if m]
-            shown = ', '.join(f'`{i}`' for i in ids[:5])
-            more = f' 외 {len(ids)-5}건' if len(ids) > 5 else ''
-            lines.append(f'• `{deck}` — {len(vs)}건: {shown}{more}')
-        lines += ['', '_이 덱은 배포돼도 수업 중 두 화면이 어긋납니다. 규약은 레포 CLAUDE.md 참고._']
+            '_이 덱은 배포돼도 수업 중 두 화면이 어긋납니다. 자세한 내용은 스레드, 규약은 레포 CLAUDE.md 참고._',
+        ])
+        res = post(head)
+        if not res.get('ok'):
+            print(f"slack 실패(제목): {res.get('error')}")
+            raise SystemExit(0)
+        thread_ts = res['ts']
 
-        req = urllib.request.Request(
-            'https://slack.com/api/chat.postMessage',
-            data=json.dumps({'channel': CHANNEL, 'text': '\n'.join(lines)}).encode(),
-            headers={'Authorization': f"Bearer {os.environ['SLACK_TOKEN']}",
-                     'Content-Type': 'application/json; charset=utf-8'})
-        res = json.loads(urllib.request.urlopen(req, timeout=15).read())
-        print('slack ok' if res.get('ok') else f"slack 실패: {res.get('error')}")
+        # 스레드에서는 id 를 자르지 않는다. 고치려면 전부 필요하다. 한 덱만으로 한도를
+        # 넘기는 경우에만 잘라내고, 잘랐다는 사실을 그 자리에 적는다 — 조용히 줄이면
+        # 목록이 전부인 줄 알고 나머지를 놓친다.
+        blocks = []
+        for deck, vs in sorted(by_deck.items()):
+            ids = [m.group(1) for v in vs
+                   for m in [re.search(r'data-sync-id="([^"]+)"', v)] if m]
+            head_line = f'• `{deck}` — {len(vs)}건'
+            shown = list(ids)
+            while shown and len(head_line) + len(', '.join(shown)) + 80 > SLACK_TEXT_LIMIT:
+                shown.pop()
+            tail = ('' if len(shown) == len(ids)
+                    else f'\n   _외 {len(ids) - len(shown)}건은 빌드 로그 참고_')
+            blocks.append(head_line + '\n   ' + ', '.join(f'`{i}`' for i in shown) + tail)
+
+        # 덱 하나가 한도를 넘길 수도 있으므로, 블록을 붙여 가다 넘치면 끊어 보낸다.
+        chunk = ''
+        for block in blocks:
+            if chunk and len(chunk) + len(block) + 1 > SLACK_TEXT_LIMIT:
+                post(chunk, thread_ts)
+                chunk = ''
+            chunk = f'{chunk}\n{block}' if chunk else block
+        if chunk:
+            post(chunk, thread_ts)
+        print('slack ok')
         PY
 
   # 최종 판정. 검증이 실패했으면 여기서 빌드를 빨갛게 만든다.
