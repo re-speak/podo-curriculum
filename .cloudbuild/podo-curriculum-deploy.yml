@@ -1,19 +1,23 @@
-# 커리큘럼 배포 빌드 (트리거: podo-curriculum-deploy)
+# 커리큘럼 배포 빌드 (환경 = 브랜치)
 #
-#   stage — main 에 push 되면 자동으로 돈다(_DEPLOY_ENV 기본값 stage).
-#   prod  — 수동으로만 돈다:
-#     gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
-#       --branch=main --substitutions=_DEPLOY_ENV=prod
+#   stage 브랜치 push → podo-curriculum-deploy-stage (_DEPLOY_ENV=stage)
+#   main  브랜치 push → podo-curriculum-deploy-prod  (_DEPLOY_ENV=prod)
 #
-# GitHub Actions 의 deploy-stage.yml / deploy-prod.yml 을 한 파일로 합쳤다. grape·podo-backend 와
-# 같은 규약이다 — 소스 브랜치와 배포 환경을 각각 고르고, 환경 분기는 case 가드가 한다.
+# 두 트리거가 이 파일 하나를 공유한다. GitHub Actions 의 deploy-stage.yml / deploy-prod.yml 을
+# 합친 것이고, grape·podo-backend 와 같은 규약이다 — 환경 분기는 case 가드가 한다.
 #
-# stage 를 자동으로 두는 이유: 머지된 것과 학습자가 보는 것이 어긋나면 안 되는데, 사람이
-# 기억해서 눌러야 하는 배포는 반드시 언젠가 안 눌린다. 머지가 곧 반영이어야 그 간격이 없다.
+# 둘 다 자동인 이유: 사람이 기억해서 눌러야 하는 배포는 반드시 언젠가 안 눌린다. 그러면
+# 브랜치가 가리키는 것과 학습자가 보는 것이 어긋나고, 그걸 알려 줄 신호가 없다. 머지가 곧
+# 반영이어야 그 간격이 생기지 않는다 — stage 든 prod 든 마찬가지다.
 #
-# prod 를 태그(prod-*) 대신 수동으로 두는 이유: 태그 push 는 GitHub 이벤트라 다시 Actions 를
-# 부르게 된다. 대신 "main 조상인지"를 빌드 안에서 확인해 같은 보호를 유지한다 — 리뷰를 거치지
-# 않은 커밋이 prod 로 나가지 않아야 한다는 게 태그의 목적이었지 태그 자체가 아니다.
+# 환경을 브랜치로 가른 이유: 게이트가 "누가 무엇을 실행했는가"가 아니라 "무엇이 머지됐는가"에
+# 놓인다. prod 로 나갈 것은 stage → main PR 로 리뷰되고, 그 리뷰 기록이 곧 배포 기록이다.
+# 태그(prod-*)를 쓰지 않는 이유는 그대로다 — 태그 push 는 GitHub 이벤트라 Actions 를 다시
+# 부르게 되고, 이 조직의 Actions 는 self-hosted 러너에 묶여 있다.
+#
+# 임의 브랜치 × 임의 환경의 수동 재배포(롤백·핫픽스 확인)는 podo-curriculum-deploy 가 남아 있다:
+#   gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
+#     --branch=<브랜치> --substitutions=_DEPLOY_ENV=<stage|prod>
 timeout: 1800s
 
 options:
@@ -46,6 +50,10 @@ steps:
 
         # prod 는 main 에 올라간 것만 나간다. 커리큘럼은 나쁜 덱이 수업 중인 학습자에게 그대로
         # 보이고, 그걸 잡아줄 lint 가 없다 — 리뷰가 유일한 게이트라서 우회를 막는다.
+        #
+        # main push 트리거에서는 이 검사가 늘 통과한다(자기 자신이 main 이니까). 남겨 두는 건
+        # 수동 트리거 때문이다 — podo-curriculum-deploy 는 --branch 를 자유롭게 받으므로,
+        # 리뷰를 거치지 않은 브랜치를 prod 로 미는 경로가 그쪽에는 여전히 열려 있다.
         if [ "$_DEPLOY_ENV" = "prod" ]; then
           git fetch origin main --depth=200 --quiet
           if ! git merge-base --is-ancestor "$COMMIT_SHA" origin/main; then

@@ -3,6 +3,16 @@
 This repo deploys. A merge to `main` changes what a learner sees in a live class,
 so the bar is closer to `podo-database-schema` than to a docs repo.
 
+## The branch is the environment
+
+- **Work branches off `origin/stage`, and the PR's base is `stage`.** Merging to
+  `stage` deploys to stage, automatically — there is no button.
+- **`main` is prod.** A `stage → main` PR is the release; merging it changes what a
+  learner in a live class sees, immediately. Review that PR as a deploy approval,
+  because that is what it is.
+- **Don't branch off `main`.** It lags `stage` by whatever has been merged but not
+  yet released, so you would be writing against content the next release replaces.
+
 ## Before touching a deck
 
 **Read [`shared/ux-philosophy.md`](shared/ux-philosophy.md) — every time, including
