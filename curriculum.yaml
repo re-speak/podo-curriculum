@@ -43,14 +43,12 @@ spec:
       gcsBucket: podo-assets
       gcsPrefix: lemonboard-html-stage
       publicBaseUrl: https://storage.googleapis.com/podo-assets/
-      state: state/stage.lock.yaml
     prod:
       lemonboardApi: https://lemonboard-api.re-speak.com
       grapeSyncApi: https://grape.re-speak.com/api/curriculum/sync.php
       gcsBucket: podo-assets
       gcsPrefix: lemonboard-html
       publicBaseUrl: https://storage.googleapis.com/podo-assets/
-      state: state/prod.lock.yaml
 
   # Directories the sync tool will never walk, no matter what is inside them.
   # sandbox/ is committed on purpose — experiments should be reviewable — but it

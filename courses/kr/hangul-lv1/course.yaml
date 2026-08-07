@@ -1,8 +1,9 @@
 apiVersion: podo.curriculum/v1
 kind: Course
 metadata:
-  # Permanent key into state/*.lock.yaml. Renaming this orphans the live course —
-  # tools/validate.py refuses a rename that has no matching state move.
+  # How a human finds this course. grape matches the DB row by natural key
+  # (classLevel / lessonTime / curriculumType …), not by this slug — but keep it
+  # stable anyway: it is the name every PR, plan and build log refers to.
   slug: hangul-lv1
 
 spec:
