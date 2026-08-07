@@ -112,11 +112,17 @@ python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/l
 
 python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/, references/
 python3 tools/import-trial-decks.py            # …then rebuild the trial course
+python3 tools/import-report-deck.py            # promote the sandbox report deck
 ```
 
 The two sync tools find the authoring tree next door; pass `--upstream PATH` or
 set `$PODO_AUTHORING_ROOT` if yours sits somewhere else. Run them in that order —
 the second reads the runtime the first mirrored. Neither is called by CI.
+
+`import-report-deck.py` reads no authoring tree — its source is this repo's own
+`sandbox/`, which `tools/model.py` refuses to walk. Re-run it after editing
+`sandbox/trial/reports/trial-1-report.html`; it rewrites `courses/kr/report-test/lessons/`
+from scratch and re-audits every `data-sync-id` on the way through.
 
 Decks are visual documents. Render them in a browser at 480px and look before
 claiming a change works.
