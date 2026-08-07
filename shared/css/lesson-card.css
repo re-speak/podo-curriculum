@@ -51,6 +51,15 @@
   --gray-500:  #757575;
 
   --line:      1px solid var(--gray-200);
+
+  /* The gap between repeated items in one activity — four answer boxes, four
+     model lines, four choose rows, the turns of a dialogue. Every list used to
+     pick its own number (10, 12, 14, 18, 20), which is invisible on any single
+     page and obvious the moment a learner pages through: the same four-item
+     activity breathes differently on every screen. One token, one rhythm.
+     Spacing INSIDE a single component (a tray's seats, a bubble's lines) is
+     that component's own business and stays tighter. */
+  --item-gap:  16px;
   --line-on:   1.5px solid var(--green-500);
 }
 
@@ -60,6 +69,11 @@
 
 html {
   scroll-behavior: smooth;
+  /* Pages differ in height, so the vertical scrollbar appears and disappears
+     as you turn them — and each time it does, the centred 480px column jumps
+     sideways by half a scrollbar. Holding the gutter open always costs a strip
+     of background nobody looks at and makes paging silent. */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -319,8 +333,17 @@ h1 .title-ja,
   font-weight: 600;
 }
 
+/* One owner for the rhythm. Padding here USED to stack on top of the answer
+   box's own 10/6 margins (9px a side gave 34px between two boxes); now the
+   block carries the whole gap as a margin, which collapses with the child's
+   own margins instead of adding to them, so the visible gap is exactly
+   --item-gap — the same as every other list in the deck. */
 .task-block {
-  padding: 9px 0;
+  padding: 0;
+}
+
+.task-block + .task-block {
+  margin-top: var(--item-gap);
 }
 
 .task-block:first-child,
@@ -361,9 +384,44 @@ h1 .title-ja,
   font-weight: 600;
 }
 
+/* ---------- 발음 표기 · the reading line ----------
+   A katakana reading tucked under the Korean it belongs to. A trial
+   learner is not assumed to read hangul at all, so every Korean the
+   learner is asked to SAY carries one — model lines, pattern cards,
+   dialogue, the tiles they tap. What it never goes under is Korean
+   nobody is asked to read aloud: page titles (the Japanese gloss beside
+   them already says what the page is), the blue script box (the tutor
+   reads that), and tutor notes.
+
+   Grey, not green. The greeting chat could afford a green reading when
+   it was the only one in the deck; with a reading under every line, a
+   coloured one would paint "state" across the whole page — and green
+   means chosen/correct here and nothing else. gray-500 rather than the
+   gray-400 of an ordinary gloss: this is text a learner has to actually
+   read, not a footnote.
+
+   All of them hide together on body.no-yomi — the ア switch in the pager.
+   One switch for the deck, so a learner who stops needing the crutch is
+   done with it everywhere, not page by page. */
+.yomi {
+  display: block;
+  margin-top: 4px;
+  color: var(--gray-500);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+/* !important because the readings that predate this component are
+   positioned by their own container rules (.bubble > .yomi and friends),
+   which outrank a bare class on the switch. */
+body.no-yomi .yomi { display: none !important; }
+
 .model-list {
   display: grid;
-  gap: 18px;
+  gap: var(--item-gap);
 }
 
 /* reading lines: Japanese gloss as a header box on top, Korean below
@@ -536,6 +594,51 @@ p {
   font-weight: 700;
 }
 
+/* ---- .task — the header band is telling you what to DO ----
+   By the third page a learner has learned what this band is: the Japanese of
+   the Korean directly below it. A handful of write-in activities have nothing
+   to translate — the Korean does not exist yet, the learner is about to invent
+   it — so the band carries the instruction instead. Same slot, opposite
+   meaning, and until now nothing on screen said which one you were reading:
+   you started reading 「ある？ない？いつ・どこ？」 as a sentence to say.
+
+   Marked, not recoloured. Every colour in this system already means exactly
+   one thing, and the band's fill is spoken for twice over (grey = the partner's
+   turn, green-100 = yours). So it says it in words, the way the tutor note's
+   튜터만 badge does — and being labelled is what lets the rest of it stay soft.
+   The text also drops a weight, so a glance that skips the badge still lands.
+
+   Two shapes, one badge. On the label itself the whole band is the
+   instruction; as a child it is one instruction line under a real translation
+   — which is what 「何が好きですか？（先生にも聞いてみよう）」 was doing inside a
+   single run of text, with a pair of parentheses as the only warning. */
+.answer-label.task,
+.answer-label > .task {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 6px;
+  font-weight: 600;
+}
+
+.answer-label > .task {
+  margin-top: 5px;
+}
+
+.answer-label.task::before,
+.answer-label > .task::before {
+  content: "やること";
+  flex: none;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(28, 28, 28, .09);
+  color: inherit;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
 /* open write-in areas carry a very light grey so they read as
    "fill the whole thing here" (fill-in sentences keep white). Any
    answer placed inside is rendered barely-visible, like the pills. */
@@ -555,6 +658,33 @@ p {
   display: block;
   padding: 18px 16px 20px;
   background: #fff;
+}
+
+/* A dialogue blank is sized to its answer like every other blank, so a long
+   one wraps below its lead-in rather than being given the line outright. What
+   it needs there is room: at the normal 1.45 the 34px pill clears the text
+   above it by 3px and reads as stuck to it. Row spacing is line-height's job —
+   a margin on the pill would work on the wrapped rows and shove the rows where
+   it *does* fit off their own baseline, since the same element is doing both.
+   2.2 lands the wrapped gap at 14px.
+
+   Leading is split above and below the line, so the taller line would also
+   push the first row down off the box's top padding; the padding here gives
+   back exactly that half-leading. Net effect on a row that doesn't wrap is
+   nothing but a 4px tightening at the top — which is the point: the first row
+   now sits 19px below the border whether it wrapped or not, where the pill's
+   height used to make the two disagree.
+
+   Scoped to .dialogue because only 대화 채우기 puts a clause-length blank
+   after a clause-length lead-in. The 빈칸 채우기 drills are short lead-ins in
+   .task-block and want the tight default. */
+.dialogue .answer-fill .korean {
+  line-height: 2.2;
+}
+
+.dialogue .answer-fill {
+  padding-top: 10px;
+  padding-bottom: 19px;
 }
 
 .answer-box.small .answer-space {
@@ -609,7 +739,6 @@ p {
 }
 .slot-input::placeholder { color: #b4b4b0; font-weight: 700; }
 .slot-input:focus { outline: none; border-style: solid; background: #fff; }
-.bubble.me .slot-input { background: #f6fdf0; }
 
 .option-line {
   display: block;
@@ -714,6 +843,24 @@ p {
   font-weight: 600;
 }
 
+/* A hint INSIDE an answer box is that box's own footer band — fused to the
+   bottom edge, on the same quiet grey its header uses. Outside the box it was
+   a second object floating under a first one, and on the free-writing pages
+   the raft of chips outgrew the box it belonged to. Position is the whole
+   API: same .hint, same .hint-chip, put it in the box and it becomes a band.
+   (.answer-box already clips, so the band takes the box's bottom radius.) */
+.answer-box > .hint {
+  margin: 0;
+  padding: 9px 14px;
+  border-top: 1px solid var(--gray-200);
+  background: var(--gray-50);
+}
+
+/* white on grey needs no outline, and one less outline is one less box */
+.answer-box > .hint > .hint-chip {
+  border-color: transparent;
+}
+
 .hint-chip {
   display: inline-flex;
   align-items: center;
@@ -790,7 +937,7 @@ p {
 /* ---------- dialogue ---------- */
 .dialogue {
   display: grid;
-  gap: 14px;
+  gap: var(--item-gap);
 }
 
 .card + .dialogue {
@@ -874,8 +1021,14 @@ p {
   border-top-right-radius: 4px;
 }
 
-/* a hint sitting inside a dialogue bubble */
-.bubble .hint {
+/* a hint sitting loose in a dialogue bubble, under the line it glosses.
+   Direct child only: a hint inside an answer box is that box's footer band
+   and is fused to its bottom edge (see .answer-box > .hint). This used to be
+   a descendant selector, and being the later rule it beat the band's own
+   margin:0 — every hint band in a dialogue floated 10px off the bottom of
+   its box. On a white fill that read as a box with a sagging floor; over the
+   grey of a write-in area it read as the fill running out early. */
+.bubble > .hint {
   margin-top: 10px;
 }
 
@@ -898,9 +1051,13 @@ p {
   background: #fff;
 }
 
-/* nesting rule: when a "me" turn holds an answer box, the box IS
-   the bubble — drop the wrapper's chrome so only one box renders */
-.bubble.me:has(> .answer-box) {
+/* nesting rule: when a turn holds an answer box, the box IS the bubble —
+   drop the wrapper's chrome so only one box renders. Either side may hold
+   one: the learner's turns are answer boxes everywhere, and a tutor turn
+   becomes one when the tutor is the one writing (a free answer the learner
+   reads). The header band is what tells the two apart, exactly as the
+   translation strip does on a Korean bubble. */
+.bubble:has(> .answer-box) {
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -908,28 +1065,26 @@ p {
   box-shadow: none;
 }
 
-.bubble.me:has(> .answer-box) > .answer-box {
+.bubble:has(> .answer-box) > .answer-box {
   margin: 0;
   box-shadow: none;
 }
 
+/* The header band is what says "this turn is yours", exactly as the
+   translation strip does on a Korean bubble — so it takes the same token.
+   It used to be a hand-picked #e7f8d8: a yellower, 5-points-darker green
+   sitting one bubble away from the real one, which read as two greens for
+   one meaning. Header/body separation is carried by the rule line under
+   it, not by the fill, so matching the token costs nothing. */
 .bubble.me:has(> .answer-box) .answer-label {
-  background: #e7f8d8;
+  background: var(--green-100);
 }
 
-/* section 3 "me" boxes are green: their write-in areas and pills follow
-   the green convention (a touch lighter than the green header) */
-.bubble.me .answer-space {
-  background: #f6fdf0;
-  color: #e3f1d5;
-}
+/* Write-in areas keep the neutral "fill here" grey they use everywhere
+   else. Tinting them green gave green a second meaning — identity AND
+   write-here — on the one component where both were on screen at once. */
 
-.bubble.me .slot {
-  background: #f6fdf0;
-  color: #e3f1d5;
-}
-
-.bubble.me:has(> .answer-box) > .hint {
+.bubble:has(> .answer-box) > .hint {
   margin-top: 12px;
 }
 
@@ -1142,7 +1297,7 @@ strong {
 /* ---------- choose-an-option activity ---------- */
 .choose-list {
   display: grid;
-  gap: 10px;
+  gap: var(--item-gap);
 }
 
 .choose-row {
@@ -1195,8 +1350,11 @@ strong {
   font-weight: 700;
 }
 
+/* Same 14px inset as the header band above it, so the Japanese prompt and the
+   Korean sentence start on one line down the left edge. At 20px the sentence
+   sat six pixels adrift of its own label. */
 .choose-row.sentence > .choose-sentence {
-  padding: 14px 20px;
+  padding: 12px 14px;
 }
 
 .choose-sentence {
@@ -1223,8 +1381,13 @@ strong {
   line-height: 1.1;
 }
 
+/* The pill carries a border, so with no margin its edge lands against the last
+   glyph of the noun — 학생 and 이에요 read as one crowded word rather than a
+   word and a thing you tap. 4px is a gap, not a space: the option still
+   attaches to the noun more closely than the two options sit to each other. */
 .choose-sentence .opt {
   min-width: 2.6em;
+  margin: 0 4px;
   padding: 5px 13px;
   font-size: 17px;
   vertical-align: middle;
@@ -1237,7 +1400,7 @@ strong {
 }
 
 .choose-sentence .sep {
-  margin: 0 4px;
+  margin: 0 2px;
 }
 
 /* note boxes always stack vertically — the lesson lives in a phone-width
@@ -1254,13 +1417,53 @@ strong {
   outline-offset: 3px;
   box-shadow: 0 0 0 6px rgba(255, 45, 85, .20);
   animation: spotPulse 1.15s ease-in-out infinite;
+  /* The ring is drawn OUTSIDE the block, in space the next sibling owns — and
+     these decks stack opaque cards edge to edge, so a later sibling paints over
+     the lower half of the ring and it reads as clipped. Lift the lit block for
+     as long as it is lit. `relative` with no offsets moves nothing; the two
+     blocks that are already relative (the batchim syllable tiles) keep their
+     own positioning and just gain the z-index. */
+  position: relative;
+  z-index: 2;
 }
 @keyframes spotPulse {
   0%, 100% { box-shadow: 0 0 0 6px rgba(255, 45, 85, .20); }
   50%      { box-shadow: 0 0 0 11px rgba(255, 45, 85, .08); }
 }
 [data-spot] { cursor: pointer; }
+/* a field keeps its own caret cursor — it is entered, not pointed at */
+input[data-spot], textarea[data-spot] { cursor: auto; }
 @media (prefers-reduced-motion: reduce) { .is-spot { animation: none; } }
+
+/* Some blocks sit flush inside a card that clips its overflow — a header strip
+   at the top of a rounded answer box. An outward ring there gets sliced down to
+   a stray red line along the one free edge, so the script measures for it and
+   turns the ring inward instead: same red, drawn just inside the block's own
+   edge. The glow goes with it — it would be clipped by the same box. */
+.is-spot.is-spot-in {
+  outline-offset: -2.5px;
+  box-shadow: none;
+  animation: none;
+}
+
+/* Stepping into a text box rings the BLOCK that holds it — the question card,
+   the speech bubble, the feedback row — not the box itself. Two reasons, and
+   the script does the walking (see `ringHost`). Every field clears its own
+   outline on :focus because each has its own focus treatment, so a ring drawn
+   on the field came off on the writer's screen: the one screen you actually
+   look at while typing. And a ring squeezed onto a 60px slot only points at the
+   slot, where ringing the block says which question is being answered.
+
+   It takes the same red — this is still "look here", not a second attention
+   colour — but steady rather than pulsing. A throb reads as an alarm, and this
+   one sits under the writer's eyes for as long as the typing lasts; the pulse
+   is for a block you glance at once. */
+.is-spot.is-spot-field {
+  box-shadow: 0 0 0 5px rgba(255, 45, 85, .14);
+  animation: none;
+}
+/* fallback, if a field ever turns up with no block around it to ring */
+input.is-spot, textarea.is-spot { outline-width: 2.5px; outline-offset: 2px; }
 
 /* ---------- shared highlighter (interactive/highlight.js) ----------
    A marker stroke over the text, mirrored to the other screen. Persistent —
@@ -1307,12 +1510,14 @@ mark.hl {
   display: none;
   box-sizing: border-box;
   width: 100%;
-  /* The bottom margin is real: the box is injected between two components that
-     know nothing about it, and several of them (.sign-list, .known, .letter-row)
-     bring no top margin of their own — with a 0 bottom the memo collided with
-     whatever followed it. The TOP is tightened by the adjacency rules below,
-     because the memo belongs to the instruction above it. */
-  margin: 8px 0 18px;
+  /* The memo owns both of its gaps, so neither depends on what it happens to
+     be sitting between. TOP 8px: it belongs to the instruction above it, and
+     the rules below zero that instruction's bottom margin so this is the whole
+     distance. BOTTOM 26px: the same gap the script box leaves, so the activity
+     sits where it sits in student view and turning teaching mode on does not
+     shuffle the page. (Several components — .sign-list, .known, .letter-row —
+     bring no top margin at all, so a 0 here would let them collide.) */
+  margin: 8px 0 26px;
   /* room on the left for the pencil */
   padding: 8px 11px 8px 30px;
   /* Dashed, always — not only while empty. Dashed already means "written here,
@@ -1366,9 +1571,28 @@ body.teaching .note-input,
    the script box's grand-sibling rather than its neighbour and the first
    selector never matches. Without the second one the gap was right only while
    teaching mode was on. (The merged case is tightened in the track sheet,
-   which loads after this one and wins on specificity.) */
-.section-subtitle:has(+ .note-input),
-.section-subtitle:has(+ .tutor-note + .note-input) { margin-bottom: 8px; }
+   which loads after this one and wins on specificity.)
+
+   Only when the memo is actually SHOWN. It is display:none by default, and a
+   hidden box contributes no margin, so tightening the script unconditionally
+   left the activity 8px under the script on every page in student view — the
+   memo's own 18px was paying for a gap it wasn't rendering. Student view is
+   what the deck loads as, so that was the state nobody had measured.
+
+   The value is 0, not a small number: THE MEMO OWNS ITS OWN TOP GAP (8px).
+   Two owners meant the gap collapsed to 8px on block pages and added up to
+   16px on flex pages — the same memo sitting at two distances depending on
+   which component the page happened to hold.
+
+   The tutor-note case is deliberately NOT here. When a note follows the
+   script the two are welded into one card (see the track sheet), and this
+   selector outranks that weld on specificity — which is what prised the
+   튜터만 band off the script. Outside teaching mode the note is display:none,
+   so the script and the memo are neighbours again and the third selector
+   applies; body:not(.teaching) keeps it from firing where the weld lives. */
+body.teaching .section-subtitle:has(+ .note-input),
+.section-subtitle:has(+ .note-input:not(:placeholder-shown)),
+body:not(.teaching) .section-subtitle:has(+ .tutor-note + .note-input:not(:placeholder-shown)) { margin-bottom: 0; }
 
 /* empty and only the tutor can see it: quieter still, so an unused box on
    every page never reads as content the learner is missing */
