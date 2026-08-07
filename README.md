@@ -27,9 +27,9 @@ by hand through 교재 등록/수정 → **html로 생성하기**.
 |---|---|
 | `curriculum.yaml` | languages, environments, repo-wide constants |
 | `courses/<lang>/<course>/` | **deployable.** `course.yaml` + `lessons/<NN-slug>/` |
-| `shared/` | `lesson-card.css`, the four interaction add-ons, the design and sync contracts |
+| `shared/` | the deck runtime — `lesson-card.css` + `trial.css`, thirteen activity/chrome scripts, and the design contract |
 | `schemas/` | JSON Schema for the three document kinds |
-| `tools/` | build · validate · plan · apply |
+| `tools/` | build · validate · plan · apply, plus the two sync tools below |
 | `sandbox/` | experiments. Committed, reviewable, and structurally undeployable |
 | `references/` | table-of-contents plans, textbook pattern maps, research |
 | `docs/` | the sync contract |
@@ -109,7 +109,14 @@ python3 tools/validate.py --contract           # …plus lemonboard's data-sync 
 python3 tools/plan.py --env stage              # what apply would do
 python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html \
         --out /tmp/deck                        # one deck, to inspect the zip
+
+python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/, references/
+python3 tools/import-trial-decks.py            # …then rebuild the trial course
 ```
+
+The two sync tools find the authoring tree next door; pass `--upstream PATH` or
+set `$PODO_AUTHORING_ROOT` if yours sits somewhere else. Run them in that order —
+the second reads the runtime the first mirrored. Neither is called by CI.
 
 Decks are visual documents. Render them in a browser at 480px and look before
 claiming a change works.
@@ -164,8 +171,38 @@ ships, not the tag itself.
 Content updates are a GCS overwrite at the same key; the lemonboard room is
 created once and survives them. That is what makes a re-deploy safe.
 
+## Where the content comes from
+
+`beginner-curriculum/korean` is the authoring tree and the upstream for
+`shared/`, `sandbox/` and `references/`. It shares one `runtime/` across every
+deck; this repo needs each deck self-contained, because grape flattens the
+uploaded zip into a single GCS prefix. So a sync is not a copy:
+
+| upstream | here | what changes |
+|---|---|---|
+| `runtime/{css,js}` | `shared/{css,js}` | nothing — straight mirror |
+| `trial/lessons/*.html` | `courses/kr/hangul-trial-test/` | refs flattened to basenames, runtime bundled per deck, **input controls written into the markup** instead of built at load |
+| `trial/*`, `tracks/*/sample-lesson.html`, `interactive/` | `sandbox/` | `runtime/` refs repointed at `shared/` |
+| `tracks/*/table-of-contents.md`, `references/` | `references/` | licensed scans dropped (see below) |
+
+The control rewrite is the one that matters. lemonboard's validator parses
+statically, so a `<span>` that only becomes an `<input>` when the page loads has
+no resolvable `data-sync-kind` — the element is dropped from the sync set with no
+warning, and the deck works in class while failing the merge gate. See
+[`CLAUDE.md`](CLAUDE.md).
+
+That is also why `shared/js/activities.js` is *not* what the trial decks ship.
+Upstream's version builds those controls at load;
+[`tools/deck-runtime/activities.js`](tools/deck-runtime/activities.js) binds them
+instead, and is the one file here that has to be ported by hand when upstream
+changes an activity.
+
+Re-syncing replaces those directories wholesale, so **edit them upstream**, not
+here. `courses/`, `tools/`, `schemas/`, `docs/`, `shared/assets/` and
+`sandbox/archive/` are this repo's own.
+
 ## What is deliberately not here
 
 - **The PDF pipeline.** Page images, `podo-pdf-tool`, `BOOK_FILE_ID`, audio via `TB_COM_FILE`. Grape still owns all of it for legacy courses. This repo is HTML 교재 only.
-- **Textbook scans.** ~1GB of licensed PDFs and page images stay in `beginner-curriculum`. Only derived markdown moved.
+- **Textbook scans.** 41 licensed PDFs and `dekiru-kankokugo/page-images/` — 726MB of the 1.0GB in `korean/references/curricula` — stay in `beginner-curriculum`. Only derived markdown and the wireframe PNGs moved.
 - **The Japanese curriculum.** The layout is language-neutral (`courses/<lang>/`), so it can move in later; nothing here assumes Korean.
