@@ -1,50 +1,49 @@
-# Hangul Reading Curriculum — Table of Contents
+# 한글 읽기 커리큘럼 — 목차
 
-**Goal:** take a Japanese learner from *never having seen Korean* to **reading any Korean syllable aloud**.
+**목표:** 한국어를 *한 번도 본 적 없는* 일본인 학습자를 **어떤 한국어 음절이든 소리 내어 읽는** 데까지 데려갑니다.
 
-**14 lessons.** Each lesson is paced so that ~80% is review and only one small new idea is added.
-**Four review checkpoints** — after the consonants, after the full consonant chart, after every
-vowel, and at the very end — break up the rhythm and lock in fluency before each difficulty step.
-Letters stay on simple open syllables (consonant + vowel) until the bottom slot (받침) arrives in
-Part 3.
+**14 레슨.** 한 레슨은 약 80%가 복습이고 새로 얹는 것은 작은 하나뿐이도록 속도를 맞췄습니다.
+**복습 회차는 네 번** — 자음을 다 배운 뒤, 자음표를 완성한 뒤, 모음을 다 배운 뒤, 그리고 맨 끝 —
+리듬을 끊어 주고, 난이도가 한 단 올라가기 전에 유창함을 굳힙니다.
+글자는 3부에서 받침이 나오기 전까지 단순한 열린 음절(자음＋모음)에만 머뭅니다.
 
-*Sequenced against 《세종학당 한국어 입문》 (`references/curricula/sejong-hangugeo-ipmun`): same order —
-vowels → plain consonants → 격음 → 경음 → y/e-vowels → w-vowels → 받침 → 겹받침 → 연음 — and the
-same habit of inserting a 연습 활용 block after every two units of new material.*
-
----
-
-## Part 1 · 자음 (The Consonants)
-
-| Lesson | New pieces | Core outcome — you can read… |
-| --- | --- | --- |
-| **1. The block & first sounds** *(sample lesson)* | block rule · vowels ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ · consonants ㄴ ㅁ · silent ㅇ | 나 · 너 · 나무 · 누나 · 어머니 · 오이 |
-| **2. The six plain consonants** | ㄱ ㄷ ㄹ · ㅂ ㅅ ㅈ  *(the one twist: 시 = "shi")* | 고기 · 구두 · 다리 · 바다 · 아버지 · 사자 · 주스 · 모자 |
-| **3. Review & speed** *(no new letters)* | mixed reading · dictation · word-building across everything so far | 가구 · 거리 · 부모 · 소리 · 도시 · 가지 — read without stopping |
-| **4. Add a stroke = add air** | ㅎ + aspirated ㅋ ㅌ ㅍ ㅊ *(taught as pairs: ㄱ→ㅋ, ㄷ→ㅌ, ㅂ→ㅍ, ㅈ→ㅊ)* | 하마 · 코 · 토마토 · 포도 · 차 · 커피 |
-| **5. Double = strong** | tense ㄲ ㄸ ㅃ ㅆ ㅉ *(again as pairs off the plain set)* | 토끼 · 아빠 · 가짜 · 코끼리 · 싸다 |
-| **6. The whole consonant chart** *(no new letters)* | plain / aspirated / tense in one grid · minimal pairs 가–카–까, 자–차–짜 · listen-and-pick | 다리 vs 따리 · 방 vs 팡 — hear the column, then read any consonant on sight |
-
-## Part 2 · 모음 (More Vowels)
-
-| Lesson | New pieces | Core outcome — you can read… |
-| --- | --- | --- |
-| **7. The y-vowels & e-vowels** | ㅑ ㅕ ㅛ ㅠ *(+stroke = +y)* · ㅐ ㅔ ㅒ ㅖ *(the whole え-family at once — for a Japanese ear they are one sound)* | 우유 · 여자 · 야구 · 요리 · 개 · 시계 · 얘기 |
-| **8. Combined (w-)vowels** | ㅘ ㅝ ㅚ ㅟ ㅙ ㅞ ㅢ *(built from vowels you know: ㅗ/ㅜ + vowel = w-glide)* | 사과 · 가위 · 의자 · 회사 · 뭐 · 왜 |
-| **9. Review — every letter, no bottom slot** *(no new letters)* | all 19 consonants × all 21 vowels · speed reading · build-from-parts | 어제 · 화요일 · 교과서 · 뉴스 — any 받침-less word, read cold |
-
-## Part 3 · 받침 (The Bottom Slot)
-
-| Lesson | New pieces | Core outcome — you can read… |
-| --- | --- | --- |
-| **10. Batchim I — the sonorants** | bottom-slot ㅇ ㄴ ㅁ ㄹ *(ㄴ/ㅁ/ㅇ anchor to ん; ㅇ finally makes a sound: ng; ㄹ is the one with no kana anchor — it keeps ringing)* | 강 · 산 · 밤 · 문 · 발 · 길 · 엄마 · 사람 · 사랑 · 서울 |
-| **11. Batchim II — the stops** | ㄱ ㄷ ㅂ *(anchor to っ — the sound is cut off, not released)* · the **7 final sounds** rule *(ㅋㄲ→ㄱ · ㅅㅆㅈㅊㅌㅎ→ㄷ · ㅍ→ㅂ)* | 책 · 밥 · 옷 · 부엌 · 낮 · 앞 · 한국 · 김밥 |
-| **12. 겹받침 — two letters, one slot** | ㄺ ㄻ ㅀ · ㅄ ㄳ ㄶ *(only one of the pair is pronounced — which one is the rule)* | 닭 · 삶 · 싫다 · 값 · 몫 · 많다 |
-| **13. Reading like a native** | 연음 linking *(the batchim slides into the next empty ㅇ — including from a 겹받침)* · ㅎ-weakening · nasal assimilation | 한국어→한구거 · 음악→으막 · 좋아요→조아요 · 값이→갑씨 · 한국말→한궁말 · 십만→심만 |
-| **14. Capstone — read anything** *(no new letters)* | mixed everything · real signs, menus, names · the greetings and classroom lines you'll hear from lesson one *(안녕하세요 · 감사합니다 · 잘 들으세요 · 따라 읽으세요)* · speed reading | any sign on a Korean street — decoded and read aloud |
+*《세종학당 한국어 입문》(`references/curricula/sejong-hangugeo-ipmun`)에 순서를 맞췄습니다 — 모음 →
+평음 → 격음 → 경음 → y/e 모음 → w 모음 → 받침 → 겹받침 → 연음, 그리고 새 내용 두 단위마다
+연습 활용 블록을 끼워 넣는 습관까지 같습니다.*
 
 ---
 
-**After Lesson 14:** every Korean syllable — any consonant, any vowel, with a single or double
-bottom slot — can be decoded and read aloud, and the three sound changes that make written Korean
-differ from spoken Korean are audible rather than surprising.
+## 1부 · 자음
+
+| 레슨 | 새로 배우는 것 | 이 레슨이 끝나면 읽을 수 있는 것 |
+| --- | --- | --- |
+| **1. 글자 블록과 첫 소리** *(샘플 레슨)* | 블록 규칙 · 모음 ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ · 자음 ㄴ ㅁ · 소리 없는 ㅇ | 나 · 너 · 나무 · 누나 · 어머니 · 오이 |
+| **2. 평음 여섯 개** | ㄱ ㄷ ㄹ · ㅂ ㅅ ㅈ  *(함정은 하나: 시 = "시[shi]")* | 고기 · 구두 · 다리 · 바다 · 아버지 · 사자 · 주스 · 모자 |
+| **3. 복습과 속도** *(새 글자 없음)* | 섞어 읽기 · 받아쓰기 · 지금까지 배운 것으로 단어 만들기 | 가구 · 거리 · 부모 · 소리 · 도시 · 가지 — 멈추지 않고 읽는다 |
+| **4. 획을 더하면 바람이 더해진다** | ㅎ ＋ 격음 ㅋ ㅌ ㅍ ㅊ *(짝으로 가르칩니다: ㄱ→ㅋ, ㄷ→ㅌ, ㅂ→ㅍ, ㅈ→ㅊ)* | 하마 · 코 · 토마토 · 포도 · 차 · 커피 |
+| **5. 겹쳐 쓰면 세진다** | 경음 ㄲ ㄸ ㅃ ㅆ ㅉ *(이번에도 평음에서 짝을 떠서)* | 토끼 · 아빠 · 가짜 · 코끼리 · 싸다 |
+| **6. 자음표 전체** *(새 글자 없음)* | 평음 / 격음 / 경음을 한 표에 · 최소 대립쌍 가–카–까, 자–차–짜 · 듣고 고르기 | 다리 vs 따리 · 방 vs 팡 — 어느 줄인지 듣고, 어떤 자음이든 보는 즉시 읽는다 |
+
+## 2부 · 모음
+
+| 레슨 | 새로 배우는 것 | 이 레슨이 끝나면 읽을 수 있는 것 |
+| --- | --- | --- |
+| **7. y 모음과 e 모음** | ㅑ ㅕ ㅛ ㅠ *(획 하나 = y 하나)* · ㅐ ㅔ ㅒ ㅖ *(え 계열을 한 번에 — 일본어 귀에는 어차피 한 소리입니다)* | 우유 · 여자 · 야구 · 요리 · 개 · 시계 · 얘기 |
+| **8. 합쳐진 모음 (w 모음)** | ㅘ ㅝ ㅚ ㅟ ㅙ ㅞ ㅢ *(아는 모음으로 만듭니다: ㅗ/ㅜ ＋ 모음 = w 활음)* | 사과 · 가위 · 의자 · 회사 · 뭐 · 왜 |
+| **9. 복습 — 모든 글자, 받침만 빼고** *(새 글자 없음)* | 자음 19개 × 모음 21개 · 속도 읽기 · 부품에서 글자 조립하기 | 어제 · 화요일 · 교과서 · 뉴스 — 받침 없는 단어라면 처음 봐도 읽는다 |
+
+## 3부 · 받침
+
+| 레슨 | 새로 배우는 것 | 이 레슨이 끝나면 읽을 수 있는 것 |
+| --- | --- | --- |
+| **10. 받침 ① 울리는 소리** | 받침 ㅇ ㄴ ㅁ ㄹ *(ㄴ/ㅁ/ㅇ은 ん에 걸고, ㅇ이 드디어 소리를 냅니다: ng. ㄹ은 가나에 걸 곳이 없는 하나 — 계속 울립니다)* | 강 · 산 · 밤 · 문 · 발 · 길 · 엄마 · 사람 · 사랑 · 서울 |
+| **11. 받침 ② 막는 소리** | ㄱ ㄷ ㅂ *(っ에 겁니다 — 소리를 터뜨리지 않고 끊습니다)* · **받침 7개 소리** 규칙 *(ㅋㄲ→ㄱ · ㅅㅆㅈㅊㅌㅎ→ㄷ · ㅍ→ㅂ)* | 책 · 밥 · 옷 · 부엌 · 낮 · 앞 · 한국 · 김밥 |
+| **12. 겹받침 — 글자 둘, 자리 하나** | ㄺ ㄻ ㅀ · ㅄ ㄳ ㄶ *(둘 중 하나만 소리 납니다 — 어느 쪽인지가 규칙)* | 닭 · 삶 · 싫다 · 값 · 몫 · 많다 |
+| **13. 한국 사람처럼 읽기** | 연음 *(받침이 뒤의 빈 ㅇ으로 넘어갑니다 — 겹받침에서도)* · ㅎ 약화 · 비음화 | 한국어→한구거 · 음악→으막 · 좋아요→조아요 · 값이→갑씨 · 한국말→한궁말 · 십만→심만 |
+| **14. 마무리 — 무엇이든 읽는다** *(새 글자 없음)* | 전부 섞어서 · 실제 간판·메뉴·이름 · 첫 수업부터 듣게 될 인사와 교실 표현 *(안녕하세요 · 감사합니다 · 잘 들으세요 · 따라 읽으세요)* · 속도 읽기 | 한국 거리의 간판 아무거나 — 뜯어서 소리 내어 읽는다 |
+
+---
+
+**14 레슨을 마치면:** 어떤 자음, 어떤 모음이든, 받침이 하나든 둘이든 — 모든 한국어 음절을 뜯어서
+소리 내어 읽을 수 있고, 쓰인 한국어와 말하는 한국어를 달라 보이게 만드는 세 가지 소리 변화가
+당황스러운 것이 아니라 귀에 들리는 것이 됩니다.

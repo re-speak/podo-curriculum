@@ -1,65 +1,63 @@
-# Pronunciation Curriculum — Table of Contents
+# 발음 교정 커리큘럼 — 목차
 
-> **Status: plan only.** No lesson decks exist yet. This file is the syllabus to build from
-> when we get to it.
+> **상태: 계획 단계.** 아직 레슨 덱이 하나도 없습니다. 이 파일은 만들 때 따를 강의 계획입니다.
 
-**Goal:** fix the specific things that make a Japanese speaker's Korean sound wrong — not
-"Korean pronunciation" in general.
+**목표:** 일본어 화자의 한국어를 어색하게 만드는 **바로 그 지점들**만 고칩니다 — 일반론으로서의
+"한국어 발음"이 아닙니다.
 
-**10 lessons.** The whole point of this track is that the problem set is **closed and knowable
-in advance**. Japanese phonology fights Korean in a small number of predictable places, and
-this is the list. Nothing here is a general pronunciation tip; every lesson exists because
-Japanese has one sound where Korean has two or three, or a habit that Korean doesn't allow.
+**10 레슨.** 이 트랙의 핵심은 문제 목록이 **닫혀 있고 미리 알 수 있다**는 점입니다. 일본어 음운은
+예측 가능한 몇 군데에서만 한국어와 부딪히고, 그 목록이 아래 전부입니다. 여기에 일반적인 발음 팁은
+하나도 없습니다. 모든 레슨은 **일본어에 한 칸뿐인 자리에 한국어가 두세 칸을 두거나**, 한국어가
+허용하지 않는 습관이 일본어에 있기 때문에 존재합니다.
 
-Lessons are self-contained and can be taken in order or assigned one at a time when a tutor
-hears the problem. Audio-only, like every other track: model a sound by *saying* it, and
-describe the **learner's own** mouth (입술을 동그랗게), never the tutor's.
-
----
-
-## Part 1 · 모음 — the vowels Japanese merges
-
-| Lesson | 日本語の癖 (what goes wrong) | 直し方 | 최소 대립쌍 |
-| --- | --- | --- | --- |
-| **1. ㅓ vs ㅗ** | Both land on オ, so 거기 and 고기 come out the same | ㅓ = 唇を丸めない・あごを下げる · ㅗ = 唇をしっかり丸めて前に | 거기 / 고기 · 서리 / 소리 · 널다 / 놀다 · 벌 / 볼 · 정말 / 종말 |
-| **2. ㅡ vs ㅜ** | Both land on ウ; Japanese ウ sits between them and drifts toward ㅜ | ㅡ = 唇を横に引いたまま · ㅜ = 唇を丸く突き出して | 글 / 굴 · 는 / 눈 · 들 / 둘 · 은행 / 운행 |
-
-## Part 2 · 자음 — two-way vs three-way
-
-| Lesson | 日本語の癖 | 直し方 | 최소 대립쌍 |
-| --- | --- | --- | --- |
-| **3. 평음 vs 격음** *(ㄱㅋ · ㄷㅌ · ㅂㅍ · ㅈㅊ)* | Japanese contrasts voiced/voiceless; Korean contrasts **breath**. か and ㅋ get confused with ㄱ | 手のひらを口の前に — 격음 blows air, 평음 doesn't | 개 / 캐 · 달 / 탈 · 불 / 풀 · 자다 / 차다 |
-| **4. 경음** *(ㄲㄸㅃㅆㅉ)* | The one series with **no Japanese slot at all** — usually swallowed into 평음 | Anchor to the geminate: 「いっぱい」の「ぱ」= ㅃ. Tension, no breath, cut short | 사다 / 싸다 · 자다 / 짜다 · 달 / 딸 · 방 / 빵 · 개 / 깨 |
-| **5. 어두는 안 울린다** *(initial devoicing)* | ㅂ→ば, ㄱ→が at the start of a word. This is why the Korean sounds foreign even when every letter is right | 語頭は濁らない、語中で濁る。同じ字が位置で変わる | 부부 [pubu] · 고기 [kogi] · 바다 [pada] · 도도 [todo] |
-| **6. ㄹ** | ら is fine mid-word but wrong in the bottom slot, and ㄹㄹ collapses | 어중 ㄹ ≈ ら (flap) · 받침 ㄹ = 舌先を歯ぐきにつけたまま離さない (lateral) · ㄹㄹ = hold it long | 사랑 · 우리 / 발 · 물 · 서울 / 빨리 · 걸릴 |
-
-## Part 3 · 받침 — where ん and っ each split into three
-
-| Lesson | 日本語の癖 | 直し方 | 최소 대립쌍 |
-| --- | --- | --- | --- |
-| **7. 받침 ㄴ · ㅁ · ㅇ** | All three are ん in Japanese, picked automatically by what follows. In Korean they are three different words | ㄴ = 舌先を歯ぐきに · ㅁ = 唇を閉じる · ㅇ = 舌の奥を上げ口は開けたまま | 산 / 삼 / 상 · 반 / 밤 / 방 |
-| **8. 받침 ㄱ · ㄷ · ㅂ** | All three are っ. And the bigger error: adding a vowel — 밥 → ぱぷ | 止めて、離さない。母音を足さない | 박 / 받 / 밥 · 국 / 굳 / 굽 |
-| **9. 연음 — 받침이 넘어갈 때** | Reading each block separately, so written and spoken Korean never match | 받침 slides into the next empty ㅇ; ㅎ weakens; 받침+ㄴ/ㅁ nasalizes | 한국어→한구거 · 음악→으막 · 밥이→바비 · 좋아요→조아요 · 값이→갑씨 · 한국말→한궁말 |
-
-## Part 4 · 억양 — the sentence, not the word
-
-| Lesson | 日本語の癖 | 直し方 | 예시 |
-| --- | --- | --- | --- |
-| **10. 문장 끝 억양** | Japanese pitch-accent is **word**-level; Korean contour is **phrase**-level. Flat delivery reads as cold or robotic | Same string, different meaning by contour alone — practice the four endings back to back | 학생이에요↘ / 학생이에요?↗ / 맛있죠?↗ / 진짜 싸네요!↘ |
+레슨은 서로 독립적이라 순서대로 들어도 되고, 튜터가 문제를 들은 시점에 한 과씩 꺼내 줘도 됩니다.
+다른 트랙과 마찬가지로 **음성만 오갑니다** — 소리는 *말해서* 들려주고, 입 모양은 언제나
+**학습자 자신의** 입을 설명합니다(입술을 동그랗게). 튜터의 입은 보이지 않습니다.
 
 ---
 
-## Notes for when we build this
+## 1부 · 모음 — 일본어가 하나로 합쳐 버리는 모음
 
-- **Perception before production.** Every lesson opens with listen-and-pick (which one did you
-  hear?), then read aloud, then produce. A learner who can't *hear* ㄲ vs ㄱ cannot be corrected
-  into saying it, and listening is the only rung that proves the contrast landed.
-- **Lessons 1, 2, 7, 8 overlap with `1-hangul`** — there they are taught as *decoding* (which
-  letter is this?), here as *production* (make the sound). Same contrasts, different job. Don't
-  duplicate the letter teaching; assume it and drill the mouth.
-- **Lesson 9 assumes hangul lesson 13.** It is the production counterpart of that lesson.
-- **The highest-damage three, if we only ever build three:** 4 (경음), 5 (어두 devoicing), 7
-  (받침 nasals). Those three cause the most mutual-intelligibility failures and the first two are
-  almost never taught anywhere.
-- A short diagnostic — the learner reads a fixed set of minimal pairs — would let a tutor pick
-  the right lessons instead of guessing. Worth building alongside the first deck.
+| 레슨 | 일본어의 습관 (무엇이 틀어지는가) | 고치는 법 | 최소 대립쌍 |
+| --- | --- | --- | --- |
+| **1. ㅓ vs ㅗ** | 둘 다 オ로 떨어져서 거기와 고기가 같은 소리로 나옵니다 | ㅓ = 唇を丸めない・あごを下げる · ㅗ = 唇をしっかり丸めて前に | 거기 / 고기 · 서리 / 소리 · 널다 / 놀다 · 벌 / 볼 · 정말 / 종말 |
+| **2. ㅡ vs ㅜ** | 둘 다 ウ로 떨어집니다. 일본어 ウ는 둘 사이에 있다가 ㅜ 쪽으로 끌려갑니다 | ㅡ = 唇を横に引いたまま · ㅜ = 唇を丸く突き出して | 글 / 굴 · 는 / 눈 · 들 / 둘 · 은행 / 운행 |
+
+## 2부 · 자음 — 두 갈래와 세 갈래
+
+| 레슨 | 일본어의 습관 | 고치는 법 | 최소 대립쌍 |
+| --- | --- | --- | --- |
+| **3. 평음 vs 격음** *(ㄱㅋ · ㄷㅌ · ㅂㅍ · ㅈㅊ)* | 일본어는 유성 / 무성으로 갈리지만 한국어는 **바람**으로 갈립니다. か가 ㅋ·ㄱ 사이에서 헷갈립니다 | 手のひらを口の前に — 격음은 바람이 나가고 평음은 나가지 않습니다 | 개 / 캐 · 달 / 탈 · 불 / 풀 · 자다 / 차다 |
+| **4. 경음** *(ㄲㄸㅃㅆㅉ)* | **일본어에 자리가 아예 없는** 유일한 계열 — 대개 평음으로 삼켜집니다 | 촉음에 겁니다: 「いっぱい」の「ぱ」= ㅃ. 힘을 주고, 바람 없이, 짧게 끊습니다 | 사다 / 싸다 · 자다 / 짜다 · 달 / 딸 · 방 / 빵 · 개 / 깨 |
+| **5. 어두는 안 울린다** *(어두 무성음화)* | 단어 첫머리에서 ㅂ→ば, ㄱ→が로 울립니다. 글자를 다 맞게 읽어도 외국어처럼 들리는 이유가 이것입니다 | 語頭は濁らない、語中で濁る。同じ字が位置で変わる | 부부 [pubu] · 고기 [kogi] · 바다 [pada] · 도도 [todo] |
+| **6. ㄹ** | 어중에서는 ら로 괜찮지만 받침 자리에서는 틀리고, ㄹㄹ은 뭉개집니다 | 어중 ㄹ ≈ ら (탄설음) · 받침 ㄹ = 舌先を歯ぐきにつけたまま離さない (설측음) · ㄹㄹ = 길게 끕니다 | 사랑 · 우리 / 발 · 물 · 서울 / 빨리 · 걸릴 |
+
+## 3부 · 받침 — ん과 っ가 각각 셋으로 갈라지는 자리
+
+| 레슨 | 일본어의 습관 | 고치는 법 | 최소 대립쌍 |
+| --- | --- | --- | --- |
+| **7. 받침 ㄴ · ㅁ · ㅇ** | 일본어에서는 셋 다 ん이고, 뒤에 오는 소리가 알아서 골라 줍니다. 한국어에서는 서로 다른 세 단어입니다 | ㄴ = 舌先を歯ぐきに · ㅁ = 唇を閉じる · ㅇ = 舌の奥を上げ口は開けたまま | 산 / 삼 / 상 · 반 / 밤 / 방 |
+| **8. 받침 ㄱ · ㄷ · ㅂ** | 셋 다 っ입니다. 그리고 더 큰 오류 하나 — 모음을 붙입니다: 밥 → ぱぷ | 止めて、離さない。母音を足さない | 박 / 받 / 밥 · 국 / 굳 / 굽 |
+| **9. 연음 — 받침이 넘어갈 때** | 블록을 하나씩 끊어 읽어서, 쓰인 한국어와 말하는 한국어가 끝내 만나지 않습니다 | 받침이 뒤의 빈 ㅇ으로 넘어가고, ㅎ은 약해지고, 받침＋ㄴ/ㅁ은 비음이 됩니다 | 한국어→한구거 · 음악→으막 · 밥이→바비 · 좋아요→조아요 · 값이→갑씨 · 한국말→한궁말 |
+
+## 4부 · 억양 — 단어가 아니라 문장
+
+| 레슨 | 일본어의 습관 | 고치는 법 | 예시 |
+| --- | --- | --- | --- |
+| **10. 문장 끝 억양** | 일본어의 고저 악센트는 **단어** 단위이고, 한국어의 억양 곡선은 **구** 단위입니다. 평평하게 말하면 차갑거나 기계처럼 들립니다 | 같은 글자, 곡선만으로 달라지는 뜻 — 네 가지 끝맺음을 이어서 연습합니다 | 학생이에요↘ / 학생이에요?↗ / 맛있죠?↗ / 진짜 싸네요!↘ |
+
+---
+
+## 만들 때를 위한 메모
+
+- **산출보다 지각이 먼저.** 모든 레슨은 듣고 고르기(어느 쪽을 들었나요?)로 열고, 그다음 읽고,
+  그다음 말합니다. ㄲ와 ㄱ을 *듣지* 못하는 학습자는 말하기로 교정되지 않고, 듣기만이 대립이
+  꽂혔는지를 증명하는 단계입니다.
+- **1·2·7·8 레슨은 `1-hangul`과 겹칩니다** — 거기서는 *해독*(이건 무슨 글자인가)으로 가르치고,
+  여기서는 *산출*(그 소리를 내라)로 가르칩니다. 같은 대립, 다른 일입니다. 글자 수업을 반복하지
+  말고, 안다고 전제한 뒤 입만 훈련시키세요.
+- **9 레슨은 한글 13 레슨을 전제합니다.** 그 레슨의 산출 짝입니다.
+- **셋만 만든다면, 피해가 가장 큰 셋:** 4(경음) · 5(어두 무성음화) · 7(받침 비음). 이 셋이
+  서로 못 알아듣는 사고를 가장 많이 만들고, 앞의 둘은 어디서도 거의 가르치지 않습니다.
+- 짧은 진단 — 정해진 최소 대립쌍 묶음을 학습자가 읽는 것 — 이 있으면 튜터가 짐작하지 않고 맞는
+  레슨을 고를 수 있습니다. 첫 덱과 함께 만들 가치가 있습니다.
