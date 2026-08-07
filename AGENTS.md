@@ -119,7 +119,7 @@ the controls written straight into the HTML.
 - **There is no state lock.** Identity lives in the DB's natural key, so nothing is written back to git.
 - **Both deck slots are mandatory.** A lesson with only 수업용 fails class creation at `/rooms/null/duplicate`.
 - **`sandbox/` cannot deploy** — `tools/model.py` only walks `courses/`. Put speculative work there; promoting it is the move into `courses/`.
-- **Run `python3 tools/validate.py` before pushing.** It catches the things that otherwise 404 from S3 while the build prints success.
+- **Run `python3 tools/validate.py` before pushing.** It catches the things that otherwise 404 from GCS while the build prints success.
 
 ## Not in scope
 

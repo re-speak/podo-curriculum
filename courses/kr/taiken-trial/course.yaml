@@ -1,15 +1,21 @@
 apiVersion: podo.curriculum/v1
 kind: Course
 metadata:
-  # 라이브에 이미 존재하는 코스를 레포가 넘겨받은 것이다 —
-  # GT_CLASS_COURSE CLASS_LEVEL=999.100 / LANG_TYPE=JP, 커버 BOOK_NAME "html test (john)".
-  # 덱 7주치는 gs://podo-assets/lemonboard-html/{7950,7951,7952,7957,7958,7959,8044}/ 에서
-  # 그대로 가져왔다. slug 는 영구 키이므로 바꾸지 말 것.
+  # 덱의 출처는 라이브의 수기 테스트 코스다 — CLASS_LEVEL=999.100 / LANG_TYPE=JP /
+  # CURRICULUM_TYPE=BASIC, 커버 BOOK_NAME "html test (john)". HTML 은
+  # gs://podo-assets/lemonboard-html/{7950,7951,7952,7957,7958,7959,8044}/ 에서 그대로 가져왔다.
+  #
+  # 그 행들을 넘겨받은 것이 아니라는 점에 주의. 자연키가 LANG_TYPE 과 CURRICULUM_TYPE 에서
+  # 갈리므로(JP/BASIC vs KR/TRIAL) apply 는 원본을 건드리지 않고 별도의 코스를 만든다.
+  # stage 에 실제로 그렇게 생겼다 — 원본 7949~8044 는 그대로 있고 이 레포의 행은 8142~8148 이다.
+  # 원본을 은퇴시키려면 어드민에서 따로 해야 한다.
   slug: taiken-trial
 
 spec:
   curriculumType: TRIAL
-  classLevel: "999.100"        # 라이브 행의 CLASS_LEVEL 과 같아야 state 가 붙는다
+  # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
+  # 999.100 은 원본 테스트 코스에서 물려받은 값이라 실제 상품 레벨이 아니다.
+  classLevel: "999.100"
   lessonTime: 25
   # 라이브 행이 USE_YN='N' 이다. 레포가 이 코스를 켜는 주체가 되기 전까지는 false 로 둔다 —
   # true 로 바꾸는 순간 apply 가 학습자에게 노출시킨다.

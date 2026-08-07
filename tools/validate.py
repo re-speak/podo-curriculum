@@ -6,7 +6,7 @@ Four layers, cheapest first:
 
   1. schema      — course.yaml / lesson.yaml against JSON Schema
   2. structure   — slugs match directories, weeks run 1..N
-  3. package     — every deck actually builds, with the S3-flattening audit
+  3. package     — every deck actually builds, with the GCS-flattening audit
   4. contract    — the built HTML through lemonboard's own data-sync validator
 
 Layer 4 needs network and is skipped without --contract, because the contract is

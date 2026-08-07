@@ -7,7 +7,7 @@ Nothing is remembered between runs. grape resolves each row by its natural key
 so this tool never has to carry ids forward — which means no lock file, and no
 write-back step whose failure turns the next run into a duplicate course.
 
-Grape stays the only writer. It already owns the S3 upload, the lemonboard room
+Grape stays the only writer. It already owns the GCS upload, the lemonboard room
 lifecycle and the GT_CLASS_COURSE / le_tutor_curriculum writes; re-implementing
 any of that here would mean two codebases drifting apart with production between
 them. So this tool builds zips, states what it wants, and lets grape do it.

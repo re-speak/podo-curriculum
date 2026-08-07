@@ -138,19 +138,20 @@ the failure surface in production.
 CI/CD is Cloud Build, not GitHub Actions. Triggers live in
 `podo-infra/gcp/global/cloudbuild`; the build files are in `.cloudbuild/`.
 
-1. PR → `podo-curriculum-validate` runs schema, structure, packaging and the contract check, and comments the plan.
-2. Deploy is a manual trigger — source branch and target env are chosen separately:
+1. **PR → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `main`.
+2. **Merge to `main` → `podo-curriculum-deploy` applies to stage, automatically.** The trigger listens on push to `main` with `_DEPLOY_ENV=stage`. Merging *is* the stage deploy; there is no separate button, because a deploy someone has to remember to press eventually goes unpressed and then `main` and the learner disagree.
+3. **Prod is the same trigger, run by hand**, with the env chosen at run time:
 
 ```sh
 gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
-  --branch=main --substitutions=_DEPLOY_ENV=stage      # or prod
+  --branch=main --substitutions=_DEPLOY_ENV=prod
 ```
 
 `prod` refuses any commit that is not an ancestor of `main`. That is the same
 protection the old `prod-*` tag gave — the point was that only reviewed content
 ships, not the tag itself.
 
-Content updates are an S3 overwrite at the same key; the lemonboard room is
+Content updates are a GCS overwrite at the same key; the lemonboard room is
 created once and survives them. That is what makes a re-deploy safe.
 
 ## What is deliberately not here

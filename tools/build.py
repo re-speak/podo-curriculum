@@ -2,7 +2,7 @@
 """
 Package one deck into the zip the lemonboard-html upload slot takes.
 
-Grape unpacks that zip to S3 under lemonboard-html/{교재ID}/, FLATTENING every
+Grape unpacks that zip to GCS under lemonboard-html/{교재ID}/, FLATTENING every
 entry into that one prefix, and renames the first .html and first .css it finds
 to lecture.* or prestudy.*. Three consequences drive this script:
 
@@ -44,7 +44,7 @@ CSS_URL_RE = re.compile(r'url\(\s*[\'"]?([^\'")]+)[\'"]?\s*\)')
 # The rewrites above understand exactly one spelling each. Everything a deck
 # could plausibly use instead is caught below and reported, because the failure
 # is otherwise silent: the asset is neither bundled nor rewritten, so it 404s
-# from S3 while the build prints success.
+# from GCS while the build prints success.
 UNHANDLED = [
     (re.compile(r'<link(?![^>]*rel="stylesheet"[^>]*href=")[^>]*rel=[\'"]?stylesheet', re.I),
      'a <link rel=stylesheet> the merger cannot read (href must follow rel, in double quotes)'),
@@ -57,7 +57,7 @@ UNHANDLED = [
 REMOTE_PREFIXES = ("http://", "https://", "//", "data:", "#")
 
 # lesson.* collides with the merged output; lecture.*/prestudy.* are uploaded
-# AFTER the css, so an asset by that name would overwrite the lesson at its S3 key.
+# AFTER the css, so an asset by that name would overwrite the lesson at its GCS key.
 RESERVED = {HTML_NAME, CSS_NAME, "lecture.html", "lecture.css",
             "prestudy.html", "prestudy.css"}
 
@@ -217,7 +217,7 @@ def audit(html: str, css: str) -> None:
         if pattern.search(html):
             problems.append(description)
 
-    # A surviving stylesheet link points at a file that will not exist on S3 —
+    # A surviving stylesheet link points at a file that will not exist in GCS —
     # the unpack flattens, and only the merged sheet is uploaded.
     for href in LINK_RE.findall(html):
         if not is_remote(href) and href != CSS_NAME:
@@ -231,7 +231,7 @@ def audit(html: str, css: str) -> None:
     problems.extend(f'src="{r}" still points at a subfolder' for r in leftover)
 
     if problems:
-        raise BuildError("cannot package — these would break silently on S3:\n  "
+        raise BuildError("cannot package — these would break silently in GCS:\n  "
                          + "\n  ".join(problems))
 
 

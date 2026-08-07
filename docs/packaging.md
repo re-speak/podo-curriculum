@@ -17,7 +17,7 @@ Upload the zip in grape admin → 교재 등록/수정 → **html로 생성하�
 
 ## What the upload slot actually does
 
-Grape (`admin/system/class_course/process/class_course_ps.php`) unpacks the zip to S3
+Grape (`admin/system/class_course/process/class_course_ps.php`) unpacks the zip to GCS
 under `lemonboard-html/{교재ID}/`, **flattening every entry into that one prefix**, and:
 
 - renames the **first `.html`** and **first `.css`** it finds to `lecture.*` (수업용) or
@@ -57,7 +57,7 @@ Two things can still leave it dependent on the network:
 Only one spelling of each reference is rewritten: `<link rel="stylesheet" href="…">` in that
 order with double quotes, and `src="…"` lowercase with double quotes. Anything else — `srcset`,
 `src='…'`, `SRC=`, an href-first `<link>`, a `url()` inside CSS or a `style` attribute — would
-be neither bundled nor rewritten, and would 404 from S3 while the build looked fine.
+be neither bundled nor rewritten, and would 404 from GCS while the build looked fine.
 
 So the packager audits the output and **exits with an error** listing exactly what it found.
 If you hit one, use the supported spelling rather than working around it.
@@ -65,7 +65,7 @@ If you hit one, use the supported spelling rather than working around it.
 ## Gotchas
 
 - **Reserved asset names.** `lesson.*` collides with the merged output, and `lecture.*` /
-  `prestudy.*` are uploaded *after* the css, so they would overwrite the lesson at its S3 key.
+  `prestudy.*` are uploaded *after* the css, so they would overwrite the lesson at its GCS key.
   The script refuses to build if an asset uses one.
 - **A local `@import` is not bundled** and the build fails rather than emitting a 404. Inline
   the file into one of the linked stylesheets instead.
