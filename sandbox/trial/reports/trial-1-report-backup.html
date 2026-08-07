@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <meta name="podo:lesson-id" content="trial-1-report">
+  <meta name="podo:content-version" content="2026-08-05">
+  <title>ニーズ把握 ＆ 맞춤 리포트 — PODO 韓国語</title>
+  <link rel="stylesheet" href="../../../shared/css/lesson-card.css">
+  <link rel="stylesheet" href="../../../shared/css/trial.css">
+</head>
+<body>
+  <div class="phone">
+    <!-- ============ STEP 2 · NEEDS ============ -->
+    <div class="brand-page divider" data-page-id="needs-intro">
+      <img class="brand-mascot" src="../assets/podo-character.png" alt="">
+      <h2 class="brand-title">니즈 파악<span class="ja">ニーズ把握</span></h2>
+      <p class="brand-sub">あなたのことを教えてください。答えに合わせて、最後のプランが変わります。</p>
+    </div>
+
+    <div class="section" data-page-id="needs-why">
+      <h2 class="section-title">학습 동기 <span class="title-ja">(学ぶきっかけ)</span></h2>
+      <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？いくつ選んでも大丈夫です。</span></p>
+      <div class="opt-list" data-group="why" data-pick="multi" data-sync-id="needs-why" data-sync-kind="selection" data-sync-state="on">
+        <button class="opt-row" data-val="kpop" data-sync-option="kpop"><img class="r-ico" src="../assets/reasons/kpop.png" alt=""><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
+        <button class="opt-row" data-val="travel" data-sync-option="travel"><img class="r-ico" src="../assets/reasons/travel.png" alt=""><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
+        <button class="opt-row" data-val="friend" data-sync-option="friend"><img class="r-ico" src="../assets/reasons/friend.png" alt=""><span class="opt-body"><span class="opt-main">韓国人の友だち・恋人</span><span class="opt-sub">한국인 친구·연인</span></span></button>
+        <button class="opt-row" data-val="work" data-sync-option="work"><img class="r-ico" src="../assets/reasons/work.png" alt=""><span class="opt-body"><span class="opt-main">仕事・転職</span><span class="opt-sub">일·이직</span></span></button>
+        <button class="opt-row" data-val="topik" data-sync-option="topik"><img class="r-ico" src="../assets/reasons/topik.png" alt=""><span class="opt-body"><span class="opt-main">TOPIK・資格</span><span class="opt-sub">TOPIK·자격증</span></span></button>
+        <button class="opt-row" data-val="self" data-sync-option="self"><img class="r-ico" src="../assets/reasons/self.png" alt=""><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
+        <button class="opt-row" data-val="other" data-sync-option="other"><img class="r-ico" src="../assets/reasons/other.png" alt=""><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
+      </div>
+    </div>
+
+    <div class="section" id="p-goal" data-page-id="needs-goal">
+      <h2 class="section-title">목표 <span class="title-ja">(ゴール)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국어로 뭘 할 수 있게 되고 싶어요? 하나만 골라 주세요.</span><span class="ja">韓国語で何ができるようになりたいですか？1つだけ選んでください。</span></p>
+      <!-- ================================================================
+           목표 = 앞 장에서 고른 이유별 사다리
+           고르는 건 거리다. 같은 "여행" 이라도 주문만 하면 되는 사람과 현지에서
+           수다 떨고 싶은 사람은 가는 거리가 다르고, 목표가 정하는 건 주제가
+           아니라 그 거리다 — 그래서 카드 하나가 도착 레벨 하나고, 그 안에서
+           "그 레벨이 나한테 뭔데?" 를 이유별 한 줄로 답한다.
+           선택지를 이유×거리로 늘어놓으면 열여덟 줄이 된다. 고를 것은 넷인데
+           읽을 것이 열여덟이면, 고르는 데 드는 힘이 전부 읽는 데 쓰인다.
+           고르지 않은 이유의 줄은 감춘다(.hide) — 카드(=선택지)는 그대로라
+           보드가 원격 선택을 합성 클릭할 때 옵션이 없어서 놓치는 일은 없다.
+           ================================================================ -->
+      <div class="goal-list" data-group="goal" data-pick="single" data-sync-id="needs-goal" data-sync-kind="selection" data-sync-state="on">
+
+        <button class="glc" data-val="t3" data-sync-option="t3">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="glc-n">短い文で、伝えられる<small>짧은 문장으로 전하기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>好きな曲のサビが、聞き取れる</b><em>좋아하는 노래 후렴이 들리기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>カフェ・お店で注文できる</b><em>카페·가게에서 주문하기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>かんたんなメッセージが送れる</b><em>간단한 메시지 보내기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>同僚と、あいさつを交わせる</b><em>동료와 인사 주고받기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 1級レベルに届く</b><em>TOPIK 1급 수준 가기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>自分のことを、韓国語で話せる</b><em>내 이야기를 한국어로 말하기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+        <button class="glc" data-val="t5" data-sync-option="t5">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="glc-n">身近な話題なら、話が続く<small>익숙한 주제로 대화 이어가기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>歌詞の意味が、だいたい分かる</b><em>가사 뜻이 대충 이해되기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>道を聞いて、困ったときも伝えられる</b><em>길 묻고, 곤란할 때 직접 말하기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>好きなものの話で、盛り上がれる</b><em>좋아하는 것 이야기로 신나게 떠들기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>同僚と、日常のやり取りができる</b><em>동료와 일상적인 대화 하기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 2級（初級）に合格する</b><em>TOPIK 2급 따기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>韓国の人と、日常会話がつづく</b><em>한국 사람과 일상 대화 이어가기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+        <button class="glc" data-val="t7" data-sync-option="t7">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="glc-n">意見も理由も、話せる<small>의견도 이유도 말하기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>ドラマが、字幕なしで分かる</b><em>드라마를 자막 없이 알아듣기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>旅先の人と、おしゃべりが続く</b><em>여행지에서 만난 사람과 수다 떨기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>タメ口で、雑談ができる</b><em>반말로 수다 떨기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>会議が分かって、意見も言える</b><em>회의 알아듣고 의견 말하기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 3〜4級（中級）まで行く</b><em>TOPIK 3~4급까지 가기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>意見と理由まで、自分の言葉で</b><em>의견과 이유까지 내 말로 말하기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+        <button class="glc" data-val="t9" data-sync-option="t9">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="glc-n">どんな話題でも、自由に話せる<small>어떤 주제든 자유롭게 말하기</small></span></span>
+          <span class="glc-l">
+            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>バラエティも、そのまま楽しめる</b><em>예능도 그대로 즐기기</em></span>
+            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>どこへ行っても、言葉で困らない</b><em>어디를 가도 말로 곤란하지 않기</em></span>
+            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>気持ちも冗談も、そのまま伝わる</b><em>마음도 농담도 그대로 전하기</em></span>
+            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>韓国語で、商談・面接までできる</b><em>한국어로 상담·면접까지 하기</em></span>
+            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 5〜6級（高級）をねらう</b><em>TOPIK 5~6급 노리기</em></span>
+            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>どんな話題でも、自分の言葉で</b><em>어떤 주제든 내 말로 말하기</em></span>
+            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="section" id="p-pace" data-page-id="needs-pace">
+      <h2 class="section-title">학습 페이스 <span class="title-ja">(学習ペース)</span></h2>
+      <p class="section-subtitle"><span class="ko">일주일에 수업을 몇 번 받고 싶어요?</span><span class="ja">1週間に何回、レッスンを受けたいですか？</span></p>
+      <div class="opt-list" data-group="pace" data-pick="single" data-sync-id="needs-pace" data-sync-kind="selection" data-sync-state="on">
+        <button class="opt-row" data-val="1" data-sync-option="1"><span class="emo">🐢</span><span class="opt-body"><span class="opt-main">주 1회 <span class="title-ja">／週1</span></span><span class="opt-sub">まずは無理なく</span></span></button>
+        <button class="opt-row" data-val="2" data-sync-option="2"><span class="emo">🚶</span><span class="opt-body"><span class="opt-main">주 2회 <span class="title-ja">／週2</span></span><span class="opt-sub">こつこつ</span></span></button>
+        <button class="opt-row" data-val="3" data-sync-option="3"><span class="emo">🏃</span><span class="opt-body"><span class="opt-main">주 3회 <span class="title-ja">／週3</span></span><span class="opt-sub">しっかり</span></span></button>
+        <button class="opt-row" data-val="4" data-sync-option="4"><span class="emo">⚡</span><span class="opt-body"><span class="opt-main">주 4회 <span class="title-ja">／週4</span></span><span class="opt-sub">ぐんぐん</span></span></button>
+        <button class="opt-row" data-val="5" data-sync-option="5"><span class="emo">🚀</span><span class="opt-body"><span class="opt-main">주 5회+ <span class="title-ja">／週5以上</span></span><span class="opt-sub">最短で</span></span></button>
+      </div>
+    </div>
+
+    <!-- ============ REPORT ============ -->
+    <div class="brand-page divider" data-page-id="report-intro">
+      <img class="brand-mascot" src="../assets/podo-character.png" alt="">
+      <h2 class="brand-title">맞춤 리포트<span class="ja">カスタムレポート</span></h2>
+      <p class="brand-sub">今日のレッスンと、選んでもらった答えから作ったレポートです。</p>
+    </div>
+    <!-- ================================================================
+         맞춤 리포트 · 한 장
+         레벨 체크 → ① 지금 레벨 → ② 항목별 진단 → ③ 도착 예측을 한 페이지에
+         모았다. 리포트는 하나의 문서로 읽히는 게 맞고, 스크롤이 기본 보기라
+         따로 쪼갤 이유가 없다. 맨 위 레벨 체크만 튜터 전용이다.
+         ================================================================ -->
+    <div class="section rep-page rep-all" id="p-report" data-page-id="report">
+
+      <!-- ⓪ 튜터 콘솔 — teaching 모드에서만 보이고, 고르면 한 줄로 접힌다 -->
+      <div class="tcon" id="p-level">
+        <button class="tcon-sum" type="button">
+          <span class="ts-lv">Lv.1</span>
+          <span class="ts-ax">항목별 —</span>
+          <span class="ts-go">고치기</span>
+        </button>
+
+        <div class="tcon-body">
+          <span class="tcon-h">레벨 체크 <small>튜터만 보여요</small></span>
+
+          <p class="tcon-q">오늘 수업을 보고, 지금 레벨을 골라 주세요. <small>대부분 1이에요.</small></p>
+          <div class="lvpick" data-group="level" data-pick="single" data-sync-id="plan-level" data-sync-kind="selection" data-sync-state="on">
+            <button class="lvrow" data-val="1" data-sync-option="1"><span class="lvn">1</span><span class="lvb"><span class="lvt">이제 막 시작했어요</span><span class="lvs">A1 · TOPIK 1급 준비</span></span></button>
+            <button class="lvrow" data-val="2" data-sync-option="2"><span class="lvn">2</span><span class="lvb"><span class="lvt">한글을 읽어요</span><span class="lvs">A1+ · TOPIK 1급</span></span></button>
+            <button class="lvrow" data-val="3" data-sync-option="3"><span class="lvn">3</span><span class="lvb"><span class="lvt">짧은 문장을 만들어요</span><span class="lvs">A2 · TOPIK 2급</span></span></button>
+            <button class="lvrow" data-val="4" data-sync-option="4"><span class="lvn">4</span><span class="lvb"><span class="lvt">익숙한 주제로 대화가 이어져요</span><span class="lvs">A2+ · TOPIK 2급</span></span></button>
+            <button class="lvrow" data-val="5" data-sync-option="5"><span class="lvn">5</span><span class="lvb"><span class="lvt">익숙한 주제를 구체적으로 말해요</span><span class="lvs">B1 · TOPIK 3급</span></span></button>
+            <button class="lvrow" data-val="6" data-sync-option="6"><span class="lvn">6</span><span class="lvb"><span class="lvt">이유를 붙여 의견을 말해요</span><span class="lvs">B1+ · TOPIK 3~4급</span></span></button>
+            <button class="lvrow" data-val="7" data-sync-option="7"><span class="lvn">7</span><span class="lvb"><span class="lvt">추상적인 주제도 논리적으로 말해요</span><span class="lvs">B2 · TOPIK 4급</span></span></button>
+            <button class="lvrow" data-val="8" data-sync-option="8"><span class="lvn">8</span><span class="lvb"><span class="lvt">표현이 다양하고 흐름이 자연스러워요</span><span class="lvs">B2+ · TOPIK 4~5급</span></span></button>
+            <button class="lvrow" data-val="9" data-sync-option="9"><span class="lvn">9</span><span class="lvb"><span class="lvt">복잡한 내용도 심층적으로 다뤄요</span><span class="lvs">C1 · TOPIK 5급</span></span></button>
+            <button class="lvrow" data-val="10" data-sync-option="10"><span class="lvn">10</span><span class="lvb"><span class="lvt">전문 분야까지 자유롭게 말해요</span><span class="lvs">C1+ · TOPIK 6급</span></span></button>
+          </div>
+
+          <p class="tcon-q">항목별로 다르면 여기서 조정해 주세요. <small>안 고치면 종합 레벨을 따라가요.</small></p>
+          <div class="axpick">
+            <div class="axrow"><span class="axn">정확성</span>
+              <div class="axchips" data-group="ax-acc" data-pick="single" data-sync-id="ax-acc" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">어휘</span>
+              <div class="axchips" data-group="ax-voc" data-pick="single" data-sync-id="ax-voc" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">유창성</span>
+              <div class="axchips" data-group="ax-flu" data-pick="single" data-sync-id="ax-flu" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">발음</span>
+              <div class="axchips" data-group="ax-pron" data-pick="single" data-sync-id="ax-pron" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+            <div class="axrow"><span class="axn">듣기</span>
+              <div class="axchips" data-group="ax-lis" data-pick="single" data-sync-id="ax-lis" data-sync-kind="selection" data-sync-state="on"><button type="button" data-val="1" data-sync-option="1">1</button><button type="button" data-val="2" data-sync-option="2">2</button><button type="button" data-val="3" data-sync-option="3">3</button><button type="button" data-val="4" data-sync-option="4">4</button><button type="button" data-val="5" data-sync-option="5">5</button><button type="button" data-val="6" data-sync-option="6">6</button><button type="button" data-val="7" data-sync-option="7">7</button><button type="button" data-val="8" data-sync-option="8">8</button><button type="button" data-val="9" data-sync-option="9">9</button><button type="button" data-val="10" data-sync-option="10">10</button></div>
+            </div>
+          </div>
+
+          <button class="tcon-fold" type="button">접고 리포트 보기</button>
+        </div>
+      </div>
+
+      <!-- ① 지금 레벨 · 내용은 레벨 체크에 따라 다시 그려진다 -->
+      <div class="lvc">
+        <div class="lvc-top">
+          <img class="lvc-mascot" src="../assets/mascot-newborn.svg" alt="">
+          <div>
+            <span class="lvc-badge">Lv.1 · 첫걸음</span>
+            <p class="lvc-line">한글을 <b>하나씩 읽어요</b></p>
+          </div>
+        </div>
+
+        <div class="lad">
+          <div class="lad-segs"></div>
+          <div class="lad-nums"></div>
+        </div>
+
+        <div class="lvc-panel">
+          <p class="lvc-diag"></p>
+          <ul class="lvc-ev"></ul>
+          <div class="lvc-cert"><i>TOPIK</i><b>1급</b><span>준비 단계</span></div>
+        </div>
+      </div>
+
+      <!-- ② 항목별 진단 · 레이더 + 다섯 카드. 튜터가 고른 항목별 레벨을
+           같은 수업을 받은 분들의 평균과 견준다. 목표는 여기 없다 — 목표
+           이야기는 ③ 도착 예측이 통째로 맡는다. -->
+      <div class="rep-sec">
+        <h2 class="section-title">항목별 진단</h2>
+        <p class="rv-sub">오늘 수업에서 본 다섯 가지를, 다른 분들과 나란히 놓고 봤어요.</p>
+
+        <div class="rad-legend">
+          <span><i style="background:#6abe36"></i>지금 레벨</span>
+          <span><i class="avg"></i>체험 수업 평균</span>
+        </div>
+        <!-- viewBox 는 그려지는 내용(축 라벨 포함)에 맞춰 잘라 둔 것이다.
+             넉넉히 잡아 두면 아래에 죽은 여백이 100px 넘게 생긴다. -->
+        <svg id="radar" class="rad" viewBox="-18 -12 244 204" role="img" aria-label="항목별 지금 레벨과 평균 레이더"></svg>
+
+        <div class="trks"></div>
+      </div>
+
+      <!-- ③ 도착 예측 · 목표·페이스·레벨에서 파생. 답이 덜 골라졌으면 스켈레톤 -->
+      <div class="rep-sec">
+        <h2 class="section-title">여기서 저기까지, 이렇게</h2>
+        <p class="rv-sub rep-sub">골라 주신 목표와 페이스로, 언제쯤 도착하는지 그려 봤어요.</p>
+
+        <div class="rep-empty" aria-hidden="true">
+          <div class="sk sk-plot">
+            <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+              <path d="M12 104 C 60 100, 150 88, 210 60 C 250 42, 275 26, 288 16" fill="none"
+                    stroke="#e4e4e2" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="12" cy="104" r="5" fill="#e4e4e2"/>
+              <circle cx="210" cy="60" r="5" fill="#e4e4e2"/>
+              <circle cx="288" cy="16" r="6" fill="#dedede"/>
+            </svg>
+          </div>
+          <div class="sk sk-facts"><i></i><i></i><i></i><i></i></div>
+          <div class="sk sk-course"></div>
+          <div class="sk sk-course"></div>
+        </div>
+        <a class="rep-jump" href="#p-goal"><span class="rj-t">—</span><span class="rj-s">눌러서 고르러 가기</span></a>
+
+        <div class="rep">
+          <!-- 레이더의 범례와 같은 마크업 — 그래프 안에 글자를 더 밀어 넣지
+               않으려고 밖으로 뺐다. -->
+          <div class="rad-legend rep-legend">
+            <span><i></i><b class="lg1">—</b></span>
+            <span><i class="slow"></i>독학</span>
+          </div>
+
+          <!-- 격자·축 라벨·두 곡선·마디 모두 renderPlan() 이 그린다: 세로축이
+               '지금 레벨 → 목표 레벨' 이라 눈금이 사람마다 다르고, 곡선 위의
+               점은 아래 학습 순서의 코스 하나하나라 개수도 사람마다 다르다. -->
+          <svg class="rep-plot" viewBox="0 0 340 236" role="img" aria-label="학습 진도 예측 그래프">
+            <defs>
+              <linearGradient id="repline" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#6ABE36"/><stop offset="1" stop-color="#9BEB26"/>
+              </linearGradient>
+              <linearGradient id="reparea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#6ABE36" stop-opacity=".18"/>
+                <stop offset="1" stop-color="#6ABE36" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="rep-grid"></g>
+            <path class="rep-area" d="" fill="url(#reparea)"/>
+            <path class="rep-slow" d="" fill="none"
+                  stroke="#C9C9C9" stroke-width="1.75" stroke-dasharray="4 4" stroke-linecap="round"/>
+            <path class="rep-fast" d="" fill="none"
+                  stroke="url(#repline)" stroke-width="3" stroke-linecap="round"/>
+            <circle class="d0" cx="36" cy="206" r="5" fill="#1C1C1C" stroke="#fff" stroke-width="2"/>
+            <text class="x0" x="36" y="226" font-size="10" fill="#757575" text-anchor="middle">오늘</text>
+            <!-- 코스마다 점 하나 + 그 코스를 마치면 할 수 있게 되는 말 -->
+            <g class="rep-marks"></g>
+          </svg>
+
+          <!-- 표(지금 레벨·페이스·레슨 수)와 추천 코스 목록을 이 카드들로
+               바꿨다. 표는 숫자만 있고 순서가 없었고, 코스 목록은 이름만
+               있어서 그 코스가 뭘 하는 곳인지 안 보였다. 이제 아이콘이 먼저
+               오고, 거기서 실제로 하게 되는 말 한 줄이 붙는다. -->
+          <span class="cgroup-label">나의 학습 순서</span>
+          <div class="cmap"></div>
+          <p class="rep-why"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================================================================
+       PAGER · 한 장씩 넘겨 보는 모드
+       The deck is a flat list of siblings under .phone, so paging is just
+       "show one, hide the rest" — no restructuring. Off by default:
+       scrolling stays the ground truth (printing, Cmd+F, scanning
+       ahead all rely on it), and this is the presentation layer.
+       ================================================================ -->
+  <nav class="pager" data-sync-id="deck-page" data-sync-kind="page">
+    <input class="pg-scrub" type="range" min="0" max="0" step="1" value="0" aria-label="페이지 이동">
+    <button class="pg-btn pg-prev" type="button" aria-label="이전 페이지">←</button>
+    <div class="pg-mid">
+      <span class="pg-label"><b class="pg-act">—</b><span class="pg-n">—</span></span>
+    </div>
+    <button class="pg-btn pg-teach" type="button" aria-label="티칭 모드">T</button>
+    <button class="pg-btn pg-exit" type="button" aria-label="보기 모드 바꾸기">⤢</button>
+      <button class="pg-btn pg-next" type="button" aria-label="다음 페이지">→</button>
+</nav>
+
+
+
+  <!-- ACTIVITIES · 공통 배선(스텁·점선 칸·고르기). 공유 스크립트. -->
+  <script src="../../../shared/js/activities.js"></script>
+
+  <!-- REPORT (상담 v5) · 니즈·레벨 체크·리포트의 배선. 공유 스크립트. -->
+  <script src="../../../shared/js/report-consult.js"></script>
+
+  <!-- PAGER · 한 장씩 넘기기 + 스크러버. 공유 스크립트. -->
+  <script src="../../../shared/js/pager.js"></script>
+
+  <!-- SCRIPT LINES · 대사를 문장 단위로 짝지어 세운다. 형광펜보다 먼저. -->
+  <script src="../../../shared/js/script-lines.js"></script>
+
+  <!-- SPOTLIGHT · 손가락 포인터. 공유 스크립트. -->
+  <script src="../../../shared/js/spotlight.js"></script>
+
+  <!-- TUTOR NOTES · 페이지마다 메모 한 칸. 페이저 뒤에 와야 한다. -->
+  <script src="../../../shared/js/tutor-notes.js"></script>
+
+  <!-- HIGHLIGHT · 글자에 긋는 형광펜. 그은 자국이 상대 화면에도 남는다. -->
+  <script src="../../../shared/js/highlight.js"></script>
+
+  <!-- STAMP · 참! 잘했어요. 경로를 쓰는 곳은 여기 하나뿐이라야 패키저가
+       번들할 수 있다. .phone 밖에 둔다 — 안에 넣으면 빈 페이지가 하나 생긴다. -->
+  <img class="stamp-art" src="../assets/well-done.svg" alt="">
+  <script src="../../../shared/js/stamp.js"></script>
+
+</body>
+</html>
