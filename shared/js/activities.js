@@ -53,20 +53,55 @@ window.lessonSync = window.lessonSync || {
 
   var reorder = new WeakMap();         // build zone -> {pool, answer, chips}
 
-  /* ---------- (1) typed blanks ---------- */
+  /* 상대 화면에서 들어온 글은 타이핑 이벤트 없이 꽂힌다 — 보드는 value 에
+     바로 쓰고 input 을 쏘지 않는다. 그래서 칸의 value 만 가로채, 글이 어느
+     길로 들어왔든 같은 뒤처리(채점·높이)가 돌게 한다. */
+  function onValueSet(el, after) {
+    var proto = el.tagName === "TEXTAREA" ? HTMLTextAreaElement.prototype
+                                          : HTMLInputElement.prototype;
+    var desc = Object.getOwnPropertyDescriptor(proto, "value");
+    Object.defineProperty(el, "value", {
+      configurable: true,
+      get: function () { return desc.get.call(this); },
+      set: function (v) { desc.set.call(this, v); after(this); }
+    });
+  }
+
+  /* 오답의 붉은 칠은 스쳐 지나가는 것이라, 다음 시도가 앞 시도의 타이머를
+     물려받으면 안 된다 — 방금 칠한 칸이 남의 700ms 에 걸려 먼저 하얘진다.
+     그래서 칸마다 자기 타이머를 들고 있다가 갈아 끼운다. */
+  var flashes = new WeakMap();
+  function flash(el, on) {
+    clearTimeout(flashes.get(el));
+    el.classList.toggle("wrong", on);
+    if (on) flashes.set(el, setTimeout(function () { el.classList.remove("wrong"); }, 700));
+  }
+
+  /* ---------- (1) typed blanks ----------
+     맞힌 칸도 다시 고칠 수 있다. 한 번 맞히면 칸을 readOnly 로 잠갔었는데,
+     그러면 어쩌다 맞은 답도, 지우고 다시 써 보고 싶은 답도 되돌릴 길이 없다.
+     대신 글자가 바뀔 때마다 다시 채점한다 — 답이 아니게 되면 초록이 조용히
+     걷히고, 되돌려 쓰면 다시 들어온다. 표시가 늘 지금 적힌 글에서 나오므로
+     잠가 둘 상태가 없다. */
   function grade(input, commit) {
-    if (input.classList.contains("correct")) return;
     var space = input.closest(".answer-space");
-    if (norm(input.value) === norm(input.dataset.answer) && input.value.trim()) {
-      input.classList.remove("wrong");
-      input.classList.add("correct");
-      input.readOnly = true;
+    var was = input.classList.contains("correct");
+    var ok = !!input.value.trim() && norm(input.value) === norm(input.dataset.answer);
+
+    input.classList.toggle("correct", ok);
+    if (space) space.classList.toggle("correct", ok);
+
+    if (ok) {
       input.placeholder = "";          // 맞힌 칸에는 유령 답을 다시 띄우지 않는다
-      if (space) space.classList.add("correct");
-    } else if (commit && input.value.trim()) {
-      input.classList.add("wrong");
-      setTimeout(function () { input.classList.remove("wrong"); }, 700);
+      flash(input, false);
+      return;
     }
+    // 되돌린 칸은 처음 상태로 — 티칭 모드였다면 유령 답도 같이 돌아온다
+    if (was) {
+      input.placeholder = document.body.classList.contains("teaching")
+        ? (input.dataset.answer || "") : "";
+    }
+    if (commit && input.value.trim()) flash(input, true);
   }
 
   // 여기서는 보내지 않는다. 보드가 input 이벤트를 보고 값을 다시 읽어
@@ -77,6 +112,10 @@ window.lessonSync = window.lessonSync || {
     input.addEventListener("keydown", function (e) {
       if (e.key === "Enter") { e.preventDefault(); grade(input, true); }
     });
+    /* 채점은 공유되지 않는 값이라 화면마다 스스로 매긴다 — 그런데 상대가 쓴
+       글에는 input 이벤트가 없어서 매길 기회 자체가 없었다. 학습자가 답을
+       맞혀도 튜터 화면의 칸은 채점 전 그대로였다. */
+    onValueSet(input, function (i) { grade(i, false); });
   }
 
   /* 자유 작문 칸은 쓴 만큼 자란다 — 답이 몇 줄이 될지 우리가 미리 알 수 없다.
@@ -96,15 +135,9 @@ window.lessonSync = window.lessonSync || {
     document.querySelectorAll(".free-input").forEach(grow);
   };
 
-  // 타이핑만이 아니라 보드가 상대의 글을 넣어 줄 때도 자라야 한다. 그쪽은
-  // value 에 바로 쓰고 input 을 쏘지 않으므로, 이 칸의 value 만 가로챈다.
+  // 타이핑만이 아니라 보드가 상대의 글을 넣어 줄 때도 자라야 한다.
   function autoGrow(ta) {
-    var desc = Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, "value");
-    Object.defineProperty(ta, "value", {
-      configurable: true,
-      get: function () { return desc.get.call(this); },
-      set: function (v) { desc.set.call(this, v); grow(this); }
-    });
+    onValueSet(ta, grow);
     ta.addEventListener("input", function () { grow(ta); });
     grow(ta);
   }
@@ -176,7 +209,9 @@ window.lessonSync = window.lessonSync || {
   function settleOrder(zone) {
     var block = reorder.get(zone);
     if (!block) return;
-    zone.classList.remove("wrong");
+    // 판정은 늘 지금 놓인 칩에서 다시 나온다. 앞의 판정을 지우지 않으면
+    // 되돌린 칸에 초록이 그대로 남는다 — 상대 화면에서 온 되돌리기도 그렇다.
+    zone.classList.remove("correct", "wrong");
     // 한 조각이라도 놓은 순간부터 되돌릴 수 있어야 한다 — 맞았든 틀렸든
     // 반쯤 놓았든. 다 놓고 나서야 나타나면, 두 번째 칩을 잘못 놓은 사람은
     // 남은 칩을 마저 놓아 틀린 문장을 완성해야 다시 시작할 수 있다.
@@ -232,6 +267,10 @@ window.lessonSync = window.lessonSync || {
       chips.forEach(function (c) { pool.appendChild(c); });
       zone.classList.remove("correct", "wrong");
       reset.hidden = true;
+      // 칩을 옮기는 것은 클릭이 아니라 이 단추 하나로 일어난다 — 보드가
+      // 볼 것이 없으므로 직접 알린다. 안 그러면 되돌린 사람의 화면만 비고
+      // 상대 화면에는 지은 문장이 그대로 남는다.
+      sync.push(zone);
     });
   });
 
@@ -269,21 +308,37 @@ window.lessonSync = window.lessonSync || {
   document.querySelectorAll(".choose-row").forEach(function (row) {
     var opts = [].slice.call(row.querySelectorAll(".opt"));
     if (!opts.length) return;
+
+    /* 두 번째 탭이 되돌린다 — 맞혔든 틀렸든. 맞힌 줄을 잠가 두었더니
+       (row.dataset.done) 되짚어 볼 길이 없었다: 찍어서 맞은 학습자도,
+       다시 읽어 보고 싶은 튜터도 그 줄에 두 번 다시 손댈 수 없다.
+       다른 활동(.tap-tile, .opt-list)은 이미 다시 눌러 끄는 쪽이라,
+       이 줄만 한 번 쓰고 굳는 것이 오히려 예외였다.
+
+       되돌리기가 곧 빈 집합이 되므로 상대 화면에서도 같이 풀린다 —
+       보드는 "고른 쪽"의 집합만 나르고, 다른 쪽 화면은 달라진 칩을
+       눌러서 그 집합에 맞춘다. 껐다 켜는 것이 그 배선을 그대로 탄다. */
+    function clear() {
+      opts.forEach(function (o) {
+        flash(o, false);
+        o.classList.remove("chosen", "correct", "dim");
+      });
+    }
+
     opts.forEach(function (opt) {
       opt.setAttribute("role", "button");
       opt.addEventListener("click", function () {
-        if (row.dataset.done) return;
+        var was = opt.classList.contains("chosen");
         // 형제의 표시를 먼저 지우는 것이 "하나만 고르기"를 만든다.
         // 보드는 집합만 볼 뿐이고, 그 규칙은 이 문서에 있다.
-        opts.forEach(function (o) { o.classList.remove("chosen"); });
+        clear();
+        if (was) return;                 // 고른 것을 다시 눌렀다 — 아무것도 안 고른 상태로
         opt.classList.add("chosen");
         if (opt.hasAttribute("data-correct")) {
-          row.dataset.done = "1";
           opt.classList.add("correct");
           opts.forEach(function (o) { if (o !== opt) o.classList.add("dim"); });
         } else {
-          opt.classList.add("wrong");
-          setTimeout(function () { opt.classList.remove("wrong"); }, 700);
+          flash(opt, true);
         }
       });
     });
@@ -321,7 +376,11 @@ window.lessonSync = window.lessonSync || {
     apply: function (zone, state) {
       if (!state || !Array.isArray(state.itemIds)) return;
       var block = reorder.get(zone);
-      if (!block || zone.classList.contains("correct")) return;
+      if (!block) return;
+      /* 맞힌 칸은 손대지 않는다는 조건이 여기 있었는데, 그것이 되돌리기를
+         한쪽 화면에 가둬 두었다 — 문장을 맞힌 뒤 やり直す 를 눌러도 상대
+         화면은 지은 문장을 그대로 안고 있었다. apply 는 "지금 무엇이 참인가"
+         를 그대로 따르는 자리이고, 빈 칸도 참인 상태다. */
       var known = {};
       block.chips.forEach(function (c) { known[c.dataset.itemId] = c; });
       var seen = {};

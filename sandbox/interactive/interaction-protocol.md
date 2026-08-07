@@ -122,9 +122,14 @@ opt.classList.add('chosen');
 ```
 
 Remote state is applied by **clicking** the options that differ, so your own handler
-runs and derives everything downstream. Two consequences worth knowing: side effects
-in that handler (audio, animation) will fire on the receiving side too, and the active
-class must be **persistent** — a class you strip after 700ms is invisible to `read`.
+runs and derives everything downstream. Three consequences worth knowing: side effects
+in that handler (audio, animation) will fire on the receiving side too; the active
+class must be **persistent** — a class you strip after 700ms is invisible to `read`;
+and **clicking a chosen option has to un-choose it**. Clicking is the only lever the
+board has, so a handler that ignores a second tap — or locks the row once the answer
+is right — leaves the board no way to apply a *de*selection, and the two screens
+stay out of step until someone reloads. Reversibility is not just a courtesy to the
+learner here; it is what makes the set converge.
 
 ### `toggle` — on/off
 
@@ -212,6 +217,8 @@ Calling it when you didn't need to is harmless — nothing is published if nothi
 - [ ] Every shared element has a unique, meaning-based `data-sync-id`.
 - [ ] Anything private has **no** `data-sync-id`.
 - [ ] Active classes used by `selection`/`toggle` are persistent, not 700ms flashes.
+- [ ] Every answer can be taken back — a second tap un-chooses, a graded field stays
+      editable, a built sentence has its やり直す. Nothing locks on `correct`.
 - [ ] The answer key is derived locally — verdicts never appear in shared state.
 - [ ] `read` output is stable; `apply` is idempotent and survives junk.
 - [ ] `window.lessonSync` is guarded so the file still opens standalone.
