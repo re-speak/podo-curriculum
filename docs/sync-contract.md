@@ -148,8 +148,8 @@ Everything else lives in Secret Manager and is read by the build service account
 
 | Secret Manager name | Used by | What it is |
 |---|---|---|
-| `curriculum-lemonboard-key-stage` | `podo-curriculum-validate`, `podo-curriculum-deploy` (`_DEPLOY_ENV=stage`) | lemonboard API bearer key — the same `$conf_dev_lemonboard_key` grape uses |
-| `curriculum-lemonboard-key-prod` | `podo-curriculum-deploy` (`_DEPLOY_ENV=prod`) | `$conf_prod_lemonboard_key` |
+| `curriculum-lemonboard-key-stage` | `podo-curriculum-validate` (every PR, whatever the base), `podo-curriculum-deploy*` (`_DEPLOY_ENV=stage`) | lemonboard API bearer key — the same `$conf_dev_lemonboard_key` grape uses |
+| `curriculum-lemonboard-key-prod` | `podo-curriculum-deploy*` (`_DEPLOY_ENV=prod`) | `$conf_prod_lemonboard_key`. Deliberately absent from the validate build, which any PR author triggers |
 | `cloud-build` (`GITHUB_PAT`) | `podo-curriculum-validate` | fine-grained PAT for the plan comment. Needs **Pull requests: Read and write** — Issues alone gets a 403 on PR comments |
 | `podo-common` (`PODO_NOTIFICATOR_SLACK_TOKEN`) | `podo-curriculum-validate` | posts contract violations to Slack |
 

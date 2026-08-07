@@ -138,16 +138,26 @@ the failure surface in production.
 CI/CD is Cloud Build, not GitHub Actions. Triggers live in
 `podo-infra/gcp/global/cloudbuild`; the build files are in `.cloudbuild/`.
 
-1. **PR → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `main`.
-2. **Merge to `main` → `podo-curriculum-deploy` applies to stage, automatically.** The trigger listens on push to `main` with `_DEPLOY_ENV=stage`. Merging *is* the stage deploy; there is no separate button, because a deploy someone has to remember to press eventually goes unpressed and then `main` and the learner disagree.
-3. **Prod is the same trigger, run by hand**, with the env chosen at run time:
+**The environment is the branch.** `stage` is where work lands; `main` is what the
+learner sees.
+
+1. **PR → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `stage` or `main`, and labels the plan with the env that merging it would deploy to.
+2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to stage, automatically.**
+3. **Merge `stage` → `main` → `podo-curriculum-deploy-prod` applies to prod, automatically.** That PR *is* the release: its diff is the release note and its review is the gate.
+
+Neither step has a button someone has to remember to press, because a deploy like
+that eventually goes unpressed and then the branch and the learner disagree.
+
+A rollback or a one-off re-deploy still goes through `podo-curriculum-deploy`, the
+manual trigger, which takes any branch × any env:
 
 ```sh
 gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
-  --branch=main --substitutions=_DEPLOY_ENV=prod
+  --branch=<branch> --substitutions=_DEPLOY_ENV=<stage|prod>
 ```
 
-`prod` refuses any commit that is not an ancestor of `main`. That is the same
+That path is why `prod` still refuses any commit that is not an ancestor of `main`.
+On the push trigger the check is trivially true; on the manual one it is the same
 protection the old `prod-*` tag gave — the point was that only reviewed content
 ships, not the tag itself.
 
