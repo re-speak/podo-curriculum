@@ -6,7 +6,7 @@ metadata:
   slug: core-beginner-4
 
 spec:
-  curriculumType: BASICv2
+  curriculumType: BASIC_V2
   # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
   classLevel: "2000.004"
   lessonTime: 25
