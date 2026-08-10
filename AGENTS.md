@@ -50,6 +50,49 @@ quietly deviate.
 - Every page needs `<meta name="google" content="notranslate">` or Chrome mangles the mixed ja/ko content.
 - **Verify visually.** These are visual documents — render at 480px and look at the screenshots before claiming a change works.
 
+## The shared runtime is on a CDN, pinned by tag
+
+Decks no longer carry their own copy of `shared/{css,js}`. They point at an
+immutable tag on a public mirror, declared once in `curriculum.yaml`:
+
+```yaml
+spec:
+  sharedRuntime:
+    baseUrl: https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared
+    repo: re-speak/podo-curriculum-shared
+    version: v1.0.0
+    join: "@"
+```
+
+**Publish before you repoint, and repoint before you PR.** The order is the whole
+design — a tag has to be live before a deck naming it ships:
+
+```sh
+# only when you have touched shared/
+vim curriculum.yaml                      # bump spec.sharedRuntime.version
+python3 tools/publish-shared.py          # cut + push the tag, verify it serves
+python3 tools/repoint-shared.py          # stamp every deck with the new version
+python3 tools/validate.py --env stage    # layer 5 proves the pins are live
+```
+
+Do it the other way round and `main` briefly holds decks pointing at a tag nobody
+pushed. That is a 404 for every activity, in class, on the learner's screen only.
+
+- **Tags are immutable.** `publish-shared.py` refuses to move one. If `shared/`
+  changed, bump the version — never re-cut the same tag, because a deck already
+  pinned to it would change underneath a live class.
+- **Append-only still holds.** Old decks stay on old tags and are unaffected by
+  anything you add. That is what makes a version bump safe rather than a migration.
+- **Never pin a branch.** `@main` is re-checked every 12 hours and edges disagree
+  during the window — some learners get the new file, some the old, same lesson.
+  Only a tag is cached as immutable.
+- **A deck may opt out.** One that still bundles its own runtime has no URL on this
+  host and is simply not checked. `taiken-trial` is on that path deliberately.
+
+`validate.py` layer 5 blocks two silent failures: a pin whose tag was never
+published (404), and a `shared/` that moved on without the tag being re-cut (byte
+mismatch). It fail-opens on 5xx and network trouble, like the contract check.
+
 ## Interactions — the `data-sync` contract
 
 **The implementation in lemonboard is the SSOT.** Not this file, not what a nearby
