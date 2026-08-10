@@ -110,7 +110,7 @@
   <a class="full" href="catalog.html">
     <span class="full-body">
       <span class="full-t">커리큘럼 카탈로그 — 전체 목차 한 장</span>
-      <span class="full-d">다섯 트랙 371과를 레벨 사다리와 함께. 검색·레벨 필터로 어느 과가 무엇을 가르치는지 바로 찾습니다.</span>
+      <span class="full-d">트랙을 하나 골라 들어가면 그 안의 371과와, 각 과가 가르치는 패턴을 문장째로 볼 수 있습니다.</span>
     </span>
     <span class="full-arr">→</span>
   </a>
@@ -242,21 +242,16 @@
       <span class="row-d">컴포넌트 목록과 파일 뼈대 — 새 과는 여기서 조립한다</span>
       <span class="row-arr">→</span>
     </a>
-    <a class="row" href="viewer.html?doc=interactive/interaction-protocol.md">
+    <a class="row" href="viewer.html?doc=interaction-protocol.md">
       <span class="row-t">data-sync 규격</span>
       <span class="row-d">레슨 페이지가 강사 화면과 상태를 주고받는 방식</span>
       <span class="row-arr">→</span>
     </a>
-    <a class="row" href="viewer.html?doc=interactive/packaging.md">
-      <span class="row-t">패키징 가이드</span>
-      <span class="row-d">레슨을 lemonboard 업로드용 zip 으로 묶는 절차 — <code>interactive/build_lemonboard.py</code></span>
-      <span class="row-arr">→</span>
-    </a>
   </div>
 
-  <p class="section-note" style="margin-top:18px">업로드용 zip 은 올리기 직전에 만든다 — 미리 만들어 두면
-    공유 스크립트가 바뀐 줄 모르고 옛 덱을 올리게 된다.<br>
-    <code>python3 interactive/build_lemonboard.py &lt;덱&gt;.html --out trial/lemonboard-build/&lt;덱&gt;</code></p>
+  <p class="section-note" style="margin-top:18px">업로드용 zip 은 이 레포에서 만들지 않는다.
+    덱을 <code>podo-curriculum</code> 에 올리면 <code>tools/build.py</code> 가 배포 과정에서 묶는다 —
+    손으로 미리 만들어 두는 방식은 공유 스크립트가 바뀐 줄 모르고 옛 덱을 올리게 되어서 없앴다.</p>
 
   <!-- REFERENCE -->
   <div class="section-label">레퍼런스 · 제작 자료</div>
