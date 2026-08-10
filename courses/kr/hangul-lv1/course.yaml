@@ -7,7 +7,7 @@ metadata:
   slug: hangul-lv1
 
 spec:
-  curriculumType: BASIC        # BASIC | SMART_TALK | TRIAL
+  curriculumType: BASIC        # BASIC | SMART_TALK | TRIAL | BASICv2
   classLevel: "1"              # → CLASS_LEVEL (grape truncates past 3 decimals)
   lessonTime: 25               # → LESSON_TIME; 15 or 25
   enabled: false               # → USE_YN. false until every lesson has both decks.

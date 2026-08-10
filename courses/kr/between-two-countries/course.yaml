@@ -6,7 +6,7 @@ metadata:
   slug: between-two-countries
 
 spec:
-  curriculumType: BASIC
+  curriculumType: BASICv2
   # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
   classLevel: "4000.001"
   lessonTime: 25

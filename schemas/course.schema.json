@@ -27,8 +27,8 @@
       "additionalProperties": false,
       "properties": {
         "curriculumType": {
-          "enum": ["BASIC", "SMART_TALK", "TRIAL"],
-          "description": "GT_CLASS_COURSE.CURRICULUM_TYPE. Also forms le_tutor_curriculum.curriculum_type as PODO_{LANG}_{value}."
+          "enum": ["BASIC", "SMART_TALK", "TRIAL", "BASICv2"],
+          "description": "GT_CLASS_COURSE.CURRICULUM_TYPE. Also forms le_tutor_curriculum.curriculum_type as PODO_{LANG}_{value}. Part of the course's identity — grape rejects a second course with the same (LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL), so a new type is a clean namespace rather than a label. BASICv2 is the interactive HTML curriculum; it is deliberately not BASIC so it can reuse level bands and so tutors opt into it separately. NOTE: the column is COLLATE utf8mb3_bin, so this value is CASE-SENSITIVE — 'BASICV2' would be a different, tutor-less curriculum."
         },
         "classLevel": {
           "type": "string",
