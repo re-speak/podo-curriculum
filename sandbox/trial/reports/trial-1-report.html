@@ -6,10 +6,6 @@
   <meta name="google" content="notranslate">
   <meta name="podo:lesson-id" content="trial-1-report">
   <meta name="podo:content-version" content="2026-08-06">
-  <!-- 리포트를 남길 곳. 지금은 자리만 잡아 둔 웹훅이라 눌러도 닿지 않는다 —
-       백엔드에 붙는 순간 이 한 줄만 바뀐다. 보내는 값의 규격과 le_level_test
-       컬럼 대응은 ../report-submit.md 에 있다. -->
-  <meta name="podo:report-endpoint" content="https://webhook.example.invalid/api/v2/leveltest/korean-trial-report">
   <title>ニーズ把握 ＆ 리포트 &amp; 플랜 — PODO 韓国語</title>
   <link rel="stylesheet" href="../../../shared/css/lesson-card.css">
   <link rel="stylesheet" href="../../../shared/css/trial.css">
@@ -391,11 +387,12 @@
       </div>
 
       <!-- ⑤ 리포트 저장 · 튜터만
-           상담이 끝나면 이 화면 그대로를 백엔드에 남긴다. 리포트가 끝나는
+           상담이 끝나면 이 화면 그대로를 남긴다. 리포트가 끝나는
            자리에 두는 이유는 여기가 값이 다 모이는 자리라서다 — 앞의 네 칸을
            채우고 나서야 누를 수 있고, 안 채운 항목은 버튼 밑에 이름으로 뜬다.
            학습자 화면에는 아예 없는 블록이라(teaching 모드에서만 뜬다) 리포트를
            읽는 흐름은 그대로다.
+           덱은 부모 창(보드)으로 보내기만 하고, 백엔드에 남기는 일은 앱이 한다.
            보내는 값과 le_level_test 컬럼 대응: ../report-submit.md -->
       <div class="rep-send">
         <span class="rep-send-h">리포트 저장 <small>튜터만 보여요</small></span>
