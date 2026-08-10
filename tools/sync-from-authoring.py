@@ -7,10 +7,17 @@ different shape from this one — every deck reaches a single sibling `runtime/`
 nothing is packaged — so a sync is a translation, not a copy:
 
   runtime/{css,js}                     -> shared/{css,js}          straight mirror
+  ux-philosophy.md                     -> shared/                  straight mirror
+  interaction-protocol.md              -> shared/                  straight mirror
   trial/*, tracks/*/sample-lesson.html -> sandbox/                 runtime refs repointed
-  interactive/                         -> sandbox/interactive/     straight mirror
   tracks/*/table-of-contents.md        -> references/tracks/
   references/{curricula,reports}       -> references/              minus licensed scans
+
+Upstream has no `interactive/` and no `lemonboard-build/` any more. Packaging is
+this repo's job — `tools/build.py` does it as part of a deploy — so the authoring
+tree no longer carries a second, hand-run packager that could drift from it. The
+two docs worth keeping came across as `shared/interaction-protocol.md` and
+`docs/packaging.md`.
 
 **The deployable decks are not synced by this script.** `trial/lessons/*.html`
 becomes `courses/kr/hangul-trial-test/` via `import-trial-decks.py`, which has to
@@ -103,10 +110,11 @@ def sync_runtime(src: pathlib.Path) -> None:
     tree(src / "runtime" / "css", REPO / "shared" / "css")
     tree(src / "runtime" / "js", REPO / "shared" / "js")
     one(src / "ux-philosophy.md", REPO / "shared" / "ux-philosophy.md")
+    one(src / "interaction-protocol.md", REPO / "shared" / "interaction-protocol.md")
 
 
 def sync_sandbox(src: pathlib.Path) -> None:
-    for name in ("lessons", "full-trials", "reports", "assets", "lemonboard-build"):
+    for name in ("lessons", "full-trials", "reports", "assets"):
         tree(src / "trial" / name, REPO / "sandbox" / "trial" / name)
     one(src / "trial" / "illustration-prompts.md",
         REPO / "sandbox" / "trial" / "illustration-prompts.md")
@@ -123,8 +131,6 @@ def sync_sandbox(src: pathlib.Path) -> None:
     # Upstream's site index. Its links address the upstream tracks/ layout, which
     # this repo splits three ways, so they do not resolve here — see sandbox/README.
     one(src / "index.html", REPO / "sandbox" / "viewers" / "deck-index.html")
-
-    tree(src / "interactive", REPO / "sandbox" / "interactive")
 
     n = repoint_runtime(REPO / "sandbox")
     done.append(f"sandbox/**  ({n} runtime refs repointed at shared/)")

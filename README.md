@@ -247,7 +247,8 @@ uploaded zip into a single GCS prefix. So a sync is not a copy:
 |---|---|---|
 | `runtime/{css,js}` | `shared/{css,js}` | nothing — straight mirror |
 | `trial/lessons/*.html` | `courses/kr/hangul-trial-test/` | refs flattened to basenames, runtime bundled per deck, **input controls written into the markup** instead of built at load |
-| `trial/*`, `tracks/*/sample-lesson.html`, `interactive/` | `sandbox/` | `runtime/` refs repointed at `shared/` |
+| `trial/*`, `tracks/*/sample-lesson.html` | `sandbox/` | `runtime/` refs repointed at `shared/` |
+| `ux-philosophy.md`, `interaction-protocol.md` | `shared/` | nothing — straight mirror |
 | `tracks/*/table-of-contents.md`, `references/` | `references/` | licensed scans dropped (see below) |
 
 The control rewrite is the one that matters. lemonboard's validator parses

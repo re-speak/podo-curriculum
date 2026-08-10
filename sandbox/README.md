@@ -12,14 +12,19 @@ reviewed, referred back to, or picked up by someone else.
 
 | Path | What it is |
 |---|---|
-| `trial/` | the 체험수업 decks as authored — `lessons/` (the short decks that became `courses/kr/hangul-trial-test`), `full-trials/`, `reports/`, `assets/`, `lemonboard-build/` |
+| `trial/` | the 체험수업 decks as authored — `lessons/` (the short decks that became `courses/kr/hangul-trial-test`), `full-trials/`, `reports/`, `assets/` |
 | `track-samples/` | one sample lesson per track — hangul, core patterns, contextual, freetalking |
-| `interactive/` | the authoring tree's own packaging and interaction-protocol notes, plus its lemonboard build script |
 | `archive/` | superseded versions and design-variant explorations |
 
-`trial/`, `track-samples/` and `interactive/` are mirrored from
-`beginner-curriculum/korean`. That tree is the upstream and re-syncing replaces
-them wholesale — edit them there, not here. `archive/` is this repo's own.
+`trial/` and `track-samples/` are mirrored from `beginner-curriculum/korean`.
+That tree is the upstream and re-syncing replaces them wholesale — edit them
+there, not here. `archive/` is this repo's own.
+
+**No build output lives here.** `lemonboard-build/` used to, mirrored up from the
+authoring tree, and it was 45 committed files of one deck frozen at the moment
+somebody last packaged it by hand — exactly the staleness the zip is supposed to
+prevent. Packaging is a deploy step now (`tools/build.py`); nothing in the repo
+is a packaged deck.
 
 **`trial/lessons/` is the unflattened original of a deployed course.** The copies
 under `courses/kr/hangul-trial-test/` are not the same files: they share one
