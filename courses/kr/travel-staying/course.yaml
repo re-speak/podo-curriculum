@@ -8,7 +8,7 @@ metadata:
 spec:
   curriculumType: BASIC
   # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
-  classLevel: "999.512"
+  classLevel: "3000.012"
   lessonTime: 25
   # 검수 전까지는 false. true 로 바꾸는 순간 apply 가 학습자에게 노출시킨다.
   enabled: false
