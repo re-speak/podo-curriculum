@@ -3,7 +3,7 @@ kind: Course
 metadata:
   # beginner-curriculum 2-core-patterns · 9과.
   # tools/plan_courses.py 가 목차에서 끊었다.
-  slug: core-2-upper-intermediate
+  slug: core-upper-intermediate-2
 
 spec:
   curriculumType: BASIC_V2
@@ -15,9 +15,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 핵심 문법 패턴 · 2 · 중고급
-    en: Core grammar patterns · 2 · Upper intermediate
-    ja: コア文法パターン · 2 · 中上級
+    ko: 핵심 문법 패턴 · 중고급 · 2
+    en: Core grammar patterns · Upper intermediate · 2
+    ja: コア文法パターン · 中上級 · 2
 
   description:
     ko: Unit 21–22 · 정도와 한계 · 후회와 태도

@@ -3,7 +3,7 @@ kind: Course
 metadata:
   # beginner-curriculum 2-core-patterns · 10과.
   # tools/plan_courses.py 가 목차에서 끊었다.
-  slug: core-1-beginner
+  slug: core-beginner-1
 
 spec:
   curriculumType: BASIC_V2
@@ -15,9 +15,9 @@ spec:
   difficulty: BEGINNER
 
   title:
-    ko: 핵심 문법 패턴 · 1 · 초급
-    en: Core grammar patterns · 1 · Beginner
-    ja: コア文法パターン · 1 · 初級
+    ko: 핵심 문법 패턴 · 초급 · 1
+    en: Core grammar patterns · Beginner · 1
+    ja: コア文法パターン · 初級 · 1
 
   description:
     ko: Unit 1–2 · 이건 뭐예요? · 저는 매일 운동해요

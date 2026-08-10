@@ -3,7 +3,7 @@ kind: Course
 metadata:
   # beginner-curriculum 2-core-patterns · 9과.
   # tools/plan_courses.py 가 목차에서 끊었다.
-  slug: core-2-intermediate
+  slug: core-intermediate-2
 
 spec:
   curriculumType: BASIC_V2
@@ -15,9 +15,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 핵심 문법 패턴 · 2 · 중급
-    en: Core grammar patterns · 2 · Intermediate
-    ja: コア文法パターン · 2 · 中級
+    ko: 핵심 문법 패턴 · 중급 · 2
+    en: Core grammar patterns · Intermediate · 2
+    ja: コア文法パターン · 中級 · 2
 
   description:
     ko: Unit 16–17 · 이유와 핑계 · 목적과 조건
