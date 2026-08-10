@@ -25,9 +25,9 @@ endpoint the whole thing rests on is specified in
 |---|---|
 | `curriculum.yaml` | languages, environments, repo-wide constants |
 | `courses/<lang>/<course>/` | **deployable.** `course.yaml` + `lessons/<NN-slug>/` |
-| `shared/` | the deck runtime — `lesson-card.css` + `trial.css`, thirteen activity/chrome scripts, and the design contract |
+| `shared/` | the deck runtime — `lesson-card.css` + `trial.css`, thirteen activity/chrome scripts, and the design contract. **Served to decks from a CDN, not copied into them** |
 | `schemas/` | JSON Schema for the three document kinds |
-| `tools/` | build · validate · plan · apply, plus the two sync tools below |
+| `tools/` | build · validate · plan · apply, the shared-runtime pair (`publish-shared` · `repoint-shared`), plus the two sync tools below |
 | `sandbox/` | experiments. Committed, reviewable, and structurally undeployable |
 | `references/` | table-of-contents plans, textbook pattern maps, research |
 | `docs/` | the sync contract |
@@ -143,6 +143,45 @@ Both slots are mandatory. A lesson with only a 수업용 deck leaves
 `PRESTUDY_LEMONBOARD_KEY` empty, and class creation then fails at
 `/rooms/null/duplicate` — so `validate.py` blocks the merge rather than letting
 the failure surface in production.
+
+## The shared runtime
+
+`shared/{css,js}` is the single source, but decks do not carry a copy of it. They
+reference an immutable tag on the public mirror
+[`re-speak/podo-curriculum-shared`](https://github.com/re-speak/podo-curriculum-shared),
+declared once in `curriculum.yaml` under `spec.sharedRuntime`. One version for the
+whole repo; `validate.py` fails any deck that disagrees.
+
+That cuts ~93k duplicated lines out of `courses/` and lets a learner's browser cache
+one copy of `trial.css` across a whole course instead of re-fetching it per lesson.
+
+### Changing it
+
+```sh
+vim shared/js/activities.js              # append; do not rewrite what exists
+vim curriculum.yaml                      # bump spec.sharedRuntime.version
+python3 tools/publish-shared.py          # cut the tag, push it, verify it serves
+python3 tools/repoint-shared.py          # stamp every deck with the new version
+python3 tools/validate.py --env stage
+```
+
+**Publishing is a step you run, not something CI does on merge — deliberately.**
+A merge-triggered publisher would invert the order and leave a window where `main`
+holds decks naming a tag nobody pushed yet: a 404 for every activity, mid-class,
+visible only to the learner. Publishing first is free, because an unreferenced tag
+harms nobody. It also means no stored cross-repo token, which keeps the "nothing is
+stored, nothing needs rotating" property the sync contract already relies on.
+
+`publish-shared.py` refuses to move an existing tag. If `shared/` changed, the
+version has to change — a deck already pinned to that tag would otherwise change
+underneath a live class.
+
+`validate.py` layer 5 catches the two silent failures: a pin whose tag was never
+published (404), and a `shared/` that moved on without the tag being re-cut (byte
+mismatch). Like the contract check it fail-opens on 5xx and network trouble.
+
+A course may stay on its own bundled runtime — it simply has no URL on that host
+and is not checked. `taiken-trial` is on that path deliberately.
 
 ## How a change reaches a learner
 

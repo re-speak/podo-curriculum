@@ -2,16 +2,27 @@
 """
 The PR gate. Everything that could break a live lesson, checked before merge.
 
-Four layers, cheapest first:
+Five layers, cheapest first:
 
   1. schema      — course.yaml / lesson.yaml against JSON Schema
   2. structure   — slugs match directories, weeks run 1..N
   3. package     — every deck actually builds, with the GCS-flattening audit
   4. contract    — the built HTML through lemonboard's own data-sync validator
+  5. runtime     — every pinned shared-runtime URL is live and matches shared/
 
 Layer 4 needs network and is skipped without --contract, because the contract is
 owned by lemonboard and grape calls the same endpoint at upload time. Running it
 here just moves the failure from "someone tried to deploy" to "someone opened a PR".
+
+Layer 5 exists because the shared runtime left the zip. A deck now names a tag on
+a public mirror, and the two ways that goes wrong are both silent in class:
+
+  - the tag was never published, so every activity 404s
+  - shared/ was edited and the tag was not re-cut, so the deck runs stale code
+
+Both look fine on the author's screen. So the check is: the URL serves, and the
+bytes it serves are the bytes in shared/. It fail-opens on network trouble and 5xx
+like layer 4 — a CDN blip must not block a PR — but a 404 or a byte mismatch blocks.
 
     python3 tools/validate.py [--contract] [--env stage]
 """
@@ -22,6 +33,7 @@ import argparse
 import json
 import os
 import pathlib
+import re
 import sys
 import tempfile
 import urllib.error
@@ -112,6 +124,51 @@ def validate_contract(html: str, api: str, label: str, key: str) -> list[str]:
     return problems
 
 
+def pinned_urls(html: str, prefix: str) -> list[str]:
+    """Every src=/href= in the built html that points at our shared-runtime host."""
+    return [m.group(1) for m in re.finditer(r'\b(?:src|href)="([^"]+)"', html)
+            if m.group(1).startswith(prefix)]
+
+
+def check_runtime_urls(urls: set[str], rt: dict) -> list[str]:
+    """Layer 5. Each unique URL: serves, and serves exactly what shared/ holds.
+
+    Fail-open on network trouble and 5xx, matching layer 4 — a jsDelivr blip is not
+    a reason nobody can merge. A 404 or a byte mismatch is a real defect and blocks:
+    the first means the tag was never published, the second means shared/ moved on
+    without the tag being re-cut.
+    """
+    problems: list[str] = []
+    for url in sorted(urls):
+        # .../<version>/css/trial.css -> shared/css/trial.css
+        rel = "/".join(url.split("/")[-2:])
+        local = model.REPO / "shared" / rel
+        if not local.is_file():
+            problems.append(f"pinned URL has no counterpart in shared/: {url}")
+            continue
+        try:
+            with urllib.request.urlopen(url, timeout=20) as resp:
+                served = resp.read()
+        except urllib.error.HTTPError as exc:
+            if exc.code >= 500:
+                print(f"  ~ runtime: {rel} — CDN unavailable ({exc.code}), skipped")
+                continue
+            problems.append(
+                f"pinned runtime {url} returned {exc.code} — "
+                f"publish the tag first (python3 tools/publish-shared.py)")
+            continue
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            print(f"  ~ runtime: {rel} — CDN unreachable ({exc}), skipped")
+            continue
+        if served != local.read_bytes():
+            problems.append(
+                f"pinned runtime {url} serves {len(served)} bytes but shared/{rel} "
+                f"has {local.stat().st_size} — bump spec.sharedRuntime.version and republish")
+        else:
+            print(f"  ✓ runtime  — {rel} ({len(served)} bytes, matches shared/)")
+    return problems
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -144,6 +201,14 @@ def main() -> int:
 
     problems: list[str] = []
 
+    # Layer 5 setup. A deck that still bundles its own runtime simply has no URL on
+    # this prefix and is not checked — leaving a course on its bundled copy stays a
+    # legitimate choice, it just opts out of the CDN, not out of validation.
+    rt = curriculum["spec"].get("sharedRuntime")
+    runtime_prefix = rt["baseUrl"].rstrip("/") if rt else None
+    want_pin = f"{runtime_prefix}{rt.get('join', '@')}{rt['version']}/" if rt else None
+    seen_urls: set[str] = set()
+
     for course in courses:
         print(f"\n{course.key}  ({course.lang_type} · {course.spec['curriculumType']} · "
               f"level {course.spec['classLevel']} · {len(course.lessons)} lesson(s))")
@@ -163,11 +228,21 @@ def main() -> int:
                         print(f"  ✗ {slot:<8} — build failed")
                         continue
                     print(f"  ✓ {slot:<8} — {digest[7:19]}")
+                    built = (pathlib.Path(tmp) / build.HTML_NAME).read_text(encoding="utf-8")
                     if args.contract:
-                        problems += validate_contract(
-                            (pathlib.Path(tmp) / build.HTML_NAME).read_text(encoding="utf-8"),
-                            api, label, key,
-                        )
+                        problems += validate_contract(built, api, label, key)
+                    if runtime_prefix:
+                        for url in pinned_urls(built, runtime_prefix):
+                            if not url.startswith(want_pin):
+                                problems.append(
+                                    f"{label}: pins {url} but curriculum.yaml declares "
+                                    f"{rt['version']} — run tools/repoint-shared.py")
+                            else:
+                                seen_urls.add(url)
+
+    if seen_urls:
+        print(f"\nshared runtime  ({rt['version']} · {len(seen_urls)} distinct file(s) pinned)")
+        problems += check_runtime_urls(seen_urls, rt)
 
     print()
     if problems:
