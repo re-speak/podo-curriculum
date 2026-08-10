@@ -13,13 +13,11 @@ courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html
 
 ## Current status
 
-**Nothing deploys yet.** Validation, packaging and planning work today; `apply`
-needs a sync endpoint in grape that does not exist, and Korean needs `LANG_TYPE='KR'`
-which the admin does not offer. Both are specified in
+**Both environments deploy from this repo.** Merging to `stage` applies to stage;
+merging `stage → main` applies to prod. Neither has a button — see
+[How a change reaches a learner](#how-a-change-reaches-a-learner). The grape sync
+endpoint the whole thing rests on is specified in
 [`docs/sync-contract.md`](docs/sync-contract.md).
-
-Until then this repo is the source of truth for authoring, and decks are uploaded
-by hand through 교재 등록/수정 → **html로 생성하기**.
 
 ## Layout
 
@@ -154,12 +152,34 @@ CI/CD is Cloud Build, not GitHub Actions. Triggers live in
 **The environment is the branch.** `stage` is where work lands; `main` is what the
 learner sees.
 
-1. **PR → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `stage` or `main`, and labels the plan with the env that merging it would deploy to.
-2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to stage, automatically.**
-3. **Merge `stage` → `main` → `podo-curriculum-deploy-prod` applies to prod, automatically.** That PR *is* the release: its diff is the release note and its review is the gate.
+### The four steps
 
-Neither step has a button someone has to remember to press, because a deploy like
-that eventually goes unpressed and then the branch and the learner disagree.
+```sh
+# 1. branch off stage — never off main
+git fetch origin && git switch -c feat/my-lesson origin/stage
+python3 tools/validate.py --contract --env stage    # what CI is about to run
+git push -u origin feat/my-lesson
+gh pr create --base stage                           # ← base is stage
+
+# 2. merge it → podo-curriculum-deploy-stage applies to stage, automatically
+# 3. open the release PR
+gh pr create --base main --head stage
+# 4. merge it → podo-curriculum-deploy-prod applies to prod, automatically
+```
+
+What each step actually runs:
+
+1. **PR into `stage` → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `stage` or `main`, and labels the plan with the env that merging it would deploy to.
+2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to stage, automatically.** Verify there before going on; stage is the only place a mistake is cheap.
+3. **PR `stage → main`.** That PR *is* the release: its diff is the release note and its review is the gate. Review it as a deploy approval, because that is what it is.
+4. **Merge it → `podo-curriculum-deploy-prod` applies to prod, automatically** — a learner in a live class sees the change immediately.
+
+Steps 2 and 4 have no button someone has to remember to press, because a deploy
+like that eventually goes unpressed and then the branch and the learner disagree.
+
+**Don't branch off `main`.** It lags `stage` by whatever is merged but not yet
+released, so you would be writing against content the next release replaces — and
+a PR straight into `main` skips the one environment where a mistake is cheap.
 
 A rollback or a one-off re-deploy still goes through `podo-curriculum-deploy`, the
 manual trigger, which takes any branch × any env:

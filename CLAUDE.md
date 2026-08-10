@@ -5,13 +5,30 @@ so the bar is closer to `podo-database-schema` than to a docs repo.
 
 ## The branch is the environment
 
+Every change ships through the same four steps. There is no other path — the two
+merges *are* the two deploys.
+
+```sh
+# 1. branch off stage, PR into stage
+git fetch origin && git switch -c feat/my-lesson origin/stage
+python3 tools/validate.py --contract --env stage
+git push -u origin feat/my-lesson && gh pr create --base stage
+
+# 2. merge → podo-curriculum-deploy-stage applies to stage, automatically
+# 3. gh pr create --base main --head stage        ← the release PR
+# 4. merge → podo-curriculum-deploy-prod applies to prod, automatically
+```
+
 - **Work branches off `origin/stage`, and the PR's base is `stage`.** Merging to
   `stage` deploys to stage, automatically — there is no button.
-- **`main` is prod.** A `stage → main` PR is the release; merging it changes what a
+- **Stop at stage and look.** Step 2 is the only environment where a mistake is
+  cheap; don't open the release PR until stage is verified.
+- **`main` is prod.** The `stage → main` PR is the release; merging it changes what a
   learner in a live class sees, immediately. Review that PR as a deploy approval,
   because that is what it is.
-- **Don't branch off `main`.** It lags `stage` by whatever has been merged but not
-  yet released, so you would be writing against content the next release replaces.
+- **Don't branch off `main`, and never PR straight into it.** It lags `stage` by
+  whatever has been merged but not yet released, so you would be writing against
+  content the next release replaces — and you would skip stage entirely.
 
 ## Before touching a deck
 
