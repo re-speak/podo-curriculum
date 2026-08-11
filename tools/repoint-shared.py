@@ -19,7 +19,7 @@ learner's screen only, with nothing in your console to see.
 
     python3 tools/repoint-shared.py [COURSE ...] [--dry-run]
 
-With no COURSE it walks every course under courses/. Name courses (`kr/report-test`)
+With no COURSE it walks every course under courses/. Name courses (`kr/test-report`)
 to scope it — a deck deliberately left on its own bundled runtime just goes unnamed.
 """
 
@@ -120,7 +120,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("courses", nargs="*", metavar="COURSE",
-                    help="course keys to repoint, e.g. kr/report-test (default: all)")
+                    help="course keys to repoint, e.g. kr/test-report (default: all)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 

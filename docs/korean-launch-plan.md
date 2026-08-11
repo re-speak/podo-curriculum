@@ -1,271 +1,133 @@
 # Shipping the Korean curriculum
 
-What still has to happen before a Japanese-speaking learner can take a Korean lesson, and in
-what order. Written 2026-08-10, after wiring the authoring tree to this repo.
+This is the path from the Korean authoring tree to a bookable PODO course. It reflects the
+runtime contracts in `podo-app`, `podo-backend`, and `grape` as of 2026-08-11.
 
-Three repos are involved:
+Three repositories are involved:
 
-| Repo | Role |
+| Repository | Role |
 |---|---|
-| `beginner-curriculum/korean` | authoring — TOCs, decks, the shared runtime source |
-| `re-speak/podo-curriculum` (here) | deployment — courses, packaging, sync to grape |
-| `grape` | the admin and the sync endpoint; owns what a course *is* |
+| `beginner-curriculum/korean` | Authoring: plans, lesson decks, shared runtime source |
+| `podo-curriculum` (here) | Deployment: manifests, packaging, grape sync |
+| `grape` | Admin and sync endpoint; owns persisted course identity |
 
-**Nothing below is blocking today.** All 38 Korean courses are `enabled: false`, so they can
-sit in `main` indefinitely without reaching a learner. The order matters only once you want
-one live.
+All planned track courses remain `enabled: false`, so changing their manifests does not make
+them learner-visible by itself.
 
----
+## Course identity: use `BASIC`
 
-## Where things stand
+Every regular Korean course uses:
 
-Done:
-
-- 5 tracks cut into **38 courses / 375 planned lessons**, each `course.yaml` validating
-  against `schemas/`
-- `classLevel` section bands — `1000` hangul · `2000` core · `3000` contextual ·
-  `4000` freetalking · `5000` pronunciation
-- `curriculumType: BASIC_V2` on all of them
-- `import-track-lessons.py` copies the plan; `repoint-shared.py` pins the CDN runtime
-- **2 decks actually written** (`core-beginner-1` 과 7 and 과 8), verified at 480px
-
-Not done: everything below.
-
----
-
-## 1 · Register `BASIC_V2` in the code table
-
-**Why:** `TB_SYS_CODE_DETAIL` drives the curriculum-type dropdown on subscription products
-(`inc/db_class.php:25` → `select_code_list($db, 'PODO_CURRICULUM_TYPE')`). Without a row here
-you cannot sell or attach a subscription to the new curriculum.
-
-**Not** needed for the course sync itself — `api/curriculum/sync.php` writes
-`CURRICULUM_TYPE` straight through with no allowlist, so courses land fine without this.
-
-Current contents (stage). `BUSINESS` is the precedent: types are retired by flag, not deleted.
-
-| VALUE | NAME | ORDER | USE_YN |
-|---|---|---|---|
-| TRIAL | 체험레슨 | 1 | Y |
-| BASIC | 스탠다드 | 2 | Y |
-| BUSINESS | 비즈니스 | 3 | **N** |
-| SMART_TALK | 스마트토크 | 4 | Y |
-
-```sql
--- grape/sql/podo_curriculum_type_basic_v2.sql
--- CODE_ID is the existing PODO_CURRICULUM_TYPE parent; confirm it per environment:
---   SELECT CODE_ID FROM TB_SYS_CODE WHERE CODE_VALUE = 'PODO_CURRICULUM_TYPE';
--- (stage: c86a644d312c35a56dc513c27e427b83)
-INSERT INTO TB_SYS_CODE_DETAIL
-  (CODE_DETAIL_ID, CODE_ID, CODE_DETAIL_VALUE, CODE_DETAIL_NAME, ORDER_LEVEL, USE_YN)
-SELECT REPLACE(UUID(), '-', ''), TSC.CODE_ID, 'BASIC_V2', 'BASIC v2', 5, 'Y'
-FROM TB_SYS_CODE TSC
-WHERE TSC.CODE_VALUE = 'PODO_CURRICULUM_TYPE'
-  AND NOT EXISTS (
-      SELECT 1 FROM TB_SYS_CODE_DETAIL D
-      WHERE D.CODE_ID = TSC.CODE_ID AND D.CODE_DETAIL_VALUE = 'BASIC_V2');
+```yaml
+spec:
+  curriculumType: BASIC
 ```
 
-Re-runnable, and it looks the parent up rather than hard-coding an id that differs per
-environment. Run dev → stage → prod.
+`curriculumType` is a product category, not a curriculum-edition number. `podo-app`,
+`podo-backend`, and `grape` already recognize `BASIC`; none supports a version-suffixed type. The
+value also forms the tutor-assignment key `PODO_{LANG}_{TYPE}`, so Korean BASIC tutors use
+`PODO_KR_BASIC`.
 
-> **`CODE_DETAIL_VALUE` is case-sensitive** — the column is `utf8mb3_bin`. `BASIC_v2` would
-> be a second, tutor-less curriculum with no error anywhere. Copy the string, don't retype it.
+Do not create a new curriculum type for a later content generation. A future English BASIC
+generation should remain `(LANG_TYPE=EN, CURRICULUM_TYPE=BASIC)` and receive unused
+`CLASS_LEVEL` values. If two generations must coexist at the exact same level, define an
+explicit version-selection design first; `VER_YEAR` / `VER_NUM` currently label rows but are
+not part of grape's natural key or the app's selection routing.
 
-**Verify:** the type appears in the dropdown at
-`admin/subscribe/subscribe_origin_manage_create.php`.
+Grape matches a course using:
 
----
+```text
+CLASS_TYPE + LANG_TYPE + CURRICULUM_TYPE + LESSON_TIME + CLASS_LEVEL + CLASS_WEEK
+```
 
-## 2 · Un-hardcode the three-value lists in grape
+For cover rows, `CLASS_WEEK` is `0`. This means a new course under `BASIC` is safe when its
+language, lesson time, or level is distinct. It also means changing a level after a row has
+already synced creates a new identity rather than updating the old row; retire the old row
+deliberately during migration.
 
-**Why:** the code table above does *not* feed the course admin. Six places enumerate
-`BASIC / TRIAL / SMART_TALK` literally, so a `BASIC_V2` course syncs correctly and is then
-invisible in the UI. This is the "hardcode creep" — each was written when three types were
-all there were.
+## Korean level bands
 
-| File:line | What it does | Effect if unfixed |
+The five tracks use low-numbered, non-overlapping ranges:
+
+| Range | Track | Current slots |
 |---|---|---|
-| `admin/popup/search_course_list.php:39` | `$allowedCurriculumTypes = array('BASIC','TRIAL','SMART_TALK')` | course not selectable anywhere that popup is used |
-| `admin/popup/search_course_list.php:104` | `AND c.CURRICULUM_TYPE IN (…)` | filtered out of the result set |
-| `admin/popup/search_course_list.php:107` | `FIELD(c.CURRICULUM_TYPE, …)` sort | sorts to an arbitrary position |
-| `admin/popup/search_course_list.php:190` | `<option>` filter | cannot narrow to it |
-| `admin/system/class_course/class_course_create.php:109` | `<option>` | cannot hand-create one |
-| `admin/system/class_course/class_course_update.php:134–136` | `<option>` | **a BASIC_V2 course cannot be edited without changing its type** |
-| `admin/system/class_course/class_course_list.php:125` | `<option>` search filter | cannot list them |
-| `admin/podo_teachers_v1.php:576` | `foreach (['TRIAL','BASIC','SMART_TALK'])` | cannot assign a tutor — blocks §3 |
+| `100.000–199.999` | Hangul reading | `100.010` |
+| `200.000–299.999` | Core grammar patterns | `200.010–200.120` |
+| `300.000–399.999` | Korean in context | `300.010–300.140` |
+| `400.000–499.999` | Free talking | `400.010–400.100` |
+| `500.000–599.999` | Pronunciation repair | `500.010` |
 
-`class_course_update.php` is the one to fix first. Its `<select>` offers only an empty
-`선택해주세요`, `BASIC` and `SMART_TALK`, and carries `required`. Opening a `BASIC_V2` course
-therefore lands on the empty option and the form refuses to save until someone picks `BASIC`
-or `SMART_TALK` — so any edit made through that screen converts the course. It is at least
-loud rather than silent, but it is a one-way door for anyone who does not know why.
+Primary course positions advance by `0.010` across the entire section. For example, Core
+continues `200.980`, `200.990`, `201.000`, `201.010`, rather than stopping at `200.999`.
+That provides 9,999 primary positions and leaves nine thousandth-level insertion positions
+between neighbours (`200.011–200.019` between `200.010` and `200.020`).
 
-That screen already omits `TRIAL`, which is a fair sign it is not the route used for
-non-`BASIC` courses today — worth confirming how those are maintained before assuming the
-same path has to work for `BASIC_V2`.
+Reasons for these bands:
 
-**Preferred fix:** replace the literals with `select_code_list($db, 'PODO_CURRICULUM_TYPE')`,
-which several other screens already use — then §1 is the only place a future type is added.
-The minimal fix is adding `'BASIC_V2'` to each list, which just moves the creep forward.
+- `LANG_TYPE=KR` already namespaces them from English and Japanese levels.
+- `1–99` stays available for a future simple graded ladder.
+- Values below `1000` stay in the backend's regular BASIC range. Existing hard-coded ranges
+  at `1000–1999` and `3000–3999` mean Breaking News and free-talking content.
+- `999` is already associated with test content and is not a production namespace.
+- The backend handles `CLASS_LEVEL` as a Java `Float`; starting at `10000` makes three-decimal
+  course slots needlessly close to the type's precision limit.
 
-**Verify:** create a class through the admin against a `BASIC_V2` course, and re-save an
-existing one and confirm `CURRICULUM_TYPE` is unchanged.
+The numeric bands are stable routing data, not automatic UI sections. To show five named
+sections, add explicit range-to-section behavior in `podo-backend` and presentation support
+in `podo-app`. Until that feature exists, these levels remain regular BASIC courses rather
+than acquiring incorrect legacy section labels.
 
----
+## Applying the same rule to a future English generation
 
-## 3 · Assign tutors to `PODO_KR_BASIC_V2`
+Keep `LANG_TYPE=EN` and `CURRICULUM_TYPE=BASIC`. First inventory the active EN/BASIC levels
+in the target environment, then allocate unused values below `1000`. Because language is
+part of course identity, English may reuse `100.xxx`, `200.xxx`, and so on if those ranges
+are free for English; the Korean rows do not collide with them.
 
-**Why:** `le_tutor_curriculum` keys on `PODO_{LANG}_{TYPE}`. **There are currently zero
-`PODO_KR_*` rows of any type on stage** — so no tutor can be matched to *any* Korean course,
-new type or old. This is independent of everything else here and is the hardest blocker.
+If an older English generation must remain enabled, a distinct unused level range avoids
+grape's duplicate-course check but does **not**
+solve version selection: today's regular BASIC query returns every enabled level below
+`1000`. Add explicit generation routing in backend/app before enabling both, or retire the
+old generation when the new one launches. Do not encode the generation in curriculum type.
 
-Forking the namespace is deliberate: driving an interactive board is a different skill from
-reading a PDF, and a Korean-for-Japanese tutor needs Japanese. But it means the assignment
-has to be made explicitly, and §2's `podo_teachers_v1.php` fix has to land first for the
-admin route to exist.
+## What remains before launch
 
-Also fill in `tutorGroups` in each `course.yaml` — all 38 currently have
-`allowRandom: []` / `assignedOnly: []`, which is honest but means nobody is matched.
+1. **Tutor eligibility:** create or assign appropriate `PODO_KR_BASIC` tutor rows, and fill
+   `tutorGroups` in the enabled course manifests. Empty groups cannot random-match a tutor.
+2. **Learner language support:** the student-facing app/schema currently recognizes EN/JP
+   paths, not a complete KR curriculum flow. Add and verify the KR selection and labels.
+3. **Named track sections:** if the product requires five visible sections, implement the
+   range mapping described above in backend and app code.
+4. **Runtime publishing:** sync and publish the shared runtime before repointing decks to its
+   immutable CDN tag.
+5. **Lesson completeness:** enable a course only when every planned lesson has valid lecture
+   and prestudy decks and consecutive weeks.
 
-**Verify:**
-`SELECT COUNT(*) FROM le_tutor_curriculum WHERE curriculum_type = 'PODO_KR_BASIC_V2';`
+Recommended deployment sequence:
 
----
-
-## 4 · Settle the entitlement question — **unresolved**
-
-`GT_CLASS_TICKET.CURRICULUM_TYPE` and `GT_SUBSCRIBE.CURRICULUM_TYPE` both exist. I did not
-find the code path that decides whether a `BASIC` ticket may book a `BASIC_V2` class, so
-**it is unknown whether existing subscribers can take these lessons or need a new product.**
-
-This is the item with commercial consequence and it should be answered by whoever owns
-billing, not inferred from the schema. Two outcomes:
-
-- ticket type must match course type → `BASIC_V2` needs its own subscription products, and
-  every existing learner needs a migration path
-- booking ignores it → nothing to do
-
-Everything else in this document is mechanical. This one is a product decision.
-
----
-
-## 5 · Publish the shared runtime (`v1.2.0`)
-
-`korean/tools/check_runtime_drift.py` currently reports four files ahead of the published
-tag:
-
-```
-css/trial.css              +9,804 bytes vs v1.1.0
-js/freetalk-activities.js  +1,711
-js/highlight.js            +1,533
-js/spotlight.js            +1,165
-```
-
-Decks render locally against the working tree and in production against the pinned tag, so
-until this is published, **a lesson verified at 480px is not the page a learner gets** — and
-nothing errors; components just lose their styles.
-
-Blocked on `korean/runtime/css/trial.css` having uncommitted work in the authoring tree.
-When it is finished:
-
-```
-python3 tools/sync-from-authoring.py --runtime-only
-python3 tools/publish-shared.py v1.2.0      # immutable tag; cannot be moved later
+```text
+python3 tools/sync-from-authoring.py
+python3 tools/import-track-lessons.py <track>
 python3 tools/repoint-shared.py
 python3 tools/validate.py --contract --env stage
 ```
 
-Order is load-bearing — publish before repoint, or `main` briefly holds decks pointing at a
-tag nobody pushed, which 404s in class on the learner's screen only.
+`import-track-lessons.py` intentionally keeps an existing `course.yaml`, because `enabled`,
+`classLevel`, and `tutorGroups` are reviewed deployment decisions. When an authoring identity
+change is intentional—as in this migration to `BASIC`—update both copies and review
+the manifest diff explicitly.
 
----
+## Existing hand-authored Hangul course
 
-## 6 · Write the lessons
+`courses/kr/test-hangul-lv1` is an older `BASIC`, level `1` course. The new Hangul track starts at
+`100.010`, so grape considers them distinct and can store both. They overlap in learning
+purpose, however; decide which course is offered to learners before enabling either one.
 
-**2 of 375 written.** This is the bulk of the remaining work and the only part that cannot
-be automated.
+## Verification checklist
 
-Per lesson, following `korean/CLAUDE.md` § Writing a new lesson:
-
-```
-python3 korean/tools/new_lesson.py --track <t> --lesson <n> --id NN-english-words \
-    --title-ko … --title-ja … --title-en …
-# then: read toc/lesson-NNN.md → lesson-blueprint.md → the trial deck in full
-python3 korean/tools/plan_courses.py korean/tracks/<t>   # regenerates lesson.yaml
-```
-
-Suggested order — finish one course end to end rather than sampling across tracks, so
-something becomes deployable early:
-
-1. `core-beginner-1` (과 1–10, 8 remaining) — 과 7 and 8 exist; completing it gives the first
-   fully deployable course and exercises the whole pipeline once
-2. `hangul-reading` (14) — the entry product, and the track most learners meet first
-3. `kpop-talk` (10) — the contextual track's own front door (lowest grammar floor, 과 42)
-
-Two things to watch, both learned the hard way:
-
-- **`5-pronunciation`'s blueprint is marked provisional** — it was derived from the TOC, not
-  from a working deck, because that track has no sample. The first deck there should be
-  treated as design work, and the blueprint rewritten from it afterwards.
-- **`hangul-lv1` (hand-authored, 11 lessons, `classLevel: "1"`, `BASIC`) overlaps
-  `hangul-reading` (14 lessons, `1000.001`, `BASIC_V2`).** They are two versions of the same
-  curriculum. Decide which wins before either goes live.
-
----
-
-## 7 · Optional: carry `verYear` / `verNum` through the sync
-
-`GT_CLASS_COURSE.VER_YEAR` / `VER_NUM` are how PODO already labels generations — EN and JP
-BASIC each carry `2024/2`, `2024/3`, `2025/3` alongside a null legacy set. The sync never
-sends them, so our rows land null.
-
-Not required: `VER_*` is not part of the natural key, so it changes nothing about identity —
-`BASIC_V2` is already doing that job. Worth adding only when you want generations legible
-*inside* `BASIC_V2` later. Needs `course.yaml` → `course.schema.json` → manifest →
-`api/curriculum/sync.php`.
-
----
-
-## Reference — what identifies a course
-
-From `admin/system/class_course/process/class_course_ps.php:656`, confirmed in code rather
-than inferred:
-
-```sql
-WHERE CLASS_TYPE='PODO' AND BOOK_TYPE='COVER' AND CLASS_WEEK=0
-  AND LANG_TYPE=… AND CURRICULUM_TYPE=… AND LESSON_TIME=… AND CLASS_LEVEL=…
-→ "동일한 조건(언어/커리큘럼/수업시간/레벨)의 코스가 이미 존재합니다."
-```
-
-Consequences worth remembering:
-
-- **`COUNTRY_CODE` is not in it.** "English for Japanese speakers" cannot coexist with
-  "English for Korean speakers" at the same level today — grape rejects the second outright.
-  Whenever English gains a second audience, that lookup, the manifest, and the learner→course
-  query all have to learn about `COUNTRY_CODE`. `GT_USER.LANGUAGE_CODE`
-  (`system|ko|en|ja`) already exists on the learner side and should be a default and sort,
-  never an enrolment filter.
-- **`VER_*` is not in it** either — which is why §7 is optional and a new type was the right
-  answer to the overlap problem.
-- **There is no unique index on `GT_CLASS_COURSE`** — only `PRIMARY KEY (ID)`. The natural key
-  is enforced entirely in PHP, so anything writing outside `class_course_ps.php` or
-  `api/curriculum/sync.php` can create duplicates the app will then pick between arbitrarily.
-
-## Reference — the `classLevel` section convention
-
-The integer part is the section; the decimal is the course. Undocumented anywhere else; this
-is what the live rows do.
-
-```
-1–2          the graded ladder (level 1, level 2)      EN / JP
-1000         Breaking News, 15 courses                 EN / JP
-1001, 1002   single topic courses
-2001–2006    the Business series
-3500         가벼운 프리토킹, 12 courses
-999          throwaway rows — 'html test (john)'
-```
-
-Korean uses `1000`/`2000`/`3000`/`4000`/`5000`, one band per track, inside `BASIC_V2` where
-they cannot collide with the English or Japanese curricula at all. `1–99` is left free in
-case Korean ever gets a graded ladder.
+- Every planned Korean track manifest has `curriculumType: BASIC`.
+- Planned levels occupy only `100.xxx` through `500.xxx` and are unique within KR/BASIC/25m.
+- Tutor assignments resolve through `PODO_KR_BASIC`.
+- No subscription/code-table/admin work exists solely to support a made-up version type.
+- `python3 tools/validate.py --contract --env stage` passes before enabling a course.
+- If a previously synced level is replaced, its old grape rows are explicitly retired.

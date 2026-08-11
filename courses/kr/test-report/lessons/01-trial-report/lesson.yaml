@@ -17,7 +17,7 @@ spec:
 
   # 덱을 옮겨 온 것이라 teaches/outcome 은 비워 둔다 — 원본 기획 문서가 아니라
   # 덱에서 읽어낸 것을 적으면 리뷰가 실제 덱이 아니라 이 메타데이터를 검토하게 된다.
-  # (taiken-trial · hangul-trial-test 와 같은 이유다.)
+  # (test-taiken-trial · hangul-trial-test 와 같은 이유다.)
   teaches: {}
   prerequisites: []
   source: sandbox/trial/reports/trial-1-report.html

@@ -48,8 +48,8 @@ cost one course rather than the whole curriculum.
   "bookFormat": "HTML",
   "langType": "KR",
   "course": {
-    "slug": "hangul-lv1",
-    "key": "kr/hangul-lv1",
+    "slug": "test-hangul-lv1",
+    "key": "kr/test-hangul-lv1",
     "curriculumType": "BASIC",
     "curriculumTypeKey": "PODO_KR_BASIC",
     "classLevel": "1",
@@ -91,7 +91,7 @@ to the same key leaves the room untouched, so the skip buys little.
 {
   "ok": true,
   "course": {
-    "slug": "hangul-lv1",
+    "slug": "test-hangul-lv1",
     "coverId": 1043,
     "lessons": {
       "01-block-and-first-sounds": {
@@ -126,7 +126,7 @@ becomes an orphan course nobody can reach or update.
 ## Still open: `LANG_TYPE = 'KR'` outside this endpoint
 
 The column is a plain varchar, so **the sync endpoint writes `KR` rows fine** —
-stage carries `kr/taiken-trial` as `GT_CLASS_COURSE` 8142–8148, created by an
+stage carries `kr/test-taiken-trial` as `GT_CLASS_COURSE` 8142–8148, created by an
 apply. What is still missing is everywhere *else* in the product that enumerates
 languages:
 

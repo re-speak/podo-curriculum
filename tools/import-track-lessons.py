@@ -56,6 +56,29 @@ import upstream
 
 REPO = upstream.REPO
 
+# Test courses stay grouped at the bottom of courses/kr even when their source
+# plan uses its original production-shaped slug.
+COURSE_ALIASES = {
+    "hangul-starter": "test-hangul-starter",
+}
+
+
+class CourseManifestError(Exception):
+    pass
+
+
+def _manifest_bytes(plan: pathlib.Path, source_slug: str, dest_slug: str) -> bytes:
+    data = plan.read_bytes()
+    if source_slug == dest_slug:
+        return data
+
+    old = f"  slug: {source_slug}\n".encode()
+    if data.count(old) != 1:
+        raise CourseManifestError(
+            f"{plan}: expected exactly one metadata slug for {source_slug}"
+        )
+    return data.replace(old, f"  slug: {dest_slug}\n".encode(), 1)
+
 
 def _load_trial_module():
     """Import `import-trial-decks.py` despite the hyphens in its name.
@@ -110,14 +133,16 @@ def main() -> int:
     try:
         for plan in plans:
             cslug = plan.parent.name
-            dest = REPO / "courses" / "kr" / cslug
+            dest_slug = COURSE_ALIASES.get(cslug, cslug)
+            dest = REPO / "courses" / "kr" / dest_slug
             dest.mkdir(parents=True, exist_ok=True)
 
             here = dest / "course.yaml"
+            planned_manifest = _manifest_bytes(plan, cslug, dest_slug)
             if not here.is_file():
-                shutil.copyfile(plan, here)
+                here.write_bytes(planned_manifest)
                 note = "course.yaml copied (enabled: false)"
-            elif here.read_bytes() != plan.read_bytes():
+            elif here.read_bytes() != planned_manifest:
                 note = "course.yaml differs — kept ours (enabled/tutorGroups are review decisions)"
             else:
                 note = "course.yaml in step"
@@ -130,10 +155,10 @@ def main() -> int:
                 shutil.rmtree(lessons_dir)
 
             if not decks:
-                print(f"  {cslug:<28} no decks written yet — {note}")
+                print(f"  {dest_slug:<28} no decks written yet — {note}")
                 continue
 
-            print(f"  {cslug:<28} {note}")
+            print(f"  {dest_slug:<28} {note}")
             for deck in decks:
                 slug = deck.parent.name
                 lyaml = deck.parent / "lesson.yaml"
@@ -159,7 +184,7 @@ def main() -> int:
                 print(f"    {slug:<26} controls: {counts:<34} "
                       f"{len(scripts)} script(s), {len(assets)} asset(s)")
                 total_lessons += 1
-    except t.ImportError_ as exc:
+    except (t.ImportError_, CourseManifestError) as exc:
         return _fail(str(exc))
 
     print(f"\n{total_lessons} lesson(s) across {len(plans)} course(s).\n"

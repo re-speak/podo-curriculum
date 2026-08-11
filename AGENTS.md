@@ -87,7 +87,7 @@ pushed. That is a 404 for every activity, in class, on the learner's screen only
   during the window — some learners get the new file, some the old, same lesson.
   Only a tag is cached as immutable.
 - **A deck may opt out.** One that still bundles its own runtime has no URL on this
-  host and is simply not checked. `taiken-trial` is on that path deliberately.
+  host and is simply not checked. `test-taiken-trial` is on that path deliberately.
 
 `validate.py` layer 5 blocks two silent failures: a pin whose tag was never
 published (404), and a `shared/` that moved on without the tag being re-cut (byte
@@ -176,7 +176,7 @@ blocks on any `severity: error`. Without `PODO_LEMONBOARD_API_KEY` it refuses to
 than letting an auth rejection read as a clean pass.
 
 Copy from a deck that passes the gate rather than inventing markup —
-[`courses/kr/taiken-trial/lessons/06-taiken-self-intro`](courses/kr/taiken-trial/lessons/06-taiken-self-intro)
+[`courses/kr/test-taiken-trial/lessons/06-taiken-self-intro`](courses/kr/test-taiken-trial/lessons/06-taiken-self-intro)
 carries all four shapes (typed blank, write-in area, tap-one-of-two, order-the-chips) with
 the controls written straight into the HTML.
 

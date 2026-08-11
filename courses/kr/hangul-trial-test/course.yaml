@@ -10,7 +10,7 @@ metadata:
 spec:
   curriculumType: TRIAL
   # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
-  # taiken-trial 이 999.100 이라, 같은 (KR, TRIAL, 25) 안에서 겹치지 않게 999.200 을 쓴다.
+  # test-taiken-trial 이 999.100 이라, 같은 (KR, TRIAL, 25) 안에서 겹치지 않게 999.200 을 쓴다.
   # 999.x 는 실제 상품 레벨이 아니라 테스트 대역이다.
   classLevel: "999.200"
   lessonTime: 25

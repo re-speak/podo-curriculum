@@ -4,7 +4,7 @@ The curriculum, as code. What is on `main` is what is live — merge a lesson an
 deploys itself, the way `podo-database-schema` does for the DB schema.
 
 ```
-courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html
+courses/kr/test-hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html
         │  │          │                                 └── 수업용 deck  → CLASS_LEMONBOARD_KEY
         │  │          └── one lesson = one GT_CLASS_COURSE MAIN row (CLASS_WEEK=1)
         │  └── one course = a COVER row + its MAIN rows
@@ -51,8 +51,8 @@ spec:
 ```
 
 ```yaml
-# courses/kr/hangul-lv1/course.yaml — the COVER row
-metadata: { slug: hangul-lv1 }
+# courses/kr/test-hangul-lv1/course.yaml — the COVER row
+metadata: { slug: test-hangul-lv1 }
 spec:
   curriculumType: BASIC          # BASIC | SMART_TALK | TRIAL
   classLevel: "1"                # quoted — 1.10 must not become 1.1
@@ -105,7 +105,7 @@ pip install -r tools/requirements.txt
 python3 tools/validate.py                      # schema + structure + packaging
 python3 tools/validate.py --contract           # …plus lemonboard's data-sync validator
 python3 tools/plan.py --env stage              # what apply would do
-python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html \
+python3 tools/build.py courses/kr/test-hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html \
         --out /tmp/deck                        # one deck, to inspect the zip
 
 python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/, references/
@@ -119,7 +119,7 @@ the second reads the runtime the first mirrored. Neither is called by CI.
 
 `import-report-deck.py` reads no authoring tree — its source is this repo's own
 `sandbox/`, which `tools/model.py` refuses to walk. Re-run it after editing
-`sandbox/trial/reports/trial-1-report.html`; it rewrites `courses/kr/report-test/lessons/`
+`sandbox/trial/reports/trial-1-report.html`; it rewrites `courses/kr/test-report/lessons/`
 from scratch and re-audits every `data-sync-id` on the way through.
 
 Decks are visual documents. Render them in a browser at 480px and look before
@@ -136,7 +136,7 @@ Anything the learner taps, types or drags goes through lemonboard's `data-sync`
 contract. The implementation in lemonboard is the SSOT; the working summary lives
 in [`CLAUDE.md`](CLAUDE.md). Getting it wrong fails silently: the activity works on
 your screen and never reaches the other person. Copy from a deck that passes the
-gate — [`06-taiken-self-intro`](courses/kr/taiken-trial/lessons/06-taiken-self-intro)
+gate — [`06-taiken-self-intro`](courses/kr/test-taiken-trial/lessons/06-taiken-self-intro)
 — rather than inventing markup.
 
 Both slots are mandatory. A lesson with only a 수업용 deck leaves
@@ -181,7 +181,7 @@ published (404), and a `shared/` that moved on without the tag being re-cut (byt
 mismatch). Like the contract check it fail-opens on 5xx and network trouble.
 
 A course may stay on its own bundled runtime — it simply has no URL on that host
-and is not checked. `taiken-trial` is on that path deliberately.
+and is not checked. `test-taiken-trial` is on that path deliberately.
 
 ## How a change reaches a learner
 

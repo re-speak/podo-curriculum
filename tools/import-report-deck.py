@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Promote the sandbox report deck into courses/kr/report-test.
+Promote the sandbox report deck into courses/kr/test-report.
 
 `sandbox/trial/reports/trial-1-report.html` is the 니즈 파악 → 리포트 & 플랜 deck.
 It reaches sideways for everything — `../../../shared/css`, `../../../shared/js`,
@@ -39,7 +39,7 @@ import shutil
 import sys
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
-COURSE = REPO / "courses" / "kr" / "report-test"
+COURSE = REPO / "courses" / "kr" / "test-report"
 SOURCE = REPO / "sandbox" / "trial" / "reports" / "trial-1-report.html"
 
 # Where a flattened basename is looked up, in order.
@@ -85,7 +85,7 @@ spec:
 
   # 덱을 옮겨 온 것이라 teaches/outcome 은 비워 둔다 — 원본 기획 문서가 아니라
   # 덱에서 읽어낸 것을 적으면 리뷰가 실제 덱이 아니라 이 메타데이터를 검토하게 된다.
-  # (taiken-trial · hangul-trial-test 와 같은 이유다.)
+  # (test-taiken-trial · hangul-trial-test 와 같은 이유다.)
   teaches: {{}}
   prerequisites: []
   source: sandbox/trial/reports/{source}

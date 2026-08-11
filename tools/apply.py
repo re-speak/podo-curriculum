@@ -14,7 +14,7 @@ them. So this tool builds zips, states what it wants, and lets grape do it.
 
 The request/response contract lives in docs/sync-contract.md.
 
-    python3 tools/apply.py --env stage [--dry-run] [--only kr/hangul-lv1]
+    python3 tools/apply.py --env stage [--dry-run] [--only kr/test-hangul-lv1]
 
 Auth is a Google OIDC ID token in PODO_CURRICULUM_SYNC_TOKEN — the deploy build
 mints it off the metadata server, so there is no stored secret.
@@ -148,7 +148,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--env", required=True)
-    ap.add_argument("--only", help="apply a single course key, e.g. kr/hangul-lv1")
+    ap.add_argument("--only", help="apply a single course key, e.g. kr/test-hangul-lv1")
     ap.add_argument("--dry-run", action="store_true",
                     help="build and print the manifest; send nothing")
     args = ap.parse_args()

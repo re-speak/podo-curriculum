@@ -4,10 +4,10 @@ metadata:
   # How a human finds this course. grape matches the DB row by natural key
   # (classLevel / lessonTime / curriculumType …), not by this slug — but keep it
   # stable anyway: it is the name every PR, plan and build log refers to.
-  slug: hangul-lv1
+  slug: test-hangul-lv1
 
 spec:
-  curriculumType: BASIC        # BASIC | SMART_TALK | TRIAL | BASIC_V2
+  curriculumType: BASIC        # BASIC | SMART_TALK | TRIAL
   classLevel: "1"              # → CLASS_LEVEL (grape truncates past 3 decimals)
   lessonTime: 25               # → LESSON_TIME; 15 or 25
   enabled: false               # → USE_YN. false until every lesson has both decks.
