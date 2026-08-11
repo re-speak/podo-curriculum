@@ -35,8 +35,27 @@ spec:
   #
   # prefix 가 환경마다 다른 것에 주의: 전 환경의 grape 가 같은 SA 로 같은 버킷에 쓰고
   # stage DB 는 prod 클론이라 교재 ID 공간이 겹친다. 그래서 비프로덕션만 -{env} 접미사를
-  # 붙여 가른다(prod 는 이미 이관된 경로라 그대로 둔다).
+  # 붙여 가른다(prod 는 이미 이관된 경로라 그대로 둔다). 이 값은 grape 가 스스로
+  # 계산하는 것과 같아야 한다 — lemonboardHtmlPrefix() 가 getPodoEnv() 로 같은 규칙을 쓴다.
+  #
+  # lemonboardApi 가 qa·dev 에서 stage 를 가리키는 것은 오타가 아니다. 레몬보드 자체가
+  # prod·stage 두 벌뿐이고 podo 의 dev·stage·qa 세 환경이 모두 stage 레몬보드에 붙는다.
+  # grape 도 같은 가정 위에 있다 — new Lemonboard(getPodoEnv() == "prod") 이므로
+  # 비프로덕션은 전부 stage 레몬보드로 간다. 그래서 룸은 한 레몬보드에 세 벌 생기고,
+  # 서로를 가르는 것은 룸 이름이 아니라 contentUrl 의 -{env} prefix 다.
   environments:
+    dev:
+      lemonboardApi: https://stage-lemonboard-api.re-speak.com
+      grapeSyncApi: https://dev-grape.re-speak.com/api/curriculum/sync.php
+      gcsBucket: podo-assets
+      gcsPrefix: lemonboard-html-dev
+      publicBaseUrl: https://storage.googleapis.com/podo-assets/
+    qa:
+      lemonboardApi: https://stage-lemonboard-api.re-speak.com
+      grapeSyncApi: https://qa-grape.re-speak.com/api/curriculum/sync.php
+      gcsBucket: podo-assets
+      gcsPrefix: lemonboard-html-qa
+      publicBaseUrl: https://storage.googleapis.com/podo-assets/
     stage:
       lemonboardApi: https://stage-lemonboard-api.re-speak.com
       grapeSyncApi: https://stage-grape.re-speak.com/api/curriculum/sync.php
