@@ -3,10 +3,11 @@
 This repo deploys. A merge to `main` changes what a learner sees in a live class,
 so the bar is closer to `podo-database-schema` than to a docs repo.
 
-## The branch is the environment
+## The branch is the release boundary
 
 Every change ships through the same four steps. There is no other path — the two
-merges *are* the two deploys.
+merges *are* the two deploys. Four environments, two branches: `stage` fills the
+three non-production ones in one build, `main` is prod.
 
 ```sh
 # 1. branch off stage, PR into stage
@@ -14,15 +15,21 @@ git fetch origin && git switch -c feat/my-lesson origin/stage
 python3 tools/validate.py --contract --env stage
 git push -u origin feat/my-lesson && gh pr create --base stage
 
-# 2. merge → podo-curriculum-deploy-stage applies to stage, automatically
+# 2. merge → podo-curriculum-deploy-stage applies to stage, qa, dev — automatically
 # 3. gh pr create --base main --head stage        ← the release PR
 # 4. merge → podo-curriculum-deploy-prod applies to prod, automatically
 ```
 
 - **Work branches off `origin/stage`, and the PR's base is `stage`.** Merging to
-  `stage` deploys to stage, automatically — there is no button.
-- **Stop at stage and look.** Step 2 is the only environment where a mistake is
-  cheap; don't open the release PR until stage is verified.
+  `stage` deploys to stage, qa and dev, automatically — there is no button.
+- **Stop before the release PR and look.** Step 2 covers the only environments
+  where a mistake is cheap; don't open the release PR until you have verified in one.
+- **Verify in qa or dev, not stage, when it has to survive the night.** stage is a
+  prod clone that is overwritten from prod every morning, which resets
+  `CLASS_LEMONBOARD_KEY` to prod's room ids. qa and dev keep their own data.
+- **There is no qa or dev lemonboard.** All three non-production environments share
+  the stage one (`getPodoEnv() != "prod"`), so their rooms sit side by side under
+  identical names. What separates their content is the `-{env}` prefix in `contentUrl`.
 - **`main` is prod.** The `stage → main` PR is the release; merging it changes what a
   learner in a live class sees, immediately. Review that PR as a deploy approval,
   because that is what it is.
