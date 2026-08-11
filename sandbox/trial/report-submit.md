@@ -139,6 +139,8 @@ HTML 덱  ──postMessage──▶  보드(lemonboard)  ──postMessage─�
 ## 저장 버튼이 뜨는 조건
 
 `.rep-send` 는 **teaching 모드에서만** 보인다(`pager.js` 의 `T` 버튼이
-`body.teaching` 을 토글한다). 앱이 role 을 주입하지 않으므로 **학습자도 `T` 를
-누르면 이 블록이 보인다.** 저장이 튜터의 일이라는 것은 화면이 아니라 **서버의
-권한 검증으로 보장해야 한다.**
+`body.teaching` 을 토글한다). podo-web 이 학생 화면을 명시하면 lemonboard 가
+`PODO_LESSON_CONTEXT.viewerRole = "student"` 를 주입하고, `pager.js` 는 그 화면에서만
+`T` 버튼을 제거한다. role 이 없는 직접 열기·내부 공유 화면은 검수를 위해 버튼을
+그대로 둔다. 화면에서 감추는 것은 편의일 뿐이고, 저장 권한은 계속 **서버의 권한
+검증으로 보장해야 한다.**
