@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <meta name="podo:lesson-id" content="pipeline-check">
+  <meta name="podo:level" content="테스트">
+  <meta name="podo:content-version" content="2026-08-11">
+  <title>デプロイ確認 — PODO 韓国語</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.3.0/css/lesson-card.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.3.0/css/trial.css">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+  <div class="phone">
+
+    <!-- ============ COVER ============ -->
+    <div class="brand-page" data-page-id="cover">
+      <span class="podo-badge"><span class="logo">PODO</span><span class="tag">デプロイ確認</span></span>
+      <h1 class="brand-title">배포 점검</h1>
+    </div>
+
+    <!-- selection · 두 화면이 같은 선택을 보는지 확인하는 자리다. 고르는 내용 자체에는
+         의미가 없고, 이 페이지가 있는 이유는 data-sync 계약이 배포된 덱에서도
+         살아 있는지를 실제 클릭으로 볼 수 있어야 하기 때문이다. -->
+    <div class="section" data-page-id="sync-selection">
+      <h2 class="section-title">선택 동기화 <span class="title-ja">(選択の同期)</span></h2>
+      <p class="section-subtitle"><span class="ko">아무거나 하나 눌러 보세요. 상대 화면에도 같은 것이 눌려야 해요.</span><span class="ja">どれか1つ押してください。相手の画面でも同じものが選ばれるはずです。</span></p>
+      <div class="opt-list" data-group="check" data-pick="single" data-sync-id="check-pick" data-sync-kind="selection" data-sync-state="on">
+        <button class="opt-row" data-val="a" data-sync-option="a"><span class="opt-body"><span class="opt-main">A</span><span class="opt-sub">가</span></span></button>
+        <button class="opt-row" data-val="b" data-sync-option="b"><span class="opt-body"><span class="opt-main">B</span><span class="opt-sub">나</span></span></button>
+        <button class="opt-row" data-val="c" data-sync-option="c"><span class="opt-body"><span class="opt-main">C</span><span class="opt-sub">다</span></span></button>
+      </div>
+    </div>
+
+    <!-- value · 타이핑이 건너가는지 본다. 컨트롤은 마크업에 그대로 써 둔다 — 로드 때
+         <span> 을 <input> 으로 바꾸는 방식은 검증기가 정적 파싱이라 계약에서 조용히 빠진다. -->
+    <div class="section" data-page-id="sync-value">
+      <h2 class="section-title">입력 동기화 <span class="title-ja">(入力の同期)</span></h2>
+      <p class="section-subtitle"><span class="ko">아무 글자나 적어 보세요. 상대 화면에도 같이 적혀야 해요.</span><span class="ja">何か書いてみてください。相手の画面にも同じように書かれるはずです。</span></p>
+      <!-- 입력칸은 문장 안에 놓는다 — .slot-input 은 그 자리에 맞춰진 인라인 칸이라
+           단독으로 띄우면 시스템 어디에도 없는 모양이 된다. -->
+      <div class="dialogue">
+        <div class="turn me"><div class="bubble me intro"><span class="translation">確認：<input class="slot-input" data-sync-id="check-typed" placeholder="아무 글자" aria-label="확인용 입력" autocomplete="off"></span></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ACTIVITIES · 공통 배선(선택·입력을 보드에 물린다). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.3.0/js/activities.js"></script>
+
+  <!-- PAGER · 한 장씩 넘기기 + 스크러버. 마크업은 덱이 들고 스크립트는 공유한다 —
+       스크립트가 .phone 과 이 nav 를 둘 다 찾지 못하면 조용히 아무것도 안 한다.
+       자리는 .phone 바깥이다. 안에 넣으면 페이저 자신이 페이지 한 장으로 세어진다. -->
+  <nav class="pager" data-sync-id="deck-page" data-sync-kind="page">
+    <input class="pg-scrub" type="range" min="0" max="0" step="1" value="0" aria-label="페이지 이동">
+    <button class="pg-btn pg-prev" type="button" aria-label="이전 페이지">←</button>
+    <div class="pg-mid">
+      <span class="pg-label"><b class="pg-act">—</b><span class="pg-n">—</span></span>
+    </div>
+    <button class="pg-btn pg-teach" type="button" aria-label="티칭 모드">T</button>
+    <button class="pg-btn pg-next" type="button" aria-label="다음 페이지">→</button>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.3.0/js/pager.js"></script>
+
+</body>
+</html>

@@ -13,10 +13,10 @@ courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html
 
 ## Current status
 
-**Both environments deploy from this repo.** Merging to `stage` applies to stage;
-merging `stage → main` applies to prod. Neither has a button — see
-[How a change reaches a learner](#how-a-change-reaches-a-learner). The grape sync
-endpoint the whole thing rests on is specified in
+**All four environments deploy from this repo.** Merging to `stage` applies to
+stage, qa and dev; merging `stage → main` applies to prod. Neither has a button —
+see [How a change reaches a learner](#how-a-change-reaches-a-learner). The grape
+sync endpoint the whole thing rests on is specified in
 [`docs/sync-contract.md`](docs/sync-contract.md).
 
 ## Layout
@@ -188,8 +188,14 @@ and is not checked. `taiken-trial` is on that path deliberately.
 CI/CD is Cloud Build, not GitHub Actions. Triggers live in
 `podo-infra/gcp/global/cloudbuild`; the build files are in `.cloudbuild/`.
 
-**The environment is the branch.** `stage` is where work lands; `main` is what the
-learner sees.
+**The branch is the release boundary, not the environment.** There are four
+environments and two branches: `stage` fills the three non-production ones
+(`stage`, `qa`, `dev`) in one build; `main` is what the learner sees.
+
+A branch per environment would turn the merges *between* those branches into a
+second release procedure, and from then on someone has to keep track of which
+environment is looking at what. One branch feeding all three keeps them identical
+by construction.
 
 ### The four steps
 
@@ -200,7 +206,7 @@ python3 tools/validate.py --contract --env stage    # what CI is about to run
 git push -u origin feat/my-lesson
 gh pr create --base stage                           # ← base is stage
 
-# 2. merge it → podo-curriculum-deploy-stage applies to stage, automatically
+# 2. merge it → podo-curriculum-deploy-stage applies to stage, qa and dev, automatically
 # 3. open the release PR
 gh pr create --base main --head stage
 # 4. merge it → podo-curriculum-deploy-prod applies to prod, automatically
@@ -209,9 +215,15 @@ gh pr create --base main --head stage
 What each step actually runs:
 
 1. **PR into `stage` → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `stage` or `main`, and labels the plan with the env that merging it would deploy to.
-2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to stage, automatically.** Verify there before going on; stage is the only place a mistake is cheap.
+2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to `stage`, then `qa`, then `dev`, automatically.** One build, three applies, in that order; a failure stops the run where it happened rather than half-filling the rest. Verify before going on — these are the only environments where a mistake is cheap.
 3. **PR `stage → main`.** That PR *is* the release: its diff is the release note and its review is the gate. Review it as a deploy approval, because that is what it is.
 4. **Merge it → `podo-curriculum-deploy-prod` applies to prod, automatically** — a learner in a live class sees the change immediately.
+
+Two things differ between the three non-production environments and are worth
+knowing before you verify in one of them:
+
+- **Only stage is a prod clone, and it is overwritten from prod every morning.** That wipes `CLASS_LEMONBOARD_KEY` back to prod's room ids, so stage rooms end up pointing at prod's GCS objects until the next apply that re-creates them. `qa` and `dev` carry their own data and don't have this problem — prefer them for anything you need to still be true tomorrow.
+- **All three share one lemonboard.** There is no qa or dev lemonboard; `getPodoEnv() != "prod"` sends every non-production grape to the stage one. So the three environments' rooms live side by side under identical names, and what keeps their content apart is the `-{env}` prefix in `contentUrl`, nothing else.
 
 Steps 2 and 4 have no button someone has to remember to press, because a deploy
 like that eventually goes unpressed and then the branch and the learner disagree.
@@ -225,8 +237,12 @@ manual trigger, which takes any branch × any env:
 
 ```sh
 gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
-  --branch=<branch> --substitutions=_DEPLOY_ENV=<stage|prod>
+  --branch=<branch> --substitutions=_DEPLOY_ENV=<dev|qa|stage|prod>
 ```
+
+`_DEPLOY_ENV` also takes a comma-separated list (`stage,qa,dev`) — that is exactly
+what the `stage` push trigger passes. A `prod` anywhere in the list still has to
+pass the "is an ancestor of `main`" check; a list is not a way around the gate.
 
 That path is why `prod` still refuses any commit that is not an ancestor of `main`.
 On the push trigger the check is trivially true; on the manual one it is the same

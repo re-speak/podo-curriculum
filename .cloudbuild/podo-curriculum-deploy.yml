@@ -1,10 +1,19 @@
 # 커리큘럼 배포 빌드 (환경 = 브랜치)
 #
-#   stage 브랜치 push → podo-curriculum-deploy-stage (_DEPLOY_ENV=stage)
+#   stage 브랜치 push → podo-curriculum-deploy-stage (_DEPLOY_ENV=stage,qa,dev)
 #   main  브랜치 push → podo-curriculum-deploy-prod  (_DEPLOY_ENV=prod)
 #
 # 두 트리거가 이 파일 하나를 공유한다. GitHub Actions 의 deploy-stage.yml / deploy-prod.yml 을
 # 합친 것이고, grape·podo-backend 와 같은 규약이다 — 환경 분기는 case 가드가 한다.
+#
+# _DEPLOY_ENV 는 콤마로 여러 환경을 받는다. 비프로덕션이 셋(stage·qa·dev)인데 브랜치는
+# stage 하나뿐이라, 브랜치를 늘리는 대신 한 브랜치가 세 환경을 채우게 했다. 환경마다
+# 브랜치를 두면 그 브랜치들 사이의 머지가 또 하나의 릴리스 절차가 되고, 그때부터
+# "어느 환경이 무엇을 보고 있는가"를 사람이 추적해야 한다.
+#
+# 순서는 stage → qa → dev 이고 한 환경이 실패하면 거기서 멈춘다. 뒤 환경을 계속 밀어
+# 실패를 반쯤 가린 초록 빌드를 만드는 것보다, 어디서 멈췄는지가 로그에 남는 편이 낫다.
+# apply 는 자연키 upsert + GCS 덮어쓰기라 재실행이 안전하므로 재시도 비용도 낮다.
 #
 # 둘 다 자동인 이유: 사람이 기억해서 눌러야 하는 배포는 반드시 언젠가 안 눌린다. 그러면
 # 브랜치가 가리키는 것과 학습자가 보는 것이 어긋나고, 그걸 알려 줄 신호가 없다. 머지가 곧
@@ -17,7 +26,7 @@
 #
 # 임의 브랜치 × 임의 환경의 수동 재배포(롤백·핫픽스 확인)는 podo-curriculum-deploy 가 남아 있다:
 #   gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
-#     --branch=<브랜치> --substitutions=_DEPLOY_ENV=<stage|prod>
+#     --branch=<브랜치> --substitutions=_DEPLOY_ENV=<dev|qa|stage|prod[,...]>
 timeout: 1800s
 
 options:
@@ -43,10 +52,16 @@ steps:
     args:
       - -ceu
       - |
-        case "$_DEPLOY_ENV" in
-          stage|prod) ;;
-          *) echo "_DEPLOY_ENV 는 stage|prod 만 허용한다 (받은 값: $_DEPLOY_ENV)"; exit 1 ;;
-        esac
+        # 콤마를 공백으로 바꿔 목록으로 다룬다. 값 하나짜리도 원소 하나인 목록이라 분기가 없다.
+        TARGETS="$$(echo "$_DEPLOY_ENV" | tr ',' ' ')"
+        [ -n "$${TARGETS// /}" ] || { echo "_DEPLOY_ENV 가 비어 있다"; exit 1; }
+
+        for env in $$TARGETS; do
+          case "$$env" in
+            dev|qa|stage|prod) ;;
+            *) echo "_DEPLOY_ENV 는 dev|qa|stage|prod 만 허용한다 (받은 값: $$env)"; exit 1 ;;
+          esac
+        done
 
         # prod 는 main 에 올라간 것만 나간다. 커리큘럼은 나쁜 덱이 수업 중인 학습자에게 그대로
         # 보이고, 그걸 잡아줄 lint 가 없다 — 리뷰가 유일한 게이트라서 우회를 막는다.
@@ -54,13 +69,18 @@ steps:
         # main push 트리거에서는 이 검사가 늘 통과한다(자기 자신이 main 이니까). 남겨 두는 건
         # 수동 트리거 때문이다 — podo-curriculum-deploy 는 --branch 를 자유롭게 받으므로,
         # 리뷰를 거치지 않은 브랜치를 prod 로 미는 경로가 그쪽에는 여전히 열려 있다.
-        if [ "$_DEPLOY_ENV" = "prod" ]; then
-          git fetch origin main --depth=200 --quiet
-          if ! git merge-base --is-ancestor "$COMMIT_SHA" origin/main; then
-            echo "$COMMIT_SHA 는 main 의 조상이 아니다 — prod 는 리뷰된 것만 배포한다"
-            exit 1
-          fi
-        fi
+        #
+        # 목록 어딘가에 prod 가 섞여 있어도 같은 검사를 받는다 — "stage,prod" 로 부르면
+        # 가드를 건너뛸 수 있게 두면 가드가 아니다.
+        case " $$TARGETS " in
+          *" prod "*)
+            git fetch origin main --depth=200 --quiet
+            if ! git merge-base --is-ancestor "$COMMIT_SHA" origin/main; then
+              echo "$COMMIT_SHA 는 main 의 조상이 아니다 — prod 는 리뷰된 것만 배포한다"
+              exit 1
+            fi
+            ;;
+        esac
 
   - id: apply
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
@@ -73,8 +93,13 @@ steps:
         # 빌드 컨테이너는 일회용이라 venv 를 만들 이유가 없으므로 그 보호를 끈다.
         pip install --break-system-packages --quiet -r tools/requirements.txt
 
-        # 환경에 맞는 검증기 키를 고른다.
-        if [ "$_DEPLOY_ENV" = "prod" ]; then
+        for DEPLOY_ENV in $$(echo "$_DEPLOY_ENV" | tr ',' ' '); do
+        echo "══════════ $$DEPLOY_ENV ══════════"
+
+        # 환경에 맞는 검증기 키를 고른다. 비프로덕션 셋(stage·qa·dev)은 모두 stage
+        # 레몬보드에 붙으므로 검증기도 stage 것 하나를 공유한다 — 애초에 prod 말고는
+        # 레몬보드가 stage 한 벌뿐이다.
+        if [ "$$DEPLOY_ENV" = "prod" ]; then
           export PODO_LEMONBOARD_API_KEY="$$LB_KEY_PROD"
         else
           export PODO_LEMONBOARD_API_KEY="$$LB_KEY_STAGE"
@@ -83,20 +108,21 @@ steps:
         # 키가 없으면 --contract 를 빼고 돈다. validate.py 는 키 없는 --contract 를 거부하는데,
         # 그건 인증 거절이 통과로 읽히지 않게 하려는 것이다.
         if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
-          python3 tools/validate.py --contract --env "$_DEPLOY_ENV"
+          python3 tools/validate.py --contract --env "$$DEPLOY_ENV"
         else
           echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다"
-          python3 tools/validate.py --env "$_DEPLOY_ENV"
+          python3 tools/validate.py --env "$$DEPLOY_ENV"
         fi
 
-        echo "── plan ($_DEPLOY_ENV) ──"
-        python3 tools/plan.py --env "$_DEPLOY_ENV"
+        echo "── plan ($$DEPLOY_ENV) ──"
+        python3 tools/plan.py --env "$$DEPLOY_ENV"
 
         # 인증은 Google OIDC ID 토큰이다. 저장하고 회전시킬 자격증명이 없다 — 메타데이터
         # 서버에서 이 빌드 SA 의 토큰을 그때그때 받아 붙이고, grape 가 구글 공개키로 서명을
         # 검증한다(수명 1시간). audience 는 호출할 바로 그 URL 이어야 한다 — 다른 서비스용으로
         # 발급된 토큰의 재사용을 막는 장치라, curriculum.yaml 의 grapeSyncApi 와 정확히 같아야 한다.
-        SYNC_URL="$$(python3 - "$_DEPLOY_ENV" <<'PY'
+        # 환경마다 URL 이 다르므로 토큰도 환경마다 새로 받는다.
+        SYNC_URL="$$(python3 - "$$DEPLOY_ENV" <<'PY'
         import sys, yaml
         env = sys.argv[1]
         print(yaml.safe_load(open('curriculum.yaml'))['spec']['environments'][env]['grapeSyncApi'])
@@ -114,4 +140,6 @@ steps:
           # 배포 파이프라인의 초록은 "main 이 실제로 반영됐다"는 뜻이어야 한다.
           exit 1
         fi
-        python3 tools/apply.py --env "$_DEPLOY_ENV"
+        python3 tools/apply.py --env "$$DEPLOY_ENV"
+
+        done
