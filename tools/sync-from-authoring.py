@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Mirror `beginner-curriculum/korean` into this repo.
+Mirror `podo-curriculum-public` into this repo.
 
-That tree is the upstream for `shared/`, `sandbox/` and `references/`. It is a
-different shape from this one — every deck reaches a single sibling `runtime/`,
+That repository is the upstream for `shared/`, `sandbox/` and `references/`. It
+is a different shape from this one — every language reaches root `runtime/`,
 nothing is packaged — so a sync is a translation, not a copy:
 
   runtime/{css,js}                     -> shared/{css,js}          straight mirror
@@ -100,9 +100,11 @@ def repoint_runtime(root: pathlib.Path) -> int:
 
 
 def sync_runtime(src: pathlib.Path) -> None:
-    tree(src / "runtime" / "css", REPO / "shared" / "css")
-    tree(src / "runtime" / "js", REPO / "shared" / "js")
-    one(src / "ux-philosophy.md", REPO / "shared" / "ux-philosophy.md")
+    runtime = upstream.runtime_root(src)
+    site = upstream.site_root(src)
+    tree(runtime / "css", REPO / "shared" / "css")
+    tree(runtime / "js", REPO / "shared" / "js")
+    one(site / "ux-philosophy.md", REPO / "shared" / "ux-philosophy.md")
 
 
 def sync_sandbox(src: pathlib.Path) -> None:
@@ -119,7 +121,8 @@ def sync_sandbox(src: pathlib.Path) -> None:
         if (track / "sample-lesson.html").is_file():
             one(track / "sample-lesson.html", samples / f"{track.name}.html")
 
-    one(src / "viewer.html", REPO / "sandbox" / "viewers" / "viewer.html")
+    one(upstream.site_root(src) / "viewer.html",
+        REPO / "sandbox" / "viewers" / "viewer.html")
     # Upstream's site index. Its links address the upstream tracks/ layout, which
     # this repo splits three ways, so they do not resolve here — see sandbox/README.
     one(src / "index.html", REPO / "sandbox" / "viewers" / "deck-index.html")
