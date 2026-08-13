@@ -96,6 +96,8 @@ The consequence: **changing `classLevel`, `lessonTime`, or `countryCode` makes a
 course**, because it is one. The old rows stay; retire them with
 `enabled: false`. A directory slug is still permanent by convention — it is what
 a human uses to find the course — but it is no longer what the DB matches on.
+Moving a live course therefore takes two deploys: disable the old identity first,
+then change the identity and re-enable it.
 
 ## Working locally
 

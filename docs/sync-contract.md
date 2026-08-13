@@ -52,7 +52,7 @@ cost one course rather than the whole curriculum.
     "key": "kr/hangul-lv1",
     "curriculumType": "BASIC",
     "curriculumTypeKey": "PODO_KR_BASIC",
-    "countryCode": "JP",
+    "countryCode": "KR",
     "classLevel": "1",
     "lessonTime": 25,
     "useYn": "N",
@@ -113,6 +113,7 @@ becomes an orphan course nobody can reach or update.
 ## Behaviour it has to get right
 
 - **Upsert on the natural key, and treat a change to it as a different course.** Matching on `(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK, COUNTRY_CODE)` means editing `classLevel`, `lessonTime`, or `countryCode` in YAML does not rename the live course — it addresses a different one, and the old rows stay behind untouched. That is intended (a 15-minute Level 3 and a 25-minute Level 3 are different products; JP- and KR-market rows are also distinct), but it is the one edit that silently leaves an orphan, so it belongs in review.
+- **Identity changes need two deploys.** To move a live course to another `classLevel`, `lessonTime`, or `countryCode`, first deploy the old identity with `enabled: false`; only then change the identity and deploy again. A single edit cannot both retire the old natural key and create the new one.
 - **Rooms are created once.** `ensureLessonHtmlLemonboardRoom()` already returns early when the key is set. Content updates are a GCS overwrite; the room key must survive them.
 - **Contract validation stays a hard gate.** Same call, same fail-open on 5xx, same block on `severity: error`.
 - **Both slots or neither.** Reject a lesson whose `prestudy` key would end up empty — class creation duplicates `/rooms/null/` and fails downstream.
