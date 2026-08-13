@@ -2,7 +2,7 @@
 
 The one runtime file this repo owns rather than mirrors.
 
-Everything else under `shared/js` comes from `beginner-curriculum/korean/runtime`
+Everything else under `shared/js` comes from `podo-curriculum-public/runtime`
 untouched. `activities.js` cannot: upstream's version **creates** the input
 controls at load, promoting `<span class="slot">` and `<span class="answer-space">`
 shells into `<input>` / `<textarea>` and carrying `data-sync-id` across.

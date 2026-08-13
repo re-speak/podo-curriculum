@@ -29,7 +29,7 @@ rather than creating them. Everything else under `shared/js` is upstream's.
 deck retired upstream disappears here, which means it writes `lesson.yaml` too.
 Add a deck by adding a row to DECKS below.
 
-Run `sync-from-authoring.py` first; this reads the runtime from upstream directly,
+Run `sync-from-authoring.py` first; this reads the root runtime from upstream directly,
 but the two should agree.
 
     python3 tools/import-trial-decks.py [--upstream PATH]
@@ -251,11 +251,12 @@ def build_deck(target: pathlib.Path, page: str, scripts: list[str],
     (target / "index.html").write_text(page, encoding="utf-8")
 
     for sheet in ("lesson-card.css", "trial.css"):
-        shutil.copyfile(src / "runtime" / "css" / sheet, target / sheet)
+        shutil.copyfile(upstream.runtime_root(src) / "css" / sheet, target / sheet)
 
     for name in scripts:
         origin = ((REPO / "tools" / "deck-runtime" / "activities.js")
-                  if name == "activities.js" else (src / "runtime" / "js" / name))
+                  if name == "activities.js"
+                  else (upstream.runtime_root(src) / "js" / name))
         if not origin.is_file():
             raise ImportError_(f"script not found: {origin}")
         shutil.copyfile(origin, target / name)

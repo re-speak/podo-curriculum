@@ -8,7 +8,7 @@ Planning and source material. Never deployed, never packaged.
 | `curricula/` | derived pattern maps, clean text and page wireframes from the textbooks we studied — できる韓国語, 세종한국어, K-Village, TEMO |
 | `reports/` | screen captures of other services' learner reports — Mobbin, uphone — used to design the 체험 리포트 |
 
-Mirrored from `beginner-curriculum/korean/{tracks,references}`. That tree is the
+Mirrored from `podo-curriculum-public/korean/{tracks,references}`. That tree is the
 upstream; re-syncing replaces these directories wholesale, so edit them there.
 
 **The textbook scans themselves stay upstream.** 41 PDFs and the
