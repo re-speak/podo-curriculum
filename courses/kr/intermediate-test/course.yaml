@@ -15,6 +15,10 @@ spec:
   # 즉 KR + SMART_TALK 은 어느 화면에도 도달하지 못한다.
   curriculumType: BASIC
 
+  # 일본 거주 학습자의 한국어 탭은 COUNTRY_CODE=JP 인 행만 조회한다.
+  # 이 값을 생략하거나 KR 로 두면 배포는 성공해도 그 탭에는 코스가 나타나지 않는다.
+  countryCode: JP
+
   # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
   # 999.x 는 실제 상품 레벨이 아니라 테스트 대역이고, 같은 대역에서 taiken-trial 이
   # 999.100, hangul-trial-test 가 999.200, report-test 가 999.300,
