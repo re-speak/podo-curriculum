@@ -23,12 +23,16 @@
     },
     "spec": {
       "type": "object",
-      "required": ["curriculumType", "classLevel", "lessonTime", "enabled", "title"],
+      "required": ["curriculumType", "countryCode", "classLevel", "lessonTime", "enabled", "title"],
       "additionalProperties": false,
       "properties": {
         "curriculumType": {
           "enum": ["BASIC", "SMART_TALK", "TRIAL"],
           "description": "GT_CLASS_COURSE.CURRICULUM_TYPE. Also forms le_tutor_curriculum.curriculum_type as PODO_{LANG}_{value}."
+        },
+        "countryCode": {
+          "enum": ["KR", "JP"],
+          "description": "GT_CLASS_COURSE.COUNTRY_CODE. Part of the natural key; use JP for courses shown to Japan-market learners."
         },
         "classLevel": {
           "type": "string",

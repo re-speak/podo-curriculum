@@ -211,6 +211,7 @@ def main() -> int:
 
     for course in courses:
         print(f"\n{course.key}  ({course.lang_type} · {course.spec['curriculumType']} · "
+              f"{course.spec['countryCode']} · "
               f"level {course.spec['classLevel']} · {len(course.lessons)} lesson(s))")
         problems += check_enabled_is_earned(course)
 

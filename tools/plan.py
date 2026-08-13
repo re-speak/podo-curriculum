@@ -35,7 +35,7 @@ def plan(env: str) -> list[dict]:
             "target": "course",
             "key": course.key,
             "detail": (f"COVER row · {course.lang_type} · {course.spec['curriculumType']} · "
-                       f"level {course.spec['classLevel']} · USE_YN="
+                       f"{course.spec['countryCode']} · level {course.spec['classLevel']} · USE_YN="
                        f"{'Y' if course.spec.get('enabled') else 'N'}"),
         })
 

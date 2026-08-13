@@ -12,6 +12,7 @@ metadata:
 
 spec:
   curriculumType: TRIAL
+  countryCode: KR
   # 자연키의 일부다. 같은 (KR, TRIAL, 25) 안에서 taiken-trial 이 999.100,
   # hangul-trial-test 가 999.200, report-test 가 999.300 이라 999.400 을 쓴다.
   # 999.x 는 실제 상품 레벨이 아니라 테스트 대역이고, qa·dev 에도 이 대역은 비어 있다.

@@ -82,7 +82,7 @@ change reads as a diff a content person can review, instead of as a blob of HTML
 grape resolves a row by its **natural key**:
 
 ```
-(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK)
+(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK, COUNTRY_CODE)
 ```
 
 Verified unique across 3,514 prod rows (SMART_TALK excluded — it has 18 duplicate
@@ -92,10 +92,12 @@ So nothing here has to remember what the last apply created. There is no lock
 file and no write-back step — which is what used to turn a failed apply into a
 duplicate course on the next run.
 
-The consequence: **changing `classLevel` or `lessonTime` makes a different
+The consequence: **changing `classLevel`, `lessonTime`, or `countryCode` makes a different
 course**, because it is one. The old rows stay; retire them with
 `enabled: false`. A directory slug is still permanent by convention — it is what
 a human uses to find the course — but it is no longer what the DB matches on.
+Moving a live course therefore takes two deploys: disable the old identity first,
+then change the identity and re-enable it.
 
 ## Working locally
 

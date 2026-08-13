@@ -3,7 +3,8 @@
 Push the repo's desired state at grape, one course per request.
 
 Nothing is remembered between runs. grape resolves each row by its natural key
-(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK),
+(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK,
+COUNTRY_CODE),
 so this tool never has to carry ids forward — which means no lock file, and no
 write-back step whose failure turns the next run into a duplicate course.
 
@@ -48,7 +49,8 @@ def build_manifest(curriculum: dict, course: model.Course) -> tuple[dict, dict]:
     """The desired state of one course, plus the zips that go with it.
 
     No ids ride along. grape resolves a row by its natural key
-    (CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK),
+    (CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK,
+    COUNTRY_CODE),
     so nothing here has to remember what the last apply created — and there is no
     lock file to write back, which is what used to turn a failed apply into a
     duplicate course on the next run.
@@ -91,6 +93,7 @@ def build_manifest(curriculum: dict, course: model.Course) -> tuple[dict, dict]:
             "key": course.key,
             "curriculumType": course.spec["curriculumType"],
             "curriculumTypeKey": course.curriculum_type_key,
+            "countryCode": course.spec["countryCode"],
             "classLevel": course.spec["classLevel"],
             "lessonTime": course.spec["lessonTime"],
             "useYn": "Y" if course.spec.get("enabled") else "N",
