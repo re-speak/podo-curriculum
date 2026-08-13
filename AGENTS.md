@@ -182,9 +182,9 @@ the controls written straight into the HTML.
 
 ## Things that will bite you
 
-- **`classLevel` / `lessonTime` are identity.** grape matches a row by
-  `(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK)`.
-  Change either and you get a *different* course — the old rows stay. That is intended;
+- **`classLevel` / `lessonTime` / `countryCode` are identity.** grape matches a row by
+  `(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK, COUNTRY_CODE)`.
+  Change any of them and you get a *different* course — the old rows stay. That is intended;
   a 15-minute Level 3 and a 25-minute Level 3 are different products. Retire with `enabled: false`.
 - **There is no state lock.** Identity lives in the DB's natural key, so nothing is written back to git.
 - **Both deck slots are mandatory.** A lesson with only 수업용 fails class creation at `/rooms/null/duplicate`.

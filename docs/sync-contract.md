@@ -52,6 +52,7 @@ cost one course rather than the whole curriculum.
     "key": "kr/hangul-lv1",
     "curriculumType": "BASIC",
     "curriculumTypeKey": "PODO_KR_BASIC",
+    "countryCode": "JP",
     "classLevel": "1",
     "lessonTime": 25,
     "useYn": "N",
@@ -75,7 +76,7 @@ cost one course rather than the whole curriculum.
 ```
 
 **No row ids are sent.** grape finds the row by its natural key
-`(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK)`
+`(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK, COUNTRY_CODE)`
 — which is what makes the endpoint an upsert without either side remembering
 anything between runs. There is no state lock; see the README.
 
@@ -111,7 +112,7 @@ becomes an orphan course nobody can reach or update.
 
 ## Behaviour it has to get right
 
-- **Upsert on the natural key, and treat a change to it as a different course.** Matching on `(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK)` means editing `classLevel` or `lessonTime` in YAML does not rename the live course — it addresses a different one, and the old rows stay behind untouched. That is intended (a 15-minute Level 3 and a 25-minute Level 3 are different products), but it is the one edit that silently leaves an orphan, so it belongs in review.
+- **Upsert on the natural key, and treat a change to it as a different course.** Matching on `(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK, COUNTRY_CODE)` means editing `classLevel`, `lessonTime`, or `countryCode` in YAML does not rename the live course — it addresses a different one, and the old rows stay behind untouched. That is intended (a 15-minute Level 3 and a 25-minute Level 3 are different products; JP- and KR-market rows are also distinct), but it is the one edit that silently leaves an orphan, so it belongs in review.
 - **Rooms are created once.** `ensureLessonHtmlLemonboardRoom()` already returns early when the key is set. Content updates are a GCS overwrite; the room key must survive them.
 - **Contract validation stays a hard gate.** Same call, same fail-open on 5xx, same block on `severity: error`.
 - **Both slots or neither.** Reject a lesson whose `prestudy` key would end up empty — class creation duplicates `/rooms/null/` and fails downstream.
