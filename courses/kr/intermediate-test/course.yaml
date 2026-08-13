@@ -1,0 +1,44 @@
+apiVersion: podo.curriculum/v1
+kind: Course
+metadata:
+  # hangul-trial-test 의 03-trial-first-meeting(중급 체험 덱)을 그대로 복사해 세운
+  # 한 과짜리 중급 점검용 코스다. 덱은 손대지 않았다 — 바뀐 것은 이 코스를 감싸는
+  # 자연키뿐이다.
+  slug: intermediate-test
+
+spec:
+  # BASIC 과 자연키가 겹치지 않게 SMART_TALK 로 둔다. 이 값은
+  # le_tutor_curriculum.curriculum_type 도 함께 정한다 — PODO_KR_SMART_TALK 가 된다.
+  curriculumType: SMART_TALK
+
+  # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
+  # 999.x 는 실제 상품 레벨이 아니라 테스트 대역이고, 같은 대역에서 taiken-trial 이
+  # 999.100, hangul-trial-test 가 999.200, report-test 가 999.300,
+  # pipeline-check 가 999.400 을 쓰고 있어 999.500 을 쓴다.
+  classLevel: "999.500"
+
+  # 살아 있는 SMART_TALK 코스가 EN·JP 통틀어 전부 15 분이라 거기에 맞춘다.
+  # 원본 체험 덱은 25 분짜리였다 — 덱 내용은 그대로이고 자연키만 SMART_TALK 규약을 따른다.
+  lessonTime: 15
+
+  enabled: true
+
+  # SMART_TALK 에서 DIFFICULTY 는 숙련도가 아니라 스마트톡의 갈래를 가리킨다 —
+  # 실제로 쓰이는 값은 ROLE_PLAYING(상황극) · ARTIFICIAL_TUTOR/REAL_TUTOR(주제 프리토킹) ·
+  # EXAM(OPIc) 넷뿐이고, BEGINNER 같은 숙련도 어휘는 BASIC 에서만 쓴다.
+  # 이 덱은 처음 만난 사이의 장면을 따라가는 상황극이라 ROLE_PLAYING 이다.
+  # 자연키에는 들어가지 않으므로 나중에 바꿔도 같은 코스로 남는다.
+  difficulty: ROLE_PLAYING
+
+  title:
+    ko: 중급 테스트
+    en: Intermediate test
+    ja: 中級テスト
+
+  description:
+    ko: 중급 점검용 한 과. 처음 만난 사이의 인사와 되묻기를 다룬다. hangul-trial-test 의 중급 체험 덱을 옮겨 온 것이다.
+    ja: 中級確認用の1課。初対面のあいさつと聞き返しを扱います。hangul-trial-test の中級体験デッキを移したものです。
+
+  tutorGroups:
+    allowRandom: []
+    assignedOnly: []
