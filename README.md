@@ -115,8 +115,9 @@ python3 tools/import-trial-decks.py            # …then rebuild the trial cours
 python3 tools/import-report-deck.py            # promote the sandbox report deck
 ```
 
-The two sync tools find the authoring tree next door; pass `--upstream PATH` or
-set `$PODO_AUTHORING_ROOT` if yours sits somewhere else. Run them in that order —
+The two sync tools find the authoring repository next door; pass its root (or its
+`korean/` directory) with `--upstream PATH`, or set `$PODO_AUTHORING_ROOT` if it
+sits somewhere else. Run them in that order —
 the second reads the runtime the first mirrored. Neither is called by CI.
 
 `import-report-deck.py` reads no authoring tree — its source is this repo's own
@@ -256,9 +257,9 @@ created once and survives them. That is what makes a re-deploy safe.
 
 ## Where the content comes from
 
-`beginner-curriculum/korean` is the authoring tree and the upstream for
-`shared/`, `sandbox/` and `references/`. It shares one `runtime/` across every
-deck; this repo needs each deck self-contained, because grape flattens the
+`podo-curriculum-public` is the authoring repository and the upstream for
+`shared/`, `sandbox/` and `references/`. Its root `runtime/` is shared by the
+language folders; this repo needs each deck self-contained, because grape flattens the
 uploaded zip into a single GCS prefix. So a sync is not a copy:
 
 | upstream | here | what changes |
