@@ -32,8 +32,8 @@
    ```
 
    세 장이 다 나오기 전이라면 나온 것만 넣습니다 — 나머지는 계속 ✓ 로 남습니다.
-4. 덱을 다시 패키징합니다 —
-   `python3 interactive/build_lemonboard.py trial/reports/trial-1-report.html --out trial/lemonboard-build/trial-1-report`
+4. 아이콘을 넣은 덱을 `podo-curriculum` 으로 다시 sync 합니다. 패키징은 거기서
+   배포 과정의 일부로 일어납니다 — 이 레포에서 zip 을 만들 일은 없습니다.
 
 ---
 
