@@ -53,15 +53,15 @@
       </div>
     </div>
 
-    <div class="brand-page divider" data-page-id="needs-intro">
-      <img class="brand-mascot" src="../assets/podo-character.png" alt="">
-      <h2 class="brand-title">니즈 파악<span class="ja">ニーズ把握</span></h2>
+    <div class="brand-page bleed" data-page-id="needs-intro">
+      <h2 class="brand-title">ニーズ把握</h2>
       <p class="brand-sub">あなたのことを教えてください。答えに合わせて、最後のプランが変わります。</p>
+      <img class="brand-art" src="../assets/podo-character-ask.png" alt="">
     </div>
 
-    <div class="section" data-page-id="needs-why">
-      <h2 class="section-title">학습 동기 <span class="title-ja">(学ぶきっかけ)</span></h2>
-      <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？いくつ選んでも大丈夫です。</span></p>
+    <div class="section needs-jp" data-page-id="needs-why">
+      <h2 class="section-title">学ぶきっかけ <span class="title-ja">(학습동기)</span></h2>
+      <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？<br>いくつ選んでも大丈夫です。</span></p>
       <div class="opt-list" data-group="why" data-pick="multi" data-sync-id="needs-why" data-sync-kind="selection" data-sync-state="on">
         <button class="opt-row" data-val="kpop" data-sync-option="kpop"><img class="r-ico" src="../assets/reasons/kpop.png" alt=""><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
         <button class="opt-row" data-val="travel" data-sync-option="travel"><img class="r-ico" src="../assets/reasons/travel.png" alt=""><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
@@ -73,86 +73,49 @@
       </div>
     </div>
 
-    <div class="section" id="p-goal" data-page-id="needs-goal">
-      <h2 class="section-title">목표 <span class="title-ja">(ゴール)</span></h2>
-      <p class="section-subtitle"><span class="ko">한국어로 뭘 할 수 있게 되고 싶어요? 하나만 골라 주세요.</span><span class="ja">韓国語で何ができるようになりたいですか？1つだけ選んでください。</span></p>
+    <div class="section needs-jp" id="p-goal" data-page-id="needs-goal">
+      <h2 class="section-title">ゴール <span class="title-ja">(목표)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국어로 뭘 할 수 있게 되고 싶어요? 하나만 골라 주세요.</span><span class="ja">韓国語で何ができるようになりたいですか？<br>1つだけ選んでください。</span></p>
       <!-- ================================================================
-           목표 = 앞 장에서 고른 이유별 사다리
-           고르는 건 거리다. 같은 "여행" 이라도 주문만 하면 되는 사람과 현지에서
-           수다 떨고 싶은 사람은 가는 거리가 다르고, 목표가 정하는 건 주제가
-           아니라 그 거리다 — 그래서 카드 하나가 도착 레벨 하나고, 그 안에서
-           "그 레벨이 나한테 뭔데?" 를 이유별 한 줄로 답한다.
-           선택지를 이유×거리로 늘어놓으면 열여덟 줄이 된다. 고를 것은 넷인데
-           읽을 것이 열여덟이면, 고르는 데 드는 힘이 전부 읽는 데 쓰인다.
-           고르지 않은 이유의 줄은 감춘다(.hide) — 카드(=선택지)는 그대로라
-           보드가 원격 선택을 합성 클릭할 때 옵션이 없어서 놓치는 일은 없다.
+           목표 = 거리
+           고르는 건 주제가 아니라 거리다. 같은 "여행" 이라도 주문만 하면 되는
+           사람과 현지에서 수다 떨고 싶은 사람은 가는 거리가 다르다 — 그래서
+           카드 하나가 도착 레벨 하나다.
+           카드는 도착 레벨만 말한다. 예전에는 그 안에서 "그 레벨이 나한테
+           뭔데?" 를 앞 장의 이유별로 한 줄씩 폈는데, 고를 것은 넷인데 읽을
+           것이 열여덟이 되어 고르는 힘이 전부 읽는 데 들어갔다. 이유는 여전히
+           계획을 정한다 — 리포트의 추천 코스가 그것을 쓴다.
            ================================================================ -->
       <div class="goal-list" data-group="goal" data-pick="single" data-sync-id="needs-goal" data-sync-kind="selection" data-sync-state="on">
 
         <button class="glc" data-val="t3" data-sync-option="t3">
           <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="glc-n">短い文で、伝えられる<small>짧은 문장으로 전하기</small></span></span>
-          <span class="glc-l">
-            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>好きな曲のサビが、聞き取れる</b><em>좋아하는 노래 후렴이 들리기</em></span>
-            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>カフェ・お店で注文できる</b><em>카페·가게에서 주문하기</em></span>
-            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>かんたんなメッセージが送れる</b><em>간단한 메시지 보내기</em></span>
-            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>同僚と、あいさつを交わせる</b><em>동료와 인사 주고받기</em></span>
-            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 1級レベルに届く</b><em>TOPIK 1급 수준 가기</em></span>
-            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>自分のことを、韓国語で話せる</b><em>내 이야기를 한국어로 말하기</em></span>
-            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
-          </span>
-        </button>
+          </button>
 
         <button class="glc" data-val="t5" data-sync-option="t5">
           <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="glc-n">身近な話題なら、話が続く<small>익숙한 주제로 대화 이어가기</small></span></span>
-          <span class="glc-l">
-            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>歌詞の意味が、だいたい分かる</b><em>가사 뜻이 대충 이해되기</em></span>
-            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>道を聞いて、困ったときも伝えられる</b><em>길 묻고, 곤란할 때 직접 말하기</em></span>
-            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>好きなものの話で、盛り上がれる</b><em>좋아하는 것 이야기로 신나게 떠들기</em></span>
-            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>同僚と、日常のやり取りができる</b><em>동료와 일상적인 대화 하기</em></span>
-            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 2級（初級）に合格する</b><em>TOPIK 2급 따기</em></span>
-            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>韓国の人と、日常会話がつづく</b><em>한국 사람과 일상 대화 이어가기</em></span>
-            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
-          </span>
-        </button>
+          </button>
 
         <button class="glc" data-val="t7" data-sync-option="t7">
           <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="glc-n">意見も理由も、話せる<small>의견도 이유도 말하기</small></span></span>
-          <span class="glc-l">
-            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>ドラマが、字幕なしで分かる</b><em>드라마를 자막 없이 알아듣기</em></span>
-            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>旅先の人と、おしゃべりが続く</b><em>여행지에서 만난 사람과 수다 떨기</em></span>
-            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>タメ口で、雑談ができる</b><em>반말로 수다 떨기</em></span>
-            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>会議が分かって、意見も言える</b><em>회의 알아듣고 의견 말하기</em></span>
-            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 3〜4級（中級）まで行く</b><em>TOPIK 3~4급까지 가기</em></span>
-            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>意見と理由まで、自分の言葉で</b><em>의견과 이유까지 내 말로 말하기</em></span>
-            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
-          </span>
-        </button>
+          </button>
 
         <button class="glc" data-val="t9" data-sync-option="t9">
           <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="glc-n">どんな話題でも、自由に話せる<small>어떤 주제든 자유롭게 말하기</small></span></span>
-          <span class="glc-l">
-            <span class="glc-i" data-why="kpop"><img class="glc-ico" src="../assets/reasons/kpop.png" alt=""><b>バラエティも、そのまま楽しめる</b><em>예능도 그대로 즐기기</em></span>
-            <span class="glc-i" data-why="travel"><img class="glc-ico" src="../assets/reasons/travel.png" alt=""><b>どこへ行っても、言葉で困らない</b><em>어디를 가도 말로 곤란하지 않기</em></span>
-            <span class="glc-i" data-why="friend"><img class="glc-ico" src="../assets/reasons/friend.png" alt=""><b>気持ちも冗談も、そのまま伝わる</b><em>마음도 농담도 그대로 전하기</em></span>
-            <span class="glc-i" data-why="work"><img class="glc-ico" src="../assets/reasons/work.png" alt=""><b>韓国語で、商談・面接までできる</b><em>한국어로 상담·면접까지 하기</em></span>
-            <span class="glc-i" data-why="topik"><img class="glc-ico" src="../assets/reasons/topik.png" alt=""><b>TOPIK 5〜6級（高級）をねらう</b><em>TOPIK 5~6급 노리기</em></span>
-            <span class="glc-i" data-why="self"><img class="glc-ico" src="../assets/reasons/self.png" alt=""><b>どんな話題でも、自分の言葉で</b><em>어떤 주제든 내 말로 말하기</em></span>
-            <span class="glc-e">前のページで理由を選ぶと、ここに「できること」が出ます。</span>
-          </span>
-        </button>
+          </button>
 
       </div>
     </div>
 
-    <div class="section" id="p-pace" data-page-id="needs-pace">
-      <h2 class="section-title">학습 페이스 <span class="title-ja">(学習ペース)</span></h2>
-      <p class="section-subtitle"><span class="ko">일주일에 수업을 몇 번 받고 싶어요?</span><span class="ja">1週間に何回、レッスンを受けたいですか？</span></p>
+    <div class="section needs-jp" id="p-pace" data-page-id="needs-pace">
+      <h2 class="section-title">学習ペース <span class="title-ja">(학습 페이스)</span></h2>
+      <p class="section-subtitle"><span class="ko">일주일에 수업을 몇 번 받고 싶어요?</span><span class="ja">1週間に何回、<br>レッスンを受けたいですか？</span></p>
       <div class="opt-list" data-group="pace" data-pick="single" data-sync-id="needs-pace" data-sync-kind="selection" data-sync-state="on">
-        <button class="opt-row" data-val="1" data-sync-option="1"><span class="emo">🐢</span><span class="opt-body"><span class="opt-main">주 1회 <span class="title-ja">／週1</span></span><span class="opt-sub">まずは無理なく</span></span></button>
-        <button class="opt-row" data-val="2" data-sync-option="2"><span class="emo">🚶</span><span class="opt-body"><span class="opt-main">주 2회 <span class="title-ja">／週2</span></span><span class="opt-sub">こつこつ</span></span></button>
-        <button class="opt-row" data-val="3" data-sync-option="3"><span class="emo">🏃</span><span class="opt-body"><span class="opt-main">주 3회 <span class="title-ja">／週3</span></span><span class="opt-sub">しっかり</span></span></button>
-        <button class="opt-row" data-val="4" data-sync-option="4"><span class="emo">⚡</span><span class="opt-body"><span class="opt-main">주 4회 <span class="title-ja">／週4</span></span><span class="opt-sub">ぐんぐん</span></span></button>
-        <button class="opt-row" data-val="5" data-sync-option="5"><span class="emo">🚀</span><span class="opt-body"><span class="opt-main">주 5회+ <span class="title-ja">／週5以上</span></span><span class="opt-sub">最短で</span></span></button>
+        <button class="opt-row" data-val="1" data-sync-option="1"><span class="emo">🐢</span><span class="opt-body"><span class="opt-main">週1 <span class="title-ja">／주 1회</span></span><span class="opt-sub">まずは無理なく</span></span></button>
+        <button class="opt-row" data-val="2" data-sync-option="2"><span class="emo">🚶</span><span class="opt-body"><span class="opt-main">週2 <span class="title-ja">／주 2회</span></span><span class="opt-sub">こつこつ</span></span></button>
+        <button class="opt-row" data-val="3" data-sync-option="3"><span class="emo">🏃</span><span class="opt-body"><span class="opt-main">週3 <span class="title-ja">／주 3회</span></span><span class="opt-sub">しっかり</span></span></button>
+        <button class="opt-row" data-val="4" data-sync-option="4"><span class="emo">⚡</span><span class="opt-body"><span class="opt-main">週4 <span class="title-ja">／주 4회</span></span><span class="opt-sub">ぐんぐん</span></span></button>
+        <button class="opt-row" data-val="5" data-sync-option="5"><span class="emo">🚀</span><span class="opt-body"><span class="opt-main">週5以上 <span class="title-ja">／주 5회+</span></span><span class="opt-sub">最短で</span></span></button>
       </div>
     </div>
 
@@ -173,13 +136,13 @@
       <p class="section-subtitle"><span class="ko">수업 전에 읽으면서 궁금한 거 있었어요? 있으면 그 문장을 눌러 주세요. 같이 볼게요.</span></p>
       <div class="tutor-note">질문이 없으면 오래 붙잡지 마세요. 안 읽고 왔으면 여기서 한 번 훑고 넘어갑니다.</div>
       <div class="sents" data-sync-id="article-open" data-sync-kind="selection" data-sync-state="open">
-        <button class="sent" data-sync-option="s1"><span class="s-ko">로또 1등에 당첨되면 뭘 할지, 누구나 한 번쯤은 상상해 봤을 거예요.</span><span class="s-ja">宝くじで1等に当たったら何をするか、誰もが一度は想像したことがあるはずです。</span></button>
-        <button class="sent" data-sync-option="s2"><span class="s-ko">재미있는 건, 이 질문에 대한 대답이 그 사람이 지금 무엇에 지쳐 있는지를 그대로 보여 준다는 점이에요.</span><span class="s-ja">おもしろいのは、この質問への答えが、その人が今何に疲れているかをそのまま映し出すという点です。</span></button>
-        <button class="sent" data-sync-option="s3"><span class="s-ko">어떤 사람은 제일 먼저 회사를 그만두겠다고 하고, 어떤 사람은 빚부터 갚겠다고 해요.</span><span class="s-ja">ある人はまず会社を辞めると言い、ある人は借金から返すと言います。</span></button>
-        <button class="sent" data-sync-option="s4"><span class="s-ko">부모님께 집을 사 드리겠다는 사람도 있고, 아무한테도 말하지 않고 조용히 살겠다는 사람도 있어요.</span><span class="s-ja">親に家を買ってあげるという人もいれば、誰にも言わずに静かに暮らすという人もいます。</span></button>
-        <button class="sent" data-sync-option="s5"><span class="s-ko">그런데 실제 고액 당첨자 중에는 몇 년 안에 형편이 오히려 더 나빠진 사람도 적지 않다고 해요.</span><span class="s-ja">ところが実際の高額当選者の中には、数年のうちに暮らし向きがかえって悪くなった人も少なくないそうです。</span></button>
-        <button class="sent" data-sync-option="s6"><span class="s-ko">돈이 갑자기 늘어난다고 해서, 그 돈을 어떻게 쓸지 정하는 기준까지 같이 생기는 건 아니기 때문이에요.</span><span class="s-ja">お金が急に増えたからといって、そのお金をどう使うかを決める基準まで一緒に手に入るわけではないからです。</span></button>
-        <button class="sent" data-sync-option="s7"><span class="s-ko">그래서 '당첨되면 뭘 할까'라는 상상은, 결국 '나는 어떤 삶을 원하는가'라는 질문과 이어져 있어요.</span><span class="s-ja">だから「当たったら何をしようか」という想像は、結局「自分はどんな人生を望むのか」という問いとつながっています。</span></button>
+        <div class="sent" role="button" tabindex="0" data-sync-option="s1"><span class="s-line"><span class="s-ko">로또 1등에 <span class="s-key">당첨되</span>면 뭘 할지, 누구나 한 번쯤은 <span class="s-key">상상해</span> 봤을 거예요.</span><span class="s-mark" aria-hidden="true"></span></span><span class="s-open"><span class="s-ja">宝くじで1等に当たったら何をするか、誰もが一度は想像したことがあるはずです。</span><span class="s-words"><span class="s-w"><b>당첨되다</b>当選する・当たる</span><span class="s-w"><b>상상하다</b>想像する</span></span></span></div>
+        <div class="sent" role="button" tabindex="0" data-sync-option="s2"><span class="s-line"><span class="s-ko">재미있는 건, 이 질문에 대한 대답이 그 사람이 지금 무엇에 <span class="s-key">지쳐</span> 있는지를 <span class="s-key">그대로</span> 보여 준다는 점이에요.</span><span class="s-mark" aria-hidden="true"></span></span><span class="s-open"><span class="s-ja">おもしろいのは、この質問への答えが、その人が今何に疲れているかをそのまま映し出すという点です。</span><span class="s-words"><span class="s-w"><b>지치다</b>疲れる・うんざりする</span><span class="s-w"><b>그대로</b>そのまま</span></span></span></div>
+        <div class="sent" role="button" tabindex="0" data-sync-option="s3"><span class="s-line"><span class="s-ko">어떤 사람은 제일 먼저 회사를 <span class="s-key">그만두</span>겠다고 하고, 어떤 사람은 <span class="s-key">빚</span>부터 <span class="s-key">갚</span>겠다고 해요.</span><span class="s-mark" aria-hidden="true"></span></span><span class="s-open"><span class="s-ja">ある人はまず会社を辞めると言い、ある人は借金から返すと言います。</span><span class="s-words"><span class="s-w"><b>그만두다</b>辞める</span><span class="s-w"><b>빚</b>借金</span><span class="s-w"><b>갚다</b>返す</span></span></span></div>
+        <div class="sent" role="button" tabindex="0" data-sync-option="s4"><span class="s-line"><span class="s-ko">부모님께 집을 <span class="s-key">사 드리</span>겠다는 사람도 있고, <span class="s-key">아무한테도</span> 말하지 않고 조용히 살겠다는 사람도 있어요.</span><span class="s-mark" aria-hidden="true"></span></span><span class="s-open"><span class="s-ja">親に家を買ってあげるという人もいれば、誰にも言わずに静かに暮らすという人もいます。</span><span class="s-words"><span class="s-w"><b>사 드리다</b>買ってあげる</span><span class="s-w"><b>아무한테도</b>誰にも</span></span></span></div>
+        <div class="sent" role="button" tabindex="0" data-sync-option="s5"><span class="s-line"><span class="s-ko">그런데 실제 고액 당첨자 중에는 몇 년 안에 <span class="s-key">형편</span>이 <span class="s-key">오히려</span> 더 나빠진 사람도 <span class="s-key">적지 않</span>다고 해요.</span><span class="s-mark" aria-hidden="true"></span></span><span class="s-open"><span class="s-ja">ところが実際の高額当選者の中には、数年のうちに暮らし向きがかえって悪くなった人も少なくないそうです。</span><span class="s-words"><span class="s-w"><b>형편</b>暮らし向き</span><span class="s-w"><b>오히려</b>かえって</span><span class="s-w"><b>적지 않다</b>少なくない</span></span></span></div>
+        <div class="sent" role="button" tabindex="0" data-sync-option="s6"><span class="s-line"><span class="s-ko">돈이 갑자기 <span class="s-key">늘어난</span>다고 해서, 그 돈을 어떻게 쓸지 정하는 <span class="s-key">기준</span>까지 같이 생기는 건 아니기 때문이에요.</span><span class="s-mark" aria-hidden="true"></span></span><span class="s-open"><span class="s-ja">お金が急に増えたからといって、そのお金をどう使うかを決める基準まで一緒に手に入るわけではないからです。</span><span class="s-words"><span class="s-w"><b>늘어나다</b>増える</span><span class="s-w"><b>기준</b>基準・ものさし</span></span></span></div>
+        <div class="sent" role="button" tabindex="0" data-sync-option="s7"><span class="s-line"><span class="s-ko">그래서 '당첨되면 뭘 할까'라는 상상은, <span class="s-key">결국</span> '나는 어떤 <span class="s-key">삶</span>을 원하는가'라는 질문과 <span class="s-key">이어져 있</span>어요.</span><span class="s-mark" aria-hidden="true"></span></span><span class="s-open"><span class="s-ja">だから「当たったら何をしようか」という想像は、結局「自分はどんな人生を望むのか」という問いとつながっています。</span><span class="s-words"><span class="s-w"><b>결국</b>結局</span><span class="s-w"><b>삶</b>人生</span><span class="s-w"><b>이어져 있다</b>つながっている</span></span></span></div>
       </div>
     </div>
 
@@ -233,8 +196,15 @@
 
     <div class="section" data-page-id="warm-1">
       <h2 class="section-title">오늘의 질문</h2>
-      <p class="section-subtitle ask"><span class="q-n">몸풀기 1</span><span class="ko">로또 사 본 적 있어요? 안 사 봤으면, 왜 안 샀어요?</span><span class="ja">宝くじを買ったことがありますか？ 買ったことがなければ、なぜ買わなかったんですか？</span></p>
-      <div class="tutor-note">가볍게 받아 주세요. 학생이 말한 문장을 위 칸에 그대로 적습니다.</div>
+      <p class="section-subtitle ask"><span class="q-n">몸풀기 1</span><span class="ko">로또 사 본 적 있어요?</span><span class="ja">宝くじを買ったことがありますか？</span></p>
+      <div class="tutor-note"><div class="tn-body">가볍게 받아 주세요. 학생이 말한 문장을 그대로 적습니다.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>안 사 봤으면, 왜 안 사요?</li>
+          <li>사 봤으면, 마지막으로 산 게 언제예요?</li>
+          <li>주변에 로또 사는 사람 있어요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="warm1"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -245,7 +215,14 @@
     <div class="section" data-page-id="warm-2">
       <h2 class="section-title">오늘의 질문</h2>
       <p class="section-subtitle ask"><span class="q-n">몸풀기 2</span><span class="ko">요즘 갖고 싶은 것 중에서 제일 비싼 게 뭐예요?</span><span class="ja">最近ほしいものの中で、いちばん高いものは何ですか？</span></p>
-      <div class="tutor-note">물건 이름만 나오면 '왜 그게 갖고 싶어요?'로 한 번 더 물어봐 주세요.</div>
+      <div class="tutor-note"><div class="tn-body">물건 이름만 나오고 끝나면, 아래에서 골라 이어 가세요.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>왜 그게 갖고 싶어요?</li>
+          <li>그거 얼마쯤 해요?</li>
+          <li>지금 못 사는 이유가 뭐예요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="warm2"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -255,8 +232,15 @@
 
     <div class="section" data-page-id="q1">
       <h2 class="section-title">오늘의 질문</h2>
-      <p class="section-subtitle ask"><span class="q-n">질문 1</span><span class="ko">로또 1등에 당첨되면, 가장 먼저 뭘 할 거예요? 왜 그걸 제일 먼저 해요?</span><span class="ja">宝くじで1等に当たったら、まず何をしますか？ どうしてそれを一番先にするんですか？</span></p>
-      <div class="tutor-note">오늘의 메인 질문이에요. 이유가 나올 때까지 기다려 주세요.</div>
+      <p class="section-subtitle ask"><span class="q-n">질문 1</span><span class="ko">로또 1등에 당첨되면, 가장 먼저 뭘 할 거예요?</span><span class="ja">宝くじで1等に当たったら、まず何をしますか？</span></p>
+      <div class="tutor-note"><div class="tn-body">오늘의 메인 질문이에요. 이유가 나올 때까지 기다려 주세요.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>왜 그걸 제일 먼저 해요?</li>
+          <li>그걸 하고 나면 뭐가 제일 달라질 것 같아요?</li>
+          <li>지금은 왜 그걸 못 하고 있어요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="q1"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -266,8 +250,15 @@
 
     <div class="section" data-page-id="q2">
       <h2 class="section-title">오늘의 질문</h2>
-      <p class="section-subtitle ask"><span class="q-n">질문 2</span><span class="ko">당첨된 걸 누구한테 말할 거예요? 아무한테도 말 안 하는 사람도 있는데, 어떻게 생각해요?</span><span class="ja">当たったことを誰に話しますか？ 誰にも言わない人もいますが、どう思いますか？</span></p>
-      <div class="tutor-note">대답이 짧으면 ‘왜 그 사람한테만요?’로 넓혀 주세요.</div>
+      <p class="section-subtitle ask"><span class="q-n">질문 2</span><span class="ko">당첨된 거, 누구한테 제일 먼저 말할 거예요?</span><span class="ja">当たったこと、誰にいちばん先に話しますか？</span></p>
+      <div class="tutor-note"><div class="tn-body">사람 이름만 말하고 끝나면, 아래에서 골라 넓혀 주세요.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>왜 하필 그 사람이에요?</li>
+          <li>아무한테도 말 안 하는 사람도 있는데, 어떻게 생각해요?</li>
+          <li>말하고 나면 그 사람이랑 사이가 달라질까요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="q2"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -277,8 +268,15 @@
 
     <div class="section" data-page-id="q3">
       <h2 class="section-title">오늘의 질문</h2>
-      <p class="section-subtitle ask"><span class="q-n">질문 3</span><span class="ko">지금 하는 일은 어떻게 할 거예요? 계속할 거예요, 그만둘 거예요?</span><span class="ja">今の仕事はどうしますか？ 続けますか、辞めますか？</span></p>
-      <div class="tutor-note">‘~면 ~ㄹ 거예요’ 형태가 계속 나와요. 어미를 특히 잘 봐 주세요.</div>
+      <p class="section-subtitle ask"><span class="q-n">질문 3</span><span class="ko">돈 걱정이 없어져도, 지금 하는 일이나 공부를 계속할 거예요?</span><span class="ja">お金の心配がなくなっても、今の仕事や勉強を続けますか？</span></p>
+      <div class="tutor-note"><div class="tn-body">‘~면 ~ㄹ 거예요’ 형태가 계속 나와요. 어미를 특히 잘 봐 주세요.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>그만둔다면, 그다음 날부터 뭘 하고 싶어요?</li>
+          <li>계속한다면, 지금이랑 뭐가 달라질까요?</li>
+          <li>일 안 하고 사는 사람, 부러워요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="q3"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -288,8 +286,15 @@
 
     <div class="section" data-page-id="q4">
       <h2 class="section-title">오늘의 질문</h2>
-      <p class="section-subtitle ask"><span class="q-n">질문 4</span><span class="ko">큰돈을 받고 오히려 형편이 나빠지는 사람도 있는데, 왜 그런 일이 생길까요?</span><span class="ja">大金を手にしてかえって暮らしが悪くなる人もいますが、なぜそんなことが起きると思いますか？</span></p>
-      <div class="tutor-note">지문을 다시 읽어 주지 말고, 학생이 자기 말로 설명하게 해 주세요.</div>
+      <p class="section-subtitle ask"><span class="q-n">질문 4</span><span class="ko">큰돈이 생겼는데 형편이 더 나빠지는 사람도 있어요. 왜 그럴까요?</span><span class="ja">大金が入ったのに、かえって暮らし向きが悪くなる人もいます。どうしてでしょうか？</span></p>
+      <div class="tutor-note"><div class="tn-body">지문을 다시 읽어 주지 말고, 학생이 자기 말로 설명하게 해 주세요.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>그런 사람한테 딱 하나만 조언한다면요?</li>
+          <li>그럼 돈을 잘 쓰는 사람은 뭐가 달라요?</li>
+          <li>본인은 안 그럴 자신 있어요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="q4"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -299,8 +304,15 @@
 
     <div class="section" data-page-id="q5">
       <h2 class="section-title">오늘의 질문</h2>
-      <p class="section-subtitle ask"><span class="q-n">질문 5</span><span class="ko">노력해서 번 돈이랑 운으로 얻은 돈, 가치가 다르다고 생각해요?</span><span class="ja">努力して稼いだお金と、運で手に入れたお金は、価値が違うと思いますか？</span></p>
-      <div class="tutor-note">제일 어려운 질문이에요. 문장이 막히면 먼저 일본어로 듣고, 같이 한국어로 옮겨 주세요.</div>
+      <p class="section-subtitle ask"><span class="q-n">질문 5</span><span class="ko">노력해서 번 돈이랑 운으로 얻은 돈, 뭐가 달라요?</span><span class="ja">努力して稼いだお金と、運で手に入れたお金、何が違いますか？</span></p>
+      <div class="tutor-note"><div class="tn-body">제일 어려운 질문이에요. 문장이 막히면 먼저 일본어로 듣고, 같이 한국어로 옮겨 주세요.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>쓰는 방법도 달라질까요?</li>
+          <li>그럼 물려받은 돈은 어느 쪽이에요?</li>
+          <li>운으로 얻은 돈이어도 내 돈은 내 돈 아닐까요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="q5"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -310,8 +322,15 @@
 
     <div class="section" data-page-id="q6">
       <h2 class="section-title">오늘의 질문</h2>
-      <p class="section-subtitle ask"><span class="q-n">질문 6</span><span class="ko">당첨이 안 돼도 지금 바꿀 수 있는 게 있다면, 뭘 바꾸고 싶어요?</span><span class="ja">当たらなくても今変えられることがあるとしたら、何を変えたいですか？</span></p>
-      <div class="tutor-note">마지막 질문이에요. 오늘 고친 표현을 한 번 더 써 보게 해 주세요.</div>
+      <p class="section-subtitle ask"><span class="q-n">질문 6</span><span class="ko">그럼 반대로, 돈이 아무리 많아도 못 하는 건 뭘까요?</span><span class="ja">では逆に、どんなにお金があってもできないことは何でしょうか？</span></p>
+      <div class="tutor-note"><div class="tn-body">마지막 질문이에요. 오늘 고친 표현을 한 번 더 써 보게 해 주세요.
+        <span class="tn-cap">이어서 물어보기</span>
+        <ul class="tn-more">
+          <li>그런 걸 이미 가진 사람, 주변에 있어요?</li>
+          <li>그건 돈 말고 뭐가 있어야 얻을 수 있을까요?</li>
+          <li>오늘 이야기하면서 생각이 좀 바뀐 게 있어요?</li>
+        </ul>
+      </div></div>
       <div class="fb" data-fb="q6"></div>
       <div class="fb-adds">
         <button class="fb-add" data-add="fix" type="button">＋ 교정</button>
@@ -332,10 +351,10 @@
       </div>
     </div>
 
-    <div class="brand-page divider" data-page-id="report-intro">
-      <img class="brand-mascot" src="../assets/podo-character.png" alt="">
-      <h2 class="brand-title">리포트 &amp; 플랜<span class="ja">レポート＆プラン</span></h2>
-      <p class="brand-sub">오늘 수업에서 본 지금 실력과, 목표까지 가는 길을 함께 보여 드릴게요.</p>
+    <div class="brand-page bleed" data-page-id="report-intro">
+      <h2 class="brand-title">レポート＆プラン</h2>
+      <p class="brand-sub">今日の授業で確認した現在の実力と、<br>目標までの道のりを合わせてお見せしますね。</p>
+      <img class="brand-art mid" src="../assets/podo-character-report.png" alt="">
     </div>
     <!-- ================================================================
          맞춤 리포트 · 한 장
@@ -492,7 +511,7 @@
         </div>
         <!-- 코멘트 한 문단 · 잘하는 둘과 아쉬운 둘을 한 문장으로 잇고, 그 둘을
              기르는 방법까지 붙인다. 위 두 상자가 「무엇」 이라면 여기는 「그래서」 다. -->
-        <div class="axtip"><h4><img src="../assets/report-icons/crown.svg" alt="">체험레슨 코멘트</h4><p></p></div>
+        <div class="axtip"><h4><i class="axtip-i" aria-hidden="true">✦</i>체험레슨 코멘트</h4><p></p></div>
       </div>
 
       <!-- ③ 이대로만 따라오면 돼요 · 기간과 길을 한 덩어리로
@@ -521,12 +540,16 @@
 
           <!-- 레일 · 말풍선을 떼고 눈금 일곱을 깔았다. 슬라이더가 길 바로 위에
                붙어 있어 「이 지도의 손잡이」 로 읽힌다. -->
-          <div class="freq pm-freq pm-rail pm-inline">
-            <p class="freq-h">매주 <b class="freq-n">3</b>회</p>
-            <div class="freq-slot">
-              <span class="pm-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-              <input class="freq-range" type="range" min="1" max="7" step="1" value="3"
-                     data-sync-id="plan-freq" aria-label="매주 몇 번">
+          <div class="freq pm-freq pm-rail">
+            <span class="freq-k">매주</span>
+            <div class="freq-row">
+              <p class="freq-h"><b class="freq-n">3</b>회</p>
+              <div class="freq-slot">
+                <span class="pm-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <input class="freq-range" type="range" min="1" max="7" step="1" value="3"
+                       data-sync-id="plan-freq" aria-label="매주 몇 번">
+                <span class="pm-nums" aria-hidden="true"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i></span>
+              </div>
             </div>
           </div>
         </div>
@@ -548,7 +571,7 @@
         <div class="road-card pm-road">
           <div class="road">
             <span class="road-k">추천 코스</span>
-            <svg class="road-svg" viewBox="0 0 270 118" role="img" aria-label="지금부터 목표까지의 코스 길"></svg>
+            <svg class="road-svg" viewBox="0 -4 270 122" role="img" aria-label="지금부터 목표까지의 코스 길"></svg>
           </div>
 
           <div class="curli"></div>
@@ -561,6 +584,20 @@
             <button class="rc-btn rc-next" type="button">다음 →</button>
           </div>
         </div>
+      </div>
+
+      <!-- ⑤ 리포트 저장 · 튜터만
+           상담이 끝나면 이 화면 그대로를 남긴다. 리포트가 끝나는
+           자리에 두는 이유는 여기가 값이 다 모이는 자리라서다 — 앞의 네 칸을
+           채우고 나서야 누를 수 있고, 안 채운 항목은 버튼 밑에 이름으로 뜬다.
+           학습자 화면에는 아예 없는 블록이라(teaching 모드에서만 뜬다) 리포트를
+           읽는 흐름은 그대로다.
+           덱은 부모 창(보드)으로 보내기만 하고, 백엔드에 남기는 일은 앱이 한다.
+           보내는 값과 le_level_test 컬럼 대응: ../report-submit.md -->
+      <div class="rep-send">
+        <span class="rep-send-h">리포트 저장 <small>튜터만 보여요</small></span>
+        <button class="rs-btn" type="button" disabled>리포트 저장하기</button>
+        <p class="rs-msg"></p>
       </div>
     </div>
 
@@ -1182,6 +1219,10 @@
   <!-- PAGER · 한 장씩 넘기기 + 스크러버. 공유 스크립트. -->
   <!-- REPORT · 리포트·안내 페이지의 배선. 공유 스크립트. -->
   <script src="../../../shared/js/report.js"></script>
+
+  <!-- REPORT SUBMIT · 리포트를 그대로 백엔드에 남기는 버튼. 스냅샷을 report.js
+       가 짓기 때문에 반드시 그 뒤에 와야 한다. 공유 스크립트. -->
+  <script src="../../../shared/js/report-submit.js"></script>
 
   <script src="../../../shared/js/pager.js"></script>
 
