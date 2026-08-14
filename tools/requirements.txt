@@ -2,6 +2,6 @@ pyyaml>=6.0
 jsonschema>=4.21
 referencing>=0.33
 
-# sync-from-authoring.py / import-trial-decks.py only. build · validate · plan ·
-# apply do not import it, so a missing bs4 cannot affect the merge gate.
+# import-report-deck.py only. build · validate · plan · apply do not import it,
+# so a missing bs4 cannot affect the merge gate.
 beautifulsoup4>=4.12

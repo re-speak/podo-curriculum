@@ -153,7 +153,9 @@ the failure surface in production.
 
 ## The shared runtime
 
-`shared/{css,js}` is the single source, but decks do not carry a copy of it. They
+`podo-curriculum-public/runtime/{css,js}` is the authoring source of truth.
+`shared/{css,js}` is this repository's release snapshot, copied from that source
+by `sync-from-authoring.py --runtime-only`; do not edit it independently. Decks
 reference an immutable tag on the public mirror
 [`re-speak/podo-curriculum-shared`](https://github.com/re-speak/podo-curriculum-shared),
 declared once in `curriculum.yaml` under `spec.sharedRuntime`. One version for the
@@ -165,7 +167,11 @@ one copy of `trial.css` across a whole course instead of re-fetching it per less
 ### Changing it
 
 ```sh
-vim shared/js/activities.js              # append; do not rewrite what exists
+export PODO_AUTHORING_ROOT=/path/to/podo-curriculum-public
+vim "$PODO_AUTHORING_ROOT/runtime/js/activities.js"
+python3 tools/sync-from-authoring.py --upstream "$PODO_AUTHORING_ROOT" --runtime-only
+diff -qr "$PODO_AUTHORING_ROOT/runtime/js" shared/js
+diff -qr "$PODO_AUTHORING_ROOT/runtime/css" shared/css
 vim curriculum.yaml                      # bump spec.sharedRuntime.version
 python3 tools/publish-shared.py          # cut the tag, push it, verify it serves
 python3 tools/repoint-shared.py          # stamp every deck with the new version
@@ -269,7 +275,7 @@ uploaded zip into a single GCS prefix. So a sync is not a copy:
 | upstream | here | what changes |
 |---|---|---|
 | `runtime/{css,js}` | `shared/{css,js}` | nothing — straight mirror, and shared by every language |
-| `korean/trial/lessons/*.html` | `courses/kr/hangul-trial-test/` | refs flattened to basenames, runtime bundled per deck, **input controls written into the markup** instead of built at load |
+| `korean/trial/lessons/*.html` | `courses/kr/hangul-trial-test/` | refs flattened to basenames; static controls pass unchanged; synced runtime bundled per deck |
 | `korean/{trial/*,interactive}` | `sandbox/` | `runtime/` refs repointed at `shared/` |
 | `<lang>/tracks/*/sample-lesson.html` | `sandbox/track-samples/<code>/` | `runtime/` refs repointed at `shared/` |
 | `<lang>/tracks/*/table-of-contents.md` | `references/<code>/tracks/` | — |
@@ -282,17 +288,11 @@ the same paths, so a shared destination would let one language overwrite the oth
 by track number, silently. `sync-from-authoring.py` mirrors every language present
 by default; `--language english` narrows it to one.
 
-The control rewrite is the one that matters. lemonboard's validator parses
-statically, so a `<span>` that only becomes an `<input>` when the page loads has
-no resolvable `data-sync-kind` — the element is dropped from the sync set with no
-warning, and the deck works in class while failing the merge gate. See
-[`CLAUDE.md`](CLAUDE.md).
-
-That is also why `shared/js/activities.js` is *not* what the trial decks ship.
-Upstream's version builds those controls at load;
-[`tools/deck-runtime/activities.js`](tools/deck-runtime/activities.js) binds them
-instead, and is the one file here that has to be ported by hand when upstream
-changes an activity.
+Input controls are static at the authoring source. lemonboard's validator parses
+without running scripts, so `podo-curriculum-public` writes the real `<input>`,
+`<textarea>` and `.build-zone` elements and its canonical `activities.js` only
+binds behavior to them. Sync, import and CDN publication preserve that markup and
+runtime without a repository-local fork.
 
 Re-syncing replaces those directories wholesale, so **edit them upstream**, not
 here. `courses/`, `tools/`, `schemas/`, `docs/`, `shared/assets/` and
