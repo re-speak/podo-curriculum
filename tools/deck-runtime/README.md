@@ -1,6 +1,6 @@
 # deck-runtime
 
-The one runtime file this repo owns rather than mirrors.
+The imported-deck copy of the static-control runtime.
 
 Everything else under `shared/js` comes from `podo-curriculum-public/runtime`
 untouched. `activities.js` cannot: upstream's version **creates** the input
@@ -14,9 +14,9 @@ The deck then works in class and fails the merge gate, which is indistinguishabl
 from a deck that is genuinely broken.
 
 So `import-trial-decks.py` writes the real controls into the markup and bundles
-this version, which **binds** them instead of creating them. Grading, answer-width
-sizing, chip reordering and the `order` kind registration are unchanged from
-upstream.
+this version, which **binds** them instead of creating them. It must stay
+byte-identical to `shared/js/activities.js`: repointed decks load that CDN copy,
+and `validate.py` blocks any drift between the two.
 
-If upstream changes how an activity behaves, port the change here by hand — there
-is no automatic path, because the two files differ by design.
+If upstream changes how an activity behaves, port the change to both runtime
+copies; the validator blocks a release if they drift.
