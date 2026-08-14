@@ -112,6 +112,8 @@ python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/l
 
 python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/, references/
 python3 tools/sync-from-authoring.py --language english   # …or just the one language
+python3 tools/import-authoring-courses.py 2-core-patterns --language korean
+python3 tools/import-authoring-courses.py 1-core-patterns --language english
 python3 tools/import-trial-decks.py            # …then rebuild the trial course
 python3 tools/import-report-deck.py            # promote the sandbox report deck
 ```
@@ -121,8 +123,10 @@ language directory) with `--upstream PATH`, or set `$PODO_AUTHORING_ROOT` if it
 sits somewhere else. `sync-from-authoring.py` mirrors every language it finds
 unless `--language` narrows it, and never infers one from a path — pointing
 `--upstream` at `korean/` while asking for `english` is an error, not a
-substitution. Run them in that order — the second reads the runtime the first
-mirrored. Neither is called by CI.
+substitution. `sync-from-authoring.py` does not copy deployable `course.yaml` files or ordinary
+track lessons. Run the explicit course importer for those; it maps Korean to `courses/kr/` and
+English to `courses/en/`, preserving required `countryCode` verbatim while the destination
+directory supplies `LANG_TYPE`. Neither command is called by CI.
 
 `import-report-deck.py` reads no authoring tree — its source is this repo's own
 `sandbox/`, which `tools/model.py` refuses to walk. Re-run it after editing
@@ -269,6 +273,7 @@ uploaded zip into a single GCS prefix. So a sync is not a copy:
 | upstream | here | what changes |
 |---|---|---|
 | `runtime/{css,js}` | `shared/{css,js}` | nothing — straight mirror, and shared by every language |
+| `<lang>/tracks/*/courses/*/course.yaml` | `courses/<code>/*/course.yaml` | explicit importer; manifest bytes and `countryCode` preserved, LANG_TYPE derived from destination |
 | `korean/trial/lessons/*.html` | `courses/kr/hangul-trial-test/` | refs flattened to basenames, runtime bundled per deck, **input controls written into the markup** instead of built at load |
 | `korean/{trial/*,interactive}` | `sandbox/` | `runtime/` refs repointed at `shared/` |
 | `<lang>/tracks/*/sample-lesson.html` | `sandbox/track-samples/<code>/` | `runtime/` refs repointed at `shared/` |
@@ -302,4 +307,5 @@ here. `courses/`, `tools/`, `schemas/`, `docs/`, `shared/assets/` and
 
 - **The PDF pipeline.** Page images, `podo-pdf-tool`, `BOOK_FILE_ID`, audio via `TB_COM_FILE`. Grape still owns all of it for legacy courses. This repo is HTML 교재 only.
 - **Textbook scans.** 41 licensed PDFs and `dekiru-kankokugo/page-images/` — 726MB of the 1.0GB in `korean/references/curricula` — stay in `podo-curriculum-public`. Only derived markdown and the wireframe PNGs moved.
-- **English courses.** The English curriculum is being authored, and its plan is mirrored to `references/en/`, but nothing ships from it yet. When it does it is `courses/en/` with `countryCode: JP` — the code is the subject taught, the country is the market — and `tools/model.py` already reads the language from that directory name.
+- **Enabled English courses.** Generated disabled plans can be imported into `courses/en/`, but
+  prestudy remains deferred and no English lesson should be represented as deployable yet.

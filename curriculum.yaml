@@ -19,6 +19,10 @@ spec:
       # Support text inside a deck is written in this language, not English.
       audience: ja
       displayName: 한국어
+    en:
+      langType: EN
+      audience: ja
+      displayName: 영어
 
   # 교재 오브젝트는 GCS(podo-assets)에 있다. AWS S3(respeak-lemonade)에서 이관했다 —
   # grape 의 공개 자산을 podo-assets 로 모으는 방향에 맞춘 것이고, 교재 HTML/CSS/이미지는
