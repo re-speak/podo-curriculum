@@ -82,6 +82,14 @@ def repoint_deck(deck: pathlib.Path, base: str, owned: dict[str, str],
         sub = owned.get(name)
         if sub is None:
             return match.group(0)
+        # 같은 basename 이라도 덱이 의도적으로 다른 구현을 묶었으면 shared 가
+        # 아니다. 예전에 trial activities.js 를 이름만 보고 CDN 으로 바꾸면서
+        # 정적 input 을 다시 만드는 구형 런타임이 배포됐고, data-sync-id 가
+        # 라이브 DOM 에서 사라졌다. 바이트가 다르면 로컬 사본을 보존한다.
+        local = deck / pathlib.PurePosixPath(ref)
+        shared = model.REPO / "shared" / sub / name
+        if local.is_file() and shared.is_file() and local.read_bytes() != shared.read_bytes():
+            return match.group(0)
         moved.add(name)
         return f'{attr}="{base}/{sub}/{name}"'
 

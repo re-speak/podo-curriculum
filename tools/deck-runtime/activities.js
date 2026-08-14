@@ -1,19 +1,9 @@
 /* ================================================================
-   ACTIVITIES · 화이트보드 없이 손가락만으로 푸는 활동 (덱 사본)
+   ACTIVITIES · 화이트보드 없이 손가락만으로 푸는 활동 (정적 컨트롤)
 
-   beginner-curriculum 의 runtime/js/activities.js 와 한 군데가 다르다:
-   **입력칸을 만들지 않고, 이미 서 있는 것에 배선만 한다.**
-
-   원본은 <span class="slot"> / <span class="answer-space"> 껍데기를 로드 때
-   <input>·<textarea>·트레이로 승격시키면서 data-sync-id 를 옮겼다. 그러면
-   레몬보드 검증기가 덱을 떨어뜨린다 — 검증기는 스크립트를 돌리지 않고
-   linkedom 으로 정적 파싱만 하므로(apps/api/.../validate-lesson-html.ts)
-   교체 전 <span> 을 보고 kind 를 정하지 못한다. 반면 바인더는 라이브 DOM 을
-   다시 훑으므로(html-sync/binder.ts) 수업은 멀쩡하다. 즉 "수업에서는 되는데
-   게이트에서는 죽는" 덱이 되고, 진짜로 깨진 덱과 구분이 안 된다.
-
-   그래서 진짜 컨트롤을 HTML 에 적어 두고, 이 파일은 채점·폭 잡기·칩 옮기기만
-   한다. 마크업 규약은 그대로다:
+   레몬보드 검증기와 라이브 바인더가 같은 DOM 을 보도록 입력 컨트롤은 HTML 에
+   미리 적는다. 이 파일은 컨트롤을 새로 만들거나 바꾸지 않고, 이미 서 있는
+   컨트롤에 채점·크기·칩 이동 동작만 배선한다.
 
      input.slot-input[data-answer]   점선 알약에 타이핑. 답 길이에 맞춰 폭을 잡는다.
      input.space-input[data-answer]  채점하는 답 칸.
