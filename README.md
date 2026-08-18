@@ -59,8 +59,16 @@ spec:
   lessonTime: 25                 # 15 | 25
   enabled: false                 # USE_YN
   title: { ko: 한글 떼기, en: Hangul Basics, ja: ハングル入門 }
+  thumbnail: assets/cover.png    # optional — BOOK_THUMBNAIL, see below
   tutorGroups: { allowRandom: [], assignedOnly: [] }
 ```
+
+`thumbnail` is the one field whose absence is not a statement. Name a
+course-relative PNG or JPEG and it ships with the decks: grape uploads it and
+writes the URL to `BOOK_THUMBNAIL` on the COVER row, overwriting whatever was
+there. Leave the key out and the column is **not touched** — covers are also
+uploaded by hand in grape admin, and a course that says nothing about its cover
+must not delete one. Removing a cover is therefore an admin action, not a commit.
 
 ```yaml
 # …/lessons/01-block-and-first-sounds/lesson.yaml — one MAIN row

@@ -2,7 +2,7 @@
 
 > **STATUS: PROPOSED — NOT YET APPLIED TO THE CURRENT CURRICULUM**
 >
-> This document describes the evidence-first method we intend to use for building or fully revalidating the English curriculum. It is **not** a description of how the existing 72-lesson Core was originally created. The current Core and grammar coverage map have not yet completed the row-by-row source audit required below.
+> This document describes the evidence-first method we intend to use for building or fully revalidating the English curriculum. It is **not** a description of how the existing 122-lesson Core was originally created. The current Core and grammar coverage map have not yet completed the row-by-row source audit required below.
 
 ## Why this method exists
 

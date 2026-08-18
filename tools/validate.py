@@ -215,6 +215,12 @@ def main() -> int:
               f"level {course.spec['classLevel']} · {len(course.lessons)} lesson(s))")
         problems += check_enabled_is_earned(course)
 
+        # model 이 이미 검사했다(없는 파일·잘못된 포맷·크기 초과는 여기 오기 전에 죽는다).
+        # 남은 일은 보여 주는 것뿐이다 — 표지는 diff 로 확인할 수 없는 몇 안 되는 값이다.
+        if course.thumbnail:
+            print(f"  ✓ cover    — {course.spec['thumbnail']} "
+                  f"({course.thumbnail.stat().st_size // 1024} KB)")
+
         for lesson in course.lessons:
             for slot, deck in sorted(lesson.decks.items()):
                 label = f"{course.key}/{lesson.slug}/{slot}"

@@ -2250,6 +2250,59 @@ body.teaching .section-subtitle.pattern-meaning:has(+ .tutor-note) {
   overflow: hidden;
 }
 
+/* ---------- the anchor: what this form is, in Japanese, in one slot ----------
+   The first line of every 뜻과 쓰임 box used to be a sentence that quoted the
+   Japanese equivalent inside it — ‘~です’라는 뜻이에요. Two things went wrong.
+   Prose has no floor, so where the author could not name a clean Japanese
+   counterpart the sentence became a paragraph and the box grew to 150 자; and
+   a Korean tutor was handed a line to READ ALOUD containing script many of
+   them cannot read.
+
+   So the anchor stops being a sentence and becomes a slot. It holds the
+   Japanese and, under it, that Japanese written in Hangul so the tutor can
+   say it. Only one Korean sentence follows — the box can no longer absorb
+   formation (that is `pN-*-rule`) or a comparison with an earlier lesson
+   (that is the `.tutor-note` under this box).
+
+   The reading is NOT `.yomi`. `.yomi` is the learner's kana-over-Korean and
+   `yomi.js` hangs a shared よみがな switch on it — the learner turning kana
+   off would blank the tutor's crutch on both screens. Different reader,
+   different audience, different class, no switch. It also carries no level
+   rule: learners outgrow kana, tutors do not outgrow Japanese they never
+   read, and the anchorless decks are all 중고급 and up.
+
+   No fill and no outline — the hairline is the kicker's, so the kicker, the
+   anchor and the spoken line stack as one object. A bordered anchor inside
+   the tinted box inside the page card would be three frames deep. */
+.pattern-meaning .anchor {
+  display: grid;
+  justify-items: start;
+  gap: 1px;
+  padding: 12px 16px 11px;
+  border-bottom: 1px solid rgba(62, 91, 151, .12);
+}
+
+.pattern-meaning .anchor-ja {
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -.01em;
+}
+
+/* the tutor's line, so it takes the tutor's ink — the same blue the kicker
+   uses. Tracked out a little because it is read syllable by syllable. */
+.pattern-meaning .anchor-ko {
+  color: var(--blue-ink);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.section-subtitle.pattern-meaning > .anchor + .ko {
+  padding-top: 11px;
+}
+
 /* ---------- 원어민 팁: the same sentence, the way a native says it ----------
    Some tip pages teach a genuine one-way SWAP — a redundant 저는 drops out,
    for example — and the card they used never drew it. It showed two example
@@ -2890,8 +2943,9 @@ body.teaching .section-subtitle.pattern-meaning:has(+ .tutor-note) {
    none of it exists in the page until the switch on the cover is
    turned on. Student view is the default, and reloading returns to it.
 
-   Notes are written in Korean: the tutor reads Korean, and a
-   Japanese beginner cannot, which is a second lock on the answers.
+   Notes use the deck's tutor language. Privacy still comes from teaching mode;
+   English learners may understand English tutor notes, so language is never
+   treated as an access-control boundary.
    ============================================================ */
 .tutor-note { display: none; }
 
@@ -2922,9 +2976,9 @@ body.teaching .tutor-note {
    words instead, and the fill only has to be a *step* rather than a shock —
    blue-200 is the same family as the script it hangs off, one shade down, so
    the two bands read as one card with a private second half.
-   Korean, like every tutor-facing string: the tutor reads it, a beginner
-   learner cannot, which is the second lock. Set from CSS so all 48 notes in
-   the decks get it without touching any markup. */
+   The default is Korean. English decks declare podo:target-language metadata
+   and receive an English label from the adjacent override. Set from CSS so
+   every note gets the right label without deck-local markup. */
 /* A memo written against this instruction belongs WITH it — the merged
    block's 26px would otherwise leave the memo stranded between the script and
    the activity. Lives here rather than in the shared sheet because the merged
@@ -2947,6 +3001,10 @@ body.teaching .section-subtitle + .tutor-note:has(+ .note-input) { margin-bottom
   font-size: 10.5px;
   font-weight: 800;
   white-space: nowrap;
+}
+
+html:has(meta[name="podo:target-language"][content="en"]) .tutor-note::before {
+  content: "Tutor only";
 }
 
 /* ---- MERGED WITH THE SCRIPT IT BELONGS TO ----
@@ -3647,6 +3705,13 @@ button.opt-row:active { transform: scale(.99); }
    남는 높이를 위아래로 갈라 가운데에 세워 봤더니 둘 사이가 벌어져서,
    질문을 읽고 눈이 한참 내려가야 칸이 나왔다. 지금은 위에서부터 쌓고,
    대신 두 덩어리를 키운다. 교정이 여러 개면 아래로 넘치는 게 낫다. */
+.fb-compose {
+  margin-top: 26px;
+}
+
+.fb-compose + .fb-compose { margin-top: var(--item-gap); }
+.fb-compose > .fb { margin-top: 0; }
+
 .fb {
   display: grid;
   gap: var(--item-gap);
@@ -3703,6 +3768,46 @@ button.opt-row:active { transform: scale(.99); }
   background: #fff;
   overflow: hidden;
 }
+
+/* Core·Contextual 문장 만들기는 발화 과제가 따로 있을 수 있다. 같은 카드의
+   머리띠로 붙여, 교정 카드 안에서 무엇을 말할지 먼저 읽고 바로 받아 적는다. */
+.fb-task {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  color: var(--gray-500);
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.fb-task::before {
+  content: "やること";
+  flex: none;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(28, 28, 28, .09);
+  color: inherit;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
+/* 어휘 힌트는 원래 발화를 만드는 스캐폴드라 첫 교정 카드의 바닥에만 붙는다.
+   뒤에 교정이나 노트를 더 열어도 어느 문장을 위한 힌트인지 흐려지지 않는다. */
+.fb-block > .hint {
+  margin: 0;
+  padding: 9px 14px;
+  border-top: 1px solid var(--gray-200);
+  background: var(--gray-50);
+}
+
+.fb-block > .hint > .hint-chip { border-color: transparent; }
 
 /* 지우기는 열려 있는 칸이면 늘 있다 — 잘못 연 빈 칸도 닫을 수 있어야 한다.
    예외는 하나, 마지막 남은 빈 칸이다: 지워도 그 자리는 다시 열려 있어야 해서
