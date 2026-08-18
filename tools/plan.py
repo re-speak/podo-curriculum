@@ -34,9 +34,13 @@ def plan(env: str) -> list[dict]:
             "action": APPLY,
             "target": "course",
             "key": course.key,
+            # 표지가 없는 코스는 그 사실을 적는다. 빈칸이 "안 바뀜"인지 "지워짐"인지를
+            # 리뷰어가 짐작하지 않도록 — apply 는 표지를 지우지 않는다.
             "detail": (f"COVER row · {course.lang_type} · {course.spec['curriculumType']} · "
                        f"{course.spec['countryCode']} · level {course.spec['classLevel']} · USE_YN="
-                       f"{'Y' if course.spec.get('enabled') else 'N'}"),
+                       f"{'Y' if course.spec.get('enabled') else 'N'}"
+                       + (f" · cover {course.spec['thumbnail']}" if course.thumbnail
+                          else " · cover untouched")),
         })
 
         for lesson in course.lessons:

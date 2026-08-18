@@ -46,7 +46,8 @@
         "description": { "$ref": "#/$defs/localised" },
         "thumbnail": {
           "type": "string",
-          "description": "Course-relative path to an image. Uploaded, then its URL written to BOOK_THUMBNAIL."
+          "pattern": "^(?!/)(?!.*\\.\\.)[A-Za-z0-9._/-]+\\.(png|jpg|jpeg|webp)$",
+          "description": "Course-relative path to a PNG/JPEG/WebP. Sent with the decks; grape uploads it and writes the URL to BOOK_THUMBNAIL on the COVER row. Omit the key to leave whatever is already there — including a cover set by hand in grape admin."
         },
         "tutorGroups": {
           "type": "object",
