@@ -26,10 +26,9 @@ spec:
     ko: 한글을 한 번도 본 적 없는 일본어 화자가 어떤 한국어 음절이든 소리 내어 읽을 수 있게 되는 11과.
     ja: ハングルを見たことのない日本語話者が、どんな韓国語の音節でも声に出して読めるようになる全11課。
 
-  # → BOOK_THUMBNAIL on the COVER row. A course-relative PNG or JPEG, sent with
-  # the decks; grape uploads it and writes the URL back. Leave the key out and the
-  # column is not touched at all — a cover set by hand in grape admin survives.
-  # thumbnail: assets/cover.png
+  # → BOOK_THUMBNAIL(COVER 행). 코스 목록에 나가는 432×540 표지다. 키를 지우면 컬럼을
+  # 비우는 게 아니라 손대지 않는다 — 지우는 것은 어드민에서 할 일이다.
+  thumbnail: assets/cover.png
 
   # → le_tutor_curriculum rows, curriculum_type = PODO_KR_BASIC
   # allowRandom: random matching + direct assignment. assignedOnly: direct only, and wins on overlap.

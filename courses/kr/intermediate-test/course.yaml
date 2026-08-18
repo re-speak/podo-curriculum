@@ -54,6 +54,10 @@ spec:
     ko: 중급 점검용 한 과. 처음 만난 사이의 인사와 되묻기를 다룬다. hangul-trial-test 의 중급 체험 덱을 옮겨 온 것이다.
     ja: 中級確認用の1課。初対面のあいさつと聞き返しを扱います。hangul-trial-test の中級体験デッキを移したものです。
 
+  # → BOOK_THUMBNAIL(COVER 행). 코스 목록에 나가는 432×540 표지다. 키를 지우면 컬럼을
+  # 비우는 게 아니라 손대지 않는다 — 지우는 것은 어드민에서 할 일이다.
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []
