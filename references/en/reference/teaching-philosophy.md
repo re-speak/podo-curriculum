@@ -97,6 +97,9 @@ Before accepting a target pattern, check:
 5. **Transfer:** Can the frame work with new details or in more than one closely related situation?
 6. **Load:** Are the vocabulary, inflection, and clause-building demands appropriate for this point in the sequence?
 7. **Readiness:** Has the language needed inside the slot already been learned, or is it deliberately and lightly scaffolded here?
+8. **Contemporary use:** Is this a form speakers genuinely choose often enough to deserve repeated
+   production practice? A technically grammatical but uncommon member of a paradigm belongs in
+   receptive recognition—or outside the course—when a common alternative does the same job.
 
 For Pre-A1 and A1, apply the readiness check to the **whole model sentence**, not only the labelled
 grammar point. A simple target does not stay simple when its model also requires an untaught
