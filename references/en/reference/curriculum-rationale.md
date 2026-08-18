@@ -17,6 +17,29 @@ The Korean tracks establish several strong constraints worth preserving:
 
 English begins immediately with Core speaking patterns. Sound support is attached only to the frames that need it; it is not a separate curriculum or a prerequisite for speaking.
 
+### What was deliberately not carried over
+
+Korean Contextual uses continuing drama and K-pop narratives because media immersion is itself a
+major reason many learners choose Korean. That motivation is not assumed for English. Japanese
+learners are more likely to choose contextual English for an immediate use case—most clearly,
+travel or business.
+
+Contextual English therefore keeps **scene before grammar**, partner reactions, role-play, and
+receptive language, but removes show bibles, season arcs, required casts, callbacks, and
+next-episode teasers. Its 60 lessons are grouped into five Travel English and five Business English
+courses. Both domains begin at low-intermediate and rise through B2–C1-bridge work. Everyday and
+social language appears only when it completes a travel or workplace task; general language stays
+in Core or Freetalking. Every lesson stands alone above its course's Core floor and ends by
+transferring both patterns to a second plausible situation.
+
+The two-area scope also protects the boundary with Core. Core teaches individual language systems;
+Contextual asks the learner to select and combine known language to produce an external result. A
+task title, can-do, both patterns, and partner reactions must therefore describe the same job.
+
+This is an English-specific product decision, not a claim that narrative teaching is ineffective.
+It aligns the catalog with the reason the learner selected the course and keeps practical coverage
+visible before enrollment.
+
 ## What the linked Podolingo document contributed
 
 The supplied Google Doc, **“Podolingo Curriculum (extended)” → “English Curriculum v2,”** contains 96 courses across five broad levels. Its useful progression is:

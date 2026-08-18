@@ -1,7 +1,7 @@
 apiVersion: podo.curriculum/v1
 kind: Course
 metadata:
-  # 출처는 이 레포의 sandbox/trial/reports/trial-1-report.html — 상담용 리포트 덱 한 장이다.
+  # 출처는 sandbox/authoring/kr/trial/reports/trial-1-report.html — 상담용 리포트 덱 한 장이다.
   # sandbox 는 tools/model.py 가 아예 걷지 않으므로 거기 있는 동안은 배포될 수 없다.
   # 이 코스가 그 덱의 배포 가능한 형태다: 옆으로 뻗던 참조(../../../shared, ../assets)를
   # 덱 폴더 안에서 완결되게 평탄화하고, 원격 아바타 둘을 번들로 내렸다.

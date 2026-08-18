@@ -16,9 +16,15 @@ The guiding principles behind every page of the Korean curriculum.
 
 ## Scripts & language
 - The script box is the tutor's **word-for-word spoken script** — natural, simple, *spoken* Korean (해 주세요 / 볼까요), not textbook phrasing, no grammar jargon (e.g. avoid 조사).
+- **Conversational brevity is part of accuracy.** Use the shortest line a person would naturally
+  say without losing the learner's next action or the lesson's meaning. A goal names the
+  conversation; it does not inventory every later prompt, tell the learner to speak at length, or
+  repeat framing the page already supplies (`오늘은`, `수업이 끝나면`). When Korean gets shorter,
+  rewrite the Japanese to match its meaning and conversational tone in the same change.
 - **Written in first person.** The tutor is the one speaking: 제가 / 私が, never 선생님이 / 先生が.
 - **Lessons are audio-only — the learner never sees the tutor.** Nothing may depend on watching them: no 제 입 모양을 보고 / 口の形をまねして, no gestures, no "look at me". Model a sound by *saying* it: 제가 먼저 읽을게요. 잘 듣고 따라 읽어 보세요. (Pointing at the lesson page is fine — the learner has it. Describing the learner's *own* mouth is fine and matters more here: 입술을 동그랗게.)
 - **Both lines say the same sentence.** In the script box the Japanese is a direct translation of the Korean, not extra teaching content. When they drift apart, expand the Korean up to the Japanese — don't trim the Japanese down.
+- **Say the learner's next action, not how the page was prepared.** If cards or chunks are visibly out of order, keep the shuffle rationale in an authoring comment and tell the learner only what to do (`한 블록씩 읽어 보세요`). Do not make the tutor narrate obvious setup such as `순서를 섞었어요`. A real contrast or decision the learner must notice still belongs in the script.
 - **Japanese is always secondary support** — title parentheses, a header label above an answer area, or small gloss text — never competing with the Korean.
 - Translations sit **as a header box on top** of the answer/content, consistently.
 - **The header band means translation, and anything else in it is labelled.** Three pages in, a learner reads that band as the Japanese of the Korean below it — so when a write-in activity has nothing to translate yet and the band carries *what to do* instead, it takes a `やること` badge and drops a type weight. Marked, never recoloured: the band's fill already means whose turn it is. A pair of parentheses is not a marker — 「何が好きですか？（先生にも聞いてみよう）」 is a translation and an instruction in one run of text, and it reads as one sentence.
@@ -35,7 +41,7 @@ The guiding principles behind every page of the Korean curriculum.
 - **Tutor notes are written in Korean.** The tutor reads Korean; a beginner learner cannot, so the language itself is a second lock on the answers.
 - **A tutor note sits directly under the script it belongs to** — that is where the tutor looks after reading the line aloud, and being fused to it means there is no gap to cross. Placement costs the learner nothing: the note is `display:none` for them, and the script box takes its own radius and bottom margin back, so nothing hints that anything was removed. A note that follows something *other* than a script box keeps its standalone chip shape.
 - **A note is one short instruction, and never repeats an answer the page already shows.** Teaching mode marks correct tiles and ghosts answers into blanks, so the note points at them (표시된 쪽을 하나씩 읽어 주세요) rather than restating them. If the marks alone make the action obvious, the page needs no note at all. Do not write "for teachers" into the note text — the `튜터만` badge already says whose it is.
-- **Everything tutor-only lives behind the 티칭 모드 switch on the cover, and the switch is off by default.** Student view is what the page loads as, and nothing is persisted — reload returns to it. Answers reveal in the same barely-there way as `.slot`: a ghost of the answer inside the blank, never a loud key.
+- **Everything tutor-only lives behind the 티칭 모드 switch on the cover, and the switch is off by default.** Student view is what the page loads as, and nothing is persisted — reload returns to it. Answers reveal in the same barely-there way as `.slot-input`: a ghost of the answer inside the blank, never a loud key.
 
 ## The shared pointer
 - **The lesson is spoken over two screens, so the tutor needs a finger.** Tapping a block rings it in red on *both* screens, and exactly one thing is ever lit. It is symmetric — the learner points too. Red is the pointer's alone: a colour that also means something else stops meaning "here". What travels between the screens is *which block is lit*, never the click — see [`interaction-protocol.md`](./interaction-protocol.md).
@@ -109,7 +115,7 @@ The guiding principles behind every page of the Korean curriculum.
   | `gray-200` | every ordinary outline | emphasis |
   | cream / pink seats | consonant / vowel — pedagogy | anything else, anywhere |
 
-- **Dashed grey means "write here"** (`.slot`, `.slot-input`, `.build-slot`) and nothing else.
+- **Dashed grey means "write here"** (`.slot-input`, `.build-slot`) and nothing else.
   A wrong answer is not an empty field, so it is never dashed.
 - **Dark pages need no separate system.** The components on a transition page were never
   dark — they are light cards on a dark ground, and the outline lives on the card, not on

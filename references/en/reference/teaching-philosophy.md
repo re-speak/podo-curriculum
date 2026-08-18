@@ -45,6 +45,39 @@ The learner changes a bounded part and uses the resulting frame to complete the 
 
 A fixed chunk such as `Anything else?`, `Go ahead`, or `long time no see` helps the exchange sound natural. It may be noticed and used, but it does not count as one of the two changeable patterns and is not automatically a separate mastery target.
 
+At Pre-A1 and A1, supporting expressions are **receptive first**. They may appear in the tutor's or
+partner's line and the learner may reuse them, but the lesson must not require independent
+production unless the expression is promoted to one of the two primary patterns. Natural partner
+language is valuable; silently turning every natural phrase into a third or fourth production
+target is not.
+
+### Production-language gate
+
+For Pre-A1 and A1, readiness applies to the **whole learner-produced sentence**, including the
+words that never change. A fixed frame is not cognitively free: the learner still has to map it to
+meaning, hold its sound sequence in memory, and retrieve it while changing the slot.
+
+Every learner-produced model at these levels therefore uses language already established earlier
+in Core, except for:
+
+1. the lesson's explicitly taught, level-appropriate new operation; and
+2. at most one explicitly labelled **bounded survival chunk** when ordinary communication would
+   otherwise become seriously less useful.
+
+If a new pattern contains an internal grammar operation reserved for a later lesson, the pattern
+counts as that bounded survival chunk. Calling the whole line today's pattern does not make its
+future grammar disappear from the learner's workload.
+
+A bounded survival chunk is short, high-frequency and situationally transparent. It stays whole:
+authors do not open an internal slot, contrast its internal grammar, transform its parts, or assess
+those parts separately. `Nice to meet you.` can appear before infinitives because it remains one
+greeting. It must not become `Nice to ___ you.` at that point.
+
+Partner and tutor language is a third category. It may run ahead when the scene and Japanese
+support make the meaning immediately clear, but future grammar in that channel remains receptive
+and cannot quietly become learner production. "Bounded chunk" is an exception with a cost, not a
+general exemption from prerequisite order.
+
 ### Learner-facing grammar support
 
 This is the smallest form explanation needed to control the patterns—for example, “After *would you mind*, use the `-ing` form.” It supports production rather than becoming a third lesson objective.
@@ -64,6 +97,11 @@ Before accepting a target pattern, check:
 5. **Transfer:** Can the frame work with new details or in more than one closely related situation?
 6. **Load:** Are the vocabulary, inflection, and clause-building demands appropriate for this point in the sequence?
 7. **Readiness:** Has the language needed inside the slot already been learned, or is it deliberately and lightly scaffolded here?
+
+For Pre-A1 and A1, apply the readiness check to the **whole model sentence**, not only the labelled
+grammar point. A simple target does not stay simple when its model also requires an untaught
+request frame, tense operation, comparison, or open-ended adverb choice. Keep that extra language
+fixed and receptive, replace it with known language, or move it later.
 
 `Would you mind ___ing?` passes at B1 when the `-ing` choice is supported. `We ___ed ___ last night` is weaker: so little meaningful language remains fixed that it behaves more like a past-tense formula than a retrievable speaking frame.
 
@@ -104,6 +142,18 @@ Useful recycling has three stages:
 
 When a contextual or freetalking lesson requires a later structure, move the lesson, simplify the frame, or name the higher prerequisite. Do not hide the jump.
 
+For Japanese-L1 features that are frequent, invisible in Japanese, and prone to fossilisation,
+recycling follows a planned spiral rather than incidental repetition:
+
+1. **recognition** — notice the form in a known frame;
+2. **controlled** — supply it with the meaning and vocabulary constrained;
+3. **contrast** — choose it against the learner's likely competing form;
+4. **transfer** — retrieve it while completing a different communicative task;
+5. **checkpoint** — retrieve it cumulatively without a local grammar reminder.
+
+An ordinary lesson carries no more than two spiral-review targets. Review should reuse the current
+lesson's scene; it must not create a second lesson or increase the number of primary patterns.
+
 ## 8. Keep the teaching hierarchy visible
 
 A complete lesson may contain:
@@ -136,3 +186,8 @@ Expression use, grammatical terminology, and accent imitation are not separate s
 CEFR and English Grammar Profile evidence help authors judge readiness, but neither is a universal acquisition script. A level label is a planning claim that must ultimately be checked through learner performance, delayed retrieval, and successful transfer.
 
 When evidence is uncertain, prefer the more teachable sequence: reduce simultaneous novelty, preserve useful chunks, and give learners repeated success with known frames before increasing slot openness.
+
+The practical load check is what the learner must hold at once: the fixed frame, the work inside
+the slot, any inflection they must choose, and any new content words. Grammar labels are not a load
+budget. At Pre-A1 and A1, one clear operation practised deeply is preferable to two distinctions
+that happen to fit under the same broad label.

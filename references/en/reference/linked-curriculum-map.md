@@ -8,13 +8,13 @@ The new curriculum uses the source as a coverage checklist, not as a lesson-by-l
 
 | Source area | Main content observed | New home |
 | --- | --- | --- |
-| Foundations / Survival Basics | identity, people, money, cafés, directions, rooms, hotel, schedules, repair | Core Units 1–4; Contextual Everyday & Travel |
-| Daily Life & Storytelling | routines, shopping, plans, hobbies, past events, food, transit, weather, health, comparisons | Core Units 2–6; Contextual Everyday; Freetalking daily-life topics |
-| Making Friends & Plans | superlatives, dining, transport, invitations, favors, feelings, experiences, work, stories | Core Units 6–10; Contextual Social & Work |
-| Solving Complex Situations | interviews, duration, emergencies, conditionals, passive, obligations, relative clauses, tech, prediction | Core Units 8–12; Contextual Travel & Work |
+| Foundations / Survival Basics | identity, people, money, cafés, directions, rooms, hotel, schedules, repair | Core Units 1–4; later transfer in Contextual Travel |
+| Daily Life & Storytelling | routines, shopping, plans, hobbies, past events, food, transit, weather, health, comparisons | Core Units 2–6; Freetalking daily-life topics; task-specific transfer in Contextual Travel |
+| Making Friends & Plans | superlatives, dining, transport, invitations, favors, feelings, experiences, work, stories | Core Units 6–10; Contextual Social & Business |
+| Solving Complex Situations | interviews, duration, emergencies, conditionals, passive, obligations, relative clauses, tech, prediction | Core Units 8–12; Contextual Travel & Business |
 | Travel & Culture | airport/customs, culture, recipes, services, indirect questions, mishaps | Contextual Travel; Core politeness, passive, and past-modal lessons |
 | Deepening Friendships | memories, hypotheticals, reported speech, advice, digital life, debate, manners | Core Units 10–12; Contextual Social; Freetalking |
-| Conflict / Professional | regrets, complaints, diplomacy, feedback, news, presentations, money, calls, meetings, data, negotiation | Contextual Work; advanced extensions after the main B1 spine |
+| Conflict / Professional | regrets, complaints, diplomacy, feedback, news, presentations, money, calls, meetings, data, negotiation | Contextual Business; advanced extensions after the main B1 spine |
 | Intellectual / Sounding Native | story craft, media, ethics, art, emotion, idioms, slang, reductions, euphemism | Freetalking launch topics; optional frame-level sound cues; future B2 extension |
 
 ## Pairing rules used

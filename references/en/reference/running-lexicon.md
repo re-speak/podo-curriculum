@@ -18,7 +18,20 @@
 
 | Lesson | New | Recycled | Assumed-known | Receptive-only |
 | --- | --- | --- | --- | --- |
-| [20-asking-for-help](../tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/20-asking-for-help/lesson.html) · **5/8 new** | `box` · 箱<br>`bag` · かばん<br>`station` · 駅<br>`carry` · 運ぶ<br>`find` · 探す | `big` · 大きい ← CORE-19<br>`small` · 小さい ← CORE-19<br>`one` · ほう ← CORE-19 | `suitcase` · スーツケース<br>`menu` · メニュー<br>`Wi-Fi` · Wi-Fi | `counter` · カウンター |
+| [20-asking-for-help](../tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/20-asking-for-help/lesson.html) · **2/8 new** | `box` · 箱<br>`bag` · かばん | — | `suitcase` · スーツケース<br>`menu` · メニュー<br>`Wi-Fi` · Wi-Fi | `counter` · カウンター |
+
+## `2-contextual-english`
+
+| Lesson | New | Recycled | Assumed-known | Receptive-only |
+| --- | --- | --- | --- | --- |
+| [01-the-room-is-fine-but](../tracks/2-contextual-english/courses/arriving-and-getting-settled/lessons/01-the-room-is-fine-but/lesson.html) · **4/8 new** | `kettle` · ケトル<br>`shelf` · 棚<br>`roommate` · ルームメイト<br>`slowly` · ゆっくり | `help` · 助ける ← CORE-20<br>`fast` · 速く ← CORE-16<br>`need` · 必要とする ← CORE-20 | `kitchen` · キッチン<br>`milk` · 牛乳<br>`Osaka` · 大阪<br>`Tokyo` · 東京<br>`London` · ロンドン | `Make yourself at home.` · くつろいでください<br>`Help yourself.` · 自由に取ってください<br>`top` · いちばん上の |
+
+## `3-freetalking`
+
+| Lesson | New | Recycled | Assumed-known | Receptive-only |
+| --- | --- | --- | --- | --- |
+| [01-this-surprised-me](../tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/01-this-surprised-me/lesson.html) · **5 new** | `surprise` · 驚かせる<br>`expect` · 予想する<br>`react` · 反応する<br>`culture` · 文化<br>`turn out` · 実際には〜だとわかる | `happen` · 起こる ← CORE-54<br>`change` · 変わる ← CORE-47<br>`think` · 思う ← CORE-13 | `country` · 国<br>`Japan` · 日本<br>`film` · 映画<br>`shop` · 店<br>`coworker` · 同僚 | `expectation` · 予想<br>`source` · 出どころ |
+| [01-this-surprised-me](../tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/01-this-surprised-me/lesson.html) · **6 new** | `surprise` · 驚かせる<br>`expectation` · 予想<br>`assumption` · 思い込み<br>`react` · 反応する<br>`culture` · 文化<br>`turn out` · 実際には〜だとわかる | `expect` · 予想する ← CORE-56<br>`happen` · 起こる ← CORE-54<br>`change` · 変わる ← CORE-47 | `country` · 国<br>`Japan` · 日本<br>`film` · 映画<br>`shop` · 店<br>`coworker` · 同僚 | `source` · 出どころ<br>`perspective` · 見方 |
 
 ## Authoring rule
 

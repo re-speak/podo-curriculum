@@ -24,4 +24,4 @@ spec:
       - 소리 없는 ㅇ (silent initial ㅇ)
   outcome: 나 · 너 · 나무 · 누나 · 어머니 · 오이
   prerequisites: []
-  source: references/tracks/1-hangul.md
+  source: sandbox/authoring/kr/tracks/1-hangul/table-of-contents.md

@@ -110,24 +110,25 @@ python3 tools/plan.py --env stage              # what apply would do
 python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html \
         --out /tmp/deck                        # one deck, to inspect the zip
 
-python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/, references/
+python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/authoring/, references/
 python3 tools/sync-from-authoring.py --language english   # …or just the one language
-python3 tools/import-trial-decks.py            # …then rebuild the trial course
-python3 tools/import-report-deck.py            # promote the sandbox report deck
+python3 tools/import-trial-decks.py            # promote the reviewed Korean trial lessons
+python3 tools/import-report-deck.py            # promote the reviewed sandbox report deck
 ```
 
-The two sync tools find the authoring repository next door; pass its root (or one
-language directory) with `--upstream PATH`, or set `$PODO_AUTHORING_ROOT` if it
-sits somewhere else. `sync-from-authoring.py` mirrors every language it finds
-unless `--language` narrows it, and never infers one from a path — pointing
-`--upstream` at `korean/` while asking for `english` is an error, not a
-substitution. Run them in that order — the second reads the runtime the first
-mirrored. Neither is called by CI.
+The sync finds the authoring repository next door; pass its root (or one language
+directory) with `--upstream PATH`, or set `$PODO_AUTHORING_ROOT` if it sits
+somewhere else. It mirrors every language it finds unless `--language` narrows
+it, and never infers one from a path — pointing `--upstream` at `korean/` while
+asking for `english` is an error, not a substitution. Promotion tools read the
+reviewed sandbox mirror, never the external authoring tree. None is called by CI.
 
 `import-report-deck.py` reads no authoring tree — its source is this repo's own
 `sandbox/`, which `tools/model.py` refuses to walk. Re-run it after editing
-`sandbox/trial/reports/trial-1-report.html`; it rewrites `courses/kr/report-test/lessons/`
-from scratch and re-audits every `data-sync-id` on the way through.
+the report upstream, syncing, and reviewing
+`sandbox/authoring/kr/trial/reports/trial-1-report.html`; it rewrites
+`courses/kr/report-test/lessons/` from scratch and re-audits every
+`data-sync-id` on the way through.
 
 Decks are visual documents. Render them in a browser at 480px and look before
 claiming a change works.
@@ -154,8 +155,8 @@ the failure surface in production.
 ## The shared runtime
 
 `podo-curriculum-public/runtime/{css,js}` is the authoring source of truth.
-`shared/{css,js}` is this repository's release snapshot, copied from that source
-by `sync-from-authoring.py --runtime-only`; do not edit it independently. Decks
+`shared/{css,js}` is this repository's release snapshot, mirrored from that source
+with `sync-from-authoring.py --runtime-only`; do not edit it independently. Decks
 reference an immutable tag on the public mirror
 [`re-speak/podo-curriculum-shared`](https://github.com/re-speak/podo-curriculum-shared),
 declared once in `curriculum.yaml` under `spec.sharedRuntime`. One version for the
@@ -268,38 +269,37 @@ created once and survives them. That is what makes a re-deploy safe.
 ## Where the content comes from
 
 `podo-curriculum-public` is the authoring repository and the upstream for
-`shared/`, `sandbox/` and `references/`. Its root `runtime/` is shared by the
-language folders; this repo needs each deck self-contained, because grape flattens the
-uploaded zip into a single GCS prefix. So a sync is not a copy:
+`shared/`, `sandbox/authoring/` and `references/`. Its root `runtime/` is shared
+by the language folders. The complete curriculum-under-review is mirrored into
+the sandbox; verified courses are promoted explicitly because grape needs each
+deck packaged into a self-contained upload:
 
 | upstream | here | what changes |
 |---|---|---|
 | `runtime/{css,js}` | `shared/{css,js}` | nothing — straight mirror, and shared by every language |
-| `korean/trial/lessons/*.html` | `courses/kr/hangul-trial-test/` | refs flattened to basenames; static controls pass unchanged; synced runtime bundled per deck |
-| `korean/{trial/*,interactive}` | `sandbox/` | `runtime/` refs repointed at `shared/` |
-| `<lang>/tracks/*/sample-lesson.html` | `sandbox/track-samples/<code>/` | `runtime/` refs repointed at `shared/` |
-| `<lang>/tracks/*/table-of-contents.md` | `references/<code>/tracks/` | — |
+| `<lang>/tracks/` | `sandbox/authoring/<code>/tracks/` | complete review tree; HTML runtime refs repointed at `shared/` |
+| `korean/{trial,interactive}/` | `sandbox/authoring/kr/` | namespaced review copy; HTML runtime refs repointed at `shared/` |
 | `korean/references/`, `english/reference/` | `references/<code>/` | licensed scans dropped (see below) |
+| reviewed Korean trial lessons | `courses/kr/hangul-trial-test/` | explicit promotion: refs flattened and the mirrored runtime bundled; static controls pass through unchanged |
 
 Upstream keeps one directory per subject language — `korean/`, `english/` — and
-every destination that is a language's own carries its code: `kr`, `en`, the same
-codes as `courses/<code>/`. Both trees number their tracks from 1 and hold them at
-the same paths, so a shared destination would let one language overwrite the other
-by track number, silently. `sync-from-authoring.py` mirrors every language present
-by default; `--language english` narrows it to one.
+every destination carries its code: `kr`, `en`, the same codes as
+`courses/<code>/`. `sync-from-authoring.py` mirrors every language present by
+default; `--language english` narrows it to one. `--skip-runtime` refreshes
+content while deliberately leaving the already-synced `shared/` snapshot alone.
 
 Input controls are static at the authoring source. lemonboard's validator parses
 without running scripts, so `podo-curriculum-public` writes the real `<input>`,
 `<textarea>` and `.build-zone` elements and its canonical `activities.js` only
-binds behavior to them. Sync, import and CDN publication preserve that markup and
-runtime without a repository-local fork.
+binds behavior to them. Sync, sandbox review, promotion and CDN publication all
+preserve that same markup and runtime without a repository-local fork.
 
-Re-syncing replaces those directories wholesale, so **edit them upstream**, not
-here. `courses/`, `tools/`, `schemas/`, `docs/`, `shared/assets/` and
-`sandbox/archive/` are this repo's own.
+Re-syncing replaces `sandbox/authoring/<code>/` and the mirrored reference
+material wholesale, so **edit them upstream**, not here. `courses/`, `tools/`,
+`schemas/`, `docs/`, `shared/assets/` and `sandbox/archive/` are this repo's own.
 
 ## What is deliberately not here
 
 - **The PDF pipeline.** Page images, `podo-pdf-tool`, `BOOK_FILE_ID`, audio via `TB_COM_FILE`. Grape still owns all of it for legacy courses. This repo is HTML 교재 only.
 - **Textbook scans.** 41 licensed PDFs and `dekiru-kankokugo/page-images/` — 726MB of the 1.0GB in `korean/references/curricula` — stay in `podo-curriculum-public`. Only derived markdown and the wireframe PNGs moved.
-- **English courses.** The English curriculum is being authored, and its plan is mirrored to `references/en/`, but nothing ships from it yet. When it does it is `courses/en/` with `countryCode: JP` — the code is the subject taught, the country is the market — and `tools/model.py` already reads the language from that directory name.
+- **Deployable English courses.** The full English authoring tree is reviewable under `sandbox/authoring/en/`, but nothing ships from it yet. Promotion will put verified courses in `courses/en/` with `countryCode: JP` — the code is the subject taught, the country is the market.
