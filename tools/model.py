@@ -25,7 +25,11 @@ SCHEMAS = REPO / "schemas"
 # Cover images. grape decides the real format from the bytes, but catching it here
 # turns a 400 in a deploy log into a line in a PR — and the schema check below is
 # skipped when jsonschema is absent, so these rules run unconditionally instead.
-THUMBNAIL_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp"}
+#
+# PNG and JPEG only, because that is what the other end can actually read: grape
+# runs on php:7.0-apache, whose getimagesize() predates WebP (PHP 7.1) and would
+# reject every .webp as "not an image".
+THUMBNAIL_SUFFIXES = {".png", ".jpg", ".jpeg"}
 THUMBNAIL_MAX_BYTES = 2 * 1024 * 1024
 
 

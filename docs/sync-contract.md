@@ -40,6 +40,13 @@ Content-Type: multipart/form-data
 One course per request. Courses are independent, and a partial failure should
 cost one course rather than the whole curriculum.
 
+A course of N lessons therefore sends `2N + 1` files, and PHP silently discards
+every file past `max_file_uploads` — no error, just a `zip` that never arrives and
+a warning in the response. grape raises the limit to 200 for that reason; at the
+old default of 20, an 11-lesson course lost its last two decks on every apply.
+The cover is written last in the body, so if a limit is ever hit again it is the
+first thing dropped and never a deck.
+
 ### manifest
 
 ```json
@@ -120,7 +127,7 @@ becomes an orphan course nobody can reach or update.
 - **The cover is written only when the `cover` part arrives, and never cleared.** `course.thumbnail` in the manifest is a record for the log; the part itself is the signal. A course that names no thumbnail sends no part, and grape leaves `BOOK_THUMBNAIL` exactly as it was — because the repo is not the only author of that column. Most covers are uploaded by hand in grape admin, and "the YAML does not mention one" must not read as "delete it". Clearing a cover is an admin action.
 - **The cover key is the COVER row id, split by environment.** `course-thumbnail/{coverId}.{ext}` in prod, `course-thumbnail-{env}/…` everywhere else, exactly as `lemonboardHtmlPrefix()` splits deck objects and for the same reason: one bucket, and a stage database that is a prod clone down to the row ids. Replacing a cover overwrites that one object — no versions are kept — so the object carries `Cache-Control: no-cache`, which revalidates rather than refusing to cache.
 - **A cover that fails to upload is a warning, not a failure.** The course rows are already committed by then and the lesson decks are unaffected; failing the whole apply over a thumbnail would be a worse trade. The response reports `thumbnail: null` in that case, so the caller can still see it.
-- **The format is decided by the bytes, before the transaction opens.** A part that is not a PNG, JPEG or WebP is a `400` with nothing written, rather than an image-shaped object in a public bucket.
+- **The format is decided by the bytes, before the transaction opens.** A part that is not a PNG or JPEG is a `400` with nothing written, rather than an image-shaped object in a public bucket.
 - **Rooms are created once.** `ensureLessonHtmlLemonboardRoom()` already returns early when the key is set. Content updates are a GCS overwrite; the room key must survive them.
 - **Contract validation stays a hard gate.** Same call, same fail-open on 5xx, same block on `severity: error`.
 - **Both slots or neither.** Reject a lesson whose `prestudy` key would end up empty — class creation duplicates `/rooms/null/` and fails downstream.

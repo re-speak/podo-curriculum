@@ -145,7 +145,12 @@ def encode_multipart(manifest: dict, zips: dict[str, pathlib.Path],
              path.read_bytes())
 
     if cover is not None:
-        part(f'Content-Disposition: form-data; name="cover"; filename="{cover.name}"\r\n'
+        # 파일명은 검증된 확장자로 다시 짓는다. grape 는 이름을 쓰지 않고 확장자를 바이트로
+        # 판정하므로 잃는 것이 없고, 반대로 보낸 이름을 그대로 실으면 따옴표가 섞인 파일명
+        # 하나가 multipart 헤더를 깨뜨린다 — 문자 제한은 스키마에만 있고, jsonschema 가 없는
+        # 환경에서는 그 검사가 통째로 건너뛰어진다(model.check_schema).
+        part('Content-Disposition: form-data; name="cover"; '
+             f'filename="cover{cover.suffix.lower()}"\r\n'
              'Content-Type: application/octet-stream',
              cover.read_bytes())
 

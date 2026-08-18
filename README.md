@@ -64,7 +64,7 @@ spec:
 ```
 
 `thumbnail` is the one field whose absence is not a statement. Name a
-course-relative PNG/JPEG/WebP and it ships with the decks: grape uploads it and
+course-relative PNG or JPEG and it ships with the decks: grape uploads it and
 writes the URL to `BOOK_THUMBNAIL` on the COVER row, overwriting whatever was
 there. Leave the key out and the column is **not touched** — covers are also
 uploaded by hand in grape admin, and a course that says nothing about its cover
