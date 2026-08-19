@@ -1,7 +1,7 @@
 # English Curriculum — Current Build Plan
 
-**Status:** native catalog and all thirteen active representative pilots approved · first Core,
-Contextual and paired Freetalking course batches authored on `stage` and awaiting owner spot check
+**Status:** native catalog, all thirteen active representative pilots and the first generated
+Core, Contextual and paired Freetalking course batches owner-approved · next batch authorized
 
 **Current as of:** 2026-08-19
 
@@ -25,7 +25,7 @@ here only when it changes the starting point for future work.
 | Review surface | current generated 303-item production catalog owner-approved on 2026-08-18 with no requested row dispositions |
 | Core evidence | 122-row generated triage ledger complete; five priority rows resolved against current first-party sources; Core 76/105 productive bands remain provisional |
 | Core audit | final progression pass plus a 52-row corpus-informed naturalness audit for Core 71–122; no audit-led TOC changes are pending |
-| Automated quality | 94 regression tests; all 43 English HTML files pass with 0 errors and 0 warnings; all render without horizontal overflow, collapsed repeated-row spacing or missing pager clearance at 480px and 360px |
+| Automated quality | 105 regression tests; all 43 English HTML files pass with 0 errors and 0 warnings; all render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
 | Deployment | 43 disabled `course.yaml` plans exist, but no English `promotion.yaml` or `courses/en/` output exists; prestudy and learner-visible promotion remain open |
 
 The curriculum is no longer waiting for basic architecture, tooling, native catalog approval or
@@ -290,14 +290,14 @@ Within the approved curriculum scope:
 
 ## Immediate next action
 
-The first approved-shell course batches are on `stage`: Core 12–24, Contextual Travel 1–6, and the
-paired accessible/full Freetalking course 1–8. Their generators, immediate page-by-page
-proofreading, generated-source equality tests, full-corpus static checks and rendered checks form
-one review unit. Only after all of those pass is the immediate action an owner spot check across all
-three tracks and both Freetalking loads.
+The first approved-shell course batches—Core 12–24, Contextual Travel 1–6, and paired
+accessible/full Freetalking 1–8—passed immediate page-by-page proofreading, generated-source
+equality tests, full-corpus static checks, 360px/480px rendered checks and owner spot review on
+2026-08-19. The follow-up spacing defect in wrapped Contextual fill inputs was fixed in the shared
+component and added to the whole-corpus rendered gate before batch approval was closed.
 
-If that review passes, the next review unit is **39 new decks**: Core 1–11, Contextual Travel 7–12,
-and paired Freetalking 10–20 (FT-9 already exists). Author them from explicit, reviewable
+The next review unit is **39 new decks**: Core 1–11, Contextual Travel 7–12, and paired
+Freetalking 10–20 (FT-9 already exists). Author them from explicit, reviewable
 course-specific content data while reusing the approved shell-building machinery. The three first-
 batch generators are deliberately narrow; do not turn their hard-coded content into an implicit
 universal generator. Run exact-generation tests, the full checker, the running-lexicon rebuild and

@@ -81,7 +81,8 @@ def probe_expression() -> str:
             checkSiblings([...dialogue.children].filter(turn => turn.classList.contains('turn')),
                           'dialogue-turn', 12));
           page.querySelectorAll('.answer-fill .korean').forEach(line =>
-            checkSiblings([...line.querySelectorAll('.phrase-input')], 'phrase-input', 6));
+            checkSiblings([...line.querySelectorAll('.slot-input, .phrase-input')],
+                          'inline-answer-input', 8));
           const previousMinHeight = page.style.minHeight;
           page.style.minHeight = '0px';
           const rect = page.getBoundingClientRect();

@@ -45,6 +45,9 @@ of isolating the decision, and a generic vocabulary list occupied the native-tip
   bytes.
 - The generated-corpus test enumerates all 29 generator-owned decks across Core, Contextual and
   Freetalking and requires zero checker errors and zero warnings.
+- Rendered QA measures both controlled `.slot-input` fields and longer `.phrase-input` fields on
+  wrapped rows. The first version covered only the latter, which is why Contextual fill pages could
+  still render touching input borders while the batch reported clean.
 
 ## Audit performed
 
