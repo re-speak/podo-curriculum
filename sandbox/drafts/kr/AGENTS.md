@@ -45,7 +45,7 @@ you are about to make conflicts with it, say so and ask — don't quietly deviat
   a tutor can no more resolve 「90과」 on sight than a learner can. Japanese that genuinely
   helps goes in `.tutor-note` with its Hangul reading in parentheses. In 2-core-patterns the
   form's Japanese equivalent lives in the `.anchor` slot, whose reading comes from
-  `tools/ja_to_hangul.py` — never typed by hand. `tools/check_teaching.py` enforces all of it;
+  `tools/authoring/kr/ja_to_hangul.py` — never typed by hand. `tools/authoring/kr/check_teaching.py` enforces all of it;
   see `AUTHORING.md` § 가르치는 면에 걸리는 다섯 가지.
 - **Lessons are audio-only.** The learner hears the tutor but never sees them, so no
   instruction may depend on watching the tutor (口の形をまねして, gestures, "look at me").
@@ -88,14 +88,14 @@ applying anything.
 Four inputs, in this order. Read them all — the budget saved by the first two is there to be
 spent on the last one.
 
-1. **`tools/new_lesson.py`** stamps the deck skeleton. The meta block, the stylesheet links and
+1. **`tools/authoring/kr/new_lesson.py`** stamps the deck skeleton. The meta block, the stylesheet links and
    the sixteen script tags whose load order is load-bearing are not yours to retype — the script
    lifts them off the track's canonical deck so they cannot drift.
-   `python3 korean/tools/new_lesson.py --track 3-contextual-korean --course ctx-drama-crush-intermediate --lesson 1 --id 01-first-meeting --title-ko "첫 만남" --title-ja "初対面" --title-en "First meeting"`
+   `python3 tools/authoring/kr/new_lesson.py --track 3-contextual-korean --course ctx-drama-crush-intermediate --lesson 1 --id 01-first-meeting --title-ko "첫 만남" --title-ja "初対面" --title-en "First meeting"`
 2. **`tracks/<track>/toc/<course-code>/lesson-NNN.md`** — the course-scoped textual brief:
    what this lesson teaches, its course context and the lessons on either side. Core patterns,
    whose numbers never restart, keeps its richer legacy path `toc/lesson-NNN.md`. Both are
-   generated from `table-of-contents.md` by `tools/build_lesson_briefs.py`; **never hand-edit a
+   generated from `table-of-contents.md` by `tools/authoring/kr/build_lesson_briefs.py`; **never hand-edit a
    brief**, edit the TOC/parser and re-run. Read the brief, not the full TOC.
 3. **`tracks/<track>/lesson-blueprint.md`** — which pages, in what order, doing what. Plan the
    arc from here.
@@ -106,10 +106,10 @@ spent on the last one.
    comes out correctly shaped and lifeless.
 
 Regenerate the briefs after any TOC change:
-`python3 korean/tools/build_lesson_briefs.py korean/tracks/<track>`
+`python3 tools/authoring/kr/build_lesson_briefs.py sandbox/drafts/kr/tracks/<track>`
 
 **Before trusting a local render, check the runtime you rendered against.**
-`python3 korean/tools/check_runtime_drift.py` compares `runtime/` with the CDN tag
+`python3 tools/authoring/kr/check_runtime_drift.py` compares `runtime/` with the CDN tag
 production actually serves. Deployed decks load that tag, not this folder — so when
 the two differ, the page you approved at 480px is not the page the learner gets, and
 nothing errors to tell you. A component that only exists locally just renders unstyled.
@@ -185,7 +185,7 @@ course schema and is part of grape's natural key. This Japanese-market authoring
 deploy the old identity with `enabled: false`, then change `countryCode` and deploy the new identity.
 
 **A track is not a course.** 2-core-patterns is 116 lessons; a deployable course is one
-`classLevel` with weeks 1..N and no gaps. `tools/plan_courses.py` cuts the track against
+`classLevel` with weeks 1..N and no gaps. `tools/authoring/kr/plan_courses.py` cuts the track against
 its TOC into ~12-lesson courses on unit boundaries, and writes `course.yaml` /
 `lesson.yaml` that already validate against podo-curriculum's `schemas/` — so the sync is
 a copy, not a translation. Decks live at
@@ -195,15 +195,22 @@ Lesson slugs are `NN-english-words` (`07-daily-routine`) because the schema dema
 the deck's `podo:lesson-id` must equal its directory name. `lesson.yaml` is written only for
 lessons that have a deck; the rest of the plan lives as comments in `course.yaml`.
 
-`sync-from-authoring.py` copies the complete track tree — TOCs, briefs, blueprints, manifests and
-ordinary lessons — into `sandbox/authoring/kr/`. Nothing there deploys. Review that mirror first,
-then run the explicit promotion path for the Korean course so it moves into `courses/kr/` without
-translating `countryCode`, followed by `repoint-shared.py` → `validate.py`. `podo:lesson-id` and
-`podo:title-{ko,en,ja}` are load-bearing — `new_lesson.py` writes them and they must not be removed.
+**There is no sync any more.** This tree *is* the source — `sync-from-authoring.py` was
+deleted with the move, not deprecated. A course reaches learners by being named in
+`promotion.yaml` and promoted into `courses/kr/`:
 
-**Never edit `shared/` or `sandbox/authoring/` in podo-curriculum.** Both are sync destinations
-and get replaced wholesale; a fix made there disappears on the next sync with no error.
-Fix it here instead.
+```sh
+python3 tools/promote.py --check      # what would ship
+python3 tools/promote.py              # write courses/
+python3 tools/repoint-shared.py && python3 tools/validate.py
+```
+
+`podo:lesson-id` and `podo:title-{ko,en,ja}` are load-bearing — `new_lesson.py` writes them
+and they must not be removed.
+
+**Never edit `courses/` by hand.** `promote.py` owns every `lessons/` directory it writes and
+clears it on each run, so a hand edit disappears on the next promotion with nothing reporting
+it. Fix it here, in the draft, and promote again.
 
 ### What the catalogue shows, and where each string comes from
 
@@ -215,10 +222,10 @@ only Korean well means writing well in the one language the learner never reads.
 
 | What a learner sees | Row | Source here |
 |---|---|---|
-| course title | `BOOK_TYPE=COVER`, `CLASS_WEEK=0` | `course.yaml` → `spec.title.{ko,en,ja}`, composed by `plan_courses.py` |
-| course tagline | same row's `DESCRIPTION` | `tools/course-copy.json` — `ko` may fall back to the TOC's 끝내면 할 수 있는 것 line |
+| course title | `BOOK_TYPE=COVER`, `CLASS_WEEK=0` | `course.yaml` → `spec.title.{ko,en,ja}`, composed by `tools/authoring/kr/plan_courses.py` |
+| course tagline | same row's `DESCRIPTION` | `tools/authoring/kr/course-copy.json` — `ko` may fall back to the TOC's 끝내면 할 수 있는 것 line |
 | lesson title | `BOOK_TYPE=MAIN`, `CLASS_WEEK=N` | the deck's `podo:title-{ko,en,ja}`, read into `lesson.yaml` |
-| lesson can-do | same row's `DESCRIPTION` | **not exported yet** — see below |
+| lesson can-do | same row's `DESCRIPTION` | **nothing sends it** — see below |
 
 `DIFFICULTY` is five bands wide and the live catalogue leans hardest on the two it is easiest
 to drop: `UPPER_BEGINNER` and `UPPER_INTERMEDIATE` together carry more deployed lessons than
@@ -226,20 +233,33 @@ to drop: `UPPER_BEGINNER` and `UPPER_INTERMEDIATE` together carry more deployed 
 not be collapsed into their neighbours. `DIFFICULTY` is not part of the natural key, so this
 stays a cheap update — but only while a course is still `enabled: false`.
 
-**Three things this tree cannot finish on its own.** All need `re-speak/podo-curriculum`,
-whose `schemas/` reject unknown fields, so none of them may be guessed at from here:
+**Nothing checks the spelling.** `schemas/course.schema.json` types `difficulty` as a bare
+string, so `Upper beginner` or `UPPER-BEGINNER` validates, deploys, and lands in grape as a
+band the app does not know. The five values are `BEGINNER`, `UPPER_BEGINNER`,
+`INTERMEDIATE`, `UPPER_INTERMEDIATE`, `ADVANCED`; `plan_courses.py` is the only thing that
+currently keeps them right.
 
-1. **A `COVER` row per course.** `course.yaml` carries a course title and description but
-   states no `BOOK_TYPE`. If the exporter writes only `MAIN` rows, the course title never
-   reaches a screen no matter how well it is written. Verify before treating this as done.
-2. **A lesson-level `DESCRIPTION`.** Every live `MAIN` row has one; ours have none.
-   `lesson.yaml` already carries `teaches.canDo`, which is the right sentence in Korean — the
-   missing pieces are a schema field to put it in and its `ja`/`en` siblings for 494 lessons.
-3. **The `"N. "` title prefix.** Live rows store it, in all three languages, matching
-   `CLASS_WEEK`; 100% of BEGINNER and ADVANCED rows carry it. Prepend it **at export from
-   `CLASS_WEEK`**, not in the deck — a course re-cut would otherwise rot every baked number by
+### What still has no path to a learner
+
+The course side is complete: `tools/plan.py` emits a `COVER` row per course and `tools/apply.py`
+sends `title` and `description` with it, so a well-written course name does reach a screen.
+Three lesson-side gaps remain, and all three now live in *this* repository:
+
+1. **A lesson-level `DESCRIPTION`.** Every live `MAIN` row has one; ours have none. The lesson
+   entry `apply.py` builds carries only `slug`, `week`, `title` and `decks`. `lesson.yaml`
+   already holds `teaches.canDo` — the right sentence in Korean — but
+   `schemas/lesson.schema.json` sets `additionalProperties: false` and its `outcome` field is a
+   plain string rather than a localised object. Closing this means a localised field in the
+   schema, a line in `apply.py`, and `ja`/`en` siblings for 494 can-dos.
+2. **The `"N. "` title prefix.** Live rows store it, in all three languages, matching
+   `CLASS_WEEK`; 100% of BEGINNER and ADVANCED rows carry it. `apply.py` sends
+   `lesson.spec["title"]` verbatim, so nothing adds it today. Prepend it **there, from
+   `CLASS_WEEK`** — not in the deck, where a course re-cut would rot every baked number by
    hand. Topic-pick courses (Smart Talk, role-play) are never numbered, so the rule is
    per-course, not global.
+3. **`VER_YEAR` / `VER_NUM`.** Live 2025 content stamps `2025 / 3`; the B2B families leave both
+   null. `course.schema.json` has no field for either and rejects unknown properties, so this
+   needs a schema change before a course can carry it.
 
 ## Interactive lessons
 
@@ -335,9 +355,9 @@ same document, so anything in the markup is already on the learner's screen.
   gateway (hero, five track cards, 완성된 레슨 덱, level ladder); `catalog/<track>.html` is that
   track's full contents — every 과, what it teaches, and the pattern marked inside its own example
   sentence. All six pages are built from the five `table-of-contents.md` files by
-  `tools/build_catalog.py`, out of `tools/gateway_template.html` and `tools/track_template.html`.
+  `tools/authoring/kr/build_catalog.py`, out of `tools/authoring/kr/gateway_template.html` and `tools/authoring/kr/track_template.html`.
   They hold no facts of their own, so a wrong number there is a wrong number in a TOC. Re-run
-  `python3 korean/tools/build_catalog.py` after any TOC change, alongside
+  `python3 tools/authoring/kr/build_catalog.py` after any TOC change, alongside
   `build_lesson_briefs.py`.
 
   **Written decks link straight out of the catalog, and the disk decides which ones.** The build

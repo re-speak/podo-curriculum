@@ -201,7 +201,7 @@ blocks on any `severity: error`. Without `PODO_LEMONBOARD_API_KEY` it refuses to
 than letting an auth rejection read as a clean pass.
 
 Copy from a deck that passes the gate rather than inventing markup —
-[`courses/kr/taiken-trial/lessons/06-taiken-self-intro`](courses/kr/taiken-trial/lessons/06-taiken-self-intro)
+[`courses/kr/trial-lv2-patterns/lessons/01-trial-patterns`](courses/kr/trial-lv2-patterns/lessons/01-trial-patterns)
 carries all four shapes (typed blank, write-in area, tap-one-of-two, order-the-chips) with
 the controls written straight into the HTML.
 
@@ -213,6 +213,24 @@ the controls written straight into the HTML.
   a 15-minute Level 3 and a 25-minute Level 3 are different products. Moving a live course
   takes two deploys: first retire the old identity with `enabled: false`, then change the
   identity and re-enable it.
+- **A course is named three times, and the learner reads only one of them.**
+  `GT_CLASS_COURSE` keeps `BOOK_NAME` (ko), `EN_BOOK_NAME` and `JP_BOOK_NAME`, and the app
+  picks by the learner's locale — so for a `countryCode: JP` course, `spec.title.ja` is the
+  string on screen and `ko` is grape's admin label. `spec.description` is the same shape and
+  is learner-facing prose, not a note to yourself: it becomes the course's tagline under the
+  title. Fill all three languages of both. `tools/apply.py` sends whatever is there, including
+  nothing.
+- **`difficulty` is a five-value enum that nothing validates.** `BEGINNER`,
+  `UPPER_BEGINNER`, `INTERMEDIATE`, `UPPER_INTERMEDIATE`, `ADVANCED` — but
+  `schemas/course.schema.json` types it as a bare string, so `Upper beginner` passes
+  validation, deploys, and reaches grape as a band the app does not know. The two middle
+  values carry more of the live catalogue than the other three combined; do not collapse them
+  into their neighbours. The full convention, and how each track maps onto it, is in
+  `sandbox/drafts/kr/AGENTS.md` and `sandbox/drafts/en/AGENTS.md`.
+- **Lesson rows ship a title but no description.** Every course in the live catalogue gives
+  each lesson a one-line can-do; ours send `slug`, `week`, `title` and `decks` only. Live rows
+  also carry an `"N. "` prefix matching `CLASS_WEEK`, which nothing here adds. Both are open
+  work, written up under *What still has no path to a learner* in `sandbox/drafts/kr/AGENTS.md`.
 - **There is no state lock.** Identity lives in the DB's natural key, so nothing is written back to git.
 - **Both deck slots are mandatory.** A lesson with only 수업용 fails class creation at `/rooms/null/duplicate`.
 - **`sandbox/` cannot deploy** — `tools/model.py` only walks `courses/`. Put speculative work there; promoting it is the move into `courses/`.
@@ -222,7 +240,9 @@ the controls written straight into the HTML.
   updates, and the learner keeps seeing it while the deploy goes green. Set
   `enabled: false`, let that deploy, *then* delete the directory. `promote.py`
   stops and offers to write the flag for you; `validate.py` layer 6 fails the PR
-  if you go around it.
+  if you go around it. When the rows cannot be deleted at all — class history
+  hangs off them — clean up the rows and GCS objects by hand and declare it with a
+  `Retired-course: courses/<code>/<slug>` trailer on a commit in the PR.
 - **Run `python3 tools/validate.py` before pushing.** It catches the things that otherwise 404 from GCS while the build prints success.
 
 ## Not in scope

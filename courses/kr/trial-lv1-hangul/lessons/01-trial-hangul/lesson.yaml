@@ -7,9 +7,9 @@ spec:
   week: 1
 
   title:
-    ko: 체험 · 왕초보 한글
-    en: Trial · Hangul from zero
-    ja: 体験レッスン 超入門
+    ko: "체험 · 왕초보 한글"
+    en: "Trial · Hangul from zero"
+    ja: "体験レッスン 超入門"
 
   decks:
     lecture:  { entry: lecture/index.html }

@@ -1,0 +1,95 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/core-beginner-3
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 20-with-and-to/lesson.html
+      slug: 20-with-and-to
+      week: 1
+      title:
+        ko: "\uce5c\uad6c\ud558\uace0 \uac19\uc774 \ubd10\uc694 \u00b7 \ub204\uad6c\uc640, \ub204\uad6c\uc5d0\uac8c"
+        en: "I watch with a friend \u2014 with whom, to whom"
+        ja: "\u53cb\u3060\u3061\u3068\u4e00\u7dd2\u306b\u898b\u307e\u3059 \u00b7 \u8ab0\u3068\u3001\u8ab0\u306b"
+    - source: 21-too-and-only/lesson.html
+      slug: 21-too-and-only
+      week: 2
+      title:
+        ko: "\uc800\ub3c4 \ucee4\ud53c \uc8fc\uc138\uc694 \u00b7 \uac19\uc740 \uac78\ub85c, \uc774\uac83\ub9cc"
+        en: "Coffee for me too \u2014 also and only"
+        ja: "\u79c1\u3082\u30b3\u30fc\u30d2\u30fc\u304f\u3060\u3055\u3044 \u00b7 \u540c\u3058\u3082\u306e\u3001\u3053\u308c\u3060\u3051"
+    - source: 22-and-then/lesson.html
+      slug: 22-and-then
+      week: 3
+      title:
+        ko: "\uc544\uce68\uc744 \uba39\uace0 \ud68c\uc0ac\uc5d0 \uac00\uc694 \u00b7 \uc787\uace0 \uace0\ub974\uae30"
+        en: "I eat then go to work \u2014 joining and choosing"
+        ja: "\u671d\u3054\u306f\u3093\u3092\u98df\u3079\u3066\u4f1a\u793e\u306b\u884c\u304d\u307e\u3059 \u00b7 \u3064\u306a\u3050\u3001\u9078\u3076"
+    - source: 23-comparing/lesson.html
+      slug: 23-comparing
+      week: 4
+      title:
+        ko: "\ucee4\ud53c\ubcf4\ub2e4 \ucc28\uac00 \uc88b\uc544\uc694 \u00b7 \ube44\uad50\ud558\uace0 \uace0\ub974\uae30"
+        en: "Tea over coffee \u2014 comparing and choosing"
+        ja: "\u30b3\u30fc\u30d2\u30fc\u3088\u308a\u304a\u8336\u304c\u3044\u3044\u3067\u3059 \u00b7 \u6bd4\u3079\u3066\u9078\u3076"
+    - source: 24-formal-speech/lesson.html
+      slug: 24-formal-speech
+      week: 5
+      title:
+        ko: "\uc800\ub294 \ud68c\uc0ac\uc6d0\uc785\ub2c8\ub2e4 \u00b7 \uaca9\uc2dd \ucc28\ub824 \ub9d0\ud558\uae30"
+        en: "I am an office worker \u2014 speaking formally"
+        ja: "\u79c1\u306f\u4f1a\u793e\u54e1\u3067\u3059 \u00b7 \u304b\u3057\u3053\u307e\u3063\u3066\u8a71\u3059"
+    - source: 25-past-tense/lesson.html
+      slug: 25-past-tense
+      week: 6
+      title:
+        ko: "\uc5b4\uc81c \uce5c\uad6c\ub97c \ub9cc\ub0ac\uc5b4\uc694 \u00b7 \uc9c0\ub09c \uc77c \ub9d0\ud558\uae30"
+        en: "I met a friend yesterday \u2014 the past tense"
+        ja: "\u6628\u65e5\u53cb\u3060\u3061\u306b\u4f1a\u3044\u307e\u3057\u305f \u00b7 \u904e\u304e\u305f\u3053\u3068\u3092\u8a71\u3059"
+    - source: 26-when-was-it/lesson.html
+      slug: 26-when-was-it
+      week: 7
+      title:
+        ko: "\uadf8\uac70 \uc5b8\uc81c \uac14\uc5b4\uc694? \u00b7 \uc5b8\uc81c\uc600\ub294\uc9c0"
+        en: "When did you go? \u2014 asking when"
+        ja: "\u305d\u308c\u3044\u3064\u884c\u304d\u307e\u3057\u305f\u304b? \u00b7 \u3044\u3064\u3060\u3063\u305f\u304b"
+    - source: 27-why-and-because/lesson.html
+      slug: 27-why-and-because
+      week: 8
+      title:
+        ko: "\uc65c \uc548 \uc654\uc5b4\uc694? \u00b7 \uc774\uc720 \ubb3b\uace0 \ub2f5\ud558\uae30"
+        en: "Why didn't you come? \u2014 reasons"
+        ja: "\u306a\u305c\u6765\u306a\u304b\u3063\u305f\u3093\u3067\u3059\u304b? \u00b7 \u7406\u7531\u3092\u805e\u3044\u3066\u7b54\u3048\u308b"
+    - source: 28-but-and-still/lesson.html
+      slug: 28-but-and-still
+      week: 9
+      title:
+        ko: "\uc5b4\ub835\uc9c0\ub9cc \uc7ac\ubbf8\uc788\uc5b4\uc694 \u00b7 \uc88b\uc740 \uc810\uacfc \uc544\uc26c\uc6b4 \uc810"
+        en: "Hard but fun \u2014 upsides and downsides"
+        ja: "\u96e3\u3057\u3044\u3051\u3069\u9762\u767d\u3044\u3067\u3059 \u00b7 \u3044\u3044\u3068\u3053\u308d\u3001\u60dc\u3057\u3044\u3068\u3053\u308d"
+    - source: 29-how-do-i-get-there/lesson.html
+      slug: 29-how-do-i-get-there
+      week: 10
+      title:
+        ko: "\uc5b4\ub5bb\uac8c \uac00\uc694? \u00b7 \uac00\ub294 \ubc29\ubc95 \ubb3b\uae30"
+        en: "How do I get there? \u2014 asking the way"
+        ja: "\u3069\u3046\u3084\u3063\u3066\u884c\u304d\u307e\u3059\u304b? \u00b7 \u884c\u304d\u65b9\u3092\u805e\u304f"
+    - source: 30-how-long-its-been/lesson.html
+      slug: 30-how-long-its-been
+      week: 11
+      title:
+        ko: "\ud55c\uad6d\uc5d0 \uc628 \uc9c0 \ub450 \ub2ec \ub410\uc5b4\uc694 \u00b7 \uc5bc\ub9c8\ub098 \ub410\ub294\uc9c0"
+        en: "Two months since I came \u2014 how long it's been"
+        ja: "\u97d3\u56fd\u306b\u6765\u3066\u4e8c\u304b\u6708\u3067\u3059 \u00b7 \u3069\u308c\u304f\u3089\u3044\u7d4c\u3063\u305f\u304b"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

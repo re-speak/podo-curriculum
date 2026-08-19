@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/ctx-travel-shopping-upper-beginner
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-browsing/lesson.html
+      slug: 01-browsing
+      week: 1
+      title:
+        ko: "\ub458\ub7ec\ubcf4\uae30"
+        en: "Browsing"
+        ja: "\u5e97\u5185\u3092\u898b\u308b"
+    - source: 02-sizes-and-stock/lesson.html
+      slug: 02-sizes-and-stock
+      week: 2
+      title:
+        ko: "\uc0ac\uc774\uc988 & \uc7ac\uace0"
+        en: "Sizes and stock"
+        ja: "\u30b5\u30a4\u30ba\u3068\u5728\u5eab"
+    - source: 03-discounts-and-deals/lesson.html
+      slug: 03-discounts-and-deals
+      week: 3
+      title:
+        ko: "\ud765\uc815 & \ud61c\ud0dd"
+        en: "Discounts and deals"
+        ja: "\u5272\u5f15\u3068\u7279\u5178"
+    - source: 04-trying-things-on/lesson.html
+      slug: 04-trying-things-on
+      week: 4
+      title:
+        ko: "\ucc29\uc6a9 \uc694\uccad"
+        en: "Trying things on"
+        ja: "\u8a66\u7740\u3092\u304a\u9858\u3044\u3059\u308b"
+    - source: 05-checking-the-price/lesson.html
+      slug: 05-checking-the-price
+      week: 5
+      title:
+        ko: "\uac00\uaca9 \ud655\uc778"
+        en: "Checking the price"
+        ja: "\u4fa1\u683c\u3092\u78ba\u8a8d\u3059\u308b"
+    - source: 06-comparing-products/lesson.html
+      slug: 06-comparing-products
+      week: 6
+      title:
+        ko: "\uc0c1\ud488 \ube44\uad50"
+        en: "Comparing products"
+        ja: "\u5546\u54c1\u3092\u6bd4\u3079\u308b"
+    - source: 07-payment-methods/lesson.html
+      slug: 07-payment-methods
+      week: 7
+      title:
+        ko: "\uacb0\uc81c \uc218\ub2e8"
+        en: "Payment methods"
+        ja: "\u652f\u6255\u3044\u65b9\u6cd5"
+    - source: 08-gift-wrapping/lesson.html
+      slug: 08-gift-wrapping
+      week: 8
+      title:
+        ko: "\uc120\ubb3c \ud3ec\uc7a5"
+        en: "Gift wrapping"
+        ja: "\u30ae\u30d5\u30c8\u5305\u88c5"
+    - source: 09-exchanges-and-refunds/lesson.html
+      slug: 09-exchanges-and-refunds
+      week: 9
+      title:
+        ko: "\uad50\ud658 & \ud658\ubd88"
+        en: "Exchanges and refunds"
+        ja: "\u4ea4\u63db\u3068\u8fd4\u54c1"
+    - source: 10-tax-refund/lesson.html
+      slug: 10-tax-refund
+      week: 10
+      title:
+        ko: "\ud0dd\uc2a4 \ub9ac\ud380\ub4dc"
+        en: "Tax refund"
+        ja: "\u30bf\u30c3\u30af\u30b9\u30ea\u30d5\u30a1\u30f3\u30c9"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

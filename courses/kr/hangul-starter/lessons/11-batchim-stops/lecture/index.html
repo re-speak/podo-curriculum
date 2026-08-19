@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <meta name="podo:lesson-id" content="11-batchim-stops">
+  <meta name="podo:level" content="왕초급">
+  <meta name="podo:content-version" content="2026-08-10">
+  <meta name="podo:title-ko" content="받침 ② 막는 소리">
+  <meta name="podo:title-en" content="Batchim II — the stops">
+  <meta name="podo:title-ja" content="パッチム② 止める音">
+  <title>받침 ② 막는 소리 — PODO 韓国語</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/css/lesson-card.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/css/trial.css">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+  <div class="phone">
+
+    <!-- ================================================================
+         과 11 · 받침 ② 막는 소리 — ㄱ ㄷ ㅂ, and the seven final sounds
+
+         TWO IDEAS, AND THEY ARE NOT THE SAME ONE.
+
+         (1) A stop 받침 is NOT RELEASED. 밥 does not end with a /p/; the
+             air is cut off and that is the end of the word. Japanese っ
+             is the anchor and the learner already owns it — while the kana
+             LINE still says パプ, because that is how the rest of the track
+             writes it (과 12: 닭 タク) and プ is exactly the syllable to
+             stop short of. The anchor is a gesture; the kana is a
+             spelling, and the deck says so out loud. This half
+             costs almost nothing — provided it is taught on letters
+             whose spelling and sound agree. Part 1 uses only ㄱ ㄷ ㅂ
+             for exactly that reason.
+
+         (2) SEVEN LETTERS, SEVEN SOUNDS. ㅋㄲ→ㄱ, ㅅㅆㅈㅊㅌㅎ→ㄷ, ㅍ→ㅂ.
+             This is a READING rule, and it is the first time in the whole
+             track that a letter is not read as itself. That is a genuine
+             shift, so Part 2 opens by naming it (seven-intro) instead of
+             slipping it in as a footnote on Part 1.
+
+         Teaching them in the other order would make (1) unlearnable: a
+         learner asked to cut the air off on 옷 has to solve the spelling
+         puzzle first, and then cannot tell which half they got wrong.
+
+         SEAT COLOUR is 과 10's, and this deck only keeps using it:
+         .seat-lrb / .seat-tbb are the two-seat blocks with the blue floor
+         added underneath, and .seat-b is a 받침 letter on its own. Nothing
+         is re-introduced here — the floor already means 받침 by the time
+         this lesson opens, which is exactly why 밑에 한 글자 더 can be one
+         page instead of three. The colour goes off where the drill is
+         about hearing or about the sound rather than the structure: every
+         .tap-tile stays plain, and so do the two speed pages.
+
+         No .builder anywhere: hangul-activities.js composes syllables
+         with compose(cho, jung) and cannot put anything in the bottom
+         slot, so the track's 받아쓰기 rung is replaced by 찾기 drills.
+
+         연음 is 과 13's. Every word here is read in isolation — 한국 yes,
+         한국어 → [한구거] no.
+         ================================================================ -->
+
+    <!-- the goal, stated plainly: the three real words you'll read by the
+         end. a dark page, so it uses the transition-page shell -->
+    <div class="transition-page" data-page-id="lesson-goal" data-act="막는 소리">
+      <span class="transition-kicker">목표</span>
+      <h2 class="transition-title">오늘의 목표 <span class="title-ja">(今日のゴール)</span></h2>
+      <p class="section-subtitle"><span class="ko">소리를 딱 끊는 받침이에요. 이 세 단어를 혼자 읽게 될 거예요.</span><span class="ja">「音をぴたっと止める」パッチムです。この3つの単語を自分で読めるようになります。</span></p>
+      <div class="known">
+        <div class="known-row"><span class="k">책</span><span class="j">本<small>チェク</small></span></div>
+        <div class="known-row"><span class="k">밥</span><span class="j">ごはん<small>パプ</small></span></div>
+        <div class="known-row"><span class="k">앞</span><span class="j">前<small>アプ</small></span></div>
+      </div>
+    </div>
+
+    <!-- warm-up, and the contrast the whole lesson hangs on: last time the
+         받침 kept ringing. Today's does the opposite, so the ringing side
+         has to be warm before the stop can be heard as its opposite. -->
+    <div class="section" data-page-id="review-batchim">
+      <h2 class="section-title">지난 시간 받침 <span class="title-ja">(前回のパッチム)</span></h2>
+      <p class="section-subtitle"><span class="ko">지난 시간에 배운 받침이에요. 소리가 끝까지 울려요. 먼저 읽어 보세요.</span><span class="ja">前回習ったパッチムです。音が最後まで響きます。まず読んでみましょう。</span></p>
+      <div class="read-grid">
+        <span class="read-chip seat-lrb">산</span>
+        <span class="read-chip seat-lrb">밤</span>
+        <span class="read-chip seat-lrb">강</span>
+        <span class="read-chip seat-lrb">발</span>
+        <span class="read-chip seat-tbb">문</span>
+        <span class="read-chip seat-lrb">길</span>
+      </div>
+    </div>
+
+    <!-- Part 1 · the stops themselves. Spelling and sound agree on all
+         three, so nothing here asks the learner to read a letter as
+         another letter — that is Part 2's job and it needs this first. -->
+    <div class="transition-page" data-page-id="stops-intro">
+      <span class="transition-kicker">パート 1</span>
+      <h2 class="transition-title">막는 소리 <span class="title-ja">(止める音)</span></h2>
+      <p class="section-subtitle"><span class="ko">오늘 받침은 반대예요. 울리지 않고 소리를 딱 끊어요. 글자는 ㄱ, ㄷ, ㅂ 세 개예요.</span><span class="ja">今日のパッチムは反対です。響かせないで、音をぴたっと切ります。文字は ㄱ・ㄷ・ㅂ の3つです。</span></p>
+    </div>
+
+    <!-- teach · the っ anchor. The learner already makes this sound a
+         hundred times a day in いっぱい; what is new is that Korean writes
+         it as a letter on the floor. So the strip starts from a block they
+         can already read and adds one letter under it. -->
+    <div class="section" data-page-id="stop-block">
+      <h2 class="section-title">밑에 한 글자 더 <span class="title-ja">(下にもう1文字)</span></h2>
+      <p class="section-subtitle"><span class="ko">아는 글자 ‘바’ 밑에 ㅂ을 놓으면 ‘밥’이에요. 마지막 소리는 내지 않고 그냥 멈춰요.</span><span class="ja">知っている文字「바」の下に ㅂ を置くと「밥」。最後の音は出さずに、そのまま止めます。</span></p>
+      <div class="build">
+        <span class="b"><span class="tile seat-lr">바</span><small>ここまでは同じ</small></span>
+        <span class="op">＋</span>
+        <span class="b"><span class="tile seat-b">ㅂ</span><small>下に置く</small></span>
+        <span class="op">→</span>
+        <span class="b"><span class="tile seat-lrb res">밥</span><small>パプ</small></span>
+      </div>
+      <div class="hint"><span class="hint-chip">「いっぱい」の「っ」と同じ止め方</span><span class="hint-chip">カタカナは「プ」と書くしかない。でも言い切らない</span></div>
+    </div>
+
+    <!-- drill 1 · the easiest question the new letter can be asked: is
+         there a floor or not. The answer side alternates R·L·R so tapping
+         one column cannot score 3/3 without listening. -->
+    <div class="section" data-page-id="listen-stop-or-not">
+      <h2 class="section-title">듣고 고르기 <span class="title-ja">(聞いて選ぼう)</span></h2>
+      <p class="section-subtitle"><span class="ko">제가 읽을게요. 듣고 맞는 쪽을 눌러 보세요.</span><span class="ja">私が読みます。聞いて、正しいほうをタップしてください。</span></p>
+      <div class="tutor-note">표시된 쪽을 한 줄에 하나씩 읽어 주세요. 받침은 터뜨리지 말고 끊어 주세요.</div>
+      <div class="tap-grid rows" data-sync-id="tiles-listen-stop-or-not" data-sync-kind="selection" data-sync-state="right wrong">
+        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-sync-option="바">바</button><button class="tap-tile" data-ok="1" data-sync-option="밥">밥</button></div>
+        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-ok="1" data-sync-option="각">각</button><button class="tap-tile" data-sync-option="가">가</button></div>
+        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-sync-option="오">오</button><button class="tap-tile" data-ok="1" data-sync-option="옥">옥</button></div>
+      </div>
+    </div>
+
+    <!-- teach · the three letters in real blocks, exactly as 과 10 taught
+         its four: the .sound column comes apart into 자음 ＋ 모음 ＋ 받침 so
+         the floor is a part with a name. The kana column is the ordinary
+         Japanese rendering the rest of the track uses (과 12 writes 닭 タク,
+         값 カプ) — kept deliberately, because ク and プ are precisely the
+         two syllables the learner must NOT finish saying, and a page that
+         quietly wrote them as ッ would hide the mistake instead of naming
+         it. ㄷ is the one that really is ッ. -->
+    <div class="section" data-page-id="stops-letters">
+      <h2 class="section-title">받침 ㄱ · ㄷ · ㅂ <span class="title-ja">(パッチム ㄱ・ㄷ・ㅂ)</span></h2>
+      <p class="section-subtitle"><span class="ko">이제 글자를 하나씩 볼게요. 제가 먼저 읽을게요. 따라 읽어 보세요.</span><span class="ja">では文字を1つずつ見ます。私が先に読みます。まねして読んでみましょう。</span></p>
+      <div class="tutor-note">가타카나에는 ク(구), プ(푸)가 붙지만 그 소리는 내지 않아요.</div>
+      <div class="letter-row">
+        <div class="letter-card"><span class="korean seat-tbb">목</span><span class="kana-eq"><i>＝</i>モク</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">o</i><b>＋</b><i class="seat-b">k</i></span></div>
+        <div class="letter-card"><span class="korean seat-tbb">곧</span><span class="kana-eq"><i>＝</i>コッ</span><span class="sound"><i class="seat-c">g</i><b>＋</b><i class="seat-v">o</i><b>＋</b><i class="seat-b">t</i></span></div>
+        <div class="letter-card"><span class="korean seat-lrb">밥</span><span class="kana-eq"><i>＝</i>パプ</span><span class="sound"><i class="seat-c">b</i><b>＋</b><i class="seat-v">a</i><b>＋</b><i class="seat-b">p</i></span></div>
+      </div>
+    </div>
+
+    <!-- drill 2 · produce them. Three ㄱ, two ㅂ, one ㄷ — which is roughly
+         how often each one actually turns up as a written 받침. -->
+    <div class="section" data-page-id="stops-reading">
+      <h2 class="section-title">혼자 읽기 <span class="title-ja">(ひとりで読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 혼자 읽어 보세요. 끝을 터뜨리지 말고요.</span><span class="ja">今度はひとりで読んでみましょう。最後を出しきらないで。</span></p>
+      <div class="read-grid">
+        <span class="read-chip seat-tbb">국</span>
+        <span class="read-chip seat-lrb">밥</span>
+        <span class="read-chip seat-tbb">곧</span>
+        <span class="read-chip seat-tbb">목</span>
+        <span class="read-chip seat-lrb">입</span>
+        <span class="read-chip seat-lrb">각</span>
+      </div>
+    </div>
+
+    <!-- drill 3 · training wheels off. No seat colour on the page at all,
+         and the question is narrower than 과 10's 받침 찾기: not "is there
+         a floor" but "does the floor stop". 산 · 물 · 강 all have one and
+         none of them is an answer, so a learner still reading the earlier
+         question gets six out of six wrong here rather than in 과 12. -->
+    <div class="section" data-page-id="find-the-stop">
+      <h2 class="section-title">막는 받침 찾기 <span class="title-ja">(止めるパッチムさがし)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 색이 없어요. 소리를 끊는 받침이 있는 글자를 모두 눌러 보세요.</span><span class="ja">今度は色なし。音を止めるパッチムがある文字を全部タップしてください。</span></p>
+      <div class="tap-grid" data-sync-id="tiles-find-the-stop" data-sync-kind="selection" data-sync-state="right wrong">
+        <button class="tap-tile" data-ok="1" data-sync-option="밥">밥</button>
+        <button class="tap-tile" data-sync-option="산">산</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="각">각</button>
+        <button class="tap-tile" data-sync-option="물">물</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="입">입</button>
+        <button class="tap-tile" data-sync-option="강">강</button>
+      </div>
+    </div>
+
+    <!-- teach · 과 10's ん의 세 가지 입, one act later. Same component and
+         the same move — one kana on the left, the Korean letters that hide
+         under it on the right. っ is on that tile as the closing GESTURE,
+         not as a transcription: the word-level kana stays ク/プ (see the
+         letter cards), and what these three share is the cut, made at the
+         three places the learner already sorted ん into. It
+         sits here rather than at the top of the act because a comparison
+         page compares things that have each been drilled. -->
+    <div class="section" data-page-id="stops-three">
+      <h2 class="section-title">막는 자리 세 곳 <span class="title-ja">(止める場所は3か所)</span></h2>
+      <p class="section-subtitle"><span class="ko">다른 건 입안에서 막는 자리예요. 따라 읽어 보세요.</span><span class="ja">違うのは口の中の止める場所です。まねして読んでみましょう。</span></p>
+      <div class="tutor-note">셋 다 일본어 っ처럼 소리를 딱 막아요.</div>
+      <div class="tutor-note">세 개를 이어서 읽어 주세요. 끝을 터뜨리지 않는 것이 중요해요.</div>
+      <div class="pair-list">
+        <div class="pair-row">
+          <span class="pair-kana">っ</span>
+          <span class="pair-side"><span class="g seat-lrb">악</span><small>ㄱ<br>のどの奥</small></span>
+          <span class="pair-side"><span class="g seat-lrb">앋</span><small>ㄷ<br>舌の先</small></span>
+          <span class="pair-side"><span class="g seat-lrb">압</span><small>ㅂ<br>くちびる</small></span>
+        </div>
+      </div>
+      <div class="hint"><span class="hint-chip">ん（ㄴ・ㅁ・ㅇ）と同じ3か所</span><span class="hint-chip">響かせるか、止めるかの違い</span></div>
+    </div>
+
+    <!-- drill 4 · the act's fluency check, and what the page above is for, and the only page that puts 과
+         10 and 과 11 head to head. Each row is the SAME place of closure,
+         ringing against stopped: ㅁ/ㅂ, ㄱ/ㅇ, ㄴ/ㄷ. Nothing else is left
+         to hear, so this is the row that says whether "not released"
+         actually landed. -->
+    <div class="section" data-page-id="listen-ring-vs-stop">
+      <h2 class="section-title">듣고 고르기 <span class="title-ja">(聞いて選ぼう)</span></h2>
+      <p class="section-subtitle"><span class="ko">마지막이에요. 울리는 받침과 막는 받침, 잘 듣고 골라 보세요.</span><span class="ja">最後です。響くパッチムと止めるパッチム、よく聞いて選んでください。</span></p>
+      <div class="tutor-note">표시된 쪽을 한 줄에 하나씩 읽어 주세요. 울리는 쪽은 길게, 막는 쪽은 짧게요.</div>
+      <div class="tap-grid rows" data-sync-id="tiles-listen-ring-vs-stop" data-sync-kind="selection" data-sync-state="right wrong">
+        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-sync-option="밤">밤</button><button class="tap-tile" data-ok="1" data-sync-option="밥">밥</button></div>
+        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-ok="1" data-sync-option="각">각</button><button class="tap-tile" data-sync-option="강">강</button></div>
+        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-sync-option="곤">곤</button><button class="tap-tile" data-ok="1" data-sync-option="곧">곧</button></div>
+      </div>
+    </div>
+
+    <!-- Part 2 · and this page exists to NAME the shift. Ten lessons of
+         "read what is written" end here, and a learner who is not told
+         that reads 옷 as a mistake of their own. -->
+    <div class="transition-page" data-page-id="seven-intro">
+      <span class="transition-kicker">パート 2</span>
+      <h2 class="transition-title">글자와 소리가 다를 때 <span class="title-ja">(文字と音が違うとき)</span></h2>
+      <p class="section-subtitle"><span class="ko">지금까지는 쓴 대로 읽었어요. 그런데 받침 자리에서는 아니에요. 여기서 처음으로 글자와 소리가 달라져요.</span><span class="ja">これまでは書いてあるとおりに読みました。でもパッチムの席では違います。ここで初めて、文字と音がずれます。</span></p>
+    </div>
+
+    <!-- teach · one word, one arrow. The left tile is the spelling and the
+         right tile is the sound, and nothing else is on the page — the
+         rule is small and the surprise is the whole content. -->
+    <div class="section" data-page-id="sound-change">
+      <h2 class="section-title">소리가 바뀌는 받침 <span class="title-ja">(音が変わるパッチム)</span></h2>
+      <p class="section-subtitle"><span class="ko">‘옷’은 ㅅ으로 쓰지만 소리는 ㄷ이에요. 받침 자리에서 ㅅ은 ㄷ 소리가 나요.</span><span class="ja">「옷」は ㅅ で書きますが、音は ㄷ です。パッチムの席では ㅅ は ㄷ の音になります。</span></p>
+      <div class="build">
+        <span class="b"><span class="tile seat-tbb">옷</span><small>書き方</small></span>
+        <span class="op">→</span>
+        <span class="b"><span class="tile seat-tbb res">옫</span><small>音（オッ）</small></span>
+      </div>
+      <div class="hint"><span class="hint-chip">書き方は変わらない。変わるのは音だけ</span><span class="hint-chip">下の席にいるときだけのルール</span></div>
+    </div>
+
+    <!-- teach · the full list. Three rows, because there are three answers
+         — not seven rules to memorise but three piles to sort into. The
+         examples sit in the row so each pile is a rule already applied. -->
+    <div class="section" data-page-id="seven-table">
+      <h2 class="section-title">받침 소리 일곱 개 <span class="title-ja">(パッチムの音は7つだけ)</span></h2>
+      <p class="section-subtitle"><span class="ko">받침 자리에 어떤 글자가 와도 소리는 일곱 개뿐이에요. 오늘 배운 세 소리로 이렇게 모여요.</span><span class="ja">パッチムの席にどの文字が来ても、音は7つだけです。今日習った3つの音に、こう集まります。</span></p>
+      <div class="known">
+        <div class="known-row"><span class="k">ㅋ ㄲ</span><span class="j">「ㄱ」の音になる<small>부엌 · 밖</small></span></div>
+        <div class="known-row"><span class="k">ㅅ ㅆ ㅈ ㅊ ㅌ ㅎ</span><span class="j">「ㄷ」の音になる<small>옷 · 낮 · 꽃 · 끝</small></span></div>
+        <div class="known-row"><span class="k">ㅍ</span><span class="j">「ㅂ」の音になる<small>앞 · 잎</small></span></div>
+      </div>
+      <div class="hint"><span class="hint-chip">7つの音 ＝ ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ</span></div>
+    </div>
+
+    <!-- drill 1 · sort into the biggest pile. The three wrong tiles are
+         one from each of the other two answers (부엌 → ㄱ, 앞 → ㅂ) plus a
+         letter that is already itself (밥), so there is no tile you can
+         rule out without reading the floor. -->
+    <div class="section" data-page-id="match-the-sound">
+      <h2 class="section-title">ㄷ 소리 찾기 <span class="title-ja">(ㄷ の音さがし)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 소리예요. ㄷ 소리로 끝나는 단어를 모두 눌러 보세요.</span><span class="ja">今度は音です。ㄷ の音で終わる単語を全部タップしてください。</span></p>
+      <div class="tap-grid words" data-sync-id="tiles-match-the-sound" data-sync-kind="selection" data-sync-state="right wrong">
+        <button class="tap-tile" data-ok="1" data-sync-option="옷">옷</button>
+        <button class="tap-tile" data-sync-option="부엌">부엌</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="낮">낮</button>
+        <button class="tap-tile" data-sync-option="앞">앞</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="끝">끝</button>
+        <button class="tap-tile" data-sync-option="밥">밥</button>
+      </div>
+    </div>
+
+    <!-- drill 2 · read the six aloud, and every one of them is a word
+         whose spelling lies. The answers are in the tutor's band, not on
+         the page: printing 옫 next to 옷 would answer the question. -->
+    <div class="section" data-page-id="sound-reading">
+      <h2 class="section-title">소리로 읽기 <span class="title-ja">(音で読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">쓴 글자 말고 소리로 읽어 보세요.</span><span class="ja">書いてある文字ではなく、音で読んでみましょう。</span></p>
+      <div class="tutor-note">소리는 옫 · 부억 · 낟 · 압 · 꼳 · 끋이에요. 막히면 한 번 들려주세요.</div>
+      <div class="read-grid words">
+        <span class="read-chip">옷</span>
+        <span class="read-chip">부엌</span>
+        <span class="read-chip">낮</span>
+        <span class="read-chip">앞</span>
+        <span class="read-chip">꽃</span>
+        <span class="read-chip">끝</span>
+      </div>
+    </div>
+
+    <!-- drill 3 · by ear, and the distractors are the ringing 받침 at the
+         same place: 앞[압] against 암, 낮[낟] against 낭 and 남. Reading
+         the tile is no help — the learner has to hear whether it stopped. -->
+    <div class="section" data-page-id="listen-find-word">
+      <h2 class="section-title">듣고 찾기 <span class="title-ja">(聞いてさがそう)</span></h2>
+      <p class="section-subtitle"><span class="ko">제가 단어를 두 개 말할게요. 하나씩 찾아서 눌러 보세요.</span><span class="ja">私が単語を2つ言います。1つずつさがしてタップしてください。</span></p>
+      <div class="tutor-note">표시된 단어를 순서대로 읽어 주세요.</div>
+      <div class="tap-grid words" data-sync-id="tiles-listen-find-word" data-sync-kind="selection" data-sync-state="right wrong">
+        <button class="tap-tile" data-sync-option="암">암</button><button class="tap-tile" data-ok="1" data-sync-option="앞">앞</button><button class="tap-tile" data-sync-option="안">안</button>
+        <button class="tap-tile" data-sync-option="낭">낭</button><button class="tap-tile" data-sync-option="남">남</button><button class="tap-tile" data-ok="1" data-sync-option="낮">낮</button>
+      </div>
+    </div>
+
+    <!-- Part 3 · words -->
+    <div class="transition-page" data-page-id="words-intro">
+      <span class="transition-kicker">パート 3</span>
+      <h2 class="transition-title">단어 <span class="title-ja">(単語)</span></h2>
+      <p class="section-subtitle"><span class="ko">부품이 다 모였어요. 이제 진짜 단어를 읽어 보세요.</span><span class="ja">パーツがそろいました。本物の単語を読んでみましょう。</span></p>
+    </div>
+
+    <!-- the six the lesson promised. Three read as written (책 · 밥 · 부엌
+         is only its second syllable) and three do not (옷 · 낮 · 앞), so
+         the set is the whole lesson in one page. -->
+    <div class="section" data-page-id="word-reading">
+      <h2 class="section-title">단어 읽기 <span class="title-ja">(単語を読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">아는 글자뿐이에요. 하나씩 읽어 보세요.</span><span class="ja">知っている文字だけです。1つずつ読んでみましょう。</span></p>
+      <div class="wordset">
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-lrb">책</span></span>
+          <span class="body"><span class="yomi-line">チェク</span><span class="mean">本</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-lrb">밥</span></span>
+          <span class="body"><span class="yomi-line">パプ</span><span class="mean">ごはん</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-tbb">옷</span></span>
+          <span class="body"><span class="yomi-line">オッ</span><span class="mean">服</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-lrb">낮</span></span>
+          <span class="body"><span class="yomi-line">ナッ</span><span class="mean">昼</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-lrb">앞</span></span>
+          <span class="body"><span class="yomi-line">アプ</span><span class="mean">前</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-tb">부</span><span class="syl seat-lrb">엌</span></span>
+          <span class="body"><span class="yomi-line">プ オク</span><span class="mean">台所</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- two syllables, and a floor under both of them — which is where a
+         learner who has been reading one block at a time slows down. -->
+    <div class="section" data-page-id="word-reading-2">
+      <h2 class="section-title">두 글자 단어 <span class="title-ja">(2文字の単語)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 두 글자예요. 받침이 두 번 나와요. 천천히 읽어 보세요.</span><span class="ja">今度は2文字です。パッチムが2回出てきます。ゆっくり読んでみましょう。</span></p>
+      <div class="tutor-note">김밥은 실제로 [김빱]에 가깝게 읽어 주세요. 여기서는 받침 ㅁ과 ㅂ만 확인하고, 자연스러운 변화는 발음 과정에서 다룹니다.</div>
+      <div class="wordset">
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-lrb">한</span><span class="syl seat-tbb">국</span></span>
+          <span class="body"><span class="yomi-line">ハン グク</span><span class="mean">韓国</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-lrb">김</span><span class="syl seat-lrb">밥</span></span>
+          <span class="body"><span class="yomi-line">キム パプ</span><span class="mean">キンパ（のり巻き）</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-lr">가</span><span class="syl seat-tbb">족</span></span>
+          <span class="body"><span class="yomi-line">カ ジョク</span><span class="mean">家族</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl seat-tb">수</span><span class="syl seat-lrb">박</span></span>
+          <span class="body"><span class="yomi-line">ス バク</span><span class="mean">スイカ</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- nothing left to lean on: ringing and stopping mixed, one word
+         after another, no colour and no meaning printed. -->
+    <div class="section" data-page-id="word-speed-reading">
+      <h2 class="section-title">빠르게 읽기 <span class="title-ja">(速く読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 가나도 없고 뜻도 없어요. 멈추지 말고 여섯 개를 쭉 읽어 보세요.</span><span class="ja">今度はカナも意味もありません。止まらずに6つを一気に読んでみましょう。</span></p>
+      <div class="tutor-note">두 번 읽히고, 두 번째는 조금 더 빠르게 해 주세요.</div>
+      <div class="read-grid words">
+        <span class="read-chip">산</span>
+        <span class="read-chip">밥</span>
+        <span class="read-chip">한국</span>
+        <span class="read-chip">옷</span>
+        <span class="read-chip">사랑</span>
+        <span class="read-chip">앞</span>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="sign-reading">
+      <h2 class="section-title">간판 읽기 <span class="title-ja">(看板を読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국에 있다고 상상해 보세요. 간판을 소리 내어 읽어 보세요!</span><span class="ja">韓国にいると想像してみてください。看板を声に出して読んでみましょう！</span></p>
+      <div class="grid">
+        <div class="sign"><span class="korean xl">한국</span><span class="english">空港の案内板</span></div>
+        <div class="sign"><span class="korean xl">김밥</span><span class="english">お店のメニュー</span></div>
+        <div class="sign"><span class="korean xl">옷</span><span class="english">市場のラベル</span></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ================================================================
+       TAP ACTIVITIES · 화이트보드 없이 손가락만으로 푸는 활동
+       (1) .tap-tile  — 눌러서 고르기. data-ok 가 정답 표시.
+       (2) .builder   — 자음/모음 키패드로 글자를 조립한다. 유니코드
+           한글 조합식을 써서 실제 글자를 만들고, 세로 모음이면 좌우,
+           가로 모음이면 위아래로 자리를 바꿔 보여 준다.
+       ================================================================ -->
+
+  <!-- ACTIVITIES · 공통 배선(스텁·점선 칸·고르기) + 한글 활동(타일·조립). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/activities.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/hangul-activities.js"></script>
+
+
+  <!-- ================================================================
+       PAGER · 한 장씩 넘겨 보는 모드
+       The deck is 43 flat siblings under .phone, so paging is just
+       "show one, hide the rest" — no restructuring. Off by default:
+       scrolling stays the ground truth (printing, Cmd+F, scanning
+       ahead all rely on it), and this is the presentation layer.
+       ================================================================ -->
+  <nav class="pager" data-sync-id="deck-page" data-sync-kind="page">
+    <input class="pg-scrub" type="range" min="0" max="0" step="1" value="0" aria-label="페이지 이동">
+    <button class="pg-btn pg-prev" type="button" aria-label="이전 페이지">←</button>
+    <div class="pg-mid">
+      <span class="pg-label"><b class="pg-act">—</b><span class="pg-n">—</span></span>
+    </div>
+    <button class="pg-btn pg-teach" type="button" aria-label="티칭 모드">T</button>
+      <button class="pg-btn pg-next" type="button" aria-label="다음 페이지">→</button>
+</nav>
+
+
+  <!-- ================================================================
+       PAGER · back / next / progress, in both modes.
+       Page view is the default; scrolling stays one tap away.
+       Page turns are shared (kind "page"); view mode and teaching mode
+       stay local.
+       ================================================================ -->
+  <!-- PAGER · 한 장씩 넘기기 + 스크러버. 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/pager.js"></script>
+
+  <!-- SCRIPT LINES · 대사를 문장 단위로 짝지어 세운다. 형광펜보다 먼저 —
+       형광펜은 로드 때 글 블록에 번호를 매기므로 DOM 이 먼저 확정돼야 한다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/script-lines.js"></script>
+
+  <!-- SPOTLIGHT · 손가락 포인터 (그리기 대신 "여기 보세요"). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/spotlight.js"></script>
+
+  <!-- TUTOR NOTES · 페이지마다 메모 한 칸. 비어 있으면 아무에게도 안 보이고,
+       튜터가 쓰는 순간 양쪽에 뜬다. 보드 기본 kind("value")를 그대로 쓰므로
+       등록할 것이 없다 — 전송도 IME 도 보드가 한다. 페이저 뒤에 두는 것이
+       중요하다: 페이지를 다 세고 난 뒤에 칸을 끼워 넣어야 한다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/tutor-notes.js"></script>
+
+  <!-- HIGHLIGHT · 글자에 긋는 형광펜. 그은 자국이 상대 화면에도 남는다.
+       ja→ko 툴팁 뒤에 와야 한다 — 그쪽이 로드 때 텍스트 노드를 읽어 data-ko 를
+       붙이고, 형광펜은 그 뒤로 <mark> 을 끼워 넣기 때문이다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/highlight.js"></script>
+
+  <!-- STAMP · 참! 잘했어요. stamp.js 가 이 그림을 페이지마다, 그리고 페이저
+       버튼 안에 복제한다. 경로를 쓰는 곳이 여기 하나뿐인 게 중요하다:
+       패키저는 마크업에 적힌 이미지 경로만 번들·평탄화하므로, JS 로 경로를
+       만들면 로컬에서만 되고 보드(S3)에서 404 가 난다. .phone 밖에 두는 것도
+       중요하다 — 페이저는 .phone 의 자식을 페이지로 세기 때문에, 안에 넣으면
+       빈 페이지가 하나 생긴다. (이 주석에 경로 표기를 그대로 쓰면 패키저가
+       주석까지 훑어 없는 파일을 찾으므로, 말로만 적는다.) -->
+  <img class="stamp-art" src="well-done.svg" alt="">
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.1/js/stamp.js"></script>
+
+</body>
+</html>

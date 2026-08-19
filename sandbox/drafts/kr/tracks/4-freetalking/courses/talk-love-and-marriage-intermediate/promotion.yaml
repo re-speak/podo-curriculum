@@ -1,0 +1,67 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/talk-love-and-marriage-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-heart-fluttering-moment/lesson.html
+      slug: 01-heart-fluttering-moment
+      week: 1
+      title:
+        ko: "\uc124\ub808\ub294 \uc21c\uac04"
+        en: "A heart-fluttering moment"
+        ja: "\u3068\u304d\u3081\u304f\u77ac\u9593"
+    - source: 02-words-that-kill-the-mood/lesson.html
+      slug: 02-words-that-kill-the-mood
+      week: 2
+      title:
+        ko: "\uc815\ub5a8\uc5b4\uc9c0\ub294 \ud55c\ub9c8\ub514"
+        en: "Words that kill attraction"
+        ja: "\u6c17\u6301\u3061\u304c\u51b7\u3081\u308b\u4e00\u8a00"
+    - source: 03-one-must-have-quality/lesson.html
+      slug: 03-one-must-have-quality
+      week: 3
+      title:
+        ko: "\uc774\uc0c1\ud615\uc758 \uc870\uac74"
+        en: "One must-have quality"
+        ja: "\u7406\u60f3\u306e\u30bf\u30a4\u30d7\u306e\u6761\u4ef6"
+    - source: 04-my-bad-dating-habit/lesson.html
+      slug: 04-my-bad-dating-habit
+      week: 4
+      title:
+        ko: "\uc5f0\uc560\ud560 \ub54c \ub098\uc758 \ub098\uc05c \uc2b5\uad00"
+        en: "My bad dating habit"
+        ja: "\u604b\u611b\u4e2d\u306e\u81ea\u5206\u306e\u60aa\u3044\u7656"
+    - source: 05-dream-wedding/lesson.html
+      slug: 05-dream-wedding
+      week: 5
+      title:
+        ko: "\uacb0\ud63c\uc2dd \ub85c\ub9dd"
+        en: "My dream wedding"
+        ja: "\u7406\u60f3\u306e\u7d50\u5a5a\u5f0f"
+    - source: 06-hardest-breakup/lesson.html
+      slug: 06-hardest-breakup
+      week: 6
+      title:
+        ko: "\ucd5c\uc545\uc758 \uc774\ubcc4"
+        en: "The hardest breakup"
+        ja: "\u3044\u3061\u3070\u3093\u3064\u3089\u3044\u5225\u308c"
+    - source: 07-thoughts-on-single-life-and-dink/lesson.html
+      slug: 07-thoughts-on-single-life-and-dink
+      week: 7
+      title:
+        ko: "\ube44\ud63c\u00b7\ub529\ud06c, \uc5b4\ub5bb\uac8c \uc0dd\uac01\ud574"
+        en: "Thoughts on staying single and DINK"
+        ja: "\u975e\u5a5a\u30fbDINK\u3001\u3069\u3046\u601d\u3046\uff1f"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

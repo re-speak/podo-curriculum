@@ -1,0 +1,60 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/core-advanced-1
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-advanced-1/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/2-core-patterns/courses/core-advanced-1
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 111-not-only-but-also/lesson.html
+      slug: 111-not-only-but-also
+      week: 1
+      title:
+        ko: "\uc608\uc060 \ubfd0\ub9cc \uc544\ub2c8\ub77c \u00b7 \uc624\ub294 \ub370\ub2e4\uac00"
+        en: "Not only, but also"
+        ja: "\u304d\u308c\u3044\u306a\u3060\u3051\u3067\u306a\u304f\u30fb\u964d\u3063\u3066\u3044\u308b\u4e0a\u306b"
+    - source: 112-instead-and-rather/lesson.html
+      slug: 112-instead-and-rather
+      week: 2
+      title:
+        ko: "\uc0ac\ub294 \ub300\uc2e0\uc5d0 \u00b7 \ud3ec\uae30\ud558\ub290\ub2c8 \ucc28\ub77c\ub9ac"
+        en: "Instead, or rather"
+        ja: "\u304a\u3054\u308b\u4ee3\u308f\u308a\u306b\u30fb\u3042\u304d\u3089\u3081\u308b\u304f\u3089\u3044\u306a\u3089\u3044\u3063\u305d"
+    - source: 113-and-then-and-warning/lesson.html
+      slug: 113-and-then-and-warning
+      week: 3
+      title:
+        ko: "\ubaa8\uc544 \uac00\uc9c0\uace0 \u00b7 \uadf8\ub807\uac8c \uc4f0\ub2e4\uac00\ub294"
+        en: "And so, and beware"
+        ja: "\u8caf\u3081\u3066\u30fb\u305d\u3093\u306a\u3075\u3046\u306b\u4f7f\u3063\u3066\u3044\u308b\u3068"
+    - source: 114-like-and-how-much/lesson.html
+      slug: 114-like-and-how-much
+      week: 4
+      title:
+        ko: "\ube44 \uc624\ub4ef\uc774 \u00b7 \uc5bc\ub9c8\ub098 \ud798\ub4e4\uc5c8\ub294\uc9c0"
+        en: "Like rain, and how much"
+        ja: "\u96e8\u306e\u3088\u3046\u306b\u30fb\u3069\u308c\u307b\u3069\u5927\u5909\u3060\u3063\u305f\u304b"
+    - source: 115-obviously-and-unless/lesson.html
+      slug: 115-obviously-and-unless
+      week: 5
+      title:
+        ko: "\ub9d0\ud560 \uac83\ub3c4 \uc5c6\uc774 \u00b7 \uc88b\uc73c\uba74 \ubab0\ub77c\ub3c4"
+        en: "Needless to say, unless"
+        ja: "\u8a00\u3046\u307e\u3067\u3082\u306a\u304f\u30fb\u3088\u3051\u308c\u3070\u5225\u3060\u304c"
+    - source: 116-cant-believe-and-no-intention/lesson.html
+      slug: 116-cant-believe-and-no-intention
+      week: 6
+      title:
+        ko: "\ubd80\ud0c1\ud558\ub2e4\ub2c8\uc694 \u00b7 \uac08 \uc0dd\uac01 \uc5c6\uc5b4\uc694"
+        en: "You can't be serious, and no"
+        ja: "\u983c\u3080\u306a\u3093\u3066\u30fb\u884c\u304f\u3064\u3082\u308a\u306f\u3042\u308a\u307e\u305b\u3093"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

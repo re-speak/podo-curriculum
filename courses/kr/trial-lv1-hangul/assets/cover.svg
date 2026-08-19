@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="864" height="1080" viewBox="0 0 864 1080">
+  <rect width="864" height="1080" fill="#b5fd4c"/>
+  <g font-family="Hiragino Sans, Noto Sans JP, sans-serif" fill="#1c1c1c">
+    <rect x="72" y="72" width="462" height="82" rx="41" fill="#1c1c1c"/>
+    <text x="104" y="126" fill="#ffffff" font-family="Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="1">PODO</text>
+    <rect x="226" y="82" width="298" height="62" rx="31" fill="#ffffff"/>
+    <text x="375" y="123" text-anchor="middle" font-size="26" font-weight="800">体験レッスン</text>
+
+    <text x="72" y="320" font-size="124" font-weight="900" letter-spacing="-5">超入門</text>
+    <text x="76" y="382" font-size="31" font-weight="700" opacity=".62">ハングルからスタート</text>
+    <text x="790" y="122" text-anchor="end" font-family="Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="800" opacity=".45">01 / 04</text>
+
+    <g transform="translate(78 505)">
+      <rect width="214" height="214" rx="38" fill="#ffffff"/>
+      <text x="107" y="146" text-anchor="middle" font-size="104" font-weight="900">ㄱ</text>
+      <rect x="242" width="214" height="214" rx="38" fill="#1c1c1c" fill-opacity=".12"/>
+      <text x="349" y="146" text-anchor="middle" font-size="104" font-weight="900">ㅏ</text>
+      <rect x="484" width="214" height="214" rx="38" fill="#1c1c1c"/>
+      <text x="591" y="146" text-anchor="middle" fill="#b5fd4c" font-size="104" font-weight="900">가</text>
+    </g>
+
+    <path d="M72 821H792" stroke="#1c1c1c" stroke-opacity=".18" stroke-width="3"/>
+    <text x="72" y="894" font-size="29" font-weight="800">文字が、声になる。</text>
+    <text x="72" y="947" font-size="24" font-weight="700" opacity=".58">韓国語 · 55分体験</text>
+    <circle cx="762" cy="914" r="38" fill="#1c1c1c"/>
+    <text x="762" y="925" text-anchor="middle" fill="#b5fd4c" font-family="Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="900">01</text>
+  </g>
+</svg>

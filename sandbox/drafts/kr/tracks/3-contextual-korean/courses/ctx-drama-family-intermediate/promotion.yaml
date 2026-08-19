@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/ctx-drama-family-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-family-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-family-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-nagging/lesson.html
+      slug: 01-nagging
+      week: 1
+      title:
+        ko: "\uc794\uc18c\ub9ac (\uc5c4\ub9c8 \u2192 \ub098)"
+        en: "Nagging"
+        ja: "\u5c0f\u8a00"
+    - source: 02-worry/lesson.html
+      slug: 02-worry
+      week: 2
+      title:
+        ko: "\uac71\uc815 (\uc5c4\ub9c8 \u2192 \ub098)"
+        en: "Worry"
+        ja: "\u5fc3\u914d"
+    - source: 03-errand/lesson.html
+      slug: 03-errand
+      week: 3
+      title:
+        ko: "\uc2ec\ubd80\ub984 (\uc5c4\ub9c8 \u2192 \ub098)"
+        en: "Errand"
+        ja: "\u304a\u4f7f\u3044"
+    - source: 04-complaining/lesson.html
+      slug: 04-complaining
+      week: 4
+      title:
+        ko: "\ud22c\uc815 (\ub098 \u2192 \uc5c4\ub9c8)"
+        en: "Complaining"
+        ja: "\u99c4\u3005"
+    - source: 05-reprimand/lesson.html
+      slug: 05-reprimand
+      week: 5
+      title:
+        ko: "\ud540\uc794"
+        en: "Reprimand"
+        ja: "\u5c0f\u8a00"
+    - source: 06-mealtime/lesson.html
+      slug: 06-mealtime
+      week: 6
+      title:
+        ko: "\uc2dd\uc0ac"
+        en: "Mealtime"
+        ja: "\u98df\u4e8b"
+    - source: 07-comfort/lesson.html
+      slug: 07-comfort
+      week: 7
+      title:
+        ko: "\uc704\ub85c"
+        en: "Comfort"
+        ja: "\u6170\u3081"
+    - source: 08-encouragement/lesson.html
+      slug: 08-encouragement
+      week: 8
+      title:
+        ko: "\uc751\uc6d0"
+        en: "Encouragement"
+        ja: "\u5fdc\u63f4"
+    - source: 09-reconciliation/lesson.html
+      slug: 09-reconciliation
+      week: 9
+      title:
+        ko: "\ud654\ud574"
+        en: "Reconciliation"
+        ja: "\u4ef2\u76f4\u308a"
+    - source: 10-filial-devotion/lesson.html
+      slug: 10-filial-devotion
+      week: 10
+      title:
+        ko: "\ud6a8\ub3c4"
+        en: "Filial Devotion"
+        ja: "\u89aa\u5b5d\u884c"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

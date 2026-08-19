@@ -18,9 +18,10 @@ spec:
   # 한국어 체험 수업은 55분이다. 주차로 쪼개지 않는 한 번짜리 수업이라 레슨도 하나다.
   lessonTime: 55
 
-  # 검수 전까지는 false. true 로 바꾸는 순간 apply 가 학습자에게 노출시킨다 —
-  # 라이브 체험 네 개와 나란히 여덟 개가 보이게 되므로, 전환은 따로 판단할 일이다.
-  enabled: false
+  # 라이브 체험 네 개(레벨 1·2·4·8, PDF+오디오)와 나란히 선다 — 목록에는 체험이
+  # 여덟 개로 보인다. 레거시 네 개를 어떻게 할지는 따로 결정할 일이고, 그때까지는
+  # 이쪽이 HTML 체험이라는 것만 제목으로 구분된다.
+  enabled: true
   difficulty: INTERMEDIATE
 
   title:
@@ -32,8 +33,7 @@ spec:
     ko: 상황이 있는 대화로 실제 장면에서 말해 보는 55분 체험 레슨.
     ja: 場面のある会話で、実際のシーンで話してみる55分の体験レッスン。
 
-  # 표지를 지정하지 않는다. grape 는 cover 파트가 왔을 때만 BOOK_THUMBNAIL 을 쓰므로
-  # 키를 빼면 컬럼을 비우는 게 아니라 손대지 않는다 — 표지는 어드민에서 올린다.
+  thumbnail: assets/cover.png
 
   tutorGroups:
     allowRandom: []
