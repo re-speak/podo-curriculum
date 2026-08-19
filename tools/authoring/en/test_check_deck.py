@@ -15,6 +15,24 @@ import check_deck
 
 
 class DeckCheckTests(unittest.TestCase):
+    def test_english_deck_rejects_visible_hangul(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            deck = (
+                pathlib.Path(temporary)
+                / "sandbox/drafts/en/tracks/1-core-patterns/lessons/01-test/lesson.html"
+            )
+            deck.parent.mkdir(parents=True)
+            deck.write_text(
+                '<meta name="google" content="notranslate">'
+                '<meta name="podo:lesson-id" content="01-test">'
+                '<meta name="podo:review-id" content="CORE-1">'
+                '<meta name="podo:target-language" content="en">'
+                '<body><div data-page-id="lesson-goal">튜터만</div></body>',
+                encoding="utf-8",
+            )
+            errors, _ = check_deck.check(deck)
+            self.assertTrue(any("visible Korean text" in error for error in errors))
+
     def test_meta_content_is_attribute_order_tolerant(self):
         source = (
             '<meta content="notranslate" name="google">'
@@ -299,6 +317,35 @@ class DeckCheckTests(unittest.TestCase):
         self.assertTrue(any("turn count differs" in item for item in errors))
         self.assertTrue(any("speaker labels" in item for item in errors))
         self.assertTrue(any("generic production instruction" in item for item in errors))
+
+    def test_core_late_phrase_inputs_reuse_only_controlled_targets(self):
+        pages = {
+            "p1-fill": '<input class="slot-input" data-answer="went">',
+            "p2-fill": '<input class="slot-input" data-answer="had">',
+            "p3-complete": (
+                '<span class="target">行って</span>'
+                '<textarea class="free-input phrase-input" data-answer="went"></textarea>'
+            ),
+            "in-the-wild": (
+                '<span class="target">食べました</span>'
+                '<textarea class="free-input phrase-input" '
+                'data-answer="had dinner"></textarea>'
+            ),
+        }
+        errors = check_deck.core_production_issues(pages)
+        self.assertFalse(any("p3-complete: phrase input" in item for item in errors))
+        self.assertTrue(any("in-the-wild: phrase input" in item for item in errors))
+
+    def test_partner_turns_ignore_compact_learner_lines(self):
+        source = (
+            '<div class="turn other"><span class="korean">Question</span>\n'
+            '<span class="translation">質問</span></div>'
+            '<div class="turn me"><span class="korean">Answer</span>'
+            '<span class="translation">答え</span></div>'
+            '<div class="turn other"><span class="korean">Follow-up</span>\n'
+            '<span class="translation">追加質問</span></div>'
+        )
+        self.assertEqual(check_deck.partner_turns(source), ["Question", "Follow-up"])
 
     def test_target_highlights_require_a_mirrored_pair_on_every_model_row(self):
         pages = {
