@@ -20,7 +20,9 @@ trace:
    required the two sides to be the same sentences; nothing enforced it.
 
 2. **Reorder chunking consistency.** Four chunks is the ceiling and the working
-   default. Mixed counts are an error in English authoring. In Korean they are a
+   default. Mixed counts are an error in English authoring. Three chunks require
+   an explicit human-review marker; meaningful prepositions may stand alone when
+   placing that preposition is the learning operation. In Korean, mixed counts are a
    review candidate rather than proof of a defect: short agglutinative beginner
    sentences can honestly have two units beside a four-unit sentence. They are
    therefore warnings, while counts above four still fail.
@@ -172,7 +174,10 @@ GENERIC_PATTERN_RULE = re.compile(
     r"Use the (?:second|complete) (?:frame|move)|make the practical result clear",
     re.I,
 )
-BOUND_REORDER_CHIPS = {"a", "an", "the", "at", "of", "to", "er"}
+# Articles and suffixes cannot stand as meaning units. Prepositions can: the
+# approved Core pilot deliberately isolates "with", and CORE-12 isolates "at"
+# because placing the time preposition is the retrieval operation being taught.
+BOUND_REORDER_CHIPS = {"a", "an", "the", "er"}
 BRIEF_HEADING = re.compile(r"^#\s+((?:CORE|CTX|FT)-\d+)\s+·\s+(.+?)\s*$")
 QUOTE_OPEN = "“‘「『"
 QUOTE_CLOSE = "”’」』"
@@ -661,6 +666,103 @@ def core_production_issues(page_chunks):
     return errors
 
 
+def core_canonical_shape_issues(page_chunks):
+    """Reject the exact structural shortcuts that made generated Core pages hollow.
+
+    This is intentionally narrower than pedagogical proofreading. It proves the
+    canonical teaching and closing components are present; a human still has to
+    judge whether their content is useful, natural, and sequenced well.
+    """
+    errors = []
+    ordered = list(page_chunks)
+    if not ordered or ordered[-1] != "native-tip":
+        errors.append("Core lesson must end with native-tip")
+
+    required = (
+        "lesson-goal",
+        "words-you-know",
+        "part1-intro",
+        "p1-teach",
+        "p1-read",
+        "p1-rule",
+        "p1-fill",
+        "p1-translate",
+        "p1-write",
+        "part2-intro",
+        "p2-teach",
+        "p2-read",
+        "p2-rule",
+        "p2-fill",
+        "p2-translate",
+        "p2-write",
+        "part3-intro",
+        "p3-model",
+        "p3-complete",
+        "p3-freetalk",
+        "in-the-wild",
+        "native-tip",
+    )
+    missing = [page_id for page_id in required if page_id not in page_chunks]
+    if missing:
+        errors.append("Core lesson is missing canonical pages: " + ", ".join(missing))
+
+    goal = page_chunks.get("lesson-goal", "")
+    if goal and class_tag_count(goal, "known-row") != 3:
+        errors.append("lesson-goal: show the complete three-beat target exchange")
+
+    for part in (1, 2):
+        teach_id = f"p{part}-teach"
+        teach = page_chunks.get(teach_id, "")
+        if not teach:
+            errors.append(f"{teach_id}: missing canonical teaching page")
+        else:
+            if "pattern-meaning" not in teach:
+                errors.append(f"{teach_id}: missing meaning-and-use block")
+            if class_tag_count(teach, "sent-hero") != 1:
+                errors.append(f"{teach_id}: needs one main pattern block (.sent-hero)")
+            if class_tag_count(teach, "sent-more") != 1:
+                errors.append(f"{teach_id}: needs the canonical example block (.sent-more)")
+            models = len(class_span_bodies(teach, "korean"))
+            if models != 3:
+                errors.append(
+                    f"{teach_id}: expected one main model plus two examples, found {models}"
+                )
+
+        rule_id = f"p{part}-rule"
+        rule = page_chunks.get(rule_id, "")
+        if not rule:
+            errors.append(f"{rule_id}: missing visual formation page")
+        elif not (
+            class_tag_count(rule, "batchim", "ending-rule")
+            or class_tag_count(rule, "irregular-pair-grid")
+        ):
+            errors.append(
+                f"{rule_id}: prose/examples are not a formation diagram — use the "
+                "canonical visual rule component"
+            )
+
+    native = page_chunks.get("native-tip", "")
+    if not native:
+        errors.append("native-tip: missing final adjacent-use page")
+    else:
+        text = plain_text(native)
+        if "Two useful extras" in text or "使える表現" in text:
+            errors.append(
+                "native-tip: generic extra expressions are not a native tip — teach "
+                "one adjacent register, softening, contraction, prosody, collocation, "
+                "or intensity choice"
+            )
+        if not (
+            class_tag_count(native, "nuance-compare")
+            or 'data-native-tip-kind=' in native
+        ):
+            errors.append(
+                "native-tip: mark a real adjacent-use component with .nuance-compare "
+                "or data-native-tip-kind"
+            )
+    return errors
+
+
 def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
     """Protect roleplay identity and English-only tutor operability."""
     errors = []
@@ -1123,6 +1225,14 @@ def check(path):
         if "1-core-patterns" in path.parts:
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(core_production_issues(page_chunks))
+            proofread_status = meta_content(html, "podo:proofread-status")
+            if proofread_status == "pending":
+                warns.append(
+                    "content proofreading is pending — do not present this deck for owner "
+                    "review or include it in a completed batch"
+                )
+            elif proofread_status == "complete":
+                errs.extend(core_canonical_shape_issues(page_chunks))
         if "2-contextual-english" in path.parts:
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(contextual_production_issues(

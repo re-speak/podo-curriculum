@@ -18,7 +18,7 @@
 
 | Lesson | New | Recycled | Assumed-known | Receptive-only |
 | --- | --- | --- | --- | --- |
-| [12-i-start-work-at-nine](../tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/12-i-start-work-at-nine/lesson.html) · **2/8 new** | `finish` · 終える<br>`around` · 〜ごろ | — | `start` · 始める<br>`work` · 仕事<br>`usually` · ふだん | — |
+| [12-i-start-work-at-nine](../tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/12-i-start-work-at-nine/lesson.html) · **4/8 new** | `finish work` · 仕事を終える<br>`eat lunch` · 昼食をとる<br>`have dinner` · 夕食をとる<br>`around` · 〜ごろ | — | `start work` · 仕事を始める<br>`usually` · ふだん | — |
 | [13-do-you-drink-coffee](../tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/13-do-you-drink-coffee/lesson.html) · **2/8 new** | `habit` · 習慣<br>`exercise` · 運動する | — | `coffee` · コーヒー<br>`cook` · 料理する<br>`weekend` · 週末 | `routine` · 日課 |
 | [14-i-dont-drive-to-work](../tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/14-i-dont-drive-to-work/lesson.html) · **2/8 new** | `instead` · その代わり<br>`drive` · 運転する | — | `train` · 電車<br>`breakfast` · 朝食<br>`water` · 水 | — |
 | [15-she-works-downtown](../tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/15-she-works-downtown/lesson.html) · **2/8 new** | `downtown` · 中心街<br>`nearby` · 近くに | — | `work` · 働く<br>`live` · 住む<br>`study` · 勉強する | `fit` · 合うこと |

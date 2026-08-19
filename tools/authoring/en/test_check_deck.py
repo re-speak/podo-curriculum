@@ -182,6 +182,35 @@ class DeckCheckTests(unittest.TestCase):
         errors = check_deck.reorder_solvability_errors("p2-reorder", chunk)
         self.assertTrue(any("bound-word chip 'a'" in item for item in errors))
 
+    def test_reorder_accepts_preposition_when_placement_is_the_learning_operation(self):
+        chunk = (
+            '<div data-page-id="p1-reorder"><div class="task-block">'
+            '<span class="answer-space build-zone" data-sync-id="row" '
+            'data-sync-kind="order" data-a="I start work at nine."></span>'
+            '<span class="choice">I</span><span class="choice">start work</span>'
+            '<span class="choice">at</span><span class="choice">nine.</span>'
+            '</div></div>'
+        )
+        self.assertEqual(
+            check_deck.reorder_solvability_errors("p1-reorder", chunk),
+            [],
+        )
+
+    def test_core_shape_rejects_hollow_teaching_and_native_tip_pages(self):
+        pages = {
+            "lesson-goal": '<div class="known-row"></div>' * 3,
+            "p1-teach": '<div class="model-list"></div>',
+            "p1-rule": '<p>Put at before a time.</p>',
+            "p2-teach": '<div class="model-list"></div>',
+            "p2-rule": '<p>Put usually before the action.</p>',
+            "native-tip": '<h2>Two useful extras</h2><p>使える表現</p>',
+        }
+        errors = check_deck.core_canonical_shape_issues(pages)
+        self.assertTrue(any("missing canonical pages" in item for item in errors))
+        self.assertTrue(any("main pattern block" in item for item in errors))
+        self.assertTrue(any("formation diagram" in item for item in errors))
+        self.assertTrue(any("not a native tip" in item for item in errors))
+
     def test_phrase_input_requires_spaced_answer_component(self):
         errors = check_deck.phrase_input_structure_issues(
             '<div class="bubble"><span class="korean">'

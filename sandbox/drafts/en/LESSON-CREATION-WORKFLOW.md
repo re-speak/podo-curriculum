@@ -354,9 +354,11 @@ criteria on one page**. The pilot shipped 3/4/3/4 because `please` had been tack
 which is padding two sentences rather than analysing four the same way.
 
 Every chip must help the learner recover meaning or construction. Punctuation alone (`?`), an
-article or bound preposition alone (`a`, `the`, `at`, `of`, `to`), and a split suffix (`-er`) are
-hard errors, not ways to reach a preferred chip count. If a short frame has no honest three-unit
-build, omit its reorder page and use another activity.
+article alone (`a`, `the`), and a split suffix (`-er`) are hard errors, not ways to reach a
+preferred chip count. A preposition may stand alone when choosing its position is the actual
+learning operation—`I | start work | at | nine` is useful because the learner is retrieving
+`at + exact time`. Otherwise keep the preposition with its phrase. If a short frame has no honest
+three-unit build, omit its reorder page and use another activity.
 
 Write the page's criterion into an HTML comment above it, then check every row against that one
 sentence. If a row needs a different criterion to reach its count, the count is wrong.

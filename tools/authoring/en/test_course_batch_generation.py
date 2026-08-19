@@ -13,6 +13,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import generate_contextual_course_batch as contextual
 import generate_core_course_batch as core
 import generate_ft_course_batch as freetalking
+import check_deck
 
 
 class CourseBatchGenerationTests(unittest.TestCase):
@@ -43,6 +44,32 @@ class CourseBatchGenerationTests(unittest.TestCase):
 
     def test_core_18_preserves_the_authoritative_model(self):
         self.assertEqual(core.strip_marks(core.LESSONS[18]["p1"][0][0]), "Can you drive?")
+
+    def test_core_12_uses_the_canonical_proofread_shape(self):
+        _, html = core.build(12, core.LESSONS[12])
+        page_chunks = dict(check_deck.pages(html))
+        self.assertEqual(len(page_chunks), 26)
+        self.assertEqual(check_deck.meta_content(html, "podo:proofread-status"), "complete")
+        self.assertEqual(check_deck.core_canonical_shape_issues(page_chunks), [])
+        self.assertIn('class="sent-hero"', page_chunks["p1-teach"])
+        self.assertIn('class="sent-more"', page_chunks["p1-teach"])
+        self.assertIn('class="batchim ending-rule"', page_chunks["p1-rule"])
+        self.assertIn('class="nuance-compare"', page_chunks["native-tip"])
+        self.assertEqual(
+            [len(block.split('class="choice"')) - 1 for block in page_chunks["p1-reorder"].split('class="task-block"')[1:]],
+            [4, 4, 4, 4],
+        )
+
+    def test_unproofread_generated_core_lessons_are_explicitly_pending(self):
+        for number in core.LESSONS:
+            if number == 12:
+                continue
+            _, html = core.build(number, core.LESSONS[number])
+            self.assertEqual(
+                check_deck.meta_content(html, "podo:proofread-status"),
+                "pending",
+                number,
+            )
 
     def test_core_batch_matches_generator(self):
         for number, data in core.LESSONS.items():

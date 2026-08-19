@@ -26,8 +26,8 @@ def rows(*items):
 
 LESSONS = {
 12: dict(slug="i-start-work-at-nine", title="I start work at nine", ko="아홉 시에 일을 시작해요", ja="9時に仕事を始めます", goal=("Say what you regularly do and when.", "ふだんすることと、その時間を言いましょう。"),
- p1=rows(("{t}I start work at{/t} nine.", "9時に{t}仕事を始めます{/t}。", "I|start work|at nine."),("{t}I start work at{/t} eight.", "8時に{t}仕事を始めます{/t}。", "I|start work|at eight."),("{t}I start work at{/t} ten.", "10時に{t}仕事を始めます{/t}。", "I|start work|at ten."),("{t}I start work at{/t} eleven.", "11時に{t}仕事を始めます{/t}。", "I|start work|at eleven.")),
- p2=rows(("{t}I usually{/t} finish {t}around{/t} six.", "{t}ふだん{/t}6時{t}ごろ{/t}仕事を終えます。", "I usually|finish|around|six."),("{t}I usually{/t} eat {t}around{/t} seven.", "{t}ふだん{/t}7時{t}ごろ{/t}食べます。", "I usually|eat|around|seven."),("{t}I usually{/t} leave {t}around{/t} eight.", "{t}ふだん{/t}8時{t}ごろ{/t}出ます。", "I usually|leave|around|eight."),("{t}I usually{/t} get home {t}around{/t} nine.", "{t}ふだん{/t}9時{t}ごろ{/t}帰宅します。", "I usually|get home|around|nine.")),
+ p1=rows(("{t}I start work at{/t} nine.", "9時に{t}仕事を始めます{/t}。", "I|start work|at|nine."),("{t}I start work at{/t} eight.", "8時に{t}仕事を始めます{/t}。", "I|start work|at|eight."),("{t}I start work at{/t} ten.", "10時に{t}仕事を始めます{/t}。", "I|start work|at|ten."),("{t}I start work at{/t} eleven.", "11時に{t}仕事を始めます{/t}。", "I|start work|at|eleven.")),
+ p2=rows(("{t}I usually{/t} finish work {t}around{/t} six.", "{t}ふだん{/t}6時{t}ごろ{/t}仕事を終えます。", "I usually|finish work|around|six."),("{t}I usually{/t} eat lunch {t}around{/t} twelve.", "{t}ふだん{/t}12時{t}ごろ{/t}昼食をとります。", "I usually|eat lunch|around|twelve."),("{t}I usually{/t} have dinner {t}around{/t} seven.", "{t}ふだん{/t}7時{t}ごろ{/t}夕食をとります。", "I usually|have dinner|around|seven."),("{t}I usually{/t} start work {t}around{/t} nine.", "{t}ふだん{/t}9時{t}ごろ{/t}仕事を始めます。", "I usually|start work|around|nine.")),
  rules=(("Use at before an exact clock time: at nine, at ten.", "正確な時刻の前には at を置き、at nine、at ten の形にします。"),("Put usually before the main verb, and use around before an approximate time.", "usually は動詞の前に置き、だいたいの時刻には around を使います。")), prompt=("What does a normal workday look like for you?", "ふだんの仕事の日はどんな一日ですか？"), partner=("Coworker", "What time do you normally start?", "And when do you usually finish?", "That is a long day."), tip=("every day", "毎日", "most days", "たいていの日")),
 13: dict(slug="do-you-drink-coffee", title="Do you drink coffee?", ko="커피를 마셔요?", ja="コーヒーを飲みますか？", goal=("Ask about a habit and give a short answer with one detail.", "習慣についてたずね、短い答えに一つ情報を加えましょう。"),
  p1=rows(("{t}Do you{/t} drink coffee?", "コーヒーを{t}飲みますか{/t}？", "Do you|drink|coffee?"),("{t}Do you{/t} cook at home?", "家で{t}料理しますか{/t}？", "Do you|cook|at home?"),("{t}Do you{/t} work on weekends?", "週末に{t}働きますか{/t}？", "Do you|work|on weekends?"),("{t}Do you{/t} exercise every day?", "毎日{t}運動しますか{/t}？", "Do you|exercise|every day?")),
@@ -137,7 +137,7 @@ DIALOGUES = {
 }
 
 VOCAB = {
-12:("finish|終える; around|〜ごろ","start|始める; work|仕事; usually|ふだん",""),
+12:("finish work|仕事を終える; eat lunch|昼食をとる; have dinner|夕食をとる; around|〜ごろ","start work|仕事を始める; usually|ふだん",""),
 13:("habit|習慣; exercise|運動する","coffee|コーヒー; cook|料理する; weekend|週末","routine|日課"),
 14:("instead|その代わり; drive|運転する","train|電車; breakfast|朝食; water|水",""),
 15:("downtown|中心街; nearby|近くに","work|働く; live|住む; study|勉強する","fit|合うこと"),
@@ -161,6 +161,14 @@ def set_vocab(head, number):
     for category,value in zip(("new","assumed","receptive"),VOCAB[number]):
         head=re.sub(rf'(<meta name="podo:vocabulary:{category}" content=")[^"]*(")',rf'\g<1>{value}\2',head,count=1)
     return head
+
+
+def set_proofread_status(head, status):
+    marker = '<meta name="podo:vocabulary-status" content="reviewed">'
+    proofread = f'<meta name="podo:proofread-status" content="{status}">'
+    if marker not in head:
+        raise ValueError("canonical shell has no reviewed vocabulary marker")
+    return head.replace(marker, marker + "\n  " + proofread, 1)
 
 def known_page(number):
     entries=[]
@@ -186,9 +194,23 @@ def section(pid,title,ja,body):
 
 
 def teach(pid, pattern, meaning):
-    lines="".join(f'<div class="model-line"><span class="korean">{marks(en)}</span><span class="translation">{marks(jp)}</span></div>' for en,jp,_ in pattern[:3])
-    body=f'<p class="section-subtitle pattern-meaning"><span class="ko">{esc(meaning[0])}</span><span class="ja">{esc(meaning[1])}</span></p><div class="model-list">{lines}</div>'
-    return section(pid,"See the pattern","パターンを見よう",body)
+    hero_en, hero_jp, _ = pattern[0]
+    examples = "".join(
+        f'<div><span class="korean">{marks(en)}</span>'
+        f'<span class="translation">{marks(jp)}</span></div>'
+        for en, jp, _ in pattern[1:3]
+    )
+    body = (
+        '<p class="section-subtitle pattern-meaning">'
+        '<span class="meaning-kicker">Meaning &amp; use <small>意味・使い方</small></span>'
+        f'<span class="ko">{esc(meaning[0])}</span>'
+        f'<span class="ja">{esc(meaning[1])}</span></p>'
+        '<div class="sent-hero">'
+        f'<span class="korean">{marks(hero_en)}</span>'
+        f'<span class="translation">{marks(hero_jp)}</span></div>'
+        f'<div class="sent-more">{examples}</div>'
+    )
+    return section(pid, "Today's pattern", "今日のパターン", body)
 
 
 def rule_example(pattern):
@@ -215,7 +237,7 @@ def reorder(pid, pattern):
     return section(pid,"Build the sentence","文を組み立てよう",'<p class="section-subtitle"><span class="ko">Put the four meaning chunks in order.</span><span class="ja">4つの意味のまとまりを順番に並べましょう。</span></p>'+"".join(blocks))
 
 
-BOUND_REORDER_CHIPS = {"a", "an", "the", "at", "of", "to", "er"}
+BOUND_REORDER_CHIPS = {"a", "an", "the", "er"}
 
 
 def validate_reorder_pattern(pattern):
@@ -269,6 +291,285 @@ def translate(pid, pattern):
     return section(pid,"Say it in English","英語にしよう",'<p class="section-subtitle"><span class="ko">Read the Japanese, then say the whole sentence in English.</span><span class="ja">日本語を見て、文をまるごと英語で言いましょう。</span></p>'+blocks)
 
 
+def rule_page(pid, title, title_ja, script, script_ja, formula, heading, heading_ja, examples):
+    example_html = "".join(f"<span>{example}</span>" for example in examples)
+    return section(
+        pid,
+        title,
+        title_ja,
+        '<p class="section-subtitle">'
+        f'<span class="ko">{esc(script)}</span><span class="ja">{esc(script_ja)}</span></p>'
+        '<div class="batchim ending-rule"><div class="bt-box">'
+        f'<span class="bt-eq"><span class="bt-out">{formula}</span></span>'
+        f'<span class="bt-head">{esc(heading)}<small>{esc(heading_ja)}</small></span>'
+        f'<span class="bt-ex">{example_html}</span>'
+        '</div></div>',
+    )
+
+
+def choose_sentences(pid, title, title_ja, script, script_ja, rows):
+    rendered = []
+    for index, (japanese, correct, distractor) in enumerate(rows):
+        options = [("correct", correct, True), ("other", distractor, False)]
+        if index % 2:
+            options.reverse()
+        option_html = '<span class="sep">/</span>'.join(
+            f'<span class="opt" data-sync-option="{kind}"'
+            f'{" data-correct" if is_correct else ""}>{esc(text)}</span>'
+            for kind, text, is_correct in options
+        )
+        rendered.append(
+            f'<div class="choose-row sentence" data-sync-id="{pid}-{index}" '
+            'data-sync-kind="selection" data-sync-state="chosen">'
+            f'<span class="translation">{esc(japanese)}</span>'
+            f'<span class="choose-sentence">{option_html}</span></div>'
+        )
+    return section(
+        pid,
+        title,
+        title_ja,
+        '<p class="section-subtitle">'
+        f'<span class="ko">{esc(script)}</span><span class="ja">{esc(script_ja)}</span></p>'
+        f'<div class="choose-list">{"".join(rendered)}</div>',
+    )
+
+
+def live_avatar(name):
+    return (
+        '<span class="who"><span class="avatar icon">'
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" '
+        'd="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg>'
+        f'</span><span class="who-name">{esc(name)}</span></span>'
+    )
+
+
+def core12_pages(d):
+    p1_meaning = (
+        "Use this to say the exact time your workday begins.",
+        "仕事を始める正確な時刻を伝えるときに使います。",
+    )
+    p2_meaning = (
+        "Use this to say what normally happens at about a certain time.",
+        "ふだん何をだいたい何時ごろするかを伝えるときに使います。",
+    )
+
+    goal = '''    <div class="transition-page" data-page-id="lesson-goal" data-act="Talking about routines">
+      <span class="transition-kicker">GOAL</span>
+      <h2 class="transition-title">I start work at nine <span class="title-ja">(9時に仕事を始めます)</span></h2>
+      <p class="section-subtitle"><span class="ko">Say when your normal workday starts and finishes.</span><span class="ja">ふだんの仕事が何時に始まり、何時ごろ終わるかを話しましょう。</span></p>
+      <div class="known lines">
+        <div class="known-row"><span class="k">I start work at nine.</span><span class="j">9時に仕事を始めます。</span></div>
+        <div class="known-row"><span class="k">I usually finish work around six.</span><span class="j">ふだん6時ごろ仕事を終えます。</span></div>
+        <div class="known-row"><span class="k">How about you?</span><span class="j">あなたはどうですか？</span></div>
+      </div>
+    </div>
+'''
+    known = section(
+        "words-you-know",
+        "Words you already know",
+        "もう知っている単語",
+        '<p class="section-subtitle"><span class="ko">These words may look familiar. Let\'s say them in English.</span><span class="ja">見たことのある単語ですね。英語で言ってみましょう。</span></p>'
+        '<div class="bridge">'
+        '<div class="br-row"><span class="br-cn">スタート</span><span class="br-eq">→</span><span class="br-ko">start</span></div>'
+        '<div class="br-row"><span class="br-cn">ワーク</span><span class="br-eq">→</span><span class="br-ko">work</span></div>'
+        '<div class="br-row"><span class="br-cn">フィニッシュ</span><span class="br-eq">→</span><span class="br-ko">finish</span></div>'
+        '</div>',
+    )
+    p1_intro = '''    <div class="transition-page" data-page-id="part1-intro" data-act="I start work at…">
+      <span class="transition-kicker">PART 1</span>
+      <h2 class="transition-title">I start work at ___.</h2>
+      <p class="transition-copy">仕事を始める正確な時刻を言うパターンです。</p>
+    </div>
+'''
+    p1_rule = rule_page(
+        "p1-rule",
+        "Use at with an exact time",
+        "正確な時刻には at",
+        'Keep "start work" together, and put "at" directly before the clock time.',
+        '「start work」をひとまとまりにして、時計の時刻のすぐ前に「at」を置きます。',
+        'I + <b>start work</b> + <b>at</b> + 時刻',
+        "Exact clock time",
+        "ぴったりの時刻",
+        ("I <b>start work at</b> nine.", "I <b>start work at</b> ten."),
+    )
+    p1_choose = choose_sentences(
+        "p1-choose",
+        "Choose the exact time",
+        "正しい時刻を選ぼう",
+        "Read the Japanese, then choose the matching time.",
+        "日本語を読んで、合う時刻を選びましょう。",
+        (
+            ("8時に仕事を始めます。", "I start work at eight.", "I start work at ten."),
+            ("9時に仕事を始めます。", "I start work at nine.", "I start work at eleven."),
+            ("10時に仕事を始めます。", "I start work at ten.", "I start work at eight."),
+            ("11時に仕事を始めます。", "I start work at eleven.", "I start work at nine."),
+        ),
+    )
+    p1_write = section(
+        "p1-write",
+        "Your real start time",
+        "自分の始業時刻",
+        '<p class="section-subtitle"><span class="ko">What time do you start work?</span><span class="ja">何時に仕事を始めますか？</span></p>'
+        '<div class="task-block"><div class="answer-box tall">'
+        '<span class="answer-label">I start work at ___.<span class="task">自分の時刻で</span></span>'
+        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="p1-write" rows="2" spellcheck="false" maxlength="2000"></textarea></span>'
+        '</div></div>',
+    )
+
+    p2_intro = '''    <div class="transition-page" data-page-id="part2-intro" data-act="I usually… around…">
+      <span class="transition-kicker">PART 2</span>
+      <h2 class="transition-title">I usually ___ around ___.</h2>
+      <p class="transition-copy">ふだんすることと、だいたいの時刻を言うパターンです。</p>
+    </div>
+'''
+    p2_rule = rule_page(
+        "p2-rule",
+        "Put each word in its place",
+        "usually と around の位置",
+        'Put "usually" before the action and "around" before the approximate time.',
+        '「usually」は動作の前に、「around」はだいたいの時刻の前に置きます。',
+        'I + <b>usually</b> + 動作 + <b>around</b> + 時刻',
+        "Usual action and approximate time",
+        "ふだんの動作＋だいたいの時刻",
+        (
+            "I <b>usually</b> finish work <b>around</b> six.",
+            "I <b>usually</b> eat lunch <b>around</b> twelve.",
+        ),
+    )
+    p2_choose = choose_sentences(
+        "p2-choose",
+        "Choose the natural word order",
+        "自然な語順を選ぼう",
+        'Choose the sentence with "usually" before the action.',
+        '「usually」が動作の前にある文を選びましょう。',
+        (
+            ("ふだん6時ごろ仕事を終えます。", "I usually finish work around six.", "I finish work usually around six."),
+            ("ふだん12時ごろ昼食をとります。", "I usually eat lunch around twelve.", "I eat lunch usually around twelve."),
+            ("ふだん7時ごろ夕食をとります。", "I usually have dinner around seven.", "I have dinner usually around seven."),
+            ("ふだん9時ごろ仕事を始めます。", "I usually start work around nine.", "I start work usually around nine."),
+        ),
+    )
+    p2_write = section(
+        "p2-write",
+        "Your real finish time",
+        "自分の終業時刻",
+        '<p class="section-subtitle"><span class="ko">When do you usually finish work?</span><span class="ja">ふだん何時ごろ仕事を終えますか？</span></p>'
+        '<div class="task-block"><div class="answer-box tall">'
+        '<span class="answer-label">I usually finish work around ___.<span class="task">自分の時刻で</span></span>'
+        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="p2-write" rows="2" spellcheck="false" maxlength="2000"></textarea></span>'
+        '</div></div>',
+    )
+
+    p1_en, p1_jp, _ = d["p1"][0]
+    p2_en, p2_jp, _ = d["p2"][0]
+    model_dialogue = "".join(
+        (
+            turn("other", OTHER, "Coworker", "What time do you start work?", "何時に仕事を始めますか？"),
+            turn("me", ME, "Me", marks(p1_en), marks(p1_jp)),
+            turn("other", OTHER, "Coworker", "And when do you usually finish work?", "では、ふだん何時ごろ仕事を終えますか？"),
+            turn("me", ME, "Me", marks(p2_en), marks(p2_jp)),
+            turn("other", OTHER, "Coworker", "That is a long day.", "長い一日ですね。"),
+            turn("me", ME, "Me", "Yes, it is.", "はい、そうですね。"),
+        )
+    )
+    complete_dialogue = "".join(
+        (
+            turn("other", OTHER, "Coworker", "What time do you start work?", "何時に仕事を始めますか？"),
+            answer_turn(ME, "Me", inputs(p1_en, "dlg-p1"), marks(p1_jp, "target")),
+            turn("other", OTHER, "Coworker", "And when do you usually finish work?", "では、ふだん何時ごろ仕事を終えますか？"),
+            answer_turn(ME, "Me", inputs(p2_en, "dlg-p2"), marks(p2_jp, "target")),
+            turn("other", OTHER, "Coworker", "That is a long day.", "長い一日ですね。"),
+            turn("me", ME, "Me", "Yes, it is.", "はい、そうですね。"),
+        )
+    )
+    p3_model = section(
+        "p3-model",
+        "Read the conversation",
+        "会話を読もう",
+        '<p class="section-subtitle"><span class="ko">Read your lines while I read the coworker.</span><span class="ja">自分のセリフを読み、私は同僚のパートを読みます。</span></p>'
+        f'<div class="dialogue">{model_dialogue}</div>',
+    )
+    p3_complete = section(
+        "p3-complete",
+        "Complete the conversation",
+        "会話をうめよう",
+        '<p class="section-subtitle"><span class="ko">Say the missing pattern words.</span><span class="ja">空いているパターンの部分を言ってみましょう。</span></p>'
+        '<div class="tutor-note">Write each target exactly as the learner says it.</div>'
+        f'<div class="dialogue">{complete_dialogue}</div>',
+    )
+    tutor_avatar = live_avatar("Tutor")
+    me_avatar = live_avatar("Me")
+    p3_freetalk = section(
+        "p3-freetalk",
+        "Free talk",
+        "フリートーク",
+        '<p class="section-subtitle"><span class="ko">Tell me your times, then ask me too.</span><span class="ja">自分の時刻を答えて、それから私にも聞いてください。</span></p>'
+        '<div class="dialogue">'
+        f'<div class="turn other">{tutor_avatar}<div class="bubble"><span class="korean">What time do you start work?</span><span class="translation">何時に仕事を始めますか？</span></div></div>'
+        f'<div class="turn me">{me_avatar}<div class="bubble me"><div class="answer-box small"><span class="answer-label">I start work at ___.<span class="task">自分の時刻で</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-start" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+        f'<div class="turn other">{tutor_avatar}<div class="bubble"><span class="korean">When do you usually finish work?</span><span class="translation">ふだん何時ごろ仕事を終えますか？</span></div></div>'
+        f'<div class="turn me">{me_avatar}<div class="bubble me"><div class="answer-box small"><span class="answer-label">I usually finish work around ___.<span class="task">自分の時刻で</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-finish" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+        f'<div class="turn me">{me_avatar}<div class="bubble me"><span class="korean">How about you?</span><span class="translation">あなたはどうですか？</span></div></div>'
+        f'<div class="turn other">{tutor_avatar}<div class="bubble"><div class="answer-box small"><span class="answer-label">Tutor\'s answer<span class="task">先生の答え</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-tutor" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+        '</div>',
+    )
+    wild = section(
+        "in-the-wild",
+        "Out in the world",
+        "実際の場面で",
+        '<p class="section-subtitle"><span class="ko">Compare your Friday schedule with a coworker.</span><span class="ja">同僚と金曜日の予定を比べましょう。</span></p>'
+        '<div class="dialogue">'
+        + turn("other", OTHER, "Coworker", "What time do you start on Fridays?", "金曜日は何時に仕事を始めますか？")
+        + answer_turn(ME, "Me", '<textarea class="free-input phrase-input" data-sync-id="wild-start" data-answer="I start work at" rows="1" autocomplete="off" spellcheck="false"></textarea> eight.', '8時に<span class="target">仕事を始めます</span>。')
+        + turn("other", OTHER, "Coworker", "And when do you usually have dinner?", "では、ふだん何時ごろ夕食をとりますか？")
+        + answer_turn(ME, "Me", '<textarea class="free-input phrase-input" data-sync-id="wild-usually" data-answer="I usually" rows="1" autocomplete="off" spellcheck="false"></textarea> have dinner <textarea class="free-input phrase-input" data-sync-id="wild-around" data-answer="around" rows="1" autocomplete="off" spellcheck="false"></textarea> seven.', '<span class="target">ふだん</span>7時<span class="target">ごろ</span>夕食をとります。')
+        + turn("other", OTHER, "Coworker", "That sounds like a full day.", "忙しい一日になりそうですね。")
+        + turn("me", ME, "Me", "Yes, every Friday.", "はい、毎週金曜日です。")
+        + '</div>',
+    )
+    native_tip = section(
+        "native-tip",
+        "Around nine or nine-ish?",
+        "around nine と nine-ish",
+        '<p class="section-subtitle"><span class="ko">Both mean about nine. Use "nine-ish" in casual conversation.</span><span class="ja">どちらも9時ごろという意味です。「nine-ish」はカジュアルな会話で使います。</span></p>'
+        '<div class="tutor-note">Read both versions so the learner can hear the casual tone of -ish.</div>'
+        '<div class="nuance-compare">'
+        '<div class="nuance-choice"><span class="nuance-when"><b>Any situation</b><small>どんな場面でも</small></span><span class="korean">I usually start <span class="ending">around nine</span>.</span><span class="translation">ふだん9時ごろ始めます。</span></div>'
+        '<div class="nuance-or"><span>Pick by situation <small>場面で選ぶ</small></span></div>'
+        '<div class="nuance-choice"><span class="nuance-when"><b>Casual conversation</b><small>カジュアルな会話で</small></span><span class="korean">I usually start <span class="ending">at nine-ish</span>.</span><span class="translation">ふだん9時くらいに始めます。</span></div>'
+        '</div>',
+    )
+
+    return [
+        goal,
+        known,
+        p1_intro,
+        teach("p1-teach", d["p1"], p1_meaning),
+        read("p1-read", d["p1"]),
+        p1_rule,
+        p1_choose,
+        '    <!-- Reorder criterion: subject · action · time preposition · clock time. -->\n' + lesson_reorder(d, 1),
+        fill("p1-fill", d["p1"]),
+        translate("p1-translate", d["p1"]),
+        p1_write,
+        p2_intro,
+        teach("p2-teach", d["p2"], p2_meaning),
+        read("p2-read", d["p2"]),
+        p2_rule,
+        p2_choose,
+        '    <!-- Reorder criterion: subject plus frequency · action · approximate-time marker · clock time. -->\n' + lesson_reorder(d, 2),
+        fill("p2-fill", d["p2"]),
+        translate("p2-translate", d["p2"]),
+        p2_write,
+        '''    <div class="transition-page" data-page-id="part3-intro" data-act="Talking about a workday"><span class="transition-kicker">PART 3</span><h2 class="transition-title">Your workday</h2><p class="transition-copy">二つのパターンを使って、一日の仕事の時間を話しましょう。</p></div>\n''',
+        p3_model,
+        p3_complete,
+        p3_freetalk,
+        wild,
+        native_tip,
+    ]
+
+
 def avatar(src,name): return f'<span class="who"><img class="avatar" src="{src}" alt=""><span class="who-name">{name}</span></span>'
 def turn(kind,src,name,en,jp): return f'<div class="turn {kind}">{avatar(src,name)}<div class="bubble {"me" if kind=="me" else ""}"><span class="korean">{en}</span><span class="translation">{jp}</span></div></div>'
 def answer_turn(src,name,en,jp):
@@ -299,8 +600,9 @@ def build(number,d):
     slug=f'{number:02d}-{d["slug"]}'
     head=new_lesson.retarget(head,review_id=f"CORE-{number}",lesson_id=slug,level="A1",title=d["title"],title_ko=d["ko"],title_ja=d["ja"],version="2026-08-19")
     head=set_vocab(head.replace('content="todo"','content="reviewed"'),number)
+    head=set_proofread_status(head, "complete" if number == 12 else "pending")
     goal_en,goal_ja=d["goal"]
-    pages=[f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Everyday English"><span class="transition-kicker">GOAL</span><h2 class="transition-title">{esc(d["title"])} <span class="title-ja">({esc(d["ja"])})</span></h2><p class="section-subtitle"><span class="ko">{esc(goal_en)}</span><span class="ja">{esc(goal_ja)}</span></p><div class="known lines"><div class="known-row"><span class="k">Notice two useful frames</span><span class="j">二つの表現に気づく</span></div><div class="known-row"><span class="k">Build and complete them</span><span class="j">組み立てて完成する</span></div><div class="known-row"><span class="k">Use them in a conversation</span><span class="j">会話で使う</span></div></div></div>\n''',
+    pages = core12_pages(d) if number == 12 else [f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Everyday English"><span class="transition-kicker">GOAL</span><h2 class="transition-title">{esc(d["title"])} <span class="title-ja">({esc(d["ja"])})</span></h2><p class="section-subtitle"><span class="ko">{esc(goal_en)}</span><span class="ja">{esc(goal_ja)}</span></p><div class="known lines"><div class="known-row"><span class="k">Notice two useful frames</span><span class="j">二つの表現に気づく</span></div><div class="known-row"><span class="k">Build and complete them</span><span class="j">組み立てて完成する</span></div><div class="known-row"><span class="k">Use them in a conversation</span><span class="j">会話で使う</span></div></div></div>\n''',
       known_page(number),
       f'    <div class="transition-page" data-page-id="part1-intro" data-act="Pattern 1"><span class="transition-kicker">PATTERN 1</span><h2 class="transition-title">{esc(strip_marks(d["p1"][0][0]))}</h2></div>\n',
       teach("p1-teach",d["p1"],d["goal"]),read("p1-read",d["p1"]),
