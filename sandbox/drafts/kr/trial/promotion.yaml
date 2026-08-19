@@ -1,0 +1,49 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+
+# 검수를 마친 한국어 체험 덱을 배포 가능한 코스로 올린다.
+# tools/import-trial-decks.py 가 파이썬 리터럴로 갖고 있던 목록을 그대로 옮긴 것이다.
+
+metadata:
+  target: courses/kr/hangul-trial-test
+
+spec:
+  source: sandbox/drafts/kr/trial/lessons
+
+  # 평평하게 만든 basename 을 찾는 순서. shared/assets 는 promote.py 가 항상
+  # 마지막에 붙이므로 초안 안의 그림이 같은 이름의 공용 그림을 이긴다.
+  assetRoots:
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: trial-1-hangul-short.html
+      slug: 01-trial-hangul
+      week: 1
+      title:
+        ko: 체험 · 초입문 한글
+        en: Trial · Hangul from zero
+        ja: 体験レッスン 超入門
+
+    - source: trial-2-patterns-short.html
+      slug: 02-trial-self-intro
+      week: 2
+      title:
+        ko: 체험 · 초급 자기소개
+        en: Trial · Introducing yourself
+        ja: 体験レッスン 初級 · 自己紹介
+
+    - source: trial-3-contextual-short.html
+      slug: 03-trial-first-meeting
+      week: 3
+      title:
+        ko: 체험 · 중급 우리, 어디서 본 적 있죠?
+        en: Trial · Haven't we met somewhere?
+        ja: 体験レッスン 中級 · 第1話 どこかで会いましたよね？
+
+    - source: trial-4-freetalking-short.html
+      slug: 04-trial-free-talking
+      week: 4
+      title:
+        ko: 체험 · 고급 프리토킹
+        en: Trial · Free talking
+        ja: 体験レッスン 上級 · フリートーキング

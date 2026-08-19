@@ -51,6 +51,13 @@ steps:
         # 빌드 컨테이너는 일회용이라 venv 를 만들 이유가 없으므로 그 보호를 끈다.
         pip install --break-system-packages --quiet -r tools/requirements.txt
 
+        # 은퇴 검사(layer 6)의 기준점. 이 PR 이 들어갈 브랜치의 현재 상태와 비교해
+        # "살아 있던 코스가 말없이 사라졌는가"를 본다. PR 체크아웃은 얕을 수 있어
+        # 기준 브랜치를 따로 받아 둔다 — 못 받으면 layer 6 은 실패가 아니라 건너뛴다.
+        BASE="origin/$${_BASE_BRANCH:-stage}"
+        git fetch origin "$${_BASE_BRANCH:-stage}" --depth=1 --quiet || true
+        echo "은퇴 검사 기준: $$BASE"
+
         # 이 PR 이 머지되면 어디로 나가는지에 따라 plan 을 다르게 보여준다. base 가 main 이면
         # 다음 머지는 prod 배포다 — 거기서 stage plan 을 보여주면 리뷰어가 자기가 무엇을
         # 승인하는지 오해한다.
@@ -72,10 +79,10 @@ steps:
         # 최종 판정은 마지막 verdict 스텝이 한다.
         set +e
         if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
-          python3 tools/validate.py --contract --env stage 2>&1 | tee /workspace/validate.log
+          python3 tools/validate.py --contract --env stage --base "$$BASE" 2>&1 | tee /workspace/validate.log
         else
           echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다" | tee /workspace/validate.log
-          python3 tools/validate.py --env stage 2>&1 | tee -a /workspace/validate.log
+          python3 tools/validate.py --env stage --base "$$BASE" 2>&1 | tee -a /workspace/validate.log
         fi
         echo "$${PIPESTATUS[0]}" > /workspace/validate.rc
         set -e

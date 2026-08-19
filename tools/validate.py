@@ -2,13 +2,14 @@
 """
 The PR gate. Everything that could break a live lesson, checked before merge.
 
-Five layers, cheapest first:
+Six layers, cheapest first:
 
   1. schema      — course.yaml / lesson.yaml against JSON Schema
   2. structure   — slugs match directories, weeks run 1..N
   3. package     — every deck actually builds, with the GCS-flattening audit
   4. contract    — the built HTML through lemonboard's own data-sync validator
   5. runtime     — every pinned shared-runtime URL is live and matches shared/
+  6. retirement  — nothing live vanished from courses/ without being switched off
 
 Layer 4 needs network and is skipped without --contract, because the contract is
 owned by lemonboard and grape calls the same endpoint at upload time. Running it
@@ -24,7 +25,19 @@ Both look fine on the author's screen. So the check is: the URL serves, and the
 bytes it serves are the bytes in shared/. It fail-opens on network trouble and 5xx
 like layer 4 — a CDN blip must not block a PR — but a 404 or a byte mismatch blocks.
 
-    python3 tools/validate.py [--contract] [--env stage]
+Layer 6 exists because apply.py has no delete path. It is a pure upsert: it walks
+the courses that exist, posts a manifest, and never reads back from grape. So a
+course deleted from this repository does not get retired — its rows keep USE_YN='Y',
+keep pointing at GCS content nobody manages any more, and the repository forgets
+they exist. The deploy goes green and the learner still sees the course.
+
+Retirement is `enabled: false`, deployed, and only then the directory. That rule is
+enforceable without any new grape endpoint, because the previous commit is the
+record: compare against the merge base and fail when something that was live is now
+absent. `tools/promote.py` enforces the same rule at the only place that removes
+lessons; this catches a `courses/` edited by hand, which promote never sees.
+
+    python3 tools/validate.py [--contract] [--env stage] [--base origin/main]
 """
 
 from __future__ import annotations
@@ -34,15 +47,19 @@ import json
 import os
 import pathlib
 import re
+import subprocess
 import sys
 import tempfile
 import urllib.error
 import urllib.request
 
+import yaml
+
 import build
 import model
 
 LEMONBOARD_KEY_ENV = "PODO_LEMONBOARD_API_KEY"
+REPO = model.REPO
 
 
 def _fail(message: str) -> int:
@@ -169,12 +186,69 @@ def check_runtime_urls(urls: set[str], rt: dict) -> list[str]:
     return problems
 
 
+def check_retirements(base: str) -> list[str]:
+    """Fail when a course that was `enabled: true` at `base` is gone now.
+
+    Reads the baseline out of git rather than off disk, so it works the same in CI
+    (where the branch is checked out fresh) and locally. Anything that stops us
+    reading the baseline — a shallow clone, an unknown ref, no git at all — is a
+    skip, not a failure: this layer protects against a specific mistake, and it
+    must not become a reason a PR cannot be validated at all.
+    """
+    try:
+        listing = subprocess.run(
+            ["git", "ls-tree", "-r", "--name-only", base, "courses/"],
+            cwd=REPO, capture_output=True, text=True, timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        print(f"\n  ~ retirement — cannot run git; skipped")
+        return []
+    if listing.returncode != 0:
+        print(f"\n  ~ retirement — no baseline at {base}; skipped")
+        return []
+
+    was = sorted({line[:line.index("/course.yaml")]
+                  for line in listing.stdout.splitlines()
+                  if line.endswith("/course.yaml")})
+    if not was:
+        print(f"\n  ~ retirement — {base} has no courses; skipped")
+        return []
+
+    problems: list[str] = []
+    gone = [c for c in was if not (REPO / c / "course.yaml").is_file()]
+    print(f"\nretirement  (vs {base} · {len(was)} course(s) then, {len(gone)} gone now)")
+
+    for course in gone:
+        show = subprocess.run(["git", "show", f"{base}:{course}/course.yaml"],
+                              cwd=REPO, capture_output=True, text=True, timeout=30)
+        if show.returncode != 0:
+            continue
+        try:
+            spec = (yaml.safe_load(show.stdout) or {}).get("spec") or {}
+        except yaml.YAMLError:
+            continue
+        if spec.get("enabled"):
+            problems.append(
+                f"{course}: was enabled: true at {base} and is gone now — "
+                f"deleting it does not retire it. apply.py never removes rows, so "
+                f"it stays live in grape pointing at content nobody updates. Set "
+                f"enabled: false, let that deploy, then delete the directory.")
+            print(f"  \u2717 {course} — was live, now absent")
+        else:
+            print(f"  \u2713 {course} — was already disabled")
+
+    if not gone:
+        print("  \u2713 nothing removed")
+    return problems
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--contract", action="store_true",
                     help="also run each built deck through lemonboard's validator (needs network)")
     ap.add_argument("--env", default="stage", help="which state lock to check against")
+    ap.add_argument("--base", default=os.environ.get("PODO_VALIDATE_BASE", "origin/main"),
+                    help="git ref to compare against for the retirement check")
     args = ap.parse_args()
 
     curriculum = model.load_curriculum()
@@ -250,6 +324,8 @@ def main() -> int:
     if seen_urls:
         print(f"\nshared runtime  ({rt['version']} · {len(seen_urls)} distinct file(s) pinned)")
         problems += check_runtime_urls(seen_urls, rt)
+
+    problems += check_retirements(args.base)
 
     print()
     if problems:

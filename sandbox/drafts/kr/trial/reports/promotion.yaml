@@ -1,0 +1,22 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+
+# 검수를 마친 리포트 덱. tools/import-report-deck.py 를 대신한다.
+
+metadata:
+  target: courses/kr/report-test
+
+spec:
+  source: sandbox/drafts/kr/trial/reports
+
+  assetRoots:
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: trial-1-report.html
+      slug: 01-trial-report
+      week: 1
+      title:
+        ko: 체험 · 니즈 파악과 리포트
+        en: Trial · Needs and report
+        ja: 体験 · ニーズ把握＆レポート
