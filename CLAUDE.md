@@ -227,7 +227,9 @@ the controls written straight into the HTML.
   updates, and the learner keeps seeing it while the deploy goes green. Set
   `enabled: false`, let that deploy, *then* delete the directory. `promote.py`
   stops and offers to write the flag for you; `validate.py` layer 6 fails the PR
-  if you go around it.
+  if you go around it. When the rows cannot be deleted at all — class history
+  hangs off them — clean up the rows and GCS objects by hand and declare it with a
+  `Retired-course: courses/<code>/<slug>` trailer on a commit in the PR.
 - **Run `python3 tools/validate.py` before pushing.** It catches the things that otherwise 404 from GCS while the build prints success.
 
 ## Not in scope

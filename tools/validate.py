@@ -37,6 +37,17 @@ record: compare against the merge base and fail when something that was live is 
 absent. `tools/promote.py` enforces the same rule at the only place that removes
 lessons; this catches a `courses/` edited by hand, which promote never sees.
 
+There is one legitimate way around it, so there is a way to say so. A course can be
+retired **out of band** — the rows deleted and the GCS objects cleaned up directly,
+which is the only option when class history hangs off a row and `enabled: false` is
+not enough. Declare it with a trailer on any commit in the range:
+
+    Retired-course: courses/kr/intermediate-test
+
+Without an escape hatch a gate that is occasionally wrong gets switched off rather
+than used, and the trailer keeps the claim next to the change where a reviewer sees
+it — the same reason the plan comment lives on the PR.
+
     python3 tools/validate.py [--contract] [--env stage] [--base origin/main]
 """
 
@@ -186,6 +197,28 @@ def check_runtime_urls(urls: set[str], rt: dict) -> list[str]:
     return problems
 
 
+def declared_retirements(base: str) -> set[str]:
+    """Courses a commit in `base..HEAD` claims were retired out of band.
+
+    `enabled: false` then delete is the normal path, but it is not always available:
+    when class history hangs off a row, the row cannot be deleted at all and gets
+    switched off directly instead. Someone doing that work in the database and in
+    GCS has done the retirement properly — they just did not do it through a deploy,
+    and nothing in the tree can tell. So they declare it, and the declaration sits in
+    the history next to the deletion it explains.
+    """
+    try:
+        log = subprocess.run(["git", "log", "--format=%B", f"{base}..HEAD"],
+                             cwd=REPO, capture_output=True, text=True, timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return set()
+    if log.returncode != 0:
+        return set()
+    return {line.split(":", 1)[1].strip()
+            for line in log.stdout.splitlines()
+            if line.strip().startswith("Retired-course:")}
+
+
 def check_retirements(base: str) -> list[str]:
     """Fail when a course that was `enabled: true` at `base` is gone now.
 
@@ -215,6 +248,7 @@ def check_retirements(base: str) -> list[str]:
 
     problems: list[str] = []
     gone = [c for c in was if not (REPO / c / "course.yaml").is_file()]
+    declared = declared_retirements(base)
     print(f"\nretirement  (vs {base} · {len(was)} course(s) then, {len(gone)} gone now)")
 
     for course in gone:
@@ -226,15 +260,19 @@ def check_retirements(base: str) -> list[str]:
             spec = (yaml.safe_load(show.stdout) or {}).get("spec") or {}
         except yaml.YAMLError:
             continue
-        if spec.get("enabled"):
+        if not spec.get("enabled"):
+            print(f"  \u2713 {course} — was already disabled")
+        elif course in declared:
+            print(f"  \u2713 {course} — was live; declared retired out of band")
+        else:
             problems.append(
                 f"{course}: was enabled: true at {base} and is gone now — "
                 f"deleting it does not retire it. apply.py never removes rows, so "
                 f"it stays live in grape pointing at content nobody updates. Set "
-                f"enabled: false, let that deploy, then delete the directory.")
+                f"enabled: false, let that deploy, then delete the directory. If the "
+                f"rows and objects were already cleaned up by hand, say so with a "
+                f"`Retired-course: {course}` trailer on a commit in this range.")
             print(f"  \u2717 {course} — was live, now absent")
-        else:
-            print(f"  \u2713 {course} — was already disabled")
 
     if not gone:
         print("  \u2713 nothing removed")
