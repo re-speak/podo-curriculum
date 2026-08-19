@@ -18,7 +18,7 @@ spec:
   teaches:
     patterns:
       []
-    canDo: 지금 더 필요한 쪽을 고르고 조건에 따라 선택이 바뀌는지 설명하기
+    canDo: 둘 중 하나를 고르고 조건에 따라 선택이 바뀌는지 설명하기
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-advanced · 1
 
