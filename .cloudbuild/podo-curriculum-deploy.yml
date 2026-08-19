@@ -27,7 +27,19 @@
 # 임의 브랜치 × 임의 환경의 수동 재배포(롤백·핫픽스 확인)는 podo-curriculum-deploy 가 남아 있다:
 #   gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
 #     --branch=<브랜치> --substitutions=_DEPLOY_ENV=<dev|qa|stage|prod[,...]>
-timeout: 1800s
+# 30분이었다. stage 트리거는 _DEPLOY_ENV=stage,qa,dev 로 세 환경을 순서대로 도는데,
+# 한국어 카탈로그 49코스 480과가 들어오면서 한 환경이 12분쯤 걸리게 됐다 — 세 환경이면
+# 36분이라 예산을 넘는다. 실제로 넘겼다: stage·qa 는 529행을 다 받고 dev 가 297행에서
+# 잘린 채 빌드가 TIMEOUT 으로 끝났다.
+#
+# 타임아웃으로 끊긴 배포는 실패 중에서도 고약한 쪽이다. 앞선 환경은 성공했고 뒤의 환경만
+# 반쯤 반영된 상태로 남는데, apply.py 가 순수 upsert 라 어디까지 갔는지 아무 데도 적히지
+# 않는다. 남는 것은 환경마다 다른 코스 목록뿐이다.
+#
+# 90분은 지금 필요한 40분의 두 배가 조금 넘는다. 카탈로그가 자라도 한동안 버틴다.
+# 이 값이 다시 모자라면 늘리기 전에 환경을 병렬로 도는 것을 먼저 보라 — 세 환경은
+# 서로를 기다릴 이유가 없고, 그러면 벽시계는 가장 느린 환경 하나로 줄어든다.
+timeout: 5400s
 
 options:
   logging: CLOUD_LOGGING_ONLY
