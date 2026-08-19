@@ -1,0 +1,81 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/talk-work-and-money-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-my-first-paycheck/lesson.html
+      slug: 01-my-first-paycheck
+      week: 1
+      title:
+        ko: "\ub0b4 \uccab \uc6d4\uae09"
+        en: "My first paycheck"
+        ja: "\u521d\u3081\u3066\u306e\u7d66\u6599"
+    - source: 02-proudest-work-moment/lesson.html
+      slug: 02-proudest-work-moment
+      week: 2
+      title:
+        ko: "\uc77c\ud558\uba74\uc11c \uac00\uc7a5 \ubfcc\ub4ef\ud588\ub358 \uc21c\uac04"
+        en: "My proudest work moment"
+        ja: "\u50cd\u3044\u3066\u3044\u3061\u3070\u3093\u8a87\u3089\u3057\u304b\u3063\u305f\u77ac\u9593"
+    - source: 03-when-i-felt-successful/lesson.html
+      slug: 03-when-i-felt-successful
+      week: 3
+      title:
+        ko: "\uc131\uacf5\ud588\ub2e4\uace0 \ub290\ub080 \uc21c\uac04"
+        en: "When I felt successful"
+        ja: "\u6210\u529f\u3057\u305f\u3068\u611f\u3058\u305f\u77ac\u9593"
+    - source: 04-what-i-am-learning-now/lesson.html
+      slug: 04-what-i-am-learning-now
+      week: 4
+      title:
+        ko: "\uc790\uae30\uacc4\ubc1c, \uc9c0\uae08 \ud558\uace0 \uc788\ub294 \uac83"
+        en: "What I am learning now"
+        ja: "\u4eca\u3057\u3066\u3044\u308b\u81ea\u5df1\u5553\u767a"
+    - source: 05-my-money-habit/lesson.html
+      slug: 05-my-money-habit
+      week: 5
+      title:
+        ko: "\ub098\ub9cc\uc758 \uc7ac\ud14c\ud06c"
+        en: "My money habit"
+        ja: "\u79c1\u306a\u308a\u306e\u304a\u91d1\u306e\u7ba1\u7406"
+    - source: 06-if-i-had-another-job/lesson.html
+      slug: 06-if-i-had-another-job
+      week: 6
+      title:
+        ko: "\ub2e4\ub978 \uc9c1\uc5c5\uc744 \uac00\uc84c\ub2e4\uba74"
+        en: "If I had another job"
+        ja: "\u5225\u306e\u4ed5\u4e8b\u3092\u3057\u3066\u3044\u305f\u3089"
+    - source: 07-how-ai-changed-my-work/lesson.html
+      slug: 07-how-ai-changed-my-work
+      week: 7
+      title:
+        ko: "AI \ub54c\ubb38\uc5d0 \ubc14\ub010 \ub0b4 \uc77c"
+        en: "How AI changed my work"
+        ja: "AI\u3067\u5909\u308f\u3063\u305f\u79c1\u306e\u4ed5\u4e8b"
+    - source: 08-why-i-wanted-a-change/lesson.html
+      slug: 08-why-i-wanted-a-change
+      week: 8
+      title:
+        ko: "\uc774\uc9c1\uc744 \uace0\ubbfc\ud558\ub294 \uc774\uc720"
+        en: "Why I wanted a change"
+        ja: "\u4ed5\u4e8b\u3084\u52c9\u5f37\u3092\u5909\u3048\u305f\u304b\u3063\u305f\u7406\u7531"
+    - source: 09-best-and-worst-bosses/lesson.html
+      slug: 09-best-and-worst-bosses
+      week: 9
+      title:
+        ko: "\ucd5c\uace0\uc758 \uc0c1\uc0ac, \ucd5c\uc545\uc758 \uc0c1\uc0ac"
+        en: "Best and worst bosses"
+        ja: "\u6700\u9ad8\u306e\u4e0a\u53f8\u3001\u6700\u60aa\u306e\u4e0a\u53f8"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

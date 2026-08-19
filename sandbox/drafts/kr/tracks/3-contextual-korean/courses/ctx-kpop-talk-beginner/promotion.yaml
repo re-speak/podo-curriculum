@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/ctx-kpop-talk-beginner
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-favorite-member/lesson.html
+      slug: 01-favorite-member
+      week: 1
+      title:
+        ko: "\ucd5c\uc560 \uc18c\uac1c"
+        en: "Introducing your favorite member"
+        ja: "\u63a8\u3057\u7d39\u4ecb"
+    - source: 02-member-count/lesson.html
+      slug: 02-member-count
+      week: 2
+      title:
+        ko: "\uba87 \uba85\uc774\uc5d0\uc694?"
+        en: "How many members?"
+        ja: "\u4f55\u4eba\u3067\u3059\u304b\uff1f"
+    - source: 03-member-roles/lesson.html
+      slug: 03-member-roles
+      week: 3
+      title:
+        ko: "\ud3ec\uc9c0\uc158 \uc18c\uac1c"
+        en: "Introducing member roles"
+        ja: "\u30dd\u30b8\u30b7\u30e7\u30f3\u7d39\u4ecb"
+    - source: 04-becoming-a-fan/lesson.html
+      slug: 04-becoming-a-fan
+      week: 4
+      title:
+        ko: "\uc785\ub355 \uacc4\uae30"
+        en: "How I became a fan"
+        ja: "\u30d5\u30a1\u30f3\u306b\u306a\u3063\u305f\u304d\u3063\u304b\u3051"
+    - source: 05-why-this-member/lesson.html
+      slug: 05-why-this-member
+      week: 5
+      title:
+        ko: "\uc65c \uc774 \uc0ac\ub78c\uc778\uac00"
+        en: "Why this member"
+        ja: "\u306a\u305c\u3053\u306e\u4eba\uff1f"
+    - source: 06-comparing-songs/lesson.html
+      slug: 06-comparing-songs
+      week: 6
+      title:
+        ko: "\ube44\uad50"
+        en: "Comparing songs"
+        ja: "\u6bd4\u8f03"
+    - source: 07-describing-charm/lesson.html
+      slug: 07-describing-charm
+      week: 7
+      title:
+        ko: "\ubb18\uc0ac"
+        en: "Describing their charm"
+        ja: "\u9b45\u529b\u3092\u63cf\u5199\u3059\u308b"
+    - source: 08-recommending-a-song/lesson.html
+      slug: 08-recommending-a-song
+      week: 8
+      title:
+        ko: "\uc601\uc5c5"
+        en: "Recommending a song"
+        ja: "\u304a\u3059\u3059\u3081\u3059\u308b"
+    - source: 09-asking-about-favorites/lesson.html
+      slug: 09-asking-about-favorites
+      week: 9
+      title:
+        ko: "\ubb3c\uc5b4\ubcf4\uae30"
+        en: "Asking about favorites"
+        ja: "\u63a8\u3057\u306b\u3064\u3044\u3066\u805e\u304f"
+    - source: 10-fan-experience-and-hopes/lesson.html
+      slug: 10-fan-experience-and-hopes
+      week: 10
+      title:
+        ko: "\ub355\uc9c8 \uacbd\ud5d8\uacfc \ubc14\ub78c"
+        en: "Fan experiences and hopes"
+        ja: "\u30aa\u30bf\u6d3b\u306e\u7d4c\u9a13\u3068\u9858\u3044"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

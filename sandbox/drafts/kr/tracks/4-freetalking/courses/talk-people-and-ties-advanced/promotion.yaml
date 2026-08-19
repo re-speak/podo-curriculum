@@ -1,0 +1,67 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/talk-people-and-ties-advanced
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-advanced/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-advanced
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-choosing-friends/lesson.html
+      slug: 01-choosing-friends
+      week: 1
+      title:
+        ko: "\uce5c\uad6c\ub97c \uace0\ub974\ub294 \uae30\uc900"
+        en: "How I choose friends"
+        ja: "\u53cb\u9054\u3092\u9078\u3076\u57fa\u6e96"
+    - source: 02-first-impression-changed/lesson.html
+      slug: 02-first-impression-changed
+      week: 2
+      title:
+        ko: "\uccab\uc778\uc0c1\uc774 \uc644\uc804\ud788 \ub4a4\uc9d1\ud78c \uc0ac\ub78c"
+        en: "Someone who changed my first impression"
+        ja: "\u7b2c\u4e00\u5370\u8c61\u304c\u5b8c\u5168\u306b\u5909\u308f\u3063\u305f\u4eba"
+    - source: 03-do-you-believe-mbti/lesson.html
+      slug: 03-do-you-believe-mbti
+      week: 3
+      title:
+        ko: "MBTI, \ubbff\uc5b4?"
+        en: "Do you believe in MBTI?"
+        ja: "MBTI\u3001\u4fe1\u3058\u308b\uff1f"
+    - source: 04-doing-things-alone/lesson.html
+      slug: 04-doing-things-alone
+      week: 4
+      title:
+        ko: "\ud63c\ubc25\u00b7\ud63c\uc601\u00b7\ud63c\ud589"
+        en: "Eating, movies, and travel alone"
+        ja: "\u4e00\u4eba\u3054\u306f\u3093\u30fb\u4e00\u4eba\u6620\u753b\u30fb\u4e00\u4eba\u65c5"
+    - source: 05-five-minutes-with-a-stranger/lesson.html
+      slug: 05-five-minutes-with-a-stranger
+      week: 5
+      title:
+        ko: "\ucc98\uc74c \ubcf4\ub294 \uc0ac\ub78c\uacfc 5\ubd84"
+        en: "Five minutes with a stranger"
+        ja: "\u521d\u5bfe\u9762\u306e\u4eba\u30685\u5206"
+    - source: 06-making-up-after-a-fight/lesson.html
+      slug: 06-making-up-after-a-fight
+      week: 6
+      title:
+        ko: "\uc2f8\uc6b0\uace0 \ud654\ud574\ud558\ub294 \ubc95"
+        en: "How to make up after a fight"
+        ja: "\u3051\u3093\u304b\u3057\u3066\u4ef2\u76f4\u308a\u3059\u308b\u65b9\u6cd5"
+    - source: 07-why-friends-decrease-with-age/lesson.html
+      slug: 07-why-friends-decrease-with-age
+      week: 7
+      title:
+        ko: "\ub098\uc774 \ub4e4\uba74 \uc65c \uce5c\uad6c\uac00 \uc904\uc5b4\ub4e4\uae4c"
+        en: "Why we have fewer friends as we age"
+        ja: "\u5e74\u3092\u53d6\u308b\u3068\u53cb\u9054\u304c\u6e1b\u308b\u306e\u306f\u306a\u305c\uff1f"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

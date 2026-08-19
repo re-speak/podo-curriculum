@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/talk-me-lately-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-worth-the-money/lesson.html
+      slug: 01-worth-the-money
+      week: 1
+      title:
+        ko: "\ub3c8\uac12 \ud558\ub294 \ud15c"
+        en: "Worth the money"
+        ja: "\u8cb7\u3063\u3066\u3088\u304b\u3063\u305f\u3082\u306e"
+    - source: 02-current-obsession/lesson.html
+      slug: 02-current-obsession
+      week: 2
+      title:
+        ko: "\uc694\uc998 \ube60\uc9c4 \uac83"
+        en: "My current obsession"
+        ja: "\u6700\u8fd1\u30cf\u30de\u3063\u3066\u3044\u308b\u3082\u306e"
+    - source: 03-binge-watching/lesson.html
+      slug: 03-binge-watching
+      week: 3
+      title:
+        ko: "\uc815\uc8fc\ud589 \uc911"
+        en: "Binge-watching now"
+        ja: "\u4e00\u6c17\u898b\u4e2d"
+    - source: 04-recent-compliment/lesson.html
+      slug: 04-recent-compliment
+      week: 4
+      title:
+        ko: "\ucd5c\uadfc \ubc1b\uc740 \uce6d\ucc2c"
+        en: "A recent compliment"
+        ja: "\u6700\u8fd1\u3082\u3089\u3063\u305f\u8912\u3081\u8a00\u8449"
+    - source: 05-weekend-plan/lesson.html
+      slug: 05-weekend-plan
+      week: 5
+      title:
+        ko: "\uc774\ubc88 \uc8fc\ub9d0 \uacc4\ud68d"
+        en: "This weekend's plan"
+        ja: "\u4eca\u9031\u672b\u306e\u4e88\u5b9a"
+    - source: 06-one-goal-left/lesson.html
+      slug: 06-one-goal-left
+      week: 6
+      title:
+        ko: "\uc62c\ud574 \ub0a8\uc740 \ubaa9\ud45c"
+        en: "One goal for the rest of the year"
+        ja: "\u4eca\u5e74\u4e2d\u306b\u9054\u6210\u3057\u305f\u3044\u76ee\u6a19"
+    - source: 07-where-my-money-goes/lesson.html
+      slug: 07-where-my-money-goes
+      week: 7
+      title:
+        ko: "\uc694\uc998 \ub3c8\uc774 \uc81c\uc77c \ub9ce\uc774 \ub098\uac00\ub294 \uacf3"
+        en: "Where my money goes"
+        ja: "\u6700\u8fd1\u3044\u3061\u3070\u3093\u304a\u91d1\u3092\u4f7f\u3046\u3068\u3053\u308d"
+    - source: 08-first-time-lately/lesson.html
+      slug: 08-first-time-lately
+      week: 8
+      title:
+        ko: "\ucd5c\uadfc\uc5d0 \ucc98\uc74c \ud574 \ubcf8 \uac83"
+        en: "Something I tried for the first time"
+        ja: "\u6700\u8fd1\u521d\u3081\u3066\u3084\u3063\u305f\u3053\u3068"
+    - source: 09-small-win/lesson.html
+      slug: 09-small-win
+      week: 9
+      title:
+        ko: "\uc774\ubc88 \ub2ec\uc758 \uc791\uc740 \uc131\uacf5"
+        en: "This month's small win"
+        ja: "\u4eca\u6708\u306e\u5c0f\u3055\u306a\u6210\u529f"
+    - source: 10-on-repeat/lesson.html
+      slug: 10-on-repeat
+      week: 10
+      title:
+        ko: "\uc694\uc998 \ubb34\ud55c \ubc18\ubcf5 \uc911\uc778 \ub178\ub798"
+        en: "A song on repeat"
+        ja: "\u6700\u8fd1\u30ea\u30d4\u30fc\u30c8\u3057\u3066\u3044\u308b\u66f2"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

@@ -7,9 +7,9 @@ spec:
   week: 1
 
   title:
-    ko: 체험 · 초급 기본 문형
-    en: Trial · Core patterns
-    ja: 体験レッスン 初級
+    ko: "체험 · 초급 기본 문형"
+    en: "Trial · Core patterns"
+    ja: "体験レッスン 初級"
 
   decks:
     lecture:  { entry: lecture/index.html }
