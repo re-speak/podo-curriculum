@@ -17,6 +17,24 @@ import check_deck
 
 
 class CourseBatchGenerationTests(unittest.TestCase):
+    def generated_decks(self):
+        paths = [core.build(number, data)[0] for number, data in core.LESSONS.items()]
+        paths.extend(
+            contextual.build(number, data)[0]
+            for number, data in contextual.LESSONS.items()
+        )
+        for number, data in freetalking.TOPICS.items():
+            for level in ("accessible", "full"):
+                paths.append(
+                    freetalking.TRACK
+                    / "courses"
+                    / f"{freetalking.COURSE}-{level}"
+                    / "lessons"
+                    / f'{number:02d}-{data["slug"]}'
+                    / "lesson.html"
+                )
+        return paths
+
     def assert_rules_are_pattern_specific(self, module):
         forbidden = (
             "Use the second frame",
@@ -65,16 +83,33 @@ class CourseBatchGenerationTests(unittest.TestCase):
             [4, 4, 4, 4],
         )
 
-    def test_unproofread_generated_core_lessons_are_explicitly_pending(self):
+    def test_every_generated_core_lesson_is_proofread_and_canonical(self):
         for number in core.LESSONS:
-            if number == 12:
-                continue
             _, html = core.build(number, core.LESSONS[number])
             self.assertEqual(
                 check_deck.meta_content(html, "podo:proofread-status"),
-                "pending",
+                "complete",
                 number,
             )
+            page_chunks = dict(check_deck.pages(html))
+            self.assertEqual(check_deck.core_canonical_shape_issues(page_chunks), [], number)
+            self.assertEqual(check_deck.smallest_unit_choice_issues(page_chunks), [], number)
+            self.assertIn('class="word-choice-list"', page_chunks["p1-choose"], number)
+            self.assertIn('class="word-choice-list"', page_chunks["p2-choose"], number)
+            self.assertIn('class="nuance-compare"', page_chunks["native-tip"], number)
+
+    def test_generated_core_semantic_specs_are_complete(self):
+        expected = set(core.LESSONS) - {12}
+        self.assertEqual(set(core.CANONICAL_SPECS), expected)
+        self.assertEqual(set(core.LIVE_SCENES), expected)
+        for number in expected:
+            spec = core.CANONICAL_SPECS[number]
+            self.assertEqual(len(spec["meanings"]), 2, number)
+            self.assertEqual(len(spec["writes"]), 2, number)
+            self.assertEqual(len(spec["rules"]), 2, number)
+            self.assertEqual([len(rows) for rows in spec["choices"]], [4, 4], number)
+            self.assertEqual(core.LIVE_SCENES[number][0][1], "other", number)
+            self.assertEqual(core.LIVE_SCENES[number][-1][1], "other", number)
 
     def test_core_batch_matches_generator(self):
         for number, data in core.LESSONS.items():
@@ -100,6 +135,13 @@ class CourseBatchGenerationTests(unittest.TestCase):
                 )
                 expected = freetalking.build(number, level)
                 self.assertEqual(path.read_text(encoding="utf-8"), expected, path)
+
+    def test_every_generated_deck_passes_the_quality_checker(self):
+        self.assertEqual(len(self.generated_decks()), 29)
+        for path in self.generated_decks():
+            errors, warnings = check_deck.check(path)
+            self.assertEqual(errors, [], path)
+            self.assertEqual(warnings, [], path)
 
 
 if __name__ == "__main__":

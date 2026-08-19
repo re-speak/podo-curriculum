@@ -151,6 +151,139 @@ VOCAB = {
 24:("repeat|繰り返す; clearly|はっきり; louder|より大きな声で","name|名前; platform|ホーム; slowly|ゆっくり","catch|聞き取る"),
 }
 
+# These fields are deliberately authored, not inferred from the model sentences.
+# A generator can safely render a reviewed pedagogical decision, but it cannot
+# decide which contrast is worth teaching or what a native-use tip should add.
+CANONICAL_SPECS = {
+13: dict(
+ meanings=(("Use this to ask whether a habit is part of someone's routine.", "習慣が日課の一部かどうかをたずねるときに使います。"), ("Use a short answer first, then add one useful detail.", "まず短く答え、そのあとに役立つ情報を一つ加えます。")),
+ writes=(("Ask one habit question you really want answered.", "本当に答えを知りたい習慣の質問を一つ作りましょう。"), ("Answer one habit question about yourself, then add a true detail.", "自分の習慣について短く答え、本当の情報を一つ加えましょう。")),
+ choices=(
+  (("コーヒーを{t}飲みますか{/t}？", "", "Do you", "You do", " drink coffee?"), ("家で{t}料理しますか{/t}？", "", "Do you", "You do", " cook at home?"), ("週末に{t}働きますか{/t}？", "", "Do you", "You do", " work on weekends?"), ("毎日{t}運動しますか{/t}？", "", "Do you", "You do", " exercise every day?")),
+  (("{t}はい、します。{/t}毎朝です。", "Yes, I ", "do", "am", ". Every morning."), ("{t}はい、します。{/t}家でです。", "Yes, I ", "do", "am", ". At home."), ("{t}はい、します。{/t}毎週末です。", "Yes, I ", "do", "am", ". Every weekend."), ("{t}はい、します。{/t}ほぼ毎日です。", "Yes, I ", "do", "am", ". Almost every day.")),
+ ),
+ rules=(("Put do before you", "do を you の前に", "<b>Do</b> + you + 動詞の原形 + ...?", "Habit question", "習慣についての質問", ("<b>Do you</b> drink coffee?", "<b>Do you</b> cook at home?")), ("Match the short answer", "短い答えを合わせよう", "Yes, I <b>do</b>. / No, I <b>don't</b>.", "Answer with do", "do で答える", ("Yes, I <b>do</b>. Every morning.", "No, I <b>don't</b>. Not very often."))),
+ tip=("No, I don't or Not really?", "No, I don't と Not really", "Both are natural. Use “Not really” for a softer, less absolute no.", "どちらも自然です。やわらかく、完全な否定を避けるなら「Not really」を使います。", ("Direct answer", "はっきり答える", "No, I don't.", "いいえ、しません。"), ("Softer answer", "やわらかく答える", "Not really.", "あまりしません。")),
+),
+14: dict(
+ meanings=(("Use this to say that something is not part of your routine.", "あることをふだんしないと伝えるときに使います。"), ("Use this to name the alternative you choose.", "代わりに選ぶことを伝えるときに使います。")),
+ writes=(("Write one thing you do not normally do.", "ふだんしないことを一つ書きましょう。"), ("Write what you do instead.", "その代わりにすることを書きましょう。")),
+ choices=(
+  (("車で通勤{t}しません{/t}。", "I ", "don't", "doesn't", " drive to work."), ("朝ごはんを{t}食べません{/t}。", "I ", "don't", "doesn't", " eat breakfast."), ("日曜日は{t}働きません{/t}。", "I ", "don't", "doesn't", " work on Sundays."), ("お茶は{t}飲みません{/t}。", "I ", "don't", "doesn't", " drink tea.")),
+  (("{t}その代わり{/t}電車に乗ります。", "I take the train ", "instead", "too", "."), ("{t}その代わり{/t}コーヒーを飲みます。", "I have coffee ", "instead", "too", "."), ("{t}その代わり{/t}土曜日に働きます。", "I work on Saturday ", "instead", "too", "."), ("{t}その代わり{/t}水を飲みます。", "I drink water ", "instead", "too", ".")),
+ ),
+ rules=(("Put don't before the action", "動作の前に don't", "I + <b>don't</b> + 動詞の原形", "Negative routine", "しない習慣", ("I <b>don't drive</b> to work.", "I <b>don't eat</b> breakfast.")), ("Put instead after the alternative", "代わりの行動の後ろに instead", "代わりの行動 + <b>instead</b>", "Chosen alternative", "代わりに選ぶこと", ("I take the train <b>instead</b>.", "I drink water <b>instead</b>."))),
+ tip=("Don't or don't usually?", "don't と don't usually", "Use “don't” for a general no. Add “usually” when there are exceptions.", "基本的にしないなら「don't」を使います。例外があるなら「don't usually」を使います。", ("General no", "基本的にしない", "I don't drive to work.", "車で通勤しません。"), ("There are exceptions", "例外がある", "I don't usually drive to work.", "ふだんは車で通勤しません。")),
+),
+15: dict(
+ meanings=(("Use this to say what another person regularly does.", "ほかの人がふだん何をするか伝えるときに使います。"), ("Use this to ask a follow-up question about that person.", "その人について続けて質問するときに使います。")),
+ writes=(("Write one true sentence about someone you know.", "知っている人について本当の文を一つ書きましょう。"), ("Ask one follow-up question about that person.", "その人について続けて質問を一つ作りましょう。")),
+ choices=(
+  (("彼女は中心街で{t}働いています{/t}。", "She ", "works", "work", " downtown."), ("彼は近くに{t}住んでいます{/t}。", "He ", "lives", "live", " nearby."), ("彼女は夜に{t}勉強します{/t}。", "She ", "studies", "study", " at night."), ("彼は家で{t}料理します{/t}。", "He ", "cooks", "cook", " at home.")),
+  (("彼女はそこが{t}好きですか{/t}？", "", "Does", "Do", " she like it?"), ("彼はそこで{t}働いていますか{/t}？", "", "Does", "Do", " he work there?"), ("彼女は英語を{t}勉強しますか{/t}？", "", "Does", "Do", " she study English?"), ("彼はよく{t}料理しますか{/t}？", "", "Does", "Do", " he cook often?")),
+ ),
+ rules=(("Change the verb with he or she", "he・she では動詞を変える", "he / she + 動詞<b>-s</b>", "Third-person routine", "ほかの人の習慣", ("She <b>works</b> downtown.", "He <b>lives</b> nearby.")), ("Use does, then the plain verb", "does の後ろは動詞の原形", "<b>Does</b> + he / she + 動詞の原形 + ...?", "Third-person question", "ほかの人への質問", ("<b>Does</b> she <b>like</b> it?", "<b>Does</b> he <b>work</b> there?"))),
+ tip=("She works or she's working?", "She works と She's working", "Use the simple present for a regular situation and the -ing form for now or a temporary situation.", "ふだんのことには現在形、今または一時的なことには -ing 形を使います。", ("Regular situation", "ふだんのこと", "She works downtown.", "彼女は中心街で働いています。"), ("Now or temporary", "今・一時的", "She's working downtown this week.", "今週は中心街で働いています。")),
+),
+16: dict(
+ meanings=(("Use this to ask for the clock time of a routine.", "日課の時刻をたずねるときに使います。"), ("Use this to ask for the usual place of a routine.", "日課をふだん行う場所をたずねるときに使います。")),
+ writes=(("Ask for the time of one real routine.", "実際の日課を一つ選び、その時刻をたずねましょう。"), ("Ask where one routine usually happens.", "日課を一つ選び、ふだんどこでするかたずねましょう。")),
+ choices=(
+  (("{t}何時に{/t}起きますか？", "", "What time", "How often", " do you get up?"), ("{t}何時に{/t}仕事を始めますか？", "", "What time", "How often", " do you start work?"), ("{t}何時に{/t}昼食をとりますか？", "", "What time", "How often", " do you have lunch?"), ("{t}何時に{/t}帰宅しますか？", "", "What time", "How often", " do you get home?")),
+  (("ふだん{t}どこで{/t}昼食をとりますか？", "", "Where", "When", " do you usually have lunch?"), ("ふだん{t}どこで{/t}働きますか？", "", "Where", "When", " do you usually work?"), ("ふだん{t}どこで{/t}運動しますか？", "", "Where", "When", " do you usually exercise?"), ("ふだん{t}どこで{/t}勉強しますか？", "", "Where", "When", " do you usually study?")),
+ ),
+ rules=(("Start with What time", "What time から始める", "<b>What time</b> + do you + 動作 + ?", "Ask for a clock time", "時刻をたずねる", ("<b>What time do you</b> get up?", "<b>What time do you</b> start work?")), ("Start with Where", "Where から始める", "<b>Where</b> + do you + usually + 動作 + ?", "Ask for the usual place", "ふだんの場所をたずねる", ("<b>Where do you usually</b> have lunch?", "<b>Where do you usually</b> work?"))),
+ tip=("What time or when?", "What time と when", "Use “What time” when you want a clock time. “When” can invite a broader answer.", "時計の時刻を知りたいなら「What time」を使います。「When」はもっと幅広い答えにも使えます。", ("Clock time", "時計の時刻", "What time do you get up?", "何時に起きますか？"), ("Broader time", "幅広い時", "When do you exercise?", "いつ運動しますか？")),
+),
+17: dict(
+ meanings=(("Use this to ask about frequency, not a clock time.", "時刻ではなく頻度をたずねるときに使います。"), ("Use this to give an approximate number of times per period.", "一定の期間あたりのおおよその回数を答えるときに使います。")),
+ writes=(("Ask how often one real activity happens.", "実際の活動を一つ選び、頻度をたずねましょう。"), ("Give a true approximate frequency for one activity.", "活動を一つ選び、本当のおおよその頻度を答えましょう。")),
+ choices=(
+  (("{t}どのくらいの頻度で{/t}運動しますか？", "", "How often", "What time", " do you exercise?"), ("{t}どのくらいの頻度で{/t}料理しますか？", "", "How often", "What time", " do you cook?"), ("{t}どのくらいの頻度で{/t}旅行しますか？", "", "How often", "What time", " do you travel?"), ("{t}どのくらいの頻度で{/t}家に電話しますか？", "", "How often", "What time", " do you call home?")),
+  (("だいたい週{t}2回{/t}です。", "About ", "twice", "two", " a week."), ("だいたい月{t}3回{/t}です。", "About ", "three times", "three time", " a month."), ("だいたい年{t}1回{/t}です。", "About ", "once", "one", " a year."), ("だいたい週{t}4回{/t}です。", "About ", "four times", "four time", " a week.")),
+ ),
+ rules=(("Start with How often", "How often から始める", "<b>How often</b> + do you + 動作 + ?", "Ask about frequency", "頻度をたずねる", ("<b>How often do you</b> exercise?", "<b>How often do you</b> cook?")), ("Build the frequency phrase", "頻度のまとまりを作る", "回数 + <b>a</b> + week / month / year", "Times per period", "期間あたりの回数", ("<b>twice a week</b>", "<b>three times a month</b>"))),
+ tip=("Twice or a couple of times?", "twice と a couple of times", "Use “twice” for exactly two. “A couple of times” is often a more casual approximation.", "正確に2回なら「twice」を使います。会話でおおよそ2回なら「a couple of times」も使えます。", ("Exact", "正確", "I exercise twice a week.", "週に2回運動します。"), ("Casual estimate", "会話でのおおよそ", "I exercise a couple of times a week.", "週に2回くらい運動します。")),
+),
+18: dict(
+ meanings=(("Use this to ask whether someone has an ability.", "あることができるかたずねるときに使います。"), ("Use this to contrast one ability with something you cannot do.", "できることと、できないことを対比するときに使います。")),
+ writes=(("Ask about one ability you want to know.", "知りたい能力について一つたずねましょう。"), ("Contrast one thing you can do with one thing you cannot do.", "できることと、できないことを一つずつ対比しましょう。")),
+ choices=(
+  (("運転{t}できますか{/t}？", "", "Can", "Do", " you drive?"), ("泳ぐことが{t}できますか{/t}？", "", "Can", "Do", " you swim?"), ("料理が{t}できますか{/t}？", "", "Can", "Do", " you cook?"), ("スキーが{t}できますか{/t}？", "", "Can", "Do", " you ski?")),
+  (("自転車には乗れますが、運転は{t}できません{/t}。", "I can ride a bike, but I ", "can't", "can", " drive."), ("歩くことはできますが、走ることは{t}できません{/t}。", "I can walk, but I ", "can't", "can", " run."), ("料理はできますが、お菓子作りは{t}できません{/t}。", "I can cook, but I ", "can't", "can", " bake."), ("読むことはできますが、書くことは{t}できません{/t}。", "I can read it, but I ", "can't", "can", " write it.")),
+ ),
+ rules=(("Put a plain verb after can", "can の後ろは動詞の原形", "<b>Can</b> + you + 動詞の原形 + ?", "Ability question", "できるかの質問", ("<b>Can you drive</b>?", "<b>Can you swim</b>?")), ("Contrast can and can't", "can と can't を対比する", "I <b>can</b> + 動作, but I <b>can't</b> + 動作", "Two abilities", "二つのできること", ("I <b>can</b> walk, but I <b>can't</b> run.", "I <b>can</b> cook, but I <b>can't</b> bake."))),
+ tip=("Can't or can't yet?", "can't と can't yet", "Add “yet” when you expect or hope the ability may come later.", "今後できるようになる可能性や希望があるなら「yet」を加えます。", ("General inability", "一般的にできない", "I can't drive.", "運転できません。"), ("Maybe later", "今後はできるかも", "I can't drive yet.", "まだ運転できません。")),
+),
+19: dict(
+ meanings=(("Use this to ask the price of one item.", "一つの品物の値段をたずねるときに使います。"), ("Use this to check which of two similar numbers you heard.", "似た二つの数字のどちらを聞いたか確認するときに使います。")),
+ writes=(("Ask the price of one item you can see.", "見える品物を一つ選び、値段をたずねましょう。"), ("Check two similar numbers that could be misheard.", "聞き間違えそうな二つの数字を使って確認しましょう。")),
+ choices=(
+  (("これは{t}いくらですか{/t}？", "How ", "much", "many", " is this one?"), ("あのかばんは{t}いくらですか{/t}？", "How ", "much", "many", " is that bag?"), ("そのチケットは{t}いくらですか{/t}？", "How ", "much", "many", " is the ticket?"), ("コーヒーは{t}いくらですか{/t}？", "How ", "much", "many", " is a coffee?")),
+  (("それは15{t}ですか、それとも{/t}50ですか？", "Is that fifteen ", "or", "and", " fifty?"), ("それは13{t}ですか、それとも{/t}30ですか？", "Is that thirteen ", "or", "and", " thirty?"), ("それは14{t}ですか、それとも{/t}40ですか？", "Is that fourteen ", "or", "and", " forty?"), ("それは16{t}ですか、それとも{/t}60ですか？", "Is that sixteen ", "or", "and", " sixty?")),
+ ),
+ rules=(("Use How much is with one item", "一つの品物には How much is", "<b>How much is</b> + 品物 + ?", "Ask a price", "値段をたずねる", ("<b>How much is</b> this one?", "<b>How much is</b> the ticket?")), ("Put or between the two numbers", "二つの数字の間に or", "Is that + X + <b>or</b> + Y + ?", "Check what you heard", "聞いた数字を確認する", ("Is that fifteen <b>or</b> fifty?", "Is that thirteen <b>or</b> thirty?"))),
+ tip=("This or this one?", "this と this one", "Use “this one” when you are choosing among visible options. Plain “this” is enough when the item is already clear.", "見えている選択肢から選ぶなら「this one」を使います。品物が明らかなら「this」だけでも十分です。", ("Item is clear", "品物が明らか", "How much is this?", "これはいくらですか？"), ("Choosing among options", "選択肢から選ぶ", "How much is this one?", "これはいくらですか？")),
+),
+21: dict(
+ meanings=(("Use this to ask permission for yourself.", "自分がしてもよいか許可を求めるときに使います。"), ("Use this to give the other person permission.", "相手に許可を与えるときに使います。")),
+ writes=(("Ask permission for one thing you might do in this room.", "この部屋でするかもしれないことの許可を一つ求めましょう。"), ("Give or refuse permission for one action.", "一つの行動について、許可するか断る答えを作りましょう。")),
+ choices=(
+  (("これを試着{t}してもいいですか{/t}？", "", "Can", "Do", " I try this on?"), ("ここに座っても{t}いいですか{/t}？", "", "Can", "Do", " I sit here?"), ("写真を撮っても{t}いいですか{/t}？", "", "Can", "Do", " I take a photo?"), ("これを使っても{t}いいですか{/t}？", "", "Can", "Do", " I use this?")),
+  (("もちろん、写真を撮って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " take a photo."), ("もちろん、ここに座って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " sit here."), ("もちろん、これを使って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " use this."), ("もちろん、試着して{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " try it on.")),
+ ),
+ rules=(("Use Can I for your permission", "自分の許可には Can I", "<b>Can I</b> + 動詞の原形 + ...?", "Ask permission", "許可を求める", ("<b>Can I</b> try this on?", "<b>Can I</b> sit here?")), ("Use you can to give permission", "許可を与えるなら you can", "Sure, + you <b>can</b> + 動詞の原形", "Give permission", "許可を与える", ("Sure, you <b>can</b> take a photo.", "Sure, you <b>can</b> sit here."))),
+ tip=("Can I or could I?", "Can I と Could I", "Both ask permission. “Could I” can sound a little more polite or tentative.", "どちらも許可を求めます。「Could I」は少し丁寧で控えめに聞こえます。", ("Neutral", "ふつう", "Can I try this on?", "これを試着してもいいですか？"), ("More tentative", "少し控えめ", "Could I try this on?", "これを試着してもよろしいですか？")),
+),
+22: dict(
+ meanings=(("Use this to state your order politely.", "注文を丁寧に伝えるときに使います。"), ("Use this to ask for an item politely.", "品物を丁寧に頼むときに使います。")),
+ writes=(("Choose one item and order it politely.", "品物を一つ選び、丁寧に注文しましょう。"), ("Ask for one extra item you might need.", "必要になりそうな追加の品物を一つ頼みましょう。")),
+ choices=(
+  (("チキンを{t}お願いします{/t}。", "", "I'd", "I", " like the chicken, please."), ("スープを{t}お願いします{/t}。", "", "I'd", "I", " like the soup, please."), ("これを{t}お願いします{/t}。", "", "I'd", "I", " like this one, please."), ("チケットを1枚{t}お願いします{/t}。", "", "I'd", "I", " like a ticket, please.")),
+  (("コーヒーを{t}いただけますか{/t}？", "", "Can", "Do", " I have a coffee, please?"), ("お水を{t}いただけますか{/t}？", "", "Can", "Do", " I have some water, please?"), ("メニューを{t}いただけますか{/t}？", "", "Can", "Do", " I have the menu, please?"), ("レシートを{t}いただけますか{/t}？", "", "Can", "Do", " I have a receipt, please?")),
+ ),
+ rules=(("Keep I'd like together", "I'd like をひとまとまりに", "<b>I'd like</b> + 品物 + please.", "State an order", "注文を伝える", ("<b>I'd like</b> the chicken, please.", "<b>I'd like</b> a ticket, please.")), ("Use Can I have before the item", "品物の前に Can I have", "<b>Can I have</b> + 品物 + please?", "Ask for an item", "品物を頼む", ("<b>Can I have</b> a coffee, please?", "<b>Can I have</b> the menu, please?"))),
+ tip=("I'd like or I'll have?", "I'd like と I'll have", "Both are natural orders. “I'd like” is gently polite; “I'll have” sounds confident once you have decided.", "どちらも自然な注文です。「I'd like」はやわらかく丁寧で、「I'll have」は決めた後のはっきりした言い方です。", ("Gently polite", "やわらかく丁寧", "I'd like the chicken, please.", "チキンをお願いします。"), ("Decision made", "注文を決めた", "I'll have the chicken, please.", "チキンにします。")),
+),
+23: dict(
+ meanings=(("Use a container or piece word to count food and drink.", "容器や単位の語を使って食べ物や飲み物を数えるときに使います。"), ("Use this to ask the needed amount of a non-count noun.", "直接数えない名詞の必要量をたずねるときに使います。")),
+ writes=(("Order a real amount of one food or drink.", "食べ物か飲み物を一つ選び、実際の量で注文しましょう。"), ("Ask how much of one thing you need.", "必要なものを一つ選び、どのくらい必要かたずねましょう。")),
+ choices=(
+  (("コーヒーを{t}2杯{/t}お願いします。", "Two ", "cups", "cup", " of coffee, please."), ("水を{t}2本{/t}お願いします。", "Two ", "bottles", "bottle", " of water, please."), ("ケーキを{t}2切れ{/t}お願いします。", "Two ", "pieces", "piece", " of cake, please."), ("ご飯を{t}2杯{/t}お願いします。", "Two ", "bowls", "bowl", " of rice, please.")),
+  (("ご飯は{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " rice do we need?"), ("水は{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " water do we need?"), ("コーヒーは{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " coffee do we need?"), ("時間は{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " time do we need?")),
+ ),
+ rules=(("Count the container, then add of", "容器を数えて of を加える", "数 + 容器<b>-s</b> + <b>of</b> + 品物", "Count by container", "容器で数える", ("two <b>cups of</b> coffee", "two <b>bottles of</b> water")), ("Use How much with a non-count noun", "直接数えない名詞には How much", "<b>How much</b> + 名詞 + do we need?", "Ask the amount", "量をたずねる", ("<b>How much</b> rice do we need?", "<b>How much</b> water do we need?"))),
+ tip=("Could we get...?", "Could we get ...?", "In a shared order, “Could we get...?” is a natural, softer way to ask the server.", "みんなの注文では「Could we get ...?」が自然で、やわらかい頼み方です。", ("Short order", "短い注文", "Two cups of coffee, please.", "コーヒーを2杯お願いします。"), ("Shared polite request", "みんなで丁寧に頼む", "Could we get two cups of coffee?", "コーヒーを2杯いただけますか？")),
+),
+24: dict(
+ meanings=(("Use this when you need the same words repeated.", "同じ言葉をもう一度聞きたいときに使います。"), ("Use this when you need the speaker to change how they speak.", "相手に話し方を変えてほしいときに使います。")),
+ writes=(("Ask for one detail to be repeated.", "聞き取れなかった情報を一つ、もう一度頼みましょう。"), ("Ask the speaker to change how they are speaking.", "相手に必要な話し方の変化を頼みましょう。")),
+ choices=(
+  (("すみません、それを{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say that ", "again", "yet", "?"), ("すみません、名前を{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say your name ", "again", "yet", "?"), ("すみません、最後の部分を{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say the last part ", "again", "yet", "?"), ("すみません、shelf を{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say 'shelf' ", "again", "yet", "?")),
+  (("もう少し{t}ゆっくり{/t}話してもらえますか？", "Can you speak more ", "slowly", "slow", "?"), ("もう少し{t}はっきり{/t}話してもらえますか？", "Can you speak more ", "clearly", "clear", "?"), ("もう少し{t}大きな声で{/t}話してもらえますか？", "Can you speak a little ", "louder", "loud", "?"), ("もう少し{t}ゆっくり{/t}話してもらえますか？", "Can you speak more ", "slowly", "slow", ", please?")),
+ ),
+ rules=(("Put again at the end", "最後に again", "Sorry, + can you say + 内容 + <b>again</b>?", "Ask for repetition", "繰り返しを頼む", ("Can you say that <b>again</b>?", "Can you say your name <b>again</b>?")), ("Name the change after speak", "speak の後ろに必要な変化", "Can you speak + more / a little + 話し方?", "Change how they speak", "話し方を変えてもらう", ("Can you speak more <b>slowly</b>?", "Can you speak a little <b>louder</b>?"))),
+ tip=("Sorry? or a full request?", "Sorry? と文での頼み方", "A rising “Sorry?” is a quick casual request. Use the full sentence when you want to be especially clear.", "語尾を上げた「Sorry?」は短くカジュアルです。特にはっきり頼みたいなら文全体を使います。", ("Quick and casual", "短くカジュアル", "Sorry?", "もう一度お願いします。"), ("Clear request", "はっきり頼む", "Sorry, can you say that again?", "すみません、もう一度言ってもらえますか？")),
+),
+}
+
+# Live production cannot use one generic ask-back sequence: questions, answers,
+# permission, ordering and repair create different turn logic. Each tuple is
+# (kind, side, speaker, English or scaffold, Japanese or task).
+LIVE_SCENES = {
+13: (("text", "other", "Tutor", "Do you drink coffee?", "コーヒーを飲みますか？"), ("input", "me", "Me", "Yes, I do. ___. / No, I don't. ___.", "自分の本当の答え"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Yes, I do. ___ / No, I don't. ___", "先生の答え")),
+14: (("text", "other", "Tutor", "Do you drive to work?", "車で通勤しますか？"), ("input", "me", "Me", "I don't ___. I ___ instead.", "自分の本当の習慣"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: I don't ___. I ___ instead.", "先生の答え")),
+15: (("text", "other", "Tutor", "Tell me about someone you know.", "知っている人について教えてください。"), ("input", "me", "Me", "She / He ___.", "知っている人の本当の情報"), ("text", "other", "Tutor", "What would you like to ask about that person?", "その人について何を聞きたいですか？"), ("input", "me", "Me", "Does she / he ___?", "続けて聞きたい質問"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+16: (("text", "other", "Tutor", "Ask me about my routine.", "私の日課についてたずねてください。"), ("input", "me", "Me", "What time do you ___?", "聞きたい時刻"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え"), ("input", "me", "Me", "Where do you usually ___?", "聞きたい場所"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+17: (("text", "other", "Tutor", "How often do you exercise?", "どのくらい運動しますか？"), ("input", "me", "Me", "About ___ times a ___.", "自分の本当の頻度"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: About ___ times a ___.", "先生の答え")),
+18: (("text", "other", "Tutor", "Can you drive?", "運転できますか？"), ("input", "me", "Me", "I can ___, but I can't ___.", "自分のできること"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: I can ___, but I can't ___.", "先生の答え")),
+19: (("text", "other", "Tutor", "Ask me the price of something here.", "ここにある物の値段を聞いてください。"), ("input", "me", "Me", "How much is ___?", "値段を知りたい物"), ("input", "other", "Tutor", "Tutor's answer: It's ___ dollars.", "先生の値段"), ("input", "me", "Me", "Is that ___ or ___?", "聞こえた数字を確認"), ("input", "other", "Tutor", "Tutor's answer: confirmation", "先生の確認")),
+21: (("text", "other", "Tutor", "Ask permission to do something here.", "ここで何かをする許可を求めてください。"), ("input", "me", "Me", "Can I ___?", "ここでしたいこと"), ("input", "other", "Tutor", "Tutor's answer: Sure, you can. / Sorry, not here.", "先生の答え")),
+22: (("text", "other", "Tutor", "Are you ready to order?", "ご注文はお決まりですか？"), ("input", "me", "Me", "I'd like ___, please.", "自分の注文"), ("text", "other", "Tutor", "Anything else?", "ほかにもありますか？"), ("input", "me", "Me", "Can I have ___, please?", "追加で頼む物"), ("text", "other", "Tutor", "Of course.", "かしこまりました。")),
+23: (("text", "other", "Tutor", "What should we order?", "何を注文しましょうか？"), ("input", "me", "Me", "Two ___ of ___, please.", "注文する本当の量"), ("input", "me", "Me", "How much ___ do we need?", "必要な量をたずねる"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+24: (("text", "other", "Tutor", "The next train leaves from platform thirteen.", "次の電車は13番ホームから出ます。"), ("input", "me", "Me", "Sorry, can you say ___ again?", "聞き取れなかった部分"), ("text", "other", "Tutor", "Platform thirteen.", "13番ホームです。"), ("input", "me", "Me", "Can you speak more ___?", "必要な話し方"), ("text", "other", "Tutor", "Of course.", "もちろんです。")),
+}
+
 
 def esc(s): return html.escape(s, quote=True)
 def strip_marks(s): return re.sub(r"\{/?t\}", "", s)
@@ -597,31 +730,101 @@ def dialogue(number, d, variant="model", complete=False, prefix="dlg"):
       turn("me",ME,"Me",esc(last[0]),esc(last[1]))])
 
 
+def canonical_pages(number, d):
+    """Render one fully authored Core specification through the canonical arc."""
+    spec = CANONICAL_SPECS[number]
+    p1_en, p1_ja, _ = d["p1"][0]
+    p2_en, p2_ja, _ = d["p2"][0]
+
+    goal = f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Everyday English">
+      <span class="transition-kicker">GOAL</span>
+      <h2 class="transition-title">{esc(d["title"])} <span class="title-ja">({esc(d["ja"])})</span></h2>
+      <p class="section-subtitle"><span class="ko">{esc(d["goal"][0])}</span><span class="ja">{esc(d["goal"][1])}</span></p>
+      <div class="known lines"><div class="known-row"><span class="k">{marks(p1_en)}</span><span class="j">{marks(p1_ja)}</span></div><div class="known-row"><span class="k">{marks(p2_en)}</span><span class="j">{marks(p2_ja)}</span></div><div class="known-row"><span class="k">How about you?</span><span class="j">あなたはどうですか？</span></div></div>
+    </div>\n'''
+
+    def intro(part):
+        model = strip_marks(d[f"p{part}"][0][0])
+        return f'''    <div class="transition-page" data-page-id="part{part}-intro" data-act="Pattern {part}"><span class="transition-kicker">PART {part}</span><h2 class="transition-title">{esc(model)}</h2><p class="transition-copy">{esc(spec["meanings"][part - 1][1])}</p></div>\n'''
+
+    def visual_rule(part):
+        title, title_ja, formula, heading, heading_ja, examples = spec["rules"][part - 1]
+        return rule_page(
+            f"p{part}-rule", title, title_ja,
+            d["rules"][part - 1][0], d["rules"][part - 1][1],
+            formula, heading, heading_ja, examples,
+        )
+
+    def choose(part):
+        return choose_words(
+            f"p{part}-choose", "Choose the pattern", "パターンを選ぼう",
+            "Choose only the words that complete the highlighted meaning.",
+            "強調された意味に合う語だけを選びましょう。",
+            spec["choices"][part - 1],
+        )
+
+    def write_page(part):
+        model = strip_marks(d[f"p{part}"][0][0])
+        prompt_en, prompt_ja = spec["writes"][part - 1]
+        return section(
+            f"p{part}-write", "Make it yours", "自分の文にしよう",
+            f'<p class="section-subtitle"><span class="ko">{esc(prompt_en)}</span><span class="ja">{esc(prompt_ja)}</span></p>'
+            '<div class="task-block"><div class="answer-box tall">'
+            f'<span class="answer-label">{esc(model)}<span class="task">自分の情報に変えて</span></span>'
+            f'<span class="answer-space as-input"><textarea class="free-input" data-sync-id="p{part}-write" rows="2" spellcheck="false" maxlength="2000"></textarea></span>'
+            '</div></div>',
+        )
+
+    model_dialogue = dialogue(number, d)
+    complete_dialogue = dialogue(number, d, complete=True)
+    live_turns = []
+    for index, (kind, side, speaker, english, japanese) in enumerate(LIVE_SCENES[number]):
+        avatar_html = live_avatar(speaker)
+        bubble_class = "bubble me" if side == "me" else "bubble"
+        if kind == "text":
+            live_turns.append(
+                f'<div class="turn {side}">{avatar_html}<div class="{bubble_class}"><span class="korean">{esc(english)}</span><span class="translation">{esc(japanese)}</span></div></div>'
+            )
+        else:
+            live_turns.append(
+                f'<div class="turn {side}">{avatar_html}<div class="{bubble_class}"><div class="answer-box tall"><span class="answer-label">{esc(english)}<span class="task">{esc(japanese)}</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-{index}" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+            )
+    live = '<div class="dialogue">' + ''.join(live_turns) + '</div>'
+
+    tip_title, tip_ja, tip_script, tip_script_ja, left, right = spec["tip"]
+    native_tip = section(
+        "native-tip", tip_title, tip_ja,
+        f'<p class="section-subtitle"><span class="ko">{esc(tip_script)}</span><span class="ja">{esc(tip_script_ja)}</span></p>'
+        '<div class="nuance-compare">'
+        f'<div class="nuance-choice"><span class="nuance-when"><b>{esc(left[0])}</b><small>{esc(left[1])}</small></span><span class="korean">{esc(left[2])}</span><span class="translation">{esc(left[3])}</span></div>'
+        '<div class="nuance-or"><span>Pick by meaning <small>意味で選ぶ</small></span></div>'
+        f'<div class="nuance-choice"><span class="nuance-when"><b>{esc(right[0])}</b><small>{esc(right[1])}</small></span><span class="korean">{esc(right[2])}</span><span class="translation">{esc(right[3])}</span></div>'
+        '</div>',
+    )
+
+    return [
+        goal, known_page(number), intro(1), teach("p1-teach", d["p1"], spec["meanings"][0]),
+        read("p1-read", d["p1"]), visual_rule(1), choose(1), lesson_reorder(d, 1),
+        fill("p1-fill", d["p1"]), translate("p1-translate", d["p1"]), write_page(1),
+        intro(2), teach("p2-teach", d["p2"], spec["meanings"][1]), read("p2-read", d["p2"]),
+        visual_rule(2), choose(2), lesson_reorder(d, 2), fill("p2-fill", d["p2"]),
+        translate("p2-translate", d["p2"]), write_page(2),
+        '    <div class="transition-page" data-page-id="part3-intro" data-act="Conversation"><span class="transition-kicker">PART 3</span><h2 class="transition-title">Use it in a conversation <span class="title-ja">(会話で使おう)</span></h2><p class="transition-copy">二つのパターンをつないで、相手と情報をやり取りしましょう。</p></div>\n',
+        section("p3-model", "Read the conversation", "会話を読もう", '<p class="section-subtitle"><span class="ko">Read your lines while I read the other role.</span><span class="ja">自分のセリフを読み、私は相手役を読みます。</span></p><div class="dialogue">' + model_dialogue + '</div>'),
+        section("p3-complete", "Complete the conversation", "会話を完成しよう", '<p class="section-subtitle"><span class="ko">Say only the missing pattern words.</span><span class="ja">空いているパターンの部分だけを言いましょう。</span></p><div class="tutor-note">Write each target exactly as the learner says it.</div><div class="dialogue">' + complete_dialogue + '</div>'),
+        section("p3-freetalk", "Your real answer", "自分の答え", f'<p class="section-subtitle"><span class="ko">{esc(d["prompt"][0])}</span><span class="ja">{esc(d["prompt"][1])}</span></p>' + live),
+        section("in-the-wild", "A new situation", "別の場面", '<p class="section-subtitle"><span class="ko">Use the same two patterns in a different conversation.</span><span class="ja">同じ二つのパターンを別の会話で使いましょう。</span></p><div class="dialogue">' + dialogue(number, d, "wild", True, "wild") + '</div>'),
+        native_tip,
+    ]
+
+
 def build(number,d):
     source=PILOT.read_text(encoding="utf-8"); head,foot=new_lesson.split_shell(source)
     slug=f'{number:02d}-{d["slug"]}'
     head=new_lesson.retarget(head,review_id=f"CORE-{number}",lesson_id=slug,level="A1",title=d["title"],title_ko=d["ko"],title_ja=d["ja"],version="2026-08-19")
     head=set_vocab(head.replace('content="todo"','content="reviewed"'),number)
-    head=set_proofread_status(head, "complete" if number == 12 else "pending")
-    goal_en,goal_ja=d["goal"]
-    pages = core12_pages(d) if number == 12 else [f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Everyday English"><span class="transition-kicker">GOAL</span><h2 class="transition-title">{esc(d["title"])} <span class="title-ja">({esc(d["ja"])})</span></h2><p class="section-subtitle"><span class="ko">{esc(goal_en)}</span><span class="ja">{esc(goal_ja)}</span></p><div class="known lines"><div class="known-row"><span class="k">Notice two useful frames</span><span class="j">二つの表現に気づく</span></div><div class="known-row"><span class="k">Build and complete them</span><span class="j">組み立てて完成する</span></div><div class="known-row"><span class="k">Use them in a conversation</span><span class="j">会話で使う</span></div></div></div>\n''',
-      known_page(number),
-      f'    <div class="transition-page" data-page-id="part1-intro" data-act="Pattern 1"><span class="transition-kicker">PATTERN 1</span><h2 class="transition-title">{esc(strip_marks(d["p1"][0][0]))}</h2></div>\n',
-      teach("p1-teach",d["p1"],d["goal"]),read("p1-read",d["p1"]),
-      section("p1-rule","How it works","形を見よう",f'<p class="section-subtitle"><span class="ko">{esc(d["rules"][0][0])}</span><span class="ja">{esc(d["rules"][0][1])}</span></p>'+rule_example(d["p1"])),
-      lesson_reorder(d,1),fill("p1-fill",d["p1"]),translate("p1-translate",d["p1"]),
-      section("p1-write","Make it yours","自分の文にしよう",f'<p class="section-subtitle"><span class="ko">{esc(d["prompt"][0])}</span><span class="ja">{esc(d["prompt"][1])}</span></p><div class="task-block"><div class="answer-box tall"><span class="answer-label">自分の言葉で</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="p1-write" rows="2" spellcheck="false"></textarea></span></div></div>'),
-      f'    <div class="transition-page" data-page-id="part2-intro" data-act="Pattern 2"><span class="transition-kicker">PATTERN 2</span><h2 class="transition-title">{esc(strip_marks(d["p2"][0][0]))}</h2></div>\n',
-      teach("p2-teach",d["p2"],d["goal"]),read("p2-read",d["p2"]),
-      section("p2-rule","How it works","形を見よう",f'<p class="section-subtitle"><span class="ko">{esc(d["rules"][1][0])}</span><span class="ja">{esc(d["rules"][1][1])}</span></p>'+rule_example(d["p2"])),
-      lesson_reorder(d,2),fill("p2-fill",d["p2"]),translate("p2-translate",d["p2"]),
-      section("p2-write","Add your detail","自分の情報を加えよう",f'<p class="section-subtitle"><span class="ko">Answer the question with a true detail about you.</span><span class="ja">自分について本当の情報を加えて答えましょう。</span></p><div class="task-block"><div class="answer-box tall"><span class="answer-label">自分の言葉で</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="p2-write" rows="2" spellcheck="false"></textarea></span></div></div>'),
-      '    <div class="transition-page" data-page-id="part3-intro" data-act="Conversation"><span class="transition-kicker">PUT IT TOGETHER</span><h2 class="transition-title">Use both patterns <span class="title-ja">(二つを一緒に使おう)</span></h2></div>\n',
-      section("p3-model","Read the conversation","会話を読もう",'<p class="section-subtitle"><span class="ko">Read your lines while I read the other role.</span><span class="ja">自分のセリフを読み、私は相手役を読みます。</span></p><div class="dialogue">'+dialogue(number,d)+'</div>'),
-      section("p3-complete","Complete the conversation","会話を完成しよう",'<p class="section-subtitle"><span class="ko">Say only the missing pattern words.</span><span class="ja">空いているパターンの部分だけを言いましょう。</span></p><div class="tutor-note">Write each target exactly as the learner says it.</div><div class="dialogue">'+dialogue(number,d,complete=True)+'</div>'),
-      section("p3-freetalk","Your real answer","自分の答え",f'<p class="section-subtitle"><span class="ko">{esc(d["prompt"][0])}</span><span class="ja">{esc(d["prompt"][1])}</span></p><div class="dialogue"><div class="turn other"><span class="who"><span class="avatar icon">T</span><span class="who-name">Tutor</span></span><div class="bubble"><span class="korean">{esc(d["prompt"][0])}</span><span class="translation">{esc(d["prompt"][1])}</span></div></div><div class="turn me"><span class="who"><span class="avatar icon">私</span><span class="who-name">Me</span></span><div class="bubble me"><div class="answer-box tall"><span class="answer-label">Use today&#39;s patterns</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-me" rows="2" spellcheck="false"></textarea></span></div></div></div><div class="turn me"><span class="who"><span class="avatar icon">私</span><span class="who-name">Me</span></span><div class="bubble me"><span class="korean">How about you?</span><span class="translation">あなたはどうですか？</span></div></div><div class="turn other"><span class="who"><span class="avatar icon">T</span><span class="who-name">Tutor</span></span><div class="bubble"><div class="answer-box"><span class="answer-label">Tutor\'s answer</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-tutor" rows="2" spellcheck="false"></textarea></span></div></div></div></div>'),
-      section("in-the-wild","A new situation","別の場面",'<p class="section-subtitle"><span class="ko">Use the same two patterns in a fresh conversation.</span><span class="ja">同じ二つのパターンを別の会話で使いましょう。</span></p><div class="dialogue">'+dialogue(number,d,"wild",True,"wild")+'</div>'),
-      section("native-tip","Two useful extras","使える表現",f'<p class="section-subtitle"><span class="ko">Choose the expression that fits what you really mean.</span><span class="ja">本当に言いたいことに合う表現を選びましょう。</span></p><div class="model-list"><div class="model-line"><span class="korean">{esc(d["tip"][0])}</span><span class="translation">{esc(d["tip"][1])}</span></div><div class="model-line"><span class="korean">{esc(d["tip"][2])}</span><span class="translation">{esc(d["tip"][3])}</span></div></div>')]
+    head=set_proofread_status(head, "complete")
+    pages = core12_pages(d) if number == 12 else canonical_pages(number, d)
     out=TRACK/"courses"/COURSE/"lessons"/slug/"lesson.html"
     return out,new_lesson.redepth(head+"\n".join(pages)+foot,out)
 

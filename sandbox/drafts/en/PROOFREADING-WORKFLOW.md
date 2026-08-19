@@ -120,3 +120,10 @@ mixed chunk criteria and unmarked full-sentence choices where `.word-choice` was
 proofreading still owns whether every surviving chip is a useful meaning unit, whether a reviewed
 whole-sentence choice genuinely differs across the whole sentence, whether a rule teaches the
 visible pattern, and whether the activity earns its place.
+
+For every generated Core deck, proofreading also records one answer to each of these questions
+before `podo:proofread-status=complete`: What new decision does each page ask the learner to make?
+What stable sentence stays printed around each choice? What operation does the rule diagram make
+visible? What register, softening, contraction, prosody, collocation or intensity distinction does
+the native tip add? “It matches the generator,” “it has four rows,” and “the checker passes” are not
+answers. A batch with one unanswered page remains incomplete and produces no owner-review links.

@@ -235,6 +235,29 @@ class DeckCheckTests(unittest.TestCase):
         )
         self.assertFalse(any("p1-choose: choose at" in item for item in errors))
 
+    def test_compact_word_choice_rejects_sentence_sized_options(self):
+        pages = {
+            "p1-choose": (
+                '<div class="word-choice-list">'
+                '<span class="opt">I start work at eight.</span>'
+                '<span class="opt">I start work at ten.</span>'
+                '</div>'
+            )
+        }
+        errors = check_deck.smallest_unit_choice_issues(pages)
+        self.assertEqual(len(errors), 2)
+        self.assertTrue(all("sentence-sized" in item for item in errors))
+
+    def test_compact_word_choice_accepts_local_units(self):
+        pages = {
+            "p1-choose": (
+                '<div class="word-choice-list">'
+                '<span class="word-choice-sentence">I start work at '
+                '<span class="opt">eight</span><span class="opt">ten</span>.</span></div>'
+            )
+        }
+        self.assertEqual(check_deck.smallest_unit_choice_issues(pages), [])
+
     def test_phrase_input_requires_spaced_answer_component(self):
         errors = check_deck.phrase_input_structure_issues(
             '<div class="bubble"><span class="korean">'

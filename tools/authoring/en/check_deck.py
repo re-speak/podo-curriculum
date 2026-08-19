@@ -776,6 +776,28 @@ def core_canonical_shape_issues(page_chunks):
     return errors
 
 
+def smallest_unit_choice_issues(page_chunks):
+    """Catch the mechanical forms of whole-sentence choices.
+
+    Whether a contrast is pedagogically worthwhile still requires proofreading.
+    This gate prevents a generator from hiding an entire sentence inside each
+    option when the stable sentence frame should be printed once around it.
+    """
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if "word-choice-list" not in chunk:
+            continue
+        for index, body in enumerate(class_span_bodies(chunk, "opt"), start=1):
+            option = plain_text(body)
+            words = re.findall(r"[A-Za-z]+(?:'[A-Za-z]+)?", option)
+            if re.search(r"[.!?]$", option) or len(words) > 3:
+                errors.append(
+                    f"{page_id}: option {index} {option!r} is sentence-sized — print "
+                    "the stable sentence once and make only the smallest teachable unit selectable"
+                )
+    return errors
+
+
 def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
     """Protect roleplay identity and English-only tutor operability."""
     errors = []
@@ -1015,10 +1037,20 @@ def freetalk_brief_title(review_id):
 
 def live_tutor_answer_issues(page_id, chunk):
     """Require an English label on an editable field owned by the tutor."""
-    if "<textarea" in chunk and "Tutor's answer" not in chunk:
+    turns = re.split(r'(?=<div class="turn\b)', chunk)
+    tutor_inputs = [
+        turn for turn in turns
+        if re.match(r'<div class="turn other"', turn) and "<textarea" in turn
+    ]
+    # Small unit tests and legacy fragments may call this helper without the
+    # dialogue wrapper; in that case the supplied fragment is the tutor field.
+    if not any('<div class="turn' in turn for turn in turns) and "<textarea" in chunk:
+        tutor_inputs = [chunk]
+    missing = sum("Tutor's answer" not in plain_text(turn) for turn in tutor_inputs)
+    if missing:
         return [
-            f"{page_id}: tutor-editable answer field needs the English label "
-            '"Tutor\'s answer"; Japanese may remain as learner support'
+            f"{page_id}: {missing} tutor-editable answer field(s) need the English "
+            'label "Tutor\'s answer"; Japanese may remain as learner support'
         ]
     return []
 
@@ -1246,6 +1278,7 @@ def check(path):
                 )
             elif proofread_status == "complete":
                 errs.extend(core_canonical_shape_issues(page_chunks))
+                errs.extend(smallest_unit_choice_issues(page_chunks))
         if "2-contextual-english" in path.parts:
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(contextual_production_issues(

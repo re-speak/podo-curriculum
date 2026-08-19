@@ -136,6 +136,14 @@ rendered QA on those exact bytes. Do not give the owner review links or start th
 all four pass. If proofreading changes content data or a generator, regenerate first and repeat the
 proofreading and gates; never patch generated HTML to make a review pass.
 
+For generated Core lessons, the content data must explicitly own every judgment a template cannot
+make: each pattern's meaning/use sentence, the exact smallest-unit choice and distractor, the visual
+formation diagram, and the adjacent-use native tip. A generic fallback may not replace any of these
+with a goal repeated twice, a prose rule plus examples, omitted choice practice, or a list of extra
+vocabulary. If one of these authored fields is missing, generation fails; it does not emit a
+“provisional” pedagogical page. Exact-generation tests prove ownership and reproducibility only—
+they never count as proofreading.
+
 The **orchestrator alone** may change:
 
 - TOCs, parsers, blueprints and generated briefs
