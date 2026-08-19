@@ -510,7 +510,8 @@ VOCABULARY = {
     },
     19: {
         "accessible": vocab(
-            new="put off|先延ばしにする; avoid|避ける; self-criticism|自己批判",
+            new="put off|先延ばしにする; self-criticism|自己批判",
+            recycled="avoid|避ける|CORE-63",
             assumed="task|課題; time|時間; worry|心配; action|行動; step|一歩; problem|問題; decide|決める; deadline|期限",
             receptive="judgment|評価; emotional difficulty|気持ちの難しさ",
         ),

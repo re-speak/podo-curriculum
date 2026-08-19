@@ -25,9 +25,16 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
                         set(batch.VOCABULARY[topic_no][variant]),
                         {"new", "recycled", "assumed", "receptive"},
                     )
-                    # These conversation prompts are not grammar retrieval
-                    # evidence, so this batch makes no incidental Core claims.
-                    self.assertEqual(batch.VOCABULARY[topic_no][variant]["recycled"], "")
+                    # Only FT19 accessible reuses a learner-facing content word
+                    # whose actual earlier owner is now present in Core.
+                    expected_recycled = (
+                        "avoid|避ける|CORE-63"
+                        if (topic_no, variant) == (19, "accessible") else ""
+                    )
+                    self.assertEqual(
+                        batch.VOCABULARY[topic_no][variant]["recycled"],
+                        expected_recycled,
+                    )
                 all_vocabulary = " ".join(
                     batch.VOCABULARY[topic_no][variant][category]
                     for variant in ("accessible", "full")
@@ -79,6 +86,20 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
             }
             self.assertTrue(full_only[topic_no].isdisjoint(accessible_words))
         self.assertEqual(self_criticism_topics, {19})
+
+        ft19_accessible = batch.VOCABULARY[19]["accessible"]
+        self.assertNotIn("avoid|避ける", ft19_accessible["new"])
+        self.assertEqual(ft19_accessible["recycled"], "avoid|避ける|CORE-63")
+        core63 = (
+            batch.TRACK.parent
+            / "1-core-patterns/courses/core-careful-interaction/lessons"
+            / "63-i-generally-prefer-coffee/lesson.html"
+        ).read_text(encoding="utf-8")
+        self.assertIn('<meta name="podo:review-id" content="CORE-63">', core63)
+        owner_new = re.search(
+            r'<meta name="podo:vocabulary:new" content="([^"]*)">', core63
+        ).group(1)
+        self.assertIn("avoid|避ける", owner_new.split("; "))
 
     def test_curated_no_answer_referent_regressions(self) -> None:
         # This is intentionally a small lexical regression net around the
