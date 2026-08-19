@@ -1,0 +1,548 @@
+{
+  "_note": [
+    "Learner-facing course copy, keyed by course slug. plan_courses.py owns a",
+    "course's structure — slug, classLevel, difficulty, which lessons it holds —",
+    "and this file owns the words a learner reads in the catalogue.",
+    "",
+    "Three languages, always. GT_CLASS_COURSE stores BOOK_NAME (ko),",
+    "EN_BOOK_NAME and JP_BOOK_NAME and the app picks by locale, so `ja` is what",
+    "this Japanese-market track actually puts on screen and `ko` is grape's",
+    "admin label. Generating title and description from the TOC produced",
+    "English in all three slots and shipped build notation ('Core 25–36 · A1 →",
+    "A2') as the description; both are written here instead.",
+    "",
+    "Length. Live cover rows average 13 characters in ko and 22 in en, with a",
+    "22-character ko maximum, so short is the house style — the generated",
+    "titles this replaced ran to 72. test_plan_courses.py holds the ceiling at",
+    "40 for en and 30 for ko/ja: the ja track prefixes (ビジネス英語,",
+    "フリートーキング) cost 6–8 characters before the theme starts, which is why",
+    "the CJK ceiling is 30 rather than the live average.",
+    "",
+    "The CEFR band is the last segment of every title. It ships deliberately:",
+    "English learners in Japan read CEFR, and for free talking it is the only",
+    "thing distinguishing the accessible course from its full sibling. The two",
+    "siblings share a description — same topics, different language load — the",
+    "same way the Korean track's 중급/고급 pairs do."
+  ],
+
+  "courses": {
+    "core-first-exchanges-1": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 첫 문장 · A1",
+        "en": "English Core · First words · A1",
+        "ja": "英語コアパターン · 最初の一文 · A1"
+      },
+      "description": {
+        "ko": "자기소개를 하고, 주변의 사물을 말하고, 영어가 반드시 요구하는 주어를 빠뜨리지 않는다.",
+        "en": "Introduce yourself, name what is around you, and keep the subject English always needs.",
+        "ja": "自己紹介をし、身の回りのものを言い、英語が必ず求める主語を落とさずに話す。"
+      }
+    },
+    "core-first-exchanges-2": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 하기와 부탁 · A1",
+        "en": "English Core · Doing and asking · A1",
+        "ja": "英語コアパターン · 動作と依頼 · A1"
+      },
+      "description": {
+        "ko": "하는 일과 안 하는 일을 말하고, 필요한 것을 부탁한다.",
+        "en": "Say what you do and what you don't, and ask for what you need.",
+        "ja": "することとしないことを言い、必要なものを頼む。"
+      }
+    },
+    "core-daily-life-and-past": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 지금과 과거 · A2",
+        "en": "English Core · Now and before · A2",
+        "ja": "英語コアパターン · 今と過去 · A2"
+      },
+      "description": {
+        "ko": "늘 하는 일과 지금 하고 있는 일을 구분하고, 있었던 일을 말한다.",
+        "en": "Separate what you usually do from what is happening now, and tell what happened.",
+        "ja": "いつものことと今起きていることを分け、あったことを語る。"
+      }
+    },
+    "core-plans-and-comparison": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 계획과 비교 · A2",
+        "en": "English Core · Plans and comparison · A2",
+        "ja": "英語コアパターン · 予定と比較 · A2"
+      },
+      "description": {
+        "ko": "계획과 규칙과 조언을 말하고, 사물을 묘사하고 비교한다.",
+        "en": "Talk about plans, rules and advice, and describe and compare things.",
+        "ja": "予定・決まり・助言を話し、ものを描写して比べる。"
+      }
+    },
+    "core-experience-and-ideas": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 경험과 연결 · B1",
+        "en": "English Core · Experience and ideas · B1",
+        "ja": "英語コアパターン · 経験と連結 · B1"
+      },
+      "description": {
+        "ko": "경험과 기간을 말하고, 생각을 이어 붙여 길게 말한다.",
+        "en": "Talk about experience and how long, and join ideas into longer turns.",
+        "ja": "経験と期間を話し、考えをつないで長く話す。"
+      }
+    },
+    "core-careful-interaction": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 조심스러운 요청 · B1",
+        "en": "English Core · Careful requests · B1",
+        "ja": "英語コアパターン · 慎重な依頼 · B1"
+      },
+      "description": {
+        "ko": "조심스럽게 부탁하고, 무례하지 않게 정보를 묻고, 그럴 법한 일을 짚는다.",
+        "en": "Make careful requests, ask for information without sounding blunt, and reason about what might be.",
+        "ja": "丁寧に頼み、ぶしつけにならずに情報を求め、あり得ることを推し量る。"
+      }
+    },
+    "core-work-and-arrangements": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 일 처리하기 · B1+",
+        "en": "English Core · Getting things done · B1+",
+        "ja": "英語コアパターン · 段取りをつける · B1+"
+      },
+      "description": {
+        "ko": "지난 일을 돌아보고, 누가 언제까지 무엇을 할지 정한다.",
+        "en": "Look back on what was done, and arrange who does what by when.",
+        "ja": "済んだことを振り返り、誰がいつまでに何をするかを決める。"
+      }
+    },
+    "core-nuance-at-work": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 직장의 뉘앙스 · B2",
+        "en": "English Core · Nuance at work · B2",
+        "ja": "英語コアパターン · 職場のニュアンス · B2"
+      },
+      "description": {
+        "ko": "직장에서 쓰는 말을 다루고, 정도와 양을 뉘앙스까지 조절해 말한다.",
+        "en": "Handle workplace language, and control degree and quantity with nuance.",
+        "ja": "職場の言い回しを扱い、程度と量をニュアンスまで込めて言う。"
+      }
+    },
+    "core-diplomacy-and-reasoning": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 완곡함과 근거 · B2",
+        "en": "English Core · Diplomacy and reason · B2",
+        "ja": "英語コアパターン · 婉曲と論拠 · B2"
+      },
+      "description": {
+        "ko": "부드럽게 반대하고, 원인과 근거와 결과를 논리대로 편다.",
+        "en": "Disagree diplomatically, and lay out cause, evidence and consequence.",
+        "ja": "角を立てずに反対し、原因・根拠・結果を筋道立てて述べる。"
+      }
+    },
+    "core-emphasis-and-tone": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 강조와 어조 · C1",
+        "en": "English Core · Emphasis and tone · C1",
+        "ja": "英語コアパターン · 強調と語調 · C1"
+      },
+      "description": {
+        "ko": "중요한 부분을 앞에 두고, 자리에 맞게 어조와 격식을 맞춘다.",
+        "en": "Put the important part first, and match register and tone to the room.",
+        "ja": "大事な部分を先に出し、場に合わせて語調と丁寧さを合わせる。"
+      }
+    },
+    "core-advanced-stance": {
+      "title": {
+        "ko": "영어 핵심 패턴 · 논증과 태도 · C1",
+        "en": "English Core · Argument and stance · C1",
+        "ja": "英語コアパターン · 論証と含み · C1"
+      },
+      "description": {
+        "ko": "추상적으로 논증하고, 말한 것이 아니라 뜻한 것을 알아듣는다.",
+        "en": "Argue in the abstract, and hear what is meant rather than what is said.",
+        "ja": "抽象的に論じ、言われたことではなく含意を聞き取る。"
+      }
+    },
+
+    "ctx-travel-arrivals-transport": {
+      "title": {
+        "ko": "여행 영어 · 공항과 이동 · A2–B1",
+        "en": "Travel English · Arrivals · A2–B1",
+        "ja": "旅行英語 · 空港と移動 · A2–B1"
+      },
+      "description": {
+        "ko": "체크인·입국심사·못 들은 숫자 확인·숙소까지의 이동까지 도착 당일의 일을 처리한다.",
+        "en": "Check in, clear immigration, confirm a number you did not hear, and get to your accommodation.",
+        "ja": "チェックイン、入国審査、聞き取れなかった数字の確認、宿までの移動まで、到着日の用事を片づける。"
+      }
+    },
+    "ctx-travel-hotels-food": {
+      "title": {
+        "ko": "여행 영어 · 숙소와 식사 · B1",
+        "en": "Travel English · Hotels and food · B1",
+        "ja": "旅行英語 · 宿と食事 · B1"
+      },
+      "description": {
+        "ko": "아직 준비 안 된 방, 못 먹는 음식, 잘못 나온 주문, 바꿔야 하는 예약을 처리한다.",
+        "en": "Handle a room that is not ready, a dish you cannot eat, a wrong order, and a booking that has to change.",
+        "ja": "まだ使えない部屋、食べられない料理、間違った注文、変更したい予約に対処する。"
+      }
+    },
+    "ctx-travel-disruptions-urgent-problems": {
+      "title": {
+        "ko": "여행 영어 · 문제가 생겼을 때 · B2",
+        "en": "Travel English · When it goes wrong · B2",
+        "ja": "旅行英語 · トラブル対応 · B2"
+      },
+      "description": {
+        "ko": "놓친 환승을 다시 잡고, 분실 수하물을 신고하고, 부당한 청구에 이의를 제기하고, 진료를 받는다.",
+        "en": "Rebook a missed connection, report lost baggage precisely, challenge a charge, and get medical help.",
+        "ja": "乗り継ぎ失敗の取り直し、荷物の紛失申告、身に覚えのない請求への異議、医療の手配までこなす。"
+      }
+    },
+    "ctx-travel-independent-social": {
+      "title": {
+        "ko": "여행 영어 · 혼자 하는 여행 · B2",
+        "en": "Travel English · Travelling alone · B2",
+        "ja": "旅行英語 · ひとり旅と交流 · B2"
+      },
+      "description": {
+        "ko": "나에게 맞는 추천을 받고, 무리에 끼고, 처음 만난 사람과 계획을 짜고, 적대적이지 않게 단호히 항의한다.",
+        "en": "Get a recommendation that fits you, join a group, make a plan with people you just met, and complain firmly without hostility.",
+        "ja": "自分に合う提案を引き出し、グループに加わり、初対面の人と計画を立て、敵意を出さずにきっぱり苦情を言う。"
+      }
+    },
+    "ctx-travel-complex-decisions": {
+      "title": {
+        "ko": "여행 영어 · 따지고 요구하기 · C1",
+        "en": "Travel English · Making your case · C1",
+        "ja": "旅行英語 · 主張と交渉 · C1"
+      },
+      "description": {
+        "ko": "취소 건을 윗선으로 올리고, 사고를 기록으로 남기고, 필요한 배려를 요구하고, 정보가 부족한 채로 안전한 결정을 내린다.",
+        "en": "Escalate a cancellation, document an incident for insurance, advocate for what you need, and decide safely on partial information.",
+        "ja": "欠航をエスカレーションし、事故を記録に残し、必要な配慮を主張し、情報が足りない中で安全側の判断をする。"
+      }
+    },
+    "ctx-business-workplace-essentials": {
+      "title": {
+        "ko": "비즈니스 영어 · 사무실 기본 · A2–B1",
+        "en": "Business English · At the office · A2–B1",
+        "ja": "ビジネス英語 · 職場の基本 · A2–B1"
+      },
+      "description": {
+        "ko": "맡은 역할을 소개하고, 통화 문제를 해결하고, 시차를 넘어 일정을 잡고, 전달되는 진행 보고를 한다.",
+        "en": "Introduce your role, repair a bad call, schedule across time zones, and give a progress update that lands.",
+        "ja": "自分の役割を伝え、通話の不具合を直し、時差をまたいで日程を決め、伝わる進捗報告をする。"
+      }
+    },
+    "ctx-business-projects-deadlines": {
+      "title": {
+        "ko": "비즈니스 영어 · 프로젝트와 마감 · B1",
+        "en": "Business English · Projects · B1",
+        "ja": "ビジネス英語 · 案件と締め切り · B1"
+      },
+      "description": {
+        "ko": "우선순위를 확인하고, 담당을 분명히 하고, 위험을 일찍 알리고, 나쁜 소식을 다음 수와 함께 전한다.",
+        "en": "Confirm priorities, clarify who owns an action, raise a risk early, and deliver bad news with a next step.",
+        "ja": "優先順位を確認し、担当の所在をはっきりさせ、リスクを早めに出し、悪い知らせを次の一手と一緒に伝える。"
+      }
+    },
+    "ctx-business-meetings-decisions": {
+      "title": {
+        "ko": "비즈니스 영어 · 회의와 발표 · B2",
+        "en": "Business English · Meetings · B2",
+        "ja": "ビジネス英語 · 会議と発表 · B2"
+      },
+      "description": {
+        "ko": "확인하려고 끼어들고, 결정된 것을 정리하고, 결론부터 제안하고, 윗사람에게도 건설적으로 반대한다.",
+        "en": "Interrupt to clarify, summarise a decision, present your recommendation up front, and disagree upward constructively.",
+        "ja": "確認のために割って入り、決まったことをまとめ、結論から提案し、目上にも建設的に反対する。"
+      }
+    },
+    "ctx-business-negotiation-diplomacy": {
+      "title": {
+        "ko": "비즈니스 영어 · 협상과 완곡함 · B2",
+        "en": "Business English · Negotiation · B2",
+        "ja": "ビジネス英語 · 交渉と婉曲表現 · B2"
+      },
+      "description": {
+        "ko": "문제를 다시 규정하고, 조건을 걸어 제안하고, 무리한 약속을 되밀고, 교착을 푼다.",
+        "en": "Reframe the problem, make a conditional proposal, push back on an unsafe commitment, and break a deadlock.",
+        "ja": "問題を捉え直し、条件つきで提案し、無理な約束を押し返し、膠着を動かす。"
+      }
+    },
+    "ctx-business-leadership-high-stakes": {
+      "title": {
+        "ko": "비즈니스 영어 · 리더의 말 · C1",
+        "en": "Business English · Leading · C1",
+        "ja": "ビジネス英語 · リーダーの言葉 · C1"
+      },
+      "description": {
+        "ko": "어려운 평가 면담을 열고, 행동으로 이어지는 피드백을 주고, 불확실한 가운데 제언한다.",
+        "en": "Open a difficult performance conversation, give feedback that leads to action, and recommend under real uncertainty.",
+        "ja": "厳しい評価面談を切り出し、行動につながるフィードバックを渡し、不確実さの中で提言する。"
+      }
+    },
+
+    "talk-between-two-countries-accessible": {
+      "title": {
+        "ko": "프리토킹 · 두 나라 사이 · B1",
+        "en": "Free talking · Two countries · B1",
+        "ja": "フリートーキング · ふたつの国 · B1"
+      },
+      "description": {
+        "ko": "다른 나라에서 놀란 점을 설명하고, 일본에 온 사람은 무엇에 놀랄지 말한다.",
+        "en": "Explain what surprised you about another country, and what would surprise a visitor to Japan.",
+        "ja": "他の国について驚いたことを説明し、日本に来た人が何に驚くかを話す。"
+      }
+    },
+    "talk-between-two-countries-full": {
+      "title": {
+        "ko": "프리토킹 · 두 나라 사이 · B2–C1",
+        "en": "Free talking · Two countries · B2–C1",
+        "ja": "フリートーキング · ふたつの国 · B2–C1"
+      },
+      "description": {
+        "ko": "다른 나라에서 놀란 점을 설명하고, 일본에 온 사람은 무엇에 놀랄지 말한다.",
+        "en": "Explain what surprised you about another country, and what would surprise a visitor to Japan.",
+        "ja": "他の国について驚いたことを説明し、日本に来た人が何に驚くかを話す。"
+      }
+    },
+    "talk-me-lately-accessible": {
+      "title": {
+        "ko": "프리토킹 · 요즘의 나 · B1",
+        "en": "Free talking · Me lately · B1",
+        "ja": "フリートーキング · 最近のわたし · B1"
+      },
+      "description": {
+        "ko": "최근 경험을 구체적으로 꺼내 길게 말한다.",
+        "en": "Pull a recent experience out in detail, and keep talking about it.",
+        "ja": "最近の出来事を具体的に取り出して、長く話す。"
+      }
+    },
+    "talk-me-lately-full": {
+      "title": {
+        "ko": "프리토킹 · 요즘의 나 · B2–C1",
+        "en": "Free talking · Me lately · B2–C1",
+        "ja": "フリートーキング · 最近のわたし · B2–C1"
+      },
+      "description": {
+        "ko": "최근 경험을 구체적으로 꺼내 길게 말한다.",
+        "en": "Pull a recent experience out in detail, and keep talking about it.",
+        "ja": "最近の出来事を具体的に取り出して、長く話す。"
+      }
+    },
+    "talk-things-i-like-accessible": {
+      "title": {
+        "ko": "프리토킹 · 좋아하는 것 · B1",
+        "en": "Free talking · Things I like · B1",
+        "ja": "フリートーキング · 好きなもの · B1"
+      },
+      "description": {
+        "ko": "좋아하는 대상과 이유를 구체적인 경험으로 설명한다.",
+        "en": "Explain what you like and why, through experiences specific enough to picture.",
+        "ja": "好きなものとその理由を、具体的な経験で説明する。"
+      }
+    },
+    "talk-things-i-like-full": {
+      "title": {
+        "ko": "프리토킹 · 좋아하는 것 · B2–C1",
+        "en": "Free talking · Things I like · B2–C1",
+        "ja": "フリートーキング · 好きなもの · B2–C1"
+      },
+      "description": {
+        "ko": "좋아하는 대상과 이유를 구체적인 경험으로 설명한다.",
+        "en": "Explain what you like and why, through experiences specific enough to picture.",
+        "ja": "好きなものとその理由を、具体的な経験で説明する。"
+      }
+    },
+    "talk-small-things-accessible": {
+      "title": {
+        "ko": "프리토킹 · 사소한 것들 · B1",
+        "en": "Free talking · Small things · B1",
+        "ja": "フリートーキング · ささいなこと · B1"
+      },
+      "description": {
+        "ko": "사소하고 웃긴 경험을 구체적으로 풀어 말한다.",
+        "en": "Unpack the small, funny things that happen to you, in detail.",
+        "ja": "ささいで笑える経験を、具体的にほどいて話す。"
+      }
+    },
+    "talk-small-things-full": {
+      "title": {
+        "ko": "프리토킹 · 사소한 것들 · B2–C1",
+        "en": "Free talking · Small things · B2–C1",
+        "ja": "フリートーキング · ささいなこと · B2–C1"
+      },
+      "description": {
+        "ko": "사소하고 웃긴 경험을 구체적으로 풀어 말한다.",
+        "en": "Unpack the small, funny things that happen to you, in detail.",
+        "ja": "ささいで笑える経験を、具体的にほどいて話す。"
+      }
+    },
+    "talk-people-and-ties-accessible": {
+      "title": {
+        "ko": "프리토킹 · 사람과 관계 · B1",
+        "en": "Free talking · People and ties · B1",
+        "ja": "フリートーキング · 人と関係 · B1"
+      },
+      "description": {
+        "ko": "실제 관계 경험을 꺼내고 그 경험에서 생긴 의견을 설명한다.",
+        "en": "Bring up real experiences with people, and the opinions those experiences left you with.",
+        "ja": "実際の人間関係の経験を出し、そこから生まれた考えを説明する。"
+      }
+    },
+    "talk-people-and-ties-full": {
+      "title": {
+        "ko": "프리토킹 · 사람과 관계 · B2–C1",
+        "en": "Free talking · People and ties · B2–C1",
+        "ja": "フリートーキング · 人と関係 · B2–C1"
+      },
+      "description": {
+        "ko": "실제 관계 경험을 꺼내고 그 경험에서 생긴 의견을 설명한다.",
+        "en": "Bring up real experiences with people, and the opinions those experiences left you with.",
+        "ja": "実際の人間関係の経験を出し、そこから生まれた考えを説明する。"
+      }
+    },
+    "talk-love-and-marriage-accessible": {
+      "title": {
+        "ko": "프리토킹 · 연애와 결혼 · B1",
+        "en": "Free talking · Love and marriage · B1",
+        "ja": "フリートーキング · 恋愛と結婚 · B1"
+      },
+      "description": {
+        "ko": "민감도를 조절하며 연애와 결혼 경험·생각을 말한다.",
+        "en": "Talk about love and marriage — what you have lived and what you think — dialling the sensitivity as you go.",
+        "ja": "踏み込む深さを調節しながら、恋愛と結婚の経験や考えを話す。"
+      }
+    },
+    "talk-love-and-marriage-full": {
+      "title": {
+        "ko": "프리토킹 · 연애와 결혼 · B2–C1",
+        "en": "Free talking · Love and marriage · B2–C1",
+        "ja": "フリートーキング · 恋愛と結婚 · B2–C1"
+      },
+      "description": {
+        "ko": "민감도를 조절하며 연애와 결혼 경험·생각을 말한다.",
+        "en": "Talk about love and marriage — what you have lived and what you think — dialling the sensitivity as you go.",
+        "ja": "踏み込む深さを調節しながら、恋愛と結婚の経験や考えを話す。"
+      }
+    },
+    "talk-work-and-money-accessible": {
+      "title": {
+        "ko": "프리토킹 · 일과 돈 · B1",
+        "en": "Free talking · Work and money · B1",
+        "ja": "フリートーキング · 仕事とお金 · B1"
+      },
+      "description": {
+        "ko": "숫자와 장면이 있는 일·돈 경험을 말한다.",
+        "en": "Talk about work and money with real numbers and a real scene attached.",
+        "ja": "数字と場面のある仕事とお金の経験を話す。"
+      }
+    },
+    "talk-work-and-money-full": {
+      "title": {
+        "ko": "프리토킹 · 일과 돈 · B2–C1",
+        "en": "Free talking · Work and money · B2–C1",
+        "ja": "フリートーキング · 仕事とお金 · B2–C1"
+      },
+      "description": {
+        "ko": "숫자와 장면이 있는 일·돈 경험을 말한다.",
+        "en": "Talk about work and money with real numbers and a real scene attached.",
+        "ja": "数字と場面のある仕事とお金の経験を話す。"
+      }
+    },
+    "talk-what-came-before-accessible": {
+      "title": {
+        "ko": "프리토킹 · 지나온 것 · B1",
+        "en": "Free talking · What came before · B1",
+        "ja": "フリートーキング · 過ぎてきたもの · B1"
+      },
+      "description": {
+        "ko": "이미 겪은 기억을 시간 순서와 디테일로 이야기한다.",
+        "en": "Tell what you already lived through, in order and in detail.",
+        "ja": "すでに経験した記憶を、時間の順とディテールで語る。"
+      }
+    },
+    "talk-what-came-before-full": {
+      "title": {
+        "ko": "프리토킹 · 지나온 것 · B2–C1",
+        "en": "Free talking · What came before · B2–C1",
+        "ja": "フリートーキング · 過ぎてきたもの · B2–C1"
+      },
+      "description": {
+        "ko": "이미 겪은 기억을 시간 순서와 디테일로 이야기한다.",
+        "en": "Tell what you already lived through, in order and in detail.",
+        "ja": "すでに経験した記憶を、時間の順とディテールで語る。"
+      }
+    },
+    "talk-what-if-accessible": {
+      "title": {
+        "ko": "프리토킹 · 만약에 · B1",
+        "en": "Free talking · What if · B1",
+        "ja": "フリートーキング · もしも · B1"
+      },
+      "description": {
+        "ko": "가상의 선택을 빠르게 고르고 이유와 결과를 확장해서 말한다.",
+        "en": "Pick fast in a hypothetical, then open out the reason and what would follow.",
+        "ja": "仮の選択を素早く決め、理由と結果を広げて話す。"
+      }
+    },
+    "talk-what-if-full": {
+      "title": {
+        "ko": "프리토킹 · 만약에 · B2–C1",
+        "en": "Free talking · What if · B2–C1",
+        "ja": "フリートーキング · もしも · B2–C1"
+      },
+      "description": {
+        "ko": "가상의 선택을 빠르게 고르고 이유와 결과를 확장해서 말한다.",
+        "en": "Pick fast in a hypothetical, then open out the reason and what would follow.",
+        "ja": "仮の選択を素早く決め、理由と結果を広げて話す。"
+      }
+    },
+    "talk-worth-thinking-about-accessible": {
+      "title": {
+        "ko": "프리토킹 · 생각해 볼 것 · B1",
+        "en": "Free talking · Worth a thought · B1",
+        "ja": "フリートーキング · 考えたいこと · B1"
+      },
+      "description": {
+        "ko": "일상에서 답할 수 있는 근거로 의견을 말하고 반대 입장까지 검토한다.",
+        "en": "Argue from evidence you can reach from ordinary life, and weigh the other side too.",
+        "ja": "日常から答えられる根拠で意見を述べ、反対の立場まで検討する。"
+      }
+    },
+    "talk-worth-thinking-about-full": {
+      "title": {
+        "ko": "프리토킹 · 생각해 볼 것 · B2–C1",
+        "en": "Free talking · Worth a thought · B2–C1",
+        "ja": "フリートーキング · 考えたいこと · B2–C1"
+      },
+      "description": {
+        "ko": "일상에서 답할 수 있는 근거로 의견을 말하고 반대 입장까지 검토한다.",
+        "en": "Argue from evidence you can reach from ordinary life, and weigh the other side too.",
+        "ja": "日常から答えられる根拠で意見を述べ、反対の立場まで検討する。"
+      }
+    },
+    "talk-balance-games-accessible": {
+      "title": {
+        "ko": "프리토킹 · 밸런스 게임 · B1",
+        "en": "Free talking · Balance games · B1",
+        "ja": "フリートーキング · 究極の二択 · B1"
+      },
+      "description": {
+        "ko": "두 선택 중 하나를 빠르게 고르고, 구체적인 생활 장면과 조건 변화로 선택의 이유를 길게 설명한다.",
+        "en": "Choose one of two fast, then justify it at length through concrete scenes and shifting conditions.",
+        "ja": "二つのうち一つを素早く選び、具体的な生活の場面と条件の変化で、その理由を長く説明する。"
+      }
+    },
+    "talk-balance-games-full": {
+      "title": {
+        "ko": "프리토킹 · 밸런스 게임 · B2–C1",
+        "en": "Free talking · Balance games · B2–C1",
+        "ja": "フリートーキング · 究極の二択 · B2–C1"
+      },
+      "description": {
+        "ko": "두 선택 중 하나를 빠르게 고르고, 구체적인 생활 장면과 조건 변화로 선택의 이유를 길게 설명한다.",
+        "en": "Choose one of two fast, then justify it at length through concrete scenes and shifting conditions.",
+        "ja": "二つのうち一つを素早く選び、具体的な生活の場面と条件の変化で、その理由を長く説明する。"
+      }
+    }
+  }
+}

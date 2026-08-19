@@ -70,9 +70,9 @@ spec:
       publicBaseUrl: https://storage.googleapis.com/podo-assets/
 
   # 공유 런타임(shared/css, shared/js)은 덱마다 복사해 싣지 않고 CDN 에서 받는다.
-  # 오소링 원본은 podo-curriculum-public/runtime/ 이다. sync-from-authoring.py 가
-  # 이 레포의 shared/ 릴리스 스냅샷으로 복사하고, publish-shared.py 가 아래
-  # 공개 미러로 밀어 불변 태그를 끊는다. shared/ 를 독립적으로 고치지 않는다.
+  # 런타임 원본은 이 저장소의 shared/{css,js} 다. 거기를 고치고, 여기 version 을 올린
+  # 다음 tools/publish-shared.py 로 공개 미러에 불변 태그를 끊는다. 발행이 먼저다 —
+  # 아직 없는 태그를 가리키는 덱은 수업 중에 조용히 404 가 된다.
   #
   # version 은 반드시 태그다. jsDelivr 는 태그를 박은 URL 만 영구 캐시하고(immutable),
   # @main 같은 브랜치 ref 는 12 시간마다 다시 확인한다 — 그 12 시간 동안 엣지마다
@@ -84,7 +84,7 @@ spec:
   sharedRuntime:
     baseUrl: https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared
     repo: re-speak/podo-curriculum-shared
-    version: v1.9.0
+    version: v1.10.0
     join: "@"
 
   # Directories the sync tool will never walk, no matter what is inside them.

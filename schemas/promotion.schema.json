@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/re-speak/podo-curriculum/schemas/promotion.schema.json",
+  "title": "Promotion",
+  "description": "How a set of reviewed drafts becomes a deployable course. Lives beside the drafts under sandbox/drafts/ and is read by tools/promote.py. Nothing here reaches the database — it describes the packaging step, and the lesson.yaml it generates is what deploys.",
+  "type": "object",
+  "required": ["apiVersion", "kind", "metadata", "spec"],
+  "additionalProperties": false,
+  "properties": {
+    "apiVersion": { "const": "podo.curriculum/v1" },
+    "kind": { "const": "Promotion" },
+    "metadata": {
+      "type": "object",
+      "required": ["target"],
+      "additionalProperties": false,
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Repo-relative path of the course this fills. The course must already exist — promotion writes lessons/, never course.yaml, so a course's identity and its enabled flag stay under human control.",
+          "pattern": "^courses/[a-z]{2}/[a-z0-9]+(-[a-z0-9]+)*$"
+        }
+      }
+    },
+    "spec": {
+      "type": "object",
+      "required": ["source", "lessons"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "Repo-relative directory holding the draft decks named below.",
+          "pattern": "^sandbox/drafts/.+"
+        },
+        "assetRoots": {
+          "type": "array",
+          "description": "Where a flattened basename is looked up, in order. shared/assets is always appended last, so a draft-local image wins over a shared one of the same name.",
+          "items": { "type": "string", "pattern": "^sandbox/drafts/.+" }
+        },
+        "lessons": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["source", "slug", "week", "title"],
+            "additionalProperties": false,
+            "properties": {
+              "source": {
+                "type": "string",
+                "description": "Deck filename inside spec.source.",
+                "pattern": "^[^/]+\\.html$"
+              },
+              "slug": {
+                "type": "string",
+                "description": "Lesson directory name. Permanent by convention — it is what a human uses to find the lesson.",
+                "pattern": "^[0-9]{2,3}-[a-z0-9]+(-[a-z0-9]+)*$"
+              },
+              "week": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "CLASS_WEEK. Contiguous from 1 across the manifest; a gap makes a lesson unreachable."
+              },
+              "title": {
+                "type": "object",
+                "required": ["ko", "en", "ja"],
+                "additionalProperties": false,
+                "properties": {
+                  "ko": { "type": "string", "minLength": 1 },
+                  "en": { "type": "string", "minLength": 1 },
+                  "ja": { "type": "string", "minLength": 1 }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>드라마 장면 이미지 톤 비교 — PODO 한국어</title>
+  <link rel="stylesheet" href="../../../../../shared/css/lesson-card.css">
+  <link rel="stylesheet" href="../../../../../shared/css/trial.css">
+  <style>
+    /* trial-1-report.html 의 원래 카드와 대사 위치를 고정하고 사진의 톤만
+       바꾼다. 말풍선은 모든 안에서 bottom:14px, 불투명, 원래 크기다. */
+    body { background: var(--gray-50); }
+
+    .tone-page {
+      --paper: #fff;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 24px 0 88px;
+    }
+
+    .tone-intro {
+      margin: 0 20px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    .tone-intro h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.4;
+      letter-spacing: -.025em;
+    }
+
+    .tone-intro p {
+      margin: 8px 0 0;
+      color: color-mix(in srgb, var(--paper) 66%, transparent);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.55;
+      word-break: keep-all;
+    }
+
+    .tone-axis {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin: 12px 20px 0;
+    }
+
+    .tone-axis span {
+      padding: 7px 6px;
+      border: 1px solid var(--gray-200);
+      border-radius: 9px;
+      background: var(--paper);
+      color: var(--gray-500);
+      font-size: 11px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .tone-group {
+      margin: 34px 20px 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .tone-group b {
+      display: block;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .tone-group span {
+      display: block;
+      margin-top: 3px;
+      color: var(--gray-500);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+      word-break: keep-all;
+    }
+
+    .tone-label {
+      margin: 22px 20px 0;
+    }
+
+    .tone-label b {
+      display: block;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .tone-label span {
+      display: block;
+      margin-top: 3px;
+      color: var(--gray-500);
+      font-size: 11.5px;
+      font-weight: 600;
+      line-height: 1.5;
+      word-break: keep-all;
+    }
+
+    .tone-frame {
+      margin: 9px 20px 0;
+      padding: 18px;
+      border: 1px solid var(--gray-200);
+      border-radius: 20px;
+      background: var(--paper);
+    }
+
+    .tone-frame .hy { min-height: 340px; }
+    .tone-frame .hy-stage { min-height: 190px; }
+
+    /* 어둡게: 원래 아래쪽 그라데이션을 보존하고 사진 밝기만 내린다. */
+    .tone-dark-1 .sc-pics img { filter: brightness(.92) saturate(.98); }
+    .tone-dark-2 .sc-pics img { filter: brightness(.82) saturate(.95); }
+    .tone-dark-3 .sc-pics img { filter: brightness(.70) saturate(.90); }
+
+    /* 밝게: 흰 막을 씌우지 않고 사진 자체의 광량만 올린다. */
+    .tone-bright-1 .sc-pics img { filter: brightness(1.08) saturate(.98); }
+    .tone-bright-2 .sc-pics img { filter: brightness(1.16) saturate(.96); }
+
+    /* 희게: 사진을 날리는 대신 종이 같은 흰 막을 단계별로 얹는다.
+       이 세 안에서는 원래의 검은 아래 그라데이션을 흰 막으로 교체한다. */
+    .tone-white-1 .sc-pics::after {
+      background: color-mix(in srgb, var(--paper) 8%, transparent);
+    }
+
+    .tone-white-2 .sc-pics::after {
+      background: color-mix(in srgb, var(--paper) 16%, transparent);
+    }
+
+    .tone-white-3 .sc-pics::after {
+      background: color-mix(in srgb, var(--paper) 26%, transparent);
+    }
+
+    @media (max-width: 380px) {
+      .tone-frame { margin-right: 12px; margin-left: 12px; padding: 12px; }
+      .tone-label, .tone-group, .tone-axis, .tone-intro {
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="tone-page">
+    <header class="tone-intro">
+      <h1>원래 레이아웃 · 이미지 톤만 비교</h1>
+      <p>말풍선의 위치·크기·색은 전부 원안 그대로입니다. 사진만 어둡게, 밝게, 또는 희게 씌워 비교합니다.</p>
+    </header>
+
+    <div class="tone-axis" aria-label="비교하는 세 가지 이미지 톤">
+      <span>어둡게</span>
+      <span>밝게</span>
+      <span>희게</span>
+    </div>
+
+    <div class="tone-group">
+      <b>기준</b>
+      <span>현재 리포트에서 보이는 카드 그대로입니다.</span>
+    </div>
+    <section class="tone-variant" data-class="">
+      <div class="tone-label"><b>⓪ 원본 · 100%</b><span>사진과 아래쪽 그라데이션 모두 현재 값입니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+
+    <div class="tone-group">
+      <b>어둡게</b>
+      <span>원래 색감은 유지하고 사진의 밝기만 단계적으로 낮춥니다.</span>
+    </div>
+    <section class="tone-variant" data-class="tone-dark-1">
+      <div class="tone-label"><b>D1 · 살짝 어둡게 — 92%</b><span>거의 원본처럼 보이면서 대사 대비만 조금 높아집니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+    <section class="tone-variant" data-class="tone-dark-2">
+      <div class="tone-label"><b>D2 · 중간만큼 어둡게 — 82%</b><span>장면과 대사의 시각적 무게가 비슷해집니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+    <section class="tone-variant" data-class="tone-dark-3">
+      <div class="tone-label"><b>D3 · 꽤 어둡게 — 70%</b><span>사진은 배경으로 물러나고 대사가 확실히 먼저 보입니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+
+    <div class="tone-group">
+      <b>밝게</b>
+      <span>흰 막 없이 사진 자체의 밝기만 올립니다.</span>
+    </div>
+    <section class="tone-variant" data-class="tone-bright-1">
+      <div class="tone-label"><b>B1 · 살짝 밝게 — 108%</b><span>인물과 장소가 조금 더 선명하고 생생하게 보입니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+    <section class="tone-variant" data-class="tone-bright-2">
+      <div class="tone-label"><b>B2 · 꽤 밝게 — 116%</b><span>장면이 가장 먼저 보이는 밝은 이미지 중심 안입니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+
+    <div class="tone-group">
+      <b>희게 씌우기</b>
+      <span>밝기를 올리는 대신 사진 위에 얇은 흰 막을 씌워 부드럽게 만듭니다.</span>
+    </div>
+    <section class="tone-variant" data-class="tone-white-1">
+      <div class="tone-label"><b>W1 · 옅은 흰 막 — 8%</b><span>대비를 아주 조금 낮춰 사진이 부드럽게 보입니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+    <section class="tone-variant" data-class="tone-white-2">
+      <div class="tone-label"><b>W2 · 중간 흰 막 — 16%</b><span>색이 한 단계 연해지고 말풍선과 사진의 경계가 부드러워집니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+    <section class="tone-variant" data-class="tone-white-3">
+      <div class="tone-label"><b>W3 · 뚜렷한 흰 막 — 26%</b><span>사진이 가장 연하고 회상 장면처럼 흐릿한 인상을 줍니다.</span></div>
+      <div class="tone-frame"></div>
+    </section>
+  </main>
+
+  <template id="drama-card">
+    <div class="hy">
+      <div class="hy-head">
+        <img class="hy-do-i" src="../assets/course-icons/ic-drama.png" alt="">
+        <span class="hy-hb">
+          <span class="hy-h"><b>상황별 · 드라마</b><span class="hy-n">40레슨</span></span>
+          <span class="hy-do">드라마 대사가 자막 없이 들려요</span>
+        </span>
+        <span class="hy-no">3 / 5</span>
+      </div>
+      <div class="hy-stage">
+        <div class="sp-scene">
+          <span class="sc-pics" aria-hidden="true">
+            <img src="../assets/scenes/drama-1.png" alt="">
+            <img src="../assets/scenes/drama-2.png" alt="">
+            <img src="../assets/scenes/drama-3.png" alt="">
+          </span>
+          <span class="sc-lines">
+            <span class="sc-b">우리 어디서 <mark class="hl">본 적 있지 않아요?</mark></span>
+            <span class="sc-b me">아… 저 <mark class="hl">그 카페에서 봤어요.</mark></span>
+          </span>
+        </div>
+      </div>
+      <div class="hy-cap">드라마에 나온 대사를 그대로 주고받아요</div>
+    </div>
+  </template>
+
+  <script>
+    (function () {
+      "use strict";
+      var template = document.getElementById("drama-card");
+      document.querySelectorAll(".tone-variant").forEach(function (variant) {
+        var frame = variant.querySelector(".tone-frame");
+        var card = template.content.cloneNode(true);
+        var root = card.querySelector(".hy");
+        var className = variant.getAttribute("data-class");
+        if (className) root.classList.add(className);
+        frame.appendChild(card);
+      });
+    }());
+  </script>
+</body>
+</html>

@@ -10,7 +10,7 @@ spec:
   curriculumType: BASIC        # BASIC | SMART_TALK | TRIAL
   countryCode: KR              # GT_CLASS_COURSE.COUNTRY_CODE; natural-key scope
   classLevel: "1"              # → CLASS_LEVEL (grape truncates past 3 decimals)
-  lessonTime: 25               # → LESSON_TIME; 15 or 25
+  lessonTime: 25               # → LESSON_TIME; 15, 25, or 55 (체험/TRIAL)
   enabled: false               # → USE_YN. false until every lesson has both decks.
   difficulty: BEGINNER
 

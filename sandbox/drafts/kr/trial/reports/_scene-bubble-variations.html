@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>드라마 장면 말풍선 · 여러 가지 안 — PODO 한국어</title>
+  <link rel="stylesheet" href="../../../../../shared/css/lesson-card.css">
+  <link rel="stylesheet" href="../../../../../shared/css/trial.css">
+  <style>
+    /* trial-1-report.html 의 드라마 코스 카드를 그대로 두고, 말풍선의
+       세로 위치와 사진 대비만 바꿔 비교한다. 라이브 리포트에는 아직
+       어느 안도 적용하지 않는다. */
+    body { background: var(--gray-50); }
+
+    .compare {
+      --paper: #fff;
+      --scene-me: #c9ff70;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 24px 0 88px;
+    }
+
+    .compare-intro {
+      margin: 0 20px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    .compare-intro h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.4;
+      letter-spacing: -.025em;
+    }
+
+    .compare-intro p {
+      margin: 8px 0 0;
+      color: color-mix(in srgb, var(--paper) 66%, transparent);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.55;
+      word-break: keep-all;
+    }
+
+    .variant-label {
+      margin: 30px 20px 0;
+    }
+
+    .variant-label b {
+      display: block;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .variant-label span {
+      display: block;
+      margin-top: 4px;
+      color: var(--gray-500);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+      word-break: keep-all;
+    }
+
+    .variant-frame {
+      margin: 10px 20px 0;
+      padding: 18px;
+      border: 1px solid var(--gray-200);
+      border-radius: 20px;
+      background: var(--paper);
+    }
+
+    .variant-frame .hy { min-height: 340px; }
+    .variant-frame .hy-stage { min-height: 190px; }
+
+    /* ⓪ 비교 기준: live trial.css 의 bottom:14px 를 그대로 쓴다. */
+
+    /* ⓪A–D 원안의 아래 정렬은 유지한다. 대사 묶음은 모두 같은 16px만
+       들어 올리고 사진 밝기와 말풍선 투명도만 바꿔, 한 축씩 비교한다. */
+    .v-lift-soft .sc-lines,
+    .v-lift-dim .sc-lines,
+    .v-lift-deep .sc-lines,
+    .v-lift-smoke .sc-lines { bottom: 30px; }
+
+    .v-lift-soft .sc-pics img { filter: brightness(.92) saturate(.98); }
+    .v-lift-dim .sc-pics img { filter: brightness(.84) saturate(.95); }
+    .v-lift-deep .sc-pics img { filter: brightness(.70) saturate(.90); }
+    .v-lift-smoke .sc-pics img { filter: brightness(.80) saturate(.94); }
+
+    .v-lift-smoke .sc-b {
+      border-color: color-mix(in srgb, var(--gray-200) 82%, transparent);
+      background: color-mix(in srgb, var(--paper) 82%, transparent);
+      box-shadow: 0 3px 12px color-mix(in srgb, var(--ink) 14%, transparent);
+      -webkit-backdrop-filter: blur(3px);
+              backdrop-filter: blur(3px);
+    }
+
+    .v-lift-smoke .sc-b.me {
+      border-color: color-mix(in srgb, var(--scene-me) 82%, transparent);
+      background: color-mix(in srgb, var(--scene-me) 82%, transparent);
+    }
+
+    /* ① 대화 두 턴의 합친 높이를 이미지의 정확한 세로 가운데에 둔다. */
+    .v-center .sc-lines,
+    .v-glass .sc-lines,
+    .v-glass-dim .sc-lines,
+    .v-dim .sc-lines,
+    .v-balanced .sc-lines {
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+    }
+
+    /* ② 장면을 더 남기는 안: 꼬리와 정렬은 그대로, 면만 88% 남긴다. */
+    .v-glass .sc-b {
+      border-color: color-mix(in srgb, var(--gray-200) 88%, transparent);
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      box-shadow: 0 3px 12px color-mix(in srgb, var(--ink) 12%, transparent);
+      -webkit-backdrop-filter: blur(3px);
+              backdrop-filter: blur(3px);
+    }
+
+    .v-glass .sc-b.me {
+      border-color: color-mix(in srgb, var(--scene-me) 88%, transparent);
+      background: color-mix(in srgb, var(--scene-me) 88%, transparent);
+    }
+
+    /* ②B 면을 74%까지 열고 사진은 ③보다 훨씬 약하게 누른 절충안.
+       밝은 공항 전광판 위에서도 글자가 서도록 흐림은 ②보다 한 단계 올린다. */
+    .v-glass-dim .sc-pics img {
+      filter: brightness(.82) saturate(.94);
+    }
+
+    .v-glass-dim .sc-b {
+      border-color: color-mix(in srgb, var(--gray-200) 74%, transparent);
+      background: color-mix(in srgb, var(--paper) 74%, transparent);
+      box-shadow: 0 3px 14px color-mix(in srgb, var(--ink) 16%, transparent);
+      -webkit-backdrop-filter: blur(4px);
+              backdrop-filter: blur(4px);
+    }
+
+    .v-glass-dim .sc-b.me {
+      border-color: color-mix(in srgb, var(--scene-me) 74%, transparent);
+      background: color-mix(in srgb, var(--scene-me) 74%, transparent);
+    }
+
+    /* ③ 대사의 면은 또렷하게 두고, 사진 전체를 한 단계 눌러 대비를 만든다. */
+    .v-dim .sc-pics img {
+      filter: brightness(.72) saturate(.92);
+    }
+
+    .v-dim .sc-pics::after {
+      background: color-mix(in srgb, var(--ink) 10%, transparent);
+    }
+
+    .v-dim .sc-b {
+      box-shadow: 0 3px 12px color-mix(in srgb, var(--ink) 16%, transparent);
+    }
+
+    /* ④ 가장 대칭적인 안: 양쪽 말풍선의 폭과 중심축을 맞추되,
+       꼬리 모서리와 흰색/연두색으로 화자는 계속 구분한다. */
+    .v-balanced .sc-lines {
+      left: 16px;
+      right: 16px;
+      gap: 10px;
+    }
+
+    .v-balanced .sc-b {
+      width: 86%;
+      max-width: none;
+    }
+
+    .v-balanced .sc-b:first-child { align-self: flex-start; }
+    .v-balanced .sc-b.me { align-self: flex-end; }
+
+    @media (max-width: 380px) {
+      .variant-frame { margin-right: 12px; margin-left: 12px; padding: 12px; }
+      .variant-label { margin-right: 12px; margin-left: 12px; }
+      .compare-intro { margin-right: 12px; margin-left: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="compare">
+    <header class="compare-intro">
+      <h1>드라마 장면 · 말풍선 위치 비교</h1>
+      <p>⓪은 지금 리포트 그대로입니다. 먼저 원래 아래 정렬을 유지한 채 사진 밝기와 말풍선 투명도만 비교하고, 그 뒤에서 가운데 정렬 안을 볼 수 있습니다.</p>
+    </header>
+
+    <section class="variant" data-class="">
+      <div class="variant-label">
+        <b>⓪ 지금 · 아래 정렬</b>
+        <span>비교 기준. 사진 위쪽을 많이 남기고 두 대사를 아래에 모읍니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-lift-soft">
+      <div class="variant-label">
+        <b>⓪A 원안 + 살짝 어둡게</b>
+        <span>대사는 16px만 올리고 사진은 92% 밝기로 둡니다. 원안과 가장 가까운 변화입니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-lift-dim">
+      <div class="variant-label">
+        <b>⓪B 원안 + 중간만큼 어둡게</b>
+        <span>같은 위치에서 사진을 84% 밝기로 낮춥니다. 장면과 대사의 무게가 가장 비슷한 안입니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-lift-deep">
+      <div class="variant-label">
+        <b>⓪C 원안 + 꽤 어둡게</b>
+        <span>사진을 70% 밝기로 눌러 대사가 확실히 먼저 보입니다. 말풍선은 원래처럼 불투명합니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-lift-smoke">
+      <div class="variant-label">
+        <b>⓪D 원안 + 어두운 사진 + 옅은 흰 말풍선</b>
+        <span>사진은 80% 밝기, 말풍선은 82% 불투명입니다. 어두운 장면이 흰 말풍선 안으로 살짝 비칩니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-center">
+      <div class="variant-label">
+        <b>① 가운데 · 불투명</b>
+        <span>현재 말풍선의 색과 대비를 그대로 유지하고, 두 턴만 장면의 세로 가운데에 둡니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-glass">
+      <div class="variant-label">
+        <b>② 가운데 · 88% 반투명</b>
+        <span>말풍선 뒤로 장면이 조금 비칩니다. 글자 가까이의 사진은 약하게 흐려 가독성을 지킵니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-glass-dim">
+      <div class="variant-label">
+        <b>②B 가운데 · 74% 반투명 + 사진 살짝 어둡게</b>
+        <span>말풍선을 더 열고 사진 밝기만 조금 낮췄습니다. 장면은 더 많이 남기되 글자는 밝은 사진에서 분리됩니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-dim">
+      <div class="variant-label">
+        <b>③ 가운데 · 사진을 어둡게</b>
+        <span>말풍선은 또렷한 채로 두고 사진만 한 단계 어둡게 눌러, 대사가 먼저 읽히게 합니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+
+    <section class="variant" data-class="v-balanced">
+      <div class="variant-label">
+        <b>④ 가운데 · 같은 폭</b>
+        <span>두 말풍선의 폭을 맞춘 가장 대칭적인 안입니다. 좌우 꼬리로 대화 방향은 남깁니다.</span>
+      </div>
+      <div class="variant-frame"></div>
+    </section>
+  </main>
+
+  <template id="drama-card">
+    <div class="hy">
+      <div class="hy-head">
+        <img class="hy-do-i" src="../assets/course-icons/ic-drama.png" alt="">
+        <span class="hy-hb">
+          <span class="hy-h"><b>상황별 · 드라마</b><span class="hy-n">40레슨</span></span>
+          <span class="hy-do">드라마 대사가 자막 없이 들려요</span>
+        </span>
+        <span class="hy-no">3 / 5</span>
+      </div>
+      <div class="hy-stage">
+        <div class="sp-scene">
+          <span class="sc-pics" aria-hidden="true">
+            <img src="../assets/scenes/drama-1.png" alt="">
+            <img src="../assets/scenes/drama-2.png" alt="">
+            <img src="../assets/scenes/drama-3.png" alt="">
+          </span>
+          <span class="sc-lines">
+            <span class="sc-b">우리 어디서 <mark class="hl">본 적 있지 않아요?</mark></span>
+            <span class="sc-b me">아… 저 <mark class="hl">그 카페에서 봤어요.</mark></span>
+          </span>
+        </div>
+      </div>
+      <div class="hy-cap">드라마에 나온 대사를 그대로 주고받아요</div>
+    </div>
+  </template>
+
+  <script>
+    (function () {
+      "use strict";
+      var template = document.getElementById("drama-card");
+      document.querySelectorAll(".variant").forEach(function (variant) {
+        var frame = variant.querySelector(".variant-frame");
+        var card = template.content.cloneNode(true);
+        var scene = card.querySelector(".hy");
+        var className = variant.getAttribute("data-class");
+        if (className) scene.classList.add(className);
+        frame.appendChild(card);
+      });
+    }());
+  </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+{
+  "_note": [
+    "Learner-facing course copy, keyed by course slug. plan_courses.py owns a",
+    "course's structure — slug, classLevel, difficulty, which 과 it holds — and",
+    "this file owns the words a learner reads in the catalogue.",
+    "",
+    "Why it is separate: GT_CLASS_COURSE.DESCRIPTION is an i18n JSON object and",
+    "the app picks by locale, so a JP-market course shows `ja`. The generator",
+    "used to synthesise that field as '初級。10課。', which is build metadata, not",
+    "a description. Nothing derivable can replace a written sentence, so the",
+    "sentence lives here.",
+    "",
+    "`ko` is optional and overrides the TOC's 끝내면 할 수 있는 것 line. Leave it",
+    "out wherever the TOC already says it well — 2-core-patterns is the only",
+    "track that needs an override, because its generated note is a unit listing",
+    "('Unit 1–2 · 이건 뭐예요?') rather than a can-do.",
+    "",
+    "`en` and `ja` are required. test_plan_courses.py fails if a planned course",
+    "has no entry here, so adding a course to a TOC also means writing its copy.",
+    "",
+    "Titles are not here: compose() already builds a correct triple from the",
+    "track name, the level and the course's bare name, and all three sit inside",
+    "the live catalogue's cover-title budget of ~22 characters."
+  ],
+
+  "courses": {
+    "hangul-starter": {
+      "description": {
+        "en": "From consonants and vowels through final consonants, to reading the signs on a Korean street.",
+        "ja": "子音・母音・パッチムを通って、街の看板が読めるところまで。"
+      }
+    },
+
+    "core-beginner-1": {
+      "description": {
+        "ko": "이름을 주고받고, 눈앞의 사물과 사람을 묻고, 하루 일과와 안 하는 일까지 말한다.",
+        "en": "Exchange names, ask about the things and people in front of you, and describe your day.",
+        "ja": "名前をやりとりし、目の前のものや人をたずね、一日の過ごし方と「しないこと」まで話す。"
+      }
+    },
+    "core-beginner-2": {
+      "description": {
+        "ko": "가격·개수·시간·날짜를 묻고, 무엇이 어디에 있는지 확인하고, 필요한 것을 부탁한다.",
+        "en": "Ask prices, counts, times and dates, find out where something is, and make a request.",
+        "ja": "値段・個数・時間・日付をたずね、何がどこにあるかを確かめ、必要なものを頼む。"
+      }
+    },
+    "core-beginner-3": {
+      "description": {
+        "ko": "문장을 이어 붙이고 비교하며, 지난 일을 언제·왜 그랬는지까지 말한다.",
+        "en": "Join and compare sentences, and talk about what happened — when, and why.",
+        "ja": "文をつなげて比べながら、過ぎたことを「いつ・なぜ」まで話す。"
+      }
+    },
+    "core-beginner-4": {
+      "description": {
+        "ko": "하고 싶은 일과 할 일을 계획하고, 허락과 의무를 다루고, 반말로 바꿔 말한다.",
+        "en": "Plan what you want and have to do, handle permission and obligation, and switch into casual speech.",
+        "ja": "したいことと予定を組み立て、許可と義務を扱い、タメ口に切り替えて話す。"
+      }
+    },
+    "core-upper-beginner-1": {
+      "description": {
+        "ko": "어른께 높임말로 말하고, 명사를 꾸며서 어떤 것인지·언제 것인지 콕 집어 말한다.",
+        "en": "Speak politely to elders, and pin down which thing and from when by modifying nouns.",
+        "ja": "目上の人に敬語で話し、名詞を修飾して「どれか・いつのことか」を言い分ける。"
+      }
+    },
+    "core-upper-beginner-2": {
+      "description": {
+        "ko": "이유와 배경을 깔고 정중하게 권하거나 부탁하고, 단정하지 않고 느낌과 짐작을 말한다.",
+        "en": "Lead with a reason, invite and ask politely, and say how something seems without overclaiming.",
+        "ja": "理由や背景を置いてから丁寧に誘い・頼み、断定を避けて感じたことや推測を伝える。"
+      }
+    },
+    "core-intermediate-1": {
+      "description": {
+        "ko": "겪은 일을 꺼내고 들은 말을 옮기며, 그 일이 언제 어떤 상태에서 있었는지 말한다.",
+        "en": "Bring up what you went through, report what you were told, and place it in time.",
+        "ja": "自分の経験を切り出し、聞いた話を伝え、それがいつ・どんな状態で起きたかを話す。"
+      }
+    },
+    "core-intermediate-2": {
+      "description": {
+        "ko": "이유와 핑계를 대고, 목적과 조건을 걸어 무엇이 있어야 되는지 설명한다.",
+        "en": "Give reasons and excuses, and set out a purpose and the conditions it needs.",
+        "ja": "理由や言い訳を述べ、目的と条件を立てて何が必要かを説明する。"
+      }
+    },
+    "core-intermediate-3": {
+      "description": {
+        "ko": "저절로 그렇게 된 일과 남을 하게 만든 일을 구분해서 말한다.",
+        "en": "Tell apart what happened by itself and what someone was made to do.",
+        "ja": "自然にそうなったことと、人にさせたことを区別して話す。"
+      }
+    },
+    "core-upper-intermediate-1": {
+      "description": {
+        "ko": "근거를 대어 짐작하고, 가상의 상황을 가정하고, 기대와 어긋난 결과를 짚는다.",
+        "en": "Infer from evidence, suppose a situation, and point out when it turns out otherwise.",
+        "ja": "根拠を挙げて推測し、仮の状況を立て、期待とずれた結果を指摘する。"
+      }
+    },
+    "core-upper-intermediate-2": {
+      "description": {
+        "ko": "정도와 한계를 재어 말하고, 후회와 태도를 드러내며 단정을 피한다.",
+        "en": "Measure degree and limits, and let regret and attitude show without overstating.",
+        "ja": "程度と限界を測って話し、後悔や態度をにじませながら断定を避ける。"
+      }
+    },
+    "core-advanced-1": {
+      "description": {
+        "ko": "같은 방향으로 근거를 더 얹고, 과장과 반전으로 말에 힘을 준다.",
+        "en": "Stack reasons in one direction, and add force with exaggeration and reversal.",
+        "ja": "同じ方向に根拠を重ね、誇張と反転で言葉に力を持たせる。"
+      }
+    },
+
+    "ctx-drama-crush-intermediate": {
+      "description": {
+        "en": "Hint at interest, read the other person, confess, and settle what you are — all in casual speech.",
+        "ja": "好意を遠回しに伝え、相手の気持ちを探り、告白し、関係を決める言葉をタメ口で言える。"
+      }
+    },
+    "ctx-drama-makeup-intermediate": {
+      "description": {
+        "en": "Say what hurt, clear up a misunderstanding, apologise, and end things — controlling the temperature throughout.",
+        "ja": "不満を言葉にし、誤解を解き、謝り、関係を終わらせる言葉まで、感情の温度を調節しながら言える。"
+      }
+    },
+    "ctx-drama-family-intermediate": {
+      "description": {
+        "en": "Follow a family's nagging, worry, errands and comfort, and tell apart what elders say to you from what you say to juniors.",
+        "ja": "家族の小言・心配・頼み・慰めを聞き取り、目上から受ける言葉と目下にかける言葉を使い分けられる。"
+      }
+    },
+    "ctx-drama-boundaries-intermediate": {
+      "description": {
+        "en": "Draw a line, refuse firmly, press on who is responsible, and end a relationship without losing your composure.",
+        "ja": "線を引き、きっぱり断り、責任の所在を問い、関係を終える言葉を、感情に飲まれずに言える。"
+      }
+    },
+    "ctx-kpop-talk-beginner": {
+      "description": {
+        "en": "Introduce your bias and their group, say why, sell a song, ask who theirs is, and keep a fan conversation going politely.",
+        "ja": "推しとグループを紹介し、好きな理由を語り、曲をすすめ、相手の推しをたずねながら、敬語でファントークを続けられる。"
+      }
+    },
+    "ctx-kpop-stage-upper-beginner": {
+      "description": {
+        "en": "React to a new song, a stage, the choreography and the visuals in casual speech, compare albums, and sell a track to a friend.",
+        "ja": "新曲・ステージ・振り付け・ビジュアルの感想をタメ口で言い、アルバム同士を比べ、友達に曲をすすめられる。"
+      }
+    },
+    "ctx-kpop-fan-life-intermediate": {
+      "description": {
+        "en": "Handle ticketing, streaming, birthday cafés and goods trades, and take a swap through from first message to handover.",
+        "ja": "チケッティング・ストリーミング・センイルカフェ・グッズ取引など、実際のファン活動に必要な言葉を使い、ファンアカウントで取引のやりとりができる。"
+      }
+    },
+    "ctx-kpop-online-intermediate": {
+      "description": {
+        "en": "Read a timeline or a forum thread, work out what actually happened, and write your own short reactions and replies.",
+        "ja": "Xやコミュニティの投稿を読んで何が起きたのかをつかみ、短い反応やリプライを自分で書ける。"
+      }
+    },
+    "ctx-travel-getting-around-intermediate": {
+      "description": {
+        "en": "Ask the way, use the subway, buses and taxis, and get help when lost — and follow the announcements and the answers you get back.",
+        "ja": "道をたずね、地下鉄・バス・タクシーを使い、迷ったときに助けを求められる。車内放送や通行人の返事も聞き取れる。"
+      }
+    },
+    "ctx-travel-eating-out-upper-beginner": {
+      "description": {
+        "en": "Get a table, ask what is good, order around spice and allergies, raise a problem politely, and settle how to pay.",
+        "ja": "席を取り、おすすめを聞き、辛さやアレルギーを調整して注文し、問題が起きたら丁寧に伝え、会計の仕方を決められる。"
+      }
+    },
+    "ctx-travel-shopping-upper-beginner": {
+      "description": {
+        "en": "Ask about stock and sizes, try things on, check the price, and see payment, wrapping, exchange and refund all the way through.",
+        "ja": "在庫とサイズをたずね、試着し、値段を確かめ、支払い・包装・交換・返金まで一通り片づけられる。"
+      }
+    },
+    "ctx-travel-staying-upper-beginner": {
+      "description": {
+        "en": "Check in, make requests, report a problem, store luggage and extend checkout — and ask for help if you fall ill or something is stolen.",
+        "ja": "チェックイン・お願い・不具合の連絡・荷物預かり・チェックアウト延長をこなし、体調を崩したり盗難に遭ったときに助けを求められる。"
+      }
+    },
+    "ctx-banmal-dropping-formality-upper-beginner": {
+      "_why-a-title-override": [
+        "The TOC theme is '말 놓기 — 존댓말에서 반말로', a name plus its own",
+        "explainer. Composed, that made a 32-character course title. The",
+        "explainer is already the first line of the description, so the title",
+        "keeps only the name. The TOC keeps the long form — that is where it",
+        "reads as documentation rather than as a list entry."
+      ],
+      "title": {
+        "ko": "상황별 한국어 · 말 놓기 · 초중급",
+        "en": "Korean in context · Dropping formality · Upper beginner",
+        "ja": "場面別の韓国語 · タメ口への切り替え · 初中級"
+      },
+      "description": {
+        "en": "Propose dropping formality, settle what to call each other, swap pronouns, greetings and replies as one set, hold the middle ground when it is unclear, and go back up when you need to.",
+        "ja": "「タメ口で話そう」と切り出し、呼び方を決め、人称・あいさつ・返事までまとめて切り替え、微妙な間柄では半分敬語でしのぎ、必要なら敬語に戻せる。"
+      }
+    },
+    "ctx-banmal-chatting-intermediate": {
+      "description": {
+        "en": "Backchannel, react with surprise, pass on what you heard, push back gently, tease and console — and keep the conversation from stalling.",
+        "ja": "友達の話に相づちを打ち、驚き、聞いた話を伝え、やわらかく反論し、からかい、慰めながら、会話を途切れさせずに続けられる。"
+      }
+    },
+
+    "talk-between-two-countries-intermediate": {
+      "description": {
+        "en": "Explain and compare the Korea–Japan differences the two of you are each half an expert in.",
+        "ja": "互いに半分ずつ専門家である日韓の違いを説明し、比べる。"
+      }
+    },
+    "talk-between-two-countries-advanced": {
+      "description": {
+        "en": "Explain and compare the Korea–Japan differences the two of you are each half an expert in.",
+        "ja": "互いに半分ずつ専門家である日韓の違いを説明し、比べる。"
+      }
+    },
+    "talk-me-lately-intermediate": {
+      "description": {
+        "en": "Pull a recent experience out in detail, and keep talking about it.",
+        "ja": "最近の出来事を具体的に取り出して、長く話す。"
+      }
+    },
+    "talk-me-lately-advanced": {
+      "description": {
+        "en": "Pull a recent experience out in detail, and keep talking about it.",
+        "ja": "最近の出来事を具体的に取り出して、長く話す。"
+      }
+    },
+    "talk-things-i-like-intermediate": {
+      "description": {
+        "en": "Explain what you like and why, through experiences specific enough to picture.",
+        "ja": "好きなものとその理由を、具体的な経験で説明する。"
+      }
+    },
+    "talk-things-i-like-advanced": {
+      "description": {
+        "en": "Explain what you like and why, through experiences specific enough to picture.",
+        "ja": "好きなものとその理由を、具体的な経験で説明する。"
+      }
+    },
+    "talk-small-things-intermediate": {
+      "description": {
+        "en": "Unpack the small, funny things that happen to you, in detail.",
+        "ja": "ささいで笑える経験を、具体的にほどいて話す。"
+      }
+    },
+    "talk-small-things-advanced": {
+      "description": {
+        "en": "Unpack the small, funny things that happen to you, in detail.",
+        "ja": "ささいで笑える経験を、具体的にほどいて話す。"
+      }
+    },
+    "talk-people-and-ties-intermediate": {
+      "description": {
+        "en": "Bring up real experiences with people, and the opinions those experiences left you with.",
+        "ja": "実際の人間関係の経験を出し、そこから生まれた考えを説明する。"
+      }
+    },
+    "talk-people-and-ties-advanced": {
+      "description": {
+        "en": "Bring up real experiences with people, and the opinions those experiences left you with.",
+        "ja": "実際の人間関係の経験を出し、そこから生まれた考えを説明する。"
+      }
+    },
+    "talk-love-and-marriage-intermediate": {
+      "description": {
+        "en": "Talk about love and marriage — what you have lived and what you think — dialling the sensitivity as you go.",
+        "ja": "踏み込む深さを調節しながら、恋愛と結婚の経験や考えを話す。"
+      }
+    },
+    "talk-love-and-marriage-advanced": {
+      "description": {
+        "en": "Talk about love and marriage — what you have lived and what you think — dialling the sensitivity as you go.",
+        "ja": "踏み込む深さを調節しながら、恋愛と結婚の経験や考えを話す。"
+      }
+    },
+    "talk-work-and-money-intermediate": {
+      "description": {
+        "en": "Talk about work and money with real numbers and a real scene attached.",
+        "ja": "数字と場面のある仕事とお金の経験を話す。"
+      }
+    },
+    "talk-work-and-money-advanced": {
+      "description": {
+        "en": "Talk about work and money with real numbers and a real scene attached.",
+        "ja": "数字と場面のある仕事とお金の経験を話す。"
+      }
+    },
+    "talk-what-came-before-intermediate": {
+      "description": {
+        "en": "Tell what you already lived through, in order and in detail.",
+        "ja": "すでに経験した記憶を、時間の順とディテールで語る。"
+      }
+    },
+    "talk-what-came-before-advanced": {
+      "description": {
+        "en": "Tell what you already lived through, in order and in detail.",
+        "ja": "すでに経験した記憶を、時間の順とディテールで語る。"
+      }
+    },
+    "talk-what-if-intermediate": {
+      "description": {
+        "en": "Pick fast in a hypothetical, then open out the reason and what would follow.",
+        "ja": "仮の選択を素早く決め、理由と結果を広げて話す。"
+      }
+    },
+    "talk-what-if-advanced": {
+      "description": {
+        "en": "Pick fast in a hypothetical, then open out the reason and what would follow.",
+        "ja": "仮の選択を素早く決め、理由と結果を広げて話す。"
+      }
+    },
+    "talk-worth-thinking-about-intermediate": {
+      "description": {
+        "en": "Argue from evidence you can reach from ordinary life, and weigh the other side too.",
+        "ja": "日常から答えられる根拠で意見を述べ、反対の立場まで検討する。"
+      }
+    },
+    "talk-worth-thinking-about-advanced": {
+      "description": {
+        "en": "Argue from evidence you can reach from ordinary life, and weigh the other side too.",
+        "ja": "日常から答えられる根拠で意見を述べ、反対の立場まで検討する。"
+      }
+    },
+    "talk-balance-games-intermediate": {
+      "description": {
+        "en": "Choose one of two fast, then justify it at length through concrete scenes and shifting conditions.",
+        "ja": "二つのうち一つを素早く選び、具体的な生活の場面と条件の変化で、その理由を長く説明する。"
+      }
+    },
+    "talk-balance-games-advanced": {
+      "description": {
+        "en": "Choose one of two fast, then justify it at length through concrete scenes and shifting conditions.",
+        "ja": "二つのうち一つを素早く選び、具体的な生活の場面と条件の変化で、その理由を長く説明する。"
+      }
+    },
+
+    "pron-beginner": {
+      "description": {
+        "en": "Take only the contrasts a Japanese ear collapses, and repair them starting from listening.",
+        "ja": "日本語の癖で崩れる対立だけを選び、聞き取りから直す。"
+      }
+    }
+  }
+}
