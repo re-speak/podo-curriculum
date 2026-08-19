@@ -310,10 +310,18 @@ catalog with unstyled decks inside it. That is the pin doing its job, not a brea
   (→ `USE_YN`), so the catalog reuses it rather than adding a second one: a course that
   is not live is not advertised, and turning a course on turns its page on with it. The
   999.x test courses stay off the site for the same reason they stay out of the app.
-- **Built from `main`, and only from `main`.** The workflow
-  (`.github/workflows/catalog.yml`) runs on the release merge, so the page and the class
-  never disagree. Merging to `stage` publishes nothing. Pull requests build the site
-  without deploying it, which catches a broken builder before it reaches `main`.
+- **Built from `main`, and only from `main`.** It is the last step of
+  `podo-curriculum-deploy` and runs only when that build deployed prod, so the page and
+  the class never disagree. Merging to `stage` publishes nothing.
+- **It is a Cloud Build step, not a GitHub Action.** This org's Actions are tied to the
+  self-hosted `day1-runner-respeak`, which does not pick up this repository's jobs, and
+  `ubuntu-latest` is rejected by the IP allow list at checkout — the same reason
+  validate and deploy moved to Cloud Build. The step pushes the built site to a
+  `gh-pages` branch and Pages serves that branch, so nothing here needs a runner.
+  **Pages must be pointed at `gh-pages` once, by hand.**
+- **It cannot fail a deploy.** The step is `allowFailure: true`: a broken site build must
+  not turn a release red when no learner is affected. A failure leaves the last good
+  site up.
 - **Decks are copied, never rewritten.** A deck is `index.html` + `deck.css` + its own
   images, all relative, with the shared runtime on the CDN — so copying the directory is
   the whole port, and the viewer frames it in an iframe. What a visitor sees is the file

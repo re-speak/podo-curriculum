@@ -143,3 +143,47 @@ steps:
         python3 tools/apply.py --env "$$DEPLOY_ENV"
 
         done
+
+  # 공개 카탈로그. prod 배포 뒤에만, prod 를 배포했을 때만 돈다 — 페이지가 말하는 것과
+  # 수업이 보여주는 것이 어긋나지 않게.
+  #
+  # GitHub Actions 가 아니라 여기서 도는 이유: 이 조직의 Actions 는 self-hosted
+  # day1-runner-respeak 에 묶여 있고, 그 러너는 이 레포의 잡을 집어가지 않는다(2026-08-19
+  # 확인 — 15분간 runner 배정 없이 queued). ubuntu-latest 로 두면 IP 허용 목록이 체크아웃을
+  # 막는다. 둘 다 안 되는 것을 워크플로 파일로 남겨 두는 것보다, 이미 도는 빌드에 스텝
+  # 하나를 붙이는 편이 낫다. 새 트리거도 러너도 필요 없다.
+  #
+  # gh-pages 브랜치로 밀고 Pages 가 그 브랜치를 서빙한다. Pages 배포 액션(OIDC)을 쓰지
+  # 않으므로 Actions 의존이 완전히 사라진다.
+  #
+  # allowFailure 는 지우지 말 것. 카탈로그는 배포 게이트가 아니다 — 사이트 빌드가 깨졌다고
+  # 교재 배포를 빨갛게 만들면, 학습자에게 아무 영향도 없는 일 때문에 릴리스를 멈추게 된다.
+  # 실패하면 직전 사이트가 그대로 남는다.
+  - id: catalog
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    secretEnv: [CB_SECRET]
+    allowFailure: true
+    args:
+      - -ceu
+      - |
+        case " $$(echo "$_DEPLOY_ENV" | tr ',' ' ') " in
+          *" prod "*) ;;
+          *) echo "prod 배포가 아니다 — 카탈로그를 건너뛴다"; exit 0 ;;
+        esac
+
+        pip install --break-system-packages --quiet -r tools/requirements.txt
+        python3 tools/build-catalog.py --out /workspace/site
+        touch /workspace/site/.nojekyll
+
+        GH_TOKEN="$$(printf '%s' "$$CB_SECRET" | python3 -c 'import sys,json;print(json.load(sys.stdin)["GITHUB_PAT"])')"
+        cd /workspace/site
+        git init -q
+        git config user.name  "podo-curriculum"
+        git config user.email "podo-curriculum@users.noreply.github.com"
+        git add -A
+        git commit -q -m "catalog: $COMMIT_SHA"
+        # 히스토리를 쌓지 않는다. 이 브랜치는 생성물이라 diff 를 볼 이유가 없고,
+        # 매번 사이트 전체를 커밋하면 레포가 계속 커진다.
+        git push -q --force           "https://x-access-token:$$GH_TOKEN@github.com/re-speak/podo-curriculum.git"           HEAD:gh-pages
+        echo "카탈로그를 gh-pages 로 올렸다"
