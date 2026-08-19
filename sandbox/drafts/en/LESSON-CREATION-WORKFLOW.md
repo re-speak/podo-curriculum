@@ -130,6 +130,20 @@ re-review; do not use it as a template.
 
 For a batch, one orchestrator owns the shared truth and lesson writers own disjoint deck files.
 
+Generation and proofreading are one uninterrupted production step. As soon as a batch is
+generated, run the complete proofreading workflow, static checker, exact-generation tests and
+rendered QA on those exact bytes. Do not give the owner review links or start the next batch until
+all four pass. If proofreading changes content data or a generator, regenerate first and repeat the
+proofreading and gates; never patch generated HTML to make a review pass.
+
+For generated Core lessons, the content data must explicitly own every judgment a template cannot
+make: each pattern's meaning/use sentence, the exact smallest-unit choice and distractor, the visual
+formation diagram, and the adjacent-use native tip. A generic fallback may not replace any of these
+with a goal repeated twice, a prose rule plus examples, omitted choice practice, or a list of extra
+vocabulary. If one of these authored fields is missing, generation fails; it does not emit a
+“provisional” pedagogical page. Exact-generation tests prove ownership and reproducibility only—
+they never count as proofreading.
+
 The **orchestrator alone** may change:
 
 - TOCs, parsers, blueprints and generated briefs
@@ -195,7 +209,9 @@ writers copy. Korean spent 348 reorder sentences at the wrong chip count for exa
   on its exact Japanese meaning. Controlled fills use one Japanese `.target.ending` per blank;
   word-level choice uses one Japanese highlight per independent decision. Reorder and whole-sentence
   translation prompts stay neutral. Highlight presence somewhere on a page is not enough—check each
-  row and each decision.
+  row and each decision. Put every choice at the smallest meaningful unit with `.word-choice`.
+  A reviewed exception whose alternatives genuinely differ across the whole sentence must declare
+  `data-choice-scope="whole-sentence"`; otherwise the checker rejects it.
 - Every Contextual interaction must be runnable by an English-speaking tutor who does not read
   Japanese. `Understand` meaning options expose a concise English sense label alongside Japanese
   support, and the English tutor note states the read order when it is not visible. Never use
@@ -347,6 +363,13 @@ allowed only when the sentence honestly holds three. The trap is not the count �
 criteria on one page**. The pilot shipped 3/4/3/4 because `please` had been tacked onto two rows,
 which is padding two sentences rather than analysing four the same way.
 
+Every chip must help the learner recover meaning or construction. Punctuation alone (`?`), an
+article alone (`a`, `the`), and a split suffix (`-er`) are hard errors, not ways to reach a
+preferred chip count. A preposition may stand alone when choosing its position is the actual
+learning operation—`I | start work | at | nine` is useful because the learner is retrieving
+`at + exact time`. Otherwise keep the preposition with its phrase. If a short frame has no honest
+three-unit build, omit its reorder page and use another activity.
+
 Write the page's criterion into an HTML comment above it, then check every row against that one
 sentence. If a row needs a different criterion to reach its count, the count is wrong.
 
@@ -372,7 +395,8 @@ Interactive checks at both **480px and 360px**:
 For a course batch, open one Orca browser tab in this worktree and run
 `python3 tools/authoring/en/audit_rendered_decks.py --page <browserPageId> <batch-path>`.
 The probe activates every otherwise-hidden page, reads the shared pager tokens, and fails on
-horizontal overflow or missing tail clearance at both supported widths.
+horizontal overflow, missing tail clearance or collapsed vertical gaps between repeated model
+rows, dialogue turns and wrapped phrase inputs at both supported widths.
 
 Use representative screenshots across the course, plus every new or unusually dense page. A pass
 means more than "it scrolls": the learner must understand what to do before the activity disappears

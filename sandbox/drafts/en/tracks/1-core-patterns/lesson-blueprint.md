@@ -179,7 +179,9 @@ below were paid for again by this track's own pilot, because they were not writt
   show the sentence once and put an independent two-way `.word-choice` group at each target. Do
   not repeat two full-sentence pills and make the learner reread identical surrounding language.
   Full-sentence options are for alternatives whose meaning or structure genuinely differs across
-  the whole sentence. Several word groups still form one choose activity, not several activities.
+  the whole sentence; mark that reviewed exception with `data-choice-scope="whole-sentence"`.
+  The checker rejects an unmarked full-sentence choice. Several word groups still form one choose
+  activity, not several activities.
 - **Mark the Japanese cue for every word-level choice.** In a `.word-choice-card`, wrap the exact
   Japanese word or short phrase corresponding to each English choice group in `.ending`. Two
   English choice groups require two Japanese cues. Keep both English options neutral until the

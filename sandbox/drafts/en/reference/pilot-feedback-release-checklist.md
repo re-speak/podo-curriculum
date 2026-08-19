@@ -26,7 +26,9 @@ experience.
 - Use the exact TOC/brief title. A convenient short label is not a new title.
 - Validate both 480 px and 360 px, with 480 px as the classroom release viewport. English strings
   are longer: inputs must wrap or grow vertically, labels must remain readable, and nothing may
-  clip or escape its card.
+  clip or escape its card. Measure every inline input component (`slot-input` and `phrase-input`),
+  including fields on consecutive wrapped rows; checking only one visually similar class is not a
+  batch-level spacing audit.
 - Interactive controls exist in source HTML. JavaScript binds behavior; it does not manufacture the
   input, textarea, choice, or build zone that static Lemonboard validation expects.
 
