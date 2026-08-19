@@ -1,7 +1,7 @@
 # English Curriculum — Current Build Plan
 
-**Status:** native catalog and FT-1 pair approved · ten representative candidate decks authored and
-audited · wider Core and Contextual batches await owner review
+**Status:** native catalog and all thirteen active representative pilots approved · Core,
+Contextual and paired Freetalking course batches authorized on 2026-08-19
 
 **Current as of:** 2026-08-19
 
@@ -240,13 +240,15 @@ the approval of unchanged stable-id snapshots.
    correctness and rendered behavior at 480px and 360px.
 3. **Complete:** repaired repeated failures in the shared workflow, retrospective checklist and
    deck checker rather than leaving lesson-local exceptions.
-4. Stop for explicit approval before any wider Core batch.
-5. **Candidate ready for review:** the replacement low-intermediate Travel pilot, CTX-1 check-in
-   and seat request, demonstrates the task-first opening and standalone transfer. It has passed the
-   same static and rendered audit; do not reuse the superseded CTX-1 deck as a canonical source.
+4. **Complete 2026-08-19:** owner approved the three Core representatives and opened the wider
+   Core course-batch gate.
+5. **Complete 2026-08-19:** owner approved replacement low-intermediate Travel CTX-1 as the
+   canonical Contextual shell. It demonstrates the task-first opening and standalone transfer; do
+   not reuse the superseded CTX-1 deck as a canonical source.
 6. **Complete:** FT-1 accessible and full were explicitly approved on 2026-08-18 and are canonical
    for their respective language loads. FT-7, FT-9 and FT-49 now provide three additional audited
-   full/accessible pairs for owner review before wider topic batches.
+   full/accessible pairs; the owner approved the full representative set on 2026-08-19 and opened
+   the wider paired-topic batch gate.
 7. Only after the representative set exists, build the one-way authored-HTML proofreading packet
    projection. One Core pilot is not enough evidence for a universal packet schema.
 
@@ -281,12 +283,11 @@ Within the approved curriculum scope:
 
 ## Immediate next action
 
-The catalog gate is open, both Freetalking canonical decks are approved, and the ten-deck
-representative set is authored and internally audited. The next action is owner review of Core
-32/45/82, replacement CTX Travel 1, and the FT-7/9/49 pairs. If they pass, begin course-sized Core
-and Contextual batches and paired Freetalking topic batches from the approved shells, applying the
-pilot-feedback release checklist to every deck. Do not treat catalog or deck approval as
-learner-pilot evidence.
+The first approved-shell course batches are authored: Core 12–24, Contextual Travel 1–6, and the
+paired accessible/full Freetalking course 1–8. Their generators, generated-source equality tests,
+full-corpus static checks and rendered spot checks form one review unit. The immediate next action
+is owner review of these course batches, followed by the next disjoint course cuts if they pass.
+Do not treat catalog or deck approval as learner-pilot evidence.
 
 ---
 
@@ -297,8 +298,8 @@ English is ready for scaled production only when all of the following are true:
 - the approved native catalog snapshot is current, with any later changed rows re-reviewed;
 - the Core evidence/corpus audits have no untriaged high-risk rows;
 - grammar and expression support remains complete and aligned on the accepted spine;
-- the three representative Core lessons and the replacement Contextual pilot are explicitly
-  approved; both Freetalking canonical decks already are;
+- the representative Core lessons, replacement Contextual pilot and paired Freetalking examples
+  remain the explicit approved golden set;
 - course and product identity decisions are fixed and manifests validate;
 - the external sync path passes end to end.
 
