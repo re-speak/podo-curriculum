@@ -1,3 +1,8 @@
+/* The public catalog's chrome. Shared design with the authoring catalogs under
+   sandbox/drafts/<code>/catalog.html, so the two read as one product — a change
+   here should usually be made there too.
+   Filled by tools/build-catalog.py; the generated site/ is gitignored. */
+
 :root {
   --site-ink: #171916;
   --site-muted: #656a63;

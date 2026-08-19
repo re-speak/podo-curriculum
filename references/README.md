@@ -5,23 +5,24 @@ and never packaged.
 
 Curriculum-under-review does **not** belong here. TOCs, generated briefs,
 blueprints, course manifests and lesson HTML stay together under
-`sandbox/authoring/<language>/` until an explicit promotion puts a verified
+`sandbox/drafts/<code>/` until an explicit promotion puts a verified
 course in `courses/<language>/`.
 
 | Path | What it is |
 |---|---|
 | `kr/curricula/` | Derived pattern maps, clean text and page wireframes from the Korean textbooks studied |
 | `kr/reports/` | Captures of other services' learner reports used as product-design evidence |
-| `en/reference/` | English teaching philosophy, source hierarchy, grammar coverage and Japanese-L1 evidence |
 
 The language code is the subject being taught, not the market. Japan-market
 English material is `en` here and uses `countryCode: JP` when promoted as a
 course.
 
-These directories are mirrored from `podo-curriculum-public/{korean,english}` by
-`tools/sync-from-authoring.py`. Edit the upstream source and re-sync; the mirror
-is replaced wholesale.
+What the authoring toolchain *generates* is not durable source and does not live
+here — grammar maps, running lexicons and evidence ledgers are rebuilt from the
+decks, so they sit with the drafts under `sandbox/drafts/<code>/reference/`.
 
-Licensed textbook PDFs and `dekiru-kankokugo/page-images/` stay upstream. They
-are large, private source material and nothing in the build reads them; only the
-derived markdown and wireframe images are mirrored here.
+Licensed textbook PDFs and `dekiru-kankokugo/page-images/` are not in this
+repository at all. They are 726MB of private source material, one file past
+GitHub's 100MB ceiling, and nothing in the build reads them; they stay in the
+archived `podo-curriculum-public`. Only the derived markdown and wireframe images
+came across.

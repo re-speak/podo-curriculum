@@ -13,11 +13,19 @@ courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html
 
 ## Current status
 
-**All four environments deploy from this repo.** Merging to `stage` applies to
-stage, qa and dev; merging `stage → main` applies to prod. Neither has a button —
-see [How a change reaches a learner](#how-a-change-reaches-a-learner). The grape
-sync endpoint the whole thing rests on is specified in
+**All four environments deploy from this repo, and the curriculum is written in
+it.** Merging to `stage` applies to stage, qa and dev; merging `stage → main`
+applies to prod. Neither has a button — see
+[How a change reaches a learner](#how-a-change-reaches-a-learner). The grape sync
+endpoint the whole thing rests on is specified in
 [`docs/sync-contract.md`](docs/sync-contract.md).
+
+Authoring moved here on 2026-08-19. `podo-curriculum-public` was the upstream for
+`shared/`, the drafts and the references; it is now a frozen archive that exists
+only to hold the licensed textbook scans, which are too large and too private to
+live in a public repository. Nothing syncs from it, and the tool that used to has
+been deleted rather than deprecated — see
+[Writing a lesson](#writing-a-lesson).
 
 ## Layout
 
@@ -25,11 +33,13 @@ sync endpoint the whole thing rests on is specified in
 |---|---|
 | `curriculum.yaml` | languages, environments, repo-wide constants |
 | `courses/<lang>/<course>/` | **deployable.** `course.yaml` + `lessons/<NN-slug>/` |
-| `shared/` | the deck runtime — `lesson-card.css` + `trial.css`, thirteen activity/chrome scripts, and the design contract. **Served to decks from a CDN, not copied into them** |
+| `shared/` | the deck runtime — `lesson-card.css` + `trial.css`, thirteen activity/chrome scripts, and the design contract. **The source, and served to decks from a CDN rather than copied into them** |
 | `schemas/` | JSON Schema for the three document kinds |
-| `tools/` | build · validate · plan · apply, the shared-runtime pair (`publish-shared` · `repoint-shared`), plus the two sync tools below |
-| `sandbox/` | experiments. Committed, reviewable, and structurally undeployable |
-| `references/` | table-of-contents plans, textbook pattern maps, research |
+| `tools/` | build · validate · plan · apply, the shared-runtime pair (`publish-shared` · `repoint-shared`), and `promote.py` |
+| `tools/authoring/{kr,en}/` | the authoring toolchain — deck checkers, lesson scaffolding, course planning, brief and catalog builders |
+| `sandbox/drafts/` | **where lessons are written.** The complete curriculum under authoring, committed, reviewable, and structurally undeployable |
+| `sandbox/archive/` | experiments and retired material |
+| `references/` | durable source material: textbook pattern maps and research |
 | `docs/` | the sync contract |
 
 ### `sandbox/` is not a convention
@@ -121,25 +131,17 @@ python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/l
 python3 tools/build-catalog.py                 # the public catalog → site/
 python3 -m http.server -d site 8000            # …look at it
 
-python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/authoring/, references/
-python3 tools/sync-from-authoring.py --language english   # …or just the one language
-python3 tools/import-trial-decks.py            # promote the reviewed Korean trial lessons
-python3 tools/import-report-deck.py            # promote the reviewed sandbox report deck
+python3 tools/promote.py --check               # what promotion would change
+python3 tools/promote.py                       # promote every reviewed draft
+
+python3 tools/authoring/kr/check_structure.py  # the Korean deck checkers
+python3 tools/authoring/en/check_deck.py --all # …and the English one
 ```
 
-The sync finds the authoring repository next door; pass its root (or one language
-directory) with `--upstream PATH`, or set `$PODO_AUTHORING_ROOT` if it sits
-somewhere else. It mirrors every language it finds unless `--language` narrows
-it, and never infers one from a path — pointing `--upstream` at `korean/` while
-asking for `english` is an error, not a substitution. Promotion tools read the
-reviewed sandbox mirror, never the external authoring tree. None is called by CI.
-
-`import-report-deck.py` reads no authoring tree — its source is this repo's own
-`sandbox/`, which `tools/model.py` refuses to walk. Re-run it after editing
-the report upstream, syncing, and reviewing
-`sandbox/authoring/kr/trial/reports/trial-1-report.html`; it rewrites
-`courses/kr/report-test/lessons/` from scratch and re-audits every
-`data-sync-id` on the way through.
+Promotion reads `sandbox/drafts/`, which `tools/model.py` refuses to walk, and
+writes `courses/`. It is never called by CI — putting a lesson in front of a
+learner is a decision someone makes, and the diff it produces is how that
+decision gets reviewed.
 
 Decks are visual documents. Render them in a browser at 480px and look before
 claiming a change works.
@@ -165,9 +167,7 @@ the failure surface in production.
 
 ## The shared runtime
 
-`podo-curriculum-public/runtime/{css,js}` is the authoring source of truth.
-`shared/{css,js}` is this repository's release snapshot, mirrored from that source
-with `sync-from-authoring.py --runtime-only`; do not edit it independently. Decks
+`shared/{css,js}` is the runtime, and this repository is where it is edited. Decks
 reference an immutable tag on the public mirror
 [`re-speak/podo-curriculum-shared`](https://github.com/re-speak/podo-curriculum-shared),
 declared once in `curriculum.yaml` under `spec.sharedRuntime`. One version for the
@@ -179,11 +179,7 @@ one copy of `trial.css` across a whole course instead of re-fetching it per less
 ### Changing it
 
 ```sh
-export PODO_AUTHORING_ROOT=/path/to/podo-curriculum-public
-vim "$PODO_AUTHORING_ROOT/runtime/js/activities.js"
-python3 tools/sync-from-authoring.py --upstream "$PODO_AUTHORING_ROOT" --runtime-only
-diff -qr "$PODO_AUTHORING_ROOT/runtime/js" shared/js
-diff -qr "$PODO_AUTHORING_ROOT/runtime/css" shared/css
+vim shared/js/activities.js
 vim curriculum.yaml                      # bump spec.sharedRuntime.version
 python3 tools/publish-shared.py          # cut the tag, push it, verify it serves
 python3 tools/repoint-shared.py          # stamp every deck with the new version
@@ -299,16 +295,14 @@ look fine either way, so the failure reads as "the deck viewer is broken".
 tag and the pages pull Pretendard from the same CDN, so offline you get a working
 catalog with unstyled decks inside it. That is the pin doing its job, not a break.
 
-- **The design is not this repo's.** The chrome, the gateway and the course page are
-  vendored from `podo-curriculum-public` — whose Pages site is already the front door
-  for the curriculum — so the two read as one product: `tools/catalog/site.css` ←
-  `site.css`, `tools/catalog/gateway.html` ← `korean/tools/gateway_template.html`,
-  `tools/catalog/course.html` ← `korean/tools/track_template.html`. Each vendored file
-  names its origin and its edits in a header. **Don't restyle them here** — change them
-  upstream, re-vendor, re-apply the edits.
-- **Upstream's data is not this repo's either.** Its catalog is built from
-  `tracks/*/table-of-contents.md` and describes the whole authored curriculum (5 tracks,
-  490 lessons); this repo holds what deploys. So the templates are filled from
+- **The design is shared with the authoring catalog.** `tools/authoring/{kr,en}/`
+  build a catalog of everything being written; this builds one of what deploys. They
+  use the same chrome so the two read as one product — `tools/catalog/site.css`,
+  `gateway.html` and `course.html` are the deployed side of that pair, and a change to
+  either should usually be made to both.
+- **The two are filled from different data.** The authoring catalog is built from
+  `tracks/*/table-of-contents.md` and describes the whole curriculum under authoring
+  (5 tracks, 494 lessons); this one holds what deploys, so its templates are filled from
   `model.discover()`, with one structural difference: a *track* there is a *course* here,
   and a course has no units — `solo` collapses the unit shell so the lesson list starts
   where the unit list would have.
@@ -332,40 +326,58 @@ catalog with unstyled decks inside it. That is the pin doing its job, not a brea
 The generated site is gitignored. There is no committed copy to fall out of date —
 the only way to change what the page says is to change `courses/`.
 
-## Where the content comes from
+## Writing a lesson
 
-`podo-curriculum-public` is the authoring repository and the upstream for
-`shared/`, `sandbox/authoring/` and `references/`. Its root `runtime/` is shared
-by the language folders. The complete curriculum-under-review is mirrored into
-the sandbox; verified courses are promoted explicitly because grape needs each
-deck packaged into a self-contained upload:
+Lessons are written **here**, under `sandbox/drafts/<code>/`, and promoted into
+`courses/` when they are ready. There is no upstream repository any more:
+`podo-curriculum-public` was the authoring repo until 2026-08-19 and is now a
+frozen archive holding only the licensed textbook scans.
 
-| upstream | here | what changes |
-|---|---|---|
-| `runtime/{css,js}` | `shared/{css,js}` | nothing — straight mirror, and shared by every language |
-| `<lang>/tracks/` | `sandbox/authoring/<code>/tracks/` | complete review tree; HTML runtime refs repointed at `shared/` |
-| `korean/{trial,interactive}/` | `sandbox/authoring/kr/` | namespaced review copy; HTML runtime refs repointed at `shared/` |
-| `korean/references/`, `english/reference/` | `references/<code>/` | licensed scans dropped (see below) |
-| reviewed Korean trial lessons | `courses/kr/hangul-trial-test/` | explicit promotion: refs flattened and the mirrored runtime bundled; static controls pass through unchanged |
+```
+sandbox/drafts/kr/tracks/…/lessons/<NN-slug>/lesson.html   ← write here
+        │
+        │   tools/authoring/kr/check_*.py                  ← check it
+        │   sandbox/drafts/kr/trial/promotion.yaml         ← name it
+        ▼
+courses/kr/<course>/lessons/<NN-slug>/{lecture,prestudy}/  ← promote.py writes this
+```
 
-Upstream keeps one directory per subject language — `korean/`, `english/` — and
-every destination carries its code: `kr`, `en`, the same codes as
-`courses/<code>/`. `sync-from-authoring.py` mirrors every language present by
-default; `--language english` narrows it to one. `--skip-runtime` refreshes
-content while deliberately leaving the already-synced `shared/` snapshot alone.
+| directory | what it is |
+|---|---|
+| `sandbox/drafts/<code>/tracks/` | the curriculum under authoring — 480 Korean lessons, 14 English |
+| `sandbox/drafts/kr/trial/` | trial decks and their assets |
+| `sandbox/drafts/<code>/reference/` | what the toolchain generates: grammar maps, lexicons, ledgers |
+| `tools/authoring/<code>/` | the checkers, scaffolders and builders for that language |
+| `references/kr/` | durable source material — textbook pattern maps, research |
 
-Input controls are static at the authoring source. lemonboard's validator parses
-without running scripts, so `podo-curriculum-public` writes the real `<input>`,
-`<textarea>` and `.build-zone` elements and its canonical `activities.js` only
-binds behavior to them. Sync, sandbox review, promotion and CDN publication all
-preserve that same markup and runtime without a repository-local fork.
+`<code>` is the subject taught (`kr`, `en`), matching `courses/<code>/`. The
+country is the market and lives in `course.yaml`.
 
-Re-syncing replaces `sandbox/authoring/<code>/` and the mirrored reference
-material wholesale, so **edit them upstream**, not here. `courses/`, `tools/`,
-`schemas/`, `docs/`, `shared/assets/` and `sandbox/archive/` are this repo's own.
+**Why drafts and courses are separate trees.** `tools/model.py` discovers courses
+by walking `courses/` and nothing else, so a half-written lesson cannot reach a
+learner by being renamed or copied into the wrong place. Promotion is the moment
+that changes, and it is a diff someone reviews.
+
+**Why promotion is a transform and not a move.** grape flattens each deck into one
+GCS prefix, so a promoted deck cannot keep `../../shared/js/x.js` — `promote.py`
+flattens the refs, bundles every sheet, script and image beside the deck, and
+audits every `data-sync-id` against lemonboard's own kind resolution on the way
+through. See [`tools/promote.py`](tools/promote.py).
+
+**Input controls are static in the authoring HTML.** lemonboard's validator parses
+without running scripts, so the real `<input>`, `<textarea>` and `.build-zone`
+elements have to be in the file on disk; `activities.js` only binds behaviour to
+them. Drafting, review, promotion and CDN publication all preserve that markup —
+a control that only exists after JavaScript runs is invisible to the validator and
+desyncs silently in class.
+
+**Retiring content.** `apply.py` is a pure upsert with no delete path, so removing
+a course from `courses/` does not retire it — the rows stay live in grape pointing
+at content nobody updates. Set `enabled: false`, let that deploy, and only then
+delete the directory. Both `promote.py` and `validate.py` layer 6 enforce this.
 
 ## What is deliberately not here
 
 - **The PDF pipeline.** Page images, `podo-pdf-tool`, `BOOK_FILE_ID`, audio via `TB_COM_FILE`. Grape still owns all of it for legacy courses. This repo is HTML 교재 only.
-- **Textbook scans.** 41 licensed PDFs and `dekiru-kankokugo/page-images/` — 726MB of the 1.0GB in `korean/references/curricula` — stay in `podo-curriculum-public`. Only derived markdown and the wireframe PNGs moved.
-- **Deployable English courses.** The full English authoring tree is reviewable under `sandbox/authoring/en/`, but nothing ships from it yet. Promotion will put verified courses in `courses/en/` with `countryCode: JP` — the code is the subject taught, the country is the market.
+- **Textbook scans.** 41 licensed PDFs and `dekiru-kankokugo/page-images/` — 726MB, one file of them past GitHub's 100MB ceiling — stay in the archived `podo-curriculum-public`. Nothing in the build reads them; only derived markdown and the wireframe PNGs came across. That archive is the one reason the old repository still exists.
+- **Deployable English courses.** The English tree is authored under `sandbox/drafts/en/`, but nothing ships from it yet. Promotion will put verified courses in `courses/en/` with `countryCode: JP` — the code is the subject taught, the country is the market.

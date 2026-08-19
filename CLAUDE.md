@@ -37,6 +37,31 @@ git push -u origin feat/my-lesson && gh pr create --base stage
   whatever has been merged but not yet released, so you would be writing against
   content the next release replaces — and you would skip stage entirely.
 
+## Where lessons are written
+
+Lessons are written **in this repository**, under `sandbox/drafts/<code>/`, and
+promoted into `courses/` when they are ready. `podo-curriculum-public` was the
+authoring repo until 2026-08-19; it is now a frozen archive holding only the
+licensed textbook scans, and nothing syncs from it.
+
+```sh
+vim sandbox/drafts/kr/tracks/…/lessons/<NN-slug>/lesson.html   # write
+python3 tools/authoring/kr/check_structure.py                  # check
+python3 tools/promote.py --check                               # see what would ship
+python3 tools/promote.py                                       # write courses/
+python3 tools/repoint-shared.py && python3 tools/validate.py    # pin + gate
+```
+
+- **`tools/authoring/{kr,en}/`** holds the checkers, the lesson scaffolder
+  (`new_lesson.py`), course planning and the brief/catalog builders. Run them
+  against the drafts, not `courses/`.
+- **Promotion is named in a manifest**, `promotion.yaml`, sitting beside the
+  drafts. Adding a lesson to a course means adding a row there — that row is the
+  reviewable part.
+- **Never edit `courses/` by hand.** `promote.py` owns every `lessons/` directory
+  it writes and clears it on each run, so a hand edit is lost on the next
+  promotion without anything reporting it.
+
 ## Before touching a deck
 
 **Read [`shared/ux-philosophy.md`](shared/ux-philosophy.md) — every time, including
@@ -196,6 +221,13 @@ the controls written straight into the HTML.
 - **There is no state lock.** Identity lives in the DB's natural key, so nothing is written back to git.
 - **Both deck slots are mandatory.** A lesson with only 수업용 fails class creation at `/rooms/null/duplicate`.
 - **`sandbox/` cannot deploy** — `tools/model.py` only walks `courses/`. Put speculative work there; promoting it is the move into `courses/`.
+- **Deleting a course does not retire it.** `apply.py` is a pure upsert with no
+  delete path — it never reads back from grape and never removes a row. A course
+  deleted from `courses/` keeps `USE_YN='Y'`, keeps pointing at content nobody
+  updates, and the learner keeps seeing it while the deploy goes green. Set
+  `enabled: false`, let that deploy, *then* delete the directory. `promote.py`
+  stops and offers to write the flag for you; `validate.py` layer 6 fails the PR
+  if you go around it.
 - **Run `python3 tools/validate.py` before pushing.** It catches the things that otherwise 404 from GCS while the build prints success.
 
 ## Not in scope

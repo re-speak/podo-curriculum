@@ -4,6 +4,12 @@
 # visitor reads is what a learner in a live class is looking at. A merge to
 # stage changes nothing here; the release PR publishes both at once.
 #
+# Runs on day1-runner-respeak, like every other re-speak repository: the org's IP
+# allow list rejects GitHub-hosted runners at checkout, so ubuntu-latest here would
+# fail before it read a single file. (That was the point of "Run CI on the org
+# runner, like every other re-speak repo" — this workflow was written afterwards and
+# reintroduced ubuntu-latest.)
+#
 # This is not a deploy gate. `podo-curriculum-deploy-prod` (Cloud Build) is what
 # puts 교재 in front of learners and it does not wait for this job; if the catalog
 # build fails, the class is unaffected and the site simply keeps the last good
@@ -45,7 +51,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: day1-runner-respeak
     steps:
       - uses: actions/checkout@v4
 
@@ -74,7 +80,7 @@ jobs:
   deploy:
     if: github.event_name != 'pull_request'
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: day1-runner-respeak
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -10,11 +10,11 @@ taught has, today, no way in that does not involve cloning a repo or booking a
 class. This turns the same files into a page.
 
 **The design is not this repo's.** The chrome, the gateway and the course page are
-vendored from `podo-curriculum-public` — the authoring repo whose GitHub Pages site
+shared with the authoring catalogs under tools/authoring/, whose Pages site
 is already the front door for the curriculum — so the two read as one product
 rather than as two teams' idea of a catalog:
 
-    tools/catalog/site.css     ← podo-curriculum-public/site.css
+    tools/catalog/site.css     ← shared design with the authoring catalog
     tools/catalog/gateway.html ← korean/tools/gateway_template.html
     tools/catalog/course.html  ← korean/tools/track_template.html
 
