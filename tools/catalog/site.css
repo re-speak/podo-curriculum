@@ -1,0 +1,99 @@
+:root {
+  --site-ink: #171916;
+  --site-muted: #656a63;
+  --site-line: #e1e4df;
+  --site-soft: #f5f6f3;
+  --site-lime: #b5fd4c;
+  --site-focus: #285bb8;
+}
+
+.podo-skip {
+  position: fixed;
+  z-index: 1000;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--site-ink);
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+  transform: translateY(-150%);
+}
+
+.podo-skip:focus { transform: translateY(0); }
+
+.podo-bar {
+  border-bottom: 1px solid var(--site-line);
+  color: var(--site-ink);
+  background: rgba(255, 255, 255, .96);
+}
+
+.podo-bar__inner {
+  width: min(1120px, calc(100% - 40px));
+  min-height: 64px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.podo-brand {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.podo-brand img {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+
+.podo-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.podo-nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 6px;
+  color: var(--site-muted);
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.podo-nav a:hover { color: var(--site-ink); background: var(--site-soft); }
+.podo-nav a[aria-current="page"] { color: var(--site-ink); background: var(--site-soft); }
+
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 3px solid var(--site-focus);
+  outline-offset: 3px;
+}
+
+:where(a, button) { touch-action: manipulation; }
+
+@media (max-width: 640px) {
+  .podo-bar__inner { width: min(100% - 28px, 600px); min-height: 58px; gap: 12px; }
+  .podo-nav { gap: 0; }
+  .podo-nav a { padding: 0 8px; font-size: 12px; }
+  .podo-nav .podo-nav__optional { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .podo-skip { transition: none; }
+}

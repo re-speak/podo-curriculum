@@ -118,6 +118,9 @@ python3 tools/plan.py --env stage              # what apply would do
 python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/lecture/index.html \
         --out /tmp/deck                        # one deck, to inspect the zip
 
+python3 tools/build-catalog.py                 # the public catalog → site/
+python3 -m http.server -d site 8000            # …look at it
+
 python3 tools/sync-from-authoring.py           # refresh shared/, sandbox/authoring/, references/
 python3 tools/sync-from-authoring.py --language english   # …or just the one language
 python3 tools/import-trial-decks.py            # promote the reviewed Korean trial lessons
@@ -273,6 +276,61 @@ ships, not the tag itself.
 
 Content updates are a GCS overwrite at the same key; the lemonboard room is
 created once and survives them. That is what makes a re-deploy safe.
+
+## The public catalog
+
+[**re-speak.github.io/podo-curriculum**](https://re-speak.github.io/podo-curriculum) is
+the same content with a front door: every live course, every lesson in it, and every
+deck opened exactly as the room opens it. It exists so somebody who wants to know what
+we teach — inside the company or outside it — does not have to clone a repo or book a
+class to find out.
+
+```sh
+pip install -r tools/requirements.txt          # pyyaml is the only thing the builder needs
+python3 tools/build-catalog.py                 # → site/
+python3 -m http.server -d site 8000            # → http://localhost:8000
+```
+
+Serve it rather than opening `site/index.html` — over `file://` Chrome gives every
+file its own opaque origin, and the viewer's iframe is blocked. The catalog pages
+look fine either way, so the failure reads as "the deck viewer is broken".
+
+**The decks need the network to render.** They pin the shared runtime to a jsDelivr
+tag and the pages pull Pretendard from the same CDN, so offline you get a working
+catalog with unstyled decks inside it. That is the pin doing its job, not a break.
+
+- **The design is not this repo's.** The chrome, the gateway and the course page are
+  vendored from `podo-curriculum-public` — whose Pages site is already the front door
+  for the curriculum — so the two read as one product: `tools/catalog/site.css` ←
+  `site.css`, `tools/catalog/gateway.html` ← `korean/tools/gateway_template.html`,
+  `tools/catalog/course.html` ← `korean/tools/track_template.html`. Each vendored file
+  names its origin and its edits in a header. **Don't restyle them here** — change them
+  upstream, re-vendor, re-apply the edits.
+- **Upstream's data is not this repo's either.** Its catalog is built from
+  `tracks/*/table-of-contents.md` and describes the whole authored curriculum (5 tracks,
+  490 lessons); this repo holds what deploys. So the templates are filled from
+  `model.discover()`, with one structural difference: a *track* there is a *course* here,
+  and a course has no units — `solo` collapses the unit shell so the lesson list starts
+  where the unit list would have.
+- **`enabled: true` is the switch.** The flag already means "a learner can reach this"
+  (→ `USE_YN`), so the catalog reuses it rather than adding a second one: a course that
+  is not live is not advertised, and turning a course on turns its page on with it. The
+  999.x test courses stay off the site for the same reason they stay out of the app.
+- **Built from `main`, and only from `main`.** The workflow
+  (`.github/workflows/catalog.yml`) runs on the release merge, so the page and the class
+  never disagree. Merging to `stage` publishes nothing. Pull requests build the site
+  without deploying it, which catches a broken builder before it reaches `main`.
+- **Decks are copied, never rewritten.** A deck is `index.html` + `deck.css` + its own
+  images, all relative, with the shared runtime on the CDN — so copying the directory is
+  the whole port, and the viewer frames it in an iframe. What a visitor sees is the file
+  the room loads, byte for byte.
+- **It cannot break a class.** `build-catalog.py` reads the repo through
+  `tools/model.py` and writes only to `--out`; nothing in the deploy path imports it.
+  A failed catalog build leaves the last good site up and the 교재 untouched.
+- **`catalog.json`** ships beside the pages for anything that wants the index as data.
+
+The generated site is gitignored. There is no committed copy to fall out of date —
+the only way to change what the page says is to change `courses/`.
 
 ## Where the content comes from
 

@@ -12,3 +12,7 @@ __pycache__/
 # 업스트림(podo-curriculum-public)이 원본이고 이 레포는 courses/ 만 배포하므로
 # 추적하지 않는다 — 여기 있는 이유는 promote 전에 눈으로 보기 위해서다.
 /sandbox/authoring/
+
+# tools/build-catalog.py 의 출력. 공개 카탈로그는 main 에서 GitHub Actions 가
+# 매번 새로 만들어 Pages 로 올리므로, 생성물이 릴리스 PR 의 diff 에 섞이지 않게 둔다.
+/site/

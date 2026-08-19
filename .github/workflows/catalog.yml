@@ -1,0 +1,83 @@
+# The public catalog: github.com/re-speak/podo-curriculum → re-speak.github.io/podo-curriculum
+#
+# main is prod, so the site is built from main and only from main — what a
+# visitor reads is what a learner in a live class is looking at. A merge to
+# stage changes nothing here; the release PR publishes both at once.
+#
+# This is not a deploy gate. `podo-curriculum-deploy-prod` (Cloud Build) is what
+# puts 교재 in front of learners and it does not wait for this job; if the catalog
+# build fails, the class is unaffected and the site simply keeps the last good
+# version. Pull requests build without deploying so a broken builder is caught
+# before it reaches main rather than after.
+name: catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "courses/**"
+      - "curriculum.yaml"
+      - "tools/build-catalog.py"
+      - "tools/catalog/**"
+      - "tools/model.py"
+      - "schemas/**"
+      - ".github/workflows/catalog.yml"
+  pull_request:
+    branches: [stage, main]
+    paths:
+      - "courses/**"
+      - "tools/build-catalog.py"
+      - "tools/catalog/**"
+      - "tools/model.py"
+      - ".github/workflows/catalog.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time, and a newer main always wins. Not cancel-in-progress on
+# the deploy side: half a published site is worse than a stale one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r tools/requirements.txt
+
+      # The builder walks the repo through tools/model.py, so anything that fails
+      # validation here would have failed the deploy gate too.
+      - run: python3 tools/build-catalog.py --out site
+
+      - if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+        with:
+          # Turns Pages on the first time this runs, so nobody has to flip a
+          # setting by hand for the site to exist.
+          enablement: true
+
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
