@@ -228,28 +228,28 @@ regret buying → would you buy it again
 *Shared:* KR 2-1
 
 **10. Something you've recently got into** `story`
-*Opens:* "What have you started doing recently that most people don't know about?"
-*Ladder:* what → how did you find it → how often → who knows → why haven't you told people → where
-does it go from here
+*Opens:* "Have you got into anything new recently?"
+*Ladder:* what → how did you discover it → how often → who knows → do you prefer sharing interests
+or keeping them private → where does it go from here
 *Moves:* `I've been ___ing lately.` **(Core 52)** · `I got into it because ___.` **(Core 54)** `chunk`
 *Shared:* KR 2-2
 
 **11. A show you can't stop watching** `story`
-*Opens:* "What are you watching at the moment?"
+*Opens:* "Are you watching any shows at the moment?"
 *Ladder:* what → how far in → what makes you keep going → who recommended it → what did you drop
 halfway → what's next
 *Moves:* `I'm halfway through ___.` `chunk` · `I can't stop ___ing.` `chunk`
 *Shared:* KR 2-3
 
 **12. A compliment you still remember** `story`
-*Opens:* "When did someone last say something nice to you?"
+*Opens:* "Is there a compliment you still remember?"
 *Ladder:* who and what → did you believe it → how did you respond → do you remember compliments or
 criticism better → when did you last give one → who deserves one from you
 *Moves:* `Someone told me ___.` **(Core 69)** · `I didn't know what to say.` `chunk`
 *Shared:* KR 2-4
 
 **13. Your plans for this weekend** `story`
-*Opens:* "What are you doing this weekend?"
+*Opens:* "How are you feeling about this weekend?"
 *Ladder:* what's the plan → who with → what are you looking forward to → what could change it →
 what do you still need to decide → if the plan fell through, what would you do instead
 *Moves:* `I'm ___ing on Saturday.` **(Core 29)** · `It might change if ___.` **(Core 39, Core 57)**
@@ -263,42 +263,42 @@ notice if you did it → what's the first step this week
 *Shared:* KR 2-6
 
 **15. What you spend the most money on** `story`
-*Opens:* "What do you spend the most on that isn't rent or food?"
-*Ladder:* what → roughly how much → who thinks it's a waste → what's their argument → what do *you*
-think is a waste → have you ever changed your mind about one
+*Opens:* "Do you ever spend money just for fun?"
+*Ladder:* what → a comfortable range, with an opt-out → why it feels worthwhile → the strongest
+argument against it → what do *you* think is a waste → have you ever changed your mind about one
 *Moves:* `Most of it goes on ___.` `chunk` · `People think ___, but ___.` **(Core 56)**
 *Shared:* KR 2-7, merged with the "other people think it's a waste" angle
 
 **16. Something you tried for the first time** `story`
-*Opens:* "What have you done recently for the first time?"
+*Opens:* "Have you tried anything for the first time recently?"
 *Ladder:* what → what made you → was it what you expected → would you do it again → what's the last
 first time before that → what do you want to try next
 *Moves:* `I'd never ___ before.` **(Core 73)** · `It wasn't what I expected.` `chunk`
 *Shared:* KR 2-8
 
 **17. A small win nobody noticed** `story`
-*Opens:* "What went well this month that nobody praised you for?"
+*Opens:* "Have you had any small wins this month, whether or not anyone noticed?"
 *Ladder:* what → why did it matter → who would understand → do you notice these usually → what's
 still going badly → what would count as a good month
 *Moves:* `I finally ___.` `chunk` · `Nobody noticed, but ___.` **(Core 56)**
 *Shared:* KR 2-9
 
 **18. A song you keep playing** `story`
-*Opens:* "What have you been listening to on repeat?"
+*Opens:* "Is there a song you've been playing a lot lately?"
 *Ladder:* what → since when → what does it remind you of → when do you play it → what did you
 overplay years ago → what would be on a playlist of your year
 *Moves:* `I've had it on repeat ___.` **(Core 51)** `chunk` · `It reminds me of ___.` `chunk`
 *Shared:* KR 2-10
 
 **19. Something you've been putting off** `story`
-*Opens:* "What's something you keep meaning to do and haven't?"
+*Opens:* "Is there anything you've been meaning to do but haven't?"
 *Ladder:* what → how long → what's actually stopping you → what happens if you never do it → what
 did you put off before and finally do → how did that feel
 *Moves:* `I've been meaning to ___.` `chunk` · `I keep ___ing because ___.` **(Core 54)** `chunk`
 *Shared:* **NEW → KR**
 
 **20. One thing you always carry** `story`
-*Opens:* "If you have a bag with you, what's one thing in it you use every day?"
+*Opens:* "Do you have a bag with you today?"
 *Ladder:* what's in it → what do you actually use → what's been in there for months → what do you
 always forget → has your bag changed in a few years → what does it say about your day
 *Moves:* `I always carry ___.` **(Core 12)** · `I don't know why I still have ___.` **(Core 62)**
