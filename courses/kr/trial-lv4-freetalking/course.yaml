@@ -33,8 +33,7 @@ spec:
     ko: 주제를 놓고 자기 생각을 말해 보는 55분 프리토킹 체험 레슨.
     ja: テーマについて自分の考えを話してみる55分のフリートーキング体験レッスン。
 
-  # 표지를 지정하지 않는다. grape 는 cover 파트가 왔을 때만 BOOK_THUMBNAIL 을 쓰므로
-  # 키를 빼면 컬럼을 비우는 게 아니라 손대지 않는다 — 표지는 어드민에서 올린다.
+  thumbnail: assets/cover.png
 
   tutorGroups:
     allowRandom: []

@@ -33,8 +33,7 @@ spec:
     ko: 상황이 있는 대화로 실제 장면에서 말해 보는 55분 체험 레슨.
     ja: 場面のある会話で、実際のシーンで話してみる55分の体験レッスン。
 
-  # 표지를 지정하지 않는다. grape 는 cover 파트가 왔을 때만 BOOK_THUMBNAIL 을 쓰므로
-  # 키를 빼면 컬럼을 비우는 게 아니라 손대지 않는다 — 표지는 어드민에서 올린다.
+  thumbnail: assets/cover.png
 
   tutorGroups:
     allowRandom: []
