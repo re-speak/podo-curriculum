@@ -8,10 +8,10 @@ brief. Component markup and tutor voice come from the matching approved canonica
   and [`courses/talk-between-two-countries-accessible/lessons/01-this-surprised-me/lesson.html`](./courses/talk-between-two-countries-accessible/lessons/01-this-surprised-me/lesson.html).
   Use the full shell for full lessons and the accessible shell for accessible lessons. Preserve
   their semantic pairing while lowering language load only in the accessible version.
-- **Publish dependency:** the shared runtime source now localizes generated teaching-mode labels
-  from `<meta name="podo:target-language" content="en">`. It still must be published and the decks
-  repointed before English-speaking tutors receive that change in class. Do not hide runtime gaps
-  with deck-local overrides.
+- **Live runtime state:** shared runtime `v1.12.1` is published and live. It localizes generated
+  teaching-mode labels from `<meta name="podo:target-language" content="en">`, so the approved
+  English behavior has no outstanding publish or repoint dependency. Future runtime changes still
+  require a coordinated publish and repoint; do not hide runtime gaps with deck-local overrides.
 - **Structural counterpart:**
   [`../../../korean/tracks/4-freetalking/sample-lesson.html`](../../../korean/tracks/4-freetalking/sample-lesson.html).
   Its 10–15-sentence pre-study article, correction contract and question-page rhythm are the

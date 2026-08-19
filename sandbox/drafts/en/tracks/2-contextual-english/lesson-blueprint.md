@@ -2,14 +2,15 @@
 
 **This is a map, not a table of contents or a markup source.** It fixes the order and job of the
 pages in one lesson. Take situation facts from the TOC and generated brief; take component markup and
-tutor voice from the canonical deck after the track pilot is approved.
+tutor voice from the approved canonical deck.
 
 - **Superseded prototype — historical reference only:**
   [`courses/arriving-and-getting-settled/lessons/01-the-room-is-fine-but/lesson.html`](courses/arriving-and-getting-settled/lessons/01-the-room-is-fine-but/lesson.html).
   It implements the retired four-area curriculum and is not an approval candidate. Do not copy it,
   review it as current content, or use it to seed a batch.
-- **Next pilot:** choose one revised low-intermediate Travel or Business lesson only after its TOC
-  row passes review. No current Contextual deck is canonical.
+- **Approved canonical deck (2026-08-19):**
+  [`courses/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/lesson.html`](./courses/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/lesson.html).
+  Use it for the task-first opening, standalone transfer, component markup and tutor voice.
 - **Structural precedent only:**
   [`../../../korean/tracks/3-contextual-korean/sample-lesson.html`](../../../korean/tracks/3-contextual-korean/sample-lesson.html).
 - **Lesson facts:** [`table-of-contents.md`](./table-of-contents.md) and the generated
@@ -17,7 +18,7 @@ tutor voice from the canonical deck after the track pilot is approved.
 - **Shared page contract:** [`../../../ux-philosophy.md`](../../../ux-philosophy.md) plus
   [`../../AGENTS.md`](../../AGENTS.md).
 
-Read this map, then the complete canonical English deck once one exists. This track sells useful
+Read this map, then the complete canonical English deck. This track sells useful
 English for a recognisable situation, not a grammar sequence. Believable reactions, pressure, and
 tutor voice cannot be recovered from a page table.
 
