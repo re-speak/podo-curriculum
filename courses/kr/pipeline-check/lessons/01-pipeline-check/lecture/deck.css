@@ -1,5 +1,0 @@
-/* Deck-specific overrides. Shared runtime comes from the CDN
-   pinned in curriculum.yaml (spec.sharedRuntime).
-
-   이 덱은 배포 경로 확인용이라 고유 스타일이 없다. 파일 자체는 비울 수 없는데,
-   패키저가 로컬 스타일시트 <link> 를 하나 요구하기 때문이다(tools/build.py). */

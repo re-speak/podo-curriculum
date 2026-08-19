@@ -39,7 +39,10 @@
           "pattern": "^[0-9]+(\\.[0-9]{1,3})?$",
           "description": "GT_CLASS_COURSE.CLASS_LEVEL. Quoted so 1.10 does not become 1.1. Grape truncates past 3 decimals."
         },
-        "lessonTime": { "enum": [15, 25] },
+        "lessonTime": {
+          "enum": [15, 25, 55],
+          "description": "GT_CLASS_COURSE.LESSON_TIME, and part of the natural key. 15 and 25 are the regular products. 55 is the Korean 체험 (TRIAL) class, which is a single longer session rather than a weekly slot — the live JP-market trial rows run at 55."
+        },
         "enabled": { "type": "boolean", "description": "USE_YN. Y when true." },
         "difficulty": { "type": "string" },
         "title": { "$ref": "#/$defs/localised" },

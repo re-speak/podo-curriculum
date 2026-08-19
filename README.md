@@ -66,7 +66,7 @@ metadata: { slug: hangul-lv1 }
 spec:
   curriculumType: BASIC          # BASIC | SMART_TALK | TRIAL
   classLevel: "1"                # quoted — 1.10 must not become 1.1
-  lessonTime: 25                 # 15 | 25
+  lessonTime: 25                 # 15 | 25 | 55 (55 = 체험/TRIAL)
   enabled: false                 # USE_YN
   title: { ko: 한글 떼기, en: Hangul Basics, ja: ハングル入門 }
   thumbnail: assets/cover.png    # optional — BOOK_THUMBNAIL, see below
