@@ -122,4 +122,8 @@ The guiding principles behind every page of the Korean curriculum.
   the page. Do not invert anything for them.
 - **Mobile-first** — a phone-width column everywhere.
 - **Consistency over novelty** — one component vocabulary reused on every page.
-- Tokens live in `:root` in `runtime/css/lesson-card.css`. Use the variables, not the hex.
+- Tokens live in `:root` in `runtime/css/lesson-card.css`. Use the existing semantic
+  variables instead of repeating their literal values in deck or track CSS. Do not create
+  deck-local variables or a one-use custom property merely to hide a literal. Add a root
+  token only when it represents a recurring design-system role, then migrate every consumer
+  of that role together.
