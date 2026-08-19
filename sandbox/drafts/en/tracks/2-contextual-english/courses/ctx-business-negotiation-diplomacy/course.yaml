@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: ADVANCED
+  difficulty: UPPER_INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Negotiation and diplomatic language
-    en: Negotiation and diplomatic language
+    ko: 비즈니스 영어 · 협상과 완곡함 · B2
+    en: Business English · Negotiation · B2
+    ja: ビジネス英語 · 交渉と婉曲表現 · B2
 
   description:
-    ko: Business English · B2
-    en: Business English · B2
+    ko: 문제를 다시 규정하고, 조건을 걸어 제안하고, 무리한 약속을 되밀고, 교착을 푼다.
+    en: Reframe the problem, make a conditional proposal, push back on an unsafe commitment, and break a deadlock.
+    ja: 問題を捉え直し、条件つきで提案し、無理な約束を押し返し、膠着を動かす。
 
   tutorGroups:
     allowRandom: []

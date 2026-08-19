@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: ADVANCED
+  difficulty: UPPER_INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Delays, losses and urgent problems
-    en: Delays, losses and urgent problems
+    ko: 여행 영어 · 문제가 생겼을 때 · B2
+    en: Travel English · When it goes wrong · B2
+    ja: 旅行英語 · トラブル対応 · B2
 
   description:
-    ko: Travel English · B1–B2
-    en: Travel English · B1–B2
+    ko: 놓친 환승을 다시 잡고, 분실 수하물을 신고하고, 부당한 청구에 이의를 제기하고, 진료를 받는다.
+    en: Rebook a missed connection, report lost baggage precisely, challenge a charge, and get medical help.
+    ja: 乗り継ぎ失敗の取り直し、荷物の紛失申告、身に覚えのない請求への異議、医療の手配までこなす。
 
   tutorGroups:
     allowRandom: []

@@ -105,13 +105,20 @@ read it.
 Highlighting is a comprehension aid, not a quota and not a list of topic vocabulary.
 
 - Highlight an item only when it is plausibly difficult enough at that version's entry level to
-  block the sentence. A line may have **zero, one or two** glosses; three needs a real reason.
+  block the sentence. Use this editorial test: **if the learner knew the rest of the sentence,
+  would not knowing this item prevent them from recovering its main claim?** If no, do not gloss
+  it. A line may have **zero, one or two** glosses; three needs a real reason. There is no minimum
+  per row or per article, so a readable article may legitimately have only a few word-bank items.
 - Default to one word. Highlight a multiword span only when it is a genuine lexical unit—an idiom,
   phrasal verb or fixed expression whose meaning cannot be recovered reliably word by word. Use the
   shortest span that carries that meaning.
 - Do not highlight proper names, familiar topic nouns, transparent phrases or ordinary words merely
   because they are important to the topic. `barbecue restaurant`, `be the same` and `table`, for
   example, do not earn glosses for a B1 article.
+- Vocabulary metadata does not create a gloss quota. `new`, `assumed` and `receptive` describe
+  curriculum ownership and load; the word bank is a separate, sentence-level comprehension
+  decision. Conversely, do not withhold a gloss merely because a word was declared elsewhere if
+  its less familiar sense is what carries the sentence's claim here.
 - Every `.s-key` has exactly one matching `.s-w`, and vice versa. The highlighted text uses the
   surface form in the sentence; the gloss names the word or expression and gives its meaning in
   that sentence, not a broad dictionary inventory.

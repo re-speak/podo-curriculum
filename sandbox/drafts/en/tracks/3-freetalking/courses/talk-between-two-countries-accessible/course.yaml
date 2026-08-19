@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · Between two countries · Accessible
-    en: Free talking · Between two countries · Accessible
+    ko: 프리토킹 · 두 나라 사이 · B1
+    en: Free talking · Two countries · B1
+    ja: フリートーキング · ふたつの国 · B1
 
   description:
-    ko: 8 topics · Accessible version
-    en: 8 topics · Accessible version
+    ko: 다른 나라에서 놀란 점을 설명하고, 일본에 온 사람은 무엇에 놀랄지 말한다.
+    en: Explain what surprised you about another country, and what would surprise a visitor to Japan.
+    ja: 他の国について驚いたことを説明し、日本に来た人が何に驚くかを話す。
 
   tutorGroups:
     allowRandom: []

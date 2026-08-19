@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Abstraction and argument & What is meant, not said
-    en: English Core · Abstraction and argument & What is meant, not said
+    ko: 영어 핵심 패턴 · 논증과 태도 · C1
+    en: English Core · Argument and stance · C1
+    ja: 英語コアパターン · 論証と含み · C1
 
   description:
-    ko: Core 113–122 · C1
-    en: Core 113–122 · C1
+    ko: 추상적으로 논증하고, 말한 것이 아니라 뜻한 것을 알아듣는다.
+    en: Argue in the abstract, and hear what is meant rather than what is said.
+    ja: 抽象的に論じ、言われたことではなく含意を聞き取る。
 
   tutorGroups:
     allowRandom: []

@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: BEGINNER
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Say who you are & Say what is around you
-    en: English Core · Say who you are & Say what is around you
+    ko: 영어 핵심 패턴 · 첫 문장 · A1
+    en: English Core · First words · A1
+    ja: 英語コアパターン · 最初の一文 · A1
 
   description:
-    ko: Core 1–11 · Pre-A1 → A1
-    en: Core 1–11 · Pre-A1 → A1
+    ko: 자기소개를 하고, 주변의 사물을 말하고, 영어가 반드시 요구하는 주어를 빠뜨리지 않는다.
+    en: Introduce yourself, name what is around you, and keep the subject English always needs.
+    ja: 自己紹介をし、身の回りのものを言い、英語が必ず求める主語を落とさずに話す。
 
   tutorGroups:
     allowRandom: []

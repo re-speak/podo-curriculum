@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: BEGINNER
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Say what you do & Ask for things
-    en: English Core · Say what you do & Ask for things
+    ko: 영어 핵심 패턴 · 하기와 부탁 · A1
+    en: English Core · Doing and asking · A1
+    ja: 英語コアパターン · 動作と依頼 · A1
 
   description:
-    ko: Core 12–24 · A1
-    en: Core 12–24 · A1
+    ko: 하는 일과 안 하는 일을 말하고, 필요한 것을 부탁한다.
+    en: Say what you do and what you don't, and ask for what you need.
+    ja: することとしないことを言い、必要なものを頼む。
 
   tutorGroups:
     allowRandom: []

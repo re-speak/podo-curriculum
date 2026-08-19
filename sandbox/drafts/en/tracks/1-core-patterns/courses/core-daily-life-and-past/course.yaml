@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: BEGINNER
+  difficulty: UPPER_BEGINNER
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Now and usually & Tell what happened
-    en: English Core · Now and usually & Tell what happened
+    ko: 영어 핵심 패턴 · 지금과 과거 · A2
+    en: English Core · Now and before · A2
+    ja: 英語コアパターン · 今と過去 · A2
 
   description:
-    ko: Core 25–36 · A1 → A2
-    en: Core 25–36 · A1 → A2
+    ko: 늘 하는 일과 지금 하고 있는 일을 구분하고, 있었던 일을 말한다.
+    en: Separate what you usually do from what is happening now, and tell what happened.
+    ja: いつものことと今起きていることを分け、あったことを語る。
 
   tutorGroups:
     allowRandom: []

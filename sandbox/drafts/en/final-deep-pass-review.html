@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <title>English curriculum · final deep-pass proof</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4f8f6;
+      --sheet: #ffffff;
+      --ink: #16292e;
+      --muted: #5e7274;
+      --line: #c9d8d4;
+      --line-strong: #8ea6a0;
+      --before: #7c3543;
+      --before-bg: #fff1f3;
+      --after: #0f624d;
+      --after-bg: #e9f8f1;
+      --note: #275f89;
+      --note-bg: #edf6fb;
+      --focus: #005fcc;
+      --shadow: 0 22px 60px rgb(23 52 52 / 10%);
+      --display: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --body: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, transparent 0 47px, rgb(124 53 67 / 10%) 47px 48px, transparent 48px),
+        var(--paper);
+      font-family: var(--body);
+      line-height: 1.5;
+    }
+
+    button, input, select { font: inherit; }
+
+    button, a, input, select { outline-offset: 3px; }
+
+    :focus-visible { outline: 3px solid var(--focus); }
+
+    .masthead {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 44px 32px 30px 76px;
+    }
+
+    .folio {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line-strong);
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, .55fr);
+      gap: 56px;
+      align-items: end;
+      padding: 54px 0 32px;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-family: var(--display);
+      font-size: clamp(48px, 7vw, 102px);
+      font-weight: 500;
+      letter-spacing: -.055em;
+      line-height: .9;
+    }
+
+    h1 em {
+      color: var(--after);
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-color: rgb(15 98 77 / 24%);
+      text-decoration-thickness: .12em;
+      text-underline-offset: .08em;
+    }
+
+    .thesis {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .thesis strong { color: var(--ink); }
+
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line-strong);
+      background: var(--sheet);
+      box-shadow: var(--shadow);
+    }
+
+    .summary-cell {
+      min-width: 0;
+      padding: 18px 20px 16px;
+      border-right: 1px solid var(--line);
+    }
+
+    .summary-cell:last-child { border-right: 0; }
+
+    .summary-cell strong {
+      display: block;
+      font-family: var(--display);
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .summary-cell span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .control-wrap {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-block: 1px solid var(--line-strong);
+      background: rgb(244 248 246 / 94%);
+      backdrop-filter: blur(14px);
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(180px, 1fr) auto auto;
+      gap: 12px;
+      align-items: center;
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 12px 32px 12px 76px;
+    }
+
+    .track-filters { display: flex; gap: 5px; }
+
+    .filter-button,
+    .quiet-button,
+    .toggle-label {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--sheet);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .filter-button,
+    .quiet-button {
+      padding: 8px 13px;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .filter-button[aria-pressed="true"] {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: white;
+    }
+
+    .search-field {
+      width: 100%;
+      min-height: 40px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--sheet);
+      color: var(--ink);
+    }
+
+    .issue-select {
+      min-height: 40px;
+      padding: 8px 34px 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--sheet);
+      color: var(--ink);
+    }
+
+    .toggle-label {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 12px;
+      white-space: nowrap;
+    }
+
+    .toggle-label input { accent-color: var(--after); }
+
+    .page-shell {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 42px 32px 90px 76px;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 520px);
+      gap: 32px;
+      align-items: end;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      margin: 0 0 7px;
+      color: var(--note);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      font-family: var(--display);
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 500;
+      letter-spacing: -.035em;
+      line-height: 1;
+    }
+
+    .section-note {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .rule-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-bottom: 64px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+    }
+
+    .rule {
+      padding: 18px;
+      border-right: 1px solid var(--line);
+    }
+
+    .rule:last-child { border-right: 0; }
+
+    .rule b {
+      display: block;
+      margin-bottom: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .rule p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .system-diffs {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 68px;
+    }
+
+    .system-change {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+    }
+
+    .system-change .stamp {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border: 1px solid var(--note);
+      border-radius: 50%;
+      color: var(--note);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .system-change h3 { margin: 0 0 4px; font-size: 15px; }
+    .system-change p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .review-bar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+    }
+
+    .progress-track {
+      position: relative;
+      height: 8px;
+      overflow: hidden;
+      border-radius: 99px;
+      background: #dfe9e5;
+    }
+
+    .progress-fill {
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--after);
+      transition: width .2s ease;
+    }
+
+    .progress-copy {
+      font-family: var(--mono);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .diff-list { display: grid; gap: 14px; }
+
+    .diff-card {
+      position: relative;
+      border: 1px solid var(--line-strong);
+      background: var(--sheet);
+      box-shadow: 0 6px 20px rgb(23 52 52 / 5%);
+    }
+
+    .diff-card::before {
+      position: absolute;
+      top: 16px;
+      bottom: 16px;
+      left: -30px;
+      width: 17px;
+      border-block: 1px solid var(--before);
+      content: "";
+      opacity: .48;
+    }
+
+    .diff-card.reviewed::before {
+      border-color: var(--after);
+      opacity: 1;
+    }
+
+    .diff-card[hidden] { display: none; }
+
+    .card-head {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .lesson-id {
+      color: var(--note);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 650;
+    }
+
+    .review-check {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .review-check input { width: 17px; height: 17px; accent-color: var(--after); }
+
+    .pair { display: grid; grid-template-columns: 1fr 1fr; }
+
+    .pair + .pair { border-top: 1px solid var(--line); }
+
+    .version {
+      min-width: 0;
+      padding: 18px;
+    }
+
+    .version.before {
+      border-right: 1px solid var(--line);
+      background: linear-gradient(90deg, var(--before-bg), white 76%);
+    }
+
+    .version.after { background: linear-gradient(90deg, var(--after-bg), white 76%); }
+
+    .version-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .version-text {
+      margin: 0;
+      overflow-wrap: anywhere;
+      font-family: var(--display);
+      font-size: 19px;
+      line-height: 1.42;
+    }
+
+    del, ins {
+      border-radius: 2px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    del {
+      padding: 1px 2px;
+      background: #ffd9de;
+      box-shadow: inset 0 -1px 0 var(--before);
+    }
+
+    ins {
+      padding: 1px 2px;
+      background: #ccefe0;
+      box-shadow: inset 0 -1px 0 var(--after);
+    }
+
+    body.no-highlight del,
+    body.no-highlight ins { padding: 0; background: transparent; box-shadow: none; }
+
+    .card-foot {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: start;
+      padding: 14px 18px 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .reason { margin: 0; color: var(--muted); font-size: 14px; }
+    .reason strong { color: var(--ink); }
+
+    .tags { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px; }
+
+    .tag {
+      padding: 3px 7px;
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .source-link {
+      color: var(--note);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .empty-state {
+      padding: 36px;
+      border: 1px dashed var(--line-strong);
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .limitations {
+      margin-top: 56px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: var(--note-bg);
+    }
+
+    .limitations h2 { font-size: 28px; }
+    .limitations p { max-width: 860px; margin: 10px 0 0; color: var(--muted); }
+
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; gap: 22px; }
+      .controls { grid-template-columns: 1fr 1fr; }
+      .search-field { grid-column: 1 / -1; grid-row: 2; }
+      .rule-grid { grid-template-columns: 1fr 1fr; }
+      .rule { border-bottom: 1px solid var(--line); }
+      .rule:nth-child(2n) { border-right: 0; }
+      .rule:last-child { border-bottom: 0; }
+    }
+
+    @media (max-width: 700px) {
+      body { background: var(--paper); }
+      .control-wrap { position: relative; }
+      .masthead, .controls, .page-shell { padding-inline: 18px; }
+      .masthead { padding-top: 24px; }
+      .folio { align-items: flex-start; flex-direction: column; gap: 5px; }
+      .hero { padding-top: 36px; }
+      h1 { font-size: clamp(47px, 16vw, 72px); }
+      .summary-strip { grid-template-columns: 1fr 1fr; }
+      .summary-cell:nth-child(2) { border-right: 0; }
+      .summary-cell:nth-child(-n + 2) { border-bottom: 1px solid var(--line); }
+      .controls { grid-template-columns: 1fr; }
+      .track-filters { display: grid; grid-template-columns: repeat(4, 1fr); }
+      .filter-button { padding-inline: 6px; }
+      .search-field { grid-column: auto; grid-row: auto; }
+      .section-heading { grid-template-columns: 1fr; gap: 12px; }
+      .rule-grid, .system-diffs { grid-template-columns: 1fr; }
+      .rule { border-right: 0; }
+      .review-bar { grid-template-columns: 1fr 1fr; }
+      .review-bar .progress-track { grid-column: 1 / -1; }
+      .pair { grid-template-columns: 1fr; }
+      .version.before { border-right: 0; border-bottom: 1px solid var(--line); }
+      .card-head { grid-template-columns: auto 1fr; }
+      .review-check { grid-column: 1 / -1; }
+      .card-foot { grid-template-columns: 1fr; }
+      .tags { justify-content: flex-start; }
+      .diff-card::before { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .progress-fill { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="folio">
+      <span>PODO / English curriculum proof</span>
+      <span>Editorial state · 14 Aug 2026</span>
+    </div>
+    <div class="hero">
+      <h1>58 lessons,<br><em>easier to say.</em></h1>
+      <p class="thesis"><strong>This is the receipt for the final deep pass.</strong> Every card shows the exact learner-facing language before and after, followed by the curriculum reason—not a vague summary of the edit.</p>
+    </div>
+    <div class="summary-strip" aria-label="Audit summary">
+      <div class="summary-cell"><strong>12</strong><span>Core lessons</span></div>
+      <div class="summary-cell"><strong>22</strong><span>Contextual lessons</span></div>
+      <div class="summary-cell"><strong>24</strong><span>Freetalking topics</span></div>
+      <div class="summary-cell"><strong>40/40</strong><span>Regression tests</span></div>
+    </div>
+  </header>
+
+  <div class="control-wrap">
+    <div class="controls" aria-label="Diff filters">
+      <div class="track-filters" role="group" aria-label="Track">
+        <button class="filter-button" type="button" data-track="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-track="core" aria-pressed="false">Core</button>
+        <button class="filter-button" type="button" data-track="contextual" aria-pressed="false">Context</button>
+        <button class="filter-button" type="button" data-track="freetalking" aria-pressed="false">Talk</button>
+      </div>
+      <input class="search-field" id="search" type="search" placeholder="Search an ID, phrase, or reason" aria-label="Search changes">
+      <select class="issue-select" id="issue" aria-label="Filter by issue">
+        <option value="all">Every issue</option>
+        <option value="naturalness">Spoken naturalness</option>
+        <option value="load">Cognitive load</option>
+        <option value="progression">Progression</option>
+        <option value="alignment">Objective alignment</option>
+        <option value="slot">Slot quality</option>
+        <option value="ownership">Core ownership</option>
+      </select>
+      <label class="toggle-label"><input id="highlight" type="checkbox" checked> Highlight words</label>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <section aria-labelledby="standard-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The standard</p>
+          <h2 id="standard-title">What every edit had to earn</h2>
+        </div>
+        <p class="section-note">These gates came from the curriculum contract. An edit was not accepted merely because it sounded nicer.</p>
+      </div>
+      <div class="rule-grid">
+        <article class="rule"><b>One outcome</b><p>One observable exchange, not a list of loosely related actions.</p></article>
+        <article class="rule"><b>Two targets</b><p>Exactly two assessed learner patterns, with no hidden third objective.</p></article>
+        <article class="rule"><b>Ready now</b><p>Every produced form is already owned or clearly marked as a bounded chunk.</p></article>
+        <article class="rule"><b>Useful slots</b><p>The blank supports several natural completions without changing the frame.</p></article>
+        <article class="rule"><b>Spoken default</b><p>The line sounds like a person, not a report, debate, or translated textbook.</p></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="guardrail-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Sequence guardrails</p>
+          <h2 id="guardrail-title">Changes around the lessons</h2>
+        </div>
+        <p class="section-note">These changes keep the same problems from slipping back in after this review.</p>
+      </div>
+      <div class="system-diffs">
+        <article class="system-change"><span class="stamp">86</span><div><h3>Meetings floor raised</h3><p>Contextual Course 8 moved from Core 81 / B1–B2 to Core 86 / B1+–B2, matching the language it retrieves.</p></div></article>
+        <article class="system-change"><span class="stamp">101</span><div><h3>Negotiation floor raised</h3><p>Contextual Course 9 moved from Core 92 to Core 101 so its diplomatic language is no longer ahead of its declared floor.</p></div></article>
+        <article class="system-change"><span class="stamp">0→</span><div><h3>Future-Core leaks now fail</h3><p>The parser rejects a Core reference above a course floor unless the whole pattern is explicitly marked <code>chunk</code>.</p></div></article>
+        <article class="system-change"><span class="stamp">15</span><div><h3>Openings now stay complete</h3><p>A regression check requires every Balance Game opening to be quoted and sentence-complete.</p></div></article>
+        <article class="system-change"><span class="stamp">315</span><div><h3>Dependent artifacts rebuilt</h3><p>Catalogs, lesson briefs, evidence maps, lexicon, and all 43 disabled course manifests were regenerated from the TOCs.</p></div></article>
+        <article class="system-change"><span class="stamp">122</span><div><h3>Stale scope copy repaired</h3><p>Two methodology references still described a 72-lesson Core; both now state the current 122-lesson scope.</p></div></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="diff-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Lesson proof</p>
+          <h2 id="diff-title">Before, after, and why</h2>
+        </div>
+        <p class="section-note" id="result-count" aria-live="polite"></p>
+      </div>
+      <div class="review-bar">
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+        <span class="progress-copy" id="progress-copy">0 / 58 reviewed</span>
+        <button class="quiet-button" id="review-visible" type="button">Mark visible reviewed</button>
+      </div>
+      <div class="diff-list" id="diff-list"></div>
+      <div class="empty-state" id="empty-state" hidden>No changes match these filters.</div>
+    </section>
+
+    <aside class="limitations">
+      <p class="eyebrow">Evidence boundary</p>
+      <h2>What this proof does not claim</h2>
+      <p>This is an editorial and structural audit. It does not replace native dispositions, corpus evidence, or learner pilots. Pronunciation remains a 12-row planning syllabus and was checked only for broad order; no pronunciation deck was authorized.</p>
+    </aside>
+  </main>
+
+  <script>
+    const changes = [
+      {id:"CORE-1",track:"core",title:"Introduce yourself",issues:["alignment"],reason:"The old can-do promised learning the other person's name, but neither primary pattern teaches that action.",pairs:[{label:"Can-do",before:"Introduce yourself two ways and learn someone's name.",after:"Introduce yourself in two common ways."}]},
+      {id:"CORE-11",track:"core",title:"Ask where a place is",issues:["alignment"],reason:"The second learner target describes a location; the can-do now names productive language rather than receptive understanding.",pairs:[{label:"Can-do",before:"Ask where a place is and understand the answer.",after:"Ask where a place is and describe where it is."}]},
+      {id:"CORE-43",track:"core",title:"Describe a place",issues:["progression","load"],reason:"The comparative -er form appeared two lessons before comparison is introduced. The replacement retrieves an already-known place phrase.",pairs:[{label:"Pattern 2",before:"I'm looking for something cheaper. / I'm looking for something ___er.",after:"It's near the station. / It's near ___."},{label:"Expressions",before:"kind of · not really my thing",after:"a little · not far from here"}]},
+      {id:"CORE-76",track:"core",title:"Arrange a service",issues:["load","alignment"],reason:"One lesson was carrying two causative systems. Both targets now stay inside have/get + thing + past participle.",pairs:[{label:"Lesson title",before:"I had my phone repaired — arrange for someone else to act",after:"I had my phone repaired — arrange a service"},{label:"Can-do",before:"Distinguish arranging a service from arranging for a particular person to act.",after:"Say what service you arranged and what still needs to be done."},{label:"Pattern 2",before:"I got someone to look at it. / I got ___ to ___.",after:"I need to get the screen replaced. / I need to get ___ ___ed."}]},
+      {id:"CORE-87",track:"core",title:"Make a precise comparison",issues:["slot"],reason:"The model sentence now actually fills both slots shown in the reusable frame.",pairs:[{label:"Pattern 2 model",before:"It's nowhere near as fast. / It's nowhere near as ___ as ___.",after:"It's nowhere near as fast as the train. / It's nowhere near as ___ as ___."}]},
+      {id:"CORE-97",track:"core",title:"Refuse without offence",issues:["slot","naturalness"],reason:"The model now fills its action slot, and the expression is stored in the form people actually say.",pairs:[{label:"Pattern 1 model",before:"I'd rather not, if that's OK. / I'd rather not ___, if that's OK.",after:"I'd rather not join, if that's OK. / I'd rather not ___, if that's OK."},{label:"Expression",before:"rain check",after:"take a rain check"}]},
+      {id:"CORE-98",track:"core",title:"Attribute a cause",issues:["naturalness"],reason:"Both formal report-style anchors were replaced with ordinary spoken defaults while keeping the same causal job.",pairs:[{label:"Pattern 1",before:"This is largely due to the delay. / This is largely due to ___.",after:"That's mostly because of the delay. / That's mostly because of ___."},{label:"Pattern 2",before:"It stems from a misunderstanding. / It stems from ___.",after:"A lot of it comes from a misunderstanding. / A lot of it comes from ___."}]},
+      {id:"CORE-102",track:"core",title:"Offer a fallback",issues:["naturalness"],reason:"Failing that is valid but unusually formal as a production default; the replacement is normal conversational English.",pairs:[{label:"Pattern 2",before:"Failing that, we could ask them. / Failing that, we could ___.",after:"If that doesn't work, we could ask them. / If that doesn't work, we could ___."}]},
+      {id:"CORE-115",track:"core",title:"Concede and counter",issues:["naturalness","slot"],reason:"The old pair sounded like formal debate language and left the second proposition too open. The new pair is explicit, spoken, and changeable.",pairs:[{label:"Pattern 1",before:"Granted, but that overlooks the cost. / Granted, but that overlooks ___.",after:"That's true, but it doesn't account for the cost. / That's true, but it doesn't account for ___."},{label:"Pattern 2",before:"Even so, the risk stands. / Even so, ___.",after:"Even so, we still need to reduce the risk. / Even so, we still need to ___."}]},
+      {id:"CORE-116",track:"core",title:"Reverse an assumption",issues:["slot","naturalness"],reason:"The old blank followed a fixed adverbial answer awkwardly. The new frame gives the learner a complete proposition to change.",pairs:[{label:"Pattern 2",before:"Quite the opposite, actually. / Quite the opposite, ___.",after:"It's actually the opposite: demand has gone up. / It's actually the opposite: ___."}]},
+      {id:"CORE-117",track:"core",title:"Weigh up and conclude",issues:["naturalness","slot"],reason:"On balance and net-net were poor spoken defaults. The replacement keeps the conclusion function in language people use naturally.",pairs:[{label:"Pattern 1",before:"On balance, I'd say it's worth it. / On balance, I'd say ___.",after:"Overall, I'd say it's worth it. / Overall, I'd say ___."},{label:"Pattern 2",before:"The deciding factor for me is the cost. / The deciding factor for me is ___.",after:"What it comes down to for me is the cost. / What it comes down to for me is ___."},{label:"Expressions",before:"all things considered · net-net",after:"all in all · at the end of the day"}]},
+      {id:"CORE-121",track:"core",title:"Set a boundary",issues:["slot","naturalness"],reason:"The slot now represents the topic being postponed instead of forcing an awkward noun into leave ___ there.",pairs:[{label:"Pattern 2",before:"Can we leave that there for now? / Can we leave ___ there for now?",after:"Can we leave this for now? / Can we leave ___ for now?"}]},
+
+      {id:"CTX-5",track:"contextual",title:"Ask for directions",issues:["progression","naturalness"],reason:"The practical task does not need a later superlative frame; the direct Core 11 question is earlier and more usable.",pairs:[{label:"Learner line 1",before:"What's the best way to get to the museum? / Core 59",after:"How do I get to the museum? / Core 11"}]},
+      {id:"CTX-7",track:"contextual",title:"Leave bags before check-in",issues:["progression","load"],reason:"The request now uses already-owned Core 21 language and supplies the time boundary directly.",pairs:[{label:"Learner line 2",before:"Is there any chance we could leave our bags here? / Core 60",after:"Can we leave our bags here until three? / Core 21"}]},
+      {id:"CTX-8",track:"contextual",title:"Report a room problem",issues:["progression","load"],reason:"Both lines were simplified to grammar available at the course floor without weakening the real hotel task.",pairs:[{label:"Learner line 1",before:"The air conditioning isn't working properly. / Core 64",after:"The air conditioning doesn't work. / Core 14"},{label:"Learner line 2",before:"If it can't be fixed, could we change rooms? / Core 57 + 60",after:"Can we change rooms? / Core 21"}]},
+      {id:"CTX-9",track:"contextual",title:"Handle a dietary restriction",issues:["load","alignment"],reason:"The first target previously hid a statement and a recommendation question in one line. The server reply now supplies the recommendation.",pairs:[{label:"Can-do",before:"Get a recommendation that meets a dietary need.",after:"State a dietary restriction and check that a recommendation is safe."},{label:"Learner line 1",before:"I'm allergic to nuts. What would you recommend?",after:"I'm allergic to nuts."}]},
+      {id:"CTX-10",track:"contextual",title:"Correct a wrong order",issues:["progression"],reason:"The ordinary Core 22 request replaces a later Core 60 politeness frame.",pairs:[{label:"Learner line 2",before:"Could I have the iced one instead? / Core 60",after:"Can I have the iced one instead? / Core 22"}]},
+      {id:"CTX-11",track:"contextual",title:"Exchange a faulty item",issues:["progression"],reason:"The exchange remains polite and natural using already-owned Core 21 language.",pairs:[{label:"Learner line 2",before:"Could I exchange it for another one? / Core 60",after:"Can I exchange it for another one? / Core 21"}]},
+      {id:"CTX-12",track:"contextual",title:"Change a booking",issues:["progression","load"],reason:"The second line no longer imports a Core 83 confirmation frame as a chunk when a simple known question completes the task.",pairs:[{label:"Learner line 1",before:"Could we move our reservation to eight? / Core 60",after:"Can we move our reservation to eight? / Core 21"},{label:"Learner line 2",before:"Eight-fifteen works. Could you confirm it's still for four? / Core 83 chunk",after:"Is it still for four people? / Core 8"}]},
+      {id:"CTX-16",track:"contextual",title:"Report a lost wallet",issues:["progression"],reason:"The advanced modal-perfect guess was unnecessary; a Core 32 past statement communicates the same useful uncertainty.",pairs:[{label:"Learner line 1",before:"I may have left my wallet at your restaurant. / Core 72",after:"I think I left my wallet at your restaurant. / Core 32"}]},
+      {id:"CTX-19",track:"contextual",title:"Ask a local to choose",issues:["ownership"],reason:"The line was already available through Core 66; its old Core 94 label falsely implied a later dependency.",pairs:[{label:"Core owner",before:"What would you choose if you only had one day? / Core 94",after:"What would you choose if you only had one day? / Core 66"}]},
+      {id:"CTX-22",track:"contextual",title:"Negotiate a travel compromise",issues:["progression","load"],reason:"The first line now uses known preference language; the genuinely later What if frame is honestly marked as one bounded chunk.",pairs:[{label:"Learner line 1",before:"I see why you want to go, but I'd rather stay nearby. / Core 85 + 97",after:"I see why you want to go, but I prefer staying nearby. / Core 62 + 63"},{label:"Learner line 2 status",before:"What if we did the short route and came back by six? / Core 94",after:"What if we did the short route and came back by six? / Core 94 chunk"}]},
+      {id:"CTX-23",track:"contextual",title:"Repair an unintended message",issues:["progression","ownership"],reason:"The Core 96 frame sits above this course's floor, so the existing whole line is now explicitly treated as a bounded chunk.",pairs:[{label:"Pattern status",before:"I meant that I was full, not that I disliked it. / Core 96",after:"I meant that I was full, not that I disliked it. / Core 96 chunk"}]},
+      {id:"CTX-25",track:"contextual",title:"Protect a travel priority",issues:["alignment","load"],reason:"The can-do no longer claims three separate actions when the two targets teach a priority and an alternative.",pairs:[{label:"Can-do",before:"Explain the consequence, state the priority, and seek an alternative.",after:"State the non-negotiable priority and seek an alternative."}]},
+      {id:"CTX-26",track:"contextual",title:"Give a precise incident account",issues:["progression","load"],reason:"The Core 104 cleft adds form without useful task value; simple past plus definitely is clearer and already owned.",pairs:[{label:"Learner line 1",before:"The last time I definitely had it was at the station. / Core 104",after:"I definitely had it at the station. / Core 32"}]},
+      {id:"CTX-29",track:"contextual",title:"Make a safety decision",issues:["naturalness"],reason:"The lesson now propagates Core 117's spoken conclusion anchor.",pairs:[{label:"Learner line 2",before:"On balance, I'd rather postpone than take the risk.",after:"Overall, I'd rather postpone than take the risk."}]},
+      {id:"CTX-30",track:"contextual",title:"Advise on a difficult route",issues:["load","progression"],reason:"The old worth + -ing + provided frame packed two unfamiliar constructions into one target. The new conditional uses known Core language.",pairs:[{label:"Learner line 2",before:"The route is worth taking, provided you have some flexibility. / chunk",after:"I'd only take that route if you have some flexibility. / Core 66 + 57"}]},
+      {id:"CTX-31",track:"contextual",title:"Introduce your role",issues:["ownership"],reason:"Mainly work with belongs to the habitual-language owner in Core 12, not the old Core 3 label.",pairs:[{label:"Core owner",before:"I mainly work with the design team. / Core 3",after:"I mainly work with the design team. / Core 12"}]},
+      {id:"CTX-35",track:"contextual",title:"Give a project update",issues:["load","progression"],reason:"Simple past plus a next-step marker is enough for this early workplace update; present perfect was above the course floor.",pairs:[{label:"Learner line 1",before:"We've completed three of the five reviews. / Core 53",after:"We finished three of the five reviews. / Core 32"},{label:"Learner line 2",before:"We still need to confirm the budget and timeline. / Core 53",after:"Next, we need to confirm the budget and timeline. / Core 40"}]},
+      {id:"CTX-36",track:"contextual",title:"Report a technical problem",issues:["progression","slot"],reason:"The revised line uses a known past event and gives the now clause a stable, reusable error slot.",pairs:[{label:"Learner line 2",before:"It was working this morning, but now I get a permission error. / Core 36 + 56",after:"It worked this morning, but now I get a permission error. / Core 32 + 14"}]},
+      {id:"CTX-37",track:"contextual",title:"Clarify priorities",issues:["load","naturalness"],reason:"The replacement is shorter, easier to retrieve, and closer to what a colleague would normally ask under deadline pressure.",pairs:[{label:"Learner line 2",before:"Which task would you like me to prioritise? / Core 28",after:"Which task should I do first? / Core 40"}]},
+      {id:"CTX-45",track:"contextual",title:"Recommend an option",issues:["load","progression"],reason:"The recommendation is bounded as a chunk; its reason now reuses a known comparative instead of adding another abstract noun frame.",pairs:[{label:"Learner line 1",before:"I'd recommend option B. / Core 40",after:"I recommend option B. / chunk"},{label:"Learner line 2",before:"The main reason is the implementation time. / Core 54",after:"It's faster to implement. / Core 45 + 59"}]},
+      {id:"CTX-58",track:"contextual",title:"Persuade competing stakeholders",issues:["alignment","naturalness"],reason:"The can-do now states the shared proposal; the second line has a distinct stakeholder job without repeating reduce risk.",pairs:[{label:"Can-do",before:"Connect a recommendation to each stakeholder's concern.",after:"Explain how one proposal serves two stakeholders' priorities."},{label:"Learner line 2",before:"For operations, it reduces the risk of unplanned downtime.",after:"For operations, it addresses the risk of unplanned downtime."}]},
+      {id:"CTX-60",track:"contextual",title:"Make an executive recommendation",issues:["naturalness","slot"],reason:"Both lines now inherit Core 117's spoken conclusion language and retain the same executive decision task.",pairs:[{label:"Learner line 1",before:"On balance, I recommend proceeding with a limited first phase.",after:"Overall, I recommend proceeding with a limited first phase."},{label:"Learner line 2",before:"The deciding factor is that we can limit the downside while testing demand.",after:"What it comes down to is that we can limit the downside while testing demand."}]},
+
+      {id:"FT-53",track:"freetalking",title:"A small thing that annoys you",issues:["naturalness"],reason:"The reusable move now propagates the revised Core 117 spoken anchor.",pairs:[{label:"Useful move",before:"On balance, ___.",after:"Overall, I'd say ___."}]},
+      {id:"FT-54",track:"freetalking",title:"Someone you can talk to easily",issues:["naturalness","slot"],reason:"The old line was marked and oddly final. The replacement has a useful topic slot and ordinary word order.",pairs:[{label:"Useful move",before:"We talk about nothing, mostly.",after:"We mostly talk about ___."}]},
+      {id:"FT-65",track:"freetalking",title:"Something you were proud to finish",issues:["naturalness"],reason:"Feel proud of it is the direct, natural question; think, that was good sounded authored rather than spoken.",pairs:[{label:"Opening",before:"When did you last finish something and think, that was good?",after:"When did you last finish something and feel proud of it?"}]},
+      {id:"FT-74",track:"freetalking",title:"What your job is really like",issues:["naturalness","ownership"],reason:"Most of my day is spent -ing is the idiomatic frame; it is honestly marked as a bounded chunk instead of misattributed to Core 52.",pairs:[{label:"Useful move",before:"Most of my day is ___ing. / Core 52",after:"Most of my day is spent ___ing. / chunk"}]},
+      {id:"FT-94",track:"freetalking",title:"One thing you would make free",issues:["naturalness","ownership"],reason:"Choose is the correct verb for a selection and maps to the actual Core 46 owner.",pairs:[{label:"Useful move",before:"I'd take ___, easily. / Core 66",after:"I'd choose ___, easily. / Core 46"}]},
+      {id:"FT-103",track:"freetalking",title:"How much money is enough?",issues:["naturalness","slot"],reason:"Both reflection moves are now complete spoken frames instead of floating discourse fragments.",pairs:[{label:"Useful move 1",before:"Up to a point, ___.",after:"That's true up to a point, but ___."},{label:"Useful move 2",before:"On balance, ___.",after:"Overall, I'd say ___."}]},
+      {id:"FT-104",track:"freetalking",title:"The age you would choose forever",issues:["naturalness"],reason:"The move now propagates Core 115's spoken counter rather than the formal Granted, but fragment.",pairs:[{label:"Useful move",before:"Granted, but ___.",after:"That's true, but it doesn't account for ___."}]},
+      {id:"FT-105",track:"freetalking",title:"One thing you would do differently",issues:["naturalness","alignment"],reason:"The new second move helps the learner explain a past choice; the old line made a vague abstract claim.",pairs:[{label:"Useful move",before:"That holds up to a point.",after:"It still made sense at the time."}]},
+      {id:"FT-106",track:"freetalking",title:"How speaking English has changed you",issues:["naturalness"],reason:"The reflective conclusion now uses the revised Core 117 spoken anchor.",pairs:[{label:"Useful move",before:"On balance, it's made me ___.",after:"Overall, it's made me ___."}]},
+      {id:"FT-107",track:"freetalking",title:"More money or more time?",issues:["naturalness"],reason:"Converted an author shorthand note into the complete line a tutor can say immediately.",pairs:[{label:"Tutor opening",before:"which do you need more of right now?",after:"Which do you need more of right now?"}]},
+      {id:"FT-108",track:"freetalking",title:"A hundred friends or three close ones?",issues:["naturalness","alignment"],reason:"The complete question defines the two real choices instead of leaving close ones implicit.",pairs:[{label:"Tutor opening",before:"which do you actually have?",after:"Which do you actually have: lots of friends or a few close ones?"}]},
+      {id:"FT-109",track:"freetalking",title:"Endless summer or endless winter?",issues:["naturalness"],reason:"Converted an author direction into one sentence the tutor can use as written.",pairs:[{label:"Tutor opening",before:"pick, then tell me about your worst season",after:"Pick one, then tell me about your worst season."}]},
+      {id:"FT-110",track:"freetalking",title:"Morning person or night owl?",issues:["naturalness"],reason:"Converted shorthand into a complete concrete opening question.",pairs:[{label:"Tutor opening",before:"when did you actually get up today?",after:"What time did you actually get up today?"}]},
+      {id:"FT-111",track:"freetalking",title:"A planned or spontaneous trip?",issues:["naturalness","alignment"],reason:"The prompt now asks the title's actual choice while anchoring it in the learner's last trip.",pairs:[{label:"Tutor opening",before:"what did you do on your last trip?",after:"Think about your last trip. Was it planned or spontaneous?"}]},
+      {id:"FT-112",track:"freetalking",title:"Travelling alone or with others?",issues:["naturalness","alignment"],reason:"The complete question names both options and gives the learner a specific trip to retrieve.",pairs:[{label:"Tutor opening",before:"which was your last trip?",after:"On your last trip, did you travel alone or with other people?"}]},
+      {id:"FT-113",track:"freetalking",title:"City or countryside?",issues:["naturalness"],reason:"The wording was already useful; it is now correctly stored as complete tutor speech.",pairs:[{label:"Tutor opening",before:"where do you live now, and is that a choice?",after:"Where do you live now, and is that a choice?"}]},
+      {id:"FT-114",track:"freetalking",title:"No internet or no air conditioning?",issues:["naturalness","alignment"],reason:"The old note did not contain a question. The replacement gives the tutor the exact choice to ask.",pairs:[{label:"Tutor opening",before:"for one summer",after:"One whole summer: no internet or no air conditioning?"}]},
+      {id:"FT-115",track:"freetalking",title:"Balance or a higher salary?",issues:["naturalness","alignment"],reason:"The opening now turns the abstract title into a concrete question about the learner's current job.",pairs:[{label:"Tutor opening",before:"which does your current job give you?",after:"Which does your current job give you more of: time or money?"}]},
+      {id:"FT-116",track:"freetalking",title:"Home or office?",issues:["naturalness"],reason:"The line is now a complete question with the real time frame and both alternatives stated.",pairs:[{label:"Tutor opening",before:"which did you do most this week?",after:"Which did you do more this week: work from home or go into the office?"}]},
+      {id:"FT-117",track:"freetalking",title:"Study in a café or at home?",issues:["naturalness"],reason:"The question is now complete and sounds like spoken English rather than a compressed note.",pairs:[{label:"Tutor opening",before:"where were you last time you concentrated?",after:"Where were you the last time you really concentrated?"}]},
+      {id:"FT-118",track:"freetalking",title:"Shop online or in a shop?",issues:["naturalness","alignment"],reason:"The opening explicitly asks the choice in the title instead of using the vague how.",pairs:[{label:"Tutor opening",before:"what did you last buy, and how?",after:"What did you last buy, and did you buy it online or in a shop?"}]},
+      {id:"FT-119",track:"freetalking",title:"Remember everything or forget bad memories?",issues:["naturalness","alignment"],reason:"The old prompt only asked one side. The new question presents the full choice immediately.",pairs:[{label:"Tutor opening",before:"what would you forget first?",after:"Would you rather remember everything or forget your worst memory?"}]},
+      {id:"FT-120",track:"freetalking",title:"Rich and anonymous or respected?",issues:["naturalness","alignment"],reason:"The generic which would you choose note is now the complete dilemma the tutor should ask.",pairs:[{label:"Tutor opening",before:"which would you choose?",after:"Would you rather be rich and anonymous or respected on an ordinary income?"}]},
+      {id:"FT-121",track:"freetalking",title:"Great at one thing or good at many?",issues:["naturalness","alignment"],reason:"The final topic now opens with a complete personal question rather than author shorthand.",pairs:[{label:"Tutor opening",before:"which are you now?",after:"Right now, are you great at one thing or good at many?"}]}
+    ];
+
+    const trackNames = {core:"Core", contextual:"Contextual", freetalking:"Freetalking"};
+    const sourcePaths = {
+      core: "tracks/1-core-patterns/toc/",
+      contextual: "tracks/2-contextual-english/toc/",
+      freetalking: "tracks/3-freetalking/toc/"
+    };
+    const issueNames = {naturalness:"spoken",load:"load",progression:"sequence",alignment:"alignment",slot:"slot",ownership:"owner"};
+    const state = {track:"all", issue:"all", query:""};
+    const storageKey = "podo-final-deep-pass-reviewed-v1";
+    const reviewed = new Set(JSON.parse(localStorage.getItem(storageKey) || "[]"));
+
+    function escapeHtml(value) {
+      return value.replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[char]);
+    }
+
+    function tokens(value) {
+      return value.match(/\s+|[\p{L}\p{N}_’'-]+|[^\s]/gu) || [];
+    }
+
+    function diffPair(before, after) {
+      const a = tokens(before);
+      const b = tokens(after);
+      const table = Array.from({length:a.length + 1}, () => Array(b.length + 1).fill(0));
+      for (let i = a.length - 1; i >= 0; i -= 1) {
+        for (let j = b.length - 1; j >= 0; j -= 1) {
+          table[i][j] = a[i] === b[j] ? table[i + 1][j + 1] + 1 : Math.max(table[i + 1][j], table[i][j + 1]);
+        }
+      }
+      let i = 0;
+      let j = 0;
+      const left = [];
+      const right = [];
+      while (i < a.length && j < b.length) {
+        if (a[i] === b[j]) {
+          left.push(escapeHtml(a[i]));
+          right.push(escapeHtml(b[j]));
+          i += 1;
+          j += 1;
+        } else if (table[i + 1][j] >= table[i][j + 1]) {
+          left.push(`<del>${escapeHtml(a[i])}</del>`);
+          i += 1;
+        } else {
+          right.push(`<ins>${escapeHtml(b[j])}</ins>`);
+          j += 1;
+        }
+      }
+      while (i < a.length) left.push(`<del>${escapeHtml(a[i++])}</del>`);
+      while (j < b.length) right.push(`<ins>${escapeHtml(b[j++])}</ins>`);
+      return {before:left.join(""), after:right.join("")};
+    }
+
+    function cardMarkup(change) {
+      const pairMarkup = change.pairs.map(pair => {
+        const diff = diffPair(pair.before, pair.after);
+        return `<div class="pair">
+          <div class="version before"><div class="version-label"><span>Before</span><span>${escapeHtml(pair.label)}</span></div><p class="version-text">${diff.before}</p></div>
+          <div class="version after"><div class="version-label"><span>After</span><span>${escapeHtml(pair.label)}</span></div><p class="version-text">${diff.after}</p></div>
+        </div>`;
+      }).join("");
+      const tags = change.issues.map(issue => `<span class="tag">${issueNames[issue]}</span>`).join("");
+      const checked = reviewed.has(change.id);
+      return `<article class="diff-card${checked ? " reviewed" : ""}" data-id="${change.id}" data-track="${change.track}" data-issues="${change.issues.join(" ")}">
+        <header class="card-head">
+          <span class="lesson-id">${change.id}</span>
+          <h3 class="card-title">${escapeHtml(change.title)}</h3>
+          <label class="review-check"><input type="checkbox" data-review="${change.id}" ${checked ? "checked" : ""}> Reviewed</label>
+        </header>
+        ${pairMarkup}
+        <footer class="card-foot">
+          <p class="reason"><strong>Why:</strong> ${escapeHtml(change.reason)} <a class="source-link" href="${sourcePaths[change.track]}${change.id}.md">Current brief ↗</a></p>
+          <div class="tags">${tags}</div>
+        </footer>
+      </article>`;
+    }
+
+    const list = document.getElementById("diff-list");
+    list.innerHTML = changes.map(cardMarkup).join("");
+
+    function saveReviewed() {
+      localStorage.setItem(storageKey, JSON.stringify([...reviewed]));
+    }
+
+    function visibleCards() {
+      return [...document.querySelectorAll(".diff-card")].filter(card => !card.hidden);
+    }
+
+    function updateProgress() {
+      const count = changes.filter(change => reviewed.has(change.id)).length;
+      document.getElementById("progress-copy").textContent = `${count} / ${changes.length} reviewed`;
+      document.getElementById("progress-fill").style.width = `${(count / changes.length) * 100}%`;
+    }
+
+    function applyFilters() {
+      const query = state.query.trim().toLowerCase();
+      let visible = 0;
+      document.querySelectorAll(".diff-card").forEach(card => {
+        const change = changes.find(item => item.id === card.dataset.id);
+        const haystack = `${change.id} ${change.title} ${change.reason} ${change.pairs.map(pair => `${pair.before} ${pair.after}`).join(" ")}`.toLowerCase();
+        const show = (state.track === "all" || change.track === state.track)
+          && (state.issue === "all" || change.issues.includes(state.issue))
+          && (!query || haystack.includes(query));
+        card.hidden = !show;
+        if (show) visible += 1;
+      });
+      document.getElementById("result-count").textContent = `${visible} of ${changes.length} lesson changes shown.`;
+      document.getElementById("empty-state").hidden = visible !== 0;
+    }
+
+    document.querySelectorAll("[data-track]").forEach(button => {
+      if (!button.classList.contains("filter-button")) return;
+      button.addEventListener("click", () => {
+        state.track = button.dataset.track;
+        document.querySelectorAll(".filter-button").forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+        applyFilters();
+      });
+    });
+
+    document.getElementById("search").addEventListener("input", event => {
+      state.query = event.target.value;
+      applyFilters();
+    });
+
+    document.getElementById("issue").addEventListener("change", event => {
+      state.issue = event.target.value;
+      applyFilters();
+    });
+
+    document.getElementById("highlight").addEventListener("change", event => {
+      document.body.classList.toggle("no-highlight", !event.target.checked);
+    });
+
+    list.addEventListener("change", event => {
+      const id = event.target.dataset.review;
+      if (!id) return;
+      event.target.checked ? reviewed.add(id) : reviewed.delete(id);
+      event.target.closest(".diff-card").classList.toggle("reviewed", event.target.checked);
+      saveReviewed();
+      updateProgress();
+    });
+
+    document.getElementById("review-visible").addEventListener("click", () => {
+      visibleCards().forEach(card => {
+        reviewed.add(card.dataset.id);
+        card.classList.add("reviewed");
+        card.querySelector("[data-review]").checked = true;
+      });
+      saveReviewed();
+      updateProgress();
+    });
+
+    applyFilters();
+    updateProgress();
+  </script>
+</body>
+</html>

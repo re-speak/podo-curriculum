@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Complex travel decisions and advocacy
-    en: Complex travel decisions and advocacy
+    ko: 여행 영어 · 따지고 요구하기 · C1
+    en: Travel English · Making your case · C1
+    ja: 旅行英語 · 主張と交渉 · C1
 
   description:
-    ko: Travel English · B2–C1 bridge
-    en: Travel English · B2–C1 bridge
+    ko: 취소 건을 윗선으로 올리고, 사고를 기록으로 남기고, 필요한 배려를 요구하고, 정보가 부족한 채로 안전한 결정을 내린다.
+    en: Escalate a cancellation, document an incident for insurance, advocate for what you need, and decide safely on partial information.
+    ja: 欠航をエスカレーションし、事故を記録に残し、必要な配慮を主張し、情報が足りない中で安全側の判断をする。
 
   tutorGroups:
     allowRandom: []

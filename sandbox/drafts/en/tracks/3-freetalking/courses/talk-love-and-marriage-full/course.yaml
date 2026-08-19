@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · Love and marriage · Full
-    en: Free talking · Love and marriage · Full
+    ko: 프리토킹 · 연애와 결혼 · B2–C1
+    en: Free talking · Love and marriage · B2–C1
+    ja: フリートーキング · 恋愛と結婚 · B2–C1
 
   description:
-    ko: 7 topics · Full version
-    en: 7 topics · Full version
+    ko: 민감도를 조절하며 연애와 결혼 경험·생각을 말한다.
+    en: Talk about love and marriage — what you have lived and what you think — dialling the sensitivity as you go.
+    ja: 踏み込む深さを調節しながら、恋愛と結婚の経験や考えを話す。
 
   tutorGroups:
     allowRandom: []

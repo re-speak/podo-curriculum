@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · Me lately · Accessible
-    en: Free talking · Me lately · Accessible
+    ko: 프리토킹 · 요즘의 나 · B1
+    en: Free talking · Me lately · B1
+    ja: フリートーキング · 最近のわたし · B1
 
   description:
-    ko: 12 topics · Accessible version
-    en: 12 topics · Accessible version
+    ko: 최근 경험을 구체적으로 꺼내 길게 말한다.
+    en: Pull a recent experience out in detail, and keep talking about it.
+    ja: 最近の出来事を具体的に取り出して、長く話す。
 
   tutorGroups:
     allowRandom: []

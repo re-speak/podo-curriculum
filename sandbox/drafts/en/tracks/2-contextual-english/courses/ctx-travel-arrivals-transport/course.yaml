@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Airports, arrivals and getting around
-    en: Airports, arrivals and getting around
+    ko: 여행 영어 · 공항과 이동 · A2–B1
+    en: Travel English · Arrivals · A2–B1
+    ja: 旅行英語 · 空港と移動 · A2–B1
 
   description:
-    ko: Travel English · A2–B1
-    en: Travel English · A2–B1
+    ko: 체크인·입국심사·못 들은 숫자 확인·숙소까지의 이동까지 도착 당일의 일을 처리한다.
+    en: Check in, clear immigration, confirm a number you did not hear, and get to your accommodation.
+    ja: チェックイン、入国審査、聞き取れなかった数字の確認、宿までの移動まで、到着日の用事を片づける。
 
   tutorGroups:
     allowRandom: []

@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: ADVANCED
+  difficulty: UPPER_INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Independent and social travel
-    en: Independent and social travel
+    ko: 여행 영어 · 혼자 하는 여행 · B2
+    en: Travel English · Travelling alone · B2
+    ja: 旅行英語 · ひとり旅と交流 · B2
 
   description:
-    ko: Travel English · B2
-    en: Travel English · B2
+    ko: 나에게 맞는 추천을 받고, 무리에 끼고, 처음 만난 사람과 계획을 짜고, 적대적이지 않게 단호히 항의한다.
+    en: Get a recommendation that fits you, join a group, make a plan with people you just met, and complain firmly without hostility.
+    ja: 自分に合う提案を引き出し、グループに加わり、初対面の人と計画を立て、敵意を出さずにきっぱり苦情を言う。
 
   tutorGroups:
     allowRandom: []

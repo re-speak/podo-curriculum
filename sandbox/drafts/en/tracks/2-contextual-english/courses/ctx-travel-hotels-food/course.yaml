@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Hotels, food and daily travel
-    en: Hotels, food and daily travel
+    ko: 여행 영어 · 숙소와 식사 · B1
+    en: Travel English · Hotels and food · B1
+    ja: 旅行英語 · 宿と食事 · B1
 
   description:
-    ko: Travel English · B1
-    en: Travel English · B1
+    ko: 아직 준비 안 된 방, 못 먹는 음식, 잘못 나온 주문, 바꿔야 하는 예약을 처리한다.
+    en: Handle a room that is not ready, a dish you cannot eat, a wrong order, and a booking that has to change.
+    ja: まだ使えない部屋、食べられない料理、間違った注文、変更したい予約に対処する。
 
   tutorGroups:
     allowRandom: []

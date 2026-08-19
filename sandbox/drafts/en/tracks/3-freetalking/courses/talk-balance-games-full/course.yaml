@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · Balance game · Full
-    en: Free talking · Balance game · Full
+    ko: 프리토킹 · 밸런스 게임 · B2–C1
+    en: Free talking · Balance games · B2–C1
+    ja: フリートーキング · 究極の二択 · B2–C1
 
   description:
-    ko: 15 topics · Full version
-    en: 15 topics · Full version
+    ko: 두 선택 중 하나를 빠르게 고르고, 구체적인 생활 장면과 조건 변화로 선택의 이유를 길게 설명한다.
+    en: Choose one of two fast, then justify it at length through concrete scenes and shifting conditions.
+    ja: 二つのうち一つを素早く選び、具体的な生活の場面と条件の変化で、その理由を長く説明する。
 
   tutorGroups:
     allowRandom: []

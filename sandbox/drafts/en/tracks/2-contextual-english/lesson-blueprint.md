@@ -167,6 +167,12 @@ not the tutor's voice or the partner's receptive line.
 - One answer box answers one question. A second prompt may only narrow the first.
 - Blank only the target frame. Hint chips contain `JP:EN` vocabulary, never articles, auxiliaries
   or inflections.
+- This boundary still applies on `p3-complete` and `transfer-scene`: the editable
+  `phrase-input` contains only words from a frame already established on `pN-fill`. Keep names,
+  objects, quantities, times, places and other scene facts visibly printed around it. When a frame
+  is discontinuous (`We'd like ___, if possible`), use two wrapping phrase inputs and leave the
+  lexical slot between them visible. Whole-sentence recall belongs in a full-width translate or
+  open-production field, not an inline pattern blank.
 - Fixed English printed around an inline blank is part of the same sentence and must render with
   the same font family, size and weight as the editable target. Do not use typography to make
   untargeted support language look less important.
@@ -217,8 +223,9 @@ labels; never use a correction arrow to rank two contextual choices.
 - it ends with the practical outcome resolved or clearly handed off;
 - no page follows it.
 
-Its 2–3 learner completions use the same wrapping phrase fields and exact Japanese `.target` cues
-as `p3-complete`. A connective or closing line that is not one of today's targets stays visible;
+Its 2–3 learner completions use the same frame-only wrapping phrase fields and exact Japanese
+`.target` cues as `p3-complete`; each answer must exactly reuse a controlled `pN-fill` frame. A
+connective or closing line that is not one of today's targets stays visible;
 do not turn it into an extra unscaffolded production test merely to add another blank.
 
 The transfer scene is not a preview of another lesson and never introduces its grammar. Its job is

@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · What came before · Full
-    en: Free talking · What came before · Full
+    ko: 프리토킹 · 지나온 것 · B2–C1
+    en: Free talking · What came before · B2–C1
+    ja: フリートーキング · 過ぎてきたもの · B2–C1
 
   description:
-    ko: 13 topics · Full version
-    en: 13 topics · Full version
+    ko: 이미 겪은 기억을 시간 순서와 디테일로 이야기한다.
+    en: Tell what you already lived through, in order and in detail.
+    ja: すでに経験した記憶を、時間の順とディテールで語る。
 
   tutorGroups:
     allowRandom: []

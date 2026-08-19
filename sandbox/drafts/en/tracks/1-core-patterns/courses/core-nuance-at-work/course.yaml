@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: ADVANCED
+  difficulty: UPPER_INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · At work & Degree and quantity with nuance
-    en: English Core · At work & Degree and quantity with nuance
+    ko: 영어 핵심 패턴 · 직장의 뉘앙스 · B2
+    en: English Core · Nuance at work · B2
+    ja: 英語コアパターン · 職場のニュアンス · B2
 
   description:
-    ko: Core 81–91 · B1+ → B2
-    en: Core 81–91 · B1+ → B2
+    ko: 직장에서 쓰는 말을 다루고, 정도와 양을 뉘앙스까지 조절해 말한다.
+    en: Handle workplace language, and control degree and quantity with nuance.
+    ja: 職場の言い回しを扱い、程度と量をニュアンスまで込めて言う。
 
   tutorGroups:
     allowRandom: []

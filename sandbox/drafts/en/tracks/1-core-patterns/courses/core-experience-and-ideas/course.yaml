@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Experience and how long & Connect ideas
-    en: English Core · Experience and how long & Connect ideas
+    ko: 영어 핵심 패턴 · 경험과 연결 · B1
+    en: English Core · Experience and ideas · B1
+    ja: 英語コアパターン · 経験と連結 · B1
 
   description:
-    ko: Core 48–59 · A2 → B1 → B1
-    en: Core 48–59 · A2 → B1 → B1
+    ko: 경험과 기간을 말하고, 생각을 이어 붙여 길게 말한다.
+    en: Talk about experience and how long, and join ideas into longer turns.
+    ja: 経験と期間を話し、考えをつないで長く話す。
 
   tutorGroups:
     allowRandom: []

@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: ADVANCED
+  difficulty: UPPER_INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Diplomacy and disagreement & Cause, evidence, consequence
-    en: English Core · Diplomacy and disagreement & Cause, evidence, consequence
+    ko: 영어 핵심 패턴 · 완곡함과 근거 · B2
+    en: English Core · Diplomacy and reason · B2
+    ja: 英語コアパターン · 婉曲と論拠 · B2
 
   description:
-    ko: Core 92–102 · B2
-    en: Core 92–102 · B2
+    ko: 부드럽게 반대하고, 원인과 근거와 결과를 논리대로 편다.
+    en: Disagree diplomatically, and lay out cause, evidence and consequence.
+    ja: 角を立てずに反対し、原因・根拠・結果を筋道立てて述べる。
 
   tutorGroups:
     allowRandom: []

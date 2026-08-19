@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Putting the important part first & Register and tone
-    en: English Core · Putting the important part first & Register and tone
+    ko: 영어 핵심 패턴 · 강조와 어조 · C1
+    en: English Core · Emphasis and tone · C1
+    ja: 英語コアパターン · 強調と語調 · C1
 
   description:
-    ko: Core 103–112 · B2 → C1
-    en: Core 103–112 · B2 → C1
+    ko: 중요한 부분을 앞에 두고, 자리에 맞게 어조와 격식을 맞춘다.
+    en: Put the important part first, and match register and tone to the room.
+    ja: 大事な部分を先に出し、場に合わせて語調と丁寧さを合わせる。
 
   tutorGroups:
     allowRandom: []

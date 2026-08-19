@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <title>English curriculum · Product decisions</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #10243e;
+      --ink-soft: #53657a;
+      --paper: #f7f9fc;
+      --white: #ffffff;
+      --line: #dfe6ee;
+      --blue: #176bff;
+      --blue-soft: #eaf2ff;
+      --mint: #22b38a;
+      --mint-soft: #e8f8f2;
+      --sun: #ffc857;
+      --sun-soft: #fff5d9;
+      --rose: #db5b75;
+      --rose-soft: #fff0f3;
+      --shadow: 0 18px 50px rgba(28, 53, 85, .10);
+      --radius: 24px;
+      --display: "Avenir Next", Avenir, "Trebuchet MS", sans-serif;
+      --body: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(90deg, rgba(23, 107, 255, .035) 1px, transparent 1px) 0 0 / 42px 42px,
+        linear-gradient(rgba(23, 107, 255, .035) 1px, transparent 1px) 0 0 / 42px 42px,
+        var(--paper);
+      color: var(--ink);
+      font-family: var(--body);
+      line-height: 1.5;
+    }
+
+    button, input { font: inherit; }
+    button { color: inherit; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid rgba(23, 107, 255, .35); outline-offset: 3px; }
+
+    .shell { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    .hero { padding: 34px 0 28px; }
+    .hero-bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; font: 800 13px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; }
+    .brand-mark { width: 24px; height: 24px; border-radius: 8px 8px 8px 2px; background: var(--blue); box-shadow: inset -6px -6px 0 rgba(255,255,255,.2); }
+    .quiet-link { color: var(--ink-soft); font-size: 13px; text-underline-offset: 3px; }
+
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 52px; align-items: end; padding-top: 54px; }
+    .eyebrow { margin: 0 0 14px; color: var(--blue); font: 800 12px/1 var(--display); letter-spacing: .13em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 0; font: 750 clamp(42px, 6vw, 78px)/.98 var(--display); letter-spacing: -.055em; }
+    .hero-copy { max-width: 640px; margin: 24px 0 0; color: var(--ink-soft); font-size: clamp(17px, 2vw, 20px); }
+
+    .outcome-card { position: relative; overflow: hidden; padding: 22px; border: 1px solid #cfdcf1; border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+    .outcome-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 7px; background: var(--blue); }
+    .outcome-card strong { display: block; margin-bottom: 8px; font: 800 21px/1.15 var(--display); letter-spacing: -.025em; }
+    .outcome-card p { margin: 0; color: var(--ink-soft); font-size: 14px; }
+
+    .fixed-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--line); box-shadow: 0 8px 22px rgba(28, 53, 85, .05); }
+    .fixed-item { padding: 16px 18px; background: rgba(255,255,255,.92); }
+    .fixed-item span { display: block; color: var(--ink-soft); font: 750 10px/1.2 var(--display); letter-spacing: .09em; text-transform: uppercase; }
+    .fixed-item strong { display: block; margin-top: 7px; font: 800 17px/1.1 var(--mono); }
+
+    .decision-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; align-items: start; padding: 42px 0 100px; }
+    .route { position: relative; display: grid; gap: 22px; }
+    .route::before { content: ""; position: absolute; top: 42px; bottom: 42px; left: 28px; width: 4px; border-radius: 99px; background: var(--line); }
+    .route-fill { position: absolute; z-index: 1; top: 42px; left: 28px; width: 4px; height: 0; border-radius: 99px; background: var(--blue); transition: height .5s cubic-bezier(.2,.8,.2,1); }
+
+    .decision { position: relative; z-index: 2; display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 16px; }
+    .station { display: grid; place-items: center; align-self: start; width: 58px; height: 58px; border: 4px solid var(--paper); border-radius: 50%; background: var(--line); color: var(--ink-soft); font: 850 15px/1 var(--mono); transition: background .25s, color .25s, transform .25s; }
+    .decision[data-complete="true"] .station { background: var(--blue); color: white; transform: scale(1.04); }
+
+    .decision-card { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.95); box-shadow: 0 10px 28px rgba(28, 53, 85, .06); }
+    .decision-head { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 16px; padding: 24px 24px 17px; }
+    .decision-kicker { margin: 0 0 6px; color: var(--ink-soft); font: 750 11px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; }
+    h2 { margin: 0; font: 800 clamp(24px, 3vw, 34px)/1.08 var(--display); letter-spacing: -.035em; }
+    .decision-question { margin: 10px 0 0; color: var(--ink-soft); }
+    .impact-pill { align-self: start; padding: 7px 10px; border-radius: 999px; background: var(--sun-soft); color: #815700; font: 800 10px/1 var(--display); letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+
+    .mini-map { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0 24px 20px; }
+    .mini-map.four { grid-template-columns: repeat(4, 1fr); }
+    .mini-map div { min-height: 70px; padding: 12px; border-radius: 15px; background: #f3f6fa; }
+    .mini-map span { display: block; color: var(--ink-soft); font-size: 11px; }
+    .mini-map strong { display: block; margin-top: 7px; font: 850 21px/1 var(--display); }
+
+    .options { display: grid; gap: 1px; padding: 1px 0 0; background: var(--line); }
+    .option { position: relative; display: grid; grid-template-columns: 26px minmax(0,1fr) auto; gap: 13px; align-items: start; padding: 19px 24px; background: var(--white); cursor: pointer; transition: background .2s; }
+    .option:hover { background: #fafcff; }
+    .option input { position: absolute; opacity: 0; pointer-events: none; }
+    .radio { display: grid; place-items: center; width: 22px; height: 22px; margin-top: 1px; border: 2px solid #b9c6d6; border-radius: 50%; background: white; }
+    .radio::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: white; transform: scale(0); transition: transform .18s; }
+    .option:has(input:checked) { background: var(--blue-soft); }
+    .option:has(input:checked) .radio { border-color: var(--blue); background: var(--blue); }
+    .option:has(input:checked) .radio::after { transform: scale(1); }
+    .option-title { display: block; font: 800 16px/1.2 var(--display); letter-spacing: -.012em; }
+    .option-copy { display: block; margin-top: 5px; color: var(--ink-soft); font-size: 13px; }
+    .recommended { align-self: start; padding: 6px 8px; border-radius: 8px; background: var(--mint-soft); color: #087556; font: 800 9px/1 var(--display); letter-spacing: .06em; text-transform: uppercase; }
+    .tradeoff { align-self: start; color: var(--ink-soft); font: 700 10px/1.2 var(--display); text-transform: uppercase; }
+
+    details { border-top: 1px solid var(--line); background: #fbfcfe; }
+    summary { padding: 14px 24px; color: var(--ink-soft); font-size: 13px; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; float: right; color: var(--blue); font: 900 17px/1 var(--display); }
+    details[open] summary::after { content: "−"; }
+    .evidence { padding: 0 24px 20px; color: var(--ink-soft); font-size: 13px; }
+    .evidence ul { margin: 0; padding-left: 18px; }
+    .evidence li + li { margin-top: 7px; }
+
+    .summary-panel { position: sticky; top: 20px; overflow: hidden; border: 1px solid #cfdcf1; border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+    .summary-top { padding: 24px; background: var(--ink); color: white; }
+    .summary-label { margin: 0; color: #b9c8db; font: 750 10px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; }
+    .progress-number { margin-top: 12px; font: 850 48px/.9 var(--display); letter-spacing: -.05em; }
+    .progress-number small { color: #9fb1c6; font-size: 18px; letter-spacing: 0; }
+    .progress-track { overflow: hidden; height: 7px; margin-top: 18px; border-radius: 99px; background: rgba(255,255,255,.14); }
+    .progress-bar { height: 100%; width: 0; border-radius: inherit; background: var(--sun); transition: width .35s ease; }
+    .summary-state { margin: 13px 0 0; color: #d6e0ec; font-size: 13px; }
+
+    .summary-body { padding: 20px; }
+    .summary-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+    .summary-list li { display: grid; grid-template-columns: 20px minmax(0,1fr); gap: 9px; color: var(--ink-soft); font-size: 13px; }
+    .summary-list .dot { display: grid; place-items: center; width: 19px; height: 19px; border-radius: 50%; background: #eef2f6; color: #8393a6; font: 800 10px/1 var(--mono); }
+    .summary-list li.done { color: var(--ink); }
+    .summary-list li.done .dot { background: var(--mint-soft); color: #087556; }
+
+    .unlock { margin-top: 18px; padding: 15px; border-radius: 16px; background: var(--sun-soft); }
+    .unlock strong { display: block; font: 800 14px/1.2 var(--display); }
+    .unlock span { display: block; margin-top: 5px; color: #745b1b; font-size: 12px; }
+    .unlock.ready { background: var(--mint-soft); }
+    .unlock.ready span { color: #176f59; }
+
+    .actions { display: grid; gap: 9px; margin-top: 18px; }
+    .button { min-height: 46px; padding: 0 16px; border: 0; border-radius: 13px; font: 800 13px/1 var(--display); cursor: pointer; transition: transform .18s, opacity .18s; }
+    .button:hover { transform: translateY(-1px); }
+    .button.primary { background: var(--blue); color: white; box-shadow: 0 8px 18px rgba(23,107,255,.22); }
+    .button.secondary { border: 1px solid var(--line); background: white; }
+    .button.text { min-height: 34px; color: var(--ink-soft); background: transparent; font-weight: 650; }
+    .button:disabled { cursor: default; opacity: .45; transform: none; }
+
+    .scope-note { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 11px; }
+    .toast { position: fixed; z-index: 20; right: 24px; bottom: 24px; padding: 13px 16px; border-radius: 12px; background: var(--ink); color: white; box-shadow: var(--shadow); font-size: 13px; opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    .blocker-band { margin: 0 0 96px; padding: 26px; border: 1px solid #f3ccd4; border-radius: var(--radius); background: var(--rose-soft); }
+    .blocker-band h2 { font-size: 25px; }
+    .blocker-band p { margin: 9px 0 0; color: #735360; }
+    .blocker-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+    .blocker-grid div { padding: 15px; border-radius: 15px; background: rgba(255,255,255,.72); }
+    .blocker-grid strong { display: block; font: 800 13px/1.2 var(--display); }
+    .blocker-grid span { display: block; margin-top: 5px; color: #735360; font-size: 12px; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .decision-layout { grid-template-columns: 1fr; }
+      .hero-grid { gap: 26px; padding-top: 40px; }
+      .outcome-card { max-width: 520px; }
+      .summary-panel { position: relative; top: auto; grid-row: 1; }
+      .fixed-strip { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 22px, 1180px); }
+      .hero { padding-top: 22px; }
+      .hero-bar { align-items: flex-start; }
+      .quiet-link { max-width: 120px; text-align: right; }
+      h1 { font-size: 45px; }
+      .hero-copy { font-size: 16px; }
+      .fixed-strip { grid-template-columns: 1fr 1fr; border-radius: 15px; }
+      .fixed-item { padding: 13px; }
+      .fixed-item strong { font-size: 14px; }
+      .decision-layout { gap: 18px; padding-top: 28px; }
+      .route { gap: 16px; }
+      .route::before, .route-fill { left: 20px; }
+      .decision { grid-template-columns: 42px minmax(0,1fr); gap: 10px; }
+      .station { width: 42px; height: 42px; border-width: 3px; font-size: 12px; }
+      .decision-head { grid-template-columns: 1fr; padding: 19px 18px 14px; }
+      .impact-pill { justify-self: start; }
+      .mini-map { padding: 0 18px 16px; }
+      .mini-map.four { grid-template-columns: repeat(2, 1fr); }
+      .mini-map div { min-height: 60px; padding: 10px; }
+      .mini-map strong { font-size: 18px; }
+      .option { grid-template-columns: 24px minmax(0,1fr); padding: 17px 18px; }
+      .recommended, .tradeoff { grid-column: 2; justify-self: start; }
+      summary { padding-inline: 18px; }
+      .evidence { padding-inline: 18px; }
+      .blocker-grid { grid-template-columns: 1fr; }
+      .toast { right: 11px; bottom: 11px; left: 11px; text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="shell">
+      <div class="hero-bar">
+        <div class="brand"><span class="brand-mark" aria-hidden="true"></span>Podo English</div>
+        <a class="quiet-link" href="reference/product-decision-packet.md">Read the full evidence packet</a>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Decisions recorded · 2026-08-13</p>
+          <h1>Four decisions.<br>One bounded next move.</h1>
+          <p class="hero-copy">The selected product direction is recorded below. You can still explore alternatives without changing any product data.</p>
+        </div>
+        <aside class="outcome-card">
+          <strong>What happens next?</strong>
+          <p>After native review, planning can cover Core, the redesigned practical Contextual courses, and Freetalking. Trial, prestudy and shipping remain deferred.</p>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="fixed-strip" aria-label="Already settled product facts">
+      <div class="fixed-item"><span>Language</span><strong>EN</strong></div>
+      <div class="fixed-item"><span>Audience</span><strong>Japan</strong></div>
+      <div class="fixed-item"><span>Product</span><strong>BASIC</strong></div>
+      <div class="fixed-item"><span>Lesson</span><strong>25 min</strong></div>
+    </section>
+
+    <div class="decision-layout">
+      <section class="route" aria-label="Four product decisions">
+        <div class="route-fill" id="routeFill" aria-hidden="true"></div>
+
+        <article class="decision" id="decision-courses" data-key="courses" data-complete="false">
+          <div class="station">01</div>
+          <div class="decision-card">
+            <div class="decision-head">
+              <div>
+                <p class="decision-kicker">Course shape</p>
+                <h2>Keep the natural learning arcs?</h2>
+                <p class="decision-question">This determines how many courses appear and where learners pause.</p>
+              </div>
+              <span class="impact-pill">High impact</span>
+            </div>
+            <div class="mini-map" aria-label="Recommended course counts">
+              <div><span>Core</span><strong>11</strong></div>
+              <div><span>Contextual</span><strong>10</strong></div>
+              <div><span>Talk</span><strong>22</strong></div>
+            </div>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="courses" value="natural-arcs" data-label="Natural learning arcs" checked>
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Use natural learning arcs</span><span class="option-copy">Core units stay intact; Contextual stays in ten visible practical courses.</span></span>
+                <span class="recommended">Approved</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="courses" value="fewer-courses" data-label="Fewer, larger courses">
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Use fewer, larger courses</span><span class="option-copy">A shorter catalog, but broader labels and less visible practical coverage.</span></span>
+                <span class="tradeoff">More rework</span>
+              </label>
+            </div>
+            <details>
+              <summary>Why this is recommended</summary>
+              <div class="evidence"><ul><li>Core courses land at 10–13 lessons without splitting a unit.</li><li>Contextual has five six-lesson Travel courses and five six-lesson Business courses, progressing from low-intermediate to B2–C1 bridge.</li><li>All proposed Core and Contextual identifiers were unused in the current stage snapshot.</li></ul></div>
+            </details>
+          </div>
+        </article>
+
+        <article class="decision" id="decision-freetalk" data-key="freetalk" data-complete="false">
+          <div class="station">02</div>
+          <div class="decision-card">
+            <div class="decision-head">
+              <div>
+                <p class="decision-kicker">Freetalking</p>
+                <h2>Two versions or one adaptive deck?</h2>
+                <p class="decision-question">The ideas stay equally adult; only the language load changes.</p>
+              </div>
+              <span class="impact-pill">22 courses</span>
+            </div>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="freetalk" value="separate" data-label="Separate accessible and full courses" checked>
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Separate accessible and full courses</span><span class="option-copy">Clear level choice, stable decks, simpler tutoring.</span></span>
+                <span class="recommended">Approved</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="freetalk" value="adaptive" data-label="One adaptive deck per theme">
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">One adaptive deck per theme</span><span class="option-copy">Fewer courses, but adds runtime state and tutor decision load.</span></span>
+                <span class="tradeoff">New product logic</span>
+              </label>
+            </div>
+            <details>
+              <summary>See the shape</summary>
+              <div class="evidence"><ul><li>11 themes × 2 language loads = 22 courses.</li><li>Each accessible/full pair sits next to each other in the existing Freetalking section.</li><li>The accessible version simplifies language, never the thinking.</li></ul></div>
+            </details>
+          </div>
+        </article>
+
+        <article class="decision" id="decision-trial" data-key="trial" data-complete="false">
+          <div class="station">03</div>
+          <div class="decision-card">
+            <div class="decision-head">
+              <div>
+                <p class="decision-kicker">Trial & report</p>
+                <h2>Use four starting gates?</h2>
+                <p class="decision-question">The trial recommends where to begin; it does not certify a CEFR level.</p>
+              </div>
+              <span class="impact-pill">Honest claim</span>
+            </div>
+            <div class="mini-map four" aria-label="Four recommended starting gates">
+              <div><span>Foundation</span><strong>1</strong></div>
+              <div><span>Developing</span><strong>30</strong></div>
+              <div><span>Independent</span><strong>54</strong></div>
+              <div><span>Advanced</span><strong>87</strong></div>
+            </div>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="trial" value="four-gates" data-label="Four recommended starting gates">
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Use four starting gates</span><span class="option-copy">Core 1, 30, 54 and 87; report says “recommended starting point.”</span></span>
+                <span class="tradeoff">Original recommendation</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="trial" value="defer" data-label="Defer trial mapping" checked>
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Defer the trial mapping</span><span class="option-copy">Course planning can proceed; trial/report implementation waits.</span></span>
+                <span class="recommended">Approved</span>
+              </label>
+            </div>
+            <details>
+              <summary>What still needs engineering</summary>
+              <div class="evidence"><ul><li>Trial-to-course mapping must become country-aware.</li><li>Older progression helpers must include country scope.</li><li>The deployment manifest needs a way to declare trial bands.</li></ul></div>
+            </details>
+          </div>
+        </article>
+
+        <article class="decision" id="decision-prestudy" data-key="prestudy" data-complete="false">
+          <div class="station">04</div>
+          <div class="decision-card">
+            <div class="decision-head">
+              <div>
+                <p class="decision-kicker">Before class</p>
+                <h2>What should prestudy do?</h2>
+                <p class="decision-question">Production requires a prestudy slot for every lesson.</p>
+              </div>
+              <span class="impact-pill">Ship blocker</span>
+            </div>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="prestudy" value="preview" data-label="Purpose-built 5–7 page preview">
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Create a 5–7 page preview</span><span class="option-copy">Hear, notice, check meaning, retrieve once, finish.</span></span>
+                <span class="tradeoff">Original recommendation</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="prestudy" value="reuse" data-label="Reuse the full lesson as prestudy">
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Reuse the full lesson</span><span class="option-copy">Fastest technically, but duplicates class and weakens the learning arc.</span></span>
+                <span class="tradeoff">Not advised</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="prestudy" value="defer" data-label="Defer prestudy" checked>
+                <span class="radio" aria-hidden="true"></span>
+                <span><span class="option-title">Defer prestudy</span><span class="option-copy">We can prototype lectures, but nothing becomes deployable.</span></span>
+                <span class="recommended">Approved · blocks shipping</span>
+              </label>
+            </div>
+            <details>
+              <summary>What the preview contains</summary>
+              <div class="evidence"><ul><li>Core/Contextual: the two targets, one meaning check and one retrieval task.</li><li>Freetalking: topic preview, optional vocabulary and two private think prompts.</li><li>It never duplicates the 25-minute class or scripts the learner's opinion.</li></ul></div>
+            </details>
+          </div>
+        </article>
+      </section>
+
+      <aside class="summary-panel" aria-live="polite">
+        <div class="summary-top">
+          <p class="summary-label">Decision progress</p>
+          <div class="progress-number"><span id="progressCount">0</span><small> / 4</small></div>
+          <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+          <p class="summary-state" id="progressState">Four quick choices remain.</p>
+        </div>
+        <div class="summary-body">
+          <ul class="summary-list" id="summaryList">
+            <li data-summary="courses"><span class="dot">1</span><span>Course shape</span></li>
+            <li data-summary="freetalk"><span class="dot">2</span><span>Freetalking versions</span></li>
+            <li data-summary="trial"><span class="dot">3</span><span>Trial starting gates</span></li>
+            <li data-summary="prestudy"><span class="dot">4</span><span>Prestudy format</span></li>
+          </ul>
+          <div class="unlock" id="unlockBox">
+            <strong id="unlockTitle">No commitment yet</strong>
+            <span id="unlockCopy">Your selections stay in this browser until you reset them.</span>
+          </div>
+          <div class="actions">
+            <button class="button primary" id="acceptAll" type="button">Restore recorded decisions</button>
+            <button class="button secondary" id="copySummary" type="button" disabled>Copy decision summary</button>
+            <button class="button text" id="resetChoices" type="button">Reset choices</button>
+          </div>
+          <p class="scope-note">No database or deployment changes happen here. This page records a decision summary only.</p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="blocker-band">
+      <p class="decision-kicker">Clear boundary</p>
+      <h2>What these decisions do—and do not—unlock</h2>
+      <div class="blocker-grid">
+        <div><strong>They unlock</strong><span>Course-plan generation and the prestudy prototype.</span></div>
+        <div><strong>They do not bypass</strong><span>Native catalog review before new lesson production.</span></div>
+        <div><strong>Regular pilots</strong><span>Can proceed after native review without waiting for trial engineering.</span></div>
+        <div><strong>Trial shipping</strong><span>Still needs country-aware progression and a trial-band manifest.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var keys = ["courses", "freetalk", "trial", "prestudy"];
+      var recorded = {
+        courses: "natural-arcs",
+        freetalk: "separate",
+        trial: "defer",
+        prestudy: "defer"
+      };
+      var storageKey = "podo-english-product-decisions-v2";
+      var toastTimer;
+
+      function readChoices() {
+        try { return JSON.parse(localStorage.getItem(storageKey)) || {}; }
+        catch (_) { return {}; }
+      }
+
+      function writeChoices(choices) {
+        try { localStorage.setItem(storageKey, JSON.stringify(choices)); }
+        catch (_) { /* The page still works when storage is unavailable. */ }
+      }
+
+      function selectedInput(key) {
+        return document.querySelector('input[name="' + key + '"]:checked');
+      }
+
+      function collectChoices() {
+        var result = {};
+        keys.forEach(function (key) {
+          var input = selectedInput(key);
+          if (input) result[key] = input.value;
+        });
+        return result;
+      }
+
+      function showToast(message) {
+        var toast = document.getElementById("toast");
+        toast.textContent = message;
+        toast.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toast.classList.remove("show"); }, 2200);
+      }
+
+      function update() {
+        var choices = collectChoices();
+        var count = Object.keys(choices).length;
+        writeChoices(choices);
+
+        document.getElementById("progressCount").textContent = String(count);
+        document.getElementById("progressBar").style.width = (count * 25) + "%";
+        document.getElementById("progressState").textContent = count === 4
+          ? "Decision set complete."
+          : (4 - count) + (4 - count === 1 ? " choice remains." : " choices remain.");
+        document.getElementById("copySummary").disabled = count !== 4;
+
+        var route = document.querySelector(".route");
+        var routeHeight = Math.max(0, route.offsetHeight - 84);
+        document.getElementById("routeFill").style.height = (routeHeight * count / 4) + "px";
+
+        keys.forEach(function (key) {
+          var input = selectedInput(key);
+          var card = document.querySelector('[data-key="' + key + '"]');
+          var summary = document.querySelector('[data-summary="' + key + '"]');
+          card.dataset.complete = input ? "true" : "false";
+          summary.classList.toggle("done", Boolean(input));
+          summary.querySelector(".dot").textContent = input ? "✓" : String(keys.indexOf(key) + 1);
+          summary.querySelector("span:last-child").textContent = input
+            ? input.dataset.label
+            : ["Course shape", "Freetalking versions", "Trial starting gates", "Prestudy format"][keys.indexOf(key)];
+        });
+
+        var unlock = document.getElementById("unlockBox");
+        var title = document.getElementById("unlockTitle");
+        var copy = document.getElementById("unlockCopy");
+        unlock.classList.toggle("ready", count === 4);
+        if (count === 4) {
+          title.textContent = "Ready to build the plan";
+          copy.textContent = choices.prestudy === "defer"
+            ? "Course planning can start; deployable pilots remain blocked by prestudy."
+            : "Course planning and the prestudy prototype can start after this summary is handed off.";
+        } else if (count > 0) {
+          title.textContent = "Direction is taking shape";
+          copy.textContent = "Complete the remaining choices to produce a clean handoff.";
+        } else {
+          title.textContent = "No commitment yet";
+          copy.textContent = "Your selections stay in this browser until you reset them.";
+        }
+      }
+
+      document.querySelectorAll('input[type="radio"]').forEach(function (input) {
+        input.addEventListener("change", update);
+      });
+
+      document.getElementById("acceptAll").addEventListener("click", function () {
+        keys.forEach(function (key) {
+          var input = document.querySelector('input[name="' + key + '"][value="' + recorded[key] + '"]');
+          input.checked = true;
+        });
+        update();
+        showToast("Recorded decisions restored.");
+      });
+
+      document.getElementById("resetChoices").addEventListener("click", function () {
+        document.querySelectorAll('input[type="radio"]').forEach(function (input) { input.checked = false; });
+        try { localStorage.removeItem(storageKey); } catch (_) {}
+        update();
+        showToast("Choices reset.");
+      });
+
+      document.getElementById("copySummary").addEventListener("click", function () {
+        var choices = collectChoices();
+        var lines = ["English product decisions — 2026-08-13", ""];
+        keys.forEach(function (key, index) {
+          var input = selectedInput(key);
+          lines.push((index + 1) + ". " + input.dataset.label);
+        });
+        lines.push("", "Fixed: LANG_TYPE=EN · COUNTRY_CODE=JP · BASIC · 25 minutes");
+        var text = lines.join("\n");
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () { showToast("Decision summary copied."); });
+        } else {
+          var area = document.createElement("textarea");
+          area.value = text;
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand("copy");
+          area.remove();
+          showToast("Decision summary copied.");
+        }
+      });
+
+      var saved = readChoices();
+      keys.forEach(function (key) {
+        if (!saved[key]) return;
+        var input = document.querySelector('input[name="' + key + '"][value="' + saved[key] + '"]');
+        if (input) input.checked = true;
+      });
+      window.addEventListener("resize", update);
+      update();
+    }());
+  </script>
+</body>
+</html>

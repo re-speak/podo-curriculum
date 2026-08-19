@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: ADVANCED
+  difficulty: UPPER_INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Meetings, presentations and decisions
-    en: Meetings, presentations and decisions
+    ko: 비즈니스 영어 · 회의와 발표 · B2
+    en: Business English · Meetings · B2
+    ja: ビジネス英語 · 会議と発表 · B2
 
   description:
-    ko: Business English · B1+–B2
-    en: Business English · B1+–B2
+    ko: 확인하려고 끼어들고, 결정된 것을 정리하고, 결론부터 제안하고, 윗사람에게도 건설적으로 반대한다.
+    en: Interrupt to clarify, summarise a decision, present your recommendation up front, and disagree upward constructively.
+    ja: 確認のために割って入り、決まったことをまとめ、結論から提案し、目上にも建設的に反対する。
 
   tutorGroups:
     allowRandom: []

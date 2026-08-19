@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: International workplace essentials
-    en: International workplace essentials
+    ko: 비즈니스 영어 · 사무실 기본 · A2–B1
+    en: Business English · At the office · A2–B1
+    ja: ビジネス英語 · 職場の基本 · A2–B1
 
   description:
-    ko: Business English · A2–B1
-    en: Business English · A2–B1
+    ko: 맡은 역할을 소개하고, 통화 문제를 해결하고, 시차를 넘어 일정을 잡고, 전달되는 진행 보고를 한다.
+    en: Introduce your role, repair a bad call, schedule across time zones, and give a progress update that lands.
+    ja: 自分の役割を伝え、通話の不具合を直し、時差をまたいで日程を決め、伝わる進捗報告をする。
 
   tutorGroups:
     allowRandom: []

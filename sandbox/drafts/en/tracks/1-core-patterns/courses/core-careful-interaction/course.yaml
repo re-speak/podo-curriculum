@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Careful requests and information & Imagine and infer
-    en: English Core · Careful requests and information & Imagine and infer
+    ko: 영어 핵심 패턴 · 조심스러운 요청 · B1
+    en: English Core · Careful requests · B1
+    ja: 英語コアパターン · 慎重な依頼 · B1
 
   description:
-    ko: Core 60–70 · B1
-    en: Core 60–70 · B1
+    ko: 조심스럽게 부탁하고, 무례하지 않게 정보를 묻고, 그럴 법한 일을 짚는다.
+    en: Make careful requests, ask for information without sounding blunt, and reason about what might be.
+    ja: 丁寧に頼み、ぶしつけにならずに情報を求め、あり得ることを推し量る。
 
   tutorGroups:
     allowRandom: []

@@ -14,16 +14,21 @@ spec:
   lessonTime: 25
   # English remains pre-production; generation must never enable a course.
   enabled: false
-  difficulty: BEGINNER
+  difficulty: UPPER_BEGINNER
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: English Core · Plans, rules and advice & Describe and compare
-    en: English Core · Plans, rules and advice & Describe and compare
+    ko: 영어 핵심 패턴 · 계획과 비교 · A2
+    en: English Core · Plans and comparison · A2
+    ja: 英語コアパターン · 予定と比較 · A2
 
   description:
-    ko: Core 37–47 · A2
-    en: Core 37–47 · A2
+    ko: 계획과 규칙과 조언을 말하고, 사물을 묘사하고 비교한다.
+    en: Talk about plans, rules and advice, and describe and compare things.
+    ja: 予定・決まり・助言を話し、ものを描写して比べる。
 
   tutorGroups:
     allowRandom: []

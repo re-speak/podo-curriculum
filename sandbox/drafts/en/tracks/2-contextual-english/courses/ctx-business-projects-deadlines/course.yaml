@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Projects, ownership and deadlines
-    en: Projects, ownership and deadlines
+    ko: 비즈니스 영어 · 프로젝트와 마감 · B1
+    en: Business English · Projects · B1
+    ja: ビジネス英語 · 案件と締め切り · B1
 
   description:
-    ko: Business English · B1
-    en: Business English · B1
+    ko: 우선순위를 확인하고, 담당을 분명히 하고, 위험을 일찍 알리고, 나쁜 소식을 다음 수와 함께 전한다.
+    en: Confirm priorities, clarify who owns an action, raise a risk early, and deliver bad news with a next step.
+    ja: 優先順位を確認し、担当の所在をはっきりさせ、リスクを早めに出し、悪い知らせを次の一手と一緒に伝える。
 
   tutorGroups:
     allowRandom: []

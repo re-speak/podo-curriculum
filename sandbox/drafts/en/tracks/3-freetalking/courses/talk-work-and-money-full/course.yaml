@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · Work and money · Full
-    en: Free talking · Work and money · Full
+    ko: 프리토킹 · 일과 돈 · B2–C1
+    en: Free talking · Work and money · B2–C1
+    ja: フリートーキング · 仕事とお金 · B2–C1
 
   description:
-    ko: 12 topics · Full version
-    en: 12 topics · Full version
+    ko: 숫자와 장면이 있는 일·돈 경험을 말한다.
+    en: Talk about work and money with real numbers and a real scene attached.
+    ja: 数字と場面のある仕事とお金の経験を話す。
 
   tutorGroups:
     allowRandom: []

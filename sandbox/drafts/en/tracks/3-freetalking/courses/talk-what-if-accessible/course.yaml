@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: INTERMEDIATE
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · What if · Accessible
-    en: Free talking · What if · Accessible
+    ko: 프리토킹 · 만약에 · B1
+    en: Free talking · What if · B1
+    ja: フリートーキング · もしも · B1
 
   description:
-    ko: 12 topics · Accessible version
-    en: 12 topics · Accessible version
+    ko: 가상의 선택을 빠르게 고르고 이유와 결과를 확장해서 말한다.
+    en: Pick fast in a hypothetical, then open out the reason and what would follow.
+    ja: 仮の選択を素早く決め、理由と結果を広げて話す。
 
   tutorGroups:
     allowRandom: []

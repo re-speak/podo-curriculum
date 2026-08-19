@@ -16,14 +16,19 @@ spec:
   enabled: false
   difficulty: ADVANCED
 
+  # Three name columns, three descriptions: the app picks by locale, so `ja` is
+  # what this Japanese-market track puts on screen and `ko` is grape's admin
+  # label. Both come from tools/course-copy.json, never from the TOC — a
+  # generated title was English in all three slots and 72 characters long.
   title:
-    # grape requires ko as its admin fallback even when LANG_TYPE is EN.
-    ko: Free talking · Small things · Full
-    en: Free talking · Small things · Full
+    ko: 프리토킹 · 사소한 것들 · B2–C1
+    en: Free talking · Small things · B2–C1
+    ja: フリートーキング · ささいなこと · B2–C1
 
   description:
-    ko: 13 topics · Full version
-    en: 13 topics · Full version
+    ko: 사소하고 웃긴 경험을 구체적으로 풀어 말한다.
+    en: Unpack the small, funny things that happen to you, in detail.
+    ja: ささいで笑える経験を、具体的にほどいて話す。
 
   tutorGroups:
     allowRandom: []
