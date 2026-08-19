@@ -1,6 +1,6 @@
 # Working in `english/`
 
-**Read [`../ux-philosophy.md`](../ux-philosophy.md) before touching anything in this
+**Read [`../../../shared/ux-philosophy.md`](../../../shared/ux-philosophy.md) before touching anything in this
 folder — every time, including small edits.** It is the shared contract for every lesson page in
 this repo, not a Korean-only document: one activity per page, instant clarity, minimal everything,
 one blue tutor-script box, one boxed component that *fills* the page, receptive → productive.
@@ -14,9 +14,10 @@ you are about to make conflicts with either, say so and ask — don't quietly de
 and Freetalking canonical decks, three production blueprints, strict parsers, generated briefs and
 grammar map, a deck checker and an owner-approved native-review catalog.
 [`BUILD-PLAN.md`](./BUILD-PLAN.md) is the reconciled list of what remains and who unblocks whom.
-The catalog hold was lifted on 2026-08-18. Core and Freetalking may now proceed through their
-representative/batch gates; Contextual still needs its replacement pilot, and Pronunciation remains
-planning-only.
+The catalog hold was lifted on 2026-08-18. On 2026-08-19 the owner approved the complete
+representative set: Core 20/32/45/82, replacement Contextual CTX-1, and the FT-1/7/9/49
+accessible/full pairs. Core, Contextual and Freetalking may now proceed in course-sized batches;
+Pronunciation remains planning-only.
 
 ---
 
@@ -138,20 +139,20 @@ So:
 
 ### Mandatory pilot gate
 
-Core's first pilot and both Freetalking FT-1 variants are approved canonical decks. The owner also
-passed the current 303-item native-review catalog on 2026-08-18, so the catalog hold is lifted.
-Core still needs three structurally different lessons reviewed together before wider expansion.
-Freetalking may proceed in paired accessible/full course batches using the matching approved FT-1
-shell. Contextual still has no current pilot: its first revised deck must be authored and visually
-reviewed by hand, then stop for explicit approval. Structural checks never approve a pilot.
+Core 20, replacement Contextual CTX-1, and both Freetalking FT-1 variants are approved canonical
+decks. The owner passed the current 303-item native-review catalog on 2026-08-18 and explicitly
+approved the remaining representative decks on 2026-08-19. The course-batch gate is therefore open
+for all three production tracks. Freetalking must still be authored as matched accessible/full
+pairs. Structural checks validate a batch; they never substitute for owner approval of a new
+canonical shell.
 
 ### The inputs, in order
 
-1. **A deck skeleton.** `tools/new_lesson.py` lifts metadata, shared paths and the load-order-bearing
-   scripts from an approved English canonical deck, removes its pages, checks references and
-   refuses overwrite. Core defaults to its approved pilot. Freetalking writers pass the matching
-   approved accessible or full FT-1 deck with `--from-deck`. Contextual requires its own approved
-   pilot before `--from-deck` is legitimate. Never use a Korean deck, whose shell loads `yomi.js`.
+1. **A deck skeleton.** `tools/authoring/en/new_lesson.py` lifts metadata, shared paths and the
+   load-order-bearing scripts from an approved English canonical deck, removes its pages, checks
+   references and refuses overwrite. Core and Contextual default to their approved pilots.
+   Freetalking writers pass the matching approved accessible or full FT-1 deck with `--from-deck`.
+   Never use a Korean deck, whose shell loads `yomi.js`.
 2. **The generated lesson brief.** Run `tools/build_lesson_briefs.py`; read the stable-id brief in
    `tracks/<track>/toc/`. It carries the exact TOC facts, adjacent context and negative sequence
    guardrails. Never hand-edit it.
@@ -208,8 +209,8 @@ not a matter of taste.
 
 - **`tracks/`** — the learner-facing curriculum: `1-core-patterns` · `2-contextual-english` ·
   `3-freetalking`, plus planning-only `4-pronunciation`. The three production-facing tracks now
-  have a blueprint; Core and both Freetalking language-load variants have approved canonical decks.
-  Contextual still needs its revised pilot.
+  have a blueprint and an approved canonical deck (two matching shells for Freetalking's two
+  language-load variants).
 - **`reference/`** — the author-only source trail: teaching philosophy and the pattern standard,
   the source hierarchy and provenance policy, the proposed evidence-first build method, the
   grammar coverage map, the rationale, and the transformation map from the linked Podolingo doc.

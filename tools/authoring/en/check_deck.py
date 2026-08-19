@@ -48,7 +48,9 @@ trace:
 
 7. **Core production parity.** Model and replay keep the same turn sequence,
    roleplays use profile images, live Free Talk labels every real speaker, and
-   completion targets remain visibly connected to their Japanese cues.
+   completion targets remain visibly connected to their Japanese cues. Late
+   inline blanks reuse controlled-fill targets exactly, leaving scene facts and
+   slot vocabulary visible.
 
 8. **Cross-language target highlighting.** Every Core and Contextual teaching
    or reading model highlights the same number of target units in English and
@@ -272,7 +274,11 @@ def target_highlight_issues(page_chunks):
         for index, (en_row, ja_row) in enumerate(zip(english, japanese), start=1):
             en_targets = class_tag_count(en_row, "ending")
             ja_targets = class_tag_count(ja_row, "ending")
-            if not en_targets or en_targets != ja_targets:
+            # English can express one frame in several non-contiguous pieces
+            # while Japanese maps the same meaning to one contiguous phrase.
+            # Require visible cueing on both sides; do not pretend the two
+            # languages must have the same number of spans.
+            if not en_targets or not ja_targets:
                 errors.append(
                     f"{page_id} row {index}: mirrored target highlights differ "
                     f"(EN={en_targets} JA={ja_targets})"
@@ -281,12 +287,14 @@ def target_highlight_issues(page_chunks):
     for page_id, chunk in page_chunks.items():
         if not re.fullmatch(r"p[12]-fill", page_id):
             continue
-        inputs = len(SLOT_INPUT.findall(chunk))
-        cues = class_tag_count(chunk, "target")
-        if inputs and inputs != cues:
+        blocks = TASK_BLOCK.split(chunk)[1:]
+        uncued = sum(
+            bool(SLOT_INPUT.search(block)) and not class_tag_count(block, "target")
+            for block in blocks
+        )
+        if uncued:
             errors.append(
-                f"{page_id}: each controlled blank needs one exact Japanese .target "
-                f"(inputs={inputs} targets={cues})"
+                f"{page_id}: {uncued} controlled question(s) have no exact Japanese .target"
             )
 
     for page_id, chunk in page_chunks.items():
@@ -312,7 +320,7 @@ def target_highlight_issues(page_chunks):
         for index, (en_row, ja_row) in enumerate(zip(english, japanese), start=1):
             en_targets = class_tag_count(en_row, "ending")
             ja_targets = class_tag_count(ja_row, "ending")
-            if (en_targets or ja_targets) and en_targets != ja_targets:
+            if (en_targets or ja_targets) and (not en_targets or not ja_targets):
                 errors.append(
                     f"{page_id} row {index}: mirrored target highlights differ "
                     f"(EN={en_targets} JA={ja_targets})"
@@ -506,6 +514,11 @@ def pattern_meaning_issues(page_id, chunk):
 def core_production_issues(page_chunks):
     """Protect the production ladder established by the approved Core pilots."""
     errors = []
+    controlled_frames = {
+        answer
+        for page_id in ("p1-fill", "p2-fill")
+        for answer in control_answers(page_chunks.get(page_id, ""), "slot-input")
+    }
     roleplay_pages = ("p3-model", "p3-complete", "in-the-wild")
     for page_id in roleplay_pages:
         chunk = page_chunks.get(page_id)
@@ -542,13 +555,26 @@ def core_production_issues(page_chunks):
             )
         if model_turns and not ENDING.search(model):
             errors.append("p3-model: missing mirrored target highlights")
-        phrase_inputs = len(PHRASE_INPUT.findall(complete))
-        targets = len(TARGET.findall(complete))
-        if phrase_inputs and targets != phrase_inputs:
+        learner_input_turns = [
+            turn for turn in re.split(r'(?=<div class="turn\b)', complete)
+            if re.match(r'<div class="turn me"', turn) and PHRASE_INPUT.search(turn)
+        ]
+        uncued_turns = sum(not TARGET.search(turn) for turn in learner_input_turns)
+        if uncued_turns:
             errors.append(
-                "p3-complete: each phrase input needs one exact Japanese .target "
-                f"(inputs={phrase_inputs} targets={targets})"
+                "p3-complete: each learner completion turn needs an exact Japanese .target "
+                f"(uncued turns={uncued_turns})"
             )
+
+    if controlled_frames:
+        for page_id in ("p3-complete", "in-the-wild"):
+            for answer in control_answers(page_chunks.get(page_id, ""), "phrase-input"):
+                if answer not in controlled_frames:
+                    errors.append(
+                        f"{page_id}: phrase input {answer!r} is not an exact controlled "
+                        "target — keep scene facts and slot vocabulary visible outside "
+                        "the editable field"
+                    )
 
     freetalk = page_chunks.get("p3-freetalk", "")
     if freetalk:
@@ -625,12 +651,15 @@ def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
                 "p3-complete: partner lines differ from p3-model — replay the exact "
                 "conversation instead of shortening or rewriting the partner turns"
             )
-        phrase_inputs = len(PHRASE_INPUT.findall(complete))
-        targets = class_tag_count(complete, "target")
-        if phrase_inputs and phrase_inputs != targets:
+        learner_input_turns = [
+            turn for turn in re.split(r'(?=<div class="turn\b)', complete)
+            if re.match(r'<div class="turn me"', turn) and PHRASE_INPUT.search(turn)
+        ]
+        uncued_turns = sum(not class_tag_count(turn, "target") for turn in learner_input_turns)
+        if uncued_turns:
             errors.append(
-                "p3-complete: each phrase input needs one exact Japanese .target "
-                f"(inputs={phrase_inputs} targets={targets})"
+                "p3-complete: each learner completion turn needs an exact Japanese .target "
+                f"(uncued turns={uncued_turns})"
             )
 
     live = page_chunks.get("p3-freetalk", "")
@@ -647,12 +676,15 @@ def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
 
     transfer = page_chunks.get("transfer-scene", "")
     if transfer:
-        phrase_inputs = len(PHRASE_INPUT.findall(transfer))
-        targets = class_tag_count(transfer, "target")
-        if phrase_inputs and phrase_inputs != targets:
+        learner_input_turns = [
+            turn for turn in re.split(r'(?=<div class="turn\b)', transfer)
+            if re.match(r'<div class="turn me"', turn) and PHRASE_INPUT.search(turn)
+        ]
+        uncued_turns = sum(not class_tag_count(turn, "target") for turn in learner_input_turns)
+        if uncued_turns:
             errors.append(
-                "transfer-scene: each phrase input needs one exact Japanese .target "
-                f"(inputs={phrase_inputs} targets={targets})"
+                "transfer-scene: each learner completion turn needs an exact Japanese .target "
+                f"(uncued turns={uncued_turns})"
             )
 
     if enforce_frame_boundaries and controlled_frames:
@@ -811,7 +843,14 @@ def live_tutor_answer_issues(page_id, chunk):
 
 def partner_turns(chunk):
     """Return normalized visible partner lines from one dialogue page."""
-    return [plain_text(body) for body in OTHER_TURN_LINE.findall(chunk)]
+    lines = []
+    for turn in re.split(r'(?=<div class="turn\b)', chunk):
+        if not re.match(r'<div class="turn other"', turn):
+            continue
+        bodies = class_span_bodies(turn, "korean")
+        if bodies:
+            lines.append(plain_text(bodies[0]))
+    return lines
 
 
 def freetalk_article_lines(source):
@@ -944,6 +983,13 @@ def check(path):
 
     # ---- English decks carry no readings ----------------------------------
     if is_english:
+        body = html.partition("<body>")[2]
+        visible_body_source = re.sub(r"<!--.*?-->", "", body, flags=re.S)
+        if re.search(r"[가-힣]", visible_body_source):
+            errs.append(
+                "visible Korean text in an English deck — learner support is Japanese "
+                "and tutor operating copy is English"
+            )
         if 'class="yomi"' in html:
             errs.append("`.yomi` in an English deck — katakana over English installs "
                         "the error instead of scaffolding the word (see english/AGENTS.md)")
@@ -960,6 +1006,11 @@ def check(path):
                 errs.append(
                     f"vocabulary status is {vocab['status']!r} — classify the deck's "
                     "new, recycled, assumed-known and receptive-only words"
+                )
+            if not any(vocab["categories"].values()):
+                errs.append(
+                    "vocabulary ownership is empty — a reviewed authored deck must "
+                    "classify the content words it relies on"
                 )
             capped_track = any(part in {"1-core-patterns", "2-contextual-english"} for part in path.parts)
             load = vocabulary.load_result(vocab) if capped_track else None

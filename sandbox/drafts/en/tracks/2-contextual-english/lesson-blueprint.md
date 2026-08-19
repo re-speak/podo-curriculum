@@ -155,9 +155,9 @@ not the tutor's voice or the partner's receptive line.
   cannot make obvious. Put them on the production page where that action happens, not on a teaching
   page that produces nothing yet; never repeat an answer already revealed by teaching mode.
 - Mirror the taught target on every `pN-teach` and `pN-read` model: wrap each English target word or
-  phrase in `.ending` and wrap its exact Japanese meaning in `.ending` too. If the English frame has
-  two independently meaningful pieces, such as `We'd like` and `if possible`, both languages show
-  two corresponding highlights.
+  phrase in `.ending` and wrap its exact Japanese meaning in `.ending` too. If several
+  discontinuous English pieces map naturally to one Japanese phrase, one Japanese highlight may
+  correspond to those pieces; the semantic cue must match even when the span count cannot.
 - On `pN-fill`, put `.target.ending` around exactly the Japanese word or phrase represented by the
   blank. Use one Japanese cue per blank. Reorder and translate prompts remain neutral because the
   learner produces the whole sentence there.

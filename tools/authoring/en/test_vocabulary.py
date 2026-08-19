@@ -57,6 +57,25 @@ class VocabularyTests(unittest.TestCase):
         page = '<span class="hint-chip">箱:box</span><span class="hint-chip">運ぶ:carry</span>'
         self.assertEqual(vocabulary.hint_words(page), {"box", "carry"})
 
+    def test_reviewed_deck_cannot_leave_all_vocabulary_categories_empty(self):
+        source = PILOT.read_text(encoding="utf-8")
+        for category in ("new", "recycled", "assumed", "receptive"):
+            source = __import__("re").sub(
+                rf'(<meta name="podo:vocabulary:{category}" content=")[^"]*(")',
+                r"\1\2",
+                source,
+                count=1,
+            )
+        with tempfile.TemporaryDirectory(dir=ROOT / "tracks/1-core-patterns") as temporary:
+            lesson = pathlib.Path(temporary) / "20-empty-vocabulary"
+            lesson.mkdir()
+            deck = lesson / "lesson.html"
+            deck.write_text(source.replace(
+                'content="20-asking-for-help"', 'content="20-empty-vocabulary"', 1
+            ), encoding="utf-8")
+            errors, _warnings = check_deck.check(deck)
+            self.assertTrue(any("vocabulary ownership is empty" in item for item in errors))
+
     def test_running_lexicon_is_current(self):
         records = build_running_lexicon.collect(build_running_lexicon.decks())
         actual = (ROOT / "reference/running-lexicon.md").read_text(encoding="utf-8")

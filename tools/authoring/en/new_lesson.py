@@ -44,6 +44,15 @@ PLACEHOLDER = """
 
 """
 
+CANONICAL_DECKS = {
+    "1-core-patterns": pathlib.Path(
+        "courses/core-first-exchanges-2/lessons/20-asking-for-help/lesson.html"
+    ),
+    "2-contextual-english": pathlib.Path(
+        "courses/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/lesson.html"
+    ),
+}
+
 
 def split_shell(text: str) -> tuple[str, str]:
     lines = text.splitlines(keepends=True)
@@ -125,7 +134,10 @@ def main() -> int:
     parser.add_argument("--title-ja", required=True,
                         help="Japanese title — what a JP-market learner sees in the catalogue")
     parser.add_argument("--level", required=True, help="podo:level value")
-    parser.add_argument("--from-deck", help="approved canonical lesson.html; Core defaults to its approved pilot")
+    parser.add_argument(
+        "--from-deck",
+        help="approved canonical lesson.html; Core and Contextual default to their approved pilots",
+    )
     parser.add_argument("--out", help="override output lesson.html")
     args = parser.parse_args()
 
@@ -142,10 +154,13 @@ def main() -> int:
         parser.error(f"missing generated brief {brief}; run build_lesson_briefs.py first")
     if args.from_deck:
         source = pathlib.Path(args.from_deck)
-    elif args.track == "1-core-patterns":
-        source = track / "courses" / "core-first-exchanges-2" / "lessons" / "20-asking-for-help" / "lesson.html"
+    elif args.track in CANONICAL_DECKS:
+        source = track / CANONICAL_DECKS[args.track]
     else:
-        parser.error("this track has no approved canonical deck; pass --from-deck only after its pilot is approved")
+        parser.error(
+            "Freetalking has two approved language-load shells; pass the matching "
+            "accessible or full canonical deck with --from-deck"
+        )
     if not source.is_file():
         parser.error(f"canonical deck not found: {source}")
 

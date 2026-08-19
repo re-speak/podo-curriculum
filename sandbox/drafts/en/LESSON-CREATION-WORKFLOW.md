@@ -3,7 +3,7 @@
 This is the operating procedure for requests such as **create a curriculum**, **create a course**,
 **create lessons**, **generate the remaining lessons**, or **write lessons from the TOC**. It
 applies to the three production-facing English tracks; pronunciation remains planning-only. Read [`AGENTS.md`](./AGENTS.md) and
-[`../ux-philosophy.md`](../ux-philosophy.md) first; this document defines the
+[`../../../shared/ux-philosophy.md`](../../../shared/ux-philosophy.md) first; this document defines the
 production sequence and ownership boundaries.
 
 Before review or batch generation, also apply
@@ -11,9 +11,10 @@ Before review or batch generation, also apply
 It is the regression checklist distilled from pilot feedback across all three tracks; the track
 blueprints remain authoritative for page-by-page construction.
 
-**Read [`BUILD-PLAN.md`](./BUILD-PLAN.md) before proposing any batch.** Native catalog review is
-complete, but representative-lesson and product gates still control what may scale. Do not treat
-the presence of parsers, briefs or a skeleton generator as permission to cross those gates.
+**Read [`BUILD-PLAN.md`](./BUILD-PLAN.md) before proposing any batch.** Native catalog review and
+the representative-lesson gate are complete as of 2026-08-19. Scale only in approved course
+batches and paired Freetalking variants; parsers, briefs and the skeleton generator still do not
+authorize a new structure or a pronunciation batch.
 
 The workflow is course-aware. A lesson is identified by:
 
@@ -71,9 +72,9 @@ Until it exists, a "course" is whatever the TOC says it is, and no deploy plan i
 ## 2. Generate textual lesson briefs
 
 ```sh
-python3 english/tools/build_lesson_briefs.py <track-name>
+python3 tools/authoring/en/build_lesson_briefs.py <track-name>
 # or regenerate all four tracks
-python3 english/tools/build_lesson_briefs.py --all
+python3 tools/authoring/en/build_lesson_briefs.py --all
 ```
 
 The brief repeats the exact source content, adjacent lessons and sequence guardrails. Core gets
@@ -87,19 +88,19 @@ the parser and regenerate.
 ## 3. Prove one lesson before multiplying it
 
 ```sh
-python3 english/tools/new_lesson.py --track <track> --review-id <CORE-N|CTX-N|FT-N> \
+python3 tools/authoring/en/new_lesson.py --track <track> --review-id <CORE-N|CTX-N|FT-N> \
   --course <course-code> --lesson <n> --id <NN-slug> --title <title> --level <level>
 ```
 
 The tool lifts the shell from an approved English canonical deck, removes its pages and identity
 comments, retargets metadata and shared paths, checks references, and refuses to overwrite. Core
-defaults to its approved pilot. Contextual and Freetalking deliberately require `--from-deck`
-until their own pilots are explicitly approved. **Never use a Korean deck** — its script list loads
-`yomi.js`, which English must not.
+and Contextual default to their approved pilots. Freetalking deliberately requires `--from-deck`
+so the writer must choose the approved accessible or full shell. **Never use a Korean deck** — its
+script list loads `yomi.js`, which English must not.
 
 Before writing pages, read these in full and in order:
 
-1. `../ux-philosophy.md`
+1. `../../../shared/ux-philosophy.md`
 2. `AGENTS.md`, including the *English deltas* table
 3. this workflow
 4. the track blueprint
@@ -118,10 +119,10 @@ multiple writers invent variants.
 
 ### The gate
 
-**The first English deck in any track is a pilot and stops for explicit user approval.** Structural
-checks never approve a pilot. If it is rejected, rewrite and re-review; do not use a rejected pilot
-as a template. After approval, write **three structurally different lessons**, review those, and
-only then expand.
+**The first English deck in any new track or structural family is a pilot and stops for explicit
+user approval.** The Core, Contextual and paired Freetalking production families passed that gate
+on 2026-08-19. Structural checks never approve a new pilot. If one is rejected, rewrite and
+re-review; do not use it as a template.
 
 ## 4. Run lesson production as an orchestrated writer workflow
 
@@ -365,6 +366,11 @@ Interactive checks at both **480px and 360px**:
 - tutor notes and answer visibility correct for each role
 - no console errors, no pager overlap making content unreachable
 - no page, dialogue turn or generated input widens its container
+
+For a course batch, open one Orca browser tab in this worktree and run
+`python3 tools/authoring/en/audit_rendered_decks.py --page <browserPageId> <batch-path>`.
+The probe activates every otherwise-hidden page, reads the shared pager tokens, and fails on
+horizontal overflow or missing tail clearance at both supported widths.
 
 Use representative screenshots across the course, plus every new or unusually dense page. A pass
 means more than "it scrolls": the learner must understand what to do before the activity disappears
