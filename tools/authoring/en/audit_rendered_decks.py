@@ -63,19 +63,39 @@ def probe_expression() -> str:
           pages.forEach(candidate => candidate.classList.toggle('pg-on', candidate === page));
           const overflow = [page, ...page.querySelectorAll('*')]
             .filter(element => element.scrollWidth > element.clientWidth + 1);
+          const spacing = [];
+          const checkSiblings = (elements, label, minimum) => {{
+            for (let index = 1; index < elements.length; index++) {{
+              const previous = elements[index - 1].getBoundingClientRect();
+              const current = elements[index].getBoundingClientRect();
+              const gap = current.top - previous.bottom;
+              if (current.top > previous.top + 1 && gap < minimum) {{
+                spacing.push({{label, gap: Math.round(gap * 10) / 10}});
+              }}
+            }}
+          }};
+          page.querySelectorAll('.model-list').forEach(list =>
+            checkSiblings([...list.children].filter(row => row.classList.contains('model-line')),
+                          'model-line', 8));
+          page.querySelectorAll('.dialogue').forEach(dialogue =>
+            checkSiblings([...dialogue.children].filter(turn => turn.classList.contains('turn')),
+                          'dialogue-turn', 12));
+          page.querySelectorAll('.answer-fill .korean').forEach(line =>
+            checkSiblings([...line.querySelectorAll('.phrase-input')], 'phrase-input', 6));
           const previousMinHeight = page.style.minHeight;
           page.style.minHeight = '0px';
           const rect = page.getBoundingClientRect();
           const required = rect.height + rect.top + scrollY;
           const clearance = parseFloat(getComputedStyle(page).paddingBottom) || 0;
           page.style.minHeight = previousMinHeight;
-          if (overflow.length ||
+          if (overflow.length || spacing.length ||
               (required > {MIN_VIEWPORT_HEIGHT} - expectedClearance &&
                clearance < expectedClearance)) {{
             bad.push({{
               width,
               page: page.dataset.pageId,
               overflow: overflow.slice(0, 3).map(element => element.className),
+              spacing: spacing.slice(0, 3),
               clearance,
             }});
           }}

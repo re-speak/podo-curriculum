@@ -21,7 +21,7 @@ and first-line snapshot so feedback can be checked against the current TOCs.
 Save pasted feedback as plain text and validate it:
 
 ```sh
-python3 english/tools/parse_catalog_review.py review.txt --output review.json
+python3 tools/authoring/en/parse_catalog_review.py review.txt --output review.json
 ```
 
 The parser rejects unknown ids, duplicate entries and stale titles/model lines. It never edits a
@@ -79,6 +79,12 @@ copyrighted corpus passages into the curriculum.
 An unqualified request to proofread a lesson means a complete review, not spelling alone. Read the
 workflow, track blueprint, generated brief and canonical deck, then inspect every page in order.
 
+**Proofreading immediately follows generation in the same batch workflow.** Generated HTML is
+provisional until the complete review below, the static checker, exact-generation tests and
+rendered QA all pass. Do not publish owner-review links, call a batch finished or begin the next
+batch before that pass. Any defect is fixed in the highest owning source or generator, the affected
+decks are regenerated, and the complete review is repeated on the new bytes.
+
 1. **Outcome:** the page arc earns the TOC can-do and both primary patterns.
 2. **Language:** English is natural for the scene and level; Japanese preserves agent, tense,
    object, register and emotional force.
@@ -100,17 +106,15 @@ workflow, track blueprint, generated brief and canonical deck, then inspect ever
 Record exact stable id, `data-page-id`, current text and proposed replacement. Separate confirmed
 errors from editorial alternatives requiring an owner decision.
 
-### Authored-deck packets
+### Generated-batch gate
 
-English does not yet need a bulk deck packet builder: only one approved deck exists and further
-production is on hold. When the three-lesson Core gate lands, build the one-way HTML projection
-before parallel proofreading, following Korean's guarded model:
+The representative Core, Contextual and paired Freetalking families are approved, so proofreading
+now runs per generated course batch. HTML remains authoritative. Review the complete generated
+batch page by page, record issues by stable review id and `data-page-id`, repair the generator or
+content data, and regenerate. A spot-check link is an approval surface only after this gate passes;
+it is not a substitute for the gate.
 
-- HTML remains authoritative;
-- packets carry source hashes and exact field locators;
-- issue validation refuses stale hashes/current text;
-- applying suggestions is explicit, never an automatic merge;
-- regenerated packets must prove current after fixes.
-
-Building that projection before there is a representative three-deck set would encode the pilot's
-single structure as universal—the exact mistake the three-lesson gate exists to prevent.
+Mechanical checks must reject punctuation-only or bound-word reorder chips, unstyled repeated-row
+containers, editable phrase fields outside the canonical answer component, impossible answers and
+mixed chunk criteria. Human proofreading still owns whether every surviving chip is a useful
+meaning unit, whether a rule teaches the visible pattern, and whether the activity earns its place.

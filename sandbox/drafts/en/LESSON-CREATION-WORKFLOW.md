@@ -130,6 +130,12 @@ re-review; do not use it as a template.
 
 For a batch, one orchestrator owns the shared truth and lesson writers own disjoint deck files.
 
+Generation and proofreading are one uninterrupted production step. As soon as a batch is
+generated, run the complete proofreading workflow, static checker, exact-generation tests and
+rendered QA on those exact bytes. Do not give the owner review links or start the next batch until
+all four pass. If proofreading changes content data or a generator, regenerate first and repeat the
+proofreading and gates; never patch generated HTML to make a review pass.
+
 The **orchestrator alone** may change:
 
 - TOCs, parsers, blueprints and generated briefs
@@ -347,6 +353,11 @@ allowed only when the sentence honestly holds three. The trap is not the count â
 criteria on one page**. The pilot shipped 3/4/3/4 because `please` had been tacked onto two rows,
 which is padding two sentences rather than analysing four the same way.
 
+Every chip must help the learner recover meaning or construction. Punctuation alone (`?`), an
+article or bound preposition alone (`a`, `the`, `at`, `of`, `to`), and a split suffix (`-er`) are
+hard errors, not ways to reach a preferred chip count. If a short frame has no honest three-unit
+build, omit its reorder page and use another activity.
+
 Write the page's criterion into an HTML comment above it, then check every row against that one
 sentence. If a row needs a different criterion to reach its count, the count is wrong.
 
@@ -372,7 +383,8 @@ Interactive checks at both **480px and 360px**:
 For a course batch, open one Orca browser tab in this worktree and run
 `python3 tools/authoring/en/audit_rendered_decks.py --page <browserPageId> <batch-path>`.
 The probe activates every otherwise-hidden page, reads the shared pager tokens, and fails on
-horizontal overflow or missing tail clearance at both supported widths.
+horizontal overflow, missing tail clearance or collapsed vertical gaps between repeated model
+rows, dialogue turns and wrapped phrase inputs at both supported widths.
 
 Use representative screenshots across the course, plus every new or unusually dense page. A pass
 means more than "it scrolls": the learner must understand what to do before the activity disappears

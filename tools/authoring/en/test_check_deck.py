@@ -158,6 +158,60 @@ class DeckCheckTests(unittest.TestCase):
         errors = check_deck.reorder_solvability_errors("p1-reorder", chunk)
         self.assertTrue(any("cannot reconstruct data-a" in item for item in errors))
 
+    def test_reorder_rejects_punctuation_only_chip(self):
+        chunk = (
+            '<div data-page-id="p1-reorder"><div class="task-block">'
+            '<span class="answer-space build-zone" data-sync-id="row" '
+            'data-sync-kind="order" data-a="How often do you exercise?"></span>'
+            '<span class="choice">How often</span><span class="choice">do you</span>'
+            '<span class="choice">exercise</span><span class="choice">?</span>'
+            '</div></div>'
+        )
+        errors = check_deck.reorder_solvability_errors("p1-reorder", chunk)
+        self.assertTrue(any("punctuation-only chip" in item for item in errors))
+
+    def test_reorder_rejects_standalone_article(self):
+        chunk = (
+            '<div data-page-id="p2-reorder"><div class="task-block">'
+            '<span class="answer-space build-zone" data-sync-id="row" '
+            'data-sync-kind="order" data-a="About twice a week."></span>'
+            '<span class="choice">About</span><span class="choice">twice</span>'
+            '<span class="choice">a</span><span class="choice">week.</span>'
+            '</div></div>'
+        )
+        errors = check_deck.reorder_solvability_errors("p2-reorder", chunk)
+        self.assertTrue(any("bound-word chip 'a'" in item for item in errors))
+
+    def test_phrase_input_requires_spaced_answer_component(self):
+        errors = check_deck.phrase_input_structure_issues(
+            '<div class="bubble"><span class="korean">'
+            '<input class="phrase-input"></span></div>'
+        )
+        self.assertTrue(any("canonical answer-box" in item for item in errors))
+        self.assertEqual(
+            check_deck.phrase_input_structure_issues(
+                '<div class="answer-box"><span class="answer-fill">'
+                '<span class="korean"><input class="phrase-input"></span>'
+                '</span></div>'
+            ),
+            [],
+        )
+
+    def test_english_deck_rejects_unstyled_model_lines(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            deck = pathlib.Path(temporary) / "sandbox/drafts/en/tracks/1-core-patterns/lesson.html"
+            deck.parent.mkdir(parents=True)
+            deck.write_text(
+                '<meta name="google" content="notranslate">'
+                '<meta name="podo:lesson-id" content="lesson">'
+                '<meta name="podo:review-id" content="CORE-1">'
+                '<meta name="podo:target-language" content="en">'
+                '<div data-page-id="p1-teach"><div class="model-lines"></div></div>',
+                encoding="utf-8",
+            )
+            errors, _ = check_deck.check(deck)
+            self.assertTrue(any("unstyled .model-lines" in item for item in errors))
+
     def test_freetalking_article_accepts_twelve_rows_with_exact_gloss_parity(self):
         script = (
             '<p class="section-subtitle"><span class="ko">'

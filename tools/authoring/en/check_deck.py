@@ -67,6 +67,14 @@ trace:
     facts and slot vocabulary stay visible outside the editable field instead
     of quietly turning a pattern check into whole-sentence recall.
 
+11. **Meaningful reorder chips.** Punctuation-only chips, detached articles or
+    prepositions and split suffixes are hard errors. A short frame with no
+    honest three-unit build omits reorder instead of padding it.
+
+12. **Generated spacing structure.** Repeated model rows use the design-system
+    `model-list`, and phrase inputs live inside `answer-box > answer-fill` so
+    wrapped controls inherit the tested vertical rhythm.
+
 These are not caught by reading markup, which is why they are here rather than in a
 checklist. A checklist item only reaches the writers who were told to read it.
 
@@ -81,6 +89,7 @@ import pathlib
 import re
 import sys
 from collections import Counter
+from html.parser import HTMLParser
 from itertools import permutations
 
 import vocabulary
@@ -149,6 +158,7 @@ WHO_OPEN = re.compile(r'<span class="who">')
 ENDING = re.compile(r'class="ending"')
 TARGET = re.compile(r'class="target"')
 PHRASE_INPUT = re.compile(r'class="[^"]*\bphrase-input\b')
+MODEL_LINES = re.compile(r'class=["\'][^"\']*\bmodel-lines\b')
 SLOT_INPUT = re.compile(r'<input\b[^>]*class="[^"]*\bslot-input\b')
 CONTROL_TAG = re.compile(r'<(?:input|textarea)\b[^>]*>', re.I)
 GENERIC_AVATAR = re.compile(r'<span class="[^"]*\bavatar\b[^\"]*\bicon\b')
@@ -158,6 +168,11 @@ GENERIC_CORE_FREETALK = re.compile(
     r"ask the tutor|tutor's real answer)\b",
     re.I,
 )
+GENERIC_PATTERN_RULE = re.compile(
+    r"Use the (?:second|complete) (?:frame|move)|make the practical result clear",
+    re.I,
+)
+BOUND_REORDER_CHIPS = {"a", "an", "the", "at", "of", "to", "er"}
 BRIEF_HEADING = re.compile(r"^#\s+((?:CORE|CTX|FT)-\d+)\s+·\s+(.+?)\s*$")
 QUOTE_OPEN = "“‘「『"
 QUOTE_CLOSE = "”’」』"
@@ -365,7 +380,19 @@ def reorder_solvability_errors(page_id, chunk):
                 key.lower(): value for key, _, value in ATTRIBUTE.findall(choice.group(0))
             }
             if "choice" in choice_attrs.get("class", "").split():
-                chips.append(reorder_norm(span_body(block, choice.end())))
+                raw = plain_text(span_body(block, choice.end()))
+                word = raw.strip(".,?!").casefold()
+                if not raw or re.fullmatch(r"[^A-Za-z0-9]+", raw):
+                    errors.append(
+                        f"{page_id}: {sync_id} has punctuation-only chip {raw!r} — "
+                        "attach punctuation to a meaning chunk"
+                    )
+                elif word in BOUND_REORDER_CHIPS:
+                    errors.append(
+                        f"{page_id}: {sync_id} has bound-word chip {raw!r} — "
+                        "attach it to the phrase it belongs to"
+                    )
+                chips.append(reorder_norm(raw))
 
         if not chips:
             errors.append(f"{page_id}: {sync_id} reorder build-zone has no chips")
@@ -378,6 +405,46 @@ def reorder_solvability_errors(page_id, chunk):
                 f"(answer={answer!r}, chips={chips!r})"
             )
     return errors
+
+
+class _PhraseInputParser(HTMLParser):
+    """Track real ancestors of editable phrase fields in static markup."""
+
+    VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack = []
+        self.issues = []
+
+    def handle_starttag(self, tag, attrs):
+        classes = set(dict(attrs).get("class", "").split())
+        if "phrase-input" in classes:
+            ancestors = set().union(*(item[1] for item in self.stack)) if self.stack else set()
+            if "answer-box" not in ancestors or not ({"answer-fill", "answer-space"} & ancestors):
+                self.issues.append(
+                    "phrase-input is outside the canonical answer-box with an "
+                    "answer-fill/answer-space wrapper"
+                )
+        if tag not in self.VOID:
+            self.stack.append((tag, classes))
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID:
+            self.stack.pop()
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                del self.stack[index:]
+                return
+
+
+def phrase_input_structure_issues(source):
+    parser = _PhraseInputParser()
+    parser.feed(source)
+    return parser.issues
 
 
 def article_structure_issues(chunk):
@@ -983,6 +1050,20 @@ def check(path):
 
     # ---- English decks carry no readings ----------------------------------
     if is_english:
+        if MODEL_LINES.search(html):
+            errs.append(
+                "unstyled .model-lines component — use the design-system .model-list "
+                "so repeated rows receive the standard vertical gap"
+            )
+        errs.extend(phrase_input_structure_issues(html))
+        for page_id, chunk in pages(html):
+            if re.fullmatch(r"p[12]-rule", page_id) and GENERIC_PATTERN_RULE.search(
+                plain_text(chunk)
+            ):
+                errs.append(
+                    f"{page_id}: generic rule copy does not explain this pattern — "
+                    "write the pattern-specific form/meaning point and show its example"
+                )
         body = html.partition("<body>")[2]
         visible_body_source = re.sub(r"<!--.*?-->", "", body, flags=re.S)
         if re.search(r"[가-힣]", visible_body_source):
@@ -1084,7 +1165,11 @@ def check(path):
                 f"same down the page; Korean rows require semantic sign-off")
         elif counts[0] > 4:
             errs.append(f"{pid}: {counts[0]} chips — four is the ceiling")
-        elif is_english and counts[0] == 3:
+        elif (
+            is_english
+            and counts[0] == 3
+            and 'data-chunk-review="meaningful"' not in chunk
+        ):
             warns.append(
                 f"{pid}: three chips per sentence — four is the English working "
                 "default; confirm there is genuinely no fourth meaning unit"
