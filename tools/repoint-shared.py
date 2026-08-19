@@ -9,8 +9,14 @@ Two jobs, and it is idempotent in both:
   2. a CDN URL already on our baseUrl but an older tag  ->  re-pinned to the
      declared version
 
-Deck-specific files and every image stay local and keep riding in the zip. Only
-what `shared/` owns moves, because only that is identical across decks.
+Deck-specific files stay local and keep riding in the zip. Only what `shared/`
+owns moves, because only that is identical across decks — and since the Korean
+catalogue landed that includes `shared/assets`, where an image used by hundreds of
+lessons was being copied into every one of their prefixes.
+
+An image whose basename `shared/` owns but whose bytes differ is left alone. That
+guard is not theoretical: it is why a deck that deliberately bundles its own
+variant of a shared file does not silently get the shared one.
 
 **Publish before you repoint.** The tag has to be live before a deck naming it
 ships; `tools/publish-shared.py` does that, and `tools/validate.py` refuses a deck
@@ -42,9 +48,9 @@ REMOTE = ("http://", "https://", "//", "data:", "#")
 
 
 def shared_owns() -> dict[str, str]:
-    """basename -> 'css' | 'js' for everything shared/ owns."""
+    """basename -> 'css' | 'js' | 'assets' for everything shared/ owns."""
     out = {}
-    for sub in ("css", "js"):
+    for sub in ("css", "js", "assets"):
         d = model.REPO / "shared" / sub
         if d.is_dir():
             for p in d.iterdir():
@@ -71,7 +77,7 @@ def repoint_deck(deck: pathlib.Path, base: str, owned: dict[str, str],
         # already ours, but possibly an older tag
         if ref.startswith(prefix):
             tail = ref.split("/")
-            rel = "/".join(tail[-2:])                      # css/x.css | js/x.js
+            rel = "/".join(tail[-2:])                      # css/x.css | js/x.js | assets/x.png
             new = f"{base}/{rel}"
             if new != ref:
                 repinned += 1
