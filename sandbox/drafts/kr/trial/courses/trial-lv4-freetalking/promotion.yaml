@@ -1,0 +1,20 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/trial-lv4-freetalking
+
+spec:
+  # 55분 체험이라 full-trials 를 쓴다. lessons/ 의 *-short 는 25분 점검용으로 줄인
+  # 판본이라 한 시간짜리 수업을 채우지 못한다.
+  source: sandbox/drafts/kr/trial/full-trials
+  assetRoots:
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: trial-4-freetalking.html
+      slug: 01-trial-freetalking
+      week: 1
+      title:
+        ko: 체험 · 고급 프리토킹
+        en: Trial · Free talking
+        ja: 体験レッスン 上級

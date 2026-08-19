@@ -1,0 +1,21 @@
+# 리뷰어를 자동으로 붙이기 위한 파일이다. 막기 위한 것이 아니다.
+#
+# 브랜치 룰셋에서 "require code owner review" 는 켜지 않는다 — 콘텐츠 작업자가
+# 대부분 혼자 PR 을 올리는데 자기 PR 은 자기가 승인할 수 없어서, 켜는 순간
+# 모든 초안이 사람을 기다리게 된다. 여기 적힌 경로는 "머지되면 학습자에게
+# 나가는 것"이라는 표시이고, 리뷰 요청은 자동으로 붙되 강제되지는 않는다.
+#
+# sandbox/ 는 일부러 비워 둔다. 초안에 문지기를 두면 초안이 아니다.
+
+# 파이프라인 자체. 여기가 깨지면 모든 코스가 함께 깨진다.
+/tools/                 @hrsong99 @cohemm
+/.cloudbuild/           @hrsong99 @cohemm
+/.github/               @hrsong99 @cohemm
+/schemas/               @hrsong99 @cohemm
+
+# 머지되면 배포되는 것들.
+/curriculum.yaml        @hrsong99 @cohemm
+/courses/               @hrsong99 @cohemm
+
+# 덱 런타임. 한 번 바뀌면 그 태그를 가리키는 모든 덱이 함께 바뀐다.
+/shared/                @hrsong99 @cohemm

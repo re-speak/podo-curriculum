@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<title>한국어 커리큘럼</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="../site.css">
+<style>
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+  :root {
+    --ink: #1c1c1c;
+    --lime: #b5fd4c;
+    --green: #6abe36;
+    --green-text: #3f7a1c;
+    --green-100: #f2fcec;
+    --green-200: #d8ecc6;
+    --gray-100: #f5f5f5;
+    --gray-200: #e8e8e8;
+    --gray-400: #a5a5a5;
+    --gray-500: #757575;
+    --gray-700: #3f3f3f;
+    --line: #e7e7e7;
+    --line-soft: #f0f0f0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--ink);
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 28px 110px; }
+  @media (max-width: 600px) { .wrap { padding: 44px 20px 80px; } }
+
+  a { color: var(--green-text); text-decoration: none; }
+
+  /* ---------- header (matches TOC h1) ---------- */
+  .kicker { display: block; color: var(--green-text); font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  h1 { margin: 12px 0 18px; padding-bottom: 16px; font-size: 32px; font-weight: 850; line-height: 1.2; letter-spacing: -.02em; border-bottom: 3px solid var(--ink); word-break: keep-all; }
+  .lead { max-width: 58ch; margin: 0; color: var(--gray-700); font-size: 16px; line-height: 1.7; font-weight: 400; }
+
+  /* ---------- primary callout to full curriculum ---------- */
+  .full {
+    display: flex; align-items: center; gap: 14px;
+    margin-top: 26px; padding: 18px 22px;
+    background: var(--green-100); border-left: 4px solid var(--green); border-radius: 0 10px 10px 0;
+    color: var(--ink);
+  }
+  .full:hover { background: #eafadf; }
+  .full .full-body { flex: 1 1 auto; min-width: 0; }
+  .full .full-t { display: block; font-size: 16px; font-weight: 800; }
+  .full .full-d { display: block; margin-top: 2px; color: #3a5e26; font-size: 13px; font-weight: 600; }
+  .full .full-arr { flex: 0 0 auto; color: var(--green-text); font-size: 20px; font-weight: 800; }
+
+  /* ---------- section heading ---------- */
+  .section-label {
+    margin: 52px 0 0; padding-bottom: 7px;
+    display: inline-block;
+    color: var(--ink); font-size: 18px; font-weight: 850; letter-spacing: -.01em;
+    border-bottom: 3px solid var(--green);
+  }
+  .section-note { margin: 12px 0 0; color: var(--gray-500); font-size: 13.5px; }
+
+  /* ---------- track rows ---------- */
+  .tracks { margin-top: 10px; }
+  .track { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .track-head { display: flex; align-items: center; gap: 12px; }
+  .track-no { flex: 0 0 auto; display: grid; place-items: center; width: 26px; height: 26px; background: var(--green-text); color: #fff; border-radius: 7px; font-size: 14px; font-weight: 850; }
+  .track.ongoing .track-no { background: var(--green-text); color: #fff; }
+  .track-title { flex: 1 1 auto; min-width: 0; font-size: 17px; font-weight: 800; word-break: keep-all; }
+  .track-title .en { margin-left: 7px; color: var(--gray-400); font-size: 12.5px; font-weight: 500; }
+  .track-count { flex: 0 0 auto; padding: 4px 11px; background: var(--green-100); color: var(--green-text); border-radius: 999px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+  .track.ongoing .track-count { background: var(--green); color: #fff; }
+  .track-desc { margin: 9px 0 0 38px; color: var(--gray-700); font-size: 14px; line-height: 1.55; word-break: keep-all; }
+  .track-links { margin: 12px 0 0 38px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .track-links a { min-height: 40px; display: inline-flex; align-items: center; padding: 7px 14px; border: 1.5px solid var(--green-200); border-radius: 999px; font-size: 13px; font-weight: 700; color: var(--green-text); background: var(--green-100); }
+  .track-links a:hover { background: var(--green-text); color: #fff; border-color: var(--green-text); }
+  .track-links a.ghost { border-color: var(--gray-200); color: var(--gray-500); }
+  .track-links a.ghost:hover { background: var(--gray-100); color: var(--ink); border-color: var(--gray-200); }
+  .track-links a.disabled { border-style: dashed; border-color: var(--gray-200); color: var(--gray-400); pointer-events: none; }
+
+  /* ---------- trial rows ---------- */
+  .rows { margin-top: 10px; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+  .row:hover .row-t { color: var(--green-text); }
+  .row-t { font-size: 15px; font-weight: 700; }
+  .row-d { color: var(--gray-500); font-size: 13px; }
+  .row-arr { margin-left: auto; color: var(--gray-400); font-size: 16px; }
+
+  footer { margin-top: 56px; padding-top: 20px; border-top: 2px solid var(--ink); color: var(--gray-500); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<a class="podo-skip" href="#main">본문으로 건너뛰기</a>
+<header class="podo-bar">
+  <div class="podo-bar__inner">
+    <a class="podo-brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <nav class="podo-nav" aria-label="커리큘럼 탐색">
+      <a href="catalog.html" aria-current="page">한국어</a>
+      <a href="../english/catalog.html">English</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+  <header>
+    <span class="kicker">PODO · 한국어 커리큘럼</span>
+    <h1>한국어 커리큘럼</h1>
+    <p class="lead">한글을 처음 보는 상태에서 자기 생각을 한국어로 자유롭게 말하는 단계까지. 아래에서 모든 교재에 접근할 수 있습니다.</p>
+  </header>
+
+  <a class="full" href="catalog.html">
+    <span class="full-body">
+      <span class="full-t">커리큘럼 카탈로그 — 전체 목차 한 장</span>
+      <span class="full-d">트랙을 하나 골라 들어가면 그 안의 371과와, 각 과가 가르치는 패턴을 문장째로 볼 수 있습니다.</span>
+    </span>
+    <span class="full-arr">→</span>
+  </a>
+
+  <!-- TRACKS -->
+  <div class="section-label">학습 트랙</div>
+  <p class="section-note">각 트랙의 샘플 레슨과 목차. 다섯 트랙 전체를 과 단위로 펼쳐 보려면 위의 <a href="catalog.html">카탈로그</a>.</p>
+
+  <div class="tracks">
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">1</span>
+        <span class="track-title">한글 읽기 <span class="en">Hangul Reading</span></span>
+        <span class="track-count">14 레슨 · 기초</span>
+      </div>
+      <p class="track-desc">어떤 한국어 음절이든 소리 내어 읽을 수 있게. 한 레슨에 새 요소는 하나만.</p>
+      <div class="track-links">
+        <a href="tracks/1-hangul/sample-lesson.html">샘플 레슨 →</a>
+        <a class="ghost" href="../viewer.html?doc=korean/tracks/1-hangul/table-of-contents.md">목차 보기</a>
+        <a class="ghost" href="tracks/1-hangul/_archive/sample-lesson-v1.html">첫 초안 (v1)</a>
+      </div>
+    </div>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">2</span>
+        <span class="track-title">핵심 문법 패턴 <span class="en">Core Patterns</span></span>
+        <span class="track-count">116과 · 232 패턴</span>
+      </div>
+      <p class="track-desc">문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. 초급(서술격)부터 고급(피동·사동)까지 23개 단원으로 쌓는다.</p>
+      <div class="track-links">
+        <a href="tracks/2-core-patterns/sample-lesson.html">샘플 레슨 →</a>
+        <a class="ghost" href="../viewer.html?doc=korean/tracks/2-core-patterns/table-of-contents.md">목차 보기</a>
+        <a class="ghost" href="tracks/2-core-patterns/_archive/sample-lesson-eul-reul.html">지난 샘플 (을/를)</a>
+      </div>
+    </div>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">3</span>
+        <span class="track-title">상황별 한국어 <span class="en">Contextual Korean</span></span>
+        <span class="track-count">4 커리큘럼 · 14 코스 · 140 레슨</span>
+      </div>
+      <p class="track-desc">드라마·K-POP·여행·반말 — 흥미 있는 소재에서 패턴을 실전으로 추출.</p>
+      <div class="track-links">
+        <a href="tracks/3-contextual-korean/sample-lesson.html">샘플 레슨 · 드라마 →</a>
+        <a class="ghost" href="../viewer.html?doc=korean/tracks/3-contextual-korean/table-of-contents.md">목차 보기</a>
+        <a class="ghost" href="tracks/3-contextual-korean/_archive/sample-lesson-banmal.html">지난 샘플 (반말)</a>
+      </div>
+    </div>
+
+    <div class="track ongoing">
+      <div class="track-head">
+        <span class="track-no">4</span>
+        <span class="track-title">고급 프리토킹 <span class="en">Advanced Freetalking</span></span>
+        <span class="track-count">10 테마 · 91 주제 · 워밍업 14 · 계속 추가 ∞</span>
+      </div>
+      <p class="track-desc">새 문법은 없음 — 말하고 싶어지는 주제만. 끝이 없는 트랙으로, 주제를 계속 추가해 나간다.</p>
+      <div class="track-links">
+        <a href="tracks/4-freetalking/sample-lesson.html">샘플 레슨 →</a>
+        <a class="ghost" href="../viewer.html?doc=korean/tracks/4-freetalking/table-of-contents.md">목차 보기</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TRIAL -->
+  <div class="section-label">체험</div>
+  <p class="section-note">레벨별 체험 레슨 (인사 → 상담 → 미니 레슨 → 플랜) 과 온보딩 화면.</p>
+  <div class="rows">
+    <a class="row" href="trial/full-trials/trial-1-hangul.html">
+      <span class="row-t">체험 레슨 · 超入門</span>
+      <span class="row-d">왕초보 — 한글 · 리포트 · 커리큘럼 · 수강료 · 한 장씩 보기</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="trial/full-trials/trial-2-patterns.html">
+      <span class="row-t">체험 레슨 · 初級</span>
+      <span class="row-d">초급 — 패턴 (~을/를 좋아해요)</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="trial/full-trials/trial-3-contextual.html">
+      <span class="row-t">체험 레슨 · 中級</span>
+      <span class="row-d">중급 — 드라마 한 장면 (~ㄴ 적 있다)</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="trial/full-trials/trial-4-freetalking.html">
+      <span class="row-t">체험 레슨 · 上級</span>
+      <span class="row-d">고급 — 프리토킹 (인생 영화)</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="trial/reports/trial-1-report.html">
+      <span class="row-t">맞춤 리포트</span>
+      <span class="row-d">체험 후 진단 리포트 — 니즈 파악 · 항목별 평가 · 학습 순서</span>
+      <span class="row-arr">→</span>
+    </a>
+  </div>
+
+  <p class="section-note" style="margin-top:26px">미니 레슨 — 체험 덱에서 레슨 파트만 떼어낸 짧은 버전.</p>
+  <div class="rows">
+    <a class="row" href="trial/lessons/trial-1-hangul-short.html">
+      <span class="row-t">미니 레슨 · 超入門</span>
+      <span class="row-d">모음 5개 읽기</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="trial/lessons/trial-2-patterns-short.html">
+      <span class="row-t">미니 레슨 · 初級</span>
+      <span class="row-d">자기소개 — 저는 ~예요/이에요</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="trial/lessons/trial-3-contextual-short.html">
+      <span class="row-t">미니 레슨 · 中級</span>
+      <span class="row-d">첫 만남 — ~(으)ㄴ 적 있어요 / ~아/어도 돼요?</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="trial/lessons/trial-4-freetalking-short.html">
+      <span class="row-t">미니 레슨 · 上級</span>
+      <span class="row-d">돈 vs 시간 — 프리토킹 · 말한 문장을 그 자리에서 고쳐 주기</span>
+      <span class="row-arr">→</span>
+    </a>
+  </div>
+
+  <!-- INTERACTIVE -->
+  <div class="section-label">인터랙티브</div>
+  <p class="section-note">lemonboard 에 올리는 클릭·스탬프형 레슨과, 그 규격 문서.</p>
+  <div class="rows">
+    <a class="row" href="../viewer.html?doc=korean/AUTHORING.md">
+      <span class="row-t">덱 만드는 법</span>
+      <span class="row-d">컴포넌트 목록과 파일 뼈대 — 새 과는 여기서 조립한다</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="../viewer.html?doc=korean/interaction-protocol.md">
+      <span class="row-t">data-sync 규격</span>
+      <span class="row-d">레슨 페이지가 강사 화면과 상태를 주고받는 방식</span>
+      <span class="row-arr">→</span>
+    </a>
+  </div>
+
+  <p class="section-note" style="margin-top:18px">업로드용 zip 은 이 레포에서 만들지 않는다.
+    덱을 <code>podo-curriculum</code> 에 올리면 <code>tools/build.py</code> 가 배포 과정에서 묶는다 —
+    손으로 미리 만들어 두는 방식은 공유 스크립트가 바뀐 줄 모르고 옛 덱을 올리게 되어서 없앴다.</p>
+
+  <!-- REFERENCE -->
+  <div class="section-label">레퍼런스 · 제작 자료</div>
+  <p class="section-note">레슨을 만들 때 따르는 원칙과, 참고한 교재 스캔.</p>
+  <div class="rows">
+    <a class="row" href="../viewer.html?doc=ux-philosophy.md">
+      <span class="row-t">레슨 UX 원칙</span>
+      <span class="row-d">한 페이지 한 활동 · 스크립트 · 티칭 모드 — 모든 페이지의 기준</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="../viewer.html?doc=korean/references/curricula/k-village-esther-bunny/NOTES.md">
+      <span class="row-t">K-Village × 에스터바니</span>
+      <span class="row-d">패턴 교수법 레퍼런스 — 무엇을 가져오고 무엇을 버릴지</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="../viewer.html?doc=korean/trial/illustration-prompts.md">
+      <span class="row-t">일러스트 프롬프트</span>
+      <span class="row-d">체험 덱 삽화 생성 프롬프트와, 실제로 쓴 것 / 안 쓴 것</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="../viewer.html?doc=korean/references/curricula/dekiru-kankokugo/dekiru-kankokugo-1-pattern-map.md">
+      <span class="row-t">できる韓国語 初級Ⅰ · 패턴 지도</span>
+      <span class="row-d">핵심 패턴 트랙의 순서가 참고한 교재</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="../viewer.html?doc=korean/references/curricula/dekiru-kankokugo/dekiru-kankokugo-1-clean.md">
+      <span class="row-t">できる韓国語 初級Ⅰ · 전문</span>
+      <span class="row-d">137페이지 스캔을 정리한 텍스트 — 패턴 지도의 원본</span>
+      <span class="row-arr">→</span>
+    </a>
+    <a class="row" href="references/curricula/dekiru-kankokugo/pages.html">
+      <span class="row-t">できる韓国語 初級Ⅰ · 페이지 스캔</span>
+      <span class="row-d">137페이지 원본 이미지와 페이지별 와이어프레임 문서</span>
+      <span class="row-arr">→</span>
+    </a>
+  </div>
+
+  <p class="section-note" style="margin-top:18px">교재 스캔 (내부 참고용)</p>
+  <div class="track-links" style="margin-left:0">
+    <a class="ghost" href="references/curricula/k-village-esther-bunny/ref-1-slot-phrase-p30-31.png">K-Village · 슬롯 프레이즈</a>
+    <a class="ghost" href="references/curricula/k-village-esther-bunny/ref-2-vocab-grid-p32-33.png">K-Village · 단어 그리드</a>
+    <a class="ghost" href="references/curricula/k-village-esther-bunny/ref-3-set-and-combine-phrases-p123-124.png">K-Village · 조합 프레이즈</a>
+    <a class="ghost" href="references/curricula/k-village-esther-bunny/ref-4-column-and-chapter-opener-p127.png">K-Village · 칼럼 · 단원 표지</a>
+    <a class="ghost" href="references/curricula/hangul-for-jp-learners/ref-1-hangul-shikumi.png">한글의 구조</a>
+    <a class="ghost" href="references/curricula/hangul-for-jp-learners/ref-2-kabe1-moji.png">벽 1 · 글자</a>
+    <a class="ghost" href="references/curricula/hangul-for-jp-learners/ref-3-patchim-goseibo-in.png">받침 · 5가지 자음</a>
+    <a class="ghost" href="references/curricula/hangul-for-jp-learners/ref-4-kabe2-tango.png">벽 2 · 단어</a>
+  </div>
+
+  <p class="section-note" style="margin-top:18px">체험 리포트 레퍼런스 (외부 서비스 캡처)</p>
+  <div class="track-links" style="margin-left:0">
+    <a class="ghost" href="references/reports/uphone-report/uphone-report-combined.png">유폰 · 리포트 전체</a>
+    <a class="ghost" href="references/reports/uphone-report/1-report-arrived.jpg">유폰 · 리포트 도착</a>
+    <a class="ghost" href="references/reports/uphone-report/2-skill-radar.jpg">유폰 · 스킬 레이더</a>
+    <a class="ghost" href="references/reports/uphone-report/3-skill-scores.jpg">유폰 · 항목 점수</a>
+    <a class="ghost" href="references/reports/uphone-report/4-comprehension-score.jpg">유폰 · 청해 점수</a>
+    <a class="ghost" href="references/reports/uphone-consultation/learning-diagnosis.jpg">유폰 · 학습 진단</a>
+    <a class="ghost" href="references/reports/uphone-consultation/pricing.jpg">유폰 · 수강료 안내</a>
+    <a class="ghost" href="references/reports/mobbin/01-elevate-starting-epq-skill-bars.png">Elevate · 스킬 바</a>
+    <a class="ghost" href="references/reports/mobbin/02-wellbeing-score-gauge-with-trajectory.png">Wellbeing · 게이지</a>
+    <a class="ghost" href="references/reports/mobbin/03-opal-digital-health-score-now-vs-goal.png">Opal · 현재 vs 목표</a>
+    <a class="ghost" href="references/reports/mobbin/04-training-progress-step-chart.png">Training · 스텝 차트</a>
+    <a class="ghost" href="references/reports/mobbin/05-ahead-mind-map-radar-highlights.png">Ahead · 레이더</a>
+    <a class="ghost" href="references/reports/mobbin/06-vocabulary-level-result-scale.png">Vocabulary · 레벨 스케일</a>
+    <a class="ghost" href="references/reports/mobbin/07-speak-goal-projection-chart.png">Speak · 목표 예측 차트</a>
+  </div>
+
+  <!-- EXPERIMENTS & ARCHIVE -->
+  <div class="section-label">시안 · 아카이브</div>
+  <p class="section-note">채택되지 않은 디자인 시안과 이전 버전. 현재 교재는 위 섹션들에 있습니다.</p>
+
+  <p class="section-note" style="margin-top:14px">체험 리포트 시안</p>
+  <div class="track-links" style="margin-left:0">
+    <a class="ghost" href="trial/_experiments/trial-1-report-variations.html">리포트 초안</a>
+    <a class="ghost" href="trial/_experiments/trial-report-rebuild.html">리포트 재설계</a>
+    <a class="ghost" href="trial/_experiments/trial-report-page1-variations.html">1페이지 변형안</a>
+    <a class="ghost" href="trial/_experiments/trial-report-aspect-variations.html">항목 블록 정리안</a>
+    <a class="ghost" href="trial/_experiments/trial-report-lessons-variations.html">학습 순서 · 레슨 접기</a>
+    <a class="ghost" href="trial/_experiments/trial-report-page3-variations.html">마지막 페이지 · 그래프</a>
+  </div>
+
+  <p class="section-note" style="margin-top:14px">레슨 디자인 시안</p>
+  <div class="track-links" style="margin-left:0">
+    <a class="ghost" href="trial/_experiments/trial-divider-variations.html">체험 덱 디바이더</a>
+    <a class="ghost" href="tracks/2-core-patterns/_archive/design-variants.html">패턴 레슨 · 전체 시안</a>
+    <a class="ghost" href="tracks/2-core-patterns/_archive/dialogue-variants.html">대화 레이아웃 시안</a>
+    <a class="ghost" href="tracks/2-core-patterns/_archive/blank-styles.html">빈칸 스타일 시안</a>
+  </div>
+
+  <p class="section-note" style="margin-top:14px">이전 버전 · Figma 캡처용</p>
+  <div class="track-links" style="margin-left:0">
+    <a class="ghost" href="trial/lessons/_archive/trial-2-patterns-short.html">미니 레슨 初級 (구버전)</a>
+    <a class="ghost" href="../viewer.html?doc=korean/tracks/2-core-patterns/_archive/sample-lesson.md">패턴 샘플 레슨 (md 원고)</a>
+    <a class="ghost" href="../viewer.html?doc=korean/tracks/3-contextual-korean/_archive/course-catalog.md">상황별 코스 카탈로그 (구버전)</a>
+    <a class="ghost" href="trial/_experiments/_figma-capture.html">Figma 캡처 · 체험 덱</a>
+    <a class="ghost" href="tracks/2-core-patterns/_archive/_figma-capture.html">Figma 캡처 · 패턴 레슨</a>
+  </div>
+
+  <footer>PODO · 한국어 커리큘럼 — 일본어 학습자를 위한 한국어 코스</footer>
+
+</main>
+</body>
+</html>

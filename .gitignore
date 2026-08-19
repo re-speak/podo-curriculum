@@ -8,7 +8,10 @@ __pycache__/
 /build/
 *.zip
 
-# tools/sync-from-authoring.py 가 만드는 로컬 미러(2,000여 개 파일, 41MB).
-# 업스트림(podo-curriculum-public)이 원본이고 이 레포는 courses/ 만 배포하므로
-# 추적하지 않는다 — 여기 있는 이유는 promote 전에 눈으로 보기 위해서다.
-/sandbox/authoring/
+# sandbox/drafts/ 는 추적한다. 예전에는 업스트림이 원본이고 여기 있는 것이
+# 로컬 미러라 무시했지만, 이제 저작이 이 저장소에서 일어나므로 무시하면
+# 초안이 이 노트북에만 존재하게 된다.
+
+# tools/build-catalog.py 의 출력. 공개 카탈로그는 main 에서 GitHub Actions 가
+# 매번 새로 만들어 Pages 로 올리므로, 생성물이 릴리스 PR 의 diff 에 섞이지 않게 둔다.
+/site/

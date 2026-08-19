@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="864" height="1080" viewBox="0 0 864 1080">
+  <rect width="864" height="1080" fill="#b5fd4c"/>
+  <g font-family="Hiragino Sans, Noto Sans JP, sans-serif" fill="#1c1c1c">
+    <rect x="72" y="72" width="462" height="82" rx="41" fill="#1c1c1c"/>
+    <text x="104" y="126" fill="#ffffff" font-family="Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="1">PODO</text>
+    <rect x="226" y="82" width="298" height="62" rx="31" fill="#ffffff"/>
+    <text x="375" y="123" text-anchor="middle" font-size="26" font-weight="800">体験レッスン</text>
+
+    <text x="72" y="320" font-size="124" font-weight="900" letter-spacing="-5">上級</text>
+    <text x="76" y="382" font-size="31" font-weight="700" opacity=".62">自分のことばで話す</text>
+    <text x="790" y="122" text-anchor="end" font-family="Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="800" opacity=".45">04 / 04</text>
+
+    <g transform="translate(72 486)">
+      <rect width="720" height="318" rx="52" fill="#1c1c1c"/>
+      <text x="48" y="80" fill="#b5fd4c" font-size="27" font-weight="800" opacity=".72">오늘의 질문</text>
+      <text x="48" y="151" fill="#ffffff" font-size="45" font-weight="900">요즘 가장 즐거운 일이</text>
+      <text x="48" y="213" fill="#ffffff" font-size="45" font-weight="900">뭐예요?</text>
+      <path d="M48 260H672" stroke="#ffffff" stroke-opacity=".22" stroke-width="3"/>
+      <circle cx="618" cy="274" r="14" fill="#b5fd4c"/>
+      <circle cx="654" cy="274" r="14" fill="#ffffff" fill-opacity=".55"/>
+      <circle cx="690" cy="274" r="14" fill="#ffffff" fill-opacity=".25"/>
+    </g>
+
+    <path d="M72 868H792" stroke="#1c1c1c" stroke-opacity=".18" stroke-width="3"/>
+    <text x="72" y="931" font-size="29" font-weight="800">答えは、ひとつじゃない。</text>
+    <text x="72" y="984" font-size="24" font-weight="700" opacity=".58">韓国語 · 55分体験</text>
+    <circle cx="762" cy="950" r="38" fill="#ffffff"/>
+    <text x="762" y="961" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="900">04</text>
+  </g>
+</svg>

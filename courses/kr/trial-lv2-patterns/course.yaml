@@ -1,0 +1,40 @@
+apiVersion: podo.curriculum/v1
+kind: Course
+metadata:
+  slug: trial-lv2-patterns
+
+spec:
+  curriculumType: TRIAL
+  # 일본 거주 학습자에게 보이는 한국어 체험이다. COUNTRY_CODE=JP 인 행만 그 탭이 조회한다.
+  countryCode: JP
+
+  # 자연키의 일부다 — 바꾸면 같은 코스의 수정이 아니라 다른 코스가 된다.
+  #
+  # 11~14 는 라이브 체험 코스(1·2·4·8)를 피해서 잡은 대역이다. 그쪽은 아직 PDF+오디오
+  # 교재이고 BOOK_TYPE 에 튜터 매칭 등급(A/B/C/D)을 싣고 있어, 같은 레벨을 쓰면 apply 가
+  # 그 행을 덮어써 체험 튜터 매칭이 끊긴다. 이 네 코스는 그 위에 따로 선다.
+  classLevel: "12"
+
+  # 한국어 체험 수업은 55분이다. 주차로 쪼개지 않는 한 번짜리 수업이라 레슨도 하나다.
+  lessonTime: 55
+
+  # 라이브 체험 네 개(레벨 1·2·4·8, PDF+오디오)와 나란히 선다 — 목록에는 체험이
+  # 여덟 개로 보인다. 레거시 네 개를 어떻게 할지는 따로 결정할 일이고, 그때까지는
+  # 이쪽이 HTML 체험이라는 것만 제목으로 구분된다.
+  enabled: true
+  difficulty: UPPER_BEGINNER
+
+  title:
+    ko: 체험 레슨 · 초급
+    en: Trial lesson · Elementary
+    ja: 体験レッスン · 初級
+
+  description:
+    ko: 기본 문형으로 자기소개와 일상 표현을 말해 보는 55분 체험 레슨.
+    ja: 基本の文型で自己紹介や日常表現を話してみる55分の体験レッスン。
+
+  thumbnail: assets/cover.png
+
+  tutorGroups:
+    allowRandom: []
+    assignedOnly: []
