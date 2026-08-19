@@ -36,11 +36,23 @@ def deck_metadata(review_id: str, new: str = "surprise|驚かせる") -> str:
 
 
 class VocabularyTests(unittest.TestCase):
-    def test_pilot_has_two_new_words_and_valid_provenance(self):
+    def test_pilot_owns_box_and_recycles_bag_from_core_5(self):
         data = vocabulary.parse(PILOT.read_text(encoding="utf-8"), source=PILOT)
         self.assertEqual(data["status"], "reviewed")
-        self.assertEqual(len(data["categories"]["new"]), 2)
-        self.assertEqual(data["categories"]["recycled"], [])
+        self.assertEqual(
+            [
+                (entry["english"], entry["japanese"])
+                for entry in data["categories"]["new"]
+            ],
+            [("box", "箱")],
+        )
+        self.assertEqual(
+            [
+                (entry["english"], entry["japanese"], entry["source"])
+                for entry in data["categories"]["recycled"]
+            ],
+            [("bag", "かばん", "CORE-5")],
+        )
 
     def test_duplicate_across_categories_is_rejected(self):
         with self.assertRaisesRegex(vocabulary.VocabularyError, "both new and assumed"):

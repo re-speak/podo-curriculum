@@ -291,7 +291,12 @@ def marks(s, cls="ending"):
     return esc(s).replace("{t}", f'<span class="{cls}">').replace("{/t}", "</span>")
 
 def set_vocab(head, number):
-    for category,value in zip(("new","assumed","receptive"),VOCAB[number]):
+    # The canonical CORE-20 shell has its own recycled provenance. Generated
+    # CORE 12-24 decks must explicitly own all four categories so that pilot
+    # metadata cannot leak into them when the pilot is corrected.
+    values = dict(zip(("new", "assumed", "receptive"), VOCAB[number]))
+    values["recycled"] = ""
+    for category, value in values.items():
         head=re.sub(rf'(<meta name="podo:vocabulary:{category}" content=")[^"]*(")',rf'\g<1>{value}\2',head,count=1)
     return head
 
