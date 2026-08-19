@@ -201,7 +201,9 @@ writers copy. Korean spent 348 reorder sentences at the wrong chip count for exa
   on its exact Japanese meaning. Controlled fills use one Japanese `.target.ending` per blank;
   word-level choice uses one Japanese highlight per independent decision. Reorder and whole-sentence
   translation prompts stay neutral. Highlight presence somewhere on a page is not enough—check each
-  row and each decision.
+  row and each decision. Put every choice at the smallest meaningful unit with `.word-choice`.
+  A reviewed exception whose alternatives genuinely differ across the whole sentence must declare
+  `data-choice-scope="whole-sentence"`; otherwise the checker rejects it.
 - Every Contextual interaction must be runnable by an English-speaking tutor who does not read
   Japanese. `Understand` meaning options expose a concise English sense label alongside Japanese
   support, and the English tutor note states the read order when it is not visible. Never use

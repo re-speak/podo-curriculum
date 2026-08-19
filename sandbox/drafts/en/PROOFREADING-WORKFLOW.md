@@ -115,6 +115,8 @@ content data, and regenerate. A spot-check link is an approval surface only afte
 it is not a substitute for the gate.
 
 Mechanical checks must reject punctuation-only or bound-word reorder chips, unstyled repeated-row
-containers, editable phrase fields outside the canonical answer component, impossible answers and
-mixed chunk criteria. Human proofreading still owns whether every surviving chip is a useful
-meaning unit, whether a rule teaches the visible pattern, and whether the activity earns its place.
+containers, editable phrase fields outside the canonical answer component, impossible answers,
+mixed chunk criteria and unmarked full-sentence choices where `.word-choice` was required. Human
+proofreading still owns whether every surviving chip is a useful meaning unit, whether a reviewed
+whole-sentence choice genuinely differs across the whole sentence, whether a rule teaches the
+visible pattern, and whether the activity earns its place.

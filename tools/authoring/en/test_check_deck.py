@@ -211,6 +211,30 @@ class DeckCheckTests(unittest.TestCase):
         self.assertTrue(any("formation diagram" in item for item in errors))
         self.assertTrue(any("not a native tip" in item for item in errors))
 
+    def test_core_shape_rejects_unjustified_full_sentence_choices(self):
+        errors = check_deck.core_canonical_shape_issues(
+            {
+                "p1-choose": (
+                    '<div class="choose-list"><div class="choose-row sentence">'
+                    '<span class="opt">I start work at eight.</span>'
+                    '<span class="opt">I start work at ten.</span>'
+                    '</div></div>'
+                )
+            }
+        )
+        self.assertTrue(any("smallest meaningful unit" in item for item in errors))
+
+    def test_core_shape_allows_explicit_whole_sentence_contrast(self):
+        errors = check_deck.core_canonical_shape_issues(
+            {
+                "p1-choose": (
+                    '<div class="choose-list" data-choice-scope="whole-sentence">'
+                    '<div class="choose-row sentence"></div></div>'
+                )
+            }
+        )
+        self.assertFalse(any("p1-choose: choose at" in item for item in errors))
+
     def test_phrase_input_requires_spaced_answer_component(self):
         errors = check_deck.phrase_input_structure_issues(
             '<div class="bubble"><span class="korean">'

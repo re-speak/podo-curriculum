@@ -55,6 +55,11 @@ class CourseBatchGenerationTests(unittest.TestCase):
         self.assertIn('class="sent-more"', page_chunks["p1-teach"])
         self.assertIn('class="batchim ending-rule"', page_chunks["p1-rule"])
         self.assertIn('class="nuance-compare"', page_chunks["native-tip"])
+        self.assertIn('class="word-choice-list"', page_chunks["p1-choose"])
+        self.assertIn('class="word-choice-list"', page_chunks["p2-choose"])
+        self.assertNotIn("I start work at eight.</span>", page_chunks["p1-choose"])
+        self.assertIn('data-sync-option="correct" data-correct>eight</span>', page_chunks["p1-choose"])
+        self.assertIn('data-sync-option="correct" data-correct>usually finish</span>', page_chunks["p2-choose"])
         self.assertEqual(
             [len(block.split('class="choice"')) - 1 for block in page_chunks["p1-reorder"].split('class="task-block"')[1:]],
             [4, 4, 4, 4],

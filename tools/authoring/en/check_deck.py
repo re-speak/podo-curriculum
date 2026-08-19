@@ -711,6 +711,19 @@ def core_canonical_shape_issues(page_chunks):
         errors.append("lesson-goal: show the complete three-beat target exchange")
 
     for part in (1, 2):
+        choose_id = f"p{part}-choose"
+        choose = page_chunks.get(choose_id, "")
+        if (
+            choose
+            and "word-choice-list" not in choose
+            and 'data-choice-scope="whole-sentence"' not in choose
+        ):
+            errors.append(
+                f"{choose_id}: choose at the smallest meaningful unit with .word-choice; "
+                "full-sentence options require an explicit data-choice-scope=\"whole-sentence\" "
+                "because the alternatives genuinely differ across the whole sentence"
+            )
+
         teach_id = f"p{part}-teach"
         teach = page_chunks.get(teach_id, "")
         if not teach:

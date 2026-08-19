@@ -307,9 +307,9 @@ def rule_page(pid, title, title_ja, script, script_ja, formula, heading, heading
     )
 
 
-def choose_sentences(pid, title, title_ja, script, script_ja, rows):
+def choose_words(pid, title, title_ja, script, script_ja, rows):
     rendered = []
-    for index, (japanese, correct, distractor) in enumerate(rows):
+    for index, (japanese, prefix, correct, distractor, suffix) in enumerate(rows):
         options = [("correct", correct, True), ("other", distractor, False)]
         if index % 2:
             options.reverse()
@@ -319,10 +319,12 @@ def choose_sentences(pid, title, title_ja, script, script_ja, rows):
             for kind, text, is_correct in options
         )
         rendered.append(
-            f'<div class="choose-row sentence" data-sync-id="{pid}-{index}" '
-            'data-sync-kind="selection" data-sync-state="chosen">'
-            f'<span class="translation">{esc(japanese)}</span>'
-            f'<span class="choose-sentence">{option_html}</span></div>'
+            '<div class="word-choice-card">'
+            f'<span class="translation">{marks(japanese)}</span>'
+            f'<span class="word-choice-sentence">{esc(prefix)}'
+            f'<span class="choose-row word-choice" data-sync-id="{pid}-{index}" '
+            f'data-sync-kind="selection" data-sync-state="chosen">{option_html}</span>'
+            f'{esc(suffix)}</span></div>'
         )
     return section(
         pid,
@@ -330,7 +332,7 @@ def choose_sentences(pid, title, title_ja, script, script_ja, rows):
         title_ja,
         '<p class="section-subtitle">'
         f'<span class="ko">{esc(script)}</span><span class="ja">{esc(script_ja)}</span></p>'
-        f'<div class="choose-list">{"".join(rendered)}</div>',
+        f'<div class="word-choice-list">{"".join(rendered)}</div>',
     )
 
 
@@ -392,17 +394,17 @@ def core12_pages(d):
         "ぴったりの時刻",
         ("I <b>start work at</b> nine.", "I <b>start work at</b> ten."),
     )
-    p1_choose = choose_sentences(
+    p1_choose = choose_words(
         "p1-choose",
         "Choose the exact time",
         "正しい時刻を選ぼう",
         "Read the Japanese, then choose the matching time.",
         "日本語を読んで、合う時刻を選びましょう。",
         (
-            ("8時に仕事を始めます。", "I start work at eight.", "I start work at ten."),
-            ("9時に仕事を始めます。", "I start work at nine.", "I start work at eleven."),
-            ("10時に仕事を始めます。", "I start work at ten.", "I start work at eight."),
-            ("11時に仕事を始めます。", "I start work at eleven.", "I start work at nine."),
+            ("{t}8時{/t}に仕事を始めます。", "I start work at ", "eight", "ten", "."),
+            ("{t}9時{/t}に仕事を始めます。", "I start work at ", "nine", "eleven", "."),
+            ("{t}10時{/t}に仕事を始めます。", "I start work at ", "ten", "eight", "."),
+            ("{t}11時{/t}に仕事を始めます。", "I start work at ", "eleven", "nine", "."),
         ),
     )
     p1_write = section(
@@ -436,17 +438,17 @@ def core12_pages(d):
             "I <b>usually</b> eat lunch <b>around</b> twelve.",
         ),
     )
-    p2_choose = choose_sentences(
+    p2_choose = choose_words(
         "p2-choose",
         "Choose the natural word order",
         "自然な語順を選ぼう",
-        'Choose the sentence with "usually" before the action.',
-        '「usually」が動作の前にある文を選びましょう。',
+        'Choose the natural order for "usually" and the action.',
+        '「usually」と動作の自然な順番を選びましょう。',
         (
-            ("ふだん6時ごろ仕事を終えます。", "I usually finish work around six.", "I finish work usually around six."),
-            ("ふだん12時ごろ昼食をとります。", "I usually eat lunch around twelve.", "I eat lunch usually around twelve."),
-            ("ふだん7時ごろ夕食をとります。", "I usually have dinner around seven.", "I have dinner usually around seven."),
-            ("ふだん9時ごろ仕事を始めます。", "I usually start work around nine.", "I start work usually around nine."),
+            ("{t}ふだん{/t}6時ごろ仕事を終えます。", "I ", "usually finish", "finish usually", " work around six."),
+            ("{t}ふだん{/t}12時ごろ昼食をとります。", "I ", "usually eat", "eat usually", " lunch around twelve."),
+            ("{t}ふだん{/t}7時ごろ夕食をとります。", "I ", "usually have", "have usually", " dinner around seven."),
+            ("{t}ふだん{/t}9時ごろ仕事を始めます。", "I ", "usually start", "start usually", " work around nine."),
         ),
     )
     p2_write = section(
