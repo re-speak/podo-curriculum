@@ -7,9 +7,9 @@ spec:
   week: 1
 
   title:
-    ko: 체험 · 고급 프리토킹
-    en: Trial · Free talking
-    ja: 体験レッスン 上級
+    ko: "체험 · 고급 프리토킹"
+    en: "Trial · Free talking"
+    ja: "体験レッスン 上級"
 
   decks:
     lecture:  { entry: lecture/index.html }

@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/talk-small-things-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-petty-annoyance/lesson.html
+      slug: 01-petty-annoyance
+      week: 1
+      title:
+        ko: "\uc0ac\uc18c\ud558\uc9c0\ub9cc \uc5f4\ubc1b\ub294 \uc21c\uac04"
+        en: "A tiny but infuriating moment"
+        ja: "\u5c0f\u3055\u3044\u3051\u3069\u30a4\u30e9\u30c3\u3068\u3059\u308b\u77ac\u9593"
+    - source: 02-my-tmi/lesson.html
+      slug: 02-my-tmi
+      week: 2
+      title:
+        ko: "\uc544\ubb34\ub3c4 \uc548 \uad81\uae08\ud574\ud560 \ub098\uc758 TMI"
+        en: "My unnecessary TMI"
+        ja: "\u8ab0\u3082\u6c17\u306b\u306a\u3089\u306a\u3044\u79c1\u306eTMI"
+    - source: 03-weird-habit/lesson.html
+      slug: 03-weird-habit
+      week: 3
+      title:
+        ko: "\ub098\ub9cc\uc758 \uc774\uc0c1\ud55c \uc2b5\uad00"
+        en: "My weird habit"
+        ja: "\u79c1\u3060\u3051\u306e\u5909\u306a\u7fd2\u6163"
+    - source: 04-rainy-day-me/lesson.html
+      slug: 04-rainy-day-me
+      week: 4
+      title:
+        ko: "\ube44 \uc624\ub294 \ub0a0\uc758 \ub098"
+        en: "Me on a rainy day"
+        ja: "\u96e8\u306e\u65e5\u306e\u79c1"
+    - source: 05-energy-reset/lesson.html
+      slug: 05-energy-reset
+      week: 5
+      title:
+        ko: "\ubb34\uae30\ub825\ud560 \ub54c \uae30\uc6b4 \ub098\uac8c \ud558\ub294 \uac83"
+        en: "My energy reset"
+        ja: "\u3084\u308b\u6c17\u304c\u306a\u3044\u3068\u304d\u5143\u6c17\u3092\u304f\u308c\u308b\u3082\u306e"
+    - source: 06-stress-relief/lesson.html
+      slug: 06-stress-relief
+      week: 6
+      title:
+        ko: "\ub098\ub9cc\uc758 \uc2a4\ud2b8\ub808\uc2a4 \ud574\uc18c\ubc95"
+        en: "My stress relief"
+        ja: "\u79c1\u306a\u308a\u306e\u30b9\u30c8\u30ec\u30b9\u89e3\u6d88\u6cd5"
+    - source: 07-one-superstition/lesson.html
+      slug: 07-one-superstition
+      week: 7
+      title:
+        ko: "\ubbf8\uc2e0, \ubbff\ub294 \ud3b8?"
+        en: "One superstition I follow"
+        ja: "\u8ff7\u4fe1\u3001\u4fe1\u3058\u308b\u307b\u3046\uff1f"
+    - source: 08-weekend-routine/lesson.html
+      slug: 08-weekend-routine
+      week: 8
+      title:
+        ko: "\uc8fc\ub9d0 \ub8e8\ud2f4"
+        en: "My weekend routine"
+        ja: "\u9031\u672b\u306e\u30eb\u30fc\u30c6\u30a3\u30f3"
+    - source: 09-house-rule/lesson.html
+      slug: 09-house-rule
+      week: 9
+      title:
+        ko: "\uc6b0\ub9ac \uc9d1\uc5d0\ub9cc \uc788\ub294 \uaddc\uce59"
+        en: "A rule only my family has"
+        ja: "\u308f\u304c\u5bb6\u3060\u3051\u306e\u30eb\u30fc\u30eb"
+    - source: 10-cringe-memory/lesson.html
+      slug: 10-cringe-memory
+      week: 10
+      title:
+        ko: "\uc774\ubd88\ud0a5\ud558\ub294 \uae30\uc5b5"
+        en: "A cringe memory"
+        ja: "\u601d\u3044\u51fa\u3059\u3068\u6065\u305a\u304b\u3057\u3044\u8a18\u61b6"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

@@ -1,0 +1,53 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/core-intermediate-3
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-3/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-3
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 85-it-just-happened/lesson.html
+      slug: 85-it-just-happened
+      week: 1
+      title:
+        ko: "\ucc3d\ubb38\uc774 \uc5f4\ub838\uc5b4\uc694"
+        en: "It just happened"
+        ja: "\u7a93\u304c\u958b\u304d\u307e\u3057\u305f"
+    - source: 86-broken-and-left/lesson.html
+      slug: 86-broken-and-left
+      week: 2
+      title:
+        ko: "\ud734\ub300\ud3f0\uc774 \uae68\uc84c\uc5b4\uc694"
+        en: "Broken and left that way"
+        ja: "\u643a\u5e2f\u304c\u5272\u308c\u307e\u3057\u305f"
+    - source: 87-making-them-do-it/lesson.html
+      slug: 87-making-them-do-it
+      week: 3
+      title:
+        ko: "\uc544\uc774\uc5d0\uac8c \uc637\uc744 \uc785\ud600\uc694"
+        en: "Making them do it"
+        ja: "\u5b50\u3069\u3082\u306b\u670d\u3092\u7740\u305b\u307e\u3059"
+    - source: 88-noun-based-voice/lesson.html
+      slug: 88-noun-based-voice
+      week: 4
+      title:
+        ko: "\ubd80\uc7a5\ub2d8\uc774 \uc77c\uc744 \uc2dc\ucf30\uc5b4\uc694"
+        en: "Noun-based voice"
+        ja: "\u90e8\u9577\u304c\u4ed5\u4e8b\u3092\u3055\u305b\u307e\u3057\u305f"
+    - source: 89-let-me-help-you/lesson.html
+      slug: 89-let-me-help-you
+      week: 5
+      title:
+        ko: "\uc81c\uac00 \ub4e4\uc5b4 \ub4dc\ub9b4\uac8c\uc694"
+        en: "Let me help you"
+        ja: "\u79c1\u304c\u6301\u3063\u3066\u3055\u3057\u3042\u3052\u307e\u3059"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

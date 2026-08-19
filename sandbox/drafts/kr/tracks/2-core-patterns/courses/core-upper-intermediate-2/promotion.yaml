@@ -1,0 +1,81 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/core-upper-intermediate-2
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-2/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-2
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 102-to-the-point-of/lesson.html
+      slug: 102-to-the-point-of
+      week: 1
+      title:
+        ko: "\ub208\ubb3c\uc774 \ub0a0 \uc815\ub3c4\ub85c \ub9e4\uc6cc\uc694"
+        en: "To the point of"
+        ja: "\u6d99\u304c\u51fa\u308b\u307b\u3069\u8f9b\u3044\u3067\u3059"
+    - source: 103-as-much-as/lesson.html
+      slug: 103-as-much-as
+      week: 2
+      title:
+        ko: "\ub178\ub825\ud55c \ub9cc\ud07c \u00b7 \ub9d0\uc500\ud558\uc2e0 \ub300\ub85c"
+        en: "As much as, as told"
+        ja: "\u52aa\u529b\u3057\u305f\u5206\u3060\u3051\u30fb\u304a\u3063\u3057\u3083\u3063\u305f\u3068\u304a\u308a\u306b"
+    - source: 104-only-and-worth/lesson.html
+      slug: 104-only-and-worth
+      week: 3
+      title:
+        ko: "\ud559\uc0dd\uc77c \ubfd0\uc778\ub370 \ubcfc \ub9cc\ud574\uc694"
+        en: "Only, and worth it"
+        ja: "\u5b66\u751f\u306a\u3060\u3051\u3067\u3059\u304c\u898b\u308b\u4fa1\u5024\u306f\u3042\u308a\u307e\u3059"
+    - source: 105-nothing-but/lesson.html
+      slug: 105-nothing-but
+      week: 4
+      title:
+        ko: "\uae30\ub2e4\ub9b4 \uc218\ubc16\uc5d0 \uc5c6\uc5b4\uc694 \u00b7 \ubb3c\ubc16\uc5d0 \uc5c6\uc5b4\uc694"
+        en: "Nothing but"
+        ja: "\u5f85\u3064\u3057\u304b\u3042\u308a\u307e\u305b\u3093\u30fb\u6c34\u3057\u304b\u3042\u308a\u307e\u305b\u3093"
+    - source: 106-rather-and-barely/lesson.html
+      slug: 106-rather-and-barely
+      week: 5
+      title:
+        ko: "\uc798 \uba39\ub294 \ud3b8\uc774\uc5d0\uc694 \u00b7 \uc8fd\uc744 \uc9c0\uacbd\uc774\uc5d0\uc694"
+        en: "Rather, and barely"
+        ja: "\u3088\u304f\u98df\u3079\u308b\u307b\u3046\u3067\u3059\u30fb\u6b7b\u306c\u304b\u3068\u601d\u3044\u307e\u3057\u305f"
+    - source: 107-should-have/lesson.html
+      slug: 107-should-have
+      week: 6
+      title:
+        ko: "\uac00\uc838\uc62c \uac78 \uadf8\ub7ac\uc5b4\uc694 \u00b7 \uc7a4\uc5b4\uc57c \ud588\uc5b4\uc694"
+        en: "Should have"
+        ja: "\u6301\u3063\u3066\u304f\u308c\u3070\u3088\u304b\u3063\u305f\u3067\u3059\u30fb\u5bdd\u308b\u3079\u304d\u3067\u3057\u305f"
+    - source: 108-tend-to-and-bound-to/lesson.html
+      slug: 108-tend-to-and-bound-to
+      week: 7
+      title:
+        ko: "\uc790\uafb8 \uc783\uc5b4\ubc84\ub9ac\uace4 \ud574\uc694 \u00b7 \uadf8\ub7ec\uae30 \ub9c8\ub828\uc774\uc5d0\uc694"
+        en: "Tend to, bound to"
+        ja: "\u3088\u304f\u306a\u304f\u3057\u305f\u308a\u3057\u307e\u3059\u30fb\u305d\u3046\u306a\u308b\u3082\u306e\u3067\u3059"
+    - source: 109-half-heartedly/lesson.html
+      slug: 109-half-heartedly
+      week: 8
+      title:
+        ko: "\uba39\ub294 \ub465 \ub9c8\ub294 \ub465 \u00b7 \ubaa8\ub974\ub294 \ucc99"
+        en: "Half-heartedly"
+        ja: "\u308d\u304f\u306b\u98df\u3079\u305a\u30fb\u77e5\u3089\u306a\u3044\u3075\u308a"
+    - source: 110-while-youre-at-it/lesson.html
+      slug: 110-while-youre-at-it
+      week: 9
+      title:
+        ko: "\uac00\ub294 \uae40\uc5d0 \u00b7 \ubcfc \uacb8 \uba39\uc744 \uacb8"
+        en: "While you're at it"
+        ja: "\u884c\u304f\u3064\u3044\u3067\u306b\u30fb\u898b\u308b\u306e\u3082\u517c\u306d\u3066"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

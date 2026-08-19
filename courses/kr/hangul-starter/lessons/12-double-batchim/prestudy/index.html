@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <meta name="podo:lesson-id" content="12-double-batchim">
+  <meta name="podo:level" content="왕초급">
+  <meta name="podo:content-version" content="2026-08-12">
+  <meta name="podo:title-ko" content="겹받침 입문 — 글자 둘, 자리 하나">
+  <meta name="podo:title-en" content="Double batchim starter — two letters, one slot">
+  <meta name="podo:title-ja" content="二重パッチム入門 — 文字は2つ、席は1つ">
+  <title>겹받침 입문 — 글자 둘, 자리 하나 — PODO 韓国語</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/css/lesson-card.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/css/trial.css">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+  <div class="phone">
+
+    <!-- ================================================================
+         과 12 · 겹받침 — 글자 둘, 자리 하나
+
+         THE HONEST FRAME: this is a READING rule, not a pronunciation
+         skill. 닭 and 닥 sound identical, so there is no ear-training
+         rung to climb here — the learner's whole job is to look at the
+         pair and know which of the two letters is the one that speaks.
+         That is why the ladder's 듣고 고르기 page does not appear per
+         group: a 듣고 고르기 between 닭 and 닥 would be an unanswerable
+         question. The per-group drill is 「어느 쪽 소리?」 instead, and
+         real listening returns once at word level (듣고 고르기), where
+         the six words genuinely sound different from one another.
+
+         THE SIX, GROUPED BY WHICH SIDE WINS — the TOC's own trios
+         (ㄺ ㄻ ㅀ · ㅄ ㄳ ㄶ) do NOT match the pronunciation split, so
+         the deck regroups them:
+             앞을 읽는 짝 (4)  ㅄ→ㅂ  ㄳ→ㄱ  ㅀ→ㄹ  ㄶ→ㄴ
+             뒤를 읽는 짝 (2)  ㄺ→ㄱ  ㄻ→ㅁ
+         Four is one over the blueprint's three-per-page ceiling, so the
+         front group is taught in two pages of two, split by the silent
+         partner (ㅅ, then ㅎ) — which is also the reason each pair works.
+
+         WHAT IS DELIBERATELY ABSENT
+         · 밟다 · 넓다 — pairs whose winner changes with context. 중급.
+         · 연음 / ㅎ 변화 — 과 13 owns both. So the deck
+           never prints 싫다 → [실타] or 많다 → [만타]: those respellings
+           are 과 13's rule, not this one. The diagrams stop at the
+           SYLLABLE (싫 → 실, 많 → 만) and the whole word is only ever
+           heard, on the word cards.
+         · Seat colours (cream 자음 / pink 모음). Every syllable on this
+           page carries a 받침, and the palette has no 받침 seat that a
+           lesson component can use — a .seat-lr on 값 would tint the
+           ㅄ as half consonant, half vowel, which is a lie. So the
+           tiles here are plain, exactly as 과 3's colour-off drills are.
+         · The keypad builder (.builder). Its compose() takes 초성＋중성
+           only; it cannot make a syllable with any 받침, single or
+           double. The production rung is 「어느 쪽 소리?」 and reading
+           aloud instead.
+
+         Mouth photos: six basic vowels only, and nothing on this page
+         is decided by a vowel — so there are none.
+         ================================================================ -->
+
+    <!-- the goal, stated plainly: three real words you'll read by the
+         end. a dark page, so it uses the transition-page shell -->
+    <div class="transition-page" data-page-id="lesson-goal" data-act="겹받침">
+      <span class="transition-kicker">목표</span>
+      <h2 class="transition-title">오늘의 목표 <span class="title-ja">(今日のゴール)</span></h2>
+      <p class="section-subtitle"><span class="ko">겹받침 중에서 먼저 익힐 여섯 짝을 배워요. 이 세 단어를 혼자 읽게 될 거예요.</span><span class="ja">二重パッチムの中から、まず覚えたい6組を習います。この3つの単語を自分で読めるようになります。</span></p>
+      <div class="known">
+        <div class="known-row"><span class="k">닭</span><span class="j">にわとり<small>タク</small></span></div>
+        <div class="known-row"><span class="k">값</span><span class="j">値段<small>カプ</small></span></div>
+        <div class="known-row"><span class="k">많다</span><span class="j">多い<small>マンタ</small></span></div>
+      </div>
+    </div>
+
+    <!-- warm-up, and the reason it is here: today's rule is "the floor
+         still makes exactly one sound", which only lands if 과 11's
+         floor is warm. No seat colours — a 받침 syllable has three
+         parts and the palette has two. -->
+    <div class="section" data-page-id="review-batchim">
+      <h2 class="section-title">받침 복습 <span class="title-ja">(パッチムのおさらい)</span></h2>
+      <p class="section-subtitle"><span class="ko">지난 시간에 배운 받침이에요. 소리 내어 읽어 보세요.</span><span class="ja">前回習ったパッチムです。声に出して読んでみましょう。</span></p>
+      <div class="tutor-note">한 줄씩 읽게 하고, 받침 소리만 다시 짚어 주세요.</div>
+      <div class="read-grid">
+        <span class="read-chip">책</span>
+        <span class="read-chip">밥</span>
+        <span class="read-chip">옷</span>
+        <span class="read-chip">산</span>
+        <span class="read-chip">발</span>
+        <span class="read-chip">앞</span>
+      </div>
+    </div>
+
+    <!-- the idea, in one equation. The tinted floor is the 받침 slot —
+         the same band this component tints in the core deck, meaning
+         the same thing: the bottom of the last syllable is where the
+         rule is decided. Two letters are sitting in it; one sound comes
+         out. Which one wins is not named here on purpose: that is the
+         next two parts of the lesson. -->
+    <div class="section" data-page-id="two-letters-one-slot">
+      <h2 class="section-title">글자 둘, 자리 하나 <span class="title-ja">(文字は2つ、席は1つ)</span></h2>
+      <p class="section-subtitle"><span class="ko">받침 자리를 보세요. 글자가 두 개예요. 그런데 소리는 하나예요.</span><span class="ja">パッチムの席を見てください。文字が2つあります。でも音は1つです。</span></p>
+      <div class="batchim">
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">닭</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">닥</span>
+          </span>
+          <span class="bt-head">받침 두 글자, 소리 하나<small>ㄺ ＝ ㄹ ＋ ㄱ。ここで読むのは ㄱ だけ</small></span>
+        </div>
+      </div>
+      <div class="hint"><span class="hint-chip">どちらを読むかは組み合わせで決まっている</span><span class="hint-chip">今日は最初の6組</span></div>
+    </div>
+
+    <!-- first rung, and it asks for nothing but eyes: before you can
+         apply the rule you have to see that the floor has two letters
+         in it. Nothing here has to be read aloud, so 값 and 삶 can
+         appear before their own pages. -->
+    <div class="section" data-page-id="find-double">
+      <h2 class="section-title">겹받침 찾기 <span class="title-ja">(二重パッチムさがし)</span></h2>
+      <p class="section-subtitle"><span class="ko">받침이 두 글자인 것을 모두 눌러 보세요. 아직 읽지 않아도 돼요.</span><span class="ja">パッチムが2文字のものを全部タップしてください。まだ読まなくて大丈夫です。</span></p>
+      <div class="tap-grid" data-sync-id="tiles-find-double" data-sync-kind="selection" data-sync-state="right wrong">
+        <button class="tap-tile" data-ok="1" data-sync-option="닭">닭</button>
+        <button class="tap-tile" data-sync-option="밥">밥</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="값">값</button>
+        <button class="tap-tile" data-sync-option="산">산</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="삶">삶</button>
+        <button class="tap-tile" data-sync-option="옷">옷</button>
+      </div>
+    </div>
+
+    <!-- Part 1 · the four pairs that read the FRONT letter. They come
+         first because they are the majority, so "read the front one"
+         can be the learner's default and Part 2 is the short list of
+         exceptions — the other order would make the rule feel random. -->
+    <div class="transition-page" data-page-id="front-intro">
+      <span class="transition-kicker">パート 1</span>
+      <h2 class="transition-title">앞을 읽는 짝 <span class="title-ja">(前を読むペア)</span></h2>
+      <p class="section-subtitle"><span class="ko">먼저 네 짝이에요. 이 짝들은 앞 글자만 읽어요. 뒤 글자는 소리가 없어요.</span><span class="ja">まずは4組。このペアは前の文字だけ読みます。後ろの文字は音がありません。</span></p>
+    </div>
+
+    <!-- two pairs a page, not four: the blueprint's ceiling is three new
+         items, and these two share a reason — the silent partner is ㅅ
+         in both. The ㅎ pairs get their own page for the same reason. -->
+    <div class="section" data-page-id="front-s">
+      <h2 class="section-title">앞을 읽는 짝 ① <span class="title-ja">(前を読むペア ①)</span></h2>
+      <p class="section-subtitle"><span class="ko">ㅄ과 ㄳ이에요. 뒤에 있는 ㅅ은 소리가 없어요. 제가 읽을게요, 따라 읽어 보세요.</span><span class="ja">ㅄ と ㄳ です。後ろにある ㅅ は音がありません。私が読むので、まねして読んでみましょう。</span></p>
+      <div class="batchim">
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">값</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">갑</span>
+          </span>
+          <span class="bt-head">ㅄ은 ㅂ 소리<small>ㅂ ＋ ㅅ のうち、ㅂ だけ</small></span>
+        </div>
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">몫</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">목</span>
+          </span>
+          <span class="bt-head">ㄳ은 ㄱ 소리<small>ㄱ ＋ ㅅ のうち、ㄱ だけ</small></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- the drill this lesson can actually have. The two pills are the
+         two letters sitting in the floor, so the question on screen is
+         exactly the question the rule answers. The correct side
+         alternates (L·R·L) — a learner who taps one column cannot pass.
+         없 is a third word for ㅄ: applying the rule to a word the rule
+         page did not show is what makes it a drill and not a recall. -->
+    <div class="section" data-page-id="choose-front-s">
+      <h2 class="section-title">어느 쪽 소리 <span class="title-ja">(どっちの音？)</span></h2>
+      <p class="section-subtitle"><span class="ko">받침에서 어느 쪽을 읽어요? 맞는 쪽을 눌러 보세요.</span><span class="ja">パッチムのどちらを読みますか。正しいほうをタップしてください。</span></p>
+      <div class="tutor-note">학생이 고른 뒤에 그 글자를 소리 내어 읽어 주세요.</div>
+      <div class="choose-list">
+        <div class="choose-row" data-sync-id="choice-gaps" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">값</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="b" data-correct>ㅂ</span><span class="sep">/</span><span class="opt" data-sync-option="s">ㅅ</span></span>
+        </div>
+        <div class="choose-row" data-sync-id="choice-mok" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">몫</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="s">ㅅ</span><span class="sep">/</span><span class="opt" data-sync-option="g" data-correct>ㄱ</span></span>
+        </div>
+        <div class="choose-row" data-sync-id="choice-eops" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">없</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="b" data-correct>ㅂ</span><span class="sep">/</span><span class="opt" data-sync-option="s">ㅅ</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- The diagrams stop at the syllable — 싫 → 실, not 싫다 → [실타].
+         What happens to the 다 next door is ㅎ 축약, and 과 13 owns it;
+         printing it here would teach two rules on one page and hand the
+         next lesson away. The whole word is heard, on the word cards. -->
+    <div class="section" data-page-id="front-h">
+      <h2 class="section-title">앞을 읽는 짝 ② <span class="title-ja">(前を読むペア ②)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 ㅀ과 ㄶ이에요. 뒤에 있는 ㅎ은 소리가 없어요. 따라 읽어 보세요.</span><span class="ja">今度は ㅀ と ㄶ です。後ろにある ㅎ は音がありません。まねして読んでみましょう。</span></p>
+      <div class="batchim">
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">싫</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">실</span>
+          </span>
+          <span class="bt-head">ㅀ은 ㄹ 소리<small>ㄹ ＋ ㅎ のうち、ㄹ だけ</small></span>
+        </div>
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">많</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">만</span>
+          </span>
+          <span class="bt-head">ㄶ은 ㄴ 소리<small>ㄴ ＋ ㅎ のうち、ㄴ だけ</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="choose-front-h">
+      <h2 class="section-title">어느 쪽 소리 <span class="title-ja">(どっちの音？)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번에도 어느 쪽을 읽는지 골라 보세요.</span><span class="ja">今度もどちらを読むか選んでみましょう。</span></p>
+      <div class="tutor-note">학생이 고른 뒤에 그 글자를 소리 내어 읽어 주세요.</div>
+      <div class="choose-list">
+        <div class="choose-row" data-sync-id="choice-silh" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">싫</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="r" data-correct>ㄹ</span><span class="sep">/</span><span class="opt" data-sync-option="h">ㅎ</span></span>
+        </div>
+        <div class="choose-row" data-sync-id="choice-anh" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">않</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="h">ㅎ</span><span class="sep">/</span><span class="opt" data-sync-option="n" data-correct>ㄴ</span></span>
+        </div>
+        <div class="choose-row" data-sync-id="choice-manh" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">많</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="n" data-correct>ㄴ</span><span class="sep">/</span><span class="opt" data-sync-option="h">ㅎ</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 2 · the two that go the other way -->
+    <div class="transition-page" data-page-id="back-intro">
+      <span class="transition-kicker">パート 2</span>
+      <h2 class="transition-title">뒤를 읽는 짝 <span class="title-ja">(後ろを読むペア)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번에는 반대예요. 두 짝만 뒤 글자를 읽어요. 앞에 있는 ㄹ은 소리가 없어요.</span><span class="ja">今度は反対です。2組だけ後ろの文字を読みます。前にある ㄹ は音がありません。</span></p>
+    </div>
+
+    <div class="section" data-page-id="back-l">
+      <h2 class="section-title">겹받침 ㄺ · ㄻ <span class="title-ja">(二重パッチム ㄺ・ㄻ)</span></h2>
+      <p class="section-subtitle"><span class="ko">ㄺ과 ㄻ이에요. 앞에 있는 ㄹ은 소리가 없어요. 제가 읽을게요, 따라 읽어 보세요.</span><span class="ja">ㄺ と ㄻ です。前にある ㄹ は音がありません。私が読むので、まねして読んでみましょう。</span></p>
+      <div class="batchim">
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">닭</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">닥</span>
+          </span>
+          <span class="bt-head">ㄺ은 ㄱ 소리<small>ㄹ ＋ ㄱ のうち、ㄱ だけ</small></span>
+        </div>
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">삶</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">삼</span>
+          </span>
+          <span class="bt-head">ㄻ은 ㅁ 소리<small>ㄹ ＋ ㅁ のうち、ㅁ だけ</small></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 읽 is the third item, and it earns its place twice: it is a ㄺ
+         word the rule page did not show, and it is a syllable the
+         learner will meet in every verb list from 과 13 on. -->
+    <div class="section" data-page-id="choose-back-l">
+      <h2 class="section-title">어느 쪽 소리 <span class="title-ja">(どっちの音？)</span></h2>
+      <p class="section-subtitle"><span class="ko">이 짝들은 뒤를 읽어요. 맞는 쪽을 눌러 보세요.</span><span class="ja">このペアは後ろを読みます。正しいほうをタップしてください。</span></p>
+      <div class="tutor-note">학생이 고른 뒤에 그 글자를 소리 내어 읽어 주세요.</div>
+      <div class="choose-list">
+        <div class="choose-row" data-sync-id="choice-dak" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">닭</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="r">ㄹ</span><span class="sep">/</span><span class="opt" data-sync-option="g" data-correct>ㄱ</span></span>
+        </div>
+        <div class="choose-row" data-sync-id="choice-sam" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">삶</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="m" data-correct>ㅁ</span><span class="sep">/</span><span class="opt" data-sync-option="r">ㄹ</span></span>
+        </div>
+        <div class="choose-row" data-sync-id="choice-ik" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="choose-word">읽</span>
+          <span class="choose-opts"><span class="opt" data-sync-option="r">ㄹ</span><span class="sep">/</span><span class="opt" data-sync-option="g" data-correct>ㄱ</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- The one confusion this lesson can actually produce, so it gets
+         the comparison page 과 1 gives 어/오 and 과 4 gives 가/카. Three
+         of the six pairs open with ㄹ and only one of them says it —
+         a learner who has generalised "ㄹ is the quiet one" is right
+         twice and wrong once, and this is where they find out.
+         .pair-kana holds the letter the three share rather than a kana;
+         the slot means "what is the same across this row", which is
+         what it carried in 과 1 too. -->
+    <div class="section" data-page-id="l-trap">
+      <h2 class="section-title">ㄹ 세 짝 <span class="title-ja">(ㄹ の3組)</span></h2>
+      <p class="section-subtitle"><span class="ko">셋 다 ㄹ로 시작해요. 그런데 ㄹ을 읽는 건 하나뿐이에요. 잘 보고 따라 읽어 보세요.</span><span class="ja">3つとも ㄹ で始まります。でも ㄹ を読むのは1つだけ。よく見て、まねして読んでみましょう。</span></p>
+      <div class="tutor-note">세 개를 이어서 읽어 주세요. ㅀ만 ㄹ 소리가 난다는 걸 짚어 주세요.</div>
+      <div class="pair-list">
+        <div class="pair-row">
+          <span class="pair-kana">ㄹ</span>
+          <span class="pair-side"><span class="g">싫</span><small>ㅀ → ㄹ を読む</small></span>
+          <span class="pair-side"><span class="g">닭</span><small>ㄺ → ㄹ は黙る</small></span>
+          <span class="pair-side"><span class="g">삶</span><small>ㄻ → ㄹ は黙る</small></span>
+        </div>
+      </div>
+      <div class="hint"><span class="hint-chip">ㄹ で始まる3組のうち、ㄹ を読むのは ㅀ だけ</span></div>
+    </div>
+
+    <!-- the reference the learner leaves with: six rows, one per pair,
+         front group first. This is the whole rule on one screen — the
+         lesson has no other takeaway to memorise. -->
+    <div class="section" data-page-id="pairs-table">
+      <h2 class="section-title">먼저 익힐 여섯 짝 <span class="title-ja">(まず覚えたい6組)</span></h2>
+      <p class="section-subtitle"><span class="ko">오늘 먼저 익힐 여섯 짝이에요. 제가 한 줄씩 읽을게요. 따라 읽어 보세요.</span><span class="ja">今日まず覚える6組です。私が1行ずつ読みます。まねして読んでみましょう。</span></p>
+      <div class="known">
+        <div class="known-row"><span class="k">ㅄ</span><span class="j">ㅂ を読む<small>값 → 갑</small></span></div>
+        <div class="known-row"><span class="k">ㄳ</span><span class="j">ㄱ を読む<small>몫 → 목</small></span></div>
+        <div class="known-row"><span class="k">ㅀ</span><span class="j">ㄹ を読む<small>싫 → 실</small></span></div>
+        <div class="known-row"><span class="k">ㄶ</span><span class="j">ㄴ を読む<small>많 → 만</small></span></div>
+        <div class="known-row"><span class="k">ㄺ</span><span class="j">ㄱ を読む<small>닭 → 닥</small></span></div>
+        <div class="known-row"><span class="k">ㄻ</span><span class="j">ㅁ を読む<small>삶 → 삼</small></span></div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="read-all-six">
+      <h2 class="section-title">여섯 개 읽기 <span class="title-ja">(6つを読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">여섯 개를 소리 내어 읽어 보세요.</span><span class="ja">6つを声に出して読んでみましょう。</span></p>
+      <div class="read-grid">
+        <span class="read-chip">삶</span>
+        <span class="read-chip">값</span>
+        <span class="read-chip">많</span>
+        <span class="read-chip">닭</span>
+        <span class="read-chip">싫</span>
+        <span class="read-chip">몫</span>
+      </div>
+    </div>
+
+    <!-- the rule run backwards: instead of "what does this pair say",
+         "which of these say ㄱ". Two different pairs answer to ㄱ
+         (ㄳ from the front group, ㄺ from the back one), so the tile
+         cannot be found by remembering which page it came from. -->
+    <div class="section" data-page-id="find-the-sound">
+      <h2 class="section-title">ㄱ 소리 찾기 <span class="title-ja">(ㄱ の音さがし)</span></h2>
+      <p class="section-subtitle"><span class="ko">받침이 ㄱ 소리로 나는 글자를 모두 눌러 보세요.</span><span class="ja">パッチムが ㄱ の音になる字を全部タップしてください。</span></p>
+      <div class="tap-grid" data-sync-id="tiles-find-the-sound" data-sync-kind="selection" data-sync-state="right wrong">
+        <button class="tap-tile" data-ok="1" data-sync-option="닭">닭</button>
+        <button class="tap-tile" data-sync-option="값">값</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="몫">몫</button>
+        <button class="tap-tile" data-sync-option="삶">삶</button>
+        <button class="tap-tile" data-ok="1" data-sync-option="읽">읽</button>
+        <button class="tap-tile" data-sync-option="많">많</button>
+      </div>
+    </div>
+
+    <!-- listening, finally possible: 닥 · 삼 · 만 · 실 · 목 · 갑 are six
+         different sounds, so the ear has something to do. Pairing them
+         across groups also means the answer cannot be guessed from the
+         page the word was taught on. Answer side alternates L·R·L. -->
+    <div class="section" data-page-id="listen-and-choose">
+      <h2 class="section-title">듣고 고르기 <span class="title-ja">(聞いて選ぼう)</span></h2>
+      <p class="section-subtitle"><span class="ko">제가 읽을게요. 듣고 맞는 쪽을 눌러 보세요.</span><span class="ja">私が読みます。聞いて、正しいほうをタップしてください。</span></p>
+      <div class="tutor-note">표시된 쪽을 한 줄에 하나씩 읽어 주세요.</div>
+      <div class="tap-grid rows" data-sync-id="tiles-listen-and-choose" data-sync-kind="selection" data-sync-state="right wrong">
+        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-ok="1" data-sync-option="닭">닭</button><button class="tap-tile" data-sync-option="삶">삶</button></div>
+        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-sync-option="많">많</button><button class="tap-tile" data-ok="1" data-sync-option="싫">싫</button></div>
+        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-ok="1" data-sync-option="몫">몫</button><button class="tap-tile" data-sync-option="값">값</button></div>
+      </div>
+    </div>
+
+    <!-- Part 3 · words -->
+    <div class="transition-page" data-page-id="words-intro">
+      <span class="transition-kicker">パート 3</span>
+      <h2 class="transition-title">단어 <span class="title-ja">(単語)</span></h2>
+      <p class="section-subtitle"><span class="ko">겹받침 여섯 짝도 익혔어요. 이제 진짜 단어를 읽어 보세요.</span><span class="ja">二重パッチム6組もおぼえました。本物の単語を読んでみましょう。</span></p>
+    </div>
+
+    <!-- 싫다 · 많다 end in 다, which the learner reads as a shape — this
+         is a decoding track and nothing is being conjugated. The kana
+         line is the sound the tutor actually makes (シルタ · マンタ);
+         the deck states it and does not explain it, because the reason
+         is 과 13's ㅎ 축약. -->
+    <div class="section" data-page-id="word-reading">
+      <h2 class="section-title">단어 읽기 <span class="title-ja">(単語を読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">아는 글자뿐이에요. 하나씩 읽어 보세요.</span><span class="ja">知っている文字だけです。1つずつ読んでみましょう。</span></p>
+      <div class="wordset">
+        <div class="word-card">
+          <span class="syls"><span class="syl">닭</span></span>
+          <span class="body"><span class="yomi-line">タク</span><span class="mean">にわとり</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl">값</span></span>
+          <span class="body"><span class="yomi-line">カプ</span><span class="mean">値段</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl">몫</span></span>
+          <span class="body"><span class="yomi-line">モク</span><span class="mean">取り分</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl">삶</span></span>
+          <span class="body"><span class="yomi-line">サム</span><span class="mean">人生・暮らし</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl">싫</span><span class="syl">다</span></span>
+          <span class="body"><span class="yomi-line">シル タ</span><span class="mean">いやだ</span></span>
+        </div>
+        <div class="word-card">
+          <span class="syls"><span class="syl">많</span><span class="syl">다</span></span>
+          <span class="body"><span class="yomi-line">マン タ</span><span class="mean">多い</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- every decoy differs from its target by exactly one final sound
+         (닥 · 달 · 담 / 목 · 몯 · 몸), so the tile cannot be ruled out
+         by shape — and the target can only be found by reading its
+         겹받침 correctly. This is the lesson, asked by ear. -->
+    <div class="section" data-page-id="find-the-word">
+      <h2 class="section-title">단어 찾기 <span class="title-ja">(聞いてさがそう)</span></h2>
+      <p class="section-subtitle"><span class="ko">제가 단어를 두 개 말할게요. 하나씩 찾아서 눌러 보세요.</span><span class="ja">私が単語を2つ言います。1つずつさがしてタップしてください。</span></p>
+      <div class="tutor-note">표시된 단어를 순서대로 읽어 주세요.</div>
+      <div class="tap-grid words" data-sync-id="tiles-find-the-word" data-sync-kind="selection" data-sync-state="right wrong">
+        <button class="tap-tile" data-sync-option="달">달</button><button class="tap-tile" data-ok="1" data-sync-option="닭">닭</button><button class="tap-tile" data-sync-option="담">담</button>
+        <button class="tap-tile" data-sync-option="못">못</button><button class="tap-tile" data-sync-option="몸">몸</button><button class="tap-tile" data-ok="1" data-sync-option="몫">몫</button>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="sign-reading">
+      <h2 class="section-title">간판 읽기 <span class="title-ja">(看板を読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국에 있다고 상상해 보세요. 간판을 소리 내어 읽어 보세요!</span><span class="ja">韓国にいると想像してみてください。看板を声に出して読んでみましょう！</span></p>
+      <div class="grid">
+        <div class="sign"><span class="korean xl">닭</span><span class="english">市場の札</span></div>
+        <div class="sign"><span class="korean xl">값</span><span class="english">お店の値札</span></div>
+        <div class="sign"><span class="korean xl">삶</span><span class="english">本のタイトル</span></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ================================================================
+       TAP ACTIVITIES · 화이트보드 없이 손가락만으로 푸는 활동
+       (1) .tap-tile  — 눌러서 고르기. data-ok 가 정답 표시.
+       (2) .builder   — 자음/모음 키패드로 글자를 조립한다. 유니코드
+           한글 조합식을 써서 실제 글자를 만들고, 세로 모음이면 좌우,
+           가로 모음이면 위아래로 자리를 바꿔 보여 준다.
+       ================================================================ -->
+
+  <!-- ACTIVITIES · 공통 배선(스텁·점선 칸·고르기) + 한글 활동(타일·조립). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/activities.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/hangul-activities.js"></script>
+
+
+  <!-- ================================================================
+       PAGER · 한 장씩 넘겨 보는 모드
+       The deck is 43 flat siblings under .phone, so paging is just
+       "show one, hide the rest" — no restructuring. Off by default:
+       scrolling stays the ground truth (printing, Cmd+F, scanning
+       ahead all rely on it), and this is the presentation layer.
+       ================================================================ -->
+  <nav class="pager" data-sync-id="deck-page" data-sync-kind="page">
+    <input class="pg-scrub" type="range" min="0" max="0" step="1" value="0" aria-label="페이지 이동">
+    <button class="pg-btn pg-prev" type="button" aria-label="이전 페이지">←</button>
+    <div class="pg-mid">
+      <span class="pg-label"><b class="pg-act">—</b><span class="pg-n">—</span></span>
+    </div>
+    <button class="pg-btn pg-teach" type="button" aria-label="티칭 모드">T</button>
+      <button class="pg-btn pg-next" type="button" aria-label="다음 페이지">→</button>
+</nav>
+
+
+  <!-- ================================================================
+       PAGER · back / next / progress, in both modes.
+       Page view is the default; scrolling stays one tap away.
+       Page turns are shared (kind "page"); view mode and teaching mode
+       stay local.
+       ================================================================ -->
+  <!-- PAGER · 한 장씩 넘기기 + 스크러버. 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/pager.js"></script>
+
+  <!-- SCRIPT LINES · 대사를 문장 단위로 짝지어 세운다. 형광펜보다 먼저 —
+       형광펜은 로드 때 글 블록에 번호를 매기므로 DOM 이 먼저 확정돼야 한다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/script-lines.js"></script>
+
+  <!-- SPOTLIGHT · 손가락 포인터 (그리기 대신 "여기 보세요"). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/spotlight.js"></script>
+
+  <!-- TUTOR NOTES · 페이지마다 메모 한 칸. 비어 있으면 아무에게도 안 보이고,
+       튜터가 쓰는 순간 양쪽에 뜬다. 보드 기본 kind("value")를 그대로 쓰므로
+       등록할 것이 없다 — 전송도 IME 도 보드가 한다. 페이저 뒤에 두는 것이
+       중요하다: 페이지를 다 세고 난 뒤에 칸을 끼워 넣어야 한다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/tutor-notes.js"></script>
+
+  <!-- HIGHLIGHT · 글자에 긋는 형광펜. 그은 자국이 상대 화면에도 남는다.
+       ja→ko 툴팁 뒤에 와야 한다 — 그쪽이 로드 때 텍스트 노드를 읽어 data-ko 를
+       붙이고, 형광펜은 그 뒤로 <mark> 을 끼워 넣기 때문이다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/highlight.js"></script>
+
+  <!-- STAMP · 참! 잘했어요. stamp.js 가 이 그림을 페이지마다, 그리고 페이저
+       버튼 안에 복제한다. 경로를 쓰는 곳이 여기 하나뿐인 게 중요하다:
+       패키저는 마크업에 적힌 이미지 경로만 번들·평탄화하므로, JS 로 경로를
+       만들면 로컬에서만 되고 보드(S3)에서 404 가 난다. .phone 밖에 두는 것도
+       중요하다 — 페이저는 .phone 의 자식을 페이지로 세기 때문에, 안에 넣으면
+       빈 페이지가 하나 생긴다. (이 주석에 경로 표기를 그대로 쓰면 패키저가
+       주석까지 훑어 없는 파일을 찾으므로, 말로만 적는다.) -->
+  <img class="stamp-art" src="well-done.svg" alt="">
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.10.0/js/stamp.js"></script>
+
+</body>
+</html>

@@ -7,9 +7,9 @@ spec:
   week: 1
 
   title:
-    ko: 체험 · 중급 상황 회화
-    en: Trial · Contextual Korean
-    ja: 体験レッスン 中級
+    ko: "체험 · 중급 상황 회화"
+    en: "Trial · Contextual Korean"
+    ja: "体験レッスン 中級"
 
   decks:
     lecture:  { entry: lecture/index.html }

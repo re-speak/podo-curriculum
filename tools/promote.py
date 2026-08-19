@@ -45,6 +45,7 @@ WHY A MANIFEST
 from __future__ import annotations
 
 import argparse
+import json
 import pathlib
 import re
 import shutil
@@ -62,7 +63,15 @@ CSS_ROOT = REPO / "shared" / "css"
 SHARED_ASSETS = REPO / "shared" / "assets"
 
 SRC_RE = re.compile(r'\bsrc="([^"]+)"')
-LINK_RE = re.compile(r'[ \t]*<link rel="stylesheet" href="([^"]+)">\n')
+# Three shapes reach us: the canonical one, one that a formatter reordered and
+# self-closed, and one that is minified onto a single line. Requiring the exact
+# attribute order, or a trailing newline, skipped the last two and reported the
+# deck as having no stylesheet at all. So: require both attributes in either
+# order, and capture the surrounding whitespace rather than assume it — a deck
+# that was one line stays one line, and an indented one keeps its indent.
+LINK_RE = re.compile(
+    r'(?P<lead>[ \t]*)<link(?=[^>]*\brel="stylesheet")[^>]*?\bhref="(?P<href>[^"]+)"[^>]*?/?>'
+    r'(?P<tail>\n?)')
 REMOTE = ("http://", "https://", "//", "data:", "#")
 
 # A control that only exists after JavaScript runs is invisible to lemonboard's
@@ -80,6 +89,18 @@ AVATARS = {
     "https://respeak-lemonade.s3.ap-northeast-2.amazonaws.com/test/haruka-avatar.jpg":
         "haruka-avatar.jpg",
 }
+
+def yaml_scalar(text: str) -> str:
+    """One title, safe to drop into the template on the right of a `key:`.
+
+    A title is prose and prose contains colons — "Backchanneling: empathy" wrote
+    a `lesson.yaml` that no longer parsed, and the failure surfaced two tools
+    later in whatever next read the file. json.dumps emits a double-quoted scalar
+    with the escapes YAML wants, and plain ASCII strings come back unchanged, so
+    the generated file keeps reading the way it always has.
+    """
+    return json.dumps(text, ensure_ascii=False)
+
 
 LESSON_YAML = """\
 apiVersion: podo.curriculum/v1
@@ -204,13 +225,14 @@ def flatten(raw: str) -> tuple[str, list[str], list[str], list[str]]:
     raw = SRC_RE.sub(one_src, raw)
 
     def one_link(match: re.Match) -> str:
-        ref = match.group(1)
+        ref = match.group("href")
         if ref.startswith(REMOTE):
             return match.group(0)
         name = pathlib.PurePosixPath(ref).name
         claim(name, ref)
         sheets.append(name)
-        return f'  <link rel="stylesheet" href="{name}">\n'
+        lead = match.group("lead") or ("  " if match.group("tail") else "")
+        return f'{lead}<link rel="stylesheet" href="{name}">{match.group("tail")}'
 
     raw, n = LINK_RE.subn(one_link, raw)
     if not sheets:
@@ -442,7 +464,8 @@ def promote(man: Manifest, dry_run: bool, assume_yes: bool) -> None:
             LESSON_YAML.format(
                 slug=slug, week=week,
                 source=rel(man.source / source),
-                manifest=man.rel, **entry["title"]),
+                manifest=man.rel,
+                **{lang: yaml_scalar(text) for lang, text in entry["title"].items()}),
             encoding="utf-8")
 
         # Both slots are mandatory — a lesson with only 수업용 leaves
