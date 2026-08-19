@@ -147,12 +147,12 @@ reviewed by hand, then stop for explicit approval. Structural checks never appro
 
 ### The inputs, in order
 
-1. **A deck skeleton.** `tools/new_lesson.py` lifts metadata, shared paths and the load-order-bearing
+1. **A deck skeleton.** `tools/authoring/en/new_lesson.py` lifts metadata, shared paths and the load-order-bearing
    scripts from an approved English canonical deck, removes its pages, checks references and
    refuses overwrite. Core defaults to its approved pilot. Freetalking writers pass the matching
    approved accessible or full FT-1 deck with `--from-deck`. Contextual requires its own approved
    pilot before `--from-deck` is legitimate. Never use a Korean deck, whose shell loads `yomi.js`.
-2. **The generated lesson brief.** Run `tools/build_lesson_briefs.py`; read the stable-id brief in
+2. **The generated lesson brief.** Run `tools/authoring/en/build_lesson_briefs.py`; read the stable-id brief in
    `tracks/<track>/toc/`. It carries the exact TOC facts, adjacent context and negative sequence
    guardrails. Never hand-edit it.
 3. **`tracks/<track>/lesson-blueprint.md`** — which pages, in what order, doing what. Plan the arc
@@ -242,9 +242,9 @@ Two constraints are already fixed and worth knowing before anyone designs around
 
 `LANG_TYPE` separates English from the Korean and Japanese curricula, so band numbers cannot
 collide across languages even where they coincide. Do not add it to `course.yaml`: the consuming
-repository derives `EN` from the destination directory. `sync-from-authoring.py` mirrors this
-complete track tree into non-deployable `sandbox/authoring/en/`; after review, an explicit
-promotion must copy a verified course verbatim into `courses/en/`.
+repository derives `EN` from the destination directory. This tree is the source — there is no sync
+step any more. A verified course reaches learners by being named in `promotion.yaml` and
+promoted into `courses/en/` with `tools/promote.py`.
 
 ### Catalogue names: three languages, always
 
@@ -255,7 +255,7 @@ speakers, so `ja` is the string on screen, `en` is the course's own language, an
 grape's admin label. All three are required; a deck or course with only English in all three
 slots reaches the catalogue effectively unnamed.
 
-- **Course title and description** come from `tools/course-copy.json`, keyed by slug, never
+- **Course title and description** come from `tools/authoring/en/course-copy.json`, keyed by slug, never
   from the TOC. Generating them produced English in all three slots and shipped build notation
   (`Core 25–36 · A1 → A2`, `13 topics · Full version`) as the learner-facing description.
   `plan_courses.py` reports any missing language and `test_plan_courses.py` fails on it.
