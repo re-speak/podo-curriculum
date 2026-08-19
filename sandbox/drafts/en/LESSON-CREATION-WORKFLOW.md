@@ -24,8 +24,8 @@ track + course code + lesson number
 
 **Never identify a lesson by number alone.** Use the stable TOC/review id (`CORE-31`, `CTX-32`,
 `FT-107`) in briefs and feedback, and the deck slug inside a course. All current TOCs happen to use
-global numbers, but deployable course boundaries are still undecided and must not be inferred from
-those numbers.
+global numbers, but the approved course boundaries still come from `plan_courses.py` and
+`course.yaml`; never infer a boundary from lesson numbering alone.
 
 ## Source hierarchy
 
@@ -35,8 +35,8 @@ When sources disagree, fix the higher source and regenerate the lower one:
 2. `tracks/<track>/lesson-blueprint.md` — the page arc and track-specific pedagogy
 3. the track's canonical deck — voice, component composition, interaction rhythm
 4. `tracks/<track>/toc/<REVIEW-ID>.md` — generated writing packet
-5. `courses/<course-code>/course.yaml` — generated deploy plan **[not built]**
-6. `courses/<course-code>/lessons/<slug>/lesson.html` — the authored lesson
+5. `tracks/<track>/courses/<course-code>/course.yaml` — generated, disabled course plan
+6. `tracks/<track>/courses/<course-code>/lessons/<slug>/lesson.html` — the authored lesson
 
 The `reference/` folder sits above all of this for questions of *scope and level*:
 `curriculum-source-hierarchy.md` decides what is authoritative when sources disagree about whether
@@ -63,11 +63,13 @@ course plan; a list of situations with no coverage logic is not one either.*
 Then generate and validate the course plan:
 
 ```sh
-# [not built] — BUILD-PLAN.md → T4.4
-python3 english/tools/plan_courses.py english/tracks/<track>
+python3 tools/authoring/en/plan_courses.py <track>
+# or regenerate all 43 disabled course plans
+python3 tools/authoring/en/plan_courses.py --all
 ```
 
-Until it exists, a "course" is whatever the TOC says it is, and no deploy plan is produced.
+The generator owns the approved course cuts and writes disabled `course.yaml` only. Prestudy is
+deferred, so it intentionally does not produce deployable lesson manifests.
 
 ## 2. Generate textual lesson briefs
 
@@ -306,10 +308,10 @@ Static checks:
 ### Run the checker
 
 ```sh
-python3 english/tools/check_deck.py english/tracks      # a tree
-python3 english/tools/check_deck.py path/to/lesson.html # one deck
-python3 english/tools/check_deck.py --all               # every deck in the repo
-python3 english/tools/build_running_lexicon.py           # regenerate the author ledger
+python3 tools/authoring/en/check_deck.py sandbox/drafts/en/tracks      # English tree
+python3 tools/authoring/en/check_deck.py path/to/lesson.html           # one deck
+python3 tools/authoring/en/check_deck.py --all                         # every English deck
+python3 tools/authoring/en/build_running_lexicon.py                     # regenerate author ledger
 ```
 
 It enforces the machine-verifiable static checks above and exits non-zero on any error, so it can
@@ -379,22 +381,20 @@ below the fold.
 ## 7. Then regenerate the derived files
 
 ```sh
-# [not built] — gated on D4/D5
-python3 english/tools/plan_courses.py english/tracks/<track>
+# built — regenerate disabled course plans after accepted course-cut or copy changes
+python3 tools/authoring/en/plan_courses.py --all
 
 # built — regenerate review material after accepted TOC changes
-python3 english/tools/build_lesson_briefs.py --all
-python3 english/tools/build_grammar_map.py
-python3 english/tools/build_catalog.py
-
-# shared-runtime drift checker currently lives on the Korean side
-python3 korean/tools/check_runtime_drift.py
+python3 tools/authoring/en/build_lesson_briefs.py --all
+python3 tools/authoring/en/build_grammar_map.py
+python3 tools/authoring/en/build_catalog.py
+python3 tools/authoring/en/build_running_lexicon.py
 ```
 
-**`check_runtime_drift.py` matters before you trust any local render.** Deployed decks load a
-pinned CDN tag, not the working folder — so when the two differ, the page approved at 480px is not
-the page the learner gets, and nothing errors to tell you. A component that exists only locally
-just renders unstyled.
+If shared runtime files changed, publish a new immutable tag before repointing decks. Then run
+`python3 tools/repoint-shared.py` and `python3 tools/validate.py --contract --env stage`; the latter
+checks that the referenced tag is live and matches the repository bytes.
 
-Only after the integrated course passes should it move toward production sync — which for English
-does not exist yet (`BUILD-PLAN.md` → Phase 7).
+Only after the integrated course passes should it move toward production, which means adding a
+reviewed `promotion.yaml` and using `tools/promote.py`. That step remains blocked by the deferred
+prestudy contract; authoring and review do not.

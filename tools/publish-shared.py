@@ -36,7 +36,16 @@ import urllib.request
 
 import model
 
-MIRRORED = ("css", "js")
+# `assets` joined css and js when the Korean catalogue landed. Every deck ships as
+# one flat GCS prefix, so an image used by 500 lessons was copied 500 times: two
+# avatars alone accounted for 191 MB of a 320 MB tree, and every deploy pushed all
+# of it to every environment again. The runtime had already solved this — the same
+# immutable tag now carries the images that `shared/` owns.
+#
+# Only what shared/ owns moves. A lesson-specific image stays in its deck, and
+# `repoint-shared.py` keeps a local copy whose bytes differ from shared's even when
+# the basename matches.
+MIRRORED = ("css", "js", "assets")
 
 
 class PublishError(Exception):
