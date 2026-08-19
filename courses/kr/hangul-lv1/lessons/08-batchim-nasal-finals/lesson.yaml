@@ -21,4 +21,4 @@ spec:
       - すべて ん に対応させる
       - ㅇ がここで初めて音を持つ (ng)
   outcome: 강 · 산 · 밤 · 문 · 엄마 · 사람 · 사랑
-  source: references/tracks/1-hangul.md
+  source: sandbox/authoring/kr/tracks/1-hangul/table-of-contents.md

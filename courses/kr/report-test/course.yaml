@@ -1,7 +1,7 @@
 apiVersion: podo.curriculum/v1
 kind: Course
 metadata:
-  # 출처는 이 레포의 sandbox/trial/reports/trial-1-report.html — 상담용 리포트 덱 한 장이다.
+  # 출처는 sandbox/authoring/kr/trial/reports/trial-1-report.html — 상담용 리포트 덱 한 장이다.
   # sandbox 는 tools/model.py 가 아예 걷지 않으므로 거기 있는 동안은 배포될 수 없다.
   # 이 코스가 그 덱의 배포 가능한 형태다: 옆으로 뻗던 참조(../../../shared, ../assets)를
   # 덱 폴더 안에서 완결되게 평탄화하고, 원격 아바타 둘을 번들로 내렸다.
@@ -29,6 +29,10 @@ spec:
   description:
     ko: 체험 레슨 상담용 리포트 덱 한 장. 니즈 파악(동기·목표·페이스)에서 레벨 진단과 추천 코스까지 한 흐름으로 이어진다.
     ja: 体験レッスンの相談用レポートデッキ1本。ニーズ把握（きっかけ・ゴール・ペース）からレベル診断とおすすめコースまで一つの流れでつながる。
+
+  # → BOOK_THUMBNAIL(COVER 행). 코스 목록에 나가는 432×540 표지다. 키를 지우면 컬럼을
+  # 비우는 게 아니라 손대지 않는다 — 지우는 것은 어드민에서 할 일이다.
+  thumbnail: assets/cover.png
 
   tutorGroups:
     allowRandom: []

@@ -19,4 +19,4 @@ spec:
     concepts:
       - 新しい字はなし — 混合読み・ディクテーション・語作り
   outcome: 가구 · 거리 · 부모 · 소리 · 도시 · 가지 — 止まらずに読む
-  source: references/tracks/1-hangul.md
+  source: sandbox/authoring/kr/tracks/1-hangul/table-of-contents.md

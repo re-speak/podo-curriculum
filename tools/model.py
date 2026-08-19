@@ -22,6 +22,16 @@ REPO = pathlib.Path(__file__).resolve().parent.parent
 COURSES = REPO / "courses"
 SCHEMAS = REPO / "schemas"
 
+# Cover images. grape decides the real format from the bytes, but catching it here
+# turns a 400 in a deploy log into a line in a PR — and the schema check below is
+# skipped when jsonschema is absent, so these rules run unconditionally instead.
+#
+# PNG and JPEG only, because that is what the other end can actually read: grape
+# runs on php:7.0-apache, whose getimagesize() predates WebP (PHP 7.1) and would
+# reject every .webp as "not an image".
+THUMBNAIL_SUFFIXES = {".png", ".jpg", ".jpeg"}
+THUMBNAIL_MAX_BYTES = 2 * 1024 * 1024
+
 
 class ValidationError(Exception):
     """A problem a human has to fix. Carries the offending path."""
@@ -141,6 +151,17 @@ class Course:
         return f"PODO_{self.lang_type}_{self.spec['curriculumType']}"
 
     @property
+    def thumbnail(self) -> pathlib.Path | None:
+        """The cover image on disk, or None when the course does not name one.
+
+        None means "leave BOOK_THUMBNAIL alone", not "clear it". apply attaches no
+        cover part, and grape only writes the column when one arrives — so a cover
+        uploaded by hand in grape admin survives a course that says nothing about it.
+        """
+        rel = self.spec.get("thumbnail")
+        return self.root / rel if rel else None
+
+    @property
     def incomplete(self) -> list[Lesson]:
         return [l for l in self.lessons if l.incomplete]
 
@@ -190,6 +211,7 @@ def load_course(root: pathlib.Path, lang: str) -> Course:
 
     course = Course(lang=lang, slug=root.name, root=root, spec=doc["spec"], lessons=lessons)
     _check_weeks(course, path)
+    _check_thumbnail(course, path)
     return course
 
 
@@ -211,6 +233,42 @@ def _check_weeks(course: Course, path: pathlib.Path) -> None:
         raise ValidationError(
             path, f"weeks must run 1..{len(weeks)} with no gaps; missing {missing}"
         )
+
+
+def _check_thumbnail(course: Course, path: pathlib.Path) -> None:
+    """The cover must be an image that exists, inside the course directory.
+
+    Every failure here is silent downstream. A path with a typo makes apply send no
+    cover at all, grape leaves BOOK_THUMBNAIL alone by design, and the course keeps
+    the old picture while the YAML says it has a new one — the deploy is green and
+    nothing anywhere reports a miss.
+    """
+    thumb = course.thumbnail
+    if thumb is None:
+        return
+
+    rel = course.spec["thumbnail"]
+    try:
+        thumb.resolve().relative_to(course.root.resolve())
+    except (ValueError, OSError):
+        raise ValidationError(
+            path, f"thumbnail '{rel}' points outside the course directory — "
+                  "the cover has to live with the course that ships it")
+
+    if not thumb.is_file():
+        raise ValidationError(path, f"thumbnail '{rel}' is not on disk")
+
+    if thumb.suffix.lower() not in THUMBNAIL_SUFFIXES:
+        kinds = ", ".join(sorted(THUMBNAIL_SUFFIXES))
+        raise ValidationError(
+            path, f"thumbnail '{rel}' is not one of {kinds} — grape decides the "
+                  "format from the bytes and rejects anything else")
+
+    size = thumb.stat().st_size
+    if size > THUMBNAIL_MAX_BYTES:
+        raise ValidationError(
+            path, f"thumbnail '{rel}' is {size // 1024} KB; the cap is "
+                  f"{THUMBNAIL_MAX_BYTES // 1024} KB — it is a list thumbnail, not a page image")
 
 
 def discover() -> list[Course]:

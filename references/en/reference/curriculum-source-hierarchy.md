@@ -80,7 +80,7 @@ Use the sources in this order:
 
 The authoritative sources constrain the curriculum; they do not replace curriculum judgment. No lesson should exist merely because a grammar item appears on a list, and no grammar item should be assigned a level merely because it “feels right.”
 
-## Provenance of the current 72-lesson Core
+## Provenance of the current 122-lesson Core
 
 The current sequence was produced in this order:
 
@@ -92,11 +92,11 @@ The current sequence was produced in this order:
 6. Audit the patterns for changeability, retrieval, pair coherence, prerequisites, and difficulty jumps.
 7. Separate fixed expressions and learner-facing grammar support from the two primary patterns.
 
-Therefore, [`grammar-coverage-map.md`](./grammar-coverage-map.md) is currently a **working synthesis**, not a transcription of an official CEFR grammar list. Its broad coverage is consistent with established General English syllabuses, but row-level source tagging has not yet been completed.
+Therefore, [`grammar-coverage-map.md`](./grammar-coverage-map.md) is a **working synthesis**, not a transcription of an official CEFR grammar list. The generated [`core-evidence-ledger.md`](./core-evidence-ledger.md) now gives all 122 lessons a broad source disposition and records granular first-party results for the consequential priority rows. It deliberately does not manufacture one-to-one EGP matches for lexical or interactional rows.
 
-## Required audit before calling the sequence CEFR-aligned
+## Required evidence before treating product bands as validated
 
-For every grammar-map row, record:
+For every grammar-map row that supports a final product-band claim, record:
 
 - the relevant Core Inventory level and item;
 - the matching English Grammar Profile form/meaning, where available;

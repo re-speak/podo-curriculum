@@ -50,28 +50,6 @@ def _fail(message: str) -> int:
     return 1
 
 
-def check_activity_runtime_parity() -> list[str]:
-    """The imported trial runtime and CDN source must stay byte-identical.
-
-    Trial import writes static form controls and bundles the copy under tools/.
-    Repointing may replace that local file with the CDN URL only while the two
-    implementations are genuinely the same. A drift here silently removed
-    data-sync-id controls from the live DOM in production.
-    """
-    shared = model.REPO / "shared" / "js" / "activities.js"
-    bundled = model.REPO / "tools" / "deck-runtime" / "activities.js"
-    missing = [str(p.relative_to(model.REPO)) for p in (shared, bundled) if not p.is_file()]
-    if missing:
-        return [f"activity runtime parity check is missing: {', '.join(missing)}"]
-    if shared.read_bytes() != bundled.read_bytes():
-        return [
-            "shared/js/activities.js differs from tools/deck-runtime/activities.js — "
-            "keep the CDN and imported-deck runtimes byte-identical"
-        ]
-    print("✓ runtime source — shared and imported-deck activities.js match")
-    return []
-
-
 def check_enabled_is_earned(course: model.Course) -> list[str]:
     """A course cannot be USE_YN='Y' while any lesson is unfinished.
 
@@ -161,7 +139,6 @@ def check_runtime_urls(urls: set[str], rt: dict) -> list[str]:
     without the tag being re-cut.
     """
     problems: list[str] = []
-    problems += check_activity_runtime_parity()
     for url in sorted(urls):
         # .../<version>/css/trial.css -> shared/css/trial.css
         rel = "/".join(url.split("/")[-2:])
@@ -237,6 +214,12 @@ def main() -> int:
               f"{course.spec['countryCode']} · "
               f"level {course.spec['classLevel']} · {len(course.lessons)} lesson(s))")
         problems += check_enabled_is_earned(course)
+
+        # model 이 이미 검사했다(없는 파일·잘못된 포맷·크기 초과는 여기 오기 전에 죽는다).
+        # 남은 일은 보여 주는 것뿐이다 — 표지는 diff 로 확인할 수 없는 몇 안 되는 값이다.
+        if course.thumbnail:
+            print(f"  ✓ cover    — {course.spec['thumbnail']} "
+                  f"({course.thumbnail.stat().st_size // 1024} KB)")
 
         for lesson in course.lessons:
             for slot, deck in sorted(lesson.decks.items()):

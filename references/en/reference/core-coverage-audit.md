@@ -1,12 +1,30 @@
 # Core Coverage and Disposition Audit
 
-**Status:** read-only audit during native catalog review  
-**Audited:** 2026-08-13  
-**Scope:** 122 Core lessons; no TOC or generated catalog edits
+**Status:** targeted recommendations and 2026-08-14 naturalness follow-up applied; affected rows require native re-review
+**Audited:** 2026-08-13
+**Applied:** 2026-08-13
+**Scope:** 122 Core lessons; stable IDs preserved
+
+## 2026-08-14 naturalness and transfer follow-up
+
+A learner-view audit then checked whether each displayed target was both a reusable frame and a
+sentence a proficient speaker would plausibly say. It corrected three recurring problems without
+renumbering the curriculum:
+
+- fixed replies or questions masquerading as productive slot patterns were moved to Expressions or
+  replaced with a second reusable learner move;
+- frames such as bare `I don't ___`, impossible `___er`, and template text shown as a model were
+  replaced with bounded, meaningful slots and complete natural examples;
+- lessons whose two targets did unrelated jobs were narrowed to one coherent can-do, while advanced
+  stance and repair lessons received actual variable frames rather than memorised formulas.
+
+The main affected Core rows are 8–10, 14, 21, 23, 31, 38, 41–42, 47, 51, 63, 65, 74, 78, 87, 92,
+95–96, 105, 107–108, 112, 114 and 117–121. Their stable IDs remain valid, but their old catalog
+snapshots do not.
 
 ## Verdict
 
-The Core spine is broadly coherent, but it is not ready to freeze unchanged. The audit found:
+The pre-change Core spine was broadly coherent, but not ready to freeze unchanged. The audit found:
 
 - **3 high-value beginner functions absent as primary Core targets;**
 - **1 important function only partially covered;**
@@ -14,13 +32,24 @@ The Core spine is broadly coherent, but it is not ready to freeze unchanged. The
 - **2 advanced lessons that should probably be demoted from primary production;** and
 - **1 pair of lessons that the TOC itself says should be one contrastive lesson.**
 
-The cleanest correction does not increase the 122-lesson total: merge or demote redundant advanced
-material and use the recovered slots for ability, activity preferences and invitations.
+The accepted correction did not increase the 122-lesson total. It merged or replaced redundant
+advanced material and used the recovered capacity for ability, activity preferences and invitations.
 
-This is a triage result, not permission to edit the active review surface. Native feedback and the
-corpus/naturalness pass still decide exact wording.
+### Implementation outcome
 
-## 1. Disposition of the six evidence-priority lessons
+- Core 18, 27 and 28 now own ability, activity preferences and invitations respectively.
+- Core 76 now teaches both causatives contrastively; Core 77 now owns service follow-up.
+- Core 79, 105 and 112 now teach completion estimates, linked change and tone repair instead of
+  future perfect, negative-adverbial inversion and a risky disagreement formula.
+- Core 85, 95 and 121 now have distinct discourse jobs; the three exact duplicate pattern strings
+  identified below have been eliminated. Core 108's informal request frame was also made
+  register-specific so the new Core 18 ability question did not create another exact duplicate.
+- Cross-track references affected by these changes were re-derived. Native feedback still decides
+  final wording, and the changed review snapshots must be reviewed again.
+
+The findings below preserve the pre-change rationale and record what drove the accepted edits.
+
+## 1. Pre-change disposition of the six evidence-priority lessons
 
 | Lesson | Audit disposition | Why | Replacement or next check |
 | --- | --- | --- | --- |
@@ -31,21 +60,21 @@ corpus/naturalness pass still decide exact wording.
 | **Core 105** negative-adverbial inversion | **demote** | The Core Inventory associates this with C1, not the current B2 band. The TOC independently calls it low-frequency in speech and its strongest demotion candidate. | Keep `not only ...` as an expression or receptive item; do not require productive `Never have I ...`. |
 | **Core 112** `With all due respect` | **make receptive or remove as a Core lesson** | Its own note says “receptive first” and warns that learner production can start a fight. That conflicts with Core's two-primary-production-pattern contract. | Move recognition to Contextual/Freetalking support; retain only if native review supplies a safe productive outcome. |
 
-### Practical result
+### Applied result
 
-Merging 76/77 and demoting 79, 105 and 112 can recover **up to four slots**. These slots are better
-spent on the missing beginner functions below. Core 84 does not need removal unless native review
-rejects its wording.
+Core 76/77 were consolidated, and 79, 105 and 112 were replaced in place. The recovered capacity
+was used for the missing beginner functions below without renumbering or increasing the spine.
+Core 84 remains provisional pending evidence and native review.
 
 ## 2. Missing or materially incomplete high-value content
 
-### Critical: add as primary Core targets
+### Critical targets now added
 
 | Missing function | Source evidence | Current coverage | Recommended action |
 | --- | --- | --- | --- |
-| **Ability and limitation** — `I can ___, but I can't ___` | Core Inventory A1, item 104 `Can/can't (ability)`, printed p. 44; the existing transformation map also specifies this exact question/answer pairing. | Core 20 uses `can` only in a request response; Core 21 uses it for permission. No lesson teaches ability. | Add in early A1, probably Unit 3. Pair `Can you ___?` with `I can ___, but I can't ___`. |
-| **Activity preferences** — `I like/love/hate ___ing` | Core Inventory A1 item 86 and A2 item 86b, printed pp. 44 and 48. | Core 27 merely lists stative verbs; Core 56 and 63 use `like` with nouns. No primary pattern covers activity preferences or the `-ing` complement. | Rewrite or replace Core 27 so the two patterns accomplish a real preference exchange. |
-| **Inviting and responding** — `Would you like to ___?` / `I'd love to, but ___` | Core Inventory A2 function 15 and verb-complement exponents, printed pp. 46 and 48; the transformation map names this exact pair. | Core 28 arranges a time after availability is known, but no lesson makes, accepts or declines an invitation. | Add in A1/A2 social planning, before broader Contextual and Freetalking use. |
+| **Ability and limitation** — `I can ___, but I can't ___` | Core Inventory A1, item 104 `Can/can't (ability)`, printed p. 44; the existing transformation map also specifies this exact question/answer pairing. | Previously absent as a primary target. | **Applied at Core 18.** |
+| **Activity preferences** — `I like/love/hate ___ing` | Core Inventory A1 item 86 and A2 item 86b, printed pp. 44 and 48. | Previously absent as a primary pattern. | **Applied at Core 27.** |
+| **Inviting and responding** — `Would you like to ___?` / `I'd love to, but ___` | Core Inventory A2 function 15 and verb-complement exponents, printed pp. 46 and 48; the transformation map names this exact pair. | Previously stopped at checking availability and arranging a time. | **Applied at Core 28.** |
 
 ### Important but may be Core support or Contextual ownership
 
@@ -56,13 +85,13 @@ rejects its wording.
 
 ## 3. Duplicate and competing lessons
 
-### Exact duplicate pattern strings
+### Exact duplicate pattern strings found and resolved
 
 | Pattern | Lessons | Audit |
 | --- | --- | --- |
-| `I don't ___.` | Core 14 and 27 | Core 14 owns present-simple negation. Core 27 should be rewritten around a communicative preference or mental-state exchange, not count the same shell again. |
-| `I'm not sure ___.` | Core 18 and 85 | Core 18 owns uncertainty. Core 85 should rely on `I see your point, but ...` and use a genuinely more advanced second move. |
-| `Let's just say ___.` | Core 119 and 121 | Direct duplication two lessons apart. Merge the restraint/vagueness outcomes or replace one pattern. |
+| `I don't ___.` | Core 14 and former Core 27 | Core 27 was rewritten around activity preferences. |
+| `I'm not sure ___.` | former Core 18 and Core 85 | Core 18 now owns ability; Core 85 received a more specific advanced second move. |
+| `Let's just say ___.` | Core 119 and former Core 121 | Core 119 retains deliberate implication; Core 121 now sets an explicit conversational boundary. |
 
 ### Near-duplicate lesson functions
 
@@ -102,25 +131,27 @@ not evidence that completing Core produces a C1 speaker.
 
 This is a product-claim correction, not necessarily a reason to delete Units 20–22.
 
-## 6. Ranked change list after native review
+## 6. Applied change list and remaining decisions
 
 ### Critical
 
-1. Merge Core 76 and 77.
-2. Resolve the exact duplicate `Let's just say ___` in Core 119/121.
-3. Add ability, activity preferences and invitations using recovered slots.
-4. Demote Core 105 from primary production unless contrary spoken evidence is unusually strong.
+1. **Applied:** merge the Core 76 causatives and repurpose Core 77.
+2. **Applied:** resolve the exact duplicate `Let's just say ___` in Core 119/121.
+3. **Applied:** add ability, activity preferences and invitations using recovered capacity.
+4. **Applied:** replace Core 105's inversion target with a spoken linked-change target.
 
 ### Important
 
-5. Make Core 112 receptive or relocate it.
+5. **Applied:** replace Core 112's risky formula with impact-and-intent repair.
 6. Decide whether Core or Contextual owns route directions.
-7. Rewrite Core 27 and the second pattern of Core 85 so exact beginner frames are not counted again.
-8. Prove that Core 95 and 115 add a genuinely new discourse move rather than elevated synonyms.
+7. **Applied:** rewrite Core 27 and the second pattern of Core 85.
+8. **Partly applied:** Core 95 now identifies a specific argumentative weakness; Core 115 still
+   needs corpus/native evidence that its concede-counter move adds enough value.
 
 ### Optional / evidence-led
 
-9. Keep or demote Core 79 based on workplace frequency and learner need.
+9. **Applied:** replace Core 79's future perfect with a workplace completion estimate; verify the
+   replacement frames in corpus/native review.
 10. Add ordinary possession only if representative lessons expose a real production gap.
 11. Relabel the endpoint conservatively until performance evidence supports a C1 claim.
 

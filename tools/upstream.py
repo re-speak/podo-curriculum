@@ -1,5 +1,4 @@
-"""Locate the authoring tree that `sync-from-authoring.py` and
-`import-trial-decks.py` read from.
+"""Locate the external authoring tree that `sync-from-authoring.py` reads from.
 
 `podo-curriculum-public` holds one directory per subject language —
 `korean/`, `english/` — and the files they share sit at the repository root:
@@ -20,7 +19,8 @@ Resolution order:
   2. $PODO_AUTHORING_ROOT
   3. the default sibling layout below
 
-Nothing here is read by build · validate · plan · apply. A missing authoring
+Promotion tools read the reviewed `sandbox/authoring/` mirror instead. Nothing
+here is read by build · validate · plan · apply. A missing external authoring
 tree cannot affect the merge gate — it only stops a re-sync.
 """
 from __future__ import annotations

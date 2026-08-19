@@ -1,39 +1,28 @@
 #!/usr/bin/env python3
 """
-Mirror `podo-curriculum-public` into this repo.
+Mirror `podo-curriculum-public` into this repo's non-deployable authoring area.
 
-That repository is the upstream for `shared/`, `sandbox/` and `references/`. It
-is a different shape from this one — one directory per subject language, the
-runtime shared at the root, nothing packaged — so a sync is a translation, not a
-copy. Per language `<L>` (filed here under its code `<c>`: korean -> kr,
-english -> en):
+That repository is the upstream for `shared/`, `sandbox/authoring/` and
+`references/`. The complete curriculum-under-review stays together under
+`sandbox/authoring/<code>/`; an explicit promotion into `courses/<code>/` is
+what makes a verified course deployable. Per language `<L>` (filed here under
+its code `<c>`: korean -> kr, english -> en):
 
-  runtime/{css,js}                       -> shared/{css,js}            once, shared
-  <L>/tracks/*/table-of-contents.md      -> references/<c>/tracks/
-  <L>/tracks/*/sample-lesson.html        -> sandbox/track-samples/<c>/ runtime refs repointed
-  korean/references/{curricula,reports}  -> references/kr/             minus licensed scans
+  runtime/{css,js}                       -> shared/{css,js} once, shared
+  <L>/tracks/                            -> sandbox/authoring/<c>/tracks/
+  korean/trial/                          -> sandbox/authoring/kr/trial/
+  korean/interactive/                    -> sandbox/authoring/kr/interactive/
+  korean/references/{curricula,reports}  -> references/kr/ minus licensed scans
   english/reference/                     -> references/en/reference/
-  korean/trial/*                         -> sandbox/trial/             runtime refs repointed
-  korean/interactive/                    -> sandbox/interactive/       straight mirror
 
-**Every language destination carries its code.** The two trees have identical
-internal shape — `tracks/*/table-of-contents.md`, numbered by track — so an
-unnamespaced destination is not a tidiness question. `references/tracks/` held
-Korean's five tracks and English has four of its own; mirroring both into one
-directory would have them overwrite each other by number, silently, and the
-survivor would depend on which language synced last.
+`references/` is only durable source and evidence material. TOCs, generated
+briefs, blueprints, course manifests and actual lessons are curriculum, so they
+travel together through the sandbox review boundary instead of being split
+between `references/` and `sandbox/`.
 
-The 체험 destinations (`sandbox/trial/`, `sandbox/interactive/`) are the
-exception: Korean is the only language with a `trial/` tree, and two importers —
-`import-trial-decks.py`, `import-report-deck.py` — address those paths directly.
-A second language growing a 체험 tree needs them namespaced first; until then a
-name that promises per-language separation it does not have would be worse.
-
-**The deployable decks are not synced by this script.** `trial/lessons/*.html`
-becomes `courses/kr/hangul-trial-test/` via `import-trial-decks.py`, which has to
-do considerably more: grape flattens the uploaded zip into one GCS prefix, so
-each deck must carry its own runtime, and lemonboard's validator parses the HTML
-statically, so the input controls have to exist in the markup. Run both.
+**Nothing synced here is deployable.** `tools/model.py` only discovers
+`courses/`. Promotion tools read the reviewed sandbox copy and perform the
+packaging transforms required by grape and lemonboard.
 
 **Every destination is replaced, not merged.** A file deleted upstream disappears
 here. So edit upstream — anything written directly into these directories is lost
@@ -47,7 +36,7 @@ rather than quietly reversing it. Derived markdown and wireframe PNGs do come.
 
     python3 tools/sync-from-authoring.py [--upstream PATH]
                                          [--language korean|english|all]
-                                         [--runtime-only]
+                                         [--runtime-only | --skip-runtime]
 """
 from __future__ import annotations
 
@@ -137,48 +126,55 @@ def sync_runtime(src: pathlib.Path) -> None:
     one(site / "ux-philosophy.md", REPO / "shared" / "ux-philosophy.md")
 
 
-def sync_viewers(src: pathlib.Path) -> None:
-    one(upstream.site_root(src) / "viewer.html",
-        REPO / "sandbox" / "viewers" / "viewer.html")
-    # Upstream's site index. Its links address the upstream tracks/ layout, which
-    # this repo splits three ways, so they do not resolve here — see sandbox/README.
-    one(src / "index.html", REPO / "sandbox" / "viewers" / "deck-index.html")
+def sync_authoring(src: pathlib.Path, code: str, language: str) -> None:
+    """Replace one language's complete, non-deployable curriculum mirror."""
+    destination = REPO / "sandbox" / "authoring" / code
+    if destination.exists():
+        shutil.rmtree(destination)
+    destination.mkdir(parents=True)
+
+    tree(src / "tracks", destination / "tracks")
+    if language == upstream.DEFAULT_LANGUAGE:
+        tree(src / "trial", destination / "trial")
+        tree(src / "interactive", destination / "interactive")
+
+    n = repoint_runtime(destination)
+    done.append(
+        f"sandbox/authoring/{code}/**  ({n} runtime refs repointed at shared/)")
 
 
-def sync_trial(src: pathlib.Path) -> None:
-    """Korean's 체험 tree. See the module docstring on why this one is not coded."""
-    for name in ("lessons", "full-trials", "reports", "assets", "lemonboard-build"):
-        tree(src / "trial" / name, REPO / "sandbox" / "trial" / name)
-    one(src / "trial" / "illustration-prompts.md",
-        REPO / "sandbox" / "trial" / "illustration-prompts.md")
-    tree(src / "interactive", REPO / "sandbox" / "interactive")
-
-
-def sync_track_samples(src: pathlib.Path, code: str) -> None:
-    samples = REPO / "sandbox" / "track-samples" / code
-    if samples.exists():
-        shutil.rmtree(samples)
-    samples.mkdir(parents=True)
-    for track in sorted((src / "tracks").iterdir()):
-        if (track / "sample-lesson.html").is_file():
-            one(track / "sample-lesson.html", samples / f"{track.name}.html")
-
-
-def sync_references(src: pathlib.Path, code: str, language: str) -> None:
-    plans = REPO / "references" / code / "tracks"
-    if plans.exists():
-        shutil.rmtree(plans)
-    plans.mkdir(parents=True)
-    for track in sorted((src / "tracks").iterdir()):
-        if (track / "table-of-contents.md").is_file():
-            one(track / "table-of-contents.md", plans / f"{track.name}.md")
-        if (track / "toc").is_dir():
-            tree(track / "toc", plans / track.name / "toc")
-        if (track / "lesson-blueprint.md").is_file():
-            one(track / "lesson-blueprint.md", plans / track.name / "lesson-blueprint.md")
-
+def sync_reference_material(src: pathlib.Path, code: str, language: str) -> None:
+    """Mirror durable evidence only; curriculum-under-review belongs in sandbox."""
     for rel, dest in MATERIAL.get(language, ()):
-        tree(src / rel, REPO / "references" / code / dest)
+        source = src / rel
+        destination = REPO / "references" / code / dest
+        if source.is_dir():
+            tree(source, destination)
+        elif destination.exists():
+            shutil.rmtree(destination)
+
+
+def remove_legacy_layout(code: str, language: str) -> None:
+    """Delete destinations superseded by sandbox/authoring/<code>."""
+    obsolete = [
+        REPO / "references" / code / "tracks",
+        REPO / "sandbox" / "track-samples" / code,
+    ]
+    if language == upstream.DEFAULT_LANGUAGE:
+        obsolete.extend((
+            REPO / "sandbox" / "trial",
+            REPO / "sandbox" / "interactive",
+            REPO / "sandbox" / "viewers",
+        ))
+
+    for path in obsolete:
+        if path.exists():
+            shutil.rmtree(path)
+            done.append(f"removed obsolete {path.relative_to(REPO)}")
+
+    samples = REPO / "sandbox" / "track-samples"
+    if samples.is_dir() and not any(samples.iterdir()):
+        samples.rmdir()
 
 
 def main() -> int:
@@ -187,8 +183,11 @@ def main() -> int:
     upstream.add_argument(ap)
     ap.add_argument("--language", choices=(*upstream.LANGUAGES, "all"), default="all",
                     help="which subject language to mirror (default: every one upstream has)")
-    ap.add_argument("--runtime-only", action="store_true",
-                    help="only refresh shared/ — skip sandbox/ and references/")
+    mode = ap.add_mutually_exclusive_group()
+    mode.add_argument("--runtime-only", action="store_true",
+                      help="only refresh shared/ — skip sandbox/ and references/")
+    mode.add_argument("--skip-runtime", action="store_true",
+                      help="refresh sandbox/ and references/ without overwriting shared/")
     args = ap.parse_args()
 
     if args.language == "all":
@@ -211,22 +210,19 @@ def main() -> int:
         print(f"  {language:8} {src}")
     print()
 
-    sync_runtime(next(iter(roots.values())))
+    if not args.skip_runtime:
+        sync_runtime(next(iter(roots.values())))
     if not args.runtime_only:
         for language, src in roots.items():
             code = upstream.LANGUAGES[language]
-            sync_track_samples(src, code)
-            sync_references(src, code, language)
-            if language == upstream.DEFAULT_LANGUAGE:
-                sync_viewers(src)
-                sync_trial(src)
-        n = repoint_runtime(REPO / "sandbox")
-        done.append(f"sandbox/**  ({n} runtime refs repointed at shared/)")
+            sync_authoring(src, code, language)
+            sync_reference_material(src, code, language)
+            remove_legacy_layout(code, language)
 
     print("synced:")
     for line in done:
         print(f"  {line}")
-    print("\nnow run:  python3 tools/import-trial-decks.py")
+    print("\nreview sandbox/authoring/ before explicitly promoting into courses/")
     return 0
 
 

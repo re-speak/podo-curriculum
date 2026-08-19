@@ -7,3 +7,8 @@ __pycache__/
 # committing it would make the digest depend on who ran the build.
 /build/
 *.zip
+
+# tools/sync-from-authoring.py 가 만드는 로컬 미러(2,000여 개 파일, 41MB).
+# 업스트림(podo-curriculum-public)이 원본이고 이 레포는 courses/ 만 배포하므로
+# 추적하지 않는다 — 여기 있는 이유는 promote 전에 눈으로 보기 위해서다.
+/sandbox/authoring/

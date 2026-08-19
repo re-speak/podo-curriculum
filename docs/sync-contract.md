@@ -35,9 +35,17 @@ Content-Type: multipart/form-data
 |---|---|
 | `manifest` | JSON — the full desired state of **one** course |
 | `zip[{lessonSlug}][{lecture\|prestudy}]` | the packaged deck. Every slot, every time — see `unchanged` below |
+| `cover` | the course thumbnail, when the course names one. Omitted entirely otherwise — see below |
 
 One course per request. Courses are independent, and a partial failure should
 cost one course rather than the whole curriculum.
+
+A course of N lessons therefore sends `2N + 1` files, and PHP silently discards
+every file past `max_file_uploads` — no error, just a `zip` that never arrives and
+a warning in the response. grape raises the limit to 200 for that reason; at the
+old default of 20, an 11-lesson course lost its last two decks on every apply.
+The cover is written last in the body, so if a limit is ever hit again it is the
+first thing dropped and never a deck.
 
 ### manifest
 
@@ -59,7 +67,8 @@ cost one course rather than the whole curriculum.
     "difficulty": "BEGINNER",
     "title":       { "ko": "한글 떼기", "en": "Hangul Basics", "ja": "ハングル入門" },
     "description": { "ko": "…", "ja": "…" },
-    "tutorGroups": { "allowRandom": [], "assignedOnly": [] }
+    "tutorGroups": { "allowRandom": [], "assignedOnly": [] },
+    "thumbnail": { "file": "assets/cover.png", "digest": "sha256:…" }
   },
   "lessons": [
     {
@@ -94,6 +103,7 @@ to the same key leaves the room untouched, so the skip buys little.
   "course": {
     "slug": "hangul-lv1",
     "coverId": 1043,
+    "thumbnail": "https://storage.googleapis.com/podo-assets/course-thumbnail/1043.png",
     "lessons": {
       "01-block-and-first-sounds": {
         "courseRowId": 1044,
@@ -114,6 +124,10 @@ becomes an orphan course nobody can reach or update.
 
 - **Upsert on the natural key, and treat a change to it as a different course.** Matching on `(CLASS_TYPE, LANG_TYPE, CURRICULUM_TYPE, LESSON_TIME, CLASS_LEVEL, CLASS_WEEK, COUNTRY_CODE)` means editing `classLevel`, `lessonTime`, or `countryCode` in YAML does not rename the live course — it addresses a different one, and the old rows stay behind untouched. That is intended (a 15-minute Level 3 and a 25-minute Level 3 are different products; JP- and KR-market rows are also distinct), but it is the one edit that silently leaves an orphan, so it belongs in review.
 - **Identity changes need two deploys.** To move a live course to another `classLevel`, `lessonTime`, or `countryCode`, first deploy the old identity with `enabled: false`; only then change the identity and deploy again. A single edit cannot both retire the old natural key and create the new one.
+- **The cover is written only when the `cover` part arrives, and never cleared.** `course.thumbnail` in the manifest is a record for the log; the part itself is the signal. A course that names no thumbnail sends no part, and grape leaves `BOOK_THUMBNAIL` exactly as it was — because the repo is not the only author of that column. Most covers are uploaded by hand in grape admin, and "the YAML does not mention one" must not read as "delete it". Clearing a cover is an admin action.
+- **The cover key is the COVER row id, split by environment.** `course-thumbnail/{coverId}.{ext}` in prod, `course-thumbnail-{env}/…` everywhere else, exactly as `lemonboardHtmlPrefix()` splits deck objects and for the same reason: one bucket, and a stage database that is a prod clone down to the row ids. Replacing a cover overwrites that one object — no versions are kept — so the object carries `Cache-Control: no-cache`, which revalidates rather than refusing to cache.
+- **A cover that fails to upload is a warning, not a failure.** The course rows are already committed by then and the lesson decks are unaffected; failing the whole apply over a thumbnail would be a worse trade. The response reports `thumbnail: null` in that case, so the caller can still see it.
+- **The format is decided by the bytes, before the transaction opens.** A part that is not a PNG or JPEG is a `400` with nothing written, rather than an image-shaped object in a public bucket.
 - **Rooms are created once.** `ensureLessonHtmlLemonboardRoom()` already returns early when the key is set. Content updates are a GCS overwrite; the room key must survive them.
 - **Contract validation stays a hard gate.** Same call, same fail-open on 5xx, same block on `severity: error`.
 - **Both slots or neither.** Reject a lesson whose `prestudy` key would end up empty — class creation duplicates `/rooms/null/` and fails downstream.
