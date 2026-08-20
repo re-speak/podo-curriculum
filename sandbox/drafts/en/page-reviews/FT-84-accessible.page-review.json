@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/84-one-day-you-would-go-back-to/lesson.html",
+  "lessonSha256": "eeabbe016082fec482fe48ad105f654d0dd186113f5d9c594c20493cbf74c9a7",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “One day you would go back to” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "One day you would go back to / 戻ってみたい一日. Let's imagine one meaningful visit to the past. / 意味のある過去への一日旅行を想像しましょう。",
+      "learningTarget": "Orient the learner to a conversation about One day you would go back to without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; personal disclosure is not being tested.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and action as the English.",
+      "articleTreatment": "This page only introduces the topic; it does not preview or teach the article.",
+      "choiceQuality": "No fixed choice set appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What we seek in one past day / 過去の一日に求めるもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “Wanting to revisit a day does not always mean wanting to change it.” to “The choice reveals what kind of understanding feels unfinished.”, as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds multiple defensible angles for the later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claim translations are available; this accessible article owns these selective glosses: reliving=再体験すること.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real answer when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and does not add a separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “You can visit one day in the past. Which day do you choose?” and expand the most interesting detail.",
+      "tutorAction": "Ask “You can visit one day in the past. Which day do you choose?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "You can visit one day in the past. Which day do you choose? / 過去の一日を訪れられます。どの日を選びますか？ Follow-up pool: Why does that day matter? Where would you arrive?",
+      "learningTarget": "Develop the opening angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “opening” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "You can visit one day in the past. Which day do you choose?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “What is happening on that day?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What is happening on that day?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What is happening on that day? / その日には何が起きていますか？ Follow-up pool: Who is present? Which moment would you watch first?",
+      "learningTarget": "Develop the setting angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “setting” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is happening on that day?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “What would you hope to understand by seeing that day?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What would you hope to understand by seeing that day?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What would you hope to understand by seeing that day? / その日を見ることで、何を理解したいですか？ Follow-up pool: Which question matters most? What might the present-day visitor misunderstand?",
+      "learningTarget": "Develop the purpose angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “purpose” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you hope to understand by seeing that day?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “Would you only observe, or would you change something?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Would you only observe, or would you change something?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Would you only observe, or would you change something? / 見るだけにしますか、それとも何かを変えますか？ Follow-up pool: What could intervention change? What could observation reveal?",
+      "learningTarget": "Develop the choice angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “choice” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you only observe, or would you change something?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “Who would you most want to see that day?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Who would you most want to see that day?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Who would you most want to see that day? / その日に最も会いたいのは誰ですか？ Follow-up pool: What would you notice about them? What might surprise you?",
+      "learningTarget": "Develop the person angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “person” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Who would you most want to see that day?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “What would you ask that person?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What would you ask that person?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What would you ask that person? / その人に何を尋ねますか？ Follow-up pool: Why that question? Would the person understand your concern?",
+      "learningTarget": "Develop the message angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “message” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you ask that person?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “How might you feel after returning to the present?” and expand the most interesting detail.",
+      "tutorAction": "Ask “How might you feel after returning to the present?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "How might you feel after returning to the present? / 現在に戻ったあと、どんな気持ちになるでしょうか？ Follow-up pool: What would feel clearer? What might become harder?",
+      "learningTarget": "Develop the effect angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “effect” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How might you feel after returning to the present?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the standalone question “What is one good reason not to go back?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What is one good reason not to go back?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What is one good reason not to go back? / 過去へ戻らないほうがよい理由を一つ挙げるとしたら何ですか？ Follow-up pool: What deserves attention now? Can acceptance be more useful than an answer?",
+      "learningTarget": "Develop the flip angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “flip” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is one good reason not to go back?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next step, then repeat one useful corrected sentence.",
+      "tutorAction": "Give one specific strength and one useful next step; ask for one final repetition before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one actionable improvement from the conversation.",
+      "pedagogicalValue": "Turns the open discussion into a specific, repeatable learning takeaway.",
+      "failureDiagnosis": "Generic praise or a long correction list would fail the one-strength, one-next-step contract.",
+      "nonTargetSupport": "The Japanese closing line mirrors the two-part feedback promise.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No choices or distractors appear; the tutor records individualized feedback.",
+      "componentConsistency": "Uses the approved synchronized Freetalking feedback box and final repetition instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

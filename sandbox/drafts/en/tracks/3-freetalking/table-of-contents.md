@@ -628,189 +628,188 @@ the discard test
 
 # Theme 7 · Work and money · `story`
 
-*Not "what makes work meaningful" — **work stories with numbers and scenes in them.** Most learners
-are employed, but every question here is written so a student, a homemaker or a retiree can answer.*
+*Concrete work-and-money conversations without requiring a job, salary, or private figures. Every
+opening stands alone, and every pool can work for a student, carer, homemaker, retiree, or worker.*
 
 **64. What you did with your first paycheck** `story`
-*Opens:* "What was the first money you ever earned, and what did you spend it on?"
-*Ladder:* how much → what was the job → what did you buy → who did you tell → what would you spend it
-on now → what did it teach you
+*Opens:* "What are some memorable ways people use their first paycheck?"
+*Ladder:* why it matters → sources of first earnings → meaningful uses → who people tell → an
+unexpected payment → what first earnings can teach
 *Moves:* `My first ___ was ___.` **(Core 30)** · `I spent it all on ___.` **(Core 32)**
 *Shared:* KR 7-1
 
 **65. Something you were proud to finish** `story`
-*Opens:* "When did you last finish something and feel proud of it?"
-*Ladder:* what → who noticed → did you say anything → why did it matter → what's the last thing you
-were *not* proud of → what would you want to be known for
+*Opens:* "What makes finishing something feel genuinely satisfying?"
+*Ladder:* satisfying effort → recognition → expressing pride → why one result matters → completion
+without pride → work worth being known for
 *Moves:* `I was actually proud of ___.` **(Core 30)** · `Nobody said anything, but ___.` **(Core 56)**
 *Shared:* KR 7-2
 
 **66. A moment when you felt successful** `story`
-*Opens:* "When did you last feel like things were going well? It doesn't have to be big."
-*Ladder:* when → what was happening → who was there → did it last → what would count now → has your
-definition moved
+*Opens:* "What can make an ordinary moment feel like success?"
+*Ladder:* what comes before → being witnessed → the feeling → what remains → meaningful progress →
+how definitions change
 *Moves:* `It wasn't big, but ___.` **(Core 56)** · `That's when I felt ___.` **(Core 58)**
 *Shared:* KR 7-3 · deliberately **not** "what is success" — that title is the essay prompt this
 track exists to avoid, and this opening line is what rescues it
 
 **67. Something you're trying to get better at** `story`
-*Opens:* "What are you trying to get better at right now?"
-*Ladder:* what → how long → how's it going → what did you start and drop → why did that one die →
-what would make this one stick
+*Opens:* "What skill would you most like to improve?"
+*Ladder:* first method → obstacles → useful feedback → signs of progress → when to redirect effort →
+one repeatable action
 *Moves:* `I've been trying to ___.` **(Core 52)** · `I lasted about ___.` **(Core 51)** `chunk`
 *Shared:* KR 7-4
 
 **68. What you do with money you don't spend** `story`
-*Opens:* "Do you do anything with your money besides spend it?"
-*Ladder:* what → since when → how's it going → who taught you → would you recommend it → what would
-you never do with money
+*Opens:* "Besides spending it, what can people do with money?"
+*Ladder:* priorities → beginning to set money aside → what stays workable → influences → conditional
+recommendations → necessary safeguards
 *Moves:* `I put a bit into ___.` **(Core 12)** · `I wouldn't recommend ___ing.` **(Core 66)**
 *Shared:* KR 7-5
 
 **69. A different career you might have chosen** `story`
-*Opens:* "What would you be doing if you'd chosen a different career path?"
-*Ladder:* what → what stopped you → do you still think about it → could you still do it → who do you
-know who did → would you actually want it
+*Opens:* "Which career would you be curious to try for one year?"
+*Ladder:* an ordinary day → what attracts people → realistic conditions → an instructive example →
+feelings about paths not taken → bringing one element into life
 *Moves:* `I'd probably be ___ing.` **(Core 66)** · `I almost ___.` `chunk`
 *Shared:* KR 7-6
 
 **70. How AI has changed your work** `story`
-*Opens:* "Has anything about your day actually changed because of AI?"
-*Ladder:* what's different → what do you use it for → what did it replace → what does it get wrong →
-what would you never hand over → what will change next
+*Opens:* "Which everyday task has AI changed the most?"
+*Ladder:* before and after → output quality → new work → boundaries → responsibility → what should
+stay human
 *Moves:* `I use it for ___ now.` **(Core 12)** · `It still can't ___.` **(Core 18)**
 *Shared:* KR 7-7
 
 **71. A time you seriously considered changing careers** `story` `深く`
-*Opens:* "Have you ever seriously thought about changing what you do?"
-*Ladder:* when → what triggered it → who did you tell → what stopped you → do you still think about
-it → what would have to change
+*Opens:* "What makes someone seriously consider changing careers?"
+*Ladder:* pressure → attraction → risk → rational delay → reversible experiment → useful perspective
 *Moves:* `I came close to ___ing.` `chunk` · `What stopped me was ___.` **(Core 103)** `chunk`
 *Shared:* KR 7-8
 
 **72. Someone you learned a lot from** `story` `深く`
-*Opens:* "Think of a manager, teacher or coach you learned from. What were they like?"
-*Ladder:* who → one specific thing they did → how did people react → did you say anything → what did
-you take from it → what would you be like
+*Opens:* "What makes a manager, teacher, or coach worth learning from?"
+*Ladder:* useful actions → response to mistakes → safe questions → lasting ideas → responding to
+advice → helping people become independent
 *Moves:* `___ was the kind of person who ___.` **(Core 55)** · `What made the difference was ___.` **(Core 103)** `chunk`
 *Shared:* KR 7-9
 
 **73. What a normal work or school day looks like where you live** `両国`
-*Opens:* "What time do people really finish work or school where you live?"
-*Ladder:* when → is that expected → what happens if you leave first → what do you call people → what
-would surprise me → what would you change
+*Opens:* "What time do people usually finish work or school where you live?"
+*Ladder:* official versus actual → leaving before others → local labels → tutor's example → comparing
+settings → a fair change
 *Moves:* `Officially it's ___, but ___.` **(Core 56)** · `Nobody actually ___.` **(Core 15)**
 *Shared:* KR 1-6, **moved here and reworded.** In Korean it sat in 두 나라 사이 and asked only about
 companies, which excludes students, homemakers and retirees — the exclusion 일과 돈's own note warns
 against. Opening on *leaving time* lets anyone answer.
 
 **74. What your workday actually looks like** `story`
-*Opens:* "What did you do between nine and eleven this morning?"
-*Ladder:* walk me through it → which part takes longest → which part do you like → what would
-surprise an outsider → has it changed → what would you cut
+*Opens:* "Choose any recent two-hour period. What filled that time?"
+*Ladder:* sequence → what takes longest → satisfying or frustrating work → hidden work → how routines
+change → what to cut or retain
 *Moves:* `Most of my day is spent ___ing.` `chunk` · `The part people don't see is ___.` **(Core 103)** `chunk`
 *Shared:* **NEW → KR**
 
 **75. One thing you would change about your work or school** `opinion`
-*Opens:* "What's one thing about where you work or study that you'd change tomorrow?"
-*Ladder:* what → why hasn't it changed → who'd object → what would it cost → have you raised it →
-what happened, or why not
+*Opens:* "What would you change about a place where people work or study?"
+*Ladder:* why problems persist → legitimate objections → costs → safe ways to raise an issue → a
+credible response → choosing the next step
 *Moves:* `If it were up to me, I'd ___.` **(Core 66)** · `The problem is that ___.` `chunk`
 *Shared:* **NEW → KR**
 
 # Theme 8 · What came before · `story`
 
-*Memory is the easiest material there is — the story is already known, so all the effort goes into
-the sentences. Childhood is funny on top of that.*
+*Past experiences, familiar stories and public examples already contain people, events and change,
+so learners can focus on telling and interpreting a story rather than inventing one from nothing.*
 
 **76. Advice you kept hearing as a child** `story`
-*Opens:* "What did an adult say to you over and over as a kid?"
-*Ladder:* who → what exactly → did you listen → do you say it now → were they right → what would you
-nag a child about
+*Opens:* "What advice do adults often repeat to children?"
+*Ladder:* exact wording → why adults repeat it → how children respond → does it make sense later →
+would you pass it on → what advice do adults need
 *Moves:* `___ always used to tell me to ___.` **(Core 75, Core 70)** · `I never listened.` **(Core 34)**
 *Shared:* KR 8-1
 
 **77. A teacher you still remember** `story`
-*Opens:* "Which teacher do you still remember, and why?"
-*Ladder:* who → what did they do → were you scared or grateful → what did you learn from them → what
-would you say to them now → who was the worst
+*Opens:* "Which teacher—real or fictional—stands out to you most, and why?"
+*Ladder:* role → one clear moment → how the student felt → what they learned → how the judgment changed
+→ what makes teaching difficult
 *Moves:* `We were all terrified of ___.` **(Core 30)** · `Looking back, ___.` `chunk`
 *Shared:* KR 8-2
 
 **78. A nickname you had at school** `story`
-*Opens:* "What did people call you at school?"
-*Ladder:* what → who started it → did you like it → does anyone still use it → what did you call
-others → what would your nickname be now
+*Opens:* "What's the most memorable school nickname you've heard?"
+*Ladder:* origin → how the person felt → what it suggested → how long it lasted → why people create
+nicknames → where friendliness ends
 *Moves:* `Everyone called me ___.` `chunk` · `I never found out who ___.` **(Core 62)**
 *Shared:* KR 8-3
 
 **79. Something you hated as a child but love now** `story`
-*Opens:* "What did you refuse to eat as a child that you like now?"
-*Ladder:* what → when did it change → what changed it → is there anything you still refuse → what do
-you like now that child-you would hate → what will you like at sixty
+*Opens:* "Which food do many children dislike but learn to enjoy later?"
+*Ladder:* what makes it difficult → what changes the response → how tastes develop → one lasting dislike
+→ respecting preferences → what may change with age
 *Moves:* `I couldn't stand ___.` **(Core 34)** · `Now I ___ all the time.` **(Core 12)**
 *Shared:* KR 8-4
 
 **80. A mistake people still remind you about** `story`
-*Opens:* "What's a mistake you made that people still bring up?"
-*Ladder:* what happened → who saw → what did you do next → how did people react → is it funny now →
-what did it change
+*Opens:* "What kind of old mistake becomes a story people keep retelling?"
+*Ladder:* what happened → who knew → what happened next → how people reacted → who may retell it →
+what the mistake changed
 *Moves:* `I completely ___.` **(Core 32)** · `I still can't believe I ___.` `chunk`
 *Shared:* KR 8-5
 
 **81. A trip that went wrong** `story`
-*Opens:* "Tell me about a trip where something went wrong."
-*Ladder:* where → what went wrong → what did you do → who was with you → is it a good story now →
-would you go back
+*Opens:* "What travel problem makes the best story afterward?"
+*Ladder:* original plan → disruption → first response → available help → ending → how the story changes
+with time → would the traveller return
 *Moves:* `Everything was fine until ___.` **(Core 58)** · `In the end we ___.` **(Core 35)**
 *Shared:* KR 8-6
 
 **82. A place you would happily visit again** `story`
-*Opens:* "Where have you been that you'd return to tomorrow?"
-*Ladder:* where → when → what made it → who were you with → would it be the same → what would you do
-differently
+*Opens:* "Choose a place that deserves a return visit. What makes it worth going back?"
+*Ladder:* strongest memory → ideal companion → what may have changed → first priority → expectations
+versus reality → what quality belongs in daily life
 *Moves:* `I'd go back tomorrow.` **(Core 66)** · `It wouldn't be the same, though.` **(Core 66)**
 *Shared:* KR 8-7
 
 **83. What you wanted to be as a child** `story`
-*Opens:* "What did you want to be when you were ten?"
-*Ladder:* what → where did the idea come from → when did it change → what replaced it → do you still
-think about it → what would ten-year-old you say now
+*Opens:* "Which childhood dream job is especially interesting to you?"
+*Ladder:* what makes it appealing → where the idea comes from → how it changes → what replaces it →
+what value survives → what adulthood reveals
 *Moves:* `I wanted to be ___.` **(Core 30)** · `It's not that far from ___.` **(Core 45)**
 *Shared:* KR 8-8
 
 **84. One day you would go back to** `story`
-*Opens:* "One trip to the past, one day only. Which day?"
-*Ladder:* when → why that day → would you change it or just watch → who would you see → what would
-you say → would it help
+*Opens:* "You can visit one day in the past. Which day do you choose?"
+*Ladder:* what happens that day → what you want to understand → observe or intervene → who you would
+meet → what you would ask → how returning might feel
 *Moves:* `I'd go back to ___.` **(Core 66)** · `I wouldn't change it, I'd just ___.` **(Core 66)**
 *Shared:* KR 8-9
 
 **85. A turning point in your life** `story` `深く`
-*Opens:* "Was there a moment when your life could have gone in a completely different direction?"
-*Ladder:* what happened → did you know at the time → what was the alternative → who influenced it →
-what would be different → was it luck or a decision
+*Opens:* "What kind of moment can send a life in a completely different direction?"
+*Ladder:* one example → when its importance became clear → plausible alternative → strongest influence
+→ what might differ now → luck versus choice
 *Moves:* `That's when everything ___.` **(Core 58)** · `If that hadn't happened, ___.` `chunk`
 *Shared:* KR 8-10
 
 **86. What you were like as a child** `story`
-*Opens:* "What do your family say you were like as a kid?"
-*Ladder:* what were you like → who says so → do you agree → one specific memory → how much is still
-true → what would that child think of you
+*Opens:* "How can the same child seem completely different to different people?"
+*Ladder:* choose one child → who describes them → whether the description is fair → one revealing scene
+→ differences across settings → what remains in adulthood
 *Moves:* `Apparently I was ___.` **(Core 30)** · `I don't remember it that way.` `chunk`
 *Shared:* **NEW → KR**
 
 **87. A childhood place that no longer exists** `story`
-*Opens:* "Is there somewhere from your childhood that doesn't exist anymore?"
-*Ladder:* what was it → what did you do there → when did it go → did you notice at the time → what's
-there now → does that bother you
+*Opens:* "Which vanished place—local, famous, or personal—would you bring back?"
+*Ladder:* physical details → what people did there → how it disappeared → what replaced it → how the
+change feels → what deserves preserving
 *Moves:* `There used to be a ___.` **(Core 75)** · `It's ___ now.` **(Core 43)**
 *Shared:* **NEW → KR**
 
 **88. Something you were completely wrong about** `story`
-*Opens:* "What did you believe for years that turned out to be completely wrong?"
-*Ladder:* what → how long → how did you find out → who told you → did you argue → what are you sure
-about now
+*Opens:* "What's a belief that many people once accepted but later proved wrong?"
+*Ladder:* exact claim → why it seemed believable → evidence that corrected it → first reaction → what
+changed afterward → how to judge certainty now
 *Moves:* `I was completely sure that ___.` **(Core 30)** · `It turned out I'd ___.` **(Core 73)** `chunk`
 *Shared:* **NEW → KR**
 
@@ -907,49 +906,49 @@ others would → have you ever lost something → what did you learn
 # Theme 10 · Worth thinking about · `opinion`
 
 *Kept deliberately small.* This is the hardest section to run and the easiest to turn into a sermon,
-so the topic count does not grow. Every title here has been rewritten from *"what is ___"* into
-**a personal angle or question with a concrete first answer.**
+so the topic count does not grow. Each opening asks for a concrete judgment without requiring private
+money, work or regret, and each ladder leaves room for the tutor's real view.
 
 **101. How long you could live without social media** `opinion`
-*Opens:* "How long could you go without social media? Give me a number."
-*Ladder:* how long → what would you miss → what did you last delete → what does it give you → who
-manages it better than you → what would you tell a fourteen-year-old
+*Opens:* "How long does a social-media break need to be before it changes anything?"
+*Ladder:* useful duration → first function missed → what deletion changes → hard-to-replace value →
+when usefulness becomes a time sink → healthy habits → advice for a fourteen-year-old
 *Moves:* `I'd last about ___.` **(Core 51)** `chunk` · `It's not so much ___ as ___.` **(Core 89)** `chunk`
 *Shared:* KR 10-1
 
 **102. Something AI would get wrong about your work** `opinion`
-*Opens:* "What part of what you do would AI get wrong?"
-*Ladder:* which part → why exactly → have you tested it → what has it done well → what would you
-never hand over → what will that look like in five years
+*Opens:* "Which part of human work is easiest for AI to misunderstand?"
+*Ladder:* choose one role → missing context → one observable example → useful capability → blind spot
+→ responsibility humans keep → how the role may change
 *Moves:* `It still can't ___.` **(Core 18)** · `That suggests that ___.` **(Core 99)** `chunk`
 *Shared:* KR 10-3
 
 **103. How much money is enough?** `opinion` `深く`
-*Opens:* "What's the smallest amount of money that would stop you worrying?"
-*Ladder:* what number → what would change → what wouldn't → do you know anyone above that line →
-are they happier → what would you do with the worry gone
+*Opens:* "What does ‘enough money’ need to make possible?"
+*Ladder:* first constraint removed → what money cannot solve → why needs differ → evidence about
+well-being → attention freed from worry → number, range or conditions → non-financial security
 *Moves:* `That's true up to a point, but ___.` `chunk` · `Overall, I'd say ___.` **(Core 117)** `chunk`
 *Shared:* KR 10-4
 
 **104. The age you would choose to be forever** `opinion` `深く`
-*Opens:* "What age would you go back to and stay at?"
-*Ladder:* what age → what was good about it → what was bad → what do you have now that you didn't →
-what would you lose → is any age actually best
+*Opens:* "Which life stage seems most attractive to freeze in time?"
+*Ladder:* strongest advantage → unavoidable cost → what the present offers → growth a frozen stage
+prevents → conditions that change the answer → can one age be best → what the present deserves
 *Moves:* `If anything, ___.` **(Core 116)** `chunk` · `That's true, but it doesn't account for ___.` **(Core 115)** `chunk`
 *Shared:* KR 10-5
 
 **105. One thing you would do differently** `opinion` `深く`
-*Opens:* "Name one thing you'd do differently. Just one."
-*Ladder:* what → would it have worked → what did it lead to → is regret useful → do you know anyone
-with none → would you want none
+*Opens:* "Which decision from history, fiction or everyday life could have been handled differently?"
+*Ladder:* alternative choice → would it work → actual gains and costs → alternative gains and costs →
+why the original made sense → useful regret → what “no regrets” really means
 *Moves:* `I'd have ___ differently.` `chunk` · `It still made sense at the time.` `chunk`
 *Shared:* KR 10-6 · the former abstract title was an essay prompt; the personal title and bounded
 opening keep the learner out of a prepared speech
 
 **106. How speaking English has changed you** `opinion`
-*Opens:* "Has speaking English changed how you say things in Japanese?"
-*Ladder:* what have you noticed → about English or about Japanese → has it changed who you talk to →
-what's been hardest → what surprised you → would you start again knowing that
+*Opens:* "What difference between English and Japanese has become more noticeable since you started speaking English?"
+*Ladder:* one example → words, tone or silence → who you can speak with → hardest adjustment → biggest
+surprise → expression and identity → what may change next → would you choose the path again
 *Moves:* `I've noticed that ___.` **(Core 49)** · `Overall, it's made me ___.` **(Core 117)** `chunk`
 *Shared:* **NEW → KR** · the one fully reflective topic, and it works because the learner has a
 hundred sessions of evidence. **The closing topic of the track.**
