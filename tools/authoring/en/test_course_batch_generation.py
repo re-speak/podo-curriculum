@@ -18,7 +18,11 @@ import check_deck
 
 class CourseBatchGenerationTests(unittest.TestCase):
     def generated_decks(self):
-        paths = [core.build(number, data)[0] for number, data in core.LESSONS.items()]
+        paths = [
+            core.build(number, core.LESSONS[number])[0]
+            for number in core.GENERATED_LESSONS
+        ]
+        paths.append(core.PILOT)
         paths.extend(
             contextual.build(number, data)[0]
             for number, data in contextual.LESSONS.items()
@@ -63,6 +67,25 @@ class CourseBatchGenerationTests(unittest.TestCase):
     def test_core_18_preserves_the_authoritative_model(self):
         self.assertEqual(core.strip_marks(core.LESSONS[18]["p1"][0][0]), "Can you drive?")
 
+    def test_core_20_is_protected_from_batch_generation(self):
+        self.assertNotIn(20, core.GENERATED_LESSONS)
+        self.assertNotIn(20, core.LESSONS)
+        self.assertTrue(core.PILOT.is_file())
+
+    def test_revised_core_lane_has_supported_translation_and_real_freetalk(self):
+        for number in (12, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24):
+            _, html = core.build(number, core.LESSONS[number])
+            chunks = dict(check_deck.pages(html))
+            for page_id in ("p1-translate", "p2-translate"):
+                self.assertIn('data-scaffolding-contract="target-v2"', chunks[page_id], number)
+                self.assertIn('data-support-stage="supported"', chunks[page_id], number)
+                self.assertIn('class="hint-chip"', chunks[page_id], number)
+            freetalk = chunks["p3-freetalk"]
+            self.assertGreaterEqual(freetalk.count('class="turn '), 4, number)
+            self.assertIn("only if it fits naturally", freetalk, number)
+            self.assertIn("Tutor", freetalk, number)
+            self.assertIn("answer", freetalk, number)
+
     def test_core_12_uses_the_canonical_proofread_shape(self):
         _, html = core.build(12, core.LESSONS[12])
         page_chunks = dict(check_deck.pages(html))
@@ -84,7 +107,7 @@ class CourseBatchGenerationTests(unittest.TestCase):
         )
 
     def test_every_generated_core_lesson_is_proofread_and_canonical(self):
-        for number in core.LESSONS:
+        for number in core.GENERATED_LESSONS:
             _, html = core.build(number, core.LESSONS[number])
             self.assertEqual(
                 check_deck.meta_content(html, "podo:proofread-status"),
@@ -99,7 +122,7 @@ class CourseBatchGenerationTests(unittest.TestCase):
             self.assertIn('class="nuance-compare"', page_chunks["native-tip"], number)
 
     def test_generated_core_semantic_specs_are_complete(self):
-        expected = set(core.LESSONS) - {12}
+        expected = set(core.GENERATED_LESSONS) - {12}
         self.assertEqual(set(core.CANONICAL_SPECS), expected)
         self.assertEqual(set(core.LIVE_SCENES), expected)
         for number in expected:
@@ -112,8 +135,8 @@ class CourseBatchGenerationTests(unittest.TestCase):
             self.assertEqual(core.LIVE_SCENES[number][-1][1], "other", number)
 
     def test_core_batch_matches_generator(self):
-        for number, data in core.LESSONS.items():
-            path, expected = core.build(number, data)
+        for number in core.GENERATED_LESSONS:
+            path, expected = core.build(number, core.LESSONS[number])
             self.assertEqual(path.read_text(encoding="utf-8"), expected, path)
 
     def test_contextual_batch_matches_generator(self):
@@ -137,7 +160,13 @@ class CourseBatchGenerationTests(unittest.TestCase):
                 self.assertEqual(path.read_text(encoding="utf-8"), expected, path)
 
     def test_every_generated_deck_passes_the_quality_checker(self):
-        self.assertEqual(len(self.generated_decks()), 29)
+        expected_count = (
+            len(core.GENERATED_LESSONS)
+            + 1  # protected, hand-edited CORE-20 pilot
+            + len(contextual.LESSONS)
+            + 2 * len(freetalking.TOPICS)
+        )
+        self.assertEqual(len(self.generated_decks()), expected_count)
         for path in self.generated_decks():
             errors, warnings = check_deck.check(path)
             self.assertEqual(errors, [], path)

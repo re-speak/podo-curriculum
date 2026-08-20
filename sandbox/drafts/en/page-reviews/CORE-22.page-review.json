@@ -1,0 +1,741 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/22-id-like-the-chicken-please/lesson.html",
+  "lessonSha256": "ab92974c21f859c5536328ba08d60a371d58404529e959803f18d4ed30df521d",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the displayed lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"lesson-goal\" data-act=\"Everyday English\"> GOAL I'd like the chicken, please (チキンをお願いします) Order something politely in two common ways. Please read the title aloud.よく使う二つの言い方で、丁寧に注文しましょう。タイトルを声に出して読んでください。 Have the learner read the title once, then move on. <div class=\"section\"",
+      "learningTarget": "Goal orientation for a favorite restaurant order.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle a favorite restaurant order at the goal orientation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared goal orientation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the familiar English words shown on the page.",
+      "tutorAction": "Prompt only the displayed known words; do not turn this into a new-vocabulary lesson.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"words-you-know\">Words you know (知っている単語)Say the words you recognize, then use them in the lesson.知っている単語を言って、レッスンで使いましょう。レシートreceipt持ち帰りto goレシートa receipt <div class=\"transition-page\"",
+      "learningTarget": "Known-word activation for a favorite restaurant order.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle a favorite restaurant order at the known-word activation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared known-word activation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part1-intro\" data-act=\"Pattern 1\">PART 1I'd like the chicken, please.First, let's practice this pattern.まず、このパターンを練習しましょう。Introduce Part 1 with this one line, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the displayed meaning briefly, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: I'd like | お願いします | I'd like | お願いします | I'd like | お願いします",
+      "learningTarget": "Meaning and model for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—meaning and model—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the meaning and model stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning and model component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I'd like",
+          "お願いします",
+          "I'd like",
+          "お願いします",
+          "I'd like",
+          "お願いします"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete English sentence aloud.",
+      "tutorAction": "Listen to the learner; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: I'd like | お願いします | I'd like | お願いします | I'd like | お願いします | I'd like | お願いします",
+      "learningTarget": "Complete-sentence read-aloud for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—complete-sentence read-aloud—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the complete-sentence read-aloud stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared complete-sentence read-aloud component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I'd like",
+          "お願いします",
+          "I'd like",
+          "お願いします",
+          "I'd like",
+          "お願いします",
+          "I'd like",
+          "お願いします"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the formula and examples to notice where the target words belong.",
+      "tutorAction": "Explain only the displayed form contrast and check one example.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p1-rule\">Keep I'd like together (I'd like をひとまとまりに)Keep I'd like together, add the complete item, and put please at the end.I'd like をひとまとまりにし、品物を続け、最後に please を置きます。I'd like + 品物 + please.State an order注文を伝えるI'd like the chicken, please.I'd like a ticket, please. <div class=\"section\"",
+      "learningTarget": "Form explanation for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—form explanation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the form explanation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, an, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared form explanation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the option matching the Japanese, then read the entire completed sentence aloud.",
+      "tutorAction": "After each choice, have the learner read the completed sentence before moving on.",
+      "targetOrPrompt": "Exact contrasts: I'd like vs I'll have | I'll have vs I'd like | I'd like vs I'll have | I'll have vs I'd like; Highlighted target evidence: お願いします | します | お願いします | します",
+      "learningTarget": "Meaningful two-way choice for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—meaningful two-way choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the meaningful two-way choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "The exact alternatives (I'd like vs I'll have | I'll have vs I'd like | I'd like vs I'll have | I'll have vs I'd like) require a meaning or form decision; correct alternatives vary across rows and every distractor diagnoses a named contrast.",
+      "componentConsistency": "The shared meaningful two-way choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "お願いします",
+          "します",
+          "お願いします",
+          "します"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Arrange each complete sentence, then say it aloud.",
+      "tutorAction": "Let the learner build and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Complete order targets: I'd like the chicken, please. | I'd like the soup, please. | I'd like this one, please. | I'd like a ticket, please.",
+      "learningTarget": "Sentence assembly for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—sentence assembly—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the sentence assembly stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared sentence assembly component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact blank answers: I'd like | I'd like | I'd like | I'd like; Highlighted target evidence: お願いします | お願いします | お願いします | お願いします",
+      "learningTarget": "Target retrieval in a complete sentence for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—target retrieval in a complete sentence—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the target retrieval in a complete sentence stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared target retrieval in a complete sentence component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "お願いします",
+          "お願いします",
+          "お願いします",
+          "お願いします"
+        ],
+        "blankAnswers": [
+          "I'd like",
+          "I'd like",
+          "I'd like",
+          "I'd like"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read the Japanese and say the complete English sentence, using the lexical hint when needed.",
+      "tutorAction": "Type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: I'd like the chicken, please. | I'd like the soup, please. | I'd like this one, please. | I'd like a ticket, please.; Lexical support: チキン:the chicken | スープ:the soup | これ:this one | チケット:a ticket",
+      "learningTarget": "Supported whole-sentence production for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—supported whole-sentence production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the supported whole-sentence production stage before the lesson increases independence.",
+      "nonTargetSupport": "Only the changing lexical content is supported by the declared hints (チキン:the chicken | スープ:the soup | これ:this one | チケット:a ticket); the taught frame itself remains the retrieval target.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared supported whole-sentence production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I'd like the chicken, please.",
+          "I'd like the soup, please.",
+          "I'd like this one, please.",
+          "I'd like a ticket, please."
+        ],
+        "hintChips": [
+          "チキン:the chicken",
+          "スープ:the soup",
+          "これ:this one",
+          "チケット:a ticket"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personally meaningful sentence that performs the exact job named in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/turns: Now use “I’d like ___, please” to order one thing you would really choose.",
+      "learningTarget": "Communicative personal production for I'd like + item, please.",
+      "pedagogicalValue": "This page has one distinct job—communicative personal production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I'd like + item, please at the communicative personal production stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared communicative personal production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I’d like ___, please” to order one thing you would really choose."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part2-intro\" data-act=\"Pattern 2\">PART 2Can I have a coffee, please?Next, let's practice this pattern.次に、このパターンを練習しましょう。Introduce Part 2 with this one line, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the displayed meaning briefly, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: Can I have | いただけますか | Can I have | いただけますか | Can I have | いただけますか",
+      "learningTarget": "Meaning and model for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—meaning and model—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the meaning and model stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, an, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning and model component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "Can I have",
+          "いただけますか",
+          "Can I have",
+          "いただけますか",
+          "Can I have",
+          "いただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete English sentence aloud.",
+      "tutorAction": "Listen to the learner; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: Can I have | いただけますか | Can I have | いただけますか | Can I have | いただけますか | Can I have | いただけますか",
+      "learningTarget": "Complete-sentence read-aloud for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—complete-sentence read-aloud—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the complete-sentence read-aloud stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared complete-sentence read-aloud component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "Can I have",
+          "いただけますか",
+          "Can I have",
+          "いただけますか",
+          "Can I have",
+          "いただけますか",
+          "Can I have",
+          "いただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Use the formula and examples to notice where the target words belong.",
+      "tutorAction": "Explain only the displayed form contrast and check one example.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p2-rule\">Use Can I have before the item (品物の前に Can I have)Use Can I have plus the complete item, and put please before the question mark.Can I have の後ろに品物を続け、疑問符の前に please を置きます。Can I have + 品物 + please?Ask for an item品物を頼むCan I have a coffee, please?Can I have the menu, please? <div class=\"section\"",
+      "learningTarget": "Form explanation for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—form explanation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the form explanation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, an, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared form explanation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the option matching the Japanese, then read the entire completed sentence aloud.",
+      "tutorAction": "After each choice, have the learner read the completed sentence before moving on.",
+      "targetOrPrompt": "Exact contrasts: Can I have vs Do you have | Do you have vs Can I have | Can I have vs Do you have | Do you have vs Can I have; Highlighted target evidence: いただけますか | ありますか | いただけますか | ありますか",
+      "learningTarget": "Meaningful two-way choice for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—meaningful two-way choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the meaningful two-way choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "The exact alternatives (Can I have vs Do you have | Do you have vs Can I have | Can I have vs Do you have | Do you have vs Can I have) require the learner to distinguish a request from an availability question; correct alternatives vary across rows.",
+      "componentConsistency": "The shared meaningful two-way choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "いただけますか",
+          "ありますか",
+          "いただけますか",
+          "ありますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Arrange each complete sentence, then say it aloud.",
+      "tutorAction": "Let the learner build and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Complete order targets: Can I have a coffee, please? | Can I have some water, please? | Can I have the menu, please? | Can I have a receipt, please?",
+      "learningTarget": "Sentence assembly for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—sentence assembly—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the sentence assembly stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared sentence assembly component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact blank answers: Can I have | Can I have | Can I have | Can I have; Highlighted target evidence: いただけますか | いただけますか | いただけますか | いただけますか",
+      "learningTarget": "Target retrieval in a complete sentence for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—target retrieval in a complete sentence—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the target retrieval in a complete sentence stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared target retrieval in a complete sentence component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "いただけますか",
+          "いただけますか",
+          "いただけますか",
+          "いただけますか"
+        ],
+        "blankAnswers": [
+          "Can I have",
+          "Can I have",
+          "Can I have",
+          "Can I have"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read the Japanese and say the complete English sentence, using the lexical hint when needed.",
+      "tutorAction": "Type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: Can I have a coffee, please? | Can I have some water, please? | Can I have the menu, please? | Can I have a receipt, please?; Lexical support: コーヒー:a coffee | 水:some water | メニュー:the menu | レシート:a receipt",
+      "learningTarget": "Supported whole-sentence production for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—supported whole-sentence production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the supported whole-sentence production stage before the lesson increases independence.",
+      "nonTargetSupport": "Only the changing lexical content is supported by the declared hints (コーヒー:a coffee | 水:some water | メニュー:the menu | レシート:a receipt); the taught frame itself remains the retrieval target.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared supported whole-sentence production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Can I have a coffee, please?",
+          "Can I have some water, please?",
+          "Can I have the menu, please?",
+          "Can I have a receipt, please?"
+        ],
+        "hintChips": [
+          "コーヒー:a coffee",
+          "水:some water",
+          "メニュー:the menu",
+          "レシート:a receipt"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personally meaningful sentence that performs the exact job named in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/turns: Now use “Can I have ___, please?” to ask for one extra item.",
+      "learningTarget": "Communicative personal production for Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—communicative personal production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle Can I have + item, please? at the communicative personal production stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared communicative personal production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Can I have ___, please?” to ask for one extra item."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part3-intro\" data-act=\"Conversation\">PART 3Use it in a conversation (会話で使おう)Now, let's use both patterns in a conversation.では、二つのパターンを会話で使ってみましょう。Introduce the conversation, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for integrated use of I'd like + item, please and Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I'd like + item, please and Can I have + item, please? at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every Me line aloud in the role-play.",
+      "tutorAction": "Take the named partner role and read only that role's lines.",
+      "targetOrPrompt": "Highlighted target evidence: I'd like | お願いします | Can I have | いただけますか",
+      "learningTarget": "Scripted role-play for integrated use of I'd like + item, please and Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—scripted role-play—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I'd like + item, please and Can I have + item, please? at the scripted role-play stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared scripted role-play component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I'd like",
+          "お願いします",
+          "Can I have",
+          "いただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Play Me and say every complete line, including all missing words.",
+      "tutorAction": "Take the named partner role and type only the learner's missing words.",
+      "targetOrPrompt": "Exact blank answers: I'd like | Can I have",
+      "learningTarget": "Role-play retrieval for integrated use of I'd like + item, please and Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—role-play retrieval—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I'd like + item, please and Can I have + item, please? at the role-play retrieval stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared role-play retrieval component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I'd like",
+          "Can I have"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's real question, ask the displayed question back, and listen to the tutor's real answer.",
+      "tutorAction": "React to the interesting detail and answer the learner honestly; invite today's pattern only if it fits naturally.",
+      "targetOrPrompt": "Exact learner prompt/turns: What’s your favorite thing to order when you eat out? | What do you usually order when you eat out?",
+      "learningTarget": "Reciprocal free talk for a favorite restaurant order.",
+      "pedagogicalValue": "This page has one distinct job—reciprocal free talk—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle a favorite restaurant order at the reciprocal free talk stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared reciprocal free talk component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What’s your favorite thing to order when you eat out?",
+          "What do you usually order when you eat out?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Play Me and say every complete line, including all missing words.",
+      "tutorAction": "Take the named partner role and type only the learner's missing words.",
+      "targetOrPrompt": "Exact blank answers: I'd like | Can I have",
+      "learningTarget": "New-situation transfer for integrated use of I'd like + item, please and Can I have + item, please?.",
+      "pedagogicalValue": "This page has one distinct job—new-situation transfer—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I'd like + item, please and Can I have + item, please? at the new-situation transfer stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared new-situation transfer component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I'd like",
+          "Can I have"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two natural expressions and choose by meaning or situation.",
+      "tutorAction": "Explain the practical difference briefly and check which expression fits each situation.",
+      "targetOrPrompt": "Exact dialogue/model lines: I'd like the chicken, please. | I'll have the chicken, please.",
+      "learningTarget": "Meaning-based nuance choice for a favorite restaurant order.",
+      "pedagogicalValue": "This page has one distinct job—meaning-based nuance choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle a favorite restaurant order at the meaning-based nuance choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning-based nuance choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

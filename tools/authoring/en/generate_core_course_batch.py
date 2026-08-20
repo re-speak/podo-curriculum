@@ -65,18 +65,22 @@ LESSONS = {
  omit_reorder=(1,),
  rules=(("Use Can I plus a plain verb to ask permission for yourself.", "自分の許可を求めるときは Can I の後ろに動詞の原形を置きます。"),("Use You can plus a plain verb to give permission to the other person.", "相手に許可を与えるときは You can の後ろに動詞の原形を置きます。")), prompt=("Ask permission to do something in this room.", "この部屋で何かをする許可を求めてください。"), partner=("Clerk", "Let me know if you need anything.", "Yes, the fitting room is over there.", "Take your time."), tip=("Go ahead.", "どうぞ", "Sorry, not here.", "すみません、ここではできません")),
 22: dict(slug="id-like-the-chicken-please", title="I'd like the chicken, please", ko="치킨으로 주세요", ja="チキンをお願いします", goal=("Order something politely in two common ways.", "よく使う二つの言い方で、丁寧に注文しましょう。"),
- p1=rows(("{t}I'd like{/t} the chicken, {t}please{/t}.", "チキンを{t}お願いします{/t}。", "I'd like|the chicken,|please."),("{t}I'd like{/t} the soup, {t}please{/t}.", "スープを{t}お願いします{/t}。", "I'd like|the soup,|please."),("{t}I'd like{/t} this one, {t}please{/t}.", "これを{t}お願いします{/t}。", "I'd like|this one,|please."),("{t}I'd like{/t} a ticket, {t}please{/t}.", "チケットを1枚{t}お願いします{/t}。", "I'd like|a ticket,|please.")),
- p2=rows(("{t}Can I have{/t} a coffee, {t}please{/t}?", "コーヒーを{t}いただけますか{/t}？", "Can I have|a coffee,|please?"),("{t}Can I have{/t} some water, {t}please{/t}?", "お水を{t}いただけますか{/t}？", "Can I have|some water,|please?"),("{t}Can I have{/t} the menu, {t}please{/t}?", "メニューを{t}いただけますか{/t}？", "Can I have|the menu,|please?"),("{t}Can I have{/t} a receipt, {t}please{/t}?", "レシートを{t}いただけますか{/t}？", "Can I have|a receipt,|please?")),
+ p1=rows(("{t}I'd like{/t} the chicken, please.", "チキンを{t}お願いします{/t}。", "I'd like|the chicken,|please."),("{t}I'd like{/t} the soup, please.", "スープを{t}お願いします{/t}。", "I'd like|the soup,|please."),("{t}I'd like{/t} this one, please.", "これを{t}お願いします{/t}。", "I'd like|this one,|please."),("{t}I'd like{/t} a ticket, please.", "チケットを1枚{t}お願いします{/t}。", "I'd like|a ticket,|please.")),
+ p2=rows(("{t}Can I have{/t} a coffee, please?", "コーヒーを{t}いただけますか{/t}？", "Can I have|a coffee,|please?"),("{t}Can I have{/t} some water, please?", "お水を{t}いただけますか{/t}？", "Can I have|some water,|please?"),("{t}Can I have{/t} the menu, please?", "メニューを{t}いただけますか{/t}？", "Can I have|the menu,|please?"),("{t}Can I have{/t} a receipt, please?", "レシートを{t}いただけますか{/t}？", "Can I have|a receipt,|please?")),
  rules=(("Keep I'd like together, add the complete item, and put please at the end.", "I'd like をひとまとまりにし、品物を続け、最後に please を置きます。"),("Use Can I have plus the complete item, and put please before the question mark.", "Can I have の後ろに品物を続け、疑問符の前に please を置きます。")), prompt=("Order one thing, then ask me for one extra item.", "一つ注文し、追加でもう一つ頼んでください。"), partner=("Server", "Are you ready to order?", "Anything to drink?", "Great. I will bring that soon."), tip=("This one, please.", "これをお願いします", "for here or to go?", "店内ですか、持ち帰りですか")),
 23: dict(slug="two-cups-of-coffee", title="Two cups of coffee", ko="커피 두 잔", ja="コーヒーを2杯", goal=("Ask for an amount of something that is not counted directly.", "直接数えないものの量をたずねたり、頼んだりしましょう。"),
- p1=rows(("{t}Two cups of{/t} coffee, {t}please{/t}.", "コーヒーを{t}2杯お願いします{/t}。", "Two cups|of coffee,|please."),("{t}Two bottles of{/t} water, {t}please{/t}.", "水を{t}2本お願いします{/t}。", "Two bottles|of water,|please."),("{t}Two pieces of{/t} cake, {t}please{/t}.", "ケーキを{t}2切れお願いします{/t}。", "Two pieces|of cake,|please."),("{t}Two bowls of{/t} rice, {t}please{/t}.", "ご飯を{t}2杯お願いします{/t}。", "Two bowls|of rice,|please.")),
- p2=rows(("{t}How much{/t} rice {t}do we need{/t}?", "ご飯は{t}どのくらい必要ですか{/t}？", "How much|rice|do we|need?"),("{t}How much{/t} water {t}do we need{/t}?", "水は{t}どのくらい必要ですか{/t}？", "How much|water|do we|need?"),("{t}How much{/t} coffee {t}do we need{/t}?", "コーヒーは{t}どのくらい必要ですか{/t}？", "How much|coffee|do we|need?"),("{t}How much{/t} time {t}do we need{/t}?", "時間は{t}どのくらい必要ですか{/t}？", "How much|time|do we|need?")),
+ p1=rows(("{t}Two cups of{/t} coffee, please.", "コーヒーを{t}2杯お願いします{/t}。", "Two cups|of coffee,|please."),("{t}Two bottles of{/t} water, please.", "水を{t}2本お願いします{/t}。", "Two bottles|of water,|please."),("{t}Two pieces of{/t} cake, please.", "ケーキを{t}2切れお願いします{/t}。", "Two pieces|of cake,|please."),("{t}Two bowls of{/t} rice, please.", "ご飯を{t}2杯お願いします{/t}。", "Two bowls|of rice,|please.")),
+ p2=rows(("{t}How much{/t} rice {t}do we need{/t}?", "ご飯は{t}どのくらい{/t}{t}必要ですか{/t}？", "How much|rice|do we|need?"),("{t}How much{/t} water {t}do we need{/t}?", "水は{t}どのくらい{/t}{t}必要ですか{/t}？", "How much|water|do we|need?"),("{t}How much{/t} coffee {t}do we need{/t}?", "コーヒーは{t}どのくらい{/t}{t}必要ですか{/t}？", "How much|coffee|do we|need?"),("{t}How much{/t} time {t}do we need{/t}?", "時間は{t}どのくらい{/t}{t}必要ですか{/t}？", "How much|time|do we|need?")),
  rules=(("Count the container or piece, then keep of with the thing: two cups of coffee.", "容器や単位を数え、of と品物をつなげて two cups of coffee の形にします。"),("Use How much plus the non-count noun, then do we need?", "How much の後ろに直接数えない名詞を置き、最後に do we need? を続けます。")), prompt=("Plan drinks for two people and tell me how much we need.", "二人分の飲み物を考え、どのくらい必要か話してください。"), partner=("Clerk", "What can I get you?", "Would you like anything else?", "That will be twelve dollars."), tip=("a little", "少し", "a lot of", "たくさんの")),
 24: dict(slug="sorry-can-you-say-that-again", title="Sorry, can you say that again?", ko="죄송하지만 다시 말해 주시겠어요?", ja="すみません、もう一度言ってもらえますか？", goal=("Ask for repetition or slower speech without stopping the conversation.", "会話を止めずに、繰り返しやゆっくり話すことを頼みましょう。"),
- p1=rows(("Sorry, {t}can you say{/t} that {t}again{/t}?", "すみません、それを{t}もう一度言ってもらえますか{/t}？", "Sorry,|can you say|that|again?"),("Sorry, {t}can you say{/t} your name {t}again{/t}?", "すみません、名前を{t}もう一度言ってもらえますか{/t}？", "Sorry,|can you say|your name|again?"),("Sorry, {t}can you say{/t} the last part {t}again{/t}?", "すみません、最後の部分を{t}もう一度言ってもらえますか{/t}？", "Sorry,|can you say|the last part|again?"),("Sorry, {t}can you say{/t} 'shelf' {t}again{/t}?", "すみません、shelf を{t}もう一度言ってもらえますか{/t}？", "Sorry,|can you say|'shelf'|again?")),
+ p1=rows(("Sorry, {t}can you say{/t} that {t}again{/t}?", "すみません、それを{t}もう一度{/t}{t}言ってもらえますか{/t}？", "Sorry,|can you say|that|again?"),("Sorry, {t}can you say{/t} your name {t}again{/t}?", "すみません、名前を{t}もう一度{/t}{t}言ってもらえますか{/t}？", "Sorry,|can you say|your name|again?"),("Sorry, {t}can you say{/t} the last part {t}again{/t}?", "すみません、最後の部分を{t}もう一度{/t}{t}言ってもらえますか{/t}？", "Sorry,|can you say|the last part|again?"),("Sorry, {t}can you say{/t} 'shelf' {t}again{/t}?", "すみません、shelf を{t}もう一度{/t}{t}言ってもらえますか{/t}？", "Sorry,|can you say|'shelf'|again?")),
  p2=rows(("{t}Can you speak{/t} more slowly?", "もう少しゆっくり{t}話してもらえますか{/t}？", "Can you|speak|more|slowly?"),("{t}Can you speak{/t} more clearly?", "もう少しはっきり{t}話してもらえますか{/t}？", "Can you|speak|more|clearly?"),("{t}Can you speak{/t} a little louder?", "もう少し大きな声で{t}話してもらえますか{/t}？", "Can you|speak|a little|louder?"),("{t}Can you speak{/t} more slowly, please?", "もう少しゆっくり{t}話してもらえますか{/t}？", "Can you|speak|more slowly,|please?")),
  rules=(("Use Can you say plus the missing detail, then put again at the end.", "Can you say の後ろに聞きたい内容を置き、最後に again を置きます。"),("Use Can you speak plus the change you need, such as more slowly.", "Can you speak の後ろに、more slowly のような必要な話し方を置きます。")), prompt=("Stop me naturally if you do not understand my next sentence.", "次の文が分からなければ、自然に私を止めてください。"), partner=("Staff", "The next train leaves from platform thirteen.", "Of course: platform one-three.", "Yes, that is right."), tip=("I didn't catch that.", "聞き取れませんでした", "a little louder", "もう少し大きな声で")),
 }
+
+# CORE-20 is the approved hand-edited pilot used as this generator's shell.
+# It remains in the course inventory, but it is intentionally not generated.
+GENERATED_LESSONS = tuple(number for number in LESSONS if number != 20)
 
 PARTNER_JA = {
 "What time do you normally start?":"ふだん何時に始めますか？","And when do you usually finish?":"では、ふだん何時に終わりますか？","That is a long day.":"長い一日ですね。",
@@ -137,18 +141,18 @@ DIALOGUES = {
 }
 
 VOCAB = {
-12:("finish work|仕事を終える; eat lunch|昼食をとる; have dinner|夕食をとる; around|〜ごろ","start work|仕事を始める; usually|ふだん",""),
+12:("finish work|仕事を終える; eat lunch|昼食をとる; have dinner|夕食をとる; around|〜ごろ","start work|仕事を始める; usually|ふだん; eight|8時; nine|9時; ten|10時; eleven|11時",""),
 13:("habit|習慣; exercise|運動する","coffee|コーヒー; cook|料理する; weekend|週末; work|働く; every morning|毎朝; not very often|あまり頻繁に; every weekend|毎週末; on weekends|週末に","routine|日課"),
-14:("instead|その代わり; drive|運転する","train|電車; breakfast|朝食; water|水",""),
-15:("downtown|中心街; nearby|近くに","work|働く; live|住む; study|勉強する","fit|合うこと"),
-16:("get up|起きる; get home|帰宅する","time|時刻; lunch|昼食; usually|ふだん","schedule|予定"),
-17:("twice|2回; once|1回","week|週; month|月; year|年; exercise|運動する","frequency|頻度"),
-18:("ability|能力; ride|乗る; bake|焼く","drive|運転する; swim|泳ぐ; cook|料理する",""),
-19:("price|値段; expensive|高い","ticket|チケット; bag|かばん; coffee|コーヒー","dollar|ドル"),
-21:("permission|許可; fitting room|試着室","photo|写真; sit|座る; use|使う","take your time|ごゆっくり"),
-22:("receipt|レシート; to go|持ち帰り","chicken|チキン; soup|スープ; menu|メニュー","for here|店内で"),
-23:("bottle|ボトル; piece|一切れ; bowl|茶碗","coffee|コーヒー; water|水; rice|ご飯","container|容器"),
-24:("repeat|繰り返す; clearly|はっきり; louder|より大きな声で","name|名前; platform|ホーム; slowly|ゆっくり","catch|聞き取る"),
+14:("instead|その代わり; drive|運転する","the train|電車; breakfast|朝食; coffee|コーヒー; on Saturday|土曜日に; on Sundays|日曜日に; tea|お茶; water|水",""),
+15:("downtown|中心街; nearby|近くに","work|働く; live|住む; study|勉強する; cook|料理する; like|好き; there|そこで; English|英語; often|よく; at night|夜に; at home|家で","fit|合うこと"),
+16:("get up|起きる; get home|帰宅する","time|時刻; lunch|昼食; usually|ふだん; start work|仕事を始める; have lunch|昼食をとる; work|働く; exercise|運動する; study|勉強する","schedule|予定"),
+17:("twice|2回; once|1回; three times|3回; four times|4回","week|週; month|月; year|年; exercise|運動する; cook|料理する; travel|旅行する; call home|家に電話する","frequency|頻度"),
+18:("ability|能力; ride|乗る; bake|焼く; ride a bike|自転車に乗る","drive|運転する; swim|泳ぐ; cook|料理する; ski|スキーをする; walk|歩く; write|書く",""),
+19:("price|値段; expensive|高い","ticket|チケット; bag|かばん; coffee|コーヒー; this one|これ; fifteen|15; fifty|50; thirteen|13; thirty|30; fourteen|14; forty|40; sixteen|16; sixty|60","dollar|ドル"),
+21:("permission|許可; fitting room|試着室; try this on|試着する; sit here|ここに座る; take a photo|写真を撮る; use this|これを使う; try it on|試着する","photo|写真; sit|座る; use|使う","take your time|ごゆっくり"),
+22:("receipt|レシート; to go|持ち帰り; a receipt|レシート; a ticket|チケット; a coffee|コーヒー; some water|水","the chicken|チキン; the soup|スープ; this one|これ; the menu|メニュー","for here|店内で"),
+23:("bottle|ボトル; piece|一切れ; bowl|茶碗; bottles|本; pieces|切れ; bowls|杯; cups|杯; cake|ケーキ","coffee|コーヒー; water|水; rice|ご飯; time|時間","container|容器"),
+24:("repeat|繰り返す; clearly|はっきり; louder|より大きな声で; that|それ; your name|名前; the last part|最後の部分; shelf|shelf; please|お願いします","name|名前; platform|ホーム; slowly|ゆっくり","catch|聞き取る"),
 }
 
 # These fields are deliberately authored, not inferred from the model sentences.
@@ -177,100 +181,173 @@ CANONICAL_SPECS = {
 ),
 14: dict(
  meanings=(("Use this to say that something is not part of your routine.", "あることをふだんしないと伝えるときに使います。"), ("Use this to name the alternative you choose.", "代わりに選ぶことを伝えるときに使います。")),
- writes=(("Write one thing you do not normally do.", "ふだんしないことを一つ書きましょう。"), ("Write what you do instead.", "その代わりにすることを書きましょう。")),
+ writes=(("Now use “I don’t ___” to tell me one thing you do not normally do.", "では、「I don’t ___」を使って、ふだんしないことを一つ教えてください。"), ("Now use “I ___ instead” to tell me what you do instead.", "では、「I ___ instead」を使って、その代わりにすることを教えてください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("Habits you changed", "変えた習慣"),
+ role_ja="同僚",
+ translate_hints=(
+  (("運転する", "drive"), ("朝ごはん", "breakfast"), ("日曜日", "on Sundays"), ("お茶", "tea")),
+  (("電車", "the train"), ("コーヒー", "coffee"), ("土曜日", "on Saturday"), ("水", "water")),
+ ),
  choices=(
-  (("車で通勤{t}しません{/t}。", "I ", "don't", "doesn't", " drive to work."), ("朝ごはんを{t}食べません{/t}。", "I ", "don't", "doesn't", " eat breakfast."), ("日曜日は{t}働きません{/t}。", "I ", "don't", "doesn't", " work on Sundays."), ("お茶は{t}飲みません{/t}。", "I ", "don't", "doesn't", " drink tea.")),
-  (("{t}その代わり{/t}電車に乗ります。", "I take the train ", "instead", "too", "."), ("{t}その代わり{/t}コーヒーを飲みます。", "I have coffee ", "instead", "too", "."), ("{t}その代わり{/t}土曜日に働きます。", "I work on Saturday ", "instead", "too", "."), ("{t}その代わり{/t}水を飲みます。", "I drink water ", "instead", "too", ".")),
+  (("私は車で通勤{t}しません{/t}。", "I ", "don't", "doesn't", " drive to work."), ("彼女は朝ごはんを{t}食べません{/t}。", "She ", "doesn't", "don't", " eat breakfast."), ("私は日曜日は{t}働きません{/t}。", "I ", "don't", "doesn't", " work on Sundays."), ("彼はお茶を{t}飲みません{/t}。", "He ", "doesn't", "don't", " drink tea.")),
+  (("{t}その代わり{/t}電車に乗ります。", "I take the train ", "instead", "too", "."), ("コーヒー{t}も{/t}飲みます。", "I have coffee ", "too", "instead", "."), ("{t}その代わり{/t}土曜日に働きます。", "I work on Saturday ", "instead", "too", "."), ("水{t}も{/t}飲みます。", "I drink water ", "too", "instead", ".")),
  ),
  rules=(("Put don't before the action", "動作の前に don't", "I + <b>don't</b> + 動詞の原形", "Negative routine", "しない習慣", ("I <b>don't drive</b> to work.", "I <b>don't eat</b> breakfast.")), ("Put instead after the alternative", "代わりの行動の後ろに instead", "代わりの行動 + <b>instead</b>", "Chosen alternative", "代わりに選ぶこと", ("I take the train <b>instead</b>.", "I drink water <b>instead</b>."))),
  tip=("Don't or don't usually?", "don't と don't usually", "Use “don't” for a general no. Add “usually” when there are exceptions.", "基本的にしないなら「don't」を使います。例外があるなら「don't usually」を使います。", ("General no", "基本的にしない", "I don't drive to work.", "車で通勤しません。"), ("There are exceptions", "例外がある", "I don't usually drive to work.", "ふだんは車で通勤しません。")),
 ),
 15: dict(
  meanings=(("Use this to say what another person regularly does.", "ほかの人がふだん何をするか伝えるときに使います。"), ("Use this to ask a follow-up question about that person.", "その人について続けて質問するときに使います。")),
- writes=(("Write one true sentence about someone you know.", "知っている人について本当の文を一つ書きましょう。"), ("Ask one follow-up question about that person.", "その人について続けて質問を一つ作りましょう。")),
+ writes=(("Now use “She / He + verb-s” to tell me one true thing about someone you know.", "では、「She / He + verb-s」を使って、知っている人について本当のことを一つ教えてください。"), ("Now use “Does she / he ___?” to ask one follow-up question about that person.", "では、「Does she / he ___?」を使って、その人について続けて一つ質問してください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("Interesting family routines", "家族の面白い習慣"),
+ role_ja="友達",
+ translate_hints=(
+  (("中心街", "downtown"), ("近くに", "nearby"), ("夜に", "at night"), ("家で", "at home")),
+  (("好き", "like"), ("そこで", "there"), ("英語", "English"), ("よく", "often")),
+ ),
+ fill_hints=((("働く", "work"), ("住む", "live"), ("勉強する", "study"), ("料理する", "cook")), None),
  choices=(
-  (("彼女は中心街で{t}働いています{/t}。", "She ", "works", "work", " downtown."), ("彼は近くに{t}住んでいます{/t}。", "He ", "lives", "live", " nearby."), ("彼女は夜に{t}勉強します{/t}。", "She ", "studies", "study", " at night."), ("彼は家で{t}料理します{/t}。", "He ", "cooks", "cook", " at home.")),
-  (("彼女はそこが{t}好きですか{/t}？", "", "Does", "Do", " she like it?"), ("彼はそこで{t}働いていますか{/t}？", "", "Does", "Do", " he work there?"), ("彼女は英語を{t}勉強しますか{/t}？", "", "Does", "Do", " she study English?"), ("彼はよく{t}料理しますか{/t}？", "", "Does", "Do", " he cook often?")),
+  (("彼女は中心街で{t}働いています{/t}。", "She ", "works", "work", " downtown."), ("私は近くに{t}住んでいます{/t}。", "I ", "live", "lives", " nearby."), ("彼女は夜に{t}勉強します{/t}。", "She ", "studies", "study", " at night."), ("私は家で{t}料理します{/t}。", "I ", "cook", "cooks", " at home.")),
+  (("彼女はそこが{t}好きですか{/t}？", "", "Does", "Do", " she like it?"), ("彼らはそこで{t}働いていますか{/t}？", "", "Do", "Does", " they work there?"), ("彼女は英語を{t}勉強しますか{/t}？", "", "Does", "Do", " she study English?"), ("あなたたちはよく{t}料理しますか{/t}？", "", "Do", "Does", " you cook often?")),
  ),
  rules=(("Change the verb with he or she", "he・she では動詞を変える", "he / she + 動詞<b>-s</b>", "Third-person routine", "ほかの人の習慣", ("She <b>works</b> downtown.", "He <b>lives</b> nearby.")), ("Use does, then the plain verb", "does の後ろは動詞の原形", "<b>Does</b> + he / she + 動詞の原形 + ...?", "Third-person question", "ほかの人への質問", ("<b>Does</b> she <b>like</b> it?", "<b>Does</b> he <b>work</b> there?"))),
  tip=("She works or she's working?", "She works と She's working", "Use the simple present for a regular situation and the -ing form for now or a temporary situation.", "ふだんのことには現在形、今または一時的なことには -ing 形を使います。", ("Regular situation", "ふだんのこと", "She works downtown.", "彼女は中心街で働いています。"), ("Now or temporary", "今・一時的", "She's working downtown this week.", "今週は中心街で働いています。")),
 ),
 16: dict(
  meanings=(("Use this to ask for the clock time of a routine.", "日課の時刻をたずねるときに使います。"), ("Use this to ask for the usual place of a routine.", "日課をふだん行う場所をたずねるときに使います。")),
- writes=(("Ask for the time of one real routine.", "実際の日課を一つ選び、その時刻をたずねましょう。"), ("Ask where one routine usually happens.", "日課を一つ選び、ふだんどこでするかたずねましょう。")),
+ writes=(("Now use “What time do you ___?” to ask me about one real routine.", "では、「What time do you ___?」を使って、実際の日課の時刻を一つ私に聞いてください。"), ("Now use “Where do you usually ___?” to ask me where one routine happens.", "では、「Where do you usually ___?」を使って、日課をふだんどこでするか私に聞いてください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("A schedule you would change", "変えたい予定"),
+ role_ja="同僚",
+ translate_hints=(
+  (("起きる", "get up"), ("仕事を始める", "start work"), ("昼食をとる", "have lunch"), ("帰宅する", "get home")),
+  (("昼食をとる", "have lunch"), ("働く", "work"), ("運動する", "exercise"), ("勉強する", "study")),
+ ),
  choices=(
-  (("{t}何時に{/t}起きますか？", "", "What time", "How often", " do you get up?"), ("{t}何時に{/t}仕事を始めますか？", "", "What time", "How often", " do you start work?"), ("{t}何時に{/t}昼食をとりますか？", "", "What time", "How often", " do you have lunch?"), ("{t}何時に{/t}帰宅しますか？", "", "What time", "How often", " do you get home?")),
-  (("ふだん{t}どこで{/t}昼食をとりますか？", "", "Where", "When", " do you usually have lunch?"), ("ふだん{t}どこで{/t}働きますか？", "", "Where", "When", " do you usually work?"), ("ふだん{t}どこで{/t}運動しますか？", "", "Where", "When", " do you usually exercise?"), ("ふだん{t}どこで{/t}勉強しますか？", "", "Where", "When", " do you usually study?")),
+  (("{t}何時に{/t}起きますか？", "", "What time", "How often", " do you get up?"), ("{t}どのくらいの頻度で{/t}運動しますか？", "", "How often", "What time", " do you exercise?"), ("{t}何時に{/t}昼食をとりますか？", "", "What time", "How often", " do you have lunch?"), ("{t}どのくらいの頻度で{/t}旅行しますか？", "", "How often", "What time", " do you travel?")),
+  (("ふだん{t}どこで{/t}昼食をとりますか？", "", "Where", "When", " do you usually have lunch?"), ("ふだん{t}いつ{/t}運動しますか？", "", "When", "Where", " do you usually exercise?"), ("ふだん{t}どこで{/t}働きますか？", "", "Where", "When", " do you usually work?"), ("ふだん{t}いつ{/t}勉強しますか？", "", "When", "Where", " do you usually study?")),
  ),
  rules=(("Start with What time", "What time から始める", "<b>What time</b> + do you + 動作 + ?", "Ask for a clock time", "時刻をたずねる", ("<b>What time do you</b> get up?", "<b>What time do you</b> start work?")), ("Start with Where", "Where から始める", "<b>Where</b> + do you + usually + 動作 + ?", "Ask for the usual place", "ふだんの場所をたずねる", ("<b>Where do you usually</b> have lunch?", "<b>Where do you usually</b> work?"))),
  tip=("What time or when?", "What time と when", "Use “What time” when you want a clock time. “When” can invite a broader answer.", "時計の時刻を知りたいなら「What time」を使います。「When」はもっと幅広い答えにも使えます。", ("Clock time", "時計の時刻", "What time do you get up?", "何時に起きますか？"), ("Broader time", "幅広い時", "When do you exercise?", "いつ運動しますか？")),
 ),
 17: dict(
  meanings=(("Use this to ask about frequency, not a clock time.", "時刻ではなく頻度をたずねるときに使います。"), ("Use this to give an approximate number of times per period.", "一定の期間あたりのおおよその回数を答えるときに使います。")),
- writes=(("Ask how often one real activity happens.", "実際の活動を一つ選び、頻度をたずねましょう。"), ("Give a true approximate frequency for one activity.", "活動を一つ選び、本当のおおよその頻度を答えましょう。")),
+ writes=(("Now use “How often do you ___?” to ask me about one real activity.", "では、「How often do you ___?」を使って、実際の活動の頻度を一つ私に聞いてください。"), ("Now use “About ___ times a ___” to give one true approximate frequency.", "では、「About ___ times a ___」を使って、本当のおおよその頻度を一つ答えてください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("Something you want to do more", "もっとしたいこと"),
+ role_ja="友達",
+ translate_hints=(
+  (("運動する", "exercise"), ("料理する", "cook"), ("旅行する", "travel"), ("家に電話する", "call home")),
+  (("2回", "twice"), ("3回", "three times"), ("1回", "once"), ("4回", "four times")),
+ ),
+ fill_hints=(None, (("週", "week"), ("月", "month"), ("年", "year"), ("週", "week"))),
  choices=(
-  (("{t}どのくらいの頻度で{/t}運動しますか？", "", "How often", "What time", " do you exercise?"), ("{t}どのくらいの頻度で{/t}料理しますか？", "", "How often", "What time", " do you cook?"), ("{t}どのくらいの頻度で{/t}旅行しますか？", "", "How often", "What time", " do you travel?"), ("{t}どのくらいの頻度で{/t}家に電話しますか？", "", "How often", "What time", " do you call home?")),
-  (("だいたい週{t}2回{/t}です。", "About ", "twice", "two", " a week."), ("だいたい月{t}3回{/t}です。", "About ", "three times", "three time", " a month."), ("だいたい年{t}1回{/t}です。", "About ", "once", "one", " a year."), ("だいたい週{t}4回{/t}です。", "About ", "four times", "four time", " a week.")),
+  (("{t}どのくらいの頻度で{/t}運動しますか？", "", "How often", "What time", " do you exercise?"), ("{t}何時に{/t}料理しますか？", "", "What time", "How often", " do you cook?"), ("{t}どのくらいの頻度で{/t}旅行しますか？", "", "How often", "What time", " do you travel?"), ("{t}何時に{/t}家に電話しますか？", "", "What time", "How often", " do you call home?")),
+  (("だいたい週{t}2回{/t}です。", "About ", "twice", "once", " a week."), ("だいたい週{t}1回{/t}です。", "About ", "once", "twice", " a week."), ("だいたい月{t}2回{/t}です。", "About ", "twice", "once", " a month."), ("だいたい月{t}1回{/t}です。", "About ", "once", "twice", " a month.")),
  ),
  rules=(("Start with How often", "How often から始める", "<b>How often</b> + do you + 動作 + ?", "Ask about frequency", "頻度をたずねる", ("<b>How often do you</b> exercise?", "<b>How often do you</b> cook?")), ("Build the frequency phrase", "頻度のまとまりを作る", "回数 + <b>a</b> + week / month / year", "Times per period", "期間あたりの回数", ("<b>twice a week</b>", "<b>three times a month</b>"))),
  tip=("Twice or a couple of times?", "twice と a couple of times", "Use “twice” for exactly two. “A couple of times” is often a more casual approximation.", "正確に2回なら「twice」を使います。会話でおおよそ2回なら「a couple of times」も使えます。", ("Exact", "正確", "I exercise twice a week.", "週に2回運動します。"), ("Casual estimate", "会話でのおおよそ", "I exercise a couple of times a week.", "週に2回くらい運動します。")),
 ),
 18: dict(
  meanings=(("Use this to ask whether someone has an ability.", "あることができるかたずねるときに使います。"), ("Use this to contrast one ability with something you cannot do.", "できることと、できないことを対比するときに使います。")),
- writes=(("Ask about one ability you want to know.", "知りたい能力について一つたずねましょう。"), ("Contrast one thing you can do with one thing you cannot do.", "できることと、できないことを一つずつ対比しましょう。")),
+ writes=(("Now use “Can you ___?” to ask me about one ability you want to know.", "では、「Can you ___?」を使って、知りたい能力を一つ私に聞いてください。"), ("Now use “I can ___, but I can’t ___” to contrast two real abilities.", "では、「I can ___, but I can’t ___」を使って、本当のできることとできないことを対比してください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("A skill you want to learn", "身につけたいスキル"),
+ role_ja="友達",
+ translate_hints=(
+  (("運転する", "drive"), ("泳ぐ", "swim"), ("料理する", "cook"), ("スキーをする", "ski")),
+  (("自転車に乗る", "ride a bike"), ("歩く", "walk"), ("お菓子を作る", "bake"), ("書く", "write")),
+ ),
  choices=(
-  (("運転{t}できますか{/t}？", "", "Can", "Do", " you drive?"), ("泳ぐことが{t}できますか{/t}？", "", "Can", "Do", " you swim?"), ("料理が{t}できますか{/t}？", "", "Can", "Do", " you cook?"), ("スキーが{t}できますか{/t}？", "", "Can", "Do", " you ski?")),
-  (("自転車には乗れますが、運転は{t}できません{/t}。", "I can ride a bike, but I ", "can't", "can", " drive."), ("歩くことはできますが、走ることは{t}できません{/t}。", "I can walk, but I ", "can't", "can", " run."), ("料理はできますが、お菓子作りは{t}できません{/t}。", "I can cook, but I ", "can't", "can", " bake."), ("読むことはできますが、書くことは{t}できません{/t}。", "I can read it, but I ", "can't", "can", " write it.")),
+  (("運転{t}できますか{/t}？", "", "Can", "Do", " you drive?"), ("毎日運転{t}しますか{/t}？", "", "Do", "Can", " you drive every day?"), ("料理が{t}できますか{/t}？", "", "Can", "Do", " you cook?"), ("週末に料理{t}しますか{/t}？", "", "Do", "Can", " you cook on weekends?")),
+  (("自転車には乗れますが、運転は{t}できません{/t}。", "I can ride a bike, but I ", "can't", "can", " drive."), ("歩くことも走ることも{t}できます{/t}。", "I can walk, and I ", "can", "can't", " run."), ("料理はできますが、お菓子作りは{t}できません{/t}。", "I can cook, but I ", "can't", "can", " bake."), ("読むことも書くことも{t}できます{/t}。", "I can read it, and I ", "can", "can't", " write it.")),
  ),
  rules=(("Put a plain verb after can", "can の後ろは動詞の原形", "<b>Can</b> + you + 動詞の原形 + ?", "Ability question", "できるかの質問", ("<b>Can you drive</b>?", "<b>Can you swim</b>?")), ("Contrast can and can't", "can と can't を対比する", "I <b>can</b> + 動作, but I <b>can't</b> + 動作", "Two abilities", "二つのできること", ("I <b>can</b> walk, but I <b>can't</b> run.", "I <b>can</b> cook, but I <b>can't</b> bake."))),
  tip=("Can't or can't yet?", "can't と can't yet", "Add “yet” when you expect or hope the ability may come later.", "今後できるようになる可能性や希望があるなら「yet」を加えます。", ("General inability", "一般的にできない", "I can't drive.", "運転できません。"), ("Maybe later", "今後はできるかも", "I can't drive yet.", "まだ運転できません。")),
 ),
 19: dict(
  meanings=(("Use this to ask the price of one item.", "一つの品物の値段をたずねるときに使います。"), ("Use this to check which of two similar numbers you heard.", "似た二つの数字のどちらを聞いたか確認するときに使います。")),
- writes=(("Ask the price of one item you can see.", "見える品物を一つ選び、値段をたずねましょう。"), ("Check two similar numbers that could be misheard.", "聞き間違えそうな二つの数字を使って確認しましょう。")),
+ writes=(("Now use “How much is ___?” to ask me the price of one item you can see.", "では、「How much is ___?」を使って、見える品物の値段を一つ私に聞いてください。"), ("Now use “Is that ___ or ___?” to check two similar numbers.", "では、「Is that ___ or ___?」を使って、似た二つの数字を確認してください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("Something worth the price", "値段に見合ったもの"),
+ role_ja="店員",
+ translate_hints=(
+  (("これ", "this one"), ("かばん", "bag"), ("チケット", "ticket"), ("コーヒー", "coffee")),
+  ((("15", "fifteen"), ("50", "fifty")), (("13", "thirteen"), ("30", "thirty")), (("14", "fourteen"), ("40", "forty")), (("16", "sixteen"), ("60", "sixty"))),
+ ),
  choices=(
-  (("これは{t}いくらですか{/t}？", "How ", "much", "many", " is this one?"), ("あのかばんは{t}いくらですか{/t}？", "How ", "much", "many", " is that bag?"), ("そのチケットは{t}いくらですか{/t}？", "How ", "much", "many", " is the ticket?"), ("コーヒーは{t}いくらですか{/t}？", "How ", "much", "many", " is a coffee?")),
-  (("それは15{t}ですか、それとも{/t}50ですか？", "Is that fifteen ", "or", "and", " fifty?"), ("それは13{t}ですか、それとも{/t}30ですか？", "Is that thirteen ", "or", "and", " thirty?"), ("それは14{t}ですか、それとも{/t}40ですか？", "Is that fourteen ", "or", "and", " forty?"), ("それは16{t}ですか、それとも{/t}60ですか？", "Is that sixteen ", "or", "and", " sixty?")),
+  (("これは{t}いくらですか{/t}？", "How ", "much", "many", " is this one?"), ("りんごは{t}いくつありますか{/t}？", "How ", "many", "much", " apples are there?"), ("そのチケットは{t}いくらですか{/t}？", "How ", "much", "many", " is the ticket?"), ("チケットは{t}何枚必要ですか{/t}？", "How ", "many", "much", " tickets do we need?")),
+  (("それは15{t}ですか、それとも{/t}50ですか？", "Is that fifteen ", "or", "and", " fifty?"), ("値段は30ドル{t}と{/t}40ドルです。", "The prices are thirty ", "and", "or", " forty dollars."), ("それは14{t}ですか、それとも{/t}40ですか？", "Is that fourteen ", "or", "and", " forty?"), ("13{t}と{/t}30を書いてください。", "Please write thirteen ", "and", "or", " thirty.")),
  ),
  rules=(("Use How much is with one item", "一つの品物には How much is", "<b>How much is</b> + 品物 + ?", "Ask a price", "値段をたずねる", ("<b>How much is</b> this one?", "<b>How much is</b> the ticket?")), ("Put or between the two numbers", "二つの数字の間に or", "Is that + X + <b>or</b> + Y + ?", "Check what you heard", "聞いた数字を確認する", ("Is that fifteen <b>or</b> fifty?", "Is that thirteen <b>or</b> thirty?"))),
  tip=("This or this one?", "this と this one", "Use “this one” when you are choosing among visible options. Plain “this” is enough when the item is already clear.", "見えている選択肢から選ぶなら「this one」を使います。品物が明らかなら「this」だけでも十分です。", ("Item is clear", "品物が明らか", "How much is this?", "これはいくらですか？"), ("Choosing among options", "選択肢から選ぶ", "How much is this one?", "これはいくらですか？")),
 ),
 21: dict(
  meanings=(("Use this to ask permission for yourself.", "自分がしてもよいか許可を求めるときに使います。"), ("Use this to give the other person permission.", "相手に許可を与えるときに使います。")),
- writes=(("Ask permission for one thing you might do in this room.", "この部屋でするかもしれないことの許可を一つ求めましょう。"), ("Give or refuse permission for one action.", "一つの行動について、許可するか断る答えを作りましょう。")),
+ writes=(("Now use “Can I ___?” to ask permission for one thing you might do here.", "では、「Can I ___?」を使って、ここでするかもしれないことの許可を一つ求めてください。"), ("Now answer “Can I take a photo?” with “Sure, you can” or a polite refusal.", "では、「Can I take a photo?」に「Sure, you can」か丁寧な断り方で答えてください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("When to ask permission", "許可を求める場面"),
+ role_ja="友達",
+ translate_hints=(
+  (("試着する", "try this on"), ("ここに座る", "sit here"), ("写真を撮る", "take a photo"), ("これを使う", "use this")),
+  (("写真を撮る", "take a photo"), ("ここに座る", "sit here"), ("これを使う", "use this"), ("試着する", "try it on")),
+ ),
  choices=(
-  (("これを試着{t}してもいいですか{/t}？", "", "Can", "Do", " I try this on?"), ("ここに座っても{t}いいですか{/t}？", "", "Can", "Do", " I sit here?"), ("写真を撮っても{t}いいですか{/t}？", "", "Can", "Do", " I take a photo?"), ("これを使っても{t}いいですか{/t}？", "", "Can", "Do", " I use this?")),
-  (("もちろん、写真を撮って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " take a photo."), ("もちろん、ここに座って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " sit here."), ("もちろん、これを使って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " use this."), ("もちろん、試着して{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " try it on.")),
+  (("これを試着{t}してもいいですか{/t}？", "", "Can I", "Do you", " try this on?"), ("ふだんここで試着{t}しますか{/t}？", "", "Do you", "Can I", " usually try things on here?"), ("写真を撮っても{t}いいですか{/t}？", "", "Can I", "Do you", " take a photo?"), ("ここで支払いを{t}しますか{/t}？", "", "Do you", "Can I", " pay here?")),
+  (("もちろん、写真を撮って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " take a photo."), ("すみません、ここでは写真を撮っては{t}いけません{/t}。", "Sorry, you ", "can't", "can", " take photos here."), ("もちろん、これを使って{t}いいですよ{/t}。", "Sure, you ", "can", "can't", " use this."), ("すみません、ここには座っては{t}いけません{/t}。", "Sorry, you ", "can't", "can", " sit here.")),
  ),
  rules=(("Use Can I for your permission", "自分の許可には Can I", "<b>Can I</b> + 動詞の原形 + ...?", "Ask permission", "許可を求める", ("<b>Can I</b> try this on?", "<b>Can I</b> sit here?")), ("Use you can to give permission", "許可を与えるなら you can", "Sure, + you <b>can</b> + 動詞の原形", "Give permission", "許可を与える", ("Sure, you <b>can</b> take a photo.", "Sure, you <b>can</b> sit here."))),
  tip=("Can I or could I?", "Can I と Could I", "Both ask permission. “Could I” can sound a little more polite or tentative.", "どちらも許可を求めます。「Could I」は少し丁寧で控えめに聞こえます。", ("Neutral", "ふつう", "Can I try this on?", "これを試着してもいいですか？"), ("More tentative", "少し控えめ", "Could I try this on?", "これを試着してもよろしいですか？")),
 ),
 22: dict(
  meanings=(("Use this to state your order politely.", "注文を丁寧に伝えるときに使います。"), ("Use this to ask for an item politely.", "品物を丁寧に頼むときに使います。")),
- writes=(("Choose one item and order it politely.", "品物を一つ選び、丁寧に注文しましょう。"), ("Ask for one extra item you might need.", "必要になりそうな追加の品物を一つ頼みましょう。")),
+ writes=(("Now use “I’d like ___, please” to order one thing you would really choose.", "では、「I’d like ___, please」を使って、本当に選びたいものを一つ注文してください。"), ("Now use “Can I have ___, please?” to ask for one extra item.", "では、「Can I have ___, please?」を使って、追加の品物を一つ頼んでください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("Your favorite order", "好きな注文"),
+ role_ja="店員",
+ translate_hints=(
+  (("チキン", "the chicken"), ("スープ", "the soup"), ("これ", "this one"), ("チケット", "a ticket")),
+  (("コーヒー", "a coffee"), ("水", "some water"), ("メニュー", "the menu"), ("レシート", "a receipt")),
+ ),
  choices=(
-  (("チキンを{t}お願いします{/t}。", "", "I'd", "I", " like the chicken, please."), ("スープを{t}お願いします{/t}。", "", "I'd", "I", " like the soup, please."), ("これを{t}お願いします{/t}。", "", "I'd", "I", " like this one, please."), ("チケットを1枚{t}お願いします{/t}。", "", "I'd", "I", " like a ticket, please.")),
-  (("コーヒーを{t}いただけますか{/t}？", "", "Can", "Do", " I have a coffee, please?"), ("お水を{t}いただけますか{/t}？", "", "Can", "Do", " I have some water, please?"), ("メニューを{t}いただけますか{/t}？", "", "Can", "Do", " I have the menu, please?"), ("レシートを{t}いただけますか{/t}？", "", "Can", "Do", " I have a receipt, please?")),
+  (("チキンを{t}お願いします{/t}。", "", "I'd like", "I'll have", " the chicken, please."), ("スープに{t}します{/t}。", "", "I'll have", "I'd like", " the soup, please."), ("これを{t}お願いします{/t}。", "", "I'd like", "I'll have", " this one, please."), ("チケットを1枚に{t}します{/t}。", "", "I'll have", "I'd like", " a ticket, please.")),
+  (("コーヒーを{t}いただけますか{/t}？", "", "Can I have", "Do you have", " a coffee, please?"), ("コーヒーは{t}ありますか{/t}？", "", "Do you have", "Can I have", " coffee?"), ("メニューを{t}いただけますか{/t}？", "", "Can I have", "Do you have", " the menu, please?"), ("レシートは{t}ありますか{/t}？", "", "Do you have", "Can I have", " a receipt?")),
  ),
  rules=(("Keep I'd like together", "I'd like をひとまとまりに", "<b>I'd like</b> + 品物 + please.", "State an order", "注文を伝える", ("<b>I'd like</b> the chicken, please.", "<b>I'd like</b> a ticket, please.")), ("Use Can I have before the item", "品物の前に Can I have", "<b>Can I have</b> + 品物 + please?", "Ask for an item", "品物を頼む", ("<b>Can I have</b> a coffee, please?", "<b>Can I have</b> the menu, please?"))),
  tip=("I'd like or I'll have?", "I'd like と I'll have", "Both are natural orders. “I'd like” is gently polite; “I'll have” sounds confident once you have decided.", "どちらも自然な注文です。「I'd like」はやわらかく丁寧で、「I'll have」は決めた後のはっきりした言い方です。", ("Gently polite", "やわらかく丁寧", "I'd like the chicken, please.", "チキンをお願いします。"), ("Decision made", "注文を決めた", "I'll have the chicken, please.", "チキンにします。")),
 ),
 23: dict(
  meanings=(("Use a container or piece word to count food and drink.", "容器や単位の語を使って食べ物や飲み物を数えるときに使います。"), ("Use this to ask the needed amount of a non-count noun.", "直接数えない名詞の必要量をたずねるときに使います。")),
- writes=(("Order a real amount of one food or drink.", "食べ物か飲み物を一つ選び、実際の量で注文しましょう。"), ("Ask how much of one thing you need.", "必要なものを一つ選び、どのくらい必要かたずねましょう。")),
+ writes=(("Now use “___ cups / bottles / pieces of ___, please” to order a real amount.", "では、「___ cups / bottles / pieces of ___, please」を使って、実際の量で注文してください。"), ("Now use “How much ___ do we need?” to ask about one amount.", "では、「How much ___ do we need?」を使って、一つの量をたずねてください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("Something you buy too much of", "買いすぎるもの"),
+ role_ja="友達",
+ translate_hints=(
+  (("コーヒー", "coffee"), ("水", "water"), ("ケーキ", "cake"), ("ご飯", "rice")),
+  (("ご飯", "rice"), ("水", "water"), ("コーヒー", "coffee"), ("時間", "time")),
+ ),
+ fill_hints=((("杯", "cups"), ("本", "bottles"), ("切れ", "pieces"), ("杯", "bowls")), None),
  choices=(
-  (("コーヒーを{t}2杯{/t}お願いします。", "Two ", "cups", "cup", " of coffee, please."), ("水を{t}2本{/t}お願いします。", "Two ", "bottles", "bottle", " of water, please."), ("ケーキを{t}2切れ{/t}お願いします。", "Two ", "pieces", "piece", " of cake, please."), ("ご飯を{t}2杯{/t}お願いします。", "Two ", "bowls", "bowl", " of rice, please.")),
-  (("ご飯は{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " rice do we need?"), ("水は{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " water do we need?"), ("コーヒーは{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " coffee do we need?"), ("時間は{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " time do we need?")),
+  (("コーヒーを{t}2杯{/t}お願いします。", "Two ", "cups", "cup", " of coffee, please."), ("水を{t}1本{/t}お願いします。", "One ", "bottle", "bottles", " of water, please."), ("ケーキを{t}2切れ{/t}お願いします。", "Two ", "pieces", "piece", " of cake, please."), ("ご飯を{t}1杯{/t}お願いします。", "One ", "bowl", "bowls", " of rice, please.")),
+  (("ご飯は{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " rice do we need?"), ("ボトルは{t}何本{/t}必要ですか？", "How ", "many", "much", " bottles do we need?"), ("コーヒーは{t}どのくらい{/t}必要ですか？", "How ", "much", "many", " coffee do we need?"), ("カップは{t}いくつ{/t}必要ですか？", "How ", "many", "much", " cups do we need?")),
  ),
  rules=(("Count the container, then add of", "容器を数えて of を加える", "数 + 容器<b>-s</b> + <b>of</b> + 品物", "Count by container", "容器で数える", ("two <b>cups of</b> coffee", "two <b>bottles of</b> water")), ("Use How much with a non-count noun", "直接数えない名詞には How much", "<b>How much</b> + 名詞 + do we need?", "Ask the amount", "量をたずねる", ("<b>How much</b> rice do we need?", "<b>How much</b> water do we need?"))),
  tip=("Could we get...?", "Could we get ...?", "In a shared order, “Could we get...?” is a natural, softer way to ask the server.", "みんなの注文では「Could we get ...?」が自然で、やわらかい頼み方です。", ("Short order", "短い注文", "Two cups of coffee, please.", "コーヒーを2杯お願いします。"), ("Shared polite request", "みんなで丁寧に頼む", "Could we get two cups of coffee?", "コーヒーを2杯いただけますか？")),
 ),
 24: dict(
  meanings=(("Use this when you need the same words repeated.", "同じ言葉をもう一度聞きたいときに使います。"), ("Use this when you need the speaker to change how they speak.", "相手に話し方を変えてほしいときに使います。")),
- writes=(("Ask for one detail to be repeated.", "聞き取れなかった情報を一つ、もう一度頼みましょう。"), ("Ask the speaker to change how they are speaking.", "相手に必要な話し方の変化を頼みましょう。")),
+ writes=(("Now use “Sorry, can you say ___ again?” to ask for one detail again.", "では、「Sorry, can you say ___ again?」を使って、聞き取れなかった情報をもう一度頼んでください。"), ("Now use “Can you speak more ___?” to ask for the change you need.", "では、「Can you speak more ___?」を使って、必要な話し方の変化を頼んでください。")),
+ freetalk=("Answer my question, then ask me too. Use today’s patterns only if they fit naturally.", "私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。"),
+ freetalk_title=("When listening is difficult", "聞き取りにくいとき"),
+ role_ja="係員",
+ translate_hints=(
+  (("それ", "that"), ("名前", "your name"), ("最後の部分", "the last part"), ("shelf", "shelf")),
+  (("ゆっくり", "slowly"), ("はっきり", "clearly"), ("大きな声で", "louder"), ("お願いします", "please")),
+ ),
  choices=(
-  (("すみません、それを{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say that ", "again", "yet", "?"), ("すみません、名前を{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say your name ", "again", "yet", "?"), ("すみません、最後の部分を{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say the last part ", "again", "yet", "?"), ("すみません、shelf を{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say 'shelf' ", "again", "yet", "?")),
-  (("もう少し{t}ゆっくり{/t}話してもらえますか？", "Can you speak more ", "slowly", "slow", "?"), ("もう少し{t}はっきり{/t}話してもらえますか？", "Can you speak more ", "clearly", "clear", "?"), ("もう少し{t}大きな声で{/t}話してもらえますか？", "Can you speak a little ", "louder", "loud", "?"), ("もう少し{t}ゆっくり{/t}話してもらえますか？", "Can you speak more ", "slowly", "slow", ", please?")),
+  (("すみません、それを{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say that ", "again", "yet", "?"), ("電車は{t}まだ{/t}来ていません。", "The train isn't here ", "yet", "again", "."), ("すみません、最後の部分を{t}もう一度{/t}言ってもらえますか？", "Sorry, can you say the last part ", "again", "yet", "?"), ("まだ答えが{t}出ていません{/t}。", "We don't have the answer ", "yet", "again", ".")),
+  (("もう少し{t}ゆっくり{/t}話してもらえますか？", "Can you speak more ", "slowly", "slow", "?"), ("その説明はとても{t}ゆっくりです{/t}。", "That explanation is very ", "slow", "slowly", "."), ("もう少し{t}はっきり{/t}話してもらえますか？", "Can you speak more ", "clearly", "clear", "?"), ("その説明はとても{t}明確です{/t}。", "That explanation is very ", "clear", "clearly", ".")),
  ),
  rules=(("Put again at the end", "最後に again", "Sorry, + can you say + 内容 + <b>again</b>?", "Ask for repetition", "繰り返しを頼む", ("Can you say that <b>again</b>?", "Can you say your name <b>again</b>?")), ("Name the change after speak", "speak の後ろに必要な変化", "Can you speak + more / a little + 話し方?", "Change how they speak", "話し方を変えてもらう", ("Can you speak more <b>slowly</b>?", "Can you speak a little <b>louder</b>?"))),
  tip=("Sorry? or a full request?", "Sorry? と文での頼み方", "A rising “Sorry?” is a quick casual request. Use the full sentence when you want to be especially clear.", "語尾を上げた「Sorry?」は短くカジュアルです。特にはっきり頼みたいなら文全体を使います。", ("Quick and casual", "短くカジュアル", "Sorry?", "もう一度お願いします。"), ("Clear request", "はっきり頼む", "Sorry, can you say that again?", "すみません、もう一度言ってもらえますか？")),
@@ -282,16 +359,16 @@ CANONICAL_SPECS = {
 # (kind, side, speaker, English or scaffold, Japanese or task).
 LIVE_SCENES = {
 13: (("text", "other", "Tutor", "What’s one everyday habit you’d like to change, and why?", "変えたい日常の習慣は何ですか？なぜですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What habit would you like to change?", "先生はどんな習慣を変えたいですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
-14: (("text", "other", "Tutor", "Do you drive to work?", "車で通勤しますか？"), ("input", "me", "Me", "I don't ___. I ___ instead.", "自分の本当の習慣"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: I don't ___. I ___ instead.", "先生の答え")),
-15: (("text", "other", "Tutor", "Tell me about someone you know.", "知っている人について教えてください。"), ("input", "me", "Me", "She / He ___.", "知っている人の本当の情報"), ("text", "other", "Tutor", "What would you like to ask about that person?", "その人について何を聞きたいですか？"), ("input", "me", "Me", "Does she / he ___?", "続けて聞きたい質問"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
-16: (("text", "other", "Tutor", "Ask me about my routine.", "私の日課についてたずねてください。"), ("input", "me", "Me", "What time do you ___?", "聞きたい時刻"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え"), ("input", "me", "Me", "Where do you usually ___?", "聞きたい場所"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
-17: (("text", "other", "Tutor", "How often do you exercise?", "どのくらい運動しますか？"), ("input", "me", "Me", "About ___ times a ___.", "自分の本当の頻度"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: About ___ times a ___.", "先生の答え")),
-18: (("text", "other", "Tutor", "Can you drive?", "運転できますか？"), ("input", "me", "Me", "I can ___, but I can't ___.", "自分のできること"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: I can ___, but I can't ___.", "先生の答え")),
-19: (("text", "other", "Tutor", "Ask me the price of something here.", "ここにある物の値段を聞いてください。"), ("input", "me", "Me", "How much is ___?", "値段を知りたい物"), ("input", "other", "Tutor", "Tutor's answer: It's ___ dollars.", "先生の値段"), ("input", "me", "Me", "Is that ___ or ___?", "聞こえた数字を確認"), ("input", "other", "Tutor", "Tutor's answer: confirmation", "先生の確認")),
-21: (("text", "other", "Tutor", "Ask permission to do something here.", "ここで何かをする許可を求めてください。"), ("input", "me", "Me", "Can I ___?", "ここでしたいこと"), ("input", "other", "Tutor", "Tutor's answer: Sure, you can. / Sorry, not here.", "先生の答え")),
-22: (("text", "other", "Tutor", "Are you ready to order?", "ご注文はお決まりですか？"), ("input", "me", "Me", "I'd like ___, please.", "自分の注文"), ("text", "other", "Tutor", "Anything else?", "ほかにもありますか？"), ("input", "me", "Me", "Can I have ___, please?", "追加で頼む物"), ("text", "other", "Tutor", "Of course.", "かしこまりました。")),
-23: (("text", "other", "Tutor", "What should we order?", "何を注文しましょうか？"), ("input", "me", "Me", "Two ___ of ___, please.", "注文する本当の量"), ("input", "me", "Me", "How much ___ do we need?", "必要な量をたずねる"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
-24: (("text", "other", "Tutor", "The next train leaves from platform thirteen.", "次の電車は13番ホームから出ます。"), ("input", "me", "Me", "Sorry, can you say ___ again?", "聞き取れなかった部分"), ("text", "other", "Tutor", "Platform thirteen.", "13番ホームです。"), ("input", "me", "Me", "Can you speak more ___?", "必要な話し方"), ("text", "other", "Tutor", "Of course.", "もちろんです。")),
+14: (("text", "other", "Tutor", "What’s one everyday habit you’ve changed, and what do you do now?", "変えた日常の習慣は何ですか？今はどうしていますか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "Have you changed any habits recently?", "先生は最近、何か習慣を変えましたか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+15: (("text", "other", "Tutor", "Who in your family has the most interesting routine, and why?", "家族の中で、いちばん面白い習慣がある人は誰ですか？なぜですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "Who has an interesting routine in your family?", "先生の家族では、誰の習慣が面白いですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+16: (("text", "other", "Tutor", "What part of your daily schedule would you change if you could?", "毎日の予定で、変えられるなら何を変えたいですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What would you change about your daily schedule?", "先生は毎日の予定の何を変えたいですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+17: (("text", "other", "Tutor", "What would you like to do more often, and why?", "もっと頻繁にしたいことは何ですか？なぜですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What would you like to do more often?", "先生は何をもっと頻繁にしたいですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+18: (("text", "other", "Tutor", "What skill would you most like to learn, and why?", "いちばん身につけたいスキルは何ですか？なぜですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What skill would you like to learn?", "先生はどんなスキルを身につけたいですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+19: (("text", "other", "Tutor", "What’s something you bought recently that was worth the price?", "最近買ったもので、値段に見合っていたものは何ですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What did you buy recently that was worth the price?", "先生が最近買って、値段に見合っていたものは何ですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+21: (("text", "other", "Tutor", "Where do you think people should ask before taking photos?", "写真を撮る前に許可を求めるべき場所はどこだと思いますか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "Where do you think people should ask first?", "先生は、どこでは先に許可を求めるべきだと思いますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+22: (("text", "other", "Tutor", "What’s your favorite thing to order when you eat out?", "外食するとき、いちばん好きな注文は何ですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What do you usually order when you eat out?", "先生は外食するとき、ふだん何を注文しますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+23: (("text", "other", "Tutor", "What food or drink do you always buy too much of?", "いつも買いすぎてしまう食べ物や飲み物は何ですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What do you tend to buy too much of?", "先生は何を買いすぎることが多いですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
+24: (("text", "other", "Tutor", "When is it hardest for you to understand spoken English?", "英語の聞き取りがいちばん難しいのはどんなときですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "When is another language hardest for you to understand?", "先生にとって、外国語の聞き取りがいちばん難しいのはどんなときですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
 }
 
 
@@ -469,7 +546,9 @@ def lesson_reorder(d, part):
     return page
 
 
-def fill(pid, pattern):
+def fill(pid, pattern, *, hints=None):
+    if hints is not None and len(hints) != len(pattern):
+        raise ValueError(f"{pid}: expected {len(pattern)} fill hint rows, got {len(hints)}")
     blocks=[]
     for r,(en,jp,_) in enumerate(pattern):
         fields=[]; pos=0
@@ -477,7 +556,16 @@ def fill(pid, pattern):
             fields.append(esc(en[pos:m.start()])); ans=m.group(1)
             fields.append(f'<input class="slot-input" type="text" data-sync-id="{pid}-{r}-{i}" data-answer="{esc(ans)}" autocomplete="off" spellcheck="false">'); pos=m.end()
         fields.append(esc(en[pos:]))
-        blocks.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">{marks(jp,"target ending")}</span><span class="answer-fill"><span class="korean">{"".join(fields)}</span></span></div></div>')
+        hint_html = ""
+        if hints is not None:
+            hint_row = hints[r]
+            if len(hint_row) == 2 and all(isinstance(item, str) for item in hint_row):
+                hint_row = (hint_row,)
+            hint_html = '<span class="hint">' + "".join(
+                f'<span class="hint-chip">{esc(ja_hint)}:{esc(en_hint)}</span>'
+                for ja_hint, en_hint in hint_row
+            ) + '</span>'
+        blocks.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">{marks(jp,"target ending")}</span><span class="answer-fill"><span class="korean">{"".join(fields)}</span></span>{hint_html}</div></div>')
     return section(pid,"Say the complete sentence","文をまるごと言おう",'<p class="section-subtitle"><span class="ko">Say each whole sentence aloud, including the missing words.</span><span class="ja">空欄に入る言葉も含めて、文をまるごと声に出して言ってください。</span></p><div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'+"".join(blocks))
 
 
@@ -653,7 +741,7 @@ def core12_pages(d):
         "p1-write",
         "Your real start time",
         "自分の始業時刻",
-        '<p class="section-subtitle"><span class="ko">What time do you start work?</span><span class="ja">何時に仕事を始めますか？</span></p>'
+        '<p class="section-subtitle"><span class="ko">Now use “I start work at ___” to tell me your real start time.</span><span class="ja">では、「I start work at ___」を使って、実際の始業時刻を教えてください。</span></p>'
         '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
         + feedback_compose("p1-write"),
     )
@@ -687,16 +775,16 @@ def core12_pages(d):
         '「usually」と動作の自然な順番を選びましょう。',
         (
             ("{t}ふだん{/t}6時ごろ仕事を終えます。", "I ", "usually finish", "finish usually", " work around six."),
-            ("{t}ふだん{/t}12時ごろ昼食をとります。", "I ", "usually eat", "eat usually", " lunch around twelve."),
+            ("{t}ふだん{/t}午後は疲れています。", "I ", "am usually", "usually am", " tired in the afternoon."),
             ("{t}ふだん{/t}7時ごろ夕食をとります。", "I ", "usually have", "have usually", " dinner around seven."),
-            ("{t}ふだん{/t}9時ごろ仕事を始めます。", "I ", "usually start", "start usually", " work around nine."),
+            ("{t}ふだん{/t}7時ごろ家にいます。", "I ", "am usually", "usually am", " home around seven."),
         ),
     )
     p2_write = section(
         "p2-write",
         "Your real finish time",
         "自分の終業時刻",
-        '<p class="section-subtitle"><span class="ko">When do you usually finish work?</span><span class="ja">ふだん何時ごろ仕事を終えますか？</span></p>'
+        '<p class="section-subtitle"><span class="ko">Now use “I usually finish work around ___” to tell me your real finish time.</span><span class="ja">では、「I usually finish work around ___」を使って、実際の終業時刻を教えてください。</span></p>'
         '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
         + feedback_compose("p2-write"),
     )
@@ -742,15 +830,14 @@ def core12_pages(d):
     me_avatar = live_avatar("Me")
     p3_freetalk = section(
         "p3-freetalk",
-        "Free talk",
-        "フリートーク",
-        '<p class="section-subtitle"><span class="ko">Tell me your times, then ask me too.</span><span class="ja">自分の時刻を答えて、それから私にも聞いてください。</span></p>'
+        "Your ideal workday",
+        "理想の仕事の日",
+        '<p class="section-subtitle"><span class="ko">Answer my question, then ask me too. Use today’s patterns only if they fit naturally.</span><span class="ja">私の質問に答えて、それから私にも聞いてください。今日のパターンは自然に合うときだけ使いましょう。</span></p>'
+        '<div class="tutor-note">React to the answer and follow the most interesting detail. Invite today\'s pattern only if it fits naturally.</div>'
         '<div class="dialogue">'
-        f'<div class="turn other">{tutor_avatar}<div class="bubble"><span class="korean">What time do you start work?</span><span class="translation">何時に仕事を始めますか？</span></div></div>'
-        f'<div class="turn me">{me_avatar}<div class="bubble me"><div class="answer-box small"><span class="answer-label">I start work at ___.<span class="task">自分の時刻で</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-start" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
-        f'<div class="turn other">{tutor_avatar}<div class="bubble"><span class="korean">When do you usually finish work?</span><span class="translation">ふだん何時ごろ仕事を終えますか？</span></div></div>'
-        f'<div class="turn me">{me_avatar}<div class="bubble me"><div class="answer-box small"><span class="answer-label">I usually finish work around ___.<span class="task">自分の時刻で</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-finish" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
-        f'<div class="turn me">{me_avatar}<div class="bubble me"><span class="korean">How about you?</span><span class="translation">あなたはどうですか？</span></div></div>'
+        f'<div class="turn other">{tutor_avatar}<div class="bubble"><span class="korean">What would your ideal workday look like, and why?</span><span class="translation">理想の仕事の日はどんな一日ですか？なぜですか？</span></div></div>'
+        f'<div class="turn me">{me_avatar}<div class="bubble me"><div class="answer-box small"><span class="answer-label">Student\'s answer<span class="task">自分の答え</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-answer" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+        f'<div class="turn me">{me_avatar}<div class="bubble me"><span class="korean">What would your ideal workday look like?</span><span class="translation">先生の理想の仕事の日はどんな一日ですか？</span></div></div>'
         f'<div class="turn other">{tutor_avatar}<div class="bubble"><div class="answer-box small"><span class="answer-label">Tutor\'s answer<span class="task">先生の答え</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-tutor" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
         '</div>',
     )
@@ -790,7 +877,11 @@ def core12_pages(d):
         p1_choose,
         '    <!-- Reorder criterion: subject · action · time preposition · clock time. -->\n' + lesson_reorder(d, 1),
         fill("p1-fill", d["p1"]),
-        translate("p1-translate", d["p1"]),
+        translate(
+            "p1-translate", d["p1"],
+            hints=(("9時", "nine"), ("8時", "eight"), ("10時", "ten"), ("11時", "eleven")),
+            support_stage="supported",
+        ),
         p1_write,
         p2_intro,
         teach("p2-teach", d["p2"], p2_meaning),
@@ -799,7 +890,11 @@ def core12_pages(d):
         p2_choose,
         '    <!-- Reorder criterion: subject plus frequency · action · approximate-time marker · clock time. -->\n' + lesson_reorder(d, 2),
         fill("p2-fill", d["p2"]),
-        translate("p2-translate", d["p2"]),
+        translate(
+            "p2-translate", d["p2"],
+            hints=(("仕事を終える", "finish work"), ("昼食をとる", "eat lunch"), ("夕食をとる", "have dinner"), ("仕事を始める", "start work")),
+            support_stage="supported",
+        ),
         p2_write,
         '''    <div class="transition-page" data-page-id="part3-intro" data-act="Talking about a workday"><span class="transition-kicker">PART 3</span><h2 class="transition-title">Your workday</h2><p class="section-subtitle"><span class="ko">Now, let's use both patterns in a conversation.</span><span class="ja">では、二つのパターンを会話で使ってみましょう。</span></p><div class="tutor-note">Introduce the conversation, then move on.</div></div>\n''',
         p3_model,
@@ -890,6 +985,7 @@ def canonical_pages(number, d):
     for part, pattern in enumerate(fill_patterns, start=1):
         validate_controlled_pattern(pattern, label=f"CORE-{number} p{part}")
     translate_hints = spec.get("translate_hints", (None, None))
+    fill_hints = spec.get("fill_hints", (None, None))
     complete_dialogue = dialogue(number, d, complete=True, patterns=fill_patterns)
     live_turns = []
     for index, (kind, side, speaker, english, japanese) in enumerate(LIVE_SCENES[number]):
@@ -905,9 +1001,12 @@ def canonical_pages(number, d):
             )
     if "freetalk" in spec:
         prompt_en, prompt_ja = spec["freetalk"]
+        freetalk_title, freetalk_title_ja = spec.get(
+            "freetalk_title", ("Talk about a real habit", "本当の習慣について話そう")
+        )
         live = '<div class="dialogue">' + ''.join(live_turns) + '</div>'
         live_page = section(
-            "p3-freetalk", "Talk about a real habit", "本当の習慣について話そう",
+            "p3-freetalk", freetalk_title, freetalk_title_ja,
             f'<p class="section-subtitle"><span class="ko">{esc(prompt_en)}</span>'
             f'<span class="ja">{esc(prompt_ja)}</span></p>'
             '<div class="tutor-note">React to the answer and follow the most interesting detail. Invite today\'s pattern only if it fits naturally.</div>'
@@ -933,7 +1032,10 @@ def canonical_pages(number, d):
     )
     wild_script_en, wild_script_ja = spec.get(
         "wild_script",
-        ("Use the same two patterns in a different conversation.", "同じ二つのパターンを別の会話で使いましょう。"),
+        (
+            f'I’ll be the {DIALOGUES[number]["wild"][0].lower()}. Say each complete Me line, including the missing words.',
+            f'私は{spec.get("role_ja", "相手")}役をします。空欄に入る言葉も含めて、Me のセリフをまるごと言ってください。',
+        ),
     )
 
     opening = [goal]
@@ -943,13 +1045,13 @@ def canonical_pages(number, d):
     return opening + [
         intro(1), teach("p1-teach", d["p1"], spec["meanings"][0]),
         read("p1-read", d["p1"]), visual_rule(1), choose(1), lesson_reorder(d, 1),
-        fill("p1-fill", fill_patterns[0]),
+        fill("p1-fill", fill_patterns[0], hints=fill_hints[0]),
         translate(
             "p1-translate", d["p1"], hints=translate_hints[0],
             support_stage="supported" if translate_hints[0] is not None else None,
         ), write_page(1),
         intro(2), teach("p2-teach", d["p2"], spec["meanings"][1]), read("p2-read", d["p2"]),
-        visual_rule(2), choose(2), lesson_reorder(d, 2), fill("p2-fill", fill_patterns[1]),
+        visual_rule(2), choose(2), lesson_reorder(d, 2), fill("p2-fill", fill_patterns[1], hints=fill_hints[1]),
         translate(
             "p2-translate", d["p2"], hints=translate_hints[1],
             support_stage="supported" if translate_hints[1] is not None else None,
@@ -964,6 +1066,8 @@ def canonical_pages(number, d):
 
 
 def build(number,d):
+    if number not in GENERATED_LESSONS:
+        raise ValueError(f"CORE-{number} is protected and is not generator-owned")
     source=PILOT.read_text(encoding="utf-8"); head,foot=new_lesson.split_shell(source)
     slug=f'{number:02d}-{d["slug"]}'
     head=new_lesson.retarget(head,review_id=f"CORE-{number}",lesson_id=slug,level="A1",title=d["title"],title_ko=d["ko"],title_ja=d["ja"],version="2026-08-20")
@@ -975,13 +1079,13 @@ def build(number,d):
 
 
 def main():
-    ap=argparse.ArgumentParser(description=__doc__); ap.add_argument("--refresh",action="store_true"); ap.add_argument("--lesson", type=int, choices=LESSONS); args=ap.parse_args()
-    selected = LESSONS.items() if args.lesson is None else ((args.lesson, LESSONS[args.lesson]),)
+    ap=argparse.ArgumentParser(description=__doc__); ap.add_argument("--refresh",action="store_true"); ap.add_argument("--lesson", type=int, choices=GENERATED_LESSONS); args=ap.parse_args()
+    selected = ((number, LESSONS[number]) for number in GENERATED_LESSONS) if args.lesson is None else ((args.lesson, LESSONS[args.lesson]),)
     for n,d in selected:
         out,text=build(n,d)
         if out.exists() and not args.refresh: raise SystemExit(f"refusing to overwrite {out.relative_to(ROOT)}")
         out.parent.mkdir(parents=True,exist_ok=True); out.write_text(text,encoding="utf-8"); print(f"wrote {out.relative_to(ROOT)}")
-    print(f"{len(LESSONS) if args.lesson is None else 1} Core decks generated")
+    print(f"{len(GENERATED_LESSONS) if args.lesson is None else 1} Core decks generated")
     return 0
 
 
