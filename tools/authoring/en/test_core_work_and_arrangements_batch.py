@@ -154,16 +154,38 @@ class CoreWorkAndArrangementsBatchTests(unittest.TestCase):
         roles = (("text", "other", "Tutor"), ("input", "me", "Me"), ("text", "me", "Me"), ("input", "other", "Tutor"))
         for number, scene in batch.LIVE_SCENES.items():
             self.assertEqual(tuple(turn[:3] for turn in scene), roles, number)
-            self.assertIn(" / ", scene[1][3], number)
-            self.assertIn("／", scene[1][4], number)
-            self.assertTrue(any(token in scene[1][3] for token in ("No,", "Nothing", "I can't", "I don't")), number)
+            self.assertEqual(scene[1][3:], ("Student's answer", "自分の答え"), number)
+            self.assertEqual(scene[3][3:], ("Tutor's answer", "先生の答え"), number)
+            self.assertTrue(scene[0][3].endswith("?"), number)
             self.assertTrue(scene[2][3].endswith("?"), number)
+            self.assertTrue(scene[2][3].startswith("What about you"), number)
+            self.assertNotIn("___", scene[0][3] + scene[2][3], number)
             _, deck = batch.build(number, batch.LESSONS[number])
             page = dict(check_deck.pages(deck))["p3-freetalk"]
             self.assertEqual(page.count('class="turn '), 4, number)
-            self.assertEqual(page.count("Tutor&#x27;s answer:"), 1, number)
+            self.assertEqual(page.count("Tutor&#x27;s answer"), 1, number)
             self.assertIn('data-sync-id="live-1"', page, number)
             self.assertIn('data-sync-id="live-3"', page, number)
+            self.assertIn("Use today's pattern only if it fits", page, number)
+
+    def test_translation_write_and_role_contracts_are_explicit(self):
+        for number, data in batch.LESSONS.items():
+            _, deck = batch.build(number, data)
+            pages = dict(check_deck.pages(deck))
+            for part in (1, 2):
+                translation = pages[f"p{part}-translate"]
+                self.assertIn('data-scaffolding-contract="target-v2"', translation)
+                self.assertIn('data-support-stage="supported"', translation)
+                self.assertGreaterEqual(translation.count('class="hint-chip"'), 4)
+                english, japanese = batch.SPECS[number]["writes"][part - 1]
+                self.assertTrue(english.startswith("Use “"), (number, part, english))
+                self.assertIn("を使って", japanese, (number, part, japanese))
+                self.assertIn(shared_core.esc(english), pages[f"p{part}-write"])
+                self.assertIn(shared_core.esc(japanese), pages[f"p{part}-write"])
+            for page_id, variant in (("p3-model", "model"), ("p3-complete", "model"), ("in-the-wild", "wild")):
+                role_ja = batch.ROLE_JA[batch.DIALOGUES[number][variant][0]]
+                self.assertIn(role_ja, pages[page_id], (number, page_id))
+                self.assertNotIn("相手役", pages[page_id], (number, page_id))
 
     def test_model_completion_and_transfer_are_resolved_six_turn_scenes(self):
         for number, data in batch.LESSONS.items():
@@ -215,7 +237,7 @@ class CoreWorkAndArrangementsBatchTests(unittest.TestCase):
         self.assertNotIn("what happened", str(batch.SPECS[77]["choices"]).casefold())
         self.assertIn("by noon", batch.LESSONS[77]["p1"][2][2].split("|"))
         self.assertIn("by six", batch.LESSONS[77]["p1"][3][2].split("|"))
-        self.assertIn("Was an order or repair ever late?", batch.LIVE_SCENES[77][2][3])
+        self.assertEqual(batch.LIVE_SCENES[77][2][3], "What about you—how do you react to a delay?")
 
         # CORE78: preserve the established US-spelling owner and make the question answerable.
         self.assertNotIn("travelling", str((batch.LESSONS[78], batch.SPECS[78], batch.VOCAB[78], batch.TRANSLATE_HINTS[78], batch.LIVE_HINTS[78], batch.SPIRALS[78])))
@@ -240,10 +262,9 @@ class CoreWorkAndArrangementsBatchTests(unittest.TestCase):
         self.assertIn("when it arrives", batch.DIALOGUES[80]["wild"][4][0].casefold())
 
     def test_live_blank_order_and_known_word_bridges_are_honest(self):
-        self.assertIn("___を___までに", batch.LIVE_SCENES[79][1][4])
-        self.assertIn("___を___までに", batch.LIVE_SCENES[79][3][4])
-        self.assertIn("___します。___したら", batch.LIVE_SCENES[80][1][4])
-        self.assertIn("___します。___したら", batch.LIVE_SCENES[80][3][4])
+        for number in (79, 80):
+            self.assertEqual(batch.LIVE_SCENES[number][1][3:], ("Student's answer", "自分の答え"))
+            self.assertEqual(batch.LIVE_SCENES[number][3][3:], ("Tutor's answer", "先生の答え"))
         banned = {"トレイン", "クック", "ブック", "サンデー", "フォン"}
         actual = {japanese for number in range(71, 81) for japanese, _ in batch.KNOWN_WORDS[number]}
         self.assertFalse(actual & banned)
@@ -263,6 +284,9 @@ class CoreWorkAndArrangementsBatchTests(unittest.TestCase):
             self.assertEqual(check_deck.smallest_unit_choice_issues(pages), [], number)
             self.assertEqual(check_deck.meta_content(expected, "podo:proofread-status"), "complete", number)
             self.assertEqual(len(re.findall(r'<meta name="podo:proofread-status" content="[^"]+">', expected)), 1, number)
+            errors, warnings = check_deck.check(path)
+            self.assertEqual(errors, [], (number, errors))
+            self.assertEqual(warnings, [], (number, warnings))
 
     def test_transfer_scenes_are_unique(self):
         scenes = list(batch.TRANSFER_SCENES.values())

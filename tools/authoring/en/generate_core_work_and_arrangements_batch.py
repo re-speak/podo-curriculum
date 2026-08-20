@@ -128,16 +128,16 @@ LESSONS = {
         ko="휴대폰을 수리 맡겼어요", ja="携帯を修理してもらいました",
         goal=("Say what service you arranged and what still needs attention.", "頼んだサービスと、まだ必要な作業を伝えましょう。"),
         p1=rows(
-            ("I {t}had{/t} my phone {t}repaired{/t}.", "携帯を{t}修理してもらいました{/t}。", "I|had|my phone|repaired."),
-            ("I {t}had{/t} my coat {t}cleaned{/t}.", "コートを{t}クリーニングしてもらいました{/t}。", "I|had|my coat|cleaned."),
-            ("I {t}had{/t} the battery {t}replaced{/t}.", "バッテリーを{t}交換してもらいました{/t}。", "I|had|the battery|replaced."),
-            ("I {t}had{/t} my watch {t}fixed{/t}.", "腕時計を{t}直してもらいました{/t}。", "I|had|my watch|fixed."),
+            ("I {t}had{/t} my phone {t}repaired{/t}.", "携帯を{t}修理して{/t}{t}もらいました{/t}。", "I|had|my phone|repaired."),
+            ("I {t}had{/t} my coat {t}cleaned{/t}.", "コートを{t}クリーニングして{/t}{t}もらいました{/t}。", "I|had|my coat|cleaned."),
+            ("I {t}had{/t} the battery {t}replaced{/t}.", "バッテリーを{t}交換して{/t}{t}もらいました{/t}。", "I|had|the battery|replaced."),
+            ("I {t}had{/t} my watch {t}fixed{/t}.", "腕時計を{t}直して{/t}{t}もらいました{/t}。", "I|had|my watch|fixed."),
         ),
         p2=rows(
-            ("I {t}need to get{/t} the screen {t}replaced{/t}.", "画面を{t}交換してもらう必要があります{/t}。", "I|need to get|the screen|replaced."),
-            ("I {t}need to get{/t} the zipper {t}fixed{/t}.", "ファスナーを{t}直してもらう必要があります{/t}。", "I|need to get|the zipper|fixed."),
-            ("I {t}need to get{/t} this coat {t}cleaned{/t}.", "このコートを{t}クリーニングしてもらう必要があります{/t}。", "I|need to get|this coat|cleaned."),
-            ("I {t}need to get{/t} the battery {t}checked{/t}.", "バッテリーを{t}点検してもらう必要があります{/t}。", "I|need to get|the battery|checked."),
+            ("I {t}need to get{/t} the screen {t}replaced{/t}.", "画面を{t}交換して{/t}{t}もらう必要があります{/t}。", "I|need to get|the screen|replaced."),
+            ("I {t}need to get{/t} the zipper {t}fixed{/t}.", "ファスナーを{t}直して{/t}{t}もらう必要があります{/t}。", "I|need to get|the zipper|fixed."),
+            ("I {t}need to get{/t} this coat {t}cleaned{/t}.", "このコートを{t}クリーニングして{/t}{t}もらう必要があります{/t}。", "I|need to get|this coat|cleaned."),
+            ("I {t}need to get{/t} the battery {t}checked{/t}.", "バッテリーを{t}点検して{/t}{t}もらう必要があります{/t}。", "I|need to get|the battery|checked."),
         ),
         rules=(("Use had plus the thing plus a past participle for a service you arranged and completed.", "手配して完了したサービスは、had、物、過去分詞の順で表します。"), ("Use need to get plus the thing plus a past participle for a service that still needs arranging.", "これから手配する必要があるサービスは、need to get、物、過去分詞の順で表します。")),
         prompt=("Name a service you arranged or need, or say that you do not need one now, then ask me too.", "頼んだ・必要なサービスを話すか、今はなければそう伝えてから、私にも聞いてください。"),
@@ -429,6 +429,52 @@ LIVE_HINTS = {
 }
 
 
+REVIEWED_WRITES_71_80 = {
+    71: (("Use “I should have ___” to name the better action you missed.", "「I should have ___」を使って、しておけばよかった行動を伝えましょう。"), ("Use “I shouldn't have ___” to name an action you now regret.", "「I shouldn't have ___」を使って、しなければよかった行動を伝えましょう。")),
+    72: (("Use “I might have ___” to offer one possible past explanation.", "「I might have ___」を使って、過去について可能性のある説明を伝えましょう。"), ("Use “___ must have ___” to give one confident past conclusion.", "「___ must have ___」を使って、過去について確信のある結論を伝えましょう。")),
+    73: (("Use “___ had already ___ when ___” to put two past events in order.", "「___ had already ___ when ___」を使って、過去の二つの出来事を順番に伝えましょう。"), ("Use “By the time ___, ___ had ___” to show what was already complete.", "「By the time ___, ___ had ___」を使って、その時までに終わっていたことを伝えましょう。")),
+    74: (("Use “I was going to ___, but ___” to explain an intention that changed.", "「I was going to ___, but ___」を使って、変わったつもりを説明しましょう。"), ("Use “I'd planned to ___, but ___” to explain an earlier plan that changed.", "「I'd planned to ___, but ___」を使って、変わった以前の予定を説明しましょう。")),
+    75: (("Use “I used to ___” to describe one past habit that is no longer true.", "「I used to ___」を使って、今はしていない昔の習慣を伝えましょう。"), ("Use “I don't ___ anymore” to state what is different now.", "「I don't ___ anymore」を使って、今はもうしないことを伝えましょう。")),
+    76: (("Use “I had ___ repaired” to name one service you arranged.", "「I had ___ repaired」を使って、頼んだサービスを一つ伝えましょう。"), ("Use “I need to get ___ fixed” to name one service you still need.", "「I need to get ___ fixed」を使って、まだ必要なサービスを伝えましょう。")),
+    77: (("Use “It was supposed to ___ by ___” to state an unmet service expectation.", "「It was supposed to ___ by ___」を使って、満たされなかったサービスの予定を伝えましょう。"), ("Use “Do you know what happened to ___?” to ask neutrally about a delayed item.", "「Do you know what happened to ___?」を使って、遅れている物について中立的に尋ねましょう。")),
+    78: (("Use “I'll be ___ at ___” to say what you expect to be doing at a future time.", "「I'll be ___ at ___」を使って、未来の時点でしている予定を伝えましょう。"), ("Use “I'll still be ___ at ___” to say what will remain in progress.", "「I'll still be ___ at ___」を使って、その時も続いている予定を伝えましょう。")),
+    79: (("Use “I should have ___ ready by ___” to give a realistic completion estimate.", "「I should have ___ ready by ___」を使って、現実的な完了見込みを伝えましょう。"), ("Use “I may need another ___” to name possible extra time.", "「I may need another ___」を使って、追加で必要かもしれない時間を伝えましょう。")),
+    80: (("Use “Please ___ as soon as ___” to request an update after one trigger.", "「Please ___ as soon as ___」を使って、きっかけのあとすぐ知らせるよう頼みましょう。"), ("Use “I'll ___ as soon as ___” to promise one action after a trigger.", "「I'll ___ as soon as ___」を使って、きっかけのあとすぐする行動を約束しましょう。")),
+}
+
+
+REVIEWED_LIVE_71_80 = {
+    71: ("What's a small mistake that taught you something useful?", "役に立つことを学んだ小さな失敗は何ですか？", "What about you—what mistake taught you something?", "先生はどうですか？どんな失敗から学びましたか？"),
+    72: ("When you misplace something, where do you look first?", "物をどこかに置き忘れたとき、最初にどこを探しますか？", "What about you—where do you look first?", "先生はどうですか？最初にどこを探しますか？"),
+    73: ("What's something you really dislike arriving late for?", "遅刻したくないと思うことは何ですか？", "What about you—what do you never want to be late for?", "先生はどうですか？何に遅刻したくありませんか？"),
+    74: ("Do you usually adapt easily when a plan changes? Why?", "予定が変わったとき、普段すぐに対応できますか？なぜですか？", "What about you—how do you handle changed plans?", "先生はどうですか？予定の変更にどう対応しますか？"),
+    75: ("What childhood habit do you remember most clearly?", "子どものころの習慣で、いちばんよく覚えているものは何ですか？", "What about you—which childhood habit do you remember?", "先生はどうですか？どんな習慣を覚えていますか？"),
+    76: ("When something breaks, do you prefer to repair it or replace it?", "物が壊れたら、修理するのと買い替えるのとどちらが好きですか？", "What about you—do you usually repair things?", "先生はどうですか？普段は修理しますか？"),
+    77: ("How patient are you when a service or delivery is late?", "サービスや配達が遅れたとき、どのくらい待てますか？", "What about you—how do you react to a delay?", "先生はどうですか？遅れたときどうしますか？"),
+    78: ("How would you most like to spend tomorrow evening?", "明日の夜はどのように過ごしたいですか？", "What about you—how would you spend tomorrow evening?", "先生はどうですか？明日の夜はどう過ごしますか？"),
+    79: ("Do deadlines help you focus, or do they make you feel stressed?", "締め切りがあると集中できますか？それともストレスを感じますか？", "What about you—how do deadlines affect you?", "先生はどうですか？締め切りがあるとどう感じますか？"),
+    80: ("How do you prefer to receive important updates?", "大切な連絡はどのように受け取りたいですか？", "What about you—how do you prefer to get updates?", "先生はどうですか？どの方法で連絡を受けたいですか？"),
+}
+
+
+ROLE_JA = {"Friend": "友人", "Teammate": "チームメンバー", "Coworker": "同僚", "Colleague": "同僚", "Neighbor": "近所の人", "Repair clerk": "修理店の店員", "Delivery clerk": "配達窓口の店員", "Organizer": "主催者"}
+
+
+OMIT_LOW_VALUE_CHOICES = {71: (1, 2), 72: (1, 2), 74: (1, 2), 75: (1, 2), 77: (1, 2), 78: (1, 2), 79: (1, 2)}
+for _number in range(71, 81):
+    SPECS[_number]["writes"] = REVIEWED_WRITES_71_80[_number]
+    _q, _q_ja, _back, _back_ja = REVIEWED_LIVE_71_80[_number]
+    LESSONS[_number]["prompt"] = ("Let's talk about this topic. Answer my question, then ask me too.", "この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。")
+    LIVE_SCENES[_number] = (("text", "other", "Tutor", _q, _q_ja), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", _back, _back_ja), ("input", "other", "Tutor", "Tutor's answer", "先生の答え"))
+    LIVE_HINTS[_number] = {}
+for _number, _parts in OMIT_LOW_VALUE_CHOICES.items():
+    LESSONS[_number]["omit_choice"] = _parts
+    _choices = list(SPECS[_number]["choices"])
+    for _part in _parts:
+        _choices[_part - 1] = ()
+    SPECS[_number]["choices"] = tuple(_choices)
+
+
 TRANSFER_SCENES = {
     71: "team form correction after premature sending", 72: "late colleague and locked office investigation",
     73: "workday timing update after a closed shop and meeting start", 74: "restaurant booking after a missed call",
@@ -506,12 +552,28 @@ def translate_page(number, part, pattern):
     blocks = []
     for index, ((english, japanese, _), hints) in enumerate(zip(pattern, TRANSLATE_HINTS[number][part - 1], strict=True)):
         blocks.append('<div class="task-block"><div class="answer-box"><span class="answer-label">' + core.esc(core.strip_marks(japanese)) + '</span><span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p' + str(part) + '-translate-' + str(index) + '" data-answer="' + core.esc(core.strip_marks(english)) + '" autocomplete="off" spellcheck="false"></span>' + hint_html((hints,)) + '</div></div>')
-    return core.section(f"p{part}-translate", "Say it in English", "英語にしよう", '<p class="section-subtitle"><span class="ko">Use the vocabulary menu, then say the whole sentence.</span><span class="ja">単語メニューを使って、文をまるごと英語で言いましょう。</span></p>' + "".join(blocks))
+    rendered = core.section(
+        f"p{part}-translate", "Say it in English", "英語にしよう",
+        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span>'
+        '<span class="ja">日本語を見て、英語で言ってみましょう。</span></p>'
+        '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
+        + "".join(blocks),
+    )
+    return rendered.replace(
+        f'data-page-id="p{part}-translate"',
+        f'data-page-id="p{part}-translate" data-scaffolding-contract="target-v2" data-support-stage="supported"',
+        1,
+    )
 
 
 def write_page(number, part, pattern):
     prompt_en, prompt_ja = SPECS[number]["writes"][part - 1]
-    return core.section(f"p{part}-write", "Make it yours", "自分の文にしよう", f'<p class="section-subtitle"><span class="ko">{core.esc(prompt_en)}</span><span class="ja">{core.esc(prompt_ja)}</span></p><div class="task-block"><div class="answer-box tall"><span class="answer-label">{core.esc(core.strip_marks(pattern[0][0]))}<span class="task">自分の情報に変えて</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="p{part}-write" rows="2" spellcheck="false" maxlength="2000"></textarea></span>{hint_html(OPEN_MENUS[number][part - 1])}</div></div>')
+    return core.section(
+        f"p{part}-write", "Make it yours", "自分の文にしよう",
+        f'<p class="section-subtitle"><span class="ko">{core.esc(prompt_en)}</span><span class="ja">{core.esc(prompt_ja)}</span></p>'
+        '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
+        + core.feedback_compose(f"p{part}-write", hint_html(OPEN_MENUS[number][part - 1])),
+    )
 
 
 def live_page(number):
@@ -522,10 +584,11 @@ def live_page(number):
         if kind == "text":
             rendered.append(f'<div class="turn {side}">{avatar}<div class="{bubble}"><span class="korean">{core.esc(english)}</span><span class="translation">{core.esc(japanese)}</span></div></div>')
         else:
-            hints = hint_html(LIVE_HINTS[number].get(index, ())) if side == "me" else ""
+            raw_hints = LIVE_HINTS[number].get(index, ()) if side == "me" else ()
+            hints = hint_html(raw_hints) if raw_hints else ""
             label = english.replace("Tutor's real answer:", "Tutor's answer:")
             rendered.append(f'<div class="turn {side}">{avatar}<div class="{bubble}"><div class="answer-box tall"><span class="answer-label">{core.esc(label)}<span class="task">{core.esc(japanese)}</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-{index}" rows="2" spellcheck="false" maxlength="2000"></textarea></span>{hints}</div></div></div>')
-    return core.section("p3-freetalk", "Your real answer", "自分の答え", f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span><span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p><div class="dialogue">' + "".join(rendered) + "</div>")
+    return core.section("p3-freetalk", "Your real answer", "自分の答え", f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span><span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p><div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div><div class="dialogue">' + "".join(rendered) + "</div>")
 
 
 def page_id(page):
@@ -544,7 +607,16 @@ def customize_pages(number, data, pages):
         if pid == "part3-intro":
             result.append(support_page(number))
             result.extend(spiral_pages(number))
-        result.append(replacements.get(pid, page))
+        rendered = replacements.get(pid, page)
+        if pid in {"p3-model", "p3-complete", "in-the-wild"}:
+            variant = "wild" if pid == "in-the-wild" else "model"
+            role_ja = ROLE_JA[DIALOGUES[number][variant][0]]
+            rendered = rendered.replace("Please read the Me lines aloud.", "Please read your lines aloud.")
+            rendered = rendered.replace("Say each complete Me line", "Say each complete line")
+            rendered = rendered.replace("私は相手役をします。Me のセリフを声に出して読んでください。", f"私は{role_ja}です。自分のセリフを声に出して読んでください。")
+            rendered = rendered.replace("私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。", f"私は{role_ja}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。")
+            rendered = rendered.replace("私は相手役をします。空欄に入る言葉も含めて、Me のセリフをまるごと言ってください。", f"私は{role_ja}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。")
+        result.append(rendered)
     return result
 
 
@@ -575,19 +647,23 @@ def build(number, data):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--lesson", type=int, action="append", choices=sorted(LESSONS))
     args = parser.parse_args()
     expected = set(range(71, 81))
     for label, values in (("lessons", LESSONS), ("semantic specs", SPECS), ("vocabulary", VOCAB), ("dialogues", DIALOGUES), ("live scenes", LIVE_SCENES)):
         if set(values) != expected:
             raise SystemExit(f"{label} do not exactly cover CORE-71--80")
+    selected = set(args.lesson or LESSONS)
     for number, data in LESSONS.items():
+        if number not in selected:
+            continue
         out, text = build(number, data)
         if out.exists() and not args.refresh:
             raise SystemExit(f"refusing to overwrite {out.relative_to(ROOT)}")
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(text, encoding="utf-8")
         print(f"wrote {out.relative_to(ROOT)}")
-    print(f"{len(LESSONS)} Core decks generated")
+    print(f"{len(selected)} Core decks generated")
     return 0
 
 
