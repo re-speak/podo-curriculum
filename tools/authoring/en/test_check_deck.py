@@ -281,6 +281,21 @@ class DeckCheckTests(unittest.TestCase):
         )
         self.assertTrue(any("shared feedback component" in item for item in errors))
 
+    def test_pilot_open_sentence_rejects_generic_make_your_own_sentence_copy(self):
+        errors = check_deck.pilot_operating_issues(
+            {
+                "p1-write": (
+                    '<p class="section-subtitle"><span class="ko">'
+                    'Now use “I’m here for ___” to make your own sentence.</span>'
+                    '<span class="ja">旅行の目的を伝えましょう。</span></p>'
+                    '<div class="fb" data-fb="answer" '
+                    'data-fb-spoken-label="Student\'s sentence"></div>'
+                )
+            },
+            track="contextual",
+        )
+        self.assertTrue(any("communicative job" in item for item in errors))
+
     def test_core_shape_rejects_unjustified_full_sentence_choices(self):
         errors = check_deck.core_canonical_shape_issues(
             {

@@ -1296,6 +1296,14 @@ def pilot_operating_issues(page_chunks, *, track):
                 f"{page_id}: capture the learner's spoken answer with the shared feedback "
                 "component, without repeating the task inside the response box"
             )
+        if (
+            re.fullmatch(r"p[12]-write", page_id)
+            and "make your own sentence" in spoken.casefold()
+        ):
+            errors.append(
+                f"{page_id}: generic 'make your own sentence' copy does not name the "
+                "communicative job — say what the learner should use the frame to do"
+            )
         for fb_tag in re.findall(r'<div\b[^>]*class="[^"]*\bfb\b[^"]*"[^>]*data-fb="[^"]+"[^>]*>', chunk):
             if 'data-fb-spoken-label="Student\'s sentence"' not in fb_tag:
                 errors.append(
