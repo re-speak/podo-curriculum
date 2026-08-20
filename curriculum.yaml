@@ -19,6 +19,17 @@ spec:
       # Support text inside a deck is written in this language, not English.
       audience: ja
       displayName: 한국어
+    en:
+      langType: EN
+      # Same Japanese-speaking audience as kr — the subject taught is what
+      # differs, so support text here is Japanese too, never Korean.
+      #
+      # PODO/EN already exists in grape, but as the Korea-market product: every
+      # one of those rows is COUNTRY_CODE='KR'. COUNTRY_CODE is part of the
+      # natural key, and these courses are 'JP', so they land in an empty corner
+      # of it rather than upserting over the Korean market's English catalogue.
+      audience: ja
+      displayName: English
 
   # 교재 오브젝트는 GCS(podo-assets)에 있다. AWS S3(respeak-lemonade)에서 이관했다 —
   # grape 의 공개 자산을 podo-assets 로 모으는 방향에 맞춘 것이고, 교재 HTML/CSS/이미지는
@@ -84,7 +95,7 @@ spec:
   sharedRuntime:
     baseUrl: https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared
     repo: re-speak/podo-curriculum-shared
-    version: v1.13.2
+    version: v1.16.0
     join: "@"
 
   # Directories the sync tool will never walk, no matter what is inside them.
