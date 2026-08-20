@@ -1,7 +1,7 @@
 # English Curriculum — Current Build Plan
 
 **Status:** native catalog, all thirteen active representative pilots and the first generated
-Core, Contextual and paired Freetalking course batches owner-approved · checkpoints 1–6
+Core, Contextual and paired Freetalking course batches owner-approved · checkpoints 1–7
 independently proofread and validated, awaiting owner spot-check, approval and stage integration
 
 **Current as of:** 2026-08-20
@@ -20,14 +20,14 @@ here only when it changes the starting point for future work.
 | Curriculum | 4 tracks · 315 planned items |
 | Production-facing catalog | 303 items: 122 Core · 60 Contextual · 121 Freetalking |
 | Planning-only catalog | 12 pronunciation lessons; no pronunciation decks authorized |
-| Authored lessons | 225 HTML files: 224 active decks (122 Core · 60 Contextual · 42 Freetalking decks covering 21 paired topics) plus one superseded old CTX-1 prototype. Against the 424-deck production target, 200 decks remain. |
+| Authored lessons | 251 HTML files: 250 active decks (122 Core · 60 Contextual · 68 Freetalking decks covering 34 paired topics) plus one superseded old CTX-1 prototype. Against the 424-deck production target, 174 decks remain. |
 | Blueprints | Core, Contextual and Freetalking complete |
 | Generated author packets | 315 item briefs plus 4 indexes |
 | Review surface | current generated 303-item production catalog owner-approved on 2026-08-18 with no requested row dispositions |
 | Core evidence | 122-row generated triage ledger complete; five priority rows resolved against current first-party sources; Core 76/105 productive bands remain provisional |
 | Core audit | final progression pass plus a 52-row corpus-informed naturalness audit for Core 71–122; no audit-led TOC changes are pending |
-| Automated quality | 370 regression tests; all 225 English HTML files pass with 0 errors and 0 warnings; all checkpoint batches render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
-| Deployment | 43 disabled `course.yaml` plans exist. Local promotion manifests or promoted output are integration artifacts, not evidence of owner approval or stage deployment; checkpoint batches 1–6 still await their stated owner spot-check, approval and stage integration gates, and prestudy and learner-visible promotion remain open. |
+| Automated quality | 382 regression tests; all 251 English HTML files pass with 0 errors and 0 warnings; all checkpoint batches render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
+| Deployment | 43 disabled `course.yaml` plans exist. Local promotion manifests or promoted output are integration artifacts, not evidence of owner approval or stage deployment; checkpoint batches 1–7 still await their stated owner spot-check, approval and stage integration gates, and prestudy and learner-visible promotion remain open. |
 
 The curriculum is no longer waiting for basic architecture, tooling, native catalog approval or
 course identity. Its immediate content risk is whether the approved shells remain natural and
@@ -127,7 +127,10 @@ the owner/product system supplies the final values.
   360px, and owner-approved on 2026-08-18 as the matching canonical shells for their language loads.
   Topics 1–8 now form the first paired Freetalking batch on `stage`. Topics 10–20 are the second
   generated and independently proofread batch (FT-9 already exists), awaiting owner spot-check and
-  approval before stage integration.
+  approval before stage integration. Topics 21–33 form checkpoint 7 across
+  `talk-things-i-like-accessible` and `talk-things-i-like-full`: all 13 paired topics and 26 decks
+  passed independent semantic/pedagogic, bilingual and visual proofreading and validation, with
+  owner spot-check, approval and stage integration still pending.
 - `new_lesson.py` copies only an approved English shell, retargets stable identity and paths,
   clears inherited vocabulary, refuses overwrite and keeps non-Core tracks behind their pilot gate.
 - The running lexicon classifies new, recycled, assumed-known and receptive-only vocabulary.
@@ -151,7 +154,7 @@ the owner/product system supplies the final values.
 - `build_running_lexicon.py` generates the authored vocabulary ledger from lesson metadata.
 - `check_deck.py` checks identity, references, duplicate ids, inline code, no-yomi, tutor-script
   parity, reorder chunking, reorder answer solvability and vocabulary ownership/load.
-- Three hundred seventy regression tests prove parser contracts, shell retargeting, generated
+- Three hundred eighty-two regression tests prove parser contracts, shell retargeting, generated
   brief/map/ledger/catalog/lexicon freshness and review-intake failure cases.
 
 ### 4. Shared foundation
@@ -366,6 +369,13 @@ source-first generation, immediate independent semantic/pedagogic, bilingual and
 proofreading, exact-generation tests, the full checker, running-lexicon validation and 360px/480px
 rendered QA on 2026-08-20. Owner spot-check, approval and stage integration remain pending. All 60
 Contextual decks are now authored.
+
+Checkpoint 7 covers **13 paired Freetalking topics and 26 decks, FT 21–33**, across
+`talk-things-i-like-accessible` and `talk-things-i-like-full`. Both course variants passed
+source-first deterministic generation, immediate independent semantic/pedagogic, bilingual and
+visual proofreading, exact-generation and reviewed bilingual-contract tests, the full checker,
+running-lexicon validation and 360px/480px rendered QA on 2026-08-20. Owner spot-check, approval
+and stage integration remain pending; this checkpoint is not learner-pilot or deployment evidence.
 
 ---
 
