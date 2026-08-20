@@ -1,0 +1,734 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/39-i-might-be-late/lesson.html",
+  "lessonSha256": "c4a40c27e29bb2c17784dc01e501a96d12c725427a08fa6b52a3a8c79cc12bdd",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: I might be late (遅れるかもしれません) | Warn about an uncertain problem and offer a fallback. Please read the title aloud. 起こるか分からない問題を伝えて、代わりの案を出しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Goal orientation for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform goal orientation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for goal orientation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown.",
+      "tutorAction": "Listen to the three known words; keep this as brief activation, not new teaching.",
+      "targetOrPrompt": "Exact visible instruction/model: Words you know (知っている単語) | Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
+      "learningTarget": "Known-word activation for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform known-word activation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for known-word activation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud once.",
+      "tutorAction": "Introduce Pattern 1 in one line, have the learner read the title, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: I might be a bit late. | Use might when something is possible but not certain. Please read the title aloud. 起こる可能性はあるものの、まだ確かでないときに might を使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 transition for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 transition; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete Pattern 1 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain Pattern 1's use, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target: might be | 遅れるかもしれません | might miss | 乗り遅れるかもしれません | might need | 必要かもしれません",
+      "learningTarget": "Pattern 1 meaning and model for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 meaning and model; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "might be",
+          "遅れるかもしれません",
+          "might miss",
+          "乗り遅れるかもしれません",
+          "might need",
+          "必要かもしれません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 sentence aloud.",
+      "tutorAction": "Listen to each sentence; model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: might be | 遅れるかもしれません | might miss | 乗り遅れるかもしれません | might need | 必要かもしれません | might stay | いるかもしれません",
+      "learningTarget": "Pattern 1 read-aloud for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 read-aloud; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "might be",
+          "遅れるかもしれません",
+          "might miss",
+          "乗り遅れるかもしれません",
+          "might need",
+          "必要かもしれません",
+          "might stay",
+          "いるかもしれません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 1 operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible instruction/model: Keep the verb plain after might (might のあとは動詞の原形) | Put a plain verb after might. might のあとは動詞の原形を置きます。",
+      "learningTarget": "Pattern 1 form explanation for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 form explanation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 form explanation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the Pattern 1 form that matches each Japanese meaning, then read the completed sentence aloud.",
+      "tutorAction": "Check each choice and have the learner read the entire completed sentence before moving on.",
+      "targetOrPrompt": "Highlighted target: 遅れるかもしれません | 乗り遅れるかもしれません | 必要かもしれません | いるかもしれません Exact choice contrasts: might be vs might to be | might miss vs might to miss | might need vs might to need | might stay vs might to stay",
+      "learningTarget": "Pattern 1 meaning contrast for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning contrast—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 meaning contrast for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "The choices diagnose a real form/meaning contrast across varied rows: might be / might to be | might miss / might to miss | might need / might to need | might stay / might to stay. The learner must read each completed sentence aloud.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 meaning contrast; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "遅れるかもしれません",
+          "乗り遅れるかもしれません",
+          "必要かもしれません",
+          "いるかもしれません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put each Pattern 1 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each complete sentence; help only after an attempt.",
+      "targetOrPrompt": "Exact visible instruction/model: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。 | 少し遅れるかもしれません。 | 電車に乗り遅れるかもしれません。 | もう少し時間が必要かもしれません。 | 家にいるかもしれません。",
+      "learningTarget": "Pattern 1 word-order retrieval for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 word-order retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 word-order retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole Pattern 1 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing Pattern 1 words exactly as spoken.",
+      "targetOrPrompt": "Highlighted target: 遅れるかもしれません | 乗り遅れるかもしれません | 必要かもしれません | いるかもしれません Exact blank answers: might be | might miss | might need | might stay Lexical hints: 少し遅れる:be a bit late | 乗り遅れる:miss | 必要になる:need | 家にいる:stay home",
+      "learningTarget": "Pattern 1 controlled retrieval for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 少し遅れる:be a bit late | 乗り遅れる:miss | 必要になる:need | 家にいる:stay home; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 controlled retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "遅れるかもしれません",
+          "乗り遅れるかもしれません",
+          "必要かもしれません",
+          "いるかもしれません"
+        ],
+        "blankAnswers": [
+          "might be",
+          "might miss",
+          "might need",
+          "might stay"
+        ],
+        "hintChips": [
+          "少し遅れる:be a bit late",
+          "乗り遅れる:miss",
+          "必要になる:need",
+          "家にいる:stay home"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 1 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: I might be a bit late. | I might miss the train. | I might need more time. | I might stay home. Lexical hints: 少し遅れる:a bit late | 乗り遅れる:miss | 電車:train | 時間:time | 家:home",
+      "learningTarget": "Supported pattern 1 whole-sentence production for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—supported Pattern 1 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 1 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 少し遅れる:a bit late | 乗り遅れる:miss | 電車:train | 時間:time | 家:home; the lesson pattern still has to be produced.",
+      "articleTreatment": "Any required the stays attached to its landmark or noun phrase inside the stable target span; it is not an accidental isolated article quiz.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for supported Pattern 1 whole-sentence production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I might be a bit late.",
+          "I might miss the train.",
+          "I might need more time.",
+          "I might stay home."
+        ],
+        "hintChips": [
+          "少し遅れる:a bit late",
+          "乗り遅れる:miss",
+          "電車:train",
+          "時間:time",
+          "家:home"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personal Pattern 1 sentence that performs the exact communicative job in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “I might ___” to name one real possibility for today. Lexical hints: 少し遅れる:a bit late | 乗り遅れる:miss | 忙しい:busy",
+      "learningTarget": "Communicative pattern 1 production for Use might when something is possible but not certain.",
+      "pedagogicalValue": "This page has one distinct job—communicative Pattern 1 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 1 production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 少し遅れる:a bit late | 乗り遅れる:miss | 忙しい:busy; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for communicative Pattern 1 production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "少し遅れる:a bit late",
+          "乗り遅れる:miss",
+          "忙しい:busy"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I might ___” to name one real possibility for today."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud once.",
+      "tutorAction": "Introduce Pattern 2 in one line, have the learner read the title, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: If you are, I'll wait outside. | Use this to say what you will do if the uncertain thing happens. Please read the title aloud. まだ確かでないことが起きた場合の対応を伝えるときに使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 transition for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 transition; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete Pattern 2 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain Pattern 2's use, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target: If you are, I'll wait | もしそうなら、外で待ちます | If you're busy, I'll call | もし忙しいなら、あとで電話します | If the train is late, I'll wait | もし電車が遅れたら、ここで待ちます",
+      "learningTarget": "Pattern 2 meaning and model for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 meaning and model; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "If you are, I'll wait",
+          "もしそうなら、外で待ちます",
+          "If you're busy, I'll call",
+          "もし忙しいなら、あとで電話します",
+          "If the train is late, I'll wait",
+          "もし電車が遅れたら、ここで待ちます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 sentence aloud.",
+      "tutorAction": "Listen to each sentence; model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: If you are, I'll wait | もしそうなら、外で待ちます | If you're busy, I'll call | もし忙しいなら、あとで電話します | If the train is late, I'll wait | もし電車が遅れたら、ここで待ちます | If the café is full, I'll go | もしカフェが満席なら、別の場所へ行きます",
+      "learningTarget": "Pattern 2 read-aloud for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 read-aloud; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "If you are, I'll wait",
+          "もしそうなら、外で待ちます",
+          "If you're busy, I'll call",
+          "もし忙しいなら、あとで電話します",
+          "If the train is late, I'll wait",
+          "もし電車が遅れたら、ここで待ちます",
+          "If the café is full, I'll go",
+          "もしカフェが満席なら、別の場所へ行きます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 2 operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible instruction/model: Connect condition and response (条件と対応をつなぐ) | Use If for the uncertain condition and I'll for your response. 起こるか分からない条件には If、その場合の対応には I'll を使います。",
+      "learningTarget": "Pattern 2 form explanation for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 form explanation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 form explanation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put each Pattern 2 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each complete sentence; help only after an attempt.",
+      "targetOrPrompt": "Exact visible instruction/model: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。 | もしそうなら、外で待ちます。 | もし忙しいなら、あとで電話します。 | もし電車が遅れたら、ここで待ちます。 | もしカフェが満席なら、別の場所へ行きます。",
+      "learningTarget": "Pattern 2 word-order retrieval for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 word-order retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 word-order retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole Pattern 2 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing Pattern 2 words exactly as spoken.",
+      "targetOrPrompt": "Highlighted target: もしそうなら、外で待ちます | もし忙しいなら、あとで電話します | もし電車が遅れたら、ここで待ちます | もしカフェが満席なら、別の場所へ行きます Exact blank answers: If you are, I'll wait | If you're busy, I'll call | If the train is late, I'll wait | If the café is full, I'll go Lexical hints: 外で待つ:wait outside | あとで電話する:call later | ここで待つ:wait here | 別の場所へ行く:go somewhere else",
+      "learningTarget": "Pattern 2 controlled retrieval for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 外で待つ:wait outside | あとで電話する:call later | ここで待つ:wait here | 別の場所へ行く:go somewhere else; the lesson pattern still has to be produced.",
+      "articleTreatment": "Any required the stays attached to its landmark or noun phrase inside the stable target span; it is not an accidental isolated article quiz.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 controlled retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "もしそうなら、外で待ちます",
+          "もし忙しいなら、あとで電話します",
+          "もし電車が遅れたら、ここで待ちます",
+          "もしカフェが満席なら、別の場所へ行きます"
+        ],
+        "blankAnswers": [
+          "If you are, I'll wait",
+          "If you're busy, I'll call",
+          "If the train is late, I'll wait",
+          "If the café is full, I'll go"
+        ],
+        "hintChips": [
+          "外で待つ:wait outside",
+          "あとで電話する:call later",
+          "ここで待つ:wait here",
+          "別の場所へ行く:go somewhere else"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 2 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: If you are, I'll wait outside. | If you're busy, I'll call later. | If the train is late, I'll wait here. | If the café is full, I'll go somewhere else. Lexical hints: 待つ:wait | 忙しい:busy | 電話する:call | 電車:train | 待つ:wait | カフェ:café | 別の場所:somewhere else",
+      "learningTarget": "Supported pattern 2 whole-sentence production for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—supported Pattern 2 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 2 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 待つ:wait | 忙しい:busy | 電話する:call | 電車:train | 待つ:wait | カフェ:café | 別の場所:somewhere else; the lesson pattern still has to be produced.",
+      "articleTreatment": "Any required the stays attached to its landmark or noun phrase inside the stable target span; it is not an accidental isolated article quiz.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for supported Pattern 2 whole-sentence production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "If you are, I'll wait outside.",
+          "If you're busy, I'll call later.",
+          "If the train is late, I'll wait here.",
+          "If the café is full, I'll go somewhere else."
+        ],
+        "hintChips": [
+          "待つ:wait",
+          "忙しい:busy",
+          "電話する:call",
+          "電車:train",
+          "待つ:wait",
+          "カフェ:café",
+          "別の場所:somewhere else"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personal Pattern 2 sentence that performs the exact communicative job in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “If ___, I'll ___” to give one useful backup plan. Lexical hints: 待つ:wait | 電話する:call | 別の場所:somewhere else",
+      "learningTarget": "Communicative pattern 2 production for Use this to say what you will do if the uncertain thing happens.",
+      "pedagogicalValue": "This page has one distinct job—communicative Pattern 2 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 2 production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 待つ:wait | 電話する:call | 別の場所:somewhere else; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for communicative Pattern 2 production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "待つ:wait",
+          "電話する:call",
+          "別の場所:somewhere else"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “If ___, I'll ___” to give one useful backup plan."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the conversation transition and get ready to role-play.",
+      "tutorAction": "Introduce the two-pattern conversation briefly, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: Use it in a conversation (会話で使おう) | Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
+      "learningTarget": "Conversation transition for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—conversation transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform conversation transition for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for conversation transition; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Play Me and read every learner line aloud in the model role-play.",
+      "tutorAction": "Take the named partner role and read only the partner lines.",
+      "targetOrPrompt": "Highlighted target: might be | 遅れるかもしれません | If you are, I'll wait | もしそうなら、外で待ちます",
+      "learningTarget": "Two-pattern model role-play for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—two-pattern model role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern model role-play for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for two-pattern model role-play; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "might be",
+          "遅れるかもしれません",
+          "If you are, I'll wait",
+          "もしそうなら、外で待ちます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Play Me and say each complete role-play line, including the missing target words.",
+      "tutorAction": "Take the named partner role, pause for each Me line, and type only the missing words.",
+      "targetOrPrompt": "Exact blank answers: might be | If you are, I'll wait",
+      "learningTarget": "Two-pattern scaffolded role-play for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—two-pattern scaffolded role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern scaffolded role-play for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for two-pattern scaffolded role-play; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "might be",
+          "If you are, I'll wait"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the real topic question, react to a follow-up, then ask How about you?.",
+      "tutorAction": "Ask the displayed question, follow the most interesting detail, and give a real brief answer when asked back.",
+      "targetOrPrompt": "Exact learner prompt/ask-back: Do you usually make a backup plan? Why or why not? | How about you?",
+      "learningTarget": "Reciprocal free talk for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—reciprocal Free Talk—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform reciprocal Free Talk for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for reciprocal Free Talk; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Do you usually make a backup plan? Why or why not?",
+          "How about you?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Play Me in the new situation and say each complete line, including the missing target words.",
+      "tutorAction": "Take the named partner role and pause for each complete Me line.",
+      "targetOrPrompt": "Exact blank answers: might miss | If the train is late, I'll wait",
+      "learningTarget": "Transfer role-play for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform transfer role-play for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Any required the stays attached to its landmark or noun phrase inside the stable target span; it is not an accidental isolated article quiz.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for transfer role-play; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "might miss",
+          "If the train is late, I'll wait"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two expressions and choose by intended meaning.",
+      "tutorAction": "Briefly explain the practical difference and check the two examples.",
+      "targetOrPrompt": "Exact visible instruction/model: Might or may? (might と may) | Both express possibility. “May” can sound a little more formal in an everyday warning. どちらも可能性を表します。日常の注意では「may」のほうが少し改まって聞こえることがあります。",
+      "learningTarget": "Pragmatic nuance for state an uncertain possibility with might + plain verb and give a fallback with If + condition, I'll + response",
+      "pedagogicalValue": "This page has one distinct job—pragmatic nuance—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform pragmatic nuance for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for pragmatic nuance; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

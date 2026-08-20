@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/38-let-me-help/lesson.html",
+  "lessonSha256": "a4ec3075478b4cec8d4f12ae180b1f0b771532703abdee782798d48f7819689b",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: Let me help (私が手伝います) | Offer help now and make one promise with a deadline. Please read the title aloud. その場で手伝いを申し出て、期限つきの約束を一つしましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Goal orientation for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform goal orientation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for goal orientation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown.",
+      "tutorAction": "Listen to the three known words; keep this as brief activation, not new teaching.",
+      "targetOrPrompt": "Exact visible instruction/model: Words you know (知っている単語) | Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
+      "learningTarget": "Known-word activation for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform known-word activation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for known-word activation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud once.",
+      "tutorAction": "Introduce Pattern 1 in one line, have the learner read the title, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: Let me carry that for you. | Use this when you offer to do something yourself right now. Please read the title aloud. 今その場で自分が何かをすると申し出るときに使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 transition for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 transition; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete Pattern 1 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain Pattern 1's use, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target: Let me carry | 私が運びますよ | Let me open | 私が開けますよ | Let me check | 私が確認します",
+      "learningTarget": "Pattern 1 meaning and model for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 meaning and model; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Let me carry",
+          "私が運びますよ",
+          "Let me open",
+          "私が開けますよ",
+          "Let me check",
+          "私が確認します"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 sentence aloud.",
+      "tutorAction": "Listen to each sentence; model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: Let me carry | 私が運びますよ | Let me open | 私が開けますよ | Let me check | 私が確認します | Let me call | 私が電話します",
+      "learningTarget": "Pattern 1 read-aloud for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 read-aloud; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Let me carry",
+          "私が運びますよ",
+          "Let me open",
+          "私が開けますよ",
+          "Let me check",
+          "私が確認します",
+          "Let me call",
+          "私が電話します"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 1 operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible instruction/model: Use a plain verb after Let me (Let me のあとは動詞の原形) | Use Let me plus a plain verb to offer to do the action yourself. 自分がその行動をすると申し出るときは Let me のあとに動詞の原形を置きます。",
+      "learningTarget": "Pattern 1 form explanation for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 form explanation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 form explanation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put each Pattern 1 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each complete sentence; help only after an attempt.",
+      "targetOrPrompt": "Exact visible instruction/model: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。 | それ、私が運びますよ。 | ドアは私が開けますよ。 | 時間は私が確認します。 | ホテルには私が電話します。",
+      "learningTarget": "Pattern 1 word-order retrieval for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 word-order retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 word-order retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole Pattern 1 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing Pattern 1 words exactly as spoken.",
+      "targetOrPrompt": "Highlighted target: 私が運びますよ | 私が開けますよ | 私が確認します | 私が電話します Exact blank answers: Let me carry | Let me open | Let me check | Let me call Lexical hints: 運ぶ:carry | 開ける:open | 確認する:check | 電話する:call",
+      "learningTarget": "Pattern 1 controlled retrieval for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 運ぶ:carry | 開ける:open | 確認する:check | 電話する:call; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 1 controlled retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "私が運びますよ",
+          "私が開けますよ",
+          "私が確認します",
+          "私が電話します"
+        ],
+        "blankAnswers": [
+          "Let me carry",
+          "Let me open",
+          "Let me check",
+          "Let me call"
+        ],
+        "hintChips": [
+          "運ぶ:carry",
+          "開ける:open",
+          "確認する:check",
+          "電話する:call"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 1 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: Let me carry that for you. | Let me open the door for you. | Let me check the time for you. | Let me call the hotel for you. Lexical hints: 運ぶ:carry | ドア:door | 時間:time | ホテル:hotel | 電話する:call",
+      "learningTarget": "Supported pattern 1 whole-sentence production for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—supported Pattern 1 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 1 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 運ぶ:carry | ドア:door | 時間:time | ホテル:hotel | 電話する:call; the lesson pattern still has to be produced.",
+      "articleTreatment": "Any required the stays attached to its landmark or noun phrase inside the stable target span; it is not an accidental isolated article quiz.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for supported Pattern 1 whole-sentence production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Let me carry that for you.",
+          "Let me open the door for you.",
+          "Let me check the time for you.",
+          "Let me call the hotel for you."
+        ],
+        "hintChips": [
+          "運ぶ:carry",
+          "ドア:door",
+          "時間:time",
+          "ホテル:hotel",
+          "電話する:call"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personal Pattern 1 sentence that performs the exact communicative job in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “Let me ___ for you” to offer help with one real task. Lexical hints: 箱を運ぶ:carry the box",
+      "learningTarget": "Communicative pattern 1 production for Use this when you offer to do something yourself right now.",
+      "pedagogicalValue": "This page has one distinct job—communicative Pattern 1 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 1 production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 箱を運ぶ:carry the box; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for communicative Pattern 1 production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "箱を運ぶ:carry the box"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Let me ___ for you” to offer help with one real task."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud once.",
+      "tutorAction": "Introduce Pattern 2 in one line, have the learner read the title, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: Don't worry, I'll send it by noon. | Use this for a promise you decide to make as you speak. Please read the title aloud. 話しながら今決めた約束をするときに使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 transition for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 transition; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete Pattern 2 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain Pattern 2's use, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target: Don't worry, I'll send it | 送ります | Don't worry, I'll call you | 電話します | Don't worry, I'll finish it | 終わらせます",
+      "learningTarget": "Pattern 2 meaning and model for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 meaning and model; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Don't worry, I'll send it",
+          "送ります",
+          "Don't worry, I'll call you",
+          "電話します",
+          "Don't worry, I'll finish it",
+          "終わらせます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 sentence aloud.",
+      "tutorAction": "Listen to each sentence; model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: Don't worry, I'll send it | 送ります | Don't worry, I'll call you | 電話します | Don't worry, I'll finish it | 終わらせます | Don't worry, I'll bring it | 持ってきます",
+      "learningTarget": "Pattern 2 read-aloud for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 read-aloud; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Don't worry, I'll send it",
+          "送ります",
+          "Don't worry, I'll call you",
+          "電話します",
+          "Don't worry, I'll finish it",
+          "終わらせます",
+          "Don't worry, I'll bring it",
+          "持ってきます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 2 operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible instruction/model: Use I'll for a new decision (今決めたことには I'll) | Use I'll for a decision you make as you speak, then name the deadline. 話しながら今決めたことには I'll を使い、そのあとに期限を伝えます。",
+      "learningTarget": "Pattern 2 form explanation for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 form explanation for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 form explanation; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put each Pattern 2 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each complete sentence; help only after an attempt.",
+      "targetOrPrompt": "Exact visible instruction/model: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。 | 心配しないで、正午までに送ります。 | 心配しないで、6時までに電話します。 | 心配しないで、金曜日までに終わらせます。 | 心配しないで、明日までに持ってきます。",
+      "learningTarget": "Pattern 2 word-order retrieval for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 word-order retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 word-order retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole Pattern 2 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing Pattern 2 words exactly as spoken.",
+      "targetOrPrompt": "Highlighted target: 送ります | 電話します | 終わらせます | 持ってきます Exact blank answers: Don't worry, I'll send it | Don't worry, I'll call you | Don't worry, I'll finish it | Don't worry, I'll bring it Lexical hints: 送る:send | 電話する:call | 終える:finish | 持ってくる:bring",
+      "learningTarget": "Pattern 2 controlled retrieval for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 送る:send | 電話する:call | 終える:finish | 持ってくる:bring; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for Pattern 2 controlled retrieval; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "送ります",
+          "電話します",
+          "終わらせます",
+          "持ってきます"
+        ],
+        "blankAnswers": [
+          "Don't worry, I'll send it",
+          "Don't worry, I'll call you",
+          "Don't worry, I'll finish it",
+          "Don't worry, I'll bring it"
+        ],
+        "hintChips": [
+          "送る:send",
+          "電話する:call",
+          "終える:finish",
+          "持ってくる:bring"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 2 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: Don't worry, I'll send it by noon. | Don't worry, I'll call you by six. | Don't worry, I'll finish it by Friday. | Don't worry, I'll bring it by tomorrow. Lexical hints: 送る:send | 正午:noon | 電話する:call | 終える:finish | 金曜日:Friday | 持ってくる:bring | 明日:tomorrow",
+      "learningTarget": "Supported pattern 2 whole-sentence production for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—supported Pattern 2 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 2 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 送る:send | 正午:noon | 電話する:call | 終える:finish | 金曜日:Friday | 持ってくる:bring | 明日:tomorrow; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for supported Pattern 2 whole-sentence production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Don't worry, I'll send it by noon.",
+          "Don't worry, I'll call you by six.",
+          "Don't worry, I'll finish it by Friday.",
+          "Don't worry, I'll bring it by tomorrow."
+        ],
+        "hintChips": [
+          "送る:send",
+          "正午:noon",
+          "電話する:call",
+          "終える:finish",
+          "金曜日:Friday",
+          "持ってくる:bring",
+          "明日:tomorrow"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personal Pattern 2 sentence that performs the exact communicative job in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “Don't worry, I'll ___ by ___” to make one real promise with a deadline. Lexical hints: ファイルを送る:send the files | 正午:noon",
+      "learningTarget": "Communicative pattern 2 production for Use this for a promise you decide to make as you speak.",
+      "pedagogicalValue": "This page has one distinct job—communicative Pattern 2 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 2 production for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: ファイルを送る:send the files | 正午:noon; the lesson pattern still has to be produced.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for communicative Pattern 2 production; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "ファイルを送る:send the files",
+          "正午:noon"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Don't worry, I'll ___ by ___” to make one real promise with a deadline."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the conversation transition and get ready to role-play.",
+      "tutorAction": "Introduce the two-pattern conversation briefly, then move on.",
+      "targetOrPrompt": "Exact visible instruction/model: Use it in a conversation (会話で使おう) | Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
+      "learningTarget": "Conversation transition for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—conversation transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform conversation transition for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for conversation transition; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Play Me and read every learner line aloud in the model role-play.",
+      "tutorAction": "Take the named partner role and read only the partner lines.",
+      "targetOrPrompt": "Highlighted target: Let me carry | 私が運びますよ | Don't worry, I'll send it | 送ります",
+      "learningTarget": "Two-pattern model role-play for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—two-pattern model role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern model role-play for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for two-pattern model role-play; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Let me carry",
+          "私が運びますよ",
+          "Don't worry, I'll send it",
+          "送ります"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Play Me and say each complete role-play line, including the missing target words.",
+      "tutorAction": "Take the named partner role, pause for each Me line, and type only the missing words.",
+      "targetOrPrompt": "Exact blank answers: Let me carry | Don't worry, I'll send it",
+      "learningTarget": "Two-pattern scaffolded role-play for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—two-pattern scaffolded role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern scaffolded role-play for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for two-pattern scaffolded role-play; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Let me carry",
+          "Don't worry, I'll send it"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the real topic question, react to a follow-up, then ask How about you?.",
+      "tutorAction": "Ask the displayed question, follow the most interesting detail, and give a real brief answer when asked back.",
+      "targetOrPrompt": "Exact learner prompt/ask-back: What kind of help do you appreciate most when you're busy? | How about you?",
+      "learningTarget": "Reciprocal free talk for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—reciprocal Free Talk—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform reciprocal Free Talk for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for reciprocal Free Talk; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What kind of help do you appreciate most when you're busy?",
+          "How about you?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Play Me in the new situation and say each complete line, including the missing target words.",
+      "tutorAction": "Take the named partner role and pause for each complete Me line.",
+      "targetOrPrompt": "Exact blank answers: Let me open | Don't worry, I'll bring it",
+      "learningTarget": "Transfer role-play for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform transfer role-play for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for transfer role-play; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Let me open",
+          "Don't worry, I'll bring it"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two expressions and choose by intended meaning.",
+      "tutorAction": "Briefly explain the practical difference and check the two examples.",
+      "targetOrPrompt": "Exact visible instruction/model: Neutral or reassuring? (ふつう・安心させる) | Both accept the task. “I've got it” adds a stronger sense that the other person can stop worrying. どちらも引き受ける言い方です。「I've got it」は、もう心配しなくてよいという安心感を強く加えます。",
+      "learningTarget": "Pragmatic nuance for offer immediate help with Let me + action and make a new promise with Don't worry, I'll + action + deadline",
+      "pedagogicalValue": "This page has one distinct job—pragmatic nuance—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
+      "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform pragmatic nuance for this exact form or communicative meaning before the lesson increases independence.",
+      "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases unless they are inseparable from the authored target; no unsupported article blank is added.",
+      "choiceQuality": "No answer-choice set is used on this page; its job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The page uses the established Core component for pragmatic nuance; capture fields appear only when the learner must produce an answer that the tutor records.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
