@@ -966,21 +966,21 @@ real scene → a time you chose the opposite → change the conditions → what 
 where your choice flips. Neither side is correct, and **the tutor must be able to give their own
 pick and a reason** — otherwise it is a quiz.*
 
-**107. More money or more time?** — *"Which do you need more of right now?"* `KR 11-1`
-**108. A hundred friends or three close ones?** — *"Which do you actually have: lots of friends or a few close ones?"* `KR 11-2`
-**109. Endless summer or endless winter?** — *"Pick one, then tell me about your worst season."* `KR 11-3`
-**110. Morning person or night owl?** — *"What time did you actually get up today?"* `KR 11-4`
-**111. A planned trip or a spontaneous one?** — *"Think about your last trip. Was it planned or spontaneous?"* `KR 11-5`
-**112. Travelling alone or with other people?** — *"On your last trip, did you travel alone or with other people?"* `KR 11-6`
-**113. Life in the city or the countryside?** — *"Where do you live now, and is that a choice?"* `KR 11-7`
-**114. A summer without internet or air conditioning?** — *"One whole summer: no internet or no air conditioning?"* `KR 11-8`
-**115. Better work-life balance or a higher salary?** — *"Which does your current job give you more of: time or money?"* `KR 11-9`
-**116. Working from home or going into the office?** — *"Which did you do more this week: work from home or go into the office?"* `KR 11-10`
-**117. Studying in a café or at home?** — *"Where were you the last time you really concentrated?"* `KR 11-11`
-**118. Shopping online or in a shop?** — *"What did you last buy, and did you buy it online or in a shop?"* `KR 11-12`
-**119. Remembering everything or forgetting bad memories?** — *"Would you rather remember everything or forget your worst memory?"* `KR 11-13`
-**120. Being rich and anonymous or respected on an ordinary income?** — *"Would you rather be rich and anonymous or respected on an ordinary income?"* `KR 11-14` `深く`
-**121. Being great at one thing or good at many?** — *"Right now, are you great at one thing or good at many?"* **NEW → KR**
+**107. More money or more time?** — *"If tomorrow came with one extra hour or fifty extra dollars, which would help more?"* `KR 11-1`
+**108. A hundred friends or three close ones?** — *"For one difficult week, would you rather have a hundred friendly contacts or three close friends?"* `KR 11-2`
+**109. Endless summer or endless winter?** — *"If one season had to last all year, would you choose summer or winter?"* `KR 11-3`
+**110. Morning person or night owl?** — *"For your most important tasks, would you rather start early or work late?"* `KR 11-4`
+**111. A planned trip or a spontaneous one?** — *"For a three-day trip, would you plan each day or decide as you go?"* `KR 11-5`
+**112. Travelling alone or with other people?** — *"For a new destination, would you rather travel alone or with someone?"* `KR 11-6`
+**113. Life in the city or the countryside?** — *"For everyday life, would you choose a lively city or a quiet rural area?"* `KR 11-7`
+**114. A summer without internet or air conditioning?** — *"For one summer, would you give up internet or air conditioning?"* `KR 11-8`
+**115. Better work-life balance or a higher salary?** — *"For the next year, would you choose more free time or a higher income?"* `KR 11-9`
+**116. Working from home or going into the office?** — *"For focused work, would you choose home or a shared workplace?"* `KR 11-10`
+**117. Studying in a café or at home?** — *"For two hours of serious study, would you choose a café or home?"* `KR 11-11`
+**118. Shopping online or in a shop?** — *"For an important purchase, would you rather buy online or in a shop?"* `KR 11-12`
+**119. Remembering everything or forgetting bad memories?** — *"Would you rather remember every ordinary detail or be able to forget painful memories?"* `KR 11-13`
+**120. Being rich and anonymous or respected on an ordinary income?** — *"Would you rather be wealthy and anonymous or respected on an ordinary income?"* `KR 11-14` `深く`
+**121. Being great at one thing or good at many?** — *"Would you rather master one skill or become good at many?"* **NEW → KR**
 
 *Every entry's italic line is its `Opens:`* — each one converts an abstract either/or into a
 question about the learner's actual week, which is what makes the choice arrive in three seconds.

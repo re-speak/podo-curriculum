@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/111-a-planned-trip-or-a-spontaneous-one/lesson.html",
+  "lessonSha256": "f2a805574f8d0a3454afc8a3454b9e9df8b1c001c774dd437e05545ea653adc6",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “A planned trip or a spontaneous one?” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "A planned trip or a spontaneous one? / 計画的な旅、それとも気ままな旅？. Let's compare a planned trip and a spontaneous trip, then explain what could change your choice. / 計画的な旅行と行き当たりばったりの旅行を比べ、何が変われば選択も変わるか話しましょう。",
+      "learningTarget": "Orient the learner to a balanced conversation about A planned trip or a spontaneous one? without supplying a preferred answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; the learner’s preference is not graded.",
+      "nonTargetSupport": "The Japanese can-do “計画的な旅行と行き当たりばったりの旅行を比べ、何が変われば選択も変わるか話しましょう。” and title “計画的な旅、それとも気ままな旅？” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice UI appears; the title names two defensible sides for later discussion.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answer, or second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What makes the choice change / 選択を変えるもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten topic-specific claims, from “Flights and popular rooms become harder or more expensive to book near the date.” to “Many good trips use a planned backbone with open space around it.”, as optional input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds ten distinct factual or practical angles that can deepen the later choice conversation.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claims are available; selective gloss support is last-minute plan=直前の計画.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “What can make a trip better after the original plan fails?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What can make a trip better after the original plan fails?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What can make a trip better after the original plan fails?” / “計画どおりにならなかった旅行を、よいものにするのは何ですか？” Follow-ups: “How quickly should the plan change?” and “Can the surprise become a good memory?”",
+      "learningTarget": "Develop the distinct “When a plan fails” angle of A planned trip or a spontaneous one? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “When a plan fails” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What can make a trip better after the original plan fails?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “計画どおりにならなかった旅行を、よいものにするのは何ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can make a trip better after the original plan fails?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “What would you decide first for a short trip tomorrow?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What would you decide first for a short trip tomorrow?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What would you decide first for a short trip tomorrow?” / “明日短い旅行へ行くなら、最初に何を決めますか？” Follow-ups: “What could stay open?” and “Would transport or accommodation come first?”",
+      "learningTarget": "Develop the distinct “The first decision” angle of A planned trip or a spontaneous one? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “The first decision” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What would you decide first for a short trip tomorrow?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “明日短い旅行へ行くなら、最初に何を決めますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you decide first for a short trip tomorrow?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “For a three-day trip, would you plan each day or decide as you go?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “For a three-day trip, would you plan each day or decide as you go?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “For a three-day trip, would you plan each day or decide as you go?” / “三日間の旅行なら、毎日計画するのと、その場で決めるのと、どちらがよいですか？” Follow-ups: “What would you book in advance?” and “What would you leave undecided?”",
+      "learningTarget": "Develop the distinct “Plan or improvise” angle of A planned trip or a spontaneous one? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Plan or improvise” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “For a three-day trip, would you plan each day or decide as you go?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “三日間の旅行なら、毎日計画するのと、その場で決めるのと、どちらがよいですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "For a three-day trip, would you plan each day or decide as you go?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “How would travel change if every trip had to follow your chosen style?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How would travel change if every trip had to follow your chosen style?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “How would travel change if every trip had to follow your chosen style?” / “すべての旅行がそのスタイルなら、何が変わりますか？” Follow-ups: “Would preparation take longer?” and “Would the trip feel freer?”",
+      "learningTarget": "Develop the distinct “Every trip” angle of A planned trip or a spontaneous one? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Every trip” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How would travel change if every trip had to follow your chosen style?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “すべての旅行がそのスタイルなら、何が変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How would travel change if every trip had to follow your chosen style?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “Would you feel relaxed on a week-long trip with only the room booked?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Would you feel relaxed on a week-long trip with only the room booked?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Would you feel relaxed on a week-long trip with only the room booked?” / “一週間の旅行で宿だけ予約してあれば、気楽ですか？” Follow-ups: “Would you also fix transport?” and “What would you do on the first day?”",
+      "learningTarget": "Develop the distinct “Only the room is booked” angle of A planned trip or a spontaneous one? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Only the room is booked” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Would you feel relaxed on a week-long trip with only the room booked?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “一週間の旅行で宿だけ予約してあれば、気楽ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you feel relaxed on a week-long trip with only the room booked?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “How would you travel with someone who plans very differently?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How would you travel with someone who plans very differently?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “How would you travel with someone who plans very differently?” / “計画のしかたが違う人と、どう旅行しますか？” Follow-ups: “What must be agreed in advance?” and “Who decides when you disagree?”",
+      "learningTarget": "Develop the distinct “A different planner” angle of A planned trip or a spontaneous one? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A different planner” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How would you travel with someone who plans very differently?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “計画のしかたが違う人と、どう旅行しますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How would you travel with someone who plans very differently?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “What kind of trip would make you use the opposite style?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What kind of trip would make you use the opposite style?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What kind of trip would make you use the opposite style?” / “どんな旅行なら、反対のスタイルを選びますか？” Follow-ups: “Would a first visit matter?” and “Would travelling alone matter?”",
+      "learningTarget": "Develop the distinct “A trip that changes the style” angle of A planned trip or a spontaneous one? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A trip that changes the style” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What kind of trip would make you use the opposite style?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どんな旅行なら、反対のスタイルを選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What kind of trip would make you use the opposite style?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Use the exact ask-back “Ask your tutor whether they would choose a planned trip or a spontaneous trip, and why.” to invite the tutor’s real answer, then compare the two positions.",
+      "tutorAction": "Let the learner ask “Ask your tutor whether they would choose a planned trip or a spontaneous trip, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.",
+      "targetOrPrompt": "Reciprocal ask-back: “Ask your tutor whether they would choose a planned trip or a spontaneous trip, and why.” / “チューターなら計画的な旅行と行き当たりばったりの旅行のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “What does your tutor always book first?” and “Which part of a trip do they leave open?”",
+      "learningTarget": "Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.",
+      "pedagogicalValue": "Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.",
+      "failureDiagnosis": "If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.",
+      "nonTargetSupport": "The Japanese prompt “チューターなら計画的な旅行と行き当たりばったりの旅行のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Ask your tutor whether they would choose a planned trip or a spontaneous trip, and why."
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

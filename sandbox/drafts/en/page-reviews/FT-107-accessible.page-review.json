@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/107-more-money-or-more-time/lesson.html",
+  "lessonSha256": "556ea84009c8c1c51a97ea26001a9151cdbddb424a48e15345c6d8f78ed2afec",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “More money or more time?” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "More money or more time? / もっとお金、それとももっと時間？. Let's compare more money and more time, then explain what could change your choice. / もっとお金ともっと時間を比べ、何が変われば選択も変わるか話しましょう。",
+      "learningTarget": "Orient the learner to a balanced conversation about More money or more time? without supplying a preferred answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; the learner’s preference is not graded.",
+      "nonTargetSupport": "The Japanese can-do “もっとお金ともっと時間を比べ、何が変われば選択も変わるか話しましょう。” and title “もっとお金、それとももっと時間？” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice UI appears; the title names two defensible sides for later discussion.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answer, or second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What makes the choice change / 選択を変えるもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten topic-specific claims, from “Money is most useful when it solves a cost that cannot wait.” to “The useful goal is often enough money and enough time, not the maximum amount of either.”, as optional input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds ten distinct factual or practical angles that can deepen the later choice conversation.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claims are available; selective gloss support is time-poor=時間に余裕がない.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “When have you spent extra time to save money?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “When have you spent extra time to save money?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “When have you spent extra time to save money?” / “お金を節約するために、時間を多く使うのはどんなときですか？” Follow-ups: “What did the slower option save?” and “Would you make the same trade again?”",
+      "learningTarget": "Develop the distinct “Time costs money” angle of More money or more time? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Time costs money” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “When have you spent extra time to save money?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “お金を節約するために、時間を多く使うのはどんなときですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When have you spent extra time to save money?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “What would you do with three unexpected free hours?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What would you do with three unexpected free hours?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What would you do with three unexpected free hours?” / “突然、自由な時間が三時間できたら、何をしますか？” Follow-ups: “What would you do first?” and “Who, if anyone, would you spend the time with?”",
+      "learningTarget": "Develop the distinct “Three free hours” angle of More money or more time? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Three free hours” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What would you do with three unexpected free hours?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “突然、自由な時間が三時間できたら、何をしますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you do with three unexpected free hours?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “If tomorrow came with one extra hour or fifty extra dollars, which would help more?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” / “明日、自由な時間が一時間増えるか、五十ドル増えるなら、どちらがより役立ちますか？” Follow-ups: “What would it make possible?” and “What is the strongest reason for the other side?”",
+      "learningTarget": "Develop the distinct “Choose one” angle of More money or more time? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Choose one” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “明日、自由な時間が一時間増えるか、五十ドル増えるなら、どちらがより役立ちますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If tomorrow came with one extra hour or fifty extra dollars, which would help more?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “If you got more of your choice, what would change first?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “If you got more of your choice, what would change first?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “If you got more of your choice, what would change first?” / “選んだものが増えたら、最初に何が変わりますか？” Follow-ups: “Would a normal weekday look different?” and “Would it affect anyone else?”",
+      "learningTarget": "Develop the distinct “What changes first” angle of More money or more time? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “What changes first” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “If you got more of your choice, what would change first?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “選んだものが増えたら、最初に何が変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If you got more of your choice, what would change first?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “When would the other option matter more?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “When would the other option matter more?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “When would the other option matter more?” / “どんなときに、反対の選択のほうが大切ですか？” Follow-ups: “What becomes scarce in that situation?” and “How long would the change last?”",
+      "learningTarget": "Develop the distinct “The other side” angle of More money or more time? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “The other side” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “When would the other option matter more?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どんなときに、反対の選択のほうが大切ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When would the other option matter more?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “Would you accept more pay if it required ten extra work hours every week?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Would you accept more pay if it required ten extra work hours every week?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Would you accept more pay if it required ten extra work hours every week?” / “給料が増えても毎週十時間多く働くなら、受け入れますか？” Follow-ups: “What would those ten hours replace?” and “Would a clear end date change the answer?”",
+      "learningTarget": "Develop the distinct “Ten extra hours” angle of More money or more time? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Ten extra hours” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Would you accept more pay if it required ten extra work hours every week?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “給料が増えても毎週十時間多く働くなら、受け入れますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you accept more pay if it required ten extra work hours every week?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “What future change could make you switch your answer?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What future change could make you switch your answer?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What future change could make you switch your answer?” / “将来、どんな変化があれば答えが逆になりますか？” Follow-ups: “Could you prepare for that change now?” and “Would the switch be temporary or lasting?”",
+      "learningTarget": "Develop the distinct “A future change” angle of More money or more time? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A future change” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What future change could make you switch your answer?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “将来、どんな変化があれば答えが逆になりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What future change could make you switch your answer?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Use the exact ask-back “Ask your tutor whether they would choose more money or more time, and why.” to invite the tutor’s real answer, then compare the two positions.",
+      "tutorAction": "Let the learner ask “Ask your tutor whether they would choose more money or more time, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.",
+      "targetOrPrompt": "Reciprocal ask-back: “Ask your tutor whether they would choose more money or more time, and why.” / “チューターならもっとお金ともっと時間のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which part of your tutor's answer uses time differently?” and “What expense would change their choice?”",
+      "learningTarget": "Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.",
+      "pedagogicalValue": "Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.",
+      "failureDiagnosis": "If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.",
+      "nonTargetSupport": "The Japanese prompt “チューターならもっとお金ともっと時間のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Ask your tutor whether they would choose more money or more time, and why."
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

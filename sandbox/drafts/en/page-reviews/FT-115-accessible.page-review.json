@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/115-better-work-life-balance-or-a-higher-salary/lesson.html",
+  "lessonSha256": "a4a8348c854113416e5011ecc1f1bd15d9fae7d733e7059fd9a75c6cf2400ec5",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “Better work-life balance or a higher salary?” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "Better work-life balance or a higher salary? / よりよい生活との両立、それとも高い給料？. Let's compare better work-life balance and a higher salary, then explain what could change your choice. / よりよい仕事と生活の両立とより高い給料を比べ、何が変われば選択も変わるか話しましょう。",
+      "learningTarget": "Orient the learner to a balanced conversation about Better work-life balance or a higher salary? without supplying a preferred answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; the learner’s preference is not graded.",
+      "nonTargetSupport": "The Japanese can-do “よりよい仕事と生活の両立とより高い給料を比べ、何が変われば選択も変わるか話しましょう。” and title “よりよい生活との両立、それとも高い給料？” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice UI appears; the title names two defensible sides for later discussion.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answer, or second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What makes the choice change / 選択を変えるもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten topic-specific claims, from “Higher pay can create security without making an exhausting schedule sustainable.” to “The better offer protects the needs that cannot be postponed.”, as optional input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds ten distinct factual or practical angles that can deepen the later choice conversation.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claims are available; selective gloss support is Time autonomy=時間の自由.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “What makes a day off feel genuinely restful?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What makes a day off feel genuinely restful?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What makes a day off feel genuinely restful?” / “しっかり休めたと感じるには、何が必要ですか？” Follow-ups: “What time must obligations end?” and “What would you do with the evening?”",
+      "learningTarget": "Develop the distinct “A well-rested day” angle of Better work-life balance or a higher salary? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A well-rested day” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What makes a day off feel genuinely restful?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “しっかり休めたと感じるには、何が必要ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What makes a day off feel genuinely restful?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “Which part of the day would you refuse to give up?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which part of the day would you refuse to give up?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Which part of the day would you refuse to give up?” / “一日の中で、必ず守りたい自分の時間はいつですか？” Follow-ups: “What belongs in that time?” and “How could you protect it during a busy week?”",
+      "learningTarget": "Develop the distinct “Time you protect” angle of Better work-life balance or a higher salary? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Time you protect” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which part of the day would you refuse to give up?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “一日の中で、必ず守りたい自分の時間はいつですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which part of the day would you refuse to give up?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “For the next year, would you choose more free time or a higher income?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “For the next year, would you choose more free time or a higher income?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “For the next year, would you choose more free time or a higher income?” / “これから一年、自由な時間と高い収入のどちらを選びますか？” Follow-ups: “Which need is more urgent?” and “What is the main benefit of the other side?”",
+      "learningTarget": "Develop the distinct “Time or salary” angle of Better work-life balance or a higher salary? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Time or salary” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “For the next year, would you choose more free time or a higher income?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “これから一年、自由な時間と高い収入のどちらを選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "For the next year, would you choose more free time or a higher income?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “How would daily life change if you could gain only your choice?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How would daily life change if you could gain only your choice?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “How would daily life change if you could gain only your choice?” / “選んだ条件だけがよくなれば、日常はどう変わりますか？” Follow-ups: “Would working hours change?” and “Which part of current life would be lost?”",
+      "learningTarget": "Develop the distinct “Only one benefit” angle of Better work-life balance or a higher salary? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Only one benefit” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How would daily life change if you could gain only your choice?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “選んだ条件だけがよくなれば、日常はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How would daily life change if you could gain only your choice?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “Would high pay be worth frequently losing nights and weekends?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Would high pay be worth frequently losing nights and weekends?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Would high pay be worth frequently losing nights and weekends?” / “高い給料でも夜や週末をよく諦めるなら、受け入れますか？” Follow-ups: “Which commitment could not be sacrificed?” and “Would three months feel different from three years?”",
+      "learningTarget": "Develop the distinct “Nights and weekends” angle of Better work-life balance or a higher salary? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Nights and weekends” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Would high pay be worth frequently losing nights and weekends?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “高い給料でも夜や週末をよく諦めるなら、受け入れますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would high pay be worth frequently losing nights and weekends?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “Would a clear one-year limit make high pay easier to choose?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Would a clear one-year limit make high pay easier to choose?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Would a clear one-year limit make high pay easier to choose?” / “ちょうど一年だけなら、高い給料を選びやすくなりますか？” Follow-ups: “What would the year need to achieve?” and “How would you recover afterward?”",
+      "learningTarget": "Develop the distinct “Exactly one year” angle of Better work-life balance or a higher salary? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Exactly one year” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Would a clear one-year limit make high pay easier to choose?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “ちょうど一年だけなら、高い給料を選びやすくなりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would a clear one-year limit make high pay easier to choose?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “What new responsibility or goal would make you switch?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What new responsibility or goal would make you switch?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What new responsibility or goal would make you switch?” / “どんな責任や目標ができたら、反対を選びますか？” Follow-ups: “How urgent would it need to be?” and “Would the switch be temporary?”",
+      "learningTarget": "Develop the distinct “A new responsibility” angle of Better work-life balance or a higher salary? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A new responsibility” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What new responsibility or goal would make you switch?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どんな責任や目標ができたら、反対を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What new responsibility or goal would make you switch?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Use the exact ask-back “Ask your tutor whether they would choose better work-life balance or a higher salary, and why.” to invite the tutor’s real answer, then compare the two positions.",
+      "tutorAction": "Let the learner ask “Ask your tutor whether they would choose better work-life balance or a higher salary, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.",
+      "targetOrPrompt": "Reciprocal ask-back: “Ask your tutor whether they would choose better work-life balance or a higher salary, and why.” / “チューターならよりよい仕事と生活の両立とより高い給料のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which part of personal time would your tutor protect?” and “What would make higher pay worth the cost?”",
+      "learningTarget": "Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.",
+      "pedagogicalValue": "Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.",
+      "failureDiagnosis": "If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.",
+      "nonTargetSupport": "The Japanese prompt “チューターならよりよい仕事と生活の両立とより高い給料のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Ask your tutor whether they would choose better work-life balance or a higher salary, and why."
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
