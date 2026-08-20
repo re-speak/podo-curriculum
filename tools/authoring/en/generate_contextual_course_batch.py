@@ -102,11 +102,11 @@ DISTRACTORS = {
 }
 
 VOCAB = {
-2:("return ticket|帰りの航空券; conference|会議; declare|申告する","hotel|ホテル; holiday|休暇; work|仕事; wedding|結婚式; Central Hotel|セントラルホテル; airport hotel|空港ホテル; friend's place|友人の家; apartment downtown|中心街のアパート","purpose|目的; accommodation|滞在先"),
+2:("conference|会議","hotel|ホテル; holiday|休暇; work|仕事; wedding|結婚式; Central Hotel|セントラルホテル; airport hotel|空港ホテル; friend's place|友人の家; apartment downtown|中心街のアパート","purpose|目的; accommodation|滞在先; return ticket|帰りの航空券; declare|申告する"),
 3:("departure|出発; platform|ホーム; confirm|確認する","time|時刻; gate|ゲート; bus|バス; departure time|出発時刻; gate number|ゲート番号; bus number|バス番号; two-forty|2時40分; gate fifteen|15番ゲート; platform thirteen|13番ホーム; bus fourteen|14番バス","information desk|案内所"),
 4:("one-way|片道; day pass|一日乗車券; express|急行","ticket|切符; trip|乗車; faster|より速い; cheaper|より安い; earlier|より早い; direct|直行; easier|より簡単; three trips|3回の乗車","reservation|予約"),
-5:("north exit|北口; across from|〜の向かいに; route|経路","museum|美術館; hotel|ホテル; airport|空港; bus stop|バス停; road|道; cross the road|道を渡る; turn left|左へ曲がる; take the bus|バスに乗る","you can't miss it|すぐ分かる"),
-6:("fixed fare|定額運賃; traffic|交通状況; address|住所","hotel|ホテル; taxi|タクシー; cost|料金; Central Hotel|セントラルホテル; this address|この住所; station|駅; Terminal Two|第2ターミナル; it|それ; ride|移動; that|それ","meter|メーター"),
+5:("north exit|北口; across from|〜の向かいに","museum|美術館; hotel|ホテル; airport|空港; bus stop|バス停; road|道; cross the road|道を渡る; turn left|左へ曲がる; take the bus|バスに乗る","you can't miss it|すぐ分かる; route|経路"),
+6:("fixed fare|定額運賃; address|住所","hotel|ホテル; taxi|タクシー; cost|料金; Central Hotel|セントラルホテル; this address|この住所; station|駅; Terminal Two|第2ターミナル; it|それ; ride|移動; that|それ; traffic|交通状況","meter|メーター"),
 }
 
 

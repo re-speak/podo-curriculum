@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-disruptions-urgent-problems/lessons/14-report-missing-baggage-precisely/lesson.html`
-- SHA-256: `2745370e7383580031b8f099fe923aae6fbc006ada5c7abf7f36e18eabc36008`
+- SHA-256: `a20a1e014b9a8b9680c1494de6f3cfae61617b268134cbde2bc4b1bcb4806832`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -180,7 +180,7 @@ LESSONS = {
         tip=("Pair bad news with an owned next step", "悪い知らせには自分が担う次の一手を", "A recovery plan is useful only when you can explain the action, owner, and timing.", "立て直し計画は、行動・担当・時期を説明できて初めて役立ちます。", ("Actionable", "行動できる", "I'll fix the test today.", "今日テストを修正します。"), ("Too vague", "曖昧", "We'll try harder.", "もっと頑張ります。")),
         transfer_title="Delaying a client review", transfer_ja="顧客レビューを延期する", transfer_role="Client Director",
         transfer_turns=(("other", "Can your team present the final design at tomorrow's demo?", "明日のデモで最終デザインを発表できますか？"), ("target", 1, 2), ("other", "What date can you commit to instead?", "代わりにいつなら約束できますか？"), ("target", 2, 2), ("other", "Friday works if you send me a progress note tomorrow.", "明日進捗メモを送るなら、金曜日で大丈夫です。"), ("me", "Agreed. I will send the note by noon tomorrow.", "合意します。明日の正午までにメモを送ります。")),
-        vocab=("here's where we are|現状はこうです; recovery plan|立て直し計画", "push back|後ろへずらす|CTX-12", "I'm afraid|残念ですが; won't be ready|間に合わない", "daily update|毎日の進捗; progress note|進捗メモ"),
+        vocab=("here's where we are|現状はこうです; recovery plan|立て直し計画; push back|後ろへずらす", "", "I'm afraid|残念ですが; won't be ready|間に合わない", "daily update|毎日の進捗; progress note|進捗メモ"),
     ),
     42: dict(
         slug="close-a-project-discussion-with-actions", title="Close a project discussion with actions", ko="실행 항목으로 프로젝트 논의 마무리하기", ja="実行項目を確認して案件の話し合いを終える",
@@ -252,7 +252,7 @@ LESSONS = {
         tip=("Use “agreed to” for an action", "行動の合意には agreed to", "“Agreed to test” names an action; “agreed that” normally introduces a full statement.", "agreed to test は行動、agreed that は通常、完全な内容を続けます。", ("Action", "行動", "We agreed to test it.", "試すことで合意しました。"), ("Statement", "内容", "We agreed that it was ready.", "準備できていると合意しました。")),
         transfer_title="Confirming a budget decision", transfer_ja="予算の決定を確認する", transfer_role="Finance Chair",
         transfer_turns=(("other", "We'll run one smaller pilot before any larger rollout.", "大規模展開の前に、小規模な試験導入を一回行います。"), ("target", 1, 1), ("other", "Yes, one pilot before any larger rollout.", "はい、大規模展開の前に一回だけです。"), ("target", 2, 3), ("other", "Correct. Put that in the decision log and schedule a June review.", "そのとおりです。決定記録に入れ、6月のレビューを予定に入れてください。"), ("me", "I will record both the pilot and the review date.", "試験導入とレビュー日程の両方を記録します。")),
-        vocab=("for the record|記録のために; decision log|決定記録", "before we move on|次へ進む前に|CTX-43; option|選択肢|CORE-45", "agreed to|合意した; correctly|正しく", "one-team limit|一チーム限定; larger rollout|大規模展開"),
+        vocab=("for the record|記録のために", "before we move on|次へ進む前に|CTX-43; option|選択肢|CORE-45", "agreed to|合意した; correctly|正しく; decision log|決定記録", "one-team limit|一チーム限定; larger rollout|大規模展開"),
     ),
     45: dict(
         slug="present-a-recommendation-up-front", title="Present a recommendation up front", ko="결론부터 추천안 제시하기", ja="結論から推奨案を示す",
@@ -598,7 +598,6 @@ HONEST_THREE_CHUNK_PARTS = {(37, 2), (44, 2)}
 # metadata entry, not the same cited owner.
 VISIBLE_PRIOR_CTX_OWNERS = {
     "definitely|確実に|CTX-26",
-    "push back|後ろへずらす|CTX-12",
     "final version|最終版|CTX-34",
     "on track|予定どおり|CTX-35",
     "before we move on|次へ進む前に|CTX-43",

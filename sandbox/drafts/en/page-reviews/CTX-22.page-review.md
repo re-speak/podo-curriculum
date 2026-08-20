@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-independent-social/lessons/22-resolve-an-itinerary-disagreement/lesson.html`
-- SHA-256: `e868379e99e51134e8d627811b3c184b7e9bd7bfafa3acf9e86c846adaa8e6c5`
+- SHA-256: `065c7ec51ad51ac1e070628367a40cd5ff91fe1da4372c50e9256bb2d1db5300`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

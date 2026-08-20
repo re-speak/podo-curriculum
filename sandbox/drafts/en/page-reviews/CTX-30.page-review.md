@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/30-give-useful-advice-after-a-complicated-trip/lesson.html`
-- SHA-256: `478fea93542670949f220a5b2252948370e178289527579b8e3856ec9ae501f4`
+- SHA-256: `5812714d1225ea8c21e768a6c229d31678c200c51c9484f870403c704909c02c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

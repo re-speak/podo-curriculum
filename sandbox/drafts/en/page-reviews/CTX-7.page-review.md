@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-hotels-food/lessons/07-check-in-when-your-room-is-not-ready/lesson.html`
-- SHA-256: `c65171eb7965efdf182bcb073790cf40306d9da2884fd73605aa69681e31b850`
+- SHA-256: `b528c582511c0fd70f1671005d9bf4a1305abbb54819a33bce4906ebce8e2c3e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

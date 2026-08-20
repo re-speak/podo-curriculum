@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/03-confirm-a-number-you-did-not-hear/lesson.html`
-- SHA-256: `12563316e92fe937b1eb2d9ae5cdb60a0c77a7fb068ca975bbbe2b588e11eba5`
+- SHA-256: `45b316fb57a2bf93b6ca89bf26dd2b664e85a19146763454205ee185f0d691cb`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-projects-deadlines/lessons/41-deliver-bad-news-with-a-next-step/lesson.html`
-- SHA-256: `cb69e3ce85bef8bc9fd5a4033b477d4e688372e34ed285e500ae5cb5d0238996`
+- SHA-256: `d5bb85548926bc84c42bb425bd4c58dd26af144f8047d2a0043c1157444073db`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

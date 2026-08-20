@@ -305,7 +305,7 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
                 self.assertIn(entry["english"].casefold(), corpus, (number, entry["english"]))
 
     def test_new_words_do_not_duplicate_a_reachable_existing_owner(self):
-        existing: dict[str, set[str]] = {}
+        existing: dict[tuple[str, str], set[str]] = {}
         current = {f"CTX-{number}" for number in batch.LESSONS}
         for path in (ROOT / "sandbox" / "drafts" / "en" / "tracks").rglob("lesson.html"):
             source = path.read_text(encoding="utf-8")
@@ -314,15 +314,17 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
                 continue
             data = vocabulary.parse(source, source=path)
             for entry in data["categories"]["new"]:
-                existing.setdefault(entry["english"].casefold(), set()).add(match.group(1))
+                key = (entry["english"].casefold(), entry["japanese"])
+                existing.setdefault(key, set()).add(match.group(1))
         for number, lesson in batch.LESSONS.items():
             _, source = batch.build(number, lesson)
             data = vocabulary.parse(source, source=f"CTX-{number}")
             for entry in data["categories"]["new"]:
-                owners = existing.get(entry["english"].casefold(), set())
+                key = (entry["english"].casefold(), entry["japanese"])
+                owners = existing.get(key, set())
                 reachable = {owner for owner in owners if owner_is_reachable(owner, number)}
                 self.assertEqual(reachable, set(), (number, entry, reachable, entry_floor(number)))
-                existing.setdefault(entry["english"].casefold(), set()).add(f"CTX-{number}")
+                existing.setdefault(key, set()).add(f"CTX-{number}")
 
     def test_ctx13_owns_delayed_below_its_core70_entry_floor(self):
         self.assertEqual(entry_floor(13), 70)

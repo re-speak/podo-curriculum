@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-disruptions-urgent-problems/lessons/17-challenge-an-unexpected-charge/lesson.html`
-- SHA-256: `9e9f328276c984b14cc472378aa026911aaa34bfb9094ddbd8947e0b9c21c1c5`
+- SHA-256: `1ac5b4bd7a243c9a18dd25203113922a4ba9c8443865c958e612601bec57f17c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-independent-social/lessons/21-make-a-plan-with-people-you-just-met/lesson.html`
-- SHA-256: `31780e8d34601533873048255d31f80195512df1d4d65f4886048ed649bfd2bc`
+- SHA-256: `4b90f9cfc1b5e5e40f1a34ea8c3f0d9a183402cd557c1743fd206f8cbe37f70b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

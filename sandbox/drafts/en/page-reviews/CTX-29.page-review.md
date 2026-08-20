@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/29-make-a-safety-decision-with-incomplete-information/lesson.html`
-- SHA-256: `33e60c03a8732c174ef21e6033136bac7bfc80b7138495809a24f7911aadc1f6`
+- SHA-256: `b1548fc97898684d96dac0ec5ee3c68b4c3087c50b8fdcdda15a5e37cf2a8348`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

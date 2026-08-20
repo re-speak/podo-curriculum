@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-leadership-high-stakes/lessons/59-deliver-a-calm-crisis-update/lesson.html`
-- SHA-256: `4aa182b49de1e2d1bb673b77d17eee338f85979ca66379e4776fbd75c1a2575e`
+- SHA-256: `c6a8feb50a99d0f58b7223634f3f263aa2f2f6959f9a6afa6290d86e896500fa`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

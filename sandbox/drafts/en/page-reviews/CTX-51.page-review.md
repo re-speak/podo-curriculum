@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/51-avoid-committing-too-early/lesson.html`
-- SHA-256: `baa0f15f157bf680e79184701dc194beaba7d1717d4cb8c4bc47b891562d8d48`
+- SHA-256: `5f28677700909aac1c54224b14ef098f326745b88c94a5fbd74e02465bbc499f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

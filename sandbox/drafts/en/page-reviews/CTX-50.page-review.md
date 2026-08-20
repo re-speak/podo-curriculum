@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/50-make-a-conditional-proposal/lesson.html`
-- SHA-256: `7d960d9421bbc0c83383492ce0fe77e14f107c01c27fc65e5a3c6a13ac5aceed`
+- SHA-256: `47b3af589f72ff342648a7bc617fc9e527a41ec0e6f9cc89017353d462698053`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

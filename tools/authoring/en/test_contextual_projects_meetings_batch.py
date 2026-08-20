@@ -292,7 +292,6 @@ class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
             citations,
             {
                 "definitely|確実に|CTX-26",
-                "push back|後ろへずらす|CTX-12",
                 "final version|最終版|CTX-34",
                 "on track|予定どおり|CTX-35",
                 "before we move on|次へ進む前に|CTX-43",

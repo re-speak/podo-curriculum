@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-disruptions-urgent-problems/lessons/15-recover-from-taking-the-wrong-train/lesson.html`
-- SHA-256: `368e8db2d5de57b24c81708cec4ac989bd1e76522c7e27c9c2dcd30efe90836b`
+- SHA-256: `6fc0abcdf6d56006750270210e5e6333048bb7b74f4321326088f29b30d53b5a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

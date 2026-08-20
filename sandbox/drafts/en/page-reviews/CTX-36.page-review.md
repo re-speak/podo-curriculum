@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-workplace-essentials/lessons/36-report-a-technical-blocker-usefully/lesson.html`
-- SHA-256: `237718353d98ed8ba8fef3b7040f4aa49dc8d6c1b8f14e7fa0071f6ad0d424ee`
+- SHA-256: `728983de04e9d8ecc65b087bde972960b53a9da52c1dcae994e21e438b139c61`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

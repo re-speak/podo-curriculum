@@ -100,7 +100,7 @@ LESSONS = {
         transfer_ja="運休した列車の旅程を変更する",
         transfer_role="Rail Agent",
         transfer_turns=(("other", "The next direct train reaches Kyoto tomorrow at noon.", "次の直通列車は明日の正午に京都へ着きます。"), ("target", 1, 3), ("other", "A transfer may get you there before nine.", "乗り換えれば9時前に着ける可能性があります。"), ("target", 2, 2), ("other", "Yes. The Osaka route arrives at eight-thirty.", "はい。大阪経由なら8時30分に着きます。"), ("me", "Perfect. Please change my ticket.", "それでお願いします。切符を変更してください。")),
-        vocab=("alternative routing|別ルート; nonstop|途中で止まらない", "what matters most|最も重要なこと|CORE-103; could you check|確認していただけますか|CORE-24; route|ルート|CORE-59", "city|都市; morning|朝; tonight|今夜; flight|便", "fare difference|運賃差額; connection|乗り継ぎ"),
+        vocab=("alternative routing|別ルート; nonstop|途中で止まらない", "what matters most|最も重要なこと|CORE-103; could you check|確認していただけますか|CORE-24; route|道順|CORE-59", "city|都市; morning|朝; tonight|今夜; flight|便", "fare difference|運賃差額; connection|乗り継ぎ"),
     ),
     26: dict(
         slug="document-an-incident-for-insurance", title="Document an incident for insurance", ko="보험을 위해 사건을 기록하기", ja="保険申請のために事故を記録する", role="Insurance Agent", scene="Reporting a stolen camera by phone", scene_ja="盗難に遭ったカメラを電話で届け出る", situation="確実に分かる事実と推測を分けて伝え、保険申請に必要な記録を作ります。", goal=("Separate confirmed facts from uncertainty and obtain the documents for a claim.", "確認できている事実と不確かな点を分け、保険申請の書類をそろえましょう。"), expressions=(("police report", "警察の届出書"), ("supporting documents", "添付書類")),
@@ -133,7 +133,7 @@ LESSONS = {
         live=("Think of a reservation detail you would verify against a confirmation.", "確認書と照合したい予約内容を一つ考えてください。", "My confirmation says ___, whereas your system says ___. Could you confirm in writing ___? / If you have no booking: I don't have a booking to check right now.", "予約がなければ、今は確認する予約がないと答えてかまいません。", "Which booking detail do you always save in writing?", "先生は予約のどの情報を必ず書面で保存しますか？"),
         tip=("Use “honor” for keeping an agreed term", "合意条件を守る honor", "Here, “honor” means accept and provide the price or benefit previously promised.", "ここで honor は、以前に約束した料金や特典を認めて提供する意味です。", ("Keep the term", "条件を守る", "We'll honor that rate.", "その料金を適用します。"), ("Check the record", "記録を確認", "Let me check the confirmation.", "確認書を確認します。")),
         transfer_title="Resolving a rental-car price discrepancy", transfer_ja="レンタカー料金の食い違いを解決する", transfer_role="Rental Agent", transfer_turns=(("other", "Our system shows a daily parking charge.", "システムでは駐車料金が1日ごとにかかります。"), ("target", 1, 1), ("other", "You're right. Your email includes parking at no extra charge.", "おっしゃる通りです。メールでは駐車料金込みです。"), ("target", 2, 2), ("other", "Certainly. I'll email the revised total now.", "承知しました。修正後の合計を今メールします。"), ("me", "Great. I'll keep that with the rental agreement.", "ありがとうございます。レンタル契約書と一緒に保管します。")),
-        vocab=("booking confirmation|予約確認書; discrepancy|食い違い; honor|条件を認める", "confirm in writing|書面で確認する|CORE-60; breakfast|朝食|CORE-4; price|料金|CORE-19", "email|メール; system|システム; room|部屋; parking|駐車場", "revised total|修正後の合計; rental agreement|レンタル契約書"),
+        vocab=("booking confirmation|予約確認書; discrepancy|食い違い; honor|条件を認める", "confirm in writing|書面で確認する|CORE-60; breakfast|朝食|CORE-4; price|値段|CORE-19", "email|メール; system|システム; room|部屋; parking|駐車場", "revised total|修正後の合計; rental agreement|レンタル契約書"),
     ),
     29: dict(
         slug="make-a-safety-decision-with-incomplete-information", title="Make a safety decision with incomplete information", ko="불완전한 정보로 안전 결정을 내리기", ja="不完全な情報で安全な判断をする", role="Tour Operator", scene="Calling about a remote excursion in severe weather", scene_ja="悪天候時の遠隔地ツアーについて電話する", situation="主催者が中止していなくても安全とは限らないため、不確かな情報の中で延期を選びます。", goal=("Challenge a weak safety assumption and choose the lower-risk option.", "根拠の弱い安全判断を問い直し、よりリスクの低い選択をしましょう。"), expressions=(("err on the side of caution", "安全側に判断する"), ("weather advisory", "気象注意報")),
@@ -144,7 +144,7 @@ LESSONS = {
         live=("Think of an activity that weather could make unsafe.", "天候によって危険になり得る活動を考えてください。", "The fact that ___ doesn't necessarily mean it's safe. Overall, I'd rather ___ than take the risk. / If none applies: I don't have an outdoor plan right now.", "該当する予定がなければ、今は屋外の予定がないと答えてかまいません。", "When do you usually decide to cancel an outdoor plan?", "先生はどんなときに屋外の予定を中止しますか？"),
         tip=("Use “advisory” below “warning”", "warning より弱い advisory", "An advisory signals possible hazardous conditions; a warning signals a more immediate or severe threat.", "advisory は危険の可能性、warning はより差し迫った、または深刻な危険を示します。", ("Possible hazard", "危険の可能性", "a weather advisory", "気象注意報"), ("More serious threat", "より重大な危険", "a weather warning", "気象警報")),
         transfer_title="Deciding whether to drive through mountain snow", transfer_ja="山間部の雪道を運転するか判断する", transfer_role="Rental Agent", transfer_turns=(("other", "The mountain road is open, so you can still drive through.", "山道は開いているので、まだ通行できます。"), ("target", 1, 1), ("other", "The forecast now says heavy snow after six.", "最新予報では6時以降に大雪となっています。"), ("target", 2, 2), ("other", "I can extend the rental until tomorrow morning at no charge.", "追加料金なしで明日の朝までレンタルを延長できます。"), ("me", "Let's do that. We'll leave after the road is checked.", "そうしましょう。道路の確認後に出発します。")),
-        vocab=("err on the side of caution|安全側に判断する; weather advisory|気象注意報; flash flooding|鉄砲水", "necessarily|必ずしも|CORE-117; rather|むしろ|CORE-117; safe|安全な|CORE-65; cancel|中止する|CORE-36", "road|道路; Saturday|土曜日; snow|雪; morning|朝", "hazardous|危険な; severe threat|重大な危険"),
+        vocab=("err on the side of caution|安全側に判断する; weather advisory|気象注意報; cancel|中止する", "necessarily|必ずしも|CORE-117; rather|むしろ|CORE-117; safe|安全な|CORE-65", "road|道路; Saturday|土曜日; snow|雪; morning|朝", "hazardous|危険な; severe threat|重大な危険; flash flooding|鉄砲水"),
     ),
     30: dict(
         slug="give-useful-advice-after-a-complicated-trip", title="Give useful advice after a complicated trip", ko="복잡한 여행 후 유용한 조언하기", ja="複雑な旅行のあとで役立つ助言をする", role="Colleague", scene="Talking to a colleague planning the same route", scene_ja="同じルートを計画する同僚との会話", situation="実体験をもとに、乗り継ぎの余裕とそのルートを選ぶ条件を具体的に助言します。", goal=("Turn a difficult travel experience into specific, conditional advice.", "大変だった旅行経験を、具体的で条件付きの助言に変えましょう。"), expressions=(("with hindsight", "振り返ってみると"), ("build in extra time", "余裕時間を見込む")),
@@ -155,7 +155,7 @@ LESSONS = {
         live=("Give advice about a route you know, or use an imaginary one.", "知っているルートについて助言するか、架空のルートで答えてください。", "What I'd recommend is ___. I'd only take that route if ___. / If you do not travel: I don't travel much, but I'd recommend ___.", "旅行しない場合は、旅行経験が少ないと伝えてから仮の助言をしてください。", "What travel advice would you give me?", "先生なら私にどんな旅行の助言をしますか？"),
         tip=("Use “build in” for planned buffer time", "余裕時間を組み込む build in", "“Build in extra time” means add the buffer when you make the plan, not after a delay.", "build in extra time は、遅延後ではなく計画時に余裕時間を組み込む意味です。", ("Plan the buffer", "余裕を計画", "Build in an extra hour.", "1時間余裕を見込んでください。"), ("React later", "あとで対応", "Allow more time next time.", "次回はもっと時間を取ってください。")),
         transfer_title="Advising a friend about a difficult ferry route", transfer_ja="難しいフェリールートについて友人に助言する", transfer_role="Friend", transfer_turns=(("other", "I'm planning the island ferry route you took last winter.", "去年の冬にあなたが使った島へのフェリールートを計画しています。"), ("target", 1, 2), ("other", "Does the first morning flight make a difference?", "朝一番の便なら違いがありますか？"), ("target", 2, 3), ("other", "My dates are fixed, so I'll travel in spring instead.", "日程は固定なので、代わりに春に旅行します。"), ("me", "That should make the trip much easier.", "そのほうが旅はずっと楽になるはずです。")),
-        vocab=("with hindsight|振り返ってみると; build in extra time|余裕時間を見込む; flexibility|調整の余地", "what I'd recommend|私がおすすめすること|CORE-103; only if|場合にだけ|CORE-66; route|ルート|CORE-59", "flight|便; airport|空港; winter|冬; morning|朝", "buffer time|余裕時間; unreliable|不安定な"),
+        vocab=("with hindsight|振り返ってみると; build in extra time|余裕時間を見込む; flexibility|調整の余地", "what I'd recommend|私がおすすめすること|CORE-103; only if|場合にだけ|CORE-66; route|道順|CORE-59", "flight|便; airport|空港; winter|冬; morning|朝", "buffer time|余裕時間; unreliable|不安定な"),
     ),
     31: dict(
         slug="introduce-your-role-on-a-new-project", title="Introduce your role on a new project", ko="새 프로젝트에서 역할 소개하기", ja="新しいプロジェクトで役割を紹介する", role="Project Lead", scene="A kickoff call with a new project team", scene_ja="新しいプロジェクトのキックオフ通話", situation="自分の担当と主に連携するチームを伝え、何について連絡してほしいかを明確にします。", goal=("Introduce your remit so the new team knows when to contact you.", "担当範囲を紹介し、どんなときに連絡すればよいかをチームに伝えましょう。"), expressions=(("nice to e-meet you", "オンラインでお会いできてうれしいです"), ("point of contact", "窓口担当者")),
@@ -166,7 +166,7 @@ LESSONS = {
         live=("Introduce your real project role, or choose an imaginary one.", "実際のプロジェクトでの役割を紹介するか、架空の役割を選んでください。", "I'm responsible for ___. I mainly work with ___. / If you have no project: I'm not on a project right now, but I'd like to work with ___.", "プロジェクトがなければ、今は参加していないと伝えてから希望を答えてください。", "What are you responsible for, and who do you mainly work with?", "先生は何を担当し、主に誰と働いていますか？"),
         tip=("Use “remit” for an area of responsibility", "担当範囲を表す remit", "“Role” can mean your position; “remit” focuses on the work you are responsible for.", "role は立場、remit は担当する仕事の範囲に焦点を当てます。", ("Position", "立場", "What's your role?", "役割は何ですか？"), ("Responsibility area", "担当範囲", "What's your remit?", "担当範囲は何ですか？")),
         transfer_title="Introducing your role at a client workshop", transfer_ja="顧客ワークショップで役割を紹介する", transfer_role="Client Manager", transfer_turns=(("other", "Before we start, what will you handle today?", "始める前に、今日は何を担当しますか？"), ("target", 1, 2), ("other", "And which internal team supports those updates?", "その進捗共有を支える社内チームはどこですか？"), ("target", 2, 1), ("other", "Good. I'll send questions to you and the sales team.", "分かりました。質問はあなたと営業チームに送ります。"), ("me", "Perfect. I'm happy to be your point of contact.", "ありがとうございます。窓口を担当します。")),
-        vocab=("project schedule|プロジェクト予定; kickoff|キックオフ; point of contact|窓口担当者; remit|担当範囲", "responsible for|担当している|CORE-81; mainly work with|主に連携する|CORE-81; team|チーム|CORE-81", "project|プロジェクト; design|デザイン; sales|営業; report|報告", "coordinate|連携する; copy|CCに入れる"),
+        vocab=("project schedule|プロジェクト予定; point of contact|窓口担当者; remit|担当範囲", "responsible for|担当している|CORE-81; mainly work with|主に連携する|CORE-81; team|チーム|CORE-81", "project|プロジェクト; design|デザイン; sales|営業; report|報告; kickoff|キックオフ", "coordinate|連携する; copy|CCに入れる"),
     ),
     32: dict(
         slug="repair-a-bad-connection-during-a-call", title="Repair a bad connection during a call", ko="통화 연결 문제 해결하기", ja="通話の接続不良を立て直す", role="Meeting Host", scene="A video call when the audio cuts out", scene_ja="音声が途切れるビデオ通話", situation="音声が途切れた位置を示し、聞き取れなかった締め切りをもう一度言ってもらいます。", goal=("Identify where the audio failed and recover the missed deadline accurately.", "音声が途切れた箇所を示し、聞き逃した締め切りを正確に確認しましょう。"), expressions=(("you're breaking up", "音声が途切れています"), ("close of business", "営業時間終了時")),
@@ -221,7 +221,7 @@ LESSONS = {
         live=("Describe a real or imaginary technical blocker with a before-and-now contrast.", "実際または架空の技術的な問題を、以前と現在の対比で説明してください。", "I can't access ___. It worked ___, but now I get ___. / If nothing is blocked: Nothing is blocked right now, but a useful report would be ___.", "問題がなければ、今は何も止まっていないと伝えてから例を作ってください。", "What detail helps you diagnose a technical problem?", "先生は技術的な問題を調べるとき、どの情報が役立ちますか？"),
         tip=("Report the symptom, not a guessed cause", "推測した原因ではなく症状を報告", "“I get a permission error” is evidence; “the server is broken” may only be a guess.", "I get a permission error は観察した事実ですが、the server is broken は推測にすぎない場合があります。", ("Observed symptom", "確認した症状", "I get a permission error.", "権限エラーが出ます。"), ("Unverified cause", "未確認の原因", "The server must be broken.", "サーバーが壊れているはずです。")),
         transfer_title="Reporting a blocked training account", transfer_ja="研修用アカウントの障害を報告する", transfer_role="IT Support", transfer_turns=(("other", "Can you open the training materials for today's session?", "今日の研修資料を開けますか？"), ("target", 1, 2), ("other", "When did that account last work?", "そのアカウントが最後に動いたのはいつですか？"), ("target", 2, 1), ("other", "Thanks. I'll reset the login and send you a new link.", "ありがとうございます。ログインをリセットし、新しいリンクを送ります。"), ("me", "Great. I'll test the account before training starts.", "ありがとうございます。研修開始前にアカウントを確認します。")),
-        vocab=("demo environment|デモ環境; permission error|権限エラー; blocker|作業を止める問題", "can't access|アクセスできない|CORE-18; worked|動いた|CORE-32; now|今|CORE-14", "folder|フォルダ; account|アカウント; morning|朝; laptop|ノートPC", "restore access|アクセスを復旧する; symptom|症状"),
+        vocab=("demo environment|デモ環境; permission error|権限エラー", "can't access|アクセスできない|CORE-18; worked|動いた|CORE-32; now|今|CORE-14", "folder|フォルダ; account|アカウント; morning|朝; laptop|ノートPC; blocker|作業を止める問題", "restore access|アクセスを復旧する; symptom|症状"),
     ),
 }
 
@@ -293,11 +293,11 @@ VISIBLE_PRIOR_CTX_OWNERS = {"meet you there|そこで会う|CTX-21"}
 # Vocabulary ownership follows each lesson's entry floor. Later Core owners are
 # documented above for bounded treatment, not mislabeled as already learned.
 LESSONS[29]["vocab"] = (
-    "err on the side of caution|安全側に判断する; weather advisory|気象注意報; flash flooding|鉄砲水; necessarily|必ずしも; would rather|〜のほうがよい",
+    "err on the side of caution|安全側に判断する; weather advisory|気象注意報; necessarily|必ずしも; would rather|〜のほうがよい",
     "safe|安全な|CORE-65; cancel|中止する|CORE-36", LESSONS[29]["vocab"][2], LESSONS[29]["vocab"][3],
 )
 LESSONS[31]["vocab"] = (
-    "project schedule|プロジェクト予定; kickoff|キックオフ; point of contact|窓口担当者; remit|担当範囲; responsible for|担当している; mainly|主に",
+    "project schedule|プロジェクト予定; point of contact|窓口担当者; remit|担当範囲; responsible for|担当している; mainly|主に",
     "work with|一緒に働く|CORE-12", LESSONS[31]["vocab"][2], LESSONS[31]["vocab"][3],
 )
 LESSONS[32]["vocab"] = (
@@ -562,7 +562,7 @@ def _finalize_vocab(number, *, new=(), recycled=(), assumed=()):
 # `assumed`; genuinely new productive language is owned here.
 _finalize_vocab(25,
     new=("what matters most|最も重要なこと",),
-    recycled=("route|ルート|CORE-59",),
+    recycled=("route|道順|CORE-59",),
     assumed=("could you check|確認していただけますか",))
 _finalize_vocab(26,
     new=("definitely|確実に", "certain|確かな"),
@@ -574,14 +574,14 @@ _finalize_vocab(27,
     assumed=("tonight|今夜",))
 _finalize_vocab(28,
     new=("confirm in writing|書面で確認する",),
-    recycled=("price|料金|CORE-19",),
+    recycled=("price|値段|CORE-19",),
     assumed=("breakfast|朝食",))
 _finalize_vocab(29,
-    recycled=("cancel|中止する|CORE-71",),
+    recycled=("cancel|取り消す|CORE-71",),
     assumed=("safe|安全な",))
 _finalize_vocab(30,
     new=("what I'd recommend|私がおすすめすること",),
-    recycled=("route|ルート|CORE-59",),
+    recycled=("route|道順|CORE-59",),
     assumed=("only if|場合にだけ",))
 _finalize_vocab(31, recycled=(), assumed=("work with|一緒に働く",))
 _finalize_vocab(32,

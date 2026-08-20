@@ -152,7 +152,7 @@ VOCAB = {
 21:("permission|許可; fitting room|試着室; try this on|試着する; sit here|ここに座る; take a photo|写真を撮る; use this|これを使う; try it on|試着する","photo|写真; sit|座る; use|使う","take your time|ごゆっくり"),
 22:("receipt|レシート; to go|持ち帰り; a receipt|レシート; a ticket|チケット; a coffee|コーヒー; some water|水","the chicken|チキン; the soup|スープ; this one|これ; the menu|メニュー","for here|店内で"),
 23:("bottle|ボトル; piece|一切れ; bowl|茶碗; bottles|本; pieces|切れ; bowls|杯; cups|杯; cake|ケーキ","coffee|コーヒー; water|水; rice|ご飯; time|時間","container|容器"),
-24:("repeat|繰り返す; clearly|はっきり; louder|より大きな声で; that|それ; your name|名前; the last part|最後の部分; shelf|shelf; please|お願いします","name|名前; platform|ホーム; slowly|ゆっくり","catch|聞き取る"),
+24:("repeat|繰り返す; clearly|はっきり; louder|より大きな声で; that|それ; your name|名前; the last part|最後の部分; shelf|shelf","name|名前; platform|ホーム; slowly|ゆっくり; please|お願いします|CORE-9","catch|聞き取る"),
 }
 
 # These fields are deliberately authored, not inferred from the model sentences.
@@ -417,6 +417,11 @@ def set_proofread_status(head, status):
     proofread = f'<meta name="podo:proofread-status" content="{status}">'
     if marker not in head:
         raise ValueError("canonical shell has no reviewed vocabulary marker")
+    head = re.sub(
+        r'\n\s*<meta name="podo:proofread-status" content="[^"]+">',
+        "",
+        head,
+    )
     return head.replace(marker, marker + "\n  " + proofread, 1)
 
 def known_page(number):

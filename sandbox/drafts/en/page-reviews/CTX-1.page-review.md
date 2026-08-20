@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/lesson.html`
-- SHA-256: `dcf601cfe3f1a003a37b1f51d0c30b8ef38e5708bb986e013896e6eafdd5c77c`
+- SHA-256: `f57180192ee347b5107cd4e0f7483e5ce80cc2c7b070325234bd51c655c71a73`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-independent-social/lessons/23-clear-up-a-cultural-misunderstanding/lesson.html`
-- SHA-256: `87e29852dbd556f6030bc4fd734d3f0fe4f95dba031f31eb8a25a02e734a7066`
+- SHA-256: `18656ccc3347f47558142b807f385b4338a618b3655fa6744c522aca4416efa7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

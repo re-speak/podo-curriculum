@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-leadership-high-stakes/lessons/60-make-an-executive-recommendation/lesson.html`
-- SHA-256: `ff070acce8c4c36a4a018b15c816ba27b08909d64841ffca571297659abb58ba`
+- SHA-256: `821f6e1a8db6f993cacb4033cb93416608722dd2446d13a291924d99bc5c15ce`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

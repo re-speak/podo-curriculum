@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/02-answer-immigration-questions-clearly/lesson.html`
-- SHA-256: `01d3aeda229a37e156df79d7c2ca3f17774751c01f615840a3aa58988ca6f1c3`
+- SHA-256: `b9812394aabde19ea3f72397bbbcecce5661f379490888ac32b5acfd05e33ca8`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

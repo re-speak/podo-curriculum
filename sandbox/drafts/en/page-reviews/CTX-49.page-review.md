@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/49-reframe-a-problem-more-accurately/lesson.html`
-- SHA-256: `f0863ccd0ece8f7767668c10dfbf2f814fae1580d9dc97b7ecf87bcc13af22f6`
+- SHA-256: `aee96332fe63bc70499cee92701a2a16cf294f41820378fb5a89beb33daac55a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

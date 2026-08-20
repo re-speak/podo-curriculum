@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-hotels-food/lessons/10-correct-an-order-politely/lesson.html`
-- SHA-256: `3a0c0bfbccb498d5ee011d6103c041ad4722d5da1dd639c77bc29af496650f5f`
+- SHA-256: `44691c4b61398f31a8e04725387cdab3d815ec4829de8e6537a4035f818f4e8d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

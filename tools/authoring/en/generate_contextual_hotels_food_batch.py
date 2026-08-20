@@ -164,9 +164,9 @@ LESSONS = {
         ),
         vocab=(
             "check-in time|チェックイン時間; luggage room|荷物預かり室; reservation|予約",
-            "receipt|お預かり証|CORE-22",
+            "",
             "hotel|ホテル; bag|バッグ; suitcase|スーツケース; backpack|リュック; stroller|ベビーカー; room|部屋; can we leave|置いてもいいですか; Tanaka|田中; Sato|佐藤; Mori|森; Kato|加藤",
-            "collect|受け取る; claim tag|引換札",
+            "collect|受け取る; claim tag|引換札; receipt|お預かり証",
         ),
     ),
     8: dict(
@@ -277,10 +277,10 @@ LESSONS = {
             ("other", "Here is the new key card.", "新しいキーカードです。"),
         ),
         vocab=(
-            "air conditioning|エアコン; malfunction|故障; remedy|対応; doesn't work|動かない",
+            "air conditioning|エアコン; doesn't work|動かない",
             "",
             "hotel|ホテル; room|部屋; shower|シャワー; key card|キーカード; bedside lamp|ベッド脇のランプ; fan|扇風機; can we|できますか",
-            "send someone up|スタッフを部屋へ行かせる; hold another room|別の部屋を確保する",
+            "send someone up|スタッフを部屋へ行かせる; hold another room|別の部屋を確保する; malfunction|故障; remedy|対応",
         ),
     ),
     9: dict(
@@ -504,10 +504,10 @@ LESSONS = {
             ("other", "Here you are. Sorry about the mix-up.", "どうぞ。間違えて申し訳ありませんでした。"),
         ),
         vocab=(
-            "iced coffee|アイスコーヒー; sparkling water|炭酸水; still water|普通の水; mix-up|取り違え; ordered|注文した",
-            "instead|代わりに|CORE-14",
+            "iced coffee|アイスコーヒー; sparkling water|炭酸水; still water|普通の水; ordered|注文した",
+            "instead|その代わり|CORE-14",
             "coffee|コーヒー; tea|紅茶; soup|スープ; salad|サラダ; can I have|いただけますか",
-            "wrong ticket|違う伝票; remake|作り直す",
+            "wrong ticket|違う伝票; remake|作り直す; mix-up|取り違え",
         ),
     ),
     11: dict(
@@ -616,10 +616,10 @@ LESSONS = {
             ("other", "Here is the replacement and your new receipt.", "交換品と新しいレシートです。"),
         ),
         vocab=(
-            "travel adapter|旅行用アダプター; proof of purchase|購入証明; refund|返金; replacement|交換品; exchange|交換する",
-            "bought|買った|CORE-32; doesn't work|動かない|CTX-8",
+            "proof of purchase|購入証明; refund|返金; replacement|交換品; exchange|交換する",
+            "bought|buy の過去形|CORE-32; doesn't work|動かない|CTX-8",
             "receipt|レシート; charger|充電器; umbrella|傘; headphones|ヘッドホン; yesterday|昨日; another one|別の物",
-            "store credit|店内クレジット; payment card|支払いカード",
+            "store credit|店内クレジット; payment card|支払いカード; travel adapter|旅行用アダプター",
         ),
     ),
     12: dict(
@@ -728,10 +728,10 @@ LESSONS = {
             ("other", "Done. I'll email the new confirmation.", "変更しました。新しい確認メールをお送りします。"),
         ),
         vocab=(
-            "booking change|予約変更; party size|予約人数; push back|後ろへずらす",
-            "still|今も|CORE-29; reservation|予約|CTX-7",
+            "",
+            "still|まだ・予定どおり|CORE-29; reservation|予約|CTX-7",
             "restaurant|レストラン; people|人; Friday|金曜日; Saturday|土曜日; tour|ツアー; can we move|変更できますか; booking|予約; four people|4人; two people|2人; six people|6人; three people|3人",
-            "available time|空いている時刻; confirmation|確認メール",
+            "available time|空いている時刻; confirmation|確認メール; booking change|予約変更; party size|予約人数; push back|後ろへずらす",
         ),
     ),
 }

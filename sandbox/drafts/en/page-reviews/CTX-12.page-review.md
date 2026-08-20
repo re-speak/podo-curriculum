@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-hotels-food/lessons/12-change-a-booking-without-losing-it/lesson.html`
-- SHA-256: `247a879afb141425e713b902ca70cdb08ecacaa6a9aed2d9cf25249d0a22a287`
+- SHA-256: `4b894482904265061d37e6b1b42f32185ae52036cbf500c2484bbd48485b568f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

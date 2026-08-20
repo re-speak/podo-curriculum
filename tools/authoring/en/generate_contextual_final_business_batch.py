@@ -116,7 +116,7 @@ LESSONS = {
         tip=("Use “setback” for a recoverable problem", "立て直せる問題には setback", "A setback slows progress; a failure says the intended result was not achieved.", "setback は進行を遅らせる問題、failure は意図した結果を達成できなかったことを示します。", ("Recoverable", "立て直せる", "a temporary setback", "一時的な後退"), ("Result not achieved", "結果を達成していない", "a project failure", "プロジェクトの失敗")),
         transfer_title="Reframing a difficult pilot result", transfer_ja="難しい試験導入の結果を捉え直す", transfer_role="Sponsor",
         transfer_turns=(("other", "The weak pilot response proves the product is a failure.", "試験導入の反応が弱く、この製品は失敗です。"), ("target", 1, 3), ("other", "So how would you describe the result?", "では、この結果をどう表しますか？"), ("target", 2, 1), ("other", "A warning is serious, but it gives us something to test.", "警告なら深刻ですが、検証すべき点が分かります。"), ("me", "Exactly. Let's test the revised offer before deciding.", "その通りです。判断前に修正版を検証しましょう。")),
-        vocab=("fundamental problem|根本的な問題; reframe|捉え直す; overstatement|大げさな表現", "setback|一時的な後退|CORE-89", "failure|失敗; delay|遅れ; warning|警告; crisis|危機; call it|〜と呼ぶ", "recover|立て直す; revised offer|修正版の提案"),
+        vocab=("fundamental problem|根本的な問題", "setback|一時的な後退|CORE-89", "failure|失敗; delay|遅れ; warning|警告; crisis|危機; call it|〜と呼ぶ; reframe|捉え直す; overstatement|大げさな表現", "recover|立て直す; revised offer|修正版の提案"),
     ),
     50: dict(
         slug="make-a-conditional-proposal", title="Make a conditional proposal",
@@ -155,7 +155,7 @@ LESSONS = {
         tip=("Use “provided” for a firm condition", "明確な条件には provided", "“Provided” sets a firm condition; “if possible” presents a preference rather than a requirement.", "provided は明確な条件、if possible は必須ではない希望を示します。", ("Requirement", "必須条件", "provided we reduce the scope", "範囲を縮小する条件で"), ("Preference", "希望", "by June, if possible", "できれば6月までに")),
         transfer_title="Trading workshop format for budget", transfer_ja="研修形式と予算を交換条件にする", transfer_role="Procurement Lead",
         transfer_turns=(("other", "We need the training included without increasing the price.", "価格を上げずに研修も含める必要があります。"), ("target", 1, 2), ("other", "Which part would move out of the first phase?", "どの部分を第1段階から外しますか？"), ("target", 2, 1), ("other", "Remote training and a later dashboard could fit the budget.", "オンライン研修と後日の画面提供なら予算に収まります。"), ("me", "Good. I'll document both conditions in the offer.", "分かりました。両方の条件を提案書に記載します。")),
-        vocab=("conditional proposal|条件つき提案; defer|先送りする; reduce the scope|範囲を縮小する; revised proposal|修正提案書", "", "deliver|納品する; feature|機能; approval|承認; budget|予算; launch|公開する", "procurement|調達; rollout|展開"),
+        vocab=("defer|先送りする; reduce the scope|範囲を縮小する", "", "deliver|納品する; feature|機能; approval|承認; budget|予算; launch|公開する; conditional proposal|条件つき提案; revised proposal|修正提案書", "procurement|調達; rollout|展開"),
     ),
     51: dict(
         slug="avoid-committing-too-early", title="Avoid committing too early", ko="너무 일찍 확약하지 않기", ja="早すぎる確約を避ける", role="Customer", scene="Responding when a customer presses for a firm date", scene_ja="顧客から確定日を求められる場面",
@@ -175,7 +175,7 @@ LESSONS = {
         live=live("Use a real or imaginary request for a commitment and explain what the answer depends on.", "実際または架空の確約依頼を想定し、何によって回答が決まるか説明してください。", "Real or imaginary: I'd rather not commit to ___ yet. It depends on whether ___.", "実際の例でも架空の例でも、二つの表現を使いましょう。", "What would you avoid committing to before one fact is confirmed?", "一つの事実が確認されるまで、先生は何の確約を控えますか？"),
         tip=("Commit to a date only when you can stand behind it", "責任を持てるときだけ日程を確約", "To commit to a date is stronger than to aim for a date: it creates a firm expectation.", "commit to a date は確定的な期待を生むため、aim for a date より強い表現です。", ("Firm", "確約", "commit to June 10", "6月10日を確約する"), ("Target", "目標", "aim for June 10", "6月10日を目指す")),
         transfer_title="Holding off on a price commitment", transfer_ja="価格の確約を控える", transfer_role="Buyer", transfer_turns=(("other", "Can you lock in this price for next year?", "来年の価格をこれで固定できますか？"), ("target", 1, 2), ("other", "What needs to happen first?", "先に何が必要ですか？"), ("target", 2, 3), ("other", "We can wait until the budget decision on Friday.", "金曜日の予算決定まで待てます。"), ("me", "Thank you. I'll give you a firm answer that afternoon.", "ありがとうございます。その日の午後に確定回答をお伝えします。")),
-        vocab=("firm date|確定日; capacity|生産能力; dependency|判断条件; lock in|固定する; commit to|確約する", "", "supplier|供給元; guarantee|保証する; legal|法務; terms|条件; update|連絡する", "hold off on|〜を見送る; aim for|〜を目指す"),
+        vocab=("firm date|確定日; capacity|生産能力; dependency|判断条件; commit to|確約する", "", "supplier|供給元; guarantee|保証する; legal|法務; terms|条件; update|連絡する; lock in|固定する", "hold off on|〜を見送る; aim for|〜を目指す"),
     ),
     52: dict(
         slug="explain-a-trade-off", title="Explain a trade-off", ko="트레이드오프 설명하기", ja="トレードオフを説明する", role="Product Owner", scene="Balancing speed against reliable testing", scene_ja="速度と十分なテストの釣り合いを話す場面",
@@ -195,7 +195,7 @@ LESSONS = {
         live=live("Use a real or imaginary trade-off and name the two priorities that compete.", "実際または架空のトレードオフと、競合する二つの優先事項を示してください。", "Real or imaginary: The ___ we ___, the less ___ we'll have for ___. The question is whether ___ or ___ matters more.", "実際の例でも架空の例でも、二つの表現を使いましょう。", "What trade-off do you face when planning work?", "仕事の計画で、先生はどんなトレードオフに直面しますか？"),
         tip=("A trade-off is not the same as a compromise", "trade-off と compromise は同じではない", "A trade-off is the cost of gaining one thing; a compromise is an agreement in which each side gives something up.", "trade-off は一つを得るための代償、compromise は双方が一部を譲って成立する合意です。", ("Cost", "代償", "a speed-quality trade-off", "速度と品質の得失関係"), ("Agreement", "合意", "reach a compromise", "妥協点に達する")),
         transfer_title="Balancing customisation and training", transfer_ja="カスタマイズと研修の釣り合い", transfer_role="Implementation Lead", transfer_turns=(("other", "Can we add three more custom workflows?", "カスタム業務フローをあと3つ追加できますか？"), ("target", 1, 2), ("other", "Which priority should decide this?", "どの優先事項で決めるべきですか？"), ("target", 2, 1), ("other", "Accuracy matters more than speed for the first month.", "最初の1か月は速度より正確さが重要です。"), ("me", "Then we'll keep the training time and postpone two workflows.", "では研修時間を確保し、2つのフローを後回しにします。")),
-        vocab=("trade-off|トレードオフ; decision criterion|判断基準; reliability|信頼性; certainty|確実性", "flexibility|調整の余地|CTX-30", "testing|テスト; comparison|比較; accuracy|正確さ; custom workflow|カスタム業務フロー", "at the expense of|〜を犠牲にして; reach a compromise|妥協点に達する"),
+        vocab=("trade-off|トレードオフ; reliability|信頼性; certainty|確実性", "flexibility|調整の余地|CTX-30", "testing|テスト; comparison|比較; accuracy|正確さ; custom workflow|カスタム業務フロー; decision criterion|判断基準", "at the expense of|〜を犠牲にして; reach a compromise|妥協点に達する"),
     ),
     53: concise_lesson(
         slug="acknowledge-then-push-back", title="Acknowledge, then push back", ko="인정한 뒤 반론하기", ja="認めてから反論する", role="Supplier", scene="Challenging a charge after acknowledging a warning", scene_ja="事前の説明を認めたうえで費用に異議を唱える場面", situation="相手が事前に説明した点は公平に認めつつ、それでも残る具体的な懸念を明確に伝えます。", goal=("Acknowledge the other side's valid point before stating the concern that remains.", "相手の正当な点を認めてから、残る懸念を伝えましょう。"), expressions=(("give credit", "評価する"), ("push back", "異議を唱える")),
@@ -340,8 +340,8 @@ LESSONS[56]["vocab"] = (
     LESSONS[56]["vocab"][0], "", LESSONS[56]["vocab"][2], LESSONS[56]["vocab"][3],
 )
 LESSONS[53]["vocab"] = (
-    LESSONS[53]["vocab"][0], LESSONS[53]["vocab"][1].replace("remedy|救済策|CTX-8", "remedy|対応|CTX-8"),
-    LESSONS[53]["vocab"][2], LESSONS[53]["vocab"][3],
+    LESSONS[53]["vocab"][0], LESSONS[53]["vocab"][1].replace("push back|異議を唱える|CORE-95; remedy|救済策|CTX-8", "push back|異議を唱える|CORE-95"),
+    LESSONS[53]["vocab"][2], LESSONS[53]["vocab"][3] + "; remedy|救済策",
 )
 LESSONS[57]["vocab"] = (
     LESSONS[57]["vocab"][0], "", LESSONS[57]["vocab"][2] + "; secure|安全な", LESSONS[57]["vocab"][3],
@@ -640,6 +640,30 @@ REVIEWED_RECEPTIVE_49_60 = {
 
 for _number, _receptive in REVIEWED_RECEPTIVE_49_60.items():
     LESSONS[_number]["receptive"] = _receptive
+
+
+def _move_new_vocab_to_receptive(number: int, *terms: str) -> None:
+    """Keep pre-taught terms out of the productive new-vocabulary bucket."""
+
+    new, recycled, assumed, receptive_vocab = LESSONS[number]["vocab"]
+    new_items = [item for item in new.split("; ") if item]
+    receptive_items = [item for item in receptive_vocab.split("; ") if item]
+    for term in terms:
+        prefix = f"{term}|"
+        matches = [item for item in new_items if item.startswith(prefix)]
+        if len(matches) != 1:
+            raise ValueError(f"CTX-{number}: expected one new-vocabulary item for {term!r}")
+        item = matches[0]
+        new_items.remove(item)
+        receptive_items.append(item)
+    LESSONS[number]["vocab"] = ("; ".join(new_items), recycled, assumed, "; ".join(receptive_items))
+
+
+_move_new_vocab_to_receptive(55, "observable")
+_move_new_vocab_to_receptive(56, "executive briefing", "decision memo")
+_move_new_vocab_to_receptive(57, "uncertainty")
+_move_new_vocab_to_receptive(59, "incident lead")
+_move_new_vocab_to_receptive(60, "executive recommendation")
 
 COURSES = {
     range(49, 55): ("ctx-business-negotiation-diplomacy", "B2", "BUSINESS ENGLISH", "Negotiator", "交渉担当者"),

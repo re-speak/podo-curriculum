@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-leadership-high-stakes/lessons/56-give-high-standard-feedback/lesson.html`
-- SHA-256: `e4a7e8c8e85725f6d616903a031fbf23a03f18b38ba9323ad0834f44f8afae9c`
+- SHA-256: `c22c3445eff5b4fbde87f436a7a1d32a274a88ce8cba7f10a08c56677279583f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/52-explain-a-trade-off/lesson.html`
-- SHA-256: `a17cd3e9c428871c9defde357dee90f9414af4e1a4a402c98cd5d0b8fed56ccc`
+- SHA-256: `117a92ae670686ec00f721c8380e31f8d1034fa54dbb0a73e2a0b5e299cf1b4c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

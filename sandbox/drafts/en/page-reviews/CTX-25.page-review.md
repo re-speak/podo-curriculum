@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/25-escalate-a-cancellation-with-clear-priorities/lesson.html`
-- SHA-256: `61bba9245ab123029fdc75740e55dcd8c361a1af9e50d14c1fd1ec2e7ba5ab16`
+- SHA-256: `08b0c566e4fb36a71bcfc256231bd002e143edaa6b996d66bcf2f4297ab05edd`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

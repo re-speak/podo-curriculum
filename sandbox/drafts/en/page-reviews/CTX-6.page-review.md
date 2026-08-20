@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/06-arrange-transport-to-your-accommodation/lesson.html`
-- SHA-256: `b66faea0beda63361cdeed7c5bd8d2a765798bd3424b67015d1a0f28284dd1d2`
+- SHA-256: `2b458b0f1fef7af17e821d240a084cceb1ca955f3f02a82444872d34a0ec7bab`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

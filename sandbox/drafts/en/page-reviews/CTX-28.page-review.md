@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/28-resolve-conflicting-booking-information/lesson.html`
-- SHA-256: `d8f0acf31796fd88572968bf8756af38653df51a2d617b0233784659c8fe8869`
+- SHA-256: `0a5ebe2cfb1c58ab79b3d4195a5cbded8356a0b620a096d21339ca732af8b893`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

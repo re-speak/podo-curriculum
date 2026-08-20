@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-meetings-decisions/lessons/44-summarise-a-decision-before-moving-on/lesson.html`
-- SHA-256: `75018789252accfaa4e68dd0e44cd20c54ed7d08a9789385d03eadc707fb548e`
+- SHA-256: `6c7129432d9e587cedd1d79a3bc621e98875a64e12bec094dca8e155f7436a5c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

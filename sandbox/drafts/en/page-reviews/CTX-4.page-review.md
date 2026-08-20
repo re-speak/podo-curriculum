@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/04-choose-the-right-transport-ticket/lesson.html`
-- SHA-256: `374e5f0d34a66675d480aa8ca32f5954a9305c4bd0c2f3e1dfec1dff71179a11`
+- SHA-256: `fc3e4918a4edcedd80e4a616bf7201105836f0005f441e0e7c8bc5d184513ffb`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

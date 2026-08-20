@@ -97,7 +97,7 @@ class ContextualEarlyProvenanceTests(unittest.TestCase):
     def test_ctx7_to_12_repair_classifications_are_exact(self):
         expected = {
             7: (("reservation", "new", None), ("can we leave", "assumed", None),
-                ("receipt", "recycled", "CORE-22")),
+                ("receipt", "receptive", None)),
             8: (("doesn't work", "new", None), ("can we", "assumed", None)),
             9: (("contain", "new", None), ("I don't eat", "assumed", None)),
             10: (("ordered", "new", None), ("can I have", "assumed", None),
