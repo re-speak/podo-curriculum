@@ -31,7 +31,7 @@ LESSONS = {
  rules=(("Use at before an exact clock time: at nine, at ten.", "正確な時刻の前には at を置き、at nine、at ten の形にします。"),("Put usually before the main verb, and use around before an approximate time.", "usually は動詞の前に置き、だいたいの時刻には around を使います。")), prompt=("What does a normal workday look like for you?", "ふだんの仕事の日はどんな一日ですか？"), partner=("Coworker", "What time do you normally start?", "And when do you usually finish?", "That is a long day."), tip=("every day", "毎日", "most days", "たいていの日")),
 13: dict(slug="do-you-drink-coffee", title="Do you drink coffee?", ko="커피를 마셔요?", ja="コーヒーを飲みますか？", goal=("Ask about a habit and give a short answer with one detail.", "習慣についてたずね、短い答えに一つ情報を加えましょう。"),
  p1=rows(("{t}Do you{/t} drink coffee?", "コーヒーを{t}飲みますか{/t}？", "Do you|drink|coffee?"),("{t}Do you{/t} cook at home?", "家で{t}料理しますか{/t}？", "Do you|cook|at home?"),("{t}Do you{/t} work on weekends?", "週末に{t}働きますか{/t}？", "Do you|work|on weekends?"),("{t}Do you{/t} exercise every day?", "毎日{t}運動しますか{/t}？", "Do you|exercise|every day?")),
- p2=rows(("{t}Yes, I do.{/t} Every morning.", "{t}はい、します。{/t}毎朝です。", "Yes,|I do.|Every morning."),("{t}Yes, I do.{/t} At home.", "{t}はい、します。{/t}家でです。", "Yes,|I do.|At home."),("{t}Yes, I do.{/t} Every weekend.", "{t}はい、します。{/t}毎週末です。", "Yes,|I do.|Every weekend."),("{t}Yes, I do.{/t} Almost every day.", "{t}はい、します。{/t}ほぼ毎日です。", "Yes,|I do.|Almost every day.")),
+ p2=rows(("{t}Yes, I do.{/t} Every morning.", "{t}はい、します。{/t}毎朝です。", "Yes,|I do.|Every morning."),("{t}No, I don't.{/t} Not very often.", "{t}いいえ、しません。{/t}あまりしません。", "No,|I don't.|Not very often."),("{t}Yes, I do.{/t} Every weekend.", "{t}はい、します。{/t}毎週末です。", "Yes,|I do.|Every weekend."),("{t}No, I don't.{/t} I exercise on weekends.", "{t}いいえ、しません。{/t}週末に運動します。", "No,|I don't.|I exercise on weekends.")),
  rules=(("Put do before you and keep the main verb plain.", "do を you の前に置き、後ろの動詞は原形のままにします。"),("Use Yes, I do or No, I don't as the short answer, then add one detail.", "短く答えるときは Yes, I do または No, I don't を使い、そのあとに一つ情報を加えます。")), prompt=("Ask me about one of my everyday habits.", "私の日常の習慣を一つたずねてください。"), partner=("Friend", "Ask me something about my routine.", "Yes, I do. How about you?", "Now we know one thing in common."), tip=("not really", "あまり", "all the time", "いつも")),
 14: dict(slug="i-dont-drive-to-work", title="I don't drive to work", ko="차로 출근하지 않아요", ja="車で通勤しません", goal=("Contrast something you do with something you do not do.", "することと、しないことを対比して話しましょう。"),
  p1=rows(("{t}I don't{/t} drive to work.", "車で通勤{t}しません{/t}。", "I don't|drive|to work."),("{t}I don't{/t} eat breakfast.", "朝ごはんを{t}食べません{/t}。", "I don't|eat|breakfast."),("{t}I don't{/t} work on Sundays.", "日曜日は{t}働きません{/t}。", "I don't|work|on Sundays."),("{t}I don't{/t} drink tea.", "お茶は{t}飲みません{/t}。", "I don't|drink|tea.")),
@@ -138,7 +138,7 @@ DIALOGUES = {
 
 VOCAB = {
 12:("finish work|仕事を終える; eat lunch|昼食をとる; have dinner|夕食をとる; around|〜ごろ","start work|仕事を始める; usually|ふだん",""),
-13:("habit|習慣; exercise|運動する","coffee|コーヒー; cook|料理する; weekend|週末","routine|日課"),
+13:("habit|習慣; exercise|運動する","coffee|コーヒー; cook|料理する; weekend|週末; work|働く; every morning|毎朝; not very often|あまり頻繁に; every weekend|毎週末; on weekends|週末に","routine|日課"),
 14:("instead|その代わり; drive|運転する","train|電車; breakfast|朝食; water|水",""),
 15:("downtown|中心街; nearby|近くに","work|働く; live|住む; study|勉強する","fit|合うこと"),
 16:("get up|起きる; get home|帰宅する","time|時刻; lunch|昼食; usually|ふだん","schedule|予定"),
@@ -157,12 +157,22 @@ VOCAB = {
 CANONICAL_SPECS = {
 13: dict(
  meanings=(("Use this to ask whether a habit is part of someone's routine.", "習慣が日課の一部かどうかをたずねるときに使います。"), ("Use a short answer first, then add one useful detail.", "まず短く答え、そのあとに役立つ情報を一つ加えます。")),
- writes=(("Ask one habit question you really want answered.", "本当に答えを知りたい習慣の質問を一つ作りましょう。"), ("Answer one habit question about yourself, then add a true detail.", "自分の習慣について短く答え、本当の情報を一つ加えましょう。")),
- choices=(
-  (("コーヒーを{t}飲みますか{/t}？", "", "Do you", "You do", " drink coffee?"), ("家で{t}料理しますか{/t}？", "", "Do you", "You do", " cook at home?"), ("週末に{t}働きますか{/t}？", "", "Do you", "You do", " work on weekends?"), ("毎日{t}運動しますか{/t}？", "", "Do you", "You do", " exercise every day?")),
-  (("{t}はい、します。{/t}毎朝です。", "Yes, I ", "do", "am", ". Every morning."), ("{t}はい、します。{/t}家でです。", "Yes, I ", "do", "am", ". At home."), ("{t}はい、します。{/t}毎週末です。", "Yes, I ", "do", "am", ". Every weekend."), ("{t}はい、します。{/t}ほぼ毎日です。", "Yes, I ", "do", "am", ". Almost every day.")),
+ writes=(("Now use “Do you ___?” to ask me one habit question you really want answered.", "では、「Do you ___?」を使って、本当に答えを知りたい習慣の質問を一つ私にしてください。"), ("Answer “Do you cook at home?” with “Yes, I do” or “No, I don’t,” then add one true detail.", "「Do you cook at home」に「Yes, I do」か「No, I don’t」で答え、本当の情報を一つ加えてください。")),
+ write_notes=("Have the learner say the question aloud. Answer it naturally, then capture and correct the learner's sentence.", "Have the learner answer aloud. React first, then capture and correct only what is useful."),
+ rule_scripts=(("Start with “Do you,” then add the habit.", "「Do you」で始め、そのあとに習慣を表す動作を続けます。"), ("Answer with “Yes, I do” or “No, I don’t,” then add one detail.", "「Yes, I do」か「No, I don’t」で答え、そのあとに情報を一つ加えます。")),
+ role_ja="友達",
+ omit_known=True,
+ freetalk=("Answer my question, then ask me too.", "私の質問に答えて、それから私にも聞いてください。"),
+ wild_script=("I’ll be your friend. Ask me about another habit, then answer the same question about yourself.", "私は友達役をします。別の習慣について私に質問し、そのあと同じ質問に自分のこととして答えてください。"),
+ translate_hints=(
+  (("コーヒー", "coffee"), ("料理する", "cook"), ("働く", "work"), ("運動する", "exercise")),
+  (("毎朝", "every morning"), ("あまり頻繁に", "not very often"), ("毎週末", "every weekend"), ("週末に", "on weekends")),
  ),
- rules=(("Put do before you", "do を you の前に", "<b>Do</b> + you + 動詞の原形 + ...?", "Habit question", "習慣についての質問", ("<b>Do you</b> drink coffee?", "<b>Do you</b> cook at home?")), ("Match the short answer", "短い答えを合わせよう", "Yes, I <b>do</b>. / No, I <b>don't</b>.", "Answer with do", "do で答える", ("Yes, I <b>do</b>. Every morning.", "No, I <b>don't</b>. Not very often."))),
+ choices=(
+  (("コーヒーを{t}飲みますか{/t}？", "", "Do you", "Are you", " drink coffee?"), ("{t}学生ですか{/t}？", "", "Are you", "Do you", " a student?"), ("家で{t}料理しますか{/t}？", "", "Do you", "Are you", " cook at home?"), ("{t}忙しいですか{/t}？", "", "Are you", "Do you", " busy?")),
+  (("{t}はい、します。{/t}毎朝です。", "Yes, I ", "do", "don't", ". Every morning."), ("{t}いいえ、しません。{/t}あまりしません。", "No, I ", "don't", "do", ". Not very often."), ("{t}はい、します。{/t}毎週末です。", "Yes, I ", "do", "don't", ". Every weekend."), ("{t}いいえ、しません。{/t}週末に運動します。", "No, I ", "don't", "do", ". I exercise on weekends.")),
+ ),
+ rules=(("Start the question with Do you", "質問は Do you で始める", "<b>Do you</b> + 動詞 + ...?", "Ask about a habit", "習慣をたずねる", ("<b>Do you</b> drink coffee?", "<b>Do you</b> cook at home?")), ("Match the short answer", "短い答えを合わせよう", "Yes, I <b>do</b>. / No, I <b>don't</b>.", "Choose do or don't", "do / don't を選ぶ", ("Yes, I <b>do</b>. Every morning.", "No, I <b>don't</b>. Not very often."))),
  tip=("No, I don't or Not really?", "No, I don't と Not really", "Both are natural. Use “Not really” for a softer, less absolute no.", "どちらも自然です。やわらかく、完全な否定を避けるなら「Not really」を使います。", ("Direct answer", "はっきり答える", "No, I don't.", "いいえ、しません。"), ("Softer answer", "やわらかく答える", "Not really.", "あまりしません。")),
 ),
 14: dict(
@@ -271,7 +281,7 @@ CANONICAL_SPECS = {
 # permission, ordering and repair create different turn logic. Each tuple is
 # (kind, side, speaker, English or scaffold, Japanese or task).
 LIVE_SCENES = {
-13: (("text", "other", "Tutor", "Do you drink coffee?", "コーヒーを飲みますか？"), ("input", "me", "Me", "Yes, I do. ___. / No, I don't. ___.", "自分の本当の答え"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Yes, I do. ___ / No, I don't. ___", "先生の答え")),
+13: (("text", "other", "Tutor", "What’s one everyday habit you’d like to change, and why?", "変えたい日常の習慣は何ですか？なぜですか？"), ("input", "me", "Me", "Student's answer", "自分の答え"), ("text", "me", "Me", "What habit would you like to change?", "先生はどんな習慣を変えたいですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
 14: (("text", "other", "Tutor", "Do you drive to work?", "車で通勤しますか？"), ("input", "me", "Me", "I don't ___. I ___ instead.", "自分の本当の習慣"), ("text", "me", "Me", "How about you?", "あなたはどうですか？"), ("input", "other", "Tutor", "Tutor's answer: I don't ___. I ___ instead.", "先生の答え")),
 15: (("text", "other", "Tutor", "Tell me about someone you know.", "知っている人について教えてください。"), ("input", "me", "Me", "She / He ___.", "知っている人の本当の情報"), ("text", "other", "Tutor", "What would you like to ask about that person?", "その人について何を聞きたいですか？"), ("input", "me", "Me", "Does she / he ___?", "続けて聞きたい質問"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
 16: (("text", "other", "Tutor", "Ask me about my routine.", "私の日課についてたずねてください。"), ("input", "me", "Me", "What time do you ___?", "聞きたい時刻"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え"), ("input", "me", "Me", "Where do you usually ___?", "聞きたい場所"), ("input", "other", "Tutor", "Tutor's answer", "先生の答え")),
@@ -289,6 +299,30 @@ def esc(s): return html.escape(s, quote=True)
 def strip_marks(s): return re.sub(r"\{/?t\}", "", s)
 def marks(s, cls="ending"):
     return esc(s).replace("{t}", f'<span class="{cls}">').replace("{/t}", "</span>")
+
+
+def marked_targets(source):
+    """Return the exact taught units from one authored model sentence."""
+    return tuple(
+        re.sub(r"\s+", " ", target).strip().casefold()
+        for target in re.findall(r"\{t\}(.*?)\{/t\}", source)
+    )
+
+
+def validate_controlled_pattern(pattern, *, label):
+    """Refuse a controlled ladder whose rows do not identify a taught target.
+
+    The canonical model rows are the controlled-fill source.  A separate set of
+    fill rows used to let vocabulary silently replace the taught frame; callers
+    now pass only the canonical pattern and this check protects its target marks.
+    """
+    if len(pattern) != 4:
+        raise ValueError(f"{label}: controlled pattern needs four rows")
+    for index, (english, japanese, _) in enumerate(pattern, start=1):
+        if not marked_targets(english):
+            raise ValueError(f"{label} row {index}: English model has no taught target")
+        if not marked_targets(japanese):
+            raise ValueError(f"{label} row {index}: Japanese model has no matching target")
 
 def set_vocab(head, number):
     # The canonical CORE-20 shell has its own recycled provenance. Generated
@@ -327,8 +361,30 @@ def inputs(s, prefix):
     out.append(esc(s[pos:])); return "".join(out)
 
 
-def section(pid,title,ja,body):
-    return f'''    <div class="section" data-page-id="{pid}"><h2 class="section-title">{title} <span class="title-ja">({ja})</span></h2>{body}</div>\n'''
+def section(pid,title,ja,body, *, attributes=""):
+    extra = f" {attributes.strip()}" if attributes.strip() else ""
+    return f'''    <div class="section" data-page-id="{pid}"{extra}><h2 class="section-title">{title} <span class="title-ja">({ja})</span></h2>{body}</div>\n'''
+
+
+def goal_page(*, title, title_ja, can_do, can_do_ja, data_act="Everyday English", kicker="GOAL"):
+    """Render the approved orientation-only opening."""
+    return f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="{esc(data_act)}">
+      <span class="transition-kicker">{esc(kicker)}</span>
+      <h2 class="transition-title">{esc(title)} <span class="title-ja">({esc(title_ja)})</span></h2>
+      <p class="section-subtitle"><span class="ko">{esc(can_do)} Please read the title aloud.</span><span class="ja">{esc(can_do_ja)}タイトルを声に出して読んでください。</span></p>
+      <div class="tutor-note">Have the learner read the title once, then move on.</div>
+    </div>\n'''
+
+
+def feedback_compose(feedback_id, inside=""):
+    """Render the approved spoken-answer capture without a duplicate task."""
+    return (
+        '<div class="fb-compose"><div class="fb" '
+        f'data-fb="{esc(feedback_id)}" data-fb-spoken-label="Student\'s sentence">{inside}</div>'
+        '<div class="fb-adds"><button class="fb-add" data-add="fix" type="button">'
+        '＋ Correction</button><button class="fb-add" data-add="note" type="button">'
+        '＋ Note</button></div></div>'
+    )
 
 
 def teach(pid, pattern, meaning):
@@ -343,6 +399,7 @@ def teach(pid, pattern, meaning):
         '<span class="meaning-kicker">Meaning &amp; use <small>意味・使い方</small></span>'
         f'<span class="ko">{esc(meaning[0])}</span>'
         f'<span class="ja">{esc(meaning[1])}</span></p>'
+        '<div class="tutor-note">Briefly explain the meaning, then have the learner read each example aloud.</div>'
         '<div class="sent-hero">'
         f'<span class="korean">{marks(hero_en)}</span>'
         f'<span class="translation">{marks(hero_jp)}</span></div>'
@@ -364,7 +421,7 @@ def rule_example(pattern):
 
 def read(pid, pattern):
     lines="".join(f'<div class="model-line"><span class="korean">{marks(en)}</span><span class="translation">{marks(jp)}</span></div>' for en,jp,_ in pattern)
-    return section(pid,"Read the sentences","文を読もう",'<p class="section-subtitle"><span class="ko">Read the four sentences.</span><span class="ja">4つの文を読んでみましょう。</span></p><div class="model-list">'+lines+'</div>')
+    return section(pid,"Read the sentences","文を読もう",'<p class="section-subtitle"><span class="ko">Please read each sentence aloud.</span><span class="ja">一文ずつ声に出して読んでください。</span></p><div class="model-list">'+lines+'</div>')
 
 
 def reorder(pid, pattern):
@@ -372,7 +429,7 @@ def reorder(pid, pattern):
     for i,(en,jp,chunks) in enumerate(pattern):
         choices="".join(f'<span class="choice" data-item-id="{pid}-{i}-{j}">{esc(c)}</span>' for j,c in enumerate(chunks.split("|")[::-1]))
         blocks.append(f'<div class="task-block"><div class="answer-box small"><span class="answer-label">{esc(strip_marks(jp))}</span><span class="answer-space build-zone" data-sync-id="{pid}-{i}" data-sync-kind="order" data-a="{esc(strip_marks(en))}"></span></div>{choices}</div>')
-    return section(pid,"Build the sentence","文を組み立てよう",'<p class="section-subtitle"><span class="ko">Put the four meaning chunks in order.</span><span class="ja">4つの意味のまとまりを順番に並べましょう。</span></p>'+"".join(blocks))
+    return section(pid,"Build the sentence","文を組み立てよう",'<p class="section-subtitle"><span class="ko">Put the words in order, then say the whole sentence out loud.</span><span class="ja">単語を順番に並べて、文をまるごと声に出して言ってみましょう。</span></p>'+"".join(blocks))
 
 
 BOUND_REORDER_CHIPS = {"a", "an", "the", "er"}
@@ -409,7 +466,7 @@ def lesson_reorder(d, part):
             f'data-page-id="p{part}-reorder" data-chunk-review="meaningful"',
             1,
         )
-    return page.replace("Put the four meaning chunks in order.", f"Put the {en} meaning chunks in order.").replace("4つの意味のまとまり", f"{ja}の意味のまとまり")
+    return page
 
 
 def fill(pid, pattern):
@@ -421,12 +478,60 @@ def fill(pid, pattern):
             fields.append(f'<input class="slot-input" type="text" data-sync-id="{pid}-{r}-{i}" data-answer="{esc(ans)}" autocomplete="off" spellcheck="false">'); pos=m.end()
         fields.append(esc(en[pos:]))
         blocks.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">{marks(jp,"target ending")}</span><span class="answer-fill"><span class="korean">{"".join(fields)}</span></span></div></div>')
-    return section(pid,"Fill the frame","空欄をうめよう",'<p class="section-subtitle"><span class="ko">Complete only the highlighted pattern.</span><span class="ja">強調されたパターンだけを空欄に入れましょう。</span></p><div class="tutor-note">Write the learner\'s answer exactly as they say it.</div>'+"".join(blocks))
+    return section(pid,"Say the complete sentence","文をまるごと言おう",'<p class="section-subtitle"><span class="ko">Say each whole sentence aloud, including the missing words.</span><span class="ja">空欄に入る言葉も含めて、文をまるごと声に出して言ってください。</span></p><div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'+"".join(blocks))
 
 
-def translate(pid, pattern):
-    blocks="".join(f'<div class="task-block"><div class="answer-box"><span class="answer-label">{esc(strip_marks(jp))}</span><span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="{pid}-{i}" data-answer="{esc(strip_marks(en))}" autocomplete="off" spellcheck="false"></span></div></div>' for i,(en,jp,_) in enumerate(pattern))
-    return section(pid,"Say it in English","英語にしよう",'<p class="section-subtitle"><span class="ko">Read the Japanese, then say the whole sentence in English.</span><span class="ja">日本語を見て、文をまるごと英語で言いましょう。</span></p>'+blocks)
+def translate(pid, pattern, *, hints=None, support_stage=None):
+    """Render whole-sentence production with an explicit support contract.
+
+    New or revised pages choose ``supported`` and provide one vocabulary hint
+    per row, or choose ``checkpoint`` and deliberately provide none.  Legacy
+    generator data can remain unmarked until its course-wide scaffolding audit.
+    """
+    if support_stage not in {None, "supported", "checkpoint"}:
+        raise ValueError(f"{pid}: unknown support stage {support_stage!r}")
+    if hints is not None and len(hints) != len(pattern):
+        raise ValueError(f"{pid}: expected {len(pattern)} hint rows, got {len(hints)}")
+    if support_stage == "supported" and (
+        hints is None or any(not row for row in hints)
+    ):
+        raise ValueError(f"{pid}: supported production needs vocabulary hints on every row")
+    if support_stage == "checkpoint" and hints:
+        raise ValueError(f"{pid}: checkpoint production must not carry hint chips")
+
+    blocks = []
+    for index, (english, japanese, _) in enumerate(pattern):
+        hint_row = () if hints is None else hints[index]
+        if len(hint_row) == 2 and all(isinstance(item, str) for item in hint_row):
+            hint_row = (hint_row,)
+        hint_html = ""
+        if hint_row:
+            hint_html = '<span class="hint">' + "".join(
+                f'<span class="hint-chip">{esc(japanese_hint)}:{esc(english_hint)}</span>'
+                for japanese_hint, english_hint in hint_row
+            ) + "</span>"
+        blocks.append(
+            '<div class="task-block"><div class="answer-box">'
+            f'<span class="answer-label">{esc(strip_marks(japanese))}</span>'
+            '<span class="answer-space as-input">'
+            f'<input class="space-input" type="text" data-sync-id="{pid}-{index}" '
+            f'data-answer="{esc(strip_marks(english))}" autocomplete="off" spellcheck="false">'
+            f'</span>{hint_html}</div></div>'
+        )
+    attributes = ""
+    if support_stage:
+        attributes = (
+            'data-scaffolding-contract="target-v2" '
+            f'data-support-stage="{support_stage}"'
+        )
+    return section(
+        pid,
+        "Say it in English",
+        "英語にしよう",
+        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span><span class="ja">日本語を見て、英語で言ってみましょう。</span></p><div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
+        + "".join(blocks),
+        attributes=attributes,
+    )
 
 
 def rule_page(pid, title, title_ja, script, script_ja, formula, heading, heading_ja, examples):
@@ -469,7 +574,9 @@ def choose_words(pid, title, title_ja, script, script_ja, rows):
         title,
         title_ja,
         '<p class="section-subtitle">'
-        f'<span class="ko">{esc(script)}</span><span class="ja">{esc(script_ja)}</span></p>'
+        '<span class="ko">Choose the answer that matches the Japanese, then read the complete sentence aloud.</span>'
+        '<span class="ja">日本語に合う答えを選び、完成した文を声に出して読んでください。</span></p>'
+        '<div class="tutor-note">After each choice, have the learner read the entire completed sentence before moving on.</div>'
         f'<div class="word-choice-list">{"".join(rendered)}</div>',
     )
 
@@ -493,17 +600,13 @@ def core12_pages(d):
         "ふだん何をだいたい何時ごろするかを伝えるときに使います。",
     )
 
-    goal = '''    <div class="transition-page" data-page-id="lesson-goal" data-act="Talking about routines">
-      <span class="transition-kicker">GOAL</span>
-      <h2 class="transition-title">I start work at nine <span class="title-ja">(9時に仕事を始めます)</span></h2>
-      <p class="section-subtitle"><span class="ko">Say when your normal workday starts and finishes.</span><span class="ja">ふだんの仕事が何時に始まり、何時ごろ終わるかを話しましょう。</span></p>
-      <div class="known lines">
-        <div class="known-row"><span class="k">I start work at nine.</span><span class="j">9時に仕事を始めます。</span></div>
-        <div class="known-row"><span class="k">I usually finish work around six.</span><span class="j">ふだん6時ごろ仕事を終えます。</span></div>
-        <div class="known-row"><span class="k">How about you?</span><span class="j">あなたはどうですか？</span></div>
-      </div>
-    </div>
-'''
+    goal = goal_page(
+        title="I start work at nine",
+        title_ja="9時に仕事を始めます",
+        can_do="Today, you'll practice saying when your normal workday starts and finishes.",
+        can_do_ja="今日は、ふだんの仕事が始まる時刻と終わる時刻を話す練習をします。",
+        data_act="Talking about routines",
+    )
     known = section(
         "words-you-know",
         "Words you already know",
@@ -518,7 +621,8 @@ def core12_pages(d):
     p1_intro = '''    <div class="transition-page" data-page-id="part1-intro" data-act="I start work at…">
       <span class="transition-kicker">PART 1</span>
       <h2 class="transition-title">I start work at ___.</h2>
-      <p class="transition-copy">仕事を始める正確な時刻を言うパターンです。</p>
+      <p class="section-subtitle"><span class="ko">First, let's practice saying when your workday starts.</span><span class="ja">まず、仕事を始める時刻を言う練習をしましょう。</span></p>
+      <div class="tutor-note">Introduce Part 1 with this one line, then move on.</div>
     </div>
 '''
     p1_rule = rule_page(
@@ -550,16 +654,15 @@ def core12_pages(d):
         "Your real start time",
         "自分の始業時刻",
         '<p class="section-subtitle"><span class="ko">What time do you start work?</span><span class="ja">何時に仕事を始めますか？</span></p>'
-        '<div class="task-block"><div class="answer-box tall">'
-        '<span class="answer-label">I start work at ___.<span class="task">自分の時刻で</span></span>'
-        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="p1-write" rows="2" spellcheck="false" maxlength="2000"></textarea></span>'
-        '</div></div>',
+        '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
+        + feedback_compose("p1-write"),
     )
 
     p2_intro = '''    <div class="transition-page" data-page-id="part2-intro" data-act="I usually… around…">
       <span class="transition-kicker">PART 2</span>
       <h2 class="transition-title">I usually ___ around ___.</h2>
-      <p class="transition-copy">ふだんすることと、だいたいの時刻を言うパターンです。</p>
+      <p class="section-subtitle"><span class="ko">Next, let's practice saying when something usually happens.</span><span class="ja">次に、ふだん何時ごろするかを言う練習をしましょう。</span></p>
+      <div class="tutor-note">Introduce Part 2 with this one line, then move on.</div>
     </div>
 '''
     p2_rule = rule_page(
@@ -594,10 +697,8 @@ def core12_pages(d):
         "Your real finish time",
         "自分の終業時刻",
         '<p class="section-subtitle"><span class="ko">When do you usually finish work?</span><span class="ja">ふだん何時ごろ仕事を終えますか？</span></p>'
-        '<div class="task-block"><div class="answer-box tall">'
-        '<span class="answer-label">I usually finish work around ___.<span class="task">自分の時刻で</span></span>'
-        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="p2-write" rows="2" spellcheck="false" maxlength="2000"></textarea></span>'
-        '</div></div>',
+        '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
+        + feedback_compose("p2-write"),
     )
 
     p1_en, p1_jp, _ = d["p1"][0]
@@ -626,15 +727,15 @@ def core12_pages(d):
         "p3-model",
         "Read the conversation",
         "会話を読もう",
-        '<p class="section-subtitle"><span class="ko">Read your lines while I read the coworker.</span><span class="ja">自分のセリフを読み、私は同僚のパートを読みます。</span></p>'
+        '<p class="section-subtitle"><span class="ko">I\'ll be the coworker. Please read the Me lines aloud.</span><span class="ja">私は同僚役をします。Me のセリフを声に出して読んでください。</span></p>'
         f'<div class="dialogue">{model_dialogue}</div>',
     )
     p3_complete = section(
         "p3-complete",
         "Complete the conversation",
         "会話をうめよう",
-        '<p class="section-subtitle"><span class="ko">Say the missing pattern words.</span><span class="ja">空いているパターンの部分を言ってみましょう。</span></p>'
-        '<div class="tutor-note">Write each target exactly as the learner says it.</div>'
+        '<p class="section-subtitle"><span class="ko">I’ll be the coworker. Say each complete line, including the missing words.</span><span class="ja">私は同僚役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。</span></p>'
+        '<div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'
         f'<div class="dialogue">{complete_dialogue}</div>',
     )
     tutor_avatar = live_avatar("Tutor")
@@ -679,7 +780,6 @@ def core12_pages(d):
         '<div class="nuance-choice"><span class="nuance-when"><b>Casual conversation</b><small>カジュアルな会話で</small></span><span class="korean">I usually start <span class="ending">at nine-ish</span>.</span><span class="translation">ふだん9時くらいに始めます。</span></div>'
         '</div>',
     )
-
     return [
         goal,
         known,
@@ -701,7 +801,7 @@ def core12_pages(d):
         fill("p2-fill", d["p2"]),
         translate("p2-translate", d["p2"]),
         p2_write,
-        '''    <div class="transition-page" data-page-id="part3-intro" data-act="Talking about a workday"><span class="transition-kicker">PART 3</span><h2 class="transition-title">Your workday</h2><p class="transition-copy">二つのパターンを使って、一日の仕事の時間を話しましょう。</p></div>\n''',
+        '''    <div class="transition-page" data-page-id="part3-intro" data-act="Talking about a workday"><span class="transition-kicker">PART 3</span><h2 class="transition-title">Your workday</h2><p class="section-subtitle"><span class="ko">Now, let's use both patterns in a conversation.</span><span class="ja">では、二つのパターンを会話で使ってみましょう。</span></p><div class="tutor-note">Introduce the conversation, then move on.</div></div>\n''',
         p3_model,
         p3_complete,
         p3_freetalk,
@@ -717,9 +817,10 @@ def answer_turn(src,name,en,jp):
 def partner_ja(line): return PARTNER_JA[line]
 
 
-def dialogue(number, d, variant="model", complete=False, prefix="dlg"):
+def dialogue(number, d, variant="model", complete=False, prefix="dlg", patterns=None):
     role,p1_row,p2_row,first,follow,close,last=DIALOGUES[number][variant]
-    a1,j1,_=d["p1"][p1_row]; a2,j2,_=d["p2"][p2_row]
+    p1_pattern, p2_pattern = patterns or (d["p1"], d["p2"])
+    a1,j1,_=p1_pattern[p1_row]; a2,j2,_=p2_pattern[p2_row]
     mine1=inputs(a1,f"{prefix}-p1") if complete else marks(a1)
     mine2=inputs(a2,f"{prefix}-p2") if complete else marks(a2)
     jp1=marks(j1,"target") if complete else marks(j1)
@@ -741,22 +842,25 @@ def canonical_pages(number, d):
     p1_en, p1_ja, _ = d["p1"][0]
     p2_en, p2_ja, _ = d["p2"][0]
 
-    goal = f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Everyday English">
-      <span class="transition-kicker">GOAL</span>
-      <h2 class="transition-title">{esc(d["title"])} <span class="title-ja">({esc(d["ja"])})</span></h2>
-      <p class="section-subtitle"><span class="ko">{esc(d["goal"][0])}</span><span class="ja">{esc(d["goal"][1])}</span></p>
-      <div class="known lines"><div class="known-row"><span class="k">{marks(p1_en)}</span><span class="j">{marks(p1_ja)}</span></div><div class="known-row"><span class="k">{marks(p2_en)}</span><span class="j">{marks(p2_ja)}</span></div><div class="known-row"><span class="k">How about you?</span><span class="j">あなたはどうですか？</span></div></div>
-    </div>\n'''
+    goal = goal_page(
+        title=d["title"],
+        title_ja=d["ja"],
+        can_do=d["goal"][0],
+        can_do_ja=d["goal"][1],
+    )
 
     def intro(part):
         model = strip_marks(d[f"p{part}"][0][0])
-        return f'''    <div class="transition-page" data-page-id="part{part}-intro" data-act="Pattern {part}"><span class="transition-kicker">PART {part}</span><h2 class="transition-title">{esc(model)}</h2><p class="transition-copy">{esc(spec["meanings"][part - 1][1])}</p></div>\n'''
+        lead = "First" if part == 1 else "Next"
+        lead_ja = "まず" if part == 1 else "次に"
+        return f'''    <div class="transition-page" data-page-id="part{part}-intro" data-act="Pattern {part}"><span class="transition-kicker">PART {part}</span><h2 class="transition-title">{esc(model)}</h2><p class="section-subtitle"><span class="ko">{lead}, let's practice this pattern.</span><span class="ja">{lead_ja}、このパターンを練習しましょう。</span></p><div class="tutor-note">Introduce Part {part} with this one line, then move on.</div></div>\n'''
 
     def visual_rule(part):
         title, title_ja, formula, heading, heading_ja, examples = spec["rules"][part - 1]
+        script_en, script_ja = spec.get("rule_scripts", d["rules"])[part - 1]
         return rule_page(
             f"p{part}-rule", title, title_ja,
-            d["rules"][part - 1][0], d["rules"][part - 1][1],
+            script_en, script_ja,
             formula, heading, heading_ja, examples,
         )
 
@@ -769,19 +873,24 @@ def canonical_pages(number, d):
         )
 
     def write_page(part):
-        model = strip_marks(d[f"p{part}"][0][0])
         prompt_en, prompt_ja = spec["writes"][part - 1]
+        tutor_note = spec.get("write_notes", (
+            "Let the learner answer aloud before you capture it. React first, then add only a useful correction.",
+            "Let the learner answer aloud before you capture it. React first, then add only a useful correction.",
+        ))[part - 1]
         return section(
             f"p{part}-write", "Make it yours", "自分の文にしよう",
             f'<p class="section-subtitle"><span class="ko">{esc(prompt_en)}</span><span class="ja">{esc(prompt_ja)}</span></p>'
-            '<div class="task-block"><div class="answer-box tall">'
-            f'<span class="answer-label">{esc(model)}<span class="task">自分の情報に変えて</span></span>'
-            f'<span class="answer-space as-input"><textarea class="free-input" data-sync-id="p{part}-write" rows="2" spellcheck="false" maxlength="2000"></textarea></span>'
-            '</div></div>',
+            f'<div class="tutor-note">{esc(tutor_note)}</div>'
+            + feedback_compose(f"p{part}-write"),
         )
 
     model_dialogue = dialogue(number, d)
-    complete_dialogue = dialogue(number, d, complete=True)
+    fill_patterns = (d["p1"], d["p2"])
+    for part, pattern in enumerate(fill_patterns, start=1):
+        validate_controlled_pattern(pattern, label=f"CORE-{number} p{part}")
+    translate_hints = spec.get("translate_hints", (None, None))
+    complete_dialogue = dialogue(number, d, complete=True, patterns=fill_patterns)
     live_turns = []
     for index, (kind, side, speaker, english, japanese) in enumerate(LIVE_SCENES[number]):
         avatar_html = live_avatar(speaker)
@@ -794,7 +903,23 @@ def canonical_pages(number, d):
             live_turns.append(
                 f'<div class="turn {side}">{avatar_html}<div class="{bubble_class}"><div class="answer-box tall"><span class="answer-label">{esc(english)}<span class="task">{esc(japanese)}</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-{index}" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
             )
-    live = '<div class="dialogue">' + ''.join(live_turns) + '</div>'
+    if "freetalk" in spec:
+        prompt_en, prompt_ja = spec["freetalk"]
+        live = '<div class="dialogue">' + ''.join(live_turns) + '</div>'
+        live_page = section(
+            "p3-freetalk", "Talk about a real habit", "本当の習慣について話そう",
+            f'<p class="section-subtitle"><span class="ko">{esc(prompt_en)}</span>'
+            f'<span class="ja">{esc(prompt_ja)}</span></p>'
+            '<div class="tutor-note">React to the answer and follow the most interesting detail. Invite today\'s pattern only if it fits naturally.</div>'
+            + live,
+        )
+    else:
+        live = '<div class="dialogue">' + ''.join(live_turns) + '</div>'
+        live_page = section(
+            "p3-freetalk", "Your real answer", "自分の答え",
+            f'<p class="section-subtitle"><span class="ko">{esc(d["prompt"][0])}</span>'
+            f'<span class="ja">{esc(d["prompt"][1])}</span></p>' + live,
+        )
 
     tip_title, tip_ja, tip_script, tip_script_ja, left, right = spec["tip"]
     native_tip = section(
@@ -806,19 +931,34 @@ def canonical_pages(number, d):
         f'<div class="nuance-choice"><span class="nuance-when"><b>{esc(right[0])}</b><small>{esc(right[1])}</small></span><span class="korean">{esc(right[2])}</span><span class="translation">{esc(right[3])}</span></div>'
         '</div>',
     )
+    wild_script_en, wild_script_ja = spec.get(
+        "wild_script",
+        ("Use the same two patterns in a different conversation.", "同じ二つのパターンを別の会話で使いましょう。"),
+    )
 
-    return [
-        goal, known_page(number), intro(1), teach("p1-teach", d["p1"], spec["meanings"][0]),
+    opening = [goal]
+    if not spec.get("omit_known"):
+        opening.append(known_page(number))
+
+    return opening + [
+        intro(1), teach("p1-teach", d["p1"], spec["meanings"][0]),
         read("p1-read", d["p1"]), visual_rule(1), choose(1), lesson_reorder(d, 1),
-        fill("p1-fill", d["p1"]), translate("p1-translate", d["p1"]), write_page(1),
+        fill("p1-fill", fill_patterns[0]),
+        translate(
+            "p1-translate", d["p1"], hints=translate_hints[0],
+            support_stage="supported" if translate_hints[0] is not None else None,
+        ), write_page(1),
         intro(2), teach("p2-teach", d["p2"], spec["meanings"][1]), read("p2-read", d["p2"]),
-        visual_rule(2), choose(2), lesson_reorder(d, 2), fill("p2-fill", d["p2"]),
-        translate("p2-translate", d["p2"]), write_page(2),
-        '    <div class="transition-page" data-page-id="part3-intro" data-act="Conversation"><span class="transition-kicker">PART 3</span><h2 class="transition-title">Use it in a conversation <span class="title-ja">(会話で使おう)</span></h2><p class="transition-copy">二つのパターンをつないで、相手と情報をやり取りしましょう。</p></div>\n',
-        section("p3-model", "Read the conversation", "会話を読もう", '<p class="section-subtitle"><span class="ko">Read your lines while I read the other role.</span><span class="ja">自分のセリフを読み、私は相手役を読みます。</span></p><div class="dialogue">' + model_dialogue + '</div>'),
-        section("p3-complete", "Complete the conversation", "会話を完成しよう", '<p class="section-subtitle"><span class="ko">Say only the missing pattern words.</span><span class="ja">空いているパターンの部分だけを言いましょう。</span></p><div class="tutor-note">Write each target exactly as the learner says it.</div><div class="dialogue">' + complete_dialogue + '</div>'),
-        section("p3-freetalk", "Your real answer", "自分の答え", f'<p class="section-subtitle"><span class="ko">{esc(d["prompt"][0])}</span><span class="ja">{esc(d["prompt"][1])}</span></p>' + live),
-        section("in-the-wild", "A new situation", "別の場面", '<p class="section-subtitle"><span class="ko">Use the same two patterns in a different conversation.</span><span class="ja">同じ二つのパターンを別の会話で使いましょう。</span></p><div class="dialogue">' + dialogue(number, d, "wild", True, "wild") + '</div>'),
+        visual_rule(2), choose(2), lesson_reorder(d, 2), fill("p2-fill", fill_patterns[1]),
+        translate(
+            "p2-translate", d["p2"], hints=translate_hints[1],
+            support_stage="supported" if translate_hints[1] is not None else None,
+        ), write_page(2),
+        '    <div class="transition-page" data-page-id="part3-intro" data-act="Conversation"><span class="transition-kicker">PART 3</span><h2 class="transition-title">Use it in a conversation <span class="title-ja">(会話で使おう)</span></h2><p class="section-subtitle"><span class="ko">Now, let\'s use both patterns in a conversation.</span><span class="ja">では、二つのパターンを会話で使ってみましょう。</span></p><div class="tutor-note">Introduce the conversation, then move on.</div></div>\n',
+        section("p3-model", "Read the conversation", "会話を読もう", f'<p class="section-subtitle"><span class="ko">I\'ll be the {esc(DIALOGUES[number]["model"][0].lower())}. Please read the Me lines aloud.</span><span class="ja">私は{esc(spec.get("role_ja", "相手"))}役をします。Me のセリフを声に出して読んでください。</span></p><div class="dialogue">' + model_dialogue + '</div>'),
+        section("p3-complete", "Complete the conversation", "会話を完成しよう", f'<p class="section-subtitle"><span class="ko">I’ll be the {esc(DIALOGUES[number]["model"][0].lower())}. Say each complete line, including the missing words.</span><span class="ja">私は{esc(spec.get("role_ja", "相手"))}役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。</span></p><div class="tutor-note">Type only the missing words exactly as the learner says them.</div><div class="dialogue">' + complete_dialogue + '</div>'),
+        live_page,
+        section("in-the-wild", "A new situation", "別の場面", f'<p class="section-subtitle"><span class="ko">{esc(wild_script_en)}</span><span class="ja">{esc(wild_script_ja)}</span></p><div class="dialogue">' + dialogue(number, d, "wild", True, "wild", fill_patterns) + '</div>'),
         native_tip,
     ]
 
@@ -826,7 +966,7 @@ def canonical_pages(number, d):
 def build(number,d):
     source=PILOT.read_text(encoding="utf-8"); head,foot=new_lesson.split_shell(source)
     slug=f'{number:02d}-{d["slug"]}'
-    head=new_lesson.retarget(head,review_id=f"CORE-{number}",lesson_id=slug,level="A1",title=d["title"],title_ko=d["ko"],title_ja=d["ja"],version="2026-08-19")
+    head=new_lesson.retarget(head,review_id=f"CORE-{number}",lesson_id=slug,level="A1",title=d["title"],title_ko=d["ko"],title_ja=d["ja"],version="2026-08-20")
     head=set_vocab(head.replace('content="todo"','content="reviewed"'),number)
     head=set_proofread_status(head, "complete")
     pages = core12_pages(d) if number == 12 else canonical_pages(number, d)
@@ -835,12 +975,13 @@ def build(number,d):
 
 
 def main():
-    ap=argparse.ArgumentParser(description=__doc__); ap.add_argument("--refresh",action="store_true"); args=ap.parse_args()
-    for n,d in LESSONS.items():
+    ap=argparse.ArgumentParser(description=__doc__); ap.add_argument("--refresh",action="store_true"); ap.add_argument("--lesson", type=int, choices=LESSONS); args=ap.parse_args()
+    selected = LESSONS.items() if args.lesson is None else ((args.lesson, LESSONS[args.lesson]),)
+    for n,d in selected:
         out,text=build(n,d)
         if out.exists() and not args.refresh: raise SystemExit(f"refusing to overwrite {out.relative_to(ROOT)}")
         out.parent.mkdir(parents=True,exist_ok=True); out.write_text(text,encoding="utf-8"); print(f"wrote {out.relative_to(ROOT)}")
-    print(f"{len(LESSONS)} Core decks generated")
+    print(f"{len(LESSONS) if args.lesson is None else 1} Core decks generated")
     return 0
 
 
