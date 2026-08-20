@@ -96,38 +96,41 @@ LEVEL_ORDER = {
 # `# podo-curriculum-public 2-core-patterns` 주석과 하나씩 맞는다. 모르는 앞머리는
 # '기타' 로 흘리지 않고 빌드를 세운다.
 FAMILIES = [
+    # 체험은 upstream 에 없던 트랙이라 번호 없는 슬러그를 쓴다. 나머지는 upstream 의
+    # 트랙 디렉터리 이름을 그대로 쓴다 — vendor 한 템플릿이 T.id === "1-hangul" 로
+    # 한글 전용 표시를 켜고, URL 도 podo-curriculum-public 과 그대로 맞는다.
     ("trial-", {
-        "kr": {"slug": "trial", "ko": "체험 레슨", "en": "Trial Lessons",
+        "kr": {"slug": "trial", "palette": 4, "ko": "체험 레슨", "en": "Trial Lessons",
                "chip": "Trial", "glyph": "체",
                "desc": "수업을 처음 열어 보는 55분짜리 한 과 코스. 레벨마다 하나씩 있습니다."},
     }),
     ("hangul-", {
-        "kr": {"slug": "hangul", "ko": "한글 읽기", "en": "Hangul Reading",
+        "kr": {"slug": "1-hangul", "palette": 0, "ko": "한글 읽기", "en": "Hangul Reading",
                "chip": "Hangul", "glyph": "가",
                "desc": "어떤 한국어 음절이든 소리 내어 읽을 수 있게. 한 레슨에 새 요소는 하나만."},
     }),
     ("core-", {
-        "kr": {"slug": "core", "ko": "핵심 문법 패턴", "en": "Core Patterns",
+        "kr": {"slug": "2-core-patterns", "palette": 1, "ko": "핵심 문법 패턴", "en": "Core Patterns",
                "chip": "Core", "glyph": "文",
                "desc": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. 초급부터 고급까지 쌓아 올립니다."},
-        "en": {"slug": "core", "ko": "영어 핵심 패턴", "en": "Core Patterns",
+        "en": {"slug": "1-core-patterns", "palette": 1, "ko": "영어 핵심 패턴", "en": "Core Patterns",
                "chip": "Core", "glyph": "英",
                "desc": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. CEFR 을 따라 쌓아 올립니다."},
     }),
     ("ctx-", {
-        "kr": {"slug": "contextual", "ko": "상황별 한국어", "en": "Contextual Korean",
+        "kr": {"slug": "3-contextual-korean", "palette": 2, "ko": "상황별 한국어", "en": "Contextual Korean",
                "chip": "Contextual", "glyph": "劇",
                "desc": "드라마·K-POP·여행·반말 — 흥미 있는 소재에서 패턴을 실전으로 추출."},
-        "en": {"slug": "contextual", "ko": "상황별 영어", "en": "Contextual English",
+        "en": {"slug": "2-contextual-english", "palette": 2, "ko": "상황별 영어", "en": "Contextual English",
                "chip": "Contextual", "glyph": "場",
                "desc": "장면이 정해진 대화 — 흥미 있는 소재에서 패턴을 실전으로 추출."},
     }),
     ("talk-", {
-        "kr": {"slug": "freetalking", "ko": "중급·고급 프리토킹",
+        "kr": {"slug": "4-freetalking", "palette": 3, "ko": "중급·고급 프리토킹",
                "en": "Intermediate & Advanced Freetalking",
                "chip": "Freetalking", "glyph": "話",
                "desc": "새 문법은 없음 — 말하고 싶어지는 주제만. 끝이 없는 트랙이라 주제는 계속 늘어납니다."},
-        "en": {"slug": "freetalking", "ko": "프리토킹", "en": "Freetalking",
+        "en": {"slug": "3-freetalking", "palette": 3, "ko": "프리토킹", "en": "Freetalking",
                "chip": "Freetalking", "glyph": "話",
                "desc": "새 문법은 없음 — 말하고 싶어지는 주제만."},
     }),
@@ -172,7 +175,9 @@ LANGUAGES = {
 }
 
 # Upstream's category palette, in upstream's order. The colour is a name tag, not
-# a rank — it is keyed by track, and follows the track into its own page.
+# a rank — so each track names its own slot ("palette" above) instead of taking
+# whatever its position happens to be. 핵심 문법 패턴 is the blue it has always been,
+# and adding 체험 ahead of it does not repaint the whole catalog.
 PALETTE = [
     ("#4f7d10", "#f2f7e8"),
     ("#2b5fd9", "#eef2fd"),
@@ -268,32 +273,36 @@ def fill(template: str, data: dict) -> str:
 # course → the shape the templates already know how to draw
 # --------------------------------------------------------------------------- #
 
+# 트랙마다 "끝내면 무엇이 되는가" 를 부르는 말이 다르다. 템플릿이 이 값을 보고 칸의
+# 이름을 고른다 — 모르는 값이면 "이 과의 목표" 로 떨어진다.
+CAN_LABEL = {
+    "1-hangul": "읽을 수 있다",
+    "4-freetalking": "이야기한다",
+    "3-freetalking": "이야기한다",
+}
+
+
 def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
-                 level: str) -> dict:
+                 level: str, family: dict) -> dict:
     """One row in the lesson list, plus what it shows when opened.
 
-    Every field here is read off lesson.yaml. `teaches` is free-form by design
-    (`letters`, `concepts`, `patterns`, … differ per track) and several imported
-    lessons leave it empty on purpose, so this carries whatever is there and
-    nothing when there is nothing."""
-    teaches = lesson.spec.get("teaches") or {}
-    letters = teaches.get("letters") if isinstance(teaches, dict) else None
+    `teaches` 는 목차에서 온다 — plan_courses.py 가 초안 lesson.yaml 에 적고,
+    promote.py 가 그대로 courses/ 로 옮긴다. 덱을 읽어서 만든 값이 아니다.
 
+    `canDo` 는 teaches 안에 살지만 배우는 것이 아니라 그 결과다. 값을 통째로 훑어
+    칩으로 만들면 목표 문장이 칩 하나로 끼어들어가므로, 이름을 보고 갈라 놓는다."""
+    teaches = lesson.spec.get("teaches") or {}
+    if not isinstance(teaches, dict):
+        teaches = {}
+
+    # 낱자를 가르치는 과. 배우는 것은 글자 그 자체라, 낱자는 한 덩어리로 묶어 하나의
+    # 칸에 넣는다 — 그 과가 얹는 글자 묶음이 하나의 배울 거리이지, 아홉 개가 아니다.
+    letters = teaches.get("letters")
     if letters:
-        # 낱자를 가르치는 과. 배우는 것은 글자 그 자체이고 outcome 은 그 결과로 읽히는
-        # 단어라, 템플릿의 한글 레이아웃이 정확히 이 두 가지를 나눠 그린다.
-        #
-        # 낱자는 한 덩어리로 묶어 하나의 칸에 넣는다 — 그 과가 얹는 글자 묶음이 하나의
-        # 배울 거리이지, 아홉 개의 배울 거리가 아니다. 규칙(concepts)이 그 옆에 선다.
         chips = [" ".join(str(x) for x in letters)]
         chips += [str(c) for c in (teaches.get("concepts") or [])]
     else:
-        chips = []
-        if isinstance(teaches, dict):
-            for value in teaches.values():
-                if not value:
-                    continue
-                chips += [str(v) for v in (value if isinstance(value, list) else [value])]
+        chips = [str(x) for x in (teaches.get("patterns") or [])]
 
     entry = {
         "n": lesson.week,
@@ -306,9 +315,11 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
         "level": level,
         "decks": deck_hrefs.get(lesson.slug, []),
     }
-    if lesson.spec.get("outcome"):
-        entry["can"] = lesson.spec["outcome"]
-        entry["canLabel"] = "읽을 수 있다" if letters else ""
+
+    can = teaches.get("canDo") or lesson.spec.get("outcome")
+    if can:
+        entry["can"] = str(can)
+        entry["canLabel"] = CAN_LABEL.get(family["slug"], "")
     return entry
 
 
@@ -323,7 +334,7 @@ def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict
     title = pick(spec.get("title"), "ko", "ja", "en")
     prefix = f"{family['ko']} · "
     lessons = [
-        lesson_entry(course, l, decks, level)
+        lesson_entry(course, l, decks, level, family)
         for l in sorted(course.lessons, key=lambda l: l.week)
     ]
     return {
@@ -337,10 +348,10 @@ def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict
     }
 
 
-def track_entry(lang: str, order: int, no: int, family: dict,
+def track_entry(lang: str, no: int, family: dict,
                 units: list[dict], statuses: list[str]) -> dict:
     """트랙 카드 하나, 그리고 그 트랙 페이지의 머리."""
-    accent, tint = PALETTE[order % len(PALETTE)]
+    accent, tint = PALETTE[family["palette"]]
     lessons = [l for u in units for l in u["lessons"]]
     ready = sum(len(l["decks"]) for l in lessons)
 
@@ -487,9 +498,9 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
             for lesson in sorted(course.lessons, key=lambda l: l.week):
                 for deck in decks.get(lesson.slug, []):
                     write_viewer(out, base, course, lesson, deck,
-                                 family, lang, built, *PALETTE[order % len(PALETTE)])
+                                 family, lang, built, *PALETTE[family["palette"]])
 
-        tracks.append(track_entry(lang, order, no, family, units, statuses))
+        tracks.append(track_entry(lang, no, family, units, statuses))
 
     # 사다리의 축은 이 페이지의 트랙이 실제로 쓰는 눈금만 세운다.
     used = {lv for tr in tracks for lv in tr["span"]}
