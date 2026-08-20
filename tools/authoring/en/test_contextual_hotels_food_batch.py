@@ -77,7 +77,8 @@ class ContextualHotelsFoodBatchTests(unittest.TestCase):
         self.assertNotIn("dish", ctx9["p2"]["write"][0].lower())
         self.assertIn("cross-contact", ctx9["transfer_turns"][4][1])
         self.assertNotIn("safe for you", " ".join(turn[1] for turn in ctx9["transfer_turns"] if turn[0] != "target"))
-        self.assertIn("I don't eat|食べません|CORE-14", ctx9["vocab"][1])
+        self.assertIn("I don't eat|食べません", ctx9["vocab"][2])
+        self.assertNotIn("I don't eat|食べません", ctx9["vocab"][1])
         self.assertIn("cross-contact|交差接触", ctx9["vocab"][3])
 
         ctx10 = batch.LESSONS[10]
