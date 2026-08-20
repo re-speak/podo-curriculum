@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/41-you-have-to-show-id/lesson.html`
-- SHA-256: `f4dcbeccbd4b052df796493875473d8489471ce911b517426234dc182835fc46`
+- SHA-256: `72abaee9e3c2835cd744347af862af0aabc5e9dc8a4371089dd3f7313ca8b343`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

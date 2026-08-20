@@ -207,11 +207,14 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
             for menu in batch.OPEN_MENUS[number]:
                 for chip in menu:
                     self.assertNotIn(chip.rsplit(":", 1)[-1].casefold(), receptive, (number, chip))
-        self.assertIn("might|かもしれない|CORE-39", batch.VOCAB[68]["recycled"])
+        self.assertIn("might|〜かもしれない|CORE-39", batch.VOCAB[68]["recycled"])
         self.assertNotIn("might|", batch.VOCAB[68]["new"])
         self.assertIn("print|印刷する|CORE-41", batch.VOCAB[64]["recycled"])
         self.assertNotIn("print|", batch.VOCAB[64]["new"])
         self.assertIn("anywhere|どこでも", batch.VOCAB[66]["new"])
+        self.assertIn("open|開ける", batch.VOCAB[60]["new"])
+        self.assertIn("open|開ける|CORE-60", batch.VOCAB[61]["recycled"])
+        self.assertIn("could|〜できたら|CORE-66", batch.VOCAB[67]["recycled"])
         self.assertTrue(any("anywhere" in hint for hint in batch.TRANSLATE_HINTS[66][1]))
         self.assertTrue(any("anywhere" in hint for hint in batch.OPEN_MENUS[66][1]))
 

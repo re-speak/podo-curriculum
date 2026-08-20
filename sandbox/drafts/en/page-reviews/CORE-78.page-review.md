@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-work-and-arrangements/lessons/78-this-time-tomorrow-ill-be-flying/lesson.html`
-- SHA-256: `c4ee42c9bd0359d8b0d5fd4e93e901838ebc09805fc53a46ff99631872268c4d`
+- SHA-256: `81d1145d117bff1d587f5d564f9951b4e57de3bc2f62f59935a7c8ff68ff0db4`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

@@ -241,7 +241,8 @@ class CoreWorkAndArrangementsBatchTests(unittest.TestCase):
 
         # CORE78: preserve the established US-spelling owner and make the question answerable.
         self.assertNotIn("travelling", str((batch.LESSONS[78], batch.SPECS[78], batch.VOCAB[78], batch.TRANSLATE_HINTS[78], batch.LIVE_HINTS[78], batch.SPIRALS[78])))
-        self.assertIn("traveling|移動中|CORE-27", batch.VOCAB[78]["recycled"])
+        self.assertIn("traveling|移動中", batch.VOCAB[78]["new"])
+        self.assertNotIn("traveling|", batch.VOCAB[78]["recycled"])
         self.assertIn("Will you be home by six?", batch.DIALOGUES[78]["model"][4][0])
 
         # CORE79: omit the false should/will choice and scaffold the actual model word.

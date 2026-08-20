@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/62-do-you-know-where-it-is/lesson.html`
-- SHA-256: `c3f6f75c9ae99e73781de99d312e1e853607fc59c0408ceaf15550c7b8aa63a6`
+- SHA-256: `fa4805cf4b61a09bbb6826279a2fa9f8cfb538ca7e391fab843475d874e1d6f5`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

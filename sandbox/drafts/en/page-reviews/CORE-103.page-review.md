@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/103-what-worries-me-most-is-the-cost/lesson.html`
-- SHA-256: `34d4ebf5dfc5d8ba1e14beecf1535a7a2d1885f8f7becef52653de06450e1e00`
+- SHA-256: `7da8c8976a40ee3bce54a9750c51f1525ef96efe94916004eace756b35fce622`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

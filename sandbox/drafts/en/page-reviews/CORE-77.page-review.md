@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-work-and-arrangements/lessons/77-it-was-supposed-to-be-ready/lesson.html`
-- SHA-256: `06e6bbf41239e5bf91204afba68bda59f1dd4452a154e838764544aab5fd0ef7`
+- SHA-256: `9c81dc1837d6b8b7f85292a014fab07003640410996d7d2c945b83b949086516`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

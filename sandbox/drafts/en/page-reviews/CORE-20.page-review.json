@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/20-asking-for-help/lesson.html",
-  "lessonSha256": "92cfbf57515a651d2daf476f7cb27b4c8b040c95dfc67b4a920075c1b6c40d65",
+  "lessonSha256": "543c6a41a44ddb3fbee39dcc56addd41c533583d9d7b1f9dd703b134464ceb87",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -49,10 +49,10 @@
       "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
       "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
       "componentConsistency": "The approved words-you-know component carries one visible job with no competing activity.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
-      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "notes": "Owner-approved semantic review is preserved. Visual recheck is pending because this page now uses the smallest-unit word-choice component.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -185,10 +185,10 @@
       "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
       "choiceQuality": "Both taught branches are correct on different rows and correct positions vary.",
       "componentConsistency": "The approved p1-choose component carries one visible job with no competing activity.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
-      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "notes": "Owner-approved semantic review is preserved. Visual recheck is pending because this page now uses the smallest-unit word-choice component.",
       "evidence": {
         "targetHighlights": [
           "箱",

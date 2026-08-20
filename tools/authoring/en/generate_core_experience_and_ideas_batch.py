@@ -754,8 +754,8 @@ VOCAB = {
         receptive="trigger|きっかけ; as soon as|〜するとすぐ; otherwise|そうでなければ; immediately|すぐに; Talk soon.|またあとで。; check it first|まず確認する",
     ),
     59: dict(
-        new="contract|契約書; route|道順",
-        recycled="ticket|チケット|CORE-5; printer|プリンター|CORE-38; best|一番よい|CORE-46; client|顧客|CORE-54",
+        new="contract|契約書; route|道順; printer|プリンター",
+        recycled="ticket|チケット|CORE-5; best|一番よい|CORE-46; client|顧客|CORE-54",
         assumed="bus|バス; computer|パソコン; online|オンラインで; time|時間; waiting|待ち時間",
         receptive="purpose|目的; method|方法; it's worth it|その価値がある; save time|時間を節約する; efficient|効率的な; least effort|一番手間が少ない; book one now|今予約する",
     ),
@@ -774,7 +774,7 @@ KNOWN_WORDS = {
     56: (("カフェ", "café"), ("ルーム", "room"), ("ジョブ", "job")),
     57: (("トレイン", "train"), ("タクシー", "taxi"), ("カフェ", "café")),
     58: (("メール", "email"), ("レポート", "report"), ("ミーティング", "meeting")),
-    59: (("チケット", "ticket"), ("プリンター", "printer"), ("バス", "bus")),
+    59: (("チケット", "ticket"), ("オンラインで", "online"), ("バス", "bus")),
 }
 
 

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/110-i-hate-to-say-it-but/lesson.html`
-- SHA-256: `99443da3057ca82cee88f080320bbe501258ebd87406514d5eef6b5cd5fc9a8c`
+- SHA-256: `b2f428a875b06503722a45293c89133412576b665c2751e79a5dde913c2bdb6f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

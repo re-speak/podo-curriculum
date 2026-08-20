@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/93-to-be-fair/lesson.html`
-- SHA-256: `71cce17db44e4aaa3a72c440fd5c3e52e6ed750dadc8509275306126332d08f1`
+- SHA-256: `d883ff6ced1cb0cecca5b5f50bf64367a1700dcb6345105257f4c455c93c7a24`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -187,6 +187,9 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
             self.assertLessEqual(len(self.category_words(number, "new")), 8, number)
             self.assertTrue(vocabulary.hint_words(source) <= self.owned_words(number), number)
 
+        self.assertIn("take into account|考慮に入れる", batch.VOCAB[95]["new"])
+        self.assertIn("Use take into account", batch.LESSONS[95]["rules"][1][0])
+
     def test_known_words_are_honest_assumed_or_recycled_items(self):
         for number, entries in batch.KNOWN_WORDS.items():
             allowed = self.category_words(number, "assumed") | self.category_words(number, "recycled")

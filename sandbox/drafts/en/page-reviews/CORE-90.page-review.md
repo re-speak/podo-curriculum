@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/90-the-vast-majority-of-people/lesson.html`
-- SHA-256: `78139266cf286f3920e6de90df3aed1d6bf7fe4557a9acbd93a5279adfcde028`
+- SHA-256: `c54282b9da144f5f98653976a46443230a47861f5babb45bda4176cd12877dd7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

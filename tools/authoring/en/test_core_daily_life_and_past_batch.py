@@ -177,6 +177,9 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
         self.assertEqual(batch.VOCAB[36]["receptive"], "")
         self.assertIn("very|", batch.VOCAB[30]["assumed"])
         self.assertIn("walked home|", batch.VOCAB[35]["assumed"])
+        self.assertIn("drive|運転する|CORE-14", batch.VOCAB[26]["recycled"])
+        self.assertIn("cleaned|clean の過去形|CORE-31", batch.VOCAB[36]["recycled"])
+        self.assertIn("cooked|cook の過去形|CORE-31", batch.VOCAB[36]["recycled"])
 
     def test_dialogues_are_six_turn_replays_and_learner_lines_are_owned(self):
         for n, data in batch.LESSONS.items():

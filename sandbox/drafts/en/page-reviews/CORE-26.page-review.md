@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-daily-life-and-past/lessons/26-i-usually-drive-but-today-im-walking/lesson.html`
-- SHA-256: `574b6cad4d771bf261ef2047f4cfbad9d5e8325d6f4363419bc0d3c650e59595`
+- SHA-256: `d428ed584855a41b35b191d5a45c63a140332a116924093f9d92a07207efec62`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/38-let-me-help/lesson.html`
-- SHA-256: `a4ec3075478b4cec8d4f12ae180b1f0b771532703abdee782798d48f7819689b`
+- SHA-256: `6450052919d67383c86e1ea8de3d5b656f3f88836777649b1acb98cbd7d82c45`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

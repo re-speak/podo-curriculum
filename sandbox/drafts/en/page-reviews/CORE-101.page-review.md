@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/101-it-depends-on-whether/lesson.html`
-- SHA-256: `08746e355ab468533cd78b9f34b4a50179c20b6e2d2fd85ee89d74ccca2d2359`
+- SHA-256: `ac21474fd9b075eee2caf1d954d14ef37d9d9fafe238ee836314fdf42e702b32`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

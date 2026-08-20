@@ -143,6 +143,11 @@ class CorePlansAndComparisonBatchTests(unittest.TestCase):
             for _, english in batch.KNOWN_WORDS[number]:
                 self.assertIn(english.casefold(), owned)
 
+        self.assertNotIn("printer|", batch.VOCAB[38]["new"])
+        self.assertIn("entrance|入口", batch.VOCAB[41]["receptive"])
+        self.assertIn("carry-on|機内持ち込み手荷物", batch.VOCAB[44]["receptive"])
+        self.assertIn("bakery|パン屋", batch.VOCAB[46]["receptive"])
+
     def test_dialogues_are_exact_six_turn_replays(self):
         for number, data in batch.LESSONS.items():
             for variant in ("model", "wild"):

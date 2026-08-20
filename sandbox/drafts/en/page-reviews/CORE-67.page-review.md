@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/67-i-wish-i-could-drive/lesson.html`
-- SHA-256: `579d8feda3f1d8fa486ebd4d114a8e225df9f5e3cd1497fcfc1edc7dc144d504`
+- SHA-256: `592ea2e54895b31e310d4176acee95177bb46d206b0747ffa37f2c611a01e230`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

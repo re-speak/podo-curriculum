@@ -71,6 +71,13 @@ class CourseBatchGenerationTests(unittest.TestCase):
         self.assertNotIn(20, core.GENERATED_LESSONS)
         self.assertNotIn(20, core.LESSONS)
         self.assertTrue(core.PILOT.is_file())
+        source = core.PILOT.read_text(encoding="utf-8")
+        self.assertEqual(check_deck.meta_content(source, "podo:proofread-status"), "complete")
+
+    def test_core_24_reuses_the_established_please_owner(self):
+        new, _assumed, _receptive = core.VOCAB[24]
+        self.assertNotIn("please|", new)
+        self.assertEqual(core.RECYCLED_VOCAB[24], "please|お願いします|CORE-9")
 
     def test_revised_core_lane_has_supported_translation_and_real_freetalk(self):
         for number in (12, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24):

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/105-the-sooner-we-start-the-better/lesson.html`
-- SHA-256: `e56c401eb005bdc957a08d677fa4d72ec943435e831d26206602329349272147`
+- SHA-256: `a98727d49ff3ef555d344a692cd5c78a12f69a410a4d7465a27d1d5efec79e2b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

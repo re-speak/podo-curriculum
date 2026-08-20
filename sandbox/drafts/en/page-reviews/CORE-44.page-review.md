@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/44-its-too-small/lesson.html`
-- SHA-256: `ef50713c2108ab117f5bbecaeb1e0ee3bda04d87b42aa07ba844dfcaaae78d6e`
+- SHA-256: `277a0b8afdc9c567abce155651116197a1a4710324a40c602ddecd4060d79815`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

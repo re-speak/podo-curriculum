@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/95-where-id-push-back-is-on-the-cost/lesson.html`
-- SHA-256: `79c109800bb7e8f86aa69deb8037e0e13ee75c83a6306f342f792b9ac2f7283f`
+- SHA-256: `aa8ec9e5a43a187b8b5649eec7df28fd3ef132af84dc71cfeec64bdf97a4dd47`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

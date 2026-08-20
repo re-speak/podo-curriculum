@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/63-i-generally-prefer-coffee/lesson.html`
-- SHA-256: `74c9e5be863cbb614359ecaa5bf6e2402ea07a07071c1f09faa9a2bf0bbd2077`
+- SHA-256: `ff674e4aa408427d0c32df922b4ce34d3257fc68c7135def5e951e6f0534b6ac`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

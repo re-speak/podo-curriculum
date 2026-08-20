@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-daily-life-and-past/lessons/36-i-was-cooking-when-you-called/lesson.html`
-- SHA-256: `3c427b18e5829043b4bb9d38327c499df72857058f48a7163528c2fcbcc90708`
+- SHA-256: `c1dc06041627d33a3f07876df92f460729f6c13144725ff1ba3b823a374e11bc`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

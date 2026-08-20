@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-work-and-arrangements/lessons/74-i-was-going-to-call-but/lesson.html`
-- SHA-256: `0cb8b0f0e8f442fbe22b0e4b704f13be985e017fbfe0240271c037064d52db60`
+- SHA-256: `e42c98aee1d5ec22adf1da5198643b283035a6d65381c5f95a8967718629df21`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/66-if-i-had-more-time-id-travel/lesson.html`
-- SHA-256: `c31cd67948ef28965f4ce85212588647048b11aea1061f6512f47c3ceb80d998`
+- SHA-256: `80c67e5ebe9c0fa673ef1706a3e7ec1d5ac122e84b436cb19d6622f61d45db06`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

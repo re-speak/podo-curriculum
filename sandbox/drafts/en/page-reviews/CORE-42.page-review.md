@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/42-dont-you-like-it/lesson.html`
-- SHA-256: `191f996efeb89727634f7f9b01b291647fe9ef9252b0996f98c67283686b4255`
+- SHA-256: `1b577c7caf6c4b72ede7d56c059d380377ace43203a89c7808c452aa95cc6450`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

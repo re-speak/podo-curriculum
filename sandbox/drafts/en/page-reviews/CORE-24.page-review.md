@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/24-sorry-can-you-say-that-again/lesson.html`
-- SHA-256: `9af3a070a21dc86ea85e2a312b65991bc963fab3341bf42963c24665fc940c79`
+- SHA-256: `da637544802d974008732a04e457afa60f5563a427524109e13ea9b233f83612`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

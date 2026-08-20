@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/20-asking-for-help/lesson.html`
-- SHA-256: `92cfbf57515a651d2daf476f7cb27b4c8b040c95dfc67b4a920075c1b6c40d65`
+- SHA-256: `543c6a41a44ddb3fbee39dcc56addd41c533583d9d7b1f9dd703b134464ceb87`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
 - Component consistency: The approved words-you-know component carries one visible job with no competing activity.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Owner-approved semantic review is preserved. Visual recheck is pending because this page now uses the smallest-unit word-choice component.
 
 ## 3. `part1-intro`
 
@@ -124,9 +124,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Both taught branches are correct on different rows and correct positions vary.
 - Component consistency: The approved p1-choose component carries one visible job with no competing activity.
 - Extracted evidence: `{"targetHighlights": ["箱", "スーツケース", "メニュー", "Wi-Fi"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Owner-approved semantic review is preserved. Visual recheck is pending because this page now uses the smallest-unit word-choice component.
 
 ## 8. `p1-reorder`
 

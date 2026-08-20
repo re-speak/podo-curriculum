@@ -160,6 +160,9 @@ class CoreExperienceAndIdeasBatchTests(unittest.TestCase):
                     word.casefold(), self.source_new_words(source), (number, word, source)
                 )
 
+        self.assertIn("printer|プリンター", batch.VOCAB[59]["new"])
+        self.assertNotIn("printer|", batch.VOCAB[59]["recycled"])
+
     def test_new_vocabulary_is_used_by_the_learner_not_only_a_partner(self):
         for number in EXPECTED:
             learner_source = " ".join(

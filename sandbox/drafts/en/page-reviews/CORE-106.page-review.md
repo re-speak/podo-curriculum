@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/106-theres-one-thing-id-change/lesson.html`
-- SHA-256: `503b85a00e4ed7cc27ebf708356a7e0511494f32edb6db488e8f886d323284d6`
+- SHA-256: `53a223bcec84cf78c72bf4faf5c8d23ec377bcb54845ac85f8bfd787db7b24f5`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

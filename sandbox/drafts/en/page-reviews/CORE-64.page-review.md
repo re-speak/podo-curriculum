@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/64-it-wont-turn-on/lesson.html`
-- SHA-256: `639c1fbebfa8b4739ca8088c5fa574051b31ab1fd4e68238053c46f8675a51fc`
+- SHA-256: `5be7565022eaf7ac7493b4d8a2aa6ae530f171c0b0cbe73b4f46d9daa48b0c52`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

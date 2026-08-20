@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-work-and-arrangements/lessons/71-i-should-have-called-earlier/lesson.html`
-- SHA-256: `69403bac3e92f2d392cdaab4864ef2608994d343d9ea3054cc5c22ed8b00170d`
+- SHA-256: `34eff045ba933b13e71f8abe3b5b2c936795cad2dcf65f8303b7948b2b7065f6`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

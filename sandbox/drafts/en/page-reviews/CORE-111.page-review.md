@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/111-just-so-you-know/lesson.html`
-- SHA-256: `91b2b2856c6ed413d3e202e6e87c5119a94a1fada5326a9d1bf52f1b3c29ef8e`
+- SHA-256: `7207a6a382d56cc6b13d096841c336d2c8679158ff3e733121cba9db2bf5d462`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

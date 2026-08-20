@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-experience-and-ideas/lessons/59-i-went-there-to-see-a-client/lesson.html`
-- SHA-256: `05cb7e4fc0c8091f76a509e42c5c1c585566727c13987f26c92f88eed20de2b0`
+- SHA-256: `99723fddf8a23720aa9de32f426a196da85cc779147b6819b58c9b8496f87698`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

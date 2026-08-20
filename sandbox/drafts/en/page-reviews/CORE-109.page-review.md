@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/109-to-put-it-bluntly/lesson.html`
-- SHA-256: `3b393f10973d9c859042947061b3665fd08153365673e28634a9e459b129e6f2`
+- SHA-256: `5e0527783f454741542f744d9cb97bc856e7e91c5f2faa8f858dcb41a73f7c21`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

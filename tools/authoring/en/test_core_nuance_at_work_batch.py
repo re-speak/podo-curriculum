@@ -158,7 +158,7 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
                 self.assertTrue(japanese)
                 self.assertLess(int(owner.removeprefix("CORE-")), number)
                 self.assertIn(word.casefold(), self.source_new_words(owner), (number, word, owner))
-        self.assertIn("prefer|より好む|CORE-42", batch.VOCAB[90]["recycled"])
+        self.assertIn("prefer|〜のほうが好き|CORE-42", batch.VOCAB[90]["recycled"])
         self.assertNotIn("prefer|より好む|CORE-63", batch.VOCAB[90]["recycled"])
 
     def test_new_words_are_used_in_learner_owned_source(self):
