@@ -227,8 +227,9 @@ class DeckCheckTests(unittest.TestCase):
     def test_pilot_activity_scripts_and_feedback_are_accepted(self):
         pages = {
             "lesson-goal": (
-                '<p class="section-subtitle"><span class="ko">Please read the title aloud.</span>'
-                '<span class="ja">タイトルを声に出して読んでください。</span></p>'
+                '<p class="section-subtitle"><span class="ko">Practice asking for help. '
+                'Please read the title aloud.</span><span class="ja">手伝いを頼む練習をします。'
+                'タイトルを声に出して読んでください。</span></p>'
             ),
             "p1-reorder": (
                 '<p class="section-subtitle"><span class="ko">'
@@ -247,6 +248,10 @@ class DeckCheckTests(unittest.TestCase):
                 '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
             ),
             "p1-write": (
+                '<p class="section-subtitle"><span class="ko">Now use “Could you help '
+                'me with ___?” to ask me for help.</span><span class="ja">手伝いを頼んで'
+                'ください。</span></p>'
+                '<div class="tutor-note">Have the learner answer aloud before you capture it.</div>'
                 '<div class="fb" data-fb="answer" '
                 'data-fb-spoken-label="Student\'s sentence"></div>'
             ),
@@ -255,6 +260,67 @@ class DeckCheckTests(unittest.TestCase):
             check_deck.pilot_operating_issues(pages, track="core"),
             [],
         )
+
+    def test_pilot_goal_requires_a_useful_can_do_before_title_action(self):
+        errors = check_deck.pilot_operating_issues(
+            {
+                "lesson-goal": (
+                    '<p class="section-subtitle"><span class="ko">Please read the title aloud.</span>'
+                    '<span class="ja">タイトルを声に出して読んでください。</span></p>'
+                )
+            },
+            track="core",
+        )
+        self.assertTrue(any("useful can-do" in item for item in errors))
+
+    def test_pilot_reading_and_listening_pages_assign_the_voice_explicitly(self):
+        accepted = {
+            "p1-read": (
+                '<p class="section-subtitle"><span class="ko">Read each sentence aloud.</span>'
+                '<span class="ja">一文ずつ声に出してください。</span></p>'
+            ),
+            "understand": (
+                '<p class="section-subtitle"><span class="ko">I\'ll read each agent line. '
+                'Choose what it means.</span><span class="ja">意味を選んでください。</span></p>'
+            ),
+        }
+        self.assertEqual(
+            check_deck.pilot_operating_issues(accepted, track="contextual"), []
+        )
+
+        rejected = {
+            "p1-read": (
+                '<p class="section-subtitle"><span class="ko">I\'ll read each sentence.</span>'
+                '<span class="ja">聞いてください。</span></p>'
+            ),
+            "understand": (
+                '<p class="section-subtitle"><span class="ko">Choose what it means.</span>'
+                '<span class="ja">意味を選んでください。</span></p>'
+            ),
+        }
+        errors = check_deck.pilot_operating_issues(rejected, track="contextual")
+        self.assertTrue(any("learner reading is the default" in item for item in errors))
+        self.assertTrue(any("tutor reads each English line" in item for item in errors))
+
+    def test_pilot_contextual_scene_requires_short_explicit_roles(self):
+        good = {
+            "scene": (
+                '<p class="section-subtitle"><span class="ko">Let\'s role-play. '
+                'You\'re the passenger, and I\'ll be the agent.</span>'
+                '<span class="ja">あなたは乗客で、私は係員です。</span></p>'
+            )
+        }
+        self.assertEqual(
+            check_deck.pilot_operating_issues(good, track="contextual"), []
+        )
+        vague = {
+            "scene": (
+                '<p class="section-subtitle"><span class="ko">Let\'s begin the scene.</span>'
+                '<span class="ja">始めましょう。</span></p>'
+            )
+        }
+        errors = check_deck.pilot_operating_issues(vague, track="contextual")
+        self.assertTrue(any("name the learner's role" in item for item in errors))
 
     def test_pilot_feedback_rejects_duplicate_task_and_old_label(self):
         errors = check_deck.pilot_operating_issues(
@@ -295,6 +361,22 @@ class DeckCheckTests(unittest.TestCase):
             track="contextual",
         )
         self.assertTrue(any("communicative job" in item for item in errors))
+
+    def test_pilot_open_production_requires_visible_frame_job_and_spoken_capture(self):
+        errors = check_deck.pilot_operating_issues(
+            {
+                "p1-write": (
+                    '<p class="section-subtitle"><span class="ko">Make one request.</span>'
+                    '<span class="ja">依頼を作りましょう。</span></p>'
+                    '<div class="tutor-note">Write the answer.</div>'
+                    '<div class="fb" data-fb="answer" '
+                    'data-fb-spoken-label="Student\'s sentence"></div>'
+                )
+            },
+            track="core",
+        )
+        self.assertTrue(any("exact target frame" in item for item in errors))
+        self.assertTrue(any("answer aloud" in item for item in errors))
 
     def test_core_shape_rejects_unjustified_full_sentence_choices(self):
         errors = check_deck.core_canonical_shape_issues(
@@ -533,6 +615,16 @@ class DeckCheckTests(unittest.TestCase):
         )
         self.assertEqual(check_deck.pattern_meaning_issues("p1-teach", chunk), [])
 
+    def test_pattern_meaning_rejects_embedded_activity_instruction(self):
+        chunk = (
+            '<p class="section-subtitle pattern-meaning">'
+            '<span class="ko">Use this to ask politely and read each example aloud.</span>'
+            '<span class="ja">丁寧に頼む表現なので、例文を読んでください。</span>'
+            '</p>'
+        )
+        errors = check_deck.pattern_meaning_issues("p1-teach", chunk)
+        self.assertTrue(any("mixes teaching copy" in item for item in errors))
+
     def test_core_production_accepts_profiled_roleplay_and_reciprocal_freetalk(self):
         image = '<img class="avatar" src="person.jpg" alt="">'
         model = (
@@ -554,9 +646,9 @@ class DeckCheckTests(unittest.TestCase):
         )
         live = (
             '<div class="turn other"><span class="who"><span class="avatar icon">T</span></span>'
-            '<span>What do you need?</span></div>'
+            '<span class="korean">What do you need?</span></div>'
             '<div class="turn me"><span class="who"><span class="avatar icon">私</span></span>'
-            '<span>Could you help me with ~? How about you?</span></div>'
+            '<span class="korean">What do you need help with?</span></div>'
             '<div class="turn other"><span class="who"><span class="avatar icon">T</span></span>'
             '<span>Tutor\'s answer</span></div>'
         )
@@ -587,6 +679,20 @@ class DeckCheckTests(unittest.TestCase):
             "p3-freetalk": '<div class="fb" data-fb="one-way"></div>',
         })
         self.assertTrue(any("reciprocal Tutor/Me exchange" in item for item in errors))
+
+    def test_core_freetalk_rejects_forced_frame_or_missing_ask_back(self):
+        icon = '<span class="who"><span class="avatar icon">T</span></span>'
+        me = '<span class="who"><span class="avatar icon">私</span></span>'
+        live = (
+            f'<div class="turn other">{icon}<span class="korean">Using today\'s pattern, '
+            'what would you say?</span></div>'
+            f'<div class="turn me">{me}<textarea></textarea></div>'
+            f'<div class="turn other">{icon}<span>Tutor\'s answer</span></div>'
+        )
+        errors = check_deck.core_production_issues({"p3-freetalk": live})
+        self.assertTrue(any("disguised pattern production" in item for item in errors))
+        self.assertTrue(any("ask-back" in item for item in errors))
+        self.assertTrue(any("do not force today's frame" in item for item in errors))
 
     def test_contextual_freetalk_rejects_imperative_or_roleplay_production(self):
         icon = '<span class="who"><span class="avatar icon">T</span></span>'

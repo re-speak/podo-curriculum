@@ -183,6 +183,24 @@ CONTEXTUAL_ROLEPLAY_AS_FREETALK = re.compile(
     r"report (?:it|the)|describe one|ask (?:reception|the clerk|another passenger))\b",
     re.I,
 )
+FORCED_FREETALK_FRAME = re.compile(
+    r"\b(?:use|using) (?:today['’]s |the )?"
+    r"(?:pattern|frame|expression|sentence starter)\b",
+    re.I,
+)
+TUTOR_READS_TARGET = re.compile(r"\bI(?:['’]ll| will) read\b", re.I)
+QUOTED_OPEN_FRAME = re.compile(r"[\u201c\"]\s*[^\u201d\"]{2,}\s*[\u201d\"]")
+GENERIC_OPEN_END = re.compile(
+    r"\b(?:make|create) (?:your own|one) "
+    r"(?:sentence|answer|request|question)\s*[.!?]?\s*$",
+    re.I,
+)
+PATTERN_MEANING_OPERATION = re.compile(
+    r"\b(?:read each|repeat each|choose (?:the|one|each)|"
+    r"fill (?:the|each)|type (?:the|each)|write (?:the|each)|"
+    r"listen to (?:the|each))\b",
+    re.I,
+)
 # Articles and suffixes cannot stand as meaning units. Prepositions can: the
 # approved Core pilot deliberately isolates "with", and CORE-12 isolates "at"
 # because placing the time preposition is the retrieval operation being taught.
@@ -754,6 +772,12 @@ def pattern_meaning_issues(page_id, chunk):
             errors.append(f"{page_id}: Japanese or Korean appears in the English tutor line")
         if re.search(r"\b(?:CORE|CTX|FT)[- ]?\d+\b|\blesson\s+\d+\b", plain_text(en.group(1)), re.I):
             errors.append(f"{page_id}: lesson-number reference in learner/tutor-facing copy")
+        if PATTERN_MEANING_OPERATION.search(plain_text(en.group(1))):
+            errors.append(
+                f"{page_id}: pattern-meaning mixes teaching copy with an activity "
+                "instruction — keep meaning/use in the blue line and the learner "
+                "operation in the tutor note or activity page"
+            )
     return errors
 
 
@@ -840,6 +864,40 @@ def core_production_issues(page_chunks):
             errors.append(
                 "p3-freetalk: generic production instruction — print the actual target "
                 "scaffold, ask-back question, and tutor-answer label"
+            )
+        prompts = partner_turns(freetalk)
+        if not prompts:
+            subtitles = SUBTITLE.findall(freetalk)
+            script = SPAN_KO.search(subtitles[0][1]) if subtitles else None
+            if script:
+                prompts = [plain_text(script.group(1))]
+        if not prompts or not prompts[0].rstrip().endswith("?"):
+            errors.append(
+                "p3-freetalk: first Tutor turn must be a real relevant question"
+            )
+        elif CONTEXTUAL_ROLEPLAY_AS_FREETALK.search(prompts[0]):
+            errors.append(
+                "p3-freetalk: first Tutor question is disguised pattern production "
+                "or roleplay — ask a personal, preference, or experience question"
+            )
+        learner_questions = []
+        for turn in re.split(r'(?=<div class="turn\b)', freetalk):
+            if not re.match(r'<div class="turn me"', turn):
+                continue
+            learner_questions.extend(
+                plain_text(body)
+                for class_name in ("korean", "answer-label")
+                for body in class_span_bodies(turn, class_name)
+                if "?" in plain_text(body) or "？" in plain_text(body)
+            )
+        if not learner_questions:
+            errors.append(
+                "p3-freetalk: learner needs a visible natural ask-back question"
+            )
+        if FORCED_FREETALK_FRAME.search(prompts[0] if prompts else plain_text(freetalk)):
+            errors.append(
+                "p3-freetalk: do not force today's frame in Free Talk — invite it "
+                "only when it fits the real conversation"
             )
         errors.extend(live_tutor_answer_issues("p3-freetalk", freetalk))
     return errors
@@ -1066,6 +1124,25 @@ def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
                 "p3-freetalk: first Tutor question is another scripted roleplay-production "
                 "task — ask an interesting personal, preference, or experience question instead"
             )
+        learner_questions = []
+        for turn in re.split(r'(?=<div class="turn\b)', live):
+            if not re.match(r'<div class="turn me"', turn):
+                continue
+            learner_questions.extend(
+                plain_text(body)
+                for class_name in ("korean", "answer-label")
+                for body in class_span_bodies(turn, class_name)
+                if "?" in plain_text(body) or "？" in plain_text(body)
+            )
+        if not learner_questions:
+            errors.append(
+                "p3-freetalk: learner needs a visible natural ask-back question"
+            )
+        if FORCED_FREETALK_FRAME.search(prompts[0] if prompts else plain_text(live)):
+            errors.append(
+                "p3-freetalk: do not force today's frame in Free Talk — invite it "
+                "only when it fits the real conversation"
+            )
         errors.extend(live_tutor_answer_issues("p3-freetalk", live))
 
     transfer = page_chunks.get("transfer-scene", "")
@@ -1231,11 +1308,35 @@ def pilot_operating_issues(page_chunks, *, track):
             errors.append(
                 "lesson-goal: the spoken script must ask the learner to read the title aloud"
             )
+        if len(sentences(english.group(1) if english else "", EN_END, spaced=True)) < 2:
+            errors.append(
+                "lesson-goal: state one useful can-do before asking the learner to "
+                "read the title aloud"
+            )
 
     if track == "contextual" and "situation-card" in page_chunks:
         errors.append(
             "situation-card: remove the duplicate overview — use one goal page, then start the scene"
         )
+
+    if track == "contextual" and "scene" in page_chunks:
+        scene = page_chunks["scene"]
+        subtitles = SUBTITLE.findall(scene)
+        english = SPAN_KO.search(subtitles[0][1]) if subtitles else None
+        spoken = plain_text(english.group(1)) if english else ""
+        explicit_roles = (
+            re.search(r"\byou(?:['’]re| are)\b", spoken, re.I)
+            and re.search(r"\bI(?:['’]ll be|['’]m| am)\b", spoken, re.I)
+        )
+        if not explicit_roles:
+            errors.append(
+                "scene: spoken setup must name the learner's role and tutor's role "
+                "explicitly (You're the ...; I'll be the ...)"
+            )
+        if len(re.findall(r"[A-Za-z]+(?:['’][A-Za-z]+)?", spoken)) > 30:
+            errors.append(
+                "scene: role setup is too long — name both roles and begin the roleplay"
+            )
 
     for page_id, chunk in page_chunks.items():
         subtitles = SUBTITLE.findall(chunk)
@@ -1244,6 +1345,24 @@ def pilot_operating_issues(page_chunks, *, track):
         ja = SPAN_JA.search(body)
         spoken = plain_text(en.group(1)) if en else ""
         support = plain_text(ja.group(1)) if ja else ""
+
+        if re.fullmatch(r"p[12]-read|expressions", page_id):
+            if "read" not in spoken.casefold() or TUTOR_READS_TARGET.search(spoken):
+                errors.append(
+                    f"{page_id}: learner reading is the default — tell the learner "
+                    "to read the visible English aloud"
+                )
+        if page_id == "understand":
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk)))
+            explicit_listening = (
+                TUTOR_READS_TARGET.search(spoken)
+                or ("listen" in spoken.casefold() and "read" in note.casefold())
+            )
+            if "choose" not in spoken.casefold() or not explicit_listening:
+                errors.append(
+                    "understand: explicitly say that the tutor reads each English "
+                    "line and the learner listens and chooses its meaning"
+                )
 
         if "reorder" in page_id and spoken:
             if spoken != REORDER_SCRIPT_EN or support != REORDER_SCRIPT_JA:
@@ -1296,14 +1415,29 @@ def pilot_operating_issues(page_chunks, *, track):
                 f"{page_id}: capture the learner's spoken answer with the shared feedback "
                 "component, without repeating the task inside the response box"
             )
-        if (
-            re.fullmatch(r"p[12]-write", page_id)
-            and "make your own sentence" in spoken.casefold()
-        ):
-            errors.append(
-                f"{page_id}: generic 'make your own sentence' copy does not name the "
-                "communicative job — say what the learner should use the frame to do"
-            )
+        if re.fullmatch(r"p[12]-write", page_id):
+            if not QUOTED_OPEN_FRAME.search(spoken):
+                errors.append(
+                    f"{page_id}: print the exact target frame in the open-production script"
+                )
+            if (
+                "make your own sentence" in spoken.casefold()
+                or GENERIC_OPEN_END.search(spoken)
+            ):
+                errors.append(
+                    f"{page_id}: generic open-production copy does not name the "
+                    "communicative job — say what the learner should use the frame to do"
+                )
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk))).casefold()
+            if not (
+                "learner" in note
+                and "aloud" in note
+                and ("capture" in note or "type" in note)
+            ):
+                errors.append(
+                    f"{page_id}: have the learner answer aloud before the tutor "
+                    "captures or types the sentence"
+                )
         for fb_tag in re.findall(r'<div\b[^>]*class="[^"]*\bfb\b[^"]*"[^>]*data-fb="[^"]+"[^>]*>', chunk):
             if 'data-fb-spoken-label="Student\'s sentence"' not in fb_tag:
                 errors.append(
