@@ -236,7 +236,7 @@ gh pr create --base main --head stage
 What each step actually runs:
 
 1. **PR into `stage` → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `stage` or `main`, and labels the plan with the env that merging it would deploy to.
-2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to `stage`, then `qa`, then `dev`, automatically.** One build, three applies, in that order; a failure stops the run where it happened rather than half-filling the rest. Verify before going on — these are the only environments where a mistake is cheap.
+2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to `stage`, `qa` and `dev`, automatically.** One build: validate once, then the three applies side by side as their own steps, because nothing about them is shared — separate grape, separate database, separate GCS prefix. A failure therefore fails that environment's step and leaves the other two to finish; which one broke, and where, is on the build's step list. Verify before going on — these are the only environments where a mistake is cheap.
 3. **PR `stage → main`.** That PR *is* the release: its diff is the release note and its review is the gate. Review it as a deploy approval, because that is what it is.
 4. **Merge it → `podo-curriculum-deploy-prod` applies to prod, automatically** — a learner in a live class sees the change immediately.
 
