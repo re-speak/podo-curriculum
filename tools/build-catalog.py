@@ -67,6 +67,9 @@ import model  # noqa: E402
 REPO = model.REPO
 TEMPLATES = REPO / "tools" / "catalog"
 SOURCE_URL = "https://github.com/re-speak/podo-curriculum/blob/main"
+
+# 이 사이트가 서빙되는 도메인. gh-pages 의 CNAME 으로 나간다.
+CUSTOM_DOMAIN = "curriculum.podospeaking.com"
 REPO_URL = "https://github.com/re-speak/podo-curriculum"
 
 # 레벨의 원본은 course.yaml 의 `# podo:level:` 주석 한 줄이다. 스키마가 metadata 에
@@ -136,12 +139,19 @@ FAMILIES = [
     }),
 ]
 
-# 언어마다 디렉터리 하나. upstream 의 트리를 그대로 따라간다 — korean/catalog.html 과
-# korean/catalog/<track>.html. 그래서 vendor 한 템플릿의 ../site.css · ../catalog.html ·
-# ../${deck} 이 한 줄도 고치지 않고 맞는다.
+# 언어마다 디렉터리 하나. 깊이는 upstream 의 트리 그대로라 vendor 한 템플릿의
+# ../site.css · ../../favicon.svg · ../${deck} 이 한 줄도 고치지 않고 맞는다.
+# 이름만 두 가지가 다르다:
+#
+#   korean-jp/index.html          ← upstream 은 korean/catalog.html
+#   korean-jp/catalog/1-hangul.html
+#
+# 카탈로그를 index 로 둔 것은 /korean-jp 가 그대로 열리게 하려는 것이고, 디렉터리에
+# 시장(-jp)을 붙인 것은 지금 모든 코스가 countryCode: JP 이기 때문이다 — 나중에 다른
+# 시장이 생겨도 korean-en 을 옆에 세우면 된다.
 LANGUAGES = {
     "kr": {
-        "dir": "korean",
+        "dir": "korean-jp",
         "nav": "한국어",
         "title": "커리큘럼 카탈로그 · PODO 한국어",
         "kicker": "PODO · 한국어 커리큘럼",
@@ -157,7 +167,7 @@ LANGUAGES = {
                          "conversation, and advanced free talking."},
     },
     "en": {
-        "dir": "english",
+        "dir": "english-jp",
         "nav": "English",
         "title": "커리큘럼 카탈로그 · PODO 영어",
         "kicker": "PODO · 영어 커리큘럼",
@@ -410,7 +420,8 @@ def copy_decks(base: pathlib.Path, course: model.Course) -> dict:
             deck_rel = f"decks/{course.slug}/{lesson.slug}/{slot}"
             shutil.copytree(deck.entry.parent, base / deck_rel)
             hrefs.setdefault(lesson.slug, []).append({
-                "href": f"view/{course.slug}/{lesson.slug}/{slot}.html",
+                # 링크에는 확장자가 없고(Pages 가 붙여서 찾는다) 파일은 .html 이다.
+                "href": f"view/{course.slug}/{lesson.slug}/{slot}",
                 "level": DECK_LABEL.get(slot, slot),
                 "slot": slot,
                 "entry": f"{deck_rel}/{deck.entry.name}",
@@ -442,7 +453,7 @@ def nav_links(built: list[str], lang: str | None, up: str) -> list[dict]:
     않고, 탭만 남으면 404 로 간다."""
     links = [{
         "label": LANGUAGES[code]["nav"],
-        "href": f"{up}{LANGUAGES[code]['dir']}/catalog.html",
+        "href": f"{up}{LANGUAGES[code]['dir']}/",
         "current": code == lang,
     } for code in LANGUAGES if code in built]
     links.append({"label": "Repository", "href": REPO_URL, "optional": True})
@@ -486,7 +497,7 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
                 "countryCode": course.spec.get("countryCode"),
                 "level": unit["level"],
                 "track": family["slug"],
-                "page": f"{cfg['dir']}/catalog/{family['slug']}.html",
+                "page": f"{cfg['dir']}/catalog/{family['slug']}",
                 "lessons": [
                     {"week": l["n"], "title": t.spec.get("title", {}), "slug": t.slug,
                      "decks": {d["slot"]: d for d in decks.get(t.slug, [])}}
@@ -527,11 +538,11 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
                      "같은 값이고, 코스 하나는 레벨 하나에 놓입니다.",
             "foot": cfg["foot"],
             "stats": [[len(tracks), "학습 트랙"], [units, UNIT_WORD], [decks, "레슨 교재"]],
-            "home": f"{up}index.html",
+            "home": up or "./",
             "nav": nav_links(built, lang, up),
         }
 
-    (base / "catalog.html").write_text(fill("gateway.html", {
+    (base / "index.html").write_text(fill("gateway.html", {
         "levels": axis,
         "ramp": ramp,
         "page": page("../"),
@@ -590,7 +601,7 @@ def build(out: pathlib.Path) -> dict:
         cfg = LANGUAGES[lang]
         cards.append({
             **cfg["home"],
-            "href": f"{cfg['dir']}/catalog.html",
+            "href": f"{cfg['dir']}/",
             "state": "계속 추가 중" if any(t["status"] == "open" for t in tracks) else "운영 중",
             "counts": f"{sub['tracks']}개 트랙 · {sub['courses']}개 코스 · "
                       f"{sub['lessons']}과",
@@ -602,7 +613,7 @@ def build(out: pathlib.Path) -> dict:
     (out / "index.html").write_text(fill("home.html", {
         "languages": cards,
         "nav": [{"label": LANGUAGES[c]["nav"],
-                 "href": f"{LANGUAGES[c]['dir']}/catalog.html"} for c in built]
+                 "href": f"{LANGUAGES[c]['dir']}/"} for c in built]
                + [{"label": "Repository", "href": REPO_URL, "optional": True}],
         "foot": "이 페이지는 생성물입니다 — courses/ 의 enabled: true 인 코스만 실립니다.",
     }), encoding="utf-8")
@@ -612,6 +623,11 @@ def build(out: pathlib.Path) -> dict:
                    ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    # 커스텀 도메인은 저장소 설정과 이 파일 두 곳에 산다. gh-pages 는 매번 통째로
+    # force-push 되므로, 여기서 쓰지 않으면 다음 배포가 CNAME 을 지우고 GitHub 이
+    # 도메인 설정을 해제한다 — 사이트가 조용히 re-speak.github.io 로 돌아간다.
+    (out / "CNAME").write_text(CUSTOM_DOMAIN + "\n", encoding="utf-8")
+
     # Pages served from an Actions artifact does not run Jekyll, but a repo that
     # later switches to a branch source would — and Jekyll drops directories that
     # start with an underscore. One empty file makes both paths behave the same.
@@ -722,7 +738,7 @@ VIEWER = """<!DOCTYPE html>
 
 def write_viewer(out, base, course, lesson, deck, family, lang, built,
                  accent, tint) -> None:
-    path = base / deck["href"]
+    path = base / (deck["href"] + ".html")
     path.parent.mkdir(parents=True, exist_ok=True)
     up = os.path.relpath(out, path.parent) + "/"
     links = nav_links(built, lang, up)

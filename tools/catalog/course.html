@@ -10,6 +10,11 @@
        1. The language tabs come from DATA.page, since one template draws both
           korean/ and english/ track pages.
        2. The level ramp is keyed by position (see gateway.html).
+       3. Links drop the .html and the catalog is ../ rather than ../catalog.html,
+          because this site is served at a custom domain where a language is a
+          path (/korean-jp) and its catalog is that directory's index. GitHub
+          Pages resolves the extensionless links to the same files upstream
+          writes, so only the links moved, not the tree.
 
      Filled by tools/build-catalog.py — do not edit the built file by hand. -->
 <html lang="ko">
@@ -399,8 +404,8 @@ document.getElementById("ttl").textContent = `${T.ko} · PODO 한국어 커리�
 
 /* ---------- 탭 ---------- */
 document.getElementById("tabs").innerHTML =
-  `<a class="tab home" href="../catalog.html">← 카탈로그</a>` +
-  DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}" href="${esc(n.id)}.html"${n.id === T.id ? ' aria-current="page"' : ""}
+  `<a class="tab home" href="../">← 카탈로그</a>` +
+  DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}" href="${esc(n.id)}"${n.id === T.id ? ' aria-current="page"' : ""}
     style="--ac:${n.accent}"><em>${String(n.no).padStart(2, "0")}</em>${esc(n.ko)}</a>`).join("");
 
 /* ---------- 1단 ---------- */
@@ -607,8 +612,8 @@ $groups.innerHTML = T.groups.map(group).join("");
   const i = DATA.nav.findIndex(n => n.id === T.id);
   const prev = DATA.nav[i - 1], next = DATA.nav[i + 1];
   document.getElementById("nextrack").innerHTML =
-    (prev ? `<a href="${esc(prev.id)}.html">← ${esc(prev.ko)}</a>` : `<a href="../catalog.html">← 카탈로그</a>`) +
-    (next ? `<a href="${esc(next.id)}.html">${esc(next.ko)} →</a>` : `<a href="../catalog.html">카탈로그 →</a>`);
+    (prev ? `<a href="${esc(prev.id)}">← ${esc(prev.ko)}</a>` : `<a href="../">← 카탈로그</a>`) +
+    (next ? `<a href="${esc(next.id)}">${esc(next.ko)} →</a>` : `<a href="../">카탈로그 →</a>`);
 }
 
 /* ---------- behaviour ---------- */
