@@ -81,9 +81,13 @@ class ContextualFinalBusinessBatchTests(unittest.TestCase):
         for number, lesson in batch.LESSONS.items():
             _, source = batch.build(number, lesson)
             pages = dict(check_deck.pages(source))
-            for pid in ("situation-card", "scene", "lesson-goal", "expressions", "understand",
-                        "p1-teach", "p2-teach", "p3-model", "p3-complete", "p3-freetalk",
-                        "native-tip", "transfer-scene"):
+            self.assertNotIn("situation-card", pages, number)
+            self.assertEqual(list(pages)[:2], ["lesson-goal", "scene"], number)
+            for pid in ("scene", "lesson-goal", "expressions", "understand",
+                        "p1-teach", "p1-fill", "p1-translate", "p1-write",
+                        "p2-teach", "p2-fill", "p2-translate", "p2-write",
+                        "p3-model", "p3-complete", "p3-freetalk", "native-tip",
+                        "transfer-scene"):
                 self.assertIn(pid, pages, (number, pid))
             self.assertEqual(list(pages)[-1], "transfer-scene", number)
             for pid in ("p1-teach", "p2-teach"):
@@ -121,32 +125,70 @@ class ContextualFinalBusinessBatchTests(unittest.TestCase):
             self.assertTrue(batch.LESSONS[number][f"p{part}"]["omit_rule"], (number, part))
             self.assertTrue(batch.LESSONS[number][f"p{part}"]["omit_reorder"], (number, part))
 
-    def test_live_exchange_is_reciprocal_and_always_retrieves_both_frames(self):
-        frames = {
-            49: ("It's not so much", "I'd call it"), 50: ("We could", "If you can defer"),
-            51: ("I'd rather not commit to", "It depends on whether"),
-            52: ("The question is whether", "the less"), 53: ("To be fair", "That said"),
-            54: ("We seem to agree on", "What if we agreed on"),
-            55: ("I've noticed that", "I'd like to understand what's"),
-            56: ("the issue is that", "What I'd like you to do is"),
-            57: ("What we know is that", "We don't know"),
-            58: ("the key benefit is", "it addresses the risk of"),
-            59: ("We recognise the disruption", "I don't want to speculate"),
-            60: ("Overall, I recommend", "What it comes down to is that"),
-        }
+    def test_live_exchange_is_real_reciprocal_free_talk(self):
         for number, lesson in batch.LESSONS.items():
             _, source = batch.build(number, lesson)
             live = dict(check_deck.pages(source))["p3-freetalk"]
             self.assertEqual(len(check_deck.TURN_OPEN.findall(live)), 4, number)
-            self.assertIn('data-sync-id="live-me"', live, number)
-            self.assertIn('data-sync-id="live-ask"', live, number)
-            self.assertIn('data-sync-id="live-tutor"', live, number)
+            self.assertIn('data-sync-id="p3-real-answer"', live, number)
+            self.assertIn('data-sync-id="p3-tutor-answer"', live, number)
             prompt, _, scaffold, _, ask, _ = lesson["live"]
-            self.assertIn("real or imaginary", (prompt + " " + scaffold).casefold(), number)
-            self.assertNotIn(" / ", scaffold, number)
+            self.assertTrue(prompt.endswith("?"), (number, prompt))
             self.assertTrue(ask.endswith("?"), number)
-            for frame in frames[number]:
-                self.assertIn(frame, scaffold, (number, frame))
+            self.assertTrue(ask.casefold().startswith("what about you"), (number, ask))
+            self.assertNotRegex(prompt.casefold(), r"^(use|say|tell|report|reframe|make|give|name|imagine)\b")
+            self.assertNotIn("___", prompt + scaffold + ask, number)
+            self.assertIn(batch.core.esc(prompt), live, number)
+            self.assertIn(batch.core.esc(ask), live, number)
+
+    def test_write_jobs_translation_support_and_target_only_fills_are_explicit(self):
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                pattern = lesson[f"p{part}"]
+                self.assertTrue(pattern.get("write_frame"), (number, part))
+                self.assertIn(pattern["write_frame"], pattern["write_script"], (number, part))
+                self.assertIn("ましょう", pattern["write_script_ja"], (number, part))
+                write = pages[f"p{part}-write"]
+                self.assertIn(batch.core.esc(pattern["write_script"]), write, (number, part))
+                fill = pages[f"p{part}-fill"]
+                expected_targets = sum(row[0].count("{t}") for row in pattern["rows"])
+                self.assertEqual(fill.count('class="slot-input"'), expected_targets, (number, part))
+                translate = pages[f"p{part}-translate"]
+                self.assertIn('data-scaffolding-contract="target-v2"', translate, (number, part))
+                if pattern.get("translate_stage") == "checkpoint":
+                    self.assertIn('data-support-stage="checkpoint"', translate, (number, part))
+                    self.assertNotIn('class="hint-chip"', translate, (number, part))
+                else:
+                    self.assertTrue(pattern.get("translate_hints"), (number, part))
+                    self.assertIn('data-support-stage="supported"', translate, (number, part))
+                    self.assertIn('class="hint-chip"', translate, (number, part))
+
+    def test_understand_uses_complete_counterpart_lines(self):
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            understand = dict(check_deck.pages(source))["understand"]
+            self.assertIn("I’ll read each line. Choose what it means.", understand, number)
+            self.assertIn("私がそれぞれのセリフを読みます。意味を選んでください。", understand, number)
+            counterpart = {
+                turn[1] for turns in (lesson["scene_turns"], lesson["transfer_turns"])
+                for turn in turns if turn[0] == "other"
+            }
+            for line, *_ in lesson["receptive"]:
+                self.assertIn(line, counterpart, (number, line))
+                self.assertRegex(line, r"[.?!]$", (number, line))
+
+    def test_roles_and_transfer_intro_are_explicit_and_bilingual(self):
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            scene = pages["scene"]
+            transfer = pages["transfer-scene"]
+            self.assertIn(batch.core.esc(lesson["role_ja"]), scene, number)
+            self.assertIn(batch.core.esc(lesson["transfer_role_ja"]), transfer, number)
+            self.assertIn("same two lines", transfer, number)
+            self.assertIn("同じ二つの表現", transfer, number)
 
     def test_recycled_owners_are_exact_and_reachable(self):
         for number in range(49, 61):
@@ -271,11 +313,10 @@ class ContextualFinalBusinessBatchTests(unittest.TestCase):
         prompt, prompt_ja, scaffold, scaffold_ja, ask, ask_ja = batch.LESSONS[60]["live"]
         self.assertIn("forecast is still incomplete", first_turn[1])
         self.assertIn("需要予測はまだ不完全", first_turn[2])
-        for text in (prompt, scaffold, ask):
-            self.assertIn("incomplete", text.casefold())
-        self.assertIn("qualified recommendation", prompt)
-        self.assertIn("limited decision", ask)
-        self.assertIn("不完全", prompt_ja + scaffold_ja + ask_ja)
+        self.assertIn("evidence is incomplete", prompt.casefold())
+        self.assertIn("reversible decision", prompt.casefold())
+        self.assertIn("根拠が不完全", prompt_ja)
+        self.assertTrue(ask.endswith("?"))
 
     def test_reviewed_semantic_and_bilingual_repairs_are_locked(self):
         self.assertIn("refused to commit and asked for more evidence", batch.LESSONS[49]["transfer_turns"][0][1])

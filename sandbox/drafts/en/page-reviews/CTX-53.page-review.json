@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/53-acknowledge-then-push-back/lesson.html",
+  "lessonSha256": "cc699ff20aff4a7a205f970a20046e128b47ebd0aa498ec87aa4d46862b2b9f8",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing today's can-do.",
+      "tutorAction": "State the can-do briefly, then ask the learner to read the title aloud.",
+      "targetOrPrompt": "Acknowledge a point without giving up your position: Acknowledge the other side's valid point before stating the concern that remains. / 相手の正当な点を認めてから、残る懸念を伝えましょう。",
+      "learningTarget": "Orient the learner to the exact acknowledge a point without giving up your position outcome before role-play.",
+      "pedagogicalValue": "The concise can-do and read-title action give the page one clear orientation job.",
+      "failureDiagnosis": "A model exchange or outcome list here would duplicate later pages and obscure the first action.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "No choices are needed for a brief orientation action.",
+      "componentConsistency": "Uses the approved single goal card without a legacy three-box outcome list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for lesson-goal; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "scene",
+      "learnerAction": "Play the lesson's business role and read only the learner-owned turns.",
+      "tutorAction": "Play the Supplier and begin with the first counterpart line.",
+      "targetOrPrompt": "Challenging a charge fairly; learner role is the course role and tutor role is Supplier (供給元担当者); first tutor line: “We told you the rush order would take longer.”",
+      "learningTarget": "Encounter both target patterns in a resolved business exchange with unambiguous turn ownership.",
+      "pedagogicalValue": "Explicit roles let both target expressions perform the lesson's practical communication job.",
+      "failureDiagnosis": "A generic counterpart, tutor-read learner line, or unresolved ending would break the role-play.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "Turn timing replaces a fixed choice set on this role-play page.",
+      "componentConsistency": "Uses the shared six-turn dialogue with a stable learner/Supplier role pair.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for scene; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "understand",
+      "learnerAction": "Listen to each tutor-owned Supplier line and choose its matching meaning.",
+      "tutorAction": "Read only each complete English Supplier line; do not read the answer choices.",
+      "targetOrPrompt": "Tutor-owned Supplier lines: “We told you the rush order would take longer.”; “Then do you accept the extra charge?”; “I'll review the calculation with finance today.”; “Do you think the credit is insufficient?”",
+      "learningTarget": "Build receptive control of four complete Supplier lines needed to understand the business task.",
+      "pedagogicalValue": "All four inputs are complete counterpart lines with distinct, practically useful meanings.",
+      "failureDiagnosis": "A learner fragment, isolated clause, obvious distractor, or unclear reader would test layout rather than comprehension.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "Each wrong option gives a materially different interpretation; correct positions alternate.",
+      "componentConsistency": "Uses the shared synchronized two-option comprehension component for four listening decisions.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for understand; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "expressions",
+      "learnerAction": "Read both useful business expressions aloud once.",
+      "tutorAction": "Ask the learner to read each expression; clarify meaning only if needed.",
+      "targetOrPrompt": "give credit (評価する); push back (異議を唱える)",
+      "learningTarget": "Recognise two scene-relevant expressions before analysing the target patterns.",
+      "pedagogicalValue": "Both expressions contribute to the business situation or its resolution.",
+      "failureDiagnosis": "An expression that never supports the scene would add lexical load without improving performance.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "No distractors are needed; the learner reads two selected expressions.",
+      "componentConsistency": "Uses the shared two-item expression list with no nested second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for expressions; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Listen for why the next pattern is useful, then move to the next page.",
+      "tutorAction": "State the transition once and move directly to the teaching page.",
+      "targetOrPrompt": "Move 1: To be fair, you did warn us about the lead time.; communicative bridge: まず、相手の正当な点を公平に認めます。",
+      "learningTarget": "Connect the opening business scene to target pattern 1 without adding another drill.",
+      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
+      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the learning arc.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "No choice is needed on a short transition page.",
+      "componentConsistency": "Uses the approved transition page with one target line and one brief purpose.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part1-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each model sentence aloud after the tutor briefly explains its communicative use.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example aloud.",
+      "targetOrPrompt": "Pattern 1: To be fair, you did warn us about the lead time.; use: Use this to give genuine credit before disagreeing.",
+      "learningTarget": "Understand what pattern 1 accomplishes in the lesson's business interaction.",
+      "pedagogicalValue": "The meaning statement and varied models establish use before controlled production.",
+      "failureDiagnosis": "Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "The examples vary the business content instead of presenting distractors.",
+      "componentConsistency": "Uses the shared pattern teaching component with one hero and supporting examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "To be fair,",
+          "公平に言えば",
+          "To be fair,",
+          "公平に言えば",
+          "To be fair,",
+          "公平に言えば"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read all four complete model sentences aloud.",
+      "tutorAction": "Ask the learner to read; help only when pronunciation blocks the sentence.",
+      "targetOrPrompt": "Pattern 1 read-aloud set: To be fair, you did warn us about the lead time.; To be fair, you did flag the risk early.; To be fair, you did offer an alternative.; To be fair, you did explain the limitation.",
+      "learningTarget": "Build fluent oral control of pattern 1 across four meaningful business examples.",
+      "pedagogicalValue": "Repeated complete-sentence reading stabilises the frame before retrieval.",
+      "failureDiagnosis": "Tutor-first modelling would replace the learner's reading practice without a listening objective.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "Four varied models provide practice without a redundant choice task.",
+      "componentConsistency": "Uses the shared four-line read-aloud list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "To be fair,",
+          "公平に言えば",
+          "To be fair,",
+          "公平に言えば",
+          "To be fair,",
+          "公平に言えば",
+          "To be fair,",
+          "公平に言えば"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Read the concise form explanation and inspect the two examples.",
+      "tutorAction": "Explain only the useful ordering or boundary shown on the page.",
+      "targetOrPrompt": "Open with the fair point: Put the point you genuinely accept after 'To be fair.' Formula: To be fair, + valid point",
+      "learningTarget": "Notice the stable form of pattern 1 without adding unrelated grammar terminology.",
+      "pedagogicalValue": "The rule isolates the ordering decision needed for the following construction task.",
+      "failureDiagnosis": "A broader grammar lecture would increase load without helping the target business action.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "The two examples clarify the same form rather than asking for a new decision.",
+      "componentConsistency": "Uses the shared single formula card with two concise examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-rule; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each complete sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Pattern 1 target-only blanks: To be fair,; To be fair,; To be fair,; To be fair,",
+      "learningTarget": "Retrieve only the taught frame for pattern 1 while keeping lexical context visible.",
+      "pedagogicalValue": "Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.",
+      "failureDiagnosis": "Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.",
+      "nonTargetSupport": "All non-target business vocabulary remains printed in English and Japanese.",
+      "articleTreatment": "Articles remain visible outside target blanks unless they are inseparable from the taught target itself.",
+      "choiceQuality": "No distractors are needed; each blank maps one-to-one to a highlighted target cue.",
+      "componentConsistency": "Uses the shared target-only slot-input component across four rows.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "公平に言えば",
+          "公平に言えば",
+          "公平に言えば",
+          "公平に言えば"
+        ],
+        "blankAnswers": [
+          "To be fair,",
+          "To be fair,",
+          "To be fair,",
+          "To be fair,"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue, then say the complete English sentence aloud.",
+      "tutorAction": "Type the learner's complete sentence; use the declared support stage without supplying the target.",
+      "targetOrPrompt": "Pattern 1 translation production: To be fair, ___; support stage supported; 納期:lead time; リスク:risk; 代案:alternative; 制約:limitation",
+      "learningTarget": "Produce pattern 1 from meaning with its declared level of lexical support.",
+      "pedagogicalValue": "Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.",
+      "failureDiagnosis": "Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.",
+      "nonTargetSupport": "Declared supported support is visible and hash-bound in the extracted evidence.",
+      "articleTreatment": "Articles remain learner decisions and are never supplied as isolated hint chips.",
+      "choiceQuality": "Open production avoids an obvious two-choice answer and requires a complete sentence.",
+      "componentConsistency": "Uses the shared target-v2 translation component with one declared support stage.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-translate; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "To be fair, you did warn us about the lead time.",
+          "To be fair, you did flag the risk early.",
+          "To be fair, you did offer an alternative.",
+          "To be fair, you did explain the limitation."
+        ],
+        "hintChips": [
+          "納期:lead time",
+          "リスク:risk",
+          "代案:alternative",
+          "制約:limitation"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personally meaningful business sentence using the named pattern.",
+      "tutorAction": "Let the learner speak first, then capture the sentence and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt: “Use “To be fair, ___” to acknowledge one valid point before you disagree.” Frame: To be fair, ___",
+      "learningTarget": "Use pattern 1 for its explicit communicative job: Use “To be fair, ___” to acknowledge one valid point before you disagree.",
+      "pedagogicalValue": "The prompt names the actual business action instead of generically asking for a sentence.",
+      "failureDiagnosis": "A generic 'make your own sentence' instruction would not tell the learner what to communicate.",
+      "nonTargetSupport": "The frame remains visible and Japanese states the same communicative job.",
+      "articleTreatment": "The learner chooses any articles required by their own content; no article answer is prefilled.",
+      "choiceQuality": "Open production is appropriate because the learner creates one relevant sentence.",
+      "componentConsistency": "Uses the shared Student's sentence and Correction capture fields.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-write; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “To be fair, ___” to acknowledge one valid point before you disagree."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Listen for why the next pattern is useful, then move to the next page.",
+      "tutorAction": "State the transition once and move directly to the teaching page.",
+      "targetOrPrompt": "Move 2: That said, the final amount still seems disproportionate.; communicative bridge: 次に、認めたうえでも残る懸念を述べます。",
+      "learningTarget": "Connect the opening business scene to target pattern 2 without adding another drill.",
+      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
+      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the learning arc.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "No choice is needed on a short transition page.",
+      "componentConsistency": "Uses the approved transition page with one target line and one brief purpose.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part2-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each model sentence aloud after the tutor briefly explains its communicative use.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example aloud.",
+      "targetOrPrompt": "Pattern 2: That said, the final amount still seems disproportionate.; use: Use this to pivot from acknowledgement to a concern that still matters.",
+      "learningTarget": "Understand what pattern 2 accomplishes in the lesson's business interaction.",
+      "pedagogicalValue": "The meaning statement and varied models establish use before controlled production.",
+      "failureDiagnosis": "Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "The examples vary the business content instead of presenting distractors.",
+      "componentConsistency": "Uses the shared pattern teaching component with one hero and supporting examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "That said,",
+          "そうは言っても",
+          "That said,",
+          "そうは言っても",
+          "That said,",
+          "そうは言っても"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read all four complete model sentences aloud.",
+      "tutorAction": "Ask the learner to read; help only when pronunciation blocks the sentence.",
+      "targetOrPrompt": "Pattern 2 read-aloud set: That said, the final amount still seems disproportionate.; That said, the delay still needs an explanation.; That said, the remedy still falls short.; That said, the terms still seem one-sided.",
+      "learningTarget": "Build fluent oral control of pattern 2 across four meaningful business examples.",
+      "pedagogicalValue": "Repeated complete-sentence reading stabilises the frame before retrieval.",
+      "failureDiagnosis": "Tutor-first modelling would replace the learner's reading practice without a listening objective.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "Four varied models provide practice without a redundant choice task.",
+      "componentConsistency": "Uses the shared four-line read-aloud list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "That said,",
+          "そうは言っても",
+          "That said,",
+          "そうは言っても",
+          "That said,",
+          "そうは言っても",
+          "That said,",
+          "そうは言っても"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Read the concise form explanation and inspect the two examples.",
+      "tutorAction": "Explain only the useful ordering or boundary shown on the page.",
+      "targetOrPrompt": "Put the remaining concern after the pivot: Use 'That said' only after a real acknowledgement, then state the unresolved concern. Formula: That said, + remaining concern",
+      "learningTarget": "Notice the stable form of pattern 2 without adding unrelated grammar terminology.",
+      "pedagogicalValue": "The rule isolates the ordering decision needed for the following construction task.",
+      "failureDiagnosis": "A broader grammar lecture would increase load without helping the target business action.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "The two examples clarify the same form rather than asking for a new decision.",
+      "componentConsistency": "Uses the shared single formula card with two concise examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-rule; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each complete sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Pattern 2 target-only blanks: That said,; That said,; That said,; That said,",
+      "learningTarget": "Retrieve only the taught frame for pattern 2 while keeping lexical context visible.",
+      "pedagogicalValue": "Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.",
+      "failureDiagnosis": "Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.",
+      "nonTargetSupport": "All non-target business vocabulary remains printed in English and Japanese.",
+      "articleTreatment": "Articles remain visible outside target blanks unless they are inseparable from the taught target itself.",
+      "choiceQuality": "No distractors are needed; each blank maps one-to-one to a highlighted target cue.",
+      "componentConsistency": "Uses the shared target-only slot-input component across four rows.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "そうは言っても",
+          "そうは言っても",
+          "そうは言っても",
+          "そうは言っても"
+        ],
+        "blankAnswers": [
+          "That said,",
+          "That said,",
+          "That said,",
+          "That said,"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue, then say the complete English sentence aloud.",
+      "tutorAction": "Type the learner's complete sentence; use the declared support stage without supplying the target.",
+      "targetOrPrompt": "Pattern 2 translation production: That said, ___; support stage supported; 最終的な金額:final amount; 遅れ:delay; 救済策:remedy; 条件:terms",
+      "learningTarget": "Produce pattern 2 from meaning with its declared level of lexical support.",
+      "pedagogicalValue": "Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.",
+      "failureDiagnosis": "Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.",
+      "nonTargetSupport": "Declared supported support is visible and hash-bound in the extracted evidence.",
+      "articleTreatment": "Articles remain learner decisions and are never supplied as isolated hint chips.",
+      "choiceQuality": "Open production avoids an obvious two-choice answer and requires a complete sentence.",
+      "componentConsistency": "Uses the shared target-v2 translation component with one declared support stage.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-translate; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "That said, the final amount still seems disproportionate.",
+          "That said, the delay still needs an explanation.",
+          "That said, the remedy still falls short.",
+          "That said, the terms still seem one-sided."
+        ],
+        "hintChips": [
+          "最終的な金額:final amount",
+          "遅れ:delay",
+          "救済策:remedy",
+          "条件:terms"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personally meaningful business sentence using the named pattern.",
+      "tutorAction": "Let the learner speak first, then capture the sentence and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt: “Use “That said, ___” to return to the concern that still needs an answer.” Frame: That said, ___",
+      "learningTarget": "Use pattern 2 for its explicit communicative job: Use “That said, ___” to return to the concern that still needs an answer.",
+      "pedagogicalValue": "The prompt names the actual business action instead of generically asking for a sentence.",
+      "failureDiagnosis": "A generic 'make your own sentence' instruction would not tell the learner what to communicate.",
+      "nonTargetSupport": "The frame remains visible and Japanese states the same communicative job.",
+      "articleTreatment": "The learner chooses any articles required by their own content; no article answer is prefilled.",
+      "choiceQuality": "Open production is appropriate because the learner creates one relevant sentence.",
+      "componentConsistency": "Uses the shared Student's sentence and Correction capture fields.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-write; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “That said, ___” to return to the concern that still needs an answer."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Listen to the brief transition into full-scene practice.",
+      "tutorAction": "Set up the replay in one line and move directly to the dialogue.",
+      "targetOrPrompt": "Full-scene practice combines “To be fair, you did warn us about the lead time.” and “That said, the final amount still seems disproportionate.”.",
+      "learningTarget": "Prepare to combine both target patterns in one coherent business exchange.",
+      "pedagogicalValue": "The short bridge marks a stage change without introducing another task.",
+      "failureDiagnosis": "A second explanation or drill here would duplicate the replay pages.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "No choice is needed on a transition page.",
+      "componentConsistency": "Uses the approved part transition component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part3-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Play the learner role and read the complete exchange with the tutor as Supplier.",
+      "tutorAction": "Read only the Supplier turns and pause for every learner turn.",
+      "targetOrPrompt": "Six-turn replay with Supplier; learner lines include “To be fair, you did warn us about the lead time.” and “That said, the final amount still seems disproportionate.”.",
+      "learningTarget": "Combine both patterns fluently in the original resolved business scene.",
+      "pedagogicalValue": "The replay restores conversational timing after isolated pattern practice.",
+      "failureDiagnosis": "Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "Turn-taking supplies the interaction; no answer choices are needed.",
+      "componentConsistency": "Matches the opening scene's six turns and stable roles exactly.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "To be fair,",
+          "公平に言えば",
+          "That said,",
+          "そうは言っても"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say every learner line in the scene, including all missing target words.",
+      "tutorAction": "Play the Supplier; type only the missing target words after each learner line.",
+      "targetOrPrompt": "Full-scene target retrieval: To be fair,, That said,",
+      "learningTarget": "Retrieve both taught patterns while preserving the timing of the complete business exchange.",
+      "pedagogicalValue": "Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.",
+      "failureDiagnosis": "Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.",
+      "nonTargetSupport": "All situational vocabulary and aligned Japanese remain visible around the target blanks.",
+      "articleTreatment": "Articles outside the target remain printed and are not converted into surprise blanks.",
+      "choiceQuality": "No distractors are needed; each blank corresponds to a known highlighted target.",
+      "componentConsistency": "Uses the shared six-turn completion dialogue with target-only textareas.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "To be fair,",
+          "That said,"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's genuine personal question, then ask the visible reciprocal question.",
+      "tutorAction": "React naturally, follow the most interesting detail, and give a real answer when asked back.",
+      "targetOrPrompt": "Exact Tutor question: “When you disagree with someone, is it easy for you to acknowledge their strongest point?” Exact learner ask-back: “What about you—is that easy for you?”",
+      "learningTarget": "Sustain a relevant reciprocal conversation about acknowledge a point without giving up your position without forcing today's frame.",
+      "pedagogicalValue": "The first turn is an interesting standalone question and the ask-back creates real two-way talk.",
+      "failureDiagnosis": "A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.",
+      "nonTargetSupport": "Aligned Japanese supports both exact questions; the tutor may use natural language in the response.",
+      "articleTreatment": "The conversation is meaning-led, so articles are corrected only when useful for communication.",
+      "choiceQuality": "An open personal response is more appropriate than a constrained option list.",
+      "componentConsistency": "Uses the shared four-turn Tutor question, learner answer/ask-back, Tutor answer sequence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-freetalk; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When you disagree with someone, is it easy for you to acknowledge their strongest point?",
+          "What about you—is that easy for you?"
+        ]
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two usage choices and read the examples.",
+      "tutorAction": "Explain the practical distinction briefly and check understanding once.",
+      "targetOrPrompt": "Use 'That said' for a deliberate pivot: 'That said' marks a more deliberate return to the remaining concern than a simple 'but.' Examples: That said, the amount is high. / but the amount is high",
+      "learningTarget": "Choose a natural expression based on the business situation rather than translate mechanically.",
+      "pedagogicalValue": "The contrast resolves a plausible usage decision that can change the speaker's meaning.",
+      "failureDiagnosis": "Two synonyms without a situational distinction would add a decorative but pedagogically empty page.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "The two examples represent meaningfully different situations rather than arbitrary alternatives.",
+      "componentConsistency": "Uses the shared two-way nuance comparison component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for native-tip; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "transfer-scene",
+      "learnerAction": "Use both learned patterns in a new role-play and read only the learner turns.",
+      "tutorAction": "Play the Service Provider, begin with the first line, and pause for learner turns.",
+      "targetOrPrompt": "Challenging a proposed remedy; tutor is Service Provider (サービス提供会社の担当者); first line: “We offered a credit as soon as the outage ended.”; use the same two target expressions.",
+      "learningTarget": "Transfer both target patterns to a different but coherent business situation.",
+      "pedagogicalValue": "A new resolved scene tests flexible use beyond memorising the opening dialogue.",
+      "failureDiagnosis": "Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.",
+      "nonTargetSupport": "Aligned Japanese support clarifies the task while leaving the English production to the learner.",
+      "articleTreatment": "Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.",
+      "choiceQuality": "Turn-taking and target retrieval provide the challenge; no extra choices are required.",
+      "componentConsistency": "Uses the shared six-turn transfer role-play with explicit aligned roles.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "To be fair,",
+          "That said,"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
