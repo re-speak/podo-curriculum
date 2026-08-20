@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-experience-and-ideas/lessons/50-i-went-there-last-year/lesson.html",
+  "lessonSha256": "40dbf3d5faa6dba4947a66ff6944a44a99acf0fce8158e9991bf73879b20f003",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "goal orientation for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for goal orientation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown.",
+      "tutorAction": "Listen briefly and treat these as activation, not new teaching.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "known-word activation for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for known-word activation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud once.",
+      "tutorAction": "Introduce Pattern 1 in one line, then move on.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 1 transition for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 transition is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete Pattern 1 examples aloud after the meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read each example.",
+      "targetOrPrompt": "Highlighted target: Have you been to | 行ったことはありますか | Have you been to | 行ったことはありますか | Have you been to | 来たことはありますか",
+      "learningTarget": "Pattern 1 meaning and model for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 meaning and model is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Have you been to",
+          "行ったことはありますか",
+          "Have you been to",
+          "行ったことはありますか",
+          "Have you been to",
+          "来たことはありますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 sentence aloud.",
+      "tutorAction": "Listen and model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: Have you been to | 行ったことはありますか | Have you been to | 行ったことはありますか | Have you been to | 来たことはありますか | Have you been to | 来たことはありますか",
+      "learningTarget": "Pattern 1 read-aloud for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 read-aloud is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Have you been to",
+          "行ったことはありますか",
+          "Have you been to",
+          "行ったことはありますか",
+          "Have you been to",
+          "来たことはありますか",
+          "Have you been to",
+          "来たことはありますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 1 form explanation for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 form explanation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the form that matches each Japanese meaning, then read the completed sentence aloud.",
+      "tutorAction": "Check each decision and require the complete sentence before moving on.",
+      "targetOrPrompt": "Highlighted target: 今までの経験 | 去年の旅行 | 今までの経験 | 金曜日の訪問",
+      "learningTarget": "Pattern 1 meaning contrast for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning contrast—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning contrast with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "Every row presents a small, meaningful form/meaning contrast, varies the correct alternative across the page, and ends with the completed sentence aloud.",
+      "componentConsistency": "The established Core component for Pattern 1 meaning contrast is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "今までの経験",
+          "去年の旅行",
+          "今までの経験",
+          "金曜日の訪問"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put each sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence before offering help.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 1 word-order retrieval for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 word-order retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence aloud, including the missing target words.",
+      "tutorAction": "Listen first, then type only the target words the learner says.",
+      "targetOrPrompt": "Highlighted target: 行ったことはありますか | 行ったことはありますか | 来たことはありますか | 来たことはありますか Blank answers: Have you been to | Have you been to | Have you been to | Have you been to",
+      "learningTarget": "Pattern 1 controlled target retrieval for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 controlled target retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "行ったことはありますか",
+          "行ったことはありますか",
+          "来たことはありますか",
+          "来たことはありますか"
+        ],
+        "blankAnswers": [
+          "Have you been to",
+          "Have you been to",
+          "Have you been to",
+          "Have you been to"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete English sentence from the Japanese cue, using the lexical hints when needed.",
+      "tutorAction": "Let the learner produce the sentence; type the supported lexical answer only after they speak.",
+      "targetOrPrompt": "Blank answers: Have you been to Kyoto? | Have you been to Canada? | Have you been to this café? | Have you been to this museum? Lexical hints: 京都:Kyoto | カナダ:Canada | カフェ:café | 美術館:museum",
+      "learningTarget": "Pattern 1 supported translation for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 supported translation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Have you been to Kyoto?",
+          "Have you been to Canada?",
+          "Have you been to this café?",
+          "Have you been to this museum?"
+        ],
+        "hintChips": [
+          "京都:Kyoto",
+          "カナダ:Canada",
+          "カフェ:café",
+          "美術館:museum"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the exact visible frame to perform the named communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt: Use “Have you been to ___?” to ask whether I have visited one place. Lexical hints: 京都:Kyoto | カナダ:Canada | 美術館:museum",
+      "learningTarget": "Pattern 1 personal production for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 personal production—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 personal production with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 personal production is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "京都:Kyoto",
+          "カナダ:Canada",
+          "美術館:museum"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “Have you been to ___?” to ask whether I have visited one place."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud once.",
+      "tutorAction": "Introduce Pattern 2 in one line, then move on.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 2 transition for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 transition is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete Pattern 2 examples aloud after the meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read each example.",
+      "targetOrPrompt": "Highlighted target: Yes, I went there | 去年そこへ行きました | Yes, I went there | 去年の夏にそこへ行きました | Yes, I went there | 金曜日にそこへ行きました",
+      "learningTarget": "Pattern 2 meaning and model for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 meaning and model is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Yes, I went there",
+          "去年そこへ行きました",
+          "Yes, I went there",
+          "去年の夏にそこへ行きました",
+          "Yes, I went there",
+          "金曜日にそこへ行きました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 sentence aloud.",
+      "tutorAction": "Listen and model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: Yes, I went there | 去年そこへ行きました | Yes, I went there | 去年の夏にそこへ行きました | Yes, I went there | 金曜日にそこへ行きました | Yes, I went there | 2か月前にそこへ行きました",
+      "learningTarget": "Pattern 2 read-aloud for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 read-aloud is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Yes, I went there",
+          "去年そこへ行きました",
+          "Yes, I went there",
+          "去年の夏にそこへ行きました",
+          "Yes, I went there",
+          "金曜日にそこへ行きました",
+          "Yes, I went there",
+          "2か月前にそこへ行きました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 2 form explanation for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 form explanation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the form that matches each Japanese meaning, then read the completed sentence aloud.",
+      "tutorAction": "Check each decision and require the complete sentence before moving on.",
+      "targetOrPrompt": "Highlighted target: 去年 | 今までに | 金曜日 | これまでに2回",
+      "learningTarget": "Pattern 2 meaning contrast for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning contrast—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning contrast with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "Every row presents a small, meaningful form/meaning contrast, varies the correct alternative across the page, and ends with the completed sentence aloud.",
+      "componentConsistency": "The established Core component for Pattern 2 meaning contrast is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "去年",
+          "今までに",
+          "金曜日",
+          "これまでに2回"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put each sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence before offering help.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 2 word-order retrieval for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 word-order retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence aloud, including the missing target words.",
+      "tutorAction": "Listen first, then type only the target words the learner says.",
+      "targetOrPrompt": "Highlighted target: 去年そこへ行きました | 去年の夏にそこへ行きました | 金曜日にそこへ行きました | 2か月前にそこへ行きました Blank answers: Yes, I went there | Yes, I went there | Yes, I went there | Yes, I went there",
+      "learningTarget": "Pattern 2 controlled target retrieval for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 controlled target retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "去年そこへ行きました",
+          "去年の夏にそこへ行きました",
+          "金曜日にそこへ行きました",
+          "2か月前にそこへ行きました"
+        ],
+        "blankAnswers": [
+          "Yes, I went there",
+          "Yes, I went there",
+          "Yes, I went there",
+          "Yes, I went there"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete English sentence from the Japanese cue, using the lexical hints when needed.",
+      "tutorAction": "Let the learner produce the sentence; type the supported lexical answer only after they speak.",
+      "targetOrPrompt": "Blank answers: Yes, I went there last year. | Yes, I went there last summer. | Yes, I went there on Friday. | Yes, I went there two months ago. Lexical hints: 去年:last year | 去年の夏:last summer | 金曜日:Friday | 2か月前:two months ago",
+      "learningTarget": "Pattern 2 supported translation for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 supported translation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Yes, I went there last year.",
+          "Yes, I went there last summer.",
+          "Yes, I went there on Friday.",
+          "Yes, I went there two months ago."
+        ],
+        "hintChips": [
+          "去年:last year",
+          "去年の夏:last summer",
+          "金曜日:Friday",
+          "2か月前:two months ago"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the exact visible frame to perform the named communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt: Use “I went there ___” to say when you visited a place; if you have not, say “I haven't been there.” Lexical hints: 去年:last year | 金曜日:Friday | 2か月前:two months ago",
+      "learningTarget": "Pattern 2 personal production for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 personal production—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 personal production with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 personal production is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "去年:last year",
+          "金曜日:Friday",
+          "2か月前:two months ago"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “I went there ___” to say when you visited a place; if you have not, say “I haven't been there.”"
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the supporting expressions and connect them to the upcoming role-play.",
+      "tutorAction": "Clarify the expressions briefly without adding a drill.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "role-play support for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—role-play support—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play support with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play support is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-negq-01",
+      "learnerAction": "Retrieve the earlier form in the controlled review item.",
+      "tutorAction": "Check the earlier form once, then return to today's lesson.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "spaced retrieval for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for spaced retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the conversation goal and get ready to use both patterns.",
+      "tutorAction": "Introduce the conversation in one line, then move on.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "conversation transition for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—conversation transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform conversation transition with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for conversation transition is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read the learner role in the model conversation.",
+      "tutorAction": "Take the named counterpart role and alternate turns naturally.",
+      "targetOrPrompt": "Highlighted target: Have you been to | 行ったことはありますか | Yes, I went there | 去年そこへ行きました",
+      "learningTarget": "supported role-play for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—supported role-play—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform supported role-play with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for supported role-play is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [
+          "Have you been to",
+          "行ったことはありますか",
+          "Yes, I went there",
+          "去年そこへ行きました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Complete and say the learner lines in the role-play.",
+      "tutorAction": "Take the named counterpart role and pause for each learner turn.",
+      "targetOrPrompt": "Blank answers: Have you been to | Yes, I went there",
+      "learningTarget": "role-play completion for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—role-play completion—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play completion with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play completion is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Have you been to",
+          "Yes, I went there"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's real question, then ask the visible question back.",
+      "tutorAction": "Ask the exact question, react naturally, then give a real answer to the ask-back.",
+      "targetOrPrompt": "Exact learner prompt: Which place would you happily visit again, and why? | What about you—which place would you visit again?",
+      "learningTarget": "reciprocal free conversation for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—reciprocal free conversation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal free conversation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for reciprocal free conversation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which place would you happily visit again, and why?",
+          "What about you—which place would you visit again?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both patterns in the new role-play.",
+      "tutorAction": "Take the explicitly named counterpart role and complete the exchange.",
+      "targetOrPrompt": "Blank answers: Have you been to | Yes, I went there",
+      "learningTarget": "transfer role-play for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for transfer role-play is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Have you been to",
+          "Yes, I went there"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Notice the final usage distinction and read the contrasting examples.",
+      "tutorAction": "Explain the distinction briefly and check the examples.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "usage nuance for CORE-50: Use this to ask about an experience without naming a finished time. and Use this to answer with one specific visit and a finished time.",
+      "pedagogicalValue": "This page has one distinct job—usage nuance—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform usage nuance with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for usage nuance is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

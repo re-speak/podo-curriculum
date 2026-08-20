@@ -50,7 +50,10 @@ LESSONS = {
             ("{t}I've never{/t} used a wheel, {t}but I'd like to{/t}.", "ろくろは{t}使ったことがありませんが{/t}、{t}使ってみたいです{/t}。", "I've never|used a wheel,|but|I'd like to."),
             ("{t}I've never{/t} stayed at a capsule hotel, {t}but I'd like to{/t}.", "カプセルホテルには{t}泊まったことがありませんが{/t}、{t}泊まってみたいです{/t}。", "I've never|stayed at a capsule hotel,|but|I'd like to."),
         ),
-        omit_choice=(1,),
+        # Both alternatives on Part 2 would reduce to the same never/ever
+        # decision in four near-identical statements. The remaining pages
+        # already retrieve the complete frame, so omit that low-value choice.
+        omit_choice=(1, 2),
         rules=(
             ("Put ever before the past participle to ask about any time up to now.", "ever は過去分詞の前に置き、今までのどこかの時点での経験を聞きます。"),
             ("Put never before the past participle, then keep but I'd like to as the positive close.", "never は過去分詞の前に置き、but I'd like to を前向きな結びとして続けます。"),
@@ -70,11 +73,12 @@ LESSONS = {
             ("{t}I've already{/t} paid the bill.", "請求書は{t}もう支払いました{/t}。", "I've|already|paid|the bill."),
         ),
         p2=rows(
-            ("{t}Have you{/t} finished the report {t}yet{/t}?", "レポートは{t}もう終わりましたか{/t}？", "Have you|finished|the report|yet?"),
-            ("{t}Have you{/t} sent the email {t}yet{/t}?", "メールは{t}もう送りましたか{/t}？", "Have you|sent|the email|yet?"),
-            ("{t}Have you{/t} booked the table {t}yet{/t}?", "テーブルは{t}もう予約しましたか{/t}？", "Have you|booked|the table|yet?"),
-            ("{t}Have you{/t} paid the bill {t}yet{/t}?", "請求書は{t}もう支払いましたか{/t}？", "Have you|paid|the bill|yet?"),
+            ("{t}Have you{/t} finished the report {t}yet{/t}?", "レポートは{t}もう{/t}終わり{t}ましたか{/t}？", "Have you|finished|the report|yet?"),
+            ("{t}Have you{/t} sent the email {t}yet{/t}?", "メールは{t}もう{/t}送り{t}ましたか{/t}？", "Have you|sent|the email|yet?"),
+            ("{t}Have you{/t} booked the table {t}yet{/t}?", "テーブルは{t}もう{/t}予約し{t}ましたか{/t}？", "Have you|booked|the table|yet?"),
+            ("{t}Have you{/t} paid the bill {t}yet{/t}?", "請求書は{t}もう{/t}支払い{t}ましたか{/t}？", "Have you|paid|the bill|yet?"),
         ),
+        omit_choice=(1,),
         rules=(
             ("Put already between have and the past participle in an affirmative update.", "肯定の進捗報告では、already を have と過去分詞の間に置きます。"),
             ("Put yet at the end of a neutral question about whether something is done.", "完了したかを普通に確認する質問では、yet を文末に置きます。"),
@@ -136,10 +140,10 @@ LESSONS = {
         ja="午前中ずっと働いています",
         goal=("Describe an activity continuing up to now and explain its effect.", "今まで続いている活動を話し、その影響を説明しましょう。"),
         p1=rows(
-            ("{t}I've been{/t} working {t}since{/t} nine.", "9時から{t}ずっと働いています{/t}。", "I've been|working|since|nine."),
-            ("{t}I've been{/t} studying {t}since{/t} breakfast.", "朝食のあとから{t}ずっと勉強しています{/t}。", "I've been|studying|since|breakfast."),
-            ("{t}I've been{/t} cleaning {t}since{/t} eight.", "8時から{t}ずっと掃除しています{/t}。", "I've been|cleaning|since|eight."),
-            ("{t}I've been{/t} waiting {t}since{/t} noon.", "正午から{t}ずっと待っています{/t}。", "I've been|waiting|since|noon."),
+            ("{t}I've been{/t} working {t}since{/t} nine.", "{t}9時から{/t}{t}ずっと働いています{/t}。", "I've been|working|since|nine."),
+            ("{t}I've been{/t} studying {t}since{/t} breakfast.", "{t}朝食のあとから{/t}{t}ずっと勉強しています{/t}。", "I've been|studying|since|breakfast."),
+            ("{t}I've been{/t} cleaning {t}since{/t} eight.", "{t}8時から{/t}{t}ずっと掃除しています{/t}。", "I've been|cleaning|since|eight."),
+            ("{t}I've been{/t} waiting {t}since{/t} noon.", "{t}正午から{/t}{t}ずっと待っています{/t}。", "I've been|waiting|since|noon."),
         ),
         p2=rows(
             ("{t}That's why I'm{/t} exhausted.", "{t}だから疲れ切っています{/t}。", "That's why|I'm|exhausted."),
@@ -171,7 +175,7 @@ LESSONS = {
             ("{t}We still need to{/t} check two rooms.", "部屋は2つ{t}まだ確認する必要があります{/t}。", "We|still need to|check|two rooms."),
             ("{t}We still need to{/t} pack one box.", "箱は1つ{t}まだ詰める必要があります{/t}。", "We|still need to|pack|one box."),
         ),
-        omit_choice=(2,),
+        omit_choice=(1, 2),
         omit_reorder=(1,),
         rules=(
             ("Use have plus finished for completed work that matters to the update now.", "今の進捗に関係する完了済みの作業には have と finished を使います。"),
@@ -234,10 +238,10 @@ LESSONS = {
         ja="気に入っていますが、高いです",
         goal=("Acknowledge a good point while adding a real limitation.", "よい点を認めながら、実際の問題点も加えましょう。"),
         p1=rows(
-            ("{t}I like{/t} the place, {t}but{/t} it's expensive.", "その場所は{t}気に入っていますが{/t}、高いです。", "I like|the place,|but|it's expensive."),
-            ("{t}I like{/t} the room, {t}but{/t} it's small.", "その部屋は{t}気に入っていますが{/t}、小さいです。", "I like|the room,|but|it's small."),
-            ("{t}I like{/t} the café, {t}but{/t} it's crowded.", "そのカフェは{t}気に入っていますが{/t}、混んでいます。", "I like|the café,|but|it's crowded."),
-            ("{t}I like{/t} the job, {t}but{/t} it's stressful.", "その仕事は{t}気に入っていますが{/t}、ストレスが多いです。", "I like|the job,|but|it's stressful."),
+            ("{t}I like{/t} the place, {t}but{/t} it's expensive.", "その場所は{t}気に入っています{/t}{t}が{/t}、高いです。", "I like|the place,|but|it's expensive."),
+            ("{t}I like{/t} the room, {t}but{/t} it's small.", "その部屋は{t}気に入っています{/t}{t}が{/t}、小さいです。", "I like|the room,|but|it's small."),
+            ("{t}I like{/t} the café, {t}but{/t} it's crowded.", "そのカフェは{t}気に入っています{/t}{t}が{/t}、混んでいます。", "I like|the café,|but|it's crowded."),
+            ("{t}I like{/t} the job, {t}but{/t} it's stressful.", "その仕事は{t}気に入っています{/t}{t}が{/t}、ストレスが多いです。", "I like|the job,|but|it's stressful."),
         ),
         p2=rows(
             ("{t}Even though{/t} it's small, it's comfortable.", "小さい{t}のに{/t}、快適です。", "Even though|it's small,|it's comfortable."),
@@ -258,10 +262,10 @@ LESSONS = {
         ja="雨が降ったら、家にいます",
         goal=("State a realistic condition and ask for another person's plan.", "現実的な条件と自分の予定を伝え、相手の予定も聞きましょう。"),
         p1=rows(
-            ("{t}If{/t} it rains, {t}I'll{/t} stay in.", "{t}雨が降ったら{/t}、家にいます。", "If|it rains,|I'll|stay in."),
-            ("{t}If{/t} the train's late, {t}I'll{/t} take a taxi.", "{t}電車が遅れたら{/t}、タクシーに乗ります。", "If|the train's late,|I'll|take a taxi."),
-            ("{t}If{/t} the café's full, {t}I'll{/t} wait outside.", "{t}カフェが満席なら{/t}、外で待ちます。", "If|the café's full,|I'll|wait outside."),
-            ("{t}If{/t} Mina comes, {t}I'll{/t} make dinner.", "{t}ミナが来たら{/t}、夕食を作ります。", "If|Mina comes,|I'll|make dinner."),
+            ("{t}If{/t} it rains, {t}I'll{/t} stay in.", "{t}雨が降ったら{/t}、{t}家にいます{/t}。", "If|it rains,|I'll|stay in."),
+            ("{t}If{/t} the train's late, {t}I'll{/t} take a taxi.", "{t}電車が遅れたら{/t}、{t}タクシーに乗ります{/t}。", "If|the train's late,|I'll|take a taxi."),
+            ("{t}If{/t} the café's full, {t}I'll{/t} wait outside.", "{t}カフェが満席なら{/t}、{t}外で待ちます{/t}。", "If|the café's full,|I'll|wait outside."),
+            ("{t}If{/t} Mina comes, {t}I'll{/t} make dinner.", "{t}ミナが来たら{/t}、{t}夕食を作ります{/t}。", "If|Mina comes,|I'll|make dinner."),
         ),
         p2=rows(
             ("{t}What will you do if{/t} the train's late?", "電車が遅れたら{t}どうしますか{/t}？", "What|will you do|if|the train's late?"),
@@ -283,16 +287,16 @@ LESSONS = {
         ja="着いたら電話します",
         goal=("Say when an action will happen and what condition would stop it.", "行動する時を伝え、それを止める条件も話しましょう。"),
         p1=rows(
-            ("{t}I'll{/t} call you {t}when{/t} I get there.", "着いたら{t}電話します{/t}。", "I'll|call you|when|I get there."),
-            ("{t}I'll{/t} text you {t}when{/t} I leave work.", "仕事を出たら{t}メッセージします{/t}。", "I'll|text you|when|I leave work."),
-            ("{t}I'll{/t} email you {t}when{/t} I finish the report.", "レポートを終えたら{t}メールします{/t}。", "I'll|email you|when|I finish the report."),
-            ("{t}I'll{/t} tell you {t}when{/t} I know more.", "もっと分かったら{t}伝えます{/t}。", "I'll|tell you|when|I know more."),
+            ("{t}I'll{/t} call you {t}when{/t} I get there.", "{t}着いたら{/t}{t}電話します{/t}。", "I'll|call you|when|I get there."),
+            ("{t}I'll{/t} text you {t}when{/t} I leave work.", "{t}仕事を出たら{/t}{t}メッセージします{/t}。", "I'll|text you|when|I leave work."),
+            ("{t}I'll{/t} email you {t}when{/t} I finish the report.", "{t}レポートを終えたら{/t}{t}メールします{/t}。", "I'll|email you|when|I finish the report."),
+            ("{t}I'll{/t} tell you {t}when{/t} I know more.", "{t}もっと分かったら{/t}{t}伝えます{/t}。", "I'll|tell you|when|I know more."),
         ),
         p2=rows(
-            ("{t}Unless{/t} it rains, {t}I'll{/t} walk.", "雨が降らない{t}かぎり{/t}、歩きます。", "Unless|it rains,|I'll|walk."),
-            ("{t}Unless{/t} the train's late, {t}I'll{/t} be there by nine.", "電車が遅れない{t}かぎり{/t}、9時までに着きます。", "Unless|the train's late,|I'll|be there by nine."),
-            ("{t}Unless{/t} the meeting runs late, {t}I'll{/t} call at six.", "会議が長引かない{t}かぎり{/t}、6時に電話します。", "Unless|the meeting runs late,|I'll|call at six."),
-            ("{t}Unless{/t} the soil is wet, {t}I'll{/t} water the plants.", "土が湿っていない{t}かぎり{/t}、植物に水をやります。", "Unless|the soil is wet,|I'll|water the plants."),
+            ("{t}Unless{/t} it rains, {t}I'll{/t} walk.", "雨が降らない{t}かぎり{/t}、{t}歩きます{/t}。", "Unless|it rains,|I'll|walk."),
+            ("{t}Unless{/t} the train's late, {t}I'll{/t} be there by nine.", "電車が遅れない{t}かぎり{/t}、{t}9時までに着きます{/t}。", "Unless|the train's late,|I'll|be there by nine."),
+            ("{t}Unless{/t} the meeting runs late, {t}I'll{/t} call at six.", "会議が長引かない{t}かぎり{/t}、{t}6時に電話します{/t}。", "Unless|the meeting runs late,|I'll|call at six."),
+            ("{t}Unless{/t} the soil is wet, {t}I'll{/t} water the plants.", "土が湿っていない{t}かぎり{/t}、{t}植物に水をやります{/t}。", "Unless|the soil is wet,|I'll|water the plants."),
         ),
         rules=(
             ("Use the present form after when even though the main action is in the future.", "未来の話でも、when のあとは現在形を使います。"),
@@ -928,6 +932,160 @@ LIVE_HINTS = {
 }
 
 
+# Human-reviewed operating copy for the CORE48-59 page-by-page audit.  The
+# write prompt names the exact communicative job and the free-talk question is
+# a genuine topic conversation: today's pattern may occur naturally, but is
+# never required.  The learner's ask-back is visible and the tutor gives a real
+# answer rather than modelling another pattern response.
+REVIEWED_WRITES_48_59 = {
+    48: (("Use “Have you ever ___?” to ask one experience question you genuinely want answered.", "「Have you ever ___?」を使って、本当に答えを知りたい経験の質問を一つしましょう。"), ("Use “I've never ___, but I'd like to” to name one new experience you would like to try.", "「I've never ___, but I'd like to」を使って、まだ経験はないけれど挑戦したいことを一つ話しましょう。")),
+    49: (("Use “I've already ___” to give one true update about something you finished.", "「I've already ___」を使って、本当に終えたことを一つ報告しましょう。"), ("Use “Have you ___ yet?” to ask whether one real task is complete.", "「Have you ___ yet?」を使って、実際の作業が一つ終わったか尋ねましょう。")),
+    50: (("Use “Have you been to ___?” to ask whether I have visited one place.", "「Have you been to ___?」を使って、私がある場所を訪れたことがあるか尋ねましょう。"), ("Use “I went there ___” to say when you visited a place; if you have not, say “I haven't been there.”", "「I went there ___」を使って訪れた時を話し、行ったことがなければ「I haven't been there.」と言いましょう。")),
+    51: (("Use “How long have you been in ___?” to ask how long I have lived in one place.", "「How long have you been in ___?」を使って、私がある場所にどのくらい住んでいるか尋ねましょう。"), ("Use “I've been here for ___” to say how long you have lived where you are now.", "「I've been here for ___」を使って、今の場所にどのくらい住んでいるか話しましょう。")),
+    52: (("Use “I've been ___ since ___” to say what has continued today and when it started.", "「I've been ___ since ___」を使って、今日続けていることと開始時点を話しましょう。"), ("Use “That's why I'm ___” to add one true effect, or say there is no effect to report.", "「That's why I'm ___」を使って本当の結果を一つ加え、なければ伝える結果はないと言いましょう。")),
+    53: (("Use “We've finished ___ of ___” to report real progress on one countable task.", "「We've finished ___ of ___」を使って、数えられる作業の本当の進捗を報告しましょう。"), ("Use “We still need to ___” to name one remaining task.", "「We still need to ___」を使って、まだ残っている作業を一つ伝えましょう。")),
+    54: (("Use “___ because ___” to explain one real changed plan and its reason.", "「___ because ___」を使って、実際に変わった予定と理由を説明しましょう。"), ("Use “___, so ___” to tell the same event with the reason first and result second.", "「___, so ___」を使って、同じ出来事を理由、結果の順で話しましょう。")),
+    55: (("Use “___ is the one who ___” to identify one real person by something they did.", "「___ is the one who ___」を使って、実在する人をその人がしたことで特定しましょう。"), ("Use “It's the thing that ___” to describe one object without naming it first.", "「It's the thing that ___」を使って、名前を先に言わずに物を一つ説明しましょう。")),
+    56: (("Use “I like ___, but ___” to give one real good point and limitation.", "「I like ___, but ___」を使って、本当によい点と問題点を一つずつ話しましょう。"), ("Use “Even though ___, ___” to give one surprising positive point despite a limitation.", "「Even though ___, ___」を使って、問題点があっても意外によい点を一つ話しましょう。")),
+    57: (("Use “If ___, I'll ___” to give one realistic condition and plan.", "「If ___, I'll ___」を使って、現実的な条件と予定を一つ話しましょう。"), ("Use “What will you do if ___?” to ask about one real backup plan.", "「What will you do if ___?」を使って、本当の予備案を一つ尋ねましょう。")),
+    58: (("Use “I'll ___ when ___” to say when you will contact someone.", "「I'll ___ when ___」を使って、いつ誰かに連絡するか話しましょう。"), ("Use “Unless ___, I'll ___” to name the condition that could change your plan.", "「Unless ___, I'll ___」を使って、予定が変わる条件を一つ伝えましょう。")),
+    59: (("Use “I went there to ___” to explain the real purpose of one trip.", "「I went there to ___」を使って、出かけた本当の目的を一つ説明しましょう。"), ("Use “The best way to ___ is to ___” to recommend one practical method.", "「The best way to ___ is to ___」を使って、実用的な方法を一つ勧めましょう。")),
+}
+
+
+REVIEWED_LIVE_48_59 = {
+    48: ("What's something new you'd like to try this year, and why?", "今年、新しく挑戦したいことは何ですか？なぜですか？", "What about you—what would you like to try?", "先生はどうですか？何に挑戦したいですか？"),
+    49: ("What's one small task you like finishing early, and why?", "早めに終えると気分がよい小さな作業は何ですか？なぜですか？", "What about you—which task do you like finishing early?", "先生はどうですか？どの作業を早めに終えたいですか？"),
+    50: ("Which place would you happily visit again, and why?", "もう一度喜んで行きたい場所はどこですか？なぜですか？", "What about you—which place would you visit again?", "先生はどうですか？どこをもう一度訪れたいですか？"),
+    51: ("What makes a place feel like home to you?", "どんなことがあると、その場所を自分の家のように感じますか？", "What about you—what makes a place feel like home?", "先生はどうですか？どんな場所なら家のように感じますか？"),
+    52: ("What kind of activity makes time pass quickly for you?", "どんなことをしていると、時間が早く過ぎますか？", "What about you—what makes time pass quickly?", "先生はどうですか？何をしていると時間が早く過ぎますか？"),
+    53: ("Do you prefer projects with a clear finish line or open-ended work? Why?", "終わりが明確な作業と、終わりが決まっていない作業のどちらが好きですか？なぜですか？", "What about you—which kind of project do you prefer?", "先生はどうですか？どちらの作業が好きですか？"),
+    54: ("When a plan changes unexpectedly, do you usually feel stressed or flexible?", "予定が突然変わったら、ストレスを感じますか？それとも柔軟に対応できますか？", "What about you—how do you react when plans change?", "先生はどうですか？予定が変わったらどう反応しますか？"),
+    55: ("Are you better at remembering people by their names, faces, or what they did?", "人を覚えるとき、名前・顔・その人がしたことのどれが一番覚えやすいですか？", "What about you—how do you remember people?", "先生はどうですか？人をどう覚えますか？"),
+    56: ("Which matters most when you choose a place: comfort, price, or convenience?", "場所を選ぶとき、快適さ・価格・便利さのどれを最も重視しますか？", "What about you—which matters most?", "先生はどうですか？どれを最も重視しますか？"),
+    57: ("Do you enjoy making backup plans, or do you prefer to decide in the moment?", "予備案を作るのが好きですか？それとも、その場で決めたいですか？", "What about you—do you usually make backup plans?", "先生はどうですか？普段、予備案を作りますか？"),
+    58: ("Do you prefer people to call, text, or email you when plans change?", "予定が変わったとき、電話・メッセージ・メールのどれで連絡してほしいですか？", "What about you—how do you prefer to be contacted?", "先生はどうですか？どの方法で連絡してほしいですか？"),
+    59: ("When you need to learn how to do something, who or what do you ask first?", "何かのやり方を知りたいとき、最初に誰や何に聞きますか？", "What about you—who or what do you ask first?", "先生はどうですか？最初に誰や何に聞きますか？"),
+}
+
+
+# Choice pages are useful only when the learner must make a real meaning or
+# form decision. These reviewed rows deliberately vary the correct alternative;
+# fixed-frame pages with no honest contrast are omitted in LESSONS instead.
+REVIEWED_CHOICES_48_59 = {
+    50: (
+        (
+            ("{t}今までの経験{/t}を聞きます。", "", "Have you been", "Did you go", " to Kyoto?"),
+            ("{t}去年の旅行{/t}を聞きます。", "", "Did you go", "Have you been", " to Canada last year?"),
+            ("{t}今までの経験{/t}を聞きます。", "", "Have you been", "Did you go", " to this café?"),
+            ("{t}金曜日の訪問{/t}を聞きます。", "", "Did you go", "Have you been", " to this museum on Friday?"),
+        ),
+        (
+            ("{t}去年{/t}そこへ行きました。", "Yes, I ", "went", "have been", " there last year."),
+            ("{t}今までに{/t}そこへ行ったことがあります。", "Yes, I ", "have been", "went", " there before."),
+            ("{t}金曜日{/t}そこへ行きました。", "Yes, I ", "went", "have been", " there on Friday."),
+            ("{t}これまでに2回{/t}そこへ行ったことがあります。", "Yes, I ", "have been", "went", " there twice so far."),
+        ),
+    ),
+    51: (
+        (
+            ("{t}東京に{/t}どのくらいいますか？", "How long have you been ", "in", "for", " Tokyo?"),
+            ("ここには{t}5年間{/t}いますか？", "Have you been here ", "for", "in", " five years?"),
+            ("{t}日本に{/t}どのくらいいますか？", "How long have you been ", "in", "for", " Japan?"),
+            ("ここには{t}2週間{/t}いますか？", "Have you been here ", "for", "in", " two weeks?"),
+        ),
+        SPECS[51]["choices"][1],
+    ),
+    54: (
+        (
+            ("家にいたのは{t}病気だったから{/t}です。", "I stayed home ", "because", "so", " I was sick."),
+            ("電車が遅れました。{t}だから{/t}上司に電話しました。", "My train was late, ", "so", "because", " I called my manager."),
+            ("タクシーを呼んだのは{t}雨だったから{/t}です。", "I called a taxi ", "because", "so", " it was raining."),
+            ("顧客が忙しかったです。{t}だから{/t}会議を変更しました。", "My client was busy, ", "so", "because", " we moved the meeting."),
+        ),
+        (
+            ("病気でした。{t}だから{/t}家にいました。", "I was sick, ", "so", "because", " I stayed home."),
+            ("上司に電話したのは{t}電車が遅れたから{/t}です。", "I called my manager ", "because", "so", " my train was late."),
+            ("雨でした。{t}だから{/t}カフェで会いました。", "It was raining, ", "so", "because", " we met at a café."),
+            ("会議を変更したのは{t}顧客が忙しかったから{/t}です。", "We moved the meeting ", "because", "so", " my client was busy."),
+        ),
+    ),
+    55: (
+        (
+            ("{t}電話をくれた人{/t}は彼女です。", "She's the one ", "who", "where", " called earlier."),
+            ("{t}初めて会ったカフェ{/t}はここです。", "This is the café ", "where", "who", " we first met."),
+            ("{t}部屋を予約した人{/t}は彼女です。", "She's the one ", "who", "where", " booked the room."),
+            ("{t}会議をした部屋{/t}はあそこです。", "That's the room ", "where", "who", " we held the meeting."),
+        ),
+        (
+            ("ドアを開ける{t}物{/t}です。", "It's the thing ", "that", "where", " opens the door."),
+            ("携帯を充電した{t}場所{/t}です。", "It's the place ", "where", "that", " I charged my phone."),
+            ("チケットを入れる{t}物{/t}です。", "It's the thing ", "that", "where", " holds the tickets."),
+            ("音楽を聞いた{t}場所{/t}です。", "It's the place ", "where", "that", " we heard the music."),
+        ),
+    ),
+    56: (
+        (
+            ("場所は好きです。{t}ただ{/t}、高いです。", "I like the place, ", "but", "because", " it's expensive."),
+            ("部屋が静か{t}なので{/t}、気に入っています。", "I like the room ", "because", "but", " it's quiet."),
+            ("カフェは好きです。{t}ただ{/t}、混んでいます。", "I like the café, ", "but", "because", " it's crowded."),
+            ("勤務時間が柔軟{t}なので{/t}、仕事が好きです。", "I like the job ", "because", "but", " the hours are flexible."),
+        ),
+        (
+            ("{t}小さいのに{/t}、快適です。", "", "Even though", "Because", " it's small, it's comfortable."),
+            ("{t}静かなので{/t}、快適です。", "", "Because", "Even though", " it's quiet, it's comfortable."),
+            ("{t}混んでいるのに{/t}、2階は静かです。", "", "Even though", "Because", " it's crowded, it's quiet upstairs."),
+            ("{t}信頼できるので{/t}、よく使います。", "", "Because", "Even though", " it's reliable, I use it often."),
+        ),
+    ),
+    58: (
+        SPECS[58]["choices"][0],
+        (
+            ("{t}雨が降らないかぎり{/t}、歩きます。", "", "Unless", "If", " it rains, I'll walk."),
+            ("{t}電車が遅れたら{/t}、タクシーに乗ります。", "", "If", "Unless", " the train's late, I'll take a taxi."),
+            ("{t}会議が長引かないかぎり{/t}、6時に電話します。", "", "Unless", "If", " the meeting runs late, I'll call at six."),
+            ("{t}土が乾いていたら{/t}、水をやります。", "", "If", "Unless", " the soil is dry, I'll water the plants."),
+        ),
+    ),
+}
+
+
+ROLE_JA = {
+    "Friend": "友人", "Visitor": "参加者", "Coworker": "同僚", "Organizer": "主催者",
+    "Neighbor": "近所の人", "Volunteer": "ボランティア", "Teammate": "チームメンバー",
+    "Roommate": "同居人",
+}
+
+
+for _number in range(48, 60):
+    SPECS[_number]["writes"] = REVIEWED_WRITES_48_59[_number]
+    _question, _question_ja, _ask_back, _ask_back_ja = REVIEWED_LIVE_48_59[_number]
+    LESSONS[_number]["prompt"] = (
+        "Let's talk about this topic. Answer my question, then ask me too.",
+        "この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。",
+    )
+    LIVE_SCENES[_number] = (
+        ("text", "other", "Tutor", _question, _question_ja),
+        ("input", "me", "Me", "Student's answer", "自分の答え"),
+        ("text", "me", "Me", _ask_back, _ask_back_ja),
+        ("input", "other", "Tutor", "Tutor's answer", "先生の答え"),
+    )
+    LIVE_HINTS[_number] = {}
+for _number, _choices in REVIEWED_CHOICES_48_59.items():
+    SPECS[_number]["choices"] = _choices
+
+# No honest two-way decision exists on these fixed-frame choice pages.
+LESSONS[59]["omit_choice"] = (2,)
+
+# Articles remain learner decisions; lexical hint chips never supply them.
+_core51_hints = list(TRANSLATE_HINTS[51])
+_core51_p2 = list(_core51_hints[1])
+_core51_p2[3] = "1日:day"
+_core51_hints[1] = tuple(_core51_p2)
+TRANSLATE_HINTS[51] = tuple(_core51_hints)
+VOCAB[51]["assumed"] = VOCAB[51]["assumed"].replace("a day|1日", "day|1日")
+
+
 TRANSFER_SCENES = {
     48: "pottery studio orientation",
     49: "charity dinner preparation",
@@ -1125,18 +1283,23 @@ def translate_page(number, part, pattern):
             f'data-answer="{core.esc(core.strip_marks(english))}" autocomplete="off" spellcheck="false">'
             '</span>' + hint_html((hints,)) + '</div></div>'
         )
-    return core.section(
+    page = core.section(
         f"p{part}-translate",
         "Say it in English",
         "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Use the vocabulary menu, then say the whole sentence.</span>'
-        '<span class="ja">単語メニューを使って、文をまるごと英語で言いましょう。</span></p>'
+        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span>'
+        '<span class="ja">日本語を見て、英語で言ってみましょう。</span></p>'
+        '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
         + "".join(blocks),
+    )
+    return page.replace(
+        f'data-page-id="p{part}-translate"',
+        f'data-page-id="p{part}-translate" data-scaffolding-contract="target-v2" data-support-stage="supported"',
+        1,
     )
 
 
 def write_page(number, part, pattern):
-    model = core.strip_marks(pattern[0][0])
     prompt_en, prompt_ja = SPECS[number]["writes"][part - 1]
     return core.section(
         f"p{part}-write",
@@ -1144,11 +1307,8 @@ def write_page(number, part, pattern):
         "自分の文にしよう",
         f'<p class="section-subtitle"><span class="ko">{core.esc(prompt_en)}</span>'
         f'<span class="ja">{core.esc(prompt_ja)}</span></p>'
-        '<div class="task-block"><div class="answer-box tall">'
-        f'<span class="answer-label">{core.esc(model)}<span class="task">自分の情報に変えて</span></span>'
-        '<span class="answer-space as-input">'
-        f'<textarea class="free-input" data-sync-id="p{part}-write" rows="2" spellcheck="false" maxlength="2000"></textarea>'
-        '</span>' + hint_html(OPEN_MENUS[number][part - 1]) + '</div></div>',
+        '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
+        + core.feedback_compose(f"p{part}-write", hint_html(OPEN_MENUS[number][part - 1])),
     )
 
 
@@ -1164,7 +1324,8 @@ def live_page(number):
                 f'<span class="translation">{core.esc(japanese)}</span></div></div>'
             )
         else:
-            hints = hint_html(LIVE_HINTS[number].get(index, ())) if side == "me" else ""
+            raw_hints = LIVE_HINTS[number].get(index, ()) if side == "me" else ()
+            hints = hint_html(raw_hints) if raw_hints else ""
             rendered.append(
                 f'<div class="turn {side}">{avatar}<div class="{bubble}"><div class="answer-box tall">'
                 f'<span class="answer-label">{core.esc(english)}<span class="task">{core.esc(japanese)}</span></span>'
@@ -1178,6 +1339,7 @@ def live_page(number):
         "自分の答え",
         f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span>'
         f'<span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p>'
+        '<div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div>'
         '<div class="dialogue">' + "".join(rendered) + "</div>",
     )
 
@@ -1206,7 +1368,26 @@ def customize_pages(number, data, pages):
             result.append(support_page(number))
         if pid == "part3-intro" and number in SPIRAL_MARKERS:
             result.append(spiral_page(number))
-        result.append(replacements.get(pid, page))
+        rendered = replacements.get(pid, page)
+        if pid in {"p3-model", "p3-complete", "in-the-wild"}:
+            variant = "wild" if pid == "in-the-wild" else "model"
+            role = DIALOGUES[number][variant][0]
+            role_ja = ROLE_JA[role]
+            rendered = rendered.replace("Please read the Me lines aloud.", "Please read your lines aloud.")
+            rendered = rendered.replace("Say each complete Me line", "Say each complete line")
+            rendered = rendered.replace(
+                "私は相手役をします。Me のセリフを声に出して読んでください。",
+                f"私は{role_ja}です。自分のセリフを声に出して読んでください。",
+            )
+            rendered = rendered.replace(
+                "私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+                f"私は{role_ja}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+            )
+            rendered = rendered.replace(
+                "私は相手役をします。空欄に入る言葉も含めて、Me のセリフをまるごと言ってください。",
+                f"私は{role_ja}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+            )
+        result.append(rendered)
     return result
 
 
@@ -1255,6 +1436,7 @@ def build(number, data):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--lesson", type=int, action="append", choices=sorted(LESSONS))
     args = parser.parse_args()
     expected = set(range(48, 60))
     for label, values in (
@@ -1266,14 +1448,17 @@ def main():
     ):
         if set(values) != expected:
             raise SystemExit(f"{label} do not exactly cover CORE-48--59")
+    selected = set(args.lesson or LESSONS)
     for number, data in LESSONS.items():
+        if number not in selected:
+            continue
         out, text = build(number, data)
         if out.exists() and not args.refresh:
             raise SystemExit(f"refusing to overwrite {out.relative_to(ROOT)}")
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(text, encoding="utf-8")
         print(f"wrote {out.relative_to(ROOT)}")
-    print(f"{len(LESSONS)} Core decks generated")
+    print(f"{len(selected)} Core decks generated")
     return 0
 
 

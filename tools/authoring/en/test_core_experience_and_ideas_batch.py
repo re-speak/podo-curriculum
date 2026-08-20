@@ -185,12 +185,7 @@ class CoreExperienceAndIdeasBatchTests(unittest.TestCase):
                 self.assertEqual(len(batch.TRANSLATE_HINTS[number][part - 1]), 4)
                 self.assertTrue(all(batch.TRANSLATE_HINTS[number][part - 1]))
                 self.assertTrue(batch.OPEN_MENUS[number][part - 1])
-            learner_inputs = {
-                index
-                for index, (kind, side, *_rest) in enumerate(batch.LIVE_SCENES[number])
-                if kind == "input" and side == "me"
-            }
-            self.assertEqual(set(batch.LIVE_HINTS[number]), learner_inputs, number)
+            self.assertEqual(batch.LIVE_HINTS[number], {}, number)
 
             _, html = batch.build(number, data)
             pages = dict(check_deck.pages(html))
@@ -201,39 +196,60 @@ class CoreExperienceAndIdeasBatchTests(unittest.TestCase):
                 self.assertGreaterEqual(
                     pages[f"p{part}-translate"].count('class="hint"'), 4
                 )
+                self.assertIn(
+                    'data-scaffolding-contract="target-v2"',
+                    pages[f"p{part}-translate"],
+                )
+                self.assertIn(
+                    'data-support-stage="supported"',
+                    pages[f"p{part}-translate"],
+                )
                 self.assertIn('class="hint"', pages[f"p{part}-write"])
-            self.assertGreaterEqual(pages["p3-freetalk"].count('class="hint"'), 1)
+                expected_targets = sum(row[0].count("{t}") for row in data[f"p{part}"])
+                self.assertEqual(
+                    pages[f"p{part}-fill"].count('class="slot-input"'),
+                    expected_targets,
+                    (number, part),
+                )
+            self.assertNotIn('class="hint-chip"', pages["p3-freetalk"])
+        self.assertNotIn("1日:a day", str(batch.TRANSLATE_HINTS))
+        self.assertIn("1日:day", str(batch.TRANSLATE_HINTS[51]))
 
     def test_live_pages_follow_canonical_ask_back_sequence(self):
         expected_roles = (
             ("text", "other", "Tutor"),
             ("input", "me", "Me"),
-            ("input", "me", "Me"),
+            ("text", "me", "Me"),
             ("input", "other", "Tutor"),
         )
-        generic_japanese = {"先生にも聞く", "先生の経験を聞く", "先生の本当の答え"}
         for number, scene in batch.LIVE_SCENES.items():
             self.assertEqual(tuple(turn[:3] for turn in scene), expected_roles, number)
-            self.assertNotIn("How long have you been here?", scene[0][3], number)
-            self.assertNotIn("How long have you been here?", scene[2][3], number)
-            for turn in scene:
-                self.assertNotIn(turn[4], generic_japanese, (number, turn))
+            self.assertTrue(scene[0][3].endswith("?"), (number, scene[0][3]))
+            self.assertTrue(scene[2][3].endswith("?"), (number, scene[2][3]))
+            self.assertTrue(scene[2][3].casefold().startswith("what about you"), number)
+            self.assertEqual(scene[1][3:], ("Student's answer", "自分の答え"), number)
+            self.assertEqual(scene[3][3:], ("Tutor's answer", "先生の答え"), number)
             _, html = batch.build(number, batch.LESSONS[number])
             page = dict(check_deck.pages(html))["p3-freetalk"]
-            for index in (1, 2, 3):
+            for index in (1, 3):
                 self.assertIn(f'data-sync-id="live-{index}"', page, number)
-            self.assertIn("Tutor&#x27;s answer:", page, number)
+            self.assertNotIn('data-sync-id="live-2"', page, number)
+            self.assertIn("Tutor&#x27;s answer", page, number)
             self.assertEqual(page.count('class="turn '), 4, number)
+            self.assertIn(shared_core.esc(scene[0][3]), page, number)
+            self.assertIn(shared_core.esc(scene[2][3]), page, number)
 
-    def test_every_live_deck_has_an_explicit_honest_answer_path(self):
+    def test_every_live_deck_is_real_topic_talk_not_pattern_production(self):
         for number, scene in batch.LIVE_SCENES.items():
-            learner_answer = scene[1]
-            self.assertEqual(learner_answer[:3], ("input", "me", "Me"), number)
-            self.assertIn(" / ", learner_answer[3], number)
-            self.assertIn("／", learner_answer[4], number)
-            primary, alternative = learner_answer[3].split(" / ", 1)
-            self.assertGreaterEqual(len(primary.split()), 2, number)
-            self.assertGreaterEqual(len(alternative.split()), 2, number)
+            question = scene[0][3]
+            ask_back = scene[2][3]
+            self.assertNotRegex(
+                question.casefold(),
+                r"^(use|say|tell|make|give|ask|describe|report|imagine)\b",
+            )
+            self.assertNotIn("___", question + ask_back, number)
+            self.assertNotIn(" / ", question + ask_back, number)
+            self.assertGreaterEqual(len(question.split()), 7, number)
 
     def test_exact_brief_models_and_required_support_are_learner_visible(self):
         for number, models in batch.BRIEF_PRODUCTION_MODELS.items():
@@ -256,13 +272,15 @@ class CoreExperienceAndIdeasBatchTests(unittest.TestCase):
                 self.assertIn(term.casefold(), receptive, (number, term))
                 self.assertIn(term.casefold(), visible, (number, term))
 
-    def test_core56_live_scaffold_covers_all_contrast_slots_without_job_drift(self):
-        answer = batch.LIVE_SCENES[56][1][3]
-        self.assertEqual(answer.count("___"), 4)
-        hints = " ".join(batch.LIVE_HINTS[56][1]).casefold()
-        self.assertNotIn("job", hints)
-        for required in ("café", "room", "expensive", "small", "convenient", "comfortable"):
-            self.assertIn(required, hints)
+    def test_write_prompts_name_the_exact_pattern_and_communicative_job(self):
+        for number, spec in batch.SPECS.items():
+            _, html = batch.build(number, batch.LESSONS[number])
+            pages = dict(check_deck.pages(html))
+            for part, (english, japanese) in enumerate(spec["writes"], 1):
+                self.assertTrue(english.startswith("Use “"), (number, part, english))
+                self.assertIn("を使って", japanese, (number, part, japanese))
+                self.assertIn(shared_core.esc(english), pages[f"p{part}-write"])
+                self.assertIn(shared_core.esc(japanese), pages[f"p{part}-write"])
 
     def test_required_spiral_retrievals_are_visible_and_controlled(self):
         self.assertEqual(
@@ -305,6 +323,22 @@ class CoreExperienceAndIdeasBatchTests(unittest.TestCase):
                 1,
                 number,
             )
+            errors, warnings = check_deck.check(path)
+            self.assertEqual(errors, [], (number, errors))
+            self.assertEqual(warnings, [], (number, warnings))
+
+    def test_roleplay_actions_and_roles_are_explicit_and_bilingual(self):
+        for number, data in batch.LESSONS.items():
+            _, html = batch.build(number, data)
+            pages = dict(check_deck.pages(html))
+            for page_id, variant in (("p3-model", "model"), ("p3-complete", "model"), ("in-the-wild", "wild")):
+                role = batch.DIALOGUES[number][variant][0]
+                role_ja = batch.ROLE_JA[role]
+                page = pages[page_id]
+                self.assertIn(role.casefold(), check_deck.plain_text(page).casefold())
+                self.assertIn(role_ja, page, (number, page_id))
+                self.assertNotIn("相手役", page, (number, page_id))
+                self.assertNotIn("Me のセリフ", page, (number, page_id))
 
     def test_model_completion_and_transfer_are_exact_six_turn_conversations(self):
         for number, data in batch.LESSONS.items():
