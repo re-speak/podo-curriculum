@@ -117,6 +117,36 @@ class VocabularyTests(unittest.TestCase):
             with self.assertRaisesRegex(vocabulary.VocabularyError, "also declared new"):
                 build_running_lexicon.collect(paths)
 
+    def test_same_surface_form_with_a_different_sense_has_its_own_owner(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / "tracks/1-core-patterns") as tmp:
+            base = pathlib.Path(tmp)
+            paths = []
+            for number, review_id, japanese in (
+                (1, "CORE-1", "開いている"),
+                (2, "CORE-2", "開ける"),
+            ):
+                path = base / f"core-topic-{number}" / f"lessons/{number:02d}-topic/lesson.html"
+                path.parent.mkdir(parents=True)
+                path.write_text(deck_metadata(review_id, f"open|{japanese}"), encoding="utf-8")
+                paths.append(path)
+            records = build_running_lexicon.collect(paths)
+            self.assertEqual(
+                [(item["review_id"], item["categories"]["new"][0]["japanese"]) for item in records],
+                [("CORE-1", "開いている"), ("CORE-2", "開ける")],
+            )
+
+    def test_same_surface_form_and_same_sense_still_has_one_owner(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / "tracks/1-core-patterns") as tmp:
+            base = pathlib.Path(tmp)
+            paths = []
+            for number, review_id in ((1, "CORE-1"), (2, "CORE-2")):
+                path = base / f"core-topic-{number}" / f"lessons/{number:02d}-topic/lesson.html"
+                path.parent.mkdir(parents=True)
+                path.write_text(deck_metadata(review_id, "open|開ける"), encoding="utf-8")
+                paths.append(path)
+            with self.assertRaisesRegex(vocabulary.VocabularyError, "also declared new"):
+                build_running_lexicon.collect(paths)
+
 
 if __name__ == "__main__":
     unittest.main()

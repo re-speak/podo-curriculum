@@ -274,6 +274,7 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
         self.assertIn(("came across as", "〜という印象を与えた"), entries(112, "new"))
         self.assertIn(("cold", "冷たい"), entries(112, "new"))
         self.assertIn(("send over", "送る"), entries(108, "new"))
+        self.assertFalse({"could", "would"} & self.words(108), batch.VOCAB[108])
         self.assertNotIn("送ってよこす", str((batch.VOCAB[108], batch.TRANSLATE_HINTS[108], batch.OPEN_MENUS[108])))
 
     def test_core92_to_102_map_is_visible_and_has_no_false_citations(self):

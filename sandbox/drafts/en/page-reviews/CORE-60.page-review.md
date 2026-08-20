@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/60-would-you-mind-opening-the-window/lesson.html`
-- SHA-256: `8dc6264778831a951bac3474bae73375c8b54c27b0ae10a65deb1feb7376f01e`
+- SHA-256: `018fe8da98b21a0037e59ea826cf6a19f3a3d950307245c411f0309b44272473`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

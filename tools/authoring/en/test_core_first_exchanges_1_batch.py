@@ -200,6 +200,34 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
                 number,
             )
 
+    def test_transfer_intro_names_the_explicit_role_in_both_languages(self):
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            model_role_en = batch.DIALOGUES[number]["model"][0].lower()
+            for page_id in ("p3-model", "p3-complete"):
+                self.assertIn(f"the {model_role_en}.", pages[page_id], (number, page_id))
+                self.assertIn(
+                    f'私は{batch.MODEL_ROLE_JA[number]}役をします。',
+                    pages[page_id],
+                    (number, page_id),
+                )
+                if batch.MODEL_ROLE_JA[number] != batch.TRANSFER_ROLE_JA[number]:
+                    self.assertNotIn(
+                        f'私は{batch.TRANSFER_ROLE_JA[number]}役をします。',
+                        pages[page_id],
+                        (number, page_id),
+                    )
+
+            page = pages["in-the-wild"]
+            role_en = batch.DIALOGUES[number]["wild"][0].lower()
+            self.assertIn(f"I’ll be the {role_en}.", page, number)
+            self.assertIn(f'私は{batch.TRANSFER_ROLE_JA[number]}役をします。', page, number)
+            if batch.MODEL_ROLE_JA[number] != batch.TRANSFER_ROLE_JA[number]:
+                self.assertNotIn(f'私は{batch.MODEL_ROLE_JA[number]}役をします。', page, number)
+            self.assertNotIn("同じ二つのパターンを別の会話で使いましょう。", page, number)
+            self.assertRegex(page, r"Say each complete Me line, including the missing words\.")
+
     def test_model_and_completion_are_exact_six_turn_replays(self):
         for number, data in batch.LESSONS.items():
             _, html = batch.build(number, data)

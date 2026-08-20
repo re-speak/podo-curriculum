@@ -1041,7 +1041,7 @@ def canonical_pages(number, d):
         "wild_script",
         (
             f'I’ll be the {DIALOGUES[number]["wild"][0].lower()}. Say each complete Me line, including the missing words.',
-            f'私は{spec.get("role_ja", "相手")}役をします。空欄に入る言葉も含めて、Me のセリフをまるごと言ってください。',
+            f'私は{spec.get("transfer_role_ja", spec.get("role_ja", "相手"))}役をします。空欄に入る言葉も含めて、Me のセリフをまるごと言ってください。',
         ),
     )
 

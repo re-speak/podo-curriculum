@@ -42,7 +42,12 @@ def _items(entries: list[dict]) -> str:
 
 def collect(paths: list[pathlib.Path]) -> list[dict]:
     records = []
-    owners: dict[tuple[str, str], tuple[str, pathlib.Path]] = {}
+    # Ownership is sense-specific.  The same surface form can be newly taught
+    # again with a genuinely different Japanese meaning (for example,
+    # ``open`` = 開いている vs 開ける).  Collapsing those senses would
+    # create a false recycled dependency; repeating the same bilingual sense
+    # is still an authoring error.
+    owners: dict[tuple[str, str, str], tuple[str, pathlib.Path]] = {}
     for path in paths:
         text = path.read_text(encoding="utf-8")
         data = vocabulary.parse(text, source=path)
@@ -61,7 +66,11 @@ def collect(paths: list[pathlib.Path]) -> list[dict]:
             **data,
         }
         for entry in data["categories"]["new"]:
-            key = (record["track"], entry["english"].casefold())
+            key = (
+                record["track"],
+                entry["english"].casefold(),
+                entry["japanese"].casefold(),
+            )
             if key in owners:
                 owner_review_id, owner_path = owners[key]
                 # Accessible and full Freetalking decks are two language-load

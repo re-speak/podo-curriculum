@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/108-would-you-be-able-to/lesson.html`
-- SHA-256: `13872d690cdf34157f10f0194233240676fa1fa4357c025f2d591440e1441896`
+- SHA-256: `e2b4b5c8f134fc74e1412950574fc314c5b235f4d0430921b52e4100c15c248d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

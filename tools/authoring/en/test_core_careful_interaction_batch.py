@@ -23,7 +23,7 @@ LEARNER_FUNCTION_WORDS = {
     "a", "an", "the", "i", "i'm", "i'd", "i'll", "my", "you", "your", "you're",
     "he", "he'd", "he'll", "she", "she'd", "it", "it's", "we", "we'll", "they",
     "they'd", "me", "am", "is", "are", "be", "been", "was", "were", "do", "does",
-    "did", "have", "has", "had", "will", "can", "can't", "should", "to", "of", "in",
+    "did", "have", "has", "had", "will", "would", "can", "can't", "could", "should", "to", "of", "in",
     "on", "at", "for", "from", "with",
     "and", "but", "or", "not", "no", "yes", "this", "that", "what", "how", "why",
     "where", "when", "if", "after", "before", "now", "more", "just", "here", "there", "there's",
@@ -214,7 +214,9 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
         self.assertIn("anywhere|どこでも", batch.VOCAB[66]["new"])
         self.assertIn("open|開ける", batch.VOCAB[60]["new"])
         self.assertIn("open|開ける|CORE-60", batch.VOCAB[61]["recycled"])
-        self.assertIn("could|〜できたら|CORE-66", batch.VOCAB[67]["recycled"])
+        for number in (60, 62, 66, 67):
+            declared = " ".join(batch.VOCAB[number].values()).casefold()
+            self.assertNotRegex(declared, r"(?:^|; )(?:could|would)\|", number)
         self.assertTrue(any("anywhere" in hint for hint in batch.TRANSLATE_HINTS[66][1]))
         self.assertTrue(any("anywhere" in hint for hint in batch.OPEN_MENUS[66][1]))
 

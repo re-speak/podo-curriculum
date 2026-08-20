@@ -468,6 +468,40 @@ _simple_spec(11,
 )
 
 
+# The transfer script names the tutor's role in both languages.  Keep this
+# mapping beside the explicit transfer exchanges so a renderer default cannot
+# silently turn the Japanese action into the generic 「相手役」.
+MODEL_ROLE_JA = {
+    1: "クラスメート",
+    2: "クラスメート",
+    3: "クラスメート",
+    4: "クラスメート",
+    5: "同僚",
+    6: "クラスメート",
+    7: "地元の人",
+    8: "友人",
+    9: "店員",
+    10: "友人",
+    11: "旅行仲間",
+}
+TRANSFER_ROLE_JA = {
+    1: "近所の人",
+    2: "ゲスト",
+    3: "近所の人",
+    4: "主催者",
+    5: "ゲスト",
+    6: "ゲスト",
+    7: "旅行者",
+    8: "友人",
+    9: "店員",
+    10: "旅行者",
+    11: "旅行仲間",
+}
+for _number in LESSONS:
+    SPECS[_number]["role_ja"] = MODEL_ROLE_JA[_number]
+    SPECS[_number]["transfer_role_ja"] = TRANSFER_ROLE_JA[_number]
+
+
 # Exact six-turn exchanges.  Model and completion are rendered from the same
 # tuple, so partner turns and turn order cannot drift.
 DIALOGUES = {

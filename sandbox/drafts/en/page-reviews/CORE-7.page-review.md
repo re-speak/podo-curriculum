@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-1/lessons/07-theres-a-cafe-near-here/lesson.html`
-- SHA-256: `5e8eb73035b2d41f13b30fb2273ff7f951b2fe557725a3b5206dadde7c03be57`
+- SHA-256: `4b8e752c546cadcd13812290ecd646f5bd67f2b9b7b331bd4423202772c2fd59`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -351,9 +351,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 21. `p3-model`
 
-- Learner action: Take the learner role and read only those turns while the tutor plays the partner: Read the conversation (会話を読もう): I'll be the local. Please read the Me lines aloud. 私は相手役をします。Me のセリフを声に出して読んでください。
-- Tutor action: Take the named counterpart role and respond at the indicated turns; follow: Read the conversation (会話を読もう): I'll be the local. Please read the Me lines aloud. 私は相手役をします。Me のセリフを声に出して読んでください。
-- Visible target or prompt: Read the conversation (会話を読もう): Highlighted target evidence: There's a | カフェがあります | It's next to | 銀行の隣です. Visible instruction: I'll be the local. Please read the Me lines aloud. 私は相手役をします。Me のセリフを声に出して読んでください。
+- Learner action: Take the learner role and read only those turns while the tutor plays the partner: Read the conversation (会話を読もう): I'll be the local. Please read the Me lines aloud. 私は地元の人役をします。Me のセリフを声に出して読んでください。
+- Tutor action: Take the named counterpart role and respond at the indicated turns; follow: Read the conversation (会話を読もう): I'll be the local. Please read the Me lines aloud. 私は地元の人役をします。Me のセリフを声に出して読んでください。
+- Visible target or prompt: Read the conversation (会話を読もう): Highlighted target evidence: There's a | カフェがあります | It's next to | 銀行の隣です. Visible instruction: I'll be the local. Please read the Me lines aloud. 私は地元の人役をします。Me のセリフを声に出して読んでください。
 - Learning target: Guided role-play control of the exact lesson language: There's a, カフェがあります, It's next to, 銀行の隣です
 - Pedagogical value: Turn ownership and a resolved exchange put both targets into communicative sequence. Focus: There's a, カフェがあります, It's next to, 銀行の隣です
 - Failure diagnoses: Failure reveals turn or target control in context; tutor modelling the learner's lines first would erase that evidence. Checked focus: There's a, カフェがあります, It's next to, 銀行の隣です
@@ -362,15 +362,15 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.
 - Component consistency: The guided role-play uses the shared component vocabulary with one clear job: dialogue turns; no competing activity is embedded.
 - Extracted evidence: `{"targetHighlights": ["There's a", "カフェがあります", "It's next to", "銀行の隣です"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantically re-audited after the model role was made explicit and bilingual-aligned. Viewport evidence is pending because the visible role label changed.
 
 ## 22. `p3-complete`
 
-- Learner action: Complete the learner turns aloud with the target language while the tutor keeps the role-play moving: Complete the conversation (会話を完成しよう): I’ll be the local. Say each complete line, including the missing words. 私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。
-- Tutor action: Take the named counterpart role and respond at the indicated turns; follow: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Complete the conversation (会話を完成しよう): Exact answers: There's a | It's next to
+- Learner action: Complete the learner turns aloud with the target language while the tutor keeps the role-play moving: Complete the conversation (会話を完成しよう): I’ll be the local. Say each complete line, including the missing words. 私は地元の人役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。
+- Tutor action: Play the local and type only the missing words exactly as the learner says them.
+- Visible target or prompt: Complete the conversation (会話を完成しよう): Exact answers: There's a | It's next to. Visible instruction: I’ll be the local. Say each complete line, including the missing words. 私は地元の人役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。
 - Learning target: Supported role-play completion control of the exact lesson language: There's a, It's next to
 - Pedagogical value: Missing target language is retrieved inside a meaningful exchange, not in isolation. Focus: There's a, It's next to
 - Failure diagnoses: Failure reveals whether the target can be retrieved at the correct conversational turn. Checked focus: There's a, It's next to
@@ -379,9 +379,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.
 - Component consistency: The supported role-play completion uses the shared component vocabulary with one clear job: tutor-only note, dialogue turns; no competing activity is embedded.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["There's a", "It's next to"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantically re-audited after the model role was made explicit and bilingual-aligned. Viewport evidence is pending because the visible role label changed.
 
 ## 23. `p3-freetalk`
 
@@ -402,20 +402,20 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 24. `in-the-wild`
 
-- Learner action: Respond naturally inside the new real-world situation rather than reciting isolated forms: A new situation (別の場面): Use the same two patterns in a different conversation. 同じ二つのパターンを別の会話で使いましょう。
-- Tutor action: Take the named counterpart role and respond at the indicated turns; follow: A new situation (別の場面): Use the same two patterns in a different conversation. 同じ二つのパターンを別の会話で使いましょう。
-- Visible target or prompt: A new situation (別の場面): Exact answers: There's a | It's next to
+- Learner action: Play Me and say each complete learner line, including the missing words; the tutor plays the traveler.
+- Tutor action: Play the traveler; read only the counterpart lines and pause for every Me line.
+- Visible target or prompt: A new situation (別の場面): I’ll be the traveler. Say each complete Me line, including the missing words. 私は旅行者役をします。空欄に入る言葉も含めて、Me のセリフをまるごと言ってください。 Exact answers: There's a | It's next to
 - Learning target: Situational transfer control of the exact lesson language: There's a, It's next to
 - Pedagogical value: The changed situation tests whether the learner can use the language beyond the practiced script. Focus: There's a, It's next to
 - Failure diagnoses: Failure reveals whether the learner can transfer the language when the details and partner response change. Checked focus: There's a, It's next to
-- Non-target support: The bilingual prompt and visible pattern frame support the task without prescribing the learner's personal content: A new situation (別の場面): Use the same two patterns in a different conversation. 同じ二つのパターンを別の会話で使いましょう。
+- Non-target support: The bilingual prompt names both roles and the visible dialogue supplies the non-target context without giving away the missing target language.
 - Article treatment: The known landmark keeps the visible article the; the learner's location target is next to, not an article guess.
 - Choice/distractor quality: No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.
 - Component consistency: The situational transfer uses the shared component vocabulary with one clear job: dialogue turns; no competing activity is embedded.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["There's a", "It's next to"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantically re-audited after the transfer instruction was made role-specific and bilingual-aligned. Viewport evidence is pending because the visible script changed.
 
 ## 25. `native-tip`
 
