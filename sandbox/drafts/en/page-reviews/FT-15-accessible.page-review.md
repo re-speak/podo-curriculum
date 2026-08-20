@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/15-what-you-spend-the-most-money-on/lesson.html`
-- SHA-256: `a6a9eeb6c9b27090409d8ee9fbdd0408675925885ed0fd83fced5926768fc040`
+- SHA-256: `f1582f6589dd6ad9ce569a027d29e7669c26bc2889e42296d7f6ce1a7ea0358c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

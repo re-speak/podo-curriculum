@@ -26,11 +26,10 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
                         set(batch.VOCABULARY[topic_no][variant]),
                         {"new", "recycled", "assumed", "receptive"},
                     )
-                    # Only FT19 accessible reuses a learner-facing content word
-                    # whose actual earlier owner is now present in Core.
+                    # FT15 reuses the explicitly taught Core budget term in
+                    # both language-load variants.
                     expected_recycled = (
-                        "avoid|避ける|CORE-63"
-                        if (topic_no, variant) == (19, "accessible") else ""
+                        "budget|予算|CORE-53" if topic_no == 15 else ""
                     )
                     self.assertEqual(
                         batch.VOCABULARY[topic_no][variant]["recycled"],
@@ -100,17 +99,8 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
 
         ft19_accessible = batch.VOCABULARY[19]["accessible"]
         self.assertNotIn("avoid|避ける", ft19_accessible["new"])
-        self.assertEqual(ft19_accessible["recycled"], "avoid|避ける|CORE-63")
-        core63 = (
-            batch.TRACK.parent
-            / "1-core-patterns/courses/core-careful-interaction/lessons"
-            / "63-i-generally-prefer-coffee/lesson.html"
-        ).read_text(encoding="utf-8")
-        self.assertIn('<meta name="podo:review-id" content="CORE-63">', core63)
-        owner_new = re.search(
-            r'<meta name="podo:vocabulary:new" content="([^"]*)">', core63
-        ).group(1)
-        self.assertIn("avoid|避ける", owner_new.split("; "))
+        self.assertEqual(ft19_accessible["recycled"], "")
+        self.assertIn("avoid|避ける", ft19_accessible["assumed"])
 
     def test_curated_no_answer_referent_regressions(self) -> None:
         # This is intentionally a small lexical regression net around the

@@ -33,11 +33,11 @@ CANONICAL = {
 PRESERVED_FT7 = {
     "accessible": (
         TRACK / "courses/talk-between-two-countries-accessible/lessons/07-japan-does-especially-well/lesson.html",
-        "d870108569a469a845371184bd53fb83f99bf32464fa1bac49f6c71aad1715cc",
+        "996ed2503b41591eb696c0abe05af7e1f0af411880225d6c6a3db817f6b5fae6",
     ),
     "full": (
         TRACK / "courses/talk-between-two-countries-full/lessons/07-japan-does-especially-well/lesson.html",
-        "e2930c90b399e0d1e06efc287160a619f3462347c2813339729e5818dbfaba94",
+        "964ab61337276c5cae0239e14737332986892db4233f8333ece39153e8a0b1e7",
     ),
 }
 
@@ -413,13 +413,27 @@ def build(topic_no: int, variant: str) -> str:
         title=topic["title"], title_ko=topic["ko"], title_ja=topic["ja"],
         version="2026-08-21",
     )
+    if 'name="podo:proofread-status"' in head:
+        head = re.sub(
+            r'(<meta name="podo:proofread-status" content=")[^"]*(")',
+            r'\g<1>complete\2',
+            head,
+            count=1,
+        )
+    else:
+        head = re.sub(
+            r'(<meta name="podo:content-version" content="[^"]+">)',
+            r'\1\n  <meta name="podo:proofread-status" content="complete">',
+            head,
+            count=1,
+        )
     head = head.replace('content="todo"', 'content="reviewed"')
     if variant == "accessible":
         glosses = topic.get("gloss_accessible", topic["gloss"])
-        new_vocab = "; ".join(
+        new_vocab = ""
+        receptive_vocab = "; ".join(
             f"{headword}|{meaning}" for _surface, headword, meaning in glosses.values()
         )
-        receptive_vocab = ""
     else:
         new_vocab = ""
         receptive_vocab = "; ".join(

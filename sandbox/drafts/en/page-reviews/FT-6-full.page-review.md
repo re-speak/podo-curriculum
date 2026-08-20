@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/06-a-word-that-doesnt-translate-neatly/lesson.html`
-- SHA-256: `d589ecd7dc5de4fcbc980de6b6dc37f7ac7f297268d5b2a980796f231777247e`
+- SHA-256: `99a8bb430cf1131d6a8438f38ea833326723a4bec4b4c7f363a0d1a525c04f86`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

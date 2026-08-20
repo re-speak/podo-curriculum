@@ -31,11 +31,11 @@ CANONICAL = {
 PRESERVED_FT9 = {
     "accessible": (
         TRACK / "courses/talk-me-lately-accessible/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "be95ac07dc98764ef949cfc809485dd3bbaae801af6e81894041be491677e98d",
+        "8187410ba1843cf99533683e26bc86185b7a8842341c2bb1350fec5c5b185183",
     ),
     "full": (
         TRACK / "courses/talk-me-lately-full/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "79d9ee21023f302853b5946a7ea3ffaeb5b79bc26e75752e858ee64ffa1d8f78",
+        "5d82b398f0253e8298fb10bb36361ab6b5cd63e74b26f10a2233157f29cf3108",
     ),
 }
 
@@ -485,12 +485,14 @@ VOCABULARY = {
     },
     15: {
         "accessible": vocab(
-            new="cost per use|一回あたりの費用; budget|予算",
+            new="cost per use|一回あたりの費用",
+            recycled="budget|予算|CORE-53",
             assumed="money|お金; spend|使う; price|値段; hobby|趣味; quality|品質; income|収入; value|価値; rent|家賃; payment|支払い; monthly|毎月",
             receptive="basic cost|基本的な費用; meaningful|意味のある",
         ),
         "full": vocab(
-            new="cost per use|一回あたりの費用; budget|予算",
+            new="cost per use|一回あたりの費用",
+            recycled="budget|予算|CORE-53",
             assumed="money|お金; spend|使う; price|値段; hobby|趣味; quality|品質; income|収入; value|価値; rent|家賃; payment|支払い; category|分野; responsibility|責任",
             receptive="discretionary|自由に使える; recurring|繰り返す; durability|耐久性; sustainable|無理なく続けられる; replacement|買い替え; economical|経済的な; significance|重要性; irrational|不合理な; accumulate|積み重なる",
         ),
@@ -521,21 +523,20 @@ VOCABULARY = {
     },
     18: {
         "accessible": vocab(
-            new="on repeat|繰り返し; overplay|聴きすぎる",
+            new="overplay|聴きすぎる",
             assumed="song|曲; music|音楽; mood|気分; playlist|プレイリスト; year|年; detail|細部; sound|音; artist|アーティスト; memory|思い出",
-            receptive="emotional effect|感情への効果; familiar|なじみのある",
+            receptive="emotional effect|感情への効果; familiar|なじみのある; on repeat|繰り返し",
         ),
         "full": vocab(
-            new="on repeat|繰り返し; overplay|聴きすぎる",
+            new="overplay|聴きすぎる",
             assumed="song|曲; music|音楽; lyrics|歌詞; mood|気分; playlist|プレイリスト; year|年; detail|細部; sound|音; artist|アーティスト; memory|思い出; concentration|集中; familiarity|慣れ親しんだ感じ",
-            receptive="production|音作り; associate|結びつける; emotional force|感情的な力; sensory|感覚の; emotional history|感情の記録",
+            receptive="production|音作り; associate|結びつける; emotional force|感情的な力; sensory|感覚の; emotional history|感情の記録; on repeat|繰り返し",
         ),
     },
     19: {
         "accessible": vocab(
             new="put off|先延ばしにする; self-criticism|自己批判",
-            recycled="avoid|避ける|CORE-63",
-            assumed="task|課題; time|時間; worry|心配; action|行動; step|一歩; problem|問題; decide|決める; deadline|期限",
+            assumed="task|課題; time|時間; worry|心配; action|行動; step|一歩; problem|問題; decide|決める; deadline|期限; avoid|避ける",
             receptive="judgment|評価; emotional difficulty|気持ちの難しさ",
         ),
         "full": vocab(

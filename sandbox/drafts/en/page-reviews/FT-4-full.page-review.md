@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/04-a-table-manner-that-differs/lesson.html`
-- SHA-256: `9046863b5c7c1c8fe0ec018843734ff8dde44e9fa196c5e9df02f3d84e700108`
+- SHA-256: `159e6bf63583be777649b9c2b5f5096f9198de039eea932bfbf3b6f3f84d0ba6`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

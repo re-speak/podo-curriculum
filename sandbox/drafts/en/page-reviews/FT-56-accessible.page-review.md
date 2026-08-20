@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-accessible/lessons/56-the-person-you-would-call-in-an-emergency/lesson.html`
-- SHA-256: `93d40bd28aaa78a49a167d8349e58771d00805dc99eaf81e23b0cd6046bbf849`
+- SHA-256: `8d39e61a84f93e86de6f8498b5551a87acc0fed8cf286ccf7958ca53c8b38e18`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

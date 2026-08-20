@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/03-a-japanese-food-everyone-should-try/lesson.html`
-- SHA-256: `456d69db1626a9d3c317a0b506f2a2d6e362e1dcee7633fc12a0164ce36c3d12`
+- SHA-256: `08fb6509ad9391e4785d16d973eaac48d134fd8321f4dc9f466054c444905c75`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

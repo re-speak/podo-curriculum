@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/19-something-youve-been-putting-off/lesson.html`
-- SHA-256: `6eeec70d26754eedbe1778b39a7cfdd45534f017f43eaa215bf82e8b76eda1e5`
+- SHA-256: `f7dfad7fe76e5107dba0087c03d38b4f2b5ee4e469a46a1aa51f2b015b9c0e54`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

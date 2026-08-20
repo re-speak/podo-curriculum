@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/07-japan-does-especially-well/lesson.html`
-- SHA-256: `e2930c90b399e0d1e06efc287160a619f3462347c2813339729e5818dbfaba94`
+- SHA-256: `964ab61337276c5cae0239e14737332986892db4233f8333ece39153e8a0b1e7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/05-a-place-you-would-show-a-visitor/lesson.html`
-- SHA-256: `869c1a20c8b766f411da3b24ba44693490acf867047b552c536706d3ae92ab23`
+- SHA-256: `93777a1996d6c768004044af64988e86bb37c8734a3c231c4b5b0486f961981e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -562,13 +562,13 @@ CLAIM_ORDER = {
 
 VOCABULARY = {
     21: {"new": "rewatch|見返す", "recycled": "", "assumed": "film|映画; scene|場面; ending|結末; memory|思い出; detail|細部", "receptive": "comforting|心が落ち着く; ritual|習慣的な行為"},
-    22: {"new": "gateway|入り口; breakthrough|突破口", "recycled": "", "assumed": "English|英語; song|曲; film|映画; game|ゲーム; subtitles|字幕; translation|翻訳", "receptive": "absorbing|夢中にさせる; formal study|正式な学習"},
+    22: {"new": "breakthrough|突破口", "recycled": "", "assumed": "English|英語; song|曲; film|映画; game|ゲーム; subtitles|字幕; translation|翻訳", "receptive": "absorbing|夢中にさせる; formal study|正式な学習; gateway|入り口"},
     23: {"new": "soundtrack|場面に合う音楽", "recycled": "", "assumed": "music|音楽; song|曲; commute|通勤; mood|気分; lyrics|歌詞; shuffle|シャッフル再生", "receptive": "interfere|妨げる; repetitive|繰り返しの"},
-    24: {"new": "backup song|予備の曲; vocal range|音域", "recycled": "", "assumed": "karaoke|カラオケ; song|曲; group|グループ; singer|歌う人; lyrics|歌詞", "receptive": "off-limits|避けるべき; flawless|完璧な"},
+    24: {"new": "backup song|予備の曲", "recycled": "", "assumed": "karaoke|カラオケ; song|曲; group|グループ; singer|歌う人; lyrics|歌詞", "receptive": "off-limits|避けるべき; flawless|完璧な; vocal range|音域"},
     25: {"new": "craving|無性に食べたい気持ち", "recycled": "restaurant|レストラン|CORE-10", "assumed": "food|食べ物; order|注文する; delivery|宅配; morning|朝; Japan|日本", "receptive": "solitary|一人きりの; irregular|不規則な"},
     26: {"new": "food pairing|食べ合わせ; acquired taste|慣れると好きになる味", "recycled": "", "assumed": "pizza|ピザ; pineapple|パイナップル; taste|味; texture|食感; ingredient|材料", "receptive": "resistance|抵抗感; closed-mindedness|偏見"},
     27: {"new": "hidden gem|隠れた名店; word-of-mouth|口コミ", "recycled": "restaurant|レストラン|CORE-10", "assumed": "staff|店員; menu|メニュー; atmosphere|雰囲気; owner|店主; order|注文", "receptive": "financially sustainable|経営を続けられる; universal standards|一般的な基準"},
-    28: {"new": "give away|人に贈る", "recycled": "recommendation|おすすめ|FT-11", "assumed": "book|本; gift|贈り物; note|メモ; conversation|会話; recipient|受け取る人", "receptive": "obligation|義務; appropriate|ふさわしい"},
+    28: {"new": "", "recycled": "recommendation|おすすめ|FT-11", "assumed": "book|本; gift|贈り物; note|メモ; conversation|会話; recipient|受け取る人", "receptive": "obligation|義務; appropriate|ふさわしい; give away|人に贈る"},
     29: {"new": "underestimate|低く評価する", "recycled": "", "assumed": "hobby|趣味; result|結果; practice|練習; time|時間; cost|費用; community|仲間", "receptive": "outsider|外部の人; gradual|少しずつの"},
     30: {"new": "sentimental value|思い入れ; keepsake|思い出の品", "recycled": "", "assumed": "room|部屋; object|物; gift|贈り物; memory|思い出; photograph|写真", "receptive": "irreplaceable|かけがえのない; discard|捨てる"},
     31: {"new": "wardrobe|手持ちの服; go-to outfit|定番の服装", "recycled": "", "assumed": "clothes|服; colour|色; weather|天気; comfort|着心地; budget|予算; style|スタイル", "receptive": "coherent|まとまりのある; untouched|使われていない"},

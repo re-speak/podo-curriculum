@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/22-something-in-english-you-genuinely-enjoyed/lesson.html`
-- SHA-256: `81ccce1a10f5b03371ccd0861de1b0c16302d745edcd1d4b79a568790df83e4e`
+- SHA-256: `7913818d3acc91fceb2a2c2a6219c4f4596a7f4c277e4c8158185dc63fdb9bd4`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

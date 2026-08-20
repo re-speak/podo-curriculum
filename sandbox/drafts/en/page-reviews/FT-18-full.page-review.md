@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/18-a-song-you-keep-playing/lesson.html`
-- SHA-256: `efb9ec5955bc436e190b0ee7d2ffbe597c93d5c66a2c716477805862a3628afb`
+- SHA-256: `3a62d8d74e65824dbe0298e20d217d46b50471220c8b18a7716df5b2d097f54e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -216,13 +216,13 @@ class FreetalkingThingsILikeBatchTests(unittest.TestCase):
     def test_new_owner_map_is_unique_before_ft21(self) -> None:
         expected = {
             21: ("rewatch",),
-            22: ("gateway", "breakthrough"),
+            22: ("breakthrough",),
             23: ("soundtrack",),
-            24: ("backup song", "vocal range"),
+            24: ("backup song",),
             25: ("craving",),
             26: ("food pairing", "acquired taste"),
             27: ("hidden gem", "word-of-mouth"),
-            28: ("give away",),
+            28: (),
             29: ("underestimate",),
             30: ("sentimental value", "keepsake"),
             31: ("wardrobe", "go-to outfit"),

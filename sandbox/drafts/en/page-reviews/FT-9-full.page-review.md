@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/09-a-purchase-that-was-worth-it/lesson.html`
-- SHA-256: `79d9ee21023f302853b5946a7ea3ffaeb5b79bc26e75752e858ee64ffa1d8f78`
+- SHA-256: `5d82b398f0253e8298fb10bb36361ab6b5cd63e74b26f10a2233157f29cf3108`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

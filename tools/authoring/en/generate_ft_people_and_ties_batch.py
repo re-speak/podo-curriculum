@@ -25,11 +25,11 @@ CANONICAL = {
 PRESERVED = {
     "accessible": (
         TRACK / "courses/talk-people-and-ties-accessible/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "e87482af017861e8a7babc33bfd91b9296f9049c0fde486fa56da107cb789c5c",
+        "869062e3aa75757c9d778f432b200d625e16313a90c43a1d99de2f7458a2a392",
     ),
     "full": (
         TRACK / "courses/talk-people-and-ties-full/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "b2c003d06450171147fd6016dcc45a20fc12f57ada03a3f38643cf6ef80f1a0b",
+        "55534c6cec0d8a8401c541e77eb7587eed9aa933a252b07c7a13fad6170669a0",
     ),
 }
 esc = base.esc
@@ -291,14 +291,14 @@ TOPICS = {
 CLAIM_ORDER = {number: tuple(f"{number}-{index:02d}" for index in range(1, 11)) for number in TOPIC_NUMBERS}
 VOCABULARY = {
  47: {"new": "drift apart|疎遠になる", "recycled": "friend|友だち|CORE-4", "assumed": "friendship|友情; meet|出会う; change|変わる; listen|話を聞く; care|気にかける", "receptive": "put up with|我慢する; resentment|言えない不満; static|変化しない"},
- 48: {"new": "first impression|第一印象", "recycled": "turn out|実際には〜だとわかる|FT-1", "assumed": "person|人; seem|〜のように見える; think|思う; change|変わる; wrong|間違った", "receptive": "misleading|誤解を招く; candid|率直な"},
+ 48: {"new": "first impression|第一印象", "recycled": "", "assumed": "person|人; seem|〜のように見える; think|思う; change|変わる; wrong|間違った", "receptive": "misleading|誤解を招く; candid|率直な; turn out|実際には〜だとわかる"},
  50: {"new": "comfort zone|安心してできる範囲", "recycled": "", "assumed": "alone|一人で; eat|食べる; cinema|映画館; travel|旅行する; safety|安全", "receptive": "autonomy|自分で決める自由; attainable|実現できそうな"},
  51: {"new": "small talk|雑談; conversation starter|会話のきっかけ", "recycled": "", "assumed": "stranger|知らない人; ask|聞く; conversation|会話; answer|答える; busy|忙しい", "receptive": "intrusive|立ち入りすぎた; low-pressure|負担の少ない"},
  52: {"new": "make up|仲直りする; reach out|連絡を取る", "recycled": "", "assumed": "argument|けんか; contact|連絡する; first|先に; apology|謝罪; relationship|関係", "receptive": "accountability|責任を引き受けること; reconciliation|仲直り"},
  53: {"new": "fade|薄れていく", "recycled": "drift apart|疎遠になる|FT-47", "assumed": "friendship|友情; five years ago|5年前; distance|距離; time|時間; fault|責任", "receptive": "dormant|休んでいる; diverge|別の方向へ進む"},
  54: {"new": "stay in touch|連絡を取り続ける", "recycled": "", "assumed": "message|メッセージを送る; talk|話す; person|人; often|よく; five years ago|5年前", "receptive": "logistical|予定調整の; intimate|親密な"},
  55: {"new": "pass on|人に伝える", "recycled": "", "assumed": "advice|助言; say|言う; remember|覚えている; understand|理解する; help|役立つ", "receptive": "in hindsight|あとから考えると; decisive|断定的な"},
- 56: {"new": "support network|人やサービスを含む支援体制", "recycled": "emergency|緊急時|FT-20; reliable|信頼できる|CORE-56", "assumed": "call|電話する; person|人; help|助け; tonight|今夜; distance|距離", "receptive": "resilient|立て直しやすい; expertise|専門性"},
+ 56: {"new": "support network|人やサービスを含む支援体制", "recycled": "", "assumed": "call|電話する; person|人; help|助け; tonight|今夜; distance|距離; emergency|緊急時; reliable|信頼できる", "receptive": "resilient|立て直しやすい; expertise|専門性"},
 }
 GLOSSES = {
  47: {"accessible": {8: ("resentment", "resentment", "言えない不満"), 9: ("drift apart", "drift apart", "疎遠になる")}, "full": {1: ("static", "static", "変化しない"), 8: ("resentment", "resentment", "言えない不満")}},

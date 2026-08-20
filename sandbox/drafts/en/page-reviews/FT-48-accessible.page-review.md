@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-accessible/lessons/48-a-first-impression-that-was-completely-wrong/lesson.html`
-- SHA-256: `ac3511f585511e8765eec2156826bd65104a2c5118ff21160d13ff485ea9354f`
+- SHA-256: `f6aabb1aeff55797e9145940f16c52d7f3aa706b5db63544539d33854fed0481`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

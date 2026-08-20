@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/02-what-people-get-wrong-about-japan/lesson.html`
-- SHA-256: `a4feb945398dc6cf522b1e6920380beb5b9f5a3664b87b02ff4277bb5c859197`
+- SHA-256: `90ee01d44ac42133ca8947ccf42f0427f3f6b41c6df526e670d3a9155d114002`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

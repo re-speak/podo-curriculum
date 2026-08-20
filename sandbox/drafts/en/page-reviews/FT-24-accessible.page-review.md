@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/24-your-go-to-karaoke-song/lesson.html`
-- SHA-256: `2bf8efd5bf73c1213ed62fcaf3f6b6da3d03c2b0b0fc668de3d29b8039958405`
+- SHA-256: `13de54036485947d9763729ae6050f5e3eba3e0d868d95cb1db97013ea8c6ca5`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

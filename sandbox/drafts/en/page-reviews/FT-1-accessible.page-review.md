@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/01-this-surprised-me/lesson.html`
-- SHA-256: `51eefcf5d039f4402e8758c5f1ec19a75f261cd91dbb084d6db23c1216e4d99f`
+- SHA-256: `c8fc2859ecdc3cb52651ddeac24493b290c2e6cd4bfe24d538fd066d767c9046`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

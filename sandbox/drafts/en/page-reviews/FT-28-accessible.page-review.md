@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/28-a-book-you-chose-for-someone-else/lesson.html`
-- SHA-256: `b694412ce2f9610e8b53d1618b55b2a7cb6a8c4d38c9ae65a8fc4e4fbd81f33d`
+- SHA-256: `982d59d3edcccadf6c77e26f47bf9b580b36725743972d6051c88249907a2318`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

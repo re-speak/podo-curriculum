@@ -260,9 +260,9 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
 
     def test_exact_recycled_provenance_and_same_batch_dependency(self) -> None:
         expected = {
-            47: "friend|友だち|CORE-4", 48: "turn out|実際には〜だとわかる|FT-1",
+            47: "friend|友だち|CORE-4", 48: "",
             50: "", 51: "", 52: "", 53: "drift apart|疎遠になる|FT-47",
-            54: "", 55: "", 56: "emergency|緊急時|FT-20; reliable|信頼できる|CORE-56",
+            54: "", 55: "", 56: "",
         }
         self.assertEqual({n: row["recycled"] for n, row in batch.VOCABULARY.items()}, expected)
         self.assertLess(batch.TOPIC_NUMBERS.index(47), batch.TOPIC_NUMBERS.index(53))

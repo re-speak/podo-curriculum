@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/49-how-accurate-is-your-mbti/lesson.html`
-- SHA-256: `b2c003d06450171147fd6016dcc45a20fc12f57ada03a3f38643cf6ef80f1a0b`
+- SHA-256: `55534c6cec0d8a8401c541e77eb7587eed9aa933a252b07c7a13fad6170669a0`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pending**

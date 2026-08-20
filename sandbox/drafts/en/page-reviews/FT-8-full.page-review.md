@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/08-how-you-spend-new-years-day/lesson.html`
-- SHA-256: `6052cf0e9f512b8717294e8a70fc6cba4e535db71d36bd6fe887d3d965a7324c`
+- SHA-256: `213b1a6e3e86cfed9868569057c698d6978a1ab26e4ba734f38869e7d11137ce`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
