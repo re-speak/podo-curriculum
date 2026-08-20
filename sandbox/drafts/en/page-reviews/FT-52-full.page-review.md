@@ -1,0 +1,231 @@
+# Page review ledger
+
+- Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/52-how-you-make-up-after-an-argument/lesson.html`
+- SHA-256: `dd48cdbaf2ed54b6648596b7514b40beadcd06d024a0feef3c28850fcc4ea4c9`
+- Generated: **pass**
+- Mechanical validation: **pass**
+- Human page audit: **pending**
+- Owner approval: **pending**
+
+A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
+
+## 1. `lesson-goal`
+
+- Learner action: Listen to the can-do, then read the exact lesson title “How you make up after an argument” aloud once.
+- Tutor action: Introduce the topic, ask the learner to read “How you make up after an argument” once, and move on.
+- Visible target or prompt: Let's talk about what fair repair after an argument requires. Please read the title aloud. / けんかのあとに関係を公平に修復するために必要なことを話しましょう。タイトルを声に出して読んでください。
+- Learning target: Orient the learner to a live conversation about “How you make up after an argument” without previewing answers.
+- Pedagogical value: Sets one observable speaking outcome for “How you make up after an argument” and begins with a low-pressure title reading.
+- Failure diagnoses: Difficulty reading the title identifies a pronunciation support need; no topic knowledge or private experience is being tested.
+- Non-target support: The Japanese line mirrors the can-do and title-reading instruction.
+- Article treatment: Not applicable; this page establishes the discussion goal before the optional pre-study article.
+- Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
+- Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 2. `article`
+
+- Learner action: Ask any question left from pre-study; otherwise continue directly to the live discussion.
+- Tutor action: Answer a learner question briefly, or skip the article when there is no question or no pre-study.
+- Visible target or prompt: What repair after conflict requires (対立のあとの修復に必要なこと): Did you have any questions about the article? / 記事について何か質問はありましたか？
+- Learning target: Use the 10-claim pre-study article to seed concrete language and viewpoints for “How you make up after an argument.”
+- Pedagogical value: The article develops distinct claims from “Conflicts vary, so repair cannot follow one universal script.” to “Repair succeeds when the next interaction can be safer and more honest.,” giving the prompt pool several defensible angles.
+- Failure diagnoses: No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.
+- Non-target support: All 10 claims have aligned Japanese support; selective owned glosses are: reach out連絡を取る
+- Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
+- Choice/distractor quality: Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.
+- Component consistency: Uses the approved 10-row sentence-reveal article with one operating question and the tutor-only skip rule.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 3. `lesson-style`
+
+- Learner action: Choose Discussion first or Correction first for this conversation.
+- Tutor action: Honor the selected correction timing throughout the discussion.
+- Visible target or prompt: Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。
+- Learning target: Choose how fluency and correction will be balanced during the open discussion.
+- Pedagogical value: Makes the feedback contract explicit before the substantive conversation prompts begin.
+- Failure diagnoses: No language failure is diagnosed; the synchronized selection records a lesson preference.
+- Non-target support: Japanese option labels explain the two modes while tutor-only copy defines their operational difference.
+- Article treatment: The article has already been handled or skipped; this page controls discussion style only.
+- Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
+- Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 4. `talk-intro`
+
+- Learner action: Listen to how the eight-question pool for “How you make up after an argument” will be used, then begin the conversation.
+- Tutor action: React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.
+- Visible target or prompt: We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。
+- Learning target: Frame “How you make up after an argument” as reciprocal conversation rather than eight questions to complete in order.
+- Pedagogical value: Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.
+- Failure diagnoses: No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.
+- Non-target support: The Japanese line states that not every question is required and that interesting details should guide the talk.
+- Article treatment: Not applicable; this transition begins the live prompt pool after the article was handled or skipped.
+- Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
+- Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 5. `warm-1`
+
+- Learner action: Respond aloud to “After an ordinary argument, who should reach out and initiate contact?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Does initiating contact imply accepting sole responsibility?” rather than asking every follow-up.
+- Visible target or prompt: After an ordinary argument, who should reach out and initiate contact? / 普通のけんかのあと、どちらが先に連絡を始めるべきですか？
+- Learning target: Explore the distinct “Who moves first? (先に動く人)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Does initiating contact imply accepting sole responsibility?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Does initiating contact imply accepting sole responsibility?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “After an ordinary argument, who should reach out and initiate contact?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes the first move emotionally difficult?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["After an ordinary argument, who should reach out and initiate contact?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 6. `warm-2`
+
+- Learner action: Respond aloud to “How much distance helps a calm conversation become possible after conflict?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “How should the pause be used?” rather than asking every follow-up.
+- Visible target or prompt: How much distance helps a calm conversation become possible after conflict? / 対立のあと、落ち着いた会話をするためにどのくらい距離を置くとよいですか？
+- Learning target: Explore the distinct “How long (かかる時間)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “How should the pause be used?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “How should the pause be used?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How much distance helps a calm conversation become possible after conflict?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “When does distance begin to deepen the problem?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much distance helps a calm conversation become possible after conflict?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 7. `q1`
+
+- Learner action: Respond aloud to “How should the first message after an argument be worded?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Should it identify the disagreement immediately?” rather than asking every follow-up.
+- Visible target or prompt: How should the first message after an argument be worded? / けんかのあとの最初の連絡は、どのような言葉で伝えるとよいですか？
+- Learning target: Explore the distinct “The first message (最初のメッセージ)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Should it identify the disagreement immediately?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Should it identify the disagreement immediately?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should the first message after an argument be worded?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “How can the tone avoid sounding defensive?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should the first message after an argument be worded?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 8. `q2`
+
+- Learner action: Respond aloud to “What underlying issue can a minor everyday disagreement conceal?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Could the real issue involve respect, time, or responsibility?” rather than asking every follow-up.
+- Visible target or prompt: What underlying issue can a minor everyday disagreement conceal? / 日常の小さな意見の違いは、どのような根本的な問題を隠すことがありますか？
+- Learning target: Explore the distinct “What lies beneath (表面の下にあること)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Could the real issue involve respect, time, or responsibility?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Could the real issue involve respect, time, or responsibility?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What underlying issue can a minor everyday disagreement conceal?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “How can both people identify the deeper disagreement?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What underlying issue can a minor everyday disagreement conceal?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 9. `q3`
+
+- Learner action: Respond aloud to “What makes an apology feel credible?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “How specific should the apology be?” rather than asking every follow-up.
+- Visible target or prompt: What makes an apology feel credible? / どのような謝罪なら信頼できると感じますか？
+- Learning target: Explore the distinct “What repairs it (修復に役立つこと)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “How specific should the apology be?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “How specific should the apology be?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes an apology feel credible?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “Which action should follow the words?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes an apology feel credible?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 10. `q4`
+
+- Learner action: Respond aloud to “Can some disagreements remain unresolved without destroying a relationship?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Which differences can a relationship absorb?” rather than asking every follow-up.
+- Visible target or prompt: Can some disagreements remain unresolved without destroying a relationship? / 解決しない意見の違いがあっても、関係を壊さずにいられますか？
+- Learning target: Explore the distinct “Still unresolved (まだ解決していないこと)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Which differences can a relationship absorb?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Which differences can a relationship absorb?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Can some disagreements remain unresolved without destroying a relationship?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “When does the disagreement require a new boundary?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can some disagreements remain unresolved without destroying a relationship?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 11. `q5`
+
+- Learner action: Respond aloud to “When is reconciliation not the appropriate goal?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Which condition would need to change first?” rather than asking every follow-up.
+- Visible target or prompt: When is reconciliation not the appropriate goal? / 仲直りを目標にすることが適切ではないのは、どのようなときですか？
+- Learning target: Explore the distinct “Not every repair (仲直りしない選択)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Which condition would need to change first?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Which condition would need to change first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is reconciliation not the appropriate goal?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “How can someone end contact respectfully?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is reconciliation not the appropriate goal?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 12. `q6`
+
+- Learner action: Respond aloud to “What is a fair way to make up after an ordinary argument?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Who should initiate the conversation?” rather than asking every follow-up.
+- Visible target or prompt: What is a fair way to make up after an ordinary argument? / 普通のけんかのあと、公平に仲直りするにはどのような方法がありますか？
+- Learning target: Explore the distinct “The right way (よい方法)” angle of “How you make up after an argument” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Who should initiate the conversation?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Who should initiate the conversation?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is a fair way to make up after an ordinary argument?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “Which sign would show that repair succeeded?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is a fair way to make up after an ordinary argument?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+
+## 13. `feedback`
+
+- Learner action: Listen to one specific strength and one useful next focus, then repeat one useful correction.
+- Tutor action: Give one concrete strength and one next focus; ask the learner to repeat one useful correction before closing.
+- Visible target or prompt: Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。
+- Learning target: Close the “How you make up after an argument” conversation with actionable evidence from the learner’s actual speech.
+- Pedagogical value: Turns the discussion into one retained success and one manageable next step instead of generic praise.
+- Failure diagnoses: The recorded strength and focus diagnose the most useful next speaking priority without retesting the topic.
+- Non-target support: The bilingual closing instruction is concise; the tutor supplies the personalized content.
+- Article treatment: Not applicable; feedback is based on live speech, not article recall.
+- Choice/distractor quality: No choices or distractors appear; the tutor records one strength and one focus.
+- Component consistency: Uses the approved actionable feedback page with a synchronized tutor-feedback field.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.

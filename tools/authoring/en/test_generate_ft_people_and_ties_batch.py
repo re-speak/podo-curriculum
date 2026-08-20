@@ -55,7 +55,7 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
         self.assertEqual(len(claims), 360)
         self.assertEqual(hashlib.sha256("\n".join(claims).encode()).hexdigest(), "4470b9234f82ee4565e91599e1b22da2770be39f16e6d537c41ec42bd0436d25")
         self.assertEqual(len(prompts), 576)
-        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "dcd13970758ef233808508b3925eeeb0b61fa199d3254102ca70880a7bcf6a76")
+        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "be42e578c1297b3ec406f1dc4bb7bbeafccc592ee35ea93d0665aea3475a5ee4")
 
     def test_all_180_rendered_article_claims_have_exact_variant_japanese(self) -> None:
         japanese = []
@@ -127,63 +127,66 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
                         expected = expected.replace("。", "、")
                     self.assertEqual(html.unescape(actual), expected)
 
-    def test_answer_safe_entry_branches_and_topic_switches_are_locked(self) -> None:
-        required = {
-            47: ("If nobody does", "imagined"), 48: ("If not", "fictional"),
-            50: ("one solo activity", "public or fictional"), 51: ("shared detail", "public or imagined"),
-            52: ("no close relationship", "comfortable discussing"), 53: ("personal comparison", "familiar or imagined"),
-            54: ("automated or a group", "no recent message"), 55: ("if nothing does", "familiar example"),
-            56: ("safe hypothetical", "no person"),
-        }
-        for topic_no, fragments in required.items():
-            corpus = " ".join(
-                value
-                for item in batch.TOPICS[topic_no]["prompts"]
-                for value in (item["accessible"], *item["accessible_followups"], item["full"], *item["full_followups"])
-            ).casefold()
-            for fragment in fragments:
-                with self.subTest(topic=topic_no, fragment=fragment):
-                    self.assertIn(fragment.casefold(), corpus)
-        self.assertIn("would you prefer to keep the discussion hypothetical", batch.TOPICS[56]["prompts"][3]["full"])
-        self.assertIn("or what role could you handle", batch.TOPICS[56]["prompts"][4]["accessible"])
+    def test_question_pools_are_distinct_standalone_and_non_defensive(self) -> None:
+        banned = (
+            "if yes", "if not", "if none", "if nobody", "if something", "if it happened",
+            "real or imagined", "familiar or imagined", "public or fictional", "public or imagined",
+            "no recent message", "would you prefer to keep", "comfortable discussing",
+        )
+        for variant in ("accessible", "full"):
+            global_mains, global_followup_sets, global_followups = [], [], []
+            for topic_no, data in batch.TOPICS.items():
+                mains = [item[variant] for item in data["prompts"]]
+                followup_sets = [tuple(item[f"{variant}_followups"]) for item in data["prompts"]]
+                followups = [value for values in followup_sets for value in values]
+                corpus = " ".join((*mains, *followups)).casefold()
+                with self.subTest(topic=topic_no, variant=variant):
+                    self.assertEqual(len(mains), len(set(mains)))
+                    self.assertEqual(len(followup_sets), len(set(followup_sets)))
+                    self.assertEqual(len(followups), len(set(followups)))
+                    for phrase in banned:
+                        self.assertNotIn(phrase, corpus)
+                    self.assertTrue(all(question.endswith("?") for question in mains))
+                global_mains.extend(mains)
+                global_followup_sets.extend(followup_sets)
+                global_followups.extend(followups)
+            self.assertEqual(len(global_mains), len(set(global_mains)))
+            self.assertEqual(len(global_followup_sets), len(set(global_followup_sets)))
+            self.assertEqual(len(global_followups), len(set(global_followups)))
 
-    def test_round_two_branch_states_persist_through_followups(self) -> None:
-        contracts = {
-            (47, 1): ("For a real friendship", "For an imagined one"),
-            (47, 2): ("For a real friendship", "For an imagined one"),
-            (48, 7): ("If something is misread", "If not"),
-            (50, 4): ("public or fictional", "If nobody does"),
-            (51, 5): ("public or imagined", "If none does"),
-            (52, 0): ("no close relationship or argument", "real or imagined"),
-            (52, 1): ("If you take a pause", "If you do not"),
-            (52, 3): ("If it was real", "If it is a general example"),
-            (53, 0): ("personal comparison", "familiar or imagined"),
-            (53, 1): ("For your own comparison", "For a general example"),
-            (53, 2): ("For a real connection", "For a familiar example"),
-            (53, 3): ("real or familiar example", "In that example"),
-            (54, 0): ("automated or a group", "If no recent message"),
-            (54, 1): ("service", "spread"),
-            (54, 2): ("main contact", "contacts overall"),
-            (54, 3): ("conversation", "automated contact or service"),
-            (54, 4): ("contact", "If not"),
-            (54, 5): ("If it changed", "If it did not"),
-            (54, 6): ("person, group, or service", "familiar historical example"),
-            (55, 0): ("comes to mind", "familiar"),
-            (55, 3): ("For a real case", "For a familiar example"),
-            (55, 4): ("actually heard", "familiar example"),
-            (55, 5): ("For a real case", "For a familiar example"),
-            (55, 6): ("nobody benefit", "adapt"),
-            (55, 7): ("If it happened to you", "If it is a familiar example"),
-            (56, 0): ("safe hypothetical", "service"),
-            (56, 7): ("people and services", "service"),
+    def test_exact_accessible_openings_match_authoritative_briefs(self) -> None:
+        expected = {
+            47: "What helps a friendship last when life changes?",
+            48: "Why can a first impression be completely wrong?",
+            50: "Which activity feels hardest to do alone?",
+            51: "You're seated next to someone you've never met. What do you ask?",
+            52: "After an ordinary argument, who should reach out first?",
+            53: "Why do people's social circles change over time?",
+            54: "What makes someone become the person you talk to most?",
+            55: "Why does some advice stay with people for years?",
+            56: "In an emergency, which need should determine the first call?",
         }
-        for (topic_no, index), fragments in contracts.items():
-            item = batch.TOPICS[topic_no]["prompts"][index]
-            for variant in ("accessible", "full"):
-                corpus = " ".join((item[variant], *item[f"{variant}_followups"]))
-                for fragment in fragments:
-                    with self.subTest(topic=topic_no, index=index, variant=variant, fragment=fragment):
-                        self.assertIn(fragment.casefold(), corpus.casefold())
+        self.assertEqual({n: row["prompts"][0]["accessible"] for n, row in batch.TOPICS.items()}, expected)
+
+    def test_ft49_manual_pair_has_exact_repaired_contract(self) -> None:
+        expected_openings = {
+            "accessible": "What do people hope an MBTI result will explain?",
+            "full": "What do people expect an MBTI result to reveal about them?",
+        }
+        for variant, (path, _digest) in batch.PRESERVED.items():
+            source = path.read_text(encoding="utf-8")
+            prompts = re.findall(r'<p class="section-subtitle ask">.*?<span class="ko">(.*?)</span><span class="ja">', source, re.S)
+            followups = [check_deck.plain_text(value) for value in re.findall(r'<li>(.*?)</li>', source, re.S)]
+            with self.subTest(variant=variant):
+                self.assertEqual(len(prompts), 8)
+                self.assertEqual(html.unescape(prompts[0]), expected_openings[variant])
+                self.assertEqual(len(prompts), len(set(prompts)))
+                self.assertEqual(source.count('data-fb-spoken-label="Student\'s sentence"'), 8)
+                self.assertIn("Treat these pages as a pool, not a sequence.", source)
+                self.assertIn("Please read the title aloud.", source)
+                self.assertNotIn('class="known lines"', source)
+                self.assertEqual(len(followups), len(set(followups)))
+                self.assertFalse(any(value.casefold().startswith(("if yes", "if not", "if none")) for value in followups))
 
     def test_round_two_old_unsafe_or_misaligned_copy_cannot_return(self) -> None:
         corpus = repr(batch.TOPICS)
@@ -204,7 +207,7 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
 
     def test_round_two_exact_bilingual_claim_and_metadata_locks(self) -> None:
         self.assertEqual(batch.TOPICS[47]["prompts"][7]["accessible_ja"], "よい友情に、自分は何を与えていますか？")
-        self.assertEqual(batch.TOPICS[48]["prompts"][2]["accessible_ja"], "何が起きて、第一印象が変わりましたか？")
+        self.assertEqual(batch.TOPICS[48]["prompts"][2]["accessible_ja"], "どのような証拠が、第一印象を変えることがありますか？")
         self.assertEqual(batch.TOPICS[50]["articles"][8][2], "ほかの人が一人で行動するのを見ると、その活動が自分にもできそうに感じます。")
         self.assertEqual(batch.TOPICS[52]["articles"][5][3], "自己弁護ばかりせずに話すために、少し距離が必要な人もいます。")
         self.assertIn("経験や意図を信頼", batch.TOPICS[55]["articles"][2][2])
@@ -216,29 +219,17 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
         self.assertEqual(batch.GLOSSES[56]["accessible"][10], ("support network", "support network", "人やサービスを含む支援体制"))
         self.assertEqual(
             batch.TOPICS[54]["prompts"][6]["accessible_followups"][0],
-            "If one contact stood out, what role did that person, group, or service play then?",
+            "Which stage changes the network most?",
         )
         self.assertEqual(
             batch.TOPICS[54]["prompts"][6]["full_followups"][0],
-            "If one contact stood out, what role did that person, group, or service play at that time?",
+            "Which transition tends to reshape the network most?",
         )
 
     def test_accessible_gloss_load_remains_small_after_required_repairs(self) -> None:
         for topic_no in batch.TOPIC_NUMBERS:
             with self.subTest(topic=topic_no):
                 self.assertLessEqual(len(batch.GLOSSES[topic_no]["accessible"]), 2)
-
-    def test_referents_are_established_before_downstream_questions(self) -> None:
-        exact = {
-            (47, 1): "How did you meet—or how might that kind of friendship begin?",
-            (48, 1): "What did you first think about that person or example?",
-            (50, 2): "What happened in that real experience—or what might happen in the imagined one?",
-            (52, 3): "What was a recent small disagreement—or what everyday example are you comfortable discussing?",
-            (55, 2): "Who gave you the advice—or where did you hear it?",
-            (56, 1): "Why would that person or service be the first choice?",
-        }
-        for (topic_no, index), value in exact.items():
-            self.assertEqual(batch.TOPICS[topic_no]["prompts"][index]["accessible"], value)
 
     def test_exact_new_owner_map_is_unique_and_same_in_both_variants(self) -> None:
         expected = {
@@ -288,6 +279,7 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
     def test_visibility_does_not_count_glossary_headwords(self) -> None:
         source = batch.build(50, "accessible")
         mutated = source.replace('<span class="s-key">comfort zone</span>', '<span class="s-key">safe range</span>', 1)
+        mutated = mutated.replace("your comfort zone", "your safe range").replace("person&#x27;s comfort zone", "person&#x27;s safe range")
         self.assertIn("<b>comfort zone</b>", mutated)
         self.assertNotRegex(productive_english(mutated).casefold(), r"(?<![a-z0-9])comfort zone(?![a-z0-9])")
 
@@ -309,6 +301,11 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
                 with self.subTest(topic=topic_no, variant=variant):
                     self.assertEqual(errors, [])
                     self.assertEqual(warnings, [])
+        for variant, (path, _digest) in batch.PRESERVED.items():
+            errors, warnings = check_deck.check(path)
+            with self.subTest(topic=49, variant=variant):
+                self.assertEqual(errors, [])
+                self.assertEqual(warnings, [])
 
 
 if __name__ == "__main__":

@@ -498,76 +498,76 @@ strange → how much to explain → whether it still helps → one rule worth tr
 
 # Theme 5 · People and ties · `story` + `opinion`
 
-*Where experience and opinion mix. Written to pull out **an actual person**, never to define
-friendship in the abstract.*
+*Where experience and opinion mix. Prompts invite personal examples when they arise naturally,
+without requiring private history or treating every question as an interview.*
 
 **47. What makes a friendship last** `story`
-*Opens:* "Think of a friend you've kept a long time. What are they like?"
-*Ladder:* who → how did you meet → what keeps it going → what could you not put up with → who have
-you drifted from → what do you bring to it
+*Opens:* "What helps a friendship last when life changes?"
+*Ladder:* what helps → how strong friendships begin → how they adapt → meaningful contact → what
+damages them → drifting apart → restarting → what each person brings
 *Moves:* `We've known each other ___.` **(Core 51)** `chunk` · `I couldn't be friends with someone who ___.` **(Core 55)**
 *Shared:* KR 5-1
 
 **48. A first impression that was completely wrong** `story`
-*Opens:* "Has anyone turned out completely different from how they first seemed?"
-*Ladder:* who → what did you think at first → what changed it → how long did it take → has it gone
-the other way → what do people get wrong about you at first
+*Opens:* "Why can a first impression be completely wrong?"
+*Ladder:* why it can be wrong → what shapes it → evidence that changes it → fast or slow revision →
+missing context → positive impressions worsening → quick judgment → what is easy to misread
 *Moves:* `My first impression was ___, but ___.` **(Core 56)** · `It took me ___ to ___.` **(Core 51)** `chunk`
 *Shared:* KR 5-2
 
 **49. How accurate is your MBTI?** `opinion`
-*Opens:* "What's your MBTI? Is it right?"
-*Ladder:* what's yours → does it fit → who agrees → what does it get wrong → do you ask other people
-theirs → does it change how you treat them
+*Opens:* "What do people hope an MBTI result will explain?"
+*Ladder:* why people use it → convincing descriptions → behavior in context → outside views → what
+labels miss → first conversations → change over time → help and harm
 *Moves:* `Mine says ___, and honestly ___.` **(Core 69)** · `I'm not sure I ___.` `chunk`
 *Shared:* KR 5-3
 
 **50. Something you would never do alone** `choose`
-*Opens:* "Eating alone, cinema alone, travelling alone — where's your line?"
-*Ladder:* where's the line → what's the furthest you've done → what happened → who do you know who's
-braver → has the line moved → what would push it further
+*Opens:* "Which activity feels hardest to do alone?"
+*Ladder:* hardest activity → what feels bold → imagine one step outside the comfort zone → freedom and
+pressure → why confidence differs → changing boundaries → a smaller step → responsible growth
 *Moves:* `I'd happily ___, but not ___.` **(Core 97)** · `I've never ___ alone.` **(Core 48)**
 *Shared:* KR 5-4
 
 **51. Starting a conversation with a stranger** `story`
 *Opens:* "You're seated next to someone you've never met. What do you ask?"
-*Ladder:* what's your opening → what do you avoid → what's worked → what's died instantly → who's
-good at this → what do you do when it fails
+*Ladder:* choose an opening → best setting → what to avoid → easy answers → dead ends → read signals →
+graceful recovery → one useful starter
 *Moves:* `I usually ask about ___.` **(Core 12)** · `That never works.` **(Core 14)**
 *Shared:* KR 5-5
 
 **52. How you make up after an argument** `story`
-*Opens:* "When you argue with someone close, who contacts who first?"
-*Ladder:* who moves first → how long does it take → what do you say → what did you last argue about
-→ has anything never been fixed → what's the right way
+*Opens:* "After an ordinary argument, who should reach out first?"
+*Ladder:* who moves first → useful pause → first message → what small conflicts hide → real apologies →
+unresolved differences → when not to reconcile → fair repair
 *Moves:* `I'm usually the one who ___.` **(Core 55)** · `It took us ___ to ___.` **(Core 51)** `chunk`
 *Shared:* KR 5-6
 
 **53. Why some friendships fade** `opinion` `深く`
-*Opens:* "How many people did you see socially five years ago, compared to now?"
-*Ladder:* what's the number → who dropped off → was it anyone's fault → is it distance, time or
-change → is that normal or a problem → what would you do about it
+*Opens:* "Why do people's social circles change over time?"
+*Ladder:* changing circles → changing routines → drifting while caring → nobody's fault → main causes →
+normal transition or problem → worth renewing → responding thoughtfully
 *Moves:* `It's not that ___, it's more that ___.` **(Core 89)** · `Overall, I'd say ___.` **(Core 117)** `chunk`
 *Shared:* KR 5-7
 
 **54. The person you talk to most** `story`
-*Opens:* "Who did you last message, and what about?"
-*Ladder:* who → how often → what do you actually talk about → has that changed → who was it five
-years ago → what happened
+*Opens:* "What makes someone become the person you talk to most?"
+*Ladder:* main contact → why one becomes central → sustainable rhythm → deeper conversations → easy and
+difficult topics → changing patterns → life stages → staying in touch without duty
 *Moves:* `Probably my ___.` `chunk` · `We mostly talk about ___.` **(Core 12)**
 *Shared:* **NEW → KR**
 
 **55. Advice that stayed with you** `story`
-*Opens:* "What's one thing someone said to you that you still repeat?"
-*Ladder:* who → what did they say → when → did you understand it then → have you passed it on →
-what advice have you ignored
+*Opens:* "Why does some advice stay with people for years?"
+*Ladder:* why it stays → memorable wording → who says it → the right moment → understanding later →
+when it helps → worth sharing → why sound advice is ignored
 *Moves:* `Someone once told me to ___.` **(Core 70)** · `It helped because ___.` **(Core 54)**
 *Shared:* **NEW → KR**
 
 **56. The person you would call in an emergency** `story` `深く`
-*Opens:* "If something went badly wrong tonight, who's the first person you'd call?"
-*Ladder:* who → why them → have you ever needed to → who would call *you* → has the answer changed →
-does distance matter
+*Opens:* "In an emergency, which need should determine the first call?"
+*Ladder:* first need → right first contact → essential information → first steps → ordinary support roles →
+changing contacts → distance → a stronger support network
 *Moves:* `There's really only ___.` **(Core 106)** `chunk` · `I've never had to, but ___.` **(Core 48)**
 *Shared:* **NEW → KR**
 

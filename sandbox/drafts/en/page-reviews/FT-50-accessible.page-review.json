@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-accessible/lessons/50-something-you-would-never-do-alone/lesson.html",
+  "lessonSha256": "0d701f5f8672e5e8949d80c534d515d3a1e17ea52c75a9f075cff61f3af3c276",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “Something you would never do alone” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “Something you would never do alone” once, and move on.",
+      "targetOrPrompt": "Let's find where being alone stops feeling comfortable and why. Please read the title aloud. / 一人でできることの境界と、その理由について話しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a live conversation about “Something you would never do alone” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “Something you would never do alone” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge or private experience is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors the can-do and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Where the solo line comes from (一人で行動する境界): Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use the 10-claim pre-study article to seed concrete language and viewpoints for “Something you would never do alone.”",
+      "pedagogicalValue": "The article develops distinct claims from “Being alone feels different in different activities.” to “The useful question is not whether solo is better, but where the choice feels right.,” giving the prompt pool several defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.",
+      "nonTargetSupport": "All 10 claims have aligned Japanese support; selective owned glosses are: comfort zone安心してできる範囲",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved 10-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Something you would never do alone” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Something you would never do alone” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Which activity feels hardest to do alone?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What makes it different from eating or shopping alone?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which activity feels hardest to do alone? / どのような活動が、一人ではいちばん難しく感じますか？",
+      "learningTarget": "Explore the distinct “Where the line is (一人でできる境界)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What makes it different from eating or shopping alone?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What makes it different from eating or shopping alone?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which activity feels hardest to do alone?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Is the main issue safety, confidence, or enjoyment?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which activity feels hardest to do alone?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “What makes a solo activity feel bold?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How much do other people's reactions matter?” rather than asking every follow-up.",
+      "targetOrPrompt": "What makes a solo activity feel bold? / 一人での活動が大胆に感じられるのはなぜですか？",
+      "learningTarget": "Explore the distinct “Why it feels bold (大胆に感じる理由)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “How much do other people's reactions matter?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How much do other people's reactions matter?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes a solo activity feel bold?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which practical difficulty matters most?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What makes a solo activity feel bold?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “Imagine one solo activity just outside your comfort zone. What would happen?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which moment would feel hardest?” rather than asking every follow-up.",
+      "targetOrPrompt": "Imagine one solo activity just outside your comfort zone. What would happen? / 自分の安心できる範囲を少し超える一人での活動を想像してください。何が起きそうですか？",
+      "learningTarget": "Explore the distinct “Just outside the line (境界の少し外)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which moment would feel hardest?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which moment would feel hardest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Imagine one solo activity just outside your comfort zone. What would happen?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What could make the experience satisfying?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Imagine one solo activity just outside your comfort zone. What would happen?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “What is the best and hardest part of doing an activity alone?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which decisions become easier?” rather than asking every follow-up.",
+      "targetOrPrompt": "What is the best and hardest part of doing an activity alone? / 何かを一人でするとき、いちばんよい点と難しい点は何ですか？",
+      "learningTarget": "Explore the distinct “Freedom and pressure (自由と負担)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which decisions become easier?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which decisions become easier?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the best and hardest part of doing an activity alone?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which problem would you rather share?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is the best and hardest part of doing an activity alone?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “What makes some people comfortable doing more things alone?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which skill reduces uncertainty?” rather than asking every follow-up.",
+      "targetOrPrompt": "What makes some people comfortable doing more things alone? / 一人で多くのことをしても平気な人がいるのはなぜですか？",
+      "learningTarget": "Explore the distinct “Comfort alone (一人で平気な理由)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which skill reduces uncertainty?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which skill reduces uncertainty?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes some people comfortable doing more things alone?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How can past success change confidence?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What makes some people comfortable doing more things alone?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “How can someone's line for doing things alone change over time?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which experience could expand it?” rather than asking every follow-up.",
+      "targetOrPrompt": "How can someone's line for doing things alone change over time? / 一人でできることの境界は、時間とともにどう変わりますか？",
+      "learningTarget": "Explore the distinct “A moving line (変わった境界)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which experience could expand it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which experience could expand it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can someone's line for doing things alone change over time?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What could make it smaller again?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How can someone's line for doing things alone change over time?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “What smaller solo activity could prepare someone for the next one?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How could the risk be reduced?” rather than asking every follow-up.",
+      "targetOrPrompt": "What smaller solo activity could prepare someone for the next one? / 次の挑戦に備えるために、どのような小さな一人での活動が役立ちますか？",
+      "learningTarget": "Explore the distinct “A smaller step (小さな一歩)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “How could the risk be reduced?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How could the risk be reduced?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What smaller solo activity could prepare someone for the next one?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would show that the person is ready?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What smaller solo activity could prepare someone for the next one?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What helps expand a person's comfort zone?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Would information, practice, or company matter most?” rather than asking every follow-up.",
+      "targetOrPrompt": "What helps expand a person's comfort zone? / 何があれば、人の安心できる範囲を広げられますか？",
+      "learningTarget": "Explore the distinct “What would push it (境界を広げる条件)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Would information, practice, or company matter most?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Would information, practice, or company matter most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What helps expand a person's comfort zone?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which boundary should still be respected?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What helps expand a person's comfort zone?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one useful next focus, then repeat one useful correction.",
+      "tutorAction": "Give one concrete strength and one next focus; ask the learner to repeat one useful correction before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Close the “Something you would never do alone” conversation with actionable evidence from the learner’s actual speech.",
+      "pedagogicalValue": "Turns the discussion into one retained success and one manageable next step instead of generic praise.",
+      "failureDiagnosis": "The recorded strength and focus diagnose the most useful next speaking priority without retesting the topic.",
+      "nonTargetSupport": "The bilingual closing instruction is concise; the tutor supplies the personalized content.",
+      "articleTreatment": "Not applicable; feedback is based on live speech, not article recall.",
+      "choiceQuality": "No choices or distractors appear; the tutor records one strength and one focus.",
+      "componentConsistency": "Uses the approved actionable feedback page with a synchronized tutor-feedback field.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
