@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/60-would-you-mind-opening-the-window/lesson.html",
+  "lessonSha256": "ee9345f2fb3ee17c6fc5b1ce2133cd3c9bf71045a9acd9598460072b6c3a415a",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the exact can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Page title: Would you mind opening the window? (窓を開けていただけますか？) ; Exact learner instruction: Make the same request at two levels of care. Please read the title aloud. ; Aligned Japanese: 同じお願いを、丁寧さの違う二つの形で伝えましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Lesson orientation for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—lesson orientation—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? / Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 同じお願いを、丁寧さの違う二つの形で伝えましょう。タイトルを声に出して読んでください。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for lesson orientation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown.",
+      "tutorAction": "Listen to the familiar words and keep this activation brief.",
+      "targetOrPrompt": "Page title: Words you know (知っている単語) ; Exact learner instruction: Say the three familiar words in English. ; Aligned Japanese: 知っている3つの単語を英語で言いましょう。",
+      "learningTarget": "Known-word activation for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—known-word activation—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? / Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 知っている3つの単語を英語で言いましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for known-word activation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud once.",
+      "tutorAction": "Introduce Pattern 1 in one line and move on after the learner reads the title.",
+      "targetOrPrompt": "Page title: Could you open the window? ; Exact learner instruction: First, let's practice this pattern. ; Aligned Japanese: まず、このパターンを練習しましょう。",
+      "learningTarget": "Pattern 1 transition for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 transition—and advances the learner toward independent use of Could you open the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: まず、このパターンを練習しましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete Pattern 1 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain the displayed meaning, then have the learner read every example.",
+      "targetOrPrompt": "Page title: Today's pattern (今日のパターン) ; Exact learner instruction: Use this for a polite everyday request. ; Aligned Japanese: 日常的に丁寧なお願いをするときに使います。 ; Highlighted target(s): Could you open | 開けてもらえますか | Could you close | 閉めてもらえますか | Could you check | 確認してもらえますか",
+      "learningTarget": "Pattern 1 meaning and models for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 meaning and models—and advances the learner toward independent use of Could you open the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日常的に丁寧なお願いをするときに使います。 | 窓を 開けてもらえますか ？ | ドアを 閉めてもらえますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 meaning and models; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Could you open",
+          "開けてもらえますか",
+          "Could you close",
+          "閉めてもらえますか",
+          "Could you check",
+          "確認してもらえますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 example aloud.",
+      "tutorAction": "Listen to each example and model only if help is needed.",
+      "targetOrPrompt": "Page title: Read the sentences (文を読もう) ; Exact learner instruction: Please read each sentence aloud. ; Aligned Japanese: 一文ずつ声に出して読んでください。 ; Highlighted target(s): Could you open | 開けてもらえますか | Could you close | 閉めてもらえますか | Could you check | 確認してもらえますか | Could you send | 送ってもらえますか",
+      "learningTarget": "Pattern 1 supported read-aloud for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 supported read-aloud—and advances the learner toward independent use of Could you open the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一文ずつ声に出して読んでください。 | 窓を 開けてもらえますか ？ | ドアを 閉めてもらえますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 supported read-aloud; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Could you open",
+          "開けてもらえますか",
+          "Could you close",
+          "閉めてもらえますか",
+          "Could you check",
+          "確認してもらえますか",
+          "Could you send",
+          "送ってもらえますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 1 operation briefly and check it once.",
+      "targetOrPrompt": "Page title: Modal plus plain verb (助動詞＋動詞の原形) ; Exact learner instruction: Use could plus a plain verb for a polite everyday request. ; Aligned Japanese: 日常的な丁寧なお願いでは、could の後ろに動詞の原形を置きます。",
+      "learningTarget": "Pattern 1 form explanation for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 form explanation—and advances the learner toward independent use of Could you open the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日常的な丁寧なお願いでは、could の後ろに動詞の原形を置きます。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 form explanation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the form that matches each Japanese cue, then read the completed Pattern 1 sentence aloud.",
+      "tutorAction": "After each choice, require the complete spoken sentence before moving on.",
+      "targetOrPrompt": "Page title: Choose the pattern (パターンを選ぼう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Highlighted target(s): 開けて | 閉めて | 確認して | 送って",
+      "learningTarget": "Pattern 1 form discrimination for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "The page makes the learner use meaning to distinguish the exact forms needed for Could you open the window?; correct branches are not mechanically identical across all rows.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | 窓を 開けて もらえますか？ | ドアを 閉めて もらえますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : open versus opening | : closing versus close | : check versus checking | : sending versus send",
+      "componentConsistency": "The page uses the established word-choice cards for Pattern 1 form discrimination; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "開けて",
+          "閉めて",
+          "確認して",
+          "送って"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put each Pattern 1 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Page title: Build the sentence (文を組み立てよう) ; Exact learner instruction: Put the words in order, then say the whole sentence out loud. ; Aligned Japanese: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Pattern 1 word-order retrieval for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 word-order retrieval—and advances the learner toward independent use of Could you open the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you open the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice distractor is used; the learner must reconstruct the full word order and say it aloud.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 word-order retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole Pattern 1 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Page title: Say the complete sentence (文をまるごと言おう) ; Exact learner instruction: Say each whole sentence aloud, including the missing words. ; Aligned Japanese: 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 ; Highlighted target(s): 開けてもらえますか | 閉めてもらえますか | 確認してもらえますか | 送ってもらえますか ; Exact blank answer(s): Could you open | Could you close | Could you check | Could you send ; Lexical hint(s): 開ける:open | 閉める:close | 確認する:check | 送る:send",
+      "learningTarget": "Pattern 1 controlled retrieval for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "The learner retrieves the stable target span in Could you open the window? and says the complete sentence; chips support only productive vocabulary.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you open the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 開ける:open | 閉める:close | 確認する:check | 送る:send; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 controlled retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "開けてもらえますか",
+          "閉めてもらえますか",
+          "確認してもらえますか",
+          "送ってもらえますか"
+        ],
+        "blankAnswers": [
+          "Could you open",
+          "Could you close",
+          "Could you check",
+          "Could you send"
+        ],
+        "hintChips": [
+          "開ける:open",
+          "閉める:close",
+          "確認する:check",
+          "送る:send"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 1 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Page title: Say it in English (英語にしよう) ; Exact learner instruction: Read the Japanese, then say it in English. ; Aligned Japanese: 日本語を見て、英語で言ってみましょう。 ; Exact blank answer(s): Could you open the window? | Could you close the door? | Could you check the file? | Could you send the email? ; Lexical hint(s): 窓:window | 開ける:open | ドア:door | 閉める:close | ファイル:file | 確認する:check | メール:email | 送る:send",
+      "learningTarget": "Pattern 1 supported translation for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "The supported Japanese-to-English task retrieves Could you open the window? while lexical chips remove only incidental vocabulary load.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you open the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 窓:window | 開ける:open | ドア:door | 閉める:close | ファイル:file | 確認する:check | メール:email | 送る:send; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 supported translation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Could you open the window?",
+          "Could you close the door?",
+          "Could you check the file?",
+          "Could you send the email?"
+        ],
+        "hintChips": [
+          "窓:window",
+          "開ける:open",
+          "ドア:door",
+          "閉める:close",
+          "ファイル:file",
+          "確認する:check",
+          "メール:email",
+          "送る:send"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use “Could you open the window?” to complete the exact communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Page title: Make it yours (自分の文にしよう) ; Exact learner instruction: Now use “Could you ___?” to ask me for one small, useful favor. ; Aligned Japanese: では、「Could you ___?」を使って、役に立つ小さなお願いを一つしてください。 ; Lexical hint(s): 窓:window | 開ける:open | 閉める:close | ファイル:file ; Exact substantive prompt(s): Now use “Could you ___?” to ask me for one small, useful favor.",
+      "learningTarget": "Pattern 1 communicative production for the lesson can-do “Make the same request at two levels of care.” using Could you open the window?.",
+      "pedagogicalValue": "The page turns Could you open the window? into a named real-world speech act instead of asking for a generic copied sentence.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you open the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 窓:window | 開ける:open | 閉める:close | ファイル:file; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 communicative production; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "窓:window",
+          "開ける:open",
+          "閉める:close",
+          "ファイル:file"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Could you ___?” to ask me for one small, useful favor."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud once.",
+      "tutorAction": "Introduce Pattern 2 in one line and move on after the learner reads the title.",
+      "targetOrPrompt": "Page title: Would you mind opening the window? ; Exact learner instruction: Next, let's practice this pattern. ; Aligned Japanese: 次に、このパターンを練習しましょう。",
+      "learningTarget": "Pattern 2 transition for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 transition—and advances the learner toward independent use of Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 次に、このパターンを練習しましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete Pattern 2 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain the displayed meaning, then have the learner read every example.",
+      "targetOrPrompt": "Page title: Today's pattern (今日のパターン) ; Exact learner instruction: Use this when you want to add another level of care. ; Aligned Japanese: さらに配慮してお願いしたいときに使います。 ; Highlighted target(s): Would you mind opening | 開けていただけますか | Would you mind closing | 閉めていただけますか | Would you mind checking | 確認していただけますか",
+      "learningTarget": "Pattern 2 meaning and models for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 meaning and models—and advances the learner toward independent use of Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: さらに配慮してお願いしたいときに使います。 | 窓を 開けていただけますか ？ | ドアを 閉めていただけますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 meaning and models; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Would you mind opening",
+          "開けていただけますか",
+          "Would you mind closing",
+          "閉めていただけますか",
+          "Would you mind checking",
+          "確認していただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 example aloud.",
+      "tutorAction": "Listen to each example and model only if help is needed.",
+      "targetOrPrompt": "Page title: Read the sentences (文を読もう) ; Exact learner instruction: Please read each sentence aloud. ; Aligned Japanese: 一文ずつ声に出して読んでください。 ; Highlighted target(s): Would you mind opening | 開けていただけますか | Would you mind closing | 閉めていただけますか | Would you mind checking | 確認していただけますか | Would you mind sending | 送っていただけますか",
+      "learningTarget": "Pattern 2 supported read-aloud for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 supported read-aloud—and advances the learner toward independent use of Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一文ずつ声に出して読んでください。 | 窓を 開けていただけますか ？ | ドアを 閉めていただけますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 supported read-aloud; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Would you mind opening",
+          "開けていただけますか",
+          "Would you mind closing",
+          "閉めていただけますか",
+          "Would you mind checking",
+          "確認していただけますか",
+          "Would you mind sending",
+          "送っていただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 2 operation briefly and check it once.",
+      "targetOrPrompt": "Page title: Mind plus -ing (mind＋-ing) ; Exact learner instruction: After Would you mind, use the -ing form, not to plus a verb. ; Aligned Japanese: Would you mind の後ろは to＋動詞ではなく、-ing 形にします。",
+      "learningTarget": "Pattern 2 form explanation for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 form explanation—and advances the learner toward independent use of Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: Would you mind の後ろは to＋動詞ではなく、-ing 形にします。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 form explanation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the form that matches each Japanese cue, then read the completed Pattern 2 sentence aloud.",
+      "tutorAction": "After each choice, require the complete spoken sentence before moving on.",
+      "targetOrPrompt": "Page title: Choose the pattern (パターンを選ぼう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Highlighted target(s): 開けて | 閉めて | 確認して | 送って",
+      "learningTarget": "Pattern 2 form discrimination for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "The page makes the learner use meaning to distinguish the exact forms needed for Would you mind opening the window?; correct branches are not mechanically identical across all rows.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | 窓を 開けて いただけますか？ | ドアを 閉めて いただけますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : opening versus to open | : to close versus closing | : checking versus to check | : to send versus sending",
+      "componentConsistency": "The page uses the established word-choice cards for Pattern 2 form discrimination; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "開けて",
+          "閉めて",
+          "確認して",
+          "送って"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put each Pattern 2 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Page title: Build the sentence (文を組み立てよう) ; Exact learner instruction: Put the words in order, then say the whole sentence out loud. ; Aligned Japanese: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Pattern 2 word-order retrieval for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 word-order retrieval—and advances the learner toward independent use of Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Would you mind opening the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice distractor is used; the learner must reconstruct the full word order and say it aloud.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 word-order retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole Pattern 2 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Page title: Say the complete sentence (文をまるごと言おう) ; Exact learner instruction: Say each whole sentence aloud, including the missing words. ; Aligned Japanese: 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 ; Highlighted target(s): 開けていただけますか | 閉めていただけますか | 確認していただけますか | 送っていただけますか ; Exact blank answer(s): Would you mind opening | Would you mind closing | Would you mind checking | Would you mind sending ; Lexical hint(s): 開ける:open | 閉める:close | 確認する:check | 送る:send",
+      "learningTarget": "Pattern 2 controlled retrieval for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "The learner retrieves the stable target span in Would you mind opening the window? and says the complete sentence; chips support only productive vocabulary.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Would you mind opening the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 開ける:open | 閉める:close | 確認する:check | 送る:send; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 controlled retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "開けていただけますか",
+          "閉めていただけますか",
+          "確認していただけますか",
+          "送っていただけますか"
+        ],
+        "blankAnswers": [
+          "Would you mind opening",
+          "Would you mind closing",
+          "Would you mind checking",
+          "Would you mind sending"
+        ],
+        "hintChips": [
+          "開ける:open",
+          "閉める:close",
+          "確認する:check",
+          "送る:send"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 2 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Page title: Say it in English (英語にしよう) ; Exact learner instruction: Read the Japanese, then say it in English. ; Aligned Japanese: 日本語を見て、英語で言ってみましょう。 ; Exact blank answer(s): Would you mind opening the window? | Would you mind closing the door? | Would you mind checking the file? | Would you mind sending the email? ; Lexical hint(s): 窓:window | 開ける:open | ドア:door | 閉める:close | ファイル:file | 確認する:check | メール:email | 送る:send",
+      "learningTarget": "Pattern 2 supported translation for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "The supported Japanese-to-English task retrieves Would you mind opening the window? while lexical chips remove only incidental vocabulary load.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Would you mind opening the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 窓:window | 開ける:open | ドア:door | 閉める:close | ファイル:file | 確認する:check | メール:email | 送る:send; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 supported translation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Would you mind opening the window?",
+          "Would you mind closing the door?",
+          "Would you mind checking the file?",
+          "Would you mind sending the email?"
+        ],
+        "hintChips": [
+          "窓:window",
+          "開ける:open",
+          "ドア:door",
+          "閉める:close",
+          "ファイル:file",
+          "確認する:check",
+          "メール:email",
+          "送る:send"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use “Would you mind opening the window?” to complete the exact communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Page title: Make it yours (自分の文にしよう) ; Exact learner instruction: Now use “Would you mind ___ing?” to make one request that needs extra care. ; Aligned Japanese: では、「Would you mind ___ing?」を使って、特に配慮が必要なお願いを一つしてください。 ; Lexical hint(s): 窓:window | 開ける:open | 閉める:close | メール:email ; Exact substantive prompt(s): Now use “Would you mind ___ing?” to make one request that needs extra care.",
+      "learningTarget": "Pattern 2 communicative production for the lesson can-do “Make the same request at two levels of care.” using Would you mind opening the window?.",
+      "pedagogicalValue": "The page turns Would you mind opening the window? into a named real-world speech act instead of asking for a generic copied sentence.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Would you mind opening the window? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 窓:window | 開ける:open | 閉める:close | メール:email; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 communicative production; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "窓:window",
+          "開ける:open",
+          "閉める:close",
+          "メール:email"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Would you mind ___ing?” to make one request that needs extra care."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the useful expressions and connect each one to its displayed meaning.",
+      "tutorAction": "Check the expressions briefly without turning the page into a drill.",
+      "targetOrPrompt": "Page title: Useful conversation support (会話を支える表現) ; Exact learner instruction: Read an optional phrase only when it fits. ; Aligned Japanese: 必要な場面だけで使える補助表現を読みましょう。",
+      "learningTarget": "Useful expression expansion for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—useful expression expansion—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? / Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 必要な場面だけで使える補助表現を読みましょう。 | ご面倒でなければ、これを確認してもらえますか？ | お時間のあるときに送ってもらえますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for useful expression expansion; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-polite-01",
+      "learnerAction": "Complete the exact review activity shown and say the result aloud.",
+      "tutorAction": "Run the displayed review check briefly and require the learner’s complete spoken answer.",
+      "targetOrPrompt": "Page title: Retrieve an earlier contrast (前の対比を思い出そう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Spiral check: POLITE-01 at contrast level",
+      "learningTarget": "Spiral review for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—spiral review—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? / Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | Could you の後ろは動詞の原形 | Would you mind の後ろは -ing 形; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : open versus opening | : check versus checking",
+      "componentConsistency": "The page uses the established word-choice cards for spiral-polite-01; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-modal-01",
+      "learnerAction": "Complete the exact review activity shown and say the result aloud.",
+      "tutorAction": "Run the displayed review check briefly and require the learner’s complete spoken answer.",
+      "targetOrPrompt": "Page title: Retrieve an earlier contrast (前の対比を思い出そう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Spiral check: MODAL-01 at transfer level",
+      "learningTarget": "Spiral review for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—spiral review—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? / Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | could の後ろは動詞の原形 | could の後ろは動詞の原形; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : open versus opening | : checking versus check",
+      "componentConsistency": "The page uses the established word-choice cards for spiral-modal-01; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and get ready to use both patterns in context.",
+      "tutorAction": "Set the roles and purpose concisely, then move into the dialogue.",
+      "targetOrPrompt": "Page title: Use it in a conversation (会話で使おう) ; Exact learner instruction: Now, let's use both patterns in a conversation. ; Aligned Japanese: では、二つのパターンを会話で使ってみましょう。",
+      "learningTarget": "Role-play transition for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—role-play transition—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Could you open the window? / Would you mind opening the window?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: では、二つのパターンを会話で使ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for role-play transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read the learner role aloud in the complete model conversation.",
+      "tutorAction": "Take the named partner role and read only that role’s lines.",
+      "targetOrPrompt": "Page title: Read the conversation (会話を読もう) ; Exact learner instruction: I'll be the coworker. Please read your lines aloud. ; Aligned Japanese: 私は同僚です。自分のセリフを声に出して読んでください。 ; Highlighted target(s): Could you open | 開けてもらえますか | Would you mind checking | 確認していただけますか ; Exact exchange: Coworker: It's getting warm in here. | Me: Could you open the window? | Coworker: Of course. Is there anything else? | Me: Would you mind checking the file? | Coworker: Sure. I'll look at it after lunch. | Me: Thanks. There's no rush.",
+      "learningTarget": "Complete model role-play for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—complete model role-play—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Could you open the window? / Would you mind opening the window?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私は同僚です。自分のセリフを声に出して読んでください。 | ここは少し暑くなってきましたね。 | 窓を 開けてもらえますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for complete model role-play; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Could you open",
+          "開けてもらえますか",
+          "Would you mind checking",
+          "確認していただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Supply each missing learner line aloud and continue the conversation.",
+      "tutorAction": "Play the partner role, pause for each learner line, and record only the learner’s missing words.",
+      "targetOrPrompt": "Page title: Complete the conversation (会話を完成しよう) ; Exact learner instruction: I’ll be the coworker. Say each complete line, including the missing words. ; Aligned Japanese: 私は同僚です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 ; Exact blank answer(s): Could you open | Would you mind checking ; Exact exchange: Coworker: It's getting warm in here. | Me: the window? | Coworker: Of course. Is there anything else? | Me: the file? | Coworker: Sure. I'll look at it after lunch. | Me: Thanks. There's no rush.",
+      "learningTarget": "Guided role-play completion for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—guided role-play completion—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Could you open the window? / Would you mind opening the window?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私は同僚です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 | ここは少し暑くなってきましたね。 | もちろんです。ほかにもありますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for guided role-play completion; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Could you open",
+          "Would you mind checking"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor’s real question, then ask the displayed reciprocal question.",
+      "tutorAction": "Answer the learner’s ask-back honestly and follow the most interesting detail; use the pattern only if natural.",
+      "targetOrPrompt": "Page title: Your real answer (自分の答え) ; Exact learner instruction: Let's talk about this topic. Answer my question, then ask me too. ; Aligned Japanese: この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。 ; Exact substantive prompt(s): What's a small favor you really appreciate when someone does it for you, and why? | What small favor do you appreciate most? ; Exact exchange: Tutor: What's a small favor you really appreciate when someone does it for you, and why? | Me: What small favor do you appreciate most?",
+      "learningTarget": "Reciprocal topic conversation for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "The page transfers the topic into a genuine two-way conversation: the learner gives a real answer and asks the tutor back without being forced into an unnatural target frame.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Could you open the window? / Would you mind opening the window?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。 | 誰かにしてもらうと本当にありがたい小さなことは何ですか？なぜですか？ | 先生はどんな小さなことをしてもらうと一番ありがたいですか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for reciprocal topic conversation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What's a small favor you really appreciate when someone does it for you, and why?",
+          "What small favor do you appreciate most?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both patterns in the second, less-supported conversation.",
+      "tutorAction": "Play the named partner role and let the learner handle their lines independently.",
+      "targetOrPrompt": "Page title: A new situation (別の場面) ; Exact learner instruction: I’ll be the coworker. Say each complete line, including the missing words. ; Aligned Japanese: 私は同僚です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 ; Exact blank answer(s): Could you close | Would you mind checking ; Exact exchange: Coworker: The hallway is noisy today. | Me: the door? | Coworker: Sure. Is there anything else? | Me: the file? | Coworker: Not at all. I'll check it this afternoon. | Me: Thank you. There's no rush.",
+      "learningTarget": "Independent transfer role-play for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—independent transfer role-play—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Could you open the window? / Would you mind opening the window?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私は同僚です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 | 今日は廊下が騒がしいですね。 | もちろんです。ほかにもありますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for independent transfer role-play; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Could you close",
+          "Would you mind checking"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the two natural-use examples and notice the stated nuance.",
+      "tutorAction": "Explain the practical nuance briefly and check the two examples.",
+      "targetOrPrompt": "Page title: A small favor or a low-priority favor? (小さなお願い・急がないお願い) ; Exact learner instruction: Use “if it's not too much trouble” when the favor may impose. Use “whenever you get a chance” when it is not urgent. ; Aligned Japanese: 負担をかけそうなら「if it's not too much trouble」を使います。急がないなら「whenever you get a chance」を使います。",
+      "learningTarget": "Natural-use nuance for the lesson can-do “Make the same request at two levels of care.” using Could you open the window? / Would you mind opening the window?.",
+      "pedagogicalValue": "This page has one job—natural-use nuance—and advances the learner toward independent use of Could you open the window? / Would you mind opening the window? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you open the window? / Would you mind opening the window? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 負担をかけそうなら「if it's not too much trouble」を使います。急がないなら「whenever you get a chance」を使います。 | ご面倒でなければ、これを確認してもらえますか？ | お時間のあるときに、これを確認してもらえますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for natural-use nuance; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

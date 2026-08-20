@@ -1,0 +1,780 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/62-do-you-know-where-it-is/lesson.html",
+  "lessonSha256": "c3f6f75c9ae99e73781de99d312e1e853607fc59c0408ceaf15550c7b8aa63a6",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the exact can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Page title: Do you know where it is? (どこにあるか分かりますか？) ; Exact learner instruction: Ask for place and time information without sounding abrupt. Please read the title aloud. ; Aligned Japanese: ぶしつけに聞こえないように、場所と時刻をたずねましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Lesson orientation for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—lesson orientation—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? / Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: ぶしつけに聞こえないように、場所と時刻をたずねましょう。タイトルを声に出して読んでください。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for lesson orientation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown.",
+      "tutorAction": "Listen to the familiar words and keep this activation brief.",
+      "targetOrPrompt": "Page title: Words you know (知っている単語) ; Exact learner instruction: Say the three familiar words in English. ; Aligned Japanese: 知っている3つの単語を英語で言いましょう。",
+      "learningTarget": "Known-word activation for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—known-word activation—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? / Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 知っている3つの単語を英語で言いましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for known-word activation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud once.",
+      "tutorAction": "Introduce Pattern 1 in one line and move on after the learner reads the title.",
+      "targetOrPrompt": "Page title: Do you know where the station is? ; Exact learner instruction: First, let's practice this pattern. ; Aligned Japanese: まず、このパターンを練習しましょう。",
+      "learningTarget": "Pattern 1 transition for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 transition—and advances the learner toward independent use of Do you know where the station is? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: まず、このパターンを練習しましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete Pattern 1 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain the displayed meaning, then have the learner read every example.",
+      "targetOrPrompt": "Page title: Today's pattern (今日のパターン) ; Exact learner instruction: Use this to ask politely where something is. ; Aligned Japanese: 場所を丁寧にたずねるときに使います。 ; Highlighted target(s): Do you know where the station is | 駅がどこにあるか分かりますか | Do you know where the bank is | 銀行がどこにあるか分かりますか | Do you know where the café is | カフェがどこにあるか分かりますか",
+      "learningTarget": "Pattern 1 meaning and models for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 meaning and models—and advances the learner toward independent use of Do you know where the station is? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 場所を丁寧にたずねるときに使います。 | 駅がどこにあるか分かりますか ？ | 銀行がどこにあるか分かりますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 meaning and models; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Do you know where",
+          "the station is",
+          "駅がどこにあるか分かりますか",
+          "Do you know where",
+          "the bank is",
+          "銀行がどこにあるか分かりますか",
+          "Do you know where",
+          "the café is",
+          "カフェがどこにあるか分かりますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 example aloud.",
+      "tutorAction": "Listen to each example and model only if help is needed.",
+      "targetOrPrompt": "Page title: Read the sentences (文を読もう) ; Exact learner instruction: Please read each sentence aloud. ; Aligned Japanese: 一文ずつ声に出して読んでください。 ; Highlighted target(s): Do you know where the station is | 駅がどこにあるか分かりますか | Do you know where the bank is | 銀行がどこにあるか分かりますか | Do you know where the café is | カフェがどこにあるか分かりますか | Do you know where the meeting room is | 会議室がどこにあるか分かりますか",
+      "learningTarget": "Pattern 1 supported read-aloud for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 supported read-aloud—and advances the learner toward independent use of Do you know where the station is? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一文ずつ声に出して読んでください。 | 駅がどこにあるか分かりますか ？ | 銀行がどこにあるか分かりますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 supported read-aloud; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Do you know where the station is",
+          "駅がどこにあるか分かりますか",
+          "Do you know where the bank is",
+          "銀行がどこにあるか分かりますか",
+          "Do you know where the café is",
+          "カフェがどこにあるか分かりますか",
+          "Do you know where the meeting room is",
+          "会議室がどこにあるか分かりますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 1 operation briefly and check it once.",
+      "targetOrPrompt": "Page title: Undo question order inside (中では疑問文の語順を戻す) ; Exact learner instruction: After Do you know where, return to statement order: the station is. ; Aligned Japanese: Do you know where の後ろは普通の語順に戻し、the station is とします。",
+      "learningTarget": "Pattern 1 form explanation for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 form explanation—and advances the learner toward independent use of Do you know where the station is? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: Do you know where の後ろは普通の語順に戻し、the station is とします。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 form explanation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put each Pattern 1 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Page title: Build the sentence (文を組み立てよう) ; Exact learner instruction: Put the words in order, then say the whole sentence out loud. ; Aligned Japanese: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Pattern 1 word-order retrieval for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "This page has one job—Pattern 1 word-order retrieval—and advances the learner toward independent use of Do you know where the station is? without duplicating the adjacent page.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Do you know where the station is? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice distractor is used; the learner must reconstruct the full word order and say it aloud.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 word-order retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole Pattern 1 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Page title: Say the complete sentence (文をまるごと言おう) ; Exact learner instruction: Say each whole sentence aloud, including the missing words. ; Aligned Japanese: 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 ; Highlighted target(s): 駅がどこにあるか分かりますか | 銀行がどこにあるか分かりますか | カフェがどこにあるか分かりますか | 会議室がどこにあるか分かりますか ; Exact blank answer(s): Do you know where the station is | Do you know where the bank is | Do you know where the café is | Do you know where the meeting room is ; Lexical hint(s): 駅:station | 銀行:bank | カフェ:café | 会議室:meeting room",
+      "learningTarget": "Pattern 1 controlled retrieval for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "The learner retrieves the stable target span in Do you know where the station is? and says the complete sentence; chips support only productive vocabulary.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Do you know where the station is? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 駅:station | 銀行:bank | カフェ:café | 会議室:meeting room; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 controlled retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "駅がどこにあるか分かりますか",
+          "銀行がどこにあるか分かりますか",
+          "カフェがどこにあるか分かりますか",
+          "会議室がどこにあるか分かりますか"
+        ],
+        "blankAnswers": [
+          "Do you know where the station is",
+          "Do you know where the bank is",
+          "Do you know where the café is",
+          "Do you know where the meeting room is"
+        ],
+        "hintChips": [
+          "駅:station",
+          "銀行:bank",
+          "カフェ:café",
+          "会議室:meeting room"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 1 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Page title: Say it in English (英語にしよう) ; Exact learner instruction: Read the Japanese, then say it in English. ; Aligned Japanese: 日本語を見て、英語で言ってみましょう。 ; Exact blank answer(s): Do you know where the station is? | Do you know where the bank is? | Do you know where the café is? | Do you know where the meeting room is? ; Lexical hint(s): 駅:station | 銀行:bank | カフェ:café | 会議室:meeting room",
+      "learningTarget": "Pattern 1 supported translation for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "The supported Japanese-to-English task retrieves Do you know where the station is? while lexical chips remove only incidental vocabulary load.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Do you know where the station is? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 駅:station | 銀行:bank | カフェ:café | 会議室:meeting room; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 supported translation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Do you know where the station is?",
+          "Do you know where the bank is?",
+          "Do you know where the café is?",
+          "Do you know where the meeting room is?"
+        ],
+        "hintChips": [
+          "駅:station",
+          "銀行:bank",
+          "カフェ:café",
+          "会議室:meeting room"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use “Do you know where the station is?” to complete the exact communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Page title: Make it yours (自分の文にしよう) ; Exact learner instruction: Now use “Do you know where ___ is?” to ask where one useful place is. ; Aligned Japanese: では、「Do you know where ___ is?」を使って、役に立つ場所を一つたずねてください。 ; Lexical hint(s): 駅:station | 銀行:bank | 会議室:meeting room ; Exact substantive prompt(s): Now use “Do you know where ___ is?” to ask where one useful place is.",
+      "learningTarget": "Pattern 1 communicative production for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is?.",
+      "pedagogicalValue": "The page turns Do you know where the station is? into a named real-world speech act instead of asking for a generic copied sentence.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Do you know where the station is? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 駅:station | 銀行:bank | 会議室:meeting room; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 communicative production; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "駅:station",
+          "銀行:bank",
+          "会議室:meeting room"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Do you know where ___ is?” to ask where one useful place is."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud once.",
+      "tutorAction": "Introduce Pattern 2 in one line and move on after the learner reads the title.",
+      "targetOrPrompt": "Page title: Could you tell me when the next train leaves? ; Exact learner instruction: Next, let's practice this pattern. ; Aligned Japanese: 次に、このパターンを練習しましょう。",
+      "learningTarget": "Pattern 2 transition for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 transition—and advances the learner toward independent use of Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 次に、このパターンを練習しましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete Pattern 2 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain the displayed meaning, then have the learner read every example.",
+      "targetOrPrompt": "Page title: Today's pattern (今日のパターン) ; Exact learner instruction: Use this to ask politely when something happens. ; Aligned Japanese: 時刻を丁寧にたずねるときに使います。 ; Highlighted target(s): Could you tell me when the next train leaves | 次の電車がいつ出るか教えてもらえますか | Could you tell me when the shop opens | 店がいつ開くか教えてもらえますか | Could you tell me when the meeting starts | 会議がいつ始まるか教えてもらえますか",
+      "learningTarget": "Pattern 2 meaning and models for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 meaning and models—and advances the learner toward independent use of Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 時刻を丁寧にたずねるときに使います。 | 次の電車がいつ出るか教えてもらえますか ？ | 店がいつ開くか教えてもらえますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 meaning and models; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Could you tell me when the next train leaves",
+          "次の電車がいつ出るか教えてもらえますか",
+          "Could you tell me when the shop opens",
+          "店がいつ開くか教えてもらえますか",
+          "Could you tell me when the meeting starts",
+          "会議がいつ始まるか教えてもらえますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 example aloud.",
+      "tutorAction": "Listen to each example and model only if help is needed.",
+      "targetOrPrompt": "Page title: Read the sentences (文を読もう) ; Exact learner instruction: Please read each sentence aloud. ; Aligned Japanese: 一文ずつ声に出して読んでください。 ; Highlighted target(s): Could you tell me when the next train leaves | 次の電車がいつ出るか教えてもらえますか | Could you tell me when the shop opens | 店がいつ開くか教えてもらえますか | Could you tell me when the meeting starts | 会議がいつ始まるか教えてもらえますか | Could you tell me when the café closes | カフェがいつ閉まるか教えてもらえますか",
+      "learningTarget": "Pattern 2 supported read-aloud for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 supported read-aloud—and advances the learner toward independent use of Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一文ずつ声に出して読んでください。 | 次の電車がいつ出るか教えてもらえますか ？ | 店がいつ開くか教えてもらえますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 supported read-aloud; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Could you tell me when the next train leaves",
+          "次の電車がいつ出るか教えてもらえますか",
+          "Could you tell me when the shop opens",
+          "店がいつ開くか教えてもらえますか",
+          "Could you tell me when the meeting starts",
+          "会議がいつ始まるか教えてもらえますか",
+          "Could you tell me when the café closes",
+          "カフェがいつ閉まるか教えてもらえますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 2 operation briefly and check it once.",
+      "targetOrPrompt": "Page title: Keep subject before verb (主語を動詞の前に) ; Exact learner instruction: After when, keep the complete subject before its verb: the next train leaves. ; Aligned Japanese: when の後ろは、主語全体を動詞の前に置き、the next train leaves とします。",
+      "learningTarget": "Pattern 2 form explanation for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 form explanation—and advances the learner toward independent use of Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: when の後ろは、主語全体を動詞の前に置き、the next train leaves とします。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 form explanation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put each Pattern 2 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Page title: Build the sentence (文を組み立てよう) ; Exact learner instruction: Put the words in order, then say the whole sentence out loud. ; Aligned Japanese: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Pattern 2 word-order retrieval for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—Pattern 2 word-order retrieval—and advances the learner toward independent use of Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you tell me when the next train leaves? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice distractor is used; the learner must reconstruct the full word order and say it aloud.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 word-order retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole Pattern 2 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Page title: Say the complete sentence (文をまるごと言おう) ; Exact learner instruction: Say each whole sentence aloud, including the missing words. ; Aligned Japanese: 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 ; Highlighted target(s): 次の電車がいつ出るか教えてもらえますか | 店がいつ開くか教えてもらえますか | 会議がいつ始まるか教えてもらえますか | カフェがいつ閉まるか教えてもらえますか ; Exact blank answer(s): Could you tell me when the next train leaves | Could you tell me when the shop opens | Could you tell me when the meeting starts | Could you tell me when the café closes ; Lexical hint(s): 次の電車:next train | 店:shop | 会議:meeting | カフェ:café",
+      "learningTarget": "Pattern 2 controlled retrieval for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "The learner retrieves the stable target span in Could you tell me when the next train leaves? and says the complete sentence; chips support only productive vocabulary.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you tell me when the next train leaves? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 次の電車:next train | 店:shop | 会議:meeting | カフェ:café; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 controlled retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "次の電車がいつ出るか教えてもらえますか",
+          "店がいつ開くか教えてもらえますか",
+          "会議がいつ始まるか教えてもらえますか",
+          "カフェがいつ閉まるか教えてもらえますか"
+        ],
+        "blankAnswers": [
+          "Could you tell me when the next train leaves",
+          "Could you tell me when the shop opens",
+          "Could you tell me when the meeting starts",
+          "Could you tell me when the café closes"
+        ],
+        "hintChips": [
+          "次の電車:next train",
+          "店:shop",
+          "会議:meeting",
+          "カフェ:café"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 2 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Page title: Say it in English (英語にしよう) ; Exact learner instruction: Read the Japanese, then say it in English. ; Aligned Japanese: 日本語を見て、英語で言ってみましょう。 ; Exact blank answer(s): Could you tell me when the next train leaves? | Could you tell me when the shop opens? | Could you tell me when the meeting starts? | Could you tell me when the café closes? ; Lexical hint(s): 次の電車:next train | 出発する:leave | 店:shop | 開く:open | 会議:meeting | 始まる:start | カフェ:café | 閉まる:close",
+      "learningTarget": "Pattern 2 supported translation for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "The supported Japanese-to-English task retrieves Could you tell me when the next train leaves? while lexical chips remove only incidental vocabulary load.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you tell me when the next train leaves? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 次の電車:next train | 出発する:leave | 店:shop | 開く:open | 会議:meeting | 始まる:start | カフェ:café | 閉まる:close; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 supported translation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Could you tell me when the next train leaves?",
+          "Could you tell me when the shop opens?",
+          "Could you tell me when the meeting starts?",
+          "Could you tell me when the café closes?"
+        ],
+        "hintChips": [
+          "次の電車:next train",
+          "出発する:leave",
+          "店:shop",
+          "開く:open",
+          "会議:meeting",
+          "始まる:start",
+          "カフェ:café",
+          "閉まる:close"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use “Could you tell me when the next train leaves?” to complete the exact communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Page title: Make it yours (自分の文にしよう) ; Exact learner instruction: Now use “Could you tell me when ___?” to ask about one real time or event. ; Aligned Japanese: では、「Could you tell me when ___?」を使って、実際の時刻や予定を一つたずねてください。 ; Lexical hint(s): 次の電車:next train | 会議:meeting | カフェ:café ; Exact substantive prompt(s): Now use “Could you tell me when ___?” to ask about one real time or event.",
+      "learningTarget": "Pattern 2 communicative production for the lesson can-do “Ask for place and time information without sounding abrupt.” using Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "The page turns Could you tell me when the next train leaves? into a named real-world speech act instead of asking for a generic copied sentence.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve Could you tell me when the next train leaves? while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 次の電車:next train | 会議:meeting | カフェ:café; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 communicative production; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "次の電車:next train",
+          "会議:meeting",
+          "カフェ:café"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Could you tell me when ___?” to ask about one real time or event."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the useful expressions and connect each one to its displayed meaning.",
+      "tutorAction": "Check the expressions briefly without turning the page into a drill.",
+      "targetOrPrompt": "Page title: Useful conversation support (会話を支える表現) ; Exact learner instruction: Read an optional phrase only when it fits. ; Aligned Japanese: 必要な場面だけで使える補助表現を読みましょう。",
+      "learningTarget": "Useful expression expansion for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—useful expression expansion—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? / Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 必要な場面だけで使える補助表現を読みましょう。 | お邪魔してすみません。どこにあるか分かりますか？ | もしかして、分かりますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for useful expression expansion; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-order-01",
+      "learnerAction": "Complete the exact review activity shown and say the result aloud.",
+      "tutorAction": "Run the displayed review check briefly and require the learner’s complete spoken answer.",
+      "targetOrPrompt": "Page title: Retrieve an earlier contrast (前の対比を思い出そう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Spiral check: ORDER-01 at transfer level",
+      "learningTarget": "Spiral review for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—spiral review—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? / Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | Do you know where the station is? の内側 | Could you tell me when the train leaves? の内側; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : subject first versus verb first | : verb first versus subject first",
+      "componentConsistency": "The page uses the established word-choice cards for spiral-order-01; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-rel-01",
+      "learnerAction": "Complete the exact review activity shown and say the result aloud.",
+      "tutorAction": "Run the displayed review check briefly and require the learner’s complete spoken answer.",
+      "targetOrPrompt": "Page title: Retrieve an earlier contrast (前の対比を思い出そう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Spiral check: REL-01 at contrast level",
+      "learningTarget": "Spiral review for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—spiral review—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? / Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | さっき電話した人 | ドアを開ける物; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : who called versus called who | : opens that versus that opens",
+      "componentConsistency": "The page uses the established word-choice cards for spiral-rel-01; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and get ready to use both patterns in context.",
+      "tutorAction": "Set the roles and purpose concisely, then move into the dialogue.",
+      "targetOrPrompt": "Page title: Use it in a conversation (会話で使おう) ; Exact learner instruction: Now, let's use both patterns in a conversation. ; Aligned Japanese: では、二つのパターンを会話で使ってみましょう。",
+      "learningTarget": "Role-play transition for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—role-play transition—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Do you know where the station is? / Could you tell me when the next train leaves?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: では、二つのパターンを会話で使ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for role-play transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read the learner role aloud in the complete model conversation.",
+      "tutorAction": "Take the named partner role and read only that role’s lines.",
+      "targetOrPrompt": "Page title: Read the conversation (会話を読もう) ; Exact learner instruction: I'll be the hotel receptionist. Please read your lines aloud. ; Aligned Japanese: 私はホテルの受付係です。自分のセリフを声に出して読んでください。 ; Highlighted target(s): Do you know where the station is | 駅がどこにあるか分かりますか | Could you tell me when the next train leaves | 次の電車がいつ出るか教えてもらえますか ; Exact exchange: Hotel receptionist: Where are you heading this afternoon? | Me: Do you know where the station is ? | Hotel receptionist: It's two blocks away. Do you need the departure time too? | Me: Could you tell me when the next train leaves ? | Hotel receptionist: It leaves at 3:20 from platform four. | Me: Great. Thank you for your help.",
+      "learningTarget": "Complete model role-play for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—complete model role-play—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Do you know where the station is? / Could you tell me when the next train leaves?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私はホテルの受付係です。自分のセリフを声に出して読んでください。 | 今日の午後はどちらへ向かいますか？ | 駅がどこにあるか分かりますか ？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for complete model role-play; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [
+          "Do you know where the station is",
+          "駅がどこにあるか分かりますか",
+          "Could you tell me when the next train leaves",
+          "次の電車がいつ出るか教えてもらえますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Supply each missing learner line aloud and continue the conversation.",
+      "tutorAction": "Play the partner role, pause for each learner line, and record only the learner’s missing words.",
+      "targetOrPrompt": "Page title: Complete the conversation (会話を完成しよう) ; Exact learner instruction: I’ll be the hotel receptionist. Say each complete line, including the missing words. ; Aligned Japanese: 私はホテルの受付係です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 ; Exact blank answer(s): Do you know where the station is | Could you tell me when the next train leaves ; Exact exchange: Hotel receptionist: Where are you heading this afternoon? | Me: ? | Hotel receptionist: It's two blocks away. Do you need the departure time too? | Me: ? | Hotel receptionist: It leaves at 3:20 from platform four. | Me: Great. Thank you for your help.",
+      "learningTarget": "Guided role-play completion for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—guided role-play completion—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Do you know where the station is? / Could you tell me when the next train leaves?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私はホテルの受付係です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 | 今日の午後はどちらへ向かいますか？ | 2ブロック先です。出発時刻も必要ですか？; no unrelated memory test is added.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for guided role-play completion; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Do you know where the station is",
+          "Could you tell me when the next train leaves"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor’s real question, then ask the displayed reciprocal question.",
+      "tutorAction": "Answer the learner’s ask-back honestly and follow the most interesting detail; use the pattern only if natural.",
+      "targetOrPrompt": "Page title: Your real answer (自分の答え) ; Exact learner instruction: Let's talk about this topic. Answer my question, then ask me too. ; Aligned Japanese: この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。 ; Exact substantive prompt(s): When you arrive somewhere new, what information do you usually need first? | What information do you usually need first? ; Exact exchange: Tutor: When you arrive somewhere new, what information do you usually need first? | Me: What information do you usually need first?",
+      "learningTarget": "Reciprocal topic conversation for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "The page transfers the topic into a genuine two-way conversation: the learner gives a real answer and asks the tutor back without being forced into an unnatural target frame.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Do you know where the station is? / Could you tell me when the next train leaves?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。 | 初めての場所に着いたとき、最初にどんな情報が必要ですか？ | 先生は最初にどんな情報が必要ですか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for reciprocal topic conversation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When you arrive somewhere new, what information do you usually need first?",
+          "What information do you usually need first?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both patterns in the second, less-supported conversation.",
+      "tutorAction": "Play the named partner role and let the learner handle their lines independently.",
+      "targetOrPrompt": "Page title: A new situation (別の場面) ; Exact learner instruction: I’ll be the receptionist. Say each complete line, including the missing words. ; Aligned Japanese: 私は受付係です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 ; Exact blank answer(s): Do you know where the meeting room is | Could you tell me when the meeting starts ; Exact exchange: Receptionist: Welcome. Are you here for the team meeting? | Me: ? | Receptionist: It's on the second floor. Do you need the start time too? | Me: ? | Receptionist: It starts at ten, so you have time. | Me: Perfect. I'll go upstairs now.",
+      "learningTarget": "Independent transfer role-play for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—independent transfer role-play—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with Do you know where the station is? / Could you tell me when the next train leaves?, rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私は受付係です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 | ようこそ。チーム会議にいらっしゃいましたか？ | 2階です。開始時刻も必要ですか？; no unrelated memory test is added.",
+      "articleTreatment": "Any article inside the exact answer belongs to the stable authored phrase and is retrieved as part of that meaning; lexical chips do not supply it.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for independent transfer role-play; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Do you know where the meeting room is",
+          "Could you tell me when the meeting starts"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the two natural-use examples and notice the stated nuance.",
+      "tutorAction": "Explain the practical nuance briefly and check the two examples.",
+      "targetOrPrompt": "Page title: An apology or a soft possibility? (おわび・控えめな可能性) ; Exact learner instruction: Start with “sorry to bother you” when interrupting. Add “by any chance” when the person may not know. ; Aligned Japanese: 話しかけて邪魔をするときは「sorry to bother you」を使います。相手が知らないかもしれないときは「by any chance」を加えます。",
+      "learningTarget": "Natural-use nuance for the lesson can-do “Ask for place and time information without sounding abrupt.” using Do you know where the station is? / Could you tell me when the next train leaves?.",
+      "pedagogicalValue": "This page has one job—natural-use nuance—and advances the learner toward independent use of Do you know where the station is? / Could you tell me when the next train leaves? without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of Do you know where the station is? / Could you tell me when the next train leaves? before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 話しかけて邪魔をするときは「sorry to bother you」を使います。相手が知らないかもしれないときは「by any chance」を加えます。 | お邪魔してすみません。駅がどこか分かりますか？ | もしかして、駅がどこか分かりますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for natural-use nuance; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact page instruction, target spans, answers, lexical hints, choices, and dialogue turns above were read against the current generated HTML. Root retains the 360/480 visual and formal human-page gates.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

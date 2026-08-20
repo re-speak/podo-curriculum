@@ -110,11 +110,31 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
         raise AssertionError(f"missing owner {review_id}")
 
     def test_batch_is_complete_and_explicit(self):
-        for values in (batch.LESSONS, batch.SPECS, batch.VOCAB, batch.KNOWN_WORDS, batch.TRANSLATE_HINTS, batch.OPEN_MENUS, batch.DIALOGUES, batch.LIVE_SCENES, batch.LIVE_HINTS, batch.DIALOGUE_SEMANTIC_LEDGER, batch.SPIRAL_MARKERS):
+        for values in (
+            batch.LESSONS, batch.SPECS, batch.VOCAB, batch.KNOWN_WORDS,
+            batch.TRANSLATE_HINTS, batch.TRANSLATE_STAGES, batch.OPEN_MENUS,
+            batch.DIALOGUES, batch.LIVE_SCENES, batch.LIVE_HINTS,
+            batch.DIALOGUE_SEMANTIC_LEDGER, batch.SPIRAL_MARKERS,
+            batch.WRITE_PROMPTS, batch.FILL_HINTS, batch.CHOICE_OMISSIONS,
+            batch.REVIEWED_LIVE,
+        ):
             self.assertEqual(set(values), EXPECTED)
         for number, categories in batch.VOCAB.items():
             self.assertEqual(set(categories), {"new", "recycled", "assumed", "receptive"}, number)
             self.assertLessEqual(len(self.words(number, "new")), 8, number)
+
+    def test_generation_scope_is_exactly_core_60_through_70(self):
+        expected_paths = {
+            batch.TRACK / "courses" / batch.COURSE / "lessons"
+            / f"{number:02d}-{batch.LESSONS[number]['slug']}" / "lesson.html"
+            for number in EXPECTED
+        }
+        actual_paths = {
+            batch.build(number, data)[0]
+            for number, data in batch.LESSONS.items()
+        }
+        self.assertEqual(actual_paths, expected_paths)
+        self.assertTrue(all(path.parent.name[:2].isdigit() for path in actual_paths))
 
     def test_exact_brief_models_and_support_are_visible(self):
         for number, data in batch.LESSONS.items():
@@ -127,28 +147,34 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
             for term in SUPPORT_TERMS[number]:
                 self.assertIn(term.casefold(), support_visible, (number, term))
 
-    def test_choices_are_small_meaning_units_and_rebuild_real_examples(self):
+    def test_core62_long_embedded_questions_have_a_narrow_break(self):
+        _, deck = batch.build(62, batch.LESSONS[62])
+        teach = dict(check_deck.pages(deck))["p1-teach"]
+        self.assertEqual(
+            teach.count(
+                '<span class="ending">Do you know where</span><br>'
+                '<span class="ending">the '
+            ),
+            3,
+        )
+
+    def test_choice_pages_are_discriminating_or_intentionally_omitted(self):
         for number, spec in batch.SPECS.items():
             omitted = set(batch.LESSONS[number].get("omit_choice", ()))
-            examples = {
-                shared_core.strip_marks(row[0])
-                for part in (1, 2)
-                for row in batch.LESSONS[number][f"p{part}"]
-            }
+            self.assertEqual(omitted, batch.CHOICE_OMISSIONS[number])
             for part, rows in enumerate(spec["choices"], start=1):
                 if part in omitted:
+                    self.assertEqual(rows, (), (number, part))
                     continue
                 self.assertEqual(len(rows), 4, (number, part))
-                for japanese, prefix, correct, distractor, suffix in rows:
-                    self.assertIn("{t}", japanese, (number, part))
-                    self.assertNotEqual(correct, distractor)
+                correct_answers = set()
+                for japanese, _, correct, distractor, _ in rows:
+                    self.assertEqual(japanese.count("{t}"), 1, (number, part))
+                    self.assertEqual(japanese.count("{/t}"), 1, (number, part))
+                    self.assertNotEqual(correct.casefold(), distractor.casefold())
                     self.assertLessEqual(len(correct.split()), 3, (number, part, correct))
-                    self.assertLessEqual(len(distractor.split()), 3, (number, part, distractor))
-                    if (number, part) not in SEMANTIC_CHOICE_PAGES:
-                        self.assertIn(prefix + correct + suffix, examples, (number, part, prefix + correct + suffix))
-        for japanese, prefix, correct, distractor, suffix in batch.SPECS[65]["choices"][0]:
-            self.assertRegex(prefix, r"^(?:My .+ was stolen|Someone stole my .+)\. This sentence is $")
-            self.assertEqual({correct, distractor}, {"active", "passive"})
+                    correct_answers.add(correct.casefold())
+                self.assertGreater(len(correct_answers), 1, (number, part, correct_answers))
 
     def test_reorders_are_honest_or_explicitly_justified(self):
         actual = set()
@@ -221,7 +247,7 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
             ] + [
                 turn[3]
                 for turn in batch.LIVE_SCENES[number]
-                if turn[0:2] == ("input", "me")
+                if turn[0:2] == ("input", "me") and turn[3] != "Student's answer"
             ]
             produced = [line.replace("___ing", "___") for line in produced]
             missing = {
@@ -236,26 +262,36 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
             _, deck = batch.build(number, data)
             pages = dict(check_deck.pages(deck))
             for part in (1, 2):
+                self.assertEqual(batch.TRANSLATE_STAGES[number][part - 1], "supported")
                 self.assertEqual(len(batch.TRANSLATE_HINTS[number][part - 1]), 4)
                 self.assertEqual(pages[f"p{part}-translate"].count('class="task-block"'), 4)
                 self.assertGreaterEqual(pages[f"p{part}-translate"].count('class="hint"'), 4)
+                self.assertIn('data-scaffolding-contract="target-v2"', pages[f"p{part}-translate"])
+                self.assertIn('data-support-stage="supported"', pages[f"p{part}-translate"])
+                self.assertEqual(len(batch.FILL_HINTS[number][part - 1]), 4)
+                self.assertGreaterEqual(pages[f"p{part}-fill"].count('class="hint"'), 4)
                 self.assertIn('class="hint"', pages[f"p{part}-write"])
-            learner_inputs = sum(turn[0:2] == ("input", "me") for turn in batch.LIVE_SCENES[number])
-            self.assertGreaterEqual(pages["p3-freetalk"].count('class="hint"'), learner_inputs)
+                prompt_en, prompt_ja = batch.WRITE_PROMPTS[number][part - 1]
+                self.assertTrue(prompt_en.startswith("Now use “"), (number, part, prompt_en))
+                self.assertTrue(prompt_ja.startswith("では、「"), (number, part, prompt_ja))
+                self.assertIn("___", prompt_en)
+            self.assertNotIn('class="hint"', pages["p3-freetalk"])
 
     def test_live_pages_are_audio_safe_reciprocal_and_branch_safe(self):
         for number, scene in batch.LIVE_SCENES.items():
-            self.assertEqual(scene[0][:3], ("text", "other", "Tutor"), number)
-            self.assertTrue(any(turn[0:2] == ("input", "me") for turn in scene), number)
-            self.assertTrue(any(turn[0:2] == ("input", "other") for turn in scene), number)
-            if number in {63, 67, 69, 70}:
-                self.assertIn(" / ", scene[1][3], number)
-                self.assertIn("／", scene[1][4], number)
+            question, question_ja, ask_back, ask_back_ja = batch.REVIEWED_LIVE[number]
+            self.assertEqual(scene, (
+                ("text", "other", "Tutor", question, question_ja),
+                ("input", "me", "Me", "Student's answer", "自分の本当の答え"),
+                ("text", "me", "Me", ask_back, ask_back_ja),
+                ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え"),
+            ))
+            self.assertIn("?", question)
+            self.assertIn("？", question_ja)
+            self.assertIn("?", ask_back)
+            self.assertIn("？", ask_back_ja)
             self.assertNotRegex(scene[0][3].casefold(), r"look at me|watch me|gesture")
-            self.assertTrue(any(turn[1] == "me" and turn[3].strip().endswith("?") for turn in scene[1:]), number)
-            self.assertIn("tutor's", scene[-1][3].casefold(), number)
-            learner_input_indexes = {i for i, turn in enumerate(scene) if turn[0:2] == ("input", "me")}
-            self.assertEqual(set(batch.LIVE_HINTS[number]), learner_input_indexes, number)
+            self.assertEqual(batch.LIVE_HINTS[number], {})
             _, deck = batch.build(number, batch.LESSONS[number])
             page = dict(check_deck.pages(deck))["p3-freetalk"]
             self.assertEqual(page.count('class="turn '), len(scene), number)
@@ -264,18 +300,11 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
                     continue
                 self.assertIn(f'data-sync-id="live-{index}"', page, number)
 
-        core61 = batch.LIVE_SCENES[61]
-        self.assertEqual(core61[0][3], "Do you mind if I open the window?")
-        self.assertTrue(core61[1][3].startswith("Not at all"))
-        self.assertEqual(core61[2][3], "Do you mind if I sit here?")
-        self.assertTrue(batch.LESSONS[61]["prompt"][0].startswith("Answer one permission request"))
-        core64 = batch.LIVE_SCENES[64]
-        self.assertEqual(core64[0][3], "My laptop won't turn on.")
-        self.assertEqual(core64[1][3].count("?"), 1)
-        self.assertEqual(core64[3][3].count("?"), 1)
-        self.assertEqual(core64[2][0:2], ("input", "other"))
-        self.assertEqual(core64[4][0:2], ("input", "other"))
-        self.assertTrue(batch.LESSONS[64]["prompt"][0].startswith("Suggest one fix"))
+        for number in EXPECTED:
+            self.assertEqual(
+                batch.LESSONS[number]["prompt"][0],
+                "Let's talk about this topic. Answer my question, then ask me too.",
+            )
 
     def test_model_completion_transfer_are_six_turn_resolved_scenes(self):
         for number, data in batch.LESSONS.items():
@@ -297,11 +326,7 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
                 self.assertEqual(core62[0], "Hotel receptionist")
                 self.assertIn("heading", core62[3][0])
                 self.assertNotEqual(core62[0], "Station staff")
-        for part in batch.SPECS[62]["choices"]:
-            for _, prefix, correct, distractor, _ in part:
-                self.assertIn("? Inside: ", prefix)
-                self.assertEqual(correct, "subject first")
-                self.assertEqual(distractor, "verb first")
+        self.assertEqual(batch.SPECS[62]["choices"], ((), ()))
         core60_spiral = batch.spiral_page(60, "POLITE-01", "contrast")
         self.assertNotIn("普通の丁寧なお願い", core60_spiral)
         self.assertIn("Could you の後ろは動詞の原形", core60_spiral)
@@ -310,6 +335,10 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
         self.assertIn("This train is quiet", batch.DIALOGUES[63]["wild"][5][0])
         self.assertIn("commute every day", batch.DIALOGUES[67]["wild"][3][0])
         self.assertNotIn("work setup at home", batch.DIALOGUES[67]["wild"][3][0])
+        self.assertIn("theft report", batch.WRITE_PROMPTS[65][0][0])
+        self.assertNotIn("lost-property report", batch.WRITE_PROMPTS[65][0][0])
+        self.assertIn("said they would do", batch.LESSONS[69]["goal"][0])
+        self.assertNotIn("promised", batch.LESSONS[69]["goal"][0])
         for number in (63, 69, 70):
             for part in ("p1", "p2"):
                 for _, japanese, _ in batch.LESSONS[number][part]:
@@ -324,6 +353,14 @@ class CoreCarefulInteractionBatchTests(unittest.TestCase):
                 "He asked me to mention it.", "She asked me to share the file.",
                 "He asked me to call today.", "She asked me to open the door.",
             })
+        self.assertEqual(
+            {row[2] for row in batch.SPECS[61]["choices"][1]},
+            {"Not at all", "Sorry"},
+        )
+        self.assertEqual(
+            {row[2] for row in batch.SPECS[68]["choices"][0]},
+            {"must be", "might be"},
+        )
 
     def test_sentence_length_controls_are_static_wrapping_textareas(self):
         self.assertIn("field-sizing: content", batch.NARROW_GROWING_INPUT_CSS)

@@ -59,10 +59,10 @@ LESSONS = {
         slug="would-you-mind-opening-the-window", title="Would you mind opening the window?", ko="창문을 열어 주시겠어요?", ja="窓を開けていただけますか？",
         goal=("Make the same request at two levels of care.", "同じお願いを、丁寧さの違う二つの形で伝えましょう。"),
         p1=rows(
-            ("{t}Could you{/t} open the window?", "窓を{t}開けてもらえますか{/t}？", "Could you|open|the window?"),
-            ("{t}Could you{/t} close the door?", "ドアを{t}閉めてもらえますか{/t}？", "Could you|close|the door?"),
-            ("{t}Could you{/t} check the file?", "ファイルを{t}確認してもらえますか{/t}？", "Could you|check|the file?"),
-            ("{t}Could you{/t} send the email?", "メールを{t}送ってもらえますか{/t}？", "Could you|send|the email?"),
+            ("{t}Could you open{/t} the window?", "窓を{t}開けてもらえますか{/t}？", "Could you|open|the window?"),
+            ("{t}Could you close{/t} the door?", "ドアを{t}閉めてもらえますか{/t}？", "Could you|close|the door?"),
+            ("{t}Could you check{/t} the file?", "ファイルを{t}確認してもらえますか{/t}？", "Could you|check|the file?"),
+            ("{t}Could you send{/t} the email?", "メールを{t}送ってもらえますか{/t}？", "Could you|send|the email?"),
         ),
         p2=rows(
             ("{t}Would you mind opening{/t} the window?", "窓を{t}開けていただけますか{/t}？", "Would you mind|opening|the window?"),
@@ -77,10 +77,10 @@ LESSONS = {
         slug="do-you-mind-if-i-sit-here", title="Do you mind if I sit here?", ko="여기 앉아도 괜찮으세요?", ja="ここに座ってもよろしいですか？",
         goal=("Request permission and answer without a polarity mistake.", "許可を求め、意味を取り違えずに答えましょう。"),
         p1=rows(
-            ("{t}Do you mind if I{/t} sit here?", "ここに{t}座ってもよろしいですか{/t}？", "Do you mind|if I|sit|here?"),
-            ("{t}Do you mind if I{/t} open the window?", "窓を{t}開けてもよろしいですか{/t}？", "Do you mind|if I|open|the window?"),
-            ("{t}Do you mind if I{/t} use this chair?", "この椅子を{t}使ってもよろしいですか{/t}？", "Do you mind|if I|use|this chair?"),
-            ("{t}Do you mind if I{/t} take a photo?", "写真を{t}撮ってもよろしいですか{/t}？", "Do you mind|if I|take|a photo?"),
+            ("{t}Do you mind if I sit{/t} here?", "ここに{t}座ってもよろしいですか{/t}？", "Do you mind|if I|sit|here?"),
+            ("{t}Do you mind if I open{/t} the window?", "窓を{t}開けてもよろしいですか{/t}？", "Do you mind|if I|open|the window?"),
+            ("{t}Do you mind if I use{/t} this chair?", "この椅子を{t}使ってもよろしいですか{/t}？", "Do you mind|if I|use|this chair?"),
+            ("{t}Do you mind if I take{/t} a photo?", "写真を{t}撮ってもよろしいですか{/t}？", "Do you mind|if I|take|a photo?"),
         ),
         p2=rows(
             ("{t}Not at all, go ahead{/t}.", "{t}全く構いません。どうぞ{/t}。", "Not at all,|go ahead."),
@@ -96,16 +96,16 @@ LESSONS = {
         slug="do-you-know-where-it-is", title="Do you know where it is?", ko="어디 있는지 아세요?", ja="どこにあるか分かりますか？",
         goal=("Ask for place and time information without sounding abrupt.", "ぶしつけに聞こえないように、場所と時刻をたずねましょう。"),
         p1=rows(
-            ("{t}Do you know where{/t} the station {t}is{/t}?", "駅が{t}どこにあるか分かりますか{/t}？", "Do you know|where|the station is?"),
-            ("{t}Do you know where{/t} the bank {t}is{/t}?", "銀行が{t}どこにあるか分かりますか{/t}？", "Do you know|where|the bank is?"),
-            ("{t}Do you know where{/t} the café {t}is{/t}?", "カフェが{t}どこにあるか分かりますか{/t}？", "Do you know|where|the café is?"),
-            ("{t}Do you know where{/t} the meeting room {t}is{/t}?", "会議室が{t}どこにあるか分かりますか{/t}？", "Do you know|where|the meeting room is?"),
+            ("{t}Do you know where the station is{/t}?", "{t}駅がどこにあるか分かりますか{/t}？", "Do you know|where|the station is?"),
+            ("{t}Do you know where the bank is{/t}?", "{t}銀行がどこにあるか分かりますか{/t}？", "Do you know|where|the bank is?"),
+            ("{t}Do you know where the café is{/t}?", "{t}カフェがどこにあるか分かりますか{/t}？", "Do you know|where|the café is?"),
+            ("{t}Do you know where the meeting room is{/t}?", "{t}会議室がどこにあるか分かりますか{/t}？", "Do you know|where|the meeting room is?"),
         ),
         p2=rows(
-            ("{t}Could you tell me when{/t} the next train leaves?", "次の電車が{t}いつ出るか教えてもらえますか{/t}？", "Could you tell me|when|the next train leaves?"),
-            ("{t}Could you tell me when{/t} the shop opens?", "店が{t}いつ開くか教えてもらえますか{/t}？", "Could you tell me|when|the shop opens?"),
-            ("{t}Could you tell me when{/t} the meeting starts?", "会議が{t}いつ始まるか教えてもらえますか{/t}？", "Could you tell me|when|the meeting starts?"),
-            ("{t}Could you tell me when{/t} the café closes?", "カフェが{t}いつ閉まるか教えてもらえますか{/t}？", "Could you tell me|when|the café closes?"),
+            ("{t}Could you tell me when the next train leaves{/t}?", "{t}次の電車がいつ出るか教えてもらえますか{/t}？", "Could you tell me|when|the next train leaves?"),
+            ("{t}Could you tell me when the shop opens{/t}?", "{t}店がいつ開くか教えてもらえますか{/t}？", "Could you tell me|when|the shop opens?"),
+            ("{t}Could you tell me when the meeting starts{/t}?", "{t}会議がいつ始まるか教えてもらえますか{/t}？", "Could you tell me|when|the meeting starts?"),
+            ("{t}Could you tell me when the café closes{/t}?", "{t}カフェがいつ閉まるか教えてもらえますか{/t}？", "Could you tell me|when|the café closes?"),
         ),
         rules=(("After Do you know where, return to statement order: the station is.", "Do you know where の後ろは普通の語順に戻し、the station is とします。"), ("After when, keep the complete subject before its verb: the next train leaves.", "when の後ろは、主語全体を動詞の前に置き、the next train leaves とします。")),
         prompt=("Ask me where one place is, then ask when one event starts.", "場所を一つたずねてから、出来事がいつ始まるか聞いてください。"),
@@ -114,10 +114,10 @@ LESSONS = {
         slug="i-generally-prefer-coffee", title="I generally prefer coffee", ko="저는 대체로 커피를 더 좋아해요", ja="私はたいていコーヒーのほうが好きです",
         goal=("State a general preference and something you usually avoid.", "一般的な好みと、ふだん避けるものを話しましょう。"),
         p1=rows(
-            ("{t}I generally prefer{/t} coffee {t}to{/t} tea.", "{t}私はたいてい紅茶よりコーヒーのほうが好きです{/t}。", "I generally prefer|coffee|to|tea."),
-            ("{t}I generally prefer{/t} trains {t}to{/t} buses.", "{t}私はたいていバスより電車のほうが好きです{/t}。", "I generally prefer|trains|to|buses."),
-            ("{t}I generally prefer{/t} cafés {t}to{/t} restaurants.", "{t}私はたいていレストランよりカフェのほうが好きです{/t}。", "I generally prefer|cafés|to|restaurants."),
-            ("{t}I generally prefer{/t} mornings {t}to{/t} evenings.", "{t}私はたいてい夜より朝のほうが好きです{/t}。", "I generally prefer|mornings|to|evenings."),
+            ("{t}I generally prefer coffee to{/t} tea.", "{t}私はたいてい紅茶よりコーヒーのほうが好きです{/t}。", "I generally prefer|coffee|to|tea."),
+            ("{t}I generally prefer trains to{/t} buses.", "{t}私はたいていバスより電車のほうが好きです{/t}。", "I generally prefer|trains|to|buses."),
+            ("{t}I generally prefer cafés to{/t} restaurants.", "{t}私はたいていレストランよりカフェのほうが好きです{/t}。", "I generally prefer|cafés|to|restaurants."),
+            ("{t}I generally prefer mornings to{/t} evenings.", "{t}私はたいてい夜より朝のほうが好きです{/t}。", "I generally prefer|mornings|to|evenings."),
         ),
         p2=rows(
             ("{t}I tend to avoid{/t} crowded places.", "私は{t}混んだ場所を避けることが多いです{/t}。", "I tend to|avoid|crowded places."),
@@ -163,22 +163,22 @@ LESSONS = {
         ),
         omit_reorder=(1,),
         rules=(("Use was plus the past participle when the unknown person who did it is not the point.", "した人が不明または重要でないときは、was＋過去分詞を使います。"), ("Keep taken from together to name the source or location.", "取られた元の場所を言うときは taken from をひとまとまりで使います。")),
-        prompt=("Use an imagined lost-property report, then say where the item was taken from.", "想像上の盗難届を作り、品物がどこから取られたか伝えてください。"),
+        prompt=("Make an imagined theft report, then say where the item was taken from.", "想像上の盗難届を作り、品物がどこから取られたか伝えてください。"),
     ),
     66: dict(
         slug="if-i-had-more-time-id-travel", title="If I had more time, I'd travel", ko="시간이 더 있다면 여행할 텐데요", ja="もっと時間があれば、旅行するのですが",
         goal=("Discuss an imaginary present situation and its result.", "今の現実とは違う想像の状況と、その結果を話しましょう。"),
         p1=rows(
-            ("{t}If I had{/t} more time, {t}I'd travel{/t} more.", "もっと時間が{t}あれば{/t}、もっと{t}旅行します{/t}。", "If I had|more time,|I'd travel|more."),
-            ("{t}If I had{/t} more money, {t}I'd move{/t} to Osaka.", "もっとお金が{t}あれば{/t}、大阪へ{t}引っ越します{/t}。", "If I had|more money,|I'd move|to Osaka."),
-            ("{t}If I had{/t} a free month, {t}I'd study{/t} abroad.", "1か月休みが{t}あれば{/t}、海外で{t}勉強します{/t}。", "If I had|a free month,|I'd study|abroad."),
-            ("{t}If I had{/t} a bigger room, {t}I'd work{/t} at home.", "もっと広い部屋が{t}あれば{/t}、家で{t}働きます{/t}。", "If I had|a bigger room,|I'd work|at home."),
+            ("{t}If I had more time{/t}, {t}I'd travel{/t} more.", "{t}もっと時間があれば{/t}、もっと{t}旅行します{/t}。", "If I had|more time,|I'd travel|more."),
+            ("{t}If I had more money{/t}, {t}I'd move{/t} to Osaka.", "{t}もっとお金があれば{/t}、大阪へ{t}引っ越します{/t}。", "If I had|more money,|I'd move|to Osaka."),
+            ("{t}If I had a free month{/t}, {t}I'd study{/t} abroad.", "{t}1か月休みがあれば{/t}、海外で{t}勉強します{/t}。", "If I had|a free month,|I'd study|abroad."),
+            ("{t}If I had a bigger room{/t}, {t}I'd work{/t} at home.", "{t}もっと広い部屋があれば{/t}、家で{t}働きます{/t}。", "If I had|a bigger room,|I'd work|at home."),
         ),
         p2=rows(
-            ("{t}What would you do if{/t} you won?", "もし当たったら{t}何をしますか{/t}？", "What would you do|if|you won?"),
-            ("{t}What would you do if{/t} you had a free month?", "1か月休みがあったら{t}何をしますか{/t}？", "What would you do|if|you had a free month?"),
-            ("{t}What would you do if{/t} you had more time?", "もっと時間があったら{t}何をしますか{/t}？", "What would you do|if|you had more time?"),
-            ("{t}What would you do if{/t} you could work anywhere?", "どこでも働けたら{t}何をしますか{/t}？", "What would you do|if|you could work anywhere?"),
+            ("{t}What would you do if you won{/t}?", "{t}もし当たったら何をしますか{/t}？", "What would you do|if|you won?"),
+            ("{t}What would you do if you had a free month{/t}?", "{t}1か月休みがあったら何をしますか{/t}？", "What would you do|if|you had a free month?"),
+            ("{t}What would you do if you had more time{/t}?", "{t}もっと時間があったら何をしますか{/t}？", "What would you do|if|you had more time?"),
+            ("{t}What would you do if you could work anywhere{/t}?", "{t}どこでも働けたら何をしますか{/t}？", "What would you do|if|you could work anywhere?"),
         ),
         rules=(("For an unreal situation now, use a past form after if and would in the result.", "今の非現実的な想像では、if の後ろに過去形、結果に would を使います。"), ("Keep What would you do at the front, then put the imaginary condition after if.", "What would you do を文頭に置き、その後ろに if＋想像の条件を続けます。")),
         prompt=("Imagine one change to your life, then ask what I would do in another imaginary situation.", "生活の変化を一つ想像してから、別の想像の状況で私なら何をするか聞いてください。"),
@@ -187,16 +187,16 @@ LESSONS = {
         slug="i-wish-i-could-drive", title="I wish I could drive", ko="운전할 수 있으면 좋겠어요", ja="運転できたらいいのにと思います",
         goal=("Express dissatisfaction with something that is not true now.", "今は実現していないことへの不満や願いを伝えましょう。"),
         p1=rows(
-            ("{t}I wish I had{/t} more free time.", "もっと自由な時間が{t}あればいいのに{/t}。", "I wish|I had|more free time."),
-            ("{t}I wish I had{/t} more energy.", "もっと元気が{t}あればいいのに{/t}。", "I wish|I had|more energy."),
-            ("{t}I wish I had{/t} a quieter room.", "もっと静かな部屋が{t}あればいいのに{/t}。", "I wish|I had|a quieter room."),
-            ("{t}I wish I had{/t} a better schedule.", "もっとよい予定が{t}あればいいのに{/t}。", "I wish|I had|a better schedule."),
+            ("{t}I wish I had more free time{/t}.", "{t}もっと自由な時間があればいいのに{/t}。", "I wish|I had|more free time."),
+            ("{t}I wish I had more energy{/t}.", "{t}もっと元気があればいいのに{/t}。", "I wish|I had|more energy."),
+            ("{t}I wish I had a quieter room{/t}.", "{t}もっと静かな部屋があればいいのに{/t}。", "I wish|I had|a quieter room."),
+            ("{t}I wish I had a better schedule{/t}.", "{t}もっとよい予定があればいいのに{/t}。", "I wish|I had|a better schedule."),
         ),
         p2=rows(
-            ("{t}I wish I could{/t} drive.", "運転{t}できたらいいのに{/t}。", "I wish|I could|drive."),
-            ("{t}I wish I could{/t} cook better.", "もっと上手に料理{t}できたらいいのに{/t}。", "I wish|I could|cook better."),
-            ("{t}I wish I could{/t} travel more.", "もっと旅行{t}できたらいいのに{/t}。", "I wish|I could|travel more."),
-            ("{t}I wish I could{/t} work from home.", "在宅勤務が{t}できたらいいのに{/t}。", "I wish|I could|work from home."),
+            ("{t}I wish I could drive{/t}.", "{t}運転できたらいいのに{/t}。", "I wish|I could|drive."),
+            ("{t}I wish I could cook better{/t}.", "{t}もっと上手に料理できたらいいのに{/t}。", "I wish|I could|cook better."),
+            ("{t}I wish I could travel more{/t}.", "{t}もっと旅行できたらいいのに{/t}。", "I wish|I could|travel more."),
+            ("{t}I wish I could work from home{/t}.", "{t}在宅勤務ができたらいいのに{/t}。", "I wish|I could|work from home."),
         ),
         rules=(("After wish, use had for a present situation that is not true now.", "wish の後ろでは、今は事実でない状況を had で表します。"), ("Use could plus a plain verb for an ability or possibility you do not have now.", "今はない能力や可能性には could＋動詞の原形を使います。")),
         prompt=("Name one thing you wish you had and one thing you wish you could do.", "あればいいと思うものと、できればいいと思うことを一つずつ話してください。"),
@@ -205,53 +205,53 @@ LESSONS = {
         slug="he-must-be-busy", title="He must be busy", ko="그는 분명 바쁜가 봐요", ja="彼はきっと忙しいのでしょう",
         goal=("Distinguish a strong conclusion from a possibility.", "強い推測と、単なる可能性を言い分けましょう。"),
         p1=rows(
-            ("He {t}must be{/t} busy.", "彼は{t}きっと忙しいのでしょう{/t}。", "He|must be|busy."),
-            ("She {t}must be{/t} tired.", "彼女は{t}きっと疲れているのでしょう{/t}。", "She|must be|tired."),
-            ("He {t}must be{/t} asleep.", "彼は{t}きっと寝ているのでしょう{/t}。", "He|must be|asleep."),
-            ("She {t}must be{/t} at work.", "彼女は{t}きっと仕事中なのでしょう{/t}。", "She|must be|at work."),
+            ("He {t}must be busy{/t}.", "彼は{t}きっと忙しいのでしょう{/t}。", "He|must be|busy."),
+            ("She {t}must be tired{/t}.", "彼女は{t}きっと疲れているのでしょう{/t}。", "She|must be|tired."),
+            ("He {t}must be asleep{/t}.", "彼は{t}きっと寝ているのでしょう{/t}。", "He|must be|asleep."),
+            ("She {t}must be at work{/t}.", "彼女は{t}きっと仕事中なのでしょう{/t}。", "She|must be|at work."),
         ),
         p2=rows(
-            ("Or he {t}might just be{/t} out.", "それとも、彼は{t}ただ外出中なのかもしれません{/t}。", "Or|he might just be|out."),
-            ("Or she {t}might just be{/t} tired.", "それとも、彼女は{t}ただ疲れているだけかもしれません{/t}。", "Or|she might just be|tired."),
-            ("Or he {t}might just be{/t} late.", "それとも、彼は{t}ただ遅れているだけかもしれません{/t}。", "Or|he might just be|late."),
-            ("Or she {t}might just be{/t} at lunch.", "それとも、彼女は{t}ただ昼食中なのかもしれません{/t}。", "Or|she might just be|at lunch."),
+            ("Or he {t}might just be out{/t}.", "それとも、彼は{t}ただ外出中なのかもしれません{/t}。", "Or|he might just be|out."),
+            ("Or she {t}might just be tired{/t}.", "それとも、彼女は{t}ただ疲れているだけかもしれません{/t}。", "Or|she might just be|tired."),
+            ("Or he {t}might just be late{/t}.", "それとも、彼は{t}ただ遅れているだけかもしれません{/t}。", "Or|he might just be|late."),
+            ("Or she {t}might just be at lunch{/t}.", "それとも、彼女は{t}ただ昼食中なのかもしれません{/t}。", "Or|she might just be|at lunch."),
         ),
         rules=(("Here, must means a strong conclusion from evidence, not an obligation.", "ここでの must は義務ではなく、根拠のある強い推測です。"), ("Use might for a real possibility; just makes the alternative sound simple.", "本当にあり得る可能性には might を使い、just で単純な別の見方を示します。")),
         prompt=("Make one strong guess about a situation, then add a possible alternative.", "状況について強く推測してから、別の可能性を一つ加えてください。"),
     ),
     69: dict(
         slug="she-said-she-was-busy", title="She said she was busy", ko="그녀는 바쁘다고 말했어요", ja="彼女は忙しいと言っていました",
-        goal=("Report a statement and a promised future action.", "人の発言と、その人がすると言った行動を伝えましょう。"),
+        goal=("Report a statement and what someone said they would do.", "人の発言と、その人がすると言った行動を伝えましょう。"),
         p1=rows(
-            ("{t}She said she was{/t} busy.", "{t}彼女は忙しいと言っていました{/t}。", "She said|she was|busy."),
-            ("{t}He said he was{/t} tired.", "{t}彼は疲れていると言っていました{/t}。", "He said|he was|tired."),
-            ("{t}She said she was{/t} late.", "{t}彼女は遅れると言っていました{/t}。", "She said|she was|late."),
-            ("{t}He said he was{/t} at home.", "{t}彼は家にいると言っていました{/t}。", "He said|he was|at home."),
+            ("{t}She said she was busy{/t}.", "{t}彼女は忙しいと言っていました{/t}。", "She said|she was|busy."),
+            ("{t}He said he was tired{/t}.", "{t}彼は疲れていると言っていました{/t}。", "He said|he was|tired."),
+            ("{t}She said she was late{/t}.", "{t}彼女は遅れると言っていました{/t}。", "She said|she was|late."),
+            ("{t}He said he was at home{/t}.", "{t}彼は家にいると言っていました{/t}。", "He said|he was|at home."),
         ),
         p2=rows(
-            ("{t}He told me he'd{/t} call back.", "{t}彼は折り返すと私に言いました{/t}。", "He told me|he'd|call back."),
-            ("{t}She told me she'd{/t} send an email.", "{t}彼女はメールすると私に言いました{/t}。", "She told me|she'd|send an email."),
-            ("{t}He told me he'd{/t} come later.", "{t}彼は後で来ると私に言いました{/t}。", "He told me|he'd|come later."),
-            ("{t}She told me she'd{/t} help tomorrow.", "{t}彼女は明日手伝うと私に言いました{/t}。", "She told me|she'd|help tomorrow."),
+            ("{t}He told me he'd call back{/t}.", "{t}彼は折り返すと私に言いました{/t}。", "He told me|he'd|call back."),
+            ("{t}She told me she'd send an email{/t}.", "{t}彼女はメールすると私に言いました{/t}。", "She told me|she'd|send an email."),
+            ("{t}He told me he'd come later{/t}.", "{t}彼は後で来ると私に言いました{/t}。", "He told me|he'd|come later."),
+            ("{t}She told me she'd help tomorrow{/t}.", "{t}彼女は明日手伝うと私に言いました{/t}。", "She told me|she'd|help tomorrow."),
         ),
         omit_choice=(1,),
         rules=(("After a past reporting verb, step am or is back to was when you report the earlier words.", "過去の発言を伝えるときは、am・is を was に一段戻します。"), ("Tell needs a person: told me. Then use would, often contracted to 'd, for the later action.", "tell には人が必要なので told me とします。その後の行動は would（通常 'd）で表します。")),
-        prompt=("Report one thing someone said, then report one thing they promised to do.", "誰かが言ったことと、その人がすると言ったことを一つずつ伝えてください。"),
+        prompt=("Report one thing someone said, then one thing they said they would do.", "誰かが言ったことと、その人がすると言ったことを一つずつ伝えてください。"),
     ),
     70: dict(
         slug="she-told-me-to-wait", title="She told me to wait", ko="그녀가 기다리라고 했어요", ja="彼女に待つよう言われました",
         goal=("Relay a positive instruction and a negative request.", "するようにという指示と、しないようにというお願いを伝えましょう。"),
         p1=rows(
-            ("{t}She told me to{/t} wait here.", "{t}彼女はここで待つよう私に言いました{/t}。", "She told me|to wait|here."),
-            ("{t}He told me to{/t} call back later.", "{t}彼は後で折り返すよう私に言いました{/t}。", "He told me|to call back|later."),
-            ("{t}She told me to{/t} come early.", "{t}彼女は早く来るよう私に言いました{/t}。", "She told me|to come|early."),
-            ("{t}He told me to{/t} check the email.", "{t}彼はメールを確認するよう私に言いました{/t}。", "He told me|to check|the email."),
+            ("{t}She told me to wait{/t} here.", "{t}彼女はここで待つよう私に言いました{/t}。", "She told me|to wait|here."),
+            ("{t}He told me to call back{/t} later.", "{t}彼は後で折り返すよう私に言いました{/t}。", "He told me|to call back|later."),
+            ("{t}She told me to come{/t} early.", "{t}彼女は早く来るよう私に言いました{/t}。", "She told me|to come|early."),
+            ("{t}He told me to check{/t} the email.", "{t}彼はメールを確認するよう私に言いました{/t}。", "He told me|to check|the email."),
         ),
         p2=rows(
-            ("{t}He asked me not to{/t} mention it.", "{t}彼はそのことを言わないよう私に頼みました{/t}。", "He asked me|not to mention|it."),
-            ("{t}She asked me not to{/t} share the file.", "{t}彼女はファイルを共有しないよう私に頼みました{/t}。", "She asked me|not to share|the file."),
-            ("{t}He asked me not to{/t} call today.", "{t}彼は今日電話しないよう私に頼みました{/t}。", "He asked me|not to call|today."),
-            ("{t}She asked me not to{/t} open the door.", "{t}彼女はドアを開けないよう私に頼みました{/t}。", "She asked me|not to open|the door."),
+            ("{t}He asked me not to mention{/t} it.", "{t}彼はそのことを言わないよう私に頼みました{/t}。", "He asked me|not to mention|it."),
+            ("{t}She asked me not to share{/t} the file.", "{t}彼女はファイルを共有しないよう私に頼みました{/t}。", "She asked me|not to share|the file."),
+            ("{t}He asked me not to call{/t} today.", "{t}彼は今日電話しないよう私に頼みました{/t}。", "He asked me|not to call|today."),
+            ("{t}She asked me not to open{/t} the door.", "{t}彼女はドアを開けないよう私に頼みました{/t}。", "She asked me|not to open|the door."),
         ),
         rules=(("Tell needs the person before to plus the instruction: told me to wait.", "tell は人を必要とし、told me to wait の順にします。"), ("For a negative request, put not before to plus the plain verb: asked me not to mention it.", "否定のお願いは、to＋動詞の前に not を置き、asked me not to mention it とします。")),
         prompt=("Relay one instruction you received, then one thing someone asked you not to do.", "受けた指示と、しないよう頼まれたことを一つずつ伝えてください。"),
@@ -387,12 +387,12 @@ KNOWN_WORDS = {
 
 TRANSLATE_HINTS = {
     60: (("窓:window; 開ける:open", "ドア:door; 閉める:close", "ファイル:file; 確認する:check", "メール:email; 送る:send"), ("窓:window; 開ける:open", "ドア:door; 閉める:close", "ファイル:file; 確認する:check", "メール:email; 送る:send")),
-    61: (("座る:sit", "窓:window; 開ける:open", "椅子:chair; 使う:use", "写真:photo"), ("どうぞ:go ahead", "ぜひどうぞ:please do", "使う:use", "写真:photo")),
-    62: (("駅:station", "銀行:bank", "カフェ:café", "会議室:meeting room"), ("次の電車:next train; 出発する:leaves", "店:shop; 開く:opens", "会議:meeting; 始まる:starts", "カフェ:café; 閉まる:closes")),
-    63: (("コーヒー:coffee; 紅茶:tea", "電車:train; バス:buses", "カフェ:café; レストラン:restaurant", "朝:mornings; 夜:evenings"), ("混んでいる:crowded; 場所:places", "騒がしい:noisy; 場所:places", "高い:expensive; 場所:places", "人が多い:busy; 場所:places")),
+    61: (("座る:sit", "窓:window; 開ける:open", "椅子:chair; 使う:use", "写真:photo"), ("どうぞ:go ahead", "ぜひどうぞ:please do", "使う:use", "撮る:take")),
+    62: (("駅:station", "銀行:bank", "カフェ:café", "会議室:meeting room"), ("次の電車:next train; 出発する:leave", "店:shop; 開く:open", "会議:meeting; 始まる:start", "カフェ:café; 閉まる:close")),
+    63: (("コーヒー:coffee; 紅茶:tea", "電車:train; バス:bus", "カフェ:café; レストラン:restaurant", "朝:morning; 夜:evening"), ("混んでいる:crowded; 場所:place", "騒がしい:noisy; 場所:place", "高い:expensive; 場所:place", "人が多い:busy; 場所:place")),
     64: (("ノートパソコン:laptop", "プリンター:printer", "携帯:phone; 充電する:charge", "ドア:door; 開く:open"), ("再起動する:restart", "確認する:check; ケーブル:cable", "充電する:charge", "開く:open; 別の方法:another way")),
-    65: (("財布:wallet; 盗まれた:stolen", "携帯:phone; 盗まれた:stolen", "チケット:ticket; 盗まれた:stolen", "かばん:bag; 盗まれた:stolen"), ("かばん:bag; から取られた:taken from", "ポケット:pocket; から取られた:taken from", "机:desk; から取られた:taken from", "車:car; から取られた:taken from")),
-    66: (("もっと時間:more time; 旅行する:travel", "もっとお金:more money; 引っ越す:move", "1か月の休み:free month; 海外:abroad", "より広い:bigger; 家で働く:work at home"), ("当たった:won", "1か月の休み:free month", "もっと時間:more time", "どこでも:anywhere")),
+    65: (("財布:wallet; 盗む:steal", "携帯:phone; 盗む:steal", "チケット:ticket; 盗む:steal", "かばん:bag; 盗む:steal"), ("かばん:bag; 取る:take", "ポケット:pocket; 取る:take", "机:desk; 取る:take", "車:car; 取る:take")),
+    66: (("もっと時間:more time; 旅行する:travel", "もっとお金:more money; 引っ越す:move", "1か月の休み:free month; 海外:abroad", "より広い:bigger; 家で働く:work at home"), ("当たる:win", "1か月の休み:free month", "もっと時間:more time", "どこでも:anywhere")),
     67: (("自由な時間:free time", "元気:energy", "より静かな:quieter", "予定:schedule"), ("運転する:drive", "料理する:cook; より上手に:better", "旅行する:travel", "在宅勤務をする:work from home")),
     68: (("忙しい:busy", "疲れた:tired", "寝ている:asleep", "仕事中:at work"), ("外出中:out", "疲れた:tired", "遅れて:late", "昼食中:at lunch")),
     69: (("忙しい:busy", "疲れた:tired", "遅れて:late", "家に:at home"), ("折り返す:call back", "メールする:send an email", "後で来る:come later", "明日手伝う:help tomorrow")),
@@ -420,8 +420,8 @@ DIALOGUES = {
     61: dict(model=("Coworker", 0, 1, ("This seat is free.", "この席は空いています。"), ("Not at all, go ahead. Do you mind if I open the window?", "全く構いません。どうぞ。私が窓を開けてもよろしいですか？"), ("Thanks. I'll open it just a little.", "ありがとう。少しだけ開けます。"), ("Perfect. Thank you.", "ちょうどいいです。ありがとう。")), wild=("Gallery staff", 3, 1, ("The exhibit continues in the next room.", "展示は隣の部屋に続きます。"), ("Not at all, please do. Do you mind if I close this door?", "全く構いません。ぜひどうぞ。このドアを閉めてもよろしいですか？"), ("Thank you. The next tour is starting.", "ありがとう。次のツアーが始まります。"), ("Of course. I'll go through now.", "もちろんです。今、先へ進みます。"))),
     62: dict(model=("Hotel receptionist", 0, 0, ("Where are you heading this afternoon?", "今日の午後はどちらへ向かいますか？"), ("It's two blocks away. Do you need the departure time too?", "2ブロック先です。出発時刻も必要ですか？"), ("It leaves at 3:20 from platform four.", "3時20分に4番ホームから出ます。"), ("Great. Thank you for your help.", "分かりました。ありがとうございます。")), wild=("Receptionist", 3, 2, ("Welcome. Are you here for the team meeting?", "ようこそ。チーム会議にいらっしゃいましたか？"), ("It's on the second floor. Do you need the start time too?", "2階です。開始時刻も必要ですか？"), ("It starts at ten, so you have time.", "10時に始まるので、まだ時間があります。"), ("Perfect. I'll go upstairs now.", "よかったです。今、上に行きます。"))),
     63: dict(model=("Friend", 0, 0, ("Shall we get a drink?", "飲み物を買いませんか？"), ("Good to know. What kind of cafés do you avoid?", "分かりました。どんなカフェを避けますか？"), ("This one is quiet, so it should be fine.", "ここは静かなので、大丈夫そうです。"), ("Great. Let's go in.", "よかった。入りましょう。")), wild=("Coworker", 1, 0, ("Should we take the train or the bus?", "電車とバス、どちらにしましょうか？"), ("Me too. What kind of places do you avoid?", "私もです。どんな場所を避けますか？"), ("This train is quiet, and there are plenty of seats.", "この電車は静かで、席もたくさんあります。"), ("Great. Let's take it.", "よかった。これに乗りましょう。"))),
-    64: dict(model=("Coworker", 1, 1, ("The printer is silent when I press Print.", "印刷を押しても、プリンターが動きません。"), ("I haven't checked anything yet. What should I try first?", "まだ何も確認していません。最初に何を試せばいいですか？"), ("That worked. The cable was loose.", "直りました。ケーブルが緩んでいました。"), ("Great. Now we can print the handout.", "よかった。これで資料を印刷できますね。")), wild=("Neighbor", 3, 3, ("The side door is stuck when I pull the handle.", "取っ手を引いても、横のドアが動きません。"), ("I haven't tried another way yet. What should I try?", "まだ別の方法は試していません。何を試せばいいですか？"), ("Good idea. I'll try the other handle.", "いい考えです。別の取っ手を試します。"), ("I'll let you know if that works.", "うまくいったら知らせます。"))),
-    65: dict(model=("Police officer", 0, 0, ("What happened?", "何がありましたか？"), ("I'm sorry. Where was it?", "それは大変でした。どこにありましたか？"), ("All right. I'll write down those details.", "分かりました。その情報を記録します。"), ("Thank you. That's everything I know.", "ありがとうございます。分かることは以上です。")), wild=("Station staff", 2, 1, ("What item are you reporting?", "何を届け出ますか？"), ("Where did you last have it?", "最後にどこで持っていましたか？"), ("Thank you. We'll check the cameras.", "ありがとうございます。防犯カメラを確認します。"), ("Please call me if you find it.", "見つかったら電話してください。"))),
+    64: dict(model=("Coworker", 1, 1, ("The printer is silent when I press Print.", "印刷を押しても、プリンターが動きません。"), ("I haven't checked anything yet. What should I try first?", "まだ何も確認していません。最初に何を試せばいいですか？"), ("That worked. The cable was loose.", "直りました。ケーブルが緩んでいました。"), ("Great. Now we can print the handout.", "よかった。これで資料を印刷できますね。")), wild=("Neighbor", 3, 3, ("The side door is stuck when I pull the handle.", "取っ手を引いても、横のドアが開きません。"), ("I haven't tried another way yet. What should I try?", "まだ別の方法は試していません。何を試せばいいですか？"), ("Good idea. I'll try the other handle.", "いい考えです。別の取っ手を試します。"), ("I'll let you know if that works.", "うまくいったら知らせます。"))),
+    65: dict(model=("Police officer", 0, 0, ("What happened?", "何がありましたか？"), ("I'm sorry. Where was it taken from?", "それは大変でした。どこから取られましたか？"), ("All right. I'll write down those details.", "分かりました。その情報を記録します。"), ("Thank you. That's everything I know.", "ありがとうございます。分かることは以上です。")), wild=("Station staff", 2, 1, ("What item are you reporting?", "何を届け出ますか？"), ("Where did you last have it?", "最後にどこで持っていましたか？"), ("Thank you. We'll check the cameras.", "ありがとうございます。防犯カメラを確認します。"), ("Please call me if you find it.", "見つかったら電話してください。"))),
     66: dict(model=("Friend", 0, 0, ("You work a lot. What would you change?", "よく働いていますね。何を変えたいですか？"), ("That sounds good. I've never imagined winning a big prize.", "いいですね。大きな賞金が当たることは考えたことがありません。"), ("I'd open a small café.", "小さなカフェを開きます。"), ("That sounds fun.", "楽しそうですね。")), wild=("Coworker", 2, 3, ("Imagine the office closes for a month. What would you do?", "オフィスが1か月休みだと想像してください。何をしますか？"), ("Nice. I've never imagined being able to work anywhere.", "いいですね。どこでも働ける状況は考えたことがありません。"), ("I'd work by the sea.", "私は海辺で働きます。"), ("That sounds peaceful.", "落ち着きそうですね。"))),
     67: dict(model=("Friend", 0, 0, ("You seem busy lately. What would make life easier?", "最近忙しそうですね。何があれば楽になりますか？"), ("Me too. Is there anything you wish you could do?", "私もです。できたらいいと思うことはありますか？"), ("You could start with a short lesson.", "短いレッスンから始められますよ。"), ("That's a good idea.", "いい考えです。")), wild=("Coworker", 3, 3, ("You commute every day. Is your schedule difficult?", "毎日通勤していますね。予定は大変ですか？"), ("I understand. What do you wish you could change?", "分かります。何を変えられたらいいですか？"), ("Maybe we can arrange one home day a week.", "週に1日は在宅にできるかもしれません。"), ("That would help a lot.", "それはとても助かります。"))),
     68: dict(model=("Coworker", 0, 0, ("Ken hasn't answered any messages today.", "ケンは今日、メッセージに全く返事をしていません。"), ("Maybe. Is there another explanation?", "そうかもしれません。別の説明はありますか？"), ("Right. Let's wait before we worry.", "そうですね。心配する前に待ちましょう。"), ("Agreed. We'll call later.", "そうしましょう。後で電話します。")), wild=("Friend", 2, 2, ("Leo's lights are off and he isn't answering.", "レオの部屋は消灯していて、返事もありません。"), ("That makes sense. Or is there another possibility?", "なるほど。ほかの可能性はありますか？"), ("Exactly. We don't know yet.", "そのとおりです。まだ分かりません。"), ("Let's check again later.", "後でもう一度確認しましょう。"))),
@@ -454,6 +454,174 @@ LIVE_HINTS[64] = {1: OPEN_MENUS[64][1]}
 LIVE_HINTS[65] = {
     1: OPEN_MENUS[65][0] + OPEN_MENUS[65][1],
     2: OPEN_MENUS[65][0],
+}
+
+
+# Human-reviewed operating copy for the CORE60--70 page-by-page audit.  Open
+# production names the exact frame and communicative job.  Free Talk is a real
+# topic exchange rather than another controlled pattern drill: the learner
+# answers a useful question, asks the tutor a natural version of it, and the
+# tutor records a real short answer.  Today's pattern remains optional there.
+WRITE_PROMPTS = {
+    60: (("Now use “Could you ___?” to ask me for one small, useful favor.", "では、「Could you ___?」を使って、役に立つ小さなお願いを一つしてください。"), ("Now use “Would you mind ___ing?” to make one request that needs extra care.", "では、「Would you mind ___ing?」を使って、特に配慮が必要なお願いを一つしてください。")),
+    61: (("Now use “Do you mind if I ___?” to ask permission for one real action.", "では、「Do you mind if I ___?」を使って、実際にしたい行動の許可を求めてください。"), ("Now use “Not at all, ___” to give permission clearly.", "では、「Not at all, ___」を使って、はっきり許可してください。")),
+    62: (("Now use “Do you know where ___ is?” to ask where one useful place is.", "では、「Do you know where ___ is?」を使って、役に立つ場所を一つたずねてください。"), ("Now use “Could you tell me when ___?” to ask about one real time or event.", "では、「Could you tell me when ___?」を使って、実際の時刻や予定を一つたずねてください。")),
+    63: (("Now use “I generally prefer ___ to ___” to compare two things you genuinely like.", "では、「I generally prefer ___ to ___」を使って、本当に好きなものを二つ比べてください。"), ("Now use “I tend to avoid ___” to name one kind of place you usually avoid.", "では、「I tend to avoid ___」を使って、ふだん避ける場所の種類を一つ言ってください。")),
+    64: (("Now use “___ won't ___” to describe one device or object that is not working.", "では、「___ won't ___」を使って、動かない機器や物を一つ説明してください。"), ("Now use “Have you tried ___ing?” to suggest one practical fix.", "では、「Have you tried ___ing?」を使って、実用的な対処法を一つ提案してください。")),
+    65: (("Now use “My ___ was stolen” to make one clear theft report.", "では、「My ___ was stolen」を使って、盗まれた持ち物について明確に伝えてください。"), ("Now use “It was taken from ___” to say where the item was taken from.", "では、「It was taken from ___」を使って、品物がどこから取られたか伝えてください。")),
+    66: (("Now use “If I had ___, I'd ___” to imagine one change and its result.", "では、「If I had ___, I'd ___」を使って、変化とその結果を一つ想像してください。"), ("Now use “What would you do if ___?” to ask me about one imaginary situation.", "では、「What would you do if ___?」を使って、想像上の状況で私ならどうするか聞いてください。")),
+    67: (("Now use “I wish I had ___” to name one thing you genuinely want more of.", "では、「I wish I had ___」を使って、本当にもっと欲しいものを一つ言ってください。"), ("Now use “I wish I could ___” to name one ability you would like to have.", "では、「I wish I could ___」を使って、できるようになりたいことを一つ言ってください。")),
+    68: (("Now use “___ must be ___” to make one strong guess from evidence.", "では、「___ must be ___」を使って、根拠のある強い推測を一つしてください。"), ("Now use “___ might just be ___” to add one reasonable alternative.", "では、「___ might just be ___」を使って、別の可能性を一つ加えてください。")),
+    69: (("Now use “___ said they were ___” to report one thing someone said.", "では、「___ said they were ___」を使って、誰かが言ったことを一つ伝えてください。"), ("Now use “___ told me they'd ___” to report one thing someone said they would do.", "では、「___ told me they'd ___」を使って、誰かがすると言ったことを一つ伝えてください。")),
+    70: (("Now use “___ told me to ___” to relay one instruction you received.", "では、「___ told me to ___」を使って、受けた指示を一つ伝えてください。"), ("Now use “___ asked me not to ___” to relay one negative request.", "では、「___ asked me not to ___」を使って、しないよう頼まれたことを一つ伝えてください。")),
+}
+
+
+# Fill chips support only the lexical payload.  They never supply articles,
+# auxiliaries, polarity, reporting structure, or the target inflection.
+FILL_HINTS = {
+    60: ((('開ける', 'open'), ('閉める', 'close'), ('確認する', 'check'), ('送る', 'send')), (('開ける', 'open'), ('閉める', 'close'), ('確認する', 'check'), ('送る', 'send'))),
+    61: ((('座る', 'sit'), ('開ける', 'open'), ('使う', 'use'), ('撮る', 'take')), (('どうぞ', 'go ahead'), ('ぜひどうぞ', 'please do'), ('使う', 'use'), ('撮る', 'take'))),
+    62: ((('駅', 'station'), ('銀行', 'bank'), ('カフェ', 'café'), ('会議室', 'meeting room')), (('次の電車', 'next train'), ('店', 'shop'), ('会議', 'meeting'), ('カフェ', 'café'))),
+    63: ((('コーヒー', 'coffee'), ('電車', 'train'), ('カフェ', 'café'), ('朝', 'morning')), (('混んでいる', 'crowded'), ('騒がしい', 'noisy'), ('高い', 'expensive'), ('人が多い', 'busy'))),
+    64: ((('電源が入る', 'turn on'), ('印刷する', 'print'), ('充電する', 'charge'), ('開く', 'open')), (('再起動する', 'restart'), ('確認する', 'check'), ('充電する', 'charge'), ('開く', 'open'))),
+    65: ((('盗む', 'steal'), ('盗む', 'steal'), ('盗む', 'steal'), ('盗む', 'steal')), (('取る', 'take'), ('取る', 'take'), ('取る', 'take'), ('取る', 'take'))),
+    66: (((('もっと時間', 'more time'), ('旅行する', 'travel')), (('もっとお金', 'more money'), ('引っ越す', 'move')), (('1か月の休み', 'free month'), ('勉強する', 'study')), (('より広い部屋', 'bigger room'), ('働く', 'work'))), (('当たる', 'win'), ('1か月の休み', 'free month'), ('もっと時間', 'more time'), ('どこでも', 'anywhere'))),
+    67: ((('自由な時間', 'free time'), ('元気', 'energy'), ('静かな部屋', 'quiet room'), ('予定', 'schedule')), (('運転する', 'drive'), ('料理する', 'cook'), ('旅行する', 'travel'), ('在宅勤務をする', 'work from home'))),
+    68: ((('忙しい', 'busy'), ('疲れた', 'tired'), ('寝ている', 'asleep'), ('仕事中', 'at work')), (('外出中', 'out'), ('疲れた', 'tired'), ('遅れて', 'late'), ('昼食中', 'at lunch'))),
+    69: ((('忙しい', 'busy'), ('疲れた', 'tired'), ('遅れて', 'late'), ('家に', 'at home')), (('折り返す', 'call back'), ('メールする', 'send an email'), ('後で来る', 'come later'), ('明日手伝う', 'help tomorrow'))),
+    70: ((('待つ', 'wait'), ('折り返す', 'call back'), ('来る', 'come'), ('確認する', 'check')), (('言及する', 'mention'), ('共有する', 'share'), ('電話する', 'call'), ('開ける', 'open'))),
+}
+
+
+TRANSLATE_STAGES = {number: ("supported", "supported") for number in LESSONS}
+
+
+CHOICE_OMISSIONS = {
+    60: set(), 61: {1}, 62: {1, 2}, 63: set(), 64: {1}, 65: {2},
+    66: set(), 67: {1, 2}, 68: {2}, 69: {1}, 70: set(),
+}
+
+SPECS[61]["choices"] = ((), (
+    ("相手は許可する。{t}全く構いません{/t}。どうぞ。", "", "Not at all", "Sorry", ", go ahead."),
+    ("席は使われている。{t}すみません{/t}、そこには人が座っています。", "", "Sorry", "Not at all", ", someone's sitting there."),
+    ("相手は許可する。{t}全く構いません{/t}。ぜひどうぞ。", "", "Not at all", "Sorry", ", please do."),
+    ("今は椅子が必要だ。{t}すみません{/t}、今使っています。", "", "Sorry", "Not at all", ", I'm using it right now."),
+))
+SPECS[62]["choices"] = ((), ())
+SPECS[64]["choices"] = ((), SPECS[64]["choices"][1])
+SPECS[65]["choices"] = (SPECS[65]["choices"][0], ())
+SPECS[66]["choices"] = (
+    (
+        ("今は時間がない。もっと時間が{t}あれば{/t}、旅行するのに。", "If I ", "had", "have", " more time, I'd travel."),
+        ("今日もっと時間があれば、遠くへ行く予定です。{t}現実的な条件{/t}。", "If I ", "have", "had", " more time today, I'll travel farther."),
+        ("今はお金が足りない。もっとお金が{t}あれば{/t}、引っ越すのに。", "If I ", "had", "have", " more money, I'd move."),
+        ("来年もっと広い部屋があれば、在宅勤務をします。{t}現実的な条件{/t}。", "If I ", "have", "had", " a bigger room next year, I'll work at home."),
+    ),
+    (
+        ("想像：1か月休みがあったら{t}何をしますか{/t}？", "What ", "would", "will", " you do if you had a free month?"),
+        ("現実的な予定：会議が早く終わったら{t}何をしますか{/t}？", "What ", "will", "would", " you do if the meeting ends early?"),
+        ("想像：どこでも働けたら{t}何をしますか{/t}？", "What ", "would", "will", " you do if you could work anywhere?"),
+        ("現実的な予定：電車が遅れたら{t}何をしますか{/t}？", "What ", "will", "would", " you do if the train is late?"),
+    ),
+)
+SPECS[67]["choices"] = ((), ())
+SPECS[68]["choices"] = ((
+    ("机に資料が山積みだ。彼は{t}きっと忙しい{/t}。", "He ", "must be", "might be", " busy."),
+    ("返事がないだけだ。彼は{t}忙しいかもしれない{/t}。", "He ", "might be", "must be", " busy."),
+    ("一晩中働いた。彼女は{t}きっと疲れている{/t}。", "She ", "must be", "might be", " tired."),
+    ("少し静かなだけだ。彼女は{t}疲れているかもしれない{/t}。", "She ", "might be", "must be", " tired."),
+), ())
+SPECS[69]["choices"] = ((), (
+    ("彼は折り返すと{t}私に言いました{/t}。", "He ", "told me", "said", " he'd call back."),
+    ("彼女はメールすると{t}言いました{/t}。", "She ", "said", "told me", " she'd send an email."),
+    ("彼は後で来ると{t}私に言いました{/t}。", "He ", "told me", "said", " he'd come later."),
+    ("彼女は明日手伝うと{t}言いました{/t}。", "She ", "said", "told me", " she'd help tomorrow."),
+))
+SPECS[70]["choices"] = ((
+    ("彼女は待つよう{t}私に言いました{/t}。", "She ", "told me", "said", " to wait."),
+    ("彼は後で電話すると{t}言いました{/t}。", "He ", "said", "told me", " he'd call later."),
+    ("彼女は早く来るよう{t}私に言いました{/t}。", "She ", "told me", "said", " to come early."),
+    ("彼はメールを確認すると{t}言いました{/t}。", "He ", "said", "told me", " he'd check the email."),
+), SPECS[70]["choices"][1])
+
+
+REVIEWED_LIVE = {
+    60: ("What's a small favor you really appreciate when someone does it for you, and why?", "誰かにしてもらうと本当にありがたい小さなことは何ですか？なぜですか？", "What small favor do you appreciate most?", "先生はどんな小さなことをしてもらうと一番ありがたいですか？"),
+    61: ("What behavior bothers you most in a shared space, and why?", "共有スペースで一番気になる行動は何ですか？なぜですか？", "What bothers you most in a shared space?", "先生は共有スペースで何が一番気になりますか？"),
+    62: ("When you arrive somewhere new, what information do you usually need first?", "初めての場所に着いたとき、最初にどんな情報が必要ですか？", "What information do you usually need first?", "先生は最初にどんな情報が必要ですか？"),
+    63: ("What matters most when you choose a café or restaurant?", "カフェやレストランを選ぶとき、何を一番重視しますか？", "What matters most to you when you choose a place?", "先生は店を選ぶとき、何を一番重視しますか？"),
+    64: ("Which device problem frustrates you most, and what do you try first?", "どんな機器の不具合が一番困りますか？最初に何を試しますか？", "Which device problem frustrates you most?", "先生はどんな機器の不具合が一番困りますか？"),
+    65: ("What's one item you would be most upset to lose, and why?", "なくしたら一番困る物は何ですか？なぜですか？", "What would you be most upset to lose?", "先生は何をなくしたら一番困りますか？"),
+    66: ("If you suddenly had one free month, how would you spend it?", "突然1か月休みができたら、どう過ごしますか？", "How would you spend one free month?", "先生は1か月休みがあったら、どう過ごしますか？"),
+    67: ("What's one skill you'd love to learn if time and money were no problem?", "時間とお金に制限がなければ、どんな技能を身につけたいですか？", "What skill would you most like to learn?", "先生はどんな技能を一番身につけたいですか？"),
+    68: ("When someone doesn't reply, what do you usually assume first?", "誰かから返事がないとき、最初に何を考えますか？", "What do you usually assume first?", "先生は最初に何を考えますか？"),
+    69: ("When someone says they'll do something, how long do you wait before reminding them?", "誰かが何かすると言ったとき、どのくらい待ってから念を押しますか？", "How long do you wait before reminding someone?", "先生はどのくらい待ってから相手に念を押しますか？"),
+    70: ("Do you prefer clear instructions or freedom to decide how to do a task? Why?", "明確な指示と、自分でやり方を決める自由のどちらが好きですか？なぜですか？", "Which do you prefer: clear instructions or freedom?", "先生は明確な指示と自由のどちらが好きですか？"),
+}
+
+
+for _number in LESSONS:
+    SPECS[_number]["writes"] = WRITE_PROMPTS[_number]
+    SPECS[_number]["fill_hints"] = FILL_HINTS[_number]
+    LESSONS[_number]["omit_choice"] = tuple(sorted(CHOICE_OMISSIONS[_number]))
+    _question, _question_ja, _ask_back, _ask_back_ja = REVIEWED_LIVE[_number]
+    LESSONS[_number]["prompt"] = (
+        "Let's talk about this topic. Answer my question, then ask me too.",
+        "この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。",
+    )
+    LIVE_SCENES[_number] = (
+        ("text", "other", "Tutor", _question, _question_ja),
+        ("input", "me", "Me", "Student's answer", "自分の本当の答え"),
+        ("text", "me", "Me", _ask_back, _ask_back_ja),
+        ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え"),
+    )
+    LIVE_HINTS[_number] = {}
+
+# Hint chips are part of the vocabulary contract.  Declare newly introduced
+# lexical base forms without promoting them to taught grammar.
+for _number, _pages in FILL_HINTS.items():
+    _owned = {
+        entry.split("|", 1)[0].casefold()
+        for value in VOCAB[_number].values()
+        for entry in filter(None, value.split("; "))
+    }
+    _additions = []
+    for _page in _pages:
+        for _row in _page:
+            _pairs = (_row,) if len(_row) == 2 and all(isinstance(item, str) for item in _row) else _row
+            for _japanese, _english in _pairs:
+                if _english.casefold() not in _owned:
+                    _additions.append(f"{_english}|{_japanese}")
+                    _owned.add(_english.casefold())
+    if _additions:
+        VOCAB[_number]["assumed"] += "; " + "; ".join(_additions)
+
+# Translation hints likewise use lexical dictionary forms, never target
+# auxiliaries, articles, or inflections.
+for _number in LESSONS:
+    _owned = {
+        entry.split("|", 1)[0].casefold()
+        for value in VOCAB[_number].values()
+        for entry in filter(None, value.split("; "))
+    }
+    _additions = []
+    for _page in TRANSLATE_HINTS[_number]:
+        for _row in _page:
+            for _chip in _row.split("; "):
+                _japanese, _english = _chip.rsplit(":", 1)
+                if _english.casefold() not in _owned:
+                    _additions.append(f"{_english}|{_japanese}")
+                    _owned.add(_english.casefold())
+    if _additions:
+        VOCAB[_number]["assumed"] += "; " + "; ".join(_additions)
+
+
+ROLE_JA = {
+    "Coworker": "同僚", "Gallery staff": "ギャラリーの係員",
+    "Hotel receptionist": "ホテルの受付係", "Receptionist": "受付係",
+    "Friend": "友人", "Neighbor": "近所の人", "Police officer": "警察官",
+    "Station staff": "駅員",
 }
 
 
@@ -522,16 +690,19 @@ THREE_CHIP_EXCEPTIONS = {
 def course_data():
     names = ("LESSONS", "SPECS", "VOCAB", "KNOWN_WORDS", "TRANSLATE_HINTS", "OPEN_MENUS", "DIALOGUES", "LIVE_SCENES", "LIVE_HINTS", "SUPPORT_EXPRESSIONS")
     previous = {name: getattr(approved, name) for name in names}
+    previous_role_ja = approved.ROLE_JA
     core_previous = (core.VOCAB, core.CANONICAL_SPECS, core.DIALOGUES, core.LIVE_SCENES)
     try:
         for name in names:
             setattr(approved, name, globals()[name])
+        approved.ROLE_JA = ROLE_JA
         core.VOCAB = {n: (v["new"], v["assumed"], v["receptive"]) for n, v in VOCAB.items()}
         core.CANONICAL_SPECS, core.DIALOGUES, core.LIVE_SCENES = SPECS, DIALOGUES, LIVE_SCENES
         yield
     finally:
         for name, value in previous.items():
             setattr(approved, name, value)
+        approved.ROLE_JA = previous_role_ja
         core.VOCAB, core.CANONICAL_SPECS, core.DIALOGUES, core.LIVE_SCENES = core_previous
 
 
@@ -592,6 +763,16 @@ def customize_pages(number, data, pages):
     result = []
     for page in pages:
         page = growing_sentence_inputs(page)
+        if number == 62 and page_id(page) == "p1-teach":
+            # Keep the complete embedded question legible at the 360px class
+            # width without shrinking the teaching example. Split the target
+            # highlight too, so its edge treatment does not create 2px of
+            # horizontal overflow on the narrower example rows.
+            page = page.replace(
+                '<span class="ending">Do you know where the ',
+                '<span class="ending">Do you know where</span><br>'
+                '<span class="ending">the ',
+            )
         if page_id(page) == "part3-intro":
             result.extend(spiral_page(number, sid, level) for sid, level in SPIRAL_MARKERS[number])
         result.append(page)
