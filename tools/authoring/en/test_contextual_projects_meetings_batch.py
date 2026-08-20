@@ -66,9 +66,10 @@ class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
             _, source = batch.build(number, lesson)
             pages = dict(check_deck.pages(source))
             self.assertEqual(list(pages)[-1], "transfer-scene", number)
-            self.assertGreaterEqual(len(pages), 23, number)
+            self.assertEqual(list(pages)[0], "lesson-goal", number)
+            self.assertNotIn("situation-card", pages, number)
             for required in (
-                "situation-card", "scene", "lesson-goal", "expressions", "understand",
+                "scene", "lesson-goal", "expressions", "understand",
                 "p1-teach", "p2-teach", "p3-model", "p3-complete", "p3-freetalk",
                 "native-tip", "transfer-scene",
             ):
@@ -135,12 +136,19 @@ class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
                 fill = pages[f"p{part}-fill"]
                 translate = pages[f"p{part}-translate"]
                 self.assertEqual(
-                    fill.count('class="free-input phrase-input"'),
+                    fill.count('class="slot-input"'),
                     sum(row[0].count("{t}") for row in lesson[f"p{part}"]["rows"]),
                     (number, part),
                 )
-                self.assertNotIn('class="slot-input', fill, (number, part))
-                self.assertEqual(translate.count('<textarea class="free-input"'), 4, (number, part))
+                self.assertNotIn('class="free-input phrase-input"', fill, (number, part))
+                self.assertEqual(translate.count('<input class="space-input"'), 4, (number, part))
+                self.assertIn('data-scaffolding-contract="target-v2"', translate, (number, part))
+                stage = lesson[f"p{part}"].get("translate_stage", "supported")
+                self.assertIn(f'data-support-stage="{stage}"', translate, (number, part))
+                if stage == "supported":
+                    self.assertIn('class="hint-chip"', translate, (number, part))
+                else:
+                    self.assertNotIn('class="hint-chip"', translate, (number, part))
             for page_id in ("p3-complete", "transfer-scene"):
                 self.assertIn('class="free-input phrase-input"', pages[page_id], (number, page_id))
                 self.assertNotIn('class="slot-input', pages[page_id], (number, page_id))
@@ -150,17 +158,19 @@ class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
             _, source = batch.build(number, lesson)
             live_page = dict(check_deck.pages(source))["p3-freetalk"]
             self.assertEqual(len(check_deck.TURN_OPEN.findall(live_page)), 4, number)
-            self.assertIn('data-sync-id="live-me"', live_page, number)
-            self.assertIn('data-sync-id="live-ask"', live_page, number)
-            self.assertIn('data-sync-id="live-tutor"', live_page, number)
-            prompt, _, scaffold, _, _, _ = lesson["live"]
-            self.assertIn("real or imaginary", (prompt + " " + scaffold).casefold(), number)
-            self.assertNotIn(" / ", scaffold, number)
-            for frame in batch.LIVE_FRAME_CONTRACTS[number]:
-                self.assertEqual(scaffold.count(frame), 1, (number, frame, scaffold))
-        self.assertNotIn("___ing", batch.LESSONS[38]["live"][2])
-        self.assertIn("who's contacting ___", batch.LESSONS[38]["live"][2])
-        self.assertIn("I'm happy to contact them", batch.LESSONS[38]["live"][2])
+            self.assertIn('data-sync-id="p3-real-answer"', live_page, number)
+            self.assertIn('data-sync-id="p3-tutor-answer"', live_page, number)
+            prompt_en, prompt_ja, _, _, ask_en, ask_ja = lesson["live"]
+            for question in (prompt_en, prompt_ja, ask_en, ask_ja):
+                self.assertTrue(question.endswith(("?", "？")), (number, question))
+                self.assertIn(batch.renderer.esc(question), live_page, (number, question))
+            self.assertNotIn("___", prompt_en + ask_en, number)
+            self.assertNotRegex(
+                prompt_en.casefold(),
+                r"\b(?:what would you say|report it|explain it|imagine|use today's pattern)\b",
+                number,
+            )
+            self.assertNotIn("live_sequence", lesson, number)
 
     def test_brief_entry_floors_and_bounded_parts_are_locked(self):
         for number in batch.LESSONS:
@@ -319,8 +329,8 @@ class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
         self.assertIn("tomorrow's demo", ctx41["transfer_turns"][0][1])
         self.assertIn("push it back until Friday", batch.core.strip_marks(ctx41["p2"]["rows"][2][0]))
         self.assertEqual(ctx41["p2"]["write"][0], "How far would you move the event?")
-        self.assertIn("action, owner, and deadline", ctx41["live"][0])
-        self.assertIn("___ will ___ by ___", ctx41["live"][2])
+        self.assertIn("bad news", ctx41["live"][0])
+        self.assertNotIn("___", ctx41["live"][0] + ctx41["live"][4])
 
         ctx42 = batch.LESSONS[42]
         transfer = " ".join(
@@ -352,15 +362,69 @@ class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
         self.assertIn("suggest", ctx45["tip"][0].casefold())
         self.assertIn("three implementation options", ctx45["scene"])
         self.assertIn("options A, B, and C", ctx45["scene_turns"][0][1])
-        self.assertIn("A = ___; B = ___; C = ___", ctx45["live"][2])
-        self.assertNotIn("___er", ctx45["live"][2])
-        self.assertIn("easier や more practical", ctx45["live"][3])
-        self.assertIn("three options you named", ctx45["live"][4])
+        self.assertIn("recommendation or the reason", ctx45["live"][0])
+        self.assertTrue(ctx45["live"][4].startswith("What about you"))
 
         ctx48 = batch.LESSONS[48]
         self.assertIn("options A, B, and C", ctx48["scene_turns"][0][1])
-        self.assertIn("three real or imaginary options", ctx48["live"][4])
+        self.assertIn("more information", ctx48["live"][0])
         self.assertIn("three suppliers", ctx48["transfer_turns"][0][1])
+
+    def test_write_jobs_roles_and_transfer_intros_are_explicit_and_aligned(self):
+        generic = re.compile(r"to make your own sentence", re.IGNORECASE)
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            self.assertIn("You're the colleague", pages["scene"], number)
+            self.assertIn(batch.renderer.esc(lesson["role_ja"]), pages["scene"], number)
+            self.assertIn(batch.renderer.esc(lesson["transfer_role_ja"]), pages["transfer-scene"], number)
+            self.assertIn("same two lines", pages["transfer-scene"], number)
+            self.assertIn("同じ二つの表現", pages["transfer-scene"], number)
+            for part in (1, 2):
+                pattern = lesson[f"p{part}"]
+                write = pages[f"p{part}-write"]
+                self.assertIn(batch.renderer.esc(pattern["write_script"]), write, (number, part))
+                self.assertIn(batch.renderer.esc(pattern["write_script_ja"]), write, (number, part))
+                self.assertNotRegex(pattern["write_script"], generic, (number, part))
+
+    def test_supported_hints_are_lexical_and_checkpoint_pages_have_none(self):
+        grammar_only = {"a", "an", "the", "am", "is", "are", "do", "does", "did", "have", "has", "had"}
+        for number, lesson in batch.LESSONS.items():
+            for part in (1, 2):
+                pattern = lesson[f"p{part}"]
+                stage = pattern.get("translate_stage", "supported")
+                hints = pattern.get("translate_hints")
+                if stage == "checkpoint":
+                    self.assertFalse(hints, (number, part))
+                    continue
+                self.assertEqual(len(hints), 4, (number, part))
+                for row, row_hints in zip(pattern["rows"], hints):
+                    if len(row_hints) == 2 and all(isinstance(item, str) for item in row_hints):
+                        row_hints = (row_hints,)
+                    self.assertTrue(row_hints, (number, part))
+                    sentence = batch.core.strip_marks(row[0]).casefold()
+                    target_chunks = [
+                        chunk.casefold()
+                        for chunk in re.findall(r"\{t\}(.*?)\{/t\}", row[0])
+                    ]
+                    for japanese, english in row_hints:
+                        self.assertTrue(japanese.strip() and english.strip(), (number, part))
+                        self.assertNotIn("___", japanese + english, (number, part))
+                        self.assertIn(english.casefold(), sentence, (number, part, english))
+                        self.assertNotIn(english.casefold(), target_chunks, (number, part, english))
+                        self.assertNotIn(english.casefold().strip(), grammar_only, (number, part, english))
+
+    def test_understand_checks_are_complete_counterpart_lines(self):
+        for number, lesson in batch.LESSONS.items():
+            counterpart_text = " ".join(
+                turn[1]
+                for turns in (lesson["scene_turns"], lesson["transfer_turns"])
+                for turn in turns
+                if turn[0] == "other"
+            )
+            for line, *_ in lesson["receptive"]:
+                self.assertTrue(line.endswith((".", "?")), (number, line))
+                self.assertIn(line, counterpart_text, (number, line))
 
     def test_authoritative_scene_cardinalities_and_ambiguities_are_preserved(self):
         brief_scenes = {}

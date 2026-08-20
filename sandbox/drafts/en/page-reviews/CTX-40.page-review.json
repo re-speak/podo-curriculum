@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-projects-deadlines/lessons/40-negotiate-a-realistic-deadline/lesson.html",
+  "lessonSha256": "227fdf51237e46002c2f72f00b32359f997b626b90c8041615d28002c7c071f7",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing today’s can-do.",
+      "tutorAction": "State the can-do briefly, then ask the learner to read the title aloud.",
+      "targetOrPrompt": "Negotiate a realistic deadline: Offer a useful interim result and agree on a deadline you can actually meet. / 役立つ中間成果を示し、実際に守れる締め切りに合意しましょう。",
+      "learningTarget": "Orient the learner to the exact negotiate a realistic deadline outcome before role-play.",
+      "pedagogicalValue": "The concise can-do and read-title action give this page one clear orientation job.",
+      "failureDiagnosis": "Extra model boxes or a second drill would duplicate later pages and obscure the first action.",
+      "nonTargetSupport": "The aligned Japanese can-do confirms meaning without requiring target production.",
+      "articleTreatment": "No article decision is tested on this orientation page.",
+      "choiceQuality": "No choices are needed for a brief orientation action.",
+      "componentConsistency": "Uses the approved single goal card without a legacy outcome list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for lesson-goal; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "scene",
+      "learnerAction": "Play the colleague and read only the learner-owned turns.",
+      "tutorAction": "Play the manager and begin with the first counterpart line.",
+      "targetOrPrompt": "A request for analysis sooner than planned; learner is Colleague, tutor is Manager; first tutor line: “Could you send the complete analysis tomorrow?”",
+      "learningTarget": "Encounter both target patterns in a resolved workplace exchange with unambiguous turn ownership.",
+      "pedagogicalValue": "Explicit roles make the learner speak only their lines while both targets perform the lesson’s practical job.",
+      "failureDiagnosis": "A generic counterpart label, tutor-read learner line, or unresolved ending would break the role-play.",
+      "nonTargetSupport": "Every dialogue turn has aligned Japanese support and complete situational context.",
+      "articleTreatment": "Articles remain inside complete natural dialogue lines instead of becoming unrelated micro-targets.",
+      "choiceQuality": "Turn timing replaces a fixed choice set on this role-play page.",
+      "componentConsistency": "Uses the shared six-turn dialogue with stable Colleague/Manager roles.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for scene; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "understand",
+      "learnerAction": "Listen to each tutor-owned counterpart line and choose its matching meaning.",
+      "tutorAction": "Read only each English manager line; do not read the answer choices.",
+      "targetOrPrompt": "Tutor-owned Manager lines: “Could you send the complete analysis tomorrow?”; “Could I have the full version by Thursday?”; “Agreed. I'll chase the data now.”; “When can the complete report be ready?”",
+      "learningTarget": "Build receptive control of four manager lines needed to understand the workplace task.",
+      "pedagogicalValue": "All four inputs are complete counterpart lines with useful, distinct meanings.",
+      "failureDiagnosis": "A learner fragment, obvious nonsense distractor, or unclear reader would test layout rather than comprehension.",
+      "nonTargetSupport": "Japanese appears in the meaning options while the tutor supplies the English listening input.",
+      "articleTreatment": "Articles stay inside the complete spoken lines and are not tested separately.",
+      "choiceQuality": "Each wrong option gives a materially different interpretation; correct positions alternate.",
+      "componentConsistency": "Uses the shared synchronized two-option comprehension component for all four lines.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for understand; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "expressions",
+      "learnerAction": "Read both useful workplace expressions aloud once.",
+      "tutorAction": "Ask the learner to read each expression; clarify meaning only if needed.",
+      "targetOrPrompt": "full analysis (完全な分析); realistic timeline (現実的な日程)",
+      "learningTarget": "Recognise two scene-relevant expressions before analysing the target patterns.",
+      "pedagogicalValue": "Both expressions contribute to the lesson’s practical situation or resolution.",
+      "failureDiagnosis": "An expression that never recurs would add lexical load without supporting the task.",
+      "nonTargetSupport": "Each English expression has one concise Japanese meaning.",
+      "articleTreatment": "Any article stays attached to its useful expression rather than being isolated.",
+      "choiceQuality": "No distractors are needed; the learner reads two selected expressions.",
+      "componentConsistency": "Uses the shared two-item expression list with no nested second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for expressions; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Listen for why pattern 1 is useful, then move to the next page.",
+      "tutorAction": "State the transition once and move directly to the activity.",
+      "targetOrPrompt": "Part 1 communicative purpose: まず、早く出せるものと時間が必要なものを対比します。",
+      "learningTarget": "Connect the practical scene to pattern 1 without adding a second drill.",
+      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
+      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the receptive-to-productive arc.",
+      "nonTargetSupport": "The aligned Japanese bridge names the communicative job.",
+      "articleTreatment": "No article decision is tested on this transition page.",
+      "choiceQuality": "No choices are needed for a one-step transition.",
+      "componentConsistency": "Uses the compact shared transition component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part1-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete model aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read every example.",
+      "targetOrPrompt": "Pattern 1 targets ['I can', 'will take']; first model: “I can send a summary tomorrow, but the full analysis will take two days.”; job: Use “I can ___, but ___ will take ___” to offer an interim result and state how long the full work needs.",
+      "learningTarget": "Connect pattern 1’s authored target boundary to its workplace use and varied examples.",
+      "pedagogicalValue": "Stable highlighting plus complete models makes the form usable rather than abstract.",
+      "failureDiagnosis": "Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.",
+      "nonTargetSupport": "Each model has aligned Japanese and visible non-target content.",
+      "articleTreatment": "Articles stay visible unless genuinely inside the authored target boundary.",
+      "choiceQuality": "The examples vary meaningful content instead of presenting a selection task.",
+      "componentConsistency": "Uses the shared meaning-and-use teaching component with one example block.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "I can",
+          "will take",
+          "送れますが",
+          "かかります",
+          "I can",
+          "will take",
+          "共有できますが",
+          "かかります",
+          "I can",
+          "will take",
+          "送れますが",
+          "かかります"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read all four complete English sentences aloud.",
+      "tutorAction": "Prompt the sentences in order and listen; model only if help is needed.",
+      "targetOrPrompt": "“I can send a summary tomorrow, but the full analysis will take two days.”; “I can share the outline today, but the final report will take three days.”; “I can send the figures now, but the written review will take a day.”; “I can give you a draft Friday, but the final version will take until Monday.”",
+      "learningTarget": "Build oral familiarity with pattern 1 across four meaningful workplace variations.",
+      "pedagogicalValue": "Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.",
+      "failureDiagnosis": "Reading only highlighted chunks or tutor modelling first would reduce learner production.",
+      "nonTargetSupport": "Every sentence has a complete aligned Japanese meaning.",
+      "articleTreatment": "Complete examples preserve articles naturally in their noun phrases.",
+      "choiceQuality": "No distractors are present; learning comes from four useful variations.",
+      "componentConsistency": "Uses the standard four-line read-aloud model list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "I can",
+          "will take",
+          "送れますが",
+          "かかります",
+          "I can",
+          "will take",
+          "共有できますが",
+          "かかります",
+          "I can",
+          "will take",
+          "送れますが",
+          "かかります",
+          "I can",
+          "will take",
+          "渡せますが",
+          "かかります"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the visual rule to identify the one production-relevant form distinction.",
+      "tutorAction": "Point out the ordering or usage contrast once, then move on.",
+      "targetOrPrompt": "Contrast the interim result with the full work / 中間成果と完全版を対比; Offer the earlier result first; after “but,” state the full item and the time it needs.; formula: I can + interim result, but + full result + will take + time",
+      "learningTarget": "Make the structural distinction needed to use pattern 1 accurately.",
+      "pedagogicalValue": "The concise rule explains a production boundary without repeating the reading drill.",
+      "failureDiagnosis": "An abstract grammar lecture or unrelated terminology would add load without helping the task.",
+      "nonTargetSupport": "The Japanese rule and formula express the same relation as the English explanation.",
+      "articleTreatment": "Articles remain attached to their noun phrases in the examples.",
+      "choiceQuality": "The page explains one contrast and does not add a separate answer-choice task.",
+      "componentConsistency": "Uses one shared rule component with a single formula and example pair.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-rule; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order each set of meaningful chunks, then say the complete sentence aloud.",
+      "tutorAction": "Let the learner build each sentence; prompt full-sentence reading after every row.",
+      "targetOrPrompt": "Build these complete pattern-1 sentences: I can send a summary tomorrow, but the full analysis will take two days.; I can share the outline today, but the final report will take three days.; I can send the figures now, but the written review will take a day.; I can give you a draft Friday, but the final version will take until Monday.",
+      "learningTarget": "Reconstruct pattern 1 from honest meaning units without splitting articles or prepositions.",
+      "pedagogicalValue": "Each row rebuilds one complete model and rehearses usable workplace word order.",
+      "failureDiagnosis": "Grammar-only chips or chunks that cannot rebuild the source sentence would turn this into guessing.",
+      "nonTargetSupport": "The Japanese sentence supplies meaning while all English chunks remain visible.",
+      "articleTreatment": "Articles remain attached to their noun phrases within meaningful chunks.",
+      "choiceQuality": "Every chip is required exactly once; no irrelevant distractor is introduced.",
+      "componentConsistency": "Uses the synchronized shared reorder component with validated source order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-reorder; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence aloud, including every missing target chunk.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Target-only blanks ['I can', 'will take', 'I can', 'will take', 'I can', 'will take', 'I can', 'will take']; authored pattern-1 boundaries ['I can', 'will take']",
+      "learningTarget": "Retrieve only pattern 1’s taught target chunks while saying complete sentences.",
+      "pedagogicalValue": "Target-only blanks keep the controlled task focused and leave lexical context available.",
+      "failureDiagnosis": "Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.",
+      "nonTargetSupport": "Japanese cues and visible English complements support all non-target meaning.",
+      "articleTreatment": "Articles stay visible unless they are genuinely part of the authored target.",
+      "choiceQuality": "No choices are used; each blank has one answer established by its source sentence.",
+      "componentConsistency": "Uses the static synchronized shared target-blank input component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "送れますが",
+          "かかります",
+          "共有できますが",
+          "かかります",
+          "送れますが",
+          "かかります",
+          "渡せますが",
+          "かかります"
+        ],
+        "blankAnswers": [
+          "I can",
+          "will take",
+          "I can",
+          "will take",
+          "I can",
+          "will take",
+          "I can",
+          "will take"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as they say it.",
+      "targetOrPrompt": "Produce all four complete pattern-1 sentences from Japanese; support stage supported; hints ['要約:summary', '概要:outline', '数値:figures', '下書き:draft'].",
+      "learningTarget": "Produce four complete pattern-1 sentences from meaning at the declared supported stage.",
+      "pedagogicalValue": "Useful lexical hints support new content while the learner still supplies the target grammar.",
+      "failureDiagnosis": "Hints that reveal articles or target grammar would erase the intended learner decision.",
+      "nonTargetSupport": "Row-specific lexical chips support non-target content: ['要約:summary', '概要:outline', '数値:figures', '下書き:draft'].",
+      "articleTreatment": "Hint chips omit articles and auxiliaries, leaving those grammatical choices to the learner.",
+      "choiceQuality": "No choices are used; each Japanese cue has one authored complete answer.",
+      "componentConsistency": "Uses the target-v2 whole-sentence input with explicit supported support.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-translate; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I can send a summary tomorrow, but the full analysis will take two days.",
+          "I can share the outline today, but the final report will take three days.",
+          "I can send the figures now, but the written review will take a day.",
+          "I can give you a draft Friday, but the final version will take until Monday."
+        ],
+        "hintChips": [
+          "要約:summary",
+          "概要:outline",
+          "数値:figures",
+          "下書き:draft"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personally relevant sentence that completes the named workplace job.",
+      "tutorAction": "Let the learner speak first, respond naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Use “I can ___, but ___ will take ___” to offer an interim result and state how long the full work needs. Stable frame: I can ___, but ___ will take ___",
+      "learningTarget": "Transfer pattern 1 into a new but clearly specified communicative use.",
+      "pedagogicalValue": "The visible frame and job make open production actionable without prescribing the learner’s content.",
+      "failureDiagnosis": "A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.",
+      "nonTargetSupport": "The aligned Japanese instruction states the same communicative job as the English script.",
+      "articleTreatment": "The learner chooses articles naturally within their own complete sentence.",
+      "choiceQuality": "No distractors are used; the learner chooses content within a stable pattern frame.",
+      "componentConsistency": "Uses the shared Student’s sentence and Correction capture component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-write; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “I can ___, but ___ will take ___” to offer an interim result and state how long the full work needs."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Listen for why pattern 2 is useful, then move to the next page.",
+      "tutorAction": "State the transition once and move directly to the activity.",
+      "targetOrPrompt": "Part 2 communicative purpose: 次に、締め切りを守るために必要な条件を明確にします。",
+      "learningTarget": "Connect the practical scene to pattern 2 without adding a second drill.",
+      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
+      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the receptive-to-productive arc.",
+      "nonTargetSupport": "The aligned Japanese bridge names the communicative job.",
+      "articleTreatment": "No article decision is tested on this transition page.",
+      "choiceQuality": "No choices are needed for a one-step transition.",
+      "componentConsistency": "Uses the compact shared transition component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part2-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete model aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read every example.",
+      "targetOrPrompt": "Pattern 2 targets ['Thursday is realistic', 'Friday is realistic', 'Monday is realistic', 'The end of June is realistic']; first model: “Thursday is realistic if the data arrives today.”; job: Use “___ is realistic if ___” to propose a workable deadline and the condition it depends on.",
+      "learningTarget": "Connect pattern 2’s authored target boundary to its workplace use and varied examples.",
+      "pedagogicalValue": "Stable highlighting plus complete models makes the form usable rather than abstract.",
+      "failureDiagnosis": "Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.",
+      "nonTargetSupport": "Each model has aligned Japanese and visible non-target content.",
+      "articleTreatment": "Articles stay visible unless genuinely inside the authored target boundary.",
+      "choiceQuality": "The examples vary meaningful content instead of presenting a selection task.",
+      "componentConsistency": "Uses the shared meaning-and-use teaching component with one example block.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "Thursday is realistic",
+          "木曜日が現実的です",
+          "Friday is realistic",
+          "金曜日が現実的です",
+          "Monday is realistic",
+          "月曜日が現実的です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read all four complete English sentences aloud.",
+      "tutorAction": "Prompt the sentences in order and listen; model only if help is needed.",
+      "targetOrPrompt": "“Thursday is realistic if the data arrives today.”; “Friday is realistic if the figures are final tomorrow.”; “Monday is realistic if the team approves the draft Friday.”; “The end of June is realistic if the scope stays the same.”",
+      "learningTarget": "Build oral familiarity with pattern 2 across four meaningful workplace variations.",
+      "pedagogicalValue": "Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.",
+      "failureDiagnosis": "Reading only highlighted chunks or tutor modelling first would reduce learner production.",
+      "nonTargetSupport": "Every sentence has a complete aligned Japanese meaning.",
+      "articleTreatment": "Complete examples preserve articles naturally in their noun phrases.",
+      "choiceQuality": "No distractors are present; learning comes from four useful variations.",
+      "componentConsistency": "Uses the standard four-line read-aloud model list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "Thursday is realistic",
+          "木曜日が現実的です",
+          "Friday is realistic",
+          "金曜日が現実的です",
+          "Monday is realistic",
+          "月曜日が現実的です",
+          "The end of June is realistic",
+          "6月末が現実的です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence aloud, including every missing target chunk.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Target-only blanks ['Thursday is realistic', 'Friday is realistic', 'Monday is realistic', 'The end of June is realistic']; authored pattern-2 boundaries ['Thursday is realistic', 'Friday is realistic', 'Monday is realistic', 'The end of June is realistic']",
+      "learningTarget": "Retrieve only pattern 2’s taught target chunks while saying complete sentences.",
+      "pedagogicalValue": "Target-only blanks keep the controlled task focused and leave lexical context available.",
+      "failureDiagnosis": "Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.",
+      "nonTargetSupport": "Japanese cues and visible English complements support all non-target meaning.",
+      "articleTreatment": "Articles stay visible unless they are genuinely part of the authored target.",
+      "choiceQuality": "No choices are used; each blank has one answer established by its source sentence.",
+      "componentConsistency": "Uses the static synchronized shared target-blank input component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "木曜日が現実的です",
+          "金曜日が現実的です",
+          "月曜日が現実的です",
+          "6月末が現実的です"
+        ],
+        "blankAnswers": [
+          "Thursday is realistic",
+          "Friday is realistic",
+          "Monday is realistic",
+          "The end of June is realistic"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as they say it.",
+      "targetOrPrompt": "Produce all four complete pattern-2 sentences from Japanese; support stage supported; hints ['データ:data', '数値:figures', 'チーム:team', '範囲:scope'].",
+      "learningTarget": "Produce four complete pattern-2 sentences from meaning at the declared supported stage.",
+      "pedagogicalValue": "Useful lexical hints support new content while the learner still supplies the target grammar.",
+      "failureDiagnosis": "Hints that reveal articles or target grammar would erase the intended learner decision.",
+      "nonTargetSupport": "Row-specific lexical chips support non-target content: ['データ:data', '数値:figures', 'チーム:team', '範囲:scope'].",
+      "articleTreatment": "Hint chips omit articles and auxiliaries, leaving those grammatical choices to the learner.",
+      "choiceQuality": "No choices are used; each Japanese cue has one authored complete answer.",
+      "componentConsistency": "Uses the target-v2 whole-sentence input with explicit supported support.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-translate; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Thursday is realistic if the data arrives today.",
+          "Friday is realistic if the figures are final tomorrow.",
+          "Monday is realistic if the team approves the draft Friday.",
+          "The end of June is realistic if the scope stays the same."
+        ],
+        "hintChips": [
+          "データ:data",
+          "数値:figures",
+          "チーム:team",
+          "範囲:scope"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personally relevant sentence that completes the named workplace job.",
+      "tutorAction": "Let the learner speak first, respond naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Use “___ is realistic if ___” to propose a workable deadline and the condition it depends on. Stable frame: ___ is realistic if ___",
+      "learningTarget": "Transfer pattern 2 into a new but clearly specified communicative use.",
+      "pedagogicalValue": "The visible frame and job make open production actionable without prescribing the learner’s content.",
+      "failureDiagnosis": "A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.",
+      "nonTargetSupport": "The aligned Japanese instruction states the same communicative job as the English script.",
+      "articleTreatment": "The learner chooses articles naturally within their own complete sentence.",
+      "choiceQuality": "No distractors are used; the learner chooses content within a stable pattern frame.",
+      "componentConsistency": "Uses the shared Student’s sentence and Correction capture component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-write; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “___ is realistic if ___” to propose a workable deadline and the condition it depends on."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Listen for why the combined workplace task is useful, then move to the next page.",
+      "tutorAction": "State the transition once and move directly to the activity.",
+      "targetOrPrompt": "Return to a request for analysis sooner than planned and complete both practical moves in one role-play.",
+      "learningTarget": "Connect the practical scene to the combined workplace task without adding a second drill.",
+      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
+      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the receptive-to-productive arc.",
+      "nonTargetSupport": "The aligned Japanese bridge names the communicative job.",
+      "articleTreatment": "No article decision is tested on this transition page.",
+      "choiceQuality": "No choices are needed for a one-step transition.",
+      "componentConsistency": "Uses the compact shared transition component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part3-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every colleague line aloud while the tutor plays the counterpart.",
+      "tutorAction": "Play the manager and pause for each learner-owned line.",
+      "targetOrPrompt": "Replay a request for analysis sooner than planned; learner reads Colleague lines and tutor plays Manager; both target patterns remain complete.",
+      "learningTarget": "Replay the resolved six-turn exchange with both target patterns in context.",
+      "pedagogicalValue": "The roleplay integrates both moves without asking the tutor to model learner production.",
+      "failureDiagnosis": "Unclear roles or tutor-read learner lines would remove the learner’s speaking job.",
+      "nonTargetSupport": "Complete Japanese translations support each turn without changing speaker ownership.",
+      "articleTreatment": "Articles remain embedded in complete natural turns.",
+      "choiceQuality": "Dialogue timing supplies the response path; no distractors are needed.",
+      "componentConsistency": "Uses the same six-turn scene and stable roles introduced earlier.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "I can",
+          "will take",
+          "送れますが",
+          "かかります",
+          "Thursday is realistic",
+          "木曜日が現実的です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say each complete colleague line aloud, including all missing target chunks.",
+      "tutorAction": "Play the manager and type only the missing target words.",
+      "targetOrPrompt": "Complete a request for analysis sooner than planned with target blanks ['I can', 'will take', 'Thursday is realistic']; tutor plays Manager.",
+      "learningTarget": "Retrieve both patterns while completing the full practical exchange.",
+      "pedagogicalValue": "Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.",
+      "failureDiagnosis": "Blanking full turns or non-target vocabulary would destabilise the taught boundary.",
+      "nonTargetSupport": "Visible complements and aligned Japanese preserve the scene while target chunks are retrieved.",
+      "articleTreatment": "Articles stay visible unless authored inside the target chunk.",
+      "choiceQuality": "No choices are used; each blank is anchored to the previously read scene.",
+      "componentConsistency": "Uses the shared six-turn completion roleplay and phrase inputs.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I can",
+          "will take",
+          "Thursday is realistic"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor’s real question, then ask the visible reciprocal question.",
+      "tutorAction": "React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.",
+      "targetOrPrompt": "Exact reciprocal questions: “Would you rather receive a rough answer quickly or a complete answer later, and why?”; “What about you—which would you rather receive?”",
+      "learningTarget": "Sustain a reciprocal conversation relevant to negotiate a realistic deadline without forcing today’s pattern.",
+      "pedagogicalValue": "Both exact questions stand alone, invite personal content, and create genuine two-way talk.",
+      "failureDiagnosis": "A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.",
+      "nonTargetSupport": "Both questions have aligned Japanese; open answer areas preserve learner and tutor ownership.",
+      "articleTreatment": "Articles arise naturally in personal answers and are corrected only when useful.",
+      "choiceQuality": "No fixed choices constrain the conversation; the questions provide a focused but open topic.",
+      "componentConsistency": "Uses the four-turn Tutor question, Student answer, Student ask-back, Tutor answer structure.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-freetalk; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you rather receive a rough answer quickly or a complete answer later, and why?",
+          "What about you—which would you rather receive?"
+        ]
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two natural options and identify when each one fits.",
+      "tutorAction": "Explain the practical distinction briefly and ask which option suits the example situation.",
+      "targetOrPrompt": "Use “realistic” for a date you can defend / 根拠のある日程には realistic: A realistic date is achievable under the stated conditions; it is not just the date you prefer.",
+      "learningTarget": "Notice one usage distinction that makes the lesson language more natural at work.",
+      "pedagogicalValue": "The two examples contrast decisions the learner may genuinely need to make.",
+      "failureDiagnosis": "A terminology-only explanation or indistinguishable examples would add complexity without usable nuance.",
+      "nonTargetSupport": "Each option includes concise Japanese context and a complete example.",
+      "articleTreatment": "Articles remain inside complete examples and are not isolated from meaning.",
+      "choiceQuality": "The two alternatives differ by context rather than arbitrary right-versus-wrong grading.",
+      "componentConsistency": "Uses the shared two-option nuance comparison component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for native-tip; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "transfer-scene",
+      "learnerAction": "Play the colleague and complete both target lines in the new workplace situation.",
+      "tutorAction": "Play the product lead, begin with the first line, and carry the exchange to resolution.",
+      "targetOrPrompt": "Agreeing on a launch review; learner is Colleague, tutor is Product Lead; first tutor line: “We need the final launch review this afternoon.”; same two target patterns are retrieved in a new scene.",
+      "learningTarget": "Transfer both stable patterns to a new roleplay with a different practical context.",
+      "pedagogicalValue": "The new role and situation require meaningful transfer while preserving the two learned moves.",
+      "failureDiagnosis": "Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.",
+      "nonTargetSupport": "Short aligned bilingual role instructions and Japanese turns support the new context.",
+      "articleTreatment": "Articles remain visible outside target blanks unless they belong to the authored phrase.",
+      "choiceQuality": "Roleplay turns guide the exchange; no unrelated distractors are introduced.",
+      "componentConsistency": "Uses the shared six-turn completion component with explicit new tutor role and same two lines.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I can",
+          "will take",
+          "Friday is realistic"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -21,8 +21,8 @@ import vocabulary
 ROOT = new_lesson.REPO
 TRACK = new_lesson.ENGLISH / "tracks/2-contextual-english"
 COURSES = {
-    range(37, 43): ("ctx-business-projects-deadlines", "B1", "BUSINESS ENGLISH", "Colleague", "仕事を進める同僚"),
-    range(43, 49): ("ctx-business-meetings-decisions", "B2", "BUSINESS ENGLISH", "Colleague", "会議を進める同僚"),
+    range(37, 43): ("ctx-business-projects-deadlines", "B1", "BUSINESS ENGLISH", "Colleague", "同僚"),
+    range(43, 49): ("ctx-business-meetings-decisions", "B2", "BUSINESS ENGLISH", "Colleague", "同僚"),
 }
 
 
@@ -353,6 +353,198 @@ LESSONS = {
 }
 
 
+# Human-reviewed operating copy for the CTX37-48 semantic pass.  These fields
+# are kept beside the lesson data so regeneration cannot silently restore
+# generic write prompts, unsupported translation, or pattern-production free
+# talk.  A checkpoint deliberately has no lexical hints; supported production
+# has useful content-word hints while articles and grammar remain learner work.
+REVIEWED_COPY_37_48 = {
+    37: dict(
+        role_ja="上司", transfer_role_ja="チームリーダー",
+        live=("When several tasks feel urgent, how do you decide what to do first?", "いくつもの仕事が急ぎに見えるとき、何を最初にするかどう決めますか？", "Your real method and why it works for you", "自分の実際の決め方と、その方法がよい理由", "What about you—how do you decide what comes first?", "先生はどうですか？何を最初にするかどう決めますか？"),
+        p1=dict(write_frame="I can ___, but probably not ___", write_script="Use “I can ___, but probably not ___” to tell your manager what you can realistically finish.", write_script_ja="「I can ___, but probably not ___」を使って、現実的に終えられる範囲を上司に伝えましょう。", translate_hints=(("金曜日までに二つ", "two by Friday"), ("今日、報告書", "report today"), ("顧客二社", "two clients"), ("緊急の問題", "urgent issue"))),
+        p2=dict(write_frame="Which ___ should I ___ first?", write_script="Use “Which ___ should I ___ first?” to ask your manager for one clear first priority.", write_script_ja="「Which ___ should I ___ first?」を使って、最初に優先する仕事を上司に確認しましょう。", translate_hints=(("仕事", "task"), ("ファイル", "file"), ("顧客", "client"), ("問題", "problem"))),
+    ),
+    38: dict(
+        role_ja="プロジェクト責任者", transfer_role_ja="顧客担当責任者",
+        live=("Which kind of work do you prefer to own: contacting people, planning, or checking details?", "人への連絡、計画、細部の確認なら、どの仕事を担当したいですか？", "Your preference and a brief reason", "自分の希望と短い理由", "What about you—which kind of work do you prefer?", "先生はどうですか？どの仕事を担当したいですか？"),
+        p1=dict(write_frame="Just to clarify, who's ___?", write_script="Use “Just to clarify, who's ___?” to ask who owns one unclear contact task.", write_script_ja="「Just to clarify, who's ___?」を使って、曖昧な連絡業務の担当者を確認しましょう。", translate_hints=(("仕入先", "supplier"), ("顧客", "client"), ("請求書", "invoice"), ("会議室", "room"))),
+        p2=dict(write_frame="I'm happy to ___ if no one else is doing it", write_script="Use “I'm happy to ___ if no one else is doing it” to offer to take an unassigned task.", write_script_ja="「I'm happy to ___ if no one else is doing it」を使って、担当者がいない仕事を引き受けると申し出ましょう。", translate_stage="checkpoint"),
+    ),
+    39: dict(
+        role_ja="プロジェクトスポンサー", transfer_role_ja="分析責任者",
+        live=("What makes you trust a project status update?", "どんな進捗報告なら信頼できますか？", "One detail that builds trust and why", "信頼につながる情報を一つと、その理由", "What about you—what makes a status update trustworthy?", "先生はどうですか？どんな進捗報告なら信頼できますか？"),
+        p1=dict(write_frame="We're on track ___", write_script="Use “We're on track ___” to give the current project status without overstating it.", write_script_ja="「We're on track ___」を使って、言い過ぎずに現在の進捗を伝えましょう。", translate_stage="checkpoint"),
+        p2=dict(write_frame="The main risk is that ___", write_script="Use “The main risk is that ___” to raise one possible problem before it becomes urgent.", write_script_ja="「The main risk is that ___」を使って、深刻になる前に主なリスクを一つ伝えましょう。", translate_hints=(("仕入先", "supplier"), ("データ", "data"), ("承認", "approval"), ("試験", "test"))),
+    ),
+    40: dict(
+        role_ja="上司", transfer_role_ja="製品責任者",
+        live=("Would you rather receive a rough answer quickly or a complete answer later, and why?", "早い仮回答と遅い完全な回答なら、どちらがよいですか？なぜですか？", "Your preference and a brief reason", "自分の希望と短い理由", "What about you—which would you rather receive?", "先生はどうですか？どちらを受け取りたいですか？"),
+        p1=dict(write_frame="I can ___, but ___ will take ___", write_script="Use “I can ___, but ___ will take ___” to offer an interim result and state how long the full work needs.", write_script_ja="「I can ___, but ___ will take ___」を使って、中間成果を提案し、完全な作業に必要な時間を伝えましょう。", translate_hints=(("要約", "summary"), ("概要", "outline"), ("数値", "figures"), ("下書き", "draft"))),
+        p2=dict(write_frame="___ is realistic if ___", write_script="Use “___ is realistic if ___” to propose a workable deadline and the condition it depends on.", write_script_ja="「___ is realistic if ___」を使って、現実的な締め切りと、その条件を伝えましょう。", translate_hints=(("データ", "data"), ("数値", "figures"), ("チーム", "team"), ("範囲", "scope"))),
+    ),
+    41: dict(
+        role_ja="責任者", transfer_role_ja="顧客側の責任者",
+        live=("When plans go wrong, do you prefer to hear the bad news immediately or together with a solution?", "計画に問題が起きたら、悪い知らせをすぐ聞きたいですか、それとも解決策と一緒に聞きたいですか？", "Your preference and why", "自分の希望と理由", "What about you—when do you want to hear bad news?", "先生はどうですか？悪い知らせはいつ聞きたいですか？"),
+        p1=dict(write_frame="I'm afraid we won't be ready for ___", write_script="Use “I'm afraid we won't be ready for ___” to tell the director which event will be delayed.", write_script_ja="「I'm afraid we won't be ready for ___」を使って、どの予定に間に合わないか責任者に伝えましょう。", translate_stage="checkpoint"),
+        p2=dict(write_frame="We'll need to push it back ___, and I have a recovery plan", write_script="Use “We'll need to push it back ___, and I have a recovery plan” to give the new timing and show there is a next step.", write_script_ja="「We'll need to push it back ___, and I have a recovery plan」を使って、新しい日程と立て直し策があることを伝えましょう。", translate_stage="checkpoint"),
+    ),
+    42: dict(
+        role_ja="プロジェクト責任者", transfer_role_ja="チームリーダー",
+        live=("What is the most useful thing to receive after a meeting: notes, action items, or deadlines?", "会議後にもらうなら、議事録・行動項目・締め切りのどれが最も役立ちますか？", "Your choice and why it helps", "自分の選択と、役立つ理由", "What about you—which one is most useful?", "先生はどうですか？どれが最も役立ちますか？"),
+        p1=dict(write_frame="So I'll ___, and ___ will ___", write_script="Use “So I'll ___, and ___ will ___” to recap two actions and their owners.", write_script_ja="「So I'll ___, and ___ will ___」を使って、二つの行動と担当者をまとめましょう。", translate_hints=((('日程', 'schedule'), ('顧客', 'client')), (('予算', 'budget'), ('数値', 'figures')), (('メモ', 'notes'), ('ファイル', 'files')), (('仕入先', 'supplier'), ('チーム', 'team')))),
+        p2=dict(write_frame="I'll ___ by ___, and ___ will ___ by ___", write_script="Use “I'll ___ by ___, and ___ will ___ by ___” to confirm both owners and both deadlines.", write_script_ja="「I'll ___ by ___, and ___ will ___ by ___」を使って、二人の担当と締め切りを確認しましょう。", translate_hints=((('更新した日程', 'updated schedule'), ('顧客', 'client')), (('予算', 'budget'), ('数値', 'figures')), (('メモ', 'notes'), ('ファイル', 'files')), (('仕入先', 'supplier'), ('チーム', 'team')))),
+    ),
+    43: dict(
+        role_ja="発表者", transfer_role_ja="営業責任者",
+        live=("In meetings, what makes you question a number or forecast?", "会議で数値や予測を疑うのは、どんなときですか？", "One warning sign and why it matters", "注意する点を一つと、その理由", "What about you—what makes you question a forecast?", "先生はどうですか？どんなときに予測を疑いますか？"),
+        p1=dict(write_frame="Sorry to interrupt, but what is ___ based on?", write_script="Use “Sorry to interrupt, but what is ___ based on?” to ask for the evidence behind an important claim.", write_script_ja="「Sorry to interrupt, but what is ___ based on?」を使って、重要な主張の根拠を尋ねましょう。", translate_stage="checkpoint"),
+        p2=dict(write_frame="So it could change if ___?", write_script="Use “So it could change if ___?” to check which assumption could change the result.", write_script_ja="「So it could change if ___?」を使って、どの前提が変わると結果も変わるか確認しましょう。", translate_hints=(("見込み", "estimate"), ("費用", "costs"), ("顧客実績", "client results"), ("承認", "approval"))),
+    ),
+    44: dict(
+        role_ja="会議の進行役", transfer_role_ja="財務会議の進行役",
+        live=("Have you ever left a meeting with a different understanding from everyone else?", "会議のあと、自分だけ違う理解をしていたことはありますか？", "A real example, or why it has not happened", "実際の例、または起きたことがない理由", "What about you—has that ever happened to you?", "先生はどうですか？そのような経験はありますか？"),
+        p1=dict(write_frame="So we've agreed to ___", write_script="Use “So we've agreed to ___” to summarise the action the group decided on.", write_script_ja="「So we've agreed to ___」を使って、グループが決めた行動を要約しましょう。", translate_hints=(("選択肢Bを試す", "test option B"), ("一回試験導入する", "run one pilot"), ("小さいチーム", "smaller team"), ("費用を確認する", "review the cost"))),
+        p2=dict(write_frame="Have I understood ___ correctly?", write_script="Use “Have I understood ___ correctly?” to check the decision before you record it.", write_script_ja="「Have I understood ___ correctly?」を使って、記録する前に決定内容を確認しましょう。", translate_stage="checkpoint"),
+    ),
+    45: dict(
+        role_ja="意思決定者", transfer_role_ja="業務責任者",
+        live=("When someone recommends an option, which matters more to you: the recommendation or the reason?", "誰かが案をすすめるとき、結論と理由のどちらを重視しますか？", "Your choice and why", "自分の選択と理由", "What about you—which matters more?", "先生はどうですか？どちらを重視しますか？"),
+        p1=dict(write_frame="I recommend ___", write_script="Use “I recommend ___” to give the decision maker one clear recommendation.", write_script_ja="「I recommend ___」を使って、意思決定者に一つの案を明確にすすめましょう。", translate_stage="checkpoint"),
+        p2=dict(write_frame="It's ___ to ___", write_script="Use “It's ___ to ___” to give one comparative reason for your recommendation.", write_script_ja="「It's ___ to ___」を使って、推奨案を支える比較理由を一つ伝えましょう。", translate_stage="checkpoint"),
+    ),
+    46: dict(
+        role_ja="上級管理職", transfer_role_ja="財務責任者",
+        live=("Is it easy for you to say “I don't know” at work? Why or why not?", "仕事で「分かりません」と言うのは簡単ですか？なぜですか？", "Your honest view and reason", "自分の正直な考えと理由", "What about you—is it easy for you?", "先生はどうですか？簡単に言えますか？"),
+        p1=dict(write_frame="I don't have ___ in front of me", write_script="Use “I don't have ___ in front of me” to say which fact you cannot verify yet.", write_script_ja="「I don't have ___ in front of me」を使って、今は確認できない情報を伝えましょう。", translate_stage="checkpoint"),
+        p2=dict(write_frame="Let me check and get back to you ___", write_script="Use “Let me check and get back to you ___” to promise a specific follow-up time.", write_script_ja="「Let me check and get back to you ___」を使って、確認して回答する時刻を約束しましょう。", translate_stage="checkpoint"),
+    ),
+    47: dict(
+        role_ja="上級責任者", transfer_role_ja="部門責任者",
+        live=("Is it harder to disagree with a senior colleague or with a client? Why?", "目上の同僚と顧客なら、どちらに異議を述べるほうが難しいですか？なぜですか？", "Your choice and a real reason", "自分の選択と実際の理由", "What about you—which is harder?", "先生はどうですか？どちらが難しいですか？"),
+        p1=dict(write_frame="I see your point, but ___ concerns me", write_script="Use “I see your point, but ___ concerns me” to acknowledge the idea and name one concern.", write_script_ja="「I see your point, but ___ concerns me」を使って、相手の考えを認めたうえで懸念を一つ伝えましょう。", translate_hints=(("日程", "timing"), ("費用", "cost"), ("根拠", "evidence"), ("顧客への影響", "client impact"))),
+        p2=dict(write_frame="The part I'm not comfortable with is ___", write_script="Use “The part I'm not comfortable with is ___” to identify the exact action you cannot support.", write_script_ja="「The part I'm not comfortable with is ___」を使って、賛成できない具体的な行動を示しましょう。", translate_hints=(("最終テスト", "final test"), ("レビュー時間", "review time"), ("未確認のデータ", "unverified data"), ("顧客", "client"))),
+    ),
+    48: dict(
+        role_ja="会議の進行役", transfer_role_ja="調達会議の進行役",
+        live=("When a group cannot decide, what usually helps most: more information, a deadline, or a vote?", "グループで決められないとき、追加情報・期限・投票のどれが最も役立ちますか？", "Your choice and why it helps", "自分の選択と、役立つ理由", "What about you—which one helps most?", "先生はどうですか？どれが最も役立ちますか？"),
+        p1=dict(write_frame="The decision we need today is ___", write_script="Use “The decision we need today is ___” to define the one choice the group must make.", write_script_ja="「The decision we need today is ___」を使って、グループが決める一つの選択を明確にしましょう。", translate_stage="checkpoint"),
+        p2=dict(write_frame="Would it help if we compared them against ___?", write_script="Use “Would it help if we compared them against ___?” to propose one fair basis for comparison.", write_script_ja="「Would it help if we compared them against ___?」を使って、公平に比べる基準を一つ提案しましょう。", translate_stage="checkpoint"),
+    ),
+}
+
+
+for _number, _copy in REVIEWED_COPY_37_48.items():
+    _lesson = LESSONS[_number]
+    _lesson["role_ja"] = _copy["role_ja"]
+    _lesson["transfer_role_ja"] = _copy["transfer_role_ja"]
+    _lesson["live"] = _copy["live"]
+    _lesson.pop("live_sequence", None)
+    for _part in (1, 2):
+        _lesson[f"p{_part}"].update(_copy[f"p{_part}"])
+
+    _owned_english = {
+        _entry.split("|")[0].strip().casefold()
+        for _category in _lesson["vocab"]
+        for _entry in _category.split(";")
+        if _entry.strip()
+    }
+    _support_additions = []
+    for _part in (1, 2):
+        for _hint_row in _lesson[f"p{_part}"].get("translate_hints", ()):
+            if len(_hint_row) == 2 and all(isinstance(_item, str) for _item in _hint_row):
+                _hint_row = (_hint_row,)
+            for _japanese_hint, _english_hint in _hint_row:
+                if _english_hint.casefold() not in _owned_english:
+                    _support_additions.append(f"{_english_hint}|{_japanese_hint}")
+                    _owned_english.add(_english_hint.casefold())
+    if _support_additions:
+        _vocab = list(_lesson["vocab"])
+        _vocab[2] = "; ".join(filter(None, (_vocab[2], *_support_additions)))
+        _lesson["vocab"] = tuple(_vocab)
+
+
+# The Understand page is tutor-read listening.  Use complete counterpart lines
+# from the scene/transfer instead of learner fragments or target answers.
+REVIEWED_RECEPTIVE_37_48 = {
+    37: (
+        ("I need the client report, the audit notes, and the budget update by Friday.", "The manager names three tasks with the same deadline", "上司は同じ締め切りの仕事を三つ挙げている", "The manager has cancelled all three tasks", "上司は三つの仕事をすべて中止した"),
+        ("Understood. What do you need from me?", "The manager invites the learner to ask for a decision", "上司は学習者に判断事項を尋ねるよう促している", "The manager refuses to set a priority", "上司は優先順位を決めることを断る"),
+        ("Do the client report first.", "The client report is the first priority", "顧客報告書が最優先である", "The audit is the first priority", "監査が最優先である"),
+        ("Move the audit to Monday.", "The audit gets a later deadline", "監査の締め切りが後ろに動く", "The audit remains due Friday", "監査は金曜日のままである"),
+    ),
+    38: (
+        ("Your team thinks ours is contacting the supplier, but our team thinks yours is.", "The two teams have different assumptions about ownership", "二つのチームは担当について異なる思い込みをしている", "Both teams named the same clear owner", "両チームは同じ担当者を明確に決めた"),
+        ("I thought your team was doing it.", "The project lead assumed the learner's team owned it", "責任者は学習者のチーム担当だと思っていた", "The project lead confirms another named owner", "責任者は別の担当者を確定した"),
+        ("No one has taken that action yet.", "The contact task still has no owner", "連絡業務にはまだ担当者がいない", "The contact task is already complete", "連絡業務はすでに完了している"),
+        ("Thanks. Please copy me in.", "The lead wants to receive the message too", "責任者もその連絡を受け取りたい", "The lead wants the message deleted", "責任者は連絡を削除してほしい"),
+    ),
+    39: (
+        ("How is the delivery looking today?", "The sponsor asks for the current delivery status", "スポンサーは現在の納品状況を尋ねている", "The sponsor cancels the delivery", "スポンサーは納品を中止する"),
+        ("But you sound worried.", "The sponsor hears concern behind the status", "スポンサーは状況報告の裏に懸念を感じている", "The sponsor says there is no risk", "スポンサーはリスクがないと言っている"),
+        ("Thanks for raising it now. What's the fallback?", "The sponsor asks for a backup plan", "スポンサーは代替案を尋ねている", "The sponsor asks for last month's invoice", "スポンサーは先月の請求書を尋ねている"),
+        ("What could change that?", "The analytics lead asks what could affect the status", "分析責任者は状況が変わる条件を尋ねている", "The analytics lead says the status can never change", "分析責任者は状況が絶対に変わらないと言っている"),
+    ),
+    40: (
+        ("Could you send the complete analysis tomorrow?", "The manager asks for the full analysis tomorrow", "上司は完全な分析を明日求めている", "The manager asks only for an outline next month", "上司は来月の概要だけを求めている"),
+        ("Could I have the full version by Thursday?", "The manager proposes Thursday for the full version", "上司は完全版を木曜日までに求めている", "The manager cancels the full version", "上司は完全版を中止する"),
+        ("Agreed. I'll chase the data now.", "The manager will follow up on the needed data", "上司は必要なデータを催促する", "The manager will remove the data requirement", "上司はデータの要件をなくす"),
+        ("When can the complete report be ready?", "The product lead asks for a realistic completion date", "製品責任者は現実的な完成日を尋ねている", "The product lead asks for a meeting room", "製品責任者は会議室を求めている"),
+    ),
+    41: (
+        ("Are we still set for Monday's launch?", "The director checks whether Monday's launch is still possible", "責任者は月曜日の公開がまだ可能か確認している", "The director says the launch finished", "責任者は公開が完了したと言っている"),
+        ("How far behind are we?", "The director asks for the size of the delay", "責任者は遅れの長さを尋ねている", "The director asks who booked the room", "責任者は会議室の予約者を尋ねている"),
+        ("All right. Talk me through the plan.", "The director wants the recovery steps explained", "責任者は立て直し手順の説明を求めている", "The director rejects every next step", "責任者はすべての次の行動を拒否する"),
+        ("What date can you commit to instead?", "The client director asks for a new reliable date", "顧客側の責任者は代わりに約束できる日を尋ねている", "The client director keeps the original date without discussion", "顧客側の責任者は話し合わず元の日程を維持する"),
+    ),
+    42: (
+        ("The schedule and client call still have no owners. You and Mia each thought the other person owned them.", "Responsibility for both actions is unclear", "二つの行動の担当がどちらも曖昧である", "Both actions already have confirmed owners", "二つの行動はすでに担当が確定している"),
+        ("Correct. What are the deadlines?", "The project lead asks when both actions are due", "責任者は二つの行動の締め切りを尋ねている", "The project lead asks to cancel both actions", "責任者は二つの行動の中止を求めている"),
+        ("Good. Please put that in the notes.", "The project lead wants the agreement recorded", "責任者は合意内容の記録を求めている", "The project lead asks to delete the actions", "責任者は行動項目の削除を求めている"),
+        ("Good. When will each item be ready?", "The team lead asks for a deadline for each item", "チームリーダーは各項目の締め切りを尋ねている", "The team lead says deadlines are unnecessary", "チームリーダーは締め切りが不要だと言っている"),
+    ),
+    43: (
+        ("We should be ready to launch on June 12.", "The presenter states a planned launch date", "発表者は公開予定日を示している", "The presenter cancels the launch", "発表者は公開を中止する"),
+        ("It's based on the supplier's current estimate.", "The date relies on the supplier's estimate", "日程は仕入先の見込みに基づいている", "The date is already legally fixed", "日程はすでに法的に確定している"),
+        ("Exactly. It isn't fixed yet.", "The launch date may still change", "公開日はまだ変わる可能性がある", "The launch date cannot change", "公開日は変更できない"),
+        ("It uses the results from our three largest clients.", "The forecast uses results from three major clients", "予測は主要顧客三社の実績を使っている", "The forecast has no supporting information", "予測には裏付けとなる情報がない"),
+    ),
+    44: (
+        ("Let's test option B first.", "The chair proposes option B for the first test", "進行役は最初のテストに選択肢Bを提案している", "The chair rejects option B", "進行役は選択肢Bを却下する"),
+        ("Yes. Start with the support team only.", "The first test is limited to the support team", "最初のテストはサポートチームだけに限定される", "The first test includes every team", "最初のテストには全チームが含まれる"),
+        ("Yes. Please record it that way.", "The chair confirms the summary for the notes", "進行役はその要約で記録するよう確認する", "The chair asks to erase the decision", "進行役は決定を消すよう求める"),
+        ("Correct. Put that in the decision log and schedule a June review.", "The finance chair wants the decision and review recorded", "財務会議の進行役は決定とレビューの記録を求めている", "The finance chair postpones all documentation", "財務会議の進行役はすべての記録を延期する"),
+    ),
+    45: (
+        ("We've reviewed options A, B, and C. Which one should we choose?", "The decision maker asks for one recommendation", "意思決定者は一つの推奨案を求めている", "The decision maker rejects every option", "意思決定者はすべての案を却下する"),
+        ("Why B?", "The decision maker asks for the reason behind option B", "意思決定者は選択肢Bの理由を尋ねている", "The decision maker asks for a new meeting time", "意思決定者は新しい会議時刻を尋ねている"),
+        ("Good. Show us the comparison.", "The decision maker asks for supporting evidence", "意思決定者は比較根拠を求めている", "The decision maker ends the project", "意思決定者は案件を終了する"),
+        ("What makes the smaller pilot better?", "The operations director asks for a comparative reason", "業務責任者は小規模な試験導入がよい比較理由を尋ねている", "The operations director asks who booked the room", "業務責任者は会議室の予約者を尋ねている"),
+    ),
+    46: (
+        ("What was the confirmed conversion figure last month?", "The senior manager asks for a verified number", "上級管理職は確認済みの数値を求めている", "The senior manager asks for a personal opinion", "上級管理職は個人的な意見を求めている"),
+        ("Can you give us an estimate?", "The senior manager asks whether an approximate figure is available", "上級管理職は概算を出せるか尋ねている", "The senior manager asks for a confirmed date", "上級管理職は確定日を求めている"),
+        ("That's fine. Please send it to everyone.", "The verified answer should be shared with the group", "確認済みの回答を全員に共有する", "The answer should remain private", "回答は非公開にする"),
+        ("When can finance have the verified total?", "The finance director asks for a follow-up time", "財務責任者は確認済み合計の回答時刻を尋ねている", "The finance director asks for an unverified guess", "財務責任者は未確認の推測を求めている"),
+    ),
+    47: (
+        ("We can meet the date if we skip the final test.", "The proposal removes a quality step to meet the date", "提案は日程に間に合わせるため品質確認を省く", "The proposal adds another test", "提案はテストを追加する"),
+        ("What specifically concerns you?", "The senior director asks for the exact concern", "上級責任者は具体的な懸念を求めている", "The senior director changes the subject", "上級責任者は話題を変える"),
+        ("All right. Let's examine that risk.", "The concern will be considered", "懸念は検討される", "The concern is dismissed without discussion", "懸念は検討されず退けられる"),
+        ("Which part of that plan worries you?", "The department head asks which action is concerning", "部門責任者はどの行動が心配か尋ねている", "The department head says the plan cannot be discussed", "部門責任者は計画を話し合えないと言っている"),
+    ),
+    48: (
+        ("We've discussed options A, B, and C for forty minutes.", "The discussion has continued without a decision", "決定がないまま議論が続いている", "The decision was made forty minutes ago", "40分前に決定した"),
+        ("I don't think we have enough information.", "The chair sees an evidence gap", "進行役は情報不足を認識している", "The chair has already chosen secretly", "進行役はすでに内密に選んだ"),
+        ("Yes. Then we can decide.", "A common comparison can unlock the decision", "共通比較によって判断できる", "The comparison will prevent any decision", "比較すると判断できなくなる"),
+        ("We need a fair way to compare them first.", "The procurement chair asks for a fair comparison", "調達会議の進行役は公平な比較を求めている", "The procurement chair says comparison is unnecessary", "調達会議の進行役は比較が不要だと言っている"),
+    ),
+}
+
+for _number, _receptive in REVIEWED_RECEPTIVE_37_48.items():
+    LESSONS[_number]["receptive"] = _receptive
+
+
 AUTHORITATIVE = {
     number: (lesson["title"], core.strip_marks(lesson["p1"]["rows"][0][0]), core.strip_marks(lesson["p2"]["rows"][0][0]))
     for number, lesson in LESSONS.items()
@@ -416,6 +608,7 @@ VISIBLE_PRIOR_CTX_OWNERS = {
 # Keep that exception explicit so an unrelated metadata-only token cannot pass.
 VISIBLE_VOCABULARY_FORMS = {
     (41, "push back"): ("push it back",),
+    (43, "supplier"): ("supplier's",),
 }
 
 
@@ -590,15 +783,17 @@ def build(number, lesson):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--lesson", type=int, choices=LESSONS)
     args = parser.parse_args()
-    for number, lesson in LESSONS.items():
+    selected = LESSONS.items() if args.lesson is None else ((args.lesson, LESSONS[args.lesson]),)
+    for number, lesson in selected:
         output, source = build(number, lesson)
         if output.exists() and not args.refresh:
             raise SystemExit(f"refusing to overwrite {output.relative_to(ROOT)}")
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(source, encoding="utf-8")
         print(f"wrote {output.relative_to(ROOT)}")
-    print(f"{len(LESSONS)} Contextual decks generated")
+    print(f"{len(LESSONS) if args.lesson is None else 1} Contextual decks generated")
     return 0
 
 
