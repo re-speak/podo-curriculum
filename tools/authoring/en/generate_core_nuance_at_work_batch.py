@@ -239,70 +239,70 @@ def choice_rows(items):
 SPECS = {
     81: semantic_spec(
         (("Use this to name the duty or activity that belongs to your role.", "自分の役割として担当する仕事や活動を伝えるときに使います。"), ("Use this to name the person or team you collaborate with most.", "最もよく協力して働く人やチームを伝えるときに使います。")),
-        (("Name one duty that is genuinely yours, or say you do not have one.", "実際の担当を一つ言うか、担当がないと伝えましょう。"), ("Name one person or team you genuinely work with, or say you work alone.", "実際に一緒に働く相手を一つ言うか、一人で働くと伝えましょう。")),
+        (("Name one responsibility at work or home.", "仕事や家庭で担当していることを一つ言いましょう。"), ("Name a person or group you often work or study with.", "よく一緒に仕事や勉強をする人やグループを言いましょう。")),
         (choice_rows((("カスタマーサポートを{t}担当しています{/t}。", "I'm responsible ", "for", "with", " customer support."), ("研修を{t}担当しています{/t}。", "I'm responsible ", "for", "to", " training."), ("採用を{t}担当しています{/t}。", "I'm responsible ", "for", "with", " recruitment."), ("顧客レポートを{t}担当しています{/t}。", "I'm responsible ", "for", "to", " client reports."))), choice_rows((("営業チームと{t}一緒に働いています{/t}。", "I mainly work ", "with", "to", " the sales team."), ("財務チームと{t}一緒に働いています{/t}。", "I mainly work ", "with", "to", " the finance team."), ("顧客と{t}一緒に仕事をしています{/t}。", "I mainly work ", "with", "to", " our clients."), ("新しいスタッフと{t}一緒に働いています{/t}。", "I mainly work ", "with", "to", " new staff.")))),
         (("Keep the preposition with the role", "役割と前置詞をセットで", "be + <b>responsible for</b> + 担当", "Duty or activity", "担当する仕事・活動", ("I'm <b>responsible for customer support</b>.", "I'm <b>responsible for training</b>.")), ("Name the collaborator", "協力相手を示す", "mainly + <b>work with</b> + 人・チーム", "Person or team involved", "関わる人・チーム", ("I mainly <b>work with the sales team</b>.", "I mainly <b>work with our clients</b>."))),
         ("Work with or work for?", "work with と work for", "Use “work with” for collaborators, while “work for” names the employer or client who receives your work.", "協力する相手には「work with」、雇用主や仕事を提供する相手には「work for」を使います。", ("Collaborator", "一緒に働く相手", "I work with the sales team.", "営業チームと一緒に働いています。"), ("Employer or client", "雇用主・仕事の相手", "I work for a software company.", "ソフトウェア会社に勤めています。")),
     ),
     83: semantic_spec(
         (("Use this to check that your summary matches the other person's point.", "自分の要約が相手の要点と合っているか確認するときに使います。"), ("Use this to ask exactly what one word or idea means.", "一つの言葉や考えが具体的に何を意味するか聞くときに使います。")),
-        (("Restate one real point from this conversation, or say there is nothing to restate yet.", "この会話の要点を一つ言い直すか、まだ言い直す内容がないと伝えましょう。"), ("Ask about one genuinely unclear word, or say everything is clear.", "本当に曖昧な言葉を一つ確認するか、すべて明確だと伝えましょう。")),
+        (("Restate one point I just made.", "私が今言った要点を一つ言い直しましょう。"), ("Ask what one word or phrase I use means.", "私が使う単語や表現を一つ取り上げ、意味を尋ねましょう。")),
         (choice_rows((("{t}つまり、言いたいことは{/t}、もっと時間が必要だということですね。", "So what ", "you're saying", "you saying", " is we need more time."), ("{t}つまり、言いたいことは{/t}、日程が変わるということですね。", "So what ", "you're saying", "you saying", " is the date may change."), ("{t}つまり、言いたいことは{/t}、テストが先だということですね。", "So what ", "you're saying", "you saying", " is testing comes first."), ("{t}つまり、言いたいことは{/t}、これが最終版だということですね。", "So what ", "you're saying", "you saying", " is this is final."))), choice_rows((("「ready」とは{t}どういう意味ですか{/t}？", "What do you mean ", "by", "with", " 'ready'?"), ("「final」とは{t}どういう意味ですか{/t}？", "What do you mean ", "by", "with", " 'final'?"), ("「urgent」とは{t}どういう意味ですか{/t}？", "What do you mean ", "by", "with", " 'urgent'?"), ("「approved」とは{t}どういう意味ですか{/t}？", "What do you mean ", "by", "with", " 'approved'?")))),
         (("Turn the point into the complement", "要点を補語にする", "So + what you're saying + <b>is</b> + 要点", "Restatement check", "要点の確認", ("So what you're saying <b>is we need more time</b>.", "So what you're saying <b>is the date may change</b>.")), ("Ask about one expression", "一つの表現を確認", "What do you + <b>mean by</b> + 言葉?", "Clarification target", "確認する言葉", ("What do you <b>mean by 'ready'</b>?", "What do you <b>mean by 'final'</b>?"))),
         ("Full restatement or short check?", "言い直し・短い確認", "Use the full frame when accuracy matters. In a quick conversation, “So, Monday?” can check one detail with rising intonation.", "正確さが重要なら完全なフレームを使います。短い会話では「So, Monday?」のように語尾を上げて一つの情報を確認できます。", ("Accuracy matters", "正確さが重要", "So what you're saying is we need more time.", "つまり、もっと時間が必要ということですね。"), ("One quick detail", "一つだけ素早く確認", "So, Monday?", "つまり、月曜日ですか？")),
     ),
     84: semantic_spec(
         (("Use this to make a difficult request with polite distance.", "難しい依頼を、丁寧な距離を保ってするときに使います。"), ("Use this to offer one concrete, limited thing you can provide.", "自分ができる具体的で範囲の限られた提案をするときに使います。")),
-        (("Make one real diplomatic request, or state that you need no change.", "丁寧な依頼を一つするか、変更は必要ないと伝えましょう。"), ("Offer one realistic bounded alternative, or say you cannot offer one yet.", "現実的な代案を一つ出すか、まだ出せないと伝えましょう。")),
+        (("Ask me to change one small part of the plan.", "計画の小さな部分を一つ変えるよう私に頼みましょう。"), ("Offer one practical alternative you could manage.", "自分が対応できる現実的な代案を一つ出しましょう。")),
         (choice_rows((("期限を延ばして{t}いただけないでしょうか{/t}。", "I was wondering if you ", "could", "can", " extend the deadline."), ("下書きを確認して{t}いただけないでしょうか{/t}。", "I was wondering if you ", "could", "can", " review the draft."), ("会議を変更して{t}いただけないでしょうか{/t}。", "I was wondering if you ", "could", "can", " move the meeting."), ("範囲を縮めて{t}いただけないでしょうか{/t}。", "I was wondering if you ", "could", "can", " reduce the scope."))), choice_rows((("{t}私にできるのは{/t}前半を送ることです。", "What I can do ", "is", "are", " send you the first half."), ("{t}私にできるのは{/t}今日確認することです。", "What I can do ", "is", "are", " review it today."), ("{t}私にできるのは{/t}昼食後に参加することです。", "What I can do ", "is", "are", " join after lunch."), ("{t}私にできるのは{/t}短い版を送ることです。", "What I can do ", "is", "are", " send a shorter version.")))),
         (("Distance the request", "依頼に距離を置く", "I <b>was wondering if you could</b> + 動詞", "Polite request now", "今する丁寧な依頼", ("I <b>was wondering if you could extend</b> the deadline.", "I <b>was wondering if you could review</b> it.")), ("Offer what is possible", "可能なことを提案", "What I can do + <b>is</b> + 動詞", "Concrete bounded offer", "具体的で限定した提案", ("What I can do <b>is send</b> the first half.", "What I can do <b>is join</b> after lunch."))),
         ("Could you or would you be able to?", "could you と would you be able to", "Both are polite. “Would you be able to” puts extra focus on practical availability.", "どちらも丁寧です。「Would you be able to」は、実際に対応可能かにより焦点を当てます。", ("Polite request", "丁寧な依頼", "Could you extend the deadline?", "期限を延ばしていただけますか？"), ("Checking availability", "対応可能か確認", "Would you be able to review it today?", "今日確認していただくことは可能ですか？")),
     ),
     85: semantic_spec(
         (("Use this to acknowledge the other view before giving your different one.", "相手の考えを認めてから、自分の異なる考えを伝えるときに使います。"), ("Use this to narrow your disagreement to one specific concern.", "意見の違いを一つの具体的な懸念に絞るときに使います。")),
-        (("Acknowledge one real point and add your concern, or say you agree.", "実際の要点を認めて懸念を加えるか、賛成だと伝えましょう。"), ("Name one specific uncertain point, or say none remains.", "よく分からない点を一つ言うか、もうないと伝えましょう。")),
+        (("Respond to one point I make and add a concern.", "私が言った要点を一つ受け止め、気になる点を加えましょう。"), ("Name the one part you would check first.", "最初に確認したい部分を一つ言いましょう。")),
         (choice_rows((("考えは分かります{t}が{/t}、費用が高すぎるかもしれません。", "I see your point, ", "but", "so", " it may cost too much."), ("考えは分かります{t}が{/t}、日程が厳しいです。", "I see your point, ", "but", "so", " the schedule is tight."), ("考えは分かります{t}が{/t}、もっとデータが必要です。", "I see your point, ", "but", "so", " we need more data."), ("考えは分かります{t}が{/t}、品質が下がるかもしれません。", "I see your point, ", "but", "so", " the quality may suffer."))), choice_rows((("よく分からない点は{t}タイミングです{/t}。", "The part I'm not sure ", "about", "with", " is the timing."), ("よく分からない点は{t}費用です{/t}。", "The part I'm not sure ", "about", "with", " is the cost."), ("よく分からない点は{t}最終的な数字です{/t}。", "The part I'm not sure ", "about", "with", " is the final number."), ("よく分からない点は{t}取引先です{/t}。", "The part I'm not sure ", "about", "with", " is the supplier.")))),
         (("Acknowledge, then differ", "認めてから異なる考えへ", "I see your point, + <b>but</b> + 異なる考え", "Clear and polite", "明確で丁寧", ("I see your point, <b>but it may cost too much</b>.", "I see your point, <b>but we need more data</b>.")), ("Localize the uncertainty", "不確かな点を絞る", "The part + I'm not sure about + <b>is</b> + 一点", "One concern only", "懸念を一つに", ("The part I'm not sure about <b>is the timing</b>.", "The part I'm not sure about <b>is the cost</b>."))),
         ("I see your point or I see what you mean?", "point と what you mean", "Use “I see what you mean” for conversational understanding, while “I see your point” more clearly acknowledges an argument before disagreement.", "会話的な理解には「I see what you mean」、反対意見の前に相手の主張を明確に認めるなら「I see your point」を使います。", ("Conversational understanding", "会話的な理解", "I see what you mean.", "言いたいことは分かります。"), ("Before a counterpoint", "反対意見の前", "I see your point, but the timing worries me.", "おっしゃることは分かりますが、時期が気になります。")),
     ),
     86: semantic_spec(
         (("Use this to defer one answer while clearly promising to return to it.", "一つの返事を保留しつつ、必ず返すと明確に伝えるときに使います。"), ("Use this to ask for a specific latest time to check and reply.", "確認して返事をする具体的な最終時刻を求めるときに使います。")),
-        (("Name one decision you need to check, or say you can answer now.", "確認が必要な判断を一つ言うか、今答えられると伝えましょう。"), ("Promise a real reply time, or say you cannot promise one yet.", "実際の返事の時を約束するか、まだ約束できないと伝えましょう。")),
+        (("Delay one decision while you check it.", "確認する間、判断を一つ保留にしましょう。"), ("Ask whether you may reply by a specific time.", "具体的な時までに返事をしてよいか尋ねましょう。")),
         (choice_rows((("それは{t}確認して改めて返事します{/t}。", "Let me ", "get back to", "get back at", " you on that."), ("最終価格は{t}確認して改めて返事します{/t}。", "Let me ", "get back to", "get back at", " you on the final price."), ("空き状況は{t}確認して改めて返事します{/t}。", "Let me ", "get back to", "get back at", " you on our availability."), ("見積もりは{t}確認して改めて返事します{/t}。", "Let me ", "get back to", "get back at", " you on the estimate."))), choice_rows((("{t}明日までに{/t}確認して返事してもいいですか？", "Can I check and confirm ", "by", "until", " tomorrow?"), ("{t}正午までに{/t}確認して返事してもいいですか？", "Can I check and confirm ", "by", "until", " noon?"), ("{t}金曜日までに{/t}確認して返事してもいいですか？", "Can I review it and confirm ", "by", "until", " Friday?"), ("{t}3時までに{/t}確認して返事してもいいですか？", "Can I ask the team and confirm ", "by", "until", " three?")))),
         (("Promise to return to the topic", "話題に戻ると約束", "Let me + <b>get back to you on</b> + 話題", "Not a refusal", "拒否ではない", ("Let me <b>get back to you on that</b>.", "Let me <b>get back to you on the price</b>.")), ("Set the latest reply time", "返事の最終時刻", "Can I + 確認 + <b>by</b> + 時刻?", "Deadline for reply", "返事の期限", ("Can I confirm <b>by tomorrow</b>?", "Can I confirm <b>by noon</b>?"))),
         ("By tomorrow or tomorrow?", "by tomorrow と tomorrow", "Use “by tomorrow” for no later than tomorrow, while “tomorrow” names the day without emphasizing a deadline.", "遅くとも明日までなら「by tomorrow」、期限を強調せず日を示すなら「tomorrow」を使います。", ("Latest time", "最終期限", "I'll confirm by tomorrow.", "明日までに確認します。"), ("Day of the action", "行動する日", "I'll confirm tomorrow.", "明日確認します。")),
     ),
     87: semantic_spec(
         (("Use this to mark a small, precise difference on a comparative scale.", "比較の尺度で、小さく正確な差を示すときに使います。"), ("Use this to say that one option is far below another on one quality.", "一つの性質で、一方が他方よりはるかに劣ると伝えるときに使います。")),
-        (("Compare two real options by one small difference, or say they are equal.", "二つの実際の選択肢を小さな差で比べるか、同じだと伝えましょう。"), ("Name one large difference, or say there is no large difference.", "大きな差を一つ言うか、大きな差はないと伝えましょう。")),
+        (("Compare two options by one small difference.", "二つの選択肢を小さな違いで比べましょう。"), ("Compare the same options by one large difference.", "同じ選択肢を大きな違いで比べましょう。")),
         (choice_rows((("{t}少しだけ{/t}高いです。", "It's ", "slightly more", "much more", " expensive."), ("{t}少しだけ{/t}便利です。", "It's ", "slightly more", "much more", " convenient."), ("{t}少しだけ{/t}快適です。", "It's ", "slightly more", "much more", " comfortable."), ("{t}少しだけ{/t}信頼できます。", "It's ", "slightly more", "much more", " reliable."))), choice_rows((("速さでは電車に{t}遠く及びません{/t}。", "It's ", "nowhere near as", "almost as", " fast as the train."), ("安さではバスに{t}遠く及びません{/t}。", "It's ", "nowhere near as", "almost as", " cheap as the bus."), ("静かさではこの部屋に{t}遠く及びません{/t}。", "It's ", "nowhere near as", "almost as", " quiet as this room."), ("便利さではもう一つの選択肢に{t}遠く及びません{/t}。", "It's ", "nowhere near as", "almost as", " convenient as the other option.")))),
         (("Small movement on the scale", "尺度上の小さな差", "slightly + <b>more</b> + 形容詞", "Small difference", "小さな差", ("It's <b>slightly more expensive</b>.", "It's <b>slightly more reliable</b>.")), ("Far below the comparison", "比較対象よりはるかに下", "nowhere near + <b>as</b> + 形容詞 + <b>as</b>", "Large shortfall", "大きく劣る", ("It's <b>nowhere near as fast as</b> the train.", "It's <b>nowhere near as cheap as</b> the bus."))),
         ("Slightly or a little?", "slightly と a little", "Both mark a small difference. “Slightly” is common in precise or professional comparisons; “a little” is more conversational.", "どちらも小さな差です。「slightly」は正確・仕事上の比較でよく使い、「a little」はより会話的です。", ("Precise or professional", "正確・仕事上", "It's slightly more expensive.", "少しだけ高いです。"), ("Conversational", "会話的", "It's a little more expensive.", "ちょっと高いです。")),
     ),
     88: semantic_spec(
         (("Use this for a number of people that is close to zero.", "人数がほぼゼロのときに使います。"), ("Use this for an uncountable amount that is close to zero.", "数えない量がほぼゼロのときに使います。")),
-        (("Give one true near-zero people result, or say it was not low.", "人がほぼゼロだった本当の結果を言うか、少なくなかったと伝えましょう。"), ("Give one true near-zero amount, or say plenty remains.", "ほぼゼロの量を一つ言うか、十分残っていると伝えましょう。")),
+        (("Describe an event where almost nobody came.", "ほとんど誰も来なかった催しを説明しましょう。"), ("Describe a supply that is almost gone.", "ほとんど残っていない備品を説明しましょう。")),
         (choice_rows((("{t}ほとんど誰も{/t}来ませんでした。", "Hardly ", "anyone", "someone", " came."), ("{t}ほとんど誰も{/t}残りませんでした。", "Hardly ", "anyone", "someone", " stayed."), ("{t}ほとんど誰も{/t}答えませんでした。", "Hardly ", "anyone", "someone", " answered."), ("{t}ほとんど誰も{/t}選びませんでした。", "Hardly ", "anyone", "someone", " chose it."))), choice_rows((("コーヒーは{t}ほとんど{/t}残っていません。", "There's barely ", "any", "some", " coffee left."), ("空きは{t}ほとんど{/t}ありません。", "There's barely ", "any", "some", " space left."), ("時間は{t}ほとんど{/t}ありません。", "There's barely ", "any", "some", " time left."), ("水は{t}ほとんど{/t}残っていません。", "There's barely ", "any", "some", " water left.")))),
         (("Near zero without not", "not なしでほぼゼロ", "<b>Hardly anyone</b> + 肯定形の動詞", "People", "人", ("<b>Hardly anyone came</b>.", "<b>Hardly anyone answered</b>.")), ("Near-zero amount", "ほぼゼロの量", "There's + <b>barely any</b> + 数えない名詞", "Amount", "量", ("There's <b>barely any coffee left</b>.", "There's <b>barely any time left</b>."))),
         ("Hardly any or almost no?", "hardly any と almost no", "Both mean close to none. “Almost no” is more transparent; “hardly any” is compact and common in conversation.", "どちらもほぼゼロです。「almost no」は意味が分かりやすく、「hardly any」は短く会話でよく使われます。", ("Transparent", "分かりやすい", "Almost no coffee is left.", "コーヒーはほとんど残っていません。"), ("Compact conversation", "短い会話", "There's hardly any coffee left.", "コーヒーはほとんど残っていません。")),
     ),
     89: semantic_spec(
         (("Use this to replace one description with a more accurate parallel description.", "一つの説明を、同じ形のより正確な説明に置き換えるときに使います。"), ("Use this to personally label something as B instead of A.", "自分の判断として、AではなくBと呼ぶときに使います。")),
-        (("Recast one real description, or say the first label is accurate.", "実際の説明を言い換えるか、最初の呼び方が正確だと伝えましょう。"), ("Give your own better label, or say you would keep the original.", "自分のよりよい呼び方を言うか、元の呼び方を使うと伝えましょう。")),
+        (("Replace one label with a more accurate one.", "ある呼び方を、より正確な呼び方に変えましょう。"), ("Choose a better label for the same situation.", "同じ状況に、よりよい呼び方を選びましょう。")),
         (choice_rows((("問題{t}というより{/t}遅れです。", "It's not so much a problem ", "as", "than", " a delay."), ("失敗{t}というより{/t}後退です。", "It's not so much a failure ", "as", "than", " a setback."), ("苦情{t}というより{/t}提案です。", "It's not so much a complaint ", "as", "than", " a suggestion."), ("費用{t}というより{/t}時期の問題です。", "It's not so much a cost issue ", "as", "than", " a timing issue."))), choice_rows((("失敗{t}というより{/t}後退と呼びます。", "I'd call it a setback ", "rather than", "more than", " a failure."), ("問題{t}というより{/t}遅れと呼びます。", "I'd call it a delay ", "rather than", "more than", " a problem."), ("批判{t}というより{/t}フィードバックと呼びます。", "I'd call it feedback ", "rather than", "more than", " criticism."), ("やり直し{t}というより{/t}修正と呼びます。", "I'd call it a revision ", "rather than", "more than", " a restart.")))),
         (("Keep A and B parallel", "A と B の形をそろえる", "not so much + A + <b>as</b> + B", "B is more accurate", "B のほうが正確", ("not so much <b>a problem as a delay</b>", "not so much <b>a failure as a setback</b>")), ("Give your label first", "自分の呼び方を先に", "I'd call it + B + <b>rather than</b> + A", "Personal classification", "自分の分類", ("I'd call it <b>a setback rather than a failure</b>.", "I'd call it <b>feedback rather than criticism</b>."))),
         ("I'd call it or I'd describe it as?", "call it と describe it as", "Use “I'd call it” for a concise label, while “I'd describe it as” allows a longer or more qualified description.", "短い呼び方なら「I'd call it」、長い説明や条件つきの説明なら「I'd describe it as」を使います。", ("Concise label", "短い呼び方", "I'd call it a setback.", "一時的な後退と呼びます。"), ("Longer description", "長い説明", "I'd describe it as a temporary delay.", "一時的な遅れと説明します。")),
     ),
     90: semantic_spec(
         (("Use this for a very large proportion of a clearly named group.", "明確な集団の非常に大きな割合を表すときに使います。"), ("Use this for a very small number when the group is already clear.", "どの集団か明らかなとき、非常に少ない人数を表します。")),
-        (("Report one genuine large-majority result, or say you have no data.", "本当の大多数の結果を伝えるか、データがないと伝えましょう。"), ("Name the small minority, or say there was no minority result.", "少数側を言うか、少数の結果がないと伝えましょう。")),
+        (("Report a result in which a large majority chose one option.", "大多数が一つの選択肢を選んだ結果を報告しましょう。"), ("Report the small minority in the same result.", "同じ結果の少数側を報告しましょう。")),
         (choice_rows((("{t}大多数の人々が{/t}それを好みます。", "The vast majority of ", "people", "person", " prefer it."), ("{t}大多数の顧客が{/t}選びました。", "The vast majority of ", "customers", "customer", " chose it."), ("{t}大多数のスタッフが{/t}承認しました。", "The vast majority of ", "staff", "staff member", " approved it."), ("{t}大多数の参加者が{/t}賛成しました。", "The vast majority of ", "participants", "participant", " approved the plan."))), choice_rows((("反対したのは{t}ほんの一握り{/t}でした。", "Only a handful ", "said", "says", " no."), ("選んだのは{t}ほんの一握り{/t}でした。", "Only a handful ", "chose", "chooses", " the old plan."), ("求めたのは{t}ほんの一握り{/t}でした。", "Only a handful ", "asked", "asks", " for changes."), ("遅れたのは{t}ほんの一握り{/t}でした。", "Only a handful ", "missed", "misses", " the deadline.")))),
         (("Name the plural group", "複数の集団を示す", "The vast majority of + <b>複数名詞</b> + 複数動詞", "Large proportion", "大きな割合", ("The vast majority of <b>people prefer</b> it.", "The vast majority of <b>customers chose</b> it.")), ("Small number already understood", "集団が分かる少数", "Only + <b>a handful</b> + 複数扱いの動詞", "Small minority", "少数", ("Only <b>a handful said no</b>.", "Only <b>a handful asked</b> for changes."))),
         ("The vast majority or most?", "vast majority と most", "“Most” is shorter and neutral. “The vast majority” stresses that the proportion is overwhelmingly large.", "「Most」は短く中立的です。「The vast majority」は圧倒的に多いことを強調します。", ("Neutral majority", "中立的な多数", "Most people prefer it.", "多くの人がそれを好みます。"), ("Overwhelming majority", "圧倒的多数", "The vast majority of people prefer it.", "大多数の人がそれを好みます。")),
     ),
     91: semantic_spec(
         (("Use this when an amount is almost insufficient for a stated purpose.", "ある目的に対して、量が足りない寸前のときに使います。"), ("Use this when you expect an amount to cover the need with almost no margin.", "余裕はほぼないものの、必要量を満たす見込みのときに使います。")),
-        (("Judge one real amount, or say there is not enough.", "実際の量を判断するか、足りないと伝えましょう。"), ("Say what should just cover a need, or say it will not cover it.", "ぎりぎり足りそうなものを言うか、足りないと伝えましょう。")),
+        (("Describe an amount that is only just enough for a group.", "グループにぎりぎり足りる量を説明しましょう。"), ("Say that an amount is probably enough for one need.", "ある量が一つの必要にたぶん足りると伝えましょう。")),
         (choice_rows((("全員に行き渡るには{t}ぎりぎりです{/t}。", "There's ", "barely enough", "more than enough", " to go around."), ("全員に食べてもらうには{t}ぎりぎりです{/t}。", "There's ", "barely enough", "more than enough", " to feed everyone."), ("20部印刷するには{t}ぎりぎりです{/t}。", "There's ", "barely enough", "more than enough", " to print twenty copies."), ("注文を終えるには{t}ぎりぎりです{/t}。", "There's ", "barely enough", "more than enough", " to finish the order."))), choice_rows((("それで{t}ぎりぎり足りるはずです{/t}。", "That should ", "just about", "not quite", " cover it."), ("予算で{t}ぎりぎり足りるはずです{/t}。", "The budget should ", "just about", "not quite", " cover it."), ("いす10脚で{t}ぎりぎり足りるはずです{/t}。", "Ten chairs should ", "just about", "not quite", " cover it."), ("この備品で{t}ぎりぎり足りるはずです{/t}。", "These supplies should ", "just about", "not quite", " cover it.")))),
         (("State the purpose of the amount", "量の目的を示す", "There's + barely enough + <b>to + 動詞</b>", "Almost insufficient", "不足寸前", ("There's barely enough <b>to go around</b>.", "There's barely enough <b>to feed everyone</b>.")), ("Predict a tiny margin", "小さな余裕を予測", "主語 + should + <b>just about</b> + 動詞", "Expected to be sufficient", "足りる見込み", ("That should <b>just about cover it</b>.", "Ten chairs should <b>just about cover it</b>."))),
         ("Just about or easily?", "just about と easily", "Use “just about” for a tiny margin, while “easily” says there is comfortable extra capacity.", "余裕がほぼないなら「just about」、十分な余裕があるなら「easily」を使います。", ("Tiny margin", "余裕がほぼない", "That should just about cover it.", "それでぎりぎり足りるはずです。"), ("Comfortable margin", "十分な余裕", "That should easily cover it.", "それで十分余裕をもって足ります。")),
@@ -427,7 +427,7 @@ FREE_TALK = {
 86:("How much time do you usually need for an important decision?","大切な判断には普段どのくらい時間が必要ですか？","What about you—how much time do you need?","先生はどうですか？どのくらい時間が必要ですか？"),
 87:("What two things do you compare most often before buying?","買う前によく比べる二つのものは何ですか？","What about you—what do you compare?","先生はどうですか？何を比べますか？"),
 88:("Do you prefer busy events or small quiet ones?","にぎやかなイベントと小さく静かなイベントのどちらが好きですか？","What about you—which kind of event do you prefer?","先生はどうですか？どちらが好きですか？"),
-89:("Have you ever changed the way you described a problem?","問題の説明の仕方を変えたことはありますか？","What about you—how do you reframe problems?","先生はどうですか？問題をどう言い換えますか？"),
+89:("When a problem is hard to explain, what do you change first?","問題を説明しにくいとき、最初に何を変えますか？","What about you—what do you change first?","先生はどうですか？最初に何を変えますか？"),
 90:("Do most people you know prefer working alone or together?","知り合いの多くは、一人と共同作業のどちらを好みますか？","What about you—what do most people you know prefer?","先生はどうですか？周りの人は何を好みますか？"),
 91:("What resource do you most often run short of: time, money, or energy?","時間・お金・体力のうち、いちばん不足しやすいものは何ですか？","What about you—what do you run short of?","先生はどうですか？何が不足しやすいですか？"),
 }
@@ -639,13 +639,24 @@ def live_page(number):
         "p3-freetalk", "Your real answer", "自分の答え",
         f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span>'
         f'<span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p>'
-        '<div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div><div class="dialogue">' + "".join(rendered) + "</div>",
+        '<div class="tutor-note">React naturally and follow the most interesting detail. Invite today\'s pattern only if it fits.</div><div class="dialogue">' + "".join(rendered) + "</div>",
     )
 
 
 def page_id(page):
     match = re.search(r'data-page-id="([^"]+)"', page)
     return match.group(1) if match else ""
+
+
+def clarify_pattern_intro(page, number, part):
+    meaning_en, meaning_ja = SPECS[number]["meanings"][part - 1]
+    return page.replace(
+        "First, let's practice this pattern." if part == 1 else "Next, let's practice this pattern.",
+        f"{meaning_en} Please read the title aloud.",
+    ).replace(
+        "まず、このパターンを練習しましょう。" if part == 1 else "次に、このパターンを練習しましょう。",
+        f"{meaning_ja} タイトルを声に出して読んでください。",
+    )
 
 
 def customize_pages(number, data, pages):
@@ -663,6 +674,10 @@ def customize_pages(number, data, pages):
         pid = page_id(page)
         if pid in omitted:
             continue
+        if pid == "part1-intro":
+            page = clarify_pattern_intro(page, number, 1)
+        elif pid == "part2-intro":
+            page = clarify_pattern_intro(page, number, 2)
         if pid == "part3-intro":
             result.append(support_page(number))
             if number in SPIRAL_MARKERS:

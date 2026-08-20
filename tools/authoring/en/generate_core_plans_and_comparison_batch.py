@@ -108,7 +108,7 @@ LESSONS = {
         ),
         omit_choice=(2,),
         rules=(("Use should plus a plain verb for an ordinary recommendation.", "ふつうの助言には should と動詞の原形を使います。"), ("Use need to when the action becomes necessary, not just a good idea.", "よい考えというだけでなく必要になった行動には need to を使います。")),
-        prompt=("What's the best advice someone has ever given you?", "今までにもらった中で、一番よかった助言は何ですか？"),
+        prompt=("When you're exhausted, what advice would you actually want to hear?", "疲れ切っているとき、実際にどんな助言を聞きたいですか？"),
     ),
     41: dict(
         slug="you-have-to-show-id", title="You have to show ID", ko="신분증을 보여줘야 해요", ja="身分証を見せる必要があります",
@@ -147,7 +147,7 @@ LESSONS = {
         ),
         omit_choice=(1,),
         rules=(("Answer the fact: use I do when the positive fact is true.", "質問が否定形でも、肯定の事実が正しければ I do で答えます。"), ("Use I don’t only when the negative fact is true.", "否定の事実が正しいときだけ I don’t で答えます。")),
-        prompt=("Have you ever misunderstood someone's yes or no? What happened?", "相手の yes や no を誤解したことはありますか？何がありましたか？"),
+        prompt=("What makes a yes-or-no answer confusing for you?", "yes や no の答えが分かりにくくなるのは、どんなときですか？"),
     ),
     43: dict(
         slug="its-a-small-quiet-cafe", title="It's a small, quiet café", ko="작고 조용한 카페예요", ja="小さくて静かなカフェです",
@@ -187,7 +187,7 @@ LESSONS = {
         omit_reorder=(2,),
         omit_choice=(1,),
         rules=(("Put too before the adjective when the amount causes a problem.", "程度が問題になるときは、形容詞の前に too を置きます。"), ("Put enough after the adjective when the amount falls short.", "程度が足りないときは、形容詞のあとに enough を置きます。")),
-        prompt=("What is something you bought that almost worked—but not quite?", "買ったものの中で、惜しいけれど少し合わなかったものは何ですか？"),
+        prompt=("What feature makes a purchase feel worth the money to you?", "どんな特徴があると、買った物に値段だけの価値を感じますか？"),
     ),
     46: dict(
         slug="its-the-best-one-here", title="It's the best one here", ko="여기서 이게 제일 좋아요", ja="ここではこれが一番いいです",
@@ -225,7 +225,7 @@ LESSONS = {
             ("The trip was really {t}tiring{/t}.", "その旅行は本当に{t}疲れるものでした{/t}。", "The trip|was really|tiring."),
         ),
         rules=(("Use -ed for the person who experiences the feeling.", "その気持ちを感じた人には -ed の形を使います。"), ("Use -ing for the thing that causes the feeling.", "その気持ちを起こさせるものには -ing の形を使います。")),
-        prompt=("What movie, game, or trip gave you a strong reaction? Why?", "強く心を動かされた映画、試合、旅行は何ですか？理由も教えてください。"),
+        prompt=("Which gives you the strongest reaction: a movie, a game, or a trip? Why?", "映画・試合・旅行のうち、どれがいちばん強く心を動かしますか？理由も教えてください。"),
     ),
 }
 

@@ -940,9 +940,9 @@ LIVE_HINTS = {
 REVIEWED_WRITES_48_59 = {
     48: (("Use “Have you ever ___?” to ask one experience question you genuinely want answered.", "「Have you ever ___?」を使って、本当に答えを知りたい経験の質問を一つしましょう。"), ("Use “I've never ___, but I'd like to” to name one new experience you would like to try.", "「I've never ___, but I'd like to」を使って、まだ経験はないけれど挑戦したいことを一つ話しましょう。")),
     49: (("Use “I've already ___” to give one true update about something you finished.", "「I've already ___」を使って、本当に終えたことを一つ報告しましょう。"), ("Use “Have you ___ yet?” to ask whether one real task is complete.", "「Have you ___ yet?」を使って、実際の作業が一つ終わったか尋ねましょう。")),
-    50: (("Use “Have you been to ___?” to ask whether I have visited one place.", "「Have you been to ___?」を使って、私がある場所を訪れたことがあるか尋ねましょう。"), ("Use “I went there ___” to say when you visited a place; if you have not, say “I haven't been there.”", "「I went there ___」を使って訪れた時を話し、行ったことがなければ「I haven't been there.」と言いましょう。")),
+    50: (("Use “Have you been to ___?” to ask whether I have visited one place.", "「Have you been to ___?」を使って、私がある場所を訪れたことがあるか尋ねましょう。"), ("Use “I went there ___” to give a finished time for an imagined visit.", "「I went there ___」を使って、想像した訪問の時を具体的に伝えましょう。")),
     51: (("Use “How long have you been in ___?” to ask how long I have lived in one place.", "「How long have you been in ___?」を使って、私がある場所にどのくらい住んでいるか尋ねましょう。"), ("Use “I've been here for ___” to say how long you have lived where you are now.", "「I've been here for ___」を使って、今の場所にどのくらい住んでいるか話しましょう。")),
-    52: (("Use “I've been ___ since ___” to say what has continued today and when it started.", "「I've been ___ since ___」を使って、今日続けていることと開始時点を話しましょう。"), ("Use “That's why I'm ___” to add one true effect, or say there is no effect to report.", "「That's why I'm ___」を使って本当の結果を一つ加え、なければ伝える結果はないと言いましょう。")),
+    52: (("Use “I've been ___ since ___” to say what has continued today and when it started.", "「I've been ___ since ___」を使って、今日続けていることと開始時点を話しましょう。"), ("Use “That's why I'm ___” to explain how an imagined activity affects you.", "「That's why I'm ___」を使って、想像した活動が自分にどう影響するか説明しましょう。")),
     53: (("Use “We've finished ___ of ___” to report real progress on one countable task.", "「We've finished ___ of ___」を使って、数えられる作業の本当の進捗を報告しましょう。"), ("Use “We still need to ___” to name one remaining task.", "「We still need to ___」を使って、まだ残っている作業を一つ伝えましょう。")),
     54: (("Use “___ because ___” to explain one real changed plan and its reason.", "「___ because ___」を使って、実際に変わった予定と理由を説明しましょう。"), ("Use “___, so ___” to tell the same event with the reason first and result second.", "「___, so ___」を使って、同じ出来事を理由、結果の順で話しましょう。")),
     55: (("Use “___ is the one who ___” to identify one real person by something they did.", "「___ is the one who ___」を使って、実在する人をその人がしたことで特定しましょう。"), ("Use “It's the thing that ___” to describe one object without naming it first.", "「It's the thing that ___」を使って、名前を先に言わずに物を一つ説明しましょう。")),
@@ -956,7 +956,7 @@ REVIEWED_WRITES_48_59 = {
 REVIEWED_LIVE_48_59 = {
     48: ("What's something new you'd like to try this year, and why?", "今年、新しく挑戦したいことは何ですか？なぜですか？", "What about you—what would you like to try?", "先生はどうですか？何に挑戦したいですか？"),
     49: ("What's one small task you like finishing early, and why?", "早めに終えると気分がよい小さな作業は何ですか？なぜですか？", "What about you—which task do you like finishing early?", "先生はどうですか？どの作業を早めに終えたいですか？"),
-    50: ("Which place would you happily visit again, and why?", "もう一度喜んで行きたい場所はどこですか？なぜですか？", "What about you—which place would you visit again?", "先生はどうですか？どこをもう一度訪れたいですか？"),
+    50: ("What kind of place would you happily visit again, and why?", "どんな場所なら、もう一度喜んで行きたいですか？なぜですか？", "What about you—what kind of place would you visit again?", "先生はどうですか？どんな場所をもう一度訪れたいですか？"),
     51: ("What makes a place feel like home to you?", "どんなことがあると、その場所を自分の家のように感じますか？", "What about you—what makes a place feel like home?", "先生はどうですか？どんな場所なら家のように感じますか？"),
     52: ("What kind of activity makes time pass quickly for you?", "どんなことをしていると、時間が早く過ぎますか？", "What about you—what makes time pass quickly?", "先生はどうですか？何をしていると時間が早く過ぎますか？"),
     53: ("Do you prefer projects with a clear finish line or open-ended work? Why?", "終わりが明確な作業と、終わりが決まっていない作業のどちらが好きですか？なぜですか？", "What about you—which kind of project do you prefer?", "先生はどうですか？どちらの作業が好きですか？"),
@@ -1339,7 +1339,7 @@ def live_page(number):
         "自分の答え",
         f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span>'
         f'<span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p>'
-        '<div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div>'
+        '<div class="tutor-note">React naturally and follow the most interesting detail. Invite today\'s pattern only if it fits.</div>'
         '<div class="dialogue">' + "".join(rendered) + "</div>",
     )
 
@@ -1347,6 +1347,17 @@ def live_page(number):
 def page_id(page):
     match = re.search(r'data-page-id="([^"]+)"', page)
     return match.group(1) if match else ""
+
+
+def clarify_pattern_intro(page, number, part):
+    meaning_en, meaning_ja = SPECS[number]["meanings"][part - 1]
+    return page.replace(
+        "First, let's practice this pattern." if part == 1 else "Next, let's practice this pattern.",
+        f"{meaning_en} Please read the title aloud.",
+    ).replace(
+        "まず、このパターンを練習しましょう。" if part == 1 else "次に、このパターンを練習しましょう。",
+        f"{meaning_ja} タイトルを声に出して読んでください。",
+    )
 
 
 def customize_pages(number, data, pages):
@@ -1364,6 +1375,10 @@ def customize_pages(number, data, pages):
         pid = page_id(page)
         if pid in omitted:
             continue
+        if pid == "part1-intro":
+            page = clarify_pattern_intro(page, number, 1)
+        elif pid == "part2-intro":
+            page = clarify_pattern_intro(page, number, 2)
         if pid == "part3-intro" and number in SUPPORT_EXPRESSIONS:
             result.append(support_page(number))
         if pid == "part3-intro" and number in SPIRAL_MARKERS:

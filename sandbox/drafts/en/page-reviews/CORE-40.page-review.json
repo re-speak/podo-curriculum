@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/40-you-should-get-some-rest/lesson.html",
-  "lessonSha256": "66dad6a7654d5e799eabead950ffd6aa0713f27f196f8e024262565d7e3efcbe",
+  "lessonSha256": "b01fe8f65bb103f344ed0f3ffbb974eb4ff91ffa90b60fb626cb5e83b05a7fe2",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -18,7 +18,7 @@
       "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
       "tutorAction": "State the can-do, have the learner read the title once, then move on.",
       "targetOrPrompt": "Exact visible instruction/model: You should get some rest (少し休んだほうがいいですよ) | Give ordinary advice and say when action becomes necessary. Please read the title aloud. ふつうの助言をして、いつ行動が必要になるかを伝えましょう。タイトルを声に出して読んでください。",
-      "learningTarget": "Goal orientation for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "learningTarget": "Goal orientation for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40: Use should for a helpful idea that the other person can consider. Then Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—goal orientation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform goal orientation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -28,7 +28,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -42,7 +42,7 @@
       "learnerAction": "Say the three familiar English words shown.",
       "tutorAction": "Listen to the three known words; keep this as brief activation, not new teaching.",
       "targetOrPrompt": "Exact visible instruction/model: Words you know (知っている単語) | Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
-      "learningTarget": "Known-word activation for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "learningTarget": "Known-word activation for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40: Use should for a helpful idea that the other person can consider. Then Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—known-word activation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform known-word activation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -52,7 +52,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -65,8 +65,8 @@
       "pageId": "part1-intro",
       "learnerAction": "Read the Pattern 1 title aloud once.",
       "tutorAction": "Introduce Pattern 1 in one line, have the learner read the title, then move on.",
-      "targetOrPrompt": "Exact visible instruction/model: You should get some rest. | Use should for a helpful idea that the other person can consider. Please read the title aloud. 相手が考えられる助言を一つ伝えるときに should を使います。タイトルを声に出して読んでください。",
-      "learningTarget": "Pattern 1 transition for Use should for a helpful idea that the other person can consider.",
+      "targetOrPrompt": "Exact visible instruction: Use should for a helpful idea that the other person can consider. Please read the title aloud. | 相手が考えられる助言を一つ伝えるときに should を使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition for Use should for a helpful idea that the other person can consider. in CORE-40: Use should for a helpful idea that the other person can consider.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 transition for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -76,7 +76,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -90,7 +90,7 @@
       "learnerAction": "Read each complete Pattern 1 example aloud after the short meaning explanation.",
       "tutorAction": "Briefly explain Pattern 1's use, then have the learner read each example aloud.",
       "targetOrPrompt": "Highlighted target: should get | 休んだほうがいいです | should drink | 飲んだほうがいいです | should go | 帰ったほうがいいです",
-      "learningTarget": "Pattern 1 meaning and model for Use should for a helpful idea that the other person can consider.",
+      "learningTarget": "Pattern 1 meaning and model for Use should for a helpful idea that the other person can consider. in CORE-40: Use should for a helpful idea that the other person can consider.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -100,7 +100,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "should get",
@@ -121,7 +121,7 @@
       "learnerAction": "Read every complete Pattern 1 sentence aloud.",
       "tutorAction": "Listen to each sentence; model only if help is needed.",
       "targetOrPrompt": "Highlighted target: should get | 休んだほうがいいです | should drink | 飲んだほうがいいです | should go | 帰ったほうがいいです | should sleep | 寝たほうがいいです",
-      "learningTarget": "Pattern 1 read-aloud for Use should for a helpful idea that the other person can consider.",
+      "learningTarget": "Pattern 1 read-aloud for Use should for a helpful idea that the other person can consider. in CORE-40: Use should for a helpful idea that the other person can consider.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -131,7 +131,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "should get",
@@ -154,7 +154,7 @@
       "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
       "tutorAction": "Explain the displayed Pattern 1 operation briefly and check it in the examples.",
       "targetOrPrompt": "Exact visible instruction/model: Give advice with should (should で助言する) | Use should plus a plain verb for an ordinary recommendation. ふつうの助言には should と動詞の原形を使います。",
-      "learningTarget": "Pattern 1 form explanation for Use should for a helpful idea that the other person can consider.",
+      "learningTarget": "Pattern 1 form explanation for Use should for a helpful idea that the other person can consider. in CORE-40: Use should for a helpful idea that the other person can consider.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 form explanation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -164,7 +164,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -178,7 +178,7 @@
       "learnerAction": "Choose the Pattern 1 form that matches each Japanese meaning, then read the completed sentence aloud.",
       "tutorAction": "Check each choice and have the learner read the entire completed sentence before moving on.",
       "targetOrPrompt": "Highlighted target: 休んだほうがいいです | 飲んだほうがいいです | 帰ったほうがいいです | 寝たほうがいいです Exact choice contrasts: should get vs should to get | should drink vs should to drink | should go vs should to go | should sleep vs should to sleep",
-      "learningTarget": "Pattern 1 meaning contrast for Use should for a helpful idea that the other person can consider.",
+      "learningTarget": "Pattern 1 meaning contrast for Use should for a helpful idea that the other person can consider. in CORE-40: Use should for a helpful idea that the other person can consider.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning contrast—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 meaning contrast for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -188,7 +188,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "休んだほうがいいです",
@@ -207,7 +207,7 @@
       "learnerAction": "Say each whole Pattern 1 sentence aloud, including every missing word.",
       "tutorAction": "Type only the missing Pattern 1 words exactly as spoken.",
       "targetOrPrompt": "Highlighted target: 休んだほうがいいです | 飲んだほうがいいです | 帰ったほうがいいです | 寝たほうがいいです Exact blank answers: should get | should drink | should go | should sleep Lexical hints: 少し休む:get some rest | 水を飲む:drink some water | 早く帰る:go home early | もっと寝る:sleep more",
-      "learningTarget": "Pattern 1 controlled retrieval for Use should for a helpful idea that the other person can consider.",
+      "learningTarget": "Pattern 1 controlled retrieval for Use should for a helpful idea that the other person can consider. in CORE-40: Use should for a helpful idea that the other person can consider.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 少し休む:get some rest | 水を飲む:drink some water | 早く帰る:go home early | もっと寝る:sleep more; the lesson pattern still has to be produced.",
@@ -217,7 +217,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "休んだほうがいいです",
@@ -246,7 +246,7 @@
       "learnerAction": "Read each Japanese cue and say the complete Pattern 1 sentence in English.",
       "tutorAction": "Type each complete English sentence exactly as spoken.",
       "targetOrPrompt": "Exact blank answers: You should get some rest. | You should drink some water. | You should go home early. | You should sleep more tonight. Lexical hints: 少し休む:get some rest | 水:water | 家:home | 寝る:sleep | 今夜:tonight",
-      "learningTarget": "Supported pattern 1 whole-sentence production for Use should for a helpful idea that the other person can consider.",
+      "learningTarget": "Supported pattern 1 whole-sentence production for Use should for a helpful idea that the other person can consider. in CORE-40: Use should for a helpful idea that the other person can consider.",
       "pedagogicalValue": "This page has one distinct job—supported Pattern 1 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 1 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 少し休む:get some rest | 水:water | 家:home | 寝る:sleep | 今夜:tonight; the lesson pattern still has to be produced.",
@@ -256,7 +256,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -280,8 +280,8 @@
       "pageId": "p1-write",
       "learnerAction": "Say one personal Pattern 1 sentence that performs the exact communicative job in the prompt.",
       "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
-      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “You should ___” to give advice for one real problem. Lexical hints: 少し休む:get some rest | 水:water | 寝る:sleep",
-      "learningTarget": "Communicative pattern 1 production for Use should for a helpful idea that the other person can consider.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “You should ___” to give advice for one real problem. Lexical hint(s): 少し休む:get some rest | 水:water | 寝る:sleep",
+      "learningTarget": "Communicative pattern 1 production for Use should for a helpful idea that the other person can consider. in CORE-40 through the exact current prompt: Now use “You should ___” to give advice for one real problem.",
       "pedagogicalValue": "This page has one distinct job—communicative Pattern 1 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 1 production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 少し休む:get some rest | 水:water | 寝る:sleep; the lesson pattern still has to be produced.",
@@ -291,7 +291,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -310,8 +310,8 @@
       "pageId": "part2-intro",
       "learnerAction": "Read the Pattern 2 title aloud once.",
       "tutorAction": "Introduce Pattern 2 in one line, have the learner read the title, then move on.",
-      "targetOrPrompt": "Exact visible instruction/model: If it gets worse, you need to see a doctor. | Use need to when the situation makes an action necessary. Please read the title aloud. 状況によって行動が必要になったときに need to を使います。タイトルを声に出して読んでください。",
-      "learningTarget": "Pattern 2 transition for Use need to when the situation makes an action necessary.",
+      "targetOrPrompt": "Exact visible instruction: Use need to when the situation makes an action necessary. Please read the title aloud. | 状況によって行動が必要になったときに need to を使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition for Use need to when the situation makes an action necessary. in CORE-40: Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 transition for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -321,7 +321,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -335,7 +335,7 @@
       "learnerAction": "Read each complete Pattern 2 example aloud after the short meaning explanation.",
       "tutorAction": "Briefly explain Pattern 2's use, then have the learner read each example aloud.",
       "targetOrPrompt": "Highlighted target: If it gets worse, you need to see | 悪化したら、医師に診てもらう必要があります | If you feel worse, you need to get help | もっと具合が悪くなったら、助けを求める必要があります | If you feel worse, you need to call home | もっと具合が悪くなったら、家に電話する必要があります",
-      "learningTarget": "Pattern 2 meaning and model for Use need to when the situation makes an action necessary.",
+      "learningTarget": "Pattern 2 meaning and model for Use need to when the situation makes an action necessary. in CORE-40: Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -345,7 +345,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "If it gets worse, you need to see",
@@ -366,7 +366,7 @@
       "learnerAction": "Read every complete Pattern 2 sentence aloud.",
       "tutorAction": "Listen to each sentence; model only if help is needed.",
       "targetOrPrompt": "Highlighted target: If it gets worse, you need to see | 悪化したら、医師に診てもらう必要があります | If you feel worse, you need to get help | もっと具合が悪くなったら、助けを求める必要があります | If you feel worse, you need to call home | もっと具合が悪くなったら、家に電話する必要があります | If it gets worse, you need to stop walking | 悪化したら、歩くのをやめる必要があります",
-      "learningTarget": "Pattern 2 read-aloud for Use need to when the situation makes an action necessary.",
+      "learningTarget": "Pattern 2 read-aloud for Use need to when the situation makes an action necessary. in CORE-40: Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -376,7 +376,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "If it gets worse, you need to see",
@@ -399,7 +399,7 @@
       "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
       "tutorAction": "Explain the displayed Pattern 2 operation briefly and check it in the examples.",
       "targetOrPrompt": "Exact visible instruction/model: Name a necessary action (必要な行動を伝える) | Use need to when the action becomes necessary, not just a good idea. よい考えというだけでなく必要になった行動には need to を使います。",
-      "learningTarget": "Pattern 2 form explanation for Use need to when the situation makes an action necessary.",
+      "learningTarget": "Pattern 2 form explanation for Use need to when the situation makes an action necessary. in CORE-40: Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 form explanation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -409,7 +409,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -423,7 +423,7 @@
       "learnerAction": "Put each Pattern 2 sentence in order, then say the whole sentence aloud.",
       "tutorAction": "Let the learner order and say each complete sentence; help only after an attempt.",
       "targetOrPrompt": "Exact visible instruction/model: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。 | 悪化したら、医師に診てもらう必要があります。 | もっと具合が悪くなったら、助けを求める必要があります。 | もっと具合が悪くなったら、家に電話する必要があります。 | 悪化したら、歩くのをやめる必要があります。",
-      "learningTarget": "Pattern 2 word-order retrieval for Use need to when the situation makes an action necessary.",
+      "learningTarget": "Pattern 2 word-order retrieval for Use need to when the situation makes an action necessary. in CORE-40: Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 word-order retrieval for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -433,7 +433,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -447,7 +447,7 @@
       "learnerAction": "Say each whole Pattern 2 sentence aloud, including every missing word.",
       "tutorAction": "Type only the missing Pattern 2 words exactly as spoken.",
       "targetOrPrompt": "Highlighted target: 悪化したら、医師に診てもらう必要があります | もっと具合が悪くなったら、助けを求める必要があります | もっと具合が悪くなったら、家に電話する必要があります | 悪化したら、歩くのをやめる必要があります Exact blank answers: If it gets worse, you need to see | If you feel worse, you need to get help | If you feel worse, you need to call home | If it gets worse, you need to stop walking Lexical hints: 医師に診てもらう:see a doctor | 助けを求める:get help | 家に電話する:call home | 歩くのをやめる:stop walking",
-      "learningTarget": "Pattern 2 controlled retrieval for Use need to when the situation makes an action necessary.",
+      "learningTarget": "Pattern 2 controlled retrieval for Use need to when the situation makes an action necessary. in CORE-40: Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 医師に診てもらう:see a doctor | 助けを求める:get help | 家に電話する:call home | 歩くのをやめる:stop walking; the lesson pattern still has to be produced.",
@@ -457,7 +457,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "悪化したら、医師に診てもらう必要があります",
@@ -486,7 +486,7 @@
       "learnerAction": "Read each Japanese cue and say the complete Pattern 2 sentence in English.",
       "tutorAction": "Type each complete English sentence exactly as spoken.",
       "targetOrPrompt": "Exact blank answers: If it gets worse, you need to see a doctor. | If you feel worse, you need to get help. | If you feel worse, you need to call home. | If it gets worse, you need to stop walking. Lexical hints: 悪化する:get worse | 医師:doctor | 悪化する:get worse | 助けを求める:get help | 悪化する:get worse | 家:home | 電話する:call | 悪化する:get worse | 歩くのをやめる:stop walking",
-      "learningTarget": "Supported pattern 2 whole-sentence production for Use need to when the situation makes an action necessary.",
+      "learningTarget": "Supported pattern 2 whole-sentence production for Use need to when the situation makes an action necessary. in CORE-40: Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—supported Pattern 2 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 2 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 悪化する:get worse | 医師:doctor | 悪化する:get worse | 助けを求める:get help | 悪化する:get worse | 家:home | 電話する:call | 悪化する:get worse | 歩くのをやめる:stop walking; the lesson pattern still has to be produced.",
@@ -496,7 +496,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -524,8 +524,8 @@
       "pageId": "p2-write",
       "learnerAction": "Say one personal Pattern 2 sentence that performs the exact communicative job in the prompt.",
       "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
-      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “If it gets worse, you need to ___” to name the necessary next step. Lexical hints: 医師:doctor | 助けを求める:get help | 家:home",
-      "learningTarget": "Communicative pattern 2 production for Use need to when the situation makes an action necessary.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “If it gets worse, you need to ___” to name the necessary next step. Lexical hint(s): 医師:doctor | 助けを求める:get help | 家:home",
+      "learningTarget": "Communicative pattern 2 production for Use need to when the situation makes an action necessary. in CORE-40 through the exact current prompt: Now use “If it gets worse, you need to ___” to name the necessary next step.",
       "pedagogicalValue": "This page has one distinct job—communicative Pattern 2 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 2 production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 医師:doctor | 助けを求める:get help | 家:home; the lesson pattern still has to be produced.",
@@ -535,7 +535,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -555,7 +555,7 @@
       "learnerAction": "Read the conversation transition and get ready to role-play.",
       "tutorAction": "Introduce the two-pattern conversation briefly, then move on.",
       "targetOrPrompt": "Exact visible instruction/model: Use it in a conversation (会話で使おう) | Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
-      "learningTarget": "Conversation transition for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "learningTarget": "Conversation transition for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40: Use should for a helpful idea that the other person can consider. Then Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—conversation transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform conversation transition for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -565,7 +565,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -579,7 +579,7 @@
       "learnerAction": "Play Me and read every learner line aloud in the model role-play.",
       "tutorAction": "Take the named partner role and read only the partner lines.",
       "targetOrPrompt": "Highlighted target: should get | 休んだほうがいいです | If it gets worse, you need to see | 悪化したら、医師に診てもらう必要があります",
-      "learningTarget": "Two-pattern model role-play for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "learningTarget": "Two-pattern model role-play for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40: Use should for a helpful idea that the other person can consider. Then Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—two-pattern model role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern model role-play for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -589,7 +589,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "should get",
@@ -608,7 +608,7 @@
       "learnerAction": "Play Me and say each complete role-play line, including the missing target words.",
       "tutorAction": "Take the named partner role, pause for each Me line, and type only the missing words.",
       "targetOrPrompt": "Exact blank answers: should get | If it gets worse, you need to see",
-      "learningTarget": "Two-pattern scaffolded role-play for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "learningTarget": "Two-pattern scaffolded role-play for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40: Use should for a helpful idea that the other person can consider. Then Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—two-pattern scaffolded role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern scaffolded role-play for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -618,7 +618,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -634,8 +634,8 @@
       "pageId": "p3-freetalk",
       "learnerAction": "Answer the real topic question, react to a follow-up, then ask How about you?.",
       "tutorAction": "Ask the displayed question, follow the most interesting detail, and give a real brief answer when asked back.",
-      "targetOrPrompt": "Exact learner prompt/ask-back: What's the best advice someone has ever given you? | How about you?",
-      "learningTarget": "Reciprocal free talk for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "targetOrPrompt": "Exact learner prompt(s): When you're exhausted, what advice would you actually want to hear? | How about you?",
+      "learningTarget": "Reciprocal free talk for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40 through the exact current prompt: When you're exhausted, what advice would you actually want to hear? | How about you?",
       "pedagogicalValue": "This page has one distinct job—reciprocal Free Talk—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform reciprocal Free Talk for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -645,14 +645,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What's the best advice someone has ever given you?",
+          "When you're exhausted, what advice would you actually want to hear?",
           "How about you?"
         ]
       }
@@ -662,7 +662,7 @@
       "learnerAction": "Play Me in the new situation and say each complete line, including the missing target words.",
       "tutorAction": "Take the named partner role and pause for each complete Me line.",
       "targetOrPrompt": "Exact blank answers: should drink | If you feel worse, you need to get help",
-      "learningTarget": "Transfer role-play for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "learningTarget": "Transfer role-play for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40: Use should for a helpful idea that the other person can consider. Then Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—transfer role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform transfer role-play for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -672,7 +672,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -689,7 +689,7 @@
       "learnerAction": "Compare the two expressions and choose by intended meaning.",
       "tutorAction": "Briefly explain the practical difference and check the two examples.",
       "targetOrPrompt": "Exact visible instruction/model: Direct or softer? (直接・やわらかく) | Add “maybe” before should when you want the advice to sound less direct. 助言をやわらかく伝えたいときは、should の前に「maybe」を加えます。",
-      "learningTarget": "Pragmatic nuance for give ordinary advice with should + plain verb and name a necessary response with need to",
+      "learningTarget": "Pragmatic nuance for give ordinary advice with should + plain verb and name a necessary response with need to in CORE-40: Use should for a helpful idea that the other person can consider. Then Use need to when the situation makes an action necessary.",
       "pedagogicalValue": "This page has one distinct job—pragmatic nuance—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform pragmatic nuance for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -699,7 +699,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

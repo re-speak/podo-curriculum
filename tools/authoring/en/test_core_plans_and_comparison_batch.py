@@ -79,6 +79,15 @@ class CorePlansAndComparisonBatchTests(unittest.TestCase):
             ))
             self.assertEqual(batch.LIVE_HINTS[number], {})
 
+        expected_no_experience_prompts = {
+            40: "When you're exhausted, what advice would you actually want to hear?",
+            42: "What makes a yes-or-no answer confusing for you?",
+            44: "What feature makes a purchase feel worth the money to you?",
+            47: "Which gives you the strongest reaction: a movie, a game, or a trip? Why?",
+        }
+        for number, prompt in expected_no_experience_prompts.items():
+            self.assertEqual(batch.LESSONS[number]["prompt"][0], prompt)
+
     def test_translation_and_fill_support_do_not_reveal_the_pattern(self):
         forbidden = {"going to", "let me", "might", "should", "have to", "don't have to", "too", "enough"}
         for number in batch.NUMBERS:

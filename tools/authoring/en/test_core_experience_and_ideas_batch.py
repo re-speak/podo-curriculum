@@ -284,6 +284,20 @@ class CoreExperienceAndIdeasBatchTests(unittest.TestCase):
                 self.assertIn("を使って", japanese, (number, part, japanese))
                 self.assertIn(shared_core.esc(english), pages[f"p{part}-write"])
                 self.assertIn(shared_core.esc(japanese), pages[f"p{part}-write"])
+                self.assertNotIn("or say", english.casefold(), (number, part, english))
+
+            for part in (1, 2):
+                intro = pages[f"part{part}-intro"]
+                meaning_en, meaning_ja = spec["meanings"][part - 1]
+                self.assertIn(meaning_en, intro, (number, part))
+                self.assertIn(shared_core.esc(meaning_ja), intro, (number, part))
+                self.assertIn("Please read the title aloud.", intro, (number, part))
+                self.assertNotIn("let&#x27;s practice this pattern", intro.casefold(), (number, part))
+
+        self.assertEqual(
+            batch.REVIEWED_LIVE_48_59[50][0],
+            "What kind of place would you happily visit again, and why?",
+        )
 
     def test_required_spiral_retrievals_are_visible_and_controlled(self):
         self.assertEqual(

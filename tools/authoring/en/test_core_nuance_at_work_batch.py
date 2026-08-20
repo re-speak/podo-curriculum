@@ -214,17 +214,18 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
             self.assertIn(shared_core.esc(scene[0][3]), page, number)
             self.assertIn(shared_core.esc(scene[2][3]), page, number)
             self.assertIn("Tutor&#x27;s answer:", page, number)
-            self.assertIn("Use today's pattern only if it fits", page, number)
+            self.assertIn("Invite today's pattern only if it fits", page, number)
 
     def test_live_menus_fit_real_slots_and_do_not_decorate_fixed_ask_backs(self):
         for number, hints in batch.LIVE_HINTS.items():
             self.assertEqual(hints,{},number)
 
-    def test_every_open_production_prompt_has_a_truthful_alternative(self):
+    def test_every_open_production_prompt_has_one_direct_job(self):
         for number, spec in batch.SPECS.items():
             for english, japanese in spec["writes"]:
                 self.assertTrue(english.startswith("Use “"),(number,english))
                 self.assertIn("を使って",japanese,(number,japanese))
+                self.assertNotIn("or say", english.casefold(), (number, english))
         for number, data in batch.LESSONS.items():
             self.assertIn("Answer my question, then ask me too",data["prompt"][0],number)
             self.assertIn("私にも聞いて",data["prompt"][1],number)
@@ -242,6 +243,11 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
                 english, japanese = batch.SPECS[number]["writes"][part - 1]
                 self.assertIn(shared_core.esc(english), write, (number, part, english))
                 self.assertIn(shared_core.esc(japanese), write, (number, part, japanese))
+                intro = pages[f"part{part}-intro"]
+                meaning_en, meaning_ja = batch.SPECS[number]["meanings"][part - 1]
+                self.assertIn(meaning_en, intro, (number, part))
+                self.assertIn(shared_core.esc(meaning_ja), intro, (number, part))
+                self.assertIn("Please read the title aloud.", intro, (number, part))
             for page_id, variant in (("p3-model", "model"), ("p3-complete", "model"),
                                      ("in-the-wild", "wild")):
                 role = batch.DIALOGUES[number][variant][0]

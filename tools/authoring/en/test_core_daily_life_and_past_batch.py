@@ -228,8 +228,8 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
             self.assertTrue(batch.DIALOGUES[29][variant][3][0].startswith("What time"))
             self.assertIn("after that", batch.DIALOGUES[35][variant][4][0].casefold())
 
-        self.assertIn("looking forward", batch.LIVE_SCENES[29][0][3])
-        self.assertIn("most enjoyable", batch.LIVE_SCENES[33][0][3])
+        self.assertEqual(batch.LIVE_SCENES[29][0][3], "What would you most like to do this week? Why?")
+        self.assertIn("ordinary day", batch.LIVE_SCENES[33][0][3])
         for n in (25, 28, 29, 31, 33, 34, 36):
             tutor_lines = " ".join(
                 turn[0] for variant in batch.DIALOGUES[n].values() for turn in variant[3:6]
@@ -263,6 +263,15 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
             self.assertEqual(batch.TRANSLATE_STAGES[n], ("supported", "supported"), n)
             for hint_page in batch.TRANSLATE_HINTS[n]:
                 self.assertTrue(any(hint.strip() for hint in hint_page), n)
+
+        expected_no_experience_prompts = {
+            29: "What would you most like to do this week? Why?",
+            33: "What would make an ordinary day more enjoyable for you?",
+            35: "When a day does not go as planned, what do you usually do next?",
+            36: "What kind of interruption would bother you most? Why?",
+        }
+        for number, prompt in expected_no_experience_prompts.items():
+            self.assertEqual(batch.LESSONS[number]["prompt"][0], prompt)
 
             omitted = set(batch.LESSONS[n].get("omit_choice", ()))
             for part, rows in enumerate(batch.SPECS[n]["choices"], start=1):

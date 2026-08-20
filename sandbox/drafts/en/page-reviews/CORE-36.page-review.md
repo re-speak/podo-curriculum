@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-daily-life-and-past/lessons/36-i-was-cooking-when-you-called/lesson.html`
-- SHA-256: `c1dc06041627d33a3f07876df92f460729f6c13144725ff1ba3b823a374e11bc`
+- SHA-256: `23d83d09faf50acb6c00f5872f89acfa541b641a0a6fb3d1a1425fc315d822ec`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -14,7 +14,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learner action: Read the displayed lesson title aloud once after hearing the can-do.
 - Tutor action: State the can-do, have the learner read the title once, then move on.
 - Visible target or prompt: Visible instruction/model: data-page-id="lesson-goal" data-act="Everyday English"> GOAL I was cooking when you called (電話をくれたとき、料理中でした) Say what was in progress when something else happened. Please read the title aloud.別の出来事が起きたとき、何をしていたか言いましょう。タイトルを声に出して読んでください。 Have the learner read the title once, then move on. <div class="section"
-- Learning target: Goal orientation for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event.
+- Learning target: Goal orientation for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when. Then Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—goal orientation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event during goal orientation, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -24,14 +24,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 2. `words-you-know`
 
 - Learner action: Say the three familiar English words shown on the page.
 - Tutor action: Listen to the three known words; do not turn this into a new-vocabulary lesson.
 - Visible target or prompt: Visible instruction/model: data-page-id="words-you-know">Words you know (知っている単語)Say the three familiar words in English.知っている3つの単語を英語で言いましょう。テーブル→tableディナー→dinnerコーヒー→coffee <div class="transition-page"
-- Learning target: Known-word activation for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event.
+- Learning target: Known-word activation for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when. Then Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—known-word activation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event during known-word activation, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -41,14 +41,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 3. `part1-intro`
 
 - Learner action: Read the displayed Pattern 1 title aloud once and get ready for the next activity.
 - Tutor action: Introduce Pattern 1 in one line, have the learner read the title, then move on.
-- Visible target or prompt: Visible instruction/model: data-page-id="part1-intro" data-act="Pattern 1">PART 1I was cooking when you called.Use was plus -ing for the longer action; put the interrupting past action after when. Please read the title aloud.長く続いていた動作には was＋-ing、途中で起きた過去の動作には when を使います。タイトルを声に出して読んでください。Have the learner read the title once, then move on. <div class="section"
-- Learning target: Pattern 1 transition for was + -ing + when + a short past event.
+- Visible target or prompt: Exact visible instruction: Use was plus -ing for the longer action; put the interrupting past action after when. Please read the title aloud. | 長く続いていた動作には was＋-ing、途中で起きた過去の動作には when を使います。タイトルを声に出して読んでください。
+- Learning target: Pattern 1 transition for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 transition, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -58,14 +58,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 4. `p1-teach`
 
 - Learner action: Read every complete Pattern 1 example aloud after the brief meaning explanation.
 - Tutor action: Briefly explain the meaning, then have the learner read each example aloud.
 - Visible target or prompt: Highlighted target evidence: was cooking when | あなたが電話したとき、私は料理をしていました | was walking when | あなたが着いたとき、私は歩いていました | was working when | あなたがメッセージを送ったとき、私は働いていました
-- Learning target: Pattern 1 meaning and model for was + -ing + when + a short past event.
+- Learning target: Pattern 1 meaning and model for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 meaning and model, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -75,14 +75,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["was cooking when", "あなたが電話したとき、私は料理をしていました", "was walking when", "あなたが着いたとき、私は歩いていました", "was working when", "あなたがメッセージを送ったとき、私は働いていました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 5. `p1-read`
 
 - Learner action: Read every complete Pattern 1 sentence aloud.
 - Tutor action: Listen to each complete sentence; model only when help is actually needed.
 - Visible target or prompt: Highlighted target evidence: was cooking when | あなたが電話したとき、私は料理をしていました | was walking when | あなたが着いたとき、私は歩いていました | was working when | あなたがメッセージを送ったとき、私は働いていました | was sleeping when | あなたがノックしたとき、私は寝ていました
-- Learning target: Pattern 1 complete-sentence read-aloud for was + -ing + when + a short past event.
+- Learning target: Pattern 1 complete-sentence read-aloud for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 complete-sentence read-aloud, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -92,14 +92,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["was cooking when", "あなたが電話したとき、私は料理をしていました", "was walking when", "あなたが着いたとき、私は歩いていました", "was working when", "あなたがメッセージを送ったとき、私は働いていました", "was sleeping when", "あなたがノックしたとき、私は寝ていました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 6. `p1-rule`
 
 - Learner action: Notice how Pattern 1 is built and read the complete examples.
 - Tutor action: Explain the displayed operation briefly and check that the learner can locate it in the examples.
 - Visible target or prompt: Visible instruction/model: data-page-id="p1-rule">See the operation (形の変化を見よう)Use was plus -ing for the longer action; put the interrupting past action after when.長く続いていた動作には was＋-ing、途中で起きた過去の動作には when を使います。Use was plus -ing for the longer action; put the interrupting past action after when.Pattern 1パターン1I was cooking when you called.I was walking when you arrived. <div class="section"
-- Learning target: Pattern 1 form explanation for was + -ing + when + a short past event.
+- Learning target: Pattern 1 form explanation for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 form explanation, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -109,14 +109,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 7. `p1-choose`
 
 - Learner action: Choose the option matching the Japanese, then read the entire completed Pattern 1 sentence aloud.
 - Tutor action: After each choice, have the learner read the whole completed sentence before moving on.
 - Visible target or prompt: Exact contrasts: was cooking vs cooked | was walking vs walked | was working vs worked | was sleeping vs slept; highlighted cues: 料理をしていました | 歩いていました | 働いていました | 寝ていました
-- Learning target: Pattern 1 discriminating choice for was + -ing + when + a short past event.
+- Learning target: Pattern 1 discriminating choice for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 discriminating choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 discriminating choice, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -126,14 +126,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["料理をしていました", "歩いていました", "働いていました", "寝ていました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 8. `p1-reorder`
 
 - Learner action: Put the Pattern 1 chunks in order, then say the whole sentence aloud.
 - Tutor action: Let the learner build and say every full sentence; intervene only when support is needed.
 - Visible target or prompt: Visible instruction/model: data-page-id="p1-reorder" data-chunk-review="meaningful">Build the sentence (文を組み立てよう)Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。あなたが電話したとき、私は料理をしていました。you called.whenI was cookingあなたが着いたとき、私は歩いていました。you arrived.whenI was walkingあなたがメッセージを送ったとき、私は働いていました。you texted.whenI was workingあなたがノックしたとき、私は寝ていました。you knocked.whenI was sleeping <div class="section"
-- Learning target: Pattern 1 sentence assembly for was + -ing + when + a short past event.
+- Learning target: Pattern 1 sentence assembly for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 sentence assembly—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 sentence assembly, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -143,14 +143,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 9. `p1-fill`
 
 - Learner action: Say every complete Pattern 1 sentence aloud, including all missing words.
 - Tutor action: Type only the missing words exactly as the learner says them.
 - Visible target or prompt: Exact answers: was cooking when | was walking when | was working when | was sleeping when; exact lexical support: 料理中:cooking | 歩いている:walking | 仕事中:working | 寝ている:sleeping
-- Learning target: Pattern 1 controlled retrieval for was + -ing + when + a short past event.
+- Learning target: Pattern 1 controlled retrieval for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 controlled retrieval, before the lesson increases independence.
 - Non-target support: Only changing lexical content is supported by the exact hint chips (料理中:cooking | 歩いている:walking | 仕事中:working | 寝ている:sleeping); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
@@ -160,14 +160,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["あなたが電話したとき、私は料理をしていました", "あなたが着いたとき、私は歩いていました", "あなたがメッセージを送ったとき、私は働いていました", "あなたがノックしたとき、私は寝ていました"], "blankAnswers": ["was cooking when", "was walking when", "was working when", "was sleeping when"], "hintChips": ["料理中:cooking", "歩いている:walking", "仕事中:working", "寝ている:sleeping"], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 10. `p1-translate`
 
 - Learner action: Read each Japanese cue, then say the complete Pattern 1 sentence in English.
 - Tutor action: Type each complete English sentence exactly as the learner says it.
 - Visible target or prompt: Exact answers: I was cooking when you called. | I was walking when you arrived. | I was working when you texted. | I was sleeping when you knocked.; exact lexical support: 料理:cooking | 電話した:called | 歩くこと:walking | 到着した:arrived | 仕事中:working | メッセージを送った:texted | 寝ている:sleeping | ノックした:knocked; support stage: supported
-- Learning target: Pattern 1 supported whole-sentence production for was + -ing + when + a short past event.
+- Learning target: Pattern 1 supported whole-sentence production for was + -ing + when + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when.
 - Pedagogical value: This page has one distinct job—Pattern 1 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 supported whole-sentence production, before the lesson increases independence.
 - Non-target support: Only changing lexical content is supported by the exact hint chips (料理:cooking | 電話した:called | 歩くこと:walking | 到着した:arrived | 仕事中:working | メッセージを送った:texted | 寝ている:sleeping | ノックした:knocked); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
@@ -177,14 +177,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I was cooking when you called.", "I was walking when you arrived.", "I was working when you texted.", "I was sleeping when you knocked."], "hintChips": ["料理:cooking", "電話した:called", "歩くこと:walking", "到着した:arrived", "仕事中:working", "メッセージを送った:texted", "寝ている:sleeping", "ノックした:knocked"], "supportStage": "supported", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 11. `p1-write`
 
 - Learner action: Say one personally meaningful Pattern 1 sentence using the exact prompt.
 - Tutor action: Let the learner answer aloud, react naturally, then capture and correct only what is useful.
-- Visible target or prompt: Exact learner prompt/turns: Now use “I was ___ing when ___” to describe one interrupted action.
-- Learning target: Pattern 1 communicative production for was + -ing + when + a short past event.
+- Visible target or prompt: Exact learner prompt(s): Now use “I was ___ing when ___” to describe one interrupted action. Lexical hint(s): 料理:cooking | 電話した:called | 歩くこと:walking | 到着した:arrived | 仕事中:working | メッセージを送った:texted
+- Learning target: Pattern 1 communicative production for was + -ing + when + a short past event. in CORE-36 through the exact current prompt: Now use “I was ___ing when ___” to describe one interrupted action.
 - Pedagogical value: This page has one distinct job—Pattern 1 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle was + -ing + when + a short past event during Pattern 1 communicative production, before the lesson increases independence.
 - Non-target support: Only changing lexical content is supported by the exact hint chips (料理:cooking | 電話した:called | 歩くこと:walking | 到着した:arrived | 仕事中:working | メッセージを送った:texted); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
@@ -194,14 +194,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["料理:cooking", "電話した:called", "歩くこと:walking", "到着した:arrived", "仕事中:working", "メッセージを送った:texted"], "supportStage": "not-applicable", "substantivePrompts": ["Now use “I was ___ing when ___” to describe one interrupted action."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 12. `part2-intro`
 
 - Learner action: Read the displayed Pattern 2 title aloud once and get ready for the next activity.
 - Tutor action: Introduce Pattern 2 in one line, have the learner read the title, then move on.
-- Visible target or prompt: Visible instruction/model: data-page-id="part2-intro" data-act="Pattern 2">PART 2While I was cooking, he set the table.Start with While plus the action in progress, then name the shorter finished action. Please read the title aloud.While のあとに進行中の動作を置き、そのあとに短く終わった動作を言います。タイトルを声に出して読んでください。Have the learner read the title once, then move on. <div class="section"
-- Learning target: Pattern 2 transition for While + past continuous, + a short past event.
+- Visible target or prompt: Exact visible instruction: Start with While plus the action in progress, then name the shorter finished action. Please read the title aloud. | While のあとに進行中の動作を置き、そのあとに短く終わった動作を言います。タイトルを声に出して読んでください。
+- Learning target: Pattern 2 transition for While + past continuous, + a short past event. in CORE-36: Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—Pattern 2 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 transition, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -211,14 +211,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 13. `p2-teach`
 
 - Learner action: Read every complete Pattern 2 example aloud after the brief meaning explanation.
 - Tutor action: Briefly explain the meaning, then have the learner read each example aloud.
 - Visible target or prompt: Highlighted target evidence: While I was cooking | 私が料理をしている間 | While I was working | 私が仕事をしている間 | While I was cleaning | 私が掃除をしている間
-- Learning target: Pattern 2 meaning and model for While + past continuous, + a short past event.
+- Learning target: Pattern 2 meaning and model for While + past continuous, + a short past event. in CORE-36: Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—Pattern 2 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 meaning and model, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -228,14 +228,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["While I was cooking", "私が料理をしている間", "While I was working", "私が仕事をしている間", "While I was cleaning", "私が掃除をしている間"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 14. `p2-read`
 
 - Learner action: Read every complete Pattern 2 sentence aloud.
 - Tutor action: Listen to each complete sentence; model only when help is actually needed.
 - Visible target or prompt: Highlighted target evidence: While I was cooking | 私が料理をしている間 | While I was working | 私が仕事をしている間 | While I was cleaning | 私が掃除をしている間 | While I was shopping | 私が買い物をしている間
-- Learning target: Pattern 2 complete-sentence read-aloud for While + past continuous, + a short past event.
+- Learning target: Pattern 2 complete-sentence read-aloud for While + past continuous, + a short past event. in CORE-36: Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—Pattern 2 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 complete-sentence read-aloud, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -245,14 +245,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["While I was cooking", "私が料理をしている間", "While I was working", "私が仕事をしている間", "While I was cleaning", "私が掃除をしている間", "While I was shopping", "私が買い物をしている間"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 15. `p2-rule`
 
 - Learner action: Notice how Pattern 2 is built and read the complete examples.
 - Tutor action: Explain the displayed operation briefly and check that the learner can locate it in the examples.
 - Visible target or prompt: Visible instruction/model: data-page-id="p2-rule">See the operation (形の変化を見よう)Start with While plus the action in progress, then name the shorter finished action.While のあとに進行中の動作を置き、そのあとに短く終わった動作を言います。Start with While plus the action in progress, then name the shorter finished action.Pattern 2パターン2While I was cooking, he set the table.While I was working, he made coffee. <div class="section"
-- Learning target: Pattern 2 form explanation for While + past continuous, + a short past event.
+- Learning target: Pattern 2 form explanation for While + past continuous, + a short past event. in CORE-36: Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—Pattern 2 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 form explanation, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -262,14 +262,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 16. `p2-choose`
 
 - Learner action: Choose the option matching the Japanese, then read the entire completed Pattern 2 sentence aloud.
 - Tutor action: After each choice, have the learner read the whole completed sentence before moving on.
 - Visible target or prompt: Exact contrasts: was cooking vs cooked | was working vs worked | was cleaning vs cleaned | was shopping vs shopped; highlighted cues: 料理をしている間 | 仕事をしている間 | 掃除をしている間 | 買い物をしている間
-- Learning target: Pattern 2 discriminating choice for While + past continuous, + a short past event.
+- Learning target: Pattern 2 discriminating choice for While + past continuous, + a short past event. in CORE-36: Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—Pattern 2 discriminating choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 discriminating choice, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -279,14 +279,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["料理をしている間", "仕事をしている間", "掃除をしている間", "買い物をしている間"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 17. `p2-fill`
 
 - Learner action: Say every complete Pattern 2 sentence aloud, including all missing words.
 - Tutor action: Type only the missing words exactly as the learner says them.
 - Visible target or prompt: Exact answers: While I was cooking | While I was working | While I was cleaning | While I was shopping; exact lexical support: 料理中:cooking | 仕事中:working | 掃除中:cleaning | 買い物中:shopping
-- Learning target: Pattern 2 controlled retrieval for While + past continuous, + a short past event.
+- Learning target: Pattern 2 controlled retrieval for While + past continuous, + a short past event. in CORE-36: Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—Pattern 2 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 controlled retrieval, before the lesson increases independence.
 - Non-target support: Only changing lexical content is supported by the exact hint chips (料理中:cooking | 仕事中:working | 掃除中:cleaning | 買い物中:shopping); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
@@ -296,14 +296,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["私が料理をしている間", "私が仕事をしている間", "私が掃除をしている間", "私が買い物をしている間"], "blankAnswers": ["While I was cooking", "While I was working", "While I was cleaning", "While I was shopping"], "hintChips": ["料理中:cooking", "仕事中:working", "掃除中:cleaning", "買い物中:shopping"], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 18. `p2-translate`
 
 - Learner action: Read each Japanese cue, then say the complete Pattern 2 sentence in English.
 - Tutor action: Type each complete English sentence exactly as the learner says it.
 - Visible target or prompt: Exact answers: While I was cooking, he set the table. | While I was working, he made coffee. | While I was cleaning, he cooked dinner. | While I was shopping, he called me.; exact lexical support: 料理:cooking | 食卓を整える:set the table | 仕事中:working | コーヒー:coffee | 掃除した:cleaned | 夕食:dinner | 買い物:shopping | 電話した:called; support stage: supported
-- Learning target: Pattern 2 supported whole-sentence production for While + past continuous, + a short past event.
+- Learning target: Pattern 2 supported whole-sentence production for While + past continuous, + a short past event. in CORE-36: Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—Pattern 2 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 supported whole-sentence production, before the lesson increases independence.
 - Non-target support: Only changing lexical content is supported by the exact hint chips (料理:cooking | 食卓を整える:set the table | 仕事中:working | コーヒー:coffee | 掃除した:cleaned | 夕食:dinner | 買い物:shopping | 電話した:called); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
@@ -313,14 +313,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["While I was cooking, he set the table.", "While I was working, he made coffee.", "While I was cleaning, he cooked dinner.", "While I was shopping, he called me."], "hintChips": ["料理:cooking", "食卓を整える:set the table", "仕事中:working", "コーヒー:coffee", "掃除した:cleaned", "夕食:dinner", "買い物:shopping", "電話した:called"], "supportStage": "supported", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 19. `p2-write`
 
 - Learner action: Say one personally meaningful Pattern 2 sentence using the exact prompt.
 - Tutor action: Let the learner answer aloud, react naturally, then capture and correct only what is useful.
-- Visible target or prompt: Exact learner prompt/turns: Now use “While I was ___ing, ___” to say what another person did at the same time.
-- Learning target: Pattern 2 communicative production for While + past continuous, + a short past event.
+- Visible target or prompt: Exact learner prompt(s): Now use “While I was ___ing, ___” to say what another person did at the same time. Lexical hint(s): 料理:cooking | 食卓を整える:set the table | 仕事中:working | コーヒー:coffee | 掃除した:cleaned | 夕食:dinner
+- Learning target: Pattern 2 communicative production for While + past continuous, + a short past event. in CORE-36 through the exact current prompt: Now use “While I was ___ing, ___” to say what another person did at the same time.
 - Pedagogical value: This page has one distinct job—Pattern 2 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle While + past continuous, + a short past event during Pattern 2 communicative production, before the lesson increases independence.
 - Non-target support: Only changing lexical content is supported by the exact hint chips (料理:cooking | 食卓を整える:set the table | 仕事中:working | コーヒー:coffee | 掃除した:cleaned | 夕食:dinner); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
@@ -330,14 +330,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["料理:cooking", "食卓を整える:set the table", "仕事中:working", "コーヒー:coffee", "掃除した:cleaned", "夕食:dinner"], "supportStage": "not-applicable", "substantivePrompts": ["Now use “While I was ___ing, ___” to say what another person did at the same time."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 20. `part3-intro`
 
 - Learner action: Get ready to use both patterns in one conversation.
 - Tutor action: Introduce the conversation in one line, then move directly into the role-play.
 - Visible target or prompt: Visible instruction/model: data-page-id="part3-intro" data-act="Conversation">PART 3Use it in a conversation (会話で使おう)Now, let's use both patterns in a conversation.では、二つのパターンを会話で使ってみましょう。Introduce the conversation, then move on. <div class="section"
-- Learning target: Conversation transition for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event.
+- Learning target: Conversation transition for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when. Then Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—conversation transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event during conversation transition, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -347,14 +347,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 21. `p3-model`
 
 - Learner action: Take the Me role and read every learner line aloud in the complete conversation.
 - Tutor action: Take the named partner role and read only the partner lines.
 - Visible target or prompt: Highlighted target evidence: was cooking when | あなたが電話したとき、私は料理をしていました | While I was cooking | 私が料理をしている間
-- Learning target: Scripted role-play for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event.
+- Learning target: Scripted role-play for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when. Then Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—scripted role-play—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event during scripted role-play, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -364,14 +364,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": ["was cooking when", "あなたが電話したとき、私は料理をしていました", "While I was cooking", "私が料理をしている間"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 22. `p3-complete`
 
 - Learner action: Take the Me role and say each complete learner line, including the missing words.
 - Tutor action: Take the partner role and type only the missing words the learner says.
 - Visible target or prompt: Exact answers: was cooking when | While I was cooking
-- Learning target: Role-play retrieval for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event.
+- Learning target: Role-play retrieval for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when. Then Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—role-play retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event during role-play retrieval, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -381,31 +381,31 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["was cooking when", "While I was cooking"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 23. `p3-freetalk`
 
 - Learner action: Answer the relevant real-life question in your own words, then ask the tutor back.
 - Tutor action: Ask the exact question, follow the most interesting detail, and give a brief real answer when asked back.
-- Visible target or prompt: Exact learner prompt/turns: Have you ever been interrupted at the worst possible moment? What happened? | How about you?
-- Learning target: Reciprocal free talk for Have you ever been interrupted at the worst possible moment? What happened?.
+- Visible target or prompt: Exact learner prompt(s): What kind of interruption would bother you most? Why? | How about you?
+- Learning target: Reciprocal free talk for Have you ever been interrupted at the worst possible moment? What happened?. in CORE-36 through the exact current prompt: What kind of interruption would bother you most? Why? | How about you?
 - Pedagogical value: This page has one distinct job—reciprocal free talk—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle Have you ever been interrupted at the worst possible moment? What happened? during reciprocal free talk, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
 - Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
 - Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
 - Component consistency: The page uses one shared component for reciprocal free talk; response capture appears only where spoken production must be recorded.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you ever been interrupted at the worst possible moment? What happened?", "How about you?"]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of interruption would bother you most? Why?", "How about you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 24. `in-the-wild`
 
 - Learner action: Take the Me role and complete every learner line in the new situation.
 - Tutor action: Take the named partner role and keep the exchange moving naturally.
 - Visible target or prompt: Exact answers: was walking when | While I was working
-- Learning target: New-situation transfer for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event.
+- Learning target: New-situation transfer for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when. Then Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—new-situation transfer—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event during new-situation transfer, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -415,14 +415,14 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["was walking when", "While I was working"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
 
 ## 25. `native-tip`
 
 - Learner action: Compare the two conversational expressions and choose by meaning.
 - Tutor action: Explain the contrast briefly, then ask which expression fits each meaning.
 - Visible target or prompt: Visible instruction/model: data-page-id="native-tip">All of a sudden or at that moment? (all of a sudden と at that moment)All of a sudden emphasizes surprise; at that moment only locates the event in time.all of a sudden は突然だったことを強調し、at that moment はその時点を示すだけです。Unexpected event突然の出来事All of a sudden, you called.突然、あなたから電話がありました。Pick by meaning 意味で選ぶPoint in timeその時点At that moment, you called.そのとき、あなたから電話がありました。 ← —— T →
-- Learning target: Meaning-based nuance choice for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event.
+- Learning target: Meaning-based nuance choice for integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event. in CORE-36: Use was plus -ing for the longer action; put the interrupting past action after when. Then Start with While plus the action in progress, then name the shorter finished action.
 - Pedagogical value: This page has one distinct job—meaning-based nuance choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
 - Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was + -ing + when + a short past event and While + past continuous, + a short past event during meaning-based nuance choice, before the lesson increases independence.
 - Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
@@ -432,4 +432,4 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.

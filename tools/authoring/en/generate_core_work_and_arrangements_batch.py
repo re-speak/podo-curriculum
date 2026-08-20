@@ -444,11 +444,11 @@ REVIEWED_WRITES_71_80 = {
 
 
 REVIEWED_LIVE_71_80 = {
-    71: ("What's a small mistake that taught you something useful?", "役に立つことを学んだ小さな失敗は何ですか？", "What about you—what mistake taught you something?", "先生はどうですか？どんな失敗から学びましたか？"),
+    71: ("Which small mistake would bother you more: being a little late or forgetting one detail? Why?", "少し遅れることと、一つの細かいことを忘れることでは、どちらがより気になりますか？なぜですか？", "What about you—which mistake would bother you more?", "先生はどうですか？どちらの失敗がより気になりますか？"),
     72: ("When you misplace something, where do you look first?", "物をどこかに置き忘れたとき、最初にどこを探しますか？", "What about you—where do you look first?", "先生はどうですか？最初にどこを探しますか？"),
     73: ("What's something you really dislike arriving late for?", "遅刻したくないと思うことは何ですか？", "What about you—what do you never want to be late for?", "先生はどうですか？何に遅刻したくありませんか？"),
     74: ("Do you usually adapt easily when a plan changes? Why?", "予定が変わったとき、普段すぐに対応できますか？なぜですか？", "What about you—how do you handle changed plans?", "先生はどうですか？予定の変更にどう対応しますか？"),
-    75: ("What childhood habit do you remember most clearly?", "子どものころの習慣で、いちばんよく覚えているものは何ですか？", "What about you—which childhood habit do you remember?", "先生はどうですか？どんな習慣を覚えていますか？"),
+    75: ("What habit from childhood would you like to bring back—or start now?", "子どものころの習慣で、もう一度始めたいもの、または今から始めたいものは何ですか？", "What about you—which habit would you bring back or start?", "先生はどうですか？どんな習慣をもう一度始めたいですか？"),
     76: ("When something breaks, do you prefer to repair it or replace it?", "物が壊れたら、修理するのと買い替えるのとどちらが好きですか？", "What about you—do you usually repair things?", "先生はどうですか？普段は修理しますか？"),
     77: ("How patient are you when a service or delivery is late?", "サービスや配達が遅れたとき、どのくらい待てますか？", "What about you—how do you react to a delay?", "先生はどうですか？遅れたときどうしますか？"),
     78: ("How would you most like to spend tomorrow evening?", "明日の夜はどのように過ごしたいですか？", "What about you—how would you spend tomorrow evening?", "先生はどうですか？明日の夜はどう過ごしますか？"),
@@ -588,12 +588,23 @@ def live_page(number):
             hints = hint_html(raw_hints) if raw_hints else ""
             label = english.replace("Tutor's real answer:", "Tutor's answer:")
             rendered.append(f'<div class="turn {side}">{avatar}<div class="{bubble}"><div class="answer-box tall"><span class="answer-label">{core.esc(label)}<span class="task">{core.esc(japanese)}</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-{index}" rows="2" spellcheck="false" maxlength="2000"></textarea></span>{hints}</div></div></div>')
-    return core.section("p3-freetalk", "Your real answer", "自分の答え", f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span><span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p><div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div><div class="dialogue">' + "".join(rendered) + "</div>")
+    return core.section("p3-freetalk", "Your real answer", "自分の答え", f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span><span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p><div class="tutor-note">React naturally and follow the most interesting detail. Invite today\'s pattern only if it fits.</div><div class="dialogue">' + "".join(rendered) + "</div>")
 
 
 def page_id(page):
     match = re.search(r'data-page-id="([^"]+)"', page)
     return match.group(1) if match else ""
+
+
+def clarify_pattern_intro(page, number, part):
+    meaning_en, meaning_ja = SPECS[number]["meanings"][part - 1]
+    return page.replace(
+        "First, let's practice this pattern." if part == 1 else "Next, let's practice this pattern.",
+        f"{meaning_en} Please read the title aloud.",
+    ).replace(
+        "まず、このパターンを練習しましょう。" if part == 1 else "次に、このパターンを練習しましょう。",
+        f"{meaning_ja} タイトルを声に出して読んでください。",
+    )
 
 
 def customize_pages(number, data, pages):
@@ -604,6 +615,10 @@ def customize_pages(number, data, pages):
         pid = page_id(page)
         if pid in omitted:
             continue
+        if pid == "part1-intro":
+            page = clarify_pattern_intro(page, number, 1)
+        elif pid == "part2-intro":
+            page = clarify_pattern_intro(page, number, 2)
         if pid == "part3-intro":
             result.append(support_page(number))
             result.extend(spiral_pages(number))

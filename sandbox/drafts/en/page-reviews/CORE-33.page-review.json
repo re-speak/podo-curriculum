@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-daily-life-and-past/lessons/33-did-you-have-a-good-time/lesson.html",
-  "lessonSha256": "64e395c42f34f150583346074e0656e3ec4faaf8ba91a96adca98b85ef5fdf88",
+  "lessonSha256": "2d14933c1fc6ae60a2331a263e5fd45e77e713b9fc55a7d1b69e9ee528831956",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -18,7 +18,7 @@
       "learnerAction": "Read the displayed lesson title aloud once after hearing the can-do.",
       "tutorAction": "State the can-do, have the learner read the title once, then move on.",
       "targetOrPrompt": "Visible instruction/model: data-page-id=\"lesson-goal\" data-act=\"Everyday English\"> GOAL Did you have a good time? (楽しかったですか？) Ask whether something happened and answer. Please read the title aloud.過去の出来事についてたずね、答えましょう。タイトルを声に出して読んでください。 Have the learner read the title once, then move on. <div class=\"section\"",
-      "learningTarget": "Goal orientation for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Goal orientation for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail. in CORE-33: Did carries the past, so keep the main verb plain. Then Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—goal orientation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail during goal orientation, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -28,7 +28,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -42,7 +42,7 @@
       "learnerAction": "Say the three familiar English words shown on the page.",
       "tutorAction": "Listen to the three known words; do not turn this into a new-vocabulary lesson.",
       "targetOrPrompt": "Visible instruction/model: data-page-id=\"words-you-know\">Words you know (知っている単語)Say the three familiar words in English.知っている3つの単語を英語で言いましょう。コンサート→concertムービー→movieサム→Sam <div class=\"transition-page\"",
-      "learningTarget": "Known-word activation for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Known-word activation for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail. in CORE-33: Did carries the past, so keep the main verb plain. Then Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—known-word activation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail during known-word activation, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -52,7 +52,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -65,8 +65,8 @@
       "pageId": "part1-intro",
       "learnerAction": "Read the displayed Pattern 1 title aloud once and get ready for the next activity.",
       "tutorAction": "Introduce Pattern 1 in one line, have the learner read the title, then move on.",
-      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part1-intro\" data-act=\"Pattern 1\">PART 1Did you have a good time?Did carries the past, so keep the main verb plain. Please read the title aloud.過去は Did が表すので、主な動詞は原形にします。タイトルを声に出して読んでください。Have the learner read the title once, then move on. <div class=\"section\"",
-      "learningTarget": "Pattern 1 transition for Did you + a plain verb?.",
+      "targetOrPrompt": "Exact visible instruction: Did carries the past, so keep the main verb plain. Please read the title aloud. | 過去は Did が表すので、主な動詞は原形にします。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition for Did you + a plain verb?. in CORE-33: Did carries the past, so keep the main verb plain.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 transition, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -76,7 +76,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -90,7 +90,7 @@
       "learnerAction": "Read every complete Pattern 1 example aloud after the brief meaning explanation.",
       "tutorAction": "Briefly explain the meaning, then have the learner read each example aloud.",
       "targetOrPrompt": "Highlighted target evidence: Did you | 過ごしましたか | Did you | 見ましたか | Did you | 行きましたか",
-      "learningTarget": "Pattern 1 meaning and model for Did you + a plain verb?.",
+      "learningTarget": "Pattern 1 meaning and model for Did you + a plain verb?. in CORE-33: Did carries the past, so keep the main verb plain.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 meaning and model, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -100,7 +100,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Did you",
@@ -121,7 +121,7 @@
       "learnerAction": "Read every complete Pattern 1 sentence aloud.",
       "tutorAction": "Listen to each complete sentence; model only when help is actually needed.",
       "targetOrPrompt": "Highlighted target evidence: Did you | 過ごしましたか | Did you | 見ましたか | Did you | 行きましたか | Did you | 会いましたか",
-      "learningTarget": "Pattern 1 complete-sentence read-aloud for Did you + a plain verb?.",
+      "learningTarget": "Pattern 1 complete-sentence read-aloud for Did you + a plain verb?. in CORE-33: Did carries the past, so keep the main verb plain.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 complete-sentence read-aloud, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -131,7 +131,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Did you",
@@ -154,7 +154,7 @@
       "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
       "tutorAction": "Explain the displayed operation briefly and check that the learner can locate it in the examples.",
       "targetOrPrompt": "Visible instruction/model: data-page-id=\"p1-rule\">See the operation (形の変化を見よう)Did carries the past, so keep the main verb plain.過去は Did が表すので、主な動詞は原形にします。Did carries the past, so keep the main verb plain.Pattern 1パターン1Did you have a good time?Did you see the movie? <div class=\"section\"",
-      "learningTarget": "Pattern 1 form explanation for Did you + a plain verb?.",
+      "learningTarget": "Pattern 1 form explanation for Did you + a plain verb?. in CORE-33: Did carries the past, so keep the main verb plain.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 form explanation, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -164,7 +164,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -178,7 +178,7 @@
       "learnerAction": "Choose the option matching the Japanese, then read the entire completed Pattern 1 sentence aloud.",
       "tutorAction": "After each choice, have the learner read the whole completed sentence before moving on.",
       "targetOrPrompt": "Exact contrasts: have vs had | see vs saw | go vs went | meet vs met; highlighted cues: 過ごしましたか | 見ましたか | 行きましたか | 会いましたか",
-      "learningTarget": "Pattern 1 discriminating choice for Did you + a plain verb?.",
+      "learningTarget": "Pattern 1 discriminating choice for Did you + a plain verb?. in CORE-33: Did carries the past, so keep the main verb plain.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 discriminating choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 discriminating choice, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -188,7 +188,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "過ごしましたか",
@@ -207,7 +207,7 @@
       "learnerAction": "Say every complete Pattern 1 sentence aloud, including all missing words.",
       "tutorAction": "Type only the missing words exactly as the learner says them.",
       "targetOrPrompt": "Exact answers: Did you | Did you | Did you | Did you",
-      "learningTarget": "Pattern 1 controlled retrieval for Did you + a plain verb?.",
+      "learningTarget": "Pattern 1 controlled retrieval for Did you + a plain verb?. in CORE-33: Did carries the past, so keep the main verb plain.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 controlled retrieval, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -217,7 +217,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "過ごしましたか",
@@ -241,7 +241,7 @@
       "learnerAction": "Read each Japanese cue, then say the complete Pattern 1 sentence in English.",
       "tutorAction": "Type each complete English sentence exactly as the learner says it.",
       "targetOrPrompt": "Exact answers: Did you have a good time? | Did you see the movie? | Did you go to the concert? | Did you meet Sam?; exact lexical support: 楽しい時間:good time | 映画:movie | コンサート:concert | サム:Sam; support stage: supported",
-      "learningTarget": "Pattern 1 supported whole-sentence production for Did you + a plain verb?.",
+      "learningTarget": "Pattern 1 supported whole-sentence production for Did you + a plain verb?. in CORE-33: Did carries the past, so keep the main verb plain.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 supported whole-sentence production, before the lesson increases independence.",
       "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (楽しい時間:good time | 映画:movie | コンサート:concert | サム:Sam); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
@@ -251,7 +251,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -274,8 +274,8 @@
       "pageId": "p1-write",
       "learnerAction": "Say one personally meaningful Pattern 1 sentence using the exact prompt.",
       "tutorAction": "Let the learner answer aloud, react naturally, then capture and correct only what is useful.",
-      "targetOrPrompt": "Exact learner prompt/turns: Now use “Did you ___?” to ask me about one past event.",
-      "learningTarget": "Pattern 1 communicative production for Did you + a plain verb?.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “Did you ___?” to ask me about one past event. Lexical hint(s): 楽しい時間:good time | 映画:movie | コンサート:concert",
+      "learningTarget": "Pattern 1 communicative production for Did you + a plain verb?. in CORE-33 through the exact current prompt: Now use “Did you ___?” to ask me about one past event.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Did you + a plain verb? during Pattern 1 communicative production, before the lesson increases independence.",
       "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (楽しい時間:good time | 映画:movie | コンサート:concert); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
@@ -285,7 +285,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -304,8 +304,8 @@
       "pageId": "part2-intro",
       "learnerAction": "Read the displayed Pattern 2 title aloud once and get ready for the next activity.",
       "tutorAction": "Introduce Pattern 2 in one line, have the learner read the title, then move on.",
-      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part2-intro\" data-act=\"Pattern 2\">PART 2Yes, we did. It was great.Use Yes, we did or No, we didn't, then add one past detail. Please read the title aloud.Yes, we did または No, we didn't で答え、そのあとに過去の情報を一つ加えます。タイトルを声に出して読んでください。Have the learner read the title once, then move on. <div class=\"section\"",
-      "learningTarget": "Pattern 2 transition for Yes, we did / No, we didn't + one past detail.",
+      "targetOrPrompt": "Exact visible instruction: Use Yes, we did or No, we didn't, then add one past detail. Please read the title aloud. | Yes, we did または No, we didn't で答え、そのあとに過去の情報を一つ加えます。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition for Yes, we did / No, we didn't + one past detail. in CORE-33: Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 transition, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -315,7 +315,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -329,7 +329,7 @@
       "learnerAction": "Read every complete Pattern 2 example aloud after the brief meaning explanation.",
       "tutorAction": "Briefly explain the meaning, then have the learner read each example aloud.",
       "targetOrPrompt": "Highlighted target evidence: Yes, we did. | はい、楽しかったです | No, we didn't. | いいえ、行けませんでした | Yes, we did. | はい、楽しかったです",
-      "learningTarget": "Pattern 2 meaning and model for Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Pattern 2 meaning and model for Yes, we did / No, we didn't + one past detail. in CORE-33: Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 meaning and model, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -339,7 +339,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Yes, we did.",
@@ -360,7 +360,7 @@
       "learnerAction": "Read every complete Pattern 2 sentence aloud.",
       "tutorAction": "Listen to each complete sentence; model only when help is actually needed.",
       "targetOrPrompt": "Highlighted target evidence: Yes, we did. | はい、楽しかったです | No, we didn't. | いいえ、行けませんでした | Yes, we did. | はい、楽しかったです | No, we didn't. | いいえ、行きませんでした",
-      "learningTarget": "Pattern 2 complete-sentence read-aloud for Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Pattern 2 complete-sentence read-aloud for Yes, we did / No, we didn't + one past detail. in CORE-33: Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 complete-sentence read-aloud, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -370,7 +370,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Yes, we did.",
@@ -393,7 +393,7 @@
       "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
       "tutorAction": "Explain the displayed operation briefly and check that the learner can locate it in the examples.",
       "targetOrPrompt": "Visible instruction/model: data-page-id=\"p2-rule\">See the operation (形の変化を見よう)Use Yes, we did or No, we didn't, then add one past detail.Yes, we did または No, we didn't で答え、そのあとに過去の情報を一つ加えます。Use Yes, we did or No, we didn't, then add one past detail.Pattern 2パターン2Yes, we did. It was great.No, we didn't. We missed it. <div class=\"section\"",
-      "learningTarget": "Pattern 2 form explanation for Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Pattern 2 form explanation for Yes, we did / No, we didn't + one past detail. in CORE-33: Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 form explanation, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -403,7 +403,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -417,7 +417,7 @@
       "learnerAction": "Choose the option matching the Japanese, then read the entire completed Pattern 2 sentence aloud.",
       "tutorAction": "After each choice, have the learner read the whole completed sentence before moving on.",
       "targetOrPrompt": "Exact contrasts: did vs didn't | didn't vs did | did vs didn't | didn't vs did; highlighted cues: はい | いいえ | はい | いいえ",
-      "learningTarget": "Pattern 2 discriminating choice for Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Pattern 2 discriminating choice for Yes, we did / No, we didn't + one past detail. in CORE-33: Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 discriminating choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 discriminating choice, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -427,7 +427,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "はい",
@@ -446,7 +446,7 @@
       "learnerAction": "Say every complete Pattern 2 sentence aloud, including all missing words.",
       "tutorAction": "Type only the missing words exactly as the learner says them.",
       "targetOrPrompt": "Exact answers: Yes, we did. | No, we didn't. | Yes, we did. | No, we didn't.",
-      "learningTarget": "Pattern 2 controlled retrieval for Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Pattern 2 controlled retrieval for Yes, we did / No, we didn't + one past detail. in CORE-33: Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 controlled retrieval, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -456,7 +456,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "はい、楽しかったです",
@@ -480,7 +480,7 @@
       "learnerAction": "Read each Japanese cue, then say the complete Pattern 2 sentence in English.",
       "tutorAction": "Type each complete English sentence exactly as the learner says it.",
       "targetOrPrompt": "Exact answers: Yes, we did. It was great. | No, we didn't. We missed it. | Yes, we did. It was interesting. | No, we didn't. We stayed home.; exact lexical support: 最高:great | 間に合わなかった:missed it | 面白い:interesting | 家にいた:stayed home; support stage: supported",
-      "learningTarget": "Pattern 2 supported whole-sentence production for Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Pattern 2 supported whole-sentence production for Yes, we did / No, we didn't + one past detail. in CORE-33: Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 supported whole-sentence production, before the lesson increases independence.",
       "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (最高:great | 間に合わなかった:missed it | 面白い:interesting | 家にいた:stayed home); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
@@ -490,7 +490,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -513,8 +513,8 @@
       "pageId": "p2-write",
       "learnerAction": "Say one personally meaningful Pattern 2 sentence using the exact prompt.",
       "tutorAction": "Let the learner answer aloud, react naturally, then capture and correct only what is useful.",
-      "targetOrPrompt": "Exact learner prompt/turns: Now use “Yes, we did” or “No, we didn't,” then add one true detail.",
-      "learningTarget": "Pattern 2 communicative production for Yes, we did / No, we didn't + one past detail.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “Yes, we did” or “No, we didn't,” then add one true detail. Lexical hint(s): 最高:great | 間に合わなかった:missed it | 面白い:interesting",
+      "learningTarget": "Pattern 2 communicative production for Yes, we did / No, we didn't + one past detail. in CORE-33 through the exact current prompt: Now use “Yes, we did” or “No, we didn't,” then add one true detail.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle Yes, we did / No, we didn't + one past detail during Pattern 2 communicative production, before the lesson increases independence.",
       "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (最高:great | 間に合わなかった:missed it | 面白い:interesting); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
@@ -524,7 +524,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -544,7 +544,7 @@
       "learnerAction": "Get ready to use both patterns in one conversation.",
       "tutorAction": "Introduce the conversation in one line, then move directly into the role-play.",
       "targetOrPrompt": "Visible instruction/model: data-page-id=\"part3-intro\" data-act=\"Conversation\">PART 3Use it in a conversation (会話で使おう)Now, let's use both patterns in a conversation.では、二つのパターンを会話で使ってみましょう。Introduce the conversation, then move on. <div class=\"section\"",
-      "learningTarget": "Conversation transition for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Conversation transition for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail. in CORE-33: Did carries the past, so keep the main verb plain. Then Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—conversation transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail during conversation transition, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -554,7 +554,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -568,7 +568,7 @@
       "learnerAction": "Take the Me role and read every learner line aloud in the complete conversation.",
       "tutorAction": "Take the named partner role and read only the partner lines.",
       "targetOrPrompt": "Highlighted target evidence: Did you | 過ごしましたか | Yes, we did. | はい、楽しかったです",
-      "learningTarget": "Scripted role-play for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Scripted role-play for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail. in CORE-33: Did carries the past, so keep the main verb plain. Then Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—scripted role-play—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail during scripted role-play, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -578,7 +578,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Did you",
@@ -597,7 +597,7 @@
       "learnerAction": "Take the Me role and say each complete learner line, including the missing words.",
       "tutorAction": "Take the partner role and type only the missing words the learner says.",
       "targetOrPrompt": "Exact answers: Did you | Yes, we did.",
-      "learningTarget": "Role-play retrieval for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Role-play retrieval for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail. in CORE-33: Did carries the past, so keep the main verb plain. Then Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—role-play retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail during role-play retrieval, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -607,7 +607,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -623,8 +623,8 @@
       "pageId": "p3-freetalk",
       "learnerAction": "Answer the relevant real-life question in your own words, then ask the tutor back.",
       "tutorAction": "Ask the exact question, follow the most interesting detail, and give a brief real answer when asked back.",
-      "targetOrPrompt": "Exact learner prompt/turns: What was the most enjoyable thing you did recently? | How about you?",
-      "learningTarget": "Reciprocal free talk for What was the most enjoyable thing you did recently?.",
+      "targetOrPrompt": "Exact learner prompt(s): What would make an ordinary day more enjoyable for you? | How about you?",
+      "learningTarget": "Reciprocal free talk for What was the most enjoyable thing you did recently?. in CORE-33 through the exact current prompt: What would make an ordinary day more enjoyable for you? | How about you?",
       "pedagogicalValue": "This page has one distinct job—reciprocal free talk—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle What was the most enjoyable thing you did recently? during reciprocal free talk, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -634,14 +634,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What was the most enjoyable thing you did recently?",
+          "What would make an ordinary day more enjoyable for you?",
           "How about you?"
         ]
       }
@@ -651,7 +651,7 @@
       "learnerAction": "Take the Me role and complete every learner line in the new situation.",
       "tutorAction": "Take the named partner role and keep the exchange moving naturally.",
       "targetOrPrompt": "Exact answers: Did you | Yes, we did.",
-      "learningTarget": "New-situation transfer for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "New-situation transfer for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail. in CORE-33: Did carries the past, so keep the main verb plain. Then Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—new-situation transfer—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail during new-situation transfer, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -661,7 +661,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -678,7 +678,7 @@
       "learnerAction": "Compare the two conversational expressions and choose by meaning.",
       "tutorAction": "Explain the contrast briefly, then ask which expression fits each meaning.",
       "targetOrPrompt": "Visible instruction/model: data-page-id=\"native-tip\">How was it? (How was it?)After a yes answer, ask for the person's impression with How was it.Yes の答えのあと、How was it? で自然に感想を聞けます。Check whether it happened起きたか確認Did you see the movie?映画を見ましたか？Pick by meaning 意味で選ぶAsk for an impression感想を聞くHow was it?どうでしたか？ ← —— T →",
-      "learningTarget": "Meaning-based nuance choice for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail.",
+      "learningTarget": "Meaning-based nuance choice for integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail. in CORE-33: Did carries the past, so keep the main verb plain. Then Use Yes, we did or No, we didn't, then add one past detail.",
       "pedagogicalValue": "This page has one distinct job—meaning-based nuance choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
       "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of Did you + a plain verb? and Yes, we did / No, we didn't + one past detail during meaning-based nuance choice, before the lesson increases independence.",
       "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
@@ -688,7 +688,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

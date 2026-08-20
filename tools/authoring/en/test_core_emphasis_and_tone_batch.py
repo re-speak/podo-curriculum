@@ -227,6 +227,7 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
                 frame = batch.WRITE_FRAMES[number][part - 1]
                 self.assertTrue(english.startswith(f'Use “{frame}” to '), (number, part, english))
                 self.assertTrue(japanese.startswith(f'「{frame}」を使って、'), (number, part, japanese))
+                self.assertNotIn("or say", english.casefold(), (number, part, english))
                 _, source = batch.build(number, batch.LESSONS[number])
                 page = dict(check_deck.pages(source))[f"p{part}-write"]
                 self.assertIn(shared_core.esc(english), page, (number, part))
@@ -237,6 +238,17 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
                 }
                 self.assertFalse(menu_values & fixed_frame_chips,
                                  (number, part, menu_values & fixed_frame_chips))
+
+                intro = dict(check_deck.pages(source))[f"part{part}-intro"]
+                meaning_en, meaning_ja = spec["meanings"][part - 1]
+                self.assertIn(meaning_en, intro, (number, part))
+                self.assertIn(shared_core.esc(meaning_ja), intro, (number, part))
+                self.assertIn("Please read the title aloud.", intro, (number, part))
+
+        self.assertEqual(
+            batch.FREE_TALK[112][0],
+            "Which tone is easiest to misunderstand in a message: short, direct, or vague? Why?",
+        )
 
     def test_vocabulary_is_parseable_and_every_hint_is_declared(self):
         for number, data in batch.LESSONS.items():
@@ -370,7 +382,7 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
             page = dict(check_deck.pages(source))["p3-freetalk"]
             self.assertIn(shared_core.esc(scene[0][3]), page, number)
             self.assertIn(shared_core.esc(scene[2][3]), page, number)
-            self.assertIn("Use today's pattern only if it fits", page, number)
+            self.assertIn("Invite today's pattern only if it fits", page, number)
 
     def test_rendered_translation_role_and_target_contracts_are_explicit(self):
         for number, data in batch.LESSONS.items():

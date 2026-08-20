@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-experience-and-ideas/lessons/52-ive-been-working-all-morning/lesson.html",
-  "lessonSha256": "7d0dee60d1286e4296040c39ae6d1ce03eb45df2ea14805b9d015b97eefd0ac1",
+  "lessonSha256": "c6df4e23d5463b6dd99d406c5382c800090b2001709d228f8debba34c3173154",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -18,7 +18,7 @@
       "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
       "tutorAction": "State the can-do, have the learner read the title once, then move on.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "goal orientation for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "goal orientation in CORE-52: Use this when the continuing activity itself explains the situation now. Then Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—goal orientation—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -28,7 +28,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -42,7 +42,7 @@
       "learnerAction": "Say the three familiar English words shown.",
       "tutorAction": "Listen briefly and treat these as activation, not new teaching.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "known-word activation for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "known-word activation in CORE-52: Use this when the continuing activity itself explains the situation now. Then Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—known-word activation—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -52,7 +52,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -65,8 +65,8 @@
       "pageId": "part1-intro",
       "learnerAction": "Read the Pattern 1 title aloud once.",
       "tutorAction": "Introduce Pattern 1 in one line, then move on.",
-      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "Pattern 1 transition for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "targetOrPrompt": "Exact visible instruction: Use this when the continuing activity itself explains the situation now. Please read the title aloud. | 今の状況を説明するうえで、続いている活動そのものが大事なときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -76,7 +76,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -90,7 +90,7 @@
       "learnerAction": "Read the complete Pattern 1 examples aloud after the meaning explanation.",
       "tutorAction": "Explain the communicative use briefly, then have the learner read each example.",
       "targetOrPrompt": "Highlighted target: I've been | since | 9時から | ずっと働いています | I've been | since | 朝食のあとから | ずっと勉強しています | I've been | since | 8時から | ずっと掃除しています",
-      "learningTarget": "Pattern 1 meaning and model for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 1 meaning and model in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -100,7 +100,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "I've been",
@@ -127,7 +127,7 @@
       "learnerAction": "Read every complete Pattern 1 sentence aloud.",
       "tutorAction": "Listen and model only if help is needed.",
       "targetOrPrompt": "Highlighted target: I've been | since | 9時から | ずっと働いています | I've been | since | 朝食のあとから | ずっと勉強しています | I've been | since | 8時から | ずっと掃除しています | I've been | since | 正午から | ずっと待っています",
-      "learningTarget": "Pattern 1 read-aloud for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 1 read-aloud in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -137,7 +137,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "I've been",
@@ -168,7 +168,7 @@
       "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
       "tutorAction": "Explain the displayed operation briefly and check it in the examples.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "Pattern 1 form explanation for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 1 form explanation in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -178,7 +178,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -192,7 +192,7 @@
       "learnerAction": "Choose the form that matches each Japanese meaning, then read the completed sentence aloud.",
       "tutorAction": "Check each decision and require the complete sentence before moving on.",
       "targetOrPrompt": "Highlighted target: ずっと働いています | ずっと勉強しています | ずっと掃除しています | ずっと待っています",
-      "learningTarget": "Pattern 1 meaning contrast for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 1 meaning contrast in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning contrast—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning contrast with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -202,7 +202,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "ずっと働いています",
@@ -221,7 +221,7 @@
       "learnerAction": "Put each sentence in order, then say the whole sentence aloud.",
       "tutorAction": "Let the learner order and say each sentence before offering help.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "Pattern 1 word-order retrieval for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -231,7 +231,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -245,7 +245,7 @@
       "learnerAction": "Say each whole sentence aloud, including the missing target words.",
       "tutorAction": "Listen first, then type only the target words the learner says.",
       "targetOrPrompt": "Highlighted target: 9時から | ずっと働いています | 朝食のあとから | ずっと勉強しています | 8時から | ずっと掃除しています | 正午から | ずっと待っています Blank answers: I've been | since | I've been | since | I've been | since | I've been | since",
-      "learningTarget": "Pattern 1 controlled target retrieval for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -255,7 +255,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "9時から",
@@ -287,7 +287,7 @@
       "learnerAction": "Say each complete English sentence from the Japanese cue, using the lexical hints when needed.",
       "tutorAction": "Let the learner produce the sentence; type the supported lexical answer only after they speak.",
       "targetOrPrompt": "Blank answers: I've been working since nine. | I've been studying since breakfast. | I've been cleaning since eight. | I've been waiting since noon. Lexical hints: 働く:work | 朝食:breakfast | 掃除する:clean | 正午:noon",
-      "learningTarget": "Pattern 1 supported translation for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 1 supported translation in CORE-52: Use this when the continuing activity itself explains the situation now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
@@ -297,7 +297,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -320,8 +320,8 @@
       "pageId": "p1-write",
       "learnerAction": "Use the exact visible frame to perform the named communicative job aloud.",
       "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
-      "targetOrPrompt": "Exact learner prompt: Use “I've been ___ since ___” to say what has continued today and when it started. Lexical hints: 働く:work | 勉強する:study | 掃除する:clean",
-      "learningTarget": "Pattern 1 personal production for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “I've been ___ since ___” to say what has continued today and when it started. Lexical hint(s): 働く:work | 勉強する:study | 掃除する:clean",
+      "learningTarget": "Pattern 1 personal production in CORE-52 through the exact current prompt: Use “I've been ___ since ___” to say what has continued today and when it started.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 personal production—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 personal production with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
@@ -331,7 +331,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -350,8 +350,8 @@
       "pageId": "part2-intro",
       "learnerAction": "Read the Pattern 2 title aloud once.",
       "tutorAction": "Introduce Pattern 2 in one line, then move on.",
-      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "Pattern 2 transition for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "targetOrPrompt": "Exact visible instruction: Use this after the cause to name the effect you can see or feel now. Please read the title aloud. | 原因を話したあと、今見える・感じる結果を伝えるときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -361,7 +361,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -375,7 +375,7 @@
       "learnerAction": "Read the complete Pattern 2 examples aloud after the meaning explanation.",
       "tutorAction": "Explain the communicative use briefly, then have the learner read each example.",
       "targetOrPrompt": "Highlighted target: That's why I'm | だから疲れ切っています | That's why I'm | だからおなかがすいています | That's why I'm | だから疲れています",
-      "learningTarget": "Pattern 2 meaning and model for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 2 meaning and model in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -385,7 +385,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "That's why I'm",
@@ -406,7 +406,7 @@
       "learnerAction": "Read every complete Pattern 2 sentence aloud.",
       "tutorAction": "Listen and model only if help is needed.",
       "targetOrPrompt": "Highlighted target: That's why I'm | だから疲れ切っています | That's why I'm | だからおなかがすいています | That's why I'm | だから疲れています | That's why I'm | だから遅れています",
-      "learningTarget": "Pattern 2 read-aloud for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 2 read-aloud in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -416,7 +416,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "That's why I'm",
@@ -439,7 +439,7 @@
       "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
       "tutorAction": "Explain the displayed operation briefly and check it in the examples.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "Pattern 2 form explanation for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 2 form explanation in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -449,7 +449,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -463,7 +463,7 @@
       "learnerAction": "Choose the form that matches each Japanese meaning, then read the completed sentence aloud.",
       "tutorAction": "Check each decision and require the complete sentence before moving on.",
       "targetOrPrompt": "Highlighted target: 疲れ切っています | 疲れています | 退屈しています | わくわくしています",
-      "learningTarget": "Pattern 2 meaning contrast for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 2 meaning contrast in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning contrast—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning contrast with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -473,7 +473,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "疲れ切っています",
@@ -492,7 +492,7 @@
       "learnerAction": "Put each sentence in order, then say the whole sentence aloud.",
       "tutorAction": "Let the learner order and say each sentence before offering help.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "Pattern 2 word-order retrieval for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -502,7 +502,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -516,7 +516,7 @@
       "learnerAction": "Say each whole sentence aloud, including the missing target words.",
       "tutorAction": "Listen first, then type only the target words the learner says.",
       "targetOrPrompt": "Highlighted target: だから疲れ切っています | だからおなかがすいています | だから疲れています | だから遅れています Blank answers: That's why I'm | That's why I'm | That's why I'm | That's why I'm",
-      "learningTarget": "Pattern 2 controlled target retrieval for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -526,7 +526,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "だから疲れ切っています",
@@ -550,7 +550,7 @@
       "learnerAction": "Say each complete English sentence from the Japanese cue, using the lexical hints when needed.",
       "tutorAction": "Let the learner produce the sentence; type the supported lexical answer only after they speak.",
       "targetOrPrompt": "Blank answers: That's why I'm exhausted. | That's why I'm hungry. | That's why I'm tired. | That's why I'm late. Lexical hints: 疲れ切った:exhausted | 空腹の:hungry | 疲れた:tired | 遅れた:late",
-      "learningTarget": "Pattern 2 supported translation for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "Pattern 2 supported translation in CORE-52: Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
@@ -560,7 +560,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -583,8 +583,8 @@
       "pageId": "p2-write",
       "learnerAction": "Use the exact visible frame to perform the named communicative job aloud.",
       "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
-      "targetOrPrompt": "Exact learner prompt: Use “That's why I'm ___” to add one true effect, or say there is no effect to report. Lexical hints: 疲れ切った:exhausted | 空腹の:hungry | 疲れた:tired",
-      "learningTarget": "Pattern 2 personal production for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “That's why I'm ___” to explain how an imagined activity affects you. Lexical hint(s): 疲れ切った:exhausted | 空腹の:hungry | 疲れた:tired",
+      "learningTarget": "Pattern 2 personal production in CORE-52 through the exact current prompt: Use “That's why I'm ___” to explain how an imagined activity affects you.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 personal production—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 personal production with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
@@ -594,7 +594,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -605,7 +605,7 @@
         ],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Use “That's why I'm ___” to add one true effect, or say there is no effect to report."
+          "Use “That's why I'm ___” to explain how an imagined activity affects you."
         ]
       }
     },
@@ -614,7 +614,7 @@
       "learnerAction": "Read the conversation goal and get ready to use both patterns.",
       "tutorAction": "Introduce the conversation in one line, then move on.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "conversation transition for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "conversation transition in CORE-52: Use this when the continuing activity itself explains the situation now. Then Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—conversation transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform conversation transition with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -624,7 +624,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -638,7 +638,7 @@
       "learnerAction": "Read the learner role in the model conversation.",
       "tutorAction": "Take the named counterpart role and alternate turns naturally.",
       "targetOrPrompt": "Highlighted target: I've been | since | 9時から | ずっと働いています | That's why I'm | だから疲れ切っています",
-      "learningTarget": "supported role-play for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "supported role-play in CORE-52: Use this when the continuing activity itself explains the situation now. Then Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—supported role-play—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform supported role-play with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -648,7 +648,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "I've been",
@@ -669,7 +669,7 @@
       "learnerAction": "Complete and say the learner lines in the role-play.",
       "tutorAction": "Take the named counterpart role and pause for each learner turn.",
       "targetOrPrompt": "Blank answers: I've been | since | That's why I'm",
-      "learningTarget": "role-play completion for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "role-play completion in CORE-52: Use this when the continuing activity itself explains the situation now. Then Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—role-play completion—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play completion with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -679,7 +679,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -696,8 +696,8 @@
       "pageId": "p3-freetalk",
       "learnerAction": "Answer the tutor's real question, then ask the visible question back.",
       "tutorAction": "Ask the exact question, react naturally, then give a real answer to the ask-back.",
-      "targetOrPrompt": "Exact learner prompt: What kind of activity makes time pass quickly for you? | What about you—what makes time pass quickly?",
-      "learningTarget": "reciprocal free conversation for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "targetOrPrompt": "Exact learner prompt(s): What kind of activity makes time pass quickly for you? | What about you—what makes time pass quickly?",
+      "learningTarget": "reciprocal free conversation in CORE-52 through the exact current prompt: What kind of activity makes time pass quickly for you? | What about you—what makes time pass quickly?",
       "pedagogicalValue": "This page has one distinct job—reciprocal free conversation—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal free conversation with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -707,7 +707,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -724,7 +724,7 @@
       "learnerAction": "Use both patterns in the new role-play.",
       "tutorAction": "Take the explicitly named counterpart role and complete the exchange.",
       "targetOrPrompt": "Blank answers: I've been | since | That's why I'm",
-      "learningTarget": "transfer role-play for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "transfer role-play in CORE-52: Use this when the continuing activity itself explains the situation now. Then Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—transfer role-play—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -734,7 +734,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -752,7 +752,7 @@
       "learnerAction": "Notice the final usage distinction and read the contrasting examples.",
       "tutorAction": "Explain the distinction briefly and check the examples.",
       "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
-      "learningTarget": "usage nuance for CORE-52: Use this when the continuing activity itself explains the situation now. and Use this after the cause to name the effect you can see or feel now.",
+      "learningTarget": "usage nuance in CORE-52: Use this when the continuing activity itself explains the situation now. Then Use this after the cause to name the effect you can see or feel now.",
       "pedagogicalValue": "This page has one distinct job—usage nuance—and advances from noticing toward usable speech without duplicating the adjacent page.",
       "failureDiagnosis": "Difficulty here isolates whether the learner can perform usage nuance with the authored target before the next stage reduces support.",
       "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
@@ -762,7 +762,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact bilingual instruction, target boundaries, answers, lexical support, choices, and dialogue turns were read against the generated page. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

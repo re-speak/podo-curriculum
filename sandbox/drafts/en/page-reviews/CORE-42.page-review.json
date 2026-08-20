@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-plans-and-comparison/lessons/42-dont-you-like-it/lesson.html",
-  "lessonSha256": "1b577c7caf6c4b72ede7d56c059d380377ace43203a89c7808c452aa95cc6450",
+  "lessonSha256": "93b261dd11c87bd322fca7f0b595af63fc2339ef7fd396bb8e0a5fe3f5e9884f",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -18,7 +18,7 @@
       "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
       "tutorAction": "State the can-do, have the learner read the title once, then move on.",
       "targetOrPrompt": "Exact visible instruction/model: Don't you like it? (それ、好きじゃないんですか？) | Answer a negative question without reversing the fact. Please read the title aloud. 否定疑問に、事実を逆にせず答えましょう。タイトルを声に出して読んでください。",
-      "learningTarget": "Goal orientation for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "learningTarget": "Goal orientation for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42: Use I do when the positive fact is true, even after a negative question. Then Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—goal orientation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform goal orientation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -28,7 +28,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -42,7 +42,7 @@
       "learnerAction": "Say the three familiar English words shown.",
       "tutorAction": "Listen to the three known words; keep this as brief activation, not new teaching.",
       "targetOrPrompt": "Exact visible instruction/model: Words you know (知っている単語) | Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
-      "learningTarget": "Known-word activation for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "learningTarget": "Known-word activation for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42: Use I do when the positive fact is true, even after a negative question. Then Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—known-word activation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform known-word activation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -52,7 +52,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -65,8 +65,8 @@
       "pageId": "part1-intro",
       "learnerAction": "Read the Pattern 1 title aloud once.",
       "tutorAction": "Introduce Pattern 1 in one line, have the learner read the title, then move on.",
-      "targetOrPrompt": "Exact visible instruction/model: Actually, I do. I watch it every week. | Use I do when the positive fact is true, even after a negative question. Please read the title aloud. 否定疑問のあとでも、肯定の事実が正しければ I do を使います。タイトルを声に出して読んでください。",
-      "learningTarget": "Pattern 1 transition for Use I do when the positive fact is true, even after a negative question.",
+      "targetOrPrompt": "Exact visible instruction: Use I do when the positive fact is true, even after a negative question. Please read the title aloud. | 否定疑問のあとでも、肯定の事実が正しければ I do を使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition for Use I do when the positive fact is true, even after a negative question. in CORE-42: Use I do when the positive fact is true, even after a negative question.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 transition for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -76,7 +76,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -90,7 +90,7 @@
       "learnerAction": "Read each complete Pattern 1 example aloud after the short meaning explanation.",
       "tutorAction": "Briefly explain Pattern 1's use, then have the learner read each example aloud.",
       "targetOrPrompt": "Highlighted target: Actually, I do. | watch | いえ、好きです。 | 見ています | Actually, I do. | drink | いえ、飲みます。 | 飲んでいます | Actually, I do. | work | いえ、働いています。 | 働いています",
-      "learningTarget": "Pattern 1 meaning and model for Use I do when the positive fact is true, even after a negative question.",
+      "learningTarget": "Pattern 1 meaning and model for Use I do when the positive fact is true, even after a negative question. in CORE-42: Use I do when the positive fact is true, even after a negative question.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -100,7 +100,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Actually, I do.",
@@ -127,7 +127,7 @@
       "learnerAction": "Read every complete Pattern 1 sentence aloud.",
       "tutorAction": "Listen to each sentence; model only if help is needed.",
       "targetOrPrompt": "Highlighted target: Actually, I do. | watch | いえ、好きです。 | 見ています | Actually, I do. | drink | いえ、飲みます。 | 飲んでいます | Actually, I do. | work | いえ、働いています。 | 働いています | Actually, I do. | cook | いえ、作ります。 | 作っています",
-      "learningTarget": "Pattern 1 read-aloud for Use I do when the positive fact is true, even after a negative question.",
+      "learningTarget": "Pattern 1 read-aloud for Use I do when the positive fact is true, even after a negative question. in CORE-42: Use I do when the positive fact is true, even after a negative question.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -137,7 +137,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Actually, I do.",
@@ -168,7 +168,7 @@
       "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
       "tutorAction": "Explain the displayed Pattern 1 operation briefly and check it in the examples.",
       "targetOrPrompt": "Exact visible instruction/model: Answer the fact, not the negative wording (否定形ではなく事実に答える) | Answer the fact: use I do when the positive fact is true. 質問が否定形でも、肯定の事実が正しければ I do で答えます。",
-      "learningTarget": "Pattern 1 form explanation for Use I do when the positive fact is true, even after a negative question.",
+      "learningTarget": "Pattern 1 form explanation for Use I do when the positive fact is true, even after a negative question. in CORE-42: Use I do when the positive fact is true, even after a negative question.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 form explanation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -178,7 +178,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -192,7 +192,7 @@
       "learnerAction": "Put each Pattern 1 sentence in order, then say the whole sentence aloud.",
       "tutorAction": "Let the learner order and say each complete sentence; help only after an attempt.",
       "targetOrPrompt": "Exact visible instruction/model: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。 | 「この番組、好きじゃないんですか？」→ いえ、好きです。毎週見ています。 | 「コーヒー、飲まないんですか？」→ いえ、飲みます。毎朝飲んでいます。 | 「そこで働いていないんですか？」→ いえ、働いています。金曜日はそこで働いています。 | 「これ、作らないんですか？」→ いえ、作ります。家で作っています。",
-      "learningTarget": "Pattern 1 word-order retrieval for Use I do when the positive fact is true, even after a negative question.",
+      "learningTarget": "Pattern 1 word-order retrieval for Use I do when the positive fact is true, even after a negative question. in CORE-42: Use I do when the positive fact is true, even after a negative question.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 word-order retrieval for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -202,7 +202,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -216,7 +216,7 @@
       "learnerAction": "Say each whole Pattern 1 sentence aloud, including every missing word.",
       "tutorAction": "Type only the missing Pattern 1 words exactly as spoken.",
       "targetOrPrompt": "Highlighted target: いえ、好きです。 | 見ています | いえ、飲みます。 | 飲んでいます | いえ、働いています。 | 働いています | いえ、作ります。 | 作っています Exact blank answers: Actually, I do. | watch | Actually, I do. | drink | Actually, I do. | work | Actually, I do. | cook Lexical hints: 見る:watch | 飲む:drink | 働く:work | 料理する:cook",
-      "learningTarget": "Pattern 1 controlled retrieval for Use I do when the positive fact is true, even after a negative question.",
+      "learningTarget": "Pattern 1 controlled retrieval for Use I do when the positive fact is true, even after a negative question. in CORE-42: Use I do when the positive fact is true, even after a negative question.",
       "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 1 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 見る:watch | 飲む:drink | 働く:work | 料理する:cook; the lesson pattern still has to be produced.",
@@ -226,7 +226,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "いえ、好きです。",
@@ -263,7 +263,7 @@
       "learnerAction": "Read each Japanese cue and say the complete Pattern 1 sentence in English.",
       "tutorAction": "Type each complete English sentence exactly as spoken.",
       "targetOrPrompt": "Exact blank answers: Actually, I do. I watch it every week. | Actually, I do. I drink it every morning. | Actually, I do. I work there on Fridays. | Actually, I do. I cook it at home. Lexical hints: 見る:watch | 番組:show | コーヒー:coffee | 働く:work | 金曜日:Friday | 料理する:cook",
-      "learningTarget": "Supported pattern 1 whole-sentence production for Use I do when the positive fact is true, even after a negative question.",
+      "learningTarget": "Supported pattern 1 whole-sentence production for Use I do when the positive fact is true, even after a negative question. in CORE-42: Use I do when the positive fact is true, even after a negative question.",
       "pedagogicalValue": "This page has one distinct job—supported Pattern 1 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 1 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 見る:watch | 番組:show | コーヒー:coffee | 働く:work | 金曜日:Friday | 料理する:cook; the lesson pattern still has to be produced.",
@@ -273,7 +273,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -298,8 +298,8 @@
       "pageId": "p1-write",
       "learnerAction": "Say one personal Pattern 1 sentence that performs the exact communicative job in the prompt.",
       "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
-      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “Actually, I do. I ___” to give one true positive answer. Lexical hints: 見る:watch | コーヒー:coffee | 料理する:cook",
-      "learningTarget": "Communicative pattern 1 production for Use I do when the positive fact is true, even after a negative question.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “Actually, I do. I ___” to give one true positive answer. Lexical hint(s): 見る:watch | コーヒー:coffee | 料理する:cook",
+      "learningTarget": "Communicative pattern 1 production for Use I do when the positive fact is true, even after a negative question. in CORE-42 through the exact current prompt: Now use “Actually, I do. I ___” to give one true positive answer.",
       "pedagogicalValue": "This page has one distinct job—communicative Pattern 1 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 1 production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 見る:watch | コーヒー:coffee | 料理する:cook; the lesson pattern still has to be produced.",
@@ -309,7 +309,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -328,8 +328,8 @@
       "pageId": "part2-intro",
       "learnerAction": "Read the Pattern 2 title aloud once.",
       "tutorAction": "Introduce Pattern 2 in one line, have the learner read the title, then move on.",
-      "targetOrPrompt": "Exact visible instruction/model: No, I don't. I prefer comedies. | Use I don't when the negative fact is true, then add your real preference. Please read the title aloud. 否定の事実が正しければ I don't を使い、本当の好みを続けます。タイトルを声に出して読んでください。",
-      "learningTarget": "Pattern 2 transition for Use I don’t when the negative fact is true, then add your real preference.",
+      "targetOrPrompt": "Exact visible instruction: Use I don't when the negative fact is true, then add your real preference. Please read the title aloud. | 否定の事実が正しければ I don't を使い、本当の好みを続けます。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 transition for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -339,7 +339,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -353,7 +353,7 @@
       "learnerAction": "Read each complete Pattern 2 example aloud after the short meaning explanation.",
       "tutorAction": "Briefly explain Pattern 2's use, then have the learner read each example aloud.",
       "targetOrPrompt": "Highlighted target: I don't. | prefer comedies | はい、好きではありません。 | コメディーのほうが好きです | I don't. | prefer tea | はい、好きではありません。 | 紅茶のほうが好きです | I don't. | prefer the other shop | はい、好きではありません。 | もう一方の店のほうが好きです",
-      "learningTarget": "Pattern 2 meaning and model for Use I don’t when the negative fact is true, then add your real preference.",
+      "learningTarget": "Pattern 2 meaning and model for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 meaning and model for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -363,7 +363,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "I don't.",
@@ -390,7 +390,7 @@
       "learnerAction": "Read every complete Pattern 2 sentence aloud.",
       "tutorAction": "Listen to each sentence; model only if help is needed.",
       "targetOrPrompt": "Highlighted target: I don't. | prefer comedies | はい、好きではありません。 | コメディーのほうが好きです | I don't. | prefer tea | はい、好きではありません。 | 紅茶のほうが好きです | I don't. | prefer the other shop | はい、好きではありません。 | もう一方の店のほうが好きです | I don't. | prefer soup | はい、好きではありません。 | スープのほうが好きです",
-      "learningTarget": "Pattern 2 read-aloud for Use I don’t when the negative fact is true, then add your real preference.",
+      "learningTarget": "Pattern 2 read-aloud for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 read-aloud for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -400,7 +400,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "I don't.",
@@ -431,7 +431,7 @@
       "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
       "tutorAction": "Explain the displayed Pattern 2 operation briefly and check it in the examples.",
       "targetOrPrompt": "Exact visible instruction/model: Use don't for the negative fact (否定の事実には don't) | Use I don't only when the negative fact is true. 否定の事実が正しいときだけ I don't で答えます。",
-      "learningTarget": "Pattern 2 form explanation for Use I don’t when the negative fact is true, then add your real preference.",
+      "learningTarget": "Pattern 2 form explanation for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 form explanation for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -441,7 +441,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -455,7 +455,7 @@
       "learnerAction": "Choose the Pattern 2 form that matches each Japanese meaning, then read the completed sentence aloud.",
       "tutorAction": "Check each choice and have the learner read the entire completed sentence before moving on.",
       "targetOrPrompt": "Highlighted target: 飲みます | はい、好きではありません | 働いています | はい、好きではありません Exact choice contrasts: do vs don't | don't vs do | do vs don't | don't vs do",
-      "learningTarget": "Pattern 2 meaning contrast for Use I don’t when the negative fact is true, then add your real preference.",
+      "learningTarget": "Pattern 2 meaning contrast for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning contrast—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 meaning contrast for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -465,7 +465,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "飲みます",
@@ -484,7 +484,7 @@
       "learnerAction": "Put each Pattern 2 sentence in order, then say the whole sentence aloud.",
       "tutorAction": "Let the learner order and say each complete sentence; help only after an attempt.",
       "targetOrPrompt": "Exact visible instruction/model: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。 | 「ドラマのほうが好きじゃないんですか？」→ はい、好きではありません。コメディーのほうが好きです。 | 「コーヒーのほうが好きじゃないんですか？」→ はい、好きではありません。紅茶のほうが好きです。 | 「この店、好きじゃないんですか？」→ はい、好きではありません。もう一方の店のほうが好きです。 | 「このサラダ、好きじゃないんですか？」→ はい、好きではありません。スープのほうが好きです。",
-      "learningTarget": "Pattern 2 word-order retrieval for Use I don’t when the negative fact is true, then add your real preference.",
+      "learningTarget": "Pattern 2 word-order retrieval for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 word-order retrieval for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -494,7 +494,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -508,7 +508,7 @@
       "learnerAction": "Say each whole Pattern 2 sentence aloud, including every missing word.",
       "tutorAction": "Type only the missing Pattern 2 words exactly as spoken.",
       "targetOrPrompt": "Highlighted target: はい、好きではありません。 | コメディーのほうが好きです | はい、好きではありません。 | 紅茶のほうが好きです | はい、好きではありません。 | もう一方の店のほうが好きです | はい、好きではありません。 | スープのほうが好きです Exact blank answers: I don't. | prefer comedies | I don't. | prefer tea | I don't. | prefer the other shop | I don't. | prefer soup Lexical hints: コメディー:comedies | 紅茶:tea | もう一方の店:the other shop | スープ:soup",
-      "learningTarget": "Pattern 2 controlled retrieval for Use I don’t when the negative fact is true, then add your real preference.",
+      "learningTarget": "Pattern 2 controlled retrieval for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled retrieval—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform Pattern 2 controlled retrieval for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: コメディー:comedies | 紅茶:tea | もう一方の店:the other shop | スープ:soup; the lesson pattern still has to be produced.",
@@ -518,7 +518,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "はい、好きではありません。",
@@ -555,7 +555,7 @@
       "learnerAction": "Read each Japanese cue and say the complete Pattern 2 sentence in English.",
       "tutorAction": "Type each complete English sentence exactly as spoken.",
       "targetOrPrompt": "Exact blank answers: No, I don't. I prefer comedies. | No, I don't. I prefer tea. | No, I don't. I prefer the other shop. | No, I don't. I prefer soup. Lexical hints: 好む:prefer | コメディー:comedy | 好む:prefer | 紅茶:tea | 好む:prefer | 店:shop | 好む:prefer | スープ:soup",
-      "learningTarget": "Supported pattern 2 whole-sentence production for Use I don’t when the negative fact is true, then add your real preference.",
+      "learningTarget": "Supported pattern 2 whole-sentence production for Use I don’t when the negative fact is true, then add your real preference. in CORE-42: Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—supported Pattern 2 whole-sentence production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform supported Pattern 2 whole-sentence production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: 好む:prefer | コメディー:comedy | 好む:prefer | 紅茶:tea | 好む:prefer | 店:shop | 好む:prefer | スープ:soup; the lesson pattern still has to be produced.",
@@ -565,7 +565,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -592,8 +592,8 @@
       "pageId": "p2-write",
       "learnerAction": "Say one personal Pattern 2 sentence that performs the exact communicative job in the prompt.",
       "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
-      "targetOrPrompt": "Exact learner prompt/ask-back: Now use “No, I don't. I prefer ___” to give one true negative answer and your alternative. Lexical hints: コメディー:comedy | 紅茶:tea | スープ:soup",
-      "learningTarget": "Communicative pattern 2 production for Use I don’t when the negative fact is true, then add your real preference.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “No, I don't. I prefer ___” to give one true negative answer and your alternative. Lexical hint(s): コメディー:comedy | 紅茶:tea | スープ:soup",
+      "learningTarget": "Communicative pattern 2 production for Use I don’t when the negative fact is true, then add your real preference. in CORE-42 through the exact current prompt: Now use “No, I don't. I prefer ___” to give one true negative answer and your alternative.",
       "pedagogicalValue": "This page has one distinct job—communicative Pattern 2 production—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform communicative Pattern 2 production for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Only the needed lexical payload is supported by the exact chips: コメディー:comedy | 紅茶:tea | スープ:soup; the lesson pattern still has to be produced.",
@@ -603,7 +603,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -623,7 +623,7 @@
       "learnerAction": "Read the conversation transition and get ready to role-play.",
       "tutorAction": "Introduce the two-pattern conversation briefly, then move on.",
       "targetOrPrompt": "Exact visible instruction/model: Use it in a conversation (会話で使おう) | Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
-      "learningTarget": "Conversation transition for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "learningTarget": "Conversation transition for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42: Use I do when the positive fact is true, even after a negative question. Then Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—conversation transition—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform conversation transition for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -633,7 +633,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -647,7 +647,7 @@
       "learnerAction": "Play Me and read every learner line aloud in the model role-play.",
       "tutorAction": "Take the named partner role and read only the partner lines.",
       "targetOrPrompt": "Highlighted target: Actually, I do. | watch | いえ、好きです。 | 見ています | I don't. | prefer comedies | はい、好きではありません。 | コメディーのほうが好きです",
-      "learningTarget": "Two-pattern model role-play for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "learningTarget": "Two-pattern model role-play for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42: Use I do when the positive fact is true, even after a negative question. Then Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—two-pattern model role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern model role-play for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -657,7 +657,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [
           "Actually, I do.",
@@ -680,7 +680,7 @@
       "learnerAction": "Play Me and say each complete role-play line, including the missing target words.",
       "tutorAction": "Take the named partner role, pause for each Me line, and type only the missing words.",
       "targetOrPrompt": "Exact blank answers: Actually, I do. | watch | I don't. | prefer comedies",
-      "learningTarget": "Two-pattern scaffolded role-play for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "learningTarget": "Two-pattern scaffolded role-play for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42: Use I do when the positive fact is true, even after a negative question. Then Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—two-pattern scaffolded role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform two-pattern scaffolded role-play for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -690,7 +690,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -708,8 +708,8 @@
       "pageId": "p3-freetalk",
       "learnerAction": "Answer the real topic question, react to a follow-up, then ask How about you?.",
       "tutorAction": "Ask the displayed question, follow the most interesting detail, and give a real brief answer when asked back.",
-      "targetOrPrompt": "Exact learner prompt/ask-back: Have you ever misunderstood someone's yes or no? What happened? | How about you?",
-      "learningTarget": "Reciprocal free talk for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "targetOrPrompt": "Exact learner prompt(s): What makes a yes-or-no answer confusing for you? | How about you?",
+      "learningTarget": "Reciprocal free talk for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42 through the exact current prompt: What makes a yes-or-no answer confusing for you? | How about you?",
       "pedagogicalValue": "This page has one distinct job—reciprocal Free Talk—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform reciprocal Free Talk for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -719,14 +719,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you ever misunderstood someone's yes or no? What happened?",
+          "What makes a yes-or-no answer confusing for you?",
           "How about you?"
         ]
       }
@@ -736,7 +736,7 @@
       "learnerAction": "Play Me in the new situation and say each complete line, including the missing target words.",
       "tutorAction": "Take the named partner role and pause for each complete Me line.",
       "targetOrPrompt": "Exact blank answers: Actually, I do. | drink | I don't. | prefer tea",
-      "learningTarget": "Transfer role-play for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "learningTarget": "Transfer role-play for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42: Use I do when the positive fact is true, even after a negative question. Then Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—transfer role-play—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform transfer role-play for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -746,7 +746,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
@@ -765,7 +765,7 @@
       "learnerAction": "Compare the two expressions and choose by intended meaning.",
       "tutorAction": "Briefly explain the practical difference and check the two examples.",
       "targetOrPrompt": "Exact visible instruction/model: Yes or actually? (Yes と actually) | “Yes, I do” answers neutrally. “Actually, I do” gently corrects the other person's expectation. 「Yes, I do」は中立的な答えです。「Actually, I do」は相手の予想をやわらかく訂正します。",
-      "learningTarget": "Pragmatic nuance for answer a negative question from the true fact with I do or I don't, then clarify the real preference",
+      "learningTarget": "Pragmatic nuance for answer a negative question from the true fact with I do or I don't, then clarify the real preference in CORE-42: Use I do when the positive fact is true, even after a negative question. Then Use I don't when the negative fact is true, then add your real preference.",
       "pedagogicalValue": "This page has one distinct job—pragmatic nuance—and moves the learner from noticing toward independent, usable speech rather than repeating the adjacent page.",
       "failureDiagnosis": "Difficulty here diagnoses whether the learner can perform pragmatic nuance for this exact form or communicative meaning before the lesson increases independence.",
       "nonTargetSupport": "Complete bilingual models or cues keep non-target meaning visible; this page does not introduce an unrelated vocabulary-memory test.",
@@ -775,7 +775,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "The exact instruction, bilingual meaning, targets, answers, lexical support, choices, and dialogue turns were read against the generated lesson. Root still owns 360/480 rendering and the formal human-page gate.",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

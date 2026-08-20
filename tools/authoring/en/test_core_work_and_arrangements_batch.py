@@ -166,7 +166,7 @@ class CoreWorkAndArrangementsBatchTests(unittest.TestCase):
             self.assertEqual(page.count("Tutor&#x27;s answer"), 1, number)
             self.assertIn('data-sync-id="live-1"', page, number)
             self.assertIn('data-sync-id="live-3"', page, number)
-            self.assertIn("Use today's pattern only if it fits", page, number)
+            self.assertIn("Invite today's pattern only if it fits", page, number)
 
     def test_translation_write_and_role_contracts_are_explicit(self):
         for number, data in batch.LESSONS.items():
@@ -182,10 +182,24 @@ class CoreWorkAndArrangementsBatchTests(unittest.TestCase):
                 self.assertIn("を使って", japanese, (number, part, japanese))
                 self.assertIn(shared_core.esc(english), pages[f"p{part}-write"])
                 self.assertIn(shared_core.esc(japanese), pages[f"p{part}-write"])
+                intro = pages[f"part{part}-intro"]
+                meaning_en, meaning_ja = batch.SPECS[number]["meanings"][part - 1]
+                self.assertIn(meaning_en, intro, (number, part))
+                self.assertIn(shared_core.esc(meaning_ja), intro, (number, part))
+                self.assertIn("Please read the title aloud.", intro, (number, part))
             for page_id, variant in (("p3-model", "model"), ("p3-complete", "model"), ("in-the-wild", "wild")):
                 role_ja = batch.ROLE_JA[batch.DIALOGUES[number][variant][0]]
                 self.assertIn(role_ja, pages[page_id], (number, page_id))
                 self.assertNotIn("相手役", pages[page_id], (number, page_id))
+
+        self.assertEqual(
+            batch.REVIEWED_LIVE_71_80[71][0],
+            "Which small mistake would bother you more: being a little late or forgetting one detail? Why?",
+        )
+        self.assertEqual(
+            batch.REVIEWED_LIVE_71_80[75][0],
+            "What habit from childhood would you like to bring back—or start now?",
+        )
 
     def test_model_completion_and_transfer_are_resolved_six_turn_scenes(self):
         for number, data in batch.LESSONS.items():
