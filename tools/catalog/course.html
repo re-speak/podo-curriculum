@@ -44,12 +44,17 @@
     --pat-mark: #ffdfc7;
     --pat-ink:  #a4501a;
 
-    --lv-왕초급: #eef8de;
-    --lv-초급:   #d7f0b4;
-    --lv-초중급: #b1e07c;
-    --lv-중급:   #7ac845;
-    --lv-중고급: #3f7a1c;
-    --lv-고급:   #2a5511;
+    /* 레벨 사다리의 초록 램프. 이름이 아니라 자리로 매긴다 — 눈금 이름은 언어마다
+       다르지만(한국어 6단, 영어 CEFR) 옅은 것에서 짙은 것으로 오른다는 규칙은 같다.
+       어느 이름이 몇 번을 쓰는지는 tools/build-catalog.py 가 축 위의 자리로 정해
+       DATA.ramp 에 실어 보낸다. 이름으로 찾던 시절에는 표에 없는 눈금이 조용히
+       투명해졌다. */
+    --lv-1: #eef8de;
+    --lv-2: #d7f0b4;
+    --lv-3: #b1e07c;
+    --lv-4: #7ac845;
+    --lv-5: #3f7a1c;
+    --lv-6: #2a5511;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -320,11 +325,8 @@
 <a class="podo-skip" href="#main">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
-    <nav class="podo-nav" aria-label="커리큘럼 탐색">
-      <a href="../index.html" aria-current="page">한국어</a>
-      <a class="podo-nav__optional" href="https://github.com/re-speak/podo-curriculum">Repository</a>
-    </nav>
+    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <nav class="podo-nav" id="nav" aria-label="커리큘럼 탐색"></nav>
   </div>
 </header>
 <nav class="tabs"><div class="tabs-in" id="tabs"></div></nav>
@@ -374,9 +376,20 @@
 <script>
 const DATA = /*__DATA__*/null;
 const T = DATA.track, LEVELS = DATA.levels;
-const DARK = new Set(["중고급", "고급"]);
+/* 짙은 두 칸 위에서는 글씨가 흰색이어야 읽힌다. */
+const isDark = lv => DATA.ramp[lv] >= 5;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const lvColor = lv => `var(--lv-${lv})`;
+
+/* 이 코스가 어느 언어의 카탈로그에 속하는지는 페이지마다 다르다 — 돌아가는 길과
+   한국어 / English 탭이 그 언어를 가리켜야 한다. */
+{
+  const P = DATA.page;
+  document.getElementById("brand").href = P.home;
+  document.getElementById("nav").innerHTML = P.nav.map(n =>
+    `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}"${
+      n.current ? ` aria-current="page"` : ""}>${esc(n.label)}</a>`).join("");
+}
+const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
 
 document.documentElement.style.setProperty("--ac", T.accent);
 document.documentElement.style.setProperty("--tint", T.tint);

@@ -3,6 +3,12 @@ kind: Course
 metadata:
   # Generated from the approved 2-contextual-english course cut.
   # LANG_TYPE is not stored here: podo-curriculum derives EN from courses/en/.
+  # podo:level: A2-B1
+  # The CEFR band this course's decks carry in <meta name="podo:level">. The
+  # schema forbids extra metadata fields, so it lives as a comment — the same
+  # line tools/new_lesson.py reads, and what tools/build-catalog.py puts on the
+  # level ladder. `difficulty` cannot stand in for it: one BEGINNER covers both
+  # A1 and A2.
   slug: ctx-travel-arrivals-transport
 
 spec:
