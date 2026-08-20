@@ -418,6 +418,47 @@ LIVE_HINTS = {
     91: {1: ("食べ物:food", "全員に食べてもらう:feed everyone", "紙:paper", "20部印刷する:print twenty copies"), 2: ("食べ物:food", "全員に食べてもらう:feed everyone", "紙:paper", "20部印刷する:print twenty copies")},
 }
 
+# Reviewed operating copy and genuine topic conversation for the owned lane.
+FREE_TALK = {
+81:("Which responsibility at work or home takes most of your time?","仕事や家庭で、いちばん時間がかかる担当は何ですか？","What about you—which responsibility takes most of your time?","先生はどうですか？どの担当にいちばん時間がかかりますか？"),
+83:("When someone is unclear, do you ask immediately or think first?","相手の話が曖昧なとき、すぐ聞きますか？まず考えますか？","What about you—when do you ask for clarification?","先生はどうですか？いつ確認しますか？"),
+84:("What makes a request feel polite to you?","どんな依頼なら丁寧だと感じますか？","What about you—what makes a request polite?","先生はどうですか？どんな依頼が丁寧だと思いますか？"),
+85:("Is it easy for you to disagree politely? Why?","丁寧に反対意見を言うのは簡単ですか？なぜですか？","What about you—is polite disagreement easy?","先生はどうですか？丁寧な反対意見は簡単ですか？"),
+86:("How much time do you usually need for an important decision?","大切な判断には普段どのくらい時間が必要ですか？","What about you—how much time do you need?","先生はどうですか？どのくらい時間が必要ですか？"),
+87:("What two things do you compare most often before buying?","買う前によく比べる二つのものは何ですか？","What about you—what do you compare?","先生はどうですか？何を比べますか？"),
+88:("Do you prefer busy events or small quiet ones?","にぎやかなイベントと小さく静かなイベントのどちらが好きですか？","What about you—which kind of event do you prefer?","先生はどうですか？どちらが好きですか？"),
+89:("Have you ever changed the way you described a problem?","問題の説明の仕方を変えたことはありますか？","What about you—how do you reframe problems?","先生はどうですか？問題をどう言い換えますか？"),
+90:("Do most people you know prefer working alone or together?","知り合いの多くは、一人と共同作業のどちらを好みますか？","What about you—what do most people you know prefer?","先生はどうですか？周りの人は何を好みますか？"),
+91:("What resource do you most often run short of: time, money, or energy?","時間・お金・体力のうち、いちばん不足しやすいものは何ですか？","What about you—what do you run short of?","先生はどうですか？何が不足しやすいですか？"),
+}
+ROLE_JA={"New colleague":"新しい同僚","Coordinator":"調整担当者","Coworker":"同僚","Vendor":"取引先","Client":"顧客","Property manager":"物件管理者","Teammate":"チームメンバー","Organizer":"主催者","Manager":"上司","Booking agent":"予約担当者","Friend":"友人","Club leader":"クラブの代表者","Neighbor":"近所の人","Committee member":"委員会のメンバー","Volunteer":"ボランティア"}
+OMIT_CHOICES={81:(1,2),83:(1,2),84:(1,2),85:(1,2),86:(1,2),87:(1,2),88:(1,2),89:(1,2),91:(1,2)}
+for _n in NUMBERS:
+    _writes=[]
+    for _part,(_old_en,_old_ja) in enumerate(SPECS[_n]["writes"],1):
+        _targets=" … ".join(re.findall(r"\{t\}(.*?)\{/t\}",LESSONS[_n][f"p{_part}"][0][0]))
+        _writes.append((f"Use “{_targets}” to {_old_en[0].lower()+_old_en[1:]}",f"「{_targets}」を使って、{_old_ja}"))
+    SPECS[_n]["writes"]=tuple(_writes)
+    _q,_qj,_b,_bj=FREE_TALK[_n]
+    LESSONS[_n]["prompt"]=("Let's talk about this topic. Answer my question, then ask me too.","この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。")
+    LIVE_SCENES[_n]=(("text","other","Tutor",_q,_qj),("input","me","Me","Student's answer","自分の答え"),("text","me","Me",_b,_bj),("input","other","Tutor","Tutor's answer","先生の答え"))
+    LIVE_HINTS[_n]={}
+for _n,_parts in OMIT_CHOICES.items():
+    LESSONS[_n]["omit_choice"]=_parts
+    _c=list(SPECS[_n]["choices"])
+    for _p in _parts:_c[_p-1]=()
+    SPECS[_n]["choices"]=tuple(_c)
+for _n,_part,_repls in (
+    (86,2,{"{t}明日までに{/t}返事してもいいですか":"{t}明日までに{/t}{t}返事してもいいですか{/t}","{t}正午までに{/t}返事してもいいですか":"{t}正午までに{/t}{t}返事してもいいですか{/t}","{t}金曜日までに{/t}返事してもいいですか":"{t}金曜日までに{/t}{t}返事してもいいですか{/t}","{t}3時までに{/t}返事してもいいですか":"{t}3時までに{/t}{t}返事してもいいですか{/t}"}),
+    (87,2,{"{t}遠く及びません{/t}":"{t}遠く{/t}{t}及びません{/t}"}),
+    (89,1,{"{t}というより{/t}遅れです":"{t}というより{/t}{t}遅れです{/t}","{t}というより{/t}一時的な後退です":"{t}というより{/t}{t}一時的な後退です{/t}","{t}というより{/t}提案です":"{t}というより{/t}{t}提案です{/t}","{t}というより{/t}タイミングの問題です":"{t}というより{/t}{t}タイミングの問題です{/t}"}),
+):
+    _rows=[]
+    for _en,_ja,_chips in LESSONS[_n][f"p{_part}"]:
+        for _a,_b in _repls.items(): _ja=_ja.replace(_a,_b)
+        _rows.append((_en,_ja,_chips))
+    LESSONS[_n][f"p{_part}"]=tuple(_rows)
+
 TRANSFER_SCENES = {81: "conference role handoff", 83: "vendor terminology call", 84: "apartment repair rescheduling", 85: "community event proposal review", 86: "group hotel booking", 87: "hotel shuttle versus taxi", 88: "club survey follow-up", 89: "home renovation reclassification", 90: "neighborhood proposal poll", 91: "workshop paper and chairs"}
 
 BRIEF_PRODUCTION_MODELS = {n: (core.strip_marks(LESSONS[n]["p1"][0][0]), core.strip_marks(LESSONS[n]["p2"][0][0])) for n in NUMBERS}
@@ -551,12 +592,14 @@ def translate_page(number, part, pattern):
             f'data-answer="{core.esc(core.strip_marks(english))}" autocomplete="off" spellcheck="false">'
             '</span>' + hint_html((hints,)) + '</div></div>'
         )
-    return core.section(
+    rendered = core.section(
         f"p{part}-translate", "Say it in English", "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Use the vocabulary menu, then say the whole sentence.</span>'
-        '<span class="ja">単語メニューを使って、文をまるごと英語で言いましょう。</span></p>'
+        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span>'
+        '<span class="ja">日本語を見て、英語で言ってみましょう。</span></p>'
+        '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
         + "".join(blocks),
     )
+    return rendered.replace(f'data-page-id="p{part}-translate"',f'data-page-id="p{part}-translate" data-scaffolding-contract="target-v2" data-support-stage="supported"',1)
 
 
 def write_page(number, part, pattern):
@@ -565,11 +608,8 @@ def write_page(number, part, pattern):
         f"p{part}-write", "Make it yours", "自分の文にしよう",
         f'<p class="section-subtitle"><span class="ko">{core.esc(prompt_en)}</span>'
         f'<span class="ja">{core.esc(prompt_ja)}</span></p>'
-        '<div class="task-block"><div class="answer-box tall">'
-        '<span class="answer-label">Your sentence<span class="task">自分の情報で</span></span>'
-        '<span class="answer-space as-input">'
-        f'<textarea class="free-input" data-sync-id="p{part}-write" rows="2" spellcheck="false" maxlength="2000"></textarea>'
-        '</span>' + hint_html(OPEN_MENUS[number][part - 1]) + '</div></div>',
+        '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
+        + core.feedback_compose(f"p{part}-write", hint_html(OPEN_MENUS[number][part - 1])),
     )
 
 
@@ -585,7 +625,8 @@ def live_page(number):
                 f'<span class="translation">{core.esc(japanese)}</span></div></div>'
             )
         else:
-            hints = hint_html(LIVE_HINTS[number].get(index, ())) if side == "me" else ""
+            raw = LIVE_HINTS[number].get(index, ()) if side == "me" else ()
+            hints = hint_html(raw) if raw else ""
             label = "Tutor's answer:" if side == "other" else english
             rendered.append(
                 f'<div class="turn {side}">{avatar}<div class="{bubble}"><div class="answer-box tall">'
@@ -598,7 +639,7 @@ def live_page(number):
         "p3-freetalk", "Your real answer", "自分の答え",
         f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span>'
         f'<span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p>'
-        '<div class="dialogue">' + "".join(rendered) + "</div>",
+        '<div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div><div class="dialogue">' + "".join(rendered) + "</div>",
     )
 
 
@@ -616,7 +657,7 @@ def customize_pages(number, data, pages):
         "p2-write": write_page(number, 2, data["p2"]),
         "p3-freetalk": live_page(number),
     }
-    omitted = {f"p{part}-reorder" for part in data.get("omit_reorder", ())}
+    omitted = {f"p{part}-reorder" for part in data.get("omit_reorder", ())} | {f"p{part}-choose" for part in data.get("omit_choice", ())}
     result = []
     for page in pages:
         pid = page_id(page)
@@ -626,7 +667,16 @@ def customize_pages(number, data, pages):
             result.append(support_page(number))
             if number in SPIRAL_MARKERS:
                 result.append(spiral_page(number))
-        result.append(replacements.get(pid, page))
+        rendered=replacements.get(pid,page)
+        if pid in {"p3-model","p3-complete","in-the-wild"}:
+            variant="wild" if pid=="in-the-wild" else "model"
+            role_ja=ROLE_JA[DIALOGUES[number][variant][0]]
+            rendered=rendered.replace("Please read the Me lines aloud.","Please read your lines aloud.")
+            rendered=rendered.replace("Say each complete Me line","Say each complete line")
+            rendered=rendered.replace("私は相手役をします。Me のセリフを声に出して読んでください。",f"私は{role_ja}です。自分のセリフを声に出して読んでください。")
+            rendered=rendered.replace("私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",f"私は{role_ja}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。")
+            rendered=rendered.replace("私は相手役をします。空欄に入る言葉も含めて、Me のセリフをまるごと言ってください。",f"私は{role_ja}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。")
+        result.append(rendered)
     return result
 
 
@@ -686,9 +736,12 @@ def validate_source():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--lesson",type=int,action="append",choices=NUMBERS)
     args = parser.parse_args()
     validate_source()
+    selected=set(args.lesson or NUMBERS)
     for number in NUMBERS:
+        if number not in selected: continue
         out, text = build(number, LESSONS[number])
         if out.exists() and not args.refresh:
             raise SystemExit(f"refusing to overwrite {out.relative_to(ROOT)}")

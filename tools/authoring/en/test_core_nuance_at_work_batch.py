@@ -18,7 +18,7 @@ import generate_core_nuance_at_work_batch as batch
 import vocabulary
 
 EXPECTED = set(batch.NUMBERS)
-CORE82_SHA256 = "3d479dc2b3e4d87d64538ef19c7733f1939fff39252c298bc09fcf5b46a7e70a"
+CORE82_SHA256 = "bc460191c81adca144f6c4486348830972b97bdc9f40d679319ad7ca7f4583bf"
 
 
 class CoreNuanceAtWorkBatchTests(unittest.TestCase):
@@ -89,8 +89,13 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
 
     def test_smallest_unit_choices_are_explicit_and_solvable(self):
         for number, spec in batch.SPECS.items():
+            omitted=set(batch.LESSONS[number].get("omit_choice",()))
             for part, rows in enumerate(spec["choices"], 1):
+                if part in omitted:
+                    self.assertEqual(rows,(),(number,part))
+                    continue
                 self.assertEqual(len(rows), 4, (number, part))
+                self.assertGreater(len({row[2].casefold() for row in rows}),1,(number,part))
                 for japanese, prefix, correct, distractor, suffix in rows:
                     self.assertIn("{t}", japanese, (number, part))
                     self.assertNotEqual(correct, distractor, (number, part))
@@ -180,60 +185,60 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
 
     def test_live_exchange_is_audio_safe_reciprocal_and_truthful(self):
         roles = (("text", "other", "Tutor"), ("input", "me", "Me"),
-                 ("input", "me", "Me"), ("input", "other", "Tutor"))
+                 ("text", "me", "Me"), ("input", "other", "Tutor"))
         for number, scene in batch.LIVE_SCENES.items():
             self.assertEqual(tuple(turn[:3] for turn in scene), roles, number)
-            self.assertIn(" / ", scene[1][3], number)
-            self.assertIn("／", scene[1][4], number)
+            self.assertEqual(scene[1][3:],("Student's answer","自分の答え"),number)
+            self.assertEqual(scene[3][3:],("Tutor's answer","先生の答え"),number)
+            self.assertTrue(scene[0][3].endswith("?"),number)
+            self.assertTrue(scene[2][3].startswith("What about you"),number)
+            self.assertNotIn("___",scene[0][3]+scene[2][3],number)
             self.assertNotRegex(" ".join(turn[3] for turn in scene).casefold(), r"watch me|look at me|gesture")
             _, source = batch.build(number, batch.LESSONS[number])
             page = dict(check_deck.pages(source))["p3-freetalk"]
             self.assertEqual(page.count('class="turn '), 4, number)
+            self.assertIn(shared_core.esc(scene[0][3]), page, number)
+            self.assertIn(shared_core.esc(scene[2][3]), page, number)
             self.assertIn("Tutor&#x27;s answer:", page, number)
+            self.assertIn("Use today's pattern only if it fits", page, number)
 
     def test_live_menus_fit_real_slots_and_do_not_decorate_fixed_ask_backs(self):
-        expected_turns = {
-            81: {1}, 83: {1, 2}, 84: {1, 2}, 85: {1},
-            86: {1, 2}, 87: {1}, 88: {1, 2}, 89: {1},
-            90: {1}, 91: {1, 2},
-        }
         for number, hints in batch.LIVE_HINTS.items():
-            self.assertEqual(set(hints), expected_turns[number], number)
-            ask_back = batch.LIVE_SCENES[number][2][3]
-            self.assertEqual(2 in hints, "___" in ask_back, (number, ask_back))
-            for turn, menu in hints.items():
-                self.assertGreaterEqual(len(menu), 3, (number, turn))
+            self.assertEqual(hints,{},number)
 
     def test_every_open_production_prompt_has_a_truthful_alternative(self):
         for number, spec in batch.SPECS.items():
             for english, japanese in spec["writes"]:
-                self.assertIn(" or ", english, (number, english))
-                self.assertIn("か", japanese, (number, japanese))
+                self.assertTrue(english.startswith("Use “"),(number,english))
+                self.assertIn("を使って",japanese,(number,japanese))
         for number, data in batch.LESSONS.items():
-            self.assertIn(" or ", data["prompt"][0], number)
-            self.assertIn("か", data["prompt"][1], number)
+            self.assertIn("Answer my question, then ask me too",data["prompt"][0],number)
+            self.assertIn("私にも聞いて",data["prompt"][1],number)
+
+    def test_translation_write_and_role_contracts_are_explicit(self):
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                translate = pages[f"p{part}-translate"]
+                self.assertIn('data-scaffolding-contract="target-v2"', translate, (number, part))
+                self.assertIn('data-support-stage="supported"', translate, (number, part))
+                self.assertGreaterEqual(translate.count('class="hint-chip"'), 4, (number, part))
+                write = pages[f"p{part}-write"]
+                english, japanese = batch.SPECS[number]["writes"][part - 1]
+                self.assertIn(shared_core.esc(english), write, (number, part, english))
+                self.assertIn(shared_core.esc(japanese), write, (number, part, japanese))
+            for page_id, variant in (("p3-model", "model"), ("p3-complete", "model"),
+                                     ("in-the-wild", "wild")):
+                role = batch.DIALOGUES[number][variant][0]
+                self.assertIn(batch.ROLE_JA[role], pages[page_id], (number, page_id, role))
+                self.assertNotIn("相手役", pages[page_id], (number, page_id))
 
     def test_reviewer_found_live_branches_are_complete_and_audible(self):
-        c84 = batch.LIVE_SCENES[84]
-        self.assertIn("If I need the change:", c84[2][3])
-        self.assertIn("If not:", c84[2][3])
-        self.assertIn("anything you'd like me to change?", c84[2][3])
-
-        c85 = batch.LIVE_SCENES[85]
-        self.assertIn("I think the more expensive option is worth choosing.", c85[0][3])
-        self.assertIn("I agree with your view.", c85[1][3])
-
-        c86 = batch.LIVE_SCENES[86]
-        self.assertIn("If I need time:", c86[2][3])
-        self.assertIn("If I can answer now:", c86[2][3])
-        self.assertIn("anything else?", c86[2][3])
-
-        c91 = batch.LIVE_SCENES[91]
-        self.assertIn("one real resource and a specific need", c91[0][3])
-        self.assertIn("We need ___ for ___.", c91[1][3])
-        self.assertIn("There isn't enough ___ to ___.", c91[1][3])
-        self.assertIn("Do you have enough ___ to ___?", c91[2][3])
-        self.assertNotIn("more than enough", batch.LESSONS[91]["prompt"][0])
+        for number,(q,qj,back,backj) in batch.FREE_TALK.items():
+            self.assertEqual(batch.LIVE_SCENES[number][0][3:],(q,qj))
+            self.assertEqual(batch.LIVE_SCENES[number][2][3:],(back,backj))
+            self.assertGreaterEqual(len(q.split()),7,number)
 
     def test_model_completion_and_transfer_are_exact_six_turn_scenes(self):
         for number, data in batch.LESSONS.items():
@@ -273,7 +278,7 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
         self.assertIn("よく分からない点", core85)
         self.assertNotIn("確信を持てない点", core85)
         core87 = str((batch.LESSONS[87], batch.SPECS[87], batch.LIVE_SCENES[87]))
-        self.assertIn("遠く及びません", core87)
+        self.assertIn("遠く{/t}{t}及びません", core87)
         self.assertNotIn("ほど速くはまったくありません", core87)
         _, core88 = batch.build(88, batch.LESSONS[88])
         self.assertIn("昼食を食べるために残った人は", core88)
@@ -326,7 +331,14 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
             controls = re.findall(r'<(?:input|textarea)[^>]+data-sync-id="', source)
             selections = re.findall(r'data-sync-id="[^"]+"[^>]*data-sync-kind="selection"', source)
             self.assertGreater(len(controls), 20, number)
-            self.assertGreaterEqual(len(selections), 8, number)
+            pages=dict(check_deck.pages(source))
+            selection_pages=[chunk for chunk in pages.values() if 'data-sync-kind="selection"' in chunk]
+            self.assertEqual(len(selections),sum(chunk.count('data-sync-kind="selection"') for chunk in selection_pages),number)
+            expected_selection_pages = sum(
+                page_id in pages
+                for page_id in ("p1-choose", "p2-choose", "spiral-review")
+            )
+            self.assertEqual(len(selections), 4 * expected_selection_pages, number)
 
     def test_generation_is_deterministic_in_memory(self):
         first = {number: batch.build(number, batch.LESSONS[number])[1] for number in batch.NUMBERS}
