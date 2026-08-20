@@ -131,6 +131,10 @@ FREETALK_PAGES = [
 ]
 FREETALK_STYLE_EN = "Please choose your preferred discussion style."
 FREETALK_STYLE_JA = "希望する会話の進め方を選んでください。"
+REORDER_SCRIPT_EN = "Put the words in order, then say the whole sentence out loud."
+REORDER_SCRIPT_JA = "単語を順番に並べて、文をまるごと声に出して言ってみましょう。"
+TRANSLATE_SCRIPT_EN = "Read the Japanese, then say it in English."
+TRANSLATE_SCRIPT_JA = "日本語を見て、英語で言ってみましょう。"
 SPAN_TAG = re.compile(r"<span\b[^>]*>|</span>", re.I)
 SPAN_OPEN = re.compile(r"<span\b[^>]*>", re.I)
 LOCAL_REF = re.compile(r'(?:href|src)="((?!https?:|data:|#)[^"]+)"')
@@ -178,6 +182,11 @@ GENERIC_PATTERN_RULE = re.compile(
 # approved Core pilot deliberately isolates "with", and CORE-12 isolates "at"
 # because placing the time preposition is the retrieval operation being taught.
 BOUND_REORDER_CHIPS = {"a", "an", "the", "er"}
+NON_LEXICAL_HINTS = {
+    "a", "an", "the", "am", "is", "are", "was", "were",
+    "do", "does", "did", "can", "could", "will", "would",
+    "have", "has", "had", "-s", "-es", "-ed", "-ing",
+}
 BRIEF_HEADING = re.compile(r"^#\s+((?:CORE|CTX|FT)-\d+)\s+·\s+(.+?)\s*$")
 QUOTE_OPEN = "“‘「『"
 QUOTE_CLOSE = "”’」』"
@@ -344,6 +353,121 @@ def target_highlight_issues(page_chunks):
                 errors.append(
                     f"{page_id} row {index}: mirrored target highlights differ "
                     f"(EN={en_targets} JA={ja_targets})"
+                )
+    return errors
+
+
+def _normalized_targets(source, class_name):
+    return tuple(
+        plain_text(body)
+        .replace("’", "'")
+        .casefold()
+        .rstrip(".,!?。！？、")
+        for body in class_span_bodies(source, class_name)
+    )
+
+
+def controlled_target_alignment_issues(page_chunks):
+    """Prove that controlled blanks retrieve the frame taught on the read page.
+
+    Merely having a highlighted Japanese cue is insufficient: the failed Core
+    and Contextual pilots highlighted lexical content and then treated that
+    content as the lesson target.  Compare exact row-level evidence instead.
+    """
+    errors = []
+    for part in (1, 2):
+        read_id = f"p{part}-read"
+        fill_id = f"p{part}-fill"
+        read = page_chunks.get(read_id, "")
+        fill = page_chunks.get(fill_id, "")
+        if not read or not fill:
+            continue
+
+        english_rows = class_span_bodies(read, "korean")
+        fill_rows = TASK_BLOCK.split(fill)[1:]
+        if len(fill_rows) != len(english_rows):
+            errors.append(
+                f"{fill_id}: {len(fill_rows)} fill rows but {len(english_rows)} "
+                f"canonical rows on {read_id}"
+            )
+            continue
+
+        for index, (english, fill_row) in enumerate(
+            zip(english_rows, fill_rows), start=1
+        ):
+            taught_english = _normalized_targets(english, "ending")
+            blank_answers = tuple(
+                answer.replace("’", "'").casefold().rstrip(".,!?")
+                for answer in control_answers(fill_row, "slot-input")
+            )
+            if not blank_answers or any(
+                answer not in taught_english for answer in blank_answers
+            ):
+                errors.append(
+                    f"{fill_id} row {index}: blank answers {blank_answers!r} do not "
+                    f"belong to taught target segments {taught_english!r} on {read_id} — keep "
+                    "vocabulary visible and blank only the practiced frame"
+                )
+
+            fill_japanese = _normalized_targets(fill_row, "target")
+            if len(fill_japanese) != len(blank_answers):
+                errors.append(
+                    f"{fill_id} row {index}: Japanese target cue count "
+                    f"({len(fill_japanese)}) does not match blank count "
+                    f"({len(blank_answers)})"
+                )
+    return errors
+
+
+def translation_support_issues(page_chunks):
+    """Validate the opt-in target-v2 support contract and hint boundaries."""
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-translate", page_id):
+            continue
+        opening = re.search(r'<(?:div|section)\b[^>]*>', chunk, re.I)
+        attrs = (
+            {key.lower(): value for key, _, value in ATTRIBUTE.findall(opening.group(0))}
+            if opening else {}
+        )
+        contract = attrs.get("data-scaffolding-contract")
+        stage = attrs.get("data-support-stage")
+        blocks = TASK_BLOCK.split(chunk)[1:]
+
+        for index, block in enumerate(blocks, start=1):
+            try:
+                hints = vocabulary.hint_words(block)
+            except vocabulary.VocabularyError:
+                # The deck-wide vocabulary check reports the malformed chip.
+                hints = set()
+            banned = sorted(hints & NON_LEXICAL_HINTS)
+            if banned:
+                errors.append(
+                    f"{page_id} row {index}: non-lexical hint chip(s) "
+                    f"{', '.join(banned)} — articles, auxiliaries and inflections "
+                    "must be retrieved, not hinted"
+                )
+
+        if contract is None:
+            continue  # Legacy page; migrate during the course-wide support audit.
+        if contract != "target-v2":
+            errors.append(f"{page_id}: unknown scaffolding contract {contract!r}")
+            continue
+        if stage not in {"supported", "checkpoint"}:
+            errors.append(
+                f"{page_id}: target-v2 requires data-support-stage=\"supported\" "
+                "or \"checkpoint\""
+            )
+            continue
+        for index, block in enumerate(blocks, start=1):
+            hints = vocabulary.hint_words(block)
+            if stage == "supported" and not hints:
+                errors.append(
+                    f"{page_id} row {index}: supported production has no lexical hint"
+                )
+            if stage == "checkpoint" and hints:
+                errors.append(
+                    f"{page_id} row {index}: checkpoint production must not carry hints"
                 )
     return errors
 
@@ -652,6 +776,11 @@ def core_production_issues(page_chunks):
     if freetalk:
         turns = len(TURN_OPEN.findall(freetalk))
         speakers = len(WHO_OPEN.findall(freetalk))
+        if turns < 3:
+            errors.append(
+                "p3-freetalk: Free Talk needs a reciprocal Tutor/Me exchange — "
+                "tutor asks, learner answers and asks back, tutor gives a real answer"
+            )
         if turns != speakers:
             errors.append(
                 f"p3-freetalk: {turns} turns but {speakers} speaker labels — "
@@ -680,7 +809,6 @@ def core_canonical_shape_issues(page_chunks):
 
     required = (
         "lesson-goal",
-        "words-you-know",
         "part1-intro",
         "p1-teach",
         "p1-read",
@@ -705,10 +833,6 @@ def core_canonical_shape_issues(page_chunks):
     missing = [page_id for page_id in required if page_id not in page_chunks]
     if missing:
         errors.append("Core lesson is missing canonical pages: " + ", ".join(missing))
-
-    goal = page_chunks.get("lesson-goal", "")
-    if goal and class_tag_count(goal, "known-row") != 3:
-        errors.append("lesson-goal: show the complete three-beat target exchange")
 
     for part in (1, 2):
         choose_id = f"p{part}-choose"
@@ -871,6 +995,11 @@ def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
         turns = len(TURN_OPEN.findall(live))
         icons = len(GENERIC_AVATAR.findall(live))
         profiles = len(PROFILE_AVATAR.findall(live))
+        if turns < 3:
+            errors.append(
+                "p3-freetalk: Free Talk needs a reciprocal Tutor/Me exchange — "
+                "tutor asks, learner answers and asks back, tutor gives a real answer"
+            )
         if turns and (icons != turns or profiles):
             errors.append(
                 f"p3-freetalk: live Tutor/Me exchange needs generic icons on every turn "
@@ -953,6 +1082,102 @@ def freetalk_style_issues(chunk):
         )
     if "Fluency first" in chunk:
         errors.append("lesson-style: use Discussion first, not Fluency first")
+    return errors
+
+
+def pilot_operating_issues(page_chunks, *, track):
+    """Enforce only objective regressions from the owner-approved pilot pass.
+
+    Naturalness, page usefulness and whether a Free Talk tangent is interesting
+    remain human decisions. These checks cover markup or exact shared operations
+    whose intended behavior is no longer ambiguous.
+    """
+    errors = []
+    goal = page_chunks.get("lesson-goal", "")
+    if goal:
+        if class_tag_count(goal, "known-row"):
+            errors.append(
+                "lesson-goal: remove example/outcome rows — state the can-do and "
+                "have the learner read the title once"
+            )
+        subtitles = SUBTITLE.findall(goal)
+        english = SPAN_KO.search(subtitles[0][1]) if subtitles else None
+        spoken = plain_text(english.group(1)) if english else ""
+        if not ("read" in spoken.casefold() and "title" in spoken.casefold()):
+            errors.append(
+                "lesson-goal: the spoken script must ask the learner to read the title aloud"
+            )
+
+    if track == "contextual" and "situation-card" in page_chunks:
+        errors.append(
+            "situation-card: remove the duplicate overview — use one goal page, then start the scene"
+        )
+
+    for page_id, chunk in page_chunks.items():
+        subtitles = SUBTITLE.findall(chunk)
+        body = subtitles[0][1] if subtitles else ""
+        en = SPAN_KO.search(body)
+        ja = SPAN_JA.search(body)
+        spoken = plain_text(en.group(1)) if en else ""
+        support = plain_text(ja.group(1)) if ja else ""
+
+        if "reorder" in page_id and spoken:
+            if spoken != REORDER_SCRIPT_EN or support != REORDER_SCRIPT_JA:
+                errors.append(
+                    f"{page_id}: use the approved shared reorder script, then have "
+                    "the learner say the whole sentence aloud"
+                )
+        if "translate" in page_id and spoken:
+            if spoken != TRANSLATE_SCRIPT_EN or support != TRANSLATE_SCRIPT_JA:
+                errors.append(
+                    f"{page_id}: use the approved shared translate script"
+                )
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk)))
+            if not ("type" in note.casefold() and "complete" in note.casefold()):
+                errors.append(
+                    f"{page_id}: tell the tutor to type the learner's complete English sentence"
+                )
+        if re.fullmatch(r"p[12]-fill", page_id) and spoken:
+            lower = spoken.casefold()
+            if not (
+                ("whole sentence" in lower or "whole request" in lower)
+                and "missing words" in lower
+            ):
+                errors.append(
+                    f"{page_id}: tell the learner to say the whole sentence, including "
+                    "the missing words"
+                )
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk))).casefold()
+            if not ("type only" in note and "missing words" in note):
+                errors.append(
+                    f"{page_id}: tell the tutor to type only the missing words"
+                )
+        if re.fullmatch(r"p[12]-choose", page_id) and spoken:
+            lower = spoken.casefold()
+            if not (
+                "choose" in lower
+                and "read" in lower
+                and ("complete sentence" in lower or "whole sentence" in lower)
+            ):
+                errors.append(
+                    f"{page_id}: choosing must end with the learner reading the complete sentence aloud"
+                )
+
+        if "fb-task" in chunk:
+            errors.append(
+                f"{page_id}: remove the repeated task inside the response component"
+            )
+        if re.fullmatch(r"p[12]-write", page_id) and 'data-fb="' not in chunk:
+            errors.append(
+                f"{page_id}: capture the learner's spoken answer with the shared feedback "
+                "component, without repeating the task inside the response box"
+            )
+        for fb_tag in re.findall(r'<div\b[^>]*class="[^"]*\bfb\b[^"]*"[^>]*data-fb="[^"]+"[^>]*>', chunk):
+            if 'data-fb-spoken-label="Student\'s sentence"' not in fb_tag:
+                errors.append(
+                    f"{page_id}: feedback capture must be labelled Student's sentence"
+                )
+
     return errors
 
 
@@ -1268,7 +1493,10 @@ def check(path):
             errs.extend(pattern_meaning_issues(page_id, chunk))
         page_chunks = dict(pages(html))
         if "1-core-patterns" in path.parts:
+            errs.extend(pilot_operating_issues(page_chunks, track="core"))
             errs.extend(target_highlight_issues(page_chunks))
+            errs.extend(controlled_target_alignment_issues(page_chunks))
+            errs.extend(translation_support_issues(page_chunks))
             errs.extend(core_production_issues(page_chunks))
             proofread_status = meta_content(html, "podo:proofread-status")
             if proofread_status == "pending":
@@ -1280,7 +1508,10 @@ def check(path):
                 errs.extend(core_canonical_shape_issues(page_chunks))
                 errs.extend(smallest_unit_choice_issues(page_chunks))
         if "2-contextual-english" in path.parts:
+            errs.extend(pilot_operating_issues(page_chunks, track="contextual"))
             errs.extend(target_highlight_issues(page_chunks))
+            errs.extend(controlled_target_alignment_issues(page_chunks))
+            errs.extend(translation_support_issues(page_chunks))
             errs.extend(contextual_production_issues(
                 page_chunks,
                 enforce_frame_boundaries=(
@@ -1339,6 +1570,7 @@ def check(path):
     # ---- 4–5 · English Freetalking contracts -----------------------------
     if is_english and "3-freetalking" in path.parts:
         page_chunks = dict(pages(html))
+        errs.extend(pilot_operating_issues(page_chunks, track="freetalking"))
         errs.extend(freetalk_inventory_issues(html))
         if "article" not in page_chunks:
             errs.append(

@@ -63,12 +63,12 @@ question pages remain.
 
 ### `lesson-goal`
 
-Use the existing transition page and three quiet outcome rows. The rows are three dimensions of
-one conversation—experience, reason, change or consequence—not a list of questions and not a page
-schedule. The goal never says “answer eight questions.” The visible English title and document
-title preserve the exact title from the lesson's generated `FT-N` brief. Only the short pager
-`data-act` may summarize it. If the title needs improvement, change the TOC and regenerate the
-brief rather than inventing a separate deck title.
+Use the transition page for one useful orientation only. The blue script introduces the topic and
+asks the learner to read the title aloud once; the tutor note says to move on after that. Do not add
+three outcome rows, sample answers, a question preview or a page schedule. The visible English
+title and document title preserve the exact title from the lesson's generated `FT-N` brief. Only
+the short pager `data-act` may summarize it. If the title needs improvement, change the TOC and
+regenerate the brief rather than inventing a separate deck title.
 
 ---
 
@@ -223,6 +223,11 @@ Every set must pass all six checks:
    accessible version lowers language load; it does not replace a reason or perspective with “Did
    you like it?” or another generic reaction check.
 
+Topic relevance is a boundary, not a cage. A slightly tangential question is better than a dull
+restatement when it opens a natural, adult conversation. Follow the most interesting detail in the
+learner's answer; do not force every listed question or a preselected language pattern into the
+exchange.
+
 ### Five checks for a prompt
 
 1. **One hypothetical layer.** Do not stack another “if” on a topic already built on a condition.
@@ -266,6 +271,8 @@ Do not hand-write correction rows in HTML; the shared activity script creates th
 - Edit only the corrected copy so additions/removals remain visible.
 - Ask the learner to say the useful corrected sentence again.
 - Put pronunciation, register or a future focus in a note row, not in the sentence correction.
+- Label the captured line **Student's sentence**. Do not repeat a Japanese task instruction inside
+  the response component; the blue script already tells the learner what to do.
 
 The question page needs no choices, explanation card, model answer or grammar tip. Adding any of
 those creates a second activity and turns conversation into a worksheet.

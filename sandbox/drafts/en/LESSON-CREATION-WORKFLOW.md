@@ -144,6 +144,28 @@ vocabulary. If one of these authored fields is missing, generation fails; it doe
 “provisional” pedagogical page. Exact-generation tests prove ownership and reproducibility only—
 they never count as proofreading.
 
+Every controlled activity must also own a real **learning decision**, not merely four valid rows.
+Before authoring the rows, state what the learner must distinguish on that page. Repeating the same
+blank and answer four times stops testing retrieval after the first row. A binary choice in which
+one option is obviously impossible in every row (for example, `do / am` when every prompt requires
+`do`) is not a meaningful choice. Add contexts where each option can genuinely be correct, add a
+useful negative or contrasting form, or replace the activity with one that tests the intended
+distinction honestly. Row count, answer solvability and shuffled option order do not establish
+pedagogical value.
+
+**Target fidelity comes before row variety.** Never create a new decision by moving a controlled
+blank from the taught frame onto vocabulary. The canonical `pN-teach` / `pN-read` target is also
+the exact `pN-fill` answer; vocabulary, names, articles and scene facts remain printed. If repeating
+that target no longer earns four rows, redesign or omit the activity instead of changing what it
+assesses. Whole-sentence production then declares one support stage: `supported` supplies lexical
+`JP:EN` hints on every row, while `checkpoint` deliberately supplies none. Articles, auxiliaries
+and inflections are retrieved without hint chips in either stage.
+
+An open `Make it yours` page combines two things in its visible script: the exact target frame and
+an answerable communicative prompt. “Make a habit question” is incomplete operating copy; print
+the frame the learner should use and what they should ask about. A later page may refer to “the
+same question” only when that exact question remains visible on the page.
+
 The **orchestrator alone** may change:
 
 - TOCs, parsers, blueprints and generated briefs
@@ -201,6 +223,17 @@ writers copy. Korean spent 348 reorder sentences at the wrong chip count for exa
   and a find-all activity keeps its count because there the number says when to stop hunting.
   Rewrite the Japanese in the same change so meaning, sentence count and conversational tone still
   match.
+- Goal pages orient once: state the can-do, ask the learner to read the exact lesson title aloud,
+  then move on. Do not add example rows, a target exchange or a second situation overview.
+- Learner reading is the default. The tutor reads target English only for an explicitly named
+  listening/comprehension task, and that page says who speaks and what the learner does.
+- Reuse the approved activity language across Core and Contextual: choose then read the complete
+  sentence; reorder then say the whole sentence; say the whole fill sentence including the missing
+  words while the tutor types only those words; read the Japanese and say it in English while the
+  tutor types the complete sentence.
+- An open-production script names the pattern or communicative job. The learner answers aloud
+  before capture and correction; the response component repeats no task and uses the label
+  `Student's sentence`.
 - Core and Contextual `pattern-meaning` boxes use **one short English sentence** combining meaning
   and communicative use, with one direct Japanese counterpart. Do not put an activity direction,
   Japanese wording or a lesson-number reference in the English line. A rule-page script adds only
@@ -219,10 +252,21 @@ writers copy. Korean spent 348 reorder sentences at the wrong chip count for exa
 - Tutor-only notes are English in every track. Add one only when the tutor must catch or do
   something the page cannot make obvious, and place it on the production page where that action
   happens—not on a teaching page that produces nothing yet. Do not repeat a revealed answer.
+- State tutor actions positively. Remove defensive phrases such as “do not model” when the desired
+  action already makes the page unambiguous. In teaching pages, keep meaning in the visible teaching
+  component and put the learner operation in the tutor note.
 - In Freetalking, default to **no coaching in the spoken script**: use the conversation question or
   a natural transition alone. Add a procedural direction only when the learner cannot infer the
   essential interaction without it. Page 2 is read only in pre-study; the class script may ask for
   questions about the article but must never tell the learner to read or skim it during class.
+- Free Talk is allowed to move slightly beyond the literal topic or today's pattern when that makes
+  the question more interesting and natural. Follow the learner's most interesting relevant detail;
+  controlled practice and roleplay, not Free Talk, own mandatory pattern retrieval.
+- Core and Contextual Free Talk is still a **live reciprocal exchange**, not a one-way answer box.
+  The tutor asks, the learner answers, the learner asks a natural related question, and the tutor
+  gives a real answer. The target frame is optional when it would make that exchange unnatural;
+  reciprocity is not optional. If an author genuinely needs a one-way reflection, name it as a
+  different activity instead of calling it Free Talk.
 - Freetalking page 2 uses **10–15 sentence rows**. Full and accessible keep the same claims in the
   same order; accessible lowers rare vocabulary and clause load rather than merely shortening the
   full wording while retaining its hardest words.
@@ -278,9 +322,10 @@ writers copy. Korean spent 348 reorder sentences at the wrong chip count for exa
   rarely choose it beside a common alternative, demote it to receptive recognition or remove it;
   do not drill it merely to complete a paradigm. Re-check the TOC and brief rather than hiding the
   decision inside one deck.
-- Contextual free-talk is a **reciprocal exchange**, not a single student prompt: the tutor asks,
-  the student answers, the student asks a related question, and the tutor gives a real personal
-  answer in the editable field. Do not end the page after the student's answer.
+- Contextual free-talk is a **real exchange**, not a forced pattern drill: the tutor asks an
+  interesting relevant question, reacts to the answer and follows the most useful detail. An
+  ask-back and real tutor answer are welcome when natural, but are not mandatory template beats.
+  Invite today's frame only when it fits the conversation.
 - The final Contextual transfer is a complete **5–7-turn mini-scene** with 2–3 learner completions,
   uses both of today's patterns, changes at least two meaningful scene variables, and resolves the
   same practical job without introducing another lesson's target.

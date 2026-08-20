@@ -198,7 +198,7 @@ class DeckCheckTests(unittest.TestCase):
 
     def test_core_shape_rejects_hollow_teaching_and_native_tip_pages(self):
         pages = {
-            "lesson-goal": '<div class="known-row"></div>' * 3,
+            "lesson-goal": '<p class="section-subtitle"></p>',
             "p1-teach": '<div class="model-list"></div>',
             "p1-rule": '<p>Put at before a time.</p>',
             "p2-teach": '<div class="model-list"></div>',
@@ -210,6 +210,76 @@ class DeckCheckTests(unittest.TestCase):
         self.assertTrue(any("main pattern block" in item for item in errors))
         self.assertTrue(any("formation diagram" in item for item in errors))
         self.assertTrue(any("not a native tip" in item for item in errors))
+
+    def test_pilot_goal_rejects_preview_rows(self):
+        errors = check_deck.pilot_operating_issues(
+            {
+                "lesson-goal": (
+                    '<p class="section-subtitle"><span class="ko">Please read the title aloud.</span>'
+                    '<span class="ja">タイトルを声に出して読んでください。</span></p>'
+                    '<div class="known-row"></div>'
+                )
+            },
+            track="core",
+        )
+        self.assertTrue(any("remove example/outcome rows" in item for item in errors))
+
+    def test_pilot_activity_scripts_and_feedback_are_accepted(self):
+        pages = {
+            "lesson-goal": (
+                '<p class="section-subtitle"><span class="ko">Please read the title aloud.</span>'
+                '<span class="ja">タイトルを声に出して読んでください。</span></p>'
+            ),
+            "p1-reorder": (
+                '<p class="section-subtitle"><span class="ko">'
+                f'{check_deck.REORDER_SCRIPT_EN}</span><span class="ja">'
+                f'{check_deck.REORDER_SCRIPT_JA}</span></p>'
+            ),
+            "p1-fill": (
+                '<p class="section-subtitle"><span class="ko">Say each whole sentence aloud, '
+                'including the missing words.</span><span class="ja">空欄を含めて言ってください。</span></p>'
+                '<div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'
+            ),
+            "p1-translate": (
+                '<p class="section-subtitle"><span class="ko">'
+                f'{check_deck.TRANSLATE_SCRIPT_EN}</span><span class="ja">'
+                f'{check_deck.TRANSLATE_SCRIPT_JA}</span></p>'
+                '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
+            ),
+            "p1-write": (
+                '<div class="fb" data-fb="answer" '
+                'data-fb-spoken-label="Student\'s sentence"></div>'
+            ),
+        }
+        self.assertEqual(
+            check_deck.pilot_operating_issues(pages, track="core"),
+            [],
+        )
+
+    def test_pilot_feedback_rejects_duplicate_task_and_old_label(self):
+        errors = check_deck.pilot_operating_issues(
+            {
+                "p1-write": (
+                    '<div class="fb" data-fb="answer">'
+                    '<div class="fb-task">もう一度やってみよう</div></div>'
+                )
+            },
+            track="core",
+        )
+        self.assertTrue(any("repeated task" in item for item in errors))
+        self.assertTrue(any("Student's sentence" in item for item in errors))
+
+    def test_pilot_open_sentence_requires_shared_feedback_capture(self):
+        errors = check_deck.pilot_operating_issues(
+            {
+                "p1-write": (
+                    '<div class="task-block"><div class="answer-box">'
+                    '<span class="answer-label">Your sentence</span></div></div>'
+                )
+            },
+            track="core",
+        )
+        self.assertTrue(any("shared feedback component" in item for item in errors))
 
     def test_core_shape_rejects_unjustified_full_sentence_choices(self):
         errors = check_deck.core_canonical_shape_issues(
@@ -424,7 +494,9 @@ class DeckCheckTests(unittest.TestCase):
             '<div class="turn other"><span class="who"><span class="avatar icon">T</span></span>'
             '<span>What do you need?</span></div>'
             '<div class="turn me"><span class="who"><span class="avatar icon">私</span></span>'
-            '<span>Could you help me with ~?</span></div>'
+            '<span>Could you help me with ~? How about you?</span></div>'
+            '<div class="turn other"><span class="who"><span class="avatar icon">T</span></span>'
+            '<span>Tutor\'s answer</span></div>'
         )
         self.assertEqual(
             check_deck.core_production_issues(
@@ -447,6 +519,12 @@ class DeckCheckTests(unittest.TestCase):
         self.assertTrue(any("turn count differs" in item for item in errors))
         self.assertTrue(any("speaker labels" in item for item in errors))
         self.assertTrue(any("generic production instruction" in item for item in errors))
+
+    def test_core_production_rejects_one_way_freetalk_capture(self):
+        errors = check_deck.core_production_issues({
+            "p3-freetalk": '<div class="fb" data-fb="one-way"></div>',
+        })
+        self.assertTrue(any("reciprocal Tutor/Me exchange" in item for item in errors))
 
     def test_core_late_phrase_inputs_reuse_only_controlled_targets(self):
         pages = {
@@ -507,6 +585,89 @@ class DeckCheckTests(unittest.TestCase):
         }
         self.assertEqual(check_deck.target_highlight_issues(pages), [])
 
+    def test_controlled_fill_rejects_lexical_blanks_when_do_you_is_taught(self):
+        pages = {
+            "p1-read": (
+                '<span class="korean"><span class="ending">Do you</span> drink coffee?</span>'
+                '<span class="translation">コーヒーを<span class="ending">飲みますか</span>？</span>'
+            ),
+            "p1-fill": (
+                '<div class="task-block"><span class="answer-label">コーヒーを'
+                '<span class="target ending">飲みますか</span>？</span>'
+                '<input class="slot-input" data-answer="drink"></div>'
+            ),
+        }
+        errors = check_deck.controlled_target_alignment_issues(pages)
+        self.assertTrue(any("blank answers ('drink',)" in item for item in errors))
+
+    def test_controlled_fill_accepts_exact_taught_frame(self):
+        pages = {
+            "p1-read": (
+                '<span class="korean"><span class="ending">I\'m here for</span> work.</span>'
+                '<span class="translation"><span class="ending">仕事で来ました</span>。</span>'
+            ),
+            "p1-fill": (
+                '<div class="task-block"><span class="answer-label">'
+                '<span class="target ending">仕事で来ました</span>。</span>'
+                '<input class="slot-input" data-answer="I\'m here for"></div>'
+            ),
+        }
+        self.assertEqual(check_deck.controlled_target_alignment_issues(pages), [])
+
+    def test_controlled_fill_accepts_one_of_multiple_taught_target_segments(self):
+        pages = {
+            "p1-read": (
+                '<span class="korean"><span class="ending">We’d like</span> two seats, '
+                '<span class="ending">if possible.</span></span>'
+                '<span class="translation"><span class="ending">できれば</span>、2席を'
+                '<span class="ending">希望します</span>。</span>'
+            ),
+            "p1-fill": (
+                '<div class="task-block"><span class="answer-label">2席を'
+                '<span class="target ending">希望します</span>。</span>'
+                '<input class="slot-input" data-answer="We\'d like"></div>'
+            ),
+        }
+        self.assertEqual(check_deck.controlled_target_alignment_issues(pages), [])
+
+    def test_controlled_fill_requires_one_japanese_cue_per_blank(self):
+        pages = {
+            "p1-read": (
+                '<span class="korean"><span class="ending">Do you</span> cook?</span>'
+                '<span class="translation"><span class="ending">料理しますか</span>？</span>'
+            ),
+            "p1-fill": (
+                '<div class="task-block"><span class="answer-label">料理しますか？</span>'
+                '<input class="slot-input" data-answer="Do you"></div>'
+            ),
+        }
+        errors = check_deck.controlled_target_alignment_issues(pages)
+        self.assertTrue(any("Japanese target cue count" in item for item in errors))
+
+    def test_target_v2_supported_translation_requires_lexical_hints(self):
+        pages = {
+            "p1-translate": (
+                '<div data-scaffolding-contract="target-v2" '
+                'data-support-stage="supported">'
+                '<div class="task-block"><input class="space-input" '
+                'data-answer="I\'m here for a holiday."></div></div>'
+            )
+        }
+        errors = check_deck.translation_support_issues(pages)
+        self.assertTrue(any("has no lexical hint" in item for item in errors))
+
+    def test_target_v2_rejects_article_and_auxiliary_hints(self):
+        pages = {
+            "p1-translate": (
+                '<div data-scaffolding-contract="target-v2" '
+                'data-support-stage="supported"><div class="task-block">'
+                '<span class="hint"><span class="hint-chip">一つ:a</span>'
+                '<span class="hint-chip">休暇:holiday</span></span></div></div>'
+            )
+        }
+        errors = check_deck.translation_support_issues(pages)
+        self.assertTrue(any("non-lexical hint" in item for item in errors))
+
     def test_contextual_rejects_japanese_only_receptive_choices_and_roleplay_icons(self):
         icon = '<span class="avatar icon">A</span>'
         pages = {
@@ -538,6 +699,12 @@ class DeckCheckTests(unittest.TestCase):
             "understand": receptive * 4,
         }
         self.assertEqual(check_deck.contextual_production_issues(pages), [])
+
+    def test_contextual_rejects_one_way_freetalk_capture(self):
+        errors = check_deck.contextual_production_issues({
+            "p3-freetalk": '<div class="fb" data-fb="one-way"></div>',
+        })
+        self.assertTrue(any("reciprocal Tutor/Me exchange" in item for item in errors))
 
     def test_contextual_replay_must_preserve_the_opening_scene(self):
         profile = '<img class="avatar" src="person.jpg" alt="">'

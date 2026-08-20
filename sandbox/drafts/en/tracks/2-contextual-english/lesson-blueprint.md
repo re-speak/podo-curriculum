@@ -28,8 +28,8 @@ tutor voice cannot be recovered from a page table.
 
 The learner takes the active role. Every learner line is `私`; the tutor reads the other person.
 
-- **Scene before objective.** The learner hears the situation and exchange before being told what
-  it teaches. Without the scene, these are Core drills wearing travel or workplace nouns.
+- **Goal, then scene.** The opening names the practical can-do once; the next page starts the
+  roleplay immediately. Do not repeat the same setup in a separate situation card.
 - **The reply is part of the line.** The TOC's partner reaction is never optional decoration. It is
   the consequence that makes the learner's line an action inside a situation.
 - **Core owns grammar.** A lesson retrieves a known form or teaches a marked future form as a
@@ -46,35 +46,36 @@ The learner takes the active role. Every learner line is `私`; the tutor reads 
 
 ## The skeleton
 
-One lesson is normally **29 pages**: five scene-setting pages, two pattern ladders, a return to the
-scene, one adjacent native choice and one transfer scene. Omit an untaught or dishonest choice/rule page
-rather than padding to reach a fixed count.
+One lesson is normally about **25 pages**: a useful opening, two pattern ladders, a return to the
+scene, one adjacent native choice and one transfer scene. Omit a vocabulary page, untaught choice
+or dishonest rule page rather than padding to reach a fixed count.
 
 | # | `data-page-id` | Job |
 | ---: | --- | --- |
-| 1 | `situation-card` | Practical area · course · situation. Establish the learner's immediate job |
-| 2 | `scene` | The TOC exchange, complete: learner lines and partner reactions |
-| 3 | `lesson-goal` | Connect the scene to the one observable can-do |
-| 4 | `expressions` | One or two production-ready chunks already doing work in the scene |
-| 5 | `understand` | Receptive-only lines from the TOC; recognise, never produce |
-| 6–14 | `part1-*` | Pattern A, beginning with its line from `scene` |
-| 15–23 | `part2-*` | Pattern B, beginning with its line from `scene` |
-| 24–27 | `part3-*` | Replay the same scene, then vary it with the learner's facts |
-| 28 | `native-tip` | One new adjacent choice: register, softening, stress, contraction or collocation |
-| 29 | `transfer-scene` | A second 5–7-turn situation using both patterns with changed facts |
+| 1 | `lesson-goal` | State the practical can-do and have the learner read the title once |
+| 2 | `scene` | Start the TOC roleplay: learner lines and partner reactions |
+| 3 | `understand` | Receptive-only lines from the TOC; tutor reads, learner chooses the meaning |
+| optional | `expressions` | Only when one or two chunks remove a real obstacle before the scene work |
+| next | `part1-*` | Pattern A, beginning with its line from `scene` |
+| next | `part2-*` | Pattern B, beginning with its line from `scene` |
+| next | `part3-*` | Replay the same scene, then discuss the topic with the learner's facts |
+| next | `native-tip` | One new adjacent choice: register, softening, stress, contraction or collocation |
+| last | `transfer-scene` | A second 5–7-turn situation using both patterns with changed facts |
 
 The first page carries the lesson's short `data-act`. Track lessons contain no sales cover.
 
-### The five opening pages
+### The opening pages
 
-`situation-card` names the practical area, course, place, partner role, and immediate need. Include
-only facts required to understand this lesson; an avatar never replaces the printed short speaker
-name.
+`lesson-goal` states the can-do once, asks the learner to read the title aloud and then moves on.
+It contains no model dialogue or outcome rows. Do not follow it with a second overview that repeats
+the same roles and goal.
 
 `scene` stages the two learner lines and both partner reactions exactly as a small conversational
-exchange. It may add the minimum connective turns needed for a coherent scene, but it may not
-replace the reviewed target lines. If it must split for height, split on a conversational beat and reuse
-the identical boundary in `p3-model-*`.
+exchange. Its script makes the roleplay immediate and explicit: “You're the passenger; I'll be the
+agent. Let's begin.” Use the actual visible role names, not instructions about bubble colours or
+screen order. It may add the minimum connective turns needed for a coherent scene, but it may not
+replace the reviewed target lines. If it must split for height, split on a conversational beat and
+reuse the identical boundary in `p3-model-*`.
 
 Use **5–9 purposeful turns** for the complete opening scene and preserve the same turns, order and
 beat boundary in `p3-model` and `p3-complete`. Five is the minimum needed for an opening, a useful
@@ -82,11 +83,10 @@ reaction or follow-up and a resolved ending; eight or nine is appropriate when t
 short setup before the two target lines. Do not call a shortened excerpt a replay. If the complete
 scene must be split for height, give both halves explicit scene page IDs and replay both halves later.
 
-`lesson-goal` says: *that scene you just heard is what you will be able to handle.* Its success
-condition is the TOC can-do, not a grammar label and not “learn two patterns.”
-
-`expressions` holds fixed chunks the learner may produce. They support the exchange but are not a
-third or fourth primary pattern. `understand` is the inverse: partner/staff language the learner
+`expressions`, when present, holds fixed chunks the learner may produce and gives the learner a
+clear action such as reading them aloud. It supports the exchange but is not a third or fourth
+primary pattern. Delete the page when its phrases are already transparent or taught elsewhere; a
+two-item list is not useful merely because it exists. `understand` is the inverse: partner/staff language the learner
 must recover but is not asked to say. A listen-and-pick or meaning match is appropriate; fill,
 translate and free-write are not.
 
@@ -97,9 +97,10 @@ answers. For a statement, both choices describe the statement. The distractor sh
 plausible local confusion, not an unrelated noun swap, an unnatural category label or a fragment.
 The correct option must add evidence of comprehension rather than merely repeat the source line.
 
-The English-speaking tutor must be able to run both pages without reading Japanese. Give
-`expressions` an explicit spoken action such as reading the phrases together, not a passive
-description of why they are useful. On `understand`, the tutor reads the English staff line; every
+The English-speaking tutor must be able to run both pages without reading Japanese. Give an
+`expressions` page an explicit spoken action, not a passive description of why phrases are useful.
+On `understand`, explicitly tell the learner that the tutor will read each English staff line and
+that the learner chooses its meaning; every
 tappable meaning option exposes a concise English sense label alongside the learner's Japanese
 support. Never present Japanese-only alternatives and expect the tutor to infer the answer.
 
@@ -155,6 +156,9 @@ not the tutor's voice or the partner's receptive line.
 - Tutor-only notes are English and appear only when the tutor must catch or do something the page
   cannot make obvious. Put them on the production page where that action happens, not on a teaching
   page that produces nothing yet; never repeat an answer already revealed by teaching mode.
+- Learner reading is the default. The tutor reads target language only on an explicitly named
+  listening/comprehension activity such as `understand`. A roleplay assigns roles and begins; it
+  does not start with the tutor modelling both sides.
 - Mirror the taught target on every `pN-teach` and `pN-read` model: wrap each English target word or
   phrase in `.ending` and wrap its exact Japanese meaning in `.ending` too. If several
   discontinuous English pieces map naturally to one Japanese phrase, one Japanese highlight may
@@ -163,11 +167,22 @@ not the tutor's voice or the partner's receptive line.
   blank. Use one Japanese cue per blank. Reorder and translate prompts remain neutral because the
   learner produces the whole sentence there.
 - Every closed read/choose/reorder/fill/translate activity has **four questions**.
+- The common activity scripts match Core exactly: choose, then read the complete sentence aloud;
+  reorder, then say the whole sentence; say the whole fill sentence including the missing words
+  while the tutor types only those missing words; read the Japanese and say it in English while the
+  tutor types the complete sentence.
 - Reorder uses four meaningful chunks as ceiling and default; three is allowed only when the
   sentence genuinely has three. One page uses one chunking criterion throughout.
 - One answer box answers one question. A second prompt may only narrow the first.
 - Blank only the target frame. Hint chips contain `JP:EN` vocabulary, never articles, auxiliaries
   or inflections.
+- The exact frame highlighted on `pN-read` is the exact answer removed on every `pN-fill` row.
+  Different purposes, hotels, names and other scene facts stay visible; they do not become blanks
+  merely to make four answers different. Redesign or omit a weak activity instead of changing its
+  target.
+- Whole-sentence production declares `supported` or `checkpoint`. A supported page gives every row
+  the lexical hint it needs. A checkpoint carries no hints. Articles, auxiliaries and inflections
+  remain learner decisions, never hint chips.
 - This boundary still applies on `p3-complete` and `transfer-scene`: the editable
   `phrase-input` contains only words from a frame already established on `pN-fill`. Keep names,
   objects, quantities, times, places and other scene facts visibly printed around it. When a frame
@@ -205,8 +220,13 @@ Mirror target highlights in `p3-model`. In `p3-complete`, each missing learner p
 Japanese `.target` cue and one wrapping, auto-growing `textarea.free-input.phrase-input`. Do not
 put a long late-production sentence in a single-line field.
 
-`p3-freetalk` must be reciprocal. The tutor's final answer is typed live into the neutral partner
-bubble; it is not a canned model and it does not expose a hidden answer to the learner.
+`p3-freetalk` asks an interesting, relevant question that can sustain a real exchange. Reusing
+today's pattern is welcome when it fits, but never force the learner to bend a natural answer into
+the frame; required production already happened in controlled work and roleplay. React to the most
+interesting detail and use a `Student's sentence` correction block. Keep the interaction
+reciprocal: tutor asks, learner answers and asks a natural related question, tutor gives a real
+answer. Pattern reuse is optional when it would sound unnatural; the ask-back is what makes this
+Free Talk rather than a one-way reflection page.
 
 ---
 
