@@ -1036,28 +1036,18 @@ class ExpectedManifestMutationTests(unittest.TestCase):
 
 
 class CurrentCorpusIntegrityTests(unittest.TestCase):
-    def test_selector_finds_exact_current_inventory_and_known_status_failures(self) -> None:
+    def test_selector_finds_exact_current_inventory_and_green_status(self) -> None:
         records, errors = integrity.audit_corpus()
-        self.assertEqual(len(records), 295)
-        self.assertEqual(sum(not record.superseded for record in records), 294)
+        self.assertEqual(len(records), 425)
+        self.assertEqual(sum(not record.superseded for record in records), 424)
         self.assertEqual(sum(record.superseded for record in records), 1)
-        protected = {
-            "1-core-patterns/courses/core-first-exchanges-2/lessons/20-asking-for-help/lesson.html",
-            "2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/lesson.html",
-            "3-freetalking/courses/talk-between-two-countries-accessible/lessons/01-this-surprised-me/lesson.html",
-            "3-freetalking/courses/talk-between-two-countries-full/lessons/01-this-surprised-me/lesson.html",
-        }
-        missing_status = {
-            error.split(": active deck", 1)[0]
-            for error in errors
-            if ": active deck needs exactly one pending/complete proofread status" in error
-        }
-        self.assertTrue(protected.issubset(missing_status))
+        superseded = [record for record in records if record.superseded]
+        self.assertEqual(superseded[0].relative, integrity.SUPERSEDED_PROTOTYPE)
+        self.assertEqual(errors, [])
 
-    def test_current_corpus_diagnostic_is_explicitly_red_until_repairs(self) -> None:
+    def test_current_corpus_diagnostic_is_green_after_repairs(self) -> None:
         _records, errors = integrity.audit_corpus()
-        self.assertTrue(errors, "legacy repair checkpoint unexpectedly has no diagnostic ledger")
-        self.assertTrue(any("proofread status" in error for error in errors), errors[:40])
+        self.assertEqual(errors, [])
 
 
 if __name__ == "__main__":

@@ -37,7 +37,7 @@ VOID = {
 EXPECTED_ACTIVE_NUMBERS = {
     "1-core-patterns": frozenset(range(1, 123)),
     "2-contextual-english": frozenset(range(1, 61)),
-    "3-freetalking": frozenset(range(1, 57)),
+    "3-freetalking": frozenset(range(1, 122)),
 }
 
 # These are the only pre-stable Freetalking articles.  Each waiver is bound to
