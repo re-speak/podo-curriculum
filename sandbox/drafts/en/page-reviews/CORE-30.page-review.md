@@ -1,0 +1,435 @@
+# Page review ledger
+
+- Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-daily-life-and-past/lessons/30-i-was-really-tired-yesterday/lesson.html`
+- SHA-256: `a4e00be5f6e9e5588e1d5320474686927118c44828c69bf572409be0203ce611`
+- Generated: **pass**
+- Mechanical validation: **pass**
+- Human page audit: **pending**
+- Owner approval: **pending**
+
+A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
+
+## 1. `lesson-goal`
+
+- Learner action: Read the displayed lesson title aloud once after hearing the can-do.
+- Tutor action: State the can-do, have the learner read the title once, then move on.
+- Visible target or prompt: Visible instruction/model: data-page-id="lesson-goal" data-act="Everyday English"> GOAL I was really tired yesterday (昨日は本当に疲れていました) Say how you or a place were in the past. Please read the title aloud.過去の自分や場所の様子を言いましょう。タイトルを声に出して読んでください。 Have the learner read the title once, then move on. <div class="section"
+- Learning target: Goal orientation for integrated use of was/were for a past state and There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—goal orientation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was/were for a past state and There was/There were for past existence during goal orientation, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for goal orientation; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 2. `words-you-know`
+
+- Learner action: Say the three familiar English words shown on the page.
+- Tutor action: Listen to the three known words; do not turn this into a new-vocabulary lesson.
+- Visible target or prompt: Visible instruction/model: data-page-id="words-you-know">Words you know (知っている単語)Say the three familiar words in English.知っている3つの単語を英語で言いましょう。ミーティング→meetingショップ→shopホーム→home <div class="transition-page"
+- Learning target: Known-word activation for integrated use of was/were for a past state and There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—known-word activation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was/were for a past state and There was/There were for past existence during known-word activation, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for known-word activation; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 3. `part1-intro`
+
+- Learner action: Read the displayed Pattern 1 title aloud once and get ready for the next activity.
+- Tutor action: Introduce Pattern 1 in one line, have the learner read the title, then move on.
+- Visible target or prompt: Visible instruction/model: data-page-id="part1-intro" data-act="Pattern 1">PART 1I was really tired yesterday.Use was with I, he, she, and it; use were with we and they. Please read the title aloud.過去の状態では I・he・she・it に was、we・they に were を使います。タイトルを声に出して読んでください。Have the learner read the title once, then move on. <div class="section"
+- Learning target: Pattern 1 transition for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 transition, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 transition; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 4. `p1-teach`
+
+- Learner action: Read every complete Pattern 1 example aloud after the brief meaning explanation.
+- Tutor action: Briefly explain the meaning, then have the learner read each example aloud.
+- Visible target or prompt: Highlighted target evidence: was | 疲れていました | was | 忙しかったです | were | 家にいました
+- Learning target: Pattern 1 meaning and model for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 meaning and model, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 meaning and model; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["was", "疲れていました", "was", "忙しかったです", "were", "家にいました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 5. `p1-read`
+
+- Learner action: Read every complete Pattern 1 sentence aloud.
+- Tutor action: Listen to each complete sentence; model only when help is actually needed.
+- Visible target or prompt: Highlighted target evidence: was | 疲れていました | was | 忙しかったです | were | 家にいました | were | うれしそうでした
+- Learning target: Pattern 1 complete-sentence read-aloud for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 complete-sentence read-aloud, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 complete-sentence read-aloud; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["was", "疲れていました", "was", "忙しかったです", "were", "家にいました", "were", "うれしそうでした"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 6. `p1-rule`
+
+- Learner action: Notice how Pattern 1 is built and read the complete examples.
+- Tutor action: Explain the displayed operation briefly and check that the learner can locate it in the examples.
+- Visible target or prompt: Visible instruction/model: data-page-id="p1-rule">See the operation (形の変化を見よう)Use was with I, he, she, and it; use were with we and they.過去の状態では I・he・she・it に was、we・they に were を使います。Use was with I, he, she, and it; use were with we and they.Pattern 1パターン1I was really tired yesterday.I was very busy yesterday. <div class="section"
+- Learning target: Pattern 1 form explanation for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 form explanation, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 form explanation; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 7. `p1-choose`
+
+- Learner action: Choose the option matching the Japanese, then read the entire completed Pattern 1 sentence aloud.
+- Tutor action: After each choice, have the learner read the whole completed sentence before moving on.
+- Visible target or prompt: Exact contrasts: was vs were | was vs were | were vs was | were vs was; highlighted cues: 疲れていました | 忙しかったです | 家にいました | うれしそうでした
+- Learning target: Pattern 1 discriminating choice for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 discriminating choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 discriminating choice, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: The exact contrasts (was vs were | was vs were | were vs was | were vs was) require a real form or meaning decision; correct alternatives vary across rows and each distractor diagnoses the named contrast.
+- Component consistency: The page uses one shared component for Pattern 1 discriminating choice; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["疲れていました", "忙しかったです", "家にいました", "うれしそうでした"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 8. `p1-reorder`
+
+- Learner action: Put the Pattern 1 chunks in order, then say the whole sentence aloud.
+- Tutor action: Let the learner build and say every full sentence; intervene only when support is needed.
+- Visible target or prompt: Visible instruction/model: data-page-id="p1-reorder" data-chunk-review="meaningful">Build the sentence (文を組み立てよう)Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。昨日は本当に疲れていました。yesterday.really tiredI was昨日はとても忙しかったです。yesterday.very busyI was私たちは昨日家にいました。yesterday.at homeWe were彼らは昨日うれしそうでした。yesterday.happyThey were <div class="section"
+- Learning target: Pattern 1 sentence assembly for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 sentence assembly—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 sentence assembly, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 sentence assembly; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 9. `p1-fill`
+
+- Learner action: Say every complete Pattern 1 sentence aloud, including all missing words.
+- Tutor action: Type only the missing words exactly as the learner says them.
+- Visible target or prompt: Exact answers: was | was | were | were
+- Learning target: Pattern 1 controlled retrieval for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 controlled retrieval, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 controlled retrieval; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["疲れていました", "忙しかったです", "家にいました", "うれしそうでした"], "blankAnswers": ["was", "was", "were", "were"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 10. `p1-translate`
+
+- Learner action: Read each Japanese cue, then say the complete Pattern 1 sentence in English.
+- Tutor action: Type each complete English sentence exactly as the learner says it.
+- Visible target or prompt: Exact answers: I was really tired yesterday. | I was very busy yesterday. | We were at home yesterday. | They were happy yesterday.; exact lexical support: 疲れた:tired | 忙しい:busy | 家で:at home | うれしい:happy; support stage: supported
+- Learning target: Pattern 1 supported whole-sentence production for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 supported whole-sentence production, before the lesson increases independence.
+- Non-target support: Only changing lexical content is supported by the exact hint chips (疲れた:tired | 忙しい:busy | 家で:at home | うれしい:happy); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 supported whole-sentence production; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I was really tired yesterday.", "I was very busy yesterday.", "We were at home yesterday.", "They were happy yesterday."], "hintChips": ["疲れた:tired", "忙しい:busy", "家で:at home", "うれしい:happy"], "supportStage": "supported", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 11. `p1-write`
+
+- Learner action: Say one personally meaningful Pattern 1 sentence using the exact prompt.
+- Tutor action: Let the learner answer aloud, react naturally, then capture and correct only what is useful.
+- Visible target or prompt: Exact learner prompt/turns: Now use “I was ___ yesterday” to describe your real state yesterday.
+- Learning target: Pattern 1 communicative production for was/were for a past state.
+- Pedagogical value: This page has one distinct job—Pattern 1 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle was/were for a past state during Pattern 1 communicative production, before the lesson increases independence.
+- Non-target support: Only changing lexical content is supported by the exact hint chips (疲れた:tired | 忙しい:busy | 家で:at home); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 1 communicative production; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["疲れた:tired", "忙しい:busy", "家で:at home"], "supportStage": "not-applicable", "substantivePrompts": ["Now use “I was ___ yesterday” to describe your real state yesterday."]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 12. `part2-intro`
+
+- Learner action: Read the displayed Pattern 2 title aloud once and get ready for the next activity.
+- Tutor action: Introduce Pattern 2 in one line, have the learner read the title, then move on.
+- Visible target or prompt: Visible instruction/model: data-page-id="part2-intro" data-act="Pattern 2">PART 2There were a lot of people.Use There was for one thing and There were for plural things. Please read the title aloud.一つのものには There was、複数のものには There were を使います。タイトルを声に出して読んでください。Have the learner read the title once, then move on. <div class="section"
+- Learning target: Pattern 2 transition for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 transition, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 2 transition; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 13. `p2-teach`
+
+- Learner action: Read every complete Pattern 2 example aloud after the brief meaning explanation.
+- Tutor action: Briefly explain the meaning, then have the learner read each example aloud.
+- Visible target or prompt: Highlighted target evidence: were | 人がたくさんいました | was | 交通量が多かったです | were | 会議がたくさんありました
+- Learning target: Pattern 2 meaning and model for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 meaning and model, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 2 meaning and model; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["were", "人がたくさんいました", "was", "交通量が多かったです", "were", "会議がたくさんありました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 14. `p2-read`
+
+- Learner action: Read every complete Pattern 2 sentence aloud.
+- Tutor action: Listen to each complete sentence; model only when help is actually needed.
+- Visible target or prompt: Highlighted target evidence: were | 人がたくさんいました | was | 交通量が多かったです | were | 会議がたくさんありました | was | 大きな店がありました
+- Learning target: Pattern 2 complete-sentence read-aloud for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 complete-sentence read-aloud, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 2 complete-sentence read-aloud; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["were", "人がたくさんいました", "was", "交通量が多かったです", "were", "会議がたくさんありました", "was", "大きな店がありました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 15. `p2-rule`
+
+- Learner action: Notice how Pattern 2 is built and read the complete examples.
+- Tutor action: Explain the displayed operation briefly and check that the learner can locate it in the examples.
+- Visible target or prompt: Visible instruction/model: data-page-id="p2-rule">See the operation (形の変化を見よう)Use There was for one thing and There were for plural things.一つのものには There was、複数のものには There were を使います。Use There was for one thing and There were for plural things.Pattern 2パターン2There were a lot of people.There was a lot of traffic. <div class="section"
+- Learning target: Pattern 2 form explanation for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 form explanation, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 2 form explanation; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 16. `p2-choose`
+
+- Learner action: Choose the option matching the Japanese, then read the entire completed Pattern 2 sentence aloud.
+- Tutor action: After each choice, have the learner read the whole completed sentence before moving on.
+- Visible target or prompt: Exact contrasts: were vs was | was vs were | were vs was | was vs were; highlighted cues: 人がたくさんいました | 交通量が多かったです | 会議がたくさんありました | 大きな店がありました
+- Learning target: Pattern 2 discriminating choice for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 discriminating choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 discriminating choice, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: The exact contrasts (were vs was | was vs were | were vs was | was vs were) require a real form or meaning decision; correct alternatives vary across rows and each distractor diagnoses the named contrast.
+- Component consistency: The page uses one shared component for Pattern 2 discriminating choice; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["人がたくさんいました", "交通量が多かったです", "会議がたくさんありました", "大きな店がありました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 17. `p2-fill`
+
+- Learner action: Say every complete Pattern 2 sentence aloud, including all missing words.
+- Tutor action: Type only the missing words exactly as the learner says them.
+- Visible target or prompt: Exact answers: were | was | were | was
+- Learning target: Pattern 2 controlled retrieval for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 controlled retrieval, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 2 controlled retrieval; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["人がたくさんいました", "交通量が多かったです", "会議がたくさんありました", "大きな店がありました"], "blankAnswers": ["were", "was", "were", "was"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 18. `p2-translate`
+
+- Learner action: Read each Japanese cue, then say the complete Pattern 2 sentence in English.
+- Tutor action: Type each complete English sentence exactly as the learner says it.
+- Visible target or prompt: Exact answers: There were a lot of people. | There was a lot of traffic. | There were a lot of meetings. | There was a big shop.; exact lexical support: 人々:people | 交通量:traffic | 会議:meeting | 大きな:big | 店:shop; support stage: supported
+- Learning target: Pattern 2 supported whole-sentence production for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 supported whole-sentence production, before the lesson increases independence.
+- Non-target support: Only changing lexical content is supported by the exact hint chips (人々:people | 交通量:traffic | 会議:meeting | 大きな:big | 店:shop); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
+- Article treatment: Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 2 supported whole-sentence production; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["There were a lot of people.", "There was a lot of traffic.", "There were a lot of meetings.", "There was a big shop."], "hintChips": ["人々:people", "交通量:traffic", "会議:meeting", "大きな:big", "店:shop"], "supportStage": "supported", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 19. `p2-write`
+
+- Learner action: Say one personally meaningful Pattern 2 sentence using the exact prompt.
+- Tutor action: Let the learner answer aloud, react naturally, then capture and correct only what is useful.
+- Visible target or prompt: Exact learner prompt/turns: Now use “There was / were ___” to say what was around you.
+- Learning target: Pattern 2 communicative production for There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—Pattern 2 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle There was/There were for past existence during Pattern 2 communicative production, before the lesson increases independence.
+- Non-target support: Only changing lexical content is supported by the exact hint chips (人々:people | 交通量:traffic | 会議:meeting); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for Pattern 2 communicative production; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["人々:people", "交通量:traffic", "会議:meeting"], "supportStage": "not-applicable", "substantivePrompts": ["Now use “There was / were ___” to say what was around you."]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 20. `part3-intro`
+
+- Learner action: Get ready to use both patterns in one conversation.
+- Tutor action: Introduce the conversation in one line, then move directly into the role-play.
+- Visible target or prompt: Visible instruction/model: data-page-id="part3-intro" data-act="Conversation">PART 3Use it in a conversation (会話で使おう)Now, let's use both patterns in a conversation.では、二つのパターンを会話で使ってみましょう。Introduce the conversation, then move on. <div class="section"
+- Learning target: Conversation transition for integrated use of was/were for a past state and There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—conversation transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was/were for a past state and There was/There were for past existence during conversation transition, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for conversation transition; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 21. `p3-model`
+
+- Learner action: Take the Me role and read every learner line aloud in the complete conversation.
+- Tutor action: Take the named partner role and read only the partner lines.
+- Visible target or prompt: Highlighted target evidence: was | 疲れていました | were | 人がたくさんいました
+- Learning target: Scripted role-play for integrated use of was/were for a past state and There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—scripted role-play—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was/were for a past state and There was/There were for past existence during scripted role-play, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for scripted role-play; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": ["was", "疲れていました", "were", "人がたくさんいました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 22. `p3-complete`
+
+- Learner action: Take the Me role and say each complete learner line, including the missing words.
+- Tutor action: Take the partner role and type only the missing words the learner says.
+- Visible target or prompt: Exact answers: was | were
+- Learning target: Role-play retrieval for integrated use of was/were for a past state and There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—role-play retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was/were for a past state and There was/There were for past existence during role-play retrieval, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for role-play retrieval; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["was", "were"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 23. `p3-freetalk`
+
+- Learner action: Answer the relevant real-life question in your own words, then ask the tutor back.
+- Tutor action: Ask the exact question, follow the most interesting detail, and give a brief real answer when asked back.
+- Visible target or prompt: Exact learner prompt/turns: What made yesterday a good or difficult day for you? | How about you?
+- Learning target: Reciprocal free talk for What made yesterday a good or difficult day for you?.
+- Pedagogical value: This page has one distinct job—reciprocal free talk—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle What made yesterday a good or difficult day for you? during reciprocal free talk, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for reciprocal free talk; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What made yesterday a good or difficult day for you?", "How about you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 24. `in-the-wild`
+
+- Learner action: Take the Me role and complete every learner line in the new situation.
+- Tutor action: Take the named partner role and keep the exchange moving naturally.
+- Visible target or prompt: Exact answers: was | were
+- Learning target: New-situation transfer for integrated use of was/were for a past state and There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—new-situation transfer—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was/were for a past state and There was/There were for past existence during new-situation transfer, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for new-situation transfer; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["was", "were"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.
+
+## 25. `native-tip`
+
+- Learner action: Compare the two conversational expressions and choose by meaning.
+- Tutor action: Explain the contrast briefly, then ask which expression fits each meaning.
+- Visible target or prompt: Visible instruction/model: data-page-id="native-tip">To be honest or for some reason? (to be honest と for some reason)To be honest introduces a frank admission; for some reason says you don't know the cause.to be honest は率直に話す前置き、for some reason は原因が分からないときに使います。Frank admission率直に言うTo be honest, I was tired.正直に言うと、疲れていました。Pick by meaning 意味で選ぶUnknown cause原因が分からないFor some reason, I was tired.なぜか疲れていました。 ← —— T →
+- Learning target: Meaning-based nuance choice for integrated use of was/were for a past state and There was/There were for past existence.
+- Pedagogical value: This page has one distinct job—meaning-based nuance choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.
+- Failure diagnoses: Difficulty here specifically shows whether the learner can handle integrated use of was/were for a past state and There was/There were for past existence during meaning-based nuance choice, before the lesson increases independence.
+- Non-target support: The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.
+- Article treatment: Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.
+- Choice/distractor quality: No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.
+- Component consistency: The page uses one shared component for meaning-based nuance choice; response capture appears only where spoken production must be recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: Every visible instruction, target, answer, hint, choice, and conversation turn on this page was read against the exact lesson bytes. Viewport inspection and the formal root human-page gate remain pending.

@@ -36,74 +36,74 @@ def rows(*items):
 LESSONS = {
     25: dict(slug="im-working-from-home-today", title="I'm working from home today", ko="오늘은 재택근무 중이에요", ja="今日は在宅勤務をしています",
         goal=("Say what you're doing at the moment.", "今していることを言いましょう。"),
-        p1=rows(("I'm {t}working from home{/t} today.", "今日は{t}在宅勤務をしています{/t}。", "I'm working from home|today."), ("I'm {t}studying at home{/t} today.", "今日は{t}家で勉強しています{/t}。", "I'm studying at home|today."), ("I'm {t}taking it easy{/t} today.", "今日は{t}のんびりしています{/t}。", "I'm taking it easy|today."), ("I'm {t}cleaning the house{/t} today.", "今日は{t}家を掃除しています{/t}。", "I'm cleaning the house|today.")),
-        p2=rows(("What are you {t}doing{/t}?", "何を{t}していますか{/t}？", "What are you doing?"), ("What are you {t}reading{/t}?", "何を{t}読んでいますか{/t}？", "What are you reading?"), ("What are you {t}making{/t}?", "何を{t}作っていますか{/t}？", "What are you making?"), ("What are you {t}watching{/t}?", "何を{t}見ていますか{/t}？", "What are you watching?")), omit_reorder=(1, 2),
-        rules=(("Use am plus -ing for something happening now.", "今していることには am と -ing を使います。"), ("Put are before you in the question, then use the -ing action.", "質問では are を you の前に置き、動作を -ing 形にします。")), prompt=("Tell me what you're doing now, then ask me.", "今していることを話してから、私にも聞いてください。")),
+        p1=rows(("{t}I'm{/t} {t}working{/t} from home today.", "今日は{t}在宅勤務を{/t}{t}しています{/t}。", "I'm working from home|today."), ("{t}I'm{/t} {t}studying{/t} at home today.", "今日は{t}家で勉強を{/t}{t}しています{/t}。", "I'm studying at home|today."), ("{t}I'm{/t} {t}taking it easy{/t} today.", "今日は{t}のんびり{/t}{t}しています{/t}。", "I'm taking it easy|today."), ("{t}I'm{/t} {t}cleaning{/t} the house today.", "今日は{t}家を掃除{/t}{t}しています{/t}。", "I'm cleaning the house|today.")),
+        p2=rows(("{t}What are you{/t} {t}doing{/t}?", "{t}何を{/t}{t}していますか{/t}？", "What are you doing?"), ("{t}What are you{/t} {t}reading{/t}?", "{t}何を{/t}{t}読んでいますか{/t}？", "What are you reading?"), ("{t}What are you{/t} {t}making{/t}?", "{t}何を{/t}{t}作っていますか{/t}？", "What are you making?"), ("{t}What are you{/t} {t}watching{/t}?", "{t}何を{/t}{t}見ていますか{/t}？", "What are you watching?")), omit_reorder=(1, 2),
+        rules=(("Use am plus -ing for something happening now.", "今していることには am と -ing を使います。"), ("Put are before you in the question, then use the -ing action.", "質問では are を you の前に置き、動作を -ing 形にします。")), prompt=("When do you focus best—at home or somewhere else? Why?", "家とそれ以外では、どこにいるときが一番集中できますか？理由も教えてください。")),
     26: dict(slug="i-usually-drive-but-today-im-walking", title="I usually drive, but today I'm walking", ko="보통 운전하지만 오늘은 걸어요", ja="普段は車ですが、今日は歩いています",
         goal=("Contrast your usual routine with what's different today.", "普段の習慣と今日だけ違うことを比べましょう。"),
-        p1=rows(("I {t}usually drive{/t} to work.", "{t}普段は車で{/t}通勤します。", "I|usually drive|to work."), ("I {t}usually walk{/t} to work.", "{t}普段は歩いて{/t}通勤します。", "I|usually walk|to work."), ("I {t}usually take the train{/t} to work.", "{t}普段は電車で{/t}通勤します。", "I|usually take the train|to work."), ("I {t}usually work{/t} at home.", "{t}普段は{/t}家で{t}働きます{/t}。", "I|usually work|at home.")),
-        p2=rows(("But today I'm {t}walking{/t}.", "でも今日は{t}歩いています{/t}。", "But today I'm walking."), ("But today I'm {t}driving{/t}.", "でも今日は{t}車で行っています{/t}。", "But today I'm driving."), ("But today I'm {t}biking{/t}.", "でも今日は{t}自転車で行っています{/t}。", "But today I'm biking."), ("But today I'm {t}working{/t}.", "でも今日は{t}働いています{/t}。", "But today I'm working.")), omit_reorder=(2,),
-        rules=(("Put usually before the plain action for a routine.", "習慣には usually を動作の原形の前に置きます。"), ("Use but today plus be and -ing for today's exception.", "今日だけ違うことには but today と be＋-ing を使います。")), prompt=("Tell me one usual routine and what's different today.", "普段の習慣と、今日だけ違うことを一つ話してください。")),
+        p1=rows(("I {t}usually drive{/t} to work.", "{t}普段は車で{/t}通勤します。", "I|usually drive|to work."), ("I {t}usually walk{/t} to work.", "{t}普段は歩いて{/t}通勤します。", "I|usually walk|to work."), ("I {t}usually take the train{/t} to work.", "{t}普段は電車で{/t}通勤します。", "I|usually take the train|to work."), ("I {t}usually work{/t} at home.", "{t}普段は家で働きます{/t}。", "I|usually work|at home.")),
+        p2=rows(("{t}But today I'm{/t} {t}walking{/t}.", "{t}でも今日は{/t}{t}歩いています{/t}。", "But today I'm walking."), ("{t}But today I'm{/t} {t}driving{/t}.", "{t}でも今日は{/t}{t}車で行っています{/t}。", "But today I'm driving."), ("{t}But today I'm{/t} {t}biking{/t}.", "{t}でも今日は{/t}{t}自転車で行っています{/t}。", "But today I'm biking."), ("{t}But today I'm{/t} {t}working{/t}.", "{t}でも今日は{/t}{t}働いています{/t}。", "But today I'm working.")), omit_reorder=(2,), omit_choice=(1,),
+        rules=(("Put usually before the plain action for a routine.", "習慣には usually を動作の原形の前に置きます。"), ("Use but today plus be and -ing for today's exception.", "今日だけ違うことには but today と be＋-ing を使います。")), prompt=("What is one part of your daily routine you would like to change? Why?", "毎日の習慣で変えたいことは何ですか？理由も教えてください。")),
     27: dict(slug="i-like-cooking", title="I like cooking", ko="요리하는 걸 좋아해요", ja="料理が好きです",
         goal=("Talk about activities you like and dislike.", "好きな活動と苦手な活動について話しましょう。"),
-        p1=rows(("I like {t}cooking{/t}.", "{t}料理すること{/t}が好きです。", "I like|cooking."), ("I like {t}walking{/t}.", "{t}歩くこと{/t}が好きです。", "I like|walking."), ("I like {t}reading{/t}.", "{t}読書{/t}が好きです。", "I like|reading."), ("I like {t}traveling{/t}.", "{t}旅行すること{/t}が好きです。", "I like|traveling.")), omit_reorder=(1,),
-        p2=rows(("I {t}love{/t} walking, but I {t}hate{/t} running.", "歩くのは{t}大好き{/t}ですが、走るのは{t}大嫌い{/t}です。", "I love walking,|but|I hate running."), ("I {t}love{/t} cooking, but I {t}hate{/t} cleaning.", "料理は{t}大好き{/t}ですが、掃除は{t}大嫌い{/t}です。", "I love cooking,|but|I hate cleaning."), ("I {t}love{/t} reading, but I {t}hate{/t} writing.", "読書は{t}大好き{/t}ですが、書くのは{t}大嫌い{/t}です。", "I love reading,|but|I hate writing."), ("I {t}love{/t} traveling, but I {t}hate{/t} flying.", "旅行は{t}大好き{/t}ですが、飛行機は{t}大嫌い{/t}です。", "I love traveling,|but|I hate flying.")),
-        rules=(("After like, use the activity in its -ing form.", "like のあとには活動を -ing 形で続けます。"), ("Use love and hate to show stronger opposite feelings.", "love と hate で、より強い反対の気持ちを表します。")), prompt=("Tell me one activity you like and one you don't.", "好きな活動と苦手な活動を一つずつ話してください。")),
+        p1=rows(("{t}I like{/t} {t}cooking{/t}.", "{t}料理すること{/t}が{t}好きです{/t}。", "I like|cooking."), ("{t}I like{/t} {t}walking{/t}.", "{t}歩くこと{/t}が{t}好きです{/t}。", "I like|walking."), ("{t}I like{/t} {t}reading{/t}.", "{t}読書{/t}が{t}好きです{/t}。", "I like|reading."), ("{t}I like{/t} {t}traveling{/t}.", "{t}旅行すること{/t}が{t}好きです{/t}。", "I like|traveling.")), omit_reorder=(1,),
+        p2=rows(("{t}I love{/t} walking, {t}but I hate{/t} running.", "歩くのは{t}大好き{/t}ですが、走るのは{t}大嫌い{/t}です。", "I love walking,|but|I hate running."), ("{t}I love{/t} cooking, {t}but I hate{/t} cleaning.", "料理は{t}大好き{/t}ですが、掃除は{t}大嫌い{/t}です。", "I love cooking,|but|I hate cleaning."), ("{t}I love{/t} reading, {t}but I hate{/t} writing.", "読書は{t}大好き{/t}ですが、書くのは{t}大嫌い{/t}です。", "I love reading,|but|I hate writing."), ("{t}I love{/t} traveling, {t}but I hate{/t} flying.", "旅行は{t}大好き{/t}ですが、飛行機は{t}大嫌い{/t}です。", "I love traveling,|but|I hate flying.")),
+        rules=(("After like, use the activity in its -ing form.", "like のあとには活動を -ing 形で続けます。"), ("Use love and hate to show stronger opposite feelings.", "love と hate で、より強い反対の気持ちを表します。")), prompt=("What hobby would you love to get better at? Why?", "もっと上達したい趣味は何ですか？理由も教えてください。")),
     28: dict(slug="are-you-free-on-friday", title="Are you free on Friday?", ko="금요일에 시간 있어요?", ja="金曜日は空いていますか？",
         goal=("Check availability and invite someone to do something.", "相手の都合を確認して、何かに誘いましょう。"),
-        p1=rows(("Are you free on {t}Friday{/t}?", "{t}金曜日{/t}は空いていますか？", "Are you free|on Friday?"), ("Are you free on {t}Saturday{/t}?", "{t}土曜日{/t}は空いていますか？", "Are you free|on Saturday?"), ("Are you free on {t}Sunday{/t}?", "{t}日曜日{/t}は空いていますか？", "Are you free|on Sunday?"), ("Are you free on {t}Tuesday{/t}?", "{t}火曜日{/t}は空いていますか？", "Are you free|on Tuesday?")),
-        p2=rows(("Would you like to {t}have dinner{/t}?", "{t}夕食を食べませんか{/t}？", "Would you like to|have dinner?"), ("Would you like to {t}have lunch{/t}?", "{t}ランチを食べませんか{/t}？", "Would you like to|have lunch?"), ("Would you like to {t}see a movie{/t}?", "{t}映画を見ませんか{/t}？", "Would you like to|see a movie?"), ("Would you like to {t}go for a walk{/t}?", "{t}散歩に行きませんか{/t}？", "Would you like to|go for a walk?")), omit_reorder=(1, 2),
-        rules=(("Use on directly before a day of the week.", "曜日の直前には on を使います。"), ("Keep Would you like to together, then add the activity.", "Would you like to をひとまとまりにして、活動を続けます。")), prompt=("Invite me to do something on a real day.", "実際の曜日を使って、私を何かに誘ってください。")),
+        p1=rows(("{t}Are you free on{/t} Friday?", "{t}金曜日は空いていますか{/t}？", "Are you free|on Friday?"), ("{t}Are you free on{/t} Saturday?", "{t}土曜日は空いていますか{/t}？", "Are you free|on Saturday?"), ("{t}Are you free on{/t} Sunday?", "{t}日曜日は空いていますか{/t}？", "Are you free|on Sunday?"), ("{t}Are you free on{/t} Tuesday?", "{t}火曜日は空いていますか{/t}？", "Are you free|on Tuesday?")),
+        p2=rows(("{t}Would you like to{/t} have dinner?", "{t}夕食を食べませんか{/t}？", "Would you like to|have dinner?"), ("{t}Would you like to{/t} have lunch?", "{t}ランチを食べませんか{/t}？", "Would you like to|have lunch?"), ("{t}Would you like to{/t} see a movie?", "{t}映画を見ませんか{/t}？", "Would you like to|see a movie?"), ("{t}Would you like to{/t} go for a walk?", "{t}散歩に行きませんか{/t}？", "Would you like to|go for a walk?")), omit_reorder=(1, 2), omit_choice=(1, 2),
+        rules=(("Use on directly before a day of the week.", "曜日の直前には on を使います。"), ("Keep Would you like to together, then add the activity.", "Would you like to をひとまとまりにして、活動を続けます。")), prompt=("What is your ideal way to spend a free evening?", "自由な夜を過ごすなら、どんな過ごし方が理想ですか？")),
     29: dict(slug="im-meeting-sam-at-six", title="I'm meeting Sam at six", ko="6시에 샘을 만나요", ja="6時にサムと会います",
         goal=("State an arrangement you've already made.", "すでに決まっている予定を伝えましょう。"),
-        p1=rows(("I'm {t}meeting Sam at six{/t}.", "{t}6時にサムと会います{/t}。", "I'm meeting Sam at six."), ("I'm {t}having lunch with Emi at one{/t}.", "{t}1時にエミとランチを食べます{/t}。", "I'm having lunch with Emi at one."), ("I'm {t}seeing Ken at seven{/t}.", "{t}7時にケンと会います{/t}。", "I'm seeing Ken at seven."), ("I'm {t}calling Yuki at eight{/t}.", "{t}8時にユキに電話します{/t}。", "I'm calling Yuki at eight.")),
-        p2=rows(("Are you still {t}coming on Tuesday{/t}?", "{t}火曜日は予定どおり来ますか{/t}？", "Are you still coming on Tuesday?"), ("Are you still {t}meeting us on Friday{/t}?", "{t}金曜日は予定どおり私たちに会いますか{/t}？", "Are you still meeting us on Friday?"), ("Are you still {t}working on Saturday{/t}?", "{t}土曜日は予定どおり仕事ですか{/t}？", "Are you still working on Saturday?"), ("Are you still {t}leaving on Sunday{/t}?", "{t}日曜日は予定どおり出発しますか{/t}？", "Are you still leaving on Sunday?")), omit_reorder=(1, 2),
-        rules=(("Use be plus -ing for a plan already fixed in your diary.", "手帳に入っている決定済みの予定には be＋-ing を使います。"), ("Put still before the arranged -ing action to confirm it hasn't changed.", "予定が変わっていないか確かめるときは still を -ing の動作の前に置きます。")), prompt=("Tell me one fixed plan, then confirm one of mine.", "決まっている予定を一つ話してから、私の予定も確認してください。")),
+        p1=rows(("{t}I'm{/t} meeting Sam {t}at{/t} six.", "{t}6時に{/t}サムと{t}会います{/t}。", "I'm meeting Sam at six."), ("{t}I'm{/t} having lunch with Emi {t}at{/t} one.", "{t}1時に{/t}エミと{t}ランチを食べます{/t}。", "I'm having lunch with Emi at one."), ("{t}I'm{/t} seeing Ken {t}at{/t} seven.", "{t}7時に{/t}ケンと{t}会います{/t}。", "I'm seeing Ken at seven."), ("{t}I'm{/t} calling Yuki {t}at{/t} eight.", "{t}8時に{/t}ユキに{t}電話します{/t}。", "I'm calling Yuki at eight.")),
+        p2=rows(("{t}Are you still{/t} coming on Tuesday?", "{t}火曜日は予定どおり{/t}来ますか？", "Are you still coming on Tuesday?"), ("{t}Are you still{/t} meeting us on Friday?", "{t}金曜日は予定どおり{/t}私たちに会いますか？", "Are you still meeting us on Friday?"), ("{t}Are you still{/t} working on Saturday?", "{t}土曜日は予定どおり{/t}仕事ですか？", "Are you still working on Saturday?"), ("{t}Are you still{/t} leaving on Sunday?", "{t}日曜日は予定どおり{/t}出発しますか？", "Are you still leaving on Sunday?")), omit_reorder=(1, 2),
+        rules=(("Use be plus -ing for a plan already fixed in your diary.", "手帳に入っている決定済みの予定には be＋-ing を使います。"), ("Put still before the arranged -ing action to confirm it hasn't changed.", "予定が変わっていないか確かめるときは still を -ing の動作の前に置きます。")), prompt=("What plan are you looking forward to this week? Why?", "今週、楽しみにしている予定は何ですか？理由も教えてください。")),
     30: dict(slug="i-was-really-tired-yesterday", title="I was really tired yesterday", ko="어제 정말 피곤했어요", ja="昨日は本当に疲れていました",
         goal=("Say how you or a place were in the past.", "過去の自分や場所の様子を言いましょう。"),
-        p1=rows(("I was {t}really tired{/t} yesterday.", "昨日は{t}本当に疲れていました{/t}。", "I was|really tired|yesterday."), ("I was {t}very busy{/t} yesterday.", "昨日は{t}とても忙しかったです{/t}。", "I was|very busy|yesterday."), ("I was {t}at home{/t} yesterday.", "昨日は{t}家にいました{/t}。", "I was|at home|yesterday."), ("I was {t}happy{/t} yesterday.", "昨日は{t}うれしかったです{/t}。", "I was|happy|yesterday.")),
-        p2=rows(("There were a lot of {t}people{/t}.", "{t}人がたくさん{/t}いました。", "There were|a lot of people."), ("There were a lot of {t}cars{/t}.", "{t}車がたくさん{/t}ありました。", "There were|a lot of cars."), ("There were a lot of {t}meetings{/t}.", "{t}会議がたくさん{/t}ありました。", "There were|a lot of meetings."), ("There were a lot of {t}shops{/t}.", "{t}店がたくさん{/t}ありました。", "There were|a lot of shops.")), omit_reorder=(2,),
-        rules=(("Use was with I, he, she, and it for a past state.", "過去の状態には I・he・she・it と was を使います。"), ("Use There were before a plural thing that existed.", "過去に複数のものがあったときは There were を使います。")), prompt=("Tell me how you were yesterday and what was around you.", "昨日の自分の様子と、周りに何があったかを話してください。")),
+        p1=rows(("I {t}was{/t} really tired yesterday.", "昨日は本当に{t}疲れていました{/t}。", "I was|really tired|yesterday."), ("I {t}was{/t} very busy yesterday.", "昨日はとても{t}忙しかったです{/t}。", "I was|very busy|yesterday."), ("We {t}were{/t} at home yesterday.", "私たちは昨日{t}家にいました{/t}。", "We were|at home|yesterday."), ("They {t}were{/t} happy yesterday.", "彼らは昨日{t}うれしそうでした{/t}。", "They were|happy|yesterday.")),
+        p2=rows(("There {t}were{/t} a lot of people.", "{t}人がたくさんいました{/t}。", "There were|a lot of people."), ("There {t}was{/t} a lot of traffic.", "{t}交通量が多かったです{/t}。", "There was|a lot of traffic."), ("There {t}were{/t} a lot of meetings.", "{t}会議がたくさんありました{/t}。", "There were|a lot of meetings."), ("There {t}was{/t} a big shop.", "{t}大きな店がありました{/t}。", "There was|a big shop.")), omit_reorder=(2,),
+        rules=(("Use was with I, he, she, and it; use were with we and they.", "過去の状態では I・he・she・it に was、we・they に were を使います。"), ("Use There was for one thing and There were for plural things.", "一つのものには There was、複数のものには There were を使います。")), prompt=("What made yesterday a good or difficult day for you?", "昨日を良い一日、または大変な一日にしたのは何でしたか？")),
     31: dict(slug="i-went-out-last-night", title="I went out last night", ko="어젯밤에 나갔어요", ja="昨夜は出かけました",
         goal=("Say whether you went out or stayed in, with one detail.", "外出したか家にいたかを、詳しい情報と一緒に話しましょう。"),
-        p1=rows(("I went to {t}a concert{/t} last night.", "昨夜は{t}コンサートに{/t}行きました。", "I went to|a concert|last night."), ("I went to {t}a restaurant{/t} last night.", "昨夜は{t}レストランに{/t}行きました。", "I went to|a restaurant|last night."), ("I went to {t}the gym{/t} last night.", "昨夜は{t}ジムに{/t}行きました。", "I went to|the gym|last night."), ("I went to {t}a friend's house{/t} last night.", "昨夜は{t}友人の家に{/t}行きました。", "I went to|a friend's house|last night.")),
-        p2=rows(("I stayed home and {t}watched a movie{/t}.", "家にいて{t}映画を見ました{/t}。", "I stayed home|and|watched a movie."), ("I stayed home and {t}cooked dinner{/t}.", "家にいて{t}夕食を作りました{/t}。", "I stayed home|and|cooked dinner."), ("I stayed home and {t}read a book{/t}.", "家にいて{t}本を読みました{/t}。", "I stayed home|and|read a book."), ("I stayed home and {t}cleaned the house{/t}.", "家にいて{t}家を掃除しました{/t}。", "I stayed home|and|cleaned the house.")),
-        rules=(("Use went to plus a place for a finished trip out.", "終わった外出には went to と場所を使います。"), ("Use stayed home and a past action for an evening in.", "家で過ごした夜には stayed home and のあとに過去の動作を続けます。")), prompt=("Tell me what you really did last night.", "昨夜、本当に何をしたか話してください。")),
+        p1=rows(("I {t}went to{/t} a concert last night.", "昨夜はコンサートに{t}行きました{/t}。", "I went to|a concert|last night."), ("I {t}went to{/t} a restaurant last night.", "昨夜はレストランに{t}行きました{/t}。", "I went to|a restaurant|last night."), ("I {t}went to{/t} the gym last night.", "昨夜はジムに{t}行きました{/t}。", "I went to|the gym|last night."), ("I {t}went to{/t} a friend's house last night.", "昨夜は友人の家に{t}行きました{/t}。", "I went to|a friend's house|last night.")),
+        p2=rows(("I {t}stayed home and{/t} watched a movie.", "{t}家にいて{/t}映画を見ました。", "I stayed home|and|watched a movie."), ("I {t}stayed home and{/t} cooked dinner.", "{t}家にいて{/t}夕食を作りました。", "I stayed home|and|cooked dinner."), ("I {t}stayed home and{/t} read a book.", "{t}家にいて{/t}本を読みました。", "I stayed home|and|read a book."), ("I {t}stayed home and{/t} cleaned the house.", "{t}家にいて{/t}家を掃除しました。", "I stayed home|and|cleaned the house.")), omit_choice=(1, 2),
+        rules=(("Use went to plus a place for a finished trip out.", "終わった外出には went to と場所を使います。"), ("Use stayed home and a past action for an evening in.", "家で過ごした夜には stayed home and のあとに過去の動作を続けます。")), prompt=("Which do you prefer: a night out or a quiet night at home? Why?", "外出する夜と家で静かに過ごす夜では、どちらが好きですか？理由も教えてください。")),
     33: dict(slug="did-you-have-a-good-time", title="Did you have a good time?", ko="즐거운 시간 보냈어요?", ja="楽しかったですか？",
         goal=("Ask whether something happened and answer.", "過去の出来事についてたずね、答えましょう。"),
-        p1=rows(("Did you {t}have a good time{/t}?", "{t}楽しかったですか{/t}？", "Did you|have a good time?"), ("Did you {t}see the movie{/t}?", "{t}その映画を見ましたか{/t}？", "Did you|see the movie?"), ("Did you {t}go to the concert{/t}?", "{t}コンサートに行きましたか{/t}？", "Did you|go to the concert?"), ("Did you {t}meet Sam{/t}?", "{t}サムに会いましたか{/t}？", "Did you|meet Sam?")),
-        p2=rows(("Yes, we did. It was {t}great{/t}.", "はい。{t}最高でした{/t}。", "Yes, we did.|It was great."), ("Yes, we did. It was {t}fun{/t}.", "はい。{t}楽しかったです{/t}。", "Yes, we did.|It was fun."), ("Yes, we did. It was {t}interesting{/t}.", "はい。{t}面白かったです{/t}。", "Yes, we did.|It was interesting."), ("Yes, we did. It was {t}nice{/t}.", "はい。{t}よかったです{/t}。", "Yes, we did.|It was nice.")), omit_reorder=(1, 2),
-        rules=(("Did carries the past, so keep the main verb plain.", "過去は Did が表すので、主な動詞は原形にします。"), ("Repeat did in the short answer, then add a past comment.", "短い答えでは did を繰り返し、そのあとに過去の感想を加えます。")), prompt=("Ask me about one past event, then give your own answer.", "過去の出来事を一つ私に聞いてから、自分の答えも言ってください。")),
+        p1=rows(("{t}Did you{/t} have a good time?", "楽しい時間を{t}過ごしましたか{/t}？", "Did you|have a good time?"), ("{t}Did you{/t} see the movie?", "その映画を{t}見ましたか{/t}？", "Did you|see the movie?"), ("{t}Did you{/t} go to the concert?", "コンサートに{t}行きましたか{/t}？", "Did you|go to the concert?"), ("{t}Did you{/t} meet Sam?", "サムに{t}会いましたか{/t}？", "Did you|meet Sam?")),
+        p2=rows(("{t}Yes, we did.{/t} It was great.", "{t}はい、楽しかったです{/t}。最高でした。", "Yes, we did.|It was great."), ("{t}No, we didn't.{/t} We missed it.", "{t}いいえ、行けませんでした{/t}。間に合いませんでした。", "No, we didn't.|We missed it."), ("{t}Yes, we did.{/t} It was interesting.", "{t}はい、楽しかったです{/t}。面白かったです。", "Yes, we did.|It was interesting."), ("{t}No, we didn't.{/t} We stayed home.", "{t}いいえ、行きませんでした{/t}。家にいました。", "No, we didn't.|We stayed home.")), omit_reorder=(1, 2),
+        rules=(("Did carries the past, so keep the main verb plain.", "過去は Did が表すので、主な動詞は原形にします。"), ("Use Yes, we did or No, we didn't, then add one past detail.", "Yes, we did または No, we didn't で答え、そのあとに過去の情報を一つ加えます。")), prompt=("What was the most enjoyable thing you did recently?", "最近したことで、一番楽しかったことは何ですか？")),
     34: dict(slug="i-didnt-sleep-well", title="I didn't sleep well", ko="잠을 잘 못 잤어요", ja="よく眠れませんでした",
         goal=("Give a negative answer about the past and add a reason.", "過去について否定で答え、理由を加えましょう。"),
-        p1=rows(("I didn't {t}sleep well{/t}.", "{t}よく眠れませんでした{/t}。", "I didn't|sleep well."), ("I didn't {t}eat breakfast{/t}.", "{t}朝食を食べませんでした{/t}。", "I didn't|eat breakfast."), ("I didn't {t}go out{/t}.", "{t}外出しませんでした{/t}。", "I didn't|go out."), ("I didn't {t}finish the work{/t}.", "{t}仕事を終えませんでした{/t}。", "I didn't|finish the work.")),
-        p2=rows(("I had too much {t}coffee{/t}.", "{t}コーヒーを飲みすぎました{/t}。", "I had|too much coffee."), ("I had too much {t}work{/t}.", "{t}仕事が多すぎました{/t}。", "I had|too much work."), ("I had too much {t}food{/t}.", "{t}食べ物が多すぎました{/t}。", "I had|too much food."), ("I had too much {t}homework{/t}.", "{t}宿題が多すぎました{/t}。", "I had|too much homework.")), omit_reorder=(1, 2),
-        rules=(("Didn't carries the past, so use the plain verb after it.", "過去は didn't が表すので、そのあとは動詞の原形を使います。"), ("Use too much before an uncountable amount that caused a problem.", "問題になるほど多い不可算の量には too much を使います。")), prompt=("Tell me one thing you didn't do and why.", "しなかったことを一つ、その理由と一緒に話してください。")),
+        p1=rows(("{t}I didn't{/t} sleep well.", "よく{t}眠れませんでした{/t}。", "I didn't|sleep well."), ("{t}I didn't{/t} eat breakfast.", "朝食を{t}食べませんでした{/t}。", "I didn't|eat breakfast."), ("{t}I didn't{/t} go out.", "{t}外出しませんでした{/t}。", "I didn't|go out."), ("{t}I didn't{/t} finish the work.", "仕事を{t}終えませんでした{/t}。", "I didn't|finish the work.")),
+        p2=rows(("{t}I had too much{/t} coffee.", "コーヒーを{t}飲みすぎました{/t}。", "I had|too much coffee."), ("{t}I had too much{/t} work.", "仕事が{t}多すぎました{/t}。", "I had|too much work."), ("{t}I had too much{/t} food.", "食べ物が{t}多すぎました{/t}。", "I had|too much food."), ("{t}I had too much{/t} homework.", "宿題が{t}多すぎました{/t}。", "I had|too much homework.")), omit_reorder=(1, 2), omit_choice=(2,),
+        rules=(("Didn't carries the past, so use the plain verb after it.", "過去は didn't が表すので、そのあとは動詞の原形を使います。"), ("Use too much before an uncountable amount that caused a problem.", "問題になるほど多い不可算の量には too much を使います。")), prompt=("What usually helps you recover after a bad night's sleep?", "よく眠れなかった翌日は、何をすると回復できますか？")),
     35: dict(slug="first-we-ate-then-we-walked-around", title="First we ate, then we walked around", ko="먼저 먹고, 그다음 걸어 다녔어요", ja="まず食べて、それから歩き回りました",
         goal=("Put three finished events in a clear order.", "終わった三つの出来事を分かりやすい順番で話しましょう。"),
-        p1=rows(("First we {t}ate{/t}, and then we {t}walked around{/t}.", "まず{t}食べて{/t}、それから{t}歩き回りました{/t}。", "First we ate,|and then|we walked around."), ("First we {t}had coffee{/t}, and then we {t}went shopping{/t}.", "まず{t}コーヒーを飲んで{/t}、それから{t}買い物に行きました{/t}。", "First we had coffee,|and then|we went shopping."), ("First we {t}saw the park{/t}, and then we {t}had lunch{/t}.", "まず{t}公園を見て{/t}、それから{t}昼食を食べました{/t}。", "First we saw the park,|and then|we had lunch."), ("First we {t}met Sam{/t}, and then we {t}took a taxi{/t}.", "まず{t}サムに会って{/t}、それから{t}タクシーに乗りました{/t}。", "First we met Sam,|and then|we took a taxi.")),
-        p2=rows(("In the end, we {t}took a taxi home{/t}.", "最後は{t}タクシーで帰りました{/t}。", "In the end,|we took a taxi home."), ("In the end, we {t}walked home{/t}.", "最後は{t}歩いて帰りました{/t}。", "In the end,|we walked home."), ("In the end, we {t}had dinner{/t}.", "最後は{t}夕食を食べました{/t}。", "In the end,|we had dinner."), ("In the end, we {t}went home{/t}.", "最後は{t}家に帰りました{/t}。", "In the end,|we went home.")), omit_reorder=(2,),
-        rules=(("Put First at the start, then and then before the second event.", "First を文頭に置き、二つ目の出来事の前に and then を置きます。"), ("Put In the end at the start of the final event.", "最後の出来事の文頭には In the end を置きます。")), prompt=("Tell me three things you did in order.", "したことを三つ、順番に話してください。")),
+        p1=rows(("{t}First{/t} we ate, {t}and then{/t} we walked around.", "{t}まず{/t}食べて、{t}それから{/t}歩き回りました。", "First we ate,|and then|we walked around."), ("{t}First{/t} we had coffee, {t}and then{/t} we went shopping.", "{t}まず{/t}コーヒーを飲んで、{t}それから{/t}買い物に行きました。", "First we had coffee,|and then|we went shopping."), ("{t}First{/t} we saw the park, {t}and then{/t} we had lunch.", "{t}まず{/t}公園を見て、{t}それから{/t}昼食を食べました。", "First we saw the park,|and then|we had lunch."), ("{t}First{/t} we met Sam, {t}and then{/t} we took a taxi.", "{t}まず{/t}サムに会って、{t}それから{/t}タクシーに乗りました。", "First we met Sam,|and then|we took a taxi.")),
+        p2=rows(("{t}In the end{/t}, we took a taxi home.", "{t}最後は{/t}タクシーで帰りました。", "In the end,|we took a taxi home."), ("{t}In the end{/t}, we walked home.", "{t}最後は{/t}歩いて帰りました。", "In the end,|we walked home."), ("{t}In the end{/t}, we had dinner.", "{t}最後は{/t}夕食を食べました。", "In the end,|we had dinner."), ("{t}In the end{/t}, we went home.", "{t}最後は{/t}家に帰りました。", "In the end,|we went home.")), omit_reorder=(2,), omit_choice=(1, 2),
+        rules=(("Put First at the start, then and then before the second event.", "First を文頭に置き、二つ目の出来事の前に and then を置きます。"), ("Put In the end at the start of the final event.", "最後の出来事の文頭には In the end を置きます。")), prompt=("Tell me about a day that did not go as planned. What happened?", "予定どおりにいかなかった日のことを教えてください。何がありましたか？")),
     36: dict(slug="i-was-cooking-when-you-called", title="I was cooking when you called", ko="전화했을 때 요리 중이었어요", ja="電話をくれたとき、料理中でした",
         goal=("Say what was in progress when something else happened.", "別の出来事が起きたとき、何をしていたか言いましょう。"),
-        p1=rows(("I was {t}cooking{/t} when you {t}called{/t}.", "あなたが{t}電話した{/t}とき、私は{t}料理をしていました{/t}。", "I was cooking|when|you called."), ("I was {t}walking{/t} when you {t}arrived{/t}.", "あなたが{t}着いた{/t}とき、私は{t}歩いていました{/t}。", "I was walking|when|you arrived."), ("I was {t}working{/t} when you {t}texted{/t}.", "あなたが{t}メッセージを送った{/t}とき、私は{t}働いていました{/t}。", "I was working|when|you texted."), ("I was {t}sleeping{/t} when you {t}knocked{/t}.", "あなたが{t}ノックした{/t}とき、私は{t}寝ていました{/t}。", "I was sleeping|when|you knocked.")),
-        p2=rows(("While I was {t}cooking{/t}, he {t}set the table{/t}.", "私が{t}料理をしている間{/t}、彼は{t}テーブルを整えました{/t}。", "While I was cooking,|he set the table."), ("While I was {t}working{/t}, he {t}made coffee{/t}.", "私が{t}仕事をしている間{/t}、彼は{t}コーヒーを入れました{/t}。", "While I was working,|he made coffee."), ("While I was {t}cleaning{/t}, he {t}cooked dinner{/t}.", "私が{t}掃除をしている間{/t}、彼は{t}夕食を作りました{/t}。", "While I was cleaning,|he cooked dinner."), ("While I was {t}shopping{/t}, he {t}called me{/t}.", "私が{t}買い物をしている間{/t}、彼は{t}電話をくれました{/t}。", "While I was shopping,|he called me.")), omit_reorder=(2,),
-        rules=(("Use was plus -ing for the longer action; put the interrupting past action after when.", "長く続いていた動作には was＋-ing、途中で起きた過去の動作には when を使います。"), ("Start with While plus the action in progress, then name the shorter finished action.", "While のあとに進行中の動作を置き、そのあとに短く終わった動作を言います。")), prompt=("Tell me what you were doing when something happened.", "何かが起きたとき、何をしていたか話してください。")),
+        p1=rows(("I {t}was cooking when{/t} you called.", "{t}あなたが電話したとき、私は料理をしていました{/t}。", "I was cooking|when|you called."), ("I {t}was walking when{/t} you arrived.", "{t}あなたが着いたとき、私は歩いていました{/t}。", "I was walking|when|you arrived."), ("I {t}was working when{/t} you texted.", "{t}あなたがメッセージを送ったとき、私は働いていました{/t}。", "I was working|when|you texted."), ("I {t}was sleeping when{/t} you knocked.", "{t}あなたがノックしたとき、私は寝ていました{/t}。", "I was sleeping|when|you knocked.")),
+        p2=rows(("{t}While I was cooking{/t}, he set the table.", "{t}私が料理をしている間{/t}、彼は食卓を整えました。", "While I was cooking,|he set the table."), ("{t}While I was working{/t}, he made coffee.", "{t}私が仕事をしている間{/t}、彼はコーヒーを入れました。", "While I was working,|he made coffee."), ("{t}While I was cleaning{/t}, he cooked dinner.", "{t}私が掃除をしている間{/t}、彼は夕食を作りました。", "While I was cleaning,|he cooked dinner."), ("{t}While I was shopping{/t}, he called me.", "{t}私が買い物をしている間{/t}、彼は電話をくれました。", "While I was shopping,|he called me.")), omit_reorder=(2,),
+        rules=(("Use was plus -ing for the longer action; put the interrupting past action after when.", "長く続いていた動作には was＋-ing、途中で起きた過去の動作には when を使います。"), ("Start with While plus the action in progress, then name the shorter finished action.", "While のあとに進行中の動作を置き、そのあとに短く終わった動作を言います。")), prompt=("Have you ever been interrupted at the worst possible moment? What happened?", "最悪のタイミングで邪魔されたことはありますか？何がありましたか？")),
 }
 
 
 VOCAB = {
 25: dict(new="right now|今すぐ; at the moment|今; work from home|在宅勤務をする; take it easy|のんびりする", recycled="", assumed="today|今日; work|働く; do|する; study|勉強する; clean|掃除する; make|作る; read|読む; watch|見る; home|家; house|家", receptive="What are you doing?|何をしていますか？"),
 26: dict(new="usually|普段; walk|歩く; bike|自転車で行く; take the train|電車で行く", recycled="drive|車で行く|CORE-14", assumed="today|今日; work|働く; at home|家で; home|家; train|電車; office|オフィス", receptive="every day|毎日; not today|今日は違う"),
-27: dict(new="like|好き; love|大好き; hate|大嫌い; cooking|料理すること; walking|歩くこと; running|走ること; traveling|旅行すること", recycled="walk|歩く|CORE-26", assumed="read|読む; reading|読書; cleaning|掃除; writing|書くこと; flying|飛行機に乗ること", receptive="What do you like doing?|何をするのが好きですか？; not really my thing|あまり好みではない"),
+27: dict(new="like|好き; love|大好き; hate|大嫌い; cooking|料理すること; walking|歩くこと; running|走ること; traveling|旅行すること", recycled="walk|歩く|CORE-26", assumed="cook|料理する; travel|旅行する; read|読む; reading|読書; cleaning|掃除; writing|書くこと; flying|飛行機に乗ること", receptive="What do you like doing?|何をするのが好きですか？; not really my thing|あまり好みではない"),
 28: dict(new="free|空いている; Friday|金曜日; Saturday|土曜日; Sunday|日曜日; Tuesday|火曜日; Would you like to ...?|…しませんか？; Yes, I'd love to.|ぜひ。; Sorry, I can't.|すみません、無理です。", recycled="", assumed="dinner|夕食; lunch|昼食; movie|映画; walk|散歩; see|見る; go|行く; day|曜日", receptive="How about ...?|…はどうですか？"),
 29: dict(new="meet|会う; still|まだ・予定どおり; See you then.|では、そのときに。", recycled="Tuesday|火曜日|CORE-28; Friday|金曜日|CORE-28; Saturday|土曜日|CORE-28; Sunday|日曜日|CORE-28", assumed="meeting Ken|ケンと会う; have lunch|昼食をとる; lunch|昼食; see|会う; call|電話する; come|来る; work|働く; leave|出発する; us|私たち; Sam|サム; Emi|エミ; Ken|ケン; Yuki|ユキ; one|1時; six|6時; seven|7時; eight|8時", receptive="What time?|何時ですか？; arrangement|決まった予定"),
-30: dict(new="was|be の過去形; were|be の過去形; yesterday|昨日; tired|疲れた; busy|忙しい; a lot of|たくさんの; meeting|会議", recycled="shop|店|CORE-10", assumed="really|本当に; very|とても; at home|家で; home|家; happy|うれしい; people|人々; cars|車", receptive="to be honest|正直に言うと; for some reason|なぜか"),
+30: dict(new="was|be の過去形; were|be の過去形; yesterday|昨日; tired|疲れた; busy|忙しい; a lot of|たくさんの; meeting|会議; traffic|交通量", recycled="shop|店|CORE-10", assumed="really|本当に; very|とても; at home|家で; home|家; happy|うれしい; people|人々; big|大きな", receptive="to be honest|正直に言うと; for some reason|なぜか"),
 31: dict(new="went|go の過去形; stayed|stay の過去形; watched|watch の過去形; cooked|cook の過去形; cleaned|clean の過去形; concert|コンサート; last night|昨夜", recycled="restaurant|レストラン|CORE-10", assumed="movie|映画; dinner|夕食; read|読む; gym|ジム; book|本; friend|友人; friend's house|友人の家; house|家; home|家; It was fun.|楽しかったです。; Nothing special.|特に何も。", receptive=""),
-33: dict(new="did|do の過去形; good time|楽しい時間; great|最高の; interesting|面白い; Not bad.|悪くない", recycled="was|be の過去形|CORE-30; went|go の過去形|CORE-31; had|have の過去形|CORE-32; saw|see の過去形|CORE-32; concert|コンサート|CORE-31; meet|会う|CORE-29", assumed="have|過ごす; see|見る; go|行く; movie|映画; Sam|サム; fun|楽しい; nice|よい", receptive="How was it?|どうでしたか？"),
+33: dict(new="did|do の過去形; didn't|did not の短縮形; good time|楽しい時間; great|最高の; interesting|面白い; missed it|間に合わなかった; Not bad.|悪くない", recycled="was|be の過去形|CORE-30; went|go の過去形|CORE-31; stayed|stay の過去形|CORE-31; had|have の過去形|CORE-32; saw|see の過去形|CORE-32; concert|コンサート|CORE-31; meet|会う|CORE-29", assumed="stayed home|家にいた; have|過ごす; see|見る; go|行く; movie|映画; Sam|サム; fun|楽しい; nice|よい; home|家", receptive="How was it?|どうでしたか？"),
 34: dict(new="didn't|～しなかった; sleep well|よく眠る; go out|外出する; too much|多すぎる; unfortunately|残念ながら; That's why.|だからです。", recycled="had|have の過去形|CORE-32; coffee|コーヒー|CORE-9", assumed="eat|食べる; finish|終える; breakfast|朝食; work|仕事; food|食べ物; homework|宿題", receptive="What happened?|どうしたのですか？"),
 35: dict(new="ate|eat の過去形; met|meet の過去形; first|まず; and then|それから; in the end|最後には; walked around|歩き回った; finally|最後に", recycled="had|have の過去形|CORE-32; went|go の過去形|CORE-31; saw|see の過去形|CORE-32; took|take の過去形|CORE-32", assumed="walked home|歩いて帰った; taxi|タクシー; dinner|夕食; lunch|昼食; shopping|買い物; home|家; park|公園; Sam|サム; coffee|コーヒー", receptive="after that|そのあと"),
-36: dict(new="when|…したとき; while|…している間; called|電話した; arrived|到着した; texted|メッセージを送った; knocked|ノックした; set the table|食卓を整えた; all of a sudden|突然", recycled="was|be の過去形|CORE-30; cooking|料理すること|CORE-27; walking|歩くこと|CORE-27; cleaned|掃除した|CORE-31; cooked|料理した|CORE-31; coffee|コーヒー|CORE-9", assumed="working|働いている; sleeping|寝ている; shopping|買い物; dinner|夕食; table|テーブル; made|作った; happened|起きた; at that moment|そのとき", receptive=""),
+36: dict(new="when|…したとき; while|…している間; called|電話した; arrived|到着した; texted|メッセージを送った; knocked|ノックした; set the table|食卓を整えた; all of a sudden|突然", recycled="was|be の過去形|CORE-30; cooking|料理すること|CORE-27; walking|歩くこと|CORE-27; cleaned|掃除した|CORE-31; cooked|料理した|CORE-31; coffee|コーヒー|CORE-9", assumed="working|働いている; sleeping|寝ている; cleaning|掃除中; shopping|買い物; dinner|夕食; table|テーブル; made|作った; happened|起きた; at that moment|そのとき", receptive=""),
 }
 
 PRODUCTIVE_VOCABULARY = {
@@ -112,9 +112,9 @@ PRODUCTIVE_VOCABULARY = {
 27: {"like", "love", "hate", "cooking", "walking", "running", "reading", "traveling", "cleaning", "writing", "flying"},
 28: {"free", "friday", "saturday", "sunday", "tuesday", "dinner", "lunch", "movie", "walk", "see", "go"},
 29: {"meet", "still", "meeting ken", "have lunch", "see", "call", "come", "work", "leave", "sam", "emi", "ken", "yuki", "one", "six", "seven", "eight"},
-30: {"was", "were", "yesterday", "tired", "busy", "very", "a lot of", "meeting", "shop", "people", "cars", "happy", "at home"},
+30: {"was", "were", "yesterday", "tired", "busy", "very", "a lot of", "meeting", "shop", "people", "traffic", "big", "happy", "at home"},
 31: {"went", "stayed", "watched", "cooked", "cleaned", "concert", "restaurant", "movie", "dinner", "read", "gym", "book", "friend's house", "house", "home", "it was fun.", "nothing special."},
-33: {"did", "good time", "great", "interesting", "not bad.", "was", "went", "had", "saw", "concert", "meet", "have", "see", "go", "movie", "sam", "fun", "nice"},
+33: {"did", "didn't", "good time", "great", "interesting", "missed it", "not bad.", "was", "went", "stayed", "stayed home", "had", "saw", "concert", "meet", "have", "see", "go", "movie", "sam", "fun", "nice", "home"},
 34: {"didn't", "sleep well", "go out", "too much", "had", "coffee", "eat", "finish", "breakfast", "work", "food", "homework"},
 35: {"ate", "met", "first", "and then", "in the end", "walked around", "walked home", "had", "went", "saw", "took", "taxi", "dinner", "lunch", "shopping", "home", "park", "sam", "coffee"},
 36: {"when", "while", "called", "arrived", "texted", "knocked", "set the table", "all of a sudden", "at that moment", "was", "cooking", "walking", "cleaned", "cooked", "coffee", "working", "sleeping", "shopping", "dinner", "happened"},
@@ -126,8 +126,14 @@ KNOWN_WORDS = {
 
 
 CHOICE_CUES = {
+    (25, 1): ("今日は{t}在宅勤務をしています{/t}。", "今日は{t}家で勉強しています{/t}。", "今日は{t}のんびりしています{/t}。", "今日は{t}家を掃除しています{/t}。"),
+    (25, 2): ("何を{t}していますか{/t}？", "何を{t}読んでいますか{/t}？", "何を{t}作っていますか{/t}？", "何を{t}見ていますか{/t}？"),
     (26, 1): ("{t}普段は{/t}車で通勤します。", "{t}普段は{/t}歩いて通勤します。", "{t}普段は{/t}電車で通勤します。", "{t}普段は{/t}家で働きます。"),
-    (27, 2): ("歩くのは{t}大好き{/t}ですが、走るのは大嫌いです。", "料理は{t}大好き{/t}ですが、掃除は大嫌いです。", "読書は{t}大好き{/t}ですが、書くのは大嫌いです。", "旅行は{t}大好き{/t}ですが、飛行機は大嫌いです。"),
+    (26, 2): ("でも今日は{t}歩いています{/t}。", "でも今日は{t}車で行っています{/t}。", "でも今日は{t}自転車で行っています{/t}。", "でも今日は{t}働いています{/t}。"),
+    (27, 1): ("{t}料理すること{/t}が好きです。", "{t}歩くこと{/t}が好きです。", "{t}読書{/t}が好きです。", "{t}旅行すること{/t}が好きです。"),
+    (27, 2): ("{t}歩くのは大好き{/t}ですが、走るのは大嫌いです。", "{t}料理は大好き{/t}ですが、掃除は大嫌いです。", "{t}読書は大好き{/t}ですが、書くのは大嫌いです。", "{t}旅行は大好き{/t}ですが、飛行機は大嫌いです。"),
+    (29, 1): ("6時にサムと{t}会います{/t}。", "1時にエミと{t}ランチを食べます{/t}。", "7時にケンと{t}会います{/t}。", "8時にユキに{t}電話します{/t}。"),
+    (33, 2): ("{t}はい{/t}、楽しかったです。最高でした。", "{t}いいえ{/t}、行けませんでした。間に合いませんでした。", "{t}はい{/t}、楽しかったです。面白かったです。", "{t}いいえ{/t}、行きませんでした。家にいました。"),
     (35, 1): ("{t}まず{/t}食べて、それから歩き回りました。", "{t}まず{/t}コーヒーを飲んで、それから買い物に行きました。", "{t}まず{/t}公園を見て、それから昼食を食べました。", "{t}まず{/t}サムに会って、それからタクシーに乗りました。"),
     (36, 1): ("電話が来たとき、{t}料理をしていました{/t}。", "着いたとき、{t}歩いていました{/t}。", "メッセージが来たとき、{t}働いていました{/t}。", "ノックが聞こえたとき、{t}寝ていました{/t}。"),
     (36, 2): ("{t}料理をしている間{/t}、彼は食卓を整えました。", "{t}仕事をしている間{/t}、彼はコーヒーを入れました。", "{t}掃除をしている間{/t}、彼は夕食を作りました。", "{t}買い物をしている間{/t}、彼は電話をくれました。"),
@@ -162,26 +168,26 @@ for n in NUMBERS:
     # Explicit word-level decisions; each correct item is a substring in its row.
     correct = {
       25: (("working", "studying", "taking", "cleaning"), ("doing", "reading", "making", "watching")),
-      26: (("usually",)*4, ("walking", "driving", "biking", "working")),
-      27: (("cooking", "walking", "reading", "traveling"), ("love",)*4),
+      26: (("usually drive", "usually walk", "usually take the train", "usually work"), ("walking", "driving", "biking", "working")),
+      27: (("cooking", "walking", "reading", "traveling"), ("love walking", "love cooking", "love reading", "love traveling")),
       28: (("Friday", "Saturday", "Sunday", "Tuesday"), ("have", "have", "see", "go")),
       29: (("meeting", "having", "seeing", "calling"), ("coming", "meeting", "working", "leaving")),
-      30: (("was",)*4, ("were",)*4),
+      30: (("was", "was", "were", "were"), ("were", "was", "were", "was")),
       31: (("went",)*4, ("stayed",)*4),
-      33: (("have", "see", "go", "meet"), ("great", "fun", "interesting", "nice")),
+      33: (("have", "see", "go", "meet"), ("did", "didn't", "did", "didn't")),
       34: (("sleep", "eat", "go", "finish"), ("too much",)*4),
       35: (("First",)*4, ("In the end",)*4),
       36: (("was cooking", "was walking", "was working", "was sleeping"), ("was cooking", "was working", "was cleaning", "was shopping")),
     }[n]
     wrong = {
       25: (("work", "study", "take", "clean"), ("do", "read", "make", "watch")),
-      26: (("today",)*4, ("walk", "drive", "bike", "work")),
-      27: (("cook", "walk", "read", "travel"), ("like",)*4),
+      26: (("drive usually", "walk usually", "take usually the train", "work usually"), ("walk", "drive", "bike", "work")),
+      27: (("cook", "walk", "read", "travel"), ("like walking", "like cooking", "like reading", "like traveling")),
       28: (("Friday's", "Saturday's", "Sunday's", "Tuesday's"), ("having", "having", "seeing", "going")),
       29: (("meet", "have", "see", "call"), ("come", "meet", "work", "leave")),
-      30: (("were",)*4, ("was",)*4),
+      30: (("were", "were", "was", "was"), ("was", "were", "was", "were")),
       31: (("go",)*4, ("stay",)*4),
-      33: (("had", "saw", "went", "met"), ("greatly", "funny", "interest", "nicely")),
+      33: (("had", "saw", "went", "met"), ("didn't", "did", "didn't", "did")),
       34: (("slept", "ate", "went", "finished"), ("too many",)*4),
       35: (("Then",)*4, ("At first",)*4),
       36: (("cooked", "walked", "worked", "slept"), ("cooked", "worked", "cleaned", "shopped")),
@@ -206,19 +212,46 @@ for n in NUMBERS:
     SPECS[n] = make_spec(n, meanings, writes, correct, wrong, rd, tips)
 
 
+WRITE_PROMPTS = {
+25: (("Now use “I'm ___ing today” to say what you are doing today.", "では、「I'm ___ing today」を使って、今日していることを言ってください。"), ("Now use “What are you ___ing?” to ask me about one activity.", "では、「What are you ___ing?」を使って、私がしていることを一つたずねてください。")),
+26: (("Now use “I usually ___” to describe one real routine.", "では、「I usually ___」を使って、本当の習慣を一つ話してください。"), ("Now use “But today I'm ___ing” to say what is different today.", "では、「But today I'm ___ing」を使って、今日だけ違うことを言ってください。")),
+27: (("Now use “I like ___ing” to name one activity you genuinely enjoy.", "では、「I like ___ing」を使って、本当に好きな活動を一つ言ってください。"), ("Now use “I love ___ing, but I hate ___ing” to contrast two real preferences.", "では、「I love ___ing, but I hate ___ing」を使って、本当の好みを二つ対比してください。")),
+28: (("Now use “Are you free on ___?” to check my availability on a real day.", "では、「Are you free on ___?」を使って、実際の曜日に私が空いているかたずねてください。"), ("Now use “Would you like to ___?” to invite me to do something specific.", "では、「Would you like to ___?」を使って、私を具体的な活動に誘ってください。")),
+29: (("Now use “I'm ___ing ___ at ___” to tell me one fixed plan.", "では、「I'm ___ing ___ at ___」を使って、決まっている予定を一つ教えてください。"), ("Now use “Are you still ___ing on ___?” to confirm one of my plans.", "では、「Are you still ___ing on ___?」を使って、私の予定を一つ確認してください。")),
+30: (("Now use “I was ___ yesterday” to describe your real state yesterday.", "では、「I was ___ yesterday」を使って、昨日の本当の様子を話してください。"), ("Now use “There was / were ___” to say what was around you.", "では、「There was / were ___」を使って、周りに何があったか言ってください。")),
+31: (("Now use “I went to ___ last night” to name one place you went.", "では、「I went to ___ last night」を使って、行った場所を一つ言ってください。"), ("Now use “I stayed home and ___” to say what you did on a different evening.", "では、「I stayed home and ___」を使って、別の夜に家でしたことを言ってください。")),
+33: (("Now use “Did you ___?” to ask me about one past event.", "では、「Did you ___?」を使って、過去の出来事を一つ私にたずねてください。"), ("Now use “Yes, we did” or “No, we didn't,” then add one true detail.", "では、「Yes, we did」または「No, we didn't」で答え、本当の情報を一つ加えてください。")),
+34: (("Now use “I didn't ___” to say one thing you really did not do.", "では、「I didn't ___」を使って、本当にしなかったことを一つ言ってください。"), ("Now use “I had too much ___” to give a real or imagined reason.", "では、「I had too much ___」を使って、本当または想像の理由を一つ言ってください。")),
+35: (("Now use “First ___, and then ___” to order the first two events in a real story.", "では、「First ___, and then ___」を使って、本当の話の最初の二つを順番に言ってください。"), ("Now use “In the end, ___” to give the final event.", "では、「In the end, ___」を使って、最後の出来事を言ってください。")),
+36: (("Now use “I was ___ing when ___” to describe one interrupted action.", "では、「I was ___ing when ___」を使って、途中で別のことが起きた動作を一つ話してください。"), ("Now use “While I was ___ing, ___” to say what another person did at the same time.", "では、「While I was ___ing, ___」を使って、同じときに別の人がしたことを言ってください。")),
+}
+
+FILL_HINTS = {
+25: ((("働く", "work"), ("勉強する", "study"), ("のんびりする", "take it easy"), ("掃除する", "clean")), (("する", "do"), ("読む", "read"), ("作る", "make"), ("見る", "watch"))),
+26: ((("車で行く", "drive"), ("歩く", "walk"), ("電車で行く", "take the train"), ("働く", "work")), (("歩く", "walk"), ("車で行く", "drive"), ("自転車で行く", "bike"), ("働く", "work"))),
+27: ((("料理する", "cook"), ("歩く", "walk"), ("読む", "read"), ("旅行する", "travel")), None),
+36: ((("料理中", "cooking"), ("歩いている", "walking"), ("仕事中", "working"), ("寝ている", "sleeping")), (("料理中", "cooking"), ("仕事中", "working"), ("掃除中", "cleaning"), ("買い物中", "shopping"))),
+}
+
+for number in NUMBERS:
+    SPECS[number]["writes"] = WRITE_PROMPTS[number]
+    SPECS[number]["fill_hints"] = FILL_HINTS.get(number, (None, None))
+
+
 TRANSLATE_HINTS = {
-25: (("在宅勤務:work from home", "家:home; 勉強する:study", "のんびりする:take it easy", "家:house; 掃除する:clean"), ("する:do", "読む:read", "作る:make", "見る:watch")),
+25: (("在宅勤務:work from home", "家:home; 勉強する:study", "のんびりする:take it easy", "家:house; 掃除する:clean"), ("", "読む:read", "作る:make", "見る:watch")),
 26: (("車で行く:drive", "歩く:walk", "電車:train", "家で:at home; 働く:work"), ("歩く:walk", "車で行く:drive", "自転車で行く:bike", "働く:work")),
 27: (("料理:cooking", "歩くこと:walking", "読書:reading", "旅行:traveling"), ("歩くこと:walking", "料理:cooking", "読書:reading", "旅行:traveling")),
 28: (("金曜日:Friday", "土曜日:Saturday", "日曜日:Sunday", "火曜日:Tuesday"), ("夕食:dinner", "昼食:lunch", "映画:movie", "散歩:walk")),
 29: (("サム:Sam; 6時:six", "エミ:Emi; 昼食:lunch; 1時:one", "ケン:Ken; 7時:seven", "ユキ:Yuki; 8時:eight"), ("火曜日:Tuesday", "金曜日:Friday", "土曜日:Saturday", "日曜日:Sunday")),
-30: (("疲れた:tired", "忙しい:busy", "家で:at home", "うれしい:happy"), ("人々:people", "車:cars", "会議:meeting", "店:shop")),
+30: (("疲れた:tired", "忙しい:busy", "家で:at home", "うれしい:happy"), ("人々:people", "交通量:traffic", "会議:meeting", "大きな:big; 店:shop")),
 31: (("コンサート:concert", "レストラン:restaurant", "ジム:gym", "友人の家:friend's house"), ("映画:movie", "夕食:dinner", "本:book", "家:house")),
-33: (("楽しい時間:good time", "映画:movie", "コンサート:concert", "サム:Sam"), ("最高:great", "楽しい:fun", "面白い:interesting", "よい:nice")),
+33: (("楽しい時間:good time", "映画:movie", "コンサート:concert", "サム:Sam"), ("最高:great", "間に合わなかった:missed it", "面白い:interesting", "家にいた:stayed home")),
 34: (("よく眠る:sleep well", "朝食:breakfast", "外出する:go out", "仕事:work"), ("コーヒー:coffee", "仕事:work", "食べ物:food", "宿題:homework")),
 35: (("食べた:ate; 歩き回った:walked around", "コーヒー:coffee; 買い物:shopping", "公園:park; 昼食:lunch", "サム:Sam; タクシー:taxi"), ("タクシー:taxi", "家:home", "夕食:dinner", "家:home")),
 36: (("料理:cooking; 電話した:called", "歩くこと:walking; 到着した:arrived", "仕事中:working; メッセージを送った:texted", "寝ている:sleeping; ノックした:knocked"), ("料理:cooking; 食卓を整える:set the table", "仕事中:working; コーヒー:coffee", "掃除した:cleaned; 夕食:dinner", "買い物:shopping; 電話した:called")),
 }
+TRANSLATE_STAGES = {n: ("supported", "supported") for n in NUMBERS}
 OPEN_MENUS = {n: (TRANSLATE_HINTS[n][0][:3], TRANSLATE_HINTS[n][1][:3]) for n in NUMBERS}
 
 
@@ -237,33 +270,28 @@ DIALOGUES = {
 36: dict(model=dlg("Friend",0,0,("What were you doing when I called?","電話したとき何をしていたの？"),("What did he do while you were cooking?","あなたが料理中、彼は何をしたの？"),("Was my call expected?","私の電話は予想していた？"),("No—it happened all of a sudden.","ううん、突然だったよ。")), wild=dlg("Coworker",1,1,("What were you doing when I arrived?","私が着いたとき何をしていましたか？"),("What did he do while you were working?","仕事中、彼は何をしましたか？"),("When did he make coffee?","彼がコーヒーを入れたのはいつですか？"),("At that moment.","そのときです。"))),
 }
 
+# Free Talk is a genuine topic conversation, not another controlled-pattern
+# worksheet. The learner answers one relevant question in their own words and
+# naturally asks the tutor back; today's pattern is optional here.
 LIVE_SCENES = {
-25: (("text","other","Tutor","What are you doing today?","今日は何をしていますか？"),("input","me","Me","I'm ___ing today.","今日、本当にしていること"),("text","other","Tutor","Now ask what I'm doing.","今度は、私が何をしているか聞いてください。"),("input","me","Me","What are you ___ing?","聞きたい動作"),("input","other","Tutor","Tutor's answer","先生の本当の答え")),
-26: (("text","other","Tutor","How do you usually get to work?","普段はどうやって通勤しますか？"),("input","me","Me","I usually ___.","本当の習慣"),("text","other","Tutor","What's different today?","今日は何が違いますか？"),("input","me","Me","But today I'm ___ing.","今日だけ違うこと"),("text","me","Me","How about you?","あなたはどうですか？"),("input","other","Tutor","Tutor's answer: usual routine and today's exception","先生の本当の習慣と今日だけ違うこと")),
-27: (("text","other","Tutor","What do you like doing?","何をするのが好きですか？"),("input","me","Me","I like ___ing.","本当に好きな活動"),("text","other","Tutor","Name one activity you love and one you hate.","大好きな活動と苦手な活動を一つずつ言ってください。"),("input","me","Me","I love ___ing, but I hate ___ing.","自分の本当の好み"),("text","me","Me","What do you like doing?","あなたは何をするのが好きですか？"),("input","other","Tutor","Tutor's answer: real preferences","先生の本当の好み")),
-28: (("text","other","Tutor","Ask whether I'm free on a real day.","実際の曜日を使って、私が空いているか聞いてください。"),("input","me","Me","Are you free on ___?","実際の曜日"),("input","other","Tutor","Tutor's answer: Say yes, or say no and name a day you are free.","はい、または、いいえのあとに空いている曜日を言う"),("text","other","Tutor","Use the day I said I was free, then invite me.","先生が空いていると言った曜日を使って、誘ってください。"),("input","me","Me","Would you like to ___?","先生が空いている日の実際の誘い"),("input","other","Tutor","Tutor's answer: Yes, I'd love to. / Sorry, I can't, and give a reason.","先生の本当の返事と理由")),
-29: (("text","other","Tutor","Tell me one plan already in your diary.","手帳に入っている予定を一つ教えてください。"),("input","me","Me","I'm ___ing ___ at ___.","実際の決定済みの予定"),("text","other","Tutor","I'm meeting Ken on Tuesday.","私は火曜日にケンと会います。"),("text","other","Tutor","Use my activity and day to confirm my plan.","私の動作と曜日で、予定を確認してください。"),("input","me","Me","Are you still ___ing on ___?","先生の予定の meeting Ken と Tuesday"),("input","other","Tutor","Tutor's answer: Yes, I am. / No, I'm not, with the changed plan.","先生の本当の答えと変更後の予定")),
-30: (("text","other","Tutor","How were you yesterday?","昨日はどうでしたか？"),("input","me","Me","I was ___ yesterday.","昨日の本当の様子"),("text","other","Tutor","What was there around you?","周りには何がありましたか？"),("input","me","Me","There were a lot of ___.","実際にたくさんあったもの"),("text","me","Me","How about you?","あなたはどうでしたか？"),("input","other","Tutor","Tutor's answer: past state and what was there","先生の昨日の様子と、周りにあったもの")),
-31: (("text","other","Tutor","Tell me about one evening when you went out.","外出した夜について話してください。"),("input","me","Me","I went to ___ last night.","実際または言いたい行き先"),("text","other","Tutor","Now tell me about a different evening at home.","今度は別の、家で過ごした夜について話してください。"),("input","me","Me","I stayed home and ___.","家でしたこと"),("text","me","Me","What did you do last night?","あなたは昨夜、何をしましたか？"),("input","other","Tutor","Tutor's answer: one real past evening","先生の本当の昨夜の話")),
-33: (("text","other","Tutor","Ask me about one past event.","過去の出来事を一つ私に聞いてください。"),("input","me","Me","Did you ___?","聞きたい出来事"),("input","other","Tutor","Tutor's answer: Yes, I did. / No, I didn't, with one detail.","先生の本当の答えと詳しい情報"),("text","other","Tutor","Think of something you did with friends. Did you and your friends have a good time?","友達としたことを思い出してください。あなたと友達は楽しかったですか？"),("input","me","Me","Yes, we did. It was ___.","自分と友達が実際に楽しんだ出来事の感想")),
-34: (("text","other","Tutor","Tell me one thing you didn't do.","しなかったことを一つ教えてください。"),("input","me","Me","I didn't ___.","本当にしなかったこと"),("text","other","Tutor","What was the reason?","理由は何でしたか？"),("input","me","Me","I had too much ___.","本当の理由"),("text","me","Me","How about you?","あなたはどうですか？"),("input","other","Tutor","Tutor's answer: one thing you didn't do and a true reason","先生がしなかったことと本当の理由")),
-35: (("text","other","Tutor","Tell me the first two events in order.","最初の二つの出来事を順番に話してください。"),("input","me","Me","First we ___, and then we ___.","実際の最初の二つ"),("text","other","Tutor","How did the story end?","最後はどうなりましたか？"),("input","me","Me","In the end, we ___.","実際の最後の出来事"),("text","me","Me","What did you do?","あなたは何をしましたか？"),("input","other","Tutor","Tutor's answer: three real events in order","先生の三つの本当の出来事")),
-36: (("text","other","Tutor","What were you doing when something happened?","何かが起きたとき、何をしていましたか？"),("input","me","Me","I was ___ing when you ___ed.","進行中の動作と、先生がした短い動作"),("text","other","Tutor","What did he do during another activity?","別の活動中、彼は何をしましたか？"),("input","me","Me","While I was ___ing, he ___.","進行中の動作と、彼がした短い動作"),("text","me","Me","What were you doing?","あなたは何をしていましたか？"),("input","other","Tutor","Tutor's answer: one true interrupted action","先生の本当の出来事")),
+    n: (
+        ("text", "other", "Tutor", LESSONS[n]["prompt"][0], LESSONS[n]["prompt"][1]),
+        ("input", "me", "Me", "Student's answer", "自分の本当の答え"),
+        ("text", "me", "Me", "How about you?", "先生はどうですか？"),
+        ("input", "other", "Tutor", "Tutor's answer", "先生の本当の答え"),
+    )
+    for n in NUMBERS
 }
-LIVE_HINTS = {}
-for n in NUMBERS:
-    learner_inputs = [i for i, event in enumerate(LIVE_SCENES[n]) if event[0:2] == ("input", "me")]
-    LIVE_HINTS[n] = {i: OPEN_MENUS[n][part] for part, i in enumerate(learner_inputs)}
-LIVE_HINTS[29][4] = ("ケンと会う:meeting Ken", "火曜日:Tuesday")
+LIVE_HINTS = {n: {} for n in NUMBERS}
 SUPPORT_LINE_OWNERS = {28: "CORE-28 supporting expression", 29: "CORE-29 supporting expression", 31: "CORE-31 supporting expression", 33: "CORE-33 supporting expression", 34: "CORE-34 supporting expression", 36: "CORE-36 supporting expression"}
 FINAL_LINE_OWNERSHIP = {n: {v: (DIALOGUES[n][v][6][0], SUPPORT_LINE_OWNERS.get(n, f"CORE-{n} current pattern")) for v in ("model","wild")} for n in NUMBERS}
 
 
 @contextlib.contextmanager
 def patched_shell():
-    names = ("LESSONS","VOCAB","KNOWN_WORDS","TRANSLATE_HINTS","OPEN_MENUS","SPECS","DIALOGUES","LIVE_SCENES","LIVE_HINTS","FINAL_LINE_OWNERSHIP","SUPPORT_LINE_OWNERS","COURSE","PILOT")
+    names = ("LESSONS","VOCAB","KNOWN_WORDS","TRANSLATE_HINTS","TRANSLATE_STAGES","OPEN_MENUS","SPECS","DIALOGUES","LIVE_SCENES","LIVE_HINTS","FINAL_LINE_OWNERSHIP","SUPPORT_LINE_OWNERS","COURSE","PILOT")
     old = {name: getattr(shell, name) for name in names}
-    values = {"LESSONS":LESSONS,"VOCAB":VOCAB,"KNOWN_WORDS":KNOWN_WORDS,"TRANSLATE_HINTS":TRANSLATE_HINTS,"OPEN_MENUS":OPEN_MENUS,"SPECS":SPECS,"DIALOGUES":DIALOGUES,"LIVE_SCENES":LIVE_SCENES,"LIVE_HINTS":LIVE_HINTS,"FINAL_LINE_OWNERSHIP":FINAL_LINE_OWNERSHIP,"SUPPORT_LINE_OWNERS":SUPPORT_LINE_OWNERS,"COURSE":COURSE,"PILOT":PILOT}
+    values = {"LESSONS":LESSONS,"VOCAB":VOCAB,"KNOWN_WORDS":KNOWN_WORDS,"TRANSLATE_HINTS":TRANSLATE_HINTS,"TRANSLATE_STAGES":TRANSLATE_STAGES,"OPEN_MENUS":OPEN_MENUS,"SPECS":SPECS,"DIALOGUES":DIALOGUES,"LIVE_SCENES":LIVE_SCENES,"LIVE_HINTS":LIVE_HINTS,"FINAL_LINE_OWNERSHIP":FINAL_LINE_OWNERSHIP,"SUPPORT_LINE_OWNERS":SUPPORT_LINE_OWNERS,"COURSE":COURSE,"PILOT":PILOT}
     for name, value in values.items(): setattr(shell, name, value)
     try: yield
     finally:

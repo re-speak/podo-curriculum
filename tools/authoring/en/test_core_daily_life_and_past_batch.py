@@ -51,17 +51,21 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
         self.assertEqual(set(batch.NUMBERS), set(range(25, 37)) - {32})
         self.assertEqual(set(batch.LESSONS), set(batch.NUMBERS))
         digest = hashlib.sha256(batch.PRESERVED.read_bytes()).hexdigest()
-        self.assertEqual(digest, "3ea3b1d966afab071b762cd20a5f5787fd50c1ea25a59630f6afb11b066a25a7")
+        self.assertEqual(
+            digest,
+            "ad1e2e2dbcd228f8dbc3e52866dc18b4f22e7619f43ffde2a72e63d74925dcf8",
+        )
         core32 = vocabulary.parse(batch.PRESERVED.read_text(encoding="utf-8"))["categories"]
         self.assertEqual(
-            {(e["english"], e["source"]) for e in core32["recycled"]},
+            {(entry["english"], entry["source"]) for entry in core32["recycled"]},
             {("went", "CORE-31"), ("café", "CORE-7"), ("restaurant", "CORE-10")},
         )
 
     def test_every_semantic_field_is_explicit(self):
         expected = set(batch.NUMBERS)
         for mapping in (batch.SPECS, batch.VOCAB, batch.KNOWN_WORDS, batch.DIALOGUES,
-                        batch.LIVE_SCENES, batch.TRANSLATE_HINTS, batch.OPEN_MENUS):
+                        batch.LIVE_SCENES, batch.TRANSLATE_HINTS, batch.TRANSLATE_STAGES,
+                        batch.OPEN_MENUS, batch.WRITE_PROMPTS):
             self.assertEqual(set(mapping), expected)
         for n in batch.NUMBERS:
             self.assertEqual(set(batch.VOCAB[n]), {"new", "recycled", "assumed", "receptive"})
@@ -85,7 +89,10 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
         }
         for n, models in expected.items():
             self.assertEqual(tuple(core.strip_marks(batch.LESSONS[n][f"p{p}"][0][0]) for p in (1, 2)), models)
-        self.assertTrue(all(core.strip_marks(r[0]).startswith("There were a lot of ") for r in batch.LESSONS[30]["p2"]))
+        self.assertEqual(
+            [core.strip_marks(r[0]).split()[1] for r in batch.LESSONS[30]["p2"]],
+            ["were", "was", "were", "was"],
+        )
         self.assertTrue(all(core.strip_marks(r[0]).startswith("I had too much ") for r in batch.LESSONS[34]["p2"]))
         self.assertTrue(all(" when you " in core.strip_marks(r[0]) for r in batch.LESSONS[36]["p1"]))
         self.assertTrue(all(core.strip_marks(r[0]).startswith("While I was ") and ", he " in core.strip_marks(r[0]) for r in batch.LESSONS[36]["p2"]))
@@ -98,7 +105,7 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
                 for i, (ja, prefix, correct, wrong, suffix) in enumerate(choices):
                     self.assertEqual(prefix + correct + suffix, core.strip_marks(batch.LESSONS[n][f"p{part}"][i][0]))
                     self.assertNotEqual(correct, wrong)
-                    self.assertEqual(ja.count("{t}"), 1)
+                    self.assertGreaterEqual(ja.count("{t}"), 1)
                     self.assertLessEqual(len(correct.split()), 4)
                     self.assertNotIn(".", correct)
 
@@ -135,8 +142,8 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
                 self.assertEqual(len(batch.TRANSLATE_HINTS[n][part]), 4)
                 self.assertTrue(batch.OPEN_MENUS[n][part])
             self.assertTrue(batch.PRODUCTIVE_VOCABULARY[n] <= owned, (n, sorted(batch.PRODUCTIVE_VOCABULARY[n] - owned)))
-            learner_inputs = {i for i, e in enumerate(batch.LIVE_SCENES[n]) if e[0:2] == ("input", "me")}
-            self.assertEqual(set(batch.LIVE_HINTS[n]), learner_inputs)
+            self.assertEqual(batch.TRANSLATE_STAGES[n], ("supported", "supported"))
+            self.assertEqual(batch.LIVE_HINTS[n], {})
 
     def test_derived_learner_language_has_non_receptive_ownership(self):
         for n, data in batch.LESSONS.items():
@@ -197,10 +204,13 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
         self.assertEqual(batch.DIALOGUES[34]["model"][6][0], "That's why I didn't sleep well.")
         self.assertEqual(batch.DIALOGUES[36]["model"][6][0], "No—it happened all of a sudden.")
         for n, scene in batch.LIVE_SCENES.items():
-            self.assertTrue(any(e[0:2] == ("input", "other") and "Tutor's answer" in e[3] for e in scene), n)
-            self.assertTrue(any(e[1] == "me" and ("you" in e[3].casefold() or "how about" in e[3].casefold()) for e in scene), n)
-        self.assertIn("name a day you are free", batch.LIVE_SCENES[28][2][3])
-        self.assertIn("Use the day I said I was free", batch.LIVE_SCENES[28][3][3])
+            self.assertEqual(len(scene), 4, n)
+            self.assertEqual(scene[0][0:2], ("text", "other"), n)
+            self.assertEqual(scene[0][3:5], batch.LESSONS[n]["prompt"], n)
+            self.assertEqual(scene[1][0:2], ("input", "me"), n)
+            self.assertEqual(scene[2][0:4], ("text", "me", "Me", "How about you?"), n)
+            self.assertEqual(scene[3][0:2], ("input", "other"), n)
+            self.assertIn("Tutor's answer", scene[3][3], n)
         for variant in ("model", "wild"):
             core31 = " ".join(turn[0] for turn in batch.DIALOGUES[31][variant][3:] if isinstance(turn, tuple))
             self.assertNotIn("Friday", core31)
@@ -215,11 +225,8 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
             self.assertTrue(batch.DIALOGUES[29][variant][3][0].startswith("What time"))
             self.assertIn("after that", batch.DIALOGUES[35][variant][4][0].casefold())
 
-        self.assertEqual(batch.LIVE_SCENES[29][2][0:2], ("text", "other"))
-        self.assertEqual(batch.LIVE_SCENES[29][2][3], "I'm meeting Ken on Tuesday.")
-        self.assertIn("my activity and day", batch.LIVE_SCENES[29][3][3])
-        self.assertEqual(batch.LIVE_HINTS[29][4], ("ケンと会う:meeting Ken", "火曜日:Tuesday"))
-        self.assertRegex(batch.LIVE_SCENES[33][3][3], r"Did you and your friends .+\?$")
+        self.assertIn("looking forward", batch.LIVE_SCENES[29][0][3])
+        self.assertIn("most enjoyable", batch.LIVE_SCENES[33][0][3])
         for n in (25, 28, 29, 31, 33, 34, 36):
             tutor_lines = " ".join(
                 turn[0] for variant in batch.DIALOGUES[n].values() for turn in variant[3:6]
@@ -229,16 +236,43 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
                 self.assertNotIn(coaching, tutor_lines, (n, coaching))
 
     def test_reviewed_hints_and_tips_are_source_locked(self):
-        self.assertEqual(batch.TRANSLATE_HINTS[25][1], ("する:do", "読む:read", "作る:make", "見る:watch"))
+        self.assertEqual(batch.TRANSLATE_HINTS[25][1], ("", "読む:read", "作る:make", "見る:watch"))
         self.assertEqual(batch.TRANSLATE_HINTS[26][0][0], "車で行く:drive")
         self.assertEqual(batch.TRANSLATE_HINTS[28][1][0], "夕食:dinner")
-        self.assertEqual(batch.TRANSLATE_HINTS[30][1], ("人々:people", "車:cars", "会議:meeting", "店:shop"))
-        self.assertEqual(batch.TRANSLATE_HINTS[33][1][1], "楽しい:fun")
+        self.assertEqual(batch.TRANSLATE_HINTS[30][1], ("人々:people", "交通量:traffic", "会議:meeting", "大きな:big; 店:shop"))
+        self.assertEqual(batch.TRANSLATE_HINTS[33][1][1], "間に合わなかった:missed it")
         self.assertIn("歩き回った:walked around", batch.TRANSLATE_HINTS[35][0][0])
         self.assertIn("電話した:called", batch.TRANSLATE_HINTS[36][0][0])
         self.assertEqual(batch.SPECS[27]["tip"][0], "Hate or not really my thing?")
         self.assertEqual(batch.SPECS[30]["tip"][0], "To be honest or for some reason?")
         self.assertEqual(batch.SPECS[36]["tip"][0], "All of a sudden or at that moment?")
+
+    def test_approved_workflow_is_source_locked(self):
+        for n in batch.NUMBERS:
+            for prompt_en, prompt_ja in batch.SPECS[n]["writes"]:
+                self.assertIn("Now use", prompt_en, n)
+                self.assertNotIn("Pattern 1", prompt_en, n)
+                self.assertNotIn("Pattern 2", prompt_en, n)
+                self.assertTrue(prompt_ja.startswith("では"), n)
+
+            self.assertIn("?", batch.LESSONS[n]["prompt"][0], n)
+            self.assertEqual(batch.LIVE_SCENES[n][2][3], "How about you?", n)
+            self.assertEqual(batch.TRANSLATE_STAGES[n], ("supported", "supported"), n)
+            for hint_page in batch.TRANSLATE_HINTS[n]:
+                self.assertTrue(any(hint.strip() for hint in hint_page), n)
+
+            omitted = set(batch.LESSONS[n].get("omit_choice", ()))
+            for part, rows in enumerate(batch.SPECS[n]["choices"], start=1):
+                if part not in omitted:
+                    self.assertGreater(len({row[2] for row in rows}), 1, (n, part))
+
+        self.assertEqual(batch.LESSONS[28]["omit_choice"], (1, 2))
+        self.assertEqual(batch.LESSONS[31]["omit_choice"], (1, 2))
+        self.assertIn(2, batch.LESSONS[34]["omit_choice"])
+        self.assertEqual(batch.LESSONS[35]["omit_choice"], (1, 2))
+        core33_answers = [core.strip_marks(row[0]) for row in batch.LESSONS[33]["p2"]]
+        self.assertTrue(any(line.startswith("Yes, we did.") for line in core33_answers))
+        self.assertTrue(any(line.startswith("No, we didn't.") for line in core33_answers))
 
     def test_every_deck_has_exactly_one_complete_marker(self):
         paths = [batch.PRESERVED] + [batch.build(n, batch.LESSONS[n])[0] for n in batch.NUMBERS]
