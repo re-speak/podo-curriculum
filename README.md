@@ -236,7 +236,7 @@ gh pr create --base main --head stage
 What each step actually runs:
 
 1. **PR into `stage` → `podo-curriculum-validate`** runs schema, structure, packaging and the contract check, and comments the plan. Fires on any PR targeting `stage` or `main`, and labels the plan with the env that merging it would deploy to.
-2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to `stage`, `qa` and `dev`, automatically.** One build: validate once, then the three applies side by side as their own steps, because nothing about them is shared — separate grape, separate database, separate GCS prefix. A failure therefore fails that environment's step and leaves the other two to finish; which one broke, and where, is on the build's step list. Verify before going on — these are the only environments where a mistake is cheap.
+2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to `stage`, `qa` and `dev`, automatically.** One build: validate once, then the three applies side by side as their own steps, because nothing about them is shared — separate grape, separate database, separate GCS prefix. Cloud Build cancels the sibling steps when one of them fails, so a broken environment still stops the other two — what you gain is seeing which one broke, and where, on the build's step list rather than in one merged log. Verify before going on — these are the only environments where a mistake is cheap.
 3. **PR `stage → main`.** That PR *is* the release: its diff is the release note and its review is the gate. Review it as a deploy approval, because that is what it is.
 4. **Merge it → `podo-curriculum-deploy-prod` applies to prod, automatically** — a learner in a live class sees the change immediately.
 
@@ -262,7 +262,13 @@ gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
 ```
 
 `_DEPLOY_ENV` also takes a comma-separated list (`stage,qa,dev`) — that is exactly
-what the `stage` push trigger passes. A `prod` anywhere in the list still has to
+what the `stage` push trigger passes. **Write a list with gcloud's alternate
+delimiter**, because a bare comma is how `--substitutions` separates one key=value
+pair from the next and the second half parses as a key:
+
+```sh
+--substitutions="^:^_DEPLOY_ENV=stage,qa,dev"
+``` A `prod` anywhere in the list still has to
 pass the "is an ancestor of `main`" check; a list is not a way around the gate.
 
 That path is why `prod` still refuses any commit that is not an ancestor of `main`.
