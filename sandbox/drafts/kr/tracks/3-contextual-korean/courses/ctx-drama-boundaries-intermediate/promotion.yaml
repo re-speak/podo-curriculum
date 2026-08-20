@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/ctx-drama-boundaries-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-warning/lesson.html
+      slug: 01-warning
+      week: 1
+      title:
+        ko: "\uacbd\uace0"
+        en: "Warning"
+        ja: "\u8b66\u544a"
+    - source: 02-being-firm/lesson.html
+      slug: 02-being-firm
+      week: 2
+      title:
+        ko: "\ub2e8\ud638\ud568"
+        en: "Being firm"
+        ja: "\u6bc5\u7136\u3068\u3057\u305f\u614b\u5ea6"
+    - source: 03-power-struggle/lesson.html
+      slug: 03-power-struggle
+      week: 3
+      title:
+        ko: "\uae30\uc2f8\uc6c0"
+        en: "Power Struggle"
+        ja: "\u4e3b\u5c0e\u6a29\u4e89\u3044"
+    - source: 04-refusal/lesson.html
+      slug: 04-refusal
+      week: 4
+      title:
+        ko: "\uac70\uc808"
+        en: "Refusal"
+        ja: "\u62d2\u7d76"
+    - source: 05-responsibility/lesson.html
+      slug: 05-responsibility
+      week: 5
+      title:
+        ko: "\ucc45\uc784"
+        en: "Responsibility"
+        ja: "\u8cac\u4efb"
+    - source: 06-crisis-response/lesson.html
+      slug: 06-crisis-response
+      week: 6
+      title:
+        ko: "\uc704\uae30 \ub300\ucc98"
+        en: "Crisis Response"
+        ja: "\u5371\u6a5f\u5bfe\u5fdc"
+    - source: 07-resolve/lesson.html
+      slug: 07-resolve
+      week: 7
+      title:
+        ko: "\uacb0\uc2ec"
+        en: "Resolve"
+        ja: "\u6c7a\u610f"
+    - source: 08-confrontation/lesson.html
+      slug: 08-confrontation
+      week: 8
+      title:
+        ko: "\ub530\uc9c0\uae30"
+        en: "Confrontation"
+        ja: "\u554f\u3044\u8a70\u3081"
+    - source: 09-regret/lesson.html
+      slug: 09-regret
+      week: 9
+      title:
+        ko: "\ud6c4\ud68c"
+        en: "Regret"
+        ja: "\u5f8c\u6094"
+    - source: 10-ending-the-relationship/lesson.html
+      slug: 10-ending-the-relationship
+      week: 10
+      title:
+        ko: "\uad00\uacc4 \uc815\ub9ac"
+        en: "Ending the Relationship"
+        ja: "\u95a2\u4fc2\u6574\u7406"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

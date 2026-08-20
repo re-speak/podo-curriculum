@@ -3,7 +3,7 @@
 This is the operating procedure for requests such as **create a curriculum**, **create a course**,
 **create lessons**, **generate the remaining lessons**, or **write lessons from the TOC**. It
 applies to the three production-facing English tracks; pronunciation remains planning-only. Read [`AGENTS.md`](./AGENTS.md) and
-[`../ux-philosophy.md`](../ux-philosophy.md) first; this document defines the
+[`../../../shared/ux-philosophy.md`](../../../shared/ux-philosophy.md) first; this document defines the
 production sequence and ownership boundaries.
 
 Before review or batch generation, also apply
@@ -11,9 +11,10 @@ Before review or batch generation, also apply
 It is the regression checklist distilled from pilot feedback across all three tracks; the track
 blueprints remain authoritative for page-by-page construction.
 
-**Read [`BUILD-PLAN.md`](./BUILD-PLAN.md) before proposing any batch.** Native catalog review is
-complete, but representative-lesson and product gates still control what may scale. Do not treat
-the presence of parsers, briefs or a skeleton generator as permission to cross those gates.
+**Read [`BUILD-PLAN.md`](./BUILD-PLAN.md) before proposing any batch.** Native catalog review and
+the representative-lesson gate are complete as of 2026-08-19. Scale only in approved course
+batches and paired Freetalking variants; parsers, briefs and the skeleton generator still do not
+authorize a new structure or a pronunciation batch.
 
 The workflow is course-aware. A lesson is identified by:
 
@@ -23,8 +24,8 @@ track + course code + lesson number
 
 **Never identify a lesson by number alone.** Use the stable TOC/review id (`CORE-31`, `CTX-32`,
 `FT-107`) in briefs and feedback, and the deck slug inside a course. All current TOCs happen to use
-global numbers, but deployable course boundaries are still undecided and must not be inferred from
-those numbers.
+global numbers, but the approved course boundaries still come from `plan_courses.py` and
+`course.yaml`; never infer a boundary from lesson numbering alone.
 
 ## Source hierarchy
 
@@ -34,8 +35,8 @@ When sources disagree, fix the higher source and regenerate the lower one:
 2. `tracks/<track>/lesson-blueprint.md` — the page arc and track-specific pedagogy
 3. the track's canonical deck — voice, component composition, interaction rhythm
 4. `tracks/<track>/toc/<REVIEW-ID>.md` — generated writing packet
-5. `courses/<course-code>/course.yaml` — generated deploy plan **[not built]**
-6. `courses/<course-code>/lessons/<slug>/lesson.html` — the authored lesson
+5. `tracks/<track>/courses/<course-code>/course.yaml` — generated, disabled course plan
+6. `tracks/<track>/courses/<course-code>/lessons/<slug>/lesson.html` — the authored lesson
 
 The `reference/` folder sits above all of this for questions of *scope and level*:
 `curriculum-source-hierarchy.md` decides what is authoritative when sources disagree about whether
@@ -62,18 +63,20 @@ course plan; a list of situations with no coverage logic is not one either.*
 Then generate and validate the course plan:
 
 ```sh
-# [not built] — BUILD-PLAN.md → T4.4
-python3 english/tools/plan_courses.py english/tracks/<track>
+python3 tools/authoring/en/plan_courses.py <track>
+# or regenerate all 43 disabled course plans
+python3 tools/authoring/en/plan_courses.py --all
 ```
 
-Until it exists, a "course" is whatever the TOC says it is, and no deploy plan is produced.
+The generator owns the approved course cuts and writes disabled `course.yaml` only. Prestudy is
+deferred, so it intentionally does not produce deployable lesson manifests.
 
 ## 2. Generate textual lesson briefs
 
 ```sh
-python3 english/tools/build_lesson_briefs.py <track-name>
+python3 tools/authoring/en/build_lesson_briefs.py <track-name>
 # or regenerate all four tracks
-python3 english/tools/build_lesson_briefs.py --all
+python3 tools/authoring/en/build_lesson_briefs.py --all
 ```
 
 The brief repeats the exact source content, adjacent lessons and sequence guardrails. Core gets
@@ -87,19 +90,19 @@ the parser and regenerate.
 ## 3. Prove one lesson before multiplying it
 
 ```sh
-python3 english/tools/new_lesson.py --track <track> --review-id <CORE-N|CTX-N|FT-N> \
+python3 tools/authoring/en/new_lesson.py --track <track> --review-id <CORE-N|CTX-N|FT-N> \
   --course <course-code> --lesson <n> --id <NN-slug> --title <title> --level <level>
 ```
 
 The tool lifts the shell from an approved English canonical deck, removes its pages and identity
 comments, retargets metadata and shared paths, checks references, and refuses to overwrite. Core
-defaults to its approved pilot. Contextual and Freetalking deliberately require `--from-deck`
-until their own pilots are explicitly approved. **Never use a Korean deck** — its script list loads
-`yomi.js`, which English must not.
+and Contextual default to their approved pilots. Freetalking deliberately requires `--from-deck`
+so the writer must choose the approved accessible or full shell. **Never use a Korean deck** — its
+script list loads `yomi.js`, which English must not.
 
 Before writing pages, read these in full and in order:
 
-1. `../ux-philosophy.md`
+1. `../../../shared/ux-philosophy.md`
 2. `AGENTS.md`, including the *English deltas* table
 3. this workflow
 4. the track blueprint
@@ -118,14 +121,28 @@ multiple writers invent variants.
 
 ### The gate
 
-**The first English deck in any track is a pilot and stops for explicit user approval.** Structural
-checks never approve a pilot. If it is rejected, rewrite and re-review; do not use a rejected pilot
-as a template. After approval, write **three structurally different lessons**, review those, and
-only then expand.
+**The first English deck in any new track or structural family is a pilot and stops for explicit
+user approval.** The Core, Contextual and paired Freetalking production families passed that gate
+on 2026-08-19. Structural checks never approve a new pilot. If one is rejected, rewrite and
+re-review; do not use it as a template.
 
 ## 4. Run lesson production as an orchestrated writer workflow
 
 For a batch, one orchestrator owns the shared truth and lesson writers own disjoint deck files.
+
+Generation and proofreading are one uninterrupted production step. As soon as a batch is
+generated, run the complete proofreading workflow, static checker, exact-generation tests and
+rendered QA on those exact bytes. Do not give the owner review links or start the next batch until
+all four pass. If proofreading changes content data or a generator, regenerate first and repeat the
+proofreading and gates; never patch generated HTML to make a review pass.
+
+For generated Core lessons, the content data must explicitly own every judgment a template cannot
+make: each pattern's meaning/use sentence, the exact smallest-unit choice and distractor, the visual
+formation diagram, and the adjacent-use native tip. A generic fallback may not replace any of these
+with a goal repeated twice, a prose rule plus examples, omitted choice practice, or a list of extra
+vocabulary. If one of these authored fields is missing, generation fails; it does not emit a
+“provisional” pedagogical page. Exact-generation tests prove ownership and reproducibility only—
+they never count as proofreading.
 
 The **orchestrator alone** may change:
 
@@ -192,7 +209,9 @@ writers copy. Korean spent 348 reorder sentences at the wrong chip count for exa
   on its exact Japanese meaning. Controlled fills use one Japanese `.target.ending` per blank;
   word-level choice uses one Japanese highlight per independent decision. Reorder and whole-sentence
   translation prompts stay neutral. Highlight presence somewhere on a page is not enough—check each
-  row and each decision.
+  row and each decision. Put every choice at the smallest meaningful unit with `.word-choice`.
+  A reviewed exception whose alternatives genuinely differ across the whole sentence must declare
+  `data-choice-scope="whole-sentence"`; otherwise the checker rejects it.
 - Every Contextual interaction must be runnable by an English-speaking tutor who does not read
   Japanese. `Understand` meaning options expose a concise English sense label alongside Japanese
   support, and the English tutor note states the read order when it is not visible. Never use
@@ -305,10 +324,10 @@ Static checks:
 ### Run the checker
 
 ```sh
-python3 english/tools/check_deck.py english/tracks      # a tree
-python3 english/tools/check_deck.py path/to/lesson.html # one deck
-python3 english/tools/check_deck.py --all               # every deck in the repo
-python3 english/tools/build_running_lexicon.py           # regenerate the author ledger
+python3 tools/authoring/en/check_deck.py sandbox/drafts/en/tracks      # English tree
+python3 tools/authoring/en/check_deck.py path/to/lesson.html           # one deck
+python3 tools/authoring/en/check_deck.py --all                         # every English deck
+python3 tools/authoring/en/build_running_lexicon.py                     # regenerate author ledger
 ```
 
 It enforces the machine-verifiable static checks above and exits non-zero on any error, so it can
@@ -344,6 +363,13 @@ allowed only when the sentence honestly holds three. The trap is not the count �
 criteria on one page**. The pilot shipped 3/4/3/4 because `please` had been tacked onto two rows,
 which is padding two sentences rather than analysing four the same way.
 
+Every chip must help the learner recover meaning or construction. Punctuation alone (`?`), an
+article alone (`a`, `the`), and a split suffix (`-er`) are hard errors, not ways to reach a
+preferred chip count. A preposition may stand alone when choosing its position is the actual
+learning operation—`I | start work | at | nine` is useful because the learner is retrieving
+`at + exact time`. Otherwise keep the preposition with its phrase. If a short frame has no honest
+three-unit build, omit its reorder page and use another activity.
+
 Write the page's criterion into an HTML comment above it, then check every row against that one
 sentence. If a row needs a different criterion to reach its count, the count is wrong.
 
@@ -366,6 +392,12 @@ Interactive checks at both **480px and 360px**:
 - no console errors, no pager overlap making content unreachable
 - no page, dialogue turn or generated input widens its container
 
+For a course batch, open one Orca browser tab in this worktree and run
+`python3 tools/authoring/en/audit_rendered_decks.py --page <browserPageId> <batch-path>`.
+The probe activates every otherwise-hidden page, reads the shared pager tokens, and fails on
+horizontal overflow, missing tail clearance or collapsed vertical gaps between repeated model
+rows, dialogue turns and wrapped phrase inputs at both supported widths.
+
 Use representative screenshots across the course, plus every new or unusually dense page. A pass
 means more than "it scrolls": the learner must understand what to do before the activity disappears
 below the fold.
@@ -373,22 +405,20 @@ below the fold.
 ## 7. Then regenerate the derived files
 
 ```sh
-# [not built] — gated on D4/D5
-python3 english/tools/plan_courses.py english/tracks/<track>
+# built — regenerate disabled course plans after accepted course-cut or copy changes
+python3 tools/authoring/en/plan_courses.py --all
 
 # built — regenerate review material after accepted TOC changes
-python3 english/tools/build_lesson_briefs.py --all
-python3 english/tools/build_grammar_map.py
-python3 english/tools/build_catalog.py
-
-# shared-runtime drift checker currently lives on the Korean side
-python3 korean/tools/check_runtime_drift.py
+python3 tools/authoring/en/build_lesson_briefs.py --all
+python3 tools/authoring/en/build_grammar_map.py
+python3 tools/authoring/en/build_catalog.py
+python3 tools/authoring/en/build_running_lexicon.py
 ```
 
-**`check_runtime_drift.py` matters before you trust any local render.** Deployed decks load a
-pinned CDN tag, not the working folder — so when the two differ, the page approved at 480px is not
-the page the learner gets, and nothing errors to tell you. A component that exists only locally
-just renders unstyled.
+If shared runtime files changed, publish a new immutable tag before repointing decks. Then run
+`python3 tools/repoint-shared.py` and `python3 tools/validate.py --contract --env stage`; the latter
+checks that the referenced tag is live and matches the repository bytes.
 
-Only after the integrated course passes should it move toward production sync — which for English
-does not exist yet (`BUILD-PLAN.md` → Phase 7).
+Only after the integrated course passes should it move toward production, which means adding a
+reviewed `promotion.yaml` and using `tools/promote.py`. That step remains blocked by the deferred
+prestudy contract; authoring and review do not.

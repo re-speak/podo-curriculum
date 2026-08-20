@@ -1,0 +1,116 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/hangul-starter
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-letter-blocks-and-first-sounds/lesson.html
+      slug: 01-letter-blocks-and-first-sounds
+      week: 1
+      title:
+        ko: "\uae00\uc790 \ube14\ub85d\uacfc \uccab \uc18c\ub9ac"
+        en: "Letter blocks and first sounds"
+        ja: "\u6587\u5b57\u30d6\u30ed\u30c3\u30af\u3068\u6700\u521d\u306e\u97f3"
+    - source: 02-six-plain-consonants/lesson.html
+      slug: 02-six-plain-consonants
+      week: 2
+      title:
+        ko: "\ud3c9\uc74c \uc5ec\uc12f \uac1c"
+        en: "Six plain consonants"
+        ja: "\u5e73\u97f3 6\u3064"
+    - source: 03-review-and-speed/lesson.html
+      slug: 03-review-and-speed
+      week: 3
+      title:
+        ko: "\ubcf5\uc2b5\uacfc \uc18d\ub3c4"
+        en: "Review and speed"
+        ja: "\u5fa9\u7fd2\u3068\u30b9\u30d4\u30fc\u30c9"
+    - source: 04-add-a-stroke-add-air/lesson.html
+      slug: 04-add-a-stroke-add-air
+      week: 4
+      title:
+        ko: "\ud68d\uc744 \ub354\ud558\uba74 \ubc14\ub78c\uc774 \ub354\ud574\uc9c4\ub2e4"
+        en: "Add a stroke, add air"
+        ja: "\u753b\u3092\u8db3\u3059\u3068\u3001\u606f\u304c\u8db3\u3055\u308c\u308b"
+    - source: 05-double-is-strong/lesson.html
+      slug: 05-double-is-strong
+      week: 5
+      title:
+        ko: "\uacb9\uccd0 \uc4f0\uba74 \uc138\uc9c4\ub2e4"
+        en: "Double it, and it gets tense"
+        ja: "\u91cd\u306d\u308b\u3068\u3001\u5f37\u304f\u306a\u308b"
+    - source: 06-the-whole-consonant-chart/lesson.html
+      slug: 06-the-whole-consonant-chart
+      week: 6
+      title:
+        ko: "\uc790\uc74c\ud45c \uc804\uccb4"
+        en: "The whole consonant chart"
+        ja: "\u5b50\u97f3\u8868\u3001\u305c\u3093\u3076"
+    - source: 07-y-vowels-and-e-vowels/lesson.html
+      slug: 07-y-vowels-and-e-vowels
+      week: 7
+      title:
+        ko: "y \ubaa8\uc74c\uacfc e \ubaa8\uc74c"
+        en: "Y-vowels and e-vowels"
+        ja: "y \u306e\u6bcd\u97f3\u3068 e \u306e\u6bcd\u97f3"
+    - source: 08-combined-w-vowels/lesson.html
+      slug: 08-combined-w-vowels
+      week: 8
+      title:
+        ko: "\ud569\uccd0\uc9c4 \ubaa8\uc74c"
+        en: "Combined w-vowels"
+        ja: "\u7d44\u307f\u5408\u308f\u305b\u6bcd\u97f3\uff08w \u306e\u97f3\uff09"
+    - source: 09-review-no-batchim/lesson.html
+      slug: 09-review-no-batchim
+      week: 9
+      title:
+        ko: "\ubcf5\uc2b5 \u2014 \ubaa8\ub4e0 \uae00\uc790"
+        en: "Review \u2014 every letter, no batchim"
+        ja: "\u5fa9\u7fd2 \u2014 \u6587\u5b57\u305c\u3093\u3076\u3001\u30d1\u30c3\u30c1\u30e0\u306a\u3057"
+    - source: 10-batchim-sonorants/lesson.html
+      slug: 10-batchim-sonorants
+      week: 10
+      title:
+        ko: "\ubc1b\uce68 \u2460 \uc6b8\ub9ac\ub294 \uc18c\ub9ac"
+        en: "Batchim I \u2014 the sonorants"
+        ja: "\u30d1\u30c3\u30c1\u30e0\u2460 \u97ff\u304f\u97f3"
+    - source: 11-batchim-stops/lesson.html
+      slug: 11-batchim-stops
+      week: 11
+      title:
+        ko: "\ubc1b\uce68 \u2461 \ub9c9\ub294 \uc18c\ub9ac"
+        en: "Batchim II \u2014 the stops"
+        ja: "\u30d1\u30c3\u30c1\u30e0\u2461 \u6b62\u3081\u308b\u97f3"
+    - source: 12-double-batchim/lesson.html
+      slug: 12-double-batchim
+      week: 12
+      title:
+        ko: "\uacb9\ubc1b\uce68 \uc785\ubb38 \u2014 \uae00\uc790 \ub458, \uc790\ub9ac \ud558\ub098"
+        en: "Double batchim starter \u2014 two letters, one slot"
+        ja: "\u4e8c\u91cd\u30d1\u30c3\u30c1\u30e0\u5165\u9580 \u2014 \u6587\u5b57\u306f2\u3064\u3001\u5e2d\u306f1\u3064"
+    - source: 13-reading-like-a-native/lesson.html
+      slug: 13-reading-like-a-native
+      week: 13
+      title:
+        ko: "\ud55c\uad6d \uc0ac\ub78c\ucc98\ub7fc \uc77d\uae30"
+        en: "Reading like a native"
+        ja: "\u97d3\u56fd\u306e\u4eba\u307f\u305f\u3044\u306b\u8aad\u3080"
+    - source: 14-capstone-read-anything/lesson.html
+      slug: 14-capstone-read-anything
+      week: 14
+      title:
+        ko: "\ub9c8\ubb34\ub9ac \u2014 \ub0af\uc120 \ub2e8\uc5b4\ub3c4 \uc77d\ub294\ub2e4"
+        en: "Capstone \u2014 decode unfamiliar words"
+        ja: "\u4ed5\u4e0a\u3052 \u2014 \u521d\u3081\u3066\u898b\u308b\u8a00\u8449\u3082\u8aad\u3081\u308b"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

@@ -18,6 +18,11 @@ PILOT = new_lesson.ENGLISH / "tracks/1-core-patterns/courses/core-first-exchange
 
 
 class LessonShellTests(unittest.TestCase):
+    def test_core_and_contextual_have_approved_default_shells(self):
+        for track_name, relative in new_lesson.CANONICAL_DECKS.items():
+            with self.subTest(track=track_name):
+                self.assertTrue((new_lesson.ENGLISH / "tracks" / track_name / relative).is_file())
+
     def test_split_removes_pages_and_canonical_identity_comment(self):
         head, foot = new_lesson.split_shell(PILOT.read_text(encoding="utf-8"))
         self.assertIn('<div class="phone">', head)

@@ -26,7 +26,9 @@ experience.
 - Use the exact TOC/brief title. A convenient short label is not a new title.
 - Validate both 480 px and 360 px, with 480 px as the classroom release viewport. English strings
   are longer: inputs must wrap or grow vertically, labels must remain readable, and nothing may
-  clip or escape its card.
+  clip or escape its card. Measure every inline input component (`slot-input` and `phrase-input`),
+  including fields on consecutive wrapped rows; checking only one visually similar class is not a
+  batch-level spacing audit.
 - Interactive controls exist in source HTML. JavaScript binds behavior; it does not manufacture the
   input, textarea, choice, or build zone that static Lemonboard validation expects.
 
@@ -37,9 +39,10 @@ experience.
   completion activities.
 - Make the learner choose the smallest honest contrast. If only `went/go` and `had/have` are being
   tested, keep the sentence fixed and make those words the choices.
-- A phrase input includes the pattern and the meaningful content the learner must actually produce.
-  Do not shrink late production to the frame alone, and do not make the whole sentence editable
-  when unrelated framing is already supplied.
+- A controlled inline phrase input contains only an exact target already established on the
+  corresponding fill page. Keep scene facts and slot vocabulary visibly printed around it. Use a
+  whole-sentence field only on translation or open production, where whole-sentence recall is the
+  actual learner job.
 - `p3-model` and `p3-complete` are the same conversation: same turn count, order, partner lines,
   and closing. Completion removes learner language; it does not rewrite or shorten the scene.
 - Model, completion, and `Out in the world` are roleplays and use profile images for every turn.
@@ -94,8 +97,10 @@ experience.
 
 1. Compare the whole lesson with the matching canonical lesson, not one page in isolation.
 2. Read every prompt, follow-up, answer, hint, and tutor-only note aloud for naturalness and purpose.
-3. Run `python3 english/tools/check_deck.py english/tracks` and the English tool test suite.
-4. Render every new or changed lesson at 480 px. Inspect long inputs, Core model/replay/transfer,
-   Freetalking article/style/questions, and the final page—not only the opening screen.
+3. Run `python3 tools/authoring/en/check_deck.py sandbox/drafts/en/tracks` and the English tool test suite.
+4. Render every new or changed lesson at 480 px and 360 px. Inspect long inputs, Core
+   model/replay/transfer, Freetalking article/style/questions, and the final page—not only the
+   opening screen. Run `tools/authoring/en/audit_rendered_decks.py` through an Orca browser tab for
+   a whole batch so hidden pages are activated and measured too.
 5. Audit the entire generated batch before release. A clean pilot does not prove its siblings kept
    the same standards.

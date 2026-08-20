@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/ctx-travel-getting-around-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-asking-directions/lesson.html
+      slug: 01-asking-directions
+      week: 1
+      title:
+        ko: "\uae38 \ubb3b\uae30"
+        en: "Asking for directions"
+        ja: "\u9053\u3092\u805e\u304f"
+    - source: 02-confirming-directions/lesson.html
+      slug: 02-confirming-directions
+      week: 2
+      title:
+        ko: "\ubc29\ud5a5"
+        en: "Confirming directions"
+        ja: "\u65b9\u5411\u3092\u78ba\u8a8d\u3059\u308b"
+    - source: 03-distance-and-time/lesson.html
+      slug: 03-distance-and-time
+      week: 3
+      title:
+        ko: "\uac70\ub9ac & \uc2dc\uac04"
+        en: "Distance and time"
+        ja: "\u8ddd\u96e2\u3068\u6642\u9593"
+    - source: 04-public-transport/lesson.html
+      slug: 04-public-transport
+      week: 4
+      title:
+        ko: "\ub300\uc911\uad50\ud1b5"
+        en: "Public transport"
+        ja: "\u516c\u5171\u4ea4\u901a"
+    - source: 05-taking-a-taxi/lesson.html
+      slug: 05-taking-a-taxi
+      week: 5
+      title:
+        ko: "\ud0dd\uc2dc"
+        en: "Taking a taxi"
+        ja: "\u30bf\u30af\u30b7\u30fc"
+    - source: 06-taking-the-bus/lesson.html
+      slug: 06-taking-the-bus
+      week: 6
+      title:
+        ko: "\ubc84\uc2a4 \ud0c0\uae30"
+        en: "Taking the bus"
+        ja: "\u30d0\u30b9\u306b\u4e57\u308b"
+    - source: 07-getting-off-the-bus/lesson.html
+      slug: 07-getting-off-the-bus
+      week: 7
+      title:
+        ko: "\ubc84\uc2a4 \ud558\ucc28"
+        en: "Getting off the bus"
+        ja: "\u30d0\u30b9\u3092\u964d\u308a\u308b"
+    - source: 08-getting-lost/lesson.html
+      slug: 08-getting-lost
+      week: 8
+      title:
+        ko: "\uae38 \uc783\uc74c"
+        en: "Getting lost"
+        ja: "\u9053\u306b\u8ff7\u3046"
+    - source: 09-transit-card/lesson.html
+      slug: 09-transit-card
+      week: 9
+      title:
+        ko: "\uad50\ud1b5\uce74\ub4dc"
+        en: "Transit card"
+        ja: "\u4ea4\u901a\u30ab\u30fc\u30c9"
+    - source: 10-last-train/lesson.html
+      slug: 10-last-train
+      week: 10
+      title:
+        ko: "\ub9c9\ucc28 \uc2dc\uac04"
+        en: "Last train"
+        ja: "\u7d42\u96fb"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

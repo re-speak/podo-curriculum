@@ -46,8 +46,8 @@
             "properties": {
               "source": {
                 "type": "string",
-                "description": "Deck filename inside spec.source.",
-                "pattern": "^[^/]+\\.html$"
+                "description": "Deck path relative to spec.source. A subdirectory is allowed because that is the shape the track drafts actually have — one directory per lesson, holding lesson.html beside its lesson.yaml — while the trial decks sit flat in one folder. Traversal is refused: `promote.py` joins this onto spec.source without further checking, so the pattern is what keeps a manifest inside the drafts tree.",
+                "pattern": "^(?!/)(?!.*\\.\\.)[A-Za-z0-9._/-]+\\.html$"
               },
               "slug": {
                 "type": "string",

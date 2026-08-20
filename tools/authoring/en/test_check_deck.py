@@ -15,6 +15,24 @@ import check_deck
 
 
 class DeckCheckTests(unittest.TestCase):
+    def test_english_deck_rejects_visible_hangul(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            deck = (
+                pathlib.Path(temporary)
+                / "sandbox/drafts/en/tracks/1-core-patterns/lessons/01-test/lesson.html"
+            )
+            deck.parent.mkdir(parents=True)
+            deck.write_text(
+                '<meta name="google" content="notranslate">'
+                '<meta name="podo:lesson-id" content="01-test">'
+                '<meta name="podo:review-id" content="CORE-1">'
+                '<meta name="podo:target-language" content="en">'
+                '<body><div data-page-id="lesson-goal">튜터만</div></body>',
+                encoding="utf-8",
+            )
+            errors, _ = check_deck.check(deck)
+            self.assertTrue(any("visible Korean text" in error for error in errors))
+
     def test_meta_content_is_attribute_order_tolerant(self):
         source = (
             '<meta content="notranslate" name="google">'
@@ -139,6 +157,136 @@ class DeckCheckTests(unittest.TestCase):
         )
         errors = check_deck.reorder_solvability_errors("p1-reorder", chunk)
         self.assertTrue(any("cannot reconstruct data-a" in item for item in errors))
+
+    def test_reorder_rejects_punctuation_only_chip(self):
+        chunk = (
+            '<div data-page-id="p1-reorder"><div class="task-block">'
+            '<span class="answer-space build-zone" data-sync-id="row" '
+            'data-sync-kind="order" data-a="How often do you exercise?"></span>'
+            '<span class="choice">How often</span><span class="choice">do you</span>'
+            '<span class="choice">exercise</span><span class="choice">?</span>'
+            '</div></div>'
+        )
+        errors = check_deck.reorder_solvability_errors("p1-reorder", chunk)
+        self.assertTrue(any("punctuation-only chip" in item for item in errors))
+
+    def test_reorder_rejects_standalone_article(self):
+        chunk = (
+            '<div data-page-id="p2-reorder"><div class="task-block">'
+            '<span class="answer-space build-zone" data-sync-id="row" '
+            'data-sync-kind="order" data-a="About twice a week."></span>'
+            '<span class="choice">About</span><span class="choice">twice</span>'
+            '<span class="choice">a</span><span class="choice">week.</span>'
+            '</div></div>'
+        )
+        errors = check_deck.reorder_solvability_errors("p2-reorder", chunk)
+        self.assertTrue(any("bound-word chip 'a'" in item for item in errors))
+
+    def test_reorder_accepts_preposition_when_placement_is_the_learning_operation(self):
+        chunk = (
+            '<div data-page-id="p1-reorder"><div class="task-block">'
+            '<span class="answer-space build-zone" data-sync-id="row" '
+            'data-sync-kind="order" data-a="I start work at nine."></span>'
+            '<span class="choice">I</span><span class="choice">start work</span>'
+            '<span class="choice">at</span><span class="choice">nine.</span>'
+            '</div></div>'
+        )
+        self.assertEqual(
+            check_deck.reorder_solvability_errors("p1-reorder", chunk),
+            [],
+        )
+
+    def test_core_shape_rejects_hollow_teaching_and_native_tip_pages(self):
+        pages = {
+            "lesson-goal": '<div class="known-row"></div>' * 3,
+            "p1-teach": '<div class="model-list"></div>',
+            "p1-rule": '<p>Put at before a time.</p>',
+            "p2-teach": '<div class="model-list"></div>',
+            "p2-rule": '<p>Put usually before the action.</p>',
+            "native-tip": '<h2>Two useful extras</h2><p>使える表現</p>',
+        }
+        errors = check_deck.core_canonical_shape_issues(pages)
+        self.assertTrue(any("missing canonical pages" in item for item in errors))
+        self.assertTrue(any("main pattern block" in item for item in errors))
+        self.assertTrue(any("formation diagram" in item for item in errors))
+        self.assertTrue(any("not a native tip" in item for item in errors))
+
+    def test_core_shape_rejects_unjustified_full_sentence_choices(self):
+        errors = check_deck.core_canonical_shape_issues(
+            {
+                "p1-choose": (
+                    '<div class="choose-list"><div class="choose-row sentence">'
+                    '<span class="opt">I start work at eight.</span>'
+                    '<span class="opt">I start work at ten.</span>'
+                    '</div></div>'
+                )
+            }
+        )
+        self.assertTrue(any("smallest meaningful unit" in item for item in errors))
+
+    def test_core_shape_allows_explicit_whole_sentence_contrast(self):
+        errors = check_deck.core_canonical_shape_issues(
+            {
+                "p1-choose": (
+                    '<div class="choose-list" data-choice-scope="whole-sentence">'
+                    '<div class="choose-row sentence"></div></div>'
+                )
+            }
+        )
+        self.assertFalse(any("p1-choose: choose at" in item for item in errors))
+
+    def test_compact_word_choice_rejects_sentence_sized_options(self):
+        pages = {
+            "p1-choose": (
+                '<div class="word-choice-list">'
+                '<span class="opt">I start work at eight.</span>'
+                '<span class="opt">I start work at ten.</span>'
+                '</div>'
+            )
+        }
+        errors = check_deck.smallest_unit_choice_issues(pages)
+        self.assertEqual(len(errors), 2)
+        self.assertTrue(all("sentence-sized" in item for item in errors))
+
+    def test_compact_word_choice_accepts_local_units(self):
+        pages = {
+            "p1-choose": (
+                '<div class="word-choice-list">'
+                '<span class="word-choice-sentence">I start work at '
+                '<span class="opt">eight</span><span class="opt">ten</span>.</span></div>'
+            )
+        }
+        self.assertEqual(check_deck.smallest_unit_choice_issues(pages), [])
+
+    def test_phrase_input_requires_spaced_answer_component(self):
+        errors = check_deck.phrase_input_structure_issues(
+            '<div class="bubble"><span class="korean">'
+            '<input class="phrase-input"></span></div>'
+        )
+        self.assertTrue(any("canonical answer-box" in item for item in errors))
+        self.assertEqual(
+            check_deck.phrase_input_structure_issues(
+                '<div class="answer-box"><span class="answer-fill">'
+                '<span class="korean"><input class="phrase-input"></span>'
+                '</span></div>'
+            ),
+            [],
+        )
+
+    def test_english_deck_rejects_unstyled_model_lines(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            deck = pathlib.Path(temporary) / "sandbox/drafts/en/tracks/1-core-patterns/lesson.html"
+            deck.parent.mkdir(parents=True)
+            deck.write_text(
+                '<meta name="google" content="notranslate">'
+                '<meta name="podo:lesson-id" content="lesson">'
+                '<meta name="podo:review-id" content="CORE-1">'
+                '<meta name="podo:target-language" content="en">'
+                '<div data-page-id="p1-teach"><div class="model-lines"></div></div>',
+                encoding="utf-8",
+            )
+            errors, _ = check_deck.check(deck)
+            self.assertTrue(any("unstyled .model-lines" in item for item in errors))
 
     def test_freetalking_article_accepts_twelve_rows_with_exact_gloss_parity(self):
         script = (
@@ -299,6 +447,35 @@ class DeckCheckTests(unittest.TestCase):
         self.assertTrue(any("turn count differs" in item for item in errors))
         self.assertTrue(any("speaker labels" in item for item in errors))
         self.assertTrue(any("generic production instruction" in item for item in errors))
+
+    def test_core_late_phrase_inputs_reuse_only_controlled_targets(self):
+        pages = {
+            "p1-fill": '<input class="slot-input" data-answer="went">',
+            "p2-fill": '<input class="slot-input" data-answer="had">',
+            "p3-complete": (
+                '<span class="target">行って</span>'
+                '<textarea class="free-input phrase-input" data-answer="went"></textarea>'
+            ),
+            "in-the-wild": (
+                '<span class="target">食べました</span>'
+                '<textarea class="free-input phrase-input" '
+                'data-answer="had dinner"></textarea>'
+            ),
+        }
+        errors = check_deck.core_production_issues(pages)
+        self.assertFalse(any("p3-complete: phrase input" in item for item in errors))
+        self.assertTrue(any("in-the-wild: phrase input" in item for item in errors))
+
+    def test_partner_turns_ignore_compact_learner_lines(self):
+        source = (
+            '<div class="turn other"><span class="korean">Question</span>\n'
+            '<span class="translation">質問</span></div>'
+            '<div class="turn me"><span class="korean">Answer</span>'
+            '<span class="translation">答え</span></div>'
+            '<div class="turn other"><span class="korean">Follow-up</span>\n'
+            '<span class="translation">追加質問</span></div>'
+        )
+        self.assertEqual(check_deck.partner_turns(source), ["Question", "Follow-up"])
 
     def test_target_highlights_require_a_mirrored_pair_on_every_model_row(self):
         pages = {

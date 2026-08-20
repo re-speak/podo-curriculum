@@ -13,11 +13,11 @@ used. This is the one file a lesson-writer is expected to edit — **unless you 
 batch**, in which case report it and let the orchestrator write it. Ten writers editing one file is
 how the file gets lost.
 
-> **Status: all authorable production-track pilots are written.** Core 20
-> (`Could you help me with ___?`) is approved and canonical for `1-core-patterns`. The old CTX-1
-> deck is a superseded four-area prototype and must not be approved or copied. Both language-load
-> versions of FT-1 were approved as their respective canonical decks on 2026-08-18. Pronunciation
-> remains planning-only.
+> **Status: the course-batch gate is open.** Core 20 and replacement CTX-1 are the canonical
+> shells for their tracks. The old CTX-1 deck is a superseded four-area prototype and must not be
+> approved or copied. Both language-load versions of FT-1 are their respective canonical shells.
+> Core 32/45/82 and the FT-7/9/49 pairs are approved golden examples for structural variation. The
+> owner approved the complete set on 2026-08-19. Pronunciation remains planning-only.
 
 ---
 
@@ -71,8 +71,25 @@ the learner meets today's pattern somewhere they have not been yet.
 | --- | --- | --- |
 | Airport check-in counter, too much luggage | Core 20 `in-the-wild` | core |
 | New office, moving boxes in | Core 20 `p3-model` (main dialogue, **not** available as a transfer scene) | core |
+| Friday work schedule through dinner | Core 12 `in-the-wild` | core |
+| Comparing home-cooking habits | Core 13 `in-the-wild` | core |
+| A breakfast alternative | Core 14 `in-the-wild` | core |
+| Asking about a brother who lives nearby | Core 15 `in-the-wild` | core |
+| Comparing a coworker's workday | Core 16 `in-the-wild` | core |
+| Comparing how often two friends cook | Core 17 `in-the-wild` | core |
+| Comparing swimming and walking ability | Core 18 `in-the-wild` | core |
+| Confirming a bag price | Core 19 `in-the-wild` | core |
+| Two friends choosing seats together | Core 21 `in-the-wild` | core |
+| Ordering soup and water | Core 22 `in-the-wild` | core |
+| Planning drinks and supplies for a trip | Core 23 `in-the-wild` | core |
+| Confirming a person's name | Core 24 `in-the-wild` | core |
 | **60 contextual main scenes** — every lesson's `場面:` line | `2-contextual-english` CTX-1–60 | contextual |
 | Student flat, meeting Sam and checking the front-door code | superseded CTX-1 prototype; unavailable | contextual |
+| Hotel reception after immigration | CTX-2 `transfer-scene` | contextual |
+| Train station number confirmation | CTX-3 `transfer-scene` | contextual |
+| Airport rail ticket desk | CTX-4 `transfer-scene` | contextual |
+| City-center route confirmation | CTX-5 `transfer-scene` | contextual |
+| Hotel front desk after arranging a taxi | CTX-6 `transfer-scene` | contextual |
 
 **The contextual track assigns its main scenes in the TOC**, one per lesson. Do not replace one
 inside a deck assignment—take the `場面:` line from the brief. The writer proposes a distinct final
@@ -195,7 +212,7 @@ It is not worth losing the right example over — take the wrap and note it.
 
 | Needed | State | Why |
 | --- | --- | --- |
-| **Republish the runtime** | **blocking for class use** | The published `v1.7.0` contained the shared lesson-card and activity runtime that English used before this pass, but `python3 ../../korean/tools/check_runtime_drift.py` reports unpublished shared files. The verified 360px `.slot-input` fix now also creates new `lesson-card.css` and `activities.js` deltas. Publishing is a `podo-curriculum` action, not one taken from this repo |
+| **Republish the runtime** | **blocking for class use** | The published `v1.7.0` contained the shared lesson-card and activity runtime that English used before this pass, but the shared files have moved on. The verified 360px `.slot-input` fix and the 2026-08-19 all-page pager clearance are local deltas. Publishing is a coordinated runtime action, not a deck-local workaround |
 | Language-aware tutor-only labels | **implemented locally; publish pending** | English decks declare `podo:target-language=en`. The shared runtime now emits `Spoken sentence`, `Correction`, `Note`, `Delete`, `Tutor only`, `Message to the learner`, and `Well done stamp` for them while keeping Korean as the default. The runtime still must be published and deployed decks repointed before the change reaches class |
 | A three-branch rule diagram | not written | inherited from Korean and **worse here**: `do/does/did`, `a/an/the` and `-s/-es/-ies` are all three-case, and `.batchim` is single-column. Core 20 dodged it (its rule is an honest two-brancher). The next lesson that does not, ships two boxes and reports it |
 | `.ko` / `.korean` class names | naming only, not a defect | they mean "the line the tutor reads" and "the target-language span". English decks reuse them as-is, because renaming is a runtime change touching 316 Korean decks. Worth knowing before someone reads an English deck and thinks it is mislabelled |

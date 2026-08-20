@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/talk-what-came-before-intermediate
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-intermediate/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-intermediate
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-childhood-nagging/lesson.html
+      slug: 01-childhood-nagging
+      week: 1
+      title:
+        ko: "\uc5b4\ub9b4 \ub54c \uc81c\uc77c \ub9ce\uc774 \ub4e4\uc740 \uc794\uc18c\ub9ac"
+        en: "The nagging I heard most as a child"
+        ja: "\u5b50\u3069\u3082\u306e\u3053\u308d\u4e00\u756a\u3088\u304f\u8a00\u308f\u308c\u305f\u5c0f\u8a00"
+    - source: 02-memorable-teacher/lesson.html
+      slug: 02-memorable-teacher
+      week: 2
+      title:
+        ko: "\ucd5c\uace0\uc758 \uc120\uc0dd\ub2d8, \uc81c\uc77c \ubb34\uc11c\uc6e0\ub358 \uc120\uc0dd\ub2d8"
+        en: "My best and scariest teachers"
+        ja: "\u6700\u9ad8\u306e\u5148\u751f\u3001\u4e00\u756a\u6016\u304b\u3063\u305f\u5148\u751f"
+    - source: 03-school-nickname/lesson.html
+      slug: 03-school-nickname
+      week: 3
+      title:
+        ko: "\ud559\ucc3d\uc2dc\uc808 \ubcc4\uba85"
+        en: "My school nickname"
+        ja: "\u5b66\u751f\u6642\u4ee3\u306e\u3042\u3060\u540d"
+    - source: 04-used-to-hate/lesson.html
+      slug: 04-used-to-hate
+      week: 4
+      title:
+        ko: "\uc5b4\ub9b4 \ub54c \uc2eb\uc5b4\ud588\ub294\ub370 \uc9c0\uae08\uc740 \uc88b\uc544\ud558\ub294 \uac83"
+        en: "Something I used to hate and now like"
+        ja: "\u5b50\u3069\u3082\u306e\u3053\u308d\u5acc\u3044\u3067\u4eca\u306f\u597d\u304d\u306a\u3082\u306e"
+    - source: 05-embarrassing-mistake/lesson.html
+      slug: 05-embarrassing-mistake
+      week: 5
+      title:
+        ko: "\uac00\uc7a5 \ucc3d\ud53c\ud588\ub358 \uc2e4\uc218"
+        en: "My most embarrassing mistake"
+        ja: "\u4e00\u756a\u6065\u305a\u304b\u3057\u304b\u3063\u305f\u5931\u6557"
+    - source: 06-travel-mishap/lesson.html
+      slug: 06-travel-mishap
+      week: 6
+      title:
+        ko: "\uc78a\uc9c0 \ubabb\ud560 \uc5ec\ud589 \uc5d0\ud53c\uc18c\ub4dc"
+        en: "An unforgettable travel mishap"
+        ja: "\u5fd8\u308c\u3089\u308c\u306a\u3044\u65c5\u306e\u30a8\u30d4\u30bd\u30fc\u30c9"
+    - source: 07-return-destination/lesson.html
+      slug: 07-return-destination
+      week: 7
+      title:
+        ko: "\ub2e4\uc2dc \uac00\uace0 \uc2f6\uc740 \uc5ec\ud589\uc9c0"
+        en: "A place I want to revisit"
+        ja: "\u3082\u3046\u4e00\u5ea6\u884c\u304d\u305f\u3044\u65c5\u5148"
+    - source: 08-dreams-then-now/lesson.html
+      slug: 08-dreams-then-now
+      week: 8
+      title:
+        ko: "\uc5b4\ub9b4 \ub54c\uc758 \uafc8, \uc9c0\uae08\uc758 \uafc8"
+        en: "My dreams then and now"
+        ja: "\u5b50\u3069\u3082\u306e\u3053\u308d\u306e\u5922\u3001\u4eca\u306e\u5922"
+    - source: 09-one-trip-to-past/lesson.html
+      slug: 09-one-trip-to-past
+      week: 9
+      title:
+        ko: "\ub531 \ud55c \ubc88 \uacfc\uac70\ub85c \uac08 \uc218 \uc788\ub2e4\uba74"
+        en: "If I could visit the past once"
+        ja: "\u4e00\u5ea6\u3060\u3051\u904e\u53bb\u306b\u884c\u3051\u308b\u306a\u3089"
+    - source: 10-turning-point/lesson.html
+      slug: 10-turning-point
+      week: 10
+      title:
+        ko: "\uc778\uc0dd\uc758 \ud130\ub2dd\ud3ec\uc778\ud2b8"
+        en: "A turning point in my life"
+        ja: "\u4eba\u751f\u306e\u30bf\u30fc\u30cb\u30f3\u30b0\u30dd\u30a4\u30f3\u30c8"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.

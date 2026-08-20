@@ -1,7 +1,7 @@
 # English Curriculum — Current Build Plan
 
-**Status:** native catalog and FT-1 pair approved · ten representative candidate decks authored and
-audited · wider Core and Contextual batches await owner review
+**Status:** native catalog, all thirteen active representative pilots and the first generated
+Core, Contextual and paired Freetalking course batches owner-approved · next batch authorized
 
 **Current as of:** 2026-08-19
 
@@ -19,19 +19,19 @@ here only when it changes the starting point for future work.
 | Curriculum | 4 tracks · 315 planned items |
 | Production-facing catalog | 303 items: 122 Core · 60 Contextual · 121 Freetalking |
 | Planning-only catalog | 12 pronunciation lessons; no pronunciation decks authorized |
-| Authored lessons | 14 total: Core 20 and FT-1 full/accessible approved; Core 32/45/82, replacement CTX Travel 1, and FT 7/9/49 full/accessible are audited review candidates; old CTX-1 remains a superseded prototype |
+| Authored lessons | 43 HTML files: 42 active decks (16 Core · 6 Contextual · 20 Freetalking decks covering 10 paired topics) plus one superseded old CTX-1 prototype. Against the 424-deck production target, 382 decks remain. |
 | Blueprints | Core, Contextual and Freetalking complete |
 | Generated author packets | 315 item briefs plus 4 indexes |
 | Review surface | current generated 303-item production catalog owner-approved on 2026-08-18 with no requested row dispositions |
 | Core evidence | 122-row generated triage ledger complete; five priority rows resolved against current first-party sources; Core 76/105 productive bands remain provisional |
 | Core audit | final progression pass plus a 52-row corpus-informed naturalness audit for Core 71–122; no audit-led TOC changes are pending |
-| Automated quality | 72 regression tests; all 14 English decks pass with 0 errors and 0 warnings; all render without horizontal overflow at 480px and 360px |
-| Deployment | not ready: course identity, manifests and external sync path remain open |
+| Automated quality | 105 regression tests; all 43 English HTML files pass with 0 errors and 0 warnings; all render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
+| Deployment | 43 disabled `course.yaml` plans exist, but no English `promotion.yaml` or `courses/en/` output exists; prestudy and learner-visible promotion remain open |
 
-The curriculum is no longer waiting for basic architecture, tooling or native catalog approval.
-Its main content risk is whether the accepted patterns—especially Core 71–122—survive representative
-lesson review and learner pilots. Its main product risk is the still-unassigned level and course
-identity scheme.
+The curriculum is no longer waiting for basic architecture, tooling, native catalog approval or
+course identity. Its immediate content risk is whether the approved shells remain natural and
+pedagogically sound when repeated across complete courses. Its main product risk is the deferred
+prestudy contract, which blocks promotion even while authoring continues.
 
 ---
 
@@ -93,12 +93,14 @@ the owner/product system supplies the final values.
 - `AGENTS.md`, `LESSON-CREATION-WORKFLOW.md`, `PROOFREADING-WORKFLOW.md` and
   `tracks/_conventions.md` define the English-specific production and review rules.
 - Core, Contextual and Freetalking each have a production blueprint.
-- Core 20 is an approved, visually reviewed 25-page canonical deck.
-- The authored CTX-1 deck belongs to the retired four-area curriculum. It is a superseded prototype,
-  not an approval candidate or canonical source. Select and author a new low-intermediate Travel or
-  Business pilot after the revised catalog row passes review.
+- Core 20 is an approved, visually reviewed 25-page canonical deck. Core 12–24 now forms the first
+  complete approved-shell Core batch on `stage`.
+- The old authored CTX-1 deck under `arriving-and-getting-settled` belongs to the retired four-area
+  curriculum and remains a superseded prototype, not a canonical source. Replacement Travel CTX
+  1–6 now forms the first Contextual batch on `stage`.
 - FT-1 is authored as separate 13-page full and accessible decks, visually reviewed at 480px and
   360px, and owner-approved on 2026-08-18 as the matching canonical shells for their language loads.
+  Topics 1–8 now form the first paired Freetalking batch on `stage`.
 - `new_lesson.py` copies only an approved English shell, retargets stable identity and paths,
   clears inherited vocabulary, refuses overwrite and keeps non-Core tracks behind their pilot gate.
 - The running lexicon classifies new, recycled, assumed-known and receptive-only vocabulary.
@@ -122,7 +124,7 @@ the owner/product system supplies the final values.
 - `build_running_lexicon.py` generates the authored vocabulary ledger from lesson metadata.
 - `check_deck.py` checks identity, references, duplicate ids, inline code, no-yomi, tutor-script
   parity, reorder chunking, reorder answer solvability and vocabulary ownership/load.
-- Forty-four regression tests prove parser contracts, shell retargeting, generated
+- Eighty-seven regression tests prove parser contracts, shell retargeting, generated
   brief/map/ledger/catalog/lexicon freshness and review-intake failure cases.
 
 ### 4. Shared foundation
@@ -131,8 +133,9 @@ the owner/product system supplies the final values.
   in-repository references were repaired.
 - English uses the shared runtime without forking it. Korean trial art remains under `korean/` and
   is not implicitly reusable.
-- The external `re-speak/podo-curriculum` sync scripts still need their old `korean/runtime/`
-  assumptions updated before deployment; that work is outside this workspace.
+- This repository is now the authoring source. There is no external authoring-sync step: reviewed
+  drafts are named in `promotion.yaml` and promoted directly into `courses/en/` with
+  `tools/promote.py` when the prestudy contract permits it.
 
 ---
 
@@ -240,13 +243,15 @@ the approval of unchanged stable-id snapshots.
    correctness and rendered behavior at 480px and 360px.
 3. **Complete:** repaired repeated failures in the shared workflow, retrospective checklist and
    deck checker rather than leaving lesson-local exceptions.
-4. Stop for explicit approval before any wider Core batch.
-5. **Candidate ready for review:** the replacement low-intermediate Travel pilot, CTX-1 check-in
-   and seat request, demonstrates the task-first opening and standalone transfer. It has passed the
-   same static and rendered audit; do not reuse the superseded CTX-1 deck as a canonical source.
+4. **Complete 2026-08-19:** owner approved the three Core representatives and opened the wider
+   Core course-batch gate.
+5. **Complete 2026-08-19:** owner approved replacement low-intermediate Travel CTX-1 as the
+   canonical Contextual shell. It demonstrates the task-first opening and standalone transfer; do
+   not reuse the superseded CTX-1 deck as a canonical source.
 6. **Complete:** FT-1 accessible and full were explicitly approved on 2026-08-18 and are canonical
    for their respective language loads. FT-7, FT-9 and FT-49 now provide three additional audited
-   full/accessible pairs for owner review before wider topic batches.
+   full/accessible pairs; the owner approved the full representative set on 2026-08-19 and opened
+   the wider paired-topic batch gate.
 7. Only after the representative set exists, build the one-way authored-HTML proofreading packet
    projection. One Core pilot is not enough evidence for a universal packet schema.
 
@@ -254,23 +259,27 @@ the approval of unchanged stable-id snapshots.
 
 Within the approved curriculum scope:
 
-1. Maintain `plan_courses.py` cuts for approved Core units, Contextual practical courses, and
-   Freetalking themes.
-2. Generate schema-valid disabled `course.yaml` with required `countryCode: JP` only. Do not generate deployable `lesson.yaml`
-   while prestudy is deferred; never maintain a second curriculum copy inside the generator.
-3. Assign final course codes, `classLevel`, `LANG_TYPE` and per-course slots.
+1. Maintain the 43 approved course cuts generated by `plan_courses.py`: 11 Core, 10 Contextual and
+   22 paired Freetalking courses.
+2. Keep the generated, schema-valid `course.yaml` plans disabled with required
+   `countryCode: JP`. Do not generate deployable lesson manifests while prestudy is deferred;
+   never maintain a second curriculum copy inside the generator.
+3. Preserve the approved course codes and `classLevel` mapping. The destination supplies
+   `LANG_TYPE=EN`; do not add it to `course.yaml`.
 4. Do not build trial materials while trial mapping remains deferred.
-5. Update and verify the explicit external promotion path, including the root-runtime move and
-   verbatim audience country. `sync-from-authoring.py` mirrors the complete tree into
-   non-deployable `sandbox/authoring/en/`; promotion into `courses/en/` remains a separate step.
-6. Prove the full path through sync, import, shared-reference repointing and validation in the
-   consuming repository.
+5. After prestudy is approved, add reviewable `promotion.yaml` manifests beside the drafts and use
+   `tools/promote.py` to produce `courses/en/`; never edit the promoted lesson directories by hand.
+6. Prove promotion, shared-reference repointing, contract validation and the stage catalogue before
+   opening any `stage` → `main` release PR.
 
 ### E. Scale and validate
 
 1. Author by approved course batches, with writers owning disjoint lesson files and an orchestrator
    owning TOCs, generated artifacts, coverage boundaries and shared conventions.
-2. Run static checks, exact-generation tests, proofreading and rendered QA for every batch.
+2. Treat generation and proofreading as one step: immediately run complete page-by-page
+   proofreading, static checks, exact-generation tests and rendered QA on every batch. Produce no
+   owner-review links and begin no next batch until all four pass; fixes return to source and the
+   batch is regenerated and re-proofread.
 3. Maintain the running lexicon and audit Contextual scenes and outcomes for duplication in course order.
 4. Conduct learner pilots: two lessons per level, recorded task performance, delayed retrieval at
    one week and a transfer task.
@@ -281,12 +290,19 @@ Within the approved curriculum scope:
 
 ## Immediate next action
 
-The catalog gate is open, both Freetalking canonical decks are approved, and the ten-deck
-representative set is authored and internally audited. The next action is owner review of Core
-32/45/82, replacement CTX Travel 1, and the FT-7/9/49 pairs. If they pass, begin course-sized Core
-and Contextual batches and paired Freetalking topic batches from the approved shells, applying the
-pilot-feedback release checklist to every deck. Do not treat catalog or deck approval as
-learner-pilot evidence.
+The first approved-shell course batches—Core 12–24, Contextual Travel 1–6, and paired
+accessible/full Freetalking 1–8—passed immediate page-by-page proofreading, generated-source
+equality tests, full-corpus static checks, 360px/480px rendered checks and owner spot review on
+2026-08-19. The follow-up spacing defect in wrapped Contextual fill inputs was fixed in the shared
+component and added to the whole-corpus rendered gate before batch approval was closed.
+
+The next review unit is **39 new decks**: Core 1–11, Contextual Travel 7–12, and paired
+Freetalking 10–20 (FT-9 already exists). Author them from explicit, reviewable
+course-specific content data while reusing the approved shell-building machinery. The three first-
+batch generators are deliberately narrow; do not turn their hard-coded content into an implicit
+universal generator. Run exact-generation tests, the full checker, the running-lexicon rebuild and
+rendered QA, then stop for owner review again. Do not treat catalog or deck approval as learner-pilot
+evidence.
 
 ---
 
@@ -297,10 +313,10 @@ English is ready for scaled production only when all of the following are true:
 - the approved native catalog snapshot is current, with any later changed rows re-reviewed;
 - the Core evidence/corpus audits have no untriaged high-risk rows;
 - grammar and expression support remains complete and aligned on the accepted spine;
-- the three representative Core lessons and the replacement Contextual pilot are explicitly
-  approved; both Freetalking canonical decks already are;
+- the representative Core lessons, replacement Contextual pilot and paired Freetalking examples
+  remain the explicit approved golden set;
 - course and product identity decisions are fixed and manifests validate;
-- the external sync path passes end to end.
+- the in-repository promotion path passes end to end.
 
 It is ready to ship only after batch QA, trial/report material and learner-pilot evidence are also
 complete.

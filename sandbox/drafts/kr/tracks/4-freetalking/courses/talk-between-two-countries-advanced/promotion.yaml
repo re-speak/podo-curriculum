@@ -1,0 +1,88 @@
+apiVersion: podo.curriculum/v1
+kind: Promotion
+metadata:
+  target: courses/kr/talk-between-two-countries-advanced
+
+spec:
+  # 한 레슨이 제 폴더를 가진다 — lesson.html 옆에 lesson.yaml 이 있고, 그 둘이
+  # 짝이다. 그래서 source 는 폴더 하나가 아니라 lessons/ 이고, 덱은 그 아래
+  # 하위 경로로 가리킨다.
+  source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons
+  assetRoots:
+    - sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced
+    # 트랙 레슨이 입모양·삽화를 여기서 가져온다 — drafts/kr 아래 유일한 자산 폴더다.
+    - sandbox/drafts/kr/trial/assets
+
+  lessons:
+    - source: 01-what-surprised-me/lesson.html
+      slug: 01-what-surprised-me
+      week: 1
+      title:
+        ko: "\uc774\uac74 \uc9c4\uc9dc \uc2e0\uae30\ud588\ub2e4"
+        en: "What really surprised me"
+        ja: "\u672c\u5f53\u306b\u3073\u3063\u304f\u308a\u3057\u305f\u3053\u3068"
+    - source: 02-misunderstood-country/lesson.html
+      slug: 02-misunderstood-country
+      week: 2
+      title:
+        ko: "\uc624\ud574\ubc1b\ub294 \uc6b0\ub9ac\ub098\ub77c"
+        en: "Our misunderstood country"
+        ja: "\u8aa4\u89e3\u3055\u308c\u308b\u79c1\u305f\u3061\u306e\u56fd"
+    - source: 03-must-try-food/lesson.html
+      slug: 03-must-try-food
+      week: 3
+      title:
+        ko: "\uc774\uac74 \uaf2d \uba39\uc5b4 \ubd10"
+        en: "You have to try this"
+        ja: "\u3053\u308c\u306f\u305c\u3072\u98df\u3079\u3066\u307f\u3066"
+    - source: 04-table-manners/lesson.html
+      slug: 04-table-manners
+      week: 4
+      title:
+        ko: "\ubc25\uc0c1 \uc704\uc758 \ucc28\uc774"
+        en: "Differences at the table"
+        ja: "\u98df\u5353\u306e\u9055\u3044"
+    - source: 05-hidden-gem/lesson.html
+      slug: 05-hidden-gem
+      week: 5
+      title:
+        ko: "\ub098\ub9cc \uc544\ub294 \uba85\uc18c"
+        en: "My hidden gem"
+        ja: "\u79c1\u3060\u3051\u304c\u77e5\u308b\u7a74\u5834"
+    - source: 06-workplace-culture/lesson.html
+      slug: 06-workplace-culture
+      week: 6
+      title:
+        ko: "\ud68c\uc0ac\uc758 \uc628\ub3c4 \ucc28"
+        en: "Different workplace cultures"
+        ja: "\u8077\u5834\u306e\u6e29\u5ea6\u5dee"
+    - source: 07-untranslatable-words/lesson.html
+      slug: 07-untranslatable-words
+      week: 7
+      title:
+        ko: "\ubc88\uc5ed\uc774 \uc548 \ub418\ub294 \ub9d0"
+        en: "Words that do not translate"
+        ja: "\u7ffb\u8a33\u3067\u304d\u306a\u3044\u8a00\u8449"
+    - source: 08-convenience-showdown/lesson.html
+      slug: 08-convenience-showdown
+      week: 8
+      title:
+        ko: "\ud3b8\uc758\uc810 \ub300\uacb0"
+        en: "Convenience showdown"
+        ja: "\u30b3\u30f3\u30d3\u30cb\u5bfe\u6c7a"
+    - source: 09-drama-vs-reality/lesson.html
+      slug: 09-drama-vs-reality
+      week: 9
+      title:
+        ko: "\ub4dc\ub77c\ub9c8 \uc18d \ud55c\uad6d vs \uc9c4\uc9dc \ud55c\uad6d"
+        en: "Korea in dramas vs reality"
+        ja: "\u30c9\u30e9\u30de\u306e\u97d3\u56fd vs \u672c\u5f53\u306e\u97d3\u56fd"
+    - source: 10-holiday-scenes/lesson.html
+      slug: 10-holiday-scenes
+      week: 10
+      title:
+        ko: "\uba85\uc808 \ud48d\uacbd"
+        en: "Holiday scenes"
+        ja: "\u304a\u6b63\u6708\u306e\u98a8\u666f"
+
+# Generated from the draft lesson.yaml files — edit those and re-run.
