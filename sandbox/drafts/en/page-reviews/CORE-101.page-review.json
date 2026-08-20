@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/101-it-depends-on-whether/lesson.html",
-  "lessonSha256": "ac21474fd9b075eee2caf1d954d14ef37d9d9fafe238ee836314fdf42e702b32",
+  "lessonSha256": "9a29d4cd817ecab4ee2fc51ba3d7d0a5de6f56ae5ac8d2aac96468342ae96bc3",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -65,7 +65,7 @@
       "pageId": "part1-intro",
       "learnerAction": "Read the displayed pattern title aloud.",
       "tutorAction": "Introduce the next pattern in one short line, then move on.",
-      "targetOrPrompt": "Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: It depends on whether they approve it.",
+      "targetOrPrompt": "Exact transition: Use this when the answer changes according to one unresolved yes-or-no possibility. Please read the title aloud. | 一つの未確定な「する／しない」によって答えが変わるときに使います。 タイトルを声に出して読んでください。 Displayed pattern: It depends on whether they approve it.",
       "learningTarget": "Pattern 1 transition in CORE-101: Progress from the lesson can-do into usable speech with both taught frames.",
       "pedagogicalValue": "This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.",
       "failureDiagnosis": "Difficulty here identifies readiness for this specific step before support is reduced on the next page.",
@@ -301,7 +301,7 @@
       "pageId": "part2-intro",
       "learnerAction": "Read the displayed pattern title aloud.",
       "tutorAction": "Introduce the next pattern in one short line, then move on.",
-      "targetOrPrompt": "Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: Either way, we should prepare.",
+      "targetOrPrompt": "Exact transition: Use this before something that remains true in both possible outcomes. Please read the title aloud. | 二つの可能な結果のどちらでも変わらないことの前に使います。 タイトルを声に出して読んでください。 Displayed pattern: Either way, we should prepare.",
       "learningTarget": "Pattern 2 transition in CORE-101: Progress from the lesson can-do into usable speech with both taught frames.",
       "pedagogicalValue": "This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.",
       "failureDiagnosis": "Difficulty here identifies readiness for this specific step before support is reduced on the next page.",

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/98-thats-mostly-because-of/lesson.html`
-- SHA-256: `eb69868fb14afe5f1c485ff8ae3cc1ebd6a2eb5704e99a87e70fd145047ce4b4`
+- SHA-256: `842b5165b156caa61b4453e021f8c95aed23905ed31d6a3119fd9fc1975d33b8`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: That's mostly because of the delay.
+- Visible target or prompt: Exact transition: Use this to name the main cause while leaving room for other causes. Please read the title aloud. | ほかの原因の余地を残しながら、主な原因を示すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: That's mostly because of the delay.
 - Learning target: Pattern 1 transition in CORE-98: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: A lot of it comes from a misunderstanding.
+- Visible target or prompt: Exact transition: Use this to name the source that produces much of a situation. Please read the title aloud. | 状況の多くを生み出している出所を示すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: A lot of it comes from a misunderstanding.
 - Learning target: Pattern 2 transition in CORE-98: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

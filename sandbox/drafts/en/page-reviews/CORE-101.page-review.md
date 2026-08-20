@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/101-it-depends-on-whether/lesson.html`
-- SHA-256: `ac21474fd9b075eee2caf1d954d14ef37d9d9fafe238ee836314fdf42e702b32`
+- SHA-256: `9a29d4cd817ecab4ee2fc51ba3d7d0a5de6f56ae5ac8d2aac96468342ae96bc3`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: It depends on whether they approve it.
+- Visible target or prompt: Exact transition: Use this when the answer changes according to one unresolved yes-or-no possibility. Please read the title aloud. | 一つの未確定な「する／しない」によって答えが変わるときに使います。 タイトルを声に出して読んでください。 Displayed pattern: It depends on whether they approve it.
 - Learning target: Pattern 1 transition in CORE-101: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: Either way, we should prepare.
+- Visible target or prompt: Exact transition: Use this before something that remains true in both possible outcomes. Please read the title aloud. | 二つの可能な結果のどちらでも変わらないことの前に使います。 タイトルを声に出して読んでください。 Displayed pattern: Either way, we should prepare.
 - Learning target: Pattern 2 transition in CORE-101: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

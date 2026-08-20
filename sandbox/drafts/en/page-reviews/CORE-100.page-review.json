@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/100-as-a-result-we-had-to-reschedule/lesson.html",
-  "lessonSha256": "01ec160a5850797d71c8ee6412175db598ca7fbef70328379a0ef0ff1fbfd28d",
+  "lessonSha256": "8782514e799880bdc5d8a4320207ee370b26bf037688cc37c36ee22d2e124c99",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -65,7 +65,7 @@
       "pageId": "part1-intro",
       "learnerAction": "Read the displayed pattern title aloud.",
       "tutorAction": "Introduce the next pattern in one short line, then move on.",
-      "targetOrPrompt": "Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: The train was canceled. As a result, we had to reschedule.",
+      "targetOrPrompt": "Exact transition: Use this at the start of a new sentence to link a stated cause to its result. Please read the title aloud. | 述べた原因を結果へつなぐ新しい文の先頭で使います。 タイトルを声に出して読んでください。 Displayed pattern: The train was canceled. As a result, we had to reschedule.",
       "learningTarget": "Pattern 1 transition in CORE-100: Progress from the lesson can-do into usable speech with both taught frames.",
       "pedagogicalValue": "This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.",
       "failureDiagnosis": "Difficulty here identifies readiness for this specific step before support is reduced on the next page.",
@@ -304,7 +304,7 @@
       "pageId": "part2-intro",
       "learnerAction": "Read the displayed pattern title aloud.",
       "tutorAction": "Introduce the next pattern in one short line, then move on.",
-      "targetOrPrompt": "Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: We had to reschedule. That meant we lost a week.",
+      "targetOrPrompt": "Exact transition: Use this to add the practical consequence created by the fact before it. Please read the title aloud. | 直前の事実が生んだ実際の影響を加えるときに使います。 タイトルを声に出して読んでください。 Displayed pattern: We had to reschedule. That meant we lost a week.",
       "learningTarget": "Pattern 2 transition in CORE-100: Progress from the lesson can-do into usable speech with both taught frames.",
       "pedagogicalValue": "This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.",
       "failureDiagnosis": "Difficulty here identifies readiness for this specific step before support is reduced on the next page.",

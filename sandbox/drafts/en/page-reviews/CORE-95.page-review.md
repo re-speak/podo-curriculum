@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/95-where-id-push-back-is-on-the-cost/lesson.html`
-- SHA-256: `aa8ec9e5a43a187b8b5649eec7df28fd3ef132af84dc71cfeec64bdf97a4dd47`
+- SHA-256: `f86fc2d3d07c2429b5a94b15c712c64a99be29e25a9fc344e4db3f41335d91a0`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: Where I'd push back is on the cost.
+- Visible target or prompt: Exact transition: Use this to isolate one area of disagreement instead of rejecting the whole proposal. Please read the title aloud. | 提案全体を否定せず、反対する領域を一つに絞るときに使います。 タイトルを声に出して読んでください。 Displayed pattern: Where I'd push back is on the cost.
 - Learning target: Pattern 1 transition in CORE-95: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: I don't think that takes the delay into account.
+- Visible target or prompt: Exact transition: Use this to point out one factor that the current judgment leaves out. Please read the title aloud. | 今の判断で抜けている要素を一つ指摘するときに使います。 タイトルを声に出して読んでください。 Displayed pattern: I don't think that takes the delay into account.
 - Learning target: Pattern 2 transition in CORE-95: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

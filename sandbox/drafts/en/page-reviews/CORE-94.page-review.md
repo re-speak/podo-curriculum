@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/94-wouldnt-it-be-better-if/lesson.html`
-- SHA-256: `fa872b13e4eac9fb4491a2360e7524e8f66f1f20e5a15eb3985fdd406c1db8a7`
+- SHA-256: `9fe0f25a5e28542033cdc92f1a1cdf7ead8df46f810864d11338f9a6681cd8ff`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: Wouldn't it be better if we waited?
+- Visible target or prompt: Exact transition: Use this to present your preferred alternative as a question that invites agreement. Please read the title aloud. | 自分の望む別案を、同意を促す質問として示すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: Wouldn't it be better if we waited?
 - Learning target: Pattern 1 transition in CORE-94: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: What if we tried it the other way?
+- Visible target or prompt: Exact transition: Use this to float another possible action without presenting it as a correction. Please read the title aloud. | 別の行動を訂正ではなく、一つの可能性として持ち出すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: What if we tried it the other way?
 - Learning target: Pattern 2 transition in CORE-94: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

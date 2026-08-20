@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/99-that-suggests-that/lesson.html`
-- SHA-256: `7d2d5e1c2e49670f8087ca75f8202793a38bae605e102b94d1d97e562547c8f5`
+- SHA-256: `cdba2cdc8f98e20f1f73edd7d1c8c430f111969c686904e155d6adf5c1f64ed4`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: The drop suggests that people didn't see it.
+- Visible target or prompt: Exact transition: Use this to connect an observation to a cautious inferred conclusion. Please read the title aloud. | 観察した事実を、控えめに推測した結論へつなぐときに使います。 タイトルを声に出して読んでください。 Displayed pattern: The drop suggests that people didn't see it.
 - Learning target: Pattern 1 transition in CORE-99: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: That would explain the delay.
+- Visible target or prompt: Exact transition: Use this when a new fact would logically account for something unexplained. Please read the title aloud. | 新しい事実によって未説明のことに筋が通るときに使います。 タイトルを声に出して読んでください。 Displayed pattern: That would explain the delay.
 - Learning target: Pattern 2 transition in CORE-99: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

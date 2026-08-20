@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/93-to-be-fair/lesson.html`
-- SHA-256: `d883ff6ced1cb0cecca5b5f50bf64367a1700dcb6345105257f4c455c93c7a24`
+- SHA-256: `0484983ed892e9a831f016d037bdc8f422c5a8b01d7e3b31d1c25ac496721ba6`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: To be fair, they did warn us.
+- Visible target or prompt: Exact transition: Use this to grant the other side one fair point before you respond. Please read the title aloud. | 返答する前に、相手側の妥当な点を一つ認めるときに使います。 タイトルを声に出して読んでください。 Displayed pattern: To be fair, they did warn us.
 - Learning target: Pattern 1 transition in CORE-93: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: That said, we still need a date.
+- Visible target or prompt: Exact transition: Use this to turn from the concession to the point that still matters. Please read the title aloud. | 認めた点から、まだ重要な反対側の要点へ移るときに使います。 タイトルを声に出して読んでください。 Displayed pattern: That said, we still need a date.
 - Learning target: Pattern 2 transition in CORE-93: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

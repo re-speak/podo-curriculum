@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/100-as-a-result-we-had-to-reschedule/lesson.html`
-- SHA-256: `01ec160a5850797d71c8ee6412175db598ca7fbef70328379a0ef0ff1fbfd28d`
+- SHA-256: `8782514e799880bdc5d8a4320207ee370b26bf037688cc37c36ee22d2e124c99`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: The train was canceled. As a result, we had to reschedule.
+- Visible target or prompt: Exact transition: Use this at the start of a new sentence to link a stated cause to its result. Please read the title aloud. | 述べた原因を結果へつなぐ新しい文の先頭で使います。 タイトルを声に出して読んでください。 Displayed pattern: The train was canceled. As a result, we had to reschedule.
 - Learning target: Pattern 1 transition in CORE-100: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: We had to reschedule. That meant we lost a week.
+- Visible target or prompt: Exact transition: Use this to add the practical consequence created by the fact before it. Please read the title aloud. | 直前の事実が生んだ実際の影響を加えるときに使います。 タイトルを声に出して読んでください。 Displayed pattern: We had to reschedule. That meant we lost a week.
 - Learning target: Pattern 2 transition in CORE-100: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

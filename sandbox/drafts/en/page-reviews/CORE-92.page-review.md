@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/92-im-not-entirely-convinced/lesson.html`
-- SHA-256: `321258135b2929f565c6cd219128410e0f1bf3a38ceca8c69dae5edf19db5b14`
+- SHA-256: `71632e695cd82522e79c4984354cdff2355b6281613cd92d021aa313bdde7d57`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: I'm not entirely convinced that it'll work.
+- Visible target or prompt: Exact transition: Use this to signal a real doubt without stating blunt disagreement. Please read the title aloud. | はっきり反対と言わずに、本当の疑問を伝えるときに使います。 タイトルを声に出して読んでください。 Displayed pattern: I'm not entirely convinced that it'll work.
 - Learning target: Pattern 1 transition in CORE-92: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: I'd want to see the numbers before deciding.
+- Visible target or prompt: Exact transition: Use this to name the evidence you need before making a decision. Please read the title aloud. | 判断する前に必要な根拠を示すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: I'd want to see the numbers before deciding.
 - Learning target: Pattern 2 transition in CORE-92: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

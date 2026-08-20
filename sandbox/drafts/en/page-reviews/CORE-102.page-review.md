@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/102-otherwise-wed-have-to-start-again/lesson.html`
-- SHA-256: `cc1aea842c8b9e697441f97822b0cc253086bc6ec0e5e868fea7fa2b97b5a03b`
+- SHA-256: `3d22bff584c355d29177acfc1383188d611b44e2a31be4f406f9ad2f3c383c36`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: Otherwise, we'd have to start again.
+- Visible target or prompt: Exact transition: Use this to compress the failed condition and state its necessary consequence. Please read the title aloud. | 満たされなかった条件を短くまとめ、必要になる結果を示すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: Otherwise, we'd have to start again.
 - Learning target: Pattern 1 transition in CORE-102: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: If that doesn't work, we could ask them.
+- Visible target or prompt: Exact transition: Use this to offer a possible fallback after the first option fails. Please read the title aloud. | 最初の方法が失敗したあとに、可能な代案を出すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: If that doesn't work, we could ask them.
 - Learning target: Pattern 2 transition in CORE-102: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.

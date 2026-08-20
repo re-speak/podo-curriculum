@@ -329,7 +329,7 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
             self.assertEqual(page.count('class="turn '), 4, number)
             self.assertIn("Tutor&#x27;s answer:", page, number)
             self.assertNotIn('class="hint"', page, number)
-            self.assertIn("Use today's pattern only if it fits.", page, number)
+            self.assertIn("Invite today's pattern only if it fits.", page, number)
 
     def test_supported_translation_and_exact_write_contracts(self):
         for number, data in batch.LESSONS.items():

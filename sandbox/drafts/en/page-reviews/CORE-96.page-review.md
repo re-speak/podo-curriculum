@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-diplomacy-and-reasoning/lessons/96-i-meant-next-friday-not-this-friday/lesson.html`
-- SHA-256: `20caeea4ac76637bb617233f15ab20b4f3c32323a87fbf526a2c2477fec4d72c`
+- SHA-256: `39c89b252e49efdf8bfa0c69dd33633bb10cf4f41639be564b9da2005c83af3f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -47,7 +47,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: First, let's practice this pattern. | まず、このパターンを練習しましょう。 Displayed pattern: I meant next Friday, not this Friday.
+- Visible target or prompt: Exact transition: Use this to replace one detail that the listener understood incorrectly. Please read the title aloud. | 聞き手が誤って理解した一つの情報を置き換えるときに使います。 タイトルを声に出して読んでください。 Displayed pattern: I meant next Friday, not this Friday.
 - Learning target: Pattern 1 transition in CORE-96: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 1 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the displayed pattern title aloud.
 - Tutor action: Introduce the next pattern in one short line, then move on.
-- Visible target or prompt: Exact transition: Next, let's practice this pattern. | 次に、このパターンを練習しましょう。 Displayed pattern: What I was trying to say is that we need more time.
+- Visible target or prompt: Exact transition: Use this to restate the complete message you intended to communicate. Please read the title aloud. | 本来伝えたかった内容全体を言い直すときに使います。 タイトルを声に出して読んでください。 Displayed pattern: What I was trying to say is that we need more time.
 - Learning target: Pattern 2 transition in CORE-96: Progress from the lesson can-do into usable speech with both taught frames.
 - Pedagogical value: This page has one job—Pattern 2 transition—and earns its place by moving from noticing toward independent, communicative use.
 - Failure diagnoses: Difficulty here identifies readiness for this specific step before support is reduced on the next page.
