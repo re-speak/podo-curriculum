@@ -1,7 +1,7 @@
 # English Curriculum — Current Build Plan
 
 **Status:** native catalog, all thirteen active representative pilots and the first generated
-Core, Contextual and paired Freetalking course batches owner-approved · checkpoints 1–4
+Core, Contextual and paired Freetalking course batches owner-approved · checkpoints 1–5
 independently proofread and validated, awaiting owner spot-check, approval and stage integration
 
 **Current as of:** 2026-08-20
@@ -20,14 +20,14 @@ here only when it changes the starting point for future work.
 | Curriculum | 4 tracks · 315 planned items |
 | Production-facing catalog | 303 items: 122 Core · 60 Contextual · 121 Freetalking |
 | Planning-only catalog | 12 pronunciation lessons; no pronunciation decks authorized |
-| Authored lessons | 177 HTML files: 176 active decks (122 Core · 12 Contextual · 42 Freetalking decks covering 21 paired topics) plus one superseded old CTX-1 prototype. Against the 424-deck production target, 248 decks remain. |
+| Authored lessons | 201 HTML files: 200 active decks (122 Core · 36 Contextual · 42 Freetalking decks covering 21 paired topics) plus one superseded old CTX-1 prototype. Against the 424-deck production target, 224 decks remain. |
 | Blueprints | Core, Contextual and Freetalking complete |
 | Generated author packets | 315 item briefs plus 4 indexes |
 | Review surface | current generated 303-item production catalog owner-approved on 2026-08-18 with no requested row dispositions |
 | Core evidence | 122-row generated triage ledger complete; five priority rows resolved against current first-party sources; Core 76/105 productive bands remain provisional |
 | Core audit | final progression pass plus a 52-row corpus-informed naturalness audit for Core 71–122; no audit-led TOC changes are pending |
-| Automated quality | 301 regression tests; all 177 English HTML files pass with 0 errors and 0 warnings; all checkpoint batches render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
-| Deployment | 43 disabled `course.yaml` plans exist. Local promotion manifests or promoted output are integration artifacts, not evidence of owner approval or stage deployment; checkpoint 4 owner spot-check, approval and stage integration, plus prestudy and learner-visible promotion, remain open. |
+| Automated quality | 338 regression tests; all 201 English HTML files pass with 0 errors and 0 warnings; all checkpoint batches render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
+| Deployment | 43 disabled `course.yaml` plans exist. Local promotion manifests or promoted output are integration artifacts, not evidence of owner approval or stage deployment; checkpoint batches 1–5 still await their stated owner spot-check, approval and stage integration gates, and prestudy and learner-visible promotion remain open. |
 
 The curriculum is no longer waiting for basic architecture, tooling, native catalog approval or
 course identity. Its immediate content risk is whether the approved shells remain natural and
@@ -113,6 +113,11 @@ the owner/product system supplies the final values.
   curriculum and remains a superseded prototype, not a canonical source. Replacement Travel CTX
   1–6 now forms the first Contextual batch on `stage`. Travel 7–12 is the second generated and
   independently proofread batch, awaiting owner spot-check and approval before stage integration.
+- Contextual 13–36 forms checkpoint 5 across `ctx-travel-disruptions-urgent-problems`,
+  `ctx-travel-independent-social`, `ctx-travel-complex-decisions` and
+  `ctx-business-workplace-essentials`. All 24 decks are independently semantic/pedagogic,
+  bilingual and visual proofread and validated. Owner spot-check, approval and stage integration
+  are still pending.
 - FT-1 is authored as separate 13-page full and accessible decks, visually reviewed at 480px and
   360px, and owner-approved on 2026-08-18 as the matching canonical shells for their language loads.
   Topics 1–8 now form the first paired Freetalking batch on `stage`. Topics 10–20 are the second
@@ -141,7 +146,7 @@ the owner/product system supplies the final values.
 - `build_running_lexicon.py` generates the authored vocabulary ledger from lesson metadata.
 - `check_deck.py` checks identity, references, duplicate ids, inline code, no-yomi, tutor-script
   parity, reorder chunking, reorder answer solvability and vocabulary ownership/load.
-- Three hundred one regression tests prove parser contracts, shell retargeting, generated
+- Three hundred thirty-eight regression tests prove parser contracts, shell retargeting, generated
   brief/map/ledger/catalog/lexicon freshness and review-intake failure cases.
 
 ### 4. Shared foundation
@@ -338,9 +343,16 @@ Checkpoint 4 covers **31 course-ordered Core decks, Core 92–122** across the f
 courses. All 31 decks passed source-first generation, immediate independent semantic/pedagogic,
 bilingual and visual proofreading, exact-generation tests, the full checker, running-lexicon
 validation and 360px/480px rendered QA on 2026-08-20. Owner spot-check, approval and stage
-integration remain pending. All 122 Core decks are now authored; select the next course-ordered
-Contextual or paired Freetalking batch under the same generate-then-proofread gate. Do not treat
-catalog or deck approval as learner-pilot evidence.
+integration remain pending. All 122 Core decks are now authored.
+
+Checkpoint 5 covers **24 course-ordered Contextual decks, CTX 13–36** across
+`ctx-travel-disruptions-urgent-problems`, `ctx-travel-independent-social`,
+`ctx-travel-complex-decisions` and `ctx-business-workplace-essentials`. All 24 decks passed
+source-first generation, immediate independent semantic/pedagogic, bilingual and visual
+proofreading, exact-generation tests, the full checker, running-lexicon validation and 360px/480px
+rendered QA on 2026-08-20. Owner spot-check, approval and stage integration remain pending. Select
+the next course-ordered Contextual or paired Freetalking batch under the same
+generate-then-proofread gate. Do not treat catalog or deck approval as learner-pilot evidence.
 
 ---
 
