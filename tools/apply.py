@@ -15,7 +15,7 @@ them. So this tool builds zips, states what it wants, and lets grape do it.
 
 The request/response contract lives in docs/sync-contract.md.
 
-    python3 tools/apply.py --env stage [--dry-run] [--only kr/hangul-lv1]
+    python3 tools/apply.py --env stage [--dry-run] [--only kr/hangul-lv1] [--jobs 4]
 
 Auth is a Google OIDC ID token in PODO_CURRICULUM_SYNC_TOKEN — the deploy build
 mints it off the metadata server, so there is no stored secret.
@@ -24,6 +24,7 @@ mints it off the metadata server, so there is no stored secret.
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import hashlib
 import io
 import json
@@ -41,12 +42,21 @@ import plan as plan_mod
 
 TOKEN_ENV = "PODO_CURRICULUM_SYNC_TOKEN"
 
+# 코스는 서로 독립이고 요청도 코스당 하나라(docs/sync-contract.md), 순서대로 보낼 이유가
+# 없다. 한 코스가 5초쯤 걸리는데 그 시간은 grape 안에서 GCS·레몬보드를 기다리는 시간이라
+# 이쪽에서는 소켓만 잡고 있다 — 56 코스를 줄 세우면 그 대기가 그대로 합산된다.
+#
+# 기본값을 낮게 잡은 이유는 받는 쪽이다. 비프로덕션 grape 는 replica 1 · CPU 1 이고
+# prod 도 2 뿐이며, prod grape 는 어드민 사용자도 함께 받는다. 배포가 어드민을 밀어내면
+# 아낀 몇 분보다 비싸다.
+DEFAULT_JOBS = 4
+
 
 class ApplyError(Exception):
     pass
 
 
-def build_manifest(curriculum: dict, course: model.Course
+def build_manifest(curriculum: dict, course: model.Course, log=print
                    ) -> tuple[dict, dict, pathlib.Path | None]:
     """The desired state of one course, plus the zips and cover that go with it.
 
@@ -65,7 +75,7 @@ def build_manifest(curriculum: dict, course: model.Course
 
     for lesson in course.lessons:
         if lesson.incomplete:
-            print(f"  ! {lesson.slug}: skipped — missing {', '.join(lesson.incomplete)} deck")
+            log(f"  ! {lesson.slug}: skipped — missing {', '.join(lesson.incomplete)} deck")
             continue
 
         entry = {
@@ -175,6 +185,48 @@ def post(url: str, manifest: dict, zips: dict[str, pathlib.Path],
         raise ApplyError(f"grape unreachable: {exc}") from exc
 
 
+def apply_course(curriculum: dict, course: model.Course, url: str, token: str,
+                 dry_run: bool) -> tuple[bool, list[str]]:
+    """Send one course. Returns (ok, the lines to print for it).
+
+    Nothing is printed from here. Courses go out concurrently, so a print in the
+    middle of one would land in the middle of another; collecting the lines and
+    printing them together keeps each course's block intact and in course order.
+    """
+    lines = [f"→ {course.key}"]
+    manifest, zips, cover = build_manifest(curriculum, course, log=lines.append)
+
+    if dry_run:
+        lines.append(json.dumps(manifest, indent=2, ensure_ascii=False))
+        lines.append(f"  (dry run) would send {len(zips)} zip(s)"
+                     + (f" and the cover {cover.name}" if cover else ""))
+        return True, lines
+
+    try:
+        result = post(url, manifest, zips, cover, token)
+    except ApplyError as exc:
+        lines.append(f"  ✗ {exc}")
+        return False, lines
+
+    if not result.get("ok"):
+        for err in result.get("errors", ["unknown error"]):
+            lines.append(f"  ✗ {err}")
+        return False, lines
+
+    for warning in result.get("warnings", []):
+        lines.append(f"  ~ {warning}")
+    lines.append(f"  ✓ cover {result['course']['coverId']} · "
+                 f"{len(result['course'].get('lessons', {}))} lesson row(s) · "
+                 f"{len(zips)} deck(s) uploaded")
+    # 표지를 보냈는데 URL 이 안 돌아오면 업로드가 실패한 것이다. grape 는 그걸 경고로
+    # 처리하므로(코스 동기화 자체는 성공) 여기서 눈에 띄게 적어 둔다.
+    if cover is not None:
+        thumb = result["course"].get("thumbnail")
+        lines.append(f"  ✓ cover image → {thumb}" if thumb
+                     else "  ~ cover image was sent but grape reported no URL — see warnings")
+    return True, lines
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -182,6 +234,9 @@ def main() -> int:
     ap.add_argument("--only", help="apply a single course key, e.g. kr/hangul-lv1")
     ap.add_argument("--dry-run", action="store_true",
                     help="build and print the manifest; send nothing")
+    ap.add_argument("--jobs", type=int, default=DEFAULT_JOBS,
+                    help=f"courses to send concurrently (default {DEFAULT_JOBS}); "
+                         f"1 sends them one at a time")
     args = ap.parse_args()
 
     curriculum = model.load_curriculum()
@@ -197,42 +252,24 @@ def main() -> int:
     print(plan_mod.render(plan_mod.plan(args.env)))
     print()
 
+    # dry run 은 코스마다 매니페스트를 통째로 찍는다. 동시에 돌 이유가 없고, 한 줄씩
+    # 읽히는 편이 낫다.
+    jobs = 1 if args.dry_run else max(1, min(args.jobs, len(courses)))
+    if jobs > 1:
+        print(f"({len(courses)} courses, {jobs} in flight)\n")
+
+    def run(course: model.Course) -> tuple[bool, list[str]]:
+        return apply_course(curriculum, course, env_cfg["grapeSyncApi"], token, args.dry_run)
+
     failures = 0
-
-    for course in courses:
-        print(f"→ {course.key}")
-        manifest, zips, cover = build_manifest(curriculum, course)
-
-        if args.dry_run:
-            print(json.dumps(manifest, indent=2, ensure_ascii=False))
-            print(f"  (dry run) would send {len(zips)} zip(s)"
-                  + (f" and the cover {cover.name}" if cover else ""))
-            continue
-
-        try:
-            result = post(env_cfg["grapeSyncApi"], manifest, zips, cover, token)
-        except ApplyError as exc:
-            print(f"  ✗ {exc}")
-            failures += 1
-            continue
-
-        if not result.get("ok"):
-            for err in result.get("errors", ["unknown error"]):
-                print(f"  ✗ {err}")
-            failures += 1
-            continue
-
-        for warning in result.get("warnings", []):
-            print(f"  ~ {warning}")
-        print(f"  ✓ cover {result['course']['coverId']} · "
-              f"{len(result['course'].get('lessons', {}))} lesson row(s) · "
-              f"{len(zips)} deck(s) uploaded")
-        # 표지를 보냈는데 URL 이 안 돌아오면 업로드가 실패한 것이다. grape 는 그걸 경고로
-        # 처리하므로(코스 동기화 자체는 성공) 여기서 눈에 띄게 적어 둔다.
-        if cover is not None:
-            thumb = result["course"].get("thumbnail")
-            print(f"  ✓ cover image → {thumb}" if thumb
-                  else "  ~ cover image was sent but grape reported no URL — see warnings")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
+        # map 은 제출 순서대로 돌려준다 — 동시에 나가도 로그는 코스 순서 그대로 남는다.
+        # flush 는 빌드 로그 때문이다: 파이프로 나가면 파이썬이 블록 버퍼링이라, 없으면
+        # 5분치 출력이 마지막에 한꺼번에 떨어져 어디서 멈췄는지 보이지 않는다.
+        for ok, lines in pool.map(run, courses):
+            print("\n".join(lines), flush=True)
+            if not ok:
+                failures += 1
 
     return 1 if failures else 0
 
