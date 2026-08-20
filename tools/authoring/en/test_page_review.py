@@ -104,6 +104,34 @@ class PageReviewTest(unittest.TestCase):
         errors = page_review.validate(self.lesson, self.review_path)
         self.assertTrue(any("extracted evidence differs" in error for error in errors))
 
+    def test_corpus_audit_requires_a_completed_ledger_for_every_active_lesson(self) -> None:
+        reviews = self.root / "reviews"
+        reviews.mkdir()
+        review = self.completed_review()
+        review["lesson"] = str(self.lesson.resolve())
+        first = reviews / "first.json"
+        first.write_text(json.dumps(review), encoding="utf-8")
+        second = self.root / "second" / "lesson.html"
+        second.parent.mkdir()
+        second.write_text('<section data-page-id="goal"></section>', encoding="utf-8")
+        errors = page_review.audit_corpus(self.root, reviews)
+        self.assertTrue(any(str(second) in error and "missing hash-bound" in error for error in errors))
+
+    def test_corpus_audit_ignores_superseded_lessons(self) -> None:
+        reviews = self.root / "reviews"
+        reviews.mkdir()
+        review = self.completed_review()
+        review["lesson"] = str(self.lesson.resolve())
+        (reviews / "first.json").write_text(json.dumps(review), encoding="utf-8")
+        old = self.root / "old" / "lesson.html"
+        old.parent.mkdir()
+        old.write_text(
+            '<meta name="podo:curriculum-status" content="superseded">'
+            '<section data-page-id="goal"></section>',
+            encoding="utf-8",
+        )
+        self.assertEqual(page_review.audit_corpus(self.root, reviews), [])
+
 
 if __name__ == "__main__":
     unittest.main()

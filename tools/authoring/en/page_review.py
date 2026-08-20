@@ -14,6 +14,7 @@ from typing import Any
 
 import check_deck
 
+REPO = pathlib.Path(__file__).resolve().parents[3]
 SCHEMA_VERSION = 2
 PAGE_ID_RE = re.compile(r'\bdata-page-id=["\']([^"\']+)["\']')
 REQUIRED_PAGE_FIELDS = (
@@ -222,6 +223,60 @@ def validate(
     return errors
 
 
+def audit_corpus(
+    lesson_root: pathlib.Path,
+    review_root: pathlib.Path,
+    *,
+    require_owner: bool = False,
+) -> list[str]:
+    """Require one current, completed human ledger for every active lesson."""
+    lessons = []
+    for lesson in sorted(lesson_root.rglob("lesson.html")):
+        source = lesson.read_text(encoding="utf-8")
+        if check_deck.meta_content(source, "podo:curriculum-status") == "superseded":
+            continue
+        lessons.append(lesson.resolve())
+
+    indexed: dict[pathlib.Path, pathlib.Path] = {}
+    errors: list[str] = []
+    for review_path in sorted(review_root.rglob("*.json")):
+        try:
+            review = load_review(review_path)
+        except ReviewError as exc:
+            errors.append(str(exc))
+            continue
+        raw_lesson = review.get("lesson")
+        if not isinstance(raw_lesson, str) or not raw_lesson.strip():
+            errors.append(f"{review_path}: missing lesson path")
+            continue
+        candidate = pathlib.Path(raw_lesson)
+        if not candidate.is_absolute():
+            candidate = REPO / candidate
+        candidate = candidate.resolve()
+        if candidate in indexed:
+            errors.append(
+                f"{candidate}: multiple review ledgers: {indexed[candidate]} and {review_path}"
+            )
+            continue
+        indexed[candidate] = review_path
+
+    active = set(lessons)
+    for lesson in lessons:
+        review_path = indexed.get(lesson)
+        if review_path is None:
+            errors.append(f"{lesson}: missing hash-bound page-review ledger")
+            continue
+        for error in validate(lesson, review_path, require_owner=require_owner):
+            errors.append(f"{review_path}: {error}")
+
+    for lesson, review_path in indexed.items():
+        if lesson not in active:
+            errors.append(
+                f"{review_path}: ledger points outside the active lesson corpus: {lesson}"
+            )
+    return errors
+
+
 def markdown(review: dict[str, Any]) -> str:
     stages = review.get("stages", {})
     lines = [
@@ -284,6 +339,13 @@ def main(argv: list[str] | None = None) -> int:
     render_parser.add_argument("review", type=pathlib.Path)
     render_parser.add_argument("--output", type=pathlib.Path, required=True)
 
+    corpus_parser = subparsers.add_parser(
+        "audit-corpus", help="require one current completed ledger for every active lesson"
+    )
+    corpus_parser.add_argument("lessons", type=pathlib.Path)
+    corpus_parser.add_argument("reviews", type=pathlib.Path)
+    corpus_parser.add_argument("--require-owner", action="store_true")
+
     args = parser.parse_args(argv)
     try:
         if args.command == "init":
@@ -297,6 +359,16 @@ def main(argv: list[str] | None = None) -> int:
                     print(f"ERROR: {error}", file=sys.stderr)
                 return 1
             print(f"PASS: {args.review} matches {args.lesson}")
+            return 0
+        if args.command == "audit-corpus":
+            errors = audit_corpus(
+                args.lessons, args.reviews, require_owner=args.require_owner
+            )
+            if errors:
+                for error in errors:
+                    print(f"ERROR: {error}", file=sys.stderr)
+                return 1
+            print(f"PASS: every active lesson under {args.lessons} has a current review")
             return 0
         review = load_review(args.review)
         args.output.parent.mkdir(parents=True, exist_ok=True)
