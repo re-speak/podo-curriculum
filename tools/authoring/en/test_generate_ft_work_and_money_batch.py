@@ -110,6 +110,29 @@ class WorkAndMoneySourceTests(unittest.TestCase):
                         r"\b(?:the learner|a learner) (?:can|may) (?:discuss|examine|use)\b",
                     )
 
+    def test_ft74_article_title_is_mobile_concise(self) -> None:
+        self.assertEqual(
+            batch.TOPICS[74]["article_title"],
+            ("The work behind the results", "結果を支える仕事"),
+        )
+        self.assertLessEqual(len(batch.TOPICS[74]["article_title"][0]), 32)
+        self.assertLessEqual(len(batch.TOPICS[74]["article_title"][1]), 14)
+
+    def test_ft74_effective_output_omits_stale_routing_copy(self) -> None:
+        stale_literals = (
+            "If nine to eleven was not a work period",
+            "A different two-hour period, a familiar case, or a general example",
+            "If that time does not fit",
+            "or a familiar example",
+            "If it changed",
+            "If it stayed",
+        )
+        for variant in batch.VARIANTS:
+            rendered = batch.build(74, variant)
+            with self.subTest(variant=variant):
+                for literal in stale_literals:
+                    self.assertNotIn(literal, rendered)
+
     def test_glosses_are_selective_variant_owned_and_case_exact(self) -> None:
         for topic_no, topic in batch.TOPICS.items():
             vocabulary = {

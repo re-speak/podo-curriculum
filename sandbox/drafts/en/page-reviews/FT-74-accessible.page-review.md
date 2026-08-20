@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/74-what-your-workday-actually-looks-like/lesson.html`
-- SHA-256: `5e4d27802b03085568fa10f012ef7dc4c3f23ce588c6cee689287c84a228c6a8`
+- SHA-256: `336984a8443d850874a9dfad65086e1f38de685666f14b1a980e1be386516498`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -30,7 +30,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Ask any question left from pre-study; otherwise continue directly to the live discussion.
 - Tutor action: Answer a learner question briefly, or skip the article when there is no question or no pre-study.
-- Visible target or prompt: Visible results depend on work that is easy to miss (見える結果は見落とされやすい仕事に支えられる): Did you have any questions about the article? / 記事について何か質問はありましたか？
+- Visible target or prompt: The work behind the results (結果を支える仕事): Did you have any questions about the article? / 記事について何か質問はありましたか？
 - Learning target: Use the 10-claim pre-study article to seed concrete language and viewpoints for “What your workday actually looks like.”
 - Pedagogical value: The article develops ten distinct claims from “Any two-hour window can reveal how a daily routine is really organised.” to “Understanding hidden work can change how a result is valued.”, giving the prompt pool several defensible angles.
 - Failure diagnoses: No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.

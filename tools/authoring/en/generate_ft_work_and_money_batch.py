@@ -347,7 +347,7 @@ TOPICS = {
         "what-your-workday-actually-looks-like", "What your workday actually looks like", "실제 하루 일과", "実際の仕事の一日",
         ("Let's reveal one behind-the-scenes part of work, study, care, or daily responsibility.", "仕事、勉強、ケア、日々の責任のうち、表に見えない部分を一つ話しましょう。"),
         (("Choose a two-hour window or general example", "二時間または一般的な例を選ぶ"), ("Name invisible work", "見えない作業を挙げる"), ("Explain why it matters", "重要な理由を説明する")),
-        ("Visible results depend on work that is easy to miss", "見える結果は見落とされやすい仕事に支えられる"),
+        ("The work behind the results", "結果を支える仕事"),
         [
             ("If nine to eleven was not a work period, another two-hour period or a familiar example can reveal the same hidden work.", "A different two-hour period, a familiar case, or a general example can reveal the same hidden labor.", "九時から十一時が作業の時間でなければ、別の二時間や身近な例でも、同じように見えない仕事を示せます。", "別の二時間、身近な事例、一般的な例でも、同じように見えない仕事を示せます。"),
             ("Behind the scenes, people prepare, check, coordinate, and repair.", "Visible output often depends on preparation, verification, coordination, maintenance, and recovery work.", "表に見えないところで、人は準備、確認、調整、修復をしています。", "見える成果は、準備、検証、調整、保守、復旧の仕事に支えられることがよくあります。"),
