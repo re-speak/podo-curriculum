@@ -310,9 +310,9 @@ always forget → has your bag changed in a few years → what does it say about
 without being asked when they explain something they love.*
 
 **21. A film you never get tired of** `story`
-*Opens:* "What film have you seen more than twice?"
-*Ladder:* what → how many times → what do you notice now that you didn't → who did you watch it with
-→ what do people not get about it → what would you show me first
+*Opens:* "What film could you happily watch more than twice?"
+*Ladder:* what → what makes it rewatchable → what might you notice the second time → who would you
+watch it with → what might a new viewer misunderstand → what would you show me first
 *Moves:* `I've seen it ___ times.` **(Core 48)** · `What I like most is ___.` **(Core 103)** `chunk`
 *Shared:* KR 3-1
 
@@ -324,14 +324,14 @@ would you recommend to someone starting
 *Shared:* KR 3-2, adapted from 처음 빠진 K-작품
 
 **23. Music for different parts of your day** `story`
-*Opens:* "What do you listen to while you commute?"
-*Ladder:* what → does it change by mood → what's your morning song → what can't you work to → what
-did you love five years ago → what would embarrass you if it shuffled aloud
+*Opens:* "What do you like to listen to while travelling somewhere?"
+*Ladder:* what → when do you prefer silence → does it change by mood → what's your morning song →
+what can't you work to → what did you love five years ago → what would surprise people on shuffle
 *Moves:* `I listen to ___ when ___.` **(Core 58)** · `It depends on ___.` **(Core 101)**
 *Shared:* KR 3-3
 
 **24. Your go-to karaoke song** `story`
-*Opens:* "What do you always sing at karaoke?"
+*Opens:* "What song would you choose first at karaoke?"
 *Ladder:* what → why that one → who taught you it → what's your backup → what would you never sing →
 what should I sing
 *Moves:* `I always go for ___.` **(Core 12)** · `I'd never sing ___.` **(Core 66)**
@@ -352,28 +352,28 @@ can't watch → is there one you changed your mind about → what would you refu
 *Shared:* KR 3-6
 
 **27. A restaurant you want to keep to yourself** `story`
-*Opens:* "Is there a restaurant you love but don't want too many people to know about?"
+*Opens:* "What restaurant—real or imagined—would you want to keep to yourself?"
 *Ladder:* where → what do you order → how did you find it → who have you taken → what happens if it
 gets popular → what makes a place worth keeping quiet
 *Moves:* `I'd rather keep ___ quiet.` **(Core 97)** `chunk` · `It's been there ___.` **(Core 51)** `chunk`
 *Shared:* KR 3-7
 
 **28. A book you chose for someone else** `story`
-*Opens:* "Have you ever bought a book to give away?"
-*Ladder:* what → who for → did they read it → why that book → what did it do for you → what would you
-give me
+*Opens:* "What book would you choose for someone else, and who would receive it?"
+*Ladder:* what → who for → why that book → how would you know it fit → what makes a good book gift →
+what would you choose for me
 *Moves:* `I bought it for ___.` **(Core 32)** · `I don't know if they ___.` **(Core 62)**
 *Shared:* KR 3-8
 
 **29. A hobby other people underestimate** `story`
-*Opens:* "What do you do that other people think is boring?"
+*Opens:* "What hobby do people underestimate?"
 *Ladder:* what → what do outsiders miss → how did you start → how much time → what's the best moment
 in it → what would convince me to try
 *Moves:* `People think it's ___, but ___.` **(Core 56)** · `The best part is ___.` **(Core 103)** `chunk`
 *Shared:* KR 3-9
 
 **30. Something in your room you would never throw away** `story`
-*Opens:* "Look around your room. What would you not throw away?"
+*Opens:* "What object would you never throw away?"
 *Ladder:* what → how did you get it → how long → who else knows it matters → what have you thrown
 away and regretted → what will you still have in ten years
 *Moves:* `I've had it since ___.` **(Core 51)** `chunk` · `I keep it because ___.` **(Core 54)**

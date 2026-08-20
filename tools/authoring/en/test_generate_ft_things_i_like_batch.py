@@ -54,6 +54,16 @@ class FreetalkingThingsILikeBatchTests(unittest.TestCase):
                         self.assertIn(len(followups), (2, 3))
                         self.assertEqual(len(followups), len(set(followups)))
                         self.assertTrue(all(value.endswith("?") for value in followups))
+                for variant in ("accessible", "full"):
+                    prompts = [item[variant] for item in topic["prompts"]]
+                    followup_sets = [
+                        tuple(item[f"{variant}_followups"])
+                        for item in topic["prompts"]
+                    ]
+                    all_followups = [value for values in followup_sets for value in values]
+                    self.assertEqual(len(prompts), len(set(prompts)))
+                    self.assertEqual(len(followup_sets), len(set(followup_sets)))
+                    self.assertEqual(len(all_followups), len(set(all_followups)))
 
     def test_checked_in_decks_are_exact_complete_generator_output(self) -> None:
         for topic_no in batch.TOPICS:
@@ -244,7 +254,20 @@ class FreetalkingThingsILikeBatchTests(unittest.TestCase):
                 with self.subTest(topic=topic_no, word=word):
                     self.assertNotIn(word.casefold(), earlier)
 
-    def test_curated_semantic_and_no_answer_safety_locks(self) -> None:
+    def test_curated_prompts_are_flexible_without_defensive_branching(self) -> None:
+        defensive = re.compile(
+            r"^(?:if (?:yes|not|one|none|someone|nobody|you have|you do|you never|you remember|they)\b)",
+            re.IGNORECASE,
+        )
+        for topic_no, topic in batch.TOPICS.items():
+            for prompt_index, item in enumerate(topic["prompts"], start=1):
+                for variant in ("accessible", "full"):
+                    with self.subTest(topic=topic_no, prompt=prompt_index, variant=variant):
+                        self.assertFalse(
+                            any(defensive.match(value) for value in item[f"{variant}_followups"]),
+                            item,
+                        )
+
         self.assertEqual(batch.TOPICS[26]["prompts"][0]["accessible"], "Pineapple on pizza — yes or no?")
         self.assertEqual(
             batch.TOPICS[23]["articles"][7],
@@ -254,96 +277,30 @@ class FreetalkingThingsILikeBatchTests(unittest.TestCase):
                 "共有する場所では、何を流すか、好みをどこまで見せるかが変わります。",
             ),
         )
-        self.assertIn("If you are not in your room", batch.TOPICS[30]["prompts"][0]["accessible_followups"][0])
-        self.assertIn("if anyone", batch.TOPICS[21]["prompts"][4]["accessible"].casefold())
-        self.assertTrue(all(value.startswith("If ") for value in batch.TOPICS[21]["prompts"][4]["accessible_followups"]))
-        self.assertTrue(all(value.startswith("If ") for value in batch.TOPICS[21]["prompts"][5]["accessible_followups"]))
-        self.assertIn("if ever", batch.TOPICS[24]["prompts"][1]["accessible"].casefold())
-        self.assertTrue(all(value.startswith("If ") for value in batch.TOPICS[24]["prompts"][1]["accessible_followups"]))
         self.assertEqual(
             batch.TOPICS[24]["prompts"][7]["accessible"],
-            "Ask me about my voice, range, taste, and confidence, then recommend a karaoke song.",
+            "Ask me what I enjoy singing, then recommend one karaoke song.",
         )
-        self.assertIn("if ever", batch.TOPICS[25]["prompts"][1]["accessible"].casefold())
-        self.assertTrue(batch.TOPICS[25]["prompts"][2]["accessible"].startswith("If you ate"))
-        self.assertTrue(batch.TOPICS[25]["prompts"][4]["accessible"].startswith("If you shared"))
-        self.assertIn("might you regret", batch.TOPICS[25]["prompts"][5]["accessible"])
         self.assertEqual(
-            batch.TOPICS[25]["prompts"][3]["accessible_followups"],
-            [
-                "If you ever do, what tends to cause it?",
-                "If you never do, what helps you avoid it?",
-            ],
+            batch.TOPICS[27]["prompts"][0]["accessible_followups"],
+            ["What makes it feel special?", "Who would you trust enough to tell?"],
         )
-        self.assertNotIn(
-            "What usually causes it?",
-            batch.TOPICS[25]["prompts"][3]["accessible_followups"],
-        )
-        for prompt_index in (3, 4, 5):
-            followups = batch.TOPICS[26]["prompts"][prompt_index]["accessible_followups"]
-            self.assertTrue(all(value.startswith("If ") for value in followups))
-        self.assertNotIn("assume", batch.TOPICS[26]["prompts"][3]["accessible_followups"][1])
-        self.assertIn("imagine", batch.TOPICS[27]["prompts"][0]["accessible_followups"][1])
-        self.assertEqual(
-            [item["accessible"] for item in batch.TOPICS[27]["prompts"][1:6]],
-            [
-                "What is the real or imagined restaurant like?",
-                "Where is it, or where would it be?",
-                "What do you order there, or what would you order?",
-                "How did you find it, or how might someone discover it?",
-                "Who have you taken there, or who would you take?",
-            ],
-        )
-        self.assertIn("If not", batch.TOPICS[28]["prompts"][0]["accessible_followups"][1])
-        self.assertTrue(all(value.startswith("If ") for value in batch.TOPICS[28]["prompts"][1]["accessible_followups"]))
         self.assertEqual(
             batch.TOPICS[28]["prompts"][7]["accessible"],
             "Ask me what I enjoy reading, then choose a book for me.",
         )
         self.assertEqual(
-            batch.TOPICS[28]["prompts"][3]["accessible_followups"][1],
-            "If you have not given it, what response would show that your choice worked?",
+            batch.TOPICS[29]["prompts"][3]["accessible"],
+            "What is the best way for a beginner to start?",
         )
-        self.assertNotIn(
-            "who might enjoy it",
-            batch.TOPICS[28]["prompts"][3]["accessible_followups"][1],
-        )
-        self.assertIn("do not do", batch.TOPICS[29]["prompts"][0]["accessible_followups"][1])
-        self.assertEqual(batch.TOPICS[29]["prompts"][1]["accessible"], "What do people actually do in that hobby?")
-        self.assertIn("or how might", batch.TOPICS[29]["prompts"][3]["accessible"])
-        self.assertIn("or think it would need", batch.TOPICS[29]["prompts"][4]["accessible"])
-        self.assertIn("していないなら", batch.TOPICS[29]["prompts"][4]["ja"])
-        self.assertNotIn("していなら", batch.TOPICS[29]["prompts"][4]["ja"])
-        self.assertIn("If not", batch.TOPICS[30]["prompts"][5]["accessible_followups"][1])
-        self.assertIn("if anyone", batch.TOPICS[30]["prompts"][4]["accessible"].casefold())
-        self.assertTrue(all(value.startswith("If ") for value in batch.TOPICS[30]["prompts"][4]["accessible_followups"]))
         self.assertEqual(
-            batch.TOPICS[30]["prompts"][2]["accessible_followups"],
-            [
-                "If someone else was involved, what did they add to the story?",
-                "If nobody else was, what made the moment memorable?",
-            ],
+            batch.TOPICS[30]["prompts"][4]["accessible"],
+            "Who would best understand why the object matters to you?",
         )
-        self.assertNotIn(
-            "Who else was part of that moment?",
-            batch.TOPICS[30]["prompts"][2]["accessible_followups"],
-        )
-        self.assertIn("if anything", batch.TOPICS[31]["prompts"][4]["accessible"].casefold())
-        self.assertIn("if anyone", batch.TOPICS[31]["prompts"][6]["accessible"].casefold())
         self.assertEqual(
-            batch.TOPICS[31]["prompts"][5]["accessible_followups"][1],
-            "Could anyone wear it well, or is the item itself the problem?",
+            batch.TOPICS[33]["prompts"][7]["accessible"],
+            "Which matters more at dinner: honesty or protecting the host's feelings?",
         )
-        self.assertNotIn(
-            "Who wears it well?",
-            batch.TOPICS[31]["prompts"][5]["accessible_followups"],
-        )
-        self.assertIn("If not", batch.TOPICS[33]["prompts"][0]["accessible_followups"][1])
-        self.assertIn("if ever", batch.TOPICS[33]["prompts"][1]["accessible"].casefold())
-        self.assertTrue(all(value.startswith("If ") for value in batch.TOPICS[33]["prompts"][1]["accessible_followups"]))
-        self.assertIn("end up on your plate", batch.TOPICS[33]["prompts"][1]["accessible_followups"][0])
-        self.assertTrue(batch.TOPICS[33]["prompts"][5]["accessible"].startswith("Would you say"))
-        self.assertTrue(all(value.startswith("If ") for value in batch.TOPICS[33]["prompts"][5]["accessible_followups"]))
 
     def test_reviewed_claim_rows_lock_exact_accessible_full_and_variant_japanese(self) -> None:
         expected = {
