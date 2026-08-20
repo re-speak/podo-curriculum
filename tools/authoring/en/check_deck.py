@@ -254,6 +254,18 @@ def pages(html):
         yield pid, html[pos:end]
 
 
+def page_attributes(chunk):
+    """Return attributes from the page root whose opening tag `pages()` trims.
+
+    A page chunk begins at the `data-page-id` attribute rather than at the
+    surrounding `<div`.  Reading the first nested element therefore silently
+    loses page-level contracts such as support stage.  Keep this helper paired
+    with `pages()` so evidence and validation inspect the actual page root.
+    """
+    prefix = chunk.split(">", 1)[0]
+    return {key.lower(): value for key, _, value in ATTRIBUTE.findall(prefix)}
+
+
 def span_body(source, start):
     """Return the inner HTML of the span whose opening tag ends at start."""
     depth = 1
@@ -420,16 +432,12 @@ def controlled_target_alignment_issues(page_chunks):
 
 
 def translation_support_issues(page_chunks):
-    """Validate the opt-in target-v2 support contract and hint boundaries."""
+    """Validate the required target-v2 support contract and hint boundaries."""
     errors = []
     for page_id, chunk in page_chunks.items():
         if not re.fullmatch(r"p[12]-translate", page_id):
             continue
-        opening = re.search(r'<(?:div|section)\b[^>]*>', chunk, re.I)
-        attrs = (
-            {key.lower(): value for key, _, value in ATTRIBUTE.findall(opening.group(0))}
-            if opening else {}
-        )
+        attrs = page_attributes(chunk)
         contract = attrs.get("data-scaffolding-contract")
         stage = attrs.get("data-support-stage")
         blocks = TASK_BLOCK.split(chunk)[1:]
@@ -449,7 +457,11 @@ def translation_support_issues(page_chunks):
                 )
 
         if contract is None:
-            continue  # Legacy page; migrate during the course-wide support audit.
+            errors.append(
+                f"{page_id}: translation production must declare "
+                'data-scaffolding-contract="target-v2" and an explicit support stage'
+            )
+            continue
         if contract != "target-v2":
             errors.append(f"{page_id}: unknown scaffolding contract {contract!r}")
             continue
@@ -459,16 +471,49 @@ def translation_support_issues(page_chunks):
                 "or \"checkpoint\""
             )
             continue
+        page_hint_count = 0
         for index, block in enumerate(blocks, start=1):
             hints = vocabulary.hint_words(block)
-            if stage == "supported" and not hints:
-                errors.append(
-                    f"{page_id} row {index}: supported production has no lexical hint"
-                )
+            page_hint_count += len(hints)
             if stage == "checkpoint" and hints:
                 errors.append(
                     f"{page_id} row {index}: checkpoint production must not carry hints"
                 )
+        if stage == "supported" and not page_hint_count:
+            errors.append(
+                f"{page_id}: supported production needs at least one useful lexical hint; "
+                "use checkpoint only when all non-target language is deliberately retrieved"
+            )
+    return errors
+
+
+def choice_branch_coverage_issues(page_chunks):
+    """Require a choice activity to make both taught alternatives earn their keep.
+
+    Four copies of the same answer are visually interactive but pedagogically
+    inert: after the first row the learner can tap by position without reading.
+    This objective gate complements the human review of distractor plausibility.
+    """
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-choose", page_id) or "word-choice-list" not in chunk:
+            continue
+        correct = []
+        for match in SPAN_OPEN.finditer(chunk):
+            attrs = {
+                key.lower(): value for key, _, value in ATTRIBUTE.findall(match.group(0))
+            }
+            if (
+                "opt" not in attrs.get("class", "").split()
+                or not re.search(r"\bdata-correct(?:\s|>|=)", match.group(0))
+            ):
+                continue
+            correct.append(plain_text(span_body(chunk, match.end())).casefold())
+        if len(correct) >= 2 and len(set(correct)) < 2:
+            errors.append(
+                f"{page_id}: every row has the same correct branch {correct[0]!r} — "
+                "vary the correct alternative or replace the activity with a decision that teaches something"
+            )
     return errors
 
 
@@ -1497,6 +1542,7 @@ def check(path):
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
+            errs.extend(choice_branch_coverage_issues(page_chunks))
             errs.extend(core_production_issues(page_chunks))
             proofread_status = meta_content(html, "podo:proofread-status")
             if proofread_status == "pending":
@@ -1512,6 +1558,7 @@ def check(path):
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
+            errs.extend(choice_branch_coverage_issues(page_chunks))
             errs.extend(contextual_production_issues(
                 page_chunks,
                 enforce_frame_boundaries=(

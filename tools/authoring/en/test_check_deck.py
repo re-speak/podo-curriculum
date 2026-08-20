@@ -654,7 +654,29 @@ class DeckCheckTests(unittest.TestCase):
             )
         }
         errors = check_deck.translation_support_issues(pages)
-        self.assertTrue(any("has no lexical hint" in item for item in errors))
+        self.assertTrue(any("needs at least one useful lexical hint" in item for item in errors))
+
+    def test_translation_production_rejects_unmarked_legacy_support(self):
+        pages = {
+            "p1-translate": (
+                '<div><div class="task-block"><input class="space-input" '
+                'data-answer="I\'m here for a holiday."></div></div>'
+            )
+        }
+        errors = check_deck.translation_support_issues(pages)
+        self.assertTrue(any("must declare" in item for item in errors))
+
+    def test_supported_translation_allows_known_rows_without_redundant_hints(self):
+        pages = {
+            "p1-translate": (
+                '<div data-scaffolding-contract="target-v2" '
+                'data-support-stage="supported">'
+                '<div class="task-block"><span class="hint-chip">休暇:holiday</span></div>'
+                '<div class="task-block"><input class="space-input" '
+                'data-answer="I\'m here for work."></div></div>'
+            )
+        }
+        self.assertEqual(check_deck.translation_support_issues(pages), [])
 
     def test_target_v2_rejects_article_and_auxiliary_hints(self):
         pages = {
@@ -667,6 +689,29 @@ class DeckCheckTests(unittest.TestCase):
         }
         errors = check_deck.translation_support_issues(pages)
         self.assertTrue(any("non-lexical hint" in item for item in errors))
+
+    def test_word_choice_requires_more_than_one_correct_branch(self):
+        pages = {
+            "p1-choose": (
+                '<div class="word-choice-list">'
+                '<span class="opt" data-correct>a</span><span class="opt">an</span>'
+                '<span class="opt" data-correct>a</span><span class="opt">an</span>'
+                '</div>'
+            )
+        }
+        errors = check_deck.choice_branch_coverage_issues(pages)
+        self.assertTrue(any("every row has the same correct branch" in item for item in errors))
+
+    def test_word_choice_accepts_both_branches_being_meaningful(self):
+        pages = {
+            "p1-choose": (
+                '<div class="word-choice-list">'
+                '<span class="opt" data-correct>a</span><span class="opt">an</span>'
+                '<span class="opt">a</span><span class="opt" data-correct>an</span>'
+                '</div>'
+            )
+        }
+        self.assertEqual(check_deck.choice_branch_coverage_issues(pages), [])
 
     def test_contextual_rejects_japanese_only_receptive_choices_and_roleplay_icons(self):
         icon = '<span class="avatar icon">A</span>'

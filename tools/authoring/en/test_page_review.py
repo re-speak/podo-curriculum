@@ -57,6 +57,16 @@ class PageReviewTest(unittest.TestCase):
         self.assertEqual([page["pageId"] for page in review["pages"]], ["goal", "practice"])
         self.assertEqual(review["lessonSha256"], page_review.sha256(self.lesson))
 
+    def test_scaffold_captures_support_stage_from_page_root(self) -> None:
+        self.lesson.write_text(
+            '<main><section data-page-id="practice" '
+            'data-scaffolding-contract="target-v2" data-support-stage="supported">'
+            '<span class="hint-chip">休暇:holiday</span></section></main>',
+            encoding="utf-8",
+        )
+        review = page_review.scaffold(self.lesson, self.review_path)
+        self.assertEqual(review["pages"][0]["evidence"]["supportStage"], "supported")
+
     def test_incomplete_template_fails(self) -> None:
         review = page_review.scaffold(self.lesson, self.review_path)
         self.review_path.write_text(json.dumps(review), encoding="utf-8")

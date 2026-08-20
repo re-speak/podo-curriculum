@@ -73,14 +73,7 @@ def page_evidence(path: pathlib.Path) -> dict[str, dict[str, Any]]:
     source = path.read_text(encoding="utf-8")
     evidence = {}
     for page_id, chunk in check_deck.pages(source):
-        opening = re.search(r'<(?:div|section)\b[^>]*>', chunk, re.I)
-        attrs = (
-            {
-                key.lower(): value
-                for key, _, value in check_deck.ATTRIBUTE.findall(opening.group(0))
-            }
-            if opening else {}
-        )
+        attrs = check_deck.page_attributes(chunk)
         blank_answers = []
         for tag in check_deck.CONTROL_TAG.findall(chunk):
             control_attrs = {
