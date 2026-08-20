@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/97-the-animal-your-friends-would-choose-for-you/lesson.html",
+  "lessonSha256": "a5fb9f8cc35951af097a27b42e86b8560d8e074284c4ffb38f7aa4a836b93e81",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “The animal your friends would choose for you” aloud once.",
+      "tutorAction": "State the can-do, invite one reading of “The animal your friends would choose for you,” then move to the optional article.",
+      "targetOrPrompt": "The animal your friends would choose for you / 自分を知る人が選びそうな動物. Let's use animal comparisons to explore personality. / 動物の比較を使って、性格について話しましょう。",
+      "learningTarget": "Orient the learner to a conversation about “The animal your friends would choose for you” without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no personal history is required.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and learner action as the English.",
+      "articleTreatment": "This page introduces the topic only; the optional article remains a separate pre-study component.",
+      "choiceQuality": "No fixed choice set or model answer appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What an animal comparison can symbolize / 動物の比較が象徴するもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “Animal comparisons compress a complicated personality into one memorable image.” to “A good metaphor invites correction and explanation rather than claiming the final truth about a person.,” as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: symbolize=象徴する.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real view when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Which animal metaphor captures one important part of your personality?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which animal metaphor captures one important part of your personality?”, react or share briefly, then choose at most one relevant probe such as “Which trait does the metaphor illuminate?”.",
+      "targetOrPrompt": "Which animal metaphor captures one important part of your personality? / どの動物の比喩が、あなたの性格の大切な一面を表しますか？ Follow-up pool: Which trait does the metaphor illuminate? Which part of your personality remains outside the comparison?",
+      "learningTarget": "Explore the distinct “Their animal for you” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which trait does the metaphor illuminate?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which trait does the metaphor illuminate?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which animal metaphor captures one important part of your personality?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which part of your personality remains outside the comparison?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which animal metaphor captures one important part of your personality?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “Which complexity in a person's character resists a simple animal metaphor?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which complexity in a person's character resists a simple animal metaphor?”, react or share briefly, then choose at most one relevant probe such as “Which behaviour supports it?”.",
+      "targetOrPrompt": "Which complexity in a person's character resists a simple animal metaphor? / 人の性格のどんな複雑さが、単純な動物の比喩では表せませんか？ Follow-up pool: Which behaviour supports it? Which complexity did it fail to capture?",
+      "learningTarget": "Explore the distinct “Your reaction” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which behaviour supports it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which behaviour supports it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which complexity in a person's character resists a simple animal metaphor?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which complexity did it fail to capture?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which complexity in a person's character resists a simple animal metaphor?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “Would you select an animal as your own symbol, or reject the comparison?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Would you select an animal as your own symbol, or reject the comparison?”, react or share briefly, then choose at most one relevant probe such as “Which quality does it symbolize?”.",
+      "targetOrPrompt": "Would you select an animal as your own symbol, or reject the comparison? / 自分の象徴として動物を選びますか。それとも、その比較を断りますか？ Follow-up pool: Which quality does it symbolize? Which complexity defeats every single-animal metaphor?",
+      "learningTarget": "Explore the distinct “Your own animal” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which quality does it symbolize?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which quality does it symbolize?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would you select an animal as your own symbol, or reject the comparison?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which complexity defeats every single-animal metaphor?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you select an animal as your own symbol, or reject the comparison?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “What can a gap between self-image and an observer's animal metaphor reveal?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What can a gap between self-image and an observer's animal metaphor reveal?”, react or share briefly, then choose at most one relevant probe such as “Which outward behaviour could explain the observer's metaphor?”.",
+      "targetOrPrompt": "What can a gap between self-image and an observer's animal metaphor reveal? / 自己像と観察者の動物の比喩の違いから、何が分かりますか？ Follow-up pool: Which outward behaviour could explain the observer's metaphor? Which internal motive could explain the self-image?",
+      "learningTarget": "Explore the distinct “Why the choices differ” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which outward behaviour could explain the observer's metaphor?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which outward behaviour could explain the observer's metaphor?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can a gap between self-image and an observer's animal metaphor reveal?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which internal motive could explain the self-image?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can a gap between self-image and an observer's animal metaphor reveal?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “Which animal comparison would feel fundamentally inaccurate?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which animal comparison would feel fundamentally inaccurate?”, react or share briefly, then choose at most one relevant probe such as “Which associated trait creates the mismatch?”.",
+      "targetOrPrompt": "Which animal comparison would feel fundamentally inaccurate? / どの動物の比較なら、根本的に自分と違うと感じますか？ Follow-up pool: Which associated trait creates the mismatch? Could another cultural meaning make the comparison more plausible?",
+      "learningTarget": "Explore the distinct “Not that animal” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which associated trait creates the mismatch?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which associated trait creates the mismatch?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which animal comparison would feel fundamentally inaccurate?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Could another cultural meaning make the comparison more plausible?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which animal comparison would feel fundamentally inaccurate?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “How can context produce different animal metaphors for the same person?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “How can context produce different animal metaphors for the same person?”, react or share briefly, then choose at most one relevant probe such as “Which context-dependent behaviour alters the metaphor most?”.",
+      "targetOrPrompt": "How can context produce different animal metaphors for the same person? / 状況によって、同じ人に異なる動物の比喩が生まれるのはなぜですか？ Follow-up pool: Which context-dependent behaviour alters the metaphor most? Which underlying characteristic remains stable across contexts?",
+      "learningTarget": "Explore the distinct “A different setting” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which context-dependent behaviour alters the metaphor most?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which context-dependent behaviour alters the metaphor most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can context produce different animal metaphors for the same person?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which underlying characteristic remains stable across contexts?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How can context produce different animal metaphors for the same person?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “I'll share three concrete traits from my life. Which animal metaphor fits them best?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “I'll share three concrete traits from my life. Which animal metaphor fits them best?”, react or share briefly, then choose at most one relevant probe such as “Which concrete trait carries the greatest weight in your metaphor?”.",
+      "targetOrPrompt": "I'll share three concrete traits from my life. Which animal metaphor fits them best? / 私の生活から具体的な特徴を三つ話します。どの動物の比喩が最も合いますか？ Follow-up pool: Which concrete trait carries the greatest weight in your metaphor? Which limit of the comparison should remain explicit?",
+      "learningTarget": "Explore the distinct “Before choosing for me” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which concrete trait carries the greatest weight in your metaphor?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which concrete trait carries the greatest weight in your metaphor?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “I'll share three concrete traits from my life. Which animal metaphor fits them best?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which limit of the comparison should remain explicit?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "I'll share three concrete traits from my life. Which animal metaphor fits them best?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What does every single-animal metaphor leave out about a person?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What does every single-animal metaphor leave out about a person?”, react or share briefly, then choose at most one relevant probe such as “Which contradiction cannot fit the label?”.",
+      "targetOrPrompt": "What does every single-animal metaphor leave out about a person? / 一つの動物の比喩は、人について何を必ず見落としますか？ Follow-up pool: Which contradiction cannot fit the label? Would combining two animals make the metaphor more accurate or merely more complicated?",
+      "learningTarget": "Explore the distinct “Beyond one animal” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which contradiction cannot fit the label?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which contradiction cannot fit the label?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What does every single-animal metaphor leave out about a person?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Would combining two animals make the metaphor more accurate or merely more complicated?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What does every single-animal metaphor leave out about a person?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat the most useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one usable improvement from the discussion.",
+      "pedagogicalValue": "Turns the open conversation into specific evidence and one manageable next action.",
+      "failureDiagnosis": "The repeated correction shows whether the learner can immediately use the selected improvement.",
+      "nonTargetSupport": "The Japanese instruction mirrors the two-part feedback action; typed notes preserve the exact language.",
+      "articleTreatment": "Not applicable; feedback refers to live speaking rather than article recall.",
+      "choiceQuality": "No distractors appear; the tutor selects only one high-value strength and one actionable next step.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component and requires an actionable spoken close.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

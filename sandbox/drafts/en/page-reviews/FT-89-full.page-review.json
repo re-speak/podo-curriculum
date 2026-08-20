@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/89-what-you-would-really-do-if-you-won-the-lottery/lesson.html",
+  "lessonSha256": "d784e3a42882f0c805919cdacd17626f4bc7fa923528bea91c7e44b0e24fc096",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “What you would really do if you won the lottery” aloud once.",
+      "tutorAction": "State the can-do, invite one reading of “What you would really do if you won the lottery,” then move to the optional article.",
+      "targetOrPrompt": "What you would really do if you won the lottery / 宝くじに当たったら本当にすること. Let's imagine how a large lottery win could change everyday life. / 宝くじで大当たりしたら、日常がどう変わるか想像しましょう。",
+      "learningTarget": "Orient the learner to a conversation about “What you would really do if you won the lottery” without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no personal history is required.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and learner action as the English.",
+      "articleTreatment": "This page introduces the topic only; the optional article remains a separate pre-study component.",
+      "choiceQuality": "No fixed choice set or model answer appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What a sudden win reveals / 突然の大当たりで見えること. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “A sudden jackpot creates immediate choices long before it provides a sensible plan.” to “The deeper question is which life the money should make possible rather than which object it should buy.,” as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: jackpot=大当たり.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real view when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Imagine receiving a life-changing lottery prize tomorrow. Which first decision would matter most?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Imagine receiving a life-changing lottery prize tomorrow. Which first decision would matter most?”, react or share briefly, then choose at most one relevant probe such as “What would you deliberately postpone?”.",
+      "targetOrPrompt": "Imagine receiving a life-changing lottery prize tomorrow. Which first decision would matter most? / 明日、人生を変えるほどの宝くじに当たったと想像してください。最初のどの決断が最も重要ですか？ Follow-up pool: What would you deliberately postpone? Which concern makes that the most sensible first move?",
+      "learningTarget": "Explore the distinct “The first move” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What would you deliberately postpone?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What would you deliberately postpone?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Imagine receiving a life-changing lottery prize tomorrow. Which first decision would matter most?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which concern makes that the most sensible first move?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Imagine receiving a life-changing lottery prize tomorrow. Which first decision would matter most?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “Which priority should guide the first decision after an unexpected financial windfall?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which priority should guide the first decision after an unexpected financial windfall?”, react or share briefly, then choose at most one relevant probe such as “Which immediate need or value would it serve?”.",
+      "targetOrPrompt": "Which priority should guide the first decision after an unexpected financial windfall? / 予想外の大金を得た後、最初の決断を導くべき優先事項は何ですか？ Follow-up pool: Which immediate need or value would it serve? What information would you want first?",
+      "learningTarget": "Explore the distinct “Why first” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which immediate need or value would it serve?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which immediate need or value would it serve?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which priority should guide the first decision after an unexpected financial windfall?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “What information would you want first?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which priority should guide the first decision after an unexpected financial windfall?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “Would you disclose the jackpot to anyone?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Would you disclose the jackpot to anyone?”, react or share briefly, then choose at most one relevant probe such as “Who would have a legitimate reason to know?”.",
+      "targetOrPrompt": "Would you disclose the jackpot to anyone? / 大当たりしたことを誰かに知らせますか？ Follow-up pool: Who would have a legitimate reason to know? Which consequence could careful disclosure prevent?",
+      "learningTarget": "Explore the distinct “Who knows” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Who would have a legitimate reason to know?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Who would have a legitimate reason to know?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would you disclose the jackpot to anyone?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which consequence could careful disclosure prevent?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you disclose the jackpot to anyone?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “Which parts of your current paid work, study, care, or routine would you keep?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which parts of your current paid work, study, care, or routine would you keep?”, react or share briefly, then choose at most one relevant probe such as “Which structure would you create?”.",
+      "targetOrPrompt": "Which parts of your current paid work, study, care, or routine would you keep? / 今の有給の仕事、勉強、ケア、または日課のどの部分を続けますか？ Follow-up pool: Which structure would you create? What would remain meaningful without financial pressure?",
+      "learningTarget": "Explore the distinct “Work after the win” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which structure would you create?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which structure would you create?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which parts of your current paid work, study, care, or routine would you keep?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “What would remain meaningful without financial pressure?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which parts of your current paid work, study, care, or routine would you keep?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “What, if anything, would become your first purchase?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What, if anything, would become your first purchase?”, react or share briefly, then choose at most one relevant probe such as “Which part of life would it change?”.",
+      "targetOrPrompt": "What, if anything, would become your first purchase? / 最初の買い物になるものがあるとすれば、何ですか？ Follow-up pool: Which part of life would it change? Which non-purchase use would come first?",
+      "learningTarget": "Explore the distinct “Buying or not buying” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which part of life would it change?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which part of life would it change?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What, if anything, would become your first purchase?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which non-purchase use would come first?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What, if anything, would become your first purchase?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “Which choice could produce regret, if any?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which choice could produce regret, if any?”, react or share briefly, then choose at most one relevant probe such as “Which later consequence would create it?”.",
+      "targetOrPrompt": "Which choice could produce regret, if any? / 後悔につながる選択があるとすれば、どれですか？ Follow-up pool: Which later consequence would create it? Which principle would keep the decision defensible?",
+      "learningTarget": "Explore the distinct “A possible regret” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which later consequence would create it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which later consequence would create it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which choice could produce regret, if any?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which principle would keep the decision defensible?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which choice could produce regret, if any?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “Would the jackpot create a different normal, or would you preserve most of your current life?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Would the jackpot create a different normal, or would you preserve most of your current life?”, react or share briefly, then choose at most one relevant probe such as “Which unfamiliar part would become routine first?”.",
+      "targetOrPrompt": "Would the jackpot create a different normal, or would you preserve most of your current life? / 大当たりで新しい日常が生まれますか。それとも、今の生活の大部分を保ちますか？ Follow-up pool: Which unfamiliar part would become routine first? Which part would you intentionally preserve?",
+      "learningTarget": "Explore the distinct “A new normal” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which unfamiliar part would become routine first?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which unfamiliar part would become routine first?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would the jackpot create a different normal, or would you preserve most of your current life?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which part would you intentionally preserve?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would the jackpot create a different normal, or would you preserve most of your current life?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “Which important part of life would remain unresolved by the jackpot?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which important part of life would remain unresolved by the jackpot?”, react or share briefly, then choose at most one relevant probe such as “What non-financial resource would it still require?”.",
+      "targetOrPrompt": "Which important part of life would remain unresolved by the jackpot? / 大当たりしても解決されない大切なことは何ですか？ Follow-up pool: What non-financial resource would it still require? Could money reduce the difficulty without resolving it?",
+      "learningTarget": "Explore the distinct “What money cannot choose” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What non-financial resource would it still require?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What non-financial resource would it still require?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which important part of life would remain unresolved by the jackpot?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Could money reduce the difficulty without resolving it?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which important part of life would remain unresolved by the jackpot?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat the most useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one usable improvement from the discussion.",
+      "pedagogicalValue": "Turns the open conversation into specific evidence and one manageable next action.",
+      "failureDiagnosis": "The repeated correction shows whether the learner can immediately use the selected improvement.",
+      "nonTargetSupport": "The Japanese instruction mirrors the two-part feedback action; typed notes preserve the exact language.",
+      "articleTreatment": "Not applicable; feedback refers to live speaking rather than article recall.",
+      "choiceQuality": "No distractors appear; the tutor selects only one high-value strength and one actionable next step.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component and requires an actionable spoken close.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -815,91 +815,92 @@ changed afterward → how to judge certainty now
 
 # Theme 9 · What if · `story` + `choose`
 
-*No right answer means no fear of being wrong, which is why this is the emergency theme for a
-learner who has gone quiet.*
+*Playful thought experiments create room for real opinions without requiring prior experience. The
+question pool is flexible: follow the answer that becomes interesting, share a real tutor view, and
+skip any prompt that does not suit the conversation.*
 
 **89. What you would really do if you won the lottery** `story`
-*Opens:* "You win tomorrow. What's the first thing you actually do?"
-*Ladder:* first thing → would you tell anyone → would you keep working → what would you buy first →
-what would you regret → how long before life is normal again
+*Opens:* "Imagine you win a large lottery prize tomorrow. What would you do first?"
+*Ladder:* first decision → guiding priority → disclosure and privacy → meaningful routines → first
+purchase → possible regret → a new normal → what money cannot solve
 *Moves:* `The first thing I'd do is ___.` **(Core 66)** · `I probably wouldn't ___.` **(Core 66)**
 *Shared:* KR 9-1
 
 **90. Three things you would take to a desert island** `choose`
-*Opens:* "Three objects. Go."
-*Ladder:* which three → why each → what did you nearly pick → what's the useless one → what would
-you regret leaving → what if you could take one person
+*Opens:* "Which three useful objects would you take to a desert island?"
+*Ladder:* three useful objects → most important need → final-place trade-off → emotional value →
+regretted omission → missing island facts → one companion → value after returning
 *Moves:* `I'd take ___, ___ and ___.` **(Core 66)** · `I'd regret leaving ___.` **(Core 71)**
 *Shared:* KR 9-2
 
 **91. Someone you would trade lives with for a day** `story`
-*Opens:* "One day in someone else's life. Whose?"
-*Ladder:* who → why them → what would you do with the day → what would you want to find out → would
-you tell them after → would you want your own life back
+*Opens:* "Whose daily life would you be curious to experience for one day?"
+*Ladder:* one life or role → what makes it instructive → first hour → question it could answer →
+hidden difficulty → shareable insight → valuing ordinary life → what someone might learn from yours
 *Moves:* `I'd want to be ___ for a day.` **(Core 66)** · `Mainly to find out ___.` **(Core 62)**
 *Shared:* KR 9-3
 
 **92. The superpower you would choose** `choose`
-*Opens:* "One superpower, and you have three seconds."
-*Ladder:* which → what would you use it for first → would you tell anyone → what's the downside →
-which would you refuse → what would most people pick
+*Opens:* "Which superpower would make ordinary life most interesting?"
+*Ladder:* interesting power → responsible first use → secrecy → decisive downside → power to refuse
+→ popular power → governing rule → ordinary skill with greater value
 *Moves:* `I'd go with ___.` **(Core 66)** · `The problem would be ___.` **(Core 98)** `chunk`
 *Shared:* KR 9-4
 
 **93. The one food you could eat forever** `choose`
-*Opens:* "One food, forever, nothing else. What is it?"
-*Ladder:* what → how long before you'd break → what did you nearly say → what would you miss most →
-what could you give up easily → would you take a boring one that's healthy
+*Opens:* "Which food would be hardest for you to get tired of?"
+*Ladder:* durable choice → effect of repetition → two close rivals → missing variety → easy food to
+give up → nutrition versus enjoyment → revision interval → why variety matters
 *Moves:* `I could live on ___.` **(Core 66)** · `I'd get sick of ___ eventually.` **(Core 66)**
 *Shared:* KR 9-5
 
 **94. One thing you would make free forever** `choose`
-*Opens:* "Coffee, taxis, films, flights — one is free for life. Which?"
-*Ladder:* which → how much would you actually use it → what would change about your week → who would
-benefit besides you → what's the boring correct answer → would you resell it
+*Opens:* "If one everyday service were free for life, which would you choose?"
+*Ladder:* lifetime service → use threshold → ordinary week → benefit to others → sensible boring
+choice → fair resale rules → hidden costs → value worth paying for
 *Moves:* `I'd choose ___, easily.` **(Core 46)** · `I'd use it more than ___.` **(Core 45)**
 *Shared:* KR 9-6
 
 **95. Going a week without your phone** `story`
-*Opens:* "Could you do seven days with no phone? Be honest."
-*Ladder:* could you → what breaks first → what would you actually miss → what would improve → how
-long have you gone → what would you need to make it work
+*Opens:* "Which part of a week with no optional phone use would be hardest?"
+*Ladder:* hardest part → disrupted routine → hardest function to replace → possible improvement →
+best time for a break → safe support → essential function → habit worth redesigning
 *Moves:* `I'd last about ___.` **(Core 51)** `chunk` · `The hardest part would be ___.` **(Core 103)** `chunk`
 *Shared:* KR 9-7
 
 **96. What you would do if AI did your job** `story`
-*Opens:* "Same salary, no work. What do you do with Monday?"
-*Ladder:* what happens Monday → what about month three → would you tell people → what would you miss
-about working → what would you start → would you go back
+*Opens:* "If AI handled all your usual tasks, how would you use the free time?"
+*Ladder:* first use of time → three unstructured months → disclosure → role function that remains →
+self-chosen project → identity → tasks people still choose → work that should stay human
 *Moves:* `At first I'd ___.` **(Core 66)** · `After a month I'd probably ___.` **(Core 66)**
 *Shared:* KR 9-8
 
 **97. The animal your friends would choose for you** `story`
-*Opens:* "What animal would people who know you pick for you?"
-*Ladder:* what would they pick → do you agree → what would you pick → why the difference → what
-animal could you never be → what would I be
+*Opens:* "Which animal best represents your personality?"
+*Ladder:* one animal metaphor → trait it cannot capture → accept or reject the comparison →
+self-image and observer gap → inaccurate animal → context changes → classify the tutor's real traits
+→ why one metaphor is incomplete
 *Moves:* `People would probably say ___.` **(Core 66)** · `I'd rather be ___.` **(Core 97)**
-*Shared:* KR 9-9 · *the opening asks what **others** would say, which gives a shy learner an answer
-they can defend rather than one they must invent*
+*Shared:* KR 9-9
 
 **98. Growing up in another country** `story`
-*Opens:* "Same you, different country. Where?"
-*Ladder:* where → why there → what would be different about you → what would you miss about Japan →
-what would you not miss → could you actually move there now
+*Opens:* "Which country would offer the most interesting different upbringing?"
+*Ladder:* contrasting upbringing → concrete condition → identity → what would be missed → what might
+not be missed → language and belonging → childhood versus adult migration → what might remain stable
 *Moves:* `I'd want to grow up in ___.` **(Core 66)** · `I'd probably be ___.` **(Core 66)**
 *Shared:* KR 9-10
 
 **99. Where you imagine yourself in ten years** `story`
-*Opens:* "Same date, ten years on. Where are you sitting?"
-*Ladder:* where → doing what → who's around → what's the same → what would disappoint you → what's
-one thing you can do this year toward it
+*Opens:* "What would an ideal ordinary day look like ten years from now?"
+*Ladder:* ideal ordinary day → organizing purpose → company and solitude → continuity → missing value
+→ broader direction → small test this year → new evidence that could change the plan
 *Moves:* `I'd like to be ___ing.` **(Core 66)** · `As long as ___, I'd be happy.` `chunk`
 *Shared:* KR 9-11
 
 **100. The one thing you would save in a fire** `choose`
-*Opens:* "Thirty seconds, one thing. What do you grab?"
-*Ladder:* what → why that → what surprised you about your own answer → what wouldn't you take that
-others would → have you ever lost something → what did you learn
+*Opens:* "Once everyone is safe, which possession would be hardest to lose?"
+*Ladder:* irreplaceable possession → source of value → unexpected category → another person's choice
+→ ordinary object and memory → what loss teaches → preparation before danger → value beyond objects
 *Moves:* `I'd grab ___.` **(Core 66)** · `Everything else can be replaced.` **(Core 65)**
 *Shared:* **NEW → KR**
 
