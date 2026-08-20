@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-full/lessons/58-a-relationship-deal-breaker/lesson.html",
+  "lessonSha256": "292cf5c89be72616617999e3ac58c5321b8093de362ceee4345cd4b7d0d8da94",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “A relationship deal-breaker” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “A relationship deal-breaker” once, and move on.",
+      "targetOrPrompt": "Let's talk about words that can cross a serious relationship boundary. Please read the title aloud. / 人間関係の重大な境界線を越える言葉について話しましょう。",
+      "learningTarget": "Orient the learner to a live conversation about “A relationship deal-breaker” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “A relationship deal-breaker” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no topic knowledge or private experience is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors the can-do and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Where a hard boundary comes from (強い境界線が生まれる理由): Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use the 10-claim pre-study article to seed concrete language and viewpoints for “A relationship deal-breaker.”",
+      "pedagogicalValue": "The article develops ten distinct claims from “A deal-breaker is a boundary whose violation can make continuing a relationship unacceptable.” to “Defining what we would refuse to say can clarify both the respect we expect and the respect we owe.”, giving the prompt pool several defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.",
+      "nonTargetSupport": "All ten claims have aligned variant-specific Japanese support; selective owned glosses are: deal-breaker=関係を続けられなくする決定的なこと, accountability=責任を引き受けること.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “A relationship deal-breaker” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “A relationship deal-breaker” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Which kind of remark can destroy trust between two people?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which value would the remark violate?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which kind of remark can destroy trust between two people? / どのような発言が、二人の間の信頼を壊し得ると思いますか？",
+      "learningTarget": "Explore the distinct “A possible deal-breaker (受け入れられない一言)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which value would the remark violate?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which value would the remark violate?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which kind of remark can destroy trust between two people?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How much should context affect the judgment?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which kind of remark can destroy trust between two people?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which feature makes the damage decisive?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty? / 軽蔑、脅し、意図的な不誠実さの中で、最も修復が難しいのはどれですか？",
+      "learningTarget": "Explore the distinct “The kind of remark (発言の種類)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which feature makes the damage decisive?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which feature makes the damage decisive?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Could a less severe version remain repairable?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “What is the wisest first response when a remark crosses a serious relationship boundary?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What needs to happen immediately?” rather than asking every follow-up.",
+      "targetOrPrompt": "What is the wisest first response when a remark crosses a serious relationship boundary? / 発言が重大な関係の境界線を越えたとき、最初にどう対応するのが賢明ですか？",
+      "learningTarget": "Explore the distinct “Real or imagined (実際または仮定)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What needs to happen immediately?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What needs to happen immediately?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the wisest first response when a remark crosses a serious relationship boundary?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Whose perspective could help assess the situation?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is the wisest first response when a remark crosses a serious relationship boundary?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “Under which conditions is a deliberate pause more constructive than an immediate response?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which escalation could a pause prevent?” rather than asking every follow-up.",
+      "targetOrPrompt": "Under which conditions is a deliberate pause more constructive than an immediate response? / どのような状況では、すぐに反応するより、意識的に間を置くほうが建設的ですか？",
+      "learningTarget": "Explore the distinct “What happens next (その後の対応)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which escalation could a pause prevent?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which escalation could a pause prevent?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Under which conditions is a deliberate pause more constructive than an immediate response?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How can the pause avoid feeling like punishment?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Under which conditions is a deliberate pause more constructive than an immediate response?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Could different wording expose the same harm?” rather than asking every follow-up.",
+      "targetOrPrompt": "Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals? / 傷つける発言は、文字どおりの言葉と、そこに表れる態度のどちらを主に見るべきですか？",
+      "learningTarget": "Explore the distinct “Words or meaning (言葉か意味か)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Could different wording expose the same harm?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Could different wording expose the same harm?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How much should intention matter?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “What would credible accountability require after a damaging remark?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which action should accompany the apology?” rather than asking every follow-up.",
+      "targetOrPrompt": "What would credible accountability require after a damaging remark? / 傷つける発言の後、信頼できる責任の取り方には何が必要ですか？",
+      "learningTarget": "Explore the distinct “What is forgivable (許せる条件)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which action should accompany the apology?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which action should accompany the apology?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would credible accountability require after a damaging remark?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which repeated pattern would make repair unlikely?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would credible accountability require after a damaging remark?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “Which category of remark should remain off-limits even during intense conflict?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which principle sets that limit?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which category of remark should remain off-limits even during intense conflict? / 激しい対立の中でも、どの種類の発言は禁じるべきですか？",
+      "learningTarget": "Explore the distinct “What you would not say (自分が言わないこと)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which principle sets that limit?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which principle sets that limit?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which category of remark should remain off-limits even during intense conflict?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How could the underlying concern be expressed constructively?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which category of remark should remain off-limits even during intense conflict?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “How can a serious boundary be communicated firmly without becoming coercive?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which wording preserves the other person's choice?” rather than asking every follow-up.",
+      "targetOrPrompt": "How can a serious boundary be communicated firmly without becoming coercive? / 重大な境界線を、強制的にならず、はっきりとどう伝えられますか？",
+      "learningTarget": "Explore the distinct “Stating the boundary (境界線の伝え方)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which wording preserves the other person's choice?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which wording preserves the other person's choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a serious boundary be communicated firmly without becoming coercive?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which setting would support a calm discussion?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How can a serious boundary be communicated firmly without becoming coercive?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Review the tutor’s most useful correction and finish with one improved sentence.",
+      "tutorAction": "Give brief actionable feedback tied to language the learner actually used, not a generic lecture.",
+      "targetOrPrompt": "Let’s look at one useful correction from today’s conversation. / 今日の会話から、役に立つ訂正を一つ確認しましょう。",
+      "learningTarget": "Consolidate one transferable improvement from the live conversation about “A relationship deal-breaker.”",
+      "pedagogicalValue": "Turns the learner’s own production into a specific next step while preserving the fluency-first conversation.",
+      "failureDiagnosis": "The selected correction identifies one useful language gap from actual production; an empty generic note would not satisfy the page job.",
+      "nonTargetSupport": "Japanese support frames the short review; the tutor chooses language appropriate to the learner’s level.",
+      "articleTreatment": "Not applicable; feedback must come from the live conversation rather than testing article recall.",
+      "choiceQuality": "No distractors appear; the tutor records only a useful correction or note from observed speech.",
+      "componentConsistency": "Uses the approved actionable feedback page and Student's sentence terminology.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

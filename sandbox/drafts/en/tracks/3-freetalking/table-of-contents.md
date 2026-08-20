@@ -578,50 +578,50 @@ marked `深く` waits until there is a relationship.*
 
 **57. A little thing that makes you like someone** `story`
 *Opens:* "What's something small that makes you like someone?"
-*Ladder:* what → have you told anyone → when did you last notice it → does it match what you say you
-want → what turns it off → has it changed with age
+*Ladder:* small attraction → what it can reveal → saying it aloud → when kindness shows →
+appearance or habits → what turns charm off → how preferences change → what others notice in you
 *Moves:* `It's usually something small, like ___.` **(Core 43)** · `I didn't expect to ___.` `chunk`
 *Shared:* KR 6-1
 
 **58. A relationship deal-breaker** `story` `深く`
-*Opens:* "What could someone say that would make you end a relationship immediately?"
-*Ladder:* what → has anyone said it → what did you do → is it the words or the meaning → what's
-forgivable → what would *you* never say
+*Opens:* "What kind of comment can destroy trust in a relationship?"
+*Ladder:* trust-breaking comments → hardest type to forgive → first response → taking time → words
+or attitude → a real apology → what stays off-limits → stating a boundary
 *Moves:* `The moment someone says ___, I'm done.` **(Core 58)** · `I couldn't get past ___.` `chunk`
 *Shared:* KR 6-2
 
 **59. Something you could never compromise on in a partner** `story` `深く`
 *Opens:* "What's one thing you could never compromise on in a partner?"
-*Ladder:* what → why that → what *would* you compromise on → has the list shrunk → who told you it
-was unrealistic → were they right
+*Ladder:* one non-negotiable → why preferences become boundaries → safe flexibility → what changes
+with age → why boundaries get judged → when to reconsider → incompatible boundaries → no control
 *Moves:* `I could live without ___, but not ___.` **(Core 66, Core 56)** · `It's not negotiable.` `chunk`
 *Shared:* KR 6-3
 
 **60. A relationship habit you know you should change** `story` `深く`
-*Opens:* "What do you know you do wrong in relationships?"
-*Ladder:* what → when did you notice → has anyone told you → have you fixed it → what do others do
-that you can't stand → what would you warn a partner about
+*Opens:* "Which relationship habit do you think is hardest to change?"
+*Ladder:* hardest habit → noticing it → giving feedback → a small replacement → hard-to-live-with
+habits → explanation or excuse → what to do instead → healthy habits
 *Moves:* `I know I ___ too much.` **(Core 17)** · `I've got better at ___ing.` **(Core 49)**
 *Shared:* KR 6-4
 
 **61. One thing your wedding would have to include** `story`
 *Opens:* "If you had a wedding tomorrow, what's the one thing you'd insist on?"
-*Ladder:* what would you keep → what would you cut → who decides → what's the best one you've been
-to → what's the worst part of weddings → would you rather skip it entirely
+*Ladder:* one essential → tradition worth keeping → what to remove → who decides → what makes a
+detail memorable → unnecessary stress → small or large → the purpose of a wedding
 *Moves:* `I'd definitely want ___.` **(Core 66)** · `I'd rather not ___.` **(Core 97)**
 *Shared:* KR 6-5
 
 **62. A breakup that was hard to get over** `story` `深く`
-*Opens:* "As much as you want to say — what's the hardest one you've been through?"
-*Ladder:* what happened → how long → who did you tell → what helped → what do you know now → what
-would you tell yourself then
+*Opens:* "Why can some breakups be so hard to get over?"
+*Ladder:* why it is hard → what changes → recovery time → privacy or support → what helps → what
+becomes clear later → unhelpful advice → moving forward
 *Moves:* `It took me ___ to ___.` **(Core 51)** `chunk` · `Looking back, I should have ___.` **(Core 71)**
 *Shared:* KR 6-6 · *never before the relationship is established*
 
 **63. Choosing not to marry or have children** `opinion` `深く`
-*Opens:* "Do you know anyone who's decided not to marry, or not to have children?"
-*Ladder:* who → what's their reason → what do people say to them → has your own view moved → what
-does your family expect → what would you choose with no pressure
+*Opens:* "Why might someone choose not to marry or have children?"
+*Ladder:* reasons → owing an explanation → common responses → why views change → family pressure →
+what should matter → separate decisions → respectful responses
 *Moves:* `I can see why ___.` **(Core 62)** · `To be fair, ___.` **(Core 93)**
 *Shared:* KR 6-7 · **the tutor holds no position here** — the moment it becomes advocacy it fails
 the discard test
