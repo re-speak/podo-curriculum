@@ -54,6 +54,7 @@ it — the same reason the plan comment lives on the PR.
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import os
 import pathlib
@@ -96,6 +97,41 @@ def check_enabled_is_earned(course: model.Course) -> list[str]:
         names = ", ".join(l.slug for l in holes)
         return [f"{course.key}: enabled: true but these lessons are missing a deck — {names}"]
     return []
+
+
+def _catalog():
+    """build-catalog.py 를 이름 그대로 불러온다 — 하이픈 때문에 import 문이 안 된다."""
+    global _CATALOG
+    if _CATALOG is None:
+        spec = importlib.util.spec_from_file_location(
+            "build_catalog", model.REPO / "tools" / "build-catalog.py")
+        _CATALOG = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(_CATALOG)
+    return _CATALOG
+
+
+_CATALOG = None
+
+
+def check_catalog_placement(course: model.Course) -> list[str]:
+    """이 코스가 공개 카탈로그의 어디에 놓이는지 정해지는가.
+
+    카탈로그는 배포 게이트가 아니다 — .cloudbuild 의 catalog 스텝은 allowFailure 라,
+    빌드가 죽어도 교재 배포는 초록으로 지나가고 사이트만 직전 것으로 멈춘다. 그래서
+    레벨이나 묶음을 못 정하는 코스가 들어오면 아무도 모르는 채 카탈로그가 낡는다.
+    여기서 미리 막아 PR 에서 보이게 한다.
+
+    enabled 인 코스만 본다. 카탈로그는 그것만 싣는다.
+    """
+    if not course.spec.get("enabled"):
+        return []
+    cat, problems = _catalog(), []
+    for place in (cat.course_level, cat.course_family):
+        try:
+            place(course)
+        except model.ValidationError as exc:
+            problems.append(str(exc))
+    return problems
 
 
 def validate_contract(html: str, api: str, label: str, key: str) -> list[str]:
@@ -326,6 +362,7 @@ def main() -> int:
               f"{course.spec['countryCode']} · "
               f"level {course.spec['classLevel']} · {len(course.lessons)} lesson(s))")
         problems += check_enabled_is_earned(course)
+        problems += check_catalog_placement(course)
 
         # model 이 이미 검사했다(없는 파일·잘못된 포맷·크기 초과는 여기 오기 전에 죽는다).
         # 남은 일은 보여 주는 것뿐이다 — 표지는 diff 로 확인할 수 없는 몇 안 되는 값이다.

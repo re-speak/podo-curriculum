@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<!-- Design shared with tools/authoring/kr/track_template.html, which renders the
-     authored track; this renders the deployed course.
-     A track there is a course here, and a course has no units — so the unit
-     shell is dropped when there is nothing to group (.group.solo below).
-     Filled by tools/build-catalog.py — do not edit site/catalog/*.html by hand. -->
+<!-- VENDORED from tools/authoring/kr/track_template.html — byte-identical to it
+     except for the edits listed here, so a change upstream re-applies as a diff.
+
+     A track upstream is a track here too: the courses in a family are its units,
+     and their lessons are its lessons. That is what the unit shell was built for,
+     so nothing here had to be collapsed.
+
+     Edits:
+       1. The language tabs come from DATA.page, since one template draws both
+          korean/ and english/ track pages.
+       2. The level ramp is keyed by position (see gateway.html).
+
+     Filled by tools/build-catalog.py — do not edit the built file by hand. -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -11,9 +19,9 @@
 <meta name="google" content="notranslate">
 <meta name="theme-color" content="#ffffff">
 <title id="ttl">커리큘럼 · PODO 한국어</title>
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../../site.css">
 <style>
   @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
@@ -44,12 +52,15 @@
     --pat-mark: #ffdfc7;
     --pat-ink:  #a4501a;
 
-    --lv-왕초급: #eef8de;
-    --lv-초급:   #d7f0b4;
-    --lv-초중급: #b1e07c;
-    --lv-중급:   #7ac845;
-    --lv-중고급: #3f7a1c;
-    --lv-고급:   #2a5511;
+    /* 레벨 램프. 이름이 아니라 축 위의 자리로 매긴다 — 눈금 이름은 언어마다 다르지만
+       (한국어 6단, 영어 CEFR) 옅은 것에서 짙은 것으로 오른다는 규칙은 같다. 어느 이름이
+       몇 번을 쓰는지는 build-catalog.py 가 DATA.ramp 에 실어 보낸다. */
+    --lv-1: #eef8de;
+    --lv-2: #d7f0b4;
+    --lv-3: #b1e07c;
+    --lv-4: #7ac845;
+    --lv-5: #3f7a1c;
+    --lv-6: #2a5511;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -299,13 +310,6 @@
   }
 
 
-  /* 이 레포의 코스는 단원으로 나뉘지 않는다 — 코스 하나가 곧 과 하나의 목록이라,
-     묶을 것이 없을 때는 단원 껍데기를 그리지 않고 과 목록만 남긴다. 3단이 비면
-     4단이 그대로 위로 올라오고, 나머지 층은 upstream 그대로다. */
-  .group.solo { border: 0; background: none; }
-  .group.solo .ghead { display: none; }
-  .group.solo .gbody { display: block; padding: 0; }
-
   .empty { margin-top: 40px; color: var(--ink-3); font-size: 13.5px; text-align: center; }
   .empty.hide { display: none; }
   .nextrack { display: flex; justify-content: space-between; gap: 14px; margin-top: 70px; padding: 15px 17px;
@@ -320,11 +324,8 @@
 <a class="podo-skip" href="#main">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
-    <nav class="podo-nav" aria-label="커리큘럼 탐색">
-      <a href="../index.html" aria-current="page">한국어</a>
-      <a class="podo-nav__optional" href="https://github.com/re-speak/podo-curriculum">Repository</a>
-    </nav>
+    <a class="podo-brand" id="brand" href="../../index.html"><img src="../../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <nav class="podo-nav" id="nav" aria-label="커리큘럼 탐색"></nav>
   </div>
 </header>
 <nav class="tabs"><div class="tabs-in" id="tabs"></div></nav>
@@ -351,7 +352,7 @@
     <div class="band" id="band"></div>
     <div class="controls">
       <div class="crow">
-        <input class="search" id="q" type="search" placeholder="과·배우는 것 검색" autocomplete="off">
+        <input class="search" id="q" type="search" placeholder="과·패턴·표현 검색" autocomplete="off">
         <button class="btn" id="expandUnits" type="button">단원 모두 펼치기</button>
         <button class="btn deep" id="expandAll" type="button">과까지 모두 펼치기</button>
         <span class="hits" id="hits"></span>
@@ -366,7 +367,7 @@
   <div class="nextrack" id="nextrack"></div>
   <footer>
     이 페이지는 생성물입니다. 내용을 고치려면 <code id="src"></code> 를 고치고
-    <code>python3 tools/build-catalog.py</code> 를 다시 실행하세요.
+    <code>python3 korean/tools/build_catalog.py</code> 를 다시 실행하세요.
   </footer>
 
 </main>
@@ -374,9 +375,23 @@
 <script>
 const DATA = /*__DATA__*/null;
 const T = DATA.track, LEVELS = DATA.levels;
-const DARK = new Set(["중고급", "고급"]);
+/* 짙은 두 칸 위에서는 글씨가 흰색이어야 읽힌다. */
+const isDark = lv => DATA.ramp[lv] >= 5;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const lvColor = lv => `var(--lv-${lv})`;
+
+/* ---------- 언어마다 다른 자리 ----------
+   한 템플릿이 korean/ 과 english/ 를 함께 그린다. 언어 이름이 들어가는 자리는 전부
+   DATA.page 에서 온다. */
+{
+  const P = DATA.page;
+  if (P.title) document.title = P.title;
+  document.getElementById("brand").href = P.home;
+  document.getElementById("nav").innerHTML = P.nav.map(n =>
+    `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}"${
+      n.current ? ` aria-current="page"` : ""}>${esc(n.label)}</a>`).join("");
+}
+
+const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
 
 document.documentElement.style.setProperty("--ac", T.accent);
 document.documentElement.style.setProperty("--tint", T.tint);
@@ -384,7 +399,7 @@ document.getElementById("ttl").textContent = `${T.ko} · PODO 한국어 커리�
 
 /* ---------- 탭 ---------- */
 document.getElementById("tabs").innerHTML =
-  `<a class="tab home" href="../index.html">← 카탈로그</a>` +
+  `<a class="tab home" href="../catalog.html">← 카탈로그</a>` +
   DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}" href="${esc(n.id)}.html"${n.id === T.id ? ' aria-current="page"' : ""}
     style="--ac:${n.accent}"><em>${String(n.no).padStart(2, "0")}</em>${esc(n.ko)}</a>`).join("");
 
@@ -392,7 +407,7 @@ document.getElementById("tabs").innerHTML =
 {
   const span = T.span.length ? (T.span.length === 1 ? T.span[0] : `${T.span[0]} — ${T.span[T.span.length - 1]}`) : "전 레벨";
   const flag = T.status === "plan" ? " · 계획만 있음 · 현재 개발하지 않음" : T.status === "open" ? " · 계속 추가" : "";
-  document.getElementById("hno").textContent = `코스 ${String(T.no).padStart(2, "0")} · ${span}${flag}`;
+  document.getElementById("hno").textContent = `트랙 ${String(T.no).padStart(2, "0")} · ${span}${flag}`;
   document.getElementById("h1").setAttribute("aria-label", `${T.ko} — ${T.en}`);
   document.getElementById("h1").innerHTML = `${esc(T.ko)}<span aria-hidden="true">${esc(T.en)}</span>`;
   document.getElementById("hd").textContent = T.desc;
@@ -410,23 +425,19 @@ document.getElementById("tabs").innerHTML =
         ? "계획 목차이며 현재 사용할 수 있는 레슨 덱은 없습니다."
         : "특정 레벨에 묶이지 않습니다 — 튜터가 문제를 들은 시점에 한 과씩 꺼내 씁니다."}</span></div>`;
 
-  document.getElementById("q").placeholder = `${T.lessonWord}·배우는 것 검색`;
+  document.getElementById("q").placeholder = `${T.lessonWord}·패턴·표현 검색`;
   document.getElementById("expandUnits").textContent = `${T.unitWord} 모두 펼치기`;
   document.getElementById("expandAll").textContent = `${T.lessonWord}까지 모두 펼치기`;
-  document.getElementById("src").textContent = T.source;
+  document.getElementById("src").textContent = `korean/tracks/${T.id}/table-of-contents.md`;
   document.body.classList.toggle("plan-track", T.status === "plan");
   document.getElementById("plan-banner").hidden = T.status !== "plan";
 }
 
 {
   const made = (T.decks || []).length;
-  const count = T.solo
-    ? `${T.total}${esc(T.lessonWord)}`
-    : `${T.unitCount || T.groups.length}개 ${esc(T.unitWord)}`;
   document.getElementById("band").innerHTML =
     `<h2 id="curriculum-title">${T.status === "plan" ? "계획 목차" : "커리큘럼"}</h2>
-     <p>${count}${made ? ` · 교재 ${made}` : ""}</p>`;
-  document.getElementById("expandUnits").hidden = !!T.solo;
+     <p>${T.unitCount || T.groups.length}개 ${esc(T.unitWord)}${made ? ` · 덱 ${made}` : ""}</p>`;
 }
 
 const usedLevels = LEVELS.filter(lv => T.dist[lv]);
@@ -465,8 +476,7 @@ function markedJamo(text) {
     무엇을 배우는가, 그리고 그것을 받쳐 주는 말. 트랙마다 칸의 이름만 달라진다. */
 function detail(l) {
   const fields = [];
-  // 낱자를 가르치는 과인지는 트랙 이름이 아니라 lesson.yaml 의 teaches.letters 가 정한다.
-  const isHangul = !!l.jamo;
+  const isHangul = T.id === "1-hangul";
 
   // 한글에서는 배울 글자·규칙이 본문이고, 읽을 수 있는 단어는 그 결과를 확인하는 예시다.
   if (isHangul && l.chips && l.chips.length) {
@@ -524,7 +534,7 @@ function detail(l) {
       + (rule ? `<p class="rule">${esc(rule.v)}</p>` : "")});
   }
 
-  if (!fields.length) return `<p class="scene">이 과의 상세는 아직 <code>lesson.yaml</code> 에 없습니다 — 교재를 열어 보세요.</p>`;
+  if (!fields.length) return `<p class="scene">이 과의 상세는 목차 원문에 있습니다.</p>`;
   return (l.scene ? `<p class="scene">${esc(l.scene)}</p>` : "")
     + fields.map(f => `<section class="field field-${f.kind}"><span class="lbl">${esc(f.label)}</span>${f.body}</section>`).join("");
 }
@@ -537,8 +547,7 @@ function lessonRow(l, groupIndex, lessonIndex) {
   const no = String(l.n).padStart(2, "0");
   // 덱이 있으면 그 과에서 곧장 수업 화면으로 나간다 — 카탈로그를 잃지 않도록 새 탭에서.
   const variants = l.decks || (l.deck ? [{href:l.deck, level:""}] : []);
-  // 두 슬롯은 서로 다른 교재라 하나만 있어도 어느 쪽인지 말해 준다.
-  const showLevels = true;
+  const showLevels = (l.levels || []).length > 1 || variants.length > 1;
   const deck = variants.length ? `<div class="deck-links">${variants.map(d =>
     `<a class="deck" href="../${esc(d.href)}" target="_blank" rel="noopener"
        title="${esc(l.title)}${d.level ? ` · ${esc(d.level)}` : ""} 덱을 새 탭에서 엽니다">${showLevels && d.level ? esc(d.level) : "덱 열기"} <span class="ext">↗</span></a>`
@@ -575,7 +584,7 @@ function group(g, index) {
   const groupLevels = g.levels || (g.level ? [g.level] : []);
   const levelTags = groupLevels.map(lv =>
     `<span class="lv-tag"><i style="background:${lvColor(lv)}"></i>${esc(lv)}</span>`).join("");
-  return `<div class="group${T.solo ? " solo" : ""}" data-lv="${esc(groupLevels.join(" "))}">
+  return `<div class="group" data-lv="${esc(groupLevels.join(" "))}">
     <button class="ghead" type="button" aria-expanded="false" aria-controls="${bodyId}">
       <span class="gnum">${esc(g.label)}</span>
       <span class="gtitle">${esc(g.title)}${g.subtitle ? `<em>${esc(g.subtitle)}</em>` : ""}</span>
@@ -598,8 +607,8 @@ $groups.innerHTML = T.groups.map(group).join("");
   const i = DATA.nav.findIndex(n => n.id === T.id);
   const prev = DATA.nav[i - 1], next = DATA.nav[i + 1];
   document.getElementById("nextrack").innerHTML =
-    (prev ? `<a href="${esc(prev.id)}.html">← ${esc(prev.ko)}</a>` : `<a href="../index.html">← 카탈로그</a>`) +
-    (next ? `<a href="${esc(next.id)}.html">${esc(next.ko)} →</a>` : `<a href="../index.html">카탈로그 →</a>`);
+    (prev ? `<a href="${esc(prev.id)}.html">← ${esc(prev.ko)}</a>` : `<a href="../catalog.html">← 카탈로그</a>`) +
+    (next ? `<a href="${esc(next.id)}.html">${esc(next.ko)} →</a>` : `<a href="../catalog.html">카탈로그 →</a>`);
 }
 
 /* ---------- behaviour ---------- */

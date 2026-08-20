@@ -90,6 +90,30 @@ AVATARS = {
         "haruka-avatar.jpg",
 }
 
+def draft_teaches(source: pathlib.Path) -> dict:
+    """초안 lesson.html 옆에 있는 lesson.yaml 의 teaches.
+
+    plan_courses.py 가 목차에서 적어 둔 값이고, 짝인 lesson.html 과 같은 폴더에 산다.
+    초안 없이 courses/ 에 직접 쓴 과(체험 · 영어)는 이 파일이 없다 — 그때는 비운다."""
+    path = source.parent / "lesson.yaml"
+    if not path.is_file():
+        return {}
+    doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return (doc.get("spec") or {}).get("teaches") or {}
+
+
+def yaml_teaches(teaches: dict | None) -> str:
+    """초안의 teaches 를 lesson.yaml 본문에 넣을 수 있는 블록으로.
+
+    비어 있으면 ` {}` 한 칸짜리로 접어서, 초안이 없는 과의 파일이 예전과 똑같이
+    읽히게 둔다."""
+    if not teaches:
+        return " {}"
+    body = yaml.safe_dump(teaches, allow_unicode=True, sort_keys=False,
+                          default_flow_style=False, width=10**6)
+    return "\n" + "\n".join(f"    {line}" for line in body.rstrip("\n").splitlines())
+
+
 def yaml_scalar(text: str) -> str:
     """One title, safe to drop into the template on the right of a `key:`.
 
@@ -120,9 +144,11 @@ spec:
     lecture:  {{ entry: lecture/index.html }}
     prestudy: {{ entry: prestudy/index.html }}
 
-  # 덱을 옮겨 온 것이라 teaches/outcome 은 비워 둔다 — 원본 기획 문서가 아니라
-  # 덱에서 읽어낸 것을 적으면 리뷰가 실제 덱이 아니라 이 메타데이터를 검토하게 된다.
-  teaches: {{}}
+  # 초안 lesson.yaml 의 teaches 를 그대로 옮긴다 — plan_courses.py 가 목차에서 적어
+  # 둔 값이고, 공개 카탈로그가 과마다 보여 주는 "이번에 배우는 것 · 목표" 가 이것이다.
+  # 덱을 읽어서 쓰지는 않는다: 덱에서 읽어낸 것을 적으면 리뷰가 실제 덱이 아니라 이
+  # 메타데이터를 검토하게 된다. 초안에 없으면 비워 둔다.
+  teaches:{teaches}
   prerequisites: []
   source: {source}
 
@@ -463,6 +489,7 @@ def promote(man: Manifest, dry_run: bool, assume_yes: bool) -> None:
         (lesson / "lesson.yaml").write_text(
             LESSON_YAML.format(
                 slug=slug, week=week,
+                teaches=yaml_teaches(draft_teaches(man.source / source)),
                 source=rel(man.source / source),
                 manifest=man.rel,
                 **{lang: yaml_scalar(text) for lang, text in entry["title"].items()}),
