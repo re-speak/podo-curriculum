@@ -22,8 +22,8 @@ PILOT = TRACK / "courses/ctx-travel-arrivals-transport/lessons/01-check-in-and-r
 ME, OTHER = core.ME, core.OTHER
 
 COURSES = {
-    range(25, 31): ("ctx-travel-complex-decisions", "C1", "TRAVEL ENGLISH", "Traveller", "用事を解決する旅行者"),
-    range(31, 37): ("ctx-business-workplace-essentials", "B1", "BUSINESS ENGLISH", "Colleague", "仕事を進める同僚"),
+    range(25, 31): ("ctx-travel-complex-decisions", "C1", "TRAVEL ENGLISH", "Traveller", "旅行者"),
+    range(31, 37): ("ctx-business-workplace-essentials", "B1", "BUSINESS ENGLISH", "Colleague", "同僚"),
 }
 
 
@@ -664,6 +664,127 @@ _replace_japanese_rows(36, 2, (
 _remark(36, 2, lambda _s, _i: ("worked", "but now I get"),
         lambda _s, _i: ("動きました", "が、今表示されるのは"))
 
+
+# Human-reviewed operating copy and production support for the bounded
+# CTX25-36 pass.  Keep this explicit so later regeneration cannot silently
+# restore generic write prompts, scenario-production free talk, or unowned
+# lexical hints.
+REVIEWED_COPY_25_36 = {
+    25: dict(
+        role_ja="航空会社の係員", transfer_role_ja="鉄道会社の係員",
+        live=("When a trip changes suddenly, what do you protect first: time, cost, or comfort?", "旅行が急に変更になったら、時間・費用・快適さのどれを最優先しますか？", "Your real priority and reason", "自分が本当に優先することと理由", "What about you—which one do you protect first?", "先生はどうですか？どれを最優先しますか？"),
+        p1=dict(write_frame="What matters most is ___", write_script="Use “What matters most is ___” to state the arrival condition you cannot compromise on.", write_script_ja="「What matters most is ___」を使って、譲れない到着条件を伝えましょう。", translate_hints=(("明日の朝までに到着する", "arriving before tomorrow morning"), ("今夜東京に着く", "reaching Tokyo tonight"), ("朝の会議に間に合う", "making the morning meeting"), ("9時までに到着する", "getting there by nine"))),
+        p2=dict(write_frame="Could you check routes through ___?", write_script="Use “Could you check routes through ___?” to ask the agent to check one connecting place.", write_script_ja="「Could you check routes through ___?」を使って、一つの経由地を通るルートを確認してもらいましょう。", translate_hints=(("別の都市", "another city"), ("ソウル", "Seoul"), ("大阪", "Osaka"), ("近くの空港", "a nearby airport"))),
+    ),
+    26: dict(
+        role_ja="保険会社の担当者", transfer_role_ja="警備員",
+        live=("Do you keep receipts for valuable travel items? Why or why not?", "旅行中の高価な物のレシートは保管しますか？なぜですか？", "Your real habit and reason", "自分の本当の習慣と理由", "What about you—do you keep them?", "先生はどうですか？保管しますか？"),
+        p1=dict(write_frame="I definitely had ___ at ___", write_script="Use “I definitely had ___ at ___” to report the last fact you can confirm.", write_script_ja="「I definitely had ___ at ___」を使って、最後に確認できた事実を伝えましょう。", translate_hints=(("駅で", "at the station"), ("ホテルで", "at the hotel"), ("カフェでそのバッグ", "the bag at the café"), ("昼食前に財布", "my wallet before lunch"))),
+        p2=dict(write_frame="It may have ___, but I can't be certain", write_script="Use “It may have ___, but I can't be certain” to report a possibility without presenting it as fact.", write_script_ja="「It may have ___, but I can't be certain」を使って、事実と断定せずに可能性を伝えましょう。", translate_hints=(("列車内で", "on the train"), ("タクシーに", "in the taxi"), ("カフェで", "at the café"), ("駅の近くで", "near the station"))),
+    ),
+    27: dict(
+        role_ja="ホテルの責任者", transfer_role_ja="会場の担当者",
+        live=("When choosing a hotel, which feature makes the biggest difference to your comfort?", "ホテルを選ぶとき、快適さに最も影響する設備は何ですか？", "One feature and why it matters to you", "一つの設備と、それが大切な理由", "What about you—which feature do you check first?", "先生はどうですか？最初にどの設備を確認しますか？"),
+        p1=dict(write_frame="To be clear, ___ is essential, not optional", write_script="Use “To be clear, ___ is essential, not optional” to state one access requirement that must be met.", write_script_ja="「To be clear, ___ is essential, not optional」を使って、必ず満たす必要があるアクセス条件を一つ伝えましょう。", translate_hints=(("段差のないアクセス", "step-free access"), ("バリアフリーの浴室", "an accessible bathroom"), ("エレベーターの利用", "elevator access"), ("1階の部屋", "a ground-floor room"))),
+        p2=dict(write_frame="What alternative can you offer me ___?", write_script="Use “What alternative can you offer me ___?” to ask for a usable alternative at the time you need it.", write_script_ja="「What alternative can you offer me ___?」を使って、必要な時間に利用できる代案を尋ねましょう。", translate_stage="checkpoint"),
+    ),
+    28: dict(
+        role_ja="ホテルの受付係", transfer_role_ja="レンタカー係",
+        live=("Which booking detail do you always double-check before a trip, and why?", "旅行前に必ず再確認する予約情報は何ですか？なぜですか？", "One booking detail and your reason", "一つの予約情報と理由", "What about you—which detail do you check first?", "先生はどうですか？最初に何を確認しますか？"),
+        p1=dict(write_frame="My ___ says ___, whereas your system says ___", write_script="Use “My ___ says ___, whereas your system says ___” to compare the two conflicting records.", write_script_ja="「My ___ says ___, whereas your system says ___」を使って、食い違っている二つの記録を比べましょう。", translate_hints=((("朝食込み", "breakfast is included"), ("朝食なし", "it isn't")), (("駐車場込み", "parking is included"), ("駐車料金別", "it isn't")), (("2泊", "two nights"), ("1泊", "one")), (("ダブルルーム", "a double room"), ("シングル", "a single")))),
+        p2=dict(write_frame="Could you confirm in writing ___?", write_script="Use “Could you confirm in writing ___?” to ask for written confirmation of the solution.", write_script_ja="「Could you confirm in writing ___?」を使って、解決内容を書面で確認してもらいましょう。", translate_hints=(("どう解決するか", "how this will be resolved"), ("朝食が含まれること", "that breakfast is included"), ("修正後の料金", "the revised price"), ("部屋タイプ", "the room type"))),
+    ),
+    29: dict(
+        role_ja="ツアー会社の担当者", transfer_role_ja="レンタカー係",
+        live=("When weather changes a trip, are you more likely to postpone it or change the plan?", "天候で旅行に影響が出たら、延期しますか、それとも予定を変えますか？", "Your safer choice and reason", "自分が選ぶ安全側の行動と理由", "What about you—what would you usually do?", "先生はどうですか？普段ならどうしますか？"),
+        p1=dict(write_frame="The fact that ___ doesn't necessarily mean ___", write_script="Use “The fact that ___ doesn't necessarily mean ___” to challenge one weak safety assumption.", write_script_ja="「The fact that ___ doesn't necessarily mean ___」を使って、安全についての根拠が弱い判断を一つ問い直しましょう。", translate_hints=(("中止されていない", "it hasn't been cancelled"), ("道路が開いている", "the road is open"), ("ほかの人が行く", "others are going"), ("警告が古い", "the warning is old"))),
+        p2=dict(write_frame="Overall, I'd rather ___ than take the risk", write_script="Use “Overall, I'd rather ___ than take the risk” to state the safer action you choose.", write_script_ja="「Overall, I'd rather ___ than take the risk」を使って、安全側で選ぶ行動を伝えましょう。", translate_hints=(("延期する", "postpone"), ("引き返す", "turn back"), ("待つ", "wait"), ("中止する", "cancel"))),
+    ),
+    30: dict(
+        role_ja="同僚", transfer_role_ja="友人",
+        live=("What piece of travel advice has actually helped you?", "実際に役立った旅行のアドバイスは何ですか？", "One useful piece of advice and why it helped", "役立ったアドバイスを一つと、その理由", "What about you—which advice has helped you most?", "先生はどうですか？どんなアドバイスが最も役立ちましたか？"),
+        p1=dict(write_frame="What I'd recommend is ___", write_script="Use “What I'd recommend is ___” to give one practical recommendation from experience.", write_script_ja="「What I'd recommend is ___」を使って、経験から得た実用的な助言を一つ伝えましょう。", translate_hints=(("乗り継ぎに1日余分に取る", "allowing an extra day for the connection"), ("朝の列車を事前に予約する", "booking the morning train in advance"), ("できれば朝のフェリーを利用する", "taking the morning ferry if possible"), ("ビザの規則を早めに確認する", "checking the visa rules early"))),
+        p2=dict(write_frame="I'd only ___ if ___", write_script="Use “I'd only ___ if ___” to state the condition that would make the route acceptable.", write_script_ja="「I'd only ___ if ___」を使って、そのルートを選べる条件を伝えましょう。", translate_hints=(("予定を調整できる", "have some flexibility"), ("もう1泊できる", "can stay an extra night"), ("乗り継ぎ時間が長い", "have a long connection"), ("日程を変更できる", "can change your dates"))),
+    ),
+    31: dict(
+        role_ja="プロジェクト責任者", transfer_role_ja="顧客側の責任者",
+        live=("On a new project, which responsibility would you most enjoy taking on?", "新しいプロジェクトなら、どの担当業務を最もやってみたいですか？", "One responsibility and why it appeals to you", "一つの担当業務と、興味を持つ理由", "What about you—which responsibility do you enjoy?", "先生はどうですか？どの担当業務が好きですか？"),
+        p1=dict(write_frame="I'm responsible for ___", write_script="Use “I'm responsible for ___” to tell the team what they should contact you about.", write_script_ja="「I'm responsible for ___」を使って、どの業務について自分に連絡すればよいか伝えましょう。", translate_hints=(("プロジェクトの予定", "the project schedule"), ("週次報告", "the weekly report"), ("顧客への進捗共有", "client updates"), ("最終確認", "the final review"))),
+        p2=dict(write_frame="I mainly work with ___", write_script="Use “I mainly work with ___” to name your main partner team.", write_script_ja="「I mainly work with ___」を使って、主に連携するチームを伝えましょう。", translate_hints=(("デザインチーム", "the design team"), ("営業チーム", "the sales team"), ("財務チーム", "the finance team"), ("エンジニアリングチーム", "the engineering team"))),
+    ),
+    32: dict(
+        role_ja="会議の進行役", transfer_role_ja="取引先",
+        live=("Which is more frustrating on a call: bad audio or a frozen screen, and why?", "通話では、音声不良と画面停止のどちらがより困りますか？なぜですか？", "Your choice and a brief reason", "自分の選択と短い理由", "What about you—which one bothers you more?", "先生はどうですか？どちらのほうが困りますか？"),
+        p1=dict(write_frame="Sorry, you cut out after ___", write_script="Use “Sorry, you cut out after ___” to identify the last words you heard clearly.", write_script_ja="「Sorry, you cut out after ___」を使って、最後にはっきり聞こえた言葉を伝えましょう。", translate_stage="checkpoint"),
+        p2=dict(write_frame="Could you repeat ___?", write_script="Use “Could you repeat ___?” to ask for the exact detail you missed.", write_script_ja="「Could you repeat ___?」を使って、聞き逃した情報を具体的にもう一度尋ねましょう。", translate_hints=(("締め切り", "the deadline"), ("日付", "the date"), ("最後の点", "the last point"), ("顧客名", "the client name"))),
+    ),
+    33: dict(
+        role_ja="プロジェクトの相手", transfer_role_ja="研修担当者",
+        live=("Do you prefer early or late meetings when working across time zones, and why?", "時差のある相手との会議は、早い時間と遅い時間のどちらがよいですか？なぜですか？", "Your preferred time and reason", "希望する時間と理由", "What about you—which time do you prefer?", "先生はどうですか？どの時間がよいですか？"),
+        p1=dict(write_frame="That would be ___ for me", write_script="Use “That would be ___ for me” to explain the proposed time in your local time.", write_script_ja="「That would be ___ for me」を使って、提案された時間が自分の現地時刻で何時か伝えましょう。", translate_hints=(("深夜0時", "midnight"), ("午前2時", "2 a.m."), ("午前6時", "6 a.m."), ("昼休み中", "during lunch"))),
+        p2=dict(write_frame="Could we move it to ___ instead?", write_script="Use “Could we move it to ___ instead?” to propose one workable alternative time.", write_script_ja="「Could we move it to ___ instead?」を使って、参加できる別の時間を一つ提案しましょう。", translate_hints=(("金曜日の朝", "Friday morning"), ("木曜日の午後", "Thursday afternoon"), ("そちらの時間の9時", "nine your time"), ("来週月曜日", "next Monday"))),
+    ),
+    34: dict(
+        role_ja="デザイナー", transfer_role_ja="運用担当者",
+        live=("How do you tell which shared file is the latest version?", "共有ファイルのどれが最新版か、どう見分けますか？", "Your real method and one useful detail", "自分の実際の方法と役立つ情報を一つ", "What about you—how do you keep files current?", "先生はどうですか？どうやって最新版に保ちますか？"),
+        p1=dict(write_frame="Could you send me ___?", write_script="Use “Could you send me ___?” to request the exact current file you need.", write_script_ja="「Could you send me ___?」を使って、必要な最新版のファイルを具体的に頼みましょう。", translate_hints=(("最新版", "the latest version"), ("最終版のスライド", "the final slides"), ("更新済みの予算", "the updated budget"), ("承認済みのファイル", "the approved file"))),
+        p2=dict(write_frame="Yes, so could you also replace ___?", write_script="Use “Yes, so could you also replace ___?” to ask for the outdated shared copy to be replaced too.", write_script_ja="「Yes, so could you also replace ___?」を使って、古い共有コピーも差し替えてもらいましょう。", translate_hints=(("共有フォルダのもの", "the one in the shared folder"), ("古い添付ファイル", "the old attachment"), ("オンラインの下書き", "the draft online"), ("プロジェクトフォルダのコピー", "the copy in the project folder"))),
+    ),
+    35: dict(
+        role_ja="チームリーダー", transfer_role_ja="顧客",
+        live=("When you hear a progress update, which detail matters most to you?", "進捗報告を聞くとき、どの情報が最も重要ですか？", "One useful detail and why it matters", "役立つ情報を一つと、それが重要な理由", "What about you—which detail do you listen for?", "先生はどうですか？どの情報に注目しますか？"),
+        p1=dict(write_frame="We finished ___ of the ___", write_script="Use “We finished ___ of the ___” to report measurable completed progress.", write_script_ja="「We finished ___ of the ___」を使って、完了した進捗を数で報告しましょう。", translate_hints=((("3件", "three"), ("5件", "five"), ("レビュー", "reviews")), (("4件", "four"), ("6件", "six"), ("面談", "interviews")), (("2本", "two"), ("3本", "three"), ("レポート", "reports")), (("7項目", "seven"), ("8項目", "eight"), ("確認", "checks")))),
+        p2=dict(write_frame="Next, we need to confirm ___", write_script="Use “Next, we need to confirm ___” to name the items that must be checked next.", write_script_ja="「Next, we need to confirm ___」を使って、次に確認する項目を伝えましょう。", translate_hints=((("予算", "the budget"), ("スケジュール", "timeline")), (("担当者", "the owner"), ("締め切り", "deadline")), (("日付", "the date"), ("場所", "location")), (("料金", "the price"), ("範囲", "scope")))),
+    ),
+    36: dict(
+        role_ja="デモ担当者", transfer_role_ja="ITサポート担当者",
+        live=("What information helps you solve a technical problem fastest?", "技術的な問題を最も早く解決するのに役立つ情報は何ですか？", "One diagnostic detail and why it helps", "診断に役立つ情報を一つと、その理由", "What about you—which detail do you ask for first?", "先生はどうですか？最初にどの情報を尋ねますか？"),
+        p1=dict(write_frame="I can't access ___", write_script="Use “I can't access ___” to name the exact resource blocking your work.", write_script_ja="「I can't access ___」を使って、作業を止めている対象を具体的に伝えましょう。", translate_hints=(("デモ環境", "the demo environment"), ("共有フォルダ", "the shared folder"), ("テストアカウント", "the test account"), ("顧客ダッシュボード", "the client dashboard"))),
+        p2=dict(write_frame="It worked ___, but now I get ___", write_script="Use “It worked ___, but now I get ___” to contrast the last success with the current error.", write_script_ja="「It worked ___, but now I get ___」を使って、最後に動いた時点と現在のエラーを対比しましょう。", translate_hints=((("今朝", "this morning"), ("権限エラー", "a permission error")), (("昨日", "yesterday"), ("ログインエラー", "a login error")), (("昼食前", "before lunch"), ("空白画面", "a blank screen")), (("自分のPC", "on my laptop"), ("アクセスエラー", "an access error")))),
+    ),
+}
+
+
+for _number, _copy in REVIEWED_COPY_25_36.items():
+    _lesson = LESSONS[_number]
+    _lesson["role_ja"] = _copy["role_ja"]
+    _lesson["transfer_role_ja"] = _copy["transfer_role_ja"]
+    _lesson["live"] = _copy["live"]
+    _lesson.pop("live_sequence", None)
+    for _part in (1, 2):
+        _lesson[f"p{_part}"].update(_copy[f"p{_part}"])
+
+    _owned_english = {
+        _entry.split("|")[0].strip().casefold()
+        for _category in _lesson["vocab"]
+        for _entry in _category.split(";")
+        if _entry.strip()
+    }
+    _support_additions = []
+    for _part in (1, 2):
+        for _hint_row in _lesson[f"p{_part}"].get("translate_hints", ()):
+            if len(_hint_row) == 2 and all(isinstance(_item, str) for _item in _hint_row):
+                _hint_row = (_hint_row,)
+            for _japanese_hint, _english_hint in _hint_row:
+                if _english_hint.casefold() not in _owned_english:
+                    _support_additions.append(f"{_english_hint}|{_japanese_hint}")
+                    _owned_english.add(_english_hint.casefold())
+    if _support_additions:
+        _vocab = list(_lesson["vocab"])
+        _vocab[2] = "; ".join(filter(None, (_vocab[2], *_support_additions)))
+        _lesson["vocab"] = tuple(_vocab)
+
+# Keep every receptive check owned by the tutor's role. The former final item
+# was the learner's generic "Got it," which tested neither listening nor a
+# useful workplace consequence.
+LESSONS[32]["receptive"] = LESSONS[32]["receptive"][:3] + ((
+    "I'll resend the deadline in the chat.",
+    "The speaker will provide the deadline in writing",
+    "話し手は締め切りをチャットで送り直す",
+    "The speaker refuses to repeat the deadline",
+    "話し手は締め切りの言い直しを断る",
+),)
+
 AUTHORITATIVE = {
     25: ("Escalate a cancellation with clear priorities", "What matters most is arriving before tomorrow morning.", "Could you check routes through another city?"),
     26: ("Document an incident for insurance", "I definitely had it at the station.", "It may have been taken on the train, but I can't be certain."),
@@ -728,15 +849,32 @@ def validate_lesson(number, lesson):
     }
     if not prior_ctx_items.issubset(VISIBLE_PRIOR_CTX_OWNERS):
         raise ValueError(f"CTX-{number}: cites unverified CTX13-24 provenance: {prior_ctx_items}")
-    if number in LIVE_FRAME_CONTRACTS:
-        prompt, _, scaffold, _, _, _ = lesson["live"]
-        if "real or imaginary" not in (prompt + " " + scaffold).casefold():
-            raise ValueError(f"CTX-{number}: live task does not truthfully admit both real and imaginary answers")
-        if " / " in scaffold or "If " in scaffold:
-            raise ValueError(f"CTX-{number}: live task has a frame-escaping alternative branch")
-        for frame in LIVE_FRAME_CONTRACTS[number]:
-            if scaffold.count(frame) != 1:
-                raise ValueError(f"CTX-{number}: live task must retrieve {frame!r} exactly once")
+    base.validate_reviewed_copy(number, lesson)
+    if not lesson.get("role_ja") or not lesson.get("transfer_role_ja"):
+        raise ValueError(f"CTX-{number}: reviewed roleplay needs explicit Japanese role labels")
+    for part in (1, 2):
+        pattern = lesson[f"p{part}"]
+        for field in ("write_frame", "write_script", "write_script_ja"):
+            if not pattern.get(field):
+                raise ValueError(f"CTX-{number} p{part}: missing reviewed {field}")
+        hints = pattern.get("translate_hints")
+        support_stage = pattern.get(
+            "translate_stage", "supported" if hints else None
+        )
+        if support_stage == "supported":
+            if not hints or len(hints) != len(pattern["rows"]):
+                raise ValueError(
+                    f"CTX-{number} p{part}: supported translation needs lexical hints"
+                )
+        elif support_stage == "checkpoint":
+            if hints:
+                raise ValueError(
+                    f"CTX-{number} p{part}: checkpoint translation must not have hints"
+                )
+        else:
+            raise ValueError(
+                f"CTX-{number} p{part}: translation needs a supported/checkpoint stage"
+            )
     if number == 35 and "confirm|確認する|CTX-3" not in lesson["vocab"][1]:
         raise ValueError("CTX-35: productive confirm must recycle its actual CTX-3 owner")
     if number == 35 and "deadline|締め切り|CTX-32" not in lesson["vocab"][1]:
@@ -745,179 +883,50 @@ def validate_lesson(number, lesson):
         raise ValueError("CTX-31: learner-facing unowned remit remains")
 
 
-def situation_page(number, lesson):
-    _, _, kicker, learner_role, learner_ja = course_for(number)
-    return f'''    <div class="transition-page" data-page-id="situation-card" data-act="Contextual task">
-      <span class="transition-kicker">{kicker}</span>
-      <h2 class="transition-title">{esc(lesson["title"])}</h2>
-      <p class="transition-copy">{esc(lesson["situation"])}</p>
-      <div class="scene-cast">
-        {base.cast_row(ME, learner_role, learner_ja)}
-        {base.cast_row(OTHER, lesson["role"], lesson["scene_ja"])}
-      </div>
-    </div>
-'''
-
-
 def wrapping_fill(part, pattern):
-    blocks = []
-    for row, (english, japanese, _) in enumerate(pattern["rows"]):
-        # Clause-sized targets use the canonical wrapping phrase field.  When
-        # one sentence has two independently cued targets, put the second on a
-        # new response line in markup; this preserves an honest one-cue/one-
-        # field mapping and gives the shared component real vertical room
-        # without a forbidden deck-local CSS override.
-        fields = []
-        position = 0
-        for index, match in enumerate(re.finditer(r"\{t\}(.*?)\{/t\}", english)):
-            fields.append(esc(english[position:match.start()]))
-            answer = match.group(1)
-            if index:
-                fields.append("<br><br>")
-            fields.append(
-                f'<textarea class="free-input phrase-input" data-sync-id="p{part}-fill-{row}-{index}" '
-                f'data-answer="{esc(answer)}" rows="1" autocomplete="off" spellcheck="false"></textarea>'
-            )
-            position = match.end()
-        fields.append(esc(english[position:]))
-        fields = "".join(fields)
-        blocks.append(
-            '<div class="task-block"><div class="answer-box">'
-            f'<span class="answer-label">{core.marks(japanese, "target ending")}</span>'
-            f'<span class="answer-fill"><span class="korean">{fields}</span></span></div></div>'
-        )
-    return core.section(
-        f"p{part}-fill", "Fill the frame", "空欄をうめよう",
-        '<p class="section-subtitle"><span class="ko">Complete only the highlighted pattern.</span>'
-        '<span class="ja">強調されたパターンだけを空欄に入れましょう。</span></p>'
-        '<div class="tutor-note">Write the learner\'s answer exactly as they say it.</div>' + "".join(blocks),
-    )
+    """Use the shared target-only fill component; target markers are the contract."""
+    return core.fill(f"p{part}-fill", pattern["rows"])
 
 
 def wrapping_translate(part, pattern):
-    blocks = []
-    for row, (english, japanese, _) in enumerate(pattern["rows"]):
-        answer = core.strip_marks(english)
-        blocks.append(
-            '<div class="task-block"><div class="answer-box tall">'
-            f'<span class="answer-label">{esc(core.strip_marks(japanese))}</span>'
-            '<span class="answer-space as-input">'
-            f'<textarea class="free-input" data-sync-id="p{part}-translate-{row}" data-answer="{esc(answer)}" '
-            'rows="2" autocomplete="off" spellcheck="false" maxlength="2000"></textarea>'
-            '</span></div></div>'
-        )
-    return core.section(
-        f"p{part}-translate", "Say it in English", "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say the whole sentence in English.</span>'
-        '<span class="ja">日本語を見て、文をまるごと英語で言いましょう。</span></p>' + "".join(blocks),
+    return core.translate(
+        f"p{part}-translate",
+        pattern["rows"],
+        hints=pattern.get("translate_hints"),
+        support_stage=pattern.get(
+            "translate_stage",
+            "supported" if pattern.get("translate_hints") else None,
+        ),
     )
 
 
 def freetalk_page(lesson):
-    if "live_sequence" in lesson:
-        sequence = lesson["live_sequence"]
+    return base.freetalk_page(lesson)
 
-        def answer_turn(who, sync_id, label, task, *, answer=""):
-            side = "me" if who == "Me" else "other"
-            bubble_class = "bubble me" if who == "Me" else "bubble"
-            answer_attr = f' data-answer="{esc(answer)}"' if answer else ""
-            return (
-                f'<div class="turn {side}">{core.live_avatar(who)}<div class="{bubble_class}">'
-                '<div class="answer-box tall">'
-                f'<span class="answer-label">{esc(label)}<span class="task">{esc(task)}</span></span>'
-                '<span class="answer-space as-input">'
-                f'<textarea class="free-input" data-sync-id="{sync_id}"{answer_attr} rows="2" '
-                'autocomplete="off" spellcheck="false" maxlength="2000"></textarea>'
-                '</span></div></div></div>'
-            )
 
-        prompt_en, prompt_ja = sequence["prompt"]
-        request1_en, request1_ja = sequence["request1"]
-        reply1_en, reply1_ja = sequence["reply1"]
-        request2_en, request2_ja = sequence["request2"]
-        reply2_en, reply2_ja = sequence["reply2"]
-        ask_en, ask_ja = sequence["ask"]
-        turns = (
-            f'<div class="turn other">{core.live_avatar("Tutor")}<div class="bubble">'
-            f'<span class="korean">{esc(prompt_en)}</span><span class="translation">{esc(prompt_ja)}</span>'
-            '</div></div>'
-            + answer_turn("Me", "live-request-1", request1_en, request1_ja, answer=request1_en)
-            + answer_turn("Tutor", "live-tutor-1", reply1_en, reply1_ja)
-            + answer_turn("Me", "live-request-2", request2_en, request2_ja, answer=request2_en)
-            + answer_turn("Tutor", "live-tutor-2", reply2_en, reply2_ja)
-            + answer_turn("Me", "live-ask", ask_en, ask_ja, answer=ask_en)
-            + answer_turn("Tutor", "live-tutor", "Tutor's answer", "先生の本当の答え")
-        )
-        return core.section(
-            "p3-freetalk", "Your response", "自分の対応",
-            '<p class="section-subtitle"><span class="ko">Make one request, use my real answer to make the follow-up request, then ask me the related question.</span>'
-            '<span class="ja">一つ目の依頼をし、私の実際の返事を受けて次の依頼をしてから、関連する質問を私にもしてください。</span></p>'
-            f'<div class="dialogue">{turns}</div>',
-        )
-
-    prompt_en, prompt_ja, scaffold, scaffold_ja, ask_en, ask_ja = lesson["live"]
-    turns = (
-        f'<div class="turn other">{core.live_avatar("Tutor")}<div class="bubble">'
-        f'<span class="korean">{esc(prompt_en)}</span><span class="translation">{esc(prompt_ja)}</span></div></div>'
-        f'<div class="turn me">{core.live_avatar("Me")}<div class="bubble me"><div class="answer-box tall">'
-        f'<span class="answer-label">{esc(scaffold)}<span class="task">{esc(scaffold_ja)}</span></span>'
-        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-me" rows="2" '
-        'spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
-        f'<div class="turn me">{core.live_avatar("Me")}<div class="bubble me"><div class="answer-box tall">'
-        f'<span class="answer-label">{esc(ask_en)}<span class="task">{esc(ask_ja)}</span></span>'
-        f'<span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-ask" '
-        f'data-answer="{esc(ask_en)}" rows="2" autocomplete="off" spellcheck="false" maxlength="2000"></textarea>'
-        '</span></div></div></div>'
-        f'<div class="turn other">{core.live_avatar("Tutor")}<div class="bubble"><div class="answer-box tall">'
-        '<span class="answer-label">Tutor\'s answer<span class="task">先生の本当の答え</span></span>'
-        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-tutor" rows="2" '
-        'spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+def goal_page(number, lesson):
+    return core.goal_page(
+        title=lesson["title"], title_ja=lesson["ja"],
+        can_do=lesson["goal"][0], can_do_ja=lesson["goal"][1],
+        data_act="Travel task" if number <= 30 else "Business task",
     )
-    return core.section(
-        "p3-freetalk", "Your response", "自分の対応",
-        '<p class="section-subtitle"><span class="ko">Respond to the situation, then ask me the related question.</span>'
-        '<span class="ja">場面に対応し、そのあと関連する質問を私にもしてください。</span></p>'
-        f'<div class="dialogue">{turns}</div>',
-    )
-
-
-def goal_page(lesson):
-    p1 = lesson["p1"]["rows"][0]
-    p2 = lesson["p2"]["rows"][0]
-    p1_ja = core.marks(p1[1])
-    p2_ja = core.marks(p2[1])
-    for part, prefix in lesson.get("goal_breaks", {}).items():
-        marked = p1_ja if part == 1 else p2_ja
-        if prefix not in marked:
-            raise ValueError(f"goal break prefix {prefix!r} is absent")
-        marked = marked.replace(prefix, prefix + "<br>", 1)
-        if part == 1:
-            p1_ja = marked
-        else:
-            p2_ja = marked
-    return f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Travel task">
-      <span class="transition-kicker">GOAL</span>
-      <h2 class="transition-title">{esc(lesson.get("goal_title", lesson["title"]))}</h2>
-      <p class="section-subtitle"><span class="ko">{esc(lesson["goal"][0])}</span><span class="ja">{esc(lesson["goal"][1])}</span></p>
-      <div class="known lines">
-        <div class="known-row"><span class="k">{core.marks(p1[0])}</span><span class="j">{p1_ja}</span></div>
-        <div class="known-row"><span class="k">{core.marks(p2[0])}</span><span class="j">{p2_ja}</span></div>
-      </div>
-    </div>
-'''
 def pages(number, lesson):
+    learner_role = course_for(number)[3]
+    learner_role_ja = course_for(number)[4]
+    role_ja = lesson["role_ja"]
+    transfer_role_ja = lesson["transfer_role_ja"]
     opening = base.render_roleplay(lesson, lesson["scene_turns"], prefix=f"ctx-{number}-scene")
     model = base.render_roleplay(lesson, lesson["scene_turns"], highlight=True, prefix=f"ctx-{number}-model")
     complete = base.render_roleplay(lesson, lesson["scene_turns"], complete=True, prefix=f"ctx-{number}-complete")
     transfer = base.render_roleplay(lesson, lesson["transfer_turns"], complete=True, prefix=f"ctx-{number}-transfer", role=lesson["transfer_role"])
-    learner_role = course_for(number)[3].lower()
     result = [
-        situation_page(number, lesson),
+        goal_page(number, lesson),
         core.section("scene", lesson["scene"], lesson["scene_ja"],
-            f'<p class="section-subtitle"><span class="ko">Listen once, then read your lines as the {esc(learner_role)}.</span>'
-            f'<span class="ja">まず一度聞き、そのあと{esc(course_for(number)[4])}として「私」のセリフを読みましょう。</span></p>'
+            f'<p class="section-subtitle"><span class="ko">Let\'s role-play. You\'re the {esc(learner_role.lower())}, and I\'ll be the {esc(lesson["role"].lower())}.</span>'
+            f'<span class="ja">ロールプレイをしましょう。あなたは{esc(learner_role_ja)}、私は{esc(role_ja)}です。</span></p>'
+            f'<div class="tutor-note">Start with the first {esc(lesson["role"])} line.</div>'
             f'<div class="dialogue">{opening}</div>'),
-        goal_page(lesson), base.expressions_page(lesson), base.understand_page(number, lesson),
+        base.understand_page(number, lesson), base.expressions_page(lesson),
     ]
     for part in (1, 2):
         p = lesson[f"p{part}"]
@@ -930,20 +939,22 @@ def pages(number, lesson):
         '    <div class="transition-page" data-page-id="part3-intro" data-act="Complete the task">'
         '<span class="transition-kicker">PUT IT TOGETHER</span><h2 class="transition-title">'
         'Complete the practical job <span class="title-ja">(用事を完了しよう)</span></h2>'
-        '<p class="transition-copy">最初の場面に戻り、二つの表現で用事を最後まで完了します。</p></div>\n',
+        '<p class="section-subtitle"><span class="ko">Now, let\'s return to the scene and complete the practical job.</span>'
+        '<span class="ja">最初の場面に戻り、二つの表現で用事を最後まで完了しましょう。</span></p>'
+        '<div class="tutor-note">Introduce the roleplay, then move on.</div></div>\n',
         core.section("p3-model", "Replay the full scene", "場面をもう一度",
-            '<p class="section-subtitle"><span class="ko">Read your lines while I read the other role.</span>'
-            '<span class="ja">自分のセリフを読み、私は相手役を読みます。</span></p>'
+            f'<p class="section-subtitle"><span class="ko">I\'ll be the {esc(lesson["role"].lower())}. Please read your lines aloud.</span>'
+            f'<span class="ja">私は{esc(role_ja)}です。自分のセリフを声に出して読んでください。</span></p>'
             f'<div class="dialogue">{model}</div>'),
         core.section("p3-complete", "Complete the full scene", "場面を完成しよう",
-            '<p class="section-subtitle"><span class="ko">Replay the same exchange and complete only today’s two frames.</span>'
-            '<span class="ja">同じ会話をもう一度進め、今日の二つの表現だけ完成させましょう。</span></p>'
-            '<div class="tutor-note">Write each target exactly as the learner says it.</div>'
+            f'<p class="section-subtitle"><span class="ko">I’ll be the {esc(lesson["role"].lower())}. Say each complete line, including the missing words.</span>'
+            f'<span class="ja">私は{esc(role_ja)}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。</span></p>'
+            '<div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'
             f'<div class="dialogue">{complete}</div>'),
         freetalk_page(lesson), base.native_tip_page(lesson),
         core.section("transfer-scene", lesson["transfer_title"], lesson["transfer_ja"],
-            '<p class="section-subtitle"><span class="ko">Use the same two moves to complete a different practical situation.</span>'
-            '<span class="ja">同じ二つの表現で、別の実用的な場面を最後まで進めましょう。</span></p>'
+            f'<p class="section-subtitle"><span class="ko">Let\'s role-play a new situation using the same two lines. I\'ll be the {esc(lesson["transfer_role"].lower())}.</span>'
+            f'<span class="ja">同じ二つの表現を使って、別の場面でロールプレイをしましょう。私は{esc(transfer_role_ja)}です。</span></p>'
             f'<div class="dialogue">{transfer}</div>'),
     ])
     return [page for page in result if page]
@@ -967,15 +978,17 @@ def build(number, lesson):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--lesson", type=int, choices=LESSONS)
     args = parser.parse_args()
-    for number, lesson in LESSONS.items():
+    selected = LESSONS.items() if args.lesson is None else ((args.lesson, LESSONS[args.lesson]),)
+    for number, lesson in selected:
         output, source = build(number, lesson)
         if output.exists() and not args.refresh:
             raise SystemExit(f"refusing to overwrite {output.relative_to(ROOT)}")
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(source, encoding="utf-8")
         print(f"wrote {output.relative_to(ROOT)}")
-    print(f"{len(LESSONS)} Contextual decks generated")
+    print(f"{len(LESSONS) if args.lesson is None else 1} Contextual decks generated")
     return 0
 
 
