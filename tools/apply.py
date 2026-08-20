@@ -194,7 +194,17 @@ def apply_course(curriculum: dict, course: model.Course, url: str, token: str,
     printing them together keeps each course's block intact and in course order.
     """
     lines = [f"→ {course.key}"]
-    manifest, zips, cover = build_manifest(curriculum, course, log=lines.append)
+    try:
+        manifest, zips, cover = build_manifest(curriculum, course, log=lines.append)
+    except (build.BuildError, model.ValidationError) as exc:
+        # 이 코스만 실패로 접는다. 코스가 서로 독립이라 요청도 코스당 하나인 것과 같은
+        # 이유다 — 덱 하나가 안 묶인다고 나머지 55 코스의 배포를 취소할 일이 아니다.
+        #
+        # 던지게 두면 더 나쁘다. 코스가 동시에 나가므로 예외는 pool 이 이미 제출한 나머지를
+        # 다 끝낸 뒤에야 밖으로 나온다 — 그 사이에도 배포는 계속되고, 트레이스백만 몇 분
+        # 늦게 뜬다. 실패를 여기서 값으로 만들면 그 어긋남이 없다.
+        lines.append(f"  ✗ {exc}")
+        return False, lines
 
     if dry_run:
         lines.append(json.dumps(manifest, indent=2, ensure_ascii=False))
