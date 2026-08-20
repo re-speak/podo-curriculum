@@ -354,9 +354,9 @@ VOCAB = {
     97: dict(new="would rather not|〜しないほうを選ぶ; another time|別の機会", recycled="share|共有する|CORE-70; drive|運転する|CORE-14", assumed="join|参加する; decide|決める; meet|会う; discuss|話し合う; invitation|誘い; accept|受ける; topic|話題; plan|案; if that's OK|よければ; happy|喜んで; prepare|準備する; thanks|ありがとう; today|今日; work|うまくいく", receptive="I'll pass|今回は遠慮する; take a rain check|またの機会にする; no problem|大丈夫; next week|来週"),
     98: dict(new="mostly because of|主に〜が原因; comes from|〜から生じる; misunderstanding|誤解", recycled="approval|承認|CORE-82; issue|問題|CORE-82", assumed="delay|遅れ; information|情報; weather|天候; instructions|指示; system|仕組み; step|手順; source|出所; cause|原因; another|別の; clear|明確な; give|与える; good|よい; late|遅い; a lot of it|その多く; missing|欠けている; old|古い; prevent|防ぐ; reason|理由; sure|確かな; thanks|ありがとう; think|思う; unclear|不明確な", receptive="partly because of|一部〜が原因; the main reason|主な理由; formal alternative|フォーマルな別表現; clarify|明確にする"),
     99: dict(new="suggests that|〜を示している; would explain|〜の説明がつく", recycled="issue|問題|CORE-82; urgent|緊急の|CORE-83", assumed="drop|減少; people|人々; empty room|空の会議室; message|連絡; low response|少ない反応; question|質問; second call|二度目の電話; delay|遅れ; missing replies|返事がないこと; evidence|根拠; bring|連れてくる; good|よい; great|よい; notice|気づく; see|見る; stronger|より強い; thing|こと; today|今日; unclear|不明確な", receptive="it looks like|〜のようだ; on the face of it|一見したところ; website visits|ウェブサイト訪問数; logs|記録"),
-    100: dict(new="as a result|その結果; that meant|そのため〜となった; reschedule|日程を変更する", recycled="deadline|期限|CORE-82; meeting room|会議室|CORE-62; schedule|予定|CORE-67", assumed="train|電車; canceled|運休した; file|ファイル; late|遅い; unavailable|使えない; price|価格; plan|案; meeting|会議; room|会議室; lose a week|1週間を失う; launch|開始; more work|追加作業; arrive|到着する; change|変える; good|よい; clear|はっきりした; happen|起きる; impact|影響; join|参加する; limit|抑える; miss|間に合わない; move|移す; people|人々; problem|問題; resolve|解決する; team|チーム; thanks|ありがとう; price went up|価格が上がった; workload|作業量; this week|今週", receptive="knock-on effect|連鎖的な影響; in turn|その結果; supplier|取引先; conversational link|会話的なつなぎ"),
+    100: dict(new="as a result|その結果; that meant|そのため〜となった; reschedule|日程を変更する", recycled="deadline|期限|CORE-82; meeting room|会議室|CORE-62; schedule|予定|CORE-67", assumed="train|電車; canceled|運休した; file|ファイル; late|遅い; unavailable|使えない; price|価格; plan|案; meeting|会議; room|会議室; lose|失う; week|週; lose a week|1週間を失う; launch|開始; more work|追加作業; arrive|到着する; change|変える; good|よい; clear|はっきりした; happen|起きる; impact|影響; join|参加する; limit|抑える; miss|間に合わない; move|移す; people|人々; problem|問題; resolve|解決する; team|チーム; thanks|ありがとう; price went up|価格が上がった; workload|作業量; this week|今週", receptive="knock-on effect|連鎖的な影響; in turn|その結果; supplier|取引先; conversational link|会話的なつなぎ"),
     101: dict(new="depends on whether|〜かどうかによる; either way|どちらにしても", recycled="approval|承認|CORE-82; free|空いている|CORE-28; deadline|期限|CORE-82; hear back|返事をもらう|CORE-80; update|更新|CORE-37; schedule|予定|CORE-67", assumed="approve|承認する; room|会議室; price|価格; prepare|準備する; backup plan|予備案; same|同じ; unresolved|未確定の; plan|案; answer|答え; change|変わる; good|よい; great|よい; lose|失う; manageable|対応できる; need|必要である; outcome|結果; send|送る; stay|変わらない; time|時間; today|今日", receptive="up to them|彼ら次第; we'll cross that bridge|その時に考える; in either case|どちらの場合も; checklist|確認表"),
-    102: dict(new="otherwise|そうでなければ", recycled="supplier|取引先|CORE-82; restart|再起動する|CORE-64; option|選択肢|CORE-45; free|空いている|CORE-28", assumed="start again|また最初から始める; move the meeting|会議を移す; change the plan|案を変える; full price|全額; old plan|古い案; another date|別の日; fallback|代案; ask|聞く; call|電話する; work|うまくいく; plan|案; backup|代案; room|会議室; order|注文; you'd have to|あなたは〜しなければならない; great|よい; keep|続ける; need|必要である; pay|支払う; thanks|ありがとう; try|試す; use|使う; workable|実行できる", receptive="as a last resort|最後の手段として; plan B|代案; or else|さもないと; confirmation|確認"),
+    102: dict(new="otherwise|そうでなければ", recycled="supplier|取引先|CORE-82; restart|再起動する|CORE-64; option|選択肢|CORE-45; free|空いている|CORE-28", assumed="start again|また最初から始める; move|移す; meeting|会議; move the meeting|会議を移す; change|変える; change the plan|案を変える; full price|全額; old plan|古い案; another date|別の日; fallback|代案; ask|聞く; call|電話する; work|うまくいく; plan|案; backup|代案; room|会議室; order|注文; you'd have to|あなたは〜しなければならない; great|よい; keep|続ける; need|必要である; pay|支払う; thanks|ありがとう; try|試す; use|使う; workable|実行できる", receptive="as a last resort|最後の手段として; plan B|代案; or else|さもないと; confirmation|確認"),
 }
 
 # Exact multiword scaffolds used in live menus. Keeping these as explicit
@@ -404,9 +404,9 @@ TRANSLATE_HINTS = {
     97: (("参加する:join", "運転する:drive", "決める:decide", "共有する:share"), ("別の機会:another time", "会う:meet", "話し合う:discuss", "決める:decide")),
     98: (("遅れ:delay", "承認:approval", "情報:information", "天候:weather"), ("誤解:misunderstanding", "指示:instructions", "仕組み:system", "手順:step")),
     99: (("減少:drop", "空の会議室:empty room; 連絡:message", "少ない反応:low response; 質問:question", "二度目の電話:second call; 問題:issue"), ("遅れ:delay", "少ない反応:low response", "空の会議室:empty room", "返事がないこと:missing replies")),
-    100: (("電車:train; 運休した:canceled", "ファイル:file; 遅い:late", "会議室:room; 使えない:unavailable", "価格:price; 案:plan"), ("日程を変更する:reschedule; 1週間を失う:lose a week", "期限:deadline; 開始:launch", "会議:meeting", "案:plan; 追加作業:more work")),
+    100: (("電車:train; 運休した:canceled", "ファイル:file; 遅い:late", "会議室:room; 使えない:unavailable", "価格:price; 案:plan"), ("日程を変更する:reschedule; 失う:lose; 週:week", "期限:deadline; 開始:launch", "会議:meeting", "案:plan; 追加作業:more work")),
     101: (("承認する:approve", "会議室:room; 空いている:free", "価格:price", "返事をもらう:hear back"), ("準備する:prepare", "予備案:backup plan", "期限:deadline; 同じ:same", "更新:update")),
-    102: (("また最初から始める:start again", "会議を移す:move the meeting", "案を変える:change the plan", "全額:full price"), ("聞く:ask", "取引先:supplier; 電話する:call", "古い案:old plan", "別の日:another date")),
+    102: (("また最初から始める:start again", "移す:move; 会議:meeting", "変える:change; 案:plan", "全額:full price"), ("聞く:ask", "取引先:supplier; 電話する:call", "古い案:old plan", "別の日:another date")),
 }
 
 
@@ -419,9 +419,9 @@ OPEN_MENUS = {
     97: (("参加する:join", "運転する:drive", "決める:decide", "共有する:share"), ("会う:meet", "話し合う:discuss", "決める:decide", "別の機会:another time")),
     98: (("遅れ:delay", "承認:approval", "情報:information", "天候:weather"), ("誤解:misunderstanding", "指示:instructions", "仕組み:system", "手順:step")),
     99: (("減少:drop", "空の会議室:empty room", "少ない反応:low response", "二度目の電話:second call"), ("遅れ:delay", "少ない反応:low response", "空の会議室:empty room", "返事がないこと:missing replies")),
-    100: (("運休した:canceled", "期限:deadline", "会議室:meeting room", "案:plan"), ("1週間を失う:lose a week", "開始:launch", "追加作業:more work", "日程を変更する:reschedule")),
+    100: (("運休した:canceled", "期限:deadline", "会議室:meeting room", "案:plan"), ("失う:lose", "週:week", "追加作業:more work", "日程を変更する:reschedule")),
     101: (("承認:approval", "空いている:free", "価格:price", "返事をもらう:hear back"), ("準備する:prepare", "予備案:backup plan", "期限:deadline", "更新:update")),
-    102: (("また最初から始める:start again", "会議を移す:move the meeting", "案を変える:change the plan", "全額:full price"), ("聞く:ask", "取引先:supplier", "古い案:old plan", "別の日:another date")),
+    102: (("また最初から始める:start again", "移す:move", "変える:change", "全額:full price"), ("聞く:ask", "取引先:supplier", "古い案:old plan", "別の日:another date")),
 }
 
 
@@ -516,6 +516,81 @@ LIVE_HINTS = {
     101: {1: ("上司が申請を承認する:your managers approve the request", "誰かが会議を代わる:someone covers the meeting", "プロジェクトの予定が変わる:the project schedule changes", "今日返事が来る:we hear back today")},
     102: {1: ("会議を移す:move the meeting", "別の日を試す:try another date")},
 }
+
+
+# Human-reviewed operating copy for the page-by-page audit. Open production
+# names both the exact frame and the communicative job. A choice page survives
+# only when its rows require a real form decision; fixed-answer pseudo-choices
+# are omitted. Free Talk is a genuine reciprocal topic exchange, with today's
+# pattern available but never forced into an unnatural answer.
+WRITE_PROMPTS = {
+    92: (("Now use “I'm not entirely convinced that ___” to express one real doubt softly.", "では、「I'm not entirely convinced that ___」を使って、本当の疑問を一つやわらかく伝えてください。"), ("Now use “I'd want to see ___ before ___ing” to name evidence you need before a decision.", "では、「I'd want to see ___ before ___ing」を使って、決める前に必要な根拠を示してください。")),
+    93: (("Now use “To be fair, ___” to concede one true point.", "では、「To be fair, ___」を使って、本当に認められる点を一つ伝えてください。"), ("Now use “That said, ___” to state what still needs attention.", "では、「That said, ___」を使って、まだ注意が必要な点を一つ伝えてください。")),
+    94: (("Now use “Wouldn't it be better if we ___?” to suggest one useful change.", "では、「Wouldn't it be better if we ___?」を使って、役立つ変更を一つ提案してください。"), ("Now use “What if we ___?” to offer one different approach.", "では、「What if we ___?」を使って、別のやり方を一つ提案してください。")),
+    95: (("Now use “Where I'd push back is on ___” to identify one part of a proposal you question.", "では、「Where I'd push back is on ___」を使って、提案の中で疑問に思う点を一つ示してください。"), ("Now use “I don't think that takes ___ into account” to name one overlooked factor.", "では、「I don't think that takes ___ into account」を使って、見落とされた要素を一つ示してください。")),
+    96: (("Now use “I meant ___, not ___” to correct one misunderstood detail.", "では、「I meant ___, not ___」を使って、誤解された情報を一つ訂正してください。"), ("Now use “What I was trying to say is that ___” to restate your intended message.", "では、「What I was trying to say is that ___」を使って、本来伝えたかったことを言い直してください。")),
+    97: (("Now use “I'd rather not ___, if that's OK” to decline one invitation politely.", "では、「I'd rather not ___, if that's OK」を使って、誘いを一つ丁寧に断ってください。"), ("Now use “Could we ___ another time?” to suggest a different time.", "では、「Could we ___ another time?」を使って、別の機会を提案してください。")),
+    98: (("Now use “That's mostly because of ___” to name one main cause without ruling out others.", "では、「That's mostly because of ___」を使って、ほかの可能性を残しながら主な原因を一つ示してください。"), ("Now use “A lot of it comes from ___” to name one source of a problem.", "では、「A lot of it comes from ___」を使って、問題の出所を一つ示してください。")),
+    99: (("Now use “___ suggests that ___” to draw one cautious conclusion from an observation.", "では、「___ suggests that ___」を使って、観察から控えめな結論を一つ導いてください。"), ("Now use “That would explain ___” to connect a fact to what it could explain.", "では、「That would explain ___」を使って、事実と、それで説明できることをつないでください。")),
+    100: (("Now use “As a result, ___” to connect one cause to its direct result.", "では、「As a result, ___」を使って、原因を直接の結果につないでください。"), ("Now use “That meant ___” to state one practical consequence.", "では、「That meant ___」を使って、実際に生じた影響を一つ伝えてください。")),
+    101: (("Now use “It depends on whether ___” to answer one real question conditionally.", "では、「It depends on whether ___」を使って、本当の質問に条件付きで答えてください。"), ("Now use “Either way, ___” to say what remains true in both outcomes.", "では、「Either way, ___」を使って、どちらの結果でも変わらないことを伝えてください。")),
+    102: (("Now use “Otherwise, we'd have to ___” to state the consequence of a failed condition.", "では、「Otherwise, we'd have to ___」を使って、条件が満たされない場合の結果を伝えてください。"), ("Now use “If that doesn't work, we could ___” to offer one realistic fallback.", "では、「If that doesn't work, we could ___」を使って、現実的な代案を一つ出してください。")),
+}
+
+CHOICE_OMISSIONS = {
+    92: {1}, 93: {2}, 94: set(), 95: {1, 2}, 96: {2}, 97: set(),
+    98: {1, 2}, 99: {1, 2}, 100: {1, 2}, 101: {1, 2}, 102: set(),
+}
+
+REVIEWED_LIVE = {
+    92: ("What's an opinion you changed your mind about, and what convinced you?", "考えが変わった意見は何ですか？何がきっかけでしたか？", "What changed your mind about an opinion?", "先生は何がきっかけで意見が変わりましたか？"),
+    93: ("What's one good thing about working from home, and one downside?", "在宅勤務のよい点と大変な点を一つずつ教えてください。", "What's one good thing and one downside for you?", "先生にとってのよい点と大変な点は何ですか？"),
+    94: ("When a plan goes wrong, do you fix it quickly or rethink it first? Why?", "計画がうまくいかないとき、すぐ直しますか？それともまず考え直しますか？なぜですか？", "Do you fix a plan quickly or rethink it first?", "先生はすぐ直しますか？それともまず考え直しますか？"),
+    95: ("When you question a plan, what do you check first: cost, timing, or risk?", "計画に疑問があるとき、費用、時期、リスクのどれを最初に確認しますか？", "What do you check first in a plan?", "先生は計画の何を最初に確認しますか？"),
+    96: ("Have you ever mixed up a date or time? What happened?", "日付や時間を取り違えたことはありますか？何がありましたか？", "Have you ever mixed up a date or time?", "先生は日付や時間を取り違えたことがありますか？"),
+    97: ("What kind of invitation do you sometimes prefer to turn down, and why?", "どんな誘いを断りたいことがありますか？なぜですか？", "What kind of invitation do you sometimes turn down?", "先生はどんな誘いを断ることがありますか？"),
+    98: ("Why do projects or plans often run late, in your experience?", "経験上、プロジェクトや計画が遅れる主な理由は何ですか？", "Why do plans often run late in your experience?", "先生の経験では、計画はなぜ遅れることが多いですか？"),
+    99: ("What's one clue that tells you a meeting or event was poorly communicated?", "会議やイベントの連絡がうまく伝わっていないと分かる手がかりは何ですか？", "What clue suggests poor communication to you?", "先生はどんな手がかりで連絡不足だと考えますか？"),
+    100: ("What's a small delay that caused a surprisingly big result for you?", "小さな遅れが思いがけず大きな結果につながった経験はありますか？", "What small delay had a big result for you?", "先生はどんな小さな遅れが大きな結果につながりましたか？"),
+    101: ("When you make weekend plans, what does your decision usually depend on?", "週末の予定を決めるとき、何によって決まることが多いですか？", "What do your weekend plans usually depend on?", "先生の週末の予定は、何によって決まることが多いですか？"),
+    102: ("When your first plan fails, what backup do you usually try?", "最初の案がうまくいかないとき、どんな代案を試しますか？", "What backup do you usually try?", "先生はふだんどんな代案を試しますか？"),
+}
+
+MODEL_ROLE_JA = {
+    92: "マネージャー", 93: "プロジェクトリーダー", 94: "同僚",
+    95: "責任者", 96: "調整担当者", 97: "友人", 98: "マネージャー",
+    99: "分析担当者", 100: "計画担当者", 101: "マネージャー",
+    102: "調整担当者",
+}
+
+WILD_ROLE_JA = {
+    92: "取締役会のメンバー", 93: "購買担当者", 94: "主催者",
+    95: "委員", 96: "受付係", 97: "チームリーダー", 98: "駅員",
+    99: "イベント主催者", 100: "制作担当者", 101: "イベント調整担当者",
+    102: "会場責任者",
+}
+
+for _number in NUMBERS:
+    SPECS[_number]["writes"] = WRITE_PROMPTS[_number]
+    LESSONS[_number]["omit_choice"] = tuple(sorted(CHOICE_OMISSIONS[_number]))
+    SPECS[_number]["role_ja"] = MODEL_ROLE_JA[_number]
+    _wild_role = DIALOGUES[_number]["wild"][0].lower()
+    SPECS[_number]["wild_script"] = (
+        f"I'll be the {_wild_role}. Say each complete line, including the missing words.",
+        f"私は{WILD_ROLE_JA[_number]}です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+    )
+    LESSONS[_number]["prompt"] = (
+        "Let's talk about this topic. Answer my question, then ask me too.",
+        "この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。",
+    )
+    _question, _question_ja, _ask_back, _ask_back_ja = REVIEWED_LIVE[_number]
+    LIVE_SCENES[_number] = (
+        ("text", "other", "Tutor", _question, _question_ja),
+        ("input", "me", "Me", "Student's answer", "自分の本当の答え"),
+        ("text", "me", "Me", _ask_back, _ask_back_ja),
+        ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え"),
+    )
+    LIVE_HINTS[_number] = {}
 
 
 TRANSFER_SCENES = {
@@ -646,10 +721,14 @@ def course_data():
         "SUPPORT_EXPRESSIONS",
     )
     previous = {name: getattr(approved, name) for name in names}
+    role_ja_previous = approved.ROLE_JA.copy()
     core_previous = (core.VOCAB, core.CANONICAL_SPECS, core.DIALOGUES, core.LIVE_SCENES)
     try:
         for name in names:
             setattr(approved, name, globals()[name])
+        for number in NUMBERS:
+            approved.ROLE_JA[DIALOGUES[number]["model"][0]] = MODEL_ROLE_JA[number]
+            approved.ROLE_JA[DIALOGUES[number]["wild"][0]] = WILD_ROLE_JA[number]
         core.VOCAB = {
             number: (values["new"], values["assumed"], values["receptive"])
             for number, values in VOCAB.items()
@@ -659,6 +738,8 @@ def course_data():
     finally:
         for name, value in previous.items():
             setattr(approved, name, value)
+        approved.ROLE_JA.clear()
+        approved.ROLE_JA.update(role_ja_previous)
         core.VOCAB, core.CANONICAL_SPECS, core.DIALOGUES, core.LIVE_SCENES = core_previous
 
 
@@ -694,6 +775,27 @@ def growing_sentence_inputs(page):
     )
 
 
+def concise_roleplay_copy(page):
+    """Keep transition and role instructions short, explicit, and bilingual."""
+    pid = page_id(page)
+    if pid == "part3-intro":
+        page = re.sub(
+            r'<p class="section-subtitle">.*?</p><div class="tutor-note">.*?</div>',
+            '<p class="section-subtitle"><span class="ko">Next, let\'s role-play a conversation.</span>'
+            '<span class="ja">次は、会話をロールプレイしましょう。</span></p>'
+            '<div class="tutor-note">Move on to the role-play.</div>',
+            page,
+            count=1,
+        )
+    if pid == "p3-model":
+        page = page.replace("Please read the Me lines aloud.", "Read your lines aloud.")
+        page = page.replace("Please read your lines aloud.", "Read your lines aloud.")
+        page = page.replace("役をします。Me のセリフを声に出して読んでください。", "です。自分のセリフを声に出して読んでください。")
+    if pid == "p3-complete":
+        page = page.replace("役をします。空欄に入る言葉も含めて", "です。空欄に入る言葉も含めて")
+    return page
+
+
 def page_id(page):
     match = re.search(r'data-page-id="([^"]+)"', page)
     return match.group(1) if match else ""
@@ -703,7 +805,7 @@ def customize_pages(number, data, pages):
     pages = approved.customize_pages(number, data, pages)
     result = []
     for page in pages:
-        page = growing_sentence_inputs(page)
+        page = concise_roleplay_copy(growing_sentence_inputs(page))
         if page_id(page) == "part3-intro":
             result.extend(
                 spiral_page(number, spiral_id, mode)
@@ -745,6 +847,11 @@ def validate_source():
         ("dialogue ledger", DIALOGUE_SEMANTIC_LEDGER),
         ("productive terms", PRODUCTIVE_TERMS),
         ("live scaffold vocabulary", LIVE_SCAFFOLD_VOCAB),
+        ("write prompts", WRITE_PROMPTS),
+        ("choice omissions", CHOICE_OMISSIONS),
+        ("reviewed live prompts", REVIEWED_LIVE),
+        ("model role Japanese", MODEL_ROLE_JA),
+        ("wild role Japanese", WILD_ROLE_JA),
     ):
         if set(values) != expected:
             raise SystemExit(f"{label} do not exactly cover CORE-92--102")

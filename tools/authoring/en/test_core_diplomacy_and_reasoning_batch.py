@@ -102,7 +102,9 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
             batch.DIALOGUES, batch.LIVE_SCENES, batch.LIVE_HINTS,
             batch.TRANSFER_SCENES, batch.BRIEF_PRODUCTION_MODELS,
             batch.DIALOGUE_SEMANTIC_LEDGER, batch.PRODUCTIVE_TERMS,
-            batch.LIVE_SCAFFOLD_VOCAB,
+            batch.LIVE_SCAFFOLD_VOCAB, batch.WRITE_PROMPTS,
+            batch.CHOICE_OMISSIONS, batch.REVIEWED_LIVE,
+            batch.MODEL_ROLE_JA, batch.WILD_ROLE_JA,
         ):
             self.assertEqual(set(values), EXPECTED)
 
@@ -127,11 +129,19 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
             for english, japanese in spec["meanings"] + spec["writes"]:
                 self.assertTrue(english.strip(), number)
                 self.assertTrue(japanese.strip(), number)
+            for english, japanese in spec["writes"]:
+                self.assertTrue(english.startswith("Now use “"), (number, english))
+                self.assertTrue(japanese.startswith("では、「"), (number, japanese))
 
-    def test_smallest_unit_choices_are_explicit_and_solvable(self):
+    def test_choices_are_discriminating_or_intentionally_omitted(self):
         for number, spec in batch.SPECS.items():
+            omitted = set(batch.LESSONS[number].get("omit_choice", ()))
+            self.assertEqual(omitted, batch.CHOICE_OMISSIONS[number])
             for part, rows in enumerate(spec["choices"], 1):
+                if part in omitted:
+                    continue
                 self.assertEqual(len(rows), 4, (number, part))
+                correct_answers = set()
                 for japanese, prefix, correct, distractor, suffix in rows:
                     self.assertIn("{t}", japanese, (number, part))
                     self.assertNotEqual(correct, distractor, (number, part))
@@ -139,6 +149,15 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
                     self.assertLessEqual(len(distractor.split()), 3, (number, part, distractor))
                     rebuilt = prefix + correct + suffix
                     self.assertRegex(rebuilt, r"^[A-Z].*[.!?]$", (number, part, rebuilt))
+                    correct_answers.add(correct.casefold())
+                self.assertGreater(len(correct_answers), 1, (number, part, correct_answers))
+                _, source = batch.build(number, batch.LESSONS[number])
+                choice_page = dict(check_deck.pages(source))[f"p{part}-choose"]
+                first_option_is_correct = {
+                    'data-correct' in row.split('class="sep"', 1)[0]
+                    for row in choice_page.split('class="choose-row')[1:]
+                }
+                self.assertEqual(first_option_is_correct, {True, False}, (number, part))
 
     def test_reorders_are_four_units_or_have_an_explicit_reason(self):
         actual = set()
@@ -204,7 +223,11 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
             for word in self.category_words(number, "new"):
                 self.assertNotIn(word, seen, (word, seen.get(word), number))
                 seen[word] = number
-                self.assertIn(word, learner_source, (number, word))
+                self.assertTrue(
+                    all(any(form in learner_source for form in word_forms(token))
+                        for token in english_tokens(word)),
+                    (number, word),
+                )
 
     def test_productive_content_inventory_has_one_explicit_owner(self):
         for number, terms in batch.PRODUCTIVE_TERMS.items():
@@ -236,7 +259,7 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
             ] + [
                 turn[3]
                 for turn in batch.LIVE_SCENES[number]
-                if turn[0:2] == ("input", "me")
+                if turn[0:2] == ("input", "me") and turn[3] != "Student's answer"
             ]
             missing = {
                 token
@@ -251,7 +274,8 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
             "choose": ("choose", "choosing"), "discuss": ("discuss",),
             "wait": ("wait", "waited"), "check": ("check", "checked"),
             "ask": ("ask", "asked"), "meet": ("meet",),
-            "reschedule": ("reschedule",), "lose a week": ("lose a week", "lost a week"),
+            "reschedule": ("reschedule",), "lose": ("lose", "lost"),
+            "week": ("week",), "lose a week": ("lose a week", "lost a week"),
         }
         for number, parts in batch.TRANSLATE_HINTS.items():
             for part, hints in enumerate(parts, 1):
@@ -279,51 +303,58 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
 
     def test_live_exchange_is_reciprocal_audio_safe_and_truthful(self):
         roles = (("text", "other", "Tutor"), ("input", "me", "Me"),
-                 ("input", "me", "Me"), ("input", "other", "Tutor"))
+                 ("text", "me", "Me"), ("input", "other", "Tutor"))
         for number, scene in batch.LIVE_SCENES.items():
             self.assertEqual(tuple(turn[:3] for turn in scene), roles, number)
-            self.assertIn(" / ", scene[1][3], number)
-            self.assertIn("／", scene[1][4], number)
             self.assertTrue(scene[0][3].endswith("?"), number)
             self.assertTrue(scene[2][3].endswith("?"), number)
+            self.assertEqual(scene[1][3], "Student's answer")
+            self.assertEqual(scene[3][3], "Tutor's answer")
             self.assertNotRegex(" ".join(turn[3] for turn in scene).casefold(), r"watch me|look at me|gesture")
+            self.assertEqual(batch.LIVE_HINTS[number], {})
+            self.assertEqual(
+                scene,
+                (
+                    ("text", "other", "Tutor", *batch.REVIEWED_LIVE[number][:2]),
+                    ("input", "me", "Me", "Student's answer", "自分の本当の答え"),
+                    ("text", "me", "Me", *batch.REVIEWED_LIVE[number][2:]),
+                    ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え"),
+                ),
+            )
             _, source = batch.build(number, batch.LESSONS[number])
             page = dict(check_deck.pages(source))["p3-freetalk"]
             self.assertEqual(page.count('class="turn '), 4, number)
             self.assertIn("Tutor&#x27;s answer:", page, number)
+            self.assertNotIn('class="hint"', page, number)
+            self.assertIn("Use today's pattern only if it fits.", page, number)
 
-        # Clause blanks get clauses and verb blanks get usable verb phrases;
-        # these were intentionally authored instead of inferred from bare nouns.
-        self.assertIn("this plan is practical", str(batch.LIVE_HINTS[92][1]))
-        self.assertIn("it saves travel time", batch.LIVE_SCENES[93][1][3])
-        self.assertIn("sent a summary", str(batch.LIVE_HINTS[94][1]))
-        self.assertIn("we need more time", str(batch.LIVE_HINTS[96][1]))
-        self.assertIn("discuss it", str(batch.LIVE_HINTS[97][1]))
-        self.assertIn("late approval", str(batch.LIVE_HINTS[98][1]))
-        self.assertIn("people missed the message", str(batch.LIVE_HINTS[99][1]))
-        self.assertIn("we missed the deadline", str(batch.LIVE_HINTS[100][1]))
-        self.assertIn("your managers approve the request", str(batch.LIVE_HINTS[101][1]))
-        self.assertEqual(batch.LIVE_HINTS[102][1], (
-            "会議を移す:move the meeting",
-            "別の日を試す:try another date",
-        ))
+    def test_supported_translation_and_exact_write_contracts(self):
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                translate = pages[f"p{part}-translate"]
+                self.assertIn('data-scaffolding-contract="target-v2"', translate)
+                self.assertIn('data-support-stage="supported"', translate)
+                self.assertEqual(translate.count('class="task-block"'), 4)
+                self.assertGreaterEqual(translate.count('class="hint"'), 4)
+                write = pages[f"p{part}-write"]
+                prompt_en, prompt_ja = batch.WRITE_PROMPTS[number][part - 1]
+                self.assertIn(html_lib.escape(prompt_en, quote=True), write)
+                self.assertIn(html_lib.escape(prompt_ja, quote=True), write)
 
-    def test_live_hint_shapes_fit_their_blanks_and_topics(self):
-        english_hints = {
-            number: tuple(item.split(":", 1)[1] for item in values[1])
-            for number, values in batch.LIVE_HINTS.items() if 1 in values
-        }
-        self.assertEqual(set(english_hints[93]), {
-            "some discussions are easier in person",
-            "not everyone has a quiet workspace",
-        })
-        self.assertTrue(all(re.match(r"^(?:we|the|this)\b.+", hint) for hint in english_hints[96]))
-        self.assertTrue(all(not re.search(r"\b(?:is|are|was|were|did)\b", hint)
-                            for hint in english_hints[98]))
-        self.assertTrue(all(re.match(r"^(?:people|the)\b.+", hint) for hint in english_hints[99]))
-        self.assertTrue(all(re.match(r"^(?:we|the)\b.+", hint) for hint in english_hints[100]))
-        self.assertTrue(all(re.match(r"^(?:your|someone|the|we)\b.+", hint)
-                            for hint in english_hints[101]))
+    def test_lexical_hints_do_not_supply_article_answers(self):
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                for page_id in (f"p{part}-translate", f"p{part}-write"):
+                    hints = [
+                        check_deck.plain_text(body).split(":", 1)[-1]
+                        for body in check_deck.vocabulary.HINT_CHIP.findall(pages[page_id])
+                    ]
+                    for hint in hints:
+                        self.assertNotRegex(hint.casefold(), r"\b(?:a|an|the)\b", (number, page_id, hint))
 
     def test_model_completion_and_transfer_are_resolved_six_turn_scenes(self):
         for number, data in batch.LESSONS.items():
@@ -366,43 +397,29 @@ class CoreDiplomacyAndReasoningBatchTests(unittest.TestCase):
         for phrase in ("Tuesday's meeting", "first plan", "Friday"):
             self.assertIn(phrase, core102_wild)
 
-        initial99 = batch.LIVE_SCENES[99][0][3]
-        self.assertIn("Only two people opened", initial99)
-        self.assertIn("low response", initial99)
-        initial100, alternatives100 = batch.LIVE_SCENES[100][0][3], batch.LIVE_SCENES[100][1][3]
-        self.assertIn("Did the delay force us to reschedule, or did a spare day mean nothing changed?", initial100)
-        self.assertIn("spare day", alternatives100.split(" / ")[1])
-        for branch in alternatives100.split(" / "):
-            self.assertRegex(branch, r"(?:^|\. )As a result, ")
-        self.assertNotIn("changed as a result", alternatives100)
-        initial101 = batch.LIVE_SCENES[101][0][3]
-        for phrase in ("next Friday off", "managers", "request", "that day off"):
-            self.assertIn(phrase, initial101)
-        initial102, alternatives102 = batch.LIVE_SCENES[102][0][3], batch.LIVE_SCENES[102][1][3]
-        for phrase in ("Tuesday's meeting", "First", "supplier", "smaller room", "don't know yet"):
-            self.assertIn(phrase, initial102)
-        self.assertNotIn("backup room", initial102)
-        self.assertIn("don't know yet if I can use it", initial102)
-        self.assertIn("check the smaller room", alternatives102.split(" / ")[0])
-        self.assertIn("smaller room is confirmed", alternatives102.split(" / ")[1])
+    def test_roleplay_copy_names_roles_concisely_in_both_languages(self):
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            model_page = html_lib.unescape(pages["p3-model"])
+            wild_page = html_lib.unescape(pages["in-the-wild"])
+            transition_page = html_lib.unescape(pages["part3-intro"])
+            model_role = batch.DIALOGUES[number]["model"][0].lower()
+            wild_role = batch.DIALOGUES[number]["wild"][0].lower()
+            self.assertIn(f"I'll be the {model_role}. Read your lines aloud.", model_page)
+            self.assertIn(f"私は{batch.MODEL_ROLE_JA[number]}です。自分のセリフを声に出して読んでください。", model_page)
+            self.assertIn(f"I'll be the {wild_role}.", wild_page)
+            self.assertIn(f"私は{batch.WILD_ROLE_JA[number]}です。", wild_page)
+            self.assertIn("Next, let's role-play a conversation.", transition_page)
 
-    def test_live_ask_backs_resolve_both_answer_branches(self):
-        self.assertIn("working from home", batch.LIVE_SCENES[93][0][3])
-        self.assertIn("concession and counterpoint", batch.LIVE_SCENES[93][3][3])
-        for number in (96, 99, 101, 102):
-            ask_back = batch.LIVE_SCENES[number][2][3]
-            self.assertIn(" / ", ask_back, number)
-            self.assertTrue(all(branch.endswith("?") for branch in ask_back.split(" / ")), number)
-            self.assertIn(" or ", batch.LIVE_SCENES[number][3][3].casefold(), number)
-        self.assertIn("this Friday", batch.LIVE_SCENES[96][0][3])
-        self.assertIn("Nothing needs correcting", batch.LIVE_SCENES[96][1][3])
-        self.assertEqual(
-            batch.LIVE_SCENES[96][2][3],
-            "Would next Friday work for you? / Would this Friday work for you?",
-        )
-        self.assertIn("one number alone", batch.LIVE_SCENES[99][1][3])
-        self.assertIn("condition or definite answer", batch.LIVE_SCENES[101][3][3])
-        self.assertIn("fallback or room confirmation", batch.LIVE_SCENES[102][3][3])
+    def test_generation_scope_is_exactly_core_92_through_102(self):
+        expected_paths = {
+            batch.TRACK / "courses" / batch.COURSE / "lessons"
+            / f"{number:02d}-{batch.LESSONS[number]['slug']}" / "lesson.html"
+            for number in EXPECTED
+        }
+        actual_paths = {batch.build(number, data)[0] for number, data in batch.LESSONS.items()}
+        self.assertEqual(actual_paths, expected_paths)
 
     def test_core102_semantic_ledger_matches_the_actual_six_turn_model(self):
         expected_jobs = (
