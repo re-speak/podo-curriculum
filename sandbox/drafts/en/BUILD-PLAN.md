@@ -1,7 +1,7 @@
 # English Curriculum — Current Build Plan
 
 **Status:** native catalog, all thirteen active representative pilots and the first generated
-Core, Contextual and paired Freetalking course batches owner-approved · checkpoints 1–8
+Core, Contextual and paired Freetalking course batches owner-approved · checkpoints 1–9
 independently proofread and validated, awaiting owner spot-check, approval and stage integration
 
 **Current as of:** 2026-08-20
@@ -20,14 +20,14 @@ here only when it changes the starting point for future work.
 | Curriculum | 4 tracks · 315 planned items |
 | Production-facing catalog | 303 items: 122 Core · 60 Contextual · 121 Freetalking |
 | Planning-only catalog | 12 pronunciation lessons; no pronunciation decks authorized |
-| Authored lessons | 277 HTML files: 276 active decks (122 Core · 60 Contextual · 94 Freetalking decks covering 47 paired topics) plus one superseded old CTX-1 prototype. Against the 424-deck production target, 148 decks remain. |
+| Authored lessons | 295 HTML files: 294 active decks (122 Core · 60 Contextual · 112 Freetalking decks covering 56 paired topics) plus one superseded old CTX-1 prototype. Against the 424-deck production target, 130 decks remain. |
 | Blueprints | Core, Contextual and Freetalking complete |
 | Generated author packets | 315 item briefs plus 4 indexes |
 | Review surface | current generated 303-item production catalog owner-approved on 2026-08-18 with no requested row dispositions |
 | Core evidence | 122-row generated triage ledger complete; five priority rows resolved against current first-party sources; Core 76/105 productive bands remain provisional |
 | Core audit | final progression pass plus a 52-row corpus-informed naturalness audit for Core 71–122; no audit-led TOC changes are pending |
-| Automated quality | 396 regression tests; all 277 English HTML files pass with 0 errors and 0 warnings; all checkpoint batches render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
-| Deployment | 43 disabled `course.yaml` plans exist. Local promotion manifests or promoted output are integration artifacts, not evidence of owner approval or stage deployment; checkpoint batches 1–8 still await their stated owner spot-check, approval and stage integration gates, and prestudy and learner-visible promotion remain open. |
+| Automated quality | 416 regression tests; all 295 English HTML files pass with 0 errors and 0 warnings; all checkpoint batches render without horizontal overflow, collapsed inline or repeated-row spacing, or missing pager clearance at 480px and 360px |
+| Deployment | 43 disabled `course.yaml` plans exist. Local promotion manifests or promoted output are integration artifacts, not evidence of owner approval or stage deployment; checkpoint batches 1–9 still await their stated owner spot-check, approval and stage integration gates, and prestudy and learner-visible promotion remain open. |
 
 The curriculum is no longer waiting for basic architecture, tooling, native catalog approval or
 course identity. Its immediate content risk is whether the approved shells remain natural and
@@ -135,6 +135,12 @@ the owner/product system supplies the final values.
   `talk-small-things-full`. All 13 paired topics and 26 decks passed independent
   semantic/pedagogic, bilingual and visual proofreading and validation. Owner spot-check,
   approval and stage integration are still pending.
+- Topics 47–56 form checkpoint 9 across `talk-people-and-ties-accessible` and
+  `talk-people-and-ties-full`. Nine newly authored paired topics and 18 decks joined the preserved
+  FT-49 pair, which remained byte-identical. All 10 paired topics and 20 decks passed independent
+  semantic/pedagogic, bilingual and visual proofreading and validation. Owner spot-check,
+  approval and stage integration are still pending. Both legacy FT-49 files intentionally remain
+  without a `podo:proofread-status` marker and were outside the 18-deck status finalization.
 - `new_lesson.py` copies only an approved English shell, retargets stable identity and paths,
   clears inherited vocabulary, refuses overwrite and keeps non-Core tracks behind their pilot gate.
 - The running lexicon classifies new, recycled, assumed-known and receptive-only vocabulary.
@@ -158,7 +164,7 @@ the owner/product system supplies the final values.
 - `build_running_lexicon.py` generates the authored vocabulary ledger from lesson metadata.
 - `check_deck.py` checks identity, references, duplicate ids, inline code, no-yomi, tutor-script
   parity, reorder chunking, reorder answer solvability and vocabulary ownership/load.
-- Three hundred ninety-six regression tests prove parser contracts, shell retargeting, generated
+- Four hundred sixteen regression tests prove parser contracts, shell retargeting, generated
   brief/map/ledger/catalog/lexicon freshness and review-intake failure cases.
 
 ### 4. Shared foundation
@@ -387,6 +393,16 @@ source-first deterministic generation, immediate independent semantic/pedagogic,
 visual proofreading, exact-generation and reviewed bilingual-contract tests, the full checker,
 running-lexicon validation and 360px/480px rendered QA on 2026-08-20. Owner spot-check, approval
 and stage integration remain pending; this checkpoint is not learner-pilot or deployment evidence.
+
+Checkpoint 9 covers **10 paired Freetalking topics and 20 decks, FT 47–56**, across
+`talk-people-and-ties-accessible` and `talk-people-and-ties-full`: nine newly authored topic pairs
+and the preserved FT-49 pair, which remained byte-identical. Both course variants passed
+source-first deterministic generation, immediate independent semantic/pedagogic, bilingual and
+visual proofreading, exact-generation and reviewed bilingual-contract tests, the full checker,
+running-lexicon validation and 360px/480px rendered QA on 2026-08-20. Owner spot-check, approval
+and stage integration remain pending; this checkpoint is not learner-pilot or deployment evidence.
+Both legacy FT-49 files intentionally remain without a `podo:proofread-status` marker and were
+outside the 18-deck status finalization.
 
 ---
 
