@@ -88,65 +88,91 @@ LEVEL_ORDER = {
     "en": ["A1", "A2", "A2-B1", "B1", "B2", "B2-C1", "C1"],
 }
 
-# 카드를 묶는 단위. upstream 의 게이트웨이가 고르게 하는 물건은 다섯 개의 트랙이고,
-# 이 저장소에는 트랙 필드가 없다 — 대신 슬러그 앞머리가 트랙을 그대로 따라간다
-# (course.yaml 의 `# podo-curriculum-public 2-core-patterns` 주석과 하나씩 맞는다).
-# 그래서 앞머리로 묶고, 묶음의 설명은 authoring 카탈로그의 트랙 설명을 그대로 쓴다.
+# 트랙. upstream 의 게이트웨이가 고르게 하는 물건이고, 여기서도 같다 — 한 트랙의
+# 코스들이 그 트랙의 단원이 되고, 그 코스의 과가 그 트랙의 과가 된다. track_template 의
+# 단원 껍데기가 원래 그러라고 있는 것이라 아무것도 접을 필요가 없었다.
 #
-# 모르는 앞머리는 '기타' 로 흘리지 않고 빌드를 세운다. 한 코스가 엉뚱한 묶음에 들어간
-# 것은 페이지를 봐서는 알 수 없지만, 빌드가 멈추면 반드시 보인다.
+# 저장소에 트랙 필드는 없지만 슬러그 앞머리가 트랙을 그대로 따라간다 — course.yaml 의
+# `# podo-curriculum-public 2-core-patterns` 주석과 하나씩 맞는다. 모르는 앞머리는
+# '기타' 로 흘리지 않고 빌드를 세운다.
 FAMILIES = [
     ("trial-", {
-        "kr": ("체험 레슨",
-               "수업을 처음 열어 보는 55분짜리 한 과 코스. 레벨마다 하나씩 있습니다."),
+        "kr": {"slug": "trial", "ko": "체험 레슨", "en": "Trial Lessons",
+               "chip": "Trial", "glyph": "체",
+               "desc": "수업을 처음 열어 보는 55분짜리 한 과 코스. 레벨마다 하나씩 있습니다."},
     }),
     ("hangul-", {
-        "kr": ("한글 떼기",
-               "어떤 한국어 음절이든 소리 내어 읽을 수 있게. 한 레슨에 새 요소는 하나만."),
+        "kr": {"slug": "hangul", "ko": "한글 읽기", "en": "Hangul Reading",
+               "chip": "Hangul", "glyph": "가",
+               "desc": "어떤 한국어 음절이든 소리 내어 읽을 수 있게. 한 레슨에 새 요소는 하나만."},
     }),
     ("core-", {
-        "kr": ("핵심 문법 패턴",
-               "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. 초급부터 고급까지 쌓습니다."),
-        "en": ("영어 핵심 패턴",
-               "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. CEFR 을 따라 쌓습니다."),
+        "kr": {"slug": "core", "ko": "핵심 문법 패턴", "en": "Core Patterns",
+               "chip": "Core", "glyph": "文",
+               "desc": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. 초급부터 고급까지 쌓아 올립니다."},
+        "en": {"slug": "core", "ko": "영어 핵심 패턴", "en": "Core Patterns",
+               "chip": "Core", "glyph": "英",
+               "desc": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. CEFR 을 따라 쌓아 올립니다."},
     }),
     ("ctx-", {
-        "kr": ("상황별 한국어",
-               "드라마·K-POP·여행·반말 — 흥미 있는 소재에서 패턴을 실전으로 추출."),
-        "en": ("상황별 영어",
-               "장면이 정해진 대화 — 흥미 있는 소재에서 패턴을 실전으로 추출."),
+        "kr": {"slug": "contextual", "ko": "상황별 한국어", "en": "Contextual Korean",
+               "chip": "Contextual", "glyph": "劇",
+               "desc": "드라마·K-POP·여행·반말 — 흥미 있는 소재에서 패턴을 실전으로 추출."},
+        "en": {"slug": "contextual", "ko": "상황별 영어", "en": "Contextual English",
+               "chip": "Contextual", "glyph": "場",
+               "desc": "장면이 정해진 대화 — 흥미 있는 소재에서 패턴을 실전으로 추출."},
     }),
     ("talk-", {
-        "kr": ("프리토킹",
-               "새 문법은 없음 — 말하고 싶어지는 주제만. 주제를 계속 추가해 나갑니다."),
-        "en": ("프리토킹",
-               "새 문법은 없음 — 말하고 싶어지는 주제만. 주제를 계속 추가해 나갑니다."),
+        "kr": {"slug": "freetalking", "ko": "중급·고급 프리토킹",
+               "en": "Intermediate & Advanced Freetalking",
+               "chip": "Freetalking", "glyph": "話",
+               "desc": "새 문법은 없음 — 말하고 싶어지는 주제만. 끝이 없는 트랙이라 주제는 계속 늘어납니다."},
+        "en": {"slug": "freetalking", "ko": "프리토킹", "en": "Freetalking",
+               "chip": "Freetalking", "glyph": "話",
+               "desc": "새 문법은 없음 — 말하고 싶어지는 주제만."},
     }),
 ]
 
-# 한 페이지가 한 언어를 맡는다. 56장을 한 장에 쌓으면 "한국어 커리큘럼" 이라는 제목
-# 아래에 영어 코스가 섞여 서고, 사다리의 눈금(6단 vs CEFR)도 한 축에 못 선다.
-# upstream 의 네비게이션이 이미 한국어 / English 두 탭이라, 그 탭을 되살린 것이다.
+# 언어마다 디렉터리 하나. upstream 의 트리를 그대로 따라간다 — korean/catalog.html 과
+# korean/catalog/<track>.html. 그래서 vendor 한 템플릿의 ../site.css · ../catalog.html ·
+# ../${deck} 이 한 줄도 고치지 않고 맞는다.
 LANGUAGES = {
     "kr": {
-        "page": "index.html",
+        "dir": "korean",
         "nav": "한국어",
         "title": "커리큘럼 카탈로그 · PODO 한국어",
         "kicker": "PODO · 한국어 커리큘럼",
+        "h1": "개 과가<br>지금 수업에서 열립니다",
+        "lead": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
+                "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
+                "수업에서 열리는 파일 그대로 볼 수 있습니다.",
+        "tracksH": "학습 트랙",
+        "tracksP": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.",
         "foot": "PODO · 한국어 커리큘럼 — 일본어 학습자를 위한 한국어 코스",
+        "home": {"name": "Korean", "native": "한국어", "nativeLang": "ko", "modifier": "",
+                 "desc": "From first Hangul blocks through core patterns, contextual "
+                         "conversation, and advanced free talking."},
     },
     "en": {
-        "page": "english.html",
+        "dir": "english",
         "nav": "English",
         "title": "커리큘럼 카탈로그 · PODO 영어",
         "kicker": "PODO · 영어 커리큘럼",
+        "h1": "개 과가<br>지금 수업에서 열립니다",
+        "lead": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
+                "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
+                "수업에서 열리는 파일 그대로 볼 수 있습니다.",
+        "tracksH": "학습 트랙",
+        "tracksP": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.",
         "foot": "PODO · 영어 커리큘럼 — 일본어 학습자를 위한 영어 코스",
+        "home": {"name": "English", "native": "英語", "nativeLang": "ja", "modifier": "english",
+                 "desc": "A speaking-first sequence across core patterns, contextual "
+                         "English, and free talking."},
     },
 }
 
 # Upstream's category palette, in upstream's order. The colour is a name tag, not
-# a rank — so it is keyed by family, not by card number: every 핵심 문법 패턴 card
-# is the same colour, and that colour follows the course into its own page.
+# a rank — it is keyed by track, and follows the track into its own page.
 PALETTE = [
     ("#4f7d10", "#f2f7e8"),
     ("#2b5fd9", "#eef2fd"),
@@ -157,7 +183,7 @@ PALETTE = [
 
 DECK_LABEL = {"lecture": "수업용", "prestudy": "예습용"}
 
-UNIT_WORD = "단원"
+UNIT_WORD = "코스"
 LESSON_WORD = "과"
 
 
@@ -204,24 +230,24 @@ def course_level(course: model.Course) -> str:
     return level
 
 
-def course_family(course: model.Course) -> tuple[int, str, str]:
-    """(order, 이름, 설명) of the band this course's card sits under."""
+def course_family(course: model.Course) -> tuple[int, dict]:
+    """(순서, 이 코스가 속한 트랙) — 슬러그 앞머리로 정한다."""
     for i, (prefix, langs) in enumerate(FAMILIES):
         if not course.slug.startswith(prefix):
             continue
         if course.lang not in langs:
             raise model.ValidationError(
                 course.root / "course.yaml",
-                f"'{prefix}' has no {course.lang} name — add one to FAMILIES in "
-                f"tools/build-catalog.py so the card gets a band to sit under",
+                f"'{prefix}' has no {course.lang} track — add one to FAMILIES in "
+                f"tools/build-catalog.py so the course has a track to sit in",
             )
-        return (i, *langs[course.lang])
+        return i, langs[course.lang]
 
     raise model.ValidationError(
         course.root / "course.yaml",
-        f"slug '{course.slug}' starts with none of the known families "
+        f"slug '{course.slug}' starts with none of the known tracks "
         f"({' · '.join(p for p, _ in FAMILIES)}) — add its prefix to FAMILIES in "
-        f"tools/build-catalog.py rather than letting the card go unfiled",
+        f"tools/build-catalog.py rather than letting the course go unfiled",
     )
 
 
@@ -242,7 +268,8 @@ def fill(template: str, data: dict) -> str:
 # course → the shape the templates already know how to draw
 # --------------------------------------------------------------------------- #
 
-def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict) -> dict:
+def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
+                 level: str) -> dict:
     """One row in the lesson list, plus what it shows when opened.
 
     Every field here is read off lesson.yaml. `teaches` is free-form by design
@@ -274,6 +301,9 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict) -
         "sub": pick(lesson.spec.get("title"), "ja"),
         "chips": chips,
         "jamo": bool(letters),
+        # 트랙 페이지는 레벨로 거르고 레벨 태그를 과마다 붙인다. 코스 하나는 레벨
+        # 하나에 놓이므로, 그 코스의 레벨이 곧 그 과의 레벨이다.
+        "level": level,
         "decks": deck_hrefs.get(lesson.slug, []),
     }
     if lesson.spec.get("outcome"):
@@ -282,39 +312,71 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict) -
     return entry
 
 
-def course_entry(course: model.Course, no: int, decks: dict) -> dict:
-    """One card on the gateway, and the head of that course's own page."""
+def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict:
+    """한 코스 = 트랙 안의 단원 하나.
+
+    껍데기 값(label · title · subtitle)이 단원 머리글에 그대로 뜬다. 제목에서 트랙
+    이름을 떼는 것은 머리글이 "핵심 문법 패턴 · 초급 · 1" 처럼 트랙 이름을 한 번 더
+    말하지 않게 하려는 것뿐이다 — 뗄 수 없으면 통째로 쓴다."""
     spec = course.spec
-    order, family, _ = course_family(course)
-    accent, tint = PALETTE[order % len(PALETTE)]
     level = course_level(course)
-    ready = sum(len(v) for v in decks.values())
+    title = pick(spec.get("title"), "ko", "ja", "en")
+    prefix = f"{family['ko']} · "
+    lessons = [
+        lesson_entry(course, l, decks, level)
+        for l in sorted(course.lessons, key=lambda l: l.week)
+    ]
+    return {
+        "label": f"{no}{UNIT_WORD}",
+        "title": title[len(prefix):] if title.startswith(prefix) else title,
+        "subtitle": pick(spec.get("title"), "ja", "en"),
+        "levels": [level],
+        "level": level,
+        "slug": course.slug,
+        "lessons": lessons,
+    }
+
+
+def track_entry(lang: str, order: int, no: int, family: dict,
+                units: list[dict], statuses: list[str]) -> dict:
+    """트랙 카드 하나, 그리고 그 트랙 페이지의 머리."""
+    accent, tint = PALETTE[order % len(PALETTE)]
+    lessons = [l for u in units for l in u["lessons"]]
+    ready = sum(len(l["decks"]) for l in lessons)
+
+    dist: dict[str, int] = {}
+    for u in units:
+        dist[u["level"]] = dist.get(u["level"], 0) + len(u["lessons"])
+    span = [lv for lv in LEVEL_ORDER[lang] if lv in dist]
 
     return {
-        "id": f"{course.lang}-{course.slug}",
+        "id": family["slug"],
         "no": no,
-        "ko": pick(spec.get("title"), "ko", "ja", "en"),
-        "en": pick(spec.get("title"), "ja", "en"),
-        "glyph": (pick(spec.get("title"), "ko", "ja") or "·")[0],
-        # 모든 과가 두 교재를 갖췄으면 완성, 아니면 계속 추가 중이다. upstream 의
-        # "open" 이 그 뜻이라 표시(계속 추가)도 그대로 따라온다.
-        "status": "live" if not course.incomplete else "open",
+        "ko": family["ko"],
+        "en": family["en"],
+        "glyph": family["glyph"],
+        # 모든 과가 두 교재를 갖췄으면 완성, 아니면 계속 추가 중이다.
+        "status": "open" if "open" in statuses else "live",
         "accent": accent,
         "tint": tint,
         "unitWord": UNIT_WORD,
         "lessonWord": LESSON_WORD,
-        "desc": pick(spec.get("description"), "ja", "ko"),
+        "desc": family["desc"],
+        "note": "",
         "stats": [
-            {"k": LESSON_WORD, "v": len(course.lessons)},
+            {"k": LESSON_WORD, "v": len(lessons)},
+            {"k": UNIT_WORD, "v": len(units)},
             {"k": "교재", "v": ready},
-            {"k": "분", "v": spec["lessonTime"]},
         ],
-        "family": family,
-        "dist": {level: len(course.lessons)},
-        "span": [level],
-        "total": len(course.lessons),
-        "solo": True,
-        "source": f"courses/{course.lang}/{course.slug}/course.yaml",
+        "groups": units,
+        "dist": dist,
+        "span": span,
+        "total": len(lessons),
+        "unitCount": len(units),
+        "decks": [
+            {"n": l["n"], "title": l["title"], "href": d["href"], "level": d["level"]}
+            for l in lessons for d in l["decks"]
+        ],
     }
 
 
@@ -322,21 +384,22 @@ def course_entry(course: model.Course, no: int, decks: dict) -> dict:
 # building
 # --------------------------------------------------------------------------- #
 
-def copy_decks(out: pathlib.Path, course: model.Course) -> dict:
+def copy_decks(base: pathlib.Path, course: model.Course) -> dict:
     """Copy every deck this course has, and hand back where each one landed.
 
-    The deck directory travels whole — index.html, deck.css and every image it
-    names, all still siblings, all still relative."""
+    Paths are relative to the language directory, because that is what the
+    vendored track template expects: it writes `../${deck.href}` from
+    korean/catalog/<track>.html."""
     hrefs: dict[str, list[dict]] = {}
     for lesson in course.lessons:
         for slot in ("lecture", "prestudy"):
             deck = lesson.decks.get(slot)
             if deck is None or not deck.exists:
                 continue
-            deck_rel = f"decks/{course.lang}/{course.slug}/{lesson.slug}/{slot}"
-            shutil.copytree(deck.entry.parent, out / deck_rel)
+            deck_rel = f"decks/{course.slug}/{lesson.slug}/{slot}"
+            shutil.copytree(deck.entry.parent, base / deck_rel)
             hrefs.setdefault(lesson.slug, []).append({
-                "href": f"view/{course.lang}/{course.slug}/{lesson.slug}/{slot}.html",
+                "href": f"view/{course.slug}/{lesson.slug}/{slot}.html",
                 "level": DECK_LABEL.get(slot, slot),
                 "slot": slot,
                 "entry": f"{deck_rel}/{deck.entry.name}",
@@ -361,12 +424,14 @@ def level_ramp(axis: list[str]) -> dict[str, int]:
             for i, lv in enumerate(axis)}
 
 
-def nav_links(built: list[str], lang: str, up: str = "") -> list[dict]:
-    """한국어 / English 탭. 만들지 않은 언어는 탭도 없다 — 코스가 하나도 열리지 않은
-    언어의 페이지는 쓰이지 않고, 탭만 남으면 404 로 간다."""
+def nav_links(built: list[str], lang: str | None, up: str) -> list[dict]:
+    """한국어 / English 탭. `up` 은 이 페이지에서 사이트 뿌리로 올라가는 접두사다.
+
+    만들지 않은 언어는 탭도 없다 — 코스가 하나도 열리지 않은 언어의 페이지는 쓰이지
+    않고, 탭만 남으면 404 로 간다."""
     links = [{
         "label": LANGUAGES[code]["nav"],
-        "href": f"{up}{LANGUAGES[code]['page']}",
+        "href": f"{up}{LANGUAGES[code]['dir']}/catalog.html",
         "current": code == lang,
     } for code in LANGUAGES if code in built]
     links.append({"label": "Repository", "href": REPO_URL, "optional": True})
@@ -375,121 +440,110 @@ def nav_links(built: list[str], lang: str, up: str = "") -> list[dict]:
 
 def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
                    built: list[str]) -> tuple[list[dict], list[dict], dict]:
-    """한 언어의 페이지 하나와, 그 안의 코스 페이지·뷰어를 전부 쓴다."""
-    # 카드·사다리·탭이 모두 같은 순서를 따르도록 한 번만 정한다. 묶음이 첫째 키다 —
-    # 카드가 묶음별 띠 아래로 들어가므로, 순서가 묶음을 가로지르면 띠가 쪼개진다.
-    # 그 안에서는 레벨이 곧 코스의 자리라 CLASS_LEVEL 순이 그대로 목차 순서가 된다.
-    courses = sorted(courses, key=lambda c: (course_family(c)[0],
-                                             float(c.spec["classLevel"]), c.slug))
+    """한 언어의 카탈로그 한 장과, 그 아래 트랙 페이지·뷰어를 전부 쓴다."""
+    cfg = LANGUAGES[lang]
+    base = out / cfg["dir"]
+    (base / "catalog").mkdir(parents=True)
 
-    entries, catalog_json, total_lessons, total_decks = [], [], 0, 0
+    families: dict[int, tuple[dict, list[model.Course]]] = {}
+    for course in courses:
+        order, family = course_family(course)
+        families.setdefault(order, (family, []))[1].append(course)
 
-    for no, course in enumerate(courses, start=1):
-        decks = copy_decks(out, course)
-        entry = course_entry(course, no, decks)
-        lessons = [
-            lesson_entry(course, l, decks)
-            for l in sorted(course.lessons, key=lambda l: l.week)
-        ]
+    tracks, catalog_json = [], []
 
-        # 단원이 없으므로 묶음은 하나뿐이고, 템플릿은 solo 를 보고 그 껍데기를 그리지
-        # 않는다. 머리글 값은 껍데기가 살아날 때를 위해 그대로 채워 둔다.
-        entry["groups"] = [{
-            "label": f"{len(lessons)}{LESSON_WORD}",
-            "title": entry["ko"],
-            "subtitle": entry["en"],
-            "levels": entry["span"],
-            "lessons": lessons,
-        }]
-        entry["decks"] = [
-            {"n": l["n"], "title": l["title"], "href": d["href"], "level": d["level"]}
-            for l in lessons for d in l["decks"]
-        ]
-        entries.append(entry)
+    for no, order in enumerate(sorted(families), start=1):
+        family, in_track = families[order]
+        # 트랙 안에서는 레벨이 곧 코스의 자리라 CLASS_LEVEL 순이 그대로 목차 순서가 된다.
+        in_track.sort(key=lambda c: (float(c.spec["classLevel"]), c.slug))
 
-        total_lessons += len(lessons)
-        total_decks += len(entry["decks"])
+        units, statuses = [], []
+        for i, course in enumerate(in_track, start=1):
+            decks = copy_decks(base, course)
+            unit = unit_entry(course, i, decks, family)
+            units.append(unit)
+            statuses.append("open" if course.incomplete else "live")
 
-        for lesson in sorted(course.lessons, key=lambda l: l.week):
-            for deck in decks.get(lesson.slug, []):
-                write_viewer(out, course, lesson, deck, entry, lang, built)
+            catalog_json.append({
+                "lang": course.lang,
+                "slug": course.slug,
+                "title": course.spec.get("title", {}),
+                "description": course.spec.get("description", {}),
+                "curriculumType": course.spec["curriculumType"],
+                "classLevel": course.spec["classLevel"],
+                "lessonTime": course.spec["lessonTime"],
+                "countryCode": course.spec.get("countryCode"),
+                "level": unit["level"],
+                "track": family["slug"],
+                "page": f"{cfg['dir']}/catalog/{family['slug']}.html",
+                "lessons": [
+                    {"week": l["n"], "title": t.spec.get("title", {}), "slug": t.slug,
+                     "decks": {d["slot"]: d for d in decks.get(t.slug, [])}}
+                    for l, t in zip(unit["lessons"],
+                                    sorted(course.lessons, key=lambda x: x.week))
+                ],
+            })
 
-        catalog_json.append({
-            "lang": course.lang,
-            "slug": course.slug,
-            "title": course.spec.get("title", {}),
-            "description": course.spec.get("description", {}),
-            "curriculumType": course.spec["curriculumType"],
-            "classLevel": course.spec["classLevel"],
-            "lessonTime": course.spec["lessonTime"],
-            "countryCode": course.spec.get("countryCode"),
-            "level": entry["span"][0],
-            "family": entry["family"],
-            "page": f"catalog/{entry['id']}.html",
-            "lessons": [
-                {"week": l["n"], "title": t.spec.get("title", {}), "slug": t.slug,
-                 "decks": {d["slot"]: d for d in decks.get(t.slug, [])}}
-                for l, t in zip(lessons, sorted(course.lessons, key=lambda x: x.week))
-            ],
-        })
+            for lesson in sorted(course.lessons, key=lambda l: l.week):
+                for deck in decks.get(lesson.slug, []):
+                    write_viewer(out, base, course, lesson, deck,
+                                 family, lang, built, *PALETTE[order % len(PALETTE)])
 
-    # 사다리의 축은 이 페이지의 코스가 실제로 쓰는 눈금만 세운다. 한국어는 여섯 단을
-    # 다 쓰지만, 영어는 CEFR 일곱 칸 중 세 칸만 쓰고 있어서 빈 칸 넷을 그릴 이유가 없다.
-    used = {lv for entry in entries for lv in entry["span"]}
+        tracks.append(track_entry(lang, order, no, family, units, statuses))
+
+    # 사다리의 축은 이 페이지의 트랙이 실제로 쓰는 눈금만 세운다.
+    used = {lv for tr in tracks for lv in tr["span"]}
     axis = [lv for lv in LEVEL_ORDER[lang] if lv in used]
     ramp = level_ramp(axis)
 
-    # 카드를 묶음별 띠 아래로 넣는다. 코스가 하나도 없는 묶음은 띠도 서지 않는다.
-    seen = {entry["family"] for entry in entries}
-    families = [
-        {"name": name, "desc": desc}
-        for _, langs in FAMILIES
-        if lang in langs
-        for name, desc in [langs[lang]]
-        if name in seen
-    ]
+    nav = [{"id": tr["id"], "no": tr["no"], "ko": tr["ko"], "accent": tr["accent"]}
+           for tr in tracks]
 
-    cfg = LANGUAGES[lang]
-    nav = [{"id": e["id"], "no": e["no"], "ko": e["ko"], "accent": e["accent"]}
-           for e in entries]
-    page = {
-        "title": cfg["title"],
-        "kicker": cfg["kicker"],
-        "foot": cfg["foot"],
-        "home": cfg["page"],
-        "nav": nav_links(built, lang),
-    }
+    lessons = sum(tr["total"] for tr in tracks)
+    decks = sum(len(tr["decks"]) for tr in tracks)
+    units = sum(tr["unitCount"] for tr in tracks)
 
-    (out / cfg["page"]).write_text(fill("gateway.html", {
+    def page(up: str) -> dict:
+        return {
+            "title": cfg["title"],
+            "kicker": cfg["kicker"],
+            "lead": cfg["lead"],
+            "h1": cfg["h1"],
+            "tracksH": f"{len(tracks)}개의 {cfg['tracksH']}",
+            "tracksP": cfg["tracksP"],
+            "lfoot": "레벨은 <code>course.yaml</code> 의 <code>#&nbsp;podo:level:</code> 줄을 "
+                     "그대로 옮긴 것입니다 — 덱의 <code>&lt;meta name=\"podo:level\"&gt;</code> 와 "
+                     "같은 값이고, 코스 하나는 레벨 하나에 놓입니다.",
+            "foot": cfg["foot"],
+            "stats": [[len(tracks), "학습 트랙"], [units, UNIT_WORD], [decks, "레슨 교재"]],
+            "home": f"{up}index.html",
+            "nav": nav_links(built, lang, up),
+        }
+
+    (base / "catalog.html").write_text(fill("gateway.html", {
         "levels": axis,
         "ramp": ramp,
-        "page": page,
-        "families": families,
-        "totals": {
-            "tracks": len(entries),
-            "lessons": total_lessons,
-            "units": len(entries),
-            "patterns": 0,
-            "decks": total_decks,
-        },
-        "tracks": entries,
+        "page": page("../"),
+        "totals": {"tracks": len(tracks), "lessons": lessons,
+                   "units": units, "patterns": 0, "decks": decks},
+        "tracks": tracks,
     }), encoding="utf-8")
 
-    for entry in entries:
-        (out / "catalog" / f"{entry['id']}.html").write_text(
+    for tr in tracks:
+        (base / "catalog" / f"{tr['id']}.html").write_text(
             fill("course.html", {
                 "levels": axis,
                 "ramp": ramp,
                 "nav": nav,
-                "track": entry,
-                "page": {**page, "home": f"../{cfg['page']}",
-                         "nav": nav_links(built, lang, up="../")},
+                "track": tr,
+                "page": page("../../"),
             }),
             encoding="utf-8",
         )
 
-    return entries, catalog_json, {"courses": len(entries), "lessons": total_lessons,
-                                   "decks": total_decks}
+    summary = {"tracks": len(tracks), "courses": units,
+               "lessons": lessons, "decks": decks}
+    return tracks, catalog_json, summary
 
 
 def build(out: pathlib.Path) -> dict:
@@ -499,9 +553,9 @@ def build(out: pathlib.Path) -> dict:
     if unknown:
         raise model.ValidationError(
             model.COURSES,
-            f"no catalog page is defined for {', '.join(unknown)} — add it to "
-            f"LANGUAGES in tools/build-catalog.py, or those courses ship "
-            f"nowhere a reader can see them",
+            f"no catalog is defined for {', '.join(unknown)} — add it to LANGUAGES "
+            f"in tools/build-catalog.py, or those courses ship nowhere a reader "
+            f"can see them",
         )
     # 코스가 하나도 열리지 않은 언어는 페이지도 탭도 만들지 않는다.
     built = [code for code in LANGUAGES if any(c.lang == code for c in courses)]
@@ -511,15 +565,36 @@ def build(out: pathlib.Path) -> dict:
     out.mkdir(parents=True)
     shutil.copy2(TEMPLATES / "site.css", out / "site.css")
     shutil.copy2(TEMPLATES / "favicon.svg", out / "favicon.svg")
-    (out / "catalog").mkdir()
 
-    catalog_json, counts = [], {"courses": 0, "lessons": 0, "decks": 0}
+    catalog_json, cards = [], []
+    counts = {"tracks": 0, "courses": 0, "lessons": 0, "decks": 0}
+
     for lang in built:
-        _, rows, sub = build_language(
+        tracks, rows, sub = build_language(
             out, lang, [c for c in courses if c.lang == lang], built)
         catalog_json += rows
         for k in counts:
             counts[k] += sub[k]
+
+        cfg = LANGUAGES[lang]
+        cards.append({
+            **cfg["home"],
+            "href": f"{cfg['dir']}/catalog.html",
+            "state": "계속 추가 중" if any(t["status"] == "open" for t in tracks) else "운영 중",
+            "counts": f"{sub['tracks']}개 트랙 · {sub['courses']}개 코스 · "
+                      f"{sub['lessons']}과",
+            "tracks": [{"label": next(f[lang]["chip"] for _, f in FAMILIES
+                                      if lang in f and f[lang]["slug"] == t["id"]),
+                        "accent": t["accent"]} for t in tracks],
+        })
+
+    (out / "index.html").write_text(fill("home.html", {
+        "languages": cards,
+        "nav": [{"label": LANGUAGES[c]["nav"],
+                 "href": f"{LANGUAGES[c]['dir']}/catalog.html"} for c in built]
+               + [{"label": "Repository", "href": REPO_URL, "optional": True}],
+        "foot": "이 페이지는 생성물입니다 — courses/ 의 enabled: true 인 코스만 실립니다.",
+    }), encoding="utf-8")
 
     (out / "catalog.json").write_text(
         json.dumps({"counts": counts, "courses": catalog_json},
@@ -634,16 +709,16 @@ VIEWER = """<!DOCTYPE html>
 """
 
 
-def write_viewer(out, course, lesson, deck, entry, lang, built) -> None:
-    rel = pathlib.Path(deck["href"])
-    path = out / rel
+def write_viewer(out, base, course, lesson, deck, family, lang, built,
+                 accent, tint) -> None:
+    path = base / deck["href"]
     path.parent.mkdir(parents=True, exist_ok=True)
-    depth = len(rel.parts) - 1
-    up = "../" * depth
-    links = nav_links(built, lang, up=up)
+    up = os.path.relpath(out, path.parent) + "/"
+    links = nav_links(built, lang, up)
+    track_page = base / "catalog" / f"{family['slug']}.html"
     path.write_text(VIEWER.format(
         up=up,
-        home=e(f"{up}{LANGUAGES[lang]['page']}"),
+        home=e(f"{up}index.html"),
         nav="\n".join(
             '      <a{cls} href="{href}"{cur}>{label}</a>'.format(
                 cls=' class="podo-nav__optional"' if n.get("optional") else "",
@@ -652,15 +727,15 @@ def write_viewer(out, course, lesson, deck, entry, lang, built) -> None:
                 label=e(n["label"]),
             ) for n in links
         ),
-        course=e(entry["ko"]),
-        course_href=e(os.path.relpath(out / "catalog" / f"{entry['id']}.html", path.parent)),
+        course=e(family["ko"]),
+        course_href=e(os.path.relpath(track_page, path.parent)),
         week=lesson.week,
         title=e(pick(lesson.spec.get("title"), "ko", "ja")),
         sub=e(pick(lesson.spec.get("title"), "ja")),
         slot=e(deck["level"]),
-        accent=entry["accent"],
-        tint=entry["tint"],
-        deck=e(os.path.relpath(out / deck["entry"], path.parent)),
+        accent=accent,
+        tint=tint,
+        deck=e(os.path.relpath(base / deck["entry"], path.parent)),
         source=e(f"{SOURCE_URL}/{deck['source']}"),
     ), encoding="utf-8")
 

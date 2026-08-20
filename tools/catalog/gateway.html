@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<!-- Design shared with the authoring catalog:
-     tools/authoring/kr/gateway_template.html renders the whole authored
-     curriculum from the track TOCs; this renders what actually deploys, from
-     courses/. Keeping the two in step is what makes them read as one product,
-     so a change to either should usually be made to both.
+<!-- VENDORED from tools/authoring/kr/gateway_template.html — byte-identical to it
+     except for the edits listed here, so a change upstream re-applies as a diff.
 
-     Two differences are this file's alone, because the two draw different things.
-     Upstream draws five tracks, so it needs neither: (1) a track there is a course
-     here and a course has no units, so `solo` collapses the unit shell; (2) there
-     are 50+ courses rather than 5, so the cards sit in per-family bands instead of
-     one grid, and one page is drawn per language instead of one for all of them.
-     Filled by tools/build-catalog.py — do not edit site/index.html by hand. -->
+     Upstream renders the whole authored curriculum from the track TOCs; this
+     renders what actually deploys, from courses/. The page is the same page.
+
+     Edits:
+       1. Every string that names a language is read from DATA.page instead of
+          being written in the markup, because one template now draws both
+          korean/catalog.html and english/catalog.html.
+       2. The level ramp is keyed by position on the axis (--lv-1 … --lv-6 plus
+          DATA.ramp) rather than by rung name, because English is graded in CEFR
+          and a name-keyed lookup left those segments with no colour at all.
+
+     Filled by tools/build-catalog.py — do not edit the built file by hand. -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -18,9 +21,9 @@
 <meta name="google" content="notranslate">
 <meta name="theme-color" content="#ffffff">
 <title>커리큘럼 카탈로그 · PODO 한국어</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="../site.css">
 <style>
   @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
@@ -44,11 +47,9 @@
     --radius: 4px;
     --radius-sm: 2px;
 
-    /* 레벨 사다리의 초록 램프. 이름이 아니라 자리로 매긴다 — 눈금 이름은 언어마다
-       다르지만(한국어 6단, 영어 CEFR) 옅은 것에서 짙은 것으로 오른다는 규칙은 같다.
-       어느 이름이 몇 번을 쓰는지는 tools/build-catalog.py 가 축 위의 자리로 정해
-       DATA.ramp 에 실어 보낸다. 이름으로 찾던 시절에는 표에 없는 눈금이 조용히
-       투명해졌다. */
+    /* 레벨 램프. 이름이 아니라 축 위의 자리로 매긴다 — 눈금 이름은 언어마다 다르지만
+       (한국어 6단, 영어 CEFR) 옅은 것에서 짙은 것으로 오른다는 규칙은 같다. 어느 이름이
+       몇 번을 쓰는지는 build-catalog.py 가 DATA.ramp 에 실어 보낸다. */
     --lv-1: #eef8de;
     --lv-2: #d7f0b4;
     --lv-3: #b1e07c;
@@ -189,7 +190,7 @@
 <a class="podo-skip" href="#main">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" id="brand" href="index.html"><img src="favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
     <nav class="podo-nav" id="nav" aria-label="커리큘럼 탐색"></nav>
   </div>
 </header>
@@ -198,24 +199,26 @@
   <header class="hero">
     <span class="kicker" id="kicker"></span>
     <h1 id="h1"></h1>
-    <p class="lead">지금 수업에서 실제로 열리는 교재입니다. 코스를 하나 골라 들어가면 그 안의 모든 과와,
-      각 과의 수업용 · 예습용 교재를 수업에서 열리는 파일 그대로 볼 수 있습니다.</p>
+    <p class="lead" id="lead"></p>
     <div class="stats" id="stats"></div>
   </header>
 
-  <div id="families"></div>
+  <div class="band">
+    <h2 id="tracks-h"></h2>
+    <p id="tracks-p"></p>
+  </div>
+  <div class="cards" id="cards"></div>
 
   <div class="band">
     <h2>레벨 사다리</h2>
-    <p>각 코스가 어느 레벨에 놓이는지, 그 레벨에 몇 과가 있는지.</p>
+    <p>각 트랙이 어느 레벨 구간을 덮는지, 그 구간에 몇 과가 놓여 있는지.</p>
   </div>
   <div class="ladder">
     <div class="ladder-grid">
       <div class="lhead"><div></div><div class="laxis" id="ladder-axis"></div></div>
       <div id="ladder"></div>
     </div>
-    <p class="lfoot">레벨은 <code>course.yaml</code> 의 <code>#&nbsp;podo:level:</code> 줄을 그대로 옮긴 것입니다 —
-      덱의 <code>&lt;meta name="podo:level"&gt;</code> 와 같은 값이고, 코스 하나는 레벨 하나에 놓입니다.</p>
+    <p class="lfoot" id="lfoot"></p>
   </div>
 
   <div class="band">
@@ -239,36 +242,35 @@ const LEVELS = DATA.levels;
 /* 짙은 두 칸 위에서는 글씨가 흰색이어야 읽힌다. */
 const isDark = lv => DATA.ramp[lv] >= 5;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
 
 /* ---------- 언어마다 다른 자리 ----------
-   한 페이지가 한 언어를 맡으므로, 그 언어의 이름이 들어가는 자리는 전부 데이터에서
-   온다 — 제목, 어깨글, 꼬리말, 그리고 한국어 / English 탭. */
+   한 템플릿이 korean/ 과 english/ 를 함께 그린다. 언어 이름이 들어가는 자리는 전부
+   DATA.page 에서 온다. */
 {
   const P = DATA.page;
-  document.title = P.title;
-  document.getElementById("kicker").textContent = P.kicker;
-  document.getElementById("foot").textContent = P.foot;
+  if (P.title) document.title = P.title;
   document.getElementById("brand").href = P.home;
   document.getElementById("nav").innerHTML = P.nav.map(n =>
     `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}"${
       n.current ? ` aria-current="page"` : ""}>${esc(n.label)}</a>`).join("");
 }
 
-document.getElementById("h1").innerHTML =
-  `<b>${DATA.totals.lessons}</b>개 과가<br>지금 수업에서 열립니다`;
+const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
 
-document.getElementById("stats").innerHTML = [
-  [DATA.totals.tracks, "코스"],
-  [DATA.totals.lessons, "과"],
-  [DATA.totals.decks, "레슨 교재"],
-].map(([v, u]) => `<div class="stat"><b>${v}</b><span>${esc(u)}</span></div>`).join("");
+{
+  const P = DATA.page;
+  document.getElementById("kicker").textContent = P.kicker;
+  document.getElementById("lead").textContent = P.lead;
+  document.getElementById("tracks-h").textContent = P.tracksH;
+  document.getElementById("tracks-p").textContent = P.tracksP;
+  document.getElementById("lfoot").innerHTML = P.lfoot;
+  document.getElementById("foot").textContent = P.foot;
+  document.getElementById("h1").innerHTML = `<b>${DATA.totals.lessons}</b>${P.h1}`;
+  document.getElementById("stats").innerHTML = P.stats
+    .map(([v, u]) => `<div class="stat"><b>${v}</b><span>${esc(u)}</span></div>`).join("");
+}
 
-/* ---------- 카드 ----------
-   코스가 50 장을 넘어가면 한 판에 늘어놓은 격자는 목록이 아니라 벽이 된다. 그래서
-   묶음마다 띠를 하나 세우고 그 아래에 그 묶음의 카드만 깐다 — 띠와 격자는 이 페이지가
-   이미 쓰던 물건이라, 새 부품이 아니라 같은 부품을 한 번 더 쓰는 것이다. */
-const cardHTML = t => {
+document.getElementById("cards").innerHTML = DATA.tracks.map(t => {
   const span = t.span.length ? (t.span.length === 1 ? t.span[0] : `${t.span[0]} — ${t.span[t.span.length - 1]}`) : "전 레벨";
   const dot = t.span.length ? t.span[0] : "";
   const flag = t.status === "open" ? "계속 추가" : "";
@@ -286,15 +288,7 @@ const cardHTML = t => {
       <div class="card-lv">${dot ? `<i style="background:${lvColor(dot)}"></i>` : ""}${esc(span)}</div>
     </div>
   </a>`;
-};
-
-document.getElementById("families").innerHTML = DATA.families.map(f => `
-  <div class="band">
-    <h2>${esc(f.name)}</h2>
-    <p>${esc(f.desc)}</p>
-  </div>
-  <div class="cards">${DATA.tracks.filter(t => t.family === f.name).map(cardHTML).join("")}</div>
-`).join("");
+}).join("");
 
 /* ---------- 완성된 덱 ----------
    덱이 있는 과만 여기 실린다 — 목록은 build_catalog.py 가 디스크에서 찾은 lesson.html 이
@@ -306,8 +300,7 @@ document.getElementById("families").innerHTML = DATA.families.map(f => `
   document.getElementById("decks").innerHTML = made.length ? made.map(t => `<div class="dtrack">
     <a class="dtrack-h" href="catalog/${esc(t.id)}.html"><i style="background:${t.accent}"></i>${esc(t.ko)}<em>${t.decks.length}</em></a>
     <div class="dlist">${t.decks.map(d => `<a href="${esc(d.href)}" target="_blank" rel="noopener"
-      title="${esc(d.title)}${d.level ? ` · ${esc(d.level)}` : ""}"><em>${String(d.n).padStart(2, "0")}</em>${esc(d.title)}${
-      d.level ? `<span class="ext">${esc(d.level)}</span>` : ""}<span class="ext">↗</span></a>`).join("")}</div>
+      title="${esc(d.title)}"><em>${String(d.n).padStart(2, "0")}</em>${esc(d.title)}<span class="ext">↗</span></a>`).join("")}</div>
   </div>`).join("") : `<p class="dnone">아직 나와 있는 덱이 없습니다.</p>`;
 }
 
