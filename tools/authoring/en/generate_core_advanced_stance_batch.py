@@ -201,16 +201,16 @@ LESSONS = {
         ko="그렇게 볼 수도 있겠지만", ja="そう見ることもできますが",
         goal=("Acknowledge an interpretation while making your reservation audible.", "一つの解釈を認めつつ、自分が引っかかる点もはっきり伝えましょう。"),
         p1=rows(
-            ("{t}You could see it as{/t} cautious, {t}but{/t} I think it's too slow.", "慎重だと{t}見ることもできますが{/t}、私には遅すぎると思います。", "You could see it|as cautious,|but I think|it's too slow."),
-            ("{t}You could see it as{/t} efficient, {t}but{/t} I think it's too rigid.", "効率的だと{t}見ることもできますが{/t}、私には厳格すぎると思います。", "You could see it|as efficient,|but I think|it's too rigid."),
-            ("{t}You could see it as{/t} flexible, {t}but{/t} I think it's unclear.", "柔軟だと{t}見ることもできますが{/t}、私には不明確だと思います。", "You could see it|as flexible,|but I think|it's unclear."),
-            ("{t}You could see it as{/t} simple, {t}but{/t} I think it's incomplete.", "単純だと{t}見ることもできますが{/t}、私には不十分だと思います。", "You could see it|as simple,|but I think|it's incomplete."),
+            ("{t}You could see it as{/t} cautious, {t}but{/t} I think it's too slow.", "慎重だと{t}見ることもできます{/t}{t}が{/t}、私には遅すぎると思います。", "You could see it|as cautious,|but I think|it's too slow."),
+            ("{t}You could see it as{/t} efficient, {t}but{/t} I think it's too rigid.", "効率的だと{t}見ることもできます{/t}{t}が{/t}、私には厳格すぎると思います。", "You could see it|as efficient,|but I think|it's too rigid."),
+            ("{t}You could see it as{/t} flexible, {t}but{/t} I think it's unclear.", "柔軟だと{t}見ることもできます{/t}{t}が{/t}、私には不明確だと思います。", "You could see it|as flexible,|but I think|it's unclear."),
+            ("{t}You could see it as{/t} simple, {t}but{/t} I think it's incomplete.", "単純だと{t}見ることもできます{/t}{t}が{/t}、私には不十分だと思います。", "You could see it|as simple,|but I think|it's incomplete."),
         ),
         p2=rows(
-            ("{t}I can see why you'd call it{/t} a success, {t}though{/t}.", "成功と{t}呼ぶ理由は分かりますけどね{/t}。", "I can see why|you'd call it|a success,|though."),
-            ("{t}I can see why you'd call it{/t} progress, {t}though{/t}.", "進歩と{t}呼ぶ理由は分かりますけどね{/t}。", "I can see why|you'd call it|progress,|though."),
-            ("{t}I can see why you'd call it{/t} cautious, {t}though{/t}.", "慎重と{t}呼ぶ理由は分かりますけどね{/t}。", "I can see why|you'd call it|cautious,|though."),
-            ("{t}I can see why you'd call it{/t} fair, {t}though{/t}.", "公平と{t}呼ぶ理由は分かりますけどね{/t}。", "I can see why|you'd call it|fair,|though."),
+            ("{t}I can see why you'd call it{/t} a success, {t}though{/t}.", "成功と{t}呼ぶ理由は分かります{/t}{t}けどね{/t}。", "I can see why|you'd call it|a success,|though."),
+            ("{t}I can see why you'd call it{/t} progress, {t}though{/t}.", "進歩と{t}呼ぶ理由は分かります{/t}{t}けどね{/t}。", "I can see why|you'd call it|progress,|though."),
+            ("{t}I can see why you'd call it{/t} cautious, {t}though{/t}.", "慎重と{t}呼ぶ理由は分かります{/t}{t}けどね{/t}。", "I can see why|you'd call it|cautious,|though."),
+            ("{t}I can see why you'd call it{/t} fair, {t}though{/t}.", "公平と{t}呼ぶ理由は分かります{/t}{t}けどね{/t}。", "I can see why|you'd call it|fair,|though."),
         ),
         rules=(("Use see it as before a description; as is required in this frame.", "説明を続けるときは see it as を使い、この形では as が必要です。"),
                ("Use call it directly before the description, then final though to signal a reservation.", "call it の直後に説明を置き、文末の though で少し距離を示します。")),
@@ -268,10 +268,10 @@ LESSONS = {
             ("{t}I'd rather not go into{/t} what happened.", "何があったかには{t}触れないでおきます{/t}。", "I'd rather not|go into|what happened."),
         ),
         p2=rows(
-            ("{t}Can we leave{/t} this {t}for now{/t}?", "これは{t}今はいったん置いておけますか{/t}？", "Can we|leave|this|for now?"),
-            ("{t}Can we leave{/t} that topic {t}for now{/t}?", "その話題は{t}今はいったん置いておけますか{/t}？", "Can we|leave|that topic|for now?"),
-            ("{t}Can we leave{/t} the decision {t}for now{/t}?", "その判断は{t}今はいったん置いておけますか{/t}？", "Can we|leave|the decision|for now?"),
-            ("{t}Can we leave{/t} the next step {t}for now{/t}?", "次の段階は{t}今はいったん置いておけますか{/t}？", "Can we|leave|the next step|for now?"),
+            ("{t}Can we leave{/t} this {t}for now{/t}?", "これは{t}今はいったん{/t}{t}置いておけますか{/t}？", "Can we|leave|this|for now?"),
+            ("{t}Can we leave{/t} that topic {t}for now{/t}?", "その話題は{t}今はいったん{/t}{t}置いておけますか{/t}？", "Can we|leave|that topic|for now?"),
+            ("{t}Can we leave{/t} the decision {t}for now{/t}?", "その判断は{t}今はいったん{/t}{t}置いておけますか{/t}？", "Can we|leave|the decision|for now?"),
+            ("{t}Can we leave{/t} the next step {t}for now{/t}?", "次の段階は{t}今はいったん{/t}{t}置いておけますか{/t}？", "Can we|leave|the next step|for now?"),
         ),
         rules=(("After would rather not, use the plain verb without to: rather not go.", "would rather not のあとは to を入れず、動詞の原形を使って rather not go とします。"),
                ("Put the topic between leave and for now to postpone that topic, not reject it forever.", "話題を leave と for now の間に置き、永久に拒否するのではなく今だけ保留します。")),
@@ -282,10 +282,10 @@ LESSONS = {
         ko="그렇게 단순한 문제는 아니에요", ja="それほど単純ではありません",
         goal=("Reject an oversimplified framing and replace it with the question that matters.", "単純化された枠組みを退け、本当に重要な問いに置き換えましょう。"),
         p1=rows(
-            ("{t}It's not that{/t} simple, {t}though{/t}.", "ただ、{t}それほど単純ではありません{/t}。", "It's|not that simple,|though."),
-            ("{t}It's not that{/t} clear, {t}though{/t}.", "ただ、{t}それほど明確ではありません{/t}。", "It's|not that clear,|though."),
-            ("{t}It's not that{/t} easy, {t}though{/t}.", "ただ、{t}それほど簡単ではありません{/t}。", "It's|not that easy,|though."),
-            ("{t}It's not that{/t} straightforward, {t}though{/t}.", "ただ、{t}それほど単純明快ではありません{/t}。", "It's|not that straightforward,|though."),
+            ("{t}It's not that{/t} simple, {t}though{/t}.", "{t}ただ{/t}、{t}それほど単純ではありません{/t}。", "It's|not that simple,|though."),
+            ("{t}It's not that{/t} clear, {t}though{/t}.", "{t}ただ{/t}、{t}それほど明確ではありません{/t}。", "It's|not that clear,|though."),
+            ("{t}It's not that{/t} easy, {t}though{/t}.", "{t}ただ{/t}、{t}それほど簡単ではありません{/t}。", "It's|not that easy,|though."),
+            ("{t}It's not that{/t} straightforward, {t}though{/t}.", "{t}ただ{/t}、{t}それほど単純明快ではありません{/t}。", "It's|not that straightforward,|though."),
         ),
         p2=rows(
             ("{t}That's not really{/t} the question.", "それは{t}本当に問うべきことではありません{/t}。", "That's|not really|the question."),
@@ -492,10 +492,10 @@ SPECS = {
             ("ただ、それほど{t}簡単ではありません{/t}。", "It's not that ", "easy", "easily", ", though."),
             ("ただ、それほど{t}単純明快ではありません{/t}。", "It's not that ", "straightforward", "straightforwardly", ", though."),
         ), choices(
-            ("それは{t}本当に問うべきことではありません{/t}。", "That's ", "not really", "really not", " the question."),
-            ("それは{t}本当の論点ではありません{/t}。", "That's ", "not really", "really not", " the issue."),
-            ("それは{t}本当の選択肢ではありません{/t}。", "That's ", "not really", "really not", " the choice."),
-            ("それは{t}本当の問題ではありません{/t}。", "That's ", "not really", "really not", " the problem."),
+            ("それは{t}厳密には問うべきことではありません{/t}。", "That's ", "not really", "really not", " the question."),
+            ("それは{t}まったく論点ではありません{/t}。", "That's ", "really not", "not really", " the issue."),
+            ("それは{t}厳密には選択肢とは言えません{/t}。", "That's ", "not really", "really not", " the choice."),
+            ("それは{t}まったく問題ではありません{/t}。", "That's ", "really not", "not really", " the problem."),
         )),
         (("Resist the description", "説明を退ける", "It's + <b>not that</b> + 形容詞 + <b>though</b>", "Softened correction", "和らげた修正", ("It's <b>not that simple, though</b>.", "It's <b>not that clear, though</b>.")),
          ("Resist the premise", "前提を退ける", "That's + <b>not really</b> + 問われたもの", "Redirect the question", "問いを向け直す", ("That's <b>not really the question</b>.", "That's <b>not really the issue</b>."))),
@@ -507,16 +507,16 @@ SPECS = {
 # Provenance is reconciled against the visible <= CORE-91 corpus.  Concurrent
 # CORE-92--112 owners are intentionally not cited until their stable maps land.
 VOCAB = {
-    113: dict(new="ownership|担当の明確さ; priorities|優先事項; symptomatic|表れである", recycled="delivery|納品|CORE-77; scope|範囲を決める|CORE-84", assumed="issue|問題; problem|問題; project|企画; communication|意思疎通; decisions|意思決定; planning|計画; unclear ownership|担当が不明確; conflicting priorities|優先事項の衝突; weak planning|計画不足; poor communication|意思疎通不足; unclear priorities|優先事項が不明確; a bigger problem|より大きな問題", receptive="at root|根本では; the bigger picture|全体像; symptom|兆候"),
+    113: dict(new="ownership|担当の明確さ; priorities|優先事項; symptomatic|表れである", recycled="delivery|配達|CORE-77; scope|範囲|CORE-84", assumed="issue|問題; problem|問題; project|企画; communication|意思疎通; decisions|意思決定; planning|計画; unclear ownership|担当が不明確; conflicting priorities|優先事項の衝突; weak planning|計画不足; poor communication|意思疎通不足; unclear priorities|優先事項が不明確; a bigger problem|より大きな問題", receptive="at root|根本では; the bigger picture|全体像; symptom|兆候"),
     114: dict(new="complicated|複雑な; uncertain|不確かな; flexible|柔軟な; rural|地方の; experienced|経験のある", recycled="expensive|高い|CORE-19", assumed="large|大きい; small|小さい; team|チーム; large teams|大きなチーム; small teams|小さなチーム; user|利用者; new users|新しい利用者; experienced users|経験のある利用者; project|企画; city offices|都市のオフィス; rural offices|地方のオフィス; short projects|短期の企画; long projects|長期の企画", receptive="broadly speaking|大まかに言えば; with some caveats|いくつか条件付きで"),
-    115: dict(new="capacity|対応力; risk|リスク; delivery risk|納品リスク", recycled="timing|時期|CORE-85; data|データ|CORE-85; delivery|納品|CORE-77; supplier|取引先|CORE-82; schedule|日程|CORE-67", assumed="cost|費用; record|記録; staff capacity|スタッフの対応力; reduce the risk|リスクを下げる; check the data|データを確認する; compare the suppliers|取引先を比較する; review the schedule|日程を見直す", receptive="factor|要因; the problem is|問題は; that still leaves|それでも残る"),
+    115: dict(new="capacity|対応力; risk|リスク; delivery risk|納品リスク", recycled="timing|タイミング|CORE-85; data|データ|CORE-85; delivery|配達|CORE-77; supplier|取引先|CORE-82; schedule|予定|CORE-67", assumed="cost|費用; record|記録; staff capacity|スタッフの対応力; reduce the risk|リスクを下げる; check the data|データを確認する; compare the suppliers|取引先を比較する; review the schedule|日程を見直す", receptive="factor|要因; the problem is|問題は; that still leaves|それでも残る"),
     116: dict(new="demand|需要; workload|作業量; doubled|2倍になった; got worse|悪化した; response time|応答時間; response times|応答時間", recycled="reliable|信頼できる|CORE-56", assumed="cost|費用; delay|遅れ; delays|遅れ; opposite|逆; available|対応できる; it's got worse|悪化している; it's become less reliable|信頼性が下がった; delays have increased|遅れが増えた; the workload has doubled|作業量が2倍になった; demand has gone up|需要が増えた; costs have gone up|費用が増えた; response times have increased|応答時間が延びた; fewer people are available|対応できる人が減った", receptive="far from it|とんでもない; not at all|まったく違う"),
-    117: dict(new="worth it|価値がある; practical|現実的な; reliability|信頼性; long-term value|長期的な価値", recycled="timing|時期|CORE-85; reliable|信頼できる|CORE-56", assumed="cost|費用; costs too much|費用が高すぎる; plan|案; change|変更; decision|判断; it's worth it|価値がある; the plan is practical|案は現実的; the change has helped|変更は役立った; it costs too much|費用が高すぎる; the cost|費用; the timing|時期", receptive="all in all|総合すると; at the end of the day|結局のところ"),
+    117: dict(new="worth it|価値がある; practical|現実的な; reliability|信頼性; long-term value|長期的な価値", recycled="timing|タイミング|CORE-85; reliable|信頼できる|CORE-56", assumed="cost|費用; costs too much|費用が高すぎる; plan|案; change|変更; decision|判断; it's worth it|価値がある; the plan is practical|案は現実的; the change has helped|変更は役立った; it costs too much|費用が高すぎる; the cost|費用; the timing|時期", receptive="all in all|総合すると; at the end of the day|結局のところ"),
     118: dict(new="cautious|慎重な; efficient|効率的な; rigid|厳格な; incomplete|不十分な; success|成功; progress|進歩", recycled="flexible|柔軟な|CORE-114", assumed="slow|遅い; simple|単純な; fair|公平な; result|結果; approval|承認; I think it's too slow|遅すぎると思う; I think it's too rigid|厳格すぎると思う; I think it's unclear|不明確だと思う; I think it's incomplete|不十分だと思う; a success|成功", receptive="hmm, maybe|うーん、そうかも; if you like|そう呼びたければ; reservation|異論"),
-    119: dict(new="disagreed|意見が合わなかった; disappointing|残念な; discussion|話し合い", recycled="timing|時期|CORE-85", assumed="meeting|会議; project|企画; result|結果; experience|経験; difficult|大変な; disagree|意見が合わない; not go well|うまくいかない; it didn't go well|うまくいかなかった; the meeting was difficult|会議は大変だった; we didn't agree|意見が合わなかった; the result was disappointing|結果は残念だった; we disagreed|意見が合わなかった; the timing was wrong|時期が悪かった; the project needs more work|企画にはさらに作業が必要; the discussion ended early|話し合いが早く終わった", receptive="deliberately|意図的に; enough said|これで十分; read into that what you will|あとはご想像にお任せします; infer|察する"),
-    120: dict(new="quote|見積もり", recycled="manager|上司|CORE-54; schedule|日程|CORE-67; figures|数字|CORE-108", assumed="ask|聞く; check|確認する; review|見直す; save|保存する; wait|待つ; copy|コピー; number|数字; file name|ファイル名; suggestion|提案; check that again|もう一度確認する; review the numbers|数字を見直す; save a copy|コピーを保存する; ask the manager|上司に聞く; asking her|彼女に聞く; checking the schedule|日程を確認する; getting another quote|別の見積もりを取る; checking the file name|ファイル名を確認する", receptive="reread|読み直す; overwrite|上書きする; no pressure|無理にとは言いません; up to you, of course|もちろん判断はお任せします; directive|指示; optional|任意の"),
-    121: dict(new="details|詳細; topic|話題", recycled="prefer|より好む|CORE-42; complaint|苦情|CORE-89; another time|別の機会|CORE-97", assumed="reason|理由; reasons|理由; decision|判断; situation|事情; what happened|何があったか; next step|次の段階; for now|今は; the details|詳細; the reasons|理由; the complaint|苦情; this topic|この話; the decision|その判断; the next step|次の段階; the contract discussion|契約の話", receptive="boundary|境界; long story|長い話; another time, maybe|また今度にしましょう; postpone|保留する"),
-    122: dict(new="straightforward|単純明快な; framing|枠組み", recycled="issue|問題|CORE-82; the real question is|本当の問いは|CORE-103", assumed="question|問い; simple|単純な; clear|明確な; easy|簡単な; choice|選択; problem|問題; change|変化; what changed|何が変わったか; which option solves the problem|どの案が問題を解決するか; who benefits|誰に役立つか; what the evidence shows|事実が何を示すか; it's good overall|全体としてよい; it's bad overall|全体として悪い; it's clear|明確だ; it's unclear|不明確だ", receptive="premise|前提; it depends what you mean by|何を意味するかによる; let me back up|少し話を戻します"),
+    119: dict(new="disagreed|意見が合わなかった; disappointing|残念な; discussion|話し合い", recycled="timing|タイミング|CORE-85", assumed="meeting|会議; project|企画; result|結果; experience|経験; difficult|大変な; disagree|意見が合わない; not go well|うまくいかない; it didn't go well|うまくいかなかった; the meeting was difficult|会議は大変だった; we didn't agree|意見が合わなかった; the result was disappointing|結果は残念だった; we disagreed|意見が合わなかった; the timing was wrong|時期が悪かった; the project needs more work|企画にはさらに作業が必要; the discussion ended early|話し合いが早く終わった", receptive="deliberately|意図的に; enough said|これで十分; read into that what you will|あとはご想像にお任せします; infer|察する"),
+    120: dict(new="quote|見積もり", recycled="manager|上司|CORE-54; schedule|予定|CORE-67; figures|数字|CORE-108", assumed="ask|聞く; check|確認する; review|見直す; save|保存する; wait|待つ; copy|コピー; number|数字; file name|ファイル名; suggestion|提案; check that again|もう一度確認する; review the numbers|数字を見直す; save a copy|コピーを保存する; ask the manager|上司に聞く; asking her|彼女に聞く; checking the schedule|日程を確認する; getting another quote|別の見積もりを取る; checking the file name|ファイル名を確認する", receptive="reread|読み直す; overwrite|上書きする; no pressure|無理にとは言いません; up to you, of course|もちろん判断はお任せします; directive|指示; optional|任意の"),
+    121: dict(new="details|詳細; topic|話題", recycled="prefer|〜のほうが好き|CORE-42; complaint|苦情|CORE-89; another time|別の機会|CORE-97", assumed="reason|理由; reasons|理由; decision|判断; situation|事情; what happened|何があったか; next step|次の段階; for now|今は; the details|詳細; the reasons|理由; the complaint|苦情; this topic|この話; the decision|その判断; the next step|次の段階; the contract discussion|契約の話", receptive="boundary|境界; long story|長い話; another time, maybe|また今度にしましょう; postpone|保留する"),
+    122: dict(new="straightforward|単純明快な; framing|枠組み", recycled="issue|問題|CORE-82; the real question is|本当の問題は|CORE-103", assumed="question|問い; simple|単純な; clear|明確な; easy|簡単な; choice|選択; problem|問題; change|変化; what changed|何が変わったか; which option solves the problem|どの案が問題を解決するか; who benefits|誰に役立つか; what the evidence shows|事実が何を示すか; it's good overall|全体としてよい; it's bad overall|全体として悪い; it's clear|明確だ; it's unclear|不明確だ", receptive="premise|前提; it depends what you mean by|何を意味するかによる; let me back up|少し話を戻します"),
 }
 
 
@@ -611,16 +611,16 @@ DIALOGUES = {
 
 
 LIVE_SCENES = {
-    113: (("text", "other", "Tutor", "Think of a recurring problem you know. What is behind it?", "知っている繰り返す問題を考えてください。その背後に何がありますか？"), ("input", "me", "Me", "The underlying issue is ___. It's symptomatic of ___. / No recurring problem comes to mind.", "根本的な問題は___です。それは___の表れです。／繰り返す問題は思いつきません。"), ("input", "me", "Me", "What recurring problem do you see, and what is it symptomatic of?", "先生が見る繰り返す問題と、それが何の表れかを聞きましょう。"), ("input", "other", "Tutor", "Tutor's real example or no-example answer:", "先生の実際の例、または例がないという答え")),
-    114: (("text", "other", "Tutor", "Working from home is better for everyone. How would you qualify that claim?", "在宅勤務は全員にとってよい、という主張をどう限定しますか？"), ("input", "me", "Me", "That may be true for ___, but not for ___. It's more ___ than that. / I think the claim is accurate.", "___には当てはまるかもしれませんが、___には当てはまりません。実際はそれより___です。／その主張は正確だと思います。"), ("input", "me", "Me", "Who is that claim true for in your experience?", "先生の経験では、その主張が誰に当てはまるか聞きましょう。"), ("input", "other", "Tutor", "Tutor's real qualified view or no-view answer:", "先生の実際の限定した意見、または意見がないという答え")),
-    115: (("text", "other", "Tutor", "I think speed should be our top priority. What does that view miss?", "速さを最優先にすべきだと思います。この意見は何を見落としていますか？"), ("input", "me", "Me", "That's true, but it doesn't account for ___. Even so, we still need to ___. / I agree and see no missing factor.", "それは事実ですが、___が考慮されていません。それでも___する必要があります。／賛成で、見落としはないと思います。"), ("input", "me", "Me", "What do you think speed does not account for?", "速さが何を考慮していないと思うか、先生に聞きましょう。"), ("input", "other", "Tutor", "Tutor's real missing factor or agreement:", "先生が実際に考える見落とし、または賛成の答え")),
-    116: (("text", "other", "Tutor", "Is there something people think has improved, although the evidence points the other way?", "改善したと思われていても、事実は逆を示すものがありますか？"), ("input", "me", "Me", "If anything, ___. It's actually the opposite: ___. / No clear example comes to mind.", "むしろ___。実際は逆で、___。／はっきりした例は思いつきません。"), ("input", "me", "Me", "Can you think of an assumption that the evidence reverses?", "事実によって逆転する想定があるか、先生に聞きましょう。"), ("input", "other", "Tutor", "Tutor's real reversal or no-example answer:", "先生の実際の逆転例、または例がないという答え")),
-    117: (("text", "other", "Tutor", "Think of a real decision with pros and cons. Where did you land?", "長所と短所のある実際の判断を考えてください。最終的にどう決めましたか？"), ("input", "me", "Me", "Overall, I'd say ___. What it comes down to for me is ___. / I haven't weighed a decision recently.", "総合的に見ると___。私にとっての決め手は___です。／最近検討した判断はありません。"), ("input", "me", "Me", "What recent decision did you weigh, and what did it come down to for you?", "先生が最近検討した判断と、その決め手を聞きましょう。"), ("input", "other", "Tutor", "Tutor's real conclusion or no-decision answer:", "先生の実際の結論、または判断がないという答え")),
-    118: (("text", "other", "Tutor", "I think an extra approval step makes a process safer. How do you see it?", "承認手順を一つ増やすと作業が安全になると思います。どう見ますか？"), ("input", "me", "Me", "You could see it as ___, but ___. I can see why you'd call it ___, though. / I agree with that view. / I don't have a view yet.", "___と見ることもできますが、___。___と呼ぶ理由は分かりますけどね。／その意見に賛成です。／まだ意見がありません。"), ("input", "me", "Me", "How would you describe the extra approval step, or do you not have a view?", "追加の承認手順をどう表現するか、または意見がないかを先生に聞きましょう。"), ("input", "other", "Tutor", "Tutor's real description, agreement, or no-view answer:", "先生の実際の表現、賛成、または意見がないという答え")),
-    119: (("text", "other", "Tutor", "Is there an experience you would prefer to summarize without details?", "詳しく話さずにまとめたい経験はありますか？"), ("input", "me", "Me", "Let's just say ___. All I'll say is that ___. / No such experience comes to mind.", "___とだけ言っておきます。私が言えるのは___ということだけです。／そのような経験は思いつきません。"), ("input", "me", "Me", "Is there a story you'd rather summarize briefly, or does nothing come to mind?", "先生にも、短くまとめたい話があるか、何も思いつかないかを聞きましょう。"), ("input", "other", "Tutor", "Tutor's brief summary or no-story answer:", "先生の短いまとめ、または話がないという答え")),
-    120: (("text", "other", "Tutor", "I'm thinking of sending an important email without rereading it. What would you suggest?", "重要なメールを読み直さずに送ろうと思っています。何を勧めますか？"), ("input", "me", "Me", "You might want to ___. It might be worth ___. / I don't have a suggestion.", "___したほうがよさそうです。___する価値があるかもしれません。／提案はありません。"), ("input", "me", "Me", "Would you take any extra step, or send it as it is?", "先生なら追加で何かするか、そのまま送るかを聞きましょう。"), ("input", "other", "Tutor", "Tutor's real suggestion or no-extra-step answer:", "先生の実際の提案、または追加手順はないという答え")),
-    121: (("text", "other", "Tutor", "Is there any topic you'd rather not discuss today? You can also say every topic is fine.", "今日、話したくない話題はありますか。すべて大丈夫とも答えられます。"), ("input", "me", "Me", "I'd rather not go into ___. Can we leave ___ for now? / Every current topic is fine.", "___には詳しく触れないでおきます。___は今はいったん置いておけますか。／今の話題はすべて大丈夫です。"), ("input", "me", "Me", "Is there anything you'd prefer to leave for now, or is everything fine?", "先生にも、今は置いておきたいことがあるか、すべて大丈夫かを聞きましょう。"), ("input", "other", "Tutor", "Tutor's real boundary or all-fine answer:", "先生の実際の境界、またはすべて大丈夫という答え")),
-    122: (("text", "other", "Tutor", "Is working from home simply good or bad?", "在宅勤務は単純によいか悪いか、どちらですか？"), ("input", "me", "Me", "It's not that ___, though. That's not really the question. The real question is ___. / I think the simple framing works: ___.", "それほど___ではありません。それは本当に問うべきことではありません。本当の問いは___です。／単純な枠組みでよいと思います：___。"), ("input", "me", "Me", "What do you think the real question is?", "本当に問うべきことは何だと思うか、先生に聞きましょう。"), ("input", "other", "Tutor", "Tutor's real reframing or simple answer:", "先生の実際の問い直し、または単純な答え")),
+    113: (("text", "other", "Tutor", "What recurring problem do you notice at work or in daily life, and what is behind it?", "仕事や日常生活で繰り返す問題は何ですか？その原因は何だと思いますか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What recurring problem do you notice, and what is behind it?", "先生はどんな繰り返す問題に気づきますか？その原因は何だと思いますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    114: (("text", "other", "Tutor", "Do you think working from home is better for everyone? Why or why not?", "在宅勤務は全員にとってよいと思いますか？なぜそう思いますか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "Who do you think working from home is best for?", "先生は、在宅勤務はどんな人に一番向いていると思いますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    115: (("text", "other", "Tutor", "When people make a quick decision, what important factor do they often miss?", "急いで決めるとき、人はどんな大切な要素を見落としやすいですか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What factor do you think people overlook most often?", "先生は、人が一番見落としやすい要素は何だと思いますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    116: (("text", "other", "Tutor", "What is something people say has improved, but you think has actually got worse?", "よくなったと言われるけれど、実際は悪くなったと思うものは何ですか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What do you think has got worse rather than better?", "先生は、よくなるどころか悪くなったものは何だと思いますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    117: (("text", "other", "Tutor", "What recent decision had both clear advantages and disadvantages? What mattered most in the end?", "最近、明確な長所と短所の両方があった判断は何ですか？最後の決め手は何でしたか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What recent decision did you weigh carefully, and what mattered most?", "先生が最近慎重に考えた判断と、一番大切だったことは何ですか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    118: (("text", "other", "Tutor", "Do extra approval steps usually make work safer or just slower?", "承認手順を増やすと、仕事はより安全になりますか？それとも遅くなるだけですか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "How do extra approval steps affect your work?", "先生の仕事では、承認手順を増やすとどんな影響がありますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    119: (("text", "other", "Tutor", "What's a trip, meal, or purchase that didn't go as planned but makes a good story now?", "予定どおりにいかなかったけれど、今では面白い話になった旅行・食事・買い物はありますか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What experience went badly but makes a good story now?", "先生は、うまくいかなかったけれど今では面白い話になった経験がありますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    120: (("text", "other", "Tutor", "What do you always double-check before sending or submitting something important?", "大切なものを送ったり提出したりする前に、必ず確認することは何ですか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What do you always check before you send something important?", "先生は大切なものを送る前に、必ず何を確認しますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    121: (("text", "other", "Tutor", "What topic do you think people are sometimes too curious about?", "人がときどき知りたがりすぎる話題は何だと思いますか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What topic do you think people should be more careful about asking about?", "先生は、どんな話題について聞くときに、もっと気をつけるべきだと思いますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
+    122: (("text", "other", "Tutor", "Is working from home simply good or bad, or is that the wrong question?", "在宅勤務は単純によいか悪いかで決められますか？それとも、その問い方自体が違いますか？"), ("input", "me", "Me", "Student's answer", "自分の本当の答え"), ("text", "me", "Me", "What do you think the more useful question is?", "先生は、もっと役に立つ問いは何だと思いますか？"), ("input", "other", "Tutor", "Tutor's answer", "先生の本当の短い答え")),
 }
 
 
@@ -686,6 +686,33 @@ LIVE_SLOT_FRAMES = {
     121: (("I'd rather not go into ", "."), ("Can we leave ", " for now?")),
     122: (("It's not that ", ", though."), ("The real question is ", "."), ("I think the simple framing works: ", ".")),
 }
+
+# Free Talk is a real reciprocal conversation, not another controlled
+# production task.  Keep the earlier lexical menus in source for the controlled
+# write pages, but do not place pattern-shaped hint menus inside Free Talk.
+LIVE_HINTS = {number: {} for number in NUMBERS}
+LIVE_SLOT_FRAMES = {number: () for number in NUMBERS}
+
+# A choice page earns its place only when both alternatives can be correct in
+# the activity.  These advanced frames do not provide that contrast; repeating
+# the same answer four times adds no diagnostic value.  CORE-122 part 2 is the
+# one retained scope contrast (not really / really not).
+OMIT_CHOICES = {number: (1, 2) for number in range(113, 122)} | {122: (1,)}
+
+WRITE_FRAMES = {
+    113: ("The underlying issue is ___", "It's symptomatic of ___"),
+    114: ("That may be true for ___, but not for ___", "It's more ___ than that"),
+    115: ("That's true, but it doesn't account for ___", "Even so, we still need to ___"),
+    116: ("If anything, ___", "It's actually the opposite: ___"),
+    117: ("Overall, I'd say ___", "What it comes down to for me is ___"),
+    118: ("You could see it as ___, but ___", "I can see why you'd call it ___, though"),
+    119: ("Let's just say ___", "All I'll say is that ___"),
+    120: ("You might want to ___", "It might be worth ___ing"),
+    121: ("I'd rather not go into ___", "Can we leave ___ for now?"),
+    122: ("It's not that ___, though", "That's not really the ___"),
+}
+
+FILL_HINTS = {(114, 2): TRANSLATE_HINTS[114][1]}
 
 
 TRANSFER_SCENES = {
@@ -804,6 +831,23 @@ DIALOGUE_SEMANTIC_LEDGER = {
 }
 
 
+# The operating script names the tutor's actual role in both languages.  The
+# model/replay and transfer scenes deliberately use different counterparts, so
+# one generic role label cannot accurately serve both pages.
+ROLE_JA = {
+    113: ("プロジェクトリーダー", "ボランティアのリーダー"),
+    114: ("コンサルタント", "研修担当者"),
+    115: ("上司", "主催者"),
+    116: ("サポートチームのリーダー", "調整担当者"),
+    117: ("購買担当者", "委員"),
+    118: ("責任者", "編集者"),
+    119: ("同僚", "友人"),
+    120: ("同僚", "チームリーダー"),
+    121: ("同僚", "友人"),
+    122: ("レビュー担当者", "司会者"),
+}
+
+
 def set_vocab(head, number):
     for category, value in VOCAB[number].items():
         head = re.sub(
@@ -890,26 +934,32 @@ def translate_page(number, part, pattern):
             'spellcheck="false" rows="2"></textarea></span>'
             + hint_html((hint,)) + '</div></div>'
         )
-    return core.section(
+    rendered = core.section(
         f"p{part}-translate", "Say it in English", "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Use the vocabulary menu, then say the whole sentence.</span>'
-        '<span class="ja">単語メニューを使って、文をまるごと英語で言いましょう。</span></p>'
+        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span>'
+        '<span class="ja">日本語を見て、英語で言ってみましょう。</span></p>'
+        '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
         + "".join(blocks),
+    )
+    return rendered.replace(
+        f'data-page-id="p{part}-translate"',
+        f'data-page-id="p{part}-translate" data-scaffolding-contract="target-v2" '
+        'data-support-stage="supported"',
+        1,
     )
 
 
 def write_page(number, part):
     prompt_en, prompt_ja = SPECS[number]["writes"][part - 1]
+    frame = WRITE_FRAMES[number][part - 1]
+    prompt_en = f'Now use “{frame}” to {prompt_en[0].lower() + prompt_en[1:]}'
+    prompt_ja = f'では、「{frame}」を使って、{prompt_ja}'
     return core.section(
         f"p{part}-write", "Make it yours", "自分の文にしよう",
         f'<p class="section-subtitle"><span class="ko">{core.esc(prompt_en)}</span>'
         f'<span class="ja">{core.esc(prompt_ja)}</span></p>'
-        '<div class="task-block"><div class="answer-box tall">'
-        '<span class="answer-label">Your sentence<span class="task">自分の情報で</span></span>'
-        '<span class="answer-space as-input">'
-        f'<textarea class="free-input" data-sync-id="p{part}-write" rows="2" '
-        'spellcheck="false" maxlength="2000"></textarea></span>'
-        + hint_html(OPEN_MENUS[number][part - 1]) + '</div></div>',
+        '<div class="tutor-note">Let the learner answer aloud before you capture it. React first, then add only a useful correction.</div>'
+        + core.feedback_compose(f"p{part}-write", hint_html(OPEN_MENUS[number][part - 1])),
     )
 
 
@@ -925,19 +975,21 @@ def live_page(number):
                 f'<span class="translation">{core.esc(japanese)}</span></div></div>'
             )
             continue
-        label = "Tutor's answer:" if side == "other" else english
+        label = "Tutor's answer" if side == "other" else "Student's answer"
+        label_ja = "先生の本当の短い答え" if side == "other" else "自分の本当の答え"
         hints = live_hints_html(LIVE_HINTS[number].get(index, ())) if side == "me" else ""
         turns.append(
             f'<div class="turn {side}">{avatar}<div class="{bubble}"><div class="answer-box tall">'
-            f'<span class="answer-label">{core.esc(label)}<span class="task">{core.esc(japanese)}</span></span>'
+            f'<span class="answer-label">{core.esc(label)}<span class="task">{core.esc(label_ja)}</span></span>'
             '<span class="answer-space as-input">'
             f'<textarea class="free-input" data-sync-id="live-{index}" rows="2" '
             f'spellcheck="false" maxlength="2000"></textarea></span>{hints}</div></div></div>'
         )
     return core.section(
         "p3-freetalk", "Your real answer", "自分の答え",
-        f'<p class="section-subtitle"><span class="ko">{core.esc(LESSONS[number]["prompt"][0])}</span>'
-        f'<span class="ja">{core.esc(LESSONS[number]["prompt"][1])}</span></p>'
+        '<p class="section-subtitle"><span class="ko">Let\'s talk about this topic. Answer my question, then ask me too.</span>'
+        '<span class="ja">この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。</span></p>'
+        '<div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div>'
         '<div class="dialogue">' + "".join(turns) + '</div>',
     )
 
@@ -961,6 +1013,20 @@ def growing_sentence_inputs(page):
     )
 
 
+def add_fill_hints(page, hints):
+    """Support the one fill whose target intentionally includes changing vocabulary."""
+    fragments = page.split('<div class="task-block">')
+    if len(fragments) - 1 != len(hints):
+        raise ValueError("fill hint count must match the rendered task blocks")
+    rendered = [fragments[0]]
+    for fragment, hint in zip(fragments[1:], hints, strict=True):
+        rendered.append(
+            '<div class="task-block">'
+            + fragment.replace('</div></div>', hint_html((hint,)) + '</div></div>', 1)
+        )
+    return "".join(rendered)
+
+
 def customize_pages(number, data, pages):
     replacements = {
         "words-you-know": known_page(number),
@@ -971,10 +1037,18 @@ def customize_pages(number, data, pages):
         "p3-freetalk": live_page(number),
     }
     omitted = {f"p{part}-reorder" for part in data.get("omit_reorder", ())}
+    omitted |= {f"p{part}-choose" for part in OMIT_CHOICES[number]}
     result = []
     for page in pages:
         page = growing_sentence_inputs(page)
         pid = page_id(page)
+        if pid in {"p3-model", "p3-complete"}:
+            page = page.replace("私は相手役をします。", f"私は{ROLE_JA[number][0]}役をします。", 1)
+        elif pid == "in-the-wild":
+            page = page.replace("私は相手役をします。", f"私は{ROLE_JA[number][1]}役をします。", 1)
+        for part in (1, 2):
+            if pid == f"p{part}-fill" and (number, part) in FILL_HINTS:
+                page = add_fill_hints(page, FILL_HINTS[number, part])
         if pid in omitted:
             continue
         if pid == "part3-intro":
@@ -1034,6 +1108,7 @@ def validate_source():
         ("transfer scenes", TRANSFER_SCENES),
         ("brief models", BRIEF_PRODUCTION_MODELS),
         ("dialogue ledger", DIALOGUE_SEMANTIC_LEDGER),
+        ("role labels", ROLE_JA),
     ):
         if set(values) != expected:
             raise SystemExit(f"{label} do not exactly cover CORE-113--122")

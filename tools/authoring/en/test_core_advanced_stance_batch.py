@@ -53,7 +53,7 @@ class CoreAdvancedStanceBatchTests(unittest.TestCase):
             batch.DIALOGUES, batch.LIVE_SCENES, batch.LIVE_HINTS,
             batch.LIVE_SLOT_FRAMES,
             batch.TRANSFER_SCENES, batch.BRIEF_PRODUCTION_MODELS,
-            batch.DIALOGUE_SEMANTIC_LEDGER,
+            batch.DIALOGUE_SEMANTIC_LEDGER, batch.ROLE_JA,
         ):
             self.assertEqual(set(values), EXPECTED)
         self.assertEqual(EXPECTED, set(range(113, 123)))
@@ -93,6 +93,21 @@ class CoreAdvancedStanceBatchTests(unittest.TestCase):
                     rebuilt = prefix + correct + suffix
                     self.assertRegex(rebuilt, r"^[A-Z].*[.!?]$", (number, part, rebuilt))
 
+    def test_only_a_genuine_two_way_choice_is_rendered(self):
+        self.assertEqual(batch.OMIT_CHOICES, {n: (1, 2) for n in range(113, 122)} | {122: (1,)})
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            for part in batch.OMIT_CHOICES[number]:
+                self.assertNotIn(f"p{part}-choose", pages, (number, part))
+        _, source = batch.build(122, batch.LESSONS[122])
+        retained = dict(check_deck.pages(source))["p2-choose"]
+        self.assertIn("not really", retained)
+        self.assertIn("really not", retained)
+        self.assertEqual(retained.count("data-correct"), 4)
+        self.assertEqual(retained.count(">not really<"), 4)
+        self.assertEqual(retained.count(">really not<"), 4)
+
     def test_reorders_are_honest_or_have_an_explicit_exception(self):
         actual = set()
         for number, data in batch.LESSONS.items():
@@ -130,6 +145,27 @@ class CoreAdvancedStanceBatchTests(unittest.TestCase):
                 owner_number = int(owner.removeprefix("CORE-"))
                 self.assertLess(owner_number, number)
                 self.assertIn(word.casefold(), self.source_new_words(owner), (number, word, owner))
+
+    def test_recycled_japanese_matches_the_canonical_owner(self):
+        expected = {
+            (113, "delivery"): ("配達", "CORE-77"),
+            (113, "scope"): ("範囲", "CORE-84"),
+            (115, "delivery"): ("配達", "CORE-77"),
+            (115, "schedule"): ("予定", "CORE-67"),
+            (115, "timing"): ("タイミング", "CORE-85"),
+            (117, "timing"): ("タイミング", "CORE-85"),
+            (119, "timing"): ("タイミング", "CORE-85"),
+            (120, "schedule"): ("予定", "CORE-67"),
+            (121, "prefer"): ("〜のほうが好き", "CORE-42"),
+            (122, "the real question is"): ("本当の問題は", "CORE-103"),
+        }
+        actual = {}
+        for number, values in batch.VOCAB.items():
+            for entry in filter(None, values["recycled"].split("; ")):
+                word, japanese, owner = entry.split("|")
+                if (number, word) in expected:
+                    actual[number, word] = (japanese, owner)
+        self.assertEqual(actual, expected)
 
     def test_new_words_have_no_visible_earlier_owner(self):
         prior_owners = {}
@@ -197,48 +233,42 @@ class CoreAdvancedStanceBatchTests(unittest.TestCase):
         for number, data in batch.LESSONS.items():
             self.assertIn(" or ", data["prompt"][0], number)
             self.assertIn("か", data["prompt"][1], number)
-            self.assertIn(" / ", batch.LIVE_SCENES[number][1][3], number)
-            self.assertIn("／", batch.LIVE_SCENES[number][1][4], number)
 
     def test_live_exchange_is_audio_safe_reciprocal_and_real(self):
         roles = (("text", "other", "Tutor"), ("input", "me", "Me"),
-                 ("input", "me", "Me"), ("input", "other", "Tutor"))
+                 ("text", "me", "Me"), ("input", "other", "Tutor"))
         for number, scene in batch.LIVE_SCENES.items():
             self.assertEqual(tuple(turn[:3] for turn in scene), roles, number)
             all_english = " ".join(turn[3] for turn in scene).casefold()
             self.assertNotRegex(all_english, r"watch me|look at me|gesture|as you can see")
             self.assertRegex(scene[2][3], r"\?$", (number, scene[2][3]))
-            self.assertRegex(scene[3][3].casefold(), r"real|brief", (number, scene[3][3]))
+            self.assertEqual(scene[1][3], "Student's answer", number)
+            self.assertEqual(scene[3][3], "Tutor's answer", number)
             _, source = batch.build(number, batch.LESSONS[number])
             page = dict(check_deck.pages(source))["p3-freetalk"]
             self.assertEqual(page.count('class="turn '), 4, number)
-            self.assertIn("Tutor&#x27;s answer:", page, number)
+            self.assertIn("Student&#x27;s answer", page, number)
+            self.assertIn("Tutor&#x27;s answer", page, number)
+            self.assertIn("Use today's pattern only if it fits", page, number)
 
     def test_live_hints_only_support_real_semantic_slots(self):
         for number, hints in batch.LIVE_HINTS.items():
-            self.assertTrue(set(hints) <= {1, 2}, number)
-            ask_back = batch.LIVE_SCENES[number][2][3]
-            self.assertEqual(2 in hints, "___" in ask_back, (number, ask_back))
-            groups = hints[1]
-            frames = batch.LIVE_SLOT_FRAMES[number]
-            self.assertEqual(len(groups), batch.LIVE_SCENES[number][1][3].count("___"), number)
-            self.assertEqual(len(groups), len(frames), number)
-            for slot, ((label_en, label_ja, menu), (prefix, suffix)) in enumerate(
-                zip(groups, frames, strict=True), 1
-            ):
-                self.assertEqual(label_en.count("___"), 1, (number, slot, label_en))
-                self.assertTrue(label_ja.strip(), (number, slot))
-                self.assertGreaterEqual(len(menu), 3, (number, slot))
-                for item in menu:
-                    japanese, english = item.rsplit(":", 1)
-                    self.assertTrue(japanese.strip(), (number, slot, item))
-                    self.assertEqual(english, english.strip(), (number, slot, item))
-                    rebuilt = prefix + english + suffix
-                    self.assertNotIn("___", rebuilt, (number, slot, rebuilt))
-                    self.assertRegex(rebuilt, r"^[A-ZI].*[.!?]$", (number, slot, rebuilt))
+            self.assertEqual(hints, {}, number)
+            self.assertEqual(batch.LIVE_SLOT_FRAMES[number], (), number)
             _, source = batch.build(number, batch.LESSONS[number])
             page = dict(check_deck.pages(source))["p3-freetalk"]
-            self.assertEqual(page.count('class="slot-hint-group"'), len(groups), number)
+            self.assertNotIn('class="slot-hint-group"', page, number)
+
+    def test_roleplay_operating_copy_names_each_actual_role_in_both_languages(self):
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            model_role, transfer_role = batch.ROLE_JA[number]
+            for page_id in ("p3-model", "p3-complete"):
+                self.assertIn(f"私は{model_role}役をします。", pages[page_id], (number, page_id))
+                self.assertNotIn("私は相手役をします。", pages[page_id], (number, page_id))
+            self.assertIn(f"私は{transfer_role}役をします。", pages["in-the-wild"], number)
+            self.assertNotIn("私は相手役をします。", pages["in-the-wild"], number)
 
     def test_independent_review_fixes_are_source_locked(self):
         c115 = batch.LESSONS[115]["p2"]
@@ -254,8 +284,7 @@ class CoreAdvancedStanceBatchTests(unittest.TestCase):
         c118 = str((batch.LESSONS[118], batch.SPECS[118], batch.LIVE_SCENES[118]))
         self.assertNotIn("留保", c118)
         self.assertNotIn("my interpretation", batch.LIVE_SCENES[118][2][3])
-        self.assertIn("the extra approval step", batch.LIVE_SCENES[118][2][3])
-        self.assertIn("or do you not have a view?", batch.LIVE_SCENES[118][2][3])
+        self.assertIn("extra approval steps", batch.LIVE_SCENES[118][2][3])
 
         self.assertIn(".choose-row.word-choice", batch.NARROW_GROWING_INPUT_CSS)
         self.assertIn("overflow-wrap: anywhere", batch.NARROW_GROWING_INPUT_CSS)
@@ -283,10 +312,10 @@ class CoreAdvancedStanceBatchTests(unittest.TestCase):
         )
 
         _, source = batch.build(122, batch.LESSONS[122])
-        page = dict(check_deck.pages(source))["p1-choose"]
+        page = dict(check_deck.pages(source))["p2-choose"]
         self.assertEqual(page.count('class="opt"'), 8)
-        self.assertIn(">straightforwardly<", page)
-        self.assertIn(">straightforward<", page)
+        self.assertIn(">not really<", page)
+        self.assertIn(">really not<", page)
 
     def test_semantic_reread_regressions_stay_natural_and_faithful(self):
         core118 = str((batch.LESSONS[118], batch.SPECS[118]))
@@ -295,9 +324,9 @@ class CoreAdvancedStanceBatchTests(unittest.TestCase):
         core121 = str((batch.LESSONS[121], batch.SPECS[121], batch.OPEN_MENUS[121]))
         self.assertIn("into{/t} what happened", core121)
         self.assertNotIn("go into my private situation", core121)
-        self.assertIn("you'd rather summarize briefly", batch.LIVE_SCENES[119][2][3])
-        self.assertIn("Would you take any extra step", batch.LIVE_SCENES[120][2][3])
-        self.assertIn("the real question is|本当の問いは|CORE-103", batch.VOCAB[122]["recycled"])
+        self.assertIn("makes a good story", batch.LIVE_SCENES[119][2][3])
+        self.assertIn("always check", batch.LIVE_SCENES[120][2][3])
+        self.assertIn("the real question is|本当の問題は|CORE-103", batch.VOCAB[122]["recycled"])
         self.assertEqual(batch.DIALOGUES[114]["wild"][1:3], (1, 0))
         self.assertEqual(batch.DIALOGUES[119]["wild"][1:3], (2, 3))
         self.assertIn("Maya calculated", batch.DIALOGUES[120]["model"][3][0])
