@@ -11,10 +11,6 @@
 # 브랜치를 두면 그 브랜치들 사이의 머지가 또 하나의 릴리스 절차가 되고, 그때부터
 # "어느 환경이 무엇을 보고 있는가"를 사람이 추적해야 한다.
 #
-# 순서는 stage → qa → dev 이고 한 환경이 실패하면 거기서 멈춘다. 뒤 환경을 계속 밀어
-# 실패를 반쯤 가린 초록 빌드를 만드는 것보다, 어디서 멈췄는지가 로그에 남는 편이 낫다.
-# apply 는 자연키 upsert + GCS 덮어쓰기라 재실행이 안전하므로 재시도 비용도 낮다.
-#
 # 둘 다 자동인 이유: 사람이 기억해서 눌러야 하는 배포는 반드시 언젠가 안 눌린다. 그러면
 # 브랜치가 가리키는 것과 학습자가 보는 것이 어긋나고, 그걸 알려 줄 신호가 없다. 머지가 곧
 # 반영이어야 그 간격이 생기지 않는다 — stage 든 prod 든 마찬가지다.
@@ -27,18 +23,31 @@
 # 임의 브랜치 × 임의 환경의 수동 재배포(롤백·핫픽스 확인)는 podo-curriculum-deploy 가 남아 있다:
 #   gcloud builds triggers run podo-curriculum-deploy --region=asia-northeast3 \
 #     --branch=<브랜치> --substitutions=_DEPLOY_ENV=<dev|qa|stage|prod[,...]>
-# 30분이었다. stage 트리거는 _DEPLOY_ENV=stage,qa,dev 로 세 환경을 순서대로 도는데,
-# 한국어 카탈로그 49코스 480과가 들어오면서 한 환경이 12분쯤 걸리게 됐다 — 세 환경이면
-# 36분이라 예산을 넘는다. 실제로 넘겼다: stage·qa 는 529행을 다 받고 dev 가 297행에서
-# 잘린 채 빌드가 TIMEOUT 으로 끝났다.
 #
-# 타임아웃으로 끊긴 배포는 실패 중에서도 고약한 쪽이다. 앞선 환경은 성공했고 뒤의 환경만
-# 반쯤 반영된 상태로 남는데, apply.py 가 순수 upsert 라 어디까지 갔는지 아무 데도 적히지
-# 않는다. 남는 것은 환경마다 다른 코스 목록뿐이다.
+# ── 스텝 구조 ────────────────────────────────────────────────────────────────
 #
-# 90분은 지금 필요한 40분의 두 배가 조금 넘는다. 카탈로그가 자라도 한동안 버틴다.
-# 이 값이 다시 모자라면 늘리기 전에 환경을 병렬로 도는 것을 먼저 보라 — 세 환경은
-# 서로를 기다릴 이유가 없고, 그러면 벽시계는 가장 느린 환경 하나로 줄어든다.
+#   guard → validate → apply-{dev,qa,stage,prod} (병렬) → catalog
+#
+# 환경을 차례로 돌 때 stage 배포는 20분이었고, 그 20분의 대부분은 같은 일을 세 번 한
+# 것이었다. 세 환경은 서로를 기다릴 이유가 없다 — grape 도 DB 도 GCS prefix 도 환경마다
+# 따로다. 그래서 apply 를 환경별 스텝으로 갈라 병렬로 돌린다. 벽시계가 합이 아니라
+# 가장 느린 환경 하나로 줄어든다.
+#
+# 대신 "앞 환경이 실패하면 뒤 환경은 시작도 안 한다"는 성질은 사라진다. 셋이 동시에
+# 출발하므로, 하나가 깨져도 나머지는 이미 절반쯤 가 있다. 그 성질을 지키는 값이
+# 원래 크지 않았다 — apply 는 자연키 upsert + 같은 키 GCS 덮어쓰기라 재실행이 안전하고,
+# 어차피 환경마다 결과가 따로 남는다. 이제는 어느 환경이 어디서 깨졌는지가 스텝 단위로
+# 보이는 편이 낫다.
+#
+# validate 는 환경마다가 아니라 검증기마다 한 번 돈다. 레몬보드가 prod·stage 두 벌뿐이라
+# dev·qa·stage 의 lemonboardApi 는 글자 그대로 같고, validate.py 에서 --env 가 고르는 값은
+# 그 URL 하나뿐이다 — 셋을 각각 도는 것은 같은 바이트를 같은 검증기에 세 번 보내는 일이었다
+# (덱 1000장 × 3 = 검증 호출 3000번, 환경당 1~2분).
+#
+# 90분은 지금 필요한 시간의 몇 배다. 병렬로 돌리기 전에도 여유가 있었고 지금은 더 남는다.
+# 값을 줄이지 않는 이유는 타임아웃으로 끊긴 배포가 실패 중에서도 고약한 쪽이기 때문이다 —
+# apply.py 가 순수 upsert 라 어디까지 갔는지 아무 데도 적히지 않고, 남는 것은 환경마다
+# 다른 코스 목록뿐이다. 여유는 넉넉한 편이 낫다.
 timeout: 5400s
 
 options:
@@ -46,6 +55,11 @@ options:
 
 substitutions:
   _DEPLOY_ENV: stage
+  # 한 환경 안에서 동시에 보낼 코스 수. 코스 하나가 요청 하나다(docs/sync-contract.md).
+  # 4 인 이유는 받는 쪽이다 — 비프로덕션 grape 는 replica 1 · CPU 1 이고 prod 도 2 뿐이며,
+  # prod grape 는 어드민 사용자도 함께 받는다. 하는 일이 대부분 GCS·레몬보드 대기라
+  # 4 개 정도는 CPU 를 놀리지 않고 채우지만, 더 올리면 배포가 어드민을 밀어내기 시작한다.
+  _APPLY_JOBS: '4'
 
 availableSecrets:
   secretManager:
@@ -61,6 +75,7 @@ steps:
   - id: guard
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
     entrypoint: bash
+    waitFor: ['-']
     args:
       - -ceu
       - |
@@ -94,70 +109,76 @@ steps:
             ;;
         esac
 
-  - id: apply
+  # 검증기마다 한 번. 배포할 바이트는 환경과 무관하게 하나뿐이고, validate.py 가 --env 로
+  # 고르는 것은 어느 레몬보드에 계약을 물어볼지 하나다.
+  - id: validate
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
     entrypoint: bash
-    secretEnv: [CB_SECRET, LB_KEY_STAGE, LB_KEY_PROD]
+    waitFor: [guard]
+    secretEnv: [LB_KEY_STAGE, LB_KEY_PROD]
     args:
       - -ceu
       - |
-        # cloud-sdk:slim 의 python 은 PEP 668(externally-managed) 이라 시스템 설치를 막는다.
-        # 빌드 컨테이너는 일회용이라 venv 를 만들 이유가 없으므로 그 보호를 끈다.
         pip install --break-system-packages --quiet -r tools/requirements.txt
 
-        for DEPLOY_ENV in $$(echo "$_DEPLOY_ENV" | tr ',' ' '); do
-        echo "══════════ $$DEPLOY_ENV ══════════"
+        TARGETS=" $$(echo "$_DEPLOY_ENV" | tr ',' ' ') "
 
-        # 환경에 맞는 검증기 키를 고른다. 비프로덕션 셋(stage·qa·dev)은 모두 stage
-        # 레몬보드에 붙으므로 검증기도 stage 것 하나를 공유한다 — 애초에 prod 말고는
-        # 레몬보드가 stage 한 벌뿐이다.
-        if [ "$$DEPLOY_ENV" = "prod" ]; then
-          export PODO_LEMONBOARD_API_KEY="$$LB_KEY_PROD"
-        else
-          export PODO_LEMONBOARD_API_KEY="$$LB_KEY_STAGE"
-        fi
+        run() {
+          echo "────────── validate ($$1 검증기) ──────────"
+          # 키가 없으면 --contract 를 빼고 돈다. validate.py 는 키 없는 --contract 를 거부하는데,
+          # 그건 인증 거절이 통과로 읽히지 않게 하려는 것이다.
+          if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
+            python3 tools/validate.py --contract --env "$$1"
+          else
+            echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다"
+            python3 tools/validate.py --env "$$1"
+          fi
+        }
 
-        # 키가 없으면 --contract 를 빼고 돈다. validate.py 는 키 없는 --contract 를 거부하는데,
-        # 그건 인증 거절이 통과로 읽히지 않게 하려는 것이다.
-        if [ -n "$${PODO_LEMONBOARD_API_KEY:-}" ]; then
-          python3 tools/validate.py --contract --env "$$DEPLOY_ENV"
-        else
-          echo "PODO_LEMONBOARD_API_KEY 미설정 — data-sync 계약 검사 없이 진행한다"
-          python3 tools/validate.py --env "$$DEPLOY_ENV"
-        fi
+        # 비프로덕션 셋은 모두 stage 레몬보드에 붙는다(getPodoEnv() != "prod").
+        # 셋 중 하나라도 대상이면 stage 검증기로 한 번 돈다.
+        case "$$TARGETS" in
+          *" dev "*|*" qa "*|*" stage "*)
+            export PODO_LEMONBOARD_API_KEY="$$LB_KEY_STAGE"
+            run stage
+            ;;
+        esac
 
-        echo "── plan ($$DEPLOY_ENV) ──"
-        python3 tools/plan.py --env "$$DEPLOY_ENV"
+        case "$$TARGETS" in
+          *" prod "*)
+            export PODO_LEMONBOARD_API_KEY="$$LB_KEY_PROD"
+            run prod
+            ;;
+        esac
 
-        # 인증은 Google OIDC ID 토큰이다. 저장하고 회전시킬 자격증명이 없다 — 메타데이터
-        # 서버에서 이 빌드 SA 의 토큰을 그때그때 받아 붙이고, grape 가 구글 공개키로 서명을
-        # 검증한다(수명 1시간). audience 는 호출할 바로 그 URL 이어야 한다 — 다른 서비스용으로
-        # 발급된 토큰의 재사용을 막는 장치라, curriculum.yaml 의 grapeSyncApi 와 정확히 같아야 한다.
-        # 환경마다 URL 이 다르므로 토큰도 환경마다 새로 받는다.
-        SYNC_URL="$$(python3 - "$$DEPLOY_ENV" <<'PY'
-        import sys, yaml
-        env = sys.argv[1]
-        print(yaml.safe_load(open('curriculum.yaml'))['spec']['environments'][env]['grapeSyncApi'])
-        PY
-        )"
-        echo "sync 대상: $$SYNC_URL"
+  # 네 환경, 네 스텝, 전부 validate 만 기다린다 — 서로는 기다리지 않는다.
+  # 이번 배포 대상이 아닌 스텝은 tools/deploy-env.sh 가 즉시 빠져나온다.
+  - id: apply-stage
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    waitFor: [validate]
+    args: [-ceu, 'bash tools/deploy-env.sh stage "$_DEPLOY_ENV" "$_APPLY_JOBS"']
 
-        export PODO_CURRICULUM_SYNC_TOKEN="$$(curl -sf -H 'Metadata-Flavor: Google' \
-          "http://metadata/computeMetadata/v1/instance/service-accounts/default/identity?audience=$$SYNC_URL" || true)"
+  - id: apply-qa
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    waitFor: [validate]
+    args: [-ceu, 'bash tools/deploy-env.sh qa "$_DEPLOY_ENV" "$_APPLY_JOBS"']
 
-        if [ -z "$${PODO_CURRICULUM_SYNC_TOKEN}" ]; then
-          echo "OIDC 토큰을 받지 못했다 — 메타데이터 서버 접근 실패."
-          # 여기서 성공으로 끝내면 아무것도 배포하지 않은 채 빌드가 초록으로 남는다. 그러면
-          # main 은 새 덱을, 학습자는 옛 덱을 보는 상태가 되고 그걸 알려 줄 신호가 없다.
-          # 배포 파이프라인의 초록은 "main 이 실제로 반영됐다"는 뜻이어야 한다.
-          exit 1
-        fi
-        python3 tools/apply.py --env "$$DEPLOY_ENV"
+  - id: apply-dev
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    waitFor: [validate]
+    args: [-ceu, 'bash tools/deploy-env.sh dev "$_DEPLOY_ENV" "$_APPLY_JOBS"']
 
-        done
+  - id: apply-prod
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    waitFor: [validate]
+    args: [-ceu, 'bash tools/deploy-env.sh prod "$_DEPLOY_ENV" "$_APPLY_JOBS"']
 
   # 공개 카탈로그. prod 배포 뒤에만, prod 를 배포했을 때만 돈다 — 페이지가 말하는 것과
-  # 수업이 보여주는 것이 어긋나지 않게.
+  # 수업이 보여주는 것이 어긋나지 않게. 그래서 apply-prod 만 기다린다.
   #
   # GitHub Actions 가 아니라 여기서 도는 이유: 이 조직의 Actions 는 self-hosted
   # day1-runner-respeak 에 묶여 있고, 그 러너는 이 레포의 잡을 집어가지 않는다(2026-08-19
@@ -174,6 +195,7 @@ steps:
   - id: catalog
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
     entrypoint: bash
+    waitFor: [apply-prod]
     secretEnv: [CB_SECRET]
     allowFailure: true
     args:
@@ -197,5 +219,7 @@ steps:
         git commit -q -m "catalog: $COMMIT_SHA"
         # 히스토리를 쌓지 않는다. 이 브랜치는 생성물이라 diff 를 볼 이유가 없고,
         # 매번 사이트 전체를 커밋하면 레포가 계속 커진다.
-        git push -q --force           "https://x-access-token:$$GH_TOKEN@github.com/re-speak/podo-curriculum.git"           HEAD:gh-pages
+        git push -q --force \
+          "https://x-access-token:$$GH_TOKEN@github.com/re-speak/podo-curriculum.git" \
+          HEAD:gh-pages
         echo "카탈로그를 gh-pages 로 올렸다"
