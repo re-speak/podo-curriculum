@@ -74,6 +74,77 @@ class PageReviewTest(unittest.TestCase):
         self.assertTrue(any("learnerAction" in error for error in errors))
         self.assertTrue(any("humanPageAudit" in error for error in errors))
 
+    def test_visual_not_applicable_cannot_replace_viewport_review(self) -> None:
+        review = self.completed_review()
+        review["pages"][0]["visual360"] = "not-applicable"
+        self.review_path.write_text(json.dumps(review), encoding="utf-8")
+        errors = page_review.validate(self.lesson, self.review_path)
+        self.assertTrue(any("visual360" in error for error in errors))
+
+    def test_open_exchange_must_quote_actual_question_and_ask_back(self) -> None:
+        self.lesson.write_text(
+            '<main><section data-page-id="p3-freetalk">'
+            '<span class="korean">What would you change, and why?</span>'
+            '<span class="korean">What would you change?</span>'
+            '</section></main>',
+            encoding="utf-8",
+        )
+        review = page_review.scaffold(self.lesson, self.review_path)
+        review["stages"].update(
+            generated="pass", mechanicalValidation="pass", humanPageAudit="pass"
+        )
+        page = review["pages"][0]
+        page.update(
+            learnerAction="The learner answers and asks the tutor back.",
+            tutorAction="The tutor answers genuinely and follows up.",
+            targetOrPrompt="A generic conversation about change.",
+            learningTarget="The learner develops one relevant personal answer.",
+            pedagogicalValue="The exchange creates reciprocal conversation.",
+            failureDiagnosis="A generic or one-sided exchange would fail the task.",
+            nonTargetSupport="The topic remains visible in both languages.",
+            articleTreatment="No article is used on this open exchange page.",
+            choiceQuality="There are no fixed choices on this open exchange page.",
+            componentConsistency="The page uses the approved reciprocal exchange component.",
+            visual360="pass",
+            visual480="pass",
+            verdict="pass",
+        )
+        self.review_path.write_text(json.dumps(review), encoding="utf-8")
+        errors = page_review.validate(self.lesson, self.review_path)
+        self.assertTrue(any("What would you change, and why?" in error for error in errors))
+        self.assertTrue(any("What would you change?" in error for error in errors))
+
+    def test_write_page_must_quote_visible_operating_prompt(self) -> None:
+        self.lesson.write_text(
+            '<main><section data-page-id="p1-write">'
+            '<span class="ko">Now use “I’m here for ___” to say why you are visiting.</span>'
+            '</section></main>',
+            encoding="utf-8",
+        )
+        review = page_review.scaffold(self.lesson, self.review_path)
+        review["stages"].update(
+            generated="pass", mechanicalValidation="pass", humanPageAudit="pass"
+        )
+        page = review["pages"][0]
+        page.update(
+            learnerAction="The learner makes one sentence with today's frame.",
+            tutorAction="The tutor listens, captures, and corrects only if useful.",
+            targetOrPrompt="Make one sentence using the pattern.",
+            learningTarget="The learner uses the frame for one communicative purpose.",
+            pedagogicalValue="The page transfers controlled practice into original content.",
+            failureDiagnosis="A vague prompt would make the intended operation unclear.",
+            nonTargetSupport="The frame remains visible above the response area.",
+            articleTreatment="No article is used on this production page.",
+            choiceQuality="The learner supplies open content rather than choosing an option.",
+            componentConsistency="The page uses the approved feedback composition component.",
+            visual360="pass",
+            visual480="pass",
+            verdict="pass",
+        )
+        self.review_path.write_text(json.dumps(review), encoding="utf-8")
+        errors = page_review.validate(self.lesson, self.review_path)
+        self.assertTrue(any("I’m here for" in error for error in errors))
+
     def test_complete_review_passes_but_owner_is_separate(self) -> None:
         self.completed_review()
         self.assertEqual(page_review.validate(self.lesson, self.review_path), [])
@@ -89,6 +160,22 @@ class PageReviewTest(unittest.TestCase):
         )
         errors = page_review.validate(self.lesson, self.review_path)
         self.assertTrue(any("lessonSha256 is stale" in error for error in errors))
+
+    def test_refresh_updates_hash_and_evidence_without_erasing_judgments(self) -> None:
+        review = self.completed_review()
+        self.lesson.write_text(
+            '<main><section data-page-id="goal"><span class="ending">new target</span></section>'
+            '<section data-page-id="practice"></section></main>',
+            encoding="utf-8",
+        )
+        page_review.refresh_evidence(self.lesson, self.review_path)
+        refreshed = page_review.load_review(self.review_path)
+        self.assertEqual(refreshed["lessonSha256"], page_review.sha256(self.lesson))
+        self.assertEqual(refreshed["pages"][0]["evidence"]["targetHighlights"], ["new target"])
+        self.assertEqual(
+            refreshed["pages"][0]["pedagogicalValue"],
+            review["pages"][0]["pedagogicalValue"],
+        )
 
     def test_page_coverage_and_order_are_exact(self) -> None:
         review = self.completed_review()

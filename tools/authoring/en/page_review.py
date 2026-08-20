@@ -33,7 +33,7 @@ REQUIRED_PAGE_FIELDS = (
     "verdict",
 )
 PASS_STAGES = ("generated", "mechanicalValidation", "humanPageAudit")
-VISUAL_VALUES = {"pass", "not-applicable"}
+VISUAL_VALUES = {"pass"}
 VERDICTS = {"pass", "revise", "remove"}
 
 
@@ -87,6 +87,19 @@ def page_evidence(path: pathlib.Path) -> dict[str, dict[str, Any]]:
             check_deck.plain_text(body)
             for body in check_deck.vocabulary.HINT_CHIP.findall(chunk)
         ]
+        substantive_prompts = []
+        if page_id == "p3-freetalk":
+            substantive_prompts = [
+                check_deck.plain_text(body)
+                for body in check_deck.class_span_bodies(chunk, "korean")
+                if check_deck.plain_text(body)
+            ]
+        elif page_id in check_deck.FREETALK_QUESTION_PAGES or page_id.endswith("-write"):
+            substantive_prompts = [
+                check_deck.plain_text(body)
+                for body in check_deck.class_span_bodies(chunk, "ko")[:1]
+                if check_deck.plain_text(body)
+            ]
         evidence[page_id] = {
             "targetHighlights": [
                 check_deck.plain_text(body)
@@ -95,6 +108,7 @@ def page_evidence(path: pathlib.Path) -> dict[str, dict[str, Any]]:
             "blankAnswers": blank_answers,
             "hintChips": hint_chips,
             "supportStage": attrs.get("data-support-stage", "not-applicable"),
+            "substantivePrompts": substantive_prompts,
         }
     return evidence
 
@@ -146,8 +160,38 @@ def load_review(path: pathlib.Path) -> dict[str, Any]:
     return data
 
 
+def refresh_evidence(
+    lesson_path: pathlib.Path,
+    review_path: pathlib.Path,
+) -> dict[str, Any]:
+    """Refresh byte-bound evidence without erasing completed human judgments."""
+    review = load_review(review_path)
+    actual_ids = page_ids(lesson_path)
+    pages = review.get("pages")
+    if not isinstance(pages, list):
+        raise ReviewError(f"{review_path}: pages must be an array")
+    ledger_ids = [page.get("pageId") for page in pages if isinstance(page, dict)]
+    if ledger_ids != actual_ids:
+        raise ReviewError(
+            f"{review_path}: cannot refresh changed page coverage; "
+            f"ledger={ledger_ids} lesson={actual_ids}"
+        )
+    evidence = page_evidence(lesson_path)
+    review["schemaVersion"] = SCHEMA_VERSION
+    review["lesson"] = relative_lesson(lesson_path, review_path)
+    review["lessonSha256"] = sha256(lesson_path)
+    for page in pages:
+        page["evidence"] = evidence[page["pageId"]]
+    write_json(review_path, review)
+    return review
+
+
 def _meaningful(value: Any) -> bool:
     return isinstance(value, str) and len(value.strip()) >= 8
+
+
+def _normalized_text(value: str) -> str:
+    return re.sub(r"\s+", " ", value).strip().casefold()
 
 
 def validate(
@@ -192,6 +236,12 @@ def validate(
                 f"{page_id}: extracted evidence differs from the lesson; "
                 "reinitialize the ledger and review the current targets, blanks and hints"
             )
+        target_or_prompt = _normalized_text(str(page.get("targetOrPrompt", "")))
+        for prompt in actual_evidence.get(page_id, {}).get("substantivePrompts", []):
+            if _normalized_text(prompt) not in target_or_prompt:
+                errors.append(
+                    f"{page_id}: targetOrPrompt must quote the substantive learner prompt: {prompt}"
+                )
         for field in REQUIRED_PAGE_FIELDS:
             value = page.get(field)
             if field in {"visual360", "visual480"}:
@@ -339,6 +389,12 @@ def main(argv: list[str] | None = None) -> int:
     render_parser.add_argument("review", type=pathlib.Path)
     render_parser.add_argument("--output", type=pathlib.Path, required=True)
 
+    refresh_parser = subparsers.add_parser(
+        "refresh", help="refresh hash and extracted evidence without erasing human review fields"
+    )
+    refresh_parser.add_argument("lesson", type=pathlib.Path)
+    refresh_parser.add_argument("review", type=pathlib.Path)
+
     corpus_parser = subparsers.add_parser(
         "audit-corpus", help="require one current completed ledger for every active lesson"
     )
@@ -359,6 +415,10 @@ def main(argv: list[str] | None = None) -> int:
                     print(f"ERROR: {error}", file=sys.stderr)
                 return 1
             print(f"PASS: {args.review} matches {args.lesson}")
+            return 0
+        if args.command == "refresh":
+            refresh_evidence(args.lesson, args.review)
+            print(f"refreshed {args.review}")
             return 0
         if args.command == "audit-corpus":
             errors = audit_corpus(

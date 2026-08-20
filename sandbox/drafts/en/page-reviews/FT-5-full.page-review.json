@@ -33,7 +33,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -56,7 +57,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -79,7 +81,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -102,7 +105,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -125,7 +129,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If I visited for one day, where would you take me—not the famous place?"
+        ]
       }
     },
     {
@@ -148,7 +155,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you ask me before choosing the place?"
+        ]
       }
     },
     {
@@ -171,7 +181,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would we do first when we arrived?"
+        ]
       }
     },
     {
@@ -194,7 +207,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why is that place important to you?"
+        ]
       }
     },
     {
@@ -217,7 +233,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When did you first discover it?"
+        ]
       }
     },
     {
@@ -240,7 +259,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Who have you taken there before?"
+        ]
       }
     },
     {
@@ -263,7 +285,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would I not understand without your explanation?"
+        ]
       }
     },
     {
@@ -286,7 +311,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What kind of place would you want me to show you in my country?"
+        ]
       }
     },
     {
@@ -309,7 +337,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     }
   ]

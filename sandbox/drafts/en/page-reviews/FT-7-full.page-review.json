@@ -33,7 +33,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -56,7 +57,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -79,7 +81,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -102,7 +105,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -125,7 +129,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Convenience stores, trains, taxis, or delivery—pick the one Japan does best."
+        ]
       }
     },
     {
@@ -148,7 +155,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Tell me about a recent time when that service worked especially well for you."
+        ]
       }
     },
     {
@@ -171,7 +181,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What makes your choice better than the other three?"
+        ]
       }
     },
     {
@@ -194,7 +207,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When would a visitor to Japan appreciate that service most?"
+        ]
       }
     },
     {
@@ -217,7 +233,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Where does another country outperform Japan in one of these services?"
+        ]
       }
     },
     {
@@ -240,7 +259,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which of these services would you miss most if you lived abroad?"
+        ]
       }
     },
     {
@@ -263,7 +285,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which Japanese service has a reputation that may be slightly overrated?"
+        ]
       }
     },
     {
@@ -286,7 +311,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you change about the service you picked at the beginning?"
+        ]
       }
     },
     {
@@ -309,7 +337,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     }
   ]

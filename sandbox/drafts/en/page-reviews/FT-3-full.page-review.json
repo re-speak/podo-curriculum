@@ -33,7 +33,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -56,7 +57,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -79,7 +81,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -102,7 +105,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     },
     {
@@ -125,7 +129,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What food would you make me eat if I came to Japan?"
+        ]
       }
     },
     {
@@ -148,7 +155,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What might make a visitor nervous about trying it?"
+        ]
       }
     },
     {
@@ -171,7 +181,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why would you choose that dish over every other Japanese food?"
+        ]
       }
     },
     {
@@ -194,7 +207,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What does it taste and feel like?"
+        ]
       }
     },
     {
@@ -217,7 +233,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When and where is it best?"
+        ]
       }
     },
     {
@@ -240,7 +259,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Who do you usually eat it with?"
+        ]
       }
     },
     {
@@ -263,7 +285,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What should you warn a first-time visitor about?"
+        ]
       }
     },
     {
@@ -286,7 +311,10 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How much can you change the dish before it stops counting?"
+        ]
       }
     },
     {
@@ -309,7 +337,8 @@
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
-        "supportStage": "not-applicable"
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
       }
     }
   ]
