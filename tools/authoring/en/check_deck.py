@@ -178,6 +178,11 @@ GENERIC_PATTERN_RULE = re.compile(
     r"Use the (?:second|complete) (?:frame|move)|make the practical result clear",
     re.I,
 )
+CONTEXTUAL_ROLEPLAY_AS_FREETALK = re.compile(
+    r"\b(?:what would you (?:say|ask)|what would you tell (?:the|a) |"
+    r"report (?:it|the)|describe one|ask (?:reception|the clerk|another passenger))\b",
+    re.I,
+)
 # Articles and suffixes cannot stand as meaning units. Prepositions can: the
 # approved Core pilot deliberately isolates "with", and CORE-12 isolates "at"
 # because placing the time preposition is the retrieval operation being taught.
@@ -1049,6 +1054,17 @@ def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
             errors.append(
                 f"p3-freetalk: live Tutor/Me exchange needs generic icons on every turn "
                 f"(turns={turns} icons={icons} profiles={profiles})"
+            )
+        prompts = partner_turns(live)
+        if not prompts or not prompts[0].rstrip().endswith("?"):
+            errors.append(
+                "p3-freetalk: first Tutor turn must be an actual relevant question — "
+                "do not label an imperative or another roleplay-production task Free Talk"
+            )
+        elif CONTEXTUAL_ROLEPLAY_AS_FREETALK.search(prompts[0]):
+            errors.append(
+                "p3-freetalk: first Tutor question is another scripted roleplay-production "
+                "task — ask an interesting personal, preference, or experience question instead"
             )
         errors.extend(live_tutor_answer_issues("p3-freetalk", live))
 

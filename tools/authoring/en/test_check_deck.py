@@ -573,6 +573,46 @@ class DeckCheckTests(unittest.TestCase):
         })
         self.assertTrue(any("reciprocal Tutor/Me exchange" in item for item in errors))
 
+    def test_contextual_freetalk_rejects_imperative_or_roleplay_production(self):
+        icon = '<span class="who"><span class="avatar icon">T</span></span>'
+        learner_icon = '<span class="who"><span class="avatar icon">私</span></span>'
+        tutor_answer = (
+            f'<div class="turn other">{icon}'
+            '<textarea class="free-input">Tutor\'s answer</textarea></div>'
+        )
+        for first in (
+            "Report the missing bag and describe one clear feature.",
+            "What would you say to reception?",
+        ):
+            live = (
+                f'<div class="turn other">{icon}<span class="korean">{first}</span></div>'
+                f'<div class="turn me">{learner_icon}<textarea></textarea></div>'
+                '<div class="turn me"><span class="who"><span class="avatar icon">私</span></span>'
+                '<span class="korean">What would you prefer?</span></div>'
+                + tutor_answer
+            )
+            with self.subTest(first=first):
+                errors = check_deck.contextual_production_issues(
+                    {"p3-freetalk": live}, enforce_frame_boundaries=False
+                )
+                self.assertTrue(any("roleplay" in item or "actual relevant question" in item for item in errors))
+
+    def test_contextual_freetalk_accepts_relevant_reciprocal_question(self):
+        other = '<span class="who"><span class="avatar icon">T</span></span>'
+        me = '<span class="who"><span class="avatar icon">私</span></span>'
+        live = (
+            f'<div class="turn other">{other}<span class="korean">Which hotel problem bothers you most, and why?</span></div>'
+            f'<div class="turn me">{me}<textarea></textarea></div>'
+            f'<div class="turn me">{me}<span class="korean">Which problem bothers you most?</span></div>'
+            f'<div class="turn other">{other}<textarea>Tutor\'s answer</textarea></div>'
+        )
+        self.assertEqual(
+            check_deck.contextual_production_issues(
+                {"p3-freetalk": live}, enforce_frame_boundaries=False
+            ),
+            [],
+        )
+
     def test_core_late_phrase_inputs_reuse_only_controlled_targets(self):
         pages = {
             "p1-fill": '<input class="slot-input" data-answer="went">',
