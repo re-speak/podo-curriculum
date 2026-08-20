@@ -406,93 +406,93 @@ everyone love that you don't get → would you say so at a dinner
 that has turned heavy. Trivial is the point, not the compromise.*
 
 **34. A tiny thing that always annoys you** `story`
-*Opens:* "What's something small that irritates you that nobody else notices?"
-*Ladder:* what → when did you last see it → do you say anything → who else agrees → what do *you* do
-that annoys people → is it getting worse with age
+*Opens:* "What's one tiny thing that can become surprisingly annoying?"
+*Ladder:* what → where it happens → hardest part to ignore → how to mention it → when to speak up
+→ habits people miss in themselves → why stress magnifies it → act or ignore
 *Moves:* `It drives me crazy when ___.` **(Core 58)** · `I know it's small, but ___.` **(Core 56)**
 *Shared:* KR 4-1
 
 **35. A useless fact about you** `story`
-*Opens:* "Tell me one useless fact about yourself."
-*Ladder:* what → since when → who knows → why is it useless → what's a useful one → what would
-surprise people who know you
+*Opens:* "What's one fact about you that's interesting but not useful?"
+*Ladder:* what → since when → who would be surprised → why it is useless → how it became true →
+a useful fact → good conversation starters → playful introduction
 *Moves:* `Nobody needs to know this, but ___.` **(Core 56)** · `I've always ___.` **(Core 48)**
 *Shared:* KR 4-2
 
 **36. A habit you only have at home** `story`
-*Opens:* "What do you do at home that you'd never do in front of people?"
-*Ladder:* what → when did it start → who's seen it → does anyone else do it → what does your family
-do that you found out was weird → what have you stopped doing
+*Opens:* "What's something people often do at home but hide in public?"
+*Ladder:* common private habits → one typical moment → how habits begin → how observers react →
+shared household routines → cultural differences → habits that disappear → privacy boundaries
 *Moves:* `Only my family knows this.` **(Core 15)** · `I've done it since ___.` **(Core 51)** `chunk`
 *Shared:* KR 4-3
 
 **37. What you do on a rainy day** `story`
 *Opens:* "It's raining and you have no plans. What happens?"
-*Ladder:* what do you do → do you like rain → what's the best rainy-day food → what gets cancelled →
-what's your worst rain memory → the perfect rainy day
+*Ladder:* what happens → sensory mood → enjoy or dislike → best food → plans rain changes → difficult
+rain → how rain improves a day → the perfect rainy day
 *Moves:* `I usually end up ___ing.` **(Core 12)** · `If it rains, I ___.` **(Core 57)**
 *Shared:* KR 4-4
 
 **38. What helps when you're exhausted** `story`
-*Opens:* "When you're drained, what actually helps?"
-*Ladder:* what → does it always work → who helps → what makes it worse → when did you last need it →
-what would you tell someone else
+*Opens:* "When you feel completely drained, what tends to help most?"
+*Ladder:* what helps → first need → signs of recovery → welcome help → what makes it worse → what
+uses energy → recovery or distraction → advice
 *Moves:* `What usually works is ___.` **(Core 103)** `chunk` · `It doesn't always ___.` **(Core 14)**
 *Shared:* KR 4-5
 
 **39. What you really do when you're stressed** `story`
-*Opens:* "What do you really do when you're stressed — not what you should do."
-*Ladder:* what → how often → does it help → what do you tell people you do → what did you used to do
-→ what would you like to do instead
+*Opens:* "What do you really do when you're stressed—not what you should do?"
+*Ladder:* real reaction → when it appears → help and cost → how honestly people describe it → then
+and now → when it becomes unhelpful → realistic alternative → notice it sooner
 *Moves:* `I know I should ___, but ___.` **(Core 56)** · `I used to ___.` **(Core 75)**
 *Shared:* KR 4-6
 
 **40. A superstition you follow anyway** `story`
-*Opens:* "Is there anything you avoid doing, even though you don't believe in it?"
-*Ladder:* what → who taught you → do you actually believe it → what happens if you break it → what's
-a Japanese one I wouldn't know → what's the strangest you've heard
+*Opens:* "Which superstition do you know best, whether or not you follow it?"
+*Ladder:* best-known example → predicted result → why doubters still follow → what feels believable →
+breaking it deliberately → Japanese example → strangest example → tradition worth keeping
 *Moves:* `I don't believe it, but I still ___.` **(Core 56)** · `You're not supposed to ___.` `chunk`
 *Shared:* KR 4-7
 
 **41. What a free Saturday looks like** `story`
-*Opens:* "Walk me through a Saturday when you have nothing on."
-*Ladder:* what happens first → what's fixed → what would ruin it → does Sunday differ → what did
-weekends look like five years ago → what's missing from it
+*Opens:* "Imagine a Saturday with no plans. How would it begin?"
+*Ladder:* how it begins → open morning → one anchor routine → what ruins it → Saturday or Sunday →
+now versus five years ago → company or solitude → plans and freedom
 *Moves:* `I usually start by ___ing.` **(Core 12)** · `Nothing's planned, but ___.` **(Core 56)**
 *Shared:* KR 4-8
 
 **42. A rule that only made sense in your family** `story`
-*Opens:* "What was normal in your house that you found out wasn't normal anywhere else?"
-*Ladder:* what → when did you find out → how did you react → do you still do it → what did other
-families do that seemed strange → what will your family be known for
+*Opens:* "What's a household rule that makes sense in one family but seems strange elsewhere?"
+*Ladder:* a surprising household rule → how it works → discovering differences → why it makes sense →
+rules worth keeping → where rules vary → explaining one to guests → a rule worth being known for
 *Moves:* `We always used to ___.` **(Core 75)** · `I didn't realise until ___.` **(Core 58)**
 *Shared:* KR 4-9
 
 **43. An embarrassing memory that comes back at night** `story`
-*Opens:* "What's something embarrassing that still pops into your head at night?"
-*Ladder:* what happened → how old → who saw → does anyone else remember → what do you do when it
-surfaces → is it actually funny now
+*Opens:* "Why can a harmless embarrassing moment replay for years?"
+*Ladder:* why moments replay → one safe common example → age and perspective → nobody noticed →
+another person's memory → triggers → advice → when it becomes funny
 *Moves:* `I still think about it.` `chunk` · `Nobody else remembers, probably.` `chunk`
 *Shared:* KR 4-10 · *the best-titled topic in the Korean track*
 
 **44. Something that made you laugh out loud** `story`
-*Opens:* "When did you last actually laugh out loud?"
-*Ladder:* what happened → who were you with → why was it funny → does that usually work on you →
-what never works → who's the funniest person you know
+*Opens:* "What kind of moment makes you laugh out loud?"
+*Ladder:* real laughter → setup → other people's reactions → timing, words, or situation → what works
+→ what is hard to enjoy → retelling → a genuinely funny person
 *Moves:* `It was one of those ___ where ___.` **(Core 55)** `chunk` · `You had to be there.` `chunk`
 *Shared:* **NEW → KR**
 
 **45. Your real bedtime** `story`
 *Opens:* "What time did you go to bed last night?"
-*Ladder:* what time really → what were you doing → when did that start → does it matter → have you
-tried to fix it → what actually helped
+*Ladder:* last night → final hour → predictability → next-day effect → change considered or tried →
+what delays sleep → one realistic change → wind-down routine
 *Moves:* `I mean to ___, but ___.` **(Core 56)** `chunk` · `It's got worse recently.` **(Core 116)**
 *Shared:* **NEW → KR**
 
 **46. A personal rule you never break** `story`
-*Opens:* "Is there something you never do, by choice?"
-*Ladder:* what's the rule → how strict → what happened to make it → have you broken it → do people
-find it strange → what rule should you make and haven't
+*Opens:* "What personal rule can make life easier?"
+*Ladder:* useful rule → how strict → what creates one → reasonable exceptions → why rules seem
+strange → how much to explain → whether it still helps → one rule worth trying
 *Moves:* `I never ___.` **(Core 17)** · `I made that rule after ___.` **(Core 32)**
 *Shared:* **NEW → KR**
 

@@ -3,8 +3,8 @@
 
 This narrow source owns only the 26 matched decks in talk-small-things. Each
 article row stores independently reviewed accessible/full English and Japanese,
-and each prompt owns an answer-safe continuation rather than relying on a
-generic fallback.
+and each prompt owns a natural, answerable continuation rather than a defensive
+branch or generic fallback.
 """
 
 from __future__ import annotations
@@ -51,7 +51,7 @@ TOPICS = {
         title="A tiny thing that always annoys you",
         ko="늘 신경 쓰이는 사소한 것",
         ja="いつも気になるささいなこと",
-        goal=("Let's talk about a tiny annoyance and why it gets to someone.", "ささいなことが誰かの気に障る理由について話しましょう。"),
+        goal=("Let's talk about why tiny things can become surprisingly annoying.", "ささいなことが意外なほど気になる理由について話しましょう。"),
         outcomes=(("Name the tiny annoyance", "ささいな不満を一つ挙げる"), ("Describe the last time", "直近の場面を説明する"), ("Turn the complaint around", "自分の側にも目を向ける")),
         article_title=("Why tiny things get to us", "ささいなことが気になる理由"),
         articles=[
@@ -67,14 +67,14 @@ TOPICS = {
             ("A useful question is whether the problem needs action or just patience.", "The useful question is whether the irritation calls for a request, a change in routine, or simple tolerance.", "大切なのは、行動が必要なのか、少し我慢すればよいのかを考えることです。", "その不快感に必要なのが、お願いなのか、習慣の変更なのか、それとも受け流すことなのかを見極めるのが大切です。"),
         ],
         prompts=[
-            prompt("One tiny annoyance", "ささいな不満", "What's something small that irritates you that nobody else notices?", "ほかの人は気づかないのに、自分は気になるささいなことは何ですか？", ["If one comes to mind, where does it happen?", "If none does, which familiar or imagined complaint could you use—for example, loud typing?"]),
-            prompt("The last time", "直近の場面", "Say when you last noticed or heard about the real issue—or when the imagined one could happen.", "実際の問題なら最後に気づいたり話を聞いたりしたのはいつか、想像した問題ならいつ起こりそうかを話してください。", ["What happened—or could happen?", "Why did—or could—the detail stand out?"], full="Say when you last noticed or heard about the real irritation—or when the imagined one might arise."),
-            prompt("What gets to someone", "気になる点", "Which exact part seems most irritating, and to whom?", "具体的にどの部分が、誰にとっていちばん気になりそうですか？", ["Would a small change solve it?", "Could different people react differently?"]),
-            prompt("Say something?", "伝える？", "Say whether anyone affected by the real issue spoke up—or what a person in the imagined case might say.", "実際の問題なら困っている人は何か伝えたのか、想像した例ならその人は何と言いそうかを話してください。", ["If someone spoke about the real issue, what did they say?", "If the case is imagined—or nobody spoke—what might keep someone silent?"], full="Explain whether anyone affected by the real issue raised it—or what someone in the imagined case might say."),
-            prompt("Who agrees", "同意する人", "For the real issue, does anyone else agree—or in the imagined case, might other people agree?", "実際の問題ならほかにも同意する人はいますか、想像した例なら同意する人はいそうですか？", ["If someone agrees or might agree, what would they notice?", "If nobody agrees or seems likely to, why could people's reactions differ?"], full="For the real issue, does anyone else agree—or in the imagined case, would others be likely to agree?"),
-            prompt("Your annoying habit", "自分の気になる癖", "What small thing might you do that annoys other people?", "自分がしていて、ほかの人を困らせるかもしれないささいなことは何ですか？", ["If something comes to mind, has anyone mentioned it?", "If nothing does, what habit would you most want someone to tell you about?"]),
-            prompt("Changing over time", "年齢と変化", "Do small annoyances seem to get stronger with age?", "ささいな不満は、年齢とともに強くなると思いますか？", ["If they do, what might change in people's patience?", "If they do not, what might people learn to ignore?"]),
-            prompt("Worth fixing", "直す価値", "Which tiny annoyance is actually worth fixing?", "ささいな不満のうち、本当に直す価値があるのはどれですか？", ["What would be the smallest useful action?", "Which annoyance is better left alone?"]),
+            prompt("One tiny annoyance", "ささいな不満", "What's one tiny thing that can become surprisingly annoying?", "意外なほど気になることがある、ささいなことは何ですか？", ["When does it stand out most?", "Why can such a small detail get under someone's skin?"]),
+            prompt("Where it happens", "起きる場所", "Where does this kind of annoyance usually happen?", "そのようなささいな不満は、たいていどこで起きますか？", ["Who is most likely to notice it?", "What makes that setting matter?"]),
+            prompt("Hard to ignore", "無視しにくい点", "Which part is hardest to ignore?", "どの部分がいちばん無視しにくいですか？", ["Is repetition the real problem, or something else?", "How could two people react differently?"]),
+            prompt("How to mention it", "伝え方", "What's the best way to mention a tiny annoyance without making it sound huge?", "ささいな不満を大げさに聞こえないように伝えるには、どのような言い方がよいですか？", ["Would humour help or make the request less clear?", "What exact request could solve the problem?"], full="How can someone raise a minor irritation without making it sound disproportionate?"),
+            prompt("Worth speaking up", "伝える価値", "When is a small complaint worth speaking up about?", "ささいな不満でも、どのようなときは伝える価値がありますか？", ["What could happen if nobody mentions it?", "Where would you draw the line?"]),
+            prompt("Our own habits", "自分の習慣", "Which everyday habit is hardest for people to notice in themselves?", "日常の習慣のうち、自分ではいちばん気づきにくいものは何ですか？", ["How could someone point it out kindly?", "What might make the person defensive?"]),
+            prompt("Stress and patience", "ストレスと我慢", "Why do small annoyances grow when people are stressed or tired?", "ストレスや疲れがあると、なぜささいなことがもっと気になるのでしょうか？", ["Which annoyances become easier to ignore after a rest?", "How can someone reset before reacting?"]),
+            prompt("Fix or ignore", "直すか受け流すか", "Which tiny annoyance deserves action, and which is better ignored?", "どのささいな不満には対応し、どの不満は受け流すほうがよいですか？", ["What is the smallest useful fix?", "What would patience look like here?"], full="Which minor irritation genuinely deserves action, and which calls for tolerance?"),
         ],
     ),
     35: topic(
@@ -82,7 +82,7 @@ TOPICS = {
         title="A useless fact about you",
         ko="나에 관한 쓸모없는 사실",
         ja="自分についての役に立たない事実",
-        goal=("Let's share or imagine one harmless useless fact and the story behind it.", "害のない役に立たない事実を一つ、実例または想像で挙げ、その背景を話しましょう。"),
+        goal=("Let's talk about facts that are interesting even when they aren't useful.", "役に立たなくても面白い事実について話しましょう。"),
         outcomes=(("Share one harmless fact", "気軽な事実を一つ話す"), ("Explain how it became true", "そうなった経緯を説明する"), ("Choose a surprising fact", "意外な事実を選ぶ")),
         article_title=("The value of useless facts", "役に立たない事実の価値"),
         articles=[
@@ -98,14 +98,14 @@ TOPICS = {
             ("One odd detail can make an ordinary introduction feel real.", "One well-chosen oddity can make an otherwise predictable introduction feel genuinely human.", "少し変わった一つの細部で、普通の自己紹介が自然に感じられます。", "一つのうまく選んだ変わった事実で、ありきたりな自己紹介にも人間味が生まれます。"),
         ],
         prompts=[
-            prompt("One useless fact", "役に立たない事実", "Tell me one useless fact about yourself.", "自分についての役に立たない事実を一つ教えてください。", ["If one comes to mind, how would you prove it?", "If none does, what harmless fact could someone use as an example?"]),
-            prompt("Since when", "いつから？", "Say how long the real fact has been true—or how long the imagined one would have been true.", "実際の事実ならいつからそうなのか、想像した例ならいつからという設定なのかを話してください。", ["Did it begin on purpose?", "What was different before?"]),
-            prompt("Who knows", "知っている人", "Who knows—or might know—that fact, if anyone?", "その事実を知っている人、または知っていそうな人がいるなら、誰ですか？", ["If someone knows or might know, how could they find out?", "If nobody does, why might it never come up?"]),
-            prompt("Why useless", "役に立たない理由", "Why do you call it useless?", "なぜそれを役に立たないと思うのですか？", ["Could it be useful in one unusual situation?", "What makes it worth remembering anyway?"]),
-            prompt("How it started", "始まり", "How was that fact discovered or learned—or how could it be?", "その事実はどのように分かったり身についたりしたか、または、どのような経緯が考えられますか？", ["Was there—or could there be—a reason at the time?", "Which part of the origin matters most?"]),
-            prompt("A useful fact", "役に立つ事実", "What's one genuinely useful fact about you?", "自分について、本当に役に立つ事実は何ですか？", ["When is it useful?", "Who would benefit from knowing it?"]),
-            prompt("Back to the useless fact", "役に立たない事実に戻る", "Go back to the useless fact from the start: would that real or imagined example surprise people?", "最初に挙げた役に立たない事実に戻ると、その実際の例、または想像した例を聞いて人は驚きそうですか？", ["If it would, what makes it surprising?", "If it would not, why might it sound ordinary to other people?"], full="Returning to the original useless fact, would that real or imagined example genuinely surprise people?"),
-            prompt("A memorable introduction", "記憶に残る自己紹介", "Would you use that same useless fact in a playful introduction?", "その同じ役に立たない事実を、楽しい自己紹介で使いたいですか？", ["If you would, what follow-up would you hope to hear?", "If you would not, what kind of fact would you use instead?"]),
+            prompt("One useless fact", "役に立たない事実", "What's one fact about you that's interesting but not useful?", "自分について、面白いけれど役には立たない事実は何ですか？", ["How did you discover it?", "What question might it make someone ask?"]),
+            prompt("Since when", "いつから？", "How long has that fact been true?", "その事実は、いつから当てはまりますか？", ["Did it happen by accident or by choice?", "What was different before?"]),
+            prompt("Who would be surprised", "驚きそうな人", "Who would be most surprised by that fact?", "その事実を知って、いちばん驚きそうな人は誰ですか？", ["What would they guess instead?", "Why has the fact never come up?"]),
+            prompt("Why useless", "役に立たない理由", "What makes the fact useless?", "その事実は、なぜ役に立たないのですか？", ["Could it help in one unusual situation?", "Why is it worth remembering anyway?"]),
+            prompt("How it became true", "そうなった経緯", "How did the fact become true?", "その事実は、どのような経緯で当てはまるようになりましたか？", ["Was there one turning point?", "Which part of the story explains it best?"]),
+            prompt("A useful fact", "役に立つ事実", "What's one genuinely useful fact about you?", "自分について、本当に役に立つ事実は何ですか？", ["When does it become useful?", "Who benefits from knowing it?"]),
+            prompt("A conversation starter", "会話のきっかけ", "Which useless facts make the best conversation starters?", "どのような役に立たない事実が、会話のよいきっかけになりますか？", ["What makes one easy to ask about?", "When would a fact feel too personal?"]),
+            prompt("A playful introduction", "楽しい自己紹介", "How would you use your fact in a playful introduction?", "その事実を、楽しい自己紹介でどのように使いますか？", ["What exact sentence would you say?", "What follow-up would you hope to hear?"]),
         ],
     ),
     36: topic(
@@ -113,7 +113,7 @@ TOPICS = {
         title="A habit you only have at home",
         ko="집에서만 하는 습관",
         ja="家でだけする習慣",
-        goal=("Let's talk about the habits that belong in private.", "人前では見せない習慣について話しましょう。"),
+        goal=("Let's talk about the habits people keep for home.", "家でだけする習慣について話しましょう。"),
         outcomes=(("Describe a private habit", "人前ではしない習慣を説明する"), ("Trace where it came from", "その習慣の始まりをたどる"), ("Decide what stays private", "どこまで人に見せるか考える")),
         article_title=("Why home changes our behaviour", "家で行動が変わる理由"),
         articles=[
@@ -129,14 +129,14 @@ TOPICS = {
             ("The question is not whether the habit is strange, but whether it causes harm.", "The useful boundary is not normal versus strange, but harmless privacy versus behaviour that affects others.", "大切なのは変かどうかではなく、害があるかどうかです。", "大切な境界は、普通か変かではなく、害のない私的な習慣か、他人に影響する行動かという点です。"),
         ],
         prompts=[
-            prompt("A home-only habit", "家だけの習慣", "What do you do at home that you'd never do in front of people?", "家ではするけれど、人前では絶対にしないことは何ですか？", ["If something comes to mind, what makes home feel safe for it?", "If nothing does, what harmless habit could someone keep private?"]),
-            prompt("One example", "一つの例", "Describe the real or imagined habit in one clear example.", "その実際の習慣、または想像した習慣を、一つの具体例で説明してください。", ["What would another person notice first?", "Why does the habit fit at home?"]),
-            prompt("When it began", "始まった時期", "When did it start, or when might a habit like that start?", "それはいつ始まったか、または、そのような習慣はいつ始まりそうですか？", ["Was there—or could there be—a particular reason?", "How might the habit change over time?"]),
-            prompt("Anyone seen it?", "見た人", "Has anyone seen it, or how might someone react if they did?", "誰かに見られたことがあるか、または、見られたらどう反応されそうですか？", ["If someone has, what did they say?", "If nobody has, would you explain it or laugh it off?"]),
-            prompt("Other people", "ほかの人", "Do you know anyone with a similar habit?", "似た習慣を持つ人を知っていますか？", ["If you do, what is similar about it?", "If you do not, why might the habit be personal to one person?"]),
-            prompt("A household surprise", "家庭の意外な習慣", "What habit from your household—or another one—has seemed unusual?", "自分の家庭、またはほかの家庭の習慣で、変わっていると感じたものは何ですか？", ["When did you realize it was not universal?", "What explanation made it understandable?"]),
-            prompt("A habit you stopped", "やめた習慣", "What private habit have you stopped, if any?", "やめた私的な習慣があるなら、何ですか？", ["If you stopped one, what changed?", "If none, which habit might disappear as your routine changes?"]),
-            prompt("Keep it private", "私的なままにする", "Which harmless habits are better kept private?", "害のない習慣のうち、どのようなものは人に見せないほうがよいですか？", ["What makes privacy reasonable?", "When does a private habit become someone else's concern?"]),
+            prompt("A home-only habit", "家だけの習慣", "What's something people often do at home but hide in public?", "家ではよくするけれど、人前では見せないことは何ですか？", ["Why does home make it feel normal?", "Which example seems most harmless?"]),
+            prompt("One example", "一つの例", "Choose one home-only habit and describe a typical moment.", "家でだけする習慣を一つ選び、よくある場面を説明してください。", ["What would another person notice first?", "Why does the habit fit at home?"]),
+            prompt("How it begins", "始まり方", "How can a home-only habit begin?", "家でだけする習慣は、どのように始まるのでしょうか？", ["What need might it meet?", "What could make it last for years?"]),
+            prompt("Someone sees it", "見られたとき", "How might someone react if they saw the habit?", "その習慣を見た人は、どのように反応しそうですか？", ["What could make the reaction kind instead of judgmental?", "What would be worth explaining?"]),
+            prompt("Shared routines", "一緒に暮らす人の習慣", "Why do people living together develop unusual routines?", "一緒に暮らす人たちは、なぜ独特の習慣を作るのでしょうか？", ["What problem might a routine solve?", "How can it become invisible to the people doing it?"]),
+            prompt("A household surprise", "家庭の意外な習慣", "What's a household habit that could seem unusual somewhere else?", "別の家庭では変わって見えそうな、家の習慣は何ですか？", ["What context makes it understandable?", "What might surprise a visitor?"]),
+            prompt("A changing routine", "変わる習慣", "Which home-only habit could disappear after a change in routine?", "生活の流れが変わると、どのような家だけの習慣がなくなりそうですか？", ["What change could end it?", "Why might another habit survive?"]),
+            prompt("Keep it private", "私的なままにする", "When is it reasonable to keep a harmless private habit to yourself?", "害のない私的な習慣を人に見せないほうがよいのは、どのようなときですか？", ["What makes privacy reasonable?", "When does a private habit become someone else's concern?"]),
         ],
     ),
     37: topic(
@@ -161,13 +161,13 @@ TOPICS = {
         ],
         prompts=[
             prompt("No plans, just rain", "予定のない雨の日", "It's raining and you have no plans. What happens?", "雨が降っていて、予定はありません。どう過ごしますか？", ["What do you do first?", "What would make you leave home anyway?"]),
-            prompt("The first hour", "最初の一時間", "What would you do in the first hour?", "最初の一時間は何をしますか？", ["Would you change clothes or make something?", "What mood would you want to create?"]),
-            prompt("How you feel about rain", "雨への気持ち", "Do you generally like rainy days?", "普段、雨の日は好きですか？", ["If you do, which part do you enjoy?", "If you do not, what bothers you most?"]),
+            prompt("The atmosphere", "雨の日の雰囲気", "What sound, smell, or view would set the mood?", "どのような音や匂い、景色が、その日の雰囲気を作りますか？", ["Which detail feels most relaxing?", "Which one could become annoying?"]),
+            prompt("How rain feels", "雨への気持ち", "What do you enjoy—or dislike—about rainy days?", "雨の日のどのようなところが好き、または苦手ですか？", ["How does the feeling change when you have to travel?", "Which kind of rain affects your mood most?"]),
             prompt("Rainy-day food", "雨の日の食べ物", "What's the best food for a rainy day?", "雨の日にいちばん合う食べ物は何ですか？", ["What makes it fit the weather?", "Would you cook it or get it elsewhere?"]),
             prompt("What gets cancelled", "中止になること", "What kind of plan would you cancel because of rain?", "雨なら、どのような予定を中止しますか？", ["What amount of rain would change your decision?", "Could the plan move indoors instead?"]),
-            prompt("A difficult rain memory", "大変だった雨の記憶", "What's your most difficult memory involving rain?", "雨に関するいちばん大変だった思い出は何ですか？", ["If one comes to mind, what made it difficult?", "If none does, what rainy situation would you most want to avoid?"]),
-            prompt("Better than expected", "予想よりよかった日", "Has rain ever made a day better than expected?", "雨のおかげで、予想よりよい一日になったことはありますか？", ["If it has, what changed for the better?", "If it has not, what could make that happen?"]),
-            prompt("The perfect rainy day", "理想の雨の日", "What would your perfect rainy day look like?", "理想の雨の日は、どのような一日ですか？", ["Who, if anyone, would be part of it?", "What one thing would ruin it?"]),
+            prompt("A difficult situation", "大変な雨の場面", "Which rainy situation would be hardest to deal with?", "雨の日のどのような状況が、いちばん大変そうですか？", ["What would make it manageable?", "Which detail would stay in your memory?"], full="Which situation involving rain would be most difficult to manage?"),
+            prompt("A better day", "よくなる一日", "How can rain improve an ordinary day?", "雨は、普通の一日をどのようによくすることがありますか？", ["Which plan might become better indoors?", "Who might enjoy the change most?"]),
+            prompt("The perfect rainy day", "理想の雨の日", "What would your perfect rainy day look like?", "理想の雨の日は、どのような一日ですか？", ["How much company would fit the day?", "What one thing would ruin it?"], full="What would your ideal rainy day look like?"),
         ],
     ),
     38: topic(
@@ -191,14 +191,14 @@ TOPICS = {
             ("Sometimes the honest answer is that rest alone is not enough.", "Sometimes persistent exhaustion is information that ordinary rest is no longer enough.", "正直に言えば、休むだけでは足りない場合もあります。", "疲れが長く続くこと自体が、普通の休息だけでは足りないという情報になる場合もあります。"),
         ],
         prompts=[
-            prompt("What actually helps", "本当に助けになるもの", "When you're drained, what actually helps?", "くたくたのとき、本当に助けになるものは何ですか？", ["If something helps, how quickly do you notice a difference?", "If nothing reliably helps, what makes the time easier?"]),
-            prompt("The first move", "最初にすること", "What's the first thing you usually do when your energy is gone?", "気力がなくなったとき、普段最初に何をしますか？", ["Do you choose it or do it automatically?", "What does it change first?"]),
-            prompt("Does it always work?", "いつも効く？", "Does that response always work?", "その対処はいつも効きますか？", ["If it does not, what kind of tiredness is different?", "If it usually does, when might it fail?"]),
-            prompt("Help from someone", "人からの助け", "Who helps when you're exhausted, if anyone?", "くたくたのとき、助けてくれる人がいるなら誰ですか？", ["If someone helps, what do they actually do?", "If nobody does, what kind of help would be welcome?"]),
+            prompt("What actually helps", "本当に助けになるもの", "When you feel completely drained, what tends to help most?", "すっかり気力を使い果たしたとき、何がいちばん助けになりやすいですか？", ["How quickly can you tell it's helping?", "What kind of exhaustion needs something different?"], full="When you're completely drained, what tends to restore your energy most effectively?"),
+            prompt("What you need first", "最初に必要なもの", "What do you usually need first: rest, food, quiet, or company?", "普段、最初に必要なのは休息、食事、静けさ、それとも人と過ごすことですか？", ["What does that need change first?", "When might a different choice work better?"]),
+            prompt("Signs of recovery", "回復のサイン", "How can you tell when a recovery habit is working?", "回復のための習慣が効いていると、どう分かりますか？", ["Which change appears first in your body or mood?", "How long does the effect need to last?"]),
+            prompt("Welcome help", "うれしい助け", "What kind of help feels welcome when someone is exhausted?", "誰かが疲れ切っているとき、どのような助けならうれしく感じますか？", ["What kind of help can feel like more work?", "How should someone offer it?"]),
             prompt("What makes it worse", "悪化させるもの", "What makes exhaustion worse for you?", "何があると、疲れがもっとひどくなりますか？", ["Which part can you control?", "What do other people often misunderstand about it?"]),
-            prompt("The last time", "直近の疲れ", "When did you last really need to recover?", "最後に本当に回復が必要だったのはいつですか？", ["If a time comes to mind, what had used your energy?", "If not, what usually signals that you need a break?"]),
+            prompt("What uses your energy", "気力を使うもの", "What usually uses up your energy fastest?", "普段、何をするといちばん早く気力を使い切りますか？", ["What early sign appears?", "What helps you preserve some energy?"]),
             prompt("Help or distraction", "回復？気晴らし？", "How do you tell real recovery from a distraction?", "本当の回復と、ただの気晴らしをどう見分けますか？", ["How do you feel afterward?", "Can the same activity be either one?"]),
-            prompt("Advice that fits", "合う助言", "What would you tell someone who felt completely exhausted?", "完全に疲れ切っている人に、何と伝えますか？", ["What would you ask before giving advice?", "Which common suggestion would you avoid?"]),
+            prompt("Advice that fits", "合う助言", "What would you tell someone who felt completely exhausted?", "完全に疲れ切っている人に、何と伝えますか？", ["What would you ask before giving advice?", "Which common suggestion would you avoid?"], full="What advice would you offer someone who felt completely exhausted?"),
         ],
     ),
     39: topic(
@@ -222,14 +222,14 @@ TOPICS = {
             ("Progress may mean noticing the habit earlier, not removing it completely.", "Improvement may mean recognizing the pattern sooner rather than eliminating it forever.", "改善とは、完全になくすことではなく、早く気づくことかもしれません。", "改善とは、その習慣を永遠になくすことではなく、より早くパターンに気づくことかもしれません。"),
         ],
         prompts=[
-            prompt("The honest answer", "正直な答え", "What do you really do when you're stressed — not what you should do.", "ストレスがあるとき、するべきことではなく、実際にすることを教えてください。", ["If stress has a clear effect, what appears first?", "If it rarely changes your behaviour, what helps you stay steady?"]),
-            prompt("How often", "頻度", "How often does that reaction happen?", "その反応はどのくらいの頻度で起きますか？", ["What level of stress brings it out?", "When does the pattern not appear?"]),
-            prompt("Does it help?", "役立つ？", "Does it actually help?", "それは本当に役立ちますか？", ["If it helps, how long does the effect last?", "If it does not, why do you still return to it?"]),
-            prompt("What you tell people", "人に話すこと", "What do you tell people you do when you're stressed? Say whether you have one usual answer, it varies, or the topic has never come up.", "ストレスがあるときに何をするか、人にはどう話しますか。いつも同じ答えか、その時々で変わるか、それとも一度も話題になったことがないかも話してください。", ["If you have a usual answer, how does it compare with what you really do?", "If it varies, what changes what you say?", "If the topic has never come up, what would you say if it did?"], full="How do you describe your stress response to other people? Say whether your account is consistent, varies, or the subject has never come up."),
-            prompt("An old reaction", "昔の反応", "What did you use to do under stress?", "以前は、ストレスがあるとき何をしていましたか？", ["If something changed, what caused the change?", "If nothing changed, which part has stayed constant?"]),
-            prompt("What makes it worse", "悪化する条件", "Which situation makes your stress habit most unhelpful?", "どのような状況で、そのストレス習慣はいちばん役に立たなくなりますか？", ["What cost appears later?", "Who, if anyone, is affected by it?"]),
+            prompt("The honest answer", "正直な答え", "What do you really do when you're stressed—not what you should do?", "ストレスがあるとき、するべきことではなく、実際には何をしますか？", ["What appears first in your behaviour?", "What helps you stay steady?"]),
+            prompt("When it appears", "現れやすい時", "When does that reaction show up most often?", "その反応は、どのようなときにいちばん現れやすいですか？", ["What level of stress brings it out?", "When does the pattern stay quiet?"]),
+            prompt("Help and cost", "助けと代償", "What does the habit help with, and what does it make worse?", "その習慣は何の助けになり、何を悪化させますか？", ["How long does the relief last?", "What cost appears later?"]),
+            prompt("What people say", "人が話すこと", "How honestly do people usually describe what they do under stress?", "人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？", ["Which response sounds better than it really is?", "Why might someone keep the real habit private?"], full="How accurately do people describe their own coping responses under stress?"),
+            prompt("Then and now", "以前と今", "Compare how you handle stress now with five years ago.", "今のストレスへの対処を、5年前と比べてください。", ["Which part has improved?", "Which part has stayed stubborn?"]),
+            prompt("What makes it worse", "悪化する条件", "Which situation makes your stress habit most unhelpful?", "どのような状況で、そのストレス習慣はいちばん役に立たなくなりますか？", ["Which responsibility becomes harder?", "Who else can be affected?"], full="In which situation is your stress habit most counterproductive?"),
             prompt("A realistic alternative", "現実的な代わり", "What would you realistically like to do instead?", "代わりに、現実的には何をしたいですか？", ["What is the smallest possible version?", "What would make it easier to choose?"]),
-            prompt("Notice it sooner", "早く気づく", "What sign could help you notice stress earlier?", "どのようなサインがあれば、もっと早くストレスに気づけますか？", ["What could you do at that first sign?", "Which sign do you often ignore?"]),
+            prompt("Notice it sooner", "早く気づく", "What sign could help you notice stress earlier?", "どのようなサインがあれば、もっと早くストレスに気づけますか？", ["What could you do at that first sign?", "Which sign is easiest to ignore?"], full="What signal could help you recognize stress sooner?"),
         ],
     ),
     40: topic(
@@ -237,7 +237,7 @@ TOPICS = {
         title="A superstition you follow anyway",
         ko="믿지는 않아도 따르는 미신",
         ja="信じていなくても従う迷信",
-        goal=("Let's talk about a superstition, whether you follow one or not.", "自分が従うかどうかも含めて、迷信について話しましょう。"),
+        goal=("Let's talk about why superstitions survive even when people doubt them.", "人が疑っていても迷信が残る理由について話しましょう。"),
         outcomes=(("Explain one superstition", "迷信を一つ説明する"), ("Separate belief from habit", "信じることと習慣を分ける"), ("Share a local example", "身近な例を紹介する")),
         article_title=("Belief, habit, and luck", "信念、習慣、運"),
         articles=[
@@ -253,14 +253,14 @@ TOPICS = {
             ("Even a skeptic may keep one ritual because it feels familiar.", "Even a committed skeptic may preserve one ritual because familiarity can be emotionally reassuring.", "迷信を疑う人でも、なじみがあるという理由で一つの習慣を続けることがあります。", "強く疑う人でも、なじみが心を落ち着かせるため、一つの習慣を残すことがあります。"),
         ],
         prompts=[
-            prompt("One superstition", "一つの迷信", "Is there anything you avoid doing, even though you don't believe in it?", "信じてはいないのに、避けていることはありますか？", ["If there is, what do you avoid?", "If there is not, which superstition do you hear most often?"]),
-            prompt("The rule", "その決まり", "How does that real or familiar superstition work?", "自分が従っている迷信、またはよく知っている迷信には、どのような決まりがありますか？", ["What action or sign is involved?", "What is supposed to happen?"]),
-            prompt("Where it came from", "教わった相手", "Who taught you about it, or where did you hear it?", "誰に教わったか、または、どこで聞きましたか？", ["How old were you then?", "What explanation were you given?"]),
-            prompt("Belief or habit", "信じる？習慣？", "Do you believe any part of it?", "その迷信を少しでも信じていますか？", ["If you do, which part feels possible?", "If you do not, why might the habit remain?"]),
-            prompt("Break the rule", "破ったら？", "What would happen if you broke the rule?", "その決まりを破ったら、どうなるとされていますか？", ["Would you feel uneasy anyway?", "What real consequence, if any, could follow?"]),
+            prompt("A familiar superstition", "よく知る迷信", "Which superstition do you know best, whether or not you follow it?", "従っているかどうかに関係なく、いちばんよく知っている迷信は何ですか？", ["What action or sign is involved?", "Where did you first hear it?"]),
+            prompt("What should happen", "起きるとされること", "What is supposed to happen when someone follows—or breaks—it?", "その迷信に従ったり破ったりすると、何が起きるとされていますか？", ["Which outcome sounds most dramatic?", "How is the rule passed on?"]),
+            prompt("Why it survives", "残る理由", "Why do people keep following a superstition they doubt?", "人は、疑っている迷信にもなぜ従い続けるのでしょうか？", ["What feeling makes the habit hard to drop?", "How can family or tradition matter?"]),
+            prompt("A believable part", "信じられる部分", "What part of a superstition can feel believable even to a skeptic?", "迷信のどのような部分なら、疑う人にも信じられそうですか？", ["Could coincidence strengthen the belief?", "Might the rule contain practical wisdom?"], full="Which element of a superstition can remain plausible even to a skeptic?"),
+            prompt("Break it on purpose", "わざと破る", "What would make you break a superstition on purpose?", "どのような理由があれば、迷信をわざと破りますか？", ["Would any uneasy feeling remain?", "What evidence would matter most?"]),
             prompt("A Japanese example", "日本の例", "What's a Japanese superstition an outsider might not know?", "外国の人が知らなさそうな日本の迷信は何ですか？", ["Where might they encounter it?", "What background would help them understand it?"]),
-            prompt("The strangest one", "いちばん不思議なもの", "What's the strangest superstition you've heard?", "聞いたことがある中で、いちばん不思議な迷信は何ですか？", ["If one comes to mind, what makes it memorable?", "If none does, what kind of superstition would surprise you?"]),
-            prompt("One to keep", "残したいもの", "Which superstition is worth keeping as a tradition, if any?", "伝統として残す価値がある迷信があるなら、どれですか？", ["What story would survive with it?", "How would you keep it from becoming harmful?"]),
+            prompt("The strangest one", "いちばん不思議なもの", "What's the strangest superstition you know?", "知っている中で、いちばん不思議な迷信は何ですか？", ["What makes it memorable?", "Which part is hardest to explain?"], full="What's the most unusual superstition you've encountered?"),
+            prompt("One to keep", "残したいもの", "Which superstition is worth keeping as a tradition?", "どの迷信は、伝統として残す価値がありますか？", ["What story would survive with it?", "How would you keep it from becoming harmful?"], full="Which superstition deserves to survive as a tradition?"),
         ],
     ),
     41: topic(
@@ -268,7 +268,7 @@ TOPICS = {
         title="What a free Saturday looks like",
         ko="아무 일정 없는 토요일",
         ja="予定のない土曜日",
-        goal=("Let's walk through a Saturday with nothing on the calendar.", "予定のない土曜日を、朝から順に話しましょう。"),
+        goal=("Let's talk about what makes a free Saturday feel satisfying.", "予定のない土曜日を満足できる一日にするものについて話しましょう。"),
         outcomes=(("Describe the day's rhythm", "一日の流れを説明する"), ("Name what protects the day", "その日を守る条件を話す"), ("Notice what's missing", "足りないものに気づく")),
         article_title=("The shape of free time", "自由時間の形"),
         articles=[
@@ -284,14 +284,14 @@ TOPICS = {
             ("What feels missing from a free day can show what we need.", "What feels missing from a free day may reveal what our ordinary routines fail to provide.", "自由な日に足りないと感じるものは、自分に必要なものを示します。", "自由な日に足りないと感じるものから、普段の生活では満たせていないことが見える場合があります。"),
         ],
         prompts=[
-            prompt("A free Saturday", "予定のない土曜日", "Walk me through a Saturday when you have nothing on.", "予定のない土曜日を、順に説明してください。", ["If that happens sometimes, what do you do first?", "If it rarely happens, how would the ideal version begin?"]),
-            prompt("The morning", "朝の流れ", "What happens during the first two hours?", "最初の二時間は、どのように過ごしますか？", ["What time does the day really begin?", "Which part would you refuse to rush?"]),
-            prompt("What's fixed", "決まっていること", "What stays fixed even on a completely free Saturday?", "完全に自由な土曜日でも、必ずすることは何ですか？", ["If something is fixed, why does it matter?", "If nothing is, how do you decide what comes first?"]),
+            prompt("A free Saturday", "予定のない土曜日", "Imagine a Saturday with no plans. How would it begin?", "予定のない土曜日を想像してください。どのように始めますか？", ["What time would the day really start?", "Which part would you refuse to rush?"]),
+            prompt("The open morning", "自由な朝", "What would you do once the morning opened up?", "自由に使える朝になったら、何をしますか？", ["Would you stay home or go somewhere?", "What mood would you want for the day?"]),
+            prompt("A routine worth keeping", "続けたい習慣", "What makes one routine worth keeping even on a free day?", "自由な日でも、一つの習慣を続ける価値があるのはなぜですか？", ["How can it anchor the day?", "When would you happily skip it?"]),
             prompt("What would ruin it", "台無しにするもの", "What would ruin that kind of Saturday?", "そのような土曜日を台無しにするものは何ですか？", ["Could you recover the day afterward?", "Which interruption would be acceptable?"]),
-            prompt("Saturday and Sunday", "土曜と日曜", "How does a free Sunday feel different?", "予定のない日曜日は、どのように違って感じますか？", ["When do you start thinking about Monday?", "Which day is easier to enjoy fully?"]),
-            prompt("Five years ago", "5年前", "What did a free weekend look like five years ago?", "5年前の予定のない週末は、どのようなものでしたか？", ["What has changed most?", "Which old part would you bring back?"]),
-            prompt("Company or solitude", "人と過ごす？一人？", "How much of the day would you spend with other people, if any?", "誰かと過ごすなら、一日のどのくらいを一緒に過ごしますか？", ["If you want company, what kind fits the day?", "If you want solitude, what does it give you?"]),
-            prompt("Described and ideal", "話した一日と理想", "How does the free Saturday you described compare with your ideal one?", "ここまで話した予定のない土曜日は、理想の過ごし方と比べてどうですか？", ["If they differ, what would you add or remove?", "If they match, what makes the day work so well?"]),
+            prompt("Saturday and Sunday", "土曜と日曜", "Why can a free Sunday feel different from a free Saturday?", "予定のない日曜日は、なぜ土曜日と違って感じるのでしょうか？", ["When does Monday enter your thoughts?", "Which day is easier to enjoy fully?"]),
+            prompt("Five years apart", "5年間の違い", "Compare a free weekend now with one five years ago.", "今の予定のない週末を、5年前と比べてください。", ["What has changed most?", "Which older part would you bring back?"]),
+            prompt("Company and solitude", "人と一人の時間", "How much company would fit a truly free day?", "本当に自由な一日には、どのくらい人と過ごす時間が合いますか？", ["What kind of company fits best?", "What does solitude add?"]),
+            prompt("The right balance", "ちょうどよいバランス", "What balance of plans and freedom makes a weekend satisfying?", "どのくらい予定と自由があると、満足できる週末になりますか？", ["When does planning become too much?", "How much empty time feels refreshing?"], full="What balance between structure and freedom makes a weekend genuinely satisfying?"),
         ],
     ),
     42: topic(
@@ -299,7 +299,7 @@ TOPICS = {
         title="A rule that only made sense in your family",
         ko="우리 집에서만 통했던 규칙",
         ja="自分の家でだけ通じた決まり",
-        goal=("Let's unpack a household rule and why it felt normal to the people who followed it.", "家庭の決まりと、それに従う人にとって自然だった理由を話しましょう。"),
+        goal=("Let's talk about why household rules make sense in one home and seem strange in another.", "家庭の決まりが、ある家では自然で別の家では不思議に見える理由について話しましょう。"),
         outcomes=(("Explain the household rule", "家庭の決まりを説明する"), ("Describe discovering the difference", "違いに気づいた場面を話す"), ("Choose what to carry forward", "残したいものを選ぶ")),
         article_title=("Every home makes a small culture", "どの家庭にも小さな文化がある"),
         articles=[
@@ -315,13 +315,13 @@ TOPICS = {
             ("The rules people remember become part of a family's story.", "The rules retold years later become part of the story a family tells about itself.", "覚えている決まりは、その家庭の物語の一部になります。", "何年後も語られる決まりは、その家族が自分たちについて語る物語の一部になります。"),
         ],
         prompts=[
-            prompt("A household rule", "家庭の決まり", "What was normal in your house that you found out wasn't normal anywhere else?", "自分の家では普通だったのに、ほかでは普通でないと知ったことは何ですか？", ["If one comes to mind, what was the rule?", "If none does, what rule from another household surprised you?"]),
-            prompt("How it worked", "決まりの内容", "How did that real or borrowed rule work?", "自分の家庭、またはほかの家庭で知ったその決まりは、どのような内容でしたか？", ["Who was expected to follow it?", "What happened if someone forgot?"]),
-            prompt("When you found out", "気づいた時", "When did you realize other homes were different?", "ほかの家庭は違うと、いつ気づきましたか？", ["If there was a moment, what happened?", "If there was not, how did you gradually learn the difference?"]),
-            prompt("Your reaction", "自分の反応", "How did you react to the difference?", "その違いにどう反応しましたか？", ["Did the rule seem strange at first?", "What explanation changed your view?"]),
-            prompt("Do you still do it?", "今もする？", "Do you follow any part of that rule?", "その決まりの一部に従っていますか？", ["If you do, what makes sense about it?", "If you do not, did you stop—or have you never followed it?"]),
-            prompt("Another home's rule", "ほかの家の決まり", "What rule in another household has seemed strange to you?", "ほかの家庭の決まりで、変わっていると感じたものは何ですか？", ["If one comes to mind, what context might explain it?", "If none does, which area of home life probably varies most?"]),
-            prompt("Carry it forward", "受け継ぐ？", "Which household rule would you choose to carry forward?", "どの家庭の決まりを、これからも受け継ぎたいですか？", ["Why is it worth keeping?", "How would you explain it to a new person?"]),
+            prompt("A household rule", "家庭の決まり", "What's a household rule that makes sense in one family but seems strange elsewhere?", "ある家庭では自然でも、別の場所では不思議に見える決まりは何ですか？", ["What problem might it solve?", "Why might an outsider misunderstand it?"]),
+            prompt("How it works", "決まりの内容", "How would an unusual household rule work day to day?", "家庭の変わった決まりは、日常の中でどのように使われますか？", ["Who would be expected to follow it?", "What might happen when someone forgets?"]),
+            prompt("Discovering differences", "違いに気づく時", "How do people discover that other households have different rules?", "人は、ほかの家庭に違う決まりがあると、どのように気づくのでしょうか？", ["Which situation reveals the difference fastest?", "What reaction might follow?"]),
+            prompt("Understanding the rule", "決まりを理解する", "What makes an unfamiliar household rule feel reasonable?", "知らない家庭の決まりが、納得できるようになるのはどのようなときですか？", ["Which missing context matters most?", "What value might the rule protect?"]),
+            prompt("Worth keeping", "残す価値", "Which family rules are worth keeping as an adult?", "どのような家庭の決まりは、大人になっても残す価値がありますか？", ["What purpose do they still serve?", "How might they need updating?"]),
+            prompt("Where rules differ", "決まりが違う分野", "Which area of home life creates the most different rules?", "家庭生活のどの分野で、いちばん違う決まりが生まれますか？", ["Why does that area vary so much?", "Which difference could cause conflict?"]),
+            prompt("Explaining it", "説明の仕方", "How should a household explain a rule to a guest?", "家庭の決まりを、来客にどのように説明するとよいですか？", ["Which rule needs advance warning?", "Where should the household stay flexible?"]),
             prompt("Known for", "覚えられる決まり", "What small rule should a household be known for?", "家庭は、どのような小さな決まりで知られるとよいですか？", ["What value would the rule express?", "How could it stay flexible?"]),
         ],
     ),
@@ -330,7 +330,7 @@ TOPICS = {
         title="An embarrassing memory that comes back at night",
         ko="밤이면 떠오르는 창피한 기억",
         ja="夜になると思い出す恥ずかしい記憶",
-        goal=("Let's explore why an awkward memory can refuse to disappear.", "気まずい記憶がなかなか消えない理由を考えましょう。"),
+        goal=("Let's talk about why harmless embarrassing memories can stay with us.", "害のない恥ずかしい記憶が残り続ける理由について話しましょう。"),
         outcomes=(("Give a safe real or general example", "無理のない実例または一般的な例を挙げる"), ("Explain why such memories return", "そのような記憶が戻る理由を説明する"), ("Rejudge it from today", "今の視点で見直す")),
         article_title=("Why awkward memories return", "気まずい記憶が戻る理由"),
         articles=[
@@ -346,14 +346,14 @@ TOPICS = {
             ("The memory may stay, but its meaning can still change.", "The event cannot be edited, but its meaning and emotional weight can continue to change.", "記憶は残っても、その意味は変わることがあります。", "出来事そのものは変えられなくても、その意味や感情的な重さは変わり続けます。"),
         ],
         prompts=[
-            prompt("An awkward memory", "気まずい記憶", "What's something embarrassing that still pops into your head at night?", "夜になると今も思い出す恥ずかしいことは何ですか？", ["If a safe example comes to mind, how would you name it briefly?", "If none does, what harmless mistake do people often replay?"]),
-            prompt("What happened", "何が起きた？", "What happened in that safe real or general example?", "その無理なく話せる実例、または一般的な例では、何が起きましたか？", ["What was the awkward turning point?", "What made the moment memorable?"]),
-            prompt("Your age then", "当時の年齢", "How old were you—or how old might someone be in that situation?", "そのとき何歳だったか、または、その状況の人は何歳くらいだと思いますか？", ["Why would age change the reaction?", "What did the person not yet understand?"]),
-            prompt("Who saw", "見ていた人", "Who saw it—or who might see a situation like that?", "その実際の場面を見た人、または似た場面を見そうな人は誰ですか？", ["If someone did or might, how could they react?", "If nobody saw it, why could it still feel embarrassing?"]),
-            prompt("Another person's view", "ほかの人の見方", "What might another person remember from the real event or notice in the general example?", "ほかの人は、実際の出来事なら何を覚え、一般的な例なら何に気づきそうですか？", ["How might another person's view differ?", "If there was no witness, why could the feeling still last?"]),
-            prompt("What brings it back", "思い出すきっかけ", "What brings that real memory back—or could bring a similar memory back?", "その実際の記憶を思い出すきっかけ、または似た記憶を思い出しそうなきっかけは何ですか？", ["Could a place or situation trigger it?", "What might someone do when it returns?"]),
-            prompt("What you'd say now", "今なら言うこと", "What would you tell the person in that memory—or someone in that situation?", "その記憶の中の人、または同じような状況の人に、何と伝えますか？", ["What might they be taking too seriously?", "What lesson, if any, could be useful?"]),
-            prompt("Funny later?", "あとで笑える？", "Could that real memory—or a harmless example—be funny later?", "その実際の記憶、または害のない例は、あとで笑えるものになりそうですか？", ["If it could, what might change the tone?", "If it could not, what kinder interpretation is possible?"]),
+            prompt("Why it replays", "思い出す理由", "Why can a harmless embarrassing moment replay for years?", "害のない恥ずかしい出来事が、何年も思い出されるのはなぜですか？", ["What kind of moment tends to stick?", "Why can night make it feel louder?"]),
+            prompt("A safe example", "話しやすい例", "What's one harmless awkward moment that people often replay?", "人が何度も思い出しやすい、害のない気まずい場面を一つ挙げてください。", ["Where is the awkward turning point?", "Why can a small mistake feel so memorable?"]),
+            prompt("Age and perspective", "年齢と見方", "How might age change the way an embarrassing memory feels?", "年齢によって、恥ずかしい記憶の感じ方はどう変わりそうですか？", ["What does experience help someone understand?", "Which moments feel bigger when people are young?"]),
+            prompt("Nobody noticed", "誰も気づかない時", "Why can an embarrassing moment feel intense even when nobody notices?", "誰も気づかなくても、なぜ恥ずかしい出来事を強く感じるのでしょうか？", ["How does self-image matter?", "What reaction might someone imagine?"]),
+            prompt("Another person's memory", "ほかの人の記憶", "What would another person probably remember from an embarrassing moment?", "恥ずかしい出来事について、ほかの人は何を覚えていそうですか？", ["How might their view differ?", "Which detail would they probably forget?"]),
+            prompt("What brings it back", "思い出すきっかけ", "What kinds of trigger bring old embarrassment back?", "どのようなきっかけで、昔の恥ずかしさを思い出しますか？", ["Could a place, sound, or situation trigger it?", "Why do quiet moments leave more room for it?"], full="What kinds of trigger cause old embarrassment to resurface?"),
+            prompt("What you'd say now", "今なら言うこと", "What would you say to someone replaying an old mistake?", "昔の失敗を何度も思い出している人に、何と伝えますか？", ["What might they be taking too seriously?", "Which lesson would actually help?"]),
+            prompt("Funny later", "あとで笑える時", "When can an embarrassing memory become funny?", "恥ずかしい記憶は、どのようなときに笑えるものになりますか？", ["What can change the tone?", "What makes laughter kind rather than dismissive?"]),
         ],
     ),
     44: topic(
@@ -361,7 +361,7 @@ TOPICS = {
         title="Something that made you laugh out loud",
         ko="소리 내어 웃게 한 것",
         ja="声を出して笑ったこと",
-        goal=("Let's reconstruct a moment that genuinely made you laugh.", "本当に笑った瞬間を、場面からたどって話しましょう。"),
+        goal=("Let's talk about what makes real laughter happen.", "本当に笑うのはどのようなときか、話しましょう。"),
         outcomes=(("Reconstruct the funny moment", "笑った場面を再現する"), ("Explain why it worked", "面白かった理由を説明する"), ("Compare different humour", "笑いの好みを比べる")),
         article_title=("Why laughter is hard to explain", "笑いを説明するのが難しい理由"),
         articles=[
@@ -377,14 +377,14 @@ TOPICS = {
             ("The funniest person is often the one who notices what everyone else missed.", "The funniest person in a group may be the one who notices and names the detail everyone else overlooked.", "いちばん面白い人は、ほかの人が見逃したことに気づく人かもしれません。", "集団でいちばん面白い人は、全員が見逃した細部に気づいて言葉にする人かもしれません。"),
         ],
         prompts=[
-            prompt("The last real laugh", "最後に本当に笑った時", "When did you last actually laugh out loud?", "最後に本当に声を出して笑ったのはいつですか？", ["If a moment comes to mind, where were you?", "If none does, what usually comes closest to making you laugh?"]),
-            prompt("What happened", "何が起きた？", "What happened in that moment—or in a typical example?", "その瞬間、または典型的な例では、何が起きましたか？", ["What set up the funny part?", "What happened immediately before the laugh?"]),
-            prompt("Who was there", "一緒にいた人", "Who were you with, if anyone?", "一緒にいた人がいるなら、誰でしたか？", ["If someone was there, did their reaction add to it?", "If you were alone, what made the moment work without company?"]),
-            prompt("Why it worked", "面白かった理由", "Why was it so funny to you?", "なぜ自分にはそれほど面白かったのですか？", ["Was the timing or the content more important?", "Would everyone understand the humour?"]),
-            prompt("What usually works", "普段笑うもの", "Does that kind of humour usually work on you?", "そのような笑いは、普段も自分に合いますか？", ["What other example fits your taste?", "When can the same style fail?"]),
-            prompt("What never works", "笑えないもの", "What kind of humour never works for you?", "どのような笑いは、自分にはまったく合いませんか？", ["What makes it uncomfortable or dull?", "Can the right person ever make it work?"]),
-            prompt("Retell it", "話し直す", "How would you retell the moment without losing the funny part?", "面白さを失わずに、その場面をどう話し直しますか？", ["Which detail is essential?", "Which background detail would you cut?"]),
-            prompt("The funniest person", "いちばん面白い人", "Who's the funniest person you know, if anyone?", "知っている中で、いちばん面白い人がいるなら誰ですか？", ["If someone comes to mind, what do they notice well?", "If nobody does, what quality makes a person funny to you?"]),
+            prompt("Real laughter", "本当に笑う時", "What kind of moment makes you laugh out loud?", "どのような瞬間に、声を出して笑いますか？", ["What usually catches you off guard?", "What is different about a real laugh?"]),
+            prompt("The setup", "笑いの準備", "What needs to happen before a funny moment works?", "面白い瞬間が成立する前に、何が必要ですか？", ["How much context is enough?", "Where does surprise enter?"]),
+            prompt("Other people's laughter", "ほかの人の笑い", "How can another person's reaction make something funnier?", "ほかの人の反応で、どうしてさらに面白くなるのでしょうか？", ["When does laughter become contagious?", "Can a reaction be funnier than the original joke?"]),
+            prompt("What matters most", "いちばん大切なもの", "Which matters most to you in humour: timing, words, or the situation?", "笑いでは、タイミング、言葉、状況のどれが自分にとっていちばん大切ですか？", ["What example shows that best?", "Would everyone understand the humour?"]),
+            prompt("What usually works", "普段笑うもの", "What kind of humour works reliably on you?", "どのような笑いなら、普段から自分に合いますか？", ["What example fits your taste?", "When can the same style fail?"]),
+            prompt("Hard to enjoy", "楽しみにくい笑い", "Which kind of humour is hardest for you to enjoy?", "どのような笑いが、自分にはいちばん楽しみにくいですか？", ["What makes it uncomfortable or dull?", "Could the right person make it work better?"]),
+            prompt("Retelling it", "話し直す", "What makes a funny story survive being retold?", "面白い話が、語り直しても面白さを保つのはなぜですか？", ["Which detail is essential?", "Which background detail should be cut?"], full="What allows a funny story to survive the act of retelling?"),
+            prompt("A funny person", "面白い人", "What quality makes someone genuinely funny?", "どのような特徴があると、その人は本当に面白いと感じますか？", ["What do funny people notice well?", "When does trying too hard stop working?"]),
         ],
     ),
     45: topic(
@@ -392,7 +392,7 @@ TOPICS = {
         title="Your real bedtime",
         ko="실제로 잠드는 시간",
         ja="実際に寝る時間",
-        goal=("Let's compare when you meant or needed to sleep with what actually happened.", "眠ろうとした時間や眠る必要があった時間と、実際に起きたことを比べましょう。"),
+        goal=("Let's talk about what shapes your real bedtime and the rest you get.", "実際に眠る時間と、取れる休息を左右するものについて話しましょう。"),
         outcomes=(("Describe last night's sleep timing", "昨夜の睡眠の時間帯を話す"), ("Trace what shaped it", "睡眠の時間を左右したものをたどる"), ("Judge what actually helps", "本当に役立つことを考える")),
         article_title=("The gap before sleep", "眠るまでのずれ"),
         articles=[
@@ -408,13 +408,13 @@ TOPICS = {
             ("The real goal is enough rest, not a perfect-looking routine.", "The meaningful goal is sustainable rest rather than a routine that merely appears disciplined.", "本当の目標は、完璧に見える習慣ではなく、十分に休むことです。", "大切な目標は、きちんとして見える習慣ではなく、続けられる休息です。"),
         ],
         prompts=[
-            prompt("Last night's bedtime", "昨夜の就寝時間", "What time did you go to bed last night?", "昨夜は何時に寝ましたか？", ["If you slept overnight, was that earlier or later than you intended?", "If you did not, what kept you awake or shifted your sleep?"]),
-            prompt("What you were doing", "寝る前にしていたこと", "What were you doing just before bed—or while you stayed awake?", "寝る直前、または起きたまま過ごしていた間は、何をしていましたか？", ["Did the activity have a clear stopping point?", "Why did you continue or stop then?"]),
-            prompt("Your sleep pattern", "睡眠のパターン", "Do you have a regular bedtime pattern right now?", "今、決まった就寝時間のパターンはありますか？", ["If you do, when did it begin?", "If you do not, what makes the timing vary?"]),
+            prompt("Last night's bedtime", "昨夜の就寝時間", "What time did you go to bed last night?", "昨夜は何時に寝ましたか？", ["What time did you want to sleep?", "What decided what actually happened?"]),
+            prompt("The last hour", "最後の一時間", "How did you spend the last hour before trying to sleep?", "眠ろうとする前の最後の一時間を、どのように過ごしましたか？", ["Did the activity have a clear stopping point?", "Why was it easy or hard to stop?"]),
+            prompt("Your sleep pattern", "睡眠のパターン", "How predictable is your bedtime from day to day?", "毎日の就寝時間は、どのくらい予測できますか？", ["What causes the biggest variation?", "Which part stays fairly stable?"]),
             prompt("Does it matter?", "問題になる？", "How does the time you sleep—or miss sleep—affect the following day?", "眠る時間、または眠れないことは、その後の一日にどう影響しますか？", ["Which part of the day changes first?", "When does an unusual sleep time matter less?"]),
-            prompt("Tried to change it?", "変えようとした？", "Have you tried to change your sleep schedule?", "睡眠の時間帯を変えようとしたことはありますか？", ["If you have, what did you try?", "If you have not, what would make a change worth trying?"]),
+            prompt("Changing the schedule", "時間帯を変える", "What change to your sleep schedule have you considered or tried?", "睡眠の時間帯について、考えたり試したりした変化は何ですか？", ["Why would the change be worthwhile?", "What makes it difficult to maintain?"]),
             prompt("What gets in the way", "邪魔するもの", "What most often delays or shifts your sleep?", "何が原因で、眠る時間が遅れたりずれたりしますか？", ["Is it a task, a habit, or needed private time?", "Which part could happen at a different time?"]),
-            prompt("What actually helped", "本当に役立ったもの", "What has helped you get the sleep you want, if anything?", "何かあるなら、望む睡眠を取る助けになったものは何ですか？", ["If something helped, why did it work?", "If nothing has, which small experiment seems realistic?"]),
+            prompt("A useful change", "役立つ変化", "Which small change seems most likely to improve your rest?", "どの小さな変化が、休息をいちばん改善できそうですか？", ["Why does it seem realistic?", "What obstacle would it need to overcome?"]),
             prompt("A realistic routine", "現実的な習慣", "What would a realistic, restful wind-down routine look like for you?", "無理なく続けられ、しっかり休むことにもつながる、眠る前の過ごし方はどのようなものですか？", ["When would you start to wind down?", "What would you deliberately leave until later?"]),
         ],
     ),
@@ -423,7 +423,7 @@ TOPICS = {
         title="A personal rule you never break",
         ko="절대 어기지 않는 개인 원칙",
         ja="絶対に破らない自分のルール",
-        goal=("Let's examine a personal rule—or one that might help—and how strict it should be.", "実際の自分ルール、または役立ちそうなルールと、その厳しさを考えましょう。"),
+        goal=("Let's talk about how personal rules can make repeated decisions easier.", "自分のルールが、繰り返す判断をどのように楽にするか話しましょう。"),
         outcomes=(("State a real or possible rule", "実際のルールまたは考えられるルールを述べる"), ("Explain where it came from", "その始まりを説明する"), ("Test its limits", "例外や限界を考える")),
         article_title=("Rules we choose for ourselves", "自分で選ぶルール"),
         articles=[
@@ -439,40 +439,17 @@ TOPICS = {
             ("The best rule still serves a clear purpose today.", "A durable personal rule remains connected to a purpose we can still name and defend today.", "よいルールには、今でも明確な役割があります。", "長く続ける価値のある自分のルールは、今も言葉にして説明できる目的と結びついています。"),
         ],
         prompts=[
-            prompt("One personal rule", "一つの自分ルール", "Is there something you never do, by choice?", "自分で決めて、絶対にしないことはありますか？", ["If there is, how would you state the rule simply?", "If there is not, what decision would benefit from a clear rule?"]),
-            prompt("How strict", "厳しさ", "How strict is that real or possible rule?", "その実際のルール、または作るとよいルールは、どのくらい厳しいものですか？", ["Would any exception be reasonable?", "How would you know the boundary had been crossed?"]),
-            prompt("Where it came from", "始まり", "What happened to create the rule, or what could justify it?", "何があってそのルールができたか、または、何があれば作る理由になりますか？", ["Was there one turning point?", "What cost is the rule meant to prevent?"]),
-            prompt("Ever broken it?", "破ったこと", "Have you ever broken the rule—or ignored a similar boundary?", "そのルールを破ったこと、または似た境界を無視したことはありますか？", ["If you have, what happened afterward?", "If you have not, is the rule established—or still only an idea?"]),
-            prompt("What others think", "ほかの人の見方", "Would other people find the rule strange?", "ほかの人は、そのルールを変だと思いそうですか？", ["If they would, what part might be hard to understand?", "If they would not, is the rule more common than it feels?"]),
+            prompt("A useful personal rule", "役立つ自分ルール", "What personal rule can make life easier?", "どのような自分のルールが、生活を楽にできますか？", ["Which repeated decision could it simplify?", "What boundary would it create?"]),
+            prompt("How strict", "厳しさ", "How strict should a useful personal rule be?", "役立つ自分のルールは、どのくらい厳しくするとよいですか？", ["Which exception would be reasonable?", "How would someone know the boundary was crossed?"]),
+            prompt("Where rules come from", "ルールの始まり", "What experience can turn a preference into a firm rule?", "どのような経験が、好みをはっきりしたルールに変えるのでしょうか？", ["What could become the turning point?", "Which cost is the rule meant to prevent?"]),
+            prompt("A reasonable exception", "納得できる例外", "When is breaking a personal rule reasonable?", "どのようなときは、自分のルールを破ってもよいですか？", ["What separates an exception from an excuse?", "What should happen afterward?"]),
+            prompt("What others see", "ほかの人の見方", "Why can someone else's personal rule seem strange?", "ほかの人の自分ルールが、なぜ不思議に見えることがあるのでしょうか？", ["Which missing context could explain it?", "When might the rule be more common than it seems?"]),
             prompt("Explain or keep private", "説明する？", "How much of the reason would you explain to someone affected by the rule?", "そのルールの影響を受ける人に、理由をどこまで説明しますか？", ["What do they genuinely need to know?", "Which detail can remain private?"]),
-            prompt("Still useful?", "役立つ？", "How would you check whether the rule serves—or could serve—you?", "そのルールが今役立っているか、または今後役立つかを、どう確かめますか？", ["What evidence would support adopting or keeping it?", "What change would justify revising it?"]),
-            prompt("A rule you need", "まだ作れていないルール", "What personal rule should you make but haven't?", "作るべきなのに、まだ作れていない自分のルールは何ですか？", ["What repeated decision would it simplify?", "What is the smallest version you could start with?"]),
+            prompt("Still useful", "今も役立つか", "How can you tell whether a personal rule is still useful?", "自分のルールが今も役立っているか、どう判断できますか？", ["What evidence supports keeping it?", "Which change would justify revising it?"], full="How can someone evaluate whether a personal rule still serves its purpose?"),
+            prompt("A rule to try", "試したいルール", "What personal rule would be worth trying this month?", "今月、どのような自分のルールを試す価値がありますか？", ["What is the smallest workable version?", "How would you test whether it helps?"]),
         ],
     ),
 }
-
-
-# Preserve the same intellectual job while giving the full deck genuinely
-# different B2-C1 phrasing. The shared Japanese prompt remains an exact
-# equivalent because these rewrites change register and clause load, not facts.
-FULL_PROMPT_OVERRIDES = {
-    34: {2: "Which precise aspect seems most irritating, and to whom?", 3: "Explain whether anyone affected by the real issue raised it—or what someone in the imagined case might say.", 4: "For the real issue, does anyone else agree—or in the imagined case, would others be likely to agree?", 7: "Which minor irritation genuinely deserves action?"},
-    35: {3: "What makes you dismiss it as useless?", 5: "Which fact about you has genuine practical value?", 6: "Returning to the original useless fact, would that real or imagined example genuinely surprise people?"},
-    36: {2: "When did it begin, or when might such a habit develop?", 5: "Which habit from your household—or another—once struck you as unusual?", 7: "Which harmless habits are best kept private?"},
-    37: {2: "Do rainy days generally appeal to you?", 5: "What's your most difficult experience involving rain?", 7: "What would your ideal rainy day look like?"},
-    38: {2: "Is that response consistently effective?", 6: "How do you distinguish genuine recovery from distraction?", 7: "What advice would you offer someone who felt completely exhausted?"},
-    39: {2: "Does that response provide any real relief?", 5: "In which situation is your stress habit most counterproductive?", 7: "What signal could help you recognize stress sooner?"},
-    40: {3: "Do you believe there may be any truth in it?", 6: "What's the most unusual superstition you've encountered?", 7: "Which superstition, if any, deserves to survive as a tradition?"},
-    41: {2: "What remains fixed even on a completely unstructured Saturday?", 5: "What was a free weekend like for you five years ago?", 7: "How does the free Saturday you described compare with your ideal version?"},
-    42: {2: "When did you discover that other households worked differently?", 5: "Which rule in another household has struck you as strange?", 7: "What small rule should define a household?"},
-    43: {2: "How old were you—or might someone be in that situation?", 5: "What makes that real memory resurface—or might reactivate a similar one?", 7: "Could that real memory—or a harmless example—eventually become funny?"},
-    44: {3: "Why did it strike you as so funny?", 5: "What kind of humour consistently fails for you?", 6: "How would you retell the moment without flattening the humour?"},
-    45: {3: "How strongly does the time you sleep—or miss sleep—affect the following day?", 5: "What most often delays or shifts the time you sleep?", 7: "What would a realistic and genuinely restful wind-down routine look like for you?"},
-    46: {2: "What created the rule, or what might justify one?", 5: "How much of the reason would you disclose to someone affected by the rule?", 6: "How would you evaluate whether the rule serves—or could serve—you?"},
-}
-for _topic_no, _overrides in FULL_PROMPT_OVERRIDES.items():
-    for _index, _text in _overrides.items():
-        TOPICS[_topic_no]["prompts"][_index]["full"] = _text
 
 
 CLAIM_ORDER = {
@@ -563,7 +540,7 @@ def build(topic_no: int, variant: str) -> str:
         title=topic_data["title"],
         title_ko=topic_data["ko"],
         title_ja=topic_data["ja"],
-        version="2026-08-20",
+        version="2026-08-21",
     )
     head = set_complete(head)
     head = base.set_meta(head, "podo:vocabulary-status", "reviewed")
@@ -571,20 +548,15 @@ def build(topic_no: int, variant: str) -> str:
         head = base.set_meta(head, f"podo:vocabulary:{category}", VOCABULARY[topic_no][category])
 
     goal_en, goal_ja = topic_data["goal"]
-    outcome_rows = "".join(
-        f'<div class="known-row"><span class="k">{esc(en)}</span><span class="j">{esc(ja)}</span></div>'
-        for en, ja in topic_data["outcomes"]
-    )
     pages = [
-        f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Small things">
-      <span class="transition-kicker">SMALL THINGS</span>
-      <h2 class="transition-title">{esc(topic_data["title"])} <span class="title-ja">({esc(topic_data["ja"])})</span></h2>
-      <p class="section-subtitle"><span class="ko">{esc(goal_en)}</span><span class="ja">{esc(goal_ja)}</span></p>
-      <div class="known lines">{outcome_rows}</div>
-    </div>\n''',
+        base.ft_contract.goal_page(
+            title=topic_data["title"], title_ja=topic_data["ja"],
+            topic_en=goal_en, topic_ja=goal_ja,
+            data_act="Small things", kicker="SMALL THINGS",
+        ),
         article_page(topic_no, topic_data, variant),
         base.extract_page(canonical, "lesson-style"),
-        '''    <div class="transition-page" data-page-id="talk-intro" data-act="Let's talk"><span class="transition-kicker">8 QUESTION POOL</span><h2 class="transition-title">Let's talk <span class="title-ja">(話そう)</span></h2><p class="transition-copy">全部答えなくても大丈夫です。一つの答えをゆっくり広げましょう。</p></div>\n''',
+        '''    <div class="transition-page" data-page-id="talk-intro" data-act="Let's talk"><span class="transition-kicker">8 QUESTION POOL</span><h2 class="transition-title">Let's talk <span class="title-ja">(話そう)</span></h2><p class="section-subtitle"><span class="ko">We don't need to answer every question. Let's follow the most interesting parts of your answers.</span><span class="ja">全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。</span></p><div class="tutor-note">Treat these pages as a pool, not a sequence. React or share briefly before choosing the next prompt, skip freely, and move to feedback with 2–3 minutes left.</div></div>\n''',
     ]
     prompt_ids = (("warm-1", "WARM-UP 1"), ("warm-2", "WARM-UP 2")) + tuple(
         (f"q{i}", f"QUESTION {i}") for i in range(1, 7)

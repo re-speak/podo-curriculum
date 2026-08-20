@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/42-a-rule-that-only-made-sense-in-your-family/lesson.html",
+  "lessonSha256": "8f55330719dca3af3c9a0d43f4ccf246783102120d608d9b6fa9b5b27721aec2",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “A rule that only made sense in your family” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “A rule that only made sense in your family” once, and move on.",
+      "targetOrPrompt": "Let's talk about why household rules make sense in one home and seem strange in another. Please read the title aloud. 家庭の決まりが、ある家では自然で別の家では不思議に見える理由について話しましょう。 タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a live conversation about “A rule that only made sense in your family” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “A rule that only made sense in your family” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line directly mirrors the topic orientation and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Generator-source semantic inspection is complete; root visual inspection at 360px and 480px remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Every home makes a small culture (どの家庭にも小さな文化がある): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the ten-claim pre-study article to seed concrete language and viewpoints for “A rule that only made sense in your family.”",
+      "pedagogicalValue": "The article moves from “Every household develops rules that feel obvious inside it.” to “The rules people remember become part of a family's story.,” giving the later prompt pool multiple defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with the selective accessible glosses (household rule (家庭の決まり)) identifies a local vocabulary support need.",
+      "nonTargetSupport": "All ten claims have aligned Japanese support; this accessible article owns household rule (家庭の決まり).",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "All ten claims, paired-variant equivalence, Japanese row order, and selective gloss ownership were reviewed in generator data; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Canonical component reuse and wording were mechanically verified; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “A rule that only made sense in your family” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “A rule that only made sense in your family” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line directly states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The source uses the approved flexible reciprocal-pool contract; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “What's a household rule that makes sense in one family but seems strange elsewhere?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What problem might it solve?” rather than asking every follow-up.",
+      "targetOrPrompt": "What's a household rule that makes sense in one family but seems strange elsewhere? ある家庭では自然でも、別の場所では不思議に見える決まりは何ですか？",
+      "learningTarget": "Explore the distinct “A household rule (家庭の決まり)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What problem might it solve?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What problem might it solve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's a household rule that makes sense in one family but seems strange elsewhere?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Why might an outsider misunderstand it?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What's a household rule that makes sense in one family but seems strange elsewhere?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “How would an unusual household rule work day to day?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Who would be expected to follow it?” rather than asking every follow-up.",
+      "targetOrPrompt": "How would an unusual household rule work day to day? 家庭の変わった決まりは、日常の中でどのように使われますか？",
+      "learningTarget": "Explore the distinct “How it works (決まりの内容)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Who would be expected to follow it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Who would be expected to follow it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How would an unusual household rule work day to day?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What might happen when someone forgets?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How would an unusual household rule work day to day?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “How do people discover that other households have different rules?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which situation reveals the difference fastest?” rather than asking every follow-up.",
+      "targetOrPrompt": "How do people discover that other households have different rules? 人は、ほかの家庭に違う決まりがあると、どのように気づくのでしょうか？",
+      "learningTarget": "Explore the distinct “Discovering differences (違いに気づく時)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which situation reveals the difference fastest?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which situation reveals the difference fastest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do people discover that other households have different rules?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What reaction might follow?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How do people discover that other households have different rules?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “What makes an unfamiliar household rule feel reasonable?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which missing context matters most?” rather than asking every follow-up.",
+      "targetOrPrompt": "What makes an unfamiliar household rule feel reasonable? 知らない家庭の決まりが、納得できるようになるのはどのようなときですか？",
+      "learningTarget": "Explore the distinct “Understanding the rule (決まりを理解する)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which missing context matters most?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which missing context matters most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes an unfamiliar household rule feel reasonable?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What value might the rule protect?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What makes an unfamiliar household rule feel reasonable?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “Which family rules are worth keeping as an adult?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What purpose do they still serve?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which family rules are worth keeping as an adult? どのような家庭の決まりは、大人になっても残す価値がありますか？",
+      "learningTarget": "Explore the distinct “Worth keeping (残す価値)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What purpose do they still serve?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What purpose do they still serve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which family rules are worth keeping as an adult?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How might they need updating?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which family rules are worth keeping as an adult?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “Which area of home life creates the most different rules?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Why does that area vary so much?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which area of home life creates the most different rules? 家庭生活のどの分野で、いちばん違う決まりが生まれますか？",
+      "learningTarget": "Explore the distinct “Where rules differ (決まりが違う分野)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Why does that area vary so much?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Why does that area vary so much?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which area of home life creates the most different rules?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which difference could cause conflict?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which area of home life creates the most different rules?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “How should a household explain a rule to a guest?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which rule needs advance warning?” rather than asking every follow-up.",
+      "targetOrPrompt": "How should a household explain a rule to a guest? 家庭の決まりを、来客にどのように説明するとよいですか？",
+      "learningTarget": "Explore the distinct “Explaining it (説明の仕方)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which rule needs advance warning?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which rule needs advance warning?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should a household explain a rule to a guest?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Where should the household stay flexible?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How should a household explain a rule to a guest?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What small rule should a household be known for?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What value would the rule express?” rather than asking every follow-up.",
+      "targetOrPrompt": "What small rule should a household be known for? 家庭は、どのような小さな決まりで知られるとよいですか？",
+      "learningTarget": "Explore the distinct “Known for (覚えられる決まり)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What value would the rule express?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What value would the rule express?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What small rule should a household be known for?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How could it stay flexible?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What small rule should a household be known for?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Leave the conversation with one recognized success and one specific improvement the learner can reuse.",
+      "pedagogicalValue": "Turns discussion evidence into concise, actionable feedback and closes with productive uptake.",
+      "failureDiagnosis": "An overly general note would fail to identify a reusable strength or next step from the learner's actual speech.",
+      "nonTargetSupport": "The bilingual framing explains the two-part feedback outcome without adding another discussion task.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No distractors appear; the single feedback area is explicitly divided into one good point and one next step.",
+      "componentConsistency": "Uses the approved synchronized tutor-feedback area and one-repeat closing instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Feedback wording and actionability were reviewed in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/44-something-that-made-you-laugh-out-loud/lesson.html",
+  "lessonSha256": "b219f50cc4096ede361c24518af26500d77e6d6bb85ccfcc72b41fc95d262720",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pending",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “Something that made you laugh out loud” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “Something that made you laugh out loud” once, and move on.",
+      "targetOrPrompt": "Let's talk about what makes real laughter happen. Please read the title aloud. 本当に笑うのはどのようなときか、話しましょう。 タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a live conversation about “Something that made you laugh out loud” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “Something that made you laugh out loud” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line directly mirrors the topic orientation and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Generator-source semantic inspection is complete; root visual inspection at 360px and 480px remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Why laughter is hard to explain (笑いを説明するのが難しい理由): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the ten-claim pre-study article to seed concrete language and viewpoints for “Something that made you laugh out loud.”",
+      "pedagogicalValue": "The article moves from “We often laugh for real before we consciously understand what made something funny.” to “The funniest person in a group may be the one who notices and names the detail everyone else overlooked.,” giving the later prompt pool multiple defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with the selective full glosses (contagious (人にうつる)) identifies a local vocabulary support need.",
+      "nonTargetSupport": "All ten claims have aligned Japanese support; this full article owns contagious (人にうつる).",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "All ten claims, paired-variant equivalence, Japanese row order, and selective gloss ownership were reviewed in generator data; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Canonical component reuse and wording were mechanically verified; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Something that made you laugh out loud” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Something that made you laugh out loud” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line directly states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The source uses the approved flexible reciprocal-pool contract; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “What kind of moment makes you laugh out loud?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What usually catches you off guard?” rather than asking every follow-up.",
+      "targetOrPrompt": "What kind of moment makes you laugh out loud? どのような瞬間に、声を出して笑いますか？",
+      "learningTarget": "Explore the distinct “Real laughter (本当に笑う時)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What usually catches you off guard?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What usually catches you off guard?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of moment makes you laugh out loud?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What is different about a real laugh?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What kind of moment makes you laugh out loud?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “What needs to happen before a funny moment works?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How much context is enough?” rather than asking every follow-up.",
+      "targetOrPrompt": "What needs to happen before a funny moment works? 面白い瞬間が成立する前に、何が必要ですか？",
+      "learningTarget": "Explore the distinct “The setup (笑いの準備)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “How much context is enough?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How much context is enough?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What needs to happen before a funny moment works?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Where does surprise enter?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What needs to happen before a funny moment works?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “How can another person's reaction make something funnier?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “When does laughter become contagious?” rather than asking every follow-up.",
+      "targetOrPrompt": "How can another person's reaction make something funnier? ほかの人の反応で、どうしてさらに面白くなるのでしょうか？",
+      "learningTarget": "Explore the distinct “Other people's laughter (ほかの人の笑い)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “When does laughter become contagious?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “When does laughter become contagious?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can another person's reaction make something funnier?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Can a reaction be funnier than the original joke?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How can another person's reaction make something funnier?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “Which matters most to you in humour: timing, words, or the situation?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What example shows that best?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which matters most to you in humour: timing, words, or the situation? 笑いでは、タイミング、言葉、状況のどれが自分にとっていちばん大切ですか？",
+      "learningTarget": "Explore the distinct “What matters most (いちばん大切なもの)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What example shows that best?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What example shows that best?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which matters most to you in humour: timing, words, or the situation?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Would everyone understand the humour?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which matters most to you in humour: timing, words, or the situation?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “What kind of humour works reliably on you?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What example fits your taste?” rather than asking every follow-up.",
+      "targetOrPrompt": "What kind of humour works reliably on you? どのような笑いなら、普段から自分に合いますか？",
+      "learningTarget": "Explore the distinct “What usually works (普段笑うもの)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What example fits your taste?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What example fits your taste?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of humour works reliably on you?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When can the same style fail?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What kind of humour works reliably on you?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “Which kind of humour is hardest for you to enjoy?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What makes it uncomfortable or dull?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which kind of humour is hardest for you to enjoy? どのような笑いが、自分にはいちばん楽しみにくいですか？",
+      "learningTarget": "Explore the distinct “Hard to enjoy (楽しみにくい笑い)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What makes it uncomfortable or dull?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What makes it uncomfortable or dull?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which kind of humour is hardest for you to enjoy?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Could the right person make it work better?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which kind of humour is hardest for you to enjoy?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “What allows a funny story to survive the act of retelling?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which detail is essential?” rather than asking every follow-up.",
+      "targetOrPrompt": "What allows a funny story to survive the act of retelling? 面白い話が、語り直しても面白さを保つのはなぜですか？",
+      "learningTarget": "Explore the distinct “Retelling it (話し直す)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which detail is essential?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which detail is essential?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What allows a funny story to survive the act of retelling?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which background detail should be cut?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What allows a funny story to survive the act of retelling?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What quality makes someone genuinely funny?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What do funny people notice well?” rather than asking every follow-up.",
+      "targetOrPrompt": "What quality makes someone genuinely funny? どのような特徴があると、その人は本当に面白いと感じますか？",
+      "learningTarget": "Explore the distinct “A funny person (面白い人)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What do funny people notice well?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What do funny people notice well?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What quality makes someone genuinely funny?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When does trying too hard stop working?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What quality makes someone genuinely funny?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Leave the conversation with one recognized success and one specific improvement the learner can reuse.",
+      "pedagogicalValue": "Turns discussion evidence into concise, actionable feedback and closes with productive uptake.",
+      "failureDiagnosis": "An overly general note would fail to identify a reusable strength or next step from the learner's actual speech.",
+      "nonTargetSupport": "The bilingual framing explains the two-part feedback outcome without adding another discussion task.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No distractors appear; the single feedback area is explicitly divided into one good point and one next step.",
+      "componentConsistency": "Uses the approved synchronized tutor-feedback area and one-repeat closing instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Feedback wording and actionability were reviewed in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
