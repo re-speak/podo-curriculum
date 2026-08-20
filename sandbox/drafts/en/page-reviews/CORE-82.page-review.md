@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/82-were-on-track-but/lesson.html`
-- SHA-256: `bc460191c81adca144f6c4486348830972b97bdc9f40d679319ad7ca7f4583bf`
+- SHA-256: `22aa1069a3f092d365c2e18133e516c24f61f8c5b0a5c0a3f7c45ae5173278f4`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -22,7 +22,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -39,7 +39,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -56,7 +56,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -73,7 +73,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": ["on track to", "by", "までに", "順調に進んでいます", "on track to", "by", "までに", "順調に進んでいます", "on track to", "by", "までに", "順調に進んでいます"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -90,7 +90,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": ["on track to", "by", "までに", "順調です", "on track to", "by", "までに", "順調です", "on track to", "by", "までに", "順調です", "on track to", "by", "までに", "順調です"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -107,7 +107,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -124,7 +124,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The page has a solvable, meaningful contrast or ordering decision, and the learner says the completed sentence.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -141,7 +141,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": ["順調です", "までに", "順調です", "までに"], "blankAnswers": ["on track to", "by", "on track to", "by"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -158,7 +158,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["We're on track to finish the report by Friday.", "We're on track to send the draft by noon.", "We're on track to ship the order by Tuesday.", "We're on track to get approval by tomorrow."], "hintChips": ["レポート:report", "金曜日:Friday", "下書き:draft", "正午:noon", "注文:order", "出荷:shipment", "承認:approval", "明日:tomorrow"], "supportStage": "supported", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -175,7 +175,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["レポート:report", "下書き:draft", "承認:approval", "期限:deadline"], "supportStage": "not-applicable", "substantivePrompts": ["Now, use “We're on track to ___ by ___” to give me a real progress update."]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -192,7 +192,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -209,7 +209,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": ["main issue is that", "一番の問題は", "main issue is that", "一番の問題は", "main issue is that", "一番の問題は"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -226,7 +226,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": ["main issue is that", "一番の問題は", "main issue is that", "一番の問題は", "main issue is that", "一番の問題は", "main issue is that", "一番の問題は"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -243,7 +243,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -260,7 +260,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The page has a solvable, meaningful contrast or ordering decision, and the learner says the completed sentence.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -277,7 +277,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": ["一番の問題は", "一番の問題は", "一番の問題は", "一番の問題は"], "blankAnswers": ["main issue is that", "main issue is that", "main issue is that", "main issue is that"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -294,7 +294,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The main issue is that the supplier's late.", "The main issue is that the draft isn't ready.", "The main issue is that we're waiting for approval.", "The main issue is that the shipment is delayed."], "hintChips": ["問題:issue", "取引先:supplier", "問題:issue", "下書き:draft", "問題:issue", "承認:approval", "問題:issue", "出荷:shipment"], "supportStage": "supported", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -311,7 +311,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["問題:issue", "取引先:supplier", "下書き:draft", "承認:approval"], "supportStage": "not-applicable", "substantivePrompts": ["Now, use “The main issue is that ___” to tell me one real risk."]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -328,7 +328,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -345,7 +345,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": ["on track to", "by", "までに", "順調です", "main issue is that", "一番の問題は"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -362,7 +362,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["on track to", "by", "main issue is that"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -379,7 +379,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How is your current task going?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -396,7 +396,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["on track to", "by", "main issue is that"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
 
@@ -413,6 +413,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
