@@ -37,7 +37,9 @@ class ContextualHotelsFoodBatchTests(unittest.TestCase):
             _, source = batch.build(number, lesson)
             pages = dict(check_deck.pages(source))
             self.assertEqual(list(pages)[-1], "transfer-scene", number)
-            self.assertGreaterEqual(len(pages), 23, number)
+            self.assertNotIn("situation-card", pages, number)
+            for required in ("lesson-goal", "scene", "understand", "p1-fill", "p1-translate", "p1-write", "p2-fill", "p2-translate", "p2-write", "p3-model", "p3-complete", "p3-freetalk", "transfer-scene"):
+                self.assertIn(required, pages, (number, required))
             self.assertIn('class="sent-hero"', pages["p1-teach"], number)
             self.assertIn('class="sent-more"', pages["p1-teach"], number)
             self.assertIn('class="sent-hero"', pages["p2-teach"], number)
@@ -57,6 +59,33 @@ class ContextualHotelsFoodBatchTests(unittest.TestCase):
             self.assertIn('class="nuance-compare"', pages["native-tip"], number)
             self.assertEqual(check_deck.class_tag_count(pages["understand"], "choose-row", "receptive-choice"), 4, number)
             self.assertEqual(check_deck.meta_content(source, "podo:proofread-status"), "complete", number)
+
+    def test_write_freetalk_and_transfer_copy_names_the_real_job(self):
+        rejected_prompt = "You have a problem. What would you say?"
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            freetalk = pages["p3-freetalk"]
+            tutor_question, _, _, _, learner_question, _ = lesson["live"]
+            self.assertTrue(tutor_question.endswith("?"), number)
+            self.assertTrue(learner_question.endswith("?"), number)
+            self.assertNotIn("___", tutor_question, number)
+            self.assertNotRegex(tutor_question.lower(), r"what would you (?:say|ask)|imagine|report it|explain")
+            self.assertIn(batch.esc(tutor_question), freetalk, number)
+            self.assertIn(batch.esc(learner_question), freetalk, number)
+            for part in (1, 2):
+                write = pages[f"p{part}-write"]
+                self.assertIn(batch.esc(lesson[f"p{part}"]["write_script"]), write, (number, part))
+                self.assertNotIn("to make your own sentence", write, (number, part))
+            transfer = pages["transfer-scene"]
+            self.assertIn("using the same two lines", transfer, number)
+            self.assertIn("同じ二つの表現を使って", transfer, number)
+            self.assertIn(batch.esc(batch.ROLE_JA[lesson["transfer_role"]]), transfer, number)
+
+            broken = copy.deepcopy(lesson)
+            broken["live"] = (rejected_prompt,) + broken["live"][1:]
+            with self.assertRaisesRegex(ValueError, "conversation, not pattern production"):
+                batch.validate_lesson(number, broken)
 
     def test_review_repairs_are_encoded_in_source_and_output(self):
         ctx7 = batch.LESSONS[7]

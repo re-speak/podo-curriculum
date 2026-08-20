@@ -24,6 +24,25 @@ PILOT = (
 )
 ME, OTHER = core.ME, core.OTHER
 
+ROLE_JA = {
+    "Receptionist": "受付係",
+    "Server": "店員",
+    "Clerk": "店員",
+    "Host": "予約係",
+    "Transfer Agent": "乗り継ぎ担当者",
+    "Baggage Agent": "手荷物係",
+    "Passenger": "乗客",
+    "Museum Attendant": "美術館の受付係",
+    "Property Manager": "管理担当者",
+    "Buffet Attendant": "ビュッフェ係",
+    "Deli Worker": "デリの店員",
+    "Kiosk Clerk": "売店の店員",
+    "Tour Agent": "ツアー係",
+    "Travel Adviser": "旅行案内係",
+    "Station Agent": "駅の手荷物係",
+    "Bus Passenger": "バスの乗客",
+}
+
 
 def rows(*items):
     return items
@@ -67,7 +86,10 @@ LESSONS = {
                 "予約を特定する",
                 ("a reservation · under Tanaka", "a reservation · under Sato"),
             ),
-            write=("Whose name would your hotel booking be under?", "ホテルは誰の名前で予約しますか？"),
+            write=("Whose name would your hotel booking be under?", "「I have a reservation under ___」を使って、予約名を伝えましょう。"),
+            write_frame="I have a reservation under ___",
+            write_script="Use “I have a reservation under ___” to tell the receptionist the booking name.",
+            translate_hints=(("田中", "Tanaka"), ("佐藤", "Sato"), ("森", "Mori"), ("加藤", "Kato")),
         ),
         p2=dict(
             bridge="次に、部屋を待つ間の荷物について具体的に頼みます。",
@@ -92,7 +114,10 @@ LESSONS = {
                 "一時預かりを頼む",
                 ("our bags · here until three", "our suitcases · here until four"),
             ),
-            write=("What would you need the hotel to store, and until when?", "ホテルに何を何時まで預けたいですか？"),
+            write=("What would you need the hotel to store, and until when?", "「Can we leave ___ here until ___?」を使って、預ける物と時間を伝えましょう。"),
+            write_frame="Can we leave ___ here until ___?",
+            write_script="Use “Can we leave ___ here until ___?” to say what you want stored and until when.",
+            translate_hints=(("バッグ", "bag"), ("スーツケース", "suitcase"), ("リュック", "backpack"), ("ベビーカー", "stroller")),
         ),
         scene_turns=(
             ("other", "Welcome. How can I help?", "いらっしゃいませ。ご用件を伺います。"),
@@ -110,12 +135,12 @@ LESSONS = {
             ("Check-in time starts at three.", "Room access begins at three", "部屋に入れるのは3時から", "The hotel closes at three", "ホテルは3時に閉まる"),
         ),
         live=(
-            "You arrive before check-in. What would you ask reception?",
-            "チェックイン前に着きました。受付で何と頼みますか？",
+            "What is the best way to spend time when you arrive too early for check-in?",
+            "チェックインより早く着いたら、どう過ごすのがいちばんいいですか？",
             "I have a reservation under ___. Can we leave ___ here until ___?",
             "予約を確認し、荷物を預ける自分の言い方",
-            "What do you usually do when you arrive early?",
-            "早く着いたときは普段どうしますか？",
+            "Have you ever arrived before check-in?",
+            "先生はチェックイン前に着いたことがありますか？",
         ),
         tip=(
             "Choose “bags” or “luggage”",
@@ -140,7 +165,7 @@ LESSONS = {
         vocab=(
             "check-in time|チェックイン時間; luggage room|荷物預かり室; reservation|予約",
             "receipt|お預かり証|CORE-22",
-            "hotel|ホテル; bag|バッグ; suitcase|スーツケース; backpack|リュック; stroller|ベビーカー; room|部屋; can we leave|置いてもいいですか",
+            "hotel|ホテル; bag|バッグ; suitcase|スーツケース; backpack|リュック; stroller|ベビーカー; room|部屋; can we leave|置いてもいいですか; Tanaka|田中; Sato|佐藤; Mori|森; Kato|加藤",
             "collect|受け取る; claim tag|引換札",
         ),
     ),
@@ -176,7 +201,10 @@ LESSONS = {
                 "故障を伝える",
                 ("The shower · doesn't work", "The key card · doesn't work"),
             ),
-            write=("What hotel-room problem would you report first?", "ホテルの部屋なら、どの問題を最初に伝えますか？"),
+            write=("What hotel-room problem would you report first?", "「___ doesn't work」を使って、故障している物を伝えましょう。"),
+            write_frame="___ doesn't work",
+            write_script="Use “___ doesn't work” to identify the broken item.",
+            translate_hints=(("エアコン", "air conditioning"), ("シャワー", "shower"), ("キーカード", "key card"), ("ベッド脇のランプ", "bedside lamp")),
         ),
         p2=dict(
             bridge="直らない場合は、必要な解決策をはっきり頼みます。",
@@ -199,7 +227,10 @@ LESSONS = {
                 "解決策を頼む",
                 ("Can we · change rooms?", "Can we · get another key card?"),
             ),
-            write=("What solution would you ask the hotel for?", "ホテルにどんな解決策を頼みますか？"),
+            write=("What solution would you ask the hotel for?", "「Can we ___?」を使って、希望する解決策を頼みましょう。"),
+            write_frame="Can we ___?",
+            write_script="Use “Can we ___?” to ask for the solution you want.",
+            translate_hints=(("部屋", "room"), ("別の部屋", "room"), ("キーカード", "key card"), ("扇風機", "fan")),
         ),
         scene_turns=(
             ("other", "Reception. How can I help?", "フロントです。ご用件を伺います。"),
@@ -218,12 +249,12 @@ LESSONS = {
             ("There is no extra charge for the move.", "Changing rooms will not cost more", "部屋を替えても追加料金はない", "The new room costs more", "新しい部屋は料金が高い"),
         ),
         live=(
-            "The air conditioning has failed. What would you say to reception?",
-            "エアコンが故障しました。受付に何と伝えますか？",
+            "Which hotel-room problem would bother you most, and why?",
+            "ホテルの部屋では、どんな問題がいちばん困りますか？なぜですか？",
             "The ___ doesn't work. Can we ___?",
             "故障と希望する解決策",
-            "Which problem would bother you most?",
-            "どの問題がいちばん困りますか？",
+            "Have you ever had a problem with a hotel room?",
+            "先生はホテルの部屋で困ったことがありますか？",
         ),
         tip=(
             "Describe a general fault or a problem right now",
@@ -288,6 +319,9 @@ LESSONS = {
                 "実際のアレルギーがある場合だけ伝え、ない場合は I don't eat ___ を使いましょう。",
             ),
             write_scaffold="Real allergy: I'm allergic to ___. / Otherwise: I don't eat ___.",
+            write_frame="I'm allergic to ___",
+            write_script="If you have a real allergy, use “I'm allergic to ___.” Otherwise, use “I don't eat ___.”",
+            translate_hints=(("ナッツ", "nuts"), ("甲殻類", "shellfish"), ("乳製品", "dairy"), ("卵", "eggs")),
         ),
         p2=dict(
             bridge="次に、おすすめの料理にその食材が入っていないか確認します。",
@@ -309,7 +343,10 @@ LESSONS = {
                 "料理を確認する",
                 ("any nuts?", "any dairy?"),
             ),
-            write=("Which ingredient would you check for?", "どの食材が入っているか確認しますか？"),
+            write=("Which ingredient would you check for?", "「Does it contain any ___?」を使って、確認したい食材を尋ねましょう。"),
+            write_frame="Does it contain any ___?",
+            write_script="Use “Does it contain any ___?” to ask about an ingredient.",
+            translate_hints=(("ナッツ", "nuts"), ("甲殻類", "shellfish"), ("乳製品", "dairy"), ("卵", "eggs")),
         ),
         scene_turns=(
             ("other", "Are you ready to order?", "ご注文はお決まりですか？"),
@@ -327,12 +364,12 @@ LESSONS = {
             ("The kitchen uses separate pans.", "The food is cooked in different cookware", "別の調理器具で調理する", "All dishes use the same pan", "すべて同じフライパンで調理する"),
         ),
         live=(
-            "If you have a real allergy, tell the server. Otherwise, say one food you don't eat.",
-            "実際のアレルギーがあれば伝えましょう。なければ、食べない物を一つ伝えてください。",
+            "When you try a new restaurant, what do you check before ordering?",
+            "初めてのレストランでは、注文前に何を確認しますか？",
             "Real allergy: I'm allergic to ___. / Otherwise: I don't eat ___. Then ask: Does it contain any ___?",
             "安全に使えるほうを選び、食材を確認",
-            "What ingredient do you usually check?",
-            "普段どの食材を確認しますか？",
+            "Is there any ingredient you usually avoid?",
+            "先生は普段避けている食材がありますか？",
         ),
         tip=(
             "Use “allergic” only for an allergy",
@@ -393,7 +430,10 @@ LESSONS = {
                 "対比を直す",
                 ("the iced coffee · not the hot one", "the tea · not the coffee"),
             ),
-            write=("What order mix-up would you correct?", "どんな注文の間違いを直しますか？"),
+            write=("What order mix-up would you correct?", "「I ordered ___, not ___」を使って、注文の間違いを直しましょう。"),
+            write_frame="I ordered ___, not ___",
+            write_script="Use “I ordered ___, not ___” to correct the order.",
+            translate_hints=(("アイスコーヒー", "iced coffee"), ("紅茶", "tea"), ("スープ", "soup"), ("炭酸水", "sparkling water")),
         ),
         p2=dict(
             bridge="次に、本当にほしい品を instead で頼み直します。",
@@ -415,7 +455,10 @@ LESSONS = {
                 "交換を頼む",
                 ("the iced one · instead", "the soup · instead"),
             ),
-            write=("What would you ask for instead?", "代わりに何を頼みますか？"),
+            write=("What would you ask for instead?", "「Can I have ___ instead?」を使って、代わりに欲しい物を頼みましょう。"),
+            write_frame="Can I have ___ instead?",
+            write_script="Use “Can I have ___ instead?” to ask for the replacement you want.",
+            translate_hints=(("アイスコーヒー", "iced coffee"), ("紅茶", "tea"), ("スープ", "soup"), ("普通の水", "still water")),
         ),
         scene_turns=(
             ("other", "Here's your hot coffee.", "ホットコーヒーです。"),
@@ -433,12 +476,12 @@ LESSONS = {
             ("No problem. I'll remake it.", "The drink will be prepared again", "飲み物を作り直してくれる", "The same drink will be reheated", "同じ飲み物を温め直す"),
         ),
         live=(
-            "The café brings the wrong drink. What would you say?",
-            "カフェで違う飲み物が届きました。何と伝えますか？",
+            "Which would bother you more: the wrong drink or the wrong meal?",
+            "飲み物と食事なら、どちらを間違えられるほうが困りますか？",
             "I ordered ___, not ___. Can I have ___ instead?",
             "自分なら伝える注文と交換品",
             "Have you ever received the wrong order?",
-            "注文を間違えられたことはありますか？",
+            "先生は注文を間違えられたことがありますか？",
         ),
         tip=(
             "Open with “Sorry” or “Actually”",
@@ -482,10 +525,10 @@ LESSONS = {
             bridge="まず、いつ買った物にどんな問題があるのか説明します。",
             meaning=("Use this to connect a recent purchase with the problem you discovered.", "最近買った物と、見つかった問題をつなげて説明する表現です。"),
             rows=rows(
-                ("{t}I bought{/t} this yesterday, {t}but{/t} it doesn't work.", "これは昨日{t}買いましたが{/t}、動きません。", "I bought this|yesterday,|but it doesn't work."),
-                ("{t}I bought{/t} this charger this morning, {t}but{/t} it won't charge my phone.", "この充電器は今朝{t}買いましたが{/t}、携帯を充電できません。", "I bought this charger|this morning,|but it won't charge my phone."),
-                ("{t}I bought{/t} this umbrella yesterday, {t}but{/t} it won't open.", "この傘は昨日{t}買いましたが{/t}、開きません。", "I bought this umbrella|yesterday,|but it won't open."),
-                ("{t}I bought{/t} these headphones last week, {t}but{/t} one side is silent.", "このヘッドホンは先週{t}買いましたが{/t}、片方から音が出ません。", "I bought these headphones|last week,|but one side is silent."),
+                ("{t}I bought{/t} this yesterday, {t}but{/t} it doesn't work.", "これは昨日{t}買いました{/t}{t}が{/t}、動きません。", "I bought this|yesterday,|but it doesn't work."),
+                ("{t}I bought{/t} this charger this morning, {t}but{/t} it won't charge my phone.", "この充電器は今朝{t}買いました{/t}{t}が{/t}、携帯を充電できません。", "I bought this charger|this morning,|but it won't charge my phone."),
+                ("{t}I bought{/t} this umbrella yesterday, {t}but{/t} it won't open.", "この傘は昨日{t}買いました{/t}{t}が{/t}、開きません。", "I bought this umbrella|yesterday,|but it won't open."),
+                ("{t}I bought{/t} these headphones last week, {t}but{/t} one side is silent.", "このヘッドホンは先週{t}買いました{/t}{t}が{/t}、片方から音が出ません。", "I bought these headphones|last week,|but one side is silent."),
             ),
             reorder_criterion="purchase with object / purchase time / contrasting fault",
             rule=(
@@ -498,16 +541,19 @@ LESSONS = {
                 "返品理由を伝える",
                 ("this yesterday · but it doesn't work", "this umbrella yesterday · but it won't open"),
             ),
-            write=("What faulty purchase would you bring back?", "どんな故障品を店に持っていきますか？"),
+            write=("What faulty purchase would you bring back?", "「I bought ___, but ___」を使って、買った物と問題を伝えましょう。"),
+            write_frame="I bought ___, but ___",
+            write_script="Use “I bought ___, but ___” to say what you bought and what is wrong.",
+            translate_hints=(("昨日", "yesterday"), ("充電器", "charger"), ("傘", "umbrella"), ("ヘッドホン", "headphones")),
         ),
         p2=dict(
             bridge="次に、希望する交換先を具体的に伝えます。",
             meaning=("Use this to ask to replace one item with a specific alternative.", "ある商品を、具体的な別の商品に交換してもらえるか尋ねる表現です。"),
             rows=rows(
-                ("{t}Can I exchange{/t} it {t}for{/t} another one?", "別の物{t}と交換できますか{/t}？", "Can I exchange|it|for another one?"),
-                ("{t}Can I exchange{/t} this charger {t}for{/t} a new one?", "この充電器を新品{t}と交換できますか{/t}？", "Can I exchange|this charger|for a new one?"),
-                ("{t}Can I exchange{/t} this umbrella {t}for{/t} a larger one?", "この傘をもっと大きい物{t}と交換できますか{/t}？", "Can I exchange|this umbrella|for a larger one?"),
-                ("{t}Can I exchange{/t} these headphones {t}for{/t} a different pair?", "このヘッドホンを別の物{t}と交換できますか{/t}？", "Can I exchange|these headphones|for a different pair?"),
+                ("{t}Can I exchange{/t} it {t}for{/t} another one?", "別の物{t}と{/t}{t}交換できますか{/t}？", "Can I exchange|it|for another one?"),
+                ("{t}Can I exchange{/t} this charger {t}for{/t} a new one?", "この充電器を新品{t}と{/t}{t}交換できますか{/t}？", "Can I exchange|this charger|for a new one?"),
+                ("{t}Can I exchange{/t} this umbrella {t}for{/t} a larger one?", "この傘をもっと大きい物{t}と{/t}{t}交換できますか{/t}？", "Can I exchange|this umbrella|for a larger one?"),
+                ("{t}Can I exchange{/t} these headphones {t}for{/t} a different pair?", "このヘッドホンを別の物{t}と{/t}{t}交換できますか{/t}？", "Can I exchange|these headphones|for a different pair?"),
             ),
             reorder_criterion="exchange request / returned item / for + replacement",
             attached_prepositions=("for",),
@@ -521,7 +567,10 @@ LESSONS = {
                 "交換する二つを示す",
                 ("exchange it · for another one", "exchange this charger · for a new one"),
             ),
-            write=("What replacement would solve your problem?", "何に交換すれば問題が解決しますか？"),
+            write=("What replacement would solve your problem?", "「Can I exchange ___ for ___?」を使って、交換したい物を伝えましょう。"),
+            write_frame="Can I exchange ___ for ___?",
+            write_script="Use “Can I exchange ___ for ___?” to say which exchange you want.",
+            translate_hints=(("別の物", "another one"), ("充電器", "charger"), ("傘", "umbrella"), ("ヘッドホン", "headphones")),
         ),
         scene_turns=(
             ("other", "How can I help?", "ご用件を伺います。"),
@@ -539,12 +588,12 @@ LESSONS = {
             ("The refund will go back to your card.", "The money will be returned to the payment card", "支払いに使ったカードへ返金される", "You will receive cash immediately", "すぐに現金で返金される"),
         ),
         live=(
-            "A new adapter is faulty. What would you ask the clerk?",
-            "買ったばかりのアダプターが故障しています。店員に何と頼みますか？",
+            "Would you prefer an exchange or a refund, and why?",
+            "交換と返金なら、どちらがいいですか？なぜですか？",
             "I bought ___, but ___. Can I exchange ___ for ___?",
             "故障の説明と希望する交換",
-            "Would you prefer an exchange or a refund?",
-            "交換と返金のどちらがいいですか？",
+            "Have you ever returned something that didn't work?",
+            "先生は動かなかった物を返品したことがありますか？",
         ),
         tip=(
             "Name the fault more precisely",
@@ -569,7 +618,7 @@ LESSONS = {
         vocab=(
             "travel adapter|旅行用アダプター; proof of purchase|購入証明; refund|返金; replacement|交換品; exchange|交換する",
             "bought|買った|CORE-32; doesn't work|動かない|CTX-8",
-            "receipt|レシート; charger|充電器; umbrella|傘; headphones|ヘッドホン",
+            "receipt|レシート; charger|充電器; umbrella|傘; headphones|ヘッドホン; yesterday|昨日; another one|別の物",
             "store credit|店内クレジット; payment card|支払いカード",
         ),
     ),
@@ -588,10 +637,10 @@ LESSONS = {
             bridge="まず、今の予約を取り消さずに希望時刻へ動かします。",
             meaning=("Use this to ask whether an existing booking can be moved to a new time or date.", "今ある予約を、新しい時刻や日付へ動かせるか尋ねる表現です。"),
             rows=rows(
-                ("{t}Can we move{/t} our reservation {t}to{/t} eight?", "予約を8時{t}に変更できますか{/t}？", "Can we move|our reservation|to eight?"),
-                ("{t}Can we move{/t} our booking {t}to{/t} Friday?", "予約を金曜日{t}に変更できますか{/t}？", "Can we move|our booking|to Friday?"),
-                ("{t}Can we move{/t} our reservation {t}to{/t} seven-thirty?", "予約を7時30分{t}に変更できますか{/t}？", "Can we move|our reservation|to seven-thirty?"),
-                ("{t}Can we move{/t} the tour {t}to{/t} Saturday?", "ツアーを土曜日{t}に変更できますか{/t}？", "Can we move|the tour|to Saturday?"),
+                ("{t}Can we move{/t} our reservation {t}to{/t} eight?", "予約を8時{t}に{/t}{t}変更できますか{/t}？", "Can we move|our reservation|to eight?"),
+                ("{t}Can we move{/t} our booking {t}to{/t} Friday?", "予約を金曜日{t}に{/t}{t}変更できますか{/t}？", "Can we move|our booking|to Friday?"),
+                ("{t}Can we move{/t} our reservation {t}to{/t} seven-thirty?", "予約を7時30分{t}に{/t}{t}変更できますか{/t}？", "Can we move|our reservation|to seven-thirty?"),
+                ("{t}Can we move{/t} the tour {t}to{/t} Saturday?", "ツアーを土曜日{t}に{/t}{t}変更できますか{/t}？", "Can we move|the tour|to Saturday?"),
             ),
             reorder_criterion="change request / booking item / new time or date",
             rule=(
@@ -604,7 +653,10 @@ LESSONS = {
                 "予約を残して枠を変える",
                 ("our reservation · to eight", "our booking · to Friday"),
             ),
-            write=("Which booking would you move, and to when?", "どの予約をいつに変更しますか？"),
+            write=("Which booking would you move, and to when?", "「Can we move ___ to ___?」を使って、変更する予約と新しい日時を伝えましょう。"),
+            write_frame="Can we move ___ to ___?",
+            write_script="Use “Can we move ___ to ___?” to name the booking and its new time or date.",
+            translate_hints=(("予約", "reservation"), ("予約", "booking"), ("予約", "reservation"), ("ツアー", "tour")),
         ),
         p2=dict(
             bridge="変更したあと、人数がそのままか確認します。",
@@ -626,7 +678,10 @@ LESSONS = {
                 "人数を確認する",
                 ("Is it · still · for four people?", "Is it · still · for two people?"),
             ),
-            write=("How many people would you confirm?", "何名の予約か確認しますか？"),
+            write=("How many people would you confirm?", "「Is it still for ___ people?」を使って、予約人数を確認しましょう。"),
+            write_frame="Is it still for ___ people?",
+            write_script="Use “Is it still for ___ people?” to confirm the number of people.",
+            translate_hints=(("4人", "four people"), ("2人", "two people"), ("6人", "six people"), ("3人", "three people")),
         ),
         scene_turns=(
             ("other", "Good evening. How can I help?", "こんばんは。ご用件を伺います。"),
@@ -645,12 +700,12 @@ LESSONS = {
             ("I've changed it to eight-fifteen.", "The new booking time is confirmed", "新しい予約時刻が確定した", "The booking is still at seven", "予約はまだ7時のままである"),
         ),
         live=(
-            "You need to change your dinner time. What would you say on the phone?",
-            "夕食の時間を変更する必要があります。電話で何と伝えますか？",
+            "Which booking detail do you always double-check, and why?",
+            "予約では、どの情報を必ず再確認しますか？なぜですか？",
             "Can we move ___ to ___? Is it still for ___ people?",
             "自分なら変更して確認する内容",
-            "Which booking detail do you double-check?",
-            "予約のどの情報を再確認しますか？",
+            "What about you—which detail do you check first?",
+            "先生はどの情報を最初に確認しますか？",
         ),
         tip=(
             "Use “move” neutrally or “push back” for later",
@@ -675,7 +730,7 @@ LESSONS = {
         vocab=(
             "booking change|予約変更; party size|予約人数; push back|後ろへずらす",
             "still|今も|CORE-29; reservation|予約|CTX-7",
-            "restaurant|レストラン; people|人; Friday|金曜日; Saturday|土曜日; tour|ツアー; can we move|変更できますか",
+            "restaurant|レストラン; people|人; Friday|金曜日; Saturday|土曜日; tour|ツアー; can we move|変更できますか; booking|予約; four people|4人; two people|2人; six people|6人; three people|3人",
             "available time|空いている時刻; confirmation|確認メール",
         ),
     ),
@@ -781,6 +836,27 @@ def validate_lesson(number, lesson):
                     )
         if not pattern.get("omit_reorder"):
             core.validate_reorder_pattern(pattern["rows"])
+        hints = pattern.get("translate_hints")
+        if not hints or len(hints) != len(pattern["rows"]):
+            raise ValueError(f"CTX-{number} p{part}: supported translation needs one lexical hint set per row")
+        if not pattern.get("write_frame"):
+            raise ValueError(f"CTX-{number} p{part}: open production needs an explicit stable write frame")
+        if not pattern.get("write_script"):
+            raise ValueError(f"CTX-{number} p{part}: open production needs an explicit communicative job")
+    validate_reviewed_copy(number, lesson)
+
+
+def validate_reviewed_copy(number, lesson):
+    prompt_en, _, _, _, ask_en, _ = lesson["live"]
+    for label, question in (("Tutor question", prompt_en), ("learner ask-back", ask_en)):
+        if not question.strip().endswith("?"):
+            raise ValueError(f"CTX-{number}: {label} must be a real question")
+        if "___" in question or re.search(
+            r"\b(?:what would you (?:say|ask)|imagine|report it|explain|use today's|say the pattern)\b",
+            question,
+            flags=re.IGNORECASE,
+        ):
+            raise ValueError(f"CTX-{number}: {label} must be conversation, not pattern production")
 
 
 def render_roleplay(lesson, turns, *, highlight=False, complete=False, prefix, role=None):
@@ -813,32 +889,12 @@ def render_roleplay(lesson, turns, *, highlight=False, complete=False, prefix, r
     return "".join(rendered)
 
 
-def situation_page(lesson):
-    return f'''    <div class="transition-page" data-page-id="situation-card" data-act="Travel task">
-      <span class="transition-kicker">TRAVEL ENGLISH · 2</span>
-      <h2 class="transition-title">{esc(lesson["title"])}</h2>
-      <p class="transition-copy">{esc(lesson["situation"])}</p>
-      <div class="scene-cast">
-        {cast_row(ME, "Traveller", "用事を完了する旅行者")}
-        {cast_row(OTHER, lesson["role"], lesson["scene_ja"])}
-      </div>
-    </div>
-'''
-
-
 def goal_page(lesson):
-    p1 = lesson["p1"]["rows"][0]
-    p2 = lesson["p2"]["rows"][0]
-    return f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Travel task">
-      <span class="transition-kicker">GOAL</span>
-      <h2 class="transition-title">{esc(lesson["title"])}</h2>
-      <p class="section-subtitle"><span class="ko">{esc(lesson["goal"][0])}</span><span class="ja">{esc(lesson["goal"][1])}</span></p>
-      <div class="known lines">
-        <div class="known-row"><span class="k">{core.marks(p1[0])}</span><span class="j">{core.marks(p1[1])}</span></div>
-        <div class="known-row"><span class="k">{core.marks(p2[0])}</span><span class="j">{core.marks(p2[1])}</span></div>
-      </div>
-    </div>
-'''
+    return core.goal_page(
+        title=lesson["title"], title_ja=lesson["ja"],
+        can_do=lesson["goal"][0], can_do_ja=lesson["goal"][1],
+        data_act="Travel task",
+    )
 
 
 def expressions_page(lesson):
@@ -851,8 +907,8 @@ def expressions_page(lesson):
         "expressions",
         "Useful expressions",
         "使える表現",
-        '<p class="section-subtitle"><span class="ko">Read these two expressions with me.</span>'
-        '<span class="ja">この二つの表現を一緒に読みましょう。</span></p>'
+        '<p class="section-subtitle"><span class="ko">Please read each expression aloud.</span>'
+        '<span class="ja">それぞれの表現を声に出して読んでください。</span></p>'
         f'<div class="model-list">{models}</div>',
     )
 
@@ -880,9 +936,8 @@ def understand_page(number, lesson):
         "understand",
         "Understand",
         "聞いてわかろう",
-        '<p class="section-subtitle"><span class="ko">I’ll read each staff line. Choose what the complete line means.</span>'
-        '<span class="ja">係員のセリフを読みます。セリフ全体の意味を選びましょう。</span></p>'
-        '<div class="tutor-note">Read only the English header in each row.</div>'
+        f'<p class="section-subtitle"><span class="ko">I’ll read each {esc(lesson["role"].lower())} line. Choose what it means.</span>'
+        f'<span class="ja">私が{esc(ROLE_JA.get(lesson["role"], "相手役"))}のセリフを読みます。意味を選んでください。</span></p>'
         f'<div class="choose-list">{"".join(blocks)}</div>',
     )
 
@@ -892,7 +947,8 @@ def transition(part, pattern):
     return f'''    <div class="transition-page" data-page-id="part{part}-intro" data-act="Move {part}">
       <span class="transition-kicker">MOVE {part}</span>
       <h2 class="transition-title">{esc(model)}</h2>
-      <p class="transition-copy">{esc(pattern["bridge"])}</p>
+      <p class="section-subtitle"><span class="ko">{'First' if part == 1 else 'Next'}, let's practice this useful line from the scene.</span><span class="ja">{esc(pattern["bridge"])}</span></p>
+      <div class="tutor-note">Introduce this part with one line, then move on.</div>
     </div>
 '''
 
@@ -912,6 +968,7 @@ def teach_page(part, pattern):
         '<span class="meaning-kicker">Meaning &amp; use <small>意味・使い方</small></span>'
         f'<span class="ko">{esc(pattern["meaning"][0])}</span>'
         f'<span class="ja">{esc(pattern["meaning"][1])}</span></p>'
+        '<div class="tutor-note">Briefly explain the meaning, then have the learner read each example aloud.</div>'
         f'<div class="sent-hero"><span class="korean">{core.marks(hero_en)}</span>'
         f'<span class="translation">{core.marks(hero_ja)}</span></div>'
         f'<div class="sent-more">{examples}</div>',
@@ -945,52 +1002,49 @@ def reorder_page(part, pattern):
             f'data-page-id="p{part}-reorder"',
             f'data-page-id="p{part}-reorder" data-chunk-review="meaningful"',
             1,
-        ).replace("Put the four meaning chunks in order.", "Put the three meaning chunks in order.").replace(
-            "4つの意味のまとまり", "3つの意味のまとまり"
         )
     return f'    <!-- Reorder criterion: {esc(pattern["reorder_criterion"])}. -->\n{page}'
 
 
 def write_page(part, pattern):
-    model = core.strip_marks(pattern["rows"][0][0])
-    scaffold = pattern.get("write_scaffold", model)
+    write_frame = pattern.get("write_frame", core.strip_marks(pattern["rows"][0][0]))
+    write_script = pattern.get(
+        "write_script", f'Now use “{write_frame}” to make your own sentence.'
+    )
     return core.section(
         f"p{part}-write",
         "Make it yours",
         "自分の場面で言おう",
-        f'<p class="section-subtitle"><span class="ko">{esc(pattern["write"][0])}</span>'
+        f'<p class="section-subtitle"><span class="ko">{esc(write_script)}</span>'
         f'<span class="ja">{esc(pattern["write"][1])}</span></p>'
-        '<div class="task-block"><div class="answer-box tall">'
-        f'<span class="answer-label">{esc(scaffold)}<span class="task">自分の情報に変えて</span></span>'
-        f'<span class="answer-space as-input"><textarea class="free-input" data-sync-id="p{part}-write" '
-        'rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div>',
+        '<div class="tutor-note">Let the learner answer aloud before you capture and correct it.</div>'
+        + core.feedback_compose(f"p{part}-write"),
     )
 
 
 def freetalk_page(lesson):
     prompt_en, prompt_ja, scaffold, scaffold_ja, ask_en, ask_ja = lesson["live"]
+    def live_text(side, speaker, english, japanese):
+        bubble_class = "bubble me" if side == "me" else "bubble"
+        return f'<div class="turn {side}">{core.live_avatar(speaker)}<div class="{bubble_class}"><span class="korean">{esc(english)}</span><span class="translation">{esc(japanese)}</span></div></div>'
+
+    def live_input(side, speaker, sync_id, label, label_ja):
+        bubble_class = "bubble me" if side == "me" else "bubble"
+        return f'<div class="turn {side}">{core.live_avatar(speaker)}<div class="{bubble_class}"><div class="answer-box tall"><span class="answer-label">{esc(label)}<span class="task">{esc(label_ja)}</span></span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="{sync_id}" rows="3" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+
     turns = (
-        f'<div class="turn other">{core.live_avatar("Tutor")}<div class="bubble">'
-        f'<span class="korean">{esc(prompt_en)}</span><span class="translation">{esc(prompt_ja)}</span></div></div>'
-        f'<div class="turn me">{core.live_avatar("Me")}<div class="bubble me"><div class="answer-box tall">'
-        f'<span class="answer-label">{esc(scaffold)}<span class="task">{esc(scaffold_ja)}</span></span>'
-        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-me" rows="2" '
-        'spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
-        f'<div class="turn me">{core.live_avatar("Me")}<div class="bubble me"><div class="answer-box">'
-        f'<span class="answer-label">{esc(ask_en)}<span class="task">{esc(ask_ja)}</span></span><span class="answer-space as-input">'
-        f'<input class="space-input" type="text" data-sync-id="live-ask" data-answer="{esc(ask_en)}" '
-        'autocomplete="off" spellcheck="false"></span></div></div></div>'
-        f'<div class="turn other">{core.live_avatar("Tutor")}<div class="bubble"><div class="answer-box tall">'
-        '<span class="answer-label">Tutor\'s answer<span class="task">先生の本当の答え</span></span>'
-        '<span class="answer-space as-input"><textarea class="free-input" data-sync-id="live-tutor" rows="2" '
-        'spellcheck="false" maxlength="2000"></textarea></span></div></div></div>'
+        live_text("other", "Tutor", prompt_en, prompt_ja)
+        + live_input("me", "Me", "p3-real-answer", "Student's answer", "自分の答え")
+        + live_text("me", "Me", ask_en, ask_ja)
+        + live_input("other", "Tutor", "p3-tutor-answer", "Tutor's answer", "先生の答え")
     )
     return core.section(
         "p3-freetalk",
-        "Your response",
-        "自分の対応",
-        '<p class="section-subtitle"><span class="ko">Respond to the situation, then ask me the related question.</span>'
-        '<span class="ja">場面に対応し、そのあと関連する質問を私にもしてください。</span></p>'
+        "Talk about the real situation",
+        "本当の場面について話そう",
+        '<p class="section-subtitle"><span class="ko">Let’s talk about this situation. Answer my question, then ask me too.</span>'
+        '<span class="ja">この場面について話しましょう。私の質問に答えて、そのあと私にも聞いてください。</span></p>'
+        '<div class="tutor-note">React naturally and follow the most interesting detail. Use today\'s pattern only if it fits.</div>'
         f'<div class="dialogue">{turns}</div>',
     )
 
@@ -1031,18 +1085,18 @@ def pages(number, lesson):
         role=lesson["transfer_role"],
     )
     result = [
-        situation_page(lesson),
+        goal_page(lesson),
         core.section(
             "scene",
             lesson["scene"],
             lesson["scene_ja"],
-            '<p class="section-subtitle"><span class="ko">Listen once, then read your lines as the traveller.</span>'
-            '<span class="ja">まず一度聞き、そのあと旅行者として「私」のセリフを読みましょう。</span></p>'
+            f'<p class="section-subtitle"><span class="ko">Let\'s role-play. You\'re the traveller, and I\'ll be the {esc(lesson["role"].lower())}.</span>'
+            f'<span class="ja">ロールプレイをしましょう。あなたは旅行者、私は{esc(ROLE_JA.get(lesson["role"], "相手役"))}です。</span></p>'
+            f'<div class="tutor-note">Start with the first {esc(lesson["role"])} line.</div>'
             f'<div class="dialogue">{opening}</div>',
         ),
-        goal_page(lesson),
-        expressions_page(lesson),
         understand_page(number, lesson),
+        expressions_page(lesson),
     ]
     for part in (1, 2):
         pattern = lesson[f"p{part}"]
@@ -1054,7 +1108,12 @@ def pages(number, lesson):
                 rule_page(part, pattern) if not pattern.get("omit_rule") else "",
                 reorder_page(part, pattern),
                 core.fill(f"p{part}-fill", pattern["rows"]) if not pattern.get("omit_fill") else "",
-                core.translate(f"p{part}-translate", pattern["rows"]),
+                core.translate(
+                    f"p{part}-translate",
+                    pattern["rows"],
+                    hints=pattern.get("translate_hints"),
+                    support_stage="supported" if pattern.get("translate_hints") else None,
+                ),
                 write_page(part, pattern),
             ]
         )
@@ -1063,22 +1122,24 @@ def pages(number, lesson):
             '    <div class="transition-page" data-page-id="part3-intro" data-act="Complete the task">'
             '<span class="transition-kicker">PUT IT TOGETHER</span><h2 class="transition-title">'
             'Complete the practical job <span class="title-ja">(用事を完了しよう)</span></h2>'
-            '<p class="transition-copy">最初の場面に戻り、二つの表現で用事を最後まで完了します。</p></div>\n',
+            '<p class="section-subtitle"><span class="ko">Now, let\'s return to the scene and complete the practical job.</span>'
+            '<span class="ja">最初の場面に戻り、二つの表現で用事を最後まで完了しましょう。</span></p>'
+            '<div class="tutor-note">Introduce the roleplay, then move on.</div></div>\n',
             core.section(
                 "p3-model",
                 "Replay the full scene",
                 "場面をもう一度",
-                '<p class="section-subtitle"><span class="ko">Read your lines while I read the other role.</span>'
-                '<span class="ja">自分のセリフを読み、私は相手役を読みます。</span></p>'
+                f'<p class="section-subtitle"><span class="ko">I\'ll be the {esc(lesson["role"])}. Please read the Traveller lines aloud.</span>'
+                '<span class="ja">私は相手役をします。Traveller のセリフを声に出して読んでください。</span></p>'
                 f'<div class="dialogue">{model}</div>',
             ),
             core.section(
                 "p3-complete",
                 "Complete the full scene",
                 "場面を完成しよう",
-                '<p class="section-subtitle"><span class="ko">Replay the same exchange and complete only today’s two frames.</span>'
-                '<span class="ja">同じ会話をもう一度進め、今日の二つの表現だけ完成させましょう。</span></p>'
-                '<div class="tutor-note">Write each target exactly as the learner says it.</div>'
+                f'<p class="section-subtitle"><span class="ko">I’ll be the {esc(lesson["role"])}. Say each complete line, including the missing words.</span>'
+                '<span class="ja">私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。</span></p>'
+                '<div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'
                 f'<div class="dialogue">{complete}</div>',
             ),
             freetalk_page(lesson),
@@ -1087,8 +1148,8 @@ def pages(number, lesson):
                 "transfer-scene",
                 lesson["transfer_title"],
                 lesson["transfer_ja"],
-                '<p class="section-subtitle"><span class="ko">Use the same two moves to complete a different practical situation.</span>'
-                '<span class="ja">同じ二つの表現で、別の実用的な場面を最後まで進めましょう。</span></p>'
+                f'<p class="section-subtitle"><span class="ko">Let\'s role-play a new situation using the same two lines. I\'ll be the {esc(lesson["transfer_role"].lower())}.</span>'
+                f'<span class="ja">同じ二つの表現を使って、別の場面でロールプレイをしましょう。私は{esc(ROLE_JA.get(lesson["transfer_role"], "相手役"))}です。</span></p>'
                 f'<div class="dialogue">{transfer}</div>',
             ),
         ]
@@ -1121,15 +1182,17 @@ def build(number, lesson):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--lesson", type=int, choices=LESSONS)
     args = parser.parse_args()
-    for number, lesson in LESSONS.items():
+    selected = LESSONS.items() if args.lesson is None else ((args.lesson, LESSONS[args.lesson]),)
+    for number, lesson in selected:
         output, text = build(number, lesson)
         if output.exists() and not args.refresh:
             raise SystemExit(f"refusing to overwrite {output.relative_to(ROOT)}")
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(text, encoding="utf-8")
         print(f"wrote {output.relative_to(ROOT)}")
-    print(f"{len(LESSONS)} Contextual decks generated")
+    print(f"{len(LESSONS) if args.lesson is None else 1} Contextual decks generated")
     return 0
 
 

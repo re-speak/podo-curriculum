@@ -54,7 +54,10 @@ LESSONS = {
             ),
             reorder_criterion="delayed journey / result link / missed action / missed connection",
             rule=("Link the disruption to its result", "遅延と結果をつなぐ", "Put the delayed journey first, then use “so we missed” before the lost connection.", "遅れた移動を先に言い、その結果乗れなかった便の前に so we missed を置きます。", "delayed journey + so we missed + connection", "Explain cause and result", "原因と結果を説明", ("flight · so we missed · connection", "train · so we missed · ferry")),
-            write=("What delay could make you miss the next part of a trip?", "どんな遅れで次の移動に間に合わなくなることがありますか？"),
+            write=("What delay could make you miss the next part of a trip?", "「___ was delayed, so we missed ___」を使って、遅れとその結果を伝えましょう。"),
+            write_frame="___ was delayed, so we missed ___",
+            write_script="Use “___ was delayed, so we missed ___” to explain the delay and missed connection.",
+            translate_hints=(("最初の便", "first flight"), ("電車", "train"), ("空港バス", "airport bus"), ("前の便", "earlier flight")),
         ),
         p2=dict(
             bridge="次に、利用できる最も早い代替便を確認します。",
@@ -69,7 +72,10 @@ LESSONS = {
             omit_reorder=True,
             omit_rule=True,
             rule=("Keep the replacement request intact", "代替便の依頼をひとまとまりに", "Retrieve the fixed request as a whole and change only the transport.", "定型の依頼をひとまとまりで使い、交通手段だけを変えます。", "What's the earliest + transport + you can put us on?", "Ask for the first replacement", "最初の代替便を頼む", ("earliest · flight", "earliest · train")),
-            write=("Which replacement service would you ask for first?", "どの代替便を最初に頼みますか？"),
+            write=("Which replacement service would you ask for first?", "「What's the earliest ___ you can put us on?」を使って、最も早い代替便を尋ねましょう。"),
+            write_frame="What's the earliest ___ you can put us on?",
+            write_script="Use “What's the earliest ___ you can put us on?” to ask for the earliest replacement service.",
+            translate_hints=(("便", "flight"), ("電車", "train"), ("フェリー", "ferry"), ("シャトル", "shuttle")),
         ),
         scene_turns=(
             ("other", "How can I help you both?", "お二人のご用件を伺います。"),
@@ -86,13 +92,13 @@ LESSONS = {
             ("I'll rebook you.", "The agent will move you to another service", "係員が別の便に予約し直す", "You must buy the same journey again", "同じ旅程をもう一度購入する必要がある"),
             ("Your bags will be transferred automatically.", "Staff will move the checked bags for you", "預けた荷物は係員が移してくれる", "You must collect the bags before rebooking", "予約変更前に荷物を受け取る必要がある"),
         ),
-        live=("You and a travel companion have missed your connection. Explain why and ask for the earliest replacement for both of you.", "旅行仲間と二人で乗り継ぎ便に乗れませんでした。理由を説明し、二人が乗れる最も早い代替便を頼みましょう。", "___ was delayed, so we missed ___. What's the earliest ___ you can put us on?", "遅延の説明と二人が乗れる代替便", "After a delay, do you prefer the earliest arrival or the easiest route?", "遅延後は最も早い到着と楽な経路のどちらを選びますか？"),
+        live=("After a delay, do you prefer the earliest arrival or the easiest route, and why?", "遅延後は、最も早い到着と楽な経路のどちらを選びますか？なぜですか？", "___ was delayed, so we missed ___. What's the earliest ___ you can put us on?", "遅延の説明と二人が乗れる代替便", "What matters most to you after a travel delay?", "先生は旅行の遅延後に何をいちばん重視しますか？"),
         tip=("Ask for the earliest or the next available service", "earliest と next available", "Use “earliest” when arrival time matters; use “next available” when any open replacement will do.", "到着時刻を優先するなら earliest、空いている次の便なら何でもよい場合は next available を使います。", ("Time matters", "到着時刻を優先", "What's the earliest flight you can put us on?", "乗せてもらえる最も早い便はどれですか？"), ("Any open replacement", "空いている便を優先", "What's the next available flight?", "次に空いている便はどれですか？")),
         transfer_title="At a rail-and-ferry help desk",
         transfer_ja="鉄道とフェリーの案内カウンターで",
         transfer_role="Travel Adviser",
         transfer_turns=(("other", "What happened to the two of you?", "お二人に何がありましたか？"), ("target", 1, 1), ("other", "The ferry company can move your booking.", "フェリー会社で予約を変更できます。"), ("target", 2, 2), ("other", "The 5:20 ferry has space, and your train ticket remains valid.", "5時20分のフェリーに空きがあり、鉄道の切符もそのまま使えます。"), ("me", "That gets us there tonight. Please book it.", "今夜中に着けます。その便をお願いします。"), ("other", "Done. Here is the replacement itinerary.", "手配できました。こちらが新しい旅程です。")),
-        vocab=("connecting flight|乗り継ぎ便; rebook us|私たちを予約し直す; next available|次に空いている; delayed|遅れた", "miss|乗り遅れる|CORE-39", "flight|便; train|電車; ferry|フェリー; shuttle|シャトル; check-in|チェックイン", "replacement itinerary|代わりの旅程; boarding pass|搭乗券; transfer automatically|自動で移される; remains valid|そのまま有効である"),
+        vocab=("connecting flight|乗り継ぎ便; rebook us|私たちを予約し直す; next available|次に空いている; delayed|遅れた", "miss|乗り遅れる|CORE-39", "flight|便; train|電車; ferry|フェリー; shuttle|シャトル; check-in|チェックイン; first flight|最初の便; airport bus|空港バス; earlier flight|前の便", "replacement itinerary|代わりの旅程; boarding pass|搭乗券; transfer automatically|自動で移される; remains valid|そのまま有効である"),
     ),
     14: dict(
         slug="report-missing-baggage-precisely",
@@ -111,7 +117,10 @@ LESSONS = {
             omit_reorder=True,
             reorder_criterion="missing item / intact non-arrival frame",
             rule=("Put “hasn't arrived” after the missing bag", "見つからない荷物のあとに hasn't arrived", "Name the expected bag first, then state that it has not arrived.", "届くはずの荷物を先に言い、そのあとにまだ届いていないことを伝えます。", "missing bag + hasn't arrived", "Report non-arrival", "未着を伝える", ("suitcase · hasn't arrived", "checked bag · hasn't arrived")),
-            write=("Which missing bag would you report?", "どの荷物が見つからないと伝えますか？"),
+            write=("Which missing bag would you report?", "「My ___ hasn't arrived」を使って、見つからない荷物を伝えましょう。"),
+            write_frame="My ___ hasn't arrived",
+            write_script="Use “My ___ hasn't arrived” to identify the missing bag.",
+            translate_hints=(("スーツケース", "suitcase"), ("預けたバッグ", "checked bag"), ("ダッフルバッグ", "duffel bag"), ("子どものスーツケース", "child's suitcase")),
         ),
         p2=dict(
             bridge="次に、色・大きさ・目印を一つの説明にまとめます。",
@@ -119,27 +128,30 @@ LESSONS = {
             rows=rows(("{t}It's a{/t} large red case {t}with{/t} a yellow strap.", "黄色いストラップ{t}付きの{/t}大きな赤いケース{t}です{/t}。", "It's|a large red case|with a yellow strap."), ("{t}It's a{/t} small black case {t}with{/t} a white tag.", "白いタグ{t}付きの{/t}小さな黒いケース{t}です{/t}。", "It's|a small black case|with a white tag."), ("{t}It's a{/t} blue suitcase {t}with{/t} two stickers.", "ステッカーが2枚{t}付いた{/t}青いスーツケース{t}です{/t}。", "It's|a blue suitcase|with two stickers."), ("{t}It's a{/t} gray duffel bag {t}with{/t} green handles.", "緑の持ち手{t}付きの{/t}灰色のダッフルバッグ{t}です{/t}。", "It's|a gray duffel bag|with green handles.")),
             reorder_criterion="identification / complete item description / with + identifying feature",
             rule=("Add the identifying feature with “with”", "目印は with で加える", "Describe the item first, then add its identifying feature with “with.”", "先に物を説明し、目印となる特徴を with で加えます。", "It's a + description + with + feature", "Give staff a searchable detail", "探せる特徴を伝える", ("red case · with a yellow strap", "blue suitcase · with two stickers")),
-            write=("How would you describe an imagined suitcase or bag?", "仮のスーツケースやバッグをどう説明しますか？"),
+            write=("How would you describe an imagined suitcase or bag?", "「It's a ___ with ___」を使って、荷物と目印を説明しましょう。"),
+            write_frame="It's a ___ with ___",
+            write_script="Use “It's a ___ with ___” to describe the bag and one clear feature.",
+            translate_hints=(("黄色いストラップ", "yellow strap"), ("白いタグ", "white tag"), ("ステッカー", "stickers"), ("緑の持ち手", "green handles")),
         ),
         scene_turns=(("other", "How can I help?", "ご用件を伺います。"), ("target", 1, 0), ("other", "Can you describe it?", "どのような物か説明していただけますか？"), ("target", 2, 0), ("other", "Thank you. I'll start a trace now.", "ありがとうございます。今から追跡を始めます。"), ("me", "Here's my baggage tag and tracking number.", "こちらが手荷物タグと追跡番号です。"), ("other", "Your report is filed. We'll text you with an update.", "申告を受け付けました。状況をメッセージでお知らせします。")),
         receptive=(("I'll start a trace now.", "The agent will begin looking for the bag", "係員が荷物の捜索を始める", "The agent has already found the bag", "係員はすでに荷物を見つけている"), ("Your report is filed.", "The missing-bag report has been recorded", "紛失手荷物の申告が記録された", "You need to complete another report", "別の申告書を書く必要がある"), ("We'll text you with an update.", "Staff will send news to your phone", "係員が携帯に状況を送る", "You must return to the airport for news", "状況確認のため空港へ戻る必要がある"), ("Keep your baggage tag.", "Do not throw away the bag receipt", "手荷物タグを捨てずに持っておく", "Attach a new tag to the missing bag", "見つからない荷物に新しいタグを付ける")),
-        live=("Imagine a checked bag is missing. Report it and describe one clear feature.", "預けた荷物が見つからないとします。申告し、分かりやすい特徴を一つ伝えましょう。", "My ___ hasn't arrived. It's a ___ with ___.", "仮の見つからない荷物と目印", "If you had to describe a bag, which feature would be easiest to mention?", "バッグを説明するとしたら、どの特徴がいちばん言いやすいですか？"),
+        live=("Which feature makes your bag easiest to recognize?", "自分のバッグは、どの特徴がいちばん見分けやすいですか？", "My ___ hasn't arrived. It's a ___ with ___.", "仮の見つからない荷物と目印", "What does your suitcase look like?", "先生のスーツケースはどんな見た目ですか？"),
         tip=("Say “case” or “suitcase”", "case と suitcase", "Use “suitcase” when the type matters; “case” is a natural shorter reference once the bag is clear.", "種類を明確にするなら suitcase、どの荷物か分かったあとは短く case と言えます。", ("Identifying the type", "種類を明確に", "It's a large red suitcase.", "大きな赤いスーツケースです。"), ("Referring to it again", "同じ荷物をもう一度指す", "It's a large red case.", "大きな赤いケースです。")),
         transfer_title="At a coach-station lost-bag desk", transfer_ja="長距離バス駅の手荷物窓口で", transfer_role="Station Agent",
         transfer_turns=(("other", "Which bag is missing from the coach?", "バスからどの荷物が見つかりませんか？"), ("target", 1, 2), ("other", "What does it look like?", "どのような外見ですか？"), ("target", 2, 3), ("other", "I found a matching bag at the previous station.", "前の駅で特徴の一致するバッグが見つかりました。"), ("me", "That's mine. How can I collect it?", "私の物です。どう受け取れますか？"), ("other", "We'll send it here on the next coach and call you.", "次のバスでこちらへ送り、お電話します。")),
-        vocab=("baggage tag|手荷物タグ; tracking number|追跡番号; yellow strap|黄色いストラップ; duffel bag|ダッフルバッグ", "receipt|受取証|CORE-22", "suitcase|スーツケース; checked bag|預けたバッグ; case|ケース; tag|タグ; stickers|ステッカー; handles|持ち手", "trace|追跡する; report is filed|申告が記録された"),
+        vocab=("baggage tag|手荷物タグ; tracking number|追跡番号; yellow strap|黄色いストラップ; duffel bag|ダッフルバッグ", "receipt|受取証|CORE-22", "suitcase|スーツケース; checked bag|預けたバッグ; case|ケース; tag|タグ; stickers|ステッカー; handles|持ち手; child's suitcase|子どものスーツケース; white tag|白いタグ; green handles|緑の持ち手", "trace|追跡する; report is filed|申告が記録された"),
     ),
     15: dict(
         slug="recover-from-taking-the-wrong-train", title="Recover from taking the wrong train", ko="잘못 탄 열차에서 경로 회복하기", ja="間違った電車から正しい経路に戻る", level="B1-B2", course_no=3, role="Passenger",
         scene="On a train going the wrong way", scene_ja="反対方向へ進む電車の中", situation="駅名から方向の間違いに気づき、目的地へ戻る経路を確認します。", goal=("Verify the mistake and get a route back to your destination.", "乗り間違いを確認し、目的地へ戻る経路を教えてもらいましょう。"), expressions=(("wrong direction", "反対方向"), ("change at", "〜で乗り換える")),
-        p1=dict(bridge="まず、乗る電車を間違えた可能性を伝えます。", meaning=("Use this to say that you believe you boarded the wrong service.", "違う便に乗ったと思うことを伝える表現です。"), rows=rows(("{t}I think I've taken{/t} {t}the wrong{/t} train.", "{t}違う{/t}電車に{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong train."), ("{t}I think I've taken{/t} {t}the wrong{/t} bus.", "{t}違う{/t}バスに{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong bus."), ("{t}I think I've taken{/t} {t}the wrong{/t} line.", "{t}違う{/t}路線に{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong line."), ("{t}I think I've taken{/t} {t}the wrong{/t} ferry.", "{t}違う{/t}フェリーに{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong ferry.")), reorder_criterion="belief marker / taken-service action / wrong + transport", rule=("Keep “the wrong” with the transport", "the wrong と交通手段をまとめる", "Use “I've taken” before the complete phrase “the wrong + transport.”", "I've taken のあとに the wrong + 交通手段をひとまとまりで置きます。", "I think + I've taken + the wrong transport", "State the suspected mistake", "間違いの可能性を伝える", ("I've taken · the wrong train", "I've taken · the wrong bus")), write=("Which service might you accidentally take?", "どの便を間違えて利用することがありそうですか？")),
-        p2=dict(bridge="次に、目的地へ戻る具体的な行き方を尋ねます。", meaning=("Use this to ask for the route back to a place you need to reach.", "必要な場所へ戻る道順を尋ねる表現です。"), rows=rows(("{t}How do I get back to{/t} Central Station?", "中央駅へは{t}どう戻ればいいですか{/t}？", "How do I|get back to|Central Station?"), ("{t}How do I get back to{/t} the airport?", "空港へは{t}どう戻ればいいですか{/t}？", "How do I|get back to|the airport?"), ("{t}How do I get back to{/t} the city centre?", "市内中心部へは{t}どう戻ればいいですか{/t}？", "How do I|get back to|the city centre?"), ("{t}How do I get back to{/t} the ferry terminal?", "フェリーターミナルへは{t}どう戻ればいいですか{/t}？", "How do I|get back to|the ferry terminal?")), reorder_criterion="question opening / get-back action / complete destination", rule=("Keep “get back to” with the destination", "get back to と目的地", "Use “get back to” before the place you need to reach again.", "もう一度たどり着きたい場所の前に get back to を置きます。", "How do I + get back to + destination?", "Ask for the recovery route", "戻る経路を尋ねる", ("get back to · Central Station", "get back to · the airport")), write=("Which destination would you need to get back to?", "どの目的地へ戻る必要がありますか？")),
+        p1=dict(bridge="まず、乗る電車を間違えた可能性を伝えます。", meaning=("Use this to say that you believe you boarded the wrong service.", "違う便に乗ったと思うことを伝える表現です。"), rows=rows(("{t}I think I've taken{/t} {t}the wrong{/t} train.", "{t}違う{/t}電車に{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong train."), ("{t}I think I've taken{/t} {t}the wrong{/t} bus.", "{t}違う{/t}バスに{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong bus."), ("{t}I think I've taken{/t} {t}the wrong{/t} line.", "{t}違う{/t}路線に{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong line."), ("{t}I think I've taken{/t} {t}the wrong{/t} ferry.", "{t}違う{/t}フェリーに{t}乗ってしまったと思います{/t}。", "I think|I've taken|the wrong ferry.")), reorder_criterion="belief marker / taken-service action / wrong + transport", rule=("Keep “the wrong” with the transport", "the wrong と交通手段をまとめる", "Use “I've taken” before the complete phrase “the wrong + transport.”", "I've taken のあとに the wrong + 交通手段をひとまとまりで置きます。", "I think + I've taken + the wrong transport", "State the suspected mistake", "間違いの可能性を伝える", ("I've taken · the wrong train", "I've taken · the wrong bus")), write=("Which service might you accidentally take?", "「I think I've taken the wrong ___」を使って、間違えた交通手段を伝えましょう。"), write_frame="I think I've taken the wrong ___", write_script="Use “I think I've taken the wrong ___” to say which transport you think you took by mistake.", translate_hints=(("電車", "train"), ("バス", "bus"), ("路線", "line"), ("フェリー", "ferry"))),
+        p2=dict(bridge="次に、目的地へ戻る具体的な行き方を尋ねます。", meaning=("Use this to ask for the route back to a place you need to reach.", "必要な場所へ戻る道順を尋ねる表現です。"), rows=rows(("{t}How do I get back to{/t} Central Station?", "中央駅へは{t}どう戻ればいいですか{/t}？", "How do I|get back to|Central Station?"), ("{t}How do I get back to{/t} the airport?", "空港へは{t}どう戻ればいいですか{/t}？", "How do I|get back to|the airport?"), ("{t}How do I get back to{/t} the city centre?", "市内中心部へは{t}どう戻ればいいですか{/t}？", "How do I|get back to|the city centre?"), ("{t}How do I get back to{/t} the ferry terminal?", "フェリーターミナルへは{t}どう戻ればいいですか{/t}？", "How do I|get back to|the ferry terminal?")), reorder_criterion="question opening / get-back action / complete destination", rule=("Keep “get back to” with the destination", "get back to と目的地", "Use “get back to” before the place you need to reach again.", "もう一度たどり着きたい場所の前に get back to を置きます。", "How do I + get back to + destination?", "Ask for the recovery route", "戻る経路を尋ねる", ("get back to · Central Station", "get back to · the airport")), write=("Which destination would you need to get back to?", "「How do I get back to ___?」を使って、戻りたい場所への行き方を尋ねましょう。"), write_frame="How do I get back to ___?", write_script="Use “How do I get back to ___?” to ask how to return to your destination.", translate_hints=(("中央駅", "Central Station"), ("空港", "airport"), ("市内中心部", "city centre"), ("フェリーターミナル", "ferry terminal"))),
         scene_turns=(("other", "You look worried. Is everything okay?", "心配そうですね。大丈夫ですか？"), ("target", 1, 0), ("other", "Where are you trying to go?", "どこへ行こうとしていますか？"), ("me", "Central Station.", "中央駅です。"), ("target", 2, 0), ("other", "Get off at the next stop and cross the platform.", "次の駅で降りて、反対側のホームへ渡ってください。"), ("me", "So I change there and go back two stops. Thank you.", "そこで乗り換えて2駅戻るのですね。ありがとうございます。"), ("other", "Exactly. The next train leaves in five minutes.", "その通りです。次の電車は5分後に出ます。")),
         receptive=(("Where are you trying to go?", "The passenger is asking for your destination", "相手は行き先を尋ねている", "The passenger is asking where you boarded", "相手は乗った場所を尋ねている"), ("Get off at the next stop.", "Leave the train at the next station", "次の駅で電車を降りる", "Stay on the train to the end", "終点まで電車に乗り続ける"), ("Cross the platform.", "Move to the opposite side of the platform", "ホームの反対側へ移る", "Leave the station through the exit", "出口から駅を出る"), ("The next train leaves in five minutes.", "The return train departs soon", "戻る電車はまもなく出る", "The current train stops for five minutes", "今の電車が5分間停車する")),
-        live=("You realize your train is going the wrong way. Ask another passenger for help.", "電車が反対方向へ進んでいると気づきました。乗客に助けを求めましょう。", "I think I've taken the wrong ___. How do I get back to ___?", "乗り間違いと戻りたい目的地", "When you get lost, do you ask a person or use a map first?", "道に迷ったとき、先に人に聞きますか、それとも地図を使いますか？"),
+        live=("When you get lost, do you ask a person or use a map first, and why?", "道に迷ったとき、先に人に聞きますか、それとも地図を使いますか？なぜですか？", "I think I've taken the wrong ___. How do I get back to ___?", "乗り間違いと戻りたい目的地", "What about you—what do you do first?", "先生はどうですか？最初に何をしますか？"),
         tip=("Say where you are or what you did", "今の状況と過去の行動", "Use “I'm on the wrong train” for your situation now; use “I took the wrong train” to describe the mistake.", "今の状況なら I'm on the wrong train、乗り間違えた行動を説明するなら I took the wrong train を使います。", ("Situation now", "今の状況", "I'm on the wrong train.", "違う電車に乗っています。"), ("Past mistake", "過去の間違い", "I took the wrong train.", "違う電車に乗りました。")),
         transfer_title="On a city bus to the wrong district", transfer_ja="違う地区へ向かう市バスで", transfer_role="Bus Passenger", transfer_turns=(("other", "Are you looking for the museum?", "美術館を探していますか？"), ("target", 1, 1), ("other", "This bus is going east, not downtown.", "このバスは中心街ではなく東へ向かっています。"), ("target", 2, 2), ("other", "Get off at Market Street and take bus 8 in the other direction.", "マーケット通りで降り、反対方向の8番バスに乗ってください。"), ("me", "Got it. I'll change at Market Street.", "分かりました。マーケット通りで乗り換えます。"), ("other", "That bus stops directly outside the museum.", "そのバスは美術館のすぐ前に止まります。")),
-        vocab=("wrong direction|反対方向; change at|〜で乗り換える; city centre|市内中心部", "platform|ホーム|CTX-3; station|駅|CORE-7; route|経路|CORE-59", "train|電車; bus|バス; line|路線; ferry|フェリー; airport|空港; terminal|ターミナル; museum|美術館", "opposite side|反対側; going east|東へ向かう"),
+        vocab=("wrong direction|反対方向; change at|〜で乗り換える; city centre|市内中心部", "platform|ホーム|CTX-3; station|駅|CORE-7; route|経路|CORE-59", "train|電車; bus|バス; line|路線; ferry|フェリー; airport|空港; terminal|ターミナル; museum|美術館; Central Station|中央駅; ferry terminal|フェリーターミナル", "opposite side|反対側; going east|東へ向かう"),
     ),
     16: dict(
         slug="find-an-item-you-may-have-left-behind", title="Find an item you may have left behind", ko="두고 온 물건 찾기", ja="置き忘れたかもしれない物を探す", level="B1-B2", course_no=3, role="Restaurant Manager", scene="Calling a restaurant after lunch", scene_ja="昼食後にレストランへ電話", situation="昼食時に財布を置き忘れた可能性を伝え、届いている物の特徴を確認します。", goal=("Explain where the item may be and help staff identify it.", "物を置き忘れた場所を説明し、係員が特定できる特徴を伝えましょう。"), expressions=(("lost property", "遺失物"), ("photo ID inside", "中に写真付き身分証がある")),
@@ -288,56 +300,20 @@ def validate_lesson(number, lesson):
             raise ValueError(f"CTX-{number} p{part}: needs four closed rows")
         if not pattern.get("omit_reorder"):
             core.validate_reorder_pattern(pattern["rows"])
-
-
-def situation_page(lesson):
-    return f'''    <div class="transition-page" data-page-id="situation-card" data-act="Travel task">
-      <span class="transition-kicker">TRAVEL ENGLISH · {lesson["course_no"]}</span>
-      <h2 class="transition-title">{base.esc(lesson["title"])}</h2>
-      <p class="transition-copy">{base.esc(lesson["situation"])}</p>
-      <div class="scene-cast">
-        {base.cast_row(ME, "Traveller", "用事を完了する旅行者")}
-        {base.cast_row(OTHER, lesson["role"], lesson["scene_ja"])}
-      </div>
-    </div>
-'''
+    if 13 <= number <= 15:
+        for part in (1, 2):
+            if not lesson[f"p{part}"].get("write_script"):
+                raise ValueError(f"CTX-{number} p{part}: open production needs an explicit communicative job")
+        base.validate_reviewed_copy(number, lesson)
 
 
 def wrapping_fill(part, pattern):
-    """Render the v1.12.1 wrapping phrase component directly from source data."""
-    blocks = []
-    for row, (english, japanese, _) in enumerate(pattern["rows"]):
-        fields = []
-        position = 0
-        for index, match in enumerate(re.finditer(r"\{t\}(.*?)\{/t\}", english)):
-            fields.append(base.esc(english[position:match.start()]))
-            if index:
-                fields.append("<br><br>")
-            fields.append(
-                f'<textarea class="free-input phrase-input" data-sync-id="p{part}-fill-{row}-{index}" '
-                f'data-answer="{base.esc(match.group(1))}" rows="1" autocomplete="off" '
-                'spellcheck="false"></textarea>'
-            )
-            position = match.end()
-        fields.append(base.esc(english[position:]))
-        blocks.append(
-            '<div class="task-block"><div class="answer-box">'
-            f'<span class="answer-label">{core.marks(japanese, "target ending")}</span>'
-            f'<span class="answer-fill"><span class="korean">{"".join(fields)}</span></span>'
-            '</div></div>'
-        )
-    return core.section(
-        f"p{part}-fill", "Fill the frame", "空欄をうめよう",
-        '<p class="section-subtitle"><span class="ko">Complete only the highlighted pattern.</span>'
-        '<span class="ja">強調されたパターンだけを空欄に入れましょう。</span></p>'
-        '<div class="tutor-note">Write the learner\'s answer exactly as they say it.</div>'
-        + "".join(blocks),
-    )
+    """Use the shared target-only fill component; target markers are the contract."""
+    return core.fill(f"p{part}-fill", pattern["rows"])
 
 
 def pages(number, lesson):
     rendered = base.pages(number, lesson)
-    rendered[0] = situation_page(lesson)
     for part in (1, 2):
         page_id = f'data-page-id="p{part}-fill"'
         index = next(index for index, page in enumerate(rendered) if page_id in page)
@@ -370,15 +346,17 @@ def build(number, lesson):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--lesson", type=int, choices=LESSONS)
     args = parser.parse_args()
-    for number, lesson in LESSONS.items():
+    selected = LESSONS.items() if args.lesson is None else ((args.lesson, LESSONS[args.lesson]),)
+    for number, lesson in selected:
         output, text = build(number, lesson)
         if output.exists() and not args.refresh:
             raise SystemExit(f"refusing to overwrite {output.relative_to(ROOT)}")
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(text, encoding="utf-8")
         print(f"wrote {output.relative_to(ROOT)}")
-    print(f"{len(LESSONS)} Contextual decks generated")
+    print(f"{len(LESSONS) if args.lesson is None else 1} Contextual decks generated")
     return 0
 
 

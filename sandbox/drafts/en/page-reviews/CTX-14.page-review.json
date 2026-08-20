@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-disruptions-urgent-problems/lessons/14-report-missing-baggage-precisely/lesson.html",
+  "lessonSha256": "2745370e7383580031b8f099fe923aae6fbc006ada5c7abf7f36e18eabc36008",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once and listen to the can-do for today.",
+      "tutorAction": "State the can-do briefly, then ask the learner to read the title aloud.",
+      "targetOrPrompt": "Report missing baggage precisely (見つからない荷物を正確に申告する): Report the missing bag and give details staff can use to trace it. Please read the title aloud.荷物が見つからないことを伝え、追跡に使える特徴を説明しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to the practical outcome before any scene language appears.",
+      "pedagogicalValue": "The page gives a usable destination for the lesson without duplicating examples or the scene.",
+      "failureDiagnosis": "A vague opening, extra outcome boxes, or tutor modelling here would delay the first learner action.",
+      "nonTargetSupport": "The bilingual can-do supports meaning; no sentence production is required yet.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set is needed on this orientation page.",
+      "componentConsistency": "Uses the approved single goal card rather than legacy three-box outcomes.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Report the missing bag and give details staff can use to trace it. Please read the title aloud.荷物が見つからないことを伝え、追跡に使える特徴を説明しましょう。タイトルを声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "scene",
+      "learnerAction": "Role-play the traveller lines while the tutor takes the named counterpart role.",
+      "tutorAction": "Take the named counterpart role, start with its first line, and keep the exchange moving.",
+      "targetOrPrompt": "At airport baggage services (空港の手荷物サービス窓口): Let's role-play. You're the traveller, and I'll be the baggage agent.ロールプレイをしましょう。あなたは旅行者、私は手荷物係です。",
+      "learningTarget": "Experience both lesson targets inside one resolved practical exchange before analysis.",
+      "pedagogicalValue": "The scene makes the target language purposeful and establishes turn ownership immediately.",
+      "failureDiagnosis": "Unclear roles or a tutor read-through would turn the role-play into passive listening.",
+      "nonTargetSupport": "Complete bilingual turns keep all non-target language visible while target phrases appear in context.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No selection task; the meaningful decision is when to deliver each traveller line.",
+      "componentConsistency": "Uses the approved dialogue turns with consistent traveller and counterpart profiles.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Let's role-play. You're the traveller, and I'll be the baggage agent.ロールプレイをしましょう。あなたは旅行者、私は手荷物係です。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "understand",
+      "learnerAction": "Listen to each counterpart line and choose the meaning that matches the complete line.",
+      "tutorAction": "Read only the counterpart English line; let the learner choose the meaning.",
+      "targetOrPrompt": "Understand (聞いてわかろう): I’ll read each baggage agent line. Choose what it means.私が手荷物係のセリフを読みます。意味を選んでください。",
+      "learningTarget": "Build receptive control of the staff or partner language needed to complete the scene.",
+      "pedagogicalValue": "Four distinct lines test meaning before the lesson asks for more production.",
+      "failureDiagnosis": "If ownership is unclear or distractors are absurd, the page measures reading layout rather than understanding.",
+      "nonTargetSupport": "Japanese appears in the answer options while the spoken English line remains the comprehension input.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "Each row has a plausible semantic contrast, and the correct option changes physical position across rows.",
+      "componentConsistency": "Uses the shared synchronized two-option receptive-choice rows.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: I’ll read each baggage agent line. Choose what it means.私が手荷物係のセリフを読みます。意味を選んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "expressions",
+      "learnerAction": "Read each short expression aloud once before returning to the scene language.",
+      "tutorAction": "Prompt learner reading and clarify a phrase only if it blocks the later scene.",
+      "targetOrPrompt": "Useful expressions (使える表現): Please read each expression aloud.それぞれの表現を声に出して読んでください。",
+      "learningTarget": "Pre-load two compact travel chunks that remove a real comprehension or production obstacle.",
+      "pedagogicalValue": "The page is brief lexical support rather than a second grammar lesson.",
+      "failureDiagnosis": "A passive glossary or unrelated phrase list would not earn a separate page.",
+      "nonTargetSupport": "Each English expression has an aligned Japanese meaning and no hidden retrieval demand.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No distractors; this is a short readiness read, not an assessment.",
+      "componentConsistency": "Uses the shared compact model-list component for quick language support.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Please read each expression aloud.それぞれの表現を声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Notice the next model line and listen to the short transition into that practice move.",
+      "tutorAction": "Introduce the next move in one line and continue without drilling on the transition page.",
+      "targetOrPrompt": "My suitcase hasn't arrived.: First, let's practice this useful line from the scene.まず、どの荷物が到着していないかを伝えます。",
+      "learningTarget": "Signal the shift to one pattern or to the full task without reteaching the prior page.",
+      "pedagogicalValue": "The page preserves the receptive-to-productive sequence and keeps navigation explicit.",
+      "failureDiagnosis": "A duplicate scene summary or unexplained heading would create a page with no learner-facing job.",
+      "nonTargetSupport": "The model heading and bilingual transition state exactly what comes next.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set belongs on a navigation transition.",
+      "componentConsistency": "Uses the approved unboxed transition-page pattern with one purpose.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: First, let's practice this useful line from the scene.まず、どの荷物が到着していないかを伝えます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the displayed examples aloud after the tutor gives a brief meaning-and-use explanation.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example aloud.",
+      "targetOrPrompt": "Today's pattern (今日のパターン): hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません",
+      "learningTarget": "Connect the target form to its practical meaning: hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません.",
+      "pedagogicalValue": "The highlighted target stays stable while surrounding vocabulary changes across examples.",
+      "failureDiagnosis": "Combining a long lecture with learner instructions, or having the tutor model first, would reduce retrieval.",
+      "nonTargetSupport": "Japanese translations remain visible and highlighting isolates only the taught target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No distractors; the learner compares examples with one stable highlighted pattern.",
+      "componentConsistency": "Uses the approved meaning-and-use block plus one hero and supporting examples.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Today's pattern (今日のパターン) Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "hasn't arrived",
+          "まだ届いていません",
+          "hasn't arrived",
+          "まだ届いていません",
+          "hasn't arrived",
+          "まだ届いていません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete example sentence aloud.",
+      "tutorAction": "Ask the learner to read each example and correct only a useful pronunciation issue.",
+      "targetOrPrompt": "Read the sentences (文を読もう): hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません",
+      "learningTarget": "Build fluent whole-sentence access to the stable target: hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません, hasn't arrived, まだ届いていません.",
+      "pedagogicalValue": "Repeated oral production varies the real content without changing the target boundary.",
+      "failureDiagnosis": "Tutor read-aloud or silent scanning would remove the learner production this page is for.",
+      "nonTargetSupport": "Complete sentences and Japanese translations keep vocabulary visible around the highlighted target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set; variation comes from the four meaningful example situations.",
+      "componentConsistency": "Uses the shared read-aloud example-card component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Please read each sentence aloud.一文ずつ声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "hasn't arrived",
+          "まだ届いていません",
+          "hasn't arrived",
+          "まだ届いていません",
+          "hasn't arrived",
+          "まだ届いていません",
+          "hasn't arrived",
+          "まだ届いていません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the diagram and examples to notice how the sentence parts fit together.",
+      "tutorAction": "Explain the operational form once, point to the fixed frame and changing content, then move on.",
+      "targetOrPrompt": "Put “hasn't arrived” after the missing bag (見つからない荷物のあとに hasn't arrived): Name the expected bag first, then state that it has not arrived.届くはずの荷物を先に言い、そのあとにまだ届いていないことを伝えます。",
+      "learningTarget": "Understand the placement rule that supports the target: Name the expected bag first, then state that it has not arrived.届くはずの荷物を先に言い、そのあとにまだ届いていないことを伝えます。.",
+      "pedagogicalValue": "The page makes a concrete word-order or constituent boundary visible before reconstruction.",
+      "failureDiagnosis": "Vague language such as “add the thing” or a second reading drill would add no usable rule.",
+      "nonTargetSupport": "Formula labels and complete examples show the non-target slot without hiding articles or inflections.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No answer choices; the visible contrast is fixed frame versus replaceable content.",
+      "componentConsistency": "Uses the approved rule diagram rather than a prose-only explanation.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Name the expected bag first, then state that it has not arrived.届くはずの荷物を先に言い、そのあとにまだ届いていないことを伝えます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each complete sentence aloud, including every missing target segment.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Say the complete sentence (文をまるごと言おう): まだ届いていません, まだ届いていません, まだ届いていません, まだ届いていません",
+      "learningTarget": "Retrieve the taught target while keeping lexical content stable: hasn't arrived, hasn't arrived, hasn't arrived, hasn't arrived.",
+      "pedagogicalValue": "The blanks align exactly with highlighted target segments, so the page rehearses the intended pattern.",
+      "failureDiagnosis": "Blanking content vocabulary, leaving the learner to type, or omitting a target segment would change the teaching job.",
+      "nonTargetSupport": "All non-target vocabulary stays printed around the blanks; Japanese target cues match the blank count.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the four rows vary useful contexts while the target boundary remains stable.",
+      "componentConsistency": "Uses the shared slot-input whole-sentence fill component without oversized phrase fields.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Say each whole sentence aloud, including the missing words.空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "まだ届いていません",
+          "まだ届いていません",
+          "まだ届いていません",
+          "まだ届いていません"
+        ],
+        "blankAnswers": [
+          "hasn't arrived",
+          "hasn't arrived",
+          "hasn't arrived",
+          "hasn't arrived"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read the Japanese cue, say the full English sentence, and use lexical hints only when needed.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Say it in English (英語にしよう): My suitcase hasn't arrived., My checked bag hasn't arrived., My duffel bag hasn't arrived., My child's suitcase hasn't arrived.",
+      "learningTarget": "Produce the complete sentence from meaning with supported lexical recall; hints: スーツケース:suitcase, 預けたバッグ:checked bag, ダッフルバッグ:duffel bag, 子どものスーツケース:child's suitcase.",
+      "pedagogicalValue": "This is supported whole-sentence production, a clear step beyond reading and target-only filling.",
+      "failureDiagnosis": "Missing support-stage metadata, grammar hints, or hints that reveal articles would invalidate the scaffold.",
+      "nonTargetSupport": "The target-v2 supported stage supplies declared lexical hints only: スーツケース:suitcase, 預けたバッグ:checked bag, ダッフルバッグ:duffel bag, 子どものスーツケース:child's suitcase.",
+      "articleTreatment": "Articles remain an unaided learner decision in whole-sentence production; lexical hint chips never supply a, an, or the.",
+      "choiceQuality": "No distractors; the learner chooses the complete wording and article forms independently.",
+      "componentConsistency": "Uses the approved shared translate script, space-input control, and target-v2 support contract.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Read the Japanese, then say it in English.日本語を見て、英語で言ってみましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "My suitcase hasn't arrived.",
+          "My checked bag hasn't arrived.",
+          "My duffel bag hasn't arrived.",
+          "My child's suitcase hasn't arrived."
+        ],
+        "hintChips": [
+          "スーツケース:suitcase",
+          "預けたバッグ:checked bag",
+          "ダッフルバッグ:duffel bag",
+          "子どものスーツケース:child's suitcase"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one original sentence with the printed target frame before the tutor captures it.",
+      "tutorAction": "Listen first, react naturally, then capture the sentence and add only a useful correction.",
+      "targetOrPrompt": "Exact learner prompt: “Use “My ___ hasn't arrived” to identify the missing bag.”",
+      "learningTarget": "Use the practiced frame to complete the communicative job stated in “Use “My ___ hasn't arrived” to identify the missing bag.”, with personally chosen content.",
+      "pedagogicalValue": "The wording “Use “My ___ hasn't arrived” to identify the missing bag.” identifies both the frame and its real conversational purpose, so this page advances from controlled examples to meaningful open production.",
+      "failureDiagnosis": "If the page merely said “make your own sentence,” the job encoded in “Use “My ___ hasn't arrived” to identify the missing bag.” would be hidden; if the tutor supplied the sentence first, it would not test learner production.",
+      "nonTargetSupport": "The frame stays visible above the shared Student’s sentence and Correction fields.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No fixed options; the learner makes an open but bounded content choice.",
+      "componentConsistency": "Uses the shared feedback-compose component with Student’s sentence and Correction labels.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic evidence records the exact learner-facing production job: “Use “My ___ hasn't arrived” to identify the missing bag.” Visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “My ___ hasn't arrived” to identify the missing bag."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Notice the next model line and listen to the short transition into that practice move.",
+      "tutorAction": "Introduce the next move in one line and continue without drilling on the transition page.",
+      "targetOrPrompt": "It's a large red case with a yellow strap.: Next, let's practice this useful line from the scene.次に、色・大きさ・目印を一つの説明にまとめます。",
+      "learningTarget": "Signal the shift to one pattern or to the full task without reteaching the prior page.",
+      "pedagogicalValue": "The page preserves the receptive-to-productive sequence and keeps navigation explicit.",
+      "failureDiagnosis": "A duplicate scene summary or unexplained heading would create a page with no learner-facing job.",
+      "nonTargetSupport": "The model heading and bilingual transition state exactly what comes next.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set belongs on a navigation transition.",
+      "componentConsistency": "Uses the approved unboxed transition-page pattern with one purpose.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Next, let's practice this useful line from the scene.次に、色・大きさ・目印を一つの説明にまとめます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the displayed examples aloud after the tutor gives a brief meaning-and-use explanation.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example aloud.",
+      "targetOrPrompt": "Today's pattern (今日のパターン): It's a, with, 付きの, です, It's a, with, 付きの, です, It's a, with, 付いた, です",
+      "learningTarget": "Connect the target form to its practical meaning: It's a, with, 付きの, です, It's a, with, 付きの, です, It's a, with, 付いた, です.",
+      "pedagogicalValue": "The highlighted target stays stable while surrounding vocabulary changes across examples.",
+      "failureDiagnosis": "Combining a long lecture with learner instructions, or having the tutor model first, would reduce retrieval.",
+      "nonTargetSupport": "Japanese translations remain visible and highlighting isolates only the taught target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No distractors; the learner compares examples with one stable highlighted pattern.",
+      "componentConsistency": "Uses the approved meaning-and-use block plus one hero and supporting examples.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Today's pattern (今日のパターン) Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "It's a",
+          "with",
+          "付きの",
+          "です",
+          "It's a",
+          "with",
+          "付きの",
+          "です",
+          "It's a",
+          "with",
+          "付いた",
+          "です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete example sentence aloud.",
+      "tutorAction": "Ask the learner to read each example and correct only a useful pronunciation issue.",
+      "targetOrPrompt": "Read the sentences (文を読もう): It's a, with, 付きの, です, It's a, with, 付きの, です, It's a, with, 付いた, です, It's a, with, 付きの, です",
+      "learningTarget": "Build fluent whole-sentence access to the stable target: It's a, with, 付きの, です, It's a, with, 付きの, です, It's a, with, 付いた, です, It's a, with, 付きの, です.",
+      "pedagogicalValue": "Repeated oral production varies the real content without changing the target boundary.",
+      "failureDiagnosis": "Tutor read-aloud or silent scanning would remove the learner production this page is for.",
+      "nonTargetSupport": "Complete sentences and Japanese translations keep vocabulary visible around the highlighted target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set; variation comes from the four meaningful example situations.",
+      "componentConsistency": "Uses the shared read-aloud example-card component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Please read each sentence aloud.一文ずつ声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "It's a",
+          "with",
+          "付きの",
+          "です",
+          "It's a",
+          "with",
+          "付きの",
+          "です",
+          "It's a",
+          "with",
+          "付いた",
+          "です",
+          "It's a",
+          "with",
+          "付きの",
+          "です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Use the diagram and examples to notice how the sentence parts fit together.",
+      "tutorAction": "Explain the operational form once, point to the fixed frame and changing content, then move on.",
+      "targetOrPrompt": "Add the identifying feature with “with” (目印は with で加える): Describe the item first, then add its identifying feature with “with.”先に物を説明し、目印となる特徴を with で加えます。",
+      "learningTarget": "Understand the placement rule that supports the target: Describe the item first, then add its identifying feature with “with.”先に物を説明し、目印となる特徴を with で加えます。.",
+      "pedagogicalValue": "The page makes a concrete word-order or constituent boundary visible before reconstruction.",
+      "failureDiagnosis": "Vague language such as “add the thing” or a second reading drill would add no usable rule.",
+      "nonTargetSupport": "Formula labels and complete examples show the non-target slot without hiding articles or inflections.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No answer choices; the visible contrast is fixed frame versus replaceable content.",
+      "componentConsistency": "Uses the approved rule diagram rather than a prose-only explanation.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Describe the item first, then add its identifying feature with “with.”先に物を説明し、目印となる特徴を with で加えます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put the meaning chunks in order, then say the complete sentence aloud.",
+      "tutorAction": "Let the learner order each row and require the completed sentence before moving on.",
+      "targetOrPrompt": "Build the sentence (文を組み立てよう): Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Reconstruct the target in meaningful constituent chunks: Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。.",
+      "pedagogicalValue": "Chunk order tests sentence structure rather than punctuation or arbitrary fragments.",
+      "failureDiagnosis": "Single-word fragments, bound articles, or identical obvious layouts would make the choices trivial.",
+      "nonTargetSupport": "All needed chunks are visible; no extra vocabulary recall is mixed into the ordering decision.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "Chunks preserve meaningful constituents, and the four rows vary the content and resulting order task.",
+      "componentConsistency": "Uses the shared synchronized reorder component and whole-sentence follow-through.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each complete sentence aloud, including every missing target segment.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Say the complete sentence (文をまるごと言おう): 付きの, です, 付きの, です, 付いた, です, 付きの, です",
+      "learningTarget": "Retrieve the taught target while keeping lexical content stable: It's a, with, It's a, with, It's a, with, It's a, with.",
+      "pedagogicalValue": "The blanks align exactly with highlighted target segments, so the page rehearses the intended pattern.",
+      "failureDiagnosis": "Blanking content vocabulary, leaving the learner to type, or omitting a target segment would change the teaching job.",
+      "nonTargetSupport": "All non-target vocabulary stays printed around the blanks; Japanese target cues match the blank count.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the four rows vary useful contexts while the target boundary remains stable.",
+      "componentConsistency": "Uses the shared slot-input whole-sentence fill component without oversized phrase fields.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Say each whole sentence aloud, including the missing words.空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "付きの",
+          "です",
+          "付きの",
+          "です",
+          "付いた",
+          "です",
+          "付きの",
+          "です"
+        ],
+        "blankAnswers": [
+          "It's a",
+          "with",
+          "It's a",
+          "with",
+          "It's a",
+          "with",
+          "It's a",
+          "with"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read the Japanese cue, say the full English sentence, and use lexical hints only when needed.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Say it in English (英語にしよう): It's a large red case with a yellow strap., It's a small black case with a white tag., It's a blue suitcase with two stickers., It's a gray duffel bag with green handles.",
+      "learningTarget": "Produce the complete sentence from meaning with supported lexical recall; hints: 黄色いストラップ:yellow strap, 白いタグ:white tag, ステッカー:stickers, 緑の持ち手:green handles.",
+      "pedagogicalValue": "This is supported whole-sentence production, a clear step beyond reading and target-only filling.",
+      "failureDiagnosis": "Missing support-stage metadata, grammar hints, or hints that reveal articles would invalidate the scaffold.",
+      "nonTargetSupport": "The target-v2 supported stage supplies declared lexical hints only: 黄色いストラップ:yellow strap, 白いタグ:white tag, ステッカー:stickers, 緑の持ち手:green handles.",
+      "articleTreatment": "Articles remain an unaided learner decision in whole-sentence production; lexical hint chips never supply a, an, or the.",
+      "choiceQuality": "No distractors; the learner chooses the complete wording and article forms independently.",
+      "componentConsistency": "Uses the approved shared translate script, space-input control, and target-v2 support contract.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Read the Japanese, then say it in English.日本語を見て、英語で言ってみましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "It's a large red case with a yellow strap.",
+          "It's a small black case with a white tag.",
+          "It's a blue suitcase with two stickers.",
+          "It's a gray duffel bag with green handles."
+        ],
+        "hintChips": [
+          "黄色いストラップ:yellow strap",
+          "白いタグ:white tag",
+          "ステッカー:stickers",
+          "緑の持ち手:green handles"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one original sentence with the printed target frame before the tutor captures it.",
+      "tutorAction": "Listen first, react naturally, then capture the sentence and add only a useful correction.",
+      "targetOrPrompt": "Exact learner prompt: “Use “It's a ___ with ___” to describe the bag and one clear feature.”",
+      "learningTarget": "Use the practiced frame to complete the communicative job stated in “Use “It's a ___ with ___” to describe the bag and one clear feature.”, with personally chosen content.",
+      "pedagogicalValue": "The wording “Use “It's a ___ with ___” to describe the bag and one clear feature.” identifies both the frame and its real conversational purpose, so this page advances from controlled examples to meaningful open production.",
+      "failureDiagnosis": "If the page merely said “make your own sentence,” the job encoded in “Use “It's a ___ with ___” to describe the bag and one clear feature.” would be hidden; if the tutor supplied the sentence first, it would not test learner production.",
+      "nonTargetSupport": "The frame stays visible above the shared Student’s sentence and Correction fields.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No fixed options; the learner makes an open but bounded content choice.",
+      "componentConsistency": "Uses the shared feedback-compose component with Student’s sentence and Correction labels.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic evidence records the exact learner-facing production job: “Use “It's a ___ with ___” to describe the bag and one clear feature.” Visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “It's a ___ with ___” to describe the bag and one clear feature."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Notice the next model line and listen to the short transition into that practice move.",
+      "tutorAction": "Introduce the next move in one line and continue without drilling on the transition page.",
+      "targetOrPrompt": "Complete the practical job (用事を完了しよう): Now, let's return to the scene and complete the practical job.最初の場面に戻り、二つの表現で用事を最後まで完了しましょう。",
+      "learningTarget": "Signal the shift to one pattern or to the full task without reteaching the prior page.",
+      "pedagogicalValue": "The page preserves the receptive-to-productive sequence and keeps navigation explicit.",
+      "failureDiagnosis": "A duplicate scene summary or unexplained heading would create a page with no learner-facing job.",
+      "nonTargetSupport": "The model heading and bilingual transition state exactly what comes next.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set belongs on a navigation transition.",
+      "componentConsistency": "Uses the approved unboxed transition-page pattern with one purpose.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Now, let's return to the scene and complete the practical job.最初の場面に戻り、二つの表現で用事を最後まで完了しましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read the traveller lines aloud while the tutor plays the counterpart.",
+      "tutorAction": "Take the named counterpart role and pause for each learner line.",
+      "targetOrPrompt": "Replay the full scene (場面をもう一度): hasn't arrived, まだ届いていません, It's a, with, 付きの, です",
+      "learningTarget": "Replay the resolved scene with both targets in sequence: hasn't arrived, まだ届いていません, It's a, with, 付きの, です.",
+      "pedagogicalValue": "The learner now performs the whole interaction after practicing each move separately.",
+      "failureDiagnosis": "A tutor read-through or ambiguous speaker colors would erase the role-play ownership.",
+      "nonTargetSupport": "Complete bilingual dialogue turns support non-target partner language and scene flow.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No selection task; the learner chooses timing and delivers the correct owned turns.",
+      "componentConsistency": "Uses the same approved dialogue component and role colors as the opening scene.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: I'll be the Baggage Agent. Please read the Traveller lines aloud.私は相手役をします。Traveller のセリフを声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "hasn't arrived",
+          "まだ届いていません",
+          "It's a",
+          "with",
+          "付きの",
+          "です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say each owned line completely, including the missing target words, inside the role-play.",
+      "tutorAction": "Play the counterpart and type only the missing words the learner supplies.",
+      "targetOrPrompt": "Complete the full scene (場面を完成しよう): hasn't arrived, It's a, with",
+      "learningTarget": "Complete both target moves under conversational turn pressure: hasn't arrived, It's a, with.",
+      "pedagogicalValue": "This combines target retrieval with the real sequence and resolves the original practical task.",
+      "failureDiagnosis": "Blanking lexical details, unclear roles, or stopping before the practical outcome would weaken transfer.",
+      "nonTargetSupport": "Non-target dialogue and sentence content remain visible; only the practiced target segments are blank.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the meaningful demand is retrieval in the correct conversational turn.",
+      "componentConsistency": "Uses synchronized target-only inputs inside the approved role-play dialogue.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: I’ll be the Baggage Agent. Say each complete line, including the missing words.私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "hasn't arrived",
+          "It's a",
+          "with"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor’s relevant question, then ask the tutor the related reciprocal question.",
+      "tutorAction": "Answer genuinely, react to the learner, and follow the most interesting detail without forcing the pattern.",
+      "targetOrPrompt": "Exact Tutor question: “Which feature makes your bag easiest to recognize?” Exact learner reciprocal question: “What does your suitcase look like?”",
+      "learningTarget": "Answer the personal or preference question “Which feature makes your bag easiest to recognize?”, then reverse the direction of the conversation by asking the tutor “What does your suitcase look like?”",
+      "pedagogicalValue": "“Which feature makes your bag easiest to recognize?” stands alone without the lesson frame and invites a real answer; “What does your suitcase look like?” creates a genuine second direction instead of ending after one response.",
+      "failureDiagnosis": "If “Which feature makes your bag easiest to recognize?” were a disguised scenario-production command, or if the learner never asked “What does your suitcase look like?”, this would be another one-way pattern exercise rather than reciprocal free talk.",
+      "nonTargetSupport": "Generic Tutor and Me icons make ownership clear; both sides have a shared capture area.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "Open answers are intentional; the prompt supplies a relevant topic rather than restrictive options.",
+      "componentConsistency": "Uses a four-turn reciprocal dialogue with synchronized learner and tutor answer fields.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic audit read both dialogue prompts: Tutor asks “Which feature makes your bag easiest to recognize?”; learner asks back “What does your suitcase look like?” Visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which feature makes your bag easiest to recognize?",
+          "What does your suitcase look like?"
+        ]
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two natural options and notice when each one fits.",
+      "tutorAction": "Explain the usage contrast briefly and invite one learner example only if useful.",
+      "targetOrPrompt": "Say “case” or “suitcase” (case と suitcase): Use “suitcase” when the type matters; “case” is a natural shorter reference once the bag is clear.種類を明確にするなら suitcase、どの荷物か分かったあとは短く case と言えます。",
+      "learningTarget": "Add one adjacent natural-choice distinction: Use “suitcase” when the type matters; “case” is a natural shorter reference once the bag is clear.種類を明確にするなら suitcase、どの荷物か分かったあとは短く case と言えます。.",
+      "pedagogicalValue": "The page teaches register, nuance, or collocation that the main pattern pages do not already cover.",
+      "failureDiagnosis": "Two synonymous examples without a real situation difference would make the page decorative.",
+      "nonTargetSupport": "Each option includes a when-label, English example, and aligned Japanese meaning.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "The two options are both valid; the learner selects by situation rather than right-versus-wrong grading.",
+      "componentConsistency": "Uses the approved two-way nuance comparison component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Use “suitcase” when the type matters; “case” is a natural shorter reference once the bag is clear.種類を明確にするなら suitcase、どの荷物か分かったあとは短く case と言えます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "transfer-scene",
+      "learnerAction": "Role-play the learner lines in a new setting and supply the missing target segments.",
+      "tutorAction": "Take the newly named counterpart role and continue through the final practical resolution.",
+      "targetOrPrompt": "At a coach-station lost-bag desk (長距離バス駅の手荷物窓口で): hasn't arrived, It's a, with",
+      "learningTarget": "Use both targets in a different resolved context: hasn't arrived, It's a, with.",
+      "pedagogicalValue": "The changed setting tests transfer instead of repeating the original scene with new nouns only.",
+      "failureDiagnosis": "Missing role assignment, reused unresolved dialogue, or a scene that ends before the result would not prove transfer.",
+      "nonTargetSupport": "The new bilingual dialogue keeps unfamiliar context visible while target-only fields require retrieval.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the learner must choose and deliver each target at the appropriate turn.",
+      "componentConsistency": "Uses the approved role-play dialogue with target-only synchronized controls and a closing outcome.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Let's role-play a new situation. I'll be the station agent.別の場面でロールプレイをしましょう。同じ二つの表現を使ってください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "hasn't arrived",
+          "It's a",
+          "with"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
