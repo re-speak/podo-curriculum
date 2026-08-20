@@ -909,14 +909,14 @@ others would → have you ever lost something → what did you learn
 so the topic count does not grow. Each opening asks for a concrete judgment without requiring private
 money, work or regret, and each ladder leaves room for the tutor's real view.
 
-**101. How long you could live without social media** `opinion`
+**101. How long should a social-media break last?** `opinion`
 *Opens:* "How long does a social-media break need to be before it changes anything?"
 *Ladder:* useful duration → first function missed → what deletion changes → hard-to-replace value →
 when usefulness becomes a time sink → healthy habits → advice for a fourteen-year-old
 *Moves:* `I'd last about ___.` **(Core 51)** `chunk` · `It's not so much ___ as ___.` **(Core 89)** `chunk`
 *Shared:* KR 10-1
 
-**102. Something AI would get wrong about your work** `opinion`
+**102. What AI gets wrong about human work** `opinion`
 *Opens:* "Which part of human work is easiest for AI to misunderstand?"
 *Ladder:* choose one role → missing context → one observable example → useful capability → blind spot
 → responsibility humans keep → how the role may change
@@ -925,27 +925,27 @@ when usefulness becomes a time sink → healthy habits → advice for a fourteen
 
 **103. How much money is enough?** `opinion` `深く`
 *Opens:* "What does ‘enough money’ need to make possible?"
-*Ladder:* first constraint removed → what money cannot solve → why needs differ → evidence about
+*Ladder:* first constraint removed → what money cannot solve → why needs differ → when money improves
 well-being → attention freed from worry → number, range or conditions → non-financial security
 *Moves:* `That's true up to a point, but ___.` `chunk` · `Overall, I'd say ___.` **(Core 117)** `chunk`
 *Shared:* KR 10-4
 
-**104. The age you would choose to be forever** `opinion` `深く`
+**104. Is there a best age to be?** `opinion` `深く`
 *Opens:* "Which life stage seems most attractive to freeze in time?"
 *Ladder:* strongest advantage → unavoidable cost → what the present offers → growth a frozen stage
 prevents → conditions that change the answer → can one age be best → what the present deserves
 *Moves:* `If anything, ___.` **(Core 116)** `chunk` · `That's true, but it doesn't account for ___.` **(Core 115)** `chunk`
 *Shared:* KR 10-5
 
-**105. One thing you would do differently** `opinion` `深く`
+**105. A decision worth revisiting** `opinion` `深く`
 *Opens:* "Which decision from history, fiction or everyday life could have been handled differently?"
 *Ladder:* alternative choice → would it work → actual gains and costs → alternative gains and costs →
 why the original made sense → useful regret → what “no regrets” really means
 *Moves:* `I'd have ___ differently.` `chunk` · `It still made sense at the time.` `chunk`
-*Shared:* KR 10-6 · the former abstract title was an essay prompt; the personal title and bounded
-opening keep the learner out of a prepared speech
+*Shared:* KR 10-6 · the former personal title assumed regret; the bounded title and opening let the
+learner choose a historical, fictional or everyday case instead of giving a prepared confession
 
-**106. How speaking English has changed you** `opinion`
+**106. What speaking English has made you notice** `opinion`
 *Opens:* "What difference between English and Japanese has become more noticeable since you started speaking English?"
 *Ladder:* one example → words, tone or silence → who you can speak with → hardest adjustment → biggest
 surprise → expression and identity → what may change next → would you choose the path again

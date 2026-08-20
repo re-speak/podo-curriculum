@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-accessible/lessons/101-how-long-should-a-social-media-break-last/lesson.html",
+  "lessonSha256": "7a6a673621db09a203fa475fd28532733b19da881c8c329e15be949f9d233340",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “How long should a social-media break last?” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "How long should a social-media break last? / SNSを休む期間. Let's examine what a meaningful break from social media would change. / SNSを意味のある期間休むと何が変わるか考えましょう。",
+      "learningTarget": "Orient the learner to a conversation about How long should a social-media break last? without supplying a position.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; agreement with any position is not tested.",
+      "nonTargetSupport": "The Japanese can-do “SNSを意味のある期間休むと何が変わるか考えましょう。” and title “SNSを休む期間” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice set appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answers, or second task.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What a break actually tests / SNSを休むと分かること. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “A break from social media can mean an hour, a week, or a permanent choice.” to “The useful question is not only how long we can stop, but what we want back.”, as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several defensible angles for the later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claim translations are available; this accessible article owns these selective glosses: time sink=時間を奪うもの.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “How long does a social-media break need to be before it changes anything?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How long does a social-media break need to be before it changes anything?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "How long does a social-media break need to be before it changes anything? / SNSを休むことで何かが変わるには、どのくらいの期間が必要ですか？ Follow-up pool: What kind of change would count? Would a shorter break reveal anything?",
+      "learningTarget": "Develop the distinct “opening” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A meaningful break” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How long does a social-media break need to be before it changes anything?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “SNSを休むことで何かが変わるには、どのくらいの期間が必要ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How long does a social-media break need to be before it changes anything?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “Which function would people miss first?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which function would people miss first?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which function would people miss first? / 人はどの機能が使えないと最初に困るでしょうか？ Follow-up pool: Is it communication, information, or entertainment? What already serves the same purpose?",
+      "learningTarget": "Develop the distinct “miss” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “The first missing function” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which function would people miss first?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “人はどの機能が使えないと最初に困るでしょうか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which function would people miss first?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “Which habit usually changes after someone deletes or mutes an app?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which habit usually changes after someone deletes or mutes an app?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which habit usually changes after someone deletes or mutes an app? / アプリを削除したり通知を切ったりすると、どの習慣が変わりやすいですか？ Follow-up pool: What becomes easier? What tends to bring the person back?",
+      "learningTarget": "Develop the distinct “deletion” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “After deleting an app” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which habit usually changes after someone deletes or mutes an app?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “アプリを削除したり通知を切ったりすると、どの習慣が変わりやすいですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which habit usually changes after someone deletes or mutes an app?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “What does social media provide that is hardest to replace?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What does social media provide that is hardest to replace?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "What does social media provide that is hardest to replace? / SNSが与えるもので、最も代えにくいものは何ですか？ Follow-up pool: Why is another tool less effective? Who benefits most from that value?",
+      "learningTarget": "Develop the distinct “value” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “Hard to replace” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What does social media provide that is hardest to replace?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “SNSが与えるもので、最も代えにくいものは何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What does social media provide that is hardest to replace?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “When does social media become a time sink instead of a useful tool?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “When does social media become a time sink instead of a useful tool?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "When does social media become a time sink instead of a useful tool? / SNSはいつ、役立つ道具ではなく時間を奪うものになりますか？ Follow-up pool: Which kind of checking has no clear purpose? What limit could restore a purpose?",
+      "learningTarget": "Develop the distinct “cost” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “Useful or a time sink” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “When does social media become a time sink instead of a useful tool?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “SNSはいつ、役立つ道具ではなく時間を奪うものになりますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When does social media become a time sink instead of a useful tool?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “What habits show a healthy relationship with social media?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What habits show a healthy relationship with social media?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "What habits show a healthy relationship with social media? / どんな習慣が、SNSとの健全な関係を示しますか？ Follow-up pool: How does the person decide when to open it? Which habit would be hardest to copy?",
+      "learningTarget": "Develop the distinct “model” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “Healthy use” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What habits show a healthy relationship with social media?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どんな習慣が、SNSとの健全な関係を示しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What habits show a healthy relationship with social media?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “What would you tell a fourteen-year-old about using social media?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What would you tell a fourteen-year-old about using social media?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "What would you tell a fourteen-year-old about using social media? / 十四歳の人にSNSの使い方について何と伝えますか？ Follow-up pool: Which rule would be realistic? What should adults understand too?",
+      "learningTarget": "Develop the distinct “teen” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “Advice at fourteen” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What would you tell a fourteen-year-old about using social media?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “十四歳の人にSNSの使い方について何と伝えますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you tell a fourteen-year-old about using social media?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the standalone question “Which one social-media function is most worth keeping?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which one social-media function is most worth keeping?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which one social-media function is most worth keeping? / SNSの機能を一つだけ残すなら、どれが最も価値がありますか？ Follow-up pool: Why that function? What could replace the others?",
+      "learningTarget": "Develop the distinct “flip” angle of How long should a social-media break last? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “One function to keep” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which one social-media function is most worth keeping?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “SNSの機能を一つだけ残すなら、どれが最も価値がありますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which one social-media function is most worth keeping?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
