@@ -10,12 +10,14 @@ Existing decks are never overwritten unless --refresh is supplied.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import pathlib
 import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import generate_ft_course_batch as ft_contract
 import new_lesson
 
 
@@ -26,6 +28,27 @@ CANONICAL = {
     variant: TRACK / f"courses/talk-between-two-countries-{variant}/lessons/01-this-surprised-me/lesson.html"
     for variant in ("accessible", "full")
 }
+PRESERVED_FT9 = {
+    "accessible": (
+        TRACK / "courses/talk-me-lately-accessible/lessons/09-a-purchase-that-was-worth-it/lesson.html",
+        "be95ac07dc98764ef949cfc809485dd3bbaae801af6e81894041be491677e98d",
+    ),
+    "full": (
+        TRACK / "courses/talk-me-lately-full/lessons/09-a-purchase-that-was-worth-it/lesson.html",
+        "79d9ee21023f302853b5946a7ea3ffaeb5b79bc26e75752e858ee64ffa1d8f78",
+    ),
+}
+
+
+def verify_preserved_ft9() -> None:
+    """Fail before generation if the manually reviewed FT9 pair drifts."""
+    for variant, (path, expected) in PRESERVED_FT9.items():
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        if actual != expected:
+            raise SystemExit(
+                f"preserved FT9 {variant} changed: {path.relative_to(ROOT)} "
+                f"has {actual}, expected {expected}"
+            )
 
 
 def prompt(title, title_ja, accessible, japanese, followups, full=None, full_followups=None):
@@ -62,13 +85,13 @@ TOPICS = {
             ("If it lasts, the interest may become part of how we see ourselves.", "If it lasts, the interest may eventually become part of our identity rather than simply a pastime.", "長く続けば、その興味は自分らしさの一部になるかもしれません。"),
         ],
         "prompts": [
-            prompt("A new interest", "新しい興味", "Have you got into anything new recently?", "最近、新しく夢中になったものはありますか？", ["If yes, what do you enjoy most about it?", "If not, what has caught your interest lately?"]),
+            prompt("A new interest", "新しい興味", "Have you got into anything new recently?", "最近、新しく夢中になったものはありますか？", ["What do you enjoy most about it?", "How did it first catch your attention?"]),
             prompt("Your free time", "自由時間", "What has been taking most of your free time lately?", "最近、自由時間の多くを何に使っていますか？", ["Did you choose to spend that time on it?", "What would you like more time for?"]),
             prompt("How it began", "始めたきっかけ", "How did you first get interested in it?", "最初に興味を持ったきっかけは何でしたか？", ["What made you try it?", "Did you expect to enjoy it this much?"]),
             prompt("Time for it", "使っている時間", "How often do you do it now?", "今はどのくらいの頻度でしていますか？", ["When do you usually make time for it?", "What sometimes gets in the way?"]),
-            prompt("Who knows", "知っている人", "Have you told anyone about this interest?", "この興味について誰かに話しましたか？", ["If yes, how did they react?", "If not, who would understand it best?"]),
+            prompt("Who knows", "知っている人", "Have you told anyone about this interest?", "この興味について誰かに話しましたか？", ["Who would understand this interest best?", "What reaction would encourage you?"]),
             prompt("Sharing or private", "話す？秘密にする？", "Do you prefer sharing new interests or keeping them private?", "新しい興味は人に話すほうですか、それとも自分だけにしておくほうですか？", ["What makes you mention an interest?", "How much do other people's reactions matter?"]),
-            prompt("What it replaces", "代わりに減ったこと", "Has this new interest reduced time for anything else?", "この新しい興味で、ほかのことに使う時間が減りましたか？", ["If so, was that change worth it?", "What would you not give up for it?"], full_followups=["If so, is that a good trade-off?", "What would you not give up for it?"]),
+            prompt("What it replaces", "代わりに減ったこと", "Has this new interest reduced time for anything else?", "この新しい興味で、ほかのことに使う時間が減りましたか？", ["Was that change worth it?", "What would you not give up for it?"], full_followups=["Does that feel like a good trade-off?", "What would you not give up for it?"]),
             prompt("Where it goes", "これから", "What would you like to do with this interest next?", "この興味をこれからどうしていきたいですか？", ["What would be a good result in three months?", "What is one small next step?"], full="Where do you hope this interest goes from here?", full_followups=["What would progress look like in three months?", "What is the next small step?"]),
         ],
     },
@@ -93,8 +116,8 @@ TOPICS = {
             ("Finishing one show usually sends us looking for the next feeling, not the same story.", "After a series ends, we often search for the same emotional experience rather than an identical story.", "一つ見終えると、同じ物語より、同じ気持ちを味わえる次の作品を探すことが多いです。"),
         ],
         "prompts": [
-            prompt("Watching now", "今見ているもの", "Are you watching any shows at the moment?", "今、何か作品を見ていますか？", ["If yes, what kind of show is it?", "If not, do you usually watch shows at all?"]),
-            prompt("Your last episode", "直近のエピソード", "When was the last time you watched an episode of a show?", "最後に作品の一話を見たのはいつですか？", ["If it was recent, what do you remember?", "If it was a long time ago, what do you watch instead?"]),
+            prompt("Watching now", "今見ているもの", "Are you watching any shows at the moment?", "今、何か作品を見ていますか？", ["What kind of show fits your mood right now?", "What usually makes you start one?"]),
+            prompt("Your last episode", "直近のエピソード", "When was the last time you watched an episode of a show?", "最後に作品の一話を見たのはいつですか？", ["What do you remember about that episode?", "What do you watch when you do not want a series?"]),
             prompt("How far in", "どこまで見る？", "How far do you usually get before you decide to continue a show?", "作品を見続けるか決めるまで、普段どのくらい見ますか？", ["What helps you decide?", "Have you ever decided after one episode?"]),
             prompt("The pull", "見続ける理由", "What usually makes you keep watching a show?", "普段、どんなことがあると作品を見続けますか？", ["Is the story or a character more important?", "At what point do you get interested?"]),
             prompt("Finding a show", "作品の見つけ方", "How do you usually find a new show?", "普段、新しい作品をどうやって見つけますか？", ["Do you trust friends or an app more?", "What makes a show look interesting?"], full="How do you usually discover a new show?", full_followups=["Do you trust personal recommendations or an app more?", "What first makes a show look interesting?"]),
@@ -124,14 +147,14 @@ TOPICS = {
             ("One honest sentence can change how someone sees their own ability.", "One honest, well-timed sentence can reshape how someone understands their own ability.", "たった一つの正直な言葉で、自分の能力についての見方が変わることがあります。"),
         ],
         "prompts": [
-            prompt("A remembered compliment", "覚えている褒め言葉", "Is there a compliment you still remember?", "今も覚えている褒め言葉はありますか？", ["If yes, when did you hear it?", "If not, what kind of praise feels meaningful to you?"]),
+            prompt("A remembered compliment", "覚えている褒め言葉", "Is there a compliment you still remember?", "今も覚えている褒め言葉はありますか？", ["When did you hear it?", "Why has it stayed with you?"]),
             prompt("Praise you like", "うれしい褒め言葉", "What kind of praise do you most like hearing?", "どんな褒め言葉を言われると、いちばんうれしいですか？", ["Do you prefer praise about effort or results?", "Do you like short or detailed comments?"], full="What kind of praise do you most appreciate hearing?", full_followups=["Do you prefer praise about effort or results?", "Do specific details matter?"]),
             prompt("Whose praise matters", "心に残る相手", "Whose praise would stay with you most?", "誰から褒められると、一番心に残りますか？", ["Have they ever praised you?", "Why does that person's view matter?"]),
             prompt("Did you believe it?", "信じられた？", "Would you believe that kind of compliment?", "そのような褒め言葉を信じられると思いますか？", ["What would make it believable?", "What might make it hard to accept?"]),
             prompt("Your response", "そのときの返事", "How do you usually respond to praise?", "褒められたとき、普段どう返事をしますか？", ["What do you feel but not say?", "Does your answer change with the person?"]),
             prompt("What stays longer", "長く残るもの", "Do you remember praise or negative comments better?", "褒め言葉と批判では、どちらをよく覚えていますか？", ["Why do those words stay with you?", "Do they affect what you do next?"], full="Do you remember compliments or criticism better?", full_followups=["Why does that type stay with you?", "How does it affect your next decision?"]),
-            prompt("Praise you gave", "自分が伝えた言葉", "Have you given someone a real compliment recently?", "最近、誰かを心から褒めましたか？", ["If yes, what had the person done?", "If not, what sometimes stops you?"]),
-            prompt("Someone who deserves it", "褒めたい人", "Is there someone you would like to compliment now?", "今、褒めたい人はいますか？", ["If yes, what exactly would you praise?", "If not, what kind of effort deserves more praise?"], full_followups=["If yes, what exactly would you praise?", "If not, what kind of effort deserves more recognition?"]),
+            prompt("Praise you gave", "自分が伝えた言葉", "Have you given someone a real compliment recently?", "最近、誰かを心から褒めましたか？", ["What had the person done?", "What made you want to say it?"]),
+            prompt("Someone who deserves it", "褒めたい人", "Is there someone you would like to compliment now?", "今、褒めたい人はいますか？", ["What exactly would you praise?", "Why does that effort deserve praise?"], full_followups=["What exactly would you praise?", "Why does that effort deserve recognition?"]),
         ],
     },
     13: {
@@ -161,7 +184,7 @@ TOPICS = {
             prompt("Who with", "誰と", "Who will you spend time with, if anyone?", "一緒に過ごす人がいるなら、誰ですか？", ["What do you enjoy about that choice?", "Would you prefer more time alone or with others?"]),
             prompt("Looking forward", "楽しみなこと", "What are you most looking forward to, even if you have no fixed plan?", "予定が決まっていなくても、何をいちばん楽しみにしていますか？", ["Why does that part matter now?", "What would make it even better?"]),
             prompt("What could change", "変わる可能性", "What could change how you spend the weekend?", "何が週末の過ごし方を変える可能性がありますか？", ["What would be easiest to change?", "When would you make a new decision?"], full_followups=["What would be easiest to adapt?", "When would you make a new decision?"]),
-            prompt("Still undecided", "まだ決めていないこと", "Is there anything you still need to decide?", "まだ決める必要があることはありますか？", ["If yes, what information would help?", "If not, which decision feels best now?"]),
+            prompt("Still undecided", "まだ決めていないこと", "Is there anything you still need to decide?", "まだ決める必要があることはありますか？", ["What information would help you decide?", "Which option feels best now?"]),
             prompt("If it falls through", "予定がなくなったら", "If a plan fell through this weekend, how would you use the time instead?", "もし週末の予定がなくなったら、その時間をどう使いますか？", ["Would you prefer the backup in any way?", "Who would you need to tell, if anyone?"]),
         ],
     },
@@ -186,11 +209,11 @@ TOPICS = {
             ("A good goal can change as we learn what is actually possible.", "A serious goal can still be revised as new information changes what is possible or worthwhile.", "本気の目標でも、可能なことが分かるにつれて変えてかまいません。"),
         ],
         "prompts": [
-            prompt("One goal", "一つの目標", "If you could only finish one thing before December, what would it be?", "12月までに一つだけ終えられるなら、何にしますか？", ["If something comes to mind, why that one?", "If nothing does, what matters more right now?"]),
+            prompt("One goal", "一つの目標", "If you could only finish one thing before December, what would it be?", "12月までに一つだけ終えられるなら、何にしますか？", ["Why would that one matter?", "What might you need to set aside?"]),
             prompt("After it's finished", "終えたあと", "If you chose a goal, what might be different after you finished it?", "目標を選ぶなら、終えたあとに何が変わると思いますか？", ["Which change would matter most?", "Who else might notice it?"]),
             prompt("Why a goal matters", "目標が大切な理由", "What can make one goal feel important?", "一つの目標が大切に感じられるのは、どんなときですか？", ["What kind of change can a goal bring?", "What might you leave until later?"], full="What makes a goal feel important to you?", full_followups=["What kind of change can a goal create?", "What might you be willing to postpone?"]),
             prompt("What gets in the way", "進めない理由", "What usually stops a goal from moving forward?", "目標が進まないとき、普段何が原因になりますか？", ["Is it often time, money, or doubt?", "Which part can a person control?"], full_followups=["Is the main barrier time, money, or uncertainty?", "Which part can a person control?"]),
-            prompt("What you dropped", "あきらめたこと", "Have you given up on any goal this year?", "今年、あきらめた目標はありますか？", ["If yes, what was the goal?", "If not, is there one goal you're still working on?"]),
+            prompt("What you dropped", "あきらめたこと", "Have you given up on any goal this year?", "今年、あきらめた目標はありますか？", ["Which goal changed most this year?", "What made you continue, change, or drop it?"]),
             prompt("Who would notice", "気づく人", "If you completed a personal goal, who might notice?", "自分の目標を達成したら、誰が気づきそうですか？", ["Would anyone else's daily life change?", "Who would you want to tell, if anyone?"]),
             prompt("A realistic limit", "現実的な限界", "What can make it right to change or drop a goal?", "目標を変えたりやめたりしてよいのは、どんなときですか？", ["What would you refuse to change?", "When would changing the goal be a good idea?"], full="What can make it reasonable to change or drop a goal?", full_followups=["What should stay non-negotiable?", "When would changing the goal be sensible?"]),
             prompt("This week's step", "今週の一歩", "If you chose a goal, what small step could you take this week?", "目標を選ぶなら、今週どんな小さな一歩を踏み出せますか？", ["When could you do it?", "What could make it easier?"]),
@@ -217,14 +240,14 @@ TOPICS = {
             ("The useful question is whether the spending still matches the life we want.", "The useful question is not whether others approve, but whether the spending still supports the life we want.", "大切なのは、他人の評価ではなく、その支出が望む生活に合っているかです。"),
         ],
         "prompts": [
-            prompt("Extra spending", "楽しみのためのお金", "Do you ever spend money just for fun?", "楽しみのためだけにお金を使うことはありますか？", ["If yes, what kind of thing do you buy?", "If not, what do you prefer to save for?"], full="Do you ever spend money mainly for enjoyment?", full_followups=["If yes, what kind of expense is it?", "If not, what do you prefer to save for?"]),
-            prompt("A recent expense", "最近考えた支出", "Have you thought about buying something extra recently?", "最近、必要ではない物を買おうか考えましたか？", ["If yes, what was it?", "If not, what is easy for you to skip?"], full="Have you considered any non-essential purchase recently?", full_followups=["If yes, what caught your attention?", "If not, what is easy for you to pass up?"]),
+            prompt("Extra spending", "楽しみのためのお金", "Do you ever spend money just for fun?", "楽しみのためだけにお金を使うことはありますか？", ["What kind of thing feels worth buying for enjoyment?", "What do you prefer to save for?"], full="Do you ever spend money mainly for enjoyment?", full_followups=["What kind of expense feels worth it for enjoyment?", "What do you prefer to save for?"]),
+            prompt("A recent expense", "最近考えた支出", "Have you thought about buying something extra recently?", "最近、必要ではない物を買おうか考えましたか？", ["What caught your attention?", "What made you buy it or pass it up?"], full="Have you considered any non-essential purchase recently?", full_followups=["What caught your attention?", "What made you buy it or pass it up?"]),
             prompt("A comfortable range", "答えられる範囲", "If you want to share, about how much can you spend on extras each month?", "答えられる範囲で、毎月、自由に使うお金をどのくらいにしていますか？", ["Has the amount changed recently?", "What makes it go up or down?"], full="If you're comfortable sharing, what range do you allow for extra spending each month?", full_followups=["Has that range changed recently?", "What usually makes it rise or fall?"]),
             prompt("When it feels worth it", "価値を感じるとき", "When does extra spending feel worth it to you?", "どんなとき、自由に使ったお金に価値があったと感じますか？", ["Which benefit from that spending lasts the longest?", "When would it feel like too much?"], full="When does discretionary spending feel worthwhile to you?", full_followups=["Which benefit lasts the longest?", "When would it stop feeling worthwhile?"]),
             prompt("A reason not to buy", "買わない理由", "What is one good reason not to buy something extra?", "必要ではない物を買わない理由を一つ挙げるなら、何ですか？", ["Which reason matters most to you?", "When might buying it still be okay?"], full="What is one good reason not to make a non-essential purchase?", full_followups=["How much does that reason matter to you?", "When might it not apply?"]),
             prompt("Your idea of waste", "自分が思う無駄", "What kind of spending do you think is a waste?", "あなたはどんな支出を無駄だと思いますか？", ["Why does it feel unnecessary?", "Could it be important to someone else?"], full_followups=["Why does it feel unnecessary?", "Could it be valuable to someone else?"]),
-            prompt("A changed mind", "変わった考え", "Has your view of any kind of spending changed?", "ある支出について見方が変わったことはありますか？", ["If yes, what caused the change?", "If not, why has your view stayed the same?"], full="Has your view of any spending category changed?", full_followups=["If yes, what caused the change?", "If not, what keeps your view stable?"]),
-            prompt("Your real priority", "本当の優先順位", "If your budget became tighter, is there any extra expense you would keep?", "予算が厳しくなったら、それでも残したい支出はありますか？", ["If yes, why that one?", "If not, what would you cut first?"], full="If your budget became tighter, is there any discretionary expense you would protect?", full_followups=["If yes, what makes it a priority?", "If not, what would you cut first?"]),
+            prompt("A changed mind", "変わった考え", "Has your view of any kind of spending changed?", "ある支出について見方が変わったことはありますか？", ["What caused your view to change or stay the same?", "Whose opinion influenced you?"], full="Has your view of any spending category changed?", full_followups=["What caused your view to change or stay the same?", "Whose opinion influenced you?"]),
+            prompt("Your real priority", "本当の優先順位", "If your budget became tighter, is there any extra expense you would keep?", "予算が厳しくなったら、それでも残したい支出はありますか？", ["What would you protect first?", "What makes that expense a priority?"], full="If your budget became tighter, is there any discretionary expense you would protect?", full_followups=["What would you protect first?", "What makes that expense a priority?"]),
         ],
     },
     16: {
@@ -248,14 +271,14 @@ TOPICS = {
             ("One new experience often points toward the next thing we want to try.", "One successful first experience often expands the range of things we are willing to try next.", "一つの新しい体験が、次に挑戦したいことにつながることがあります。"),
         ],
         "prompts": [
-            prompt("A recent first", "最近の初めて", "Have you tried anything for the first time recently?", "最近、初めて試したことはありますか？", ["If yes, when did you do it?", "If not, what counts as a recent first for you?"]),
+            prompt("A recent first", "最近の初めて", "Have you tried anything for the first time recently?", "最近、初めて試したことはありますか？", ["What was the experience?", "How did it feel to be new at it?"]),
             prompt("Feeling new", "初めての感覚", "When did you last feel like a beginner?", "最後に初心者のように感じたのはいつですか？", ["What made it feel new?", "How did you respond to that feeling?"], full_followups=["What made the situation unfamiliar?", "How did you respond to that feeling?"]),
             prompt("Why people try", "試す理由", "What can finally make someone try something new?", "人がついに新しいことを試すきっかけは何だと思いますか？", ["Does another person's help matter?", "Can waiting make the first step harder?"], full="What can finally persuade someone to try something new?", full_followups=["How much does encouragement matter?", "Can a long delay make the first step harder?"]),
             prompt("Expectation and reality", "予想と実際", "Are new experiences usually what you expect?", "新しい体験は、普段、予想どおりですか？", ["What is often easier?", "What is often harder?"], full="How closely do new experiences usually match your expectations?", full_followups=["What tends to be easier than expected?", "What tends to be more difficult?"]),
             prompt("Trying again", "もう一度", "What makes you want to try something again?", "もう一度やってみたいと思うのは、どんなときですか？", ["What would you change the second time?", "Does doing it with someone help?"], full="What makes a first experience worth repeating?", full_followups=["What would you change the second time?", "How might a companion change it?"]),
-            prompt("The first before that", "その前の初めて", "Can you remember another first-time experience?", "ほかの初めての体験を思い出せますか？", ["If yes, how was it different?", "If not, why are first times hard to remember?"]),
+            prompt("The first before that", "その前の初めて", "Can you remember another first-time experience?", "ほかの初めての体験を思い出せますか？", ["Which experience comes to mind?", "What made that first time memorable?"]),
             prompt("Staying a beginner", "初心者でいること", "How do you feel when you're not good at something yet?", "まだ上手にできないとき、どんな気持ちになりますか？", ["What helps you continue?", "When do you decide to stop?"]),
-            prompt("The next first", "次の初めて", "Is there anything you'd like to try next?", "次にやってみたいことはありますか？", ["If yes, what is stopping you now?", "If not, what makes your current routine work well?"]),
+            prompt("The next first", "次の初めて", "Is there anything you'd like to try next?", "次にやってみたいことはありますか？", ["What would you like to try?", "What makes now a good or bad time?"]),
         ],
     },
     17: {
@@ -279,13 +302,13 @@ TOPICS = {
             ("Noticing small wins gives us evidence that change is already happening.", "Recognizing small wins gives us evidence that change is occurring before the final outcome arrives.", "小さな成功に気づくと、最終結果の前から変化が起きていると分かります。"),
         ],
         "prompts": [
-            prompt("A quiet win", "静かな成功", "Have you had any small wins this month, whether or not anyone noticed?", "誰かが気づいたかどうかに関係なく、今月、小さな成功はありましたか？", ["If yes, what effort did it take?", "If not, what has made this month difficult?"]),
+            prompt("A quiet win", "静かな成功", "Have you had any small wins this month, whether or not anyone noticed?", "誰かが気づいたかどうかに関係なく、今月、小さな成功はありましたか？", ["What effort did it take?", "Why did that win matter to you?"]),
             prompt("Effort this month", "今月の努力", "What has taken effort this month, even if the result is not clear yet?", "まだ結果がはっきりしていなくても、今月、努力が必要だったことは何ですか？", ["What part required the most patience?", "What progress can you see so far?"]),
             prompt("Why progress matters", "進歩が大切な理由", "What kind of progress matters to you right now?", "今、どんな進歩があなたにとって大切ですか？", ["What would it make easier?", "Would the same progress have mattered last year?"]),
             prompt("Who understands", "分かってくれる人", "Who, if anyone, understands the effort you put in?", "あなたの努力を分かってくれる人がいるなら、誰ですか？", ["What would you need to explain to others?", "Would sharing it change how you feel?"]),
             prompt("Do you notice wins?", "成功に気づく？", "Do you usually notice your own small wins?", "普段、自分の小さな成功に気づきますか？", ["What helps you notice them?", "Which wins do you often miss?"]),
-            prompt("What's still difficult", "まだ難しいこと", "What has been hardest this month, if anything?", "今月、難しかったことがあるなら、何ですか？", ["If something comes to mind, what still needs attention?", "If not, what helped the month go well?"]),
-            prompt("Praise and motivation", "褒め言葉とやる気", "Does praise make you want to keep going?", "褒められると、続けたい気持ちになりますか？", ["If yes, whose praise matters most?", "What helps when nobody praises you?"], full="Does praise affect your motivation?", full_followups=["If it does, whose praise matters most?", "What keeps you going without it?"]),
+            prompt("What's still difficult", "まだ難しいこと", "What has been hardest this month, if anything?", "今月、難しかったことがあるなら、何ですか？", ["What still needs attention?", "What has helped the month go well?"]),
+            prompt("Praise and motivation", "褒め言葉とやる気", "Does praise make you want to keep going?", "褒められると、続けたい気持ちになりますか？", ["Whose praise matters most?", "What helps when nobody praises you?"], full="Does praise affect your motivation?", full_followups=["Whose praise matters most?", "What keeps you going without it?"]),
             prompt("A good month", "よい一か月", "What would count as a good month for you now?", "今のあなたにとって、どんな一か月ならよい月ですか？", ["Which result matters most?", "What small sign would show progress?"]),
         ],
     },
@@ -310,12 +333,12 @@ TOPICS = {
             ("The song we repeat now may later become the fastest way back to this moment.", "The song we repeat now may eventually become the quickest route back to this period of our life.", "今繰り返している曲が、将来この時期を思い出す一番早い方法になるかもしれません。"),
         ],
         "prompts": [
-            prompt("A current song", "最近の曲", "Is there a song you've been playing a lot lately?", "最近よく聴いている曲はありますか？", ["If yes, who is the artist?", "If not, what kind of sound fits your mood lately?"]),
+            prompt("A current song", "最近の曲", "Is there a song you've been playing a lot lately?", "最近よく聴いている曲はありますか？", ["Which artist or sound fits your mood lately?", "When do you usually want to hear it?"]),
             prompt("One detail", "一つの細部", "What sound or musical detail has caught your attention lately?", "最近、どんな音や音楽の細部が気になりましたか？", ["What makes it stand out?", "Does it come from a particular song?"]),
             prompt("How long it lasts", "どのくらい続く？", "How long do you usually stay interested in one song?", "一曲を気に入ると、普段どのくらい聴き続けますか？", ["How often do you play it?", "What makes you move to another song?"]),
-            prompt("A memory", "思い出すこと", "Can music bring back a specific memory for you?", "音楽を聴いて、具体的な思い出が戻ることはありますか？", ["If yes, what comes back first?", "If not, what does music bring to mind?"], full="Can music bring back a particular memory for you?", full_followups=["If yes, which details return first?", "If not, what does music bring to mind?"]),
+            prompt("A memory", "思い出すこと", "Can music bring back a specific memory for you?", "音楽を聴いて、具体的な思い出が戻ることはありますか？", ["Which detail comes back first?", "How does the memory change the song?"], full="Can music bring back a particular memory for you?", full_followups=["Which details return first?", "How does the memory change the song?"]),
             prompt("When you play music", "音楽を聴くとき", "When do you usually listen to music?", "普段、いつ音楽を聴きますか？", ["What mood are you usually in?", "Does music change what you are doing?"]),
-            prompt("An old repeat", "昔繰り返した曲", "Is there a song you played too much years ago?", "何年か前に聴きすぎた曲はありますか？", ["If yes, can you enjoy it again now?", "If not, what usually makes you tire of a song?"]),
+            prompt("An old repeat", "昔繰り返した曲", "Is there a song you played too much years ago?", "何年か前に聴きすぎた曲はありますか？", ["Can you enjoy it again now?", "What usually makes you tire of a song?"]),
             prompt("Sharing music", "音楽を共有すること", "Would you send a song that fits your current mood to anyone?", "今の気分に合う曲を誰かに送りたいですか？", ["What would make you share it or keep it private?", "What kind of response would you hope for?"]),
             prompt("Your year as a playlist", "一年のプレイリスト", "If you made a playlist of your year, what would go on it?", "今年のプレイリストを作るなら、何を入れますか？", ["Which song would open it?", "What part of the year is still missing?"]),
         ],
@@ -341,14 +364,14 @@ TOPICS = {
             ("Sometimes the honest solution is to decide not to do the task at all.", "Sometimes the most responsible solution is to consciously decide not to do the task rather than pretend it remains a priority.", "ときには、もうしないと決めることが正直な解決になる場合もあります。"),
         ],
         "prompts": [
-            prompt("Still not done", "まだしていないこと", "Is there anything you've been meaning to do but haven't?", "ずっとやろうと思っていて、まだしていないことはありますか？", ["If yes, when did you first decide to do it?", "If not, what helps you act on tasks quickly?"]),
+            prompt("Still not done", "まだしていないこと", "Is there anything you've been meaning to do but haven't?", "ずっとやろうと思っていて、まだしていないことはありますか？", ["When did you first decide to do it?", "What has made it easy to delay?"]),
             prompt("What you do instead", "代わりにすること", "When you avoid a task, what do you tend to do instead?", "課題を避けるとき、代わりに何をすることが多いですか？", ["Does that activity actually feel relaxing?", "When does the task return to your mind?"]),
             prompt("How long", "どのくらい", "When a task gets delayed, how long does it usually stay undone?", "課題を先延ばしにすると、普段どのくらい終わらないままですか？", ["What makes the delay grow?", "How much does a deadline change it?"]),
             prompt("The real barrier", "本当の障害", "What usually stops you from starting?", "普段、何が始めることを止めますか？", ["Is the first step usually clear?", "Which feeling comes up most often?"]),
             prompt("If it never gets done", "ずっとしなかったら", "What can happen when a task never gets done?", "課題をずっと終えないと、何が起こりえますか？", ["Who else might have a problem?", "When might it be better to stop?"], full_followups=["Who else might be affected?", "When would dropping it be the better choice?"]),
-            prompt("A past delay", "以前の先延ばし", "Have you ever finally done something you had put off?", "先延ばしにしていたことを、最後には終えた経験がありますか？", ["If yes, what finally made you start?", "If not, what usually ends a delay for you?"]),
-            prompt("After a delay", "先延ばしのあと", "If you finish something late, how do you usually feel?", "遅れて何かを終えたとき、普段どんな気持ちになりますか？", ["Does the result match the worry?", "If this has not happened, how do you think you would feel?"], full="If you finish a delayed task, how do you usually feel?", full_followups=["Does the result usually match the worry?", "If you have not had that experience, how do you think you would feel?"]),
-            prompt("The next decision", "次の判断", "If something gets delayed again, what could you do next?", "また何かを先延ばしにしたら、次に何ができますか？", ["If you continue, what is a ten-minute step?", "If you stop, why is that the right choice?"], full="If a task gets delayed again, what could you do next?", full_followups=["If you continue, what's a ten-minute step?", "If you drop it, what makes that the right decision?"]),
+            prompt("A past delay", "以前の先延ばし", "Have you ever finally done something you had put off?", "先延ばしにしていたことを、最後には終えた経験がありますか？", ["What finally made you start?", "What usually ends a delay for you?"]),
+            prompt("After a delay", "先延ばしのあと", "If you finish something late, how do you usually feel?", "遅れて何かを終えたとき、普段どんな気持ちになりますか？", ["Does the result match the worry?", "What feeling arrives first when it is done?"], full="If you finish a delayed task, how do you usually feel?", full_followups=["Does the result usually match the worry?", "What feeling arrives first when it is done?"]),
+            prompt("The next decision", "次の判断", "If something gets delayed again, what could you do next?", "また何かを先延ばしにしたら、次に何ができますか？", ["What is a ten-minute next step?", "When is dropping the task the better decision?"], full="If a task gets delayed again, what could you do next?", full_followups=["What's a ten-minute next step?", "When is dropping the task the better decision?"]),
         ],
     },
     20: {
@@ -372,13 +395,13 @@ TOPICS = {
             ("One ordinary object can tell a surprisingly detailed story about a person's day.", "One ordinary object can reveal a surprisingly detailed story about a person's habits, priorities, and day.", "普通の一つの物から、その人の一日について意外に詳しいことが分かります。"),
         ],
         "prompts": [
-            prompt("A bag today", "今日のかばん", "Do you have a bag with you today?", "今日はかばんを持っていますか？", ["If yes, what kind of bag is it?", "If not, did you bring anything with you?"]),
+            prompt("A bag today", "今日のかばん", "Do you have a bag with you today?", "今日はかばんを持っていますか？", ["What do you usually bring with you?", "Which item would be hardest to go back for?"]),
             prompt("What you carry", "持ち歩く物", "When you go out, what do you usually carry, if anything?", "外出するとき、持ち歩く物があるなら何ですか？", ["Do you use a bag or your pockets?", "What do you sometimes choose not to take?"]),
-            prompt("What's inside", "入っている物", "If you use a bag, what kinds of things are usually in it?", "かばんを使うなら、普段どんな物を入れますか？", ["If you use one, what kind takes the most space?", "If not, do you carry anything in your pockets?"], full_followups=["If you use one, which category takes the most space?", "If not, do you carry anything in your pockets?"]),
+            prompt("What's inside", "入っている物", "If you use a bag, what kinds of things are usually in it?", "かばんを使うなら、普段どんな物を入れますか？", ["What kind takes the most space?", "What do you carry without using very often?"], full_followups=["Which category takes the most space?", "What do you carry without using very often?"]),
             prompt("What you use", "実際に使う物", "What do you use most when you are away from home?", "外出中、いちばんよく使う物は何ですか？", ["What would be hard to replace?", "What saves you the most time?"]),
-            prompt("There for months", "何か月もある物", "If you use a bag, does anything stay there for months without use?", "かばんを使うなら、何か月も使わずに入れたままの物はありますか？", ["If yes, why is it still there?", "If not, what keeps your things organized?"]),
+            prompt("There for months", "何か月もある物", "If you use a bag, does anything stay there for months without use?", "かばんを使うなら、何か月も使わずに入れたままの物はありますか？", ["Why has it stayed there?", "What would make you finally remove it?"]),
             prompt("Always forgotten", "いつも忘れる物", "Is there anything you often forget when you go out?", "外出するとき、よく忘れる物はありますか？", ["What helps you remember it?", "What do you do when it is missing?"]),
-            prompt("How it changed", "変わった持ち物", "Has what you carry changed over the past few years?", "ここ数年で、持ち歩く物は変わりましたか？", ["If yes, what did you stop carrying?", "If not, why have your needs stayed the same?"], full_followups=["If yes, what did you stop carrying?", "If not, what has kept your needs stable?"]),
+            prompt("How it changed", "変わった持ち物", "Has what you carry changed over the past few years?", "ここ数年で、持ち歩く物は変わりましたか？", ["What did you stop or start carrying?", "What caused that change?"], full_followups=["What did you stop or start carrying?", "What caused that change?"]),
             prompt("What it says", "持ち物が語ること", "What do the things you carry every day say about your day?", "普段の持ち物から、あなたの一日について何が分かりますか？", ["What best shows your usual routine?", "What might someone get wrong?"], full="What might someone learn about your day from what you carry?", full_followups=["What best represents your routine?", "What might someone misunderstand?"]),
         ],
     },
@@ -737,7 +760,7 @@ def question_page(page_id: str, number: str, item: dict, variant: str) -> str:
     lis = "".join(f"<li>{esc(value)}</li>" for value in followups)
     body = f'''      <p class="section-subtitle ask"><span class="q-n">{number}</span><span class="ko">{esc(en)}</span><span class="ja">{esc(item["ja"])}</span></p>
       <div class="tutor-note"><div class="tn-body"><span class="tn-cap">Follow up</span><ul class="tn-more">{lis}</ul></div></div>
-      <div class="fb" data-fb="{variant}-{page_id}"></div><div class="fb-adds"><button class="fb-add" data-add="fix" type="button">＋ Correction</button><button class="fb-add" data-add="note" type="button">＋ Note</button></div>'''
+      <div class="fb" data-fb="{variant}-{page_id}" data-fb-spoken-label="Student's sentence"></div><div class="fb-adds"><button class="fb-add" data-add="fix" type="button">＋ Correction</button><button class="fb-add" data-add="note" type="button">＋ Note</button></div>'''
     return page(page_id, item["title"], item["title_ja"], body)
 
 
@@ -751,7 +774,7 @@ def build(topic_no: int, variant: str) -> str:
         head,
         review_id=f"FT-{topic_no}", lesson_id=slug, level=level,
         title=topic["title"], title_ko=topic["ko"], title_ja=topic["ja"],
-        version="2026-08-20",
+        version="2026-08-21",
     )
     head = set_proofread_complete(head)
     head = set_meta(head, "podo:vocabulary-status", "reviewed")
@@ -762,21 +785,15 @@ def build(topic_no: int, variant: str) -> str:
     head = set_meta(head, "podo:vocabulary:receptive", vocabulary["receptive"])
 
     goal_en, goal_ja = topic["goal"]
-    outcome_rows = topic["outcomes"]
-    rows = "".join(
-        f'<div class="known-row"><span class="k">{esc(en)}</span><span class="j">{esc(ja)}</span></div>'
-        for en, ja in outcome_rows
-    )
     pages = [
-        f'''    <div class="transition-page" data-page-id="lesson-goal" data-act="Me lately">
-      <span class="transition-kicker">ME LATELY</span>
-      <h2 class="transition-title">{esc(topic["title"])} <span class="title-ja">({esc(topic["ja"])})</span></h2>
-      <p class="section-subtitle"><span class="ko">{esc(goal_en)}</span><span class="ja">{esc(goal_ja)}</span></p>
-      <div class="known lines">{rows}</div>
-    </div>\n''',
+        ft_contract.goal_page(
+            title=topic["title"], title_ja=topic["ja"],
+            topic_en=goal_en, topic_ja=goal_ja,
+            data_act="Me lately", kicker="ME LATELY",
+        ),
         article_page(topic_no, topic, variant),
         extract_page(canonical, "lesson-style"),
-        '''    <div class="transition-page" data-page-id="talk-intro" data-act="Let's talk"><span class="transition-kicker">8 QUESTION POOL</span><h2 class="transition-title">Let's talk <span class="title-ja">(話そう)</span></h2><p class="transition-copy">全部答えなくても大丈夫です。一つの答えをゆっくり広げましょう。</p></div>\n''',
+        '''    <div class="transition-page" data-page-id="talk-intro" data-act="Let's talk"><span class="transition-kicker">8 QUESTION POOL</span><h2 class="transition-title">Let's talk <span class="title-ja">(話そう)</span></h2><p class="section-subtitle"><span class="ko">We don't need to answer every question. Let's follow the most interesting parts of your answers.</span><span class="ja">全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。</span></p><div class="tutor-note">Treat these pages as a pool, not a sequence. React or share briefly before choosing the next prompt, skip freely, and move to feedback with 2–3 minutes left.</div></div>\n''',
     ]
     prompt_ids = (("warm-1", "WARM-UP 1"), ("warm-2", "WARM-UP 2")) + tuple(
         (f"q{i}", f"QUESTION {i}") for i in range(1, 7)
@@ -794,6 +811,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true", help="regenerate only paths owned by this narrow generator")
     args = parser.parse_args()
+    verify_preserved_ft9()
     written = 0
     for topic_no in TOPICS:
         for variant in ("accessible", "full"):

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/10-something-youve-recently-got-into/lesson.html",
+  "lessonSha256": "79da1d19358ec8ac616459ef2cfcd87afe2e18aa2242f7fda3cd6a55e5f53ce2",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title aloud once.",
+      "tutorAction": "Introduce today’s topic, ask the learner to read “Something you've recently got into” once, and move on.",
+      "targetOrPrompt": "Let's talk about a new interest and where it might lead. Please read the title aloud. 新しく興味を持ったことと、これからについて話しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a conversation about “Something you've recently got into” without previewing or drilling answers.",
+      "pedagogicalValue": "Sets the specific discussion can-do for “Something you've recently got into” and gives one immediate low-pressure speaking action.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors both the discussion goal and the title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the lesson goal before the optional article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one observable title reading.",
+      "componentConsistency": "Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article if there is no question or no pre-study.",
+      "targetOrPrompt": "How a new interest grows (新しい興味が育つまで): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the optional pre-study article about “Something you've recently got into” to seed concrete ideas and topic vocabulary.",
+      "pedagogicalValue": "Ten or more linked claims give the learner possible angles for the later “Something you've recently got into” conversation without prescribing an answer.",
+      "failureDiagnosis": "No article question is not a failure; trouble with a highlighted item identifies a local vocabulary support need.",
+      "nonTargetSupport": "The accessible article uses shorter, more direct clauses, aligned Japanese for every claim, and these selective glosses: curiosity 好奇心.",
+      "articleTreatment": "Pre-study only: do not read it aloud or work through it line by line during class.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose discussion-first or correction-first for this conversation.",
+      "tutorAction": "Honor the learner’s selected correction timing while discussing “Something you've recently got into.”",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the eight substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only bullets define the operational difference.",
+      "articleTreatment": "The optional article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.",
+      "componentConsistency": "Reuses the approved synchronized single-choice FT discussion-style component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Something you've recently got into” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Something you've recently got into” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and real tutor reciprocity by explicitly prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; a rigid interview-like flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line explicitly says not every question is required and that interesting answer details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is a concise operating transition.",
+      "componentConsistency": "Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer “Have you got into anything new recently?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What do you enjoy most about it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Have you got into anything new recently? 最近、新しく夢中になったものはありますか？",
+      "learningTarget": "Explore the distinct “A new interest (新しい興味)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Have you got into anything new recently?” opens this angle; “What do you enjoy most about it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What do you enjoy most about it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you got into anything new recently?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How did it first catch your attention?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Have you got into anything new recently?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer “What has been taking most of your free time lately?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Did you choose to spend that time on it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What has been taking most of your free time lately? 最近、自由時間の多くを何に使っていますか？",
+      "learningTarget": "Explore the distinct “Your free time (自由時間)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What has been taking most of your free time lately?” opens this angle; “Did you choose to spend that time on it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Did you choose to spend that time on it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What has been taking most of your free time lately?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would you like more time for?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What has been taking most of your free time lately?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer “How did you first get interested in it?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What made you try it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "How did you first get interested in it? 最初に興味を持ったきっかけは何でしたか？",
+      "learningTarget": "Explore the distinct “How it began (始めたきっかけ)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How did you first get interested in it?” opens this angle; “What made you try it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What made you try it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How did you first get interested in it?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Did you expect to enjoy it this much?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How did you first get interested in it?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer “How often do you do it now?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “When do you usually make time for it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "How often do you do it now? 今はどのくらいの頻度でしていますか？",
+      "learningTarget": "Explore the distinct “Time for it (使っている時間)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How often do you do it now?” opens this angle; “When do you usually make time for it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “When do you usually make time for it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How often do you do it now?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What sometimes gets in the way?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How often do you do it now?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer “Have you told anyone about this interest?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Who would understand this interest best?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Have you told anyone about this interest? この興味について誰かに話しましたか？",
+      "learningTarget": "Explore the distinct “Who knows (知っている人)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Have you told anyone about this interest?” opens this angle; “Who would understand this interest best?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Who would understand this interest best?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you told anyone about this interest?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What reaction would encourage you?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Have you told anyone about this interest?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer “Do you prefer sharing new interests or keeping them private?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What makes you mention an interest?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Do you prefer sharing new interests or keeping them private? 新しい興味は人に話すほうですか、それとも自分だけにしておくほうですか？",
+      "learningTarget": "Explore the distinct “Sharing or private (話す？秘密にする？)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Do you prefer sharing new interests or keeping them private?” opens this angle; “What makes you mention an interest?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What makes you mention an interest?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Do you prefer sharing new interests or keeping them private?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How much do other people's reactions matter?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Do you prefer sharing new interests or keeping them private?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer “Has this new interest reduced time for anything else?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Was that change worth it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Has this new interest reduced time for anything else? この新しい興味で、ほかのことに使う時間が減りましたか？",
+      "learningTarget": "Explore the distinct “What it replaces (代わりに減ったこと)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Has this new interest reduced time for anything else?” opens this angle; “Was that change worth it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Was that change worth it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has this new interest reduced time for anything else?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would you not give up for it?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Has this new interest reduced time for anything else?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer “What would you like to do with this interest next?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What would be a good result in three months?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What would you like to do with this interest next? この興味をこれからどうしていきたいですか？",
+      "learningTarget": "Explore the distinct “Where it goes (これから)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What would you like to do with this interest next?” opens this angle; “What would be a good result in three months?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What would be a good result in three months?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What would you like to do with this interest next?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What is one small next step?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you like to do with this interest next?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next focus, then repeat one useful correction aloud.",
+      "tutorAction": "Summarize evidence from the “Something you've recently got into” discussion and ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one demonstrated speaking strength and one actionable next focus from the live conversation.",
+      "pedagogicalValue": "Turns captured sentences into selective feedback without interrupting the earlier discussion flow.",
+      "failureDiagnosis": "Difficulty repeating the selected correction identifies the form or pronunciation that needs one final supported attempt.",
+      "nonTargetSupport": "The bilingual closing script explains the feedback structure; the tutor writes only one strength and one next focus.",
+      "articleTreatment": "Not applicable; feedback is based on the learner’s live spoken answers, not article recall.",
+      "choiceQuality": "No distractors appear; the single written feedback field keeps the close selective and actionable.",
+      "componentConsistency": "Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

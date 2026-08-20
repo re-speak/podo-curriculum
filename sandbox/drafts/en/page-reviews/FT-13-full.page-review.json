@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/13-your-plans-for-this-weekend/lesson.html",
+  "lessonSha256": "927440bb80ce0fdf0e30e12f5637df2cf7e4f8846c4f72848eee723f05594882",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title aloud once.",
+      "tutorAction": "Introduce today’s topic, ask the learner to read “Your plans for this weekend” once, and move on.",
+      "targetOrPrompt": "Let's talk through your weekend plan and what could change it. Please read the title aloud. 週末の予定と、それが変わる可能性について話しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a conversation about “Your plans for this weekend” without previewing or drilling answers.",
+      "pedagogicalValue": "Sets the specific discussion can-do for “Your plans for this weekend” and gives one immediate low-pressure speaking action.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors both the discussion goal and the title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the lesson goal before the optional article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one observable title reading.",
+      "componentConsistency": "Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article if there is no question or no pre-study.",
+      "targetOrPrompt": "What a weekend plan does (週末の予定がしてくれること): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the optional pre-study article about “Your plans for this weekend” to seed concrete ideas and topic vocabulary.",
+      "pedagogicalValue": "Ten or more linked claims give the learner possible angles for the later “Your plans for this weekend” conversation without prescribing an answer.",
+      "failureDiagnosis": "No article question is not a failure; trouble with a highlighted item identifies a local vocabulary support need.",
+      "nonTargetSupport": "The full article uses richer clause structure and more precise vocabulary, aligned Japanese for every claim, and these selective glosses: anticipate 楽しみに待つ.",
+      "articleTreatment": "Pre-study only: do not read it aloud or work through it line by line during class.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose discussion-first or correction-first for this conversation.",
+      "tutorAction": "Honor the learner’s selected correction timing while discussing “Your plans for this weekend.”",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the eight substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only bullets define the operational difference.",
+      "articleTreatment": "The optional article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.",
+      "componentConsistency": "Reuses the approved synchronized single-choice FT discussion-style component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Your plans for this weekend” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Your plans for this weekend” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and real tutor reciprocity by explicitly prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; a rigid interview-like flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line explicitly says not every question is required and that interesting answer details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is a concise operating transition.",
+      "componentConsistency": "Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer “How are you feeling about this weekend?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Are you hoping to rest or do something?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "How are you feeling about this weekend? 今週末について、今どんな気持ちですか？",
+      "learningTarget": "Explore the distinct “This weekend (今週末)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How are you feeling about this weekend?” opens this angle; “Are you hoping to rest or do something?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Are you hoping to rest or do something?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How are you feeling about this weekend?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would make it feel different from a weekday?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How are you feeling about this weekend?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer “What would make this weekend feel well spent?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Do you need rest, activity, or both?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What would make this weekend feel well spent? 何ができたら、よい週末だったと思えますか？",
+      "learningTarget": "Explore the distinct “A good weekend (よい週末)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What would make this weekend feel well spent?” opens this angle; “Do you need rest, activity, or both?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Do you need rest, activity, or both?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What would make this weekend feel well spent?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What do you want to avoid?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would make this weekend feel well spent?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer “How much of the weekend is planned already?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What would you add if nothing is fixed?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "How much of the weekend is planned already? 週末のどのくらいが、すでに決まっていますか？",
+      "learningTarget": "Explore the distinct “The full plan (全体の予定)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How much of the weekend is planned already?” opens this angle; “What would you add if nothing is fixed?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What would you add if nothing is fixed?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How much of the weekend is planned already?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How much time do you want to leave open?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How much of the weekend is planned already?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer “Who will you spend time with, if anyone?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What do you enjoy about that choice?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Who will you spend time with, if anyone? 一緒に過ごす人がいるなら、誰ですか？",
+      "learningTarget": "Explore the distinct “Who with (誰と)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Who will you spend time with, if anyone?” opens this angle; “What do you enjoy about that choice?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What do you enjoy about that choice?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Who will you spend time with, if anyone?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Would you prefer more time alone or with others?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Who will you spend time with, if anyone?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer “What are you most looking forward to, even if you have no fixed plan?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Why does that part matter now?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What are you most looking forward to, even if you have no fixed plan? 予定が決まっていなくても、何をいちばん楽しみにしていますか？",
+      "learningTarget": "Explore the distinct “Looking forward (楽しみなこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What are you most looking forward to, even if you have no fixed plan?” opens this angle; “Why does that part matter now?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Why does that part matter now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What are you most looking forward to, even if you have no fixed plan?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would make it even better?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What are you most looking forward to, even if you have no fixed plan?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer “What could change how you spend the weekend?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What would be easiest to adapt?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What could change how you spend the weekend? 何が週末の過ごし方を変える可能性がありますか？",
+      "learningTarget": "Explore the distinct “What could change (変わる可能性)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What could change how you spend the weekend?” opens this angle; “What would be easiest to adapt?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What would be easiest to adapt?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What could change how you spend the weekend?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When would you make a new decision?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What could change how you spend the weekend?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer “Is there anything you still need to decide?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What information would help you decide?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Is there anything you still need to decide? まだ決める必要があることはありますか？",
+      "learningTarget": "Explore the distinct “Still undecided (まだ決めていないこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Is there anything you still need to decide?” opens this angle; “What information would help you decide?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What information would help you decide?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you still need to decide?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which option feels best now?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Is there anything you still need to decide?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer “If a plan fell through this weekend, how would you use the time instead?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Would you prefer the backup in any way?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "If a plan fell through this weekend, how would you use the time instead? もし週末の予定がなくなったら、その時間をどう使いますか？",
+      "learningTarget": "Explore the distinct “If it falls through (予定がなくなったら)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “If a plan fell through this weekend, how would you use the time instead?” opens this angle; “Would you prefer the backup in any way?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Would you prefer the backup in any way?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If a plan fell through this weekend, how would you use the time instead?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Who would you need to tell, if anyone?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If a plan fell through this weekend, how would you use the time instead?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next focus, then repeat one useful correction aloud.",
+      "tutorAction": "Summarize evidence from the “Your plans for this weekend” discussion and ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one demonstrated speaking strength and one actionable next focus from the live conversation.",
+      "pedagogicalValue": "Turns captured sentences into selective feedback without interrupting the earlier discussion flow.",
+      "failureDiagnosis": "Difficulty repeating the selected correction identifies the form or pronunciation that needs one final supported attempt.",
+      "nonTargetSupport": "The bilingual closing script explains the feedback structure; the tutor writes only one strength and one next focus.",
+      "articleTreatment": "Not applicable; feedback is based on the learner’s live spoken answers, not article recall.",
+      "choiceQuality": "No distractors appear; the single written feedback field keeps the close selective and actionable.",
+      "componentConsistency": "Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

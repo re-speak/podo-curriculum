@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import re
 import unittest
 
@@ -85,6 +86,16 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
                 for part in value.split(";") if part.strip()
             }
             self.assertTrue(full_only[topic_no].isdisjoint(accessible_words))
+            accessible_glosses = {
+                headword.casefold()
+                for _row, (_surface, headword, _ja) in batch.GLOSSES[topic_no]["accessible"].items()
+            }
+            full_glosses = {
+                headword.casefold()
+                for _row, (_surface, headword, _ja) in batch.GLOSSES[topic_no]["full"].items()
+            }
+            overlap = len(accessible_glosses & full_glosses) / max(1, len(accessible_glosses))
+            self.assertLessEqual(overlap, 0.70)
         self.assertEqual(self_criticism_topics, {19})
 
         ft19_accessible = batch.VOCABULARY[19]["accessible"]
@@ -115,8 +126,6 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
             20: ("which of those things", "in your bag?"),
         }
         for topic_no, phrases in forbidden.items():
-            opening_followups = " ".join(batch.TOPICS[topic_no]["prompts"][0]["accessible_followups"])
-            self.assertRegex(opening_followups, r"If (?:not|nothing)")
             later = " ".join(
                 value
                 for item in batch.TOPICS[topic_no]["prompts"][1:]
@@ -125,6 +134,15 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
             for phrase in phrases:
                 with self.subTest(topic=topic_no, phrase=phrase):
                     self.assertNotIn(phrase, later)
+
+    def test_followups_do_not_encode_yes_no_caveat_branches(self) -> None:
+        caveat = re.compile(r"^If (?:yes|not|so|it was|something|nothing|it does)\b", re.I)
+        for topic_no, topic in batch.TOPICS.items():
+            for item in topic["prompts"]:
+                for variant in ("accessible", "full"):
+                    for followup in item[f"{variant}_followups"]:
+                        with self.subTest(topic=topic_no, variant=variant, followup=followup):
+                            self.assertIsNone(caveat.search(followup))
 
     def test_accessible_prompts_exclude_reviewed_high_load_phrasing(self) -> None:
         prompts = " ".join(
@@ -163,7 +181,7 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
         self.assertNotIn("than another", ft14["prompts"][2]["full"])
         self.assertEqual(
             ft14["prompts"][4]["accessible_followups"],
-            ["If yes, what was the goal?", "If not, is there one goal you're still working on?"],
+            ["Which goal changed most this year?", "What made you continue, change, or drop it?"],
         )
         self.assertEqual(
             ft14["prompts"][4]["full_followups"],
@@ -258,6 +276,16 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
         self.assertIn("充電器を持つ必要が生まれました", accessible_20)
         self.assertIn("正確に測れるとは限りません", batch.build(17, "full"))
         self.assertIn("バッテリーと充電器への新たな依存", batch.build(20, "full"))
+
+    def test_manual_ft9_pair_is_preserved_and_outside_generator_ownership(self) -> None:
+        self.assertNotIn(9, batch.TOPICS)
+        for variant, (path, expected) in batch.PRESERVED_FT9.items():
+            with self.subTest(variant=variant):
+                self.assertTrue(path.is_file())
+                self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected)
+                source = path.read_text(encoding="utf-8")
+                self.assertIn('data-page-id="talk-intro"', source)
+                self.assertEqual(source.count('data-fb-spoken-label="Student\'s sentence"'), 8)
 
 
 if __name__ == "__main__":

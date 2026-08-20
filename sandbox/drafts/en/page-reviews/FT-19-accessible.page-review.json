@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/19-something-youve-been-putting-off/lesson.html",
+  "lessonSha256": "6eeec70d26754eedbe1778b39a7cfdd45534f017f43eaa215bf82e8b76eda1e5",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title aloud once.",
+      "tutorAction": "Introduce today’s topic, ask the learner to read “Something you've been putting off” once, and move on.",
+      "targetOrPrompt": "Let's understand one delayed task and make the next action clear. Please read the title aloud. 先延ばしにしていることを理解し、次の行動を明確にしましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a conversation about “Something you've been putting off” without previewing or drilling answers.",
+      "pedagogicalValue": "Sets the specific discussion can-do for “Something you've been putting off” and gives one immediate low-pressure speaking action.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors both the discussion goal and the title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the lesson goal before the optional article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one observable title reading.",
+      "componentConsistency": "Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article if there is no question or no pre-study.",
+      "targetOrPrompt": "Why we keep delaying things (先延ばしを続ける理由): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the optional pre-study article about “Something you've been putting off” to seed concrete ideas and topic vocabulary.",
+      "pedagogicalValue": "Ten or more linked claims give the learner possible angles for the later “Something you've been putting off” conversation without prescribing an answer.",
+      "failureDiagnosis": "No article question is not a failure; trouble with a highlighted item identifies a local vocabulary support need.",
+      "nonTargetSupport": "The accessible article uses shorter, more direct clauses, aligned Japanese for every claim, and these selective glosses: put off 先延ばしにする.",
+      "articleTreatment": "Pre-study only: do not read it aloud or work through it line by line during class.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose discussion-first or correction-first for this conversation.",
+      "tutorAction": "Honor the learner’s selected correction timing while discussing “Something you've been putting off.”",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the eight substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only bullets define the operational difference.",
+      "articleTreatment": "The optional article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.",
+      "componentConsistency": "Reuses the approved synchronized single-choice FT discussion-style component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Something you've been putting off” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Something you've been putting off” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and real tutor reciprocity by explicitly prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; a rigid interview-like flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line explicitly says not every question is required and that interesting answer details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is a concise operating transition.",
+      "componentConsistency": "Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer “Is there anything you've been meaning to do but haven't?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “When did you first decide to do it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Is there anything you've been meaning to do but haven't? ずっとやろうと思っていて、まだしていないことはありますか？",
+      "learningTarget": "Explore the distinct “Still not done (まだしていないこと)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Is there anything you've been meaning to do but haven't?” opens this angle; “When did you first decide to do it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “When did you first decide to do it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you've been meaning to do but haven't?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What has made it easy to delay?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Is there anything you've been meaning to do but haven't?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer “When you avoid a task, what do you tend to do instead?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Does that activity actually feel relaxing?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "When you avoid a task, what do you tend to do instead? 課題を避けるとき、代わりに何をすることが多いですか？",
+      "learningTarget": "Explore the distinct “What you do instead (代わりにすること)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “When you avoid a task, what do you tend to do instead?” opens this angle; “Does that activity actually feel relaxing?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Does that activity actually feel relaxing?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When you avoid a task, what do you tend to do instead?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When does the task return to your mind?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When you avoid a task, what do you tend to do instead?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer “When a task gets delayed, how long does it usually stay undone?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What makes the delay grow?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "When a task gets delayed, how long does it usually stay undone? 課題を先延ばしにすると、普段どのくらい終わらないままですか？",
+      "learningTarget": "Explore the distinct “How long (どのくらい)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “When a task gets delayed, how long does it usually stay undone?” opens this angle; “What makes the delay grow?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What makes the delay grow?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When a task gets delayed, how long does it usually stay undone?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How much does a deadline change it?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When a task gets delayed, how long does it usually stay undone?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer “What usually stops you from starting?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Is the first step usually clear?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What usually stops you from starting? 普段、何が始めることを止めますか？",
+      "learningTarget": "Explore the distinct “The real barrier (本当の障害)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What usually stops you from starting?” opens this angle; “Is the first step usually clear?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Is the first step usually clear?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What usually stops you from starting?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which feeling comes up most often?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What usually stops you from starting?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer “What can happen when a task never gets done?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Who else might have a problem?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What can happen when a task never gets done? 課題をずっと終えないと、何が起こりえますか？",
+      "learningTarget": "Explore the distinct “If it never gets done (ずっとしなかったら)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What can happen when a task never gets done?” opens this angle; “Who else might have a problem?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Who else might have a problem?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What can happen when a task never gets done?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When might it be better to stop?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can happen when a task never gets done?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer “Have you ever finally done something you had put off?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What finally made you start?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Have you ever finally done something you had put off? 先延ばしにしていたことを、最後には終えた経験がありますか？",
+      "learningTarget": "Explore the distinct “A past delay (以前の先延ばし)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Have you ever finally done something you had put off?” opens this angle; “What finally made you start?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What finally made you start?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you ever finally done something you had put off?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What usually ends a delay for you?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Have you ever finally done something you had put off?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer “If you finish something late, how do you usually feel?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Does the result match the worry?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "If you finish something late, how do you usually feel? 遅れて何かを終えたとき、普段どんな気持ちになりますか？",
+      "learningTarget": "Explore the distinct “After a delay (先延ばしのあと)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “If you finish something late, how do you usually feel?” opens this angle; “Does the result match the worry?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Does the result match the worry?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you finish something late, how do you usually feel?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What feeling arrives first when it is done?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If you finish something late, how do you usually feel?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer “If something gets delayed again, what could you do next?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What is a ten-minute next step?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "If something gets delayed again, what could you do next? また何かを先延ばしにしたら、次に何ができますか？",
+      "learningTarget": "Explore the distinct “The next decision (次の判断)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “If something gets delayed again, what could you do next?” opens this angle; “What is a ten-minute next step?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What is a ten-minute next step?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If something gets delayed again, what could you do next?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When is dropping the task the better decision?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If something gets delayed again, what could you do next?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next focus, then repeat one useful correction aloud.",
+      "tutorAction": "Summarize evidence from the “Something you've been putting off” discussion and ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one demonstrated speaking strength and one actionable next focus from the live conversation.",
+      "pedagogicalValue": "Turns captured sentences into selective feedback without interrupting the earlier discussion flow.",
+      "failureDiagnosis": "Difficulty repeating the selected correction identifies the form or pronunciation that needs one final supported attempt.",
+      "nonTargetSupport": "The bilingual closing script explains the feedback structure; the tutor writes only one strength and one next focus.",
+      "articleTreatment": "Not applicable; feedback is based on the learner’s live spoken answers, not article recall.",
+      "choiceQuality": "No distractors appear; the single written feedback field keeps the close selective and actionable.",
+      "componentConsistency": "Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

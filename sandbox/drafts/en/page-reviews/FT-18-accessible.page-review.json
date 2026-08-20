@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/18-a-song-you-keep-playing/lesson.html",
+  "lessonSha256": "4eceadc66ba424139d3d98a95de299c9e43971f87a6dd98f2625677f04ea582a",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title aloud once.",
+      "tutorAction": "Introduce today’s topic, ask the learner to read “A song you keep playing” once, and move on.",
+      "targetOrPrompt": "Let's talk about a song that has become part of your life lately. Please read the title aloud. 最近の生活の一部になっている曲について話しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a conversation about “A song you keep playing” without previewing or drilling answers.",
+      "pedagogicalValue": "Sets the specific discussion can-do for “A song you keep playing” and gives one immediate low-pressure speaking action.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors both the discussion goal and the title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the lesson goal before the optional article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one observable title reading.",
+      "componentConsistency": "Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article if there is no question or no pre-study.",
+      "targetOrPrompt": "Why one song stays on repeat (一曲を繰り返し聴く理由): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the optional pre-study article about “A song you keep playing” to seed concrete ideas and topic vocabulary.",
+      "pedagogicalValue": "Ten or more linked claims give the learner possible angles for the later “A song you keep playing” conversation without prescribing an answer.",
+      "failureDiagnosis": "No article question is not a failure; trouble with a highlighted item identifies a local vocabulary support need.",
+      "nonTargetSupport": "The accessible article uses shorter, more direct clauses, aligned Japanese for every claim, and these selective glosses: playlist プレイリスト.",
+      "articleTreatment": "Pre-study only: do not read it aloud or work through it line by line during class.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose discussion-first or correction-first for this conversation.",
+      "tutorAction": "Honor the learner’s selected correction timing while discussing “A song you keep playing.”",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the eight substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only bullets define the operational difference.",
+      "articleTreatment": "The optional article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.",
+      "componentConsistency": "Reuses the approved synchronized single-choice FT discussion-style component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “A song you keep playing” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “A song you keep playing” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and real tutor reciprocity by explicitly prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; a rigid interview-like flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line explicitly says not every question is required and that interesting answer details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is a concise operating transition.",
+      "componentConsistency": "Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer “Is there a song you've been playing a lot lately?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Which artist or sound fits your mood lately?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Is there a song you've been playing a lot lately? 最近よく聴いている曲はありますか？",
+      "learningTarget": "Explore the distinct “A current song (最近の曲)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Is there a song you've been playing a lot lately?” opens this angle; “Which artist or sound fits your mood lately?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Which artist or sound fits your mood lately?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a song you've been playing a lot lately?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When do you usually want to hear it?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Is there a song you've been playing a lot lately?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer “What sound or musical detail has caught your attention lately?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What makes it stand out?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "What sound or musical detail has caught your attention lately? 最近、どんな音や音楽の細部が気になりましたか？",
+      "learningTarget": "Explore the distinct “One detail (一つの細部)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What sound or musical detail has caught your attention lately?” opens this angle; “What makes it stand out?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What makes it stand out?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What sound or musical detail has caught your attention lately?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Does it come from a particular song?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What sound or musical detail has caught your attention lately?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer “How long do you usually stay interested in one song?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “How often do you play it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "How long do you usually stay interested in one song? 一曲を気に入ると、普段どのくらい聴き続けますか？",
+      "learningTarget": "Explore the distinct “How long it lasts (どのくらい続く？)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How long do you usually stay interested in one song?” opens this angle; “How often do you play it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “How often do you play it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How long do you usually stay interested in one song?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What makes you move to another song?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How long do you usually stay interested in one song?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer “Can music bring back a specific memory for you?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Which detail comes back first?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Can music bring back a specific memory for you? 音楽を聴いて、具体的な思い出が戻ることはありますか？",
+      "learningTarget": "Explore the distinct “A memory (思い出すこと)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Can music bring back a specific memory for you?” opens this angle; “Which detail comes back first?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Which detail comes back first?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Can music bring back a specific memory for you?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How does the memory change the song?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Can music bring back a specific memory for you?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer “When do you usually listen to music?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What mood are you usually in?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "When do you usually listen to music? 普段、いつ音楽を聴きますか？",
+      "learningTarget": "Explore the distinct “When you play music (音楽を聴くとき)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “When do you usually listen to music?” opens this angle; “What mood are you usually in?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What mood are you usually in?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When do you usually listen to music?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Does music change what you are doing?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When do you usually listen to music?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer “Is there a song you played too much years ago?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Can you enjoy it again now?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Is there a song you played too much years ago? 何年か前に聴きすぎた曲はありますか？",
+      "learningTarget": "Explore the distinct “An old repeat (昔繰り返した曲)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Is there a song you played too much years ago?” opens this angle; “Can you enjoy it again now?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Can you enjoy it again now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a song you played too much years ago?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What usually makes you tire of a song?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Is there a song you played too much years ago?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer “Would you send a song that fits your current mood to anyone?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What would make you share it or keep it private?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Would you send a song that fits your current mood to anyone? 今の気分に合う曲を誰かに送りたいですか？",
+      "learningTarget": "Explore the distinct “Sharing music (音楽を共有すること)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Would you send a song that fits your current mood to anyone?” opens this angle; “What would make you share it or keep it private?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What would make you share it or keep it private?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Would you send a song that fits your current mood to anyone?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What kind of response would you hope for?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you send a song that fits your current mood to anyone?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer “If you made a playlist of your year, what would go on it?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Which song would open it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "If you made a playlist of your year, what would go on it? 今年のプレイリストを作るなら、何を入れますか？",
+      "learningTarget": "Explore the distinct “Your year as a playlist (一年のプレイリスト)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “If you made a playlist of your year, what would go on it?” opens this angle; “Which song would open it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Which song would open it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you made a playlist of your year, what would go on it?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What part of the year is still missing?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If you made a playlist of your year, what would go on it?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next focus, then repeat one useful correction aloud.",
+      "tutorAction": "Summarize evidence from the “A song you keep playing” discussion and ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one demonstrated speaking strength and one actionable next focus from the live conversation.",
+      "pedagogicalValue": "Turns captured sentences into selective feedback without interrupting the earlier discussion flow.",
+      "failureDiagnosis": "Difficulty repeating the selected correction identifies the form or pronunciation that needs one final supported attempt.",
+      "nonTargetSupport": "The bilingual closing script explains the feedback structure; the tutor writes only one strength and one next focus.",
+      "articleTreatment": "Not applicable; feedback is based on the learner’s live spoken answers, not article recall.",
+      "choiceQuality": "No distractors appear; the single written feedback field keeps the close selective and actionable.",
+      "componentConsistency": "Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
