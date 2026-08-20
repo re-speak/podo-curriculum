@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/51-avoid-committing-too-early/lesson.html`
-- SHA-256: `5f28677700909aac1c54224b14ef098f326745b88c94a5fbd74e02465bbc499f`
+- SHA-256: `f3ad41d0a5122223b2e2dcbe4343eabadd8c2bcd3ebe2b724e17e1ffdf976cc7`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: I'd rather not commit to that date yet.; communicative bridge: まず、現時点では確約しないと穏やかに伝えます。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I'd rather not commit to that date yet.” Exact English purpose/action: “Use this to decline a firm commitment without closing the discussion. Read the line above aloud.” Exact Japanese purpose/action: “話し合いを終わらせずに、確約を控える表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: I'd rather not commit to that date yet.; use: Use this to decline a firm commitment without closing the discussion.
+- Visible target or prompt: Exact communicative use: “Use this to decline a firm commitment without closing the discussion.”; aligned Japanese: “話し合いを終わらせずに、確約を控える表現です。”; complete models: “I'd rather not commit to that date yet.”; “I'd rather not commit to a quantity yet.”; “I'd rather not commit to that price yet.”; exact highlighted spans: “I'd rather not commit to”; “yet”; “確約を控えたいです”; “現時点では”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: I'd rather not commit to that date yet.; I'd rather not commit to a quantity yet.; I'd rather not commit to that price yet.; I'd rather not commit to a launch month yet.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I'd rather not commit to that date yet.”; “I'd rather not commit to a quantity yet.”; “I'd rather not commit to that price yet.”; “I'd rather not commit to a launch month yet.”; exact highlighted spans: “I'd rather not commit to”; “yet”; “確約を控えたいです”; “現時点では”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Soften the refusal and keep it temporary: Use ‘I'd rather not’ for your preference and ‘yet’ to leave room for a later decision. Formula: I'd rather not commit to + item + yet
+- Visible target or prompt: Exact rule: “Use ‘I'd rather not’ for your preference and ‘yet’ to leave room for a later decision.”; aligned Japanese: “I'd rather not で意向を和らげ、yet で後の判断の余地を残します。”
 - Learning target: Notice the stable form of pattern 1 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 1 chunk sets: I'd rather not|commit to|that date|yet.; I'd rather not|commit to|a quantity|yet.; I'd rather not|commit to|that price|yet.; I'd rather not|commit to|a launch month|yet.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “I'd rather not commit to that date yet.”; “I'd rather not commit to a quantity yet.”; “I'd rather not commit to that price yet.”; “I'd rather not commit to a launch month yet.”
 - Learning target: Retrieve the full ordering of pattern 1 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: I'd rather not commit to; yet; I'd rather not commit to; yet; I'd rather not commit to; yet; I'd rather not commit to; yet
+- Visible target or prompt: Exact missing target answers: “I'd rather not commit to”; “yet”; “I'd rather not commit to”; “yet”; “I'd rather not commit to”; “yet”; “I'd rather not commit to”; “yet”; exact Japanese target cues: “確約を控えたいです”; “現時点では”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: I'd rather not commit to ___ yet; support stage supported; その日程:that date; 数量:quantity; その価格:that price; 公開月:launch month
+- Visible target or prompt: Exact complete English answers: “I'd rather not commit to that date yet.”; “I'd rather not commit to a quantity yet.”; “I'd rather not commit to that price yet.”; “I'd rather not commit to a launch month yet.”; support stage: supported; lexical hint chips: “その日程:that date”; “数量:quantity”; “その価格:that price”; “公開月:launch month”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “I'd rather not commit to ___ yet” to keep one promise open until you have enough information.” Frame: I'd rather not commit to ___ yet
+- Visible target or prompt: Exact learner prompt: “Use “I'd rather not commit to ___ yet” to keep one promise open until you have enough information.”; aligned Japanese prompt: “「I'd rather not commit to ___ yet」を使って、情報がそろうまで一つの約束を保留しましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “I'd rather not commit to ___ yet” to keep one promise open until you have enough information.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -215,16 +215,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: It depends on whether the supplier confirms capacity.; communicative bridge: 次に、判断を左右する条件を示します。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “It depends on whether the supplier confirms capacity.” Exact English purpose/action: “Use this to name the unresolved factor that controls the decision. Read the line above aloud.” Exact Japanese purpose/action: “判断を左右する未確定の条件を示す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: It depends on whether the supplier confirms capacity.; use: Use this to name the unresolved factor that controls the decision.
+- Visible target or prompt: Exact communicative use: “Use this to name the unresolved factor that controls the decision.”; aligned Japanese: “判断を左右する未確定の条件を示す表現です。”; complete models: “It depends on whether the supplier confirms capacity.”; “It depends on whether legal approves the terms.”; “It depends on whether the parts arrive tomorrow.”; exact highlighted spans: “It depends on whether”; “どうかによります”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: It depends on whether the supplier confirms capacity.; It depends on whether legal approves the terms.; It depends on whether the parts arrive tomorrow.; It depends on whether the budget is released.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “It depends on whether the supplier confirms capacity.”; “It depends on whether legal approves the terms.”; “It depends on whether the parts arrive tomorrow.”; “It depends on whether the budget is released.”; exact highlighted spans: “It depends on whether”; “どうかによります”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Name the open question after whether: Put the factor that can change the decision after ‘whether.’ Formula: It depends on whether + open question
+- Visible target or prompt: Exact rule: “Put the factor that can change the decision after ‘whether.’”; aligned Japanese: “判断を変える条件を whether のあとに置きます。”
 - Learning target: Notice the stable form of pattern 2 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 2 chunk sets: It depends on whether|the supplier|confirms capacity; It depends on whether|legal|approves the terms; It depends on whether|the parts|arrive tomorrow; It depends on whether|the budget|is released
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “It depends on whether the supplier confirms capacity.”; “It depends on whether legal approves the terms.”; “It depends on whether the parts arrive tomorrow.”; “It depends on whether the budget is released.”
 - Learning target: Retrieve the full ordering of pattern 2 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: It depends on whether; It depends on whether; It depends on whether; It depends on whether
+- Visible target or prompt: Exact missing target answers: “It depends on whether”; “It depends on whether”; “It depends on whether”; “It depends on whether”; exact Japanese target cues: “どうかによります”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: It depends on whether ___; support stage supported; 供給元:supplier; 生産能力:capacity; 法務:legal; 条件:terms; 部品:parts; 明日:tomorrow; 予算:budget
+- Visible target or prompt: Exact complete English answers: “It depends on whether the supplier confirms capacity.”; “It depends on whether legal approves the terms.”; “It depends on whether the parts arrive tomorrow.”; “It depends on whether the budget is released.”; support stage: supported; lexical hint chips: “供給元:supplier”; “生産能力:capacity”; “法務:legal”; “条件:terms”; “部品:parts”; “明日:tomorrow”; “予算:budget”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “It depends on whether ___” to name the condition that controls your answer.” Frame: It depends on whether ___
+- Visible target or prompt: Exact learner prompt: “Use “It depends on whether ___” to name the condition that controls your answer.”; aligned Japanese prompt: “「It depends on whether ___」を使って、回答を左右する条件を伝えましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “It depends on whether ___” to name the condition that controls your answer.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Customer.
 - Tutor action: Read only the Customer turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Customer; learner lines include “I'd rather not commit to that date yet.” and “It depends on whether the supplier confirms capacity.”.
+- Visible target or prompt: Tutor role: Customer; exact full exchange: “Can you guarantee delivery on June 10?”; “I'd rather not commit to that date yet.”; “What information are you waiting for?”; “It depends on whether the supplier confirms capacity.”; “When will you know?”; “The supplier will confirm by noon tomorrow, and I'll update you then.”; exact highlighted targets: “I'd rather not commit to”; “yet”; “確約を控えたいです”; “現時点では”; “It depends on whether”; “どうかによります”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -387,7 +387,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Customer; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: I'd rather not commit to, yet, It depends on whether
+- Visible target or prompt: Tutor role: Customer; exact completion instruction: “I’ll be the customer. Say each complete line, including the missing words.”; exact missing target answers: “I'd rather not commit to”; “yet”; “It depends on whether”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “Which work promise would you be most careful about making too early?” Exact learner ask-back: “What about you—which promise would you avoid making too early?”
+- Visible target or prompt: Exact Tutor question: “Which work promise would you be most careful about making too early?”; exact learner ask-back: “What about you—which promise would you avoid making too early?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about push back on an unsafe commitment without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -438,7 +438,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Buyer, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Holding off on a price commitment; tutor is Buyer (購買担当者); first line: “Can you lock in this price for next year?”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Buyer; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the buyer.”; exact full exchange: “Can you lock in this price for next year?”; “that price .”; “What needs to happen first?”; “the budget is released.”; “We can wait until the budget decision on Friday.”; “Thank you. I'll give you a firm answer that afternoon.”; exact missing target answers: “I'd rather not commit to”; “yet”; “It depends on whether”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

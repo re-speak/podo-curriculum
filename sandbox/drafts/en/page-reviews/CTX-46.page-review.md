@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-meetings-decisions/lessons/46-answer-a-question-when-you-do-not-know-yet/lesson.html`
-- SHA-256: `56eaa854c9f38b5bbce27ed1cb437042d34dd7434ec84d923ab1e48a08e00737`
+- SHA-256: `db65a448bba4442e163ba6e171218e86a3e97c811e42e416f86d2006c00ae32d`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why pattern 1 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 1 communicative purpose: まず、確認済みの数値が手元にないと明確にします。
-- Learning target: Connect the practical scene to pattern 1 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I don't have the confirmed figure in front of me.” Exact English purpose/action: “Use this bounded line to avoid presenting a guess as a confirmed fact. Read the line above aloud.” Exact Japanese purpose/action: “推測を確認済みの事実として伝えないための定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ["I don't have the confirmed figure in front of me", "I don't have the final cost in front of me", "I don't have the exact date in front of me", "I don't have the latest total in front of me"]; first model: “I don't have the confirmed figure in front of me.”; job: Use “I don't have ___ in front of me” to say which fact you cannot verify yet.
+- Visible target or prompt: Exact communicative use: “Use this bounded line to avoid presenting a guess as a confirmed fact.”; aligned Japanese: “推測を確認済みの事実として伝えないための定型表現です。”; complete models: “I don't have the confirmed figure in front of me.”; “I don't have the final cost in front of me.”; “I don't have the exact date in front of me.”; exact highlighted spans: “I don't have”; “in front of me”; “今、”; “手元にありません”
 - Learning target: Connect pattern 1’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -106,7 +106,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["I don't have the confirmed figure in front of me", "確認済みの数値が今、手元にありません", "I don't have the final cost in front of me", "最終費用が今、手元にありません", "I don't have the exact date in front of me", "正確な日付が今、手元にありません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["I don't have", "in front of me", "今、", "手元にありません", "I don't have", "in front of me", "今、", "手元にありません", "I don't have", "in front of me", "今、", "手元にありません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “I don't have the confirmed figure in front of me.”; “I don't have the final cost in front of me.”; “I don't have the exact date in front of me.”; “I don't have the latest total in front of me.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I don't have the confirmed figure in front of me.”; “I don't have the final cost in front of me.”; “I don't have the exact date in front of me.”; “I don't have the latest total in front of me.”; exact highlighted spans: “I don't have”; “in front of me”; “今、”; “手元にありません”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -123,7 +123,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["I don't have the confirmed figure in front of me", "確認済みの数値が今、手元にありません", "I don't have the final cost in front of me", "最終費用が今、手元にありません", "I don't have the exact date in front of me", "正確な日付が今、手元にありません", "I don't have the latest total in front of me", "最新の合計が今、手元にありません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["I don't have", "in front of me", "今、", "手元にありません", "I don't have", "in front of me", "今、", "手元にありません", "I don't have", "in front of me", "今、", "手元にありません", "I don't have", "in front of me", "今、", "手元にありません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["I don't have the confirmed figure in front of me", "I don't have the final cost in front of me", "I don't have the exact date in front of me", "I don't have the latest total in front of me"]; authored pattern-1 boundaries ["I don't have the confirmed figure in front of me", "I don't have the final cost in front of me", "I don't have the exact date in front of me", "I don't have the latest total in front of me"]
+- Visible target or prompt: Exact missing target answers: “I don't have”; “in front of me”; “I don't have”; “in front of me”; “I don't have”; “in front of me”; “I don't have”; “in front of me”; exact Japanese target cues: “今、”; “手元にありません”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -140,7 +140,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["確認済みの数値が今、手元にありません", "最終費用が今、手元にありません", "正確な日付が今、手元にありません", "最新の合計が今、手元にありません"], "blankAnswers": ["I don't have the confirmed figure in front of me", "I don't have the final cost in front of me", "I don't have the exact date in front of me", "I don't have the latest total in front of me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["今、", "手元にありません", "今、", "手元にありません", "今、", "手元にありません", "今、", "手元にありません"], "blankAnswers": ["I don't have", "in front of me", "I don't have", "in front of me", "I don't have", "in front of me", "I don't have", "in front of me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-1 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “I don't have the confirmed figure in front of me.”; “I don't have the final cost in front of me.”; “I don't have the exact date in front of me.”; “I don't have the latest total in front of me.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-1 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “I don't have ___ in front of me” to say which fact you cannot verify yet. Stable frame: I don't have ___ in front of me
+- Visible target or prompt: Exact learner prompt: “Use “I don't have ___ in front of me” to say which fact you cannot verify yet.”; aligned Japanese prompt: “「I don't have ___ in front of me」を使って、今は確認できない情報を伝えましょう。”
 - Learning target: Transfer pattern 1 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why pattern 2 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 2 communicative purpose: 次に、確認して回答する具体的な時刻を示します。
-- Learning target: Connect the practical scene to pattern 2 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Let me check and get back to you by three.” Exact English purpose/action: “Use this bounded promise to name both the follow-up action and deadline. Read the line above aloud.” Exact Japanese purpose/action: “確認する行動と回答期限の両方を示す定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['Let me check and get back to you by three', 'Let me check and get back to you by noon', 'Let me check and get back to you tomorrow', 'Let me check and get back to you after the meeting']; first model: “Let me check and get back to you by three.”; job: Use “Let me check and get back to you ___” to promise a specific follow-up time.
+- Visible target or prompt: Exact communicative use: “Use this bounded promise to name both the follow-up action and deadline.”; aligned Japanese: “確認する行動と回答期限の両方を示す定型表現です。”; complete models: “Let me check and get back to you by three.”; “Let me check and get back to you by noon.”; “Let me check and get back to you tomorrow.”; exact highlighted spans: “Let me check”; “and get back to you”; “確認して”; “ご連絡します”
 - Learning target: Connect pattern 2’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -208,7 +208,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["Let me check and get back to you by three", "確認して3時までにご連絡します", "Let me check and get back to you by noon", "確認して正午までにご連絡します", "Let me check and get back to you tomorrow", "確認して明日ご連絡します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["Let me check", "and get back to you", "確認して", "ご連絡します", "Let me check", "and get back to you", "確認して", "ご連絡します", "Let me check", "and get back to you", "確認して", "ご連絡します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Let me check and get back to you by three.”; “Let me check and get back to you by noon.”; “Let me check and get back to you tomorrow.”; “Let me check and get back to you after the meeting.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Let me check and get back to you by three.”; “Let me check and get back to you by noon.”; “Let me check and get back to you tomorrow.”; “Let me check and get back to you after the meeting.”; exact highlighted spans: “Let me check”; “and get back to you”; “確認して”; “ご連絡します”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -225,7 +225,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["Let me check and get back to you by three", "確認して3時までにご連絡します", "Let me check and get back to you by noon", "確認して正午までにご連絡します", "Let me check and get back to you tomorrow", "確認して明日ご連絡します", "Let me check and get back to you after the meeting", "確認して会議後にご連絡します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["Let me check", "and get back to you", "確認して", "ご連絡します", "Let me check", "and get back to you", "確認して", "ご連絡します", "Let me check", "and get back to you", "確認して", "ご連絡します", "Let me check", "and get back to you", "確認して", "ご連絡します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['Let me check and get back to you by three', 'Let me check and get back to you by noon', 'Let me check and get back to you tomorrow', 'Let me check and get back to you after the meeting']; authored pattern-2 boundaries ['Let me check and get back to you by three', 'Let me check and get back to you by noon', 'Let me check and get back to you tomorrow', 'Let me check and get back to you after the meeting']
+- Visible target or prompt: Exact missing target answers: “Let me check”; “and get back to you”; “Let me check”; “and get back to you”; “Let me check”; “and get back to you”; “Let me check”; “and get back to you”; exact Japanese target cues: “確認して”; “ご連絡します”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -242,7 +242,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["確認して3時までにご連絡します", "確認して正午までにご連絡します", "確認して明日ご連絡します", "確認して会議後にご連絡します"], "blankAnswers": ["Let me check and get back to you by three", "Let me check and get back to you by noon", "Let me check and get back to you tomorrow", "Let me check and get back to you after the meeting"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["確認して", "ご連絡します", "確認して", "ご連絡します", "確認して", "ご連絡します", "確認して", "ご連絡します"], "blankAnswers": ["Let me check", "and get back to you", "Let me check", "and get back to you", "Let me check", "and get back to you", "Let me check", "and get back to you"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-2 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “Let me check and get back to you by three.”; “Let me check and get back to you by noon.”; “Let me check and get back to you tomorrow.”; “Let me check and get back to you after the meeting.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-2 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “Let me check and get back to you ___” to promise a specific follow-up time. Stable frame: Let me check and get back to you ___
+- Visible target or prompt: Exact learner prompt: “Use “Let me check and get back to you ___” to promise a specific follow-up time.”; aligned Japanese prompt: “「Let me check and get back to you ___」を使って、確認して回答する時刻を約束しましょう。”
 - Learning target: Transfer pattern 2 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every colleague line aloud while the tutor plays the counterpart.
 - Tutor action: Play the senior manager and pause for each learner-owned line.
-- Visible target or prompt: Replay a meeting question about an unverified figure; learner reads Colleague lines and tutor plays Senior Manager; both target patterns remain complete.
+- Visible target or prompt: Tutor role: Senior Manager; exact full exchange: “What was the confirmed conversion figure last month?”; “I don't have the confirmed figure in front of me.”; “Can you give us an estimate?”; “Let me check and get back to you by three.”; “That's fine. Please send it to everyone.”; “I will send the verified figure and its source.”; exact highlighted targets: “I don't have”; “in front of me”; “今、”; “手元にありません”; “Let me check”; “and get back to you”; “確認して”; “ご連絡します”
 - Learning target: Replay the resolved six-turn exchange with both target patterns in context.
 - Pedagogical value: The roleplay integrates both moves without asking the tutor to model learner production.
 - Failure diagnoses: Unclear roles or tutor-read learner lines would remove the learner’s speaking job.
@@ -310,7 +310,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain embedded in complete natural turns.
 - Choice/distractor quality: Dialogue timing supplies the response path; no distractors are needed.
 - Component consistency: Uses the same six-turn scene and stable roles introduced earlier.
-- Extracted evidence: `{"targetHighlights": ["I don't have the confirmed figure in front of me", "確認済みの数値が今、手元にありません", "Let me check and get back to you by three", "確認して3時までにご連絡します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["I don't have", "in front of me", "今、", "手元にありません", "Let me check", "and get back to you", "確認して", "ご連絡します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete colleague line aloud, including all missing target chunks.
 - Tutor action: Play the senior manager and type only the missing target words.
-- Visible target or prompt: Complete a meeting question about an unverified figure with target blanks ["I don't have the confirmed figure in front of me", 'Let me check and get back to you by three']; tutor plays Senior Manager.
+- Visible target or prompt: Tutor role: Senior Manager; exact completion instruction: “I’ll be the senior manager. Say each complete line, including the missing words.”; exact missing target answers: “I don't have”; “in front of me”; “Let me check”; “and get back to you”
 - Learning target: Retrieve both patterns while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.
 - Failure diagnoses: Blanking full turns or non-target vocabulary would destabilise the taught boundary.
@@ -327,7 +327,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless authored inside the target chunk.
 - Choice/distractor quality: No choices are used; each blank is anchored to the previously read scene.
 - Component consistency: Uses the shared six-turn completion roleplay and phrase inputs.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I don't have the confirmed figure in front of me", "Let me check and get back to you by three"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I don't have", "in front of me", "Let me check", "and get back to you"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor’s real question, then ask the visible reciprocal question.
 - Tutor action: React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.
-- Visible target or prompt: Exact reciprocal questions: “Is it easy for you to say “I don't know” at work? Why or why not?”; “What about you—is it easy for you?”
+- Visible target or prompt: Exact Tutor question: “Is it easy for you to say “I don't know” at work? Why or why not?”; exact learner ask-back: “What about you—is it easy for you?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a reciprocal conversation relevant to answer a question when you do not know yet without forcing today’s pattern.
 - Pedagogical value: Both exact questions stand alone, invite personal content, and create genuine two-way talk.
 - Failure diagnoses: A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new workplace situation.
 - Tutor action: Play the finance director, begin with the first line, and carry the exchange to resolution.
-- Visible target or prompt: Checking a final project cost; learner is Colleague, tutor is Finance Director; first tutor line: “What is the final cost after the supplier change?”; same two target patterns are retrieved in a new scene.
+- Visible target or prompt: Tutor role: Finance Director; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the finance director.”; exact full exchange: “What is the final cost after the supplier change?”; “the final cost .”; “When can finance have the verified total?”; “by noon.”; “Noon works. Include the updated invoice.”; “I will send both items in one message.”; exact missing target answers: “I don't have”; “in front of me”; “Let me check”; “and get back to you”
 - Learning target: Transfer both stable patterns to a new roleplay with a different practical context.
 - Pedagogical value: The new role and situation require meaningful transfer while preserving the two learned moves.
 - Failure diagnoses: Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.
@@ -378,7 +378,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain visible outside target blanks unless they belong to the authored phrase.
 - Choice/distractor quality: Roleplay turns guide the exchange; no unrelated distractors are introduced.
 - Component consistency: Uses the shared six-turn completion component with explicit new tutor role and same two lines.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I don't have the final cost in front of me", "Let me check and get back to you by noon"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I don't have", "in front of me", "Let me check", "and get back to you"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

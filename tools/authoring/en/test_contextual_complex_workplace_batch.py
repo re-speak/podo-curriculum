@@ -7,6 +7,7 @@ import pathlib
 import re
 import sys
 import unittest
+import html
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
@@ -17,6 +18,7 @@ import vocabulary
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 REVIEW_ID = re.compile(r'<meta name="podo:review-id" content="([^"]+)">')
+TARGET = re.compile(r"\{t\}(.*?)\{/t\}")
 
 
 def source_by_review_id(review_id: str) -> tuple[pathlib.Path, str]:
@@ -47,6 +49,42 @@ def owner_is_reachable(owner: str, number: int) -> bool:
 
 
 class ContextualComplexWorkplaceBatchTests(unittest.TestCase):
+    def test_transition_pages_are_specific_short_bilingual_actions(self):
+        purposes = set()
+        japanese_purposes = set()
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                pattern = lesson[f"p{part}"]
+                purpose, purpose_ja = pattern.get("transition_purpose", pattern["meaning"])
+                page = html.unescape(pages[f"part{part}-intro"])
+                self.assertIn(purpose.rstrip(". ").casefold(), page.casefold(), (number, part))
+                self.assertIn(purpose_ja.rstrip("。 "), page, (number, part))
+                self.assertIn("Read the line above aloud.", page, (number, part))
+                self.assertIn("上の文を声に出して読みましょう。", page, (number, part))
+                self.assertNotIn("practice this useful line", page, (number, part))
+                self.assertLessEqual(len(purpose), 150, (number, part))
+                self.assertLessEqual(len(purpose_ja), 70, (number, part))
+                purposes.add(purpose)
+                japanese_purposes.add(purpose_ja)
+        self.assertEqual(len(purposes), 24)
+        self.assertEqual(len(japanese_purposes), 24)
+
+    def test_repaired_completion_targets_are_invariant_frames(self):
+        expected = {
+            (26, 2): ("may have been", "but I can't be certain"),
+            (27, 2): ("What", "can you offer me"),
+            (28, 1): ("My", "says", "whereas your system says"),
+            (30, 2): ("I'd only",),
+        }
+        for (number, part), targets in expected.items():
+            self.assertEqual(
+                {tuple(TARGET.findall(row[0])) for row in batch.LESSONS[number][f"p{part}"]["rows"]},
+                {targets},
+                (number, part),
+            )
+
     def test_scope_and_authoritative_models(self):
         self.assertEqual(set(batch.LESSONS), set(range(25, 37)))
         self.assertEqual(set(batch.AUTHORITATIVE), set(batch.LESSONS))
@@ -246,6 +284,10 @@ class ContextualComplexWorkplaceBatchTests(unittest.TestCase):
         self.assertIn("途中で着陸しない", tip[4][3])
         self.assertIn("同じ便名", tip[5][3])
         self.assertNotEqual(tip[4][3], tip[5][3])
+        _, c36_source = batch.build(36, batch.LESSONS[36])
+        self.assertEqual(batch.LESSONS[36]["transfer_role"], "IT support specialist")
+        self.assertIn("I'll be the it support specialist.", html.unescape(c36_source))
+        self.assertNotIn("I'll be the it support.", html.unescape(c36_source))
 
     def test_japanese_cues_map_one_to_one_to_the_english_blanks(self):
         def cues(number, part):
@@ -253,10 +295,11 @@ class ContextualComplexWorkplaceBatchTests(unittest.TestCase):
                     for row in batch.LESSONS[number][f"p{part}"]["rows"]]
 
         for row_cues in cues(28, 1):
-            self.assertIn(row_cues[0], {"確認書の記載は", "メールの記載は", "バウチャーの記載は"})
-            self.assertEqual(row_cues[1], "ですが、そちらのシステムの記載は")
-            self.assertTrue(row_cues[1].startswith("ですが、"))
-            self.assertFalse(any(detail in row_cues[0] for detail in ("朝食", "駐車", "2泊", "ダブル")))
+            self.assertEqual(row_cues[:2], ("私の", "の記載は"))
+            self.assertEqual(row_cues[2], "ですが、そちらのシステムの記載は")
+            self.assertTrue(row_cues[2].startswith("ですが、"))
+            self.assertFalse(any(detail in "".join(row_cues) for detail in
+                                 ("確認書", "メール", "バウチャー", "朝食", "駐車", "2泊", "ダブル")))
         self.assertEqual(set(cues(29, 1)), {("という事実だけでは", "必ずしもなりません")})
         self.assertNotIn("必ずしも", cues(29, 1)[0][0])
         self.assertNotIn("安全", cues(29, 1)[0][1])

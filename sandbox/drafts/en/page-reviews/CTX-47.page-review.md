@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-meetings-decisions/lessons/47-disagree-with-a-senior-colleague-constructively/lesson.html`
-- SHA-256: `094846d6617a2dae01c7c1600d429781c0ebd7fd24e3ca9a29487a4c87e9022e`
+- SHA-256: `1044cdb8db0a760b42f747feae9e555a9861521bd8cb16faa00ae419e56c3ab9`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why pattern 1 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 1 communicative purpose: まず、相手の考えを認めてから、自分の懸念へつなぎます。
-- Learning target: Connect the practical scene to pattern 1 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I see your point, but the timing concerns me.” Exact English purpose/action: “Use this bounded contrast to show you heard the point before disagreeing. Read the line above aloud.” Exact Japanese purpose/action: “相手の考えを聞いたことを示してから異議を述べる定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['I see your point, but']; first model: “I see your point, but the timing concerns me.”; job: Use “I see your point, but ___ concerns me” to acknowledge the idea and name one concern.
+- Visible target or prompt: Exact communicative use: “Use this bounded contrast to show you heard the point before disagreeing.”; aligned Japanese: “相手の考えを聞いたことを示してから異議を述べる定型表現です。”; complete models: “I see your point, but the timing concerns me.”; “I see your point, but the cost concerns me.”; “I see your point, but the evidence concerns me.”; exact highlighted spans: “I see your point, but”; “おっしゃることは分かりますが”
 - Learning target: Connect pattern 1’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “I see your point, but the timing concerns me.”; “I see your point, but the cost concerns me.”; “I see your point, but the evidence concerns me.”; “I see your point, but the client impact concerns me.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I see your point, but the timing concerns me.”; “I see your point, but the cost concerns me.”; “I see your point, but the evidence concerns me.”; “I see your point, but the client impact concerns me.”; exact highlighted spans: “I see your point, but”; “おっしゃることは分かりますが”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['I see your point, but', 'I see your point, but', 'I see your point, but', 'I see your point, but']; authored pattern-1 boundaries ['I see your point, but']
+- Visible target or prompt: Exact missing target answers: “I see your point, but”; “I see your point, but”; “I see your point, but”; “I see your point, but”; exact Japanese target cues: “おっしゃることは分かりますが”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-1 sentences from Japanese; support stage supported; hints ['日程:timing', '費用:cost', '根拠:evidence', '顧客への影響:client impact'].
+- Visible target or prompt: Exact complete English answers: “I see your point, but the timing concerns me.”; “I see your point, but the cost concerns me.”; “I see your point, but the evidence concerns me.”; “I see your point, but the client impact concerns me.”; support stage: supported; lexical hint chips: “日程:timing”; “費用:cost”; “根拠:evidence”; “顧客への影響:client impact”
 - Learning target: Produce four complete pattern-1 sentences from meaning at the declared supported stage.
 - Pedagogical value: Useful lexical hints support new content while the learner still supplies the target grammar.
 - Failure diagnoses: Hints that reveal articles or target grammar would erase the intended learner decision.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “I see your point, but ___ concerns me” to acknowledge the idea and name one concern. Stable frame: I see your point, but ___ concerns me
+- Visible target or prompt: Exact learner prompt: “Use “I see your point, but ___ concerns me” to acknowledge the idea and name one concern.”; aligned Japanese prompt: “「I see your point, but ___ concerns me」を使って、相手の考えを認めたうえで懸念を一つ伝えましょう。”
 - Learning target: Transfer pattern 1 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why pattern 2 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 2 communicative purpose: 次に、不安の原因を一つの行動に絞ります。
-- Learning target: Connect the practical scene to pattern 2 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “The part I'm not comfortable with is skipping the final test.” Exact English purpose/action: “Use this bounded line to identify the exact part of the proposal you cannot support. Read the line above aloud.” Exact Japanese purpose/action: “提案の中で賛成できない具体的な部分を示す定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ["The part I'm not comfortable with is"]; first model: “The part I'm not comfortable with is skipping the final test.”; job: Use “The part I'm not comfortable with is ___” to identify the exact action you cannot support.
+- Visible target or prompt: Exact communicative use: “Use this bounded line to identify the exact part of the proposal you cannot support.”; aligned Japanese: “提案の中で賛成できない具体的な部分を示す定型表現です。”; complete models: “The part I'm not comfortable with is skipping the final test.”; “The part I'm not comfortable with is reducing the review time.”; “The part I'm not comfortable with is using unverified data.”; exact highlighted spans: “The part I'm not comfortable with is”; “不安に思うのは”
 - Learning target: Connect pattern 2’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “The part I'm not comfortable with is skipping the final test.”; “The part I'm not comfortable with is reducing the review time.”; “The part I'm not comfortable with is using unverified data.”; “The part I'm not comfortable with is telling the client later.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “The part I'm not comfortable with is skipping the final test.”; “The part I'm not comfortable with is reducing the review time.”; “The part I'm not comfortable with is using unverified data.”; “The part I'm not comfortable with is telling the client later.”; exact highlighted spans: “The part I'm not comfortable with is”; “不安に思うのは”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["The part I'm not comfortable with is", "The part I'm not comfortable with is", "The part I'm not comfortable with is", "The part I'm not comfortable with is"]; authored pattern-2 boundaries ["The part I'm not comfortable with is"]
+- Visible target or prompt: Exact missing target answers: “The part I'm not comfortable with is”; “The part I'm not comfortable with is”; “The part I'm not comfortable with is”; “The part I'm not comfortable with is”; exact Japanese target cues: “不安に思うのは”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-2 sentences from Japanese; support stage supported; hints ['最終テスト:final test', 'レビュー時間:review time', '未確認のデータ:unverified data', '顧客:client'].
+- Visible target or prompt: Exact complete English answers: “The part I'm not comfortable with is skipping the final test.”; “The part I'm not comfortable with is reducing the review time.”; “The part I'm not comfortable with is using unverified data.”; “The part I'm not comfortable with is telling the client later.”; support stage: supported; lexical hint chips: “最終テスト:final test”; “レビュー時間:review time”; “未確認のデータ:unverified data”; “顧客:client”
 - Learning target: Produce four complete pattern-2 sentences from meaning at the declared supported stage.
 - Pedagogical value: Useful lexical hints support new content while the learner still supplies the target grammar.
 - Failure diagnoses: Hints that reveal articles or target grammar would erase the intended learner decision.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “The part I'm not comfortable with is ___” to identify the exact action you cannot support. Stable frame: The part I'm not comfortable with is ___
+- Visible target or prompt: Exact learner prompt: “Use “The part I'm not comfortable with is ___” to identify the exact action you cannot support.”; aligned Japanese prompt: “「The part I'm not comfortable with is ___」を使って、賛成できない具体的な行動を示しましょう。”
 - Learning target: Transfer pattern 2 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every colleague line aloud while the tutor plays the counterpart.
 - Tutor action: Play the senior director and pause for each learner-owned line.
-- Visible target or prompt: Replay a proposal to skip the final test; learner reads Colleague lines and tutor plays Senior Director; both target patterns remain complete.
+- Visible target or prompt: Tutor role: Senior Director; exact full exchange: “We can meet the date if we skip the final test.”; “I see your point, but the timing concerns me.”; “What specifically concerns you?”; “The part I'm not comfortable with is skipping the final test.”; “All right. Let's examine that risk.”; “I will show the failure cases from the last release.”; exact highlighted targets: “I see your point, but”; “おっしゃることは分かりますが”; “The part I'm not comfortable with is”; “不安に思うのは”
 - Learning target: Replay the resolved six-turn exchange with both target patterns in context.
 - Pedagogical value: The roleplay integrates both moves without asking the tutor to model learner production.
 - Failure diagnoses: Unclear roles or tutor-read learner lines would remove the learner’s speaking job.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete colleague line aloud, including all missing target chunks.
 - Tutor action: Play the senior director and type only the missing target words.
-- Visible target or prompt: Complete a proposal to skip the final test with target blanks ['I see your point, but', "The part I'm not comfortable with is"]; tutor plays Senior Director.
+- Visible target or prompt: Tutor role: Senior Director; exact completion instruction: “I’ll be the senior director. Say each complete line, including the missing words.”; exact missing target answers: “I see your point, but”; “The part I'm not comfortable with is”
 - Learning target: Retrieve both patterns while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.
 - Failure diagnoses: Blanking full turns or non-target vocabulary would destabilise the taught boundary.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor’s real question, then ask the visible reciprocal question.
 - Tutor action: React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.
-- Visible target or prompt: Exact reciprocal questions: “Is it harder to disagree with a senior colleague or with a client? Why?”; “What about you—which is harder?”
+- Visible target or prompt: Exact Tutor question: “Is it harder to disagree with a senior colleague or with a client? Why?”; exact learner ask-back: “What about you—which is harder?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a reciprocal conversation relevant to disagree with a senior colleague constructively without forcing today’s pattern.
 - Pedagogical value: Both exact questions stand alone, invite personal content, and create genuine two-way talk.
 - Failure diagnoses: A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new workplace situation.
 - Tutor action: Play the department head, begin with the first line, and carry the exchange to resolution.
-- Visible target or prompt: Questioning a late client update; learner is Colleague, tutor is Department Head; first tutor line: “Let's wait until Friday before we tell the client about the risk.”; same two target patterns are retrieved in a new scene.
+- Visible target or prompt: Tutor role: Department Head; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the department head.”; exact full exchange: “Let's wait until Friday before we tell the client about the risk.”; “the client impact concerns me.”; “Which part of that plan worries you?”; “telling the client later.”; “Fair point. Draft an early update for my review.”; “I will send the draft within an hour.”; exact missing target answers: “I see your point, but”; “The part I'm not comfortable with is”
 - Learning target: Transfer both stable patterns to a new roleplay with a different practical context.
 - Pedagogical value: The new role and situation require meaningful transfer while preserving the two learned moves.
 - Failure diagnoses: Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.

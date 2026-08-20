@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-independent-social/lessons/19-get-a-recommendation-that-fits-your-priorities/lesson.html`
-- SHA-256: `e85316150260bdabbb95c7a4785089ad5e269137d938702238cf1f03cc70e349`
+- SHA-256: `900b0ca6760afe4bc500de2523cd2bf9536de7ce79a477c98181a2a3ed53472b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -79,20 +79,20 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen to the short communicative purpose for the next pattern.
-- Tutor action: Introduce the next job in one sentence and move directly to the examples.
-- Visible target or prompt: Part 1 purpose: まず、求める雰囲気と避けたい雰囲気を対比します。
-- Learning target: Give the learner a reason for the next frame without adding a second activity.
-- Pedagogical value: The transition connects the practical scene to the form that solves its next conversational job.
-- Failure diagnoses: A long explanation or extra drill here would duplicate the teaching page and slow the arc.
-- Non-target support: Japanese states the communicative purpose; the examples come on the next page.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “We're looking for somewhere quiet rather than touristy.” Exact English purpose/action: “Use this to contrast the quality you want with one you would rather avoid. Read the line above aloud.” Exact Japanese purpose/action: “求める特徴と避けたい特徴を対比して伝える表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choice set is needed because this is a one-step transition.
-- Component consistency: Uses the compact transition-page component with one purpose only.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic review completed for CTX-19 part1-intro; 360px and 480px visual checks remain assigned to the root audit lane.
+- Notes: The regenerated transition was semantically reread in both languages; its changed layout still needs fresh 360px and 480px screenshot inspection.
 
 ## 6. `p1-teach`
 
@@ -215,20 +215,20 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen to the short communicative purpose for the next pattern.
-- Tutor action: Introduce the next job in one sentence and move directly to the examples.
-- Visible target or prompt: Part 2 purpose: 次に、条件が一つなら相手が何を選ぶか尋ねます。
-- Learning target: Give the learner a reason for the next frame without adding a second activity.
-- Pedagogical value: The transition connects the practical scene to the form that solves its next conversational job.
-- Failure diagnoses: A long explanation or extra drill here would duplicate the teaching page and slow the arc.
-- Non-target support: Japanese states the communicative purpose; the examples come on the next page.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “What would you choose if you only had one day?” Exact English purpose/action: “Use this to ask for someone's choice under one clear limitation. Read the line above aloud.” Exact Japanese purpose/action: “一つのはっきりした条件のもとで、相手なら何を選ぶか尋ねる表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choice set is needed because this is a one-step transition.
-- Component consistency: Uses the compact transition-page component with one purpose only.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic review completed for CTX-19 part2-intro; 360px and 480px visual checks remain assigned to the root audit lane.
+- Notes: The regenerated transition was semantically reread in both languages; its changed layout still needs fresh 360px and 480px screenshot inspection.
 
 ## 14. `p2-teach`
 

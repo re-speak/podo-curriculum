@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-leadership-high-stakes/lessons/55-address-a-performance-pattern/lesson.html`
-- SHA-256: `f105a5d47eef5d3222123a0bbde001c2d15c7a94eaec141a6e1b916599385785`
+- SHA-256: `c3b6c87e448ddcc510e70d94052573579f9172fe17847c1ef966b28f19df9205`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: I've noticed that the last three deadlines have been missed.; communicative bridge: まず、評価ではなく、観察した事実を示します。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I've noticed that the last three deadlines have been missed.” Exact English purpose/action: “Use this fixed opening to introduce an observable pattern without accusing the person. Read the line above aloud.” Exact Japanese purpose/action: “相手を責めず、観察できる傾向を話題にする定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: I've noticed that the last three deadlines have been missed.; use: Use this fixed opening to introduce an observable pattern without accusing the person.
+- Visible target or prompt: Exact communicative use: “Use this fixed opening to introduce an observable pattern without accusing the person.”; aligned Japanese: “相手を責めず、観察できる傾向を話題にする定型表現です。”; complete models: “I've noticed that the last three deadlines have been missed.”; “I've noticed that the weekly figures arrive late.”; “I've noticed that client updates are often delayed.”; exact highlighted spans: “I've noticed that”; “気づきました”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: I've noticed that the last three deadlines have been missed.; I've noticed that the weekly figures arrive late.; I've noticed that client updates are often delayed.; I've noticed that handovers are taking longer.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I've noticed that the last three deadlines have been missed.”; “I've noticed that the weekly figures arrive late.”; “I've noticed that client updates are often delayed.”; “I've noticed that handovers are taking longer.”; exact highlighted spans: “I've noticed that”; “気づきました”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: I've noticed that; I've noticed that; I've noticed that; I've noticed that
+- Visible target or prompt: Exact missing target answers: “I've noticed that”; “I've noticed that”; “I've noticed that”; “I've noticed that”; exact Japanese target cues: “気づきました”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: I've noticed that ___; support stage supported; 直近3回の締め切り:last three deadlines; 週次の数値:weekly figures; 顧客への連絡:client updates; 引き継ぎ:handovers
+- Visible target or prompt: Exact complete English answers: “I've noticed that the last three deadlines have been missed.”; “I've noticed that the weekly figures arrive late.”; “I've noticed that client updates are often delayed.”; “I've noticed that handovers are taking longer.”; support stage: supported; lexical hint chips: “直近3回の締め切り:last three deadlines”; “週次の数値:weekly figures”; “顧客への連絡:client updates”; “引き継ぎ:handovers”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “I've noticed that ___” to describe a repeated work pattern without judging the person.” Frame: I've noticed that ___
+- Visible target or prompt: Exact learner prompt: “Use “I've noticed that ___” to describe a repeated work pattern without judging the person.”; aligned Japanese prompt: “「I've noticed that ___」を使って、相手を決めつけずに繰り返し起きている仕事上の事実を伝えましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “I've noticed that ___” to describe a repeated work pattern without judging the person.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: I'd like to understand what's getting in the way.; communicative bridge: 次に、原因を決めつけず、相手の説明を求めます。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I'd like to understand what's getting in the way.” Exact English purpose/action: “Use this fixed frame to invite the person's explanation before proposing a solution. Read the line above aloud.” Exact Japanese purpose/action: “解決策を決める前に、相手の説明を促す定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: I'd like to understand what's getting in the way.; use: Use this fixed frame to invite the person's explanation before proposing a solution.
+- Visible target or prompt: Exact communicative use: “Use this fixed frame to invite the person's explanation before proposing a solution.”; aligned Japanese: “解決策を決める前に、相手の説明を促す定型表現です。”; complete models: “I'd like to understand what's getting in the way.”; “I'd like to understand what's causing the delay.”; “I'd like to understand what's changed this month.”; exact highlighted spans: “I'd like to understand what's”; “理解したいです”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: I'd like to understand what's getting in the way.; I'd like to understand what's causing the delay.; I'd like to understand what's changed this month.; I'd like to understand what's making handovers difficult.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I'd like to understand what's getting in the way.”; “I'd like to understand what's causing the delay.”; “I'd like to understand what's changed this month.”; “I'd like to understand what's making handovers difficult.”; exact highlighted spans: “I'd like to understand what's”; “理解したいです”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: I'd like to understand what's; I'd like to understand what's; I'd like to understand what's; I'd like to understand what's
+- Visible target or prompt: Exact missing target answers: “I'd like to understand what's”; “I'd like to understand what's”; “I'd like to understand what's”; “I'd like to understand what's”; exact Japanese target cues: “理解したいです”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: I'd like to understand what's ___; support stage supported; 妨げ:getting in the way; 遅れ:delay; 今月:this month; 引き継ぎ:handovers
+- Visible target or prompt: Exact complete English answers: “I'd like to understand what's getting in the way.”; “I'd like to understand what's causing the delay.”; “I'd like to understand what's changed this month.”; “I'd like to understand what's making handovers difficult.”; support stage: supported; lexical hint chips: “妨げ:getting in the way”; “遅れ:delay”; “今月:this month”; “引き継ぎ:handovers”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “I'd like to understand what's ___” to invite the other person to explain the obstacle.” Frame: I'd like to understand what's ___
+- Visible target or prompt: Exact learner prompt: “Use “I'd like to understand what's ___” to invite the other person to explain the obstacle.”; aligned Japanese prompt: “「I'd like to understand what's ___」を使って、妨げになっていることを相手に説明してもらいましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “I'd like to understand what's ___” to invite the other person to explain the obstacle.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Team Member.
 - Tutor action: Read only the Team Member turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Team Member; learner lines include “I've noticed that the last three deadlines have been missed.” and “I'd like to understand what's getting in the way.”.
+- Visible target or prompt: Tutor role: Team Member; exact full exchange: “You wanted to discuss my project work.”; “I've noticed that the last three deadlines have been missed.”; “Yes, I know the deadlines have slipped.”; “I'd like to understand what's getting in the way.”; “Two urgent requests arrive every afternoon. Protecting two mornings a week would help.”; “Let's block those mornings and review progress next Friday.”; exact highlighted targets: “I've noticed that”; “気づきました”; “I'd like to understand what's”; “理解したいです”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Team Member; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: I've noticed that, I'd like to understand what's
+- Visible target or prompt: Tutor role: Team Member; exact completion instruction: “I’ll be the team member. Say each complete line, including the missing words.”; exact missing target answers: “I've noticed that”; “I'd like to understand what's”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “What makes a difficult feedback conversation feel fair?” Exact learner ask-back: “What about you—what makes feedback feel fair?”
+- Visible target or prompt: Exact Tutor question: “What makes a difficult feedback conversation feel fair?”; exact learner ask-back: “What about you—what makes feedback feel fair?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about open a difficult performance conversation without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Account Manager, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Discussing delayed client updates; tutor is Account Manager (顧客担当者); first line: “You asked about my client communication.”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Account Manager; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the account manager.”; exact full exchange: “You asked about my client communication.”; “client updates are often delayed.”; “Yes, I know the updates have been late.”; “causing the delay.”; “The approval data arrives after our calls. A morning data check would help.”; “I'll arrange that check from tomorrow.”; exact missing target answers: “I've noticed that”; “I'd like to understand what's”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

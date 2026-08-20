@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/53-acknowledge-then-push-back/lesson.html`
-- SHA-256: `0bc03c0c9ecdb0e6e94935cd9fb37cda596b750bc05a3c821513573cda476fa8`
+- SHA-256: `fc774993c3eb9a08ea3ce0b4b040c9cc2c8b523f5032fb1944640866b0fe8359`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: To be fair, you did warn us about the lead time.; communicative bridge: まず、相手の正当な点を公平に認めます。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “To be fair, you did warn us about the lead time.” Exact English purpose/action: “Use this to give genuine credit before disagreeing. Read the line above aloud.” Exact Japanese purpose/action: “異議を述べる前に、相手の正当な点を認める表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: To be fair, you did warn us about the lead time.; use: Use this to give genuine credit before disagreeing.
+- Visible target or prompt: Exact communicative use: “Use this to give genuine credit before disagreeing.”; aligned Japanese: “異議を述べる前に、相手の正当な点を認める表現です。”; complete models: “To be fair, you did warn us about the lead time.”; “To be fair, you did flag the risk early.”; “To be fair, you did offer an alternative.”; exact highlighted spans: “To be fair,”; “公平に言えば”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: To be fair, you did warn us about the lead time.; To be fair, you did flag the risk early.; To be fair, you did offer an alternative.; To be fair, you did explain the limitation.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “To be fair, you did warn us about the lead time.”; “To be fair, you did flag the risk early.”; “To be fair, you did offer an alternative.”; “To be fair, you did explain the limitation.”; exact highlighted spans: “To be fair,”; “公平に言えば”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Open with the fair point: Put the point you genuinely accept after 'To be fair.' Formula: To be fair, + valid point
+- Visible target or prompt: Exact rule: “Put the point you genuinely accept after 'To be fair.'”; aligned Japanese: “本当に認める点を To be fair のあとに置きます。”
 - Learning target: Notice the stable form of pattern 1 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: To be fair,; To be fair,; To be fair,; To be fair,
+- Visible target or prompt: Exact missing target answers: “To be fair,”; “To be fair,”; “To be fair,”; “To be fair,”; exact Japanese target cues: “公平に言えば”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: To be fair, ___; support stage supported; 納期:lead time; リスク:risk; 代案:alternative; 制約:limitation
+- Visible target or prompt: Exact complete English answers: “To be fair, you did warn us about the lead time.”; “To be fair, you did flag the risk early.”; “To be fair, you did offer an alternative.”; “To be fair, you did explain the limitation.”; support stage: supported; lexical hint chips: “納期:lead time”; “リスク:risk”; “代案:alternative”; “制約:limitation”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “To be fair, ___” to acknowledge one valid point before you disagree.” Frame: To be fair, ___
+- Visible target or prompt: Exact learner prompt: “Use “To be fair, ___” to acknowledge one valid point before you disagree.”; aligned Japanese prompt: “「To be fair, ___」を使って、反論する前に相手の妥当な点を一つ認めましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “To be fair, ___” to acknowledge one valid point before you disagree.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -198,16 +198,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 12. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: That said, the final amount still seems disproportionate.; communicative bridge: 次に、認めたうえでも残る懸念を述べます。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “That said, the final amount still seems disproportionate.” Exact English purpose/action: “Use this to pivot from acknowledgement to a concern that still matters. Read the line above aloud.” Exact Japanese purpose/action: “認めた内容から、それでも重要な懸念へ移る表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: That said, the final amount still seems disproportionate.; use: Use this to pivot from acknowledgement to a concern that still matters.
+- Visible target or prompt: Exact communicative use: “Use this to pivot from acknowledgement to a concern that still matters.”; aligned Japanese: “認めた内容から、それでも重要な懸念へ移る表現です。”; complete models: “That said, the final amount still seems disproportionate.”; “That said, the delay still needs an explanation.”; “That said, the remedy still falls short.”; exact highlighted spans: “That said,”; “そうは言っても”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: That said, the final amount still seems disproportionate.; That said, the delay still needs an explanation.; That said, the remedy still falls short.; That said, the terms still seem one-sided.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “That said, the final amount still seems disproportionate.”; “That said, the delay still needs an explanation.”; “That said, the remedy still falls short.”; “That said, the terms still seem one-sided.”; exact highlighted spans: “That said,”; “そうは言っても”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Put the remaining concern after the pivot: Use 'That said' only after a real acknowledgement, then state the unresolved concern. Formula: That said, + remaining concern
+- Visible target or prompt: Exact rule: “Use 'That said' only after a real acknowledgement, then state the unresolved concern.”; aligned Japanese: “実際に認める点を述べたあとに That said を使い、未解決の懸念を示します。”
 - Learning target: Notice the stable form of pattern 2 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: That said,; That said,; That said,; That said,
+- Visible target or prompt: Exact missing target answers: “That said,”; “That said,”; “That said,”; “That said,”; exact Japanese target cues: “そうは言っても”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: That said, ___; support stage supported; 最終的な金額:final amount; 遅れ:delay; 救済策:remedy; 条件:terms
+- Visible target or prompt: Exact complete English answers: “That said, the final amount still seems disproportionate.”; “That said, the delay still needs an explanation.”; “That said, the remedy still falls short.”; “That said, the terms still seem one-sided.”; support stage: supported; lexical hint chips: “最終的な金額:final amount”; “遅れ:delay”; “救済策:remedy”; “条件:terms”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “That said, ___” to return to the concern that still needs an answer.” Frame: That said, ___
+- Visible target or prompt: Exact learner prompt: “Use “That said, ___” to return to the concern that still needs an answer.”; aligned Japanese prompt: “「That said, ___」を使って、まだ回答が必要な懸念に話を戻しましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “That said, ___” to return to the concern that still needs an answer.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Supplier.
 - Tutor action: Read only the Supplier turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Supplier; learner lines include “To be fair, you did warn us about the lead time.” and “That said, the final amount still seems disproportionate.”.
+- Visible target or prompt: Tutor role: Supplier; exact full exchange: “We told you the rush order would take longer.”; “To be fair, you did warn us about the lead time.”; “Then do you accept the extra charge?”; “That said, the final amount still seems disproportionate.”; “I'll review the calculation with finance today.”; “Thank you. Please send the itemised calculation by five.”; exact highlighted targets: “To be fair,”; “公平に言えば”; “That said,”; “そうは言っても”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Supplier; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: To be fair,, That said,
+- Visible target or prompt: Tutor role: Supplier; exact completion instruction: “I’ll be the supplier. Say each complete line, including the missing words.”; exact missing target answers: “To be fair,”; “That said,”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “When you disagree with someone, is it easy for you to acknowledge their strongest point?” Exact learner ask-back: “What about you—is that easy for you?”
+- Visible target or prompt: Exact Tutor question: “When you disagree with someone, is it easy for you to acknowledge their strongest point?”; exact learner ask-back: “What about you—is that easy for you?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about acknowledge a point without giving up your position without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Service Provider, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Challenging a proposed remedy; tutor is Service Provider (サービス提供会社の担当者); first line: “We offered a credit as soon as the outage ended.”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Service Provider; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the service provider.”; exact full exchange: “We offered a credit as soon as the outage ended.”; “you did offer an alternative.”; “Do you think the credit is insufficient?”; “the remedy still falls short.”; “We'll review a larger credit by tomorrow.”; “That would address the remaining concern.”; exact missing target answers: “To be fair,”; “That said,”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/29-make-a-safety-decision-with-incomplete-information/lesson.html`
-- SHA-256: `b1548fc97898684d96dac0ec5ee3c68b4c3087c50b8fdcdda15a5e37cf2a8348`
+- SHA-256: `1ed6274804f9cc98599dce08d1ed6fd781c9fe0f08442fb8f37912a5d0fd1d3a`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 1 communicative purpose: まず、『中止されていない＝安全』とは限らないと指摘します。
-- Learning target: Connect the practical scene to pattern 1 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.” Exact English purpose/action: “Use this fixed line to reject a conclusion that the available fact does not prove. Read the line above aloud.” Exact Japanese purpose/action: “分かっている事実だけでは証明できない結論を退ける定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['The fact that', "doesn't necessarily mean"]; first model: “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.”; job: Use this fixed line to reject a conclusion that the available fact does not prove.
+- Visible target or prompt: Exact communicative use: “Use this fixed line to reject a conclusion that the available fact does not prove.”; aligned Japanese: “分かっている事実だけでは証明できない結論を退ける定型表現です。”; complete models: “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.”; “The fact that the road is open doesn't necessarily mean it's safe.”; “The fact that others are going doesn't necessarily mean it's safe.”; exact highlighted spans: “The fact that”; “doesn't necessarily mean”; “という事実だけでは”; “必ずしもなりません”
 - Learning target: Connect pattern 1’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.”; “The fact that the road is open doesn't necessarily mean it's safe.”; “The fact that others are going doesn't necessarily mean it's safe.”; “The fact that the warning is old doesn't necessarily mean it's safe.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.”; “The fact that the road is open doesn't necessarily mean it's safe.”; “The fact that others are going doesn't necessarily mean it's safe.”; “The fact that the warning is old doesn't necessarily mean it's safe.”; exact highlighted spans: “The fact that”; “doesn't necessarily mean”; “という事実だけでは”; “必ずしもなりません”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['The fact that', "doesn't necessarily mean", 'The fact that', "doesn't necessarily mean", 'The fact that', "doesn't necessarily mean", 'The fact that', "doesn't necessarily mean"]; authored frame boundaries ['The fact that', "doesn't necessarily mean"]
+- Visible target or prompt: Exact missing target answers: “The fact that”; “doesn't necessarily mean”; “The fact that”; “doesn't necessarily mean”; “The fact that”; “doesn't necessarily mean”; “The fact that”; “doesn't necessarily mean”; exact Japanese target cues: “という事実だけでは”; “必ずしもなりません”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “中止されていないという事実だけでは、安全だということには必ずしもなりません。”; “道路が開いているという事実だけでは、安全だということには必ずしもなりません。”; “ほかの人が行くという事実だけでは、安全だということには必ずしもなりません。”; “警告が古いという事実だけでは、安全だということには必ずしもなりません。”; lexical hints: ["中止されていない:it hasn't been cancelled", '道路が開いている:the road is open', 'ほかの人が行く:others are going', '警告が古い:the warning is old']
+- Visible target or prompt: Exact complete English answers: “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.”; “The fact that the road is open doesn't necessarily mean it's safe.”; “The fact that others are going doesn't necessarily mean it's safe.”; “The fact that the warning is old doesn't necessarily mean it's safe.”; support stage: supported; lexical hint chips: “中止されていない:it hasn't been cancelled”; “道路が開いている:the road is open”; “ほかの人が行く:others are going”; “警告が古い:the warning is old”
 - Learning target: Produce complete pattern 1 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “The fact that ___ doesn't necessarily mean ___” to challenge one weak safety assumption.” Communicative frame: The fact that ___ doesn't necessarily mean ___
+- Visible target or prompt: Exact learner prompt: “Use “The fact that ___ doesn't necessarily mean ___” to challenge one weak safety assumption.”; aligned Japanese prompt: “「The fact that ___ doesn't necessarily mean ___」を使って、安全についての根拠が弱い判断を一つ問い直しましょう。”
 - Learning target: Use pattern 1 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 2 communicative purpose: 次に、情報が足りない中で選ぶ安全側の行動を伝えます。
-- Learning target: Connect the practical scene to pattern 2 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Overall, I'd rather postpone than take the risk.” Exact English purpose/action: “Use this fixed preference to choose caution over an avoidable risk. Read the line above aloud.” Exact Japanese purpose/action: “避けられる危険より慎重な選択を優先する定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ["Overall, I'd rather", 'than take the risk']; first model: “Overall, I'd rather postpone than take the risk.”; job: Use this fixed preference to choose caution over an avoidable risk.
+- Visible target or prompt: Exact communicative use: “Use this fixed preference to choose caution over an avoidable risk.”; aligned Japanese: “避けられる危険より慎重な選択を優先する定型表現です。”; complete models: “Overall, I'd rather postpone than take the risk.”; “Overall, I'd rather turn back than take the risk.”; “Overall, I'd rather wait than take the risk.”; exact highlighted spans: “Overall, I'd rather”; “than take the risk”; “総合的に考えると、私が望むのは”; “危険を冒すことではありません”
 - Learning target: Connect pattern 2’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Overall, I'd rather postpone than take the risk.”; “Overall, I'd rather turn back than take the risk.”; “Overall, I'd rather wait than take the risk.”; “Overall, I'd rather cancel than take the risk.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Overall, I'd rather postpone than take the risk.”; “Overall, I'd rather turn back than take the risk.”; “Overall, I'd rather wait than take the risk.”; “Overall, I'd rather cancel than take the risk.”; exact highlighted spans: “Overall, I'd rather”; “than take the risk”; “総合的に考えると、私が望むのは”; “危険を冒すことではありません”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["Overall, I'd rather", 'than take the risk', "Overall, I'd rather", 'than take the risk', "Overall, I'd rather", 'than take the risk', "Overall, I'd rather", 'than take the risk']; authored frame boundaries ["Overall, I'd rather", 'than take the risk']
+- Visible target or prompt: Exact missing target answers: “Overall, I'd rather”; “than take the risk”; “Overall, I'd rather”; “than take the risk”; “Overall, I'd rather”; “than take the risk”; “Overall, I'd rather”; “than take the risk”; exact Japanese target cues: “総合的に考えると、私が望むのは”; “危険を冒すことではありません”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “総合的に考えると、私が望むのは延期であり、危険を冒すことではありません。”; “総合的に考えると、私が望むのは引き返すことであり、危険を冒すことではありません。”; “総合的に考えると、私が望むのは待つことであり、危険を冒すことではありません。”; “総合的に考えると、私が望むのは中止であり、危険を冒すことではありません。”; lexical hints: ['延期する:postpone', '引き返す:turn back', '待つ:wait', '中止する:cancel']
+- Visible target or prompt: Exact complete English answers: “Overall, I'd rather postpone than take the risk.”; “Overall, I'd rather turn back than take the risk.”; “Overall, I'd rather wait than take the risk.”; “Overall, I'd rather cancel than take the risk.”; support stage: supported; lexical hint chips: “延期する:postpone”; “引き返す:turn back”; “待つ:wait”; “中止する:cancel”
 - Learning target: Produce complete pattern 2 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “Overall, I'd rather ___ than take the risk” to state the safer action you choose.” Communicative frame: Overall, I'd rather ___ than take the risk
+- Visible target or prompt: Exact learner prompt: “Use “Overall, I'd rather ___ than take the risk” to state the safer action you choose.”; aligned Japanese prompt: “「Overall, I'd rather ___ than take the risk」を使って、安全側で選ぶ行動を伝えましょう。”
 - Learning target: Use pattern 2 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every learner-owned line aloud.
 - Tutor action: Play the tour operator and pause for every learner line.
-- Visible target or prompt: Replay targets: “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.” and “Overall, I'd rather postpone than take the risk.”; tutor role: Tour Operator
+- Visible target or prompt: Tutor role: Tour Operator; exact full exchange: “The excursion hasn't been cancelled, so it should be fine.”; “The fact that it hasn't been cancelled doesn't necessarily mean it's safe.”; “That's fair. The latest advisory warns of flash flooding.”; “Overall, I'd rather postpone than take the risk.”; “I can move your booking to Saturday without a fee.”; “Please do that. We'll check the advisory again on Friday.”; exact highlighted targets: “The fact that”; “doesn't necessarily mean”; “という事実だけでは”; “必ずしもなりません”; “Overall, I'd rather”; “than take the risk”; “総合的に考えると、私が望むのは”; “危険を冒すことではありません”
 - Learning target: Rehearse both patterns in the full resolved scene with stable roles.
 - Pedagogical value: The learner reads their own complete lines while the tutor supplies only counterpart turns.
 - Failure diagnoses: Tutor modelling learner lines or changing roles would remove the learner’s speaking responsibility.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete learner line, including the missing words.
 - Tutor action: Play the tour operator and type only the missing target words.
-- Visible target or prompt: Complete-scene target blanks: ['The fact that', "doesn't necessarily mean", "Overall, I'd rather", 'than take the risk']; tutor role: Tour Operator
+- Visible target or prompt: Tutor role: Tour Operator; exact completion instruction: “I’ll be the tour operator. Say each complete line, including the missing words.”; exact missing target answers: “The fact that”; “doesn't necessarily mean”; “Overall, I'd rather”; “than take the risk”
 - Learning target: Retrieve both target expressions while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks disappear, so the learner must produce the lesson language in context.
 - Failure diagnoses: Blanking non-target dialogue or having the tutor say learner turns would invalidate retrieval.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the Tutor’s question, then ask the exact related question back.
 - Tutor action: React naturally, answer the ask-back honestly, and follow the most interesting detail.
-- Visible target or prompt: Exact Tutor question: “When weather changes a trip, are you more likely to postpone it or change the plan?” Exact learner ask-back: “What about you—what would you usually do?” / 天候で旅行に影響が出たら、延期しますか、それとも予定を変えますか？ / 先生はどうですか？普段ならどうしますか？
+- Visible target or prompt: Exact Tutor question: “When weather changes a trip, are you more likely to postpone it or change the plan?”; exact learner ask-back: “What about you—what would you usually do?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a genuine reciprocal conversation related to the lesson topic without forcing today’s frame.
 - Pedagogical value: An interesting personal question plus ask-back creates real interaction after controlled practice.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would merely repeat the drill.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the traveller and complete both target lines in the new scene.
 - Tutor action: Play the rental agent and begin with the first counterpart line.
-- Visible target or prompt: Deciding whether to drive through mountain snow; learner is Traveller, tutor is Rental Agent; first tutor line: “The mountain road is open, so you can still drive through.”; reuse both target lines.
+- Visible target or prompt: Tutor role: Rental Agent; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the rental agent.”; exact full exchange: “The mountain road is open, so you can still drive through.”; “the road is open it's safe.”; “The forecast now says heavy snow after six.”; “wait .”; “I can extend the rental until tomorrow morning at no charge.”; “Let's do that. We'll leave after the road is checked.”; exact missing target answers: “The fact that”; “doesn't necessarily mean”; “Overall, I'd rather”; “than take the risk”
 - Learning target: Transfer both lesson expressions to a new resolved practical role-play.
 - Pedagogical value: Explicit new roles and the same two target jobs test flexible use beyond the opening scene.
 - Failure diagnoses: Generic roles, bilingual mismatch, or an unresolved ending would make transfer ambiguous.

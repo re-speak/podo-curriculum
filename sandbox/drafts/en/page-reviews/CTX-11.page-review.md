@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-hotels-food/lessons/11-return-something-that-does-not-work/lesson.html`
-- SHA-256: `20539afb82500a0f457c00d80f74a28ef71f6cf812deaae59c1f51bd055b2f82`
+- SHA-256: `7baccee3d007196d84e5240c5ce572b4d679daca69f69d7010af500a2b28fd24`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -79,20 +79,20 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Notice the next model line and listen to the short transition into that practice move.
-- Tutor action: Introduce the next move in one line and continue without drilling on the transition page.
-- Visible target or prompt: I bought this yesterday, but it doesn't work.: First, let's practice this useful line from the scene.まず、いつ買った物にどんな問題があるのか説明します。
-- Learning target: Signal the shift to one pattern or to the full task without reteaching the prior page.
-- Pedagogical value: The page preserves the receptive-to-productive sequence and keeps navigation explicit.
-- Failure diagnoses: A duplicate scene summary or unexplained heading would create a page with no learner-facing job.
-- Non-target support: The model heading and bilingual transition state exactly what comes next.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I bought this yesterday, but it doesn't work.” Exact English purpose/action: “Use this to connect a recent purchase with the problem you discovered. Read the line above aloud.” Exact Japanese purpose/action: “最近買った物と、見つかった問題をつなげて説明する表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No separate article decision is introduced beyond what the displayed target and complete examples require.
 - Choice/distractor quality: No choice set belongs on a navigation transition.
-- Component consistency: Uses the approved unboxed transition-page pattern with one purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page audit completed against the final hash; visible instruction: First, let's practice this useful line from the scene.まず、いつ買った物にどんな問題があるのか説明します。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: The regenerated transition was semantically reread in both languages; its changed layout still needs fresh 360px and 480px screenshot inspection.
 
 ## 6. `p1-teach`
 
@@ -215,20 +215,20 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Notice the next model line and listen to the short transition into that practice move.
-- Tutor action: Introduce the next move in one line and continue without drilling on the transition page.
-- Visible target or prompt: Can I exchange it for another one?: Next, let's practice this useful line from the scene.次に、希望する交換先を具体的に伝えます。
-- Learning target: Signal the shift to one pattern or to the full task without reteaching the prior page.
-- Pedagogical value: The page preserves the receptive-to-productive sequence and keeps navigation explicit.
-- Failure diagnoses: A duplicate scene summary or unexplained heading would create a page with no learner-facing job.
-- Non-target support: The model heading and bilingual transition state exactly what comes next.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Can I exchange it for another one?” Exact English purpose/action: “Use this to ask to replace one item with a specific alternative. Read the line above aloud.” Exact Japanese purpose/action: “ある商品を、具体的な別の商品に交換してもらえるか尋ねる表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No separate article decision is introduced beyond what the displayed target and complete examples require.
 - Choice/distractor quality: No choice set belongs on a navigation transition.
-- Component consistency: Uses the approved unboxed transition-page pattern with one purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page audit completed against the final hash; visible instruction: Next, let's practice this useful line from the scene.次に、希望する交換先を具体的に伝えます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: The regenerated transition was semantically reread in both languages; its changed layout still needs fresh 360px and 480px screenshot inspection.
 
 ## 14. `p2-teach`
 

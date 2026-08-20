@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/54-find-common-ground/lesson.html`
-- SHA-256: `8dacc36170a3eceef9b549984c1c3ffcbb1c765067f17784265f96b00c6b31d6`
+- SHA-256: `739bfd3ac3ed830555681e93085fb3ba06778dfa43765f023ff9e8a93119c9e0`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: We seem to agree on the outcome, but not the timeline.; communicative bridge: まず、合意済みの点と未合意の点を分けます。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “We seem to agree on the outcome, but not the timeline.” Exact English purpose/action: “Use this fixed frame to narrow a broad disagreement to one issue. Read the line above aloud.” Exact Japanese purpose/action: “広い意見の相違を一つの論点に絞る定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: We seem to agree on the outcome, but not the timeline.; use: Use this fixed frame to narrow a broad disagreement to one issue.
+- Visible target or prompt: Exact communicative use: “Use this fixed frame to narrow a broad disagreement to one issue.”; aligned Japanese: “広い意見の相違を一つの論点に絞る定型表現です。”; complete models: “We seem to agree on the outcome, but not the timeline.”; “We seem to agree on the scope, but not the price.”; “We seem to agree on the principle, but not the wording.”; exact highlighted spans: “We seem to agree on”; “but not”; “合意しているようですが”; “まだ合意していません”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: We seem to agree on the outcome, but not the timeline.; We seem to agree on the scope, but not the price.; We seem to agree on the principle, but not the wording.; We seem to agree on the first phase, but not the second.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “We seem to agree on the outcome, but not the timeline.”; “We seem to agree on the scope, but not the price.”; “We seem to agree on the principle, but not the wording.”; “We seem to agree on the first phase, but not the second.”; exact highlighted spans: “We seem to agree on”; “but not”; “合意しているようですが”; “まだ合意していません”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: We seem to agree on; but not; We seem to agree on; but not; We seem to agree on; but not; We seem to agree on; but not
+- Visible target or prompt: Exact missing target answers: “We seem to agree on”; “but not”; “We seem to agree on”; “but not”; “We seem to agree on”; “but not”; “We seem to agree on”; “but not”; exact Japanese target cues: “合意しているようですが”; “まだ合意していません”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: We seem to agree on ___, but not ___; support stage supported; 成果:outcome; 日程:timeline; 範囲:scope; 価格:price; 原則:principle; 表現:wording; 第1段階:first phase; 第2段階:second phase
+- Visible target or prompt: Exact complete English answers: “We seem to agree on the outcome, but not the timeline.”; “We seem to agree on the scope, but not the price.”; “We seem to agree on the principle, but not the wording.”; “We seem to agree on the first phase, but not the second.”; support stage: supported; lexical hint chips: “成果:outcome”; “日程:timeline”; “範囲:scope”; “価格:price”; “原則:principle”; “表現:wording”; “第1段階:first phase”; “第2段階:second phase”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “We seem to agree on ___, but not ___” to separate what is settled from what remains open.” Frame: We seem to agree on ___, but not ___
+- Visible target or prompt: Exact learner prompt: “Use “We seem to agree on ___, but not ___” to separate what is settled from what remains open.”; aligned Japanese prompt: “「We seem to agree on ___, but not ___」を使って、合意済みの点と未解決の点を分けましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “We seem to agree on ___, but not ___” to separate what is settled from what remains open.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: What if we agreed on phase one today and revisited phase two next week?; communicative bridge: 次に、今決められる点と後で見直す点を提案します。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “What if we agreed on phase one today and revisited phase two next week?” Exact English purpose/action: “Use this to secure partial agreement without forcing the unresolved issue. Read the line above aloud.” Exact Japanese purpose/action: “未解決の論点を無理に決めず、部分的な合意を得る表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: What if we agreed on phase one today and revisited phase two next week?; use: Use this to secure partial agreement without forcing the unresolved issue.
+- Visible target or prompt: Exact communicative use: “Use this to secure partial agreement without forcing the unresolved issue.”; aligned Japanese: “未解決の論点を無理に決めず、部分的な合意を得る表現です。”; complete models: “What if we agreed on phase one today and revisited phase two next week?”; “What if we agreed on the scope today and revisited the price tomorrow?”; “What if we agreed on the principle now and revisited the wording later?”; exact highlighted spans: “What if we agreed on”; “and revisited”; “合意し、”; “改めて検討するのはどうでしょうか”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: What if we agreed on phase one today and revisited phase two next week?; What if we agreed on the scope today and revisited the price tomorrow?; What if we agreed on the principle now and revisited the wording later?; What if we agreed on the pilot today and revisited expansion in June?
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “What if we agreed on phase one today and revisited phase two next week?”; “What if we agreed on the scope today and revisited the price tomorrow?”; “What if we agreed on the principle now and revisited the wording later?”; “What if we agreed on the pilot today and revisited expansion in June?”; exact highlighted spans: “What if we agreed on”; “and revisited”; “合意し、”; “改めて検討するのはどうでしょうか”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Pair today's agreement with a later review: Name what can be agreed now, then what can be revisited later. Formula: What if we agreed on A and revisited B?
+- Visible target or prompt: Exact rule: “Name what can be agreed now, then what can be revisited later.”; aligned Japanese: “今合意できることを先に、後で再検討することを次に示します。”
 - Learning target: Notice the stable form of pattern 2 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 2 chunk sets: What if we agreed|on phase one today|and revisited|phase two next week?; What if we agreed|on the scope today|and revisited|the price tomorrow?; What if we agreed|on the principle now|and revisited|the wording later?; What if we agreed|on the pilot today|and revisited|expansion in June?
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “What if we agreed on phase one today and revisited phase two next week?”; “What if we agreed on the scope today and revisited the price tomorrow?”; “What if we agreed on the principle now and revisited the wording later?”; “What if we agreed on the pilot today and revisited expansion in June?”
 - Learning target: Retrieve the full ordering of pattern 2 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: What if we agreed on; and revisited; What if we agreed on; and revisited; What if we agreed on; and revisited; What if we agreed on; and revisited
+- Visible target or prompt: Exact missing target answers: “What if we agreed on”; “and revisited”; “What if we agreed on”; “and revisited”; “What if we agreed on”; “and revisited”; “What if we agreed on”; “and revisited”; exact Japanese target cues: “合意し、”; “改めて検討するのはどうでしょうか”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: What if we agreed on ___ and revisited ___?; support stage supported; 第1段階:phase one; 第2段階:phase two; 範囲:scope; 価格:price; 原則:principle; 表現:wording; 試験導入:pilot; 拡大:expansion
+- Visible target or prompt: Exact complete English answers: “What if we agreed on phase one today and revisited phase two next week?”; “What if we agreed on the scope today and revisited the price tomorrow?”; “What if we agreed on the principle now and revisited the wording later?”; “What if we agreed on the pilot today and revisited expansion in June?”; support stage: supported; lexical hint chips: “第1段階:phase one”; “第2段階:phase two”; “範囲:scope”; “価格:price”; “原則:principle”; “表現:wording”; “試験導入:pilot”; “拡大:expansion”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “What if we agreed on ___ and revisited ___?” to propose a partial agreement and a clear return point.” Frame: What if we agreed on ___ and revisited ___?
+- Visible target or prompt: Exact learner prompt: “Use “What if we agreed on ___ and revisited ___?” to propose a partial agreement and a clear return point.”; aligned Japanese prompt: “「What if we agreed on ___ and revisited ___?」を使って、部分合意と再検討する時点を提案しましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “What if we agreed on ___ and revisited ___?” to propose a partial agreement and a clear return point.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Client.
 - Tutor action: Read only the Client turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Client; learner lines include “We seem to agree on the outcome, but not the timeline.” and “What if we agreed on phase one today and revisited phase two next week?”.
+- Visible target or prompt: Tutor role: Client; exact full exchange: “We both want the full rollout, but we need it in May.”; “We seem to agree on the outcome, but not the timeline.”; “How can we move forward today?”; “What if we agreed on phase one today and revisited phase two next week?”; “Yes. We can approve phase one today.”; “Great. I'll document that agreement and book next week's review.”; exact highlighted targets: “We seem to agree on”; “but not”; “合意しているようですが”; “まだ合意していません”; “What if we agreed on”; “and revisited”; “合意し、”; “改めて検討するのはどうでしょうか”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Client; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: We seem to agree on, but not, What if we agreed on, and revisited
+- Visible target or prompt: Tutor role: Client; exact completion instruction: “I’ll be the client. Say each complete line, including the missing words.”; exact missing target answers: “We seem to agree on”; “but not”; “What if we agreed on”; “and revisited”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “When a discussion is stuck, do you prefer a partial agreement or more time to negotiate?” Exact learner ask-back: “What about you—which do you prefer?”
+- Visible target or prompt: Exact Tutor question: “When a discussion is stuck, do you prefer a partial agreement or more time to negotiate?”; exact learner ask-back: “What about you—which do you prefer?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about break a negotiation deadlock without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Partner, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Agreeing on a pilot first; tutor is Partner (パートナー); first line: “We support expansion, but not before the pilot results.”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Partner; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the partner.”; exact full exchange: “We support expansion, but not before the pilot results.”; “the first phase, the second.”; “What can we decide this week?”; “the pilot today expansion in June?”; “That works. Let's approve the pilot today.”; “Agreed. I'll set a June review for expansion.”; exact missing target answers: “We seem to agree on”; “but not”; “What if we agreed on”; “and revisited”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

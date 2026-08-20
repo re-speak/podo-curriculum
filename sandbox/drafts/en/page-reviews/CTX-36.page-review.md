@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-workplace-essentials/lessons/36-report-a-technical-blocker-usefully/lesson.html`
-- SHA-256: `728983de04e9d8ecc65b087bde972960b53a9da52c1dcae994e21e438b139c61`
+- SHA-256: `9a7e82a6495bb162711d086ea6ce9edbf167651f6982870006ab89976acbfa2d`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 1 communicative purpose: まず、できない操作と対象を短く伝えます。
-- Learning target: Connect the practical scene to pattern 1 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I can't access the demo environment.” Exact English purpose/action: “Use this to state the exact system or environment you cannot enter. Read the line above aloud.” Exact Japanese purpose/action: “アクセスできないシステムや環境を正確に示す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ["can't access"]; first model: “I can't access the demo environment.”; job: Use this to state the exact system or environment you cannot enter.
+- Visible target or prompt: Exact communicative use: “Use this to state the exact system or environment you cannot enter.”; aligned Japanese: “アクセスできないシステムや環境を正確に示す表現です。”; complete models: “I can't access the demo environment.”; “I can't access the shared folder.”; “I can't access the test account.”; exact highlighted spans: “can't access”; “アクセスできません”
 - Learning target: Connect pattern 1’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “I can't access the demo environment.”; “I can't access the shared folder.”; “I can't access the test account.”; “I can't access the client dashboard.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I can't access the demo environment.”; “I can't access the shared folder.”; “I can't access the test account.”; “I can't access the client dashboard.”; exact highlighted spans: “can't access”; “アクセスできません”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify where the changing content belongs.
 - Tutor action: Point out the one ordering or usage contrast, then move on.
-- Visible target or prompt: Put the blocked resource after “access” / 利用できない対象は access のあと; formula: I can't access + resource
+- Visible target or prompt: Exact rule: “Name the exact resource instead of saying only that the system is broken.”; aligned Japanese: “システムが壊れているとだけ言わず、対象を正確に示します。”
 - Learning target: Make the one structural distinction needed to use pattern 1 accurately.
 - Pedagogical value: The rule explains a production-relevant boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["can't access", "can't access", "can't access", "can't access"]; authored frame boundaries ["can't access"]
+- Visible target or prompt: Exact missing target answers: “can't access”; “can't access”; “can't access”; “can't access”; exact Japanese target cues: “アクセスできません”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “デモ環境にアクセスできません。”; “共有フォルダにアクセスできません。”; “テストアカウントにアクセスできません。”; “顧客ダッシュボードにアクセスできません。”; lexical hints: ['デモ環境:the demo environment', '共有フォルダ:the shared folder', 'テストアカウント:the test account', '顧客ダッシュボード:the client dashboard']
+- Visible target or prompt: Exact complete English answers: “I can't access the demo environment.”; “I can't access the shared folder.”; “I can't access the test account.”; “I can't access the client dashboard.”; support stage: supported; lexical hint chips: “デモ環境:the demo environment”; “共有フォルダ:the shared folder”; “テストアカウント:the test account”; “顧客ダッシュボード:the client dashboard”
 - Learning target: Produce complete pattern 1 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “I can't access ___” to name the exact resource blocking your work.” Communicative frame: I can't access ___
+- Visible target or prompt: Exact learner prompt: “Use “I can't access ___” to name the exact resource blocking your work.”; aligned Japanese prompt: “「I can't access ___」を使って、作業を止めている対象を具体的に伝えましょう。”
 - Learning target: Use pattern 1 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -198,16 +198,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 12. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 2 communicative purpose: 次に、最後に動いた時点と今のエラーを対比します。
-- Learning target: Connect the practical scene to pattern 2 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “It worked this morning, but now I get a permission error.” Exact English purpose/action: “Use this to show what changed between the last successful attempt and now. Read the line above aloud.” Exact Japanese purpose/action: “最後に成功した時点と現在の違いを示す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['worked', 'but now I get']; first model: “It worked this morning, but now I get a permission error.”; job: Use this to show what changed between the last successful attempt and now.
+- Visible target or prompt: Exact communicative use: “Use this to show what changed between the last successful attempt and now.”; aligned Japanese: “最後に成功した時点と現在の違いを示す表現です。”; complete models: “It worked this morning, but now I get a permission error.”; “It worked yesterday, but now I get a login error.”; “It worked before lunch, but now I get a blank screen.”; exact highlighted spans: “worked”; “but now I get”; “動きました”; “が、今表示されるのは”
 - Learning target: Connect pattern 2’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “It worked this morning, but now I get a permission error.”; “It worked yesterday, but now I get a login error.”; “It worked before lunch, but now I get a blank screen.”; “It worked on my laptop, but now I get an access error.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “It worked this morning, but now I get a permission error.”; “It worked yesterday, but now I get a login error.”; “It worked before lunch, but now I get a blank screen.”; “It worked on my laptop, but now I get an access error.”; exact highlighted spans: “worked”; “but now I get”; “動きました”; “が、今表示されるのは”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify where the changing content belongs.
 - Tutor action: Point out the one ordering or usage contrast, then move on.
-- Visible target or prompt: Contrast the last success with the current error / 最後の成功と現在のエラーを対比; formula: worked + last time, but now + current error
+- Visible target or prompt: Exact rule: “Give the team a time boundary and the exact symptom.”; aligned Japanese: “チームが調査できるよう、時点と具体的な症状を伝えます。”
 - Learning target: Make the one structural distinction needed to use pattern 2 accurately.
 - Pedagogical value: The rule explains a production-relevant boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each row’s chunks, then say the completed sentence aloud.
 - Tutor action: Let the learner order the chunks and prompt the full spoken sentence.
-- Visible target or prompt: Reorder complete answers: “It worked this morning, but now I get a permission error.”; “It worked yesterday, but now I get a login error.”; “It worked before lunch, but now I get a blank screen.”; “It worked on my laptop, but now I get an access error.”
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “It worked this morning, but now I get a permission error.”; “It worked yesterday, but now I get a login error.”; “It worked before lunch, but now I get a blank screen.”; “It worked on my laptop, but now I get an access error.”
 - Learning target: Retrieve meaningful chunks in the order required by pattern 2.
 - Pedagogical value: Three or four honest chunks test sentence assembly without splitting bound words.
 - Failure diagnoses: Punctuation-only chips, detached function words, or padded choices would create busywork.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['worked', 'but now I get', 'worked', 'but now I get', 'worked', 'but now I get', 'worked', 'but now I get']; authored frame boundaries ['worked', 'but now I get']
+- Visible target or prompt: Exact missing target answers: “worked”; “but now I get”; “worked”; “but now I get”; “worked”; “but now I get”; “worked”; “but now I get”; exact Japanese target cues: “動きました”; “が、今表示されるのは”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “今朝は動きましたが、今表示されるのは権限エラーです。”; “昨日は動きましたが、今表示されるのはログインエラーです。”; “昼食前は動きましたが、今表示されるのは空白画面です。”; “自分のPCでは動きましたが、今表示されるのはアクセスエラーです。”; lexical hints: ['今朝:this morning', '権限エラー:a permission error', '昨日:yesterday', 'ログインエラー:a login error', '昼食前:before lunch', '空白画面:a blank screen', '自分のPC:on my laptop', 'アクセスエラー:an access error']
+- Visible target or prompt: Exact complete English answers: “It worked this morning, but now I get a permission error.”; “It worked yesterday, but now I get a login error.”; “It worked before lunch, but now I get a blank screen.”; “It worked on my laptop, but now I get an access error.”; support stage: supported; lexical hint chips: “今朝:this morning”; “権限エラー:a permission error”; “昨日:yesterday”; “ログインエラー:a login error”; “昼食前:before lunch”; “空白画面:a blank screen”; “自分のPC:on my laptop”; “アクセスエラー:an access error”
 - Learning target: Produce complete pattern 2 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “It worked ___, but now I get ___” to contrast the last success with the current error.” Communicative frame: It worked ___, but now I get ___
+- Visible target or prompt: Exact learner prompt: “Use “It worked ___, but now I get ___” to contrast the last success with the current error.”; aligned Japanese prompt: “「It worked ___, but now I get ___」を使って、最後に動いた時点と現在のエラーを対比しましょう。”
 - Learning target: Use pattern 2 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every learner-owned line aloud.
 - Tutor action: Play the demo lead and pause for every learner line.
-- Visible target or prompt: Replay targets: “I can't access the demo environment.” and “It worked this morning, but now I get a permission error.”; tutor role: Demo Lead
+- Visible target or prompt: Tutor role: Demo Lead; exact full exchange: “Is the demo setup ready for the client call?”; “I can't access the demo environment.”; “What changed since the last successful login?”; “It worked this morning, but now I get a permission error.”; “That gives me enough to act. I'll restore your demo access now.”; “Thanks. I'll retest it before the client joins.”; exact highlighted targets: “can't access”; “アクセスできません”; “worked”; “but now I get”; “動きました”; “が、今表示されるのは”
 - Learning target: Rehearse both patterns in the full resolved scene with stable roles.
 - Pedagogical value: The learner reads their own complete lines while the tutor supplies only counterpart turns.
 - Failure diagnoses: Tutor modelling learner lines or changing roles would remove the learner’s speaking responsibility.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete learner line, including the missing words.
 - Tutor action: Play the demo lead and type only the missing target words.
-- Visible target or prompt: Complete-scene target blanks: ["can't access", 'worked', 'but now I get']; tutor role: Demo Lead
+- Visible target or prompt: Tutor role: Demo Lead; exact completion instruction: “I’ll be the demo lead. Say each complete line, including the missing words.”; exact missing target answers: “can't access”; “worked”; “but now I get”
 - Learning target: Retrieve both target expressions while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks disappear, so the learner must produce the lesson language in context.
 - Failure diagnoses: Blanking non-target dialogue or having the tutor say learner turns would invalidate retrieval.
@@ -387,7 +387,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the Tutor’s question, then ask the exact related question back.
 - Tutor action: React naturally, answer the ask-back honestly, and follow the most interesting detail.
-- Visible target or prompt: Exact Tutor question: “What information helps you solve a technical problem fastest?” Exact learner ask-back: “What about you—which detail do you ask for first?” / 技術的な問題を最も早く解決するのに役立つ情報は何ですか？ / 先生はどうですか？最初にどの情報を尋ねますか？
+- Visible target or prompt: Exact Tutor question: “What information helps you solve a technical problem fastest?”; exact learner ask-back: “What about you—which detail do you ask for first?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a genuine reciprocal conversation related to the lesson topic without forcing today’s frame.
 - Pedagogical value: An interesting personal question plus ask-back creates real interaction after controlled practice.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would merely repeat the drill.
@@ -421,7 +421,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new scene.
 - Tutor action: Play the it support and begin with the first counterpart line.
-- Visible target or prompt: Reporting a blocked training account; learner is Colleague, tutor is IT Support; first tutor line: “Can you open the training materials for today's session?”; reuse both target lines.
+- Visible target or prompt: Tutor role: IT support specialist; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the it support specialist.”; exact full exchange: “Can you open the training materials for today's session?”; “I the test account.”; “When did that account last work?”; “It yesterday, a login error.”; “Thanks. I'll reset the login and send you a new link.”; “Great. I'll test the account before training starts.”; exact missing target answers: “can't access”; “worked”; “but now I get”
 - Learning target: Transfer both lesson expressions to a new resolved practical role-play.
 - Pedagogical value: Explicit new roles and the same two target jobs test flexible use beyond the opening scene.
 - Failure diagnoses: Generic roles, bilingual mismatch, or an unresolved ending would make transfer ambiguous.

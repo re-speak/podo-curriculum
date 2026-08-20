@@ -464,6 +464,112 @@ for _number, _copy in REVIEWED_COPY_37_48.items():
         _lesson["vocab"] = tuple(_vocab)
 
 
+# Retarget completion blanks to the invariant communicative frame.  The
+# changing task, owner, deadline, option, or criterion stays visible; the
+# Japanese line still supplies meaning support for the whole sentence.
+LESSONS[37]["p2"]["rows"] = rows(
+    ("{t}Which{/t} task {t}should I{/t} do first?", "{t}どの{/t}仕事を{t}最初にすべきですか{/t}？", "Which task|should I do|first?"),
+    ("{t}Which{/t} file {t}should I{/t} review first?", "{t}どの{/t}ファイルを{t}最初に確認すべきですか{/t}？", "Which file|should I review|first?"),
+    ("{t}Which{/t} client {t}should I{/t} call first?", "{t}どの{/t}顧客に{t}最初に電話すべきですか{/t}？", "Which client|should I call|first?"),
+    ("{t}Which{/t} problem {t}should I{/t} fix first?", "{t}どの{/t}問題を{t}最初に直すべきですか{/t}？", "Which problem|should I fix|first?"),
+)
+LESSONS[38]["p1"]["rows"] = rows(
+    ("{t}Just to clarify,{/t} {t}who's{/t} contacting the supplier?", "{t}確認ですが、{/t}仕入先に連絡する{t}のは誰ですか{/t}？", "Just to clarify,|who's contacting|the supplier?"),
+    ("{t}Just to clarify,{/t} {t}who's{/t} calling the client?", "{t}確認ですが、{/t}顧客に電話する{t}のは誰ですか{/t}？", "Just to clarify,|who's calling|the client?"),
+    ("{t}Just to clarify,{/t} {t}who's{/t} sending the invoice?", "{t}確認ですが、{/t}請求書を送る{t}のは誰ですか{/t}？", "Just to clarify,|who's sending|the invoice?"),
+    ("{t}Just to clarify,{/t} {t}who's{/t} booking the room?", "{t}確認ですが、{/t}会議室を予約する{t}のは誰ですか{/t}？", "Just to clarify,|who's booking|the room?"),
+)
+LESSONS[38]["p2"]["rows"] = rows(
+    ("{t}I'm happy to{/t} contact them {t}if no one else is doing it{/t}.", "ほかに担当者がいなければ、{t}私が{/t}連絡しても{t}構いません{/t}。", "I'm happy to|contact them|if no one else|is doing it."),
+    ("{t}I'm happy to{/t} call them {t}if no one else is doing it{/t}.", "ほかに担当者がいなければ、{t}私が{/t}電話しても{t}構いません{/t}。", "I'm happy to|call them|if no one else|is doing it."),
+    ("{t}I'm happy to{/t} send it {t}if no one else is doing it{/t}.", "ほかに担当者がいなければ、{t}私が{/t}送っても{t}構いません{/t}。", "I'm happy to|send it|if no one else|is doing it."),
+    ("{t}I'm happy to{/t} book it {t}if no one else is doing it{/t}.", "ほかに担当者がいなければ、{t}私が{/t}予約しても{t}構いません{/t}。", "I'm happy to|book it|if no one else|is doing it."),
+)
+LESSONS[39]["p1"]["rows"] = rows(
+    ("{t}We're on track{/t} at the moment.", "今のところ{t}予定どおりです{/t}。", "We're on track|at the moment."),
+    ("{t}We're on track{/t} for this week.", "今週分は{t}予定どおりです{/t}。", "We're on track|for this week."),
+    ("{t}We're on track{/t} so far.", "ここまでは{t}予定どおりです{/t}。", "We're on track|so far."),
+    ("{t}We're on track{/t} for Friday.", "金曜日に向けて{t}予定どおりです{/t}。", "We're on track|for Friday."),
+)
+LESSONS[40]["p2"]["rows"] = rows(
+    ("Thursday {t}is realistic if{/t} the data arrives today.", "データが今日届けば、木曜日{t}が現実的です{/t}。", "Thursday is realistic|if the data|arrives today."),
+    ("Friday {t}is realistic if{/t} the figures are final tomorrow.", "数値が明日確定すれば、金曜日{t}が現実的です{/t}。", "Friday is realistic|if the figures|are final tomorrow."),
+    ("Monday {t}is realistic if{/t} the team approves the draft Friday.", "チームが金曜日に下書きを承認すれば、月曜日{t}が現実的です{/t}。", "Monday is realistic|if the team approves|the draft Friday."),
+    ("The end of June {t}is realistic if{/t} the scope stays the same.", "範囲が変わらなければ、6月末{t}が現実的です{/t}。", "The end of June is realistic|if the scope|stays the same."),
+)
+LESSONS[41]["p1"]["rows"] = rows(
+    ("{t}I'm afraid{/t} {t}we won't be ready for{/t} Monday's launch.", "{t}残念ですが、{/t}月曜日の公開{t}には間に合いません{/t}。", "I'm afraid|we won't be ready|for Monday's launch."),
+    ("{t}I'm afraid{/t} {t}we won't be ready for{/t} Friday's review.", "{t}残念ですが、{/t}金曜日のレビュー{t}には間に合いません{/t}。", "I'm afraid|we won't be ready|for Friday's review."),
+    ("{t}I'm afraid{/t} {t}we won't be ready for{/t} tomorrow's demo.", "{t}残念ですが、{/t}明日のデモ{t}には間に合いません{/t}。", "I'm afraid|we won't be ready|for tomorrow's demo."),
+    ("{t}I'm afraid{/t} {t}we won't be ready for{/t} the client meeting.", "{t}残念ですが、{/t}顧客会議{t}には間に合いません{/t}。", "I'm afraid|we won't be ready|for the client meeting."),
+)
+LESSONS[41]["p2"]["rows"] = rows(
+    ("{t}We'll need to push it back{/t} by a week, {t}and I have a recovery plan{/t}.", "一週間{t}延期する必要がありますが、{/t}{t}立て直し計画があります{/t}。", "We'll need to|push it back|by a week,|and I have a recovery plan."),
+    ("{t}We'll need to push it back{/t} by two days, {t}and I have a recovery plan{/t}.", "二日{t}延期する必要がありますが、{/t}{t}立て直し計画があります{/t}。", "We'll need to|push it back|by two days,|and I have a recovery plan."),
+    ("{t}We'll need to push it back{/t} until Friday, {t}and I have a recovery plan{/t}.", "金曜日まで{t}延期する必要がありますが、{/t}{t}立て直し計画があります{/t}。", "We'll need to|push it back|until Friday,|and I have a recovery plan."),
+    ("{t}We'll need to push it back{/t} to next month, {t}and I have a recovery plan{/t}.", "来月まで{t}延期する必要がありますが、{/t}{t}立て直し計画があります{/t}。", "We'll need to|push it back|to next month,|and I have a recovery plan."),
+)
+LESSONS[42]["p1"]["rows"] = rows(
+    ("{t}So I'll{/t} update the schedule, {t}and{/t} Mia {t}will{/t} contact the client.", "{t}では私が{/t}日程を更新し、{t}そして{/t}ミア{t}が{/t}顧客に連絡します。", "So I'll|update the schedule,|and Mia will|contact the client."),
+    ("{t}So I'll{/t} revise the budget, {t}and{/t} Ken {t}will{/t} check the figures.", "{t}では私が{/t}予算を修正し、{t}そして{/t}ケン{t}が{/t}数値を確認します。", "So I'll|revise the budget,|and Ken will|check the figures."),
+    ("{t}So I'll{/t} write the notes, {t}and{/t} Jo {t}will{/t} send the files.", "{t}では私が{/t}メモを書き、{t}そして{/t}ジョー{t}が{/t}ファイルを送ります。", "So I'll|write the notes,|and Jo will|send the files."),
+    ("{t}So I'll{/t} call the supplier, {t}and{/t} Lee {t}will{/t} update the team.", "{t}では私が{/t}仕入先に電話し、{t}そして{/t}リー{t}が{/t}チームに報告します。", "So I'll|call the supplier,|and Lee will|update the team."),
+)
+LESSONS[42]["p2"]["rows"] = rows(
+    ("{t}I'll{/t} send the updated schedule {t}by{/t} Wednesday, {t}and{/t} Mia {t}will{/t} contact the client {t}by{/t} Friday.", "{t}私が{/t}更新した日程を水曜日{t}までに{/t}送り、{t}そして{/t}ミア{t}が{/t}顧客へ金曜日{t}までに{/t}連絡します。", "I'll send|the updated schedule by Wednesday,|and Mia will contact|the client by Friday."),
+    ("{t}I'll{/t} revise the budget {t}by{/t} noon, {t}and{/t} Ken {t}will{/t} check the figures {t}by{/t} three.", "{t}私が{/t}予算を正午{t}までに{/t}修正し、{t}そして{/t}ケン{t}が{/t}数値を3時{t}までに{/t}確認します。", "I'll revise|the budget by noon,|and Ken will check|the figures by three."),
+    ("{t}I'll{/t} write the notes {t}by{/t} tomorrow, {t}and{/t} Jo {t}will{/t} send the files {t}by{/t} Thursday.", "{t}私が{/t}メモを明日{t}までに{/t}書き、{t}そして{/t}ジョー{t}が{/t}ファイルを木曜日{t}までに{/t}送ります。", "I'll write|the notes by tomorrow,|and Jo will send|the files by Thursday."),
+    ("{t}I'll{/t} call the supplier {t}by{/t} four, {t}and{/t} Lee {t}will{/t} update the team {t}by{/t} five.", "{t}私が{/t}仕入先に4時{t}までに{/t}電話し、{t}そして{/t}リー{t}が{/t}チームに5時{t}までに{/t}報告します。", "I'll call|the supplier by four,|and Lee will update|the team by five."),
+)
+LESSONS[43]["p1"]["rows"] = rows(
+    ("{t}Sorry to interrupt, but what is{/t} that date {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その日程は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that date|based on?"),
+    ("{t}Sorry to interrupt, but what is{/t} that figure {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その数値は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that figure|based on?"),
+    ("{t}Sorry to interrupt, but what is{/t} that forecast {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その予測は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that forecast|based on?"),
+    ("{t}Sorry to interrupt, but what is{/t} that decision {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その判断は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that decision|based on?"),
+)
+LESSONS[45]["p1"]["rows"] = rows(
+    ("{t}I recommend{/t} option B.", "選択肢B{t}をおすすめします{/t}。", "I recommend|option B."),
+    ("{t}I recommend{/t} the smaller pilot.", "小規模な試験導入{t}をおすすめします{/t}。", "I recommend|the smaller pilot."),
+    ("{t}I recommend{/t} the June launch.", "6月の公開{t}をおすすめします{/t}。", "I recommend|the June launch."),
+    ("{t}I recommend{/t} the current supplier.", "現在の仕入先{t}をおすすめします{/t}。", "I recommend|the current supplier."),
+)
+LESSONS[45]["p2"]["rows"] = rows(
+    ("{t}It's easier to{/t} implement.", "導入するほうが{t}簡単です{/t}。", "It's easier|to implement."),
+    ("{t}It's easier to{/t} maintain.", "維持するほうが{t}簡単です{/t}。", "It's easier|to maintain."),
+    ("{t}It's easier to{/t} explain.", "説明するほうが{t}簡単です{/t}。", "It's easier|to explain."),
+    ("{t}It's easier to{/t} test.", "試すほうが{t}簡単です{/t}。", "It's easier|to test."),
+)
+LESSONS[45]["p2"].update(
+    write_frame="It's easier to ___",
+    write_script="Use “It's easier to ___” to give one practical reason for your recommendation.",
+    write_script_ja="「It's easier to ___」を使って、推奨案を支える実用的な理由を一つ伝えましょう。",
+)
+LESSONS[46]["p1"]["rows"] = rows(
+    ("{t}I don't have{/t} the confirmed figure {t}in front of me{/t}.", "確認済みの数値が{t}今、{/t}{t}手元にありません{/t}。", "I don't have|the confirmed figure|in front of me."),
+    ("{t}I don't have{/t} the final cost {t}in front of me{/t}.", "最終費用が{t}今、{/t}{t}手元にありません{/t}。", "I don't have|the final cost|in front of me."),
+    ("{t}I don't have{/t} the exact date {t}in front of me{/t}.", "正確な日付が{t}今、{/t}{t}手元にありません{/t}。", "I don't have|the exact date|in front of me."),
+    ("{t}I don't have{/t} the latest total {t}in front of me{/t}.", "最新の合計が{t}今、{/t}{t}手元にありません{/t}。", "I don't have|the latest total|in front of me."),
+)
+LESSONS[46]["p2"]["rows"] = rows(
+    ("{t}Let me check{/t} {t}and get back to you{/t} by three.", "{t}確認して{/t}3時までに{t}ご連絡します{/t}。", "Let me check|and get back to you|by three."),
+    ("{t}Let me check{/t} {t}and get back to you{/t} by noon.", "{t}確認して{/t}正午までに{t}ご連絡します{/t}。", "Let me check|and get back to you|by noon."),
+    ("{t}Let me check{/t} {t}and get back to you{/t} tomorrow.", "{t}確認して{/t}明日{t}ご連絡します{/t}。", "Let me check|and get back to you|tomorrow."),
+    ("{t}Let me check{/t} {t}and get back to you{/t} after the meeting.", "{t}確認して{/t}会議後に{t}ご連絡します{/t}。", "Let me check|and get back to you|after the meeting."),
+)
+LESSONS[48]["p1"]["rows"] = rows(
+    ("{t}The decision we need today{/t} {t}is{/t} which option to fund.", "{t}今日必要な判断は、{/t}どの案に資金を出すか{t}です{/t}。", "The decision we need today|is which option|to fund."),
+    ("{t}The decision we need today{/t} {t}is{/t} which pilot to run.", "{t}今日必要な判断は、{/t}どの試験導入を行うか{t}です{/t}。", "The decision we need today|is which pilot|to run."),
+    ("{t}The decision we need today{/t} {t}is{/t} which date to choose.", "{t}今日必要な判断は、{/t}どの日程を選ぶか{t}です{/t}。", "The decision we need today|is which date|to choose."),
+    ("{t}The decision we need today{/t} {t}is{/t} which supplier to use.", "{t}今日必要な判断は、{/t}どの仕入先を使うか{t}です{/t}。", "The decision we need today|is which supplier|to use."),
+)
+LESSONS[48]["p2"]["rows"] = rows(
+    ("{t}Would it help if we compared them against{/t} the same three criteria?", "同じ三つの基準で{t}比較すれば、判断しやすくなりますか{/t}？", "Would it help|if we compared them|against the same three criteria?"),
+    ("{t}Would it help if we compared them against{/t} the same budget?", "同じ予算で{t}比較すれば、判断しやすくなりますか{/t}？", "Would it help|if we compared them|against the same budget?"),
+    ("{t}Would it help if we compared them against{/t} the same timeline?", "同じ日程で{t}比較すれば、判断しやすくなりますか{/t}？", "Would it help|if we compared them|against the same timeline?"),
+    ("{t}Would it help if we compared them against{/t} the same risks?", "同じリスク項目で{t}比較すれば、判断しやすくなりますか{/t}？", "Would it help|if we compared them|against the same risks?"),
+)
+
+
 # The Understand page is tutor-read listening.  Use complete counterpart lines
 # from the scene/transfer instead of learner fragments or target answers.
 REVIEWED_RECEPTIVE_37_48 = {

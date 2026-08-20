@@ -220,7 +220,7 @@ LESSONS = {
         receptive=(("Is the demo setup ready?", "The lead asks whether the client demo can proceed", "顧客デモを実施できるか尋ねている", "The lead asks who designed the product", "製品のデザイナーを尋ねている"), ("What changed since the last successful login?", "The lead wants evidence about when the failure began", "障害が始まった時点の手がかりを求めている", "The lead asks for a new password choice", "新しいパスワード案を求めている"), ("That gives me enough to act.", "The report contains actionable detail", "報告には対応できる具体性がある", "The report contains no useful information", "報告には役立つ情報がない"), ("I'll restore your demo access now.", "The lead will fix the permission immediately", "今すぐ権限を復旧する", "The demo is cancelled permanently", "デモを永久に中止する")),
         live=("Describe a real or imaginary technical blocker with a before-and-now contrast.", "実際または架空の技術的な問題を、以前と現在の対比で説明してください。", "I can't access ___. It worked ___, but now I get ___. / If nothing is blocked: Nothing is blocked right now, but a useful report would be ___.", "問題がなければ、今は何も止まっていないと伝えてから例を作ってください。", "What detail helps you diagnose a technical problem?", "先生は技術的な問題を調べるとき、どの情報が役立ちますか？"),
         tip=("Report the symptom, not a guessed cause", "推測した原因ではなく症状を報告", "“I get a permission error” is evidence; “the server is broken” may only be a guess.", "I get a permission error は観察した事実ですが、the server is broken は推測にすぎない場合があります。", ("Observed symptom", "確認した症状", "I get a permission error.", "権限エラーが出ます。"), ("Unverified cause", "未確認の原因", "The server must be broken.", "サーバーが壊れているはずです。")),
-        transfer_title="Reporting a blocked training account", transfer_ja="研修用アカウントの障害を報告する", transfer_role="IT Support", transfer_turns=(("other", "Can you open the training materials for today's session?", "今日の研修資料を開けますか？"), ("target", 1, 2), ("other", "When did that account last work?", "そのアカウントが最後に動いたのはいつですか？"), ("target", 2, 1), ("other", "Thanks. I'll reset the login and send you a new link.", "ありがとうございます。ログインをリセットし、新しいリンクを送ります。"), ("me", "Great. I'll test the account before training starts.", "ありがとうございます。研修開始前にアカウントを確認します。")),
+        transfer_title="Reporting a blocked training account", transfer_ja="研修用アカウントの障害を報告する", transfer_role="IT support specialist", transfer_turns=(("other", "Can you open the training materials for today's session?", "今日の研修資料を開けますか？"), ("target", 1, 2), ("other", "When did that account last work?", "そのアカウントが最後に動いたのはいつですか？"), ("target", 2, 1), ("other", "Thanks. I'll reset the login and send you a new link.", "ありがとうございます。ログインをリセットし、新しいリンクを送ります。"), ("me", "Great. I'll test the account before training starts.", "ありがとうございます。研修開始前にアカウントを確認します。")),
         vocab=("demo environment|デモ環境; permission error|権限エラー", "can't access|アクセスできない|CORE-18; worked|動いた|CORE-32; now|今|CORE-14", "folder|フォルダ; account|アカウント; morning|朝; laptop|ノートPC; blocker|作業を止める問題", "restore access|アクセスを復旧する; symptom|症状"),
     ),
 }
@@ -773,6 +773,40 @@ for _number, _copy in REVIEWED_COPY_25_36.items():
         _vocab = list(_lesson["vocab"])
         _vocab[2] = "; ".join(filter(None, (_vocab[2], *_support_additions)))
         _lesson["vocab"] = tuple(_vocab)
+
+
+# Keep the practiced frame stable from row to row.  Variable event, document,
+# action, and condition words remain visible in the completion activity and are
+# supported on the translation page instead of silently becoming new targets.
+LESSONS[26]["p2"]["rows"] = rows(
+    ("It {t}may have been{/t} taken on the train, {t}but I can't be certain{/t}.", "列車内で盗まれた{t}可能性があります{/t}が、{t}確かではありません{/t}。", "It|may have been taken|on the train,|but I can't be certain."),
+    ("It {t}may have been{/t} left in the taxi, {t}but I can't be certain{/t}.", "タクシーに置き忘れた{t}可能性があります{/t}が、{t}確かではありません{/t}。", "It|may have been left|in the taxi,|but I can't be certain."),
+    ("It {t}may have been{/t} taken at the café, {t}but I can't be certain{/t}.", "カフェで盗まれた{t}可能性があります{/t}が、{t}確かではありません{/t}。", "It|may have been taken|at the café,|but I can't be certain."),
+    ("It {t}may have been{/t} lost near the station, {t}but I can't be certain{/t}.", "駅の近くで紛失した{t}可能性があります{/t}が、{t}確かではありません{/t}。", "It|may have been lost|near the station,|but I can't be certain."),
+)
+LESSONS[27]["p2"]["rows"] = rows(
+    ("{t}What{/t} alternative {t}can you offer me{/t} tonight?", "今夜、{t}どのような{/t}代案を{t}提示していただけますか{/t}？", "What alternative|can you offer me|tonight?"),
+    ("{t}What{/t} alternative {t}can you offer me{/t} now?", "今、{t}どのような{/t}代案を{t}提示していただけますか{/t}？", "What alternative|can you offer me|now?"),
+    ("{t}What{/t} accessible room {t}can you offer me{/t} tonight?", "今夜、{t}どのような{/t}バリアフリー客室を{t}提供できますか{/t}？", "What accessible room|can you offer me|tonight?"),
+    ("{t}What{/t} nearby hotel {t}can you offer me{/t} tonight?", "今夜、{t}どのような{/t}近くのホテルを{t}手配できますか{/t}？", "What nearby hotel|can you offer me|tonight?"),
+)
+LESSONS[27]["p2"].update(
+    write_frame="What ___ can you offer me ___?",
+    write_script="Use “What ___ can you offer me ___?” to ask what usable alternative is available and when you need it.",
+    write_script_ja="「What ___ can you offer me ___?」を使って、利用できる代案と必要な時間を尋ねましょう。",
+)
+LESSONS[28]["p1"]["rows"] = rows(
+    ("{t}My{/t} confirmation {t}says{/t} breakfast is included, {t}whereas your system says{/t} it isn't.", "{t}私の{/t}確認書{t}の記載は{/t}「朝食込み」{t}ですが、そちらのシステムの記載は{/t}「朝食なし」です。", "My confirmation says|breakfast is included,|whereas your system says|it isn't."),
+    ("{t}My{/t} email {t}says{/t} parking is included, {t}whereas your system says{/t} it isn't.", "{t}私の{/t}メール{t}の記載は{/t}「駐車場込み」{t}ですが、そちらのシステムの記載は{/t}「駐車料金別」です。", "My email says|parking is included,|whereas your system says|it isn't."),
+    ("{t}My{/t} voucher {t}says{/t} two nights, {t}whereas your system says{/t} one.", "{t}私の{/t}バウチャー{t}の記載は{/t}「2泊」{t}ですが、そちらのシステムの記載は{/t}「1泊」です。", "My voucher says|two nights,|whereas your system says|one."),
+    ("{t}My{/t} confirmation {t}says{/t} a double room, {t}whereas your system says{/t} a single.", "{t}私の{/t}確認書{t}の記載は{/t}「ダブルルーム」{t}ですが、そちらのシステムの記載は{/t}「シングル」です。", "My confirmation says|a double room,|whereas your system says|a single."),
+)
+LESSONS[30]["p2"]["rows"] = rows(
+    ("{t}I'd only{/t} take that route if you have some flexibility.", "ある程度予定を調整できる{t}場合にだけ{/t}、そのルートを選びます。", "I'd only take that route|if|you have some flexibility."),
+    ("{t}I'd only{/t} book that flight if you can stay an extra night.", "もう1泊できる{t}場合にだけ{/t}、その便を予約します。", "I'd only book that flight|if|you can stay an extra night."),
+    ("{t}I'd only{/t} use that airport if you have a long connection.", "乗り継ぎ時間が長い{t}場合にだけ{/t}、その空港を使います。", "I'd only use that airport|if|you have a long connection."),
+    ("{t}I'd only{/t} travel in winter if you can change your dates.", "日程を変更できる{t}場合にだけ{/t}、冬に旅行します。", "I'd only travel in winter|if|you can change your dates."),
+)
 
 # Keep every receptive check owned by the tutor's role. The former final item
 # was the learner's generic "Got it," which tested neither listening nor a

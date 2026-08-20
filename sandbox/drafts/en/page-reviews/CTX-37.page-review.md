@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-projects-deadlines/lessons/37-confirm-priorities-when-everything-seems-urgent/lesson.html`
-- SHA-256: `2aa62bf0bba0b5f50d585512a95bacdac0b1247574f2955ba3ee6f326ed51c32`
+- SHA-256: `d4faec360b80c3d7c3b7a08717f3ea337f314271a22eda1609b242dee022bb86`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why pattern 1 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 1 communicative purpose: まず、できる範囲と難しい範囲を対比して伝えます。
-- Learning target: Connect the practical scene to pattern 1 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I can finish two by Friday, but probably not all three.” Exact English purpose/action: “Use this to commit to a realistic amount without promising everything. Read the line above aloud.” Exact Japanese purpose/action: “全部を約束せず、現実的にできる量を示す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['I can', 'but probably not']; first model: “I can finish two by Friday, but probably not all three.”; job: Use “I can ___, but probably not ___” to tell your manager what you can realistically finish.
+- Visible target or prompt: Exact communicative use: “Use this to commit to a realistic amount without promising everything.”; aligned Japanese: “全部を約束せず、現実的にできる量を示す表現です。”; complete models: “I can finish two by Friday, but probably not all three.”; “I can review the report today, but probably not the slides.”; “I can call two clients, but probably not all five.”; exact highlighted spans: “I can”; “but probably not”; “終えられますが”; “おそらく無理です”; “確認できますが”; “電話できますが”
 - Learning target: Connect pattern 1’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “I can finish two by Friday, but probably not all three.”; “I can review the report today, but probably not the slides.”; “I can call two clients, but probably not all five.”; “I can fix the urgent issue, but probably not both issues.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I can finish two by Friday, but probably not all three.”; “I can review the report today, but probably not the slides.”; “I can call two clients, but probably not all five.”; “I can fix the urgent issue, but probably not both issues.”; exact highlighted spans: “I can”; “but probably not”; “終えられますが”; “おそらく無理です”; “確認できますが”; “電話できますが”; “直せますが”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify the one production-relevant form distinction.
 - Tutor action: Point out the ordering or usage contrast once, then move on.
-- Visible target or prompt: Put the limit after “but” / 限界は but のあと; State what you can do first, then the part you probably cannot finish.; formula: I can + realistic amount, but probably not + full amount
+- Visible target or prompt: Exact rule: “State what you can do first, then the part you probably cannot finish.”; aligned Japanese: “できることを先に、難しい部分をあとに示します。”
 - Learning target: Make the structural distinction needed to use pattern 1 accurately.
 - Pedagogical value: The concise rule explains a production boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence; prompt full-sentence reading after every row.
-- Visible target or prompt: Build these complete pattern-1 sentences: I can finish two by Friday, but probably not all three.; I can review the report today, but probably not the slides.; I can call two clients, but probably not all five.; I can fix the urgent issue, but probably not both issues.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “I can finish two by Friday, but probably not all three.”; “I can review the report today, but probably not the slides.”; “I can call two clients, but probably not all five.”; “I can fix the urgent issue, but probably not both issues.”
 - Learning target: Reconstruct pattern 1 from honest meaning units without splitting articles or prepositions.
 - Pedagogical value: Each row rebuilds one complete model and rehearses usable workplace word order.
 - Failure diagnoses: Grammar-only chips or chunks that cannot rebuild the source sentence would turn this into guessing.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['I can', 'but probably not', 'I can', 'but probably not', 'I can', 'but probably not', 'I can', 'but probably not']; authored pattern-1 boundaries ['I can', 'but probably not']
+- Visible target or prompt: Exact missing target answers: “I can”; “but probably not”; “I can”; “but probably not”; “I can”; “but probably not”; “I can”; “but probably not”; exact Japanese target cues: “終えられますが”; “おそらく無理です”; “確認できますが”; “電話できますが”; “直せますが”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-1 sentences from Japanese; support stage supported; hints ['金曜日までに二つ:two by Friday', '今日、報告書:report today', '顧客二社:two clients', '緊急の問題:urgent issue'].
+- Visible target or prompt: Exact complete English answers: “I can finish two by Friday, but probably not all three.”; “I can review the report today, but probably not the slides.”; “I can call two clients, but probably not all five.”; “I can fix the urgent issue, but probably not both issues.”; support stage: supported; lexical hint chips: “金曜日までに二つ:two by Friday”; “今日、報告書:report today”; “顧客二社:two clients”; “緊急の問題:urgent issue”
 - Learning target: Produce four complete pattern-1 sentences from meaning at the declared supported stage.
 - Pedagogical value: Useful lexical hints support new content while the learner still supplies the target grammar.
 - Failure diagnoses: Hints that reveal articles or target grammar would erase the intended learner decision.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “I can ___, but probably not ___” to tell your manager what you can realistically finish. Stable frame: I can ___, but probably not ___
+- Visible target or prompt: Exact learner prompt: “Use “I can ___, but probably not ___” to tell your manager what you can realistically finish.”; aligned Japanese prompt: “「I can ___, but probably not ___」を使って、現実的に終えられる範囲を上司に伝えましょう。”
 - Learning target: Transfer pattern 1 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -215,16 +215,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen for why pattern 2 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 2 communicative purpose: 次に、迷わず着手できるよう、最初の仕事を一つ確認します。
-- Learning target: Connect the practical scene to pattern 2 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Which task should I do first?” Exact English purpose/action: “Use this to ask which item should receive your attention first. Read the line above aloud.” Exact Japanese purpose/action: “どの項目を最初に優先すべきか確認する表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['Which', 'should I do first', 'should I review first', 'should I call first', 'should I fix first']; first model: “Which task should I do first?”; job: Use “Which ___ should I ___ first?” to ask your manager for one clear first priority.
+- Visible target or prompt: Exact communicative use: “Use this to ask which item should receive your attention first.”; aligned Japanese: “どの項目を最初に優先すべきか確認する表現です。”; complete models: “Which task should I do first?”; “Which file should I review first?”; “Which client should I call first?”; exact highlighted spans: “Which”; “should I”; “どの”; “最初にすべきですか”; “最初に確認すべきですか”; “最初に電話すべきですか”
 - Learning target: Connect pattern 2’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -242,7 +242,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["Which", "should I do first", "どの", "最初にすべきですか", "Which", "should I review first", "どの", "最初に確認すべきですか", "Which", "should I call first", "どの", "最初に電話すべきですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["Which", "should I", "どの", "最初にすべきですか", "Which", "should I", "どの", "最初に確認すべきですか", "Which", "should I", "どの", "最初に電話すべきですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Which task should I do first?”; “Which file should I review first?”; “Which client should I call first?”; “Which problem should I fix first?”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Which task should I do first?”; “Which file should I review first?”; “Which client should I call first?”; “Which problem should I fix first?”; exact highlighted spans: “Which”; “should I”; “どの”; “最初にすべきですか”; “最初に確認すべきですか”; “最初に電話すべきですか”; “最初に直すべきですか”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -259,7 +259,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["Which", "should I do first", "どの", "最初にすべきですか", "Which", "should I review first", "どの", "最初に確認すべきですか", "Which", "should I call first", "どの", "最初に電話すべきですか", "Which", "should I fix first", "どの", "最初に直すべきですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["Which", "should I", "どの", "最初にすべきですか", "Which", "should I", "どの", "最初に確認すべきですか", "Which", "should I", "どの", "最初に電話すべきですか", "Which", "should I", "どの", "最初に直すべきですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify the one production-relevant form distinction.
 - Tutor action: Point out the ordering or usage contrast once, then move on.
-- Visible target or prompt: Put the action before “first” / 行動は first の前; Name the item after “which” and the action before “first.”; formula: Which + item + should I + action + first?
+- Visible target or prompt: Exact rule: “Name the item after “which” and the action before “first.””; aligned Japanese: “which のあとに項目、first の前に行動を置きます。”
 - Learning target: Make the structural distinction needed to use pattern 2 accurately.
 - Pedagogical value: The concise rule explains a production boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence; prompt full-sentence reading after every row.
-- Visible target or prompt: Build these complete pattern-2 sentences: Which task should I do first?; Which file should I review first?; Which client should I call first?; Which problem should I fix first?
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “Which task should I do first?”; “Which file should I review first?”; “Which client should I call first?”; “Which problem should I fix first?”
 - Learning target: Reconstruct pattern 2 from honest meaning units without splitting articles or prepositions.
 - Pedagogical value: Each row rebuilds one complete model and rehearses usable workplace word order.
 - Failure diagnoses: Grammar-only chips or chunks that cannot rebuild the source sentence would turn this into guessing.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['Which', 'should I do first', 'Which', 'should I review first', 'Which', 'should I call first', 'Which', 'should I fix first']; authored pattern-2 boundaries ['Which', 'should I do first', 'should I review first', 'should I call first', 'should I fix first']
+- Visible target or prompt: Exact missing target answers: “Which”; “should I”; “Which”; “should I”; “Which”; “should I”; “Which”; “should I”; exact Japanese target cues: “どの”; “最初にすべきですか”; “最初に確認すべきですか”; “最初に電話すべきですか”; “最初に直すべきですか”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -310,7 +310,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["どの", "最初にすべきですか", "どの", "最初に確認すべきですか", "どの", "最初に電話すべきですか", "どの", "最初に直すべきですか"], "blankAnswers": ["Which", "should I do first", "Which", "should I review first", "Which", "should I call first", "Which", "should I fix first"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["どの", "最初にすべきですか", "どの", "最初に確認すべきですか", "どの", "最初に電話すべきですか", "どの", "最初に直すべきですか"], "blankAnswers": ["Which", "should I", "Which", "should I", "Which", "should I", "Which", "should I"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-2 sentences from Japanese; support stage supported; hints ['仕事:task', 'ファイル:file', '顧客:client', '問題:problem'].
+- Visible target or prompt: Exact complete English answers: “Which task should I do first?”; “Which file should I review first?”; “Which client should I call first?”; “Which problem should I fix first?”; support stage: supported; lexical hint chips: “仕事:task”; “ファイル:file”; “顧客:client”; “問題:problem”
 - Learning target: Produce four complete pattern-2 sentences from meaning at the declared supported stage.
 - Pedagogical value: Useful lexical hints support new content while the learner still supplies the target grammar.
 - Failure diagnoses: Hints that reveal articles or target grammar would erase the intended learner decision.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “Which ___ should I ___ first?” to ask your manager for one clear first priority. Stable frame: Which ___ should I ___ first?
+- Visible target or prompt: Exact learner prompt: “Use “Which ___ should I ___ first?” to ask your manager for one clear first priority.”; aligned Japanese prompt: “「Which ___ should I ___ first?」を使って、最初に優先する仕事を上司に確認しましょう。”
 - Learning target: Transfer pattern 2 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every colleague line aloud while the tutor plays the counterpart.
 - Tutor action: Play the manager and pause for each learner-owned line.
-- Visible target or prompt: Replay three tasks with the same deadline; learner reads Colleague lines and tutor plays Manager; both target patterns remain complete.
+- Visible target or prompt: Tutor role: Manager; exact full exchange: “I need the client report, the audit notes, and the budget update by Friday.”; “I can finish two by Friday, but probably not all three.”; “Understood. What do you need from me?”; “Which task should I do first?”; “Do the client report first. Move the audit to Monday.”; “Understood. I will update the project plan now.”; exact highlighted targets: “I can”; “but probably not”; “終えられますが”; “おそらく無理です”; “Which”; “should I”; “どの”; “最初にすべきですか”
 - Learning target: Replay the resolved six-turn exchange with both target patterns in context.
 - Pedagogical value: The roleplay integrates both moves without asking the tutor to model learner production.
 - Failure diagnoses: Unclear roles or tutor-read learner lines would remove the learner’s speaking job.
@@ -378,7 +378,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain embedded in complete natural turns.
 - Choice/distractor quality: Dialogue timing supplies the response path; no distractors are needed.
 - Component consistency: Uses the same six-turn scene and stable roles introduced earlier.
-- Extracted evidence: `{"targetHighlights": ["I can", "but probably not", "終えられますが", "おそらく無理です", "Which", "should I do first", "どの", "最初にすべきですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["I can", "but probably not", "終えられますが", "おそらく無理です", "Which", "should I", "どの", "最初にすべきですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -387,7 +387,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete colleague line aloud, including all missing target chunks.
 - Tutor action: Play the manager and type only the missing target words.
-- Visible target or prompt: Complete three tasks with the same deadline with target blanks ['I can', 'but probably not', 'Which', 'should I do first']; tutor plays Manager.
+- Visible target or prompt: Tutor role: Manager; exact completion instruction: “I’ll be the manager. Say each complete line, including the missing words.”; exact missing target answers: “I can”; “but probably not”; “Which”; “should I”
 - Learning target: Retrieve both patterns while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.
 - Failure diagnoses: Blanking full turns or non-target vocabulary would destabilise the taught boundary.
@@ -395,7 +395,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless authored inside the target chunk.
 - Choice/distractor quality: No choices are used; each blank is anchored to the previously read scene.
 - Component consistency: Uses the shared six-turn completion roleplay and phrase inputs.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I can", "but probably not", "Which", "should I do first"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I can", "but probably not", "Which", "should I"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor’s real question, then ask the visible reciprocal question.
 - Tutor action: React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.
-- Visible target or prompt: Exact reciprocal questions: “When several tasks feel urgent, how do you decide what to do first?”; “What about you—how do you decide what comes first?”
+- Visible target or prompt: Exact Tutor question: “When several tasks feel urgent, how do you decide what to do first?”; exact learner ask-back: “What about you—how do you decide what comes first?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a reciprocal conversation relevant to confirm priorities when everything seems urgent without forcing today’s pattern.
 - Pedagogical value: Both exact questions stand alone, invite personal content, and create genuine two-way talk.
 - Failure diagnoses: A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.
@@ -438,7 +438,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new workplace situation.
 - Tutor action: Play the team lead, begin with the first line, and carry the exchange to resolution.
-- Visible target or prompt: Prioritising launch work; learner is Colleague, tutor is Team Lead; first tutor line: “The client report, pricing file, and presentation slides all need reviews today.”; same two target patterns are retrieved in a new scene.
+- Visible target or prompt: Tutor role: Team Lead; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the team lead.”; exact full exchange: “The client report, pricing file, and presentation slides all need reviews today.”; “review the report today, the slides.”; “Then leave the slides until tomorrow morning.”; “file review first?”; “Review the pricing file first; the designer needs it today.”; “All right. I will send that review by noon.”; exact missing target answers: “I can”; “but probably not”; “Which”; “should I”
 - Learning target: Transfer both stable patterns to a new roleplay with a different practical context.
 - Pedagogical value: The new role and situation require meaningful transfer while preserving the two learned moves.
 - Failure diagnoses: Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.
@@ -446,7 +446,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain visible outside target blanks unless they belong to the authored phrase.
 - Choice/distractor quality: Roleplay turns guide the exchange; no unrelated distractors are introduced.
 - Component consistency: Uses the shared six-turn completion component with explicit new tutor role and same two lines.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I can", "but probably not", "Which", "should I review first"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I can", "but probably not", "Which", "should I"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

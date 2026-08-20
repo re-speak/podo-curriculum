@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-meetings-decisions/lessons/48-turn-discussion-into-a-decision/lesson.html`
-- SHA-256: `13ac03b146da0679fdb1e570eca755edf79f7e397968e1457ab12bd6abc3483b`
+- SHA-256: `a77bdbeea162952a4a3d7285bfbfd719a6b461a26b226b6b63fddfed995b7cb3`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why pattern 1 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 1 communicative purpose: まず、今日必要な判断を一文で定義します。
-- Learning target: Connect the practical scene to pattern 1 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “The decision we need today is which option to fund.” Exact English purpose/action: “Use this bounded line to stop a broad discussion and name the exact decision. Read the line above aloud.” Exact Japanese purpose/action: “広がった議論を止め、必要な判断を明確にする定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['The decision we need today is which option to fund', 'The decision we need today is which pilot to run', 'The decision we need today is which date to choose', 'The decision we need today is which supplier to use']; first model: “The decision we need today is which option to fund.”; job: Use “The decision we need today is ___” to define the one choice the group must make.
+- Visible target or prompt: Exact communicative use: “Use this bounded line to stop a broad discussion and name the exact decision.”; aligned Japanese: “広がった議論を止め、必要な判断を明確にする定型表現です。”; complete models: “The decision we need today is which option to fund.”; “The decision we need today is which pilot to run.”; “The decision we need today is which date to choose.”; exact highlighted spans: “The decision we need today”; “is”; “今日必要な判断は、”; “です”
 - Learning target: Connect pattern 1’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -106,7 +106,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["The decision we need today is which option to fund", "今日必要な判断は、どの案に資金を出すかです", "The decision we need today is which pilot to run", "今日必要な判断は、どの試験導入を行うかです", "The decision we need today is which date to choose", "今日必要な判断は、どの日程を選ぶかです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["The decision we need today", "is", "今日必要な判断は、", "です", "The decision we need today", "is", "今日必要な判断は、", "です", "The decision we need today", "is", "今日必要な判断は、", "です"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “The decision we need today is which option to fund.”; “The decision we need today is which pilot to run.”; “The decision we need today is which date to choose.”; “The decision we need today is which supplier to use.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “The decision we need today is which option to fund.”; “The decision we need today is which pilot to run.”; “The decision we need today is which date to choose.”; “The decision we need today is which supplier to use.”; exact highlighted spans: “The decision we need today”; “is”; “今日必要な判断は、”; “です”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -123,7 +123,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["The decision we need today is which option to fund", "今日必要な判断は、どの案に資金を出すかです", "The decision we need today is which pilot to run", "今日必要な判断は、どの試験導入を行うかです", "The decision we need today is which date to choose", "今日必要な判断は、どの日程を選ぶかです", "The decision we need today is which supplier to use", "今日必要な判断は、どの仕入先を使うかです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["The decision we need today", "is", "今日必要な判断は、", "です", "The decision we need today", "is", "今日必要な判断は、", "です", "The decision we need today", "is", "今日必要な判断は、", "です", "The decision we need today", "is", "今日必要な判断は、", "です"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['The decision we need today is which option to fund', 'The decision we need today is which pilot to run', 'The decision we need today is which date to choose', 'The decision we need today is which supplier to use']; authored pattern-1 boundaries ['The decision we need today is which option to fund', 'The decision we need today is which pilot to run', 'The decision we need today is which date to choose', 'The decision we need today is which supplier to use']
+- Visible target or prompt: Exact missing target answers: “The decision we need today”; “is”; “The decision we need today”; “is”; “The decision we need today”; “is”; “The decision we need today”; “is”; exact Japanese target cues: “今日必要な判断は、”; “です”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -140,7 +140,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["今日必要な判断は、どの案に資金を出すかです", "今日必要な判断は、どの試験導入を行うかです", "今日必要な判断は、どの日程を選ぶかです", "今日必要な判断は、どの仕入先を使うかです"], "blankAnswers": ["The decision we need today is which option to fund", "The decision we need today is which pilot to run", "The decision we need today is which date to choose", "The decision we need today is which supplier to use"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["今日必要な判断は、", "です", "今日必要な判断は、", "です", "今日必要な判断は、", "です", "今日必要な判断は、", "です"], "blankAnswers": ["The decision we need today", "is", "The decision we need today", "is", "The decision we need today", "is", "The decision we need today", "is"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-1 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “The decision we need today is which option to fund.”; “The decision we need today is which pilot to run.”; “The decision we need today is which date to choose.”; “The decision we need today is which supplier to use.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-1 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “The decision we need today is ___” to define the one choice the group must make. Stable frame: The decision we need today is ___
+- Visible target or prompt: Exact learner prompt: “Use “The decision we need today is ___” to define the one choice the group must make.”; aligned Japanese prompt: “「The decision we need today is ___」を使って、グループが決める一つの選択を明確にしましょう。”
 - Learning target: Transfer pattern 1 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why pattern 2 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 2 communicative purpose: 情報が足りなければ、判断できる比較方法を提案します。
-- Learning target: Connect the practical scene to pattern 2 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Would it help if we compared them against the same three criteria?” Exact English purpose/action: “Use this bounded question to propose a practical way to make the options comparable. Read the line above aloud.” Exact Japanese purpose/action: “選択肢を比較可能にする実務的な方法を提案する定型質問です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['Would it help if we compared them against the same three criteria', 'Would it help if we compared them against the same budget', 'Would it help if we compared them against the same timeline', 'Would it help if we compared them against the same risks']; first model: “Would it help if we compared them against the same three criteria?”; job: Use “Would it help if we compared them against ___?” to propose one fair basis for comparison.
+- Visible target or prompt: Exact communicative use: “Use this bounded question to propose a practical way to make the options comparable.”; aligned Japanese: “選択肢を比較可能にする実務的な方法を提案する定型質問です。”; complete models: “Would it help if we compared them against the same three criteria?”; “Would it help if we compared them against the same budget?”; “Would it help if we compared them against the same timeline?”; exact highlighted spans: “Would it help if we compared them against”; “比較すれば、判断しやすくなりますか”
 - Learning target: Connect pattern 2’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -208,7 +208,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["Would it help if we compared them against the same three criteria", "同じ三つの基準で比較すれば、判断しやすくなりますか", "Would it help if we compared them against the same budget", "同じ予算で比較すれば、判断しやすくなりますか", "Would it help if we compared them against the same timeline", "同じ日程で比較すれば、判断しやすくなりますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["Would it help if we compared them against", "比較すれば、判断しやすくなりますか", "Would it help if we compared them against", "比較すれば、判断しやすくなりますか", "Would it help if we compared them against", "比較すれば、判断しやすくなりますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Would it help if we compared them against the same three criteria?”; “Would it help if we compared them against the same budget?”; “Would it help if we compared them against the same timeline?”; “Would it help if we compared them against the same risks?”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Would it help if we compared them against the same three criteria?”; “Would it help if we compared them against the same budget?”; “Would it help if we compared them against the same timeline?”; “Would it help if we compared them against the same risks?”; exact highlighted spans: “Would it help if we compared them against”; “比較すれば、判断しやすくなりますか”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -225,7 +225,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["Would it help if we compared them against the same three criteria", "同じ三つの基準で比較すれば、判断しやすくなりますか", "Would it help if we compared them against the same budget", "同じ予算で比較すれば、判断しやすくなりますか", "Would it help if we compared them against the same timeline", "同じ日程で比較すれば、判断しやすくなりますか", "Would it help if we compared them against the same risks", "同じリスク項目で比較すれば、判断しやすくなりますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["Would it help if we compared them against", "比較すれば、判断しやすくなりますか", "Would it help if we compared them against", "比較すれば、判断しやすくなりますか", "Would it help if we compared them against", "比較すれば、判断しやすくなりますか", "Would it help if we compared them against", "比較すれば、判断しやすくなりますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['Would it help if we compared them against the same three criteria', 'Would it help if we compared them against the same budget', 'Would it help if we compared them against the same timeline', 'Would it help if we compared them against the same risks']; authored pattern-2 boundaries ['Would it help if we compared them against the same three criteria', 'Would it help if we compared them against the same budget', 'Would it help if we compared them against the same timeline', 'Would it help if we compared them against the same risks']
+- Visible target or prompt: Exact missing target answers: “Would it help if we compared them against”; “Would it help if we compared them against”; “Would it help if we compared them against”; “Would it help if we compared them against”; exact Japanese target cues: “比較すれば、判断しやすくなりますか”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -242,7 +242,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["同じ三つの基準で比較すれば、判断しやすくなりますか", "同じ予算で比較すれば、判断しやすくなりますか", "同じ日程で比較すれば、判断しやすくなりますか", "同じリスク項目で比較すれば、判断しやすくなりますか"], "blankAnswers": ["Would it help if we compared them against the same three criteria", "Would it help if we compared them against the same budget", "Would it help if we compared them against the same timeline", "Would it help if we compared them against the same risks"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["比較すれば、判断しやすくなりますか", "比較すれば、判断しやすくなりますか", "比較すれば、判断しやすくなりますか", "比較すれば、判断しやすくなりますか"], "blankAnswers": ["Would it help if we compared them against", "Would it help if we compared them against", "Would it help if we compared them against", "Would it help if we compared them against"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-2 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “Would it help if we compared them against the same three criteria?”; “Would it help if we compared them against the same budget?”; “Would it help if we compared them against the same timeline?”; “Would it help if we compared them against the same risks?”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-2 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “Would it help if we compared them against ___?” to propose one fair basis for comparison. Stable frame: Would it help if we compared them against ___?
+- Visible target or prompt: Exact learner prompt: “Use “Would it help if we compared them against ___?” to propose one fair basis for comparison.”; aligned Japanese prompt: “「Would it help if we compared them against ___?」を使って、公平に比べる基準を一つ提案しましょう。”
 - Learning target: Transfer pattern 2 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every colleague line aloud while the tutor plays the counterpart.
 - Tutor action: Play the meeting chair and pause for each learner-owned line.
-- Visible target or prompt: Replay a funding discussion without enough comparable evidence; learner reads Colleague lines and tutor plays Meeting Chair; both target patterns remain complete.
+- Visible target or prompt: Tutor role: Meeting Chair; exact full exchange: “We've discussed options A, B, and C for forty minutes.”; “The decision we need today is which option to fund.”; “I don't think we have enough information.”; “Would it help if we compared them against the same three criteria?”; “Yes. Then we can decide.”; “I will put cost, timing, and risk into one table.”; exact highlighted targets: “The decision we need today”; “is”; “今日必要な判断は、”; “です”; “Would it help if we compared them against”; “比較すれば、判断しやすくなりますか”
 - Learning target: Replay the resolved six-turn exchange with both target patterns in context.
 - Pedagogical value: The roleplay integrates both moves without asking the tutor to model learner production.
 - Failure diagnoses: Unclear roles or tutor-read learner lines would remove the learner’s speaking job.
@@ -310,7 +310,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain embedded in complete natural turns.
 - Choice/distractor quality: Dialogue timing supplies the response path; no distractors are needed.
 - Component consistency: Uses the same six-turn scene and stable roles introduced earlier.
-- Extracted evidence: `{"targetHighlights": ["The decision we need today is which option to fund", "今日必要な判断は、どの案に資金を出すかです", "Would it help if we compared them against the same three criteria", "同じ三つの基準で比較すれば、判断しやすくなりますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["The decision we need today", "is", "今日必要な判断は、", "です", "Would it help if we compared them against", "比較すれば、判断しやすくなりますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete colleague line aloud, including all missing target chunks.
 - Tutor action: Play the meeting chair and type only the missing target words.
-- Visible target or prompt: Complete a funding discussion without enough comparable evidence with target blanks ['The decision we need today is which option to fund', 'Would it help if we compared them against the same three criteria']; tutor plays Meeting Chair.
+- Visible target or prompt: Tutor role: Meeting Chair; exact completion instruction: “I’ll be the meeting chair. Say each complete line, including the missing words.”; exact missing target answers: “The decision we need today”; “is”; “Would it help if we compared them against”
 - Learning target: Retrieve both patterns while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.
 - Failure diagnoses: Blanking full turns or non-target vocabulary would destabilise the taught boundary.
@@ -327,7 +327,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless authored inside the target chunk.
 - Choice/distractor quality: No choices are used; each blank is anchored to the previously read scene.
 - Component consistency: Uses the shared six-turn completion roleplay and phrase inputs.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The decision we need today is which option to fund", "Would it help if we compared them against the same three criteria"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The decision we need today", "is", "Would it help if we compared them against"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor’s real question, then ask the visible reciprocal question.
 - Tutor action: React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.
-- Visible target or prompt: Exact reciprocal questions: “When a group cannot decide, what usually helps most: more information, a deadline, or a vote?”; “What about you—which one helps most?”
+- Visible target or prompt: Exact Tutor question: “When a group cannot decide, what usually helps most: more information, a deadline, or a vote?”; exact learner ask-back: “What about you—which one helps most?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a reciprocal conversation relevant to turn discussion into a decision without forcing today’s pattern.
 - Pedagogical value: Both exact questions stand alone, invite personal content, and create genuine two-way talk.
 - Failure diagnoses: A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new workplace situation.
 - Tutor action: Play the procurement chair, begin with the first line, and carry the exchange to resolution.
-- Visible target or prompt: Choosing a supplier; learner is Colleague, tutor is Procurement Chair; first tutor line: “The three suppliers have different prices, dates, and service levels.”; same two target patterns are retrieved in a new scene.
+- Visible target or prompt: Tutor role: Procurement Chair; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the procurement chair.”; exact full exchange: “The three suppliers have different prices, dates, and service levels.”; “which supplier to use.”; “We need a fair way to compare them first.”; “the same three criteria?”; “Yes. Use cost, delivery, and support as the criteria.”; “I will complete the comparison before tomorrow's decision meeting.”; exact missing target answers: “The decision we need today”; “is”; “Would it help if we compared them against”
 - Learning target: Transfer both stable patterns to a new roleplay with a different practical context.
 - Pedagogical value: The new role and situation require meaningful transfer while preserving the two learned moves.
 - Failure diagnoses: Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.
@@ -378,7 +378,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain visible outside target blanks unless they belong to the authored phrase.
 - Choice/distractor quality: Roleplay turns guide the exchange; no unrelated distractors are introduced.
 - Component consistency: Uses the shared six-turn completion component with explicit new tutor role and same two lines.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The decision we need today is which supplier to use", "Would it help if we compared them against the same three criteria"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The decision we need today", "is", "Would it help if we compared them against"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

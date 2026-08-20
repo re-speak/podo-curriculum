@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/52-explain-a-trade-off/lesson.html`
-- SHA-256: `117a92ae670686ec00f721c8380e31f8d1034fa54dbb0a73e2a0b5e299cf1b4c`
+- SHA-256: `a143ed5ec6bffa2ee80c73667dc9cee62bec86eea5cd395c1176a1682c7750a1`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: The faster we move, the less time we'll have for testing.; communicative bridge: まず、一方を増やすともう一方が減る関係を示します。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “The faster we move, the less time we'll have for testing.” Exact English purpose/action: “Use this fixed frame to show how gaining speed reduces another resource. Read the line above aloud.” Exact Japanese purpose/action: “速度を上げると別の余裕が減る関係を示す定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: The faster we move, the less time we'll have for testing.; use: Use this fixed frame to show how gaining speed reduces another resource.
+- Visible target or prompt: Exact communicative use: “Use this fixed frame to show how gaining speed reduces another resource.”; aligned Japanese: “速度を上げると別の余裕が減る関係を示す定型表現です。”; complete models: “The faster we move, the less time we'll have for testing.”; “The faster we move, the less time we'll have for comparison.”; “The faster we move, the less time we'll have for training.”; exact highlighted spans: “The faster we move,”; “the less time we'll have for”; “早く進むほど、”; “に使える時間は少なくなります”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -106,7 +106,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: The examples vary the business content instead of presenting distractors.
 - Component consistency: Uses the shared pattern teaching component with one hero and supporting examples.
-- Extracted evidence: `{"targetHighlights": ["The faster we move", "the less time we'll have for", "早く進むほど", "少なくなります", "The faster we decide", "the less evidence we'll have for", "早く決めるほど", "少なくなります", "The more we customise", "the less time we'll have for", "カスタマイズを増やすほど", "少なくなります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります", "The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります", "The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: The faster we move, the less time we'll have for testing.; The faster we decide, the less evidence we'll have for comparison.; The more we customise, the less time we'll have for training.; The longer we wait, the less room we'll have for negotiation.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “The faster we move, the less time we'll have for testing.”; “The faster we move, the less time we'll have for comparison.”; “The faster we move, the less time we'll have for training.”; “The faster we move, the less time we'll have for negotiation.”; exact highlighted spans: “The faster we move,”; “the less time we'll have for”; “早く進むほど、”; “に使える時間は少なくなります”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -123,7 +123,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: Four varied models provide practice without a redundant choice task.
 - Component consistency: Uses the shared four-line read-aloud list.
-- Extracted evidence: `{"targetHighlights": ["The faster we move", "the less time we'll have for", "早く進むほど", "少なくなります", "The faster we decide", "the less evidence we'll have for", "早く決めるほど", "少なくなります", "The more we customise", "the less time we'll have for", "カスタマイズを増やすほど", "少なくなります", "The longer we wait", "the less room we'll have for", "長く待つほど", "少なくなります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります", "The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります", "The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります", "The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: The faster we move; the less time we'll have for; The faster we decide; the less evidence we'll have for; The more we customise; the less time we'll have for; The longer we wait; the less room we'll have for
+- Visible target or prompt: Exact missing target answers: “The faster we move,”; “the less time we'll have for”; “The faster we move,”; “the less time we'll have for”; “The faster we move,”; “the less time we'll have for”; “The faster we move,”; “the less time we'll have for”; exact Japanese target cues: “早く進むほど、”; “に使える時間は少なくなります”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -140,7 +140,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain visible outside target blanks unless they are inseparable from the taught target itself.
 - Choice/distractor quality: No distractors are needed; each blank maps one-to-one to a highlighted target cue.
 - Component consistency: Uses the shared target-only slot-input component across four rows.
-- Extracted evidence: `{"targetHighlights": ["早く進むほど", "少なくなります", "早く決めるほど", "少なくなります", "カスタマイズを増やすほど", "少なくなります", "長く待つほど", "少なくなります"], "blankAnswers": ["The faster we move", "the less time we'll have for", "The faster we decide", "the less evidence we'll have for", "The more we customise", "the less time we'll have for", "The longer we wait", "the less room we'll have for"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["早く進むほど、", "に使える時間は少なくなります", "早く進むほど、", "に使える時間は少なくなります", "早く進むほど、", "に使える時間は少なくなります", "早く進むほど、", "に使える時間は少なくなります"], "blankAnswers": ["The faster we move,", "the less time we'll have for", "The faster we move,", "the less time we'll have for", "The faster we move,", "the less time we'll have for", "The faster we move,", "the less time we'll have for"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: The ___, the less ___; support stage supported; テスト:testing; 比較:comparison; 研修:training; 交渉:negotiation
+- Visible target or prompt: Exact complete English answers: “The faster we move, the less time we'll have for testing.”; “The faster we move, the less time we'll have for comparison.”; “The faster we move, the less time we'll have for training.”; “The faster we move, the less time we'll have for negotiation.”; support stage: supported; lexical hint chips: “テスト:testing”; “比較:comparison”; “研修:training”; “交渉:negotiation”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -157,7 +157,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain learner decisions and are never supplied as isolated hint chips.
 - Choice/distractor quality: Open production avoids an obvious two-choice answer and requires a complete sentence.
 - Component consistency: Uses the shared target-v2 translation component with one declared support stage.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The faster we move, the less time we'll have for testing.", "The faster we decide, the less evidence we'll have for comparison.", "The more we customise, the less time we'll have for training.", "The longer we wait, the less room we'll have for negotiation."], "hintChips": ["テスト:testing", "比較:comparison", "研修:training", "交渉:negotiation"], "supportStage": "supported", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The faster we move, the less time we'll have for testing.", "The faster we move, the less time we'll have for comparison.", "The faster we move, the less time we'll have for training.", "The faster we move, the less time we'll have for negotiation."], "hintChips": ["テスト:testing", "比較:comparison", "研修:training", "交渉:negotiation"], "supportStage": "supported", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-translate; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “The ___, the less ___” to explain what is lost when one priority increases.” Frame: The ___, the less ___
+- Visible target or prompt: Exact learner prompt: “Use “The faster we move, the less time we'll have for ___” to explain what an earlier decision would leave less time for.”; aligned Japanese prompt: “「The faster we move, the less time we'll have for ___」を使って、決定を早めると何に使える時間が減るか説明しましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “The ___, the less ___” to explain what is lost when one priority increases.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -174,23 +174,23 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The learner chooses any articles required by their own content; no article answer is prefilled.
 - Choice/distractor quality: Open production is appropriate because the learner creates one relevant sentence.
 - Component consistency: Uses the shared Student's sentence and Correction capture fields.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Use “The ___, the less ___” to explain what is lost when one priority increases."]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Use “The faster we move, the less time we'll have for ___” to explain what an earlier decision would leave less time for."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-write; 360px and 480px visual checks remain assigned to the root audit lane.
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: The question is whether cost or reliability matters more.; communicative bridge: 次に、判断の中心となる二つの基準を示します。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “The question is whether cost or reliability matters more.” Exact English purpose/action: “Use this to focus the decision on which of two priorities matters more. Read the line above aloud.” Exact Japanese purpose/action: “二つの優先事項のどちらがより重要かに判断を集中させる表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: The question is whether cost or reliability matters more.; use: Use this to focus the decision on which of two priorities matters more.
+- Visible target or prompt: Exact communicative use: “Use this to focus the decision on which of two priorities matters more.”; aligned Japanese: “二つの優先事項のどちらがより重要かに判断を集中させる表現です。”; complete models: “The question is whether cost or reliability matters more.”; “The question is whether speed or accuracy matters more.”; “The question is whether reach or control matters more.”; exact highlighted spans: “The question is whether”; “or”; “matters more”; “問題は”; “と”; “より重要かです”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: The question is whether cost or reliability matters more.; The question is whether speed or accuracy matters more.; The question is whether reach or control matters more.; The question is whether flexibility or certainty matters more.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “The question is whether cost or reliability matters more.”; “The question is whether speed or accuracy matters more.”; “The question is whether reach or control matters more.”; “The question is whether flexibility or certainty matters more.”; exact highlighted spans: “The question is whether”; “or”; “matters more”; “問題は”; “と”; “より重要かです”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Put the two competing priorities around or: Name one priority before ‘or,’ the other after it, and end with the comparison. Formula: The question is whether + A + or + B + matters more
+- Visible target or prompt: Exact rule: “Name one priority before ‘or,’ the other after it, and end with the comparison.”; aligned Japanese: “or の前後に一つずつ基準を置き、比較で終えます。”
 - Learning target: Notice the stable form of pattern 2 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 2 chunk sets: The question is|whether cost|or reliability|matters more.; The question is|whether speed|or accuracy|matters more.; The question is|whether reach|or control|matters more.; The question is|whether flexibility|or certainty|matters more.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “The question is whether cost or reliability matters more.”; “The question is whether speed or accuracy matters more.”; “The question is whether reach or control matters more.”; “The question is whether flexibility or certainty matters more.”
 - Learning target: Retrieve the full ordering of pattern 2 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: The question is whether; or; matters more; The question is whether; or; matters more; The question is whether; or; matters more; The question is whether; or; matters more
+- Visible target or prompt: Exact missing target answers: “The question is whether”; “or”; “matters more”; “The question is whether”; “or”; “matters more”; “The question is whether”; “or”; “matters more”; “The question is whether”; “or”; “matters more”; exact Japanese target cues: “問題は”; “と”; “より重要かです”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: The question is whether ___ or ___ matters more; support stage supported; コスト:cost; 信頼性:reliability; 速さ:speed; 正確さ:accuracy; 届く範囲:reach; 管理のしやすさ:control; 柔軟性:flexibility; 確実性:certainty
+- Visible target or prompt: Exact complete English answers: “The question is whether cost or reliability matters more.”; “The question is whether speed or accuracy matters more.”; “The question is whether reach or control matters more.”; “The question is whether flexibility or certainty matters more.”; support stage: supported; lexical hint chips: “コスト:cost”; “信頼性:reliability”; “速さ:speed”; “正確さ:accuracy”; “届く範囲:reach”; “管理のしやすさ:control”; “柔軟性:flexibility”; “確実性:certainty”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “The question is whether ___ or ___ matters more” to name the two priorities the decision must balance.” Frame: The question is whether ___ or ___ matters more
+- Visible target or prompt: Exact learner prompt: “Use “The question is whether ___ or ___ matters more” to name the two priorities the decision must balance.”; aligned Japanese prompt: “「The question is whether ___ or ___ matters more」を使って、判断で比べる二つの優先事項を示しましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “The question is whether ___ or ___ matters more” to name the two priorities the decision must balance.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Product Owner.
 - Tutor action: Read only the Product Owner turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Product Owner; learner lines include “The faster we move, the less time we'll have for testing.” and “The question is whether cost or reliability matters more.”.
+- Visible target or prompt: Tutor role: Product Owner; exact full exchange: “Could we launch two weeks earlier?”; “The faster we move, the less time we'll have for testing.”; “Then what should guide the decision?”; “The question is whether cost or reliability matters more.”; “Reliability matters more for this release.”; “Then let's keep the current date and protect the test period.”; exact highlighted targets: “The faster we move,”; “the less time we'll have for”; “早く進むほど、”; “に使える時間は少なくなります”; “The question is whether”; “or”; “matters more”; “問題は”; “と”; “より重要かです”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -344,7 +344,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: Turn-taking supplies the interaction; no answer choices are needed.
 - Component consistency: Matches the opening scene's six turns and stable roles exactly.
-- Extracted evidence: `{"targetHighlights": ["The faster we move", "the less time we'll have for", "早く進むほど", "少なくなります", "The question is whether", "or", "matters more", "問題は", "と", "より重要かです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["The faster we move,", "the less time we'll have for", "早く進むほど、", "に使える時間は少なくなります", "The question is whether", "or", "matters more", "問題は", "と", "より重要かです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Product Owner; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: The faster we move, the less time we'll have for, The question is whether, or, matters more
+- Visible target or prompt: Tutor role: Product Owner; exact completion instruction: “I’ll be the product owner. Say each complete line, including the missing words.”; exact missing target answers: “The faster we move,”; “the less time we'll have for”; “The question is whether”; “or”; “matters more”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -361,7 +361,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles outside the target remain printed and are not converted into surprise blanks.
 - Choice/distractor quality: No distractors are needed; each blank corresponds to a known highlighted target.
 - Component consistency: Uses the shared six-turn completion dialogue with target-only textareas.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The faster we move", "the less time we'll have for", "The question is whether", "or", "matters more"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The faster we move,", "the less time we'll have for", "The question is whether", "or", "matters more"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “At work, which trade-off is harder for you: speed versus quality, or cost versus flexibility?” Exact learner ask-back: “What about you—which trade-off is harder?”
+- Visible target or prompt: Exact Tutor question: “At work, which trade-off is harder for you: speed versus quality, or cost versus flexibility?”; exact learner ask-back: “What about you—which trade-off is harder?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about explain a trade-off without oversimplifying it without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Implementation Lead, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Balancing customisation and training; tutor is Implementation Lead (導入責任者); first line: “Can we add three more custom workflows?”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Implementation Lead; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the implementation lead.”; exact full exchange: “Can we add three more custom workflows?”; “training.”; “Which priority should decide this?”; “speed accuracy .”; “Accuracy matters more than speed for the first month.”; “Then we'll keep the training time and postpone two workflows.”; exact missing target answers: “The faster we move,”; “the less time we'll have for”; “The question is whether”; “or”; “matters more”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.
@@ -412,7 +412,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: Turn-taking and target retrieval provide the challenge; no extra choices are required.
 - Component consistency: Uses the shared six-turn transfer role-play with explicit aligned roles.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The more we customise", "the less time we'll have for", "The question is whether", "or", "matters more"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The faster we move,", "the less time we'll have for", "The question is whether", "or", "matters more"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

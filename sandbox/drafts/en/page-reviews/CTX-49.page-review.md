@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/49-reframe-a-problem-more-accurately/lesson.html`
-- SHA-256: `aee96332fe63bc70499cee92701a2a16cf294f41820378fb5a89beb33daac55a`
+- SHA-256: `6a723dcdc509508d620ea669a6c1595d2beee646aa9bbbcb29ed60620414c80a`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: It's not so much a failure as a delay.; communicative bridge: まず、二つの捉え方を対比して、より正確なほうを示します。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “It's not so much a failure as a delay.” Exact English purpose/action: “Use this contrast to replace an overstated label with a more accurate one. Read the line above aloud.” Exact Japanese purpose/action: “大げさな表現を、より正確な表現に置き換える対比です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: It's not so much a failure as a delay.; use: Use this contrast to replace an overstated label with a more accurate one.
+- Visible target or prompt: Exact communicative use: “Use this contrast to replace an overstated label with a more accurate one.”; aligned Japanese: “大げさな表現を、より正確な表現に置き換える対比です。”; complete models: “It's not so much a failure as a delay.”; “It's not so much resistance as uncertainty.”; “It's not so much a cost problem as a timing problem.”; exact highlighted spans: “It's not so much”; “as”; “というより”; “むしろ”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: It's not so much a failure as a delay.; It's not so much resistance as uncertainty.; It's not so much a cost problem as a timing problem.; It's not so much a refusal as a request for evidence.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “It's not so much a failure as a delay.”; “It's not so much resistance as uncertainty.”; “It's not so much a cost problem as a timing problem.”; “It's not so much a refusal as a request for evidence.”; exact highlighted spans: “It's not so much”; “as”; “というより”; “むしろ”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Put the rejected label before “as”: Name the less accurate label first and the better description last. Formula: not so much + first label + as + better label
+- Visible target or prompt: Exact rule: “Name the less accurate label first and the better description last.”; aligned Japanese: “正確さの低い表現を先に、よりよい説明を最後に置きます。”
 - Learning target: Notice the stable form of pattern 1 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 1 chunk sets: It's not so much|a failure|as a delay.; It's not so much|resistance|as uncertainty.; It's not so much|a cost problem|as a timing problem.; It's not so much|a refusal|as a request for evidence.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “It's not so much a failure as a delay.”; “It's not so much resistance as uncertainty.”; “It's not so much a cost problem as a timing problem.”; “It's not so much a refusal as a request for evidence.”
 - Learning target: Retrieve the full ordering of pattern 1 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: It's not so much; as; It's not so much; as; It's not so much; as; It's not so much; as
+- Visible target or prompt: Exact missing target answers: “It's not so much”; “as”; “It's not so much”; “as”; “It's not so much”; “as”; “It's not so much”; “as”; exact Japanese target cues: “というより”; “むしろ”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: It's not so much ___ as ___; support stage supported; 失敗:failure; 遅れ:delay; 反対:resistance; 不確かさ:uncertainty; 費用の問題:cost problem; 時期の問題:timing problem; 拒否:refusal; 根拠を求めている:request for evidence
+- Visible target or prompt: Exact complete English answers: “It's not so much a failure as a delay.”; “It's not so much resistance as uncertainty.”; “It's not so much a cost problem as a timing problem.”; “It's not so much a refusal as a request for evidence.”; support stage: supported; lexical hint chips: “失敗:failure”; “遅れ:delay”; “反対:resistance”; “不確かさ:uncertainty”; “費用の問題:cost problem”; “時期の問題:timing problem”; “拒否:refusal”; “根拠を求めている:request for evidence”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “It's not so much ___ as ___” to replace an exaggerated label with a more accurate description.” Frame: It's not so much ___ as ___
+- Visible target or prompt: Exact learner prompt: “Use “It's not so much ___ as ___” to replace an exaggerated label with a more accurate description.”; aligned Japanese prompt: “「It's not so much ___ as ___」を使って、大げさな表現をより正確な説明に置き換えましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “It's not so much ___ as ___” to replace an exaggerated label with a more accurate description.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -215,16 +215,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: I'd call it a setback rather than a fundamental problem.; communicative bridge: 次に、自分ならどう呼ぶかを示し、極端な表現を避けます。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I'd call it a setback rather than a fundamental problem.” Exact English purpose/action: “Use this to offer your own more measured label for the situation. Read the line above aloud.” Exact Japanese purpose/action: “状況をより穏当で正確な言葉で呼び直す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: I'd call it a setback rather than a fundamental problem.; use: Use this to offer your own more measured label for the situation.
+- Visible target or prompt: Exact communicative use: “Use this to offer your own more measured label for the situation.”; aligned Japanese: “状況をより穏当で正確な言葉で呼び直す表現です。”; complete models: “I'd call it a setback rather than a fundamental problem.”; “I'd call it a warning rather than a crisis.”; “I'd call it a revision rather than a reversal.”; exact highlighted spans: “I'd call it”; “rather than”; “こう呼びます”; “ではなく”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: I'd call it a setback rather than a fundamental problem.; I'd call it a warning rather than a crisis.; I'd call it a revision rather than a reversal.; I'd call it a constraint rather than a deal-breaker.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I'd call it a setback rather than a fundamental problem.”; “I'd call it a warning rather than a crisis.”; “I'd call it a revision rather than a reversal.”; “I'd call it a constraint rather than a deal-breaker.”; exact highlighted spans: “I'd call it”; “rather than”; “こう呼びます”; “ではなく”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Name your label before the rejected one: Lead with the accurate description, then use “rather than” for the label you reject. Formula: I'd call it + accurate label + rather than + rejected label
+- Visible target or prompt: Exact rule: “Lead with the accurate description, then use “rather than” for the label you reject.”; aligned Japanese: “正確な表現を先に述べ、退ける表現は rather than のあとに置きます。”
 - Learning target: Notice the stable form of pattern 2 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 2 chunk sets: I'd call it|a setback|rather than|a fundamental problem.; I'd call it|a warning|rather than|a crisis.; I'd call it|a revision|rather than|a reversal.; I'd call it|a constraint|rather than|a deal-breaker.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “I'd call it a setback rather than a fundamental problem.”; “I'd call it a warning rather than a crisis.”; “I'd call it a revision rather than a reversal.”; “I'd call it a constraint rather than a deal-breaker.”
 - Learning target: Retrieve the full ordering of pattern 2 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: I'd call it; rather than; I'd call it; rather than; I'd call it; rather than; I'd call it; rather than
+- Visible target or prompt: Exact missing target answers: “I'd call it”; “rather than”; “I'd call it”; “rather than”; “I'd call it”; “rather than”; “I'd call it”; “rather than”; exact Japanese target cues: “こう呼びます”; “ではなく”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: I'd call it ___ rather than ___; support stage supported; 後退:setback; 根本的な問題:fundamental problem; 警告:warning; 危機:crisis; 修正:revision; 方針転換:reversal; 制約:constraint; 決裂要因:deal-breaker
+- Visible target or prompt: Exact complete English answers: “I'd call it a setback rather than a fundamental problem.”; “I'd call it a warning rather than a crisis.”; “I'd call it a revision rather than a reversal.”; “I'd call it a constraint rather than a deal-breaker.”; support stage: supported; lexical hint chips: “後退:setback”; “根本的な問題:fundamental problem”; “警告:warning”; “危機:crisis”; “修正:revision”; “方針転換:reversal”; “制約:constraint”; “決裂要因:deal-breaker”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “I'd call it ___ rather than ___” to give a measured label without dismissing the impact.” Frame: I'd call it ___ rather than ___
+- Visible target or prompt: Exact learner prompt: “Use “I'd call it ___ rather than ___” to give a measured label without dismissing the impact.”; aligned Japanese prompt: “「I'd call it ___ rather than ___」を使って、影響を軽視せずに穏当な表現で捉え直しましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “I'd call it ___ rather than ___” to give a measured label without dismissing the impact.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Partner.
 - Tutor action: Read only the Partner turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Partner; learner lines include “It's not so much a failure as a delay.” and “I'd call it a setback rather than a fundamental problem.”.
+- Visible target or prompt: Tutor role: Partner; exact full exchange: “This three-week delay means the project has failed.”; “It's not so much a failure as a delay.”; “The delay still has a cost.”; “I'd call it a setback rather than a fundamental problem.”; “That's fair, provided we recover quickly.”; “Agreed. Let's review the recovery plan now.”; exact highlighted targets: “It's not so much”; “as”; “というより”; “むしろ”; “I'd call it”; “rather than”; “こう呼びます”; “ではなく”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -387,7 +387,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Partner; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: It's not so much, as, I'd call it, rather than
+- Visible target or prompt: Tutor role: Partner; exact completion instruction: “I’ll be the partner. Say each complete line, including the missing words.”; exact missing target answers: “It's not so much”; “as”; “I'd call it”; “rather than”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “Do people at work sometimes describe small problems too dramatically? Why or why not?” Exact learner ask-back: “What about you—do you think that happens often?”
+- Visible target or prompt: Exact Tutor question: “Do people at work sometimes describe small problems too dramatically? Why or why not?”; exact learner ask-back: “What about you—do you think that happens often?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about reframe a problem more accurately without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -438,7 +438,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Sponsor, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Reframing a difficult pilot result; tutor is Sponsor (スポンサー); first line: “The pilot customers refused to commit and asked for more evidence. That proves the product is a failure.”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Sponsor; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the sponsor.”; exact full exchange: “The pilot customers refused to commit and asked for more evidence. That proves the product is a failure.”; “a refusal a request for evidence.”; “So how would you describe the result?”; “a warning a crisis.”; “A warning is serious, but it gives us something to test.”; “Exactly. Let's test the revised offer before deciding.”; exact missing target answers: “It's not so much”; “as”; “I'd call it”; “rather than”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

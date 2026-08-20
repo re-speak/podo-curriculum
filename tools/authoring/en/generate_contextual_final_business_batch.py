@@ -560,6 +560,27 @@ for _number, _copy in REVIEWED_COPY_49_60.items():
         _lesson["vocab"] = tuple(_vocab)
 
 
+# Preserve one teachable frame across the completion rows.  The changing
+# decision payload stays visible; only the reusable language move is blanked.
+LESSONS[52]["p1"]["rows"] = rows(
+    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} testing.", "{t}早く進むほど、{/t}テスト{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for testing."),
+    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} comparison.", "{t}早く進むほど、{/t}比較{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for comparison."),
+    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} training.", "{t}早く進むほど、{/t}研修{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for training."),
+    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} negotiation.", "{t}早く進むほど、{/t}交渉{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for negotiation."),
+)
+LESSONS[52]["p1"].update(
+    write_frame="The faster we move, the less time we'll have for ___",
+    write_script="Use “The faster we move, the less time we'll have for ___” to explain what an earlier decision would leave less time for.",
+    write_script_ja="「The faster we move, the less time we'll have for ___」を使って、決定を早めると何に使える時間が減るか説明しましょう。",
+)
+LESSONS[59]["p1"]["rows"] = rows(
+    ("{t}We recognise the{/t} disruption {t}this is causing{/t}.", "{t}これにより生じている{/t}業務の混乱{t}を認識しています{/t}。", "We recognise|the disruption|this is causing."),
+    ("{t}We recognise the{/t} pressure {t}this is causing{/t}.", "{t}これにより生じている{/t}ご負担{t}を認識しています{/t}。", "We recognise|the pressure|this is causing."),
+    ("{t}We recognise the{/t} delay {t}this is causing{/t}.", "{t}これにより生じている{/t}遅れ{t}を認識しています{/t}。", "We recognise|the delay|this is causing."),
+    ("{t}We recognise the{/t} uncertainty {t}this is causing{/t}.", "{t}これにより生じている{/t}ご不安{t}を認識しています{/t}。", "We recognise|the uncertainty|this is causing."),
+)
+
+
 # The Understand page is tutor-read listening.  Every prompt is a complete
 # counterpart line from the opening or transfer roleplay, never a learner
 # target fragment or an isolated clause.

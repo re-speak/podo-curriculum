@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import copy
+import html
 import pathlib
 import re
 import sys
@@ -19,6 +20,7 @@ import vocabulary
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 REVIEW_ID = re.compile(r'<meta name="podo:review-id" content="([^"]+)">')
+TARGET = re.compile(r"\{t\}(.*?)\{/t\}")
 
 
 def source_by_review_id(review_id: str) -> tuple[pathlib.Path, str]:
@@ -39,6 +41,54 @@ def owner_is_reachable(owner: str, number: int) -> bool:
 
 
 class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
+    def test_transition_pages_are_specific_short_bilingual_actions(self):
+        purposes = set()
+        japanese_purposes = set()
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                pattern = lesson[f"p{part}"]
+                purpose, purpose_ja = pattern.get("transition_purpose", pattern["meaning"])
+                page = html.unescape(pages[f"part{part}-intro"])
+                self.assertIn(purpose.rstrip(". ").casefold(), page.casefold(), (number, part))
+                self.assertIn(purpose_ja.rstrip("。 "), page, (number, part))
+                self.assertIn("Read the line above aloud.", page, (number, part))
+                self.assertIn("上の文を声に出して読みましょう。", page, (number, part))
+                self.assertNotIn("practice this useful line", page, (number, part))
+                self.assertLessEqual(len(purpose), 150, (number, part))
+                self.assertLessEqual(len(purpose_ja), 70, (number, part))
+                purposes.add(purpose)
+                japanese_purposes.add(purpose_ja)
+        self.assertEqual(len(purposes), 24)
+        self.assertEqual(len(japanese_purposes), 24)
+
+    def test_repaired_completion_targets_are_invariant_frames(self):
+        expected = {
+            (37, 2): ("Which", "should I"),
+            (38, 1): ("Just to clarify,", "who's"),
+            (38, 2): ("I'm happy to", "if no one else is doing it"),
+            (39, 1): ("We're on track",),
+            (40, 2): ("is realistic if",),
+            (41, 1): ("I'm afraid", "we won't be ready for"),
+            (41, 2): ("We'll need to push it back", "and I have a recovery plan"),
+            (42, 1): ("So I'll", "and", "will"),
+            (42, 2): ("I'll", "by", "and", "will", "by"),
+            (43, 1): ("Sorry to interrupt, but what is", "based on"),
+            (45, 1): ("I recommend",),
+            (45, 2): ("It's easier to",),
+            (46, 1): ("I don't have", "in front of me"),
+            (46, 2): ("Let me check", "and get back to you"),
+            (48, 1): ("The decision we need today", "is"),
+            (48, 2): ("Would it help if we compared them against",),
+        }
+        for (number, part), targets in expected.items():
+            self.assertEqual(
+                {tuple(TARGET.findall(row[0])) for row in batch.LESSONS[number][f"p{part}"]["rows"]},
+                {targets},
+                (number, part),
+            )
+
     def test_scope_models_and_source_validation(self):
         self.assertEqual(set(batch.LESSONS), set(range(37, 49)))
         self.assertEqual(set(batch.AUTHORITATIVE), set(batch.LESSONS))
@@ -319,8 +369,7 @@ class ContextualProjectsMeetingsBatchTests(unittest.TestCase):
         self.assertIn("risk may become a problem later", ctx39["tip"][2])
 
         for english, japanese, _ in batch.LESSONS[40]["p2"]["rows"]:
-            self.assertNotIn("realistic if{/t}", english)
-            self.assertIn("is realistic{/t} if", english)
+            self.assertIn("{t}is realistic if{/t}", english)
             self.assertIn("{t}", japanese)
 
         ctx41 = batch.LESSONS[41]

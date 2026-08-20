@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-projects-deadlines/lessons/39-raise-a-project-risk-early/lesson.html`
-- SHA-256: `6b7e96c0ad108913b3e4e52ba86190943e3e35f83a1c47e3f77ac86408c21f66`
+- SHA-256: `fbec92c1191c0bb41dc54d3db159f4b486adc96cabaab161a7edf318d1537ba8`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why pattern 1 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 1 communicative purpose: まず、現時点では予定どおりだと明確にします。
-- Learning target: Connect the practical scene to pattern 1 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “We're on track at the moment.” Exact English purpose/action: “Use this bounded status line to separate today's position from a future risk. Read the line above aloud.” Exact Japanese purpose/action: “現在の進捗と将来のリスクを分ける定型の状況報告です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ["We're on track at the moment", "We're on track for this week", "We're on track so far", "We're on track for Friday"]; first model: “We're on track at the moment.”; job: Use “We're on track ___” to give the current project status without overstating it.
+- Visible target or prompt: Exact communicative use: “Use this bounded status line to separate today's position from a future risk.”; aligned Japanese: “現在の進捗と将来のリスクを分ける定型の状況報告です。”; complete models: “We're on track at the moment.”; “We're on track for this week.”; “We're on track so far.”; exact highlighted spans: “We're on track”; “予定どおりです”
 - Learning target: Connect pattern 1’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -106,7 +106,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["We're on track at the moment", "今のところ予定どおりです", "We're on track for this week", "今週分は予定どおりです", "We're on track so far", "ここまでは予定どおりです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["We're on track", "予定どおりです", "We're on track", "予定どおりです", "We're on track", "予定どおりです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “We're on track at the moment.”; “We're on track for this week.”; “We're on track so far.”; “We're on track for Friday.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “We're on track at the moment.”; “We're on track for this week.”; “We're on track so far.”; “We're on track for Friday.”; exact highlighted spans: “We're on track”; “予定どおりです”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -123,7 +123,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["We're on track at the moment", "今のところ予定どおりです", "We're on track for this week", "今週分は予定どおりです", "We're on track so far", "ここまでは予定どおりです", "We're on track for Friday", "金曜日に向けて予定どおりです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["We're on track", "予定どおりです", "We're on track", "予定どおりです", "We're on track", "予定どおりです", "We're on track", "予定どおりです"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["We're on track at the moment", "We're on track for this week", "We're on track so far", "We're on track for Friday"]; authored pattern-1 boundaries ["We're on track at the moment", "We're on track for this week", "We're on track so far", "We're on track for Friday"]
+- Visible target or prompt: Exact missing target answers: “We're on track”; “We're on track”; “We're on track”; “We're on track”; exact Japanese target cues: “予定どおりです”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -140,7 +140,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["今のところ予定どおりです", "今週分は予定どおりです", "ここまでは予定どおりです", "金曜日に向けて予定どおりです"], "blankAnswers": ["We're on track at the moment", "We're on track for this week", "We're on track so far", "We're on track for Friday"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["予定どおりです", "予定どおりです", "予定どおりです", "予定どおりです"], "blankAnswers": ["We're on track", "We're on track", "We're on track", "We're on track"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-1 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “We're on track at the moment.”; “We're on track for this week.”; “We're on track so far.”; “We're on track for Friday.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-1 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “We're on track ___” to give the current project status without overstating it. Stable frame: We're on track ___
+- Visible target or prompt: Exact learner prompt: “Use “We're on track ___” to give the current project status without overstating it.”; aligned Japanese prompt: “「We're on track ___」を使って、言い過ぎずに現在の進捗を伝えましょう。”
 - Learning target: Transfer pattern 1 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why pattern 2 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 2 communicative purpose: 次に、最も大きい不確実性を一つだけ具体的に示します。
-- Learning target: Connect the practical scene to pattern 2 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “The main risk is that the supplier may be late.” Exact English purpose/action: “Use this bounded warning to name the single issue most likely to affect delivery. Read the line above aloud.” Exact Japanese purpose/action: “納期に影響しそうな最大の問題を一つ示す定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['The main risk is that']; first model: “The main risk is that the supplier may be late.”; job: Use “The main risk is that ___” to raise one possible problem before it becomes urgent.
+- Visible target or prompt: Exact communicative use: “Use this bounded warning to name the single issue most likely to affect delivery.”; aligned Japanese: “納期に影響しそうな最大の問題を一つ示す定型表現です。”; complete models: “The main risk is that the supplier may be late.”; “The main risk is that the data may be incomplete.”; “The main risk is that approval may take longer.”; exact highlighted spans: “The main risk is that”; “主なリスクは”
 - Learning target: Connect pattern 2’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “The main risk is that the supplier may be late.”; “The main risk is that the data may be incomplete.”; “The main risk is that approval may take longer.”; “The main risk is that one test may fail.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “The main risk is that the supplier may be late.”; “The main risk is that the data may be incomplete.”; “The main risk is that approval may take longer.”; “The main risk is that one test may fail.”; exact highlighted spans: “The main risk is that”; “主なリスクは”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['The main risk is that', 'The main risk is that', 'The main risk is that', 'The main risk is that']; authored pattern-2 boundaries ['The main risk is that']
+- Visible target or prompt: Exact missing target answers: “The main risk is that”; “The main risk is that”; “The main risk is that”; “The main risk is that”; exact Japanese target cues: “主なリスクは”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-2 sentences from Japanese; support stage supported; hints ['仕入先:supplier', 'データ:data', '承認:approval', '試験:test'].
+- Visible target or prompt: Exact complete English answers: “The main risk is that the supplier may be late.”; “The main risk is that the data may be incomplete.”; “The main risk is that approval may take longer.”; “The main risk is that one test may fail.”; support stage: supported; lexical hint chips: “仕入先:supplier”; “データ:data”; “承認:approval”; “試験:test”
 - Learning target: Produce four complete pattern-2 sentences from meaning at the declared supported stage.
 - Pedagogical value: Useful lexical hints support new content while the learner still supplies the target grammar.
 - Failure diagnoses: Hints that reveal articles or target grammar would erase the intended learner decision.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “The main risk is that ___” to raise one possible problem before it becomes urgent. Stable frame: The main risk is that ___
+- Visible target or prompt: Exact learner prompt: “Use “The main risk is that ___” to raise one possible problem before it becomes urgent.”; aligned Japanese prompt: “「The main risk is that ___」を使って、深刻になる前に主なリスクを一つ伝えましょう。”
 - Learning target: Transfer pattern 2 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every colleague line aloud while the tutor plays the counterpart.
 - Tutor action: Play the project sponsor and pause for each learner-owned line.
-- Visible target or prompt: Replay a status update before a supplier delay; learner reads Colleague lines and tutor plays Project Sponsor; both target patterns remain complete.
+- Visible target or prompt: Tutor role: Project Sponsor; exact full exchange: “How is the delivery looking today?”; “We're on track at the moment.”; “But you sound worried.”; “The main risk is that the supplier may be late.”; “Thanks for raising it now. What's the fallback?”; “We can use the backup supplier if the date slips.”; exact highlighted targets: “We're on track”; “予定どおりです”; “The main risk is that”; “主なリスクは”
 - Learning target: Replay the resolved six-turn exchange with both target patterns in context.
 - Pedagogical value: The roleplay integrates both moves without asking the tutor to model learner production.
 - Failure diagnoses: Unclear roles or tutor-read learner lines would remove the learner’s speaking job.
@@ -310,7 +310,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain embedded in complete natural turns.
 - Choice/distractor quality: Dialogue timing supplies the response path; no distractors are needed.
 - Component consistency: Uses the same six-turn scene and stable roles introduced earlier.
-- Extracted evidence: `{"targetHighlights": ["We're on track at the moment", "今のところ予定どおりです", "The main risk is that", "主なリスクは"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["We're on track", "予定どおりです", "The main risk is that", "主なリスクは"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete colleague line aloud, including all missing target chunks.
 - Tutor action: Play the project sponsor and type only the missing target words.
-- Visible target or prompt: Complete a status update before a supplier delay with target blanks ["We're on track at the moment", 'The main risk is that']; tutor plays Project Sponsor.
+- Visible target or prompt: Tutor role: Project Sponsor; exact completion instruction: “I’ll be the project sponsor. Say each complete line, including the missing words.”; exact missing target answers: “We're on track”; “The main risk is that”
 - Learning target: Retrieve both patterns while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.
 - Failure diagnoses: Blanking full turns or non-target vocabulary would destabilise the taught boundary.
@@ -327,7 +327,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless authored inside the target chunk.
 - Choice/distractor quality: No choices are used; each blank is anchored to the previously read scene.
 - Component consistency: Uses the shared six-turn completion roleplay and phrase inputs.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["We're on track at the moment", "The main risk is that"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["We're on track", "The main risk is that"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor’s real question, then ask the visible reciprocal question.
 - Tutor action: React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.
-- Visible target or prompt: Exact reciprocal questions: “What makes you trust a project status update?”; “What about you—what makes a status update trustworthy?”
+- Visible target or prompt: Exact Tutor question: “What makes you trust a project status update?”; exact learner ask-back: “What about you—what makes a status update trustworthy?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a reciprocal conversation relevant to raise a project risk early without forcing today’s pattern.
 - Pedagogical value: Both exact questions stand alone, invite personal content, and create genuine two-way talk.
 - Failure diagnoses: A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new workplace situation.
 - Tutor action: Play the analytics lead, begin with the first line, and carry the exchange to resolution.
-- Visible target or prompt: Flagging a data risk; learner is Colleague, tutor is Analytics Lead; first tutor line: “Are we still on track with this week's analysis?”; same two target patterns are retrieved in a new scene.
+- Visible target or prompt: Tutor role: Analytics Lead; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the analytics lead.”; exact full exchange: “Are we still on track with this week's analysis?”; “for this week.”; “What could change that?”; “the data may be incomplete.”; “Then check the missing records today and prepare a smaller dataset.”; “I will report the result and fallback by four.”; exact missing target answers: “We're on track”; “The main risk is that”
 - Learning target: Transfer both stable patterns to a new roleplay with a different practical context.
 - Pedagogical value: The new role and situation require meaningful transfer while preserving the two learned moves.
 - Failure diagnoses: Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.
@@ -378,7 +378,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain visible outside target blanks unless they belong to the authored phrase.
 - Choice/distractor quality: Roleplay turns guide the exchange; no unrelated distractors are introduced.
 - Component consistency: Uses the shared six-turn completion component with explicit new tutor role and same two lines.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["We're on track for this week", "The main risk is that"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["We're on track", "The main risk is that"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

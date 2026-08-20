@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-meetings-decisions/lessons/44-summarise-a-decision-before-moving-on/lesson.html`
-- SHA-256: `6c7129432d9e587cedd1d79a3bc621e98875a64e12bec094dca8e155f7436a5c`
+- SHA-256: `38191825c6047ca1934e8fa5e539b333cb2137071b7d2b425c701dab2b269335`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why pattern 1 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 1 communicative purpose: まず、合意した行動を短くまとめます。
-- Learning target: Connect the practical scene to pattern 1 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “So we've agreed to test option B first.” Exact English purpose/action: “Use this to state the action the group has just agreed to take. Read the line above aloud.” Exact Japanese purpose/action: “グループが合意した行動をまとめる表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ["So we've agreed to"]; first model: “So we've agreed to test option B first.”; job: Use “So we've agreed to ___” to summarise the action the group decided on.
+- Visible target or prompt: Exact communicative use: “Use this to state the action the group has just agreed to take.”; aligned Japanese: “グループが合意した行動をまとめる表現です。”; complete models: “So we've agreed to test option B first.”; “So we've agreed to run one pilot first.”; “So we've agreed to use the smaller team first.”; exact highlighted spans: “So we've agreed to”; “合意したのですね”
 - Learning target: Connect pattern 1’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “So we've agreed to test option B first.”; “So we've agreed to run one pilot first.”; “So we've agreed to use the smaller team first.”; “So we've agreed to review the cost Friday.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “So we've agreed to test option B first.”; “So we've agreed to run one pilot first.”; “So we've agreed to use the smaller team first.”; “So we've agreed to review the cost Friday.”; exact highlighted spans: “So we've agreed to”; “合意したのですね”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify the one production-relevant form distinction.
 - Tutor action: Point out the ordering or usage contrast once, then move on.
-- Visible target or prompt: Put the agreed action after “to” / 合意した行動は to のあと; Name the one action the group approved, not every point discussed.; formula: So we've agreed to + action
+- Visible target or prompt: Exact rule: “Name the one action the group approved, not every point discussed.”; aligned Japanese: “話し合ったすべてではなく、承認された行動を一つ示します。”
 - Learning target: Make the structural distinction needed to use pattern 1 accurately.
 - Pedagogical value: The concise rule explains a production boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence; prompt full-sentence reading after every row.
-- Visible target or prompt: Build these complete pattern-1 sentences: So we've agreed to test option B first.; So we've agreed to run one pilot first.; So we've agreed to use the smaller team first.; So we've agreed to review the cost Friday.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “So we've agreed to test option B first.”; “So we've agreed to run one pilot first.”; “So we've agreed to use the smaller team first.”; “So we've agreed to review the cost Friday.”
 - Learning target: Reconstruct pattern 1 from honest meaning units without splitting articles or prepositions.
 - Pedagogical value: Each row rebuilds one complete model and rehearses usable workplace word order.
 - Failure diagnoses: Grammar-only chips or chunks that cannot rebuild the source sentence would turn this into guessing.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["So we've agreed to", "So we've agreed to", "So we've agreed to", "So we've agreed to"]; authored pattern-1 boundaries ["So we've agreed to"]
+- Visible target or prompt: Exact missing target answers: “So we've agreed to”; “So we've agreed to”; “So we've agreed to”; “So we've agreed to”; exact Japanese target cues: “合意したのですね”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-1 sentences from Japanese; support stage supported; hints ['選択肢Bを試す:test option B', '一回試験導入する:run one pilot', '小さいチーム:smaller team', '費用を確認する:review the cost'].
+- Visible target or prompt: Exact complete English answers: “So we've agreed to test option B first.”; “So we've agreed to run one pilot first.”; “So we've agreed to use the smaller team first.”; “So we've agreed to review the cost Friday.”; support stage: supported; lexical hint chips: “選択肢Bを試す:test option B”; “一回試験導入する:run one pilot”; “小さいチーム:smaller team”; “費用を確認する:review the cost”
 - Learning target: Produce four complete pattern-1 sentences from meaning at the declared supported stage.
 - Pedagogical value: Useful lexical hints support new content while the learner still supplies the target grammar.
 - Failure diagnoses: Hints that reveal articles or target grammar would erase the intended learner decision.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “So we've agreed to ___” to summarise the action the group decided on. Stable frame: So we've agreed to ___
+- Visible target or prompt: Exact learner prompt: “Use “So we've agreed to ___” to summarise the action the group decided on.”; aligned Japanese prompt: “「So we've agreed to ___」を使って、グループが決めた行動を要約しましょう。”
 - Learning target: Transfer pattern 1 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -215,16 +215,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen for why pattern 2 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 2 communicative purpose: 次に、その理解が正しいかを明確に確認します。
-- Learning target: Connect the practical scene to pattern 2 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Have I understood that correctly?” Exact English purpose/action: “Use this to invite a correction before the decision is recorded. Read the line above aloud.” Exact Japanese purpose/action: “決定を記録する前に、訂正の機会を作る表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['Have I understood', 'correctly']; first model: “Have I understood that correctly?”; job: Use “Have I understood ___ correctly?” to check the decision before you record it.
+- Visible target or prompt: Exact communicative use: “Use this to invite a correction before the decision is recorded.”; aligned Japanese: “決定を記録する前に、訂正の機会を作る表現です。”; complete models: “Have I understood that correctly?”; “Have I understood the scope correctly?”; “Have I understood the timing correctly?”; exact highlighted spans: “Have I understood”; “correctly”; “理解しましたが”; “合っていますか”
 - Learning target: Connect pattern 2’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Have I understood that correctly?”; “Have I understood the scope correctly?”; “Have I understood the timing correctly?”; “Have I understood the decision correctly?”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Have I understood that correctly?”; “Have I understood the scope correctly?”; “Have I understood the timing correctly?”; “Have I understood the decision correctly?”; exact highlighted spans: “Have I understood”; “correctly”; “理解しましたが”; “合っていますか”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify the one production-relevant form distinction.
 - Tutor action: Point out the ordering or usage contrast once, then move on.
-- Visible target or prompt: Put the point you are checking in the middle / 確認する内容は中央に; Keep “Have I understood” and “correctly?” around the decision or detail you want checked.; formula: Have I understood + point + correctly?
+- Visible target or prompt: Exact rule: “Keep “Have I understood” and “correctly?” around the decision or detail you want checked.”; aligned Japanese: “Have I understood と correctly? の間に、確認したい決定や詳細を置きます。”
 - Learning target: Make the structural distinction needed to use pattern 2 accurately.
 - Pedagogical value: The concise rule explains a production boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence; prompt full-sentence reading after every row.
-- Visible target or prompt: Build these complete pattern-2 sentences: Have I understood that correctly?; Have I understood the scope correctly?; Have I understood the timing correctly?; Have I understood the decision correctly?
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “Have I understood that correctly?”; “Have I understood the scope correctly?”; “Have I understood the timing correctly?”; “Have I understood the decision correctly?”
 - Learning target: Reconstruct pattern 2 from honest meaning units without splitting articles or prepositions.
 - Pedagogical value: Each row rebuilds one complete model and rehearses usable workplace word order.
 - Failure diagnoses: Grammar-only chips or chunks that cannot rebuild the source sentence would turn this into guessing.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['Have I understood', 'correctly', 'Have I understood', 'correctly', 'Have I understood', 'correctly', 'Have I understood', 'correctly']; authored pattern-2 boundaries ['Have I understood', 'correctly']
+- Visible target or prompt: Exact missing target answers: “Have I understood”; “correctly”; “Have I understood”; “correctly”; “Have I understood”; “correctly”; “Have I understood”; “correctly”; exact Japanese target cues: “理解しましたが”; “合っていますか”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-2 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “Have I understood that correctly?”; “Have I understood the scope correctly?”; “Have I understood the timing correctly?”; “Have I understood the decision correctly?”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-2 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “Have I understood ___ correctly?” to check the decision before you record it. Stable frame: Have I understood ___ correctly?
+- Visible target or prompt: Exact learner prompt: “Use “Have I understood ___ correctly?” to check the decision before you record it.”; aligned Japanese prompt: “「Have I understood ___ correctly?」を使って、記録する前に決定内容を確認しましょう。”
 - Learning target: Transfer pattern 2 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every colleague line aloud while the tutor plays the counterpart.
 - Tutor action: Play the meeting chair and pause for each learner-owned line.
-- Visible target or prompt: Replay confirming a limited test of option b; learner reads Colleague lines and tutor plays Meeting Chair; both target patterns remain complete.
+- Visible target or prompt: Tutor role: Meeting Chair; exact full exchange: “Let's test option B first.”; “So we've agreed to test option B first.”; “Yes. Start with the support team only.”; “Have I understood that correctly?”; “Yes. Please record it that way.”; “I will add the decision and the one-team limit to the notes.”; exact highlighted targets: “So we've agreed to”; “合意したのですね”; “Have I understood”; “correctly”; “理解しましたが”; “合っていますか”
 - Learning target: Replay the resolved six-turn exchange with both target patterns in context.
 - Pedagogical value: The roleplay integrates both moves without asking the tutor to model learner production.
 - Failure diagnoses: Unclear roles or tutor-read learner lines would remove the learner’s speaking job.
@@ -387,7 +387,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete colleague line aloud, including all missing target chunks.
 - Tutor action: Play the meeting chair and type only the missing target words.
-- Visible target or prompt: Complete confirming a limited test of option b with target blanks ["So we've agreed to", 'Have I understood', 'correctly']; tutor plays Meeting Chair.
+- Visible target or prompt: Tutor role: Meeting Chair; exact completion instruction: “I’ll be the meeting chair. Say each complete line, including the missing words.”; exact missing target answers: “So we've agreed to”; “Have I understood”; “correctly”
 - Learning target: Retrieve both patterns while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.
 - Failure diagnoses: Blanking full turns or non-target vocabulary would destabilise the taught boundary.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor’s real question, then ask the visible reciprocal question.
 - Tutor action: React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.
-- Visible target or prompt: Exact reciprocal questions: “Have you ever left a meeting with a different understanding from everyone else?”; “What about you—has that ever happened to you?”
+- Visible target or prompt: Exact Tutor question: “Have you ever left a meeting with a different understanding from everyone else?”; exact learner ask-back: “What about you—has that ever happened to you?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a reciprocal conversation relevant to summarise a decision before moving on without forcing today’s pattern.
 - Pedagogical value: Both exact questions stand alone, invite personal content, and create genuine two-way talk.
 - Failure diagnoses: A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.
@@ -438,7 +438,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new workplace situation.
 - Tutor action: Play the finance chair, begin with the first line, and carry the exchange to resolution.
-- Visible target or prompt: Confirming a budget decision; learner is Colleague, tutor is Finance Chair; first tutor line: “We'll run one smaller pilot before any larger rollout.”; same two target patterns are retrieved in a new scene.
+- Visible target or prompt: Tutor role: Finance Chair; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the finance chair.”; exact full exchange: “We'll run one smaller pilot before any larger rollout.”; “run one pilot first.”; “Yes, one pilot before any larger rollout.”; “the decision ?”; “Correct. Put that in the decision log and schedule a June review.”; “I will record both the pilot and the review date.”; exact missing target answers: “So we've agreed to”; “Have I understood”; “correctly”
 - Learning target: Transfer both stable patterns to a new roleplay with a different practical context.
 - Pedagogical value: The new role and situation require meaningful transfer while preserving the two learned moves.
 - Failure diagnoses: Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.

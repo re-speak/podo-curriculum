@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-leadership-high-stakes/lessons/58-adapt-a-message-for-stakeholders/lesson.html`
-- SHA-256: `8441ecacea3827d3a55f66b3b63108708f5c275a87a1ee0fd9428569d32c8a2a`
+- SHA-256: `413fd5e2738d85d4440ab95035647938b608d3e0c533be368f234044d624fd34`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: For finance, the key benefit is predictable cost.; communicative bridge: まず、対象とその相手にとっての主な利点を結びつけます。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “For finance, the key benefit is predictable cost.” Exact English purpose/action: “Use this fixed frame to lead with the value most relevant to one audience. Read the line above aloud.” Exact Japanese purpose/action: “一つの聞き手に最も関係のある価値から伝える定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: For finance, the key benefit is predictable cost.; use: Use this fixed frame to lead with the value most relevant to one audience.
+- Visible target or prompt: Exact communicative use: “Use this fixed frame to lead with the value most relevant to one audience.”; aligned Japanese: “一つの聞き手に最も関係のある価値から伝える定型表現です。”; complete models: “For finance, the key benefit is predictable cost.”; “For sales, the key benefit is faster onboarding.”; “For legal, the key benefit is clearer accountability.”; exact highlighted spans: “For”; “the key benefit is”; “経理にとって”; “最大の利点は”; “営業にとって”; “法務にとって”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: For finance, the key benefit is predictable cost.; For sales, the key benefit is faster onboarding.; For legal, the key benefit is clearer accountability.; For customers, the key benefit is quicker support.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “For finance, the key benefit is predictable cost.”; “For sales, the key benefit is faster onboarding.”; “For legal, the key benefit is clearer accountability.”; “For customers, the key benefit is quicker support.”; exact highlighted spans: “For”; “the key benefit is”; “経理にとって”; “最大の利点は”; “営業にとって”; “法務にとって”; “顧客にとって”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: For; the key benefit is; For; the key benefit is; For; the key benefit is; For; the key benefit is
+- Visible target or prompt: Exact missing target answers: “For”; “the key benefit is”; “For”; “the key benefit is”; “For”; “the key benefit is”; “For”; “the key benefit is”; exact Japanese target cues: “経理にとって”; “最大の利点は”; “営業にとって”; “法務にとって”; “顧客にとって”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: For ___, the key benefit is ___; support stage supported; 経理:finance; コストを予測できる:predictable cost; 営業:sales; 導入が早くなる:faster onboarding; 法務:legal; 責任所在が明確:clearer accountability; 顧客:customers; 対応が早くなる:quicker support
+- Visible target or prompt: Exact complete English answers: “For finance, the key benefit is predictable cost.”; “For sales, the key benefit is faster onboarding.”; “For legal, the key benefit is clearer accountability.”; “For customers, the key benefit is quicker support.”; support stage: supported; lexical hint chips: “経理:finance”; “コストを予測できる:predictable cost”; “営業:sales”; “導入が早くなる:faster onboarding”; “法務:legal”; “責任所在が明確:clearer accountability”; “顧客:customers”; “対応が早くなる:quicker support”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “For ___, the key benefit is ___” to connect one stakeholder to the value they care about.” Frame: For ___, the key benefit is ___
+- Visible target or prompt: Exact learner prompt: “Use “For ___, the key benefit is ___” to connect one stakeholder to the value they care about.”; aligned Japanese prompt: “「For ___, the key benefit is ___」を使って、関係者と、その人が重視する価値を結びつけましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “For ___, the key benefit is ___” to connect one stakeholder to the value they care about.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: For operations, it addresses the risk of unplanned downtime.; communicative bridge: 次に、同じ提案が別の対象のリスクにどう対応するかを示します。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “For operations, it addresses the risk of unplanned downtime.” Exact English purpose/action: “Use this fixed frame to connect the proposal to a stakeholder's concrete risk. Read the line above aloud.” Exact Japanese purpose/action: “提案をステークホルダーの具体的なリスクに結びつける定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: For operations, it addresses the risk of unplanned downtime.; use: Use this fixed frame to connect the proposal to a stakeholder's concrete risk.
+- Visible target or prompt: Exact communicative use: “Use this fixed frame to connect the proposal to a stakeholder's concrete risk.”; aligned Japanese: “提案をステークホルダーの具体的なリスクに結びつける定型表現です。”; complete models: “For operations, it addresses the risk of unplanned downtime.”; “For finance, it addresses the risk of unexpected cost.”; “For legal, it addresses the risk of unclear ownership.”; exact highlighted spans: “For”; “it addresses the risk of”; “運用にとって”; “対応します”; “経理にとって”; “法務にとって”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: For operations, it addresses the risk of unplanned downtime.; For finance, it addresses the risk of unexpected cost.; For legal, it addresses the risk of unclear ownership.; For customers, it addresses the risk of slow recovery.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “For operations, it addresses the risk of unplanned downtime.”; “For finance, it addresses the risk of unexpected cost.”; “For legal, it addresses the risk of unclear ownership.”; “For customers, it addresses the risk of slow recovery.”; exact highlighted spans: “For”; “it addresses the risk of”; “運用にとって”; “対応します”; “経理にとって”; “法務にとって”; “顧客にとって”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: For; it addresses the risk of; For; it addresses the risk of; For; it addresses the risk of; For; it addresses the risk of
+- Visible target or prompt: Exact missing target answers: “For”; “it addresses the risk of”; “For”; “it addresses the risk of”; “For”; “it addresses the risk of”; “For”; “it addresses the risk of”; exact Japanese target cues: “運用にとって”; “対応します”; “経理にとって”; “法務にとって”; “顧客にとって”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: For ___, it addresses the risk of ___; support stage supported; 運用:operations; 計画外停止:unplanned downtime; 経理:finance; 予期しないコスト:unexpected cost; 法務:legal; 担当の不明確さ:unclear ownership; 顧客:customers; 復旧の遅れ:slow recovery
+- Visible target or prompt: Exact complete English answers: “For operations, it addresses the risk of unplanned downtime.”; “For finance, it addresses the risk of unexpected cost.”; “For legal, it addresses the risk of unclear ownership.”; “For customers, it addresses the risk of slow recovery.”; support stage: supported; lexical hint chips: “運用:operations”; “計画外停止:unplanned downtime”; “経理:finance”; “予期しないコスト:unexpected cost”; “法務:legal”; “担当の不明確さ:unclear ownership”; “顧客:customers”; “復旧の遅れ:slow recovery”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “For ___, it addresses the risk of ___” to connect a stakeholder to the risk the proposal reduces.” Frame: For ___, it addresses the risk of ___
+- Visible target or prompt: Exact learner prompt: “Use “For ___, it addresses the risk of ___” to connect a stakeholder to the risk the proposal reduces.”; aligned Japanese prompt: “「For ___, it addresses the risk of ___」を使って、関係者と、提案が減らすリスクを結びつけましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “For ___, it addresses the risk of ___” to connect a stakeholder to the risk the proposal reduces.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Programme Director.
 - Tutor action: Read only the Programme Director turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Programme Director; learner lines include “For finance, the key benefit is predictable cost.” and “For operations, it addresses the risk of unplanned downtime.”.
+- Visible target or prompt: Tutor role: Programme Director; exact full exchange: “Why should finance support this service plan?”; “For finance, the key benefit is predictable cost.”; “And what matters to operations?”; “For operations, it addresses the risk of unplanned downtime.”; “Those are both supported by the service data.”; “Good. I'll use those two messages in tomorrow's review.”; exact highlighted targets: “For”; “the key benefit is”; “経理にとって”; “最大の利点は”; “it addresses the risk of”; “運用にとって”; “対応します”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Programme Director; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: For, the key benefit is, For, it addresses the risk of
+- Visible target or prompt: Tutor role: Programme Director; exact completion instruction: “I’ll be the programme director. Say each complete line, including the missing words.”; exact missing target answers: “For”; “the key benefit is”; “For”; “it addresses the risk of”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “Whose support is usually hardest to win for a new idea, and why?” Exact learner ask-back: “What about you—whose support is hardest to win?”
+- Visible target or prompt: Exact Tutor question: “Whose support is usually hardest to win for a new idea, and why?”; exact learner ask-back: “What about you—whose support is hardest to win?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about persuade stakeholders with competing interests without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Chief of Staff, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Explaining a platform change; tutor is Chief of Staff (経営企画責任者); first line: “How would you explain the platform change to sales?”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Chief of Staff; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the chief of staff.”; exact full exchange: “How would you explain the platform change to sales?”; “sales, faster onboarding.”; “And what should legal hear?”; “legal, unclear ownership.”; “Both points match the approved business case.”; “Then I'll keep the facts fixed and tailor the opening.”; exact missing target answers: “For”; “the key benefit is”; “For”; “it addresses the risk of”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/25-escalate-a-cancellation-with-clear-priorities/lesson.html`
-- SHA-256: `08b0c566e4fb36a71bcfc256231bd002e143edaa6b996d66bcf2f4297ab05edd`
+- SHA-256: `9524fb3f698e0f68ae7457df33ed0791073e8bfe06622906b556e946a3a6b4e2`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 1 communicative purpose: まず、何を最優先するかを一文ではっきり示します。
-- Learning target: Connect the practical scene to pattern 1 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “What matters most is arriving before tomorrow morning.” Exact English purpose/action: “Use this to name the one priority that should drive the decision. Read the line above aloud.” Exact Japanese purpose/action: “判断の基準にすべき最優先事項を一つ示す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['What matters most is']; first model: “What matters most is arriving before tomorrow morning.”; job: Use this to name the one priority that should drive the decision.
+- Visible target or prompt: Exact communicative use: “Use this to name the one priority that should drive the decision.”; aligned Japanese: “判断の基準にすべき最優先事項を一つ示す表現です。”; complete models: “What matters most is arriving before tomorrow morning.”; “What matters most is reaching Tokyo tonight.”; “What matters most is making the morning meeting.”; exact highlighted spans: “What matters most is”; “最も重要なのは”
 - Learning target: Connect pattern 1’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “What matters most is arriving before tomorrow morning.”; “What matters most is reaching Tokyo tonight.”; “What matters most is making the morning meeting.”; “What matters most is getting there by nine.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “What matters most is arriving before tomorrow morning.”; “What matters most is reaching Tokyo tonight.”; “What matters most is making the morning meeting.”; “What matters most is getting there by nine.”; exact highlighted spans: “What matters most is”; “最も重要なのは”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify where the changing content belongs.
 - Tutor action: Point out the one ordering or usage contrast, then move on.
-- Visible target or prompt: Put the deciding priority after “is” / 判断の基準は is のあと; formula: What matters most + is + priority
+- Visible target or prompt: Exact rule: “Name only the result that the new option must protect.”; aligned Japanese: “新しい選択肢で守るべき結果だけを示します。”
 - Learning target: Make the one structural distinction needed to use pattern 1 accurately.
 - Pedagogical value: The rule explains a production-relevant boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each row’s chunks, then say the completed sentence aloud.
 - Tutor action: Let the learner order the chunks and prompt the full spoken sentence.
-- Visible target or prompt: Reorder complete answers: “What matters most is arriving before tomorrow morning.”; “What matters most is reaching Tokyo tonight.”; “What matters most is making the morning meeting.”; “What matters most is getting there by nine.”
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “What matters most is arriving before tomorrow morning.”; “What matters most is reaching Tokyo tonight.”; “What matters most is making the morning meeting.”; “What matters most is getting there by nine.”
 - Learning target: Retrieve meaningful chunks in the order required by pattern 1.
 - Pedagogical value: Three or four honest chunks test sentence assembly without splitting bound words.
 - Failure diagnoses: Punctuation-only chips, detached function words, or padded choices would create busywork.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['What matters most is', 'What matters most is', 'What matters most is', 'What matters most is']; authored frame boundaries ['What matters most is']
+- Visible target or prompt: Exact missing target answers: “What matters most is”; “What matters most is”; “What matters most is”; “What matters most is”; exact Japanese target cues: “最も重要なのは”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “最も重要なのは、明日の朝までに到着することです。”; “最も重要なのは、今夜東京に着くことです。”; “最も重要なのは、朝の会議に間に合うことです。”; “最も重要なのは、9時までに到着することです。”; lexical hints: ['明日の朝までに到着する:arriving before tomorrow morning', '今夜東京に着く:reaching Tokyo tonight', '朝の会議に間に合う:making the morning meeting', '9時までに到着する:getting there by nine']
+- Visible target or prompt: Exact complete English answers: “What matters most is arriving before tomorrow morning.”; “What matters most is reaching Tokyo tonight.”; “What matters most is making the morning meeting.”; “What matters most is getting there by nine.”; support stage: supported; lexical hint chips: “明日の朝までに到着する:arriving before tomorrow morning”; “今夜東京に着く:reaching Tokyo tonight”; “朝の会議に間に合う:making the morning meeting”; “9時までに到着する:getting there by nine”
 - Learning target: Produce complete pattern 1 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “What matters most is ___” to state the arrival condition you cannot compromise on.” Communicative frame: What matters most is ___
+- Visible target or prompt: Exact learner prompt: “Use “What matters most is ___” to state the arrival condition you cannot compromise on.”; aligned Japanese prompt: “「What matters most is ___」を使って、譲れない到着条件を伝えましょう。”
 - Learning target: Use pattern 1 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -215,16 +215,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 2 communicative purpose: 次に、その条件を満たせそうな別ルートを具体的に頼みます。
-- Learning target: Connect the practical scene to pattern 2 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Could you check routes through another city?” Exact English purpose/action: “Use this to ask an agent to search via a specific connecting city. Read the line above aloud.” Exact Japanese purpose/action: “特定の都市を経由する経路を係員に探してもらう表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['Could you check routes through']; first model: “Could you check routes through another city?”; job: Use this to ask an agent to search via a specific connecting city.
+- Visible target or prompt: Exact communicative use: “Use this to ask an agent to search via a specific connecting city.”; aligned Japanese: “特定の都市を経由する経路を係員に探してもらう表現です。”; complete models: “Could you check routes through another city?”; “Could you check routes through Seoul?”; “Could you check routes through Osaka?”; exact highlighted spans: “Could you check routes through”; “経由するルートを確認していただけますか”
 - Learning target: Connect pattern 2’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Could you check routes through another city?”; “Could you check routes through Seoul?”; “Could you check routes through Osaka?”; “Could you check routes through a nearby airport?”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Could you check routes through another city?”; “Could you check routes through Seoul?”; “Could you check routes through Osaka?”; “Could you check routes through a nearby airport?”; exact highlighted spans: “Could you check routes through”; “経由するルートを確認していただけますか”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['Could you check routes through', 'Could you check routes through', 'Could you check routes through', 'Could you check routes through']; authored frame boundaries ['Could you check routes through']
+- Visible target or prompt: Exact missing target answers: “Could you check routes through”; “Could you check routes through”; “Could you check routes through”; “Could you check routes through”; exact Japanese target cues: “経由するルートを確認していただけますか”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “別の都市を経由するルートを確認していただけますか？”; “ソウルを経由するルートを確認していただけますか？”; “大阪を経由するルートを確認していただけますか？”; “近くの空港を経由するルートを確認していただけますか？”; lexical hints: ['別の都市:another city', 'ソウル:Seoul', '大阪:Osaka', '近くの空港:a nearby airport']
+- Visible target or prompt: Exact complete English answers: “Could you check routes through another city?”; “Could you check routes through Seoul?”; “Could you check routes through Osaka?”; “Could you check routes through a nearby airport?”; support stage: supported; lexical hint chips: “別の都市:another city”; “ソウル:Seoul”; “大阪:Osaka”; “近くの空港:a nearby airport”
 - Learning target: Produce complete pattern 2 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “Could you check routes through ___?” to ask the agent to check one connecting place.” Communicative frame: Could you check routes through ___?
+- Visible target or prompt: Exact learner prompt: “Use “Could you check routes through ___?” to ask the agent to check one connecting place.”; aligned Japanese prompt: “「Could you check routes through ___?」を使って、一つの経由地を通るルートを確認してもらいましょう。”
 - Learning target: Use pattern 2 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every learner-owned line aloud.
 - Tutor action: Play the airline agent and pause for every learner line.
-- Visible target or prompt: Replay targets: “What matters most is arriving before tomorrow morning.” and “Could you check routes through another city?”; tutor role: Airline Agent
+- Visible target or prompt: Tutor role: Airline Agent; exact full exchange: “The next direct flight arrives tomorrow afternoon.”; “What matters most is arriving before tomorrow morning.”; “Understood. A connection might get you there earlier.”; “Could you check routes through Seoul?”; “Yes. There is a Seoul connection arriving at nine tonight.”; “That works. Please book that route.”; exact highlighted targets: “What matters most is”; “最も重要なのは”; “Could you check routes through”; “経由するルートを確認していただけますか”
 - Learning target: Rehearse both patterns in the full resolved scene with stable roles.
 - Pedagogical value: The learner reads their own complete lines while the tutor supplies only counterpart turns.
 - Failure diagnoses: Tutor modelling learner lines or changing roles would remove the learner’s speaking responsibility.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete learner line, including the missing words.
 - Tutor action: Play the airline agent and type only the missing target words.
-- Visible target or prompt: Complete-scene target blanks: ['What matters most is', 'Could you check routes through']; tutor role: Airline Agent
+- Visible target or prompt: Tutor role: Airline Agent; exact completion instruction: “I’ll be the airline agent. Say each complete line, including the missing words.”; exact missing target answers: “What matters most is”; “Could you check routes through”
 - Learning target: Retrieve both target expressions while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks disappear, so the learner must produce the lesson language in context.
 - Failure diagnoses: Blanking non-target dialogue or having the tutor say learner turns would invalidate retrieval.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the Tutor’s question, then ask the exact related question back.
 - Tutor action: React naturally, answer the ask-back honestly, and follow the most interesting detail.
-- Visible target or prompt: Exact Tutor question: “When a trip changes suddenly, what do you protect first: time, cost, or comfort?” Exact learner ask-back: “What about you—which one do you protect first?” / 旅行が急に変更になったら、時間・費用・快適さのどれを最優先しますか？ / 先生はどうですか？どれを最優先しますか？
+- Visible target or prompt: Exact Tutor question: “When a trip changes suddenly, what do you protect first: time, cost, or comfort?”; exact learner ask-back: “What about you—which one do you protect first?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a genuine reciprocal conversation related to the lesson topic without forcing today’s frame.
 - Pedagogical value: An interesting personal question plus ask-back creates real interaction after controlled practice.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would merely repeat the drill.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the traveller and complete both target lines in the new scene.
 - Tutor action: Play the rail agent and begin with the first counterpart line.
-- Visible target or prompt: Rebooking a cancelled train journey; learner is Traveller, tutor is Rail Agent; first tutor line: “The next direct train reaches Kyoto tomorrow at noon.”; reuse both target lines.
+- Visible target or prompt: Tutor role: Rail Agent; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the rail agent.”; exact full exchange: “The next direct train reaches Kyoto tomorrow at noon.”; “getting there by nine.”; “A transfer may get you there before nine.”; “Osaka?”; “Yes. The Osaka route arrives at eight-thirty.”; “Perfect. Please change my ticket.”; exact missing target answers: “What matters most is”; “Could you check routes through”
 - Learning target: Transfer both lesson expressions to a new resolved practical role-play.
 - Pedagogical value: Explicit new roles and the same two target jobs test flexible use beyond the opening scene.
 - Failure diagnoses: Generic roles, bilingual mismatch, or an unresolved ending would make transfer ambiguous.

@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-negotiation-diplomacy/lessons/50-make-a-conditional-proposal/lesson.html`
-- SHA-256: `47b3af589f72ff342648a7bc617fc9e527a41ec0e6f9cc89017353d462698053`
+- SHA-256: `ae43d4859aedb814fe22856ceb910541b26b32169bf7ef4a9a88ba598b862c95`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: We could meet the earlier date, provided we reduce the scope.; communicative bridge: まず、受け入れられることと必要な条件を一文で結びます。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “We could meet the earlier date, provided we reduce the scope.” Exact English purpose/action: “Use this fixed proposal to make an offer conditional on one clear change. Read the line above aloud.” Exact Japanese purpose/action: “一つの明確な変更を条件に、提案を受け入れる定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: We could meet the earlier date, provided we reduce the scope.; use: Use this fixed proposal to make an offer conditional on one clear change.
+- Visible target or prompt: Exact communicative use: “Use this fixed proposal to make an offer conditional on one clear change.”; aligned Japanese: “一つの明確な変更を条件に、提案を受け入れる定型表現です。”; complete models: “We could meet the earlier date, provided we reduce the scope.”; “We could hold the price, provided the term is two years.”; “We could add training, provided it stays remote.”; exact highlighted spans: “We could”; “provided”; “対応できます”; “という条件なら”; “維持できます”; “追加できます”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: We could meet the earlier date, provided we reduce the scope.; We could hold the price, provided the term is two years.; We could add training, provided it stays remote.; We could start in May, provided approval comes this week.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “We could meet the earlier date, provided we reduce the scope.”; “We could hold the price, provided the term is two years.”; “We could add training, provided it stays remote.”; “We could start in May, provided approval comes this week.”; exact highlighted spans: “We could”; “provided”; “対応できます”; “という条件なら”; “維持できます”; “追加できます”; “開始できます”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: We could; provided; We could; provided; We could; provided; We could; provided
+- Visible target or prompt: Exact missing target answers: “We could”; “provided”; “We could”; “provided”; “We could”; “provided”; “We could”; “provided”; exact Japanese target cues: “対応できます”; “という条件なら”; “維持できます”; “追加できます”; “開始できます”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: We could ___, provided ___; support stage supported; 早い日程:earlier date; 範囲を縮小する:reduce scope; 価格:price; 契約期間が2年:two-year term; 研修:training; オンライン実施:remote; 5月:May; 承認:approval
+- Visible target or prompt: Exact complete English answers: “We could meet the earlier date, provided we reduce the scope.”; “We could hold the price, provided the term is two years.”; “We could add training, provided it stays remote.”; “We could start in May, provided approval comes this week.”; support stage: supported; lexical hint chips: “早い日程:earlier date”; “範囲を縮小する:reduce scope”; “価格:price”; “契約期間が2年:two-year term”; “研修:training”; “オンライン実施:remote”; “5月:May”; “承認:approval”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “We could ___, provided ___” to offer one concession on a clear condition.” Frame: We could ___, provided ___
+- Visible target or prompt: Exact learner prompt: “Use “We could ___, provided ___” to offer one concession on a clear condition.”; aligned Japanese prompt: “「We could ___, provided ___」を使って、明確な条件と引き換えに一つの譲歩を提案しましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “We could ___, provided ___” to offer one concession on a clear condition.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: If you can defer the reporting feature, we can deliver the rest by June.; communicative bridge: 次に、相手が先送りできる項目と、こちらが納品できる範囲を具体化します。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “If you can defer the reporting feature, we can deliver the rest by June.” Exact English purpose/action: “Use this to link the other side's concession to what your team can deliver. Read the line above aloud.” Exact Japanese purpose/action: “相手の譲歩と、自分たちが提供できる内容を結びつける表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: If you can defer the reporting feature, we can deliver the rest by June.; use: Use this to link the other side's concession to what your team can deliver.
+- Visible target or prompt: Exact communicative use: “Use this to link the other side's concession to what your team can deliver.”; aligned Japanese: “相手の譲歩と、自分たちが提供できる内容を結びつける表現です。”; complete models: “If you can defer the reporting feature, we can deliver the rest by June.”; “If you can defer the custom dashboard, we can launch in May.”; “If you can defer the second workshop, we can keep the budget.”; exact highlighted spans: “If you can defer”; “we can”; “先送りできれば”; “納品できます”; “公開できます”; “維持できます”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: If you can defer the reporting feature, we can deliver the rest by June.; If you can defer the custom dashboard, we can launch in May.; If you can defer the second workshop, we can keep the budget.; If you can defer the regional rollout, we can finish the pilot first.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “If you can defer the reporting feature, we can deliver the rest by June.”; “If you can defer the custom dashboard, we can launch in May.”; “If you can defer the second workshop, we can keep the budget.”; “If you can defer the regional rollout, we can finish the pilot first.”; exact highlighted spans: “If you can defer”; “we can”; “先送りできれば”; “納品できます”; “公開できます”; “維持できます”; “完了できます”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Put the client's concession in the if-clause: Name what the client can defer first and your deliverable second. Formula: If you can defer + item, we can + result
+- Visible target or prompt: Exact rule: “Name what the client can defer first and your deliverable second.”; aligned Japanese: “相手が先送りできるものを先に、こちらが提供できるものを後に置きます。”
 - Learning target: Notice the stable form of pattern 2 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 2 chunk sets: If you can defer|the reporting feature,|we can deliver|the rest by June.; If you can defer|the custom dashboard,|we can launch|in May.; If you can defer|the second workshop,|we can keep|the budget.; If you can defer|the regional rollout,|we can finish|the pilot first.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “If you can defer the reporting feature, we can deliver the rest by June.”; “If you can defer the custom dashboard, we can launch in May.”; “If you can defer the second workshop, we can keep the budget.”; “If you can defer the regional rollout, we can finish the pilot first.”
 - Learning target: Retrieve the full ordering of pattern 2 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: If you can defer; we can; If you can defer; we can; If you can defer; we can; If you can defer; we can
+- Visible target or prompt: Exact missing target answers: “If you can defer”; “we can”; “If you can defer”; “we can”; “If you can defer”; “we can”; “If you can defer”; “we can”; exact Japanese target cues: “先送りできれば”; “納品できます”; “公開できます”; “維持できます”; “完了できます”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: If you can defer ___, we can ___; support stage supported; 報告機能:reporting feature; 残りは6月まで:rest by June; カスタム画面:custom dashboard; 5月:May; 2回目の研修:second workshop; 予算:budget; 地域展開:regional rollout; 試験導入:pilot
+- Visible target or prompt: Exact complete English answers: “If you can defer the reporting feature, we can deliver the rest by June.”; “If you can defer the custom dashboard, we can launch in May.”; “If you can defer the second workshop, we can keep the budget.”; “If you can defer the regional rollout, we can finish the pilot first.”; support stage: supported; lexical hint chips: “報告機能:reporting feature”; “残りは6月まで:rest by June”; “カスタム画面:custom dashboard”; “5月:May”; “2回目の研修:second workshop”; “予算:budget”; “地域展開:regional rollout”; “試験導入:pilot”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “If you can defer ___, we can ___” to trade a delayed item for a deliverable.” Frame: If you can defer ___, we can ___
+- Visible target or prompt: Exact learner prompt: “Use “If you can defer ___, we can ___” to trade a delayed item for a deliverable.”; aligned Japanese prompt: “「If you can defer ___, we can ___」を使って、一項目の先送りと提供できる内容を交換条件にしましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “If you can defer ___, we can ___” to trade a delayed item for a deliverable.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Client.
 - Tutor action: Read only the Client turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Client; learner lines include “We could meet the earlier date, provided we reduce the scope.” and “If you can defer the reporting feature, we can deliver the rest by June.”.
+- Visible target or prompt: Tutor role: Client; exact full exchange: “We need the full product a month earlier.”; “We could meet the earlier date, provided we reduce the scope.”; “What exactly would you take out?”; “If you can defer the reporting feature, we can deliver the rest by June.”; “That may work. Put it in the revised proposal.”; “I will send the revised scope and date today.”; exact highlighted targets: “We could”; “provided”; “対応できます”; “という条件なら”; “If you can defer”; “we can”; “先送りできれば”; “納品できます”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Client; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: We could, provided, If you can defer, we can
+- Visible target or prompt: Tutor role: Client; exact completion instruction: “I’ll be the client. Say each complete line, including the missing words.”; exact missing target answers: “We could”; “provided”; “If you can defer”; “we can”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “In a negotiation, would you rather compromise on price, time, or scope? Why?” Exact learner ask-back: “What about you—which one would you compromise on?”
+- Visible target or prompt: Exact Tutor question: “In a negotiation, would you rather compromise on price, time, or scope? Why?”; exact learner ask-back: “What about you—which one would you compromise on?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about make a conditional proposal without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Procurement Lead, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Trading workshop format for budget; tutor is Procurement Lead (調達責任者); first line: “We need the training included without increasing the price.”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Procurement Lead; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the procurement lead.”; exact full exchange: “We need the training included without increasing the price.”; “add training, it stays remote.”; “Which part would move out of the first phase?”; “the custom dashboard, launch in May.”; “Remote training and a later dashboard could fit the budget.”; “Good. I'll document both conditions in the offer.”; exact missing target answers: “We could”; “provided”; “If you can defer”; “we can”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

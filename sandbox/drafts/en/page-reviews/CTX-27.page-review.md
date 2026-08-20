@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/27-advocate-for-an-accessibility-requirement/lesson.html`
-- SHA-256: `312826a2fab5bdacff7fbedea26f4f93682dfa079081ac153e5b575065132fda`
+- SHA-256: `cbd0d711fdd6281aad193ea2e1452ffb5a4691079a48c4ad468533a51c4e5a79`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 1 communicative purpose: まず、希望ではなく必須条件だと明確にします。
-- Learning target: Connect the practical scene to pattern 1 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “To be clear, step-free access is essential, not optional.” Exact English purpose/action: “Use this fixed line to correct any attempt to treat an essential need as a preference. Read the line above aloud.” Exact Japanese purpose/action: “必須の要件を単なる希望として扱われないようにする定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['To be clear,', 'is essential, not optional']; first model: “To be clear, step-free access is essential, not optional.”; job: Use this fixed line to correct any attempt to treat an essential need as a preference.
+- Visible target or prompt: Exact communicative use: “Use this fixed line to correct any attempt to treat an essential need as a preference.”; aligned Japanese: “必須の要件を単なる希望として扱われないようにする定型表現です。”; complete models: “To be clear, step-free access is essential, not optional.”; “To be clear, an accessible bathroom is essential, not optional.”; “To be clear, elevator access is essential, not optional.”; exact highlighted spans: “To be clear,”; “is essential, not optional”; “はっきり申し上げると、”; “必須で、任意ではありません”
 - Learning target: Connect pattern 1’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “To be clear, step-free access is essential, not optional.”; “To be clear, an accessible bathroom is essential, not optional.”; “To be clear, elevator access is essential, not optional.”; “To be clear, a ground-floor room is essential, not optional.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “To be clear, step-free access is essential, not optional.”; “To be clear, an accessible bathroom is essential, not optional.”; “To be clear, elevator access is essential, not optional.”; “To be clear, a ground-floor room is essential, not optional.”; exact highlighted spans: “To be clear,”; “is essential, not optional”; “はっきり申し上げると、”; “必須で、任意ではありません”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['To be clear,', 'is essential, not optional', 'To be clear,', 'is essential, not optional', 'To be clear,', 'is essential, not optional', 'To be clear,', 'is essential, not optional']; authored frame boundaries ['To be clear,', 'is essential, not optional']
+- Visible target or prompt: Exact missing target answers: “To be clear,”; “is essential, not optional”; “To be clear,”; “is essential, not optional”; “To be clear,”; “is essential, not optional”; “To be clear,”; “is essential, not optional”; exact Japanese target cues: “はっきり申し上げると、”; “必須で、任意ではありません”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “はっきり申し上げると、段差のないアクセスは必須で、任意ではありません。”; “はっきり申し上げると、バリアフリーの浴室は必須で、任意ではありません。”; “はっきり申し上げると、エレベーターの利用は必須で、任意ではありません。”; “はっきり申し上げると、1階の部屋は必須で、任意ではありません。”; lexical hints: ['段差のないアクセス:step-free access', 'バリアフリーの浴室:an accessible bathroom', 'エレベーターの利用:elevator access', '1階の部屋:a ground-floor room']
+- Visible target or prompt: Exact complete English answers: “To be clear, step-free access is essential, not optional.”; “To be clear, an accessible bathroom is essential, not optional.”; “To be clear, elevator access is essential, not optional.”; “To be clear, a ground-floor room is essential, not optional.”; support stage: supported; lexical hint chips: “段差のないアクセス:step-free access”; “バリアフリーの浴室:an accessible bathroom”; “エレベーターの利用:elevator access”; “1階の部屋:a ground-floor room”
 - Learning target: Produce complete pattern 1 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “To be clear, ___ is essential, not optional” to state one access requirement that must be met.” Communicative frame: To be clear, ___ is essential, not optional
+- Visible target or prompt: Exact learner prompt: “Use “To be clear, ___ is essential, not optional” to state one access requirement that must be met.”; aligned Japanese prompt: “「To be clear, ___ is essential, not optional」を使って、必ず満たす必要があるアクセス条件を一つ伝えましょう。”
 - Learning target: Use pattern 1 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 2 communicative purpose: 次に、曖昧な約束ではなく、今夜使える代案を尋ねます。
-- Learning target: Connect the practical scene to pattern 2 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “What alternative can you offer me tonight?” Exact English purpose/action: “Use this fixed question to require a concrete alternative for the current situation. Read the line above aloud.” Exact Japanese purpose/action: “現在の状況に対する具体的な代案を求める定型質問です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['What alternative can you offer me', 'What accessible room can you offer me', 'What nearby hotel can you offer me']; first model: “What alternative can you offer me tonight?”; job: Use this fixed question to require a concrete alternative for the current situation.
+- Visible target or prompt: Exact communicative use: “Use this fixed question to require a concrete alternative for the current situation.”; aligned Japanese: “現在の状況に対する具体的な代案を求める定型質問です。”; complete models: “What alternative can you offer me tonight?”; “What alternative can you offer me now?”; “What accessible room can you offer me tonight?”; exact highlighted spans: “What”; “can you offer me”; “どのような”; “提示していただけますか”; “提供できますか”
 - Learning target: Connect pattern 2’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -208,7 +208,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content rather than presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["What alternative can you offer me", "どのような代案を提示していただけますか", "What alternative can you offer me", "どのような代案を提示していただけますか", "What accessible room can you offer me", "どのバリアフリー客室を提供できますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["What", "can you offer me", "どのような", "提示していただけますか", "What", "can you offer me", "どのような", "提示していただけますか", "What", "can you offer me", "どのような", "提供できますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “What alternative can you offer me tonight?”; “What alternative can you offer me now?”; “What accessible room can you offer me tonight?”; “What nearby hotel can you offer me tonight?”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “What alternative can you offer me tonight?”; “What alternative can you offer me now?”; “What accessible room can you offer me tonight?”; “What nearby hotel can you offer me tonight?”; exact highlighted spans: “What”; “can you offer me”; “どのような”; “提示していただけますか”; “提供できますか”; “手配できますか”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -225,7 +225,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["What alternative can you offer me", "どのような代案を提示していただけますか", "What alternative can you offer me", "どのような代案を提示していただけますか", "What accessible room can you offer me", "どのバリアフリー客室を提供できますか", "What nearby hotel can you offer me", "近くのどのホテルを手配できますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["What", "can you offer me", "どのような", "提示していただけますか", "What", "can you offer me", "どのような", "提示していただけますか", "What", "can you offer me", "どのような", "提供できますか", "What", "can you offer me", "どのような", "手配できますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['What alternative can you offer me', 'What alternative can you offer me', 'What accessible room can you offer me', 'What nearby hotel can you offer me']; authored frame boundaries ['What alternative can you offer me', 'What accessible room can you offer me', 'What nearby hotel can you offer me']
+- Visible target or prompt: Exact missing target answers: “What”; “can you offer me”; “What”; “can you offer me”; “What”; “can you offer me”; “What”; “can you offer me”; exact Japanese target cues: “どのような”; “提示していただけますか”; “提供できますか”; “手配できますか”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -242,7 +242,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are part of the authored target itself.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its complete sentence.
 - Component consistency: Uses the shared static synchronized target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["どのような代案を提示していただけますか", "どのような代案を提示していただけますか", "どのバリアフリー客室を提供できますか", "近くのどのホテルを手配できますか"], "blankAnswers": ["What alternative can you offer me", "What alternative can you offer me", "What accessible room can you offer me", "What nearby hotel can you offer me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["どのような", "提示していただけますか", "どのような", "提示していただけますか", "どのような", "提供できますか", "どのような", "手配できますか"], "blankAnswers": ["What", "can you offer me", "What", "can you offer me", "What", "can you offer me", "What", "can you offer me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: checkpoint whole-sentence production from “今夜、どのような代案を提示していただけますか？”; “今、どのような代案を提示していただけますか？”; “今夜、どのバリアフリー客室を提供できますか？”; “今夜、近くのどのホテルを手配できますか？”; lexical hints: none by design
+- Visible target or prompt: Exact complete English answers: “What alternative can you offer me tonight?”; “What alternative can you offer me now?”; “What accessible room can you offer me tonight?”; “What nearby hotel can you offer me tonight?”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce complete pattern 2 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “What alternative can you offer me ___?” to ask for a usable alternative at the time you need it.” Communicative frame: What alternative can you offer me ___?
+- Visible target or prompt: Exact learner prompt: “Use “What ___ can you offer me ___?” to ask what usable alternative is available and when you need it.”; aligned Japanese prompt: “「What ___ can you offer me ___?」を使って、利用できる代案と必要な時間を尋ねましょう。”
 - Learning target: Use pattern 2 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -276,7 +276,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The learner chooses natural articles as part of their own complete sentence.
 - Choice/distractor quality: Open production has no fixed choices; the stable frame bounds acceptable answers.
 - Component consistency: Uses the shared student-sentence/correction feedback component.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Use “What alternative can you offer me ___?” to ask for a usable alternative at the time you need it."]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Use “What ___ can you offer me ___?” to ask what usable alternative is available and when you need it."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-write; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every learner-owned line aloud.
 - Tutor action: Play the hotel manager and pause for every learner line.
-- Visible target or prompt: Replay targets: “To be clear, step-free access is essential, not optional.” and “What alternative can you offer me tonight?”; tutor role: Hotel Manager
+- Visible target or prompt: Tutor role: Hotel Manager; exact full exchange: “I'm sorry. We can try to move you tomorrow.”; “To be clear, step-free access is essential, not optional.”; “I understand. The room we assigned has three steps.”; “What alternative can you offer me tonight?”; “We can move you to our sister hotel and cover the taxi and rate difference.”; “That meets our needs. Please arrange it now.”; exact highlighted targets: “To be clear,”; “is essential, not optional”; “はっきり申し上げると、”; “必須で、任意ではありません”; “What”; “can you offer me”; “どのような”; “提示していただけますか”
 - Learning target: Rehearse both patterns in the full resolved scene with stable roles.
 - Pedagogical value: The learner reads their own complete lines while the tutor supplies only counterpart turns.
 - Failure diagnoses: Tutor modelling learner lines or changing roles would remove the learner’s speaking responsibility.
@@ -310,7 +310,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain in the full model lines.
 - Choice/distractor quality: Turn ownership, not choices, structures this rehearsal.
 - Component consistency: Uses the same six-turn dialogue and roles as the opening scene.
-- Extracted evidence: `{"targetHighlights": ["To be clear,", "is essential, not optional", "はっきり申し上げると、", "必須で、任意ではありません", "What alternative can you offer me", "どのような代案を提示していただけますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["To be clear,", "is essential, not optional", "はっきり申し上げると、", "必須で、任意ではありません", "What", "can you offer me", "どのような", "提示していただけますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete learner line, including the missing words.
 - Tutor action: Play the hotel manager and type only the missing target words.
-- Visible target or prompt: Complete-scene target blanks: ['To be clear,', 'is essential, not optional', 'What alternative can you offer me']; tutor role: Hotel Manager
+- Visible target or prompt: Tutor role: Hotel Manager; exact completion instruction: “I’ll be the hotel manager. Say each complete line, including the missing words.”; exact missing target answers: “To be clear,”; “is essential, not optional”; “What”; “can you offer me”
 - Learning target: Retrieve both target expressions while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks disappear, so the learner must produce the lesson language in context.
 - Failure diagnoses: Blanking non-target dialogue or having the tutor say learner turns would invalidate retrieval.
@@ -327,7 +327,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they belong to an authored target chunk.
 - Choice/distractor quality: No choices are used; the scene context establishes each complete line.
 - Component consistency: Uses the shared role-play completion fields inside the same six-turn scene.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["To be clear,", "is essential, not optional", "What alternative can you offer me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["To be clear,", "is essential, not optional", "What", "can you offer me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the Tutor’s question, then ask the exact related question back.
 - Tutor action: React naturally, answer the ask-back honestly, and follow the most interesting detail.
-- Visible target or prompt: Exact Tutor question: “When choosing a hotel, which feature makes the biggest difference to your comfort?” Exact learner ask-back: “What about you—which feature do you check first?” / ホテルを選ぶとき、快適さに最も影響する設備は何ですか？ / 先生はどうですか？最初にどの設備を確認しますか？
+- Visible target or prompt: Exact Tutor question: “When choosing a hotel, which feature makes the biggest difference to your comfort?”; exact learner ask-back: “What about you—which feature do you check first?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a genuine reciprocal conversation related to the lesson topic without forcing today’s frame.
 - Pedagogical value: An interesting personal question plus ask-back creates real interaction after controlled practice.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would merely repeat the drill.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the traveller and complete both target lines in the new scene.
 - Tutor action: Play the venue coordinator and begin with the first counterpart line.
-- Visible target or prompt: Requesting access at a conference venue; learner is Traveller, tutor is Venue Coordinator; first tutor line: “The main entrance lift is out of service today.”; reuse both target lines.
+- Visible target or prompt: Tutor role: Venue Coordinator; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the venue coordinator.”; exact full exchange: “The main entrance lift is out of service today.”; “elevator access .”; “I understand. The service entrance has a working lift.”; “alternative now?”; “I can meet you there now and escort you to the hall.”; “Thank you. That solution works for us.”; exact missing target answers: “To be clear,”; “is essential, not optional”; “What”; “can you offer me”
 - Learning target: Transfer both lesson expressions to a new resolved practical role-play.
 - Pedagogical value: Explicit new roles and the same two target jobs test flexible use beyond the opening scene.
 - Failure diagnoses: Generic roles, bilingual mismatch, or an unresolved ending would make transfer ambiguous.
@@ -378,7 +378,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain in complete contextual lines except where genuinely inside target blanks.
 - Choice/distractor quality: Turn ownership replaces fixed choices; the scene resolves after both targets are used.
 - Component consistency: Uses the shared six-turn completion dialogue with a short bilingual-aligned transfer introduction.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["To be clear,", "is essential, not optional", "What alternative can you offer me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["To be clear,", "is essential, not optional", "What", "can you offer me"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

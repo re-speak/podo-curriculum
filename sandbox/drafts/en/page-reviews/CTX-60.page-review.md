@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-leadership-high-stakes/lessons/60-make-an-executive-recommendation/lesson.html`
-- SHA-256: `821f6e1a8db6f993cacb4033cb93416608722dd2446d13a291924d99bc5c15ce`
+- SHA-256: `6de641617357df7ea1c9768fea365adb4c7ed1e150e4b506809d39a8dd613460`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: Overall, I recommend proceeding with a limited first phase.; communicative bridge: まず、結論を一文で明確に示します。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Overall, I recommend proceeding with a limited first phase.” Exact English purpose/action: “Use this fixed frame to state the decision you recommend after considering the evidence. Read the line above aloud.” Exact Japanese purpose/action: “根拠を検討したうえで、推奨する判断を示す定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: Overall, I recommend proceeding with a limited first phase.; use: Use this fixed frame to state the decision you recommend after considering the evidence.
+- Visible target or prompt: Exact communicative use: “Use this fixed frame to state the decision you recommend after considering the evidence.”; aligned Japanese: “根拠を検討したうえで、推奨する判断を示す定型表現です。”; complete models: “Overall, I recommend proceeding with a limited first phase.”; “Overall, I recommend renewing the contract for one year.”; “Overall, I recommend pausing expansion until June.”; exact highlighted spans: “Overall, I recommend”; “総合的に判断して、限定的な第1段階を進めることを提言します”; “総合的に判断して、契約を1年更新することを提言します”; “総合的に判断して、6月まで拡大を保留することを提言します”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: Overall, I recommend proceeding with a limited first phase.; Overall, I recommend renewing the contract for one year.; Overall, I recommend pausing expansion until June.; Overall, I recommend selecting the lower-risk option.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Overall, I recommend proceeding with a limited first phase.”; “Overall, I recommend renewing the contract for one year.”; “Overall, I recommend pausing expansion until June.”; “Overall, I recommend selecting the lower-risk option.”; exact highlighted spans: “Overall, I recommend”; “総合的に判断して、限定的な第1段階を進めることを提言します”; “総合的に判断して、契約を1年更新することを提言します”; “総合的に判断して、6月まで拡大を保留することを提言します”; “総合的に判断して、リスクの低い案を選ぶことを提言します”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: Overall, I recommend; Overall, I recommend; Overall, I recommend; Overall, I recommend
+- Visible target or prompt: Exact missing target answers: “Overall, I recommend”; “Overall, I recommend”; “Overall, I recommend”; “Overall, I recommend”; exact Japanese target cues: “総合的に判断して、限定的な第1段階を進めることを提言します”; “総合的に判断して、契約を1年更新することを提言します”; “総合的に判断して、6月まで拡大を保留することを提言します”; “総合的に判断して、リスクの低い案を選ぶことを提言します”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: Overall, I recommend ___; support stage checkpoint; no hint chips at checkpoint
+- Visible target or prompt: Exact complete English answers: “Overall, I recommend proceeding with a limited first phase.”; “Overall, I recommend renewing the contract for one year.”; “Overall, I recommend pausing expansion until June.”; “Overall, I recommend selecting the lower-risk option.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “Overall, I recommend ___” to give one bounded course of action after reviewing the evidence.” Frame: Overall, I recommend ___
+- Visible target or prompt: Exact learner prompt: “Use “Overall, I recommend ___” to give one bounded course of action after reviewing the evidence.”; aligned Japanese prompt: “「Overall, I recommend ___」を使って、根拠を検討したうえで限定的な行動方針を一つ提言しましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “Overall, I recommend ___” to give one bounded course of action after reviewing the evidence.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: What it comes down to is that we can limit the downside while testing demand.; communicative bridge: 次に、提言を支える最も重要な理由に絞ります。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “What it comes down to is that we can limit the downside while testing demand.” Exact English purpose/action: “Use this fixed frame to reduce a complex decision to the decisive consideration. Read the line above aloud.” Exact Japanese purpose/action: “複雑な判断を決定的な一つの要素に絞る定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: What it comes down to is that we can limit the downside while testing demand.; use: Use this fixed frame to reduce a complex decision to the decisive consideration.
+- Visible target or prompt: Exact communicative use: “Use this fixed frame to reduce a complex decision to the decisive consideration.”; aligned Japanese: “複雑な判断を決定的な一つの要素に絞る定型表現です。”; complete models: “What it comes down to is that we can limit the downside while testing demand.”; “What it comes down to is that we keep flexibility without losing momentum.”; “What it comes down to is that the evidence does not support full expansion yet.”; exact highlighted spans: “What it comes down to is that”; “結局のところ重要なのは”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: What it comes down to is that we can limit the downside while testing demand.; What it comes down to is that we keep flexibility without losing momentum.; What it comes down to is that the evidence does not support full expansion yet.; What it comes down to is that the smaller option protects our core business.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “What it comes down to is that we can limit the downside while testing demand.”; “What it comes down to is that we keep flexibility without losing momentum.”; “What it comes down to is that the evidence does not support full expansion yet.”; “What it comes down to is that the smaller option protects our core business.”; exact highlighted spans: “What it comes down to is that”; “結局のところ重要なのは”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: What it comes down to is that; What it comes down to is that; What it comes down to is that; What it comes down to is that
+- Visible target or prompt: Exact missing target answers: “What it comes down to is that”; “What it comes down to is that”; “What it comes down to is that”; “What it comes down to is that”; exact Japanese target cues: “結局のところ重要なのは”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: What it comes down to is that ___; support stage supported; 損失:downside; 需要:demand; 柔軟性:flexibility; 勢い:momentum; 根拠:evidence; 全面展開:full expansion; 小さい案:smaller option; 主力事業:core business
+- Visible target or prompt: Exact complete English answers: “What it comes down to is that we can limit the downside while testing demand.”; “What it comes down to is that we keep flexibility without losing momentum.”; “What it comes down to is that the evidence does not support full expansion yet.”; “What it comes down to is that the smaller option protects our core business.”; support stage: supported; lexical hint chips: “損失:downside”; “需要:demand”; “柔軟性:flexibility”; “勢い:momentum”; “根拠:evidence”; “全面展開:full expansion”; “小さい案:smaller option”; “主力事業:core business”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “What it comes down to is that ___” to state the decisive reason for your recommendation.” Frame: What it comes down to is that ___
+- Visible target or prompt: Exact learner prompt: “Use “What it comes down to is that ___” to state the decisive reason for your recommendation.”; aligned Japanese prompt: “「What it comes down to is that ___」を使って、提言を支える決定的な理由を伝えましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “What it comes down to is that ___” to state the decisive reason for your recommendation.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Board Chair.
 - Tutor action: Read only the Board Chair turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Board Chair; learner lines include “Overall, I recommend proceeding with a limited first phase.” and “What it comes down to is that we can limit the downside while testing demand.”.
+- Visible target or prompt: Tutor role: Board Chair; exact full exchange: “The market test is encouraging, but the demand forecast is still incomplete. What do you recommend?”; “Overall, I recommend proceeding with a limited first phase.”; “Why is that the best course?”; “What it comes down to is that we can limit the downside while testing demand.”; “I support a six-month first phase with a review after three months.”; “Agreed. I'll bring that decision and review point to the board.”; exact highlighted targets: “Overall, I recommend”; “総合的に判断して、限定的な第1段階を進めることを提言します”; “What it comes down to is that”; “結局のところ重要なのは”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Board Chair; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: Overall, I recommend, What it comes down to is that
+- Visible target or prompt: Tutor role: Board Chair; exact completion instruction: “I’ll be the board chair. Say each complete line, including the missing words.”; exact missing target answers: “Overall, I recommend”; “What it comes down to is that”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “When evidence is incomplete, are you comfortable making a small reversible decision? Why or why not?” Exact learner ask-back: “What about you—are you comfortable with that?”
+- Visible target or prompt: Exact Tutor question: “When evidence is incomplete, are you comfortable making a small reversible decision? Why or why not?”; exact learner ask-back: “What about you—are you comfortable with that?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about make an executive recommendation under uncertainty without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Audit Chair, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Recommending a contract renewal; tutor is Audit Chair (監査委員長); first line: “The supplier improved, but we only have six months of data.”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Audit Chair; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the audit chair.”; exact full exchange: “The supplier improved, but we only have six months of data.”; “renewing the contract for one year.”; “What is the decisive reason for one year?”; “we keep flexibility without losing momentum.”; “That protects flexibility while keeping the work moving.”; “Exactly. I'll submit the one-year renewal for approval.”; exact missing target answers: “Overall, I recommend”; “What it comes down to is that”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

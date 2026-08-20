@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-workplace-essentials/lessons/32-repair-a-bad-connection-during-a-call/lesson.html`
-- SHA-256: `ae297e52c1195f5218298c3b04c658baf6467742486b1bbdf59d982274ff62d5`
+- SHA-256: `fae79e3de408a6d6ec24b137fd4335a89f469392d666e0248a52d4159eb9428f`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 1 communicative purpose: まず、どこから聞こえなかったかを具体的に伝えます。
-- Learning target: Connect the practical scene to pattern 1 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Sorry, you cut out after 'Friday'.” Exact English purpose/action: “Use this to pinpoint the last word you heard before the connection failed. Read the line above aloud.” Exact Japanese purpose/action: “接続が切れる直前に聞こえた最後の言葉を示す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['cut out after']; first model: “Sorry, you cut out after 'Friday'.”; job: Use this to pinpoint the last word you heard before the connection failed.
+- Visible target or prompt: Exact communicative use: “Use this to pinpoint the last word you heard before the connection failed.”; aligned Japanese: “接続が切れる直前に聞こえた最後の言葉を示す表現です。”; complete models: “Sorry, you cut out after 'Friday'.”; “Sorry, you cut out after 'budget'.”; “Sorry, you cut out after 'send it'.”; exact highlighted spans: “cut out after”; “のあとで音声が途切れました”
 - Learning target: Connect pattern 1’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Sorry, you cut out after 'Friday'.”; “Sorry, you cut out after 'budget'.”; “Sorry, you cut out after 'send it'.”; “Sorry, you cut out after 'the client'.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Sorry, you cut out after 'Friday'.”; “Sorry, you cut out after 'budget'.”; “Sorry, you cut out after 'send it'.”; “Sorry, you cut out after 'the client'.”; exact highlighted spans: “cut out after”; “のあとで音声が途切れました”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify where the changing content belongs.
 - Tutor action: Point out the one ordering or usage contrast, then move on.
-- Visible target or prompt: Name the last clear words after “after” / 最後に聞こえた語は after のあと; formula: Sorry + you cut out after + last clear words
+- Visible target or prompt: Exact rule: “Quote the final words you actually heard.”; aligned Japanese: “実際に最後まで聞こえた言葉を引用します。”
 - Learning target: Make the one structural distinction needed to use pattern 1 accurately.
 - Pedagogical value: The rule explains a production-relevant boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each row’s chunks, then say the completed sentence aloud.
 - Tutor action: Let the learner order the chunks and prompt the full spoken sentence.
-- Visible target or prompt: Reorder complete answers: “Sorry, you cut out after 'Friday'.”; “Sorry, you cut out after 'budget'.”; “Sorry, you cut out after 'send it'.”; “Sorry, you cut out after 'the client'.”
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “Sorry, you cut out after 'Friday'.”; “Sorry, you cut out after 'budget'.”; “Sorry, you cut out after 'send it'.”; “Sorry, you cut out after 'the client'.”
 - Learning target: Retrieve meaningful chunks in the order required by pattern 1.
 - Pedagogical value: Three or four honest chunks test sentence assembly without splitting bound words.
 - Failure diagnoses: Punctuation-only chips, detached function words, or padded choices would create busywork.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['cut out after', 'cut out after', 'cut out after', 'cut out after']; authored frame boundaries ['cut out after']
+- Visible target or prompt: Exact missing target answers: “cut out after”; “cut out after”; “cut out after”; “cut out after”; exact Japanese target cues: “のあとで音声が途切れました”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: checkpoint whole-sentence production from “すみません、「Friday」のあとで音声が途切れました。”; “すみません、「budget」のあとで音声が途切れました。”; “すみません、「send it」のあとで音声が途切れました。”; “すみません、「the client」のあとで音声が途切れました。”; lexical hints: none by design
+- Visible target or prompt: Exact complete English answers: “Sorry, you cut out after 'Friday'.”; “Sorry, you cut out after 'budget'.”; “Sorry, you cut out after 'send it'.”; “Sorry, you cut out after 'the client'.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce complete pattern 1 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “Sorry, you cut out after ___” to identify the last words you heard clearly.” Communicative frame: Sorry, you cut out after ___
+- Visible target or prompt: Exact learner prompt: “Use “Sorry, you cut out after ___” to identify the last words you heard clearly.”; aligned Japanese prompt: “「Sorry, you cut out after ___」を使って、最後にはっきり聞こえた言葉を伝えましょう。”
 - Learning target: Use pattern 1 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -215,16 +215,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 2 communicative purpose: 次に、必要な情報だけをもう一度言ってもらいます。
-- Learning target: Connect the practical scene to pattern 2 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Could you repeat the deadline?” Exact English purpose/action: “Use this to ask specifically for the missed deadline rather than the whole discussion. Read the line above aloud.” Exact Japanese purpose/action: “会話全体ではなく、聞き逃した締め切りだけをもう一度尋ねる表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['Could you repeat']; first model: “Could you repeat the deadline?”; job: Use this to ask specifically for the missed deadline rather than the whole discussion.
+- Visible target or prompt: Exact communicative use: “Use this to ask specifically for the missed deadline rather than the whole discussion.”; aligned Japanese: “会話全体ではなく、聞き逃した締め切りだけをもう一度尋ねる表現です。”; complete models: “Could you repeat the deadline?”; “Could you repeat the date?”; “Could you repeat the last point?”; exact highlighted spans: “Could you repeat”; “もう一度言っていただけますか”
 - Learning target: Connect pattern 2’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Could you repeat the deadline?”; “Could you repeat the date?”; “Could you repeat the last point?”; “Could you repeat the client name?”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Could you repeat the deadline?”; “Could you repeat the date?”; “Could you repeat the last point?”; “Could you repeat the client name?”; exact highlighted spans: “Could you repeat”; “もう一度言っていただけますか”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify where the changing content belongs.
 - Tutor action: Point out the one ordering or usage contrast, then move on.
-- Visible target or prompt: Name only the information you missed / 聞き逃した情報だけを示す; formula: Could you repeat + missed information?
+- Visible target or prompt: Exact rule: “A specific noun makes the repair faster and more accurate.”; aligned Japanese: “具体的な名詞を使うと、より早く正確に聞き直せます。”
 - Learning target: Make the one structural distinction needed to use pattern 2 accurately.
 - Pedagogical value: The rule explains a production-relevant boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['Could you repeat', 'Could you repeat', 'Could you repeat', 'Could you repeat']; authored frame boundaries ['Could you repeat']
+- Visible target or prompt: Exact missing target answers: “Could you repeat”; “Could you repeat”; “Could you repeat”; “Could you repeat”; exact Japanese target cues: “もう一度言っていただけますか”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “締め切りをもう一度言っていただけますか？”; “日付をもう一度言っていただけますか？”; “最後の点をもう一度言っていただけますか？”; “顧客名をもう一度言っていただけますか？”; lexical hints: ['締め切り:the deadline', '日付:the date', '最後の点:the last point', '顧客名:the client name']
+- Visible target or prompt: Exact complete English answers: “Could you repeat the deadline?”; “Could you repeat the date?”; “Could you repeat the last point?”; “Could you repeat the client name?”; support stage: supported; lexical hint chips: “締め切り:the deadline”; “日付:the date”; “最後の点:the last point”; “顧客名:the client name”
 - Learning target: Produce complete pattern 2 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “Could you repeat ___?” to ask for the exact detail you missed.” Communicative frame: Could you repeat ___?
+- Visible target or prompt: Exact learner prompt: “Use “Could you repeat ___?” to ask for the exact detail you missed.”; aligned Japanese prompt: “「Could you repeat ___?」を使って、聞き逃した情報を具体的にもう一度尋ねましょう。”
 - Learning target: Use pattern 2 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every learner-owned line aloud.
 - Tutor action: Play the meeting host and pause for every learner line.
-- Visible target or prompt: Replay targets: “Sorry, you cut out after 'Friday'.” and “Could you repeat the deadline?”; tutor role: Meeting Host
+- Visible target or prompt: Tutor role: Meeting Host; exact full exchange: “Please send the revised slides by Friday—”; “Sorry, you cut out after 'Friday'.”; “Of course. I said the final deadline has changed.”; “Could you repeat the deadline?”; “The deadline is Friday at five your time.”; “Got it. Friday at five my time.”; exact highlighted targets: “cut out after”; “のあとで音声が途切れました”; “Could you repeat”; “もう一度言っていただけますか”
 - Learning target: Rehearse both patterns in the full resolved scene with stable roles.
 - Pedagogical value: The learner reads their own complete lines while the tutor supplies only counterpart turns.
 - Failure diagnoses: Tutor modelling learner lines or changing roles would remove the learner’s speaking responsibility.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete learner line, including the missing words.
 - Tutor action: Play the meeting host and type only the missing target words.
-- Visible target or prompt: Complete-scene target blanks: ['cut out after', 'Could you repeat']; tutor role: Meeting Host
+- Visible target or prompt: Tutor role: Meeting Host; exact completion instruction: “I’ll be the meeting host. Say each complete line, including the missing words.”; exact missing target answers: “cut out after”; “Could you repeat”
 - Learning target: Retrieve both target expressions while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks disappear, so the learner must produce the lesson language in context.
 - Failure diagnoses: Blanking non-target dialogue or having the tutor say learner turns would invalidate retrieval.
@@ -387,7 +387,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the Tutor’s question, then ask the exact related question back.
 - Tutor action: React naturally, answer the ask-back honestly, and follow the most interesting detail.
-- Visible target or prompt: Exact Tutor question: “Which is more frustrating on a call: bad audio or a frozen screen, and why?” Exact learner ask-back: “What about you—which one bothers you more?” / 通話では、音声不良と画面停止のどちらがより困りますか？なぜですか？ / 先生はどうですか？どちらのほうが困りますか？
+- Visible target or prompt: Exact Tutor question: “Which is more frustrating on a call: bad audio or a frozen screen, and why?”; exact learner ask-back: “What about you—which one bothers you more?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a genuine reciprocal conversation related to the lesson topic without forcing today’s frame.
 - Pedagogical value: An interesting personal question plus ask-back creates real interaction after controlled practice.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would merely repeat the drill.
@@ -421,7 +421,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new scene.
 - Tutor action: Play the supplier and begin with the first counterpart line.
-- Visible target or prompt: Repairing a phone call with a supplier; learner is Colleague, tutor is Supplier; first tutor line: “About the replacement budget—”; reuse both target lines.
+- Visible target or prompt: Tutor role: Supplier; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the supplier.”; exact full exchange: “About the replacement budget—”; “Sorry, you 'budget'.”; “I said the budget approval is still pending.”; “the last point?”; “Certainly. The last point was that shipping starts after approval.”; “Thanks. I'll note that in the update.”; exact missing target answers: “cut out after”; “Could you repeat”
 - Learning target: Transfer both lesson expressions to a new resolved practical role-play.
 - Pedagogical value: Explicit new roles and the same two target jobs test flexible use beyond the opening scene.
 - Failure diagnoses: Generic roles, bilingual mismatch, or an unresolved ending would make transfer ambiguous.

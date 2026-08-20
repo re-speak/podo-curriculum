@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import copy
+import html
 import pathlib
 import sys
 import unittest
@@ -16,6 +17,29 @@ import generate_contextual_hotels_food_batch as batch
 
 
 class ContextualHotelsFoodBatchTests(unittest.TestCase):
+    def test_transition_uses_an_aligned_pair_without_parsing_write_copy(self):
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                purpose_en, purpose_ja = lesson[f"p{part}"]["meaning"]
+                transition = html.unescape(pages[f"part{part}-intro"])
+                self.assertIn(purpose_en.rstrip(". "), transition, (number, part))
+                self.assertIn(purpose_ja.rstrip("。 "), transition, (number, part))
+                self.assertIn("Read the line above aloud.", transition, (number, part))
+                self.assertIn("上の文を声に出して読みましょう。", transition, (number, part))
+                self.assertNotIn("practice this useful line", transition, (number, part))
+
+        explicit = copy.deepcopy(batch.LESSONS[7]["p1"])
+        explicit["write_script"] = "A deliberately unparsable learner-facing instruction"
+        explicit["transition_purpose"] = (
+            "State the booking name clearly",
+            "予約名をはっきり伝えます",
+        )
+        transition = html.unescape(batch.transition(1, explicit))
+        self.assertIn("State the booking name clearly. Read the line above aloud.", transition)
+        self.assertIn("予約名をはっきり伝えます。 上の文を声に出して読みましょう。", transition)
+
     def test_batch_is_the_authorized_six_lesson_course(self):
         self.assertEqual(set(batch.LESSONS), set(range(7, 13)))
         self.assertEqual(set(batch.AUTHORITATIVE), set(batch.LESSONS))

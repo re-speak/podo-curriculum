@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-projects-deadlines/lessons/41-deliver-bad-news-with-a-next-step/lesson.html`
-- SHA-256: `d5bb85548926bc84c42bb425bd4c58dd26af144f8047d2a0043c1157444073db`
+- SHA-256: `b06adc1cda64dfb89f6e47967b2deb8adb926fb044bc878e0edae1be145065ee`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why pattern 1 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 1 communicative purpose: まず、悪い知らせだと示し、公開できない日を明確にします。
-- Learning target: Connect the practical scene to pattern 1 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “I'm afraid we won't be ready for Monday's launch.” Exact English purpose/action: “Use this bounded line to give difficult schedule news directly but professionally. Read the line above aloud.” Exact Japanese purpose/action: “難しい日程の知らせを率直かつ丁寧に伝える定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ["I'm afraid we won't be ready for Monday's launch", "I'm afraid we won't be ready for Friday's review", "I'm afraid we won't be ready for tomorrow's demo", "I'm afraid we won't be ready for the client meeting"]; first model: “I'm afraid we won't be ready for Monday's launch.”; job: Use “I'm afraid we won't be ready for ___” to tell the director which event will be delayed.
+- Visible target or prompt: Exact communicative use: “Use this bounded line to give difficult schedule news directly but professionally.”; aligned Japanese: “難しい日程の知らせを率直かつ丁寧に伝える定型表現です。”; complete models: “I'm afraid we won't be ready for Monday's launch.”; “I'm afraid we won't be ready for Friday's review.”; “I'm afraid we won't be ready for tomorrow's demo.”; exact highlighted spans: “I'm afraid”; “we won't be ready for”; “残念ですが、”; “には間に合いません”
 - Learning target: Connect pattern 1’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -106,7 +106,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["I'm afraid we won't be ready for Monday's launch", "残念ですが、月曜日の公開には間に合いません", "I'm afraid we won't be ready for Friday's review", "残念ですが、金曜日のレビューには間に合いません", "I'm afraid we won't be ready for tomorrow's demo", "残念ですが、明日のデモには間に合いません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません", "I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません", "I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “I'm afraid we won't be ready for Monday's launch.”; “I'm afraid we won't be ready for Friday's review.”; “I'm afraid we won't be ready for tomorrow's demo.”; “I'm afraid we won't be ready for the client meeting.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I'm afraid we won't be ready for Monday's launch.”; “I'm afraid we won't be ready for Friday's review.”; “I'm afraid we won't be ready for tomorrow's demo.”; “I'm afraid we won't be ready for the client meeting.”; exact highlighted spans: “I'm afraid”; “we won't be ready for”; “残念ですが、”; “には間に合いません”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -123,7 +123,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["I'm afraid we won't be ready for Monday's launch", "残念ですが、月曜日の公開には間に合いません", "I'm afraid we won't be ready for Friday's review", "残念ですが、金曜日のレビューには間に合いません", "I'm afraid we won't be ready for tomorrow's demo", "残念ですが、明日のデモには間に合いません", "I'm afraid we won't be ready for the client meeting", "残念ですが、顧客会議には間に合いません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません", "I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません", "I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません", "I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["I'm afraid we won't be ready for Monday's launch", "I'm afraid we won't be ready for Friday's review", "I'm afraid we won't be ready for tomorrow's demo", "I'm afraid we won't be ready for the client meeting"]; authored pattern-1 boundaries ["I'm afraid we won't be ready for Monday's launch", "I'm afraid we won't be ready for Friday's review", "I'm afraid we won't be ready for tomorrow's demo", "I'm afraid we won't be ready for the client meeting"]
+- Visible target or prompt: Exact missing target answers: “I'm afraid”; “we won't be ready for”; “I'm afraid”; “we won't be ready for”; “I'm afraid”; “we won't be ready for”; “I'm afraid”; “we won't be ready for”; exact Japanese target cues: “残念ですが、”; “には間に合いません”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -140,7 +140,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["残念ですが、月曜日の公開には間に合いません", "残念ですが、金曜日のレビューには間に合いません", "残念ですが、明日のデモには間に合いません", "残念ですが、顧客会議には間に合いません"], "blankAnswers": ["I'm afraid we won't be ready for Monday's launch", "I'm afraid we won't be ready for Friday's review", "I'm afraid we won't be ready for tomorrow's demo", "I'm afraid we won't be ready for the client meeting"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["残念ですが、", "には間に合いません", "残念ですが、", "には間に合いません", "残念ですが、", "には間に合いません", "残念ですが、", "には間に合いません"], "blankAnswers": ["I'm afraid", "we won't be ready for", "I'm afraid", "we won't be ready for", "I'm afraid", "we won't be ready for", "I'm afraid", "we won't be ready for"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-1 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “I'm afraid we won't be ready for Monday's launch.”; “I'm afraid we won't be ready for Friday's review.”; “I'm afraid we won't be ready for tomorrow's demo.”; “I'm afraid we won't be ready for the client meeting.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-1 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “I'm afraid we won't be ready for ___” to tell the director which event will be delayed. Stable frame: I'm afraid we won't be ready for ___
+- Visible target or prompt: Exact learner prompt: “Use “I'm afraid we won't be ready for ___” to tell the director which event will be delayed.”; aligned Japanese prompt: “「I'm afraid we won't be ready for ___」を使って、どの予定に間に合わないか責任者に伝えましょう。”
 - Learning target: Transfer pattern 1 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why pattern 2 is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the activity.
-- Visible target or prompt: Part 2 communicative purpose: 次に、新しい日程と、立て直す準備があることを示します。
-- Learning target: Connect the practical scene to pattern 2 without adding a second drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The aligned Japanese bridge names the communicative job.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “We'll need to push it back by a week, and I have a recovery plan.” Exact English purpose/action: “Use this bounded move to give a revised date and signal that a recovery plan is ready. Read the line above aloud.” Exact Japanese purpose/action: “新しい日程を示し、立て直し計画も用意していると伝える定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief meaning explanation.
 - Tutor action: Explain the communicative use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ["We'll need to push it back by a week, and I have a recovery plan", "We'll need to push it back by two days, and I have a recovery plan", "We'll need to push it back until Friday, and I have a recovery plan", "We'll need to push it back to next month, and I have a recovery plan"]; first model: “We'll need to push it back by a week, and I have a recovery plan.”; job: Use “We'll need to push it back ___, and I have a recovery plan” to give the new timing and show there is a next step.
+- Visible target or prompt: Exact communicative use: “Use this bounded move to give a revised date and signal that a recovery plan is ready.”; aligned Japanese: “新しい日程を示し、立て直し計画も用意していると伝える定型表現です。”; complete models: “We'll need to push it back by a week, and I have a recovery plan.”; “We'll need to push it back by two days, and I have a recovery plan.”; “We'll need to push it back until Friday, and I have a recovery plan.”; exact highlighted spans: “We'll need to push it back”; “and I have a recovery plan”; “延期する必要がありますが、”; “立て直し計画があります”
 - Learning target: Connect pattern 2’s authored target boundary to its workplace use and varied examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than abstract.
 - Failure diagnoses: Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.
@@ -208,7 +208,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content instead of presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["We'll need to push it back by a week, and I have a recovery plan", "一週間延期する必要がありますが、立て直し計画があります", "We'll need to push it back by two days, and I have a recovery plan", "二日延期する必要がありますが、立て直し計画があります", "We'll need to push it back until Friday, and I have a recovery plan", "金曜日まで延期する必要がありますが、立て直し計画があります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります", "We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります", "We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “We'll need to push it back by a week, and I have a recovery plan.”; “We'll need to push it back by two days, and I have a recovery plan.”; “We'll need to push it back until Friday, and I have a recovery plan.”; “We'll need to push it back to next month, and I have a recovery plan.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “We'll need to push it back by a week, and I have a recovery plan.”; “We'll need to push it back by two days, and I have a recovery plan.”; “We'll need to push it back until Friday, and I have a recovery plan.”; “We'll need to push it back to next month, and I have a recovery plan.”; exact highlighted spans: “We'll need to push it back”; “and I have a recovery plan”; “延期する必要がありますが、”; “立て直し計画があります”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful workplace variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -225,7 +225,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["We'll need to push it back by a week, and I have a recovery plan", "一週間延期する必要がありますが、立て直し計画があります", "We'll need to push it back by two days, and I have a recovery plan", "二日延期する必要がありますが、立て直し計画があります", "We'll need to push it back until Friday, and I have a recovery plan", "金曜日まで延期する必要がありますが、立て直し計画があります", "We'll need to push it back to next month, and I have a recovery plan", "来月まで延期する必要がありますが、立て直し計画があります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります", "We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります", "We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります", "We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ["We'll need to push it back by a week, and I have a recovery plan", "We'll need to push it back by two days, and I have a recovery plan", "We'll need to push it back until Friday, and I have a recovery plan", "We'll need to push it back to next month, and I have a recovery plan"]; authored pattern-2 boundaries ["We'll need to push it back by a week, and I have a recovery plan", "We'll need to push it back by two days, and I have a recovery plan", "We'll need to push it back until Friday, and I have a recovery plan", "We'll need to push it back to next month, and I have a recovery plan"]
+- Visible target or prompt: Exact missing target answers: “We'll need to push it back”; “and I have a recovery plan”; “We'll need to push it back”; “and I have a recovery plan”; “We'll need to push it back”; “and I have a recovery plan”; “We'll need to push it back”; “and I have a recovery plan”; exact Japanese target cues: “延期する必要がありますが、”; “立て直し計画があります”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying complete sentences.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -242,7 +242,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely part of the authored target.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its source sentence.
 - Component consistency: Uses the static synchronized shared target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["一週間延期する必要がありますが、立て直し計画があります", "二日延期する必要がありますが、立て直し計画があります", "金曜日まで延期する必要がありますが、立て直し計画があります", "来月まで延期する必要がありますが、立て直し計画があります"], "blankAnswers": ["We'll need to push it back by a week, and I have a recovery plan", "We'll need to push it back by two days, and I have a recovery plan", "We'll need to push it back until Friday, and I have a recovery plan", "We'll need to push it back to next month, and I have a recovery plan"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["延期する必要がありますが、", "立て直し計画があります", "延期する必要がありますが、", "立て直し計画があります", "延期する必要がありますが、", "立て直し計画があります", "延期する必要がありますが、", "立て直し計画があります"], "blankAnswers": ["We'll need to push it back", "and I have a recovery plan", "We'll need to push it back", "and I have a recovery plan", "We'll need to push it back", "and I have a recovery plan", "We'll need to push it back", "and I have a recovery plan"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence aloud.
 - Tutor action: Type the learner’s complete English sentence exactly as they say it.
-- Visible target or prompt: Produce all four complete pattern-2 sentences from Japanese; support stage checkpoint; hints [].
+- Visible target or prompt: Exact complete English answers: “We'll need to push it back by a week, and I have a recovery plan.”; “We'll need to push it back by two days, and I have a recovery plan.”; “We'll need to push it back until Friday, and I have a recovery plan.”; “We'll need to push it back to next month, and I have a recovery plan.”; support stage: checkpoint; lexical hint chips: none
 - Learning target: Produce four complete pattern-2 sentences from meaning at the declared checkpoint stage.
 - Pedagogical value: A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.
 - Failure diagnoses: Adding decorative hints would weaken this deliberate independent-production checkpoint.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally relevant sentence that completes the named workplace job.
 - Tutor action: Let the learner speak first, respond naturally, then capture and correct only what helps.
-- Visible target or prompt: Use “We'll need to push it back ___, and I have a recovery plan” to give the new timing and show there is a next step. Stable frame: We'll need to push it back ___, and I have a recovery plan
+- Visible target or prompt: Exact learner prompt: “Use “We'll need to push it back ___, and I have a recovery plan” to give the new timing and show there is a next step.”; aligned Japanese prompt: “「We'll need to push it back ___, and I have a recovery plan」を使って、新しい日程と立て直し策があることを伝えましょう。”
 - Learning target: Transfer pattern 2 into a new but clearly specified communicative use.
 - Pedagogical value: The visible frame and job make open production actionable without prescribing the learner’s content.
 - Failure diagnoses: A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every colleague line aloud while the tutor plays the counterpart.
 - Tutor action: Play the director and pause for each learner-owned line.
-- Visible target or prompt: Replay a launch that cannot happen on monday; learner reads Colleague lines and tutor plays Director; both target patterns remain complete.
+- Visible target or prompt: Tutor role: Director; exact full exchange: “Are we still set for Monday's launch?”; “I'm afraid we won't be ready for Monday's launch.”; “How far behind are we?”; “We'll need to push it back by a week, and I have a recovery plan.”; “All right. Talk me through the plan.”; “Today we will fix the final test and publish a daily update.”; exact highlighted targets: “I'm afraid”; “we won't be ready for”; “残念ですが、”; “には間に合いません”; “We'll need to push it back”; “and I have a recovery plan”; “延期する必要がありますが、”; “立て直し計画があります”
 - Learning target: Replay the resolved six-turn exchange with both target patterns in context.
 - Pedagogical value: The roleplay integrates both moves without asking the tutor to model learner production.
 - Failure diagnoses: Unclear roles or tutor-read learner lines would remove the learner’s speaking job.
@@ -310,7 +310,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain embedded in complete natural turns.
 - Choice/distractor quality: Dialogue timing supplies the response path; no distractors are needed.
 - Component consistency: Uses the same six-turn scene and stable roles introduced earlier.
-- Extracted evidence: `{"targetHighlights": ["I'm afraid we won't be ready for Monday's launch", "残念ですが、月曜日の公開には間に合いません", "We'll need to push it back by a week, and I have a recovery plan", "一週間延期する必要がありますが、立て直し計画があります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["I'm afraid", "we won't be ready for", "残念ですが、", "には間に合いません", "We'll need to push it back", "and I have a recovery plan", "延期する必要がありますが、", "立て直し計画があります"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete colleague line aloud, including all missing target chunks.
 - Tutor action: Play the director and type only the missing target words.
-- Visible target or prompt: Complete a launch that cannot happen on monday with target blanks ["I'm afraid we won't be ready for Monday's launch", "We'll need to push it back by a week, and I have a recovery plan"]; tutor plays Director.
+- Visible target or prompt: Tutor role: Director; exact completion instruction: “I’ll be the director. Say each complete line, including the missing words.”; exact missing target answers: “I'm afraid”; “we won't be ready for”; “We'll need to push it back”; “and I have a recovery plan”
 - Learning target: Retrieve both patterns while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.
 - Failure diagnoses: Blanking full turns or non-target vocabulary would destabilise the taught boundary.
@@ -327,7 +327,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless authored inside the target chunk.
 - Choice/distractor quality: No choices are used; each blank is anchored to the previously read scene.
 - Component consistency: Uses the shared six-turn completion roleplay and phrase inputs.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I'm afraid we won't be ready for Monday's launch", "We'll need to push it back by a week, and I have a recovery plan"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I'm afraid", "we won't be ready for", "We'll need to push it back", "and I have a recovery plan"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor’s real question, then ask the visible reciprocal question.
 - Tutor action: React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.
-- Visible target or prompt: Exact reciprocal questions: “When plans go wrong, do you prefer to hear the bad news immediately or together with a solution?”; “What about you—when do you want to hear bad news?”
+- Visible target or prompt: Exact Tutor question: “When plans go wrong, do you prefer to hear the bad news immediately or together with a solution?”; exact learner ask-back: “What about you—when do you want to hear bad news?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a reciprocal conversation relevant to deliver bad news with a next step without forcing today’s pattern.
 - Pedagogical value: Both exact questions stand alone, invite personal content, and create genuine two-way talk.
 - Failure diagnoses: A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the colleague and complete both target lines in the new workplace situation.
 - Tutor action: Play the client director, begin with the first line, and carry the exchange to resolution.
-- Visible target or prompt: Delaying a client review; learner is Colleague, tutor is Client Director; first tutor line: “Can your team present the final design at tomorrow's demo?”; same two target patterns are retrieved in a new scene.
+- Visible target or prompt: Tutor role: Client Director; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the client director.”; exact full exchange: “Can your team present the final design at tomorrow's demo?”; “tomorrow's demo.”; “What date can you commit to instead?”; “until Friday, .”; “Friday works if you send me a progress note tomorrow.”; “Agreed. I will send the note by noon tomorrow.”; exact missing target answers: “I'm afraid”; “we won't be ready for”; “We'll need to push it back”; “and I have a recovery plan”
 - Learning target: Transfer both stable patterns to a new roleplay with a different practical context.
 - Pedagogical value: The new role and situation require meaningful transfer while preserving the two learned moves.
 - Failure diagnoses: Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.
@@ -378,7 +378,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain visible outside target blanks unless they belong to the authored phrase.
 - Choice/distractor quality: Roleplay turns guide the exchange; no unrelated distractors are introduced.
 - Component consistency: Uses the shared six-turn completion component with explicit new tutor role and same two lines.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I'm afraid we won't be ready for tomorrow's demo", "We'll need to push it back until Friday, and I have a recovery plan"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["I'm afraid", "we won't be ready for", "We'll need to push it back", "and I have a recovery plan"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-complex-decisions/lessons/28-resolve-conflicting-booking-information/lesson.html`
-- SHA-256: `0a5ebe2cfb1c58ab79b3d4195a5cbded8356a0b620a096d21339ca732af8b893`
+- SHA-256: `44153f8e1c6066ee7091d721be35a9cc44ca2e36b7e7c07e1c3a8d8ba7a85834`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 1 communicative purpose: まず、二つの情報源がどう食い違っているかを一文で示します。
-- Learning target: Connect the practical scene to pattern 1 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “My confirmation says breakfast is included, whereas your system says it isn't.” Exact English purpose/action: “Use this fixed contrast to put two conflicting records side by side. Read the line above aloud.” Exact Japanese purpose/action: “食い違う二つの記録を並べて示す定型表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 1 targets ['My confirmation says', 'whereas your system says', 'My email says', 'My voucher says']; first model: “My confirmation says breakfast is included, whereas your system says it isn't.”; job: Use this fixed contrast to put two conflicting records side by side.
+- Visible target or prompt: Exact communicative use: “Use this fixed contrast to put two conflicting records side by side.”; aligned Japanese: “食い違う二つの記録を並べて示す定型表現です。”; complete models: “My confirmation says breakfast is included, whereas your system says it isn't.”; “My email says parking is included, whereas your system says it isn't.”; “My voucher says two nights, whereas your system says one.”; exact highlighted spans: “My”; “says”; “whereas your system says”; “私の”; “の記載は”; “ですが、そちらのシステムの記載は”
 - Learning target: Connect pattern 1’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -106,7 +106,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are genuinely inside the authored target boundary.
 - Choice/distractor quality: The examples vary meaningful content rather than presenting a selection task.
 - Component consistency: Uses the shared meaning-and-use teaching component with one example block.
-- Extracted evidence: `{"targetHighlights": ["My confirmation says", "whereas your system says", "確認書の記載は", "ですが、そちらのシステムの記載は", "My email says", "whereas your system says", "メールの記載は", "ですが、そちらのシステムの記載は", "My voucher says", "whereas your system says", "バウチャーの記載は", "ですが、そちらのシステムの記載は"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は", "My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は", "My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “My confirmation says breakfast is included, whereas your system says it isn't.”; “My email says parking is included, whereas your system says it isn't.”; “My voucher says two nights, whereas your system says one.”; “My confirmation says a double room, whereas your system says a single.”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “My confirmation says breakfast is included, whereas your system says it isn't.”; “My email says parking is included, whereas your system says it isn't.”; “My voucher says two nights, whereas your system says one.”; “My confirmation says a double room, whereas your system says a single.”; exact highlighted spans: “My”; “says”; “whereas your system says”; “私の”; “の記載は”; “ですが、そちらのシステムの記載は”
 - Learning target: Build oral familiarity with pattern 1 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -123,7 +123,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Complete examples preserve articles naturally in their noun phrases.
 - Choice/distractor quality: No distractors are present; learning comes from four useful variations.
 - Component consistency: Uses the standard four-line read-aloud model list.
-- Extracted evidence: `{"targetHighlights": ["My confirmation says", "whereas your system says", "確認書の記載は", "ですが、そちらのシステムの記載は", "My email says", "whereas your system says", "メールの記載は", "ですが、そちらのシステムの記載は", "My voucher says", "whereas your system says", "バウチャーの記載は", "ですが、そちらのシステムの記載は", "My confirmation says", "whereas your system says", "確認書の記載は", "ですが、そちらのシステムの記載は"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は", "My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は", "My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は", "My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['My confirmation says', 'whereas your system says', 'My email says', 'whereas your system says', 'My voucher says', 'whereas your system says', 'My confirmation says', 'whereas your system says']; authored frame boundaries ['My confirmation says', 'whereas your system says', 'My email says', 'My voucher says']
+- Visible target or prompt: Exact missing target answers: “My”; “says”; “whereas your system says”; “My”; “says”; “whereas your system says”; “My”; “says”; “whereas your system says”; “My”; “says”; “whereas your system says”; exact Japanese target cues: “私の”; “の記載は”; “ですが、そちらのシステムの記載は”
 - Learning target: Retrieve only pattern 1’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -140,7 +140,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they are part of the authored target itself.
 - Choice/distractor quality: No choices are used; each blank has one answer established by its complete sentence.
 - Component consistency: Uses the shared static synchronized target-blank input component.
-- Extracted evidence: `{"targetHighlights": ["確認書の記載は", "ですが、そちらのシステムの記載は", "メールの記載は", "ですが、そちらのシステムの記載は", "バウチャーの記載は", "ですが、そちらのシステムの記載は", "確認書の記載は", "ですが、そちらのシステムの記載は"], "blankAnswers": ["My confirmation says", "whereas your system says", "My email says", "whereas your system says", "My voucher says", "whereas your system says", "My confirmation says", "whereas your system says"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["私の", "の記載は", "ですが、そちらのシステムの記載は", "私の", "の記載は", "ですが、そちらのシステムの記載は", "私の", "の記載は", "ですが、そちらのシステムの記載は", "私の", "の記載は", "ですが、そちらのシステムの記載は"], "blankAnswers": ["My", "says", "whereas your system says", "My", "says", "whereas your system says", "My", "says", "whereas your system says", "My", "says", "whereas your system says"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “確認書の記載は「朝食込み」ですが、そちらのシステムの記載は「朝食なし」です。”; “メールの記載は「駐車場込み」ですが、そちらのシステムの記載は「駐車料金別」です。”; “バウチャーの記載は「2泊」ですが、そちらのシステムの記載は「1泊」です。”; “確認書の記載は「ダブルルーム」ですが、そちらのシステムの記載は「シングル」です。”; lexical hints: ['朝食込み:breakfast is included', "朝食なし:it isn't", '駐車場込み:parking is included', "駐車料金別:it isn't", '2泊:two nights', '1泊:one', 'ダブルルーム:a double room', 'シングル:a single']
+- Visible target or prompt: Exact complete English answers: “My confirmation says breakfast is included, whereas your system says it isn't.”; “My email says parking is included, whereas your system says it isn't.”; “My voucher says two nights, whereas your system says one.”; “My confirmation says a double room, whereas your system says a single.”; support stage: supported; lexical hint chips: “朝食込み:breakfast is included”; “朝食なし:it isn't”; “駐車場込み:parking is included”; “駐車料金別:it isn't”; “2泊:two nights”; “1泊:one”; “ダブルルーム:a double room”; “シングル:a single”
 - Learning target: Produce complete pattern 1 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “My ___ says ___, whereas your system says ___” to compare the two conflicting records.” Communicative frame: My ___ says ___, whereas your system says ___
+- Visible target or prompt: Exact learner prompt: “Use “My ___ says ___, whereas your system says ___” to compare the two conflicting records.”; aligned Japanese prompt: “「My ___ says ___, whereas your system says ___」を使って、食い違っている二つの記録を比べましょう。”
 - Learning target: Use pattern 1 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -181,16 +181,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 11. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful.
-- Tutor action: State the transition once and move directly to the examples.
-- Visible target or prompt: Part 2 communicative purpose: 次に、合意した解決内容を書面に残してもらいます。
-- Learning target: Connect the practical scene to pattern 2 and its next conversational job.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the receptive-to-productive arc.
-- Non-target support: The Japanese bridge names the job; complete bilingual examples follow immediately.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “Could you confirm in writing how this will be resolved?” Exact English purpose/action: “Use this to request a written record of the agreed solution. Read the line above aloud.” Exact Japanese purpose/action: “合意した解決内容を書面で残してもらう表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: No article decision is tested on this transition page.
 - Choice/distractor quality: No choices are needed for a one-step transition.
-- Component consistency: Uses the compact shared transition component.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each complete model aloud after the brief explanation.
 - Tutor action: Explain the use briefly, then have the learner read every example.
-- Visible target or prompt: Pattern 2 targets ['Could you confirm in writing']; first model: “Could you confirm in writing how this will be resolved?”; job: Use this to request a written record of the agreed solution.
+- Visible target or prompt: Exact communicative use: “Use this to request a written record of the agreed solution.”; aligned Japanese: “合意した解決内容を書面で残してもらう表現です。”; complete models: “Could you confirm in writing how this will be resolved?”; “Could you confirm in writing that breakfast is included?”; “Could you confirm in writing the revised price?”; exact highlighted spans: “Could you confirm in writing”; “書面で確認していただけますか”
 - Learning target: Connect pattern 2’s authored target boundary to its communicative use and varied full examples.
 - Pedagogical value: Stable highlighting plus complete models makes the form usable rather than an abstract explanation.
 - Failure diagnoses: Highlighting unrelated lexical content or asking the tutor to model every sentence would weaken retrieval.
@@ -217,7 +217,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete English sentences aloud.
 - Tutor action: Prompt the sentences in order and listen; model only if help is needed.
-- Visible target or prompt: “Could you confirm in writing how this will be resolved?”; “Could you confirm in writing that breakfast is included?”; “Could you confirm in writing the revised price?”; “Could you confirm in writing the room type?”
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “Could you confirm in writing how this will be resolved?”; “Could you confirm in writing that breakfast is included?”; “Could you confirm in writing the revised price?”; “Could you confirm in writing the room type?”; exact highlighted spans: “Could you confirm in writing”; “書面で確認していただけますか”
 - Learning target: Build oral familiarity with pattern 2 across four meaningful variations.
 - Pedagogical value: Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.
 - Failure diagnoses: Reading only highlighted chunks or tutor modelling first would reduce learner production.
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use the visual rule to identify where the changing content belongs.
 - Tutor action: Point out the one ordering or usage contrast, then move on.
-- Visible target or prompt: Put the record format before the detail / 記録方法を内容の前に; formula: Could you confirm + in writing + detail?
+- Visible target or prompt: Exact rule: “Keep “in writing” beside “confirm,” then name the detail.”; aligned Japanese: “in writing を confirm とセットにし、そのあとに確認内容を続けます。”
 - Learning target: Make the one structural distinction needed to use pattern 2 accurately.
 - Pedagogical value: The rule explains a production-relevant boundary without repeating the reading drill.
 - Failure diagnoses: An abstract grammar lecture or unrelated terminology would add load without helping the task.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each row’s chunks, then say the completed sentence aloud.
 - Tutor action: Let the learner order the chunks and prompt the full spoken sentence.
-- Visible target or prompt: Reorder complete answers: “Could you confirm in writing how this will be resolved?”; “Could you confirm in writing that breakfast is included?”; “Could you confirm in writing the revised price?”; “Could you confirm in writing the room type?”
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “Could you confirm in writing how this will be resolved?”; “Could you confirm in writing that breakfast is included?”; “Could you confirm in writing the revised price?”; “Could you confirm in writing the room type?”
 - Learning target: Retrieve meaningful chunks in the order required by pattern 2.
 - Pedagogical value: Three or four honest chunks test sentence assembly without splitting bound words.
 - Failure diagnoses: Punctuation-only chips, detached function words, or padded choices would create busywork.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each whole sentence aloud, including every missing target chunk.
 - Tutor action: Type only the missing words exactly as the learner says them.
-- Visible target or prompt: Target-only blanks ['Could you confirm in writing', 'Could you confirm in writing', 'Could you confirm in writing', 'Could you confirm in writing']; authored frame boundaries ['Could you confirm in writing']
+- Visible target or prompt: Exact missing target answers: “Could you confirm in writing”; “Could you confirm in writing”; “Could you confirm in writing”; “Could you confirm in writing”; exact Japanese target cues: “書面で確認していただけますか”
 - Learning target: Retrieve only pattern 2’s taught target chunks while saying every complete sentence.
 - Pedagogical value: Target-only blanks keep the controlled task focused and leave lexical context available.
 - Failure diagnoses: Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue and say the complete English sentence.
 - Tutor action: Type the learner’s complete sentence exactly; use only the displayed hints as support.
-- Visible target or prompt: supported whole-sentence production from “これをどう解決するか、書面で確認していただけますか？”; “朝食が含まれることを書面で確認していただけますか？”; “修正後の料金を書面で確認していただけますか？”; “部屋タイプを書面で確認していただけますか？”; lexical hints: ['どう解決するか:how this will be resolved', '朝食が含まれること:that breakfast is included', '修正後の料金:the revised price', '部屋タイプ:the room type']
+- Visible target or prompt: Exact complete English answers: “Could you confirm in writing how this will be resolved?”; “Could you confirm in writing that breakfast is included?”; “Could you confirm in writing the revised price?”; “Could you confirm in writing the room type?”; support stage: supported; lexical hint chips: “どう解決するか:how this will be resolved”; “朝食が含まれること:that breakfast is included”; “修正後の料金:the revised price”; “部屋タイプ:the room type”
 - Learning target: Produce complete pattern 2 sentences from Japanese after controlled target retrieval.
 - Pedagogical value: The declared support stage makes lexical help deliberate: useful hints on supported rows and none at checkpoint.
 - Failure diagnoses: Missing support metadata, target-answer hints, or unexplained vocabulary would make difficulty accidental.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one complete sentence that performs the named job.
 - Tutor action: Let the learner speak first, then capture and correct only what is useful.
-- Visible target or prompt: “Use “Could you confirm in writing ___?” to ask for written confirmation of the solution.” Communicative frame: Could you confirm in writing ___?
+- Visible target or prompt: Exact learner prompt: “Use “Could you confirm in writing ___?” to ask for written confirmation of the solution.”; aligned Japanese prompt: “「Could you confirm in writing ___?」を使って、解決内容を書面で確認してもらいましょう。”
 - Learning target: Use pattern 2 to perform its actual communicative job with learner-selected content.
 - Pedagogical value: The prompt names both the frame and the real action, so open production is not a vague question.
 - Failure diagnoses: Generic “make your own sentence” copy would not tell the learner what to communicate.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read every learner-owned line aloud.
 - Tutor action: Play the hotel clerk and pause for every learner line.
-- Visible target or prompt: Replay targets: “My confirmation says breakfast is included, whereas your system says it isn't.” and “Could you confirm in writing how this will be resolved?”; tutor role: Hotel Clerk
+- Visible target or prompt: Tutor role: Hotel Clerk; exact full exchange: “Our system shows that breakfast costs extra.”; “My confirmation says breakfast is included, whereas your system says it isn't.”; “I can see the discrepancy in your email. We'll honor the included breakfast.”; “Could you confirm in writing how this will be resolved?”; “Yes. I'll email a note confirming breakfast for both mornings.”; “Thank you. That resolves it.”; exact highlighted targets: “My”; “says”; “whereas your system says”; “私の”; “の記載は”; “ですが、そちらのシステムの記載は”; “Could you confirm in writing”; “書面で確認していただけますか”
 - Learning target: Rehearse both patterns in the full resolved scene with stable roles.
 - Pedagogical value: The learner reads their own complete lines while the tutor supplies only counterpart turns.
 - Failure diagnoses: Tutor modelling learner lines or changing roles would remove the learner’s speaking responsibility.
@@ -344,7 +344,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain in the full model lines.
 - Choice/distractor quality: Turn ownership, not choices, structures this rehearsal.
 - Component consistency: Uses the same six-turn dialogue and roles as the opening scene.
-- Extracted evidence: `{"targetHighlights": ["My confirmation says", "whereas your system says", "確認書の記載は", "ですが、そちらのシステムの記載は", "Could you confirm in writing", "書面で確認していただけますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": ["My", "says", "whereas your system says", "私の", "の記載は", "ですが、そちらのシステムの記載は", "Could you confirm in writing", "書面で確認していただけますか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -353,7 +353,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete learner line, including the missing words.
 - Tutor action: Play the hotel clerk and type only the missing target words.
-- Visible target or prompt: Complete-scene target blanks: ['My confirmation says', 'whereas your system says', 'Could you confirm in writing']; tutor role: Hotel Clerk
+- Visible target or prompt: Tutor role: Hotel Clerk; exact completion instruction: “I’ll be the hotel clerk. Say each complete line, including the missing words.”; exact missing target answers: “My”; “says”; “whereas your system says”; “Could you confirm in writing”
 - Learning target: Retrieve both target expressions while completing the full practical exchange.
 - Pedagogical value: Only authored target chunks disappear, so the learner must produce the lesson language in context.
 - Failure diagnoses: Blanking non-target dialogue or having the tutor say learner turns would invalidate retrieval.
@@ -361,7 +361,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles stay visible unless they belong to an authored target chunk.
 - Choice/distractor quality: No choices are used; the scene context establishes each complete line.
 - Component consistency: Uses the shared role-play completion fields inside the same six-turn scene.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["My confirmation says", "whereas your system says", "Could you confirm in writing"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["My", "says", "whereas your system says", "Could you confirm in writing"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the Tutor’s question, then ask the exact related question back.
 - Tutor action: React naturally, answer the ask-back honestly, and follow the most interesting detail.
-- Visible target or prompt: Exact Tutor question: “Which booking detail do you always double-check before a trip, and why?” Exact learner ask-back: “What about you—which detail do you check first?” / 旅行前に必ず再確認する予約情報は何ですか？なぜですか？ / 先生はどうですか？最初に何を確認しますか？
+- Visible target or prompt: Exact Tutor question: “Which booking detail do you always double-check before a trip, and why?”; exact learner ask-back: “What about you—which detail do you check first?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a genuine reciprocal conversation related to the lesson topic without forcing today’s frame.
 - Pedagogical value: An interesting personal question plus ask-back creates real interaction after controlled practice.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would merely repeat the drill.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the traveller and complete both target lines in the new scene.
 - Tutor action: Play the rental agent and begin with the first counterpart line.
-- Visible target or prompt: Resolving a rental-car price discrepancy; learner is Traveller, tutor is Rental Agent; first tutor line: “Our system shows a daily parking charge.”; reuse both target lines.
+- Visible target or prompt: Tutor role: Rental Agent; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the rental agent.”; exact full exchange: “Our system shows a daily parking charge.”; “email parking is included, it isn't.”; “You're right. Your email includes parking at no extra charge.”; “the revised price?”; “Certainly. I'll email the revised total now.”; “Great. I'll keep that with the rental agreement.”; exact missing target answers: “My”; “says”; “whereas your system says”; “Could you confirm in writing”
 - Learning target: Transfer both lesson expressions to a new resolved practical role-play.
 - Pedagogical value: Explicit new roles and the same two target jobs test flexible use beyond the opening scene.
 - Failure diagnoses: Generic roles, bilingual mismatch, or an unresolved ending would make transfer ambiguous.
@@ -412,7 +412,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles remain in complete contextual lines except where genuinely inside target blanks.
 - Choice/distractor quality: Turn ownership replaces fixed choices; the scene resolves after both targets are used.
 - Component consistency: Uses the shared six-turn completion dialogue with a short bilingual-aligned transfer introduction.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["My email says", "whereas your system says", "Could you confirm in writing"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["My", "says", "whereas your system says", "Could you confirm in writing"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.

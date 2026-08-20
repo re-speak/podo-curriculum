@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-leadership-high-stakes/lessons/57-communicate-uncertainty-clearly/lesson.html`
-- SHA-256: `c133190c497c746bd03be2e368f4603036631a0fa3daa16cf0cb072331d392aa`
+- SHA-256: `819eb446727923e2d229661b0ce62920ccf32c6021afcc25e4992eff67ddbc33`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -79,16 +79,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `part1-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 1: What we know is that customer data remains secure.; communicative bridge: まず、確認できている事実だけを明示します。
-- Learning target: Connect the opening business scene to target pattern 1 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “What we know is that customer data remains secure.” Exact English purpose/action: “Use this to mark a statement as confirmed rather than inferred. Read the line above aloud.” Exact Japanese purpose/action: “推測ではなく、確認済みの事実だと示す表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 1: What we know is that customer data remains secure.; use: Use this to mark a statement as confirmed rather than inferred.
+- Visible target or prompt: Exact communicative use: “Use this to mark a statement as confirmed rather than inferred.”; aligned Japanese: “推測ではなく、確認済みの事実だと示す表現です。”; complete models: “What we know is that customer data remains secure.”; “What we know is that the backup is intact.”; “What we know is that payments are still processing.”; exact highlighted spans: “What we know is that”; “現時点で分かっているのは”
 - Learning target: Understand what pattern 1 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 1 read-aloud set: What we know is that customer data remains secure.; What we know is that the backup is intact.; What we know is that payments are still processing.; What we know is that only one region is affected.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “What we know is that customer data remains secure.”; “What we know is that the backup is intact.”; “What we know is that payments are still processing.”; “What we know is that only one region is affected.”; exact highlighted spans: “What we know is that”; “現時点で分かっているのは”
 - Learning target: Build fluent oral control of pattern 1 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Follow the frame with a verified fact: State only information supported by the current investigation. Formula: What we know is that + verified fact
+- Visible target or prompt: Exact rule: “State only information supported by the current investigation.”; aligned Japanese: “現在の調査で裏づけられている情報だけを述べます。”
 - Learning target: Notice the stable form of pattern 1 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 1 chunk sets: What we know|is that|customer data|remains secure.; What we know|is that|the backup|is intact.; What we know|is that|payments are|still processing.; What we know|is that|only one region|is affected.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “What we know is that customer data remains secure.”; “What we know is that the backup is intact.”; “What we know is that payments are still processing.”; “What we know is that only one region is affected.”
 - Learning target: Retrieve the full ordering of pattern 1 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 1 target-only blanks: What we know is that; What we know is that; What we know is that; What we know is that
+- Visible target or prompt: Exact missing target answers: “What we know is that”; “What we know is that”; “What we know is that”; “What we know is that”; exact Japanese target cues: “現時点で分かっているのは”
 - Learning target: Retrieve only the taught frame for pattern 1 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 1 translation production: What we know is that ___; support stage supported; 顧客データ:customer data; バックアップ:backup; 決済処理:payments; 一つの地域:one region
+- Visible target or prompt: Exact complete English answers: “What we know is that customer data remains secure.”; “What we know is that the backup is intact.”; “What we know is that payments are still processing.”; “What we know is that only one region is affected.”; support stage: supported; lexical hint chips: “顧客データ:customer data”; “バックアップ:backup”; “決済処理:payments”; “一つの地域:one region”
 - Learning target: Produce pattern 1 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “What we know is that ___” to separate a verified fact from what is still uncertain.” Frame: What we know is that ___
+- Visible target or prompt: Exact learner prompt: “Use “What we know is that ___” to separate a verified fact from what is still uncertain.”; aligned Japanese prompt: “「What we know is that ___」を使って、確認できた事実をまだ不明な点と分けて伝えましょう。”
 - Learning target: Use pattern 1 for its explicit communicative job: Use “What we know is that ___” to separate a verified fact from what is still uncertain.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -215,16 +215,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 13. `part2-intro`
 
-- Learner action: Listen for why the next pattern is useful, then move to the next page.
-- Tutor action: State the transition once and move directly to the teaching page.
-- Visible target or prompt: Move 2: We don't know that yet, but we'll update everyone at four.; communicative bridge: 次に、未確認の点を正直に示し、次の連絡を約束します。
-- Learning target: Connect the opening business scene to target pattern 2 without adding another drill.
-- Pedagogical value: One short transition supplies purpose without duplicating the teaching or role-play page.
-- Failure diagnoses: A drill or long explanation here would create a second job and slow the learning arc.
-- Non-target support: Aligned Japanese support clarifies the task while leaving the English production to the learner.
+- Learner action: Read the visible pattern line aloud after hearing what it lets you do.
+- Tutor action: State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.
+- Visible target or prompt: Visible pattern: “We don't know that yet, but we'll update everyone at four.” Exact English purpose/action: “Use this to acknowledge an unknown and immediately pair it with a reliable update plan. Read the line above aloud.” Exact Japanese purpose/action: “分からない点を認め、信頼できる更新予定と組み合わせる表現です。 上の文を声に出して読みましょう。”
+- Learning target: Connect the scene to this pattern's exact communicative purpose and read the target once aloud.
+- Pedagogical value: One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.
+- Failure diagnoses: A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.
+- Non-target support: The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.
 - Article treatment: Articles remain inside natural complete sentences and are not turned into unrelated micro-targets.
 - Choice/distractor quality: No choice is needed on a short transition page.
-- Component consistency: Uses the approved transition page with one target line and one brief purpose.
+- Component consistency: Uses the approved one-line purpose plus read-the-visible-pattern transition contract.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
@@ -234,7 +234,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each model sentence aloud after the tutor briefly explains its communicative use.
 - Tutor action: Explain the meaning briefly, then have the learner read every example aloud.
-- Visible target or prompt: Pattern 2: We don't know that yet, but we'll update everyone at four.; use: Use this to acknowledge an unknown and immediately pair it with a reliable update plan.
+- Visible target or prompt: Exact communicative use: “Use this to acknowledge an unknown and immediately pair it with a reliable update plan.”; aligned Japanese: “分からない点を認め、信頼できる更新予定と組み合わせる表現です。”; complete models: “We don't know that yet, but we'll update everyone at four.”; “We don't know the cause yet, but we'll update everyone at six.”; “We don't know the full impact yet, but we'll share another update at noon.”; exact highlighted spans: “We don't know”; “but we'll”; “分かりません”; “ただし、必ず”
 - Learning target: Understand what pattern 2 accomplishes in the lesson's business interaction.
 - Pedagogical value: The meaning statement and varied models establish use before controlled production.
 - Failure diagnoses: Tutor modelling every sentence or mixing a drill into this page would blur learner ownership.
@@ -251,7 +251,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read all four complete model sentences aloud.
 - Tutor action: Ask the learner to read; help only when pronunciation blocks the sentence.
-- Visible target or prompt: Pattern 2 read-aloud set: We don't know that yet, but we'll update everyone at four.; We don't know the cause yet, but we'll update everyone at six.; We don't know the full impact yet, but we'll share another update at noon.; We don't know when service will resume yet, but we'll update this page hourly.
+- Visible target or prompt: Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “We don't know that yet, but we'll update everyone at four.”; “We don't know the cause yet, but we'll update everyone at six.”; “We don't know the full impact yet, but we'll share another update at noon.”; “We don't know when service will resume yet, but we'll update this page hourly.”; exact highlighted spans: “We don't know”; “but we'll”; “分かりません”; “ただし、必ず”
 - Learning target: Build fluent oral control of pattern 2 across four meaningful business examples.
 - Pedagogical value: Repeated complete-sentence reading stabilises the frame before retrieval.
 - Failure diagnoses: Tutor-first modelling would replace the learner's reading practice without a listening objective.
@@ -268,7 +268,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read the concise form explanation and inspect the two examples.
 - Tutor action: Explain only the useful ordering or boundary shown on the page.
-- Visible target or prompt: Pair the unknown with a concrete update: State what is not known yet, then give a time or cadence for the next update. Formula: We don't know ... yet, but we'll + update
+- Visible target or prompt: Exact rule: “State what is not known yet, then give a time or cadence for the next update.”; aligned Japanese: “まだ分からないことを述べ、次の更新時刻または頻度を示します。”
 - Learning target: Notice the stable form of pattern 2 without adding unrelated grammar terminology.
 - Pedagogical value: The rule isolates the ordering decision needed for the following construction task.
 - Failure diagnoses: A broader grammar lecture would increase load without helping the target business action.
@@ -285,7 +285,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Order each set of meaningful chunks, then say the complete sentence aloud.
 - Tutor action: Let the learner build each sentence and read it before moving on.
-- Visible target or prompt: Pattern 2 chunk sets: We don't know|that yet,|but we'll update everyone|at four.; We don't know|the cause yet,|but we'll update everyone|at six.; We don't know|the full impact yet,|but we'll share another update|at noon.; We don't know|when service will resume yet,|but we'll update this page|hourly.
+- Visible target or prompt: Exact reorder action: “Put the words in order, then say the whole sentence out loud.”; complete answers: “We don't know that yet, but we'll update everyone at four.”; “We don't know the cause yet, but we'll update everyone at six.”; “We don't know the full impact yet, but we'll share another update at noon.”; “We don't know when service will resume yet, but we'll update this page hourly.”
 - Learning target: Retrieve the full ordering of pattern 2 using semantically meaningful chunks.
 - Pedagogical value: Chunk ordering tests sentence structure without splitting stable phrases into noise.
 - Failure diagnoses: Single-word fragments or an answer already visible in order would remove the construction challenge.
@@ -302,7 +302,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say each complete sentence aloud, including the missing target words.
 - Tutor action: Type only the missing target words exactly as the learner says them.
-- Visible target or prompt: Pattern 2 target-only blanks: We don't know; but we'll; We don't know; but we'll; We don't know; but we'll; We don't know; but we'll
+- Visible target or prompt: Exact missing target answers: “We don't know”; “but we'll”; “We don't know”; “but we'll”; “We don't know”; “but we'll”; “We don't know”; “but we'll”; exact Japanese target cues: “分かりません”; “ただし、必ず”
 - Learning target: Retrieve only the taught frame for pattern 2 while keeping lexical context visible.
 - Pedagogical value: Target-only blanking focuses retrieval on the lesson pattern instead of hiding unsupported vocabulary.
 - Failure diagnoses: Blanking articles or untaught content here would turn controlled retrieval into an unrelated lexical test.
@@ -319,7 +319,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Read each Japanese cue, then say the complete English sentence aloud.
 - Tutor action: Type the learner's complete sentence; use the declared support stage without supplying the target.
-- Visible target or prompt: Pattern 2 translation production: We don't know ___ yet, but we'll ___; support stage supported; 4時:four; 原因:cause; 6時:six; 影響の全容:full impact; 正午:noon; サービスの再開時刻:service resumption; 1時間ごと:hourly
+- Visible target or prompt: Exact complete English answers: “We don't know that yet, but we'll update everyone at four.”; “We don't know the cause yet, but we'll update everyone at six.”; “We don't know the full impact yet, but we'll share another update at noon.”; “We don't know when service will resume yet, but we'll update this page hourly.”; support stage: supported; lexical hint chips: “4時:four”; “原因:cause”; “6時:six”; “影響の全容:full impact”; “正午:noon”; “サービスの再開時刻:service resumption”; “1時間ごと:hourly”
 - Learning target: Produce pattern 2 from meaning with its declared level of lexical support.
 - Pedagogical value: Supported rows expose useful content vocabulary, while checkpoint rows deliberately test independent transfer.
 - Failure diagnoses: Hints that reveal the target, articles, auxiliaries, or inflections would invalidate the production evidence.
@@ -336,7 +336,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say one personally meaningful business sentence using the named pattern.
 - Tutor action: Let the learner speak first, then capture the sentence and correct only what helps.
-- Visible target or prompt: Exact learner prompt: “Use “We don't know ___ yet, but we'll ___” to admit one unknown and promise a specific update.” Frame: We don't know ___ yet, but we'll ___
+- Visible target or prompt: Exact learner prompt: “Use “We don't know ___ yet, but we'll ___” to admit one unknown and promise a specific update.”; aligned Japanese prompt: “「We don't know ___ yet, but we'll ___」を使って、不明点を認め、次の具体的な更新を約束しましょう。”
 - Learning target: Use pattern 2 for its explicit communicative job: Use “We don't know ___ yet, but we'll ___” to admit one unknown and promise a specific update.
 - Pedagogical value: The prompt names the actual business action instead of generically asking for a sentence.
 - Failure diagnoses: A generic 'make your own sentence' instruction would not tell the learner what to communicate.
@@ -370,7 +370,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Play the learner role and read the complete exchange with the tutor as Executive.
 - Tutor action: Read only the Executive turns and pause for every learner turn.
-- Visible target or prompt: Six-turn replay with Executive; learner lines include “What we know is that customer data remains secure.” and “We don't know that yet, but we'll update everyone at four.”.
+- Visible target or prompt: Tutor role: Executive; exact full exchange: “Is customer data at risk?”; “What we know is that customer data remains secure.”; “Do we know what caused the incident?”; “We don't know that yet, but we'll update everyone at four.”; “Good. I'll direct questions to the four o'clock update.”; “Thank you. Please avoid sharing anything unconfirmed before then.”; exact highlighted targets: “What we know is that”; “現時点で分かっているのは”; “We don't know”; “but we'll”; “分かりません”; “ただし、必ず”
 - Learning target: Combine both patterns fluently in the original resolved business scene.
 - Pedagogical value: The replay restores conversational timing after isolated pattern practice.
 - Failure diagnoses: Tutor ownership of learner turns or changed counterpart lines would make the replay inconsistent.
@@ -387,7 +387,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Say every learner line in the scene, including all missing target words.
 - Tutor action: Play the Executive; type only the missing target words after each learner line.
-- Visible target or prompt: Full-scene target retrieval: What we know is that, We don't know, but we'll
+- Visible target or prompt: Tutor role: Executive; exact completion instruction: “I’ll be the executive. Say each complete line, including the missing words.”; exact missing target answers: “What we know is that”; “We don't know”; “but we'll”
 - Learning target: Retrieve both taught patterns while preserving the timing of the complete business exchange.
 - Pedagogical value: Only target expressions disappear, so scene completion measures pattern retrieval rather than vocabulary guessing.
 - Failure diagnoses: Lexical blanks or changed dialogue order would confound target knowledge with unrelated recall.
@@ -404,7 +404,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the tutor's genuine personal question, then ask the visible reciprocal question.
 - Tutor action: React naturally, follow the most interesting detail, and give a real answer when asked back.
-- Visible target or prompt: Exact Tutor question: “During uncertainty, what helps you trust a leader's update?” Exact learner ask-back: “What about you—what makes an update trustworthy?”
+- Visible target or prompt: Exact Tutor question: “During uncertainty, what helps you trust a leader's update?”; exact learner ask-back: “What about you—what makes an update trustworthy?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”
 - Learning target: Sustain a relevant reciprocal conversation about lead through genuine uncertainty without forcing today's frame.
 - Pedagogical value: The first turn is an interesting standalone question and the ask-back creates real two-way talk.
 - Failure diagnoses: A scenario command, pattern-production prompt, or missing tutor answer would disguise another drill as free talk.
@@ -438,7 +438,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Use both learned patterns in a new role-play and read only the learner turns.
 - Tutor action: Play the Board Member, begin with the first line, and pause for learner turns.
-- Visible target or prompt: Updating leaders on a payment issue; tutor is Board Member (取締役); first line: “Have all payments stopped?”; use the same two target expressions.
+- Visible target or prompt: Tutor role: Board Member; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the board member.”; exact full exchange: “Have all payments stopped?”; “payments are still processing.”; “When will we know the full impact?”; “the full impact yet, share another update at noon.”; “I'll wait for the noon update before contacting clients.”; “That's best. I'll send the verified facts at noon.”; exact missing target answers: “What we know is that”; “We don't know”; “but we'll”
 - Learning target: Transfer both target patterns to a different but coherent business situation.
 - Pedagogical value: A new resolved scene tests flexible use beyond memorising the opening dialogue.
 - Failure diagnoses: Unstated roles, bilingual mismatch, or reuse of the identical situation would weaken transfer evidence.

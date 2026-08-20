@@ -7,6 +7,7 @@ import pathlib
 import re
 import sys
 import unittest
+import html
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
@@ -58,6 +59,40 @@ def declarations(review_id: str) -> dict:
 
 
 class ContextualFinalBusinessBatchTests(unittest.TestCase):
+    def test_transition_pages_are_specific_short_bilingual_actions(self):
+        purposes = set()
+        japanese_purposes = set()
+        for number, lesson in batch.LESSONS.items():
+            _, source = batch.build(number, lesson)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                pattern = lesson[f"p{part}"]
+                purpose, purpose_ja = pattern.get("transition_purpose", pattern["meaning"])
+                page = html.unescape(pages[f"part{part}-intro"])
+                self.assertIn(purpose.rstrip(". ").casefold(), page.casefold(), (number, part))
+                self.assertIn(purpose_ja.rstrip("。 "), page, (number, part))
+                self.assertIn("Read the line above aloud.", page, (number, part))
+                self.assertIn("上の文を声に出して読みましょう。", page, (number, part))
+                self.assertNotIn("practice this useful line", page, (number, part))
+                self.assertLessEqual(len(purpose), 150, (number, part))
+                self.assertLessEqual(len(purpose_ja), 70, (number, part))
+                purposes.add(purpose)
+                japanese_purposes.add(purpose_ja)
+        self.assertEqual(len(purposes), 24)
+        self.assertEqual(len(japanese_purposes), 24)
+
+    def test_repaired_completion_targets_are_invariant_frames(self):
+        expected = {
+            (52, 1): ("The faster we move,", "the less time we'll have for"),
+            (59, 1): ("We recognise the", "this is causing"),
+        }
+        for (number, part), targets in expected.items():
+            self.assertEqual(
+                {tuple(TARGET.findall(row[0])) for row in batch.LESSONS[number][f"p{part}"]["rows"]},
+                {targets},
+                (number, part),
+            )
+
     def test_scope_models_and_source_validation(self):
         self.assertEqual(set(batch.LESSONS), set(range(49, 61)))
         for number, lesson in batch.LESSONS.items():
@@ -279,14 +314,8 @@ class ContextualFinalBusinessBatchTests(unittest.TestCase):
         self.assertIn("What I&#x27;d like <br>you to do is", c56_pages["p2-teach"])
         self.assertIn('data-answer="What I&#x27;d like you to do is"', c56_pages["p2-fill"])
 
-        english_cues = (["We recognise the disruption", "is causing"],
-                        ["We recognise the pressure", "is creating"],
-                        ["We recognise the delay", "is causing"],
-                        ["We recognise the uncertainty", "is creating"])
-        japanese_cues = (["この混乱を重く受け止めています", "引き起こしているものです"],
-                         ["この負担を重く受け止めています", "生み出しているものです"],
-                         ["この遅れを認識しています", "引き起こしているものです"],
-                         ["この不安を認識しています", "生み出しているものです"])
+        english_cues = (["We recognise the", "this is causing"],) * 4
+        japanese_cues = (["これにより生じている", "を認識しています"],) * 4
         for index, (english, japanese, _) in enumerate(batch.LESSONS[59]["p1"]["rows"]):
             self.assertEqual(TARGET.findall(english), english_cues[index], english)
             self.assertEqual(TARGET.findall(japanese), japanese_cues[index], japanese)

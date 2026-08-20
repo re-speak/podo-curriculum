@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-meetings-decisions/lessons/45-present-a-recommendation-up-front/lesson.html",
-  "lessonSha256": "1216d985760d7aa2a0667e10270ac03abc4ad5177cf1bf301f43b9fd42cdd0b5",
+  "lessonSha256": "d9beca0a7e6b88eb8ef28e6b3e53873ecaa08cf4f2c4770b2fd72ce982aedccb",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -111,16 +111,16 @@
     },
     {
       "pageId": "part1-intro",
-      "learnerAction": "Listen for why pattern 1 is useful, then move to the next page.",
-      "tutorAction": "State the transition once and move directly to the activity.",
-      "targetOrPrompt": "Part 1 communicative purpose: まず、推奨する選択肢を一文で明確にします。",
-      "learningTarget": "Connect the practical scene to pattern 1 without adding a second drill.",
-      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
-      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the receptive-to-productive arc.",
-      "nonTargetSupport": "The aligned Japanese bridge names the communicative job.",
+      "learnerAction": "Read the visible pattern line aloud after hearing what it lets you do.",
+      "tutorAction": "State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.",
+      "targetOrPrompt": "Visible pattern: “I recommend option B.” Exact English purpose/action: “Use this bounded line to give the conclusion before the supporting detail. Read the line above aloud.” Exact Japanese purpose/action: “詳しい説明の前に結論を示す定型表現です。 上の文を声に出して読みましょう。”",
+      "learningTarget": "Connect the scene to this pattern's exact communicative purpose and read the target once aloud.",
+      "pedagogicalValue": "One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.",
+      "failureDiagnosis": "A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.",
+      "nonTargetSupport": "The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.",
       "articleTreatment": "No article decision is tested on this transition page.",
       "choiceQuality": "No choices are needed for a one-step transition.",
-      "componentConsistency": "Uses the compact shared transition component.",
+      "componentConsistency": "Uses the approved one-line purpose plus read-the-visible-pattern transition contract.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
@@ -137,7 +137,7 @@
       "pageId": "p1-teach",
       "learnerAction": "Read each complete model aloud after the brief meaning explanation.",
       "tutorAction": "Explain the communicative use briefly, then have the learner read every example.",
-      "targetOrPrompt": "Pattern 1 targets ['I recommend option B', 'I recommend the smaller pilot', 'I recommend the June launch', 'I recommend the current supplier']; first model: “I recommend option B.”; job: Use “I recommend ___” to give the decision maker one clear recommendation.",
+      "targetOrPrompt": "Exact communicative use: “Use this bounded line to give the conclusion before the supporting detail.”; aligned Japanese: “詳しい説明の前に結論を示す定型表現です。”; complete models: “I recommend option B.”; “I recommend the smaller pilot.”; “I recommend the June launch.”; exact highlighted spans: “I recommend”; “をおすすめします”",
       "learningTarget": "Connect pattern 1’s authored target boundary to its workplace use and varied examples.",
       "pedagogicalValue": "Stable highlighting plus complete models makes the form usable rather than abstract.",
       "failureDiagnosis": "Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.",
@@ -151,12 +151,12 @@
       "notes": "Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
       "evidence": {
         "targetHighlights": [
-          "I recommend option B",
-          "選択肢Bをおすすめします",
-          "I recommend the smaller pilot",
-          "小規模な試験導入をおすすめします",
-          "I recommend the June launch",
-          "6月の公開をおすすめします"
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします"
         ],
         "blankAnswers": [],
         "hintChips": [],
@@ -168,7 +168,7 @@
       "pageId": "p1-read",
       "learnerAction": "Read all four complete English sentences aloud.",
       "tutorAction": "Prompt the sentences in order and listen; model only if help is needed.",
-      "targetOrPrompt": "“I recommend option B.”; “I recommend the smaller pilot.”; “I recommend the June launch.”; “I recommend the current supplier.”",
+      "targetOrPrompt": "Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I recommend option B.”; “I recommend the smaller pilot.”; “I recommend the June launch.”; “I recommend the current supplier.”; exact highlighted spans: “I recommend”; “をおすすめします”",
       "learningTarget": "Build oral familiarity with pattern 1 across four meaningful workplace variations.",
       "pedagogicalValue": "Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.",
       "failureDiagnosis": "Reading only highlighted chunks or tutor modelling first would reduce learner production.",
@@ -182,14 +182,14 @@
       "notes": "Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.",
       "evidence": {
         "targetHighlights": [
-          "I recommend option B",
-          "選択肢Bをおすすめします",
-          "I recommend the smaller pilot",
-          "小規模な試験導入をおすすめします",
-          "I recommend the June launch",
-          "6月の公開をおすすめします",
-          "I recommend the current supplier",
-          "現在の仕入先をおすすめします"
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします"
         ],
         "blankAnswers": [],
         "hintChips": [],
@@ -201,7 +201,7 @@
       "pageId": "p1-fill",
       "learnerAction": "Say each whole sentence aloud, including every missing target chunk.",
       "tutorAction": "Type only the missing target words exactly as the learner says them.",
-      "targetOrPrompt": "Target-only blanks ['I recommend option B', 'I recommend the smaller pilot', 'I recommend the June launch', 'I recommend the current supplier']; authored pattern-1 boundaries ['I recommend option B', 'I recommend the smaller pilot', 'I recommend the June launch', 'I recommend the current supplier']",
+      "targetOrPrompt": "Exact missing target answers: “I recommend”; “I recommend”; “I recommend”; “I recommend”; exact Japanese target cues: “をおすすめします”",
       "learningTarget": "Retrieve only pattern 1’s taught target chunks while saying complete sentences.",
       "pedagogicalValue": "Target-only blanks keep the controlled task focused and leave lexical context available.",
       "failureDiagnosis": "Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.",
@@ -215,16 +215,16 @@
       "notes": "Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
       "evidence": {
         "targetHighlights": [
-          "選択肢Bをおすすめします",
-          "小規模な試験導入をおすすめします",
-          "6月の公開をおすすめします",
-          "現在の仕入先をおすすめします"
+          "をおすすめします",
+          "をおすすめします",
+          "をおすすめします",
+          "をおすすめします"
         ],
         "blankAnswers": [
-          "I recommend option B",
-          "I recommend the smaller pilot",
-          "I recommend the June launch",
-          "I recommend the current supplier"
+          "I recommend",
+          "I recommend",
+          "I recommend",
+          "I recommend"
         ],
         "hintChips": [],
         "supportStage": "not-applicable",
@@ -235,7 +235,7 @@
       "pageId": "p1-translate",
       "learnerAction": "Read each Japanese cue and say the complete English sentence aloud.",
       "tutorAction": "Type the learner’s complete English sentence exactly as they say it.",
-      "targetOrPrompt": "Produce all four complete pattern-1 sentences from Japanese; support stage checkpoint; hints [].",
+      "targetOrPrompt": "Exact complete English answers: “I recommend option B.”; “I recommend the smaller pilot.”; “I recommend the June launch.”; “I recommend the current supplier.”; support stage: checkpoint; lexical hint chips: none",
       "learningTarget": "Produce four complete pattern-1 sentences from meaning at the declared checkpoint stage.",
       "pedagogicalValue": "A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.",
       "failureDiagnosis": "Adding decorative hints would weaken this deliberate independent-production checkpoint.",
@@ -264,7 +264,7 @@
       "pageId": "p1-write",
       "learnerAction": "Say one personally relevant sentence that completes the named workplace job.",
       "tutorAction": "Let the learner speak first, respond naturally, then capture and correct only what helps.",
-      "targetOrPrompt": "Use “I recommend ___” to give the decision maker one clear recommendation. Stable frame: I recommend ___",
+      "targetOrPrompt": "Exact learner prompt: “Use “I recommend ___” to give the decision maker one clear recommendation.”; aligned Japanese prompt: “「I recommend ___」を使って、意思決定者に一つの案を明確にすすめましょう。”",
       "learningTarget": "Transfer pattern 1 into a new but clearly specified communicative use.",
       "pedagogicalValue": "The visible frame and job make open production actionable without prescribing the learner’s content.",
       "failureDiagnosis": "A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.",
@@ -288,16 +288,16 @@
     },
     {
       "pageId": "part2-intro",
-      "learnerAction": "Listen for why pattern 2 is useful, then move to the next page.",
-      "tutorAction": "State the transition once and move directly to the activity.",
-      "targetOrPrompt": "Part 2 communicative purpose: 次に、比較できる短い理由を一つ示します。",
-      "learningTarget": "Connect the practical scene to pattern 2 without adding a second drill.",
-      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
-      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the receptive-to-productive arc.",
-      "nonTargetSupport": "The aligned Japanese bridge names the communicative job.",
+      "learnerAction": "Read the visible pattern line aloud after hearing what it lets you do.",
+      "tutorAction": "State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.",
+      "targetOrPrompt": "Visible pattern: “It's easier to implement.” Exact English purpose/action: “Use a comparative reason that directly supports the choice. Read the line above aloud.” Exact Japanese purpose/action: “選択を直接支える比較理由を示す表現です。 上の文を声に出して読みましょう。”",
+      "learningTarget": "Connect the scene to this pattern's exact communicative purpose and read the target once aloud.",
+      "pedagogicalValue": "One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.",
+      "failureDiagnosis": "A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.",
+      "nonTargetSupport": "The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.",
       "articleTreatment": "No article decision is tested on this transition page.",
       "choiceQuality": "No choices are needed for a one-step transition.",
-      "componentConsistency": "Uses the compact shared transition component.",
+      "componentConsistency": "Uses the approved one-line purpose plus read-the-visible-pattern transition contract.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
@@ -314,7 +314,7 @@
       "pageId": "p2-teach",
       "learnerAction": "Read each complete model aloud after the brief meaning explanation.",
       "tutorAction": "Explain the communicative use briefly, then have the learner read every example.",
-      "targetOrPrompt": "Pattern 2 targets ['faster to implement', 'cheaper to maintain', 'easier to explain', 'safer to test']; first model: “It's faster to implement.”; job: Use “It's ___ to ___” to give one comparative reason for your recommendation.",
+      "targetOrPrompt": "Exact communicative use: “Use a comparative reason that directly supports the choice.”; aligned Japanese: “選択を直接支える比較理由を示す表現です。”; complete models: “It's easier to implement.”; “It's easier to maintain.”; “It's easier to explain.”; exact highlighted spans: “It's easier to”; “簡単です”",
       "learningTarget": "Connect pattern 2’s authored target boundary to its workplace use and varied examples.",
       "pedagogicalValue": "Stable highlighting plus complete models makes the form usable rather than abstract.",
       "failureDiagnosis": "Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.",
@@ -328,12 +328,12 @@
       "notes": "Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
       "evidence": {
         "targetHighlights": [
-          "faster to implement",
-          "導入がより速いです",
-          "cheaper to maintain",
-          "維持費がより安いです",
-          "easier to explain",
-          "説明がより簡単です"
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です"
         ],
         "blankAnswers": [],
         "hintChips": [],
@@ -345,7 +345,7 @@
       "pageId": "p2-read",
       "learnerAction": "Read all four complete English sentences aloud.",
       "tutorAction": "Prompt the sentences in order and listen; model only if help is needed.",
-      "targetOrPrompt": "“It's faster to implement.”; “It's cheaper to maintain.”; “It's easier to explain.”; “It's safer to test.”",
+      "targetOrPrompt": "Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “It's easier to implement.”; “It's easier to maintain.”; “It's easier to explain.”; “It's easier to test.”; exact highlighted spans: “It's easier to”; “簡単です”",
       "learningTarget": "Build oral familiarity with pattern 2 across four meaningful workplace variations.",
       "pedagogicalValue": "Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.",
       "failureDiagnosis": "Reading only highlighted chunks or tutor modelling first would reduce learner production.",
@@ -359,14 +359,14 @@
       "notes": "Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.",
       "evidence": {
         "targetHighlights": [
-          "faster to implement",
-          "導入がより速いです",
-          "cheaper to maintain",
-          "維持費がより安いです",
-          "easier to explain",
-          "説明がより簡単です",
-          "safer to test",
-          "試すうえでより安全です"
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です"
         ],
         "blankAnswers": [],
         "hintChips": [],
@@ -378,7 +378,7 @@
       "pageId": "p2-fill",
       "learnerAction": "Say each whole sentence aloud, including every missing target chunk.",
       "tutorAction": "Type only the missing target words exactly as the learner says them.",
-      "targetOrPrompt": "Target-only blanks ['faster to implement', 'cheaper to maintain', 'easier to explain', 'safer to test']; authored pattern-2 boundaries ['faster to implement', 'cheaper to maintain', 'easier to explain', 'safer to test']",
+      "targetOrPrompt": "Exact missing target answers: “It's easier to”; “It's easier to”; “It's easier to”; “It's easier to”; exact Japanese target cues: “簡単です”",
       "learningTarget": "Retrieve only pattern 2’s taught target chunks while saying complete sentences.",
       "pedagogicalValue": "Target-only blanks keep the controlled task focused and leave lexical context available.",
       "failureDiagnosis": "Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.",
@@ -392,16 +392,16 @@
       "notes": "Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
       "evidence": {
         "targetHighlights": [
-          "導入がより速いです",
-          "維持費がより安いです",
-          "説明がより簡単です",
-          "試すうえでより安全です"
+          "簡単です",
+          "簡単です",
+          "簡単です",
+          "簡単です"
         ],
         "blankAnswers": [
-          "faster to implement",
-          "cheaper to maintain",
-          "easier to explain",
-          "safer to test"
+          "It's easier to",
+          "It's easier to",
+          "It's easier to",
+          "It's easier to"
         ],
         "hintChips": [],
         "supportStage": "not-applicable",
@@ -412,7 +412,7 @@
       "pageId": "p2-translate",
       "learnerAction": "Read each Japanese cue and say the complete English sentence aloud.",
       "tutorAction": "Type the learner’s complete English sentence exactly as they say it.",
-      "targetOrPrompt": "Produce all four complete pattern-2 sentences from Japanese; support stage checkpoint; hints [].",
+      "targetOrPrompt": "Exact complete English answers: “It's easier to implement.”; “It's easier to maintain.”; “It's easier to explain.”; “It's easier to test.”; support stage: checkpoint; lexical hint chips: none",
       "learningTarget": "Produce four complete pattern-2 sentences from meaning at the declared checkpoint stage.",
       "pedagogicalValue": "A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.",
       "failureDiagnosis": "Adding decorative hints would weaken this deliberate independent-production checkpoint.",
@@ -427,10 +427,10 @@
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
-          "It's faster to implement.",
-          "It's cheaper to maintain.",
+          "It's easier to implement.",
+          "It's easier to maintain.",
           "It's easier to explain.",
-          "It's safer to test."
+          "It's easier to test."
         ],
         "hintChips": [],
         "supportStage": "checkpoint",
@@ -441,7 +441,7 @@
       "pageId": "p2-write",
       "learnerAction": "Say one personally relevant sentence that completes the named workplace job.",
       "tutorAction": "Let the learner speak first, respond naturally, then capture and correct only what helps.",
-      "targetOrPrompt": "Use “It's ___ to ___” to give one comparative reason for your recommendation. Stable frame: It's ___ to ___",
+      "targetOrPrompt": "Exact learner prompt: “Use “It's easier to ___” to give one practical reason for your recommendation.”; aligned Japanese prompt: “「It's easier to ___」を使って、推奨案を支える実用的な理由を一つ伝えましょう。”",
       "learningTarget": "Transfer pattern 2 into a new but clearly specified communicative use.",
       "pedagogicalValue": "The visible frame and job make open production actionable without prescribing the learner’s content.",
       "failureDiagnosis": "A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.",
@@ -459,7 +459,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Use “It's ___ to ___” to give one comparative reason for your recommendation."
+          "Use “It's easier to ___” to give one practical reason for your recommendation."
         ]
       }
     },
@@ -491,7 +491,7 @@
       "pageId": "p3-model",
       "learnerAction": "Read every colleague line aloud while the tutor plays the counterpart.",
       "tutorAction": "Play the decision maker and pause for each learner-owned line.",
-      "targetOrPrompt": "Replay choosing among three implementation options; learner reads Colleague lines and tutor plays Decision Maker; both target patterns remain complete.",
+      "targetOrPrompt": "Tutor role: Decision Maker; exact full exchange: “We've reviewed options A, B, and C. Which one should we choose?”; “I recommend option B.”; “Why B?”; “It's easier to implement.”; “Good. Show us the comparison.”; “I will show the timing and cost side by side.”; exact highlighted targets: “I recommend”; “をおすすめします”; “It's easier to”; “簡単です”",
       "learningTarget": "Replay the resolved six-turn exchange with both target patterns in context.",
       "pedagogicalValue": "The roleplay integrates both moves without asking the tutor to model learner production.",
       "failureDiagnosis": "Unclear roles or tutor-read learner lines would remove the learner’s speaking job.",
@@ -505,10 +505,10 @@
       "notes": "Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.",
       "evidence": {
         "targetHighlights": [
-          "I recommend option B",
-          "選択肢Bをおすすめします",
-          "faster to implement",
-          "導入がより速いです"
+          "I recommend",
+          "をおすすめします",
+          "It's easier to",
+          "簡単です"
         ],
         "blankAnswers": [],
         "hintChips": [],
@@ -520,7 +520,7 @@
       "pageId": "p3-complete",
       "learnerAction": "Say each complete colleague line aloud, including all missing target chunks.",
       "tutorAction": "Play the decision maker and type only the missing target words.",
-      "targetOrPrompt": "Complete choosing among three implementation options with target blanks ['I recommend option B', 'faster to implement']; tutor plays Decision Maker.",
+      "targetOrPrompt": "Tutor role: Decision Maker; exact completion instruction: “I’ll be the decision maker. Say each complete line, including the missing words.”; exact missing target answers: “I recommend”; “It's easier to”",
       "learningTarget": "Retrieve both patterns while completing the full practical exchange.",
       "pedagogicalValue": "Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.",
       "failureDiagnosis": "Blanking full turns or non-target vocabulary would destabilise the taught boundary.",
@@ -535,8 +535,8 @@
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
-          "I recommend option B",
-          "faster to implement"
+          "I recommend",
+          "It's easier to"
         ],
         "hintChips": [],
         "supportStage": "not-applicable",
@@ -547,7 +547,7 @@
       "pageId": "p3-freetalk",
       "learnerAction": "Answer the tutor’s real question, then ask the visible reciprocal question.",
       "tutorAction": "React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.",
-      "targetOrPrompt": "Exact reciprocal questions: “When someone recommends an option, which matters more to you: the recommendation or the reason?”; “What about you—which matters more?”",
+      "targetOrPrompt": "Exact Tutor question: “When someone recommends an option, which matters more to you: the recommendation or the reason?”; exact learner ask-back: “What about you—which matters more?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”",
       "learningTarget": "Sustain a reciprocal conversation relevant to present a recommendation up front without forcing today’s pattern.",
       "pedagogicalValue": "Both exact questions stand alone, invite personal content, and create genuine two-way talk.",
       "failureDiagnosis": "A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.",
@@ -598,7 +598,7 @@
       "pageId": "transfer-scene",
       "learnerAction": "Play the colleague and complete both target lines in the new workplace situation.",
       "tutorAction": "Play the operations director, begin with the first line, and carry the exchange to resolution.",
-      "targetOrPrompt": "Recommending a pilot format; learner is Colleague, tutor is Operations Director; first tutor line: “Should we test with one team or the whole department?”; same two target patterns are retrieved in a new scene.",
+      "targetOrPrompt": "Tutor role: Operations Director; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the operations director.”; exact full exchange: “Should we test with one team or the whole department?”; “the smaller pilot.”; “What makes the smaller pilot better?”; “test.”; “All right. Prepare a two-week test plan.”; “I will send the plan and success criteria tomorrow.”; exact missing target answers: “I recommend”; “It's easier to”",
       "learningTarget": "Transfer both stable patterns to a new roleplay with a different practical context.",
       "pedagogicalValue": "The new role and situation require meaningful transfer while preserving the two learned moves.",
       "failureDiagnosis": "Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.",
@@ -613,8 +613,8 @@
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [
-          "I recommend the smaller pilot",
-          "safer to test"
+          "I recommend",
+          "It's easier to"
         ],
         "hintChips": [],
         "supportStage": "not-applicable",

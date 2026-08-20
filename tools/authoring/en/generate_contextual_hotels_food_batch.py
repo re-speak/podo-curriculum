@@ -944,11 +944,20 @@ def understand_page(number, lesson):
 
 def transition(part, pattern):
     model = core.strip_marks(pattern["rows"][0][0])
+    purpose = pattern.get("transition_purpose", pattern.get("meaning"))
+    if (
+        not isinstance(purpose, (tuple, list))
+        or len(purpose) != 2
+        or not all(isinstance(value, str) and value.strip() for value in purpose)
+    ):
+        raise ValueError("transition needs an explicit aligned EN/JA purpose pair")
+    move_en = purpose[0].strip().rstrip(". ") + "."
+    move_ja = purpose[1].strip().rstrip("。 ") + "。"
     return f'''    <div class="transition-page" data-page-id="part{part}-intro" data-act="Move {part}">
       <span class="transition-kicker">MOVE {part}</span>
       <h2 class="transition-title">{esc(model)}</h2>
-      <p class="section-subtitle"><span class="ko">{'First' if part == 1 else 'Next'}, let's practice this useful line from the scene.</span><span class="ja">{esc(pattern["bridge"])}</span></p>
-      <div class="tutor-note">Introduce this part with one line, then move on.</div>
+      <p class="section-subtitle"><span class="ko">{esc(move_en)} Read the line above aloud.</span><span class="ja">{esc(move_ja)} 上の文を声に出して読みましょう。</span></p>
+      <div class="tutor-note">After the learner reads the line aloud, move on.</div>
     </div>
 '''
 
