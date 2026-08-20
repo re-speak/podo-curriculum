@@ -1130,6 +1130,69 @@ def freetalk_style_issues(chunk):
     return errors
 
 
+def freetalk_conversation_issues(page_chunks):
+    """Protect the question pool from becoming a scripted interview."""
+    errors = []
+    intro = page_chunks.get("talk-intro", "")
+    if intro:
+        subtitles = SUBTITLE.findall(intro)
+        body = subtitles[0][1] if subtitles else ""
+        english = SPAN_KO.search(body)
+        spoken = plain_text(english.group(1)).casefold() if english else ""
+        note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(intro))).casefold()
+        if not (
+            "every question" in spoken
+            and "interesting" in spoken
+            and "react" in note
+            and "share" in note
+            and "skip" in note
+        ):
+            errors.append(
+                "talk-intro: frame the pages as a flexible question pool; follow the "
+                "learner's most interesting answer, react or share briefly, and skip freely"
+            )
+
+    prompts = {}
+    followup_sets = {}
+    for page_id in FREETALK_QUESTION_PAGES:
+        chunk = page_chunks.get(page_id, "")
+        if not chunk:
+            continue
+        subtitles = SUBTITLE.findall(chunk)
+        body = subtitles[0][1] if subtitles else ""
+        english = SPAN_KO.search(body)
+        prompt = plain_text(english.group(1)) if english else ""
+        if prompt.count("?") > 1:
+            errors.append(
+                f"{page_id}: visible prompt contains {prompt.count('?')} questions — "
+                "give the learner one clear talking job and move optional probes to tutor follow-ups"
+            )
+        key = re.sub(r"[^a-z0-9]+", " ", prompt.casefold()).strip()
+        if key:
+            if key in prompts:
+                errors.append(
+                    f"{page_id}: repeats the main prompt from {prompts[key]} — every page "
+                    "needs a distinct conversational move"
+                )
+            else:
+                prompts[key] = page_id
+
+        followups = tuple(
+            re.sub(r"[^a-z0-9]+", " ", plain_text(item).casefold()).strip()
+            for item in LIST_ITEM_BODY.findall(chunk)
+            if plain_text(item)
+        )
+        if followups:
+            if followups in followup_sets:
+                errors.append(
+                    f"{page_id}: repeats the complete follow-up set from "
+                    f"{followup_sets[followups]} — write probes for this prompt's actual idea"
+                )
+            else:
+                followup_sets[followups] = page_id
+    return errors
+
+
 def pilot_operating_issues(page_chunks, *, track):
     """Enforce only objective regressions from the owner-approved pilot pass.
 
@@ -1618,6 +1681,7 @@ def check(path):
     if is_english and "3-freetalking" in path.parts:
         page_chunks = dict(pages(html))
         errs.extend(pilot_operating_issues(page_chunks, track="freetalking"))
+        errs.extend(freetalk_conversation_issues(page_chunks))
         errs.extend(freetalk_inventory_issues(html))
         if "article" not in page_chunks:
             errs.append(

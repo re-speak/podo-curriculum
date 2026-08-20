@@ -443,6 +443,53 @@ class DeckCheckTests(unittest.TestCase):
         errors = check_deck.freetalk_question_note_issues("q2", chunk)
         self.assertTrue(any("repeats the printed question" in item for item in errors))
 
+    def test_freetalking_conversation_requires_reciprocal_pool_intro(self):
+        pages = {
+            "talk-intro": (
+                '<p class="section-subtitle"><span class="ko">Let\'s answer all eight.</span>'
+                '<span class="ja">全部答えましょう。</span></p>'
+                '<div class="tutor-note">Ask each question in order.</div>'
+            )
+        }
+        errors = check_deck.freetalk_conversation_issues(pages)
+        self.assertTrue(any("flexible question pool" in item for item in errors))
+
+    def test_freetalking_conversation_rejects_duplicate_pages_and_double_prompt(self):
+        question = (
+            '<p class="section-subtitle ask"><span class="ko">What changed? Why?</span>'
+            '<span class="ja">何が変わりましたか？ なぜですか？</span></p>'
+            '<div class="tutor-note"><ul><li>What happened next?</li>'
+            '<li>Who noticed?</li></ul></div>'
+        )
+        errors = check_deck.freetalk_conversation_issues({"q1": question, "q2": question})
+        self.assertTrue(any("contains 2 questions" in item for item in errors))
+        self.assertTrue(any("repeats the main prompt" in item for item in errors))
+        self.assertTrue(any("repeats the complete follow-up set" in item for item in errors))
+
+    def test_freetalking_conversation_accepts_distinct_pool_pages(self):
+        intro = (
+            '<p class="section-subtitle"><span class="ko">We do not need to answer every '
+            'question. Let\'s follow the most interesting parts.</span>'
+            '<span class="ja">全部答えなくても大丈夫です。</span></p>'
+            '<div class="tutor-note">React or share briefly, and skip freely.</div>'
+        )
+        q1 = (
+            '<p class="section-subtitle ask"><span class="ko">What changed?</span>'
+            '<span class="ja">何が変わりましたか？</span></p>'
+            '<div class="tutor-note"><ul><li>What happened next?</li></ul></div>'
+        )
+        q2 = (
+            '<p class="section-subtitle ask"><span class="ko">Who noticed first?</span>'
+            '<span class="ja">誰が最初に気づきましたか？</span></p>'
+            '<div class="tutor-note"><ul><li>What did they say?</li></ul></div>'
+        )
+        self.assertEqual(
+            check_deck.freetalk_conversation_issues(
+                {"talk-intro": intro, "q1": q1, "q2": q2}
+            ),
+            [],
+        )
+
     def test_english_tutor_notes_reject_japanese_or_korean(self):
         source = (
             '<div class="tutor-note">Answer questions, then move on.</div>'
