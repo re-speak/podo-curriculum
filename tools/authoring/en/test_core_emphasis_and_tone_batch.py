@@ -44,6 +44,8 @@ IRREGULAR = {
 
 def forms(token):
     found = {token} | IRREGULAR.get(token, set())
+    if token.endswith("'s") and len(token) > 2:
+        found.add(token[:-2])
     if token.endswith("ing") and len(token) > 4:
         base = token[:-3]
         found.update((base, base + "e"))
@@ -88,9 +90,15 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
             batch.TRANSLATE_HINTS, batch.OPEN_MENUS, batch.SUPPORT_EXPRESSIONS,
             batch.DIALOGUES, batch.LIVE_SCENES, batch.LIVE_HINTS,
             batch.TRANSFER_SCENES, batch.BRIEF_PRODUCTION_MODELS,
-            batch.DIALOGUE_SEMANTIC_LEDGER,
+            batch.DIALOGUE_SEMANTIC_LEDGER, batch.WRITE_FRAMES, batch.FREE_TALK,
         ):
             self.assertEqual(set(values), EXPECTED)
+        used_roles = {
+            data[variant][0]
+            for data in batch.DIALOGUES.values()
+            for variant in ("model", "wild")
+        }
+        self.assertEqual(set(batch.ROLE_JA), used_roles)
 
     def test_identity_title_level_and_exact_one_complete_marker(self):
         for number, data in batch.LESSONS.items():
@@ -134,7 +142,11 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
 
     def test_choices_are_small_and_reconstruct_their_own_examples(self):
         for number, spec in batch.SPECS.items():
+            omitted = set(batch.LESSONS[number].get("omit_choice", ()))
             for part, choices in enumerate(spec["choices"], 1):
+                if part in omitted:
+                    self.assertEqual(choices, (), (number, part))
+                    continue
                 examples = {shared_core.strip_marks(row[0]) for row in batch.LESSONS[number][f"p{part}"]}
                 self.assertEqual(len(choices), 4, (number, part))
                 for japanese, prefix, correct, distractor, suffix in choices:
@@ -145,11 +157,11 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
                     self.assertLessEqual(len(distractor.split()), 3, (number, part, distractor))
                     self.assertIn(prefix + correct + suffix, examples, (number, part, prefix + correct + suffix))
 
-        # A choice must discriminate meaning or form; who/that is not a safe
-        # contrast for a person in modern English.
-        for choice in batch.SPECS[104]["choices"][1]:
-            self.assertNotEqual({choice[2].casefold(), choice[3].casefold()}, {"who", "that"})
-            self.assertIn(choice[2], {"Sam", "Maya", "Ken", "Yuki"})
+        # CORE-104's old choices only recovered content nouns/names or repeated
+        # one fixed relative word. Neither was a useful decision, so both pages
+        # are deliberately absent instead of manufacturing distractors.
+        self.assertEqual(batch.LESSONS[104]["omit_choice"], (1, 2))
+        self.assertEqual(batch.SPECS[104]["choices"], ((), ()))
         for part in (0, 1):
             for japanese, _prefix, correct, distractor, _suffix in batch.SPECS[112]["choices"][part]:
                 self.assertIn("形容詞", japanese)
@@ -185,16 +197,46 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
                     self.assertNotIn(("walk", "away."), tuple(zip(chips, chips[1:])), (number, part, chips))
 
     def test_translation_hints_are_exactly_row_aligned(self):
-        for number in (104, 105, 106, 110):
+        banned_hint_tokens = {"a", "an", "the", "is", "are", "was", "were", "who", "that"}
+        for number in batch.NUMBERS:
             data = batch.LESSONS[number]
             for part in (1, 2):
                 hints = batch.TRANSLATE_HINTS[number][part - 1]
                 self.assertEqual(len(hints), len(data[f"p{part}"]))
                 for row, hint_text in zip(data[f"p{part}"], hints, strict=True):
                     english = shared_core.strip_marks(row[0]).casefold()
+                    sentence_forms = {form for token in tokens(english) for form in forms(token)}
                     for hint in hint_text.split("; "):
                         target = hint.split(":", 1)[1].casefold()
-                        self.assertIn(target, english, (number, part, english, target))
+                        target_tokens = tokens(target)
+                        self.assertTrue(target_tokens, (number, part, hint))
+                        self.assertTrue(all(forms(token) & sentence_forms for token in target_tokens),
+                                        (number, part, english, target))
+                        self.assertFalse(set(target_tokens) <= banned_hint_tokens,
+                                         (number, part, "grammar-only hint", hint))
+
+    def test_open_writes_name_the_exact_communicative_frame(self):
+        fixed_frame_chips = {
+            "worries", "matters", "longer", "harder", "sooner", "one thing",
+            "worth raising", "as for", "coming back to", "when you get a sec",
+            "bluntly", "honestly", "i'm afraid", "just so you know", "heads up",
+            "come across as",
+        }
+        for number, spec in batch.SPECS.items():
+            for part, (english, japanese) in enumerate(spec["writes"], 1):
+                frame = batch.WRITE_FRAMES[number][part - 1]
+                self.assertTrue(english.startswith(f'Use “{frame}” to '), (number, part, english))
+                self.assertTrue(japanese.startswith(f'「{frame}」を使って、'), (number, part, japanese))
+                _, source = batch.build(number, batch.LESSONS[number])
+                page = dict(check_deck.pages(source))[f"p{part}-write"]
+                self.assertIn(shared_core.esc(english), page, (number, part))
+                self.assertIn(shared_core.esc(japanese), page, (number, part))
+                menu_values = {
+                    item.split(":", 1)[1].casefold()
+                    for item in batch.OPEN_MENUS[number][part - 1]
+                }
+                self.assertFalse(menu_values & fixed_frame_chips,
+                                 (number, part, menu_values & fixed_frame_chips))
 
     def test_vocabulary_is_parseable_and_every_hint_is_declared(self):
         for number, data in batch.LESSONS.items():
@@ -264,7 +306,6 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
             declared_forms = {form for entry in declared for token in tokens(entry) for form in forms(token)}
             produced = [shared_core.strip_marks(row[0]) for part in ("p1", "p2") for row in data[part]]
             produced += [batch.DIALOGUES[number][variant][6][0] for variant in ("model", "wild")]
-            produced += [turn[3] for turn in batch.LIVE_SCENES[number] if turn[:2] == ("input", "me")]
             missing = {
                 token for line in produced for token in tokens(line.replace("___ing", "___"))
                 if token not in FUNCTION_WORDS and not (forms(token) & declared_forms)
@@ -311,21 +352,36 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
         expected_roles = (("text", "other", "Tutor"), ("input", "me", "Me"), ("text", "me", "Me"), ("input", "other", "Tutor"))
         for number, scene in batch.LIVE_SCENES.items():
             self.assertEqual(tuple(turn[:3] for turn in scene), expected_roles, number)
-            self.assertIn(" / ", scene[1][3], number)
-            self.assertIn("／", scene[1][4], number)
+            self.assertEqual(scene[1][3:], ("Student's answer", "自分の答え"), number)
+            self.assertEqual(scene[3][3:], ("Tutor's answer", "先生の答え"), number)
+            self.assertEqual(scene[0][3:], batch.FREE_TALK[number][:2], number)
+            self.assertEqual(scene[2][3:], batch.FREE_TALK[number][2:], number)
+            self.assertTrue(scene[0][3].endswith("?"), number)
+            self.assertTrue(scene[2][3].startswith("What about you"), number)
             self.assertTrue(scene[2][3].endswith("?"), number)
-            self.assertIn("Tutor's ", scene[3][3], number)
+            self.assertNotIn("___", scene[0][3] + scene[2][3], number)
             self.assertNotRegex(" ".join(turn[3] for turn in scene).casefold(), r"look at me|watch me|gesture")
-            self.assertEqual(set(batch.LIVE_HINTS[number]), {1}, number)
+            self.assertEqual(batch.LIVE_HINTS[number], {}, number)
+            _, source = batch.build(number, batch.LESSONS[number])
+            page = dict(check_deck.pages(source))["p3-freetalk"]
+            self.assertIn(shared_core.esc(scene[0][3]), page, number)
+            self.assertIn(shared_core.esc(scene[2][3]), page, number)
+            self.assertIn("Use today's pattern only if it fits", page, number)
 
-        self.assertIn("topics and updates", batch.LIVE_SCENES[107][2][3])
-        self.assertIn("imaginary", batch.LIVE_SCENES[110][3][3])
-        self.assertNotIn("real low-stakes bad news", batch.LIVE_SCENES[110][3][3])
-        self.assertIn("If I need it before acting", batch.LIVE_SCENES[111][0][3])
-        self.assertIn("neutral update or a timely alert", batch.LIVE_SCENES[111][2][3])
-        self.assertIn("The message was", batch.LIVE_SCENES[112][1][3])
-        self.assertIn("I'd rephrase it as", batch.LIVE_SCENES[112][1][3])
-        self.assertIn("example, effect, and repaired wording", batch.LIVE_SCENES[112][3][3])
+    def test_rendered_translation_role_and_target_contracts_are_explicit(self):
+        for number, data in batch.LESSONS.items():
+            _, source = batch.build(number, data)
+            pages = dict(check_deck.pages(source))
+            for part in (1, 2):
+                translate = pages[f"p{part}-translate"]
+                self.assertIn('data-scaffolding-contract="target-v2"', translate, (number, part))
+                self.assertIn('data-support-stage="supported"', translate, (number, part))
+                self.assertGreaterEqual(translate.count('class="hint-chip"'), 4, (number, part))
+            for page_id, variant in (("p3-model", "model"), ("p3-complete", "model"),
+                                     ("in-the-wild", "wild")):
+                role = batch.DIALOGUES[number][variant][0]
+                self.assertIn(batch.ROLE_JA[role], pages[page_id], (number, page_id, role))
+                self.assertNotIn("相手役", pages[page_id], (number, page_id))
 
     def test_model_completion_and_transfer_are_resolved_six_turn_scenes(self):
         for number, data in batch.LESSONS.items():
@@ -374,6 +430,15 @@ class CoreEmphasisAndToneBatchTests(unittest.TestCase):
         first = {n: hashlib.sha256(batch.build(n, batch.LESSONS[n])[1].encode()).hexdigest() for n in batch.NUMBERS}
         second = {n: hashlib.sha256(batch.build(n, batch.LESSONS[n])[1].encode()).hexdigest() for n in batch.NUMBERS}
         self.assertEqual(first, second)
+
+    def test_rendered_sources_match_the_generator_and_checker_is_clean(self):
+        for number, data in batch.LESSONS.items():
+            path, expected = batch.build(number, data)
+            self.assertTrue(path.is_file(), number)
+            self.assertEqual(path.read_text(encoding="utf-8"), expected, number)
+            errors, warnings = check_deck.check(path)
+            self.assertEqual(errors, [], (number, errors))
+            self.assertEqual(warnings, [], (number, warnings))
 
 
 if __name__ == "__main__":

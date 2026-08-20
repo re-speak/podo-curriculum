@@ -497,6 +497,216 @@ DIALOGUE_SEMANTIC_LEDGER = {
 }
 
 
+ROLE_JA = {
+    "Café owner": "カフェの店主",
+    "Community organiser": "地域イベントの主催者",
+    "Consultant": "コンサルタント",
+    "Coworker": "同僚",
+    "Event coordinator": "イベントの調整担当者",
+    "Event organiser": "イベントの主催者",
+    "Friend": "友人",
+    "Hotel agent": "ホテルの予約担当者",
+    "Hotel planner": "ホテル手配の担当者",
+    "Manager": "上司",
+    "Project lead": "プロジェクトリーダー",
+    "Project manager": "プロジェクトマネージャー",
+    "Reviewer": "レビュー担当者",
+    "Team lead": "チームリーダー",
+    "Teammate": "チームメンバー",
+    "Travel companion": "旅行仲間",
+    "Trip coordinator": "旅行の調整担当者",
+}
+
+
+# Proofread operating copy and personal conversation for this owned lane.
+WRITE_FRAMES = {
+    103: ("What worries me most is ___", "What I'd suggest is ___"),
+    104: ("It's ___ that matters", "It was ___ who ___"),
+    105: ("The longer ___, the harder ___", "The sooner ___, the sooner ___"),
+    106: ("There's one thing I'd ___", "There are ___ worth ___ing"),
+    107: ("As for ___, ___", "Coming back to ___, ___"),
+    108: ("Would you be able to ___?", "Can you ___ when you get a sec?"),
+    109: ("To put it bluntly, ___", "Honestly? I'd ___"),
+    110: ("I hate to say it, but ___", "I'm afraid ___"),
+    111: ("Just so you know, ___", "Heads up — ___"),
+    112: ("That came across as ___", "I didn't mean to sound ___"),
+}
+
+FREE_TALK = {
+    103: (
+        "When you make a big decision, what do you worry about first?",
+        "大きな判断をするとき、最初に何を心配しますか？",
+        "What about you—what do you worry about first?",
+        "先生はどうですか？最初に何を心配しますか？",
+    ),
+    104: (
+        "What usually matters most when you choose between two options?",
+        "二つの選択肢から選ぶとき、普段いちばん重要なのは何ですか？",
+        "What about you—what usually matters most?",
+        "先生はどうですか？普段いちばん重要なのは何ですか？",
+    ),
+    105: (
+        "What is one task you prefer to start early, and why?",
+        "早めに始めたい作業は何ですか？なぜですか？",
+        "What about you—what do you prefer to start early?",
+        "先生はどうですか？何を早めに始めたいですか？",
+    ),
+    106: (
+        "If you could change one small thing about a service you use, what would it be?",
+        "利用しているサービスを一つだけ少し変えられるなら、何を変えますか？",
+        "What about you—what small thing would you change?",
+        "先生はどうですか？どんな小さなことを変えたいですか？",
+    ),
+    107: (
+        "Is it easy for you to follow a conversation that changes topics often?",
+        "話題がよく変わる会話についていくのは簡単ですか？",
+        "What about you—is it easy to follow changing topics?",
+        "先生はどうですか？話題が変わる会話についていくのは簡単ですか？",
+    ),
+    108: (
+        "Do you prefer people to ask you directly or very politely for help? Why?",
+        "人から頼まれるなら、直接的な言い方と、とても丁寧な言い方のどちらが好きですか？なぜですか？",
+        "What about you—which kind of request do you prefer?",
+        "先生はどうですか？どちらの頼み方が好きですか？",
+    ),
+    109: (
+        "Do you prefer honest feedback that is direct or gentle? Why?",
+        "率直で直接的な意見と、やわらかい意見のどちらが好きですか？なぜですか？",
+        "What about you—do you prefer direct or gentle feedback?",
+        "先生はどうですか？直接的な意見とやわらかい意見のどちらが好きですか？",
+    ),
+    110: (
+        "What makes difficult news easier for you to hear?",
+        "言いにくい知らせを聞くとき、どんな伝え方なら受け取りやすいですか？",
+        "What about you—what makes difficult news easier to hear?",
+        "先生はどうですか？どんな伝え方なら聞きやすいですか？",
+    ),
+    111: (
+        "How do you prefer to receive a last-minute update?",
+        "直前の変更は、どんな方法で知らせてもらいたいですか？",
+        "What about you—how do you prefer to get an update?",
+        "先生はどうですか？どんな方法で知らせてもらいたいですか？",
+    ),
+    112: (
+        "Have you ever misunderstood someone's tone in a message? What happened?",
+        "メッセージの口調を誤解したことはありますか？何がありましたか？",
+        "What about you—have you ever misunderstood a message's tone?",
+        "先生はどうですか？メッセージの口調を誤解したことはありますか？",
+    ),
+}
+
+# Whole-sentence translation supports non-target vocabulary without supplying
+# articles, auxiliaries, inflections, or the lesson's fixed discourse frame.
+TRANSLATE_HINTS = {
+    103: (
+        ("費用:cost", "予定:schedule", "期限:deadline", "品質:quality"),
+        ("待つ:wait; 週:week", "確認する:check; データ:data", "聞く:ask; 顧客:client", "始める:start; 明日:tomorrow"),
+    ),
+    104: (
+        ("タイミング:timing; 価格:price", "予定:schedule; 予算:budget", "品質:quality; 速さ:speed", "期限:deadline; 形式:format"),
+        ("サム:Sam; 提案する:suggest", "マヤ:Maya; 電話した:called; 顧客:client", "ケン:Ken; 変更する:change; 日付:date", "ユキ:Yuki; 送る:send; 最終版:final version"),
+    ),
+    105: (
+        ("遅れを取り戻す:catch up", "終える:finish", "見つける:find; 部屋:room", "直す:fix"),
+        ("始める:start; 終える:finish", "出る:leave; 着く:arrive", "決める:decide; 予約する:book", "聞く:ask; 分かる:know"),
+    ),
+    106: (
+        ("変える:change", "確認する:check", "加える:add", "提案する:suggest"),
+        ("問題:issue; 取り上げる:raise", "点:point; 話し合う:discuss", "詳細:detail; 確認する:check", "選択肢:option; 見直す:review"),
+    ),
+    107: (
+        ("予算:budget; 待つ:wait", "配達:delivery; 待つ:wait", "会場:venue; 予約済み:booked", "予定:schedule; 変更:change"),
+        ("予定表:timeline; 確定日:firm date", "価格:price; 返事:answer", "会議:meeting; 判断:decision", "二つ目の案:second option; 確定日:firm date"),
+    ),
+    108: (
+        ("送る:send over", "確認する:review; 下書き:draft", "確認する:confirm; 日付:date", "確認する:check; 数字:figures"),
+        ("送る:send over", "確認する:review", "電話する:call", "確認する:check; 日付:date"),
+    ),
+    109: (
+        ("うまくいく:work", "費用:cost", "遅い:late", "別の案:another plan"),
+        ("見送る:walk away", "待つ:wait", "断る:say no", "選ぶ:choose; 選択肢:option"),
+    ),
+    110: (
+        ("予定より遅れている:behind", "終える:finish", "遅れている:delayed", "価格:price; 変更:change"),
+        ("問題:problem", "遅れ:delay", "間違い:mistake", "変更:change"),
+    ),
+    111: (
+        ("部屋:room; 予約する:book", "会議:meeting; 変更になった:moved", "チケット:ticket; 準備できた:ready", "顧客:client; 電話する:call"),
+        ("会議:meeting; 変更になった:moved", "価格:price; 変更する:change", "電車:train; 遅れている:delayed", "サム:Sam; 電話する:call; さっき:earlier"),
+    ),
+    112: (
+        ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "分かりにくい:unclear"),
+        ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "分かりにくい:unclear"),
+    ),
+}
+
+OPEN_MENUS = {
+    103: (("費用:cost", "予定:schedule", "期限:deadline", "品質:quality"),
+          ("待つ:wait", "週:week", "データ:data", "顧客:client", "始める:start")),
+    104: (("タイミング:timing", "価格:price", "予定:schedule", "品質:quality"),
+          ("提案する:suggest", "電話する:call", "変更する:change", "送る:send")),
+    105: (("遅れを取り戻す:catch up", "終える:finish", "見つける:find", "直す:fix"),
+          ("始める:start", "終える:finish", "予約する:book", "聞く:ask")),
+    106: (("変える:change", "確認する:check", "加える:add", "提案する:suggest"),
+          ("問題:issue", "取り上げる:raise", "話し合う:discuss", "見直す:review")),
+    107: (("予算:budget", "配達:delivery", "会場:venue", "予定:schedule"),
+          ("予定表:timeline", "価格:price", "会議:meeting", "二つ目の案:second option")),
+    108: (("送る:send over", "下書き:draft", "数字:figures", "日付:date"),
+          ("送る:send", "確認する:review", "確認する:check", "電話する:call")),
+    109: (("うまくいく:work", "費用:cost", "遅い:late", "別の案:another plan"),
+          ("見送る:walk away", "待つ:wait", "断る:say no", "選ぶ:choose")),
+    110: (("予定より遅れて:behind schedule", "終える:finish", "遅れている:delayed", "価格:price"),
+          ("問題:problem", "遅れ:delay", "間違い:mistake", "変更:change")),
+    111: (("部屋:room", "会議:meeting", "準備できた:ready", "顧客:client"),
+          ("価格:price", "遅れている:delayed", "電車:train", "会議:meeting")),
+    112: (("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "分かりにくい:unclear"),
+          ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "分かりにくい:unclear")),
+}
+
+OMIT_CHOICES = {
+    103: (1,),
+    104: (1, 2),
+    105: (1, 2),
+    106: (1,),
+    107: (1, 2),
+    109: (1, 2),
+    110: (1,),
+    111: (1, 2),
+}
+for _number, _parts in OMIT_CHOICES.items():
+    LESSONS[_number]["omit_choice"] = _parts
+    _choices = list(SPECS[_number]["choices"])
+    for _part in _parts:
+        _choices[_part - 1] = ()
+    SPECS[_number]["choices"] = tuple(_choices)
+
+VOCAB[103]["assumed"] += "; tomorrow|明日"
+VOCAB[104]["assumed"] += "; call|電話する"
+VOCAB[106]["assumed"] += "; raise|取り上げる"
+
+for _number in NUMBERS:
+    _writes = []
+    for _part, (_old_en, _old_ja) in enumerate(SPECS[_number]["writes"], 1):
+        _frame = WRITE_FRAMES[_number][_part - 1]
+        _writes.append((
+            f'Use “{_frame}” to {_old_en[0].lower() + _old_en[1:]}',
+            f'「{_frame}」を使って、{_old_ja}',
+        ))
+    SPECS[_number]["writes"] = tuple(_writes)
+    _question, _question_ja, _ask_back, _ask_back_ja = FREE_TALK[_number]
+    LESSONS[_number]["prompt"] = (
+        "Let's talk about this topic. Answer my question, then ask me too.",
+        "この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。",
+    )
+    LIVE_SCENES[_number] = (
+        ("text", "other", "Tutor", _question, _question_ja),
+        ("input", "me", "Me", "Student's answer", "自分の答え"),
+        ("text", "me", "Me", _ask_back, _ask_back_ja),
+        ("input", "other", "Tutor", "Tutor's answer", "先生の答え"),
+    )
+    LIVE_HINTS[_number] = {}
+
+
 SPIRAL_MARKERS = {
     103: (("ORDER-01", "transfer"), ("REL-01", "transfer")),
     104: (("ORDER-01", "transfer"),),
@@ -531,7 +741,7 @@ THREE_CHIP_EXCEPTIONS = {
 
 @contextlib.contextmanager
 def course_data():
-    names = ("LESSONS", "SPECS", "VOCAB", "KNOWN_WORDS", "TRANSLATE_HINTS", "OPEN_MENUS", "DIALOGUES", "LIVE_SCENES", "LIVE_HINTS", "SUPPORT_EXPRESSIONS")
+    names = ("LESSONS", "SPECS", "VOCAB", "KNOWN_WORDS", "TRANSLATE_HINTS", "OPEN_MENUS", "DIALOGUES", "LIVE_SCENES", "LIVE_HINTS", "SUPPORT_EXPRESSIONS", "ROLE_JA")
     previous = {name: getattr(approved, name) for name in names}
     core_previous = (core.VOCAB, core.CANONICAL_SPECS, core.DIALOGUES, core.LIVE_SCENES)
     try:
