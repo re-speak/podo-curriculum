@@ -19,7 +19,7 @@ import vocabulary
 
 REVIEW_ID = re.compile(r'<meta name="podo:review-id" content="([^"]+)">')
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-REVIEWED_HTML = range(13, 16)
+REVIEWED_HTML = range(13, 25)
 
 
 def source_by_review_id(review_id: str) -> tuple[pathlib.Path, str]:
@@ -66,9 +66,7 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
                     self.assertEqual(english.count("{t}"), japanese.count("{t}"), (number, part, english, japanese))
 
     def test_generated_html_is_exact_and_checker_clean(self):
-        # CTX 13-15 are the regenerated slice in this review batch. The same
-        # source also owns CTX 16-24, whose checked-in HTML is reviewed in its
-        # own bounded pass rather than being silently rewritten here.
+        # CTX 13-24 have now each completed a bounded source-first review pass.
         for number in REVIEWED_HTML:
             lesson = batch.LESSONS[number]
             path, expected = batch.build(number, lesson)
@@ -105,7 +103,7 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
                 else:
                     self.assertIn(f"Reorder criterion: {pattern['reorder_criterion']}", source, (number, part))
 
-    def test_ctx13_15_write_freetalk_and_transfer_copy_names_the_real_job(self):
+    def test_reviewed_write_freetalk_and_transfer_copy_names_the_real_job(self):
         for number in REVIEWED_HTML:
             lesson = batch.LESSONS[number]
             _, source = batch.build(number, lesson)
@@ -125,7 +123,11 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
             transfer = pages["transfer-scene"]
             self.assertIn("using the same two lines", transfer, number)
             self.assertIn("同じ二つの表現を使って", transfer, number)
-            self.assertIn(batch.base.esc(batch.base.ROLE_JA[lesson["transfer_role"]]), transfer, number)
+            transfer_role_ja = lesson.get(
+                "transfer_role_ja",
+                batch.base.ROLE_JA.get(lesson["transfer_role"], "相手役"),
+            )
+            self.assertIn(batch.base.esc(transfer_role_ja), transfer, number)
 
             broken = copy.deepcopy(lesson)
             broken["live"] = ("Report it and ask for help.",) + broken["live"][1:]
@@ -159,23 +161,17 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
         lesson = batch.LESSONS[17]
         self.assertIn("旅行仲間", lesson["situation"])
         self.assertIn("both", lesson["scene_turns"][0][1])
-        self.assertIn("shared bill", lesson["live"][0])
         self.assertIn("both rented", lesson["transfer_turns"][0][1])
-        self.assertNotIn("always", lesson["live"][4].casefold())
-        self.assertTrue(lesson["live"][4].startswith("If you had"))
 
         lesson = batch.LESSONS[19]
         self.assertIn("旅行仲間と二人", lesson["situation"])
         self.assertIn("you two", lesson["scene_turns"][0][1])
-        self.assertIn("travel companion", lesson["live"][0])
         self.assertIn("the two of you", lesson["transfer_turns"][0][1])
 
     def test_ctx21_grounds_group_and_solo_counterpart_without_directive_japanese(self):
         lesson = batch.LESSONS[21]
         self.assertIn("旅行仲間と二人", lesson["situation"])
         self.assertIn("you and your friend", lesson["scene_turns"][0][1])
-        self.assertIn("travel companion", lesson["live"][0])
-        self.assertIn("If you are alone", lesson["live"][0])
         self.assertIn("on your own", lesson["transfer_turns"][0][1])
         self.assertIn("I'd love to", lesson["scene_turns"][5][1])
         self.assertNotIn("we'd love", str(lesson["scene_turns"]).casefold())
@@ -186,6 +182,33 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
         for _, japanese, _ in lesson["p2"]["rows"]:
             self.assertNotIn("ください", japanese)
             self.assertEqual(japanese.count("{t}"), 2)
+
+    def test_ctx16_24_support_and_safety_copy_is_explicit(self):
+        for number in range(16, 25):
+            lesson = batch.LESSONS[number]
+            self.assertTrue(lesson["role_ja"], number)
+            self.assertTrue(lesson["transfer_role_ja"], number)
+            for part in (1, 2):
+                pattern = lesson[f"p{part}"]
+                self.assertTrue(pattern["write_frame"], (number, part))
+                self.assertTrue(pattern["write_script"], (number, part))
+                self.assertTrue(pattern["write_script_ja"], (number, part))
+                support_stage = pattern.get(
+                    "translate_stage",
+                    "supported" if pattern.get("translate_hints") else None,
+                )
+                if (number, part) == (17, 2):
+                    self.assertEqual(support_stage, "checkpoint")
+                    self.assertFalse(pattern.get("translate_hints"))
+                else:
+                    self.assertEqual(support_stage, "supported", (number, part))
+                    self.assertEqual(len(pattern["translate_hints"]), 4, (number, part))
+
+        self.assertIn("After checking with your travel companion", batch.LESSONS[17]["p1"]["write_script"])
+        self.assertIn("imagined symptom", batch.LESSONS[18]["p1"]["write_script"])
+        self.assertIn("imagined next step", batch.LESSONS[18]["p2"]["write_script"])
+        self.assertIn("when you are alone", batch.LESSONS[21]["p1"]["write_script"])
+        self.assertIn("leaving room to decline", batch.LESSONS[21]["p2"]["write_script"])
 
     def test_ctx14_freetalk_uses_two_real_related_questions(self):
         lesson = batch.LESSONS[14]
@@ -318,6 +341,17 @@ class ContextualDisruptionsSocialBatchTests(unittest.TestCase):
         self.assertIn("seek emergency help immediately", scene)
         self.assertNotRegex(scene.casefold(), r"\b(diagnos|definitely|you have|prescribe)\b")
         self.assertIn(("me", "No, but the fever is getting worse.", "いいえ。ただ、熱が悪化しています。"), lesson["scene_turns"])
+        self.assertIn("You should see a doctor today.", {row[0] for row in lesson["receptive"]})
+        self.assertNotIn("The fever is getting worse.", {row[0] for row in lesson["receptive"]})
+
+    def test_ctx20_targets_the_identification_frame_not_the_activity_vocabulary(self):
+        for english, japanese, _ in batch.LESSONS[20]["p1"]["rows"]:
+            self.assertEqual(re.findall(r"\{t\}(.*?)\{/t\}", english), ["Is this", "for"])
+            self.assertEqual(re.findall(r"\{t\}(.*?)\{/t\}", japanese), ["これは", "の"])
+
+    def test_ctx17_itemised_bill_and_ctx20_transfer_are_not_isolated_or_redundant(self):
+        self.assertIn("itemised bill", batch.LESSONS[17]["scene_turns"][1][1])
+        self.assertEqual(batch.LESSONS[20]["transfer_turns"][0][1], "Hi there. Can I help you?")
 
     def test_key_semantic_repairs_remain_in_source(self):
         self.assertEqual(batch.core.strip_marks(batch.LESSONS[23]["p1"]["rows"][0][0]), batch.AUTHORITATIVE[23][1])

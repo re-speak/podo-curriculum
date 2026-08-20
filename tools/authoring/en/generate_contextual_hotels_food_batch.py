@@ -937,7 +937,7 @@ def understand_page(number, lesson):
         "Understand",
         "聞いてわかろう",
         f'<p class="section-subtitle"><span class="ko">I’ll read each {esc(lesson["role"].lower())} line. Choose what it means.</span>'
-        f'<span class="ja">私が{esc(ROLE_JA.get(lesson["role"], "相手役"))}のセリフを読みます。意味を選んでください。</span></p>'
+        f'<span class="ja">私が{esc(lesson.get("role_ja", ROLE_JA.get(lesson["role"], "相手役")))}のセリフを読みます。意味を選んでください。</span></p>'
         f'<div class="choose-list">{"".join(blocks)}</div>',
     )
 
@@ -1011,12 +1011,13 @@ def write_page(part, pattern):
     write_script = pattern.get(
         "write_script", f'Now use “{write_frame}” to make your own sentence.'
     )
+    write_script_ja = pattern.get("write_script_ja", pattern["write"][1])
     return core.section(
         f"p{part}-write",
         "Make it yours",
         "自分の場面で言おう",
         f'<p class="section-subtitle"><span class="ko">{esc(write_script)}</span>'
-        f'<span class="ja">{esc(pattern["write"][1])}</span></p>'
+        f'<span class="ja">{esc(write_script_ja)}</span></p>'
         '<div class="tutor-note">Let the learner answer aloud before you capture and correct it.</div>'
         + core.feedback_compose(f"p{part}-write"),
     )
@@ -1067,6 +1068,16 @@ def native_tip_page(lesson):
 
 
 def pages(number, lesson):
+    role_ja = lesson.get("role_ja", ROLE_JA.get(lesson["role"], "相手役"))
+    practice_role_ja = lesson.get("role_ja", "相手役")
+    practice_role_intro_ja = (
+        f"私は{practice_role_ja}です。"
+        if lesson.get("role_ja")
+        else "私は相手役をします。"
+    )
+    transfer_role_ja = lesson.get(
+        "transfer_role_ja", ROLE_JA.get(lesson["transfer_role"], "相手役")
+    )
     opening = render_roleplay(lesson, lesson["scene_turns"], prefix=f"ctx-{number}-scene")
     model = render_roleplay(
         lesson, lesson["scene_turns"], highlight=True, prefix=f"ctx-{number}-model"
@@ -1091,7 +1102,7 @@ def pages(number, lesson):
             lesson["scene"],
             lesson["scene_ja"],
             f'<p class="section-subtitle"><span class="ko">Let\'s role-play. You\'re the traveller, and I\'ll be the {esc(lesson["role"].lower())}.</span>'
-            f'<span class="ja">ロールプレイをしましょう。あなたは旅行者、私は{esc(ROLE_JA.get(lesson["role"], "相手役"))}です。</span></p>'
+            f'<span class="ja">ロールプレイをしましょう。あなたは旅行者、私は{esc(role_ja)}です。</span></p>'
             f'<div class="tutor-note">Start with the first {esc(lesson["role"])} line.</div>'
             f'<div class="dialogue">{opening}</div>',
         ),
@@ -1112,7 +1123,10 @@ def pages(number, lesson):
                     f"p{part}-translate",
                     pattern["rows"],
                     hints=pattern.get("translate_hints"),
-                    support_stage="supported" if pattern.get("translate_hints") else None,
+                    support_stage=pattern.get(
+                        "translate_stage",
+                        "supported" if pattern.get("translate_hints") else None,
+                    ),
                 ),
                 write_page(part, pattern),
             ]
@@ -1130,7 +1144,7 @@ def pages(number, lesson):
                 "Replay the full scene",
                 "場面をもう一度",
                 f'<p class="section-subtitle"><span class="ko">I\'ll be the {esc(lesson["role"])}. Please read the Traveller lines aloud.</span>'
-                '<span class="ja">私は相手役をします。Traveller のセリフを声に出して読んでください。</span></p>'
+                f'<span class="ja">{esc(practice_role_intro_ja)}Traveller のセリフを声に出して読んでください。</span></p>'
                 f'<div class="dialogue">{model}</div>',
             ),
             core.section(
@@ -1138,7 +1152,7 @@ def pages(number, lesson):
                 "Complete the full scene",
                 "場面を完成しよう",
                 f'<p class="section-subtitle"><span class="ko">I’ll be the {esc(lesson["role"])}. Say each complete line, including the missing words.</span>'
-                '<span class="ja">私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。</span></p>'
+                f'<span class="ja">{esc(practice_role_intro_ja)}空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。</span></p>'
                 '<div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'
                 f'<div class="dialogue">{complete}</div>',
             ),
@@ -1149,7 +1163,7 @@ def pages(number, lesson):
                 lesson["transfer_title"],
                 lesson["transfer_ja"],
                 f'<p class="section-subtitle"><span class="ko">Let\'s role-play a new situation using the same two lines. I\'ll be the {esc(lesson["transfer_role"].lower())}.</span>'
-                f'<span class="ja">同じ二つの表現を使って、別の場面でロールプレイをしましょう。私は{esc(ROLE_JA.get(lesson["transfer_role"], "相手役"))}です。</span></p>'
+                f'<span class="ja">同じ二つの表現を使って、別の場面でロールプレイをしましょう。私は{esc(transfer_role_ja)}です。</span></p>'
                 f'<div class="dialogue">{transfer}</div>',
             ),
         ]
