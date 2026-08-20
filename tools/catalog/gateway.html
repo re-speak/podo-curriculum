@@ -8,8 +8,12 @@
      Edits:
        1. Every string that names a language is read from DATA.page instead of
           being written in the markup, because one template now draws both
-          korean/catalog.html and english/catalog.html.
-       2. The level ramp is keyed by position on the axis (--lv-1 … --lv-6 plus
+          korean-jp/index.html and english-jp/index.html.
+       2. Track links drop the .html — this site is served at a custom domain where
+          a language is a path (/korean-jp) and its catalog is that directory's
+          index. Pages resolves /korean-jp/catalog/1-hangul to the same file
+          upstream writes, so only the links moved, not the tree.
+       3. The level ramp is keyed by position on the axis (--lv-1 … --lv-6 plus
           DATA.ramp) rather than by rung name, because English is graded in CEFR
           and a name-keyed lookup left those segments with no colour at all.
 
@@ -274,7 +278,7 @@ document.getElementById("cards").innerHTML = DATA.tracks.map(t => {
   const span = t.span.length ? (t.span.length === 1 ? t.span[0] : `${t.span[0]} — ${t.span[t.span.length - 1]}`) : "전 레벨";
   const dot = t.span.length ? t.span[0] : "";
   const flag = t.status === "open" ? "계속 추가" : "";
-  return `<a class="card" data-status="${esc(t.status)}" href="catalog/${esc(t.id)}.html" style="--ac:${t.accent};--tint:${t.tint}">
+  return `<a class="card" data-status="${esc(t.status)}" href="catalog/${esc(t.id)}" style="--ac:${t.accent};--tint:${t.tint}">
     <span class="card-no">${String(t.no).padStart(2, "0")}</span>
     ${flag ? `<span class="flag">${flag}</span>` : ""}
     <div class="card-head">
@@ -298,7 +302,7 @@ document.getElementById("cards").innerHTML = DATA.tracks.map(t => {
   const n = made.reduce((s, t) => s + t.decks.length, 0);
   document.getElementById("decks-h").textContent = `완성된 레슨 덱 ${n}`;
   document.getElementById("decks").innerHTML = made.length ? made.map(t => `<div class="dtrack">
-    <a class="dtrack-h" href="catalog/${esc(t.id)}.html"><i style="background:${t.accent}"></i>${esc(t.ko)}<em>${t.decks.length}</em></a>
+    <a class="dtrack-h" href="catalog/${esc(t.id)}"><i style="background:${t.accent}"></i>${esc(t.ko)}<em>${t.decks.length}</em></a>
     <div class="dlist">${t.decks.map(d => `<a href="${esc(d.href)}" target="_blank" rel="noopener"
       title="${esc(d.title)}"><em>${String(d.n).padStart(2, "0")}</em>${esc(d.title)}<span class="ext">↗</span></a>`).join("")}</div>
   </div>`).join("") : `<p class="dnone">아직 나와 있는 덱이 없습니다.</p>`;
@@ -315,7 +319,7 @@ document.getElementById("ladder").innerHTML = DATA.tracks.map(t => {
           title="${esc(t.ko)} · ${lv} · ${n}${esc(t.lessonWord)}">${n}</div>`;
       }).join("");
   return `<div class="lrow">
-    <a class="lrow-head" href="catalog/${esc(t.id)}.html"><i style="background:${t.accent}"></i>${esc(t.ko)}<em>${t.total}</em></a>
+    <a class="lrow-head" href="catalog/${esc(t.id)}"><i style="background:${t.accent}"></i>${esc(t.ko)}<em>${t.total}</em></a>
     <div class="lcols">${cells}</div>
   </div>`;
 }).join("");
