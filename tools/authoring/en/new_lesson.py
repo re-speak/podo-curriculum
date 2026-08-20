@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+from html.parser import HTMLParser
 import os
 import pathlib
 import re
@@ -21,6 +22,45 @@ PHONE_OPEN = '<div class="phone">'
 PHONE_CLOSE = re.compile(r"^  </div>\s*$")
 SLUG = re.compile(r"^(\d{2,3})-[a-z0-9]+(?:-[a-z0-9]+)*$")
 REL_SHARED = re.compile(r'((?:href|src)=")(?:(?:\.\./)+)(shared|runtime|korean|kr)/')
+FEEDBACK_SCRIPT = re.compile(
+    r'^[ \t]*<script src="(?:\.\./)+shared/js/feedback\.js"></script>[ \t]*\n?',
+    re.MULTILINE,
+)
+ACTIVITIES_SCRIPT = re.compile(
+    r'^(?P<indent>[ \t]*)<script src="(?P<shared>(?:\.\./)+shared)/js/activities\.js"></script>[ \t]*$',
+    re.MULTILINE,
+)
+
+
+class FeedbackControlParser(HTMLParser):
+    """Find live data-fb controls, excluding inert markup-shaped text."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=False)
+        self.found = False
+        self.template_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "template":
+            self.template_depth += 1
+            return
+        if not self.template_depth and any(name == "data-fb" for name, _ in attrs):
+            self.found = True
+
+    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if not self.template_depth and tag != "template" and any(name == "data-fb" for name, _ in attrs):
+            self.found = True
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "template" and self.template_depth:
+            self.template_depth -= 1
+
+
+def has_feedback_control(page: str) -> bool:
+    parser = FeedbackControlParser()
+    parser.feed(page)
+    parser.close()
+    return parser.found
 
 # Where each ref name actually lives now that authoring and deployment share a
 # repository: the runtime at the root under shared/, the language trees under
@@ -113,6 +153,22 @@ def retarget(head: str, *, review_id: str, lesson_id: str, level: str, title: st
 
 
 def redepth(page: str, out: pathlib.Path) -> str:
+    # feedback.js owns only ``data-fb`` controls.  Canonical Core and
+    # Contextual pilots use those controls, but their footer is also the shell
+    # for generated decks whose bodies often do not.  Resolve the optional
+    # runtime only after the final body exists so a content-specific pilot
+    # script cannot leak into every generated lesson.
+    page = FEEDBACK_SCRIPT.sub("", page)
+    if has_feedback_control(page):
+        activities = ACTIVITIES_SCRIPT.search(page)
+        if not activities:
+            raise ValueError("data-fb control requires activities.js before feedback.js")
+        feedback = (
+            f'{activities.group("indent")}<script src="{activities.group("shared")}'
+            '/js/feedback.js"></script>'
+        )
+        page = page[:activities.end()] + "\n" + feedback + page[activities.end():]
+
     def replace(match: re.Match) -> str:
         target = REPO / TARGETS[match.group(2)]
         relative = pathlib.Path(os.path.relpath(target, out.parent)).as_posix()

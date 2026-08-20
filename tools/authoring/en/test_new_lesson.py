@@ -63,6 +63,51 @@ class LessonShellTests(unittest.TestCase):
             refs = [part.split('"')[1] for part in page.split('>') if '="' in part]
             self.assertTrue(all((out.parent / ref).resolve().is_file() for ref in refs))
 
+    def test_feedback_runtime_follows_final_controls_not_the_pilot_footer(self):
+        out = PILOT.parent / "generated/lesson.html"
+        activities = '  <script src="../../shared/js/activities.js"></script>'
+        feedback = '  <script src="../../shared/js/feedback.js"></script>'
+        pager = '  <nav class="pager"></nav>'
+
+        without_control = new_lesson.redepth(
+            "\n".join((activities, feedback, '<p>No feedback control here.</p>', pager)), out
+        )
+        self.assertNotIn("shared/js/feedback.js", without_control)
+
+        for inherited_feedback in (False, True):
+            with self.subTest(inherited_feedback=inherited_feedback):
+                lines = [activities]
+                if inherited_feedback:
+                    lines.append(feedback)
+                lines.extend(('<div class="fb" data-fb="own-sentence"></div>', pager))
+                with_control = new_lesson.redepth("\n".join(lines), out)
+                self.assertEqual(with_control.count("shared/js/feedback.js"), 1)
+                self.assertLess(with_control.index("shared/js/activities.js"),
+                                with_control.index("shared/js/feedback.js"))
+                self.assertLess(with_control.index("shared/js/feedback.js"),
+                                with_control.index('class="pager"'))
+
+    def test_feedback_detection_ignores_markup_shaped_inert_text(self):
+        out = PILOT.parent / "generated/lesson.html"
+        activities = '  <script src="../../shared/js/activities.js"></script>'
+        feedback = '  <script src="../../shared/js/feedback.js"></script>'
+        pager = '  <nav class="pager"></nav>'
+        fake_controls = {
+            "full tag in comment": '<!-- <div class="fb" data-fb="fake"></div> -->',
+            "tag in script text": '<script>const fake = `<div data-fb="fake"></div>`;</script>',
+            "tag in template": '<template><div data-fb="fake"></div></template>',
+            "tag in attribute value": '<div data-example="&lt;div data-fb=\'fake\'&gt;"></div>',
+            "bare comment token": '<!-- data-fb="fake" -->',
+        }
+        for label, fake in fake_controls.items():
+            with self.subTest(label=label):
+                page = new_lesson.redepth("\n".join((activities, feedback, fake, pager)), out)
+                self.assertNotIn("shared/js/feedback.js", page)
+
+    def test_feedback_control_without_activities_runtime_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, "requires activities.js"):
+            new_lesson.redepth('<div data-fb="own-sentence"></div>', PILOT)
+
     def test_core_shell_comment_does_not_load_yomi(self):
         head, foot = new_lesson.split_shell(PILOT.read_text(encoding="utf-8"))
         shell = head + foot
