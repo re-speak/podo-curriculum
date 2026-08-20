@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/82-a-place-you-would-happily-visit-again/lesson.html`
-- SHA-256: `3930ecc29f70315d842d53d96c1beea93462aaf2a45e52686f0dca775827abcf`
+- SHA-256: `66f5ec8796d80660603aa62274b5cb61ba33ee0fff4d2b2ce65b3ca07e11031b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

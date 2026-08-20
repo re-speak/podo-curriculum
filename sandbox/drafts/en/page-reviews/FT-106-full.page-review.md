@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-full/lessons/106-what-speaking-english-has-made-you-notice/lesson.html`
-- SHA-256: `3289bb1cf1c3ae558078168f3fb54d4950c0d8cc10614397dff21ebb596616f9`
+- SHA-256: `b99e65ec82738df879f8ebbae0426d6f588a21c88a1c8f02c2bdb31ca8aec1fa`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/02-what-people-get-wrong-about-japan/lesson.html",
-  "lessonSha256": "90ee01d44ac42133ca8947ccf42f0427f3f6b41c6df526e670d3a9155d114002",
+  "lessonSha256": "5373347a3351f43c8d8bec6fd86a73883661c998d59c48abe29851e09fad6c9d",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -269,7 +269,7 @@
       "pageId": "q5",
       "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
       "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
-      "targetOrPrompt": "When have you had to revise your view of a place?",
+      "targetOrPrompt": "Conversation prompt: “What evidence should make someone revise their view of a place?”",
       "learningTarget": "Develop the distinct “A changed view (変わった見方)” conversational move with reasons, examples, comparison, or personal experience.",
       "pedagogicalValue": "The prompt “When have you had to revise your view of a place?” opens this specific angle; “What evidence changed your mind?” moves a first answer toward a concrete reason or example.",
       "failureDiagnosis": "If the answer stays vague after “What evidence changed your mind?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
@@ -277,8 +277,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
       "choiceQuality": "There are no artificial distractors or forced target frames; “What still seemed true?” gives the tutor a distinct optional branch rather than a repeated script.",
       "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
       "evidence": {
@@ -287,7 +287,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "When have you had to revise your view of a place?"
+          "What evidence should make someone revise their view of a place?"
         ]
       }
     },

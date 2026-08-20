@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/06-a-word-that-doesnt-translate-neatly/lesson.html`
-- SHA-256: `313b9cbcd8b4aa4c1dd75ddbb27eecb14c60713c9010a1a265527f6902ee4b9a`
+- SHA-256: `172a163afb20a98b44e06d62ba1cf248f871ca68e5b94a6360af86c7fe874b65`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Have you learned any new English words recently?
+- Visible target or prompt: Conversation prompt: “Which English word would you like to understand better?”
 - Learning target: Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Have you learned any new English words recently?” opens this specific angle; “Where did the word appear?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “Where did the word appear?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “What did you first guess it meant?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you learned any new English words recently?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which English word would you like to understand better?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Can you use that new word in a real sentence?
+- Visible target or prompt: Conversation prompt: “Choose one English word and use it in a real sentence.”
 - Learning target: Develop the distinct “A new word (新しい言葉)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Can you use that new word in a real sentence?” opens this specific angle; “Who might say that sentence?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “Who might say that sentence?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -123,8 +123,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “What does the surrounding situation tell us?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can you use that new word in a real sentence?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Choose one English word and use it in a real sentence."]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 

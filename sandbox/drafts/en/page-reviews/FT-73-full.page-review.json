@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/73-what-a-normal-work-or-school-day-looks-like-where-you-live/lesson.html",
-  "lessonSha256": "63fa3467004ab8fd5c6025557d54435c68c6eab94b7c6cbec1df1f536a90e183",
+  "lessonSha256": "e886e664306dd3bc13acb461d75ff0c9a24c4ccc3c30e97b6666d5f84f3649c8",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -28,7 +28,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -52,7 +52,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -76,7 +76,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -100,7 +100,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -124,7 +124,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -150,7 +150,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -176,7 +176,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -191,7 +191,7 @@
       "pageId": "q2",
       "learnerAction": "Respond aloud to “Is there a local expression for someone who consistently works or studies late?” and develop the most interesting concrete detail.",
       "tutorAction": "React or share briefly, then choose a relevant probe such as “Does it express approval, criticism, humor, or neutrality?” rather than asking every follow-up.",
-      "targetOrPrompt": "Is there a local expression for someone who consistently works or studies late? / いつも遅くまで働いたり勉強したりする人を表す地域の言い方はありますか？",
+      "targetOrPrompt": "Conversation prompt: “How does local language describe someone who consistently works or studies late?”",
       "learningTarget": "Explore the distinct “A local expression (地域の呼び方)” angle of “What a normal work or school day looks like where you live” through a specific example, reason, comparison, or position.",
       "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Does it express approval, criticism, humor, or neutrality?” adds a specific next layer without repeating it.",
       "failureDiagnosis": "If the answer remains vague after “Does it express approval, criticism, humor, or neutrality?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
@@ -202,14 +202,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Second-pass semantic review complete. Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Is there a local expression for someone who consistently works or studies late?"
+          "How does local language describe someone who consistently works or studies late?"
         ]
       }
     },
@@ -228,7 +228,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -254,7 +254,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -280,7 +280,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -306,7 +306,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -332,7 +332,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

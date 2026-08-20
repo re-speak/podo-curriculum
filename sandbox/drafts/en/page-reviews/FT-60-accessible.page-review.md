@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-accessible/lessons/60-a-relationship-habit-you-know-you-should-change/lesson.html`
-- SHA-256: `da637f29dc486a6ee9be5fa156440a7d6798f9e17a5d41e8db5e02ec59d8e8df`
+- SHA-256: `27a7e4c40305ebbd8f670c812ab459824ab1672e5a0e20658d61c165ab7f52ea`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -24,7 +24,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 2. `article`
 
@@ -41,7 +41,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 3. `lesson-style`
 
@@ -58,7 +58,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 4. `talk-intro`
 
@@ -75,7 +75,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 5. `warm-1`
 
@@ -92,7 +92,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which relationship habit do you think is hardest to change?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 6. `warm-2`
 
@@ -109,7 +109,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When do people usually notice a bad relationship habit in themselves?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 7. `q1`
 
@@ -126,7 +126,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can someone point out a relationship habit without starting a fight?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 8. `q2`
 
@@ -143,7 +143,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small change can make a bad relationship habit easier to manage?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 9. `q3`
 
@@ -160,7 +160,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which relationship habit is especially difficult to live with?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 10. `q4`
 
@@ -177,7 +177,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does explaining a bad habit become an excuse?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 11. `q5`
 
@@ -194,7 +194,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can someone do instead of shutting down during conflict?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 12. `q6`
 
@@ -211,7 +211,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which healthy relationship habit deserves more attention?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 13. `feedback`
 
@@ -228,4 +228,4 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.

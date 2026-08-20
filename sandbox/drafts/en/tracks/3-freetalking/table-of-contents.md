@@ -228,7 +228,7 @@ regret buying → would you buy it again
 *Shared:* KR 2-1
 
 **10. Something you've recently got into** `story`
-*Opens:* "Have you got into anything new recently?"
+*Opens:* "What kind of new interest could easily catch your attention?"
 *Ladder:* what → how did you discover it → how often → who knows → do you prefer sharing interests
 or keeping them private → where does it go from here
 *Moves:* `I've been ___ing lately.` **(Core 52)** · `I got into it because ___.` **(Core 54)** `chunk`
@@ -242,7 +242,7 @@ halfway → what's next
 *Shared:* KR 2-3
 
 **12. A compliment you still remember** `story`
-*Opens:* "Is there a compliment you still remember?"
+*Opens:* "What kind of compliment would stay with you for years?"
 *Ladder:* who and what → did you believe it → how did you respond → do you remember compliments or
 criticism better → when did you last give one → who deserves one from you
 *Moves:* `Someone told me ___.` **(Core 69)** · `I didn't know what to say.` `chunk`
@@ -270,14 +270,14 @@ argument against it → what do *you* think is a waste → have you ever changed
 *Shared:* KR 2-7, merged with the "other people think it's a waste" angle
 
 **16. Something you tried for the first time** `story`
-*Opens:* "Have you tried anything for the first time recently?"
+*Opens:* "What new experience would you be willing to try this month?"
 *Ladder:* what → what made you → was it what you expected → would you do it again → what's the last
 first time before that → what do you want to try next
 *Moves:* `I'd never ___ before.` **(Core 73)** · `It wasn't what I expected.` `chunk`
 *Shared:* KR 2-8
 
 **17. A small win nobody noticed** `story`
-*Opens:* "Have you had any small wins this month, whether or not anyone noticed?"
+*Opens:* "What kind of small win would matter to you even if nobody noticed?"
 *Ladder:* what → why did it matter → who would understand → do you notice these usually → what's
 still going badly → what would count as a good month
 *Moves:* `I finally ___.` `chunk` · `Nobody noticed, but ___.` **(Core 56)**
@@ -291,14 +291,14 @@ overplay years ago → what would be on a playlist of your year
 *Shared:* KR 2-10
 
 **19. Something you've been putting off** `story`
-*Opens:* "Is there anything you've been meaning to do but haven't?"
+*Opens:* "Which kind of task are you most likely to put off?"
 *Ladder:* what → how long → what's actually stopping you → what happens if you never do it → what
 did you put off before and finally do → how did that feel
 *Moves:* `I've been meaning to ___.` `chunk` · `I keep ___ing because ___.` **(Core 54)** `chunk`
 *Shared:* **NEW → KR**
 
 **20. One thing you always carry** `story`
-*Opens:* "Do you have a bag with you today?"
+*Opens:* "Which everyday item would be most inconvenient to forget?"
 *Ladder:* what's in it → what do you actually use → what's been in there for months → what do you
 always forget → has your bag changed in a few years → what does it say about your day
 *Moves:* `I always carry ___.` **(Core 12)** · `I don't know why I still have ___.` **(Core 62)**
@@ -317,7 +317,7 @@ watch it with → what might a new viewer misunderstand → what would you show 
 *Shared:* KR 3-1
 
 **22. Something in English you genuinely enjoyed** `story`
-*Opens:* "What was the first thing in English you actually enjoyed — song, film, game, anything?"
+*Opens:* "What kind of English content would feel enjoyable to you instead of like study?"
 *Ladder:* what → how old → did you understand it → what did you do next → what got you here → what
 would you recommend to someone starting
 *Moves:* `That's what got me into ___.` `chunk` · `I didn't understand much, but ___.` **(Core 56)**

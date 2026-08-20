@@ -5,7 +5,7 @@
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [

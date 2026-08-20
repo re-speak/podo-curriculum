@@ -4,7 +4,7 @@
 - SHA-256: `8e6bf0abc29bef69cf6eb6cb64e36ff3f7b6e4584ba94a998c585d2c2492fac5`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -24,7 +24,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 2. `article`
 
@@ -41,7 +41,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 3. `lesson-style`
 
@@ -58,7 +58,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 4. `talk-intro`
 
@@ -75,7 +75,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 5. `warm-1`
 
@@ -92,7 +92,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps a friendship last when life changes?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 6. `warm-2`
 
@@ -109,7 +109,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a strong friendship begin?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 7. `q1`
 
@@ -126,7 +126,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a friendship change without becoming weaker?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 8. `q2`
 
@@ -143,7 +143,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What keeps contact meaningful when both people are busy?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 9. `q3`
 
@@ -160,7 +160,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which behaviour damages a friendship most?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 10. `q4`
 
@@ -177,7 +177,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do some friends drift apart even when nobody did anything wrong?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 11. `q5`
 
@@ -194,7 +194,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is a friendship worth trying to restart?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 12. `q6`
 
@@ -211,7 +211,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you bring to a good friendship?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
 
 ## 13. `feedback`
 
@@ -228,4 +228,4 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; root human and 360/480 visual inspection remain pending.
+- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.

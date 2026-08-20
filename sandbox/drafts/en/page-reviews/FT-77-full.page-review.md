@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/77-a-teacher-you-still-remember/lesson.html`
-- SHA-256: `54393751c207dc06aaf887f591af28851117ba1ba6c2f700ccbd2e6ddcffb28d`
+- SHA-256: `bf68ffa0cb8467f8c9052b206c3670392e5be28b9eb7071ae5909a8cf95ecbfd`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

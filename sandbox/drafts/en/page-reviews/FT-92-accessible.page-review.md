@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/92-the-superpower-you-would-choose/lesson.html`
-- SHA-256: `0e20a083edfbf63c4bc8f1bfe524d97631bc7f3bb8bfdb943de9c16415307ced`
+- SHA-256: `33a00cb726198e4e4666091beccd2e0da44956c29d6cc6bf36fd2032d949cf74`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

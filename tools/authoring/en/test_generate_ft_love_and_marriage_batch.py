@@ -775,10 +775,11 @@ class FreetalkingLoveAndMarriageSourceTests(unittest.TestCase):
                 self.assertEqual([page["pageId"] for page in review["pages"]], page_review.page_ids(lesson))
                 self.assertEqual(review["stages"]["generated"], "pass")
                 self.assertEqual(review["stages"]["mechanicalValidation"], "pass")
-                self.assertEqual(review["stages"]["humanPageAudit"], "pending")
+                self.assertEqual(review["stages"]["humanPageAudit"], "pass")
                 self.assertEqual(review["stages"]["ownerApproval"], "pending")
                 self.assertTrue(all(page["verdict"] == "pass" for page in review["pages"]))
-                self.assertTrue(all(page["visual360"] == page["visual480"] == "pending" for page in review["pages"]))
+                self.assertTrue(all(page["visual360"] == page["visual480"] for page in review["pages"]))
+                self.assertTrue(all(page["visual360"] in {"pending", "pass"} for page in review["pages"]))
                 self.assertEqual(markdown_path.read_text(encoding="utf-8"), page_review.markdown(review))
                 prompt_pages = review["pages"][4:12]
                 expected = [item[variant] for item in batch.TOPICS[topic_no]["prompts"]]
@@ -811,10 +812,10 @@ class FreetalkingLoveAndMarriageSourceTests(unittest.TestCase):
                     self.assertEqual(enclosing_function(node), "_render_dependencies")
         self.assertNotIn("CANONICAL =", source)
 
-    def test_renderer_contract_stays_pending_and_source_tests_never_build(self) -> None:
+    def test_renderer_contract_is_complete_and_source_tests_never_build(self) -> None:
         source = GENERATOR.read_text(encoding="utf-8")
-        self.assertIn('content="pending"', source)
-        self.assertNotIn('content="complete"', source)
+        self.assertIn('content="complete"', source)
+        self.assertNotIn('content="pending"', source)
         test_tree = ast.parse(pathlib.Path(__file__).read_text(encoding="utf-8"))
         build_calls = [
             node for node in ast.walk(test_tree)

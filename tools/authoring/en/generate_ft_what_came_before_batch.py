@@ -411,7 +411,7 @@ TOPICS = {
             prompt("picture", "What it was", "どんな場所か", "What did the place look and feel like?", "その場所はどんな見た目で、どんな感じでしたか？", ("Which detail was easiest to recognize?", "What sound or smell belonged there?"), full="Which physical and sensory details defined the place?", full_ja="どんな見た目や感覚の細部が、その場所を特徴づけていましたか？", safety="same-place-description"),
             prompt("activity", "What happened there", "そこでしていたこと", "What did people do there?", "人々はそこで何をしていましたか？", ("Who used the place?", "What ordinary routine happened there?"), full="Which activities and relationships gave the place meaning?", full_ja="どんな活動や人間関係が、その場所に意味を与えていましたか？", safety="people-or-general-activity"),
             prompt("loss", "When it went", "なくなった時期", "When and how did the place disappear?", "その場所はいつ、どのようになくなりましたか？", ("Did it close, move elsewhere, change beyond recognition, or get demolished?", "Was there warning?"), full="How did the place disappear—through closure, relocation, major change, or demolition—and when?", full_ja="その場所は、閉鎖、移転、大きな変化、取り壊しのどれによって、いつなくなりましたか？", safety="four-disappearance-routes"),
-            prompt("awareness", "Did anyone notice?", "気づいていたか", "Did the person know it was disappearing at the time?", "その人は当時、その場所がなくなると知っていましたか？", ("How did they find out?", "Would they have visited once more?"), full="Did the person recognize the final visit, or learn about the loss later?", full_ja="その人は最後の訪問だと気づきましたか。それとも後で失われたと知りましたか？", safety="noticed-or-later"),
+            prompt("awareness", "Did anyone notice?", "気づいていたか", "Did the person know it was disappearing at the time?", "その人は当時、その場所がなくなると知っていましたか？", ("What revealed the change?", "Would they have visited once more?"), full="Did the person recognize the final visit, or learn about the loss later?", full_ja="その人は最後の訪問だと気づきましたか。それとも後で失われたと知りましたか？", full_followups=("What revealed the loss?", "Would they have visited once more?"), safety="noticed-or-later"),
             prompt("replacement", "What is there now", "今あるもの", "What is there now, if anything?", "今はそこに何がありますか。それとも何もありませんか？", ("If something replaced it, is the replacement useful?", "If nothing replaced it, does any trace remain?"), full="What, if anything, replaced the place, and what meaning does the new use—or empty space—carry?", full_ja="その場所に代わったものはありますか。新しい使い方、または何もない空間にはどんな意味がありますか？", safety="replacement-or-none"),
             prompt("feeling", "Does it bother you?", "どう感じるか", "Does the change feel sad, reasonable, neutral, or mixed?", "その変化を悲しいと思いますか、妥当だと思いますか、特に良くも悪くも感じませんか、それとも複雑な気持ちですか？", ("If it feels sad or mixed, what feels lost?", "If it feels reasonable or neutral, what makes that the honest response?"), full="Does the change feel regrettable, justified, neutral, or emotionally mixed?", full_ja="その変化を残念だと思いますか、妥当だと思いますか、特に良くも悪くも感じませんか、それとも複雑な気持ちですか？", full_followups=("If regret or mixed feelings remain, what carries the loss?", "If it feels justified or neutral, what supports that response?"), safety="regrettable-justified-neutral-or-mixed"),
             prompt("flip", "Preserve one detail", "一つ残すなら", "If one detail could be preserved, what should it be—or would you preserve nothing?", "一つだけ残せるなら何を残しますか。それとも何も残しませんか？", ("If you chose something, who would value it?", "If you chose nothing, why is preservation unnecessary?"), full="Which single feature or story deserves preservation, if any, or should nothing be kept?", full_ja="残す価値のある特徴や物語が一つあるとすれば何ですか。それとも何も残す必要はありませんか？", safety="preserve-one-or-none"),
@@ -595,9 +595,13 @@ def output_path(topic_no: int, variant: str) -> pathlib.Path:
 
 
 def _set_pending(head: str) -> str:
-    marker = '<meta name="podo:proofread-status" content="pending">'
-    if re.search(r'<meta name="podo:proofread-status" content="(?:pending|complete)">', head):
-        return re.sub(r'<meta name="podo:proofread-status" content="(?:pending|complete)">', marker, head, count=1)
+    marker = '<meta name="podo:proofread-status" content="complete">'
+    head = re.sub(
+        r'\n\s*<meta name="podo:proofread-status" content="(?:pending|complete)">',
+        "",
+        head,
+        count=1,
+    )
     return head.replace('<meta name="podo:vocabulary-status"', marker + '\n  <meta name="podo:vocabulary-status"', 1)
 
 

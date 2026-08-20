@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/95-going-a-week-without-your-phone/lesson.html`
-- SHA-256: `b88f32c27a2b7bde10613040d20b6b0453d112176d12282161897dafeb64e1f8`
+- SHA-256: `b086907bc2379d96eb4888fbc036ec3232e380dcbbe6ec0d9e946046003d93ce`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

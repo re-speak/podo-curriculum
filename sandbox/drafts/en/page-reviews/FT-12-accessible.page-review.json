@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/12-a-compliment-you-still-remember/lesson.html",
-  "lessonSha256": "6679471e34be21c60d7a7814da9bda96ea372d5b7931d2dcd49127fd3571e70c",
+  "lessonSha256": "ab718403bae53a4c3d259bf0450b069433177290969300be9bbfc9fa9cbd42e0",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -113,7 +113,7 @@
       "pageId": "warm-1",
       "learnerAction": "Answer “Is there a compliment you still remember?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “When did you hear it?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Is there a compliment you still remember? 今も覚えている褒め言葉はありますか？",
+      "targetOrPrompt": "Conversation prompt: “What kind of compliment would stay with you for years?”",
       "learningTarget": "Explore the distinct “A remembered compliment (覚えている褒め言葉)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Is there a compliment you still remember?” opens this angle; “When did you hear it?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “When did you hear it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -121,8 +121,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a compliment you still remember?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Why has it stayed with you?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -131,7 +131,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Is there a compliment you still remember?"
+          "What kind of compliment would stay with you for years?"
         ]
       }
     },
@@ -269,7 +269,7 @@
       "pageId": "q5",
       "learnerAction": "Answer “Have you given someone a real compliment recently?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What had the person done?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Have you given someone a real compliment recently? 最近、誰かを心から褒めましたか？",
+      "targetOrPrompt": "Conversation prompt: “What can make you want to give someone a real compliment?”",
       "learningTarget": "Explore the distinct “Praise you gave (自分が伝えた言葉)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Have you given someone a real compliment recently?” opens this angle; “What had the person done?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What had the person done?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -277,8 +277,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you given someone a real compliment recently?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What made you want to say it?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -287,7 +287,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you given someone a real compliment recently?"
+          "What can make you want to give someone a real compliment?"
         ]
       }
     },

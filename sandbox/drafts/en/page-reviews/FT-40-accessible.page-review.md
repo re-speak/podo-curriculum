@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/40-a-superstition-you-follow-anyway/lesson.html`
-- SHA-256: `c1a8d11f18e7a2d43bc3ddd9380d185ac5bf59316fbd4dd5343fbdb3b4edff19`
+- SHA-256: `1f7e34dadda318d5a52d3b8f1dccd0a0e5517cf352e3bc5abaf12c136dfbaa8e`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “What's the strangest superstition you know?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “What makes it memorable?” rather than asking every follow-up.
-- Visible target or prompt: What's the strangest superstition you know? 知っている中で、いちばん不思議な迷信は何ですか？
+- Visible target or prompt: Conversation prompt: “What's the strangest superstition you know?”
 - Learning target: Explore the distinct “The strangest one (いちばん不思議なもの)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “What makes it memorable?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “What makes it memorable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -194,7 +194,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the strangest superstition you know?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
 
 ## 12. `q6`
 

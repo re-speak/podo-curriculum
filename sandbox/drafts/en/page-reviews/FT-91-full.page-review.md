@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/91-someone-you-would-trade-lives-with-for-a-day/lesson.html`
-- SHA-256: `efd3e2765091960fd8b77511b5a7bd4e220e137ccb1a3dee5f7012947070c7ac`
+- SHA-256: `d290a9c9ec351eb15a2755af5023a45a36e4c461b9161b7c73e3f199198af34f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “To trade lives is to inhabit another person's ordinary constraints, access, and routine for a day.” to “The chosen life often reveals the experience or knowledge we currently feel we lack.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: trade lives=人生を入れ替える.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: intrusion=立ち入り.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/16-something-you-tried-for-the-first-time/lesson.html`
-- SHA-256: `4205a80ba3417b864e96940f69e71e7e653486abd6059bfc4af3606b0fd75492`
+- SHA-256: `718e67b27f2a5836c1bb4da75d41ce56c7502e48557d540ef49e2b3740440827`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you tried anything for the first time recently?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What was the experience?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you tried anything for the first time recently? 最近、初めて試したことはありますか？
+- Visible target or prompt: Conversation prompt: “What new experience would you be willing to try this month?”
 - Learning target: Explore the distinct “A recent first (最近の初めて)” angle of “Something you tried for the first time” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you tried anything for the first time recently?” opens this angle; “What was the experience?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What was the experience?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you tried anything for the first time recently?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “How did it feel to be new at it?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you tried anything for the first time recently?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What new experience would you be willing to try this month?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “When did you last feel like a beginner?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What made it feel new?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When did you last feel like a beginner? 最後に初心者のように感じたのはいつですか？
+- Visible target or prompt: Conversation prompt: “What part of being a beginner would feel most uncomfortable to you?”
 - Learning target: Explore the distinct “Feeling new (初めての感覚)” angle of “Something you tried for the first time” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “When did you last feel like a beginner?” opens this angle; “What made it feel new?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What made it feel new?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -106,8 +106,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When did you last feel like a beginner?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “How did you respond to that feeling?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When did you last feel like a beginner?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of being a beginner would feel most uncomfortable to you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Can you remember another first-time experience?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Which experience comes to mind?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Can you remember another first-time experience? ほかの初めての体験を思い出せますか？
+- Visible target or prompt: Conversation prompt: “Which first-time experiences tend to become memorable?”
 - Learning target: Explore the distinct “The first before that (その前の初めて)” angle of “Something you tried for the first time” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Can you remember another first-time experience?” opens this angle; “Which experience comes to mind?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Which experience comes to mind?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Can you remember another first-time experience?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What made that first time memorable?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can you remember another first-time experience?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which first-time experiences tend to become memorable?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Is there anything you'd like to try next?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What would you like to try?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Is there anything you'd like to try next? 次にやってみたいことはありますか？
+- Visible target or prompt: Conversation prompt: “Which new experience would you most like to try next?”
 - Learning target: Explore the distinct “The next first (次の初めて)” angle of “Something you tried for the first time” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Is there anything you'd like to try next?” opens this angle; “What would you like to try?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What would you like to try?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -208,8 +208,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you'd like to try next?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What makes now a good or bad time?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there anything you'd like to try next?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which new experience would you most like to try next?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

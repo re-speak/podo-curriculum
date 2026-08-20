@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/19-something-youve-been-putting-off/lesson.html",
-  "lessonSha256": "f7dfad7fe76e5107dba0087c03d38b4f2b5ee4e469a46a1aa51f2b015b9c0e54",
+  "lessonSha256": "8b727ff60c4424f0b160482f67434c202d1c8ba14667a470c931848105d4b149",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -113,7 +113,7 @@
       "pageId": "warm-1",
       "learnerAction": "Answer “Is there anything you've been meaning to do but haven't?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “When did you first decide to do it?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Is there anything you've been meaning to do but haven't? ずっとやろうと思っていて、まだしていないことはありますか？",
+      "targetOrPrompt": "Conversation prompt: “Which kind of task are you most likely to put off?”",
       "learningTarget": "Explore the distinct “Still not done (まだしていないこと)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Is there anything you've been meaning to do but haven't?” opens this angle; “When did you first decide to do it?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “When did you first decide to do it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -121,8 +121,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you've been meaning to do but haven't?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What has made it easy to delay?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -131,7 +131,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Is there anything you've been meaning to do but haven't?"
+          "Which kind of task are you most likely to put off?"
         ]
       }
     },
@@ -243,7 +243,7 @@
       "pageId": "q4",
       "learnerAction": "Answer “Have you ever finally done something you had put off?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What finally made you start?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Have you ever finally done something you had put off? 先延ばしにしていたことを、最後には終えた経験がありますか？",
+      "targetOrPrompt": "Conversation prompt: “What could finally make you start a task you had put off?”",
       "learningTarget": "Explore the distinct “A past delay (以前の先延ばし)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Have you ever finally done something you had put off?” opens this angle; “What finally made you start?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What finally made you start?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -251,8 +251,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you ever finally done something you had put off?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What usually ends a delay for you?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -261,7 +261,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you ever finally done something you had put off?"
+          "What could finally make you start a task you had put off?"
         ]
       }
     },

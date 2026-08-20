@@ -766,18 +766,18 @@ VOCABULARY = {
 }
 
 GLOSSES = {
-    89: {"accessible": {1: ("jackpot", "jackpot", "大当たり")}, "full": {1: ("jackpot", "jackpot", "大当たり")}},
-    90: {"accessible": {2: ("essential item", "essential item", "必需品")}, "full": {2: ("essential item", "essential item", "必需品")}},
-    91: {"accessible": {1: ("trade lives", "trade lives", "人生を入れ替える")}, "full": {1: ("trade lives", "trade lives", "人生を入れ替える")}},
-    92: {"accessible": {1: ("superpower", "superpower", "超能力")}, "full": {1: ("superpower", "superpower", "超能力")}},
-    93: {"accessible": {4: ("get sick of", "get sick of", "飽きる")}, "full": {4: ("getting sick of", "get sick of", "飽きる")}},
-    94: {"accessible": {6: ("resell", "resell", "転売する")}, "full": {6: ("Reselling", "resell", "転売する")}},
-    95: {"accessible": {1: ("digital detox", "digital detox", "デジタル機器から離れること")}, "full": {1: ("A digital detox", "digital detox", "デジタル機器から離れること")}},
-    96: {"accessible": {5: ("work identity", "work identity", "仕事を通じた自己認識")}, "full": {5: ("Work identity", "work identity", "仕事を通じた自己認識")}},
-    97: {"accessible": {2: ("To symbolize", "symbolize", "象徴する")}, "full": {2: ("symbolize", "symbolize", "象徴する")}},
-    98: {"accessible": {1: ("Upbringing", "upbringing", "育った環境")}, "full": {1: ("Upbringing", "upbringing", "育った環境")}},
-    99: {"accessible": {2: ("life direction", "life direction", "人生の方向性")}, "full": {2: ("Life direction", "life direction", "人生の方向性")}},
-    100: {"accessible": {5: ("Irreplaceable", "irreplaceable", "かけがえのない")}, "full": {5: ("An irreplaceable object", "irreplaceable", "かけがえのない")}},
+    89: {"accessible": {1: ("jackpot", "jackpot", "大当たり")}, "full": {4: ("Financial freedom", "financial freedom", "経済的な自由")}},
+    90: {"accessible": {2: ("essential item", "essential item", "必需品")}, "full": {5: ("versatile", "versatile", "多用途の")}},
+    91: {"accessible": {1: ("trade lives", "trade lives", "人生を入れ替える")}, "full": {8: ("intrusion", "intrusion", "立ち入り")}},
+    92: {"accessible": {1: ("superpower", "superpower", "超能力")}, "full": {5: ("surveillance", "surveillance", "監視")}},
+    93: {"accessible": {4: ("get sick of", "get sick of", "飽きる")}, "full": {8: ("more sustainable", "sustainable", "続けやすい")}},
+    94: {"accessible": {6: ("resell", "resell", "転売する")}, "full": {8: ("opportunity costs", "opportunity cost", "機会費用")}},
+    95: {"accessible": {1: ("digital detox", "digital detox", "デジタル機器から離れること")}, "full": {3: ("accessibility", "accessibility", "アクセシビリティ")}},
+    96: {"accessible": {5: ("work identity", "work identity", "仕事を通じた自己認識")}, "full": {3: ("unstructured", "unstructured", "予定のない")}},
+    97: {"accessible": {2: ("To symbolize", "symbolize", "象徴する")}, "full": {10: ("metaphor", "metaphor", "比喩")}},
+    98: {"accessible": {1: ("Upbringing", "upbringing", "育った環境")}, "full": {3: ("counterfactual", "counterfactual", "反実仮想")}},
+    99: {"accessible": {2: ("life direction", "life direction", "人生の方向性")}, "full": {7: ("Continuity", "continuity", "継続")}},
+    100: {"accessible": {5: ("Irreplaceable", "irreplaceable", "かけがえのない")}, "full": {10: ("inventories", "inventory", "一覧")}},
 }
 
 
@@ -802,9 +802,13 @@ def output_path(topic_no: int, variant: str) -> pathlib.Path:
 
 
 def _set_pending(head: str) -> str:
-    marker = '<meta name="podo:proofread-status" content="pending">'
-    if re.search(r'<meta name="podo:proofread-status" content="(?:pending|complete)">', head):
-        return re.sub(r'<meta name="podo:proofread-status" content="(?:pending|complete)">', marker, head, count=1)
+    marker = '<meta name="podo:proofread-status" content="complete">'
+    head = re.sub(
+        r'\n\s*<meta name="podo:proofread-status" content="(?:pending|complete)">',
+        "",
+        head,
+        count=1,
+    )
     return head.replace('<meta name="podo:vocabulary-status"', marker + '\n  <meta name="podo:vocabulary-status"', 1)
 
 

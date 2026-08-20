@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/88-something-you-were-completely-wrong-about/lesson.html`
-- SHA-256: `40b00d7b46bff73f6186ef78af57da8f8aae1a73d1e5e3020b23a9d5370ea42a`
+- SHA-256: `52f2181e3d2c5c34c4742ebd584a0e4be3aeb91ff14844e6fcf43aca9b7adb0b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

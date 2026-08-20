@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/90-three-things-you-would-take-to-a-desert-island/lesson.html`
-- SHA-256: `eba8e0c2ebfb42f62dc8abfb87aea868d6f0466917d3eda7d1c9431db453f2f8`
+- SHA-256: `0fab86216197d0acd3c022cddf65da49873ec96ae26093caaf18269dc5424977`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

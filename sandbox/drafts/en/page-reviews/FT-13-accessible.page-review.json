@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/13-your-plans-for-this-weekend/lesson.html",
-  "lessonSha256": "e9bd1fe8403c09132a3eee54a576ccb39ee66d882b999ebd9020e157a3e11ba7",
+  "lessonSha256": "b48ee479e74109c8ab61c8fc63d8e5a6cbc0baf5dfaf1a4014969a74f94a31d2",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -165,7 +165,7 @@
       "pageId": "q1",
       "learnerAction": "Answer “How much of the weekend is planned already?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What would you add if nothing is fixed?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "How much of the weekend is planned already? 週末のどのくらいが、すでに決まっていますか？",
+      "targetOrPrompt": "Conversation prompt: “How much structure would your ideal weekend have?”",
       "learningTarget": "Explore the distinct “The full plan (全体の予定)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “How much of the weekend is planned already?” opens this angle; “What would you add if nothing is fixed?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What would you add if nothing is fixed?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -173,8 +173,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How much of the weekend is planned already?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “How much time do you want to leave open?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -183,7 +183,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "How much of the weekend is planned already?"
+          "How much structure would your ideal weekend have?"
         ]
       }
     },
@@ -191,7 +191,7 @@
       "pageId": "q2",
       "learnerAction": "Answer “Who will you spend time with, if anyone?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What do you enjoy about that choice?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Who will you spend time with, if anyone? 一緒に過ごす人がいるなら、誰ですか？",
+      "targetOrPrompt": "Conversation prompt: “Would you rather spend more of this weekend alone or with someone?”",
       "learningTarget": "Explore the distinct “Who with (誰と)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Who will you spend time with, if anyone?” opens this angle; “What do you enjoy about that choice?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What do you enjoy about that choice?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -199,8 +199,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Who will you spend time with, if anyone?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Would you prefer more time alone or with others?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -209,7 +209,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Who will you spend time with, if anyone?"
+          "Would you rather spend more of this weekend alone or with someone?"
         ]
       }
     },
@@ -217,7 +217,7 @@
       "pageId": "q3",
       "learnerAction": "Answer “What are you most looking forward to, even if you have no fixed plan?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “Why does that part matter now?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "What are you most looking forward to, even if you have no fixed plan? 予定が決まっていなくても、何をいちばん楽しみにしていますか？",
+      "targetOrPrompt": "Conversation prompt: “What part of this weekend are you most looking forward to?”",
       "learningTarget": "Explore the distinct “Looking forward (楽しみなこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “What are you most looking forward to, even if you have no fixed plan?” opens this angle; “Why does that part matter now?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “Why does that part matter now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -225,8 +225,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What are you most looking forward to, even if you have no fixed plan?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What would make it even better?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -235,7 +235,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What are you most looking forward to, even if you have no fixed plan?"
+          "What part of this weekend are you most looking forward to?"
         ]
       }
     },
@@ -269,7 +269,7 @@
       "pageId": "q5",
       "learnerAction": "Answer “Is there anything you still need to decide?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What information would help you decide?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Is there anything you still need to decide? まだ決める必要があることはありますか？",
+      "targetOrPrompt": "Conversation prompt: “Which weekend decisions would you make in advance?”",
       "learningTarget": "Explore the distinct “Still undecided (まだ決めていないこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Is there anything you still need to decide?” opens this angle; “What information would help you decide?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What information would help you decide?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -277,8 +277,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you still need to decide?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Which option feels best now?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -287,7 +287,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Is there anything you still need to decide?"
+          "Which weekend decisions would you make in advance?"
         ]
       }
     },
@@ -295,7 +295,7 @@
       "pageId": "q6",
       "learnerAction": "Answer “If a plan fell through this weekend, how would you use the time instead?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “Would you prefer the backup in any way?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "If a plan fell through this weekend, how would you use the time instead? もし週末の予定がなくなったら、その時間をどう使いますか？",
+      "targetOrPrompt": "Conversation prompt: “If a plan fell through this weekend, how would you use the time instead?”",
       "learningTarget": "Explore the distinct “If it falls through (予定がなくなったら)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “If a plan fell through this weekend, how would you use the time instead?” opens this angle; “Would you prefer the backup in any way?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “Would you prefer the backup in any way?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -303,8 +303,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If a plan fell through this weekend, how would you use the time instead?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Who would you need to tell, if anyone?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {

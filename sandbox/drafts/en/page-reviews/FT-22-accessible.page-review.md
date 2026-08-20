@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/22-something-in-english-you-genuinely-enjoyed/lesson.html`
-- SHA-256: `7913818d3acc91fceb2a2c2a6219c4f4596a7f4c277e4c8158185dc63fdb9bd4`
+- SHA-256: `1d09d27c8bea4aca4a3b95e448e8d3dca68925b225fde18cbf2543699c60a313`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “What was the first thing in English you actually enjoyed — song, film, game, anything?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “What do you remember about it?” rather than asking every follow-up.
-- Visible target or prompt: What was the first thing in English you actually enjoyed — song, film, game, anything? 歌や映画、ゲームなど何でもよいので、英語で初めて本当に楽しめたものは何でしたか？
+- Visible target or prompt: Conversation prompt: “What kind of English content would feel enjoyable to you instead of like study?”
 - Learning target: Explore the distinct “The first enjoyable thing (最初に楽しめたもの)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “What do you remember about it?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “What do you remember about it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What was the first thing in English you actually enjoyed — song, film, game, anything?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What made it feel different from studying?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What was the first thing in English you actually enjoyed — song, film, game, anything?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of English content would feel enjoyable to you instead of like study?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “Was it something you watched, listened to, read, or played?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “How did you find it?” rather than asking every follow-up.
-- Visible target or prompt: Was it something you watched, listened to, read, or played? それは見たもの、聴いたもの、読んだもの、遊んだもののどれでしたか？
+- Visible target or prompt: Conversation prompt: “Which format makes English easiest for you to enjoy: watching, listening, reading, or playing?”
 - Learning target: Explore the distinct “The kind of thing (どんなもの？)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “How did you find it?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “How did you find it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -106,8 +106,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Was it something you watched, listened to, read, or played?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Did anyone share the experience with you?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Was it something you watched, listened to, read, or played?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which format makes English easiest for you to enjoy: watching, listening, reading, or playing?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “How old were you when you found it?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “What else were you interested in then?” rather than asking every follow-up.
-- Visible target or prompt: How old were you when you found it? それを見つけたとき、何歳くらいでしたか？
+- Visible target or prompt: Conversation prompt: “At what age can English entertainment first become memorable?”
 - Learning target: Explore the distinct “Your age then (そのときの年齢)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “What else were you interested in then?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “What else were you interested in then?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -123,8 +123,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How old were you when you found it?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “How did English fit into your life at that time?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How old were you when you found it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["At what age can English entertainment first become memorable?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “How much of the English did you understand?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “Which part was clear first?” rather than asking every follow-up.
-- Visible target or prompt: How much of the English did you understand? その英語をどのくらい理解できましたか？
+- Visible target or prompt: Conversation prompt: “How much English would you need to understand before you could enjoy the content?”
 - Learning target: Explore the distinct “How much you understood (理解できた量)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “Which part was clear first?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “Which part was clear first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -140,8 +140,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How much of the English did you understand?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What helped with the difficult parts?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much of the English did you understand?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much English would you need to understand before you could enjoy the content?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “What did you do after you enjoyed it?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “Did you look for anything similar?” rather than asking every follow-up.
-- Visible target or prompt: What did you do after you enjoyed it? それを楽しんだあと、何をしましたか？
+- Visible target or prompt: Conversation prompt: “What would you try next after enjoying one thing in English?”
 - Learning target: Explore the distinct “What came next (その次)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “Did you look for anything similar?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “Did you look for anything similar?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -157,8 +157,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What did you do after you enjoyed it?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which action kept your interest going?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What did you do after you enjoyed it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you try next after enjoying one thing in English?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “How did that experience lead to the English you use now?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “Which part of the connection is strongest?” rather than asking every follow-up.
-- Visible target or prompt: How did that experience lead to the English you use now? その体験は、今使っている英語にどうつながりましたか？
+- Visible target or prompt: Conversation prompt: “How could enjoyable English content influence the English you use later?”
 - Learning target: Explore the distinct “What brought you here (今につながったもの)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “Which part of the connection is strongest?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “Which part of the connection is strongest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How did that experience lead to the English you use now?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What might have happened without it?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How did that experience lead to the English you use now?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How could enjoyable English content influence the English you use later?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “What helps someone enjoy English before they understand everything?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “How much support is useful?” rather than asking every follow-up.
-- Visible target or prompt: What helps someone enjoy English before they understand everything? すべて理解する前でも英語を楽しむには、何が役立ちますか？
+- Visible target or prompt: Conversation prompt: “What would help you enjoy English before you understood everything?”
 - Learning target: Explore the distinct “A good starting point (よい入り口)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “How much support is useful?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “How much support is useful?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What helps someone enjoy English before they understand everything?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What can make the experience feel like work?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps someone enjoy English before they understand everything?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would help you enjoy English before you understood everything?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 

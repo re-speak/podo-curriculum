@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/02-what-people-get-wrong-about-japan/lesson.html`
-- SHA-256: `e032f9a176ac42158f7f45399c0e3264d3248ab85cc9d1bd076ef3878607a93c`
+- SHA-256: `fdfc889d155823acb76f1105b98e985511e141c53e43c4b6246e00246ed742af`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Have you ever heard a surprising question about Japan from a visitor?
+- Visible target or prompt: Conversation prompt: “What surprising question might a visitor ask about Japan?”
 - Learning target: Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Have you ever heard a surprising question about Japan from a visitor?” opens this specific angle; “What did the visitor ask?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “What did the visitor ask?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “How did you answer?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you ever heard a surprising question about Japan from a visitor?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What surprising question might a visitor ask about Japan?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Have you ever realized you were wrong about a place?
+- Visible target or prompt: Conversation prompt: “What can make someone realize an idea about a place was wrong?”
 - Learning target: Develop the distinct “A changed view (変わった見方)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Have you ever realized you were wrong about a place?” opens this specific angle; “What changed your mind?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “What changed your mind?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “What part of your old view remained?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you ever realized you were wrong about a place?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make someone realize an idea about a place was wrong?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 

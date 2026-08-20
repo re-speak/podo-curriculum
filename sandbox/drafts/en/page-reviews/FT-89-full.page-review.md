@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/89-what-you-would-really-do-if-you-won-the-lottery/lesson.html`
-- SHA-256: `d784e3a42882f0c805919cdacd17626f4bc7fa923528bea91c7e44b0e24fc096`
+- SHA-256: `8030097d55234f14e9171b606f268db6f1ab6d1cda0020164898cd6afd5a1622`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “A sudden jackpot creates immediate choices long before it provides a sensible plan.” to “The deeper question is which life the money should make possible rather than which object it should buy.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: jackpot=大当たり.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: financial freedom=経済的な自由.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

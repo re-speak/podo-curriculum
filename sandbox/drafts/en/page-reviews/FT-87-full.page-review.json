@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/87-a-childhood-place-that-no-longer-exists/lesson.html",
-  "lessonSha256": "ac5896568d5d74d92380ef74df85cf38941ebf93372edaf94315999950299df8",
+  "lessonSha256": "cfda63c073a54c3956cff11723c08c312dfe52342902f474dc5b3dd4e4dedfe3",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -217,7 +217,7 @@
       "pageId": "q3",
       "learnerAction": "Answer the standalone question “Did the person recognize the final visit, or learn about the loss later?” and expand the most interesting detail.",
       "tutorAction": "Ask “Did the person recognize the final visit, or learn about the loss later?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
-      "targetOrPrompt": "Did the person recognize the final visit, or learn about the loss later? / その人は最後の訪問だと気づきましたか。それとも後で失われたと知りましたか？ Follow-up pool: How did they find out? Would they have visited once more?",
+      "targetOrPrompt": "Conversation prompt: “Did the person recognize the final visit, or learn about the loss later?”",
       "learningTarget": "Develop the awareness angle of the selected example in spontaneous conversation.",
       "pedagogicalValue": "Adds the distinct conversational job “awareness” without assuming a private experience or repeating another page.",
       "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",

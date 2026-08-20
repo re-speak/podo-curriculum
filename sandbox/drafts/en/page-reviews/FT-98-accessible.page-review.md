@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/98-growing-up-in-another-country/lesson.html`
-- SHA-256: `895ca58ae365b00c68875e196f4a8b1002911a0d80b32d6dc9ff351f2fd6ac34`
+- SHA-256: `85a944c3d7c8278c4d3950d546c2ffbe257269eff399a89ce7e45a6a2376480b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

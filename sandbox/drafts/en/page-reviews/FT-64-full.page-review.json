@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/64-what-you-did-with-your-first-paycheck/lesson.html",
-  "lessonSha256": "4b2a8e6e9edf1232bf555ca93e8e30b0a331e13924fda884640f9b8e11fff26e",
+  "lessonSha256": "d3fce9fad561eadd120b951304a39a82358faa3bb7bd6a4db07ad2c5375e9ea6",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -28,7 +28,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -52,7 +52,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -76,7 +76,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -100,7 +100,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -124,7 +124,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -150,7 +150,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -176,7 +176,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -202,7 +202,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -228,7 +228,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -254,7 +254,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -280,7 +280,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -306,7 +306,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -332,7 +332,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; root human and 360/480 visual inspection remain pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

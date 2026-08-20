@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/13-your-plans-for-this-weekend/lesson.html`
-- SHA-256: `e9bd1fe8403c09132a3eee54a576ccb39ee66d882b999ebd9020e157a3e11ba7`
+- SHA-256: `b48ee479e74109c8ab61c8fc63d8e5a6cbc0baf5dfaf1a4014969a74f94a31d2`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “How much of the weekend is planned already?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What would you add if nothing is fixed?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How much of the weekend is planned already? 週末のどのくらいが、すでに決まっていますか？
+- Visible target or prompt: Conversation prompt: “How much structure would your ideal weekend have?”
 - Learning target: Explore the distinct “The full plan (全体の予定)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “How much of the weekend is planned already?” opens this angle; “What would you add if nothing is fixed?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What would you add if nothing is fixed?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -123,8 +123,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How much of the weekend is planned already?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “How much time do you want to leave open?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much of the weekend is planned already?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much structure would your ideal weekend have?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Who will you spend time with, if anyone?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What do you enjoy about that choice?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Who will you spend time with, if anyone? 一緒に過ごす人がいるなら、誰ですか？
+- Visible target or prompt: Conversation prompt: “Would you rather spend more of this weekend alone or with someone?”
 - Learning target: Explore the distinct “Who with (誰と)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Who will you spend time with, if anyone?” opens this angle; “What do you enjoy about that choice?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What do you enjoy about that choice?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -140,8 +140,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Who will you spend time with, if anyone?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Would you prefer more time alone or with others?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who will you spend time with, if anyone?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather spend more of this weekend alone or with someone?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “What are you most looking forward to, even if you have no fixed plan?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Why does that part matter now?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What are you most looking forward to, even if you have no fixed plan? 予定が決まっていなくても、何をいちばん楽しみにしていますか？
+- Visible target or prompt: Conversation prompt: “What part of this weekend are you most looking forward to?”
 - Learning target: Explore the distinct “Looking forward (楽しみなこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “What are you most looking forward to, even if you have no fixed plan?” opens this angle; “Why does that part matter now?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Why does that part matter now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -157,8 +157,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What are you most looking forward to, even if you have no fixed plan?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What would make it even better?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What are you most looking forward to, even if you have no fixed plan?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of this weekend are you most looking forward to?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Is there anything you still need to decide?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What information would help you decide?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Is there anything you still need to decide? まだ決める必要があることはありますか？
+- Visible target or prompt: Conversation prompt: “Which weekend decisions would you make in advance?”
 - Learning target: Explore the distinct “Still undecided (まだ決めていないこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Is there anything you still need to decide?” opens this angle; “What information would help you decide?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What information would help you decide?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you still need to decide?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which option feels best now?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there anything you still need to decide?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which weekend decisions would you make in advance?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “If a plan fell through this weekend, how would you use the time instead?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Would you prefer the backup in any way?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If a plan fell through this weekend, how would you use the time instead? もし週末の予定がなくなったら、その時間をどう使いますか？
+- Visible target or prompt: Conversation prompt: “If a plan fell through this weekend, how would you use the time instead?”
 - Learning target: Explore the distinct “If it falls through (予定がなくなったら)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “If a plan fell through this weekend, how would you use the time instead?” opens this angle; “Would you prefer the backup in any way?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Would you prefer the backup in any way?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -209,7 +209,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Who would you need to tell, if anyone?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If a plan fell through this weekend, how would you use the time instead?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/89-what-you-would-really-do-if-you-won-the-lottery/lesson.html`
-- SHA-256: `b21c631bf01477215c1e904b7d50ba0c612cdede1bec8727c6587c6528ca4219`
+- SHA-256: `63c88d58b50f4c9dff41bc6cccf571d03530795f53be3b4c1f5cb0a18f9cee06`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

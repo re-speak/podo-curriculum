@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/05-a-place-you-would-show-a-visitor/lesson.html`
-- SHA-256: `93777a1996d6c768004044af64988e86bb37c8734a3c231c4b5b0486f961981e`
+- SHA-256: `3deac20bf5f6df15eb1c5a6ec2005bb755ccb4cfada4f89a34a971cace9d3984`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Why is that place important to you?
+- Visible target or prompt: Conversation prompt: “Why would you choose this place to show me?”
 - Learning target: Develop the distinct “Why there? (なぜそこ？)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Why is that place important to you?” opens this specific angle; “What memory do you connect with it?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “What memory do you connect with it?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -140,8 +140,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “Would it matter as much without that memory?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why is that place important to you?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why would you choose this place to show me?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: When did you first discover it?
+- Visible target or prompt: Conversation prompt: “How would a visitor find this place?”
 - Learning target: Develop the distinct “How you found it (見つけたきっかけ)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “When did you first discover it?” opens this specific angle; “Who showed it to you?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “Who showed it to you?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -157,8 +157,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “How has it changed since then?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When did you first discover it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would a visitor find this place?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Who have you taken there before?
+- Visible target or prompt: Conversation prompt: “Who would you most want to take there?”
 - Learning target: Develop the distinct “Who goes with you? (誰と行く？)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Who have you taken there before?” opens this specific angle; “Did they enjoy the same part you do?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “Did they enjoy the same part you do?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “Who would not enjoy it?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who have you taken there before?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would you most want to take there?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/92-the-superpower-you-would-choose/lesson.html",
-  "lessonSha256": "d5dae3577ed73e487169633379e7cb6387f48972872c30673ff88f7d651e54ad",
+  "lessonSha256": "628637a2bded4113e1384b676b0b852fab5168a0e1b23accf63cf01fa84257d9",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -45,7 +45,7 @@
       "learningTarget": "Use ten matched claims, from “A superpower appeals because it suspends an ordinary human constraint.” to “Duration, control, visibility, and reversibility can completely change the choice.,” as optional topic input rather than an in-class reading task.",
       "pedagogicalValue": "Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.",
       "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
-      "nonTargetSupport": "Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: superpower=超能力.",
+      "nonTargetSupport": "Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: surveillance=監視.",
       "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
       "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
       "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",

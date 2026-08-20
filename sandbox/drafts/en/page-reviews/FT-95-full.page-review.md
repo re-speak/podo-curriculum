@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/95-going-a-week-without-your-phone/lesson.html`
-- SHA-256: `a3ca98708636892fc0e03d1a65a1b34047f3fc600d42f271e9e04e29ece7a27a`
+- SHA-256: `afe9031ccd457150eec144fbb734575512c57410eec5f9ff6df9fcd93e2a6d3f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “A digital detox is a deliberate period in which discretionary digital-device use is reduced.” to “A responsible digital detox distinguishes discretionary habits from access and care needs.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: digital detox=デジタル機器から離れること.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: accessibility=アクセシビリティ.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

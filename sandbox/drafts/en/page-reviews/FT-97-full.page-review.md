@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/97-the-animal-your-friends-would-choose-for-you/lesson.html`
-- SHA-256: `a5fb9f8cc35951af097a27b42e86b8560d8e074284c4ffb38f7aa4a836b93e81`
+- SHA-256: `75ff117b110c7f1b2357355a4b8c2e698b73d7688768125c221c1eda40ee9114`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “Animal comparisons compress a complicated personality into one memorable image.” to “A good metaphor invites correction and explanation rather than claiming the final truth about a person.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: symbolize=象徴する.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: metaphor=比喩.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

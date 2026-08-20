@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/99-where-you-imagine-yourself-in-ten-years/lesson.html`
-- SHA-256: `ab81e7f4e234975a18fac9e042d32b8041dc582ff7ad0e1cf5ff2ee2d01d2551`
+- SHA-256: `4542d70ccba61d45dd0d54184e47295898c8f38b3b111626b41c619aaf5bbedd`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

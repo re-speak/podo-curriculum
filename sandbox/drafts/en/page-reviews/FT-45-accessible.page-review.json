@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/45-your-real-bedtime/lesson.html",
-  "lessonSha256": "fa296908996718d23d36ce564543dcb2052371d80adc51000d2362ce8917ebff",
+  "lessonSha256": "c87f2edf1cdfbfca93804f1ef729becc780486e824c766e0a01e5c7bd78a3c26",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -217,7 +217,7 @@
       "pageId": "q3",
       "learnerAction": "Respond aloud to “What change to your sleep schedule have you considered or tried?” and develop the most interesting concrete detail.",
       "tutorAction": "React or share briefly, then choose a relevant probe such as “Why would the change be worthwhile?” rather than asking every follow-up.",
-      "targetOrPrompt": "What change to your sleep schedule have you considered or tried? 睡眠の時間帯について、考えたり試したりした変化は何ですか？",
+      "targetOrPrompt": "Conversation prompt: “Which change to your sleep schedule would be most worth trying?”",
       "learningTarget": "Explore the distinct “Changing the schedule (時間帯を変える)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.",
       "pedagogicalValue": "The main prompt opens one answerable conversational job; “Why would the change be worthwhile?” adds a specific next layer without repeating it.",
       "failureDiagnosis": "If the answer remains vague after “Why would the change be worthwhile?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
@@ -228,14 +228,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "notes": "Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What change to your sleep schedule have you considered or tried?"
+          "Which change to your sleep schedule would be most worth trying?"
         ]
       }
     },

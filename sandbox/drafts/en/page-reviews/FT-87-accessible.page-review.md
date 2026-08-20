@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/87-a-childhood-place-that-no-longer-exists/lesson.html`
-- SHA-256: `509c387ba42249dd11b4c47aff2cc4ccb54261a95defcf0adf247846d0d49673`
+- SHA-256: `db201e6dbb6d6bab2a7261eeba168fc746d12016feedda05dedfa50b6370a0ea`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the standalone question “Did the person know it was disappearing at the time?” and expand the most interesting detail.
 - Tutor action: Ask “Did the person know it was disappearing at the time?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Did the person know it was disappearing at the time? / その人は当時、その場所がなくなると知っていましたか？ Follow-up pool: How did they find out? Would they have visited once more?
+- Visible target or prompt: Conversation prompt: “Did the person know it was disappearing at the time?”
 - Learning target: Develop the awareness angle of the selected example in spontaneous conversation.
 - Pedagogical value: Adds the distinct conversational job “awareness” without assuming a private experience or repeating another page.
 - Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.

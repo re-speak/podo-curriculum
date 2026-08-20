@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/98-growing-up-in-another-country/lesson.html`
-- SHA-256: `8a4e1425debd2dfeffef84591dc1ee3f8f08c835b632605691d186a2220e2bd5`
+- SHA-256: `59202628117b15be737a4d7141121533a23891335bf45f80e77d88b2beaa917d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “Upbringing includes the relationships, institutions, language, expectations, and material conditions that shape childhood.” to “The value of the question lies in separating circumstance, adaptation, chance, and deliberate choice.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: upbringing=育った環境.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: counterfactual=反実仮想.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

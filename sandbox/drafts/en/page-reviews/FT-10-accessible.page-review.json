@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/10-something-youve-recently-got-into/lesson.html",
-  "lessonSha256": "79da1d19358ec8ac616459ef2cfcd87afe2e18aa2242f7fda3cd6a55e5f53ce2",
+  "lessonSha256": "38737396531a5212a20c7b7536384da40353972a0ebc178abd334ffb534d3a77",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -113,7 +113,7 @@
       "pageId": "warm-1",
       "learnerAction": "Answer “Have you got into anything new recently?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What do you enjoy most about it?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Have you got into anything new recently? 最近、新しく夢中になったものはありますか？",
+      "targetOrPrompt": "Conversation prompt: “What kind of new interest could easily catch your attention?”",
       "learningTarget": "Explore the distinct “A new interest (新しい興味)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Have you got into anything new recently?” opens this angle; “What do you enjoy most about it?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What do you enjoy most about it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -121,8 +121,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you got into anything new recently?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “How did it first catch your attention?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -131,7 +131,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you got into anything new recently?"
+          "What kind of new interest could easily catch your attention?"
         ]
       }
     },
@@ -165,7 +165,7 @@
       "pageId": "q1",
       "learnerAction": "Answer “How did you first get interested in it?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What made you try it?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "How did you first get interested in it? 最初に興味を持ったきっかけは何でしたか？",
+      "targetOrPrompt": "Conversation prompt: “What might turn your curiosity into a real interest?”",
       "learningTarget": "Explore the distinct “How it began (始めたきっかけ)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “How did you first get interested in it?” opens this angle; “What made you try it?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What made you try it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -173,8 +173,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How did you first get interested in it?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Did you expect to enjoy it this much?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -183,7 +183,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "How did you first get interested in it?"
+          "What might turn your curiosity into a real interest?"
         ]
       }
     },
@@ -191,7 +191,7 @@
       "pageId": "q2",
       "learnerAction": "Answer “How often do you do it now?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “When do you usually make time for it?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "How often do you do it now? 今はどのくらいの頻度でしていますか？",
+      "targetOrPrompt": "Conversation prompt: “How would you make room for a new interest?”",
       "learningTarget": "Explore the distinct “Time for it (使っている時間)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “How often do you do it now?” opens this angle; “When do you usually make time for it?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “When do you usually make time for it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -199,8 +199,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How often do you do it now?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What sometimes gets in the way?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -209,7 +209,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "How often do you do it now?"
+          "How would you make room for a new interest?"
         ]
       }
     },
@@ -217,7 +217,7 @@
       "pageId": "q3",
       "learnerAction": "Answer “Have you told anyone about this interest?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “Who would understand this interest best?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Have you told anyone about this interest? この興味について誰かに話しましたか？",
+      "targetOrPrompt": "Conversation prompt: “Who would be easiest for you to tell about a new interest?”",
       "learningTarget": "Explore the distinct “Who knows (知っている人)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Have you told anyone about this interest?” opens this angle; “Who would understand this interest best?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “Who would understand this interest best?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -225,8 +225,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you told anyone about this interest?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What reaction would encourage you?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -235,7 +235,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you told anyone about this interest?"
+          "Who would be easiest for you to tell about a new interest?"
         ]
       }
     },
@@ -269,7 +269,7 @@
       "pageId": "q5",
       "learnerAction": "Answer “Has this new interest reduced time for anything else?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “Was that change worth it?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Has this new interest reduced time for anything else? この新しい興味で、ほかのことに使う時間が減りましたか？",
+      "targetOrPrompt": "Conversation prompt: “When would a new interest be worth giving up other free time for you?”",
       "learningTarget": "Explore the distinct “What it replaces (代わりに減ったこと)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Has this new interest reduced time for anything else?” opens this angle; “Was that change worth it?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “Was that change worth it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -277,8 +277,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has this new interest reduced time for anything else?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What would you not give up for it?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -287,7 +287,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Has this new interest reduced time for anything else?"
+          "When would a new interest be worth giving up other free time for you?"
         ]
       }
     },
@@ -295,7 +295,7 @@
       "pageId": "q6",
       "learnerAction": "Answer “What would you like to do with this interest next?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What would be a good result in three months?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "What would you like to do with this interest next? この興味をこれからどうしていきたいですか？",
+      "targetOrPrompt": "Conversation prompt: “Where could a new interest lead you after the first few months?”",
       "learningTarget": "Explore the distinct “Where it goes (これから)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “What would you like to do with this interest next?” opens this angle; “What would be a good result in three months?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What would be a good result in three months?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -303,8 +303,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What would you like to do with this interest next?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What is one small next step?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -313,7 +313,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What would you like to do with this interest next?"
+          "Where could a new interest lead you after the first few months?"
         ]
       }
     },

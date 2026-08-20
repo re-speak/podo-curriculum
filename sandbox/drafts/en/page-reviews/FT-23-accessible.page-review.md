@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/23-music-for-different-parts-of-your-day/lesson.html`
-- SHA-256: `01b7b6779d075de3856592017968bc7a276df3362044adbd4c256e6c5ba6b063`
+- SHA-256: `a012d25d5fed7c6be387da2bbca085ff635888ff34651eb8c805c0933aef7e9d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “What did you love listening to five years ago?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “What has changed in your taste?” rather than asking every follow-up.
-- Visible target or prompt: What did you love listening to five years ago? 5年前は何を聴くのが好きでしたか？
+- Visible target or prompt: Conversation prompt: “What kind of music from five years ago still feels connected to that time?”
 - Learning target: Explore the distinct “Five years ago (5年前の好み)” angle of “Music for different parts of your day” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “What has changed in your taste?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “What has changed in your taste?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What did you love listening to five years ago?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which old favorite still works?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What did you love listening to five years ago?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of music from five years ago still feels connected to that time?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 

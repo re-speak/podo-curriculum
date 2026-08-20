@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/86-what-you-were-like-as-a-child/lesson.html`
-- SHA-256: `1f2f8de3889624f61ec53bbcd590401698f2b616a9743cbae93aa799344beeaa`
+- SHA-256: `d0be63e896703260e6134f652ac2713b059a6a88a5ad9755eaa68e19a57f6cae`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

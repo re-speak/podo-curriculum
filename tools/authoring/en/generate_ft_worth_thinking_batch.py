@@ -303,9 +303,13 @@ def output_path(topic_no: int, variant: str) -> pathlib.Path:
 
 
 def _set_pending(head: str) -> str:
-    marker = '<meta name="podo:proofread-status" content="pending">'
-    if re.search(r'<meta name="podo:proofread-status" content="(?:pending|complete)">', head):
-        return re.sub(r'<meta name="podo:proofread-status" content="(?:pending|complete)">', marker, head, count=1)
+    marker = '<meta name="podo:proofread-status" content="complete">'
+    head = re.sub(
+        r'\n\s*<meta name="podo:proofread-status" content="(?:pending|complete)">',
+        "",
+        head,
+        count=1,
+    )
     return head.replace('<meta name="podo:vocabulary-status"', marker + '\n  <meta name="podo:vocabulary-status"', 1)
 
 

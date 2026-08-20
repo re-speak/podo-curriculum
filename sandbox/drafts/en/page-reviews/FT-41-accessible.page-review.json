@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/41-what-a-free-saturday-looks-like/lesson.html",
-  "lessonSha256": "144ab1a023f26c1dd7e8a1b944b35faa56da9795fdeba3515998a4634a59fa0f",
+  "lessonSha256": "45c7ced081ab649651f3cc5cc2ca5592e5347ade80bd27a0180f8170c90b08fe",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -243,7 +243,7 @@
       "pageId": "q4",
       "learnerAction": "Respond aloud to “Compare a free weekend now with one five years ago.” and develop the most interesting concrete detail.",
       "tutorAction": "React or share briefly, then choose a relevant probe such as “What has changed most?” rather than asking every follow-up.",
-      "targetOrPrompt": "Compare a free weekend now with one five years ago. 今の予定のない週末を、5年前と比べてください。",
+      "targetOrPrompt": "Conversation prompt: “How would your ideal free weekend differ from one five years ago?”",
       "learningTarget": "Explore the distinct “Five years apart (5年間の違い)” angle of “What a free Saturday looks like” through a specific example, reason, comparison, or position.",
       "pedagogicalValue": "The main prompt opens one answerable conversational job; “What has changed most?” adds a specific next layer without repeating it.",
       "failureDiagnosis": "If the answer remains vague after “What has changed most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
@@ -254,14 +254,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "notes": "Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Compare a free weekend now with one five years ago."
+          "How would your ideal free weekend differ from one five years ago?"
         ]
       }
     },

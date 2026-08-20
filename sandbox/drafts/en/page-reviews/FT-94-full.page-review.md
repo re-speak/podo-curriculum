@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/94-one-thing-you-would-make-free-forever/lesson.html`
-- SHA-256: `e9ba060afd632b7ccaffa4031f71e5f94ee9876e4fec50b44d9e63d1ca72d98f`
+- SHA-256: `052e02ee6c845c75af7aff3804b7474369d3d2eacbd977cad21b101005690649`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “Permanent free access can change frequency, habits, expectations, and value as well as cost.” to “The useful question is which ordinary limitation the free option would actually remove.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: resell=転売する.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: opportunity cost=機会費用.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

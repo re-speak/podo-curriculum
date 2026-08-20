@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/35-a-useless-fact-about-you/lesson.html`
-- SHA-256: `98ec2f1c044dff9c5d832ea833dedefe1379d04b16130544b5a7bd57dd2c7ce2`
+- SHA-256: `dda4451c3296d359d56e0cbfafa6e3867a0a98e3520496cd3d8cbe2180078149`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “How did the fact become true?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “Was there one turning point?” rather than asking every follow-up.
-- Visible target or prompt: How did the fact become true? その事実は、どのような経緯で当てはまるようになりましたか？
+- Visible target or prompt: Conversation prompt: “How might an unusual fact about you come about?”
 - Learning target: Explore the distinct “How it became true (そうなった経緯)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “Was there one turning point?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “Was there one turning point?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -157,10 +157,10 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How did the fact become true?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which part of the story explains it best?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How did the fact become true?"]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might an unusual fact about you come about?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
 
 ## 10. `q4`
 
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “How would you use your fact in a playful introduction?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “What exact sentence would you say?” rather than asking every follow-up.
-- Visible target or prompt: How would you use your fact in a playful introduction? その事実を、楽しい自己紹介でどのように使いますか？
+- Visible target or prompt: Conversation prompt: “How would you use an unusual fact about yourself in a playful introduction?”
 - Learning target: Explore the distinct “A playful introduction (楽しい自己紹介)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “What exact sentence would you say?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “What exact sentence would you say?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -208,10 +208,10 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How would you use your fact in a playful introduction?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What follow-up would you hope to hear?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you use your fact in a playful introduction?"]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you use an unusual fact about yourself in a playful introduction?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
 
 ## 13. `feedback`
 

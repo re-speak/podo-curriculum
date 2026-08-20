@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/40-a-superstition-you-follow-anyway/lesson.html",
-  "lessonSha256": "269bf493354abd21c31a106ffc45111be10d56ef16fad2ea31288bead12115e1",
+  "lessonSha256": "20360869c94eede53cd44a939cdf292ba8f17f7a0c2aa3bf8fd78be91419a35f",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -269,7 +269,7 @@
       "pageId": "q5",
       "learnerAction": "Respond aloud to “What's the most unusual superstition you've encountered?” and develop the most interesting concrete detail.",
       "tutorAction": "React or share briefly, then choose a relevant probe such as “What makes it memorable?” rather than asking every follow-up.",
-      "targetOrPrompt": "What's the most unusual superstition you've encountered? 知っている中で、いちばん不思議な迷信は何ですか？",
+      "targetOrPrompt": "Conversation prompt: “What's the most unusual superstition you've encountered?”",
       "learningTarget": "Explore the distinct “The strangest one (いちばん不思議なもの)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.",
       "pedagogicalValue": "The main prompt opens one answerable conversational job; “What makes it memorable?” adds a specific next layer without repeating it.",
       "failureDiagnosis": "If the answer remains vague after “What makes it memorable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
@@ -280,7 +280,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "notes": "Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

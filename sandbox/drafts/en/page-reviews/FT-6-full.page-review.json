@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/06-a-word-that-doesnt-translate-neatly/lesson.html",
-  "lessonSha256": "99a8bb430cf1131d6a8438f38ea833326723a4bec4b4c7f363a0d1a525c04f86",
+  "lessonSha256": "ad87124853c8f05ea69aebff0978c97c9cf8f9684567a40b1da737a77004b2ce",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -113,7 +113,7 @@
       "pageId": "warm-1",
       "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
       "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
-      "targetOrPrompt": "Have you learned any new English words recently?",
+      "targetOrPrompt": "Conversation prompt: “Which English word would you like to understand better?”",
       "learningTarget": "Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.",
       "pedagogicalValue": "The prompt “Have you learned any new English words recently?” opens this specific angle; “Where did the word appear?” moves a first answer toward a concrete reason or example.",
       "failureDiagnosis": "If the answer stays vague after “Where did the word appear?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
@@ -121,8 +121,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
       "choiceQuality": "There are no artificial distractors or forced target frames; “What did you first guess it meant?” gives the tutor a distinct optional branch rather than a repeated script.",
       "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
       "evidence": {
@@ -131,7 +131,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you learned any new English words recently?"
+          "Which English word would you like to understand better?"
         ]
       }
     },
@@ -165,7 +165,7 @@
       "pageId": "q1",
       "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
       "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
-      "targetOrPrompt": "Can you use that new word in a real sentence?",
+      "targetOrPrompt": "Conversation prompt: “Choose one English word and use it in a real sentence.”",
       "learningTarget": "Develop the distinct “A new word (新しい言葉)” conversational move with reasons, examples, comparison, or personal experience.",
       "pedagogicalValue": "The prompt “Can you use that new word in a real sentence?” opens this specific angle; “Who might say that sentence?” moves a first answer toward a concrete reason or example.",
       "failureDiagnosis": "If the answer stays vague after “Who might say that sentence?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
@@ -173,8 +173,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
       "choiceQuality": "There are no artificial distractors or forced target frames; “What does the surrounding situation tell us?” gives the tutor a distinct optional branch rather than a repeated script.",
       "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
       "evidence": {
@@ -183,7 +183,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Can you use that new word in a real sentence?"
+          "Choose one English word and use it in a real sentence."
         ]
       }
     },

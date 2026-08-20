@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/18-a-song-you-keep-playing/lesson.html`
-- SHA-256: `984098110bcb6fca76d958be9a2d1ac5930c676887bbcb1196108e78db0bbb91`
+- SHA-256: `79f0d0ee2a71c5fc57a2cbd5bb327087e44291f528a50a447b19efa05e43cf6f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Is there a song you played too much years ago?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Can you enjoy it again now?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Is there a song you played too much years ago? 何年か前に聴きすぎた曲はありますか？
+- Visible target or prompt: Conversation prompt: “Why can an old favourite become hard to listen to?”
 - Learning target: Explore the distinct “An old repeat (昔繰り返した曲)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Is there a song you played too much years ago?” opens this angle; “Can you enjoy it again now?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Can you enjoy it again now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a song you played too much years ago?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What usually makes you tire of a song?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there a song you played too much years ago?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can an old favourite become hard to listen to?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

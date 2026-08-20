@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/18-a-song-you-keep-playing/lesson.html",
-  "lessonSha256": "3a62d8d74e65824dbe0298e20d217d46b50471220c8b18a7716df5b2d097f54e",
+  "lessonSha256": "3f2798e95137bcaf89f21bfff5f402ab22099e9e6b059ff724f35e68298c7510",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -243,7 +243,7 @@
       "pageId": "q4",
       "learnerAction": "Answer “Is there a song you played too much years ago?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “Can you enjoy it again now?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Is there a song you played too much years ago? 何年か前に聴きすぎた曲はありますか？",
+      "targetOrPrompt": "Conversation prompt: “Why can an old favourite become hard to listen to?”",
       "learningTarget": "Explore the distinct “An old repeat (昔繰り返した曲)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Is there a song you played too much years ago?” opens this angle; “Can you enjoy it again now?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “Can you enjoy it again now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -251,8 +251,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a song you played too much years ago?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What usually makes you tire of a song?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -261,7 +261,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Is there a song you played too much years ago?"
+          "Why can an old favourite become hard to listen to?"
         ]
       }
     },

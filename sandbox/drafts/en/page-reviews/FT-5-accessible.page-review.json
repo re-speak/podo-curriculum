@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/05-a-place-you-would-show-a-visitor/lesson.html",
-  "lessonSha256": "93777a1996d6c768004044af64988e86bb37c8734a3c231c4b5b0486f961981e",
+  "lessonSha256": "3deac20bf5f6df15eb1c5a6ec2005bb755ccb4cfada4f89a34a971cace9d3984",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -191,7 +191,7 @@
       "pageId": "q2",
       "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
       "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
-      "targetOrPrompt": "Why is that place important to you?",
+      "targetOrPrompt": "Conversation prompt: “Why would you choose this place to show me?”",
       "learningTarget": "Develop the distinct “Why there? (なぜそこ？)” conversational move with reasons, examples, comparison, or personal experience.",
       "pedagogicalValue": "The prompt “Why is that place important to you?” opens this specific angle; “What memory do you connect with it?” moves a first answer toward a concrete reason or example.",
       "failureDiagnosis": "If the answer stays vague after “What memory do you connect with it?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
@@ -199,8 +199,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
       "choiceQuality": "There are no artificial distractors or forced target frames; “Would it matter as much without that memory?” gives the tutor a distinct optional branch rather than a repeated script.",
       "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
       "evidence": {
@@ -209,7 +209,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Why is that place important to you?"
+          "Why would you choose this place to show me?"
         ]
       }
     },
@@ -217,7 +217,7 @@
       "pageId": "q3",
       "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
       "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
-      "targetOrPrompt": "When did you first discover it?",
+      "targetOrPrompt": "Conversation prompt: “How would a visitor find this place?”",
       "learningTarget": "Develop the distinct “How you found it (見つけたきっかけ)” conversational move with reasons, examples, comparison, or personal experience.",
       "pedagogicalValue": "The prompt “When did you first discover it?” opens this specific angle; “Who showed it to you?” moves a first answer toward a concrete reason or example.",
       "failureDiagnosis": "If the answer stays vague after “Who showed it to you?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
@@ -225,8 +225,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
       "choiceQuality": "There are no artificial distractors or forced target frames; “How has it changed since then?” gives the tutor a distinct optional branch rather than a repeated script.",
       "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
       "evidence": {
@@ -235,7 +235,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "When did you first discover it?"
+          "How would a visitor find this place?"
         ]
       }
     },
@@ -243,7 +243,7 @@
       "pageId": "q4",
       "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
       "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
-      "targetOrPrompt": "Who have you taken there before?",
+      "targetOrPrompt": "Conversation prompt: “Who would you most want to take there?”",
       "learningTarget": "Develop the distinct “Who goes with you? (誰と行く？)” conversational move with reasons, examples, comparison, or personal experience.",
       "pedagogicalValue": "The prompt “Who have you taken there before?” opens this specific angle; “Did they enjoy the same part you do?” moves a first answer toward a concrete reason or example.",
       "failureDiagnosis": "If the answer stays vague after “Did they enjoy the same part you do?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
@@ -251,8 +251,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
       "choiceQuality": "There are no artificial distractors or forced target frames; “Who would not enjoy it?” gives the tutor a distinct optional branch rather than a repeated script.",
       "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
       "evidence": {
@@ -261,7 +261,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Who have you taken there before?"
+          "Who would you most want to take there?"
         ]
       }
     },

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/100-the-one-thing-you-would-save-in-a-fire/lesson.html`
-- SHA-256: `364c4cc51597eff7149c87102bd5ad45f7d1b4a62ed56eca807a17f083994f04`
+- SHA-256: `72b631300e57e8ee7fc4e7abc68f8e2d9b28826ab7fdc9559d819efbcb37ae02`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “The scenario begins only after every person and pet is safely outside.” to “Backups, inventories, alarms, and evacuation plans matter more than deciding what to retrieve during danger.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: irreplaceable=かけがえのない.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: inventory=一覧.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

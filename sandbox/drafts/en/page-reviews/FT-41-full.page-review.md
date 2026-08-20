@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/41-what-a-free-saturday-looks-like/lesson.html`
-- SHA-256: `8998d52b23f887435d89a5ecade1092d150522d133db3eeaf2c54d3dab79aa96`
+- SHA-256: `649b343b46356433db80a88f9f4719ebf14156df378300293cb5614ef6d1d934`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “Compare a free weekend now with one five years ago.” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “What has changed most?” rather than asking every follow-up.
-- Visible target or prompt: Compare a free weekend now with one five years ago. 今の予定のない週末を、5年前と比べてください。
+- Visible target or prompt: Conversation prompt: “How would your ideal free weekend differ from one five years ago?”
 - Learning target: Explore the distinct “Five years apart (5年間の違い)” angle of “What a free Saturday looks like” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “What has changed most?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “What has changed most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -174,10 +174,10 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Compare a free weekend now with one five years ago.” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which older part would you bring back?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Compare a free weekend now with one five years ago."]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would your ideal free weekend differ from one five years ago?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
 
 ## 11. `q5`
 

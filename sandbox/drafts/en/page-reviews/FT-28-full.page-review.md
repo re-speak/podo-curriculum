@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-full/lessons/28-a-book-you-chose-for-someone-else/lesson.html`
-- SHA-256: `6c72b1ba94a8ec79e298d43b88e0bdac76b1c015bcf177450f1d1cc10cf0b9f9`
+- SHA-256: `0a2225b6b931acc6826f6e9f5a4da23043b8bc902bf225bac83fe4d1e31c6ad1`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “What is the book you chose about?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “What makes it memorable?” rather than asking every follow-up.
-- Visible target or prompt: What is the book you chose about? 選んだ本は、どんな内容ですか？
+- Visible target or prompt: Conversation prompt: “What is the book you chose about?”
 - Learning target: Explore the distinct “The book (その本)” angle of “A book you chose for someone else” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “What makes it memorable?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “What makes it memorable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -124,7 +124,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which part might interest the other person most?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the book you chose about?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
 

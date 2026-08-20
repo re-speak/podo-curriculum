@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/85-a-turning-point-in-your-life/lesson.html`
-- SHA-256: `abccfc9ce6fa05f02166cce0449ad38a6b9d496a42a664acc3975c423ab902eb`
+- SHA-256: `fadfa52012aac571368d59f74c5c9db7fe64b2f5dd5f547a99f1b13500e07589`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

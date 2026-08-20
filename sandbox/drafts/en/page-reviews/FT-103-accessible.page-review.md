@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-accessible/lessons/103-how-much-money-is-enough/lesson.html`
-- SHA-256: `aa5d1c83a16b29a6ee0ef6bc0234f81cb832f272492d27e67b92509517a2b6e0`
+- SHA-256: `bcd43032fecb3e54f399f5536388a1f5ad03d60b6090d546b054d974b9689f87`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

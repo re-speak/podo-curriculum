@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/04-a-table-manner-that-differs/lesson.html",
-  "lessonSha256": "159e6bf63583be777649b9c2b5f5096f9198de039eea932bfbf3b6f3f84d0ba6",
+  "lessonSha256": "1875e5a5c32783df017315f0197a83fbdc126ec4c8cf2763d9b7fd0868cd7453",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -139,7 +139,7 @@
       "pageId": "warm-2",
       "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
       "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
-      "targetOrPrompt": "Have you ever been unsure what to do at someone else's table?",
+      "targetOrPrompt": "Conversation prompt: “What might make a guest unsure what to do at someone else's table?”",
       "learningTarget": "Develop the distinct “A confusing moment (迷った場面)” conversational move with reasons, examples, comparison, or personal experience.",
       "pedagogicalValue": "The prompt “Have you ever been unsure what to do at someone else's table?” opens this specific angle; “What made you hesitate?” moves a first answer toward a concrete reason or example.",
       "failureDiagnosis": "If the answer stays vague after “What made you hesitate?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
@@ -147,8 +147,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
       "choiceQuality": "There are no artificial distractors or forced target frames; “How did you decide what to do?” gives the tutor a distinct optional branch rather than a repeated script.",
       "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
       "evidence": {
@@ -157,7 +157,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you ever been unsure what to do at someone else's table?"
+          "What might make a guest unsure what to do at someone else's table?"
         ]
       }
     },

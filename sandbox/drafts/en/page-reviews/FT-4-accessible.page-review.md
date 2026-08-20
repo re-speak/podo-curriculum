@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/04-a-table-manner-that-differs/lesson.html`
-- SHA-256: `820faa859b500002079968fee2166d7ffc37142b3c06ef4f6814534746bbf7ed`
+- SHA-256: `2906d949fd800232ce4294bcc621e928b500aa5e0c4e0141d886f2536f12389a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Have you ever been unsure what to do at someone else's table?
+- Visible target or prompt: Conversation prompt: “What might make a guest unsure what to do at someone else's table?”
 - Learning target: Develop the distinct “A confusing moment (迷った場面)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Have you ever been unsure what to do at someone else's table?” opens this specific angle; “What made you hesitate?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “What made you hesitate?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -106,8 +106,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “How did you decide what to do?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you ever been unsure what to do at someone else's table?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might make a guest unsure what to do at someone else's table?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 

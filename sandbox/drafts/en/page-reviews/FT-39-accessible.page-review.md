@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/39-what-you-really-do-when-youre-stressed/lesson.html`
-- SHA-256: `f9014c8845350307df0b1df222d21f020e4cb83001157de04c807b8f7a47a211`
+- SHA-256: `0218a1857165f6da43803b0dd9c27166e529e1c1af2f6660d41c75028d0d1e9e`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “Compare how you handle stress now with five years ago.” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “Which part has improved?” rather than asking every follow-up.
-- Visible target or prompt: Compare how you handle stress now with five years ago. 今のストレスへの対処を、5年前と比べてください。
+- Visible target or prompt: Conversation prompt: “How has the way you handle stress changed over the past five years?”
 - Learning target: Explore the distinct “Then and now (以前と今)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “Which part has improved?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “Which part has improved?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -157,16 +157,16 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Compare how you handle stress now with five years ago.” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which part has stayed stubborn?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Compare how you handle stress now with five years ago."]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How has the way you handle stress changed over the past five years?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
 
 ## 10. `q4`
 
 - Learner action: Respond aloud to “Which situation makes your stress habit most unhelpful?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “Which responsibility becomes harder?” rather than asking every follow-up.
-- Visible target or prompt: Which situation makes your stress habit most unhelpful? どのような状況で、そのストレス習慣はいちばん役に立たなくなりますか？
+- Visible target or prompt: Conversation prompt: “When is your usual stress response most unhelpful?”
 - Learning target: Explore the distinct “What makes it worse (悪化する条件)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “Which responsibility becomes harder?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “Which responsibility becomes harder?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -174,10 +174,10 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which situation makes your stress habit most unhelpful?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Who else can be affected?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which situation makes your stress habit most unhelpful?"]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is your usual stress response most unhelpful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
 
 ## 11. `q5`
 

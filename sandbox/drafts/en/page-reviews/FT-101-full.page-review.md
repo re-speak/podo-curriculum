@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-full/lessons/101-how-long-should-a-social-media-break-last/lesson.html`
-- SHA-256: `3fea267659f19c0d3580327d596fddd0cabdb557b913830cdc994ad25f651100`
+- SHA-256: `cd46a57b584a0877b9ce0ef2c05905ca29d3a734e740c097dd7d887f78a52693`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

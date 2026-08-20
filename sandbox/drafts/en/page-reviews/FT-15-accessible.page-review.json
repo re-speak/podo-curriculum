@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/15-what-you-spend-the-most-money-on/lesson.html",
-  "lessonSha256": "f1582f6589dd6ad9ce569a027d29e7669c26bc2889e42296d7f6ce1a7ea0358c",
+  "lessonSha256": "a4683d864f59551f8546da726effde2e8703a5b07f07923beb7566c2aa4275b2",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -139,7 +139,7 @@
       "pageId": "warm-2",
       "learnerAction": "Answer “Have you thought about buying something extra recently?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What caught your attention?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Have you thought about buying something extra recently? 最近、必要ではない物を買おうか考えましたか？",
+      "targetOrPrompt": "Conversation prompt: “Which extra purchases are hardest to resist?”",
       "learningTarget": "Explore the distinct “A recent expense (最近考えた支出)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Have you thought about buying something extra recently?” opens this angle; “What caught your attention?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What caught your attention?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -147,8 +147,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you thought about buying something extra recently?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What made you buy it or pass it up?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -157,7 +157,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you thought about buying something extra recently?"
+          "Which extra purchases are hardest to resist?"
         ]
       }
     },
@@ -269,7 +269,7 @@
       "pageId": "q5",
       "learnerAction": "Answer “Has your view of any kind of spending changed?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What caused your view to change or stay the same?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Has your view of any kind of spending changed? ある支出について見方が変わったことはありますか？",
+      "targetOrPrompt": "Conversation prompt: “What can change someone's view of a kind of spending?”",
       "learningTarget": "Explore the distinct “A changed mind (変わった考え)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Has your view of any kind of spending changed?” opens this angle; “What caused your view to change or stay the same?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What caused your view to change or stay the same?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -277,8 +277,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has your view of any kind of spending changed?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Whose opinion influenced you?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -287,7 +287,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Has your view of any kind of spending changed?"
+          "What can change someone's view of a kind of spending?"
         ]
       }
     },

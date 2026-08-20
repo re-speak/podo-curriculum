@@ -1,10 +1,10 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/45-your-real-bedtime/lesson.html`
-- SHA-256: `fa296908996718d23d36ce564543dcb2052371d80adc51000d2362ce8917ebff`
+- SHA-256: `c87f2edf1cdfbfca93804f1ef729becc780486e824c766e0a01e5c7bd78a3c26`
 - Generated: **pass**
 - Mechanical validation: **pass**
-- Human page audit: **pending**
+- Human page audit: **pass**
 - Owner approval: **pending**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Respond aloud to “What change to your sleep schedule have you considered or tried?” and develop the most interesting concrete detail.
 - Tutor action: React or share briefly, then choose a relevant probe such as “Why would the change be worthwhile?” rather than asking every follow-up.
-- Visible target or prompt: What change to your sleep schedule have you considered or tried? 睡眠の時間帯について、考えたり試したりした変化は何ですか？
+- Visible target or prompt: Conversation prompt: “Which change to your sleep schedule would be most worth trying?”
 - Learning target: Explore the distinct “Changing the schedule (時間帯を変える)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
 - Pedagogical value: The main prompt opens one answerable conversational job; “Why would the change be worthwhile?” adds a specific next layer without repeating it.
 - Failure diagnoses: If the answer remains vague after “Why would the change be worthwhile?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
@@ -157,10 +157,10 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What change to your sleep schedule have you considered or tried?” but is never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What makes it difficult to maintain?” opens a second nonduplicate conversational direction.
 - Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What change to your sleep schedule have you considered or tried?"]}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which change to your sleep schedule would be most worth trying?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
 
 ## 10. `q4`
 

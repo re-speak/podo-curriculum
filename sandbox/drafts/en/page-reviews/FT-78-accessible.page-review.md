@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/78-a-nickname-you-had-at-school/lesson.html`
-- SHA-256: `f0f839ea452f098f525c81a50c93f9590fc14411479ab396677fdc14681215ad`
+- SHA-256: `5e6356a6b373b0ea95a724bbff694b0e6d8764a5d12ca968ae562d4674348d45`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/14-one-thing-you-still-want-to-do-this-year/lesson.html",
-  "lessonSha256": "a45c6b86082ebc1a7906dddc0132edfe254f1fcf3768c934ed84f1946cae608a",
+  "lessonSha256": "10aa949996b71fcaa5c5205fd890005c0e1e3c5ccf1449c0a86c449714eba5c7",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -217,7 +217,7 @@
       "pageId": "q3",
       "learnerAction": "Answer “Have you given up on any goal this year?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “Which goal changed most this year?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Have you given up on any goal this year? 今年、あきらめた目標はありますか？",
+      "targetOrPrompt": "Conversation prompt: “When can giving up on a goal be the right choice?”",
       "learningTarget": "Explore the distinct “What you dropped (あきらめたこと)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Have you given up on any goal this year?” opens this angle; “Which goal changed most this year?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “Which goal changed most this year?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -225,8 +225,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you given up on any goal this year?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What made you continue, change, or drop it?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -235,7 +235,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you given up on any goal this year?"
+          "When can giving up on a goal be the right choice?"
         ]
       }
     },
@@ -243,7 +243,7 @@
       "pageId": "q4",
       "learnerAction": "Answer “If you completed a personal goal, who might notice?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “Would anyone else's daily life change?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "If you completed a personal goal, who might notice? 自分の目標を達成したら、誰が気づきそうですか？",
+      "targetOrPrompt": "Conversation prompt: “If you completed a personal goal, who might notice?”",
       "learningTarget": "Explore the distinct “Who would notice (気づく人)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “If you completed a personal goal, who might notice?” opens this angle; “Would anyone else's daily life change?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “Would anyone else's daily life change?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -251,8 +251,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you completed a personal goal, who might notice?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Who would you want to tell, if anyone?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/87-a-childhood-place-that-no-longer-exists/lesson.html`
-- SHA-256: `ac5896568d5d74d92380ef74df85cf38941ebf93372edaf94315999950299df8`
+- SHA-256: `cfda63c073a54c3956cff11723c08c312dfe52342902f474dc5b3dd4e4dedfe3`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the standalone question “Did the person recognize the final visit, or learn about the loss later?” and expand the most interesting detail.
 - Tutor action: Ask “Did the person recognize the final visit, or learn about the loss later?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Did the person recognize the final visit, or learn about the loss later? / その人は最後の訪問だと気づきましたか。それとも後で失われたと知りましたか？ Follow-up pool: How did they find out? Would they have visited once more?
+- Visible target or prompt: Conversation prompt: “Did the person recognize the final visit, or learn about the loss later?”
 - Learning target: Develop the awareness angle of the selected example in spontaneous conversation.
 - Pedagogical value: Adds the distinct conversational job “awareness” without assuming a private experience or repeating another page.
 - Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.

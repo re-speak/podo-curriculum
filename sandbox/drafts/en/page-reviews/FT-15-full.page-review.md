@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/15-what-you-spend-the-most-money-on/lesson.html`
-- SHA-256: `dd958b3473a3ce791aad9ad591aaead6ec626d7221f1ddc6b2404b34bd4a615f`
+- SHA-256: `6e5c663fce8fa8820e86b52f4b458bd55067f7793bcf7158dc2e9910f4753a1a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you considered any non-essential purchase recently?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What caught your attention?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you considered any non-essential purchase recently? 最近、必要ではない物を買おうか考えましたか？
+- Visible target or prompt: Conversation prompt: “Which non-essential purchases are hardest to resist?”
 - Learning target: Explore the distinct “A recent expense (最近考えた支出)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you considered any non-essential purchase recently?” opens this angle; “What caught your attention?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What caught your attention?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -106,8 +106,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you considered any non-essential purchase recently?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What made you buy it or pass it up?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you considered any non-essential purchase recently?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which non-essential purchases are hardest to resist?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Has your view of any spending category changed?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What caused your view to change or stay the same?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Has your view of any spending category changed? ある支出について見方が変わったことはありますか？
+- Visible target or prompt: Conversation prompt: “What can change someone's judgment of a spending category?”
 - Learning target: Explore the distinct “A changed mind (変わった考え)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Has your view of any spending category changed?” opens this angle; “What caused your view to change or stay the same?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What caused your view to change or stay the same?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has your view of any spending category changed?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Whose opinion influenced you?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Has your view of any spending category changed?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can change someone's judgment of a spending category?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

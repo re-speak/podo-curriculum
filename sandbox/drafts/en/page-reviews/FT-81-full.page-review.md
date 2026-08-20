@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/81-a-trip-that-went-wrong/lesson.html`
-- SHA-256: `a015c4e9bae0c9b984e460f39c7ef0c8b7d6f832763036fd673c58d7a8bf6734`
+- SHA-256: `9ae182b8305637825a62ac0c2528ff18016d749f30d5afbde04ee1f2e731208a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

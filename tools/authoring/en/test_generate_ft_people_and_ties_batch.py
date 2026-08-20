@@ -55,7 +55,7 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
         self.assertEqual(len(claims), 360)
         self.assertEqual(hashlib.sha256("\n".join(claims).encode()).hexdigest(), "4470b9234f82ee4565e91599e1b22da2770be39f16e6d537c41ec42bd0436d25")
         self.assertEqual(len(prompts), 576)
-        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "be42e578c1297b3ec406f1dc4bb7bbeafccc592ee35ea93d0665aea3475a5ee4")
+        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "c8e625d19255a0375aa5bc32c6f22e56f1680cef1682562ada8faf897fe36162")
 
     def test_all_180_rendered_article_claims_have_exact_variant_japanese(self) -> None:
         japanese = []

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/09-a-purchase-that-was-worth-it/lesson.html`
-- SHA-256: `8187410ba1843cf99533683e26bc86185b7a8842341c2bb1350fec5c5b185183`
+- SHA-256: `a4f07a40cfd8d932008b40e20a823ccf716f69b6d0920d43f9663fd68101376e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “What's the best thing you've bought this year?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What do you use it for?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What's the best thing you've bought this year? 今年買ったものの中で、一番よかったものは何ですか？
+- Visible target or prompt: Conversation prompt: “What kind of purchase would feel especially worth the money to you?”
 - Learning target: Explore the distinct “Your best buy (買ってよかったもの)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “What's the best thing you've bought this year?” opens this angle; “What do you use it for?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What do you use it for?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What's the best thing you've bought this year?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “How quickly did you know it was a good purchase?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the best thing you've bought this year?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of purchase would feel especially worth the money to you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “When did you buy it?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Where did you buy it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When did you buy it? いつ買いましたか？
+- Visible target or prompt: Conversation prompt: “How would a purchase prove its value to you?”
 - Learning target: Explore the distinct “The purchase (買ったとき)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “When did you buy it?” opens this angle; “Where did you buy it?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Where did you buy it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -106,8 +106,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When did you buy it?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Were you already looking for one, or did you find it unexpectedly?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When did you buy it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would a purchase prove its value to you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Why did you decide to buy it?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What did you need it for?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Why did you decide to buy it? なぜそれを買うことにしましたか？
+- Visible target or prompt: Conversation prompt: “What would make a purchase easy for you to say yes to?”
 - Learning target: Explore the distinct “The decision (決めた理由)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Why did you decide to buy it?” opens this angle; “What did you need it for?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What did you need it for?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -123,8 +123,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Why did you decide to buy it?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What other choice did you think about?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why did you decide to buy it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make a purchase easy for you to say yes to?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “How has it changed your daily life?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “How often do you use it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How has it changed your daily life? それによって、日常生活はどう変わりましたか？
+- Visible target or prompt: Conversation prompt: “Which kind of purchase would improve your daily life most?”
 - Learning target: Explore the distinct “In your routine (日常の中で)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “How has it changed your daily life?” opens this angle; “How often do you use it?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “How often do you use it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -140,8 +140,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How has it changed your daily life?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What is easier now?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How has it changed your daily life?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of purchase would improve your daily life most?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “How important was the price when you chose it?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Did it feel expensive at the time?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How important was the price when you chose it? 選ぶとき、値段はどのくらい重要でしたか？
+- Visible target or prompt: Conversation prompt: “How much should price matter to you when deciding whether something is worth it?”
 - Learning target: Explore the distinct “Price and value (値段と価値)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “How important was the price when you chose it?” opens this angle; “Did it feel expensive at the time?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Did it feel expensive at the time?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -157,8 +157,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How important was the price when you chose it?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Would a cheaper one have been enough?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How important was the price when you chose it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much should price matter to you when deciding whether something is worth it?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Tell me about something you bought that was not worth the money.” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What expectation did it fail to meet?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Tell me about something you bought that was not worth the money. お金を出す価値がなかったと思う買い物について教えてください。
+- Visible target or prompt: Conversation prompt: “Which kind of purchase would disappoint you most?”
 - Learning target: Explore the distinct “A regret (後悔した買い物)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Tell me about something you bought that was not worth the money.” opens this angle; “What expectation did it fail to meet?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What expectation did it fail to meet?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Tell me about something you bought that was not worth the money.” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Did you return, sell, or keep it?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Tell me about something you bought that was not worth the money."]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of purchase would disappoint you most?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “What would make it stop feeling worth the money?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Would you keep it if it stopped working well?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What would make it stop feeling worth the money? どうなったら、お金を出す価値がないと感じますか？
+- Visible target or prompt: Conversation prompt: “What could make a good purchase stop feeling worth the money to you?”
 - Learning target: Explore the distinct “The limit (価値がなくなる条件)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “What would make it stop feeling worth the money?” opens this angle; “Would you keep it if it stopped working well?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Would you keep it if it stopped working well?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What would make it stop feeling worth the money?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “How much extra cost would be too much?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make it stop feeling worth the money?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What could make a good purchase stop feeling worth the money to you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “How would you decide whether to buy the same thing again today?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Who would you recommend it to?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How would you decide whether to buy the same thing again today? 今日、同じものをもう一度買うかどうか、どのように決めますか？
+- Visible target or prompt: Conversation prompt: “How would you decide whether to buy the same kind of thing again?”
 - Learning target: Explore the distinct “Buy it again? (もう一度買う？)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “How would you decide whether to buy the same thing again today?” opens this angle; “Who would you recommend it to?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Who would you recommend it to?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -208,8 +208,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How would you decide whether to buy the same thing again today?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Who would probably not need it?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you decide whether to buy the same thing again today?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you decide whether to buy the same kind of thing again?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

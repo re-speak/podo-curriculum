@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-accessible/lessons/102-what-ai-gets-wrong-about-human-work/lesson.html`
-- SHA-256: `3b046899a31d6b37fbb06157c295c5f9cd8c680cfcc19533587cb0418999c46b`
+- SHA-256: `f1cc0589f92fd58b887ce95c5009ada588f7838d5273ec1e2e0d40d1fdfde9d1`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

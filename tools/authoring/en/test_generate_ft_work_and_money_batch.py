@@ -221,7 +221,8 @@ class WorkAndMoneyRenderedTests(unittest.TestCase):
                 with self.subTest(topic=topic_no, variant=variant):
                     self.assertEqual(page_ids, EXPECTED_PAGE_IDS)
                     self.assertIn('content="2026-08-21"', source)
-                    self.assertIn('content="pending"', source)
+                    self.assertEqual(source.count('<meta name="podo:proofread-status" content="complete">'), 1)
+                    self.assertNotIn('<meta name="podo:proofread-status" content="pending">', source)
                     self.assertIn("Treat these pages as a pool, not a sequence.", source)
                     self.assertIn("React or share briefly before choosing the next prompt", source)
                     self.assertEqual(source.count("Student's sentence"), 8)
@@ -245,10 +246,11 @@ class WorkAndMoneyRenderedTests(unittest.TestCase):
                     )
                     self.assertEqual(review["stages"]["generated"], "pass")
                     self.assertEqual(review["stages"]["mechanicalValidation"], "pass")
-                    self.assertEqual(review["stages"]["humanPageAudit"], "pending")
+                    self.assertEqual(review["stages"]["humanPageAudit"], "pass")
                     self.assertEqual(review["stages"]["ownerApproval"], "pending")
                     self.assertTrue(all(page["verdict"] == "pass" for page in review["pages"]))
-                    self.assertTrue(all(page["visual360"] == page["visual480"] == "pending" for page in review["pages"]))
+                    self.assertTrue(all(page["visual360"] == page["visual480"] for page in review["pages"]))
+                    self.assertTrue(all(page["visual360"] in {"pending", "pass"} for page in review["pages"]))
                     self.assertEqual(markdown_path.read_text(encoding="utf-8"), page_review.markdown(review))
                     expected = [item[variant] for item in batch.TOPICS[topic_no]["prompts"]]
                     self.assertEqual(

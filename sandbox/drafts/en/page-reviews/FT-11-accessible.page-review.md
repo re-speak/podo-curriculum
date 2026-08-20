@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/11-a-show-you-cant-stop-watching/lesson.html`
-- SHA-256: `95f3ea1a6220320d98fe4922afcce1187e18a81975eb68f5d0403e0d3b1127d7`
+- SHA-256: `84fbf5f0c6a15d30b513487311a65d901a83938170c6e1830a3389139e0deacd`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you stopped watching any show halfway?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What usually makes you lose interest?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you stopped watching any show halfway? 途中で見るのをやめた作品はありますか？
+- Visible target or prompt: Conversation prompt: “What usually makes someone stop watching a show halfway?”
 - Learning target: Explore the distinct “A show you dropped (途中でやめた作品)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you stopped watching any show halfway?” opens this angle; “What usually makes you lose interest?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What usually makes you lose interest?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you stopped watching any show halfway?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What might make you try it again?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you stopped watching any show halfway?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually makes someone stop watching a show halfway?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

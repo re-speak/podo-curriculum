@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/80-a-mistake-people-still-remind-you-about/lesson.html`
-- SHA-256: `74d096f85990fa42029b3b0ebc1d3543756441630be30e75a2c6272d37cf3682`
+- SHA-256: `beb23755460e198c1905e4490376c22617d766fff82f5a7cbf3080fa287b4265`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

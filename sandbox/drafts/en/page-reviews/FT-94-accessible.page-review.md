@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/94-one-thing-you-would-make-free-forever/lesson.html`
-- SHA-256: `e738296664ab8a31e5381726b1bd7c28dc7d1bc48c0d88a14ef0f376af84f6fe`
+- SHA-256: `80769d682cd6218b5d42cc40071a415b595276e76b2e2e6eee35629aa2d40f74`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

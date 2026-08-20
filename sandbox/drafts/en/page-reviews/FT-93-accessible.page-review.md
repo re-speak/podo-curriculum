@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/93-the-one-food-you-could-eat-forever/lesson.html`
-- SHA-256: `fe76fd9f1a4d08f689ed708a7969142131d991e021b0fc205c03b99f422403ee`
+- SHA-256: `396a503dcbff3376a7832378a196952957e0b0a392fe6f03b28be5a6a91d23d1`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

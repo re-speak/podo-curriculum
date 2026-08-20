@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/84-one-day-you-would-go-back-to/lesson.html`
-- SHA-256: `a1597d11d99e594d72badcfe114777b5665194591f945d33d66959a6789f2499`
+- SHA-256: `c97dec0727c5664b5fc105bd2223b7ec163f8b6251bd5aa1976389ffe37cd0fb`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

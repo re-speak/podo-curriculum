@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/100-the-one-thing-you-would-save-in-a-fire/lesson.html`
-- SHA-256: `23045a34eba95df461e97255ff2cb4a54e76261cee44587e5eefe871743ceef4`
+- SHA-256: `67239fe22fba92372e766265131d3f6deea2337ef649927b658ff8d01e02551d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

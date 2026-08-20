@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/07-japan-does-especially-well/lesson.html`
-- SHA-256: `996ed2503b41591eb696c0abe05af7e1f0af411880225d6c6a3db817f6b5fae6`
+- SHA-256: `bfb2ee44ea84d4d55c9249179872a5eb5ad76fe29977ec680a47f92508f494bb`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Tell me about a recent time when that service worked especially well for you.
+- Visible target or prompt: Conversation prompt: “Imagine needing that service on a busy day. What problem should it solve?”
 - Learning target: Develop the distinct “A real scene (実際の場面)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Tell me about a recent time when that service worked especially well for you.” opens this specific angle; “What did you need at that moment?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “What did you need at that moment?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -106,8 +106,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “What problem did the service prevent?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Tell me about a recent time when that service worked especially well for you."]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Imagine needing that service on a busy day. What problem should it solve?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 3 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 

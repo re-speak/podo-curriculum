@@ -171,7 +171,7 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
         self.assertNotIn("than another", ft14["prompts"][2]["full"])
         self.assertEqual(
             ft14["prompts"][4]["accessible_followups"],
-            ["Which goal changed most this year?", "What made you continue, change, or drop it?"],
+            ["Which kind of goal may need to change?", "What should make someone continue instead?"],
         )
         self.assertEqual(
             ft14["prompts"][4]["full_followups"],

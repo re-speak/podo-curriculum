@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/10-something-youve-recently-got-into/lesson.html`
-- SHA-256: `4c98a8f3e1f06989fe7f73e8e8b559ed4ab17dcb9a317617a2c156714753ed42`
+- SHA-256: `0727a7d7f391f51e266854719b17fc5908329a776dfdace4397b60badabbc73e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you got into anything new recently?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What do you enjoy most about it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you got into anything new recently? 最近、新しく夢中になったものはありますか？
+- Visible target or prompt: Conversation prompt: “What kind of new interest could easily catch your attention?”
 - Learning target: Explore the distinct “A new interest (新しい興味)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you got into anything new recently?” opens this angle; “What do you enjoy most about it?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What do you enjoy most about it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you got into anything new recently?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “How did it first catch your attention?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you got into anything new recently?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of new interest could easily catch your attention?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “How did you first get interested in it?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What made you try it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How did you first get interested in it? 最初に興味を持ったきっかけは何でしたか？
+- Visible target or prompt: Conversation prompt: “What might turn your curiosity into a real interest?”
 - Learning target: Explore the distinct “How it began (始めたきっかけ)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “How did you first get interested in it?” opens this angle; “What made you try it?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What made you try it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -123,8 +123,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How did you first get interested in it?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Did you expect to enjoy it this much?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How did you first get interested in it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might turn your curiosity into a real interest?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “How often do you do it now?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “When do you usually make time for it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How often do you do it now? 今はどのくらいの頻度でしていますか？
+- Visible target or prompt: Conversation prompt: “How would you make room for a new interest?”
 - Learning target: Explore the distinct “Time for it (使っている時間)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “How often do you do it now?” opens this angle; “When do you usually make time for it?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “When do you usually make time for it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -140,8 +140,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How often do you do it now?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What sometimes gets in the way?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How often do you do it now?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you make room for a new interest?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you told anyone about this interest?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Who would understand this interest best?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you told anyone about this interest? この興味について誰かに話しましたか？
+- Visible target or prompt: Conversation prompt: “Who would be easiest for you to tell about a new interest?”
 - Learning target: Explore the distinct “Who knows (知っている人)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you told anyone about this interest?” opens this angle; “Who would understand this interest best?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Who would understand this interest best?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -157,8 +157,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you told anyone about this interest?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What reaction would encourage you?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you told anyone about this interest?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would be easiest for you to tell about a new interest?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Has this new interest reduced time for anything else?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Does that feel like a good trade-off?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Has this new interest reduced time for anything else? この新しい興味で、ほかのことに使う時間が減りましたか？
+- Visible target or prompt: Conversation prompt: “When would a new interest be worth giving up other free time for you?”
 - Learning target: Explore the distinct “What it replaces (代わりに減ったこと)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Has this new interest reduced time for anything else?” opens this angle; “Does that feel like a good trade-off?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Does that feel like a good trade-off?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has this new interest reduced time for anything else?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What would you not give up for it?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Has this new interest reduced time for anything else?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When would a new interest be worth giving up other free time for you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -200,7 +200,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Where do you hope this interest goes from here?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What would progress look like in three months?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Where do you hope this interest goes from here? この興味をこれからどうしていきたいですか？
+- Visible target or prompt: Conversation prompt: “Where could a new interest take you after its first few months?”
 - Learning target: Explore the distinct “Where it goes (これから)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Where do you hope this interest goes from here?” opens this angle; “What would progress look like in three months?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What would progress look like in three months?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -208,8 +208,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Where do you hope this interest goes from here?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What is the next small step?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where do you hope this interest goes from here?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where could a new interest take you after its first few months?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/28-a-book-you-chose-for-someone-else/lesson.html",
-  "lessonSha256": "982d59d3edcccadf6c77e26f47bf9b580b36725743972d6051c88249907a2318",
+  "lessonSha256": "8b0c333ebc5423f14f561c122123aa4b6cb7321825f2fe997a5265143b3795a8",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -165,7 +165,7 @@
       "pageId": "q1",
       "learnerAction": "Respond aloud to “What is the book you chose about?” and develop the most interesting concrete detail.",
       "tutorAction": "React or share briefly, then choose a relevant probe such as “What makes it memorable?” rather than asking every follow-up.",
-      "targetOrPrompt": "What is the book you chose about? 選んだ本は、どんな内容ですか？",
+      "targetOrPrompt": "Conversation prompt: “What is the book you chose about?”",
       "learningTarget": "Explore the distinct “The book (その本)” angle of “A book you chose for someone else” through a specific example, reason, comparison, or position.",
       "pedagogicalValue": "The main prompt opens one answerable conversational job; “What makes it memorable?” adds a specific next layer without repeating it.",
       "failureDiagnosis": "If the answer remains vague after “What makes it memorable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
@@ -173,8 +173,8 @@
       "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the book you chose about?” but is never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “Which part might interest the other person most?” opens a second nonduplicate conversational direction.",
       "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
       "evidence": {

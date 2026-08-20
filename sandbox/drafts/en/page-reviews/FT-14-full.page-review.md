@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/14-one-thing-you-still-want-to-do-this-year/lesson.html`
-- SHA-256: `135b8d74766544c780b8efabca2a0b06698af5d4ac191bf170a33be3c23d6486`
+- SHA-256: `c817427975bc0ecbb8b2e8d001d9f1712a50e829f3e4de240d7d764a0875cd85`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you given up on any goal this year?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Which goal changed most this year?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you given up on any goal this year? 今年、あきらめた目標はありますか？
+- Visible target or prompt: Conversation prompt: “When can giving up on a goal be the right choice?”
 - Learning target: Explore the distinct “What you dropped (あきらめたこと)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you given up on any goal this year?” opens this angle; “Which goal changed most this year?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Which goal changed most this year?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -157,8 +157,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you given up on any goal this year?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What made you continue, change, or drop it?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you given up on any goal this year?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can giving up on a goal be the right choice?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “If you completed a personal goal, who might notice?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Would anyone else's daily life change?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you completed a personal goal, who might notice? 自分の目標を達成したら、誰が気づきそうですか？
+- Visible target or prompt: Conversation prompt: “If you completed a personal goal, who might notice?”
 - Learning target: Explore the distinct “Who would notice (気づく人)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “If you completed a personal goal, who might notice?” opens this angle; “Would anyone else's daily life change?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Would anyone else's daily life change?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -175,7 +175,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Who would you want to tell, if anyone?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you completed a personal goal, who might notice?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

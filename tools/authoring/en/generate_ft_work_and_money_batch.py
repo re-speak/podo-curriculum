@@ -168,7 +168,7 @@ TOPICS = {
             p("opening", "A skill to improve", "上達したい技能", BRIEF_OPENINGS[67] + " You may use a past, familiar, or imagined effort instead.", "今、何をもっと上達させようとしていますか？ 過去の取り組み、身近な人、想像上の例でもかまいません。", ("What part of the skill needs the most attention?", "If the attempt has stopped, what did it reveal?"), "What are you currently trying to improve? A past, familiar, or hypothetical effort is equally valid.", "今、何を上達させようとしていますか？ 過去、身近な人、仮定の取り組みでもかまいません。", ("Which component of the skill needs focused work?", "If the effort ended, what did it reveal about learning conditions?"), "current-past-familiar-or-imagined"),
             p("attempt", "What you tried", "試したこと", "What have you or the person in your example tried so far?", "自分や例の人は、これまで何を試しましたか？", ("How long did that attempt last?", "What made it easy or hard to repeat?"), "What methods have you or the selected person attempted so far?", "自分や選んだ人は、これまでどんな方法を試しましたか？", ("How long was each method sustained?", "Which condition supported or disrupted repetition?"), "active-or-ended-attempt"),
             p("obstacle", "What gets in the way", "妨げになること", "What is the main obstacle to improving this skill?", "この技能を上達させるうえで、主な障害は何ですか？", ("Is the obstacle time, access, confidence, or something else?", "Which part can the person influence?"), "What is the most persistent barrier to improvement in this example?", "この例で、上達を最も妨げ続けているものは何ですか？", ("Does it involve time, access, feedback, confidence, or another factor?", "Which part is realistically within the person's influence?"), "selected-example-obstacle"),
-            p("feedback", "Useful feedback", "役立つフィードバック", "What feedback would help with the next attempt?", "次の取り組みに役立つのは、どんなフィードバックですか？", ("Who or what could provide it?", "How specific should it be?"), "What kind of feedback would make the next attempt more effective?", "次の取り組みをより効果的にするのは、どんなフィードバックですか？", ("Which source could provide credible feedback?", "What concrete adjustment should it identify?"), "general-or-selected-example"),
+            p("feedback", "Useful feedback", "役立つフィードバック", "What feedback would help with the next attempt?", "次の取り組みに役立つのは、どんなフィードバックですか？", ("Who or what could provide it?", "Which detail should the feedback identify?"), "What kind of feedback would make the next attempt more effective?", "次の取り組みをより効果的にするのは、どんなフィードバックですか？", ("Which source could provide credible feedback?", "What concrete adjustment should it identify?"), "general-or-selected-example"),
             p("evidence", "Signs of progress", "上達の兆し", "What small sign would show that the skill is improving?", "どんな小さな兆しがあれば、その技能が上達していると分かりますか？", ("Who might notice it first?", "How could it be checked without a formal test?"), "What observable evidence would indicate genuine improvement?", "どんな観察可能な証拠があれば、本当に上達していると判断できますか？", ("Who would be well placed to notice it?", "How could the change be assessed without relying on one formal test?"), "evidence-not-feeling-only"),
             p("priority", "Worth continuing", "続ける価値", "Is this skill still worth pursuing, or have priorities changed?", "この技能は今も伸ばす価値がありますか。それとも優先順位が変わりましたか？", ("What would justify continuing?", "What would make stopping reasonable?"), "Does this skill still justify sustained effort, or have other priorities become more important?", "この技能は今も継続的な努力に値しますか。それとも、ほかの優先事項のほうが重要になりましたか？", ("Which benefit would justify continuing?", "Which changed circumstance would make stopping sensible?"), "continue-pause-or-stop"),
             p("next", "One next step", "次の一歩", "What is one small action the person could repeat this week?", "その人が今週繰り返せる小さな行動は何ですか？", ("When could it fit?", "What would make it easy to begin?"), "What is one modest, repeatable action that could move the skill forward this week?", "今週、その技能を前進させるために繰り返せる無理のない行動は何ですか？", ("Where could it fit into the week?", "Which cue or resource would lower the barrier to starting?"), "self-or-example-next-step"),
@@ -459,7 +459,7 @@ MAIN_REVISIONS = {
     (72, 6): ("Should someone always respond when advice helps them?", "助言が役に立ったとき、必ず反応を返すべきですか？", "Does useful guidance always require a direct response from the learner?", "役立つ指導には、必ず学習者からの直接の反応が必要ですか？"),
     (73, 1): (BRIEF_OPENINGS[73], "住んでいる場所では、人は普通何時に仕事や学校を終えますか？", "When do people actually finish work or school where you live?", "住んでいる場所では、人は実際に何時に仕事や学校を終えますか？"),
     (73, 2): ("How different are official and real finishing times where you live?", "住んでいる場所では、公式の終了時刻と実際の時刻はどのくらい違いますか？", "How closely do official finishing times match actual practice where you live?", "住んでいる場所では、公式の終了時刻と実際の運用はどの程度一致しますか？"),
-    (73, 4): ("Does your language have a label for someone who always works or studies late?", "いつも遅くまで働いたり勉強したりする人を表す言葉はありますか？", "Is there a local expression for someone who consistently works or studies late?", "いつも遅くまで働いたり勉強したりする人を表す地域の言い方はありますか？"),
+    (73, 4): ("How does your language describe someone who always works or studies late?", "いつも遅くまで働いたり勉強したりする人を、あなたの言語ではどう表しますか？", "How does local language describe someone who consistently works or studies late?", "いつも遅くまで働いたり勉強したりする人を、地域の言葉ではどう表しますか？"),
     (73, 5): ("I'll share a real finishing-time pattern from my experience. What seems surprising or familiar about it?", "私の経験から、実際の終了時刻のパターンを一つ話します。どこが意外で、どこが身近に感じますか？", "I'll share one concrete finishing-time pattern from my experience. Which detail deserves comparison?", "私の経験から、具体的な終了時刻のパターンを一つ話します。どの詳細を比較すべきですか？"),
     (73, 6): ("How can finishing times differ across two places you know about?", "知っている二つの場所で、終了時刻はどう異なり得ますか？", "How can actual finishing times differ across two settings?", "二つの環境で、実際の終了時刻はどう異なり得ますか？"),
     (74, 1): (BRIEF_OPENINGS[74], "最近の二時間を一つ選んでください。その時間を何で過ごしましたか？", "Choose any recent two-hour window. Which activities filled it?", "最近の二時間を一つ選んでください。どんな活動がその時間を占めましたか？"),
@@ -634,7 +634,7 @@ TOPICS[71]["prompts"][4]["full_followups"] = (
 )
 TOPICS[71]["prompts"][6]["accessible_followups"] = (
     "What could that person help clarify?",
-    "Which details should remain private?",
+    "Which details would be inappropriate to share?",
 )
 TOPICS[71]["prompts"][6]["full_followups"] = (
     "Which uncertainty could that perspective reduce?",
@@ -739,14 +739,13 @@ def output_path(topic_number, variant):
 
 
 def _set_pending(head: str) -> str:
-    marker = '<meta name="podo:proofread-status" content="pending">'
-    if re.search(r'<meta name="podo:proofread-status" content="(?:pending|complete)">', head):
-        return re.sub(
-            r'<meta name="podo:proofread-status" content="(?:pending|complete)">',
-            marker,
-            head,
-            count=1,
-        )
+    marker = '<meta name="podo:proofread-status" content="complete">'
+    head = re.sub(
+        r'\n\s*<meta name="podo:proofread-status" content="(?:pending|complete)">',
+        "",
+        head,
+        count=1,
+    )
     return head.replace(
         '<meta name="podo:vocabulary-status"',
         marker + '\n  <meta name="podo:vocabulary-status"',

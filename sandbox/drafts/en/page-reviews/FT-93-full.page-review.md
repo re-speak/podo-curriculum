@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/93-the-one-food-you-could-eat-forever/lesson.html`
-- SHA-256: `34a1beb0820a164c2fdd03284fe13a2288650b40eeb6b8c91e2d3b2ee1d12931`
+- SHA-256: `2bb582949446334befd99312c4c3614d8ffbd3fed3d3ae4c2901b309595e38b0`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “A one-food thought experiment removes choice and makes repetition the central problem.” to “The question reveals how variety, freedom, and scarcity shape desire more than it identifies a perfect food.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: get sick of=飽きる.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: sustainable=続けやすい.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

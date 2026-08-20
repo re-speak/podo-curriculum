@@ -33,11 +33,11 @@ CANONICAL = {
 PRESERVED_FT7 = {
     "accessible": (
         TRACK / "courses/talk-between-two-countries-accessible/lessons/07-japan-does-especially-well/lesson.html",
-        "996ed2503b41591eb696c0abe05af7e1f0af411880225d6c6a3db817f6b5fae6",
+        "bfb2ee44ea84d4d55c9249179872a5eb5ad76fe29977ec680a47f92508f494bb",
     ),
     "full": (
         TRACK / "courses/talk-between-two-countries-full/lessons/07-japan-does-especially-well/lesson.html",
-        "964ab61337276c5cae0239e14737332986892db4233f8333ece39153e8a0b1e7",
+        "991ce831d4c89e4882c3ecd138fc0896c2bb212ba2762c40a34ddb4e198e1268",
     ),
 }
 
@@ -49,8 +49,8 @@ TOPICS = {
         "ko": "사람들이 일본에 대해 자주 오해하는 것",
         "ja": "日本についてよく誤解されること",
         "goal": ("Let's talk about an idea about Japan that does not match everyday reality.", "日本について、実際の日常とは合わないイメージを話しましょう。"),
-        "opening": ("Have you ever heard a surprising question about Japan from a visitor?", "外国の人から、日本について意外な質問をされたことはありますか？"),
-        "opening_followups": ["What did the visitor ask?", "How did you answer?"],
+        "opening": ("What surprising question might a visitor ask about Japan?", "旅行者は、日本についてどんな意外な質問をするかもしれませんか？"),
+        "opening_followups": ["Why might they ask it?", "How would you answer?"],
         "opening_full": ("What question from a visitor revealed an unexpected image of Japan?", "外国の人からのどんな質問で、日本への意外なイメージに気づきましたか？"),
         "opening_followups_full": ["What image did the question suggest?", "Did the visitor change their view?"],
         "warm2": ("Partly true?", "一部は本当？", "Is there an idea about Japan that is partly true but too simple?", "日本について、一部は本当でも単純すぎるイメージはありますか？", ["Which part is true?", "What important difference does it miss?"]),
@@ -87,7 +87,7 @@ TOPICS = {
             ("Where it comes from", "イメージの出どころ", "Why do people get that idea?", "なぜそのイメージを持つのでしょうか？", ["Does it come from media or a personal story?", "Why is it easy to remember?"]),
             ("The reality", "実際のところ", "What is everyday life really like?", "実際の日常はどのようなものですか？", ["Who or where is different?", "What example would make that clear?"]),
             ("Turn it around", "逆に考えよう", "What simple idea about another country do you question?", "ほかの国について、単純すぎると思うイメージは何ですか？", ["Why might it be too simple?", "What would you like to learn from someone there?"]),
-            ("A changed view", "変わった見方", "Have you ever realized you were wrong about a place?", "ある場所について、自分の考えが間違っていたと気づいたことはありますか？", ["What changed your mind?", "What part of your old view remained?"]),
+            ("A changed view", "変わった見方", "What can make someone realize an idea about a place was wrong?", "ある場所についての考えが間違っていたと気づくきっかけは何ですか？", ["What kind of evidence can change a view?", "What part of the old view might remain?"]),
             ("A better question", "よりよい質問", "What should visitors ask instead?", "旅行者は代わりに何を聞くとよいですか？", ["Who should they ask?", "How might the answer differ across Japan?"]),
         ],
         "questions_full": [
@@ -95,7 +95,7 @@ TOPICS = {
             ("Where it comes from", "イメージの出どころ", "Why does that image spread so easily?", "なぜそのイメージは広まりやすいのでしょうか？", ["What makes people repeat it?", "Which medium makes it memorable?"]),
             ("The reality", "実際のところ", "Where does that image stop matching everyday life?", "そのイメージは、どこで実際の日常と合わなくなりますか？", ["Whose experience challenges it?", "What concrete example would change the picture?"]),
             ("Turn it around", "逆に考えよう", "Which image of another country do you suspect is too simple?", "ほかの国について、単純すぎるのではないかと思うイメージは何ですか？", ["Why are you unsure about it?", "What would you ask someone who lives there?"]),
-            ("A changed view", "変わった見方", "When have you had to revise your view of a place?", "ある場所への見方を変えなければならなかったのは、どんなときですか？", ["What evidence changed your mind?", "What still seemed true?"]),
+            ("A changed view", "変わった見方", "What evidence should make someone revise their view of a place?", "ある場所への見方を変えるべきなのは、どんな根拠があるときですか？", ["Which evidence would be most convincing?", "What might still remain true?"]),
             ("A better question", "よりよい質問", "What narrower question would produce a more honest answer?", "どんな具体的な質問なら、より正直な答えが得られますか？", ["Who should answer it?", "How might the answer vary across Japan?"]),
         ],
     },
@@ -105,8 +105,8 @@ TOPICS = {
         "ko": "모두가 먹어 봐야 할 일본 음식",
         "ja": "みんなに食べてほしい日本の料理",
         "goal": ("Let's choose one Japanese food and make me want to try it.", "日本の料理を一つ選び、食べてみたくなるように話しましょう。"),
-        "opening": ("What food would you make me eat if I came to Japan?", "私が日本に来たら、何を食べさせたいですか？"),
-        "opening_followups": ["Which food came to mind first?", "Have you recommended it to a visitor before?"],
+        "opening": ("What Japanese food would you most want me to try?", "私にいちばん食べてほしい日本の料理は何ですか？"),
+        "opening_followups": ["Why did that food come to mind first?", "What might surprise a first-time visitor?"],
         "warm2": ("A visitor hesitates", "迷っている旅行者", "What might make a visitor nervous about trying it?", "旅行者は、その料理の何を不安に思うかもしれませんか？", ["What would you tell them before the first bite?", "Would you change anything for a beginner?"]),
         "article_title": ("Why a dish needs a story", "料理に物語が必要な理由"),
         "article": [
@@ -139,7 +139,7 @@ TOPICS = {
             ("Your choice", "あなたの一品", "Why would you choose that dish over every other Japanese food?", "なぜほかの日本料理ではなく、その料理を選びますか？", ["What experience makes it stand out?", "What is the first thing I would notice?"]),
             ("Taste and texture", "味と食感", "What does it taste and feel like?", "どんな味と食感ですか？", ["Which ingredient shapes the flavor most?", "What food could you compare the texture to?"]),
             ("The best moment", "いちばんおいしい時", "When and where is it best?", "いつ、どこで食べるのがいちばんですか？", ["Does the season change it?", "What kind of place should I avoid?"]),
-            ("Who shares it", "一緒に食べる人", "Who do you usually eat it with?", "ふだん誰と一緒に食べますか？", ["What memory do you connect with it?", "Does your family eat it differently?"]),
+            ("Who shares it", "一緒に食べる人", "Who would you want to eat it with?", "その料理を誰と一緒に食べたいですか？", ["Why would that person be good company?", "Would a family meal make it feel different?"]),
             ("One warning", "一つの注意", "What should you warn a first-time visitor about?", "初めて食べる人に、何を注意しておきますか？", ["What mistake do visitors often make?", "What should they try before deciding they dislike it?"]),
             ("How much can change?", "どこまで変えられる？", "How much can you change the dish before it stops counting?", "どこまで変えたら、その料理ではなくなりますか？", ["Which part must stay the same?", "What change would you happily accept?"]),
         ],
@@ -152,7 +152,7 @@ TOPICS = {
         "goal": ("Let's compare one table habit and the meaning people give it.", "食卓での習慣を一つ比べ、その意味について話しましょう。"),
         "opening": ("Do you pick your bowl up when you eat?", "食べるとき、お椀を手に持ちますか？"),
         "opening_followups": ["When did you learn that habit?", "Does everyone in your home do the same?"],
-        "warm2": ("A confusing moment", "迷った場面", "Have you ever been unsure what to do at someone else's table?", "ほかの人の食卓で、どうすればよいか迷ったことはありますか？", ["What made you hesitate?", "How did you decide what to do?"]),
+        "warm2": ("A confusing moment", "迷った場面", "What might make a guest unsure what to do at someone else's table?", "ほかの人の食卓で、客がどうすればよいか迷うのはどんなときですか？", ["Which quiet rule could cause hesitation?", "How could the guest decide what to do?"]),
         "article_title": ("The hidden rules at a table", "食卓にある見えないルール"),
         "article": [
             ("Table manners feel natural because people learn them long before they can explain them.", "食事のマナーは説明できるようになるずっと前から身につけるため、自然に感じられます。"),
@@ -227,9 +227,9 @@ TOPICS = {
         "gloss_accessible": {4: ("atmosphere", "atmosphere", "雰囲気"), 7: ("private", "private", "人に知られない")},
         "questions": [
             ("Your place", "あなたの場所", "What would we do first when we arrived?", "そこに着いたら、まず何をしますか？", ["What would that first stop show me?", "How long would we stay there?"]),
-            ("Why there?", "なぜそこ？", "Why is that place important to you?", "なぜその場所はあなたにとって大切ですか？", ["What memory do you connect with it?", "Would it matter as much without that memory?"]),
-            ("How you found it", "見つけたきっかけ", "When did you first discover it?", "その場所を初めて知ったのはいつですか？", ["Who showed it to you?", "How has it changed since then?"]),
-            ("Who goes with you?", "誰と行く？", "Who have you taken there before?", "これまで誰をそこへ連れて行きましたか？", ["Did they enjoy the same part you do?", "Who would not enjoy it?"]),
+            ("Why there?", "なぜそこ？", "Why would you choose this place to show me?", "なぜこの場所を私に見せたいですか？", ["What would make it meaningful to you?", "What might make me value it too?"]),
+            ("How you found it", "見つけたきっかけ", "How would a visitor find this place?", "旅行者はこの場所をどうやって見つけられますか？", ["Would a local person need to help?", "What should the visitor notice first?"]),
+            ("Who goes with you?", "誰と行く？", "Who would you most want to take there?", "そこへいちばん連れて行きたい人は誰ですか？", ["What might that person enjoy most?", "Who would probably not enjoy it?"]),
             ("What I might miss", "見落としそうなこと", "What would I not understand without your explanation?", "あなたの説明がなければ、私は何を理解できないと思いますか？", ["What should I pay attention to first?", "Is there a local rule I should know?"]),
             ("Turn the trip around", "旅を逆にする", "What kind of place would you want me to show you in my country?", "私の国では、どんな場所を案内してほしいですか？", ["What would you hope to experience there?", "What would you want me to explain?"]),
         ],
@@ -240,8 +240,8 @@ TOPICS = {
         "ko": "깔끔하게 번역되지 않는 말",
         "ja": "ぴったり訳せない言葉",
         "goal": ("Let's explore a word whose meaning or feeling changes in translation.", "訳すと意味や感覚が変わる言葉について話しましょう。"),
-        "opening": ("Have you learned any new English words recently?", "最近、新しい英単語を覚えましたか？"),
-        "opening_followups": ["Where did the word appear?", "What did you first guess it meant?"],
+        "opening": ("Which English word would you like to understand better?", "もっとよく理解したい英単語は何ですか？"),
+        "opening_followups": ["Where might the word appear?", "What do you think it means now?"],
         "warm2": ("Hard to explain", "説明しにくい言葉", "Is there an English word you understand but find hard to explain?", "意味は分かるけれど、説明しにくい英単語はありますか？", ["What situation helps you understand it?", "What part is hardest to put into words?"]),
         "article_title": ("What gets lost between languages", "言語の間で失われるもの"),
         "article": [
@@ -271,7 +271,7 @@ TOPICS = {
         "gloss": {1: ("equivalent", "equivalent", "対応するもの"), 8: ("technically", "technically", "厳密には")},
         "gloss_accessible": {2: ("relationship", "relationship", "関係"), 4: ("formal", "formal", "かたい")},
         "questions": [
-            ("A new word", "新しい言葉", "Can you use that new word in a real sentence?", "その新しい言葉を、実際の文で使えますか？", ["Who might say that sentence?", "What does the surrounding situation tell us?"]),
+            ("A new word", "新しい言葉", "Choose one English word and use it in a real sentence.", "英単語を一つ選び、実際の文で使ってください。", ["Who might say that sentence?", "What does the surrounding situation tell us?"]),
             ("What it really means", "本当の意味", "What does that word actually mean in context?", "その言葉は文脈の中で実際にどういう意味ですか？", ["What example makes the meaning clear?", "What common translation is misleading?"]),
             ("A Japanese example", "日本語の例", "Which Japanese word has no exact English match?", "英語にぴったり合う言葉がない日本語は何ですか？", ["What situation makes you want to use it?", "What English explanation comes closest?"]),
             ("Who you say it to", "誰に言う？", "Who can you naturally use that word with?", "その言葉は誰に自然に使えますか？", ["How would it change with a stranger?", "Would an older person use it differently?"]),

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-accessible/lessons/105-a-decision-worth-revisiting/lesson.html`
-- SHA-256: `07d885e8ca8aa60f6bac5bb8c0d9412792990be659b20672452a846eb70ed60d`
+- SHA-256: `07381d9efae4ac644c216b769bc6741ac9f18fd8d7756f4b852346cdecbed31f`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

@@ -435,8 +435,8 @@ class FreetalkingSmallThingsBatchTests(unittest.TestCase):
                 "完全に疲れ切っている人に、何と伝えますか？",
             ),
             (39, 5): (
-                "In which situation is your stress habit most counterproductive?",
-                "どのような状況で、そのストレス習慣はいちばん役に立たなくなりますか？",
+                "In which situation is your usual coping response most counterproductive?",
+                "いつものストレスへの対処が、いちばん役に立たないのはどんなときですか？",
             ),
             (44, 6): (
                 "What allows a funny story to survive the act of retelling?",
@@ -451,7 +451,7 @@ class FreetalkingSmallThingsBatchTests(unittest.TestCase):
     def test_reviewed_prompt_japanese_is_exact_and_natural(self) -> None:
         expected = {
             (34, 3): "ささいな不満を大げさに聞こえないように伝えるには、どのような言い方がよいですか？",
-            (35, 7): "その事実を、楽しい自己紹介でどのように使いますか？",
+            (35, 7): "自分についての少し変わった事実を、楽しい自己紹介でどう使いますか？",
             (36, 7): "害のない私的な習慣を人に見せないほうがよいのは、どのようなときですか？",
             (39, 3): "人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？",
             (40, 1): "その迷信に従ったり破ったりすると、何が起きるとされていますか？",

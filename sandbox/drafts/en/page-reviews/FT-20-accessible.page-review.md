@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/20-one-thing-you-always-carry/lesson.html`
-- SHA-256: `e71b8bcbf61edcfa7dca4b3b3f4d7b456eb79888b40c871693d58711dd788727`
+- SHA-256: `38171c82b9e46a047abf7d14612bccabe9b7db21eb51c686744d9fa73003d195`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Do you have a bag with you today?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What do you usually bring with you?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Do you have a bag with you today? 今日はかばんを持っていますか？
+- Visible target or prompt: Conversation prompt: “Which everyday item would be most inconvenient to forget?”
 - Learning target: Explore the distinct “A bag today (今日のかばん)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Do you have a bag with you today?” opens this angle; “What do you usually bring with you?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What do you usually bring with you?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Do you have a bag with you today?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Which item would be hardest to go back for?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you have a bag with you today?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which everyday item would be most inconvenient to forget?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -98,7 +98,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “When you go out, what do you usually carry, if anything?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Do you use a bag or your pockets?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When you go out, what do you usually carry, if anything? 外出するとき、持ち歩く物があるなら何ですか？
+- Visible target or prompt: Conversation prompt: “What would you carry for an ordinary day out?”
 - Learning target: Explore the distinct “What you carry (持ち歩く物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “When you go out, what do you usually carry, if anything?” opens this angle; “Do you use a bag or your pockets?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Do you use a bag or your pockets?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -106,8 +106,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When you go out, what do you usually carry, if anything?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What do you sometimes choose not to take?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When you go out, what do you usually carry, if anything?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you carry for an ordinary day out?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -115,7 +115,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “If you use a bag, what kinds of things are usually in it?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What kind takes the most space?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you use a bag, what kinds of things are usually in it? かばんを使うなら、普段どんな物を入れますか？
+- Visible target or prompt: Conversation prompt: “What tends to take up the most space in your bag or pockets?”
 - Learning target: Explore the distinct “What's inside (入っている物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “If you use a bag, what kinds of things are usually in it?” opens this angle; “What kind takes the most space?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What kind takes the most space?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -123,8 +123,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you use a bag, what kinds of things are usually in it?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What do you carry without using very often?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you use a bag, what kinds of things are usually in it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What tends to take up the most space in your bag or pockets?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -149,7 +149,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “If you use a bag, does anything stay there for months without use?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “Why has it stayed there?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you use a bag, does anything stay there for months without use? かばんを使うなら、何か月も使わずに入れたままの物はありますか？
+- Visible target or prompt: Conversation prompt: “Which item are you most likely to carry for months without using?”
 - Learning target: Explore the distinct “There for months (何か月もある物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “If you use a bag, does anything stay there for months without use?” opens this angle; “Why has it stayed there?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “Why has it stayed there?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -157,8 +157,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you use a bag, does anything stay there for months without use?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What would make you finally remove it?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you use a bag, does anything stay there for months without use?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which item are you most likely to carry for months without using?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Has what you carry changed over the past few years?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What did you stop or start carrying?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Has what you carry changed over the past few years? ここ数年で、持ち歩く物は変わりましたか？
+- Visible target or prompt: Conversation prompt: “How have phones changed what people carry?”
 - Learning target: Explore the distinct “How it changed (変わった持ち物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Has what you carry changed over the past few years?” opens this angle; “What did you stop or start carrying?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What did you stop or start carrying?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has what you carry changed over the past few years?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What caused that change?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Has what you carry changed over the past few years?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How have phones changed what people carry?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/03-a-japanese-food-everyone-should-try/lesson.html`
-- SHA-256: `540ff42a8b76549e06b25d5e42c60b96db7d97780ff2d95ef1527dcf22e0f13b`
+- SHA-256: `b95b7d842023fba73fa39cb11d9a2b1a6abc9b2eb6880e7b232588f66b826590`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What food would you make me eat if I came to Japan?
+- Visible target or prompt: Conversation prompt: “What Japanese food would you most want me to try?”
 - Learning target: Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “What food would you make me eat if I came to Japan?” opens this specific angle; “Which food came to mind first?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “Which food came to mind first?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “Have you recommended it to a visitor before?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What food would you make me eat if I came to Japan?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What Japanese food would you most want me to try?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Who do you usually eat it with?
+- Visible target or prompt: Conversation prompt: “Who would you want to eat it with?”
 - Learning target: Develop the distinct “Who shares it (一緒に食べる人)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “Who do you usually eat it with?” opens this specific angle; “What memory do you connect with it?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “What memory do you connect with it?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “Does your family eat it differently?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who do you usually eat it with?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would you want to eat it with?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 

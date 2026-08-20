@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/79-something-you-hated-as-a-child-but-love-now/lesson.html`
-- SHA-256: `4201bfe3082a513e7eb31ef9fd73d9b91ddb927ce4f8227848f1c8b651d1363d`
+- SHA-256: `1e73a7fad878b7bd08dd52196724435801b4718416832262a92435aa4b0088bf`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

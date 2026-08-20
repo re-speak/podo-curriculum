@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/96-what-you-would-do-if-ai-did-your-job/lesson.html`
-- SHA-256: `7d3538b08ff8431056794f4d73712c1611ac1d320f80488f0485cced7f435c3f`
+- SHA-256: `cb707e982d4a4dd73fab4a3a5a60e09cccad232e33163712e715dbf452506bc1`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

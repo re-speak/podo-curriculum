@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/02-what-people-get-wrong-about-japan/lesson.html`
-- SHA-256: `90ee01d44ac42133ca8947ccf42f0427f3f6b41c6df526e670d3a9155d114002`
+- SHA-256: `5373347a3351f43c8d8bec6fd86a73883661c998d59c48abe29851e09fad6c9d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
 - Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: When have you had to revise your view of a place?
+- Visible target or prompt: Conversation prompt: “What evidence should make someone revise their view of a place?”
 - Learning target: Develop the distinct “A changed view (変わった見方)” conversational move with reasons, examples, comparison, or personal experience.
 - Pedagogical value: The prompt “When have you had to revise your view of a place?” opens this specific angle; “What evidence changed your mind?” moves a first answer toward a concrete reason or example.
 - Failure diagnoses: If the answer stays vague after “What evidence changed your mind?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced target frames; “What still seemed true?” gives the tutor a distinct optional branch rather than a repeated script.
 - Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When have you had to revise your view of a place?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What evidence should make someone revise their view of a place?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
 

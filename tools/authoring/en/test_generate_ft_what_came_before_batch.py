@@ -224,7 +224,7 @@ class SourceTests(unittest.TestCase):
         claims = [value for number in batch.TOPIC_NUMBERS for row in batch.TOPICS[number]["articles"] for value in row]
         prompts = [value for number in batch.TOPIC_NUMBERS for item in batch.TOPICS[number]["prompts"] for value in (item["job"], item["title"], item["title_ja"], item["accessible"], item["accessible_ja"], *item["accessible_followups"], item["full"], item["full_ja"], *item["full_followups"], item["safety"])]
         self.assertEqual(hashlib.sha256("\n".join(claims).encode()).hexdigest(), "64103ed6923554d1dce0f6bcda8e7cfb5eed03385250ce3ab88c7239d7b4554c")
-        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "b983e3d59c3f79d9bea47164ed47e2763783d70cbc5bc8a95f604d68011663cb")
+        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "25d6099e3b3be9efe68337e063ceb513c94f005819bca85258b63146ca4a5e4c")
 
 
 if __name__ == "__main__":

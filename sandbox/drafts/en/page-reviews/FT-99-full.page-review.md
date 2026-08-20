@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/99-where-you-imagine-yourself-in-ten-years/lesson.html`
-- SHA-256: `55c32b227d8233436f10be8bbe52b34d90086a64ff386b47d55e1da9ad420282`
+- SHA-256: `b0d3c5ff807317e71c4d42edb738ab5c008ee672ed21a8717f6ae99f0b72d92b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -34,7 +34,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Learning target: Use ten matched claims, from “A ten-year projection expresses a possible life direction rather than a prediction or commitment.” to “A flexible projection can guide choices without trapping the future self inside an outdated plan.,” as optional topic input rather than an in-class reading task.
 - Pedagogical value: Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.
 - Failure diagnoses: No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.
-- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: life direction=人生の方向性.
+- Non-target support: Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: continuity=継続.
 - Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.

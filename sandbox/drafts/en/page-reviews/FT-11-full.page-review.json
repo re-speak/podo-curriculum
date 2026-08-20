@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/11-a-show-you-cant-stop-watching/lesson.html",
-  "lessonSha256": "62afbff5c3c5f45fa97e976f2a2d122c1d649c923a198c22a661b9166aec13eb",
+  "lessonSha256": "b8be8588ccdffef6ee207e299de0700eded33be0695ae0bd9c54d0c7507603d7",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -243,7 +243,7 @@
       "pageId": "q4",
       "learnerAction": "Answer “Have you stopped watching any show halfway?” aloud, then develop whichever detail becomes most interesting.",
       "tutorAction": "React or share briefly, then use “What usually makes you lose interest?” or another relevant probe rather than asking every printed follow-up.",
-      "targetOrPrompt": "Have you stopped watching any show halfway? 途中で見るのをやめた作品はありますか？",
+      "targetOrPrompt": "Conversation prompt: “What usually makes someone stop watching a show halfway?”",
       "learningTarget": "Explore the distinct “A show you dropped (途中でやめた作品)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.",
       "pedagogicalValue": "The answerable main prompt “Have you stopped watching any show halfway?” opens this angle; “What usually makes you lose interest?” can turn a first response into a more specific exchange.",
       "failureDiagnosis": "If the answer remains vague after “What usually makes you lose interest?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
@@ -251,8 +251,8 @@
       "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you stopped watching any show halfway?” but are never required.",
       "choiceQuality": "There are no artificial distractors or forced frames; “What could persuade you to return to a show?” offers a distinct optional direction for a genuine follow-up.",
       "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
-      "visual360": "pass",
-      "visual480": "pass",
+      "visual360": "pending",
+      "visual480": "pending",
       "verdict": "pass",
       "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
       "evidence": {
@@ -261,7 +261,7 @@
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Have you stopped watching any show halfway?"
+          "What usually makes someone stop watching a show halfway?"
         ]
       }
     },

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/17-a-small-win-nobody-noticed/lesson.html`
-- SHA-256: `7657498626d9eec114acdf77fa381649a302a6c2ac77dd35d8d968c7be7f2af6`
+- SHA-256: `da297ea5920783130cd49c762725220b7f872e0b385b17d14ad38c479b6075ab`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you had any small wins this month, whether or not anyone noticed?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What effort did it take?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you had any small wins this month, whether or not anyone noticed? 誰かが気づいたかどうかに関係なく、今月、小さな成功はありましたか？
+- Visible target or prompt: Conversation prompt: “What kind of small win would matter to you even if nobody noticed?”
 - Learning target: Explore the distinct “A quiet win (静かな成功)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you had any small wins this month, whether or not anyone noticed?” opens this angle; “What effort did it take?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What effort did it take?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you had any small wins this month, whether or not anyone noticed?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Why did that win matter to you?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you had any small wins this month, whether or not anyone noticed?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of small win would matter to you even if nobody noticed?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -132,7 +132,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Who, if anyone, understands the effort you put in?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What would you need to explain to others?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Who, if anyone, understands the effort you put in? あなたの努力を分かってくれる人がいるなら、誰ですか？
+- Visible target or prompt: Conversation prompt: “What helps you understand another person's quiet effort?”
 - Learning target: Explore the distinct “Who understands (分かってくれる人)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Who, if anyone, understands the effort you put in?” opens this angle; “What would you need to explain to others?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What would you need to explain to others?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -140,8 +140,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Who, if anyone, understands the effort you put in?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Would sharing it change how you feel?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who, if anyone, understands the effort you put in?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps you understand another person's quiet effort?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -166,7 +166,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “What has been hardest this month, if anything?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What still needs attention?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What has been hardest this month, if anything? 今月、難しかったことがあるなら、何ですか？
+- Visible target or prompt: Conversation prompt: “What would deserve credit if you were having a difficult month?”
 - Learning target: Explore the distinct “What's still difficult (まだ難しいこと)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “What has been hardest this month, if anything?” opens this angle; “What still needs attention?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What still needs attention?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -174,8 +174,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What has been hardest this month, if anything?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What has helped the month go well?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What has been hardest this month, if anything?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would deserve credit if you were having a difficult month?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

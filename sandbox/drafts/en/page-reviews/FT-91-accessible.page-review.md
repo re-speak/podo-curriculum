@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/91-someone-you-would-trade-lives-with-for-a-day/lesson.html`
-- SHA-256: `44068b429c7a89d2ce3d9f98c578707e487cce83d6b16b739afeb4924df6b70a`
+- SHA-256: `5de6eb6111a226754fed8be2eae9bd6f044ddf29714c6e50540ece83f0fc3433`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

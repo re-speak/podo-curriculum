@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-accessible/lessons/104-is-there-a-best-age-to-be/lesson.html`
-- SHA-256: `7e71760117ff7d2a15be0ea73eb72416ed0b9ddc212a30b884fbec9d24997a84`
+- SHA-256: `0aaa4690d61c8196a2aaec404ce0c20330e9c65cfbb3df7cb53d0eae23e8c60e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

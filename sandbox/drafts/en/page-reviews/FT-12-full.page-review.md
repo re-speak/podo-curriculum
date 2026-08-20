@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/12-a-compliment-you-still-remember/lesson.html`
-- SHA-256: `75a637838af10d62b7ce798bc607c3a4a50785d12e384dfbe3efb1c0b41de7ac`
+- SHA-256: `b89c2968990f50146b1e279035632cde2c8299e90c33bed504167f4290e1dc63`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -81,7 +81,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Is there a compliment you still remember?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “When did you hear it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Is there a compliment you still remember? 今も覚えている褒め言葉はありますか？
+- Visible target or prompt: Conversation prompt: “What kind of compliment would stay with you for years?”
 - Learning target: Explore the distinct “A remembered compliment (覚えている褒め言葉)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Is there a compliment you still remember?” opens this angle; “When did you hear it?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “When did you hear it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -89,8 +89,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a compliment you still remember?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “Why has it stayed with you?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there a compliment you still remember?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of compliment would stay with you for years?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 
@@ -183,7 +183,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 - Learner action: Answer “Have you given someone a real compliment recently?” aloud, then develop whichever detail becomes most interesting.
 - Tutor action: React or share briefly, then use “What had the person done?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Have you given someone a real compliment recently? 最近、誰かを心から褒めましたか？
+- Visible target or prompt: Conversation prompt: “What can make you want to give someone a real compliment?”
 - Learning target: Explore the distinct “Praise you gave (自分が伝えた言葉)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
 - Pedagogical value: The answerable main prompt “Have you given someone a real compliment recently?” opens this angle; “What had the person done?” can turn a first response into a more specific exchange.
 - Failure diagnoses: If the answer remains vague after “What had the person done?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
@@ -191,8 +191,8 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you given someone a real compliment recently?” but are never required.
 - Choice/distractor quality: There are no artificial distractors or forced frames; “What made you want to say it?” offers a distinct optional direction for a genuine follow-up.
 - Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Have you given someone a real compliment recently?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make you want to give someone a real compliment?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
 

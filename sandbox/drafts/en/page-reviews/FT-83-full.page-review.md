@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/83-what-you-wanted-to-be-as-a-child/lesson.html`
-- SHA-256: `ff3d5eaea7f91ec810cf1609176fdd25a8081c1f9f143d295494ab1a7ec14a00`
+- SHA-256: `2d4c73290694566beae7c5ee412b5f264c76acfb77d8df374d4d820b81f90aae`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**

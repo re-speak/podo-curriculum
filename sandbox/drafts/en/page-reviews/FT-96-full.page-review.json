@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/96-what-you-would-do-if-ai-did-your-job/lesson.html",
-  "lessonSha256": "4dc2eecbf4df248985760c9710afcda0efef65f4e6b4ff95f04a9dba8d11a87e",
+  "lessonSha256": "5c5571633b491633e98c41c1b9ecb152b7803813afe893eda74f07c920ef77a5",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -45,7 +45,7 @@
       "learningTarget": "Use ten matched claims, from “The thought experiment keeps resources stable while AI performs routine tasks, creating time without an immediate financial penalty.” to “The scenario distinguishes the tasks a role contains from the human needs the role happens to meet.,” as optional topic input rather than an in-class reading task.",
       "pedagogicalValue": "Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.",
       "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
-      "nonTargetSupport": "Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: work identity=仕事を通じた自己認識.",
+      "nonTargetSupport": "Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: unstructured=予定のない.",
       "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
       "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
       "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",

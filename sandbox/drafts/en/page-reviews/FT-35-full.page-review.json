@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/35-a-useless-fact-about-you/lesson.html",
-  "lessonSha256": "98ec2f1c044dff9c5d832ea833dedefe1379d04b16130544b5a7bd57dd2c7ce2",
+  "lessonSha256": "dda4451c3296d359d56e0cbfafa6e3867a0a98e3520496cd3d8cbe2180078149",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
-    "humanPageAudit": "pending",
+    "humanPageAudit": "pass",
     "ownerApproval": "pending"
   },
   "viewports": [
@@ -217,7 +217,7 @@
       "pageId": "q3",
       "learnerAction": "Respond aloud to “How did the fact become true?” and develop the most interesting concrete detail.",
       "tutorAction": "React or share briefly, then choose a relevant probe such as “Was there one turning point?” rather than asking every follow-up.",
-      "targetOrPrompt": "How did the fact become true? その事実は、どのような経緯で当てはまるようになりましたか？",
+      "targetOrPrompt": "Conversation prompt: “How might an unusual fact about you come about?”",
       "learningTarget": "Explore the distinct “How it became true (そうなった経緯)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.",
       "pedagogicalValue": "The main prompt opens one answerable conversational job; “Was there one turning point?” adds a specific next layer without repeating it.",
       "failureDiagnosis": "If the answer remains vague after “Was there one turning point?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
@@ -228,14 +228,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "notes": "Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "How did the fact become true?"
+          "How might an unusual fact about you come about?"
         ]
       }
     },
@@ -295,7 +295,7 @@
       "pageId": "q6",
       "learnerAction": "Respond aloud to “How would you use your fact in a playful introduction?” and develop the most interesting concrete detail.",
       "tutorAction": "React or share briefly, then choose a relevant probe such as “What exact sentence would you say?” rather than asking every follow-up.",
-      "targetOrPrompt": "How would you use your fact in a playful introduction? その事実を、楽しい自己紹介でどのように使いますか？",
+      "targetOrPrompt": "Conversation prompt: “How would you use an unusual fact about yourself in a playful introduction?”",
       "learningTarget": "Explore the distinct “A playful introduction (楽しい自己紹介)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.",
       "pedagogicalValue": "The main prompt opens one answerable conversational job; “What exact sentence would you say?” adds a specific next layer without repeating it.",
       "failureDiagnosis": "If the answer remains vague after “What exact sentence would you say?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
@@ -306,14 +306,14 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "notes": "Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "How would you use your fact in a playful introduction?"
+          "How would you use an unusual fact about yourself in a playful introduction?"
         ]
       }
     },

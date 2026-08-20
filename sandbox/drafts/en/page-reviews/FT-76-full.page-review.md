@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/76-advice-you-kept-hearing-as-a-child/lesson.html`
-- SHA-256: `342fcc5fe6ca03c37bd93b2a197b4c5a02b437dadf731d54dacbdde4c5a22ce0`
+- SHA-256: `e7ef083ca9e7035b94c1c82c14f2805fee28323ee397050db01c057d4eab8120`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
