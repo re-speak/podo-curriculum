@@ -364,7 +364,9 @@ def markdown(review: dict[str, Any]) -> str:
                 "",
             ]
         )
-    return "\n".join(lines).rstrip() + "\n"
+    # Extracted HTML text can legitimately end with whitespace after optional
+    # spans.  Keep that implementation detail out of the human-facing ledger.
+    return "\n".join(line.rstrip() for line in lines).rstrip() + "\n"
 
 
 def write_json(path: pathlib.Path, data: dict[str, Any]) -> None:

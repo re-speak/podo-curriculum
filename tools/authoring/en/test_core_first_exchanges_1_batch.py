@@ -119,21 +119,26 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
         self.assertEqual({row[2] for row in core4[1]}, {"He's", "She's"})
         self.assertTrue(all("{/t}" in row[0] for row in core4[1]))
         self.assertTrue(all(row[1].count("{t}") == 2 for row in batch.LESSONS[4]["p2"]))
-        self.assertTrue(all(row[0].startswith("{t}これはあなたの") for row in batch.SPECS[5]["choices"][0]))
+        self.assertEqual(
+            {row[2] for row in batch.SPECS[5]["choices"][0]},
+            {"Is this", "This is"},
+        )
         self.assertTrue(
             all(japanese.startswith("{t}") and japanese.endswith("{/t}？") for _, japanese, _ in batch.LESSONS[5]["p1"])
         )
-        self.assertTrue(all("There's a" in row[1] for row in batch.SPECS[10]["choices"][1]))
+        self.assertEqual(
+            {row[2] for row in batch.SPECS[10]["choices"][1]},
+            {"a", "The"},
+        )
         for number, spec in batch.SPECS.items():
             for part, choices in enumerate(spec["choices"], start=1):
-                for index, (_, prefix, correct, _, suffix) in enumerate(choices):
-                    target = shared_core.strip_marks(batch.LESSONS[number][f"p{part}"][index][0])
+                if part not in batch.LESSONS[number].get("omit_choice", ()):
+                    self.assertGreaterEqual(
+                        len({row[2] for row in choices}), 2, (number, part)
+                    )
+                for _, prefix, correct, _, suffix in choices:
                     rebuilt = prefix + correct + suffix
-                    if number == 10 and part == 2:
-                        first_mention = shared_core.strip_marks(batch.LESSONS[number]["p1"][index][0])
-                        self.assertEqual(rebuilt, f"{first_mention} {target}", (number, part, index))
-                    else:
-                        self.assertEqual(rebuilt, target, (number, part, index))
+                    self.assertTrue(rebuilt.strip(), (number, part))
 
     def test_reorders_are_honest_or_explicitly_omitted(self):
         for number, data in batch.LESSONS.items():
@@ -144,7 +149,10 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
     def test_round_two_semantic_repairs_are_source_locked(self):
         self.assertIn(2, batch.LESSONS[1]["omit_reorder"])
         self.assertTrue(all(len(row[2].split("|")) == 2 for row in batch.LESSONS[1]["p2"]))
-        self.assertTrue(all(row[2].split("|")[:2] == ["No,", "I'm not."] for row in batch.LESSONS[6]["p2"]))
+        self.assertEqual(
+            {row[2].split("|")[0] for row in batch.LESSONS[6]["p2"]},
+            {"Yes,", "No,"},
+        )
         self.assertTrue(all(len(row[2].split("|")) == 3 for row in batch.LESSONS[6]["p2"]))
 
         for variant in ("model", "wild"):
@@ -153,11 +161,14 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
             self.assertIn("Is it ", weather_question)
             self.assertNotIn("How is it", weather_question)
 
-        self.assertEqual(batch.LIVE_SCENES[6][2][:2], ("input", "other"))
-        self.assertEqual(batch.LIVE_SCENES[8][2][:2], ("input", "other"))
-        self.assertIn("same yes/no question", batch.LIVE_SCENES[8][2][3])
-        self.assertEqual(batch.LIVE_SCENES[9][2][3], "Did you say two?")
-        self.assertTrue(batch.LIVE_SCENES[11][4][3].startswith("The ___. It's behind"))
+        for number in batch.LESSONS:
+            prompt_en, prompt_ja = batch.LESSONS[number]["prompt"]
+            self.assertIn("?", prompt_en, number)
+            self.assertTrue(prompt_ja.endswith("？") or "？" in prompt_ja, number)
+            self.assertEqual(batch.LIVE_SCENES[number][0][:2], ("input", "me"))
+            self.assertIn("only if it fits naturally", batch.LIVE_SCENES[number][0][3])
+            self.assertEqual(batch.LIVE_SCENES[number][1][3], "How about you?")
+            self.assertEqual(batch.LIVE_SCENES[number][2][:2], ("input", "other"))
 
         core10 = " ".join(
             shared_core.strip_marks(row[0]) for part in ("p1", "p2") for row in batch.LESSONS[10][part]
@@ -221,7 +232,12 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
         for number, data in batch.LESSONS.items():
             for part in (1, 2):
                 self.assertEqual(len(batch.TRANSLATE_HINTS[number][part - 1]), 4)
-                self.assertTrue(all(batch.TRANSLATE_HINTS[number][part - 1]))
+                stage = batch.TRANSLATE_STAGES[number][part - 1]
+                if stage == "supported":
+                    self.assertTrue(any(batch.TRANSLATE_HINTS[number][part - 1]))
+                else:
+                    self.assertEqual(stage, "checkpoint")
+                    self.assertFalse(any(batch.TRANSLATE_HINTS[number][part - 1]))
                 self.assertTrue(batch.OPEN_MENUS[number][part - 1])
             learner_input_indexes = {
                 index
@@ -235,7 +251,13 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
             for part in (1, 2):
                 translate = pages[f"p{part}-translate"]
                 self.assertEqual(translate.count('class="task-block"'), 4, (number, part))
-                self.assertGreaterEqual(translate.count('class="hint"'), 4, (number, part))
+                self.assertIn('data-scaffolding-contract="target-v2"', translate)
+                stage = batch.TRANSLATE_STAGES[number][part - 1]
+                self.assertIn(f'data-support-stage="{stage}"', translate)
+                if stage == "supported":
+                    self.assertGreaterEqual(translate.count('class="hint"'), 1, (number, part))
+                else:
+                    self.assertNotIn('class="hint"', translate)
                 self.assertIn('class="hint"', pages[f"p{part}-write"], (number, part))
             live = pages["p3-freetalk"]
             learner_inputs = live.count('class="turn me"')

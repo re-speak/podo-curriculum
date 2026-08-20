@@ -151,6 +151,12 @@ class PageReviewTest(unittest.TestCase):
         owner_errors = page_review.validate(self.lesson, self.review_path, require_owner=True)
         self.assertEqual(owner_errors, ["stages.ownerApproval must be pass for owner-approved status"])
 
+    def test_markdown_strips_trailing_whitespace_from_extracted_text(self) -> None:
+        review = self.completed_review()
+        review["pages"][0]["targetOrPrompt"] = "A visible target. "
+        rendered = page_review.markdown(review)
+        self.assertFalse(any(line.endswith(" ") for line in rendered.splitlines()))
+
     def test_changed_lesson_invalidates_review(self) -> None:
         self.completed_review()
         self.lesson.write_text(

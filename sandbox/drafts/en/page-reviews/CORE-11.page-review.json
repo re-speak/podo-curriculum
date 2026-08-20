@@ -1,0 +1,729 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-1/lessons/11-wheres-the-station/lesson.html",
+  "lessonSha256": "8fed5b8c288295f9deda9d7613c57b39a20b4e6e2dfd35f88935f6708077aa5c",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do: Where's the station? (駅はどこですか？): Ask where a place is and describe its location. Please read the title aloud. 場所をたずねて、その位置を説明しましょう。タイトルを声に出して読んでください。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Have the learner read the title once, then move on.",
+      "targetOrPrompt": "Where's the station? (駅はどこですか？): Ask where a place is and describe its location. Please read the title aloud. 場所をたずねて、その位置を説明しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Goal control of the exact lesson language: Where's the station? (駅はどこですか？): Ask where a place is and describe its location. Please read the title aloud. 場所をたずねて、その位置を説明しましょう。タイトルを声に出して読んでください。",
+      "pedagogicalValue": "This establishes a concrete can-do and an immediate learner read-aloud without duplicating later examples. Focus: Where's the station? (駅はどこですか？): Ask where a place is and describe its location. Please read the title aloud. 場所をたずねて、その",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: lesson-goal",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "This orientation page previews the lesson's noun phrases but does not test an article decision.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The goal uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say each familiar loanword in English before new instruction begins: Words you know (知っている単語): Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Words you know (知っている単語): Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
+      "targetOrPrompt": "Words you know (知っている単語): Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
+      "learningTarget": "Known words control of the exact lesson language: Words you know (知っている単語): Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
+      "pedagogicalValue": "This activates genuinely familiar English so later target work starts from available vocabulary. Focus: Words you know (知っている単語): Say the three familiar words in English. 知っている3つの単語を英語で言いましょう。",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: words-you-know",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "This orientation page previews the lesson's noun phrases but does not test an article decision.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The known words uses the shared component vocabulary with one clear job: single lesson card; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the new pattern title aloud once and connect it to its stated use: Where's the station?: Use this to ask for the location of one specific place. Please read the title aloud. 特定の場所の位置をたずねるときに使います。タイトルを声に出して読んでください。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Have the learner read the title once, then move on.",
+      "targetOrPrompt": "Where's the station?: Use this to ask for the location of one specific place. Please read the title aloud. 特定の場所の位置をたずねるときに使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Transition control of the exact lesson language: Where's the station?: Use this to ask for the location of one specific place. Please read the title aloud. 特定の場所の位置をたずねるときに使います。タイトルを声に出して読んでください。",
+      "pedagogicalValue": "This separates the next target and its communicative use without adding a redundant drill. Focus: Where's the station?: Use this to ask for the location of one specific place. Please read the title aloud. 特定の場所の位置をたずねる",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: part1-intro",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "This orientation page previews the lesson's noun phrases but does not test an article decision.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The transition uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation: Today's pattern (今日のパターン): Meaning & use 意味・使い方 Use this to ask for the location of one specific place. 特定の場所の位置をたずねるときに使います。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Briefly explain the meaning, then have the learner read each example aloud.",
+      "targetOrPrompt": "Today's pattern (今日のパターン): Highlighted target evidence: Where's the | 駅はどこですか | Where's the | 銀行はどこですか | Where's the | ホテルはどこですか. Visible instruction: Meaning & use 意味・使い方 Use this to ask for the location of one specific place. 特定の場所の位置をたずねるときに使います。",
+      "learningTarget": "Teaching examples control of the exact lesson language: Where's the, 駅はどこですか, Where's the, 銀行はどこですか, Where's the, ホテルはどこですか",
+      "pedagogicalValue": "Complete examples establish meaning and sound before any words are removed. Focus: Where's the, 駅はどこですか, Where's the, 銀行はどこですか, Where's the, ホテルはどこですか",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: Where's the, 駅はどこですか, Where's the, 銀行はどこですか, Where's the, ホテルはどこですか",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The teaching examples uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "Where's the",
+          "駅はどこですか",
+          "Where's the",
+          "銀行はどこですか",
+          "Where's the",
+          "ホテルはどこですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read each complete model sentence aloud, preserving the visible target chunk: Read the sentences (文を読もう): Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Read the sentences (文を読もう): Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "targetOrPrompt": "Read the sentences (文を読もう): Highlighted target evidence: Where's the | 駅はどこですか | Where's the | 銀行はどこですか | Where's the | ホテルはどこですか | Where's the | カフェはどこですか. Visible instruction: Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "learningTarget": "Read-aloud control of the exact lesson language: Where's the, 駅はどこですか, Where's the, 銀行はどこですか, Where's the, ホテルはどこですか, Where's the, カフェはどこですか",
+      "pedagogicalValue": "Repeated complete sentences build oral familiarity while meaning remains visible. Focus: Where's the, 駅はどこですか, Where's the, 銀行はどこですか, Where's the, ホテルはどこですか, Where's the, カフェはどこですか",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: Where's the, 駅はどこですか, Where's the, 銀行はどこですか, Where's the, ホテルはどこですか, Where's the, カフェはどこですか",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The read-aloud uses the shared component vocabulary with one clear job: single lesson card; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "Where's the",
+          "駅はどこですか",
+          "Where's the",
+          "銀行はどこですか",
+          "Where's the",
+          "ホテルはどこですか",
+          "Where's the",
+          "カフェはどこですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how the target form is assembled and check it in the displayed examples: Ask with Where's the (Where's the で場所を聞く): Keep Where's together, then add the specific place with the. Where's をひとまとまりにして、the をつけた場所を続けます。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Ask with Where's the (Where's the で場所を聞く): Keep Where's together, then add the specific place with the. Where's をひとまとまりにして、the をつけた場所を続けます。",
+      "targetOrPrompt": "Ask with Where's the (Where's the で場所を聞く): Keep Where's together, then add the specific place with the. Where's をひとまとまりにして、the をつけた場所を続けます。",
+      "learningTarget": "Form explanation control of the exact lesson language: Ask with Where's the (Where's the で場所を聞く): Keep Where's together, then add the specific place with the. Where's をひとまとまりにして、the をつけた場所を続けます。",
+      "pedagogicalValue": "The concise rule makes the form boundary explicit before controlled production. Focus: Ask with Where's the (Where's the で場所を聞く): Keep Where's together, then add the specific place with the. Where's をひとまとまりに",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: p1-rule",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The form explanation uses the shared component vocabulary with one clear job: single lesson card; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the form that fits each Japanese cue, then read the whole completed sentence aloud: Choose the pattern (パターンを選ぼう): Choose the answer that matches the Japanese, then read the complete sentence aloud. 日本語に合う答えを選び、完成した文を声に出して読んでください。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: After each choice, have the learner read the entire completed sentence before moving on.",
+      "targetOrPrompt": "Exact choice contrasts:  => Where's / What's;  => Where's / What's;  => Where's / What's;  => What's / Where's",
+      "learningTarget": "Meaningful choice control of the exact lesson language: 駅はどこですか, お名前は何ですか, ホテルはどこですか, カフェはどこですか",
+      "pedagogicalValue": "Contrasting branches require a real form or meaning decision before full-sentence production. Focus: 駅はどこですか, お名前は何ですか, ホテルはどこですか, カフェはどこですか",
+      "failureDiagnosis": "Failure distinguishes confusion between the displayed branches; absurd distractors or one fixed correct position would not. Checked focus: 駅はどこですか, お名前は何ですか, ホテルはどこですか, カフェはどこですか",
+      "nonTargetSupport": "Non-target wording stays visible or selectable; only the intended form decision must be supplied by the learner.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "Each row contrasts plausible lesson forms, and correct branches vary across the page. Visible option sample: Where's | What's | Where's | What's | Where's | What's",
+      "componentConsistency": "The meaningful choice uses the shared component vocabulary with one clear job: tutor-only note, choice list; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "駅はどこですか",
+          "お名前は何ですか",
+          "ホテルはどこですか",
+          "カフェはどこですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence aloud including the missing target words: Say the complete sentence (文をまるごと言おう): Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "tutorAction": "Listen first, then capture exactly the requested learner production; follow the page instruction: Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Visible sentence cues: 駅はどこですか ？ | 銀行はどこですか ？ | ホテルはどこですか ？ | カフェはどこですか ？ Missing target answers: Where's the | Where's the | Where's the | Where's the",
+      "learningTarget": "Spoken completion control of the exact lesson language: Where's the, Where's the, Where's the, Where's the",
+      "pedagogicalValue": "The learner must retrieve the target while the rest of the sentence remains stable. Focus: Where's the, Where's the, Where's the, Where's the",
+      "failureDiagnosis": "Failure diagnoses retrieval of the missing target rather than typing skill because the learner speaks and the tutor captures it. Checked focus: Where's the, Where's the, Where's the, Where's the",
+      "nonTargetSupport": "Non-target wording stays visible or selectable; only the intended form decision must be supplied by the learner.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The spoken completion uses the shared component vocabulary with one clear job: blue tutor script, tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "駅はどこですか",
+          "銀行はどこですか",
+          "ホテルはどこですか",
+          "カフェはどこですか"
+        ],
+        "blankAnswers": [
+          "Where's the",
+          "Where's the",
+          "Where's the",
+          "Where's the"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Use the displayed Japanese cue to say one complete English sentence aloud: Say it in English (英語にしよう): Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "tutorAction": "Listen first, then capture exactly the requested learner production; follow the page instruction: Type the learner's complete English sentence exactly as they say it.",
+      "targetOrPrompt": "Japanese-to-English answers: Where's the station? | Where's the bank? | Where's the hotel? | Where's the café?. Support stage: supported; lexical hints: 駅:station, 銀行:bank, ホテル:hotel, カフェ:café.",
+      "learningTarget": "Japanese-to-english transfer control of the exact lesson language: Where's the station?, Where's the bank?, Where's the hotel?, Where's the café?",
+      "pedagogicalValue": "The Japanese cue requires independent English assembly with support matched to the declared stage. Focus: Where's the station?, Where's the bank?, Where's the hotel?, Where's the café?",
+      "failureDiagnosis": "Failure diagnoses independent target assembly; unsupported non-target vocabulary would confound that diagnosis. Checked focus: Where's the station?, Where's the bank?, Where's the hotel?, Where's the café?",
+      "nonTargetSupport": "Supported transfer supplies useful lexical chips (駅:station, 銀行:bank, ホテル:hotel, カフェ:café) while leaving the target for recall.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The Japanese-to-English transfer uses the shared component vocabulary with one clear job: blue tutor script, tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Where's the station?",
+          "Where's the bank?",
+          "Where's the hotel?",
+          "Where's the café?"
+        ],
+        "hintChips": [
+          "駅:station",
+          "銀行:bank",
+          "ホテル:hotel",
+          "カフェ:café"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Make and say one personally true sentence with the named pattern: Make it yours (自分の文にしよう): Now use “Where's the ___?” to ask where one real place is. では、「Where's the ___?」を使って、実際の場所を一つ聞いてください。",
+      "tutorAction": "Listen first, then capture exactly the requested learner production; follow the page instruction: Let the learner answer aloud before you capture it. React first, then add only a useful correction.",
+      "targetOrPrompt": "Open-production instruction and named frame: Now use “Where's the ___?” to ask where one real place is. では、「Where's the ___?」を使って、実際の場所を一つ聞いてください。",
+      "learningTarget": "Personal production control of the exact lesson language: Make it yours (自分の文にしよう): Now use “Where's the ___?” to ask where one real place is. では、「Where's the ___?」を使って、実際の場所を一つ聞いてください。",
+      "pedagogicalValue": "The learner moves from supplied examples to a true sentence of their own. Focus: Make it yours (自分の文にしよう): Now use “Where's the ___?” to ask where one real place is. では、「Where's the ___?」を使って、実際の場所を一つ聞",
+      "failureDiagnosis": "Failure shows whether the learner can adapt the frame to a true message, while optional correction protects fluency. Checked focus: p1-write",
+      "nonTargetSupport": "The bilingual prompt and visible pattern frame support the task without prescribing the learner's personal content: Make it yours (自分の文にしよう): Now use “Where's the ___?” to ask where one real place is. では、「Where's the ___?」を使って、実際の場所を一つ聞",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The personal production uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "駅:station",
+          "銀行:bank",
+          "ホテル:hotel"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Where's the ___?” to ask where one real place is."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the new pattern title aloud once and connect it to its stated use: It's behind the post office.: Use this to locate the place behind a clear landmark. Please read the title aloud. 分かりやすい目印の後ろにあると説明するときに使います。タイトルを声に出して読んでください。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Have the learner read the title once, then move on.",
+      "targetOrPrompt": "It's behind the post office.: Use this to locate the place behind a clear landmark. Please read the title aloud. 分かりやすい目印の後ろにあると説明するときに使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Transition control of the exact lesson language: It's behind the post office.: Use this to locate the place behind a clear landmark. Please read the title aloud. 分かりやすい目印の後ろにあると説明するときに使います。タイトルを声に出して読んでください。",
+      "pedagogicalValue": "This separates the next target and its communicative use without adding a redundant drill. Focus: It's behind the post office.: Use this to locate the place behind a clear landmark. Please read the title aloud. 分かりやすい目",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: part2-intro",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "This orientation page previews the lesson's noun phrases but does not test an article decision.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The transition uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation: Today's pattern (今日のパターン): Meaning & use 意味・使い方 Use this to locate the place behind a clear landmark. 分かりやすい目印の後ろにあると説明するときに使います。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Briefly explain the meaning, then have the learner read each example aloud.",
+      "targetOrPrompt": "Today's pattern (今日のパターン): Highlighted target evidence: It's behind | 郵便局の後ろです | It's behind | 銀行の後ろです | It's behind | ホテルの後ろです. Visible instruction: Meaning & use 意味・使い方 Use this to locate the place behind a clear landmark. 分かりやすい目印の後ろにあると説明するときに使います。",
+      "learningTarget": "Teaching examples control of the exact lesson language: It's behind, 郵便局の後ろです, It's behind, 銀行の後ろです, It's behind, ホテルの後ろです",
+      "pedagogicalValue": "Complete examples establish meaning and sound before any words are removed. Focus: It's behind, 郵便局の後ろです, It's behind, 銀行の後ろです, It's behind, ホテルの後ろです",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: It's behind, 郵便局の後ろです, It's behind, 銀行の後ろです, It's behind, ホテルの後ろです",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The teaching examples uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "It's behind",
+          "郵便局の後ろです",
+          "It's behind",
+          "銀行の後ろです",
+          "It's behind",
+          "ホテルの後ろです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read each complete model sentence aloud, preserving the visible target chunk: Read the sentences (文を読もう): Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Read the sentences (文を読もう): Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "targetOrPrompt": "Read the sentences (文を読もう): Highlighted target evidence: It's behind | 郵便局の後ろです | It's behind | 銀行の後ろです | It's behind | ホテルの後ろです | It's behind | カフェの後ろです. Visible instruction: Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "learningTarget": "Read-aloud control of the exact lesson language: It's behind, 郵便局の後ろです, It's behind, 銀行の後ろです, It's behind, ホテルの後ろです, It's behind, カフェの後ろです",
+      "pedagogicalValue": "Repeated complete sentences build oral familiarity while meaning remains visible. Focus: It's behind, 郵便局の後ろです, It's behind, 銀行の後ろです, It's behind, ホテルの後ろです, It's behind, カフェの後ろです",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: It's behind, 郵便局の後ろです, It's behind, 銀行の後ろです, It's behind, ホテルの後ろです, It's behind, カフェの後ろです",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The read-aloud uses the shared component vocabulary with one clear job: single lesson card; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "It's behind",
+          "郵便局の後ろです",
+          "It's behind",
+          "銀行の後ろです",
+          "It's behind",
+          "ホテルの後ろです",
+          "It's behind",
+          "カフェの後ろです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how the target form is assembled and check it in the displayed examples: Store the full place phrase (場所の表現をまとめて覚える): Keep the place phrase together: behind the post office. 場所の表現は behind the post office のようにひとまとまりで覚えます。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Store the full place phrase (場所の表現をまとめて覚える): Keep the place phrase together: behind the post office. 場所の表現は behind the post office のようにひとまとまりで覚えます。",
+      "targetOrPrompt": "Store the full place phrase (場所の表現をまとめて覚える): Keep the place phrase together: behind the post office. 場所の表現は behind the post office のようにひとまとまりで覚えます。",
+      "learningTarget": "Form explanation control of the exact lesson language: Store the full place phrase (場所の表現をまとめて覚える): Keep the place phrase together: behind the post office. 場所の表現は behind the post office のようにひとまとまりで覚えます。",
+      "pedagogicalValue": "The concise rule makes the form boundary explicit before controlled production. Focus: Store the full place phrase (場所の表現をまとめて覚える): Keep the place phrase together: behind the post office. 場所の表現は behind the p",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: p2-rule",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The form explanation uses the shared component vocabulary with one clear job: single lesson card; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the form that fits each Japanese cue, then read the whole completed sentence aloud: Choose the pattern (パターンを選ぼう): Choose the answer that matches the Japanese, then read the complete sentence aloud. 日本語に合う答えを選び、完成した文を声に出して読んでください。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: After each choice, have the learner read the entire completed sentence before moving on.",
+      "targetOrPrompt": "Exact choice contrasts:  => behind / next to;  => behind / next to;  => behind / next to;  => behind / next to",
+      "learningTarget": "Meaningful choice control of the exact lesson language: 後ろです, 隣です, 後ろです, 隣です",
+      "pedagogicalValue": "Contrasting branches require a real form or meaning decision before full-sentence production. Focus: 後ろです, 隣です, 後ろです, 隣です",
+      "failureDiagnosis": "Failure distinguishes confusion between the displayed branches; absurd distractors or one fixed correct position would not. Checked focus: 後ろです, 隣です, 後ろです, 隣です",
+      "nonTargetSupport": "Non-target wording stays visible or selectable; only the intended form decision must be supplied by the learner.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "Each row contrasts plausible lesson forms, and correct branches vary across the page. Visible option sample: behind | next to | behind | next to | behind | next to",
+      "componentConsistency": "The meaningful choice uses the shared component vocabulary with one clear job: tutor-only note, choice list; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "後ろです",
+          "隣です",
+          "後ろです",
+          "隣です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Arrange all chips into a complete sentence, then say that sentence aloud: Build the sentence (文を組み立てよう): Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Build the sentence (文を組み立てよう): Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "targetOrPrompt": "Complete sentence order targets: ",
+      "learningTarget": "Sentence ordering control of the exact lesson language: Build the sentence (文を組み立てよう): Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "pedagogicalValue": "Reordering checks English sequence while keeping every needed word available. Focus: Build the sentence (文を組み立てよう): Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみまし",
+      "failureDiagnosis": "Failure diagnoses word-order control because all required words are available and no extra chip supplies a guessing shortcut. Checked focus: p2-reorder",
+      "nonTargetSupport": "Non-target wording stays visible or selectable; only the intended form decision must be supplied by the learner.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "Every chip contributes to a grammatical sentence; the task tests sequence rather than rejecting irrelevant vocabulary. Chips include: ",
+      "componentConsistency": "The sentence ordering uses the shared component vocabulary with one clear job: blue tutor script; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence aloud including the missing target words: Say the complete sentence (文をまるごと言おう): Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "tutorAction": "Listen first, then capture exactly the requested learner production; follow the page instruction: Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Visible sentence cues: 郵便局の後ろです 。 | 銀行の後ろです 。 | ホテルの後ろです 。 | カフェの後ろです 。 Missing target answers: It's behind | It's behind | It's behind | It's behind",
+      "learningTarget": "Spoken completion control of the exact lesson language: It's behind, It's behind, It's behind, It's behind",
+      "pedagogicalValue": "The learner must retrieve the target while the rest of the sentence remains stable. Focus: It's behind, It's behind, It's behind, It's behind",
+      "failureDiagnosis": "Failure diagnoses retrieval of the missing target rather than typing skill because the learner speaks and the tutor captures it. Checked focus: It's behind, It's behind, It's behind, It's behind",
+      "nonTargetSupport": "Non-target wording stays visible or selectable; only the intended form decision must be supplied by the learner.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The spoken completion uses the shared component vocabulary with one clear job: blue tutor script, tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "郵便局の後ろです",
+          "銀行の後ろです",
+          "ホテルの後ろです",
+          "カフェの後ろです"
+        ],
+        "blankAnswers": [
+          "It's behind",
+          "It's behind",
+          "It's behind",
+          "It's behind"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Use the displayed Japanese cue to say one complete English sentence aloud: Say it in English (英語にしよう): Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "tutorAction": "Listen first, then capture exactly the requested learner production; follow the page instruction: Type the learner's complete English sentence exactly as they say it.",
+      "targetOrPrompt": "Japanese-to-English answers: It's behind the post office. | It's behind the bank. | It's behind the hotel. | It's behind the café.. Support stage: supported; lexical hints: 郵便局:post office, 銀行:bank, ホテル:hotel, カフェ:café.",
+      "learningTarget": "Japanese-to-english transfer control of the exact lesson language: It's behind the post office., It's behind the bank., It's behind the hotel., It's behind the café.",
+      "pedagogicalValue": "The Japanese cue requires independent English assembly with support matched to the declared stage. Focus: It's behind the post office., It's behind the bank., It's behind the hotel., It's behind the café.",
+      "failureDiagnosis": "Failure diagnoses independent target assembly; unsupported non-target vocabulary would confound that diagnosis. Checked focus: It's behind the post office., It's behind the bank., It's behind the hotel., It's behind the café.",
+      "nonTargetSupport": "Supported transfer supplies useful lexical chips (郵便局:post office, 銀行:bank, ホテル:hotel, カフェ:café) while leaving the target for recall.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The Japanese-to-English transfer uses the shared component vocabulary with one clear job: blue tutor script, tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "It's behind the post office.",
+          "It's behind the bank.",
+          "It's behind the hotel.",
+          "It's behind the café."
+        ],
+        "hintChips": [
+          "郵便局:post office",
+          "銀行:bank",
+          "ホテル:hotel",
+          "カフェ:café"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Make and say one personally true sentence with the named pattern: Make it yours (自分の文にしよう): Now use “It's behind/next to ___.” to describe one real location. では、「It's behind/next to ___.」を使って、実際の場所の位置を説明してください。",
+      "tutorAction": "Listen first, then capture exactly the requested learner production; follow the page instruction: Let the learner answer aloud before you capture it. React first, then add only a useful correction.",
+      "targetOrPrompt": "Open-production instruction and named frame: Now use “It's behind/next to ___.” to describe one real location. では、「It's behind/next to ___.」を使って、実際の場所の位置を説明してください。",
+      "learningTarget": "Personal production control of the exact lesson language: Make it yours (自分の文にしよう): Now use “It's behind/next to ___.” to describe one real location. では、「It's behind/next to ___.」を使って、実際の場所の位置を説明してください。",
+      "pedagogicalValue": "The learner moves from supplied examples to a true sentence of their own. Focus: Make it yours (自分の文にしよう): Now use “It's behind/next to ___.” to describe one real location. では、「It's behind/next to ___.",
+      "failureDiagnosis": "Failure shows whether the learner can adapt the frame to a true message, while optional correction protects fluency. Checked focus: p2-write",
+      "nonTargetSupport": "The bilingual prompt and visible pattern frame support the task without prescribing the learner's personal content: Make it yours (自分の文にしよう): Now use “It's behind/next to ___.” to describe one real location. では、「It's behind/next to ___.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The personal production uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "郵便局:post office",
+          "銀行:bank",
+          "ホテル:hotel"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “It's behind/next to ___.” to describe one real location."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the new pattern title aloud once and connect it to its stated use: Use it in a conversation (会話で使おう): Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Introduce the conversation, then move on.",
+      "targetOrPrompt": "Use it in a conversation (会話で使おう): Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
+      "learningTarget": "Transition control of the exact lesson language: Use it in a conversation (会話で使おう): Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
+      "pedagogicalValue": "This separates the next target and its communicative use without adding a redundant drill. Focus: Use it in a conversation (会話で使おう): Now, let's use both patterns in a conversation. では、二つのパターンを会話で使ってみましょう。",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: part3-intro",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "This orientation page previews the lesson's noun phrases but does not test an article decision.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The transition uses the shared component vocabulary with one clear job: tutor-only note; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Take the learner role and read only those turns while the tutor plays the partner: Read the conversation (会話を読もう): I'll be the travel partner. Please read the Me lines aloud. 私は相手役をします。Me のセリフを声に出して読んでください。",
+      "tutorAction": "Take the named counterpart role and respond at the indicated turns; follow: Read the conversation (会話を読もう): I'll be the travel partner. Please read the Me lines aloud. 私は相手役をします。Me のセリフを声に出して読んでください。",
+      "targetOrPrompt": "Read the conversation (会話を読もう): Highlighted target evidence: Where's the | 駅はどこですか | It's behind | 銀行の後ろです. Visible instruction: I'll be the travel partner. Please read the Me lines aloud. 私は相手役をします。Me のセリフを声に出して読んでください。",
+      "learningTarget": "Guided role-play control of the exact lesson language: Where's the, 駅はどこですか, It's behind, 銀行の後ろです",
+      "pedagogicalValue": "Turn ownership and a resolved exchange put both targets into communicative sequence. Focus: Where's the, 駅はどこですか, It's behind, 銀行の後ろです",
+      "failureDiagnosis": "Failure reveals turn or target control in context; tutor modelling the learner's lines first would erase that evidence. Checked focus: Where's the, 駅はどこですか, It's behind, 銀行の後ろです",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The guided role-play uses the shared component vocabulary with one clear job: dialogue turns; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "Where's the",
+          "駅はどこですか",
+          "It's behind",
+          "銀行の後ろです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Complete the learner turns aloud with the target language while the tutor keeps the role-play moving: Complete the conversation (会話を完成しよう): I’ll be the travel partner. Say each complete line, including the missing words. 私は相手役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+      "tutorAction": "Take the named counterpart role and respond at the indicated turns; follow: Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Complete the conversation (会話を完成しよう): Exact answers: Where's the | It's behind",
+      "learningTarget": "Supported role-play completion control of the exact lesson language: Where's the, It's behind",
+      "pedagogicalValue": "Missing target language is retrieved inside a meaningful exchange, not in isolation. Focus: Where's the, It's behind",
+      "failureDiagnosis": "Failure reveals whether the target can be retrieved at the correct conversational turn. Checked focus: Where's the, It's behind",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The supported role-play completion uses the shared component vocabulary with one clear job: tutor-only note, dialogue turns; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Where's the",
+          "It's behind"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the real topic question in their own words, then ask the tutor back with How about you?: What's one place in your area that's hard to find? How would you explain where it is?",
+      "tutorAction": "Ask the visible question, react to the learner's most interesting detail, then give a real brief answer after the learner asks back.",
+      "targetOrPrompt": "Tutor question: What's one place in your area that's hard to find? How would you explain where it is? 近所で見つけにくい場所はどこですか？場所をどう説明しますか？ Learner answer instruction: Your answer. Use today's pattern only if it fits naturally. 自分の答え。今日のパターンは自然に使えるときだけ使う Learner ask-back: How about you?",
+      "learningTarget": "Sustain a short reciprocal conversation about the lesson topic without forcing today's frame: What's one place in your area that's hard to find? How would you explain where it is?",
+      "pedagogicalValue": "The topic invites a genuine opinion or experience, and the ask-back creates a real exchange; today's pattern is explicitly optional when it does not fit naturally.",
+      "failureDiagnosis": "Failure reveals difficulty answering or reciprocating on the topic, rather than mere failure to reproduce the lesson frame.",
+      "nonTargetSupport": "The bilingual question and optional lexical chips support the topic; the learner instruction says: Your answer. Use today's pattern only if it fits naturally. 自分の答え。今日のパターンは自然に使えるときだけ使う",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer choices constrain the conversation; the learner may follow the most interesting relevant detail.",
+      "componentConsistency": "One blue question leads into one reciprocal dialogue: learner answer, natural ask-back, then the tutor's real answer.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "駅:station",
+          "レストラン:restaurant",
+          "公園:park",
+          "隣に:next to"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How about you?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Respond naturally inside the new real-world situation rather than reciting isolated forms: A new situation (別の場面): Use the same two patterns in a different conversation. 同じ二つのパターンを別の会話で使いましょう。",
+      "tutorAction": "Take the named counterpart role and respond at the indicated turns; follow: A new situation (別の場面): Use the same two patterns in a different conversation. 同じ二つのパターンを別の会話で使いましょう。",
+      "targetOrPrompt": "A new situation (別の場面): Exact answers: Where's the | It's behind",
+      "learningTarget": "Situational transfer control of the exact lesson language: Where's the, It's behind",
+      "pedagogicalValue": "The changed situation tests whether the learner can use the language beyond the practiced script. Focus: Where's the, It's behind",
+      "failureDiagnosis": "Failure reveals whether the learner can transfer the language when the details and partner response change. Checked focus: Where's the, It's behind",
+      "nonTargetSupport": "The bilingual prompt and visible pattern frame support the task without prescribing the learner's personal content: A new situation (別の場面): Use the same two patterns in a different conversation. 同じ二つのパターンを別の会話で使いましょう。",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The situational transfer uses the shared component vocabulary with one clear job: dialogue turns; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Where's the",
+          "It's behind"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the displayed natural-use alternatives and read the useful contrast aloud: Contracted or full? (短縮形・短縮しない形): “Where's” is usual in relaxed speech. The full “Where is” sounds more deliberate and can emphasize the question; it is not more polite by itself. ",
+      "tutorAction": "Give only the brief support named on the page and preserve the learner's action; follow: Contracted or full? (短縮形・短縮しない形): “Where's” is usual in relaxed speech. The full “Where is” sounds more deliberate and can emphasize the question; it is not more polite by itself. ",
+      "targetOrPrompt": "Contracted or full? (短縮形・短縮しない形): “Where's” is usual in relaxed speech. The full “Where is” sounds more deliberate and can emphasize the question; it is not more polite by itself. 普段の会話では「Where's」が一般的です。短縮しない「Where is」はより意識的に響き、質問を強調できますが、それ自体がより丁寧なわけではありません。",
+      "learningTarget": "Native-use contrast control of the exact lesson language: Contracted or full? (短縮形・短縮しない形): “Where's” is usual in relaxed speech. The full “Where is” sounds more deliberate and can emphasize the question; it is not mor",
+      "pedagogicalValue": "The contrast prevents overgeneralization and gives a more natural option for real speech. Focus: Contracted or full? (短縮形・短縮しない形): “Where's” is usual in relaxed speech. The full “Where is” sounds more deliberate and c",
+      "failureDiagnosis": "Failure here would show that the learner is not yet ready for the next distinct production step. Checked focus: native-tip",
+      "nonTargetSupport": "Complete bilingual examples or instructions support meaning; the page does not hide unrelated vocabulary.",
+      "articleTreatment": "The specific place remains a complete the + noun phrase, so location language is practiced without stripping away the required article.",
+      "choiceQuality": "No answer-choice set is used on this page; its pedagogical decision comes from speaking, reading, or role-play.",
+      "componentConsistency": "The native-use contrast uses the shared component vocabulary with one clear job: single lesson card; no competing activity is embedded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic component reviewed against current lesson bytes; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
