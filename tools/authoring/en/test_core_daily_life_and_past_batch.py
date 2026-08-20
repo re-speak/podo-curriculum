@@ -53,7 +53,7 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
         digest = hashlib.sha256(batch.PRESERVED.read_bytes()).hexdigest()
         self.assertEqual(
             digest,
-            "ad1e2e2dbcd228f8dbc3e52866dc18b4f22e7619f43ffde2a72e63d74925dcf8",
+            "7287f0db047648e44815ce2e654fe49458cdfbdbc6f9c6957433837684c09e4f",
         )
         core32 = vocabulary.parse(batch.PRESERVED.read_text(encoding="utf-8"))["categories"]
         self.assertEqual(

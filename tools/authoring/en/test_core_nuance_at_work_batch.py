@@ -18,7 +18,7 @@ import generate_core_nuance_at_work_batch as batch
 import vocabulary
 
 EXPECTED = set(batch.NUMBERS)
-CORE82_SHA256 = "bc460191c81adca144f6c4486348830972b97bdc9f40d679319ad7ca7f4583bf"
+CORE82_SHA256 = "6c6e82e766b9dd6693d00836743a9f62c101f714b90bcf59a89ab12e039ba3b8"
 
 
 class CoreNuanceAtWorkBatchTests(unittest.TestCase):
@@ -73,6 +73,20 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
     def test_core82_is_preserved_at_the_reviewed_byte_identity(self):
         source = batch.EXISTING_CORE82.read_bytes()
         self.assertEqual(hashlib.sha256(source).hexdigest(), CORE82_SHA256)
+
+    def test_core82_translation_hints_support_content_without_revealing_the_frame(self):
+        source = batch.EXISTING_CORE82.read_text(encoding="utf-8")
+        pages = dict(check_deck.pages(source))
+        self.assertIn("出荷する:ship", pages["p1-translate"])
+        self.assertNotIn("出荷:shipment", pages["p1-translate"])
+        self.assertNotIn("問題:issue", pages["p2-translate"])
+        for hint in (
+            "遅れている:late",
+            "準備ができていない:not ready",
+            "待っている:waiting",
+            "遅れている:delayed",
+        ):
+            self.assertIn(hint, pages["p2-translate"])
         with self.assertRaises(ValueError):
             batch.build(82, {})
 

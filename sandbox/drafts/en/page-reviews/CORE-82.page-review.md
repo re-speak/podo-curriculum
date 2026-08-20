@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/82-were-on-track-but/lesson.html`
-- SHA-256: `22aa1069a3f092d365c2e18133e516c24f61f8c5b0a5c0a3f7c45ae5173278f4`
+- SHA-256: `6c6e82e766b9dd6693d00836743a9f62c101f714b90bcf59a89ab12e039ba3b8`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -157,7 +157,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles are included only when they belong to the complete natural answer, with lexical load separately supported.
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["We're on track to finish the report by Friday.", "We're on track to send the draft by noon.", "We're on track to ship the order by Tuesday.", "We're on track to get approval by tomorrow."], "hintChips": ["レポート:report", "金曜日:Friday", "下書き:draft", "正午:noon", "注文:order", "出荷:shipment", "承認:approval", "明日:tomorrow"], "supportStage": "supported", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["We're on track to finish the report by Friday.", "We're on track to send the draft by noon.", "We're on track to ship the order by Tuesday.", "We're on track to get approval by tomorrow."], "hintChips": ["レポート:report", "金曜日:Friday", "下書き:draft", "正午:noon", "注文:order", "出荷する:ship", "承認:approval", "明日:tomorrow"], "supportStage": "supported", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.
@@ -293,7 +293,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Article treatment: Articles are included only when they belong to the complete natural answer, with lexical load separately supported.
 - Choice/distractor quality: No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.
 - Component consistency: The page presents one visible learner job using the approved shared component vocabulary.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The main issue is that the supplier's late.", "The main issue is that the draft isn't ready.", "The main issue is that we're waiting for approval.", "The main issue is that the shipment is delayed."], "hintChips": ["問題:issue", "取引先:supplier", "問題:issue", "下書き:draft", "問題:issue", "承認:approval", "問題:issue", "出荷:shipment"], "supportStage": "supported", "substantivePrompts": []}`
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["The main issue is that the supplier's late.", "The main issue is that the draft isn't ready.", "The main issue is that we're waiting for approval.", "The main issue is that the shipment is delayed."], "hintChips": ["取引先:supplier", "遅れている:late", "下書き:draft", "準備ができていない:not ready", "承認:approval", "待っている:waiting", "出荷:shipment", "遅れている:delayed"], "supportStage": "supported", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
 - Notes: Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.

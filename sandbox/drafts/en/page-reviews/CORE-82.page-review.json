@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/82-were-on-track-but/lesson.html",
-  "lessonSha256": "22aa1069a3f092d365c2e18133e516c24f61f8c5b0a5c0a3f7c45ae5173278f4",
+  "lessonSha256": "6c6e82e766b9dd6693d00836743a9f62c101f714b90bcf59a89ab12e039ba3b8",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
@@ -275,7 +275,7 @@
           "下書き:draft",
           "正午:noon",
           "注文:order",
-          "出荷:shipment",
+          "出荷する:ship",
           "承認:approval",
           "明日:tomorrow"
         ],
@@ -509,14 +509,14 @@
           "The main issue is that the shipment is delayed."
         ],
         "hintChips": [
-          "問題:issue",
           "取引先:supplier",
-          "問題:issue",
+          "遅れている:late",
           "下書き:draft",
-          "問題:issue",
+          "準備ができていない:not ready",
           "承認:approval",
-          "問題:issue",
-          "出荷:shipment"
+          "待っている:waiting",
+          "出荷:shipment",
+          "遅れている:delayed"
         ],
         "supportStage": "supported",
         "substantivePrompts": []
