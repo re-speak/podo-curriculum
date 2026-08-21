@@ -3,9 +3,12 @@
 `tools/build-catalog.py` 가 만드는 공개 카탈로그를
 `curriculum.podospeaking.com` 에서 서빙하기 위한 절차.
 
-**지금 상태: 꺼져 있다.** DNS 레코드가 아직 없어서, 사이트는
-`https://re-speak.github.io/podo-curriculum/` 에서 돈다. 경로는 도메인이 붙든 안 붙든
+**지금 상태: 켜져 있다 (2026-08-21).** 사이트는
+`https://curriculum.podospeaking.com/` 에서 돈다. 경로는 도메인이 붙든 안 붙든
 같다 — `/korean-jp`, `/english-jp`.
+
+남은 것은 **Enforce HTTPS** 하나다(아래 3번). 인증서는 이미 발급되어 https 가 200 을
+주지만 강제가 꺼져 있어, http 로 온 요청은 http 로 서빙된다.
 
 ## CNAME 이 두 개다 — 이게 헷갈리는 지점
 
@@ -20,7 +23,7 @@
 
 ## 켜는 순서
 
-### 1. DNS 레코드를 넣는다 (사람)
+### 1. DNS 레코드를 넣는다 (사람) — 완료 2026-08-21
 
 `podospeaking.com` 존은 Google Cloud DNS 에 있다
 (`dig +short podospeaking.com NS` → `ns-cloud-b{1..4}.googledomains.com`).
@@ -40,7 +43,7 @@ dig +noall +answer @ns-cloud-b1.googledomains.com curriculum.podospeaking.com CN
 
 답이 나오면 다음 단계로 간다. **답이 없으면 여기서 멈춘다.**
 
-### 2. `CUSTOM_DOMAIN` 을 채우고 릴리스한다
+### 2. `CUSTOM_DOMAIN` 을 채우고 릴리스한다 — 완료 2026-08-21
 
 `tools/build-catalog.py`:
 
@@ -55,7 +58,13 @@ prod 배포의 `catalog` 스텝이 `gh-pages` 에 `CNAME` 을 쓰고, GitHub 이
 `gh-pages` 는 배포마다 통째로 force-push 되므로 `CNAME` 은 **매번 다시 쓰여야 한다.**
 그래서 저장소 설정에만 손으로 넣어 두는 것으로는 부족하다 — 다음 배포가 지운다.
 
-### 3. HTTPS 를 켠다 (사람)
+2026-08-21 에는 순서가 이랬다: DNS 가 풀린 것을 확인하고 **Settings → Pages 에 직접
+도메인을 넣어** 즉시 켠 다음, 같은 릴리스에 `CUSTOM_DOMAIN` 을 담았다. 설정창으로 켜면
+GitHub 이 `gh-pages` 에 `CNAME` 을 대신 커밋해 주어 그 자리에서 살아나지만, 그 커밋은
+다음 prod 배포의 force-push 가 지운다. 설정창은 빠른 길일 뿐이고, 도메인을 계속 붙들고
+있는 것은 `CUSTOM_DOMAIN` 이다.
+
+### 3. HTTPS 를 켠다 (사람) — 남음
 
 Settings → Pages 에서 DNS check 가 초록이 되면 **Enforce HTTPS** 를 체크한다.
 DNS 가 확인되기 전에는 이 항목이 비활성이다.
