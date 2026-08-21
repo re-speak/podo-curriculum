@@ -540,6 +540,74 @@ def choice_branch_coverage_issues(page_chunks):
     return errors
 
 
+EXEMPLAR_TOKEN = re.compile(r"[\w'’-]+|[^\w\s]")
+
+
+def exemplar_varying_regions(sentences):
+    """Align the exemplars and return each one's varying token span.
+
+    The shared prefix and suffix are the fixed frame; what is left in the
+    middle is the part the learner actually has to supply.
+    """
+    rows = [EXEMPLAR_TOKEN.findall(s) for s in sentences]
+    shortest = min(len(r) for r in rows)
+    head = 0
+    while head < shortest and len({r[head].casefold() for r in rows}) == 1:
+        head += 1
+    tail = 0
+    while tail < shortest - head and len({r[len(r) - 1 - tail].casefold() for r in rows}) == 1:
+        tail += 1
+    return [r[head:len(r) - tail] for r in rows]
+
+
+def exemplar_variation_issues(page_chunks, *, level):
+    """Require a teaching set to vary in more than one word.
+
+    Four exemplars that differ in exactly one aligned token are a substitution
+    drill, not a pattern: the learner swaps a noun into a frame that never
+    changes shape. Usage-based work on construction learning is explicit that
+    this is worse than merely unhelpful — high token frequency with *low* type
+    frequency inhibits generalisation, because the exemplars form a tight
+    cluster and get stored as one phrase instead of a slot (Bybee 1995; Suttle
+    and Goldberg 2011). `teaching-philosophy.md` §2 already requires "several
+    natural completions"; this is that requirement made checkable.
+
+    Pre-A1 is exempt. The CEFR Companion Volume defines that band as one where
+    the learner "has not yet acquired generative capacity, but relies upon a
+    repertoire of words and formulaic expressions", so a rehearsed set is the
+    intended experience there. From A1 — "the lowest level of generative
+    language use ... rather than relying purely on a very finite rehearsed,
+    lexically organised repertoire of situation-specific phrases" — it is a
+    defect.
+
+    Only the `-read` pages are checked. `-teach` draws its examples from the
+    same authored rows, so checking both would report one defect twice.
+    """
+    if (level or "").strip().casefold() == "pre-a1":
+        return []
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-read", page_id):
+            continue
+        # class_span_bodies counts nesting; a plain regex stops at the first
+        # </span> and silently truncates every sentence to its taught span.
+        sentences = [plain_text(body) for body in class_span_bodies(chunk, "korean")]
+        sentences = [s for s in sentences if s]
+        if len(sentences) < 3:
+            continue
+        varying = exemplar_varying_regions(sentences)
+        if max(len(span) for span in varying) > 1:
+            continue
+        swapped = ", ".join(" ".join(span) or "—" for span in varying)
+        errors.append(
+            f"{page_id}: the exemplars differ in one word only ({swapped}) — "
+            "a substitution drill entrenches the frame as a phrase instead of "
+            "teaching the slot. Vary the form the pattern actually alternates "
+            "(subject and agreement, a/an, singular/plural, tense), not just the noun"
+        )
+    return errors
+
+
 def reorder_norm(source):
     """Normalize exactly like shared/js/activities.js before grading."""
     plain = html_lib.unescape(TAG.sub("", source))
@@ -1764,6 +1832,9 @@ def check(path):
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
             errs.extend(choice_branch_coverage_issues(page_chunks))
+            errs.extend(exemplar_variation_issues(
+                page_chunks, level=meta_content(html, "podo:level")
+            ))
             errs.extend(core_production_issues(page_chunks))
             proofread_status = meta_content(html, "podo:proofread-status")
             if proofread_status == "pending":
@@ -1780,6 +1851,9 @@ def check(path):
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
             errs.extend(choice_branch_coverage_issues(page_chunks))
+            errs.extend(exemplar_variation_issues(
+                page_chunks, level=meta_content(html, "podo:level")
+            ))
             errs.extend(contextual_production_issues(
                 page_chunks,
                 enforce_frame_boundaries=(

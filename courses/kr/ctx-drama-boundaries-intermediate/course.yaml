@@ -17,7 +17,15 @@ spec:
   classLevel: "300.040"
   lessonTime: 25
   # 검수 전까지는 false. true 로 바꾸는 순간 apply 가 학습자에게 노출시킨다.
-  enabled: true
+  #
+  # 2026-08-21 폐지. 일본어 런칭 검수에서 이 코스의 갈등 대사(경고·기싸움·따지기·
+  # 관계 정리)가 학습자와 튜터 모두에게 부담이라는 결론이 났다. 드라마 파트는
+  # 갈등 없는 연속 서사로 재편된다 — 이 슬롯을 대체하는 코스는 없다.
+  #
+  # 이 줄이 false 로 배포된 다음에야 디렉터리를 지운다. apply.py 는 delete path 가
+  # 없는 순수 upsert라, 먼저 지우면 row 가 USE_YN='Y' 로 남아 학습자 화면에서
+  # 사라지지 않는다. validate.py layer 6 이 그 순서를 강제한다.
+  enabled: false
   difficulty: INTERMEDIATE
 
   title:

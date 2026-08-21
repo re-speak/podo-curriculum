@@ -7,9 +7,14 @@
   <meta name="podo:lesson-id" content="trial-1-hangul-full">
   <meta name="podo:level" content="왕초급">
   <meta name="podo:content-version" content="2026-08-04">
+  <!-- 리포트는 대역 없이 한 언어로 간다. 그 언어가 무엇인지 CSS 가 알아야 해서
+       마크업이 선언한다 — 일본어 리포트는 줄바꿈 규칙이 한국어와 반대라
+       (keep-all 이면 일본어 문장은 끊길 자리가 없어 카드를 뚫고 나간다),
+       shared/css/trial.css 의 LINE BREAKING 절이 이 값으로 갈라 준다. -->
+  <meta name="podo:report-language" content="ja">
   <title>体験レッスン 超入門 ＋ レポート · ご案内 — PODO 韓国語</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/css/lesson-card.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/css/trial.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/css/lesson-card.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/css/trial.css">
   <link rel="stylesheet" href="deck.css">
 </head>
 <body>
@@ -44,20 +49,20 @@
     <div class="brand-page bleed" data-page-id="needs-intro">
       <h2 class="brand-title">ニーズ把握</h2>
       <p class="brand-sub">あなたのことを教えてください。答えに合わせて、最後のプランが変わります。</p>
-      <img class="brand-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/podo-character-ask.png" alt="">
+      <img class="brand-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-character-ask.png" alt="">
     </div>
 
     <div class="section needs-jp" data-page-id="needs-why">
       <h2 class="section-title">学ぶきっかけ <span class="title-ja">(학습동기)</span></h2>
       <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？<br>いくつ選んでも大丈夫です。</span></p>
       <div class="opt-list" data-group="why" data-pick="multi" data-sync-id="needs-why" data-sync-kind="selection" data-sync-state="on">
-        <button class="opt-row" data-val="kpop" data-sync-option="kpop"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/kpop.png" alt=""><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
-        <button class="opt-row" data-val="travel" data-sync-option="travel"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/travel.png" alt=""><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
-        <button class="opt-row" data-val="friend" data-sync-option="friend"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/friend.png" alt=""><span class="opt-body"><span class="opt-main">韓国人の友だち・恋人</span><span class="opt-sub">한국인 친구·연인</span></span></button>
-        <button class="opt-row" data-val="work" data-sync-option="work"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/work.png" alt=""><span class="opt-body"><span class="opt-main">仕事・転職</span><span class="opt-sub">일·이직</span></span></button>
-        <button class="opt-row" data-val="topik" data-sync-option="topik"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/topik.png" alt=""><span class="opt-body"><span class="opt-main">TOPIK・資格</span><span class="opt-sub">TOPIK·자격증</span></span></button>
-        <button class="opt-row" data-val="self" data-sync-option="self"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/self.png" alt=""><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
-        <button class="opt-row" data-val="other" data-sync-option="other"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/other.png" alt=""><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
+        <button class="opt-row" data-val="kpop" data-sync-option="kpop"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/kpop.png" alt=""><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
+        <button class="opt-row" data-val="travel" data-sync-option="travel"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel.png" alt=""><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
+        <button class="opt-row" data-val="friend" data-sync-option="friend"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/friend.png" alt=""><span class="opt-body"><span class="opt-main">韓国人の友だち・恋人</span><span class="opt-sub">한국인 친구·연인</span></span></button>
+        <button class="opt-row" data-val="work" data-sync-option="work"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/work.png" alt=""><span class="opt-body"><span class="opt-main">仕事・転職</span><span class="opt-sub">일·이직</span></span></button>
+        <button class="opt-row" data-val="topik" data-sync-option="topik"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topik.png" alt=""><span class="opt-body"><span class="opt-main">TOPIK・資格</span><span class="opt-sub">TOPIK·자격증</span></span></button>
+        <button class="opt-row" data-val="self" data-sync-option="self"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/self.png" alt=""><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
+        <button class="opt-row" data-val="other" data-sync-option="other"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/other.png" alt=""><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
       </div>
     </div>
 
@@ -108,7 +113,7 @@
     </div>
 
     <div class="brand-page divider" data-page-id="trial-intro">
-      <img class="brand-mascot" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/podo-character-point.png" alt="">
+      <img class="brand-mascot" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-character-point.png" alt="">
       <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
       <p class="brand-sub">ここから25分。終わるころには、本物の韓国語の単語が読めます。約束します！</p>
     </div>
@@ -164,9 +169,9 @@
       <h2 class="section-title">모음 ① <span class="title-ja">(母音 3つ)</span></h2>
       <p class="section-subtitle"><span class="ko">제가 먼저 읽을게요. 잘 듣고 따라 읽어 보세요.</span><span class="ja">私が先に読みます。よく聞いて、まねして読んでみましょう。</span></p>
       <div class="letter-row">
-        <div class="letter-card"><span class="korean seat-lr">아</span><span class="kana-eq"><i>＝</i>ア</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">a</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-lr">어</span><span class="kana-eq"><i>＝</i>オ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">eo</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-lr">이</span><span class="kana-eq"><i>＝</i>イ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">i</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">아</span><span class="kana-eq"><i>＝</i>ア</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">a</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">어</span><span class="kana-eq"><i>＝</i>オ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">eo</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">이</span><span class="kana-eq"><i>＝</i>イ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">i</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="60" height="60"></div>
       </div>
     </div>
 
@@ -178,9 +183,9 @@
       <p class="section-subtitle"><span class="ko">제가 읽을 테니까 잘 듣고 맞는 쪽을 눌러 보세요.</span><span class="ja">私が読むので、よく聞いて正しいほうをタップしてください。</span></p>
       <div class="tutor-note">아·어·이 중에서, 표시된 쪽을 한 줄에 하나씩 읽어 주세요.</div>
       <div class="tap-grid rows" data-sync-id="tiles-listen-vowels-1" data-sync-kind="selection" data-sync-state="right wrong">
-        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-ok="1" data-sync-option="아">아<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="이">이<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-sync-option="아-2">아<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="어">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-ok="1" data-sync-option="이-2">이<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="어-2">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-ok="1" data-sync-option="아">아<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="이">이<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-sync-option="아-2">아<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="어">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-ok="1" data-sync-option="이-2">이<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="어-2">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button></div>
       </div>
     </div>
 
@@ -190,9 +195,9 @@
       <h2 class="section-title">혼자 읽기 <span class="title-ja">(ひとりで読もう)</span></h2>
       <p class="section-subtitle"><span class="ko">방금 배운 세 개, 혼자 읽어 보세요.</span><span class="ja">さっき習った3つを、ひとりで読んでみましょう。</span></p>
       <div class="read-grid">
-        <div class="read-item"><span class="read-chip seat-lr">이</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">아</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">어</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">이</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">아</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">어</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
       </div>
     </div>
 
@@ -200,9 +205,9 @@
       <h2 class="section-title">모음 ② <span class="title-ja">(母音 のこり3つ)</span></h2>
       <p class="section-subtitle"><span class="ko">제가 먼저 읽을게요. 잘 듣고 따라 읽어 보세요.</span><span class="ja">私が先に読みます。よく聞いて、まねして読んでみましょう。</span></p>
       <div class="letter-row">
-        <div class="letter-card"><span class="korean seat-tb">오</span><span class="kana-eq"><i>＝</i>オ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">o</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">우</span><span class="kana-eq"><i>＝</i>ウ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">u</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">으</span><span class="kana-eq"><i>＝</i>ウ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">eu</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">오</span><span class="kana-eq"><i>＝</i>オ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">o</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">우</span><span class="kana-eq"><i>＝</i>ウ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">u</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">으</span><span class="kana-eq"><i>＝</i>ウ</span><span class="sound"><i class="seat-c">–</i><b>＋</b><i class="seat-v">eu</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="60" height="60"></div>
       </div>
     </div>
 
@@ -217,9 +222,9 @@
       <!-- the answer alternates sides — all-left lets the learner score 3/3
            by tapping a column instead of listening -->
       <div class="tap-grid rows" data-sync-id="tiles-listen-vowels-2" data-sync-kind="selection" data-sync-state="right wrong">
-        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-ok="1" data-sync-option="오">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="우">우<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-sync-option="으">으<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="우-2">우<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-ok="1" data-sync-option="으-2">으<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="오-2">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-ok="1" data-sync-option="오">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="우">우<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-sync-option="으">으<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="우-2">우<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-ok="1" data-sync-option="으-2">으<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="오-2">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button></div>
       </div>
     </div>
 
@@ -228,9 +233,9 @@
       <h2 class="section-title">혼자 읽기 <span class="title-ja">(ひとりで読もう)</span></h2>
       <p class="section-subtitle"><span class="ko">이번에도 혼자 읽어 보세요.</span><span class="ja">今度もひとりで読んでみましょう。</span></p>
       <div class="read-grid">
-        <div class="read-item"><span class="read-chip seat-tb">우</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">으</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">오</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">우</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">으</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">오</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
       </div>
     </div>
 
@@ -243,13 +248,13 @@
       <div class="pair-list">
         <div class="pair-row">
           <span class="pair-kana">オ</span>
-          <span class="pair-side"><span class="g seat-lr">어</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-side-illustration.png" alt="" width="56" height="56"></span><small>口を大きく開けて</small></span>
-          <span class="pair-side"><span class="g seat-tb">오</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-side-illustration.png" alt="" width="56" height="56"></span><small>くちびるを丸く</small></span>
+          <span class="pair-side"><span class="g seat-lr">어</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-side-illustration.png" alt="" width="56" height="56"></span><small>口を大きく開けて</small></span>
+          <span class="pair-side"><span class="g seat-tb">오</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-side-illustration.png" alt="" width="56" height="56"></span><small>くちびるを丸く</small></span>
         </div>
         <div class="pair-row">
           <span class="pair-kana">ウ</span>
-          <span class="pair-side"><span class="g seat-tb">우</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-side-illustration.png" alt="" width="56" height="56"></span><small>丸く、小さく</small></span>
-          <span class="pair-side"><span class="g seat-tb">으</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-side-illustration.png" alt="" width="56" height="56"></span><small>くちびるを横に</small></span>
+          <span class="pair-side"><span class="g seat-tb">우</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-side-illustration.png" alt="" width="56" height="56"></span><small>丸く、小さく</small></span>
+          <span class="pair-side"><span class="g seat-tb">으</span><span class="shots"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="56" height="56"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-side-illustration.png" alt="" width="56" height="56"></span><small>くちびるを横に</small></span>
         </div>
       </div>
     </div>
@@ -264,9 +269,9 @@
       <p class="section-subtitle"><span class="ko">제가 읽을 테니까 잘 듣고 맞는 쪽을 눌러 보세요.</span><span class="ja">私が読むので、よく聞いて正しいほうをタップしてください。</span></p>
       <div class="tutor-note">어·오, 우·으 중에서, 표시된 쪽을 한 줄에 하나씩 읽어 주세요.</div>
       <div class="tap-grid rows" data-sync-id="tiles-listen-vowel-pairs" data-sync-kind="selection" data-sync-state="right wrong">
-        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-sync-option="어">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="오">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-ok="1" data-sync-option="으">으<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="우">우<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-sync-option="오-2">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="어-2">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-sync-option="어">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="오">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-ok="1" data-sync-option="으">으<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="우">우<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-sync-option="오-2">오<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="어-2">어<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button></div>
       </div>
     </div>
 
@@ -276,12 +281,12 @@
       <h2 class="section-title">여섯 개 읽기 <span class="title-ja">(6つを読もう)</span></h2>
       <p class="section-subtitle"><span class="ko">여섯 개를 소리 내어 읽어 보세요.</span><span class="ja">6つを声に出して読んでみましょう。</span></p>
       <div class="read-grid">
-        <div class="read-item"><span class="read-chip seat-tb">오</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">이</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">아</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">으</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">어</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">우</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">오</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">이</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">아</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">으</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">어</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">우</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
       </div>
     </div>
 
@@ -353,12 +358,12 @@
       <h2 class="section-title">자음 ㄴ <span class="title-ja">(子音 ㄴ)</span></h2>
       <p class="section-subtitle"><span class="ko">ㄴ은 n 소리예요. 제가 먼저 읽을게요. 따라 읽어 보세요.</span><span class="ja">「ㄴ」は n の音。私が先に読みます。まねして読んでみましょう。</span></p>
       <div class="letter-row">
-        <div class="letter-card"><span class="korean seat-lr">나</span><span class="kana-eq"><i>＝</i>ナ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">a</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-lr">너</span><span class="kana-eq"><i>＝</i>ノ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">eo</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">노</span><span class="kana-eq"><i>＝</i>ノ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">o</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">누</span><span class="kana-eq"><i>＝</i>ヌ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">u</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">느</span><span class="kana-eq"><i>＝</i>ヌ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">eu</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-lr">니</span><span class="kana-eq"><i>＝</i>ニ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">i</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">나</span><span class="kana-eq"><i>＝</i>ナ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">a</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">너</span><span class="kana-eq"><i>＝</i>ノ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">eo</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">노</span><span class="kana-eq"><i>＝</i>ノ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">o</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">누</span><span class="kana-eq"><i>＝</i>ヌ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">u</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">느</span><span class="kana-eq"><i>＝</i>ヌ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">eu</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">니</span><span class="kana-eq"><i>＝</i>ニ</span><span class="sound"><i class="seat-c">n</i><b>＋</b><i class="seat-v">i</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="60" height="60"></div>
       </div>
     </div>
 
@@ -366,12 +371,12 @@
       <h2 class="section-title">ㄴ 읽기 <span class="title-ja">(ㄴ を読もう)</span></h2>
       <p class="section-subtitle"><span class="ko">ㄴ, 이번엔 혼자 읽어 보세요. 멈추지 말고요.</span><span class="ja">ㄴ、今度はひとりで読んでみましょう。止まらずに。</span></p>
       <div class="read-grid">
-        <div class="read-item"><span class="read-chip seat-tb">누</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">나</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">니</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">노</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">너</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">느</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">누</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">나</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">니</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">노</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">너</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">느</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
       </div>
     </div>
 
@@ -379,12 +384,12 @@
       <h2 class="section-title">자음 ㅁ <span class="title-ja">(子音 ㅁ)</span></h2>
       <p class="section-subtitle"><span class="ko">ㅁ은 m 소리예요. 저를 따라 읽어 보세요.</span><span class="ja">「ㅁ」は m の音。私のあとについて読んでみましょう。</span></p>
       <div class="letter-row">
-        <div class="letter-card"><span class="korean seat-lr">마</span><span class="kana-eq"><i>＝</i>マ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">a</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-lr">머</span><span class="kana-eq"><i>＝</i>モ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">eo</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">모</span><span class="kana-eq"><i>＝</i>モ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">o</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">무</span><span class="kana-eq"><i>＝</i>ム</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">u</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-tb">므</span><span class="kana-eq"><i>＝</i>ム</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">eu</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="60" height="60"></div>
-        <div class="letter-card"><span class="korean seat-lr">미</span><span class="kana-eq"><i>＝</i>ミ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">i</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">마</span><span class="kana-eq"><i>＝</i>マ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">a</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">머</span><span class="kana-eq"><i>＝</i>モ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">eo</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">모</span><span class="kana-eq"><i>＝</i>モ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">o</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">무</span><span class="kana-eq"><i>＝</i>ム</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">u</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-tb">므</span><span class="kana-eq"><i>＝</i>ム</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">eu</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="60" height="60"></div>
+        <div class="letter-card"><span class="korean seat-lr">미</span><span class="kana-eq"><i>＝</i>ミ</span><span class="sound"><i class="seat-c">m</i><b>＋</b><i class="seat-v">i</i></span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="60" height="60"></div>
       </div>
     </div>
 
@@ -394,12 +399,12 @@
       <h2 class="section-title">ㅁ 읽기 <span class="title-ja">(ㅁ を読もう)</span></h2>
       <p class="section-subtitle"><span class="ko">ㅁ도 혼자 읽어 보세요. 멈추지 말고요.</span><span class="ja">ㅁ もひとりで読んでみましょう。止まらずに。</span></p>
       <div class="read-grid">
-        <div class="read-item"><span class="read-chip seat-tb">무</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">미</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">마</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">모</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">머</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">므</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">무</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">미</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">마</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">모</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">머</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">므</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
       </div>
     </div>
 
@@ -421,12 +426,12 @@
       <h2 class="section-title">섞어 읽기 <span class="title-ja">(まぜて読もう)</span></h2>
       <p class="section-subtitle"><span class="ko">ㄴ과 ㅁ이 들어간 블록을 하나씩 읽어 보세요.</span><span class="ja">ㄴ と ㅁ の入ったブロックを、1つずつ読んでみましょう。</span></p>
       <div class="read-grid">
-        <div class="read-item"><span class="read-chip seat-lr">미</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">너</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">무</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-lr">나</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">모</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
-        <div class="read-item"><span class="read-chip seat-tb">느</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">미</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">너</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">무</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-lr">나</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/a-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">모</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="56" height="56"></div>
+        <div class="read-item"><span class="read-chip seat-tb">느</span><img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="56" height="56"></div>
       </div>
     </div>
 
@@ -449,9 +454,9 @@
       <p class="section-subtitle"><span class="ko">제가 읽을 테니까 잘 듣고 맞는 쪽을 눌러 보세요.</span><span class="ja">私が読むので、よく聞いて正しいほうをタップしてください。</span></p>
       <div class="tutor-note">ㄴ·ㅁ 중에서, 표시된 쪽을 한 줄에 하나씩 읽어 주세요.</div>
       <div class="tap-grid rows" data-sync-id="tiles-listen-and-choose" data-sync-kind="selection" data-sync-state="right wrong">
-        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-ok="1" data-sync-option="노">노<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="누">누<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-sync-option="머">머<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="모">모<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button></div>
-        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-ok="1" data-sync-option="느">느<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="니">니<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/i-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">①</span><button class="tap-tile" data-ok="1" data-sync-option="노">노<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="누">누<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/u-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">②</span><button class="tap-tile" data-sync-option="머">머<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eo-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-ok="1" data-sync-option="모">모<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/o-front-illustration.png" alt="" width="38" height="38"></button></div>
+        <div class="tap-row"><span class="tap-n">③</span><button class="tap-tile" data-ok="1" data-sync-option="느">느<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/eu-front-illustration.png" alt="" width="38" height="38"></button><button class="tap-tile" data-sync-option="니">니<img class="mouth" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/i-front-illustration.png" alt="" width="38" height="38"></button></div>
       </div>
     </div>
 
@@ -554,8 +559,8 @@
     </div>
 
     <div class="section" data-page-id="sign-reading">
-      <h2 class="section-title">간판 읽기 <span class="title-ja">(看板を読もう)</span></h2>
-      <p class="section-subtitle"><span class="ko">한국에 있다고 상상해 보세요. 간판을 소리 내어 읽어 보세요!</span><span class="ja">韓国にいると想像してみてください。看板を声に出して読んでみましょう！</span></p>
+      <h2 class="section-title">단어 읽기 <span class="title-ja">(単語を読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국에 있다고 상상해 보세요. 단어를 소리 내어 읽어 보세요!</span><span class="ja">韓国にいると想像してみてください。単語を声に出して読んでみましょう！</span></p>
       <div class="grid">
         <div class="sign"><span class="korean xl">어머니</span><span class="english">家族写真の名前</span></div>
         <div class="sign"><span class="korean xl">나무</span><span class="english">ポスターの言葉</span></div>
@@ -580,12 +585,18 @@
          둘이기 때문이다 — 「지금 어디」(레벨·항목별)와 「어디까지 어떻게」
          (추천 코스·학습 순서)가 한 문서에 이어져 있다. 예전처럼 리포트만
          예고하고 플랜을 따로 열면, 같은 페이지를 두 번 소개하게 된다.
-         여기서부터 화면이 한국어로 바뀐다: 리포트는 학습자가 직접 읽는
-         문서라 단일 언어이고, 이 장이 그 경계다. -->
+         여기서부터 화면이 한 언어로만 간다: 리포트는 학습자가 직접 읽는
+         문서라 대역(對譯)을 달지 않는다. 그 한 언어는 일본어다 — 읽는 사람도
+         일본어 화자고, 같이 읽어 주는 튜터도 일본어로 읽는다. Lv.1 의 판정문이
+         「ハングルを一文字ずつ読めます」인 리포트를 한국어로 내면, 그 문장이
+         맞는 한 본인은 그것을 못 읽는다.
+         문안은 shared/js/report-ja.js 가 들고 있고, 여기 마크업이 그 표의
+         자리다. 한국어 판본은 report.js 의 기본값으로 남아 있어 사내 확인에
+         쓴다(../reports/trial-1-report.html). -->
     <div class="brand-page bleed" data-page-id="report-intro">
       <h2 class="brand-title">レポート＆プラン</h2>
       <p class="brand-sub">今日の授業で確認した現在の実力と、<br>目標までの道のりを合わせてお見せしますね。</p>
-      <img class="brand-art mid" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/podo-character-report.png" alt="">
+      <img class="brand-art mid" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-character-report.png" alt="">
     </div>
     <!-- ================================================================
          맞춤 리포트 · 한 장
@@ -606,35 +617,35 @@
       <!-- 리포트 표지 줄 -->
       <div class="rhead">
         <span class="rhead-k">PODO TRIAL LESSON REPORT</span>
-        <h2 class="rhead-t">포도님의 한국어 실력,<br>꼼꼼하게 진단했어요.</h2>
-        <p class="rhead-m"><span class="rm-date">—</span>・체험 레슨・25분</p>
+        <h2 class="rhead-t">あなたの韓国語の実力を、<br>ていねいに診断しました。</h2>
+        <p class="rhead-m"><span class="rm-date">—</span>・体験レッスン・25分</p>
       </div>
 
       <!-- ① 내 레벨 · 내용은 레벨 체크에 따라 다시 그려진다 -->
       <div class="rsec lvcard">
-        <h3 class="rsec-h">내 레벨</h3>
+        <h3 class="rsec-h">今のレベル</h3>
         <div class="lvbig">
           <div class="lvbig-b">
             <p class="lvbig-n"><b>Lv.1</b><span>/ 10</span></p>
-            <p class="lvbig-l">한글을 <em>하나씩 읽어요</em></p>
+            <p class="lvbig-l">ハングルを <em>一文字ずつ読めます</em></p>
           </div>
-          <img class="lvbig-img" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-1.png" alt="">
+          <img class="lvbig-img" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-1.png" alt="">
         </div>
         <div class="lv-src" hidden>
-          <img data-lv="1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-1.png" alt="">
-          <img data-lv="2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-2.png" alt="">
-          <img data-lv="3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-3.png" alt="">
-          <img data-lv="4" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-4.png" alt="">
-          <img data-lv="5" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-5.png" alt="">
-          <img data-lv="6" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-6.png" alt="">
-          <img data-lv="7" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-7.png" alt="">
-          <img data-lv="8" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-8.png" alt="">
-          <img data-lv="9" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-9.png" alt="">
-          <img data-lv="10" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/lv-10.png" alt="">
+          <img data-lv="1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-1.png" alt="">
+          <img data-lv="2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-2.png" alt="">
+          <img data-lv="3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-3.png" alt="">
+          <img data-lv="4" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-4.png" alt="">
+          <img data-lv="5" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-5.png" alt="">
+          <img data-lv="6" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-6.png" alt="">
+          <img data-lv="7" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-7.png" alt="">
+          <img data-lv="8" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-8.png" alt="">
+          <img data-lv="9" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-9.png" alt="">
+          <img data-lv="10" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-10.png" alt="">
         </div>
         <hr class="rline">
         <ul class="chk lv-ev"></ul>
-        <p class="topikrow"><i>TOPIK 1급</i><span>—</span></p>
+        <p class="topikrow"><i>TOPIK 1級</i><span>—</span></p>
         <!-- 레벨 체크 · 이 카드가 보여 주는 값을 바로 여기서 고른다.
              전에는 페이지 맨 위 별도 콘솔이었는데, 고르는 곳과 그려지는 곳이
              떨어져 있으면 튜터가 리포트에서 눈을 떼야 했다.
@@ -648,32 +659,39 @@
              「무엇을 말했나」와 「얼마나 매끄러웠나」를 함께 든다.
              고르고 나면 접힌다: 튜터가 다시 볼 것은 고른 한 줄뿐이다. -->
         <div class="lvcheck">
-          <span class="lvcheck-h">레벨 체크 <small>튜터만 보여요</small></span>
-          <p class="lvcheck-q">오늘 수업에서 학생이 어땠나요?</p>
+          <span class="lvcheck-h">レベルチェック <small>先生のみ表示</small></span>
+          <p class="lvcheck-q">今日のレッスンで、学習者はどうでしたか？</p>
           <div class="lvpick" data-group="level" data-pick="single" data-sync-id="plan-level" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">인사말과 단어 몇 개뿐, 대부분 일본어로 도와가며 했어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">익숙한 주제로 짧은 문장은 만들지만, 자주 막히고 말끝이 흔들렸어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">익숙한 주제는 막힘 없이 이어갔지만, 낯선 주제에서는 멈췄어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">처음 보는 주제에도 이유를 붙여 자기 의견을 말했어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">제 속도로 복잡한 이야기를 해도 바로 알아듣고 받아쳤어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">あいさつと単語がいくつかだけで、ほとんど日本語で補いました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">慣れた話題なら短い文は作れますが、よく詰まり語尾が揺れました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">慣れた話題はつまらず続きましたが、知らない話題では止まりました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">はじめての話題にも理由をつけて自分の意見を言えました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">私の速さで複雑な話をしてもすぐ聞き取って返してきました</span></button>
           </div>
-          <button class="lvcheck-redo" type="button">다시 고르기</button>
+          <button class="lvcheck-redo" type="button">選び直す</button>
         </div>
       </div>
 
       <!-- ② 항목별 진단 · 레이더 + 다섯 줄. 튜터가 고른 항목별 레벨을
            같은 수업을 받은 분들의 평균과 견준다. -->
       <div class="rsec">
-        <h3 class="rsec-h">항목별 진단<small>포도 수강생 평균과 나란히 놓고 봤어요</small></h3>
+        <h3 class="rsec-h">項目別診断<small>ポド受講生の平均と並べて見ました</small></h3>
 
         <div class="radbox">
           <div class="rad-legend">
-            <span><i></i>내 레벨</span>
-            <span><i class="avg"></i>포도 수강생 평균</span>
+            <span><i></i>私のレベル</span>
+            <span><i class="avg"></i>ポド受講生の平均</span>
           </div>
           <!-- viewBox 는 그려지는 내용(축 라벨 포함)에 맞춰 잘라 둔 것이다.
-               넉넉히 잡아 두면 아래에 죽은 여백이 100px 넘게 생긴다. -->
-          <svg id="radar" class="rad" viewBox="-18 -12 244 204" role="img" aria-label="항목별 지금 레벨과 평균 레이더"></svg>
+               넉넉히 잡아 두면 아래에 죽은 여백이 100px 넘게 생긴다 — 그래서
+               세로(-12 204)는 건드리지 않는다.
+               가로만 -18 244 에서 -48 266 으로 넓혔다. 잘라 둔 값이 한국어 축
+               이름에 맞춰져 있었는데(「듣기」 두 자), 일본어로 옮기면서 왼쪽
+               축이 「リスニング」 다섯 자가 됐다. text-anchor 가 end 라 글자가
+               왼쪽으로 자라고, 실측 내용 상자가 x=-46 까지 나가 -18 에서
+               잘려 「ニング」 만 보였다. 축 이름을 상자에 맞춰 줄이는 것은
+               거꾸로다 — 이름은 항목 칩과 코멘트 문장에도 그대로 쓰인다. -->
+          <svg id="radar" class="rad" viewBox="-48 -12 266 204" role="img" aria-label="項目別の現在レベルと平均のレーダー"></svg>
         </div>
 
 
@@ -693,56 +711,56 @@
         <div class="axsteps">
           <div class="axst-chips"></div>
         <div class="axq" data-ax="acc">
-          <p class="axq-h">정확성<small>문법과 말끝이 어땠나요?</small></p>
+          <p class="axq-h">正確さ<small>文法と語尾はどうでしたか？</small></p>
           <div class="axq-opts" data-group="ax-acc" data-pick="single" data-sync-id="ax-acc" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="간단한 단어와 문법으로 기본적인 뜻은 전할 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">단어만 나열해서, 뜻을 제가 짐작했어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="문장이 길어지면 조사와 말끝이 자주 흔들려요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">조사랑 말끝이 자주 틀렸어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="문장이 복잡할 때만 가끔 어순이나 문법이 흔들려요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">긴 문장에서만 가끔 틀렸어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="상황에 맞는 단어와 문법을 대체로 정확하게 써요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">거의 틀리지 않았어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="단어·문법·어순이 문맥에 맞게 정확해요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">틀린 데를 찾기 어려웠어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="簡単な語と文法で、基本的な意味は伝えられます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">単語を並べるだけで、意味は私が推し量りました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="文が長くなると助詞と語尾がよく揺れます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">助詞と語尾がよく間違っていました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="文が複雑なときだけ、たまに語順や文法が揺れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">長い文でだけ、たまに間違いました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="場面に合う語と文法を、おおむね正確に使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">ほとんど間違いませんでした</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="語・文法・語順が文脈に合って正確です"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">間違いを見つけるのが難しいほどでした</span></button>
           </div>
         </div>
         <div class="axq" data-ax="voc">
-          <p class="axq-h">어휘<small>쓸 수 있는 단어가 얼마나 되던가요?</small></p>
+          <p class="axq-h">語彙<small>使える語はどれくらいありましたか？</small></p>
           <div class="axq-opts" data-group="ax-voc" data-pick="single" data-sync-id="ax-voc" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="아주 단순한 단어로 하고 싶은 말을 전할 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">쓸 단어가 없어 자주 멈췄어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="하고 싶은 말에 맞는 단어를 두세 개쯤 알고 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">쉬운 단어로 겨우 돌려 말했어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="하고 싶은 말에 맞는 단어를 골라 쓸 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">하려는 말에 맞는 단어를 찾아 썼어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="하고 싶은 말을 여러 가지 단어로 바꿔 표현할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">같은 말을 여러 가지로 바꿔 썼어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="상황에 맞는 다양한 단어와 표현을 자유롭게 써요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">상황에 딱 맞는 표현까지 골라 썼어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="とても簡単な語で、言いたいことを伝えられます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">使う語がなくて、よく止まりました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="言いたいことに合う語を、二つ三つほど知っています"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">やさしい語で、なんとか言い換えていました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="言いたいことに合う語を選んで使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">言おうとすることに合う語を探して使えました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="言いたいことを、いろいろな語に言い換えられます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">同じことをいろいろに言い換えていました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="場面に合う多様な語と表現を自由に使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">場面にぴったり合う表現まで選んで使えました</span></button>
           </div>
         </div>
         <div class="axq" data-ax="flu">
-          <p class="axq-h">유창성<small>말이 얼마나 이어졌나요?</small></p>
+          <p class="axq-h">流暢さ<small>話はどれくらい続きましたか？</small></p>
           <div class="axq-opts" data-group="ax-flu" data-pick="single" data-sync-id="ax-flu" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="익숙한 주제로 더듬더듬 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">자주 멈추고 다시 시작했어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="익숙한 주제라면 천천히 이야기를 주고받을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">말 사이에 쉬는 때가 많았어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="익숙한 주제라면 주저 없이 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">가끔 멈추지만 이어서 말했어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="처음 보는 주제에도 주저 없이 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">거의 안 멈추고 대화를 이어갔어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="어떤 주제든 빠르고 편하게 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">한국인처럼 편하게 말했어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="慣れた話題なら、たどたどしくでも話せます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">よく止まっては言い直していました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="慣れた話題なら、ゆっくりやりとりできます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">言葉の間に止まることが多くありました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="慣れた話題なら、ためらわず話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">たまに止まりますが、続けて話せました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="はじめての話題でも、ためらわず話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">ほとんど止まらず会話を続けました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="どんな話題でも、速く楽に話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">韓国の方のように楽に話していました</span></button>
           </div>
         </div>
         <div class="axq" data-ax="pron">
-          <p class="axq-h">발음<small>학생 말을 알아듣기 어땠나요?</small></p>
+          <p class="axq-h">発音<small>学習者の話は聞き取りやすかったですか？</small></p>
           <div class="axq-opts" data-group="ax-pron" data-pick="single" data-sync-id="ax-pron" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="아는 단어도 신경 써서 말해야 알아들을 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">발음 때문에 알아듣기 어려웠어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="아는 단어는 말할 수 있지만, 처음 보는 단어는 발음이 어려워요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">가끔 알아듣기 어려웠어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="아는 단어는 능숙하고, 처음 보는 단어도 소리 내어 읽을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">알아들을 만하고 대체로 또렷했어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="발음이 능숙하고 억양과 리듬도 알맞아요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">아주 또렷했어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="발음이 또렷하고 억양과 리듬까지 자연스러워요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">한국인처럼 들렸어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="知っている語でも、気をつけて言わないと聞き取れません"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">発音のせいで聞き取りにくいところがありました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="知っている語は言えますが、はじめての語は発音が難しいです"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">たまに聞き取りにくいところがありました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="知っている語は滑らかで、はじめての語も声に出して読めます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">聞き取れて、おおむねはっきりしていました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="発音が滑らかで、イントネーションとリズムも合っています"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">とてもはっきりしていました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="発音がはっきりしていて、イントネーションとリズムまで自然です"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">韓国の方のように聞こえました</span></button>
           </div>
         </div>
         <div class="axq" data-ax="lis">
-          <p class="axq-h">듣기<small>제 말을 알아듣게 하려고 얼마나 늦췄나요?</small></p>
+          <p class="axq-h">リスニング<small>聞き取ってもらうのに、どれだけ速さを落としましたか？</small></p>
           <div class="axq-opts" data-group="ax-lis" data-pick="single" data-sync-id="ax-lis" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="천천히 또박또박 말해도 알아듣기 어려워요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">제 말을 거의 못 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="천천히 또박또박 말하면 알아들을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">아주 천천히 말해야 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="조금 늦춰 말하면 전체 내용을 알아들을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">조금 천천히 말하면 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="보통 속도로 말해도 뉘앙스까지 이해할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">평소보다 조금만 늦춰도 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="한국인 속도로 말해도 뉘앙스까지 정확히 알아들어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">평소 속도로 말해도 알아들었어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="ゆっくりはっきり話しても、聞き取るのが難しいです"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">私の話をほとんど聞き取れませんでした</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="ゆっくりはっきり話せば聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">とてもゆっくり話してやっと聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="少し速さを落として話せば、全体の内容を聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">少しゆっくり話せば聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="ふつうの速さで話してもニュアンスまで理解できます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">いつもより少し落とすだけで聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="韓国の方の速さで話しても、ニュアンスまで正確に聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">いつもの速さで話しても聞き取れました</span></button>
           </div>
         </div>
-          <p class="axq-done">다섯 항목을 다 봤어요. 위를 눌러 다시 고칠 수 있어요.</p>
+          <p class="axq-done">五つの項目を見終わりました。上を押せば直せます。</p>
         </div>
 
         <!-- 다섯 줄 · 좋아요/아쉬운 점 · 추천 모두 renderAspects() 가 그린다 -->
@@ -754,19 +772,19 @@
              배율에서도 또렷하고 파일도 가볍다. 어휘만 PNG 인데, 그쪽은 Figma 에서
              조각 다섯으로 나뉘어 나와 한 파일로 합쳐야 해서 아직 래스터다. -->
         <div class="ax-src" hidden>
-          <img data-ax="acc" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ax-acc.svg" alt="">
-          <img data-ax="voc" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ax-voc.png" alt="">
-          <img data-ax="flu" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ax-flu.svg" alt="">
-          <img data-ax="pron" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ax-pron.svg" alt="">
-          <img data-ax="lis" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ax-lis.svg" alt="">
+          <img data-ax="acc" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-acc.svg" alt="">
+          <img data-ax="voc" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-voc.png" alt="">
+          <img data-ax="flu" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-flu.svg" alt="">
+          <img data-ax="pron" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-pron.svg" alt="">
+          <img data-ax="lis" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-lis.svg" alt="">
         </div>
         <div class="axsum">
-          <div class="axs good"><h4><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/good.svg" alt="">잘하고 있어요!</h4><ul></ul></div>
-          <div class="axs weak"><h4><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/bad.svg" alt="">아쉬워요!</h4><ul></ul></div>
+          <div class="axs good"><h4><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/good.svg" alt="">よくできています！</h4><ul></ul></div>
+          <div class="axs weak"><h4><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/bad.svg" alt="">もう一歩です！</h4><ul></ul></div>
         </div>
         <!-- 코멘트 한 문단 · 잘하는 둘과 아쉬운 둘을 한 문장으로 잇고, 그 둘을
              기르는 방법까지 붙인다. 위 두 상자가 「무엇」 이라면 여기는 「그래서」 다. -->
-        <div class="axtip"><h4><i class="axtip-i" aria-hidden="true">✦</i>체험레슨 코멘트</h4><p></p></div>
+        <div class="axtip"><h4><i class="axtip-i" aria-hidden="true">✦</i>体験レッスンのコメント</h4><p></p></div>
       </div>
 
       <!-- ③ 이대로만 따라오면 돼요 · 기간과 길을 한 덩어리로
@@ -779,48 +797,48 @@
            칸이 아니라, 지금 선 마디가 무슨 코스인지를 따로 펴는 카드다.
            원안: trial/_experiments/trial-report-plan-merge-variations.html ① -->
       <div class="rsec pm-card" data-sync-id="plan-roadstep" data-sync-kind="roadstep">
-        <h3 class="rsec-h">이대로만 따라오면 돼요</h3>
+        <h3 class="rsec-h">このとおり進めば大丈夫</h3>
 
         <div class="pm-fuse">
           <div class="tiles">
             <div class="tile">
-              <span class="tile-k">목표 달성까지</span>
-              <span class="tile-v"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cal.svg" alt=""><b class="eta">—</b></span>
+              <span class="tile-k">目標達成まで</span>
+              <span class="tile-v"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cal.svg" alt=""><b class="eta">—</b></span>
             </div>
             <div class="tile">
-              <span class="tile-k">예상 레슨</span>
-              <span class="tile-v"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/course.svg" alt=""><b>약 <span class="need">—</span>회</b></span>
+              <span class="tile-k">予想レッスン</span>
+              <span class="tile-v"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/course.svg" alt=""><b>約 <span class="need">—</span>回</b></span>
             </div>
           </div>
 
           <!-- 레일 · 말풍선을 떼고 눈금 일곱을 깔았다. 슬라이더가 길 바로 위에
                붙어 있어 「이 지도의 손잡이」 로 읽힌다. -->
           <div class="freq pm-freq pm-rail">
-            <span class="freq-k">매주</span>
+            <span class="freq-k">毎週</span>
             <div class="freq-row">
-              <p class="freq-h"><b class="freq-n">3</b>회</p>
+              <p class="freq-h"><b class="freq-n">3</b>回</p>
               <div class="freq-slot">
                 <span class="pm-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
                 <input class="freq-range" type="range" min="1" max="7" step="1" value="3"
-                       data-sync-id="plan-freq" aria-label="매주 몇 번">
+                       data-sync-id="plan-freq" aria-label="毎週何回">
                 <span class="pm-nums" aria-hidden="true"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i></span>
               </div>
             </div>
           </div>
         </div>
 
-        <a class="rep-jump rj-course" href="#p-goal"><span class="rj-b"><span class="rj-t">—</span><span class="rj-s">눌러서 고르러 가기</span></span></a>
+        <a class="rep-jump rj-course" href="#p-goal"><span class="rj-b"><span class="rj-t">—</span><span class="rj-s">タップして選びに行く</span></span></a>
 
         <!-- 코스 커버 여섯 장 · 마디마다 갈아 끼울 그림을 마크업에 한 번씩 적어
              둔다. 패키저는 마크업의 src 만 번들·평탄화하므로, JS 가 경로를
              지어내면 로컬에서만 되고 보드에서 404 가 난다. 여기서 골라 쓴다. -->
         <div class="cov-src" hidden>
-          <img data-cov="hangul" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cov-hangul.png" alt="">
-          <img data-cov="core" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cov-core.png" alt="">
-          <img data-cov="travel" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cov-travel.png" alt="">
-          <img data-cov="drama" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cov-drama.png" alt="">
-          <img data-cov="banmal" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cov-banmal.png" alt="">
-          <img data-cov="free" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cov-free.png" alt="">
+          <img data-cov="hangul" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-hangul.png" alt="">
+          <img data-cov="core" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-core.png" alt="">
+          <img data-cov="travel" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-travel.png" alt="">
+          <img data-cov="drama" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-drama.png" alt="">
+          <img data-cov="banmal" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-banmal.png" alt="">
+          <img data-cov="free" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-free.png" alt="">
         </div>
 
         <!-- 코스 전용 그림과 장면 사진 · 상황별 코스는 대사가 오간 자리를 사진 석
@@ -829,31 +847,31 @@
              패키저는 마크업의 src 만 번들·평탄화하므로, JS 가 경로를 지어내면
              로컬에서만 되고 보드에서 404 가 난다. -->
         <div class="ico-src" hidden>
-          <img data-ico="hangul" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ic-hangul.png" alt="">
-          <img data-ico="core"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ic-core.png" alt="">
-          <img data-ico="free"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ic-free.png" alt="">
-          <img data-ico="drama"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ic-drama.png" alt="">
-          <img data-ico="goal"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/ic-goal.png" alt="">
+          <img data-ico="hangul" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-hangul.png" alt="">
+          <img data-ico="core"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-core.png" alt="">
+          <img data-ico="free"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-free.png" alt="">
+          <img data-ico="drama"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-drama.png" alt="">
+          <img data-ico="goal"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-goal.png" alt="">
         </div>
         <div class="pic-src" hidden>
-          <img data-pic="drama1"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/drama-1.png" alt="">
-          <img data-pic="drama2"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/drama-2.png" alt="">
-          <img data-pic="drama3"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/drama-3.png" alt="">
-          <img data-pic="travel1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/travel-1.png" alt="">
-          <img data-pic="travel2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/travel-2.png" alt="">
-          <img data-pic="travel3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/travel-3.png" alt="">
-          <img data-pic="banmal1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/banmal-1.png" alt="">
-          <img data-pic="banmal2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/banmal-2.png" alt="">
-          <img data-pic="banmal3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/banmal-3.png" alt="">
-          <img data-pic="free1"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/free-1.png" alt="">
-          <img data-pic="free2"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/free-2.png" alt="">
-          <img data-pic="free3"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/free-3.png" alt="">
+          <img data-pic="drama1"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/drama-1.png" alt="">
+          <img data-pic="drama2"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/drama-2.png" alt="">
+          <img data-pic="drama3"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/drama-3.png" alt="">
+          <img data-pic="travel1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel-1.png" alt="">
+          <img data-pic="travel2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel-2.png" alt="">
+          <img data-pic="travel3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel-3.png" alt="">
+          <img data-pic="banmal1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/banmal-1.png" alt="">
+          <img data-pic="banmal2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/banmal-2.png" alt="">
+          <img data-pic="banmal3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/banmal-3.png" alt="">
+          <img data-pic="free1"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/free-1.png" alt="">
+          <img data-pic="free2"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/free-2.png" alt="">
+          <img data-pic="free3"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/free-3.png" alt="">
         </div>
 
         <div class="road-card pm-road">
           <div class="road">
-            <span class="road-k">추천 코스</span>
-            <svg class="road-svg" viewBox="0 -4 270 122" role="img" aria-label="지금부터 목표까지의 코스 길"></svg>
+            <span class="road-k">おすすめコース</span>
+            <svg class="road-svg" viewBox="0 -4 270 122" role="img" aria-label="今から目標までのコースの道のり"></svg>
           </div>
 
           <div class="curli"></div>
@@ -861,9 +879,9 @@
           <!-- 앞뒤로만 움직인다. 로드맵은 순서가 전부라, 목록으로 흩어 놓으면
                「그다음」 이 사라진다. -->
           <div class="rc-nav">
-            <button class="rc-btn rc-prev" type="button">← 이전</button>
+            <button class="rc-btn rc-prev" type="button">← 前へ</button>
             <span class="rc-dots"></span>
-            <button class="rc-btn rc-next" type="button">다음 →</button>
+            <button class="rc-btn rc-next" type="button">次へ →</button>
           </div>
         </div>
       </div>
@@ -877,8 +895,8 @@
            덱은 부모 창(보드)으로 보내기만 하고, 백엔드에 남기는 일은 앱이 한다.
            보내는 값과 le_level_test 컬럼 대응: ../report-submit.md -->
       <div class="rep-send">
-        <span class="rep-send-h">리포트 저장 <small>튜터만 보여요</small></span>
-        <button class="rs-btn" type="button" disabled>리포트 저장하기</button>
+        <span class="rep-send-h">レポート保存 <small>先生のみ表示</small></span>
+        <button class="rs-btn" type="button" disabled>レポートを保存する</button>
         <p class="rs-msg"></p>
       </div>
     </div>
@@ -897,7 +915,7 @@
     <div class="brand-page bleed" id="p-info" data-page-id="info-intro">
       <h2 class="brand-title">ポドについての<br>ご案内</h2>
       <p class="brand-sub">気になるところを説明しますね。</p>
-      <img class="brand-art menu" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/podo-3d-greet.png" alt="">
+      <img class="brand-art menu" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-3d-greet.png" alt="">
     </div>
 
     <!-- 포도가 어떤 회사인지 · 처음 듣는 이름이라 여기서 한 번 세운다.
@@ -912,7 +930,7 @@
           <span class="badge-dark">KOSDAQ上場企業</span>
           <span class="badge-dark">教育専門企業</span>
         </span>
-        <img class="fact-logo" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/day1-company.svg" alt="DAY1 COMPANY" width="190" height="30">
+        <img class="fact-logo" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/day1-company.svg" alt="DAY1 COMPANY" width="190" height="30">
         <p class="fact-s">PODOスピーキングは、KOSDAQ上場のエドテック企業<br>Day1Companyが運営する外国語教育サービスです。</p>
       </div>
 
@@ -933,42 +951,42 @@
         <p class="rev-h">日本語レビュー</p>
         <div class="revgrid">
         <div class="rev hl">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-1.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-1.jpg" alt="">
           <span class="t">ワーホリ準備中なら必読</span>
           <span class="w">TOKYOジャドゥネ<i>YouTube 12.7万人</i></span>
         </div>
         <div class="rev hl">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-2.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-2.jpg" alt="">
           <span class="t">4ヶ国語話者のおすすめレッスン</span>
           <span class="w">ハンカムカップル<i>YouTube 8.69万人</i></span>
         </div>
         <div class="rev">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-3.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-3.jpg" alt="">
           <span class="t">日本語専門6万人YouTuberの本音</span>
           <span class="w">ヘナリ<i>YouTube 6.39万人</i></span>
         </div>
         <div class="rev">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-4.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-4.jpg" alt="">
           <span class="t">ひらがなも知らずJLPT聴解満点</span>
           <span class="w">ホンパン<i>YouTube 1万人</i></span>
         </div>
         <div class="rev">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-5.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-5.jpg" alt="">
           <span class="t">初心者でもワーホリ一発合格</span>
           <span class="w">ジイ’s スケッチ</span>
         </div>
         <div class="rev">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-6.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-6.jpg" alt="">
           <span class="t">1万人YouTuber留学生が推薦</span>
           <span class="w">モニカワールド<i>YouTube 1万人</i></span>
         </div>
         <div class="rev">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-7.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-7.jpg" alt="">
           <span class="t">独学3ヶ月で話せるように</span>
           <span class="w">プロ独学者のレビュー</span>
         </div>
         <div class="rev hl">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/jp-8.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-8.jpg" alt="">
           <span class="t">旅行前に絶対これ！</span>
           <span class="w">センシャル senn’sharu</span>
         </div>
@@ -977,12 +995,12 @@
         <p class="rev-h">英語レビュー</p>
         <div class="revgrid tight">
         <div class="rev hl">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/en-1.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-1.jpg" alt="">
           <span class="t">IELTS講師おすすめのレッスン</span>
           <span class="w">JelloBello<i>TikTok 8.5万人</i></span>
         </div>
         <div class="rev hl">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/en-2.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-2.jpg" alt="">
           <span class="t">CAがPODOをすすめる理由</span>
           <span class="w">ミネ minae</span>
         </div>
@@ -992,17 +1010,17 @@
           <span class="w">ウォニバレー<i>Instagram 5.9万人</i></span>
         </div>
         <div class="rev">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/en-4.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-4.jpg" alt="">
           <span class="t">豪州留学4年目のおすすめ勉強法</span>
           <span class="w">ジヘDAISY<i>YouTube 1.02万人</i></span>
         </div>
         <div class="rev hl">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/en-5.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-5.jpg" alt="">
           <span class="t">海外営業マンのガチ会話レビュー</span>
           <span class="w">メメ<i>YouTube 2,700人</i></span>
         </div>
         <div class="rev hl">
-          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/en-6.jpg" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-6.jpg" alt="">
           <span class="t">現役看護学生の英会話勉強法</span>
           <span class="w">ボテングル<i>YouTube 1,790人</i></span>
         </div>
@@ -1040,7 +1058,7 @@
 
       <div class="ocard">
         <p class="sub-h">今日の1:1レッスンは、消えずに残ります。</p>
-        <div class="shot"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/p-report-preview.png" alt=""></div>
+        <div class="shot"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/p-report-preview.png" alt=""></div>
         <div class="fact fill">
           <span class="badge-green">アプリでのワンクリックですぐ確認可能</span>
           <p class="fact-t">あなただけの韓国語 診断レポート</p>
@@ -1061,7 +1079,7 @@
       <p class="limebar">ハングルからフリートークまで、<br>体系的な会話特化の学習設計</p>
 
       <div class="cu-rail">
-        <img class="cu-rail-podo" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/rail-podo.png" alt="">
+        <img class="cu-rail-podo" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/rail-podo.png" alt="">
         <div class="cu-rl on"><span class="cu-rl-pill">1</span><span class="cu-rl-lb">ハングル</span></div>
         <div class="cu-rl"><span class="cu-rl-pill">2</span><span class="cu-rl-lb">パターン</span></div>
         <div class="cu-rl"><span class="cu-rl-pill">3</span><span class="cu-rl-lb">話し方</span></div>
@@ -1135,19 +1153,19 @@
             <div class="cu-demo-b">
               <div class="cu-courses">
                 <div class="cu-course drama">
-                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cu-ic-drama.png" alt=""></span><span class="cu-cnm">ドラマ</span><span class="cu-cct">40レッスン</span></div>
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-drama.png" alt=""></span><span class="cu-cnm">ドラマ</span><span class="cu-cct">40レッスン</span></div>
                   <div class="cu-cex"><span class="cu-ck">우리 어디서 본 적 있지 않아요?</span><span class="cu-cg">~ㄴ 적 있다</span></div>
                 </div>
                 <div class="cu-course kpop">
-                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cu-ic-kpop.png" alt=""></span><span class="cu-cnm">K-POP</span><span class="cu-cct">41レッスン</span></div>
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-kpop.png" alt=""></span><span class="cu-cnm">K-POP</span><span class="cu-cct">41レッスン</span></div>
                   <div class="cu-cex"><span class="cu-ck">제 최애는 민지예요.</span><span class="cu-cg">A는 B예요</span></div>
                 </div>
                 <div class="cu-course travel">
-                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cu-ic-travel.png" alt=""></span><span class="cu-cnm">旅行</span><span class="cu-cct">40レッスン</span></div>
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-travel.png" alt=""></span><span class="cu-cnm">旅行</span><span class="cu-cct">40レッスン</span></div>
                   <div class="cu-cex"><span class="cu-ck">혹시 명동역이 어디지 아세요?</span><span class="cu-cg">~인지 알다</span></div>
                 </div>
                 <div class="cu-course talk">
-                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/cu-ic-talk.png" alt=""></span><span class="cu-cnm">タメ口しゃべり</span><span class="cu-cct">19レッスン</span></div>
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-talk.png" alt=""></span><span class="cu-cnm">タメ口しゃべり</span><span class="cu-cct">19レッスン</span></div>
                   <div class="cu-cex"><span class="cu-ck">너 지금 어디 가는 거야?</span><span class="cu-cg">~는 거야?</span></div>
                 </div>
               </div>
@@ -1164,11 +1182,11 @@
             <div class="cu-demo-h">毎週新しいトピック / 文化の違い</div>
             <div class="cu-demo-b">
               <div class="cu-topics">
-                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/topic-1.png" alt=""><span>価値観 &amp; 人生</span></div>
-                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/topic-2.png" alt=""><span>社会 &amp; 時事</span></div>
-                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/topic-3.png" alt=""><span>文化 &amp; 好み</span></div>
-                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/topic-4.png" alt=""><span>関係 &amp; 感情</span></div>
-                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/topic-5.png" alt=""><span>未来 &amp; 想像</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-1.png" alt=""><span>価値観 &amp; 人生</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-2.png" alt=""><span>社会 &amp; 時事</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-3.png" alt=""><span>文化 &amp; 好み</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-4.png" alt=""><span>関係 &amp; 感情</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-5.png" alt=""><span>未来 &amp; 想像</span></div>
                 <div class="cu-tp more"><span>毎週更新される<br>新規トピック+</span></div>
               </div>
             </div>
@@ -1194,12 +1212,12 @@
         <p class="cu-t">毎日1レッスンなら、1週間に7人</p>
         <p class="cu-s">気の合うチューターに続けて会っても、毎日ちがうチューターと話しても大丈夫。同じテーマでも、相手が変わると話の中身も変わります。</p>
         <div class="week">
-          <div><span>火</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t2.jpg" alt=""></div>
-          <div><span>水</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t3.jpg" alt=""></div>
-          <div><span>木</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t4.jpg" alt=""></div>
-          <div><span>金</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t5.jpg" alt=""></div>
-          <div><span class="sat">土</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t6.jpg" alt=""></div>
-          <div><span class="sun">日</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t7.jpg" alt=""></div>
+          <div><span>火</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t2.jpg" alt=""></div>
+          <div><span>水</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t3.jpg" alt=""></div>
+          <div><span>木</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t4.jpg" alt=""></div>
+          <div><span>金</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t5.jpg" alt=""></div>
+          <div><span class="sat">土</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t6.jpg" alt=""></div>
+          <div><span class="sun">日</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t7.jpg" alt=""></div>
         </div>
       </div>
 
@@ -1209,17 +1227,17 @@
           <div class="tg-head"><span class="tg-tag">K-ドラマ・K-POP</span><p>好きなジャンルで学びたい方</p></div>
           <div class="tutgrid">
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t1.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t1.jpg" alt="">
               <span class="nm">チェ・ミンソ 先生</span>
               <span class="tags"><span>JLPT N1</span><span>韓国語教育学科</span></span>
             </div>
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t2.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t2.jpg" alt="">
               <span class="nm">パク・ジェミン 先生</span>
               <span class="tags"><span>JLPT N1</span><span>フリートーク</span></span>
             </div>
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t5.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t5.jpg" alt="">
               <span class="nm">パク・サンハ 先生</span>
               <span class="tags"><span>JLPT N1</span><span>歌詞の書き取り</span></span>
             </div>
@@ -1229,17 +1247,17 @@
           <div class="tg-head"><span class="tg-tag">韓国旅行</span><p>現地で話してみたい方</p></div>
           <div class="tutgrid">
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t3.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t3.jpg" alt="">
               <span class="nm">カン・ドンオ 先生</span>
               <span class="tags"><span>JLPT N1</span><span>旅行業3年</span></span>
             </div>
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t6.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t6.jpg" alt="">
               <span class="nm">ホ・ジヘ 先生</span>
               <span class="tags"><span>JLPT N1</span><span>ソウル在住</span></span>
             </div>
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t8.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t8.jpg" alt="">
               <span class="nm">カン・ソクジュン 先生</span>
               <span class="tags"><span>JLPT N2</span><span>釜山のなまり</span></span>
             </div>
@@ -1249,17 +1267,17 @@
           <div class="tg-head"><span class="tg-tag">超入門</span><p>ハングルから始める方</p></div>
           <div class="tutgrid">
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t4.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t4.jpg" alt="">
               <span class="nm">キム・ジウ 先生</span>
               <span class="tags"><span>JLPT N1</span><span>教員資格2級</span></span>
             </div>
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t9.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t9.jpg" alt="">
               <span class="nm">ソン・ハユン 先生</span>
               <span class="tags"><span>JLPT N2</span><span>指導歴5年</span></span>
             </div>
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t10.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t10.jpg" alt="">
               <span class="nm">キム・ジンソク 先生</span>
               <span class="tags"><span>JLPT N1</span><span>発音の矯正</span></span>
             </div>
@@ -1269,12 +1287,12 @@
           <div class="tg-head"><span class="tg-tag">ビジネス</span><p>仕事や実務で使う方</p></div>
           <div class="tutgrid short">
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t7.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t7.jpg" alt="">
               <span class="nm">パク・テヒョン 先生</span>
               <span class="tags"><span>JLPT N1</span><span>ビジネス9年</span></span>
             </div>
             <div class="tcard">
-              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/t11.jpg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t11.jpg" alt="">
               <span class="nm">イ・ジュンホ 先生</span>
               <span class="tags"><span>JLPT N1</span><span>TOPIK指導</span></span>
             </div>
@@ -1450,7 +1468,7 @@
         <path id="endArch" d="M 70 255 Q 237 135 404 258" fill="none"></path>
         <text><textPath href="#endArch" startOffset="50%" text-anchor="middle">本日はお疲れさまでした！</textPath></text>
       </svg>
-      <img class="end-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/podo-3d-bye.png" alt="">
+      <img class="end-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-3d-bye.png" alt="">
       <div class="end-card">
         <div class="end-bar"><span>Welcome to PODO</span><span class="end-check">✓</span></div>
         <p class="end-title"><span class="hl">体験レッスン</span>は<br>ここまでです！</p>
@@ -1475,16 +1493,24 @@
        ================================================================ -->
 
   <!-- ACTIVITIES · 공통 배선 + 한글 활동(타일·조립). 공유 스크립트. -->
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/activities.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/hangul-activities.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/activities.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/hangul-activities.js"></script>
 
+
+  <!-- REPORT LOCALE · 리포트에 실릴 문안(레벨표·항목·코스·기간 단위)의 일본어
+       판본. report.js 는 시작할 때 window.PODO_REPORT_LOCALE 을 한 번만 읽으므로
+       **반드시 report.js 보다 먼저** 와야 한다 — 순서가 뒤집히면 한국어 기본표가
+       그대로 그려지고, 아무 에러도 나지 않는다.
+       한국어 판본은 report.js 안의 기본값이 그대로다(사내 확인용으로
+       ../reports/trial-1-report.html 이 그쪽을 부른다). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/report-ja.js"></script>
 
   <!-- REPORT · 리포트·안내 페이지의 배선. 공유 스크립트. -->
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/report.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/report.js"></script>
 
   <!-- REPORT SUBMIT · 리포트를 그대로 백엔드에 남기는 버튼. 스냅샷을 report.js
        가 짓기 때문에 반드시 그 뒤에 와야 한다. 공유 스크립트. -->
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/report-submit.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/report-submit.js"></script>
 
   <!-- ================================================================
        PAGER · 한 장씩 넘겨 보는 모드
@@ -1511,25 +1537,25 @@
        stay local.
        ================================================================ -->
   <!-- PAGER · 한 장씩 넘기기 + 스크러버. 공유 스크립트. -->
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/pager.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/pager.js"></script>
 
   <!-- SCRIPT LINES · 대사를 문장 단위로 짝지어 세운다. 형광펜보다 먼저 —
        형광펜은 로드 때 글 블록에 번호를 매기므로 DOM 이 먼저 확정돼야 한다. -->
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/script-lines.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/script-lines.js"></script>
 
   <!-- SPOTLIGHT · 손가락 포인터 (그리기 대신 "여기 보세요"). 공유 스크립트. -->
-  <script src="spotlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/spotlight.js"></script>
 
   <!-- TUTOR NOTES · 페이지마다 메모 한 칸. 비어 있으면 아무에게도 안 보이고,
        튜터가 쓰는 순간 양쪽에 뜬다. 보드 기본 kind("value")를 그대로 쓰므로
        등록할 것이 없다 — 전송도 IME 도 보드가 한다. 페이저 뒤에 두는 것이
        중요하다: 페이지를 다 세고 난 뒤에 칸을 끼워 넣어야 한다. -->
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/tutor-notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/tutor-notes.js"></script>
 
   <!-- HIGHLIGHT · 글자에 긋는 형광펜. 그은 자국이 상대 화면에도 남는다.
        ja→ko 툴팁 뒤에 와야 한다 — 그쪽이 로드 때 텍스트 노드를 읽어 data-ko 를
        붙이고, 형광펜은 그 뒤로 <mark> 을 끼워 넣기 때문이다. -->
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/highlight.js"></script>
 
   <!-- STAMP · 참! 잘했어요. stamp.js 가 이 그림을 페이지마다, 그리고 페이저
        버튼 안에 복제한다. 경로를 쓰는 곳이 여기 하나뿐인 게 중요하다:
@@ -1538,8 +1564,8 @@
        중요하다 — 페이저는 .phone 의 자식을 페이지로 세기 때문에, 안에 넣으면
        빈 페이지가 하나 생긴다. (이 주석에 경로 표기를 그대로 쓰면 패키저가
        주석까지 훑어 없는 파일을 찾으므로, 말로만 적는다.) -->
-  <img class="stamp-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/assets/well-done.svg" alt="">
-  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.19.0/js/stamp.js"></script>
+  <img class="stamp-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/well-done.svg" alt="">
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/stamp.js"></script>
 
 </body>
 </html>

@@ -8,7 +8,7 @@
 
 - **Track:** `1-core-patterns`
 - **Stable review id:** `CORE-10`
-- **Level:** Pre-A1 → A1
+- **Level:** A1
 
 ## Outcome
 

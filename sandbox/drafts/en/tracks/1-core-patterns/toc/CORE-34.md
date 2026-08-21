@@ -25,7 +25,7 @@
 ### Pattern 2
 
 - **Model:** I had too much coffee.
-- **Frame:** `I had too much ___.`
+- **Frame:** `I had too much/many ___.`
 
 ## Supporting content
 

@@ -108,6 +108,34 @@ fixed and receptive, replace it with known language, or move it later.
 
 `Would you mind ___ing?` passes at B1 when the `-ing` choice is supported. `We ___ed ___ last night` is weaker: so little meaningful language remains fixed that it behaves more like a past-tense formula than a retrievable speaking frame.
 
+### Record an explicit audit disposition
+
+When reviewing an existing curriculum row, record one of five outcomes rather than silently
+polishing its examples:
+
+- **Keep** — both frames already pass the purpose, range, transfer, load and pair tests.
+- **Broaden** — keep the communicative move, but widen the slot or exemplar set so the learner
+  makes more than a one-word lexical substitution.
+- **Reframe** — replace a fixed expression or grammar formula with a retrievable conversational
+  anchor that serves the same can-do.
+- **Merge** — two narrow rows are better taught as one coherent lesson with two cooperating frames.
+- **Cut/replace** — the row has no worthwhile transferable production target at this point in the
+  sequence.
+
+“Four possible nouns fit the blank” is not by itself evidence of range. The completions should
+vary meaningfully in structure, semantic type, inflection, or communicative consequence while the
+fixed frame remains useful. Conversely, maximum slot width is not the goal: a bounded request such
+as `Could I have ___?` is a strong pattern when it supports many real requests at the learner's
+level.
+
+Curriculum approval and activity approval are separate gates. A good pattern can still be taught
+through a mechanical activity, and an interactive page cannot rescue a weak pattern. On every
+repeated two-branch choice page, both taught alternatives must be correct somewhere; if every row
+has the same correct answer, vary the decision or omit the page. From A1 onward, a teaching set
+must also vary by more than one aligned word unless the form itself makes that narrow contrast the
+lesson's honest target. `check_deck.py` enforces these objective activity-level failures, while the
+five audit dispositions remain a curriculum-editor judgment recorded against the TOC.
+
 ## 5. Make the pair cooperate
 
 The two patterns should belong in the same small exchange. Strong pairings include:

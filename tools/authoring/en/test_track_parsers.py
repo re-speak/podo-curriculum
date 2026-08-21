@@ -15,7 +15,7 @@ import track_parsers
 class LiveCurriculumTests(unittest.TestCase):
     def test_all_tracks_parse_to_the_declared_size(self):
         expected = {
-            "1-core-patterns": 122,
+            "1-core-patterns": 119,
             "2-contextual-english": 60,
             "3-freetalking": 121,
             "4-pronunciation": 12,
@@ -34,8 +34,8 @@ class LiveCurriculumTests(unittest.TestCase):
         self.assertTrue(all("___" in pattern for lesson in lessons for pattern in lesson["patterns"]))
         self.assertTrue(all("___" not in model["model"] for lesson in lessons for model in lesson["models"]))
         self.assertEqual(len(lessons[0]["reviewRegistry"]), 20)
-        self.assertEqual(sum(bool(lesson["spiralReviews"]) for lesson in lessons), 98)
-        self.assertEqual(sum(len(lesson["spiralReviews"]) for lesson in lessons), 155)
+        self.assertEqual(sum(bool(lesson["spiralReviews"]) for lesson in lessons), 97)
+        self.assertEqual(sum(len(lesson["spiralReviews"]) for lesson in lessons), 154)
         self.assertTrue(all(len(lesson["spiralReviews"]) <= 2 for lesson in lessons))
         self.assertEqual(
             [(lesson["no"], lesson["boundedChunk"]) for lesson in lessons if lesson["boundedChunk"]],
@@ -48,8 +48,9 @@ class LiveCurriculumTests(unittest.TestCase):
 
     def test_early_core_models_close_prerequisite_leaks(self):
         lessons = {lesson["no"]: lesson for lesson in track_parsers.parse_core()}
-        self.assertEqual(lessons[1]["models"][1]["model"], "My name is Mina.")
-        self.assertEqual(lessons[2]["models"][1]["model"], "I'm an engineer.")
+        self.assertEqual(lessons[1]["patterns"], ["I'm ___.", "My ___ is ___."])
+        self.assertEqual(lessons[2]["patterns"], ["___ from ___.", "___ live(s) in ___."])
+        self.assertEqual(lessons[3]["patterns"], ["Is this ___?", "Are you ___?"])
         self.assertEqual(lessons[9]["patterns"][0], "Two ___, please.")
         self.assertEqual(lessons[21]["patterns"], ["Can I ___?", "Sure, you can ___."])
         self.assertEqual(lessons[22]["patterns"], ["I'd like ___, please.", "Can I have ___, please?"])
