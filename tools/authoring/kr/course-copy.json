@@ -22,7 +22,6 @@
     "track name, the level and the course's bare name, and all three sit inside",
     "the live catalogue's cover-title budget of ~22 characters."
   ],
-
   "courses": {
     "hangul-starter": {
       "description": {
@@ -30,7 +29,6 @@
         "ja": "子音・母音・パッチムを通って、街の看板が読めるところまで。"
       }
     },
-
     "core-beginner-1": {
       "description": {
         "ko": "이름을 주고받고, 눈앞의 사물과 사람을 묻고, 하루 일과와 안 하는 일까지 말한다.",
@@ -115,11 +113,28 @@
         "ja": "同じ方向に根拠を重ね、誇張と反転で言葉に力を持たせる。"
       }
     },
-
+    "ctx-drama-friends-intermediate": {
+      "description": {
+        "en": "Talk your way from a stranger into a close friend — take sides, ask favours, pick up the bill and share what you tell nobody else.",
+        "ja": "初対面から親友になるまでを話しきる。味方になり、気軽に頼み、おごり、誰にも言えない話を打ち明ける。"
+      }
+    },
     "ctx-drama-crush-intermediate": {
       "description": {
-        "en": "Hint at interest, read the other person, confess, and settle what you are — all in casual speech.",
-        "ja": "好意を遠回しに伝え、相手の気持ちを探り、告白し、関係を決める言葉をタメ口で言える。"
+        "en": "Hint at feelings that grew out of a friendship, read the other person, confess, and settle what you are — all in casual speech.",
+        "ja": "友だちのあいだに芽生えた気持ちを遠回しに伝え、相手の心を探り、告白し、関係を決める言葉をタメ口で言える。"
+      }
+    },
+    "ctx-drama-dating-intermediate": {
+      "description": {
+        "en": "Handle a relationship in Korean — pet names, anniversaries, introductions, looking after someone, and saying you were hurt without blaming.",
+        "ja": "恋人同士の呼び方・記念日・紹介・看病をタメ口でこなし、不満は相手を責めずに伝えられる。"
+      }
+    },
+    "ctx-drama-long-distance-intermediate": {
+      "description": {
+        "en": "Keep a relationship across a time zone — see someone off, work around the clock difference, video-call, say you miss them, and ask the question.",
+        "ja": "時差をまたいで関係を続ける。見送り、時間を合わせ、ビデオ通話し、会いたいと言い、そして最後の言葉を切り出す。"
       }
     },
     "ctx-drama-makeup-intermediate": {
@@ -212,7 +227,6 @@
         "ja": "友達の話に相づちを打ち、驚き、聞いた話を伝え、やわらかく反論し、からかい、慰めながら、会話を途切れさせずに続けられる。"
       }
     },
-
     "talk-between-two-countries-intermediate": {
       "description": {
         "en": "Explain and compare the Korea–Japan differences the two of you are each half an expert in.",
@@ -345,7 +359,6 @@
         "ja": "二つのうち一つを素早く選び、具体的な生活の場面と条件の変化で、その理由を長く説明する。"
       }
     },
-
     "pron-beginner": {
       "description": {
         "en": "Take only the contrasts a Japanese ear collapses, and repair them starting from listening.",

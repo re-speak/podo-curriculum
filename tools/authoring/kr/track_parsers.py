@@ -241,8 +241,13 @@ CTX_LESSON = re.compile(r"^\*\*(\d+) ?(?:화|레슨)? ?[·.] (.+?)\*\*\s*(.*)$")
 
 # Korean course names need romanised directory names; slugify() drops hangul.
 CTX_SLUGS = {
-    "설렘 & 고백": ("drama-crush", "Crush & confession", "ときめきと告白"),
-    "갈등 & 화해": ("drama-makeup", "Conflict & making up", "すれ違いと仲直り"),
+    "친구": ("drama-friends", "Becoming friends", "友だちになるまで"),
+    # `drama-crush` 는 코스 이름이 「설렘 & 고백」이던 때 붙은 슬러그다. 이름은
+    # 바뀌었지만 슬러그는 그대로 둔다 — 디렉터리를 바꿀 이유가 없고, 바꾸면
+    # courses/ 쪽 디렉터리까지 함께 움직여야 한다.
+    "썸 & 고백": ("drama-crush", "Crush & confession", "ときめきと告白"),
+    "연애": ("drama-dating", "Going out", "つきあう"),
+    "떨어져 있는 시간": ("drama-long-distance", "Time apart", "離れている時間"),
     "가족 & 일상": ("drama-family", "Family & everyday", "家族と日常"),
     "경계 & 갈등": ("drama-boundaries", "Boundaries & friction", "境界と衝突"),
     "케이팝 토크": ("kpop-talk", "K-pop talk", "K-POPトーク"),
