@@ -147,6 +147,61 @@
       "ko": "등장인물",
       "ja": "登場人物",
       "en": "Cast"
+    },
+    "allLevels": {
+      "ko": "전 레벨",
+      "ja": "全レベル",
+      "en": "All levels"
+    },
+    "keepAdding": {
+      "ko": "계속 추가",
+      "ja": "追加中",
+      "en": "Still growing"
+    },
+    "planOnly": {
+      "ko": "계획만 있음 · 현재 개발하지 않음",
+      "ja": "計画のみ · 現在は開発していません",
+      "en": "Planned only — not in development"
+    },
+    "openCatalog": {
+      "ko": "카탈로그 열기",
+      "ja": "カタログを開く",
+      "en": "Open catalog"
+    },
+    "growing": {
+      "ko": "계속 추가 중",
+      "ja": "追加中",
+      "en": "Still growing"
+    },
+    "live": {
+      "ko": "운영 중",
+      "ja": "提供中",
+      "en": "Live"
+    },
+    "countTracks": {
+      "ko": "트랙",
+      "ja": "トラック",
+      "en": "tracks"
+    },
+    "countCourses": {
+      "ko": "코스",
+      "ja": "コース",
+      "en": "courses"
+    },
+    "countLessons": {
+      "ko": "과",
+      "ja": "レッスン",
+      "en": "lessons"
+    },
+    "lessonWord": {
+      "ko": "과",
+      "ja": "レッスン",
+      "en": "lessons"
+    },
+    "deckWordShort": {
+      "ko": "교재",
+      "ja": "教材",
+      "en": "decks"
     }
   },
   "detail": {
@@ -239,6 +294,38 @@
       "ko": "이어서 물어보기",
       "ja": "続けて聞く",
       "en": "Follow-ups"
+    }
+  },
+  "level": {
+    "왕초급": {
+      "ko": "왕초급",
+      "ja": "超入門",
+      "en": "Starter"
+    },
+    "초급": {
+      "ko": "초급",
+      "ja": "初級",
+      "en": "Beginner"
+    },
+    "초중급": {
+      "ko": "초중급",
+      "ja": "初中級",
+      "en": "Upper beginner"
+    },
+    "중급": {
+      "ko": "중급",
+      "ja": "中級",
+      "en": "Intermediate"
+    },
+    "중고급": {
+      "ko": "중고급",
+      "ja": "中上級",
+      "en": "Upper intermediate"
+    },
+    "고급": {
+      "ko": "고급",
+      "ja": "上級",
+      "en": "Advanced"
     }
   }
 }

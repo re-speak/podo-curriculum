@@ -395,8 +395,6 @@
 
   <div class="nextrack" id="nextrack"></div>
   <footer>
-    이 페이지는 생성물입니다. 내용을 고치려면 <code id="src"></code> 를 고치고
-    <code>python3 korean/tools/build_catalog.py</code> 를 다시 실행하세요.
   </footer>
 
 </main>
@@ -411,16 +409,20 @@ const T = DATA.track, LEVELS = DATA.levels;
    전환되는 것은 화면의 말과, 덱이 이미 들고 있는 일본어 받침이다. */
 const I18N = DATA.i18n, LOCALES = ["ko", "ja", "en"];
 const LS_KEY = "podo-catalog-locale";
+const DEFAULT_LOCALE = "ja";
+/* 브라우저 언어를 보지 않는다. 지금 이 커리큘럼을 배우는 사람은 전부 일본어 화자라,
+   기기 설정이 영어인 일본인에게 영어를 내밀 이유가 없다. 시장이 늘면 그때 다시 본다. */
 function initialLocale() {
   try { const v = localStorage.getItem(LS_KEY); if (LOCALES.includes(v)) return v; } catch (e) {}
-  const n = (navigator.language || "").toLowerCase();
-  return n.startsWith("ja") ? "ja" : n.startsWith("ko") ? "ko" : "en";
+  return DEFAULT_LOCALE;
 }
 let L = initialLocale();
 /** i18n 표에서 한 줄. 없으면 한국어로 떨어진다 — 빈칸을 보여 주지 않는다. */
 const t = (sec, key) => ((I18N[sec] || {})[key] || {})[L] || ((I18N[sec] || {})[key] || {}).ko || "";
 /** {ko,ja,en} 을 든 값에서 지금 언어의 것. 없으면 있는 것 아무거나. */
 const loc = o => !o ? "" : (o[L] || o.ko || o.en || o.ja || "");
+/** 레벨 눈금 이름. 표에 없으면(영어 코스의 CEFR) 그대로 쓴다. */
+const lvName = lv => ((I18N.level || {})[lv] || {})[L] || lv;
 /** 일본어 받침은 일본어로 볼 때만 보여 준다. 한국어·영어 번역은 아직 없고,
     없는 것을 있는 척하지 않는다. */
 const showJa = () => L === "ja";
@@ -613,7 +615,7 @@ function detail(l) {
 
 function lessonRow(l, groupIndex, lessonIndex) {
   const c = chips(l);
-  const firstLabel = `첫 ${T.lessonWord}`;
+  const firstLabel = `${t("ui","lessonWord")} 1`;
   const sub = l.sub === firstLabel ? "" : l.sub || (c ? "" : l.can);
   const firstTag = l.first ? `<span class="first-tag">${esc(firstLabel)}</span>` : "";
   const no = String(l.n).padStart(2, "0");
@@ -628,7 +630,7 @@ function lessonRow(l, groupIndex, lessonIndex) {
   return `<div class="lesson" data-text="${esc([l.title, l.sub, l.can, l.scene, (l.chips||[]).join(" "), (l.notes||[]).map(n=>n.v).join(" ")].join(" ").toLowerCase())}">
     <div class="lrow">
       <button class="lrow-btn" type="button" aria-expanded="false" aria-controls="${detailId}">
-        <span class="lno">${esc(T.lessonWord)} ${no}</span>
+        <span class="lno">${esc(t("ui","lessonWord"))} ${no}</span>
         <span class="ltitle">${esc(loc(l.titles) || l.title)}${sub ? ` <em>— ${esc(sub)}</em>` : ""}${firstTag}</span>
         <span class="lchips">${c}</span>
       </button>
@@ -655,14 +657,14 @@ function group(g, index) {
   const bodyId = `group-${index + 1}-body`;
   const groupLevels = g.levels || (g.level ? [g.level] : []);
   const levelTags = groupLevels.map(lv =>
-    `<span class="lv-tag"><i style="background:${lvColor(lv)}"></i>${esc(lv)}</span>`).join("");
+    `<span class="lv-tag"><i style="background:${lvColor(lv)}"></i>${esc(lvName(lv))}</span>`).join("");
   return `<div class="group" data-lv="${esc(groupLevels.join(" "))}">
     <button class="ghead" type="button" aria-expanded="false" aria-controls="${bodyId}">
       <span class="gnum">${esc(g.label)}</span>
       <span class="gtitle">${esc(g.title)}${g.subtitle ? `<em>${esc(g.subtitle)}</em>` : ""}</span>
       <span class="gmeta">${g.peak ? `<span>핵심 ${g.peak}과까지</span>` : ""}${g.form ? `<span>${esc(g.form)}</span>` : ""}
         ${levelTags}
-        <span>${g.lessons.length}${esc(T.lessonWord)}</span><span class="caret"></span></span>
+        <span>${g.lessons.length} ${esc(t("ui","lessonWord"))}</span><span class="caret"></span></span>
     </button>
     <div class="gbody" id="${bodyId}">
       ${head}

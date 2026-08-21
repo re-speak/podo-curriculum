@@ -66,7 +66,6 @@ import model  # noqa: E402
 
 REPO = model.REPO
 TEMPLATES = REPO / "tools" / "catalog"
-SOURCE_URL = "https://github.com/re-speak/podo-curriculum/blob/main"
 
 # 이 사이트가 서빙될 도메인. 값이 있으면 gh-pages 에 CNAME 으로 나간다.
 #
@@ -81,7 +80,8 @@ SOURCE_URL = "https://github.com/re-speak/podo-curriculum/blob/main"
 #   2. 여기에 도메인을 적고 릴리스한다
 #   3. Settings → Pages 에서 DNS check 가 초록이 되면 Enforce HTTPS 를 켠다
 CUSTOM_DOMAIN = "curriculum.podospeaking.com"
-REPO_URL = "https://github.com/re-speak/podo-curriculum"
+# 저장소 링크는 카탈로그에 두지 않는다. 이 사이트는 학습자가 보는 곳이고, 소스로
+# 나가는 문은 읽는 사람에게 할 일을 주지 않으면서 내부 사정만 드러낸다.
 
 # 레벨의 원본은 course.yaml 의 `# podo:level:` 주석 한 줄이다. 스키마가 metadata 에
 # 새 필드를 막아서 주석으로 사는 값이고, tools/authoring/kr/new_lesson.py 가 덱의
@@ -188,34 +188,60 @@ LANGUAGES = {
     "kr": {
         "dir": "korean-jp",
         "nav": "한국어",
-        "title": "커리큘럼 카탈로그 · PODO 한국어",
-        "kicker": "PODO · 한국어 커리큘럼",
-        "h1": "개 과가<br>지금 수업에서 열립니다",
-        "lead": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
-                "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
-                "수업에서 열리는 파일 그대로 볼 수 있습니다.",
-        "tracksH": "학습 트랙",
-        "tracksP": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.",
-        "foot": "PODO · 한국어 커리큘럼 — 일본어 학습자를 위한 한국어 코스",
+        "title": {"ko": "커리큘럼 카탈로그 · PODO 한국어",
+                  "ja": "カリキュラム・カタログ · PODO 韓国語",
+                  "en": "Curriculum catalog · PODO Korean"},
+        "kicker": {"ko": "PODO · 한국어 커리큘럼", "ja": "PODO · 韓国語カリキュラム",
+                   "en": "PODO · Korean curriculum"},
+        "h1": {"ko": "개 과가<br>지금 수업에서 열립니다",
+               "ja": "レッスンが<br>いま授業で開きます",
+               "en": "lessons are open<br>in class right now"},
+        "lead": {"ko": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
+                       "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
+                       "수업에서 열리는 파일 그대로 볼 수 있습니다.",
+                 "ja": "いま授業で実際に開く教材です。トラックを一つ選ぶと、その中のすべての"
+                       "コースとレッスンを、授業用・予習用の教材まで、授業で開くファイルの"
+                       "まま見ることができます。",
+                 "en": "These are the decks that actually open in class. Pick a track to see "
+                       "every course and lesson inside it, including each lesson's in-class and "
+                       "prep decks, exactly as they open in class."},
+        "foot": {"ko": "PODO · 한국어 커리큘럼 — 일본어 학습자를 위한 한국어 코스",
+                 "ja": "PODO · 韓国語カリキュラム — 日本語話者のための韓国語コース",
+                 "en": "PODO · Korean curriculum — Korean courses for Japanese speakers"},
         "home": {"name": "Korean", "native": "한국어", "nativeLang": "ko", "modifier": "",
-                 "desc": "From first Hangul blocks through core patterns, contextual "
-                         "conversation, and advanced free talking."},
+                 "desc": {"ko": "한글 첫 글자부터 핵심 패턴, 상황별 대화, 고급 프리토킹까지.",
+                          "ja": "ハングルの最初の一文字から、コアパターン・場面別会話・上級フリートーキングまで。",
+                          "en": "From first Hangul blocks through core patterns, contextual "
+                                "conversation, and advanced free talking."}},
     },
     "en": {
         "dir": "english-jp",
         "nav": "English",
-        "title": "커리큘럼 카탈로그 · PODO 영어",
-        "kicker": "PODO · 영어 커리큘럼",
-        "h1": "개 과가<br>지금 수업에서 열립니다",
-        "lead": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
-                "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
-                "수업에서 열리는 파일 그대로 볼 수 있습니다.",
-        "tracksH": "학습 트랙",
-        "tracksP": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.",
-        "foot": "PODO · 영어 커리큘럼 — 일본어 학습자를 위한 영어 코스",
+        "title": {"ko": "커리큘럼 카탈로그 · PODO 영어",
+                  "ja": "カリキュラム・カタログ · PODO 英語",
+                  "en": "Curriculum catalog · PODO English"},
+        "kicker": {"ko": "PODO · 영어 커리큘럼", "ja": "PODO · 英語カリキュラム",
+                   "en": "PODO · English curriculum"},
+        "h1": {"ko": "개 과가<br>지금 수업에서 열립니다",
+               "ja": "レッスンが<br>いま授業で開きます",
+               "en": "lessons are open<br>in class right now"},
+        "lead": {"ko": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
+                       "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
+                       "수업에서 열리는 파일 그대로 볼 수 있습니다.",
+                 "ja": "いま授業で実際に開く教材です。トラックを一つ選ぶと、その中のすべての"
+                       "コースとレッスンを、授業用・予習用の教材まで、授業で開くファイルの"
+                       "まま見ることができます。",
+                 "en": "These are the decks that actually open in class. Pick a track to see "
+                       "every course and lesson inside it, including each lesson's in-class and "
+                       "prep decks, exactly as they open in class."},
+        "foot": {"ko": "PODO · 영어 커리큘럼 — 일본어 학습자를 위한 영어 코스",
+                 "ja": "PODO · 英語カリキュラム — 日本語話者のための英語コース",
+                 "en": "PODO · English curriculum — English courses for Japanese speakers"},
         "home": {"name": "English", "native": "英語", "nativeLang": "ja", "modifier": "english",
-                 "desc": "A speaking-first sequence across core patterns, contextual "
-                         "English, and free talking."},
+                 "desc": {"ko": "핵심 패턴 · 상황별 영어 · 프리토킹을 말하기 중심으로 잇는 순서.",
+                          "ja": "コアパターン・場面別英語・フリートーキングを、話すことを軸につなぐ順序。",
+                          "en": "A speaking-first sequence across core patterns, contextual "
+                                "English, and free talking."}},
     },
 }
 
@@ -507,9 +533,9 @@ def track_entry(lang: str, no: int, family: dict,
         "desc": family["desc"],
         "note": "",
         "stats": [
-            {"k": LESSON_WORD, "v": len(lessons)},
-            {"k": UNIT_WORD, "v": len(units)},
-            {"k": "교재", "v": ready},
+            {"k": "lessonWord", "v": len(lessons)},
+            {"k": "unitWord", "v": len(units)},
+            {"k": "deckWordShort", "v": ready},
         ],
         "groups": units,
         "dist": dist,
@@ -578,7 +604,6 @@ def nav_links(built: list[str], lang: str | None, up: str) -> list[dict]:
         "href": f"{up}{LANGUAGES[code]['dir']}/",
         "current": code == lang,
     } for code in LANGUAGES if code in built]
-    links.append({"label": "Repository", "href": REPO_URL, "optional": True})
     return links
 
 
@@ -648,18 +673,18 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
     units = sum(tr["unitCount"] for tr in tracks)
 
     def page(up: str) -> dict:
+        """머리·꼬리의 말. 문장은 {ko,ja,en} 그대로 나가고 고르는 일은 브라우저가 한다.
+
+        숫자는 문장에서 떼어 따로 싣는다 — "3개의 학습 트랙" 을 언어마다 통째로
+        번역해 두면 트랙이 넷이 되는 날 세 문장을 같이 고쳐야 한다."""
         return {
             "title": cfg["title"],
             "kicker": cfg["kicker"],
             "lead": cfg["lead"],
             "h1": cfg["h1"],
-            "tracksH": f"{len(tracks)}개의 {cfg['tracksH']}",
-            "tracksP": cfg["tracksP"],
-            "lfoot": "레벨은 <code>course.yaml</code> 의 <code>#&nbsp;podo:level:</code> 줄을 "
-                     "그대로 옮긴 것입니다 — 덱의 <code>&lt;meta name=\"podo:level\"&gt;</code> 와 "
-                     "같은 값이고, 코스 하나는 레벨 하나에 놓입니다.",
+            "trackCount": len(tracks),
+            "stats": [[len(tracks), "tracksH"], [units, "unitWord"], [decks, "deckWord"]],
             "foot": cfg["foot"],
-            "stats": [[len(tracks), "학습 트랙"], [units, UNIT_WORD], [decks, "레슨 교재"]],
             "home": up or "./",
             "nav": nav_links(built, lang, up),
         }
@@ -725,9 +750,9 @@ def build(out: pathlib.Path) -> dict:
         cards.append({
             **cfg["home"],
             "href": f"{cfg['dir']}/",
-            "state": "계속 추가 중" if any(t["status"] == "open" for t in tracks) else "운영 중",
-            "counts": f"{sub['tracks']}개 트랙 · {sub['courses']}개 코스 · "
-                      f"{sub['lessons']}과",
+            "state": "growing" if any(t["status"] == "open" for t in tracks) else "live",
+            "counts": {"tracks": sub["tracks"], "courses": sub["courses"],
+                       "lessons": sub["lessons"]},
             "tracks": [{"label": next(f[lang]["chip"] for _, f in FAMILIES
                                       if lang in f and f[lang]["slug"] == t["id"]),
                         "accent": t["accent"]} for t in tracks],
@@ -737,8 +762,7 @@ def build(out: pathlib.Path) -> dict:
         "languages": cards,
         "nav": [{"label": LANGUAGES[c]["nav"],
                  "href": f"{LANGUAGES[c]['dir']}/"} for c in built]
-               + [{"label": "Repository", "href": REPO_URL, "optional": True}],
-        "foot": "이 페이지는 생성물입니다 — courses/ 의 enabled: true 인 코스만 실립니다.",
+               ,
     }), encoding="utf-8")
 
     (out / "catalog.json").write_text(
@@ -822,7 +846,6 @@ VIEWER = """<!DOCTYPE html>
   <span class="right">
     <span class="slot">{slot}</span>
     <a class="plain" href="{deck}" target="_blank" rel="noopener">전체 화면 ↗</a>
-    <a class="plain" href="{source}" target="_blank" rel="noopener">소스 ↗</a>
   </span>
 </div>
 <div class="stage">
@@ -889,7 +912,6 @@ def write_viewer(out, base, course, lesson, deck, family, lang, built,
         accent=accent,
         tint=tint,
         deck=e(os.path.relpath(base / deck["entry"], path.parent)),
-        source=e(f"{SOURCE_URL}/{deck['source']}"),
     ), encoding="utf-8")
 
 
