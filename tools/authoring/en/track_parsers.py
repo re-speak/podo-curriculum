@@ -140,11 +140,12 @@ def _require(value, path: pathlib.Path, number: int, label: str):
     return value
 
 
-def _continuous(path: pathlib.Path, lessons: list[dict], expected: int) -> None:
+def _continuous(path: pathlib.Path, lessons: list[dict], expected: int, retired: frozenset[int] = frozenset()) -> None:
     numbers = [lesson["no"] for lesson in lessons]
-    wanted = list(range(1, expected + 1))
+    wanted = [number for number in range(1, expected + 1) if number not in retired]
     if numbers != wanted:
-        raise ParseError(f"{path}: lesson numbers must be continuous 1..{expected}; got {numbers[:5]}…{numbers[-5:]}")
+        suffix = f" except retired IDs {sorted(retired)}" if retired else ""
+        raise ParseError(f"{path}: lesson numbers must be continuous 1..{expected}{suffix}; got {numbers[:5]}…{numbers[-5:]}")
 
 
 def _review_registry(path: pathlib.Path, lines: list[str]) -> dict[str, dict]:
@@ -270,7 +271,7 @@ def parse_core() -> list[dict]:
         })
         if len(models) != 2:
             raise ParseError(f"{path}: Core {number} has {len(models)} patterns, expected exactly 2")
-    _continuous(path, lessons, 122)
+    _continuous(path, lessons, 122, frozenset({4, 5, 6}))
     _validate_core_spiral(path, lessons, review_registry)
     return lessons
 

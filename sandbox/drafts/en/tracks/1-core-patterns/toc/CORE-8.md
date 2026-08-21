@@ -8,7 +8,7 @@
 
 - **Track:** `1-core-patterns`
 - **Stable review id:** `CORE-8`
-- **Level:** Pre-A1 → A1
+- **Level:** A1
 
 ## Outcome
 
@@ -42,7 +42,7 @@
 
 - **Already learned:** Core 1–7.
 - **Not yet:** Core 9–122. Do not use their forms in learner-produced language.
-- **Most recent available forms:** CORE-5 Is this your bag? · CORE-6 Are you a student? · CORE-7 There's a café near here
+- **Most recent available forms:** CORE-2 I'm from Osaka · CORE-3 Is this yours? · CORE-7 There's a café near here
 - **Nearest protected forms:** CORE-9 Two coffees, please · CORE-10 The café on the corner · CORE-11 Where's the station?
 - The readiness gate applies to the complete learner-produced model, including every fixed word.
 - Apart from this lesson's two taught patterns, productive grammar must come from earlier Core lessons.

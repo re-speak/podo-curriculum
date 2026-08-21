@@ -202,7 +202,7 @@ class ContextualComplexWorkplaceBatchTests(unittest.TestCase):
             25: ("CORE-59",), 26: ("CTX-11", "CORE-65"), 27: ("CTX-21",),
             28: ("CORE-19",), 29: ("CORE-71",), 30: ("CORE-59",),
             32: ("CORE-24", "CORE-28"), 33: ("CORE-28", "CORE-10"),
-            35: ("CTX-3", "CTX-32"), 36: ("CORE-3",),
+            35: ("CTX-3", "CTX-32"), 36: ("CORE-2",),
         }
         for number, owners in required.items():
             recycled = batch.LESSONS[number]["vocab"][1]

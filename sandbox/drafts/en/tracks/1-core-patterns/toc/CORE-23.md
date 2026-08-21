@@ -25,7 +25,7 @@
 ### Pattern 2
 
 - **Model:** How much rice do we need?
-- **Frame:** `How much ___ do we need?`
+- **Frame:** `How much/many ___ do we need?`
 
 ## Supporting content
 

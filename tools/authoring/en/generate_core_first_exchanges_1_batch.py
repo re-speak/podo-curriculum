@@ -30,138 +30,81 @@ def rows(*items):
 
 LESSONS = {
     1: dict(
-        slug="hi-im-mina", title="Hi, I'm Mina", ko="안녕하세요, 미나예요", ja="こんにちは、ミナです",
-        goal=("Introduce yourself in two common ways.", "よく使う二つの言い方で自己紹介しましょう。"),
+        slug="introduce-yourself", title="I'm Mina", ko="저는 미나예요", ja="私はミナです",
+        goal=("Introduce yourself with your name, state, or job.", "名前・今の状態・仕事を使って自己紹介しましょう。"),
         p1=rows(
-            ("{t}Hi, I'm{/t} Mina.", "{t}こんにちは、{/t}ミナです。", "Hi,|I'm|Mina."),
-            ("{t}Hi, I'm{/t} Ken.", "{t}こんにちは、{/t}ケンです。", "Hi,|I'm|Ken."),
-            ("{t}Hi, I'm{/t} Yuki.", "{t}こんにちは、{/t}ユキです。", "Hi,|I'm|Yuki."),
-            ("{t}Hi, I'm{/t} Emi.", "{t}こんにちは、{/t}エミです。", "Hi,|I'm|Emi."),
+            ("{t}I'm{/t} Mina.", "{t}私は{/t}ミナです。", "I'm|Mina."),
+            ("{t}I'm{/t} happy.", "{t}私は{/t}うれしいです。", "I'm|happy."),
+            ("{t}I'm a{/t} designer.", "{t}私は{/t}デザイナーです。", "I'm|a designer."),
+            ("{t}I'm an{/t} engineer.", "{t}私は{/t}エンジニアです。", "I'm|an engineer."),
         ),
         p2=rows(
             ("{t}My name is{/t} Mina.", "{t}私の名前は{/t}ミナです。", "My name is|Mina."),
-            ("{t}My name is{/t} Ken.", "{t}私の名前は{/t}ケンです。", "My name is|Ken."),
-            ("{t}My name is{/t} Yuki.", "{t}私の名前は{/t}ユキです。", "My name is|Yuki."),
-            ("{t}My name is{/t} Emi.", "{t}私の名前は{/t}エミです。", "My name is|Emi."),
+            ("{t}My name is{/t} Ken Tanaka.", "{t}私の名前は{/t}田中ケンです。", "My name is|Ken Tanaka."),
+            ("{t}My first name is{/t} Yuki.", "{t}私の名前は{/t}ユキです。", "My first name is|Yuki."),
+            ("{t}My family name is{/t} Sato.", "{t}私の名字は{/t}佐藤です。", "My family name is|Sato."),
         ),
         omit_choice=(1, 2),
-        omit_reorder=(2,),
-        rules=(("Keep I with am; in conversation, use the contraction I'm.", "I と am を一緒にし、会話では短縮形 I'm を使います。"), ("Keep My name is together, then add your name.", "My name is をひとまとまりにして、そのあとに名前を続けます。")),
-        prompt=("Do you prefer using your first name or family name when you meet someone new? Why?", "初対面の人には、名字と名前のどちらで呼ばれたいですか？理由も教えてください。"),
+        omit_reorder=(1, 2),
+        rules=(("Keep I with am; use I'm in conversation, then add a name, state, or job.", "I と am を一緒にして会話では I'm を使い、そのあとに名前・状態・仕事を続けます。"), ("Use My name is for a full name, or say first name or family name when you need to be specific.", "名前全体には My name is を使い、区別するときは first name または family name を使います。")),
+        prompt=("Introduce yourself with your name and one more true detail.", "名前と、もう一つ本当の情報を使って自己紹介してください。"),
     ),
     2: dict(
-        slug="im-a-designer", title="I'm a designer", ko="저는 디자이너예요", ja="私はデザイナーです",
-        goal=("Say your job with a or an.", "a または an を使って仕事を言いましょう。"),
+        slug="say-where-people-are-from-and-live", title="I'm from Osaka", ko="저는 오사카 출신이에요", ja="大阪出身です",
+        goal=("Say where you and another person are from and live.", "自分やほかの人の出身地と住んでいる場所を言いましょう。"),
         p1=rows(
-            ("I'm {t}a{/t} designer.", "私は{t}デザイナー{/t}です。", "I'm|a designer."),
-            ("I'm {t}a{/t} nurse.", "私は{t}看護師{/t}です。", "I'm|a nurse."),
-            ("I'm {t}a{/t} teacher.", "私は{t}教師{/t}です。", "I'm|a teacher."),
-            ("I'm {t}a{/t} chef.", "私は{t}料理人{/t}です。", "I'm|a chef."),
+            ("{t}I'm from{/t} Osaka.", "{t}私は{/t}大阪出身です。", "I'm|from|Osaka."),
+            ("{t}He's from{/t} Canada.", "{t}彼は{/t}カナダ出身です。", "He's|from|Canada."),
+            ("{t}She's from{/t} Kyoto.", "{t}彼女は{/t}京都出身です。", "She's|from|Kyoto."),
+            ("{t}They're from{/t} Australia.", "{t}彼らは{/t}オーストラリア出身です。", "They're|from|Australia."),
         ),
         p2=rows(
-            ("I'm {t}an{/t} engineer.", "私は{t}エンジニア{/t}です。", "I'm|an engineer."),
-            ("I'm {t}an{/t} artist.", "私は{t}アーティスト{/t}です。", "I'm|an artist."),
-            ("I'm {t}an{/t} editor.", "私は{t}編集者{/t}です。", "I'm|an editor."),
-            ("I'm {t}an{/t} office worker.", "私は{t}会社員{/t}です。", "I'm|an office worker."),
+            ("{t}I live in{/t} Tokyo now.", "私は今、東京に{t}住んでいます{/t}。", "I|live in|Tokyo now."),
+            ("{t}He lives in{/t} Osaka.", "彼は大阪に{t}住んでいます{/t}。", "He|lives in|Osaka."),
+            ("{t}My friend lives in{/t} Nagoya.", "私の友だちは名古屋に{t}住んでいます{/t}。", "My friend|lives in|Nagoya."),
+            ("{t}My coworker lives in{/t} Fukuoka.", "私の同僚は福岡に{t}住んでいます{/t}。", "My coworker|lives in|Fukuoka."),
         ),
-        omit_choice=(1,),
-        omit_reorder=(1, 2),
-        rules=(("Use a before a job that begins with a consonant sound.", "子音の音で始まる仕事の前には a を使います。"), ("Use an before a job that begins with a vowel sound.", "母音の音で始まる仕事の前には an を使います。")),
-        prompt=("What job would be fun to try for one day? Why?", "一日だけ体験するなら、どんな仕事が楽しそうですか？理由も教えてください。"),
+        omit_choice=(1, 2),
+        rules=(("Match am, is, or are to the person, then keep from with the origin.", "人に合わせて am・is・are を選び、出身地の前に from を置きます。"), ("Use lives with he or she; use live with I or they.", "he・she には lives、I・they には live を使います。")),
+        prompt=("Introduce someone you know and say where each of you lives.", "知っている人を紹介し、自分とその人が住んでいる場所を言ってください。"),
     ),
     3: dict(
-        slug="i-live-in-tokyo", title="I live in Tokyo", ko="저는 도쿄에 살아요", ja="私は東京に住んでいます",
-        goal=("Say where you're from and where you live now.", "出身地と今住んでいる場所を言いましょう。"),
+        slug="check-things-and-people", title="Is this yours?", ko="이거 당신 거예요?", ja="これはあなたのものですか？",
+        goal=("Check whether an assumption about a thing or person is correct.", "物や人について、自分の考えが合っているか確かめましょう。"),
         p1=rows(
-            ("{t}I'm from{/t} Osaka.", "{t}出身は{/t}大阪です。", "I'm|from|Osaka."),
-            ("{t}I'm from{/t} Tokyo.", "{t}出身は{/t}東京です。", "I'm|from|Tokyo."),
-            ("{t}I'm from{/t} Kyoto.", "{t}出身は{/t}京都です。", "I'm|from|Kyoto."),
-            ("{t}I'm from{/t} Fukuoka.", "{t}出身は{/t}福岡です。", "I'm|from|Fukuoka."),
+            ("{t}Is this{/t} your bag?", "{t}これは{/t}あなたのかばんですか？", "Is this|your bag?"),
+            ("{t}Is this{/t} the right key?", "{t}これは{/t}正しい鍵ですか？", "Is this|the right key?"),
+            ("{t}Is this{/t} yours?", "{t}これは{/t}あなたのものですか？", "Is this|yours?"),
+            ("{t}Is this{/t} okay?", "{t}これは{/t}大丈夫ですか？", "Is this|okay?"),
         ),
         p2=rows(
-            ("{t}I live in{/t} Tokyo now.", "今は東京に{t}住んでいます{/t}。", "I|live in|Tokyo|now."),
-            ("{t}I live in{/t} Osaka now.", "今は大阪に{t}住んでいます{/t}。", "I|live in|Osaka|now."),
-            ("{t}I live in{/t} Kyoto now.", "今は京都に{t}住んでいます{/t}。", "I|live in|Kyoto|now."),
-            ("{t}I live in{/t} Nagoya now.", "今は名古屋に{t}住んでいます{/t}。", "I|live in|Nagoya|now."),
+            ("{t}Are you{/t} a student?", "{t}あなたは{/t}学生ですか？", "Are you|a student?"),
+            ("{t}Are you{/t} ready?", "{t}あなたは{/t}準備できていますか？", "Are you|ready?"),
+            ("{t}Are you{/t} from Osaka?", "{t}あなたは{/t}大阪出身ですか？", "Are you|from Osaka?"),
+            ("{t}Are you{/t} free tomorrow?", "{t}あなたは{/t}明日空いていますか？", "Are you|free tomorrow?"),
         ),
-        omit_choice=(1,),
-        rules=(("Keep I'm from together, then add the place you come from.", "I'm from をひとまとまりにして、そのあとに出身地を続けます。"), ("English order is I, then live in, then the place, with now at the end.", "英語では I、live in、場所の順にして、now を最後に置きます。")),
-        prompt=("If you could live in another city or country for a year, where would you choose? Why?", "別の町や国に一年住めるなら、どこを選びますか？理由も教えてください。"),
-    ),
-    4: dict(
-        slug="this-is-my-friend-leo", title="This is my friend, Leo", ko="제 친구 레오예요", ja="こちらは友だちのレオです",
-        goal=("Introduce another person and add one fact about them.", "人を紹介して、その人について一つ情報を加えましょう。"),
-        p1=rows(
-            ("{t}This is my{/t} friend, Leo.", "{t}こちらは私の{/t}友だち、レオです。", "This is my|friend,|Leo."),
-            ("{t}This is my{/t} friend, Anna.", "{t}こちらは私の{/t}友だち、アナです。", "This is my|friend,|Anna."),
-            ("{t}This is my{/t} coworker, Ken.", "{t}こちらは私の{/t}同僚、ケンです。", "This is my|coworker,|Ken."),
-            ("{t}This is my{/t} sister, Emi.", "{t}こちらは私の{/t}姉、エミです。", "This is my|sister,|Emi."),
-        ),
-        p2=rows(
-            ("{t}He's{/t} {t}from{/t} Canada.", "{t}彼は{/t}カナダ{t}出身です{/t}。", "He's|from|Canada."),
-            ("{t}She's{/t} {t}from{/t} Australia.", "{t}彼女は{/t}オーストラリア{t}出身です{/t}。", "She's|from|Australia."),
-            ("{t}He's{/t} {t}from{/t} Japan.", "{t}彼は{/t}日本{t}出身です{/t}。", "He's|from|Japan."),
-            ("{t}She's{/t} {t}from{/t} Korea.", "{t}彼女は{/t}韓国{t}出身です{/t}。", "She's|from|Korea."),
-        ),
-        omit_choice=(1,),
-        rules=(("Use This is my, then say the relationship and the person's name.", "This is my のあとに関係と名前を続けます。"), ("After the name is known, use he's or she's instead of repeating it.", "名前を紹介したあとは、名前を繰り返さず he's または she's を使います。")),
-        prompt=("Who is someone you'd like me to meet? What are they like?", "私に会わせたい人は誰ですか？どんな人ですか？"),
-    ),
-    5: dict(
-        slug="is-this-your-bag", title="Is this your bag?", ko="이거 가방 맞아요?", ja="これはあなたのかばんですか？",
-        goal=("Work out who an object belongs to.", "物が誰のものか確かめましょう。"),
-        p1=rows(
-            ("{t}Is this your{/t} bag?", "{t}これはあなたのかばんですか{/t}？", "Is this|your bag?"),
-            ("{t}Is this your{/t} phone?", "{t}これはあなたの携帯ですか{/t}？", "Is this|your phone?"),
-            ("{t}Is this your{/t} ticket?", "{t}これはあなたのチケットですか{/t}？", "Is this|your ticket?"),
-            ("{t}Is this your{/t} key?", "{t}これはあなたの鍵ですか{/t}？", "Is this|your key?"),
-        ),
-        omit_reorder=(1,),
-        p2=rows(
-            ("Yes, {t}that one's mine{/t}.", "はい、{t}それは私のです{/t}。", "Yes,|that one's|mine."),
-            ("Yes, {t}this one's mine{/t}.", "はい、{t}これは私のです{/t}。", "Yes,|this one's|mine."),
-            ("No, {t}that one's yours{/t}.", "いいえ、{t}それはあなたのです{/t}。", "No,|that one's|yours."),
-            ("No, {t}this one's yours{/t}.", "いいえ、{t}これはあなたのです{/t}。", "No,|this one's|yours."),
-        ),
-        rules=(("Move is before this to turn the statement into a question.", "文を質問にするときは is を this の前に移動します。"), ("Use mine without a noun when the object is already clear.", "どの物か分かっているときは、名詞を繰り返さず mine を使います。")),
-        prompt=("What's one thing you often lose or forget? Where do you usually find it?", "よくなくしたり忘れたりする物は何ですか？たいていどこで見つかりますか？"),
-    ),
-    6: dict(
-        slug="are-you-a-student", title="Are you a student?", ko="학생이에요?", ja="学生ですか？",
-        goal=("Ask what someone is and answer briefly.", "相手の仕事などをたずね、短く答えましょう。"),
-        p1=rows(
-            ("{t}Are you{/t} a student?", "{t}学生ですか{/t}？", "Are you|a student?"),
-            ("{t}Are you{/t} a teacher?", "{t}教師ですか{/t}？", "Are you|a teacher?"),
-            ("{t}Are you{/t} a designer?", "{t}デザイナーですか{/t}？", "Are you|a designer?"),
-            ("{t}Are you{/t} an engineer?", "{t}エンジニアですか{/t}？", "Are you|an engineer?"),
-        ),
-        omit_reorder=(1,),
-        p2=rows(
-            ("{t}Yes, I am.{/t} I'm a student.", "{t}はい、そうです。{/t}学生です。", "Yes,|I am.|I'm a student."),
-            ("{t}No, I'm not.{/t} I'm a nurse.", "{t}いいえ、違います。{/t}看護師です。", "No,|I'm not.|I'm a nurse."),
-            ("{t}Yes, I am.{/t} I'm an engineer.", "{t}はい、そうです。{/t}エンジニアです。", "Yes,|I am.|I'm an engineer."),
-            ("{t}No, I'm not.{/t} I'm a designer.", "{t}いいえ、違います。{/t}デザイナーです。", "No,|I'm not.|I'm a designer."),
-        ),
-        rules=(("Move are before you to ask the question; keep the job with a or an.", "質問では are を you の前に移動し、仕事には a または an をつけます。"), ("Repeat be in a short answer: Yes, I am or No, I'm not.", "短い答えでも be を繰り返し、Yes, I am または No, I'm not と言います。")),
-        prompt=("What job did you want when you were a child? Has that changed?", "子どものころ、どんな仕事に就きたかったですか？今は変わりましたか？"),
+        omit_choice=(1, 2),
+        omit_reorder=(1, 2),
+        rules=(("Move is before this, then add a complete thing, owner, or description.", "is を this の前に移し、そのあとに物・持ち主・説明を一まとまりで続けます。"), ("Move are before you, then add an identity, state, origin, or availability.", "are を you の前に移し、そのあとに身分・状態・出身・予定を一まとまりで続けます。")),
+        prompt=("Ask me one Is this question and one Are you question.", "Is this の質問と Are you の質問を一つずつしてください。"),
     ),
     7: dict(
         slug="theres-a-cafe-near-here", title="There's a café near here", ko="근처에 카페가 있어요", ja="この近くにカフェがあります",
         goal=("Say that a place exists nearby and where it is.", "近くにある場所と、その位置を言いましょう。"),
         p1=rows(
             ("{t}There's a{/t} café near here.", "この近くに{t}カフェがあります{/t}。", "There's|a café|near here."),
-            ("{t}There's a{/t} bank near here.", "この近くに{t}銀行があります{/t}。", "There's|a bank|near here."),
+            ("{t}There's an{/t} office near here.", "この近くに{t}オフィスがあります{/t}。", "There's|an office|near here."),
             ("{t}There's a{/t} station near here.", "この近くに{t}駅があります{/t}。", "There's|a station|near here."),
             ("{t}There's a{/t} hotel near here.", "この近くに{t}ホテルがあります{/t}。", "There's|a hotel|near here."),
         ),
         p2=rows(
             ("{t}It's next to{/t} the bank.", "{t}銀行の隣です{/t}。", "It's|next to|the bank."),
-            ("{t}It's next to{/t} the station.", "{t}駅の隣です{/t}。", "It's|next to|the station."),
-            ("{t}It's next to{/t} the hotel.", "{t}ホテルの隣です{/t}。", "It's|next to|the hotel."),
+            ("{t}It's next to{/t} my hotel.", "{t}私のホテルの隣です{/t}。", "It's|next to|my hotel."),
+            ("{t}It's next to{/t} that station.", "{t}あの駅の隣です{/t}。", "It's|next to|that station."),
             ("{t}It's next to{/t} the café.", "{t}カフェの隣です{/t}。", "It's|next to|the café."),
         ),
         omit_choice=(1,),
-        rules=(("Use There's a as one chunk to introduce one nearby place.", "近くに場所が一つあると伝えるときは There's a をひとまとまりで使います。"), ("Keep next to with the place; it means immediately beside it.", "next to は場所と一緒に使い、すぐ隣という意味です。")),
+        rules=(("Use There's a as one chunk — There's an before a vowel sound.", "近くに場所が一つあると伝えるときは There's a をひとまとまりで使い、母音の音の前では There's an にします。"), ("Keep next to with the place; the word before the place can be the, my or that.", "next to は場所と一緒に使い、場所の前には the・my・that のいずれかを置きます。")),
         prompt=("What's one place you wish you had near your home? Why?", "家の近くにあったらいいと思う場所は何ですか？理由も教えてください。"),
     ),
     8: dict(
@@ -169,9 +112,9 @@ LESSONS = {
         goal=("Ask and say what today's weather is like.", "今日の天気についてたずね、答えましょう。"),
         p1=rows(
             ("{t}Is it{/t} cold today?", "今日は{t}寒いですか{/t}？", "Is it|cold|today?"),
-            ("{t}Is it{/t} hot today?", "今日は{t}暑いですか{/t}？", "Is it|hot|today?"),
+            ("{t}Is it{/t} very hot today?", "今日は{t}とても暑いですか{/t}？", "Is it|very hot|today?"),
             ("{t}Is it{/t} sunny today?", "今日は{t}晴れていますか{/t}？", "Is it|sunny|today?"),
-            ("{t}Is it{/t} rainy today?", "今日は{t}雨ですか{/t}？", "Is it|rainy|today?"),
+            ("{t}Is it{/t} very rainy today?", "今日は{t}雨がひどいですか{/t}？", "Is it|very rainy|today?"),
         ),
         p2=rows(
             ("{t}Yes, it is.{/t} It's very cold.", "{t}はい、そうです。{/t}とても寒いです。", "Yes,|it is.|It's very|cold."),
@@ -193,13 +136,13 @@ LESSONS = {
             ("Four water{t}s{/t}, please.", "水を{t}四つ{/t}お願いします。", "Four|waters,|please."),
         ),
         p2=rows(
-            ("{t}Actually,{/t} {t}just one{/t} coffee, thanks.", "{t}やっぱり、{/t}コーヒーは{t}一つだけ{/t}お願いします。", "Actually,|just one|coffee,|thanks."),
-            ("{t}Actually,{/t} {t}just one{/t} ticket, thanks.", "{t}やっぱり、{/t}チケットは{t}一枚だけ{/t}お願いします。", "Actually,|just one|ticket,|thanks."),
-            ("{t}Actually,{/t} {t}just one{/t} bag, thanks.", "{t}やっぱり、{/t}かばんは{t}一つだけ{/t}お願いします。", "Actually,|just one|bag,|thanks."),
-            ("{t}Actually,{/t} {t}just one{/t} water, thanks.", "{t}やっぱり、{/t}水は{t}一つだけ{/t}お願いします。", "Actually,|just one|water,|thanks."),
+            ("{t}Actually,{/t} just {t}one coffee{/t}, thanks.", "{t}やっぱり、{/t}コーヒーは{t}一つだけ{/t}お願いします。", "Actually,|just|one coffee,|thanks."),
+            ("{t}Actually,{/t} just {t}two tickets{/t}, thanks.", "{t}やっぱり、{/t}チケットは{t}二枚だけ{/t}お願いします。", "Actually,|just|two tickets,|thanks."),
+            ("{t}Actually,{/t} just {t}one bag{/t}, thanks.", "{t}やっぱり、{/t}かばんは{t}一つだけ{/t}お願いします。", "Actually,|just|one bag,|thanks."),
+            ("{t}Actually,{/t} just {t}three waters{/t}, thanks.", "{t}やっぱり、{/t}水は{t}三つだけ{/t}お願いします。", "Actually,|just|three waters,|thanks."),
         ),
         omit_choice=(1,),
-        rules=(("After two or more, add -s to the item even though the number is already clear.", "二つ以上なら、数が分かっていても品物に -s をつけます。"), ("After one, use the singular item with no -s.", "one のあとは -s のない単数形を使います。")),
+        rules=(("After two or more, add -s to the item even though the number is already clear.", "二つ以上なら、数が分かっていても品物に -s をつけます。"), ("After one, use the singular item with no -s — the number decides the ending every time.", "one のあとは -s のない単数形を使い、語尾は毎回、数が決めます。")),
         prompt=("What do you usually order at a café? Do you ever change your order?", "カフェではいつも何を注文しますか？注文を変えることはありますか？"),
     ),
     10: dict(
@@ -227,8 +170,8 @@ LESSONS = {
         p1=rows(
             ("{t}Where's the{/t} station?", "{t}駅はどこですか{/t}？", "Where's|the station?"),
             ("{t}Where's the{/t} bank?", "{t}銀行はどこですか{/t}？", "Where's|the bank?"),
-            ("{t}Where's the{/t} hotel?", "{t}ホテルはどこですか{/t}？", "Where's|the hotel?"),
-            ("{t}Where's the{/t} café?", "{t}カフェはどこですか{/t}？", "Where's|the café?"),
+            ("{t}Where's the{/t} café on the corner?", "{t}角のカフェはどこですか{/t}？", "Where's|the café on the corner?"),
+            ("{t}Where's the{/t} post office?", "{t}郵便局はどこですか{/t}？", "Where's|the post office?"),
         ),
         omit_reorder=(1,),
         p2=rows(
@@ -244,24 +187,24 @@ LESSONS = {
 
 
 VOCAB = {
-    1: dict(new="name|名前; Nice to meet you.|はじめまして。", recycled="", assumed="hi|こんにちは; hello|こんにちは; Mina|ミナ; Ken|ケン; Yuki|ユキ; Emi|エミ", receptive="What's your name?|お名前は？; first name|名前; family name|名字; easy to remember|覚えやすい"),
-    2: dict(new="designer|デザイナー; engineer|エンジニア; nurse|看護師; artist|アーティスト; teacher|教師; chef|料理人; editor|編集者; office worker|会社員", recycled="", assumed="job|仕事", receptive="What do you do?|お仕事は？; design|デザイン分野; work in|～の分野で働く"),
-    3: dict(new="live|住む; from|出身の; now|今", recycled="", assumed="Tokyo|東京; Osaka|大阪; Kyoto|京都; Nagoya|名古屋; Fukuoka|福岡", receptive="Where are you from?|出身はどこですか？; originally|もともと; city|町; country|国; for a year|一年"),
+    1: dict(new="name|名前; first name|名前; family name|名字; happy|うれしい; designer|デザイナー; engineer|エンジニア; Nice to meet you.|はじめまして。", recycled="", assumed="hi|こんにちは; hello|こんにちは; Mina|ミナ; Ken|ケン; Ken Tanaka|田中ケン; Yuki|ユキ; Sato|佐藤", receptive="What's your name?|お名前は？; How are you?|調子はどうですか？; What do you do?|お仕事は？"),
+    2: dict(new="live|住む; from|出身の; friend|友だち; coworker|同僚; Canada|カナダ; Australia|オーストラリア; now|今", recycled="name|名前|CORE-1; Nice to meet you.|はじめまして。|CORE-1", assumed="Tokyo|東京; Osaka|大阪; Kyoto|京都; Nagoya|名古屋; Fukuoka|福岡; Leo|レオ; Anna|アナ", receptive="Where are you from?|出身はどこですか？; Where do you live?|どこに住んでいますか？; This is my friend.|こちらは私の友だちです。"),
+    3: dict(new="bag|かばん; key|鍵; yours|あなたのもの; right|正しい; okay|大丈夫な; student|学生; ready|準備ができた; free|暇な", recycled="from|出身の|CORE-2; designer|デザイナー|CORE-1; engineer|エンジニア|CORE-1", assumed="train|電車; Osaka|大阪; tomorrow|明日", receptive="Is this mine?|これは私のものですか？; Yes, it is.|はい、そうです。; No, I'm not.|いいえ、違います。"),
     4: dict(new="friend|友だち; coworker|同僚; sister|姉・妹; Canada|カナダ; Australia|オーストラリア; Korea|韓国; Nice to meet you too.|こちらこそ、はじめまして。", recycled="name|名前|CORE-1; from|出身の|CORE-3; Nice to meet you.|はじめまして。|CORE-1", assumed="Japan|日本; Leo|レオ; Anna|アナ; Ken|ケン; Emi|エミ", receptive="Nice to see you.|また会えてうれしいです。; kind|親切な; funny|面白い"),
     5: dict(new="mine|私のもの; yours|あなたのもの; key|鍵; bag|かばん; ticket|チケット", recycled="", assumed="phone|携帯; pen|ペン; Thank you.|ありがとうございます。", receptive="Sorry, my mistake.|すみません、間違えました。; I think|～だと思います; umbrella|傘"),
     6: dict(new="student|学生", recycled="designer|デザイナー|CORE-2; engineer|エンジニア|CORE-2; nurse|看護師|CORE-2; teacher|教師|CORE-2; Nice to meet you too.|こちらこそ、はじめまして。|CORE-4", assumed="job|仕事", receptive="Actually|実は; doctor|医師; changed|変わった"),
-    7: dict(new="near|近く; here|ここ; next to|隣に; bank|銀行; café|カフェ; station|駅; hotel|ホテル; That's right.|その通りです。", recycled="", assumed="place|場所", receptive="Is there ... around here?|この近くに…はありますか？; supermarket|スーパー; park|公園; gym|ジム"),
+    7: dict(new="near|近く; here|ここ; next to|隣に; bank|銀行; café|カフェ; station|駅; hotel|ホテル; office|オフィス", recycled="", assumed="place|場所", receptive="Is there ... around here?|この近くに…はありますか？; supermarket|スーパー; park|公園; gym|ジム"),
     8: dict(new="cold|寒い; hot|暑い; sunny|晴れた; rainy|雨の; Not really.|あまり。", recycled="", assumed="today|今日; very|とても", receptive="How's the weather?|天気はどうですか？; really|本当に; go outside|外に出る"),
-    9: dict(new="actually|やっぱり; just|ただ・だけ; please|お願いします; thanks|ありがとう; coffee|コーヒー; water|水; That's all, thanks.|以上です、ありがとうございます。", recycled="ticket|チケット|CORE-5; bag|かばん|CORE-5", assumed="one|1; two|2; three|3; four|4", receptive="Anything else?|ほかには？; tea|お茶; a snack|軽食; change my order|注文を変える"),
+    9: dict(new="actually|やっぱり; just|ただ・だけ; please|お願いします; thanks|ありがとう; coffee|コーヒー; water|水; ticket|チケット; That's all, thanks.|以上です、ありがとうございます。", recycled="bag|かばん|CORE-3", assumed="one|1; two|2; three|3; four|4", receptive="Anything else?|ほかには？; tea|お茶; a snack|軽食; change my order|注文を変える"),
     10: dict(new="corner|角; open|開いている; until|まで; restaurant|レストラン; shop|店; street|通り; midnight|深夜0時; the same one|同じもの", recycled="café|カフェ|CORE-7; bank|銀行|CORE-7; station|駅|CORE-7; near|近く|CORE-7; next to|隣に|CORE-7", assumed="six|6; five|5; eight|8", receptive="you know the one|例の場所; that|その; service|サービス"),
-    11: dict(new="behind|後ろに; post office|郵便局; It's about five minutes.|5分くらいです。", recycled="station|駅|CORE-7; bank|銀行|CORE-7; hotel|ホテル|CORE-7; café|カフェ|CORE-7; next to|隣に|CORE-7; restaurant|レストラン|CORE-10", assumed="place|場所", receptive="How do I get there?|どう行けばいいですか？; park|公園"),
+    11: dict(new="behind|後ろに; post office|郵便局; It's about five minutes.|5分くらいです。", recycled="station|駅|CORE-7; bank|銀行|CORE-7; hotel|ホテル|CORE-7; café|カフェ|CORE-7; next to|隣に|CORE-7; restaurant|レストラン|CORE-10; corner|角|CORE-10", assumed="place|場所", receptive="How do I get there?|どう行けばいいですか？; park|公園"),
 }
 
 
 KNOWN_WORDS = {
-    1: (("ハロー", "hello"), ("ネーム", "name"), ("ハイ", "hi")),
-    2: (("デザイナー", "designer"), ("エンジニア", "engineer"), ("アーティスト", "artist")),
-    3: (("東京", "Tokyo"), ("大阪", "Osaka"), ("京都", "Kyoto")),
+    1: (("ハロー", "hello"), ("デザイナー", "designer"), ("エンジニア", "engineer")),
+    2: (("東京", "Tokyo"), ("大阪", "Osaka"), ("カナダ", "Canada")),
+    3: (("バッグ", "bag"), ("トレイン", "train"), ("オーケー", "okay")),
     4: (("カナダ", "Canada"), ("オーストラリア", "Australia"), ("日本", "Japan")),
     5: (("バッグ", "bag"), ("チケット", "ticket"), ("ペン", "pen")),
     6: (("デザイナー", "designer"), ("エンジニア", "engineer"), ("ナース", "nurse")),
@@ -277,9 +220,9 @@ KNOWN_WORDS = {
 # pattern words are never hinted, and every non-target content word needed for
 # a closed translation appears on its own row.
 TRANSLATE_HINTS = {
-    1: (("ミナ:Mina", "ケン:Ken", "ユキ:Yuki", "エミ:Emi"), ("ミナ:Mina", "ケン:Ken", "ユキ:Yuki", "エミ:Emi")),
-    2: (("デザイナー:designer", "看護師:nurse", "教師:teacher", "料理人:chef"), ("エンジニア:engineer", "アーティスト:artist", "編集者:editor", "会社員:office worker")),
-    3: (("大阪:Osaka", "東京:Tokyo", "京都:Kyoto", "福岡:Fukuoka"), ("東京:Tokyo", "大阪:Osaka", "京都:Kyoto", "名古屋:Nagoya")),
+    1: (("ミナ:Mina", "うれしい:happy", "デザイナー:designer", "エンジニア:engineer"), ("ミナ:Mina", "田中健:Ken Tanaka", "ユキ:Yuki", "佐藤:Sato")),
+    2: (("大阪:Osaka", "カナダ:Canada", "京都:Kyoto", "オーストラリア:Australia"), ("東京:Tokyo", "大阪:Osaka", "名古屋:Nagoya", "福岡:Fukuoka")),
+    3: (("かばん:bag", "正しい:right; 鍵:key", "あなたのもの:yours", "大丈夫:okay"), ("学生:student", "準備ができた:ready", "出身:from; 大阪:Osaka", "暇:free; 明日:tomorrow")),
     4: (("友だち:friend; レオ:Leo", "友だち:friend; アナ:Anna", "同僚:coworker; ケン:Ken", "姉:sister; エミ:Emi"), ("カナダ:Canada", "オーストラリア:Australia", "日本:Japan", "韓国:Korea")),
     5: (("かばん:bag", "携帯:phone", "チケット:ticket", "鍵:key"), ("", "", "", "")),
     6: (("学生:student", "教師:teacher", "デザイナー:designer", "エンジニア:engineer"), ("学生:student", "看護師:nurse", "エンジニア:engineer", "デザイナー:designer")),
@@ -292,18 +235,17 @@ TRANSLATE_HINTS = {
 
 
 # Supported translations keep lexical help while the learner produces today's
-# pattern. CORE-5 Part 2 is the first deliberate checkpoint: mine/yours are the
-# target contrast itself, so showing them as hints would give away the answer.
+# pattern. Early breadth is intentional: hints carry unfamiliar slot vocabulary
+# while the learner concentrates on the reusable sentence frame.
 TRANSLATE_STAGES = {
     number: ("supported", "supported") for number in LESSONS
 }
-TRANSLATE_STAGES[5] = ("supported", "checkpoint")
 
 
 OPEN_MENUS = {
-    1: (("ミナ:Mina", "ケン:Ken", "ユキ:Yuki"), ("ミナ:Mina", "ケン:Ken", "ユキ:Yuki")),
-    2: (("デザイナー:designer", "看護師:nurse", "教師:teacher"), ("エンジニア:engineer", "アーティスト:artist", "編集者:editor")),
-    3: (("大阪:Osaka", "東京:Tokyo", "京都:Kyoto"), ("東京:Tokyo", "大阪:Osaka", "名古屋:Nagoya")),
+    1: (("ミナ:Mina", "うれしい:happy", "デザイナー:designer"), ("名前:name", "名前:first name", "名字:family name")),
+    2: (("大阪:Osaka", "カナダ:Canada", "オーストラリア:Australia"), ("東京:Tokyo", "大阪:Osaka", "名古屋:Nagoya")),
+    3: (("かばん:bag", "正しい:right; 鍵:key", "あなたのもの:yours"), ("学生:student", "準備ができた:ready", "暇:free; 明日:tomorrow")),
     4: (("友だち:friend", "同僚:coworker", "姉・妹:sister"), ("カナダ:Canada", "オーストラリア:Australia", "日本:Japan")),
     5: (("かばん:bag", "携帯:phone", "鍵:key"), ("私のもの:mine", "あなたのもの:yours")),
     6: (("学生:student", "教師:teacher", "エンジニア:engineer"), ("看護師:nurse", "教師:teacher", "デザイナー:designer")),
@@ -467,6 +409,31 @@ _simple_spec(11,
     ("Contracted or full?", "短縮形・短縮しない形", "“Where's” is usual in relaxed speech. The full “Where is” sounds more deliberate and can emphasize the question; it is not more polite by itself.", "普段の会話では「Where's」が一般的です。短縮しない「Where is」はより意識的に響き、質問を強調できますが、それ自体がより丁寧なわけではありません。", ("Ordinary question", "ふつうの質問", "Where's the station?", "駅はどこですか？"), ("Deliberate emphasis", "質問を強調", "Where IS the station?", "では、駅はいったいどこですか？")),
 )
 
+# CORE-1--3 replace the former six-lesson Pre-A1 runway.  The frames stay
+# elementary, but each slot now crosses semantic categories so learners practise
+# a reusable construction rather than swapping one name or one job title.
+_simple_spec(1,
+    (("Use I'm before a name, a state, or a job.", "I'm の後ろに、名前・状態・仕事を続けます。"), ("Use the My detail is information frame to identify personal information.", "My の後ろに情報の種類を置いて、自分について伝えます。")),
+    (("Use “I'm ___.” to say your name, how you feel, or your job.", "「I'm ___.」で、名前・気分・仕事のどれかを伝えてください。"), ("Use “My ___ is ___.” to give one true piece of personal information.", "「My ___ is ___.」で、自分について本当の情報を一つ伝えてください。")),
+    ((), ()),
+    (("Choose what comes after I'm", "I'm の後ろを選ぶ", "I'm + 名前 / 状態 / a・an + 仕事", "One frame, three meanings", "一つの形で三つの意味", ("I'm Mina.", "I'm happy.", "I'm a designer.")), ("Name the personal detail", "自分の情報の種類を示す", "My + name / first name / family name + is + 情報", "Personal information", "自分についての情報", ("My name is Mina.", "My family name is Sato."))),
+    ("Why does a job need a?", "仕事に a が必要な理由", "Use a or an with a singular job, but not with a name or adjective here.", "単数の仕事には a / an を使い、名前や形容詞には使いません。", ("Name or state", "名前・状態", "I'm Mina. / I'm happy.", "ミナです。／うれしいです。"), ("Job", "仕事", "I'm a designer.", "デザイナーです。")),
+)
+_simple_spec(2,
+    (("Use be + from to say someone's origin.", "be + from で人の出身地を伝えます。"), ("Use live or lives + in to say someone's home now.", "live / lives + in で今住んでいる場所を伝えます。")),
+    (("Use “I'm/He's/She's/They're from ___.” to say where someone is from.", "「I'm / He's / She's / They're from ___.」で人の出身地を伝えてください。"), ("Use “I/He/She/They live(s) in ___.” to say where someone lives.", "「I / He / She / They live(s) in ___.」で人が住んでいる場所を伝えてください。")),
+    ((), ()),
+    (("Match be to the person", "人に合わせて be を選ぶ", "I am / he・she is / they are + from", "Origin", "出身地", ("I'm from Osaka.", "She's from Kyoto.", "They're from Australia.")), ("Add s only with he or she", "he・she のときだけ s", "I・they live / he・she lives + in + 場所", "Current home", "今住んでいる場所", ("I live in Tokyo.", "He lives in Osaka.", "They live in Fukuoka."))),
+    ("From and live in are different", "from と live in の違い", "From tells us where a person comes from. Live in tells us where that person lives now; the two places may be different.", "from は出身地、live in は今住んでいる場所を表します。二つの場所は違うこともあります。", ("Origin", "出身地", "I'm from Osaka.", "大阪出身です。"), ("Home now", "今の居住地", "I live in Tokyo.", "東京に住んでいます。")),
+)
+_simple_spec(3,
+    (("Use an Is this question to check a thing, description, or situation.", "Is this の質問で物・特徴・状況を確かめます。"), ("Use an Are you question to check a person's role, state, origin, or availability.", "Are you の質問で人の立場・状態・出身・都合を確かめます。")),
+    (("Use “Is this ___?” to ask one real question about something near you.", "「Is this ___?」で近くの物について本当の質問を一つしてください。"), ("Use “Are you ___?” to ask one appropriate question about the tutor.", "「Are you ___?」で先生について適切な質問を一つしてください。")),
+    ((), ()),
+    (("Put the complement after Is this", "Is this の後ろに内容を置く", "Is this + 所有・名詞句・形容詞?", "Check a thing", "物を確かめる", ("Is this your bag?", "Is this the right key?", "Is this yours?", "Is this okay?")), ("Put the complement after Are you", "Are you の後ろに内容を置く", "Are you + 役割・状態・from・都合?", "Check about a person", "人について確かめる", ("Are you a student?", "Are you ready?", "Are you from Osaka?", "Are you free tomorrow?"))),
+    ("A broad frame still needs a natural question", "広い形でも自然な質問を", "The grammar accepts many complements, but choose one that makes sense in the situation and is not too personal.", "文法上は多くの内容を続けられますが、場面に合い、個人的すぎない質問を選びます。", ("Thing", "物・状況", "Is this okay?", "これは大丈夫ですか？"), ("Person", "人", "Are you ready?", "準備はできましたか？")),
+)
+
 
 # The transfer script names the tutor's role in both languages.  Keep this
 # mapping beside the explicit transfer exchanges so a renderer default cannot
@@ -505,9 +472,9 @@ for _number in LESSONS:
 # Exact six-turn exchanges.  Model and completion are rendered from the same
 # tuple, so partner turns and turn order cannot drift.
 DIALOGUES = {
-    1: dict(model=("Classmate", 0, 0, ("Hi. What's your name?", "こんにちは。お名前は？"), ("Sorry, did you say Nina?", "すみません、ニナさんですか？"), ("Mina. Got it. Nice to meet you.", "ミナさんですね。分かりました。はじめまして。"), ("Nice to meet you.", "はじめまして。")), wild=("Neighbor", 1, 1, ("Hi. What's your name?", "こんにちは。お名前は？"), ("Sorry, could you say that again?", "すみません、もう一度言ってもらえますか？"), ("Ken. Got it. Nice to meet you.", "ケンさんですね。分かりました。はじめまして。"), ("Nice to meet you.", "はじめまして。"))),
-    2: dict(model=("Classmate", 0, 1, ("What do you do?", "お仕事は何ですか？"), ("What else do you do?", "ほかにどんな仕事をしていますか？"), ("A designer and an artist. So what's your main job?", "デザイナーでアーティストなんですね。主な仕事は何ですか？"), ("I'm a designer.", "デザイナーです。")), wild=("Guest", 2, 2, ("What do you do?", "お仕事は何ですか？"), ("What else do you do?", "ほかにどんな仕事をしていますか？"), ("A teacher and an editor. So what's your main job?", "教師で編集者なんですね。主な仕事は何ですか？"), ("I'm a teacher.", "教師です。"))),
-    3: dict(model=("Classmate", 0, 0, ("Where are you from?", "出身はどこですか？"), ("Osaka. Where do you live now?", "大阪なんですね。今はどこに住んでいますか？"), ("Tokyo. Could you say where you live once more?", "東京ですね。今住んでいる場所をもう一度言ってもらえますか？"), ("I live in Tokyo now.", "今は東京に住んでいます。")), wild=("Neighbor", 1, 1, ("Where are you from?", "出身はどこですか？"), ("Tokyo. Where do you live now?", "東京なんですね。今はどこに住んでいますか？"), ("Osaka. Could you say where you live once more?", "大阪ですね。今住んでいる場所をもう一度言ってもらえますか？"), ("I live in Osaka now.", "今は大阪に住んでいます。"))),
+    1: dict(model=("Classmate", 0, 0, ("Hi. Tell me about yourself.", "こんにちは。自己紹介をしてください。"), ("Nice to meet you, Mina. How do you feel today?", "はじめまして、ミナさん。今日はどんな気分ですか？"), ("Happy—good to hear. What's your family name?", "うれしいんですね。名字は何ですか？"), ("Nice to meet you.", "はじめまして。")), wild=("Neighbor", 2, 2, ("Hi. Tell me about yourself.", "こんにちは。自己紹介をしてください。"), ("A designer—nice. What's your first name?", "デザイナーなんですね。名前は何ですか？"), ("Yuki. Got it. Nice to meet you.", "ユキさんですね。分かりました。はじめまして。"), ("Nice to meet you.", "はじめまして。"))),
+    2: dict(model=("Classmate", 0, 0, ("Where are you from?", "出身はどこですか？"), ("Osaka. Where do you live now?", "大阪なんですね。今はどこに住んでいますか？"), ("Tokyo. So your home and hometown are different.", "東京なんですね。今の居住地と出身地は違うんですね。"), ("That's right.", "その通りです。")), wild=("Neighbor", 2, 2, ("Tell me about Anna.", "アナさんについて教えてください。"), ("Kyoto. Where does she live now?", "京都出身なんですね。今はどこに住んでいますか？"), ("Nagoya. Thanks—I understand.", "名古屋ですね。ありがとうございます。分かりました。"), ("That's right.", "その通りです。"))),
+    3: dict(model=("Classmate", 0, 1, ("You found a bag. Ask me about it.", "かばんを見つけました。私に確認してください。"), ("Yes, it is. Now ask if I'm ready.", "はい、私のです。次に、準備ができたか聞いてください。"), ("Yes, I'm ready. Let's go.", "はい、準備できました。行きましょう。"), ("Okay.", "分かりました。")), wild=("Guest", 1, 3, ("We need a train. Check this one.", "電車に乗ります。この電車で合っているか確認してください。"), ("Yes, it is. Now ask if I'm free tomorrow.", "はい、合っています。次に、明日暇か聞いてください。"), ("Yes, I am. Let's meet tomorrow.", "はい、暇です。明日会いましょう。"), ("Okay.", "分かりました。"))),
     4: dict(model=("Classmate", 0, 0, ("Who's this?", "こちらはどなたですか？"), ("Nice to meet you, Leo. Where's he from?", "はじめまして、レオさん。出身はどこですか？"), ("Canada. Nice to meet you.", "カナダなんですね。はじめまして。"), ("Nice to meet you too.", "こちらこそ、はじめまして。")), wild=("Host", 1, 1, ("Who's this?", "こちらはどなたですか？"), ("Nice to meet you, Anna. Where's she from?", "はじめまして、アナさん。出身はどこですか？"), ("Australia. Nice to meet you.", "オーストラリアなんですね。はじめまして。"), ("Nice to meet you too.", "こちらこそ、はじめまして。"))),
     5: dict(model=("Coworker", 0, 0, ("I found this bag near your desk.", "机の近くでこのかばんを見つけました。"), ("Yes. Is that phone yours too?", "はい。あの携帯もあなたのですか？"), ("Great. We found both owners.", "よかった。両方の持ち主が分かりました。"), ("Thank you.", "ありがとうございます。")), wild=("Guest", 2, 2, ("I found this ticket by the chair.", "椅子のそばでこのチケットを見つけました。"), ("No, that one's yours. Is that key yours?", "いいえ、それはあなたのです。あの鍵はあなたのですか？"), ("Right—the key is mine.", "そうですね。鍵は私のです。"), ("Thank you.", "ありがとうございます。"))),
     6: dict(model=("Classmate", 0, 0, ("Ask me about my job.", "私の仕事について聞いてください。"), ("No, I'm not. I'm a nurse. Are you a student?", "いいえ、違います。看護師です。あなたは学生ですか？"), ("A student. Nice to meet you.", "学生なんですね。はじめまして。"), ("Nice to meet you too.", "こちらこそ、はじめまして。")), wild=("Guest", 1, 2, ("Ask me about my job.", "私の仕事について聞いてください。"), ("Yes, I am. Are you an engineer?", "はい、そうです。あなたはエンジニアですか？"), ("An engineer. Nice to meet you.", "エンジニアなんですね。はじめまして。"), ("Nice to meet you too.", "こちらこそ、はじめまして。"))),
@@ -520,9 +487,9 @@ DIALOGUES = {
 
 
 LIVE_SCENES = {
-    1: (("input", "me", "Me", "Your answer. Use today's pattern only if it fits naturally.", "自分の答え。今日のパターンは自然に使えるときだけ使う"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Give a real, brief answer.", "先生の本当の短い答え")),
-    2: (("input", "me", "Me", "Your answer. Use today's pattern only if it fits naturally.", "自分の答え。今日のパターンは自然に使えるときだけ使う"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Give a real, brief answer.", "先生の本当の短い答え")),
-    3: (("input", "me", "Me", "Your answer. Use today's pattern only if it fits naturally.", "自分の答え。今日のパターンは自然に使えるときだけ使う"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Give a real, brief answer.", "先生の本当の短い答え")),
+    1: (("text", "other", "Tutor", "What's your name, and what else would you like me to know about you?", "お名前と、もう一つ自分について伝えたいことを教えてください。"), ("input", "me", "Me", "Introduce yourself with two true details.", "本当の情報を二つ使って自己紹介する"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Give your own brief introduction.", "先生自身の短い自己紹介")),
+    2: (("text", "other", "Tutor", "Where are you from, and where do you live now?", "出身はどこで、今はどこに住んでいますか？"), ("input", "me", "Me", "Answer with your real places.", "本当の場所で答える"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Use your real places.", "先生の本当の場所で答える")),
+    3: (("text", "other", "Tutor", "What natural Is this question can you ask about something here?", "ここにある物について、どんな自然な Is this の質問ができますか？"), ("input", "me", "Me", "Ask your Is this question.", "Is this の質問をする"), ("text", "me", "Me", "Are you ready?", "準備はできましたか？"), ("input", "other", "Tutor", "Tutor's answer: Answer naturally, then let the learner try another Are you question.", "自然に答えてから、別の Are you の質問も練習させる")),
     4: (("input", "me", "Me", "Your answer. Use today's pattern only if it fits naturally.", "自分の答え。今日のパターンは自然に使えるときだけ使う"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Give a real, brief answer.", "先生の本当の短い答え")),
     5: (("input", "me", "Me", "Your answer. Use today's pattern only if it fits naturally.", "自分の答え。今日のパターンは自然に使えるときだけ使う"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Give a real, brief answer.", "先生の本当の短い答え")),
     6: (("input", "me", "Me", "Your answer. Use today's pattern only if it fits naturally.", "自分の答え。今日のパターンは自然に使えるときだけ使う"), ("text", "me", "Me", "How about you?", "先生はどうですか？"), ("input", "other", "Tutor", "Tutor's answer: Give a real, brief answer.", "先生の本当の短い答え")),
@@ -537,9 +504,9 @@ LIVE_SCENES = {
 # Event index -> explicit menu for learner-editable live fields. Tutor fields
 # deliberately have no learner menu.
 LIVE_HINTS = {
-    1: {0: ("名字:family name", "名前:first name", "覚えやすい:easy to remember")},
-    2: {0: ("料理人:chef", "教師:teacher", "デザイナー:designer")},
-    3: {0: ("町:city", "国:country", "一年:for a year")},
+    1: {1: ("うれしい:happy", "デザイナー:designer", "名前:first name", "名字:family name")},
+    2: {1: ("出身:from", "住んでいる:live")},
+    3: {1: ("かばん:bag", "正しい:right", "鍵:key", "大丈夫:okay")},
     4: {0: ("友だち:friend", "同僚:coworker", "親切な:kind", "面白い:funny")},
     5: {0: ("携帯:phone", "鍵:key", "傘:umbrella", "かばん:bag")},
     6: {0: ("教師:teacher", "医師:doctor", "デザイナー:designer", "変わった:changed")},
@@ -556,15 +523,23 @@ LIVE_HINTS = {
 # rendered sixth turn and its owner to this source.
 SUPPORT_LINE_OWNERS = {
     1: "CORE-1 supporting expression",
-    4: "CORE-4 supporting expression",
-    5: "CORE-5 bounded survival chunk",
-    6: "CORE-4 supporting expression",
+    2: "CORE-2 supporting expression",
+    3: "CORE-3 supporting expression",
     7: "CORE-7 bounded survival chunk",
     8: "CORE-8 supporting expression",
     9: "CORE-9 supporting expression",
     10: "CORE-10 supporting expression",
     11: "CORE-11 supporting expression",
 }
+
+# Retired IDs remain visible in the source history above for review context, but
+# they are not part of any generated or validated inventory.
+for _mapping in (
+    VOCAB, KNOWN_WORDS, TRANSLATE_HINTS, OPEN_MENUS, SPECS, DIALOGUES,
+    LIVE_SCENES, LIVE_HINTS, SUPPORT_LINE_OWNERS,
+):
+    for _retired in (4, 5, 6):
+        _mapping.pop(_retired, None)
 
 
 FINAL_LINE_OWNERSHIP = {

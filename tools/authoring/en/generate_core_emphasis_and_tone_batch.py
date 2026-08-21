@@ -108,9 +108,9 @@ LESSONS = {
         goal=("Put your main concern first, then focus your suggestion.", "一番の懸念を先に示し、提案の焦点をはっきりさせましょう。"),
         p1=rows(
             ("{t}What worries me most is{/t} the cost.", "{t}一番心配なのは{/t}費用です。", "What worries me|most|is|the cost."),
-            ("{t}What worries me most is{/t} the schedule.", "{t}一番心配なのは{/t}日程です。", "What worries me|most|is|the schedule."),
-            ("{t}What worries me most is{/t} the deadline.", "{t}一番心配なのは{/t}期限です。", "What worries me|most|is|the deadline."),
-            ("{t}What worries me most is{/t} the quality.", "{t}一番心配なのは{/t}品質です。", "What worries me|most|is|the quality."),
+            ("{t}What surprises me most is{/t} the timing.", "{t}一番意外なのは{/t}時期です。", "What surprises me|most|is|the timing."),
+            ("{t}What concerns me most is{/t} the deadline.", "{t}一番気がかりなのは{/t}期限です。", "What concerns me|most|is|the deadline."),
+            ("{t}What bothers me most is{/t} the quality.", "{t}一番引っかかるのは{/t}品質です。", "What bothers me|most|is|the quality."),
         ),
         p2=rows(
             ("{t}What I'd suggest is{/t} waiting a week.", "{t}私が提案したいのは{/t}、1週間待つことです。", "What I'd suggest|is|waiting|a week."),
@@ -165,9 +165,9 @@ LESSONS = {
         goal=("Announce one point or a small set before you give the details.", "一つの点や少数の項目を、詳しく述べる前に予告しましょう。"),
         p1=rows(
             ("{t}There's one thing I'd change{/t}.", "{t}一つ変えたい点があります{/t}。", "There's|one thing|I'd|change."),
-            ("{t}There's one thing I'd check{/t}.", "{t}一つ確認したい点があります{/t}。", "There's|one thing|I'd|check."),
+            ("{t}There are two things I'd check{/t}.", "{t}確認したい点が二つあります{/t}。", "There are|two things|I'd|check."),
             ("{t}There's one thing I'd add{/t}.", "{t}一つ加えたい点があります{/t}。", "There's|one thing|I'd|add."),
-            ("{t}There's one thing I'd suggest{/t}.", "{t}一つ提案したい点があります{/t}。", "There's|one thing|I'd|suggest."),
+            ("{t}There are a few things I'd suggest{/t}.", "{t}提案したい点がいくつかあります{/t}。", "There are|a few things|I'd|suggest."),
         ),
         p2=rows(
             ("{t}There are a couple of issues worth raising{/t}.", "{t}取り上げる価値のある問題が二つほどあります{/t}。", "There are|a couple of issues|worth|raising."),
@@ -248,9 +248,9 @@ LESSONS = {
         ),
         p2=rows(
             ("{t}I'm afraid there's been a problem{/t}.", "{t}残念ですが、問題が起きました{/t}。", "I'm afraid|there's been|a problem."),
-            ("{t}I'm afraid there's been a delay{/t}.", "{t}残念ですが、遅れが出ました{/t}。", "I'm afraid|there's been|a delay."),
+            ("{t}I'm afraid we can't confirm that yet{/t}.", "{t}残念ですが、まだ確定できません{/t}。", "I'm afraid|we can't|confirm that yet."),
             ("{t}I'm afraid there's been a mistake{/t}.", "{t}残念ですが、間違いがありました{/t}。", "I'm afraid|there's been|a mistake."),
-            ("{t}I'm afraid there's been a change{/t}.", "{t}残念ですが、変更がありました{/t}。", "I'm afraid|there's been|a change."),
+            ("{t}I'm afraid the room is already booked{/t}.", "{t}残念ですが、その部屋はすでに予約されています{/t}。", "I'm afraid|the room is|already booked."),
         ),
         rules=(("Put the unwelcome clause after I hate to say it, but; do not hide the news.", "I hate to say it, but のあとに好ましくない内容を置き、知らせを曖昧にしません。"), ("Here I'm afraid introduces bad news; it does not mean the speaker feels fear.", "ここでの I'm afraid は悪い知らせを導き、話し手の恐怖を表すものではありません。")),
         prompt=("Deliver one clear piece of practice bad news, or say there is no bad news today.", "練習用の悪い知らせを一つ明確に伝えるか、今日は悪い知らせがないと伝えましょう。"),
@@ -280,15 +280,15 @@ LESSONS = {
         goal=("Name the effect of someone's wording and repair an unintended tone.", "言い方が与えた印象を伝え、意図しない調子を修復しましょう。"),
         p1=rows(
             ("{t}That came across as rude{/t}.", "{t}その言い方は失礼に聞こえました{/t}。", "That|came across|as|rude."),
-            ("{t}That came across as cold{/t}.", "{t}その言い方は冷たく聞こえました{/t}。", "That|came across|as|cold."),
+            ("{t}That came across as a little cold{/t}.", "{t}その言い方は少し冷たく聞こえました{/t}。", "That|came across|as|a little cold."),
             ("{t}That came across as impatient{/t}.", "{t}その言い方はいら立っているように聞こえました{/t}。", "That|came across|as|impatient."),
-            ("{t}That came across as unclear{/t}.", "{t}その言い方は分かりにくく聞こえました{/t}。", "That|came across|as|unclear."),
+            ("{t}That came across as more critical than you meant{/t}.", "{t}その言い方は意図より批判的に聞こえました{/t}。", "That|came across|as|more critical than you meant."),
         ),
         p2=rows(
             ("{t}I didn't mean to sound rude{/t}.", "{t}失礼に聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|rude."),
-            ("{t}I didn't mean to sound cold{/t}.", "{t}冷たく聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|cold."),
+            ("{t}I didn't mean to sound so cold{/t}.", "{t}そんなに冷たく聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|so cold."),
             ("{t}I didn't mean to sound impatient{/t}.", "{t}いら立って聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|impatient."),
-            ("{t}I didn't mean to sound unclear{/t}.", "{t}分かりにくく聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|unclear."),
+            ("{t}I didn't mean to sound quite so blunt{/t}.", "{t}そこまでぶっきらぼうに聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|quite so blunt."),
         ),
         rules=(("Use came across as plus an adjective to describe the listener's impression.", "聞き手が受けた印象には came across as＋形容詞を使います。"), ("Use mean to plus plain sound, then an adjective for the unintended tone.", "意図しなかった調子には mean to＋動詞の原形 sound＋形容詞を使います。")),
         prompt=("Describe one low-stakes wording problem and repair it, or say none comes to mind.", "重要度の低い言い方の問題と修復を述べるか、思いつかないと伝えましょう。"),
@@ -308,7 +308,7 @@ SPECS = {
     103: semantic_spec(
         (("Use this to put your biggest concern after is.", "最大の懸念を is の後ろに置いて強調します。"), ("Use this to focus the action you recommend.", "勧める行動に焦点を当てます。")),
         (("Imagine a decision and name your main concern.", "ある判断を想像し、一番の懸念を言いましょう。"), ("Suggest one action for an imagined concern.", "想像した懸念に対する行動を一つ提案しましょう。")),
-        (tuple((jp, "What ", "worries", "worry", tail) for jp, tail in (("私を一番{t}心配させる{/t}のは費用です。", " me most is the cost."), ("私を一番{t}心配させる{/t}のは日程です。", " me most is the schedule."), ("私を一番{t}心配させる{/t}のは期限です。", " me most is the deadline."), ("私を一番{t}心配させる{/t}のは品質です。", " me most is the quality."))), (("私が提案したいのは1週間{t}待つこと{/t}です。", "What I'd suggest is ", "waiting", "wait", " a week."), ("私が提案したいのはデータを{t}確認すること{/t}です。", "What I'd suggest is ", "checking", "check", " the data."), ("私が提案したいのは顧客に{t}聞くこと{/t}です。", "What I'd suggest is ", "asking", "ask", " the client."), ("私が提案したいのは明日{t}始めること{/t}です。", "What I'd suggest is ", "starting", "start", " tomorrow."))),
+        ((("私を一番{t}心配させる{/t}のは費用です。", "What ", "worries", "worry", " me most is the cost."), ("私を一番{t}驚かせる{/t}のは時期です。", "What ", "surprises", "surprise", " me most is the timing."), ("私を一番{t}気にさせる{/t}のは期限です。", "What ", "concerns", "concern", " me most is the deadline."), ("私を一番{t}引っかからせる{/t}のは品質です。", "What ", "bothers", "bother", " me most is the quality.")), (("私が提案したいのは1週間{t}待つこと{/t}です。", "What I'd suggest is ", "waiting", "wait", " a week."), ("私が提案したいのはデータを{t}確認すること{/t}です。", "What I'd suggest is ", "checking", "check", " the data."), ("私が提案したいのは顧客に{t}聞くこと{/t}です。", "What I'd suggest is ", "asking", "ask", " the client."), ("私が提案したいのは明日{t}始めること{/t}です。", "What I'd suggest is ", "starting", "start", " tomorrow."))),
         (rule("Focus after is", "is の後ろに焦点", "What + clause + <b>is</b> + focus", "Front the concern frame", "懸念の枠を先に", ("What worries me most <b>is the cost</b>.", "What worries me most <b>is the deadline</b>.")), rule("Suggestion as an action", "提案は行動の形で", "What I'd suggest is + 動詞<b>-ing</b>", "Focused recommendation", "焦点を当てた提案", ("What I'd suggest is <b>waiting</b> a week.", "What I'd suggest is <b>checking</b> the data."))),
         tip("My main concern or what worries me most?", "直接的な懸念・焦点を当てた懸念", "Both are natural. The What-clause deliberately saves the key point for the end.", "どちらも自然です。What 節は重要な点を意図的に文末まで取っておきます。", ("Neutral and direct", "中立で直接的", "My main concern is the cost.", "主な懸念は費用です。"), ("Deliberate end focus", "文末に焦点", "What worries me most is the cost.", "一番心配なのは費用です。")),
     ),
@@ -357,7 +357,7 @@ SPECS = {
     110: semantic_spec(
         (("Use this when you dislike having to state the bad news.", "悪い知らせを言わなければならないのが心苦しいときに使います。"), ("Use this conventional cushion before a clear problem statement.", "明確な問題を述べる前の定型的な和らげ表現です。")),
         (("Imagine a problem and state it clearly but gently.", "問題を想像し、やわらかく、はっきり伝えましょう。"), ("Imagine a delay or mistake and deliver the bad news clearly.", "遅れや間違いを想像し、悪い知らせを明確に伝えましょう。")),
-        (tuple((jp, "I hate to say it, ", "but", "so", tail) for jp, tail in (("言いにくいのですが、{t}しかし{/t}遅れています。", " we're behind."), ("言いにくいのですが、{t}しかし{/t}今日は終えられません。", " we can't finish today."), ("言いにくいのですが、{t}しかし{/t}注文が遅れています。", " the order is delayed."), ("言いにくいのですが、{t}しかし{/t}価格が変わりました。", " the price has changed."))), (("残念ですが、{t}問題{/t}が起きました。", "I'm afraid there's been ", "a problem", "problems", "."), ("残念ですが、{t}遅れ{/t}が出ました。", "I'm afraid there's been ", "a delay", "delays", "."), ("残念ですが、{t}間違い{/t}がありました。", "I'm afraid there's been ", "a mistake", "mistakes", "."), ("残念ですが、{t}変更{/t}がありました。", "I'm afraid there's been ", "a change", "changes", "."))),
+        (tuple((jp, "I hate to say it, ", "but", "so", tail) for jp, tail in (("言いにくいのですが、{t}しかし{/t}遅れています。", " we're behind."), ("言いにくいのですが、{t}しかし{/t}今日は終えられません。", " we can't finish today."), ("言いにくいのですが、{t}しかし{/t}注文が遅れています。", " the order is delayed."), ("言いにくいのですが、{t}しかし{/t}価格が変わりました。", " the price has changed."))), (("残念ですが、{t}問題{/t}が起きました。", "I'm afraid there's been ", "a problem", "problems", "."), ("残念ですが、まだ{t}確定できません{/t}。", "I'm afraid we ", "can't", "don't", " confirm that yet."), ("残念ですが、{t}間違い{/t}がありました。", "I'm afraid there's been ", "a mistake", "mistakes", "."), ("残念ですが、その部屋は{t}すでに{/t}予約されています。", "I'm afraid the room is ", "already", "yet", " booked."))),
         (rule("Behind or behind schedule?", "behind / behind schedule", "<b>behind</b>（文脈）／<b>behind schedule</b>（明示）", "After the cushion", "和らげ表現のあと", ("I hate to say it, but <b>we're behind</b>.", "I hate to say it, but <b>we're behind schedule</b>.")), rule("Afraid as a news cushion", "知らせを和らげる afraid", "I'm afraid + <b>full clause</b>", "Not literal fear", "文字どおりの恐怖ではない", ("I'm afraid <b>there's been a problem</b>.", "I'm afraid <b>there's been a delay</b>."))),
         tip("I'm sorry, but or I'm afraid?", "責任を認める・悪い知らせを和らげる", "Use “I'm sorry, but” when you own an inconvenience. “I'm afraid” can introduce bad news without claiming personal fault.", "自分が迷惑をかけたなら I'm sorry, but を使います。I'm afraid は自分の責任を認めずに悪い知らせを導くこともできます。", ("Own the inconvenience", "自分の責任", "I'm sorry, but I sent the wrong file.", "すみません、間違ったファイルを送りました。"), ("Introduce bad news", "悪い知らせを導入", "I'm afraid there's been a delay.", "残念ですが、遅れが出ました。")),
     ),
@@ -371,7 +371,7 @@ SPECS = {
     112: semantic_spec(
         (("Use this to describe the impression created by wording.", "言い方が与えた印象を説明します。"), ("Use this to separate your intention from an unintended tone.", "自分の意図と、意図しなかった調子を分けて伝えます。")),
         (("Name how one low-stakes message sounded.", "重要度の低いメッセージがどう聞こえたか言いましょう。"), ("Repair one unintended tone.", "意図しない調子を一つ修復しましょう。")),
-        ((("as の後ろは{t}形容詞「失礼な」{/t}。", "That came across as ", "rude", "rudely", "."), ("as の後ろは{t}形容詞「冷たい」{/t}。", "That came across as ", "cold", "coldly", "."), ("as の後ろは{t}形容詞「いら立っている」{/t}。", "That came across as ", "impatient", "impatiently", "."), ("as の後ろは{t}形容詞「分かりにくい」{/t}。", "That came across as ", "unclear", "unclearly", ".")), (("sound の後ろは{t}形容詞「失礼な」{/t}。", "I didn't mean to sound ", "rude", "rudely", "."), ("sound の後ろは{t}形容詞「冷たい」{/t}。", "I didn't mean to sound ", "cold", "coldly", "."), ("sound の後ろは{t}形容詞「いら立っている」{/t}。", "I didn't mean to sound ", "impatient", "impatiently", "."), ("sound の後ろは{t}形容詞「分かりにくい」{/t}。", "I didn't mean to sound ", "unclear", "unclearly", "."))),
+        ((("as の後ろは{t}形容詞「失礼な」{/t}。", "That came across as ", "rude", "rudely", "."), ("as の後ろは{t}形容詞「冷たい」{/t}。", "That came across as a little ", "cold", "coldly", "."), ("as の後ろは{t}形容詞「いら立っている」{/t}。", "That came across as ", "impatient", "impatiently", "."), ("as の後ろは{t}形容詞「批判的な」{/t}。", "That came across as more ", "critical", "critically", " than you meant.")), (("sound の後ろは{t}形容詞「失礼な」{/t}。", "I didn't mean to sound ", "rude", "rudely", "."), ("sound の後ろは{t}形容詞「冷たい」{/t}。", "I didn't mean to sound so ", "cold", "coldly", "."), ("sound の後ろは{t}形容詞「いら立っている」{/t}。", "I didn't mean to sound ", "impatient", "impatiently", "."), ("sound の後ろは{t}形容詞「ぶっきらぼうな」{/t}。", "I didn't mean to sound quite so ", "blunt", "bluntly", "."))),
         (rule("Impact as an impression", "印象としての影響", "come across as + <b>adjective</b>", "Name how it sounded", "どう聞こえたかを示す", ("That came across as <b>rude</b>.", "That came across as <b>cold</b>.")), rule("Intent plus sound adjective", "意図＋sound＋形容詞", "didn't mean to + <b>sound + adjective</b>", "Separate intent from effect", "意図と影響を分ける", ("I didn't mean to sound <b>rude</b>.", "I didn't mean to sound <b>impatient</b>."))),
         tip("Came across as rude or sounded rude?", "印象に焦点・直接的な評価", "“Came across as” foregrounds the listener's impression and can feel less absolute. “Sounded rude” is a more direct judgment.", "came across as は聞き手の印象に焦点を置き、断定を弱められます。sounded rude はより直接的な評価です。", ("Focus on impression", "受けた印象", "That came across as rude.", "その言い方は失礼に聞こえました。"), ("Direct judgment", "直接的な評価", "That sounded rude.", "それは失礼に聞こえました。")),
     ),
@@ -379,16 +379,16 @@ SPECS = {
 
 
 VOCAB = {
-    103: dict(new="worries|心配させる; suggest|提案する; concern|懸念; bottom line|要するに; the real question is|本当の問題は", recycled="schedule|予定|CORE-67; deadline|期限|CORE-82; quality|品質|CORE-85; data|データ|CORE-85; client|顧客|CORE-54; thanks|ありがとう|CORE-9", assumed="great|よかった; cost|費用; wait|待つ; week|週; start|始める; ask|聞く; check|確認する; compare|比べる; date|日付; decide|決める; decision|判断; discuss|話す; then|そうすれば; two|二つ", receptive="deliberate focus|意図的な焦点"),
+    103: dict(new="worries|心配させる; surprises|驚かせる; concern|懸念; bothers|引っかかる; timing|時期; suggest|提案する; bottom line|要するに; the real question is|本当の問題は", recycled="schedule|予定|CORE-67; deadline|期限|CORE-82; quality|品質|CORE-85; data|データ|CORE-85; client|顧客|CORE-54; thanks|ありがとう|CORE-9", assumed="great|よかった; cost|費用; wait|待つ; week|週; start|始める; ask|聞く; check|確認する; compare|比べる; date|日付; decide|決める; decision|判断; discuss|話す; then|そうすれば; two|二つ", receptive="deliberate focus|意図的な焦点"),
     104: dict(new="matters|重要である; precisely|まさに; that's the thing|そこが重要な点", recycled="timing|タイミング|CORE-85; price|値段|CORE-19; schedule|予定|CORE-67; budget|予算|CORE-53; quality|品質|CORE-85; deadline|期限|CORE-82; client|顧客|CORE-54; called|電話した|CORE-36; know|分かる|CORE-62; thanks|ありがとう|CORE-9; suggest|提案する|CORE-103; final version|最終版|CORE-83", assumed="speed|速さ; format|形式; date|日付; afternoon|午後; change|変更する; choose|選ぶ; clear|明確な; give|与える; Ken|ケン; Maya|マヤ; next|次; perfect|よかった; Sam|サム; send|送る; step|一歩; then|それなら; us|私たち; Yuki|ユキ", receptive="cleft|分裂文; deciding element|決め手"),
     105: dict(new="longer|より長く; harder|より難しく; catch up|遅れを取り戻す; every day counts|一日一日が大切; the less, the better|少ないほどよい", recycled="sooner|もっと早く|CORE-71; book|予約する|CORE-41; know|分かる|CORE-62; mind|気にする|CORE-60; urgent|緊急の|CORE-83", assumed="great|よかった; wait|待つ; finish|終える; find|見つける; room|部屋; start|始める; arrive|着く; decide|決める; ask|聞く; come|来る; confirm|確認する; file|ファイル; fix|直す; good|よい; group|グループ; it'll|〜になる; leave|出る; prepare|準備する; size|人数", receptive="linked change|連動する変化"),
     106: dict(new="worth raising|取り上げる価値がある; a couple of|二つほど; if I may|差し支えなければ; while we're on it|この話のついでに", recycled="issue|問題|CORE-82; option|選択肢|CORE-45; suggest|提案する|CORE-103; draft|下書き|CORE-82; point|要点|CORE-85; concern|懸念|CORE-103", assumed="one thing|一つの点; change|変える; check|確認する; add|加える; detail|詳細; discuss|話し合う; review|見直す; few|いくつか; fine|問題ない; good|よい; important|重要な; look|見える; mark|印を付ける; perfect|よかった; start|始める; them|それら; three|三つ; two|二つ; worth discussing|話し合う価値がある; worth checking|確認する価値がある; worth reviewing|見直す価値がある", receptive="announce|予告する; approximate|およその"),
     107: dict(new="As for|〜については; Coming back to|〜に話を戻す; timeline|予定表; firm date|確定日; on that note|その流れで; while I remember|思い出したついでに", recycled="budget|予算|CORE-53; delivery|配達|CORE-77; schedule|予定|CORE-67; price|値段|CORE-19; meeting|会議|CORE-30; reply|返事をする|CORE-80; thanks|ありがとう|CORE-9; update|更新する|CORE-37", assumed="great|よかった; venue|会場; wait|待つ; booked|予約済み; change|変更; answer|返事; decision|判断; second option|二つ目の案; call|電話する; decide|決める; may|かもしれない; need|必要; organise|整理する; plan|案", receptive="organise a topic|話題を整理する; speaking of|〜と言えば"),
     108: dict(new="send over|送る; figures|数字; when you get a sec|時間があるとき; at your earliest convenience|できるだけ早く", recycled="draft|下書き|CORE-82; meeting|会議|CORE-30; thanks|ありがとう|CORE-9", assumed="send|送る; review|確認する; confirm|確認する; date|日付; check|確認する; call|電話する; colleague|同僚; help|手伝い; able|できる; Alex|アレックス; ask|頼む; Leo|レオ; lunch|昼食; message|メッセージする; need|必要; perfect|よかった", receptive="register|言葉の調子; routine task|日常的な作業"),
     109: dict(new="bluntly|率直に; honestly|正直に; walk away|見送る; no offence, but|悪く取らないでほしいが; frankly|率直に言えば", recycled="price|値段|CORE-19; option|選択肢|CORE-45; contract|契約書|CORE-59", assumed="won't|〜しない; work|うまくいく; cost|費用; late|遅い; another plan|別の案; wait|待つ; say no|断る; choose|選ぶ; agent|担当者; call|電話する; give|与える; good|よい; judge|判断する; much|多すぎる; need|必要; next|次; other|もう一つ; practical|現実的な; put|言う; rather|むしろ; step|一歩; us|私たち", receptive="directness|率直さ; candid|偽りのない"),
-    110: dict(new="behind schedule|予定より遅れて; I'm afraid|残念ですが; bear with me|少々お待ちください; hate to say|言いにくいですが", recycled="behind|後ろに|CORE-11; unfortunately|残念ながら|CORE-34; delayed|遅れている|CORE-82; price|値段|CORE-19; thanks|ありがとう|CORE-9", assumed="problem|問題; delay|遅れ; finish|終える; order|注文; mistake|間違い; change|変更; bad news|悪い知らせ; booking|予約; correct|修正する; revise|変更する; say|言う; send|送る; thank|感謝する; wait|待つ; cause|原因", receptive="cushion|和らげる表現; inconvenience|不便"),
-    111: dict(new="Just so you know|念のためお知らせします; Heads up|先にお知らせ; FYI|参考までに; for what it's worth|参考になるか分かりませんが", recycled="book|予約する|CORE-41; meeting|会議|CORE-30; ready|準備できた|CORE-80; client|顧客|CORE-54; price|値段|CORE-19; delayed|遅れている|CORE-82; earlier|さっき|CORE-55; thanks|ありがとう|CORE-9; ticket|チケット|CORE-5; update|更新する|CORE-37", assumed="great|よかった; tell|伝える; room|部屋; room's|部屋は; moved|変更になった; report|レポート; call|電話する; train|電車; change|変更する; group|グループ; new|新しい; rest|残り; Sam|サム; see|会う; three|3時", receptive="neutral update|中立的な更新; timely alert|早めの注意"),
-    112: dict(new="came across as|〜という印象を与えた; cold|冷たい; rude|失礼な; impatient|いら立っている; rephrase|言い換える; intention|意図", recycled="mind|気にする|CORE-60", assumed="unclear|分かりにくい; sound|聞こえる; mean to|〜するつもり; wording|言い方; message|メッセージ; answer|答え; course|もちろん; explain|説明する; politely|丁寧に; say|言う", receptive="impact|影響; repair path|修復の道筋"),
+    110: dict(new="behind schedule|予定より遅れて; I'm afraid|残念ですが; bear with me|少々お待ちください; hate to say|言いにくいですが; room|部屋; booked|予約された; confirm|確定する", recycled="behind|後ろに|CORE-11; unfortunately|残念ながら|CORE-34; delayed|遅れている|CORE-82; price|値段|CORE-19; thanks|ありがとう|CORE-9", assumed="problem|問題; delay|遅れ; finish|終える; order|注文; mistake|間違い; change|変更; bad news|悪い知らせ; booking|予約; correct|修正する; revise|変更する; say|言う; send|送る; thank|感謝する; wait|待つ; cause|原因", receptive="cushion|和らげる表現; inconvenience|不便"),
+    111: dict(new="Just so you know|念のためお知らせします; Heads up|先にお知らせ; FYI|参考までに; for what it's worth|参考になるか分かりませんが", recycled="book|予約する|CORE-41; meeting|会議|CORE-30; ready|準備できた|CORE-80; client|顧客|CORE-54; price|値段|CORE-19; delayed|遅れている|CORE-82; earlier|さっき|CORE-55; thanks|ありがとう|CORE-9; ticket|チケット|CORE-9; update|更新する|CORE-37", assumed="great|よかった; tell|伝える; room|部屋; room's|部屋は; moved|変更になった; report|レポート; call|電話する; train|電車; change|変更する; group|グループ; new|新しい; rest|残り; Sam|サム; see|会う; three|3時", receptive="neutral update|中立的な更新; timely alert|早めの注意"),
+    112: dict(new="came across as|〜という印象を与えた; cold|冷たい; rude|失礼な; impatient|いら立っている; critical|批判的な; blunt|ぶっきらぼうな; rephrase|言い換える; intention|意図", recycled="mind|気にする|CORE-60", assumed="unclear|分かりにくい; a little|少し; meant|つもりだった; quite so|そこまで; sound|聞こえる; mean to|〜するつもり; wording|言い方; message|メッセージ; answer|答え; course|もちろん; explain|説明する; politely|丁寧に; say|言う", receptive="impact|影響; repair path|修復の道筋"),
 }
 
 
@@ -407,16 +407,16 @@ KNOWN_WORDS = {
 
 
 TRANSLATE_HINTS = {
-    103: (("心配させる:worries",) * 4, ("提案する:suggest",) * 4),
+    103: (("心配させる:worries", "驚かせる:surprises", "気にさせる:concerns", "引っかかる:bothers"), ("提案する:suggest",) * 4),
     104: (("タイミング:timing", "予定:schedule", "品質:quality", "期限:deadline"), ("サム:Sam", "マヤ:Maya", "ケン:Ken", "ユキ:Yuki")),
     105: (("より長く:longer; より難しく:harder; 遅れを取り戻す:catch up", "より長く:longer; より難しく:harder; 終える:finish", "より長く:longer; より難しく:harder; 見つける:find", "より長く:longer; より難しく:harder; 直す:fix"), ("もっと早く:sooner; 始める:start", "もっと早く:sooner; 出る:leave", "もっと早く:sooner; 決める:decide", "もっと早く:sooner; 聞く:ask")),
     106: (("変える:change", "確認する:check", "加える:add", "提案する:suggest"), ("取り上げる価値がある:worth raising", "話し合う価値がある:worth discussing", "確認する価値がある:worth checking", "見直す価値がある:worth reviewing")),
     107: (("〜については:As for",) * 4, ("〜に話を戻す:Coming back to",) * 4),
     108: (("送る:send", "下書き:draft", "日付:date", "数字:figures"), ("時間があるとき:when you get a sec",) * 4),
     109: (("率直に:bluntly",) * 4, ("正直に:honestly",) * 4),
-    110: (("予定より遅れている:behind", "終える:finish", "遅れている:delayed", "価格:price"), ("問題:problem", "遅れ:delay", "間違い:mistake", "変更:change")),
+    110: (("予定より遅れている:behind", "終える:finish", "遅れている:delayed", "価格:price"), ("問題:problem", "確定する:confirm", "間違い:mistake", "予約された:booked")),
     111: (("念のためお知らせします:Just so you know",) * 4, ("先にお知らせ:Heads up",) * 4),
-    112: (("〜という印象を与える:come across as",) * 4, ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "分かりにくい:unclear")),
+    112: (("〜という印象を与える:come across as",) * 4, ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "急かす:rushing")),
 }
 
 
@@ -599,7 +599,7 @@ FREE_TALK = {
 # articles, auxiliaries, inflections, or the lesson's fixed discourse frame.
 TRANSLATE_HINTS = {
     103: (
-        ("費用:cost", "予定:schedule", "期限:deadline", "品質:quality"),
+        ("費用:cost", "時期:timing", "期限:deadline", "品質:quality"),
         ("待つ:wait; 週:week", "確認する:check; データ:data", "聞く:ask; 顧客:client", "始める:start; 明日:tomorrow"),
     ),
     104: (
@@ -628,15 +628,15 @@ TRANSLATE_HINTS = {
     ),
     110: (
         ("予定より遅れている:behind", "終える:finish", "遅れている:delayed", "価格:price; 変更:change"),
-        ("問題:problem", "遅れ:delay", "間違い:mistake", "変更:change"),
+        ("問題:problem", "確定する:confirm", "間違い:mistake", "予約された:booked"),
     ),
     111: (
         ("部屋:room; 予約する:book", "会議:meeting; 変更になった:moved", "チケット:ticket; 準備できた:ready", "顧客:client; 電話する:call"),
         ("会議:meeting; 変更になった:moved", "価格:price; 変更する:change", "電車:train; 遅れている:delayed", "サム:Sam; 電話する:call; さっき:earlier"),
     ),
     112: (
-        ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "分かりにくい:unclear"),
-        ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "分かりにくい:unclear"),
+        ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "批判的な:critical"),
+        ("失礼な:rude", "冷たい:cold", "いら立っている:impatient", "ぶっきらぼうな:blunt"),
     ),
 }
 

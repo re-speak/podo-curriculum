@@ -51,7 +51,7 @@ class VocabularyTests(unittest.TestCase):
                 (entry["english"], entry["japanese"], entry["source"])
                 for entry in data["categories"]["recycled"]
             ],
-            [("bag", "かばん", "CORE-5")],
+            [("bag", "かばん", "CORE-3")],
         )
 
     def test_duplicate_across_categories_is_rejected(self):

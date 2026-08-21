@@ -564,9 +564,9 @@ for _number, _copy in REVIEWED_COPY_49_60.items():
 # decision payload stays visible; only the reusable language move is blanked.
 LESSONS[52]["p1"]["rows"] = rows(
     ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} testing.", "{t}早く進むほど、{/t}テスト{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for testing."),
-    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} comparison.", "{t}早く進むほど、{/t}比較{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for comparison."),
+    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} a proper comparison.", "{t}早く進むほど、{/t}十分な比較{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for a proper comparison."),
     ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} training.", "{t}早く進むほど、{/t}研修{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for training."),
-    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} negotiation.", "{t}早く進むほど、{/t}交渉{t}に使える時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for negotiation."),
+    ("{t}The faster we move,{/t} {t}the less time we'll have for{/t} the client to review it.", "{t}早く進むほど、{/t}顧客が確認する{t}時間は少なくなります{/t}。", "The faster we move,|the less time|we'll have|for the client to review it."),
 )
 LESSONS[52]["p1"].update(
     write_frame="The faster we move, the less time we'll have for ___",
@@ -575,9 +575,9 @@ LESSONS[52]["p1"].update(
 )
 LESSONS[59]["p1"]["rows"] = rows(
     ("{t}We recognise the{/t} disruption {t}this is causing{/t}.", "{t}これにより生じている{/t}業務の混乱{t}を認識しています{/t}。", "We recognise|the disruption|this is causing."),
-    ("{t}We recognise the{/t} pressure {t}this is causing{/t}.", "{t}これにより生じている{/t}ご負担{t}を認識しています{/t}。", "We recognise|the pressure|this is causing."),
+    ("{t}We recognise the{/t} pressure on your teams {t}this is causing{/t}.", "{t}これにより生じている{/t}現場のご負担{t}を認識しています{/t}。", "We recognise|the pressure on your teams|this is causing."),
     ("{t}We recognise the{/t} delay {t}this is causing{/t}.", "{t}これにより生じている{/t}遅れ{t}を認識しています{/t}。", "We recognise|the delay|this is causing."),
-    ("{t}We recognise the{/t} uncertainty {t}this is causing{/t}.", "{t}これにより生じている{/t}ご不安{t}を認識しています{/t}。", "We recognise|the uncertainty|this is causing."),
+    ("{t}We recognise the{/t} operational uncertainty {t}this is causing{/t}.", "{t}これにより生じている{/t}業務上のご不安{t}を認識しています{/t}。", "We recognise|the operational uncertainty|this is causing."),
 )
 
 

@@ -19,7 +19,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[3] / "sandbox/drafts/en"
 class CoreEvidenceLedgerTests(unittest.TestCase):
     def test_every_live_core_row_has_evidence(self):
         lessons = track_parsers.parse_core()
-        self.assertEqual(len(lessons), 122)
+        self.assertEqual(len(lessons), 119)
         for lesson in lessons:
             with self.subTest(lesson=lesson["id"]):
                 inventory, cefr, status, note = build_core_evidence_ledger.evidence_for(lesson)

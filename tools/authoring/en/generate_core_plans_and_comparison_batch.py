@@ -162,8 +162,8 @@ LESSONS = {
         omit_choice=(1, 2),
         p2=rows(
             ("It’s {t}near the station{/t}.", "{t}駅の近くです{/t}。", "It's|near|the station."),
-            ("It’s {t}near the café{/t}.", "{t}カフェの近くです{/t}。", "It's|near|the café."),
-            ("It’s {t}near the hotel{/t}.", "{t}ホテルの近くです{/t}。", "It's|near|the hotel."),
+            ("It’s {t}near my office{/t}.", "{t}私のオフィスの近くです{/t}。", "It's|near|my office."),
+            ("It’s {t}near a small park{/t}.", "{t}小さな公園の近くです{/t}。", "It's|near|a small park."),
             ("It’s {t}near the bank{/t}.", "{t}銀行の近くです{/t}。", "It's|near|the bank."),
         ),
         rules=(("Put both adjectives before the noun; adjectives do not take plural -s.", "二つの形容詞は名詞の前に置き、複数でも形容詞に -s はつけません。"), ("Put near before the place you use as the landmark.", "目印にする場所の前に near を置きます。")),
@@ -235,10 +235,10 @@ VOCAB = {
     38: dict(new="noon|正午; bring|持ってくる", recycled="hotel|ホテル|CORE-7", assumed="carry|運ぶ; carry the box|箱を運ぶ; send|送る; send the files|ファイルを送る; finish|終える; call|電話する; box|箱; file|ファイル; door|ドア; email|メール; Friday|金曜日; tomorrow|明日; time|時間; need|必要とする", receptive="no rush|急がなくていい; I've got it|私に任せて; right away|すぐに; see you then|では、そのときに"),
     39: dict(new="might|〜かもしれない; a bit late|少し遅れる; miss|乗り遅れる; somewhere else|別の場所", recycled="busy|忙しい|CORE-30; café|カフェ|CORE-7", assumed="train|電車; wait|待つ; call|電話する; time|時間; plan|予定; concert|コンサート; home|家", receptive="just in case|念のため; let me know|知らせて; may|〜かもしれない; probably|たぶん"),
     40: dict(new="get some rest|少し休む; get worse|悪化する; get help|助けを求める; stop walking|歩くのをやめる", recycled="", assumed="need|必要とする; sleep|寝る; call|電話する; doctor|医師; water|水; home|家; night|夜; tonight|今夜", receptive="take care|お大事に; if I were you|私なら; maybe|たぶん"),
-    41: dict(new="ID|身分証; badge|バッジ; book|予約する; time slot|時間枠; print|印刷する; online|オンラインで", recycled="ticket|チケット|CORE-5; bring|持ってくる|CORE-38", assumed="ahead|前もって; photo|写真; museum|博物館; desk|受付", receptive="entrance|入口; optional|任意の; required|必要な; you're allowed to|〜してよい; that's not allowed|それは禁止; mustn't|〜してはいけない; no need to|〜する必要はない"),
+    41: dict(new="ID|身分証; badge|バッジ; book|予約する; time slot|時間枠; print|印刷する; online|オンラインで", recycled="ticket|チケット|CORE-9; bring|持ってくる|CORE-38", assumed="ahead|前もって; photo|写真; museum|博物館; desk|受付", receptive="entrance|入口; optional|任意の; required|必要な; you're allowed to|〜してよい; that's not allowed|それは禁止; mustn't|〜してはいけない; no need to|〜する必要はない"),
     42: dict(new="prefer|〜のほうが好き", recycled="coffee|コーヒー|CORE-9; shop|店|CORE-10", assumed="watch|見る; work|働く; cook|料理する; soup|スープ; comedy|コメディー; drama|ドラマ; TV|テレビ; show|番組; tea|紅茶; Friday|金曜日", receptive="negative question|否定疑問; actually|いえ・実は; not really|あまり"),
     43: dict(new="small|小さい; quiet|静かな; bright|明るい; clean|きれいな; friendly|親しみやすい; big|大きい", recycled="busy|忙しい|CORE-30; café|カフェ|CORE-7; station|駅|CORE-7; hotel|ホテル|CORE-7; bank|銀行|CORE-7; restaurant|レストラン|CORE-10; shop|店|CORE-10", assumed="room|部屋; place|場所; apartment|アパート", receptive="a little|少し; not far from here|ここから遠くない; cozy|居心地のよい; peaceful|落ち着いた"),
-    44: dict(new="enough|十分に; limit|限度; light|軽い; crowded|混んでいる; cheap|安い", recycled="small|小さい|CORE-43; big|大きい|CORE-43; expensive|高い|CORE-19; hot|暑い|CORE-8; quiet|静かな|CORE-43; bag|かばん|CORE-5", assumed="size|サイズ; hotel|ホテル; room|部屋", receptive="carry-on|機内持ち込み手荷物; it'll do|これで間に合う; not quite|あと少し; really|本当に"),
+    44: dict(new="enough|十分に; limit|限度; light|軽い; crowded|混んでいる; cheap|安い", recycled="small|小さい|CORE-43; big|大きい|CORE-43; expensive|高い|CORE-19; hot|暑い|CORE-8; quiet|静かな|CORE-43; bag|かばん|CORE-3", assumed="size|サイズ; hotel|ホテル; room|部屋", receptive="carry-on|機内持ち込み手荷物; it'll do|これで間に合う; not quite|あと少し; really|本当に"),
     46: dict(new="best|一番よい; window seat|窓側の席; aisle seat|通路側の席", recycled="prefer|〜のほうが好き|CORE-42; option|選択肢|CORE-45; cheap|安い|CORE-44; fast|速い|CORE-45; comfortable|快適な|CORE-45; hotel|ホテル|CORE-7; café|カフェ|CORE-7", assumed="train|電車; express|急行; local|各駅停車; bus|バス; room|部屋", receptive="bakery|パン屋; by far|断然; if I had to choose|選ぶとしたら; probably|おそらく"),
     47: dict(new="bored|退屈した; boring|退屈な; excited|わくわくした; exciting|わくわくさせる; surprised|驚いた; surprising|驚くような; tiring|疲れる", recycled="tired|疲れた|CORE-30", assumed="movie|映画; trip|旅行; game|試合; ending|結末; concert|コンサート; museum|博物館", receptive="I'm not really into it|あまり好みではない; it's a bit much|少しきつい; not my thing|好みではない"),
 }

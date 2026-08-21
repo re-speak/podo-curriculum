@@ -93,7 +93,13 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
             [core.strip_marks(r[0]).split()[1] for r in batch.LESSONS[30]["p2"]],
             ["were", "was", "were", "was"],
         )
-        self.assertTrue(all(core.strip_marks(r[0]).startswith("I had too much ") for r in batch.LESSONS[34]["p2"]))
+        self.assertTrue(all(core.strip_marks(r[0]).startswith(("I had too much ", "I had too many "))
+                            for r in batch.LESSONS[34]["p2"]))
+        # the count / non-count decision must actually occur inside the set
+        self.assertEqual(
+            {core.strip_marks(r[0]).split()[3] for r in batch.LESSONS[34]["p2"]},
+            {"much", "many"},
+        )
         self.assertTrue(all(" when you " in core.strip_marks(r[0]) for r in batch.LESSONS[36]["p1"]))
         self.assertTrue(all(core.strip_marks(r[0]).startswith("While I was ") and ", he " in core.strip_marks(r[0]) for r in batch.LESSONS[36]["p2"]))
 
