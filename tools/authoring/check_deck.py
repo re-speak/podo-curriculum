@@ -169,6 +169,19 @@ SLOT_INPUT = re.compile(r'<input\b[^>]*class="[^"]*\bslot-input\b')
 CONTROL_TAG = re.compile(r'<(?:input|textarea)\b[^>]*>', re.I)
 GENERIC_AVATAR = re.compile(r'<span class="[^"]*\bavatar\b[^\"]*\bicon\b')
 TAG_OPEN = re.compile(r'<(?:div|span)\b[^>]*>', re.I)
+# The choice activity is one component under two names: English decks wrap it in
+# `word-choice-list`, Korean decks in `choose-list`. Everything inside — the
+# `choose-row` rows, the `opt` options, `data-correct` — is identical, so every
+# rule that reads a choice page accepts either container.
+CHOICE_LIST = re.compile(r'class="[^"]*\b(?:word-choice-list|choose-list)\b')
+DATA_CORRECT = re.compile(r"\bdata-correct(?:\s|>|=)")
+# Tracks whose decks teach one pattern per lesson and therefore carry the
+# `p1/p2` read-and-choose arc these rules read. Korean numbers its tracks from
+# the alphabet, English from the first pattern course, so the names differ.
+PATTERN_TRACKS = {
+    "1-core-patterns", "2-contextual-english",      # sandbox/drafts/en
+    "2-core-patterns", "3-contextual-korean",       # sandbox/drafts/kr
+}
 GENERIC_CORE_FREETALK = re.compile(
     r"\b(?:use (?:both|the) (?:comparison )?patterns?|give the status|"
     r"ask the tutor|tutor's real answer)\b",
@@ -519,7 +532,7 @@ def choice_branch_coverage_issues(page_chunks):
     """
     errors = []
     for page_id, chunk in page_chunks.items():
-        if not re.fullmatch(r"p[12]-choose", page_id) or "word-choice-list" not in chunk:
+        if not re.fullmatch(r"p[12]-choose", page_id) or not CHOICE_LIST.search(chunk):
             continue
         correct = []
         for match in SPAN_OPEN.finditer(chunk):
@@ -528,7 +541,7 @@ def choice_branch_coverage_issues(page_chunks):
             }
             if (
                 "opt" not in attrs.get("class", "").split()
-                or not re.search(r"\bdata-correct(?:\s|>|=)", match.group(0))
+                or not DATA_CORRECT.search(match.group(0))
             ):
                 continue
             correct.append(plain_text(span_body(chunk, match.end())).casefold())
@@ -540,7 +553,84 @@ def choice_branch_coverage_issues(page_chunks):
     return errors
 
 
+def choice_row_correct_slots(chunk):
+    """Return which slot holds the correct option in each row, in page order.
+
+    A row is any element carrying the `choose-row` class; its options are the
+    `opt` spans between it and the next row.  Returns None — decline to judge —
+    unless every row is a clean two-way choice with exactly one correct option,
+    because a page mixing widths has no single "position" to be predictable in.
+    """
+    starts = []
+    for match in TAG_OPEN.finditer(chunk):
+        attrs = {key.lower(): value for key, _, value in ATTRIBUTE.findall(match.group(0))}
+        if "choose-row" in attrs.get("class", "").split():
+            starts.append(match.start())
+    slots = []
+    for index, start in enumerate(starts):
+        end = starts[index + 1] if index + 1 < len(starts) else len(chunk)
+        correct = []
+        for match in SPAN_OPEN.finditer(chunk, start, end):
+            attrs = {
+                key.lower(): value for key, _, value in ATTRIBUTE.findall(match.group(0))
+            }
+            if "opt" in attrs.get("class", "").split():
+                correct.append(bool(DATA_CORRECT.search(match.group(0))))
+        if len(correct) != 2 or sum(correct) != 1:
+            return None
+        slots.append(correct.index(True))
+    return slots
+
+
+def choice_position_issues(page_chunks):
+    """Require the answer to move down the page in a way position cannot predict.
+
+    A choice row asks the learner to read a sentence and decide.  The moment the
+    correct option sits in the same slot every time, the sentence stops being
+    read at all: the learner discovers on row two that the left pill is always
+    right and taps four times without looking, scoring full marks having learned
+    nothing.  `choice_branch_coverage_issues` does not catch this — it compares
+    the option *strings*, so a page can alternate two genuinely different
+    branches and still park the correct one on the left every row.
+
+    Alternating is the same defect one step later.  Left, right, left, right is
+    a rule the learner picks up just as fast, and picking it up is more
+    rewarding than reading, so it displaces the reading sooner.  Anything the
+    previous row does not predict is fine; the sequence does not have to be
+    random, only unlearnable at a glance.
+
+    Only two-option pages with three or more rows are judged: two rows cannot
+    establish a pattern, and a page whose rows differ in width has no consistent
+    position to be answerable by.
+    """
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-choose", page_id) or not CHOICE_LIST.search(chunk):
+            continue
+        slots = choice_row_correct_slots(chunk)
+        if slots is None or len(slots) < 3:
+            continue
+        sequence = " ".join(("left", "right")[slot] for slot in slots)
+        if len(set(slots)) == 1:
+            errors.append(
+                f"{page_id}: the correct option is on the {('left', 'right')[slots[0]]} "
+                f"in every row ({sequence}) — the page can be answered by position "
+                "without reading it. Move the correct option so its slot changes "
+                "down the page"
+            )
+        elif all(a != b for a, b in zip(slots, slots[1:])):
+            errors.append(
+                f"{page_id}: the correct option alternates slot on every row "
+                f"({sequence}) — position is still the answer, one step later. "
+                "Break the alternation so a row cannot be answered from the one "
+                "above it"
+            )
+    return errors
+
+
 EXEMPLAR_TOKEN = re.compile(r"[\w'’-]+|[^\w\s]")
+# Levels whose band is defined as pre-generative, in either track's vocabulary.
+PRE_GENERATIVE_LEVELS = {"pre-a1", "왕초급"}
 
 
 def exemplar_varying_regions(sentences):
@@ -580,10 +670,16 @@ def exemplar_variation_issues(page_chunks, *, level):
     lexically organised repertoire of situation-specific phrases" — it is a
     defect.
 
+    Korean decks do not band by CEFR; they band 왕초급 · 초급 · 초중급 · 중급 ·
+    중고급 · 고급. 왕초급 is that same pre-generative band under another name —
+    the learner is still assembling a rehearsed repertoire and has no slot to
+    generalise into — so it is exempt for the identical reason, and 초급 upward
+    is not.
+
     Only the `-read` pages are checked. `-teach` draws its examples from the
     same authored rows, so checking both would report one defect twice.
     """
-    if (level or "").strip().casefold() == "pre-a1":
+    if (level or "").strip().casefold() in PRE_GENERATIVE_LEVELS:
         return []
     errors = []
     for page_id, chunk in page_chunks.items():
@@ -1831,10 +1927,6 @@ def check(path):
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
-            errs.extend(choice_branch_coverage_issues(page_chunks))
-            errs.extend(exemplar_variation_issues(
-                page_chunks, level=meta_content(html, "podo:level")
-            ))
             errs.extend(core_production_issues(page_chunks))
             proofread_status = meta_content(html, "podo:proofread-status")
             if proofread_status == "pending":
@@ -1850,16 +1942,26 @@ def check(path):
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
-            errs.extend(choice_branch_coverage_issues(page_chunks))
-            errs.extend(exemplar_variation_issues(
-                page_chunks, level=meta_content(html, "podo:level")
-            ))
             errs.extend(contextual_production_issues(
                 page_chunks,
                 enforce_frame_boundaries=(
                     meta_content(html, "podo:curriculum-status") != "superseded"
                 ),
             ))
+
+    # ---- 0 · variation gates, both languages ------------------------------
+    # The pattern tracks of both languages write the same pages: `p1/p2-read`
+    # model rows in `<span class="korean">`, `p1/p2-choose` rows of `opt`
+    # options marked `data-correct`. Only the container class differs, which
+    # CHOICE_LIST absorbs, so these rules are language-neutral and run on
+    # every pattern deck rather than on the English ones alone.
+    if PATTERN_TRACKS.intersection(path.parts):
+        variation_chunks = dict(pages(html))
+        errs.extend(choice_branch_coverage_issues(variation_chunks))
+        errs.extend(choice_position_issues(variation_chunks))
+        errs.extend(exemplar_variation_issues(
+            variation_chunks, level=meta_content(html, "podo:level")
+        ))
 
     # ---- 1 · tutor script sentence parity ---------------------------------
     for pid, chunk in pages(html):
