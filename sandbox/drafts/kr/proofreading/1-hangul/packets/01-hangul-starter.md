@@ -3413,7 +3413,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 14 · 14-capstone-read-anything
 
 - source: `sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons/14-capstone-read-anything/lesson.html`
-- sha256: `28ec52dd6198712885958ebc0cdfdc4fa16fd1371cc2f8aad77963a24f702d8e`
+- sha256: `018f0175e60fbbb832e0d9d831180409376fbd04e84fca4eeb5d48373a5d29ea`
 - level: 왕초급
 
 ### `metadata`
