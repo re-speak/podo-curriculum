@@ -5,3 +5,8 @@ referencing>=0.33
 # import-report-deck.py only. build · validate · plan · apply do not import it,
 # so a missing bs4 cannot affect the merge gate.
 beautifulsoup4>=4.12
+
+# render-course-cards.py only. 체험 리포트의 코스 카드를 PNG 로 굽는 authoring 도구이고,
+# build · validate · plan · apply 는 import 하지 않는다 — 없어도 머지 게이트는 멀쩡하다.
+# 브라우저는 따로 받는다: python3 -m playwright install chromium
+playwright>=1.40
