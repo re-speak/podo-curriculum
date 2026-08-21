@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/108-would-you-be-able-to/lesson.html",
+  "lessonSha256": "fb43d21ec9ba8c35c2989975fea9350bdc8efdf9b1415126eed9dbfea593159d",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud after hearing the can-do.",
+      "tutorAction": "State the can-do, ask for the title once, then move on.",
+      "targetOrPrompt": "goal orientation for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "goal orientation in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for goal orientation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words aloud.",
+      "tutorAction": "Listen briefly; do not turn familiar words into a pronunciation drill.",
+      "targetOrPrompt": "known-word activation for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "known-word activation in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for known-word activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud.",
+      "tutorAction": "Introduce Pattern 1 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this careful request with distance or a less familiar person. Please read the title aloud. | 距離を保ちたい相手や、あまり親しくない相手への丁寧な依頼です。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): Would you be able to | いただくことはできますか | Would you be able to | いただくことはできますか | Would you be able to | いただくことはできますか",
+      "learningTarget": "Pattern 1 meaning and model in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Would you be able to",
+          "いただくことはできますか",
+          "Would you be able to",
+          "いただくことはできますか",
+          "Would you be able to",
+          "いただくことはできますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): Would you be able to | いただくことはできますか | Would you be able to | いただくことはできますか | Would you be able to | いただくことはできますか | Would you be able to | いただくことはできますか",
+      "learningTarget": "Pattern 1 read-aloud in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Would you be able to",
+          "いただくことはできますか",
+          "Would you be able to",
+          "いただくことはできますか",
+          "Would you be able to",
+          "いただくことはできますか",
+          "Would you be able to",
+          "いただくことはできますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 1 form explanation for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "Pattern 1 form explanation in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the meaningful form for each cue, then read the complete sentence.",
+      "tutorAction": "Allow a decision before confirming the contrast.",
+      "targetOrPrompt": "Highlighted target(s): 送って | 確認して | 確認して | 確認して",
+      "learningTarget": "Pattern 1 meaning or form discrimination in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning or form discrimination—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning or form discrimination for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for Pattern 1 meaning or form discrimination is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "送って",
+          "確認して",
+          "確認して",
+          "確認して"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 1 word-order retrieval for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): いただくことはできますか | いただくことはできますか | いただくことはできますか | いただくことはできますか Blank answer(s): Would you be able to | Would you be able to | Would you be able to | Would you be able to",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "いただくことはできますか",
+          "いただくことはできますか",
+          "いただくことはできますか",
+          "いただくことはできますか"
+        ],
+        "blankAnswers": [
+          "Would you be able to",
+          "Would you be able to",
+          "Would you be able to",
+          "Would you be able to"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): Would you be able to send it over? | Would you be able to review the draft? | Would you be able to confirm the date? | Would you be able to check the figures? Lexical hint(s): 送る:send over | 確認する:review | 下書き:draft | 確認する:confirm | 日付:date | 確認する:check | 数字:figures",
+      "learningTarget": "Pattern 1 supported translation in CORE-108: Use this careful request with distance or a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Would you be able to send it over?",
+          "Would you be able to review the draft?",
+          "Would you be able to confirm the date?",
+          "Would you be able to check the figures?"
+        ],
+        "hintChips": [
+          "送る:send over",
+          "確認する:review",
+          "下書き:draft",
+          "確認する:confirm",
+          "日付:date",
+          "確認する:check",
+          "数字:figures"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “Would you be able to ___?” to make a careful request to a less familiar person. Lexical hint(s): 送る:send over | 下書き:draft | 数字:figures | 日付:date",
+      "learningTarget": "Pattern 1 communicative production in CORE-108 through the exact current prompt: Use “Would you be able to ___?” to make a careful request to a less familiar person.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 communicative production—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "送る:send over",
+          "下書き:draft",
+          "数字:figures",
+          "日付:date"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “Would you be able to ___?” to make a careful request to a less familiar person."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud.",
+      "tutorAction": "Introduce Pattern 2 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this informal request with a close colleague. Please read the title aloud. | 親しい同僚へのくだけた依頼です。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): Can you send it over when you get a sec | 送ってくれる | Can you review it when you get a sec | 確認してくれる | Can you call me when you get a sec | 電話してくれる",
+      "learningTarget": "Pattern 2 meaning and model in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Can you send it over when you get a sec",
+          "送ってくれる",
+          "Can you review it when you get a sec",
+          "確認してくれる",
+          "Can you call me when you get a sec",
+          "電話してくれる"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): Can you send it over when you get a sec | 送ってくれる | Can you review it when you get a sec | 確認してくれる | Can you call me when you get a sec | 電話してくれる | Can you check the date when you get a sec | 日付を確認してくれる",
+      "learningTarget": "Pattern 2 read-aloud in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Can you send it over when you get a sec",
+          "送ってくれる",
+          "Can you review it when you get a sec",
+          "確認してくれる",
+          "Can you call me when you get a sec",
+          "電話してくれる",
+          "Can you check the date when you get a sec",
+          "日付を確認してくれる"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 2 form explanation for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "Pattern 2 form explanation in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the meaningful form for each cue, then read the complete sentence.",
+      "tutorAction": "Allow a decision before confirming the contrast.",
+      "targetOrPrompt": "Highlighted target(s): 送って | 確認して | 電話して | 確認して",
+      "learningTarget": "Pattern 2 meaning or form discrimination in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning or form discrimination—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning or form discrimination for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for Pattern 2 meaning or form discrimination is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "送って",
+          "確認して",
+          "電話して",
+          "確認して"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 2 word-order retrieval for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): 送ってくれる | 確認してくれる | 電話してくれる | 日付を確認してくれる Blank answer(s): Can you send it over when you get a sec | Can you review it when you get a sec | Can you call me when you get a sec | Can you check the date when you get a sec",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "送ってくれる",
+          "確認してくれる",
+          "電話してくれる",
+          "日付を確認してくれる"
+        ],
+        "blankAnswers": [
+          "Can you send it over when you get a sec",
+          "Can you review it when you get a sec",
+          "Can you call me when you get a sec",
+          "Can you check the date when you get a sec"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): Can you send it over when you get a sec? | Can you review it when you get a sec? | Can you call me when you get a sec? | Can you check the date when you get a sec? Lexical hint(s): 送る:send over | 確認する:review | 電話する:call | 確認する:check | 日付:date",
+      "learningTarget": "Pattern 2 supported translation in CORE-108: Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Can you send it over when you get a sec?",
+          "Can you review it when you get a sec?",
+          "Can you call me when you get a sec?",
+          "Can you check the date when you get a sec?"
+        ],
+        "hintChips": [
+          "送る:send over",
+          "確認する:review",
+          "電話する:call",
+          "確認する:check",
+          "日付:date"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “Can you ___ when you get a sec?” to make an informal request to a close colleague. Lexical hint(s): 送る:send | 確認する:review | 確認する:check | 電話する:call",
+      "learningTarget": "Pattern 2 communicative production in CORE-108 through the exact current prompt: Use “Can you ___ when you get a sec?” to make an informal request to a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 communicative production—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "送る:send",
+          "確認する:review",
+          "確認する:check",
+          "電話する:call"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “Can you ___ when you get a sec?” to make an informal request to a close colleague."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the optional support expressions aloud.",
+      "tutorAction": "Clarify meaning only if needed; keep them optional.",
+      "targetOrPrompt": "conversation support activation for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "conversation support activation in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—conversation support activation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform conversation support activation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for conversation support activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-polite-01",
+      "learnerAction": "Choose the form that preserves the earlier rule, then read the result aloud.",
+      "tutorAction": "Let the learner retrieve the earlier contrast before confirming it.",
+      "targetOrPrompt": "Highlighted target(s): いただけますか | 確認してくれる",
+      "learningTarget": "spaced retrieval in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "いただけますか",
+          "確認してくれる"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-modal-01",
+      "learnerAction": "Choose the form that preserves the earlier rule, then read the result aloud.",
+      "tutorAction": "Let the learner retrieve the earlier contrast before confirming it.",
+      "targetOrPrompt": "Highlighted target(s): 原形 | 原形",
+      "learningTarget": "spaced retrieval in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "原形",
+          "原形"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and prepare to use both patterns.",
+      "tutorAction": "Set up the conversation, then move directly to the role-specific page.",
+      "targetOrPrompt": "role-play transition for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "role-play transition in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—role-play transition—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play transition for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every learner-owned line in the complete role-play.",
+      "tutorAction": "Take the named counterpart role and read only that role's lines.",
+      "targetOrPrompt": "Highlighted target(s): Would you be able to | いただくことはできますか | Can you check the date when you get a sec | 日付を確認してくれる",
+      "learningTarget": "complete role-play in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—complete role-play—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform complete role-play for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for complete role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Would you be able to",
+          "いただくことはできますか",
+          "Can you check the date when you get a sec",
+          "日付を確認してくれる"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say every learner-owned line and supply the missing taught expressions.",
+      "tutorAction": "Take the named counterpart role and type only the missing target words.",
+      "targetOrPrompt": "Blank answer(s): Would you be able to | Can you check the date when you get a sec",
+      "learningTarget": "role-play target retrieval in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—role-play target retrieval—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play target retrieval for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Would you be able to",
+          "Can you check the date when you get a sec"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's personal question, then ask the displayed reciprocal question.",
+      "tutorAction": "Give a real answer and follow the learner's most interesting detail.",
+      "targetOrPrompt": "Exact learner prompt(s): Do you prefer people to ask you directly or very politely for help? Why? | What about you—which kind of request do you prefer?",
+      "learningTarget": "reciprocal personal conversation in CORE-108 through the exact current prompt: Do you prefer people to ask you directly or very politely for help? Why? | What about you—which kind of request do you prefer?",
+      "pedagogicalValue": "This page has one distinct job—reciprocal personal conversation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal personal conversation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for reciprocal personal conversation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Do you prefer people to ask you directly or very politely for help? Why?",
+          "What about you—which kind of request do you prefer?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both targets in the new six-turn situation.",
+      "tutorAction": "Take the named new counterpart role and keep the exchange natural.",
+      "targetOrPrompt": "Blank answer(s): Would you be able to | Can you review it when you get a sec",
+      "learningTarget": "transfer role-play in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for transfer role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Would you be able to",
+          "Can you review it when you get a sec"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the practical tone or register distinction and its examples.",
+      "tutorAction": "Explain the immediately usable nuance briefly.",
+      "targetOrPrompt": "pragmatic consolidation for “Would you be able to,” with “Would you be able to ___?” and “Can you ___ when you get a sec?” as the two taught frames.",
+      "learningTarget": "pragmatic consolidation in CORE-108: Use this careful request with distance or a less familiar person. Then Use this informal request with a close colleague.",
+      "pedagogicalValue": "This page has one distinct job—pragmatic consolidation—and advances from noticing toward usable speech with “Would you be able to ___?” and “Can you ___ when you get a sec?.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform pragmatic consolidation for “Would you be able to” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for pragmatic consolidation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

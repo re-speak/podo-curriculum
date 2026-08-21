@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/02-answer-immigration-questions-clearly/lesson.html",
+  "lessonSha256": "b9812394aabde19ea3f72397bbbcecce5661f379490888ac32b5acfd05e33ca8",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pass"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do. Visible focus: Answer immigration questions clearly (入国審査の質問にはっきり答える) | Give short, consistent information about your visit and accommodation. Please read the title aloud. 訪問の目的と滞在先を短く一貫して伝えましょう。タイトルを声に出して読んでください。",
+      "tutorAction": "State the can-do, have the learner read the title once, and move on. Visible focus: Answer immigration questions clearly (入国審査の質問にはっきり答える) | Give short, consistent information about your visit and accommodation. Please read the title aloud. 訪問の目的と滞在先を短く一貫して伝えましょう。タイトルを声に出して読んでください。",
+      "targetOrPrompt": "Answer immigration questions clearly (入国審査の質問にはっきり答える) | Give short, consistent information about your visit and accommodation. Please read the title aloud. 訪問の目的と滞在先を短く一貫して伝えましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Control the exact page target or prompt in context: Answer immigration questions clearly (入国審査の質問にはっきり答える) | Give short, consistent information about your visit and accommodation. Please read the title aloud. 訪問の目的と滞在先を短く一貫して伝えましょう。タイトルを声に出して読んでください。",
+      "pedagogicalValue": "This establishes the practical outcome and starts with one immediate learner action. Reviewed focus: Answer immigration questions clearly (入国審査の質問にはっきり答える) | Give short, consistent information about your visit and accommodation. Please read the title aloud. 訪問の目的と滞在先を短く一貫して伝えましょう。タイトルを声に出して読んでください。",
+      "failureDiagnosis": "Failure would show that the can-do or first learner action is still unclear. Checked page: lesson-goal.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared lesson-goal component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "scene",
+      "learnerAction": "Take the traveller role and read the learner turns as a roleplay. Visible focus: Passport control (入国審査) | Let's role-play passport control. You're the traveller, and I'll be the officer. 入国審査のロールプレイをしましょう。あなたは旅行者、私は入国審査官です。",
+      "tutorAction": "Take the named partner role and begin with the first partner line. Visible focus: Passport control (入国審査) | Let's role-play passport control. You're the traveller, and I'll be the officer. 入国審査のロールプレイをしましょう。あなたは旅行者、私は入国審査官です。",
+      "targetOrPrompt": "Passport control (入国審査) | Let's role-play passport control. You're the traveller, and I'll be the officer. 入国審査のロールプレイをしましょう。あなたは旅行者、私は入国審査官です。",
+      "learningTarget": "Control the exact page target or prompt in context: Passport control (入国審査) | Let's role-play passport control. You're the traveller, and I'll be the officer. 入国審査のロールプレイをしましょう。あなたは旅行者、私は入国審査官です。",
+      "pedagogicalValue": "This establishes the practical situation and lets the learner use the language in sequence. Reviewed focus: Passport control (入国審査) | Let's role-play passport control. You're the traveller, and I'll be the officer. 入国審査のロールプレイをしましょう。あなたは旅行者、私は入国審査官です。",
+      "failureDiagnosis": "Failure would show that the roles or the practical objective are not yet clear. Checked page: scene.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared scene component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [
+          "I'm here for",
+          "2週間の休暇で来ました",
+          "I'm staying at",
+          "泊まります"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "understand",
+      "learnerAction": "Listen to each staff line and choose the matching meaning. Visible focus: Understand (聞いてわかろう) | I will read each staff line. Choose what it means. 係員のセリフを読みます。意味を選びましょう。",
+      "tutorAction": "Read each English staff line aloud once; do not ask the learner to read it. Visible focus: Understand (聞いてわかろう) | I will read each staff line. Choose what it means. 係員のセリフを読みます。意味を選びましょう。",
+      "targetOrPrompt": "Understand (聞いてわかろう) | I will read each staff line. Choose what it means. 係員のセリフを読みます。意味を選びましょう。",
+      "learningTarget": "Control the exact page target or prompt in context: Understand (聞いてわかろう) | I will read each staff line. Choose what it means. 係員のセリフを読みます。意味を選びましょう。",
+      "pedagogicalValue": "This checks receptive understanding before the learner is asked to produce the scene language. Reviewed focus: Understand (聞いてわかろう) | I will read each staff line. Choose what it means. 係員のセリフを読みます。意味を選びましょう。",
+      "failureDiagnosis": "A wrong choice isolates which real-world staff question was not understood. Checked page: understand.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared understand component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the displayed pattern or transition title aloud once, then continue. Visible focus: I'm here for a two-week holiday. | First, let's practice the first useful line from the scene. まず、場面で使った一つ目の表現を練習しましょう。",
+      "tutorAction": "Introduce this next stage briefly and move to its teaching page. Visible focus: I'm here for a two-week holiday. | First, let's practice the first useful line from the scene. まず、場面で使った一つ目の表現を練習しましょう。",
+      "targetOrPrompt": "I'm here for a two-week holiday. | First, let's practice the first useful line from the scene. まず、場面で使った一つ目の表現を練習しましょう。",
+      "learningTarget": "Control the exact page target or prompt in context: I'm here for a two-week holiday. | First, let's practice the first useful line from the scene. まず、場面で使った一つ目の表現を練習しましょう。",
+      "pedagogicalValue": "This separates the next target without turning a transition into another drill. Reviewed focus: I'm here for a two-week holiday. | First, let's practice the first useful line from the scene. まず、場面で使った一つ目の表現を練習しましょう。",
+      "failureDiagnosis": "Failure would show that the learner cannot identify the next target before practice. Checked page: part1-intro.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared part1-intro component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete example aloud after the brief meaning explanation. Visible focus: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say why you are visiting. 訪問の目的を伝えるときに使います。",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example. Visible focus: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say why you are visiting. 訪問の目的を伝えるときに使います。",
+      "targetOrPrompt": "Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say why you are visiting. 訪問の目的を伝えるときに使います。",
+      "learningTarget": "Control the exact page target or prompt in context: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say why you are visiting. 訪問の目的を伝えるときに使います。",
+      "pedagogicalValue": "This connects the exact form to its communicative use before controlled practice. Reviewed focus: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say why you are visiting. 訪問の目的を伝えるときに使います。",
+      "failureDiagnosis": "Failure would show that the learner cannot connect the highlighted frame to its meaning. Checked page: p1-teach.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p1-teach component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [
+          "I'm here for",
+          "2週間の休暇で来ました",
+          "I'm here for",
+          "仕事で来ました",
+          "I'm here for",
+          "会議で来ました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every displayed complete sentence aloud. Visible focus: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "tutorAction": "Listen to each sentence and correct only a useful pronunciation or form issue. Visible focus: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "targetOrPrompt": "Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "learningTarget": "Control the exact page target or prompt in context: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "pedagogicalValue": "This gives fluent retrieval of complete examples before the form is manipulated. Reviewed focus: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "failureDiagnosis": "Failure would reveal that the model sentence is not yet stable enough for controlled production. Checked page: p1-read.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p1-read component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [
+          "I'm here for",
+          "2週間の休暇で来ました",
+          "I'm here for",
+          "仕事で来ました",
+          "I'm here for",
+          "会議で来ました",
+          "I'm here for",
+          "結婚式で来ました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the displayed examples to explain how the target sentence is built. Visible focus: Add the purpose of your trip (旅行の目的を続ける) | Keep “I'm here for” together, then add why you are visiting. 「I'm here for」をひとまとまりにして、訪問の目的を続けます。",
+      "tutorAction": "Keep the explanation brief and check the single form boundary shown. Visible focus: Add the purpose of your trip (旅行の目的を続ける) | Keep “I'm here for” together, then add why you are visiting. 「I'm here for」をひとまとまりにして、訪問の目的を続けます。",
+      "targetOrPrompt": "Add the purpose of your trip (旅行の目的を続ける) | Keep “I'm here for” together, then add why you are visiting. 「I'm here for」をひとまとまりにして、訪問の目的を続けます。",
+      "learningTarget": "Control the exact page target or prompt in context: Add the purpose of your trip (旅行の目的を続ける) | Keep “I'm here for” together, then add why you are visiting. 「I'm here for」をひとまとまりにして、訪問の目的を続けます。",
+      "pedagogicalValue": "This makes one construction rule explicit immediately before production. Reviewed focus: Add the purpose of your trip (旅行の目的を続ける) | Keep “I'm here for” together, then add why you are visiting. 「I'm here for」をひとまとまりにして、訪問の目的を続けます。",
+      "failureDiagnosis": "Failure would identify the exact construction boundary that needs another example. Checked page: p1-rule.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p1-rule component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each complete sentence aloud, including every missing target word. Visible focus: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "tutorAction": "Listen first and type only the missing words exactly as spoken. Visible focus: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "targetOrPrompt": "Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "learningTarget": "Control the exact page target or prompt in context: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "pedagogicalValue": "This tests oral retrieval of the target while all unrelated language stays visible. Reviewed focus: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "failureDiagnosis": "An incorrect blank isolates failure to retrieve the current target rather than vocabulary. Checked page: p1-fill.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p1-fill component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: [\"I'm here for\", \"I'm here for\", \"I'm here for\", \"I'm here for\"].",
+      "evidence": {
+        "targetHighlights": [
+          "2週間の休暇で来ました",
+          "仕事で来ました",
+          "会議で来ました",
+          "結婚式で来ました"
+        ],
+        "blankAnswers": [
+          "I'm here for",
+          "I'm here for",
+          "I'm here for",
+          "I'm here for"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud. Visible focus: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "tutorAction": "Listen first and type the learner’s complete English sentence exactly as spoken. Visible focus: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "targetOrPrompt": "Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "learningTarget": "Control the exact page target or prompt in context: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "pedagogicalValue": "This moves from supported meaning to full-sentence production with only needed lexical help. Reviewed focus: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "failureDiagnosis": "Failure identifies whether the target frame can be retrieved from meaning without overblanking. Checked page: p1-translate.",
+      "nonTargetSupport": "Lexical support is limited to the words needed for these answers: 休暇:holiday, 仕事:work, 会議:conference, 結婚式:wedding.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p1-translate component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: [\"I'm here for a two-week holiday.\", \"I'm here for work.\", \"I'm here for a conference.\", \"I'm here for a wedding.\"].",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I'm here for a two-week holiday.",
+          "I'm here for work.",
+          "I'm here for a conference.",
+          "I'm here for a wedding."
+        ],
+        "hintChips": [
+          "休暇:holiday",
+          "仕事:work",
+          "会議:conference",
+          "結婚式:wedding"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the exact visible prompt to produce one personally meaningful sentence aloud. Visible focus: Now use “I’m here for ___” to give the real or imaginary purpose of your trip.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful. Visible focus: Now use “I’m here for ___” to give the real or imaginary purpose of your trip.",
+      "targetOrPrompt": "Now use “I’m here for ___” to give the real or imaginary purpose of your trip.",
+      "learningTarget": "Control the exact page target or prompt in context: Now use “I’m here for ___” to give the real or imaginary purpose of your trip.",
+      "pedagogicalValue": "This transfers the target from controlled rows to a real communicative job. Reviewed focus: Now use “I’m here for ___” to give the real or imaginary purpose of your trip.",
+      "failureDiagnosis": "Failure would show that the prompt or frame does not yet support independent production. Checked page: p1-write.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p1-write component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I’m here for ___” to give the real or imaginary purpose of your trip."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the displayed pattern or transition title aloud once, then continue. Visible focus: I'm staying at the Central Hotel. | Next, let's practice the second useful line from the scene. 次に、場面で使った二つ目の表現を練習しましょう。",
+      "tutorAction": "Introduce this next stage briefly and move to its teaching page. Visible focus: I'm staying at the Central Hotel. | Next, let's practice the second useful line from the scene. 次に、場面で使った二つ目の表現を練習しましょう。",
+      "targetOrPrompt": "I'm staying at the Central Hotel. | Next, let's practice the second useful line from the scene. 次に、場面で使った二つ目の表現を練習しましょう。",
+      "learningTarget": "Control the exact page target or prompt in context: I'm staying at the Central Hotel. | Next, let's practice the second useful line from the scene. 次に、場面で使った二つ目の表現を練習しましょう。",
+      "pedagogicalValue": "This separates the next target without turning a transition into another drill. Reviewed focus: I'm staying at the Central Hotel. | Next, let's practice the second useful line from the scene. 次に、場面で使った二つ目の表現を練習しましょう。",
+      "failureDiagnosis": "Failure would show that the learner cannot identify the next target before practice. Checked page: part2-intro.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared part2-intro component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete example aloud after the brief meaning explanation. Visible focus: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say where you are staying. 滞在先を伝えるときに使います。",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example. Visible focus: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say where you are staying. 滞在先を伝えるときに使います。",
+      "targetOrPrompt": "Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say where you are staying. 滞在先を伝えるときに使います。",
+      "learningTarget": "Control the exact page target or prompt in context: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say where you are staying. 滞在先を伝えるときに使います。",
+      "pedagogicalValue": "This connects the exact form to its communicative use before controlled practice. Reviewed focus: Today's pattern (今日のパターン) | Meaning & use 意味・使い方 Use this to say where you are staying. 滞在先を伝えるときに使います。",
+      "failureDiagnosis": "Failure would show that the learner cannot connect the highlighted frame to its meaning. Checked page: p2-teach.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p2-teach component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [
+          "I'm staying at",
+          "泊まります",
+          "I'm staying at",
+          "泊まります",
+          "I'm staying at",
+          "泊まります"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every displayed complete sentence aloud. Visible focus: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "tutorAction": "Listen to each sentence and correct only a useful pronunciation or form issue. Visible focus: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "targetOrPrompt": "Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "learningTarget": "Control the exact page target or prompt in context: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "pedagogicalValue": "This gives fluent retrieval of complete examples before the form is manipulated. Reviewed focus: Read the sentences (文を読もう) | Please read each sentence aloud. 一文ずつ声に出して読んでください。",
+      "failureDiagnosis": "Failure would reveal that the model sentence is not yet stable enough for controlled production. Checked page: p2-read.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p2-read component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [
+          "I'm staying at",
+          "泊まります",
+          "I'm staying at",
+          "泊まります",
+          "I'm staying at",
+          "泊まります",
+          "I'm staying at",
+          "泊まります"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Use the displayed examples to explain how the target sentence is built. Visible focus: Add where you're staying (滞在先を続ける) | Keep “I'm staying at” together, then add your hotel or other accommodation. 「I'm staying at」をひとまとまりにして、ホテルなどの滞在先を続けます。",
+      "tutorAction": "Keep the explanation brief and check the single form boundary shown. Visible focus: Add where you're staying (滞在先を続ける) | Keep “I'm staying at” together, then add your hotel or other accommodation. 「I'm staying at」をひとまとまりにして、ホテルなどの滞在先を続けます。",
+      "targetOrPrompt": "Add where you're staying (滞在先を続ける) | Keep “I'm staying at” together, then add your hotel or other accommodation. 「I'm staying at」をひとまとまりにして、ホテルなどの滞在先を続けます。",
+      "learningTarget": "Control the exact page target or prompt in context: Add where you're staying (滞在先を続ける) | Keep “I'm staying at” together, then add your hotel or other accommodation. 「I'm staying at」をひとまとまりにして、ホテルなどの滞在先を続けます。",
+      "pedagogicalValue": "This makes one construction rule explicit immediately before production. Reviewed focus: Add where you're staying (滞在先を続ける) | Keep “I'm staying at” together, then add your hotel or other accommodation. 「I'm staying at」をひとまとまりにして、ホテルなどの滞在先を続けます。",
+      "failureDiagnosis": "Failure would identify the exact construction boundary that needs another example. Checked page: p2-rule.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p2-rule component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each complete sentence aloud, including every missing target word. Visible focus: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "tutorAction": "Listen first and type only the missing words exactly as spoken. Visible focus: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "targetOrPrompt": "Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "learningTarget": "Control the exact page target or prompt in context: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "pedagogicalValue": "This tests oral retrieval of the target while all unrelated language stays visible. Reviewed focus: Say the complete sentence (文をまるごと言おう) | Say each whole sentence aloud, including the missing words. 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。",
+      "failureDiagnosis": "An incorrect blank isolates failure to retrieve the current target rather than vocabulary. Checked page: p2-fill.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p2-fill component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: [\"I'm staying at\", \"I'm staying at\", \"I'm staying at\", \"I'm staying at\"].",
+      "evidence": {
+        "targetHighlights": [
+          "泊まります",
+          "泊まります",
+          "泊まります",
+          "泊まります"
+        ],
+        "blankAnswers": [
+          "I'm staying at",
+          "I'm staying at",
+          "I'm staying at",
+          "I'm staying at"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud. Visible focus: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "tutorAction": "Listen first and type the learner’s complete English sentence exactly as spoken. Visible focus: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "targetOrPrompt": "Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "learningTarget": "Control the exact page target or prompt in context: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "pedagogicalValue": "This moves from supported meaning to full-sentence production with only needed lexical help. Reviewed focus: Say it in English (英語にしよう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "failureDiagnosis": "Failure identifies whether the target frame can be retrieved from meaning without overblanking. Checked page: p2-translate.",
+      "nonTargetSupport": "Lexical support is limited to the words needed for these answers: セントラルホテル:Central Hotel, 空港ホテル:airport hotel, 友人の家:friend's place, 中心街のアパート:apartment downtown.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p2-translate component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: [\"I'm staying at the Central Hotel.\", \"I'm staying at an airport hotel.\", \"I'm staying at my friend's place.\", \"I'm staying at an apartment downtown.\"].",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I'm staying at the Central Hotel.",
+          "I'm staying at an airport hotel.",
+          "I'm staying at my friend's place.",
+          "I'm staying at an apartment downtown."
+        ],
+        "hintChips": [
+          "セントラルホテル:Central Hotel",
+          "空港ホテル:airport hotel",
+          "友人の家:friend's place",
+          "中心街のアパート:apartment downtown"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the exact visible prompt to produce one personally meaningful sentence aloud. Visible focus: Now use “I’m staying at ___” to say where you would stay.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful. Visible focus: Now use “I’m staying at ___” to say where you would stay.",
+      "targetOrPrompt": "Now use “I’m staying at ___” to say where you would stay.",
+      "learningTarget": "Control the exact page target or prompt in context: Now use “I’m staying at ___” to say where you would stay.",
+      "pedagogicalValue": "This transfers the target from controlled rows to a real communicative job. Reviewed focus: Now use “I’m staying at ___” to say where you would stay.",
+      "failureDiagnosis": "Failure would show that the prompt or frame does not yet support independent production. Checked page: p2-write.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p2-write component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I’m staying at ___” to say where you would stay."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the displayed pattern or transition title aloud once, then continue. Visible focus: Complete the task (用事を完了しよう) | Now, let's use both lines in the complete scene. では、二つの表現を使って場面を最後まで進めましょう。",
+      "tutorAction": "Introduce this next stage briefly and move to its teaching page. Visible focus: Complete the task (用事を完了しよう) | Now, let's use both lines in the complete scene. では、二つの表現を使って場面を最後まで進めましょう。",
+      "targetOrPrompt": "Complete the task (用事を完了しよう) | Now, let's use both lines in the complete scene. では、二つの表現を使って場面を最後まで進めましょう。",
+      "learningTarget": "Control the exact page target or prompt in context: Complete the task (用事を完了しよう) | Now, let's use both lines in the complete scene. では、二つの表現を使って場面を最後まで進めましょう。",
+      "pedagogicalValue": "This separates the next target without turning a transition into another drill. Reviewed focus: Complete the task (用事を完了しよう) | Now, let's use both lines in the complete scene. では、二つの表現を使って場面を最後まで進めましょう。",
+      "failureDiagnosis": "Failure would show that the learner cannot identify the next target before practice. Checked page: part3-intro.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared part3-intro component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every Me line aloud while the tutor plays the named counterpart. Visible focus: Replay the scene (場面をもう一度) | I'll be the officer. Please read the Me lines aloud. 私は入国審査官役をします。Me のセリフを声に出して読んでください。",
+      "tutorAction": "Take only the named counterpart role and pause for every learner line. Visible focus: Replay the scene (場面をもう一度) | I'll be the officer. Please read the Me lines aloud. 私は入国審査官役をします。Me のセリフを声に出して読んでください。",
+      "targetOrPrompt": "Replay the scene (場面をもう一度) | I'll be the officer. Please read the Me lines aloud. 私は入国審査官役をします。Me のセリフを声に出して読んでください。",
+      "learningTarget": "Control the exact page target or prompt in context: Replay the scene (場面をもう一度) | I'll be the officer. Please read the Me lines aloud. 私は入国審査官役をします。Me のセリフを声に出して読んでください。",
+      "pedagogicalValue": "This rehearses the full exchange with unbroken models and clear turn ownership. Reviewed focus: Replay the scene (場面をもう一度) | I'll be the officer. Please read the Me lines aloud. 私は入国審査官役をします。Me のセリフを声に出して読んでください。",
+      "failureDiagnosis": "Failure would identify which turn or target cannot yet be produced in context. Checked page: p3-model.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p3-model component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [
+          "I'm here for",
+          "2週間の休暇で来ました",
+          "I'm staying at",
+          "泊まります"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Roleplay the scene and say each learner line completely, including the missing words. Visible focus: Complete the scene (場面を完成しよう) | I’ll be the officer. Say each complete line, including the missing words. 私は入国審査官役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+      "tutorAction": "Play the counterpart and type only the missing target words after the learner speaks. Visible focus: Complete the scene (場面を完成しよう) | I’ll be the officer. Say each complete line, including the missing words. 私は入国審査官役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+      "targetOrPrompt": "Complete the scene (場面を完成しよう) | I’ll be the officer. Say each complete line, including the missing words. 私は入国審査官役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+      "learningTarget": "Control the exact page target or prompt in context: Complete the scene (場面を完成しよう) | I’ll be the officer. Say each complete line, including the missing words. 私は入国審査官役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+      "pedagogicalValue": "This removes the model exactly where both lesson targets must be retrieved in sequence. Reviewed focus: Complete the scene (場面を完成しよう) | I’ll be the officer. Say each complete line, including the missing words. 私は入国審査官役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。",
+      "failureDiagnosis": "Failure identifies which target breaks down inside a live exchange. Checked page: p3-complete.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p3-complete component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: [\"I'm here for\", \"I'm staying at\"].",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I'm here for",
+          "I'm staying at"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the exact personal question, follow an interesting detail, and ask the tutor back. Visible focus: Which immigration question would be hardest for you to answer quickly, and why? | Which question would be hardest for you?",
+      "tutorAction": "React genuinely, follow the learner’s most interesting detail, and give a real answer when asked. Visible focus: Which immigration question would be hardest for you to answer quickly, and why? | Which question would be hardest for you?",
+      "targetOrPrompt": "Which immigration question would be hardest for you to answer quickly, and why? | Which question would be hardest for you?",
+      "learningTarget": "Control the exact page target or prompt in context: Which immigration question would be hardest for you to answer quickly, and why? | Which question would be hardest for you?",
+      "pedagogicalValue": "This creates reciprocal conversation; today’s pattern is optional unless it fits naturally. Reviewed focus: Which immigration question would be hardest for you to answer quickly, and why? | Which question would be hardest for you?",
+      "failureDiagnosis": "Failure would be a one-sided interview, a disguised drill, or a prompt that does not invite a real answer. Checked page: p3-freetalk.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared p3-freetalk component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which immigration question would be hardest for you to answer quickly, and why?",
+          "Which question would be hardest for you?"
+        ]
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two natural options and say the useful contrast aloud. Visible focus: For work or on business? (for work と on business) | Both are natural. “I’m here on business” is a common answer at immigration. どちらも自然です。入国審査では「I’m here on business」もよく使います。",
+      "tutorAction": "Explain only the stated usage difference and keep both natural options at equal weight. Visible focus: For work or on business? (for work と on business) | Both are natural. “I’m here on business” is a common answer at immigration. どちらも自然です。入国審査では「I’m here on business」もよく使います。",
+      "targetOrPrompt": "For work or on business? (for work と on business) | Both are natural. “I’m here on business” is a common answer at immigration. どちらも自然です。入国審査では「I’m here on business」もよく使います。",
+      "learningTarget": "Control the exact page target or prompt in context: For work or on business? (for work と on business) | Both are natural. “I’m here on business” is a common answer at immigration. どちらも自然です。入国審査では「I’m here on business」もよく使います。",
+      "pedagogicalValue": "This prevents overgeneralization and adds one immediately usable natural-speech choice. Reviewed focus: For work or on business? (for work と on business) | Both are natural. “I’m here on business” is a common answer at immigration. どちらも自然です。入国審査では「I’m here on business」もよく使います。",
+      "failureDiagnosis": "Failure would show that the learner cannot choose the expression that fits the situation. Checked page: native-tip.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared native-tip component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: none.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "transfer-scene",
+      "learnerAction": "Roleplay the new situation and say every learner completion as a full line. Visible focus: Travel insurance call (別の場面へ) | Let's role-play a different situation. I'll be the travel insurance agent. 別の場面でロールプレイをしましょう。私は旅行保険の担当者役です。",
+      "tutorAction": "Take the named counterpart role and continue from top to bottom without modelling learner lines. Visible focus: Travel insurance call (別の場面へ) | Let's role-play a different situation. I'll be the travel insurance agent. 別の場面でロールプレイをしましょう。私は旅行保険の担当者役です。",
+      "targetOrPrompt": "Travel insurance call (別の場面へ) | Let's role-play a different situation. I'll be the travel insurance agent. 別の場面でロールプレイをしましょう。私は旅行保険の担当者役です。",
+      "learningTarget": "Control the exact page target or prompt in context: Travel insurance call (別の場面へ) | Let's role-play a different situation. I'll be the travel insurance agent. 別の場面でロールプレイをしましょう。私は旅行保険の担当者役です。",
+      "pedagogicalValue": "This transfers both targets to a distinct situation instead of repeating the original scene. Reviewed focus: Travel insurance call (別の場面へ) | Let's role-play a different situation. I'll be the travel insurance agent. 別の場面でロールプレイをしましょう。私は旅行保険の担当者役です。",
+      "failureDiagnosis": "Failure would show that the learner can repeat the first scene but cannot transfer the patterns. Checked page: transfer-scene.",
+      "nonTargetSupport": "All non-target language remains visible; support stage is not-applicable, so no unrelated vocabulary is hidden.",
+      "articleTreatment": "Articles are not an accidental extra target: any required article remains visible or belongs to the complete supported lexical answer.",
+      "choiceQuality": "No fixed answer-choice set is used; the page tests speaking, comprehension, roleplay, or open response instead.",
+      "componentConsistency": "The shared transfer-scene component has one visible job and no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact instruction, target/prompt, support, answers, and component on current bytes; rendered this page at 360px and 480px with no overflow. Extracted answers: [\"I'm here for\", \"I'm staying at\"].",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I'm here for",
+          "I'm staying at"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

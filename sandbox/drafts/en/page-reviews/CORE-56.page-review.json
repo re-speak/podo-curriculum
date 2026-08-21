@@ -1,0 +1,807 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-experience-and-ideas/lessons/56-i-like-it-but-its-expensive/lesson.html",
+  "lessonSha256": "f7a4d5a3e57f2c3e2df9c8b6988c5eb2edb87791d4be6d331fb7182c8ff92fe1",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "goal orientation in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for goal orientation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown.",
+      "tutorAction": "Listen briefly and treat these as activation, not new teaching.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "known-word activation in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for known-word activation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud once.",
+      "tutorAction": "Introduce Pattern 1 in one line, then move on.",
+      "targetOrPrompt": "Exact visible instruction: Use this to add a limitation after saying what you like. Please read the title aloud. | 気に入っている点を言ったあと、問題点を加えるときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 transition is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete Pattern 1 examples aloud after the meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read each example.",
+      "targetOrPrompt": "Highlighted target: I like | but | 気に入っています | が | I like | but | 気に入っています | が | I like | but | 気に入っています | が",
+      "learningTarget": "Pattern 1 meaning and model in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 meaning and model is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I like",
+          "but",
+          "気に入っています",
+          "が",
+          "I like",
+          "but",
+          "気に入っています",
+          "が",
+          "I like",
+          "but",
+          "気に入っています",
+          "が"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 sentence aloud.",
+      "tutorAction": "Listen and model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: I like | but | 気に入っています | が | I like | but | 気に入っています | が | I like | but | 気に入っています | が | I like | but | 気に入っています | が",
+      "learningTarget": "Pattern 1 read-aloud in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 read-aloud is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I like",
+          "but",
+          "気に入っています",
+          "が",
+          "I like",
+          "but",
+          "気に入っています",
+          "が",
+          "I like",
+          "but",
+          "気に入っています",
+          "が",
+          "I like",
+          "but",
+          "気に入っています",
+          "が"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 1 form explanation in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 form explanation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the form that matches each Japanese meaning, then read the completed sentence aloud.",
+      "tutorAction": "Check each decision and require the complete sentence before moving on.",
+      "targetOrPrompt": "Highlighted target: ただ | なので | ただ | なので",
+      "learningTarget": "Pattern 1 meaning contrast in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning contrast—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning contrast with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "Every row presents a small, meaningful form/meaning contrast, varies the correct alternative across the page, and ends with the completed sentence aloud.",
+      "componentConsistency": "The established Core component for Pattern 1 meaning contrast is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "ただ",
+          "なので",
+          "ただ",
+          "なので"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put each sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence before offering help.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 word-order retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence aloud, including the missing target words.",
+      "tutorAction": "Listen first, then type only the target words the learner says.",
+      "targetOrPrompt": "Highlighted target: 気に入っています | が | 気に入っています | が | 気に入っています | が | 気に入っています | が Blank answers: I like | but | I like | but | I like | but | I like | but",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 controlled target retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "気に入っています",
+          "が",
+          "気に入っています",
+          "が",
+          "気に入っています",
+          "が",
+          "気に入っています",
+          "が"
+        ],
+        "blankAnswers": [
+          "I like",
+          "but",
+          "I like",
+          "but",
+          "I like",
+          "but",
+          "I like",
+          "but"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete English sentence from the Japanese cue, using the lexical hints when needed.",
+      "tutorAction": "Let the learner produce the sentence; type the supported lexical answer only after they speak.",
+      "targetOrPrompt": "Blank answers: I like the place, but it's expensive. | I like the room, but it's small. | I like the café, but it's crowded. | I like the job, but it's stressful. Lexical hints: 場所:place | 高い:expensive | 部屋:room | 小さい:small | カフェ:café | 混んでいる:crowded | 仕事:job | ストレスの多い:stressful",
+      "learningTarget": "Pattern 1 supported translation in CORE-56: Use this to add a limitation after saying what you like.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 supported translation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I like the place, but it's expensive.",
+          "I like the room, but it's small.",
+          "I like the café, but it's crowded.",
+          "I like the job, but it's stressful."
+        ],
+        "hintChips": [
+          "場所:place",
+          "高い:expensive",
+          "部屋:room",
+          "小さい:small",
+          "カフェ:café",
+          "混んでいる:crowded",
+          "仕事:job",
+          "ストレスの多い:stressful"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the exact visible frame to perform the named communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “I like ___, but ___” to give one real good point and limitation. Lexical hint(s): 場所:place | 部屋:room | 仕事:job",
+      "learningTarget": "Pattern 1 personal production in CORE-56 through the exact current prompt: Use “I like ___, but ___” to give one real good point and limitation.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 personal production—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 personal production with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 personal production is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "場所:place",
+          "部屋:room",
+          "仕事:job"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “I like ___, but ___” to give one real good point and limitation."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud once.",
+      "tutorAction": "Introduce Pattern 2 in one line, then move on.",
+      "targetOrPrompt": "Exact visible instruction: Use this to background one fact before a surprising positive point. Please read the title aloud. | 一つの事実を背景にして、意外なよい点を伝えるときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 transition is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete Pattern 2 examples aloud after the meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read each example.",
+      "targetOrPrompt": "Highlighted target: Even though | のに | Even though | のに | Even though | のに",
+      "learningTarget": "Pattern 2 meaning and model in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 meaning and model is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Even though",
+          "のに",
+          "Even though",
+          "のに",
+          "Even though",
+          "のに"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 sentence aloud.",
+      "tutorAction": "Listen and model only if help is needed.",
+      "targetOrPrompt": "Highlighted target: Even though | のに | Even though | のに | Even though | のに | Even though | のに",
+      "learningTarget": "Pattern 2 read-aloud in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 read-aloud is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Even though",
+          "のに",
+          "Even though",
+          "のに",
+          "Even though",
+          "のに",
+          "Even though",
+          "のに"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed operation briefly and check it in the examples.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 2 form explanation in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 form explanation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the form that matches each Japanese meaning, then read the completed sentence aloud.",
+      "tutorAction": "Check each decision and require the complete sentence before moving on.",
+      "targetOrPrompt": "Highlighted target: 小さいのに | 静かなので | 混んでいるのに | 信頼できるので",
+      "learningTarget": "Pattern 2 meaning contrast in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning contrast—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning contrast with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "Every row presents a small, meaningful form/meaning contrast, varies the correct alternative across the page, and ends with the completed sentence aloud.",
+      "componentConsistency": "The established Core component for Pattern 2 meaning contrast is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "小さいのに",
+          "静かなので",
+          "混んでいるのに",
+          "信頼できるので"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put each sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence before offering help.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 word-order retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence aloud, including the missing target words.",
+      "tutorAction": "Listen first, then type only the target words the learner says.",
+      "targetOrPrompt": "Highlighted target: のに | のに | のに | のに Blank answers: Even though | Even though | Even though | Even though",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 controlled target retrieval is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "のに",
+          "のに",
+          "のに",
+          "のに"
+        ],
+        "blankAnswers": [
+          "Even though",
+          "Even though",
+          "Even though",
+          "Even though"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete English sentence from the Japanese cue, using the lexical hints when needed.",
+      "tutorAction": "Let the learner produce the sentence; type the supported lexical answer only after they speak.",
+      "targetOrPrompt": "Blank answers: Even though it's small, it's comfortable. | Even though it's expensive, it's convenient. | Even though it's crowded, it's quiet upstairs. | Even though it's old, it's reliable. Lexical hints: 小さい:small | 快適な:comfortable | 高い:expensive | 便利な:convenient | 混んでいる:crowded | 2階:upstairs | 古い:old | 信頼できる:reliable",
+      "learningTarget": "Pattern 2 supported translation in CORE-56: Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 supported translation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Even though it's small, it's comfortable.",
+          "Even though it's expensive, it's convenient.",
+          "Even though it's crowded, it's quiet upstairs.",
+          "Even though it's old, it's reliable."
+        ],
+        "hintChips": [
+          "小さい:small",
+          "快適な:comfortable",
+          "高い:expensive",
+          "便利な:convenient",
+          "混んでいる:crowded",
+          "2階:upstairs",
+          "古い:old",
+          "信頼できる:reliable"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the exact visible frame to perform the named communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “Even though ___, ___” to give one surprising positive point despite a limitation. Lexical hint(s): 快適な:comfortable | 便利な:convenient | 信頼できる:reliable",
+      "learningTarget": "Pattern 2 personal production in CORE-56 through the exact current prompt: Use “Even though ___, ___” to give one surprising positive point despite a limitation.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 personal production—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 personal production with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Lexical hint chips support only the non-target content words; the taught frame itself remains a retrieval task.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 personal production is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "快適な:comfortable",
+          "便利な:convenient",
+          "信頼できる:reliable"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “Even though ___, ___” to give one surprising positive point despite a limitation."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the supporting expressions and connect them to the upcoming role-play.",
+      "tutorAction": "Clarify the expressions briefly without adding a drill.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "role-play support in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—role-play support—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play support with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play support is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the conversation goal and get ready to use both patterns.",
+      "tutorAction": "Introduce the conversation in one line, then move on.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "conversation transition in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—conversation transition—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform conversation transition with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for conversation transition is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read the learner role in the model conversation.",
+      "tutorAction": "Take the named counterpart role and alternate turns naturally.",
+      "targetOrPrompt": "Highlighted target: I like | but | 気に入っています | が | Even though | のに",
+      "learningTarget": "supported role-play in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—supported role-play—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform supported role-play with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for supported role-play is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I like",
+          "but",
+          "気に入っています",
+          "が",
+          "Even though",
+          "のに"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Complete and say the learner lines in the role-play.",
+      "tutorAction": "Take the named counterpart role and pause for each learner turn.",
+      "targetOrPrompt": "Blank answers: I like | but | Even though",
+      "learningTarget": "role-play completion in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—role-play completion—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play completion with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play completion is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I like",
+          "but",
+          "Even though"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's real question, then ask the visible question back.",
+      "tutorAction": "Ask the exact question, react naturally, then give a real answer to the ask-back.",
+      "targetOrPrompt": "Exact learner prompt(s): Which matters most when you choose a place: comfort, price, or convenience? | What about you—which matters most?",
+      "learningTarget": "reciprocal free conversation in CORE-56 through the exact current prompt: Which matters most when you choose a place: comfort, price, or convenience? | What about you—which matters most?",
+      "pedagogicalValue": "This page has one distinct job—reciprocal free conversation—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal free conversation with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for reciprocal free conversation is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which matters most when you choose a place: comfort, price, or convenience?",
+          "What about you—which matters most?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both patterns in the new role-play.",
+      "tutorAction": "Take the explicitly named counterpart role and complete the exchange.",
+      "targetOrPrompt": "Blank answers: I like | but | Even though",
+      "learningTarget": "transfer role-play in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for transfer role-play is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I like",
+          "but",
+          "Even though"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Notice the final usage distinction and read the contrasting examples.",
+      "tutorAction": "Explain the distinction briefly and check the examples.",
+      "targetOrPrompt": "Exact visible page content and bilingual instruction were checked against the final generated lesson bytes.",
+      "learningTarget": "usage nuance in CORE-56: Use this to add a limitation after saying what you like. Then Use this to background one fact before a surprising positive point.",
+      "pedagogicalValue": "This page has one distinct job—usage nuance—and advances from noticing toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform usage nuance with the authored target before the next stage reduces support.",
+      "nonTargetSupport": "Complete bilingual meaning and visible context support non-target content; no unrelated vocabulary-memory test is introduced.",
+      "articleTreatment": "Articles and determiners remain visible unless the authored sentence requires the learner to choose them from meaning; lexical chips do not reveal an article answer.",
+      "choiceQuality": "No answer-choice set is used here; the page's job is reading, retrieval, explanation, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for usage nuance is used; capture fields appear only for learner or tutor speech that must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

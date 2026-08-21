@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-full/lessons/104-is-there-a-best-age-to-be/lesson.html",
+  "lessonSha256": "e00b9b135779bd50e1d7912f3a23c1353bf84cd17c5f2916577b95777e40888c",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “Is there a best age to be?” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "Is there a best age to be? / いちばんいい年齢はある？. Let's compare the strengths and costs of different life stages. / さまざまな人生の段階の強みと代償を比べましょう。",
+      "learningTarget": "Orient the learner to a conversation about Is there a best age to be? without supplying a position.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; agreement with any position is not tested.",
+      "nonTargetSupport": "The Japanese can-do “さまざまな人生の段階の強みと代償を比べましょう。” and title “いちばんいい年齢はある？” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice set appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answers, or second task.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "No age keeps every advantage / すべての長所を持つ年齢はない. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “Every life stage offers a particular mix of capacity, dependence, freedom, and constraint.” to “The preferred age changes when the valued outcome shifts from health to freedom, belonging, or perspective.”, as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several defensible angles for the later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claim translations are available; this full article owns these selective glosses: nostalgia=懐かしさ.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “Which life stage offers the strongest case for being preserved indefinitely?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which life stage offers the strongest case for being preserved indefinitely?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which life stage offers the strongest case for being preserved indefinitely? / どの人生の段階が、ずっと保つものとして最も説得力がありますか？ Follow-up pool: Which value makes the stage attractive? What evidence supports that picture of it?",
+      "learningTarget": "Develop the distinct “opening” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A stage to freeze” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which life stage offers the strongest case for being preserved indefinitely?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どの人生の段階が、ずっと保つものとして最も説得力がありますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which life stage offers the strongest case for being preserved indefinitely?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “Which advantage gives that life stage its strongest appeal?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which advantage gives that life stage its strongest appeal?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which advantage gives that life stage its strongest appeal? / どの利点が、その人生の段階に最も強い魅力を与えていますか？ Follow-up pool: Which value does the advantage serve? How widely is the advantage shared?",
+      "learningTarget": "Develop the distinct “good” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “The strongest advantage” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which advantage gives that life stage its strongest appeal?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どの利点が、その人生の段階に最も強い魅力を与えていますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which advantage gives that life stage its strongest appeal?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “Which constraint is inseparable from the stage's main advantage?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which constraint is inseparable from the stage's main advantage?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which constraint is inseparable from the stage's main advantage? / どの制約が、その段階の主な利点と切り離せませんか？ Follow-up pool: Why does the trade-off persist? Which condition could soften it?",
+      "learningTarget": "Develop the distinct “bad” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “The unavoidable cost” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which constraint is inseparable from the stage's main advantage?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どの制約が、その段階の主な利点と切り離せませんか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which constraint is inseparable from the stage's main advantage?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “Which present capacity or perspective deserves more weight in the comparison?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which present capacity or perspective deserves more weight in the comparison?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which present capacity or perspective deserves more weight in the comparison? / 今のどの能力や視点を、この比較でもっと重視するべきですか？ Follow-up pool: How was that capacity accumulated? Which earlier advantage does it balance?",
+      "learningTarget": "Develop the distinct “now” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “What the present offers” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which present capacity or perspective deserves more weight in the comparison?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “今のどの能力や視点を、この比較でもっと重視するべきですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which present capacity or perspective deserves more weight in the comparison?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “Which later development would permanent preservation of that stage prevent?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which later development would permanent preservation of that stage prevent?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which later development would permanent preservation of that stage prevent? / その段階を永続させると、その後のどんな発達が妨げられますか？ Follow-up pool: Which later experience would be lost? What capacity requires further change?",
+      "learningTarget": "Develop the distinct “loss” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “Growth that would stop” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which later development would permanent preservation of that stage prevent?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “その段階を永続させると、その後のどんな発達が妨げられますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which later development would permanent preservation of that stage prevent?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “Which circumstance most destabilizes a simple ranking of life stages?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which circumstance most destabilizes a simple ranking of life stages?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which circumstance most destabilizes a simple ranking of life stages? / どの状況が、人生の段階の単純な順位を最も崩しますか？ Follow-up pool: Which resource changes the trade-off? Who would rank the stages differently?",
+      "learningTarget": "Develop the distinct “condition” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “What changes the answer” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which circumstance most destabilizes a simple ranking of life stages?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どの状況が、人生の段階の単純な順位を最も崩しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which circumstance most destabilizes a simple ranking of life stages?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “Can a best age exist without first deciding which values and circumstances count?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Can a best age exist without first deciding which values and circumstances count?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Can a best age exist without first deciding which values and circumstances count? / どの価値や状況を重視するか決めずに、最高の年齢は存在できますか？ Follow-up pool: Which criterion would control the judgment? Whose circumstances challenge it?",
+      "learningTarget": "Develop the distinct “best” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A best age for everyone” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Can a best age exist without first deciding which values and circumstances count?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どの価値や状況を重視するか決めずに、最高の年齢は存在できますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Can a best age exist without first deciding which values and circumstances count?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the standalone question “Which feature of the present deserves more weight than nostalgia usually gives it?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which feature of the present deserves more weight than nostalgia usually gives it?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which feature of the present deserves more weight than nostalgia usually gives it? / 今のどの特徴を、懐かしさが与える以上に重く評価するべきですか？ Follow-up pool: Which present gain is underestimated? How does nostalgia distort the comparison?",
+      "learningTarget": "Develop the distinct “flip” angle of Is there a best age to be? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “Credit for the present” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which feature of the present deserves more weight than nostalgia usually gives it?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “今のどの特徴を、懐かしさが与える以上に重く評価するべきですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which feature of the present deserves more weight than nostalgia usually gives it?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

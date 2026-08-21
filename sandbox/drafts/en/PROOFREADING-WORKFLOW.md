@@ -91,17 +91,29 @@ decks are regenerated, and the complete review is repeated on the new bytes.
 3. **Teaching:** meaning/use precedes formation; rules draw only honest branches; future forms stay
    out of learner production unless explicitly chunked.
 4. **Activities:** one activity per page, four closed questions, consistent meaningful reorder
-   chunks, one prompt per answer box and believable distractors.
+   chunks, one prompt per answer box and believable distractors. Name the new decision each row
+   requires; four repetitions of one answer or an option that can never be right do not count as
+   four useful questions. Verify the operation from both roles: what the learner says or chooses,
+   what the tutor reads or types, and what happens before the page advances.
 5. **Application:** Core merges both patterns; Contextual replays the opening scene and proves
-   standalone transfer in a second situation; Freetalking maintains one question plus the correction loop.
+   standalone transfer in a second situation; Core/Contextual Free Talk is a reciprocal live
+   exchange; Freetalking maintains one question plus the correction loop.
 6. **Scaffolding:** every non-target word is supported; hint chips are vocabulary only; no katakana
    reading or `yomi.js` appears.
 7. **Scripts:** each line is the shortest natural, conversational wording that preserves the
    learner's next action or the page's meaning; it does not narrate visible setup, inventory later
    activities or repeat framing such as “today” / “by the end of the lesson.” English and Japanese
-   match in meaning, sentence count and tone, and tutor notes do not expose answers.
-8. **Rendered behaviour:** every page works at 480px and 360px, including interaction, sync,
-   teaching mode, scrolling, pager clearance and console state.
+   match in meaning, sentence count and tone, and tutor notes do not expose answers. Learner reading
+   is the default; tutor reading appears only on an explicit listening/comprehension task. Teaching
+   copy explains the idea, while the tutor note states the operation.
+8. **Pilot regressions:** the goal has no preview rows; choose ends in a full-sentence read; reorder,
+   fill and translate use the approved shared scripts; open-response blocks have no duplicate task
+   text and use `Student's sentence`; roleplays assign roles directly; vague coaching and defensive
+   prohibitions are removed; optional vocabulary pages earn their place.
+9. **Rendered behaviour:** every page works at 480px and 360px, including interaction, sync,
+   teaching mode, scrolling, pager clearance and console state. The automated render audit measures
+   overflow and spacing; it does not inspect pedagogy or component consistency. A human still opens
+   every page and compares repeated activity types with the approved reference design.
 
 Record exact stable id, `data-page-id`, current text and proposed replacement. Separate confirmed
 errors from editorial alternatives requiring an owner decision.
@@ -119,7 +131,35 @@ containers, editable phrase fields outside the canonical answer component, impos
 mixed chunk criteria and unmarked full-sentence choices where `.word-choice` was required. Human
 proofreading still owns whether every surviving chip is a useful meaning unit, whether a reviewed
 whole-sentence choice genuinely differs across the whole sentence, whether a rule teaches the
-visible pattern, and whether the activity earns its place.
+visible pattern, and whether the activity earns its place. It also owns whether a Free Talk question
+is interesting enough to sustain conversation: topical relevance matters, but exact pattern reuse
+is optional after the lesson's controlled production and roleplay have already established it.
+
+### Page-by-page tutor-operability pass
+
+For every page, answer these before approving it:
+
+1. What exact sentence does the tutor say aloud?
+2. What does the learner do next—read, listen, choose, arrange, speak, or answer?
+3. If text is entered, who speaks and who types, and is that division explicit?
+4. Does the tutor note add an operation the visible page cannot supply, or merely restate it?
+5. If this is a roleplay, are both roles named in ordinary language before it begins?
+6. If this is open production, does the visible script print both the exact target frame and the
+   concrete question or situation the learner should answer?
+7. If this is Free Talk, is there a reciprocal Tutor/Me exchange in which the learner can ask back
+   and receive a real answer? Would the topic still be worth discussing without forcing today's
+   frame? If not, rewrite the question rather than adding more coaching.
+8. What exact language is taught on the preceding model page, and is that exact language—rather
+   than vocabulary—the controlled blank here? If failure would diagnose an unrelated word gap,
+   redesign the page before considering row variety.
+9. What new decision or retrieval does this page add? If every row has the same obvious answer, or
+   one option can never be correct, remove or redesign the activity without moving the blank away
+   from the taught target.
+10. On whole-sentence production, is the page explicitly `supported` or a `checkpoint`? For
+   `supported`, does every row supply the lexical help it needs while leaving articles, auxiliaries
+   and inflections unhindered?
+11. Does this page use the same approved component as other pages with the same teaching job, rather
+   than a visually weaker fallback with similar text?
 
 For every generated Core deck, proofreading also records one answer to each of these questions
 before `podo:proofread-status=complete`: What new decision does each page ask the learner to make?
@@ -127,3 +167,25 @@ What stable sentence stays printed around each choice? What operation does the r
 visible? What register, softening, contraction, prosody, collocation or intensity distinction does
 the native tip add? “It matches the generator,” “it has four rows,” and “the checker passes” are not
 answers. A batch with one unanswered page remains incomplete and produces no owner-review links.
+
+The answers are not an informal promise. Create a hash-bound ledger for each reviewed lesson:
+
+```sh
+python3 tools/authoring/en/page_review.py init path/to/lesson.html \
+  --output sandbox/drafts/en/page-reviews/REVIEW-ID.page-review.json
+# Complete every generated page entry only after inspecting that page at 360px and 480px.
+python3 tools/authoring/en/page_review.py check path/to/lesson.html \
+  sandbox/drafts/en/page-reviews/REVIEW-ID.page-review.json
+python3 tools/authoring/en/page_review.py render \
+  sandbox/drafts/en/page-reviews/REVIEW-ID.page-review.json \
+  --output sandbox/drafts/en/page-reviews/REVIEW-ID.page-review.md
+```
+
+The checker requires the exact lesson SHA-256, exact `data-page-id` order, machine-extracted target
+highlights, blank answers, hint chips and support stage, plus a completed answer for learner action,
+tutor action, visible target/prompt, learning target, failure diagnosis, non-target support, article
+treatment, pedagogical value, choice quality, component consistency, both visual widths and verdict.
+The extracted evidence must match the lesson; prose cannot override it. Any regenerated byte makes
+the ledger stale. Keep the four states separate in the ledger: **generated**, **mechanically validated**,
+**human page-audited**, and **owner-approved**. The first three may pass while owner approval stays
+pending; only `check --require-owner` may support an owner-approved claim.

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-full/lessons/120-being-rich-and-anonymous-or-respected-on-an-ordinary-income/lesson.html",
+  "lessonSha256": "b3a999b81fe843de8a05a47e00ba39abe50811fa52b3511bba272c6fa5d9ea69",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “Being rich and anonymous or respected on an ordinary income?” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "Being rich and anonymous or respected on an ordinary income? / 裕福で無名、それとも普通の収入で尊敬？. Let's compare private wealth and respect on an ordinary income, then explain what could change your choice. / 無名で裕福な生活と普通の収入で得る尊敬を比べ、何が変われば選択も変わるか話しましょう。",
+      "learningTarget": "Orient the learner to a balanced conversation about Being rich and anonymous or respected on an ordinary income? without supplying a preferred answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; the learner’s preference is not graded.",
+      "nonTargetSupport": "The Japanese can-do “無名で裕福な生活と普通の収入で得る尊敬を比べ、何が変われば選択も変わるか話しましょう。” and title “裕福で無名、それとも普通の収入で尊敬？” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice UI appears; the title names two defensible sides for later discussion.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answer, or second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What makes the choice change / 選択を変えるもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten topic-specific claims, from “Financial anonymity protects privacy while complicating openness in close relationships.” to “A resilient life needs relationships, purpose, privacy, and security beyond either wealth or public approval.”, as optional input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds ten distinct factual or practical angles that can deepen the later choice conversation.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claims are available; selective gloss support is no learner-facing gloss on this variant.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “Which achievement keeps its value without recognition?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which achievement keeps its value without recognition?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Which achievement keeps its value without recognition?” / “誰にも知られなくても、価値があると感じることは何ですか？” Follow-ups: “Which value remains even without an audience?” and “How would recognition change the reason for doing it?”",
+      "learningTarget": "Develop the distinct “Private pride” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Private pride” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which achievement keeps its value without recognition?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “誰にも知られなくても、価値があると感じることは何ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which achievement keeps its value without recognition?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “Which contribution would be easier or better if it remained anonymous?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which contribution would be easier or better if it remained anonymous?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Which contribution would be easier or better if it remained anonymous?” / “名前を出さずによいことをするなら、何をしますか？” Follow-ups: “Which form of accountability should remain even without a name?” and “Could anonymity increase trust in the contribution itself?”",
+      "learningTarget": "Develop the distinct “Anonymous help” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Anonymous help” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which contribution would be easier or better if it remained anonymous?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “名前を出さずによいことをするなら、何をしますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which contribution would be easier or better if it remained anonymous?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “Would you choose private wealth without recognition or public respect on an ordinary income?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Would you choose private wealth without recognition or public respect on an ordinary income?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Would you choose private wealth without recognition or public respect on an ordinary income?” / “世間に知られない裕福な生活と、普通の収入で尊敬される生活のどちらを選びますか？” Follow-ups: “Which need—security, influence, privacy, or belonging—drives the answer?” and “What hidden cost of the preferred life is easiest to ignore?”",
+      "learningTarget": "Develop the distinct “Wealth or respect” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Wealth or respect” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Would you choose private wealth without recognition or public respect on an ordinary income?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “世間に知られない裕福な生活と、普通の収入で尊敬される生活のどちらを選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you choose private wealth without recognition or public respect on an ordinary income?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “Which daily relationships and decisions would change under your chosen life?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which daily relationships and decisions would change under your chosen life?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Which daily relationships and decisions would change under your chosen life?” / “選んだ生活では、普段の一日はどのようになりますか？” Follow-ups: “Which relationship would be most altered by wealth or reputation?” and “How would ordinary decisions reveal the chosen value?”",
+      "learningTarget": "Develop the distinct “An ordinary day” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “An ordinary day” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which daily relationships and decisions would change under your chosen life?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “選んだ生活では、普段の一日はどのようになりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which daily relationships and decisions would change under your chosen life?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “How much public scrutiny would make respect feel like a burden?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How much public scrutiny would make respect feel like a burden?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “How much public scrutiny would make respect feel like a burden?” / “いつも人から評価されるなら、尊敬される生活を選びますか？” Follow-ups: “Which kind of scrutiny would turn respect into a burden?” and “Could boundaries preserve influence without constant exposure?”",
+      "learningTarget": "Develop the distinct “Always being judged” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Always being judged” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How much public scrutiny would make respect feel like a burden?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “いつも人から評価されるなら、尊敬される生活を選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How much public scrutiny would make respect feel like a burden?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “If financial status stayed inside the family, would anonymity become easier to choose?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “If financial status stayed inside the family, would anonymity become easier to choose?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “If financial status stayed inside the family, would anonymity become easier to choose?” / “家族だけが裕福だと知っているなら、選択は変わりますか？” Follow-ups: “Would secrecy change trust inside the family?” and “Which responsibility would come with sharing the information?”",
+      "learningTarget": "Develop the distinct “Only family knows” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Only family knows” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “If financial status stayed inside the family, would anonymity become easier to choose?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “家族だけが裕福だと知っているなら、選択は変わりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If financial status stayed inside the family, would anonymity become easier to choose?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “At what level of exposure or insecurity would the other life become preferable?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “At what level of exposure or insecurity would the other life become preferable?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “At what level of exposure or insecurity would the other life become preferable?” / “どの程度人に知られたら、反対の生活を選びますか？” Follow-ups: “Which level of visibility removes control over ordinary life?” and “Would financial insecurity or reputational pressure reverse the choice first?”",
+      "learningTarget": "Develop the distinct “The price of visibility” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “The price of visibility” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “At what level of exposure or insecurity would the other life become preferable?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どの程度人に知られたら、反対の生活を選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "At what level of exposure or insecurity would the other life become preferable?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Use the exact ask-back “Ask your tutor to choose between private wealth and respect on an ordinary income, then compare the reasons behind both answers.” to invite the tutor’s real answer, then compare the two positions.",
+      "tutorAction": "Let the learner ask “Ask your tutor to choose between private wealth and respect on an ordinary income, then compare the reasons behind both answers.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.",
+      "targetOrPrompt": "Reciprocal ask-back: “Ask your tutor to choose between private wealth and respect on an ordinary income, then compare the reasons behind both answers.” / “チューターに無名で裕福な生活と普通の収入で得る尊敬のどちらを選ぶか聞き、お互いの理由を比べてください。” Follow-ups: “How does the tutor separate respect from public visibility?” and “Which level of security or scrutiny would reverse their answer?”",
+      "learningTarget": "Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.",
+      "pedagogicalValue": "Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.",
+      "failureDiagnosis": "If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.",
+      "nonTargetSupport": "The Japanese prompt “チューターに無名で裕福な生活と普通の収入で得る尊敬のどちらを選ぶか聞き、お互いの理由を比べてください。” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Ask your tutor to choose between private wealth and respect on an ordinary income, then compare the reasons behind both answers."
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

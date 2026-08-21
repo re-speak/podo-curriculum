@@ -60,6 +60,11 @@ class AuditTests(unittest.TestCase):
 
 
 class FlattenTests(unittest.TestCase):
+    def test_generated_page_drops_line_end_whitespace_only(self):
+        raw = "<div>  kept  </div>  \n\t\nlast\t"
+        self.assertEqual(promote.clean_generated_page(raw),
+                         "<div>  kept  </div>\n\nlast")
+
     def test_flattens_refs_to_basenames(self):
         page, sheets, scripts, assets = promote.flatten(DECK)
         self.assertIn('href="lesson-card.css"', page)

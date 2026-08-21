@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/09-a-purchase-that-was-worth-it/lesson.html",
+  "lessonSha256": "7d7d332b91f1cd6695946221b5fb333b9d3755e0bf769c68e40e18c5af2595af",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title aloud once.",
+      "tutorAction": "Introduce today’s topic, ask the learner to read “A purchase that was worth it” once, and move on.",
+      "targetOrPrompt": "Let's talk about a purchase that was worth the money. Please read the title aloud. お金を出す価値があった買い物について話しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a conversation about “A purchase that was worth it” without previewing or drilling answers.",
+      "pedagogicalValue": "Sets the specific discussion can-do for “A purchase that was worth it” and gives one immediate low-pressure speaking action.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors both the discussion goal and the title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the lesson goal before the optional article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one observable title reading.",
+      "componentConsistency": "Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article if there is no question or no pre-study.",
+      "targetOrPrompt": "What makes a purchase worth it? (買い物の価値): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the optional pre-study article about “A purchase that was worth it” to seed concrete ideas and topic vocabulary.",
+      "pedagogicalValue": "Ten or more linked claims give the learner possible angles for the later “A purchase that was worth it” conversation without prescribing an answer.",
+      "failureDiagnosis": "No article question is not a failure; trouble with a highlighted item identifies a local vocabulary support need.",
+      "nonTargetSupport": "The full article uses richer clause structure and more precise vocabulary, aligned Japanese for every claim, and these selective glosses: cost per use 一回あたりの費用, hidden costs 見えにくい追加費用, resale value 再販価値.",
+      "articleTreatment": "Pre-study only: do not read it aloud or work through it line by line during class.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose discussion-first or correction-first for this conversation.",
+      "tutorAction": "Honor the learner’s selected correction timing while discussing “A purchase that was worth it.”",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the eight substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only bullets define the operational difference.",
+      "articleTreatment": "The optional article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.",
+      "componentConsistency": "Reuses the approved synchronized single-choice FT discussion-style component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “A purchase that was worth it” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “A purchase that was worth it” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and real tutor reciprocity by explicitly prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; a rigid interview-like flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line explicitly says not every question is required and that interesting answer details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is a concise operating transition.",
+      "componentConsistency": "Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer “What's the best thing you've bought this year?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What do you use it for?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “Which kinds of purchases would offer exceptional value to you?”",
+      "learningTarget": "Explore the distinct “Your best buy (買ってよかったもの)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What's the best thing you've bought this year?” opens this angle; “What do you use it for?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What do you use it for?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What's the best thing you've bought this year?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How quickly did you know it was a good purchase?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which kinds of purchases would offer exceptional value to you?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer “When did you buy it?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Where did you buy it?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What would make a purchase justify its cost for you?”",
+      "learningTarget": "Explore the distinct “The purchase (買ったとき)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “When did you buy it?” opens this angle; “Where did you buy it?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Where did you buy it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When did you buy it?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Were you already looking for it, or did you find it unexpectedly?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would make a purchase justify its cost for you?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer “What made you decide to buy it?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What problem were you trying to solve?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “Which factors would justify a purchase for you?”",
+      "learningTarget": "Explore the distinct “The decision (決めた理由)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What made you decide to buy it?” opens this angle; “What problem were you trying to solve?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What problem were you trying to solve?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What made you decide to buy it?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which other option did you consider?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which factors would justify a purchase for you?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer “How has the purchase changed your daily routine?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “How often do you use it now?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “Which category of purchase could most improve your daily routine?”",
+      "learningTarget": "Explore the distinct “In your routine (日常の中で)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How has the purchase changed your daily routine?” opens this angle; “How often do you use it now?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “How often do you use it now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How has the purchase changed your daily routine?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What takes less time or effort because of it?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which category of purchase could most improve your daily routine?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer “How much did the price influence your decision?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Did it feel expensive at the time?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “How much weight should price carry when you decide whether something is worth it?”",
+      "learningTarget": "Explore the distinct “Price and value (値段と価値)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How much did the price influence your decision?” opens this angle; “Did it feel expensive at the time?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Did it feel expensive at the time?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How much did the price influence your decision?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Would a cheaper version have been enough?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How much weight should price carry when you decide whether something is worth it?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer “Tell me about something you bought that was not worth the money.” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “What expectation did it fail to meet?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “Which kind of purchase would be most likely to disappoint you?”",
+      "learningTarget": "Explore the distinct “A regret (後悔した買い物)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “Tell me about something you bought that was not worth the money.” opens this angle; “What expectation did it fail to meet?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “What expectation did it fail to meet?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Tell me about something you bought that was not worth the money.” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Did you return, sell, or keep it?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which kind of purchase would be most likely to disappoint you?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer “What change would make your best purchase stop feeling worth it?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Would you keep it if it became less reliable?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What could cause a good purchase to lose value for you over time?”",
+      "learningTarget": "Explore the distinct “The limit (価値がなくなる条件)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “What change would make your best purchase stop feeling worth it?” opens this angle; “Would you keep it if it became less reliable?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Would you keep it if it became less reliable?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What change would make your best purchase stop feeling worth it?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How much extra cost would be too much?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What could cause a good purchase to lose value for you over time?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer “How would you decide whether to buy the same thing again today?” aloud, then develop whichever detail becomes most interesting.",
+      "tutorAction": "React or share briefly, then use “Who would you recommend it to?” or another relevant probe rather than asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “How would you decide whether to repurchase the same category today?”",
+      "learningTarget": "Explore the distinct “Buy it again? (もう一度買う？)” angle of “A purchase that was worth it” with a concrete detail, reason, comparison, or personal example.",
+      "pedagogicalValue": "The answerable main prompt “How would you decide whether to buy the same thing again today?” opens this angle; “Who would you recommend it to?” can turn a first response into a more specific exchange.",
+      "failureDiagnosis": "If the answer remains vague after “Who would you recommend it to?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.",
+      "nonTargetSupport": "The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How would you decide whether to buy the same thing again today?” but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Who would probably not need it?” offers a distinct optional direction for a genuine follow-up.",
+      "componentConsistency": "Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How would you decide whether to repurchase the same category today?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next focus, then repeat one useful correction aloud.",
+      "tutorAction": "Summarize evidence from the “A purchase that was worth it” discussion and ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one demonstrated speaking strength and one actionable next focus from the live conversation.",
+      "pedagogicalValue": "Turns captured sentences into selective feedback without interrupting the earlier discussion flow.",
+      "failureDiagnosis": "Difficulty repeating the selected correction identifies the form or pronunciation that needs one final supported attempt.",
+      "nonTargetSupport": "The bilingual closing script explains the feedback structure; the tutor writes only one strength and one next focus.",
+      "articleTreatment": "Not applicable; feedback is based on the learner’s live spoken answers, not article recall.",
+      "choiceQuality": "No distractors appear; the single written feedback field keeps the close selective and actionable.",
+      "componentConsistency": "Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

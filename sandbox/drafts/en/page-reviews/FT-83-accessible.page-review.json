@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/83-what-you-wanted-to-be-as-a-child/lesson.html",
+  "lessonSha256": "0c74a0436cfd852eb86b4e7394eb51f44e88e7e00aebb128e0965f71924b2248",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “What you wanted to be as a child” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "What you wanted to be as a child / 子どもの頃になりたかったもの. Let's explore what childhood dream jobs reveal about people. / 子どもの頃の夢の仕事から何が分かるか考えましょう。",
+      "learningTarget": "Orient the learner to a conversation about What you wanted to be as a child without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; personal disclosure is not being tested.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and action as the English.",
+      "articleTreatment": "This page only introduces the topic; it does not preview or teach the article.",
+      "choiceQuality": "No fixed choice set appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What childhood ambitions reveal / 子どもの夢が表すもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “A childhood ambition often begins with one visible part of a job.” to “That value may still connect the child to the adult.”, as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds multiple defensible angles for the later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claim translations are available; this accessible article owns these selective glosses: fulfil=実現する.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real answer when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and does not add a separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “Which childhood dream job is especially interesting to you?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Which childhood dream job is especially interesting to you?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Which childhood dream job is especially interesting to you? / 子どもの頃の夢の仕事で、特に興味深いものは何ですか？ Follow-up pool: Choose one example. What made the job appealing? What did the child imagine doing?",
+      "learningTarget": "Develop the opening angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “opening” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which childhood dream job is especially interesting to you?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “What part of that role appealed to the child?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What part of that role appealed to the child?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What part of that role appealed to the child? / その役割のどんなところが子どもに魅力的でしたか？ Follow-up pool: Was it a skill, image, or value? What did the child not know yet?",
+      "learningTarget": "Develop the image angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “image” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What part of that role appealed to the child?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “Where did the idea come from?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Where did the idea come from?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Where did the idea come from? / その考えはどこから来ましたか？ Follow-up pool: Was there a person, story, or experience? Did anyone encourage it?",
+      "learningTarget": "Develop the source angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “source” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Where did the idea come from?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “When did the idea change, fade, or stay the same?” and expand the most interesting detail.",
+      "tutorAction": "Ask “When did the idea change, fade, or stay the same?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "When did the idea change, fade, or stay the same? / その考えはいつ変わりましたか、消えましたか、それとも同じままでしたか？ Follow-up pool: What new information changed the idea? What kept the ambition alive?",
+      "learningTarget": "Develop the change angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “change” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When did the idea change, fade, or stay the same?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “What came next for that ambition?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What came next for that ambition?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What came next for that ambition? / その夢は、その後どうなりましたか？ Follow-up pool: Did a related interest grow from it? What took most of the child's attention next?",
+      "learningTarget": "Develop the replacement angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “replacement” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What came next for that ambition?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “Is the person's life now connected to that old dream in any way?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Is the person's life now connected to that old dream in any way?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Is the person's life now connected to that old dream in any way? / その人の今の生活は、昔の夢と何かつながっていますか？ Follow-up pool: Which old skill or value remains? What is completely different now?",
+      "learningTarget": "Develop the connection angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “connection” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Is the person's life now connected to that old dream in any way?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “What do you understand about that job now?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What do you understand about that job now?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What do you understand about that job now? / 今、その仕事について何を理解していますか？ Follow-up pool: Which part was missing from the childhood picture? Would you still try it for one day?",
+      "learningTarget": "Develop the hindsight angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “hindsight” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What do you understand about that job now?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the standalone question “What would the child think of the adult's actual work?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What would the child think of the adult's actual work?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What would the child think of the adult's actual work? / その子どもは、大人になった本人の実際の仕事をどう思うでしょうか？ Follow-up pool: What would surprise the child? What might the child admire or dislike?",
+      "learningTarget": "Develop the flip angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “flip” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would the child think of the adult's actual work?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next step, then repeat one useful corrected sentence.",
+      "tutorAction": "Give one specific strength and one useful next step; ask for one final repetition before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one actionable improvement from the conversation.",
+      "pedagogicalValue": "Turns the open discussion into a specific, repeatable learning takeaway.",
+      "failureDiagnosis": "Generic praise or a long correction list would fail the one-strength, one-next-step contract.",
+      "nonTargetSupport": "The Japanese closing line mirrors the two-part feedback promise.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No choices or distractors appear; the tutor records individualized feedback.",
+      "componentConsistency": "Uses the approved synchronized Freetalking feedback box and final repetition instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

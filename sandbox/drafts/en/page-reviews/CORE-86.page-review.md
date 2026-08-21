@@ -1,0 +1,452 @@
+# Page review ledger
+
+- Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/86-let-me-get-back-to-you/lesson.html`
+- SHA-256: `ec76e74e5285f1b3a40b93a7fc84718b4e5a3ef87d279f3a615b797ea3992a43`
+- Generated: **pass**
+- Mechanical validation: **pass**
+- Human page audit: **pass**
+- Owner approval: **pending**
+
+A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
+
+## 1. `lesson-goal`
+
+- Learner action: Read the lesson title aloud after hearing the can-do.
+- Tutor action: State the can-do, ask for the title once, then move on.
+- Visible target or prompt: goal orientation for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: goal orientation in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—goal orientation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform goal orientation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for goal orientation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 2. `words-you-know`
+
+- Learner action: Say the three familiar English words aloud.
+- Tutor action: Listen briefly and move on without reteaching familiar words.
+- Visible target or prompt: known-word activation for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: known-word activation in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—known-word activation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform known-word activation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for known-word activation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 3. `part1-intro`
+
+- Learner action: Read the Pattern 1 title aloud.
+- Tutor action: Introduce Pattern 1 in one short line.
+- Visible target or prompt: Exact visible instruction: Use this to defer one answer while clearly promising to return to it. Please read the title aloud. | 一つの返事を保留しつつ、必ず返すと明確に伝えるときに使います。 タイトルを声に出して読んでください。
+- Learning target: Pattern 1 transition in CORE-86: Use this to defer one answer while clearly promising to return to it.
+- Pedagogical value: This page has one job—Pattern 1 transition—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 transition for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 transition is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 4. `p1-teach`
+
+- Learner action: Read the complete Pattern 1 examples after the meaning explanation.
+- Tutor action: Explain the use briefly, then ask for each example aloud.
+- Visible target or prompt: Highlighted target(s): Let me get back to you on | 確認して改めてお返事します | Let me get back to you on | 確認して改めてお返事します | Let me get back to you on | 確認して改めてお返事します
+- Learning target: Pattern 1 meaning and model in CORE-86: Use this to defer one answer while clearly promising to return to it.
+- Pedagogical value: This page has one job—Pattern 1 meaning and model—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 meaning and model is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": ["Let me get back to you on", "確認して改めてお返事します", "Let me get back to you on", "確認して改めてお返事します", "Let me get back to you on", "確認して改めてお返事します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 5. `p1-read`
+
+- Learner action: Read every complete Pattern 1 sentence aloud.
+- Tutor action: Listen and model only when help is needed.
+- Visible target or prompt: Highlighted target(s): Let me get back to you on | 確認して改めてお返事します | Let me get back to you on | 確認して改めてお返事します | Let me get back to you on | 確認して改めてお返事します | Let me get back to you on | 確認して改めてお返事します
+- Learning target: Pattern 1 read-aloud in CORE-86: Use this to defer one answer while clearly promising to return to it.
+- Pedagogical value: This page has one job—Pattern 1 read-aloud—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 read-aloud is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": ["Let me get back to you on", "確認して改めてお返事します", "Let me get back to you on", "確認して改めてお返事します", "Let me get back to you on", "確認して改めてお返事します", "Let me get back to you on", "確認して改めてお返事します"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 6. `p1-rule`
+
+- Learner action: Notice the Pattern 1 form and read the examples.
+- Tutor action: Explain only the displayed form operation.
+- Visible target or prompt: Pattern 1 form explanation for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: Pattern 1 form explanation in CORE-86: Use this to defer one answer while clearly promising to return to it.
+- Pedagogical value: This page has one job—Pattern 1 form explanation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 form explanation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 7. `p1-reorder`
+
+- Learner action: Order each Pattern 1 sentence, then say it aloud.
+- Tutor action: Allow an attempt before giving help.
+- Visible target or prompt: Pattern 1 word-order retrieval for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: Pattern 1 word-order retrieval in CORE-86: Use this to defer one answer while clearly promising to return to it.
+- Pedagogical value: This page has one job—Pattern 1 word-order retrieval—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 word-order retrieval is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 8. `p1-fill`
+
+- Learner action: Say each whole Pattern 1 sentence including the target blanks.
+- Tutor action: Listen first, then type only the target words.
+- Visible target or prompt: Highlighted target(s): 確認して改めてお返事します | 確認して改めてお返事します | 確認して改めてお返事します | 確認して改めてお返事します Blank answer(s): Let me get back to you on | Let me get back to you on | Let me get back to you on | Let me get back to you on
+- Learning target: Pattern 1 controlled target retrieval in CORE-86: Use this to defer one answer while clearly promising to return to it.
+- Pedagogical value: This page has one job—Pattern 1 controlled target retrieval—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 controlled target retrieval is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": ["確認して改めてお返事します", "確認して改めてお返事します", "確認して改めてお返事します", "確認して改めてお返事します"], "blankAnswers": ["Let me get back to you on", "Let me get back to you on", "Let me get back to you on", "Let me get back to you on"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 9. `p1-translate`
+
+- Learner action: Say each complete Pattern 1 sentence in English, using lexical hints when needed.
+- Tutor action: Listen first, then capture the complete answer.
+- Visible target or prompt: Blank answer(s): Let me get back to you on that. | Let me get back to you on the final price. | Let me get back to you on our availability. | Let me get back to you on the estimate. Lexical hint(s): そのこと:that | 最終価格:final price | 空き状況:availability | 見積もり:estimate
+- Learning target: Pattern 1 supported translation in CORE-86: Use this to defer one answer while clearly promising to return to it.
+- Pedagogical value: This page has one job—Pattern 1 supported translation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “Let me get back to you” before the next reduction in support.
+- Non-target support: Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 supported translation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Let me get back to you on that.", "Let me get back to you on the final price.", "Let me get back to you on our availability.", "Let me get back to you on the estimate."], "hintChips": ["そのこと:that", "最終価格:final price", "空き状況:availability", "見積もり:estimate"], "supportStage": "supported", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 10. `p1-write`
+
+- Learner action: Use the exact Pattern 1 frame to perform the named communicative job aloud.
+- Tutor action: React first, then capture and correct only what helps.
+- Visible target or prompt: Exact learner prompt(s): Use “Let me get back to you on” to delay one decision while you check it. Lexical hint(s): 最終価格:final price | 空き状況:availability | 見積もり:estimate
+- Learning target: Pattern 1 communicative production in CORE-86 through the exact current prompt: Use “Let me get back to you on” to delay one decision while you check it.
+- Pedagogical value: This page has one job—Pattern 1 communicative production—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “Let me get back to you” before the next reduction in support.
+- Non-target support: Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 1 communicative production is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["最終価格:final price", "空き状況:availability", "見積もり:estimate"], "supportStage": "not-applicable", "substantivePrompts": ["Use “Let me get back to you on” to delay one decision while you check it."]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 11. `part2-intro`
+
+- Learner action: Read the Pattern 2 title aloud.
+- Tutor action: Introduce Pattern 2 in one short line.
+- Visible target or prompt: Exact visible instruction: Use this to ask for a specific latest time to check and reply. Please read the title aloud. | 確認して返事をする具体的な最終時刻を求めるときに使います。 タイトルを声に出して読んでください。
+- Learning target: Pattern 2 transition in CORE-86: Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—Pattern 2 transition—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 transition for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 transition is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 12. `p2-teach`
+
+- Learner action: Read the complete Pattern 2 examples after the meaning explanation.
+- Tutor action: Explain the use briefly, then ask for each example aloud.
+- Visible target or prompt: Highlighted target(s): Can I | by | 明日までに | 返事してもいいですか | Can I | by | 正午までに | 返事してもいいですか | Can I | by | 金曜日までに | 返事してもいいですか
+- Learning target: Pattern 2 meaning and model in CORE-86: Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—Pattern 2 meaning and model—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 meaning and model is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": ["Can I", "by", "明日までに", "返事してもいいですか", "Can I", "by", "正午までに", "返事してもいいですか", "Can I", "by", "金曜日までに", "返事してもいいですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 13. `p2-read`
+
+- Learner action: Read every complete Pattern 2 sentence aloud.
+- Tutor action: Listen and model only when help is needed.
+- Visible target or prompt: Highlighted target(s): Can I | by | 明日までに | 返事してもいいですか | Can I | by | 正午までに | 返事してもいいですか | Can I | by | 金曜日までに | 返事してもいいですか | Can I | by | 3時までに | 返事してもいいですか
+- Learning target: Pattern 2 read-aloud in CORE-86: Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—Pattern 2 read-aloud—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 read-aloud is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": ["Can I", "by", "明日までに", "返事してもいいですか", "Can I", "by", "正午までに", "返事してもいいですか", "Can I", "by", "金曜日までに", "返事してもいいですか", "Can I", "by", "3時までに", "返事してもいいですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 14. `p2-rule`
+
+- Learner action: Notice the Pattern 2 form and read the examples.
+- Tutor action: Explain only the displayed form operation.
+- Visible target or prompt: Pattern 2 form explanation for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: Pattern 2 form explanation in CORE-86: Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—Pattern 2 form explanation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 form explanation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 15. `p2-reorder`
+
+- Learner action: Order each Pattern 2 sentence, then say it aloud.
+- Tutor action: Allow an attempt before giving help.
+- Visible target or prompt: Pattern 2 word-order retrieval for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: Pattern 2 word-order retrieval in CORE-86: Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—Pattern 2 word-order retrieval—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 word-order retrieval is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 16. `p2-fill`
+
+- Learner action: Say each whole Pattern 2 sentence including the target blanks.
+- Tutor action: Listen first, then type only the target words.
+- Visible target or prompt: Highlighted target(s): 明日までに | 返事してもいいですか | 正午までに | 返事してもいいですか | 金曜日までに | 返事してもいいですか | 3時までに | 返事してもいいですか Blank answer(s): Can I | by | Can I | by | Can I | by | Can I | by
+- Learning target: Pattern 2 controlled target retrieval in CORE-86: Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—Pattern 2 controlled target retrieval—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 controlled target retrieval is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": ["明日までに", "返事してもいいですか", "正午までに", "返事してもいいですか", "金曜日までに", "返事してもいいですか", "3時までに", "返事してもいいですか"], "blankAnswers": ["Can I", "by", "Can I", "by", "Can I", "by", "Can I", "by"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 17. `p2-translate`
+
+- Learner action: Say each complete Pattern 2 sentence in English, using lexical hints when needed.
+- Tutor action: Listen first, then capture the complete answer.
+- Visible target or prompt: Blank answer(s): Can I check and confirm by tomorrow? | Can I check and confirm by noon? | Can I review it and confirm by Friday? | Can I ask the team and confirm by three? Lexical hint(s): 明日:tomorrow | 正午:noon | 金曜日:Friday | 3時:three
+- Learning target: Pattern 2 supported translation in CORE-86: Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—Pattern 2 supported translation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “Let me get back to you” before the next reduction in support.
+- Non-target support: Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 supported translation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Can I check and confirm by tomorrow?", "Can I check and confirm by noon?", "Can I review it and confirm by Friday?", "Can I ask the team and confirm by three?"], "hintChips": ["明日:tomorrow", "正午:noon", "金曜日:Friday", "3時:three"], "supportStage": "supported", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 18. `p2-write`
+
+- Learner action: Use the exact Pattern 2 frame to perform the named communicative job aloud.
+- Tutor action: React first, then capture and correct only what helps.
+- Visible target or prompt: Exact learner prompt(s): Use “Can I … by” to ask whether you may reply by a specific time. Lexical hint(s): 明日:tomorrow | 正午:noon | 金曜日:Friday
+- Learning target: Pattern 2 communicative production in CORE-86 through the exact current prompt: Use “Can I … by” to ask whether you may reply by a specific time.
+- Pedagogical value: This page has one job—Pattern 2 communicative production—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “Let me get back to you” before the next reduction in support.
+- Non-target support: Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for Pattern 2 communicative production is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["明日:tomorrow", "正午:noon", "金曜日:Friday"], "supportStage": "not-applicable", "substantivePrompts": ["Use “Can I … by” to ask whether you may reply by a specific time."]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 19. `supporting-expressions`
+
+- Learner action: Read the short supporting expressions aloud.
+- Tutor action: Clarify meaning only if needed; do not turn the page into another drill.
+- Visible target or prompt: role-play support activation for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: role-play support activation in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—role-play support activation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform role-play support activation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for role-play support activation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 20. `spiral-review`
+
+- Learner action: Retrieve earlier language in the displayed review activity.
+- Tutor action: Let the learner attempt the earlier target before helping.
+- Visible target or prompt: spaced retrieval for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: spaced retrieval in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—spaced retrieval—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform spaced retrieval for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: The four choices test real meaning contrasts and the correct branch varies across rows.
+- Component consistency: The established Core component for spaced retrieval is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 21. `part3-intro`
+
+- Learner action: Read the role-play title and prepare to use both patterns.
+- Tutor action: Set the two roles and begin without modeling the full scene.
+- Visible target or prompt: role-play orientation for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: role-play orientation in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—role-play orientation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform role-play orientation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for role-play orientation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 22. `p3-model`
+
+- Learner action: Read every learner-owned line in the complete role-play.
+- Tutor action: Take the named counterpart role and read only those lines.
+- Visible target or prompt: Highlighted target(s): Let me get back to you on | 確認して改めてお返事します | Can I | by | 明日までに | 返事してもいいですか
+- Learning target: complete role-play in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—complete role-play—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform complete role-play for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for complete role-play is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": ["Let me get back to you on", "確認して改めてお返事します", "Can I", "by", "明日までに", "返事してもいいですか"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 23. `p3-complete`
+
+- Learner action: Say the learner role and supply each missing taught expression.
+- Tutor action: Take the named counterpart role and type only the learner's missing target words.
+- Visible target or prompt: Blank answer(s): Let me get back to you on | Can I | by
+- Learning target: role-play target retrieval in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—role-play target retrieval—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform role-play target retrieval for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for role-play target retrieval is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Let me get back to you on", "Can I", "by"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 24. `p3-freetalk`
+
+- Learner action: Answer the tutor's personal question, then ask the displayed question back.
+- Tutor action: Answer the learner's reciprocal question truthfully and follow the most interesting detail.
+- Visible target or prompt: Exact learner prompt(s): How much time do you usually need for an important decision? | What about you—how much time do you need?
+- Learning target: reciprocal personal conversation in CORE-86 through the exact current prompt: How much time do you usually need for an important decision? | What about you—how much time do you need?
+- Pedagogical value: This page has one job—reciprocal personal conversation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform reciprocal personal conversation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for reciprocal personal conversation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much time do you usually need for an important decision?", "What about you—how much time do you need?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 25. `in-the-wild`
+
+- Learner action: Use both patterns in the new six-turn transfer role-play.
+- Tutor action: Take the named new counterpart role and keep the exchange moving naturally.
+- Visible target or prompt: Blank answer(s): Let me get back to you on | Can I | by
+- Learning target: transfer role-play in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—transfer role-play—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform transfer role-play for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for transfer role-play is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Let me get back to you on", "Can I", "by"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 26. `native-tip`
+
+- Learner action: Read the practical usage distinction and its examples.
+- Tutor action: Explain the nuance briefly and relate it to the completed role-play.
+- Visible target or prompt: pragmatic consolidation for “Let me get back to you,” using “Let me get back to you on” and “Can I … by” as the two taught frames.
+- Learning target: pragmatic consolidation in CORE-86: Use this to defer one answer while clearly promising to return to it. Then Use this to ask for a specific latest time to check and reply.
+- Pedagogical value: This page has one job—pragmatic consolidation—and moves the learner from noticing toward usable speech with “Let me get back to you on” and “Can I … by.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform pragmatic consolidation for “Let me get back to you” before the next reduction in support.
+- Non-target support: No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.
+- Article treatment: Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.
+- Choice/distractor quality: No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The established Core component for pragmatic consolidation is used, with input fields only where spoken language is captured.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.

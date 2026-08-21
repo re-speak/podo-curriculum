@@ -1,0 +1,779 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/107-as-for-the-budget/lesson.html",
+  "lessonSha256": "086cc406f346ff4d9b9a30cc68c9d87947f563e116c5b712e73c38d2dffe92c1",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud after hearing the can-do.",
+      "tutorAction": "State the can-do, ask for the title once, then move on.",
+      "targetOrPrompt": "goal orientation for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "goal orientation in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for goal orientation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words aloud.",
+      "tutorAction": "Listen briefly; do not turn familiar words into a pronunciation drill.",
+      "targetOrPrompt": "known-word activation for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "known-word activation in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for known-word activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud.",
+      "tutorAction": "Introduce Pattern 1 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to introduce a new noun topic. Please read the title aloud. | 新しい名詞の話題を導入します。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-107: Use this to introduce a new noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): As for the budget | 予算については | As for the delivery | 配達については | As for the venue | 会場については",
+      "learningTarget": "Pattern 1 meaning and model in CORE-107: Use this to introduce a new noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "As for the budget",
+          "予算については",
+          "As for the delivery",
+          "配達については",
+          "As for the venue",
+          "会場については"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): As for the budget | 予算については | As for the delivery | 配達については | As for the venue | 会場については | As for the schedule | 日程については",
+      "learningTarget": "Pattern 1 read-aloud in CORE-107: Use this to introduce a new noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "As for the budget",
+          "予算については",
+          "As for the delivery",
+          "配達については",
+          "As for the venue",
+          "会場については",
+          "As for the schedule",
+          "日程については"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 1 form explanation for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "Pattern 1 form explanation in CORE-107: Use this to introduce a new noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 1 word-order retrieval for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-107: Use this to introduce a new noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): 予算については | 配達については | 会場については | 日程については Blank answer(s): As for the budget | As for the delivery | As for the venue | As for the schedule",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-107: Use this to introduce a new noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "予算については",
+          "配達については",
+          "会場については",
+          "日程については"
+        ],
+        "blankAnswers": [
+          "As for the budget",
+          "As for the delivery",
+          "As for the venue",
+          "As for the schedule"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): As for the budget, we're still waiting. | As for the delivery, we're still waiting. | As for the venue, it's already booked. | As for the schedule, it may change. Lexical hint(s): 予算:budget | 待つ:wait | 配達:delivery | 待つ:wait | 会場:venue | 予約済み:booked | 予定:schedule | 変更:change",
+      "learningTarget": "Pattern 1 supported translation in CORE-107: Use this to introduce a new noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "As for the budget, we're still waiting.",
+          "As for the delivery, we're still waiting.",
+          "As for the venue, it's already booked.",
+          "As for the schedule, it may change."
+        ],
+        "hintChips": [
+          "予算:budget",
+          "待つ:wait",
+          "配達:delivery",
+          "待つ:wait",
+          "会場:venue",
+          "予約済み:booked",
+          "予定:schedule",
+          "変更:change"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “As for ___, ___” to introduce one topic and give an update. Lexical hint(s): 予算:budget | 配達:delivery | 会場:venue | 予定:schedule",
+      "learningTarget": "Pattern 1 communicative production in CORE-107 through the exact current prompt: Use “As for ___, ___” to introduce one topic and give an update.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 communicative production—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "予算:budget",
+          "配達:delivery",
+          "会場:venue",
+          "予定:schedule"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “As for ___, ___” to introduce one topic and give an update."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud.",
+      "tutorAction": "Introduce Pattern 2 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to return explicitly to an earlier noun topic. Please read the title aloud. | 前に出た名詞の話題へ明示的に戻ります。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-107: Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): Coming back to the timeline | 予定表の話に戻ると | Coming back to the price | 価格の話に戻ると | Coming back to the meeting | 会議の話に戻ると",
+      "learningTarget": "Pattern 2 meaning and model in CORE-107: Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Coming back to the timeline",
+          "予定表の話に戻ると",
+          "Coming back to the price",
+          "価格の話に戻ると",
+          "Coming back to the meeting",
+          "会議の話に戻ると"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): Coming back to the timeline | 予定表の話に戻ると | Coming back to the price | 価格の話に戻ると | Coming back to the meeting | 会議の話に戻ると | Coming back to the second option | 二つ目の案の話に戻ると",
+      "learningTarget": "Pattern 2 read-aloud in CORE-107: Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Coming back to the timeline",
+          "予定表の話に戻ると",
+          "Coming back to the price",
+          "価格の話に戻ると",
+          "Coming back to the meeting",
+          "会議の話に戻ると",
+          "Coming back to the second option",
+          "二つ目の案の話に戻ると"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 2 form explanation for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "Pattern 2 form explanation in CORE-107: Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 2 word-order retrieval for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-107: Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): 予定表の話に戻ると | 価格の話に戻ると | 会議の話に戻ると | 二つ目の案の話に戻ると Blank answer(s): Coming back to the timeline | Coming back to the price | Coming back to the meeting | Coming back to the second option",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-107: Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "予定表の話に戻ると",
+          "価格の話に戻ると",
+          "会議の話に戻ると",
+          "二つ目の案の話に戻ると"
+        ],
+        "blankAnswers": [
+          "Coming back to the timeline",
+          "Coming back to the price",
+          "Coming back to the meeting",
+          "Coming back to the second option"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): Coming back to the timeline, we need a firm date. | Coming back to the price, we need a firm answer. | Coming back to the meeting, we need a firm decision. | Coming back to the second option, we need a firm date. Lexical hint(s): 予定表:timeline | 確定日:firm date | 価格:price | 返事:answer | 会議:meeting | 判断:decision | 二つ目の案:second option | 確定日:firm date",
+      "learningTarget": "Pattern 2 supported translation in CORE-107: Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Coming back to the timeline, we need a firm date.",
+          "Coming back to the price, we need a firm answer.",
+          "Coming back to the meeting, we need a firm decision.",
+          "Coming back to the second option, we need a firm date."
+        ],
+        "hintChips": [
+          "予定表:timeline",
+          "確定日:firm date",
+          "価格:price",
+          "返事:answer",
+          "会議:meeting",
+          "判断:decision",
+          "二つ目の案:second option",
+          "確定日:firm date"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “Coming back to ___, ___” to return to one earlier topic and update it. Lexical hint(s): 予定表:timeline | 価格:price | 会議:meeting | 二つ目の案:second option",
+      "learningTarget": "Pattern 2 communicative production in CORE-107 through the exact current prompt: Use “Coming back to ___, ___” to return to one earlier topic and update it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 communicative production—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "予定表:timeline",
+          "価格:price",
+          "会議:meeting",
+          "二つ目の案:second option"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “Coming back to ___, ___” to return to one earlier topic and update it."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the optional support expressions aloud.",
+      "tutorAction": "Clarify meaning only if needed; keep them optional.",
+      "targetOrPrompt": "conversation support activation for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "conversation support activation in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—conversation support activation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform conversation support activation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for conversation support activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-prep-01",
+      "learnerAction": "Choose the form that preserves the earlier rule, then read the result aloud.",
+      "tutorAction": "Let the learner retrieve the earlier contrast before confirming it.",
+      "targetOrPrompt": "Highlighted target(s): について | に戻って",
+      "learningTarget": "spaced retrieval in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "について",
+          "に戻って"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-rel-01",
+      "learnerAction": "Choose the form that preserves the earlier rule, then read the result aloud.",
+      "tutorAction": "Let the learner retrieve the earlier contrast before confirming it.",
+      "targetOrPrompt": "Highlighted target(s): レポート | 人",
+      "learningTarget": "spaced retrieval in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "レポート",
+          "人"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and prepare to use both patterns.",
+      "tutorAction": "Set up the conversation, then move directly to the role-specific page.",
+      "targetOrPrompt": "role-play transition for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "role-play transition in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—role-play transition—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play transition for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every learner-owned line in the complete role-play.",
+      "tutorAction": "Take the named counterpart role and read only that role's lines.",
+      "targetOrPrompt": "Highlighted target(s): As for the budget | 予算については | Coming back to the timeline | 予定表の話に戻ると",
+      "learningTarget": "complete role-play in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—complete role-play—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform complete role-play for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for complete role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "As for the budget",
+          "予算については",
+          "Coming back to the timeline",
+          "予定表の話に戻ると"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say every learner-owned line and supply the missing taught expressions.",
+      "tutorAction": "Take the named counterpart role and type only the missing target words.",
+      "targetOrPrompt": "Blank answer(s): As for the budget | Coming back to the timeline",
+      "learningTarget": "role-play target retrieval in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—role-play target retrieval—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play target retrieval for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "As for the budget",
+          "Coming back to the timeline"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's personal question, then ask the displayed reciprocal question.",
+      "tutorAction": "Give a real answer and follow the learner's most interesting detail.",
+      "targetOrPrompt": "Exact learner prompt(s): Is it easy for you to follow a conversation that changes topics often? | What about you—is it easy to follow changing topics?",
+      "learningTarget": "reciprocal personal conversation in CORE-107 through the exact current prompt: Is it easy for you to follow a conversation that changes topics often? | What about you—is it easy to follow changing topics?",
+      "pedagogicalValue": "This page has one distinct job—reciprocal personal conversation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal personal conversation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for reciprocal personal conversation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Is it easy for you to follow a conversation that changes topics often?",
+          "What about you—is it easy to follow changing topics?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both targets in the new six-turn situation.",
+      "tutorAction": "Take the named new counterpart role and keep the exchange natural.",
+      "targetOrPrompt": "Blank answer(s): As for the delivery | Coming back to the second option",
+      "learningTarget": "transfer role-play in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for transfer role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "As for the delivery",
+          "Coming back to the second option"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the practical tone or register distinction and its examples.",
+      "tutorAction": "Explain the immediately usable nuance briefly.",
+      "targetOrPrompt": "pragmatic consolidation for “As for the budget,,” with “As for ___, ___” and “Coming back to ___, ___” as the two taught frames.",
+      "learningTarget": "pragmatic consolidation in CORE-107: Use this to introduce a new noun topic. Then Use this to return explicitly to an earlier noun topic.",
+      "pedagogicalValue": "This page has one distinct job—pragmatic consolidation—and advances from noticing toward usable speech with “As for ___, ___” and “Coming back to ___, ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform pragmatic consolidation for “As for the budget,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for pragmatic consolidation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-accessible/lessons/63-choosing-not-to-marry-or-have-children/lesson.html",
+  "lessonSha256": "9bbd6bd228399888bb53c318712098770e4141df1c9b7d7a89f7655852824dc2",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “Choosing not to marry or have children” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “Choosing not to marry or have children” once, and move on.",
+      "targetOrPrompt": "Let's talk about different choices around marriage and children. Please read the title aloud. / 結婚や子どもについてのさまざまな選択を話しましょう。",
+      "learningTarget": "Orient the learner to a live conversation about “Choosing not to marry or have children” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “Choosing not to marry or have children” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no topic knowledge or private experience is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors the can-do and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "More than one life path (一つではない生き方): Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use the 10-claim pre-study article to seed concrete language and viewpoints for “Choosing not to marry or have children.”",
+      "pedagogicalValue": "The article develops ten distinct claims from “Marriage and having children are separate decisions.” to “Respect begins by asking without assuming that one answer is correct.”, giving the prompt pool several defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.",
+      "nonTargetSupport": "All ten claims have aligned variant-specific Japanese support; selective owned glosses are: social pressure=社会的な圧力.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Choosing not to marry or have children” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Choosing not to marry or have children” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Why might someone choose not to marry or have children?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which reasons are often overlooked?” rather than asking every follow-up.",
+      "targetOrPrompt": "Why might someone choose not to marry or have children? / なぜ、結婚しない、または子どもを持たないと選ぶ人がいるのでしょうか？",
+      "learningTarget": "Explore the distinct “Someone's decision (誰かの選択)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which reasons are often overlooked?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which reasons are often overlooked?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why might someone choose not to marry or have children?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Are marriage and children separate decisions?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why might someone choose not to marry or have children?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “Should anyone have to explain a choice not to marry or have children?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which questions feel too personal?” rather than asking every follow-up.",
+      "targetOrPrompt": "Should anyone have to explain a choice not to marry or have children? / 結婚しない、または子どもを持たない選択を、誰かに説明する必要があるでしょうか？",
+      "learningTarget": "Explore the distinct “Their reason (その理由)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which questions feel too personal?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which questions feel too personal?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Should anyone have to explain a choice not to marry or have children?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When can curiosity be respectful?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Should anyone have to explain a choice not to marry or have children?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “What do people often say to someone who makes that choice?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which comment sounds caring but feels like pressure?” rather than asking every follow-up.",
+      "targetOrPrompt": "What do people often say to someone who makes that choice? / その選択をした人に、周りはよく何と言いますか？",
+      "learningTarget": "Explore the distinct “What people say (周りの反応)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which comment sounds caring but feels like pressure?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which comment sounds caring but feels like pressure?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do people often say to someone who makes that choice?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would a neutral response sound like?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What do people often say to someone who makes that choice?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “Why do views on marriage and children change over time?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which life change can matter?” rather than asking every follow-up.",
+      "targetOrPrompt": "Why do views on marriage and children change over time? / 結婚や子どもについての考えが、時間とともに変わるのはなぜでしょうか？",
+      "learningTarget": "Explore the distinct “Your view (自分の考えの変化)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which life change can matter?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which life change can matter?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why do views on marriage and children change over time?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Can uncertainty be a valid position?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why do views on marriage and children change over time?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “How do family expectations affect decisions about marriage or children?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How is pressure communicated?” rather than asking every follow-up.",
+      "targetOrPrompt": "How do family expectations affect decisions about marriage or children? / 家族の期待は、結婚や子どもについての決定にどう影響しますか？",
+      "learningTarget": "Explore the distinct “Family expectations (家族の期待)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “How is pressure communicated?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How is pressure communicated?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do family expectations affect decisions about marriage or children?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which boundary keeps the discussion respectful?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How do family expectations affect decisions about marriage or children?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “Without social pressure, what should matter most in either decision?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which value should guide the choice?” rather than asking every follow-up.",
+      "targetOrPrompt": "Without social pressure, what should matter most in either decision? / 社会的なプレッシャーがなければ、どちらの決定で最も重要なのは何ですか？",
+      "learningTarget": "Explore the distinct “With no pressure (圧力がないなら)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which value should guide the choice?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which value should guide the choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Without social pressure, what should matter most in either decision?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which practical condition still matters?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Without social pressure, what should matter most in either decision?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “Why is choosing marriage different from choosing to have children?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which responsibilities differ?” rather than asking every follow-up.",
+      "targetOrPrompt": "Why is choosing marriage different from choosing to have children? / なぜ、結婚を選ぶことと子どもを持つことは異なる決定なのでしょうか？",
+      "learningTarget": "Explore the distinct “Two different decisions (二つの別の決定)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which responsibilities differ?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which responsibilities differ?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why is choosing marriage different from choosing to have children?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Why are the choices often treated as one?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why is choosing marriage different from choosing to have children?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “How can people respond respectfully to decisions about marriage or children?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What should nobody demand?” rather than asking every follow-up.",
+      "targetOrPrompt": "How can people respond respectfully to decisions about marriage or children? / 結婚や子どもについての決定に、どうすれば敬意を持って応じられますか？",
+      "learningTarget": "Explore the distinct “Responding with respect (敬意のある応じ方)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What should nobody demand?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What should nobody demand?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can people respond respectfully to decisions about marriage or children?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which comment keeps the conversation open?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How can people respond respectfully to decisions about marriage or children?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Review the tutor’s most useful correction and finish with one improved sentence.",
+      "tutorAction": "Give brief actionable feedback tied to language the learner actually used, not a generic lecture.",
+      "targetOrPrompt": "Let’s look at one useful correction from today’s conversation. / 今日の会話から、役に立つ訂正を一つ確認しましょう。",
+      "learningTarget": "Consolidate one transferable improvement from the live conversation about “Choosing not to marry or have children.”",
+      "pedagogicalValue": "Turns the learner’s own production into a specific next step while preserving the fluency-first conversation.",
+      "failureDiagnosis": "The selected correction identifies one useful language gap from actual production; an empty generic note would not satisfy the page job.",
+      "nonTargetSupport": "Japanese support frames the short review; the tutor chooses language appropriate to the learner’s level.",
+      "articleTreatment": "Not applicable; feedback must come from the live conversation rather than testing article recall.",
+      "choiceQuality": "No distractors appear; the tutor records only a useful correction or note from observed speech.",
+      "componentConsistency": "Uses the approved actionable feedback page and Student's sentence terminology.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

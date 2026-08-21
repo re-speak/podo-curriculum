@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/39-what-you-really-do-when-youre-stressed/lesson.html",
+  "lessonSha256": "69d11c4e630f90284d9cfcde89b98f4943fd9ffb4d0dfcfcae9f698273a6b5fd",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “What you really do when you're stressed” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “What you really do when you're stressed” once, and move on.",
+      "targetOrPrompt": "Let's compare what you really do with what you wish you did. Please read the title aloud. ストレスがあるとき実際にすることと、理想の対処を比べましょう。 タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a live conversation about “What you really do when you're stressed” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “What you really do when you're stressed” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line directly mirrors the topic orientation and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Generator-source semantic inspection is complete; root visual inspection at 360px and 480px remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Our real stress habits (本当のストレス習慣): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the ten-claim pre-study article to seed concrete language and viewpoints for “What you really do when you're stressed.”",
+      "pedagogicalValue": "The article moves from “Advice about stress is usually much easier to offer than to apply under pressure.” to “Improvement may mean recognizing the pattern sooner rather than eliminating it forever.,” giving the later prompt pool multiple defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with the selective full glosses (coping response (ストレスへの対処), procrastinate (先延ばしにする)) identifies a local vocabulary support need.",
+      "nonTargetSupport": "All ten claims have aligned Japanese support; this full article owns coping response (ストレスへの対処), procrastinate (先延ばしにする).",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "All ten claims, paired-variant equivalence, Japanese row order, and selective gloss ownership were reviewed in generator data; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Canonical component reuse and wording were mechanically verified; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “What you really do when you're stressed” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “What you really do when you're stressed” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line directly states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The source uses the approved flexible reciprocal-pool contract; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “What do you really do when you're stressed—not what you should do?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What appears first in your behaviour?” rather than asking every follow-up.",
+      "targetOrPrompt": "What do you really do when you're stressed—not what you should do? ストレスがあるとき、するべきことではなく、実際には何をしますか？",
+      "learningTarget": "Explore the distinct “The honest answer (正直な答え)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What appears first in your behaviour?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What appears first in your behaviour?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do you really do when you're stressed—not what you should do?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What helps you stay steady?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What do you really do when you're stressed—not what you should do?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “When does that reaction show up most often?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What level of stress brings it out?” rather than asking every follow-up.",
+      "targetOrPrompt": "When does that reaction show up most often? その反応は、どのようなときにいちばん現れやすいですか？",
+      "learningTarget": "Explore the distinct “When it appears (現れやすい時)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What level of stress brings it out?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What level of stress brings it out?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “When does that reaction show up most often?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “When does the pattern stay quiet?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When does that reaction show up most often?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “What does the habit help with, and what does it make worse?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How long does the relief last?” rather than asking every follow-up.",
+      "targetOrPrompt": "What does the habit help with, and what does it make worse? その習慣は何の助けになり、何を悪化させますか？",
+      "learningTarget": "Explore the distinct “Help and cost (助けと代償)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “How long does the relief last?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How long does the relief last?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What does the habit help with, and what does it make worse?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What cost appears later?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What does the habit help with, and what does it make worse?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “How accurately do people describe their own coping responses under stress?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which response sounds better than it really is?” rather than asking every follow-up.",
+      "targetOrPrompt": "How accurately do people describe their own coping responses under stress? 人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？",
+      "learningTarget": "Explore the distinct “What people say (人が話すこと)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which response sounds better than it really is?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which response sounds better than it really is?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How accurately do people describe their own coping responses under stress?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Why might someone keep the real habit private?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How accurately do people describe their own coping responses under stress?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “Compare how you handle stress now with five years ago.” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which part has improved?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “How has the way you handle stress changed over the past five years?”",
+      "learningTarget": "Explore the distinct “Then and now (以前と今)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which part has improved?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which part has improved?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Compare how you handle stress now with five years ago.” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which part has stayed stubborn?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How has the way you handle stress changed over the past five years?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “In which situation is your stress habit most counterproductive?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which responsibility becomes harder?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “In which situation is your usual coping response most counterproductive?”",
+      "learningTarget": "Explore the distinct “What makes it worse (悪化する条件)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which responsibility becomes harder?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which responsibility becomes harder?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “In which situation is your stress habit most counterproductive?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Who else can be affected?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "In which situation is your usual coping response most counterproductive?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “What would you realistically like to do instead?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What is the smallest possible version?” rather than asking every follow-up.",
+      "targetOrPrompt": "What would you realistically like to do instead? 代わりに、現実的には何をしたいですか？",
+      "learningTarget": "Explore the distinct “A realistic alternative (現実的な代わり)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What is the smallest possible version?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What is the smallest possible version?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you realistically like to do instead?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would make it easier to choose?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you realistically like to do instead?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What signal could help you recognize stress sooner?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What could you do at that first sign?” rather than asking every follow-up.",
+      "targetOrPrompt": "What signal could help you recognize stress sooner? どのようなサインがあれば、もっと早くストレスに気づけますか？",
+      "learningTarget": "Explore the distinct “Notice it sooner (早く気づく)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What could you do at that first sign?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What could you do at that first sign?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What signal could help you recognize stress sooner?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which sign is easiest to ignore?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What signal could help you recognize stress sooner?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Leave the conversation with one recognized success and one specific improvement the learner can reuse.",
+      "pedagogicalValue": "Turns discussion evidence into concise, actionable feedback and closes with productive uptake.",
+      "failureDiagnosis": "An overly general note would fail to identify a reusable strength or next step from the learner's actual speech.",
+      "nonTargetSupport": "The bilingual framing explains the two-part feedback outcome without adding another discussion task.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No distractors appear; the single feedback area is explicitly divided into one good point and one next step.",
+      "componentConsistency": "Uses the approved synchronized tutor-feedback area and one-repeat closing instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Feedback wording and actionability were reviewed in source; root visual inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

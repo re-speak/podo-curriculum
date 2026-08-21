@@ -27,7 +27,7 @@ pages.
 
 | # | `data-page-id` | What it is for |
 | ---: | --- | --- |
-| 1 | `lesson-goal` | Show, whole, the conversation the learner will be able to have by the end |
+| 1 | `lesson-goal` | State the one can-do and have the learner read the lesson title aloud once |
 | 2 | `words-you-know` | Start from what they already have — see the note below, it is different here |
 | 3–11 | `part1-*` | Pattern A — the ladder below |
 | 12–20 | `part2-*` | Pattern B — the same ladder |
@@ -37,6 +37,14 @@ pages.
 
 The first surviving page (`lesson-goal`) carries `data-act` directly. There is no `cover` page on a
 track lesson; sales pages belong to trial decks only.
+
+### `lesson-goal` orients; it does not preview
+
+The title names the language or practical move. The blue script states the can-do in natural
+language and asks the learner to read that title aloud once. A short tutor note repeats only the
+operation: have the learner read the title, then move on. Do not add example sentences, a model
+exchange, outcome cards or a three-beat preview below it. Those belong on the teaching and practice
+pages, where the learner can do something with them.
 
 ### `words-you-know` is doing a second job in English
 
@@ -73,7 +81,7 @@ learner's mouth, and the later pages take the model sentence off the screen.
 | `data-page-id` | Component | What it does | Model on screen |
 | --- | --- | --- | :---: |
 | `partN-intro` | `.transition-page` | Pattern name + one Japanese line bridging from the scene. **No grammar here** | — |
-| `pN-teach` | `.section-subtitle.pattern-meaning` + `.sent-hero` + `.sent-more` | **Meaning and use first**, then the sentence whole. The tutor reads it | yes |
+| `pN-teach` | `.section-subtitle.pattern-meaning` + `.sent-hero` + `.sent-more` | **Meaning and use first**; tutor explains briefly, then learner reads each example aloud | yes |
 | `pN-read` | `.model-line` ×4 | The learner reads alone. Model still on screen | yes |
 | `pN-rule` | `.batchim` / `.bt-*` diagram | **One** form rule. This is the only grammar-explanation page in the part | — |
 | `pN-choose` | `.choose-row` + `.opt` | Two-way choice — the last rung of recognizing | yes |
@@ -90,9 +98,10 @@ at that point — `pN-question-teach` / `pN-question-read`. The ladder itself do
 Put a `.pattern-meaning` box at the top of the blue script area with a
 `意味・使い方` kicker. Its English tutor line is **one short conversational sentence** combining
 what the frame does with when a speaker reaches for it; the Japanese line is its direct one-sentence
-counterpart. Do not add “Listen,” “Repeat,” or another activity direction here—the model directly
-below already makes the next action visible. Never put Japanese or a lesson number in the English
-line, and never refer to another lesson number in learner- or tutor-facing copy.
+counterpart. This box teaches meaning; it does not also carry the activity procedure. Put the
+operation in a short tutor-only note such as “Briefly explain the meaning, then have the learner
+read each example aloud.” Never put Japanese or a lesson number in the English line, and never
+refer to another lesson number in learner- or tutor-facing copy.
 
 Formation does not go here — that is `pN-rule`'s job. Korean learned this the expensive way: without
 this box, "when do I use it" has nowhere to live, drifts into the rule page, and the rule page can
@@ -140,6 +149,10 @@ below were paid for again by this track's own pilot, because they were not writt
   meaning the page must supply. Do not narrate visible setup, preview later activities, or pad a
   goal with `Today we'll...` / `By the end of the lesson...`. Rewrite the Japanese to preserve the
   shorter English line's meaning, sentence count and tone.
+- **Learner reading is the default.** Unless a page is explicitly designed as listening
+  comprehension, the tutor does not model all target sentences first. Ask the learner to read the
+  visible English aloud. A true listening page explicitly says that the tutor reads and the learner
+  listens, chooses or responds.
 - **Tutor-only notes are English and appear only when the tutor must catch or do something the
   page cannot make obvious.** Put them on the production page where that action happens, not on a
   teaching page that produces nothing yet. Do not repeat an answer already revealed by teaching
@@ -158,6 +171,12 @@ below were paid for again by this track's own pilot, because they were not writt
 
 - **Four questions in every closed activity** — read, choose, reorder, fill, translate. Difficulty
   must not taper by silently dropping questions. Free-writing stays one open prompt.
+- **Reuse the approved activity scripts.** A choose page tells the learner to choose and then read
+  the complete sentence aloud. Reorder says “Put the words in order, then say the whole sentence
+  out loud.” Fill says “Say each whole sentence aloud, including the missing words,” while the
+  tutor note says to type only the missing words. Translation says “Read the Japanese, then say it
+  in English,” while the tutor types the complete English sentence. Do not invent track-specific
+  paraphrases for the same operation.
 - **Four meaning chunks per reorder sentence**, ceiling and working default. Three is fine when the
   sentence honestly holds three. Never reach four by splitting a compound noun, an article off its
   noun, an auxiliary off its verb, or an inflection off its stem — and never stop at three when a
@@ -170,6 +189,12 @@ below were paid for again by this track's own pilot, because they were not writt
   question that has no landing place.
 - **Blank only the pattern.** Every other word the learner needs is given. Hint chips are
   `JP:EN` vocabulary only — never articles, auxiliaries or inflections.
+- The target highlighted on `pN-read` and the answer removed on `pN-fill` are the same exact unit
+  on every row. Do not make the rows feel more varied by blanking different verbs, nouns or scene
+  facts. If four target-only rows add no useful retrieval, redesign or omit the page.
+- Whole-sentence production declares its support stage. `supported` gives every row the lexical
+  hint it needs; `checkpoint` intentionally removes all hints. Neither stage hints articles,
+  auxiliaries or inflections.
 - Declare each content word as new, recycled, assumed-known or receptive-only in deck metadata.
   Core normally adds no more than eight; every hint-chip English value must be declared.
 - **Omit `pN-choose` when there is no honest binary.** Do not manufacture a wrong form for an
@@ -243,12 +268,13 @@ matching `.ending` around its direct Japanese meaning. In `p3-complete`, put `.t
 specific Japanese word or phrase the learner is retrieving; do not highlight the whole translation
 when only one or two forms carry the learning target.
 
-`p3-freetalk` follows the Korean Core handoff from controlled practice to real information. It must
-include: a real-fact tutor question, a usable target-language sentence scaffold with a Japanese
-`.task`, a compact set of relevant hint chips, an ask-back line, and a field for the tutor's real
-answer. If an answer-dependent follow-up is needed to make it a conversation, give the tutor one
-short operational note to ask about a detail the learner actually mentioned. Never substitute a
-generic label such as “Use both patterns” for the scaffold the learner needs to speak.
+`p3-freetalk` follows the controlled work with a real, interesting reciprocal exchange connected
+to the lesson's topic. The tutor asks one answerable question, the learner answers and asks a
+natural related question back, and the tutor gives a real answer. Reusing today's frame is welcome
+when it fits naturally, but the conversation must not be trapped by it: controlled practice and
+roleplay already establish required pattern production. If the page does require the frame, print
+the actual scaffold rather than a generic label such as “Use both patterns.” A single learner
+response plus a correction box is reflection, not Free Talk.
 
 `in-the-wild` puts the same patterns in a **different** place to check transfer — the scene assigned
 to this lesson in [`../_conventions.md`](../_conventions.md), never one you pick yourself and never

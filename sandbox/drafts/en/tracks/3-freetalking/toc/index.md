@@ -102,12 +102,12 @@
 - [`FT-98`](FT-98.md) · Growing up in another country
 - [`FT-99`](FT-99.md) · Where you imagine yourself in ten years
 - [`FT-100`](FT-100.md) · The one thing you would save in a fire
-- [`FT-101`](FT-101.md) · How long you could live without social media
-- [`FT-102`](FT-102.md) · Something AI would get wrong about your work
+- [`FT-101`](FT-101.md) · How long should a social-media break last?
+- [`FT-102`](FT-102.md) · What AI gets wrong about human work
 - [`FT-103`](FT-103.md) · How much money is enough?
-- [`FT-104`](FT-104.md) · The age you would choose to be forever
-- [`FT-105`](FT-105.md) · One thing you would do differently
-- [`FT-106`](FT-106.md) · How speaking English has changed you
+- [`FT-104`](FT-104.md) · Is there a best age to be?
+- [`FT-105`](FT-105.md) · A decision worth revisiting
+- [`FT-106`](FT-106.md) · What speaking English has made you notice
 - [`FT-107`](FT-107.md) · More money or more time?
 - [`FT-108`](FT-108.md) · A hundred friends or three close ones?
 - [`FT-109`](FT-109.md) · Endless summer or endless winter?

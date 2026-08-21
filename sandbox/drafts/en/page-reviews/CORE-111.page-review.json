@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/111-just-so-you-know/lesson.html",
+  "lessonSha256": "1001d1c146928ee564c7ea228163b2a0fe04ffe3c0b5c7ed7cf53736c8feee85",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud after hearing the can-do.",
+      "tutorAction": "State the can-do, ask for the title once, then move on.",
+      "targetOrPrompt": "goal orientation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "goal orientation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for goal orientation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words aloud.",
+      "tutorAction": "Listen briefly; do not turn familiar words into a pronunciation drill.",
+      "targetOrPrompt": "known-word activation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "known-word activation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for known-word activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud.",
+      "tutorAction": "Introduce Pattern 1 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this for a neutral update the listener may find useful. Please read the title aloud. | 相手に役立つかもしれない中立的な更新に使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-111: Use this for a neutral update the listener may find useful.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると",
+      "learningTarget": "Pattern 1 meaning and model in CORE-111: Use this for a neutral update the listener may find useful.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Just so you know",
+          "念のためお知らせすると",
+          "Just so you know",
+          "念のためお知らせすると",
+          "Just so you know",
+          "念のためお知らせすると"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると",
+      "learningTarget": "Pattern 1 read-aloud in CORE-111: Use this for a neutral update the listener may find useful.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Just so you know",
+          "念のためお知らせすると",
+          "Just so you know",
+          "念のためお知らせすると",
+          "Just so you know",
+          "念のためお知らせすると",
+          "Just so you know",
+          "念のためお知らせすると"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 1 form explanation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "Pattern 1 form explanation in CORE-111: Use this for a neutral update the listener may find useful.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 1 word-order retrieval for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-111: Use this for a neutral update the listener may find useful.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): 念のためお知らせすると | 念のためお知らせすると | 念のためお知らせすると | 念のためお知らせすると Blank answer(s): Just so you know | Just so you know | Just so you know | Just so you know",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-111: Use this for a neutral update the listener may find useful.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "念のためお知らせすると",
+          "念のためお知らせすると",
+          "念のためお知らせすると",
+          "念のためお知らせすると"
+        ],
+        "blankAnswers": [
+          "Just so you know",
+          "Just so you know",
+          "Just so you know",
+          "Just so you know"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): Just so you know, the room's booked. | Just so you know, the meeting has moved. | Just so you know, the tickets are ready. | Just so you know, the client called. Lexical hint(s): 部屋:room | 予約する:book | 会議:meeting | 変更になった:moved | チケット:ticket | 準備できた:ready | 顧客:client | 電話する:call",
+      "learningTarget": "Pattern 1 supported translation in CORE-111: Use this for a neutral update the listener may find useful.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Just so you know, the room's booked.",
+          "Just so you know, the meeting has moved.",
+          "Just so you know, the tickets are ready.",
+          "Just so you know, the client called."
+        ],
+        "hintChips": [
+          "部屋:room",
+          "予約する:book",
+          "会議:meeting",
+          "変更になった:moved",
+          "チケット:ticket",
+          "準備できた:ready",
+          "顧客:client",
+          "電話する:call"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “Just so you know, ___” to imagine a plan and give one neutral update. Lexical hint(s): 部屋:room | 会議:meeting | 準備できた:ready | 顧客:client",
+      "learningTarget": "Pattern 1 communicative production in CORE-111 through the exact current prompt: Use “Just so you know, ___” to imagine a plan and give one neutral update.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 communicative production—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "部屋:room",
+          "会議:meeting",
+          "準備できた:ready",
+          "顧客:client"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “Just so you know, ___” to imagine a plan and give one neutral update."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud.",
+      "tutorAction": "Introduce Pattern 2 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this informal alert before timely news. Please read the title aloud. | 早めに伝えたい知らせの前に使うくだけた注意喚起です。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-111: Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): Heads up — they moved the meeting | 先に知らせておくと、会議が変更になりました | Heads up — the price has changed | 先に知らせておくと、価格が変わりました | Heads up — the train is delayed | 先に知らせておくと、電車が遅れています",
+      "learningTarget": "Pattern 2 meaning and model in CORE-111: Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Heads up — they moved the meeting",
+          "先に知らせておくと、会議が変更になりました",
+          "Heads up — the price has changed",
+          "先に知らせておくと、価格が変わりました",
+          "Heads up — the train is delayed",
+          "先に知らせておくと、電車が遅れています"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): Heads up — they moved the meeting | 先に知らせておくと、会議が変更になりました | Heads up — the price has changed | 先に知らせておくと、価格が変わりました | Heads up — the train is delayed | 先に知らせておくと、電車が遅れています | Heads up — Sam called earlier | 先に知らせておくと、サムから先ほど電話がありました",
+      "learningTarget": "Pattern 2 read-aloud in CORE-111: Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Heads up — they moved the meeting",
+          "先に知らせておくと、会議が変更になりました",
+          "Heads up — the price has changed",
+          "先に知らせておくと、価格が変わりました",
+          "Heads up — the train is delayed",
+          "先に知らせておくと、電車が遅れています",
+          "Heads up — Sam called earlier",
+          "先に知らせておくと、サムから先ほど電話がありました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 2 form explanation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "Pattern 2 form explanation in CORE-111: Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 2 word-order retrieval for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-111: Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): 先に知らせておくと、会議が変更になりました | 先に知らせておくと、価格が変わりました | 先に知らせておくと、電車が遅れています | 先に知らせておくと、サムから先ほど電話がありました Blank answer(s): Heads up — they moved the meeting | Heads up — the price has changed | Heads up — the train is delayed | Heads up — Sam called earlier",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-111: Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "先に知らせておくと、会議が変更になりました",
+          "先に知らせておくと、価格が変わりました",
+          "先に知らせておくと、電車が遅れています",
+          "先に知らせておくと、サムから先ほど電話がありました"
+        ],
+        "blankAnswers": [
+          "Heads up — they moved the meeting",
+          "Heads up — the price has changed",
+          "Heads up — the train is delayed",
+          "Heads up — Sam called earlier"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): Heads up — they moved the meeting. | Heads up — the price has changed. | Heads up — the train is delayed. | Heads up — Sam called earlier. Lexical hint(s): 会議:meeting | 変更になった:moved | 価格:price | 変更する:change | 電車:train | 遅れている:delayed | サム:Sam | 電話する:call | さっき:earlier",
+      "learningTarget": "Pattern 2 supported translation in CORE-111: Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Heads up — they moved the meeting.",
+          "Heads up — the price has changed.",
+          "Heads up — the train is delayed.",
+          "Heads up — Sam called earlier."
+        ],
+        "hintChips": [
+          "会議:meeting",
+          "変更になった:moved",
+          "価格:price",
+          "変更する:change",
+          "電車:train",
+          "遅れている:delayed",
+          "サム:Sam",
+          "電話する:call",
+          "さっき:earlier"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “Heads up — ___” to give one timely informal alert about a change. Lexical hint(s): 価格:price | 遅れている:delayed | 電車:train | 会議:meeting",
+      "learningTarget": "Pattern 2 communicative production in CORE-111 through the exact current prompt: Use “Heads up — ___” to give one timely informal alert about a change.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 communicative production—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "価格:price",
+          "遅れている:delayed",
+          "電車:train",
+          "会議:meeting"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “Heads up — ___” to give one timely informal alert about a change."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the optional support expressions aloud.",
+      "tutorAction": "Clarify meaning only if needed; keep them optional.",
+      "targetOrPrompt": "conversation support activation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "conversation support activation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—conversation support activation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform conversation support activation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for conversation support activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-report-01",
+      "learnerAction": "Choose the form that preserves the earlier rule, then read the result aloud.",
+      "tutorAction": "Let the learner retrieve the earlier contrast before confirming it.",
+      "targetOrPrompt": "Highlighted target(s): 伝える | 伝える",
+      "learningTarget": "spaced retrieval in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "伝える",
+          "伝える"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and prepare to use both patterns.",
+      "tutorAction": "Set up the conversation, then move directly to the role-specific page.",
+      "targetOrPrompt": "role-play transition for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "role-play transition in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—role-play transition—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play transition for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every learner-owned line in the complete role-play.",
+      "tutorAction": "Take the named counterpart role and read only that role's lines.",
+      "targetOrPrompt": "Highlighted target(s): Just so you know | 念のためお知らせすると | Heads up — they moved the meeting | 先に知らせておくと、会議が変更になりました",
+      "learningTarget": "complete role-play in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—complete role-play—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform complete role-play for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for complete role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "Just so you know",
+          "念のためお知らせすると",
+          "Heads up — they moved the meeting",
+          "先に知らせておくと、会議が変更になりました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say every learner-owned line and supply the missing taught expressions.",
+      "tutorAction": "Take the named counterpart role and type only the missing target words.",
+      "targetOrPrompt": "Blank answer(s): Just so you know | Heads up — they moved the meeting",
+      "learningTarget": "role-play target retrieval in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—role-play target retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play target retrieval for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Just so you know",
+          "Heads up — they moved the meeting"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's personal question, then ask the displayed reciprocal question.",
+      "tutorAction": "Give a real answer and follow the learner's most interesting detail.",
+      "targetOrPrompt": "Exact learner prompt(s): How do you prefer to receive a last-minute update? | What about you—how do you prefer to get an update?",
+      "learningTarget": "reciprocal personal conversation in CORE-111 through the exact current prompt: How do you prefer to receive a last-minute update? | What about you—how do you prefer to get an update?",
+      "pedagogicalValue": "This page has one distinct job—reciprocal personal conversation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal personal conversation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for reciprocal personal conversation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How do you prefer to receive a last-minute update?",
+          "What about you—how do you prefer to get an update?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both targets in the new six-turn situation.",
+      "tutorAction": "Take the named new counterpart role and keep the exchange natural.",
+      "targetOrPrompt": "Blank answer(s): Just so you know | Heads up — the train is delayed",
+      "learningTarget": "transfer role-play in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for transfer role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Just so you know",
+          "Heads up — the train is delayed"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the practical tone or register distinction and its examples.",
+      "tutorAction": "Explain the immediately usable nuance briefly.",
+      "targetOrPrompt": "pragmatic consolidation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.",
+      "learningTarget": "pragmatic consolidation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.",
+      "pedagogicalValue": "This page has one distinct job—pragmatic consolidation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform pragmatic consolidation for “Just so you know,” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for pragmatic consolidation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

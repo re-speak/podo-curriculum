@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-full/lessons/102-what-ai-gets-wrong-about-human-work/lesson.html",
+  "lessonSha256": "7bfe3c095e6d650429d2ed37d6b434b02fc790ee44ceba45023d9c5f6e2a1ea6",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “What AI gets wrong about human work” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "What AI gets wrong about human work / AIが人の仕事を誤解するところ. Let's examine where AI misses the human context around work. / AIが仕事を取り巻く人間の文脈をどこで見落とすか考えましょう。",
+      "learningTarget": "Orient the learner to a conversation about What AI gets wrong about human work without supplying a position.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; agreement with any position is not tested.",
+      "nonTargetSupport": "The Japanese can-do “AIが仕事を取り巻く人間の文脈をどこで見落とすか考えましょう。” and title “AIが人の仕事を誤解するところ” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice set appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answers, or second task.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Capability is not the whole job / 能力だけでは仕事にならない. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “A system may execute a task while missing the institutional and human context that gives it meaning.” to “A useful evaluation names the task, the failure cost, the reviewer, and the person accountable for the result.”, as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several defensible angles for the later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claim translations are available; this full article owns these selective glosses: accountability=説明責任.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “Which part of human work most clearly exposes the limits of AI understanding?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which part of human work most clearly exposes the limits of AI understanding?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which part of human work most clearly exposes the limits of AI understanding? / 人の仕事のどの部分が、AIの理解の限界を最も明確に示しますか？ Follow-up pool: Which role provides the clearest case? Why is that case important?",
+      "learningTarget": "Develop the distinct “opening” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A human context AI misses” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which part of human work most clearly exposes the limits of AI understanding?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “人の仕事のどの部分が、AIの理解の限界を最も明確に示しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which part of human work most clearly exposes the limits of AI understanding?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “Which relationship, history, or value would remain invisible to the system?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which relationship, history, or value would remain invisible to the system?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which relationship, history, or value would remain invisible to the system? / どんな人間関係、過去、価値が、そのシステムには見えないままになりますか？ Follow-up pool: Why is that context difficult to encode? Who is positioned to interpret it?",
+      "learningTarget": "Develop the distinct “reason” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “The missing context” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which relationship, history, or value would remain invisible to the system?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どんな人間関係、過去、価値が、そのシステムには見えないままになりますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which relationship, history, or value would remain invisible to the system?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “Which observable failure would reveal that blind spot most clearly?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which observable failure would reveal that blind spot most clearly?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which observable failure would reveal that blind spot most clearly? / どんな観察できる失敗が、その見落としを最も明確に示しますか？ Follow-up pool: Which output would expose the error? What independent check could verify it?",
+      "learningTarget": "Develop the distinct “evidence” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A visible mistake” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which observable failure would reveal that blind spot most clearly?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どんな観察できる失敗が、その見落としを最も明確に示しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which observable failure would reveal that blind spot most clearly?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “Which component of the role is genuinely suitable for AI assistance?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which component of the role is genuinely suitable for AI assistance?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which component of the role is genuinely suitable for AI assistance? / その役割のどの部分が、本当にAIの支援に適していますか？ Follow-up pool: What makes the task verifiable? Which judgment still requires review?",
+      "learningTarget": "Develop the distinct “strength” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A useful capability” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which component of the role is genuinely suitable for AI assistance?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “その役割のどの部分が、本当にAIの支援に適していますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which component of the role is genuinely suitable for AI assistance?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “Which systematic blind spot creates the greatest risk in this role?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which systematic blind spot creates the greatest risk in this role?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which systematic blind spot creates the greatest risk in this role? / この役割では、どの体系的な見落としが最大の危険を生みますか？ Follow-up pool: Which warning signal matters most? Who has enough context to detect it?",
+      "learningTarget": "Develop the distinct “blind-spot” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “The dangerous blind spot” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which systematic blind spot creates the greatest risk in this role?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “この役割では、どの体系的な見落としが最大の危険を生みますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which systematic blind spot creates the greatest risk in this role?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “Which responsibility must remain under meaningful and identifiable human control?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which responsibility must remain under meaningful and identifiable human control?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which responsibility must remain under meaningful and identifiable human control? / どの責任を、実質的で担当者が明確な人の管理下に残す必要がありますか？ Follow-up pool: What failure cost requires accountability? Where could automation still reduce effort?",
+      "learningTarget": "Develop the distinct “boundary” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A named human owner” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which responsibility must remain under meaningful and identifiable human control?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どの責任を、実質的で担当者が明確な人の管理下に残す必要がありますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which responsibility must remain under meaningful and identifiable human control?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “How might AI redistribute tasks, status, and accountability in this role over five years?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How might AI redistribute tasks, status, and accountability in this role over five years?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "How might AI redistribute tasks, status, and accountability in this role over five years? / AIは五年間で、この役割の作業、立場、説明責任をどう再配分するかもしれませんか？ Follow-up pool: Which task is most likely to contract? Which new responsibility may emerge?",
+      "learningTarget": "Develop the distinct “future” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “The role in five years” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How might AI redistribute tasks, status, and accountability in this role over five years?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “AIは五年間で、この役割の作業、立場、説明責任をどう再配分するかもしれませんか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How might AI redistribute tasks, status, and accountability in this role over five years?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the standalone question “Which popular claim about AI capability most needs qualification?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Which popular claim about AI capability most needs qualification?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Which popular claim about AI capability most needs qualification? / AIの能力について広く言われる主張のうち、最も条件を加える必要があるものは何ですか？ Follow-up pool: Which assumption makes the claim misleading? What evidence would produce a better judgment?",
+      "learningTarget": "Develop the distinct “flip” angle of What AI gets wrong about human work in spontaneous conversation.",
+      "pedagogicalValue": "Adds the specific conversational job “A claim people overstate” without requiring private history or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Which popular claim about AI capability most needs qualification?” calls for one contextual follow-up, not a presumed personal experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “AIの能力について広く言われる主張のうち、最も条件を加える必要があるものは何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which popular claim about AI capability most needs qualification?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

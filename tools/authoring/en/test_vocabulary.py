@@ -36,11 +36,23 @@ def deck_metadata(review_id: str, new: str = "surprise|驚かせる") -> str:
 
 
 class VocabularyTests(unittest.TestCase):
-    def test_pilot_has_two_new_words_and_valid_provenance(self):
+    def test_pilot_owns_box_and_recycles_bag_from_core_5(self):
         data = vocabulary.parse(PILOT.read_text(encoding="utf-8"), source=PILOT)
         self.assertEqual(data["status"], "reviewed")
-        self.assertEqual(len(data["categories"]["new"]), 2)
-        self.assertEqual(data["categories"]["recycled"], [])
+        self.assertEqual(
+            [
+                (entry["english"], entry["japanese"])
+                for entry in data["categories"]["new"]
+            ],
+            [("box", "箱")],
+        )
+        self.assertEqual(
+            [
+                (entry["english"], entry["japanese"], entry["source"])
+                for entry in data["categories"]["recycled"]
+            ],
+            [("bag", "かばん", "CORE-5")],
+        )
 
     def test_duplicate_across_categories_is_rejected(self):
         with self.assertRaisesRegex(vocabulary.VocabularyError, "both new and assumed"):
@@ -101,6 +113,36 @@ class VocabularyTests(unittest.TestCase):
                 path = base / f"talk-topic-{number}" / f"lessons/{number:02d}-topic/lesson.html"
                 path.parent.mkdir(parents=True)
                 path.write_text(deck_metadata(review_id), encoding="utf-8")
+                paths.append(path)
+            with self.assertRaisesRegex(vocabulary.VocabularyError, "also declared new"):
+                build_running_lexicon.collect(paths)
+
+    def test_same_surface_form_with_a_different_sense_has_its_own_owner(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / "tracks/1-core-patterns") as tmp:
+            base = pathlib.Path(tmp)
+            paths = []
+            for number, review_id, japanese in (
+                (1, "CORE-1", "開いている"),
+                (2, "CORE-2", "開ける"),
+            ):
+                path = base / f"core-topic-{number}" / f"lessons/{number:02d}-topic/lesson.html"
+                path.parent.mkdir(parents=True)
+                path.write_text(deck_metadata(review_id, f"open|{japanese}"), encoding="utf-8")
+                paths.append(path)
+            records = build_running_lexicon.collect(paths)
+            self.assertEqual(
+                [(item["review_id"], item["categories"]["new"][0]["japanese"]) for item in records],
+                [("CORE-1", "開いている"), ("CORE-2", "開ける")],
+            )
+
+    def test_same_surface_form_and_same_sense_still_has_one_owner(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / "tracks/1-core-patterns") as tmp:
+            base = pathlib.Path(tmp)
+            paths = []
+            for number, review_id in ((1, "CORE-1"), (2, "CORE-2")):
+                path = base / f"core-topic-{number}" / f"lessons/{number:02d}-topic/lesson.html"
+                path.parent.mkdir(parents=True)
+                path.write_text(deck_metadata(review_id, "open|開ける"), encoding="utf-8")
                 paths.append(path)
             with self.assertRaisesRegex(vocabulary.VocabularyError, "also declared new"):
                 build_running_lexicon.collect(paths)

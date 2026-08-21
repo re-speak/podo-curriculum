@@ -35,7 +35,7 @@ been deleted rather than deprecated — see
 | `courses/<lang>/<course>/` | **deployable.** `course.yaml` + `lessons/<NN-slug>/` |
 | `shared/` | the deck runtime — `lesson-card.css` + `trial.css`, thirteen activity/chrome scripts, and the design contract. **The source, and served to decks from a CDN rather than copied into them** |
 | `schemas/` | JSON Schema for the three document kinds |
-| `tools/` | build · validate · plan · apply, the shared-runtime pair (`publish-shared` · `repoint-shared`), and `promote.py` |
+| `tools/` | build · validate · plan · apply, the shared-runtime pair (`publish-shared` · `repoint-shared`), and the promotion pair (`make-promotion` · `promote`) |
 | `tools/authoring/{kr,en}/` | the authoring toolchain — deck checkers, lesson scaffolding, course planning, brief and catalog builders |
 | `sandbox/drafts/` | **where lessons are written.** The complete curriculum under authoring, committed, reviewable, and structurally undeployable |
 | `sandbox/archive/` | experiments and retired material |
@@ -131,6 +131,7 @@ python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/l
 python3 tools/build-catalog.py                 # the public catalog → site/
 python3 -m http.server -d site 8000            # …look at it
 
+python3 tools/make-promotion.py --lang en      # derive promotion.yaml from the decks
 python3 tools/promote.py --check               # what promotion would change
 python3 tools/promote.py                       # promote every reviewed draft
 

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/100-the-one-thing-you-would-save-in-a-fire/lesson.html",
+  "lessonSha256": "67239fe22fba92372e766265131d3f6deea2337ef649927b658ff8d01e02551d",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “The one thing you would save in a fire” aloud once.",
+      "tutorAction": "State the can-do, invite one reading of “The one thing you would save in a fire,” then move to the optional article.",
+      "targetOrPrompt": "The one thing you would save in a fire / 火事で持ち出す一つのもの. Let's talk about possessions, memory, and safe preparation. / 持ち物、記憶、安全な備えについて話しましょう。",
+      "learningTarget": "Orient the learner to a conversation about “The one thing you would save in a fire” without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no personal history is required.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and learner action as the English.",
+      "articleTreatment": "This page introduces the topic only; the optional article remains a separate pre-study component.",
+      "choiceQuality": "No fixed choice set or model answer appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Safety before possessions / 持ち物より安全. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “In this scenario, every person and pet is already safe.” to “The safest lesson is preparation, not a faster rescue.,” as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned accessible-specific Japanese claims are available; this variant owns these selective glosses: irreplaceable=かけがえのない.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real view when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Once everyone is safe, which possession would be hardest to lose?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Once everyone is safe, which possession would be hardest to lose?”, react or share briefly, then choose at most one relevant probe such as “What memory or meaning gives it that value?”.",
+      "targetOrPrompt": "Once everyone is safe, which possession would be hardest to lose? / 全員が安全になった後、失うのが最もつらい持ち物は何ですか？ Follow-up pool: What memory or meaning gives it that value? How could you preserve part of that value beforehand?",
+      "learningTarget": "Explore the distinct “One thing” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What memory or meaning gives it that value?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What memory or meaning gives it that value?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Once everyone is safe, which possession would be hardest to lose?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “How could you preserve part of that value beforehand?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Once everyone is safe, which possession would be hardest to lose?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “What can make one possession feel irreplaceable?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What can make one possession feel irreplaceable?”, react or share briefly, then choose at most one relevant probe such as “Is the value practical, historical, or emotional?”.",
+      "targetOrPrompt": "What can make one possession feel irreplaceable? / 一つの持ち物が、かけがえのないものに感じられるのはなぜですか？ Follow-up pool: Is the value practical, historical, or emotional? Could a copy preserve any part of it?",
+      "learningTarget": "Explore the distinct “Why that one” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Is the value practical, historical, or emotional?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Is the value practical, historical, or emotional?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can make one possession feel irreplaceable?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Could a copy preserve any part of it?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can make one possession feel irreplaceable?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “Which possession do people often value more than expected?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which possession do people often value more than expected?”, react or share briefly, then choose at most one relevant probe such as “Why might people overlook its value?”.",
+      "targetOrPrompt": "Which possession do people often value more than expected? / 人が予想以上に大切にすることが多い持ち物は何ですか？ Follow-up pool: Why might people overlook its value? Which need or memory does it represent?",
+      "learningTarget": "Explore the distinct “Your own answer” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Why might people overlook its value?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Why might people overlook its value?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which possession do people often value more than expected?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which need or memory does it represent?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which possession do people often value more than expected?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “What might another person take even if you would take nothing?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What might another person take even if you would take nothing?”, react or share briefly, then choose at most one relevant probe such as “Why might it matter to them?”.",
+      "targetOrPrompt": "What might another person take even if you would take nothing? / 自分は何も持ち出さない場合でも、ほかの人なら何を持ち出すかもしれませんか？ Follow-up pool: Why might it matter to them? Why would you still leave it?",
+      "learningTarget": "Explore the distinct “A different choice” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Why might it matter to them?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Why might it matter to them?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might another person take even if you would take nothing?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Why would you still leave it?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What might another person take even if you would take nothing?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “Why can losing an ordinary object feel deeply important?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Why can losing an ordinary object feel deeply important?”, react or share briefly, then choose at most one relevant probe such as “Which meaning could make an ordinary object important?”.",
+      "targetOrPrompt": "Why can losing an ordinary object feel deeply important? / 普通の物を失っても、とても大切に感じられるのはなぜですか？ Follow-up pool: Which meaning could make an ordinary object important? Can the memory remain after the object is gone?",
+      "learningTarget": "Explore the distinct “A past loss” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which meaning could make an ordinary object important?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which meaning could make an ordinary object important?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can losing an ordinary object feel deeply important?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Can the memory remain after the object is gone?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why can losing an ordinary object feel deeply important?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “What can losing an object teach us?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What can losing an object teach us?”, react or share briefly, then choose at most one relevant probe such as “Does it change what we protect?”.",
+      "targetOrPrompt": "What can losing an object teach us? / 物を失うことから、何を学べますか？ Follow-up pool: Does it change what we protect? Can a memory remain without the object?",
+      "learningTarget": "Explore the distinct “What loss teaches” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Does it change what we protect?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Does it change what we protect?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can losing an object teach us?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Can a memory remain without the object?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can losing an object teach us?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “How can people protect important possessions before an emergency?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “How can people protect important possessions before an emergency?”, react or share briefly, then choose at most one relevant probe such as “Would a backup, list, or safer storage help most?”.",
+      "targetOrPrompt": "How can people protect important possessions before an emergency? / 緊急事態の前に、大切な持ち物をどう守れますか？ Follow-up pool: Would a backup, list, or safer storage help most? Which evacuation preparation should come first?",
+      "learningTarget": "Explore the distinct “Preparing safely” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Would a backup, list, or safer storage help most?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Would a backup, list, or safer storage help most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can people protect important possessions before an emergency?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which evacuation preparation should come first?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How can people protect important possessions before an emergency?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What important part of life cannot be saved or destroyed as an object?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What important part of life cannot be saved or destroyed as an object?”, react or share briefly, then choose at most one relevant probe such as “How is it protected instead?”.",
+      "targetOrPrompt": "What important part of life cannot be saved or destroyed as an object? / 物として救ったり失ったりできない、人生の大切なものは何ですか？ Follow-up pool: How is it protected instead? Can an object still help us remember it?",
+      "learningTarget": "Explore the distinct “What cannot burn” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “How is it protected instead?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How is it protected instead?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What important part of life cannot be saved or destroyed as an object?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Can an object still help us remember it?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What important part of life cannot be saved or destroyed as an object?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat the most useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one usable improvement from the discussion.",
+      "pedagogicalValue": "Turns the open conversation into specific evidence and one manageable next action.",
+      "failureDiagnosis": "The repeated correction shows whether the learner can immediately use the selected improvement.",
+      "nonTargetSupport": "The Japanese instruction mirrors the two-part feedback action; typed notes preserve the exact language.",
+      "articleTreatment": "Not applicable; feedback refers to live speaking rather than article recall.",
+      "choiceQuality": "No distractors appear; the tutor selects only one high-value strength and one actionable next step.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component and requires an actionable spoken close.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -40,6 +40,7 @@ licensed textbook scans, and nothing syncs from it.
 ```sh
 vim sandbox/drafts/kr/tracks/…/lessons/<NN-slug>/lesson.html   # write
 python3 tools/authoring/kr/check_structure.py                  # check
+python3 tools/make-promotion.py <course-draft-dir> --force     # refresh promotion.yaml
 python3 tools/promote.py --check                               # see what would ship
 python3 tools/promote.py                                       # write courses/
 python3 tools/repoint-shared.py && python3 tools/validate.py    # pin + gate
@@ -50,7 +51,20 @@ python3 tools/repoint-shared.py && python3 tools/validate.py    # pin + gate
   against the drafts, not `courses/`.
 - **Promotion is named in a manifest**, `promotion.yaml`, sitting beside the
   drafts. Adding a lesson to a course means adding a row there — that row is the
-  reviewable part.
+  reviewable part. `tools/make-promotion.py` derives the whole file from the decks
+  that exist: the week is a deck's position in the list and the three titles come
+  from its own `<meta name="podo:title-*">`, so nothing in the manifest is typed
+  twice. It refuses to overwrite an existing one without `--force`, and refuses to
+  guess a title a deck does not declare.
+- **Promotion copies; the draft stays put.** `promote.py` only ever reads
+  `sandbox/`. The one directory it clears is `courses/<lang>/<slug>/lessons/`, its
+  own output — so the draft survives promotion, remains the thing you edit, and
+  re-promoting after a fix is the whole update path.
+- **A new course needs its `courses/` target to exist first.** `promote.py` refuses
+  a target with no `course.yaml`, which is what keeps a course's identity and its
+  `enabled` flag a human act rather than a side effect. `make-promotion.py
+  --scaffold-target` copies the draft's `course.yaml` into place, and will not do it
+  for a draft that is already `enabled: true`.
 - **Never edit `courses/` by hand.** `promote.py` owns every `lessons/` directory
   it writes and clears it on each run, so a hand edit is lost on the next
   promotion without anything reporting it.

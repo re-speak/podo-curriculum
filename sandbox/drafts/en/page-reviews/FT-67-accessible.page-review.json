@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/67-something-youre-trying-to-get-better-at/lesson.html",
+  "lessonSha256": "e577ef7d8704b93f0a2d7181d5e1895f1685b3cb974c4805889fabbee6c16a67",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “Something you're trying to get better at” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “Something you're trying to get better at” once, and move on.",
+      "targetOrPrompt": "Let's talk about practical ways to improve a skill. Please read the title aloud. / スキルを伸ばすための実践的な方法について話しましょう。",
+      "learningTarget": "Orient the learner to a live conversation about “Something you're trying to get better at” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “Something you're trying to get better at” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no work history, salary, or private experience is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors the can-do and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Why improvement rarely follows a straight line (上達が一直線に進まない理由): Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use the 10-claim pre-study article to seed concrete language and viewpoints for “Something you're trying to get better at.”",
+      "pedagogicalValue": "The article develops ten distinct claims from “Getting better usually takes repeated practice.” to “The right measure depends on the skill.”, giving the prompt pool several defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.",
+      "nonTargetSupport": "All ten claims have aligned accessible-specific Japanese support; selective owned glosses are: stick with=〜を続ける.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Something you're trying to get better at” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Something you're trying to get better at” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “What skill would you most like to improve?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What part of the skill needs the most attention?” rather than asking every follow-up.",
+      "targetOrPrompt": "What skill would you most like to improve? / どのスキルを最も上達させたいですか？",
+      "learningTarget": "Explore the distinct “A skill to improve (上達したい技能)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What part of the skill needs the most attention?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What part of the skill needs the most attention?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What skill would you most like to improve?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would improvement make possible?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What skill would you most like to improve?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “What is a good first method for improving a new skill?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How often should a beginner try that method?” rather than asking every follow-up.",
+      "targetOrPrompt": "What is a good first method for improving a new skill? / 新しいスキルを上達させるための、よい最初の方法は何ですか？",
+      "learningTarget": "Explore the distinct “What you tried (試したこと)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “How often should a beginner try that method?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How often should a beginner try that method?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is a good first method for improving a new skill?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would make it easy to repeat?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is a good first method for improving a new skill?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “What is the main obstacle to improving this skill?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Is the obstacle time, access, confidence, or something else?” rather than asking every follow-up.",
+      "targetOrPrompt": "What is the main obstacle to improving this skill? / この技能を上達させるうえで、主な障害は何ですか？",
+      "learningTarget": "Explore the distinct “What gets in the way (妨げになること)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Is the obstacle time, access, confidence, or something else?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Is the obstacle time, access, confidence, or something else?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the main obstacle to improving this skill?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which part can the person influence?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is the main obstacle to improving this skill?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “What feedback would help with the next attempt?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Who or what could provide it?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What feedback would help with the next attempt?”",
+      "learningTarget": "Explore the distinct “Useful feedback (役立つフィードバック)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Who or what could provide it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Who or what could provide it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What feedback would help with the next attempt?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How specific should it be?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Second-pass semantic review complete. Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What feedback would help with the next attempt?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “What small sign would show that the skill is improving?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Who might notice it first?” rather than asking every follow-up.",
+      "targetOrPrompt": "What small sign would show that the skill is improving? / どんな小さな兆しがあれば、その技能が上達していると分かりますか？",
+      "learningTarget": "Explore the distinct “Signs of progress (上達の兆し)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Who might notice it first?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Who might notice it first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What small sign would show that the skill is improving?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How could it be checked without a formal test?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What small sign would show that the skill is improving?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “When is a skill no longer worth pursuing?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What would justify continuing?” rather than asking every follow-up.",
+      "targetOrPrompt": "When is a skill no longer worth pursuing? / どんなときに、スキルを追い求め続ける価値がなくなりますか？",
+      "learningTarget": "Explore the distinct “Worth continuing (続ける価値)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What would justify continuing?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What would justify continuing?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is a skill no longer worth pursuing?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would make stopping reasonable?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When is a skill no longer worth pursuing?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “What small action can help someone improve this week?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “When could it fit?” rather than asking every follow-up.",
+      "targetOrPrompt": "What small action can help someone improve this week? / 今週、上達の助けになる小さな行動は何ですか？",
+      "learningTarget": "Explore the distinct “One next step (次の一歩)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “When could it fit?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “When could it fit?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What small action can help someone improve this week?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What would make it easy to begin?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What small action can help someone improve this week?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “If you taught this skill to a beginner, what would you start with?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Why is that the best first step?” rather than asking every follow-up.",
+      "targetOrPrompt": "If you taught this skill to a beginner, what would you start with? / この技能を初心者に教えるなら、何から始めますか？",
+      "learningTarget": "Explore the distinct “Teaching the skill (技能を教える)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Why is that the best first step?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Why is that the best first step?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “If you taught this skill to a beginner, what would you start with?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What common mistake would you normalize?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "If you taught this skill to a beginner, what would you start with?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat the most useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one immediately reusable improvement from the conversation.",
+      "pedagogicalValue": "Turns the conversation into specific, actionable feedback and gives one corrected sentence an oral retrieval step.",
+      "failureDiagnosis": "Difficulty repeating the chosen correction identifies the single form or pronunciation point worth carrying forward.",
+      "nonTargetSupport": "The Japanese line explains the two-part feedback structure; the tutor types only the concise final feedback.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No distractors appear; the tutor selects one genuine strength and one high-value next step.",
+      "componentConsistency": "Uses the approved synchronized tutor-feedback textarea and one-repeat closing instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

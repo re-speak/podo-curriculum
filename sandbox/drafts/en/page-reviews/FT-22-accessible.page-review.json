@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/22-something-in-english-you-genuinely-enjoyed/lesson.html",
+  "lessonSha256": "1d09d27c8bea4aca4a3b95e448e8d3dca68925b225fde18cbf2543699c60a313",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “Something in English you genuinely enjoyed” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “Something in English you genuinely enjoyed” once, and move on.",
+      "targetOrPrompt": "Let's trace one enjoyable experience in English and what it led to. Please read the title aloud. 英語で楽しめた一つの体験と、その後につながったことを話しましょう。 タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to a live conversation about “Something in English you genuinely enjoyed” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “Something in English you genuinely enjoyed” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line directly mirrors the topic orientation and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Generator-owned semantic inspection is complete; root visual inspection at 360px and 480px is still pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Enjoyment before perfect understanding (完全に分からなくても楽しめること): Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the ten-claim pre-study article to seed concrete language and viewpoints for “Something in English you genuinely enjoyed.”",
+      "pedagogicalValue": "The article moves from “Many people first connect with English through entertainment, not study.” to “A personal recommendation works best when it explains why the experience is enjoyable.,” giving the later prompt pool multiple defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with the selective accessible glosses (breakthrough (突破口)) identifies a local vocabulary support need.",
+      "nonTargetSupport": "All ten claims have aligned Japanese support; the accessible article selectively glosses breakthrough (突破口).",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Canonical component reuse and wording were mechanically verified; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “Something in English you genuinely enjoyed” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “Something in English you genuinely enjoyed” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line directly states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The source now uses the approved flexible pool contract; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “What was the first thing in English you actually enjoyed — song, film, game, anything?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What do you remember about it?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What kind of English content would feel enjoyable to you instead of like study?”",
+      "learningTarget": "Explore the distinct “The first enjoyable thing (最初に楽しめたもの)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What do you remember about it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What do you remember about it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What was the first thing in English you actually enjoyed — song, film, game, anything?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What made it feel different from studying?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What kind of English content would feel enjoyable to you instead of like study?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “Was it something you watched, listened to, read, or played?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How did you find it?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “Which format makes English easiest for you to enjoy: watching, listening, reading, or playing?”",
+      "learningTarget": "Explore the distinct “The kind of thing (どんなもの？)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “How did you find it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How did you find it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Was it something you watched, listened to, read, or played?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Did anyone share the experience with you?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which format makes English easiest for you to enjoy: watching, listening, reading, or playing?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “How old were you when you found it?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What else were you interested in then?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “At what age can English entertainment first become memorable?”",
+      "learningTarget": "Explore the distinct “Your age then (そのときの年齢)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “What else were you interested in then?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What else were you interested in then?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How old were you when you found it?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “How did English fit into your life at that time?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "At what age can English entertainment first become memorable?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “How much of the English did you understand?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which part was clear first?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “How much English would you need to understand before you could enjoy the content?”",
+      "learningTarget": "Explore the distinct “How much you understood (理解できた量)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which part was clear first?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which part was clear first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How much of the English did you understand?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What helped with the difficult parts?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How much English would you need to understand before you could enjoy the content?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “What did you do after you enjoyed it?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Did you look for anything similar?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What would you try next after enjoying one thing in English?”",
+      "learningTarget": "Explore the distinct “What came next (その次)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Did you look for anything similar?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Did you look for anything similar?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What did you do after you enjoyed it?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which action kept your interest going?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you try next after enjoying one thing in English?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “How did that experience lead to the English you use now?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which part of the connection is strongest?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “How could enjoyable English content influence the English you use later?”",
+      "learningTarget": "Explore the distinct “What brought you here (今につながったもの)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Which part of the connection is strongest?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which part of the connection is strongest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How did that experience lead to the English you use now?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What might have happened without it?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How could enjoyable English content influence the English you use later?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “What helps someone enjoy English before they understand everything?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “How much support is useful?” rather than asking every follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What would help you enjoy English before you understood everything?”",
+      "learningTarget": "Explore the distinct “A good starting point (よい入り口)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “How much support is useful?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How much support is useful?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What helps someone enjoy English before they understand everything?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What can make the experience feel like work?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would help you enjoy English before you understood everything?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What would you recommend to someone starting English now?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Why would that be a good gateway?” rather than asking every follow-up.",
+      "targetOrPrompt": "What would you recommend to someone starting English now? 今英語を始める人に、何をすすめますか？",
+      "learningTarget": "Explore the distinct “Your recommendation (自分のおすすめ)” angle of “Something in English you genuinely enjoyed” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The main prompt opens one answerable conversational job; “Why would that be a good gateway?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Why would that be a good gateway?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you recommend to someone starting English now?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Who might prefer a different starting point?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would you recommend to someone starting English now?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next focus, then repeat one useful correction aloud.",
+      "tutorAction": "Summarize evidence from the “Something in English you genuinely enjoyed” discussion and ask the learner to repeat one useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and retrieve one corrected sentence before the lesson ends.",
+      "pedagogicalValue": "Turns the open conversation into actionable feedback without interrupting every answer or listing every error.",
+      "failureDiagnosis": "A correction the learner cannot repeat identifies the single form or phrase that needs another model and retry.",
+      "nonTargetSupport": "The bilingual script explains the feedback move; tutor-only guidance limits feedback to evidence gathered in this session.",
+      "articleTreatment": "Not applicable; feedback is based on the live discussion, not article comprehension.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one strength, one focus, and one useful re-say.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with separate strength, focus, and useful-correction fields.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Canonical feedback wording and correction loop were preserved; root visual inspection is pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
