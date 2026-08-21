@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import filecmp
+import json
 import pathlib
 import shutil
 import subprocess
@@ -75,17 +76,79 @@ def tree_differs(a: pathlib.Path, b: pathlib.Path) -> list[str]:
     return out
 
 
+def cdn_bytes(url: str) -> tuple[bytes | None, str]:
+    """Fetch one URL off the CDN. Returns (bytes, "") or (None, why it could not be read)."""
+    try:
+        with urllib.request.urlopen(url, timeout=20) as resp:
+            return resp.read(), ""
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError) as exc:
+        return None, str(exc)
+
+
 def verify_cdn(base: str, join: str, version: str, rel: str, local: pathlib.Path) -> str:
     """Fetch one published file and compare bytes. Proves the whole chain, not just the push."""
     url = f"{base.rstrip('/')}{join}{version}/{rel}"
-    try:
-        with urllib.request.urlopen(url, timeout=20) as resp:
-            served = resp.read()
-    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError) as exc:
-        return f"  ~ CDN not serving {rel} yet ({exc}) — tags can take a moment to propagate"
+    served, why = cdn_bytes(url)
+    if served is None:
+        return f"  ~ CDN not serving {rel} yet ({why}) — tags can take a moment to propagate"
     if served != local.read_bytes():
         return f"  ✗ {url}\n    served {len(served)} bytes, local has {local.stat().st_size} — MISMATCH"
     return f"  ✓ {url}  ({len(served)} bytes, matches local)"
+
+
+def refresh_latest(shared: pathlib.Path, repo: str, base: str, join: str) -> None:
+    """`@latest` 가 새 카드를 주는지 확인하고, 아니면 엣지 캐시를 비운다.
+
+    덱은 태그를 고정해 보므로 이 함수가 필요 없다. 필요한 쪽은 원톡 상담 안내다 —
+    코스 카드를 `@latest` 로 받아 가는데(podo-app `course-card-asset.ts`), 그 별칭은
+    엣지에서 12시간 캐시된다(`s-maxage=43200`). 비우지 않으면 새로 구운 카드가 반나절
+    동안 학생에게 닿지 않는다.
+
+    비우기 전에 먼저 받아 보고, 비운 뒤에 다시 받아 본다. 확인이 앞뒤로 있는 이유는
+    purge 응답이 "비웠다"까지만 말하기 때문이다 — jsDelivr 가 `@latest` 를 어느 태그로
+    푸느냐는 그와 별개로 캐시되므로, 방금 민 태그가 아직 안 보이면 비운 자리를 *이전*
+    파일이 그대로 다시 채운다. 바이트를 맞춰 봐야 비로소 새 카드가 나간다고 말할 수 있다.
+
+    실패해도 발행 자체는 이미 끝났으므로 경고만 남긴다 — 태그는 불변이고 이미 올라갔다.
+    다시 실행하면 이 확인만 다시 돈다(태그가 그대로면 발행은 no-op 이다).
+    """
+    cards = sorted((shared / "assets").glob("course-card-*.png"))
+    if not cards:
+        return
+
+    print()
+    for card in cards:
+        rel = f"assets/{card.name}"
+        url = f"{base.rstrip('/')}{join}latest/{rel}"
+        want = card.read_bytes()
+
+        served, why = cdn_bytes(url)
+        if served == want:
+            print(f"latest  : ✓ {card.name} — 엣지가 이미 새 파일을 준다")
+            continue
+
+        try:
+            purge = f"https://purge.jsdelivr.net/gh/{repo}@latest/{rel}"
+            with urllib.request.urlopen(purge, timeout=20) as response:
+                finished = json.loads(response.read()).get("status") == "finished"
+        except (urllib.error.URLError, ValueError, TimeoutError) as error:
+            print(f"latest  : ! {card.name} — purge 실패({error}). 12시간 뒤 저절로 갱신된다",
+                  file=sys.stderr)
+            continue
+
+        if not finished:
+            print(f"latest  : ~ {card.name} — 엣지가 아직 비우는 중. 다시 실행하면 재확인한다")
+            continue
+
+        served, why = cdn_bytes(url)
+        if served == want:
+            print(f"latest  : ↻ {card.name} — 비웠고 새 파일을 확인했다")
+        elif served is None:
+            print(f"latest  : ! {card.name} — 비웠지만 @latest 가 아직 이 파일을 주지 않는다"
+                  f"({why}). 다시 실행하면 재시도한다", file=sys.stderr)
+        else:
+            print(f"latest  : ! {card.name} — 비웠지만 @latest 가 아직 이전 태그로 풀린다"
+                  f"({len(served)} bytes ≠ {len(want)}). 다시 실행하면 재시도한다", file=sys.stderr)
 
 
 def main() -> int:
@@ -137,6 +200,9 @@ def main() -> int:
                 for sub, rel in (("css", "css/trial.css"), ("js", "js/activities.js")):
                     if (shared / rel).is_file():
                         print(verify_cdn(base, join, version, rel, shared / rel))
+                if not args.dry_run:
+                    # --dry-run 은 아무것도 건드리지 않는다. purge 는 바깥으로 나가는 부작용이다.
+                    refresh_latest(shared, repo, base, join)
                 return 0
             print(f"✗ tag {version} already exists but shared/ has changed since it was cut:")
             for d in drift:
@@ -183,6 +249,8 @@ def main() -> int:
         for rel in ("css/trial.css", "js/activities.js"):
             if (shared / rel).is_file():
                 print(verify_cdn(base, join, version, rel, shared / rel))
+
+        refresh_latest(shared, repo, base, join)
 
     print()
     print(f"✓ published. Now repoint the decks:  python3 tools/repoint-shared.py")
