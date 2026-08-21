@@ -3,6 +3,7 @@ kind: Course
 metadata:
   # Generated from the approved 1-core-patterns course cut.
   # LANG_TYPE is not stored here: podo-curriculum derives EN from courses/en/.
+  # podo:level: B1
   slug: core-careful-interaction
 
 spec:
@@ -12,8 +13,8 @@ spec:
   # a different course identity rather than updating the deployed row.
   classLevel: "100.060"
   lessonTime: 25
-  # English remains pre-production; generation must never enable a course.
-  enabled: false
+  # Promotion is a human-reviewed act; the authoring draft remains disabled.
+  enabled: true
   difficulty: INTERMEDIATE
 
   # Three name columns, three descriptions: the app picks by locale, so `ja` is
