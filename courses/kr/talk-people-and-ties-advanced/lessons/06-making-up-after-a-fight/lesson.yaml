@@ -15,9 +15,13 @@ spec:
     lecture:  { entry: lecture/index.html }
     prestudy: { entry: prestudy/index.html }
 
-  # 덱을 옮겨 온 것이라 teaches/outcome 은 비워 둔다 — 원본 기획 문서가 아니라
-  # 덱에서 읽어낸 것을 적으면 리뷰가 실제 덱이 아니라 이 메타데이터를 검토하게 된다.
-  teaches: {}
+  # 초안 lesson.yaml 의 teaches 를 그대로 옮긴다 — plan_courses.py 가 목차에서 적어
+  # 둔 값이고, 공개 카탈로그가 과마다 보여 주는 "이번에 배우는 것 · 목표" 가 이것이다.
+  # 덱을 읽어서 쓰지는 않는다: 덱에서 읽어낸 것을 적으면 리뷰가 실제 덱이 아니라 이
+  # 메타데이터를 검토하게 된다. 초안에 없으면 비워 둔다.
+  teaches:
+    patterns: []
+    canDo: 먼저 연락하는 편인가
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-advanced/lessons/06-making-up-after-a-fight/lesson.html
 

@@ -1,6 +1,11 @@
 apiVersion: podo.curriculum/v1
 kind: Course
 metadata:
+  # podo:level: 초급
+  # 이 코스의 덱이 <meta name="podo:level"> 에 적을 값이다. 스키마가 metadata 에
+  # 새 필드를 막아서 주석으로 둔다 — tools/new_lesson.py 와 tools/build-catalog.py
+  # 가 이 줄을 읽는다. difficulty 로는 대신할 수 없다: BEGINNER 하나가 왕초급과
+  # 초급을 함께 덮어서, 사다리에 어느 칸인지 말해 주지 못한다.
   slug: trial-lv2-patterns
 
 spec:
