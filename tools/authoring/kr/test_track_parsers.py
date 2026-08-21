@@ -86,3 +86,63 @@ class FreeTalkingParserTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+VALID_CONTEXTUAL = """\
+# 상황별 한국어 — 목차
+
+# 드라마
+
+## 설렘 & 고백 [중급] · 10 화 · 슬롯 010 · 문법 최고점: 핵심 106과
+
+> ### 《우리, 어디서 본 적 있죠?》
+>
+> **등장인물** — `나`(학습자) · `유진`(그 사람)
+>
+> 비 오는 밤, 편의점 앞에서 시작한다.
+
+**끝내면 할 수 있는 것:** 호감을 돌려서 표현하고 고백할 수 있다.
+
+**1화 · 첫 만남**
+
+*장면: 비 오는 밤 편의점 앞.*
+*할 수 있는 것: 아는 사이인지 떠본다.*
+- 우리 어디서 본 적 있지 않아요? — `~(으)ㄴ 적 있다` (핵심 42)
+  → 네? 글쎄요…
+- *표현:* `혹시`
+"""
+
+
+class ContextualParserTests(unittest.TestCase):
+    """The slot pin is the guard on grape's natural key — see track_parsers.CTX_SLOT."""
+
+    def parse(self, text: str) -> list[dict]:
+        with tempfile.TemporaryDirectory() as tmp:
+            track = pathlib.Path(tmp) / "3-contextual-korean"
+            track.mkdir()
+            (track / "table-of-contents.md").write_text(text, encoding="utf-8")
+            return track_parsers.parse_contextual(track)
+
+    def test_reads_the_pinned_slot_off_the_course_header(self):
+        (course,) = self.parse(VALID_CONTEXTUAL)
+
+        self.assertEqual(course["slug"], "drama-crush")
+        self.assertEqual(course["classLevelSlot"], 10)
+        self.assertEqual(course["cast"], "`나`(학습자) · `유진`(그 사람)")
+
+    def test_a_slot_is_read_wherever_it_sits_in_the_header_tail(self):
+        text = VALID_CONTEXTUAL.replace(
+            "· 10 화 · 슬롯 010 · 문법 최고점: 핵심 106과",
+            "· 10 화 · 문법 최고점: 핵심 106과 · 슬롯 005")
+        (course,) = self.parse(text)
+
+        self.assertEqual(course["classLevelSlot"], 5)
+
+    def test_rejects_a_course_that_does_not_pin_its_slot(self):
+        """Unpinned, plan_courses.py would number it by position and silently
+        renumber — and re-identify — every contextual course below it."""
+        text = VALID_CONTEXTUAL.replace(" · 슬롯 010", "")
+
+        with self.assertRaises(track_parsers.ParseError) as caught:
+            self.parse(text)
+        self.assertIn("슬롯", str(caught.exception))

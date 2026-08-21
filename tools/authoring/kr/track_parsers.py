@@ -224,7 +224,17 @@ def parse_pronunciation(track: pathlib.Path) -> list[dict]:
 # --------------------------------------------------------------------------- #
 
 CTX_COURSE = re.compile(
-    r"^## (.+?) \[(.+?)\] · (\d+) ?(?:화|레슨)(?: · .*)?$")
+    r"^## (.+?) \[(.+?)\] · (\d+) ?(?:화|레슨)(?:( · .*))?$")
+# `· 슬롯 005 ·` in a course header pins that course's thousandth slot inside the
+# band, instead of letting it fall out of the course's position in this file.
+#
+# Without a pin, plan_courses.py numbers contextual courses `i * 10` by TOC
+# order, so inserting a course renumbers every course below it. classLevel is
+# part of grape's natural key: a renumbered course is not an edit, it is a
+# different course, and the row it left behind keeps USE_YN='Y' and keeps
+# serving content nobody updates. Nothing errors — which is why every course
+# here is pinned, and why a new one must arrive with its slot already chosen.
+CTX_SLOT = re.compile(r"·\s*슬롯\s*(\d{1,3})\b")
 # A header may carry a trailing annotation outside the bold — 가족 & 일상 marks
 # who speaks with `*(엄마 → 나)*`. Capture it rather than refusing the line.
 CTX_LESSON = re.compile(r"^\*\*(\d+) ?(?:화|레슨)? ?[·.] (.+?)\*\*\s*(.*)$")
@@ -254,6 +264,7 @@ def parse_contextual(track: pathlib.Path) -> list[dict]:
     courses = []
     for m, body in _split_blocks(lines, CTX_COURSE, STOP_HEADING):
         name, level, _count = m.group(1).strip(), m.group(2).strip(), int(m.group(3))
+        slot_m = CTX_SLOT.search(m.group(4) or "")
         known = CTX_SLUGS.get(name)
         if known is None:
             raise ParseError(
@@ -295,7 +306,15 @@ def parse_contextual(track: pathlib.Path) -> list[dict]:
             raise ParseError(f"course '{name}' parsed 0 lessons")
         lessons.sort(key=lambda l: l["no"])
         note = _paragraph_field(prelude, "끝내면 할 수 있는 것") or ""
+        if slot_m is None:
+            raise ParseError(
+                f"course '{name}' has no `· 슬롯 NNN` in its header — every "
+                f"contextual course pins its own classLevel slot, because "
+                f"deriving it from position here renumbers every course below "
+                f"and re-identifies them in grape. Pick an unused slot and "
+                f"write it into the header")
         courses.append({"slug": slug, "level": entry, "note": note,
+                        "classLevelSlot": int(slot_m.group(1)),
                         "work": work, "cast": cast, "story": story,
                         "title": {"ko": name, "en": t_en, "ja": t_ja},
                         "lessons": lessons})
