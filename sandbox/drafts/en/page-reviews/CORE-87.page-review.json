@@ -1,0 +1,741 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/87-its-slightly-more-expensive/lesson.html",
+  "lessonSha256": "0a6843ae86be43897ca33544371fb1a18c0f67dca527374b0cedb44382fb8813",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud after hearing the can-do.",
+      "tutorAction": "State the can-do, ask for the title once, then move on.",
+      "targetOrPrompt": "goal orientation for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "goal orientation in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—goal orientation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for goal orientation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words aloud.",
+      "tutorAction": "Listen briefly and move on without reteaching familiar words.",
+      "targetOrPrompt": "known-word activation for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "known-word activation in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—known-word activation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for known-word activation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud.",
+      "tutorAction": "Introduce Pattern 1 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to mark a small, precise difference on a comparative scale. Please read the title aloud. | 比較の尺度で、小さく正確な差を示すときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-87: Use this to mark a small, precise difference on a comparative scale.",
+      "pedagogicalValue": "This page has one job—Pattern 1 transition—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 transition is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete Pattern 1 examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): It's slightly more | 少しだけ | It's slightly more | 少しだけ | It's slightly more | 少しだけ",
+      "learningTarget": "Pattern 1 meaning and model in CORE-87: Use this to mark a small, precise difference on a comparative scale.",
+      "pedagogicalValue": "This page has one job—Pattern 1 meaning and model—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 meaning and model is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "It's slightly more",
+          "少しだけ",
+          "It's slightly more",
+          "少しだけ",
+          "It's slightly more",
+          "少しだけ"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): It's slightly more | 少しだけ | It's slightly more | 少しだけ | It's slightly more | 少しだけ | It's slightly more | 少しだけ",
+      "learningTarget": "Pattern 1 read-aloud in CORE-87: Use this to mark a small, precise difference on a comparative scale.",
+      "pedagogicalValue": "This page has one job—Pattern 1 read-aloud—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 read-aloud is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "It's slightly more",
+          "少しだけ",
+          "It's slightly more",
+          "少しだけ",
+          "It's slightly more",
+          "少しだけ",
+          "It's slightly more",
+          "少しだけ"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice the Pattern 1 form and read the examples.",
+      "tutorAction": "Explain only the displayed form operation.",
+      "targetOrPrompt": "Pattern 1 form explanation for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "Pattern 1 form explanation in CORE-87: Use this to mark a small, precise difference on a comparative scale.",
+      "pedagogicalValue": "This page has one job—Pattern 1 form explanation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 form explanation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order each Pattern 1 sentence, then say it aloud.",
+      "tutorAction": "Allow an attempt before giving help.",
+      "targetOrPrompt": "Pattern 1 word-order retrieval for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-87: Use this to mark a small, precise difference on a comparative scale.",
+      "pedagogicalValue": "This page has one job—Pattern 1 word-order retrieval—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 word-order retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole Pattern 1 sentence including the target blanks.",
+      "tutorAction": "Listen first, then type only the target words.",
+      "targetOrPrompt": "Highlighted target(s): 少しだけ | 少しだけ | 少しだけ | 少しだけ Blank answer(s): It's slightly more | It's slightly more | It's slightly more | It's slightly more",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-87: Use this to mark a small, precise difference on a comparative scale.",
+      "pedagogicalValue": "This page has one job—Pattern 1 controlled target retrieval—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 controlled target retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "少しだけ",
+          "少しだけ",
+          "少しだけ",
+          "少しだけ"
+        ],
+        "blankAnswers": [
+          "It's slightly more",
+          "It's slightly more",
+          "It's slightly more",
+          "It's slightly more"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete Pattern 1 sentence in English, using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): It's slightly more expensive. | It's slightly more convenient. | It's slightly more comfortable. | It's slightly more reliable. Lexical hint(s): 高い:expensive | 便利な:convenient | 快適な:comfortable | 信頼できる:reliable",
+      "learningTarget": "Pattern 1 supported translation in CORE-87: Use this to mark a small, precise difference on a comparative scale.",
+      "pedagogicalValue": "This page has one job—Pattern 1 supported translation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 supported translation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "It's slightly more expensive.",
+          "It's slightly more convenient.",
+          "It's slightly more comfortable.",
+          "It's slightly more reliable."
+        ],
+        "hintChips": [
+          "高い:expensive",
+          "便利な:convenient",
+          "快適な:comfortable",
+          "信頼できる:reliable"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the exact Pattern 1 frame to perform the named communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “It's slightly more” to compare two options by one small difference. Lexical hint(s): 高い:expensive | 便利な:convenient | 信頼できる:reliable",
+      "learningTarget": "Pattern 1 communicative production in CORE-87 through the exact current prompt: Use “It's slightly more” to compare two options by one small difference.",
+      "pedagogicalValue": "This page has one job—Pattern 1 communicative production—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 communicative production is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "高い:expensive",
+          "便利な:convenient",
+          "信頼できる:reliable"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “It's slightly more” to compare two options by one small difference."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud.",
+      "tutorAction": "Introduce Pattern 2 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to say that one option is far below another on one quality. Please read the title aloud. | 一つの性質で、一方が他方よりはるかに劣ると伝えるときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-87: Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—Pattern 2 transition—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 transition is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete Pattern 2 examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): It's nowhere near as | as | 遠く | 及びません | It's nowhere near as | as | 遠く | 及びません | It's nowhere near as | as | 遠く | 及びません",
+      "learningTarget": "Pattern 2 meaning and model in CORE-87: Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—Pattern 2 meaning and model—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 meaning and model is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません",
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません",
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): It's nowhere near as | as | 遠く | 及びません | It's nowhere near as | as | 遠く | 及びません | It's nowhere near as | as | 遠く | 及びません | It's nowhere near as | as | 遠く | 及びません",
+      "learningTarget": "Pattern 2 read-aloud in CORE-87: Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—Pattern 2 read-aloud—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 read-aloud is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません",
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません",
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません",
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice the Pattern 2 form and read the examples.",
+      "tutorAction": "Explain only the displayed form operation.",
+      "targetOrPrompt": "Pattern 2 form explanation for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "Pattern 2 form explanation in CORE-87: Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—Pattern 2 form explanation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 form explanation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Order each Pattern 2 sentence, then say it aloud.",
+      "tutorAction": "Allow an attempt before giving help.",
+      "targetOrPrompt": "Pattern 2 word-order retrieval for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-87: Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—Pattern 2 word-order retrieval—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 word-order retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole Pattern 2 sentence including the target blanks.",
+      "tutorAction": "Listen first, then type only the target words.",
+      "targetOrPrompt": "Highlighted target(s): 遠く | 及びません | 遠く | 及びません | 遠く | 及びません | 遠く | 及びません Blank answer(s): It's nowhere near as | as | It's nowhere near as | as | It's nowhere near as | as | It's nowhere near as | as",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-87: Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—Pattern 2 controlled target retrieval—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 controlled target retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "遠く",
+          "及びません",
+          "遠く",
+          "及びません",
+          "遠く",
+          "及びません",
+          "遠く",
+          "及びません"
+        ],
+        "blankAnswers": [
+          "It's nowhere near as",
+          "as",
+          "It's nowhere near as",
+          "as",
+          "It's nowhere near as",
+          "as",
+          "It's nowhere near as",
+          "as"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete Pattern 2 sentence in English, using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): It's nowhere near as fast as the train. | It's nowhere near as cheap as the bus. | It's nowhere near as quiet as this room. | It's nowhere near as convenient as the other option. Lexical hint(s): 電車:train | バス:bus | 部屋:room | 選択肢:option",
+      "learningTarget": "Pattern 2 supported translation in CORE-87: Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—Pattern 2 supported translation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 supported translation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "It's nowhere near as fast as the train.",
+          "It's nowhere near as cheap as the bus.",
+          "It's nowhere near as quiet as this room.",
+          "It's nowhere near as convenient as the other option."
+        ],
+        "hintChips": [
+          "電車:train",
+          "バス:bus",
+          "部屋:room",
+          "選択肢:option"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the exact Pattern 2 frame to perform the named communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “It's nowhere near as … as” to compare the same options by one large difference. Lexical hint(s): 電車:train | バス:bus | 選択肢:option",
+      "learningTarget": "Pattern 2 communicative production in CORE-87 through the exact current prompt: Use “It's nowhere near as … as” to compare the same options by one large difference.",
+      "pedagogicalValue": "This page has one job—Pattern 2 communicative production—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 communicative production is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "電車:train",
+          "バス:bus",
+          "選択肢:option"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “It's nowhere near as … as” to compare the same options by one large difference."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the short supporting expressions aloud.",
+      "tutorAction": "Clarify meaning only if needed; do not turn the page into another drill.",
+      "targetOrPrompt": "role-play support activation for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "role-play support activation in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—role-play support activation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play support activation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play support activation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and prepare to use both patterns.",
+      "tutorAction": "Set the two roles and begin without modeling the full scene.",
+      "targetOrPrompt": "role-play orientation for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "role-play orientation in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—role-play orientation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play orientation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play orientation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every learner-owned line in the complete role-play.",
+      "tutorAction": "Take the named counterpart role and read only those lines.",
+      "targetOrPrompt": "Highlighted target(s): It's slightly more | 少しだけ | It's nowhere near as | as | 遠く | 及びません",
+      "learningTarget": "complete role-play in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—complete role-play—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform complete role-play for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for complete role-play is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "It's slightly more",
+          "少しだけ",
+          "It's nowhere near as",
+          "as",
+          "遠く",
+          "及びません"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say the learner role and supply each missing taught expression.",
+      "tutorAction": "Take the named counterpart role and type only the learner's missing target words.",
+      "targetOrPrompt": "Blank answer(s): It's slightly more | It's nowhere near as | as",
+      "learningTarget": "role-play target retrieval in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—role-play target retrieval—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play target retrieval for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play target retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "It's slightly more",
+          "It's nowhere near as",
+          "as"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's personal question, then ask the displayed question back.",
+      "tutorAction": "Answer the learner's reciprocal question truthfully and follow the most interesting detail.",
+      "targetOrPrompt": "Exact learner prompt(s): What two things do you compare most often before buying? | What about you—what do you compare?",
+      "learningTarget": "reciprocal personal conversation in CORE-87 through the exact current prompt: What two things do you compare most often before buying? | What about you—what do you compare?",
+      "pedagogicalValue": "This page has one job—reciprocal personal conversation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal personal conversation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for reciprocal personal conversation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What two things do you compare most often before buying?",
+          "What about you—what do you compare?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both patterns in the new six-turn transfer role-play.",
+      "tutorAction": "Take the named new counterpart role and keep the exchange moving naturally.",
+      "targetOrPrompt": "Blank answer(s): It's slightly more | It's nowhere near as | as",
+      "learningTarget": "transfer role-play in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—transfer role-play—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for transfer role-play is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "It's slightly more",
+          "It's nowhere near as",
+          "as"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the practical usage distinction and its examples.",
+      "tutorAction": "Explain the nuance briefly and relate it to the completed role-play.",
+      "targetOrPrompt": "pragmatic consolidation for “It's slightly more expensive,” using “It's slightly more” and “It's nowhere near as … as” as the two taught frames.",
+      "learningTarget": "pragmatic consolidation in CORE-87: Use this to mark a small, precise difference on a comparative scale. Then Use this to say that one option is far below another on one quality.",
+      "pedagogicalValue": "This page has one job—pragmatic consolidation—and moves the learner from noticing toward usable speech with “It's slightly more” and “It's nowhere near as … as.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform pragmatic consolidation for “It's slightly more expensive” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for pragmatic consolidation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

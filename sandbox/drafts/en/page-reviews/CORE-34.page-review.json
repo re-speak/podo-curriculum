@@ -1,0 +1,672 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-daily-life-and-past/lessons/34-i-didnt-sleep-well/lesson.html",
+  "lessonSha256": "dd3e2cfe1091001f30070fbf998b4c30d47ee5d17403bec97f0e7803c023ead7",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the displayed lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"lesson-goal\" data-act=\"Everyday English\"> GOAL I didn't sleep well (よく眠れませんでした) Give a negative answer about the past and add a reason. Please read the title aloud.過去について否定で答え、理由を加えましょう。タイトルを声に出して読んでください。 Have the learner read the title once, then move on. <div class=\"section\"",
+      "learningTarget": "Goal orientation for integrated use of I didn't + a plain verb and I had too much + an uncountable noun. in CORE-34: Didn't carries the past, so use the plain verb after it. Then Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of I didn't + a plain verb and I had too much + an uncountable noun during goal orientation, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for goal orientation; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown on the page.",
+      "tutorAction": "Listen to the three known words; do not turn this into a new-vocabulary lesson.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"words-you-know\">Words you know (知っている単語)Say the three familiar words in English.知っている3つの単語を英語で言いましょう。コーヒー→coffeeブレックファスト→breakfastワーク→work <div class=\"transition-page\"",
+      "learningTarget": "Known-word activation for integrated use of I didn't + a plain verb and I had too much + an uncountable noun. in CORE-34: Didn't carries the past, so use the plain verb after it. Then Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of I didn't + a plain verb and I had too much + an uncountable noun during known-word activation, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for known-word activation; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the displayed Pattern 1 title aloud once and get ready for the next activity.",
+      "tutorAction": "Introduce Pattern 1 in one line, have the learner read the title, then move on.",
+      "targetOrPrompt": "Exact visible instruction: Didn't carries the past, so use the plain verb after it. Please read the title aloud. | 過去は didn't が表すので、そのあとは動詞の原形を使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition for I didn't + a plain verb. in CORE-34: Didn't carries the past, so use the plain verb after it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 transition, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 transition; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read every complete Pattern 1 example aloud after the brief meaning explanation.",
+      "tutorAction": "Briefly explain the meaning, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: I didn't | 眠れませんでした | I didn't | 食べませんでした | I didn't | 外出しませんでした",
+      "learningTarget": "Pattern 1 meaning and model for I didn't + a plain verb. in CORE-34: Didn't carries the past, so use the plain verb after it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 meaning and model, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 meaning and model; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I didn't",
+          "眠れませんでした",
+          "I didn't",
+          "食べませんでした",
+          "I didn't",
+          "外出しませんでした"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 sentence aloud.",
+      "tutorAction": "Listen to each complete sentence; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: I didn't | 眠れませんでした | I didn't | 食べませんでした | I didn't | 外出しませんでした | I didn't | 終えませんでした",
+      "learningTarget": "Pattern 1 complete-sentence read-aloud for I didn't + a plain verb. in CORE-34: Didn't carries the past, so use the plain verb after it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 complete-sentence read-aloud, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 complete-sentence read-aloud; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I didn't",
+          "眠れませんでした",
+          "I didn't",
+          "食べませんでした",
+          "I didn't",
+          "外出しませんでした",
+          "I didn't",
+          "終えませんでした"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed operation briefly and check that the learner can locate it in the examples.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p1-rule\">See the operation (形の変化を見よう)Didn't carries the past, so use the plain verb after it.過去は didn't が表すので、そのあとは動詞の原形を使います。Didn't carries the past, so use the plain verb after it.Pattern 1パターン1I didn't sleep well.I didn't eat breakfast. <div class=\"section\"",
+      "learningTarget": "Pattern 1 form explanation for I didn't + a plain verb. in CORE-34: Didn't carries the past, so use the plain verb after it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 form explanation, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 form explanation; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the option matching the Japanese, then read the entire completed Pattern 1 sentence aloud.",
+      "tutorAction": "After each choice, have the learner read the whole completed sentence before moving on.",
+      "targetOrPrompt": "Exact contrasts: sleep vs slept | eat vs ate | go vs went | finish vs finished; highlighted cues: 眠れませんでした | 食べませんでした | 外出しませんでした | 終えませんでした",
+      "learningTarget": "Pattern 1 discriminating choice for I didn't + a plain verb. in CORE-34: Didn't carries the past, so use the plain verb after it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 discriminating choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 discriminating choice, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "The exact contrasts (sleep vs slept | eat vs ate | go vs went | finish vs finished) require a real form or meaning decision; correct alternatives vary across rows and each distractor diagnoses the named contrast.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 discriminating choice; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "眠れませんでした",
+          "食べませんでした",
+          "外出しませんでした",
+          "終えませんでした"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say every complete Pattern 1 sentence aloud, including all missing words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact answers: I didn't | I didn't | I didn't | I didn't",
+      "learningTarget": "Pattern 1 controlled retrieval for I didn't + a plain verb. in CORE-34: Didn't carries the past, so use the plain verb after it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 controlled retrieval, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 controlled retrieval; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "眠れませんでした",
+          "食べませんでした",
+          "外出しませんでした",
+          "終えませんでした"
+        ],
+        "blankAnswers": [
+          "I didn't",
+          "I didn't",
+          "I didn't",
+          "I didn't"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue, then say the complete Pattern 1 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as the learner says it.",
+      "targetOrPrompt": "Exact answers: I didn't sleep well. | I didn't eat breakfast. | I didn't go out. | I didn't finish the work.; exact lexical support: よく眠る:sleep well | 朝食:breakfast | 外出する:go out | 仕事:work; support stage: supported",
+      "learningTarget": "Pattern 1 supported whole-sentence production for I didn't + a plain verb. in CORE-34: Didn't carries the past, so use the plain verb after it.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 supported whole-sentence production, before the lesson increases independence.",
+      "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (よく眠る:sleep well | 朝食:breakfast | 外出する:go out | 仕事:work); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 supported whole-sentence production; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I didn't sleep well.",
+          "I didn't eat breakfast.",
+          "I didn't go out.",
+          "I didn't finish the work."
+        ],
+        "hintChips": [
+          "よく眠る:sleep well",
+          "朝食:breakfast",
+          "外出する:go out",
+          "仕事:work"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personally meaningful Pattern 1 sentence using the exact prompt.",
+      "tutorAction": "Let the learner answer aloud, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “I didn't ___” to say one thing you really did not do. Lexical hint(s): よく眠る:sleep well | 朝食:breakfast | 外出する:go out",
+      "learningTarget": "Pattern 1 communicative production for I didn't + a plain verb. in CORE-34 through the exact current prompt: Now use “I didn't ___” to say one thing you really did not do.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I didn't + a plain verb during Pattern 1 communicative production, before the lesson increases independence.",
+      "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (よく眠る:sleep well | 朝食:breakfast | 外出する:go out); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
+      "articleTreatment": "Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 1 communicative production; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "よく眠る:sleep well",
+          "朝食:breakfast",
+          "外出する:go out"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I didn't ___” to say one thing you really did not do."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the displayed Pattern 2 title aloud once and get ready for the next activity.",
+      "tutorAction": "Introduce Pattern 2 in one line, have the learner read the title, then move on.",
+      "targetOrPrompt": "Exact visible instruction: Use too much before an uncountable amount that caused a problem. Please read the title aloud. | 問題になるほど多い不可算の量には too much を使います。タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition for I had too much + an uncountable noun. in CORE-34: Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I had too much + an uncountable noun during Pattern 2 transition, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (a, an, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 2 transition; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read every complete Pattern 2 example aloud after the brief meaning explanation.",
+      "tutorAction": "Briefly explain the meaning, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: I had too much | 飲みすぎました | I had too much | 多すぎました | I had too much | 多すぎました",
+      "learningTarget": "Pattern 2 meaning and model for I had too much + an uncountable noun. in CORE-34: Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I had too much + an uncountable noun during Pattern 2 meaning and model, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (a, an, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 2 meaning and model; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I had too much",
+          "飲みすぎました",
+          "I had too much",
+          "多すぎました",
+          "I had too much",
+          "多すぎました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 sentence aloud.",
+      "tutorAction": "Listen to each complete sentence; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: I had too much | 飲みすぎました | I had too much | 多すぎました | I had too much | 多すぎました | I had too much | 多すぎました",
+      "learningTarget": "Pattern 2 complete-sentence read-aloud for I had too much + an uncountable noun. in CORE-34: Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 complete-sentence read-aloud—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I had too much + an uncountable noun during Pattern 2 complete-sentence read-aloud, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 2 complete-sentence read-aloud; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I had too much",
+          "飲みすぎました",
+          "I had too much",
+          "多すぎました",
+          "I had too much",
+          "多すぎました",
+          "I had too much",
+          "多すぎました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed operation briefly and check that the learner can locate it in the examples.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p2-rule\">See the operation (形の変化を見よう)Use too much before an uncountable amount that caused a problem.問題になるほど多い不可算の量には too much を使います。Use too much before an uncountable amount that caused a problem.Pattern 2パターン2I had too much coffee.I had too much work. <div class=\"section\"",
+      "learningTarget": "Pattern 2 form explanation for I had too much + an uncountable noun. in CORE-34: Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I had too much + an uncountable noun during Pattern 2 form explanation, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (a, an, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 2 form explanation; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say every complete Pattern 2 sentence aloud, including all missing words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact answers: I had too much | I had too much | I had too much | I had too much",
+      "learningTarget": "Pattern 2 controlled retrieval for I had too much + an uncountable noun. in CORE-34: Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I had too much + an uncountable noun during Pattern 2 controlled retrieval, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 2 controlled retrieval; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "飲みすぎました",
+          "多すぎました",
+          "多すぎました",
+          "多すぎました"
+        ],
+        "blankAnswers": [
+          "I had too much",
+          "I had too much",
+          "I had too much",
+          "I had too much"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue, then say the complete Pattern 2 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as the learner says it.",
+      "targetOrPrompt": "Exact answers: I had too much coffee. | I had too much work. | I had too much food. | I had too much homework.; exact lexical support: コーヒー:coffee | 仕事:work | 食べ物:food | 宿題:homework; support stage: supported",
+      "learningTarget": "Pattern 2 supported whole-sentence production for I had too much + an uncountable noun. in CORE-34: Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 supported whole-sentence production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I had too much + an uncountable noun during Pattern 2 supported whole-sentence production, before the lesson increases independence.",
+      "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (コーヒー:coffee | 仕事:work | 食べ物:food | 宿題:homework); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 2 supported whole-sentence production; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I had too much coffee.",
+          "I had too much work.",
+          "I had too much food.",
+          "I had too much homework."
+        ],
+        "hintChips": [
+          "コーヒー:coffee",
+          "仕事:work",
+          "食べ物:food",
+          "宿題:homework"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personally meaningful Pattern 2 sentence using the exact prompt.",
+      "tutorAction": "Let the learner answer aloud, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “I had too much ___” to give a real or imagined reason. Lexical hint(s): コーヒー:coffee | 仕事:work | 食べ物:food",
+      "learningTarget": "Pattern 2 communicative production for I had too much + an uncountable noun. in CORE-34 through the exact current prompt: Now use “I had too much ___” to give a real or imagined reason.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 communicative production—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle I had too much + an uncountable noun during Pattern 2 communicative production, before the lesson increases independence.",
+      "nonTargetSupport": "Only changing lexical content is supported by the exact hint chips (コーヒー:coffee | 仕事:work | 食べ物:food); the taught frame, auxiliaries, articles, and inflections remain learner retrieval.",
+      "articleTreatment": "Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for Pattern 2 communicative production; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "コーヒー:coffee",
+          "仕事:work",
+          "食べ物:food"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I had too much ___” to give a real or imagined reason."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Get ready to use both patterns in one conversation.",
+      "tutorAction": "Introduce the conversation in one line, then move directly into the role-play.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part3-intro\" data-act=\"Conversation\">PART 3Use it in a conversation (会話で使おう)Now, let's use both patterns in a conversation.では、二つのパターンを会話で使ってみましょう。Introduce the conversation, then move on. <div class=\"section\"",
+      "learningTarget": "Conversation transition for integrated use of I didn't + a plain verb and I had too much + an uncountable noun. in CORE-34: Didn't carries the past, so use the plain verb after it. Then Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—conversation transition—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of I didn't + a plain verb and I had too much + an uncountable noun during conversation transition, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for conversation transition; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Take the Me role and read every learner line aloud in the complete conversation.",
+      "tutorAction": "Take the named partner role and read only the partner lines.",
+      "targetOrPrompt": "Highlighted target evidence: I didn't | 眠れませんでした | I had too much | 飲みすぎました",
+      "learningTarget": "Scripted role-play for integrated use of I didn't + a plain verb and I had too much + an uncountable noun. in CORE-34: Didn't carries the past, so use the plain verb after it. Then Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—scripted role-play—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of I didn't + a plain verb and I had too much + an uncountable noun during scripted role-play, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for scripted role-play; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I didn't",
+          "眠れませんでした",
+          "I had too much",
+          "飲みすぎました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Take the Me role and say each complete learner line, including the missing words.",
+      "tutorAction": "Take the partner role and type only the missing words the learner says.",
+      "targetOrPrompt": "Exact answers: I didn't | I had too much",
+      "learningTarget": "Role-play retrieval for integrated use of I didn't + a plain verb and I had too much + an uncountable noun. in CORE-34: Didn't carries the past, so use the plain verb after it. Then Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—role-play retrieval—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of I didn't + a plain verb and I had too much + an uncountable noun during role-play retrieval, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for role-play retrieval; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I didn't",
+          "I had too much"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the relevant real-life question in your own words, then ask the tutor back.",
+      "tutorAction": "Ask the exact question, follow the most interesting detail, and give a brief real answer when asked back.",
+      "targetOrPrompt": "Exact learner prompt(s): What usually helps you recover after a bad night's sleep? | How about you?",
+      "learningTarget": "Reciprocal free talk for What usually helps you recover after a bad night's sleep?. in CORE-34 through the exact current prompt: What usually helps you recover after a bad night's sleep? | How about you?",
+      "pedagogicalValue": "This page has one distinct job—reciprocal free talk—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle What usually helps you recover after a bad night's sleep? during reciprocal free talk, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for reciprocal free talk; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What usually helps you recover after a bad night's sleep?",
+          "How about you?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Take the Me role and complete every learner line in the new situation.",
+      "tutorAction": "Take the named partner role and keep the exchange moving naturally.",
+      "targetOrPrompt": "Exact answers: I didn't | I had too much",
+      "learningTarget": "New-situation transfer for integrated use of I didn't + a plain verb and I had too much + an uncountable noun. in CORE-34: Didn't carries the past, so use the plain verb after it. Then Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—new-situation transfer—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of I didn't + a plain verb and I had too much + an uncountable noun during new-situation transfer, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (a, the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for new-situation transfer; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I didn't",
+          "I had too much"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two conversational expressions and choose by meaning.",
+      "tutorAction": "Explain the contrast briefly, then ask which expression fits each meaning.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"native-tip\">Unfortunately (unfortunately の位置)Put Unfortunately at the front when the bad result matters to the listener.残念な結果を伝えるときは、Unfortunately を文頭に置けます。Plain fact事実だけI didn't finish the work.仕事を終えませんでした。Pick by meaning 意味で選ぶSignals bad news残念な知らせUnfortunately, I didn't finish.残念ながら、終わりませんでした。 ← —— T →",
+      "learningTarget": "Meaning-based nuance choice for integrated use of I didn't + a plain verb and I had too much + an uncountable noun. in CORE-34: Didn't carries the past, so use the plain verb after it. Then Use too much before an uncountable amount that caused a problem.",
+      "pedagogicalValue": "This page has one distinct job—meaning-based nuance choice—and advances the learner from recognition toward independent, usable speech without duplicating the adjacent activity.",
+      "failureDiagnosis": "Difficulty here specifically shows whether the learner can handle integrated use of I didn't + a plain verb and I had too much + an uncountable noun during meaning-based nuance choice, before the lesson increases independence.",
+      "nonTargetSupport": "The complete bilingual model keeps non-target vocabulary visible; no unrelated lexical memory test is introduced on this page.",
+      "articleTreatment": "Visible articles (the) remain attached to their noun phrases and are not turned into unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used; the learner responds through reading, retrieval, personal production, role-play, or conversation.",
+      "componentConsistency": "The page uses one shared component for meaning-based nuance choice; response capture appears only where spoken production must be recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

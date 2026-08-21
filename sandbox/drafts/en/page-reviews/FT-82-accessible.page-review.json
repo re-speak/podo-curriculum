@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/82-a-place-you-would-happily-visit-again/lesson.html",
+  "lessonSha256": "66f5ec8796d80660603aa62274b5cb61ba33ee0fff4d2b2ce65b3ca07e11031b",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “A place you would happily visit again” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "A place you would happily visit again / また喜んで訪れたい場所. Let's explain what makes a place worth visiting again. / もう一度訪れる価値のある場所について話しましょう。",
+      "learningTarget": "Orient the learner to a conversation about A place you would happily visit again without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; personal disclosure is not being tested.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and action as the English.",
+      "articleTreatment": "This page only introduces the topic; it does not preview or teach the article.",
+      "choiceQuality": "No fixed choice set appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Why a place can be worth revisiting / もう一度行く価値が生まれる理由. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “A return visit is different from seeing a place for the first time.” to “The strongest reason to return is often one unfinished curiosity.”, as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds multiple defensible angles for the later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claim translations are available; this accessible article owns these selective glosses: none needed.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real answer when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and does not add a separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “Choose a place that deserves a return visit. What makes it worth going back?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Choose a place that deserves a return visit. What makes it worth going back?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Choose a place that deserves a return visit. What makes it worth going back? / 再訪する価値のある場所を一つ選んでください。なぜ戻る価値がありますか？ Follow-up pool: Who first visited the place? Which memory draws the visitor back?",
+      "learningTarget": "Develop the opening angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “opening” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Choose a place that deserves a return visit. What makes it worth going back?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “What would the ideal return visit look like?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What would the ideal return visit look like?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What would the ideal return visit look like? / 理想的な再訪は、どんなものになりますか？ Follow-up pool: Which season or time would fit? How long should the visit last?",
+      "learningTarget": "Develop the setting angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “setting” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would the ideal return visit look like?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “Which memory makes the place worth revisiting?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Which memory makes the place worth revisiting?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Which memory makes the place worth revisiting? / どの思い出が、その場所をもう一度訪れる価値のあるものにしていますか？ Follow-up pool: Is it one scene or the overall feeling? What detail is hardest to replace?",
+      "learningTarget": "Develop the appeal angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “appeal” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which memory makes the place worth revisiting?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “Who would make the return visit better?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Who would make the return visit better?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Who would make the return visit better? / 誰と行けば、その再訪がもっとよくなりますか？ Follow-up pool: What would that person notice? Which part would you share?",
+      "learningTarget": "Develop the company angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “company” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Who would make the return visit better?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “What might be different when the visitor returns?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What might be different when the visitor returns?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What might be different when the visitor returns? / 訪れる人が戻ったとき、何が違っているかもしれませんか？ Follow-up pool: Which change matters most? What should remain the same?",
+      "learningTarget": "Develop the change angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “change” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What might be different when the visitor returns?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “What should the visitor do first on the return?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What should the visitor do first on the return?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What should the visitor do first on the return? / 再訪したら、最初に何をするべきですか？ Follow-up pool: What deserves more time? What can be skipped this time?",
+      "learningTarget": "Develop the plan angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “plan” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What should the visitor do first on the return?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “Can high expectations spoil a return visit?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Can high expectations spoil a return visit?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Can high expectations spoil a return visit? / 期待が高すぎると、再訪が台無しになることはありますか？ Follow-up pool: Which expectation might be too high? How could the visitor stay open to change?",
+      "learningTarget": "Develop the risk angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “risk” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Can high expectations spoil a return visit?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the standalone question “What quality from that place would you bring into daily life?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What quality from that place would you bring into daily life?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What quality from that place would you bring into daily life? / その場所のどんなよさを日常生活に取り入れたいですか？ Follow-up pool: Why that quality? How could it work at home?",
+      "learningTarget": "Develop the flip angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “flip” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What quality from that place would you bring into daily life?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next step, then repeat one useful corrected sentence.",
+      "tutorAction": "Give one specific strength and one useful next step; ask for one final repetition before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one actionable improvement from the conversation.",
+      "pedagogicalValue": "Turns the open discussion into a specific, repeatable learning takeaway.",
+      "failureDiagnosis": "Generic praise or a long correction list would fail the one-strength, one-next-step contract.",
+      "nonTargetSupport": "The Japanese closing line mirrors the two-part feedback promise.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No choices or distractors appear; the tutor records individualized feedback.",
+      "componentConsistency": "Uses the approved synchronized Freetalking feedback box and final repetition instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

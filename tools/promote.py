@@ -285,11 +285,16 @@ def find_asset(name: str, roots: tuple[pathlib.Path, ...]) -> pathlib.Path:
     raise PromoteFailed(f"asset not found: {name}\n  looked in {where}")
 
 
+def clean_generated_page(page: str) -> str:
+    """Remove line-end whitespace from deploy output without changing a reviewed draft."""
+    return re.sub(r"[ \t]+(?=\r?$)", "", page, flags=re.MULTILINE)
+
+
 def build_deck(target: pathlib.Path, page: str, sheets: list[str],
                scripts: list[str], assets: list[str],
                asset_roots: tuple[pathlib.Path, ...]) -> None:
     target.mkdir(parents=True, exist_ok=True)
-    (target / "index.html").write_text(page, encoding="utf-8")
+    (target / "index.html").write_text(clean_generated_page(page), encoding="utf-8")
 
     for name in sheets:
         origin = CSS_ROOT / name

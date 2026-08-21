@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-accessible/lessons/62-a-breakup-that-was-hard-to-get-over/lesson.html",
+  "lessonSha256": "83a01ff476eff049734d1101bd8b72a13bd0ba19d940ddbc972efd8e4f5ce5cb",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “A breakup that was hard to get over” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “A breakup that was hard to get over” once, and move on.",
+      "targetOrPrompt": "Let's talk about why breakups can be difficult and what helps people recover. Please read the title aloud. / 別れが難しい理由と、立ち直るために役立つことを話しましょう。",
+      "learningTarget": "Orient the learner to a live conversation about “A breakup that was hard to get over” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “A breakup that was hard to get over” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no topic knowledge or private experience is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors the can-do and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Why some endings take time (立ち直るまで時間がかかる理由): Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use the 10-claim pre-study article to seed concrete language and viewpoints for “A breakup that was hard to get over.”",
+      "pedagogicalValue": "The article develops ten distinct claims from “There is no correct amount of time to get over a breakup.” to “Moving forward does not mean the relationship meant nothing.”, giving the prompt pool several defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.",
+      "nonTargetSupport": "All ten claims have aligned variant-specific Japanese support; selective owned glosses are: get over=立ち直る.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “A breakup that was hard to get over” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “A breakup that was hard to get over” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Why can some breakups be so hard to get over?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What is lost besides the relationship?” rather than asking every follow-up.",
+      "targetOrPrompt": "Why can some breakups be so hard to get over? / なぜ、立ち直るのがとても難しい別れがあるのでしょうか？",
+      "learningTarget": "Explore the distinct “Only what feels safe (話せる範囲で)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What is lost besides the relationship?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What is lost besides the relationship?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can some breakups be so hard to get over?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which part can take longest to accept?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why can some breakups be so hard to get over?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “What changes most after a relationship ends?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which daily routine changes first?” rather than asking every follow-up.",
+      "targetOrPrompt": "What changes most after a relationship ends? / 人間関係が終わった後、最も大きく変わるのは何ですか？",
+      "learningTarget": "Explore the distinct “What ended (終わったもの)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which daily routine changes first?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which daily routine changes first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What changes most after a relationship ends?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which future plan is hardest to replace?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What changes most after a relationship ends?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “What affects how long it takes to recover from a breakup?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Does the length of the relationship matter?” rather than asking every follow-up.",
+      "targetOrPrompt": "What affects how long it takes to recover from a breakup? / 別れから立ち直るまでの時間には、何が影響しますか？",
+      "learningTarget": "Explore the distinct “Time to recover (回復までの時間)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Does the length of the relationship matter?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Does the length of the relationship matter?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What affects how long it takes to recover from a breakup?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which sign shows progress?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What affects how long it takes to recover from a breakup?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “When is privacy helpful after a breakup, and when is support better?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “What can solitude provide?” rather than asking every follow-up.",
+      "targetOrPrompt": "When is privacy helpful after a breakup, and when is support better? / 別れの後、一人でいることが役立つのはいつで、人の支えがよりよいのはいつですか？",
+      "learningTarget": "Explore the distinct “Who knew (誰に話したか)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What can solitude provide?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What can solitude provide?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is privacy helpful after a breakup, and when is support better?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What kind of support feels useful?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When is privacy helpful after a breakup, and when is support better?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “What genuinely helps someone begin to get over a breakup?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Is the help emotional or practical?” rather than asking every follow-up.",
+      "targetOrPrompt": "What genuinely helps someone begin to get over a breakup? / 別れから立ち直り始めるために、本当に役立つのは何ですか？",
+      "learningTarget": "Explore the distinct “What helped (助けになったもの)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Is the help emotional or practical?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Is the help emotional or practical?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What genuinely helps someone begin to get over a breakup?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which common advice does not help?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What genuinely helps someone begin to get over a breakup?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “What can people understand about a breakup only later?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which pattern becomes clearer?” rather than asking every follow-up.",
+      "targetOrPrompt": "What can people understand about a breakup only later? / 別れについて、後になって初めて分かることは何ですか？",
+      "learningTarget": "Explore the distinct “What is clearer now (今分かること)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which pattern becomes clearer?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which pattern becomes clearer?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can people understand about a breakup only later?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Can hindsight be unfair?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can people understand about a breakup only later?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “What advice sounds kind after a breakup but is not actually helpful?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Why can it feel dismissive?” rather than asking every follow-up.",
+      "targetOrPrompt": "What advice sounds kind after a breakup but is not actually helpful? / 別れの後、優しく聞こえても実際には役に立たない助言は何ですか？",
+      "learningTarget": "Explore the distinct “What to say then (当時伝えること)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Why can it feel dismissive?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Why can it feel dismissive?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What advice sounds kind after a breakup but is not actually helpful?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What could someone say instead?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What advice sounds kind after a breakup but is not actually helpful?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What is one sign that someone is moving forward without erasing the past?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Is the sign emotional or practical?” rather than asking every follow-up.",
+      "targetOrPrompt": "What is one sign that someone is moving forward without erasing the past? / 過去を消さずに前に進んでいることを示すサインは何ですか？",
+      "learningTarget": "Explore the distinct “A sign of moving forward (前に進むサイン)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Is the sign emotional or practical?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Is the sign emotional or practical?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is one sign that someone is moving forward without erasing the past?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What might still remain difficult?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is one sign that someone is moving forward without erasing the past?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Review the tutor’s most useful correction and finish with one improved sentence.",
+      "tutorAction": "Give brief actionable feedback tied to language the learner actually used, not a generic lecture.",
+      "targetOrPrompt": "Let’s look at one useful correction from today’s conversation. / 今日の会話から、役に立つ訂正を一つ確認しましょう。",
+      "learningTarget": "Consolidate one transferable improvement from the live conversation about “A breakup that was hard to get over.”",
+      "pedagogicalValue": "Turns the learner’s own production into a specific next step while preserving the fluency-first conversation.",
+      "failureDiagnosis": "The selected correction identifies one useful language gap from actual production; an empty generic note would not satisfy the page job.",
+      "nonTargetSupport": "Japanese support frames the short review; the tutor chooses language appropriate to the learner’s level.",
+      "articleTreatment": "Not applicable; feedback must come from the live conversation rather than testing article recall.",
+      "choiceQuality": "No distractors appear; the tutor records only a useful correction or note from observed speech.",
+      "componentConsistency": "Uses the approved actionable feedback page and Student's sentence terminology.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

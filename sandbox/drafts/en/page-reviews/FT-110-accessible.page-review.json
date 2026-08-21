@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/110-morning-person-or-night-owl/lesson.html",
+  "lessonSha256": "7935a59e91e7bca5db2ee406db640b49b8ee80bae42c56e60125813de482c7d9",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “Morning person or night owl?” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "Morning person or night owl? / 朝型、それとも夜型？. Let's compare a morning schedule and a night schedule, then explain what could change your choice. / 朝型の生活と夜型の生活を比べ、何が変われば選択も変わるか話しましょう。",
+      "learningTarget": "Orient the learner to a balanced conversation about Morning person or night owl? without supplying a preferred answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; the learner’s preference is not graded.",
+      "nonTargetSupport": "The Japanese can-do “朝型の生活と夜型の生活を比べ、何が変われば選択も変わるか話しましょう。” and title “朝型、それとも夜型？” match the English topic and action.",
+      "articleTreatment": "This page introduces the topic only; it neither previews nor teaches the article.",
+      "choiceQuality": "No fixed choice UI appears; the title names two defensible sides for later discussion.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome cards, sample answer, or second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What makes the choice change / 選択を変えるもの. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten topic-specific claims, from “Morning light helps set the body clock for the day.” to “A good schedule fits both the body and the obligations that cannot move.”, as optional input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds ten distinct factual or practical angles that can deepen the later choice conversation.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claims are available; selective gloss support is body clock=体内時計.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react naturally, share a brief real answer or relevant perspective, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “When does your mind usually feel clearest?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “When does your mind usually feel clearest?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “When does your mind usually feel clearest?” / “頭がいちばんさえるのは、何時ごろですか？” Follow-ups: “What kind of task fits that time?” and “How long does the focus last?”",
+      "learningTarget": "Develop the distinct “Your clearest hour” angle of Morning person or night owl? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Your clearest hour” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “When does your mind usually feel clearest?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “頭がいちばんさえるのは、何時ごろですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When does your mind usually feel clearest?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “When would you sleep and wake if tomorrow had no schedule?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “When would you sleep and wake if tomorrow had no schedule?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “When would you sleep and wake if tomorrow had no schedule?” / “明日何も予定がなければ、何時に寝て起きますか？” Follow-ups: “How much sleep would that give you?” and “Would you keep the same schedule for a week?”",
+      "learningTarget": "Develop the distinct “A day with no schedule” angle of Morning person or night owl? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A day with no schedule” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “When would you sleep and wake if tomorrow had no schedule?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “明日何も予定がなければ、何時に寝て起きますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When would you sleep and wake if tomorrow had no schedule?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “For your most important tasks, would you rather start early or work late?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “For your most important tasks, would you rather start early or work late?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “For your most important tasks, would you rather start early or work late?” / “大切なことをするとき、朝早く始めるのと夜遅く取り組むのと、どちらがよいですか？” Follow-ups: “When would you do your hardest work?” and “What is attractive about the other schedule?”",
+      "learningTarget": "Develop the distinct “Early or late” angle of Morning person or night owl? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Early or late” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “For your most important tasks, would you rather start early or work late?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “大切なことをするとき、朝早く始めるのと夜遅く取り組むのと、どちらがよいですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "For your most important tasks, would you rather start early or work late?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “How would meals, exercise, and social time change with that schedule?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How would meals, exercise, and social time change with that schedule?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “How would meals, exercise, and social time change with that schedule?” / “その生活時間なら、食事、運動、人と会う時間はどう変わりますか？” Follow-ups: “What would be easiest to change?” and “What would be hardest?”",
+      "learningTarget": "Develop the distinct “A changed day” angle of Morning person or night owl? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A changed day” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How would meals, exercise, and social time change with that schedule?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “その生活時間なら、食事、運動、人と会う時間はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How would meals, exercise, and social time change with that schedule?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “How would you live with someone on the opposite schedule?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “How would you live with someone on the opposite schedule?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “How would you live with someone on the opposite schedule?” / “反対の生活時間の人と暮らすなら、どう調整しますか？” Follow-ups: “When would the home need to be quiet?” and “When would you spend time together?”",
+      "learningTarget": "Develop the distinct “Opposite schedules” angle of Morning person or night owl? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “Opposite schedules” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “How would you live with someone on the opposite schedule?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “反対の生活時間の人と暮らすなら、どう調整しますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How would you live with someone on the opposite schedule?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “Would you keep the same rhythm if you never had morning obligations?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “Would you keep the same rhythm if you never had morning obligations?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “Would you keep the same rhythm if you never had morning obligations?” / “朝の予定がなくても、同じ生活時間を選びますか？” Follow-ups: “Would health affect the answer?” and “Would social plans affect it?”",
+      "learningTarget": "Develop the distinct “No early obligation” angle of Morning person or night owl? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “No early obligation” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “Would you keep the same rhythm if you never had morning obligations?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “朝の予定がなくても、同じ生活時間を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you keep the same rhythm if you never had morning obligations?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “What kind of schedule would make you switch to the other rhythm?” aloud and develop the most interesting relevant detail.",
+      "tutorAction": "Ask “What kind of schedule would make you switch to the other rhythm?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.",
+      "targetOrPrompt": "Conversation prompt: “What kind of schedule would make you switch to the other rhythm?” / “どんな予定なら、反対の生活時間を選びますか？” Follow-ups: “How long could you maintain it?” and “How would you return to your usual rhythm?”",
+      "learningTarget": "Develop the distinct “A schedule that changes you” angle of Morning person or night owl? in spontaneous conversation.",
+      "pedagogicalValue": "Adds the topic-specific conversational job “A schedule that changes you” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer to “What kind of schedule would make you switch to the other rhythm?” calls for one contextual follow-up, not a presumed experience or model answer.",
+      "nonTargetSupport": "The Japanese prompt “どんな予定なら、反対の生活時間を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What kind of schedule would make you switch to the other rhythm?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Use the exact ask-back “Ask your tutor whether they would choose a morning schedule or a night schedule, and why.” to invite the tutor’s real answer, then compare the two positions.",
+      "tutorAction": "Let the learner ask “Ask your tutor whether they would choose a morning schedule or a night schedule, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.",
+      "targetOrPrompt": "Reciprocal ask-back: “Ask your tutor whether they would choose a morning schedule or a night schedule, and why.” / “チューターなら朝型の生活と夜型の生活のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “When does your tutor say they think most clearly?” and “Which obligation shapes their schedule?”",
+      "learningTarget": "Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.",
+      "pedagogicalValue": "Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.",
+      "failureDiagnosis": "If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.",
+      "nonTargetSupport": "The Japanese prompt “チューターなら朝型の生活と夜型の生活のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.",
+      "articleTreatment": "The learner may use an article idea or another relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; learner and tutor can both contribute a defensible view.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Ask your tutor whether they would choose a morning schedule or a night schedule, and why."
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then say one useful corrected sentence again.",
+      "tutorAction": "Give one specific strength and one next focus, then invite one useful re-say before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one high-value correction from the live discussion and close with actionable feedback.",
+      "pedagogicalValue": "Turns correction into immediate spoken retrieval instead of ending with passive comments.",
+      "failureDiagnosis": "Difficulty re-saying the selected correction identifies the next specific form or pronunciation focus.",
+      "nonTargetSupport": "The Japanese script matches the one-strength/one-focus contract; tutor-only English controls the re-say.",
+      "articleTreatment": "Not applicable; this page closes the live conversation.",
+      "choiceQuality": "No fixed choices appear; feedback is selected from the learner’s actual production.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

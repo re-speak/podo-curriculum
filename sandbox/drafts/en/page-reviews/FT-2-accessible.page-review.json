@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-accessible/lessons/02-what-people-get-wrong-about-japan/lesson.html",
+  "lessonSha256": "fdfc889d155823acb76f1105b98e985511e141c53e43c4b6246e00246ed742af",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the lesson title aloud once.",
+      "tutorAction": "State today’s discussion goal, ask for one title reading, and move on.",
+      "targetOrPrompt": "Let's talk about an idea about Japan that does not match everyday reality. Please read the title aloud. 日本について、実際の日常とは合わないイメージを話しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to the exact discussion topic without previewing or drilling answers.",
+      "pedagogicalValue": "Sets a usable can-do and gives the learner one immediate, low-pressure speaking action.",
+      "failureDiagnosis": "If the learner cannot read the title, pronunciation support is needed before discussion; no content knowledge is being tested.",
+      "nonTargetSupport": "The Japanese line gives the same can-do and title-reading instruction; no pattern use is required.",
+      "articleTreatment": "Not applicable; this page introduces the goal only.",
+      "choiceQuality": "No choices or distractors appear on the goal page.",
+      "componentConsistency": "Matches the approved FT goal component: title, one short blue instruction box, and one tutor-only action note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article entirely if there is no question or no pre-study.",
+      "targetOrPrompt": "Did you have any questions about the article? 記事について何か質問はありましたか？",
+      "learningTarget": "Use the optional pre-study article to seed ideas and vocabulary without turning class into a reading lesson.",
+      "pedagogicalValue": "Supplies several positions and examples that can make later answers more specific while remaining optional.",
+      "failureDiagnosis": "No article question is not a failure; difficulty explaining a highlighted word identifies a lexical support need only.",
+      "nonTargetSupport": "The accessible article uses shorter clauses and direct wording; every sentence has Japanese support and only relevant blockers are glossed.",
+      "articleTreatment": "Pre-study only: the tutor must not read the article aloud or spend class time working through it line by line.",
+      "choiceQuality": "Sentence reveals are informational supports, not graded choices or distractors.",
+      "componentConsistency": "Uses the approved FT sentence-reveal article component with one short operating script and one tutor-only skip rule.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Article wording and glossary ownership changed after the stricter pair audit; semantic inspection passed, but the revised article page needs root viewport reinspection.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose discussion-first or correction-first for today’s conversation.",
+      "tutorAction": "Honor the selected correction timing while keeping the conversation moving.",
+      "targetOrPrompt": "Please choose your preferred discussion style. 希望する会話の進め方を選んでください。",
+      "learningTarget": "Let the learner choose how fluency and correction will be balanced during open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before eight open prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the selection records a lesson preference.",
+      "nonTargetSupport": "Japanese choice labels explain the two modes, while tutor-only bullets specify the operational difference.",
+      "articleTreatment": "Not applicable; this page controls discussion style.",
+      "choiceQuality": "The two options are mutually exclusive and meaningfully different: delayed essential correction versus correction at natural breaks.",
+      "componentConsistency": "Reuses the approved synced single-choice FT style component from the canonical pilot.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the question pool will be used, then begin the conversation.",
+      "tutorAction": "Use the pages as a flexible pool: react or share briefly, follow interesting details, skip freely, and reserve feedback time.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame the activity as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth, tutor reciprocity, and natural follow-up over superficial page completion.",
+      "failureDiagnosis": "No language failure is tested; a rigid interview-like flow would indicate the tutor has not followed the operating note.",
+      "nonTargetSupport": "The Japanese line explicitly says not every question is required and that interesting answer details should guide the talk.",
+      "articleTreatment": "Not applicable; the article has already been handled or skipped.",
+      "choiceQuality": "No choices or distractors; this is an operating transition.",
+      "componentConsistency": "Matches the approved FT question-pool transition with visible flexibility and a concrete tutor-only reciprocity note.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What surprising question might a visitor ask about Japan?”",
+      "learningTarget": "Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “Have you ever heard a surprising question about Japan from a visitor?” opens this specific angle; “What did the visitor ask?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “What did the visitor ask?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “How did you answer?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What surprising question might a visitor ask about Japan?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "Is there an idea about Japan that is partly true but too simple?",
+      "learningTarget": "Develop the distinct “Partly true? (一部は本当？)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “Is there an idea about Japan that is partly true but too simple?” opens this specific angle; “Which part is true?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “Which part is true?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “What important difference does it miss?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Is there an idea about Japan that is partly true but too simple?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "What do people often believe about Japan?",
+      "learningTarget": "Develop the distinct “The common idea (よくあるイメージ)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “What do people often believe about Japan?” opens this specific angle; “Where have you heard that idea?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “Where have you heard that idea?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “Why might it sound true?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What do people often believe about Japan?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "Why do people get that idea?",
+      "learningTarget": "Develop the distinct “Where it comes from (イメージの出どころ)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “Why do people get that idea?” opens this specific angle; “Does it come from media or a personal story?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “Does it come from media or a personal story?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “Why is it easy to remember?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Why do people get that idea?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "What is everyday life really like?",
+      "learningTarget": "Develop the distinct “The reality (実際のところ)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “What is everyday life really like?” opens this specific angle; “Who or where is different?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “Who or where is different?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “What example would make that clear?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What is everyday life really like?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "What simple idea about another country do you question?",
+      "learningTarget": "Develop the distinct “Turn it around (逆に考えよう)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “What simple idea about another country do you question?” opens this specific angle; “Why might it be too simple?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “Why might it be too simple?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “What would you like to learn from someone there?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What simple idea about another country do you question?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "Conversation prompt: “What can make someone realize an idea about a place was wrong?”",
+      "learningTarget": "Develop the distinct “A changed view (変わった見方)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “Have you ever realized you were wrong about a place?” opens this specific angle; “What changed your mind?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “What changed your mind?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “What part of your old view remained?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can make someone realize an idea about a place was wrong?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.",
+      "tutorAction": "Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.",
+      "targetOrPrompt": "What should visitors ask instead?",
+      "learningTarget": "Develop the distinct “A better question (よりよい質問)” conversational move with reasons, examples, comparison, or personal experience.",
+      "pedagogicalValue": "The prompt “What should visitors ask instead?” opens this specific angle; “Who should they ask?” moves a first answer toward a concrete reason or example.",
+      "failureDiagnosis": "If the answer stays vague after “Who should they ask?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.",
+      "nonTargetSupport": "The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.",
+      "articleTreatment": "The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.",
+      "choiceQuality": "There are no artificial distractors or forced target frames; “How might the answer differ across Japan?” gives the tutor a distinct optional branch rather than a repeated script.",
+      "componentConsistency": "Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What should visitors ask instead?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next focus, then repeat one useful corrected sentence.",
+      "tutorAction": "Give one specific strength and one actionable next focus; ask for one corrected repetition before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful conversational behavior and one useful language improvement from the live exchange.",
+      "pedagogicalValue": "Ends the open discussion with selective, usable feedback rather than a list of every error.",
+      "failureDiagnosis": "If the learner cannot repeat the selected correction, simplify or remodel that one sentence before ending.",
+      "nonTargetSupport": "The Japanese line aligns with the feedback task; the tutor chooses only evidence that arose in this lesson.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation, not article recall.",
+      "choiceQuality": "No distractors; the tutor records one strength and one next focus in a synced text area.",
+      "componentConsistency": "Matches the approved FT closing component and keeps owner feedback separate from automated grading.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

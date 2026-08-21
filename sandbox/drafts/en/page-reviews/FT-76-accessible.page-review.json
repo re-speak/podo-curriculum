@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/76-advice-you-kept-hearing-as-a-child/lesson.html",
+  "lessonSha256": "16aa426a8ee1f160fe75c34d0edb0740505e6c35e675bcd4e2b0d6e49694ec3e",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact title “Advice you kept hearing as a child” aloud once.",
+      "tutorAction": "State the can-do, invite one title reading, then move directly to the optional article page.",
+      "targetOrPrompt": "Advice you kept hearing as a child / 子どもの頃に何度も聞いた助言. Let's talk about childhood advice that stays with people. / 心に残る子どもの頃の助言について話しましょう。",
+      "learningTarget": "Orient the learner to a conversation about Advice you kept hearing as a child without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; personal disclosure is not being tested.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and action as the English.",
+      "articleTreatment": "This page only introduces the topic; it does not preview or teach the article.",
+      "choiceQuality": "No fixed choice set appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "Why repeated advice stays with us / 繰り返された助言が残る理由. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “Adults often repeat advice because they want to protect a child.” to “Remembering the words lets us decide what to keep and what to change.”, as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds multiple defensible angles for the later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned Japanese claim translations are available; this accessible article owns these selective glosses: nagging=小言.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real answer when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of the conversation. / 全部の質問に答える必要はありません。会話の中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and does not add a separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Answer the standalone question “What advice do adults often repeat to children?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What advice do adults often repeat to children?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What advice do adults often repeat to children? / 子どもに大人がよく繰り返す助言は何ですか？ Follow-up pool: Who usually gives that advice? What makes the line easy to remember?",
+      "learningTarget": "Develop the opening angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “opening” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What advice do adults often repeat to children?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Answer the standalone question “How is that advice usually worded?” and expand the most interesting detail.",
+      "tutorAction": "Ask “How is that advice usually worded?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "How is that advice usually worded? / その助言は、ふつうどんな言い方をしますか？ Follow-up pool: Was it short or explained? Which word made it memorable?",
+      "learningTarget": "Develop the wording angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “wording” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How is that advice usually worded?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Answer the standalone question “Did the child in your example follow the advice, resist it, or react another way?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Did the child in your example follow the advice, resist it, or react another way?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Did the child in your example follow the advice, resist it, or react another way? / その例の子どもは、その助言に従いましたか、反発しましたか、それとも別の反応をしましたか？ Follow-up pool: What did the child do next? How did that reaction shape the advice?",
+      "learningTarget": "Develop the response angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “response” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Did the child in your example follow the advice, resist it, or react another way?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Answer the standalone question “Did worry, experience, or tradition make the adult keep saying it?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Did worry, experience, or tradition make the adult keep saying it?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Did worry, experience, or tradition make the adult keep saying it? / 心配、経験、または習慣から、大人はそれを言い続けたのでしょうか？ Follow-up pool: Which source best explains the repetition? Was the reason clear at the time?",
+      "learningTarget": "Develop the reason angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “reason” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Did worry, experience, or tradition make the adult keep saying it?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Answer the standalone question “Looking back, was the advice useful, partly useful, or wrong?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Looking back, was the advice useful, partly useful, or wrong?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Looking back, was the advice useful, partly useful, or wrong? / 振り返ると、その助言は役立ちましたか、一部だけ役立ちましたか、それとも間違っていましたか？ Follow-up pool: What changed your view? Which part would you rewrite?",
+      "learningTarget": "Develop the hindsight angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “hindsight” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Looking back, was the advice useful, partly useful, or wrong?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Answer the standalone question “Would you pass that advice on, change it, or stop repeating it?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Would you pass that advice on, change it, or stop repeating it?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Would you pass that advice on, change it, or stop repeating it? / その助言を伝えますか、変えますか、それとも繰り返すのをやめますか？ Follow-up pool: How would you explain it to a child? Which words would you change?",
+      "learningTarget": "Develop the inheritance angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “inheritance” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Would you pass that advice on, change it, or stop repeating it?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Answer the standalone question “Which reminder matters enough for adults to repeat to children?” and expand the most interesting detail.",
+      "tutorAction": "Ask “Which reminder matters enough for adults to repeat to children?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "Which reminder matters enough for adults to repeat to children? / 大人が子どもに繰り返す価値のある注意は何ですか？ Follow-up pool: Why does that reminder matter? How can an adult say it without nagging?",
+      "learningTarget": "Develop the nagging angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “nagging” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which reminder matters enough for adults to repeat to children?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Answer the standalone question “What advice do adults need to hear more often?” and expand the most interesting detail.",
+      "tutorAction": "Ask “What advice do adults need to hear more often?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.",
+      "targetOrPrompt": "What advice do adults need to hear more often? / 大人がもっと聞く必要のある助言は何ですか？ Follow-up pool: Who could say it convincingly? Why is it easy to ignore?",
+      "learningTarget": "Develop the flip angle of the selected example in spontaneous conversation.",
+      "pedagogicalValue": "Adds the distinct conversational job “flip” without assuming a private experience or repeating another page.",
+      "failureDiagnosis": "A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.",
+      "nonTargetSupport": "The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.",
+      "articleTreatment": "The prompt can draw on the article or any suitable example, but it does not test article recall.",
+      "choiceQuality": "No fixed answer choices appear; the learner can give any relevant, supportable response.",
+      "componentConsistency": "Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What advice do adults need to hear more often?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one strength and one next step, then repeat one useful corrected sentence.",
+      "tutorAction": "Give one specific strength and one useful next step; ask for one final repetition before closing.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one actionable improvement from the conversation.",
+      "pedagogicalValue": "Turns the open discussion into a specific, repeatable learning takeaway.",
+      "failureDiagnosis": "Generic praise or a long correction list would fail the one-strength, one-next-step contract.",
+      "nonTargetSupport": "The Japanese closing line mirrors the two-part feedback promise.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No choices or distractors appear; the tutor records individualized feedback.",
+      "componentConsistency": "Uses the approved synchronized Freetalking feedback box and final repetition instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

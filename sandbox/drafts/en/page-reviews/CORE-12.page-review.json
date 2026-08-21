@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/12-i-start-work-at-nine/lesson.html",
+  "lessonSha256": "b7bb2b11920dcc440f489f1fb74ecdc09773c8a80af4e5b6d2c25a8a4467d7b2",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the displayed lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"lesson-goal\" data-act=\"Talking about routines\"> GOAL I start work at nine (9時に仕事を始めます) Today, you'll practice saying when your normal workday starts and finishes. Please read the title aloud.今日は、ふだんの仕事が始まる時刻と終わる時刻を話す練習をします。タイトルを声に出して読んでください。 Have the learner read the title once, then move on. <div class=\"section\"",
+      "learningTarget": "Goal orientation for an ideal workday.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle an ideal workday at the goal orientation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared goal orientation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the familiar English words shown on the page.",
+      "tutorAction": "Prompt only the displayed known words; do not turn this into a new-vocabulary lesson.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"words-you-know\">Words you already know (もう知っている単語)These words may look familiar. Let's say them in English.見たことのある単語ですね。英語で言ってみましょう。スタート→startワーク→workフィニッシュ→finish <div class=\"transition-page\"",
+      "learningTarget": "Known-word activation for an ideal workday.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle an ideal workday at the known-word activation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "No article decision is introduced on this page, so the activity does not create an accidental a/an/the test.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared known-word activation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part1-intro\" data-act=\"I start work at…\"> PART 1 I start work at ___. First, let's practice saying when your workday starts.まず、仕事を始める時刻を言う練習をしましょう。 Introduce Part 1 with this one line, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "No article decision is introduced on this page, so the activity does not create an accidental a/an/the test.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the displayed meaning briefly, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: I start work at | 仕事を始めます | I start work at | 仕事を始めます | I start work at | 仕事を始めます",
+      "learningTarget": "Meaning and model for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—meaning and model—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the meaning and model stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning and model component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I start work at",
+          "仕事を始めます",
+          "I start work at",
+          "仕事を始めます",
+          "I start work at",
+          "仕事を始めます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete English sentence aloud.",
+      "tutorAction": "Listen to the learner; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: I start work at | 仕事を始めます | I start work at | 仕事を始めます | I start work at | 仕事を始めます | I start work at | 仕事を始めます",
+      "learningTarget": "Complete-sentence read-aloud for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—complete-sentence read-aloud—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the complete-sentence read-aloud stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared complete-sentence read-aloud component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I start work at",
+          "仕事を始めます",
+          "I start work at",
+          "仕事を始めます",
+          "I start work at",
+          "仕事を始めます",
+          "I start work at",
+          "仕事を始めます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the formula and examples to notice where the target words belong.",
+      "tutorAction": "Explain only the displayed form contrast and check one example.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p1-rule\">Use at with an exact time (正確な時刻には at)Keep \"start work\" together, and put \"at\" directly before the clock time.「start work」をひとまとまりにして、時計の時刻のすぐ前に「at」を置きます。I + start work + at + 時刻Exact clock timeぴったりの時刻I start work at nine.I start work at ten. <div class=\"section\"",
+      "learningTarget": "Form explanation for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—form explanation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the form explanation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (an, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared form explanation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the option matching the Japanese, then read the entire completed sentence aloud.",
+      "tutorAction": "After each choice, have the learner read the completed sentence before moving on.",
+      "targetOrPrompt": "Exact contrasts: eight vs ten | nine vs eleven | ten vs eight | eleven vs nine; Highlighted target evidence: 8時 | 9時 | 10時 | 11時",
+      "learningTarget": "Meaningful two-way choice for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—meaningful two-way choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the meaningful two-way choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "The exact alternatives (eight vs ten | nine vs eleven | ten vs eight | eleven vs nine) require a meaning or form decision; correct alternatives vary across rows and every distractor diagnoses a named contrast.",
+      "componentConsistency": "The shared meaningful two-way choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "8時",
+          "9時",
+          "10時",
+          "11時"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Arrange each complete sentence, then say it aloud.",
+      "tutorAction": "Let the learner build and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Complete order targets: I start work at nine. | I start work at eight. | I start work at ten. | I start work at eleven.",
+      "learningTarget": "Sentence assembly for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—sentence assembly—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the sentence assembly stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared sentence assembly component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact blank answers: I start work at | I start work at | I start work at | I start work at; Highlighted target evidence: 仕事を始めます | 仕事を始めます | 仕事を始めます | 仕事を始めます",
+      "learningTarget": "Target retrieval in a complete sentence for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—target retrieval in a complete sentence—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the target retrieval in a complete sentence stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared target retrieval in a complete sentence component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "仕事を始めます",
+          "仕事を始めます",
+          "仕事を始めます",
+          "仕事を始めます"
+        ],
+        "blankAnswers": [
+          "I start work at",
+          "I start work at",
+          "I start work at",
+          "I start work at"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read the Japanese and say the complete English sentence, using the lexical hint when needed.",
+      "tutorAction": "Type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: I start work at nine. | I start work at eight. | I start work at ten. | I start work at eleven.; Lexical support: 9時:nine | 8時:eight | 10時:ten | 11時:eleven",
+      "learningTarget": "Supported whole-sentence production for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—supported whole-sentence production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the supported whole-sentence production stage before the lesson increases independence.",
+      "nonTargetSupport": "Only the changing lexical content is supported by the declared hints (9時:nine | 8時:eight | 10時:ten | 11時:eleven); the taught frame itself remains the retrieval target.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared supported whole-sentence production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I start work at nine.",
+          "I start work at eight.",
+          "I start work at ten.",
+          "I start work at eleven."
+        ],
+        "hintChips": [
+          "9時:nine",
+          "8時:eight",
+          "10時:ten",
+          "11時:eleven"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personally meaningful sentence that performs the exact job named in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/turns: Now use “I start work at ___” to tell me your real start time.",
+      "learningTarget": "Communicative personal production for I start work at + exact clock time.",
+      "pedagogicalValue": "This page has one distinct job—communicative personal production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I start work at + exact clock time at the communicative personal production stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared communicative personal production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I start work at ___” to tell me your real start time."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part2-intro\" data-act=\"I usually… around…\"> PART 2 I usually ___ around ___. Next, let's practice saying when something usually happens.次に、ふだん何時ごろするかを言う練習をしましょう。 Introduce Part 2 with this one line, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "No article decision is introduced on this page, so the activity does not create an accidental a/an/the test.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the displayed meaning briefly, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: I usually | around | ふだん | ごろ | I usually | around | ふだん | ごろ | I usually | around | ふだん | ごろ",
+      "learningTarget": "Meaning and model for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—meaning and model—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the meaning and model stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning and model component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ",
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ",
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete English sentence aloud.",
+      "tutorAction": "Listen to the learner; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: I usually | around | ふだん | ごろ | I usually | around | ふだん | ごろ | I usually | around | ふだん | ごろ | I usually | around | ふだん | ごろ",
+      "learningTarget": "Complete-sentence read-aloud for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—complete-sentence read-aloud—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the complete-sentence read-aloud stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared complete-sentence read-aloud component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ",
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ",
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ",
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Use the formula and examples to notice where the target words belong.",
+      "tutorAction": "Explain only the displayed form contrast and check one example.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p2-rule\">Put each word in its place (usually と around の位置)Put \"usually\" before the action and \"around\" before the approximate time.「usually」は動作の前に、「around」はだいたいの時刻の前に置きます。I + usually + 動作 + around + 時刻Usual action and approximate timeふだんの動作＋だいたいの時刻I usually finish work around six.I usually eat lunch around twelve. <div class=\"section\"",
+      "learningTarget": "Form explanation for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—form explanation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the form explanation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared form explanation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the option matching the Japanese, then read the entire completed sentence aloud.",
+      "tutorAction": "After each choice, have the learner read the completed sentence before moving on.",
+      "targetOrPrompt": "Exact contrasts: usually finish vs finish usually | am usually vs usually am | usually have vs have usually | am usually vs usually am; Highlighted target evidence: ふだん | ふだん | ふだん | ふだん",
+      "learningTarget": "Meaningful two-way choice for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—meaningful two-way choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the meaningful two-way choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "The exact alternatives (usually finish vs finish usually | am usually vs usually am | usually have vs have usually | am usually vs usually am) require a meaning or form decision; correct alternatives vary across rows and every distractor diagnoses a named contrast.",
+      "componentConsistency": "The shared meaningful two-way choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "ふだん",
+          "ふだん",
+          "ふだん",
+          "ふだん"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Arrange each complete sentence, then say it aloud.",
+      "tutorAction": "Let the learner build and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Complete order targets: I usually finish work around six. | I usually eat lunch around twelve. | I usually have dinner around seven. | I usually start work around nine.",
+      "learningTarget": "Sentence assembly for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—sentence assembly—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the sentence assembly stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared sentence assembly component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact blank answers: I usually | around | I usually | around | I usually | around | I usually | around; Highlighted target evidence: ふだん | ごろ | ふだん | ごろ | ふだん | ごろ | ふだん | ごろ",
+      "learningTarget": "Target retrieval in a complete sentence for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—target retrieval in a complete sentence—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the target retrieval in a complete sentence stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared target retrieval in a complete sentence component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "ふだん",
+          "ごろ",
+          "ふだん",
+          "ごろ",
+          "ふだん",
+          "ごろ",
+          "ふだん",
+          "ごろ"
+        ],
+        "blankAnswers": [
+          "I usually",
+          "around",
+          "I usually",
+          "around",
+          "I usually",
+          "around",
+          "I usually",
+          "around"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read the Japanese and say the complete English sentence, using the lexical hint when needed.",
+      "tutorAction": "Type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: I usually finish work around six. | I usually eat lunch around twelve. | I usually have dinner around seven. | I usually start work around nine.; Lexical support: 仕事を終える:finish work | 昼食をとる:eat lunch | 夕食をとる:have dinner | 仕事を始める:start work",
+      "learningTarget": "Supported whole-sentence production for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—supported whole-sentence production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the supported whole-sentence production stage before the lesson increases independence.",
+      "nonTargetSupport": "Only the changing lexical content is supported by the declared hints (仕事を終える:finish work | 昼食をとる:eat lunch | 夕食をとる:have dinner | 仕事を始める:start work); the taught frame itself remains the retrieval target.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared supported whole-sentence production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I usually finish work around six.",
+          "I usually eat lunch around twelve.",
+          "I usually have dinner around seven.",
+          "I usually start work around nine."
+        ],
+        "hintChips": [
+          "仕事を終える:finish work",
+          "昼食をとる:eat lunch",
+          "夕食をとる:have dinner",
+          "仕事を始める:start work"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personally meaningful sentence that performs the exact job named in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/turns: Now use “I usually finish work around ___” to tell me your real finish time.",
+      "learningTarget": "Communicative personal production for I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—communicative personal production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle I usually + action + around + approximate time at the communicative personal production stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared communicative personal production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I usually finish work around ___” to tell me your real finish time."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part3-intro\" data-act=\"Talking about a workday\">PART 3Your workdayNow, let's use both patterns in a conversation.では、二つのパターンを会話で使ってみましょう。Introduce the conversation, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for integrated use of I start work at + exact clock time and I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I start work at + exact clock time and I usually + action + around + approximate time at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every Me line aloud in the role-play.",
+      "tutorAction": "Take the named partner role and read only that role's lines.",
+      "targetOrPrompt": "Highlighted target evidence: I start work at | 仕事を始めます | I usually | around | ふだん | ごろ",
+      "learningTarget": "Scripted role-play for integrated use of I start work at + exact clock time and I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—scripted role-play—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I start work at + exact clock time and I usually + action + around + approximate time at the scripted role-play stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared scripted role-play component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "I start work at",
+          "仕事を始めます",
+          "I usually",
+          "around",
+          "ふだん",
+          "ごろ"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Play Me and say every complete line, including all missing words.",
+      "tutorAction": "Take the named partner role and type only the learner's missing words.",
+      "targetOrPrompt": "Exact blank answers: I start work at | I usually | around",
+      "learningTarget": "Role-play retrieval for integrated use of I start work at + exact clock time and I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—role-play retrieval—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I start work at + exact clock time and I usually + action + around + approximate time at the role-play retrieval stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared role-play retrieval component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I start work at",
+          "I usually",
+          "around"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's real question, ask the displayed question back, and listen to the tutor's real answer.",
+      "tutorAction": "React to the interesting detail and answer the learner honestly; invite today's pattern only if it fits naturally.",
+      "targetOrPrompt": "Exact learner prompt/turns: What would your ideal workday look like, and why? | What would your ideal workday look like?",
+      "learningTarget": "Reciprocal free talk for an ideal workday.",
+      "pedagogicalValue": "This page has one distinct job—reciprocal free talk—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle an ideal workday at the reciprocal free talk stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared reciprocal free talk component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would your ideal workday look like, and why?",
+          "What would your ideal workday look like?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Play Me and say every complete line, including all missing words.",
+      "tutorAction": "Take the named partner role and type only the learner's missing words.",
+      "targetOrPrompt": "Exact blank answers: I start work at | I usually | around",
+      "learningTarget": "New-situation transfer for integrated use of I start work at + exact clock time and I usually + action + around + approximate time.",
+      "pedagogicalValue": "This page has one distinct job—new-situation transfer—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of I start work at + exact clock time and I usually + action + around + approximate time at the new-situation transfer stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared new-situation transfer component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I start work at",
+          "I usually",
+          "around"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two natural expressions and choose by meaning or situation.",
+      "tutorAction": "Explain the practical difference briefly and check which expression fits each situation.",
+      "targetOrPrompt": "Highlighted target evidence: around nine | at nine-ish",
+      "learningTarget": "Meaning-based nuance choice for an ideal workday.",
+      "pedagogicalValue": "This page has one distinct job—meaning-based nuance choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle an ideal workday at the meaning-based nuance choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning-based nuance choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "around nine",
+          "at nine-ish"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

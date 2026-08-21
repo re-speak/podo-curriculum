@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/05-ask-for-directions-and-confirm-the-route/lesson.html",
+  "lessonSha256": "4d1f7408e16e1f9c9545ae8699ba1fdb4f2106d81bf5b16819cdc82c38f4df83",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once and listen to the can-do for today.",
+      "tutorAction": "State the can-do briefly, then ask the learner to read the title aloud.",
+      "targetOrPrompt": "Ask for directions and confirm the route (道をたずねて行き方を確認する): Get directions and confirm the step that prevents a wrong turn. Please read the title aloud.道を聞き、間違えないための大事な手順を確認しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Orient the learner to the practical outcome before any scene language appears.",
+      "pedagogicalValue": "The page gives a usable destination for the lesson without duplicating examples or the scene.",
+      "failureDiagnosis": "A vague opening, extra outcome boxes, or tutor modelling here would delay the first learner action.",
+      "nonTargetSupport": "The bilingual can-do supports meaning; no sentence production is required yet.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set is needed on this orientation page.",
+      "componentConsistency": "Uses the approved single goal card rather than legacy three-box outcomes.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Get directions and confirm the step that prevents a wrong turn. Please read the title aloud.道を聞き、間違えないための大事な手順を確認しましょう。タイトルを声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "scene",
+      "learnerAction": "Role-play the traveller lines while the tutor takes the named counterpart role.",
+      "tutorAction": "Take the named counterpart role, start with its first line, and keep the exchange moving.",
+      "targetOrPrompt": "Outside a station (駅の外): How do I get to, どう行けばいいですか, Do I, first, 最初に, 出ますか",
+      "learningTarget": "Experience both lesson targets inside one resolved practical exchange before analysis.",
+      "pedagogicalValue": "The scene makes the target language purposeful and establishes turn ownership immediately.",
+      "failureDiagnosis": "Unclear roles or a tutor read-through would turn the role-play into passive listening.",
+      "nonTargetSupport": "Complete bilingual turns keep all non-target language visible while target phrases appear in context.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No selection task; the meaningful decision is when to deliver each traveller line.",
+      "componentConsistency": "Uses the approved dialogue turns with consistent traveller and counterpart profiles.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Let's role-play outside a station. You're the traveller, and I'll be the local.駅の外のロールプレイをしましょう。あなたは旅行者、私は地元の人です。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "How do I get to",
+          "どう行けばいいですか",
+          "Do I",
+          "first",
+          "最初に",
+          "出ますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "understand",
+      "learnerAction": "Listen to each counterpart line and choose the meaning that matches the complete line.",
+      "tutorAction": "Read only the counterpart English line; let the learner choose the meaning.",
+      "targetOrPrompt": "Understand (聞いてわかろう): I’ll read each local line. Choose what it means.私が地元の人のセリフを読みます。意味を選んでください。",
+      "learningTarget": "Build receptive control of the staff or partner language needed to complete the scene.",
+      "pedagogicalValue": "Four distinct lines test meaning before the lesson asks for more production.",
+      "failureDiagnosis": "If ownership is unclear or distractors are absurd, the page measures reading layout rather than understanding.",
+      "nonTargetSupport": "Japanese appears in the answer options while the spoken English line remains the comprehension input.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "Each row has a plausible semantic contrast, and the correct option changes physical position across rows.",
+      "componentConsistency": "Uses the shared synchronized two-option receptive-choice rows.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: I’ll read each local line. Choose what it means.私が地元の人のセリフを読みます。意味を選んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "expressions",
+      "learnerAction": "Read each short expression aloud once before returning to the scene language.",
+      "tutorAction": "Prompt learner reading and clarify a phrase only if it blocks the later scene.",
+      "targetOrPrompt": "Useful expressions (使える表現): Please read each expression aloud.それぞれの表現を声に出して読んでください。",
+      "learningTarget": "Pre-load two compact travel chunks that remove a real comprehension or production obstacle.",
+      "pedagogicalValue": "The page is brief lexical support rather than a second grammar lesson.",
+      "failureDiagnosis": "A passive glossary or unrelated phrase list would not earn a separate page.",
+      "nonTargetSupport": "Each English expression has an aligned Japanese meaning and no hidden retrieval demand.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No distractors; this is a short readiness read, not an assessment.",
+      "componentConsistency": "Uses the shared compact model-list component for quick language support.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Please read each expression aloud.それぞれの表現を声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Notice the next model line and listen to the short transition into that practice move.",
+      "tutorAction": "Introduce the next move in one line and continue without drilling on the transition page.",
+      "targetOrPrompt": "How do I get to the museum?: First, let's practice the first useful line from the scene.まず、場面で使った一つ目の表現を練習しましょう。",
+      "learningTarget": "Signal the shift to one pattern or to the full task without reteaching the prior page.",
+      "pedagogicalValue": "The page preserves the receptive-to-productive sequence and keeps navigation explicit.",
+      "failureDiagnosis": "A duplicate scene summary or unexplained heading would create a page with no learner-facing job.",
+      "nonTargetSupport": "The model heading and bilingual transition state exactly what comes next.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set belongs on a navigation transition.",
+      "componentConsistency": "Uses the approved unboxed transition-page pattern with one purpose.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: First, let's practice the first useful line from the scene.まず、場面で使った一つ目の表現を練習しましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the displayed examples aloud after the tutor gives a brief meaning-and-use explanation.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example aloud.",
+      "targetOrPrompt": "Today's pattern (今日のパターン): How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか",
+      "learningTarget": "Connect the target form to its practical meaning: How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか.",
+      "pedagogicalValue": "The highlighted target stays stable while surrounding vocabulary changes across examples.",
+      "failureDiagnosis": "Combining a long lecture with learner instructions, or having the tutor model first, would reduce retrieval.",
+      "nonTargetSupport": "Japanese translations remain visible and highlighting isolates only the taught target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No distractors; the learner compares examples with one stable highlighted pattern.",
+      "componentConsistency": "Uses the approved meaning-and-use block plus one hero and supporting examples.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Today's pattern (今日のパターン) Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "How do I get to",
+          "どう行けばいいですか",
+          "How do I get to",
+          "どう行けばいいですか",
+          "How do I get to",
+          "どう行けばいいですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete example sentence aloud.",
+      "tutorAction": "Ask the learner to read each example and correct only a useful pronunciation issue.",
+      "targetOrPrompt": "Read the sentences (文を読もう): How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか",
+      "learningTarget": "Build fluent whole-sentence access to the stable target: How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか, How do I get to, どう行けばいいですか.",
+      "pedagogicalValue": "Repeated oral production varies the real content without changing the target boundary.",
+      "failureDiagnosis": "Tutor read-aloud or silent scanning would remove the learner production this page is for.",
+      "nonTargetSupport": "Complete sentences and Japanese translations keep vocabulary visible around the highlighted target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set; variation comes from the four meaningful example situations.",
+      "componentConsistency": "Uses the shared read-aloud example-card component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Please read each sentence aloud.一文ずつ声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "How do I get to",
+          "どう行けばいいですか",
+          "How do I get to",
+          "どう行けばいいですか",
+          "How do I get to",
+          "どう行けばいいですか",
+          "How do I get to",
+          "どう行けばいいですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the diagram and examples to notice how the sentence parts fit together.",
+      "tutorAction": "Explain the operational form once, point to the fixed frame and changing content, then move on.",
+      "targetOrPrompt": "How it works (形を見よう): How do I get to, どう行けばいいですか",
+      "learningTarget": "Understand the placement rule that supports the target: How do I get to, どう行けばいいですか.",
+      "pedagogicalValue": "The page makes a concrete word-order or constituent boundary visible before reconstruction.",
+      "failureDiagnosis": "Vague language such as “add the thing” or a second reading drill would add no usable rule.",
+      "nonTargetSupport": "Formula labels and complete examples show the non-target slot without hiding articles or inflections.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No answer choices; the visible contrast is fixed frame versus replaceable content.",
+      "componentConsistency": "Uses the approved rule diagram rather than a prose-only explanation.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Keep get to together, then add the complete destination.get to をひとまとまりにし、そのあとに行き先を続けます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "How do I get to",
+          "どう行けばいいですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put the meaning chunks in order, then say the complete sentence aloud.",
+      "tutorAction": "Let the learner order each row and require the completed sentence before moving on.",
+      "targetOrPrompt": "Build the sentence (文を組み立てよう): Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Reconstruct the target in meaningful constituent chunks: Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。.",
+      "pedagogicalValue": "Chunk order tests sentence structure rather than punctuation or arbitrary fragments.",
+      "failureDiagnosis": "Single-word fragments, bound articles, or identical obvious layouts would make the choices trivial.",
+      "nonTargetSupport": "All needed chunks are visible; no extra vocabulary recall is mixed into the ordering decision.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "Chunks preserve meaningful constituents, and the four rows vary the content and resulting order task.",
+      "componentConsistency": "Uses the shared synchronized reorder component and whole-sentence follow-through.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each complete sentence aloud, including every missing target segment.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Say the complete sentence (文をまるごと言おう): どう行けばいいですか, どう行けばいいですか, どう行けばいいですか, どう行けばいいですか",
+      "learningTarget": "Retrieve the taught target while keeping lexical content stable: How do I get to, How do I get to, How do I get to, How do I get to.",
+      "pedagogicalValue": "The blanks align exactly with highlighted target segments, so the page rehearses the intended pattern.",
+      "failureDiagnosis": "Blanking content vocabulary, leaving the learner to type, or omitting a target segment would change the teaching job.",
+      "nonTargetSupport": "All non-target vocabulary stays printed around the blanks; Japanese target cues match the blank count.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the four rows vary useful contexts while the target boundary remains stable.",
+      "componentConsistency": "Uses the shared slot-input whole-sentence fill component without oversized phrase fields.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Say each whole sentence aloud, including the missing words.空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "どう行けばいいですか",
+          "どう行けばいいですか",
+          "どう行けばいいですか",
+          "どう行けばいいですか"
+        ],
+        "blankAnswers": [
+          "How do I get to",
+          "How do I get to",
+          "How do I get to",
+          "How do I get to"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read the Japanese cue, say the full English sentence, and use lexical hints only when needed.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Say it in English (英語にしよう): How do I get to the museum?, How do I get to the hotel?, How do I get to the airport?, How do I get to the bus stop?",
+      "learningTarget": "Produce the complete sentence from meaning with supported lexical recall; hints: 美術館:museum, ホテル:hotel, 空港:airport, バス停:bus stop.",
+      "pedagogicalValue": "This is supported whole-sentence production, a clear step beyond reading and target-only filling.",
+      "failureDiagnosis": "Missing support-stage metadata, grammar hints, or hints that reveal articles would invalidate the scaffold.",
+      "nonTargetSupport": "The target-v2 supported stage supplies declared lexical hints only: 美術館:museum, ホテル:hotel, 空港:airport, バス停:bus stop.",
+      "articleTreatment": "Articles remain an unaided learner decision in whole-sentence production; lexical hint chips never supply a, an, or the.",
+      "choiceQuality": "No distractors; the learner chooses the complete wording and article forms independently.",
+      "componentConsistency": "Uses the approved shared translate script, space-input control, and target-v2 support contract.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Read the Japanese, then say it in English.日本語を見て、英語で言ってみましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "How do I get to the museum?",
+          "How do I get to the hotel?",
+          "How do I get to the airport?",
+          "How do I get to the bus stop?"
+        ],
+        "hintChips": [
+          "美術館:museum",
+          "ホテル:hotel",
+          "空港:airport",
+          "バス停:bus stop"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one original sentence with the printed target frame before the tutor captures it.",
+      "tutorAction": "Listen first, react naturally, then capture the sentence and add only a useful correction.",
+      "targetOrPrompt": "Exact learner prompt: “Now use “How do I get to ___?” to ask for directions.”",
+      "learningTarget": "Use the practiced frame to complete the communicative job stated in “Now use “How do I get to ___?” to ask for directions.”, with personally chosen content.",
+      "pedagogicalValue": "The wording “Now use “How do I get to ___?” to ask for directions.” identifies both the frame and its real conversational purpose, so this page advances from controlled examples to meaningful open production.",
+      "failureDiagnosis": "If the page merely said “make your own sentence,” the job encoded in “Now use “How do I get to ___?” to ask for directions.” would be hidden; if the tutor supplied the sentence first, it would not test learner production.",
+      "nonTargetSupport": "The frame stays visible above the shared Student’s sentence and Correction fields.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No fixed options; the learner makes an open but bounded content choice.",
+      "componentConsistency": "Uses the shared feedback-compose component with Student’s sentence and Correction labels.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic evidence records the exact learner-facing production job: “Now use “How do I get to ___?” to ask for directions.” Visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “How do I get to ___?” to ask for directions."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Notice the next model line and listen to the short transition into that practice move.",
+      "tutorAction": "Introduce the next move in one line and continue without drilling on the transition page.",
+      "targetOrPrompt": "Do I take the north exit first?: Next, let's practice the second useful line from the scene.次に、場面で使った二つ目の表現を練習しましょう。",
+      "learningTarget": "Signal the shift to one pattern or to the full task without reteaching the prior page.",
+      "pedagogicalValue": "The page preserves the receptive-to-productive sequence and keeps navigation explicit.",
+      "failureDiagnosis": "A duplicate scene summary or unexplained heading would create a page with no learner-facing job.",
+      "nonTargetSupport": "The model heading and bilingual transition state exactly what comes next.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set belongs on a navigation transition.",
+      "componentConsistency": "Uses the approved unboxed transition-page pattern with one purpose.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Next, let's practice the second useful line from the scene.次に、場面で使った二つ目の表現を練習しましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the displayed examples aloud after the tutor gives a brief meaning-and-use explanation.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every example aloud.",
+      "targetOrPrompt": "Today's pattern (今日のパターン): Do I, first, 最初に, 出ますか, Do I, first, 最初に, 渡りますか, Do I, first, 最初に, 曲がりますか",
+      "learningTarget": "Connect the target form to its practical meaning: Do I, first, 最初に, 出ますか, Do I, first, 最初に, 渡りますか, Do I, first, 最初に, 曲がりますか.",
+      "pedagogicalValue": "The highlighted target stays stable while surrounding vocabulary changes across examples.",
+      "failureDiagnosis": "Combining a long lecture with learner instructions, or having the tutor model first, would reduce retrieval.",
+      "nonTargetSupport": "Japanese translations remain visible and highlighting isolates only the taught target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No distractors; the learner compares examples with one stable highlighted pattern.",
+      "componentConsistency": "Uses the approved meaning-and-use block plus one hero and supporting examples.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Today's pattern (今日のパターン) Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "Do I",
+          "first",
+          "最初に",
+          "出ますか",
+          "Do I",
+          "first",
+          "最初に",
+          "渡りますか",
+          "Do I",
+          "first",
+          "最初に",
+          "曲がりますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete example sentence aloud.",
+      "tutorAction": "Ask the learner to read each example and correct only a useful pronunciation issue.",
+      "targetOrPrompt": "Read the sentences (文を読もう): Do I, first, 最初に, 出ますか, Do I, first, 最初に, 渡りますか, Do I, first, 最初に, 曲がりますか, Do I, first, 最初に, 乗りますか",
+      "learningTarget": "Build fluent whole-sentence access to the stable target: Do I, first, 最初に, 出ますか, Do I, first, 最初に, 渡りますか, Do I, first, 最初に, 曲がりますか, Do I, first, 最初に, 乗りますか.",
+      "pedagogicalValue": "Repeated oral production varies the real content without changing the target boundary.",
+      "failureDiagnosis": "Tutor read-aloud or silent scanning would remove the learner production this page is for.",
+      "nonTargetSupport": "Complete sentences and Japanese translations keep vocabulary visible around the highlighted target.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set; variation comes from the four meaningful example situations.",
+      "componentConsistency": "Uses the shared read-aloud example-card component.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Please read each sentence aloud.一文ずつ声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "Do I",
+          "first",
+          "最初に",
+          "出ますか",
+          "Do I",
+          "first",
+          "最初に",
+          "渡りますか",
+          "Do I",
+          "first",
+          "最初に",
+          "曲がりますか",
+          "Do I",
+          "first",
+          "最初に",
+          "乗りますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Use the diagram and examples to notice how the sentence parts fit together.",
+      "tutorAction": "Explain the operational form once, point to the fixed frame and changing content, then move on.",
+      "targetOrPrompt": "How it works (形を見よう): Do I, first, 最初に, 出ますか",
+      "learningTarget": "Understand the placement rule that supports the target: Do I, first, 最初に, 出ますか.",
+      "pedagogicalValue": "The page makes a concrete word-order or constituent boundary visible before reconstruction.",
+      "failureDiagnosis": "Vague language such as “add the thing” or a second reading drill would add no usable rule.",
+      "nonTargetSupport": "Formula labels and complete examples show the non-target slot without hiding articles or inflections.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No answer choices; the visible contrast is fixed frame versus replaceable content.",
+      "componentConsistency": "Uses the approved rule diagram rather than a prose-only explanation.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Put first at the end to confirm the first step of the route.道順の最初の手順を確認するときは first を文末に置きます。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "Do I",
+          "first",
+          "最初に",
+          "出ますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put the meaning chunks in order, then say the complete sentence aloud.",
+      "tutorAction": "Let the learner order each row and require the completed sentence before moving on.",
+      "targetOrPrompt": "Build the sentence (文を組み立てよう): Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Reconstruct the target in meaningful constituent chunks: Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。.",
+      "pedagogicalValue": "Chunk order tests sentence structure rather than punctuation or arbitrary fragments.",
+      "failureDiagnosis": "Single-word fragments, bound articles, or identical obvious layouts would make the choices trivial.",
+      "nonTargetSupport": "All needed chunks are visible; no extra vocabulary recall is mixed into the ordering decision.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "Chunks preserve meaningful constituents, and the four rows vary the content and resulting order task.",
+      "componentConsistency": "Uses the shared synchronized reorder component and whole-sentence follow-through.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Put the words in order, then say the whole sentence out loud.単語を順番に並べて、文をまるごと声に出して言ってみましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each complete sentence aloud, including every missing target segment.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Say the complete sentence (文をまるごと言おう): 最初に, 出ますか, 最初に, 渡りますか, 最初に, 曲がりますか, 最初に, 乗りますか",
+      "learningTarget": "Retrieve the taught target while keeping lexical content stable: Do I, first, Do I, first, Do I, first, Do I, first.",
+      "pedagogicalValue": "The blanks align exactly with highlighted target segments, so the page rehearses the intended pattern.",
+      "failureDiagnosis": "Blanking content vocabulary, leaving the learner to type, or omitting a target segment would change the teaching job.",
+      "nonTargetSupport": "All non-target vocabulary stays printed around the blanks; Japanese target cues match the blank count.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the four rows vary useful contexts while the target boundary remains stable.",
+      "componentConsistency": "Uses the shared slot-input whole-sentence fill component without oversized phrase fields.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Say each whole sentence aloud, including the missing words.空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "最初に",
+          "出ますか",
+          "最初に",
+          "渡りますか",
+          "最初に",
+          "曲がりますか",
+          "最初に",
+          "乗りますか"
+        ],
+        "blankAnswers": [
+          "Do I",
+          "first",
+          "Do I",
+          "first",
+          "Do I",
+          "first",
+          "Do I",
+          "first"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read the Japanese cue, say the full English sentence, and use lexical hints only when needed.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Say it in English (英語にしよう): Do I take the north exit first?, Do I cross the road first?, Do I turn left first?, Do I take the bus first?",
+      "learningTarget": "Produce the complete sentence from meaning with supported lexical recall; hints: 北口:north exit, 道を渡る:cross the road, 左へ曲がる:turn left, バスに乗る:take the bus.",
+      "pedagogicalValue": "This is supported whole-sentence production, a clear step beyond reading and target-only filling.",
+      "failureDiagnosis": "Missing support-stage metadata, grammar hints, or hints that reveal articles would invalidate the scaffold.",
+      "nonTargetSupport": "The target-v2 supported stage supplies declared lexical hints only: 北口:north exit, 道を渡る:cross the road, 左へ曲がる:turn left, バスに乗る:take the bus.",
+      "articleTreatment": "Articles remain an unaided learner decision in whole-sentence production; lexical hint chips never supply a, an, or the.",
+      "choiceQuality": "No distractors; the learner chooses the complete wording and article forms independently.",
+      "componentConsistency": "Uses the approved shared translate script, space-input control, and target-v2 support contract.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Read the Japanese, then say it in English.日本語を見て、英語で言ってみましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Do I take the north exit first?",
+          "Do I cross the road first?",
+          "Do I turn left first?",
+          "Do I take the bus first?"
+        ],
+        "hintChips": [
+          "北口:north exit",
+          "道を渡る:cross the road",
+          "左へ曲がる:turn left",
+          "バスに乗る:take the bus"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one original sentence with the printed target frame before the tutor captures it.",
+      "tutorAction": "Listen first, react naturally, then capture the sentence and add only a useful correction.",
+      "targetOrPrompt": "Exact learner prompt: “Now use “Do I ___ first?” to confirm the first step.”",
+      "learningTarget": "Use the practiced frame to complete the communicative job stated in “Now use “Do I ___ first?” to confirm the first step.”, with personally chosen content.",
+      "pedagogicalValue": "The wording “Now use “Do I ___ first?” to confirm the first step.” identifies both the frame and its real conversational purpose, so this page advances from controlled examples to meaningful open production.",
+      "failureDiagnosis": "If the page merely said “make your own sentence,” the job encoded in “Now use “Do I ___ first?” to confirm the first step.” would be hidden; if the tutor supplied the sentence first, it would not test learner production.",
+      "nonTargetSupport": "The frame stays visible above the shared Student’s sentence and Correction fields.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No fixed options; the learner makes an open but bounded content choice.",
+      "componentConsistency": "Uses the shared feedback-compose component with Student’s sentence and Correction labels.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic evidence records the exact learner-facing production job: “Now use “Do I ___ first?” to confirm the first step.” Visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “Do I ___ first?” to confirm the first step."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Notice the next model line and listen to the short transition into that practice move.",
+      "tutorAction": "Introduce the next move in one line and continue without drilling on the transition page.",
+      "targetOrPrompt": "Complete the task (用事を完了しよう): Now, let's use both lines in the complete scene.では、二つの表現を使って場面を最後まで進めましょう。",
+      "learningTarget": "Signal the shift to one pattern or to the full task without reteaching the prior page.",
+      "pedagogicalValue": "The page preserves the receptive-to-productive sequence and keeps navigation explicit.",
+      "failureDiagnosis": "A duplicate scene summary or unexplained heading would create a page with no learner-facing job.",
+      "nonTargetSupport": "The model heading and bilingual transition state exactly what comes next.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No choice set belongs on a navigation transition.",
+      "componentConsistency": "Uses the approved unboxed transition-page pattern with one purpose.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Now, let's use both lines in the complete scene.では、二つの表現を使って場面を最後まで進めましょう。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read the traveller lines aloud while the tutor plays the counterpart.",
+      "tutorAction": "Take the named counterpart role and pause for each learner line.",
+      "targetOrPrompt": "Replay the scene (場面をもう一度): How do I get to, どう行けばいいですか, Do I, first, 最初に, 出ますか",
+      "learningTarget": "Replay the resolved scene with both targets in sequence: How do I get to, どう行けばいいですか, Do I, first, 最初に, 出ますか.",
+      "pedagogicalValue": "The learner now performs the whole interaction after practicing each move separately.",
+      "failureDiagnosis": "A tutor read-through or ambiguous speaker colors would erase the role-play ownership.",
+      "nonTargetSupport": "Complete bilingual dialogue turns support non-target partner language and scene flow.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "No selection task; the learner chooses timing and delivers the correct owned turns.",
+      "componentConsistency": "Uses the same approved dialogue component and role colors as the opening scene.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: I'll be the local. Please read the Me lines aloud.私は地元の人役をします。Me のセリフを声に出して読んでください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [
+          "How do I get to",
+          "どう行けばいいですか",
+          "Do I",
+          "first",
+          "最初に",
+          "出ますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say each owned line completely, including the missing target words, inside the role-play.",
+      "tutorAction": "Play the counterpart and type only the missing words the learner supplies.",
+      "targetOrPrompt": "Complete the scene (場面を完成しよう): How do I get to, Do I, first",
+      "learningTarget": "Complete both target moves under conversational turn pressure: How do I get to, Do I, first.",
+      "pedagogicalValue": "This combines target retrieval with the real sequence and resolves the original practical task.",
+      "failureDiagnosis": "Blanking lexical details, unclear roles, or stopping before the practical outcome would weaken transfer.",
+      "nonTargetSupport": "Non-target dialogue and sentence content remain visible; only the practiced target segments are blank.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the meaningful demand is retrieval in the correct conversational turn.",
+      "componentConsistency": "Uses synchronized target-only inputs inside the approved role-play dialogue.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: I’ll be the local. Say each complete line, including the missing words.私は地元の人役をします。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "How do I get to",
+          "Do I",
+          "first"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor’s relevant question, then ask the tutor the related reciprocal question.",
+      "tutorAction": "Answer genuinely, react to the learner, and follow the most interesting detail without forcing the pattern.",
+      "targetOrPrompt": "Exact Tutor question: “When you get lost, do you ask someone or check a map first? Why?” Exact learner reciprocal question: “What do you do first when you get lost?”",
+      "learningTarget": "Answer the personal or preference question “When you get lost, do you ask someone or check a map first? Why?”, then reverse the direction of the conversation by asking the tutor “What do you do first when you get lost?”",
+      "pedagogicalValue": "“When you get lost, do you ask someone or check a map first? Why?” stands alone without the lesson frame and invites a real answer; “What do you do first when you get lost?” creates a genuine second direction instead of ending after one response.",
+      "failureDiagnosis": "If “When you get lost, do you ask someone or check a map first? Why?” were a disguised scenario-production command, or if the learner never asked “What do you do first when you get lost?”, this would be another one-way pattern exercise rather than reciprocal free talk.",
+      "nonTargetSupport": "Generic Tutor and Me icons make ownership clear; both sides have a shared capture area.",
+      "articleTreatment": "No separate article decision is introduced beyond what the displayed target and complete examples require.",
+      "choiceQuality": "Open answers are intentional; the prompt supplies a relevant topic rather than restrictive options.",
+      "componentConsistency": "Uses a four-turn reciprocal dialogue with synchronized learner and tutor answer fields.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic audit read both dialogue prompts: Tutor asks “When you get lost, do you ask someone or check a map first? Why?”; learner asks back “What do you do first when you get lost?” Visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When you get lost, do you ask someone or check a map first? Why?",
+          "What do you do first when you get lost?"
+        ]
+      }
+    },
+    {
+      "pageId": "transfer-scene",
+      "learnerAction": "Role-play the learner lines in a new setting and supply the missing target segments.",
+      "tutorAction": "Take the newly named counterpart role and continue through the final practical resolution.",
+      "targetOrPrompt": "City center (別の場面へ): How do I get to, Do I, first",
+      "learningTarget": "Use both targets in a different resolved context: How do I get to, Do I, first.",
+      "pedagogicalValue": "The changed setting tests transfer instead of repeating the original scene with new nouns only.",
+      "failureDiagnosis": "Missing role assignment, reused unresolved dialogue, or a scene that ends before the result would not prove transfer.",
+      "nonTargetSupport": "The new bilingual dialogue keeps unfamiliar context visible while target-only fields require retrieval.",
+      "articleTreatment": "Articles outside the taught target remain printed; none is turned into an unrelated extra blank.",
+      "choiceQuality": "No distractors; the learner must choose and deliver each target at the appropriate turn.",
+      "componentConsistency": "Uses the approved role-play dialogue with target-only synchronized controls and a closing outcome.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Semantic page audit completed against the final hash; visible instruction: Let's role-play a different situation. I'll be the local.別の場面でロールプレイをしましょう。私は地元の人役です。 Root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "How do I get to",
+          "Do I",
+          "first"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

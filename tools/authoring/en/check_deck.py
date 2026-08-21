@@ -131,6 +131,10 @@ FREETALK_PAGES = [
 ]
 FREETALK_STYLE_EN = "Please choose your preferred discussion style."
 FREETALK_STYLE_JA = "希望する会話の進め方を選んでください。"
+REORDER_SCRIPT_EN = "Put the words in order, then say the whole sentence out loud."
+REORDER_SCRIPT_JA = "単語を順番に並べて、文をまるごと声に出して言ってみましょう。"
+TRANSLATE_SCRIPT_EN = "Read the Japanese, then say it in English."
+TRANSLATE_SCRIPT_JA = "日本語を見て、英語で言ってみましょう。"
 SPAN_TAG = re.compile(r"<span\b[^>]*>|</span>", re.I)
 SPAN_OPEN = re.compile(r"<span\b[^>]*>", re.I)
 LOCAL_REF = re.compile(r'(?:href|src)="((?!https?:|data:|#)[^"]+)"')
@@ -174,10 +178,38 @@ GENERIC_PATTERN_RULE = re.compile(
     r"Use the (?:second|complete) (?:frame|move)|make the practical result clear",
     re.I,
 )
+CONTEXTUAL_ROLEPLAY_AS_FREETALK = re.compile(
+    r"\b(?:what would you (?:say|ask)|what would you tell (?:the|a) |"
+    r"report (?:it|the)|describe one|ask (?:reception|the clerk|another passenger))\b",
+    re.I,
+)
+FORCED_FREETALK_FRAME = re.compile(
+    r"\b(?:use|using) (?:today['’]s |the )?"
+    r"(?:pattern|frame|expression|sentence starter)\b",
+    re.I,
+)
+TUTOR_READS_TARGET = re.compile(r"\bI(?:['’]ll| will) read\b", re.I)
+QUOTED_OPEN_FRAME = re.compile(r"[\u201c\"]\s*[^\u201d\"]{2,}\s*[\u201d\"]")
+GENERIC_OPEN_END = re.compile(
+    r"\b(?:make|create) (?:your own|one) "
+    r"(?:sentence|answer|request|question)\s*[.!?]?\s*$",
+    re.I,
+)
+PATTERN_MEANING_OPERATION = re.compile(
+    r"\b(?:read each|repeat each|choose (?:the|one|each)|"
+    r"fill (?:the|each)|type (?:the|each)|write (?:the|each)|"
+    r"listen to (?:the|each))\b",
+    re.I,
+)
 # Articles and suffixes cannot stand as meaning units. Prepositions can: the
 # approved Core pilot deliberately isolates "with", and CORE-12 isolates "at"
 # because placing the time preposition is the retrieval operation being taught.
 BOUND_REORDER_CHIPS = {"a", "an", "the", "er"}
+NON_LEXICAL_HINTS = {
+    "a", "an", "the", "am", "is", "are", "was", "were",
+    "do", "does", "did", "can", "could", "will", "would",
+    "have", "has", "had", "-s", "-es", "-ed", "-ing",
+}
 BRIEF_HEADING = re.compile(r"^#\s+((?:CORE|CTX|FT)-\d+)\s+·\s+(.+?)\s*$")
 QUOTE_OPEN = "“‘「『"
 QUOTE_CLOSE = "”’」』"
@@ -243,6 +275,18 @@ def pages(html):
     for i, (pos, pid) in enumerate(marks):
         end = marks[i + 1][0] if i + 1 < len(marks) else len(html)
         yield pid, html[pos:end]
+
+
+def page_attributes(chunk):
+    """Return attributes from the page root whose opening tag `pages()` trims.
+
+    A page chunk begins at the `data-page-id` attribute rather than at the
+    surrounding `<div`.  Reading the first nested element therefore silently
+    loses page-level contracts such as support stage.  Keep this helper paired
+    with `pages()` so evidence and validation inspect the actual page root.
+    """
+    prefix = chunk.split(">", 1)[0]
+    return {key.lower(): value for key, _, value in ATTRIBUTE.findall(prefix)}
 
 
 def span_body(source, start):
@@ -345,6 +389,154 @@ def target_highlight_issues(page_chunks):
                     f"{page_id} row {index}: mirrored target highlights differ "
                     f"(EN={en_targets} JA={ja_targets})"
                 )
+    return errors
+
+
+def _normalized_targets(source, class_name):
+    return tuple(
+        plain_text(body)
+        .replace("’", "'")
+        .casefold()
+        .rstrip(".,!?。！？、")
+        for body in class_span_bodies(source, class_name)
+    )
+
+
+def controlled_target_alignment_issues(page_chunks):
+    """Prove that controlled blanks retrieve the frame taught on the read page.
+
+    Merely having a highlighted Japanese cue is insufficient: the failed Core
+    and Contextual pilots highlighted lexical content and then treated that
+    content as the lesson target.  Compare exact row-level evidence instead.
+    """
+    errors = []
+    for part in (1, 2):
+        read_id = f"p{part}-read"
+        fill_id = f"p{part}-fill"
+        read = page_chunks.get(read_id, "")
+        fill = page_chunks.get(fill_id, "")
+        if not read or not fill:
+            continue
+
+        english_rows = class_span_bodies(read, "korean")
+        fill_rows = TASK_BLOCK.split(fill)[1:]
+        if len(fill_rows) != len(english_rows):
+            errors.append(
+                f"{fill_id}: {len(fill_rows)} fill rows but {len(english_rows)} "
+                f"canonical rows on {read_id}"
+            )
+            continue
+
+        for index, (english, fill_row) in enumerate(
+            zip(english_rows, fill_rows), start=1
+        ):
+            taught_english = _normalized_targets(english, "ending")
+            blank_answers = tuple(
+                answer.replace("’", "'").casefold().rstrip(".,!?")
+                for answer in control_answers(fill_row, "slot-input")
+            )
+            if not blank_answers or any(
+                answer not in taught_english for answer in blank_answers
+            ):
+                errors.append(
+                    f"{fill_id} row {index}: blank answers {blank_answers!r} do not "
+                    f"belong to taught target segments {taught_english!r} on {read_id} — keep "
+                    "vocabulary visible and blank only the practiced frame"
+                )
+
+            fill_japanese = _normalized_targets(fill_row, "target")
+            if len(fill_japanese) != len(blank_answers):
+                errors.append(
+                    f"{fill_id} row {index}: Japanese target cue count "
+                    f"({len(fill_japanese)}) does not match blank count "
+                    f"({len(blank_answers)})"
+                )
+    return errors
+
+
+def translation_support_issues(page_chunks):
+    """Validate the required target-v2 support contract and hint boundaries."""
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-translate", page_id):
+            continue
+        attrs = page_attributes(chunk)
+        contract = attrs.get("data-scaffolding-contract")
+        stage = attrs.get("data-support-stage")
+        blocks = TASK_BLOCK.split(chunk)[1:]
+
+        for index, block in enumerate(blocks, start=1):
+            try:
+                hints = vocabulary.hint_words(block)
+            except vocabulary.VocabularyError:
+                # The deck-wide vocabulary check reports the malformed chip.
+                hints = set()
+            banned = sorted(hints & NON_LEXICAL_HINTS)
+            if banned:
+                errors.append(
+                    f"{page_id} row {index}: non-lexical hint chip(s) "
+                    f"{', '.join(banned)} — articles, auxiliaries and inflections "
+                    "must be retrieved, not hinted"
+                )
+
+        if contract is None:
+            errors.append(
+                f"{page_id}: translation production must declare "
+                'data-scaffolding-contract="target-v2" and an explicit support stage'
+            )
+            continue
+        if contract != "target-v2":
+            errors.append(f"{page_id}: unknown scaffolding contract {contract!r}")
+            continue
+        if stage not in {"supported", "checkpoint"}:
+            errors.append(
+                f"{page_id}: target-v2 requires data-support-stage=\"supported\" "
+                "or \"checkpoint\""
+            )
+            continue
+        page_hint_count = 0
+        for index, block in enumerate(blocks, start=1):
+            hints = vocabulary.hint_words(block)
+            page_hint_count += len(hints)
+            if stage == "checkpoint" and hints:
+                errors.append(
+                    f"{page_id} row {index}: checkpoint production must not carry hints"
+                )
+        if stage == "supported" and not page_hint_count:
+            errors.append(
+                f"{page_id}: supported production needs at least one useful lexical hint; "
+                "use checkpoint only when all non-target language is deliberately retrieved"
+            )
+    return errors
+
+
+def choice_branch_coverage_issues(page_chunks):
+    """Require a choice activity to make both taught alternatives earn their keep.
+
+    Four copies of the same answer are visually interactive but pedagogically
+    inert: after the first row the learner can tap by position without reading.
+    This objective gate complements the human review of distractor plausibility.
+    """
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-choose", page_id) or "word-choice-list" not in chunk:
+            continue
+        correct = []
+        for match in SPAN_OPEN.finditer(chunk):
+            attrs = {
+                key.lower(): value for key, _, value in ATTRIBUTE.findall(match.group(0))
+            }
+            if (
+                "opt" not in attrs.get("class", "").split()
+                or not re.search(r"\bdata-correct(?:\s|>|=)", match.group(0))
+            ):
+                continue
+            correct.append(plain_text(span_body(chunk, match.end())).casefold())
+        if len(correct) >= 2 and len(set(correct)) < 2:
+            errors.append(
+                f"{page_id}: every row has the same correct branch {correct[0]!r} — "
+                "vary the correct alternative or replace the activity with a decision that teaches something"
+            )
     return errors
 
 
@@ -580,6 +772,12 @@ def pattern_meaning_issues(page_id, chunk):
             errors.append(f"{page_id}: Japanese or Korean appears in the English tutor line")
         if re.search(r"\b(?:CORE|CTX|FT)[- ]?\d+\b|\blesson\s+\d+\b", plain_text(en.group(1)), re.I):
             errors.append(f"{page_id}: lesson-number reference in learner/tutor-facing copy")
+        if PATTERN_MEANING_OPERATION.search(plain_text(en.group(1))):
+            errors.append(
+                f"{page_id}: pattern-meaning mixes teaching copy with an activity "
+                "instruction — keep meaning/use in the blue line and the learner "
+                "operation in the tutor note or activity page"
+            )
     return errors
 
 
@@ -652,6 +850,11 @@ def core_production_issues(page_chunks):
     if freetalk:
         turns = len(TURN_OPEN.findall(freetalk))
         speakers = len(WHO_OPEN.findall(freetalk))
+        if turns < 3:
+            errors.append(
+                "p3-freetalk: Free Talk needs a reciprocal Tutor/Me exchange — "
+                "tutor asks, learner answers and asks back, tutor gives a real answer"
+            )
         if turns != speakers:
             errors.append(
                 f"p3-freetalk: {turns} turns but {speakers} speaker labels — "
@@ -661,6 +864,40 @@ def core_production_issues(page_chunks):
             errors.append(
                 "p3-freetalk: generic production instruction — print the actual target "
                 "scaffold, ask-back question, and tutor-answer label"
+            )
+        prompts = partner_turns(freetalk)
+        if not prompts:
+            subtitles = SUBTITLE.findall(freetalk)
+            script = SPAN_KO.search(subtitles[0][1]) if subtitles else None
+            if script:
+                prompts = [plain_text(script.group(1))]
+        if not prompts or not prompts[0].rstrip().endswith("?"):
+            errors.append(
+                "p3-freetalk: first Tutor turn must be a real relevant question"
+            )
+        elif CONTEXTUAL_ROLEPLAY_AS_FREETALK.search(prompts[0]):
+            errors.append(
+                "p3-freetalk: first Tutor question is disguised pattern production "
+                "or roleplay — ask a personal, preference, or experience question"
+            )
+        learner_questions = []
+        for turn in re.split(r'(?=<div class="turn\b)', freetalk):
+            if not re.match(r'<div class="turn me"', turn):
+                continue
+            learner_questions.extend(
+                plain_text(body)
+                for class_name in ("korean", "answer-label")
+                for body in class_span_bodies(turn, class_name)
+                if "?" in plain_text(body) or "？" in plain_text(body)
+            )
+        if not learner_questions:
+            errors.append(
+                "p3-freetalk: learner needs a visible natural ask-back question"
+            )
+        if FORCED_FREETALK_FRAME.search(prompts[0] if prompts else plain_text(freetalk)):
+            errors.append(
+                "p3-freetalk: do not force today's frame in Free Talk — invite it "
+                "only when it fits the real conversation"
             )
         errors.extend(live_tutor_answer_issues("p3-freetalk", freetalk))
     return errors
@@ -680,7 +917,6 @@ def core_canonical_shape_issues(page_chunks):
 
     required = (
         "lesson-goal",
-        "words-you-know",
         "part1-intro",
         "p1-teach",
         "p1-read",
@@ -705,10 +941,6 @@ def core_canonical_shape_issues(page_chunks):
     missing = [page_id for page_id in required if page_id not in page_chunks]
     if missing:
         errors.append("Core lesson is missing canonical pages: " + ", ".join(missing))
-
-    goal = page_chunks.get("lesson-goal", "")
-    if goal and class_tag_count(goal, "known-row") != 3:
-        errors.append("lesson-goal: show the complete three-beat target exchange")
 
     for part in (1, 2):
         choose_id = f"p{part}-choose"
@@ -871,10 +1103,45 @@ def contextual_production_issues(page_chunks, *, enforce_frame_boundaries=True):
         turns = len(TURN_OPEN.findall(live))
         icons = len(GENERIC_AVATAR.findall(live))
         profiles = len(PROFILE_AVATAR.findall(live))
+        if turns < 3:
+            errors.append(
+                "p3-freetalk: Free Talk needs a reciprocal Tutor/Me exchange — "
+                "tutor asks, learner answers and asks back, tutor gives a real answer"
+            )
         if turns and (icons != turns or profiles):
             errors.append(
                 f"p3-freetalk: live Tutor/Me exchange needs generic icons on every turn "
                 f"(turns={turns} icons={icons} profiles={profiles})"
+            )
+        prompts = partner_turns(live)
+        if not prompts or not prompts[0].rstrip().endswith("?"):
+            errors.append(
+                "p3-freetalk: first Tutor turn must be an actual relevant question — "
+                "do not label an imperative or another roleplay-production task Free Talk"
+            )
+        elif CONTEXTUAL_ROLEPLAY_AS_FREETALK.search(prompts[0]):
+            errors.append(
+                "p3-freetalk: first Tutor question is another scripted roleplay-production "
+                "task — ask an interesting personal, preference, or experience question instead"
+            )
+        learner_questions = []
+        for turn in re.split(r'(?=<div class="turn\b)', live):
+            if not re.match(r'<div class="turn me"', turn):
+                continue
+            learner_questions.extend(
+                plain_text(body)
+                for class_name in ("korean", "answer-label")
+                for body in class_span_bodies(turn, class_name)
+                if "?" in plain_text(body) or "？" in plain_text(body)
+            )
+        if not learner_questions:
+            errors.append(
+                "p3-freetalk: learner needs a visible natural ask-back question"
+            )
+        if FORCED_FREETALK_FRAME.search(prompts[0] if prompts else plain_text(live)):
+            errors.append(
+                "p3-freetalk: do not force today's frame in Free Talk — invite it "
+                "only when it fits the real conversation"
             )
         errors.extend(live_tutor_answer_issues("p3-freetalk", live))
 
@@ -953,6 +1220,230 @@ def freetalk_style_issues(chunk):
         )
     if "Fluency first" in chunk:
         errors.append("lesson-style: use Discussion first, not Fluency first")
+    return errors
+
+
+def freetalk_conversation_issues(page_chunks):
+    """Protect the question pool from becoming a scripted interview."""
+    errors = []
+    intro = page_chunks.get("talk-intro", "")
+    if intro:
+        subtitles = SUBTITLE.findall(intro)
+        body = subtitles[0][1] if subtitles else ""
+        english = SPAN_KO.search(body)
+        spoken = plain_text(english.group(1)).casefold() if english else ""
+        note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(intro))).casefold()
+        if not (
+            "every question" in spoken
+            and "interesting" in spoken
+            and "react" in note
+            and "share" in note
+            and "skip" in note
+        ):
+            errors.append(
+                "talk-intro: frame the pages as a flexible question pool; follow the "
+                "learner's most interesting answer, react or share briefly, and skip freely"
+            )
+
+    prompts = {}
+    followup_sets = {}
+    for page_id in FREETALK_QUESTION_PAGES:
+        chunk = page_chunks.get(page_id, "")
+        if not chunk:
+            continue
+        subtitles = SUBTITLE.findall(chunk)
+        body = subtitles[0][1] if subtitles else ""
+        english = SPAN_KO.search(body)
+        prompt = plain_text(english.group(1)) if english else ""
+        if prompt.count("?") > 1:
+            errors.append(
+                f"{page_id}: visible prompt contains {prompt.count('?')} questions — "
+                "give the learner one clear talking job and move optional probes to tutor follow-ups"
+            )
+        key = re.sub(r"[^a-z0-9]+", " ", prompt.casefold()).strip()
+        if key:
+            if key in prompts:
+                errors.append(
+                    f"{page_id}: repeats the main prompt from {prompts[key]} — every page "
+                    "needs a distinct conversational move"
+                )
+            else:
+                prompts[key] = page_id
+
+        followups = tuple(
+            re.sub(r"[^a-z0-9]+", " ", plain_text(item).casefold()).strip()
+            for item in LIST_ITEM_BODY.findall(chunk)
+            if plain_text(item)
+        )
+        if followups:
+            if followups in followup_sets:
+                errors.append(
+                    f"{page_id}: repeats the complete follow-up set from "
+                    f"{followup_sets[followups]} — write probes for this prompt's actual idea"
+                )
+            else:
+                followup_sets[followups] = page_id
+    return errors
+
+
+def pilot_operating_issues(page_chunks, *, track):
+    """Enforce only objective regressions from the owner-approved pilot pass.
+
+    Naturalness, page usefulness and whether a Free Talk tangent is interesting
+    remain human decisions. These checks cover markup or exact shared operations
+    whose intended behavior is no longer ambiguous.
+    """
+    errors = []
+    goal = page_chunks.get("lesson-goal", "")
+    if goal:
+        if class_tag_count(goal, "known-row"):
+            errors.append(
+                "lesson-goal: remove example/outcome rows — state the can-do and "
+                "have the learner read the title once"
+            )
+        subtitles = SUBTITLE.findall(goal)
+        english = SPAN_KO.search(subtitles[0][1]) if subtitles else None
+        spoken = plain_text(english.group(1)) if english else ""
+        if not ("read" in spoken.casefold() and "title" in spoken.casefold()):
+            errors.append(
+                "lesson-goal: the spoken script must ask the learner to read the title aloud"
+            )
+        if len(sentences(english.group(1) if english else "", EN_END, spaced=True)) < 2:
+            errors.append(
+                "lesson-goal: state one useful can-do before asking the learner to "
+                "read the title aloud"
+            )
+
+    if track == "contextual" and "situation-card" in page_chunks:
+        errors.append(
+            "situation-card: remove the duplicate overview — use one goal page, then start the scene"
+        )
+
+    if track == "contextual" and "scene" in page_chunks:
+        scene = page_chunks["scene"]
+        subtitles = SUBTITLE.findall(scene)
+        english = SPAN_KO.search(subtitles[0][1]) if subtitles else None
+        spoken = plain_text(english.group(1)) if english else ""
+        explicit_roles = (
+            re.search(r"\byou(?:['’]re| are)\b", spoken, re.I)
+            and re.search(r"\bI(?:['’]ll be|['’]m| am)\b", spoken, re.I)
+        )
+        if not explicit_roles:
+            errors.append(
+                "scene: spoken setup must name the learner's role and tutor's role "
+                "explicitly (You're the ...; I'll be the ...)"
+            )
+        if len(re.findall(r"[A-Za-z]+(?:['’][A-Za-z]+)?", spoken)) > 30:
+            errors.append(
+                "scene: role setup is too long — name both roles and begin the roleplay"
+            )
+
+    for page_id, chunk in page_chunks.items():
+        subtitles = SUBTITLE.findall(chunk)
+        body = subtitles[0][1] if subtitles else ""
+        en = SPAN_KO.search(body)
+        ja = SPAN_JA.search(body)
+        spoken = plain_text(en.group(1)) if en else ""
+        support = plain_text(ja.group(1)) if ja else ""
+
+        if re.fullmatch(r"p[12]-read|expressions", page_id):
+            if "read" not in spoken.casefold() or TUTOR_READS_TARGET.search(spoken):
+                errors.append(
+                    f"{page_id}: learner reading is the default — tell the learner "
+                    "to read the visible English aloud"
+                )
+        if page_id == "understand":
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk)))
+            explicit_listening = (
+                TUTOR_READS_TARGET.search(spoken)
+                or ("listen" in spoken.casefold() and "read" in note.casefold())
+            )
+            if "choose" not in spoken.casefold() or not explicit_listening:
+                errors.append(
+                    "understand: explicitly say that the tutor reads each English "
+                    "line and the learner listens and chooses its meaning"
+                )
+
+        if "reorder" in page_id and spoken:
+            if spoken != REORDER_SCRIPT_EN or support != REORDER_SCRIPT_JA:
+                errors.append(
+                    f"{page_id}: use the approved shared reorder script, then have "
+                    "the learner say the whole sentence aloud"
+                )
+        if "translate" in page_id and spoken:
+            if spoken != TRANSLATE_SCRIPT_EN or support != TRANSLATE_SCRIPT_JA:
+                errors.append(
+                    f"{page_id}: use the approved shared translate script"
+                )
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk)))
+            if not ("type" in note.casefold() and "complete" in note.casefold()):
+                errors.append(
+                    f"{page_id}: tell the tutor to type the learner's complete English sentence"
+                )
+        if re.fullmatch(r"p[12]-fill", page_id) and spoken:
+            lower = spoken.casefold()
+            if not (
+                ("whole sentence" in lower or "whole request" in lower)
+                and "missing words" in lower
+            ):
+                errors.append(
+                    f"{page_id}: tell the learner to say the whole sentence, including "
+                    "the missing words"
+                )
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk))).casefold()
+            if not ("type only" in note and "missing words" in note):
+                errors.append(
+                    f"{page_id}: tell the tutor to type only the missing words"
+                )
+        if re.fullmatch(r"p[12]-choose", page_id) and spoken:
+            lower = spoken.casefold()
+            if not (
+                "choose" in lower
+                and "read" in lower
+                and ("complete sentence" in lower or "whole sentence" in lower)
+            ):
+                errors.append(
+                    f"{page_id}: choosing must end with the learner reading the complete sentence aloud"
+                )
+
+        if "fb-task" in chunk:
+            errors.append(
+                f"{page_id}: remove the repeated task inside the response component"
+            )
+        if re.fullmatch(r"p[12]-write", page_id) and 'data-fb="' not in chunk:
+            errors.append(
+                f"{page_id}: capture the learner's spoken answer with the shared feedback "
+                "component, without repeating the task inside the response box"
+            )
+        if re.fullmatch(r"p[12]-write", page_id):
+            if not QUOTED_OPEN_FRAME.search(spoken):
+                errors.append(
+                    f"{page_id}: print the exact target frame in the open-production script"
+                )
+            if (
+                "make your own sentence" in spoken.casefold()
+                or GENERIC_OPEN_END.search(spoken)
+            ):
+                errors.append(
+                    f"{page_id}: generic open-production copy does not name the "
+                    "communicative job — say what the learner should use the frame to do"
+                )
+            note = plain_text(" ".join(TUTOR_NOTE_BLOCK.findall(chunk))).casefold()
+            if not (
+                "learner" in note
+                and "aloud" in note
+                and ("capture" in note or "type" in note)
+            ):
+                errors.append(
+                    f"{page_id}: have the learner answer aloud before the tutor "
+                    "captures or types the sentence"
+                )
+        for fb_tag in re.findall(r'<div\b[^>]*class="[^"]*\bfb\b[^"]*"[^>]*data-fb="[^"]+"[^>]*>', chunk):
+            if 'data-fb-spoken-label="Student\'s sentence"' not in fb_tag:
+                errors.append(
+                    f"{page_id}: feedback capture must be labelled Student's sentence"
+                )
+
     return errors
 
 
@@ -1268,7 +1759,11 @@ def check(path):
             errs.extend(pattern_meaning_issues(page_id, chunk))
         page_chunks = dict(pages(html))
         if "1-core-patterns" in path.parts:
+            errs.extend(pilot_operating_issues(page_chunks, track="core"))
             errs.extend(target_highlight_issues(page_chunks))
+            errs.extend(controlled_target_alignment_issues(page_chunks))
+            errs.extend(translation_support_issues(page_chunks))
+            errs.extend(choice_branch_coverage_issues(page_chunks))
             errs.extend(core_production_issues(page_chunks))
             proofread_status = meta_content(html, "podo:proofread-status")
             if proofread_status == "pending":
@@ -1280,7 +1775,11 @@ def check(path):
                 errs.extend(core_canonical_shape_issues(page_chunks))
                 errs.extend(smallest_unit_choice_issues(page_chunks))
         if "2-contextual-english" in path.parts:
+            errs.extend(pilot_operating_issues(page_chunks, track="contextual"))
             errs.extend(target_highlight_issues(page_chunks))
+            errs.extend(controlled_target_alignment_issues(page_chunks))
+            errs.extend(translation_support_issues(page_chunks))
+            errs.extend(choice_branch_coverage_issues(page_chunks))
             errs.extend(contextual_production_issues(
                 page_chunks,
                 enforce_frame_boundaries=(
@@ -1339,6 +1838,8 @@ def check(path):
     # ---- 4–5 · English Freetalking contracts -----------------------------
     if is_english and "3-freetalking" in path.parts:
         page_chunks = dict(pages(html))
+        errs.extend(pilot_operating_issues(page_chunks, track="freetalking"))
+        errs.extend(freetalk_conversation_issues(page_chunks))
         errs.extend(freetalk_inventory_issues(html))
         if "article" not in page_chunks:
             errs.append(

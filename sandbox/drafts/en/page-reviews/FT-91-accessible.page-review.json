@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/91-someone-you-would-trade-lives-with-for-a-day/lesson.html",
+  "lessonSha256": "5de6eb6111a226754fed8be2eae9bd6f044ddf29714c6e50540ece83f0fc3433",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “Someone you would trade lives with for a day” aloud once.",
+      "tutorAction": "State the can-do, invite one reading of “Someone you would trade lives with for a day,” then move to the optional article.",
+      "targetOrPrompt": "Someone you would trade lives with for a day / 一日だけ人生を入れ替えたい人. Let's explore what one day in another life could teach us. / 別の人生を一日体験すると何が分かるか考えましょう。",
+      "learningTarget": "Orient the learner to a conversation about “Someone you would trade lives with for a day” without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no personal history is required.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and learner action as the English.",
+      "articleTreatment": "This page introduces the topic only; the optional article remains a separate pre-study component.",
+      "choiceQuality": "No fixed choice set or model answer appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "What trading lives would reveal / 人生を入れ替えると見えること. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “To trade lives is to borrow another person's ordinary day.” to “The choice says as much about our questions as about the other person.,” as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned accessible-specific Japanese claims are available; this variant owns these selective glosses: trade lives=人生を入れ替える.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real view when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Whose daily life would you be curious to experience for one day?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Whose daily life would you be curious to experience for one day?”, react or share briefly, then choose at most one relevant probe such as “Which part of that day would you most want to see?”.",
+      "targetOrPrompt": "Whose daily life would you be curious to experience for one day? / 誰の日常生活を一日体験してみたいですか？ Follow-up pool: Which part of that day would you most want to see? What might surprise you about the routine?",
+      "learningTarget": "Explore the distinct “Whose day” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which part of that day would you most want to see?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which part of that day would you most want to see?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Whose daily life would you be curious to experience for one day?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “What might surprise you about the routine?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Whose daily life would you be curious to experience for one day?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “What can make another person's daily life worth experiencing for one day?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What can make another person's daily life worth experiencing for one day?”, react or share briefly, then choose at most one relevant probe such as “Which experience would become available?”.",
+      "targetOrPrompt": "What can make another person's daily life worth experiencing for one day? / 別の人の日常を一日体験する価値が生まれるのは何ですか？ Follow-up pool: Which experience would become available? Which pressure would you want to understand?",
+      "learningTarget": "Explore the distinct “Why that life” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which experience would become available?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which experience would become available?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can make another person's daily life worth experiencing for one day?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which pressure would you want to understand?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What can make another person's daily life worth experiencing for one day?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “What would be the best use of the first hour in another person's life?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What would be the best use of the first hour in another person's life?”, react or share briefly, then choose at most one relevant probe such as “Would the first action be fun or useful?”.",
+      "targetOrPrompt": "What would be the best use of the first hour in another person's life? / 別の人の人生を体験する最初の一時間を、どう使うのがよいですか？ Follow-up pool: Would the first action be fun or useful? What would you avoid doing with someone else's life?",
+      "learningTarget": "Explore the distinct “Using the day” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Would the first action be fun or useful?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Would the first action be fun or useful?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would be the best use of the first hour in another person's life?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “What would you avoid doing with someone else's life?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What would be the best use of the first hour in another person's life?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “What question could one day in another life help answer?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What question could one day in another life help answer?”, react or share briefly, then choose at most one relevant probe such as “Could one day really answer it?”.",
+      "targetOrPrompt": "What question could one day in another life help answer? / 別の人生を一日体験すると、どんな疑問の答えが分かりますか？ Follow-up pool: Could one day really answer it? What evidence would be fair to use?",
+      "learningTarget": "Explore the distinct “What to learn” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Could one day really answer it?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Could one day really answer it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What question could one day in another life help answer?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “What evidence would be fair to use?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What question could one day in another life help answer?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “What part of another person's daily life might be harder than it looks?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What part of another person's daily life might be harder than it looks?”, react or share briefly, then choose at most one relevant probe such as “Which hidden responsibility might appear?”.",
+      "targetOrPrompt": "What part of another person's daily life might be harder than it looks? / 別の人の日常で、外から見るより大変そうな部分は何ですか？ Follow-up pool: Which hidden responsibility might appear? What might be easier than expected?",
+      "learningTarget": "Explore the distinct “The unexpected part” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which hidden responsibility might appear?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which hidden responsibility might appear?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What part of another person's daily life might be harder than it looks?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “What might be easier than expected?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What part of another person's daily life might be harder than it looks?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “Which lesson from a one-day life exchange would be appropriate to share afterward?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which lesson from a one-day life exchange would be appropriate to share afterward?”, react or share briefly, then choose at most one relevant probe such as “How could you describe the lesson without sharing private details?”.",
+      "targetOrPrompt": "Which lesson from a one-day life exchange would be appropriate to share afterward? / 一日の人生交換から得たどんな学びなら、その後、話してもよいですか？ Follow-up pool: How could you describe the lesson without sharing private details? Who might find the lesson useful?",
+      "learningTarget": "Explore the distinct “Telling them” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “How could you describe the lesson without sharing private details?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “How could you describe the lesson without sharing private details?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which lesson from a one-day life exchange would be appropriate to share afterward?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Who might find the lesson useful?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which lesson from a one-day life exchange would be appropriate to share afterward?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “What might make someone value their own ordinary life after a one-day exchange?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What might make someone value their own ordinary life after a one-day exchange?”, react or share briefly, then choose at most one relevant probe such as “What would you value more?”.",
+      "targetOrPrompt": "What might make someone value their own ordinary life after a one-day exchange? / 一日の人生交換の後、自分の普通の生活を大切に感じるのはどんなことですか？ Follow-up pool: What would you value more? Which part of the borrowed life would be hard to leave?",
+      "learningTarget": "Explore the distinct “Coming back” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What would you value more?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “What would you value more?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might make someone value their own ordinary life after a one-day exchange?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which part of the borrowed life would be hard to leave?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What might make someone value their own ordinary life after a one-day exchange?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “What could another person learn by experiencing one ordinary day in your life?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “What could another person learn by experiencing one ordinary day in your life?”, react or share briefly, then choose at most one relevant probe such as “Which routine might still surprise them?”.",
+      "targetOrPrompt": "What could another person learn by experiencing one ordinary day in your life? / 別の人があなたの普通の一日を体験すると、何を学べますか？ Follow-up pool: Which routine might still surprise them? What would they misunderstand after only one day?",
+      "learningTarget": "Explore the distinct “Someone choosing you” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which routine might still surprise them?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which routine might still surprise them?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What could another person learn by experiencing one ordinary day in your life?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “What would they misunderstand after only one day?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What could another person learn by experiencing one ordinary day in your life?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat the most useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one usable improvement from the discussion.",
+      "pedagogicalValue": "Turns the open conversation into specific evidence and one manageable next action.",
+      "failureDiagnosis": "The repeated correction shows whether the learner can immediately use the selected improvement.",
+      "nonTargetSupport": "The Japanese instruction mirrors the two-part feedback action; typed notes preserve the exact language.",
+      "articleTreatment": "Not applicable; feedback refers to live speaking rather than article recall.",
+      "choiceQuality": "No distractors appear; the tutor selects only one high-value strength and one actionable next step.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component and requires an actionable spoken close.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/23-two-cups-of-coffee/lesson.html",
+  "lessonSha256": "6df6ec925f14656bb307ccc7663207ee3c3e9be939d5d7619a8f980583a073d7",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the displayed lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"lesson-goal\" data-act=\"Everyday English\"> GOAL Two cups of coffee (コーヒーを2杯) Ask for an amount of something that is not counted directly. Please read the title aloud.直接数えないものの量をたずねたり、頼んだりしましょう。タイトルを声に出して読んでください。 Have the learner read the title once, then move on. <div class=\"section\"",
+      "learningTarget": "Goal orientation for food or drink the learner buys too much of.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle food or drink the learner buys too much of at the goal orientation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (an, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared goal orientation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the familiar English words shown on the page.",
+      "tutorAction": "Prompt only the displayed known words; do not turn this into a new-vocabulary lesson.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"words-you-know\">Words you know (知っている単語)Say the words you recognize, then use them in the lesson.知っている単語を言って、レッスンで使いましょう。ボトルbottle一切れpiece茶碗bowl <div class=\"transition-page\"",
+      "learningTarget": "Known-word activation for food or drink the learner buys too much of.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle food or drink the learner buys too much of at the known-word activation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared known-word activation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part1-intro\" data-act=\"Pattern 1\">PART 1Two cups of coffee, please.First, let's practice this pattern.まず、このパターンを練習しましょう。Introduce Part 1 with this one line, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "No article decision is introduced on this page, so the activity does not create an accidental a/an/the test.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the displayed meaning briefly, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: Two cups of | 2杯お願いします | Two bottles of | 2本お願いします | Two pieces of | 2切れお願いします",
+      "learningTarget": "Meaning and model for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—meaning and model—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the meaning and model stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning and model component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "Two cups of",
+          "2杯お願いします",
+          "Two bottles of",
+          "2本お願いします",
+          "Two pieces of",
+          "2切れお願いします"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete English sentence aloud.",
+      "tutorAction": "Listen to the learner; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: Two cups of | 2杯お願いします | Two bottles of | 2本お願いします | Two pieces of | 2切れお願いします | Two bowls of | 2杯お願いします",
+      "learningTarget": "Complete-sentence read-aloud for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—complete-sentence read-aloud—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the complete-sentence read-aloud stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared complete-sentence read-aloud component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "Two cups of",
+          "2杯お願いします",
+          "Two bottles of",
+          "2本お願いします",
+          "Two pieces of",
+          "2切れお願いします",
+          "Two bowls of",
+          "2杯お願いします"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the formula and examples to notice where the target words belong.",
+      "tutorAction": "Explain only the displayed form contrast and check one example.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p1-rule\">Count the container, then add of (容器を数えて of を加える)Count the container or piece, then keep of with the thing: two cups of coffee.容器や単位を数え、of と品物をつなげて two cups of coffee の形にします。数 + 容器-s + of + 品物Count by container容器で数えるtwo cups of coffeetwo bottles of water <div class=\"section\"",
+      "learningTarget": "Form explanation for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—form explanation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the form explanation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared form explanation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the option matching the Japanese, then read the entire completed sentence aloud.",
+      "tutorAction": "After each choice, have the learner read the completed sentence before moving on.",
+      "targetOrPrompt": "Exact contrasts: cups vs cup | bottle vs bottles | pieces vs piece | bowl vs bowls; Highlighted target evidence: 2杯 | 1本 | 2切れ | 1杯",
+      "learningTarget": "Meaningful two-way choice for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—meaningful two-way choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the meaningful two-way choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "The exact alternatives (cups vs cup | bottle vs bottles | pieces vs piece | bowl vs bowls) require a meaning or form decision; correct alternatives vary across rows and every distractor diagnoses a named contrast.",
+      "componentConsistency": "The shared meaningful two-way choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "2杯",
+          "1本",
+          "2切れ",
+          "1杯"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Arrange each complete sentence, then say it aloud.",
+      "tutorAction": "Let the learner build and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Complete order targets: Two cups of coffee, please. | Two bottles of water, please. | Two pieces of cake, please. | Two bowls of rice, please.",
+      "learningTarget": "Sentence assembly for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—sentence assembly—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the sentence assembly stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared sentence assembly component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact blank answers: Two cups of | Two bottles of | Two pieces of | Two bowls of; Lexical support: 杯:cups | 本:bottles | 切れ:pieces | 杯:bowls; Highlighted target evidence: 2杯お願いします | 2本お願いします | 2切れお願いします | 2杯お願いします",
+      "learningTarget": "Target retrieval in a complete sentence for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—target retrieval in a complete sentence—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the target retrieval in a complete sentence stage before the lesson increases independence.",
+      "nonTargetSupport": "Only the changing lexical content is supported by the declared hints (杯:cups | 本:bottles | 切れ:pieces | 杯:bowls); the taught frame itself remains the retrieval target.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared target retrieval in a complete sentence component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "2杯お願いします",
+          "2本お願いします",
+          "2切れお願いします",
+          "2杯お願いします"
+        ],
+        "blankAnswers": [
+          "Two cups of",
+          "Two bottles of",
+          "Two pieces of",
+          "Two bowls of"
+        ],
+        "hintChips": [
+          "杯:cups",
+          "本:bottles",
+          "切れ:pieces",
+          "杯:bowls"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read the Japanese and say the complete English sentence, using the lexical hint when needed.",
+      "tutorAction": "Type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: Two cups of coffee, please. | Two bottles of water, please. | Two pieces of cake, please. | Two bowls of rice, please.; Lexical support: コーヒー:coffee | 水:water | ケーキ:cake | ご飯:rice",
+      "learningTarget": "Supported whole-sentence production for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—supported whole-sentence production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the supported whole-sentence production stage before the lesson increases independence.",
+      "nonTargetSupport": "Only the changing lexical content is supported by the declared hints (コーヒー:coffee | 水:water | ケーキ:cake | ご飯:rice); the taught frame itself remains the retrieval target.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared supported whole-sentence production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Two cups of coffee, please.",
+          "Two bottles of water, please.",
+          "Two pieces of cake, please.",
+          "Two bowls of rice, please."
+        ],
+        "hintChips": [
+          "コーヒー:coffee",
+          "水:water",
+          "ケーキ:cake",
+          "ご飯:rice"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personally meaningful sentence that performs the exact job named in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/turns: Now use “___ cups / bottles / pieces of ___, please” to order a real amount.",
+      "learningTarget": "Communicative personal production for number + container/piece + of + item.",
+      "pedagogicalValue": "This page has one distinct job—communicative personal production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle number + container/piece + of + item at the communicative personal production stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared communicative personal production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “___ cups / bottles / pieces of ___, please” to order a real amount."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part2-intro\" data-act=\"Pattern 2\">PART 2How much rice do we need?Next, let's practice this pattern.次に、このパターンを練習しましょう。Introduce Part 2 with this one line, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "No article decision is introduced on this page, so the activity does not create an accidental a/an/the test.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read every complete example aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the displayed meaning briefly, then have the learner read each example aloud.",
+      "targetOrPrompt": "Highlighted target evidence: How much | do we need | どのくらい | 必要ですか | How much | do we need | どのくらい | 必要ですか | How much | do we need | どのくらい | 必要ですか",
+      "learningTarget": "Meaning and model for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—meaning and model—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the meaning and model stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning and model component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか",
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか",
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete English sentence aloud.",
+      "tutorAction": "Listen to the learner; model only when help is actually needed.",
+      "targetOrPrompt": "Highlighted target evidence: How much | do we need | どのくらい | 必要ですか | How much | do we need | どのくらい | 必要ですか | How much | do we need | どのくらい | 必要ですか | How much | do we need | どのくらい | 必要ですか",
+      "learningTarget": "Complete-sentence read-aloud for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—complete-sentence read-aloud—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the complete-sentence read-aloud stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared complete-sentence read-aloud component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか",
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか",
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか",
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Use the formula and examples to notice where the target words belong.",
+      "tutorAction": "Explain only the displayed form contrast and check one example.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"p2-rule\">Use How much with a non-count noun (直接数えない名詞には How much)Use How much plus the non-count noun, then do we need?How much の後ろに直接数えない名詞を置き、最後に do we need? を続けます。How much + 名詞 + do we need?Ask the amount量をたずねるHow much rice do we need?How much water do we need? <div class=\"section\"",
+      "learningTarget": "Form explanation for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—form explanation—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the form explanation stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared form explanation component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the option matching the Japanese, then read the entire completed sentence aloud.",
+      "tutorAction": "After each choice, have the learner read the completed sentence before moving on.",
+      "targetOrPrompt": "Exact contrasts: much vs many | many vs much | much vs many | many vs much; Highlighted target evidence: どのくらい | 何本 | どのくらい | いくつ",
+      "learningTarget": "Meaningful two-way choice for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—meaningful two-way choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the meaningful two-way choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "The exact alternatives (much vs many | many vs much | much vs many | many vs much) require a meaning or form decision; correct alternatives vary across rows and every distractor diagnoses a named contrast.",
+      "componentConsistency": "The shared meaningful two-way choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "どのくらい",
+          "何本",
+          "どのくらい",
+          "いくつ"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Arrange each complete sentence, then say it aloud.",
+      "tutorAction": "Let the learner build and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Complete order targets: How much rice do we need? | How much water do we need? | How much coffee do we need? | How much time do we need?",
+      "learningTarget": "Sentence assembly for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—sentence assembly—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the sentence assembly stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared sentence assembly component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Exact blank answers: How much | do we need | How much | do we need | How much | do we need | How much | do we need; Highlighted target evidence: どのくらい | 必要ですか | どのくらい | 必要ですか | どのくらい | 必要ですか | どのくらい | 必要ですか",
+      "learningTarget": "Target retrieval in a complete sentence for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—target retrieval in a complete sentence—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the target retrieval in a complete sentence stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared target retrieval in a complete sentence component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "どのくらい",
+          "必要ですか",
+          "どのくらい",
+          "必要ですか",
+          "どのくらい",
+          "必要ですか",
+          "どのくらい",
+          "必要ですか"
+        ],
+        "blankAnswers": [
+          "How much",
+          "do we need",
+          "How much",
+          "do we need",
+          "How much",
+          "do we need",
+          "How much",
+          "do we need"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read the Japanese and say the complete English sentence, using the lexical hint when needed.",
+      "tutorAction": "Type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Exact blank answers: How much rice do we need? | How much water do we need? | How much coffee do we need? | How much time do we need?; Lexical support: ご飯:rice | 水:water | コーヒー:coffee | 時間:time",
+      "learningTarget": "Supported whole-sentence production for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—supported whole-sentence production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the supported whole-sentence production stage before the lesson increases independence.",
+      "nonTargetSupport": "Only the changing lexical content is supported by the declared hints (ご飯:rice | 水:water | コーヒー:coffee | 時間:time); the taught frame itself remains the retrieval target.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared supported whole-sentence production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "How much rice do we need?",
+          "How much water do we need?",
+          "How much coffee do we need?",
+          "How much time do we need?"
+        ],
+        "hintChips": [
+          "ご飯:rice",
+          "水:water",
+          "コーヒー:coffee",
+          "時間:time"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personally meaningful sentence that performs the exact job named in the prompt.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what is useful.",
+      "targetOrPrompt": "Exact learner prompt/turns: Now use “How much ___ do we need?” to ask about one amount.",
+      "learningTarget": "Communicative personal production for How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—communicative personal production—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle How much + non-count noun + do we need? at the communicative personal production stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared communicative personal production component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “How much ___ do we need?” to ask about one amount."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Notice the displayed pattern or conversation goal and get ready for the next activity.",
+      "tutorAction": "Give the one-line transition and move directly to the next page.",
+      "targetOrPrompt": "Visible instruction/model: data-page-id=\"part3-intro\" data-act=\"Conversation\">PART 3Use it in a conversation (会話で使おう)Now, let's use both patterns in a conversation.では、二つのパターンを会話で使ってみましょう。Introduce the conversation, then move on. <div class=\"section\"",
+      "learningTarget": "Section transition for integrated use of number + container/piece + of + item and How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—section transition—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of number + container/piece + of + item and How much + non-count noun + do we need? at the section transition stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared section transition component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every Me line aloud in the role-play.",
+      "tutorAction": "Take the named partner role and read only that role's lines.",
+      "targetOrPrompt": "Highlighted target evidence: Two cups of | 2杯お願いします | How much | do we need | どのくらい | 必要ですか",
+      "learningTarget": "Scripted role-play for integrated use of number + container/piece + of + item and How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—scripted role-play—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of number + container/piece + of + item and How much + non-count noun + do we need? at the scripted role-play stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared scripted role-play component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [
+          "Two cups of",
+          "2杯お願いします",
+          "How much",
+          "do we need",
+          "どのくらい",
+          "必要ですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Play Me and say every complete line, including all missing words.",
+      "tutorAction": "Take the named partner role and type only the learner's missing words.",
+      "targetOrPrompt": "Exact blank answers: Two cups of | How much | do we need",
+      "learningTarget": "Role-play retrieval for integrated use of number + container/piece + of + item and How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—role-play retrieval—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of number + container/piece + of + item and How much + non-count noun + do we need? at the role-play retrieval stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared role-play retrieval component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Two cups of",
+          "How much",
+          "do we need"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's real question, ask the displayed question back, and listen to the tutor's real answer.",
+      "tutorAction": "React to the interesting detail and answer the learner honestly; invite today's pattern only if it fits naturally.",
+      "targetOrPrompt": "Exact learner prompt/turns: What food or drink do you always buy too much of? | What do you tend to buy too much of?",
+      "learningTarget": "Reciprocal free talk for food or drink the learner buys too much of.",
+      "pedagogicalValue": "This page has one distinct job—reciprocal free talk—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle food or drink the learner buys too much of at the reciprocal free talk stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared reciprocal free talk component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What food or drink do you always buy too much of?",
+          "What do you tend to buy too much of?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Play Me and say every complete line, including all missing words.",
+      "tutorAction": "Take the named partner role and type only the learner's missing words.",
+      "targetOrPrompt": "Exact blank answers: Two bottles of | How much | do we need",
+      "learningTarget": "New-situation transfer for integrated use of number + container/piece + of + item and How much + non-count noun + do we need?.",
+      "pedagogicalValue": "This page has one distinct job—new-situation transfer—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle integrated use of number + container/piece + of + item and How much + non-count noun + do we need? at the new-situation transfer stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared new-situation transfer component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Two bottles of",
+          "How much",
+          "do we need"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two natural expressions and choose by meaning or situation.",
+      "tutorAction": "Explain the practical difference briefly and check which expression fits each situation.",
+      "targetOrPrompt": "Exact dialogue/model lines: Two cups of coffee, please. | Could we get two cups of coffee?",
+      "learningTarget": "Meaning-based nuance choice for food or drink the learner buys too much of.",
+      "pedagogicalValue": "This page has one distinct job—meaning-based nuance choice—and moves the learner from recognition toward usable speech without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty here specifically diagnoses whether the learner can handle food or drink the learner buys too much of at the meaning-based nuance choice stage before the lesson increases independence.",
+      "nonTargetSupport": "Non-target vocabulary stays visible in the complete bilingual model; no unrelated word is silently turned into an unsupported memory test.",
+      "articleTreatment": "Visible articles on this page (a, the) remain attached to their noun phrase and are not accidental extra targets.",
+      "choiceQuality": "No answer-choice set is used; the learner's decision is expressed through reading, retrieval, personal production, or role-play.",
+      "componentConsistency": "The shared meaning-based nuance choice component contains one learner action and one tutor action; response capture appears only where speech must be recorded.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "The substantive HTML, targets, answer keys, hints, instructions, and dialogue turns were reviewed against these exact bytes. Formal viewport and final human-page gates remain pending for the root visual pass.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -185,6 +185,11 @@ canonical shell.
   English analogue of the particles-and-endings rule in `ux-philosophy.md`. Every hint-chip English
   value must appear in exactly one vocabulary metadata category; Core and Contextual normally add
   no more than eight new content words.
+- **Target fidelity outranks row variety.** The exact frame highlighted on `pN-read` is the exact
+  answer removed on `pN-fill`. Never move a blank onto vocabulary to make four answers different;
+  redesign or omit a weak page instead. Whole-sentence production declares `supported` with lexical
+  hints on every row or `checkpoint` with none. Neither stage hints articles, auxiliaries or
+  inflections.
 
 ---
 

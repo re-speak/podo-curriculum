@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-careful-interaction/lessons/63-i-generally-prefer-coffee/lesson.html",
+  "lessonSha256": "3e830f994c6006cce0ba0387caaee4b7b077872f1f50e75c8523f600588a22ff",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing the can-do.",
+      "tutorAction": "State the exact can-do, have the learner read the title once, then move on.",
+      "targetOrPrompt": "Page title: I generally prefer coffee (私はたいていコーヒーのほうが好きです) ; Exact learner instruction: State a general preference and something you usually avoid. Please read the title aloud. ; Aligned Japanese: 一般的な好みと、ふだん避けるものを話しましょう。タイトルを声に出して読んでください。",
+      "learningTarget": "Lesson orientation for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—lesson orientation—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. / I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一般的な好みと、ふだん避けるものを話しましょう。タイトルを声に出して読んでください。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for lesson orientation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words shown.",
+      "tutorAction": "Listen to the familiar words and keep this activation brief.",
+      "targetOrPrompt": "Page title: Words you know (知っている単語) ; Exact learner instruction: Say the three familiar words in English. ; Aligned Japanese: 知っている3つの単語を英語で言いましょう。",
+      "learningTarget": "Known-word activation for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—known-word activation—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. / I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 知っている3つの単語を英語で言いましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for known-word activation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud once.",
+      "tutorAction": "Introduce Pattern 1 in one line and move on after the learner reads the title.",
+      "targetOrPrompt": "Exact visible instruction: Use this to compare your usual preference, not one choice today. Please read the title aloud. | 今日一回の選択ではなく、普段の好みを比べるときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "This page has one job—Pattern 1 transition—and advances the learner toward independent use of I generally prefer coffee to tea. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: まず、このパターンを練習しましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete Pattern 1 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain the displayed meaning, then have the learner read every example.",
+      "targetOrPrompt": "Page title: Today's pattern (今日のパターン) ; Exact learner instruction: Use this to compare your usual preference, not one choice today. ; Aligned Japanese: 今日一回の選択ではなく、普段の好みを比べるときに使います。 ; Highlighted target(s): I generally prefer coffee to | 私はたいてい紅茶よりコーヒーのほうが好きです | I generally prefer trains to | 私はたいていバスより電車のほうが好きです | I generally prefer cafés to | 私はたいていレストランよりカフェのほうが好きです",
+      "learningTarget": "Pattern 1 meaning and models for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "This page has one job—Pattern 1 meaning and models—and advances the learner toward independent use of I generally prefer coffee to tea. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 今日一回の選択ではなく、普段の好みを比べるときに使います。 | 私はたいてい紅茶よりコーヒーのほうが好きです 。 | 私はたいていバスより電車のほうが好きです 。; no unrelated memory test is added.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 meaning and models; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I generally prefer coffee to",
+          "私はたいてい紅茶よりコーヒーのほうが好きです",
+          "I generally prefer trains to",
+          "私はたいていバスより電車のほうが好きです",
+          "I generally prefer cafés to",
+          "私はたいていレストランよりカフェのほうが好きです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 example aloud.",
+      "tutorAction": "Listen to each example and model only if help is needed.",
+      "targetOrPrompt": "Page title: Read the sentences (文を読もう) ; Exact learner instruction: Please read each sentence aloud. ; Aligned Japanese: 一文ずつ声に出して読んでください。 ; Highlighted target(s): I generally prefer coffee to | 私はたいてい紅茶よりコーヒーのほうが好きです | I generally prefer trains to | 私はたいていバスより電車のほうが好きです | I generally prefer cafés to | 私はたいていレストランよりカフェのほうが好きです | I generally prefer mornings to | 私はたいてい夜より朝のほうが好きです",
+      "learningTarget": "Pattern 1 supported read-aloud for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "This page has one job—Pattern 1 supported read-aloud—and advances the learner toward independent use of I generally prefer coffee to tea. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一文ずつ声に出して読んでください。 | 私はたいてい紅茶よりコーヒーのほうが好きです 。 | 私はたいていバスより電車のほうが好きです 。; no unrelated memory test is added.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 supported read-aloud; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I generally prefer coffee to",
+          "私はたいてい紅茶よりコーヒーのほうが好きです",
+          "I generally prefer trains to",
+          "私はたいていバスより電車のほうが好きです",
+          "I generally prefer cafés to",
+          "私はたいていレストランよりカフェのほうが好きです",
+          "I generally prefer mornings to",
+          "私はたいてい夜より朝のほうが好きです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how Pattern 1 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 1 operation briefly and check it once.",
+      "targetOrPrompt": "Page title: General things take no article (一般的な物には冠詞なし) ; Exact learner instruction: For a general preference, use no article with non-count nouns and plural count nouns. ; Aligned Japanese: 一般的な好みでは、数えられない名詞と複数名詞に冠詞を付けません。",
+      "learningTarget": "Pattern 1 form explanation for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "This page has one job—Pattern 1 form explanation—and advances the learner toward independent use of I generally prefer coffee to tea. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一般的な好みでは、数えられない名詞と複数名詞に冠詞を付けません。; no unrelated memory test is added.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 form explanation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-choose",
+      "learnerAction": "Choose the form that matches each Japanese cue, then read the completed Pattern 1 sentence aloud.",
+      "tutorAction": "After each choice, require the complete spoken sentence before moving on.",
+      "targetOrPrompt": "Page title: Choose the pattern (パターンを選ぼう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Highlighted target(s): コーヒー | 電車 | カフェ | 朝",
+      "learningTarget": "Pattern 1 form discrimination for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "The page makes the learner use meaning to distinguish the exact forms needed for I generally prefer coffee to tea.; correct branches are not mechanically identical across all rows.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | 飲み物全般の好み：私は コーヒー のほうが好きです。 | 乗り物全般の好み：私は 電車 のほうが好きです。; no unrelated memory test is added.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "The decision is substantive and varies by cue: : coffee versus the coffee | : the train versus trains | : cafés versus the café | : the morning versus mornings",
+      "componentConsistency": "The page uses the established word-choice cards for Pattern 1 form discrimination; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "コーヒー",
+          "電車",
+          "カフェ",
+          "朝"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put each Pattern 1 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Page title: Build the sentence (文を組み立てよう) ; Exact learner instruction: Put the words in order, then say the whole sentence out loud. ; Aligned Japanese: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Pattern 1 word-order retrieval for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "This page has one job—Pattern 1 word-order retrieval—and advances the learner toward independent use of I generally prefer coffee to tea. without duplicating the adjacent page.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I generally prefer coffee to tea. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "No answer-choice distractor is used; the learner must reconstruct the full word order and say it aloud.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 word-order retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole Pattern 1 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Page title: Say the complete sentence (文をまるごと言おう) ; Exact learner instruction: Say each whole sentence aloud, including the missing words. ; Aligned Japanese: 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 ; Highlighted target(s): 私はたいてい紅茶よりコーヒーのほうが好きです | 私はたいていバスより電車のほうが好きです | 私はたいていレストランよりカフェのほうが好きです | 私はたいてい夜より朝のほうが好きです ; Exact blank answer(s): I generally prefer coffee to | I generally prefer trains to | I generally prefer cafés to | I generally prefer mornings to ; Lexical hint(s): コーヒー:coffee | 電車:train | カフェ:café | 朝:morning",
+      "learningTarget": "Pattern 1 controlled retrieval for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "The learner retrieves the stable target span in I generally prefer coffee to tea. and says the complete sentence; chips support only productive vocabulary.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I generally prefer coffee to tea. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: コーヒー:coffee | 電車:train | カフェ:café | 朝:morning; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 controlled retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "私はたいてい紅茶よりコーヒーのほうが好きです",
+          "私はたいていバスより電車のほうが好きです",
+          "私はたいていレストランよりカフェのほうが好きです",
+          "私はたいてい夜より朝のほうが好きです"
+        ],
+        "blankAnswers": [
+          "I generally prefer coffee to",
+          "I generally prefer trains to",
+          "I generally prefer cafés to",
+          "I generally prefer mornings to"
+        ],
+        "hintChips": [
+          "コーヒー:coffee",
+          "電車:train",
+          "カフェ:café",
+          "朝:morning"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 1 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Page title: Say it in English (英語にしよう) ; Exact learner instruction: Read the Japanese, then say it in English. ; Aligned Japanese: 日本語を見て、英語で言ってみましょう。 ; Exact blank answer(s): I generally prefer coffee to tea. | I generally prefer trains to buses. | I generally prefer cafés to restaurants. | I generally prefer mornings to evenings. ; Lexical hint(s): コーヒー:coffee | 紅茶:tea | 電車:train | バス:bus | カフェ:café | レストラン:restaurant | 朝:morning | 夜:evening",
+      "learningTarget": "Pattern 1 supported translation for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63: Use this to compare your usual preference, not one choice today.",
+      "pedagogicalValue": "The supported Japanese-to-English task retrieves I generally prefer coffee to tea. while lexical chips remove only incidental vocabulary load.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I generally prefer coffee to tea. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: コーヒー:coffee | 紅茶:tea | 電車:train | バス:bus | カフェ:café | レストラン:restaurant | 朝:morning | 夜:evening; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 1 supported translation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I generally prefer coffee to tea.",
+          "I generally prefer trains to buses.",
+          "I generally prefer cafés to restaurants.",
+          "I generally prefer mornings to evenings."
+        ],
+        "hintChips": [
+          "コーヒー:coffee",
+          "紅茶:tea",
+          "電車:train",
+          "バス:bus",
+          "カフェ:café",
+          "レストラン:restaurant",
+          "朝:morning",
+          "夜:evening"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use “I generally prefer coffee to tea.” to complete the exact communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “I generally prefer ___ to ___” to compare two things you genuinely like. Lexical hint(s): コーヒー:coffee | 紅茶:tea | バス:buses | 朝:mornings",
+      "learningTarget": "Pattern 1 communicative production for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea.. in CORE-63 through the exact current prompt: Now use “I generally prefer ___ to ___” to compare two things you genuinely like.",
+      "pedagogicalValue": "The page turns I generally prefer coffee to tea. into a named real-world speech act instead of asking for a generic copied sentence.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I generally prefer coffee to tea. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: コーヒー:coffee | 紅茶:tea | バス:buses | 朝:mornings; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 1 communicative production; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "コーヒー:coffee",
+          "紅茶:tea",
+          "バス:buses",
+          "朝:mornings"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I generally prefer ___ to ___” to compare two things you genuinely like."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud once.",
+      "tutorAction": "Introduce Pattern 2 in one line and move on after the learner reads the title.",
+      "targetOrPrompt": "Exact visible instruction: Use this to name a kind of place you usually stay away from. Please read the title aloud. | ふだん避ける場所の種類を言うときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—Pattern 2 transition—and advances the learner toward independent use of I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 次に、このパターンを練習しましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete Pattern 2 example aloud after the short meaning explanation.",
+      "tutorAction": "Briefly explain the displayed meaning, then have the learner read every example.",
+      "targetOrPrompt": "Page title: Today's pattern (今日のパターン) ; Exact learner instruction: Use this to name a kind of place you usually stay away from. ; Aligned Japanese: ふだん避ける場所の種類を言うときに使います。 ; Highlighted target(s): I tend to avoid | 混んだ場所を避けることが多いです | I tend to avoid | 騒がしい場所を避けることが多いです | I tend to avoid | 高い店を避けることが多いです",
+      "learningTarget": "Pattern 2 meaning and models for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—Pattern 2 meaning and models—and advances the learner toward independent use of I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: ふだん避ける場所の種類を言うときに使います。 | 私は 混んだ場所を避けることが多いです 。 | 私は 騒がしい場所を避けることが多いです 。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 meaning and models; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I tend to avoid",
+          "混んだ場所を避けることが多いです",
+          "I tend to avoid",
+          "騒がしい場所を避けることが多いです",
+          "I tend to avoid",
+          "高い店を避けることが多いです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 example aloud.",
+      "tutorAction": "Listen to each example and model only if help is needed.",
+      "targetOrPrompt": "Page title: Read the sentences (文を読もう) ; Exact learner instruction: Please read each sentence aloud. ; Aligned Japanese: 一文ずつ声に出して読んでください。 ; Highlighted target(s): I tend to avoid | 混んだ場所を避けることが多いです | I tend to avoid | 騒がしい場所を避けることが多いです | I tend to avoid | 高い店を避けることが多いです | I tend to avoid | 人の多い場所を避けることが多いです",
+      "learningTarget": "Pattern 2 supported read-aloud for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—Pattern 2 supported read-aloud—and advances the learner toward independent use of I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 一文ずつ声に出して読んでください。 | 私は 混んだ場所を避けることが多いです 。 | 私は 騒がしい場所を避けることが多いです 。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 supported read-aloud; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I tend to avoid",
+          "混んだ場所を避けることが多いです",
+          "I tend to avoid",
+          "騒がしい場所を避けることが多いです",
+          "I tend to avoid",
+          "高い店を避けることが多いです",
+          "I tend to avoid",
+          "人の多い場所を避けることが多いです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how Pattern 2 is built and read the complete examples.",
+      "tutorAction": "Explain the displayed Pattern 2 operation briefly and check it once.",
+      "targetOrPrompt": "Page title: General places are plural (場所全般は複数形) ; Exact learner instruction: Use a plural noun with no article when you mean places in general. ; Aligned Japanese: 場所全般を指すときは、冠詞を付けずに複数形を使います。",
+      "learningTarget": "Pattern 2 form explanation for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—Pattern 2 form explanation—and advances the learner toward independent use of I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 場所全般を指すときは、冠詞を付けずに複数形を使います。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 form explanation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the form that matches each Japanese cue, then read the completed Pattern 2 sentence aloud.",
+      "tutorAction": "After each choice, require the complete spoken sentence before moving on.",
+      "targetOrPrompt": "Page title: Choose the pattern (パターンを選ぼう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Highlighted target(s): 混んだ場所 | 騒がしい場所 | 高い店 | 人の多い場所",
+      "learningTarget": "Pattern 2 form discrimination for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "The page makes the learner use meaning to distinguish the exact forms needed for I tend to avoid crowded places.; correct branches are not mechanically identical across all rows.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | 場所全般：私は 混んだ場所 を避けます。 | 場所全般：私は 騒がしい場所 を避けます。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : crowded places versus the crowded place | : the noisy place versus noisy places | : expensive places versus the expensive place | : the busy place versus busy places",
+      "componentConsistency": "The page uses the established word-choice cards for Pattern 2 form discrimination; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "混んだ場所",
+          "騒がしい場所",
+          "高い店",
+          "人の多い場所"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put each Pattern 2 sentence in order, then say the whole sentence aloud.",
+      "tutorAction": "Let the learner order and say each sentence; help only after an attempt.",
+      "targetOrPrompt": "Page title: Build the sentence (文を組み立てよう) ; Exact learner instruction: Put the words in order, then say the whole sentence out loud. ; Aligned Japanese: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Pattern 2 word-order retrieval for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—Pattern 2 word-order retrieval—and advances the learner toward independent use of I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I tend to avoid crowded places. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 単語を順番に並べて、文をまるごと声に出して言ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice distractor is used; the learner must reconstruct the full word order and say it aloud.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 word-order retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole Pattern 2 sentence aloud, including every missing word.",
+      "tutorAction": "Type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Page title: Say the complete sentence (文をまるごと言おう) ; Exact learner instruction: Say each whole sentence aloud, including the missing words. ; Aligned Japanese: 空欄に入る言葉も含めて、文をまるごと声に出して言ってください。 ; Highlighted target(s): 混んだ場所を避けることが多いです | 騒がしい場所を避けることが多いです | 高い店を避けることが多いです | 人の多い場所を避けることが多いです ; Exact blank answer(s): I tend to avoid | I tend to avoid | I tend to avoid | I tend to avoid ; Lexical hint(s): 混んでいる:crowded | 騒がしい:noisy | 高い:expensive | 人が多い:busy",
+      "learningTarget": "Pattern 2 controlled retrieval for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "The learner retrieves the stable target span in I tend to avoid crowded places. and says the complete sentence; chips support only productive vocabulary.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I tend to avoid crowded places. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 混んでいる:crowded | 騒がしい:noisy | 高い:expensive | 人が多い:busy; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 controlled retrieval; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "混んだ場所を避けることが多いです",
+          "騒がしい場所を避けることが多いです",
+          "高い店を避けることが多いです",
+          "人の多い場所を避けることが多いです"
+        ],
+        "blankAnswers": [
+          "I tend to avoid",
+          "I tend to avoid",
+          "I tend to avoid",
+          "I tend to avoid"
+        ],
+        "hintChips": [
+          "混んでいる:crowded",
+          "騒がしい:noisy",
+          "高い:expensive",
+          "人が多い:busy"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete Pattern 2 sentence in English.",
+      "tutorAction": "Type each complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Page title: Say it in English (英語にしよう) ; Exact learner instruction: Read the Japanese, then say it in English. ; Aligned Japanese: 日本語を見て、英語で言ってみましょう。 ; Exact blank answer(s): I tend to avoid crowded places. | I tend to avoid noisy places. | I tend to avoid expensive places. | I tend to avoid busy places. ; Lexical hint(s): 混んでいる:crowded | 場所:place | 騒がしい:noisy | 場所:place | 高い:expensive | 場所:place | 人が多い:busy | 場所:place",
+      "learningTarget": "Pattern 2 supported translation for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63: Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "The supported Japanese-to-English task retrieves I tend to avoid crowded places. while lexical chips remove only incidental vocabulary load.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I tend to avoid crowded places. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 混んでいる:crowded | 場所:place | 騒がしい:noisy | 場所:place | 高い:expensive | 場所:place | 人が多い:busy | 場所:place; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established shared answer/correction capture for Pattern 2 supported translation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I tend to avoid crowded places.",
+          "I tend to avoid noisy places.",
+          "I tend to avoid expensive places.",
+          "I tend to avoid busy places."
+        ],
+        "hintChips": [
+          "混んでいる:crowded",
+          "場所:place",
+          "騒がしい:noisy",
+          "場所:place",
+          "高い:expensive",
+          "場所:place",
+          "人が多い:busy",
+          "場所:place"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use “I tend to avoid crowded places.” to complete the exact communicative job aloud.",
+      "tutorAction": "Let the learner speak first, react naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Now use “I tend to avoid ___” to name one kind of place you usually avoid. Lexical hint(s): 混んだ:crowded | 騒がしい:noisy | 高い:expensive | 場所:places",
+      "learningTarget": "Pattern 2 communicative production for the lesson can-do “State a general preference and something you usually avoid.” using I tend to avoid crowded places.. in CORE-63 through the exact current prompt: Now use “I tend to avoid ___” to name one kind of place you usually avoid.",
+      "pedagogicalValue": "The page turns I tend to avoid crowded places. into a named real-world speech act instead of asking for a generic copied sentence.",
+      "failureDiagnosis": "An error shows whether the learner can retrieve I tend to avoid crowded places. while completing this exact communicative job; lexical payload is separately supported where needed.",
+      "nonTargetSupport": "Lexical-only support is visible as: 混んだ:crowded | 騒がしい:noisy | 高い:expensive | 場所:places; the target frame itself is not supplied by those chips.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established standard Core content card for Pattern 2 communicative production; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "混んだ:crowded",
+          "騒がしい:noisy",
+          "高い:expensive",
+          "場所:places"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now use “I tend to avoid ___” to name one kind of place you usually avoid."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the useful expressions and connect each one to its displayed meaning.",
+      "tutorAction": "Check the expressions briefly without turning the page into a drill.",
+      "targetOrPrompt": "Page title: Useful conversation support (会話を支える表現) ; Exact learner instruction: Read an optional phrase only when it fits. ; Aligned Japanese: 必要な場面だけで使える補助表現を読みましょう。",
+      "learningTarget": "Useful expression expansion for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—useful expression expansion—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. / I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 必要な場面だけで使える補助表現を読みましょう。 | 一般的には、コーヒーのほうが好きです。 | 概して、混んだ場所は避けます。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for useful expression expansion; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-art-01",
+      "learnerAction": "Complete the exact review activity shown and say the result aloud.",
+      "tutorAction": "Run the displayed review check briefly and require the learner’s complete spoken answer.",
+      "targetOrPrompt": "Page title: Retrieve an earlier contrast (前の対比を思い出そう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Spiral check: ART-01 at contrast level",
+      "learningTarget": "Spiral review for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—spiral review—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. / I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | コーヒー全般 | この店のコーヒー; no unrelated memory test is added.",
+      "articleTreatment": "Article use is part of the intended general-preference contrast here: non-count nouns and plural count nouns appear without an article; no chip gives the answer away.",
+      "choiceQuality": "The decision is substantive and varies by cue: : coffee versus the coffee | : coffee here versus the coffee here",
+      "componentConsistency": "The page uses the established word-choice cards for spiral-art-01; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-count-01",
+      "learnerAction": "Complete the exact review activity shown and say the result aloud.",
+      "tutorAction": "Run the displayed review check briefly and require the learner’s complete spoken answer.",
+      "targetOrPrompt": "Page title: Retrieve an earlier contrast (前の対比を思い出そう) ; Exact learner instruction: Choose the answer that matches the Japanese, then read the complete sentence aloud. ; Aligned Japanese: 日本語に合う答えを選び、完成した文を声に出して読んでください。 ; Spiral check: COUNT-01 at contrast level",
+      "learningTarget": "Spiral review for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—spiral review—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. / I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 日本語に合う答えを選び、完成した文を声に出して読んでください。 | 飲み物としてのコーヒー全般 | 注文する2杯; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "The decision is substantive and varies by cue: : coffee versus a coffee | : two coffee versus two coffees",
+      "componentConsistency": "The page uses the established word-choice cards for spiral-count-01; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and get ready to use both patterns in context.",
+      "tutorAction": "Set the roles and purpose concisely, then move into the dialogue.",
+      "targetOrPrompt": "Page title: Use it in a conversation (会話で使おう) ; Exact learner instruction: Now, let's use both patterns in a conversation. ; Aligned Japanese: では、二つのパターンを会話で使ってみましょう。",
+      "learningTarget": "Role-play transition for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—role-play transition—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with I generally prefer coffee to tea. / I tend to avoid crowded places., rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: では、二つのパターンを会話で使ってみましょう。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for role-play transition; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read the learner role aloud in the complete model conversation.",
+      "tutorAction": "Take the named partner role and read only that role’s lines.",
+      "targetOrPrompt": "Page title: Read the conversation (会話を読もう) ; Exact learner instruction: I'll be the friend. Please read your lines aloud. ; Aligned Japanese: 私は友人です。自分のセリフを声に出して読んでください。 ; Highlighted target(s): I generally prefer coffee to | 私はたいてい紅茶よりコーヒーのほうが好きです | I tend to avoid | 混んだ場所を避けることが多いです ; Exact exchange: Friend: Shall we get a drink? | Me: I generally prefer coffee to tea. | Friend: Good to know. What kind of cafés do you avoid? | Me: I tend to avoid crowded places. | Friend: This one is quiet, so it should be fine. | Me: Great. Let's go in.",
+      "learningTarget": "Complete model role-play for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—complete model role-play—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with I generally prefer coffee to tea. / I tend to avoid crowded places., rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私は友人です。自分のセリフを声に出して読んでください。 | 飲み物を買いませんか？ | 私はたいてい紅茶よりコーヒーのほうが好きです 。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for complete model role-play; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "I generally prefer coffee to",
+          "私はたいてい紅茶よりコーヒーのほうが好きです",
+          "I tend to avoid",
+          "混んだ場所を避けることが多いです"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Supply each missing learner line aloud and continue the conversation.",
+      "tutorAction": "Play the partner role, pause for each learner line, and record only the learner’s missing words.",
+      "targetOrPrompt": "Page title: Complete the conversation (会話を完成しよう) ; Exact learner instruction: I’ll be the friend. Say each complete line, including the missing words. ; Aligned Japanese: 私は友人です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 ; Exact blank answer(s): I generally prefer coffee to | I tend to avoid ; Exact exchange: Friend: Shall we get a drink? | Me: tea. | Friend: Good to know. What kind of cafés do you avoid? | Me: crowded places. | Friend: This one is quiet, so it should be fine. | Me: Great. Let's go in.",
+      "learningTarget": "Guided role-play completion for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—guided role-play completion—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with I generally prefer coffee to tea. / I tend to avoid crowded places., rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私は友人です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 | 飲み物を買いませんか？ | 分かりました。どんなカフェを避けますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No multiple-choice shortcut is used; the learner must retrieve or produce the stated English response.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for guided role-play completion; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I generally prefer coffee to",
+          "I tend to avoid"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor’s real question, then ask the displayed reciprocal question.",
+      "tutorAction": "Answer the learner’s ask-back honestly and follow the most interesting detail; use the pattern only if natural.",
+      "targetOrPrompt": "Exact learner prompt(s): What matters most when you choose a café or restaurant? | What matters most to you when you choose a place?",
+      "learningTarget": "Reciprocal topic conversation for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63 through the exact current prompt: What matters most when you choose a café or restaurant? | What matters most to you when you choose a place?",
+      "pedagogicalValue": "The page transfers the topic into a genuine two-way conversation: the learner gives a real answer and asks the tutor back without being forced into an unnatural target frame.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with I generally prefer coffee to tea. / I tend to avoid crowded places., rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。 | カフェやレストランを選ぶとき、何を一番重視しますか？ | 先生は店を選ぶとき、何を一番重視しますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for reciprocal topic conversation; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "What matters most when you choose a café or restaurant?",
+          "What matters most to you when you choose a place?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both patterns in the second, less-supported conversation.",
+      "tutorAction": "Play the named partner role and let the learner handle their lines independently.",
+      "targetOrPrompt": "Page title: A new situation (別の場面) ; Exact learner instruction: I’ll be the coworker. Say each complete line, including the missing words. ; Aligned Japanese: 私は同僚です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 ; Exact blank answer(s): I generally prefer trains to | I tend to avoid ; Exact exchange: Coworker: Should we take the train or the bus? | Me: buses. | Coworker: Me too. What kind of places do you avoid? | Me: crowded places. | Coworker: This train is quiet, and there are plenty of seats. | Me: Great. Let's take it.",
+      "learningTarget": "Independent transfer role-play for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—independent transfer role-play—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner can respond naturally and keep the exchange moving with I generally prefer coffee to tea. / I tend to avoid crowded places., rather than merely recognize it.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 私は同僚です。空欄に入る言葉も含めて、自分のセリフをまるごと言ってください。 | 電車とバス、どちらにしましょうか？ | 私もです。どんな場所を避けますか？; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established role-labelled dialogue turns for independent transfer role-play; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I generally prefer trains to",
+          "I tend to avoid"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the two natural-use examples and notice the stated nuance.",
+      "tutorAction": "Explain the practical nuance briefly and check the two examples.",
+      "targetOrPrompt": "Page title: Coffee in general or this café's coffee? (コーヒー全般・この店のコーヒー) ; Exact learner instruction: No article means coffee in general. “The coffee here” means the specific coffee served in this place. ; Aligned Japanese: 冠詞なしならコーヒー全般です。「the coffee here」はこの店で出す特定のコーヒーです。",
+      "learningTarget": "Natural-use nuance for the lesson can-do “State a general preference and something you usually avoid.” using I generally prefer coffee to tea. / I tend to avoid crowded places.. in CORE-63: Use this to compare your usual preference, not one choice today. Then Use this to name a kind of place you usually stay away from.",
+      "pedagogicalValue": "This page has one job—natural-use nuance—and advances the learner toward independent use of I generally prefer coffee to tea. / I tend to avoid crowded places. without duplicating the adjacent page.",
+      "failureDiagnosis": "Difficulty shows whether the learner understands or can read the exact form and meaning of I generally prefer coffee to tea. / I tend to avoid crowded places. before production becomes less supported.",
+      "nonTargetSupport": "Complete bilingual meaning remains visible, including: 冠詞なしならコーヒー全般です。「the coffee here」はこの店で出す特定のコーヒーです。 | 私は紅茶よりコーヒーのほうが好きです。 | ここのコーヒーが好きです。; no unrelated memory test is added.",
+      "articleTreatment": "Articles and determiners remain visible with their noun phrases rather than becoming unsupported extra blanks.",
+      "choiceQuality": "No answer-choice set is used because this page has a distinct reading, explanation, role-play, or conversation job.",
+      "componentConsistency": "The page uses the established standard Core content card for natural-use nuance; capture controls appear only when the learner produces an answer for the tutor to record.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

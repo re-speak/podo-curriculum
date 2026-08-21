@@ -1,0 +1,744 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/83-so-what-youre-saying-is/lesson.html",
+  "lessonSha256": "94040cca76b1109a0b7bccbbfa65ee599cc280011a5182c99876546a1f24ce10",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud after hearing the can-do.",
+      "tutorAction": "State the can-do, ask for the title once, then move on.",
+      "targetOrPrompt": "goal orientation for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "goal orientation in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—goal orientation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for goal orientation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words aloud.",
+      "tutorAction": "Listen briefly and move on without reteaching familiar words.",
+      "targetOrPrompt": "known-word activation for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "known-word activation in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—known-word activation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for known-word activation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud.",
+      "tutorAction": "Introduce Pattern 1 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to check that your summary matches the other person's point. Please read the title aloud. | 自分の要約が相手の要点と合っているか確認するときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-83: Use this to check that your summary matches the other person's point.",
+      "pedagogicalValue": "This page has one job—Pattern 1 transition—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 transition is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete Pattern 1 examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): So what you're saying is | つまり、言いたいことは | So what you're saying is | つまり、言いたいことは | So what you're saying is | つまり、言いたいことは",
+      "learningTarget": "Pattern 1 meaning and model in CORE-83: Use this to check that your summary matches the other person's point.",
+      "pedagogicalValue": "This page has one job—Pattern 1 meaning and model—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 meaning and model is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "So what you're saying is",
+          "つまり、言いたいことは",
+          "So what you're saying is",
+          "つまり、言いたいことは",
+          "So what you're saying is",
+          "つまり、言いたいことは"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete Pattern 1 sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): So what you're saying is | つまり、言いたいことは | So what you're saying is | つまり、言いたいことは | So what you're saying is | つまり、言いたいことは | So what you're saying is | つまり、言いたいことは",
+      "learningTarget": "Pattern 1 read-aloud in CORE-83: Use this to check that your summary matches the other person's point.",
+      "pedagogicalValue": "This page has one job—Pattern 1 read-aloud—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 read-aloud is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "So what you're saying is",
+          "つまり、言いたいことは",
+          "So what you're saying is",
+          "つまり、言いたいことは",
+          "So what you're saying is",
+          "つまり、言いたいことは",
+          "So what you're saying is",
+          "つまり、言いたいことは"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice the Pattern 1 form and read the examples.",
+      "tutorAction": "Explain only the displayed form operation.",
+      "targetOrPrompt": "Pattern 1 form explanation for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "Pattern 1 form explanation in CORE-83: Use this to check that your summary matches the other person's point.",
+      "pedagogicalValue": "This page has one job—Pattern 1 form explanation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 form explanation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order each Pattern 1 sentence, then say it aloud.",
+      "tutorAction": "Allow an attempt before giving help.",
+      "targetOrPrompt": "Pattern 1 word-order retrieval for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-83: Use this to check that your summary matches the other person's point.",
+      "pedagogicalValue": "This page has one job—Pattern 1 word-order retrieval—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 word-order retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole Pattern 1 sentence including the target blanks.",
+      "tutorAction": "Listen first, then type only the target words.",
+      "targetOrPrompt": "Highlighted target(s): つまり、言いたいことは | つまり、言いたいことは | つまり、言いたいことは | つまり、言いたいことは Blank answer(s): So what you're saying is | So what you're saying is | So what you're saying is | So what you're saying is",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-83: Use this to check that your summary matches the other person's point.",
+      "pedagogicalValue": "This page has one job—Pattern 1 controlled target retrieval—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 controlled target retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "つまり、言いたいことは",
+          "つまり、言いたいことは",
+          "つまり、言いたいことは",
+          "つまり、言いたいことは"
+        ],
+        "blankAnswers": [
+          "So what you're saying is",
+          "So what you're saying is",
+          "So what you're saying is",
+          "So what you're saying is"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete Pattern 1 sentence in English, using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): So what you're saying is we need more time. | So what you're saying is the date may change. | So what you're saying is testing comes first. | So what you're saying is this is the final version. Lexical hint(s): 時間:time | 日程:date | テスト:testing | 最終版:final version",
+      "learningTarget": "Pattern 1 supported translation in CORE-83: Use this to check that your summary matches the other person's point.",
+      "pedagogicalValue": "This page has one job—Pattern 1 supported translation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 supported translation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "So what you're saying is we need more time.",
+          "So what you're saying is the date may change.",
+          "So what you're saying is testing comes first.",
+          "So what you're saying is this is the final version."
+        ],
+        "hintChips": [
+          "時間:time",
+          "日程:date",
+          "テスト:testing",
+          "最終版:final version"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the exact Pattern 1 frame to perform the named communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “So what you're saying is” to restate one point I just made. Lexical hint(s): 時間:time | 日程:date | 最終版:final version",
+      "learningTarget": "Pattern 1 communicative production in CORE-83 through the exact current prompt: Use “So what you're saying is” to restate one point I just made.",
+      "pedagogicalValue": "This page has one job—Pattern 1 communicative production—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 1 communicative production is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "時間:time",
+          "日程:date",
+          "最終版:final version"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “So what you're saying is” to restate one point I just made."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud.",
+      "tutorAction": "Introduce Pattern 2 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to ask exactly what one word or idea means. Please read the title aloud. | 一つの言葉や考えが具体的に何を意味するか聞くときに使います。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-83: Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 transition—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 transition is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete Pattern 2 examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): What do you mean by | どういう意味ですか | What do you mean by | どういう意味ですか | What do you mean by | どういう意味ですか",
+      "learningTarget": "Pattern 2 meaning and model in CORE-83: Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 meaning and model—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 meaning and model is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "What do you mean by",
+          "どういう意味ですか",
+          "What do you mean by",
+          "どういう意味ですか",
+          "What do you mean by",
+          "どういう意味ですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete Pattern 2 sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): What do you mean by | どういう意味ですか | What do you mean by | どういう意味ですか | What do you mean by | どういう意味ですか | What do you mean by | どういう意味ですか",
+      "learningTarget": "Pattern 2 read-aloud in CORE-83: Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 read-aloud—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 read-aloud is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "What do you mean by",
+          "どういう意味ですか",
+          "What do you mean by",
+          "どういう意味ですか",
+          "What do you mean by",
+          "どういう意味ですか",
+          "What do you mean by",
+          "どういう意味ですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice the Pattern 2 form and read the examples.",
+      "tutorAction": "Explain only the displayed form operation.",
+      "targetOrPrompt": "Pattern 2 form explanation for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "Pattern 2 form explanation in CORE-83: Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 form explanation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 form explanation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Order each Pattern 2 sentence, then say it aloud.",
+      "tutorAction": "Allow an attempt before giving help.",
+      "targetOrPrompt": "Pattern 2 word-order retrieval for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-83: Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 word-order retrieval—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 word-order retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole Pattern 2 sentence including the target blanks.",
+      "tutorAction": "Listen first, then type only the target words.",
+      "targetOrPrompt": "Highlighted target(s): どういう意味ですか | どういう意味ですか | どういう意味ですか | どういう意味ですか Blank answer(s): What do you mean by | What do you mean by | What do you mean by | What do you mean by",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-83: Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 controlled target retrieval—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 controlled target retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "どういう意味ですか",
+          "どういう意味ですか",
+          "どういう意味ですか",
+          "どういう意味ですか"
+        ],
+        "blankAnswers": [
+          "What do you mean by",
+          "What do you mean by",
+          "What do you mean by",
+          "What do you mean by"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete Pattern 2 sentence in English, using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): What do you mean by 'ready'? | What do you mean by 'final'? | What do you mean by 'urgent'? | What do you mean by 'approved'? Lexical hint(s): 準備できた:ready | 最終の:final | 緊急の:urgent | 承認された:approved",
+      "learningTarget": "Pattern 2 supported translation in CORE-83: Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 supported translation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 supported translation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "What do you mean by 'ready'?",
+          "What do you mean by 'final'?",
+          "What do you mean by 'urgent'?",
+          "What do you mean by 'approved'?"
+        ],
+        "hintChips": [
+          "準備できた:ready",
+          "最終の:final",
+          "緊急の:urgent",
+          "承認された:approved"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the exact Pattern 2 frame to perform the named communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “What do you mean by” to ask what one word or phrase I use means. Lexical hint(s): 準備できた:ready | 緊急の:urgent | 承認された:approved",
+      "learningTarget": "Pattern 2 communicative production in CORE-83 through the exact current prompt: Use “What do you mean by” to ask what one word or phrase I use means.",
+      "pedagogicalValue": "This page has one job—Pattern 2 communicative production—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "Useful lexical hint chips support only non-target content; the two taught frames remain retrieval work.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for Pattern 2 communicative production is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "準備できた:ready",
+          "緊急の:urgent",
+          "承認された:approved"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “What do you mean by” to ask what one word or phrase I use means."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the short supporting expressions aloud.",
+      "tutorAction": "Clarify meaning only if needed; do not turn the page into another drill.",
+      "targetOrPrompt": "role-play support activation for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "role-play support activation in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—role-play support activation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play support activation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play support activation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-review",
+      "learnerAction": "Retrieve earlier language in the displayed review activity.",
+      "tutorAction": "Let the learner attempt the earlier target before helping.",
+      "targetOrPrompt": "Highlighted target(s): レポート | 人 | 言いました | 伝えました",
+      "learningTarget": "spaced retrieval in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—spaced retrieval—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "The four choices test real meaning contrasts and the correct branch varies across rows.",
+      "componentConsistency": "The established Core component for spaced retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "レポート",
+          "人",
+          "言いました",
+          "伝えました"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and prepare to use both patterns.",
+      "tutorAction": "Set the two roles and begin without modeling the full scene.",
+      "targetOrPrompt": "role-play orientation for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "role-play orientation in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—role-play orientation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play orientation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play orientation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every learner-owned line in the complete role-play.",
+      "tutorAction": "Take the named counterpart role and read only those lines.",
+      "targetOrPrompt": "Highlighted target(s): So what you're saying is | つまり、言いたいことは | What do you mean by | どういう意味ですか",
+      "learningTarget": "complete role-play in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—complete role-play—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform complete role-play for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for complete role-play is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "So what you're saying is",
+          "つまり、言いたいことは",
+          "What do you mean by",
+          "どういう意味ですか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say the learner role and supply each missing taught expression.",
+      "tutorAction": "Take the named counterpart role and type only the learner's missing target words.",
+      "targetOrPrompt": "Blank answer(s): So what you're saying is | What do you mean by",
+      "learningTarget": "role-play target retrieval in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—role-play target retrieval—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play target retrieval for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for role-play target retrieval is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "So what you're saying is",
+          "What do you mean by"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's personal question, then ask the displayed question back.",
+      "tutorAction": "Answer the learner's reciprocal question truthfully and follow the most interesting detail.",
+      "targetOrPrompt": "Exact learner prompt(s): When someone is unclear, do you ask immediately or think first? | What about you—when do you ask for clarification?",
+      "learningTarget": "reciprocal personal conversation in CORE-83 through the exact current prompt: When someone is unclear, do you ask immediately or think first? | What about you—when do you ask for clarification?",
+      "pedagogicalValue": "This page has one job—reciprocal personal conversation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal personal conversation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for reciprocal personal conversation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When someone is unclear, do you ask immediately or think first?",
+          "What about you—when do you ask for clarification?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both patterns in the new six-turn transfer role-play.",
+      "tutorAction": "Take the named new counterpart role and keep the exchange moving naturally.",
+      "targetOrPrompt": "Blank answer(s): So what you're saying is | What do you mean by",
+      "learningTarget": "transfer role-play in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—transfer role-play—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for transfer role-play is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "So what you're saying is",
+          "What do you mean by"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the practical usage distinction and its examples.",
+      "tutorAction": "Explain the nuance briefly and relate it to the completed role-play.",
+      "targetOrPrompt": "pragmatic consolidation for “So what you're saying is,” using “So what you're saying is” and “What do you mean by” as the two taught frames.",
+      "learningTarget": "pragmatic consolidation in CORE-83: Use this to check that your summary matches the other person's point. Then Use this to ask exactly what one word or idea means.",
+      "pedagogicalValue": "This page has one job—pragmatic consolidation—and moves the learner from noticing toward usable speech with “So what you're saying is” and “What do you mean by.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform pragmatic consolidation for “So what you're saying is” before the next reduction in support.",
+      "nonTargetSupport": "No lexical hint set is needed on this page; visible context supports the non-target content without revealing the taught frame.",
+      "articleTreatment": "Articles remain visible unless the meaning itself requires the learner to choose one; no hint chip supplies an article answer.",
+      "choiceQuality": "No artificial answer-choice set is used; the page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The established Core component for pragmatic consolidation is used, with input fields only where spoken language is captured.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

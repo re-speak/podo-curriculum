@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-business-meetings-decisions/lessons/45-present-a-recommendation-up-front/lesson.html",
+  "lessonSha256": "d9beca0a7e6b88eb8ef28e6b3e53873ecaa08cf4f2c4770b2fd72ce982aedccb",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud once after hearing today’s can-do.",
+      "tutorAction": "State the can-do briefly, then ask the learner to read the title aloud.",
+      "targetOrPrompt": "Present a recommendation up front: Lead with one recommendation and support it with a decision-relevant reason. / 一つの推奨案を先に示し、判断に役立つ理由を添えましょう。",
+      "learningTarget": "Orient the learner to the exact present a recommendation up front outcome before role-play.",
+      "pedagogicalValue": "The concise can-do and read-title action give this page one clear orientation job.",
+      "failureDiagnosis": "Extra model boxes or a second drill would duplicate later pages and obscure the first action.",
+      "nonTargetSupport": "The aligned Japanese can-do confirms meaning without requiring target production.",
+      "articleTreatment": "No article decision is tested on this orientation page.",
+      "choiceQuality": "No choices are needed for a brief orientation action.",
+      "componentConsistency": "Uses the approved single goal card without a legacy outcome list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for lesson-goal; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "scene",
+      "learnerAction": "Play the colleague and read only the learner-owned turns.",
+      "tutorAction": "Play the decision maker and begin with the first counterpart line.",
+      "targetOrPrompt": "Choosing among three implementation options; learner is Colleague, tutor is Decision Maker; first tutor line: “We've reviewed options A, B, and C. Which one should we choose?”",
+      "learningTarget": "Encounter both target patterns in a resolved workplace exchange with unambiguous turn ownership.",
+      "pedagogicalValue": "Explicit roles make the learner speak only their lines while both targets perform the lesson’s practical job.",
+      "failureDiagnosis": "A generic counterpart label, tutor-read learner line, or unresolved ending would break the role-play.",
+      "nonTargetSupport": "Every dialogue turn has aligned Japanese support and complete situational context.",
+      "articleTreatment": "Articles remain inside complete natural dialogue lines instead of becoming unrelated micro-targets.",
+      "choiceQuality": "Turn timing replaces a fixed choice set on this role-play page.",
+      "componentConsistency": "Uses the shared six-turn dialogue with stable Colleague/Decision Maker roles.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for scene; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "understand",
+      "learnerAction": "Listen to each tutor-owned counterpart line and choose its matching meaning.",
+      "tutorAction": "Read only each English decision maker line; do not read the answer choices.",
+      "targetOrPrompt": "Tutor-owned Decision Maker lines: “We've reviewed options A, B, and C. Which one should we choose?”; “Why B?”; “Good. Show us the comparison.”; “What makes the smaller pilot better?”",
+      "learningTarget": "Build receptive control of four decision maker lines needed to understand the workplace task.",
+      "pedagogicalValue": "All four inputs are complete counterpart lines with useful, distinct meanings.",
+      "failureDiagnosis": "A learner fragment, obvious nonsense distractor, or unclear reader would test layout rather than comprehension.",
+      "nonTargetSupport": "Japanese appears in the meaning options while the tutor supplies the English listening input.",
+      "articleTreatment": "Articles stay inside the complete spoken lines and are not tested separately.",
+      "choiceQuality": "Each wrong option gives a materially different interpretation; correct positions alternate.",
+      "componentConsistency": "Uses the shared synchronized two-option comprehension component for all four lines.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for understand; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "expressions",
+      "learnerAction": "Read both useful workplace expressions aloud once.",
+      "tutorAction": "Ask the learner to read each expression; clarify meaning only if needed.",
+      "targetOrPrompt": "bottom line (結論); recommended option (推奨案)",
+      "learningTarget": "Recognise two scene-relevant expressions before analysing the target patterns.",
+      "pedagogicalValue": "Both expressions contribute to the lesson’s practical situation or resolution.",
+      "failureDiagnosis": "An expression that never recurs would add lexical load without supporting the task.",
+      "nonTargetSupport": "Each English expression has one concise Japanese meaning.",
+      "articleTreatment": "Any article stays attached to its useful expression rather than being isolated.",
+      "choiceQuality": "No distractors are needed; the learner reads two selected expressions.",
+      "componentConsistency": "Uses the shared two-item expression list with no nested second activity.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for expressions; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the visible pattern line aloud after hearing what it lets you do.",
+      "tutorAction": "State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.",
+      "targetOrPrompt": "Visible pattern: “I recommend option B.” Exact English purpose/action: “Use this bounded line to give the conclusion before the supporting detail. Read the line above aloud.” Exact Japanese purpose/action: “詳しい説明の前に結論を示す定型表現です。 上の文を声に出して読みましょう。”",
+      "learningTarget": "Connect the scene to this pattern's exact communicative purpose and read the target once aloud.",
+      "pedagogicalValue": "One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.",
+      "failureDiagnosis": "A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.",
+      "nonTargetSupport": "The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.",
+      "articleTreatment": "No article decision is tested on this transition page.",
+      "choiceQuality": "No choices are needed for a one-step transition.",
+      "componentConsistency": "Uses the approved one-line purpose plus read-the-visible-pattern transition contract.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part1-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete model aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read every example.",
+      "targetOrPrompt": "Exact communicative use: “Use this bounded line to give the conclusion before the supporting detail.”; aligned Japanese: “詳しい説明の前に結論を示す定型表現です。”; complete models: “I recommend option B.”; “I recommend the smaller pilot.”; “I recommend the June launch.”; exact highlighted spans: “I recommend”; “をおすすめします”",
+      "learningTarget": "Connect pattern 1’s authored target boundary to its workplace use and varied examples.",
+      "pedagogicalValue": "Stable highlighting plus complete models makes the form usable rather than abstract.",
+      "failureDiagnosis": "Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.",
+      "nonTargetSupport": "Each model has aligned Japanese and visible non-target content.",
+      "articleTreatment": "Articles stay visible unless genuinely inside the authored target boundary.",
+      "choiceQuality": "The examples vary meaningful content instead of presenting a selection task.",
+      "componentConsistency": "Uses the shared meaning-and-use teaching component with one example block.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read all four complete English sentences aloud.",
+      "tutorAction": "Prompt the sentences in order and listen; model only if help is needed.",
+      "targetOrPrompt": "Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “I recommend option B.”; “I recommend the smaller pilot.”; “I recommend the June launch.”; “I recommend the current supplier.”; exact highlighted spans: “I recommend”; “をおすすめします”",
+      "learningTarget": "Build oral familiarity with pattern 1 across four meaningful workplace variations.",
+      "pedagogicalValue": "Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.",
+      "failureDiagnosis": "Reading only highlighted chunks or tutor modelling first would reduce learner production.",
+      "nonTargetSupport": "Every sentence has a complete aligned Japanese meaning.",
+      "articleTreatment": "Complete examples preserve articles naturally in their noun phrases.",
+      "choiceQuality": "No distractors are present; learning comes from four useful variations.",
+      "componentConsistency": "Uses the standard four-line read-aloud model list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-read; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします",
+          "I recommend",
+          "をおすすめします"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence aloud, including every missing target chunk.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Exact missing target answers: “I recommend”; “I recommend”; “I recommend”; “I recommend”; exact Japanese target cues: “をおすすめします”",
+      "learningTarget": "Retrieve only pattern 1’s taught target chunks while saying complete sentences.",
+      "pedagogicalValue": "Target-only blanks keep the controlled task focused and leave lexical context available.",
+      "failureDiagnosis": "Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.",
+      "nonTargetSupport": "Japanese cues and visible English complements support all non-target meaning.",
+      "articleTreatment": "Articles stay visible unless they are genuinely part of the authored target.",
+      "choiceQuality": "No choices are used; each blank has one answer established by its source sentence.",
+      "componentConsistency": "Uses the static synchronized shared target-blank input component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "をおすすめします",
+          "をおすすめします",
+          "をおすすめします",
+          "をおすすめします"
+        ],
+        "blankAnswers": [
+          "I recommend",
+          "I recommend",
+          "I recommend",
+          "I recommend"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as they say it.",
+      "targetOrPrompt": "Exact complete English answers: “I recommend option B.”; “I recommend the smaller pilot.”; “I recommend the June launch.”; “I recommend the current supplier.”; support stage: checkpoint; lexical hint chips: none",
+      "learningTarget": "Produce four complete pattern-1 sentences from meaning at the declared checkpoint stage.",
+      "pedagogicalValue": "A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.",
+      "failureDiagnosis": "Adding decorative hints would weaken this deliberate independent-production checkpoint.",
+      "nonTargetSupport": "The Japanese cue remains available, but no lexical hint is needed at this checkpoint.",
+      "articleTreatment": "Articles remain part of complete-sentence production and are decided by the learner.",
+      "choiceQuality": "No choices are used; each Japanese cue has one authored complete answer.",
+      "componentConsistency": "Uses the target-v2 whole-sentence input with explicit checkpoint support.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-translate; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I recommend option B.",
+          "I recommend the smaller pilot.",
+          "I recommend the June launch.",
+          "I recommend the current supplier."
+        ],
+        "hintChips": [],
+        "supportStage": "checkpoint",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Say one personally relevant sentence that completes the named workplace job.",
+      "tutorAction": "Let the learner speak first, respond naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt: “Use “I recommend ___” to give the decision maker one clear recommendation.”; aligned Japanese prompt: “「I recommend ___」を使って、意思決定者に一つの案を明確にすすめましょう。”",
+      "learningTarget": "Transfer pattern 1 into a new but clearly specified communicative use.",
+      "pedagogicalValue": "The visible frame and job make open production actionable without prescribing the learner’s content.",
+      "failureDiagnosis": "A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.",
+      "nonTargetSupport": "The aligned Japanese instruction states the same communicative job as the English script.",
+      "articleTreatment": "The learner chooses articles naturally within their own complete sentence.",
+      "choiceQuality": "No distractors are used; the learner chooses content within a stable pattern frame.",
+      "componentConsistency": "Uses the shared Student’s sentence and Correction capture component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p1-write; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “I recommend ___” to give the decision maker one clear recommendation."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the visible pattern line aloud after hearing what it lets you do.",
+      "tutorAction": "State the concise aligned purpose, ask the learner to read the visible line aloud, then move on.",
+      "targetOrPrompt": "Visible pattern: “It's easier to implement.” Exact English purpose/action: “Use a comparative reason that directly supports the choice. Read the line above aloud.” Exact Japanese purpose/action: “選択を直接支える比較理由を示す表現です。 上の文を声に出して読みましょう。”",
+      "learningTarget": "Connect the scene to this pattern's exact communicative purpose and read the target once aloud.",
+      "pedagogicalValue": "One aligned purpose line and one read-aloud action make the transition useful without duplicating the later drill.",
+      "failureDiagnosis": "A generic or bilingual-mismatched bridge, a missing learner action, or a second drill would make this transition unclear.",
+      "nonTargetSupport": "The Japanese line states the same lesson-specific communicative move and the same read-aloud action as the English line.",
+      "articleTreatment": "No article decision is tested on this transition page.",
+      "choiceQuality": "No choices are needed for a one-step transition.",
+      "componentConsistency": "Uses the approved one-line purpose plus read-the-visible-pattern transition contract.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part2-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete model aloud after the brief meaning explanation.",
+      "tutorAction": "Explain the communicative use briefly, then have the learner read every example.",
+      "targetOrPrompt": "Exact communicative use: “Use a comparative reason that directly supports the choice.”; aligned Japanese: “選択を直接支える比較理由を示す表現です。”; complete models: “It's easier to implement.”; “It's easier to maintain.”; “It's easier to explain.”; exact highlighted spans: “It's easier to”; “簡単です”",
+      "learningTarget": "Connect pattern 2’s authored target boundary to its workplace use and varied examples.",
+      "pedagogicalValue": "Stable highlighting plus complete models makes the form usable rather than abstract.",
+      "failureDiagnosis": "Highlighting unrelated vocabulary or asking the tutor to model every line would weaken retrieval.",
+      "nonTargetSupport": "Each model has aligned Japanese and visible non-target content.",
+      "articleTreatment": "Articles stay visible unless genuinely inside the authored target boundary.",
+      "choiceQuality": "The examples vary meaningful content instead of presenting a selection task.",
+      "componentConsistency": "Uses the shared meaning-and-use teaching component with one example block.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-teach; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read all four complete English sentences aloud.",
+      "tutorAction": "Prompt the sentences in order and listen; model only if help is needed.",
+      "targetOrPrompt": "Exact read-aloud instruction: “Please read each sentence aloud.”; complete learner-read lines: “It's easier to implement.”; “It's easier to maintain.”; “It's easier to explain.”; “It's easier to test.”; exact highlighted spans: “It's easier to”; “簡単です”",
+      "learningTarget": "Build oral familiarity with pattern 2 across four meaningful workplace variations.",
+      "pedagogicalValue": "Full-sentence reading prepares controlled retrieval while keeping lexical changes visible.",
+      "failureDiagnosis": "Reading only highlighted chunks or tutor modelling first would reduce learner production.",
+      "nonTargetSupport": "Every sentence has a complete aligned Japanese meaning.",
+      "articleTreatment": "Complete examples preserve articles naturally in their noun phrases.",
+      "choiceQuality": "No distractors are present; learning comes from four useful variations.",
+      "componentConsistency": "Uses the standard four-line read-aloud model list.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-read; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です",
+          "It's easier to",
+          "簡単です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence aloud, including every missing target chunk.",
+      "tutorAction": "Type only the missing target words exactly as the learner says them.",
+      "targetOrPrompt": "Exact missing target answers: “It's easier to”; “It's easier to”; “It's easier to”; “It's easier to”; exact Japanese target cues: “簡単です”",
+      "learningTarget": "Retrieve only pattern 2’s taught target chunks while saying complete sentences.",
+      "pedagogicalValue": "Target-only blanks keep the controlled task focused and leave lexical context available.",
+      "failureDiagnosis": "Blanking arbitrary vocabulary or typing the whole sentence would change the pedagogical job.",
+      "nonTargetSupport": "Japanese cues and visible English complements support all non-target meaning.",
+      "articleTreatment": "Articles stay visible unless they are genuinely part of the authored target.",
+      "choiceQuality": "No choices are used; each blank has one answer established by its source sentence.",
+      "componentConsistency": "Uses the static synchronized shared target-blank input component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-fill; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "簡単です",
+          "簡単です",
+          "簡単です",
+          "簡単です"
+        ],
+        "blankAnswers": [
+          "It's easier to",
+          "It's easier to",
+          "It's easier to",
+          "It's easier to"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud.",
+      "tutorAction": "Type the learner’s complete English sentence exactly as they say it.",
+      "targetOrPrompt": "Exact complete English answers: “It's easier to implement.”; “It's easier to maintain.”; “It's easier to explain.”; “It's easier to test.”; support stage: checkpoint; lexical hint chips: none",
+      "learningTarget": "Produce four complete pattern-2 sentences from meaning at the declared checkpoint stage.",
+      "pedagogicalValue": "A deliberate no-hint checkpoint tests whether the bounded pattern is available after supported practice.",
+      "failureDiagnosis": "Adding decorative hints would weaken this deliberate independent-production checkpoint.",
+      "nonTargetSupport": "The Japanese cue remains available, but no lexical hint is needed at this checkpoint.",
+      "articleTreatment": "Articles remain part of complete-sentence production and are decided by the learner.",
+      "choiceQuality": "No choices are used; each Japanese cue has one authored complete answer.",
+      "componentConsistency": "Uses the target-v2 whole-sentence input with explicit checkpoint support.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-translate; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "It's easier to implement.",
+          "It's easier to maintain.",
+          "It's easier to explain.",
+          "It's easier to test."
+        ],
+        "hintChips": [],
+        "supportStage": "checkpoint",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Say one personally relevant sentence that completes the named workplace job.",
+      "tutorAction": "Let the learner speak first, respond naturally, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt: “Use “It's easier to ___” to give one practical reason for your recommendation.”; aligned Japanese prompt: “「It's easier to ___」を使って、推奨案を支える実用的な理由を一つ伝えましょう。”",
+      "learningTarget": "Transfer pattern 2 into a new but clearly specified communicative use.",
+      "pedagogicalValue": "The visible frame and job make open production actionable without prescribing the learner’s content.",
+      "failureDiagnosis": "A generic make-your-own-sentence prompt would not tell the learner what workplace action to perform.",
+      "nonTargetSupport": "The aligned Japanese instruction states the same communicative job as the English script.",
+      "articleTreatment": "The learner chooses articles naturally within their own complete sentence.",
+      "choiceQuality": "No distractors are used; the learner chooses content within a stable pattern frame.",
+      "componentConsistency": "Uses the shared Student’s sentence and Correction capture component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p2-write; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “It's easier to ___” to give one practical reason for your recommendation."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Listen for why the combined workplace task is useful, then move to the next page.",
+      "tutorAction": "State the transition once and move directly to the activity.",
+      "targetOrPrompt": "Return to choosing among three implementation options and complete both practical moves in one role-play.",
+      "learningTarget": "Connect the practical scene to the combined workplace task without adding a second drill.",
+      "pedagogicalValue": "One short transition supplies purpose without duplicating the teaching or role-play page.",
+      "failureDiagnosis": "A drill or long explanation here would create a second job and slow the receptive-to-productive arc.",
+      "nonTargetSupport": "The aligned Japanese bridge names the communicative job.",
+      "articleTreatment": "No article decision is tested on this transition page.",
+      "choiceQuality": "No choices are needed for a one-step transition.",
+      "componentConsistency": "Uses the compact shared transition component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for part3-intro; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every colleague line aloud while the tutor plays the counterpart.",
+      "tutorAction": "Play the decision maker and pause for each learner-owned line.",
+      "targetOrPrompt": "Tutor role: Decision Maker; exact full exchange: “We've reviewed options A, B, and C. Which one should we choose?”; “I recommend option B.”; “Why B?”; “It's easier to implement.”; “Good. Show us the comparison.”; “I will show the timing and cost side by side.”; exact highlighted targets: “I recommend”; “をおすすめします”; “It's easier to”; “簡単です”",
+      "learningTarget": "Replay the resolved six-turn exchange with both target patterns in context.",
+      "pedagogicalValue": "The roleplay integrates both moves without asking the tutor to model learner production.",
+      "failureDiagnosis": "Unclear roles or tutor-read learner lines would remove the learner’s speaking job.",
+      "nonTargetSupport": "Complete Japanese translations support each turn without changing speaker ownership.",
+      "articleTreatment": "Articles remain embedded in complete natural turns.",
+      "choiceQuality": "Dialogue timing supplies the response path; no distractors are needed.",
+      "componentConsistency": "Uses the same six-turn scene and stable roles introduced earlier.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-model; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [
+          "I recommend",
+          "をおすすめします",
+          "It's easier to",
+          "簡単です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say each complete colleague line aloud, including all missing target chunks.",
+      "tutorAction": "Play the decision maker and type only the missing target words.",
+      "targetOrPrompt": "Tutor role: Decision Maker; exact completion instruction: “I’ll be the decision maker. Say each complete line, including the missing words.”; exact missing target answers: “I recommend”; “It's easier to”",
+      "learningTarget": "Retrieve both patterns while completing the full practical exchange.",
+      "pedagogicalValue": "Only authored target chunks are blank, so the learner completes the communicative task rather than a vocabulary quiz.",
+      "failureDiagnosis": "Blanking full turns or non-target vocabulary would destabilise the taught boundary.",
+      "nonTargetSupport": "Visible complements and aligned Japanese preserve the scene while target chunks are retrieved.",
+      "articleTreatment": "Articles stay visible unless authored inside the target chunk.",
+      "choiceQuality": "No choices are used; each blank is anchored to the previously read scene.",
+      "componentConsistency": "Uses the shared six-turn completion roleplay and phrase inputs.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-complete; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I recommend",
+          "It's easier to"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor’s real question, then ask the visible reciprocal question.",
+      "tutorAction": "React to the learner’s answer, follow an interesting detail, and give a real answer to the ask-back.",
+      "targetOrPrompt": "Exact Tutor question: “When someone recommends an option, which matters more to you: the recommendation or the reason?”; exact learner ask-back: “What about you—which matters more?”; exact reciprocal instruction: “Let’s talk about this situation. Answer my question, then ask me too.”",
+      "learningTarget": "Sustain a reciprocal conversation relevant to present a recommendation up front without forcing today’s pattern.",
+      "pedagogicalValue": "Both exact questions stand alone, invite personal content, and create genuine two-way talk.",
+      "failureDiagnosis": "A scenario command, what-would-you-say prompt, or missing ask-back would disguise pattern production as free talk.",
+      "nonTargetSupport": "Both questions have aligned Japanese; open answer areas preserve learner and tutor ownership.",
+      "articleTreatment": "Articles arise naturally in personal answers and are corrected only when useful.",
+      "choiceQuality": "No fixed choices constrain the conversation; the questions provide a focused but open topic.",
+      "componentConsistency": "Uses the four-turn Tutor question, Student answer, Student ask-back, Tutor answer structure.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for p3-freetalk; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When someone recommends an option, which matters more to you: the recommendation or the reason?",
+          "What about you—which matters more?"
+        ]
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare the two natural options and identify when each one fits.",
+      "tutorAction": "Explain the practical distinction briefly and ask which option suits the example situation.",
+      "targetOrPrompt": "Choose “recommend” or “suggest” by strength / recommend と suggest の強さ: “Recommend” marks a clear preferred option; “suggest” offers a lighter possibility.",
+      "learningTarget": "Notice one usage distinction that makes the lesson language more natural at work.",
+      "pedagogicalValue": "The two examples contrast decisions the learner may genuinely need to make.",
+      "failureDiagnosis": "A terminology-only explanation or indistinguishable examples would add complexity without usable nuance.",
+      "nonTargetSupport": "Each option includes concise Japanese context and a complete example.",
+      "articleTreatment": "Articles remain inside complete examples and are not isolated from meaning.",
+      "choiceQuality": "The two alternatives differ by context rather than arbitrary right-versus-wrong grading.",
+      "componentConsistency": "Uses the shared two-option nuance comparison component.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for native-tip; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "transfer-scene",
+      "learnerAction": "Play the colleague and complete both target lines in the new workplace situation.",
+      "tutorAction": "Play the operations director, begin with the first line, and carry the exchange to resolution.",
+      "targetOrPrompt": "Tutor role: Operations Director; exact new-roleplay instruction: “Let's role-play a new situation using the same two lines. I'll be the operations director.”; exact full exchange: “Should we test with one team or the whole department?”; “the smaller pilot.”; “What makes the smaller pilot better?”; “test.”; “All right. Prepare a two-week test plan.”; “I will send the plan and success criteria tomorrow.”; exact missing target answers: “I recommend”; “It's easier to”",
+      "learningTarget": "Transfer both stable patterns to a new roleplay with a different practical context.",
+      "pedagogicalValue": "The new role and situation require meaningful transfer while preserving the two learned moves.",
+      "failureDiagnosis": "Repeating the original scene, changing the target boundary, or leaving the exchange unresolved would defeat transfer.",
+      "nonTargetSupport": "Short aligned bilingual role instructions and Japanese turns support the new context.",
+      "articleTreatment": "Articles remain visible outside target blanks unless they belong to the authored phrase.",
+      "choiceQuality": "Roleplay turns guide the exchange; no unrelated distractors are introduced.",
+      "componentConsistency": "Uses the shared six-turn completion component with explicit new tutor role and same two lines.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Semantic page review completed for transfer-scene; 360px and 480px visual checks remain assigned to the root audit lane.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "I recommend",
+          "It's easier to"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

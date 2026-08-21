@@ -1,0 +1,452 @@
+# Page review ledger
+
+- Lesson: `sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/111-just-so-you-know/lesson.html`
+- SHA-256: `1001d1c146928ee564c7ea228163b2a0fe04ffe3c0b5c7ed7cf53736c8feee85`
+- Generated: **pass**
+- Mechanical validation: **pass**
+- Human page audit: **pass**
+- Owner approval: **pending**
+
+A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
+
+## 1. `lesson-goal`
+
+- Learner action: Read the lesson title aloud after hearing the can-do.
+- Tutor action: State the can-do, ask for the title once, then move on.
+- Visible target or prompt: goal orientation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: goal orientation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—goal orientation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform goal orientation for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for goal orientation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 2. `words-you-know`
+
+- Learner action: Say the three familiar English words aloud.
+- Tutor action: Listen briefly; do not turn familiar words into a pronunciation drill.
+- Visible target or prompt: known-word activation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: known-word activation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—known-word activation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform known-word activation for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for known-word activation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 3. `part1-intro`
+
+- Learner action: Read the Pattern 1 title aloud.
+- Tutor action: Introduce Pattern 1 in one short line.
+- Visible target or prompt: Exact visible instruction: Use this for a neutral update the listener may find useful. Please read the title aloud. | 相手に役立つかもしれない中立的な更新に使います。 タイトルを声に出して読んでください。
+- Learning target: Pattern 1 transition in CORE-111: Use this for a neutral update the listener may find useful.
+- Pedagogical value: This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 transition for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 transition is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 4. `p1-teach`
+
+- Learner action: Read the complete examples after the meaning explanation.
+- Tutor action: Explain the use briefly, then ask for each example aloud.
+- Visible target or prompt: Highlighted target(s): Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると
+- Learning target: Pattern 1 meaning and model in CORE-111: Use this for a neutral update the listener may find useful.
+- Pedagogical value: This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 meaning and model is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["Just so you know", "念のためお知らせすると", "Just so you know", "念のためお知らせすると", "Just so you know", "念のためお知らせすると"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 5. `p1-read`
+
+- Learner action: Read every complete sentence aloud.
+- Tutor action: Listen and model only when help is needed.
+- Visible target or prompt: Highlighted target(s): Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると | Just so you know | 念のためお知らせすると
+- Learning target: Pattern 1 read-aloud in CORE-111: Use this for a neutral update the listener may find useful.
+- Pedagogical value: This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 read-aloud is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["Just so you know", "念のためお知らせすると", "Just so you know", "念のためお知らせすると", "Just so you know", "念のためお知らせすると", "Just so you know", "念のためお知らせすると"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 6. `p1-rule`
+
+- Learner action: Notice the displayed form operation and read its examples.
+- Tutor action: Explain only the form distinction the diagram shows.
+- Visible target or prompt: Pattern 1 form explanation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: Pattern 1 form explanation in CORE-111: Use this for a neutral update the listener may find useful.
+- Pedagogical value: This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 form explanation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 7. `p1-reorder`
+
+- Learner action: Order each sentence, then say the whole sentence aloud.
+- Tutor action: Allow an attempt before helping.
+- Visible target or prompt: Pattern 1 word-order retrieval for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: Pattern 1 word-order retrieval in CORE-111: Use this for a neutral update the listener may find useful.
+- Pedagogical value: This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 word-order retrieval is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 8. `p1-fill`
+
+- Learner action: Say each whole sentence including the target blank.
+- Tutor action: Listen first, then type only the taught target.
+- Visible target or prompt: Highlighted target(s): 念のためお知らせすると | 念のためお知らせすると | 念のためお知らせすると | 念のためお知らせすると Blank answer(s): Just so you know | Just so you know | Just so you know | Just so you know
+- Learning target: Pattern 1 controlled target retrieval in CORE-111: Use this for a neutral update the listener may find useful.
+- Pedagogical value: This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 controlled target retrieval is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["念のためお知らせすると", "念のためお知らせすると", "念のためお知らせすると", "念のためお知らせすると"], "blankAnswers": ["Just so you know", "Just so you know", "Just so you know", "Just so you know"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 9. `p1-translate`
+
+- Learner action: Say each complete English sentence using lexical hints when needed.
+- Tutor action: Listen first, then capture the complete answer.
+- Visible target or prompt: Blank answer(s): Just so you know, the room's booked. | Just so you know, the meeting has moved. | Just so you know, the tickets are ready. | Just so you know, the client called. Lexical hint(s): 部屋:room | 予約する:book | 会議:meeting | 変更になった:moved | チケット:ticket | 準備できた:ready | 顧客:client | 電話する:call
+- Learning target: Pattern 1 supported translation in CORE-111: Use this for a neutral update the listener may find useful.
+- Pedagogical value: This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “Just so you know,” before the next reduction in support.
+- Non-target support: Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 supported translation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Just so you know, the room's booked.", "Just so you know, the meeting has moved.", "Just so you know, the tickets are ready.", "Just so you know, the client called."], "hintChips": ["部屋:room", "予約する:book", "会議:meeting", "変更になった:moved", "チケット:ticket", "準備できた:ready", "顧客:client", "電話する:call"], "supportStage": "supported", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 10. `p1-write`
+
+- Learner action: Use the displayed exact frame to perform its communicative job aloud.
+- Tutor action: React first, then capture and correct only what helps.
+- Visible target or prompt: Exact learner prompt(s): Use “Just so you know, ___” to imagine a plan and give one neutral update. Lexical hint(s): 部屋:room | 会議:meeting | 準備できた:ready | 顧客:client
+- Learning target: Pattern 1 communicative production in CORE-111 through the exact current prompt: Use “Just so you know, ___” to imagine a plan and give one neutral update.
+- Pedagogical value: This page has one distinct job—Pattern 1 communicative production—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “Just so you know,” before the next reduction in support.
+- Non-target support: Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 1 communicative production is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["部屋:room", "会議:meeting", "準備できた:ready", "顧客:client"], "supportStage": "not-applicable", "substantivePrompts": ["Use “Just so you know, ___” to imagine a plan and give one neutral update."]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 11. `part2-intro`
+
+- Learner action: Read the Pattern 2 title aloud.
+- Tutor action: Introduce Pattern 2 in one short line.
+- Visible target or prompt: Exact visible instruction: Use this informal alert before timely news. Please read the title aloud. | 早めに伝えたい知らせの前に使うくだけた注意喚起です。 タイトルを声に出して読んでください。
+- Learning target: Pattern 2 transition in CORE-111: Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 transition for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 transition is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 12. `p2-teach`
+
+- Learner action: Read the complete examples after the meaning explanation.
+- Tutor action: Explain the use briefly, then ask for each example aloud.
+- Visible target or prompt: Highlighted target(s): Heads up — they moved the meeting | 先に知らせておくと、会議が変更になりました | Heads up — the price has changed | 先に知らせておくと、価格が変わりました | Heads up — the train is delayed | 先に知らせておくと、電車が遅れています
+- Learning target: Pattern 2 meaning and model in CORE-111: Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 meaning and model is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["Heads up — they moved the meeting", "先に知らせておくと、会議が変更になりました", "Heads up — the price has changed", "先に知らせておくと、価格が変わりました", "Heads up — the train is delayed", "先に知らせておくと、電車が遅れています"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 13. `p2-read`
+
+- Learner action: Read every complete sentence aloud.
+- Tutor action: Listen and model only when help is needed.
+- Visible target or prompt: Highlighted target(s): Heads up — they moved the meeting | 先に知らせておくと、会議が変更になりました | Heads up — the price has changed | 先に知らせておくと、価格が変わりました | Heads up — the train is delayed | 先に知らせておくと、電車が遅れています | Heads up — Sam called earlier | 先に知らせておくと、サムから先ほど電話がありました
+- Learning target: Pattern 2 read-aloud in CORE-111: Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 read-aloud is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["Heads up — they moved the meeting", "先に知らせておくと、会議が変更になりました", "Heads up — the price has changed", "先に知らせておくと、価格が変わりました", "Heads up — the train is delayed", "先に知らせておくと、電車が遅れています", "Heads up — Sam called earlier", "先に知らせておくと、サムから先ほど電話がありました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 14. `p2-rule`
+
+- Learner action: Notice the displayed form operation and read its examples.
+- Tutor action: Explain only the form distinction the diagram shows.
+- Visible target or prompt: Pattern 2 form explanation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: Pattern 2 form explanation in CORE-111: Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 form explanation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 15. `p2-reorder`
+
+- Learner action: Order each sentence, then say the whole sentence aloud.
+- Tutor action: Allow an attempt before helping.
+- Visible target or prompt: Pattern 2 word-order retrieval for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: Pattern 2 word-order retrieval in CORE-111: Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 word-order retrieval is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 16. `p2-fill`
+
+- Learner action: Say each whole sentence including the target blank.
+- Tutor action: Listen first, then type only the taught target.
+- Visible target or prompt: Highlighted target(s): 先に知らせておくと、会議が変更になりました | 先に知らせておくと、価格が変わりました | 先に知らせておくと、電車が遅れています | 先に知らせておくと、サムから先ほど電話がありました Blank answer(s): Heads up — they moved the meeting | Heads up — the price has changed | Heads up — the train is delayed | Heads up — Sam called earlier
+- Learning target: Pattern 2 controlled target retrieval in CORE-111: Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 controlled target retrieval is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["先に知らせておくと、会議が変更になりました", "先に知らせておくと、価格が変わりました", "先に知らせておくと、電車が遅れています", "先に知らせておくと、サムから先ほど電話がありました"], "blankAnswers": ["Heads up — they moved the meeting", "Heads up — the price has changed", "Heads up — the train is delayed", "Heads up — Sam called earlier"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 17. `p2-translate`
+
+- Learner action: Say each complete English sentence using lexical hints when needed.
+- Tutor action: Listen first, then capture the complete answer.
+- Visible target or prompt: Blank answer(s): Heads up — they moved the meeting. | Heads up — the price has changed. | Heads up — the train is delayed. | Heads up — Sam called earlier. Lexical hint(s): 会議:meeting | 変更になった:moved | 価格:price | 変更する:change | 電車:train | 遅れている:delayed | サム:Sam | 電話する:call | さっき:earlier
+- Learning target: Pattern 2 supported translation in CORE-111: Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “Just so you know,” before the next reduction in support.
+- Non-target support: Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 supported translation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Heads up — they moved the meeting.", "Heads up — the price has changed.", "Heads up — the train is delayed.", "Heads up — Sam called earlier."], "hintChips": ["会議:meeting", "変更になった:moved", "価格:price", "変更する:change", "電車:train", "遅れている:delayed", "サム:Sam", "電話する:call", "さっき:earlier"], "supportStage": "supported", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 18. `p2-write`
+
+- Learner action: Use the displayed exact frame to perform its communicative job aloud.
+- Tutor action: React first, then capture and correct only what helps.
+- Visible target or prompt: Exact learner prompt(s): Use “Heads up — ___” to give one timely informal alert about a change. Lexical hint(s): 価格:price | 遅れている:delayed | 電車:train | 会議:meeting
+- Learning target: Pattern 2 communicative production in CORE-111 through the exact current prompt: Use “Heads up — ___” to give one timely informal alert about a change.
+- Pedagogical value: This page has one distinct job—Pattern 2 communicative production—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “Just so you know,” before the next reduction in support.
+- Non-target support: Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for Pattern 2 communicative production is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": ["価格:price", "遅れている:delayed", "電車:train", "会議:meeting"], "supportStage": "not-applicable", "substantivePrompts": ["Use “Heads up — ___” to give one timely informal alert about a change."]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 19. `supporting-expressions`
+
+- Learner action: Read the optional support expressions aloud.
+- Tutor action: Clarify meaning only if needed; keep them optional.
+- Visible target or prompt: conversation support activation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: conversation support activation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—conversation support activation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform conversation support activation for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for conversation support activation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 20. `spiral-report-01`
+
+- Learner action: Choose the form that preserves the earlier rule, then read the result aloud.
+- Tutor action: Let the learner retrieve the earlier contrast before confirming it.
+- Visible target or prompt: Highlighted target(s): 伝える | 伝える
+- Learning target: spaced retrieval in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform spaced retrieval for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.
+- Component consistency: The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["伝える", "伝える"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 21. `part3-intro`
+
+- Learner action: Read the role-play title and prepare to use both patterns.
+- Tutor action: Set up the conversation, then move directly to the role-specific page.
+- Visible target or prompt: role-play transition for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: role-play transition in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—role-play transition—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform role-play transition for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for role-play transition is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 22. `p3-model`
+
+- Learner action: Read every learner-owned line in the complete role-play.
+- Tutor action: Take the named counterpart role and read only that role's lines.
+- Visible target or prompt: Highlighted target(s): Just so you know | 念のためお知らせすると | Heads up — they moved the meeting | 先に知らせておくと、会議が変更になりました
+- Learning target: complete role-play in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—complete role-play—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform complete role-play for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for complete role-play is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": ["Just so you know", "念のためお知らせすると", "Heads up — they moved the meeting", "先に知らせておくと、会議が変更になりました"], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 23. `p3-complete`
+
+- Learner action: Say every learner-owned line and supply the missing taught expressions.
+- Tutor action: Take the named counterpart role and type only the missing target words.
+- Visible target or prompt: Blank answer(s): Just so you know | Heads up — they moved the meeting
+- Learning target: role-play target retrieval in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—role-play target retrieval—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform role-play target retrieval for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for role-play target retrieval is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Just so you know", "Heads up — they moved the meeting"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 24. `p3-freetalk`
+
+- Learner action: Answer the tutor's personal question, then ask the displayed reciprocal question.
+- Tutor action: Give a real answer and follow the learner's most interesting detail.
+- Visible target or prompt: Exact learner prompt(s): How do you prefer to receive a last-minute update? | What about you—how do you prefer to get an update?
+- Learning target: reciprocal personal conversation in CORE-111 through the exact current prompt: How do you prefer to receive a last-minute update? | What about you—how do you prefer to get an update?
+- Pedagogical value: This page has one distinct job—reciprocal personal conversation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform reciprocal personal conversation for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for reciprocal personal conversation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you prefer to receive a last-minute update?", "What about you—how do you prefer to get an update?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 25. `in-the-wild`
+
+- Learner action: Use both targets in the new six-turn situation.
+- Tutor action: Take the named new counterpart role and keep the exchange natural.
+- Visible target or prompt: Blank answer(s): Just so you know | Heads up — the train is delayed
+- Learning target: transfer role-play in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—transfer role-play—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform transfer role-play for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for transfer role-play is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": ["Just so you know", "Heads up — the train is delayed"], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.
+
+## 26. `native-tip`
+
+- Learner action: Read the practical tone or register distinction and its examples.
+- Tutor action: Explain the immediately usable nuance briefly.
+- Visible target or prompt: pragmatic consolidation for “Just so you know,,” with “Just so you know, ___” and “Heads up — ___” as the two taught frames.
+- Learning target: pragmatic consolidation in CORE-111: Use this for a neutral update the listener may find useful. Then Use this informal alert before timely news.
+- Pedagogical value: This page has one distinct job—pragmatic consolidation—and advances from noticing toward usable speech with “Just so you know, ___” and “Heads up — ___.”
+- Failure diagnoses: Difficulty here isolates whether the learner can perform pragmatic consolidation for “Just so you know,” before the next reduction in support.
+- Non-target support: Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.
+- Article treatment: Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.
+- Choice/distractor quality: No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.
+- Component consistency: The approved Core component for pragmatic consolidation is used, with capture fields only where spoken language is recorded.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pending**; 480px **pending**
+- Verdict: **pass**
+- Notes: The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.

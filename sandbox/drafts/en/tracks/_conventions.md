@@ -208,12 +208,12 @@ seven-glyph loanword (`コンピューター`, `スマートフォン`) wraps an
 `スーツケース` when the choice is free; a loanword bridge almost always has a shorter candidate.
 It is not worth losing the right example over — take the wrap and note it.
 
-### Runtime queue — English gaps waiting on a decision
+### Runtime state and remaining English gaps
 
 | Needed | State | Why |
 | --- | --- | --- |
-| **Republish the runtime** | **blocking for class use** | The published `v1.7.0` contained the shared lesson-card and activity runtime that English used before this pass, but the shared files have moved on. The verified 360px `.slot-input` fix and the 2026-08-19 all-page pager clearance are local deltas. Publishing is a coordinated runtime action, not a deck-local workaround |
-| Language-aware tutor-only labels | **implemented locally; publish pending** | English decks declare `podo:target-language=en`. The shared runtime now emits `Spoken sentence`, `Correction`, `Note`, `Delete`, `Tutor only`, `Message to the learner`, and `Well done stamp` for them while keeping Korean as the default. The runtime still must be published and deployed decks repointed before the change reaches class |
+| Shared English runtime | **live in `v1.12.1`** | The published runtime includes the verified 360px `.slot-input` spacing and all-page pager clearance used by the current English decks. There is no outstanding republish or repoint dependency for these fixes |
+| Language-aware tutor-only labels | **live in `v1.12.1`** | English decks declare `podo:target-language=en`. The live runtime emits `Spoken sentence`, `Correction`, `Note`, `Delete`, `Tutor only`, `Message to the learner`, and `Well done stamp` for them while keeping Korean as the default |
 | A three-branch rule diagram | not written | inherited from Korean and **worse here**: `do/does/did`, `a/an/the` and `-s/-es/-ies` are all three-case, and `.batchim` is single-column. Core 20 dodged it (its rule is an honest two-brancher). The next lesson that does not, ships two boxes and reports it |
 | `.ko` / `.korean` class names | naming only, not a defect | they mean "the line the tutor reads" and "the target-language span". English decks reuse them as-is, because renaming is a runtime change touching 316 Korean decks. Worth knowing before someone reads an English deck and thinks it is mislabelled |
 | A second inline accent for English | not written | see the mark-vocabulary section above. Not needed yet |
@@ -252,18 +252,13 @@ does not fit rather than bending a component into a wrong teaching.
 
 ---
 
-## Runtime republish — decided, with a known gap
+## Runtime publish — current live state
 
-**v1.4.0 ships as-is** (owner decision, 2026-08-13). It carries `.pattern-meaning`,
-`.meaning-kicker` and `.nuance-compare`, which is what 115 Korean teach pages were waiting for.
+**`v1.12.1` is published and live.** It includes the shared pattern components, the corrected
+cross-language type scale, the 360px input spacing and pager clearance, and the language-aware
+English tutor-only labels described above. The former `v1.4.0`/`v1.7.0` follow-up publish gaps are
+closed; do not add deck-local workarounds for them.
 
-It does **not** carry the shared type-scale fix, which landed after that release was staged. So
-until a follow-up publish:
-
-- `.known.lines .k` renders at **22px** in class, not 18px — a goal page is a stack of
-  title-sized lines in both languages.
-- `.br-cn` / `.br-ko` render at **33px**, so a 6-glyph katakana loanword breaks mid-word.
-
-**This is a known, accepted gap, not a defect to re-report.** The fix is committed in
-`runtime/css/trial.css` and goes out with the next runtime publish. Do not work around it in a
-deck — a deck that compensates for it will be wrong once the follow-up ships.
+Decks continue to load an immutable pinned runtime. Any future shared-runtime change remains an
+orchestrator decision: publish the new tag, repoint the intended decks, and verify both language
+paths before the decks ship.

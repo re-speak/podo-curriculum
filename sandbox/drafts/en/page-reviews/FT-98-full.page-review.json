@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/98-growing-up-in-another-country/lesson.html",
+  "lessonSha256": "59202628117b15be737a4d7141121533a23891335bf45f80e77d88b2beaa917d",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “Growing up in another country” aloud once.",
+      "tutorAction": "State the can-do, invite one reading of “Growing up in another country,” then move to the optional article.",
+      "targetOrPrompt": "Growing up in another country / 別の国で育っていたら. Let's imagine how a different upbringing could shape a person. / 別の環境で育つと、人がどう変わるか想像しましょう。",
+      "learningTarget": "Orient the learner to a conversation about “Growing up in another country” without supplying an answer.",
+      "pedagogicalValue": "Establishes one clear conversation goal and one low-pressure learner action before discussion.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no personal history is required.",
+      "nonTargetSupport": "The Japanese can-do and title carry the same topic and learner action as the English.",
+      "articleTreatment": "This page introduces the topic only; the optional article remains a separate pre-study component.",
+      "choiceQuality": "No fixed choice set or model answer appears; the learner performs one title reading.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no extra outcome cards or examples.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any real question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "How upbringing shapes possibilities / 育った環境が可能性を形作る方法. Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use ten matched claims, from “Upbringing includes the relationships, institutions, language, expectations, and material conditions that shape childhood.” to “The value of the question lies in separating circumstance, adaptation, chance, and deliberate choice.,” as optional topic input rather than an in-class reading task.",
+      "pedagogicalValue": "Seeds several concrete, defensible angles for later conversation while preserving class time for speaking.",
+      "failureDiagnosis": "No article question is not a failure; confusion about a selectively glossed term identifies local vocabulary support.",
+      "nonTargetSupport": "Ten aligned full-specific Japanese claims are available; this variant owns these selective glosses: counterfactual=反実仮想.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals offer optional bilingual support; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive prompt pool begins.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only English defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Enter a flexible discussion without trying to complete all eight prompt pages.",
+      "tutorAction": "Ask one question, react, share a brief real view when useful, skip freely, and reserve time for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Treat the eight pages as a reciprocal conversation pool rather than a scripted interview.",
+      "pedagogicalValue": "Prioritizes depth, natural reaction, and tutor reciprocity over mechanical page completion.",
+      "failureDiagnosis": "An interview-like sequence with no reaction or tutor contribution would show that this operating rule was missed.",
+      "nonTargetSupport": "The Japanese line matches the flexible-pool instruction and adds no separate learner task.",
+      "articleTreatment": "Not applicable; this transition begins live discussion after article handling and style selection.",
+      "choiceQuality": "No fixed choice set appears; this page establishes one discussion mode.",
+      "componentConsistency": "Uses one concise transition with learner-facing pool framing and tutor-only operational guidance.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Which country or setting would provide the most revealing contrast in upbringing?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which country or setting would provide the most revealing contrast in upbringing?”, react or share briefly, then choose at most one relevant probe such as “Which concrete condition creates the strongest contrast?”.",
+      "targetOrPrompt": "Which country or setting would provide the most revealing contrast in upbringing? / どの国や環境なら、育った環境の違いを最もよく考えられますか？ Follow-up pool: Which concrete condition creates the strongest contrast? Which uncertainty should prevent a stereotyped prediction?",
+      "learningTarget": "Explore the distinct “Another country” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which concrete condition creates the strongest contrast?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which concrete condition creates the strongest contrast?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which country or setting would provide the most revealing contrast in upbringing?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which uncertainty should prevent a stereotyped prediction?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which country or setting would provide the most revealing contrast in upbringing?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “Which concrete condition makes an alternative upbringing worth examining?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which concrete condition makes an alternative upbringing worth examining?”, react or share briefly, then choose at most one relevant probe such as “Which opportunity, institution, language, or daily experience matters?”.",
+      "targetOrPrompt": "Which concrete condition makes an alternative upbringing worth examining? / 別の育った環境を考える価値が生まれる具体的な条件は何ですか？ Follow-up pool: Which opportunity, institution, language, or daily experience matters? Which uncertainty prevents a confident prediction?",
+      "learningTarget": "Explore the distinct “Why there” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which opportunity, institution, language, or daily experience matters?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which opportunity, institution, language, or daily experience matters?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which concrete condition makes an alternative upbringing worth examining?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which uncertainty prevents a confident prediction?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which concrete condition makes an alternative upbringing worth examining?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “Which parts of identity are most likely to develop differently across upbringings?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which parts of identity are most likely to develop differently across upbringings?”, react or share briefly, then choose at most one relevant probe such as “Which habit or opportunity could plausibly shift?”.",
+      "targetOrPrompt": "Which parts of identity are most likely to develop differently across upbringings? / 育った環境が違うと、アイデンティティのどの部分が最も変わりやすいですか？ Follow-up pool: Which habit or opportunity could plausibly shift? Which temperament or value might remain recognizable?",
+      "learningTarget": "Explore the distinct “A different you” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which habit or opportunity could plausibly shift?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which habit or opportunity could plausibly shift?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which parts of identity are most likely to develop differently across upbringings?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which temperament or value might remain recognizable?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which parts of identity are most likely to develop differently across upbringings?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “Which part of your actual upbringing might be hardest to lose?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which part of your actual upbringing might be hardest to lose?”, react or share briefly, then choose at most one relevant probe such as “Which ordinary familiarity might still matter?”.",
+      "targetOrPrompt": "Which part of your actual upbringing might be hardest to lose? / 実際に育った環境のどの部分を失うのが最も難しそうですか？ Follow-up pool: Which ordinary familiarity might still matter? Would the loss concern relationship, place, language, routine, or belonging?",
+      "learningTarget": "Explore the distinct “What you would miss” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which ordinary familiarity might still matter?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which ordinary familiarity might still matter?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of your actual upbringing might be hardest to lose?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Would the loss concern relationship, place, language, routine, or belonging?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which part of your actual upbringing might be hardest to lose?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “Which element of your actual upbringing, if any, would you be relieved to leave behind?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which element of your actual upbringing, if any, would you be relieved to leave behind?”, react or share briefly, then choose at most one relevant probe such as “Which feature deserves appreciation?”.",
+      "targetOrPrompt": "Which element of your actual upbringing, if any, would you be relieved to leave behind? / 実際に育った環境の中で、手放せて安心するものがあるとすれば何ですか？ Follow-up pool: Which feature deserves appreciation? Which alternative could replace it?",
+      "learningTarget": "Explore the distinct “What you would not miss” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which feature deserves appreciation?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which feature deserves appreciation?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which element of your actual upbringing, if any, would you be relieved to leave behind?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which alternative could replace it?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which element of your actual upbringing, if any, would you be relieved to leave behind?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “How does the language of upbringing influence emotional expression and belonging?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “How does the language of upbringing influence emotional expression and belonging?”, react or share briefly, then choose at most one relevant probe such as “Which other social condition would shape belonging?”.",
+      "targetOrPrompt": "How does the language of upbringing influence emotional expression and belonging? / 育ったときの言語は、感情表現と所属感にどう影響しますか？ Follow-up pool: Which other social condition would shape belonging? Which meaning might become easier to access or harder to retain?",
+      "learningTarget": "Explore the distinct “Language and belonging” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which other social condition would shape belonging?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which other social condition would shape belonging?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How does the language of upbringing influence emotional expression and belonging?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which meaning might become easier to access or harder to retain?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How does the language of upbringing influence emotional expression and belonging?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “Which differences separate a counterfactual upbringing from a present migration decision?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which differences separate a counterfactual upbringing from a present migration decision?”, react or share briefly, then choose at most one relevant probe such as “Which difference separates childhood from present migration?”.",
+      "targetOrPrompt": "Which differences separate a counterfactual upbringing from a present migration decision? / 別の国で育ったという反実仮想と、現在の移住の決定を分ける違いは何ですか？ Follow-up pool: Which difference separates childhood from present migration? Which general practical condition would matter most?",
+      "learningTarget": "Explore the distinct “Growing up versus moving” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which difference separates childhood from present migration?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which difference separates childhood from present migration?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which differences separate a counterfactual upbringing from a present migration decision?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Which general practical condition would matter most?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which differences separate a counterfactual upbringing from a present migration decision?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “Which part of your identity feels least dependent on where you were raised?” and develop the most interesting concrete detail.",
+      "tutorAction": "Ask “Which part of your identity feels least dependent on where you were raised?”, react or share briefly, then choose at most one relevant probe such as “Why does it seem more stable than circumstance?”.",
+      "targetOrPrompt": "Which part of your identity feels least dependent on where you were raised? / 自分らしさのどの部分が、育った場所に最も左右されないと感じますか？ Follow-up pool: Why does it seem more stable than circumstance? Could context still alter how that quality is expressed?",
+      "learningTarget": "Explore the distinct “What stays yours” angle of “Growing up in another country” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Why does it seem more stable than circumstance?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Why does it seem more stable than circumstance?”, the learner needs concrete-detail or reasoning support, not a forced answer route.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of your identity feels least dependent on where you were raised?” but is never required.",
+      "choiceQuality": "No artificial distractors or forced frame appears; “Could context still alter how that quality is expressed?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which part of your identity feels least dependent on where you were raised?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat the most useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one usable improvement from the discussion.",
+      "pedagogicalValue": "Turns the open conversation into specific evidence and one manageable next action.",
+      "failureDiagnosis": "The repeated correction shows whether the learner can immediately use the selected improvement.",
+      "nonTargetSupport": "The Japanese instruction mirrors the two-part feedback action; typed notes preserve the exact language.",
+      "articleTreatment": "Not applicable; feedback refers to live speaking rather than article recall.",
+      "choiceQuality": "No distractors appear; the tutor selects only one high-value strength and one actionable next step.",
+      "componentConsistency": "Reuses the approved Freetalking feedback component and requires an actionable spoken close.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/* CORE103--112: keep complete learner answers visible at phone widths. */
+textarea.space-input,
+textarea.free-input,
+textarea.phrase-input {
+  box-sizing: border-box;
+  block-size: auto;
+  min-block-size: 2.75em;
+  max-block-size: none;
+  overflow: auto !important;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  resize: none;
+}
+textarea.phrase-input {
+  margin-block: 4px;
+}

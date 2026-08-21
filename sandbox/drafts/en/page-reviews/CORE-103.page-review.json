@@ -1,0 +1,805 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-emphasis-and-tone/lessons/103-what-worries-me-most-is-the-cost/lesson.html",
+  "lessonSha256": "87ad70980c2c7d0ef1269d30a16893f801a6fd7cc9669a183cfd0ae1564124d3",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud after hearing the can-do.",
+      "tutorAction": "State the can-do, ask for the title once, then move on.",
+      "targetOrPrompt": "goal orientation for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "goal orientation in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—goal orientation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform goal orientation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for goal orientation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Say the three familiar English words aloud.",
+      "tutorAction": "Listen briefly; do not turn familiar words into a pronunciation drill.",
+      "targetOrPrompt": "known-word activation for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "known-word activation in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—known-word activation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform known-word activation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for known-word activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the Pattern 1 title aloud.",
+      "tutorAction": "Introduce Pattern 1 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to put your biggest concern after is. Please read the title aloud. | 最大の懸念を is の後ろに置いて強調します。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 1 transition in CORE-103: Use this to put your biggest concern after is.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 transition—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 transition for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): What worries me most is | 一番心配なのは | What worries me most is | 一番心配なのは | What worries me most is | 一番心配なのは",
+      "learningTarget": "Pattern 1 meaning and model in CORE-103: Use this to put your biggest concern after is.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 meaning and model—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 meaning and model for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "What worries me most is",
+          "一番心配なのは",
+          "What worries me most is",
+          "一番心配なのは",
+          "What worries me most is",
+          "一番心配なのは"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): What worries me most is | 一番心配なのは | What worries me most is | 一番心配なのは | What worries me most is | 一番心配なのは | What worries me most is | 一番心配なのは",
+      "learningTarget": "Pattern 1 read-aloud in CORE-103: Use this to put your biggest concern after is.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 read-aloud—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 read-aloud for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "What worries me most is",
+          "一番心配なのは",
+          "What worries me most is",
+          "一番心配なのは",
+          "What worries me most is",
+          "一番心配なのは",
+          "What worries me most is",
+          "一番心配なのは"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 1 form explanation for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "Pattern 1 form explanation in CORE-103: Use this to put your biggest concern after is.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 form explanation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 form explanation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 1 word-order retrieval for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "Pattern 1 word-order retrieval in CORE-103: Use this to put your biggest concern after is.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 word-order retrieval—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 word-order retrieval for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): 一番心配なのは | 一番心配なのは | 一番心配なのは | 一番心配なのは Blank answer(s): What worries me most is | What worries me most is | What worries me most is | What worries me most is",
+      "learningTarget": "Pattern 1 controlled target retrieval in CORE-103: Use this to put your biggest concern after is.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 controlled target retrieval—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 controlled target retrieval for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "一番心配なのは",
+          "一番心配なのは",
+          "一番心配なのは",
+          "一番心配なのは"
+        ],
+        "blankAnswers": [
+          "What worries me most is",
+          "What worries me most is",
+          "What worries me most is",
+          "What worries me most is"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): What worries me most is the cost. | What worries me most is the schedule. | What worries me most is the deadline. | What worries me most is the quality. Lexical hint(s): 費用:cost | 予定:schedule | 期限:deadline | 品質:quality",
+      "learningTarget": "Pattern 1 supported translation in CORE-103: Use this to put your biggest concern after is.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 supported translation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 supported translation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "What worries me most is the cost.",
+          "What worries me most is the schedule.",
+          "What worries me most is the deadline.",
+          "What worries me most is the quality."
+        ],
+        "hintChips": [
+          "費用:cost",
+          "予定:schedule",
+          "期限:deadline",
+          "品質:quality"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “What worries me most is ___” to imagine a decision and name your main concern. Lexical hint(s): 費用:cost | 予定:schedule | 期限:deadline | 品質:quality",
+      "learningTarget": "Pattern 1 communicative production in CORE-103 through the exact current prompt: Use “What worries me most is ___” to imagine a decision and name your main concern.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 1 communicative production—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 1 communicative production for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 1 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "費用:cost",
+          "予定:schedule",
+          "期限:deadline",
+          "品質:quality"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “What worries me most is ___” to imagine a decision and name your main concern."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the Pattern 2 title aloud.",
+      "tutorAction": "Introduce Pattern 2 in one short line.",
+      "targetOrPrompt": "Exact visible instruction: Use this to focus the action you recommend. Please read the title aloud. | 勧める行動に焦点を当てます。 タイトルを声に出して読んでください。",
+      "learningTarget": "Pattern 2 transition in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 transition—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 transition for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read the complete examples after the meaning explanation.",
+      "tutorAction": "Explain the use briefly, then ask for each example aloud.",
+      "targetOrPrompt": "Highlighted target(s): What I'd suggest is | 私が提案したいのは | What I'd suggest is | 私が提案したいのは | What I'd suggest is | 私が提案したいのは",
+      "learningTarget": "Pattern 2 meaning and model in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning and model—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning and model for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 meaning and model is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "What I'd suggest is",
+          "私が提案したいのは",
+          "What I'd suggest is",
+          "私が提案したいのは",
+          "What I'd suggest is",
+          "私が提案したいのは"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete sentence aloud.",
+      "tutorAction": "Listen and model only when help is needed.",
+      "targetOrPrompt": "Highlighted target(s): What I'd suggest is | 私が提案したいのは | What I'd suggest is | 私が提案したいのは | What I'd suggest is | 私が提案したいのは | What I'd suggest is | 私が提案したいのは",
+      "learningTarget": "Pattern 2 read-aloud in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 read-aloud—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 read-aloud for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 read-aloud is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "What I'd suggest is",
+          "私が提案したいのは",
+          "What I'd suggest is",
+          "私が提案したいのは",
+          "What I'd suggest is",
+          "私が提案したいのは",
+          "What I'd suggest is",
+          "私が提案したいのは"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice the displayed form operation and read its examples.",
+      "tutorAction": "Explain only the form distinction the diagram shows.",
+      "targetOrPrompt": "Pattern 2 form explanation for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "Pattern 2 form explanation in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 form explanation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 form explanation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 form explanation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-choose",
+      "learnerAction": "Choose the meaningful form for each cue, then read the complete sentence.",
+      "tutorAction": "Allow a decision before confirming the contrast.",
+      "targetOrPrompt": "Highlighted target(s): 待つこと | 確認すること | 聞くこと | 始めること",
+      "learningTarget": "Pattern 2 meaning or form discrimination in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 meaning or form discrimination—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 meaning or form discrimination for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for Pattern 2 meaning or form discrimination is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "待つこと",
+          "確認すること",
+          "聞くこと",
+          "始めること"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Order each sentence, then say the whole sentence aloud.",
+      "tutorAction": "Allow an attempt before helping.",
+      "targetOrPrompt": "Pattern 2 word-order retrieval for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "Pattern 2 word-order retrieval in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 word-order retrieval—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 word-order retrieval for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 word-order retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each whole sentence including the target blank.",
+      "tutorAction": "Listen first, then type only the taught target.",
+      "targetOrPrompt": "Highlighted target(s): 私が提案したいのは | 私が提案したいのは | 私が提案したいのは | 私が提案したいのは Blank answer(s): What I'd suggest is | What I'd suggest is | What I'd suggest is | What I'd suggest is",
+      "learningTarget": "Pattern 2 controlled target retrieval in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 controlled target retrieval—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 controlled target retrieval for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 controlled target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "私が提案したいのは",
+          "私が提案したいのは",
+          "私が提案したいのは",
+          "私が提案したいのは"
+        ],
+        "blankAnswers": [
+          "What I'd suggest is",
+          "What I'd suggest is",
+          "What I'd suggest is",
+          "What I'd suggest is"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Say each complete English sentence using lexical hints when needed.",
+      "tutorAction": "Listen first, then capture the complete answer.",
+      "targetOrPrompt": "Blank answer(s): What I'd suggest is waiting a week. | What I'd suggest is checking the data. | What I'd suggest is asking the client. | What I'd suggest is starting tomorrow. Lexical hint(s): 待つ:wait | 週:week | 確認する:check | データ:data | 聞く:ask | 顧客:client | 始める:start | 明日:tomorrow",
+      "learningTarget": "Pattern 2 supported translation in CORE-103: Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 supported translation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 supported translation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 supported translation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "What I'd suggest is waiting a week.",
+          "What I'd suggest is checking the data.",
+          "What I'd suggest is asking the client.",
+          "What I'd suggest is starting tomorrow."
+        ],
+        "hintChips": [
+          "待つ:wait",
+          "週:week",
+          "確認する:check",
+          "データ:data",
+          "聞く:ask",
+          "顧客:client",
+          "始める:start",
+          "明日:tomorrow"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the displayed exact frame to perform its communicative job aloud.",
+      "tutorAction": "React first, then capture and correct only what helps.",
+      "targetOrPrompt": "Exact learner prompt(s): Use “What I'd suggest is ___” to suggest one action for an imagined concern. Lexical hint(s): 待つ:wait | 週:week | データ:data | 顧客:client | 始める:start",
+      "learningTarget": "Pattern 2 communicative production in CORE-103 through the exact current prompt: Use “What I'd suggest is ___” to suggest one action for an imagined concern.",
+      "pedagogicalValue": "This page has one distinct job—Pattern 2 communicative production—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform Pattern 2 communicative production for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Lexical chips support only useful non-target content; articles, auxiliaries, inflections, and the fixed discourse frame remain unhinted.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for Pattern 2 communicative production is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "待つ:wait",
+          "週:week",
+          "データ:data",
+          "顧客:client",
+          "始める:start"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Use “What I'd suggest is ___” to suggest one action for an imagined concern."
+        ]
+      }
+    },
+    {
+      "pageId": "supporting-expressions",
+      "learnerAction": "Read the optional support expressions aloud.",
+      "tutorAction": "Clarify meaning only if needed; keep them optional.",
+      "targetOrPrompt": "conversation support activation for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "conversation support activation in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—conversation support activation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform conversation support activation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for conversation support activation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-order-01",
+      "learnerAction": "Choose the form that preserves the earlier rule, then read the result aloud.",
+      "tutorAction": "Let the learner retrieve the earlier contrast before confirming it.",
+      "targetOrPrompt": "Highlighted target(s): 主語が先 | 主語が先",
+      "learningTarget": "spaced retrieval in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "主語が先",
+          "主語が先"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "spiral-rel-01",
+      "learnerAction": "Choose the form that preserves the earlier rule, then read the result aloud.",
+      "tutorAction": "Let the learner retrieve the earlier contrast before confirming it.",
+      "targetOrPrompt": "Highlighted target(s): レポート | 人",
+      "learningTarget": "spaced retrieval in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—spaced retrieval—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform spaced retrieval for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "The four rows require genuine varied content or form decisions; invariant alternatives were omitted at source.",
+      "componentConsistency": "The approved Core component for spaced retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "レポート",
+          "人"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the role-play title and prepare to use both patterns.",
+      "tutorAction": "Set up the conversation, then move directly to the role-specific page.",
+      "targetOrPrompt": "role-play transition for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "role-play transition in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—role-play transition—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play transition for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play transition is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every learner-owned line in the complete role-play.",
+      "tutorAction": "Take the named counterpart role and read only that role's lines.",
+      "targetOrPrompt": "Highlighted target(s): What worries me most is | 一番心配なのは | What I'd suggest is | 私が提案したいのは",
+      "learningTarget": "complete role-play in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—complete role-play—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform complete role-play for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for complete role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [
+          "What worries me most is",
+          "一番心配なのは",
+          "What I'd suggest is",
+          "私が提案したいのは"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Say every learner-owned line and supply the missing taught expressions.",
+      "tutorAction": "Take the named counterpart role and type only the missing target words.",
+      "targetOrPrompt": "Blank answer(s): What worries me most is | What I'd suggest is",
+      "learningTarget": "role-play target retrieval in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—role-play target retrieval—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform role-play target retrieval for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for role-play target retrieval is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "What worries me most is",
+          "What I'd suggest is"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the tutor's personal question, then ask the displayed reciprocal question.",
+      "tutorAction": "Give a real answer and follow the learner's most interesting detail.",
+      "targetOrPrompt": "Exact learner prompt(s): When you make a big decision, what do you worry about first? | What about you—what do you worry about first?",
+      "learningTarget": "reciprocal personal conversation in CORE-103 through the exact current prompt: When you make a big decision, what do you worry about first? | What about you—what do you worry about first?",
+      "pedagogicalValue": "This page has one distinct job—reciprocal personal conversation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform reciprocal personal conversation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for reciprocal personal conversation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When you make a big decision, what do you worry about first?",
+          "What about you—what do you worry about first?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use both targets in the new six-turn situation.",
+      "tutorAction": "Take the named new counterpart role and keep the exchange natural.",
+      "targetOrPrompt": "Blank answer(s): What worries me most is | What I'd suggest is",
+      "learningTarget": "transfer role-play in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—transfer role-play—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform transfer role-play for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for transfer role-play is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "What worries me most is",
+          "What I'd suggest is"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the practical tone or register distinction and its examples.",
+      "tutorAction": "Explain the immediately usable nuance briefly.",
+      "targetOrPrompt": "pragmatic consolidation for “What worries me most is the cost,” with “What worries me most is ___” and “What I'd suggest is ___” as the two taught frames.",
+      "learningTarget": "pragmatic consolidation in CORE-103: Use this to put your biggest concern after is. Then Use this to focus the action you recommend.",
+      "pedagogicalValue": "This page has one distinct job—pragmatic consolidation—and advances from noticing toward usable speech with “What worries me most is ___” and “What I'd suggest is ___.”",
+      "failureDiagnosis": "Difficulty here isolates whether the learner can perform pragmatic consolidation for “What worries me most is the cost” before the next reduction in support.",
+      "nonTargetSupport": "Visible context supplies the needed non-target support; no extra lexical hint set is required on this page.",
+      "articleTreatment": "Articles remain visible unless article choice is the actual reviewed contrast; no lexical chip supplies an article answer.",
+      "choiceQuality": "No artificial choice set is used; this page performs reading, retrieval, production, role-play, or conversation.",
+      "componentConsistency": "The approved Core component for pragmatic consolidation is used, with capture fields only where spoken language is recorded.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "The learner action, tutor action, bilingual instruction, target boundary, support, answers, choices, and pedagogical role were independently read against these final lesson bytes. 360/480 visual QA and owner approval remain pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

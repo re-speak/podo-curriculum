@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/2-contextual-english/courses/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/lesson.html",
+  "lessonSha256": "f57180192ee347b5107cd4e0f7483e5ce80cc2c7b070325234bd51c655c71a73",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pass"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the title aloud once after hearing the can-do. Exact focus: Check in and request a seat | Today, you'll practice checking in and asking for the seats you want. Please read the title aloud. 今日は、チェックインをして希望の席を頼む練習をします。タイトルを声に出して読んでください。",
+      "tutorAction": "State the can-do, invite one title read, then move on. Exact focus: Check in and request a seat | Today, you'll practice checking in and asking for the seats you want. Please read the title aloud. 今日は、チェックインをして希望の席を頼む練習をします。タイトルを声に出して読んでください。",
+      "targetOrPrompt": "Check in and request a seat | Today, you'll practice checking in and asking for the seats you want. Please read the title aloud. 今日は、チェックインをして希望の席を頼む練習をします。タイトルを声に出して読んでください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Check in and request a seat | Today, you'll practice checking in and asking for the seats you want. Please read the title aloud. 今日は、チェックインをして希望の席を頼む練習をします。タイトルを声に出して読んでください。",
+      "pedagogicalValue": "The conversation goal and first learner action are immediately clear. Reviewed focus: Check in and request a seat | Today, you'll practice checking in and asking for the seats you want. Please read the title aloud. 今日は、チェックインをして希望の席を頼む練習をします。タイトルを声に出して読んでください。",
+      "failureDiagnosis": "An unclear can-do or missing learner action would fail the page. Checked page: lesson-goal.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved lesson-goal component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "scene",
+      "learnerAction": "Take the learner role and act out the scene from top to bottom. Exact focus: The scene (今日の場面) | Let's role-play checking in. You're the passenger; I'll be the agent. Let's begin. チェックインのロールプレイをしましょう。あなたは乗客、私は係員です。始めましょう。",
+      "tutorAction": "Take the named partner role and open with the first partner line. Exact focus: The scene (今日の場面) | Let's role-play checking in. You're the passenger; I'll be the agent. Let's begin. チェックインのロールプレイをしましょう。あなたは乗客、私は係員です。始めましょう。",
+      "targetOrPrompt": "The scene (今日の場面) | Let's role-play checking in. You're the passenger; I'll be the agent. Let's begin. チェックインのロールプレイをしましょう。あなたは乗客、私は係員です。始めましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: The scene (今日の場面) | Let's role-play checking in. You're the passenger; I'll be the agent. Let's begin. チェックインのロールプレイをしましょう。あなたは乗客、私は係員です。始めましょう。",
+      "pedagogicalValue": "The practical task and both roles are explicit. Reviewed focus: The scene (今日の場面) | Let's role-play checking in. You're the passenger; I'll be the agent. Let's begin. チェックインのロールプレイをしましょう。あなたは乗客、私は係員です。始めましょう。",
+      "failureDiagnosis": "Unclear roles or passive listen-first preview would fail the page. Checked page: scene.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved scene component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "understand",
+      "learnerAction": "Listen to each agent line and choose its matching meaning. Exact focus: Understand (聞いてわかろう) | Listen to each agent line, then choose what it means. 係員のセリフを聞いて、意味を選んでください。",
+      "tutorAction": "Read each English agent line aloud; the learner listens and chooses. Exact focus: Understand (聞いてわかろう) | Listen to each agent line, then choose what it means. 係員のセリフを聞いて、意味を選んでください。",
+      "targetOrPrompt": "Understand (聞いてわかろう) | Listen to each agent line, then choose what it means. 係員のセリフを聞いて、意味を選んでください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Understand (聞いてわかろう) | Listen to each agent line, then choose what it means. 係員のセリフを聞いて、意味を選んでください。",
+      "pedagogicalValue": "Real receptive understanding is checked before production. Reviewed focus: Understand (聞いてわかろう) | Listen to each agent line, then choose what it means. 係員のセリフを聞いて、意味を選んでください。",
+      "failureDiagnosis": "Having the learner read the agent line or ambiguous meanings would fail the page. Checked page: understand.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved understand component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the displayed pattern or transition title once, then continue. Exact focus: We’d like ___, if possible. | First, let's practice asking for the seats you prefer. まず、希望する席の頼み方を練習しましょう。",
+      "tutorAction": "Introduce the next stage in one line and move on. Exact focus: We’d like ___, if possible. | First, let's practice asking for the seats you prefer. まず、希望する席の頼み方を練習しましょう。",
+      "targetOrPrompt": "We’d like ___, if possible. | First, let's practice asking for the seats you prefer. まず、希望する席の頼み方を練習しましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: We’d like ___, if possible. | First, let's practice asking for the seats you prefer. まず、希望する席の頼み方を練習しましょう。",
+      "pedagogicalValue": "The next target is separated without duplicating its teaching page. Reviewed focus: We’d like ___, if possible. | First, let's practice asking for the seats you prefer. まず、希望する席の頼み方を練習しましょう。",
+      "failureDiagnosis": "A redundant explanation or drill on the transition would fail the page. Checked page: part1-intro.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved part1-intro component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read every complete example aloud after the meaning explanation. Exact focus: Say which seats you want politely (希望の席を丁寧に伝える) | Meaning & use 意味・使い方 Use this to politely say which seats your group wants. グループで希望する席を丁寧に伝える表現です。",
+      "tutorAction": "Explain meaning briefly, then have the learner read each example. Exact focus: Say which seats you want politely (希望の席を丁寧に伝える) | Meaning & use 意味・使い方 Use this to politely say which seats your group wants. グループで希望する席を丁寧に伝える表現です。",
+      "targetOrPrompt": "Say which seats you want politely (希望の席を丁寧に伝える) | Meaning & use 意味・使い方 Use this to politely say which seats your group wants. グループで希望する席を丁寧に伝える表現です。",
+      "learningTarget": "Perform the exact target or conversation move in context: Say which seats you want politely (希望の席を丁寧に伝える) | Meaning & use 意味・使い方 Use this to politely say which seats your group wants. グループで希望する席を丁寧に伝える表現です。",
+      "pedagogicalValue": "The highlighted frame is connected to communicative use. Reviewed focus: Say which seats you want politely (希望の席を丁寧に伝える) | Meaning & use 意味・使い方 Use this to politely say which seats your group wants. グループで希望する席を丁寧に伝える表現です。",
+      "failureDiagnosis": "Failure to connect form and meaning would fail the page. Checked page: p1-teach.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p1-teach component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "していただきたいです",
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "希望します",
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "希望します"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read every complete model sentence aloud. Exact focus: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "tutorAction": "Listen and correct only a useful issue after reading. Exact focus: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "targetOrPrompt": "Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "pedagogicalValue": "Complete models become fluent before manipulation. Reviewed focus: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "failureDiagnosis": "An unstable model would block later controlled production. Checked page: p1-read.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p1-read component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "していただきたいです",
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "希望します",
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "希望します",
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "希望します"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Use the examples to explain the one construction boundary. Exact focus: Put “if possible” last (if possible は最後) | Put “if possible” at the end of the request. 「if possible」は依頼の最後に置きます。",
+      "tutorAction": "Point through the exact sequence once and keep it brief. Exact focus: Put “if possible” last (if possible は最後) | Put “if possible” at the end of the request. 「if possible」は依頼の最後に置きます。",
+      "targetOrPrompt": "Put “if possible” last (if possible は最後) | Put “if possible” at the end of the request. 「if possible」は依頼の最後に置きます。",
+      "learningTarget": "Perform the exact target or conversation move in context: Put “if possible” last (if possible は最後) | Put “if possible” at the end of the request. 「if possible」は依頼の最後に置きます。",
+      "pedagogicalValue": "One sentence-building operation is explicit before production. Reviewed focus: Put “if possible” last (if possible は最後) | Put “if possible” at the end of the request. 「if possible」は依頼の最後に置きます。",
+      "failureDiagnosis": "An unclear form boundary would fail the page. Checked page: p1-rule.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p1-rule component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Order every meaningful chunk, then say the whole sentence aloud. Exact focus: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "tutorAction": "Let the learner build before revealing the order. Exact focus: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "targetOrPrompt": "Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "pedagogicalValue": "Sentence order is retrieved without arbitrary fragments. Reviewed focus: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "failureDiagnosis": "An irrelevant chip or broken meaning unit would fail the page. Checked page: p1-reorder.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "Every chunk belongs to the grammatical sentence; no irrelevant decoy is present.",
+      "componentConsistency": "The approved p1-reorder component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say each complete sentence aloud, including missing target words. Exact focus: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "tutorAction": "Listen first and type only the missing words as spoken. Exact focus: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "targetOrPrompt": "Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "pedagogicalValue": "Target retrieval is isolated while non-target language stays visible. Reviewed focus: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "failureDiagnosis": "Hidden vocabulary or partial-sentence production would fail the page. Checked page: p1-fill.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p1-fill component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [
+          "希望します",
+          "できれば",
+          "希望します",
+          "できれば"
+        ],
+        "blankAnswers": [
+          "We'd like",
+          "if possible",
+          "We'd like",
+          "if possible"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud. Exact focus: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "tutorAction": "Type the learner’s full English sentence after they speak. Exact focus: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "targetOrPrompt": "Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "pedagogicalValue": "Needed lexical hints support vocabulary while the frame is retrieved. Reviewed focus: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "failureDiagnosis": "Overblanking or missing lexical support would fail the page. Checked page: p1-translate.",
+      "nonTargetSupport": "Only answer-relevant lexical support is supplied: 隣り合った席:seats together, 通路側の席:aisle seat, 前方:front, 列:row.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p1-translate component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "We'd like two seats together, if possible.",
+          "We'd like an aisle seat, if possible.",
+          "We'd like seats near the front, if possible.",
+          "We'd like seats in the same row, if possible."
+        ],
+        "hintChips": [
+          "隣り合った席:seats together",
+          "通路側の席:aisle seat",
+          "前方:front",
+          "列:row"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the visible frame to complete its stated communicative job aloud. Exact focus: Now, use “We’d like ___, if possible” to make your own request. Ask the agent for the seats you want.",
+      "tutorAction": "Take the named role, react first, then capture and correct usefully. Exact focus: Now, use “We’d like ___, if possible” to make your own request. Ask the agent for the seats you want.",
+      "targetOrPrompt": "Now, use “We’d like ___, if possible” to make your own request. Ask the agent for the seats you want.",
+      "learningTarget": "Perform the exact target or conversation move in context: Now, use “We’d like ___, if possible” to make your own request. Ask the agent for the seats you want.",
+      "pedagogicalValue": "The target transfers into one clear original request or answer. Reviewed focus: Now, use “We’d like ___, if possible” to make your own request. Ask the agent for the seats you want.",
+      "failureDiagnosis": "A vague make-a-sentence instruction would fail the page. Checked page: p1-write.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p1-write component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now, use “We’d like ___, if possible” to make your own request. Ask the agent for the seats you want."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the displayed pattern or transition title once, then continue. Exact focus: Could we have ___? | Next, let's practice asking for a specific seat. 次は、希望する席を具体的に頼む練習をしましょう。",
+      "tutorAction": "Introduce the next stage in one line and move on. Exact focus: Could we have ___? | Next, let's practice asking for a specific seat. 次は、希望する席を具体的に頼む練習をしましょう。",
+      "targetOrPrompt": "Could we have ___? | Next, let's practice asking for a specific seat. 次は、希望する席を具体的に頼む練習をしましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: Could we have ___? | Next, let's practice asking for a specific seat. 次は、希望する席を具体的に頼む練習をしましょう。",
+      "pedagogicalValue": "The next target is separated without duplicating its teaching page. Reviewed focus: Could we have ___? | Next, let's practice asking for a specific seat. 次は、希望する席を具体的に頼む練習をしましょう。",
+      "failureDiagnosis": "A redundant explanation or drill on the transition would fail the page. Checked page: part2-intro.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved part2-intro component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read every complete example aloud after the meaning explanation. Exact focus: Ask for a specific seat (希望の席を具体的に頼む) | Meaning & use 意味・使い方 Use this to politely ask for a specific seat. 希望する席を具体的に、丁寧に頼む表現です。",
+      "tutorAction": "Explain meaning briefly, then have the learner read each example. Exact focus: Ask for a specific seat (希望の席を具体的に頼む) | Meaning & use 意味・使い方 Use this to politely ask for a specific seat. 希望する席を具体的に、丁寧に頼む表現です。",
+      "targetOrPrompt": "Ask for a specific seat (希望の席を具体的に頼む) | Meaning & use 意味・使い方 Use this to politely ask for a specific seat. 希望する席を具体的に、丁寧に頼む表現です。",
+      "learningTarget": "Perform the exact target or conversation move in context: Ask for a specific seat (希望の席を具体的に頼む) | Meaning & use 意味・使い方 Use this to politely ask for a specific seat. 希望する席を具体的に、丁寧に頼む表現です。",
+      "pedagogicalValue": "The highlighted frame is connected to communicative use. Reviewed focus: Ask for a specific seat (希望の席を具体的に頼む) | Meaning & use 意味・使い方 Use this to politely ask for a specific seat. 希望する席を具体的に、丁寧に頼む表現です。",
+      "failureDiagnosis": "Failure to connect form and meaning would fail the page. Checked page: p2-teach.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p2-teach component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [
+          "Could we have",
+          "いただけますか",
+          "Could we have",
+          "いただけますか",
+          "Could we have",
+          "していただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read every complete model sentence aloud. Exact focus: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "tutorAction": "Listen and correct only a useful issue after reading. Exact focus: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "targetOrPrompt": "Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "pedagogicalValue": "Complete models become fluent before manipulation. Reviewed focus: Read aloud (声に出して読もう) | Read each request aloud. それぞれの依頼を声に出して読んでください。",
+      "failureDiagnosis": "An unstable model would block later controlled production. Checked page: p2-read.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p2-read component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [
+          "Could we have",
+          "いただけますか",
+          "Could we have",
+          "いただけますか",
+          "Could we have",
+          "していただけますか",
+          "Could we have",
+          "いただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Use the examples to explain the one construction boundary. Exact focus: Use “we” for your group (グループなら we) | Use “we” when you are asking for seats for your group. グループの席を頼むときは「we」を使います。",
+      "tutorAction": "Point through the exact sequence once and keep it brief. Exact focus: Use “we” for your group (グループなら we) | Use “we” when you are asking for seats for your group. グループの席を頼むときは「we」を使います。",
+      "targetOrPrompt": "Use “we” for your group (グループなら we) | Use “we” when you are asking for seats for your group. グループの席を頼むときは「we」を使います。",
+      "learningTarget": "Perform the exact target or conversation move in context: Use “we” for your group (グループなら we) | Use “we” when you are asking for seats for your group. グループの席を頼むときは「we」を使います。",
+      "pedagogicalValue": "One sentence-building operation is explicit before production. Reviewed focus: Use “we” for your group (グループなら we) | Use “we” when you are asking for seats for your group. グループの席を頼むときは「we」を使います。",
+      "failureDiagnosis": "An unclear form boundary would fail the page. Checked page: p2-rule.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p2-rule component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Order every meaningful chunk, then say the whole sentence aloud. Exact focus: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "tutorAction": "Let the learner build before revealing the order. Exact focus: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "targetOrPrompt": "Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "pedagogicalValue": "Sentence order is retrieved without arbitrary fragments. Reviewed focus: Build the sentence (文を組み立てよう) | Put the words in order, then say the whole sentence out loud. 単語を順番に並べて、文をまるごと声に出して言ってみましょう。",
+      "failureDiagnosis": "An irrelevant chip or broken meaning unit would fail the page. Checked page: p2-reorder.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "Every chunk belongs to the grammatical sentence; no irrelevant decoy is present.",
+      "componentConsistency": "The approved p2-reorder component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say each complete sentence aloud, including missing target words. Exact focus: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "tutorAction": "Listen first and type only the missing words as spoken. Exact focus: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "targetOrPrompt": "Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "pedagogicalValue": "Target retrieval is isolated while non-target language stays visible. Reviewed focus: Say the complete request (依頼をまるごと言おう) | Say each whole request aloud, including the missing words. 空欄に入る言葉も含めて、依頼をまるごと声に出して言ってください。",
+      "failureDiagnosis": "Hidden vocabulary or partial-sentence production would fail the page. Checked page: p2-fill.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p2-fill component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [
+          "いただけますか",
+          "いただけますか",
+          "していただけますか",
+          "いただけますか"
+        ],
+        "blankAnswers": [
+          "Could we have",
+          "Could we have",
+          "Could we have",
+          "Could we have"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Read each Japanese cue and say the complete English sentence aloud. Exact focus: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "tutorAction": "Type the learner’s full English sentence after they speak. Exact focus: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "targetOrPrompt": "Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "pedagogicalValue": "Needed lexical hints support vocabulary while the frame is retrieved. Reviewed focus: Say it in English (英語で言おう) | Read the Japanese, then say it in English. 日本語を見て、英語で言ってみましょう。",
+      "failureDiagnosis": "Overblanking or missing lexical support would fail the page. Checked page: p2-translate.",
+      "nonTargetSupport": "Only answer-relevant lexical support is supplied: 窓側の席:window seat, 通路側の席:aisle seat, 隣り合った席:seats together, 前方:front.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p2-translate component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "Could we have a window seat?",
+          "Could we have an aisle seat?",
+          "Could we have two seats together?",
+          "Could we have seats near the front?"
+        ],
+        "hintChips": [
+          "窓側の席:window seat",
+          "通路側の席:aisle seat",
+          "隣り合った席:seats together",
+          "前方:front"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the visible frame to complete its stated communicative job aloud. Exact focus: Now, use “Could we have ___?” to make your own request. Ask the agent for one seat option.",
+      "tutorAction": "Take the named role, react first, then capture and correct usefully. Exact focus: Now, use “Could we have ___?” to make your own request. Ask the agent for one seat option.",
+      "targetOrPrompt": "Now, use “Could we have ___?” to make your own request. Ask the agent for one seat option.",
+      "learningTarget": "Perform the exact target or conversation move in context: Now, use “Could we have ___?” to make your own request. Ask the agent for one seat option.",
+      "pedagogicalValue": "The target transfers into one clear original request or answer. Reviewed focus: Now, use “Could we have ___?” to make your own request. Ask the agent for one seat option.",
+      "failureDiagnosis": "A vague make-a-sentence instruction would fail the page. Checked page: p2-write.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p2-write component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now, use “Could we have ___?” to make your own request. Ask the agent for one seat option."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the displayed pattern or transition title once, then continue. Exact focus: Back at the airline desk | Now, let's return to check-in and use both requests. では、チェックインに戻って、二つの依頼表現を使いましょう。",
+      "tutorAction": "Introduce the next stage in one line and move on. Exact focus: Back at the airline desk | Now, let's return to check-in and use both requests. では、チェックインに戻って、二つの依頼表現を使いましょう。",
+      "targetOrPrompt": "Back at the airline desk | Now, let's return to check-in and use both requests. では、チェックインに戻って、二つの依頼表現を使いましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: Back at the airline desk | Now, let's return to check-in and use both requests. では、チェックインに戻って、二つの依頼表現を使いましょう。",
+      "pedagogicalValue": "The next target is separated without duplicating its teaching page. Reviewed focus: Back at the airline desk | Now, let's return to check-in and use both requests. では、チェックインに戻って、二つの依頼表現を使いましょう。",
+      "failureDiagnosis": "A redundant explanation or drill on the transition would fail the page. Checked page: part3-intro.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved part3-intro component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Read every named learner line while the tutor plays the counterpart. Exact focus: Replay the full scene (もう一度) | I'll be the agent. Please read the Passenger lines aloud. 私は係員役をします。Passenger のセリフを声に出して読んでください。",
+      "tutorAction": "Play only the named counterpart and pause for learner turns. Exact focus: Replay the full scene (もう一度) | I'll be the agent. Please read the Passenger lines aloud. 私は係員役をします。Passenger のセリフを声に出して読んでください。",
+      "targetOrPrompt": "Replay the full scene (もう一度) | I'll be the agent. Please read the Passenger lines aloud. 私は係員役をします。Passenger のセリフを声に出して読んでください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Replay the full scene (もう一度) | I'll be the agent. Please read the Passenger lines aloud. 私は係員役をします。Passenger のセリフを声に出して読んでください。",
+      "pedagogicalValue": "The complete exchange is rehearsed with explicit turn ownership. Reviewed focus: Replay the full scene (もう一度) | I'll be the agent. Please read the Passenger lines aloud. 私は係員役をします。Passenger のセリフを声に出して読んでください。",
+      "failureDiagnosis": "Unclear turn ownership would fail the page. Checked page: p3-model.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p3-model component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [
+          "We’d like",
+          "if possible.",
+          "できれば",
+          "していただきたいです",
+          "Could we have",
+          "いただけますか"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Roleplay and say every learner line completely, including missing words. Exact focus: Complete your requests (自分のセリフ) | I'll be the agent again. Complete the two missing Passenger requests. もう一度、私は係員役をします。Passenger の二つの空欄を完成させてください。",
+      "tutorAction": "Play the counterpart and capture only requested missing material. Exact focus: Complete your requests (自分のセリフ) | I'll be the agent again. Complete the two missing Passenger requests. もう一度、私は係員役をします。Passenger の二つの空欄を完成させてください。",
+      "targetOrPrompt": "Complete your requests (自分のセリフ) | I'll be the agent again. Complete the two missing Passenger requests. もう一度、私は係員役をします。Passenger の二つの空欄を完成させてください。",
+      "learningTarget": "Perform the exact target or conversation move in context: Complete your requests (自分のセリフ) | I'll be the agent again. Complete the two missing Passenger requests. もう一度、私は係員役をします。Passenger の二つの空欄を完成させてください。",
+      "pedagogicalValue": "Support is removed where both targets must work in context. Reviewed focus: Complete your requests (自分のセリフ) | I'll be the agent again. Complete the two missing Passenger requests. もう一度、私は係員役をします。Passenger の二つの空欄を完成させてください。",
+      "failureDiagnosis": "A partial utterance or tutor-modeled learner line would fail the page. Checked page: p3-complete.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p3-complete component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "We'd like",
+          "if possible",
+          "Could we have"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the real question and make the requested reciprocal move. Exact focus: When you fly, what kind of seat do you prefer, and why? | What kind of seat do you prefer?",
+      "tutorAction": "React naturally and give a real brief answer when asked back. Exact focus: When you fly, what kind of seat do you prefer, and why? | What kind of seat do you prefer?",
+      "targetOrPrompt": "When you fly, what kind of seat do you prefer, and why? | What kind of seat do you prefer?",
+      "learningTarget": "Perform the exact target or conversation move in context: When you fly, what kind of seat do you prefer, and why? | What kind of seat do you prefer?",
+      "pedagogicalValue": "The topic becomes reciprocal conversation rather than a forced drill. Reviewed focus: When you fly, what kind of seat do you prefer, and why? | What kind of seat do you prefer?",
+      "failureDiagnosis": "A one-sided or scripted exchange would fail the page. Checked page: p3-freetalk.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved p3-freetalk component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "When you fly, what kind of seat do you prefer, and why?",
+          "What kind of seat do you prefer?"
+        ]
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Compare both natural examples and match each to its situation. Exact focus: Native tip (ネイティブのひとこと) | “A window seat” names the type of seat. “By the window” describes its location. 「a window seat」は席の種類を表します。「by the window」は場所を表します。",
+      "tutorAction": "Have the learner read both and check only the stated contrast. Exact focus: Native tip (ネイティブのひとこと) | “A window seat” names the type of seat. “By the window” describes its location. 「a window seat」は席の種類を表します。「by the window」は場所を表します。",
+      "targetOrPrompt": "Native tip (ネイティブのひとこと) | “A window seat” names the type of seat. “By the window” describes its location. 「a window seat」は席の種類を表します。「by the window」は場所を表します。",
+      "learningTarget": "Perform the exact target or conversation move in context: Native tip (ネイティブのひとこと) | “A window seat” names the type of seat. “By the window” describes its location. 「a window seat」は席の種類を表します。「by the window」は場所を表します。",
+      "pedagogicalValue": "One immediately useful natural-speech distinction is added. Reviewed focus: Native tip (ネイティブのひとこと) | “A window seat” names the type of seat. “By the window” describes its location. 「a window seat」は席の種類を表します。「by the window」は場所を表します。",
+      "failureDiagnosis": "Repeating an old rule or declaring one natural option universally right would fail the page. Checked page: native-tip.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved native-tip component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "transfer-scene",
+      "learnerAction": "Act out the new setting and complete every learner line. Exact focus: At the train ticket counter (別の場面へ) | You're the passenger, and I'm the clerk. Use both requests and complete the ticket purchase. あなたは乗客、私は駅の係員です。二つの依頼表現を使って、切符の購入を完了しましょう。",
+      "tutorAction": "Take the named counterpart and continue only after each learner line. Exact focus: At the train ticket counter (別の場面へ) | You're the passenger, and I'm the clerk. Use both requests and complete the ticket purchase. あなたは乗客、私は駅の係員です。二つの依頼表現を使って、切符の購入を完了しましょう。",
+      "targetOrPrompt": "At the train ticket counter (別の場面へ) | You're the passenger, and I'm the clerk. Use both requests and complete the ticket purchase. あなたは乗客、私は駅の係員です。二つの依頼表現を使って、切符の購入を完了しましょう。",
+      "learningTarget": "Perform the exact target or conversation move in context: At the train ticket counter (別の場面へ) | You're the passenger, and I'm the clerk. Use both requests and complete the ticket purchase. あなたは乗客、私は駅の係員です。二つの依頼表現を使って、切符の購入を完了しましょう。",
+      "pedagogicalValue": "Both patterns transfer to a genuinely different setting. Reviewed focus: At the train ticket counter (別の場面へ) | You're the passenger, and I'm the clerk. Use both requests and complete the ticket purchase. あなたは乗客、私は駅の係員です。二つの依頼表現を使って、切符の購入を完了しましょう。",
+      "failureDiagnosis": "Repeating the original scene without transfer would fail the page. Checked page: transfer-scene.",
+      "nonTargetSupport": "Non-target language remains visible; declared support stage is not-applicable.",
+      "articleTreatment": "No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.",
+      "choiceQuality": "No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.",
+      "componentConsistency": "The approved transfer-scene component carries one visible job with no competing activity.",
+      "visual360": "pass",
+      "visual480": "pass",
+      "verdict": "pass",
+      "notes": "Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "We'd like",
+          "if possible",
+          "Could we have"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

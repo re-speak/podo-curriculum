@@ -1,0 +1,231 @@
+# Page review ledger
+
+- Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/27-a-restaurant-you-want-to-keep-to-yourself/lesson.html`
+- SHA-256: `601fd244a6b7b0fc64aedc9a529c08b13d46de46346491ea2c4fdbf4d40d9a99`
+- Generated: **pass**
+- Mechanical validation: **pass**
+- Human page audit: **pass**
+- Owner approval: **pending**
+
+A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
+
+## 1. `lesson-goal`
+
+- Learner action: Listen to the can-do, then read the exact lesson title “A restaurant you want to keep to yourself” aloud once.
+- Tutor action: Introduce the topic, ask the learner to read “A restaurant you want to keep to yourself” once, and move on.
+- Visible target or prompt: Let's introduce a favorite restaurant without losing what makes it special. Please read the title aloud. 特別さを守りながら、お気に入りの店について話しましょう。 タイトルを声に出して読んでください。
+- Learning target: Orient the learner to a live conversation about “A restaurant you want to keep to yourself” without previewing answers.
+- Pedagogical value: Sets one observable speaking outcome for “A restaurant you want to keep to yourself” and begins with a low-pressure title reading.
+- Failure diagnoses: Difficulty reading the title identifies a pronunciation support need; no topic knowledge is being tested.
+- Non-target support: The Japanese line directly mirrors the topic orientation and title-reading instruction.
+- Article treatment: Not applicable; this page establishes the discussion goal before the optional pre-study article.
+- Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
+- Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Generator-owned semantic inspection is complete; root visual inspection at 360px and 480px is still pending.
+
+## 2. `article`
+
+- Learner action: Ask any question left from pre-study; otherwise continue directly to the live discussion.
+- Tutor action: Answer a learner question briefly, or skip the article when there is no question or no pre-study.
+- Visible target or prompt: The problem with a hidden gem (隠れた名店を教える難しさ): Did you have any questions about the article? 記事について何か質問はありましたか？
+- Learning target: Use the ten-claim pre-study article to seed concrete language and viewpoints for “A restaurant you want to keep to yourself.”
+- Pedagogical value: The article moves from “A favorite restaurant can feel personal even though it is a public place.” to “The best recommendation tells the right person why the place suits them.,” giving the later prompt pool multiple defensible angles.
+- Failure diagnoses: No article question is not a failure; difficulty with the selective accessible glosses (word-of-mouth (口コミ), hidden gem (隠れた名店)) identifies a local vocabulary support need.
+- Non-target support: All ten claims have aligned Japanese support; the accessible article selectively glosses word-of-mouth (口コミ), hidden gem (隠れた名店).
+- Article treatment: Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.
+- Choice/distractor quality: Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.
+- Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending.
+
+## 3. `lesson-style`
+
+- Learner action: Choose Discussion first or Correction first for this conversation.
+- Tutor action: Honor the selected correction timing throughout the discussion.
+- Visible target or prompt: Please choose your preferred discussion style. 希望する会話の進め方を選んでください。
+- Learning target: Choose how fluency and correction will be balanced during the open discussion.
+- Pedagogical value: Makes the feedback contract explicit before the substantive conversation prompts begin.
+- Failure diagnoses: No language failure is diagnosed; the synchronized selection records a lesson preference.
+- Non-target support: Japanese option labels explain the two modes while tutor-only copy defines their operational difference.
+- Article treatment: The article has already been handled or skipped; this page controls discussion style only.
+- Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
+- Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending.
+
+## 4. `talk-intro`
+
+- Learner action: Listen to how the eight-question pool for “A restaurant you want to keep to yourself” will be used, then begin the conversation.
+- Tutor action: React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.
+- Visible target or prompt: We don't need to answer every question. Let's follow the most interesting parts of your answers. 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。
+- Learning target: Frame “A restaurant you want to keep to yourself” as reciprocal conversation rather than eight questions to complete in order.
+- Pedagogical value: Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.
+- Failure diagnoses: No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.
+- Non-target support: The Japanese line directly states that not every question is required and that interesting details should guide the talk.
+- Article treatment: Not applicable; this transition begins the live prompt pool after the article was handled or skipped.
+- Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
+- Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending.
+
+## 5. `warm-1`
+
+- Learner action: Respond aloud to “What restaurant—real or imagined—would you want to keep to yourself?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Which real or imagined restaurant comes closest?” rather than asking every follow-up.
+- Visible target or prompt: What restaurant—real or imagined—would you want to keep to yourself? 実在する店でも想像の店でも、秘密にしておきたいレストランはどんな店ですか？
+- Learning target: Explore the distinct “A place you protect (教えたくない店)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Which real or imagined restaurant comes closest?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Which real or imagined restaurant comes closest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What restaurant—real or imagined—would you want to keep to yourself?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “What would you want to protect about it?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What restaurant—real or imagined—would you want to keep to yourself?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 6. `warm-2`
+
+- Learner action: Respond aloud to “What is the restaurant like?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “What kind of food does it serve?” rather than asking every follow-up.
+- Visible target or prompt: What is the restaurant like? そのレストランはどんな店ですか？
+- Learning target: Explore the distinct “The kind of place (どんな店？)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “What kind of food does it serve?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “What kind of food does it serve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the restaurant like?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes the atmosphere feel special?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the restaurant like?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 7. `q1`
+
+- Learner action: Respond aloud to “Where would people find it?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “What is the area like?” rather than asking every follow-up.
+- Visible target or prompt: Where would people find it? その店はどこにありそうですか？
+- Learning target: Explore the distinct “Where it is (場所)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “What is the area like?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “What is the area like?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Where would people find it?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “How easy would it be to find?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where would people find it?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 8. `q2`
+
+- Learner action: Respond aloud to “What would you order there?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Why would that be your first choice?” rather than asking every follow-up.
+- Visible target or prompt: What would you order there? そこで何を注文したいですか？
+- Learning target: Explore the distinct “Your order (選びたい注文)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Why would that be your first choice?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Why would that be your first choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you order there?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “What else might be worth trying?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you order there?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 9. `q3`
+
+- Learner action: Respond aloud to “How might someone discover it?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “What would make someone return?” rather than asking every follow-up.
+- Visible target or prompt: How might someone discover it? その店は、どのように見つけられそうですか？
+- Learning target: Explore the distinct “How it is found (見つける方法)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “What would make someone return?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “What would make someone return?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How might someone discover it?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “Would they expect it to be good at first?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might someone discover it?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 10. `q4`
+
+- Learner action: Respond aloud to “Who would you take there first?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “How might they react?” rather than asking every follow-up.
+- Visible target or prompt: Who would you take there first? 最初に誰を連れて行きたいですか？
+- Learning target: Explore the distinct “Who you would take (連れて行きたい人)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “How might they react?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “How might they react?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who would you take there first?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “Would sharing it change the place for you?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would you take there first?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 11. `q5`
+
+- Learner action: Respond aloud to “What would change if the restaurant became popular?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Which change would bother you most?” rather than asking every follow-up.
+- Visible target or prompt: What would change if the restaurant became popular? そのレストランが人気になったら、何が変わると思いますか？
+- Learning target: Explore the distinct “If it became popular (人気になったら)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Which change would bother you most?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Which change would bother you most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would change if the restaurant became popular?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “What might improve for the owner?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would change if the restaurant became popular?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 12. `q6`
+
+- Learner action: Respond aloud to “What makes a restaurant worth keeping quiet?” and develop the most interesting concrete detail.
+- Tutor action: React or share briefly, then choose a relevant probe such as “Where is the line between sharing and protecting it?” rather than asking every follow-up.
+- Visible target or prompt: What makes a restaurant worth keeping quiet? どんなレストランなら、人に教えずにおきたくなりますか？
+- Learning target: Explore the distinct “Worth keeping quiet (秘密にする価値)” angle of “A restaurant you want to keep to yourself” through a specific example, reason, comparison, or position.
+- Pedagogical value: The main prompt opens one answerable conversational job; “Where is the line between sharing and protecting it?” adds a specific next layer without repeating it.
+- Failure diagnoses: If the answer remains vague after “Where is the line between sharing and protecting it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
+- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
+- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes a restaurant worth keeping quiet?” but is never required.
+- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make you recommend it widely?” opens a second nonduplicate conversational direction.
+- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a restaurant worth keeping quiet?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+
+## 13. `feedback`
+
+- Learner action: Listen to one specific strength and one next focus, then repeat one useful correction aloud.
+- Tutor action: Summarize evidence from the “A restaurant you want to keep to yourself” discussion and ask the learner to repeat one useful correction.
+- Visible target or prompt: Before we finish, here's one strength and one thing to focus on next. 最後に、よかった点を一つと、次に意識する点を一つ伝えます。
+- Learning target: Consolidate one successful speaking behavior and retrieve one corrected sentence before the lesson ends.
+- Pedagogical value: Turns the open conversation into actionable feedback without interrupting every answer or listing every error.
+- Failure diagnoses: A correction the learner cannot repeat identifies the single form or phrase that needs another model and retry.
+- Non-target support: The bilingual script explains the feedback move; tutor-only guidance limits feedback to evidence gathered in this session.
+- Article treatment: Not applicable; feedback is based on the live discussion, not article comprehension.
+- Choice/distractor quality: No choices or distractors appear; the page asks for one strength, one focus, and one useful re-say.
+- Component consistency: Reuses the approved Freetalking feedback component with separate strength, focus, and useful-correction fields.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
+- Visual QA: 360px **pass**; 480px **pass**
+- Verdict: **pass**
+- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending.

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/74-what-your-workday-actually-looks-like/lesson.html",
+  "lessonSha256": "b2e2af060f15022bdcafa3df4cbaba848a9464c20a7083712dd4a53c9966da8f",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Listen to the can-do, then read the exact lesson title “What your workday actually looks like” aloud once.",
+      "tutorAction": "Introduce the topic, ask the learner to read “What your workday actually looks like” once, and move on.",
+      "targetOrPrompt": "Let's uncover the visible and hidden work in a daily routine. Please read the title aloud. / 日々の中で見える仕事と見えない仕事について話しましょう。",
+      "learningTarget": "Orient the learner to a live conversation about “What your workday actually looks like” without previewing answers.",
+      "pedagogicalValue": "Sets one observable speaking outcome for “What your workday actually looks like” and begins with a low-pressure title reading.",
+      "failureDiagnosis": "Difficulty reading the title identifies a pronunciation-support need; no work history, salary, or private experience is being tested.",
+      "nonTargetSupport": "The Japanese line mirrors the can-do and title-reading instruction.",
+      "articleTreatment": "Not applicable; this page establishes the discussion goal before the optional pre-study article.",
+      "choiceQuality": "No choices or distractors appear; the page asks for one title reading and nothing else.",
+      "componentConsistency": "Uses the approved Freetalking goal component with no outcome rows or model answers.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "article",
+      "learnerAction": "Ask any question left from pre-study; otherwise continue directly to the live discussion.",
+      "tutorAction": "Answer a learner question briefly, or skip the article when there is no question or no pre-study.",
+      "targetOrPrompt": "The work behind the results (結果を支える仕事): Did you have any questions about the article? / 記事について何か質問はありましたか？",
+      "learningTarget": "Use the 10-claim pre-study article to seed concrete language and viewpoints for “What your workday actually looks like.”",
+      "pedagogicalValue": "The article develops ten distinct claims from “A carefully described two-hour window can expose the structure and interruptions of an ordinary routine.” to “A fuller account of labor may alter judgments about time, skill, staffing, and responsibility.”, giving the prompt pool several defensible angles.",
+      "failureDiagnosis": "No article question is not a failure; difficulty with a selectively glossed item identifies a local vocabulary-support need.",
+      "nonTargetSupport": "All ten claims have aligned full-specific Japanese support; selective owned glosses are: preventive=予防の.",
+      "articleTreatment": "Pre-study only: never read, skim, or catch up on the article during class; answer questions or skip it.",
+      "choiceQuality": "Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.",
+      "componentConsistency": "Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "lesson-style",
+      "learnerAction": "Choose Discussion first or Correction first for this conversation.",
+      "tutorAction": "Honor the selected correction timing throughout the discussion.",
+      "targetOrPrompt": "Please choose your preferred discussion style. / 希望する会話の進め方を選んでください。",
+      "learningTarget": "Choose how fluency and correction will be balanced during the open discussion.",
+      "pedagogicalValue": "Makes the feedback contract explicit before the substantive conversation prompts begin.",
+      "failureDiagnosis": "No language failure is diagnosed; the synchronized selection records a lesson preference.",
+      "nonTargetSupport": "Japanese option labels explain the two modes while tutor-only copy defines their operational difference.",
+      "articleTreatment": "The article has already been handled or skipped; this page controls discussion style only.",
+      "choiceQuality": "The two mutually exclusive choices produce meaningfully different tutor behavior.",
+      "componentConsistency": "Reuses the approved synchronized Freetalking discussion-style component and option order.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "talk-intro",
+      "learnerAction": "Listen to how the eight-question pool for “What your workday actually looks like” will be used, then begin the conversation.",
+      "tutorAction": "React or share briefly, follow interesting details, skip prompts freely, and reserve two to three minutes for feedback.",
+      "targetOrPrompt": "We don't need to answer every question. Let's follow the most interesting parts of your answers. / 全部の質問に答える必要はありません。答えの中でいちばん面白いところを広げていきましょう。",
+      "learningTarget": "Frame “What your workday actually looks like” as reciprocal conversation rather than eight questions to complete in order.",
+      "pedagogicalValue": "Protects depth and genuine tutor reciprocity by prioritizing interesting answers over page completion.",
+      "failureDiagnosis": "No language failure is tested; an interview-like checklist flow would show that the operating note was not followed.",
+      "nonTargetSupport": "The Japanese line states that not every question is required and that interesting details should guide the talk.",
+      "articleTreatment": "Not applicable; this transition begins the live prompt pool after the article was handled or skipped.",
+      "choiceQuality": "No choices or distractors appear; this is one concise operating transition.",
+      "componentConsistency": "Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "warm-1",
+      "learnerAction": "Respond aloud to “Choose any recent two-hour window. Which activities filled it?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which activity would have been visible to an observer?” rather than asking every follow-up.",
+      "targetOrPrompt": "Choose any recent two-hour window. Which activities filled it? / 最近の二時間を一つ選んでください。どんな活動がその時間を占めましたか？",
+      "learningTarget": "Explore the distinct “A two-hour window (二時間の様子)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which activity would have been visible to an observer?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which activity would have been visible to an observer?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Choose any recent two-hour window. Which activities filled it?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “What made that period typical or unusual?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Choose any recent two-hour window. Which activities filled it?"
+        ]
+      }
+    },
+    {
+      "pageId": "warm-2",
+      "learnerAction": "Respond aloud to “Which sequence best represents a typical two-hour period?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which activity normally determines the sequence?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which sequence best represents a typical two-hour period? / よくある二時間を最もよく表す活動の流れは何ですか？",
+      "learningTarget": "Explore the distinct “Walk through the period (時間の流れ)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which activity normally determines the sequence?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which activity normally determines the sequence?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which sequence best represents a typical two-hour period?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which interruption most often changes the plan?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which sequence best represents a typical two-hour period?"
+        ]
+      }
+    },
+    {
+      "pageId": "q1",
+      "learnerAction": "Respond aloud to “Which activity consumes the largest share of a typical routine?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Does the duration come from execution, waiting, verification, or coordination?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which activity consumes the largest share of a typical routine? / よくある日課の中で、最も大きな時間を占める活動は何ですか？",
+      "learningTarget": "Explore the distinct “What takes longest (最も時間がかかること)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Does the duration come from execution, waiting, verification, or coordination?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Does the duration come from execution, waiting, verification, or coordination?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which activity consumes the largest share of a typical routine?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Would the reason be visible to an outsider?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which activity consumes the largest share of a typical routine?"
+        ]
+      }
+    },
+    {
+      "pageId": "q2",
+      "learnerAction": "Respond aloud to “Which part of a routine is most likely to feel satisfying, frustrating, or neutral?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which feature of the activity produces that response?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which part of a routine is most likely to feel satisfying, frustrating, or neutral? / 日課のどの部分が、満足、不満、または無感情に感じられやすいですか？",
+      "learningTarget": "Explore the distinct “A part you value (大切に思う部分)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which feature of the activity produces that response?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which feature of the activity produces that response?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of a routine is most likely to feel satisfying, frustrating, or neutral?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Would a modest change alter the experience?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which part of a routine is most likely to feel satisfying, frustrating, or neutral?"
+        ]
+      }
+    },
+    {
+      "pageId": "q3",
+      "learnerAction": "Respond aloud to “Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which feature keeps the work out of view?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider? / 表に見えないところで、外の人が驚きそうな準備、検証、ケア、調整は何ですか？",
+      "learningTarget": "Explore the distinct “What would surprise an outsider (外からは意外なこと)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which feature keeps the work out of view?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which feature keeps the work out of view?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which problem does that hidden work prevent?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider?"
+        ]
+      }
+    },
+    {
+      "pageId": "q4",
+      "learnerAction": "Respond aloud to “How do ordinary work, study, or care routines evolve over time?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which activity or responsibility tends to shift most?” rather than asking every follow-up.",
+      "targetOrPrompt": "How do ordinary work, study, or care routines evolve over time? / 仕事、勉強、ケアの普通の日課は、時間とともにどう変化しますか？",
+      "learningTarget": "Explore the distinct “How the routine changed (変わった日課)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which activity or responsibility tends to shift most?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which activity or responsibility tends to shift most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do ordinary work, study, or care routines evolve over time?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which feature remains relatively stable?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How do ordinary work, study, or care routines evolve over time?"
+        ]
+      }
+    },
+    {
+      "pageId": "q5",
+      "learnerAction": "Respond aloud to “Which routine element should be removed, reduced, redesigned, or deliberately retained?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which outcome would improve?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which routine element should be removed, reduced, redesigned, or deliberately retained? / 日課のどの要素をなくす、減らす、設計し直す、または意識して残すべきですか？",
+      "learningTarget": "Explore the distinct “What to remove (減らしたいこと)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which outcome would improve?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Which outcome would improve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which routine element should be removed, reduced, redesigned, or deliberately retained?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which necessary function or protection already works?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which routine element should be removed, reduced, redesigned, or deliberately retained?"
+        ]
+      }
+    },
+    {
+      "pageId": "q6",
+      "learnerAction": "Respond aloud to “Which question would give an outsider a fairer account of the visible and hidden work in this routine?” and develop the most interesting concrete detail.",
+      "tutorAction": "React or share briefly, then choose a relevant probe such as “Whose perspective would be most informative?” rather than asking every follow-up.",
+      "targetOrPrompt": "Which question would give an outsider a fairer account of the visible and hidden work in this routine? / 外の人が、この日課の見える仕事と見えない仕事をより公平に理解するには、どんな質問が役立ちますか？",
+      "learningTarget": "Explore the distinct “See the whole day (一日全体を見る)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
+      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Whose perspective would be most informative?” adds a specific next layer without repeating it.",
+      "failureDiagnosis": "If the answer remains vague after “Whose perspective would be most informative?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
+      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
+      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which question would give an outsider a fairer account of the visible and hidden work in this routine?” but is never required.",
+      "choiceQuality": "There are no artificial distractors or forced frames; “Which mistaken assumption might the answer correct?” opens a second nonduplicate conversational direction.",
+      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Which question would give an outsider a fairer account of the visible and hidden work in this routine?"
+        ]
+      }
+    },
+    {
+      "pageId": "feedback",
+      "learnerAction": "Listen to one specific strength and one next step, then repeat one useful correction aloud.",
+      "tutorAction": "Type one good point and one actionable next step, then ask the learner to repeat the most useful correction.",
+      "targetOrPrompt": "Before we finish, here's one strength and one thing to focus on next. / 最後に、よかった点を一つと、次に意識する点を一つ伝えます。",
+      "learningTarget": "Consolidate one successful speaking behavior and one immediately reusable improvement from the conversation.",
+      "pedagogicalValue": "Turns the conversation into specific, actionable feedback and gives one corrected sentence an oral retrieval step.",
+      "failureDiagnosis": "Difficulty repeating the chosen correction identifies the single form or pronunciation point worth carrying forward.",
+      "nonTargetSupport": "The Japanese line explains the two-part feedback structure; the tutor types only the concise final feedback.",
+      "articleTreatment": "Not applicable; feedback is based on the live conversation rather than article recall.",
+      "choiceQuality": "No distractors appear; the tutor selects one genuine strength and one high-value next step.",
+      "componentConsistency": "Uses the approved synchronized tutor-feedback textarea and one-repeat closing instruction.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}

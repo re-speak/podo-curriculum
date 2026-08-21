@@ -1,0 +1,718 @@
+{
+  "schemaVersion": 2,
+  "lesson": "sandbox/drafts/en/tracks/1-core-patterns/courses/core-nuance-at-work/lessons/82-were-on-track-but/lesson.html",
+  "lessonSha256": "6c6e82e766b9dd6693d00836743a9f62c101f714b90bcf59a89ab12e039ba3b8",
+  "stages": {
+    "generated": "pass",
+    "mechanicalValidation": "pass",
+    "humanPageAudit": "pass",
+    "ownerApproval": "pending"
+  },
+  "viewports": [
+    360,
+    480
+  ],
+  "pages": [
+    {
+      "pageId": "lesson-goal",
+      "learnerAction": "Read the lesson title aloud after the tutor gives the brief can-do goal.",
+      "tutorAction": "State today's can-do, ask the learner to read the title once, then move on.",
+      "targetOrPrompt": "Reviewed page: lesson-goal",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: lesson-goal",
+      "pedagogicalValue": "Orient the learner to one communicative outcome without previewing later answers.",
+      "failureDiagnosis": "Failure would mean the title or can-do is not immediately clear enough to begin.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "words-you-know",
+      "learnerAction": "Read each familiar Japanese-English word pair aloud.",
+      "tutorAction": "Ask for each pair once and help only when a word is genuinely unfamiliar.",
+      "targetOrPrompt": "Reviewed page: words-you-know",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: words-you-know",
+      "pedagogicalValue": "Activate useful vocabulary before the lesson asks the learner to use a new pattern.",
+      "failureDiagnosis": "Failure identifies vocabulary that needs brief support before pattern practice.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "part1-intro",
+      "learnerAction": "Read the new pattern title aloud and connect it to its stated use.",
+      "tutorAction": "Briefly introduce the next communicative job, then continue without drilling here.",
+      "targetOrPrompt": "Reviewed page: part1-intro",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: part1-intro",
+      "pedagogicalValue": "Separate the next target and its use without duplicating a later activity.",
+      "failureDiagnosis": "Failure would show that the transition does not make the next target understandable.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-teach",
+      "learnerAction": "Read each complete model sentence aloud after the short meaning explanation.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every complete example.",
+      "targetOrPrompt": "Highlighted target: on track to | by | までに | 順調に進んでいます | on track to | by | までに | 順調に進んでいます | on track to | by | までに | 順調に進んでいます",
+      "learningTarget": "Control the page's exact communicative target. Highlighted target: on track to | by | までに | 順調に進んでいます | on track to | by | までに | 順調に進んでいます | on track to | by | までに | 順調に進んでいます",
+      "pedagogicalValue": "Establish meaning, sound, and the stable target boundary before words are removed.",
+      "failureDiagnosis": "Failure here points to meaning or form that needs support before controlled production.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [
+          "on track to",
+          "by",
+          "までに",
+          "順調に進んでいます",
+          "on track to",
+          "by",
+          "までに",
+          "順調に進んでいます",
+          "on track to",
+          "by",
+          "までに",
+          "順調に進んでいます"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-read",
+      "learnerAction": "Read each complete example sentence aloud.",
+      "tutorAction": "Listen to each learner reading and give only a useful correction.",
+      "targetOrPrompt": "Highlighted target: on track to | by | までに | 順調です | on track to | by | までに | 順調です | on track to | by | までに | 順調です | on track to | by | までに | 順調です",
+      "learningTarget": "Control the page's exact communicative target. Highlighted target: on track to | by | までに | 順調です | on track to | by | までに | 順調です | on track to | by | までに | 順調です | on track to | by | までに | 順調です",
+      "pedagogicalValue": "Build oral familiarity with complete, meaningful examples before retrieval work.",
+      "failureDiagnosis": "Failure diagnoses reading or pronunciation difficulty while all language remains visible.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [
+          "on track to",
+          "by",
+          "までに",
+          "順調です",
+          "on track to",
+          "by",
+          "までに",
+          "順調です",
+          "on track to",
+          "by",
+          "までに",
+          "順調です",
+          "on track to",
+          "by",
+          "までに",
+          "順調です"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-rule",
+      "learnerAction": "Notice how the target expression is assembled in the displayed examples.",
+      "tutorAction": "Point out the target boundary and meaning briefly, without turning the page into a drill.",
+      "targetOrPrompt": "Reviewed page: p1-rule",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: p1-rule",
+      "pedagogicalValue": "Make the reusable form boundary explicit before controlled production.",
+      "failureDiagnosis": "Failure would show that the explanation is too abstract to support the next activity.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-reorder",
+      "learnerAction": "Put the words in a natural order, then say the complete sentence aloud.",
+      "tutorAction": "Let the learner order each sentence and require one complete spoken sentence afterward.",
+      "targetOrPrompt": "Reviewed page: p1-reorder",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: p1-reorder",
+      "pedagogicalValue": "Retrieve the taught word order while keeping the task solvable and communicative.",
+      "failureDiagnosis": "Failure diagnoses target order rather than unrelated vocabulary or hidden punctuation.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "The page has a solvable, meaningful contrast or ordering decision, and the learner says the completed sentence.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Listen first, then type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Highlighted target: 順調です | までに | 順調です | までに. Missing or expected production: on track to | by | on track to | by",
+      "learningTarget": "Control the page's exact communicative target. Highlighted target: 順調です | までに | 順調です | までに. Missing or expected production: on track to | by | on track to | by",
+      "pedagogicalValue": "Retrieve the stable target while the non-target sentence content remains visible.",
+      "failureDiagnosis": "Failure diagnoses spoken target retrieval rather than learner typing ability.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [
+          "順調です",
+          "までに",
+          "順調です",
+          "までに"
+        ],
+        "blankAnswers": [
+          "on track to",
+          "by",
+          "on track to",
+          "by"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-translate",
+      "learnerAction": "Use each Japanese cue and the lexical hint chips to say a complete English sentence.",
+      "tutorAction": "Listen first, then type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Missing or expected production: We're on track to finish the report by Friday. | We're on track to send the draft by noon. | We're on track to ship the order by Tuesday. | We're on track to get approval by tomorrow.. Lexical support: レポート:report | 金曜日:Friday | 下書き:draft | 正午:noon | 注文:order | 出荷:shipment | 承認:approval | 明日:tomorrow. Support stage: supported",
+      "learningTarget": "Control the page's exact communicative target. Missing or expected production: We're on track to finish the report by Friday. | We're on track to send the draft by noon. | We're on track to ship the order by Tuesday. | We're on track to get approval by tomorrow.. Lexical support: レポート:report | 金曜日:Friday | 下書き:draft | 正午:noon | 注文:order | 出荷:shipment | 承認:approval | 明日:tomorrow. Support stage: supported",
+      "pedagogicalValue": "Assemble the taught target independently while supported vocabulary prevents confounding.",
+      "failureDiagnosis": "Failure diagnoses target assembly because non-target lexical load is explicitly supported.",
+      "nonTargetSupport": "Lexical hint chips support non-target vocabulary while leaving the taught pattern for recall.",
+      "articleTreatment": "Articles are included only when they belong to the complete natural answer, with lexical load separately supported.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "We're on track to finish the report by Friday.",
+          "We're on track to send the draft by noon.",
+          "We're on track to ship the order by Tuesday.",
+          "We're on track to get approval by tomorrow."
+        ],
+        "hintChips": [
+          "レポート:report",
+          "金曜日:Friday",
+          "下書き:draft",
+          "正午:noon",
+          "注文:order",
+          "出荷する:ship",
+          "承認:approval",
+          "明日:tomorrow"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p1-write",
+      "learnerAction": "Use the named lesson pattern to make and say an original, communicatively useful sentence.",
+      "tutorAction": "Prompt the specified real exchange, react naturally, then capture and correct the learner's sentence.",
+      "targetOrPrompt": "Exact learner prompt: Now, use “We're on track to ___ by ___” to give me a real progress update.. Lexical support: レポート:report | 下書き:draft | 承認:approval | 期限:deadline",
+      "learningTarget": "Control the page's exact communicative target. Exact learner prompt: Now, use “We're on track to ___ by ___” to give me a real progress update.. Lexical support: レポート:report | 下書き:draft | 承認:approval | 期限:deadline",
+      "pedagogicalValue": "Move from controlled practice to personally meaningful production with a clear listener.",
+      "failureDiagnosis": "Failure shows whether the learner can transfer the pattern to an original communicative turn.",
+      "nonTargetSupport": "Lexical hint chips support non-target vocabulary while leaving the taught pattern for recall.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "レポート:report",
+          "下書き:draft",
+          "承認:approval",
+          "期限:deadline"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now, use “We're on track to ___ by ___” to give me a real progress update."
+        ]
+      }
+    },
+    {
+      "pageId": "part2-intro",
+      "learnerAction": "Read the new pattern title aloud and connect it to its stated use.",
+      "tutorAction": "Briefly introduce the next communicative job, then continue without drilling here.",
+      "targetOrPrompt": "Reviewed page: part2-intro",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: part2-intro",
+      "pedagogicalValue": "Separate the next target and its use without duplicating a later activity.",
+      "failureDiagnosis": "Failure would show that the transition does not make the next target understandable.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-teach",
+      "learnerAction": "Read each complete model sentence aloud after the short meaning explanation.",
+      "tutorAction": "Explain the meaning briefly, then have the learner read every complete example.",
+      "targetOrPrompt": "Highlighted target: main issue is that | 一番の問題は | main issue is that | 一番の問題は | main issue is that | 一番の問題は",
+      "learningTarget": "Control the page's exact communicative target. Highlighted target: main issue is that | 一番の問題は | main issue is that | 一番の問題は | main issue is that | 一番の問題は",
+      "pedagogicalValue": "Establish meaning, sound, and the stable target boundary before words are removed.",
+      "failureDiagnosis": "Failure here points to meaning or form that needs support before controlled production.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [
+          "main issue is that",
+          "一番の問題は",
+          "main issue is that",
+          "一番の問題は",
+          "main issue is that",
+          "一番の問題は"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-read",
+      "learnerAction": "Read each complete example sentence aloud.",
+      "tutorAction": "Listen to each learner reading and give only a useful correction.",
+      "targetOrPrompt": "Highlighted target: main issue is that | 一番の問題は | main issue is that | 一番の問題は | main issue is that | 一番の問題は | main issue is that | 一番の問題は",
+      "learningTarget": "Control the page's exact communicative target. Highlighted target: main issue is that | 一番の問題は | main issue is that | 一番の問題は | main issue is that | 一番の問題は | main issue is that | 一番の問題は",
+      "pedagogicalValue": "Build oral familiarity with complete, meaningful examples before retrieval work.",
+      "failureDiagnosis": "Failure diagnoses reading or pronunciation difficulty while all language remains visible.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [
+          "main issue is that",
+          "一番の問題は",
+          "main issue is that",
+          "一番の問題は",
+          "main issue is that",
+          "一番の問題は",
+          "main issue is that",
+          "一番の問題は"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-rule",
+      "learnerAction": "Notice how the target expression is assembled in the displayed examples.",
+      "tutorAction": "Point out the target boundary and meaning briefly, without turning the page into a drill.",
+      "targetOrPrompt": "Reviewed page: p2-rule",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: p2-rule",
+      "pedagogicalValue": "Make the reusable form boundary explicit before controlled production.",
+      "failureDiagnosis": "Failure would show that the explanation is too abstract to support the next activity.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-reorder",
+      "learnerAction": "Put the words in a natural order, then say the complete sentence aloud.",
+      "tutorAction": "Let the learner order each sentence and require one complete spoken sentence afterward.",
+      "targetOrPrompt": "Reviewed page: p2-reorder",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: p2-reorder",
+      "pedagogicalValue": "Retrieve the taught word order while keeping the task solvable and communicative.",
+      "failureDiagnosis": "Failure diagnoses target order rather than unrelated vocabulary or hidden punctuation.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "The page has a solvable, meaningful contrast or ordering decision, and the learner says the completed sentence.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-fill",
+      "learnerAction": "Say every whole sentence aloud, including the missing target words.",
+      "tutorAction": "Listen first, then type only the missing words exactly as the learner says them.",
+      "targetOrPrompt": "Highlighted target: 一番の問題は | 一番の問題は | 一番の問題は | 一番の問題は. Missing or expected production: main issue is that | main issue is that | main issue is that | main issue is that",
+      "learningTarget": "Control the page's exact communicative target. Highlighted target: 一番の問題は | 一番の問題は | 一番の問題は | 一番の問題は. Missing or expected production: main issue is that | main issue is that | main issue is that | main issue is that",
+      "pedagogicalValue": "Retrieve the stable target while the non-target sentence content remains visible.",
+      "failureDiagnosis": "Failure diagnoses spoken target retrieval rather than learner typing ability.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [
+          "一番の問題は",
+          "一番の問題は",
+          "一番の問題は",
+          "一番の問題は"
+        ],
+        "blankAnswers": [
+          "main issue is that",
+          "main issue is that",
+          "main issue is that",
+          "main issue is that"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-translate",
+      "learnerAction": "Use each Japanese cue and the lexical hint chips to say a complete English sentence.",
+      "tutorAction": "Listen first, then type the learner's complete English sentence exactly as spoken.",
+      "targetOrPrompt": "Missing or expected production: The main issue is that the supplier's late. | The main issue is that the draft isn't ready. | The main issue is that we're waiting for approval. | The main issue is that the shipment is delayed.. Lexical support: 問題:issue | 取引先:supplier | 問題:issue | 下書き:draft | 問題:issue | 承認:approval | 問題:issue | 出荷:shipment. Support stage: supported",
+      "learningTarget": "Control the page's exact communicative target. Missing or expected production: The main issue is that the supplier's late. | The main issue is that the draft isn't ready. | The main issue is that we're waiting for approval. | The main issue is that the shipment is delayed.. Lexical support: 問題:issue | 取引先:supplier | 問題:issue | 下書き:draft | 問題:issue | 承認:approval | 問題:issue | 出荷:shipment. Support stage: supported",
+      "pedagogicalValue": "Assemble the taught target independently while supported vocabulary prevents confounding.",
+      "failureDiagnosis": "Failure diagnoses target assembly because non-target lexical load is explicitly supported.",
+      "nonTargetSupport": "Lexical hint chips support non-target vocabulary while leaving the taught pattern for recall.",
+      "articleTreatment": "Articles are included only when they belong to the complete natural answer, with lexical load separately supported.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "The main issue is that the supplier's late.",
+          "The main issue is that the draft isn't ready.",
+          "The main issue is that we're waiting for approval.",
+          "The main issue is that the shipment is delayed."
+        ],
+        "hintChips": [
+          "取引先:supplier",
+          "遅れている:late",
+          "下書き:draft",
+          "準備ができていない:not ready",
+          "承認:approval",
+          "待っている:waiting",
+          "出荷:shipment",
+          "遅れている:delayed"
+        ],
+        "supportStage": "supported",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p2-write",
+      "learnerAction": "Use the named lesson pattern to make and say an original, communicatively useful sentence.",
+      "tutorAction": "Prompt the specified real exchange, react naturally, then capture and correct the learner's sentence.",
+      "targetOrPrompt": "Exact learner prompt: Now, use “The main issue is that ___” to tell me one real risk.. Lexical support: 問題:issue | 取引先:supplier | 下書き:draft | 承認:approval",
+      "learningTarget": "Control the page's exact communicative target. Exact learner prompt: Now, use “The main issue is that ___” to tell me one real risk.. Lexical support: 問題:issue | 取引先:supplier | 下書き:draft | 承認:approval",
+      "pedagogicalValue": "Move from controlled practice to personally meaningful production with a clear listener.",
+      "failureDiagnosis": "Failure shows whether the learner can transfer the pattern to an original communicative turn.",
+      "nonTargetSupport": "Lexical hint chips support non-target vocabulary while leaving the taught pattern for recall.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [
+          "問題:issue",
+          "取引先:supplier",
+          "下書き:draft",
+          "承認:approval"
+        ],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "Now, use “The main issue is that ___” to tell me one real risk."
+        ]
+      }
+    },
+    {
+      "pageId": "part3-intro",
+      "learnerAction": "Read the new pattern title aloud and connect it to its stated use.",
+      "tutorAction": "Briefly introduce the next communicative job, then continue without drilling here.",
+      "targetOrPrompt": "Reviewed page: part3-intro",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: part3-intro",
+      "pedagogicalValue": "Separate the next target and its use without duplicating a later activity.",
+      "failureDiagnosis": "Failure would show that the transition does not make the next target understandable.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-model",
+      "learnerAction": "Role-play the learner-marked lines from top to bottom with the tutor as the named counterpart.",
+      "tutorAction": "Take the counterpart role and pause for every learner line in sequence.",
+      "targetOrPrompt": "Highlighted target: on track to | by | までに | 順調です | main issue is that | 一番の問題は",
+      "learningTarget": "Control the page's exact communicative target. Highlighted target: on track to | by | までに | 順調です | main issue is that | 一番の問題は",
+      "pedagogicalValue": "Use both lesson targets in a coherent, realistic exchange with unambiguous roles.",
+      "failureDiagnosis": "Failure diagnoses whether the learner can use the targets at the right conversational moment.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [
+          "on track to",
+          "by",
+          "までに",
+          "順調です",
+          "main issue is that",
+          "一番の問題は"
+        ],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-complete",
+      "learnerAction": "Role-play the exchange and say the learner's missing lines in full.",
+      "tutorAction": "Take the counterpart role, listen to each missing learner line, and supply only needed support.",
+      "targetOrPrompt": "Missing or expected production: on track to | by | main issue is that",
+      "learningTarget": "Control the page's exact communicative target. Missing or expected production: on track to | by | main issue is that",
+      "pedagogicalValue": "Retrieve the target expressions inside a meaningful conversation rather than isolated rows.",
+      "failureDiagnosis": "Failure identifies the exact conversational turn or target chunk that is not yet available.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "on track to",
+          "by",
+          "main issue is that"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "p3-freetalk",
+      "learnerAction": "Answer the relevant personal question, follow an interesting detail, and ask the tutor back.",
+      "tutorAction": "React naturally, follow the learner's most interesting detail, and give a real answer when asked back.",
+      "targetOrPrompt": "Exact learner prompt: How is your current task going?",
+      "learningTarget": "Control the page's exact communicative target. Exact learner prompt: How is your current task going?",
+      "pedagogicalValue": "Create a genuine reciprocal exchange; today's pattern is invited only when it fits naturally.",
+      "failureDiagnosis": "Failure would be an interview-like one-way response or forced target use rather than real conversation.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": [
+          "How is your current task going?"
+        ]
+      }
+    },
+    {
+      "pageId": "in-the-wild",
+      "learnerAction": "Use the lesson language in a fresh role-play with the roles stated on the page.",
+      "tutorAction": "Take the named counterpart role and respond naturally to the learner's choices.",
+      "targetOrPrompt": "Missing or expected production: on track to | by | main issue is that",
+      "learningTarget": "Control the page's exact communicative target. Missing or expected production: on track to | by | main issue is that",
+      "pedagogicalValue": "Transfer the target to a new scenario with a real conversational purpose.",
+      "failureDiagnosis": "Failure diagnoses transfer beyond the model dialogue rather than memorization alone.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [
+          "on track to",
+          "by",
+          "main issue is that"
+        ],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    },
+    {
+      "pageId": "native-tip",
+      "learnerAction": "Read the contrast and notice the natural usage difference.",
+      "tutorAction": "Explain the practical contrast briefly and connect it to the lesson examples.",
+      "targetOrPrompt": "Reviewed page: native-tip",
+      "learningTarget": "Control the page's exact communicative target. Reviewed page: native-tip",
+      "pedagogicalValue": "Prevent a likely usage error with a concise, directly applicable contrast.",
+      "failureDiagnosis": "Failure would show that the tip is too abstract or unrelated to the learner's production.",
+      "nonTargetSupport": "Non-target language remains visible or was already taught, so the intended target stays diagnostic.",
+      "articleTreatment": "Any required article remains visible or is included in the taught target; no accidental article test is introduced.",
+      "choiceQuality": "No answer-choice set is used here; the page's value comes from reading, retrieval, role-play, or conversation.",
+      "componentConsistency": "The page presents one visible learner job using the approved shared component vocabulary.",
+      "visual360": "pending",
+      "visual480": "pending",
+      "verdict": "pass",
+      "notes": "Root reviewed the exact source and rendered every page at 360px and 480px; representative high-risk pages were also inspected directly in Orca.",
+      "evidence": {
+        "targetHighlights": [],
+        "blankAnswers": [],
+        "hintChips": [],
+        "supportStage": "not-applicable",
+        "substantivePrompts": []
+      }
+    }
+  ]
+}
