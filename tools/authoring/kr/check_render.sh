@@ -2,6 +2,9 @@
 # Render check for newly written decks: worst intrinsic page height, stray
 # .yomi (a reading in a container the stylesheet never declares a rule for),
 # and horizontal overflow inside the 480px .phone.
+# 리포 루트로 올라간다. 이 파일은 tools/authoring/kr/ 에 있으므로 세 단계다 —
+# 파이썬 형제들이 쓰는 parents[3] 과 같은 자리다. 두 단계면 tools/ 에서 멈춰
+# 덱 경로가 tools/sandbox/... 로 만들어지고, 어떤 덱도 찾지 못한다.
 cd "$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 READY='(() => document.fonts.status)()'
 P='(() => {
