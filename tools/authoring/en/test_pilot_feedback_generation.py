@@ -49,7 +49,7 @@ class PilotFeedbackGenerationTests(unittest.TestCase):
                 )
                 self.assertEqual(issues, [], f"{path.stem} {identity}")
 
-        self.assertEqual(generated, 411)
+        self.assertEqual(generated, 408)
 
     def test_core_13_keeps_real_choice_value_and_visible_open_frames(self):
         core = importlib.import_module("generate_core_course_batch")

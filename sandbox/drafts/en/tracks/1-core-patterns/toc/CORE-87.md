@@ -20,7 +20,7 @@
 ### Pattern 1
 
 - **Model:** It's slightly more expensive.
-- **Frame:** `It's slightly more ___.`
+- **Frame:** `It's slightly ___er / slightly more ___.`
 
 ### Pattern 2
 

@@ -127,9 +127,9 @@ LESSONS = {
         ),
         p2=rows(
             ("It's {t}more complicated than that{/t}.", "実際は{t}それほど単純ではありません{/t}。", "It's|more|complicated|than that."),
+            ("It's {t}less clear-cut than that{/t}.", "実際は{t}それほど割り切れません{/t}。", "It's|less|clear-cut|than that."),
             ("It's {t}more expensive than that{/t}.", "実際は{t}それより費用がかかります{/t}。", "It's|more|expensive|than that."),
-            ("It's {t}more uncertain than that{/t}.", "実際は{t}それより不確かです{/t}。", "It's|more|uncertain|than that."),
-            ("It's {t}more flexible than that{/t}.", "実際は{t}それより柔軟です{/t}。", "It's|more|flexible|than that."),
+            ("It's {t}a bit more nuanced than that{/t}.", "実際は{t}それより少し込み入っています{/t}。", "It's|a bit more|nuanced|than that."),
         ),
         rules=(("Use plural ones to replace a repeated plural noun after the contrast.", "対比の後半で同じ複数名詞を繰り返さないときは、複数形 ones を使います。"),
                ("Put more before the adjective and than that after it to reject an oversimplified description.", "単純化された説明を修正するときは、形容詞の前に more、後ろに than that を置きます。")),
@@ -283,15 +283,15 @@ LESSONS = {
         goal=("Reject an oversimplified framing and replace it with the question that matters.", "単純化された枠組みを退け、本当に重要な問いに置き換えましょう。"),
         p1=rows(
             ("{t}It's not that{/t} simple, {t}though{/t}.", "{t}ただ{/t}、{t}それほど単純ではありません{/t}。", "It's|not that simple,|though."),
-            ("{t}It's not that{/t} clear, {t}though{/t}.", "{t}ただ{/t}、{t}それほど明確ではありません{/t}。", "It's|not that clear,|though."),
+            ("{t}It's not quite that{/t} clear, {t}though{/t}.", "{t}ただ{/t}、{t}それほど明確とは言えません{/t}。", "It's|not quite that clear,|though."),
             ("{t}It's not that{/t} easy, {t}though{/t}.", "{t}ただ{/t}、{t}それほど簡単ではありません{/t}。", "It's|not that easy,|though."),
-            ("{t}It's not that{/t} straightforward, {t}though{/t}.", "{t}ただ{/t}、{t}それほど単純明快ではありません{/t}。", "It's|not that straightforward,|though."),
+            ("{t}It's not always that{/t} straightforward, {t}though{/t}.", "{t}ただ{/t}、{t}いつもそれほど単純明快とは限りません{/t}。", "It's|not always that straightforward,|though."),
         ),
         p2=rows(
             ("{t}That's not really{/t} the question.", "それは{t}本当に問うべきことではありません{/t}。", "That's|not really|the question."),
+            ("{t}That's not really{/t} what I meant.", "それは{t}私が言いたかったことではありません{/t}。", "That's|not really|what I meant."),
             ("{t}That's not really{/t} the issue.", "それは{t}本当の論点ではありません{/t}。", "That's|not really|the issue."),
-            ("{t}That's not really{/t} the choice.", "それは{t}本当の選択肢ではありません{/t}。", "That's|not really|the choice."),
-            ("{t}That's not really{/t} the problem.", "それは{t}本当の問題ではありません{/t}。", "That's|not really|the problem."),
+            ("{t}That's not really{/t} how I'd put it.", "それは{t}私ならそうは言いません{/t}。", "That's|not really|how I'd put it."),
         ),
         rules=(("In It's not that plus an adjective, that points back to the listener's description; final though softens the correction.", "It's not that＋形容詞の that は相手の説明を指し、文末の though が修正を和らげます。"),
                ("Use not really before the noun to reject the proposed frame rather than answer inside it.", "提示された枠組みの中で答えずに退けるときは、名詞の前に not really を置きます。")),
@@ -508,7 +508,7 @@ SPECS = {
 # CORE-92--112 owners are intentionally not cited until their stable maps land.
 VOCAB = {
     113: dict(new="ownership|担当の明確さ; priorities|優先事項; symptomatic|表れである", recycled="delivery|配達|CORE-77; scope|範囲|CORE-84", assumed="issue|問題; problem|問題; project|企画; communication|意思疎通; decisions|意思決定; planning|計画; unclear ownership|担当が不明確; conflicting priorities|優先事項の衝突; weak planning|計画不足; poor communication|意思疎通不足; unclear priorities|優先事項が不明確; a bigger problem|より大きな問題", receptive="at root|根本では; the bigger picture|全体像; symptom|兆候"),
-    114: dict(new="complicated|複雑な; uncertain|不確かな; flexible|柔軟な; rural|地方の; experienced|経験のある", recycled="expensive|高い|CORE-19", assumed="large|大きい; small|小さい; team|チーム; large teams|大きなチーム; small teams|小さなチーム; user|利用者; new users|新しい利用者; experienced users|経験のある利用者; project|企画; city offices|都市のオフィス; rural offices|地方のオフィス; short projects|短期の企画; long projects|長期の企画", receptive="broadly speaking|大まかに言えば; with some caveats|いくつか条件付きで"),
+    114: dict(new="complicated|複雑な; clear-cut|割り切れる; nuanced|込み入った; uncertain|不確かな; flexible|柔軟な; rural|地方の; experienced|経験のある", recycled="expensive|高い|CORE-19", assumed="large|大きい; small|小さい; team|チーム; large teams|大きなチーム; small teams|小さなチーム; user|利用者; new users|新しい利用者; experienced users|経験のある利用者; project|企画; city offices|都市のオフィス; rural offices|地方のオフィス; short projects|短期の企画; long projects|長期の企画", receptive="broadly speaking|大まかに言えば; with some caveats|いくつか条件付きで"),
     115: dict(new="capacity|対応力; risk|リスク; delivery risk|納品リスク", recycled="timing|タイミング|CORE-85; data|データ|CORE-85; delivery|配達|CORE-77; supplier|取引先|CORE-82; schedule|予定|CORE-67", assumed="cost|費用; record|記録; staff capacity|スタッフの対応力; reduce the risk|リスクを下げる; check the data|データを確認する; compare the suppliers|取引先を比較する; review the schedule|日程を見直す", receptive="factor|要因; the problem is|問題は; that still leaves|それでも残る"),
     116: dict(new="demand|需要; workload|作業量; doubled|2倍になった; got worse|悪化した; response time|応答時間; response times|応答時間", recycled="reliable|信頼できる|CORE-56", assumed="cost|費用; delay|遅れ; delays|遅れ; opposite|逆; available|対応できる; it's got worse|悪化している; it's become less reliable|信頼性が下がった; delays have increased|遅れが増えた; the workload has doubled|作業量が2倍になった; demand has gone up|需要が増えた; costs have gone up|費用が増えた; response times have increased|応答時間が延びた; fewer people are available|対応できる人が減った", receptive="far from it|とんでもない; not at all|まったく違う"),
     117: dict(new="worth it|価値がある; practical|現実的な; reliability|信頼性; long-term value|長期的な価値", recycled="timing|タイミング|CORE-85; reliable|信頼できる|CORE-56", assumed="cost|費用; costs too much|費用が高すぎる; plan|案; change|変更; decision|判断; it's worth it|価値がある; the plan is practical|案は現実的; the change has helped|変更は役立った; it costs too much|費用が高すぎる; the cost|費用; the timing|時期", receptive="all in all|総合すると; at the end of the day|結局のところ"),
@@ -516,7 +516,7 @@ VOCAB = {
     119: dict(new="disagreed|意見が合わなかった; disappointing|残念な; discussion|話し合い", recycled="timing|タイミング|CORE-85", assumed="meeting|会議; project|企画; result|結果; experience|経験; difficult|大変な; disagree|意見が合わない; not go well|うまくいかない; it didn't go well|うまくいかなかった; the meeting was difficult|会議は大変だった; we didn't agree|意見が合わなかった; the result was disappointing|結果は残念だった; we disagreed|意見が合わなかった; the timing was wrong|時期が悪かった; the project needs more work|企画にはさらに作業が必要; the discussion ended early|話し合いが早く終わった", receptive="deliberately|意図的に; enough said|これで十分; read into that what you will|あとはご想像にお任せします; infer|察する"),
     120: dict(new="quote|見積もり", recycled="manager|上司|CORE-54; schedule|予定|CORE-67; figures|数字|CORE-108", assumed="ask|聞く; check|確認する; review|見直す; save|保存する; wait|待つ; copy|コピー; number|数字; file name|ファイル名; suggestion|提案; check that again|もう一度確認する; review the numbers|数字を見直す; save a copy|コピーを保存する; ask the manager|上司に聞く; asking her|彼女に聞く; checking the schedule|日程を確認する; getting another quote|別の見積もりを取る; checking the file name|ファイル名を確認する", receptive="reread|読み直す; overwrite|上書きする; no pressure|無理にとは言いません; up to you, of course|もちろん判断はお任せします; directive|指示; optional|任意の"),
     121: dict(new="details|詳細; topic|話題", recycled="prefer|〜のほうが好き|CORE-42; complaint|苦情|CORE-89; another time|別の機会|CORE-97", assumed="reason|理由; reasons|理由; decision|判断; situation|事情; what happened|何があったか; next step|次の段階; for now|今は; the details|詳細; the reasons|理由; the complaint|苦情; this topic|この話; the decision|その判断; the next step|次の段階; the contract discussion|契約の話", receptive="boundary|境界; long story|長い話; another time, maybe|また今度にしましょう; postpone|保留する"),
-    122: dict(new="straightforward|単純明快な; framing|枠組み", recycled="issue|問題|CORE-82; the real question is|本当の問題は|CORE-103", assumed="question|問い; simple|単純な; clear|明確な; easy|簡単な; choice|選択; problem|問題; change|変化; what changed|何が変わったか; which option solves the problem|どの案が問題を解決するか; who benefits|誰に役立つか; what the evidence shows|事実が何を示すか; it's good overall|全体としてよい; it's bad overall|全体として悪い; it's clear|明確だ; it's unclear|不明確だ", receptive="premise|前提; it depends what you mean by|何を意味するかによる; let me back up|少し話を戻します"),
+    122: dict(new="straightforward|単純明快な; framing|枠組み", recycled="issue|問題|CORE-82; the real question is|本当の問題は|CORE-103", assumed="question|問い; simple|単純な; clear|明確な; easy|簡単な; what i meant|言いたかったこと; how i'd put it|私ならこう言う; choice|選択; problem|問題; change|変化; what changed|何が変わったか; which option solves the problem|どの案が問題を解決するか; who benefits|誰に役立つか; what the evidence shows|事実が何を示すか; it's good overall|全体としてよい; it's bad overall|全体として悪い; it's clear|明確だ; it's unclear|不明確だ", receptive="premise|前提; it depends what you mean by|何を意味するかによる; let me back up|少し話を戻します"),
 }
 
 
@@ -536,7 +536,7 @@ KNOWN_WORDS = {
 
 TRANSLATE_HINTS = {
     113: (("範囲を決める:scope", "担当:ownership", "意思決定:decisions", "優先事項:priorities"), ("問題:problem", "意思疎通:communication", "優先事項:priorities", "計画:planning")),
-    114: (("チーム:team", "利用者:user", "地方の:rural", "企画:project"), ("複雑な:complicated", "高い:expensive", "不確かな:uncertain", "柔軟な:flexible")),
+    114: (("チーム:team", "利用者:user", "地方の:rural", "企画:project"), ("複雑な:complicated", "割り切れる:clear-cut", "高い:expensive", "込み入った:nuanced")),
     115: (("費用:cost", "時期:timing", "対応力:capacity", "納品リスク:delivery risk"), ("リスク:risk", "データ:data", "取引先:supplier", "日程:schedule")),
     116: (("悪化した:got worse", "信頼できる:reliable", "遅れ:delay", "作業量:workload"), ("需要:demand", "費用:cost", "応答時間:response time", "対応できる:available")),
     117: (("価値がある:worth it", "現実的な:practical", "変更:change", "費用:cost"), ("費用:cost", "時期:timing", "信頼性:reliability", "長期的な価値:long-term value")),
@@ -544,7 +544,7 @@ TRANSLATE_HINTS = {
     119: (("うまくいかない:not go well", "大変な:difficult", "意見が合わない:disagree", "残念な:disappointing"), ("意見が合わない:disagree", "時期:timing", "企画:project", "話し合い:discussion")),
     120: (("確認する:check", "見直す:review", "保存する:save", "上司:manager"), ("聞く:ask", "日程:schedule", "見積もり:quote", "ファイル名:file name")),
     121: (("詳細:details", "理由:reason", "苦情:complaint", "何があったか:what happened"), ("今は:for now", "話題:topic", "判断:decision", "次の段階:next step")),
-    122: (("単純な:simple", "明確な:clear", "簡単な:easy", "単純明快な:straightforward"), ("問い:question", "論点:issue", "選択:choice", "問題:problem")),
+    122: (("単純な:simple", "明確な:clear", "簡単な:easy", "単純明快な:straightforward"), ("問い:question", "言いたかったこと:what i meant", "論点:issue", "私ならこう言う:how i'd put it")),
 }
 
 
@@ -558,7 +558,7 @@ OPEN_MENUS = {
     119: (("うまくいかない:not go well", "大変な:difficult", "意見が合わない:disagree"), ("時期:timing", "企画:project", "話し合い:discussion")),
     120: (("確認する:check", "見直す:review", "保存する:save", "上司:manager"), ("聞く:ask", "日程:schedule", "見積もり:quote", "ファイル名:file name")),
     121: (("詳細:details", "理由:reasons", "苦情:complaint", "何があったか:what happened"), ("話題:topic", "判断:decision", "次の段階:next step")),
-    122: (("単純な:simple", "明確な:clear", "簡単な:easy", "単純明快な:straightforward"), ("問い:question", "論点:issue", "選択:choice", "問題:problem")),
+    122: (("単純な:simple", "明確な:clear", "簡単な:easy", "単純明快な:straightforward"), ("問い:question", "言いたかったこと:what i meant", "論点:issue", "私ならこう言う:how i'd put it")),
 }
 
 

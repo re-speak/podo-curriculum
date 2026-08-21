@@ -8,7 +8,7 @@
 
 - **Track:** `1-core-patterns`
 - **Stable review id:** `CORE-7`
-- **Level:** Pre-A1 → A1
+- **Level:** A1
 
 ## Outcome
 
@@ -20,7 +20,7 @@
 ### Pattern 1
 
 - **Model:** There's a café near here.
-- **Frame:** `There's a ___ near here.`
+- **Frame:** `There's a/an ___ near here.`
 
 ### Pattern 2
 
@@ -36,12 +36,13 @@
 ## Planned spiral review
 
 - **PREP-01 · controlled:** store prepositions with their noun or verb
+- **BEQ-01 · recognition:** invert `be` in questions and repeat it in short answers
 
 ## Sequence guardrails
 
 - **Already learned:** Core 1–6.
 - **Not yet:** Core 8–122. Do not use their forms in learner-produced language.
-- **Most recent available forms:** CORE-4 This is my friend, Leo · CORE-5 Is this your bag? · CORE-6 Are you a student?
+- **Most recent available forms:** CORE-1 I'm Mina · CORE-2 I'm from Osaka · CORE-3 Is this yours?
 - **Nearest protected forms:** CORE-8 It's cold today · CORE-9 Two coffees, please · CORE-10 The café on the corner
 - The readiness gate applies to the complete learner-produced model, including every fixed word.
 - Apart from this lesson's two taught patterns, productive grammar must come from earlier Core lessons.
@@ -51,7 +52,7 @@
 
 ## Neighbouring items
 
-- **Previous:** CORE-6 · Are you a student?
+- **Previous:** CORE-3 · Is this yours?
 - **Next:** CORE-8 · It's cold today
 
 ## Authoring inputs — read in order

@@ -23,7 +23,7 @@ class CorePlansAndComparisonBatchTests(unittest.TestCase):
         preserved = batch.TRACK / "courses" / batch.COURSE / "lessons/45-this-ones-cheaper/lesson.html"
         self.assertEqual(
             hashlib.sha256(preserved.read_bytes()).hexdigest(),
-            "2740d6f9e47294d3239e72395b940f132e35b298999c7de86a53693ff8eeb4a6",
+            "d754d974dea9671744cb56cc1a41743cbc0262fa108721ec7e61fc187de5f432",
         )
 
     def test_every_semantic_field_is_explicit(self):

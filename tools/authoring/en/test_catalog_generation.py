@@ -18,9 +18,9 @@ ROOT = pathlib.Path(__file__).resolve().parents[3] / "sandbox/drafts/en"
 class CatalogGenerationTests(unittest.TestCase):
     def test_gateway_and_track_counts(self):
         data = build_catalog.build()
-        self.assertEqual([track["total"] for track in data["tracks"]], [122, 60, 121, 12])
-        self.assertEqual(data["totals"]["review"], 303)
-        self.assertEqual(data["totals"]["items"], 315)
+        self.assertEqual([track["total"] for track in data["tracks"]], [119, 60, 121, 12])
+        self.assertEqual(data["totals"]["review"], 300)
+        self.assertEqual(data["totals"]["items"], 312)
 
     def test_all_generated_pages_are_current(self):
         data = build_catalog.build()

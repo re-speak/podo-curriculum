@@ -35,7 +35,7 @@ VOID = {
 }
 
 EXPECTED_ACTIVE_NUMBERS = {
-    "1-core-patterns": frozenset(range(1, 123)),
+    "1-core-patterns": frozenset(range(1, 123)) - frozenset({4, 5, 6}),
     "2-contextual-english": frozenset(range(1, 61)),
     "3-freetalking": frozenset(range(1, 122)),
 }
@@ -919,7 +919,10 @@ def _logical_inventory_issues(
                 f"corpus: {prefix} expected manifest differs "
                 f"(missing {missing!r}; extra {extra!r})"
             )
-        elif numbers and numbers != list(range(1, numbers[-1] + 1)):
+        elif numbers and numbers != (
+            [number for number in range(1, numbers[-1] + 1) if number not in {4, 5, 6}]
+            if track == "1-core-patterns" else list(range(1, numbers[-1] + 1))
+        ):
             errors.append(f"corpus: {prefix} logical review-id sequence has a numbering gap")
     return errors
 

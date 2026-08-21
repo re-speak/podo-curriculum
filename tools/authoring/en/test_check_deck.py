@@ -921,6 +921,55 @@ class DeckCheckTests(unittest.TestCase):
         }
         self.assertEqual(check_deck.choice_branch_coverage_issues(pages), [])
 
+    @staticmethod
+    def _read_page(*sentences):
+        lines = "".join(
+            f'<div class="model-line"><span class="korean">'
+            f'<span class="ending">{s.split()[0]}</span> {" ".join(s.split()[1:])}'
+            f'</span><span class="translation">訳</span></div>'
+            for s in sentences
+        )
+        return {"p1-read": f'<div class="model-list">{lines}</div>'}
+
+    def test_exemplar_set_rejects_a_single_word_substitution(self):
+        pages = self._read_page(
+            "Can you drive?", "Can you swim?", "Can you cook?", "Can you ski?"
+        )
+        errors = check_deck.exemplar_variation_issues(pages, level="A1")
+        self.assertTrue(any("differ in one word only" in item for item in errors))
+
+    def test_exemplar_set_accepts_a_varying_form(self):
+        pages = self._read_page(
+            "She works downtown.",
+            "He lives nearby.",
+            "They study at night.",
+            "I cook at home.",
+        )
+        self.assertEqual(check_deck.exemplar_variation_issues(pages, level="A1"), [])
+
+    def test_exemplar_set_exempts_pre_a1_formulaic_practice(self):
+        pages = self._read_page(
+            "Hi, I'm Mina.", "Hi, I'm Ken.", "Hi, I'm Yuki.", "Hi, I'm Emi."
+        )
+        self.assertEqual(check_deck.exemplar_variation_issues(pages, level="Pre-A1"), [])
+        self.assertTrue(check_deck.exemplar_variation_issues(pages, level="A1"))
+
+    def test_exemplar_set_ignores_a_taught_page_and_short_sets(self):
+        varied = self._read_page("It's cold.", "It's very cold today.")
+        self.assertEqual(check_deck.exemplar_variation_issues(varied, level="A1"), [])
+        teach = {
+            "p1-teach": self._read_page("a", "b", "c", "d")["p1-read"],
+        }
+        self.assertEqual(check_deck.exemplar_variation_issues(teach, level="A1"), [])
+
+    def test_exemplar_varying_regions_strips_shared_prefix_and_suffix(self):
+        self.assertEqual(
+            check_deck.exemplar_varying_regions(
+                ["I start work at nine.", "I start work at eleven."]
+            ),
+            [["nine"], ["eleven"]],
+        )
+
     def test_contextual_rejects_japanese_only_receptive_choices_and_roleplay_icons(self):
         icon = '<span class="avatar icon">A</span>'
         pages = {

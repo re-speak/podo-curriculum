@@ -523,9 +523,9 @@ LESSONS[42]["p2"]["rows"] = rows(
 )
 LESSONS[43]["p1"]["rows"] = rows(
     ("{t}Sorry to interrupt, but what is{/t} that date {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その日程は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that date|based on?"),
-    ("{t}Sorry to interrupt, but what is{/t} that figure {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その数値は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that figure|based on?"),
+    ("{t}Sorry to interrupt, but what is{/t} that revenue figure {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その売上の数値は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that revenue figure|based on?"),
     ("{t}Sorry to interrupt, but what is{/t} that forecast {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その予測は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that forecast|based on?"),
-    ("{t}Sorry to interrupt, but what is{/t} that decision {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その判断は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that decision|based on?"),
+    ("{t}Sorry to interrupt, but what is{/t} that decision about scope {t}based on{/t}?", "{t}お話の途中すみませんが、{/t}その範囲の判断は何{t}に基づいていますか{/t}？", "Sorry to interrupt,|but what is that decision about scope|based on?"),
 )
 LESSONS[45]["p1"]["rows"] = rows(
     ("{t}I recommend{/t} option B.", "選択肢B{t}をおすすめします{/t}。", "I recommend|option B."),
@@ -535,9 +535,9 @@ LESSONS[45]["p1"]["rows"] = rows(
 )
 LESSONS[45]["p2"]["rows"] = rows(
     ("{t}It's easier to{/t} implement.", "導入するほうが{t}簡単です{/t}。", "It's easier|to implement."),
+    ("{t}It's easier to{/t} explain to the client.", "顧客に説明するほうが{t}簡単です{/t}。", "It's easier|to explain to the client."),
     ("{t}It's easier to{/t} maintain.", "維持するほうが{t}簡単です{/t}。", "It's easier|to maintain."),
-    ("{t}It's easier to{/t} explain.", "説明するほうが{t}簡単です{/t}。", "It's easier|to explain."),
-    ("{t}It's easier to{/t} test.", "試すほうが{t}簡単です{/t}。", "It's easier|to test."),
+    ("{t}It's easier to{/t} test in stages.", "段階的に試すほうが{t}簡単です{/t}。", "It's easier|to test in stages."),
 )
 LESSONS[45]["p2"].update(
     write_frame="It's easier to ___",

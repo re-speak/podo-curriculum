@@ -63,9 +63,9 @@ LESSONS = {
         ),
         p2=rows(
             ("{t}What do you mean by{/t} 'ready'?", "「ready」とは{t}どういう意味ですか{/t}？", "What do you mean|by|'ready'?"),
+            ("{t}What do you mean by{/t} 'as soon as possible'?", "「as soon as possible」とは{t}どういう意味ですか{/t}？", "What do you mean|by|'as soon as possible'?"),
             ("{t}What do you mean by{/t} 'final'?", "「final」とは{t}どういう意味ですか{/t}？", "What do you mean|by|'final'?"),
-            ("{t}What do you mean by{/t} 'urgent'?", "「urgent」とは{t}どういう意味ですか{/t}？", "What do you mean|by|'urgent'?"),
-            ("{t}What do you mean by{/t} 'approved'?", "「approved」とは{t}どういう意味ですか{/t}？", "What do you mean|by|'approved'?"),
+            ("{t}What do you mean by{/t} 'a quick review'?", "「a quick review」とは{t}どういう意味ですか{/t}？", "What do you mean|by|'a quick review'?"),
         ),
         rules=(("Keep what you're saying as the subject, then add the point you understood.", "what you're saying を主語として保ち、そのあとに理解した要点を続けます。"),
                ("Put the word or idea you want clarified after mean by.", "確認したい言葉や考えを mean by のあとに置きます。")),
@@ -133,9 +133,9 @@ LESSONS = {
         goal=("Compare options with a precise small or large difference.", "選択肢の小さな差・大きな差を正確に比べましょう。"),
         p1=rows(
             ("{t}It's slightly more{/t} expensive.", "{t}少しだけ{/t}高いです。", "It's|slightly more|expensive."),
+            ("{t}It's slightly{/t} cheaper.", "{t}少しだけ{/t}安いです。", "It's|slightly|cheaper."),
             ("{t}It's slightly more{/t} convenient.", "{t}少しだけ{/t}便利です。", "It's|slightly more|convenient."),
-            ("{t}It's slightly more{/t} comfortable.", "{t}少しだけ{/t}快適です。", "It's|slightly more|comfortable."),
-            ("{t}It's slightly more{/t} reliable.", "{t}少しだけ{/t}信頼できます。", "It's|slightly more|reliable."),
+            ("{t}It's slightly{/t} faster.", "{t}少しだけ{/t}速いです。", "It's|slightly|faster."),
         ),
         p2=rows(
             ("{t}It's nowhere near as{/t} fast {t}as{/t} the train.", "速さでは電車に{t}遠く及びません{/t}。", "It's nowhere near as|fast|as the train."),
@@ -157,10 +157,10 @@ LESSONS = {
             ("{t}Hardly anyone{/t} chose the morning session.", "{t}ほとんど誰も{/t}午前の回を選びませんでした。", "Hardly anyone|chose|the morning session."),
         ),
         p2=rows(
-            ("{t}There's barely any{/t} left.", "{t}ほとんど残っていません{/t}。", "There's|barely any|left."),
             ("{t}There's barely any{/t} coffee left.", "コーヒーは{t}ほとんど残っていません{/t}。", "There's|barely any|coffee left."),
-            ("{t}There's barely any{/t} space left.", "空きは{t}ほとんど残っていません{/t}。", "There's|barely any|space left."),
+            ("{t}There are barely any{/t} seats left.", "席は{t}ほとんど残っていません{/t}。", "There are|barely any|seats left."),
             ("{t}There's barely any{/t} time left.", "時間は{t}ほとんど残っていません{/t}。", "There's|barely any|time left."),
+            ("{t}There are barely any{/t} options left.", "選択肢は{t}ほとんど残っていません{/t}。", "There are|barely any|options left."),
         ),
         rules=(("Hardly already carries a near-negative meaning, so keep the verb positive.", "hardly 自体がほぼ否定の意味なので、動詞は肯定形のままにします。"),
                ("Use barely any before an uncountable amount or an understood noun.", "数えない量や省略された名詞の前に barely any を使います。")),
@@ -314,12 +314,12 @@ SPECS = {
 # earlier visible deck whose `podo:vocabulary:new` actually owns the item.
 VOCAB = {
     81: dict(new="customer support|カスタマーサポート; sales team|営業チーム; finance team|財務チーム; staff training|スタッフ研修; recruitment|採用; client reports|顧客レポート", recycled="manager|上司|CORE-54; client|顧客|CORE-54", assumed="work|働く; team|チーム; staff|スタッフ; report|レポート; role|役割; day|日", receptive="day to day|日々の業務では; I report to|〜に直属しています; duty|担当業務; collaborate|協力する"),
-    83: dict(new="final version|最終版; urgent|緊急の", recycled="meeting|会議|CORE-30; more time|もっと時間|CORE-66", assumed="ready|準備できた; final|最終の; time|時間; date|日程; testing|テスト; approved|承認された", receptive="term|用語; just to be clear|念のため確認すると; correct me if I'm wrong|間違っていたら訂正してください; summary|要約; timeline|予定表; That is exactly right.|そのとおりです。"),
+    83: dict(new="a quick review|簡単な確認; as soon as possible|できるだけ早く; final version|最終版; urgent|緊急の", recycled="meeting|会議|CORE-30; more time|もっと時間|CORE-66", assumed="ready|準備できた; final|最終の; time|時間; date|日程; testing|テスト; approved|承認された", receptive="term|用語; just to be clear|念のため確認すると; correct me if I'm wrong|間違っていたら訂正してください; summary|要約; timeline|予定表; That is exactly right.|そのとおりです。"),
     84: dict(new="extend|延ばす; first half|前半; scope|範囲; shorter version|短い版", recycled="deadline|期限|CORE-82; draft|下書き|CORE-82; repair|修理する|CORE-76", assumed="review|確認する; reduce|縮める; meeting|会議; today|今日; after lunch|昼食後", receptive="I appreciate it|ありがとうございます; Does that work?|それで大丈夫ですか？; revised date|変更後の日付; practical availability|対応可能性"),
     85: dict(new="point|要点; timing|タイミング; quality|品質; data|データ", recycled="expensive|高い|CORE-19; schedule|予定|CORE-67; supplier|取引先|CORE-82; issue|問題|CORE-82", assumed="cost|費用; final number|最終的な数字; plan|案", receptive="fair enough|なるほど、それなら分かります; where I'm coming from|私の考えの背景; concern|懸念; trade-off|一長一短; Let's compare both options.|両方の案を比べましょう。"),
     86: dict(new="final price|最終価格; availability|空き状況", recycled="noon|正午|CORE-38; manager|上司|CORE-54; deadline|期限|CORE-82", assumed="that|そのこと; three|3時; tomorrow|明日; Friday|金曜日; team|チーム; answer|返事; estimate|見積もり", receptive="off the top of my head|今すぐ思いつく範囲では; leave it with me|私に任せてください; check the figures|数字を確認する; No problem. Tomorrow works.|大丈夫です。明日で構いません。"),
-    87: dict(new="", recycled="expensive|高い|CORE-19; convenient|便利な|CORE-45; comfortable|快適な|CORE-45; fast|速い|CORE-45; cheap|安い|CORE-44; quiet|静かな|CORE-43; reliable|信頼できる|CORE-56", assumed="train|電車; bus|バス; room|部屋; option|選択肢", receptive="marginally|わずかに; a fraction more|ほんの少しだけ多く; shuttle|送迎バス; precise comparison|正確な比較; Then the train is worth the extra cost.|それなら追加料金を払っても電車がよいですね。"),
-    88: dict(new="survey|アンケート; morning session|午前の回; space|空き", recycled="coffee|コーヒー|CORE-9; water|水|CORE-9", assumed="anyone|誰か; time|時間; lunch|昼食; come|来る; answer|答える; came|来た; stayed|残った; answered|答えた; left|残っている", receptive="next to nothing|ほとんど何もない; few and far between|めったにない; attendee|参加者; near zero|ほぼゼロ; I'll order more before the afternoon session.|午後の回の前に追加で注文します。"),
+    87: dict(new="cheaper|安い; faster|速い; ", recycled="expensive|高い|CORE-19; convenient|便利な|CORE-45; comfortable|快適な|CORE-45; fast|速い|CORE-45; cheap|安い|CORE-44; quiet|静かな|CORE-43; reliable|信頼できる|CORE-56", assumed="train|電車; bus|バス; room|部屋; option|選択肢", receptive="marginally|わずかに; a fraction more|ほんの少しだけ多く; shuttle|送迎バス; precise comparison|正確な比較; Then the train is worth the extra cost.|それなら追加料金を払っても電車がよいですね。"),
+    88: dict(new="options|選択肢; seats|席; survey|アンケート; morning session|午前の回; space|空き", recycled="coffee|コーヒー|CORE-9; water|水|CORE-9", assumed="anyone|誰か; time|時間; lunch|昼食; come|来る; answer|答える; came|来た; stayed|残った; answered|答えた; left|残っている", receptive="next to nothing|ほとんど何もない; few and far between|めったにない; attendee|参加者; near zero|ほぼゼロ; I'll order more before the afternoon session.|午後の回の前に追加で注文します。"),
     89: dict(new="setback|一時的な後退; failure|失敗; complaint|苦情; suggestion|提案; criticism|批判; feedback|フィードバック; revision|修正", recycled="issue|問題|CORE-82", assumed="problem|問題; delay|遅れ; cost|費用; timing|タイミング; restart|やり直し", receptive="if anything|どちらかといえば; strictly speaking|厳密に言えば; label|呼び方; classification|分類; I'll change the wording in the report.|レポートの表現を変えます。"),
     90: dict(new="participant|参加者; customer|顧客", recycled="prefer|〜のほうが好き|CORE-42; share|共有する|CORE-70; deadline|期限|CORE-82", assumed="survey|アンケート; no|反対; people|人々; staff|スタッフ; plan|案; change|変更; approved|賛成した; said no|反対した", receptive="by and large|全体として; across the board|全面的に; proportion|割合; minority|少数; Then we can proceed with the new plan.|それなら新しい案で進められます。"),
     91: dict(new="supplies|備品; copies|部数; go around|行き渡る; feed everyone|全員に食べてもらう; print twenty copies|20部印刷する; finish the order|注文を終える", recycled="chair|椅子|CORE-61; enough|十分に|CORE-44; deadline|期限|CORE-82", assumed="it|必要量; food|食べ物; paper|紙; budget|予算; order|注文; everyone|全員; extra|追加の", receptive="portion|一人分; cutting it fine|ぎりぎりである; at a push|無理をすれば; margin|余裕; capacity|余力; I'll bring two extra portions.|追加で二人分持っていきます。"),
@@ -340,12 +340,12 @@ KNOWN_WORDS = {
 
 TRANSLATE_HINTS = {
     81: (("カスタマーサポート:customer support", "研修:staff training", "採用:recruitment", "顧客レポート:client reports"), ("営業チーム:sales team", "財務チーム:finance team", "顧客:client", "スタッフ:staff")),
-    83: (("時間:time", "日程:date", "テスト:testing", "最終版:final version"), ("準備できた:ready", "最終の:final", "緊急の:urgent", "承認された:approved")),
+    83: (("時間:time", "日程:date", "テスト:testing", "最終版:final version"), ("準備できた:ready", "できるだけ早く:as soon as possible", "最終の:final", "簡単な確認:a quick review")),
     84: (("期限:deadline", "下書き:draft", "会議:meeting", "範囲:scope"), ("前半:first half", "今日:today", "昼食後:after lunch", "短い版:shorter version")),
     85: (("費用:cost", "日程:schedule", "データ:data", "品質:quality"), ("タイミング:timing", "費用:cost", "最終的な数字:final number", "取引先:supplier")),
     86: (("そのこと:that", "最終価格:final price", "空き状況:availability", "見積もり:estimate"), ("明日:tomorrow", "正午:noon", "金曜日:Friday", "3時:three")),
-    87: (("高い:expensive", "便利な:convenient", "快適な:comfortable", "信頼できる:reliable"), ("電車:train", "バス:bus", "部屋:room", "選択肢:option")),
-    88: (("来る:come", "昼食:lunch", "アンケート:survey", "午前の回:morning session"), ("残っている:left", "コーヒー:coffee", "空き:space", "時間:time")),
+    87: (("高い:expensive", "安い:cheaper", "便利な:convenient", "速い:faster"), ("電車:train", "バス:bus", "部屋:room", "選択肢:option")),
+    88: (("来る:come", "昼食:lunch", "アンケート:survey", "午前の回:morning session"), ("コーヒー:coffee", "席:seats", "時間:time", "選択肢:options")),
     89: (("問題:problem; 遅れ:delay", "失敗:failure; 後退:setback", "苦情:complaint; 提案:suggestion", "費用:cost; 時期:timing"), ("後退:setback; 失敗:failure", "遅れ:delay; 問題:problem", "フィードバック:feedback; 批判:criticism", "修正:revision; やり直し:restart")),
     90: (("人々:people", "顧客:customer", "スタッフ:staff", "参加者:participant"), ("反対:no", "案:plan", "変更:change", "期限:deadline")),
     91: (("行き渡る:go around", "全員に食べてもらう:feed everyone", "20部印刷する:print twenty copies", "注文を終える:finish the order"), ("それ:it", "予算:budget", "いす:chair", "備品:supplies")),

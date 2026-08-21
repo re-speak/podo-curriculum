@@ -20,7 +20,7 @@
 ### Pattern 1
 
 - **Model:** There's one thing I'd change.
-- **Frame:** `There's one thing I'd ___.`
+- **Frame:** `There's one thing / There are ___ things I'd ___.`
 
 ### Pattern 2
 
