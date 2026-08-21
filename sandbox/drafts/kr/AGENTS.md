@@ -137,9 +137,9 @@ tiles could not build their own answer — a class of bug no other check sees.
 
 ## Getting a lesson to production
 
-This folder is the authoring tree; `re-speak/podo-curriculum` is what deploys. **Keep
-writing relative `../../runtime/…` refs** — that is the input format the production
-tools expect. `sync-from-authoring.py` rewrites them to `shared/`, and
+This folder is the authoring tree and the same repository deploys it. **Keep writing
+relative refs out to `shared/`** — that is the input format the production tools
+expect. `promote.py` flattens them to bare filenames when it packages a deck, and
 `repoint-shared.py` then pins them to the CDN tag declared in one place
 (`curriculum.yaml` → `spec.sharedRuntime`). Writing a CDN URL here by hand would
 hand-pin a version in every file and break local verification.

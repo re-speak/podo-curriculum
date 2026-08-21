@@ -23,11 +23,10 @@ shared/
 영어 커리큘럼이 같은 런타임을 쓰기 때문입니다. `korean/trial/assets/` 는 옮기지
 않았으므로 여전히 한국어 폴더 안에 있고, 덱에서 두 경로의 `../` 개수가 하나 다릅니다.
 
-**배포 저장소와 CDN으로 미러링할 대상이 정확히 이 폴더입니다.** 여기서는 덱이 상대
-경로로 부르고(`../../../shared/js/pager.js`), `podo-curriculum`의
-`sync-from-authoring.py --runtime-only`가 이 폴더를 `shared/{css,js}`로 그대로
-옮깁니다. 그 사본을 `publish-shared.py`가 불변 태그로 공개 미러에 게시하고,
-`repoint-shared.py`가 배포 덱을 그 태그로 가리킵니다.
+**CDN으로 미러링할 대상이 정확히 이 폴더입니다.** 초안 덱은 여기를 상대 경로로
+부르고(`../../../shared/js/pager.js`), `promote.py`가 승격할 때 그 참조를 파일명만
+남기고 평탄화합니다. 그 다음 `publish-shared.py`가 이 폴더를 공개 미러에 불변
+태그로 게시하고, `repoint-shared.py`가 배포 덱을 그 태그로 가리킵니다.
 
 공개해도 되는 것만 둡니다 — 여기 있는 파일에는 교재 스캔도, 가격도, 내부 메모도
 없습니다. 그런 것이 이 폴더에 들어가려 하면 그건 런타임이 아닙니다.
@@ -35,8 +34,8 @@ shared/
 ## 배포할 때
 
 1. 이 저장소에서 런타임을 수정·검증하고 먼저 커밋합니다.
-2. `podo-curriculum`의 stage 기반 브랜치에서 `sync-from-authoring.py --runtime-only`를
-   실행해 `shared/`가 이 폴더와 같은지 확인합니다.
+2. stage 기반 브랜치에서 작업합니다 — 저작과 배포가 한 저장소이므로 옮겨올 사본은
+   없습니다. `sync-from-authoring.py`는 2026-08-19 이전을 설명하던 도구이고 삭제됐습니다.
 3. `curriculum.yaml`의 `spec.sharedRuntime.version`을 올린 뒤
    `publish-shared.py`를 먼저 실행합니다. 태그는 불변이라 이미 게시한 버전을
    덮어쓰지 않습니다.
