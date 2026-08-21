@@ -16,12 +16,9 @@ import generate_core_first_exchanges_1_batch as batch
 
 
 EXPECTED_KNOWN_WORDS = {
-    1: (("ハロー", "hello"), ("ネーム", "name"), ("ハイ", "hi")),
-    2: (("デザイナー", "designer"), ("エンジニア", "engineer"), ("アーティスト", "artist")),
-    3: (("東京", "Tokyo"), ("大阪", "Osaka"), ("京都", "Kyoto")),
-    4: (("カナダ", "Canada"), ("オーストラリア", "Australia"), ("日本", "Japan")),
-    5: (("バッグ", "bag"), ("チケット", "ticket"), ("ペン", "pen")),
-    6: (("デザイナー", "designer"), ("エンジニア", "engineer"), ("ナース", "nurse")),
+    1: (("ハロー", "hello"), ("デザイナー", "designer"), ("エンジニア", "engineer")),
+    2: (("東京", "Tokyo"), ("大阪", "Osaka"), ("カナダ", "Canada")),
+    3: (("バッグ", "bag"), ("トレイン", "train"), ("オーケー", "okay")),
     7: (("カフェ", "café"), ("ホテル", "hotel"), ("ステーション", "station")),
     8: (("ホット", "hot"), ("レイニー", "rainy"), ("トゥデイ", "today")),
     9: (("コーヒー", "coffee"), ("チケット", "ticket"), ("バッグ", "bag")),
@@ -32,9 +29,8 @@ EXPECTED_KNOWN_WORDS = {
 
 SUPPORT_FINALS = {
     1: "Nice to meet you.",
-    4: "Nice to meet you too.",
-    5: "Thank you.",
-    6: "Nice to meet you too.",
+    2: "That's right.",
+    3: "Okay.",
     7: "That's right.",
     8: "Not really.",
     9: "That's all, thanks.",
@@ -63,7 +59,7 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
         return words
 
     def test_course_batch_is_complete_and_explicit(self):
-        expected = set(range(1, 12))
+        expected = {1, 2, 3, 7, 8, 9, 10, 11}
         self.assertEqual(set(batch.LESSONS), expected)
         self.assertEqual(set(batch.SPECS), expected)
         self.assertEqual(set(batch.DIALOGUES), expected)
@@ -79,8 +75,11 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
             self.assertEqual(len(spec["meanings"]), 2, number)
             self.assertEqual(len(spec["writes"]), 2, number)
             self.assertEqual(len(spec["rules"]), 2, number)
-            expected_lengths = [0, 0] if number == 1 else [4, 4]
-            self.assertEqual([len(rows) for rows in spec["choices"]], expected_lengths, number)
+            for part, rows in enumerate(spec["choices"], start=1):
+                if part in batch.LESSONS[number].get("omit_choice", ()):
+                    self.assertIn(len(rows), {0, 4}, (number, part))
+                else:
+                    self.assertEqual(len(rows), 4, (number, part))
             for rows in spec["choices"]:
                 for japanese, _, correct, distractor, _ in rows:
                     self.assertNotEqual(correct, distractor, number)
@@ -114,17 +113,11 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
                 self.assertIn(word.casefold(), source_new, (number, entry))
 
     def test_reviewed_choice_cues_name_the_actual_decision(self):
-        core4 = batch.SPECS[4]["choices"]
-        self.assertTrue(all("{t}私の{/t}" in row[0] for row in core4[0]))
-        self.assertEqual({row[2] for row in core4[1]}, {"He's", "She's"})
-        self.assertTrue(all("{/t}" in row[0] for row in core4[1]))
-        self.assertTrue(all(row[1].count("{t}") == 2 for row in batch.LESSONS[4]["p2"]))
+        self.assertEqual(batch.LESSONS[1]["omit_choice"], (1, 2))
+        self.assertEqual(batch.LESSONS[3]["omit_choice"], (1, 2))
         self.assertEqual(
-            {row[2] for row in batch.SPECS[5]["choices"][0]},
-            {"Is this", "This is"},
-        )
-        self.assertTrue(
-            all(japanese.startswith("{t}") and japanese.endswith("{/t}？") for _, japanese, _ in batch.LESSONS[5]["p1"])
+            {shared_core.strip_marks(row[0]).split()[0] for row in batch.LESSONS[2]["p1"]},
+            {"I'm", "He's", "She's", "They're"},
         )
         self.assertEqual(
             {row[2] for row in batch.SPECS[10]["choices"][1]},
@@ -147,28 +140,23 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
                     shared_core.validate_reorder_pattern(data[f"p{part}"])
 
     def test_round_two_semantic_repairs_are_source_locked(self):
-        self.assertIn(2, batch.LESSONS[1]["omit_reorder"])
+        self.assertEqual(batch.LESSONS[1]["omit_reorder"], (1, 2))
         self.assertTrue(all(len(row[2].split("|")) == 2 for row in batch.LESSONS[1]["p2"]))
-        self.assertEqual(
-            {row[2].split("|")[0] for row in batch.LESSONS[6]["p2"]},
-            {"Yes,", "No,"},
-        )
-        self.assertTrue(all(len(row[2].split("|")) == 3 for row in batch.LESSONS[6]["p2"]))
-
+        self.assertEqual(batch.LESSONS[3]["omit_reorder"], (1, 2))
         for variant in ("model", "wild"):
-            self.assertEqual(batch.DIALOGUES[2][variant][4][0], "What else do you do?")
             weather_question = batch.DIALOGUES[8][variant][4][0]
             self.assertIn("Is it ", weather_question)
             self.assertNotIn("How is it", weather_question)
 
         for number in batch.LESSONS:
             prompt_en, prompt_ja = batch.LESSONS[number]["prompt"]
-            self.assertIn("?", prompt_en, number)
-            self.assertTrue(prompt_ja.endswith("？") or "？" in prompt_ja, number)
-            self.assertEqual(batch.LIVE_SCENES[number][0][:2], ("input", "me"))
-            self.assertIn("only if it fits naturally", batch.LIVE_SCENES[number][0][3])
-            self.assertEqual(batch.LIVE_SCENES[number][1][3], "How about you?")
-            self.assertEqual(batch.LIVE_SCENES[number][2][:2], ("input", "other"))
+            self.assertTrue(prompt_en and prompt_ja, number)
+            if number <= 3:
+                self.assertEqual(batch.LIVE_SCENES[number][0][:2], ("text", "other"))
+                self.assertEqual(batch.LIVE_SCENES[number][1][:2], ("input", "me"))
+            else:
+                self.assertEqual(batch.LIVE_SCENES[number][0][:2], ("input", "me"))
+                self.assertIn("only if it fits naturally", batch.LIVE_SCENES[number][0][3])
 
         core10 = " ".join(
             shared_core.strip_marks(row[0]) for part in ("p1", "p2") for row in batch.LESSONS[10][part]
@@ -178,9 +166,9 @@ class CoreFirstExchangesOneBatchTests(unittest.TestCase):
         self.assertNotIn("hotel is open until midnight", core10)
 
     def test_required_vocabulary_ownership_is_explicit(self):
-        self.assertIn("now", self.category_words(3, "new"))
-        self.assertTrue({"from", "nice to meet you."} <= self.category_words(4, "recycled"))
-        self.assertNotIn("nice to meet you.", self.category_words(4, "receptive"))
+        self.assertIn("now", self.category_words(2, "new"))
+        self.assertTrue({"from", "friend", "coworker"} <= self.category_words(2, "new"))
+        self.assertTrue({"bag", "key", "student", "ready"} <= self.category_words(3, "new"))
         self.assertIn("here", self.category_words(7, "new"))
         self.assertIn("really", self.category_words(8, "receptive"))
         self.assertTrue({"just", "please", "thanks"} <= self.category_words(9, "new"))

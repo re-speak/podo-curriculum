@@ -24,8 +24,8 @@
 
 ### Pattern 2
 
-- **Model:** There's barely any left.
-- **Frame:** `There's barely any ___.`
+- **Model:** There's barely any coffee left.
+- **Frame:** `There's/There are barely any ___.`
 
 ## Supporting content
 

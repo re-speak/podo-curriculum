@@ -290,7 +290,7 @@ TOPICS = {
 
 CLAIM_ORDER = {number: tuple(f"{number}-{index:02d}" for index in range(1, 11)) for number in TOPIC_NUMBERS}
 VOCABULARY = {
- 47: {"new": "drift apart|疎遠になる", "recycled": "friend|友だち|CORE-4", "assumed": "friendship|友情; meet|出会う; change|変わる; listen|話を聞く; care|気にかける", "receptive": "put up with|我慢する; resentment|言えない不満; static|変化しない"},
+ 47: {"new": "drift apart|疎遠になる", "recycled": "friend|友だち|CORE-2", "assumed": "friendship|友情; meet|出会う; change|変わる; listen|話を聞く; care|気にかける", "receptive": "put up with|我慢する; resentment|言えない不満; static|変化しない"},
  48: {"new": "first impression|第一印象", "recycled": "", "assumed": "person|人; seem|〜のように見える; think|思う; change|変わる; wrong|間違った", "receptive": "misleading|誤解を招く; candid|率直な; turn out|実際には〜だとわかる"},
  50: {"new": "comfort zone|安心してできる範囲", "recycled": "", "assumed": "alone|一人で; eat|食べる; cinema|映画館; travel|旅行する; safety|安全", "receptive": "autonomy|自分で決める自由; attainable|実現できそうな"},
  51: {"new": "small talk|雑談; conversation starter|会話のきっかけ", "recycled": "", "assumed": "stranger|知らない人; ask|聞く; conversation|会話; answer|答える; busy|忙しい", "receptive": "intrusive|立ち入りすぎた; low-pressure|負担の少ない"},

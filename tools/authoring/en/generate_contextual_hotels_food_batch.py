@@ -71,8 +71,8 @@ LESSONS = {
             ),
             rows=rows(
                 ("{t}I have a reservation{/t} {t}under{/t} Tanaka.", "田中{t}の名前で{/t}{t}予約しています{/t}。", "I have|a reservation|under Tanaka."),
-                ("{t}I have a reservation{/t} {t}under{/t} Sato.", "佐藤{t}の名前で{/t}{t}予約しています{/t}。", "I have|a reservation|under Sato."),
-                ("{t}I have a reservation{/t} {t}under{/t} Mori.", "森{t}の名前で{/t}{t}予約しています{/t}。", "I have|a reservation|under Mori."),
+                ("{t}I have a reservation{/t} {t}under{/t} the name Sato.", "佐藤{t}という名前で{/t}{t}予約しています{/t}。", "I have|a reservation|under the name Sato."),
+                ("{t}I have a reservation{/t} {t}under{/t} my company's name.", "会社{t}の名前で{/t}{t}予約しています{/t}。", "I have|a reservation|under my company's name."),
                 ("{t}I have a reservation{/t} {t}under{/t} Kato.", "加藤{t}の名前で{/t}{t}予約しています{/t}。", "I have|a reservation|under Kato."),
             ),
             reorder_criterion="booking statement / booking noun / name phrase",
@@ -299,9 +299,9 @@ LESSONS = {
             meaning=("Use this fixed phrase to name a real food allergy before ordering.", "注文前に、実際の食物アレルギーを伝える定型表現です。"),
             rows=rows(
                 ("{t}I'm allergic to{/t} nuts.", "ナッツに{t}アレルギーがあります{/t}。", "I'm|allergic to|nuts."),
-                ("{t}I'm allergic to{/t} shellfish.", "甲殻類に{t}アレルギーがあります{/t}。", "I'm|allergic to|shellfish."),
+                ("{t}I'm allergic to{/t} shellfish and crab.", "甲殻類とカニに{t}アレルギーがあります{/t}。", "I'm|allergic to|shellfish and crab."),
                 ("{t}I'm allergic to{/t} dairy.", "乳製品に{t}アレルギーがあります{/t}。", "I'm|allergic to|dairy."),
-                ("{t}I'm allergic to{/t} eggs.", "卵に{t}アレルギーがあります{/t}。", "I'm|allergic to|eggs."),
+                ("{t}I'm allergic to{/t} raw eggs.", "生卵に{t}アレルギーがあります{/t}。", "I'm|allergic to|raw eggs."),
             ),
             omit_reorder=True,
             rule=(
@@ -328,9 +328,9 @@ LESSONS = {
             meaning=("Use this to check whether a dish includes any amount of an ingredient.", "料理にその食材が少しでも含まれているか確認する表現です。"),
             rows=rows(
                 ("{t}Does it contain any{/t} nuts?", "ナッツは{t}入っていますか{/t}？", "Does it contain|any nuts?"),
-                ("{t}Does it contain any{/t} shellfish?", "甲殻類は{t}入っていますか{/t}？", "Does it contain|any shellfish?"),
+                ("{t}Does it contain any{/t} shellfish at all?", "甲殻類は少しでも{t}入っていますか{/t}？", "Does it contain|any shellfish at all?"),
                 ("{t}Does it contain any{/t} dairy?", "乳製品は{t}入っていますか{/t}？", "Does it contain|any dairy?"),
-                ("{t}Does it contain any{/t} eggs?", "卵は{t}入っていますか{/t}？", "Does it contain|any eggs?"),
+                ("{t}Does it contain any{/t} nuts or nut oil?", "ナッツやナッツ油は{t}入っていますか{/t}？", "Does it contain|any nuts or nut oil?"),
             ),
             omit_reorder=True,
             rule=(
@@ -663,9 +663,9 @@ LESSONS = {
             meaning=("Use this to confirm that a booking detail remains unchanged after the move.", "予約を動かしたあとも、ある情報が変わっていないか確認する表現です。"),
             rows=rows(
                 ("{t}Is it still for{/t} four people?", "人数は{t}今も4人のままですか{/t}？", "Is it|still|for four people?"),
-                ("{t}Is it still for{/t} two people?", "人数は{t}今も2人のままですか{/t}？", "Is it|still|for two people?"),
+                ("{t}Is it still for{/t} two adults and one child?", "{t}今も大人2人と子ども1人のままですか{/t}？", "Is it|still|for two adults and one child?"),
                 ("{t}Is it still for{/t} six people?", "人数は{t}今も6人のままですか{/t}？", "Is it|still|for six people?"),
-                ("{t}Is it still for{/t} three people?", "人数は{t}今も3人のままですか{/t}？", "Is it|still|for three people?"),
+                ("{t}Is it still for{/t} the same group?", "{t}今も同じ人数のままですか{/t}？", "Is it|still|for the same group?"),
             ),
             reorder_criterion="booking reference / unchanged-state marker / party size",
             rule=(

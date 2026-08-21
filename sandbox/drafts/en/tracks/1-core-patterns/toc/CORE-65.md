@@ -20,7 +20,7 @@
 ### Pattern 1
 
 - **Model:** My wallet was stolen.
-- **Frame:** `My ___ was stolen.`
+- **Frame:** `My ___ was/were stolen.`
 
 ### Pattern 2
 
