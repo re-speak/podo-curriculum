@@ -10,7 +10,7 @@
 
     python3 tools/render-course-cards.py [--out DIR] [--scale 3] [--keep-korean]
 
-카드에서 빼는 것 둘:
+카드에서 빼는 것 셋:
   - 회색 설명 줄(`.hy-cap`) — 확정 초안이 뺐다.
   - 진행 표시(`.hy-no`, 「3 / 4」) — 학생의 로드맵 위치라 코스마다 고정이 아니다.
   - 레슨 수 알약(`.hy-n`) — 핵심 패턴은 목표에 따라 값이 달라져(courseLen) 카드가 학생마다
@@ -20,7 +20,8 @@
 덱 자체가 일본어가 되면 그 파일을 비우면 되고, 그때부터 이 스크립트는 찍기만 한다.
 
 authoring 전용이다. build · validate · plan · apply 는 playwright 를 import 하지 않으므로
-playwright 가 없어도 머지 게이트는 영향을 받지 않는다(requirements.txt 의 bs4 와 같은 취급).
+playwright 는 tools/requirements.txt 에 없다 — 휠이 41MB 라 게이트와 배포가 매번 받을
+이유가 없다. 없으면 이 스크립트가 설치 명령을 찍어 준다.
 """
 
 from __future__ import annotations
@@ -53,17 +54,35 @@ def load_overrides() -> dict:
     return json.loads(OVERRIDES.read_text(encoding="utf-8")).get("courses", {})
 
 
-def build_page_script(step: int, override: dict, strip: bool) -> str:
-    """로드맵을 step 칸으로 옮기고, 문안을 덮어쓰고, 빼기로 한 조각을 지운다."""
+def build_page_script(step: int, expect_deck: str, override: dict, strip: bool) -> str:
+    """로드맵을 step 칸으로 옮기고, 문안을 덮어쓰고, 빼기로 한 조각을 지운다.
+
+    실패하면 `{error: ...}` 를 돌려준다. 부르는 쪽이 그걸 보고 그 코스를 건너뛴다.
+    """
     return f"""
     () => {{
-      const prev = document.querySelector('.road-card .rc-prev');
-      const next = document.querySelector('.road-card .rc-next');
-      for (let i = 0; i < 12; i += 1) prev.click();
-      for (let i = 0; i < {step}; i += 1) next.click();
+      const road = document.querySelector('.road-card');
+      const prev = road && road.querySelector('.rc-prev');
+      const next = road && road.querySelector('.rc-next');
+      if (!prev || !next) return {{ error: '로드맵을 찾지 못했습니다 (.road-card)' }};
+
+      // 0 칸으로 되감고 step 칸 앞으로. 버튼은 양 끝에서 disabled 가 되므로(report.js
+      // stepRoad) 횟수를 세는 대신 그것을 신호로 쓴다 — 로드맵이 길어져도 맞는다.
+      for (let i = 0; i < 64 && !prev.disabled; i += 1) prev.click();
+      if (!prev.disabled) return {{ error: '로드맵을 처음으로 되감지 못했습니다' }};
+      for (let i = 0; i < {step} && !next.disabled; i += 1) next.click();
 
       const source = document.querySelector('.hy');
-      if (!source) return null;
+      if (!source) return {{ error: '카드를 찾지 못했습니다 (.hy)' }};
+
+      // 덮어쓰기 전에 덱이 이 칸을 뭐라고 부르는지 본다. 칸 번호만 맞춰서는 부족하다 —
+      // 어긋나도 제목·설명은 덮어써서 맞고 사진만 다른 코스가 되므로, 구운 결과를 눈으로
+      // 보아도 걸리지 않는다. 이름이 다르면 여기서 멈춘다.
+      const expect = {json.dumps(expect_deck, ensure_ascii=False)};
+      const actual = String(source.querySelector('.hy-h b').textContent).trim();
+      if (expect && actual !== expect) {{
+        return {{ error: `{step} 칸은 「${{actual}}」 입니다 (기대: 「${{expect}}」)` }};
+      }}
 
       // 덱은 슬라이드라 카드가 안 보이는 장에 있다. 같은 문서 안 오버레이로 복제하면
       // 스타일시트는 그대로 적용되면서 화면에 세울 수 있다 — 덱의 장 넘김에 기대지 않는다.
@@ -113,7 +132,10 @@ def render(out_dir: pathlib.Path, scale: int, keep_korean: bool) -> int:
         print(f"덱을 찾지 못했습니다: {DECK}", file=sys.stderr)
         return 2
 
-    overrides = {} if keep_korean else load_overrides()
+    # 한 파일에서 둘을 읽는다: 덮어쓸 일본어 문안과, 맞는 코스인지 볼 덱 이름.
+    # `--keep-korean` 은 덮어쓰기만 끄고 확인은 그대로 둔다 — 확인이야말로 늘 필요하다.
+    catalog = load_overrides()
+    overrides = {} if keep_korean else catalog
     out_dir.mkdir(parents=True, exist_ok=True)
     written = 0
 
@@ -143,12 +165,12 @@ def render(out_dir: pathlib.Path, scale: int, keep_korean: bool) -> int:
 
             for key, step in plan["steps"].items():
                 target = out_dir / f"course-card-ja-{key}.png"
-                if target.exists() and key in {c for pl in PLANS[: PLANS.index(plan)] for c in pl["steps"]}:
-                    continue
 
-                info = page.evaluate(build_page_script(step, overrides.get(key, {}), True))
-                if not info:
-                    print(f"  ! {key}: 카드를 찾지 못했습니다", file=sys.stderr)
+                info = page.evaluate(build_page_script(
+                    step, catalog.get(key, {}).get("deck", ""), overrides.get(key, {}), True))
+                if not info or info.get("error"):
+                    reason = info.get("error") if info else "페이지가 아무것도 돌려주지 않았습니다"
+                    print(f"  ! {key}: {reason}", file=sys.stderr)
                     continue
 
                 card = page.query_selector("#__card_stage .hy")
@@ -161,8 +183,16 @@ def render(out_dir: pathlib.Path, scale: int, keep_korean: bool) -> int:
 
         browser.close()
 
-    print(f"\n{written}장을 {out_dir} 에 썼습니다.")
-    print("다음: 확인 후 `python3 tools/publish-shared.py` 로 새 태그를 올리고, podo-app 의 핀을 올린다.")
+    expected = sum(len(plan["steps"]) for plan in PLANS)
+    print(f"\n{written}/{expected}장을 {out_dir} 에 썼습니다.")
+    if written != expected:
+        # 다음 단계가 발행이다. 반쯤 구운 채로 0 을 돌려주면 그대로 태그에 실린다.
+        print("✗ 일부를 굽지 못했습니다 — 발행하지 마십시오.", file=sys.stderr)
+        return 1
+
+    print("다음: curriculum.yaml 의 spec.sharedRuntime.version 을 올리고")
+    print("      `python3 tools/publish-shared.py` 로 새 태그를 올린다.")
+    print("      podo-app 은 @latest 를 보므로 배포가 따로 필요하지 않다.")
     return 0
 
 

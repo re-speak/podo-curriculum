@@ -6,7 +6,10 @@ referencing>=0.33
 # so a missing bs4 cannot affect the merge gate.
 beautifulsoup4>=4.12
 
-# render-course-cards.py only. 체험 리포트의 코스 카드를 PNG 로 굽는 authoring 도구이고,
-# build · validate · plan · apply 는 import 하지 않는다 — 없어도 머지 게이트는 멀쩡하다.
-# 브라우저는 따로 받는다: python3 -m playwright install chromium
-playwright>=1.40
+# render-course-cards.py 는 playwright 를 쓰지만 여기 넣지 않는다. 휠 하나가 41MB 이고
+# 이 파일은 머지 게이트(validate)와 배포(deploy) 가 매번 설치한다 — 아무 게이트도 쓰지
+# 않는 의존성 때문에 모든 배포가 그만큼 느려진다. 카드를 구울 때만 손으로 받는다:
+#
+#     python3 -m pip install playwright && python3 -m playwright install chromium
+#
+# 스크립트가 없을 때 이 명령을 그대로 찍어 주므로 잊어버려도 막히지 않는다.
