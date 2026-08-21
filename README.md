@@ -224,7 +224,7 @@ by construction.
 ```sh
 # 1. branch off stage — never off main
 git fetch origin && git switch -c feat/my-lesson origin/stage
-python3 tools/validate.py --contract --env stage    # what CI is about to run
+python3 tools/validate.py --env stage               # local schema/structure/package gate
 git push -u origin feat/my-lesson
 gh pr create --base stage                           # ← base is stage
 
@@ -240,6 +240,12 @@ What each step actually runs:
 2. **Merge to `stage` → `podo-curriculum-deploy-stage` applies to `stage`, `qa` and `dev`, automatically.** One build: validate once, then the three applies side by side as their own steps, because nothing about them is shared — separate grape, separate database, separate GCS prefix. Cloud Build cancels the sibling steps when one of them fails, so a broken environment still stops the other two — what you gain is seeing which one broke, and where, on the build's step list rather than in one merged log. Verify before going on — these are the only environments where a mistake is cheap.
 3. **PR `stage → main`.** That PR *is* the release: its diff is the release note and its review is the gate. Review it as a deploy approval, because that is what it is.
 4. **Merge it → `podo-curriculum-deploy-prod` applies to prod, automatically** — a learner in a live class sees the change immediately.
+
+The PR check is the authoritative authenticated contract gate because it owns the
+repository-managed lemonboard secret. A developer whose current shell already has
+`PODO_LEMONBOARD_API_KEY` may run `python3 tools/validate.py --contract --env stage` before
+push for earlier feedback, but the key is not a local prerequisite and should never be pasted
+into a PR, committed file, or agent conversation.
 
 Two things differ between the three non-production environments and are worth
 knowing before you verify in one of them:
