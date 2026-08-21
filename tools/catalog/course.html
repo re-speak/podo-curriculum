@@ -151,6 +151,28 @@
     border-radius: var(--radius-sm); background: #fff; box-shadow: none; font: inherit; font-size: 13.5px; }
   .search::placeholder { color: var(--ink-4); }
   .search:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ac); }
+  /* 표시 언어 선택기. 브랜드 옆 작은 세 칸 — 헤더의 무게중심을 바꾸지 않는다. */
+  .loc { display: flex; gap: 2px; margin-left: auto; padding: 2px; border: 1px solid #e3e7ea;
+    border-radius: var(--radius-sm); background: #fff; }
+  .loc button { padding: 4px 9px; border: 0; border-radius: 2px; background: transparent;
+    color: var(--ink-3); font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
+  .loc button:hover { color: var(--ink); }
+  .loc button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+
+  /* 프리토킹 과의 질문 여덟 개. 번호는 덱이 부르는 이름 그대로(몸풀기·질문)이고,
+     이어지는 질문은 한 단 들여 본 질문에 붙어 있음을 보인다. */
+  .qs { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .qitem { padding: 11px 13px; border: 1px solid var(--gray-200, #e6e8ea); border-radius: var(--radius-sm);
+    background: #fff; }
+  .qn { display: inline-block; margin-bottom: 5px; padding: 2px 7px; border-radius: 2px;
+    background: var(--tint); color: var(--ac); font-size: 11px; font-weight: 800; }
+  .qt { margin: 0; font-size: 14px; font-weight: 650; line-height: 1.5; }
+  .qja { margin: 3px 0 0; color: var(--ink-3); font-size: 12.5px; line-height: 1.5; }
+  .qf { margin: 7px 0 0; padding-left: 15px; display: grid; gap: 2px;
+    color: var(--ink-4); font-size: 12.5px; }
+  .qf li { line-height: 1.45; }
+  .goal-ja { margin: 3px 0 0; color: var(--ink-3); font-size: 12.5px; line-height: 1.55; }
+
   .chip { padding: 6px 10px; border: 1px solid #dfe3e6; border-radius: var(--radius-sm); background: #fff; color: var(--ink-3); font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
   .chip:hover { color: var(--ink); }
   .chip[aria-pressed="true"] { background: var(--ink); color: #fff; }
@@ -327,11 +349,12 @@
 </style>
 </head>
 <body>
-<a class="podo-skip" href="#main">본문으로 건너뛰기</a>
+<a class="podo-skip" href="#main" data-i18n="ui.skip">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
     <a class="podo-brand" id="brand" href="../../index.html"><img src="../../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
     <nav class="podo-nav" id="nav" aria-label="커리큘럼 탐색"></nav>
+    <div class="loc" id="loc" role="group"></div>
   </div>
 </header>
 <nav class="tabs"><div class="tabs-in" id="tabs"></div></nav>
@@ -345,22 +368,22 @@
         <p class="hero-d" id="hd"></p>
       </div>
       <div class="panel">
-        <span class="overview-label">한눈에 보기</span>
+        <span class="overview-label" data-i18n="ui.overview">한눈에 보기</span>
         <div class="figs" id="figs"></div>
         <div id="distwrap"></div>
       </div>
     </div>
   </header>
-  <div class="plan-banner" id="plan-banner" hidden><strong>개발 안 함</strong>
-    <span>계획 참고용 — 이 트랙은 현재 개발하지 않으며, 레슨 덱 제작도 승인되지 않았습니다.</span></div>
+  <div class="plan-banner" id="plan-banner" hidden><strong data-i18n="ui.noDev">개발 안 함</strong>
+    <span data-i18n="ui.noDevP">계획 참고용 — 이 트랙은 현재 개발하지 않으며, 레슨 덱 제작도 승인되지 않았습니다.</span></div>
 
   <section class="curriculum-head" aria-labelledby="curriculum-title">
     <div class="band" id="band"></div>
     <div class="controls">
       <div class="crow">
         <input class="search" id="q" type="search" placeholder="과·패턴·표현 검색" autocomplete="off">
-        <button class="btn" id="expandUnits" type="button">단원 모두 펼치기</button>
-        <button class="btn deep" id="expandAll" type="button">과까지 모두 펼치기</button>
+        <button class="btn" id="expandUnits" type="button" data-i18n="ui.expandUnits">단원 모두 펼치기</button>
+        <button class="btn deep" id="expandAll" type="button" data-i18n="ui.expandAll">과까지 모두 펼치기</button>
         <span class="hits" id="hits"></span>
       </div>
       <div class="crow" id="levelbar"></div>
@@ -368,7 +391,7 @@
   </section>
 
   <div class="groups" id="groups"></div>
-  <div class="empty hide" id="empty">검색 결과가 없습니다.</div>
+  <div class="empty hide" id="empty" data-i18n="ui.noResults">검색 결과가 없습니다.</div>
 
   <div class="nextrack" id="nextrack"></div>
   <footer>
@@ -381,6 +404,26 @@
 <script>
 const DATA = /*__DATA__*/null;
 const T = DATA.track, LEVELS = DATA.levels;
+
+/* 표시 언어. 한 벌로 구운 페이지가 세 언어를 모두 답한다 — URL 이 언어에 따라
+   갈라지지 않아야 링크 하나가 누구에게나 같은 곳을 가리킨다.
+   교재의 문장(질문·목표·패턴)은 번역하지 않는다: 그건 배우는 대상 그 자체다.
+   전환되는 것은 화면의 말과, 덱이 이미 들고 있는 일본어 받침이다. */
+const I18N = DATA.i18n, LOCALES = ["ko", "ja", "en"];
+const LS_KEY = "podo-catalog-locale";
+function initialLocale() {
+  try { const v = localStorage.getItem(LS_KEY); if (LOCALES.includes(v)) return v; } catch (e) {}
+  const n = (navigator.language || "").toLowerCase();
+  return n.startsWith("ja") ? "ja" : n.startsWith("ko") ? "ko" : "en";
+}
+let L = initialLocale();
+/** i18n 표에서 한 줄. 없으면 한국어로 떨어진다 — 빈칸을 보여 주지 않는다. */
+const t = (sec, key) => ((I18N[sec] || {})[key] || {})[L] || ((I18N[sec] || {})[key] || {}).ko || "";
+/** {ko,ja,en} 을 든 값에서 지금 언어의 것. 없으면 있는 것 아무거나. */
+const loc = o => !o ? "" : (o[L] || o.ko || o.en || o.ja || "");
+/** 일본어 받침은 일본어로 볼 때만 보여 준다. 한국어·영어 번역은 아직 없고,
+    없는 것을 있는 척하지 않는다. */
+const showJa = () => L === "ja";
 /* 짙은 두 칸 위에서는 글씨가 흰색이어야 읽힌다. */
 const isDark = lv => DATA.ramp[lv] >= 5;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -416,7 +459,7 @@ document.getElementById("tabs").innerHTML =
   document.getElementById("hno").textContent = `트랙 ${String(T.no).padStart(2, "0")} · ${span}${flag}`;
   document.getElementById("h1").setAttribute("aria-label", `${T.ko} — ${T.en}`);
   document.getElementById("h1").innerHTML = `${esc(T.ko)}<span aria-hidden="true">${esc(T.en)}</span>`;
-  document.getElementById("hd").textContent = T.desc;
+  document.getElementById("hd").textContent = loc(T.desc);
   document.getElementById("figs").innerHTML =
     T.stats.map(s => `<div><b>${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join("");
 
@@ -486,13 +529,13 @@ function detail(l) {
 
   // 한글에서는 배울 글자·규칙이 본문이고, 읽을 수 있는 단어는 그 결과를 확인하는 예시다.
   if (isHangul && l.chips && l.chips.length) {
-    fields.push({kind: "hangul-core", label: "이번에 배우는 것",
+    fields.push({kind: "hangul-core", label: t("detail","learnThis"),
       body: `<div class="hangul-focus">${l.chips.map(c =>
         `<div class="hangul-focus-item"><span>${markedJamo(c)}</span></div>`).join("")}</div>`});
   }
   if (isHangul && l.can) {
     const words = l.can.split(" · ").map(w => w.trim()).filter(Boolean);
-    fields.push({kind: "hangul-practice", label: "읽기 연습",
+    fields.push({kind: "hangul-practice", label: t("detail","readPractice"),
       body: `<div class="hangul-practice">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`});
   }
 
@@ -500,9 +543,9 @@ function detail(l) {
   if (l.can && !isHangul) {
     const words = l.can.split(" · ").map(w => w.trim()).filter(Boolean);
     const listy = words.length >= 3 && words.every(w => w.length <= 7);
-    const goalLabel = l.canLabel === "읽을 수 있다" ? "읽기 목표"
-      : l.canLabel === "이야기한다" ? "대화 목표"
-      : l.canLabel === "일본어의 습관" ? "교정 포인트" : "이 과의 목표";
+    const goalLabel = l.canLabel === "읽을 수 있다" ? t("detail","readGoal")
+      : l.canLabel === "이야기한다" ? t("detail","talkGoal")
+      : l.canLabel === "일본어의 습관" ? t("detail","fixPoint") : t("detail","lessonGoal");
     fields.push({kind: "goal", label: goalLabel, body: listy
       ? `<div class="words">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`
       : `<p class="goal">${esc(l.can)}</p>`});
@@ -511,16 +554,16 @@ function detail(l) {
   // ② 배우는 것 — 패턴이 있으면 예문 안에서 짚어 주고, 없으면 이름만 늘어놓는다
   const ps = (l.pats || []).filter(p => p.ex || p.pat);
   if (ps.length) {
-    fields.push({kind: "patterns", label: "핵심 패턴", body: `<div class="pats">` + ps.map(p => `<div class="pcard">
+    fields.push({kind: "patterns", label: t("detail","corePatterns"), body: `<div class="pats">` + ps.map(p => `<div class="pcard">
       ${p.ex ? `<p class="sent">${marked(p.ex, p.spans)}</p>` : ""}
       ${p.reply ? `<p class="reply">${esc(p.reply)}</p>` : ""}
       <div class="pmeta"><span class="pname">${esc(p.pat)}</span>
         ${p.gloss ? `<span class="pgloss">${esc(p.gloss)}</span>` : ""}</div></div>`).join("") + `</div>`});
   } else if (l.fix) {
-    fields.push({kind: "goal", label: "고치는 법", body: `<p class="goal">${esc(l.fix)}</p>`});
+    fields.push({kind: "goal", label: t("detail","howToFix"), body: `<p class="goal">${esc(l.fix)}</p>`});
   }
   if (l.chips && l.chips.length && !ps.length && !isHangul) {
-    fields.push({kind: "items", label: l.fix ? "최소 대립쌍" : "배우는 것",
+    fields.push({kind: "items", label: l.fix ? t("detail","minPairs") : t("detail","learning"),
       body: `<div class="said">${l.chips.map(c => `<span>${esc(c)}</span>`).join("")}</div>`});
   }
 
@@ -535,12 +578,35 @@ function detail(l) {
       ws = said.v.split(/\s*·\s*/).filter(Boolean);
       if (ws.length === 1) ws = ws[0].split(/\s*,\s*/).filter(Boolean);
     }
-    fields.push({kind: "support", label: said && rule ? "표현과 규칙" : said ? "바로 쓰는 표현" : "규칙",
+    fields.push({kind: "support", label: said && rule ? t("detail","saidAndRule") : said ? t("detail","saidNow") : t("detail","rule"),
       body: (ws.length ? `<div class="said">${ws.map(w => `<span>${esc(w)}</span>`).join("")}</div>` : "")
       + (rule ? `<p class="rule">${esc(rule.v)}</p>` : "")});
   }
 
-  if (!fields.length) return `<p class="scene">이 과의 상세는 목차 원문에 있습니다.</p>`;
+  // ④ 덱이 스스로 말하는 오늘의 목표. canDo 를 대신하지 않고 옆에 선다 —
+  //    canDo 는 커리큘럼이 적은 목표, 이쪽은 학습자가 덱에서 실제로 읽는 문장이다.
+  if (l.goal && (l.goal.t || l.goal.ja)) {
+    fields.push({kind: "deckgoal", label: t("detail","deckGoal"), body:
+      (l.goal.t ? `<p class="goal">${esc(l.goal.t)}</p>` : "")
+      + (showJa() && l.goal.ja ? `<p class="goal-ja">${esc(l.goal.ja)}</p>` : "")});
+  }
+
+  // ⑤ 프리토킹 과가 그날 실제로 묻는 것 전부. 덱을 열지 않고도 주제가 맞는지
+  //    판단할 수 있어야 이 트랙의 목차가 의미를 갖는다 — 문법이 아니라 질문이
+  //    그 과의 내용이기 때문이다.
+  if (l.qs && l.qs.length) {
+    fields.push({kind: "questions",
+      label: `${t("detail","questions")} · ${t("detail","questionsN").replace("{n}", l.qs.length)}`,
+      body: `<ol class="qs">` + l.qs.map(q => `<li class="qitem">
+        ${q.n ? `<span class="qn">${esc(q.n)}</span>` : ""}
+        ${q.t ? `<p class="qt">${esc(q.t)}</p>` : ""}
+        ${showJa() && q.ja ? `<p class="qja">${esc(q.ja)}</p>` : ""}
+        ${(q.f && q.f.length) ? `<ul class="qf" aria-label="${esc(t("detail","followUps"))}">`
+            + q.f.map(x => `<li>${esc(x)}</li>`).join("") + `</ul>` : ""}
+      </li>`).join("") + `</ol>`});
+  }
+
+  if (!fields.length) return `<p class="scene">${esc(t("detail","noDetail"))}</p>`;
   return (l.scene ? `<p class="scene">${esc(l.scene)}</p>` : "")
     + fields.map(f => `<section class="field field-${f.kind}"><span class="lbl">${esc(f.label)}</span>${f.body}</section>`).join("");
 }
@@ -556,14 +622,14 @@ function lessonRow(l, groupIndex, lessonIndex) {
   const showLevels = (l.levels || []).length > 1 || variants.length > 1;
   const deck = variants.length ? `<div class="deck-links">${variants.map(d =>
     `<a class="deck" href="../${esc(d.href)}" target="_blank" rel="noopener"
-       title="${esc(l.title)}${d.level ? ` · ${esc(d.level)}` : ""} 덱을 새 탭에서 엽니다">${showLevels && d.level ? esc(d.level) : "덱 열기"} <span class="ext">↗</span></a>`
+       title="${esc(l.title)}${d.level ? ` · ${esc(d.level)}` : ""} 덱을 새 탭에서 엽니다">${showLevels && d.level ? esc(d.level) : esc(t("ui","openDeck"))} <span class="ext">↗</span></a>`
   ).join("")}</div>` : "";
   const detailId = `group-${groupIndex + 1}-lesson-${lessonIndex + 1}-detail`;
   return `<div class="lesson" data-text="${esc([l.title, l.sub, l.can, l.scene, (l.chips||[]).join(" "), (l.notes||[]).map(n=>n.v).join(" ")].join(" ").toLowerCase())}">
     <div class="lrow">
       <button class="lrow-btn" type="button" aria-expanded="false" aria-controls="${detailId}">
         <span class="lno">${esc(T.lessonWord)} ${no}</span>
-        <span class="ltitle">${esc(l.title)}${sub ? ` <em>— ${esc(sub)}</em>` : ""}${firstTag}</span>
+        <span class="ltitle">${esc(loc(l.titles) || l.title)}${sub ? ` <em>— ${esc(sub)}</em>` : ""}${firstTag}</span>
         <span class="lchips">${c}</span>
       </button>
       ${deck}
@@ -580,10 +646,10 @@ function group(g, index) {
   let head = "";
   if (g.work) {
     head += `<p class="story"><b>《${esc(g.work)}》</b> ${esc(g.story)}
-      ${g.cast ? `<span class="cast">등장인물 — ${esc(g.cast)}</span>` : ""}</p>`;
+      ${g.cast ? `<span class="cast">${esc(t("ui","cast"))} — ${esc(g.cast)}</span>` : ""}</p>`;
   }
   if (g.blurb && (g.work || T.id === "3-contextual-korean")) {
-    head += `<p class="gcan"><b class="lbl">끝내면 할 수 있는 것</b>${esc(g.blurb)}</p>`;
+    head += `<p class="gcan"><b class="lbl">${esc(t("ui","groupCan"))}</b>${esc(g.blurb)}</p>`;
   }
 
   const bodyId = `group-${index + 1}-body`;
@@ -606,6 +672,22 @@ function group(g, index) {
 }
 
 const $groups = document.getElementById("groups");
+
+/** 언어가 바뀌면 목록을 다시 그린다. 펼쳐 둔 자리를 자리 번호로 기억했다가 되돌려
+    준다 — 언어를 바꿨다고 보던 곳을 잃으면 전환이 벌처럼 느껴진다. */
+function redraw() {
+  const openG = [...$groups.querySelectorAll(".group")].map(el => el.classList.contains("open"));
+  const openL = [...$groups.querySelectorAll(".lesson")].map(el => el.classList.contains("open"));
+  $groups.innerHTML = T.groups.map(group).join("");
+  $groups.querySelectorAll(".group").forEach((el, i) => {
+    if (openG[i]) { el.classList.add("open"); el.querySelector(".ghead").setAttribute("aria-expanded", "true"); }
+  });
+  $groups.querySelectorAll(".lesson").forEach((el, i) => {
+    if (openL[i]) { el.classList.add("open"); el.querySelector(".lrow-btn").setAttribute("aria-expanded", "true"); }
+  });
+  if (typeof apply === "function") apply();     // 검색·레벨 필터를 다시 먹인다
+}
+
 $groups.innerHTML = T.groups.map(group).join("");
 
 /* ---------- 이전 · 다음 트랙 ---------- */
@@ -613,8 +695,8 @@ $groups.innerHTML = T.groups.map(group).join("");
   const i = DATA.nav.findIndex(n => n.id === T.id);
   const prev = DATA.nav[i - 1], next = DATA.nav[i + 1];
   document.getElementById("nextrack").innerHTML =
-    (prev ? `<a href="${esc(prev.id)}">← ${esc(prev.ko)}</a>` : `<a href="../">← 카탈로그</a>`) +
-    (next ? `<a href="${esc(next.id)}">${esc(next.ko)} →</a>` : `<a href="../">카탈로그 →</a>`);
+    (prev ? `<a href="${esc(prev.id)}">← ${esc(loc({ko:prev.ko, ja:prev.ja, en:prev.en}) || prev.ko)}</a>` : `<a href="../">← ${esc(t("ui","catalog"))}</a>`) +
+    (next ? `<a href="${esc(next.id)}">${esc(loc({ko:next.ko, ja:next.ja, en:next.en}) || next.ko)} →</a>` : `<a href="../">${esc(t("ui","catalog"))} →</a>`);
 }
 
 /* ---------- behaviour ---------- */
@@ -707,6 +789,47 @@ $all.addEventListener("click", () => { const on = !$all.classList.contains("on")
 
 // 들어오자마자 첫 단원은 열어 둔다 — 이 페이지는 이미 한 트랙으로 좁혀진 자리라,
 // 무엇이 들어 있는지 한 번은 보여 주는 편이 낫다.
+/* ---- 표시 언어 ---------------------------------------------------------- */
+
+/** data-i18n 이 붙은 자리를 지금 언어로 채운다. 마크업의 한국어는 기본값으로 남는다 —
+    JS 가 죽어도 페이지는 읽히는 상태여야 한다. */
+function paintStatic() {
+  const hd = document.getElementById("hd");
+  if (hd) hd.textContent = loc(T.desc);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n").split(".");
+    const v = t(sec, key);
+    if (v) el.textContent = v;
+  });
+  document.documentElement.lang = L;
+  const tr = document.getElementById("track-name");
+  if (tr) tr.textContent = loc({ko: T.ko, ja: T.ja, en: T.en}) || T.ko;
+}
+
+function paintLocaleBar() {
+  const bar = document.getElementById("loc");
+  if (!bar) return;
+  bar.setAttribute("aria-label", t("locale", "label"));
+  bar.innerHTML = LOCALES.map(code =>
+    `<button type="button" data-loc="${code}" aria-pressed="${code === L}">` +
+    `${esc((I18N.locale[code] || {})[code] || code)}</button>`).join("");
+}
+
+function setLocale(next) {
+  if (!LOCALES.includes(next) || next === L) return;
+  L = next;
+  try { localStorage.setItem(LS_KEY, L); } catch (e) {}
+  paintStatic(); paintLocaleBar(); redraw();
+}
+
+document.getElementById("loc").addEventListener("click", e => {
+  const b = e.target.closest("button[data-loc]");
+  if (b) setLocale(b.dataset.loc);
+});
+
+paintStatic();
+paintLocaleBar();
+
 const firstGroup = document.querySelector(".group");
 firstGroup?.classList.add("open");
 firstGroup?.querySelector(".ghead")?.setAttribute("aria-expanded", "true");

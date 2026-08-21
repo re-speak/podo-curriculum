@@ -287,7 +287,7 @@ document.getElementById("cards").innerHTML = DATA.tracks.map(t => {
       <div class="card-t">${esc(t.ko)}<span class="card-en">${esc(t.en)}</span>
         ${t.status === "plan" ? `<span class="card-state">계획만 있음 · 현재 개발하지 않음</span>` : ""}</div>
     </div>
-    <p class="card-d">${esc(t.desc)}</p>
+    <p class="card-d">${esc(typeof t.desc === "string" ? t.desc : (t.desc && (t.desc.ko || t.desc.ja || t.desc.en)) || "")}</p>
     <div class="card-foot">
       <div class="card-figs">${t.stats.map(s => `<div><b>${esc(s.v)}</b>${esc(s.k)}</div>`).join("")}</div>
       <div class="card-lv">${dot ? `<i style="background:${lvColor(dot)}"></i>` : ""}${esc(span)}</div>
