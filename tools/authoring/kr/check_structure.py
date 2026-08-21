@@ -2,6 +2,7 @@
 """Structural audit of written lesson decks. Deterministic checks only —
 the things an agent is expected to verify about itself and seven of them
 did not live long enough to."""
+import argparse
 import re
 import sys
 from collections import Counter
@@ -9,6 +10,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
+KR = REPO / "sandbox/drafts/kr"
+TRACKS = KR / "tracks"
+DEFAULT = TRACKS / "2-core-patterns"
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
         "meta", "param", "source", "track", "wbr"}
 
@@ -96,17 +100,39 @@ def audit(deck: Path):
     return pages, (lvl.group(1) if lvl else "?"), src.count("yomi"), bad
 
 
-tracks = sys.argv[1:] or ["2-core-patterns"]
+def deck_paths(paths, every):
+    """check_deck.py’s argument shape. A bare name that is no path on disk is a
+    track under sandbox/drafts/kr/tracks — the form kr/AGENTS.md advertises."""
+    roots = [KR] if every else [
+        Path(p).resolve() if Path(p).exists() else TRACKS / p for p in paths] or [DEFAULT]
+    out = []
+    for r in roots:
+        if r.is_dir():
+            out += sorted(r.rglob("lesson.html"))
+        elif r.exists():
+            out.append(r)
+        else:
+            print(f"! no such path: {r}", file=sys.stderr)
+    return out
+
+
+ap = argparse.ArgumentParser(description=__doc__,
+                             formatter_class=argparse.RawDescriptionHelpFormatter)
+ap.add_argument("paths", nargs="*", help="deck files, directories, or track names")
+ap.add_argument("--all", action="store_true", help="every Korean deck in the repo")
+args = ap.parse_args()
+
 fails = 0
-for t in tracks:
-    decks = sorted((REPO / "sandbox/drafts/kr/tracks" / t / "courses").glob("*/lessons/*/lesson.html"))
-    for d in decks:
-        pages, lvl, yomi, bad = audit(d)
-        if not pages:
-            continue
-        tag = "✓" if not bad else "✗"
-        print(f"{tag} {d.parent.name:<26} {pages:>3}p  {lvl:<4} yomi={yomi:<4}")
-        for x in bad:
-            fails += 1
-            print(f"    ! {x}")
+for d in deck_paths(args.paths, args.all):
+    pages, lvl, yomi, bad = audit(d)
+    if not pages:
+        continue
+    tag = "✓" if not bad else "✗"
+    print(f"{tag} {d.parent.name:<26} {pages:>3}p  {lvl:<4} yomi={yomi:<4}")
+    for x in bad:
+        fails += 1
+        print(f"    ! {x}")
 print(f"\n{fails} problem(s)")
+# Every finding here is mechanical — a stray tag, a duplicate sync id, a ref
+# that resolves to nothing. None of them needs a human to decide, so they fail.
+sys.exit(1 if fails else 0)

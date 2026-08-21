@@ -5,10 +5,15 @@
 .section-subtitle is natural Korean and may run ahead of the syllabus. So the
 blue script boxes, and the Japanese glosses, come out before scanning.
 """
+import argparse
 import re
+import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
+KR = REPO / "sandbox/drafts/kr"
+TRACKS = KR / "tracks"
+DEFAULT = TRACKS / "2-core-patterns"   # OWNED below is that track's syllabus
 
 # form -> 과 that owns it. Only forms distinctive enough to grep literally.
 OWNED = {
@@ -40,11 +45,39 @@ STRIP = [
     re.compile(r"<!--.*?-->", re.S),
 ]
 
-for deck in sorted((REPO / "sandbox/drafts/kr/tracks/2-core-patterns/courses").glob("*/lessons/*/lesson.html")):
+def deck_paths(paths, every):
+    """check_deck.py’s argument shape. A bare name that is no path on disk is a
+    track under sandbox/drafts/kr/tracks — the form kr/AGENTS.md advertises."""
+    roots = [KR] if every else [
+        Path(p).resolve() if Path(p).exists() else TRACKS / p for p in paths] or [DEFAULT]
+    out = []
+    for r in roots:
+        if r.is_dir():
+            out += sorted(r.rglob("lesson.html"))
+        elif r.exists():
+            out.append(r)
+        else:
+            print(f"! no such path: {r}", file=sys.stderr)
+    return out
+
+
+ap = argparse.ArgumentParser(description=__doc__,
+                             formatter_class=argparse.RawDescriptionHelpFormatter)
+ap.add_argument("paths", nargs="*", help="deck files, directories, or track names")
+ap.add_argument("--all", action="store_true", help="every Korean deck in the repo")
+ap.add_argument("--strict", action="store_true",
+                help="exit non-zero on hits instead of only listing them")
+args = ap.parse_args()
+
+flagged = 0
+for deck in deck_paths(args.paths, args.all):
     src = deck.read_text(encoding="utf-8")
     if "data-page-id" not in src:
         continue
-    no = int(re.match(r"\d+", deck.parent.name).group())  # 과 100+ has three digits
+    no = re.match(r"\d+", deck.parent.name)   # 과 100+ has three digits
+    if not no:
+        continue                              # not a numbered 과 — nothing owns anything
+    no = int(no.group())
     body = src
     for pat in STRIP:
         body = pat.sub(" ", body)
@@ -53,4 +86,9 @@ for deck in sorted((REPO / "sandbox/drafts/kr/tracks/2-core-patterns/courses").g
         if owner > no and form in body:
             n = body.count(form)
             hits.append(f"{form}(과{owner})×{n}")
+    flagged += bool(hits)
     print(f"{'✗' if hits else '✓'} 과 {no:<3} {deck.parent.name:<26} {' '.join(hits)}")
+# The forms are matched literally, so a hit may be a set phrase (반갑습니다) or a
+# substring (이거예요 for 거예요). These are candidates a human reads, not
+# defects, which is why the default exit is 0 and --strict is opt-in.
+sys.exit(1 if args.strict and flagged else 0)
