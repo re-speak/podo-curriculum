@@ -1038,8 +1038,8 @@ class ExpectedManifestMutationTests(unittest.TestCase):
 class CurrentCorpusIntegrityTests(unittest.TestCase):
     def test_selector_finds_exact_current_inventory_and_green_status(self) -> None:
         records, errors = integrity.audit_corpus()
-        self.assertEqual(len(records), 425)
-        self.assertEqual(sum(not record.superseded for record in records), 424)
+        self.assertEqual(len(records), 422)
+        self.assertEqual(sum(not record.superseded for record in records), 421)
         self.assertEqual(sum(record.superseded for record in records), 1)
         superseded = [record for record in records if record.superseded]
         self.assertEqual(superseded[0].relative, integrity.SUPERSEDED_PROTOTYPE)

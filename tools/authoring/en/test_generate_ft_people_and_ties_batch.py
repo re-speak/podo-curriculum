@@ -260,7 +260,7 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
 
     def test_exact_recycled_provenance_and_same_batch_dependency(self) -> None:
         expected = {
-            47: "friend|友だち|CORE-4", 48: "",
+            47: "friend|友だち|CORE-2", 48: "",
             50: "", 51: "", 52: "", 53: "drift apart|疎遠になる|FT-47",
             54: "", 55: "", 56: "",
         }

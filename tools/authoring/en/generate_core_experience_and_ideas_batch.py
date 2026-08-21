@@ -147,8 +147,8 @@ LESSONS = {
         ),
         p2=rows(
             ("{t}That's why I'm{/t} exhausted.", "{t}だから疲れ切っています{/t}。", "That's why|I'm|exhausted."),
-            ("{t}That's why I'm{/t} hungry.", "{t}だからおなかがすいています{/t}。", "That's why|I'm|hungry."),
-            ("{t}That's why I'm{/t} tired.", "{t}だから疲れています{/t}。", "That's why|I'm|tired."),
+            ("{t}That's why I'm{/t} still hungry.", "{t}だからまだおなかがすいています{/t}。", "That's why|I'm|still hungry."),
+            ("{t}That's why I'm{/t} so tired.", "{t}だからとても疲れています{/t}。", "That's why|I'm|so tired."),
             ("{t}That's why I'm{/t} late.", "{t}だから遅れています{/t}。", "That's why|I'm|late."),
         ),
         rules=(
@@ -689,7 +689,7 @@ SPECS = {
 VOCAB = {
     48: dict(
         new="skiing|スキー; pottery|陶芸; wheel|ろくろ; capsule hotel|カプセルホテル",
-        recycled="Canada|カナダ|CORE-4; hotel|ホテル|CORE-7",
+        recycled="Canada|カナダ|CORE-2; hotel|ホテル|CORE-7",
         assumed="Kyoto|京都; sushi|寿司; try|試す; use|使う",
         receptive="not yet|まだ; a couple of times|2、3回; dates|時期; That sounds fun.|楽しそうです。",
     ),
@@ -701,7 +701,7 @@ VOCAB = {
     ),
     50: dict(
         new="last summer|去年の夏; two months ago|2か月前",
-        recycled="Canada|カナダ|CORE-4; café|カフェ|CORE-7",
+        recycled="Canada|カナダ|CORE-2; café|カフェ|CORE-7",
         assumed="Kyoto|京都; museum|美術館; last year|去年; Friday|金曜日",
         receptive="exhibit|展示; It's been a while.|久しぶりです。; back in 2022|振り返ると2022年に; Sure. I'll tell you about it.|もちろん。話しますね。; Let's go this weekend.|今週末に行きましょう。",
     ),
@@ -731,7 +731,7 @@ VOCAB = {
     ),
     55: dict(
         new="charger|充電器; wallet|財布; speaker|スピーカー; earlier|さっき",
-        recycled="ticket|チケット|CORE-5; bring|持ってくる|CORE-38",
+        recycled="ticket|チケット|CORE-9; bring|持ってくる|CORE-38",
         assumed="email|メール; room|部屋; phone|携帯; door|ドア; cake|ケーキ; music|音楽; key|鍵; call|電話する; book|予約する",
         receptive="you know, the one who|ほら、〜した人; whatsisname|あの人; No problem.|どういたしまして。; Exactly.|そのとおりです。",
     ),
@@ -755,7 +755,7 @@ VOCAB = {
     ),
     59: dict(
         new="contract|契約書; route|道順; printer|プリンター",
-        recycled="ticket|チケット|CORE-5; best|一番よい|CORE-46; client|顧客|CORE-54",
+        recycled="ticket|チケット|CORE-9; best|一番よい|CORE-46; client|顧客|CORE-54",
         assumed="bus|バス; computer|パソコン; online|オンラインで; time|時間; waiting|待ち時間",
         receptive="purpose|目的; method|方法; it's worth it|その価値がある; save time|時間を節約する; efficient|効率的な; least effort|一番手間が少ない; book one now|今予約する",
     ),

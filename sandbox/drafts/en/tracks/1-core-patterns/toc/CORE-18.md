@@ -20,7 +20,7 @@
 ### Pattern 1
 
 - **Model:** Can you drive?
-- **Frame:** `Can you ___?`
+- **Frame:** `Can ___ ___?`
 
 ### Pattern 2
 

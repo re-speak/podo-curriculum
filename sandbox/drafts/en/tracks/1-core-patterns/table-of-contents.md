@@ -1,16 +1,16 @@
 # Core English Speaking Patterns — Table of Contents
 
-**122 lessons · 244 speaking patterns · Pre-A1 → C1.** Two parts, both in this file.
+**119 lessons · 238 speaking patterns · Pre-A1 → C1.** Two parts, both in this file.
 
 | Part | Range | Size |
 | --- | --- | --- |
-| **Part 1 · Pre-A1 → B1** | Unit 1–12 · lessons 1–70 | 70 lessons · 140 patterns |
+| **Part 1 · Pre-A1 → B1** | Unit 1–12 · Core IDs 1–70 | 67 lessons · 134 patterns |
 | **Part 2 · B1+ → C1** | Unit 13–22 · lessons 71–122 | 52 lessons · 104 patterns |
 
 | Level | Units | Lessons | What this stretch does |
 | --- | --- | ---: | --- |
-| **Pre-A1** | 1–2 | 1–11 | install the English sentence: a subject, fixed order, articles, plurals |
-| **A1** | 3–5 | 12–29 | routines, requests, and the now/usually split |
+| **Pre-A1** | 1 | Core 1–3 | install broad `be` statements and questions without mistaking one phrase for a pattern |
+| **A1** | 2–5 | Core 7–29 | existence, quantity, routines, requests, and the now/usually split |
 | **A2** | 6–8 | 30–47 | stories, plans, description and comparison |
 | **B1** | 9–12 | 48–70 | experience, connected reasoning, careful interaction, the unreal |
 | **B1+** | 13–15 | 71–86 | past hypotheticals, reported language, workplace precision |
@@ -21,6 +21,9 @@
 > author-only [`grammar-coverage-map.md`](../../reference/grammar-coverage-map.md); a lesson may add
 > one short learner-facing grammar note. Fixed chunks appear as supporting expressions and do not
 > count as one of the two patterns. See [`teaching-philosophy.md`](../../reference/teaching-philosophy.md).
+>
+> **Stable-ID note:** Core 4–6 are retired. Core 7 onward keeps its existing identifier so reviews,
+> vocabulary provenance, and deployed links do not acquire a curriculum-wide renumbering.
 
 ---
 
@@ -44,7 +47,7 @@ this produces:
 Only **7 of 72 rows** touched any of the things Japanese gives this learner no scaffolding for.
 
 **1. Articles are a thread, not a lesson.** No single lesson can carry them: Japanese has no article
-system, so the learner has no slot in which the choice occurs. They arrive as bounded chunks in 2
+system, so the learner has no slot in which the choice occurs. They arrive as bounded chunks in 1
 (`I'm **a** designer`), become a decision at first-vs-later mention (10), extend to shared
 reference on a menu (22), and finish at generic and zero article (63). The four advancements are
 marked **`▸ articles`**; `ART-01` and `ART-02` schedule retrieval between and after them.
@@ -117,10 +120,10 @@ in at least two modes, including `transfer` or `checkpoint`. An ordinary lesson 
 | ID | Persistent Japanese-L1 target | Introduced |
 | --- | --- | ---: |
 | `SUBJ-01` | keep an explicit English subject | Core 1 |
-| `ART-01` | attach `a`/`an` to a singular count noun | Core 2 |
-| `PREP-01` | store prepositions with their noun or verb | Core 3 |
-| `ORDER-01` | keep English constituent and question order | Core 3 |
-| `BEQ-01` | invert `be` in questions and repeat it in short answers | Core 5 |
+| `ART-01` | attach `a`/`an` to a singular count noun | Core 1 |
+| `PREP-01` | store prepositions with their noun or verb | Core 2 |
+| `ORDER-01` | keep English constituent and question order | Core 2 |
+| `BEQ-01` | invert `be` in questions and repeat it in short answers | Core 3 |
 | `DUMMY-01` | retain dummy `there` and weather/time `it` | Core 7 |
 | `NUM-01` | mark plural nouns even when quantity is already clear | Core 9 |
 | `ART-02` | choose first/generic reference versus shared/specific `the` | Core 10 |
@@ -150,84 +153,50 @@ Explanations do not count.
 
 # Part 1 · Pre-A1 → B1
 
-## Unit 1 · Say who you are · 6 lessons · **Pre-A1**
+## Unit 1 · Introduce and check · 3 lessons · **Pre-A1**
 
 *The unit that installs the English sentence. Every lesson here is carrying a structural habit,
 not just a phrase — a subject that cannot be dropped, an order that cannot move, an article that
 has no Japanese equivalent.*
 
-**1. Hi, I'm Mina — exchange names**
+**1. I'm Mina — introduce yourself ▸ articles**
 
-*Can-do: introduce yourself in two common ways.*
-- "Hi, I'm Mina." — `Hi, I'm ___.`
-- "My name is Mina." — `My name is ___.`
-- *Expressions:* `What's your name?` · `Nice to meet you.`
-- *Grammar:* `I'm` = `I am`; `My name is` also keeps the subject and `be`. English says who, every time.
-- *JP:* Japanese drops the subject freely; English cannot. `Am Mina` and `Is student` are the
-  predicted errors, and they persist because nothing in the learner's L1 marks them as missing.
+*Can-do: introduce yourself with a name, state, job, or specific name detail.*
+- "I'm Mina / happy / a designer." — `I'm ___.`
+- "My name / first name / family name is Sato." — `My ___ is ___.`
+- *Expressions:* `What's your name?` · `How are you?` · `What do you do?`
+- *Grammar:* the complement after `I'm` changes shape: no article with names or adjectives, but
+  `a`/`an` with a singular job. `My ___ is ___` identifies a personal detail.
+- *JP:* English requires the subject and copula that Japanese often leaves implicit. The wider slot
+  makes the learner choose the complement type instead of memorising one self-introduction string.
 
-**2. I'm a designer — say what you do ▸ articles**
+**2. I'm from Osaka — say where people are from and live**
 
-*Can-do: say your job with `a` or `an`.*
-- "I'm a designer." — `I'm a ___.`
-- "I'm an engineer." — `I'm an ___.`
-- *Expressions:* `What do you do?` · `How about you?`
-- *Grammar:* a job takes `a` before a consonant sound and `an` before a vowel sound. Learn the
-  article attached to the job: `a designer`, `an engineer`.
-- *JP:* **first article contact.** Do not explain the system; teach `a ___` as part of the job
-  chunk. Japanese has no article slot at all, so the goal here is that the word never gets stored
-  without it.
-
-**3. I live in Tokyo — say where you live**
-
-*Can-do: say where you're from and where you live now.*
-- "I'm from Osaka." — `I'm from ___.`
-- "I live in Tokyo now." — `I live in ___ now.`
-- *Expressions:* `Where are you from?` · `right now`
-- *Grammar:* subject → verb → the rest. The verb comes second, always.
-- *JP:* **the word-order install.** Japanese is verb-final, so `I Tokyo live` is the natural output.
-  This is the first lesson with a real verb, so it is where the order is set — drill it as order,
-  not as vocabulary.
+*Can-do: say where you or another person comes from and lives now.*
+- "I'm / He's / She's / They're from Osaka." — `___ from ___.`
+- "I / He / She / They live(s) in Tokyo." — `___ live(s) in ___.`
+- *Expressions:* `Where are you from?` · `Where do you live?` · `This is my friend, ___.`
+- *Grammar:* match `am/is/are` to the subject; add `-s` to `lives` only with `he` or `she`.
+- *JP:* this installs subject–verb order while contrasting origin with current residence.
 - *Spiral review:* `SUBJ-01:controlled`
 
-**4. This is my friend, Leo — introduce someone**
+**3. Is this yours? — check things and people**
 
-*Can-do: introduce another person and add one fact about them.*
-- "This is my friend, Leo." — `This is my ___, ___.`
-- "He's from Canada." — `He's from ___.`
-- *Expressions:* `Nice to meet you too.` · `this` / `that`
-- *Grammar:* `he` / `she` / `they` replace the name once we know who it is.
-- *JP:* Japanese re-uses the name or drops the pronoun; English pronominalises after first mention.
-  Repeating the full name every turn is the predicted output and it sounds oddly formal.
-- *Spiral review:* `ORDER-01:controlled`
+*Can-do: check a varied assumption about an object, situation, or person.*
+- "Is this your bag / the right key / yours / okay?" — `Is this ___?`
+- "Are you a student / ready / from Osaka / free tomorrow?" — `Are you ___?`
+- *Expressions:* `Yes, it is.` · `Yes, I am.` · `No, I'm not.`
+- *Grammar:* move `is` or `are` before the subject, then supply a complete complement. The frame is
+  broader than `your + noun`: it accepts noun phrases, possessives, adjectives, and `from` phrases.
+- *JP:* Japanese normally marks a question without inversion. English moves `be`, then repeats it
+  in a short answer.
+- *Spiral review:* `ART-01:checkpoint`
 
-**5. Is this your bag? — check what belongs to whom**
+*▸ Checkpoint 1 · Perform: introduce yourself, compare hometown and current home, then check one
+thing and one fact about a person.*
+*Review: subject always present · S-V-O order · complement choice · `be` questions by inversion.*
 
-*Can-do: work out who an object belongs to.*
-- "Is this your bag?" — `Is this your ___?`
-- "Yes, that one's mine." — `Yes, that one's ___.`
-- *Expressions:* `Excuse me` · `Sorry, my mistake.`
-- *Grammar:* to ask with `be`, put `be` first: *This is* → *Is this*.
-- *JP:* Japanese questions add a final particle and change nothing else; English **moves the verb**.
-  `This is your bag?` with rising intonation is the predicted form — understandable, but it is the
-  habit that later blocks do-support.
-
-**6. Are you a student? — ask about people**
-
-*Can-do: ask what someone is, and answer briefly.*
-- "Are you a student?" — `Are you a ___?`
-- "No, I'm not. I'm a nurse." — `No, I'm not. I'm a ___.`
-- *Expressions:* `Yes, I am.` · `Actually, ...`
-- *Grammar:* short answers repeat the verb: `Yes, I am` / `No, I'm not`. Not just `yes`.
-- *JP:* bare `yes`/`no` sounds curt in English, and Japanese has no equivalent of the echoed
-  auxiliary. Also the first place to warn about negative questions — see 41.
-- *Spiral review:* `ART-01:checkpoint` · `BEQ-01:controlled`
-
-*▸ Checkpoint 1 · Perform: meet someone, say what you do, introduce a third person, and return a
-lost object.*
-*Review: subject always present · S-V-O order · `a`/`an` with jobs · `be` questions by inversion.*
-
-## Unit 2 · Say what is around you · 5 lessons · **Pre-A1 → A1**
+## Unit 2 · Say what is around you · 5 lessons · **A1**
 
 *Existence, weather, quantity and the definite article. This unit carries the two English subjects
 that mean nothing at all, and the first real article decision.*
@@ -235,13 +204,13 @@ that mean nothing at all, and the first real article decision.*
 **7. There's a café near here — say what exists**
 
 *Can-do: say whether something exists nearby and where it is.*
-- "There's a café near here." — `There's a ___ near here.`
+- "There's a café near here." — `There's a/an ___ near here.`
 - "It's next to the bank." — `It's next to ___.`
 - *Expressions:* `Is there a ___ around here?` · `over there`
 - *Grammar:* `there` here is not a place. It is the word English uses to say something exists.
 - *JP:* `ある`/`いる` needs no dummy subject, so `Near here a café is` is predicted. Teach `there is`
   as one unanalysed chunk first; the structure can wait.
-- *Spiral review:* `PREP-01:controlled`
+- *Spiral review:* `PREP-01:controlled` · `BEQ-01:recognition`
 
 **8. It's cold today — talk about today's weather**
 
@@ -258,7 +227,7 @@ that mean nothing at all, and the first real article decision.*
 
 *Can-do: order a counted item and correct the quantity if needed.*
 - "Two coffees, please." — `Two ___, please.`
-- "Actually, just one coffee, thanks." — `Actually, just one ___, thanks.`
+- "Actually, just one coffee, thanks." — `Actually, just ___, thanks.`
 - *Expressions:* `Anything else?` · `That's all, thanks.`
 - *Grammar:* more than one takes `-s`. It is not optional, even when the number is already there.
 - *JP:* Japanese does not obligatorily mark plural — `二つの本` marks number once, not twice. So
@@ -369,7 +338,7 @@ Japanese equivalent and gets its own lesson here rather than being spread thin.*
 **18. Can you drive? — talk about ability and limits**
 
 *Can-do: ask about an ability and describe what you can and cannot do.*
-- "Can you drive?" — `Can you ___?`
+- "Can you drive?" — `Can ___ ___?`
 - "I can ride a bike, but I can't drive." — `I can ___, but I can't ___.`
 - *Expressions:* `pretty well` · `not yet`
 - *Grammar:* `can` carries the grammar, so the next verb stays plain: `can drive`, not `can drives`
@@ -444,7 +413,7 @@ it just has nowhere to attach in English.*
 
 *Can-do: ask for an amount of something you cannot count.*
 - "Two cups of coffee, please." — `Two cups of ___, please.`
-- "How much rice do we need?" — `How much ___ do we need?`
+- "How much rice do we need?" — `How much/many ___ do we need?`
 - *Expressions:* `a little` · `a lot of`
 - *Grammar:* some things are not counted directly — you count the container: `a cup of`, `a piece
   of`, `a bottle of`.
@@ -595,7 +564,7 @@ irregular forms and, again, the auxiliary.*
 
 *Can-do: give a negative answer about the past and add a reason.*
 - "I didn't sleep well." — `I didn't ___.`
-- "I had too much coffee." — `I had too much ___.`
+- "I had too much coffee." — `I had too much/many ___.`
 - *Expressions:* `unfortunately` · `that's why`
 - *Grammar:* `didn't` + plain verb. Same trap as 33.
 - *JP:* `I didn't slept` is predicted for the same reason as `Did you went`.
@@ -1002,7 +971,7 @@ identify one person by what they did.*
 **65. My wallet was stolen — report what happened**
 
 *Can-do: report what happened to a possession and where it happened.*
-- "My wallet was stolen." — `My ___ was stolen.`
+- "My wallet was stolen." — `My ___ was/were stolen.`
 - "It was taken from my bag." — `It was taken from ___.`
 - *Expressions:* `apparently` · `it turns out`
 - *Grammar:* use this when who did it doesn't matter or isn't known.
@@ -1305,7 +1274,7 @@ you've understood, make a difficult request, and postpone one decision.*
 **87. It's slightly more expensive — say how much more**
 
 *Can-do: compare with precision instead of a bare comparative.*
-- "It's slightly more expensive." — `It's slightly more ___.`
+- "It's slightly more expensive." — `It's slightly ___er / slightly more ___.`
 - "It's nowhere near as fast as the train." — `It's nowhere near as ___ as ___.`
 - *Expressions:* `marginally` · `a fraction more`
 - *Grammar:* put `slightly` before a comparative for a small difference; `nowhere near as` + adjective + `as` means far less than the comparison.
@@ -1316,7 +1285,7 @@ you've understood, make a difficult request, and postpone one decision.*
 
 *Can-do: describe an amount close to none without saying "not many".*
 - "Hardly anyone came." — `Hardly anyone ___.`
-- "There's barely any left." — `There's barely any ___.`
+- "There's barely any coffee left." — `There's/There are barely any ___.`
 - *Expressions:* `next to nothing` · `few and far between`
 - *Grammar:* `hardly` and `barely` already mean almost not, so keep the verb positive; use `anyone` for people and `any` + noun for an amount.
 - *JP:* `hardly` is not a negative word but behaves like one, so `hardly anyone didn't come` is
@@ -1527,7 +1496,7 @@ tool to choose, and that is the difference between B1 and B2 English.*
 **106. There's one thing I'd change — introduce with weight**
 
 *Can-do: announce a point before making it.*
-- "There's one thing I'd change." — `There's one thing I'd ___.`
+- "There's one thing I'd change." — `There's one thing / There are ___ things I'd ___.`
 - "There are a couple of issues worth raising." — `There are ___ worth ___ing.`
 - *Expressions:* `if I may` · `while we're on it`
 - *Grammar:* choose `There's` or `There are` to agree with the following noun; `worth` is followed by an `-ing` form.

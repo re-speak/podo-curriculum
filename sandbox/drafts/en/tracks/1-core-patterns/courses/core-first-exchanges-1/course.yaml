@@ -36,12 +36,9 @@ spec:
 
 # Planned lessons only. Prestudy is deferred, so this generator intentionally
 # does not create lesson.yaml or represent any English lesson as deployable.
-#     1  ·  CORE-1 · Hi, I'm Mina
-#     2  ·  CORE-2 · I'm a designer
-#     3  ·  CORE-3 · I live in Tokyo
-#     4  ·  CORE-4 · This is my friend, Leo
-#     5  ·  CORE-5 · Is this your bag?
-#     6  ·  CORE-6 · Are you a student?
+#     1  ·  CORE-1 · I'm Mina
+#     2  ·  CORE-2 · I'm from Osaka
+#     3  ·  CORE-3 · Is this yours?
 #     7  ·  CORE-7 · There's a café near here
 #     8  ·  CORE-8 · It's cold today
 #     9  ·  CORE-9 · Two coffees, please

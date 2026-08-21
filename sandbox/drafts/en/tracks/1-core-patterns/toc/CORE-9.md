@@ -8,7 +8,7 @@
 
 - **Track:** `1-core-patterns`
 - **Stable review id:** `CORE-9`
-- **Level:** Pre-A1 → A1
+- **Level:** A1
 
 ## Outcome
 
@@ -25,7 +25,7 @@
 ### Pattern 2
 
 - **Model:** Actually, just one coffee, thanks.
-- **Frame:** `Actually, just one ___, thanks.`
+- **Frame:** `Actually, just ___, thanks.`
 
 ## Supporting content
 
@@ -41,7 +41,7 @@
 
 - **Already learned:** Core 1–8.
 - **Not yet:** Core 10–122. Do not use their forms in learner-produced language.
-- **Most recent available forms:** CORE-6 Are you a student? · CORE-7 There's a café near here · CORE-8 It's cold today
+- **Most recent available forms:** CORE-3 Is this yours? · CORE-7 There's a café near here · CORE-8 It's cold today
 - **Nearest protected forms:** CORE-10 The café on the corner · CORE-11 Where's the station? · CORE-12 I start work at nine
 - The readiness gate applies to the complete learner-produced model, including every fixed word.
 - Apart from this lesson's two taught patterns, productive grammar must come from earlier Core lessons.
