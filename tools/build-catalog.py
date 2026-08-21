@@ -120,6 +120,14 @@ FAMILIES = [
                "desc": {"ko": "수업을 처음 열어 보는 55분짜리 한 과 코스. 레벨마다 하나씩 있습니다.",
                         "ja": "はじめて授業を開く55分・1レッスンのコース。レベルごとに1つ用意しています。",
                         "en": "A single 55-minute lesson for opening a class for the first time — one per level."}},
+        # 영어 체험은 25분이고, 한국어와 달리 리포트가 덱 안에 없다 — 레슨으로 끝나고
+        # 튜터가 작별 뒤에 레벨만 남긴다. 리포트는 그다음 채팅에서 학습자가 읽는다.
+        "en": {"slug": "trial", "palette": 4, "ko": "체험 레슨", "en": "Trial Lessons",
+               "chip": "Trial", "glyph": "T",
+               "ja": "体験レッスン",
+               "desc": {"ko": "수업을 처음 열어 보는 25분짜리 한 과 코스. 레벨마다 하나씩 있습니다.",
+                        "ja": "はじめて授業を開く25分・1レッスンのコース。レベルごとに1つ用意しています。",
+                        "en": "A single 25-minute lesson for opening a class for the first time — one per level."}},
     }),
     ("hangul-", {
         "kr": {"slug": "1-hangul", "palette": 0, "ko": "한글 읽기", "en": "Hangul Reading",
@@ -335,6 +343,24 @@ def strings() -> dict:
     return json.loads((TEMPLATES / "i18n.json").read_text(encoding="utf-8"))
 
 
+def _assert_ids_exist(template: str, text: str) -> None:
+    """스크립트가 만지는 id 가 그 페이지에 실제로 있는지 본다.
+
+    카탈로그는 브라우저에서 그려진다. getElementById 가 없는 자리를 집으면 그 줄이
+    던지고 아래 전부가 멈춰, 페이지가 **빈 화면으로** 나간다 — 파이썬 쪽 검사도,
+    node --check 도 이것을 잡지 못한다(문법은 멀쩡하다). 실제로 각주 하나를 지우면서
+    그 안의 <code id="src">가 함께 사라졌고, 코스 페이지가 통째로 비었다."""
+    import re
+    ids = set(re.findall(r'id="([^"]+)"', text))
+    used = set(re.findall(r'getElementById\("([^"]+)"\)', text))
+    missing = sorted(used - ids)
+    if missing:
+        raise SystemExit(
+            f"{template}: 스크립트가 없는 id 를 집는다 — {', '.join(missing)}. "
+            f"그 자리를 지웠다면 집는 줄도 함께 지워라. 두면 페이지가 빈 화면이 된다."
+        )
+
+
 def fill(template: str, data: dict) -> str:
     """Both templates take their data at one marked spot and render themselves.
 
@@ -346,6 +372,7 @@ def fill(template: str, data: dict) -> str:
     text = (TEMPLATES / template).read_text(encoding="utf-8")
     if text.count(marker) != 1:
         raise SystemExit(f"{template}: expected exactly one {marker}")
+    _assert_ids_exist(template, text)
     return text.replace(marker, json.dumps(data, ensure_ascii=False))
 
 
