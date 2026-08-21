@@ -569,7 +569,7 @@ Contextual Korean의 `p3-freetalk` 은 반드시 네 차례로 닫습니다: **�
 - **`data-sync-id` 가 있는 요소만 공유됩니다.** id 가 없으면 그 칸은 각자의 것입니다.
 - 정답/오답은 절대 공유하지 않습니다 — 고른 값만 보내고 판정은 양쪽이 각자 합니다.
 - 티칭 모드(답 보기)는 공유하지 않습니다.
-- 자세한 계약은 [`interaction-protocol.md`](./interaction-protocol.md).
+- 자세한 계약은 [`interaction-protocol.md`](../../../shared/interaction-protocol.md).
 
 ---
 

@@ -1,18 +1,28 @@
 # Working in `korean/`
 
-**Read [`ux-philosophy.md`](../ux-philosophy.md) before touching anything in this folder — every
-time, including small edits.** It is the contract for every lesson page: one activity per page,
-instant clarity, minimal everything, Korean-first titles, one blue tutor-script box, one boxed
-component that *fills* the page, receptive → productive.
+**Read [`../../../shared/ux-philosophy.md`](../../../shared/ux-philosophy.md) and
+[`../../../shared/deltas-kr.md`](../../../shared/deltas-kr.md) before touching anything in this
+folder — every time, including small edits.** The first is the language-neutral contract for
+every lesson page in this repo: one activity per page, instant clarity, minimal everything, one
+blue tutor-script box, one boxed component that *fills* the page, receptive → productive. The
+second holds everything that is Korean-specific — the level bands, the `.yomi` scaffold and its
+switch, the decoding arc, "romanize the parts", the citation marks, the agglutination allowance
+on reorder chunking, and the cream/pink consonant-vowel seats.
 
-Do not design a page, add a component, or write copy here until you have read it. If a change
-you are about to make conflicts with it, say so and ask — don't quietly deviate.
+Do not design a page, add a component, or write copy here until you have read both. If a change
+you are about to make conflicts with either, say so and ask — don't quietly deviate.
+
+**Where a new rule goes.** `ux-philosophy.md` used to be this curriculum's own file and English
+was an appendix to it. It is now shared, and a Korean learning no longer becomes a shared rule
+just by being written down. If a rule would be just as true of English, put it in
+`ux-philosophy.md`; if it follows from the target language being Korean, put it in
+`deltas-kr.md`; and either way check whether `deltas-en.md` needs the answering entry.
 
 ## Also true of this folder
 
-- **Shared design system:** `runtime/css/lesson-card.css`. White cards on a 1px grey outline; the
+- **Shared design system:** `../../../shared/css/lesson-card.css`. White cards on a 1px grey outline; the
   palette lives in `:root` there — **use the tokens, never the hex**. Per-track additions go in
-  that track's own stylesheet, loaded after it (e.g. `runtime/css/trial.css`). Reuse the existing
+  that track's own stylesheet, loaded after it (e.g. `../../../shared/css/trial.css`). Reuse the existing
   component vocabulary before inventing a new one — consistency over novelty.
 - **Every colour means one thing.** `green-500`/`green-100` = state (chosen, correct, active).
   `blue-100` = the tutor's spoken script. `lime` = brand chrome only, never state.
@@ -272,7 +282,7 @@ attributes and all, and there is nothing further to read. This is the normal cas
 why building a lesson out of the existing component vocabulary is cheaper *and* safer than
 inventing markup.
 
-**Read [`interaction-protocol.md`](./interaction-protocol.md) only when
+**Read [`interaction-protocol.md`](../../../shared/interaction-protocol.md) only when
 you are inventing a new interaction type** — a new `data-sync-kind`, a new way of sharing state,
 anything not already in the vocabulary. Getting it wrong there fails silently: the activity
 works on your screen and never reaches the other person. Packaging a deck into an uploadable

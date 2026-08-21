@@ -3,10 +3,11 @@
 This repo deploys. A merge to `main` changes what a learner sees in a live class,
 so the bar is closer to `podo-database-schema` than to a docs repo.
 
-## The branch is the environment
+## The branch is the release boundary
 
 Every change ships through the same four steps. There is no other path — the two
-merges *are* the two deploys.
+merges *are* the two deploys. Four environments, two branches: `stage` fills the
+three non-production ones in one build, `main` is prod.
 
 ```sh
 # 1. branch off stage, PR into stage
@@ -14,15 +15,21 @@ git fetch origin && git switch -c feat/my-lesson origin/stage
 python3 tools/validate.py --env stage
 git push -u origin feat/my-lesson && gh pr create --base stage
 
-# 2. merge → podo-curriculum-deploy-stage applies to stage, automatically
+# 2. merge → podo-curriculum-deploy-stage applies to stage, qa, dev — automatically
 # 3. gh pr create --base main --head stage        ← the release PR
 # 4. merge → podo-curriculum-deploy-prod applies to prod, automatically
 ```
 
 - **Work branches off `origin/stage`, and the PR's base is `stage`.** Merging to
-  `stage` deploys to stage, automatically — there is no button.
-- **Stop at stage and look.** Step 2 is the only environment where a mistake is
-  cheap; don't open the release PR until stage is verified.
+  `stage` deploys to stage, qa and dev, automatically — there is no button.
+- **Stop before the release PR and look.** Step 2 covers the only environments
+  where a mistake is cheap; don't open the release PR until you have verified in one.
+- **Verify in qa or dev, not stage, when it has to survive the night.** stage is a
+  prod clone that is overwritten from prod every morning, which resets
+  `CLASS_LEMONBOARD_KEY` to prod's room ids. qa and dev keep their own data.
+- **There is no qa or dev lemonboard.** All three non-production environments share
+  the stage one (`getPodoEnv() != "prod"`), so their rooms sit side by side under
+  identical names. What separates their content is the `-{env}` prefix in `contentUrl`.
 - **`main` is prod.** The `stage → main` PR is the release; merging it changes what a
   learner in a live class sees, immediately. Review that PR as a deploy approval,
   because that is what it is.
@@ -46,9 +53,14 @@ python3 tools/promote.py                                       # write courses/
 python3 tools/repoint-shared.py && python3 tools/validate.py    # pin + gate
 ```
 
-- **`tools/authoring/{kr,en}/`** holds the checkers, the lesson scaffolder
-  (`new_lesson.py`), course planning and the brief/catalog builders. Run them
-  against the drafts, not `courses/`.
+- **`tools/authoring/`** holds the checks that are true of both curricula —
+  `check_deck.py`, `check_quotes.py`, `vocabulary.py`, `page_review.py`. Run them
+  against either corpus; `--all` walks the whole repo. **`tools/authoring/{kr,en}/`**
+  holds what is genuinely language-specific, plus the lesson scaffolder
+  (`new_lesson.py`), course planning and the brief/catalog builders. Run all of them
+  against the drafts, not `courses/`. **A new check goes in the shared directory
+  unless it cannot be written for the other language** — filing a general check under
+  one language is how the last round of duplicated rules started.
 - **Promotion is named in a manifest**, `promotion.yaml`, sitting beside the
   drafts. Adding a lesson to a course means adding a row there — that row is the
   reviewable part. `tools/make-promotion.py` derives the whole file from the decks
@@ -71,19 +83,35 @@ python3 tools/repoint-shared.py && python3 tools/validate.py    # pin + gate
 
 ## Before touching a deck
 
-**Read [`shared/ux-philosophy.md`](shared/ux-philosophy.md) — every time, including
-small edits.** It is the contract for every lesson page: one activity per page,
-instant clarity, minimal everything, Korean-first titles, one blue tutor-script
-box, one boxed component that *fills* the page, receptive → productive.
+**Read [`shared/ux-philosophy.md`](shared/ux-philosophy.md) plus the delta file for
+the language you are working in — every time, including small edits.**
 
-If a change you are about to make conflicts with it, say so and ask — don't
-quietly deviate.
+- [`shared/ux-philosophy.md`](shared/ux-philosophy.md) — the language-neutral
+  contract for every lesson page: one activity per page, instant clarity, minimal
+  everything, target-language-first titles, one blue tutor-script box, one boxed
+  component that *fills* the page, receptive → productive.
+- [`shared/deltas-kr.md`](shared/deltas-kr.md) — Korean for Japanese speakers.
+- [`shared/deltas-en.md`](shared/deltas-en.md) — English for Japanese speakers.
+
+A delta is a consequence of the target language changing, never a matter of taste.
+**A rule that would be just as true of the other language belongs in
+`ux-philosophy.md`.** That split is the whole point of the three files: the contract
+was a Korean document with an English appendix until 2026-08-22, so an English
+learning had nowhere to flow back to, and both curricula spent a week re-deriving
+each other's rules a day apart and disagreeing on the details.
+
+If a change you are about to make conflicts with any of the three, say so and ask —
+don't quietly deviate.
 
 ## Also true here
 
 - **Shared design system:** `shared/css/lesson-card.css`. The palette lives in `:root` — **use the tokens, never the hex.** Reuse the existing component vocabulary before inventing one.
 - **Every colour means one thing.** `green-500`/`green-100` = state. `blue-100` = the tutor's spoken script. `lime` = brand chrome only, never state. `gray-200` = ordinary outlines. Dashed grey = "write here".
-- **Audience is Japanese speakers learning Korean.** All support text is Japanese; no English. Sound anchors are kana.
+- **Two curricula, one audience.** Japanese speakers learning **Korean** (`courses/kr`,
+  `sandbox/drafts/kr`) and Japanese speakers learning **English** (`courses/en`,
+  `sandbox/drafts/en`). Support text is Japanese in both; the target language is whichever
+  the deck teaches. Kana sound anchors are a Korean-only device — kana over English installs
+  the error instead of scaffolding it, so English decks carry none at any level.
 - **Lessons are audio-only.** The learner hears the tutor but never sees them, so no instruction may depend on watching (口の形をまねして, gestures, "look at me").
 - **Max two levels of boxes:** the page card plus ONE boxed component inside it.
 - Every page needs `<meta name="google" content="notranslate">` or Chrome mangles the mixed ja/ko content.
