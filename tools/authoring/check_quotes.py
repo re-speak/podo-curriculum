@@ -13,7 +13,7 @@ import re
 import sys
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[3]
+REPO = Path(__file__).resolve().parents[2]
 
 HANGUL = re.compile(r"[가-힣]+(?:[\s··][가-힣]+)*[?!.]?")
 TAG = re.compile(r"<[^>]+>")

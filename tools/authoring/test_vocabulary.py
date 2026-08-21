@@ -10,12 +10,15 @@ import unittest
 
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+# The vocabulary contract is shared; the running lexicon it feeds is still an
+# English-only ledger, so that one import reaches down into `en/`.
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "en"))
 import build_running_lexicon
 import check_deck
 import vocabulary
 
 
-ROOT = pathlib.Path(__file__).resolve().parents[3] / "sandbox/drafts/en"
+ROOT = pathlib.Path(__file__).resolve().parents[2] / "sandbox/drafts/en"
 PILOT = ROOT / "tracks/1-core-patterns/courses/core-first-exchanges-2/lessons/20-asking-for-help/lesson.html"
 
 

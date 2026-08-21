@@ -14,7 +14,7 @@ from typing import Any
 
 import check_deck
 
-REPO = pathlib.Path(__file__).resolve().parents[3]
+REPO = pathlib.Path(__file__).resolve().parents[2]
 SCHEMA_VERSION = 2
 PAGE_ID_RE = re.compile(r'\bdata-page-id=["\']([^"\']+)["\']')
 REQUIRED_PAGE_FIELDS = (

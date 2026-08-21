@@ -96,7 +96,7 @@ from itertools import permutations
 
 import vocabulary
 
-REPO = pathlib.Path(__file__).resolve().parents[3]
+REPO = pathlib.Path(__file__).resolve().parents[2]
 
 EN_END = ".!?"
 JA_END = "。！？"

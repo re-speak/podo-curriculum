@@ -10,6 +10,7 @@ import re
 import sys
 from html.parser import HTMLParser
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 import generate_contextual_complex_workplace_batch as renderer

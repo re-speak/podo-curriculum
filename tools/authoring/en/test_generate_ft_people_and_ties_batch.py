@@ -6,6 +6,12 @@ import re
 import unittest
 from unittest import mock
 
+import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
 import check_deck
 import generate_ft_people_and_ties_batch as batch
 import vocabulary
