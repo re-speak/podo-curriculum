@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import filecmp
+import json
 import pathlib
 import shutil
 import subprocess
@@ -86,6 +87,32 @@ def verify_cdn(base: str, join: str, version: str, rel: str, local: pathlib.Path
     if served != local.read_bytes():
         return f"  ✗ {url}\n    served {len(served)} bytes, local has {local.stat().st_size} — MISMATCH"
     return f"  ✓ {url}  ({len(served)} bytes, matches local)"
+
+
+def purge_latest(shared: pathlib.Path, repo: str) -> None:
+    """`@latest` 를 보는 소비자를 위해 엣지 캐시를 비운다.
+
+    덱은 태그를 고정해 보므로 이 함수가 필요 없다. 필요한 쪽은 원톡 상담 안내다 —
+    코스 카드를 `@latest` 로 받아 가는데(podo-app `course-card-asset.ts`), 그 별칭은
+    jsDelivr 엣지에서 12시간 캐시된다. 비우지 않으면 새로 구운 카드가 반나절 동안
+    학생에게 닿지 않는다.
+
+    실패해도 발행 자체는 이미 끝났으므로 경고만 남기고 넘어간다 — 12시간 뒤에는
+    어차피 저절로 새 파일이 나간다.
+    """
+    cards = sorted((shared / "assets").glob("course-card-*.png"))
+    if not cards:
+        return
+
+    print()
+    for card in cards:
+        path = f"/gh/{repo}@latest/assets/{card.name}"
+        try:
+            with urllib.request.urlopen(f"https://purge.jsdelivr.net{path}", timeout=20) as response:
+                ok = json.loads(response.read()).get("status") == "finished"
+            print(f"purged  : {card.name}" if ok else f"purge?  : {card.name} (엣지가 아직 비우는 중)")
+        except (urllib.error.URLError, ValueError, TimeoutError) as error:
+            print(f"purge!  : {card.name} — {error} (12시간 뒤 저절로 갱신됩니다)", file=sys.stderr)
 
 
 def main() -> int:
@@ -183,6 +210,8 @@ def main() -> int:
         for rel in ("css/trial.css", "js/activities.js"):
             if (shared / rel).is_file():
                 print(verify_cdn(base, join, version, rel, shared / rel))
+
+        purge_latest(shared, repo)
 
     print()
     print(f"✓ published. Now repoint the decks:  python3 tools/repoint-shared.py")
