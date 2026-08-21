@@ -151,7 +151,7 @@ FAMILIES = [
 ]
 
 # 언어마다 디렉터리 하나. 깊이는 upstream 의 트리 그대로라 vendor 한 템플릿의
-# ../site.css · ../../favicon.png · ../${deck} 이 한 줄도 고치지 않고 맞는다.
+# ../site.css · ../../favicon.svg · ../${deck} 이 한 줄도 고치지 않고 맞는다.
 # 이름만 두 가지가 다르다:
 #
 #   korean-jp/index.html          ← upstream 은 korean/catalog.html
@@ -598,7 +598,7 @@ def build(out: pathlib.Path) -> dict:
     out.mkdir(parents=True)
     shutil.copy2(TEMPLATES / "site.css", out / "site.css")
     shutil.copy2(TEMPLATES / "favicon.ico", out / "favicon.ico")
-    shutil.copy2(TEMPLATES / "favicon.png", out / "favicon.png")
+    shutil.copy2(TEMPLATES / "favicon.svg", out / "favicon.svg")
 
     catalog_json, cards = [], []
     counts = {"tracks": 0, "courses": 0, "lessons": 0, "decks": 0}
@@ -660,8 +660,7 @@ VIEWER = """<!DOCTYPE html>
 <meta name="theme-color" content="#ffffff">
 <title>{title} · {slot} · PODO</title>
 <link rel="icon" href="{up}favicon.ico" sizes="any">
-<link rel="icon" href="{up}favicon.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="{up}favicon.png">
+<link rel="icon" href="{up}favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="{up}site.css">
 <style>
@@ -700,7 +699,7 @@ VIEWER = """<!DOCTYPE html>
 <a class="podo-skip" href="#deck">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" href="{home}"><img src="{up}favicon.png" width="28" height="28" alt="">PODO Curriculum</a>
+    <a class="podo-brand" href="{home}"><img src="{up}favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
     <nav class="podo-nav" aria-label="커리큘럼 탐색">
 {nav}
     </nav>
