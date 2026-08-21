@@ -114,7 +114,7 @@
 | `part3-intro` | `.transition-page` | 장면을 연다 |
 | `p3-model` | `.dialogue` | 완성된 대화. 튜터가 한쪽, 학습자가 다른 쪽 |
 | `p3-complete` | `.dialogue` + `.answer-box` | 같은 대화, 학습자 대사가 비어 있다 |
-| `p3-freetalk` | `.dialogue` + `.answer-box small` | 진짜 자기 이야기로 같은 장면 |
+| `p3-freetalk` | `.dialogue` + `.answer-box small` | 본인 이야기로 같은 장면 |
 
 `korea-trip` 은 같은 패턴을 **다른 장면**에 얹어 전이를 확인한다(게스트하우스, 식당…).
 `native-tip` 은 원어민이 실제로 줄여 말하는 방식 한 개 — 새 문법이 아니라 관찰이다.
