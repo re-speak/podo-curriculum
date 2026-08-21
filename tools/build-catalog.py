@@ -66,7 +66,6 @@ import model  # noqa: E402
 
 REPO = model.REPO
 TEMPLATES = REPO / "tools" / "catalog"
-SOURCE_URL = "https://github.com/re-speak/podo-curriculum/blob/main"
 
 # 이 사이트가 서빙될 도메인. 값이 있으면 gh-pages 에 CNAME 으로 나간다.
 #
@@ -81,7 +80,8 @@ SOURCE_URL = "https://github.com/re-speak/podo-curriculum/blob/main"
 #   2. 여기에 도메인을 적고 릴리스한다
 #   3. Settings → Pages 에서 DNS check 가 초록이 되면 Enforce HTTPS 를 켠다
 CUSTOM_DOMAIN = "curriculum.podospeaking.com"
-REPO_URL = "https://github.com/re-speak/podo-curriculum"
+# 저장소 링크는 카탈로그에 두지 않는다. 이 사이트는 학습자가 보는 곳이고, 소스로
+# 나가는 문은 읽는 사람에게 할 일을 주지 않으면서 내부 사정만 드러낸다.
 
 # 레벨의 원본은 course.yaml 의 `# podo:level:` 주석 한 줄이다. 스키마가 metadata 에
 # 새 필드를 막아서 주석으로 사는 값이고, tools/authoring/kr/new_lesson.py 가 덱의
@@ -116,37 +116,61 @@ FAMILIES = [
     ("trial-", {
         "kr": {"slug": "trial", "palette": 4, "ko": "체험 레슨", "en": "Trial Lessons",
                "chip": "Trial", "glyph": "체",
-               "desc": "수업을 처음 열어 보는 55분짜리 한 과 코스. 레벨마다 하나씩 있습니다."},
+               "ja": "体験レッスン",
+               "desc": {"ko": "수업을 처음 열어 보는 55분짜리 한 과 코스. 레벨마다 하나씩 있습니다.",
+                        "ja": "はじめて授業を開く55分・1レッスンのコース。レベルごとに1つ用意しています。",
+                        "en": "A single 55-minute lesson for opening a class for the first time — one per level."}},
     }),
     ("hangul-", {
         "kr": {"slug": "1-hangul", "palette": 0, "ko": "한글 읽기", "en": "Hangul Reading",
                "chip": "Hangul", "glyph": "가",
-               "desc": "어떤 한국어 음절이든 소리 내어 읽을 수 있게. 한 레슨에 새 요소는 하나만."},
+               "ja": "ハングルを読む",
+               "desc": {"ko": "어떤 한국어 음절이든 소리 내어 읽을 수 있게. 한 레슨에 새 요소는 하나만.",
+                        "ja": "どんな韓国語の音節も声に出して読めるように。1レッスンで新しい要素は1つだけ。",
+                        "en": "Read any Korean syllable aloud. One new element per lesson, never two."}},
     }),
     ("core-", {
         "kr": {"slug": "2-core-patterns", "palette": 1, "ko": "핵심 문법 패턴", "en": "Core Patterns",
                "chip": "Core", "glyph": "文",
-               "desc": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. 초급부터 고급까지 쌓아 올립니다."},
+               "ja": "コア文法パターン",
+               "desc": {"ko": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. 초급부터 고급까지 쌓아 올립니다.",
+                        "ja": "文法の背骨。1レッスン＝できること1つ＋パターン2つ。初級から上級まで積み上げます。",
+                        "en": "The spine of grammar. One lesson = one can-do plus two patterns, beginner to advanced."}},
         "en": {"slug": "1-core-patterns", "palette": 1, "ko": "영어 핵심 패턴", "en": "Core Patterns",
                "chip": "Core", "glyph": "英",
-               "desc": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. CEFR 을 따라 쌓아 올립니다."},
+               "ja": "英語コアパターン",
+               "desc": {"ko": "문법의 척추. 1과＝할 수 있는 것 1개＋패턴 2개. CEFR 을 따라 쌓아 올립니다.",
+                        "ja": "文法の背骨。1レッスン＝できること1つ＋パターン2つ。CEFR に沿って積み上げます。",
+                        "en": "The spine of grammar. One lesson = one can-do plus two patterns, following CEFR."}},
     }),
     ("ctx-", {
         "kr": {"slug": "3-contextual-korean", "palette": 2, "ko": "상황별 한국어", "en": "Contextual Korean",
                "chip": "Contextual", "glyph": "劇",
-               "desc": "드라마·K-POP·여행·반말 — 흥미 있는 소재에서 패턴을 실전으로 추출."},
+               "ja": "場面別の韓国語",
+               "desc": {"ko": "드라마·K-POP·여행·반말 — 흥미 있는 소재에서 패턴을 실전으로 추출.",
+                        "ja": "ドラマ・K-POP・旅行・タメ口 — 興味のある題材から、パターンを実戦で取り出します。",
+                        "en": "Drama, K-pop, travel, casual speech — patterns pulled from material you actually care about."}},
         "en": {"slug": "2-contextual-english", "palette": 2, "ko": "상황별 영어", "en": "Contextual English",
                "chip": "Contextual", "glyph": "場",
-               "desc": "장면이 정해진 대화 — 흥미 있는 소재에서 패턴을 실전으로 추출."},
+               "ja": "場面別の英語",
+               "desc": {"ko": "장면이 정해진 대화 — 흥미 있는 소재에서 패턴을 실전으로 추출.",
+                        "ja": "場面が決まった会話 — 興味のある題材から、パターンを実戦で取り出します。",
+                        "en": "Conversations with a fixed setting — patterns pulled from material you care about."}},
     }),
     ("talk-", {
         "kr": {"slug": "4-freetalking", "palette": 3, "ko": "중급·고급 프리토킹",
                "en": "Intermediate & Advanced Freetalking",
                "chip": "Freetalking", "glyph": "話",
-               "desc": "새 문법은 없음 — 말하고 싶어지는 주제만. 끝이 없는 트랙이라 주제는 계속 늘어납니다."},
+               "ja": "中級・上級フリートーキング",
+               "desc": {"ko": "새 문법은 없음 — 말하고 싶어지는 주제만. 끝이 없는 트랙이라 주제는 계속 늘어납니다.",
+                        "ja": "新しい文法はありません — 話したくなる話題だけ。終わりのないトラックなので、話題は増え続けます。",
+                        "en": "No new grammar — only topics you want to talk about. An open-ended track that keeps growing."}},
         "en": {"slug": "3-freetalking", "palette": 3, "ko": "프리토킹", "en": "Freetalking",
                "chip": "Freetalking", "glyph": "話",
-               "desc": "새 문법은 없음 — 말하고 싶어지는 주제만."},
+               "ja": "フリートーキング",
+               "desc": {"ko": "새 문법은 없음 — 말하고 싶어지는 주제만.",
+                        "ja": "新しい文法はありません — 話したくなる話題だけ。",
+                        "en": "No new grammar — only topics you want to talk about."}},
     }),
 ]
 
@@ -164,34 +188,60 @@ LANGUAGES = {
     "kr": {
         "dir": "korean-jp",
         "nav": "한국어",
-        "title": "커리큘럼 카탈로그 · PODO 한국어",
-        "kicker": "PODO · 한국어 커리큘럼",
-        "h1": "개 과가<br>지금 수업에서 열립니다",
-        "lead": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
-                "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
-                "수업에서 열리는 파일 그대로 볼 수 있습니다.",
-        "tracksH": "학습 트랙",
-        "tracksP": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.",
-        "foot": "PODO · 한국어 커리큘럼 — 일본어 학습자를 위한 한국어 코스",
+        "title": {"ko": "커리큘럼 카탈로그 · PODO 한국어",
+                  "ja": "カリキュラム・カタログ · PODO 韓国語",
+                  "en": "Curriculum catalog · PODO Korean"},
+        "kicker": {"ko": "PODO · 한국어 커리큘럼", "ja": "PODO · 韓国語カリキュラム",
+                   "en": "PODO · Korean curriculum"},
+        "h1": {"ko": "개 과가<br>지금 수업에서 열립니다",
+               "ja": "レッスンが<br>いま授業で開きます",
+               "en": "lessons are open<br>in class right now"},
+        "lead": {"ko": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
+                       "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
+                       "수업에서 열리는 파일 그대로 볼 수 있습니다.",
+                 "ja": "いま授業で実際に開く教材です。トラックを一つ選ぶと、その中のすべての"
+                       "コースとレッスンを、授業用・予習用の教材まで、授業で開くファイルの"
+                       "まま見ることができます。",
+                 "en": "These are the decks that actually open in class. Pick a track to see "
+                       "every course and lesson inside it, including each lesson's in-class and "
+                       "prep decks, exactly as they open in class."},
+        "foot": {"ko": "PODO · 한국어 커리큘럼 — 일본어 학습자를 위한 한국어 코스",
+                 "ja": "PODO · 韓国語カリキュラム — 日本語話者のための韓国語コース",
+                 "en": "PODO · Korean curriculum — Korean courses for Japanese speakers"},
         "home": {"name": "Korean", "native": "한국어", "nativeLang": "ko", "modifier": "",
-                 "desc": "From first Hangul blocks through core patterns, contextual "
-                         "conversation, and advanced free talking."},
+                 "desc": {"ko": "한글 첫 글자부터 핵심 패턴, 상황별 대화, 고급 프리토킹까지.",
+                          "ja": "ハングルの最初の一文字から、コアパターン・場面別会話・上級フリートーキングまで。",
+                          "en": "From first Hangul blocks through core patterns, contextual "
+                                "conversation, and advanced free talking."}},
     },
     "en": {
         "dir": "english-jp",
         "nav": "English",
-        "title": "커리큘럼 카탈로그 · PODO 영어",
-        "kicker": "PODO · 영어 커리큘럼",
-        "h1": "개 과가<br>지금 수업에서 열립니다",
-        "lead": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
-                "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
-                "수업에서 열리는 파일 그대로 볼 수 있습니다.",
-        "tracksH": "학습 트랙",
-        "tracksP": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.",
-        "foot": "PODO · 영어 커리큘럼 — 일본어 학습자를 위한 영어 코스",
+        "title": {"ko": "커리큘럼 카탈로그 · PODO 영어",
+                  "ja": "カリキュラム・カタログ · PODO 英語",
+                  "en": "Curriculum catalog · PODO English"},
+        "kicker": {"ko": "PODO · 영어 커리큘럼", "ja": "PODO · 英語カリキュラム",
+                   "en": "PODO · English curriculum"},
+        "h1": {"ko": "개 과가<br>지금 수업에서 열립니다",
+               "ja": "レッスンが<br>いま授業で開きます",
+               "en": "lessons are open<br>in class right now"},
+        "lead": {"ko": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 "
+                       "그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 "
+                       "수업에서 열리는 파일 그대로 볼 수 있습니다.",
+                 "ja": "いま授業で実際に開く教材です。トラックを一つ選ぶと、その中のすべての"
+                       "コースとレッスンを、授業用・予習用の教材まで、授業で開くファイルの"
+                       "まま見ることができます。",
+                 "en": "These are the decks that actually open in class. Pick a track to see "
+                       "every course and lesson inside it, including each lesson's in-class and "
+                       "prep decks, exactly as they open in class."},
+        "foot": {"ko": "PODO · 영어 커리큘럼 — 일본어 학습자를 위한 영어 코스",
+                 "ja": "PODO · 英語カリキュラム — 日本語話者のための英語コース",
+                 "en": "PODO · English curriculum — English courses for Japanese speakers"},
         "home": {"name": "English", "native": "英語", "nativeLang": "ja", "modifier": "english",
-                 "desc": "A speaking-first sequence across core patterns, contextual "
-                         "English, and free talking."},
+                 "desc": {"ko": "핵심 패턴 · 상황별 영어 · 프리토킹을 말하기 중심으로 잇는 순서.",
+                          "ja": "コアパターン・場面別英語・フリートーキングを、話すことを軸につなぐ順序。",
+                          "en": "A speaking-first sequence across core patterns, contextual "
+                                "English, and free talking."}},
     },
 }
 
@@ -277,6 +327,14 @@ def course_family(course: model.Course) -> tuple[int, dict]:
     )
 
 
+def strings() -> dict:
+    """UI 문자열 한 벌. 세 로케일이 함께 나가고 고르는 일은 브라우저가 한다.
+
+    페이지를 로케일마다 굽지 않는 이유는 URL 이다 — /korean-jp 하나가 세 언어를
+    모두 답해야 링크가 언어에 따라 갈라지지 않는다."""
+    return json.loads((TEMPLATES / "i18n.json").read_text(encoding="utf-8"))
+
+
 def fill(template: str, data: dict) -> str:
     """Both templates take their data at one marked spot and render themselves.
 
@@ -284,10 +342,77 @@ def fill(template: str, data: dict) -> str:
     cheap: the templates stay upstream's files with upstream's script, and this
     module only decides what to put in them."""
     marker = "/*__DATA__*/null"
+    data = dict(data, i18n=strings())
     text = (TEMPLATES / template).read_text(encoding="utf-8")
     if text.count(marker) != 1:
         raise SystemExit(f"{template}: expected exactly one {marker}")
     return text.replace(marker, json.dumps(data, ensure_ascii=False))
+
+
+# --------------------------------------------------------------------------- #
+# 덱에서 읽어 오는 것 — 카탈로그가 비추는 원본은 덱이다
+# --------------------------------------------------------------------------- #
+
+# lesson.yaml 의 teaches 는 사람이 적는 값이고 그대로 둔다. 여기서 읽는 것은 카탈로그가
+# *보여 주기만* 하는 것들이다 — 오늘의 목표와, 프리토킹 과의 질문 여덟 개.
+#
+# 왜 lesson.yaml 이 아니라 덱인가. 이 값들은 이미 덱 안에 일본어까지 함께 적혀 있고,
+# 그것을 메타데이터로 옮겨 적으면 두 벌이 되어 언젠가 어긋난다. 카탈로그는 리뷰
+# 대상이 아니라 덱을 비추는 화면이라, 덱을 직접 읽으면 어긋날 자리가 없다.
+#
+# bs4 는 함수 안에서 부른다. validate.py 가 이 파일을 통째로 exec 해서 course_level ·
+# course_family 만 쓰는데, 위에서 import 하면 없는 bs4 하나가 머지 게이트를 죽인다 —
+# tools/requirements.txt 가 지키기로 한 성질이 바로 그것이다.
+
+
+def _soup(html: str):
+    from bs4 import BeautifulSoup
+    return BeautifulSoup(html, "html.parser")
+
+
+def _one_line(node) -> str:
+    """덱의 문장은 <b> 같은 강조를 품는다. 태그를 걷어내고 한 줄로 만든다."""
+    if node is None:
+        return ""
+    return " ".join(node.get_text(" ", strip=True).split())
+
+
+_DECK_FACTS: dict[pathlib.Path, dict] = {}
+
+
+def deck_facts(lesson) -> dict:
+    """수업용 덱에서 목표와 질문을 읽는다. 덱이 없으면 빈 값이다.
+
+    `t` 는 그 코스가 가르치는 언어의 문장이고(한국어 코스면 한국어, 영어 코스면 영어),
+    `ja` 는 그 옆에 늘 붙어 있는 일본어다. 덱이 두 언어를 이미 나란히 들고 있어서,
+    카탈로그의 언어 전환은 번역이 아니라 고르기가 된다."""
+    deck = lesson.decks.get("lecture")
+    path = getattr(deck, "path", None) or (lesson.root / "lecture" / "index.html")
+    if path in _DECK_FACTS:
+        return _DECK_FACTS[path]
+
+    facts = {"goal": None, "qs": []}
+    if path.exists():
+        s = _soup(path.read_text(encoding="utf-8", errors="replace"))
+        g = s.select_one('[data-page-id="lesson-goal"] p.section-subtitle')
+        if g:
+            t, ja = _one_line(g.select_one("span.ko")), _one_line(g.select_one("span.ja"))
+            if t or ja:
+                facts["goal"] = {"t": t, "ja": ja}
+        # 프리토킹 과의 질문. 다른 트랙의 덱에는 .ask 가 없어 그냥 빈 리스트가 된다.
+        for sec in s.select("div.section"):
+            ask = sec.select_one("p.section-subtitle.ask")
+            if ask is None:
+                continue
+            facts["qs"].append({
+                "n":  _one_line(ask.select_one("span.q-n")),
+                "t":  _one_line(ask.select_one("span.ko")),
+                "ja": _one_line(ask.select_one("span.ja")),
+                "f":  [_one_line(li) for li in sec.select("ul.tn-more li")],
+            })
+
+    _DECK_FACTS[path] = facts
+    return facts
 
 
 # --------------------------------------------------------------------------- #
@@ -329,6 +454,9 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
         "n": lesson.week,
         "title": pick(lesson.spec.get("title"), "ko", "ja", "en"),
         "sub": pick(lesson.spec.get("title"), "ja"),
+        # 제목은 이미 lesson.yaml 에 세 언어가 다 있다 — 전환은 번역이 아니라 고르기다.
+        "titles": {k: str(v) for k, v in (lesson.spec.get("title") or {}).items()
+                   if k in ("ko", "ja", "en") and v},
         "chips": chips,
         "jamo": bool(letters),
         # 트랙 페이지는 레벨로 거르고 레벨 태그를 과마다 붙인다. 코스 하나는 레벨
@@ -341,6 +469,14 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
     if can:
         entry["can"] = str(can)
         entry["canLabel"] = CAN_LABEL.get(family["slug"], "")
+
+    # 덱이 스스로 말하는 목표와 질문. canDo 와 나란히 두되 대체하지는 않는다 —
+    # canDo 는 커리큘럼이 적어 둔 목표이고, goal 은 학습자가 덱에서 실제로 읽는 문장이다.
+    facts = deck_facts(lesson)
+    if facts["goal"]:
+        entry["goal"] = facts["goal"]
+    if facts["qs"]:
+        entry["qs"] = facts["qs"]
     return entry
 
 
@@ -386,6 +522,7 @@ def track_entry(lang: str, no: int, family: dict,
         "no": no,
         "ko": family["ko"],
         "en": family["en"],
+        "ja": family["ja"],
         "glyph": family["glyph"],
         # 모든 과가 두 교재를 갖췄으면 완성, 아니면 계속 추가 중이다.
         "status": "open" if "open" in statuses else "live",
@@ -396,9 +533,9 @@ def track_entry(lang: str, no: int, family: dict,
         "desc": family["desc"],
         "note": "",
         "stats": [
-            {"k": LESSON_WORD, "v": len(lessons)},
-            {"k": UNIT_WORD, "v": len(units)},
-            {"k": "교재", "v": ready},
+            {"k": "lessonWord", "v": len(lessons)},
+            {"k": "unitWord", "v": len(units)},
+            {"k": "deckWordShort", "v": ready},
         ],
         "groups": units,
         "dist": dist,
@@ -467,7 +604,6 @@ def nav_links(built: list[str], lang: str | None, up: str) -> list[dict]:
         "href": f"{up}{LANGUAGES[code]['dir']}/",
         "current": code == lang,
     } for code in LANGUAGES if code in built]
-    links.append({"label": "Repository", "href": REPO_URL, "optional": True})
     return links
 
 
@@ -537,18 +673,18 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
     units = sum(tr["unitCount"] for tr in tracks)
 
     def page(up: str) -> dict:
+        """머리·꼬리의 말. 문장은 {ko,ja,en} 그대로 나가고 고르는 일은 브라우저가 한다.
+
+        숫자는 문장에서 떼어 따로 싣는다 — "3개의 학습 트랙" 을 언어마다 통째로
+        번역해 두면 트랙이 넷이 되는 날 세 문장을 같이 고쳐야 한다."""
         return {
             "title": cfg["title"],
             "kicker": cfg["kicker"],
             "lead": cfg["lead"],
             "h1": cfg["h1"],
-            "tracksH": f"{len(tracks)}개의 {cfg['tracksH']}",
-            "tracksP": cfg["tracksP"],
-            "lfoot": "레벨은 <code>course.yaml</code> 의 <code>#&nbsp;podo:level:</code> 줄을 "
-                     "그대로 옮긴 것입니다 — 덱의 <code>&lt;meta name=\"podo:level\"&gt;</code> 와 "
-                     "같은 값이고, 코스 하나는 레벨 하나에 놓입니다.",
+            "trackCount": len(tracks),
+            "stats": [[len(tracks), "tracksH"], [units, "unitWord"], [decks, "deckWord"]],
             "foot": cfg["foot"],
-            "stats": [[len(tracks), "학습 트랙"], [units, UNIT_WORD], [decks, "레슨 교재"]],
             "home": up or "./",
             "nav": nav_links(built, lang, up),
         }
@@ -614,9 +750,9 @@ def build(out: pathlib.Path) -> dict:
         cards.append({
             **cfg["home"],
             "href": f"{cfg['dir']}/",
-            "state": "계속 추가 중" if any(t["status"] == "open" for t in tracks) else "운영 중",
-            "counts": f"{sub['tracks']}개 트랙 · {sub['courses']}개 코스 · "
-                      f"{sub['lessons']}과",
+            "state": "growing" if any(t["status"] == "open" for t in tracks) else "live",
+            "counts": {"tracks": sub["tracks"], "courses": sub["courses"],
+                       "lessons": sub["lessons"]},
             "tracks": [{"label": next(f[lang]["chip"] for _, f in FAMILIES
                                       if lang in f and f[lang]["slug"] == t["id"]),
                         "accent": t["accent"]} for t in tracks],
@@ -626,8 +762,7 @@ def build(out: pathlib.Path) -> dict:
         "languages": cards,
         "nav": [{"label": LANGUAGES[c]["nav"],
                  "href": f"{LANGUAGES[c]['dir']}/"} for c in built]
-               + [{"label": "Repository", "href": REPO_URL, "optional": True}],
-        "foot": "이 페이지는 생성물입니다 — courses/ 의 enabled: true 인 코스만 실립니다.",
+               ,
     }), encoding="utf-8")
 
     (out / "catalog.json").write_text(
@@ -711,7 +846,6 @@ VIEWER = """<!DOCTYPE html>
   <span class="right">
     <span class="slot">{slot}</span>
     <a class="plain" href="{deck}" target="_blank" rel="noopener">전체 화면 ↗</a>
-    <a class="plain" href="{source}" target="_blank" rel="noopener">소스 ↗</a>
   </span>
 </div>
 <div class="stage">
@@ -778,7 +912,6 @@ def write_viewer(out, base, course, lesson, deck, family, lang, built,
         accent=accent,
         tint=tint,
         deck=e(os.path.relpath(base / deck["entry"], path.parent)),
-        source=e(f"{SOURCE_URL}/{deck['source']}"),
     ), encoding="utf-8")
 
 

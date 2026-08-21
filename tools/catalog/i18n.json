@@ -1,0 +1,331 @@
+{
+  "_note": "공개 카탈로그의 UI 문자열. 세 로케일이 한 벌로 나가고 브라우저에서 고른다 — 페이지를 세 번 굽지 않는다. 교재의 문장(목표·질문·패턴)은 여기 없다: 그건 덱이 원본이고 build-catalog.py 가 덱에서 읽는다.",
+  "locale": {
+    "ko": {
+      "ko": "한국어",
+      "ja": "韓国語",
+      "en": "Korean"
+    },
+    "ja": {
+      "ko": "일본어",
+      "ja": "日本語",
+      "en": "Japanese"
+    },
+    "en": {
+      "ko": "영어",
+      "ja": "英語",
+      "en": "English"
+    },
+    "label": {
+      "ko": "표시 언어",
+      "ja": "表示言語",
+      "en": "Display language"
+    }
+  },
+  "ui": {
+    "skip": {
+      "ko": "본문으로 건너뛰기",
+      "ja": "本文へスキップ",
+      "en": "Skip to content"
+    },
+    "homeKicker": {
+      "ko": "커리큘럼 라이브러리",
+      "ja": "カリキュラム・ライブラリ",
+      "en": "Curriculum library"
+    },
+    "homeH1": {
+      "ko": "일본어 화자를 위한 말하기 커리큘럼",
+      "ja": "日本語話者のためのスピーキング・カリキュラム",
+      "en": "Speaking curricula for Japanese learners."
+    },
+    "homeLead": {
+      "ko": "언어를 하나 골라 학습 순서와 트랙, 준비된 레슨 덱을 살펴보세요.",
+      "ja": "言語を選ぶと、学習の順序・トラック・公開済みのレッスンデッキを確認できます。",
+      "en": "Choose a language to inspect its learning sequence, curriculum tracks, and available lesson decks."
+    },
+    "chooseLang": {
+      "ko": "학습할 언어 고르기",
+      "ja": "学習する言語を選ぶ",
+      "en": "Choose a target language"
+    },
+    "ladder": {
+      "ko": "레벨 사다리",
+      "ja": "レベルの階段",
+      "en": "Level ladder"
+    },
+    "ladderP": {
+      "ko": "각 트랙이 어느 레벨 구간을 덮는지, 그 구간에 몇 과가 놓여 있는지.",
+      "ja": "各トラックがどのレベル帯をカバーし、そこに何レッスンあるか。",
+      "en": "Which level range each track covers, and how many lessons sit in it."
+    },
+    "readyDecks": {
+      "ko": "완성된 레슨 덱",
+      "ja": "公開済みのレッスンデッキ",
+      "en": "Ready lesson decks"
+    },
+    "readyDecksP": {
+      "ko": "실제 수업 화면이 준비된 과만 모았습니다. 새 탭에서 열립니다.",
+      "ja": "実際の授業画面が用意されたレッスンだけを集めています。新しいタブで開きます。",
+      "en": "Only lessons whose real class screen is ready. Opens in a new tab."
+    },
+    "overview": {
+      "ko": "한눈에 보기",
+      "ja": "ひと目で見る",
+      "en": "At a glance"
+    },
+    "noDev": {
+      "ko": "개발 안 함",
+      "ja": "開発しない",
+      "en": "Not in development"
+    },
+    "noDevP": {
+      "ko": "계획 참고용 — 이 트랙은 현재 개발하지 않으며, 레슨 덱 제작도 승인되지 않았습니다.",
+      "ja": "計画の参考用 — このトラックは現在開発しておらず、デッキ制作も承認されていません。",
+      "en": "For planning reference — this track is not in development and no decks are approved."
+    },
+    "expandUnits": {
+      "ko": "단원 모두 펼치기",
+      "ja": "ユニットをすべて開く",
+      "en": "Expand all units"
+    },
+    "expandAll": {
+      "ko": "과까지 모두 펼치기",
+      "ja": "レッスンまですべて開く",
+      "en": "Expand every lesson"
+    },
+    "noResults": {
+      "ko": "검색 결과가 없습니다.",
+      "ja": "検索結果がありません。",
+      "en": "No results."
+    },
+    "generated": {
+      "ko": "이 페이지는 생성물입니다.",
+      "ja": "このページは生成物です。",
+      "en": "This page is generated."
+    },
+    "tracksH": {
+      "ko": "학습 트랙",
+      "ja": "学習トラック",
+      "en": "learning tracks"
+    },
+    "tracksP": {
+      "ko": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.",
+      "ja": "カードを押すと、そのトラックの全目次に入ります。",
+      "en": "Tap a card to open that track's full contents."
+    },
+    "unitWord": {
+      "ko": "코스",
+      "ja": "コース",
+      "en": "courses"
+    },
+    "deckWord": {
+      "ko": "레슨 교재",
+      "ja": "レッスン教材",
+      "en": "lesson decks"
+    },
+    "lessonsOpen": {
+      "ko": "개 과가 지금 수업에서 열립니다",
+      "ja": "レッスンが、いま授業で開きます",
+      "en": "lessons are open in class right now"
+    },
+    "openDeck": {
+      "ko": "덱 열기",
+      "ja": "デッキを開く",
+      "en": "Open deck"
+    },
+    "catalog": {
+      "ko": "카탈로그",
+      "ja": "カタログ",
+      "en": "Catalog"
+    },
+    "groupCan": {
+      "ko": "끝내면 할 수 있는 것",
+      "ja": "終えたらできること",
+      "en": "What you can do at the end"
+    },
+    "cast": {
+      "ko": "등장인물",
+      "ja": "登場人物",
+      "en": "Cast"
+    },
+    "allLevels": {
+      "ko": "전 레벨",
+      "ja": "全レベル",
+      "en": "All levels"
+    },
+    "keepAdding": {
+      "ko": "계속 추가",
+      "ja": "追加中",
+      "en": "Still growing"
+    },
+    "planOnly": {
+      "ko": "계획만 있음 · 현재 개발하지 않음",
+      "ja": "計画のみ · 現在は開発していません",
+      "en": "Planned only — not in development"
+    },
+    "openCatalog": {
+      "ko": "카탈로그 열기",
+      "ja": "カタログを開く",
+      "en": "Open catalog"
+    },
+    "growing": {
+      "ko": "계속 추가 중",
+      "ja": "追加中",
+      "en": "Still growing"
+    },
+    "live": {
+      "ko": "운영 중",
+      "ja": "提供中",
+      "en": "Live"
+    },
+    "countTracks": {
+      "ko": "트랙",
+      "ja": "トラック",
+      "en": "tracks"
+    },
+    "countCourses": {
+      "ko": "코스",
+      "ja": "コース",
+      "en": "courses"
+    },
+    "countLessons": {
+      "ko": "과",
+      "ja": "レッスン",
+      "en": "lessons"
+    },
+    "lessonWord": {
+      "ko": "과",
+      "ja": "レッスン",
+      "en": "lessons"
+    },
+    "deckWordShort": {
+      "ko": "교재",
+      "ja": "教材",
+      "en": "decks"
+    }
+  },
+  "detail": {
+    "learnThis": {
+      "ko": "이번에 배우는 것",
+      "ja": "今回学ぶこと",
+      "en": "What you learn"
+    },
+    "readPractice": {
+      "ko": "읽기 연습",
+      "ja": "読む練習",
+      "en": "Reading practice"
+    },
+    "readGoal": {
+      "ko": "읽기 목표",
+      "ja": "読みのゴール",
+      "en": "Reading goal"
+    },
+    "talkGoal": {
+      "ko": "대화 목표",
+      "ja": "会話のゴール",
+      "en": "Conversation goal"
+    },
+    "fixPoint": {
+      "ko": "교정 포인트",
+      "ja": "直すポイント",
+      "en": "Correction focus"
+    },
+    "lessonGoal": {
+      "ko": "이 과의 목표",
+      "ja": "このレッスンのゴール",
+      "en": "Goal of this lesson"
+    },
+    "deckGoal": {
+      "ko": "덱이 말하는 오늘의 목표",
+      "ja": "デッキが示す今日のゴール",
+      "en": "Today's goal, as the deck states it"
+    },
+    "corePatterns": {
+      "ko": "핵심 패턴",
+      "ja": "コアパターン",
+      "en": "Core patterns"
+    },
+    "howToFix": {
+      "ko": "고치는 법",
+      "ja": "直し方",
+      "en": "How to fix it"
+    },
+    "minPairs": {
+      "ko": "최소 대립쌍",
+      "ja": "ミニマルペア",
+      "en": "Minimal pairs"
+    },
+    "learning": {
+      "ko": "배우는 것",
+      "ja": "学ぶこと",
+      "en": "What is taught"
+    },
+    "saidAndRule": {
+      "ko": "표현과 규칙",
+      "ja": "表現とルール",
+      "en": "Phrases and rules"
+    },
+    "saidNow": {
+      "ko": "바로 쓰는 표현",
+      "ja": "すぐ使う表現",
+      "en": "Ready-made phrases"
+    },
+    "rule": {
+      "ko": "규칙",
+      "ja": "ルール",
+      "en": "Rule"
+    },
+    "noDetail": {
+      "ko": "이 과의 상세는 목차 원문에 있습니다.",
+      "ja": "このレッスンの詳細は目次の原文にあります。",
+      "en": "Details for this lesson live in the source contents."
+    },
+    "questions": {
+      "ko": "오늘의 질문",
+      "ja": "今日の質問",
+      "en": "Today's questions"
+    },
+    "questionsN": {
+      "ko": "질문 {n}개",
+      "ja": "質問 {n} 問",
+      "en": "{n} questions"
+    },
+    "followUps": {
+      "ko": "이어서 물어보기",
+      "ja": "続けて聞く",
+      "en": "Follow-ups"
+    }
+  },
+  "level": {
+    "왕초급": {
+      "ko": "왕초급",
+      "ja": "超入門",
+      "en": "Starter"
+    },
+    "초급": {
+      "ko": "초급",
+      "ja": "初級",
+      "en": "Beginner"
+    },
+    "초중급": {
+      "ko": "초중급",
+      "ja": "初中級",
+      "en": "Upper beginner"
+    },
+    "중급": {
+      "ko": "중급",
+      "ja": "中級",
+      "en": "Intermediate"
+    },
+    "중고급": {
+      "ko": "중고급",
+      "ja": "中上級",
+      "en": "Upper intermediate"
+    },
+    "고급": {
+      "ko": "고급",
+      "ja": "上級",
+      "en": "Advanced"
+    }
+  }
+}
