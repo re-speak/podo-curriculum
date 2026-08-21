@@ -2,18 +2,18 @@
   "counts": {
     "courses": 1,
     "decks": 14,
-    "entries": 2281
+    "entries": 2271
   },
   "formatVersion": 1,
-  "generator": "korean/tools/build_proofreading_packets.py",
+  "generator": "tools/authoring/kr/build_proofreading_packets.py",
   "htmlIsSourceOfTruth": true,
   "packets": [
     {
       "course": "hangul-starter",
       "decks": 14,
       "file": "packets/01-hangul-starter.md",
-      "sourceSetSha256": "2f4c939ce2764c12462aab6f8390d8929d148fa1ac6571f556f1c32b2d4c7d25"
+      "sourceSetSha256": "97dac91576e3974520f8198aa167f46c1f18fee556aff9ba5447f34082c0b5e2"
     }
   ],
-  "track": "korean/tracks/1-hangul"
+  "track": "sandbox/drafts/kr/tracks/1-hangul"
 }
