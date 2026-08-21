@@ -12,7 +12,7 @@ three non-production ones in one build, `main` is prod.
 ```sh
 # 1. branch off stage, PR into stage
 git fetch origin && git switch -c feat/my-lesson origin/stage
-python3 tools/validate.py --contract --env stage
+python3 tools/validate.py --env stage
 git push -u origin feat/my-lesson && gh pr create --base stage
 
 # 2. merge → podo-curriculum-deploy-stage applies to stage, qa, dev — automatically
@@ -213,13 +213,18 @@ If the learner types, ship an `<input>` or `<textarea>`. If they pick, ship the 
 ### Before you push
 
 ```sh
-python3 tools/validate.py --contract --env stage
+python3 tools/validate.py --env stage
 ```
 
-`--contract` runs the deck through lemonboard's own validator — the same call CI makes.
-It fail-opens on network trouble and 5xx (a lemonboard outage must not block a PR) but
-blocks on any `severity: error`. Without `PODO_LEMONBOARD_API_KEY` it refuses to run rather
-than letting an auth rejection read as a clean pass.
+This local gate is mandatory. The authenticated contract gate is authoritative in the PR:
+`podo-curriculum-validate` runs lemonboard's own validator automatically for every PR into
+`stage` or `main`, using its repository-managed secret, and blocks the merge on any
+`severity: error`.
+
+If your current shell already has `PODO_LEMONBOARD_API_KEY`, you may run the same check
+early with `python3 tools/validate.py --contract --env stage`. Do not stop, ask the user to
+paste a key, or search secret files merely because that optional local credential is absent.
+Open the PR and let its required check own the authenticated verdict.
 
 Copy from a deck that passes the gate rather than inventing markup —
 [`courses/kr/taiken-trial/lessons/06-taiken-self-intro`](courses/kr/taiken-trial/lessons/06-taiken-self-intro)
