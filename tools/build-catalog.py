@@ -335,6 +335,24 @@ def strings() -> dict:
     return json.loads((TEMPLATES / "i18n.json").read_text(encoding="utf-8"))
 
 
+def _assert_ids_exist(template: str, text: str) -> None:
+    """스크립트가 만지는 id 가 그 페이지에 실제로 있는지 본다.
+
+    카탈로그는 브라우저에서 그려진다. getElementById 가 없는 자리를 집으면 그 줄이
+    던지고 아래 전부가 멈춰, 페이지가 **빈 화면으로** 나간다 — 파이썬 쪽 검사도,
+    node --check 도 이것을 잡지 못한다(문법은 멀쩡하다). 실제로 각주 하나를 지우면서
+    그 안의 <code id="src">가 함께 사라졌고, 코스 페이지가 통째로 비었다."""
+    import re
+    ids = set(re.findall(r'id="([^"]+)"', text))
+    used = set(re.findall(r'getElementById\("([^"]+)"\)', text))
+    missing = sorted(used - ids)
+    if missing:
+        raise SystemExit(
+            f"{template}: 스크립트가 없는 id 를 집는다 — {', '.join(missing)}. "
+            f"그 자리를 지웠다면 집는 줄도 함께 지워라. 두면 페이지가 빈 화면이 된다."
+        )
+
+
 def fill(template: str, data: dict) -> str:
     """Both templates take their data at one marked spot and render themselves.
 
@@ -346,6 +364,7 @@ def fill(template: str, data: dict) -> str:
     text = (TEMPLATES / template).read_text(encoding="utf-8")
     if text.count(marker) != 1:
         raise SystemExit(f"{template}: expected exactly one {marker}")
+    _assert_ids_exist(template, text)
     return text.replace(marker, json.dumps(data, ensure_ascii=False))
 
 

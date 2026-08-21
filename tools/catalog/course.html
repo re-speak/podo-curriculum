@@ -479,7 +479,6 @@ document.getElementById("tabs").innerHTML =
   document.getElementById("q").placeholder = `${T.lessonWord}·패턴·표현 검색`;
   document.getElementById("expandUnits").textContent = `${T.unitWord} 모두 펼치기`;
   document.getElementById("expandAll").textContent = `${T.lessonWord}까지 모두 펼치기`;
-  document.getElementById("src").textContent = `korean/tracks/${T.id}/table-of-contents.md`;
   document.body.classList.toggle("plan-track", T.status === "plan");
   document.getElementById("plan-banner").hidden = T.status !== "plan";
 }
@@ -804,8 +803,6 @@ function paintStatic() {
     if (v) el.textContent = v;
   });
   document.documentElement.lang = L;
-  const tr = document.getElementById("track-name");
-  if (tr) tr.textContent = loc({ko: T.ko, ja: T.ja, en: T.en}) || T.ko;
 }
 
 function paintLocaleBar() {
