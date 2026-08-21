@@ -68,8 +68,19 @@ REPO = model.REPO
 TEMPLATES = REPO / "tools" / "catalog"
 SOURCE_URL = "https://github.com/re-speak/podo-curriculum/blob/main"
 
-# 이 사이트가 서빙되는 도메인. gh-pages 의 CNAME 으로 나간다.
-CUSTOM_DOMAIN = "curriculum.podospeaking.com"
+# 이 사이트가 서빙될 도메인. 값이 있으면 gh-pages 에 CNAME 으로 나간다.
+#
+# **DNS 레코드가 실제로 존재할 때만 채운다.** 순서를 뒤집으면 사이트가 죽는다:
+# CNAME 파일이 올라가는 순간 GitHub 이 커스텀 도메인을 켜고, Pages 는
+# re-speak.github.io/podo-curriculum/* 를 전부 그 도메인으로 301 시킨다. 도메인이
+# 아직 안 풀리면 두 주소가 함께 막힌다 — DNS 가 생기기를 기다리는 동안 사이트가
+# 꺼지는 것이 아니라, CNAME 이 사이트를 끄는 것이다.
+#
+# 켜는 순서:
+#   1. DNS 에 curriculum CNAME → re-speak.github.io. 를 넣고 풀리는 것을 확인한다
+#   2. 여기에 도메인을 적고 릴리스한다
+#   3. Settings → Pages 에서 DNS check 가 초록이 되면 Enforce HTTPS 를 켠다
+CUSTOM_DOMAIN = None
 REPO_URL = "https://github.com/re-speak/podo-curriculum"
 
 # 레벨의 원본은 course.yaml 의 `# podo:level:` 주석 한 줄이다. 스키마가 metadata 에
@@ -624,9 +635,11 @@ def build(out: pathlib.Path) -> dict:
         encoding="utf-8",
     )
     # 커스텀 도메인은 저장소 설정과 이 파일 두 곳에 산다. gh-pages 는 매번 통째로
-    # force-push 되므로, 여기서 쓰지 않으면 다음 배포가 CNAME 을 지우고 GitHub 이
-    # 도메인 설정을 해제한다 — 사이트가 조용히 re-speak.github.io 로 돌아간다.
-    (out / "CNAME").write_text(CUSTOM_DOMAIN + "\n", encoding="utf-8")
+    # force-push 되므로, 도메인을 쓰는 동안에는 여기서 매번 다시 써 줘야 한다 —
+    # 아니면 다음 배포가 CNAME 을 지우고 GitHub 이 도메인 설정을 해제한다.
+    # 반대로 아직 DNS 가 없으면 쓰지 않는다(위 CUSTOM_DOMAIN 주석 참고).
+    if CUSTOM_DOMAIN:
+        (out / "CNAME").write_text(CUSTOM_DOMAIN + "\n", encoding="utf-8")
 
     # Pages served from an Actions artifact does not run Jekyll, but a repo that
     # later switches to a branch source would — and Jekyll drops directories that
