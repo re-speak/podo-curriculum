@@ -52,7 +52,11 @@ order as a learner**, not as disconnected HTML fragments. A pass must cover thes
 6. **Korean and Japanese:** Korean is natural spoken Korean at the promised level. Japanese carries
    the same agent, object, tense, register and emotional force; it must not leave an object implicit
    when doing so makes the Korean pattern ambiguous. Vocabulary glosses and highlighted spans agree
-   with the complete sentence.
+   with the complete sentence. Treat the tutor's voice in `AUTHORING.md` as an editorial requirement,
+   not a personal alternative: prefer warm invitations, explicit lesson framing and transitions,
+   tutor-led modeling, clear human subjects and reassuring shared momentum over a sequence of terse
+   commands. Apply that preferred voice even when a shorter sentence is grammatically acceptable.
+   Preserve the same warmth and agency in Japanese rather than changing Korean alone.
 7. **Visual semantics:** the diagram must depict the rule it claims to teach. `.bt-word` holds a
    complete dictionary form or other whole word. `.bt-syl` holds exactly one Hangul syllable whose
    받침 or vowel is the visual evidence—never a multi-syllable stem squeezed into a syllable tile.
@@ -68,6 +72,13 @@ Record exact page IDs and current/replacement text for content changes. Separate
 from editorial alternatives that need a human decision. After applying fixes, repeat the affected
 interaction and screenshot checks, run structural/reference validation and synchronize any
 deployable copy derived from the authoring HTML.
+
+Human feedback is also corpus evidence. For every accepted wording change, identify the underlying
+reason, search every release track for identical and analogous constructions, and repair all
+high-confidence instances at the highest authoring source. Record uncertain contextual cases for
+human review instead of silently rejecting them. A proofreading round is not complete merely because
+the cited line changed; it must state which tracks and candidate set were searched so the same
+colleague does not have to repeat the same comment lesson by lesson.
 
 ## Why the projection is one-way
 
