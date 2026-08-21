@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <meta name="podo:lesson-id" content="trial-3-full">
+  <meta name="podo:level" content="중급">
+  <meta name="podo:content-version" content="2026-08-05">
+  <!-- 리포트는 대역 없이 한 언어로 간다. 그 언어가 무엇인지 CSS 가 알아야 해서
+       마크업이 선언한다 — 일본어 리포트는 줄바꿈 규칙이 한국어와 반대라
+       (keep-all 이면 일본어 문장은 끊길 자리가 없어 카드를 뚫고 나간다),
+       shared/css/trial.css 의 LINE BREAKING 절이 이 값으로 갈라 준다. -->
+  <meta name="podo:report-language" content="ja">
+  <title>体験レッスン 中級 — PODO 韓国語</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/css/lesson-card.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/css/trial.css">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+  <div class="phone">
+
+    <!-- ============ COVER ============ -->
+    <div class="brand-page" data-page-id="cover">
+      <span class="podo-badge"><span class="logo">PODO</span><span class="tag">体験レッスン</span></span>
+      <h1 class="brand-title">中級</h1>
+    </div>
+
+    <!-- ============ GREETING ============ -->
+    <!-- 중급 덱이라 첫인사부터 학습자가 스스로 문장을 만든다.
+         가나 읽기(.yomi)는 달지 않는다 — 이 덱은 중급이고, 발음 표기는 초중급까지다
+         (korean/CLAUDE.md 의 레벨 표). 중급 학습자는 이미 한글을 읽는다. -->
+    <div class="section" data-page-id="greeting">
+      <h2 class="section-title">첫인사 <span class="title-ja">(はじめのあいさつ)</span></h2>
+      <p class="section-subtitle"><span class="ko">저랑 가볍게 인사하고 시작할까요? 아는 만큼 편하게 대답해 주세요.</span><span class="ja">私と軽くあいさつしてから始めましょうか？知っている表現で、気楽に答えてください。</span></p>
+      <div class="tutor-note">네 가지를 차례대로 물어봐 주세요. 학생이 말한 문장을 답 칸에 그대로 적습니다.</div>
+      <div class="dialogue">
+        <div class="turn other"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">선생님</span></span><div class="bubble"><span class="korean">안녕하세요! 저는 한국어 선생님 <input class="slot-input" data-sync-id="greeting-tutor-name" placeholder="이름" aria-label="선생님 이름" autocomplete="off">(이)라고 해요. 만나서 반가워요.</span><span class="translation">こんにちは！私は韓国語の先生の＿＿＿と申します。会えてうれしいです。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box tall"><span class="answer-label task">あいさつを返してみましょう</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="greeting-hello" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>
+      </div>
+      <div class="dialogue" style="margin-top:var(--item-gap);">
+        <div class="turn other"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">선생님</span></span><div class="bubble"><span class="korean">이름이 어떻게 되세요? 간단하게 자기소개도 해 주세요.</span><span class="translation">お名前は何ですか？かんたんに自己紹介もお願いします。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box tall"><span class="answer-label task">名前と、自分のことを言ってみましょう</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="greeting-selfintro" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>
+      </div>
+      <div class="dialogue" style="margin-top:var(--item-gap);">
+        <div class="turn other"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">선생님</span></span><div class="bubble"><span class="korean">한국어 공부는 얼마나 하셨어요? 요즘은 어떻게 공부하고 있어요?</span><span class="translation">韓国語の勉強はどのくらいですか？最近はどうやって勉強していますか？</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box tall"><span class="answer-label task">勉強の期間とやり方を話してみましょう</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="greeting-history" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>
+      </div>
+      <div class="dialogue" style="margin-top:var(--item-gap);">
+        <div class="turn other"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">선생님</span></span><div class="bubble"><span class="korean">수업 시작하기 전에, 궁금한 거 있어요?</span><span class="translation">レッスンを始める前に、聞きたいことはありますか？</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box tall"><span class="answer-label task">聞きたいことを言ってみましょう（なければ「없어요」）</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="greeting-question" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>
+      </div>
+    </div>
+
+    <div class="brand-page bleed" data-page-id="needs-intro">
+      <h2 class="brand-title">ニーズ把握</h2>
+      <p class="brand-sub">あなたのことを教えてください。答えに合わせて、最後のプランが変わります。</p>
+      <img class="brand-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-character-ask.png" alt="">
+    </div>
+
+    <div class="section needs-jp" data-page-id="needs-why">
+      <h2 class="section-title">学ぶきっかけ <span class="title-ja">(학습동기)</span></h2>
+      <p class="section-subtitle"><span class="ko">왜 한국어를 배우고 싶어요? 여러 개 골라도 돼요.</span><span class="ja">どうして韓国語を学びたいですか？<br>いくつ選んでも大丈夫です。</span></p>
+      <div class="opt-list" data-group="why" data-pick="multi" data-sync-id="needs-why" data-sync-kind="selection" data-sync-state="on">
+        <button class="opt-row" data-val="kpop" data-sync-option="kpop"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/kpop.png" alt=""><span class="opt-body"><span class="opt-main">K-POP・ドラマ</span><span class="opt-sub">케이팝·드라마</span></span></button>
+        <button class="opt-row" data-val="travel" data-sync-option="travel"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel.png" alt=""><span class="opt-body"><span class="opt-main">韓国旅行</span><span class="opt-sub">한국 여행</span></span></button>
+        <button class="opt-row" data-val="friend" data-sync-option="friend"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/friend.png" alt=""><span class="opt-body"><span class="opt-main">韓国人の友だち・恋人</span><span class="opt-sub">한국인 친구·연인</span></span></button>
+        <button class="opt-row" data-val="work" data-sync-option="work"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/work.png" alt=""><span class="opt-body"><span class="opt-main">仕事・転職</span><span class="opt-sub">일·이직</span></span></button>
+        <button class="opt-row" data-val="topik" data-sync-option="topik"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topik.png" alt=""><span class="opt-body"><span class="opt-main">TOPIK・資格</span><span class="opt-sub">TOPIK·자격증</span></span></button>
+        <button class="opt-row" data-val="self" data-sync-option="self"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/self.png" alt=""><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
+        <button class="opt-row" data-val="other" data-sync-option="other"><img class="r-ico" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/other.png" alt=""><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
+      </div>
+    </div>
+
+    <div class="section needs-jp" id="p-goal" data-page-id="needs-goal">
+      <h2 class="section-title">ゴール <span class="title-ja">(목표)</span></h2>
+      <p class="section-subtitle"><span class="ko">한국어로 뭘 할 수 있게 되고 싶어요? 하나만 골라 주세요.</span><span class="ja">韓国語で何ができるようになりたいですか？<br>1つだけ選んでください。</span></p>
+      <!-- ================================================================
+           목표 = 거리
+           고르는 건 주제가 아니라 거리다. 같은 "여행" 이라도 주문만 하면 되는
+           사람과 현지에서 수다 떨고 싶은 사람은 가는 거리가 다르다 — 그래서
+           카드 하나가 도착 레벨 하나다.
+           카드는 도착 레벨만 말한다. 예전에는 그 안에서 "그 레벨이 나한테
+           뭔데?" 를 앞 장의 이유별로 한 줄씩 폈는데, 고를 것은 넷인데 읽을
+           것이 열여덟이 되어 고르는 힘이 전부 읽는 데 들어갔다. 이유는 여전히
+           계획을 정한다 — 리포트의 추천 코스가 그것을 쓴다.
+           ================================================================ -->
+      <div class="goal-list" data-group="goal" data-pick="single" data-sync-id="needs-goal" data-sync-kind="selection" data-sync-state="on">
+
+        <button class="glc" data-val="t3" data-sync-option="t3">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="glc-n">短い文で、伝えられる<small>짧은 문장으로 전하기</small></span></span>
+          </button>
+
+        <button class="glc" data-val="t5" data-sync-option="t5">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="glc-n">身近な話題なら、話が続く<small>익숙한 주제로 대화 이어가기</small></span></span>
+          </button>
+
+        <button class="glc" data-val="t7" data-sync-option="t7">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="glc-n">意見も理由も、話せる<small>의견도 이유도 말하기</small></span></span>
+          </button>
+
+        <button class="glc" data-val="t9" data-sync-option="t9">
+          <span class="glc-h"><span class="glc-b" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="glc-n">どんな話題でも、自由に話せる<small>어떤 주제든 자유롭게 말하기</small></span></span>
+          </button>
+
+      </div>
+    </div>
+
+    <div class="section needs-jp" id="p-pace" data-page-id="needs-pace">
+      <h2 class="section-title">学習ペース <span class="title-ja">(학습 페이스)</span></h2>
+      <p class="section-subtitle"><span class="ko">일주일에 수업을 몇 번 받고 싶어요?</span><span class="ja">1週間に何回、<br>レッスンを受けたいですか？</span></p>
+      <div class="opt-list" data-group="pace" data-pick="single" data-sync-id="needs-pace" data-sync-kind="selection" data-sync-state="on">
+        <button class="opt-row" data-val="1" data-sync-option="1"><span class="emo">🐢</span><span class="opt-body"><span class="opt-main">週1 <span class="title-ja">／주 1회</span></span><span class="opt-sub">まずは無理なく</span></span></button>
+        <button class="opt-row" data-val="2" data-sync-option="2"><span class="emo">🚶</span><span class="opt-body"><span class="opt-main">週2 <span class="title-ja">／주 2회</span></span><span class="opt-sub">こつこつ</span></span></button>
+        <button class="opt-row" data-val="3" data-sync-option="3"><span class="emo">🏃</span><span class="opt-body"><span class="opt-main">週3 <span class="title-ja">／주 3회</span></span><span class="opt-sub">しっかり</span></span></button>
+        <button class="opt-row" data-val="4" data-sync-option="4"><span class="emo">⚡</span><span class="opt-body"><span class="opt-main">週4 <span class="title-ja">／주 4회</span></span><span class="opt-sub">ぐんぐん</span></span></button>
+        <button class="opt-row" data-val="5" data-sync-option="5"><span class="emo">🚀</span><span class="opt-body"><span class="opt-main">週5以上 <span class="title-ja">／주 5회+</span></span><span class="opt-sub">最短で</span></span></button>
+      </div>
+    </div>
+
+
+    <div class="brand-page divider" data-page-id="trial-intro">
+      <img class="brand-mascot" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-character-point.png" alt="">
+      <h2 class="brand-title">체험 레슨<span class="ja">体験レッスン</span></h2>
+      <p class="brand-sub">ここから25分。ドラマの第1話を、あなたが演じます。持ち帰るセリフは2つ。約束します！</p>
+    </div>
+
+    <!-- ============ 제1화 · 타이틀 카드 ============
+         이 트랙이 파는 것은 문법이 아니라 "장면 안에 들어간다"는 경험이다.
+         그래서 장면보다 먼저 오는 것이 제목과 배역이다 — 무엇을 보는지, 내가
+         누구인지를 먼저 말해 주지 않으면 대사는 그냥 예문으로 읽힌다.
+         새 페이지 종류를 만들지 않았다: 어두운 전환 페이지가 이미 타이틀
+         카드의 생김새를 하고 있다. 새로 는 것은 배역 줄(.scene-cast) 하나뿐. -->
+    <div class="transition-page" data-page-id="episode-card" data-act="제1화">
+      <span class="transition-kicker">제1화</span>
+      <h2 class="transition-title">우리, 어디서 본 적 있죠?</h2>
+      <p class="transition-copy">雨の夜、コンビニの前。前の人が何かを落として、そのまま行ってしまいます。</p>
+      <div class="scene-cast">
+        <span class="cast-row"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="cast-who">나<small>あなたの役</small></span></span>
+        <span class="cast-row"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="cast-who">소희<small>ソヒ・落とし物をした人</small></span></span>
+      </div>
+    </div>
+
+    <!-- ============ THE SCENE ============ -->
+    <!-- 이 트랙의 출발점은 언제나 대사다. 여기서는 아무것도 표시하지 않는다 —
+         패턴을 짚는 건 튜터의 형광펜이 실시간으로 한다. 학습자는 구경꾼이
+         아니라 '나'다: 오늘 배우는 세 마디가 전부 이 사람 입에서 나온다. -->
+    <div class="section" data-page-id="scene">
+      <h2 class="section-title">오늘의 장면 <span class="title-ja">(今日のワンシーン)</span></h2>
+      <p class="section-subtitle"><span class="ko">비 오는 밤이에요. 앞사람이 뭔가를 떨어뜨렸어요. 제가 소희 할 테니, 같이 읽어 볼까요?</span><span class="ja">雨の夜です。前の人が何かを落としました。私がソヒをやるので、一緒に読んでみましょうか？</span></p>
+      <div class="tutor-note">첫 읽기예요. 틀려도 고치지 말고 끝까지 가 주세요.</div>
+      <div class="dialogue">
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">저기요! 이거요.</span><span class="translation">あの、すみません！これ。</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">아… 감사합니다.</span><span class="translation">あ…ありがとうございます。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">저… 혹시 우리 어디서 본 적 있지 않아요?</span><span class="translation">あの…もしかして、私たちどこかで会ったことありませんか？</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">네? 글쎄요… 잘 모르겠는데요.</span><span class="translation">え？さあ…よくわからないですけど。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">지난주 그 카페요. 창가 자리에서 본 적 있어요.</span><span class="translation">先週のあのカフェです。窓ぎわの席で見たことがあります。</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">아, 맞다! 그 카페! 반가워요.</span><span class="translation">あ、そうだ！あのカフェ！うれしいです。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">저… 혹시 번호 물어봐도 돼요?</span><span class="translation">あの…もしかして、番号を聞いてもいいですか？</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">네, 좋아요. 저도 반가웠어요.</span><span class="translation">はい、いいですよ。私もうれしかったです。</span></div></div>
+      </div>
+    </div>
+
+    <!-- the goal, stated plainly: the lines out of the scene they just watched -->
+    <div class="transition-page" data-page-id="lesson-goal">
+      <span class="transition-kicker">목표</span>
+      <h2 class="transition-title">오늘의 목표 <span class="title-ja">(今日のゴール)</span></h2>
+      <p class="section-subtitle"><span class="ko">방금 그 장면이요. 수업이 끝나면 이 세 마디를 직접 말할 수 있어요.</span><span class="ja">さっきのあのシーンです。授業が終わると、この3つのセリフが自分で言えるようになります。</span></p>
+      <div class="known lines">
+        <div class="known-row"><span class="k">혹시 우리 어디서 본 적 있지 않아요?</span><span class="j">もしかして、私たちどこかで会ったことありませんか？</span></div>
+        <div class="known-row"><span class="k">창가 자리에서 본 적 있어요.</span><span class="j">窓ぎわの席で見たことがあります。</span></div>
+        <div class="known-row"><span class="k">혹시 번호 물어봐도 돼요?</span><span class="j">もしかして、番号を聞いてもいいですか？</span></div>
+      </div>
+    </div>
+
+    <!-- the "2+2" extras: the two fixed expressions the scene runs on.
+         Both are things somebody SAYS in the scene. 첫 만남 used to sit here,
+         which is the lesson's title wearing a vocabulary badge — nobody says
+         it out loud, and it never appeared in the dialogue. -->
+    <div class="section" data-page-id="expressions">
+      <h2 class="section-title">혹시 <span class="title-ja">(もしかして)</span></h2>
+      <p class="section-subtitle"><span class="ko">방금 장면에서 두 번 나왔죠? 질문 앞에 혹시만 붙이면, 처음 보는 사람한테도 조심스럽게 물어볼 수 있어요.</span><span class="ja">さっきのシーンで2回出てきましたね。質問の前に혹시をつけるだけで、はじめて会う人にも遠慮ぎみに聞けます。</span></p>
+      <div class="tutor-note">혹시 없이 한 번, 붙여서 한 번 읽어 주세요. 소리로 차이가 들리게요.</div>
+      <!-- .model-list, not .sent-hero: the hero card is peach, and peach in
+           this deck means the ending being taught. This page teaches no
+           ending. The reading list is also the honest component for what the
+           tutor note asks — three lines to say out loud — and it left-aligns,
+           so 혹시 stands at the true left edge of all three and the column
+           is the whole lesson. -->
+      <div class="model-list">
+        <div class="model-line"><span class="korean"><span class="topic">혹시</span> 시간 있어요?</span><span class="translation"><span class="topic">もしかして</span>、時間ありますか？</span></div>
+        <div class="model-line"><span class="korean"><span class="topic">혹시</span> 저 아세요?</span><span class="translation"><span class="topic">もしかして</span>、私のこと知っていますか？</span></div>
+        <div class="model-line"><span class="korean"><span class="topic">혹시</span> 여기 자주 와요?</span><span class="translation"><span class="topic">もしかして</span>、ここによく来ますか？</span></div>
+      </div>
+    </div>
+
+    <!-- ============ PART 1 · the experience pattern ============ -->
+    <div class="transition-page" data-page-id="part1-intro" data-act="~(으)ㄴ 적 있어요">
+      <span class="transition-kicker">パート 1</span>
+      <h2 class="transition-title">~(으)ㄴ 적 있어요</h2>
+      <p class="transition-copy">〜したことがあります。ソヒに言ったあのひと言を、まず自分のものにします。</p>
+    </div>
+
+    <div class="section" data-page-id="p1-teach">
+      <h2 class="section-title">오늘의 패턴 <span class="title-ja">(今日のパターン)</span></h2>
+      <p class="section-subtitle"><span class="ko">장면에 있던 그 한 마디예요. 해 본 것도, 안 해 본 것도 이렇게 말해요.</span><span class="ja">シーンにあった、あのひと言です。したことも、していないことも、こう言います。</span></p>
+      <div class="tutor-note">읽어 주고 따라 하게 해 주세요.</div>
+      <!-- the sentence whole, with the piece being taught carrying the
+           accent — the same move part 1 of the pattern deck makes. The two
+           lines under it are the same frame filled differently. -->
+      <div class="sent-hero">
+        <span class="korean">그 카페에서 <span class="ending">본 적 있어요</span>.</span>
+
+        <span class="translation">あのカフェで<span class="ending">見たことがあります</span>。</span>
+      </div>
+      <div class="sent-more">
+        <div><span class="korean">한국에 <span class="ending">간 적 있어요</span>.</span><span class="translation">韓国に<span class="ending">行ったことがあります</span>。</span></div>
+        <div><span class="korean">그 사람 <span class="ending">만난 적 없어요</span>.</span><span class="translation">あの人に<span class="ending">会ったことはありません</span>。</span></div>
+      </div>
+    </div>
+
+    <!-- drill 1 · read it aloud. the model is still on the page, and every
+         sentence belongs to the world of the scene — 김치 and 한국 were the
+         old textbook's props, not this story's. The drama does not stop
+         because the drills started. -->
+    <div class="section" data-page-id="p1-read">
+      <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 혼자 한 번 읽어 볼까요?</span><span class="ja">今度はひとりで一度読んでみましょうか。</span></p>
+      <div class="model-list">
+        <div class="model-line"><span class="korean">그 드라마 <span class="ending">본 적 있어요</span>.</span><span class="translation">あのドラマ、<span class="ending">見たことがあります</span>。</span></div>
+        <div class="model-line"><span class="korean">그 카페에 <span class="ending">간 적 있어요</span>.</span><span class="translation">あのカフェに<span class="ending">行ったことがあります</span>。</span></div>
+        <div class="model-line"><span class="korean">떡볶이 <span class="ending">먹은 적 있어요</span>.</span><span class="translation">トッポッキを<span class="ending">食べたことがあります</span>。</span></div>
+        <div class="model-line"><span class="korean">그 사람 <span class="ending">만난 적 없어요</span>.</span><span class="translation">あの人に<span class="ending">会ったことはありません</span>。</span></div>
+      </div>
+    </div>
+
+    <!-- the one rule in the pattern, taught by comparison -->
+    <div class="section" data-page-id="p1-rule">
+      <h2 class="section-title">ㄴ 적과 은 적 <span class="title-ja">(ㄴ적 と 은적、どっち？)</span></h2>
+      <p class="section-subtitle"><span class="ko">동사에서 다를 떼고, 남은 글자를 봐 주세요. 받침이 있으면 은 적, 없으면 ㄴ 적이에요.</span><span class="ja">動詞から「다」を取って、残った文字を見てください。パッチムがあれば은 적、なければㄴ 적です。</span></p>
+      <!-- the rule is about the floor of the last syllable, so the page shows
+           the floor: filled under 먹, empty under 보. Tinted the ending's
+           colour — this deck teaches two endings and no particle. -->
+      <div class="batchim ending-rule">
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl on">먹</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">은 적</span>
+          </span>
+          <span class="bt-head">받침 있음<small>パッチムあり（子音で終わる）</small></span>
+          <span class="bt-ex"><span>먹다 → 먹<b>은</b> 적</span><span>읽다 → 읽<b>은</b> 적</span></span>
+        </div>
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syl off">보</span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">ㄴ 적</span>
+          </span>
+          <span class="bt-head">받침 없음<small>パッチムなし（母音で終わる）</small></span>
+          <span class="bt-ex"><span>보다 → <b>본</b> 적</span><span>가다 → <b>간</b> 적</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- drill · recognise which of the two the verb asks for -->
+    <div class="section" data-page-id="p1-choose">
+      <h2 class="section-title">ㄴ과 은 고르기 <span class="title-ja">(ㄴ と 은 を選ぼう)</span></h2>
+      <p class="section-subtitle"><span class="ko">받침을 보고, 맞는 쪽을 눌러 보세요.</span><span class="ja">パッチムを見て、正しいほうをタップしてください。</span></p>
+      <div class="choose-list">
+        <div class="choose-row sentence" data-sync-id="p1-choice-eat" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">トッポッキを食べたことがあります。</span>
+          <span class="choose-sentence">떡볶이 먹<span class="opt" data-sync-option="eun" data-correct>은</span><span class="sep">/</span><span class="opt" data-sync-option="n">ㄴ</span> 적 있어요.</span>
+        </div>
+        <div class="choose-row sentence" data-sync-id="p1-choice-go" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">あのカフェに行ったことがあります。</span>
+          <span class="choose-sentence">그 카페에 가<span class="opt" data-sync-option="eun">은</span><span class="sep">/</span><span class="opt" data-sync-option="n" data-correct>ㄴ</span> 적 있어요.</span>
+        </div>
+        <div class="choose-row sentence" data-sync-id="p1-choice-read" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">読んだことがあります。</span>
+          <span class="choose-sentence">읽<span class="opt" data-sync-option="n">ㄴ</span><span class="sep">/</span><span class="opt" data-sync-option="eun" data-correct>은</span> 적 있어요.</span>
+        </div>
+        <div class="choose-row sentence" data-sync-id="p1-choice-meet" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">会ったことがあります。</span>
+          <span class="choose-sentence">만나<span class="opt" data-sync-option="n" data-correct>ㄴ</span><span class="sep">/</span><span class="opt" data-sync-option="eun">은</span> 적 있어요.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- drill · order the words. the pieces are given, the sentence isn't.
+         있어요 and 없어요 are chips of their own, so the row that turns
+         negative is a choice the learner makes rather than a word they read. -->
+    <div class="section" data-page-id="p1-reorder">
+      <h2 class="section-title">문장 만들기 <span class="title-ja">(文を組み立てよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">단어를 순서대로 놓고, 소리 내어 말해 보세요.</span><span class="ja">単語を順番に並べて、声に出して言ってみましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">あのカフェに行ったことがあります。</span>
+          <span class="answer-space build-zone" data-sync-id="p1-order-go" data-sync-kind="order" data-a="그 카페에 간 적 있어요"></span>
+        </div>
+        <span class="choice" data-item-id="went">간 적</span>
+        <span class="choice" data-item-id="have-go">있어요</span>
+        <span class="choice" data-item-id="cafe">그 카페에</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">トッポッキを食べたことがあります。</span>
+          <span class="answer-space build-zone" data-sync-id="p1-order-eat" data-sync-kind="order" data-a="떡볶이 먹은 적 있어요"></span>
+        </div>
+        <span class="choice" data-item-id="have-eat">있어요</span>
+        <span class="choice" data-item-id="tteokbokki">떡볶이</span>
+        <span class="choice" data-item-id="ate">먹은 적</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">そのドラマ、見たことがありません。</span>
+          <span class="answer-space build-zone" data-sync-id="p1-order-see" data-sync-kind="order" data-a="그 드라마 본 적 없어요"></span>
+        </div>
+        <span class="choice" data-item-id="no-have">없어요</span>
+        <span class="choice" data-item-id="saw">본 적</span>
+        <span class="choice" data-item-id="drama">그 드라마</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">あの人に会ったことがありますか？</span>
+          <span class="answer-space build-zone" data-sync-id="p1-order-meet" data-sync-kind="order" data-a="그 사람 만난 적 있어요?"></span>
+        </div>
+        <span class="choice" data-item-id="met">만난 적 있어요?</span>
+        <span class="choice" data-item-id="person">그 사람</span>
+      </div>
+    </div>
+
+    <!-- drill · the blank is the pattern and nothing else -->
+    <div class="section" data-page-id="p1-fill">
+      <h2 class="section-title">빈칸을 채워요 <span class="title-ja">(空欄をうめよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">빈칸에 들어갈 말을 넣어서, 문장을 통째로 소리 내어 말해 보세요.</span><span class="ja">空欄に入ることばを入れて、文をまるごと声に出して言ってみましょう。</span></p>
+      <div class="tutor-note">학생이 말한 대로 빈칸에 적어 주세요.</div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">あのカフェに<span class="target ending">行ったこと</span>があります。</span>
+          <span class="answer-fill"><span class="korean">그 카페에 <input class="slot-input" type="text" data-sync-id="p1-fill-go" data-answer="간 적" autocomplete="off" spellcheck="false"> 있어요.</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">トッポッキを<span class="target ending">食べたこと</span>があります。</span>
+          <span class="answer-fill"><span class="korean">떡볶이 <input class="slot-input" type="text" data-sync-id="p1-fill-eat" data-answer="먹은 적" autocomplete="off" spellcheck="false"> 있어요.</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">そのドラマ、<span class="target ending">見たこと</span>がありません。</span>
+          <span class="answer-fill"><span class="korean">그 드라마 <input class="slot-input" type="text" data-sync-id="p1-fill-see" data-answer="본 적" autocomplete="off" spellcheck="false"> 없어요.</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">あの人に<span class="target ending">会ったこと</span>がありますか？</span>
+          <span class="answer-fill"><span class="korean">그 사람 <input class="slot-input" type="text" data-sync-id="p1-fill-meet" data-answer="만난 적" autocomplete="off" spellcheck="false"> 있어요?</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="p1-translate">
+      <h2 class="section-title">한국어로 바꿔요 <span class="title-ja">(韓国語にしよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 일본어만 보고 한국어로 바꿔 말해 볼까요?</span><span class="ja">今度は日本語だけを見て、韓国語に変えて言ってみましょうか。</span></p>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">あのカフェに行ったことがあります。</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p1-translate-go" data-answer="그 카페에 간 적 있어요" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">カフェ:카페</span><span class="hint-chip">行く:가다</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">トッポッキを食べたことがありますか？</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p1-translate-eat" data-answer="떡볶이 먹은 적 있어요?" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">トッポッキ:떡볶이</span><span class="hint-chip">食べる:먹다</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">そのドラマ、見たことがありません。</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p1-translate-see" data-answer="그 드라마 본 적 없어요" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">ドラマ:드라마</span><span class="hint-chip">見る:보다</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">ソウルで会ったことがあります。</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p1-translate-meet" data-answer="서울에서 만난 적 있어요" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">ソウル:서울</span><span class="hint-chip">会う:만나다</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- top of the ladder for part 1: their own experience, not the book's -->
+    <div class="section" data-page-id="p1-write">
+      <h2 class="section-title">내 경험 말하기 <span class="title-ja">(自分の経験を言おう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 본인 이야기예요. 해 본 적 있는 걸 한 문장으로 말해 보세요.</span><span class="ja">今度はご自身の話です。したことがあることを、1つの文で言ってみましょう。</span></p>
+      <div class="tutor-note">학생이 말한 문장을 여기에 적어 주세요.</div>
+      <div class="fb-compose">
+        <div class="fb" data-fb="p1-free-experience"><span class="hint"><span class="hint-chip">行く:가다</span><span class="hint-chip">見る:보다</span><span class="hint-chip">食べる:먹다</span><span class="hint-chip">会う:만나다</span><span class="hint-chip">習う:배우다</span><span class="hint-chip">読む:읽다</span><span class="hint-chip">韓国:한국</span><span class="hint-chip">コンサート:콘서트</span></span></div>
+        <div class="fb-adds"><button class="fb-add" data-add="fix" type="button">＋ 교정</button><button class="fb-add" data-add="note" type="button">＋ 노트</button></div>
+      </div>
+    </div>
+
+    <!-- ============ PART 2 · asking permission ============ -->
+    <div class="transition-page" data-page-id="part2-intro" data-act="~아/어도 돼요?">
+      <span class="transition-kicker">パート 2</span>
+      <h2 class="transition-title">~아/어도 돼요?</h2>
+      <p class="transition-copy">〜してもいいですか？ 一歩ふみこむための、今日の2つ目。これが言えないと、あの夜はそこで終わります。</p>
+    </div>
+
+    <div class="section" data-page-id="p2-teach">
+      <h2 class="section-title">오늘의 패턴 <span class="title-ja">(今日のパターン)</span></h2>
+      <p class="section-subtitle"><span class="ko">장면의 마지막 한 마디예요. 뭘 해도 되는지 물을 때 이렇게 말해요.</span><span class="ja">シーンの最後のひと言です。何かをしてもいいか聞くとき、こう言います。</span></p>
+      <div class="tutor-note">대답은 네, 돼요 / 안 돼요라고 알려 주세요.</div>
+      <div class="sent-hero">
+        <span class="korean">혹시 번호 <span class="ending">물어봐도 돼요</span>?</span>
+
+        <span class="translation">もしかして、番号を<span class="ending">聞いてもいいですか</span>？</span>
+      </div>
+      <div class="sent-more">
+        <div><span class="korean">여기 <span class="ending">앉아도 돼요</span>?</span><span class="translation">ここに<span class="ending">座ってもいいですか</span>？</span></div>
+        <div><span class="korean">사진 <span class="ending">찍어도 돼요</span>?</span><span class="translation">写真を<span class="ending">撮ってもいいですか</span>？</span></div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="p2-read">
+      <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 혼자 한 번 읽어 볼까요?</span><span class="ja">今度はひとりで一度読んでみましょうか。</span></p>
+      <div class="model-list">
+        <div class="model-line"><span class="korean">여기 <span class="ending">앉아도 돼요</span>?</span><span class="translation">ここに<span class="ending">座ってもいいですか</span>？</span></div>
+        <div class="model-line"><span class="korean">사진 <span class="ending">찍어도 돼요</span>?</span><span class="translation">写真を<span class="ending">撮ってもいいですか</span>？</span></div>
+        <div class="model-line"><span class="korean">이거 <span class="ending">먹어도 돼요</span>?</span><span class="translation">これ、<span class="ending">食べてもいいですか</span>？</span></div>
+        <div class="model-line"><span class="korean">혹시 번호 <span class="ending">물어봐도 돼요</span>?</span><span class="translation">もしかして、番号を<span class="ending">聞いてもいいですか</span>？</span></div>
+      </div>
+    </div>
+
+    <!-- the one rule in the pattern, taught by comparison -->
+    <div class="section" data-page-id="p2-rule">
+      <h2 class="section-title">아도와 어도 <span class="title-ja">(아도 と 어도、どっち？)</span></h2>
+      <p class="section-subtitle"><span class="ko">동사에서 다를 떼고, 마지막 모음을 봐 주세요. ㅏ나 ㅗ면 아도, 나머지는 다 어도예요.</span><span class="ja">動詞から「다」を取って、最後の母音を見てください。ㅏかㅗなら아도、それ以外は全部어도です。</span></p>
+      <div class="tutor-note">하다는 해도, 보다는 봐도로 줄어든다고 알려 주세요.</div>
+      <!-- the same equation the 받침 page draws, stem on the left and the form
+           it takes on the right — but the seat moves. This rule is decided by
+           the last vowel, so the seat sits on the vowel: the stroke down the
+           right side of 앉 and of 먹. Not the floor — nine pages ago the floor
+           meant 받침, and it is also where a ㅗ would sit. The learner reads
+           the two pages as one habit with two places to look. -->
+      <div class="batchim ending-rule">
+        <div class="bt-box">
+          <!-- both vowels the head names, drawn. ㅗ is flat and sits UNDER the
+               consonant, so 놀 seats its middle band while 앉 seats its right
+               stroke — the seat follows the vowel rather than a fixed corner,
+               which is the habit worth leaving with. 놀다 is the ㅗ stem this
+               lesson can actually use: 보다 and 오다 contract to 봐도·와도 and
+               would break the rule the page is drawing. -->
+          <span class="bt-eq">
+            <span class="bt-syls">
+              <span class="bt-syl vowel">앉</span>
+              <span class="sep" aria-hidden="true">/</span>
+              <span class="bt-syl vowel under">놀</span>
+            </span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">아도</span>
+          </span>
+          <span class="bt-head">ㅏ · ㅗ<small>最後の母音が ㅏ か ㅗ</small></span>
+          <span class="bt-ex"><span>앉다 → 앉<b>아도</b></span><span>놀다 → 놀<b>아도</b></span></span>
+        </div>
+        <div class="bt-box">
+          <span class="bt-eq">
+            <span class="bt-syls">
+              <span class="bt-syl vowel">먹</span>
+              <span class="sep" aria-hidden="true">/</span>
+              <span class="bt-syl vowel">찍</span>
+            </span>
+            <span class="bt-arrow" aria-hidden="true">→</span>
+            <span class="bt-out">어도</span>
+          </span>
+          <span class="bt-head">그 외<small>ㅓ ㅜ ㅡ ㅣ … それ以外の母音</small></span>
+          <span class="bt-ex"><span>먹다 → 먹<b>어도</b></span><span>찍다 → 찍<b>어도</b></span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="p2-choose">
+      <h2 class="section-title">아도와 어도 고르기 <span class="title-ja">(아도 と 어도 を選ぼう)</span></h2>
+      <p class="section-subtitle"><span class="ko">마지막 모음을 보고, 맞는 쪽을 눌러 보세요.</span><span class="ja">最後の母音を見て、正しいほうをタップしてください。</span></p>
+      <div class="choose-list">
+        <div class="choose-row sentence" data-sync-id="p2-choice-sit" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">ここに座ってもいいですか？</span>
+          <span class="choose-sentence">여기 앉<span class="opt" data-sync-option="ado" data-correct>아도</span><span class="sep">/</span><span class="opt" data-sync-option="eodo">어도</span> 돼요?</span>
+        </div>
+        <div class="choose-row sentence" data-sync-id="p2-choice-eat" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">これ、食べてもいいですか？</span>
+          <span class="choose-sentence">이거 먹<span class="opt" data-sync-option="ado">아도</span><span class="sep">/</span><span class="opt" data-sync-option="eodo" data-correct>어도</span> 돼요?</span>
+        </div>
+        <div class="choose-row sentence" data-sync-id="p2-choice-photo" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">写真を撮ってもいいですか？</span>
+          <span class="choose-sentence">사진 찍<span class="opt" data-sync-option="eodo" data-correct>어도</span><span class="sep">/</span><span class="opt" data-sync-option="ado">아도</span> 돼요?</span>
+        </div>
+        <div class="choose-row sentence" data-sync-id="p2-choice-take" data-sync-kind="selection" data-sync-state="chosen">
+          <span class="translation">これ、もらってもいいですか？</span>
+          <span class="choose-sentence">이거 받<span class="opt" data-sync-option="eodo">어도</span><span class="sep">/</span><span class="opt" data-sync-option="ado" data-correct>아도</span> 돼요?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- drill · order the words. the pieces are given, the sentence isn't. -->
+    <div class="section" data-page-id="p2-reorder">
+      <h2 class="section-title">문장 만들기 <span class="title-ja">(文を組み立てよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">단어를 순서대로 놓고, 소리 내어 말해 보세요.</span><span class="ja">単語を順番に並べて、声に出して言ってみましょう。</span></p>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">ここに座ってもいいですか？</span>
+          <span class="answer-space build-zone" data-sync-id="p2-order-sit" data-sync-kind="order" data-a="여기 앉아도 돼요?"></span>
+        </div>
+        <span class="choice" data-item-id="dweyo">돼요?</span>
+        <span class="choice" data-item-id="here">여기</span>
+        <span class="choice" data-item-id="sit">앉아도</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">写真、いっしょに撮ってもいいですか？</span>
+          <span class="answer-space build-zone" data-sync-id="p2-order-photo" data-sync-kind="order" data-a="사진 같이 찍어도 돼요?"></span>
+        </div>
+        <span class="choice" data-item-id="take-photo">찍어도 돼요?</span>
+        <span class="choice" data-item-id="together">같이</span>
+        <span class="choice" data-item-id="photo">사진</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">もしかして、番号を聞いてもいいですか？</span>
+          <span class="answer-space build-zone" data-sync-id="p2-order-number" data-sync-kind="order" data-a="혹시 번호 물어봐도 돼요?"></span>
+        </div>
+        <span class="choice" data-item-id="ask">물어봐도 돼요?</span>
+        <span class="choice" data-item-id="number">번호</span>
+        <span class="choice" data-item-id="hoksi">혹시</span>
+      </div>
+      <div class="task-block">
+        <div class="answer-box small">
+          <span class="answer-label">これ、食べてもいいですか？</span>
+          <span class="answer-space build-zone" data-sync-id="p2-order-eat" data-sync-kind="order" data-a="이거 먹어도 돼요?"></span>
+        </div>
+        <span class="choice" data-item-id="eat">먹어도 돼요?</span>
+        <span class="choice" data-item-id="this">이거</span>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="p2-fill">
+      <h2 class="section-title">빈칸을 채워요 <span class="title-ja">(空欄をうめよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">빈칸에 들어갈 말을 넣어서, 문장을 통째로 소리 내어 말해 보세요.</span><span class="ja">空欄に入ることばを入れて、文をまるごと声に出して言ってみましょう。</span></p>
+      <div class="tutor-note">학생이 말한 대로 빈칸에 적어 주세요.</div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">ここに<span class="target ending">座っても</span>いいですか？</span>
+          <span class="answer-fill"><span class="korean">여기 <input class="slot-input" type="text" data-sync-id="p2-fill-sit" data-answer="앉아도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">写真を<span class="target ending">撮っても</span>いいですか？</span>
+          <span class="answer-fill"><span class="korean">사진 <input class="slot-input" type="text" data-sync-id="p2-fill-photo" data-answer="찍어도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">番号を<span class="target ending">聞いても</span>いいですか？</span>
+          <span class="answer-fill"><span class="korean">번호 <input class="slot-input" type="text" data-sync-id="p2-fill-ask" data-answer="물어봐도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">ちょっと<span class="target ending">休んでも</span>いいですか？</span>
+          <span class="answer-fill"><span class="korean">잠깐 <input class="slot-input" type="text" data-sync-id="p2-fill-rest" data-answer="쉬어도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="p2-translate">
+      <h2 class="section-title">한국어로 바꿔요 <span class="title-ja">(韓国語にしよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 일본어만 보고 한국어로 바꿔 말해 볼까요?</span><span class="ja">今度は日本語だけを見て、韓国語に変えて言ってみましょうか。</span></p>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">ここに座ってもいいですか？</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p2-translate-sit" data-answer="여기 앉아도 돼요?" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">座る:앉다</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">写真を撮ってもいいですか？</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p2-translate-photo" data-answer="사진 찍어도 돼요?" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">写真:사진</span><span class="hint-chip">撮る:찍다</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">もしかして、番号を聞いてもいいですか？</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p2-translate-number" data-answer="혹시 번호 물어봐도 돼요?" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">番号:번호</span><span class="hint-chip">聞いてみる:물어보다</span></span>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="answer-box">
+          <span class="answer-label">これ、食べてもいいですか？</span>
+          <span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p2-translate-eat" data-answer="이거 먹어도 돼요?" autocomplete="off" spellcheck="false"></span>
+                  <span class="hint"><span class="hint-chip">これ:이거</span><span class="hint-chip">食べる:먹다</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="p2-write">
+      <h2 class="section-title">내 질문 만들기 <span class="title-ja">(自分の質問を作ろう)</span></h2>
+      <p class="section-subtitle"><span class="ko">저한테 허락을 구하는 질문을 하나 말해 보세요.</span><span class="ja">私に許可をもらう質問を1つ言ってみましょう。</span></p>
+      <div class="tutor-note">학생이 말한 질문을 여기에 적어 주세요.</div>
+      <div class="fb-compose">
+        <div class="fb" data-fb="p2-free-question"><span class="hint"><span class="hint-chip">座る:앉다</span><span class="hint-chip">撮る:찍다</span><span class="hint-chip">食べる:먹다</span><span class="hint-chip">休む:쉬다</span><span class="hint-chip">聞いてみる:물어보다</span><span class="hint-chip">開ける:열다</span><span class="hint-chip">写真:사진</span><span class="hint-chip">名前:이름</span></span></div>
+        <div class="fb-adds"><button class="fb-add" data-add="fix" type="button">＋ 교정</button><button class="fb-add" data-add="note" type="button">＋ 노트</button></div>
+      </div>
+    </div>
+
+    <!-- ============ PART 3 · the scene, played ============ -->
+    <div class="transition-page" data-page-id="part3-intro" data-act="제1화 연기">
+      <span class="transition-kicker">パート 3</span>
+      <h2 class="transition-title">이제 당신 차례예요</h2>
+      <p class="transition-copy">2つのパターンがそろいました。第1話の「나」は、ここからあなたです。</p>
+    </div>
+
+    <div class="section" data-page-id="p3-model">
+      <h2 class="section-title">장면 다시 읽기 <span class="title-ja">(シーンをもう一度)</span></h2>
+      <p class="section-subtitle"><span class="ko">아까 그 장면이에요. 이번엔 뜻을 알고 다시 해 볼까요?</span><span class="ja">さっきのあのシーンです。今度は意味がわかった状態で、もう一度やってみましょうか？</span></p>
+      <div class="dialogue">
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">저기요! 이거요.</span><span class="translation">あの、すみません！これ。</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">아… 감사합니다.</span><span class="translation">あ…ありがとうございます。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">저… 혹시 우리 어디서 <span class="ending">본 적 있지 않아요</span>?</span><span class="translation">あの…もしかして、私たちどこかで<span class="ending">会ったことありませんか</span>？</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">네? 글쎄요… 잘 모르겠는데요.</span><span class="translation">え？さあ…よくわからないですけど。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">지난주 그 카페요. 창가 자리에서 <span class="ending">본 적 있어요</span>.</span><span class="translation">先週のあのカフェです。窓ぎわの席で<span class="ending">見たことがあります</span>。</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">아, 맞다! 그 카페! 반가워요.</span><span class="translation">あ、そうだ！あのカフェ！うれしいです。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">저… 혹시 번호 <span class="ending">물어봐도 돼요</span>?</span><span class="translation">あの…もしかして、番号を<span class="ending">聞いてもいいですか</span>？</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">네, 좋아요. 저도 반가웠어요.</span><span class="translation">はい、いいですよ。私もうれしかったです。</span></div></div>
+      </div>
+    </div>
+
+    <!-- the same scene, with 나's lines taken away -->
+    <div class="section" data-page-id="p3-complete">
+      <h2 class="section-title">대화 채우기 <span class="title-ja">(会話をうめよう)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 나 대사가 비어 있어요. 소희한테 직접 말해 보세요.</span><span class="ja">今度は「나」のセリフが空いています。ソヒに向かって、自分で言ってみましょう。</span></p>
+      <div class="tutor-note">학생이 말한 대로 빈칸에 적어 주세요.</div>
+      <div class="dialogue">
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><span class="korean">저기요! 이거요.</span><span class="translation">あの、すみません！これ。</span></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">아… 감사합니다.</span><span class="translation">あ…ありがとうございます。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box"><span class="answer-label">あの…もしかして、私たちどこかで<span class="target">会ったことありません</span>か？</span><span class="answer-fill"><span class="korean">저… 혹시 우리 어디서 <input class="slot-input" type="text" data-sync-id="p3-complete-seen" data-answer="본 적 있지 않아요" autocomplete="off" spellcheck="false">?</span></span><span class="hint"><span class="hint-chip">見る:보다</span></span></div></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">네? 글쎄요… 잘 모르겠는데요.</span><span class="translation">え？さあ…よくわからないですけど。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box"><span class="answer-label">先週のあのカフェです。窓ぎわの席で<span class="target">見たことがあります</span>。</span><span class="answer-fill"><span class="korean">지난주 그 카페요. 창가 자리에서 <input class="slot-input" type="text" data-sync-id="p3-complete-cafe" data-answer="본 적 있어요" autocomplete="off" spellcheck="false">.</span></span><span class="hint"><span class="hint-chip">見る:보다</span></span></div></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">아, 맞다! 그 카페! 반가워요.</span><span class="translation">あ、そうだ！あのカフェ！うれしいです。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box"><span class="answer-label">あの…もしかして、番号を<span class="target">聞いてもいいですか</span>？</span><span class="answer-fill"><span class="korean">저… 혹시 번호 <input class="slot-input" type="text" data-sync-id="p3-complete-number" data-answer="물어봐도 돼요" autocomplete="off" spellcheck="false">?</span></span><span class="hint"><span class="hint-chip">聞いてみる:물어보다</span></span></div></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">네, 좋아요. 저도 반가웠어요.</span><span class="translation">はい、いいですよ。私もうれしかったです。</span></div></div>
+      </div>
+    </div>
+
+    <div class="section" data-page-id="p3-freetalk">
+      <h2 class="section-title">자유 대화 <span class="title-ja">(フリートーク)</span></h2>
+      <p class="section-subtitle"><span class="ko">이번엔 진짜 이야기예요. 제 질문에 답하고, 저한테도 물어봐 주세요.</span><span class="ja">今度は本当の話です。私の質問に答えて、私にも聞いてみてください。</span></p>
+      <div class="tutor-note">학생 대답에 이어서 한 번 더 물어봐 주세요.</div>
+      <div class="dialogue">
+        <div class="turn other"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">선생님</span></span><div class="bubble"><span class="korean">한국에 간 적 있어요?</span><span class="translation">韓国に行ったことがありますか？</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box small"><span class="answer-label task">ある？ない？いつ・どこ？くわしく答えてみよう</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="p3-freetalk-answer" rows="2" spellcheck="false" maxlength="2000"></textarea></span><span class="hint"><span class="hint-chip">韓国:한국</span><span class="hint-chip">行く:가다</span><span class="hint-chip">去年:작년</span></span></div></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box small"><span class="answer-label task">先生にも「〜したことある？」を1つ聞いてみよう</span><span class="answer-space as-input"><input class="space-input" type="text" data-sync-id="p3-freetalk-question" data-answer="일본에 온 적 있어요?" autocomplete="off" spellcheck="false"></span><span class="hint"><span class="hint-chip">日本:일본</span><span class="hint-chip">来る:오다</span></span></div></div></div>
+        <div class="turn other"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">선생님</span></span><div class="bubble"><div class="answer-box small"><span class="answer-label">先生の答え</span><span class="answer-space as-input"><textarea class="free-input" data-sync-id="p3-freetalk-tutor" rows="2" spellcheck="false" maxlength="2000"></textarea></span></div></div></div>
+      </div>
+    </div>
+
+    <!-- one idea: how to make the same request softer -->
+    <div class="section" data-page-id="native-tip">
+      <h2 class="section-title">원어민 팁 <span class="title-ja">(ネイティブのひとこと)</span></h2>
+      <p class="section-subtitle"><span class="ko">조금 더 조심스럽게 물을 때는 이렇게 해요. 끝을 돼요 대신 될까요로 바꾸면 훨씬 부드러워져요.</span><span class="ja">もう少し遠慮ぎみに聞くときは、こうします。最後を「돼요?」から「될까요?」に変えるだけで、ぐっとやわらかくなります。</span></p>
+      <div class="tutor-note">한 줄씩 위아래로 읽어 주세요. 끝이 어떻게 달라지는지 들리게요.</div>
+      <!-- the rule moved into the script box, where the tutor's spoken line
+           lives. It was being said three times — once in blue, once in a
+           Korean paragraph, once in Japanese under it — and drawn zero
+           times. Now it is said once and drawn twice. -->
+      <div class="swap">
+        <div class="swap-row">
+          <span class="translation">ここに座ってもいいですか？</span>
+          <span class="sw-from">여기 앉아도 <span class="ending">돼요?</span></span>
+          <span class="sw-to">여기 앉아도 <span class="ending">될까요?</span></span>
+        </div>
+        <div class="swap-row">
+          <span class="translation">もしかして、番号を聞いてもいいですか？</span>
+          <span class="sw-from">혹시 번호 물어봐도 <span class="ending">돼요?</span></span>
+          <span class="sw-to">혹시 번호 물어봐도 <span class="ending">될까요?</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ 제2화 맛보기 ============
+         The bonus used to leave the drama and become a tourist ordering in a
+         café in Korea, which threw away the world the deck had just built.
+         It is the same story now, one week on — the payoff for having been
+         able to say the lines, and the reason to want the next lesson. -->
+    <div class="section" data-page-id="episode2-taste">
+      <h2 class="section-title">제2화 맛보기 <span class="title-ja">(第2話・ちょっとだけ)</span></h2>
+      <p class="section-subtitle"><span class="ko">일주일 뒤, 그 카페예요. 소희가 창가 자리에 앉아 있어요. 빈칸 대사를 말해 주세요.</span><span class="ja">一週間後、あのカフェです。ソヒが窓ぎわの席にすわっています。空欄のセリフを言ってください。</span></p>
+      <div class="dialogue">
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">어? 안녕하세요! 또 만났네요.</span><span class="translation">あれ？こんにちは！また会いましたね。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box"><span class="answer-label">あの…ここに<span class="target">座ってもいいですか</span>？</span><span class="answer-fill"><span class="korean">저기… 여기 <input class="slot-input" type="text" data-sync-id="ep2-sit" data-answer="앉아도 돼요" autocomplete="off" spellcheck="false">?</span></span><span class="hint"><span class="hint-chip">座る:앉다</span></span></div></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">그럼요, 앉으세요.</span><span class="translation">もちろん、どうぞ。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box"><span class="answer-label">あの日のあと、ここに<span class="target">来たことがあります</span>か？</span><span class="answer-fill"><span class="korean">그날 이후로 여기 <input class="slot-input" type="text" data-sync-id="ep2-been" data-answer="온 적 있어요" autocomplete="off" spellcheck="false">?</span></span><span class="hint"><span class="hint-chip">来る:오다</span></span></div></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">네, 매일 왔어요. 혹시 만날까 해서요.</span><span class="translation">はい、毎日来ました。もしかしたら会えるかと思って。</span></div></div>
+        <div class="turn me"><span class="who"><span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z"/></svg></span><span class="who-name">나</span></span><div class="bubble me"><div class="answer-box"><span class="answer-label">じゃあ…いっしょに<span class="target">写真を撮ってもいいですか</span>？</span><span class="answer-fill"><span class="korean">그럼… 같이 <input class="slot-input" type="text" data-sync-id="ep2-photo" data-answer="사진 찍어도 돼요" autocomplete="off" spellcheck="false">?</span></span><span class="hint"><span class="hint-chip">写真:사진</span><span class="hint-chip">撮る:찍다</span></span></div></div></div>
+        <div class="turn other"><span class="who"><img class="avatar" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/hana-avatar.jpg" alt=""><span class="who-name">소희</span></span><div class="bubble"><span class="korean">좋아요. 이번엔 제가 이름부터 물어볼게요.</span><span class="translation">いいですよ。今度は私から名前を聞きますね。</span></div></div>
+      </div>
+    </div>
+
+    <!-- the number that sells the next lesson -->
+    <div class="section" data-page-id="todays-result">
+      <h2 class="section-title">오늘의 결과 <span class="title-ja">(今日の成果)</span></h2>
+      <p class="section-subtitle"><span class="ko">25분 전엔 이 장면을 못 읽었는데, 지금은 제1화를 통째로 연기할 수 있어요.</span><span class="ja">25分前はこのシーンが読めなかったのに、今は第1話をまるごと演じられます。</span></p>
+      <!-- the number leads and the table under it is the receipt: the claim
+           lands first, then the learner can check it by eye. -->
+      <div class="payoff">
+        <span class="eqline">動詞 8 ＋ ~(으)ㄴ 적 있어요 ＋ ~아/어도 돼요?</span>
+        <span class="big">16</span>
+        <span class="cap">今日言えるようになった文の数</span>
+      </div>
+      <!-- eight verbs, two ways to end them — the 16 the deck claims -->
+      <div class="combi">
+        <div class="combi-head">
+          <span class="combi-tag n">動詞 8</span>
+          <span></span><!-- the ＋ belongs between the banks, not twice -->
+          <span class="combi-tag e">言い方 2</span>
+        </div>
+        <div class="combi-body">
+          <div class="combi-nouns">
+            <span>가다</span><span>보다</span>
+            <span>먹다</span><span>읽다</span>
+            <span>만나다</span><span>앉다</span>
+            <span>찍다</span><span>물어보다</span>
+          </div>
+          <span class="combi-plus">＋</span>
+          <div class="combi-ends">
+            <span>(으)ㄴ 적 있어요.</span>
+            <span>아/어도 돼요?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- the hook. A drama sells the next episode, not the next grammar point:
+         the old page ended on 「次は 자꾸 ~게 되다 を習います」, which is a
+         syllabus. This is the same information as a cliffhanger. -->
+    <div class="transition-page" data-page-id="next-episode" data-act="다음 화">
+      <span class="transition-kicker">다음 화 예고</span>
+      <h2 class="transition-title">제2화 · 자꾸 생각나</h2>
+      <p class="transition-copy">連絡先は聞けた。なのに、その日から何度も画面を見てしまう——<br>次は「つい〜してしまう」を 자꾸 ~게 되다 で言えるようにします。</p>
+      <div class="known lines">
+        <div class="known-row"><span class="k">자꾸 그 사람 생각이 나게 돼요.</span><span class="j">つい何度も、あの人のことを考えてしまいます。</span></div>
+      </div>
+    </div>
+
+    <div class="brand-page bleed" data-page-id="report-intro">
+      <h2 class="brand-title">レポート＆プラン</h2>
+      <p class="brand-sub">今日の授業で確認した現在の実力と、<br>目標までの道のりを合わせてお見せしますね。</p>
+      <img class="brand-art mid" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-character-report.png" alt="">
+    </div>
+    <!-- ================================================================
+         맞춤 리포트 · 한 장
+         Figma「❤️ PODO JP」> 상담 및 리포트 v2 > 리포트 의 카드 넉 장을
+         그대로 옮겼다: ① 내 레벨 → ② 항목별 진단 → ③ 원하는 레벨까지 →
+         ④ 시작 커리큘럼. 리포트는 하나의 문서로 읽히는 게 맞고, 스크롤이
+         기본 보기라 따로 쪼갤 이유가 없다.
+
+         ③ 과 ④ 는 결론 한 칸씩이다("3개월・주 3회", "첫 코스는 핵심 패턴").
+         전에는 그 뒤에 같은 답을 길게 푼 예측 그래프와 학습 순서 카드가 더
+         있었는데, 상담에서 실제로 읽히는 건 앞의 두 칸이고 나머지는 화면을
+         두 배로 늘리기만 했다. 커리큘럼 전체는 뒤의 「커리큘럼」 장이 맡는다.
+
+         맨 위 레벨 체크만 튜터 전용이다.
+         ================================================================ -->
+
+    <div class="section rep-page rep-all" id="p-report" data-page-id="report">
+
+      <!-- 리포트 표지 줄 -->
+      <div class="rhead">
+        <span class="rhead-k">PODO TRIAL LESSON REPORT</span>
+        <h2 class="rhead-t">あなたの韓国語の実力を、<br>ていねいに診断しました。</h2>
+        <p class="rhead-m"><span class="rm-date">—</span>・体験レッスン・25分</p>
+      </div>
+
+      <!-- ① 내 레벨 · 내용은 레벨 체크에 따라 다시 그려진다 -->
+      <div class="rsec lvcard">
+        <h3 class="rsec-h">今のレベル</h3>
+        <div class="lvbig">
+          <div class="lvbig-b">
+            <p class="lvbig-n"><b>Lv.1</b><span>/ 10</span></p>
+            <p class="lvbig-l">ハングルを <em>一文字ずつ読めます</em></p>
+          </div>
+          <img class="lvbig-img" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-1.png" alt="">
+        </div>
+        <div class="lv-src" hidden>
+          <img data-lv="1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-1.png" alt="">
+          <img data-lv="2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-2.png" alt="">
+          <img data-lv="3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-3.png" alt="">
+          <img data-lv="4" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-4.png" alt="">
+          <img data-lv="5" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-5.png" alt="">
+          <img data-lv="6" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-6.png" alt="">
+          <img data-lv="7" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-7.png" alt="">
+          <img data-lv="8" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-8.png" alt="">
+          <img data-lv="9" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-9.png" alt="">
+          <img data-lv="10" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/lv-10.png" alt="">
+        </div>
+        <hr class="rline">
+        <ul class="chk lv-ev"></ul>
+        <p class="topikrow"><i>TOPIK 1級</i><span>—</span></p>
+        <!-- 레벨 체크 · 이 카드가 보여 주는 값을 바로 여기서 고른다.
+             전에는 페이지 맨 위 별도 콘솔이었는데, 고르는 곳과 그려지는 곳이
+             떨어져 있으면 튜터가 리포트에서 눈을 떼야 했다.
+             보기는 「수업이 어땠나」 다 — 튜터가 방금 겪은 그대로라, 끝난
+             직후라면 고민 없이 한 줄이 짚인다. CEFR·TOPIK 은 여기 없다:
+             튜터는 급수로 학생을 기억하지 않는다. 환산은 리포트가 한다.
+             다섯 줄은 각각 A1 · A2 · B1 · B2 · C1 의 경계에 서 있다. 가르는
+             기준이 매번 다른 것이 중요하다 — 한국어가 나오기는 하는가(1↔3),
+             익숙한 주제에서 말이 이어지는가(3↔5), 낯선 주제도 이유를 붙여
+             다루는가(5↔7), 원어민 속도를 따라잡는가(7↔9). 그래서 한 줄이
+             「무엇을 말했나」와 「얼마나 매끄러웠나」를 함께 든다.
+             고르고 나면 접힌다: 튜터가 다시 볼 것은 고른 한 줄뿐이다. -->
+        <div class="lvcheck">
+          <span class="lvcheck-h">レベルチェック <small>先生のみ表示</small></span>
+          <p class="lvcheck-q">今日のレッスンで、学習者はどうでしたか？</p>
+          <div class="lvpick" data-group="level" data-pick="single" data-sync-id="plan-level" data-sync-kind="selection" data-sync-state="on">
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">あいさつと単語がいくつかだけで、ほとんど日本語で補いました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">慣れた話題なら短い文は作れますが、よく詰まり語尾が揺れました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">慣れた話題はつまらず続きましたが、知らない話題では止まりました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">はじめての話題にも理由をつけて自分の意見を言えました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">私の速さで複雑な話をしてもすぐ聞き取って返してきました</span></button>
+          </div>
+          <button class="lvcheck-redo" type="button">選び直す</button>
+        </div>
+      </div>
+
+      <!-- ② 항목별 진단 · 레이더 + 다섯 줄. 튜터가 고른 항목별 레벨을
+           같은 수업을 받은 분들의 평균과 견준다. -->
+      <div class="rsec">
+        <h3 class="rsec-h">項目別診断<small>ポド受講生の平均と並べて見ました</small></h3>
+
+        <div class="radbox">
+          <div class="rad-legend">
+            <span><i></i>私のレベル</span>
+            <span><i class="avg"></i>ポド受講生の平均</span>
+          </div>
+          <!-- viewBox 는 그려지는 내용(축 라벨 포함)에 맞춰 잘라 둔 것이다.
+               넉넉히 잡아 두면 아래에 죽은 여백이 100px 넘게 생긴다 — 그래서
+               세로(-12 204)는 건드리지 않는다.
+               가로만 -18 244 에서 -48 266 으로 넓혔다. 잘라 둔 값이 한국어 축
+               이름에 맞춰져 있었는데(「듣기」 두 자), 일본어로 옮기면서 왼쪽
+               축이 「リスニング」 다섯 자가 됐다. text-anchor 가 end 라 글자가
+               왼쪽으로 자라고, 실측 내용 상자가 x=-46 까지 나가 -18 에서
+               잘려 「ニング」 만 보였다. 축 이름을 상자에 맞춰 줄이는 것은
+               거꾸로다 — 이름은 항목 칩과 코멘트 문장에도 그대로 쓰인다. -->
+          <svg id="radar" class="rad" viewBox="-48 -12 266 204" role="img" aria-label="項目別の現在レベルと平均のレーダー"></svg>
+        </div>
+
+
+        <!-- ================================================================
+             항목별 체크 · 레이더 바로 아래, 한 번에 한 항목
+             예전에는 페이지 맨 위 콘솔에 1~10 칩이 다섯 줄로 있었다. 튜터는
+             숫자를 고르느라 리포트에서 눈을 떼야 했고, 학습자 화면에서는 그
+             사이 아무 일도 일어나지 않았다.
+             여기서는 고르는 자리가 곧 그려지는 자리다: 한 항목을 고르면 바로
+             위 오각형이 그 축만큼 자라고 다음 항목이 열린다. 컨트롤은 튜터에게만
+             보이지만(teaching) 고른 값은 공유되므로, 학습자는 자기 그래프가
+             한 칸씩 그려지는 걸 본다.
+             문항 다섯 줄이 항목별 문안의 원본이다 — 리포트가 쓰는 BAND 표를
+             이 버튼들에서 읽어 만든다. 튜터가 고른 문장이 곧 리포트에 실리는
+             문장이라, 둘이 어긋날 자리가 없다.
+             ================================================================ -->
+        <div class="axsteps">
+          <div class="axst-chips"></div>
+        <div class="axq" data-ax="acc">
+          <p class="axq-h">正確さ<small>文法と語尾はどうでしたか？</small></p>
+          <div class="axq-opts" data-group="ax-acc" data-pick="single" data-sync-id="ax-acc" data-sync-kind="selection" data-sync-state="on">
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="簡単な語と文法で、基本的な意味は伝えられます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">単語を並べるだけで、意味は私が推し量りました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="文が長くなると助詞と語尾がよく揺れます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">助詞と語尾がよく間違っていました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="文が複雑なときだけ、たまに語順や文法が揺れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">長い文でだけ、たまに間違いました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="場面に合う語と文法を、おおむね正確に使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">ほとんど間違いませんでした</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="語・文法・語順が文脈に合って正確です"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">間違いを見つけるのが難しいほどでした</span></button>
+          </div>
+        </div>
+        <div class="axq" data-ax="voc">
+          <p class="axq-h">語彙<small>使える語はどれくらいありましたか？</small></p>
+          <div class="axq-opts" data-group="ax-voc" data-pick="single" data-sync-id="ax-voc" data-sync-kind="selection" data-sync-state="on">
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="とても簡単な語で、言いたいことを伝えられます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">使う語がなくて、よく止まりました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="言いたいことに合う語を、二つ三つほど知っています"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">やさしい語で、なんとか言い換えていました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="言いたいことに合う語を選んで使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">言おうとすることに合う語を探して使えました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="言いたいことを、いろいろな語に言い換えられます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">同じことをいろいろに言い換えていました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="場面に合う多様な語と表現を自由に使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">場面にぴったり合う表現まで選んで使えました</span></button>
+          </div>
+        </div>
+        <div class="axq" data-ax="flu">
+          <p class="axq-h">流暢さ<small>話はどれくらい続きましたか？</small></p>
+          <div class="axq-opts" data-group="ax-flu" data-pick="single" data-sync-id="ax-flu" data-sync-kind="selection" data-sync-state="on">
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="慣れた話題なら、たどたどしくでも話せます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">よく止まっては言い直していました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="慣れた話題なら、ゆっくりやりとりできます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">言葉の間に止まることが多くありました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="慣れた話題なら、ためらわず話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">たまに止まりますが、続けて話せました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="はじめての話題でも、ためらわず話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">ほとんど止まらず会話を続けました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="どんな話題でも、速く楽に話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">韓国の方のように楽に話していました</span></button>
+          </div>
+        </div>
+        <div class="axq" data-ax="pron">
+          <p class="axq-h">発音<small>学習者の話は聞き取りやすかったですか？</small></p>
+          <div class="axq-opts" data-group="ax-pron" data-pick="single" data-sync-id="ax-pron" data-sync-kind="selection" data-sync-state="on">
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="知っている語でも、気をつけて言わないと聞き取れません"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">発音のせいで聞き取りにくいところがありました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="知っている語は言えますが、はじめての語は発音が難しいです"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">たまに聞き取りにくいところがありました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="知っている語は滑らかで、はじめての語も声に出して読めます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">聞き取れて、おおむねはっきりしていました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="発音が滑らかで、イントネーションとリズムも合っています"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">とてもはっきりしていました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="発音がはっきりしていて、イントネーションとリズムまで自然です"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">韓国の方のように聞こえました</span></button>
+          </div>
+        </div>
+        <div class="axq" data-ax="lis">
+          <p class="axq-h">リスニング<small>聞き取ってもらうのに、どれだけ速さを落としましたか？</small></p>
+          <div class="axq-opts" data-group="ax-lis" data-pick="single" data-sync-id="ax-lis" data-sync-kind="selection" data-sync-state="on">
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="ゆっくりはっきり話しても、聞き取るのが難しいです"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">私の話をほとんど聞き取れませんでした</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="ゆっくりはっきり話せば聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">とてもゆっくり話してやっと聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="少し速さを落として話せば、全体の内容を聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">少しゆっくり話せば聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="ふつうの速さで話してもニュアンスまで理解できます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">いつもより少し落とすだけで聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="韓国の方の速さで話しても、ニュアンスまで正確に聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">いつもの速さで話しても聞き取れました</span></button>
+          </div>
+        </div>
+          <p class="axq-done">五つの項目を見終わりました。上を押せば直せます。</p>
+        </div>
+
+        <!-- 다섯 줄 · 좋아요/아쉬운 점 · 추천 모두 renderAspects() 가 그린다 -->
+        <div class="axbars"></div>
+        <!-- 항목 칩의 그림 · 레벨 그림(.lv-src)·코스 아이콘(.ico-src)과 같은 이유로
+             마크업에 한 번씩 적어 둔다. 패키저는 마크업의 src 만 번들·평탄화하므로,
+             JS 가 경로를 지어내면 로컬에서만 되고 보드에서 404 가 난다.
+             다섯 중 넷은 Figma 에서 내려받은 SVG 그대로다 — 선 그림이라 어느 화면
+             배율에서도 또렷하고 파일도 가볍다. 어휘만 PNG 인데, 그쪽은 Figma 에서
+             조각 다섯으로 나뉘어 나와 한 파일로 합쳐야 해서 아직 래스터다. -->
+        <div class="ax-src" hidden>
+          <img data-ax="acc" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-acc.svg" alt="">
+          <img data-ax="voc" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-voc.png" alt="">
+          <img data-ax="flu" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-flu.svg" alt="">
+          <img data-ax="pron" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-pron.svg" alt="">
+          <img data-ax="lis" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ax-lis.svg" alt="">
+        </div>
+        <div class="axsum">
+          <div class="axs good"><h4><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/good.svg" alt="">よくできています！</h4><ul></ul></div>
+          <div class="axs weak"><h4><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/bad.svg" alt="">もう一歩です！</h4><ul></ul></div>
+        </div>
+        <!-- 코멘트 한 문단 · 잘하는 둘과 아쉬운 둘을 한 문장으로 잇고, 그 둘을
+             기르는 방법까지 붙인다. 위 두 상자가 「무엇」 이라면 여기는 「그래서」 다. -->
+        <div class="axtip"><h4><i class="axtip-i" aria-hidden="true">✦</i>体験レッスンのコメント</h4><p></p></div>
+      </div>
+
+      <!-- ③ 이대로만 따라오면 돼요 · 기간과 길을 한 덩어리로
+           전에는 「원하는 레벨까지」(개월·페이스)와 「목표까지 가는 길」(로드맵)이
+           카드 두 장이었다. 둘은 같은 계획을 두 번 말하는 것이라 — 슬라이더를
+           끌면 아래 카드의 길이 다시 그려지는데 그 인과가 카드 경계에서 끊겼다.
+           네 칸(개월 · 레슨 · 슬라이더 · 길)이 가로·세로 모두 3 이음매로 붙고
+           바깥 네 귀만 12 로 남아, 한 판에서 잘려 나온 조각으로 읽힌다.
+           코스 카드는 이 덩어리에 속하지 않는다 — 길이 어디까지인지를 말하는
+           칸이 아니라, 지금 선 마디가 무슨 코스인지를 따로 펴는 카드다.
+           원안: trial/_experiments/trial-report-plan-merge-variations.html ① -->
+      <div class="rsec pm-card" data-sync-id="plan-roadstep" data-sync-kind="roadstep">
+        <h3 class="rsec-h">このとおり進めば大丈夫</h3>
+
+        <div class="pm-fuse">
+          <div class="tiles">
+            <div class="tile">
+              <span class="tile-k">目標達成まで</span>
+              <span class="tile-v"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cal.svg" alt=""><b class="eta">—</b></span>
+            </div>
+            <div class="tile">
+              <span class="tile-k">予想レッスン</span>
+              <span class="tile-v"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/course.svg" alt=""><b>約 <span class="need">—</span>回</b></span>
+            </div>
+          </div>
+
+          <!-- 레일 · 말풍선을 떼고 눈금 일곱을 깔았다. 슬라이더가 길 바로 위에
+               붙어 있어 「이 지도의 손잡이」 로 읽힌다. -->
+          <div class="freq pm-freq pm-rail">
+            <span class="freq-k">毎週</span>
+            <div class="freq-row">
+              <p class="freq-h"><b class="freq-n">3</b>回</p>
+              <div class="freq-slot">
+                <span class="pm-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <input class="freq-range" type="range" min="1" max="7" step="1" value="3"
+                       data-sync-id="plan-freq" aria-label="毎週何回">
+                <span class="pm-nums" aria-hidden="true"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="rep-jump rj-course" href="#p-goal"><span class="rj-b"><span class="rj-t">—</span><span class="rj-s">タップして選びに行く</span></span></a>
+
+        <!-- 코스 커버 여섯 장 · 마디마다 갈아 끼울 그림을 마크업에 한 번씩 적어
+             둔다. 패키저는 마크업의 src 만 번들·평탄화하므로, JS 가 경로를
+             지어내면 로컬에서만 되고 보드에서 404 가 난다. 여기서 골라 쓴다. -->
+        <div class="cov-src" hidden>
+          <img data-cov="hangul" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-hangul.png" alt="">
+          <img data-cov="core" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-core.png" alt="">
+          <img data-cov="travel" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-travel.png" alt="">
+          <img data-cov="drama" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-drama.png" alt="">
+          <img data-cov="banmal" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-banmal.png" alt="">
+          <img data-cov="free" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cov-free.png" alt="">
+        </div>
+
+        <!-- 코스 전용 그림과 장면 사진 · 상황별 코스는 대사가 오간 자리를 사진 석
+             장으로 깐다. 원본은 korean/references/thumbnails, 여기 것은 덱 크기로
+             자른 사본이다. 경로를 마크업에 적어 두는 이유는 .lv-src 와 같다:
+             패키저는 마크업의 src 만 번들·평탄화하므로, JS 가 경로를 지어내면
+             로컬에서만 되고 보드에서 404 가 난다. -->
+        <div class="ico-src" hidden>
+          <img data-ico="hangul" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-hangul.png" alt="">
+          <img data-ico="core"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-core.png" alt="">
+          <img data-ico="free"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-free.png" alt="">
+          <img data-ico="drama"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-drama.png" alt="">
+          <img data-ico="goal"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/ic-goal.png" alt="">
+        </div>
+        <div class="pic-src" hidden>
+          <img data-pic="drama1"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/drama-1.png" alt="">
+          <img data-pic="drama2"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/drama-2.png" alt="">
+          <img data-pic="drama3"  src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/drama-3.png" alt="">
+          <img data-pic="travel1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel-1.png" alt="">
+          <img data-pic="travel2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel-2.png" alt="">
+          <img data-pic="travel3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/travel-3.png" alt="">
+          <img data-pic="banmal1" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/banmal-1.png" alt="">
+          <img data-pic="banmal2" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/banmal-2.png" alt="">
+          <img data-pic="banmal3" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/banmal-3.png" alt="">
+          <img data-pic="free1"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/free-1.png" alt="">
+          <img data-pic="free2"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/free-2.png" alt="">
+          <img data-pic="free3"   src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/free-3.png" alt="">
+        </div>
+
+        <div class="road-card pm-road">
+          <div class="road">
+            <span class="road-k">おすすめコース</span>
+            <svg class="road-svg" viewBox="0 -4 270 122" role="img" aria-label="今から目標までのコースの道のり"></svg>
+          </div>
+
+          <div class="curli"></div>
+
+          <!-- 앞뒤로만 움직인다. 로드맵은 순서가 전부라, 목록으로 흩어 놓으면
+               「그다음」 이 사라진다. -->
+          <div class="rc-nav">
+            <button class="rc-btn rc-prev" type="button">← 前へ</button>
+            <span class="rc-dots"></span>
+            <button class="rc-btn rc-next" type="button">次へ →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ⑤ 리포트 저장 · 튜터만
+           상담이 끝나면 이 화면 그대로를 남긴다. 리포트가 끝나는
+           자리에 두는 이유는 여기가 값이 다 모이는 자리라서다 — 앞의 네 칸을
+           채우고 나서야 누를 수 있고, 안 채운 항목은 버튼 밑에 이름으로 뜬다.
+           학습자 화면에는 아예 없는 블록이라(teaching 모드에서만 뜬다) 리포트를
+           읽는 흐름은 그대로다.
+           덱은 부모 창(보드)으로 보내기만 하고, 백엔드에 남기는 일은 앱이 한다.
+           보내는 값과 le_level_test 컬럼 대응: ../report-submit.md -->
+      <div class="rep-send">
+        <span class="rep-send-h">レポート保存 <small>先生のみ表示</small></span>
+        <button class="rs-btn" type="button" disabled>レポートを保存する</button>
+        <p class="rs-msg"></p>
+      </div>
+    </div>
+
+    <!-- ============ 포도 안내 ============
+         Figma「❤️ PODO JP」> 상담 및 리포트 — v2 (699:579). 리포트 뒤에 오는
+         판매 파트 열 장을 캔버스 순서 그대로 옮겼다:
+         포도 안내 → PODO 안내 → 포도 수업 → 커리큘럼 → 튜터 → 수강료 →
+         3개월 전환 → 전체 요금표 → FAQ → 엔딩.
+
+         v2 에서 바뀐 자리 둘: 목차 역할을 하던 「포도 안내」가 파트 맨 앞으로
+         올라와 마스코트 표지를 대신하고, 수강료 안에 눌려 있던 3개월 전환이
+         제 장으로 떨어져 나왔다. 가격 이야기가 한 장에 두 결정을 담고 있어서,
+         "이번 달 얼마"와 "다음 달 어떻게"를 나눠 준 것이다.
+         ============================================================ -->
+
+    <div class="brand-page bleed" id="p-info" data-page-id="info-intro">
+      <h2 class="brand-title">ポドについての<br>ご案内</h2>
+      <p class="brand-sub">気になるところを説明しますね。</p>
+      <img class="brand-art menu" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-3d-greet.png" alt="">
+    </div>
+
+    <!-- 포도가 어떤 회사인지 · 처음 듣는 이름이라 여기서 한 번 세운다.
+         후기는 일본어 · 영어 두 묶음이다 — 한국어는 아직 후기가 없으니,
+         "같은 회사가 이미 해 온 일"을 두 언어로 보여 주는 자리다. -->
+    <div class="section info-page" id="p-podo" data-page-id="info-podo">
+      <span class="section-kicker">ご案内</span>
+      <h2 class="section-title">ポドについて</h2>
+
+      <div class="fact">
+        <span class="badges">
+          <span class="badge-dark">KOSDAQ上場企業</span>
+          <span class="badge-dark">教育専門企業</span>
+        </span>
+        <img class="fact-logo" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/day1-company.svg" alt="DAY1 COMPANY" width="190" height="30">
+        <p class="fact-s">PODOスピーキングは、KOSDAQ上場のエドテック企業<br>Day1Companyが運営する外国語教育サービスです。</p>
+      </div>
+
+      <div class="ocard">
+        <p class="sub-h">韓国での正式ローンチから約2年で、<br>これだけ多くの方にご利用いただいています。</p>
+        <div class="statgrid">
+          <div class="stat"><span class="n">75万回突破</span><span class="t">累計1:1レッスン回数</span><span class="c">2024.04 正式ローンチ〜<br>2026.07 累計</span></div>
+          <div class="stat"><span class="n">8万人突破</span><span class="t">累計会員数</span><span class="c">2024.04 正式ローンチ後の累計</span></div>
+          <div class="stat"><span class="n">4.78<em>/5</em></span><span class="t">レッスン平均評価</span><span class="c">評価 53,541件</span></div>
+          <div class="stat"><span class="n">94.7%</span><span class="t">4点以上の割合</span><span class="c">5点のみ 87.0%</span></div>
+        </div>
+      </div>
+
+      <div class="ocard">
+        <p class="sub-h">趣味からワーホリ・留学・就職準備まで、<br>PODOがまるごとカバー<br>受講生のリアルな声</p>
+        <p class="fineprint">韓国で日本語・英語を学ばれた方のレビューです。</p>
+
+        <p class="rev-h">日本語レビュー</p>
+        <div class="revgrid">
+        <div class="rev hl">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-1.jpg" alt="">
+          <span class="t">ワーホリ準備中なら必読</span>
+          <span class="w">TOKYOジャドゥネ<i>YouTube 12.7万人</i></span>
+        </div>
+        <div class="rev hl">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-2.jpg" alt="">
+          <span class="t">4ヶ国語話者のおすすめレッスン</span>
+          <span class="w">ハンカムカップル<i>YouTube 8.69万人</i></span>
+        </div>
+        <div class="rev">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-3.jpg" alt="">
+          <span class="t">日本語専門6万人YouTuberの本音</span>
+          <span class="w">ヘナリ<i>YouTube 6.39万人</i></span>
+        </div>
+        <div class="rev">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-4.jpg" alt="">
+          <span class="t">ひらがなも知らずJLPT聴解満点</span>
+          <span class="w">ホンパン<i>YouTube 1万人</i></span>
+        </div>
+        <div class="rev">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-5.jpg" alt="">
+          <span class="t">初心者でもワーホリ一発合格</span>
+          <span class="w">ジイ’s スケッチ</span>
+        </div>
+        <div class="rev">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-6.jpg" alt="">
+          <span class="t">1万人YouTuber留学生が推薦</span>
+          <span class="w">モニカワールド<i>YouTube 1万人</i></span>
+        </div>
+        <div class="rev">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-7.jpg" alt="">
+          <span class="t">独学3ヶ月で話せるように</span>
+          <span class="w">プロ独学者のレビュー</span>
+        </div>
+        <div class="rev hl">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/jp-8.jpg" alt="">
+          <span class="t">旅行前に絶対これ！</span>
+          <span class="w">センシャル senn’sharu</span>
+        </div>
+        </div>
+
+        <p class="rev-h">英語レビュー</p>
+        <div class="revgrid tight">
+        <div class="rev hl">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-1.jpg" alt="">
+          <span class="t">IELTS講師おすすめのレッスン</span>
+          <span class="w">JelloBello<i>TikTok 8.5万人</i></span>
+        </div>
+        <div class="rev hl">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-2.jpg" alt="">
+          <span class="t">CAがPODOをすすめる理由</span>
+          <span class="w">ミネ minae</span>
+        </div>
+        <div class="rev">
+          <img src="en-3.jpg" alt="">
+          <span class="t">CA志望・ワーホリ必見！高コスパ</span>
+          <span class="w">ウォニバレー<i>Instagram 5.9万人</i></span>
+        </div>
+        <div class="rev">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-4.jpg" alt="">
+          <span class="t">豪州留学4年目のおすすめ勉強法</span>
+          <span class="w">ジヘDAISY<i>YouTube 1.02万人</i></span>
+        </div>
+        <div class="rev hl">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-5.jpg" alt="">
+          <span class="t">海外営業マンのガチ会話レビュー</span>
+          <span class="w">メメ<i>YouTube 2,700人</i></span>
+        </div>
+        <div class="rev hl">
+          <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/en-6.jpg" alt="">
+          <span class="t">現役看護学生の英会話勉強法</span>
+          <span class="w">ボテングル<i>YouTube 1,790人</i></span>
+        </div>
+        </div>
+
+        <div class="endline">韓国語も、同じレッスン方式で体系的に・楽しく話せるようになります！</div>
+      </div>
+      <div class="tutor-note">회사 이름은 짧게만 짚고, 후기 쪽에서 멈춰 주세요.</div>
+    </div>
+
+    <!-- 오늘 받은 25분이 앞으로 어떻게 이어지는지 -->
+    <div class="section info-page" id="p-about" data-page-id="info-about">
+      <span class="section-kicker">ご案内</span>
+      <h2 class="section-title">ポドのレッスン</h2>
+
+      <p class="limebar">本物の韓国語会話力が身につく<br>あなただけの1対1オーダーメイド学習 4つの特長</p>
+
+      <div class="featgrid">
+        <div class="feat"><span class="n">オンラインで25分</span><span class="t">気軽な1:1レッスン</span><span class="s">音声に集中する気楽なレッスン。<br>毎日の学習が心地よい習慣に。</span></div>
+        <div class="feat"><span class="n">100%ネイティブ</span><span class="t">日本語が話せる<br>韓国人チューター</span><span class="s">日本語で気軽に質問OK。<br>あなたに合わせた1:1レッスン。</span></div>
+        <div class="feat"><span class="n">全レベル対応</span><span class="t">会話特化の教材</span><span class="s">超初心者から上級まで、<br>レベルに合わせて選べます。</span></div>
+        <div class="feat"><span class="n">体系的な復習</span><span class="t">しっかり復習</span><span class="s">すべてのレッスンを見返せます。<br>発音からコツまで身につく復習。</span></div>
+      </div>
+
+      <div class="sched">
+        <span class="k">自分のスケジュールに完全に合わせて</span>
+        <p class="big">予約もキャンセルも<em>1時間前</em>まで</p>
+        <p class="s"><b>朝8時から夜12時までレッスンの予約が可能になっております。</b>急に時間が空いたらすぐ予約、用事ができたら1時間前までにキャンセル。ご自分の予定に合わせて、気軽に受けてください。</p>
+        <div class="sched-mini">
+          <div><span class="k2">レッスン時間</span><span class="v2">08時～24時</span></div>
+          <div><span class="k2">運営</span><span class="v2">365日</span></div>
+          <div><span class="k2">受講</span><span class="v2 sm">PC・タブレット<br>・スマホ</span></div>
+        </div>
+      </div>
+
+      <div class="ocard">
+        <p class="sub-h">今日の1:1レッスンは、消えずに残ります。</p>
+        <div class="shot"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/p-report-preview.png" alt=""></div>
+        <div class="fact fill">
+          <span class="badge-green">アプリでのワンクリックですぐ確認可能</span>
+          <p class="fact-t">あなただけの韓国語 診断レポート</p>
+          <p class="fact-s">今日のレッスンで確認した現在のレベル診断から、強みと弱みを分析し、これからどこから始めるかを整理して、<br>もう一度お伝えします。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- CURRICULUM: 학습자가 실제로 사는 것.
+         Figma「❤️ PODO JP」> 🔥 최종본 🔥 > 36 · 커리큘럼 (워싱 v2) 그대로.
+         한 장으로 길게 가는 건 의도다 — 네 단계를 네 장으로 쪼갰던 판본은
+         어느 장에서도 "레슨이 어떻게 생겼는지"를 못 보여 줬고, 학습자는
+         코스가 아니라 메뉴판을 봤다. 단계마다 실물 한 조각(글자 · 패턴 ·
+         말투 · 코스 · 토픽)을 붙여 두면 스크롤이 곧 설명이 된다. ---- -->
+    <div class="section info-page" id="p-curri" data-page-id="plan-curriculum">
+      <span class="section-kicker">ご案内</span>
+      <h2 class="section-title">カリキュラム</h2>
+      <p class="limebar">ハングルからフリートークまで、<br>体系的な会話特化の学習設計</p>
+
+      <div class="cu-rail">
+        <img class="cu-rail-podo" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/rail-podo.png" alt="">
+        <div class="cu-rl on"><span class="cu-rl-pill">1</span><span class="cu-rl-lb">ハングル</span></div>
+        <div class="cu-rl"><span class="cu-rl-pill">2</span><span class="cu-rl-lb">パターン</span></div>
+        <div class="cu-rl"><span class="cu-rl-pill">3</span><span class="cu-rl-lb">話し方</span></div>
+        <div class="cu-rl"><span class="cu-rl-pill">3</span><span class="cu-rl-lb">状況別</span></div>
+        <div class="cu-rl"><span class="cu-rl-pill wide">GOAL</span><span class="cu-rl-lb">フリー</span></div>
+      </div>
+
+      <div class="cu-steps">
+
+        <div class="cu-card">
+          <div class="cu-head"><span class="cu-no">1</span><span class="cu-count">14レッスン · 3部</span></div>
+          <h3 class="cu-t">ハングルレッスン</h3>
+          <p class="cu-s">複雑に見えるハングルを、やさしく理解できるよう独自設計。<br>レッスン後はカフェやキンパの看板・メニューが読めます！</p>
+          <div class="cu-demo">
+            <div class="cu-demo-h">超初心者専用・しっかり基礎固め</div>
+            <div class="cu-demo-b">
+              <div class="cu-letters">
+                <div class="cu-lt dark"><b>オ</b><small>日本語のオ</small></div>
+                <div class="cu-lt"><b class="c">어</b><small>口を大きく開けて</small></div>
+                <div class="cu-lt"><b class="v">오</b><small>くちびるを丸く</small></div>
+              </div>
+              <p class="cu-demo-cap">複雑に見えたハングルを、<br>やさしく理解できるように独自に設計しました。</p>
+            </div>
+          </div>
+          <p class="cu-arrow">カフェ・キンパ・トイレなど、<br>看板やメニューが読めるようになります。</p>
+        </div>
+
+        <div class="cu-card">
+          <div class="cu-head"><span class="cu-no">2</span><span class="cu-count">116課 · 23ユニット · 232パターン</span></div>
+          <h3 class="cu-t">文法は暗記せずに、<br>重要パターンでラクに習得</h3>
+          <p class="cu-s">紛らわしかった表現が、はっきりわかるようになります。<br>現地のフォーマル・日常・タメ口の表現もお伝えします！</p>
+          <div class="cu-demo">
+            <div class="cu-demo-h">パターン・文法・語彙を一度に</div>
+            <div class="cu-demo-b">
+              <div class="cu-pat">
+                <div class="cu-pt">저는</div>
+                <div class="cu-pt blank"></div>
+                <div class="cu-pt dark">입니다</div>
+              </div>
+              <p class="cu-demo-cap">「〜は〜です」のパターンを覚えるだけで、<br>単語を入れ替えながら、さまざまな文を話せるようになります。</p>
+            </div>
+          </div>
+          <p class="cu-arrow">初級から上級まで23ユニット116課。<br>言いたいことを自分でつくれるようになります。</p>
+        </div>
+
+        <div class="cu-card">
+          <div class="cu-head"><span class="cu-no">3</span><span class="cu-count">初級〜上級の5段階</span></div>
+          <h3 class="cu-t">つまらない教科書表現ではなく<br>現地の話し方をより長く記憶に</h3>
+          <p class="cu-s">「은/는」はいつ使うの？ ルールの暗記ではなく<br>「なぜそう言うのか」から学ぶので、ずっと記憶に残ります。</p>
+          <div class="cu-demo">
+            <div class="cu-demo-h">現地の日常表現をそのまま</div>
+            <div class="cu-demo-b">
+              <p class="cu-demo-sub">同じ言葉、3つの話し方</p>
+              <div class="cu-tones">
+                <div class="cu-tone"><span class="cu-tg">フォーマル</span><span class="cu-ts">저는 학생입니다.</span><span class="cu-tw">発表・面接</span></div>
+                <div class="cu-tone"><span class="cu-tg">日常</span><span class="cu-ts">저 학생이에요.</span><span class="cu-tw">会社・初対面</span></div>
+                <div class="cu-tone"><span class="cu-tg lime">タメ口</span><span class="cu-ts">나 학생이야.</span><span class="cu-tw">友だち・家族</span></div>
+              </div>
+              <p class="cu-demo-cap">相手が誰かによって使い分けます。<br>教科書の話し方だけでは不自然になります。</p>
+            </div>
+          </div>
+          <p class="cu-arrow">ルールの暗記ではなく<br>「なぜそう言うのか」から学ぶので、記憶に長く残ります。</p>
+        </div>
+
+        <div class="cu-card">
+          <div class="cu-head"><span class="cu-no">4</span><span class="cu-count">140レッスン · 14コース</span></div>
+          <h3 class="cu-t">興味で選ぶ<br>状況別の韓国語</h3>
+          <p class="cu-s">推しのセリフが聞き取れる。リアルに使う表現で学ぶから、<br>リスニングから会話まで、話せる幅が広がります。</p>
+          <div class="cu-demo">
+            <div class="cu-demo-h">ドラマ・K-POP・旅行・タメ口トーク</div>
+            <div class="cu-demo-b">
+              <div class="cu-courses">
+                <div class="cu-course drama">
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-drama.png" alt=""></span><span class="cu-cnm">ドラマ</span><span class="cu-cct">40レッスン</span></div>
+                  <div class="cu-cex"><span class="cu-ck">우리 어디서 본 적 있지 않아요?</span><span class="cu-cg">~ㄴ 적 있다</span></div>
+                </div>
+                <div class="cu-course kpop">
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-kpop.png" alt=""></span><span class="cu-cnm">K-POP</span><span class="cu-cct">41レッスン</span></div>
+                  <div class="cu-cex"><span class="cu-ck">제 최애는 민지예요.</span><span class="cu-cg">A는 B예요</span></div>
+                </div>
+                <div class="cu-course travel">
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-travel.png" alt=""></span><span class="cu-cnm">旅行</span><span class="cu-cct">40レッスン</span></div>
+                  <div class="cu-cex"><span class="cu-ck">혹시 명동역이 어디지 아세요?</span><span class="cu-cg">~인지 알다</span></div>
+                </div>
+                <div class="cu-course talk">
+                  <div class="cu-course-h"><span class="cu-cico"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/cu-ic-talk.png" alt=""></span><span class="cu-cnm">タメ口しゃべり</span><span class="cu-cct">19レッスン</span></div>
+                  <div class="cu-cex"><span class="cu-ck">너 지금 어디 가는 거야?</span><span class="cu-cg">~는 거야?</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="cu-arrow">リスニングから会話まで、話せる幅がどんどん広がります。</p>
+        </div>
+
+        <div class="cu-card">
+          <div class="cu-head"><span class="cu-no">5</span><span class="cu-count">210レッスン · 105テーマ</span></div>
+          <h3 class="cu-t">文化の違いも気になる！<br>韓国人チューターと友達トーク</h3>
+          <p class="cu-s">「カンジャンケジャン、みんな好き？返信も本当に速い？」<br>価値観・社会・文化・恋愛など、毎週新しい話題でトーク！</p>
+          <div class="cu-demo">
+            <div class="cu-demo-h">毎週新しいトピック / 文化の違い</div>
+            <div class="cu-demo-b">
+              <div class="cu-topics">
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-1.png" alt=""><span>価値観 &amp; 人生</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-2.png" alt=""><span>社会 &amp; 時事</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-3.png" alt=""><span>文化 &amp; 好み</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-4.png" alt=""><span>関係 &amp; 感情</span></div>
+                <div class="cu-tp"><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/topic-5.png" alt=""><span>未来 &amp; 想像</span></div>
+                <div class="cu-tp more"><span>毎週更新される<br>新規トピック+</span></div>
+              </div>
+            </div>
+          </div>
+          <p class="cu-arrow">毎週トピックが更新されるので、<br>現地の最新の表現で学べます。</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section info-page" id="p-tutors" data-page-id="info-tutors">
+      <span class="section-kicker">ご案内</span>
+      <h2 class="section-title">チューター</h2>
+      <p class="limebar">好きな話題を一緒に話せる韓国人チューターに、<br>毎日会えます。</p>
+
+      <div class="tstat">
+        <div><span class="n">100%</span><span class="t">韓国人ネイティブ</span></div>
+        <div><span class="n">100%</span><span class="t">日本語もOK</span></div>
+        <div><span class="n">365日</span><span class="t">毎日予約OK</span></div>
+      </div>
+
+      <div class="ocard">
+        <p class="cu-t">毎日1レッスンなら、1週間に7人</p>
+        <p class="cu-s">気の合うチューターに続けて会っても、毎日ちがうチューターと話しても大丈夫。同じテーマでも、相手が変わると話の中身も変わります。</p>
+        <div class="week">
+          <div><span>火</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t2.jpg" alt=""></div>
+          <div><span>水</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t3.jpg" alt=""></div>
+          <div><span>木</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t4.jpg" alt=""></div>
+          <div><span>金</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t5.jpg" alt=""></div>
+          <div><span class="sat">土</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t6.jpg" alt=""></div>
+          <div><span class="sun">日</span><img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t7.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="ocard">
+        <p class="cu-t">興味に合わせて、選べます</p>
+        <div class="tgroup kdrama">
+          <div class="tg-head"><span class="tg-tag">K-ドラマ・K-POP</span><p>好きなジャンルで学びたい方</p></div>
+          <div class="tutgrid">
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t1.jpg" alt="">
+              <span class="nm">チェ・ミンソ 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>韓国語教育学科</span></span>
+            </div>
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t2.jpg" alt="">
+              <span class="nm">パク・ジェミン 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>フリートーク</span></span>
+            </div>
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t5.jpg" alt="">
+              <span class="nm">パク・サンハ 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>歌詞の書き取り</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="tgroup travel">
+          <div class="tg-head"><span class="tg-tag">韓国旅行</span><p>現地で話してみたい方</p></div>
+          <div class="tutgrid">
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t3.jpg" alt="">
+              <span class="nm">カン・ドンオ 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>旅行業3年</span></span>
+            </div>
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t6.jpg" alt="">
+              <span class="nm">ホ・ジヘ 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>ソウル在住</span></span>
+            </div>
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t8.jpg" alt="">
+              <span class="nm">カン・ソクジュン 先生</span>
+              <span class="tags"><span>JLPT N2</span><span>釜山のなまり</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="tgroup basic">
+          <div class="tg-head"><span class="tg-tag">超入門</span><p>ハングルから始める方</p></div>
+          <div class="tutgrid">
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t4.jpg" alt="">
+              <span class="nm">キム・ジウ 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>教員資格2級</span></span>
+            </div>
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t9.jpg" alt="">
+              <span class="nm">ソン・ハユン 先生</span>
+              <span class="tags"><span>JLPT N2</span><span>指導歴5年</span></span>
+            </div>
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t10.jpg" alt="">
+              <span class="nm">キム・ジンソク 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>発音の矯正</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="tgroup biz">
+          <div class="tg-head"><span class="tg-tag">ビジネス</span><p>仕事や実務で使う方</p></div>
+          <div class="tutgrid short">
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t7.jpg" alt="">
+              <span class="nm">パク・テヒョン 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>ビジネス9年</span></span>
+            </div>
+            <div class="tcard">
+              <img src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/t11.jpg" alt="">
+              <span class="nm">イ・ジュンホ 先生</span>
+              <span class="tags"><span>JLPT N1</span><span>TOPIK指導</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fact fill">
+        <p class="fact-s">レベルと興味に合わせて自動でマッチングされるので、<br>毎回申し込む必要はありません。<br>気に入ったチューターが見つかったら、<br>チューター指定券で続けて受講できます。</p>
+        <p class="greenbar">好きな話題を、好きなチューターと。1日25分で十分です。</p>
+      </div>
+      <div class="tutor-note">앞 장에서 고르신 관심사와 같은 묶음을 짚어 주세요.</div>
+    </div>
+
+    <!-- ---- PRICE: 한 장, 숫자 하나.
+         0엔부터 시작해서 → 월 요금 → 거기 든 것 → 두 플랜 → 초월 특전 순.
+         3개월 전환은 다음 장으로 떨어져 나갔다 — 이 장은 "오늘 얼마"만 말한다. ---- -->
+    <div class="section info-page" id="p-price" data-page-id="plan-price">
+      <span class="section-kicker">ご案内</span>
+      <h2 class="section-title">受講料のご案内</h2>
+      <p class="limebar">入会金・教材費・予約金は0円。<br>お支払いは月々の受講料だけです。</p>
+
+      <div class="ocard">
+        <p class="cu-t">お支払いは、月々の受講料だけ</p>
+        <p class="cu-s">はじめに用意するお金はありません。追加のご請求もありません。</p>
+        <div class="feetable">
+          <div class="fee"><span class="k">入会金</span><span class="v">¥0</span></div>
+          <div class="fee"><span class="k">教材費</span><span class="v">¥0</span></div>
+          <div class="fee"><span class="k">予約金</span><span class="v">¥0</span></div>
+          <div class="fee total"><span class="k">月々の受講料</span><span class="v">¥12,700</span></div>
+          <div class="included">
+            <p class="inc-t">受講料に含まれるもの</p>
+            <ul class="inc-list">
+              <li>毎日25分のマンツーマンレッスン</li>
+              <li>レベル別の教材（回数の制限なし）</li>
+              <li>レッスンの見返し・復習</li>
+              <li>日本語も話せる韓国人チューターの担当</li>
+              <li>韓国語のPDF学習資料 ＋ 映像講義<span class="perk">ご入会特典</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="ocard">
+        <p class="cu-t">受講プランは2つ</p>
+        <p class="cu-s">学習の目的とペースに合わせてお選びいただけます。</p>
+        <div class="plans">
+          <div class="plan">
+            <div class="plan-box">
+              <p class="p-price">12,700円<em>/月</em></p>
+              <span class="p-pill">1レッスン 424円</span>
+              <p class="p-note">25分 · 1日1回<br>最短で流暢になるプラン</p>
+            </div>
+            <span class="plan-name">毎日1レッスン</span>
+          </div>
+          <div class="plan alt">
+            <div class="plan-box">
+              <p class="p-price">10,400円<em>/月</em></p>
+              <span class="p-pill">1レッスン 1,300円</span>
+              <p class="p-note">回数券 · 1日に複数回OK<br>無理なく、習慣になるまで</p>
+            </div>
+            <span class="plan-name">月8レッスン</span>
+          </div>
+        </div>
+        <div class="personas">
+          <p class="pers-t">こんな方が選んでいます</p>
+          <div class="pers">
+            <span class="pers-tag">毎日1レッスン</span>
+            <ul>
+              <li>週3回以上のレッスンで、<br>コスパよく早く話せるようになりたい方</li>
+              <li>留学・語学研修など短期間で会話が必要な方</li>
+              <li>旅行前に短期間で会話力を伸ばしたい方</li>
+            </ul>
+          </div>
+          <div class="pers alt">
+            <span class="pers-tag">月8レッスン（回数券）</span>
+            <ul>
+              <li>平日の予定が不規則で忙しい社会人の方</li>
+              <li>週末にまとめて何度も受けたい方</li>
+              <li>手頃な価格で気軽に始めたい方</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pr-offer">
+        <p class="cu-t">体験レッスンを受けた方限定の初月特典</p>
+        <p class="cu-s">体験レッスンを終えた方は、初月の受講料が半額になります。</p>
+        <div class="pr-offer-box">
+          <p class="o-row"><s>通常 12,700円</s><i>→</i><b>6,350円<em>（税込）</em></b></p>
+          <p class="o-row sub"><span>初月の1レッスンあたり</span><b>212円<em>（通常 424円）</em></b></p>
+        </div>
+        <ul class="pr-offer-fine">
+          <li>お申し込みの期限は、体験レッスンの当日から3日間です。</li>
+          <li>初月半額は1ヶ月プランが対象です。3ヶ月更新プランは対象外です。</li>
+        </ul>
+      </div>
+
+      <div class="greycard">
+        <p class="g-t">お支払い・返金について</p>
+        <p class="g-s">初回のお支払いから8日以内で、有料レッスンを一度も受けていない場合は全額を返金します。<br>受講期間やプランの変更は、次回のお支払い日の7日前までにお知らせください。</p>
+      </div>
+
+      <p class="limebar">どのプランがいいのか悩むときは、<br>後から変更できますので安心して今の生活リズムにあうほうをお選びください。</p>
+    </div>
+
+    <div class="section info-page" id="p-switch" data-page-id="plan-switch">
+      <span class="section-kicker">ご案内</span>
+      <h2 class="section-title">プランの変更</h2>
+      <p class="limebar">受講期間も学習言語も、あとから自由に変更できます。</p>
+
+      <div class="ocard">
+        <p class="cu-t">受講期間  1ヶ月 <em>↔</em> 3ヶ月</p>
+        <p class="cu-s">事前にお申し込みいただくと、<br>次回のお支払い日から自動で切り替わります。</p>
+        <div class="sw-table">
+          <div class="sw-row"><span class="k">1ヶ月</span><span class="v">¥12,700<em>/月</em></span></div>
+          <div class="sw-row on"><span class="k">3ヶ月</span><span class="tag">月 ¥1,300 おトク</span><span class="v">¥11,400<em>/月</em></span></div>
+        </div>
+        <ul class="sw-notes">
+          <li><b>初月半額はそのままです。</b><span>あとから差額をいただくことはありません。</span></li>
+          <li><b>3か月分（34,200円）を一括でお支払いいただき、<br>以降は3か月ごとに自動更新となります。</b><span>受講券のホールド7日の特典もご利用いただけます。</span></li>
+          <li><b>3ヶ月の受講後、1ヶ月プランへ戻すこともできます。</b></li>
+        </ul>
+      </div>
+
+      <div class="ocard">
+        <p class="cu-t">学習言語  韓国語 <em>→</em> ダブルパック</p>
+        <p class="cu-s">韓国語だけを受けていて、<br>英語も一緒に受けたくなったら変更できます。</p>
+        <div class="sw-swap">
+          <div class="sw-box"><span class="k">いま</span><span class="v">韓国語レッスン</span></div>
+          <span class="sw-arrow"></span>
+          <div class="sw-box on"><span class="k">変更後</span><span class="v">ダブルパック<br>(韓国語＋英語)</span></div>
+        </div>
+        <ul class="sw-notes">
+          <li><b>韓国語レッスンの途中でも、<br>ダブルパック受講券へ変更できます。</b></li>
+          <li><b>ダブルパックは、韓国語と英語を1つの受講券でまとめて受けられる商品です。</b></li>
+        </ul>
+      </div>
+
+      <div class="greycard">
+        <p class="g-s">受講期間・学習言語の変更は、どちらもカスタマーサポートで承ります。次回のお支払い日の7日前までに、お気軽にお知らせください。</p>
+      </div>
+    </div>
+
+    <div class="section info-page" id="p-faq" data-flow="ref" data-page-id="info-faq">
+      <span class="section-kicker">FAQ</span>
+      <h2 class="section-title">よくあるご質問</h2>
+      <p class="limebar">気になる点は、ここでまとめてご確認いただけます。</p>
+
+      <div class="qgroup">
+        <div class="faq-div"><span>レッスン</span><i></i></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>予約とキャンセルはどうすればいいですか？</p><p class="a">どちらもレッスンの1時間前までにお願いします。</p></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>毎日1レッスンなら、毎日受けられますか？</p><p class="a">1日1回、毎日受けられます。毎日ご予約いただくと、<br>月に最大30回です。</p></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>週末にまとめて受けられますか？</p><p class="a">月8レッスン（回数券）は1日に複数回受けられるので、週末にまとめることもできます。毎日1レッスンは1日1回までです。</p></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>チューターは固定ですか？</p><p class="a">毎回ランダムです。チューター指定券を追加すると、同じチューターに固定できます。</p></div>
+      </div>
+
+      <div class="qgroup pay">
+        <div class="faq-div"><span>お支払い・受講券</span><i></i></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>途中で3ヶ月プランに変えられますか？</p><p class="a">はい。カスタマーセンターにお知らせいただければ、初月半額を使い切ったあと、2ヶ月目から3ヶ月プランに変更できます。</p></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>途中でお休みできますか？</p><p class="a">3ヶ月プランは7日間のホールドができます（1ヶ月プランにホールドはありません）。ホールド中は受講券の決済日も一緒に変わり、次回のお支払い日はマイページでご確認いただけます。</p></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>お支払いはクレジットカードだけですか？</p><p class="a">はい。海外発行のカードもそのままご利用いただけます。</p></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>「韓国語＋英語」プランとは何ですか？</p><p class="a">韓国語と英語を自由に選んで受けられる受講券です。<br>毎日1レッスン・月8レッスンのどちらもあり、条件は韓国語専用と同じです。1ヶ月に合計30回まで受けられます。</p></div>
+        <div class="faq-card"><p class="q"><i>Q.</i>受講中に質問したいときは？</p><p class="a">LINEのポドチャンネルへお問い合わせください。<br>平日10時〜19時にお返事します。</p></div>
+      </div>
+
+      <p class="limebar last">気になることがあれば、いつでもお声がけください。<br><small>このあとのご質問は「チャット相談」でも承ります。</small></p>
+    </div>
+
+    <!-- ============ 엔딩 ============ -->
+    <div class="brand-page end bleed" data-page-id="closing">
+      <svg class="end-arch" viewBox="0 0 480 300" aria-hidden="true">
+        <path id="endArch" d="M 70 255 Q 237 135 404 258" fill="none"></path>
+        <text><textPath href="#endArch" startOffset="50%" text-anchor="middle">本日はお疲れさまでした！</textPath></text>
+      </svg>
+      <img class="end-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/podo-3d-bye.png" alt="">
+      <div class="end-card">
+        <div class="end-bar"><span>Welcome to PODO</span><span class="end-check">✓</span></div>
+        <p class="end-title"><span class="hl">体験レッスン</span>は<br>ここまでです！</p>
+        <p class="end-copy">本日は長い時間、お話しできて楽しかったです。<br><strong>次はもっと気楽に、もっとたくさん話せるようになります ;)</strong></p>
+        <div class="end-report">
+          <span class="badge-dark">アプリのホーム画面で</span>
+          <span class="t">あなただけの韓国語 診断レポート</span>
+          <span class="s">いますぐご確認いただけます。<br>のちほどチャット相談でも、あらためてお知らせします。</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- ACTIVITIES · 점선 칸 · 고르기 · 문장 만들기. 공유 스크립트.
+       페이저보다 먼저 와야 한다 — 티칭 모드가 여기 만든 유령 답을 쓴다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/activities.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/feedback.js"></script>
+
+
+  <!-- ================================================================
+       PAGER · 한 장씩 넘겨 보는 모드
+       The deck is a flat list of siblings under .phone, so paging is
+       just "show one, hide the rest" — no restructuring.
+       ================================================================ -->
+  <nav class="pager" data-sync-id="deck-page" data-sync-kind="page">
+    <input class="pg-scrub" type="range" min="0" max="0" step="1" value="0" aria-label="페이지 이동">
+    <button class="pg-btn pg-prev" type="button" aria-label="이전 페이지">←</button>
+    <div class="pg-mid">
+      <span class="pg-label"><b class="pg-act">—</b><span class="pg-n">—</span></span>
+    </div>
+    <button class="pg-btn pg-teach" type="button" aria-label="티칭 모드">T</button>
+      <button class="pg-btn pg-next" type="button" aria-label="다음 페이지">→</button>
+</nav>
+
+  <!-- PAGER · 한 장씩 넘기기 + 스크러버. 공유 스크립트. -->
+  <!-- REPORT LOCALE · 리포트에 실릴 문안(레벨표·항목·코스·기간 단위)의 일본어
+       판본. report.js 는 시작할 때 window.PODO_REPORT_LOCALE 을 한 번만 읽으므로
+       **반드시 report.js 보다 먼저** 와야 한다 — 순서가 뒤집히면 한국어 기본표가
+       그대로 그려지고, 아무 에러도 나지 않는다.
+       한국어 판본은 report.js 안의 기본값이 그대로다(사내 확인용으로
+       ../reports/trial-1-report.html 이 그쪽을 부른다). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/report-ja.js"></script>
+
+  <!-- REPORT · 리포트·안내 페이지의 배선. 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/report.js"></script>
+
+  <!-- REPORT SUBMIT · 리포트를 그대로 백엔드에 남기는 버튼. 스냅샷을 report.js
+       가 짓기 때문에 반드시 그 뒤에 와야 한다. 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/report-submit.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/pager.js"></script>
+
+  <!-- SCRIPT LINES · 대사를 문장 단위로 짝지어 세운다. 형광펜보다 먼저 —
+       형광펜은 로드 때 글 블록에 번호를 매기므로 DOM 이 먼저 확정돼야 한다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/script-lines.js"></script>
+
+  <!-- SPOTLIGHT · 손가락 포인터 (그리기 대신 "여기 보세요"). 공유 스크립트. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/spotlight.js"></script>
+
+  <!-- TUTOR NOTES · 페이지마다 메모 한 칸. 비어 있으면 아무에게도 안 보이고,
+       튜터가 쓰는 순간 양쪽에 뜬다. 보드 기본 kind("value")를 그대로 쓰므로
+       등록할 것이 없다 — 전송도 IME 도 보드가 한다. 페이저 뒤에 두는 것이
+       중요하다: 페이지를 다 세고 난 뒤에 칸을 끼워 넣어야 한다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/tutor-notes.js"></script>
+
+  <!-- HIGHLIGHT · 글자에 긋는 형광펜. 그은 자국이 상대 화면에도 남는다.
+       ja→ko 툴팁 뒤에 와야 한다 — 그쪽이 로드 때 텍스트 노드를 읽어 data-ko 를
+       붙이고, 형광펜은 그 뒤로 <mark> 을 끼워 넣기 때문이다. 이 덱에서는
+       장면의 패턴을 미리 칠해 두지 않는다. 튜터가 말하면서 직접 긋는다. -->
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/highlight.js"></script>
+
+  <!-- STAMP · 참! 잘했어요. stamp.js 가 이 그림을 페이지마다, 그리고 페이저
+       버튼 안에 복제한다. 경로를 쓰는 곳이 여기 하나뿐인 게 중요하다:
+       패키저는 마크업에 적힌 이미지 경로만 번들·평탄화하므로, JS 로 경로를
+       만들면 로컬에서만 되고 보드(S3)에서 404 가 난다. .phone 밖에 두는 것도
+       중요하다 — 페이저는 .phone 의 자식을 페이지로 세기 때문에, 안에 넣으면
+       빈 페이지가 하나 생긴다. (이 주석에 경로 표기를 그대로 쓰면 패키저가
+       주석까지 훑어 없는 파일을 찾으므로, 말로만 적는다.) -->
+  <img class="stamp-art" src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/assets/well-done.svg" alt="">
+  <script src="https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared@v1.20.0/js/stamp.js"></script>
+
+
+</body>
+</html>

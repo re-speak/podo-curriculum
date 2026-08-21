@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<!-- VENDORED from tools/authoring/kr/track_template.html — byte-identical to it
+     except for the edits listed here, so a change upstream re-applies as a diff.
+
+     A track upstream is a track here too: the courses in a family are its units,
+     and their lessons are its lessons. That is what the unit shell was built for,
+     so nothing here had to be collapsed.
+
+     Edits:
+       1. The language tabs come from DATA.page, since one template draws both
+          korean/ and english/ track pages.
+       2. The level ramp is keyed by position (see gateway.html).
+       3. Links drop the .html and the catalog is ../ rather than ../catalog.html,
+          because this site is served at a custom domain where a language is a
+          path (/korean-jp) and its catalog is that directory's index. GitHub
+          Pages resolves the extensionless links to the same files upstream
+          writes, so only the links moved, not the tree.
+
+     Filled by tools/build-catalog.py — do not edit the built file by hand. -->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<meta name="theme-color" content="#ffffff">
+<title id="ttl">커리큘럼 · PODO 한국어</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="../../site.css">
+<style>
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+  /* ────────────────────────────────────────────────────────────────────
+     읽는 순서를 선이 아니라 면과 밀도로 만든다.
+
+       1. 트랙 개요          — 트랙색을 품은 큰 면. 이름·설명·규모가 한 덩어리다.
+       2. 찾아보기           — 중립색 도구 면. 검색과 필터만 둔다.
+       3. 단원               — 흰 카드와 트랙색 번호칩으로 훑는다.
+       4. 과                 — 옅은 타일. 제목만 남겨 빠르게 고른다.
+       5. 선택한 과          — 트랙색 바닥과 예문 블록이 선택 상태를 만든다.
+
+     예문의 배우는 조각은 살구색으로 고정해 트랙색과 역할이 겹치지 않게 한다.
+     ──────────────────────────────────────────────────────────────────── */
+  :root {
+    --ink: #16181a;
+    --ink-2: #454a4f;
+    --ink-3: #62686e;
+    --ink-4: #7d848a;
+    --line: #e6e8ea;
+    --line-soft: #f1f2f3;
+    --surface: #fafbfb;
+    --lime: #b5fd4c;
+    --radius: 4px;
+    --radius-sm: 2px;
+
+    /* 덱의 --ending-* 그대로. "이 과가 가르치는 조각"이라는 뜻이 레슨과 같다. */
+    --pat-mark: #ffdfc7;
+    --pat-ink:  #a4501a;
+
+    /* 레벨 램프. 이름이 아니라 축 위의 자리로 매긴다 — 눈금 이름은 언어마다 다르지만
+       (한국어 6단, 영어 CEFR) 옅은 것에서 짙은 것으로 오른다는 규칙은 같다. 어느 이름이
+       몇 번을 쓰는지는 build-catalog.py 가 DATA.ramp 에 실어 보낸다. */
+    --lv-1: #eef8de;
+    --lv-2: #d7f0b4;
+    --lv-3: #b1e07c;
+    --lv-4: #7ac845;
+    --lv-5: #3f7a1c;
+    --lv-6: #2a5511;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #fff; color: var(--ink); line-height: 1.6;
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px 130px; }
+  @media (max-width: 600px) { .wrap { padding: 0 18px 80px; } }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: var(--radius-sm); }
+  .lbl { color: var(--ink-3); font-size: 11px; font-weight: 700; letter-spacing: .07em; }
+
+  /* ---------- 트랙 탭 ---------- */
+  .tabs { position: sticky; top: 0; z-index: 30; background: rgba(255,255,255,.94); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line); }
+  .tabs-in { max-width: 1040px; margin: 0 auto; padding: 0 28px; display: flex; gap: 2px; overflow-x: auto; }
+  @media (max-width: 600px) { .tabs-in { padding: 0 18px; } }
+  .tabs-in::-webkit-scrollbar { display: none; }
+  .tab { flex: 0 0 auto; padding: 13px 14px 11px; border-bottom: 2px solid transparent;
+    color: var(--ink-3); font-size: 13px; font-weight: 600; white-space: nowrap; }
+  .tab:hover { color: var(--ink); }
+  .tab em { font-style: normal; margin-right: 7px; color: var(--ink-4); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .tab.on { color: var(--ac); border-bottom-color: var(--ac); font-weight: 750; }
+  .tab.on em { color: var(--ac); opacity: .6; }
+  .tab.home { padding-left: 0; padding-right: 16px; color: var(--ink-4); }
+  .tab.home:hover { color: var(--ink); }
+
+  /* ---------- 1단 · 트랙 머리 ---------- */
+  .hero { padding: 32px 0 0; }
+  .hero-card { position: relative; isolation: isolate; overflow: hidden; display: grid;
+    grid-template-columns: minmax(0,1.35fr) minmax(290px,.65fr); gap: 44px; align-items: end;
+    padding: 40px 42px; border: 1px solid color-mix(in srgb, var(--ac) 12%, var(--line)); border-radius: 8px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--tint) 86%, white), #fff 72%);
+    box-shadow: none; }
+  .hero-card::after { content: ""; position: absolute; z-index: -1; width: 260px; height: 260px;
+    right: -100px; top: -130px; border: 46px solid color-mix(in srgb, var(--ac) 10%, transparent);
+    border-radius: 50%; }
+  .plan-track .hero-card { border: 2px dashed #9ba2a8;
+    background: repeating-linear-gradient(135deg, #f3f4f5 0 12px, #fff 12px 24px); }
+  .plan-banner[hidden] { display: none; }
+  .plan-banner { display: flex; align-items: center; gap: 12px; margin-top: 14px; padding: 13px 15px;
+    border: 1px solid #aeb4b9; border-radius: var(--radius); background: #f1f3f4;
+    color: #394047; font-size: 13px; font-weight: 650; }
+  .plan-banner strong { flex: 0 0 auto; padding: 3px 7px; background: #555d64; color: #fff;
+    font-size: 10px; font-weight: 800; letter-spacing: -.01em; }
+  .hero-no { display: inline-flex; align-items: center; gap: 8px; color: var(--ac); font-size: 12px;
+    font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+  .hero-no::before { content: ""; width: 8px; height: 8px; background: var(--ac); }
+  h1 { margin: 11px 0 0; font-size: 44px; font-weight: 820; line-height: 1.08; letter-spacing: -.045em; word-break: keep-all; }
+  h1 span { display: block; margin: 7px 0 0; color: var(--ink-3); font-size: 14px; font-weight: 550; letter-spacing: 0; }
+  .hero-d { max-width: 52ch; margin: 19px 0 0; color: var(--ink-2); font-size: 15px; line-height: 1.72; word-break: keep-all; }
+
+  .panel { min-width: 0; padding: 20px; border: 1px solid rgba(22,24,26,.08); border-radius: var(--radius);
+    background: rgba(255,255,255,.82); box-shadow: none; }
+  .overview-label { display: block; margin-bottom: 13px; color: var(--ink-3); font-size: 12px;
+    font-weight: 750; letter-spacing: .08em; }
+  .figs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+  .figs div { min-width: 0; }
+  .figs div b { display: block; color: var(--ac); font-size: 24px; font-weight: 780;
+    letter-spacing: -.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .figs div span { display: block; margin-top: 3px; color: var(--ink-3); font-size: 12px; font-weight: 650; }
+  #distwrap:not([hidden]) { margin-top: 20px; }
+  .dist { display: flex; gap: 2px; height: 10px; }
+  .dist i { border-radius: 1px; }
+  .dist-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 10px 0 0; color: var(--ink-2); font-size: 12px; }
+  .dist-legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .dist-legend i { width: 8px; height: 8px; border-radius: 1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+  .dist-legend b { font-weight: 750; font-variant-numeric: tabular-nums; }
+
+  /* ---------- 2단 · 찾아보기 ---------- */
+  .curriculum-head { margin: 34px 0 0; padding: 20px; border-radius: var(--radius); background: #f4f6f8; }
+  .band { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0 0 14px; }
+  .band h2 { margin: 0; color: var(--ink); font-size: 20px; font-weight: 780; letter-spacing: -.025em; }
+  .band p { margin: 0; color: var(--ink-3); font-size: 12px; font-weight: 650; }
+
+  /* ---------- controls ---------- */
+  .controls { padding: 0; }
+  .crow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .crow[hidden] { display: none; }
+  .crow + .crow { margin-top: 12px; }
+  .search { flex: 1 1 240px; min-width: 190px; padding: 11px 15px; border: 1px solid #d7dce0;
+    border-radius: var(--radius-sm); background: #fff; box-shadow: none; font: inherit; font-size: 13.5px; }
+  .search::placeholder { color: var(--ink-4); }
+  .search:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ac); }
+  /* 표시 언어 선택기. 브랜드 옆 작은 세 칸 — 헤더의 무게중심을 바꾸지 않는다. */
+  .loc { display: flex; gap: 2px; margin-left: auto; padding: 2px; border: 1px solid #e3e7ea;
+    border-radius: var(--radius-sm); background: #fff; }
+  .loc button { padding: 4px 9px; border: 0; border-radius: 2px; background: transparent;
+    color: var(--ink-3); font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
+  .loc button:hover { color: var(--ink); }
+  .loc button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+
+  /* 프리토킹 과의 질문 여덟 개. 번호는 덱이 부르는 이름 그대로(몸풀기·질문)이고,
+     이어지는 질문은 한 단 들여 본 질문에 붙어 있음을 보인다. */
+  .qs { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .qitem { padding: 11px 13px; border: 1px solid var(--gray-200, #e6e8ea); border-radius: var(--radius-sm);
+    background: #fff; }
+  .qn { display: inline-block; margin-bottom: 5px; padding: 2px 7px; border-radius: 2px;
+    background: var(--tint); color: var(--ac); font-size: 11px; font-weight: 800; }
+  .qt { margin: 0; font-size: 14px; font-weight: 650; line-height: 1.5; }
+  .qja { margin: 3px 0 0; color: var(--ink-3); font-size: 12.5px; line-height: 1.5; }
+  .qf { margin: 7px 0 0; padding-left: 15px; display: grid; gap: 2px;
+    color: var(--ink-4); font-size: 12.5px; }
+  .qf li { line-height: 1.45; }
+  .goal-ja { margin: 3px 0 0; color: var(--ink-3); font-size: 12.5px; line-height: 1.55; }
+
+  .chip { padding: 6px 10px; border: 1px solid #dfe3e6; border-radius: var(--radius-sm); background: #fff; color: var(--ink-3); font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .chip:hover { color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .chip .dot { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); vertical-align: 1px; }
+  /* 이 페이지에서 실제로 누르는 것은 이 둘뿐이라 버튼처럼 보이게 둔다 */
+  .btn { padding: 10px 12px; border: 1px solid #dfe3e6; border-radius: var(--radius-sm); background: #fff;
+    color: var(--ink-2); font: inherit; font-size: 12.5px; font-weight: 650; cursor: pointer; white-space: nowrap; }
+  .btn:hover { background: color-mix(in srgb, var(--tint) 64%, white); color: var(--ink); }
+  .btn.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .btn.deep { color: var(--ac); }
+  .btn.deep:hover { background: var(--tint); }
+  .btn.deep.on { background: var(--ac); border-color: var(--ac); color: #fff; }
+  .hits { margin-left: auto; color: var(--ink-3); font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  /* ---------- 3단 · 단원 카드 ---------- */
+  .groups { margin-top: 18px; display: grid; gap: 12px; }
+  .group { border: 1px solid #dfe3e6; border-radius: var(--radius); overflow: hidden; background: #fff;
+    box-shadow: none; transition: border-color .16s, background .16s; }
+  .group:hover { border-color: #bdc4ca; }
+  .group.open { border-color: #c8ced3; }
+  .group.hide { display: none; }
+  .ghead { display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: 16px;
+    width: 100%; padding: 16px 18px; border: 0; background: #fff; font: inherit; text-align: left; cursor: pointer; }
+  .group.open .ghead { background: linear-gradient(90deg, color-mix(in srgb, var(--tint) 76%, white), #fff 72%); }
+  .gnum { display: grid; place-items: center; min-width: 40px; height: 34px; padding: 0 9px; border-radius: var(--radius-sm);
+    background: var(--ac); color: #fff; font-size: 12px; font-weight: 800; letter-spacing: -.01em; white-space: nowrap; box-shadow: none; }
+  .gtitle { min-width: 0; font-size: 18px; font-weight: 750; letter-spacing: -.03em; word-break: keep-all; }
+  .gtitle em { display: block; margin-top: 2px; color: var(--ink-3); font-style: normal; font-size: 12.5px; font-weight: 500; letter-spacing: 0; }
+  .gmeta { display: flex; align-items: center; gap: 14px; color: var(--ink-3); font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .gmeta > * { flex: 0 0 auto; }
+  .lv-tag { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
+  .lv-tag i { width: 9px; height: 9px; border-radius: 1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); }
+  .caret { display: inline-block; width: 10px; color: var(--ink-4); font-size: 9px; }
+  .caret::before { content: "\25B8"; }
+  .group.open .caret { color: var(--ac); }
+  .group.open .caret::before { content: "\25BE"; }
+  .gbody { display: none; padding: 6px 20px 20px; }
+  .group.open .gbody { display: block; }
+
+  .story { margin: 0; max-width: 70ch; color: var(--ink-2); font-size: 13.5px; line-height: 1.75; word-break: keep-all; }
+  .story b { color: var(--ink); font-weight: 750; }
+  .story .cast { display: block; margin-top: 5px; color: var(--ink-4); font-size: 12px; }
+  .gcan { margin: 12px 0 0; max-width: 70ch; padding: 12px 14px; border-radius: var(--radius-sm);
+    background: color-mix(in srgb, var(--tint) 58%, white); color: var(--ink); font-size: 13.5px; line-height: 1.7; word-break: keep-all; }
+  .gcan b { display: block; margin-bottom: 2px; color: var(--ac); }
+
+  /* ---------- 4단 · 과 한 줄 ---------- */
+  .lessons { margin-top: 16px; display: grid; gap: 6px; }
+  /* 머리글이 없는 단원(핵심·한글)에서는 목록이 곧바로 시작한다 */
+  .gbody > .lessons:first-child { margin-top: 0; }
+  .lesson { border-radius: var(--radius-sm); background: var(--surface); }
+  .lesson.hide { display: none; }
+  .lrow { display: flex; align-items: center; gap: 10px; }
+  .lrow-btn { flex: 1 1 auto; min-width: 0;
+    display: grid; grid-template-columns: 58px minmax(0,1fr) minmax(0,auto); align-items: baseline; gap: 16px;
+    width: 100%; padding: 12px 13px; border: 0; border-radius: var(--radius-sm); background: none; font: inherit; text-align: left; cursor: pointer; }
+  /* 덱이 나와 있는 과에만 붙는 문. 여기는 4단이라 트랙색을 쓰지 않는다 —
+     색을 여기까지 내리면 펼친 과 안의 살구색 mark 가 묻힌다. */
+  .deck-links { flex: 0 0 auto; display: flex; gap: 5px; margin-right: 13px; }
+  .deck { flex: 0 0 auto; padding: 5px 11px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff;
+    color: var(--ink-2); font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+  .deck:hover { border-color: var(--ink); color: var(--ink); }
+  .deck .ext { color: var(--ink-4); font-size: 10px; }
+  .deck:hover .ext { color: var(--ink-3); }
+  .lrow-btn:hover { background: color-mix(in srgb, var(--tint) 50%, white); }
+  .lrow-btn:hover .ltitle { color: var(--ink); }
+  .lno { color: var(--ac); font-size: 12px; font-weight: 750; font-variant-numeric: tabular-nums; }
+  .ltitle { min-width: 0; font-size: 14.5px; font-weight: 650; letter-spacing: -.015em; word-break: keep-all; transition: color .12s; }
+  .ltitle em { font-style: normal; color: var(--ink-3); font-weight: 450; letter-spacing: 0; }
+  .first-tag { display: inline-block; margin-left: 8px; padding: 2px 6px; border: 1px solid color-mix(in srgb, var(--ac) 28%, var(--line));
+    border-radius: var(--radius-sm); color: var(--ac); font-size: 10px; font-weight: 750; letter-spacing: .02em; vertical-align: 1px; }
+  .ltitle mark { background: var(--lime); color: var(--ink); border-radius: var(--radius-sm); padding: 0 2px; }
+  .lchips { display: none; }
+  .lchips .pat { max-width: 26ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+  .lchips .sep, .lchips .pat.ref { color: var(--ink-4); }
+  @media (max-width: 760px) { .lchips { display: none; } .lrow-btn { grid-template-columns: 46px minmax(0,1fr); } }
+
+  /* ---------- 5단 · 펼친 과 ----------
+     펼친 과는 얇은 외곽선과 옅은 바닥 하나로만 선택 상태를 만든다. 제목 → 할 수 있는
+     것 → 예문 → 표현의 순서를 고정하고, 예문 둘은 넓은 화면에서 나란히 둔다. */
+  .lesson.open { margin: 5px 0 10px; border: 1px solid color-mix(in srgb, var(--ac) 42%, #d7dce0);
+    background: color-mix(in srgb, var(--tint) 58%, white); border-radius: var(--radius); box-shadow: none; }
+  .lesson.open .lrow { padding-right: 16px; }
+  .lesson.open .lrow-btn { grid-template-columns: auto minmax(0,1fr); gap: 12px; padding: 17px 18px 12px; }
+  .lesson.open .deck-links { margin-right: 0; }
+  .lesson.open .lrow-btn:hover { background: transparent; }
+  .lesson.open .lno { padding: 3px 8px; border-radius: var(--radius-sm); background: var(--ac); color: #fff; font-weight: 750; }
+  .lesson.open .ltitle { font-size: 16px; font-weight: 750; letter-spacing: -.02em; }
+  .lesson.open .ltitle em { font-size: 13.5px; }
+  .lesson.open .lchips { display: none; }       /* 블록 안에서 패턴 이름이 다시 나온다 */
+
+  .ldetail { display: none; padding: 0 20px 22px; }
+  .lesson.open .ldetail { display: block; }
+  @media (max-width: 760px) { .ldetail { padding: 0 16px 16px; } }
+
+  /* 펼친 과 안에서는 선 대신 여백·바닥색·작은 라벨로 의미를 나눈다. */
+  .field + .field { margin-top: 20px; }
+  .field > .lbl { display: inline-flex; align-items: center; margin-bottom: 10px; padding: 4px 7px;
+    border-radius: var(--radius-sm); background: color-mix(in srgb, var(--ac) 10%, white); color: var(--ac);
+    font-size: 10.5px; letter-spacing: .045em; }
+  .field-goal { position: relative; padding: 14px 16px 14px 46px; border-radius: var(--radius-sm); background: rgba(255,255,255,.74); }
+  .field-goal::before { content: "\2713"; position: absolute; left: 17px; top: 17px; display: grid; place-items: center;
+    width: 22px; height: 22px; border-radius: var(--radius-sm); background: var(--ac); color: #fff; font-size: 13px; font-weight: 800; }
+  .field-goal > .lbl { margin-bottom: 5px; padding: 0; background: none; }
+
+  /* 이 과의 약속. 카드에서 제일 먼저 읽혀야 하는 줄이라 본문보다 크고 진하다. */
+  .goal { margin: 0; max-width: 62ch; color: var(--ink); font-size: 15px; font-weight: 600; line-height: 1.65; word-break: keep-all; }
+  .words { display: flex; flex-wrap: wrap; gap: 6px; }
+  .words span { padding: 5px 10px; background: color-mix(in srgb, var(--tint) 55%, white); border-radius: var(--radius-sm); font-size: 16px; font-weight: 700; }
+  .scene { margin: 0 0 16px; max-width: 62ch; color: var(--ink-3); font-size: 12.5px; line-height: 1.6; word-break: keep-all; }
+
+  /* 한글 트랙에서는 단어가 결과 예시이고, 실제 학습 대상은 낱자와 조합 규칙이다.
+     그래서 글자·규칙을 가장 큰 면에, 읽기 예시는 조용한 보조 줄에 둔다. */
+  .hangul-focus { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .hangul-focus-item { min-height: 66px; display: flex; align-items: center; padding: 14px 16px;
+    border-radius: var(--radius-sm); background: rgba(255,255,255,.9); color: var(--ink); font-size: 15px;
+    font-weight: 700; line-height: 1.65; word-break: keep-all; }
+  .hangul-focus-item .jamo { display: inline-block; margin: 0 2px; padding: 1px 5px;
+    border-radius: var(--radius-sm); background: color-mix(in srgb, var(--ac) 12%, white); color: var(--ac);
+    font-size: 21px; font-weight: 800; line-height: 1.35; letter-spacing: .035em; vertical-align: -1px; }
+  .field-hangul-practice { margin-top: 16px; }
+  .hangul-practice { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 0; max-width: 72ch; }
+  .hangul-practice span { color: var(--ink-3); font-size: 13px; font-weight: 600; }
+  .hangul-practice span:not(:last-child)::after { content: "\00B7"; margin: 0 9px; color: var(--ink-4); }
+
+  /* 페이지에서 채운 색은 트랙색과 이 살구색뿐이고, 트랙색은 3단 위쪽에만 있다.
+     그래서 과를 펼쳤을 때 그 안에서 유일하게 칠해진 것이 배우는 조각이 된다. */
+  .pats { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .pcard { padding: 16px; border-radius: var(--radius-sm); background: rgba(255,255,255,.88); box-shadow: none; }
+  .pcard .sent { margin: 0; font-size: 18.5px; font-weight: 700; line-height: 1.45; letter-spacing: -.025em; word-break: keep-all; }
+  .pcard .sent mark { background: var(--pat-mark); color: var(--pat-ink); padding: 1px 3px; margin: 0 -1px; border-radius: var(--radius-sm); font-weight: 800;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .pcard .reply { margin: 5px 0 0; color: var(--ink-3); font-size: 13px; font-weight: 500; word-break: keep-all; }
+  .pcard .reply::before { content: "\21B3 "; color: var(--ink-4); }
+  .pcard .pmeta { margin: 10px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 9px; }
+  .pcard .pname { color: var(--pat-ink); font-size: 12px; font-weight: 750; }
+  .pcard .pgloss { color: var(--ink-4); font-size: 12px; word-break: keep-all; }
+
+  /* 표현 — 훑을 때 눈에 걸리도록 글줄이 아니라 낱개로 앉힌다 */
+  .said { display: flex; flex-wrap: wrap; gap: 6px; }
+  .said span { padding: 5px 10px; background: rgba(255,255,255,.88); border-radius: var(--radius-sm);
+    color: var(--ink-2); font-size: 12.5px; font-weight: 600; }
+  .rule { margin: 11px 0 0; max-width: 66ch; color: var(--ink-2); font-size: 12.5px; line-height: 1.7; word-break: keep-all; }
+
+  @media (max-width: 600px) {
+    .hero { padding-top: 26px; }
+    .hero-card { grid-template-columns: 1fr; gap: 26px; padding: 28px 22px; border-radius: 6px; }
+    h1 { font-size: 34px; }
+    .panel { padding: 16px; }
+    .curriculum-head { margin-top: 24px; padding: 16px; }
+    .band { margin-bottom: 12px; }
+    .ghead { grid-template-columns: auto minmax(0,1fr); gap: 10px 12px; padding: 14px; }
+    .gtitle { font-size: 16px; }
+    .gmeta { grid-column: 2; justify-content: flex-start; flex-wrap: wrap; gap: 4px 10px; }
+    .gbody { padding: 6px 14px 16px; }
+    .lrow { gap: 6px; }
+    .deck { padding: 5px 8px; }
+    .lesson.open .lrow { padding-right: 8px; }
+    .lesson.open .lrow-btn { padding-inline: 15px 8px; }
+    .ldetail { padding: 0 15px 18px; }
+    .field-goal { padding: 14px 14px 14px 46px; }
+    .pats { grid-template-columns: 1fr; }
+  }
+
+
+  .empty { margin-top: 40px; color: var(--ink-3); font-size: 13.5px; text-align: center; }
+  .empty.hide { display: none; }
+  .nextrack { display: flex; justify-content: space-between; gap: 14px; margin-top: 70px; padding: 15px 17px;
+    border-radius: var(--radius-sm); background: var(--surface); }
+  .nextrack a { color: var(--ink-3); font-size: 13px; font-weight: 600; }
+  .nextrack a:hover { color: var(--ink); }
+  footer { margin-top: 26px; color: var(--ink-4); font-size: 12px; line-height: 1.8; }
+  footer code { color: var(--ink-3); font-size: 11.5px; }
+</style>
+</head>
+<body>
+<a class="podo-skip" href="#main" data-i18n="ui.skip">본문으로 건너뛰기</a>
+<header class="podo-bar">
+  <div class="podo-bar__inner">
+    <a class="podo-brand" id="brand" href="../../index.html"><img src="../../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <nav class="podo-nav" id="nav" aria-label="커리큘럼 탐색"></nav>
+    <div class="loc" id="loc" role="group"></div>
+  </div>
+</header>
+<nav class="tabs"><div class="tabs-in" id="tabs"></div></nav>
+<main class="wrap" id="main">
+
+  <header class="hero">
+    <div class="hero-card">
+      <div class="hero-copy">
+        <span class="hero-no" id="hno"></span>
+        <h1 id="h1"></h1>
+        <p class="hero-d" id="hd"></p>
+      </div>
+      <div class="panel">
+        <span class="overview-label" data-i18n="ui.overview">한눈에 보기</span>
+        <div class="figs" id="figs"></div>
+        <div id="distwrap"></div>
+      </div>
+    </div>
+  </header>
+  <div class="plan-banner" id="plan-banner" hidden><strong data-i18n="ui.noDev">개발 안 함</strong>
+    <span data-i18n="ui.noDevP">계획 참고용 — 이 트랙은 현재 개발하지 않으며, 레슨 덱 제작도 승인되지 않았습니다.</span></div>
+
+  <section class="curriculum-head" aria-labelledby="curriculum-title">
+    <div class="band" id="band"></div>
+    <div class="controls">
+      <div class="crow">
+        <input class="search" id="q" type="search" placeholder="과·패턴·표현 검색" autocomplete="off">
+        <button class="btn" id="expandUnits" type="button" data-i18n="ui.expandUnits">단원 모두 펼치기</button>
+        <button class="btn deep" id="expandAll" type="button" data-i18n="ui.expandAll">과까지 모두 펼치기</button>
+        <span class="hits" id="hits"></span>
+      </div>
+      <div class="crow" id="levelbar"></div>
+    </div>
+  </section>
+
+  <div class="groups" id="groups"></div>
+  <div class="empty hide" id="empty" data-i18n="ui.noResults">검색 결과가 없습니다.</div>
+
+  <div class="nextrack" id="nextrack"></div>
+  <footer>
+  </footer>
+
+</main>
+
+<script>
+const DATA = {"levels": ["A1", "A2", "A2-B1", "B1", "B1+", "B2", "B2-C1", "C1"], "ramp": {"A1": 1, "A2": 2, "A2-B1": 2, "B1": 3, "B1+": 4, "B2": 5, "B2-C1": 5, "C1": 6}, "nav": [{"id": "trial", "no": 1, "ko": "체험 레슨", "accent": "#69737d"}, {"id": "1-core-patterns", "no": 2, "ko": "영어 핵심 패턴", "accent": "#2b5fd9"}, {"id": "2-contextual-english", "no": 3, "ko": "상황별 영어", "accent": "#c22a5f"}, {"id": "3-freetalking", "no": 4, "ko": "프리토킹", "accent": "#0080a8"}], "track": {"id": "2-contextual-english", "no": 3, "ko": "상황별 영어", "en": "Contextual English", "ja": "場面別の英語", "glyph": "場", "status": "live", "accent": "#c22a5f", "tint": "#fdeff3", "unitWord": "코스", "lessonWord": "과", "desc": {"ko": "장면이 정해진 대화 — 흥미 있는 소재에서 패턴을 실전으로 추출.", "ja": "場面が決まった会話 — 興味のある題材から、パターンを実戦で取り出します。", "en": "Conversations with a fixed setting — patterns pulled from material you care about."}, "note": "", "stats": [{"k": "lessonWord", "v": 60}, {"k": "unitWord", "v": 10}, {"k": "deckWordShort", "v": 120}], "groups": [{"label": "1코스", "title": "여행 영어 · 공항과 이동 · A2–B1", "subtitle": "旅行英語 · 空港と移動 · A2–B1", "levels": ["A2-B1"], "level": "A2-B1", "slug": "ctx-travel-arrivals-transport", "lessons": [{"n": 1, "title": "체크인하고 좌석 요청하기", "sub": "チェックインして席を頼む", "titles": {"ko": "체크인하고 좌석 요청하기", "en": "Check in and request a seat", "ja": "チェックインして席を頼む"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-travel-arrivals-transport/01-check-in-and-request-a-seat/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-arrivals-transport/01-check-in-and-request-a-seat/lecture/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/lecture/index.html"}, {"href": "view/ctx-travel-arrivals-transport/01-check-in-and-request-a-seat/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-arrivals-transport/01-check-in-and-request-a-seat/prestudy/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/01-check-in-and-request-a-seat/prestudy/index.html"}], "goal": {"t": "Today, you'll practice checking in and asking for the seats you want. Please read the title aloud.", "ja": "今日は、チェックインをして希望の席を頼む練習をします。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "입국 심사 질문에 분명하게 답하기", "sub": "入国審査の質問にはっきり答える", "titles": {"ko": "입국 심사 질문에 분명하게 답하기", "en": "Answer immigration questions clearly", "ja": "入国審査の質問にはっきり答える"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-travel-arrivals-transport/02-answer-immigration-questions-clearly/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-arrivals-transport/02-answer-immigration-questions-clearly/lecture/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/02-answer-immigration-questions-clearly/lecture/index.html"}, {"href": "view/ctx-travel-arrivals-transport/02-answer-immigration-questions-clearly/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-arrivals-transport/02-answer-immigration-questions-clearly/prestudy/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/02-answer-immigration-questions-clearly/prestudy/index.html"}], "goal": {"t": "Give short, consistent information about your visit and accommodation. Please read the title aloud.", "ja": "訪問の目的と滞在先を短く一貫して伝えましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "못 들은 숫자 확인하기", "sub": "聞き取れなかった数字を確認する", "titles": {"ko": "못 들은 숫자 확인하기", "en": "Confirm a number you did not hear", "ja": "聞き取れなかった数字を確認する"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-travel-arrivals-transport/03-confirm-a-number-you-did-not-hear/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-arrivals-transport/03-confirm-a-number-you-did-not-hear/lecture/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/03-confirm-a-number-you-did-not-hear/lecture/index.html"}, {"href": "view/ctx-travel-arrivals-transport/03-confirm-a-number-you-did-not-hear/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-arrivals-transport/03-confirm-a-number-you-did-not-hear/prestudy/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/03-confirm-a-number-you-did-not-hear/prestudy/index.html"}], "goal": {"t": "Repair a time or number before you act on it. Please read the title aloud.", "ja": "行動する前に、時刻や数字の聞き間違いを直しましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "알맞은 교통권 고르기", "sub": "目的に合う交通チケットを選ぶ", "titles": {"ko": "알맞은 교통권 고르기", "en": "Choose the right transport ticket", "ja": "目的に合う交通チケットを選ぶ"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-travel-arrivals-transport/04-choose-the-right-transport-ticket/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-arrivals-transport/04-choose-the-right-transport-ticket/lecture/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/04-choose-the-right-transport-ticket/lecture/index.html"}, {"href": "view/ctx-travel-arrivals-transport/04-choose-the-right-transport-ticket/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-arrivals-transport/04-choose-the-right-transport-ticket/prestudy/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/04-choose-the-right-transport-ticket/prestudy/index.html"}], "goal": {"t": "Compare ticket options and select the one that fits your trip. Please read the title aloud.", "ja": "切符を比べて、移動に合うものを選びましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "길을 묻고 경로 확인하기", "sub": "道をたずねて行き方を確認する", "titles": {"ko": "길을 묻고 경로 확인하기", "en": "Ask for directions and confirm the route", "ja": "道をたずねて行き方を確認する"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-travel-arrivals-transport/05-ask-for-directions-and-confirm-the-route/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-arrivals-transport/05-ask-for-directions-and-confirm-the-route/lecture/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/05-ask-for-directions-and-confirm-the-route/lecture/index.html"}, {"href": "view/ctx-travel-arrivals-transport/05-ask-for-directions-and-confirm-the-route/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-arrivals-transport/05-ask-for-directions-and-confirm-the-route/prestudy/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/05-ask-for-directions-and-confirm-the-route/prestudy/index.html"}], "goal": {"t": "Get directions and confirm the step that prevents a wrong turn. Please read the title aloud.", "ja": "道を聞き、間違えないための大事な手順を確認しましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "숙소까지 교통편 마련하기", "sub": "宿泊先までの移動を手配する", "titles": {"ko": "숙소까지 교통편 마련하기", "en": "Arrange transport to your accommodation", "ja": "宿泊先までの移動を手配する"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-travel-arrivals-transport/06-arrange-transport-to-your-accommodation/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-arrivals-transport/06-arrange-transport-to-your-accommodation/lecture/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/06-arrange-transport-to-your-accommodation/lecture/index.html"}, {"href": "view/ctx-travel-arrivals-transport/06-arrange-transport-to-your-accommodation/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-arrivals-transport/06-arrange-transport-to-your-accommodation/prestudy/index.html", "source": "courses/en/ctx-travel-arrivals-transport/lessons/06-arrange-transport-to-your-accommodation/prestudy/index.html"}], "goal": {"t": "State your destination and confirm the time and cost before agreeing. Please read the title aloud.", "ja": "行き先を伝え、決める前に時間と料金を確認しましょう。タイトルを声に出して読んでください。"}}]}, {"label": "2코스", "title": "여행 영어 · 숙소와 식사 · B1", "subtitle": "旅行英語 · 宿と食事 · B1", "levels": ["B1"], "level": "B1", "slug": "ctx-travel-hotels-food", "lessons": [{"n": 1, "title": "객실 준비 전 체크인하기", "sub": "部屋の準備前にチェックインする", "titles": {"ko": "객실 준비 전 체크인하기", "en": "Check in when your room is not ready", "ja": "部屋の準備前にチェックインする"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-travel-hotels-food/07-check-in-when-your-room-is-not-ready/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-hotels-food/07-check-in-when-your-room-is-not-ready/lecture/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/07-check-in-when-your-room-is-not-ready/lecture/index.html"}, {"href": "view/ctx-travel-hotels-food/07-check-in-when-your-room-is-not-ready/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-hotels-food/07-check-in-when-your-room-is-not-ready/prestudy/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/07-check-in-when-your-room-is-not-ready/prestudy/index.html"}], "goal": {"t": "Confirm your booking and arrange a useful place for your bags while you wait. Please read the title aloud.", "ja": "予約を確認し、待っている間に荷物を預ける場所を手配しましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "호텔 문제 해결 요청하기", "sub": "ホテルの問題を直してもらう", "titles": {"ko": "호텔 문제 해결 요청하기", "en": "Get a hotel problem fixed", "ja": "ホテルの問題を直してもらう"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-travel-hotels-food/08-get-a-hotel-problem-fixed/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-hotels-food/08-get-a-hotel-problem-fixed/lecture/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/08-get-a-hotel-problem-fixed/lecture/index.html"}, {"href": "view/ctx-travel-hotels-food/08-get-a-hotel-problem-fixed/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-hotels-food/08-get-a-hotel-problem-fixed/prestudy/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/08-get-a-hotel-problem-fixed/prestudy/index.html"}], "goal": {"t": "Describe the malfunction and ask for a specific remedy. Please read the title aloud.", "ja": "故障の内容を伝え、具体的な対応を頼みましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "식이 제한을 알리고 주문하기", "sub": "食事制限を伝えて注文する", "titles": {"ko": "식이 제한을 알리고 주문하기", "en": "Order with a dietary restriction", "ja": "食事制限を伝えて注文する"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-travel-hotels-food/09-order-with-a-dietary-restriction/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-hotels-food/09-order-with-a-dietary-restriction/lecture/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/09-order-with-a-dietary-restriction/lecture/index.html"}, {"href": "view/ctx-travel-hotels-food/09-order-with-a-dietary-restriction/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-hotels-food/09-order-with-a-dietary-restriction/prestudy/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/09-order-with-a-dietary-restriction/prestudy/index.html"}], "goal": {"t": "State your dietary restriction and confirm that a recommendation is safe. Please read the title aloud.", "ja": "食事制限を伝え、おすすめの料理が安全か確認しましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "주문 오류 정중하게 바로잡기", "sub": "注文の間違いを丁寧に直す", "titles": {"ko": "주문 오류 정중하게 바로잡기", "en": "Correct an order politely", "ja": "注文の間違いを丁寧に直す"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-travel-hotels-food/10-correct-an-order-politely/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-hotels-food/10-correct-an-order-politely/lecture/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/10-correct-an-order-politely/lecture/index.html"}, {"href": "view/ctx-travel-hotels-food/10-correct-an-order-politely/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-hotels-food/10-correct-an-order-politely/prestudy/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/10-correct-an-order-politely/prestudy/index.html"}], "goal": {"t": "Identify the order error and ask for the correct item. Please read the title aloud.", "ja": "注文の間違いを伝え、正しい品への交換を頼みましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "고장 난 물건 반품하기", "sub": "動かない商品を返品する", "titles": {"ko": "고장 난 물건 반품하기", "en": "Return something that does not work", "ja": "動かない商品を返品する"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-travel-hotels-food/11-return-something-that-does-not-work/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-hotels-food/11-return-something-that-does-not-work/lecture/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/11-return-something-that-does-not-work/lecture/index.html"}, {"href": "view/ctx-travel-hotels-food/11-return-something-that-does-not-work/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-hotels-food/11-return-something-that-does-not-work/prestudy/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/11-return-something-that-does-not-work/prestudy/index.html"}], "goal": {"t": "Explain the fault and request an exchange or refund. Please read the title aloud.", "ja": "故障を説明し、交換または返金を頼みましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "예약을 유지하며 시간 변경하기", "sub": "予約を残したまま時間を変更する", "titles": {"ko": "예약을 유지하며 시간 변경하기", "en": "Change a booking without losing it", "ja": "予約を残したまま時間を変更する"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-travel-hotels-food/12-change-a-booking-without-losing-it/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-hotels-food/12-change-a-booking-without-losing-it/lecture/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/12-change-a-booking-without-losing-it/lecture/index.html"}, {"href": "view/ctx-travel-hotels-food/12-change-a-booking-without-losing-it/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-hotels-food/12-change-a-booking-without-losing-it/prestudy/index.html", "source": "courses/en/ctx-travel-hotels-food/lessons/12-change-a-booking-without-losing-it/prestudy/index.html"}], "goal": {"t": "Request a booking change and confirm the revised details. Please read the title aloud.", "ja": "予約の変更を頼み、変更後の内容を確認しましょう。タイトルを声に出して読んでください。"}}]}, {"label": "3코스", "title": "여행 영어 · 문제가 생겼을 때 · B2", "subtitle": "旅行英語 · トラブル対応 · B2", "levels": ["B2"], "level": "B2", "slug": "ctx-travel-disruptions-urgent-problems", "lessons": [{"n": 1, "title": "연결편을 놓친 뒤 재예약하기", "sub": "乗り継ぎに失敗したあと予約を取り直す", "titles": {"ko": "연결편을 놓친 뒤 재예약하기", "en": "Rebook after a missed connection", "ja": "乗り継ぎに失敗したあと予約を取り直す"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-disruptions-urgent-problems/13-rebook-after-a-missed-connection/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-disruptions-urgent-problems/13-rebook-after-a-missed-connection/lecture/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/13-rebook-after-a-missed-connection/lecture/index.html"}, {"href": "view/ctx-travel-disruptions-urgent-problems/13-rebook-after-a-missed-connection/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-disruptions-urgent-problems/13-rebook-after-a-missed-connection/prestudy/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/13-rebook-after-a-missed-connection/prestudy/index.html"}], "goal": {"t": "Explain the disruption and obtain a replacement itinerary for you and your travel companion. Please read the title aloud.", "ja": "遅延の事情を説明し、旅行仲間と二人で到着できる代わりの旅程を確保しましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "분실 수하물 정확히 신고하기", "sub": "見つからない荷物を正確に申告する", "titles": {"ko": "분실 수하물 정확히 신고하기", "en": "Report missing baggage precisely", "ja": "見つからない荷物を正確に申告する"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-disruptions-urgent-problems/14-report-missing-baggage-precisely/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-disruptions-urgent-problems/14-report-missing-baggage-precisely/lecture/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/14-report-missing-baggage-precisely/lecture/index.html"}, {"href": "view/ctx-travel-disruptions-urgent-problems/14-report-missing-baggage-precisely/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-disruptions-urgent-problems/14-report-missing-baggage-precisely/prestudy/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/14-report-missing-baggage-precisely/prestudy/index.html"}], "goal": {"t": "Report the missing bag and give details staff can use to trace it. Please read the title aloud.", "ja": "荷物が見つからないことを伝え、追跡に使える特徴を説明しましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "잘못 탄 열차에서 경로 회복하기", "sub": "間違った電車から正しい経路に戻る", "titles": {"ko": "잘못 탄 열차에서 경로 회복하기", "en": "Recover from taking the wrong train", "ja": "間違った電車から正しい経路に戻る"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-disruptions-urgent-problems/15-recover-from-taking-the-wrong-train/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-disruptions-urgent-problems/15-recover-from-taking-the-wrong-train/lecture/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/15-recover-from-taking-the-wrong-train/lecture/index.html"}, {"href": "view/ctx-travel-disruptions-urgent-problems/15-recover-from-taking-the-wrong-train/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-disruptions-urgent-problems/15-recover-from-taking-the-wrong-train/prestudy/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/15-recover-from-taking-the-wrong-train/prestudy/index.html"}], "goal": {"t": "Verify the mistake and get a route back to your destination. Please read the title aloud.", "ja": "乗り間違いを確認し、目的地へ戻る経路を教えてもらいましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "두고 온 물건 찾기", "sub": "置き忘れたかもしれない物を探す", "titles": {"ko": "두고 온 물건 찾기", "en": "Find an item you may have left behind", "ja": "置き忘れたかもしれない物を探す"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-disruptions-urgent-problems/16-find-an-item-you-may-have-left-behind/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-disruptions-urgent-problems/16-find-an-item-you-may-have-left-behind/lecture/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/16-find-an-item-you-may-have-left-behind/lecture/index.html"}, {"href": "view/ctx-travel-disruptions-urgent-problems/16-find-an-item-you-may-have-left-behind/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-disruptions-urgent-problems/16-find-an-item-you-may-have-left-behind/prestudy/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/16-find-an-item-you-may-have-left-behind/prestudy/index.html"}], "goal": {"t": "Explain where the item may be and help staff identify it. Please read the title aloud.", "ja": "物を置き忘れた場所を説明し、係員が特定できる特徴を伝えましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "예상하지 못한 요금 이의 제기하기", "sub": "覚えのない請求を確認する", "titles": {"ko": "예상하지 못한 요금 이의 제기하기", "en": "Challenge an unexpected charge", "ja": "覚えのない請求を確認する"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-disruptions-urgent-problems/17-challenge-an-unexpected-charge/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-disruptions-urgent-problems/17-challenge-an-unexpected-charge/lecture/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/17-challenge-an-unexpected-charge/lecture/index.html"}, {"href": "view/ctx-travel-disruptions-urgent-problems/17-challenge-an-unexpected-charge/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-disruptions-urgent-problems/17-challenge-an-unexpected-charge/prestudy/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/17-challenge-an-unexpected-charge/prestudy/index.html"}], "goal": {"t": "Question a charge on your shared bill and get it corrected. Please read the title aloud.", "ja": "旅行仲間との共同の請求書にある覚えのない料金を確認し、直してもらいましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "상황에 맞는 의료 도움 받기", "sub": "症状に合った医療機関を案内してもらう", "titles": {"ko": "상황에 맞는 의료 도움 받기", "en": "Get appropriate medical help", "ja": "症状に合った医療機関を案内してもらう"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-disruptions-urgent-problems/18-get-appropriate-medical-help/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-disruptions-urgent-problems/18-get-appropriate-medical-help/lecture/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/18-get-appropriate-medical-help/lecture/index.html"}, {"href": "view/ctx-travel-disruptions-urgent-problems/18-get-appropriate-medical-help/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-disruptions-urgent-problems/18-get-appropriate-medical-help/prestudy/index.html", "source": "courses/en/ctx-travel-disruptions-urgent-problems/lessons/18-get-appropriate-medical-help/prestudy/index.html"}], "goal": {"t": "Describe the problem and ask what level of help is appropriate. Please read the title aloud.", "ja": "症状を説明し、どの医療機関へ行くべきか確認しましょう。タイトルを声に出して読んでください。"}}]}, {"label": "4코스", "title": "여행 영어 · 혼자 하는 여행 · B2", "subtitle": "旅行英語 · ひとり旅と交流 · B2", "levels": ["B2"], "level": "B2", "slug": "ctx-travel-independent-social", "lessons": [{"n": 1, "title": "우선순위에 맞는 추천 받기", "sub": "希望に合うおすすめを聞く", "titles": {"ko": "우선순위에 맞는 추천 받기", "en": "Get a recommendation that fits your priorities", "ja": "希望に合うおすすめを聞く"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-independent-social/19-get-a-recommendation-that-fits-your-priorities/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-independent-social/19-get-a-recommendation-that-fits-your-priorities/lecture/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/19-get-a-recommendation-that-fits-your-priorities/lecture/index.html"}, {"href": "view/ctx-travel-independent-social/19-get-a-recommendation-that-fits-your-priorities/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-independent-social/19-get-a-recommendation-that-fits-your-priorities/prestudy/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/19-get-a-recommendation-that-fits-your-priorities/prestudy/index.html"}], "goal": {"t": "State what you and your travel companion want and obtain a tailored recommendation. Please read the title aloud.", "ja": "旅行仲間と二人の希望を伝え、それに合うおすすめを聞きましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "그룹 활동에 자연스럽게 참여하기", "sub": "グループ活動に自然に加わる", "titles": {"ko": "그룹 활동에 자연스럽게 참여하기", "en": "Join a group activity confidently", "ja": "グループ活動に自然に加わる"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-independent-social/20-join-a-group-activity-confidently/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-independent-social/20-join-a-group-activity-confidently/lecture/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/20-join-a-group-activity-confidently/lecture/index.html"}, {"href": "view/ctx-travel-independent-social/20-join-a-group-activity-confidently/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-independent-social/20-join-a-group-activity-confidently/prestudy/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/20-join-a-group-activity-confidently/prestudy/index.html"}], "goal": {"t": "Identify the group and establish a practical connection. Please read the title aloud.", "ja": "正しいグループを確認し、自然に輪へ加わりましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "처음 만난 사람들과 약속 잡기", "sub": "初対面の人たちと予定を立てる", "titles": {"ko": "처음 만난 사람들과 약속 잡기", "en": "Make a plan with people you just met", "ja": "初対面の人たちと予定を立てる"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-independent-social/21-make-a-plan-with-people-you-just-met/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-independent-social/21-make-a-plan-with-people-you-just-met/lecture/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/21-make-a-plan-with-people-you-just-met/lecture/index.html"}, {"href": "view/ctx-travel-independent-social/21-make-a-plan-with-people-you-just-met/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-independent-social/21-make-a-plan-with-people-you-just-met/prestudy/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/21-make-a-plan-with-people-you-just-met/prestudy/index.html"}], "goal": {"t": "Propose a plan with your travel companion and leave room for the other travellers to refuse. Please read the title aloud.", "ja": "旅行仲間との予定を提案し、相手の旅行者たちが断りやすい余地も残しましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "여행 일정 의견 차이 조율하기", "sub": "旅程の意見の違いをまとめる", "titles": {"ko": "여행 일정 의견 차이 조율하기", "en": "Resolve an itinerary disagreement", "ja": "旅程の意見の違いをまとめる"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-independent-social/22-resolve-an-itinerary-disagreement/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-independent-social/22-resolve-an-itinerary-disagreement/lecture/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/22-resolve-an-itinerary-disagreement/lecture/index.html"}, {"href": "view/ctx-travel-independent-social/22-resolve-an-itinerary-disagreement/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-independent-social/22-resolve-an-itinerary-disagreement/prestudy/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/22-resolve-an-itinerary-disagreement/prestudy/index.html"}], "goal": {"t": "Acknowledge the other preference and propose a workable compromise. Please read the title aloud.", "ja": "相手の希望を認め、自分の希望も伝えて実行できる妥協案を出しましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "문화적 오해 풀기", "sub": "文化的な誤解を解く", "titles": {"ko": "문화적 오해 풀기", "en": "Clear up a cultural misunderstanding", "ja": "文化的な誤解を解く"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-independent-social/23-clear-up-a-cultural-misunderstanding/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-independent-social/23-clear-up-a-cultural-misunderstanding/lecture/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/23-clear-up-a-cultural-misunderstanding/lecture/index.html"}, {"href": "view/ctx-travel-independent-social/23-clear-up-a-cultural-misunderstanding/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-independent-social/23-clear-up-a-cultural-misunderstanding/prestudy/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/23-clear-up-a-cultural-misunderstanding/prestudy/index.html"}], "goal": {"t": "Repair an unintended social message without blaming the other person. Please read the title aloud.", "ja": "意図しない伝わり方を、相手を責めずに修復しましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "적대적이지 않게 단호히 항의하기", "sub": "攻撃的にならずにしっかり苦情を伝える", "titles": {"ko": "적대적이지 않게 단호히 항의하기", "en": "Complain firmly without becoming hostile", "ja": "攻撃的にならずにしっかり苦情を伝える"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-travel-independent-social/24-complain-firmly-without-becoming-hostile/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-independent-social/24-complain-firmly-without-becoming-hostile/lecture/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/24-complain-firmly-without-becoming-hostile/lecture/index.html"}, {"href": "view/ctx-travel-independent-social/24-complain-firmly-without-becoming-hostile/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-independent-social/24-complain-firmly-without-becoming-hostile/prestudy/index.html", "source": "courses/en/ctx-travel-independent-social/lessons/24-complain-firmly-without-becoming-hostile/prestudy/index.html"}], "goal": {"t": "State the gap and request a proportionate remedy. Please read the title aloud.", "ja": "説明との違いを示し、釣り合う対応を求めましょう。タイトルを声に出して読んでください。"}}]}, {"label": "5코스", "title": "여행 영어 · 따지고 요구하기 · C1", "subtitle": "旅行英語 · 主張と交渉 · C1", "levels": ["C1"], "level": "C1", "slug": "ctx-travel-complex-decisions", "lessons": [{"n": 1, "title": "취소 상황에서 우선순위를 분명히 말하기", "sub": "欠航時に優先事項を明確に伝える", "titles": {"ko": "취소 상황에서 우선순위를 분명히 말하기", "en": "Escalate a cancellation with clear priorities", "ja": "欠航時に優先事項を明確に伝える"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-travel-complex-decisions/25-escalate-a-cancellation-with-clear-priorities/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-complex-decisions/25-escalate-a-cancellation-with-clear-priorities/lecture/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/25-escalate-a-cancellation-with-clear-priorities/lecture/index.html"}, {"href": "view/ctx-travel-complex-decisions/25-escalate-a-cancellation-with-clear-priorities/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-complex-decisions/25-escalate-a-cancellation-with-clear-priorities/prestudy/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/25-escalate-a-cancellation-with-clear-priorities/prestudy/index.html"}], "goal": {"t": "State the arrival time you cannot compromise on and secure a workable route. Please read the title aloud.", "ja": "譲れない到着時刻を伝え、実行可能な別ルートを確保しましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "보험을 위해 사건을 기록하기", "sub": "保険申請のために事故を記録する", "titles": {"ko": "보험을 위해 사건을 기록하기", "en": "Document an incident for insurance", "ja": "保険申請のために事故を記録する"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-travel-complex-decisions/26-document-an-incident-for-insurance/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-complex-decisions/26-document-an-incident-for-insurance/lecture/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/26-document-an-incident-for-insurance/lecture/index.html"}, {"href": "view/ctx-travel-complex-decisions/26-document-an-incident-for-insurance/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-complex-decisions/26-document-an-incident-for-insurance/prestudy/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/26-document-an-incident-for-insurance/prestudy/index.html"}], "goal": {"t": "Separate confirmed facts from uncertainty and obtain the documents for a claim. Please read the title aloud.", "ja": "確認できている事実と不確かな点を分け、保険申請の書類をそろえましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "접근성 요구 사항을 분명히 요청하기", "sub": "アクセシビリティ要件を明確に求める", "titles": {"ko": "접근성 요구 사항을 분명히 요청하기", "en": "Advocate for an accessibility requirement", "ja": "アクセシビリティ要件を明確に求める"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-travel-complex-decisions/27-advocate-for-an-accessibility-requirement/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-complex-decisions/27-advocate-for-an-accessibility-requirement/lecture/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/27-advocate-for-an-accessibility-requirement/lecture/index.html"}, {"href": "view/ctx-travel-complex-decisions/27-advocate-for-an-accessibility-requirement/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-complex-decisions/27-advocate-for-an-accessibility-requirement/prestudy/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/27-advocate-for-an-accessibility-requirement/prestudy/index.html"}], "goal": {"t": "Make the essential access requirement non-negotiable and obtain a usable room tonight. Please read the title aloud.", "ja": "必須のアクセス条件を明確にし、今夜利用できる部屋を確保しましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "상충하는 예약 정보를 해결하기", "sub": "食い違う予約情報を解決する", "titles": {"ko": "상충하는 예약 정보를 해결하기", "en": "Resolve conflicting booking information", "ja": "食い違う予約情報を解決する"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-travel-complex-decisions/28-resolve-conflicting-booking-information/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-complex-decisions/28-resolve-conflicting-booking-information/lecture/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/28-resolve-conflicting-booking-information/lecture/index.html"}, {"href": "view/ctx-travel-complex-decisions/28-resolve-conflicting-booking-information/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-complex-decisions/28-resolve-conflicting-booking-information/prestudy/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/28-resolve-conflicting-booking-information/prestudy/index.html"}], "goal": {"t": "Show the discrepancy and leave with written confirmation of the solution. Please read the title aloud.", "ja": "情報の食い違いを示し、解決内容を書面で受け取りましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "불완전한 정보로 안전 결정을 내리기", "sub": "不完全な情報で安全な判断をする", "titles": {"ko": "불완전한 정보로 안전 결정을 내리기", "en": "Make a safety decision with incomplete information", "ja": "不完全な情報で安全な判断をする"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-travel-complex-decisions/29-make-a-safety-decision-with-incomplete-information/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-complex-decisions/29-make-a-safety-decision-with-incomplete-information/lecture/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/29-make-a-safety-decision-with-incomplete-information/lecture/index.html"}, {"href": "view/ctx-travel-complex-decisions/29-make-a-safety-decision-with-incomplete-information/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-complex-decisions/29-make-a-safety-decision-with-incomplete-information/prestudy/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/29-make-a-safety-decision-with-incomplete-information/prestudy/index.html"}], "goal": {"t": "Challenge a weak safety assumption and choose the lower-risk option. Please read the title aloud.", "ja": "根拠の弱い安全判断を問い直し、よりリスクの低い選択をしましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "복잡한 여행 후 유용한 조언하기", "sub": "複雑な旅行のあとで役立つ助言をする", "titles": {"ko": "복잡한 여행 후 유용한 조언하기", "en": "Give useful advice after a complicated trip", "ja": "複雑な旅行のあとで役立つ助言をする"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-travel-complex-decisions/30-give-useful-advice-after-a-complicated-trip/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-travel-complex-decisions/30-give-useful-advice-after-a-complicated-trip/lecture/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/30-give-useful-advice-after-a-complicated-trip/lecture/index.html"}, {"href": "view/ctx-travel-complex-decisions/30-give-useful-advice-after-a-complicated-trip/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-travel-complex-decisions/30-give-useful-advice-after-a-complicated-trip/prestudy/index.html", "source": "courses/en/ctx-travel-complex-decisions/lessons/30-give-useful-advice-after-a-complicated-trip/prestudy/index.html"}], "goal": {"t": "Turn a difficult travel experience into specific, conditional advice. Please read the title aloud.", "ja": "大変だった旅行経験を、具体的で条件付きの助言に変えましょう。タイトルを声に出して読んでください。"}}]}, {"label": "6코스", "title": "비즈니스 영어 · 사무실 기본 · A2–B1", "subtitle": "ビジネス英語 · 職場の基本 · A2–B1", "levels": ["A2-B1"], "level": "A2-B1", "slug": "ctx-business-workplace-essentials", "lessons": [{"n": 1, "title": "새 프로젝트에서 역할 소개하기", "sub": "新しいプロジェクトで役割を紹介する", "titles": {"ko": "새 프로젝트에서 역할 소개하기", "en": "Introduce your role on a new project", "ja": "新しいプロジェクトで役割を紹介する"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-business-workplace-essentials/31-introduce-your-role-on-a-new-project/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-workplace-essentials/31-introduce-your-role-on-a-new-project/lecture/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/31-introduce-your-role-on-a-new-project/lecture/index.html"}, {"href": "view/ctx-business-workplace-essentials/31-introduce-your-role-on-a-new-project/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-workplace-essentials/31-introduce-your-role-on-a-new-project/prestudy/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/31-introduce-your-role-on-a-new-project/prestudy/index.html"}], "goal": {"t": "Introduce your responsibilities so the new team knows when to contact you. Please read the title aloud.", "ja": "担当範囲を紹介し、どんなときに連絡すればよいかをチームに伝えましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "통화 연결 문제 해결하기", "sub": "通話の接続不良を立て直す", "titles": {"ko": "통화 연결 문제 해결하기", "en": "Repair a bad connection during a call", "ja": "通話の接続不良を立て直す"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-business-workplace-essentials/32-repair-a-bad-connection-during-a-call/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-workplace-essentials/32-repair-a-bad-connection-during-a-call/lecture/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/32-repair-a-bad-connection-during-a-call/lecture/index.html"}, {"href": "view/ctx-business-workplace-essentials/32-repair-a-bad-connection-during-a-call/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-workplace-essentials/32-repair-a-bad-connection-during-a-call/prestudy/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/32-repair-a-bad-connection-during-a-call/prestudy/index.html"}], "goal": {"t": "Identify where the audio failed and recover the missed deadline accurately. Please read the title aloud.", "ja": "音声が途切れた箇所を示し、聞き逃した締め切りを正確に確認しましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "시차를 고려해 일정 잡기", "sub": "時差をまたいで日程を決める", "titles": {"ko": "시차를 고려해 일정 잡기", "en": "Schedule across time zones", "ja": "時差をまたいで日程を決める"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-business-workplace-essentials/33-schedule-across-time-zones/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-workplace-essentials/33-schedule-across-time-zones/lecture/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/33-schedule-across-time-zones/lecture/index.html"}, {"href": "view/ctx-business-workplace-essentials/33-schedule-across-time-zones/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-workplace-essentials/33-schedule-across-time-zones/prestudy/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/33-schedule-across-time-zones/prestudy/index.html"}], "goal": {"t": "Explain the local-time conflict and agree on a workable meeting slot. Please read the title aloud.", "ja": "現地時刻の問題を伝え、参加可能な会議時間に合意しましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "올바른 파일을 요청하고 이유 설명하기", "sub": "正しいファイルを依頼して理由を伝える", "titles": {"ko": "올바른 파일을 요청하고 이유 설명하기", "en": "Request the correct file and explain why", "ja": "正しいファイルを依頼して理由を伝える"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-business-workplace-essentials/34-request-the-correct-file-and-explain-why/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-workplace-essentials/34-request-the-correct-file-and-explain-why/lecture/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/34-request-the-correct-file-and-explain-why/lecture/index.html"}, {"href": "view/ctx-business-workplace-essentials/34-request-the-correct-file-and-explain-why/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-workplace-essentials/34-request-the-correct-file-and-explain-why/prestudy/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/34-request-the-correct-file-and-explain-why/prestudy/index.html"}], "goal": {"t": "Get the current file and prevent the outdated copy from being reused. Please read the title aloud.", "ja": "最新版を受け取り、古いコピーが再利用されないようにしましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "간결하게 진행 상황 보고하기", "sub": "簡潔に進捗を報告する", "titles": {"ko": "간결하게 진행 상황 보고하기", "en": "Give a concise progress update", "ja": "簡潔に進捗を報告する"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-business-workplace-essentials/35-give-a-concise-progress-update/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-workplace-essentials/35-give-a-concise-progress-update/lecture/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/35-give-a-concise-progress-update/lecture/index.html"}, {"href": "view/ctx-business-workplace-essentials/35-give-a-concise-progress-update/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-workplace-essentials/35-give-a-concise-progress-update/prestudy/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/35-give-a-concise-progress-update/prestudy/index.html"}], "goal": {"t": "Give a brief update with measurable progress and a clear next step. Please read the title aloud.", "ja": "測定できる進捗と明確な次の行動を短く報告しましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "기술적 장애 요인을 유용하게 보고하기", "sub": "技術的なブロッカーを具体的に報告する", "titles": {"ko": "기술적 장애 요인을 유용하게 보고하기", "en": "Report a technical blocker usefully", "ja": "技術的なブロッカーを具体的に報告する"}, "chips": [], "jamo": false, "level": "A2-B1", "decks": [{"href": "view/ctx-business-workplace-essentials/36-report-a-technical-blocker-usefully/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-workplace-essentials/36-report-a-technical-blocker-usefully/lecture/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/36-report-a-technical-blocker-usefully/lecture/index.html"}, {"href": "view/ctx-business-workplace-essentials/36-report-a-technical-blocker-usefully/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-workplace-essentials/36-report-a-technical-blocker-usefully/prestudy/index.html", "source": "courses/en/ctx-business-workplace-essentials/lessons/36-report-a-technical-blocker-usefully/prestudy/index.html"}], "goal": {"t": "Report the blocker with enough evidence for the team to act immediately. Please read the title aloud.", "ja": "チームがすぐ対応できるだけの情報を添えてブロッカーを報告しましょう。タイトルを声に出して読んでください。"}}]}, {"label": "7코스", "title": "비즈니스 영어 · 프로젝트와 마감 · B1", "subtitle": "ビジネス英語 · 案件と締め切り · B1", "levels": ["B1"], "level": "B1", "slug": "ctx-business-projects-deadlines", "lessons": [{"n": 1, "title": "모든 일이 급할 때 우선순위 확인하기", "sub": "すべて急ぎに見えるとき優先順位を確認する", "titles": {"ko": "모든 일이 급할 때 우선순위 확인하기", "en": "Confirm priorities when everything seems urgent", "ja": "すべて急ぎに見えるとき優先順位を確認する"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-business-projects-deadlines/37-confirm-priorities-when-everything-seems-urgent/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-projects-deadlines/37-confirm-priorities-when-everything-seems-urgent/lecture/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/37-confirm-priorities-when-everything-seems-urgent/lecture/index.html"}, {"href": "view/ctx-business-projects-deadlines/37-confirm-priorities-when-everything-seems-urgent/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-projects-deadlines/37-confirm-priorities-when-everything-seems-urgent/prestudy/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/37-confirm-priorities-when-everything-seems-urgent/prestudy/index.html"}], "goal": {"t": "Set a realistic limit and get a clear first priority. Please read the title aloud.", "ja": "現実的な限界を伝え、最初の優先事項を明確にしましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "업무 담당자 확인하기", "sub": "作業の担当者を確認する", "titles": {"ko": "업무 담당자 확인하기", "en": "Clarify who owns an action", "ja": "作業の担当者を確認する"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-business-projects-deadlines/38-clarify-who-owns-an-action/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-projects-deadlines/38-clarify-who-owns-an-action/lecture/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/38-clarify-who-owns-an-action/lecture/index.html"}, {"href": "view/ctx-business-projects-deadlines/38-clarify-who-owns-an-action/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-projects-deadlines/38-clarify-who-owns-an-action/prestudy/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/38-clarify-who-owns-an-action/prestudy/index.html"}], "goal": {"t": "Identify the action owner and keep the task from being missed. Please read the title aloud.", "ja": "担当者を確認し、仕事が抜け落ちないようにしましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "프로젝트 위험을 일찍 알리기", "sub": "プロジェクトのリスクを早めに伝える", "titles": {"ko": "프로젝트 위험을 일찍 알리기", "en": "Raise a project risk early", "ja": "プロジェクトのリスクを早めに伝える"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-business-projects-deadlines/39-raise-a-project-risk-early/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-projects-deadlines/39-raise-a-project-risk-early/lecture/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/39-raise-a-project-risk-early/lecture/index.html"}, {"href": "view/ctx-business-projects-deadlines/39-raise-a-project-risk-early/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-projects-deadlines/39-raise-a-project-risk-early/prestudy/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/39-raise-a-project-risk-early/prestudy/index.html"}], "goal": {"t": "Report the current status and surface the main risk before it becomes a problem. Please read the title aloud.", "ja": "現在の状況と主なリスクを分け、問題になる前に共有しましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "현실적인 마감 협의하기", "sub": "現実的な締め切りを交渉する", "titles": {"ko": "현실적인 마감 협의하기", "en": "Negotiate a realistic deadline", "ja": "現実的な締め切りを交渉する"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-business-projects-deadlines/40-negotiate-a-realistic-deadline/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-projects-deadlines/40-negotiate-a-realistic-deadline/lecture/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/40-negotiate-a-realistic-deadline/lecture/index.html"}, {"href": "view/ctx-business-projects-deadlines/40-negotiate-a-realistic-deadline/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-projects-deadlines/40-negotiate-a-realistic-deadline/prestudy/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/40-negotiate-a-realistic-deadline/prestudy/index.html"}], "goal": {"t": "Offer a useful interim result and agree on a deadline you can actually meet. Please read the title aloud.", "ja": "役立つ中間成果を示し、実際に守れる締め切りに合意しましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "다음 단계와 함께 나쁜 소식 전하기", "sub": "次の一手とともに悪い知らせを伝える", "titles": {"ko": "다음 단계와 함께 나쁜 소식 전하기", "en": "Deliver bad news with a next step", "ja": "次の一手とともに悪い知らせを伝える"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-business-projects-deadlines/41-deliver-bad-news-with-a-next-step/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-projects-deadlines/41-deliver-bad-news-with-a-next-step/lecture/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/41-deliver-bad-news-with-a-next-step/lecture/index.html"}, {"href": "view/ctx-business-projects-deadlines/41-deliver-bad-news-with-a-next-step/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-projects-deadlines/41-deliver-bad-news-with-a-next-step/prestudy/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/41-deliver-bad-news-with-a-next-step/prestudy/index.html"}], "goal": {"t": "State the delay plainly and pair it with a concrete recovery step. Please read the title aloud.", "ja": "遅れを明確に伝え、具体的な立て直しの一手を添えましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "실행 항목으로 프로젝트 논의 마무리하기", "sub": "実行項目を確認して案件の話し合いを終える", "titles": {"ko": "실행 항목으로 프로젝트 논의 마무리하기", "en": "Close a project discussion with actions", "ja": "実行項目を確認して案件の話し合いを終える"}, "chips": [], "jamo": false, "level": "B1", "decks": [{"href": "view/ctx-business-projects-deadlines/42-close-a-project-discussion-with-actions/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-projects-deadlines/42-close-a-project-discussion-with-actions/lecture/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/42-close-a-project-discussion-with-actions/lecture/index.html"}, {"href": "view/ctx-business-projects-deadlines/42-close-a-project-discussion-with-actions/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-projects-deadlines/42-close-a-project-discussion-with-actions/prestudy/index.html", "source": "courses/en/ctx-business-projects-deadlines/lessons/42-close-a-project-discussion-with-actions/prestudy/index.html"}], "goal": {"t": "Confirm two action owners and their deadlines before the meeting ends. Please read the title aloud.", "ja": "会議が終わる前に、二つの実行項目の担当者と締め切りを確認しましょう。タイトルを声に出して読んでください。"}}]}, {"label": "8코스", "title": "비즈니스 영어 · 회의와 발표 · B2", "subtitle": "ビジネス英語 · 会議と発表 · B2", "levels": ["B2"], "level": "B2", "slug": "ctx-business-meetings-decisions", "lessons": [{"n": 1, "title": "핵심을 확인하려고 끼어들기", "sub": "重要点を確認するために割って入る", "titles": {"ko": "핵심을 확인하려고 끼어들기", "en": "Interrupt to clarify a key point", "ja": "重要点を確認するために割って入る"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-meetings-decisions/43-interrupt-to-clarify-a-key-point/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-meetings-decisions/43-interrupt-to-clarify-a-key-point/lecture/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/43-interrupt-to-clarify-a-key-point/lecture/index.html"}, {"href": "view/ctx-business-meetings-decisions/43-interrupt-to-clarify-a-key-point/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-meetings-decisions/43-interrupt-to-clarify-a-key-point/prestudy/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/43-interrupt-to-clarify-a-key-point/prestudy/index.html"}], "goal": {"t": "Interrupt politely and expose the assumption behind an important date. Please read the title aloud.", "ja": "丁寧に割って入り、重要な日程の前提を明らかにしましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "다음으로 넘어가기 전 결정 요약하기", "sub": "次へ進む前に決定を要約する", "titles": {"ko": "다음으로 넘어가기 전 결정 요약하기", "en": "Summarise a decision before moving on", "ja": "次へ進む前に決定を要約する"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-meetings-decisions/44-summarise-a-decision-before-moving-on/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-meetings-decisions/44-summarise-a-decision-before-moving-on/lecture/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/44-summarise-a-decision-before-moving-on/lecture/index.html"}, {"href": "view/ctx-business-meetings-decisions/44-summarise-a-decision-before-moving-on/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-meetings-decisions/44-summarise-a-decision-before-moving-on/prestudy/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/44-summarise-a-decision-before-moving-on/prestudy/index.html"}], "goal": {"t": "State the decision in one line and get explicit confirmation before moving on. Please read the title aloud.", "ja": "決定を一文でまとめ、次へ進む前に明確な確認を得ましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "결론부터 추천안 제시하기", "sub": "結論から推奨案を示す", "titles": {"ko": "결론부터 추천안 제시하기", "en": "Present a recommendation up front", "ja": "結論から推奨案を示す"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-meetings-decisions/45-present-a-recommendation-up-front/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-meetings-decisions/45-present-a-recommendation-up-front/lecture/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/45-present-a-recommendation-up-front/lecture/index.html"}, {"href": "view/ctx-business-meetings-decisions/45-present-a-recommendation-up-front/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-meetings-decisions/45-present-a-recommendation-up-front/prestudy/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/45-present-a-recommendation-up-front/prestudy/index.html"}], "goal": {"t": "Lead with one recommendation and support it with a decision-relevant reason. Please read the title aloud.", "ja": "一つの推奨案を先に示し、判断に役立つ理由を添えましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "아직 모르는 질문에 답하기", "sub": "まだ分からない質問に対応する", "titles": {"ko": "아직 모르는 질문에 답하기", "en": "Answer a question when you do not know yet", "ja": "まだ分からない質問に対応する"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-meetings-decisions/46-answer-a-question-when-you-do-not-know-yet/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-meetings-decisions/46-answer-a-question-when-you-do-not-know-yet/lecture/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/46-answer-a-question-when-you-do-not-know-yet/lecture/index.html"}, {"href": "view/ctx-business-meetings-decisions/46-answer-a-question-when-you-do-not-know-yet/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-meetings-decisions/46-answer-a-question-when-you-do-not-know-yet/prestudy/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/46-answer-a-question-when-you-do-not-know-yet/prestudy/index.html"}], "goal": {"t": "Protect accuracy and commit to a specific follow-up time. Please read the title aloud.", "ja": "正確さを守り、具体的な回答時刻を約束しましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "상급자에게 건설적으로 이견 말하기", "sub": "目上の同僚に建設的に異議を述べる", "titles": {"ko": "상급자에게 건설적으로 이견 말하기", "en": "Disagree with a senior colleague constructively", "ja": "目上の同僚に建設的に異議を述べる"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-meetings-decisions/47-disagree-with-a-senior-colleague-constructively/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-meetings-decisions/47-disagree-with-a-senior-colleague-constructively/lecture/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/47-disagree-with-a-senior-colleague-constructively/lecture/index.html"}, {"href": "view/ctx-business-meetings-decisions/47-disagree-with-a-senior-colleague-constructively/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-meetings-decisions/47-disagree-with-a-senior-colleague-constructively/prestudy/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/47-disagree-with-a-senior-colleague-constructively/prestudy/index.html"}], "goal": {"t": "Acknowledge the senior colleague's point and identify one specific concern. Please read the title aloud.", "ja": "目上の同僚の考えを認め、具体的な懸念を一つ示しましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "논의를 결정으로 전환하기", "sub": "議論を決定につなげる", "titles": {"ko": "논의를 결정으로 전환하기", "en": "Turn discussion into a decision", "ja": "議論を決定につなげる"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-meetings-decisions/48-turn-discussion-into-a-decision/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-meetings-decisions/48-turn-discussion-into-a-decision/lecture/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/48-turn-discussion-into-a-decision/lecture/index.html"}, {"href": "view/ctx-business-meetings-decisions/48-turn-discussion-into-a-decision/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-meetings-decisions/48-turn-discussion-into-a-decision/prestudy/index.html", "source": "courses/en/ctx-business-meetings-decisions/lessons/48-turn-discussion-into-a-decision/prestudy/index.html"}], "goal": {"t": "Define today's decision and create the comparison needed to make it. Please read the title aloud.", "ja": "今日決める内容を定め、判断に必要な比較を作りましょう。タイトルを声に出して読んでください。"}}]}, {"label": "9코스", "title": "비즈니스 영어 · 협상과 완곡함 · B2", "subtitle": "ビジネス英語 · 交渉と婉曲表現 · B2", "levels": ["B2"], "level": "B2", "slug": "ctx-business-negotiation-diplomacy", "lessons": [{"n": 1, "title": "문제를 더 정확하게 다시 규정하기", "sub": "問題をより正確に捉え直す", "titles": {"ko": "문제를 더 정확하게 다시 규정하기", "en": "Reframe a problem more accurately", "ja": "問題をより正確に捉え直す"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-negotiation-diplomacy/49-reframe-a-problem-more-accurately/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-negotiation-diplomacy/49-reframe-a-problem-more-accurately/lecture/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/49-reframe-a-problem-more-accurately/lecture/index.html"}, {"href": "view/ctx-business-negotiation-diplomacy/49-reframe-a-problem-more-accurately/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-negotiation-diplomacy/49-reframe-a-problem-more-accurately/prestudy/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/49-reframe-a-problem-more-accurately/prestudy/index.html"}], "goal": {"t": "Replace an exaggerated label with a more accurate description without dismissing the impact. Please read the title aloud.", "ja": "影響を軽視せず、大げさな決めつけをより正確な表現に置き換えましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "조건부 제안하기", "sub": "条件つきの提案をする", "titles": {"ko": "조건부 제안하기", "en": "Make a conditional proposal", "ja": "条件つきの提案をする"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-negotiation-diplomacy/50-make-a-conditional-proposal/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-negotiation-diplomacy/50-make-a-conditional-proposal/lecture/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/50-make-a-conditional-proposal/lecture/index.html"}, {"href": "view/ctx-business-negotiation-diplomacy/50-make-a-conditional-proposal/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-negotiation-diplomacy/50-make-a-conditional-proposal/prestudy/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/50-make-a-conditional-proposal/prestudy/index.html"}], "goal": {"t": "Trade one concession for a clear, workable condition. Please read the title aloud.", "ja": "一つの譲歩と引き換えに、明確で実行可能な条件を提示しましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "너무 일찍 확약하지 않기", "sub": "早すぎる確約を避ける", "titles": {"ko": "너무 일찍 확약하지 않기", "en": "Push back on an unsafe commitment", "ja": "早すぎる確約を避ける"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-negotiation-diplomacy/51-avoid-committing-too-early/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-negotiation-diplomacy/51-avoid-committing-too-early/lecture/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/51-avoid-committing-too-early/lecture/index.html"}, {"href": "view/ctx-business-negotiation-diplomacy/51-avoid-committing-too-early/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-negotiation-diplomacy/51-avoid-committing-too-early/prestudy/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/51-avoid-committing-too-early/prestudy/index.html"}], "goal": {"t": "Keep a date open while making the dependency and next update clear. Please read the title aloud.", "ja": "日程を未確定のままにしつつ、条件と次の連絡時刻を明確にしましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "트레이드오프 설명하기", "sub": "トレードオフを説明する", "titles": {"ko": "트레이드오프 설명하기", "en": "Explain a trade-off without oversimplifying it", "ja": "トレードオフを説明する"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-negotiation-diplomacy/52-explain-a-trade-off/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-negotiation-diplomacy/52-explain-a-trade-off/lecture/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/52-explain-a-trade-off/lecture/index.html"}, {"href": "view/ctx-business-negotiation-diplomacy/52-explain-a-trade-off/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-negotiation-diplomacy/52-explain-a-trade-off/prestudy/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/52-explain-a-trade-off/prestudy/index.html"}], "goal": {"t": "Make the cost of each option visible before choosing a priority. Please read the title aloud.", "ja": "優先順位を決める前に、それぞれの選択肢の代償を明らかにしましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "인정한 뒤 반론하기", "sub": "認めてから反論する", "titles": {"ko": "인정한 뒤 반론하기", "en": "Acknowledge a point without giving up your position", "ja": "認めてから反論する"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-negotiation-diplomacy/53-acknowledge-then-push-back/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-negotiation-diplomacy/53-acknowledge-then-push-back/lecture/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/53-acknowledge-then-push-back/lecture/index.html"}, {"href": "view/ctx-business-negotiation-diplomacy/53-acknowledge-then-push-back/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-negotiation-diplomacy/53-acknowledge-then-push-back/prestudy/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/53-acknowledge-then-push-back/prestudy/index.html"}], "goal": {"t": "Acknowledge the other side's valid point before stating the concern that remains. Please read the title aloud.", "ja": "相手の正当な点を認めてから、残る懸念を伝えましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "공통점 찾기", "sub": "共通点を見つける", "titles": {"ko": "공통점 찾기", "en": "Break a negotiation deadlock", "ja": "共通点を見つける"}, "chips": [], "jamo": false, "level": "B2", "decks": [{"href": "view/ctx-business-negotiation-diplomacy/54-find-common-ground/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-negotiation-diplomacy/54-find-common-ground/lecture/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/54-find-common-ground/lecture/index.html"}, {"href": "view/ctx-business-negotiation-diplomacy/54-find-common-ground/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-negotiation-diplomacy/54-find-common-ground/prestudy/index.html", "source": "courses/en/ctx-business-negotiation-diplomacy/lessons/54-find-common-ground/prestudy/index.html"}], "goal": {"t": "Name what both sides share, isolate the disagreement, and propose a workable next step. Please read the title aloud.", "ja": "双方の共通点と相違点を分け、実行可能な次の一手を提案しましょう。タイトルを声に出して読んでください。"}}]}, {"label": "10코스", "title": "비즈니스 영어 · 리더의 말 · C1", "subtitle": "ビジネス英語 · リーダーの言葉 · C1", "levels": ["C1"], "level": "C1", "slug": "ctx-business-leadership-high-stakes", "lessons": [{"n": 1, "title": "성과 패턴 짚어 보기", "sub": "業務上の傾向について話す", "titles": {"ko": "성과 패턴 짚어 보기", "en": "Open a difficult performance conversation", "ja": "業務上の傾向について話す"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-business-leadership-high-stakes/55-address-a-performance-pattern/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-leadership-high-stakes/55-address-a-performance-pattern/lecture/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/55-address-a-performance-pattern/lecture/index.html"}, {"href": "view/ctx-business-leadership-high-stakes/55-address-a-performance-pattern/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-leadership-high-stakes/55-address-a-performance-pattern/prestudy/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/55-address-a-performance-pattern/prestudy/index.html"}], "goal": {"t": "Name a repeated pattern with evidence, then ask what is making the work difficult. Please read the title aloud.", "ja": "根拠とともに繰り返しの傾向を示し、仕事を難しくしている原因を尋ねましょう。タイトルを声に出して読んでください。"}}, {"n": 2, "title": "높은 기준의 피드백 주기", "sub": "高い基準のフィードバックを伝える", "titles": {"ko": "높은 기준의 피드백 주기", "en": "Give feedback that leads to action", "ja": "高い基準のフィードバックを伝える"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-business-leadership-high-stakes/56-give-high-standard-feedback/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-leadership-high-stakes/56-give-high-standard-feedback/lecture/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/56-give-high-standard-feedback/lecture/index.html"}, {"href": "view/ctx-business-leadership-high-stakes/56-give-high-standard-feedback/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-leadership-high-stakes/56-give-high-standard-feedback/prestudy/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/56-give-high-standard-feedback/prestudy/index.html"}], "goal": {"t": "Recognise what is strong, isolate the issue, and request one concrete improvement. Please read the title aloud.", "ja": "強みを認め、問題を絞り、具体的な改善を一つ求めましょう。タイトルを声に出して読んでください。"}}, {"n": 3, "title": "불확실성을 명확하게 전달하기", "sub": "不確実性を明確に伝える", "titles": {"ko": "불확실성을 명확하게 전달하기", "en": "Lead through genuine uncertainty", "ja": "不確実性を明確に伝える"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-business-leadership-high-stakes/57-communicate-uncertainty-clearly/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-leadership-high-stakes/57-communicate-uncertainty-clearly/lecture/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/57-communicate-uncertainty-clearly/lecture/index.html"}, {"href": "view/ctx-business-leadership-high-stakes/57-communicate-uncertainty-clearly/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-leadership-high-stakes/57-communicate-uncertainty-clearly/prestudy/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/57-communicate-uncertainty-clearly/prestudy/index.html"}], "goal": {"t": "Separate confirmed facts from open questions and give a specific update time. Please read the title aloud.", "ja": "確認済みの事実と未確認の点を分け、次の更新時刻を示しましょう。タイトルを声に出して読んでください。"}}, {"n": 4, "title": "이해관계자에 맞게 메시지 조정하기", "sub": "ステークホルダーに合わせて伝え方を変える", "titles": {"ko": "이해관계자에 맞게 메시지 조정하기", "en": "Persuade stakeholders with competing interests", "ja": "ステークホルダーに合わせて伝え方を変える"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-business-leadership-high-stakes/58-adapt-a-message-for-stakeholders/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-leadership-high-stakes/58-adapt-a-message-for-stakeholders/lecture/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/58-adapt-a-message-for-stakeholders/lecture/index.html"}, {"href": "view/ctx-business-leadership-high-stakes/58-adapt-a-message-for-stakeholders/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-leadership-high-stakes/58-adapt-a-message-for-stakeholders/prestudy/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/58-adapt-a-message-for-stakeholders/prestudy/index.html"}], "goal": {"t": "Keep the proposal accurate while connecting it to each stakeholder's priority. Please read the title aloud.", "ja": "提案の正確さを保ちながら、それぞれの優先事項に結びつけましょう。タイトルを声に出して読んでください。"}}, {"n": 5, "title": "차분하게 위기 상황 전달하기", "sub": "危機時に落ち着いて状況を伝える", "titles": {"ko": "차분하게 위기 상황 전달하기", "en": "Communicate during a service crisis", "ja": "危機時に落ち着いて状況を伝える"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-business-leadership-high-stakes/59-deliver-a-calm-crisis-update/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-leadership-high-stakes/59-deliver-a-calm-crisis-update/lecture/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/59-deliver-a-calm-crisis-update/lecture/index.html"}, {"href": "view/ctx-business-leadership-high-stakes/59-deliver-a-calm-crisis-update/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-leadership-high-stakes/59-deliver-a-calm-crisis-update/prestudy/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/59-deliver-a-calm-crisis-update/prestudy/index.html"}], "goal": {"t": "Acknowledge the disruption, avoid speculation, and commit to the next update. Please read the title aloud.", "ja": "影響を認め、推測を避け、次の更新を約束しましょう。タイトルを声に出して読んでください。"}}, {"n": 6, "title": "경영진 제언 전달하기", "sub": "経営層として提言する", "titles": {"ko": "경영진 제언 전달하기", "en": "Make an executive recommendation under uncertainty", "ja": "経営層として提言する"}, "chips": [], "jamo": false, "level": "C1", "decks": [{"href": "view/ctx-business-leadership-high-stakes/60-make-an-executive-recommendation/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/ctx-business-leadership-high-stakes/60-make-an-executive-recommendation/lecture/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/60-make-an-executive-recommendation/lecture/index.html"}, {"href": "view/ctx-business-leadership-high-stakes/60-make-an-executive-recommendation/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/ctx-business-leadership-high-stakes/60-make-an-executive-recommendation/prestudy/index.html", "source": "courses/en/ctx-business-leadership-high-stakes/lessons/60-make-an-executive-recommendation/prestudy/index.html"}], "goal": {"t": "State one clear recommendation and the decisive reason behind it. Please read the title aloud.", "ja": "一つの明確な提言と、それを支える決定的な理由を示しましょう。タイトルを声に出して読んでください。"}}]}], "dist": {"A2-B1": 12, "B1": 12, "B2": 24, "C1": 12}, "span": ["A2-B1", "B1", "B2", "C1"], "total": 60, "unitCount": 10, "decks": [{"n": 1, "title": "체크인하고 좌석 요청하기", "href": "view/ctx-travel-arrivals-transport/01-check-in-and-request-a-seat/lecture", "level": "수업용"}, {"n": 1, "title": "체크인하고 좌석 요청하기", "href": "view/ctx-travel-arrivals-transport/01-check-in-and-request-a-seat/prestudy", "level": "예습용"}, {"n": 2, "title": "입국 심사 질문에 분명하게 답하기", "href": "view/ctx-travel-arrivals-transport/02-answer-immigration-questions-clearly/lecture", "level": "수업용"}, {"n": 2, "title": "입국 심사 질문에 분명하게 답하기", "href": "view/ctx-travel-arrivals-transport/02-answer-immigration-questions-clearly/prestudy", "level": "예습용"}, {"n": 3, "title": "못 들은 숫자 확인하기", "href": "view/ctx-travel-arrivals-transport/03-confirm-a-number-you-did-not-hear/lecture", "level": "수업용"}, {"n": 3, "title": "못 들은 숫자 확인하기", "href": "view/ctx-travel-arrivals-transport/03-confirm-a-number-you-did-not-hear/prestudy", "level": "예습용"}, {"n": 4, "title": "알맞은 교통권 고르기", "href": "view/ctx-travel-arrivals-transport/04-choose-the-right-transport-ticket/lecture", "level": "수업용"}, {"n": 4, "title": "알맞은 교통권 고르기", "href": "view/ctx-travel-arrivals-transport/04-choose-the-right-transport-ticket/prestudy", "level": "예습용"}, {"n": 5, "title": "길을 묻고 경로 확인하기", "href": "view/ctx-travel-arrivals-transport/05-ask-for-directions-and-confirm-the-route/lecture", "level": "수업용"}, {"n": 5, "title": "길을 묻고 경로 확인하기", "href": "view/ctx-travel-arrivals-transport/05-ask-for-directions-and-confirm-the-route/prestudy", "level": "예습용"}, {"n": 6, "title": "숙소까지 교통편 마련하기", "href": "view/ctx-travel-arrivals-transport/06-arrange-transport-to-your-accommodation/lecture", "level": "수업용"}, {"n": 6, "title": "숙소까지 교통편 마련하기", "href": "view/ctx-travel-arrivals-transport/06-arrange-transport-to-your-accommodation/prestudy", "level": "예습용"}, {"n": 1, "title": "객실 준비 전 체크인하기", "href": "view/ctx-travel-hotels-food/07-check-in-when-your-room-is-not-ready/lecture", "level": "수업용"}, {"n": 1, "title": "객실 준비 전 체크인하기", "href": "view/ctx-travel-hotels-food/07-check-in-when-your-room-is-not-ready/prestudy", "level": "예습용"}, {"n": 2, "title": "호텔 문제 해결 요청하기", "href": "view/ctx-travel-hotels-food/08-get-a-hotel-problem-fixed/lecture", "level": "수업용"}, {"n": 2, "title": "호텔 문제 해결 요청하기", "href": "view/ctx-travel-hotels-food/08-get-a-hotel-problem-fixed/prestudy", "level": "예습용"}, {"n": 3, "title": "식이 제한을 알리고 주문하기", "href": "view/ctx-travel-hotels-food/09-order-with-a-dietary-restriction/lecture", "level": "수업용"}, {"n": 3, "title": "식이 제한을 알리고 주문하기", "href": "view/ctx-travel-hotels-food/09-order-with-a-dietary-restriction/prestudy", "level": "예습용"}, {"n": 4, "title": "주문 오류 정중하게 바로잡기", "href": "view/ctx-travel-hotels-food/10-correct-an-order-politely/lecture", "level": "수업용"}, {"n": 4, "title": "주문 오류 정중하게 바로잡기", "href": "view/ctx-travel-hotels-food/10-correct-an-order-politely/prestudy", "level": "예습용"}, {"n": 5, "title": "고장 난 물건 반품하기", "href": "view/ctx-travel-hotels-food/11-return-something-that-does-not-work/lecture", "level": "수업용"}, {"n": 5, "title": "고장 난 물건 반품하기", "href": "view/ctx-travel-hotels-food/11-return-something-that-does-not-work/prestudy", "level": "예습용"}, {"n": 6, "title": "예약을 유지하며 시간 변경하기", "href": "view/ctx-travel-hotels-food/12-change-a-booking-without-losing-it/lecture", "level": "수업용"}, {"n": 6, "title": "예약을 유지하며 시간 변경하기", "href": "view/ctx-travel-hotels-food/12-change-a-booking-without-losing-it/prestudy", "level": "예습용"}, {"n": 1, "title": "연결편을 놓친 뒤 재예약하기", "href": "view/ctx-travel-disruptions-urgent-problems/13-rebook-after-a-missed-connection/lecture", "level": "수업용"}, {"n": 1, "title": "연결편을 놓친 뒤 재예약하기", "href": "view/ctx-travel-disruptions-urgent-problems/13-rebook-after-a-missed-connection/prestudy", "level": "예습용"}, {"n": 2, "title": "분실 수하물 정확히 신고하기", "href": "view/ctx-travel-disruptions-urgent-problems/14-report-missing-baggage-precisely/lecture", "level": "수업용"}, {"n": 2, "title": "분실 수하물 정확히 신고하기", "href": "view/ctx-travel-disruptions-urgent-problems/14-report-missing-baggage-precisely/prestudy", "level": "예습용"}, {"n": 3, "title": "잘못 탄 열차에서 경로 회복하기", "href": "view/ctx-travel-disruptions-urgent-problems/15-recover-from-taking-the-wrong-train/lecture", "level": "수업용"}, {"n": 3, "title": "잘못 탄 열차에서 경로 회복하기", "href": "view/ctx-travel-disruptions-urgent-problems/15-recover-from-taking-the-wrong-train/prestudy", "level": "예습용"}, {"n": 4, "title": "두고 온 물건 찾기", "href": "view/ctx-travel-disruptions-urgent-problems/16-find-an-item-you-may-have-left-behind/lecture", "level": "수업용"}, {"n": 4, "title": "두고 온 물건 찾기", "href": "view/ctx-travel-disruptions-urgent-problems/16-find-an-item-you-may-have-left-behind/prestudy", "level": "예습용"}, {"n": 5, "title": "예상하지 못한 요금 이의 제기하기", "href": "view/ctx-travel-disruptions-urgent-problems/17-challenge-an-unexpected-charge/lecture", "level": "수업용"}, {"n": 5, "title": "예상하지 못한 요금 이의 제기하기", "href": "view/ctx-travel-disruptions-urgent-problems/17-challenge-an-unexpected-charge/prestudy", "level": "예습용"}, {"n": 6, "title": "상황에 맞는 의료 도움 받기", "href": "view/ctx-travel-disruptions-urgent-problems/18-get-appropriate-medical-help/lecture", "level": "수업용"}, {"n": 6, "title": "상황에 맞는 의료 도움 받기", "href": "view/ctx-travel-disruptions-urgent-problems/18-get-appropriate-medical-help/prestudy", "level": "예습용"}, {"n": 1, "title": "우선순위에 맞는 추천 받기", "href": "view/ctx-travel-independent-social/19-get-a-recommendation-that-fits-your-priorities/lecture", "level": "수업용"}, {"n": 1, "title": "우선순위에 맞는 추천 받기", "href": "view/ctx-travel-independent-social/19-get-a-recommendation-that-fits-your-priorities/prestudy", "level": "예습용"}, {"n": 2, "title": "그룹 활동에 자연스럽게 참여하기", "href": "view/ctx-travel-independent-social/20-join-a-group-activity-confidently/lecture", "level": "수업용"}, {"n": 2, "title": "그룹 활동에 자연스럽게 참여하기", "href": "view/ctx-travel-independent-social/20-join-a-group-activity-confidently/prestudy", "level": "예습용"}, {"n": 3, "title": "처음 만난 사람들과 약속 잡기", "href": "view/ctx-travel-independent-social/21-make-a-plan-with-people-you-just-met/lecture", "level": "수업용"}, {"n": 3, "title": "처음 만난 사람들과 약속 잡기", "href": "view/ctx-travel-independent-social/21-make-a-plan-with-people-you-just-met/prestudy", "level": "예습용"}, {"n": 4, "title": "여행 일정 의견 차이 조율하기", "href": "view/ctx-travel-independent-social/22-resolve-an-itinerary-disagreement/lecture", "level": "수업용"}, {"n": 4, "title": "여행 일정 의견 차이 조율하기", "href": "view/ctx-travel-independent-social/22-resolve-an-itinerary-disagreement/prestudy", "level": "예습용"}, {"n": 5, "title": "문화적 오해 풀기", "href": "view/ctx-travel-independent-social/23-clear-up-a-cultural-misunderstanding/lecture", "level": "수업용"}, {"n": 5, "title": "문화적 오해 풀기", "href": "view/ctx-travel-independent-social/23-clear-up-a-cultural-misunderstanding/prestudy", "level": "예습용"}, {"n": 6, "title": "적대적이지 않게 단호히 항의하기", "href": "view/ctx-travel-independent-social/24-complain-firmly-without-becoming-hostile/lecture", "level": "수업용"}, {"n": 6, "title": "적대적이지 않게 단호히 항의하기", "href": "view/ctx-travel-independent-social/24-complain-firmly-without-becoming-hostile/prestudy", "level": "예습용"}, {"n": 1, "title": "취소 상황에서 우선순위를 분명히 말하기", "href": "view/ctx-travel-complex-decisions/25-escalate-a-cancellation-with-clear-priorities/lecture", "level": "수업용"}, {"n": 1, "title": "취소 상황에서 우선순위를 분명히 말하기", "href": "view/ctx-travel-complex-decisions/25-escalate-a-cancellation-with-clear-priorities/prestudy", "level": "예습용"}, {"n": 2, "title": "보험을 위해 사건을 기록하기", "href": "view/ctx-travel-complex-decisions/26-document-an-incident-for-insurance/lecture", "level": "수업용"}, {"n": 2, "title": "보험을 위해 사건을 기록하기", "href": "view/ctx-travel-complex-decisions/26-document-an-incident-for-insurance/prestudy", "level": "예습용"}, {"n": 3, "title": "접근성 요구 사항을 분명히 요청하기", "href": "view/ctx-travel-complex-decisions/27-advocate-for-an-accessibility-requirement/lecture", "level": "수업용"}, {"n": 3, "title": "접근성 요구 사항을 분명히 요청하기", "href": "view/ctx-travel-complex-decisions/27-advocate-for-an-accessibility-requirement/prestudy", "level": "예습용"}, {"n": 4, "title": "상충하는 예약 정보를 해결하기", "href": "view/ctx-travel-complex-decisions/28-resolve-conflicting-booking-information/lecture", "level": "수업용"}, {"n": 4, "title": "상충하는 예약 정보를 해결하기", "href": "view/ctx-travel-complex-decisions/28-resolve-conflicting-booking-information/prestudy", "level": "예습용"}, {"n": 5, "title": "불완전한 정보로 안전 결정을 내리기", "href": "view/ctx-travel-complex-decisions/29-make-a-safety-decision-with-incomplete-information/lecture", "level": "수업용"}, {"n": 5, "title": "불완전한 정보로 안전 결정을 내리기", "href": "view/ctx-travel-complex-decisions/29-make-a-safety-decision-with-incomplete-information/prestudy", "level": "예습용"}, {"n": 6, "title": "복잡한 여행 후 유용한 조언하기", "href": "view/ctx-travel-complex-decisions/30-give-useful-advice-after-a-complicated-trip/lecture", "level": "수업용"}, {"n": 6, "title": "복잡한 여행 후 유용한 조언하기", "href": "view/ctx-travel-complex-decisions/30-give-useful-advice-after-a-complicated-trip/prestudy", "level": "예습용"}, {"n": 1, "title": "새 프로젝트에서 역할 소개하기", "href": "view/ctx-business-workplace-essentials/31-introduce-your-role-on-a-new-project/lecture", "level": "수업용"}, {"n": 1, "title": "새 프로젝트에서 역할 소개하기", "href": "view/ctx-business-workplace-essentials/31-introduce-your-role-on-a-new-project/prestudy", "level": "예습용"}, {"n": 2, "title": "통화 연결 문제 해결하기", "href": "view/ctx-business-workplace-essentials/32-repair-a-bad-connection-during-a-call/lecture", "level": "수업용"}, {"n": 2, "title": "통화 연결 문제 해결하기", "href": "view/ctx-business-workplace-essentials/32-repair-a-bad-connection-during-a-call/prestudy", "level": "예습용"}, {"n": 3, "title": "시차를 고려해 일정 잡기", "href": "view/ctx-business-workplace-essentials/33-schedule-across-time-zones/lecture", "level": "수업용"}, {"n": 3, "title": "시차를 고려해 일정 잡기", "href": "view/ctx-business-workplace-essentials/33-schedule-across-time-zones/prestudy", "level": "예습용"}, {"n": 4, "title": "올바른 파일을 요청하고 이유 설명하기", "href": "view/ctx-business-workplace-essentials/34-request-the-correct-file-and-explain-why/lecture", "level": "수업용"}, {"n": 4, "title": "올바른 파일을 요청하고 이유 설명하기", "href": "view/ctx-business-workplace-essentials/34-request-the-correct-file-and-explain-why/prestudy", "level": "예습용"}, {"n": 5, "title": "간결하게 진행 상황 보고하기", "href": "view/ctx-business-workplace-essentials/35-give-a-concise-progress-update/lecture", "level": "수업용"}, {"n": 5, "title": "간결하게 진행 상황 보고하기", "href": "view/ctx-business-workplace-essentials/35-give-a-concise-progress-update/prestudy", "level": "예습용"}, {"n": 6, "title": "기술적 장애 요인을 유용하게 보고하기", "href": "view/ctx-business-workplace-essentials/36-report-a-technical-blocker-usefully/lecture", "level": "수업용"}, {"n": 6, "title": "기술적 장애 요인을 유용하게 보고하기", "href": "view/ctx-business-workplace-essentials/36-report-a-technical-blocker-usefully/prestudy", "level": "예습용"}, {"n": 1, "title": "모든 일이 급할 때 우선순위 확인하기", "href": "view/ctx-business-projects-deadlines/37-confirm-priorities-when-everything-seems-urgent/lecture", "level": "수업용"}, {"n": 1, "title": "모든 일이 급할 때 우선순위 확인하기", "href": "view/ctx-business-projects-deadlines/37-confirm-priorities-when-everything-seems-urgent/prestudy", "level": "예습용"}, {"n": 2, "title": "업무 담당자 확인하기", "href": "view/ctx-business-projects-deadlines/38-clarify-who-owns-an-action/lecture", "level": "수업용"}, {"n": 2, "title": "업무 담당자 확인하기", "href": "view/ctx-business-projects-deadlines/38-clarify-who-owns-an-action/prestudy", "level": "예습용"}, {"n": 3, "title": "프로젝트 위험을 일찍 알리기", "href": "view/ctx-business-projects-deadlines/39-raise-a-project-risk-early/lecture", "level": "수업용"}, {"n": 3, "title": "프로젝트 위험을 일찍 알리기", "href": "view/ctx-business-projects-deadlines/39-raise-a-project-risk-early/prestudy", "level": "예습용"}, {"n": 4, "title": "현실적인 마감 협의하기", "href": "view/ctx-business-projects-deadlines/40-negotiate-a-realistic-deadline/lecture", "level": "수업용"}, {"n": 4, "title": "현실적인 마감 협의하기", "href": "view/ctx-business-projects-deadlines/40-negotiate-a-realistic-deadline/prestudy", "level": "예습용"}, {"n": 5, "title": "다음 단계와 함께 나쁜 소식 전하기", "href": "view/ctx-business-projects-deadlines/41-deliver-bad-news-with-a-next-step/lecture", "level": "수업용"}, {"n": 5, "title": "다음 단계와 함께 나쁜 소식 전하기", "href": "view/ctx-business-projects-deadlines/41-deliver-bad-news-with-a-next-step/prestudy", "level": "예습용"}, {"n": 6, "title": "실행 항목으로 프로젝트 논의 마무리하기", "href": "view/ctx-business-projects-deadlines/42-close-a-project-discussion-with-actions/lecture", "level": "수업용"}, {"n": 6, "title": "실행 항목으로 프로젝트 논의 마무리하기", "href": "view/ctx-business-projects-deadlines/42-close-a-project-discussion-with-actions/prestudy", "level": "예습용"}, {"n": 1, "title": "핵심을 확인하려고 끼어들기", "href": "view/ctx-business-meetings-decisions/43-interrupt-to-clarify-a-key-point/lecture", "level": "수업용"}, {"n": 1, "title": "핵심을 확인하려고 끼어들기", "href": "view/ctx-business-meetings-decisions/43-interrupt-to-clarify-a-key-point/prestudy", "level": "예습용"}, {"n": 2, "title": "다음으로 넘어가기 전 결정 요약하기", "href": "view/ctx-business-meetings-decisions/44-summarise-a-decision-before-moving-on/lecture", "level": "수업용"}, {"n": 2, "title": "다음으로 넘어가기 전 결정 요약하기", "href": "view/ctx-business-meetings-decisions/44-summarise-a-decision-before-moving-on/prestudy", "level": "예습용"}, {"n": 3, "title": "결론부터 추천안 제시하기", "href": "view/ctx-business-meetings-decisions/45-present-a-recommendation-up-front/lecture", "level": "수업용"}, {"n": 3, "title": "결론부터 추천안 제시하기", "href": "view/ctx-business-meetings-decisions/45-present-a-recommendation-up-front/prestudy", "level": "예습용"}, {"n": 4, "title": "아직 모르는 질문에 답하기", "href": "view/ctx-business-meetings-decisions/46-answer-a-question-when-you-do-not-know-yet/lecture", "level": "수업용"}, {"n": 4, "title": "아직 모르는 질문에 답하기", "href": "view/ctx-business-meetings-decisions/46-answer-a-question-when-you-do-not-know-yet/prestudy", "level": "예습용"}, {"n": 5, "title": "상급자에게 건설적으로 이견 말하기", "href": "view/ctx-business-meetings-decisions/47-disagree-with-a-senior-colleague-constructively/lecture", "level": "수업용"}, {"n": 5, "title": "상급자에게 건설적으로 이견 말하기", "href": "view/ctx-business-meetings-decisions/47-disagree-with-a-senior-colleague-constructively/prestudy", "level": "예습용"}, {"n": 6, "title": "논의를 결정으로 전환하기", "href": "view/ctx-business-meetings-decisions/48-turn-discussion-into-a-decision/lecture", "level": "수업용"}, {"n": 6, "title": "논의를 결정으로 전환하기", "href": "view/ctx-business-meetings-decisions/48-turn-discussion-into-a-decision/prestudy", "level": "예습용"}, {"n": 1, "title": "문제를 더 정확하게 다시 규정하기", "href": "view/ctx-business-negotiation-diplomacy/49-reframe-a-problem-more-accurately/lecture", "level": "수업용"}, {"n": 1, "title": "문제를 더 정확하게 다시 규정하기", "href": "view/ctx-business-negotiation-diplomacy/49-reframe-a-problem-more-accurately/prestudy", "level": "예습용"}, {"n": 2, "title": "조건부 제안하기", "href": "view/ctx-business-negotiation-diplomacy/50-make-a-conditional-proposal/lecture", "level": "수업용"}, {"n": 2, "title": "조건부 제안하기", "href": "view/ctx-business-negotiation-diplomacy/50-make-a-conditional-proposal/prestudy", "level": "예습용"}, {"n": 3, "title": "너무 일찍 확약하지 않기", "href": "view/ctx-business-negotiation-diplomacy/51-avoid-committing-too-early/lecture", "level": "수업용"}, {"n": 3, "title": "너무 일찍 확약하지 않기", "href": "view/ctx-business-negotiation-diplomacy/51-avoid-committing-too-early/prestudy", "level": "예습용"}, {"n": 4, "title": "트레이드오프 설명하기", "href": "view/ctx-business-negotiation-diplomacy/52-explain-a-trade-off/lecture", "level": "수업용"}, {"n": 4, "title": "트레이드오프 설명하기", "href": "view/ctx-business-negotiation-diplomacy/52-explain-a-trade-off/prestudy", "level": "예습용"}, {"n": 5, "title": "인정한 뒤 반론하기", "href": "view/ctx-business-negotiation-diplomacy/53-acknowledge-then-push-back/lecture", "level": "수업용"}, {"n": 5, "title": "인정한 뒤 반론하기", "href": "view/ctx-business-negotiation-diplomacy/53-acknowledge-then-push-back/prestudy", "level": "예습용"}, {"n": 6, "title": "공통점 찾기", "href": "view/ctx-business-negotiation-diplomacy/54-find-common-ground/lecture", "level": "수업용"}, {"n": 6, "title": "공통점 찾기", "href": "view/ctx-business-negotiation-diplomacy/54-find-common-ground/prestudy", "level": "예습용"}, {"n": 1, "title": "성과 패턴 짚어 보기", "href": "view/ctx-business-leadership-high-stakes/55-address-a-performance-pattern/lecture", "level": "수업용"}, {"n": 1, "title": "성과 패턴 짚어 보기", "href": "view/ctx-business-leadership-high-stakes/55-address-a-performance-pattern/prestudy", "level": "예습용"}, {"n": 2, "title": "높은 기준의 피드백 주기", "href": "view/ctx-business-leadership-high-stakes/56-give-high-standard-feedback/lecture", "level": "수업용"}, {"n": 2, "title": "높은 기준의 피드백 주기", "href": "view/ctx-business-leadership-high-stakes/56-give-high-standard-feedback/prestudy", "level": "예습용"}, {"n": 3, "title": "불확실성을 명확하게 전달하기", "href": "view/ctx-business-leadership-high-stakes/57-communicate-uncertainty-clearly/lecture", "level": "수업용"}, {"n": 3, "title": "불확실성을 명확하게 전달하기", "href": "view/ctx-business-leadership-high-stakes/57-communicate-uncertainty-clearly/prestudy", "level": "예습용"}, {"n": 4, "title": "이해관계자에 맞게 메시지 조정하기", "href": "view/ctx-business-leadership-high-stakes/58-adapt-a-message-for-stakeholders/lecture", "level": "수업용"}, {"n": 4, "title": "이해관계자에 맞게 메시지 조정하기", "href": "view/ctx-business-leadership-high-stakes/58-adapt-a-message-for-stakeholders/prestudy", "level": "예습용"}, {"n": 5, "title": "차분하게 위기 상황 전달하기", "href": "view/ctx-business-leadership-high-stakes/59-deliver-a-calm-crisis-update/lecture", "level": "수업용"}, {"n": 5, "title": "차분하게 위기 상황 전달하기", "href": "view/ctx-business-leadership-high-stakes/59-deliver-a-calm-crisis-update/prestudy", "level": "예습용"}, {"n": 6, "title": "경영진 제언 전달하기", "href": "view/ctx-business-leadership-high-stakes/60-make-an-executive-recommendation/lecture", "level": "수업용"}, {"n": 6, "title": "경영진 제언 전달하기", "href": "view/ctx-business-leadership-high-stakes/60-make-an-executive-recommendation/prestudy", "level": "예습용"}]}, "page": {"title": {"ko": "커리큘럼 카탈로그 · PODO 영어", "ja": "カリキュラム・カタログ · PODO 英語", "en": "Curriculum catalog · PODO English"}, "kicker": {"ko": "PODO · 영어 커리큘럼", "ja": "PODO · 英語カリキュラム", "en": "PODO · English curriculum"}, "lead": {"ko": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 수업에서 열리는 파일 그대로 볼 수 있습니다.", "ja": "いま授業で実際に開く教材です。トラックを一つ選ぶと、その中のすべてのコースとレッスンを、授業用・予習用の教材まで、授業で開くファイルのまま見ることができます。", "en": "These are the decks that actually open in class. Pick a track to see every course and lesson inside it, including each lesson's in-class and prep decks, exactly as they open in class."}, "h1": {"ko": "개 과가<br>지금 수업에서 열립니다", "ja": "レッスンが<br>いま授業で開きます", "en": "lessons are open<br>in class right now"}, "trackCount": 4, "stats": [[4, "tracksH"], [47, "unitWord"], [850, "deckWord"]], "foot": {"ko": "PODO · 영어 커리큘럼 — 일본어 학습자를 위한 영어 코스", "ja": "PODO · 英語カリキュラム — 日本語話者のための英語コース", "en": "PODO · English curriculum — English courses for Japanese speakers"}, "home": "../../", "nav": [{"label": "한국어", "href": "../../korean-jp/", "current": false}, {"label": "English", "href": "../../english-jp/", "current": true}]}, "i18n": {"_note": "공개 카탈로그의 UI 문자열. 세 로케일이 한 벌로 나가고 브라우저에서 고른다 — 페이지를 세 번 굽지 않는다. 교재의 문장(목표·질문·패턴)은 여기 없다: 그건 덱이 원본이고 build-catalog.py 가 덱에서 읽는다.", "locale": {"ko": {"ko": "한국어", "ja": "韓国語", "en": "Korean"}, "ja": {"ko": "일본어", "ja": "日本語", "en": "Japanese"}, "en": {"ko": "영어", "ja": "英語", "en": "English"}, "label": {"ko": "표시 언어", "ja": "表示言語", "en": "Display language"}}, "ui": {"skip": {"ko": "본문으로 건너뛰기", "ja": "本文へスキップ", "en": "Skip to content"}, "homeKicker": {"ko": "커리큘럼 라이브러리", "ja": "カリキュラム・ライブラリ", "en": "Curriculum library"}, "homeH1": {"ko": "일본어 화자를 위한 말하기 커리큘럼", "ja": "日本語話者のためのスピーキング・カリキュラム", "en": "Speaking curricula for Japanese learners."}, "homeLead": {"ko": "언어를 하나 골라 학습 순서와 트랙, 준비된 레슨 덱을 살펴보세요.", "ja": "言語を選ぶと、学習の順序・トラック・公開済みのレッスンデッキを確認できます。", "en": "Choose a language to inspect its learning sequence, curriculum tracks, and available lesson decks."}, "chooseLang": {"ko": "학습할 언어 고르기", "ja": "学習する言語を選ぶ", "en": "Choose a target language"}, "ladder": {"ko": "레벨 사다리", "ja": "レベルの階段", "en": "Level ladder"}, "ladderP": {"ko": "각 트랙이 어느 레벨 구간을 덮는지, 그 구간에 몇 과가 놓여 있는지.", "ja": "各トラックがどのレベル帯をカバーし、そこに何レッスンあるか。", "en": "Which level range each track covers, and how many lessons sit in it."}, "readyDecks": {"ko": "완성된 레슨 덱", "ja": "公開済みのレッスンデッキ", "en": "Ready lesson decks"}, "readyDecksP": {"ko": "실제 수업 화면이 준비된 과만 모았습니다. 새 탭에서 열립니다.", "ja": "実際の授業画面が用意されたレッスンだけを集めています。新しいタブで開きます。", "en": "Only lessons whose real class screen is ready. Opens in a new tab."}, "overview": {"ko": "한눈에 보기", "ja": "ひと目で見る", "en": "At a glance"}, "noDev": {"ko": "개발 안 함", "ja": "開発しない", "en": "Not in development"}, "noDevP": {"ko": "계획 참고용 — 이 트랙은 현재 개발하지 않으며, 레슨 덱 제작도 승인되지 않았습니다.", "ja": "計画の参考用 — このトラックは現在開発しておらず、デッキ制作も承認されていません。", "en": "For planning reference — this track is not in development and no decks are approved."}, "expandUnits": {"ko": "단원 모두 펼치기", "ja": "ユニットをすべて開く", "en": "Expand all units"}, "expandAll": {"ko": "과까지 모두 펼치기", "ja": "レッスンまですべて開く", "en": "Expand every lesson"}, "noResults": {"ko": "검색 결과가 없습니다.", "ja": "検索結果がありません。", "en": "No results."}, "generated": {"ko": "이 페이지는 생성물입니다.", "ja": "このページは生成物です。", "en": "This page is generated."}, "tracksH": {"ko": "학습 트랙", "ja": "学習トラック", "en": "learning tracks"}, "tracksP": {"ko": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.", "ja": "カードを押すと、そのトラックの全目次に入ります。", "en": "Tap a card to open that track's full contents."}, "unitWord": {"ko": "코스", "ja": "コース", "en": "courses"}, "deckWord": {"ko": "레슨 교재", "ja": "レッスン教材", "en": "lesson decks"}, "lessonsOpen": {"ko": "개 과가 지금 수업에서 열립니다", "ja": "レッスンが、いま授業で開きます", "en": "lessons are open in class right now"}, "openDeck": {"ko": "덱 열기", "ja": "デッキを開く", "en": "Open deck"}, "catalog": {"ko": "카탈로그", "ja": "カタログ", "en": "Catalog"}, "groupCan": {"ko": "끝내면 할 수 있는 것", "ja": "終えたらできること", "en": "What you can do at the end"}, "cast": {"ko": "등장인물", "ja": "登場人物", "en": "Cast"}, "allLevels": {"ko": "전 레벨", "ja": "全レベル", "en": "All levels"}, "keepAdding": {"ko": "계속 추가", "ja": "追加中", "en": "Still growing"}, "planOnly": {"ko": "계획만 있음 · 현재 개발하지 않음", "ja": "計画のみ · 現在は開発していません", "en": "Planned only — not in development"}, "openCatalog": {"ko": "카탈로그 열기", "ja": "カタログを開く", "en": "Open catalog"}, "growing": {"ko": "계속 추가 중", "ja": "追加中", "en": "Still growing"}, "live": {"ko": "운영 중", "ja": "提供中", "en": "Live"}, "countTracks": {"ko": "트랙", "ja": "トラック", "en": "tracks"}, "countCourses": {"ko": "코스", "ja": "コース", "en": "courses"}, "countLessons": {"ko": "과", "ja": "レッスン", "en": "lessons"}, "lessonWord": {"ko": "과", "ja": "レッスン", "en": "lessons"}, "deckWordShort": {"ko": "교재", "ja": "教材", "en": "decks"}}, "detail": {"learnThis": {"ko": "이번에 배우는 것", "ja": "今回学ぶこと", "en": "What you learn"}, "readPractice": {"ko": "읽기 연습", "ja": "読む練習", "en": "Reading practice"}, "readGoal": {"ko": "읽기 목표", "ja": "読みのゴール", "en": "Reading goal"}, "talkGoal": {"ko": "대화 목표", "ja": "会話のゴール", "en": "Conversation goal"}, "fixPoint": {"ko": "교정 포인트", "ja": "直すポイント", "en": "Correction focus"}, "lessonGoal": {"ko": "이 과의 목표", "ja": "このレッスンのゴール", "en": "Goal of this lesson"}, "deckGoal": {"ko": "덱이 말하는 오늘의 목표", "ja": "デッキが示す今日のゴール", "en": "Today's goal, as the deck states it"}, "corePatterns": {"ko": "핵심 패턴", "ja": "コアパターン", "en": "Core patterns"}, "howToFix": {"ko": "고치는 법", "ja": "直し方", "en": "How to fix it"}, "minPairs": {"ko": "최소 대립쌍", "ja": "ミニマルペア", "en": "Minimal pairs"}, "learning": {"ko": "배우는 것", "ja": "学ぶこと", "en": "What is taught"}, "saidAndRule": {"ko": "표현과 규칙", "ja": "表現とルール", "en": "Phrases and rules"}, "saidNow": {"ko": "바로 쓰는 표현", "ja": "すぐ使う表現", "en": "Ready-made phrases"}, "rule": {"ko": "규칙", "ja": "ルール", "en": "Rule"}, "noDetail": {"ko": "이 과의 상세는 목차 원문에 있습니다.", "ja": "このレッスンの詳細は目次の原文にあります。", "en": "Details for this lesson live in the source contents."}, "questions": {"ko": "오늘의 질문", "ja": "今日の質問", "en": "Today's questions"}, "questionsN": {"ko": "질문 {n}개", "ja": "質問 {n} 問", "en": "{n} questions"}, "followUps": {"ko": "이어서 물어보기", "ja": "続けて聞く", "en": "Follow-ups"}}, "level": {"왕초급": {"ko": "왕초급", "ja": "超入門", "en": "Starter"}, "초급": {"ko": "초급", "ja": "初級", "en": "Beginner"}, "초중급": {"ko": "초중급", "ja": "初中級", "en": "Upper beginner"}, "중급": {"ko": "중급", "ja": "中級", "en": "Intermediate"}, "중고급": {"ko": "중고급", "ja": "中上級", "en": "Upper intermediate"}, "고급": {"ko": "고급", "ja": "上級", "en": "Advanced"}}}};
+const T = DATA.track, LEVELS = DATA.levels;
+
+/* 표시 언어. 한 벌로 구운 페이지가 세 언어를 모두 답한다 — URL 이 언어에 따라
+   갈라지지 않아야 링크 하나가 누구에게나 같은 곳을 가리킨다.
+   교재의 문장(질문·목표·패턴)은 번역하지 않는다: 그건 배우는 대상 그 자체다.
+   전환되는 것은 화면의 말과, 덱이 이미 들고 있는 일본어 받침이다. */
+const I18N = DATA.i18n, LOCALES = ["ko", "ja", "en"];
+const LS_KEY = "podo-catalog-locale";
+const DEFAULT_LOCALE = "ja";
+/* 브라우저 언어를 보지 않는다. 지금 이 커리큘럼을 배우는 사람은 전부 일본어 화자라,
+   기기 설정이 영어인 일본인에게 영어를 내밀 이유가 없다. 시장이 늘면 그때 다시 본다. */
+function initialLocale() {
+  try { const v = localStorage.getItem(LS_KEY); if (LOCALES.includes(v)) return v; } catch (e) {}
+  return DEFAULT_LOCALE;
+}
+let L = initialLocale();
+/** i18n 표에서 한 줄. 없으면 한국어로 떨어진다 — 빈칸을 보여 주지 않는다. */
+const t = (sec, key) => ((I18N[sec] || {})[key] || {})[L] || ((I18N[sec] || {})[key] || {}).ko || "";
+/** {ko,ja,en} 을 든 값에서 지금 언어의 것. 없으면 있는 것 아무거나. */
+const loc = o => !o ? "" : (o[L] || o.ko || o.en || o.ja || "");
+/** 레벨 눈금 이름. 표에 없으면(영어 코스의 CEFR) 그대로 쓴다. */
+const lvName = lv => ((I18N.level || {})[lv] || {})[L] || lv;
+/** 일본어 받침은 일본어로 볼 때만 보여 준다. 한국어·영어 번역은 아직 없고,
+    없는 것을 있는 척하지 않는다. */
+const showJa = () => L === "ja";
+/* 짙은 두 칸 위에서는 글씨가 흰색이어야 읽힌다. */
+const isDark = lv => DATA.ramp[lv] >= 5;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------- 언어마다 다른 자리 ----------
+   한 템플릿이 korean/ 과 english/ 를 함께 그린다. 언어 이름이 들어가는 자리는 전부
+   DATA.page 에서 온다. */
+{
+  const P = DATA.page;
+  if (P.title) document.title = P.title;
+  document.getElementById("brand").href = P.home;
+  document.getElementById("nav").innerHTML = P.nav.map(n =>
+    `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}"${
+      n.current ? ` aria-current="page"` : ""}>${esc(n.label)}</a>`).join("");
+}
+
+const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
+
+document.documentElement.style.setProperty("--ac", T.accent);
+document.documentElement.style.setProperty("--tint", T.tint);
+document.getElementById("ttl").textContent = `${T.ko} · PODO 한국어 커리큘럼`;
+
+/* ---------- 탭 ---------- */
+document.getElementById("tabs").innerHTML =
+  `<a class="tab home" href="../">← 카탈로그</a>` +
+  DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}" href="${esc(n.id)}"${n.id === T.id ? ' aria-current="page"' : ""}
+    style="--ac:${n.accent}"><em>${String(n.no).padStart(2, "0")}</em>${esc(n.ko)}</a>`).join("");
+
+/* ---------- 1단 ---------- */
+{
+  const span = T.span.length ? (T.span.length === 1 ? T.span[0] : `${T.span[0]} — ${T.span[T.span.length - 1]}`) : "전 레벨";
+  const flag = T.status === "plan" ? " · 계획만 있음 · 현재 개발하지 않음" : T.status === "open" ? " · 계속 추가" : "";
+  document.getElementById("hno").textContent = `트랙 ${String(T.no).padStart(2, "0")} · ${span}${flag}`;
+  document.getElementById("h1").setAttribute("aria-label", `${T.ko} — ${T.en}`);
+  document.getElementById("h1").innerHTML = `${esc(T.ko)}<span aria-hidden="true">${esc(T.en)}</span>`;
+  document.getElementById("hd").textContent = loc(T.desc);
+  document.getElementById("figs").innerHTML =
+    T.stats.map(s => `<div><b>${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join("");
+
+  const used = LEVELS.filter(lv => T.dist[lv]);
+  document.querySelector(".panel").classList.toggle("single", used.length === 1);
+  document.getElementById("distwrap").hidden = used.length === 1;
+  document.getElementById("distwrap").innerHTML = used.length
+    ? `<div class="dist">${used.map(lv => `<i style="flex:${T.dist[lv]};background:${lvColor(lv)}"
+        title="${lv} ${T.dist[lv]}${esc(T.lessonWord)}"></i>`).join("")}</div>
+       <div class="dist-legend">${used.map(lv => `<span><i style="background:${lvColor(lv)}"></i>${lv} <b>${T.dist[lv]}</b></span>`).join("")}</div>`
+    : `<div class="dist-legend"><span>${T.status === "plan"
+        ? "계획 목차이며 현재 사용할 수 있는 레슨 덱은 없습니다."
+        : "특정 레벨에 묶이지 않습니다 — 튜터가 문제를 들은 시점에 한 과씩 꺼내 씁니다."}</span></div>`;
+
+  document.getElementById("q").placeholder = `${T.lessonWord}·패턴·표현 검색`;
+  document.getElementById("expandUnits").textContent = `${T.unitWord} 모두 펼치기`;
+  document.getElementById("expandAll").textContent = `${T.lessonWord}까지 모두 펼치기`;
+  document.body.classList.toggle("plan-track", T.status === "plan");
+  document.getElementById("plan-banner").hidden = T.status !== "plan";
+}
+
+{
+  const made = (T.decks || []).length;
+  document.getElementById("band").innerHTML =
+    `<h2 id="curriculum-title">${T.status === "plan" ? "계획 목차" : "커리큘럼"}</h2>
+     <p>${T.unitCount || T.groups.length}개 ${esc(T.unitWord)}${made ? ` · 덱 ${made}` : ""}</p>`;
+}
+
+const usedLevels = LEVELS.filter(lv => T.dist[lv]);
+document.getElementById("levelbar").hidden = usedLevels.length < 2;
+document.getElementById("levelbar").innerHTML =
+  `<span class="lbl" style="margin-right:4px">레벨</span>` +
+  usedLevels.map(lv => `<button class="chip lv" type="button" data-lv="${lv}" aria-pressed="false">
+    <span class="dot" style="background:${lvColor(lv)}"></span>${lv}</button>`).join("");
+
+/* ---------- 3·4·5단 ---------- */
+function chips(l) {
+  const p = (l.chips || []).slice(0, 2).map(c =>
+    `<span class="pat" title="${esc(c)}">${esc(c.replace(/\s+\(.*$/, "").trim() || c)}</span>`);
+  if (l.refs && l.refs.length) p.push(`<span class="pat ref">핵심 ${l.refs[0]}</span>`);
+  return p.join(`<span class="sep">·</span>`);
+}
+
+/** 문장을 그대로 쓰되, 배우는 조각에만 mark 를 씌운다. spans 는 빌드 때 계산된다. */
+function marked(sentence, spans) {
+  if (!spans || !spans.length) return esc(sentence);
+  let out = "", last = 0;
+  for (const [a, b] of spans) {
+    out += esc(sentence.slice(last, a)) + "<mark>" + esc(sentence.slice(a, b)) + "</mark>";
+    last = b;
+  }
+  return out + esc(sentence.slice(last));
+}
+
+/** 한글 학습 항목 안의 낱자 묶음만 크게 보여 준다. 설명은 그대로 두어 규칙의 맥락을 잃지 않는다. */
+function markedJamo(text) {
+  return esc(text).replace(/[ㄱ-ㅎㅏ-ㅣ](?:[\s＋/·–→]*[ㄱ-ㅎㅏ-ㅣ])*/g,
+    chars => `<strong class="jamo">${chars}</strong>`);
+}
+
+/** 펼친 과는 라벨 붙은 칸 셋으로 이루어진다 — 무엇을 할 수 있게 되는가,
+    무엇을 배우는가, 그리고 그것을 받쳐 주는 말. 트랙마다 칸의 이름만 달라진다. */
+function detail(l) {
+  const fields = [];
+  const isHangul = T.id === "1-hangul";
+
+  // 한글에서는 배울 글자·규칙이 본문이고, 읽을 수 있는 단어는 그 결과를 확인하는 예시다.
+  if (isHangul && l.chips && l.chips.length) {
+    fields.push({kind: "hangul-core", label: t("detail","learnThis"),
+      body: `<div class="hangul-focus">${l.chips.map(c =>
+        `<div class="hangul-focus-item"><span>${markedJamo(c)}</span></div>`).join("")}</div>`});
+  }
+  if (isHangul && l.can) {
+    const words = l.can.split(" · ").map(w => w.trim()).filter(Boolean);
+    fields.push({kind: "hangul-practice", label: t("detail","readPractice"),
+      body: `<div class="hangul-practice">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`});
+  }
+
+  // ① 이 과의 약속
+  if (l.can && !isHangul) {
+    const words = l.can.split(" · ").map(w => w.trim()).filter(Boolean);
+    const listy = words.length >= 3 && words.every(w => w.length <= 7);
+    const goalLabel = l.canLabel === "읽을 수 있다" ? t("detail","readGoal")
+      : l.canLabel === "이야기한다" ? t("detail","talkGoal")
+      : l.canLabel === "일본어의 습관" ? t("detail","fixPoint") : t("detail","lessonGoal");
+    fields.push({kind: "goal", label: goalLabel, body: listy
+      ? `<div class="words">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`
+      : `<p class="goal">${esc(l.can)}</p>`});
+  }
+
+  // ② 배우는 것 — 패턴이 있으면 예문 안에서 짚어 주고, 없으면 이름만 늘어놓는다
+  const ps = (l.pats || []).filter(p => p.ex || p.pat);
+  if (ps.length) {
+    fields.push({kind: "patterns", label: t("detail","corePatterns"), body: `<div class="pats">` + ps.map(p => `<div class="pcard">
+      ${p.ex ? `<p class="sent">${marked(p.ex, p.spans)}</p>` : ""}
+      ${p.reply ? `<p class="reply">${esc(p.reply)}</p>` : ""}
+      <div class="pmeta"><span class="pname">${esc(p.pat)}</span>
+        ${p.gloss ? `<span class="pgloss">${esc(p.gloss)}</span>` : ""}</div></div>`).join("") + `</div>`});
+  } else if (l.fix) {
+    fields.push({kind: "goal", label: t("detail","howToFix"), body: `<p class="goal">${esc(l.fix)}</p>`});
+  }
+  if (l.chips && l.chips.length && !ps.length && !isHangul) {
+    fields.push({kind: "items", label: l.fix ? t("detail","minPairs") : t("detail","learning"),
+      body: `<div class="said">${l.chips.map(c => `<span>${esc(c)}</span>`).join("")}</div>`});
+  }
+
+  // ③ 받쳐 주는 말 — 통째로 외워 쓰는 표현과, 딱 한 줄짜리 규칙
+  const said = (l.notes || []).find(n => n.k === "표현");
+  const rule = (l.notes || []).find(n => n.k === "문법");
+  if (said || rule) {
+    // 트랙마다 구분자가 다르다: 핵심은 ·, 상황별은 쉼표. 쉼표로도 나누되 · 로 갈린
+    // 뒤에는 건드리지 않는다 — "아, 그래요?" 처럼 쉼표를 품은 한 덩어리가 있다.
+    let ws = [];
+    if (said) {
+      ws = said.v.split(/\s*·\s*/).filter(Boolean);
+      if (ws.length === 1) ws = ws[0].split(/\s*,\s*/).filter(Boolean);
+    }
+    fields.push({kind: "support", label: said && rule ? t("detail","saidAndRule") : said ? t("detail","saidNow") : t("detail","rule"),
+      body: (ws.length ? `<div class="said">${ws.map(w => `<span>${esc(w)}</span>`).join("")}</div>` : "")
+      + (rule ? `<p class="rule">${esc(rule.v)}</p>` : "")});
+  }
+
+  // ④ 덱이 스스로 말하는 오늘의 목표. canDo 를 대신하지 않고 옆에 선다 —
+  //    canDo 는 커리큘럼이 적은 목표, 이쪽은 학습자가 덱에서 실제로 읽는 문장이다.
+  if (l.goal && (l.goal.t || l.goal.ja)) {
+    fields.push({kind: "deckgoal", label: t("detail","deckGoal"), body:
+      (l.goal.t ? `<p class="goal">${esc(l.goal.t)}</p>` : "")
+      + (showJa() && l.goal.ja ? `<p class="goal-ja">${esc(l.goal.ja)}</p>` : "")});
+  }
+
+  // ⑤ 프리토킹 과가 그날 실제로 묻는 것 전부. 덱을 열지 않고도 주제가 맞는지
+  //    판단할 수 있어야 이 트랙의 목차가 의미를 갖는다 — 문법이 아니라 질문이
+  //    그 과의 내용이기 때문이다.
+  if (l.qs && l.qs.length) {
+    fields.push({kind: "questions",
+      label: `${t("detail","questions")} · ${t("detail","questionsN").replace("{n}", l.qs.length)}`,
+      body: `<ol class="qs">` + l.qs.map(q => `<li class="qitem">
+        ${q.n ? `<span class="qn">${esc(q.n)}</span>` : ""}
+        ${q.t ? `<p class="qt">${esc(q.t)}</p>` : ""}
+        ${showJa() && q.ja ? `<p class="qja">${esc(q.ja)}</p>` : ""}
+        ${(q.f && q.f.length) ? `<ul class="qf" aria-label="${esc(t("detail","followUps"))}">`
+            + q.f.map(x => `<li>${esc(x)}</li>`).join("") + `</ul>` : ""}
+      </li>`).join("") + `</ol>`});
+  }
+
+  if (!fields.length) return `<p class="scene">${esc(t("detail","noDetail"))}</p>`;
+  return (l.scene ? `<p class="scene">${esc(l.scene)}</p>` : "")
+    + fields.map(f => `<section class="field field-${f.kind}"><span class="lbl">${esc(f.label)}</span>${f.body}</section>`).join("");
+}
+
+function lessonRow(l, groupIndex, lessonIndex) {
+  const c = chips(l);
+  const firstLabel = `${t("ui","lessonWord")} 1`;
+  const sub = l.sub === firstLabel ? "" : l.sub || (c ? "" : l.can);
+  const firstTag = l.first ? `<span class="first-tag">${esc(firstLabel)}</span>` : "";
+  const no = String(l.n).padStart(2, "0");
+  // 덱이 있으면 그 과에서 곧장 수업 화면으로 나간다 — 카탈로그를 잃지 않도록 새 탭에서.
+  const variants = l.decks || (l.deck ? [{href:l.deck, level:""}] : []);
+  const showLevels = (l.levels || []).length > 1 || variants.length > 1;
+  const deck = variants.length ? `<div class="deck-links">${variants.map(d =>
+    `<a class="deck" href="../${esc(d.href)}" target="_blank" rel="noopener"
+       title="${esc(l.title)}${d.level ? ` · ${esc(d.level)}` : ""} 덱을 새 탭에서 엽니다">${showLevels && d.level ? esc(d.level) : esc(t("ui","openDeck"))} <span class="ext">↗</span></a>`
+  ).join("")}</div>` : "";
+  const detailId = `group-${groupIndex + 1}-lesson-${lessonIndex + 1}-detail`;
+  return `<div class="lesson" data-text="${esc([l.title, l.sub, l.can, l.scene, (l.chips||[]).join(" "), (l.notes||[]).map(n=>n.v).join(" ")].join(" ").toLowerCase())}">
+    <div class="lrow">
+      <button class="lrow-btn" type="button" aria-expanded="false" aria-controls="${detailId}">
+        <span class="lno">${esc(t("ui","lessonWord"))} ${no}</span>
+        <span class="ltitle">${esc(loc(l.titles) || l.title)}${sub ? ` <em>— ${esc(sub)}</em>` : ""}${firstTag}</span>
+        <span class="lchips">${c}</span>
+      </button>
+      ${deck}
+    </div>
+    <div class="ldetail" id="${detailId}">${detail(l)}</div>
+  </div>`;
+}
+
+function group(g, index) {
+  // 단원 머리에는 "이 단원이 무엇인가"만 둔다.
+  //   · 패턴 목록은 바로 아래 과 목록이 이미 한 줄씩 들고 있다 — 같은 것을 두 번 적는 셈이었다
+  //   · 단원 설명문은 이 커리큘럼을 왜 이렇게 짰는지에 대한 메모라, 훑어보는 자리에 놓일 글이 아니다
+  // 둘 다 지우면 남는 것은 이야기와 성과, 그리고 과 목록뿐이다.
+  let head = "";
+  if (g.work) {
+    head += `<p class="story"><b>《${esc(g.work)}》</b> ${esc(g.story)}
+      ${g.cast ? `<span class="cast">${esc(t("ui","cast"))} — ${esc(g.cast)}</span>` : ""}</p>`;
+  }
+  if (g.blurb && (g.work || T.id === "3-contextual-korean")) {
+    head += `<p class="gcan"><b class="lbl">${esc(t("ui","groupCan"))}</b>${esc(g.blurb)}</p>`;
+  }
+
+  const bodyId = `group-${index + 1}-body`;
+  const groupLevels = g.levels || (g.level ? [g.level] : []);
+  const levelTags = groupLevels.map(lv =>
+    `<span class="lv-tag"><i style="background:${lvColor(lv)}"></i>${esc(lvName(lv))}</span>`).join("");
+  return `<div class="group" data-lv="${esc(groupLevels.join(" "))}">
+    <button class="ghead" type="button" aria-expanded="false" aria-controls="${bodyId}">
+      <span class="gnum">${esc(g.label)}</span>
+      <span class="gtitle">${esc(g.title)}${g.subtitle ? `<em>${esc(g.subtitle)}</em>` : ""}</span>
+      <span class="gmeta">${g.peak ? `<span>핵심 ${g.peak}과까지</span>` : ""}${g.form ? `<span>${esc(g.form)}</span>` : ""}
+        ${levelTags}
+        <span>${g.lessons.length} ${esc(t("ui","lessonWord"))}</span><span class="caret"></span></span>
+    </button>
+    <div class="gbody" id="${bodyId}">
+      ${head}
+      <div class="lessons">${g.lessons.map((l, lessonIndex) => lessonRow(l, index, lessonIndex)).join("")}</div>
+    </div>
+  </div>`;
+}
+
+const $groups = document.getElementById("groups");
+
+/** 언어가 바뀌면 목록을 다시 그린다. 펼쳐 둔 자리를 자리 번호로 기억했다가 되돌려
+    준다 — 언어를 바꿨다고 보던 곳을 잃으면 전환이 벌처럼 느껴진다. */
+function redraw() {
+  const openG = [...$groups.querySelectorAll(".group")].map(el => el.classList.contains("open"));
+  const openL = [...$groups.querySelectorAll(".lesson")].map(el => el.classList.contains("open"));
+  $groups.innerHTML = T.groups.map(group).join("");
+  $groups.querySelectorAll(".group").forEach((el, i) => {
+    if (openG[i]) { el.classList.add("open"); el.querySelector(".ghead").setAttribute("aria-expanded", "true"); }
+  });
+  $groups.querySelectorAll(".lesson").forEach((el, i) => {
+    if (openL[i]) { el.classList.add("open"); el.querySelector(".lrow-btn").setAttribute("aria-expanded", "true"); }
+  });
+  if (typeof apply === "function") apply();     // 검색·레벨 필터를 다시 먹인다
+}
+
+$groups.innerHTML = T.groups.map(group).join("");
+
+/* ---------- 이전 · 다음 트랙 ---------- */
+{
+  const i = DATA.nav.findIndex(n => n.id === T.id);
+  const prev = DATA.nav[i - 1], next = DATA.nav[i + 1];
+  document.getElementById("nextrack").innerHTML =
+    (prev ? `<a href="${esc(prev.id)}">← ${esc(loc({ko:prev.ko, ja:prev.ja, en:prev.en}) || prev.ko)}</a>` : `<a href="../">← ${esc(t("ui","catalog"))}</a>`) +
+    (next ? `<a href="${esc(next.id)}">${esc(loc({ko:next.ko, ja:next.ja, en:next.en}) || next.ko)} →</a>` : `<a href="../">${esc(t("ui","catalog"))} →</a>`);
+}
+
+/* ---------- behaviour ---------- */
+$groups.addEventListener("click", e => {
+  if (e.target.closest(".deck")) return;          // 덱 링크는 펼치기가 아니라 나가기다
+  const head = e.target.closest(".ghead");
+  if (head) {
+    const open = head.parentElement.classList.toggle("open");
+    head.setAttribute("aria-expanded", open);
+    return;
+  }
+  const row = e.target.closest(".lrow-btn");
+  if (row) {
+    const open = row.closest(".lesson").classList.toggle("open");
+    row.setAttribute("aria-expanded", open);
+  }
+});
+
+const $q = document.getElementById("q");
+const $hits = document.getElementById("hits");
+const $empty = document.getElementById("empty");
+let activeLevels = new Set();
+
+function apply() {
+  const q = $q.value.trim().toLowerCase();
+  let hits = 0, shown = 0;
+  document.querySelectorAll(".group").forEach(g => {
+    const groupLevels = new Set(g.dataset.lv.split(" ").filter(Boolean));
+    const lvOk = !activeLevels.size || [...activeLevels].some(lv => groupLevels.has(lv));
+    let inGroup = 0;
+    g.querySelectorAll(".lesson").forEach(l => {
+      const ok = lvOk && (!q || l.dataset.text.includes(q));
+      l.classList.toggle("hide", !ok);
+      if (ok) inGroup++;
+    });
+    g.classList.toggle("hide", inGroup === 0);
+    if (inGroup) shown++;
+    hits += inGroup;
+    if (q) {
+      g.classList.add("open");
+      g.querySelector(".ghead")?.setAttribute("aria-expanded", "true");
+    }
+  });
+  const filtering = q || activeLevels.size;
+  $hits.textContent = filtering ? `${hits}${T.lessonWord} · ${shown}${T.unitWord}` : "";
+  $empty.classList.toggle("hide", !(filtering && hits === 0));
+
+  if (q) {
+    document.querySelectorAll(".lesson:not(.hide) .ltitle").forEach(el => {
+      const t = el.textContent, i = t.toLowerCase().indexOf(q);
+      if (i < 0) return;
+      el.innerHTML = esc(t.slice(0, i)) + "<mark>" + esc(t.slice(i, i + q.length)) + "</mark>" + esc(t.slice(i + q.length));
+    });
+  }
+}
+
+$q.addEventListener("input", () => {
+  document.querySelectorAll(".ltitle mark").forEach(m => { const p = m.parentElement; p.innerHTML = p.textContent; });
+  apply();
+});
+
+document.getElementById("levelbar").addEventListener("click", e => {
+  const b = e.target.closest(".lv");
+  if (!b) return;
+  const lv = b.dataset.lv;
+  activeLevels.has(lv) ? activeLevels.delete(lv) : activeLevels.add(lv);
+  b.setAttribute("aria-pressed", activeLevels.has(lv));
+  apply();
+});
+
+const $units = document.getElementById("expandUnits");
+const $all = document.getElementById("expandAll");
+
+function setOpen(units, lessons) {
+  document.querySelectorAll(".group").forEach(g => {
+    g.classList.toggle("open", units);
+    g.querySelector(".ghead")?.setAttribute("aria-expanded", units);
+  });
+  document.querySelectorAll(".lesson").forEach(l => {
+    l.classList.toggle("open", lessons);
+    l.querySelector(".lrow-btn")?.setAttribute("aria-expanded", lessons);
+  });
+  $units.classList.toggle("on", units && !lessons);
+  $all.classList.toggle("on", lessons);
+  $units.textContent = units && !lessons ? `${T.unitWord} 모두 접기` : `${T.unitWord} 모두 펼치기`;
+  $all.textContent = lessons ? `${T.lessonWord}까지 모두 접기` : `${T.lessonWord}까지 모두 펼치기`;
+}
+$units.addEventListener("click", () => setOpen(!$units.classList.contains("on"), false));
+$all.addEventListener("click", () => { const on = !$all.classList.contains("on"); setOpen(on, on); });
+
+// 들어오자마자 첫 단원은 열어 둔다 — 이 페이지는 이미 한 트랙으로 좁혀진 자리라,
+// 무엇이 들어 있는지 한 번은 보여 주는 편이 낫다.
+/* ---- 표시 언어 ---------------------------------------------------------- */
+
+/** data-i18n 이 붙은 자리를 지금 언어로 채운다. 마크업의 한국어는 기본값으로 남는다 —
+    JS 가 죽어도 페이지는 읽히는 상태여야 한다. */
+function paintStatic() {
+  const hd = document.getElementById("hd");
+  if (hd) hd.textContent = loc(T.desc);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n").split(".");
+    const v = t(sec, key);
+    if (v) el.textContent = v;
+  });
+  document.documentElement.lang = L;
+}
+
+function paintLocaleBar() {
+  const bar = document.getElementById("loc");
+  if (!bar) return;
+  bar.setAttribute("aria-label", t("locale", "label"));
+  bar.innerHTML = LOCALES.map(code =>
+    `<button type="button" data-loc="${code}" aria-pressed="${code === L}">` +
+    `${esc((I18N.locale[code] || {})[code] || code)}</button>`).join("");
+}
+
+function setLocale(next) {
+  if (!LOCALES.includes(next) || next === L) return;
+  L = next;
+  try { localStorage.setItem(LS_KEY, L); } catch (e) {}
+  paintStatic(); paintLocaleBar(); redraw();
+}
+
+document.getElementById("loc").addEventListener("click", e => {
+  const b = e.target.closest("button[data-loc]");
+  if (b) setLocale(b.dataset.loc);
+});
+
+paintStatic();
+paintLocaleBar();
+
+const firstGroup = document.querySelector(".group");
+firstGroup?.classList.add("open");
+firstGroup?.querySelector(".ghead")?.setAttribute("aria-expanded", "true");
+</script>
+</body>
+</html>
