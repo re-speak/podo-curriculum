@@ -2,7 +2,7 @@
 # Render check for newly written decks: worst intrinsic page height, stray
 # .yomi (a reading in a container the stylesheet never declares a rule for),
 # and horizontal overflow inside the 480px .phone.
-cd "$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 READY='(() => document.fonts.status)()'
 P='(() => {
   const phone=document.querySelector(".phone"); if(!phone) return "no phone";

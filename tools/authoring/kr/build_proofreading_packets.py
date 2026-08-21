@@ -330,8 +330,13 @@ def extract_lesson(path: pathlib.Path, *, deep: bool, planned_title: str,
         add(entries, source_id, "source.tutorGuidance.ko", "ko",
             node_text(source_note))
     lines = select(source, class_name="sent")
-    expected_lines = 7 if source_id == "article" else 5
-    if len(lines) != expected_lines:
+    if source_id == "article":
+        valid_line_count = 10 <= len(lines) <= 15
+        expected_lines = "10–15"
+    else:
+        valid_line_count = len(lines) == 5
+        expected_lines = "5"
+    if not valid_line_count:
         raise ValueError(
             f"{relative(path)}: expected {expected_lines} {source_id} lines, "
             f"found {len(lines)}"
