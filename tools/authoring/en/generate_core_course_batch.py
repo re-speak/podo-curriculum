@@ -9,7 +9,9 @@ import pathlib
 import re
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import option_order
 import new_lesson
 
 ROOT = new_lesson.REPO
@@ -647,9 +649,12 @@ def rule_page(pid, title, title_ja, script, script_ja, formula, heading, heading
 
 def choose_words(pid, title, title_ja, script, script_ja, rows):
     rendered = []
+    slots = option_order.correct_slots(
+        "|".join([pid] + [row[0] for row in rows]), len(rows)
+    )
     for index, (japanese, prefix, correct, distractor, suffix) in enumerate(rows):
         options = [("correct", correct, True), ("other", distractor, False)]
-        if index % 2:
+        if slots[index]:
             options.reverse()
         option_html = '<span class="sep">/</span>'.join(
             f'<span class="opt" data-sync-option="{kind}"'

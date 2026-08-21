@@ -9,7 +9,9 @@ import pathlib
 import re
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import option_order
 
 import generate_core_course_batch as core
 import new_lesson
@@ -915,12 +917,16 @@ def expressions_page(lesson):
 
 def understand_page(number, lesson):
     blocks = []
+    slots = option_order.correct_slots(
+        "|".join([f"understand-{number}"] + [row[0] for row in lesson["receptive"]]),
+        len(lesson["receptive"]),
+    )
     for index, (line, correct_en, correct_ja, wrong_en, wrong_ja) in enumerate(lesson["receptive"]):
         options = [
             ("correct", correct_en, correct_ja, True),
             ("other", wrong_en, wrong_ja, False),
         ]
-        if index % 2:
+        if slots[index]:
             options.reverse()
         choices = "".join(
             f'<span class="opt" data-sync-option="{kind}"{" data-correct" if correct else ""}>'

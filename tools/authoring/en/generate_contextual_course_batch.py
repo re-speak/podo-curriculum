@@ -8,7 +8,9 @@ import html
 import pathlib
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import option_order
 import new_lesson
 import generate_core_course_batch as core
 
@@ -150,6 +152,10 @@ def conversation(d,complete=False,prefix="scene",transfer=False):
 
 def understand(d):
     blocks=[]
+    slots = option_order.correct_slots(
+        "|".join(["understand"] + [row[0] for row in d["receptive"]]),
+        len(d["receptive"]),
+    )
     for i,(line,sense,ja) in enumerate(d["receptive"]):
         wrong_en,wrong_ja=DISTRACTORS[sense]
         if d.get("preserve_approved_understand"):
@@ -159,7 +165,7 @@ def understand(d):
             f'<span class="opt" data-sync-option="correct" data-correct><span class="choice-en">{esc(sense)}</span><small>{esc(ja)}</small></span>',
             f'<span class="opt" data-sync-option="other"><span class="choice-en">{esc(wrong_en)}</span><small>{esc(wrong_ja)}</small></span>',
         ]
-        if i % 2:
+        if slots[i]:
             options.reverse()
         blocks.append(f'<div class="choose-row sentence receptive-choice" data-sync-id="understand-{i}" data-sync-kind="selection"><span class="translation">{esc(line)}</span><span class="choose-sentence">{"".join(options)}</span></div>')
     if d.get("preserve_approved_understand"):

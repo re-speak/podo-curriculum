@@ -22,9 +22,17 @@ class CorePlansAndComparisonBatchTests(unittest.TestCase):
         self.assertEqual(set(batch.NUMBERS), set(range(37, 48)) - {45})
         self.assertEqual(set(batch.LESSONS), set(batch.NUMBERS))
         preserved = batch.TRACK / "courses" / batch.COURSE / "lessons/45-this-ones-cheaper/lesson.html"
+        # The pin moved once, on 2026-08-22. CORE-45 is an owner-approved golden
+        # deck, and its `p1-choose` put the correct option left, right, left,
+        # right — the shape `check_deck.choice_position_issues` now refuses,
+        # under a rule the owner approved after this deck was signed off. One
+        # row's two options were swapped so the sequence is no longer readable
+        # from position; nothing else about the deck changed, and the swap is
+        # invisible on screen. Leaving it would have kept the banned pattern in
+        # the deck other lessons are copied from.
         self.assertEqual(
             hashlib.sha256(preserved.read_bytes()).hexdigest(),
-            "d754d974dea9671744cb56cc1a41743cbc0262fa108721ec7e61fc187de5f432",
+            "06d2f46d39ca77e11492ce19c69d47691f69977d10706b15f1909840ad214c61",
         )
 
     def test_every_semantic_field_is_explicit(self):
