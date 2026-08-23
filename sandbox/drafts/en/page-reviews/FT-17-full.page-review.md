@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/17-a-small-win-nobody-noticed/lesson.html`
-- SHA-256: `da297ea5920783130cd49c762725220b7f872e0b385b17d14ad38c479b6075ab`
+- SHA-256: `72e2c9c6f5f26c45263622d2ebb0b5ca586f72babff77f7fed3d36b2b784f4bb`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Have you had any small wins this month, whether or not anyone noticed?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What effort did it take?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What kind of small win would matter to you even if nobody noticed?”
-- Learning target: Explore the distinct “A quiet win (静かな成功)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you had any small wins this month, whether or not anyone noticed?” opens this angle; “What effort did it take?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What effort did it take?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you had any small wins this month, whether or not anyone noticed?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why did that win matter to you?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of small win would matter to you even if nobody noticed?"]}`
+- Learner action: Answer the standalone question “On a difficult day, what small thing feels like a win?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “On a difficult day, what small thing feels like a win?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “On a difficult day, what small thing feels like a win?” / “大変な日に、どんな小さなことができると成功したと感じますか？” Tutor follow-ups: “What effort would another person probably miss?” and “What should count as enough on a hard day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大変な日に、どんな小さなことができると成功したと感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["On a difficult day, what small thing feels like a win?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “What has taken effort this month, even if the result is not clear yet?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What part required the most patience?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What has taken effort this month, even if the result is not clear yet? まだ結果がはっきりしていなくても、今月、努力が必要だったことは何ですか？
-- Learning target: Explore the distinct “Effort this month (今月の努力)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What has taken effort this month, even if the result is not clear yet?” opens this angle; “What part required the most patience?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What part required the most patience?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What has taken effort this month, even if the result is not clear yet?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What progress can you see so far?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What has taken effort this month, even if the result is not clear yet?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What effort do people often make without getting credit?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What effort do people often make without getting credit?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What effort do people often make without getting credit?” / “人はどんな努力をしても、なかなか評価されないことがありますか？” Tutor follow-ups: “What makes the effort almost invisible?” and “How could people recognize it better?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人はどんな努力をしても、なかなか評価されないことがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What effort do people often make without getting credit?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “What kind of progress matters to you right now?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would it make easier?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What kind of progress matters to you right now? 今、どんな進歩があなたにとって大切ですか？
-- Learning target: Explore the distinct “Why progress matters (進歩が大切な理由)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What kind of progress matters to you right now?” opens this angle; “What would it make easier?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would it make easier?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What kind of progress matters to you right now?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would the same progress have mattered last year?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of progress matters to you right now?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of progress is easy to miss?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of progress is easy to miss?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of progress is easy to miss?” / “どんな進歩は見落としやすいですか？” Tutor follow-ups: “Why do people notice results before progress?” and “How could someone record that change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな進歩は見落としやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of progress is easy to miss?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “Who, if anyone, understands the effort you put in?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would you need to explain to others?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What helps you understand another person's quiet effort?”
-- Learning target: Explore the distinct “Who understands (分かってくれる人)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Who, if anyone, understands the effort you put in?” opens this angle; “What would you need to explain to others?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would you need to explain to others?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Who, if anyone, understands the effort you put in?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would sharing it change how you feel?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps you understand another person's quiet effort?"]}`
+- Learner action: Answer the standalone question “How can you tell when someone has been working hard quietly?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can you tell when someone has been working hard quietly?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can you tell when someone has been working hard quietly?” / “人が人知れず頑張っていたことは、どうすれば分かりますか？” Tutor follow-ups: “What small changes can show the effort?” and “How should someone respond when they notice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人が人知れず頑張っていたことは、どうすれば分かりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can you tell when someone has been working hard quietly?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “Do you usually notice your own small wins?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What helps you notice them?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Do you usually notice your own small wins? 普段、自分の小さな成功に気づきますか？
-- Learning target: Explore the distinct “Do you notice wins? (成功に気づく？)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Do you usually notice your own small wins?” opens this angle; “What helps you notice them?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What helps you notice them?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Do you usually notice your own small wins?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which wins do you often miss?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you usually notice your own small wins?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “How do you celebrate a small win?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How do you celebrate a small win?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How do you celebrate a small win?” / “小さな成功を、どのように祝いますか？” Tutor follow-ups: “When is private satisfaction enough?” and “How can celebrating help the next step?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “小さな成功を、どのように祝いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you celebrate a small win?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “What has been hardest this month, if anything?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What still needs attention?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What would deserve credit if you were having a difficult month?”
-- Learning target: Explore the distinct “What's still difficult (まだ難しいこと)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What has been hardest this month, if anything?” opens this angle; “What still needs attention?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What still needs attention?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What has been hardest this month, if anything?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What has helped the month go well?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would deserve credit if you were having a difficult month?"]}`
+- Learner action: Answer the standalone question “When is keeping a small win private better than sharing it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is keeping a small win private better than sharing it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is keeping a small win private better than sharing it?” / “小さな成功を人に話さず、自分だけにしておくほうがよいのはどんなときですか？” Tutor follow-ups: “Can sharing change the meaning of the win?” and “When does telling someone make it more valuable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “小さな成功を人に話さず、自分だけにしておくほうがよいのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is keeping a small win private better than sharing it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “Does praise affect your motivation?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Whose praise matters most?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Does praise affect your motivation? 褒められると、続けたい気持ちになりますか？
-- Learning target: Explore the distinct “Praise and motivation (褒め言葉とやる気)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Does praise affect your motivation?” opens this angle; “Whose praise matters most?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Whose praise matters most?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Does praise affect your motivation?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What keeps you going without it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does praise affect your motivation?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which helps more: praise from someone else or noticing your own progress?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which helps more: praise from someone else or noticing your own progress?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which helps more: praise from someone else or noticing your own progress?” / “ほかの人に褒められることと、自分の進歩に気づくことでは、どちらがより役立ちますか？” Tutor follow-ups: “Which kind of motivation lasts longer?” and “How can outside praise become less important?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの人に褒められることと、自分の進歩に気づくことでは、どちらがより役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which helps more: praise from someone else or noticing your own progress?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “What would count as a good month for you now?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which result matters most?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What would count as a good month for you now? 今のあなたにとって、どんな一か月ならよい月ですか？
-- Learning target: Explore the distinct “A good month (よい一か月)” angle of “A small win nobody noticed” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What would count as a good month for you now?” opens this angle; “Which result matters most?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which result matters most?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What would count as a good month for you now?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What small sign would show progress?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would count as a good month for you now?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What small sign can show that a month went well?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small sign can show that a month went well?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small sign can show that a month went well?” / “一か月がうまくいったと分かる、小さなサインは何ですか？” Tutor follow-ups: “Why is that sign meaningful?” and “Did you have more good days or bad days this month?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一か月がうまくいったと分かる、小さなサインは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small sign can show that a month went well?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

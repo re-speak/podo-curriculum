@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/46-a-personal-rule-you-never-break/lesson.html`
-- SHA-256: `e2813358a0b8c40fc8fffe6bf0806512c598ec82485c965c606ad03e5c8f8c92`
+- SHA-256: `919938703d1165709b21da49ef5de344beb1eccd9f34823305c17ea0fbf8b3fa`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What personal rule can make life easier?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which repeated decision could it simplify?” rather than asking every follow-up.
-- Visible target or prompt: What personal rule can make life easier? どのような自分のルールが、生活を楽にできますか？
-- Learning target: Explore the distinct “A useful personal rule (役立つ自分ルール)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which repeated decision could it simplify?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which repeated decision could it simplify?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What personal rule can make life easier?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What boundary would it create?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What personal rule can make life easier?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What personal rule can make life easier?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What personal rule can make life easier?” / “どのような自分のルールが、生活を楽にできますか？” Tutor follow-ups: “What choice would the rule make easier?” and “What problem would it prevent?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような自分のルールが、生活を楽にできますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What personal rule can make life easier?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How strict should a useful personal rule be?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which exception would be reasonable?” rather than asking every follow-up.
-- Visible target or prompt: How strict should a useful personal rule be? 役立つ自分のルールは、どのくらい厳しくするとよいですか？
-- Learning target: Explore the distinct “How strict (厳しさ)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which exception would be reasonable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which exception would be reasonable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How strict should a useful personal rule be?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How would someone know the boundary was crossed?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How strict should a useful personal rule be?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How strict should a useful personal rule be?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How strict should a useful personal rule be?” / “役立つ自分のルールは、どのくらい厳しくするとよいですか？” Tutor follow-ups: “What exception would be reasonable?” and “When would an exception go too far?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “役立つ自分のルールは、どのくらい厳しくするとよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How strict should a useful personal rule be?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What experience can turn a preference into a firm rule?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What could become the turning point?” rather than asking every follow-up.
-- Visible target or prompt: What experience can turn a preference into a firm rule? どのような経験が、好みをはっきりしたルールに変えるのでしょうか？
-- Learning target: Explore the distinct “Where rules come from (ルールの始まり)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What could become the turning point?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What could become the turning point?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What experience can turn a preference into a firm rule?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which cost is the rule meant to prevent?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What experience can turn a preference into a firm rule?"]}`
+- Learner action: Answer the standalone question “What could make someone turn a preference into a firm rule?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What could make someone turn a preference into a firm rule?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What could make someone turn a preference into a firm rule?” / “何がきっかけで、好みが固いルールに変わることがありますか？” Tutor follow-ups: “Could one bad experience do it?” and “What problem would the rule prevent?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “何がきっかけで、好みが固いルールに変わることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What could make someone turn a preference into a firm rule?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “When is breaking a personal rule reasonable?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What separates an exception from an excuse?” rather than asking every follow-up.
-- Visible target or prompt: When is breaking a personal rule reasonable? どのようなときは、自分のルールを破ってもよいですか？
-- Learning target: Explore the distinct “A reasonable exception (納得できる例外)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What separates an exception from an excuse?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What separates an exception from an excuse?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is breaking a personal rule reasonable?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What should happen afterward?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When is breaking a personal rule reasonable?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is breaking a personal rule reasonable?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is breaking a personal rule reasonable?” / “どのようなときは、自分のルールを破ってもよいですか？” Tutor follow-ups: “How can you tell if it is an honest exception or just an excuse?” and “What should happen afterward?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのようなときは、自分のルールを破ってもよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is breaking a personal rule reasonable?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Why can someone else's personal rule seem strange?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which missing context could explain it?” rather than asking every follow-up.
-- Visible target or prompt: Why can someone else's personal rule seem strange? ほかの人の自分ルールが、なぜ不思議に見えることがあるのでしょうか？
-- Learning target: Explore the distinct “What others see (ほかの人の見方)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which missing context could explain it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which missing context could explain it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can someone else's personal rule seem strange?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When might the rule be more common than it seems?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why can someone else's personal rule seem strange?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can someone else's personal rule seem strange?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can someone else's personal rule seem strange?” / “ほかの人の自分ルールが、なぜ不思議に見えることがあるのでしょうか？” Tutor follow-ups: “Which missing detail could explain it?” and “When might the rule be more common than it seems?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの人の自分ルールが、なぜ不思議に見えることがあるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can someone else's personal rule seem strange?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How much of the reason would you explain to someone affected by the rule?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What do they genuinely need to know?” rather than asking every follow-up.
-- Visible target or prompt: How much of the reason would you explain to someone affected by the rule? そのルールの影響を受ける人に、理由をどこまで説明しますか？
-- Learning target: Explore the distinct “Explain or keep private (説明する？)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What do they genuinely need to know?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What do they genuinely need to know?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How much of the reason would you explain to someone affected by the rule?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which detail can remain private?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much of the reason would you explain to someone affected by the rule?"]}`
+- Learner action: Answer the standalone question “If your personal rule affects someone else, how much should you explain?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If your personal rule affects someone else, how much should you explain?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If your personal rule affects someone else, how much should you explain?” / “自分のルールがほかの人に影響するなら、どこまで理由を説明すべきですか？” Tutor follow-ups: “What do they genuinely need to know?” and “Which detail can remain private?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分のルールがほかの人に影響するなら、どこまで理由を説明すべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If your personal rule affects someone else, how much should you explain?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How can you tell whether a personal rule is still useful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What evidence supports keeping it?” rather than asking every follow-up.
-- Visible target or prompt: How can you tell whether a personal rule is still useful? 自分のルールが今も役立っているか、どう判断できますか？
-- Learning target: Explore the distinct “Still useful (今も役立つか)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What evidence supports keeping it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What evidence supports keeping it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can you tell whether a personal rule is still useful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which change would justify revising it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can you tell whether a personal rule is still useful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can you tell whether a personal rule is still useful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can you tell whether a personal rule is still useful?” / “自分のルールが今も役立っているか、どう判断できますか？” Tutor follow-ups: “What problem does the rule solve now?” and “What change would make you rewrite it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分のルールが今も役立っているか、どう判断できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can you tell whether a personal rule is still useful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What personal rule would be worth trying this month?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What is the smallest workable version?” rather than asking every follow-up.
-- Visible target or prompt: What personal rule would be worth trying this month? 今月、どのような自分のルールを試す価値がありますか？
-- Learning target: Explore the distinct “A rule to try (試したいルール)” angle of “A personal rule you never break” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What is the smallest workable version?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What is the smallest workable version?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What personal rule would be worth trying this month?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How would you test whether it helps?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What personal rule would be worth trying this month?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What personal rule would be worth trying this month?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What personal rule would be worth trying this month?” / “今月、どのような自分のルールを試す価値がありますか？” Tutor follow-ups: “How could you make the rule easy to try?” and “What result would show that it helps?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今月、どのような自分のルールを試す価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What personal rule would be worth trying this month?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

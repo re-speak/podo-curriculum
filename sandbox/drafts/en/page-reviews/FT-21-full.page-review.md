@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-full/lessons/21-a-film-you-never-get-tired-of/lesson.html`
-- SHA-256: `0a5bc9a0783e6c3ada5cdfabfbf51a36231c2c1f26d600eb6725e2ced93ce46d`
+- SHA-256: `f9da0cf72e5bda9bee241f0e77b8a89f5d32efdf17180eec4221acde8f1d7740`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
 - Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Generator-owned semantic inspection is complete; root visual inspection at 360px and 480px is still pending.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending.
+- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
 - Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending.
+- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
 - Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending.
+- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What film could you happily watch more than twice?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes it worth another viewing?” rather than asking every follow-up.
-- Visible target or prompt: What film could you happily watch more than twice? 何度でも見たい映画は何ですか？
-- Learning target: Explore the distinct “A familiar film (何度も見た映画)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes it worth another viewing?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes it worth another viewing?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What film could you happily watch more than twice?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When did you last watch it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What film could you happily watch more than twice?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of film is easiest to watch again?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of film is easiest to watch again?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of film is easiest to watch again?” / “どんな映画なら、もう一度見やすいですか？” Tutor follow-ups: “What makes that kind easy to rewatch?” and “Would you choose comedy, action, or something else?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな映画なら、もう一度見やすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of film is easiest to watch again?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which scene from that film comes to mind first?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What happens in that scene?” rather than asking every follow-up.
-- Visible target or prompt: Which scene from that film comes to mind first? その映画で最初に思い浮かぶ場面はどれですか？
-- Learning target: Explore the distinct “One scene (一つの場面)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What happens in that scene?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What happens in that scene?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which scene from that film comes to mind first?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why has that moment stayed with you?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which scene from that film comes to mind first?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which film scene can you picture clearly even now?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which film scene can you picture clearly even now?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which film scene can you picture clearly even now?” / “今でもはっきり思い浮かべられる映画の場面はどれですか？” Tutor follow-ups: “Which visual or line makes it memorable?” and “Has its meaning changed for you?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今でもはっきり思い浮かべられる映画の場面はどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which film scene can you picture clearly even now?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How many times would you need to see it before you knew it well?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which details would take time to notice?” rather than asking every follow-up.
-- Visible target or prompt: How many times would you need to see it before you knew it well? その映画をよく知っていると言えるまで、何回くらい見る必要がありますか？
-- Learning target: Explore the distinct “How many times (見た回数)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which details would take time to notice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which details would take time to notice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How many times would you need to see it before you knew it well?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “At what point might it stop feeling fresh?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How many times would you need to see it before you knew it well?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which is more fun: watching a favorite again or trying a new film?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is more fun: watching a favorite again or trying a new film?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is more fun: watching a favorite again or trying a new film?” / “好きな映画をもう一度見ることと、新しい映画を見ることでは、どちらが楽しいですか？” Tutor follow-ups: “What do you gain from that choice?” and “What mood could reverse your answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “好きな映画をもう一度見ることと、新しい映画を見ることでは、どちらが楽しいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is more fun: watching a favorite again or trying a new film?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What might you notice on a second viewing that you missed the first time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What could change the way you see the story?” rather than asking every follow-up.
-- Visible target or prompt: What might you notice on a second viewing that you missed the first time? 二回目に見ると、最初は見逃したどんなことに気づきそうですか？
-- Learning target: Explore the distinct “What you notice now (見方の変化)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What could change the way you see the story?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What could change the way you see the story?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might you notice on a second viewing that you missed the first time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which character might become more interesting?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might you notice on a second viewing that you missed the first time?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What detail do people often miss the first time they watch a film?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What detail do people often miss the first time they watch a film?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What detail do people often miss the first time they watch a film?” / “映画を初めて見るとき、人はどんな細部を見落としやすいですか？” Tutor follow-ups: “Does knowing the ending help?” and “Do you notice acting, music, or background details first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “映画を初めて見るとき、人はどんな細部を見落としやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What detail do people often miss the first time they watch a film?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Who would be the most interesting person to watch it with?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How might that person react?” rather than asking every follow-up.
-- Visible target or prompt: Who would be the most interesting person to watch it with? 誰と一緒に見ると、いちばん面白くなりそうですか？
-- Learning target: Explore the distinct “Who you watched with (一緒に見る人)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How might that person react?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How might that person react?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who would be the most interesting person to watch it with?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might they notice that you missed?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would be the most interesting person to watch it with?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Who would make an interesting person to watch a film with?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who would make an interesting person to watch a film with?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who would make an interesting person to watch a film with?” / “誰と映画を見ると、面白くなりそうですか？” Tutor follow-ups: “Would you choose someone with similar taste or different taste?” and “Which scene would you watch their reaction to?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰と映画を見ると、面白くなりそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would make an interesting person to watch a film with?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What might a new viewer misunderstand about this film?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which criticism would you understand?” rather than asking every follow-up.
-- Visible target or prompt: What might a new viewer misunderstand about this film? 初めて見る人は、この映画のどこを誤解しそうですか？
-- Learning target: Explore the distinct “What others miss (伝わりにくい魅力)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which criticism would you understand?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which criticism would you understand?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might a new viewer misunderstand about this film?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would you explain before recommending it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might a new viewer misunderstand about this film?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What makes a popular film hard for some people to enjoy?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a popular film hard for some people to enjoy?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a popular film hard for some people to enjoy?” / “人気の映画でも、人によって楽しみにくいのはどんな理由からですか？” Tutor follow-ups: “What were they expecting?” and “Can too much hype make a film harder to enjoy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人気の映画でも、人によって楽しみにくいのはどんな理由からですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a popular film hard for some people to enjoy?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What makes you want to watch it again?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does your reason change with your mood?” rather than asking every follow-up.
-- Visible target or prompt: What makes you want to watch it again? また見たいと思わせるものは何ですか？
-- Learning target: Explore the distinct “Why you return (また見る理由)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Does your reason change with your mood?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does your reason change with your mood?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes you want to watch it again?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would you choose a different film?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes you want to watch it again?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “How can watching a film again change your opinion of it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can watching a film again change your opinion of it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can watching a film again change your opinion of it?” / “映画をもう一度見ると、その映画への意見はどう変わりますか？” Tutor follow-ups: “What might you notice the second time?” and “Can a film seem better or worse as you get older?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “映画をもう一度見ると、その映画への意見はどう変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can watching a film again change your opinion of it?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “If you could show me one scene, which would you choose?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What should I pay attention to?” rather than asking every follow-up.
-- Visible target or prompt: If you could show me one scene, which would you choose? 私に一つの場面を見せるなら、どれを選びますか？
-- Learning target: Explore the distinct “Show me first (最初に見せる場面)” angle of “A film you never get tired of” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What should I pay attention to?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What should I pay attention to?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “If you could show me one scene, which would you choose?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would that scene not explain about the film?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you could show me one scene, which would you choose?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which Japanese film would you show someone first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which Japanese film would you show someone first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which Japanese film would you show someone first?” / “日本映画を初めて見る人に、最初にどの作品を見せますか？” Tutor follow-ups: “Why is it a good introduction?” and “Would comedy, drama, or animation be the easiest introduction?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日本映画を初めて見る人に、最初にどの作品を見せますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which Japanese film would you show someone first?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one strength, one focus, and one useful re-say.
 - Component consistency: Reuses the approved Freetalking feedback component with separate strength, focus, and useful-correction fields.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending.
+- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.

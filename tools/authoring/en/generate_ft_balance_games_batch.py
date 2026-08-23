@@ -43,14 +43,14 @@ BRIEF_OPENINGS = {
     110: "For your most important tasks, would you rather start early or work late?",
     111: "For a three-day trip, would you plan each day or decide as you go?",
     112: "For a new destination, would you rather travel alone or with someone?",
-    113: "For everyday life, would you choose a lively city or a quiet rural area?",
+    113: "For daily life, would you rather live in a busy city or a quiet town?",
     114: "For one summer, would you give up internet or air conditioning?",
     115: "For the next year, would you choose more free time or a higher income?",
     116: "For focused work, would you choose home or a shared workplace?",
     117: "For two hours of serious study, would you choose a café or home?",
     118: "For an important purchase, would you rather buy online or in a shop?",
     119: "Would you rather remember every ordinary detail or be able to forget painful memories?",
-    120: "Would you rather be wealthy and anonymous or respected on an ordinary income?",
+    120: "Would you rather be rich and unknown or respected on an average income?",
     121: "Would you rather master one skill or become good at many?",
 }
 
@@ -61,15 +61,15 @@ FULL_OPENINGS = {
     110: "When the work matters most, do you function better early in the morning or late at night?",
     111: "For a short trip, would you rather follow a plan or make decisions as you go?",
     112: "When visiting somewhere new, would you rather travel independently or with company?",
-    113: "For daily life, would you prefer the energy of a city or the quiet of the countryside?",
+    113: "For daily life, would you rather live in a busy city or a quiet town?",
     114: "If you had to lose one for a summer, would you choose internet or air conditioning?",
     115: "Over the next year, would greater control of your time or a higher income matter more?",
     116: "For work that requires concentration, would home or a shared workplace suit you better?",
     117: "For two demanding hours of study, would a café or your home support better focus?",
-    118: "For a purchase that really matters, would you trust an online order or an in-person shop more?",
+    118: "For an important purchase, would you trust an online order or a shop more?",
     119: "Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?",
-    120: "Would you choose private wealth without recognition or public respect on an ordinary income?",
-    121: "Would you rather develop exceptional depth in one skill or broad ability across many?",
+    120: "Would you rather be rich and unknown or respected on an average income?",
+    121: "Would you rather become excellent at one skill or good at many?",
 }
 
 OPENINGS_JA = {
@@ -79,14 +79,14 @@ OPENINGS_JA = {
     110: "大切なことをするとき、朝早く始めるのと夜遅く取り組むのと、どちらがよいですか？",
     111: "三日間の旅行なら、毎日計画するのと、その場で決めるのと、どちらがよいですか？",
     112: "初めての場所へ行くなら、一人旅と誰かとの旅行のどちらがよいですか？",
-    113: "毎日の生活なら、にぎやかな都会と静かな田舎のどちらを選びますか？",
+    113: "日常生活なら、にぎやかな都会と静かな町のどちらに住みたいですか？",
     114: "一夏の間、インターネットとエアコンのどちらかを諦めるなら、どちらにしますか？",
     115: "これから一年、自由な時間と高い収入のどちらを選びますか？",
     116: "集中して作業するなら、家と共有の職場のどちらを選びますか？",
     117: "二時間しっかり勉強するなら、カフェと家のどちらを選びますか？",
     118: "大切な買い物なら、オンラインと店舗のどちらで買いますか？",
     119: "日常の細かいことをすべて覚えるのと、つらい記憶を忘れられるのと、どちらを選びますか？",
-    120: "裕福で無名の生活と、普通の収入で尊敬される生活のどちらを選びますか？",
+    120: "裕福で無名の生活と、平均的な収入で尊敬される生活のどちらがよいですか？",
     121: "一つの技能を極めるのと、多くの技能が得意になるのと、どちらを選びますか？",
 }
 
@@ -97,12 +97,12 @@ FULL_OPENINGS_JA = {
     110: "重要な作業では、朝早くと夜遅くのどちらのほうが力を発揮できますか？",
     111: "短い旅行なら、計画に従うのと、その場で決めるのと、どちらがよいですか？",
     112: "初めての場所を訪れるなら、一人で行くのと誰かと行くのと、どちらがよいですか？",
-    113: "日常生活では、都会の活気と田舎の静けさのどちらを選びますか？",
+    113: "日常生活なら、にぎやかな都会と静かな町のどちらに住みたいですか？",
     114: "一夏の間どちらかを失うなら、インターネットとエアコンのどちらにしますか？",
     115: "これから一年では、時間の裁量と高い収入のどちらがより大切ですか？",
     116: "集中が必要な仕事には、家と共有の職場のどちらがより合いますか？",
     117: "難しい勉強を二時間するなら、カフェと家のどちらが集中しやすいですか？",
-    118: "本当に大切な買い物なら、オンライン注文と実店舗のどちらをより信頼しますか？",
+    118: "大切な買い物なら、オンライン注文と店のどちらをより信頼しますか？",
     119: "日常の細部を完全に覚えるのと、つらい記憶を薄れさせられるのと、どちらがよいですか？",
     120: "世間に知られない裕福な生活と、普通の収入で尊敬される生活のどちらを選びますか？",
     121: "一つの技能の深い専門性と、多くの技能にわたる幅広い能力のどちらを伸ばしたいですか？",
@@ -145,34 +145,168 @@ def prompt(job, title, title_ja, accessible, accessible_ja, accessible_followups
 
 def tutor_prompt(number, data):
     """End each pool with a reciprocal learner-to-tutor exchange."""
-    a, b = data["a"], data["b"]
-    aj, bj = data["a_ja"], data["b_ja"]
     accessible_followups, full_followups = RECIPROCAL_FOLLOWUPS[number]
     return prompt(
         "tutor",
-        "Compare your answers",
-        "答えを比べる",
-        f"Ask your tutor whether they would choose {a} or {b}, and why.",
-        f"チューターなら{aj}と{bj}のどちらを選ぶか、その理由も聞いてください。",
+        "Hear your tutor's choice",
+        "チューターの選択を聞く",
+        "Ask your tutor which option they would choose and why.",
+        "チューターならどちらを選ぶか、その理由も聞いてください。",
         accessible_followups,
-        full=f"Ask your tutor to choose between {a} and {b}, then compare the reasons behind both answers.",
-        full_ja=f"チューターに{aj}と{bj}のどちらを選ぶか聞き、お互いの理由を比べてください。",
+        full="Ask your tutor which option they would choose and why.",
+        full_ja="チューターならどちらを選ぶか、その理由も聞いてください。",
         full_followups=full_followups,
         safety="reciprocal-tutor-answer",
     )
+
+
+# Final spoken review: remove abstract packaging, give every no-answer path a
+# concrete foothold, and keep Full depth in the answer rather than the syntax.
+FINAL_ONE_HEARING_REPAIRS = {
+    (107, "saved-time"): dict(
+        accessible="Would you take a slower route to save money?",
+        accessible_ja="お金を節約するためなら、時間のかかる道を選びますか？",
+        full="Would you take a slower route to save money?",
+        full_ja="お金を節約するためなら、時間のかかる道を選びますか？",
+        accessible_followups=("How much extra time would be acceptable?", "Which usually costs less: walking or public transport?"),
+        full_followups=("How much extra time would be acceptable?", "Which usually costs less: walking or public transport?"),
+    ),
+    (108, "daily-life"): dict(
+        accessible="What would be missing if you knew many people but had no close friends?",
+        accessible_ja="知り合いは多くても親しい友人がいないとしたら、何が足りませんか？",
+        full="What would be missing if you knew many people but had no close friends?",
+        full_ja="知り合いは多くても親しい友人がいないとしたら、何が足りませんか？",
+        accessible_followups=("Who would you call after a bad day?", "Would you rather share good news with one person or a large group?"),
+        full_followups=("Who would you call after a bad day?", "Would you rather share good news with one person or a large group?"),
+    ),
+    (110, "whole-day"): dict(
+        accessible_followups=("Why is that hardest to change?", "Would changing your sleep schedule affect your mood?"),
+        full_followups=("Why is that hardest to change?", "Would changing your sleep schedule affect your mood?"),
+    ),
+    (112, "choice"): dict(
+        accessible_followups=("What would be easier alone?", "When would company help?"),
+        full_followups=("What would be easier alone?", "When would company help?"),
+    ),
+    (112, "new-country"): dict(
+        full="What would make three days alone somewhere new enjoyable?",
+        full_ja="初めての場所で一人で過ごす三日間を、楽しくするものは何ですか？",
+    ),
+    (113, "convenience"): dict(
+        title="What you want nearby",
+        title_ja="近くにほしいもの",
+        accessible="What do you most want within walking distance of your home?",
+        accessible_ja="家から歩いて行ける場所に、何がいちばんほしいですか？",
+        full="What do you most want within walking distance of your home?",
+        full_ja="家から歩いて行ける場所に、何がいちばんほしいですか？",
+        accessible_followups=("How often would you use it?", "Would a ten-minute walk feel close enough?"),
+        full_followups=("How often would you use it?", "Would a ten-minute walk feel close enough?"),
+    ),
+    (116, "team-day"): dict(
+        accessible_followups=("What would the team need to do together?", "Which is easier in person: planning or solving a disagreement?"),
+        full_followups=("What would the team need to do together?", "Which is easier in person: planning or solving a disagreement?"),
+    ),
+    (116, "switch"): dict(
+        title="Feeling connected at home",
+        title_ja="在宅でもつながりを感じること",
+        accessible="What can make a workday at home feel less lonely?",
+        accessible_ja="在宅勤務の日に孤独を感じにくくするには、何が役立ちますか？",
+        full="What can make a workday at home feel less lonely?",
+        full_ja="在宅勤務の日に孤独を感じにくくするには、何が役立ちますか？",
+        accessible_followups=("Would a short call with a coworker help?", "Which would help more: lunch outside or an online chat?"),
+        full_followups=("Would a short call with a coworker help?", "Which would help more: lunch outside or an online chat?"),
+    ),
+    (117, "best-focus"): dict(
+        accessible_followups=("Do you focus better alone or around other people?", "Which helps more: silence or a little background noise?"),
+        full_followups=("Do you focus better alone or around other people?", "Which helps more: silence or a little background noise?"),
+    ),
+    (117, "choice"): dict(
+        full="For two hours of serious study, would you choose a café or home?",
+        full_ja="二時間しっかり勉強するなら、カフェと家のどちらを選びますか？",
+    ),
+    (117, "drink-cost"): dict(
+        accessible_followups=("Would you stay longer to make the drink feel worth it?", "Would a free library be a better choice?"),
+        full_followups=("Would you stay longer to make the drink feel worth it?", "Would a free library be a better choice?"),
+    ),
+    (117, "switch"): dict(
+        full="Which task needs the privacy or equipment you have at home?",
+        full_ja="家にあるプライバシーや道具が必要なのは、どんな課題ですか？",
+    ),
+    (118, "photo-match"): dict(
+        accessible="What makes you trust a product you see online?",
+        accessible_ja="オンラインで見た商品を信頼できるのは、どんなときですか？",
+        full="What makes you trust a product you see online?",
+        full_ja="オンラインで見た商品を信頼できるのは、どんなときですか？",
+        accessible_followups=("Does a clear return policy matter?", "Which do you trust more: customer photos or star ratings?"),
+        full_followups=("Does a clear return policy matter?", "Which do you trust more: customer photos or star ratings?"),
+    ),
+    (118, "same-day"): dict(
+        accessible="Would you still visit a shop if same-day delivery were free?",
+        accessible_ja="当日配送が無料でも、店へ行きますか？",
+        full="Would you still visit a shop if same-day delivery were free?",
+        full_ja="当日配送が無料でも、店へ行きますか？",
+    ),
+    (119, "all-vivid"): dict(
+        accessible_followups=("Would embarrassing memories get easier with time?", "Which would bother you more: old mistakes or useless details?"),
+        full_followups=("Would embarrassing memories get easier with time?", "Which would bother you more: old mistakes or useless details?"),
+    ),
+    (119, "lost-lesson"): dict(
+        title="Memory and arguments",
+        title_ja="記憶と口論",
+        accessible="Would perfect memory make arguments easier or harder?",
+        accessible_ja="何でも覚えていたら、口論は楽になりますか、それとも難しくなりますか？",
+        full="Would perfect memory help solve arguments or keep them going?",
+        full_ja="何でも覚えていたら、口論を解決しやすくなりますか、それとも長引かせますか？",
+        accessible_followups=("Would remembering the exact words help?", "Is it sometimes better to forget a small mistake?"),
+        full_followups=("Would remembering the exact words help?", "Is it sometimes better to forget a small mistake?"),
+    ),
+    (121, "recent-skill"): dict(
+        title="Recent progress",
+        title_ja="最近の上達",
+        accessible="Which skill, if any, have you improved recently?",
+        accessible_ja="最近、上達した技能があるとしたら何ですか？",
+        full="Which skill, if any, have you improved recently?",
+        full_ja="最近、上達した技能があるとしたら何ですか？",
+        accessible_followups=("What helped you improve?", "Which is easier to improve: cooking, exercise, or language?"),
+        full_followups=("What helped you improve?", "Which is easier to improve: cooking, exercise, or language?"),
+    ),
+    (121, "team"): dict(
+        accessible="On a small team, which is more useful: one specialist or one person who can do several jobs?",
+        accessible_ja="小さなチームでは、一人の専門家と、いくつもの仕事ができる人のどちらが役立ちますか？",
+        full="On a small team, which is more useful: one specialist or one person who can do several jobs?",
+        full_ja="小さなチームでは、一人の専門家と、いくつもの仕事ができる人のどちらが役立ちますか？",
+        accessible_followups=("Why would that person help the team?", "Can a flexible worker help when a teammate is absent?"),
+        full_followups=("Why would that person help the team?", "Can a flexible worker help when a teammate is absent?"),
+    ),
+    (121, "new-field"): dict(
+        accessible="Which new skill would you rather learn: cooking, photography, or first aid?",
+        accessible_ja="新しく学ぶなら、料理、写真、応急手当のどれがよいですか？",
+        full="Which new skill would you rather learn: cooking, photography, or first aid?",
+        full_ja="新しく学ぶなら、料理、写真、応急手当のどれがよいですか？",
+        accessible_followups=("Why would that skill be useful?", "Which is easiest to practise at home: cooking, photography, or first aid?"),
+        full_followups=("Why would that skill be useful?", "Which is easiest to practise at home: cooking, photography, or first aid?"),
+    ),
+}
 
 
 def topic_prompts(number, data):
     """Use the reviewed choice from the brief inside the topic-specific pool."""
     pool = [dict(item) for item in QUESTION_POOLS[number]]
     for item in pool:
-        item["full_followups"] = FULL_FOLLOWUPS[number][item["job"]]
+        item["full_followups"] = (
+            FULL_FOLLOWUPS[number][item["job"]]
+            if number == 107
+            else item["accessible_followups"]
+        )
     pool[2].update(
         accessible=BRIEF_OPENINGS[number],
         accessible_ja=OPENINGS_JA[number],
         full=FULL_OPENINGS[number],
         full_ja=FULL_OPENINGS_JA[number],
     )
+    for item in pool:
+        changes = FINAL_ONE_HEARING_REPAIRS.get((number, item["job"]))
+        if changes:
+            item.update(**changes)
     return tuple(pool) + (tutor_prompt(number, data),)
 
 
@@ -428,7 +562,8 @@ def _article_page(topic_number, data, variant, base):
 def _question_page(page_id, number, item, variant, base):
     followups = "".join(f"<li>{base.esc(value)}</li>" for value in item[f"{variant}_followups"])
     japanese = item[f"{variant}_ja"]
-    body = f'      <p class="section-subtitle ask"><span class="q-n">{number}</span><span class="ko">{base.esc(item[variant])}</span><span class="ja">{base.esc(japanese)}</span></p>\n      <div class="tutor-note"><div class="tn-body"><span class="tn-cap">Follow up</span><ul class="tn-more">{followups}</ul></div></div>\n      <div class="fb" data-fb="{variant}-{page_id}" data-fb-spoken-label="Student\'s sentence"></div><div class="fb-adds"><button class="fb-add" data-add="fix" type="button">＋ Correction</button><button class="fb-add" data-add="note" type="button">＋ Note</button></div>'
+    note_label = "Answer first, then follow up" if item["job"] == "tutor" else "Follow up"
+    body = f'      <p class="section-subtitle ask"><span class="q-n">{number}</span><span class="ko">{base.esc(item[variant])}</span><span class="ja">{base.esc(japanese)}</span></p>\n      <div class="tutor-note"><div class="tn-body"><span class="tn-cap">{note_label}</span><ul class="tn-more">{followups}</ul></div></div>\n      <div class="fb" data-fb="{variant}-{page_id}" data-fb-spoken-label="Student\'s sentence"></div><div class="fb-adds"><button class="fb-add" data-add="fix" type="button">＋ Correction</button><button class="fb-add" data-add="note" type="button">＋ Note</button></div>'
     return base.page(page_id, item["title"], item["title_ja"], body)
 
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/120-being-rich-and-anonymous-or-respected-on-an-ordinary-income/lesson.html`
-- SHA-256: `34e03bf657c6b0a91cf171ccaa628ee4016e677a5210f49e09aca8e1459508e7`
+- SHA-256: `c5cbbc851f6c9b73e1102c42b1079c3284875f0ca9306d377492f09635e615a7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What can feel worth doing even when nobody knows?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What can feel worth doing even when nobody knows?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What can feel worth doing even when nobody knows?” / “誰にも知られなくても、価値があると感じることは何ですか？” Follow-ups: “Why does it matter privately?” and “Would you ever tell someone?”
-- Learning target: Develop the distinct “Private pride” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Private pride” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What can feel worth doing even when nobody knows?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “誰にも知られなくても、価値があると感じることは何ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “What can feel worth doing even when nobody knows?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can feel worth doing even when nobody knows?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can feel worth doing even when nobody knows?” / “誰にも知られなくても、価値があると感じることは何ですか？” Tutor follow-ups: “Why is it worth doing without praise?” and “Which feels better: private pride or public praise?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰にも知られなくても、価値があると感じることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can feel worth doing even when nobody knows?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “What good thing would you do without putting your name on it?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What good thing would you do without putting your name on it?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What good thing would you do without putting your name on it?” / “名前を出さずによいことをするなら、何をしますか？” Follow-ups: “Who would benefit?” and “Why might anonymity help?”
-- Learning target: Develop the distinct “Anonymous help” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Anonymous help” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What good thing would you do without putting your name on it?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “名前を出さずによいことをするなら、何をしますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What good thing would you do without putting your name on it?"]}`
+- Learner action: Answer the standalone question “What's one good reason to help someone anonymously?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one good reason to help someone anonymously?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one good reason to help someone anonymously?” / “名前を出さずに誰かを助けるよい理由は何ですか？” Tutor follow-ups: “Who could benefit?” and “Would you donate anonymously if you could?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “名前を出さずに誰かを助けるよい理由は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one good reason to help someone anonymously?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Would you rather be wealthy and anonymous or respected on an ordinary income?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would you rather be wealthy and anonymous or respected on an ordinary income?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would you rather be wealthy and anonymous or respected on an ordinary income?” / “裕福で無名の生活と、普通の収入で尊敬される生活のどちらを選びますか？” Follow-ups: “Which value decides it?” and “What is attractive about the other life?”
-- Learning target: Develop the distinct “Wealth or respect” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Wealth or respect” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would you rather be wealthy and anonymous or respected on an ordinary income?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “裕福で無名の生活と、普通の収入で尊敬される生活のどちらを選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather be wealthy and anonymous or respected on an ordinary income?"]}`
+- Learner action: Answer the standalone question “Would you rather be rich and unknown or respected on an average income?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you rather be rich and unknown or respected on an average income?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you rather be rich and unknown or respected on an average income?” / “裕福で無名の生活と、平均的な収入で尊敬される生活のどちらがよいですか？” Tutor follow-ups: “Which part of that life matters most to you?” and “Would you prefer a quiet day alone or being thanked in public?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “裕福で無名の生活と、平均的な収入で尊敬される生活のどちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather be rich and unknown or respected on an average income?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How would an ordinary day look in the life you chose?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would an ordinary day look in the life you chose?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would an ordinary day look in the life you chose?” / “選んだ生活では、普段の一日はどのようになりますか？” Follow-ups: “Who would know you?” and “How would money or reputation be managed?”
-- Learning target: Develop the distinct “An ordinary day” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “An ordinary day” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would an ordinary day look in the life you chose?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだ生活では、普段の一日はどのようになりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would an ordinary day look in the life you chose?"]}`
+- Learner action: Answer the standalone question “What would an ordinary day look like if you were rich but kept your wealth private?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would an ordinary day look like if you were rich but kept your wealth private?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would an ordinary day look like if you were rich but kept your wealth private?” / “裕福でもそのことを秘密にしていたら、普通の一日はどんな一日ですか？” Tutor follow-ups: “What would stay normal?” and “Would you tell one close person about the money?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “裕福でもそのことを秘密にしていたら、普通の一日はどんな一日ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would an ordinary day look like if you were rich but kept your wealth private?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Would respect still appeal if people constantly judged you?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would respect still appeal if people constantly judged you?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would respect still appeal if people constantly judged you?” / “いつも人から評価されるなら、尊敬される生活を選びますか？” Follow-ups: “Which judgment would feel hardest?” and “Could privacy be protected?”
-- Learning target: Develop the distinct “Always being judged” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Always being judged” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would respect still appeal if people constantly judged you?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “いつも人から評価されるなら、尊敬される生活を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would respect still appeal if people constantly judged you?"]}`
+- Learner action: Answer the standalone question “Would being respected still appeal if people constantly judged you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would being respected still appeal if people constantly judged you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would being respected still appeal if people constantly judged you?” / “いつも人から評価されるなら、尊敬される生活は魅力的ですか？” Tutor follow-ups: “Which judgment would feel hardest?” and “Would public respect be worth losing some privacy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “いつも人から評価されるなら、尊敬される生活は魅力的ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would being respected still appeal if people constantly judged you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would your answer change if only your family knew about the wealth?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would your answer change if only your family knew about the wealth?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would your answer change if only your family knew about the wealth?” / “家族だけが裕福だと知っているなら、選択は変わりますか？” Follow-ups: “How would family life change?” and “What if friends found out?”
-- Learning target: Develop the distinct “Only family knows” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Only family knows” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would your answer change if only your family knew about the wealth?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “家族だけが裕福だと知っているなら、選択は変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would your answer change if only your family knew about the wealth?"]}`
+- Learner action: Answer the standalone question “Would public respect matter if the people closest to you did not admire you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would public respect matter if the people closest to you did not admire you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would public respect matter if the people closest to you did not admire you?” / “親しい人に尊敬されなくても、世間からの尊敬は大切ですか？” Tutor follow-ups: “Why might public respect still feel valuable?” and “Which matters more: respect from family or from strangers?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “親しい人に尊敬されなくても、世間からの尊敬は大切ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would public respect matter if the people closest to you did not admire you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “How much public attention would make you switch?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How much public attention would make you switch?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How much public attention would make you switch?” / “どの程度人に知られたら、反対の生活を選びますか？” Follow-ups: “Who knowing would matter most?” and “Would the answer change for a fictional public figure?”
-- Learning target: Develop the distinct “The price of visibility” angle of Being rich and anonymous or respected on an ordinary income? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “The price of visibility” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How much public attention would make you switch?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どの程度人に知られたら、反対の生活を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much public attention would make you switch?"]}`
+- Learner action: Answer the standalone question “Which is harder to live without: privacy or recognition?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is harder to live without: privacy or recognition?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is harder to live without: privacy or recognition?” / “プライバシーと人からの評価のうち、ないとより困るのはどちらですか？” Tutor follow-ups: “Why is that hard to live without?” and “Would you leave social media for a month to protect your privacy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “プライバシーと人からの評価のうち、ないとより困るのはどちらですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is harder to live without: privacy or recognition?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose private wealth or respect on an ordinary income, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose private wealth or respect on an ordinary income, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose private wealth or respect on an ordinary income, and why.” / “チューターなら無名で裕福な生活と普通の収入で得る尊敬のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Does your tutor value privacy or recognition more?” and “What would they do with the chosen advantage?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターなら無名で裕福な生活と普通の収入で得る尊敬のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose private wealth or respect on an ordinary income, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Does your tutor value privacy or recognition more?” and “Would the choice change if fame meant no privacy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-full/lessons/119-remembering-everything-or-forgetting-bad-memories/lesson.html`
-- SHA-256: `5aa58aaac31ac4fbfd4ac25621e43751fa15d8ca9a7dd231c64d3777ba44a503`
+- SHA-256: `8298c424390b103d67f6be54a8cebe7cf815e9901c7798fab93305fbbbec1197`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “Why can a small visual cue restore a forgotten positive memory?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Why can a small visual cue restore a forgotten positive memory?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Why can a small visual cue restore a forgotten positive memory?” / “写真を見ると、どんな楽しい記憶が戻ることがありますか？” Follow-ups: “Which sensory detail seems to reactivate the memory?” and “How could later knowledge have changed the recalled scene?”
-- Learning target: Develop the distinct “A memory from a photo” angle of Remembering everything or forgetting bad memories? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A memory from a photo” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Why can a small visual cue restore a forgotten positive memory?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “写真を見ると、どんな楽しい記憶が戻ることがありますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can a small visual cue restore a forgotten positive memory?"]}`
+- Learner action: Answer the standalone question “What kind of happy memory can a photograph bring back?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of happy memory can a photograph bring back?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of happy memory can a photograph bring back?” / “写真を見ると、どんな楽しい記憶が戻ることがありますか？” Tutor follow-ups: “Which detail returns first?” and “Which brings back more: a photo or a song?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “写真を見ると、どんな楽しい記憶が戻ることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of happy memory can a photograph bring back?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “What makes an ordinary moment important enough to preserve?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What makes an ordinary moment important enough to preserve?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What makes an ordinary moment important enough to preserve?” / “長く覚えていたい小さな出来事は何ですか？” Follow-ups: “Which meaning would make the ordinary detail valuable later?” and “Would an external record preserve what memory might lose?”
-- Learning target: Develop the distinct “A small moment to keep” angle of Remembering everything or forgetting bad memories? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A small moment to keep” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What makes an ordinary moment important enough to preserve?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “長く覚えていたい小さな出来事は何ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes an ordinary moment important enough to preserve?"]}`
+- Learner action: Answer the standalone question “Which small ordinary moment is worth remembering for years?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which small ordinary moment is worth remembering for years?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which small ordinary moment is worth remembering for years?” / “長く覚えていたい小さな出来事は何ですか？” Tutor follow-ups: “Why could that ordinary moment matter later?” and “Would you record an ordinary day in a diary?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “長く覚えていたい小さな出来事は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which small ordinary moment is worth remembering for years?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?” / “日常の細部を完全に覚えるのと、つらい記憶を薄れさせられるのと、どちらがよいですか？” Follow-ups: “Which benefit depends on continuity and which on relief?” and “What form of support could reduce the cost of either choice?”
-- Learning target: Develop the distinct “Perfect recall or relief” angle of Remembering everything or forgetting bad memories? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Perfect recall or relief” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “日常の細部を完全に覚えるのと、つらい記憶を薄れさせられるのと、どちらがよいですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?” / “日常の細部を完全に覚えるのと、つらい記憶を薄れさせられるのと、どちらがよいですか？” Tutor follow-ups: “How would your choice help in daily life?” and “Would you rather keep a diary or delete one embarrassing photo?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常の細部を完全に覚えるのと、つらい記憶を薄れさせられるのと、どちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you prefer perfect recall of ordinary details or the ability to let painful memories fade?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Which parts of study and work would improve—and which might become harder—with perfect recall?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which parts of study and work would improve—and which might become harder—with perfect recall?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which parts of study and work would improve—and which might become harder—with perfect recall?” / “完全に覚えられたら、学習や仕事はどう変わりますか？” Follow-ups: “Would perfect recall improve judgment or only access to detail?” and “Which kind of mistake might become harder to move beyond?”
-- Learning target: Develop the distinct “Memory in learning” angle of Remembering everything or forgetting bad memories? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Memory in learning” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which parts of study and work would improve—and which might become harder—with perfect recall?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “完全に覚えられたら、学習や仕事はどう変わりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which parts of study and work would improve—and which might become harder—with perfect recall?"]}`
+- Learner action: Answer the standalone question “What would perfect memory make easier?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would perfect memory make easier?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would perfect memory make easier?” / “完全な記憶があれば、何が楽になりますか？” Tutor follow-ups: “Could too much detail become distracting?” and “Would perfect memory help more at work or while studying?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “完全な記憶があれば、何が楽になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would perfect memory make easier?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “If trivial pain remained as vivid as valuable knowledge, would perfect recall still appeal?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “If trivial pain remained as vivid as valuable knowledge, would perfect recall still appeal?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “If trivial pain remained as vivid as valuable knowledge, would perfect recall still appeal?” / “失敗や恥ずかしいことも鮮明に残るなら、完全な記憶を選びますか？” Follow-ups: “How would unimportant pain compete with useful information?” and “Would control over when memories appear change the choice?”
-- Learning target: Develop the distinct “Every feeling stays vivid” angle of Remembering everything or forgetting bad memories? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Every feeling stays vivid” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “If trivial pain remained as vivid as valuable knowledge, would perfect recall still appeal?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “失敗や恥ずかしいことも鮮明に残るなら、完全な記憶を選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If trivial pain remained as vivid as valuable knowledge, would perfect recall still appeal?"]}`
+- Learner action: Answer the standalone question “Would you want perfect memory if every embarrassment stayed vivid too?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you want perfect memory if every embarrassment stayed vivid too?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you want perfect memory if every embarrassment stayed vivid too?” / “恥ずかしいことも鮮明に残るなら、完全な記憶がほしいですか？” Tutor follow-ups: “Would embarrassing memories get easier with time?” and “Which would bother you more: old mistakes or useless details?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “恥ずかしいことも鮮明に残るなら、完全な記憶がほしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you want perfect memory if every embarrassment stayed vivid too?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “If relief came with losing part of what the experience taught, would it remain worthwhile?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “If relief came with losing part of what the experience taught, would it remain worthwhile?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “If relief came with losing part of what the experience taught, would it remain worthwhile?” / “つらさを忘れると学びも薄れるなら、選択は変わりますか？” Follow-ups: “Which part of the lesson could be preserved outside memory?” and “How would agency change the value of forgetting?”
-- Learning target: Develop the distinct “When the lesson fades” angle of Remembering everything or forgetting bad memories? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “When the lesson fades” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “If relief came with losing part of what the experience taught, would it remain worthwhile?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “つらさを忘れると学びも薄れるなら、選択は変わりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If relief came with losing part of what the experience taught, would it remain worthwhile?"]}`
+- Learner action: Answer the standalone question “Would perfect memory help solve arguments or keep them going?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would perfect memory help solve arguments or keep them going?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would perfect memory help solve arguments or keep them going?” / “何でも覚えていたら、口論を解決しやすくなりますか、それとも長引かせますか？” Tutor follow-ups: “Would remembering the exact words help?” and “Is it sometimes better to forget a small mistake?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “何でも覚えていたら、口論を解決しやすくなりますか、それとも長引かせますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would perfect memory help solve arguments or keep them going?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “What difference in usefulness, pain, or identity would reverse your choice?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What difference in usefulness, pain, or identity would reverse your choice?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What difference in usefulness, pain, or identity would reverse your choice?” / “どんな記憶なら、反対の能力を選びますか？” Follow-ups: “Which distinction between fact, feeling, and identity is decisive?” and “Would the answer differ for recent and distant memories?”
-- Learning target: Develop the distinct “A different kind of memory” angle of Remembering everything or forgetting bad memories? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A different kind of memory” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What difference in usefulness, pain, or identity would reverse your choice?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな記憶なら、反対の能力を選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What difference in usefulness, pain, or identity would reverse your choice?"]}`
+- Learner action: Answer the standalone question “Which kind of memory should be allowed to fade?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which kind of memory should be allowed to fade?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which kind of memory should be allowed to fade?” / “どんな記憶は、薄れていってもよいですか？” Tutor follow-ups: “Would the answer change over time?” and “Should an embarrassing memory fade faster than a happy one?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな記憶は、薄れていってもよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of memory should be allowed to fade?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor to choose between remembering everything and forgetting bad memories, then compare the reasons behind both answers.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor to choose between remembering everything and forgetting bad memories, then compare the reasons behind both answers.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor to choose between remembering everything and forgetting bad memories, then compare the reasons behind both answers.” / “チューターにすべてを覚えていることとつらい記憶を忘れることのどちらを選ぶか聞き、お互いの理由を比べてください。” Follow-ups: “How does the tutor weigh continuity against relief?” and “Which kind of memory would reverse their answer?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターにすべてを覚えていることとつらい記憶を忘れることのどちらを選ぶか聞き、お互いの理由を比べてください。” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor to choose between remembering everything and forgetting bad memories, then compare the reasons behind both answers."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which ordinary memory would your tutor want to keep clear?” and “Would the choice change if only happy memories stayed vivid?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

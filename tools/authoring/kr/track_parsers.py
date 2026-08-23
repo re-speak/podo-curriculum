@@ -224,15 +224,30 @@ def parse_pronunciation(track: pathlib.Path) -> list[dict]:
 # --------------------------------------------------------------------------- #
 
 CTX_COURSE = re.compile(
-    r"^## (.+?) \[(.+?)\] · (\d+) ?(?:화|레슨)(?: · .*)?$")
+    r"^## (.+?) \[(.+?)\] · (\d+) ?(?:화|레슨)(?:( · .*))?$")
+# `· 슬롯 005 ·` in a course header pins that course's thousandth slot inside the
+# band, instead of letting it fall out of the course's position in this file.
+#
+# Without a pin, plan_courses.py numbers contextual courses `i * 10` by TOC
+# order, so inserting a course renumbers every course below it. classLevel is
+# part of grape's natural key: a renumbered course is not an edit, it is a
+# different course, and the row it left behind keeps USE_YN='Y' and keeps
+# serving content nobody updates. Nothing errors — which is why every course
+# here is pinned, and why a new one must arrive with its slot already chosen.
+CTX_SLOT = re.compile(r"·\s*슬롯\s*(\d{1,3})\b")
 # A header may carry a trailing annotation outside the bold — 가족 & 일상 marks
 # who speaks with `*(엄마 → 나)*`. Capture it rather than refusing the line.
 CTX_LESSON = re.compile(r"^\*\*(\d+) ?(?:화|레슨)? ?[·.] (.+?)\*\*\s*(.*)$")
 
 # Korean course names need romanised directory names; slugify() drops hangul.
 CTX_SLUGS = {
-    "설렘 & 고백": ("drama-crush", "Crush & confession", "ときめきと告白"),
-    "갈등 & 화해": ("drama-makeup", "Conflict & making up", "すれ違いと仲直り"),
+    "친구": ("drama-friends", "Becoming friends", "友だちになるまで"),
+    # `drama-crush` 는 코스 이름이 「설렘 & 고백」이던 때 붙은 슬러그다. 이름은
+    # 바뀌었지만 슬러그는 그대로 둔다 — 디렉터리를 바꿀 이유가 없고, 바꾸면
+    # courses/ 쪽 디렉터리까지 함께 움직여야 한다.
+    "썸 & 고백": ("drama-crush", "Crush & confession", "ときめきと告白"),
+    "연애": ("drama-dating", "Going out", "つきあう"),
+    "떨어져 있는 시간": ("drama-long-distance", "Time apart", "離れている時間"),
     "가족 & 일상": ("drama-family", "Family & everyday", "家族と日常"),
     "경계 & 갈등": ("drama-boundaries", "Boundaries & friction", "境界と衝突"),
     "케이팝 토크": ("kpop-talk", "K-pop talk", "K-POPトーク"),
@@ -254,6 +269,7 @@ def parse_contextual(track: pathlib.Path) -> list[dict]:
     courses = []
     for m, body in _split_blocks(lines, CTX_COURSE, STOP_HEADING):
         name, level, _count = m.group(1).strip(), m.group(2).strip(), int(m.group(3))
+        slot_m = CTX_SLOT.search(m.group(4) or "")
         known = CTX_SLUGS.get(name)
         if known is None:
             raise ParseError(
@@ -295,7 +311,15 @@ def parse_contextual(track: pathlib.Path) -> list[dict]:
             raise ParseError(f"course '{name}' parsed 0 lessons")
         lessons.sort(key=lambda l: l["no"])
         note = _paragraph_field(prelude, "끝내면 할 수 있는 것") or ""
+        if slot_m is None:
+            raise ParseError(
+                f"course '{name}' has no `· 슬롯 NNN` in its header — every "
+                f"contextual course pins its own classLevel slot, because "
+                f"deriving it from position here renumbers every course below "
+                f"and re-identifies them in grape. Pick an unused slot and "
+                f"write it into the header")
         courses.append({"slug": slug, "level": entry, "note": note,
+                        "classLevelSlot": int(slot_m.group(1)),
                         "work": work, "cast": cast, "story": story,
                         "title": {"ko": name, "en": t_en, "ja": t_ja},
                         "lessons": lessons})

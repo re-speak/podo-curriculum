@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/109-endless-summer-or-endless-winter/lesson.html`
-- SHA-256: `3d1172023e4172e7965ec54d7a1911083d1e9f1265c87296d6f2d7568920faa8`
+- SHA-256: `57ee0b7e493db561cf13738f7e5b22bc81f6c0470320dac17a314445511efec4`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What makes a very hot or very cold day difficult?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What makes a very hot or very cold day difficult?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What makes a very hot or very cold day difficult?” / “暑い日や寒い日を大変にするものは何ですか？” Follow-ups: “Does travel make it worse?” and “Does sleep change?”
-- Learning target: Develop the distinct “A difficult weather day” angle of Endless summer or endless winter? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A difficult weather day” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What makes a very hot or very cold day difficult?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “暑い日や寒い日を大変にするものは何ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a very hot or very cold day difficult?"]}`
+- Learner action: Answer the standalone question “Which is harder for you: a very hot day or a very cold day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is harder for you: a very hot day or a very cold day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is harder for you: a very hot day or a very cold day?” / “とても暑い日ととても寒い日のどちらが大変ですか？” Tutor follow-ups: “Does travel make that weather harder?” and “Which bothers you more: strong sun or cold wind?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “とても暑い日ととても寒い日のどちらが大変ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is harder for you: a very hot day or a very cold day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “What would you do outside on a day with perfect weather?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What would you do outside on a day with perfect weather?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What would you do outside on a day with perfect weather?” / “完璧な天気の日なら、外で何をしたいですか？” Follow-ups: “Which outdoor place would you visit?” and “How many hours would you stay outside?”
-- Learning target: Develop the distinct “Perfect weather” angle of Endless summer or endless winter? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Perfect weather” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What would you do outside on a day with perfect weather?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “完璧な天気の日なら、外で何をしたいですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “What would you do outside on a day with perfect weather?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you do outside on a day with perfect weather?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you do outside on a day with perfect weather?” / “完璧な天気の日なら、外で何をしたいですか？” Tutor follow-ups: “Which outdoor place would you visit?” and “Would you choose a park, a beach, or a city walk?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “完璧な天気の日なら、外で何をしたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you do outside on a day with perfect weather?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “If one season had to last all year, would you choose summer or winter?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “If one season had to last all year, would you choose summer or winter?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “If one season had to last all year, would you choose summer or winter?” / “一つの季節が一年中続くなら、夏と冬のどちらを選びますか？” Follow-ups: “Which activity shapes your answer?” and “What is the best part of the other season?”
-- Learning target: Develop the distinct “One season forever” angle of Endless summer or endless winter? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “One season forever” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “If one season had to last all year, would you choose summer or winter?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一つの季節が一年中続くなら、夏と冬のどちらを選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “If one season had to last all year, would you choose summer or winter?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If one season had to last all year, would you choose summer or winter?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If one season had to last all year, would you choose summer or winter?” / “一つの季節が一年中続くなら、夏と冬のどちらを選びますか？” Tutor follow-ups: “Which activity shapes your answer?” and “Which would be harder all year: heat or short winter days?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの季節が一年中続くなら、夏と冬のどちらを選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If one season had to last all year, would you choose summer or winter?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How would everyday life change if your season never ended?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would everyday life change if your season never ended?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would everyday life change if your season never ended?” / “選んだ季節が終わらなければ、日常はどう変わりますか？” Follow-ups: “What would happen to clothing?” and “What would happen to outdoor plans?”
-- Learning target: Develop the distinct “Everyday life” angle of Endless summer or endless winter? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Everyday life” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would everyday life change if your season never ended?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだ季節が終わらなければ、日常はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would everyday life change if your season never ended?"]}`
+- Learner action: Answer the standalone question “Which daily habit would change most if summer never ended?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which daily habit would change most if summer never ended?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which daily habit would change most if summer never ended?” / “夏が終わらなければ、どの日課が最も変わりますか？” Tutor follow-ups: “How would outdoor plans change?” and “Which changes more with summer: sleep or clothing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “夏が終わらなければ、どの日課が最も変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which daily habit would change most if summer never ended?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Would your answer stay the same if every building and train were comfortable?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would your answer stay the same if every building and train were comfortable?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would your answer stay the same if every building and train were comfortable?” / “建物や交通機関がいつも快適でも、答えは同じですか？” Follow-ups: “Would daylight matter more?” and “Would energy cost still matter?”
-- Learning target: Develop the distinct “Perfect indoors” angle of Endless summer or endless winter? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Perfect indoors” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would your answer stay the same if every building and train were comfortable?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “建物や交通機関がいつも快適でも、答えは同じですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would your answer stay the same if every building and train were comfortable?"]}`
+- Learner action: Answer the standalone question “If every indoor space were comfortable, which season would you choose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If every indoor space were comfortable, which season would you choose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If every indoor space were comfortable, which season would you choose?” / “すべての室内が快適なら、どの季節を選びますか？” Tutor follow-ups: “Would daylight still matter?” and “Would you rather go outside in rain or snow?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “すべての室内が快適なら、どの季節を選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If every indoor space were comfortable, which season would you choose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would equal daylight in both seasons change your answer?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would equal daylight in both seasons change your answer?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would equal daylight in both seasons change your answer?” / “夏と冬の日の長さが同じなら、選択は変わりますか？” Follow-ups: “Does light affect your mood?” and “Does it affect your sleep?”
-- Learning target: Develop the distinct “Hours of daylight” angle of Endless summer or endless winter? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Hours of daylight” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would equal daylight in both seasons change your answer?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “夏と冬の日の長さが同じなら、選択は変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would equal daylight in both seasons change your answer?"]}`
+- Learner action: Answer the standalone question “Would you rather have a warm dark day or a cold sunny day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you rather have a warm dark day or a cold sunny day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you rather have a warm dark day or a cold sunny day?” / “暖かく暗い日と、寒く晴れた日のどちらがよいですか？” Tutor follow-ups: “Does light affect your mood?” and “Which helps your mood more: warmth or sunlight?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “暖かく暗い日と、寒く晴れた日のどちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather have a warm dark day or a cold sunny day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “What weather condition would make you switch seasons?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What weather condition would make you switch seasons?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What weather condition would make you switch seasons?” / “どんな天候なら、反対の季節を選びますか？” Follow-ups: “How long could you accept it?” and “What would you do in that weather?”
-- Learning target: Develop the distinct “When you switch” angle of Endless summer or endless winter? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “When you switch” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What weather condition would make you switch seasons?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな天候なら、反対の季節を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What weather condition would make you switch seasons?"]}`
+- Learner action: Answer the standalone question “What's one weather condition you could not accept all year?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one weather condition you could not accept all year?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one weather condition you could not accept all year?” / “一年中は受け入れられない天候を一つ挙げるとしたら何ですか？” Tutor follow-ups: “How long could you accept that weather?” and “Which is harder to live with: humidity or ice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一年中は受け入れられない天候を一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one weather condition you could not accept all year?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose endless summer or endless winter, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose endless summer or endless winter, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose endless summer or endless winter, and why.” / “チューターなら終わらない夏と終わらない冬のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which weather burden matters most to your tutor?” and “Would better housing change their season?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターなら終わらない夏と終わらない冬のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose endless summer or endless winter, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “What kind of weather bothers your tutor most?” and “Would good heating or good air conditioning change the choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -255,8 +255,33 @@ def declared_retirements(base: str) -> set[str]:
             if line.strip().startswith("Retired-course:")}
 
 
-def check_retirements(base: str) -> list[str]:
+def _natural_key(spec: dict) -> tuple:
+    """The columns grape matches a course row on, minus CLASS_WEEK.
+
+    CLASS_TYPE and LANG_TYPE are fixed for everything this repo deploys, so what
+    separates one course row from another is these four.
+    """
+    return (spec.get("curriculumType"), spec.get("countryCode"),
+            str(spec.get("classLevel")), spec.get("lessonTime"))
+
+
+def _weeks_at(base: str, course: str) -> int:
+    """How many lesson directories `course` had at `base`."""
+    listing = subprocess.run(
+        ["git", "ls-tree", "-r", "--name-only", base, f"{course}/lessons/"],
+        cwd=REPO, capture_output=True, text=True, timeout=30)
+    if listing.returncode != 0:
+        return 0
+    return sum(1 for line in listing.stdout.splitlines()
+               if line.endswith("/lesson.yaml"))
+
+
+def check_retirements(base: str, courses: list) -> list[str]:
     """Fail when a course that was `enabled: true` at `base` is gone now.
+
+    A course that only changed directory name is not gone: `courses` is checked
+    for one that now carries the same natural key, since that is what grape
+    matches a row on. `slug` rides along in the manifest as metadata.
 
     Reads the baseline out of git rather than off disk, so it works the same in CI
     (where the branch is checked out fresh) and locally. Anything that stops us
@@ -285,6 +310,7 @@ def check_retirements(base: str) -> list[str]:
     problems: list[str] = []
     gone = [c for c in was if not (REPO / c / "course.yaml").is_file()]
     declared = declared_retirements(base)
+    heirs = {_natural_key(c.spec): c for c in courses}
     print(f"\nretirement  (vs {base} · {len(was)} course(s) then, {len(gone)} gone now)")
 
     for course in gone:
@@ -300,6 +326,13 @@ def check_retirements(base: str) -> list[str]:
             print(f"  \u2713 {course} — was already disabled")
         elif course in declared:
             print(f"  \u2713 {course} — was live; declared retired out of band")
+        elif (heir := heirs.get(_natural_key(spec))) is not None \
+                and len(heir.lessons) >= _weeks_at(base, course):
+            # Not a deletion: another directory now carries this course's natural
+            # key, so apply.py still upserts those same rows and none of them goes
+            # stale. The heir has to cover the week count too — a shorter one would
+            # leave the tail weeks live and pointing at content that is now gone.
+            print(f"  \u2713 {course} — renamed to {heir.slug}, same natural key")
         else:
             problems.append(
                 f"{course}: was enabled: true at {base} and is gone now — "
@@ -400,7 +433,7 @@ def main() -> int:
         print(f"\nshared runtime  ({rt['version']} · {len(seen_urls)} distinct file(s) pinned)")
         problems += check_runtime_urls(seen_urls, rt)
 
-    problems += check_retirements(args.base)
+    problems += check_retirements(args.base, courses)
 
     print()
     if problems:

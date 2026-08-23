@@ -1,0 +1,21 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 09-just-between-us
+spec:
+  week: 9
+  title:
+    ko: 너한테만 말하는데
+    en: Just between us
+    ja: あなただけに言うけど
+  decks:
+    lecture: { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+  teaches:
+    patterns:
+      - ~더라
+      - N밖에 없다
+    canDo: 속엣말을 털어놓고, 들어 주는 사람이 되어 준다.
+  scene: 늦은 밤 편의점 앞 파라솔. 아무한테도 안 한 얘기가 나온다.
+  prerequisites: []
+  source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 9

@@ -201,6 +201,14 @@ provides 9,999 primary positions in one section. Free talking uses reserved thou
 deliberately for level pairs while preserving its existing Advanced natural keys: Intermediate
 is `400.009`, `400.019`, ... and its Advanced sibling remains `400.010`, `400.020`, ....
 
+**3-contextual-korean pins every slot in the TOC**, as `## 설렘 & 고백 [중급] · 10 화 ·
+슬롯 010 · …`. A course header without one is a parse error, not a default. The slot used to
+fall out of the course's *position in the file*, which meant inserting a course renumbered
+every course below it — and since `classLevel` is part of grape's natural key, renumbering is
+not an edit but a new course, leaving the old row at `USE_YN='Y'` serving content nobody
+updates. Nothing errors and the deploy goes green, so the parser now refuses to guess.
+Adding a course means choosing its slot; `plan_courses.py` rejects a duplicate.
+
 `1–99` stays free in case Korean ever gets a graded ladder the way EN and JP have. **Never
 use `999.x`** — that is where throwaway rows live (`html test (john)`), which is why the
 trial decks sit there and nothing else should.

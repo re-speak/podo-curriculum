@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/05-a-place-you-would-show-a-visitor/lesson.html`
-- SHA-256: `2885003c5c8452ac9370c828208a9db589fbfe5e42088cabc7ad6704ad767f01`
+- SHA-256: `bb72a82d208ff024c9645709e0f03a586b31f34a4fab5c1058235633c643914a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear on the goal page.
 - Component consistency: Matches the approved FT goal component: title, one short blue instruction box, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals are informational supports, not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article component with one short operating script and one tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Article wording and glossary ownership changed after the stricter pair audit; semantic inspection passed, but the revised article page needs root viewport reinspection.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two options are mutually exclusive and meaningfully different: delayed essential correction versus correction at natural breaks.
 - Component consistency: Reuses the approved synced single-choice FT style component from the canonical pilot.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors; this is an operating transition.
 - Component consistency: Matches the approved FT question-pool transition with visible flexibility and a concrete tutor-only reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: If I visited for one day, where would you take me—not the famous place?
-- Learning target: Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “If I visited for one day, where would you take me—not the famous place?” opens this specific angle; “What kind of day would you plan there?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What kind of day would you plan there?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “What time should we arrive?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If I visited for one day, where would you take me—not the famous place?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “If I visited Japan for one day, where would you take me besides the famous places?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If I visited Japan for one day, where would you take me besides the famous places?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If I visited Japan for one day, where would you take me besides the famous places?” / “私が一日だけ日本を訪れたら、有名な場所以外のどこへ連れて行きますか？” Tutor follow-ups: “What side of Japan would the place show?” and “Would you plan food, nature, or shopping first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “私が一日だけ日本を訪れたら、有名な場所以外のどこへ連れて行きますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If I visited Japan for one day, where would you take me besides the famous places?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What would you ask me before choosing the place?
-- Learning target: Develop the distinct “Choose for me (私に合わせて選ぶ)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What would you ask me before choosing the place?” opens this specific angle; “Which answer would change your plan?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Which answer would change your plan?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Who would not enjoy this place?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you ask me before choosing the place?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What makes a local place better than a famous tourist spot?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a local place better than a famous tourist spot?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a local place better than a famous tourist spot?” / “地元の場所が有名な観光地よりよいのは、どんなところですか？” Tutor follow-ups: “Which ordinary detail makes it meaningful?” and “When is the famous place still worth choosing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “地元の場所が有名な観光地よりよいのは、どんなところですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a local place better than a famous tourist spot?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What would we do first when we arrived?
-- Learning target: Develop the distinct “Your place (あなたの場所)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What would we do first when we arrived?” opens this specific angle; “What would that first stop show me?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What would that first stop show me?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “How long would we stay there?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would we do first when we arrived?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Where would you take a visitor who likes quiet places?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Where would you take a visitor who likes quiet places?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Where would you take a visitor who likes quiet places?” / “静かな場所が好きな旅行者を、どこへ連れて行きますか？” Tutor follow-ups: “What would make the place memorable?” and “Would they enjoy a park, a café, or a temple most?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “静かな場所が好きな旅行者を、どこへ連れて行きますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where would you take a visitor who likes quiet places?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Why would you choose this place to show me?”
-- Learning target: Develop the distinct “Why there? (なぜそこ？)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Why is that place important to you?” opens this specific angle; “What memory do you connect with it?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What memory do you connect with it?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Would it matter as much without that memory?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why would you choose this place to show me?"]}`
+- Learner action: Answer the standalone question “What place shows everyday life in your area?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What place shows everyday life in your area?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What place shows everyday life in your area?” / “あなたの地域の日常生活が見える場所はどこですか？” Tutor follow-ups: “Which routine would be easiest to see?” and “Where is daily life easiest to see: a station, a market, or a park?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたの地域の日常生活が見える場所はどこですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What place shows everyday life in your area?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “How would a visitor find this place?”
-- Learning target: Develop the distinct “How you found it (見つけたきっかけ)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “When did you first discover it?” opens this specific angle; “Who showed it to you?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Who showed it to you?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “How has it changed since then?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would a visitor find this place?"]}`
+- Learner action: Answer the standalone question “When is the best time to see a familiar place?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is the best time to see a familiar place?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is the best time to see a familiar place?” / “身近な場所を見るのにいちばんよい時間はいつですか？” Tutor follow-ups: “How do the people, sounds, or light change?” and “Do you prefer familiar places in the morning or at night?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “身近な場所を見るのにいちばんよい時間はいつですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is the best time to see a familiar place?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Who would you most want to take there?”
-- Learning target: Develop the distinct “Who goes with you? (誰と行く？)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Who have you taken there before?” opens this specific angle; “Did they enjoy the same part you do?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Did they enjoy the same part you do?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Who would not enjoy it?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would you most want to take there?"]}`
+- Learner action: Answer the standalone question “Which local place would you show a food lover?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which local place would you show a food lover?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which local place would you show a food lover?” / “食べ物が好きな人に、地元のどこを案内しますか？” Tutor follow-ups: “What does the place show about local food?” and “Would a food lover prefer a market or a restaurant?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “食べ物が好きな人に、地元のどこを案内しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which local place would you show a food lover?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What would I not understand without your explanation?
-- Learning target: Develop the distinct “What I might miss (見落としそうなこと)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What would I not understand without your explanation?” opens this specific angle; “What should I pay attention to first?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What should I pay attention to first?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Is there a local rule I should know?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would I not understand without your explanation?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What do guidebooks often fail to explain about local places?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do guidebooks often fail to explain about local places?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do guidebooks often fail to explain about local places?” / “ガイドブックは、地元の場所について何を説明できていないことが多いですか？” Tutor follow-ups: “Why is that hard to explain?” and “Do guidebooks miss local routines or local stories more often?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ガイドブックは、地元の場所について何を説明できていないことが多いですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do guidebooks often fail to explain about local places?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What kind of place would you want me to show you in my country?
-- Learning target: Develop the distinct “Turn the trip around (旅を逆にする)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What kind of place would you want me to show you in my country?” opens this specific angle; “What would you hope to experience there?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What would you hope to experience there?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “What would you want me to explain?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “What kind of place would you want me to show you in my country?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of place would you want me to show you in my country?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of place would you want me to show you in my country?” / “私の国では、どんな場所を案内してほしいですか？” Tutor follow-ups: “Would you prefer daily life or a special place?” and “Would you rather explore one area or move around?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “私の国では、どんな場所を案内してほしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of place would you want me to show you in my country?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors; the tutor records one strength and one next focus in a synced text area.
 - Component consistency: Matches the approved FT closing component and keeps owner feedback separate from automated grading.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

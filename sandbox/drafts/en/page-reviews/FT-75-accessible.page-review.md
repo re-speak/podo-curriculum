@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/75-one-thing-you-would-change-about-your-work-or-school/lesson.html`
-- SHA-256: `34a0ccbd07a2a27986f11ad1c1f73dc876c45c2adb16c249309e9cb7350c2782`
+- SHA-256: `2b5857e217923ae2b3e4c22b59d7b7a9cf239c8e6d1d3935f7635703bc9530e7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What would you change about a place where people work or study?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What exact problem would the change address?” rather than asking every follow-up.
-- Visible target or prompt: What would you change about a place where people work or study? / 人が働いたり学んだりする場所で、何を変えたいですか？
-- Learning target: Explore the distinct “One change (一つの変更)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What exact problem would the change address?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What exact problem would the change address?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you change about a place where people work or study?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who experiences that problem?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would you change about a place where people work or study?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you change about a place where people work or study?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you change about a place where people work or study?” / “人が働いたり学んだりする場所で、何を変えたいですか？” Tutor follow-ups: “What problem would the change solve?” and “Who would notice the change first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人が働いたり学んだりする場所で、何を変えたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you change about a place where people work or study?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Why do obvious problems at work or school often remain unchanged?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is the main barrier authority, cost, information, or disagreement?” rather than asking every follow-up.
-- Visible target or prompt: Why do obvious problems at work or school often remain unchanged? / 仕事や学校の明らかな問題が、なぜ変わらないことが多いのですか？
-- Learning target: Explore the distinct “Why it has not changed (変わっていない理由)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Is the main barrier authority, cost, information, or disagreement?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the main barrier authority, cost, information, or disagreement?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why do obvious problems at work or school often remain unchanged?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who has the power to change it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why do obvious problems at work or school often remain unchanged?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do obvious problems at work or school often remain unchanged?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do obvious problems at work or school often remain unchanged?” / “仕事や学校の明らかな問題が、なぜ変わらないことが多いのですか？” Tutor follow-ups: “Is the main problem money, authority, or disagreement?” and “Who could act first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “仕事や学校の明らかな問題が、なぜ変わらないことが多いのですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do obvious problems at work or school often remain unchanged?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Who might object to a proposed change, and why?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What concern would they raise?” rather than asking every follow-up.
-- Visible target or prompt: Who might object to a proposed change, and why? / 提案された変更に反対するのは誰で、なぜですか？
-- Learning target: Explore the distinct “Who might object (反対する人)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What concern would they raise?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What concern would they raise?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who might object to a proposed change, and why?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What could still slow the change?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who might object to a proposed change, and why?"]}`
+- Learner action: Answer the standalone question “Why might people resist a useful change at work or school?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why might people resist a useful change at work or school?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why might people resist a useful change at work or school?” / “職場や学校で役立つ変化に、人が反対することがあるのはなぜですか？” Tutor follow-ups: “Would they worry about cost, fairness, or extra work?” and “What could make them less worried?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “職場や学校で役立つ変化に、人が反対することがあるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might people resist a useful change at work or school?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What can a change cost in time, money, or workload?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who would carry that cost?” rather than asking every follow-up.
-- Visible target or prompt: What can a change cost in time, money, or workload? / 一つの変更には、時間、お金、作業量のどんな負担がかかり得ますか？
-- Learning target: Explore the distinct “What it would cost (必要な負担)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who would carry that cost?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who would carry that cost?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can a change cost in time, money, or workload?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What other obstacle remains?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What can a change cost in time, money, or workload?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can a change cost in time, money, or workload?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can a change cost in time, money, or workload?” / “一つの変更には、時間、お金、作業量のどんな負担がかかり得ますか？” Tutor follow-ups: “Which cost would be hardest to accept?” and “Who would carry that cost?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの変更には、時間、お金、作業量のどんな負担がかかり得ますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can a change cost in time, money, or workload?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What is the safest way to raise a problem at work or school?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which route offers the most privacy?” rather than asking every follow-up.
-- Visible target or prompt: What is the safest way to raise a problem at work or school? / 仕事や学校の問題を提起する最も安全な方法は何ですか？
-- Learning target: Explore the distinct “Whether it was raised (提起したか)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which route offers the most privacy?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which route offers the most privacy?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the safest way to raise a problem at work or school?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would a representative or formal route help?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What is the safest way to raise a problem at work or school?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is the safest way to raise a problem at work or school?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is the safest way to raise a problem at work or school?” / “仕事や学校の問題を提起する最も安全な方法は何ですか？” Tutor follow-ups: “Would you speak directly, speak privately, or report it?” and “What would make the person feel safe?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “仕事や学校の問題を提起する最も安全な方法は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the safest way to raise a problem at work or school?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What should happen after someone raises an issue?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How quickly should someone acknowledge the issue?” rather than asking every follow-up.
-- Visible target or prompt: What should happen after someone raises an issue? / 誰かが問題を提起した後、何が起こるべきですか？
-- Learning target: Explore the distinct “What happened next (その後の結果)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How quickly should someone acknowledge the issue?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How quickly should someone acknowledge the issue?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What should happen after someone raises an issue?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would a credible next step look like?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What should happen after someone raises an issue?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should happen after someone raises an issue?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should happen after someone raises an issue?” / “誰かが問題を提起した後、何が起こるべきですか？” Tutor follow-ups: “How quickly should someone reply?” and “What clear next step could they give?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰かが問題を提起した後、何が起こるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should happen after someone raises an issue?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How should people choose between a small test, stronger evidence, or a protected route?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would count as improvement?” rather than asking every follow-up.
-- Visible target or prompt: How should people choose between a small test, stronger evidence, or a protected route? / 小さな試行、より強い証拠、保護された経路の中から、どう選ぶべきですか？
-- Learning target: Explore the distinct “The safest next step (安全な次の一歩)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would count as improvement?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would count as improvement?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should people choose between a small test, stronger evidence, or a protected route?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What protection or support is needed first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should people choose between a small test, stronger evidence, or a protected route?"]}`
+- Learner action: Answer the standalone question “When is a small test better than a big change?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is a small test better than a big change?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is a small test better than a big change?” / “大きく変えるより、小さく試すほうがよいのはいつですか？” Tutor follow-ups: “What result would count as better?” and “What protection is needed first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大きく変えるより、小さく試すほうがよいのはいつですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is a small test better than a big change?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How should a decision-maker respond when they cannot accept the proposal?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What part should they acknowledge?” rather than asking every follow-up.
-- Visible target or prompt: How should a decision-maker respond when they cannot accept the proposal? / 提案を受け入れられないとき、意思決定者はどう応答すべきですか？
-- Learning target: Explore the distinct “A respectful reply (丁寧な応答)” angle of “One thing you would change about your work or school” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What part should they acknowledge?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What part should they acknowledge?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should a decision-maker respond when they cannot accept the proposal?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What next route or evidence could they offer?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should a decision-maker respond when they cannot accept the proposal?"]}`
+- Learner action: Answer the standalone question “How should someone respond when they cannot accept a suggestion at work or school?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How should someone respond when they cannot accept a suggestion at work or school?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How should someone respond when they cannot accept a suggestion at work or school?” / “職場や学校で提案を受け入れられないとき、どのように応じるべきですか？” Tutor follow-ups: “What useful part should they mention?” and “What next step could they offer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “職場や学校で提案を受け入れられないとき、どのように応じるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should someone respond when they cannot accept a suggestion at work or school?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

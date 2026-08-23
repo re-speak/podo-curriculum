@@ -25,11 +25,11 @@ CANONICAL = {
 PRESERVED = {
     "accessible": (
         TRACK / "courses/talk-people-and-ties-accessible/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "869062e3aa75757c9d778f432b200d625e16313a90c43a1d99de2f7458a2a392",
+        "a8a9b80bf45188b69a0a42a8eed771b33baf9d618c37c847110916943b7ea9e1",
     ),
     "full": (
         TRACK / "courses/talk-people-and-ties-full/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "55534c6cec0d8a8401c541e77eb7587eed9aa933a252b07c7a13fad6170669a0",
+        "add4cf3c3e9d052ee6370da7f15da16ffeddfb0bd6243c1b6df92d0e2bc7700b",
     ),
 }
 esc = base.esc
@@ -96,7 +96,7 @@ TOPICS = {
  prompts=[
   prompt("Why it can be wrong", "間違う理由", "Why can a first impression be completely wrong?", "第一印象がまったく間違っていることがあるのは、なぜですか？", ["Which detail can be easy to misread?", "What important context is missing at first?"], full="Why can a confident first impression still be deeply inaccurate?", full_ja="確信のある第一印象でも、大きく間違うことがあるのはなぜですか？", full_followups=["Which detail is especially easy to misinterpret?", "What crucial context is unavailable at first?"]),
   prompt("What shapes it", "印象を作るもの", "Which details shape a first impression fastest?", "どのような細部が、第一印象を最も早く作りますか？", ["Why does that detail feel meaningful?", "How might the setting change it?"], full="Which signals shape an initial judgment most quickly?", full_ja="どのような合図が、最初の判断を最も早く作りますか？", full_followups=["Why does that signal appear revealing?", "How might the surrounding context alter it?"]),
-  prompt("Evidence that changes it", "印象を変える証拠", "What kind of evidence can change a first impression?", "どのような証拠が、第一印象を変えることがありますか？", ["Can one action be enough?", "When does a pattern matter more?"], full="What kind of evidence is strong enough to overturn an initial impression?", full_ja="どのような証拠なら、最初の印象を覆すほど強いですか？", full_followups=["When can one action be decisive?", "When is a pattern more persuasive?"]),
+  prompt("Evidence that changes it", "印象を変える証拠", "What kind of evidence can change a first impression?", "どのような証拠が、第一印象を変えることがありますか？", ["Can one action be enough?", "When does a pattern matter more?"], full="What kind of evidence is strong enough to overturn an initial impression?", full_ja="どのような証拠なら、最初の印象を覆すほど強いですか？", full_followups=["When can one action be enough to change the impression?", "When is a pattern more persuasive?"]),
   prompt("Fast or slow", "速い変化と遅い変化", "Why do some impressions change quickly while others change slowly?", "すぐ変わる印象と、ゆっくり変わる印象があるのはなぜですか？", ["What makes someone resist new evidence?", "What could speed up the change?"], full="Why are some first impressions revised quickly while others remain resistant?", full_ja="すぐ見直される第一印象と、なかなか変わらない第一印象があるのはなぜですか？", full_followups=["What makes a judgment resistant to contrary evidence?", "What might accelerate a fair revision?"]),
   prompt("Missing context", "足りない背景", "Which missing context makes first impressions unfair?", "どのような背景が足りないと、第一印象が不公平になりますか？", ["Could tiredness or nervousness explain the behaviour?", "What would you want to know before judging?"], full="Which missing context most often makes an initial judgment unfair?", full_ja="どのような背景が欠けると、最初の判断が最も不公平になりやすいですか？", full_followups=["Could fatigue or anxiety explain the behaviour?", "Which fact would you want before reaching a conclusion?"]),
   prompt("The other direction", "逆の変化", "How can a good first impression become worse?", "よい第一印象が、あとで悪くなるのはどのようなときですか？", ["Which warning sign is easy to overlook?", "How many examples would make the change fair?"], full="How can a favourable first impression deteriorate over time?", full_ja="好ましい第一印象が、時間とともに悪くなるのはどのようなときですか？", full_followups=["Which warning sign is commonly overlooked?", "How much evidence would justify the revision?"]),
@@ -120,13 +120,13 @@ TOPICS = {
   ("The useful question is not whether solo is better, but where the choice feels right.", "The useful question is not whether independence is superior, but where it genuinely serves us.", "大切なのは一人がよいかではなく、どこまでなら自分に合うかです。", "大切なのは自立が優れているかではなく、どこまでなら本当に自分の役に立つかです。"),
  ],
  prompts=[
-  prompt("Where the line is", "一人でできる境界", "Which activity feels hardest to do alone?", "どのような活動が、一人ではいちばん難しく感じますか？", ["What makes it different from eating or shopping alone?", "Is the main issue safety, confidence, or enjoyment?"], full="Which activity lies furthest outside your comfort zone when done alone?", full_ja="一人でするとき、どの活動が自分の安心できる範囲から最も遠く感じますか？", full_followups=["What distinguishes it from ordinary solo activities?", "Is the main barrier safety, confidence, or enjoyment?"]),
+  prompt("Where the line is", "一人でできる境界", "Which activity feels hardest to do alone?", "どのような活動が、一人ではいちばん難しく感じますか？", ["What makes it different from eating or shopping alone?", "Is the main issue safety, confidence, or enjoyment?"], full="Which activity lies furthest outside your comfort zone when done alone?", full_ja="一人でするとき、どの活動が自分の安心できる範囲から最も遠く感じますか？", full_followups=["What makes it different from ordinary solo activities?", "Is the main barrier safety, confidence, or enjoyment?"]),
   prompt("Why it feels bold", "大胆に感じる理由", "What makes a solo activity feel bold?", "一人での活動が大胆に感じられるのはなぜですか？", ["Which social reaction matters most?", "Which practical difficulty matters most?"], full="What makes one solo activity feel significantly bolder than another?", full_ja="一人での活動の中でも、特に大胆に感じるものがあるのはなぜですか？", full_followups=["How strongly do social expectations shape the feeling?", "Which practical obstacle carries the most weight?"]),
   prompt("Just outside the line", "境界の少し外", "Imagine one solo activity just outside your comfort zone. What would happen?", "自分の安心できる範囲を少し超える一人での活動を想像してください。何が起きそうですか？", ["Which moment would feel hardest?", "What could make the experience satisfying?"], full="Imagine a solo activity just beyond your current comfort zone. How might it unfold?", full_ja="今の安心できる範囲を少し超える一人での活動を想像してください。どのように進みそうですか？", full_followups=["Which moment would test you most?", "What could make the experience genuinely rewarding?"]),
   prompt("Freedom and pressure", "自由と負担", "What is the best and hardest part of doing an activity alone?", "何かを一人でするとき、いちばんよい点と難しい点は何ですか？", ["Which decisions become easier?", "Which problem would you rather share?"], full="What are the greatest freedom and the greatest pressure in doing an activity alone?", full_ja="何かを一人でするとき、最大の自由と最大の負担は何ですか？", full_followups=["Which decisions become simpler?", "Which responsibility would you prefer to share?"]),
   prompt("Comfort alone", "一人で平気な理由", "What makes some people comfortable doing more things alone?", "一人で多くのことをしても平気な人がいるのはなぜですか？", ["Which skill reduces uncertainty?", "How can past success change confidence?"], full="What enables some people to act alone with greater confidence?", full_ja="一人でもより自信を持って行動できる人がいるのはなぜですか？", full_followups=["Which skill reduces uncertainty most effectively?", "How does previous success reshape confidence?"]),
   prompt("A moving line", "変わった境界", "How can someone's line for doing things alone change over time?", "一人でできることの境界は、時間とともにどう変わりますか？", ["Which experience could expand it?", "What could make it smaller again?"], full="How can a person's boundary for solo activities shift over time?", full_ja="一人での活動に対する境界は、時間とともにどう変化しますか？", full_followups=["Which experience could expand the boundary?", "What might cause it to contract again?"]),
-  prompt("A smaller step", "小さな一歩", "What smaller solo activity could prepare someone for the next one?", "次の挑戦に備えるために、どのような小さな一人での活動が役立ちますか？", ["How could the risk be reduced?", "What would show that the person is ready?"], full="Which smaller solo activity could prepare someone to go further?", full_ja="さらに挑戦するために、どのような小さな一人での活動が準備になりますか？", full_followups=["How could the experiment be made safer?", "Which sign would demonstrate readiness?"]),
+  prompt("A smaller step", "小さな一歩", "What smaller solo activity could prepare someone for the next one?", "次の挑戦に備えるために、どのような小さな一人での活動が役立ちますか？", ["How could the risk be reduced?", "What would show that the person is ready?"], full="Which smaller solo activity could prepare someone to go further?", full_ja="さらに挑戦するために、どのような小さな一人での活動が準備になりますか？", full_followups=["How could the experiment be made safer?", "Which clear sign would show that the person is ready?"]),
   prompt("What would push it", "境界を広げる条件", "What helps expand a person's comfort zone?", "何があれば、人の安心できる範囲を広げられますか？", ["Would information, practice, or company matter most?", "Which boundary should still be respected?"], full="What conditions help expand a person's comfort zone responsibly?", full_ja="どのような条件があれば、人の安心できる範囲を無理なく広げられますか？", full_followups=["Would information, practice, or temporary support matter most?", "Which boundary should remain respected?"]),
  ]),
 51: topic(
@@ -151,9 +151,9 @@ TOPICS = {
   prompt("What to avoid", "避けたい話題", "What would you avoid asking a stranger?", "知らない人には何を聞かないほうがよいですか？", ["Why could it feel too personal?", "Would the setting ever change that?"], full="Which topics would you avoid with a stranger?", full_ja="知らない人との会話では、どのような話題を避けますか？", full_followups=["Why might the topic feel intrusive?", "Could a different setting make it appropriate?"]),
   prompt("Easy to answer", "答えやすさ", "What makes an opening easy to answer?", "どのような最初の一言なら、答えやすいですか？", ["How specific should the question be?", "What lets the other person keep the reply short?"], full="What makes a small talk question inviting and easy to answer?", full_ja="どのような雑談の質問なら、答えやすく会話に入りやすいですか？", full_followups=["How specific should the opening be?", "What allows a brief reply without awkwardness?"]),
   prompt("A dead end", "続かなかった会話", "What kind of opening makes a conversation die quickly?", "どんな最初の一言だと、会話がすぐ終わりますか？", ["Is the problem the topic or the delivery?", "What might save it once?"], full="What kind of opening causes a conversation to stall immediately?", full_ja="どのような最初の一言だと、会話がすぐ止まりますか？", full_followups=["Is the problem usually the topic or the delivery?", "Which single follow-up might rescue it?"]),
-  prompt("Reading the signals", "反応を読む", "Which signals show that a stranger wants to keep talking?", "どのような反応から、相手が会話を続けたいと分かりますか？", ["What can a short answer mean?", "Which signal suggests it is time to stop?"], full="Which signals indicate that a stranger is genuinely open to continuing the conversation?", full_ja="どのような反応から、相手が本当に会話を続けたいと分かりますか？", full_followups=["How should a brief answer be interpreted?", "Which signal suggests a graceful ending is appropriate?"]),
+  prompt("Reading the signals", "反応を読む", "Which signals show that a stranger wants to keep talking?", "どのような反応から、相手が会話を続けたいと分かりますか？", ["What can a short answer mean?", "Which signal suggests it is time to stop?"], full="Which signals indicate that a stranger is genuinely open to continuing the conversation?", full_ja="どのような反応から、相手が本当に会話を続けたいと分かりますか？", full_followups=["What can a brief answer mean?", "Which sign suggests it is time to end the conversation politely?"]),
   prompt("When it fails", "失敗したとき", "What do you do when your opening does not work?", "最初の一言がうまくいかないとき、どうしますか？", ["Would you try one more question?", "How would you end politely?"], full="How do you respond when an opening fails to create a conversation?", full_ja="最初の一言から会話が続かなかったとき、どう対応しますか？", full_followups=["When is one more question appropriate?", "How would you close the exchange gracefully?"]),
-  prompt("A useful starter", "使えるきっかけ", "What conversation starter could you actually use this week?", "今週、実際に使えそうな会話のきっかけは何ですか？", ["Where could you use it?", "What answer would help you continue?"], full="Which conversation starter could you realistically use this week?", full_ja="今週、現実的に使えそうな会話のきっかけは何ですか？", full_followups=["In which setting could you use it?", "Which reply would give you a natural next question?"]),
+  prompt("A useful starter", "使えるきっかけ", "What conversation starter could you actually use this week?", "今週、実際に使えそうな会話のきっかけは何ですか？", ["Where could you use it?", "What answer would help you continue?"], full="Which conversation starter could you actually use this week?", full_ja="今週、実際に使えそうな会話のきっかけは何ですか？", full_followups=["In which setting could you use it?", "Which reply would give you a natural next question?"]),
  ]),
 52: topic(
  slug="how-you-make-up-after-an-argument", title="How you make up after an argument", ko="다툰 뒤 화해하는 방법", ja="けんかのあとの仲直りのしかた",
@@ -172,9 +172,9 @@ TOPICS = {
   ("Making up is successful when the next interaction can be more honest.", "Repair succeeds when the next interaction can be safer and more honest.", "次の会話をもっと正直にできるなら、仲直りは成功です。", "次のやり取りをより安心して、正直にできるなら、修復は成功です。"),
  ],
  prompts=[
-  prompt("Who moves first?", "先に動く人", "After an ordinary argument, who should reach out first?", "普通のけんかのあと、どちらが先に連絡するとよいですか？", ["Does reaching out mean accepting all the blame?", "What makes the first move difficult?"], full="After an ordinary argument, who should reach out and initiate contact?", full_ja="普通のけんかのあと、どちらが先に連絡を始めるべきですか？", full_followups=["Does initiating contact imply accepting sole responsibility?", "What makes the first move emotionally difficult?"]),
+  prompt("Who moves first?", "先に動く人", "After an ordinary argument, who should reach out first?", "普通のけんかのあと、どちらが先に連絡するとよいですか？", ["Does reaching out mean accepting all the blame?", "What makes the first move difficult?"], full="After an ordinary argument, who should reach out and initiate contact?", full_ja="普通のけんかのあと、どちらが先に連絡を始めるべきですか？", full_followups=["Does reaching out first mean taking all the blame?", "What makes the first move emotionally difficult?"]),
   prompt("How long", "かかる時間", "How much time helps people talk calmly after an argument?", "けんかのあと、落ち着いて話すためにどのくらい時間が役立ちますか？", ["What should happen during the pause?", "When does waiting make things worse?"], full="How much distance helps a calm conversation become possible after conflict?", full_ja="対立のあと、落ち着いた会話をするためにどのくらい距離を置くとよいですか？", full_followups=["How should the pause be used?", "When does distance begin to deepen the problem?"]),
-  prompt("The first message", "最初のメッセージ", "What should the first message after an argument say?", "けんかのあとの最初の連絡では、何を伝えるとよいですか？", ["Should it name the argument immediately?", "How can it avoid sounding defensive?"], full="How should the first message after an argument be worded?", full_ja="けんかのあとの最初の連絡は、どのような言葉で伝えるとよいですか？", full_followups=["Should it identify the disagreement immediately?", "How can the tone avoid sounding defensive?"]),
+  prompt("The first message", "最初のメッセージ", "What should the first message after an argument say?", "けんかのあとの最初の連絡では、何を伝えるとよいですか？", ["Should it name the argument immediately?", "How can it avoid sounding defensive?"], full="How should the first message after an argument be worded?", full_ja="けんかのあとの最初の連絡は、どのような言葉で伝えるとよいですか？", full_followups=["Should it mention the argument right away?", "How can the tone avoid sounding defensive?"]),
   prompt("What lies beneath", "表面の下にあること", "What does a small everyday disagreement often hide beneath the surface?", "日常の小さな意見の違いの奥には、何が隠れていることがありますか？", ["Could the real issue be respect, time, or responsibility?", "How can people identify the deeper issue?"], full="What underlying issue can a minor everyday disagreement conceal?", full_ja="日常の小さな意見の違いは、どのような根本的な問題を隠すことがありますか？", full_followups=["Could the real issue involve respect, time, or responsibility?", "How can both people identify the deeper disagreement?"]),
   prompt("What repairs it", "修復に役立つこと", "What makes an apology feel real?", "どんな謝罪なら本気だと感じますか？", ["Which detail should it name?", "What action should follow the words?"], full="What makes an apology feel credible?", full_ja="どのような謝罪なら信頼できると感じますか？", full_followups=["How specific should the apology be?", "Which action should follow the words?"]),
   prompt("Still unresolved", "まだ解決していないこと", "Can some arguments remain unfixed without ending a relationship?", "解決しないけんかがあっても、関係は続けられますか？", ["Which differences can people accept?", "When is a new boundary needed?"], full="Can some disagreements remain unresolved without destroying a relationship?", full_ja="解決しない意見の違いがあっても、関係を壊さずにいられますか？", full_followups=["Which differences can a relationship absorb?", "When does the disagreement require a new boundary?"]),
@@ -201,7 +201,7 @@ TOPICS = {
   prompt("Changing circles", "変わる人間関係", "Why do people's social circles change over time?", "人間関係は、時間とともになぜ変わるのでしょうか？", ["Which life change has the biggest effect?", "Why can the change happen gradually?"], full="Why do social circles tend to change across different stages of life?", full_ja="人生の段階が変わると、人間関係も変わりやすいのはなぜですか？", full_followups=["Which transition reshapes a social circle most strongly?", "Why can the shift be difficult to notice at first?"]),
   prompt("Changing routines", "変わる習慣", "Which routines make friends see each other more or less often?", "どのような生活習慣によって、友人と会う回数が増えたり減ったりしますか？", ["Which routine is easiest to adjust?", "How can two busy schedules stay connected?"], full="Which routines most strongly increase or reduce contact between friends?", full_ja="どのような生活習慣が、友人同士の連絡を最も増やしたり減らしたりしますか？", full_followups=["Which routine is most realistic to change?", "How can incompatible schedules still leave room for connection?"]),
   prompt("Drifting apart", "疎遠になる", "How can friends drift apart while still caring about each other?", "お互いを大切に思っていても、友人同士が疎遠になるのはなぜですか？", ["What may disappear first: time, routine, or shared interests?", "What can still remain meaningful?"], full="How can two friends grow apart without losing all affection for each other?", full_ja="お互いへの思いを失わなくても、二人の友人が疎遠になるのはなぜですか？", full_followups=["Which connection tends to weaken first?", "What part of the friendship may still retain value?"]),
-  prompt("Nobody's fault", "誰も悪くない変化", "When is a fading friendship nobody's fault?", "友情が薄れても、誰も悪くないと言えるのはどんなときですか？", ["Which changes happen without a clear choice?", "Why do people sometimes search for someone to blame?"], full="When is a fading friendship better explained by circumstance than by fault?", full_ja="友情が薄れる理由を、誰かの責任より状況の変化で説明できるのはどんなときですか？", full_followups=["Which circumstances change a relationship without deliberate action?", "Why can assigning blame feel simpler than accepting gradual change?"]),
+  prompt("Nobody's fault", "誰も悪くない変化", "When is a fading friendship nobody's fault?", "友情が薄れても、誰も悪くないと言えるのはどんなときですか？", ["Which changes happen without a clear choice?", "Why do people sometimes search for someone to blame?"], full="When is a fading friendship caused by a changing situation rather than anyone's fault?", full_ja="友情が薄れる理由を、誰かの責任より状況の変化で説明できるのはどんなときですか？", full_followups=["Which situations change a relationship without anyone choosing it?", "Why can assigning blame feel simpler than accepting gradual change?"]),
   prompt("The main cause", "主な原因", "Which matters most: distance, time, or people changing?", "距離、時間、人の変化のうち、どれが最も大きいですか？", ["Can two causes reinforce each other?", "Which one is easiest to overcome?"], full="Which factor matters most: distance, limited time, or personal change?", full_ja="距離、時間の不足、人の変化のうち、どれが最も大きいですか？", full_followups=["How might two factors reinforce each other?", "Which one is most realistic to overcome?"]),
   prompt("Normal or a problem", "自然か問題か", "Is a fading friendship normal, or is it a problem?", "友情が薄れるのは自然なことですか。それとも問題ですか？", ["What makes the difference?", "When does acceptance become avoidance?"], full="Is a fading friendship a normal transition or a problem that deserves attention?", full_ja="友情が薄れるのは自然な変化ですか。それとも向き合うべき問題ですか？", full_followups=["Which condition separates the two?", "When does acceptance become avoidance?"]),
   prompt("Worth renewing", "関係を戻す価値", "When is a faded friendship worth trying to renew?", "薄れた友情をもう一度取り戻そうとする価値があるのは、どんなときですか？", ["What could a low-pressure first message say?", "Which response would show that both people are interested?"], full="What makes a faded friendship worth a genuine attempt at renewal?", full_ja="薄れた友情を本気で取り戻そうとする価値があるのは、どのようなときですか？", full_followups=["How could contact be reopened without creating pressure?", "Which response would suggest mutual interest in rebuilding the connection?"]),
@@ -254,8 +254,8 @@ TOPICS = {
   prompt("Memorable wording", "記憶に残る言葉", "What makes the wording of advice easy to remember?", "どのような言い方だと、助言を覚えやすくなりますか？", ["Should it be short?", "How can an image or example help?"], full="Which qualities make the wording of advice especially memorable?", full_ja="助言の言い方を特に記憶に残りやすくするのは、どのような特徴ですか？", full_followups=["How much does brevity contribute?", "Why can an image or concrete example strengthen the message?"]),
   prompt("Who says it", "言う人", "Why does the source of advice matter?", "誰から聞くかによって、助言の受け取り方が変わるのはなぜですか？", ["What creates trust in the speaker?", "Could the same words feel different from someone else?"], full="Why can the source of advice matter as much as the words themselves?", full_ja="助言では、言葉そのものと同じくらい、誰が言ったかが重要になるのはなぜですか？", full_followups=["What gives the speaker credibility?", "How might identical advice feel different from another source?"]),
   prompt("The right moment", "意味を持つ時", "When does advice become relevant to someone's life?", "助言がその人の生活に関係するようになるのは、どんなときですか？", ["Can useful advice arrive too early?", "What makes people notice it later?"], full="What makes advice suddenly relevant at a particular moment in someone's life?", full_ja="ある瞬間に、助言が急に自分に関係するように感じられるのはなぜですか？", full_followups=["Can valuable advice be given before someone is ready for it?", "Which change can make an old message newly visible?"]),
-  prompt("Understanding later", "あとで分かること", "Why does some advice make sense only later?", "助言の意味があとになって分かることがあるのはなぜですか？", ["Which experience can change its meaning?", "Does understanding require agreeing?"], full="Why can experience make old advice clearer in hindsight?", full_ja="経験を重ねると、昔の助言が振り返って分かりやすくなるのはなぜですか？", full_followups=["Which kind of experience can change its interpretation?", "Can someone understand advice without ultimately agreeing with it?"]),
-  prompt("When it helps", "役立つ時", "When does advice help, and when can it fail?", "助言はどんなときに役立ち、どんなときに役立たないのでしょうか？", ["How much does the situation matter?", "When should advice be adapted?"], full="Which conditions make advice useful, and which conditions expose its limits?", full_ja="どのような条件で助言は役立ち、どのような条件で限界が見えますか？", full_followups=["How strongly does context determine its usefulness?", "When should the underlying idea be adapted rather than followed literally?"]),
+  prompt("Understanding later", "あとで分かること", "Why does some advice make sense only later?", "助言の意味があとになって分かることがあるのはなぜですか？", ["Which experience can change its meaning?", "Does understanding require agreeing?"], full="Why can experience make old advice clearer in hindsight?", full_ja="経験を重ねると、昔の助言が振り返って分かりやすくなるのはなぜですか？", full_followups=["Which kind of experience can change its meaning?", "Can someone understand advice without agreeing with it?"]),
+  prompt("When it helps", "役立つ時", "When does advice help, and when can it fail?", "助言はどんなときに役立ち、どんなときに役立たないのでしょうか？", ["How much does the situation matter?", "When should advice be changed for a new situation?"], full="Which conditions make advice useful, and which conditions expose its limits?", full_ja="どのような条件で助言は役立ち、どのような条件で限界が見えますか？", full_followups=["How strongly does context determine its usefulness?", "When should the main idea be changed for a new situation instead of followed exactly?"]),
   prompt("Worth sharing", "伝える価値", "When is advice valuable enough to pass on?", "助言を人に伝える価値があるのは、どんなときですか？", ["What should you know about their situation first?", "How can you share it without sounding controlling?"], full="What makes a piece of advice valuable enough to pass on?", full_ja="ある助言を人に伝える価値があると判断するのは、どのようなときですか？", full_followups=["Which part of the person's situation should be understood first?", "How can advice be offered without becoming an instruction?"]),
   prompt("Advice ignored", "助言に従わない理由", "Why do people sometimes ignore sound advice?", "よい助言でも、人が従わないことがあるのはなぜですか？", ["Can the right message come at the wrong time?", "When is choosing differently reasonable?"], full="Why might people reject advice that appears sensible?", full_ja="もっともらしい助言でも、人が受け入れないことがあるのはなぜですか？", full_followups=["How can timing weaken an otherwise sound message?", "When can a different choice be reasonable despite the advice?"]),
  ]),
@@ -281,11 +281,256 @@ TOPICS = {
   prompt("What you would say", "伝えること", "What information would you give first?", "最初にどんな情報を伝えますか？", ["Which detail would help them act?", "What could wait until later?"], full="Which information would you communicate first?", full_ja="最初にどの情報を伝えますか？", full_followups=["Which detail would enable useful action?", "Which information could safely wait?"]),
   prompt("First steps", "最初の行動", "Imagine an ordinary, safe emergency. What should happen first?", "身近で安全に話せる緊急事態を想像してください。最初に何をするべきですか？", ["Which information is needed immediately?", "Who or which service should receive it?"], full="Imagine a manageable emergency. What sequence of first steps would be most effective?", full_ja="対応可能な緊急事態を想像してください。最初にどのような順序で行動するのが効果的ですか？", full_followups=["Which information must be established immediately?", "Which person or service should receive that information first?"]),
   prompt("A support role", "支える役割", "Which emergency support role can an ordinary person handle well?", "緊急時に、一般の人がうまく担える支援の役割は何ですか？", ["What practical help could they provide?", "When should they involve a professional?"], full="Which useful role can a non-professional realistically play during an emergency?", full_ja="緊急時に、専門家ではない人が現実的に担える役割は何ですか？", full_followups=["Which practical need could they reliably meet?", "At what point should responsibility pass to a professional?"]),
-  prompt("Changing contacts", "変わる連絡先", "Why can a person's first-choice contact change over time?", "最初に連絡する相手が、時間とともに変わるのはなぜですか？", ["Which life change can reorder the network?", "What makes a contact remain reliable?"], full="Why might someone's preferred emergency contact change as circumstances evolve?", full_ja="状況の変化によって、緊急時に最初に連絡したい相手が変わるのはなぜですか？", full_followups=["Which transition can most strongly reorder the network?", "Which qualities allow one contact to remain dependable over time?"]),
+  prompt("Changing contacts", "変わる連絡先", "Why can a person's first-choice contact change over time?", "最初に連絡する相手が、時間とともに変わるのはなぜですか？", ["Which life change can most affect who someone calls first?", "What makes a contact remain reliable?"], full="Why might someone's preferred emergency contact change as circumstances evolve?", full_ja="状況の変化によって、緊急時に最初に連絡したい相手が変わるのはなぜですか？", full_followups=["Which life change can most affect who someone calls first?", "Which qualities allow one contact to remain dependable over time?"]),
   prompt("Distance", "距離", "How much does distance matter in an emergency?", "緊急時に、距離はどのくらい重要ですか？", ["Which help requires someone nearby?", "Which help can still come from far away?"], full="How does physical distance change the value of an emergency contact?", full_ja="物理的な距離は、緊急時の連絡先の価値をどのように変えますか？", full_followups=["Which forms of help require proximity?", "Which forms of support remain possible at a distance?"]),
-  prompt("A stronger network", "より強い支援体制", "What could make a support network of people and services more reliable before an emergency?", "緊急事態の前に、人やサービスを含む支援体制をもっと確かにするには何ができますか？", ["Which contact detail should be easy to find?", "Which person or service needs a clear role?"], full="What would make a support network of people and services more resilient before an emergency occurs?", full_ja="緊急事態が起きる前に、人やサービスを含む支援体制をもっと強くするには何が必要ですか？", full_followups=["Which information should be immediately accessible?", "Which person's or service's role or limit should be clarified in advance?"]),
+  prompt("A stronger network", "より強い支援体制", "What could make it easier to get reliable help before an emergency?", "緊急事態の前に、頼れる助けを受けやすくするには何ができますか？", ["Which contact detail should be easy to find?", "Which person or service needs a clear role?"], full="What can people do before an emergency to make getting help easier?", full_ja="緊急事態が起きる前に、助けを受けやすくするために何ができますか？", full_followups=["Which information should be immediately accessible?", "Which person's or service's role or limit should be clarified in advance?"]),
  ]),
 }
+
+# Keep Full conversational. Its extra depth belongs in the angle and probes,
+# not in formal synonyms that an adult would rarely use in ordinary speech.
+_PLAIN_FULL_PHRASES = (
+    ("What enables", "What helps"),
+    (" to endure", " to last"),
+    ("How does an ordinary meeting develop into", "How can an ordinary meeting turn into"),
+    ("evolve", "change"),
+    ("during demanding periods in both people's lives", "when both people are very busy"),
+    ("demonstrates", "shows"),
+    ("becoming an obligation", "feeling like a duty"),
+    ("is most damaging to", "hurts"),
+    ("meaningful repair require", "real repair take"),
+    ("favourable first impression deteriorate", "good first impression get worse"),
+    ("rapid first impression", "quick first impression"),
+    ("suspend judgment", "wait before judging"),
+    ("aspects of a person", "parts of someone's personality"),
+    ("significantly bolder", "much harder"),
+    ("enables some people to act alone with greater confidence", "helps some people feel confident doing things alone"),
+    ("boundary for solo activities shift", "comfort with doing things alone change"),
+    ("responsibly", "without taking a foolish risk"),
+    ("In which setting", "Where"),
+    ("indicate that", "show that"),
+    ("initiate contact", "make contact"),
+    ("after conflict", "after an argument"),
+    ("underlying issue", "real issue"),
+    ("conceal", "hide"),
+    ("credible", "real"),
+    ("reconciliation not the appropriate goal", "making up not the right goal"),
+    ("across different stages of life", "at different times in life"),
+    ("better explained by circumstance than by fault", "about changing circumstances rather than anyone's fault"),
+    ("genuine attempt at renewal", "real attempt to restart"),
+    ("contribute to", "bring to"),
+    ("sustain", "keep"),
+    ("reciprocal", "two-way"),
+    ("disclosure", "sharing"),
+    ("legitimate", "reasonable"),
+    ("incompatible", "a poor fit"),
+)
+
+
+def _plain_full_question(value: str) -> str:
+    for _old, _new in _PLAIN_FULL_PHRASES:
+        value = value.replace(_old, _new)
+    return value
+
+
+for _topic in TOPICS.values():
+    for _item in _topic["prompts"]:
+        _item["full"] = _plain_full_question(_item["full"])
+        _item["full_followups"] = [
+            _plain_full_question(_probe) for _probe in _item["full_followups"]
+        ]
+
+# These questions previously pointed backward to an opening, example, or
+# person. Naming the object again makes every page a usable fresh start.
+STANDALONE_QUESTION_REVISIONS = {
+    (48, 3): "What can make you completely change a first impression?",
+    (50, 7): "What small activity can help someone get used to doing things alone?",
+    (51, 2): "Where does a simple comment to a stranger work best?",
+    (51, 7): "What can you say when a conversation starter gets no response?",
+    (52, 3): "What could the first message after an argument say?",
+    (54, 1): "What makes someone easy to talk to often?",
+    (54, 2): "What makes an everyday conversation feel worth having?",
+    (56, 1): "What makes someone the right person to call in an emergency?",
+}
+for (_topic_no, _prompt_no), _question in STANDALONE_QUESTION_REVISIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["accessible"] = _question
+
+STANDALONE_FULL_REVISIONS = {
+    (48, 3): "What kind of moment can completely overturn a first impression?",
+    (50, 7): "Which smaller activity can prepare someone to do more things alone?",
+    (51, 2): "Where would a simple opening with a stranger feel most natural?",
+    (51, 7): "How can you recover when a conversation starter gets no response?",
+    (52, 3): "What would make a first message after an argument helpful?",
+    (54, 1): "What makes one person especially easy to talk to regularly?",
+    (54, 2): "What gives an everyday conversation real value?",
+    (56, 1): "Which qualities make someone a good person to call in an emergency?",
+}
+for (_topic_no, _prompt_no), _question in STANDALONE_FULL_REVISIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["full"] = _question
+
+# Final read-aloud pass: these are the places where a synonym swap still
+# sounded like a survey or essay question.
+_FINAL_FULL_QUESTIONS = {
+    (48, 1): "Why can a strong first impression still be completely wrong?",
+    (48, 2): "Which small details shape a first impression fastest?",
+    (48, 4): "Why do some first impressions change quickly while others stick?",
+    (48, 5): "What missing information can make a first impression unfair?",
+    (48, 8): "Which parts of someone's personality are easiest to misread at first?",
+    (50, 1): "Which activity would feel hardest for you to do alone?",
+    (50, 4): "What's the biggest freedom—and the biggest pressure—in doing something alone?",
+    (50, 5): "What helps some people feel comfortable doing more things alone?",
+    (50, 8): "What helps someone expand their comfort zone without taking a silly risk?",
+    (51, 5): "What kind of opening makes a conversation die quickly?",
+    (51, 6): "How can you tell that a stranger wants to keep talking?",
+    (52, 2): "How much time apart helps people talk calmly after an argument?",
+    (52, 6): "Can people stay close even when one disagreement is never fully solved?",
+    (53, 2): "Which everyday routines make friends see each other more—or less—often?",
+    (53, 3): "How can friends grow apart while still caring about each other?",
+    (53, 6): "When is a fading friendship simply normal, and when is it a problem?",
+    (54, 1): "What makes someone easy to talk to?",
+    (54, 2): "What makes an everyday conversation feel worth having?",
+    (54, 3): "How often can people stay in touch without making it feel like a duty?",
+    (54, 4): "What kinds of conversation make people feel closer over time?",
+    (54, 5): "Why is one subject easy to discuss with one person but hard with another?",
+    (54, 6): "Why does the person we talk to most sometimes change?",
+    (54, 7): "Who do people tend to talk to most at different times in life?",
+    (54, 8): "What helps people stay in touch without turning it into a duty?",
+    (55, 1): "Why does some advice stay with us for years?",
+    (55, 2): "What wording can make a piece of advice easy to remember?",
+    (55, 3): "Why can the person giving advice matter as much as the words?",
+    (55, 4): "When can old advice suddenly start making sense?",
+    (55, 5): "Why can experience make old advice clearer?",
+    (55, 6): "When is advice useful, and when does it stop fitting?",
+    (55, 7): "What makes advice worth passing on to someone else?",
+    (55, 8): "Why do people sometimes reject good advice?",
+    (56, 1): "What makes someone the right person to call first in an emergency?",
+    (56, 2): "When should a person, emergency service, or other service be called first?",
+    (56, 3): "What information should you give first in an emergency call?",
+    (56, 4): "In a manageable emergency, what should happen first, second, and third?",
+    (56, 5): "What can an ordinary person safely do while professional help is coming?",
+    (56, 6): "Why might the best emergency contact change over time?",
+    (56, 7): "How does distance affect who is useful in an emergency?",
+    (56, 8): "What can people do before an emergency to make getting help easier?",
+}
+for (_topic_no, _prompt_no), _question in _FINAL_FULL_QUESTIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["full"] = _question
+
+# The authoritative openings are shared by both versions.
+TOPICS[54]["prompts"][0].update(
+    accessible="What makes someone easy to talk to?",
+    full="What makes one person especially easy to talk to?",
+)
+TOPICS[56]["prompts"][0].update(
+    accessible="What makes someone the right person to call first in an emergency?",
+    full="Which qualities make someone the right first call in an emergency?",
+)
+
+# Concrete entry points keep each eight-page pool from reading like a survey.
+_CONCRETE_MAIN_QUESTIONS = {
+    (47, 2): ("Where do strong friendships often begin?", "What kind of ordinary meeting can grow into a strong friendship?"),
+    (47, 4): ("When friends are busy, which is better: short messages often or long talks sometimes?", "When friends are busy, what kind of contact keeps them close without creating pressure?"),
+    (48, 2): ("Which detail affects a first impression most: voice, expression, clothes, or something else?", "Which small detail can shape a first impression more than it should?"),
+    (48, 6): ("What can make a good first impression turn bad?", "What warning sign can completely reverse a good first impression?"),
+    (50, 2): ("Which feels harder alone: eating out, travelling, or going to an event?", "Which solo activity feels easy to some people but very bold to others?"),
+    (52, 5): ("Which matters more in an apology: the words or what happens next?", "Which makes an apology believable: exact words, changed behaviour, or both?"),
+    (53, 5): ("What makes friends drift apart fastest: distance, busy lives, or changing interests?", "Which usually changes a friendship most: distance, lack of time, or becoming different people?"),
+    (54, 3): ("Which keeps people closer: a short message every day or a long talk once a month?", "Which contact rhythm feels closer to you: frequent short messages or occasional long conversations?"),
+    (55, 4): ("What advice only starts making sense when life changes?", "What kind of advice can sound ordinary until the right moment arrives?"),
+    (56, 4): ("What should someone do first after losing their phone and wallet?", "What should happen first when someone loses their phone and wallet in an unfamiliar place?"),
+}
+for (_topic_no, _prompt_no), (_accessible, _full) in _CONCRETE_MAIN_QUESTIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible=_accessible, full=_full
+    )
+
+_CONCRETE_JAPANESE = {
+    (47, 2): ("強い友情は、どこで始まることが多いですか？", "どんな普通の出会いが、強い友情に育つことがありますか？"),
+    (47, 4): ("友人同士が忙しいとき、短いメッセージをよく送ることと、ときどき長く話すことでは、どちらがよいですか？", "友人同士が忙しいとき、プレッシャーを生まずに親しさを保つのは、どんな連絡ですか？"),
+    (48, 2): ("第一印象に最も影響するのは、声、表情、服装、それとも別のものですか？", "どんな小さな細部が、必要以上に第一印象を左右することがありますか？"),
+    (48, 6): ("よい第一印象が悪くなるきっかけは何ですか？", "どんな危険信号が、よい第一印象を完全に変えることがありますか？"),
+    (50, 2): ("一人でするなら、外食、旅行、イベントに行くことのどれが最も難しいですか？", "ある人には簡単でも、別の人にはとても勇気が必要な一人行動は何ですか？"),
+    (52, 5): ("謝罪では、言葉とその後の行動のどちらが大切ですか？", "謝罪を信じられるものにするのは、正確な言葉、変わった行動、それとも両方ですか？"),
+    (53, 5): ("友人が最も早く疎遠になる原因は、距離、忙しい生活、興味の変化のどれですか？", "友情を最も変えるのは、距離、時間不足、人が変わることのどれですか？"),
+    (54, 3): ("毎日の短いメッセージと月一回の長い会話では、どちらが人をより親しく保ちますか？", "頻繁な短いメッセージと、ときどきの長い会話では、どちらがより親しく感じますか？"),
+    (55, 4): ("生活が変わって初めて意味が分かる助言は、どんなものですか？", "適切な時が来るまでは普通に聞こえる助言には、どんなものがありますか？"),
+    (56, 4): ("携帯電話と財布をなくしたら、最初に何をすべきですか？", "知らない場所で携帯電話と財布をなくしたら、最初に何をすべきですか？"),
+}
+for (_topic_no, _prompt_no), (_accessible_ja, _full_ja) in _CONCRETE_JAPANESE.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible_ja=_accessible_ja, full_ja=_full_ja
+    )
+
+TOPICS[51]["prompts"][4]["full"] = "Which kind of opening makes a conversation die quickly?"
+TOPICS[52]["prompts"][4]["full"] = "What makes an apology believable?"
+TOPICS[52]["prompts"][6]["full"] = "When is repairing the relationship not the right goal?"
+TOPICS[54]["prompts"][1]["full"] = "What can make an everyday conversation feel worth having?"
+TOPICS[55]["prompts"][6]["full"] = "When is advice good enough to pass on to someone else?"
+
+# Tutor probes must sound like the next thing a person would actually ask.
+_PLAIN_PROBE_REVISIONS = {
+    "When is growing apart a natural transition?": "When is growing apart simply a normal change?",
+    "Which contribution comes naturally to you?": "What do you naturally bring to a friendship?",
+    "Which contribution comes most naturally to you?": "What do you most naturally bring to a friendship?",
+    "What important context is missing at first?": "What important detail is missing at first?",
+    "Which detail is especially easy to misinterpret?": "Which detail is especially easy to read the wrong way?",
+    "What crucial context is unavailable at first?": "What important fact is still missing?",
+    "How might the surrounding context alter it?": "How might the situation change the impression?",
+    "When is a pattern more persuasive?": "When is a repeated pattern more convincing?",
+    "What makes someone resist new evidence?": "What makes someone ignore new information?",
+    "What makes a judgment resistant to contrary evidence?": "Why can a first judgment stay strong after new information appears?",
+    "How much evidence would justify the revision?": "How much new information would make the change fair?",
+    "Which immediate context do both people share?": "What can both people notice in that moment?",
+    "Which condition would need to change first?": "What would need to change first?",
+    "Which transition reshapes a social circle most strongly?": "Which life change affects a social circle most?",
+    "What part of the friendship may still retain value?": "What part of the friendship may still matter?",
+    "Which condition separates the two?": "What separates the two?",
+    "How strongly does context determine its usefulness?": "How much does the situation affect whether it helps?",
+    "Which transition can most strongly reorder the network?": "Which life change can most affect who someone calls first?",
+}
+for _topic in TOPICS.values():
+    for _item in _topic["prompts"]:
+        for _key in ("accessible_followups", "full_followups"):
+            _item[_key] = [_PLAIN_PROBE_REVISIONS.get(_probe, _probe) for _probe in _item[_key]]
+
+# FT54 received a full page-by-page read-aloud because it was the clearest
+# example of an abstract pool hiding behind structural green checks.
+_FT54_FOLLOWUPS = (
+    (("Does routine make someone easier to talk to?", "Can solving everyday problems together create closeness?"), ("How much does routine shape the connection?", "Can regular everyday contact grow into real closeness?")),
+    (("Is it the trust, the timing, or the subject?", "Can the value of the conversation change quickly?"), ("Does the value come from trust, availability, or a shared need?", "What could quickly make the conversation feel less useful?")),
+    (("How much silence feels comfortable?", "When does frequent contact start to feel like pressure?"), ("How much silence can close people comfortably have?", "When does frequent contact start to feel like a duty?")),
+    (("Do close conversations always need personal details?", "Can ordinary daily talk build closeness?"), ("Do deeper conversations always require personal details?", "How can ordinary daily talk build trust?")),
+    (("How does trust change what feels safe to discuss?", "Can timing matter more than the subject?"), ("How does trust change the boundary?", "When does timing matter more than the subject itself?")),
+    (("Which life change affects contact most?", "Can a new way of messaging change the relationship?"), ("Which life change affects contact most?", "How can a new way of communicating change the relationship itself?")),
+    (("Which time of life changes people's contacts most?", "Why can someone from the past still matter?"), ("Which life change most affects who people talk to?", "Why can a person from an earlier part of life still matter?")),
+    (("How much silence is comfortable?", "What kind of message is easy to answer?"), ("How much silence can the relationship comfortably hold?", "Which kind of message invites an easy response?")),
+)
+for _item, (_accessible_probes, _full_probes) in zip(TOPICS[54]["prompts"], _FT54_FOLLOWUPS, strict=True):
+    _item.update(accessible_followups=list(_accessible_probes), full_followups=list(_full_probes))
+
+TOPICS[54]["prompts"][0].update(
+    accessible_ja="話しやすい人には、どんな特徴がありますか？",
+    full_ja="特に話しやすい人には、どんな特徴がありますか？",
+)
+TOPICS[54]["prompts"][1].update(
+    accessible_ja="日常の会話に、話す価値があると感じるのはなぜですか？",
+    full_ja="日常の会話に、話す価値があると感じさせるものは何ですか？",
+)
+TOPICS[54]["prompts"][5].update(
+    full_ja="いちばんよく話す相手が変わることがあるのはなぜですか？",
+)
+TOPICS[54]["prompts"][6].update(
+    full_ja="人生の時期によって、人はいちばん誰と話すことが多いですか？",
+)
+TOPICS[48]["prompts"][0].update(
+    accessible="Which is easier to misread at first: a quiet person or a very talkative person?",
+    accessible_ja="最初に誤解しやすいのは、静かな人とよく話す人のどちらですか？",
+    full="Who is easier to misread at first: someone very quiet or someone very talkative?",
+)
+TOPICS[55]["prompts"][0].update(
+    accessible="Which is easier to remember: a short piece of advice or a personal story?",
+    accessible_ja="短い助言と個人的な話では、どちらが覚えやすいですか？",
+    full="Which stays with people longer: a short piece of advice or the story behind it?",
+)
 
 
 CLAIM_ORDER = {number: tuple(f"{number}-{index:02d}" for index in range(1, 11)) for number in TOPIC_NUMBERS}
@@ -363,6 +608,345 @@ def question_page(page_id: str, number: str, item: dict, variant: str) -> str:
 def output_path(topic_no: int, variant: str) -> pathlib.Path:
     slug = f'{topic_no:02d}-{TOPICS[topic_no]["slug"]}'
     return TRACK / "courses" / f"{COURSE}-{variant}" / "lessons" / slug / "lesson.html"
+
+
+_FINAL_CONVERSATION_PATCHES = {
+    (47, 8): {
+        "accessible_followups": [
+            "How would your friends describe what you add?",
+            "What would you like to do better?",
+        ],
+        "full_followups": [
+            "How would close friends describe what you bring to the relationship?",
+            "What would you still like to improve?",
+        ],
+    },
+    (48, 1): {
+        "full_ja": "最初に誤解しやすいのは、とても静かな人ととてもよく話す人のどちらですか？",
+    },
+    (51, 2): {
+        "accessible_ja": "知らない人への簡単な声のかけ方が、最も自然に感じるのはどこですか？",
+        "full_ja": "知らない人への簡単な声のかけ方が、最も自然に感じるのはどこですか？",
+    },
+    (53, 2): {
+        "full_followups": [
+            "Which routine is easiest to change?",
+            "How can friends with different schedules still stay connected?",
+        ],
+    },
+    (54, 8): {
+        "title": "Staying close across gaps",
+        "title_ja": "間が空いても親しくいる",
+        "accessible": "What helps friends stay in touch when they cannot talk often?",
+        "accessible_ja": "二人があまり話せないときも、友人同士が連絡を続けるには何が役立ちますか？",
+        "accessible_followups": [
+            "What can show that the friendship is still strong?",
+            "What kind of contact matters most after a long gap?",
+        ],
+        "full": "What helps close friends stay in touch through a long quiet period?",
+        "full_ja": "長く連絡がない時期も、親しい友人同士がつながり続けるには何が役立ちますか？",
+        "full_followups": [
+            "What keeps the friendship from feeling forgotten?",
+            "How can people reconnect without making the gap awkward?",
+        ],
+    },
+    (55, 1): {
+        "full_ja": "短い助言と、その背景にある話では、どちらが長く心に残りますか？",
+        "full_followups": [
+            "Did hearing it at the right time matter?",
+            "Why can a simple idea be easier to remember than a long explanation?",
+        ],
+    },
+    (55, 2): {
+        "full_followups": [
+            "Does being short make it easier to remember?",
+            "Why can an image or example make the advice stronger?",
+        ],
+    },
+    (55, 3): {
+        "full_followups": [
+            "Why do you trust that person?",
+            "Would the same advice feel different from someone else?",
+        ],
+    },
+    (55, 4): {
+        "full_followups": [
+            "Can good advice arrive before someone is ready for it?",
+            "What change can make old advice suddenly feel useful?",
+        ],
+    },
+    (55, 5): {
+        "title": "Advice not to follow",
+        "title_ja": "従わなくてもよい助言",
+        "accessible": "When is it okay not to follow advice from someone you trust?",
+        "accessible_ja": "信頼している人の助言に従わなくてもよいのは、どんなときですか？",
+        "accessible_followups": [
+            "What part of the advice might not fit?",
+            "How can you disagree respectfully?",
+        ],
+        "full": "When should someone question advice from a person they trust?",
+        "full_ja": "信頼している人の助言でも、どんなときには疑って考えるべきですか？",
+        "full_followups": [
+            "What might the adviser not understand about the situation?",
+            "How can someone say no without rejecting the relationship?",
+        ],
+    },
+    (55, 8): {
+        "full_followups": [
+            "How can bad timing weaken good advice?",
+            "When can ignoring the advice be reasonable?",
+        ],
+    },
+    (56, 1): {
+        "accessible_ja": "緊急時に最初に連絡する相手には、どんな特徴が必要ですか？",
+        "full_ja": "緊急時に最初に連絡する相手には、どんな特徴が必要ですか？",
+    },
+    (56, 2): {
+        "accessible": "In which emergency should you call a service before someone you know?",
+        "accessible_ja": "どんな緊急時には、知り合いより先にサービスへ連絡すべきですか？",
+        "full_followups": [
+            "What help can that person or service give?",
+            "When would someone else need to take over?",
+        ],
+    },
+    (56, 3): {
+        "accessible": "What information would you give first in an emergency call?",
+        "accessible_ja": "緊急電話では、最初にどんな情報を伝えますか？",
+        "full_ja": "緊急電話では、最初にどの情報を伝えるべきですか？",
+    },
+    (56, 7): {
+        "full_followups": [
+            "Which kinds of help need someone nearby?",
+            "What help can still be given from far away?",
+        ],
+    },
+    (56, 8): {
+        "full_followups": [
+            "Which details should be easy to find?",
+            "Which person or service needs a clear role?",
+        ],
+    },
+}
+for (_topic_no, _prompt_no), _changes in _FINAL_CONVERSATION_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
+
+
+_THREE_SECOND_PATCHES = {
+    (47, 1): {
+        "accessible_followups": ["Which life change tests a friendship most?", "What can friends do to stay close?"],
+        "full_followups": ["Which life change tests a friendship most?", "What can friends do to stay close?"],
+    },
+    (47, 2): {
+        "full_followups": ["What gives the two people something to talk about?", "When do they start feeling like close friends?"],
+    },
+    (47, 3): {
+        "accessible_followups": ["Which changes can be healthy?", "What should still feel familiar?"],
+        "full_followups": ["Which changes can be healthy?", "What should still feel familiar?"],
+    },
+    (47, 5): {
+        "accessible_followups": ["Why does it hurt the friendship?", "What would the person need to do next?"],
+        "full_followups": ["Why does it hurt the friendship?", "What would the person need to do next?"],
+    },
+    (48, 1): {
+        "accessible_followups": ["Would you trust a quiet person or a talkative person faster?", "What important fact is missing at first?"],
+        "full_followups": ["Would you trust a quiet person or a talkative person faster?", "What important fact is missing at first?"],
+    },
+    (48, 2): {
+        "accessible_followups": ["Why does that detail feel important?", "What else would you want to know?"],
+        "full": "Which small detail can affect a first impression too much?",
+        "full_ja": "どんな小さな点が、第一印象に影響しすぎることがありますか？",
+        "full_followups": ["Why does that detail seem important?", "How could the setting change the impression?"],
+    },
+    (48, 4): {
+        "full_followups": ["Why might someone ignore new information?", "What could help the impression change?"],
+    },
+    (48, 5): {
+        "accessible": "What might explain a bad first impression?",
+        "accessible_ja": "悪い第一印象の理由として、何が考えられますか？",
+        "full": "What could explain someone's bad first impression?",
+        "full_ja": "誰かの悪い第一印象は、何が原因かもしれませんか？",
+        "accessible_followups": ["Could tiredness or nervousness explain the behaviour?", "What would you want to know before judging?"],
+        "full_followups": ["Could tiredness or nervousness explain the behaviour?", "What would you want to know before judging?"],
+    },
+    (48, 7): {
+        "full_followups": ["When can a quick impression become unfair?", "What should make us wait before judging?"],
+    },
+    (50, 2): {
+        "full": "Which feels hardest alone: eating out, travelling, or going to an event?",
+        "full_ja": "一人でするのが最も難しく感じるのは、外食、旅行、イベント参加のどれですか？",
+        "full_followups": ["Do other people's reactions matter?", "Which practical problem matters most?"],
+    },
+    (50, 3): {
+        "accessible": "Which would you try alone first: a café, a movie, or a short trip?",
+        "accessible_ja": "最初に一人で試すなら、カフェ、映画、短い旅行のどれですか？",
+        "full": "Which solo plan would you try first: a restaurant meal, a movie, or a day trip?",
+        "full_ja": "最初に一人で試すなら、レストランでの食事、映画、日帰り旅行のどれですか？",
+        "full_followups": ["Which moment would feel hardest?", "What could make it enjoyable?"],
+    },
+    (50, 4): {
+        "accessible": "What is the best part of doing an activity alone?",
+        "accessible_ja": "活動を一人ですることの、いちばんよい点は何ですか？",
+        "full": "What is the biggest freedom in doing something alone?",
+        "full_ja": "何かを一人でするときの、いちばん大きな自由は何ですか？",
+        "accessible_followups": ["Which decision becomes easier?", "Which problem would you rather share?"],
+        "full_followups": ["Which decision becomes easier?", "Which responsibility would you rather share?"],
+    },
+    (50, 5): {
+        "accessible_followups": ["What skill makes going alone easier?", "How can one good experience build confidence?"],
+        "full_followups": ["What skill makes going alone easier?", "How can one good experience build confidence?"],
+    },
+    (50, 6): {
+        "accessible": "How can someone's comfort with doing things alone change over time?",
+        "accessible_ja": "一人で行動することへの安心感は、時間とともにどう変わりますか？",
+        "full_ja": "一人で行動することへの気楽さは、時間とともにどう変わりますか？",
+        "full_followups": ["What experience could make going alone easier?", "What could make it feel harder again?"],
+    },
+    (50, 7): {
+        "full": "What small activity can prepare someone to do more things alone?",
+        "full_ja": "一人でできることを増やすために、どんな小さな活動が準備になりますか？",
+        "accessible_followups": ["How could they make it feel safer?", "What would show they are ready for more?"],
+        "full_followups": ["How could they make it feel safer?", "What would show they are ready for more?"],
+    },
+    (50, 8): {
+        "accessible_followups": ["Would information, practice, or company help most?", "When would the activity still be too risky?"],
+        "full_followups": ["Would information, practice, or temporary help matter most?", "When would the activity still be too risky?"],
+    },
+    (51, 4): {
+        "full": "What makes a small talk question easy to answer?",
+        "full_ja": "どんな雑談の質問なら答えやすいですか？",
+        "full_followups": ["Should it be general or specific?", "How can the other person give a short answer?"],
+    },
+    (51, 5): {
+        "accessible_followups": ["Is the problem the topic or the way it was said?", "What simple question might save the conversation?"],
+        "full_followups": ["Is the problem the topic or the way it was said?", "What simple question might save the conversation?"],
+    },
+    (51, 7): {
+        "full": "What can you do when a conversation starter gets no response?",
+        "full_ja": "会話のきっかけに反応がなかったら、何ができますか？",
+        "full_followups": ["Would you try one more question?", "How would you end politely?"],
+    },
+    (52, 4): {
+        "accessible": "What bigger problem can hide behind a small argument?",
+        "accessible_ja": "小さな口論の裏に、どんな大きな問題が隠れていることがありますか？",
+        "full": "What larger problem can hide behind a small argument?",
+        "full_ja": "小さな口論の裏に、どんなより大きな問題が隠れていることがありますか？",
+        "accessible_followups": ["Could it be about respect, time, or responsibility?", "How could the two people talk about the real problem?"],
+        "full_followups": ["Could it be about respect, time, or responsibility?", "How could the two people talk about the real problem?"],
+    },
+    (52, 6): {
+        "accessible_followups": ["Which differences can people accept?", "When would they need a new rule?"],
+        "full_followups": ["Which differences can people accept?", "When would they need a new rule?"],
+    },
+    (52, 8): {
+        "full_followups": ["Who should speak first?", "How would they know things were better?"],
+    },
+    (53, 3): {
+        "accessible_followups": ["What can still matter to both friends?", "Could one message make the friendship easier to restart?"],
+    },
+    (53, 4): {
+        "full": "When can a friendship fade without either person being at fault?",
+        "full_ja": "どちらにも非がなくても、友情が薄れていくことがあるのはどんなときですか？",
+        "full_followups": ["Which life changes can cause it?", "Why do people still look for someone to blame?"],
+    },
+    (53, 5): {
+        "accessible_followups": ["Can two causes happen together?", "Which one is easiest to overcome?"],
+        "full_followups": ["Can two causes happen together?", "Which one is easiest to overcome?"],
+    },
+    (53, 6): {
+        "accessible_followups": ["What makes it feel normal?", "When should someone try to fix it?"],
+        "full_followups": ["What makes it feel normal?", "When should someone try to fix it?"],
+    },
+    (53, 7): {
+        "full": "When is an old friendship worth trying to restart?",
+        "full_ja": "昔の友情をもう一度始めてみる価値があるのは、どんなときですか？",
+        "full_followups": ["What could the first message say?", "What reply would show that both people are interested?"],
+    },
+    (53, 8): {
+        "full": "What can people do when a friendship starts to fade?",
+        "full_ja": "友情が薄れ始めたとき、人は何ができますか？",
+        "full_followups": ["Which friendship deserves another try?", "Can an old friendship still matter without restarting it?"],
+    },
+    (54, 2): {
+        "accessible": "What makes a short everyday chat feel good?",
+        "accessible_ja": "短い日常会話が心地よく感じられるのは何ですか？",
+        "full": "What makes a short everyday chat feel important?",
+        "full_ja": "短い日常会話が大切に感じられるのは何ですか？",
+        "accessible_followups": ["Is it the person, the timing, or the subject?", "When can a short chat improve your day?"],
+        "full_followups": ["Is it the person, the timing, or the subject?", "When can a short chat improve your day?"],
+    },
+    (54, 3): {
+        "full": "Which makes people feel closer: frequent short messages or occasional long conversations?",
+        "full_ja": "頻繁な短いメッセージと、ときどきの長い会話では、どちらが人をより親しく感じさせますか？",
+    },
+    (54, 5): {
+        "accessible_followups": ["What topics need more trust?", "When can timing matter more than the topic?"],
+        "full_followups": ["What topics need more trust?", "When can timing matter more than the topic?"],
+    },
+    (54, 6): {
+        "accessible": "Why can the person you talk to most change over time?",
+        "accessible_ja": "いちばんよく話す相手が、時間とともに変わることがあるのはなぜですか？",
+        "full": "Why might someone's closest daily contact change over time?",
+        "full_ja": "日頃いちばんよく話す相手が、時間とともに変わることがあるのはなぜですか？",
+        "accessible_followups": ["Which life change can cause it?", "Can messaging someone more often change the relationship?"],
+        "full_followups": ["Which life change can cause it?", "Can messaging someone more often change the relationship?"],
+    },
+    (54, 7): {
+        "accessible": "Who do people often talk to most after starting a new job or moving?",
+        "accessible_ja": "新しい仕事を始めたり引っ越したりしたあと、人はいちばん誰と話すことが多いですか？",
+        "full": "After a new job or a move, who often becomes the person someone talks to most?",
+        "full_ja": "新しい仕事や引っ越しのあと、いちばんよく話す相手になりやすいのは誰ですか？",
+        "accessible_followups": ["Why does that person become important?", "Who from the past might still matter?"],
+        "full_followups": ["Why does that person become important?", "Who from the past might still matter?"],
+    },
+    (55, 3): {
+        "accessible_followups": ["What makes you trust the person?", "Would the same advice feel different from someone else?"],
+        "full_followups": ["What makes you trust the person?", "Would the same advice feel different from someone else?"],
+    },
+    (55, 6): {
+        "accessible": "What can make good advice stop being useful?",
+        "accessible_ja": "よい助言が役に立たなくなるのは、どんなときですか？",
+        "full": "What can make good advice stop fitting someone's situation?",
+        "full_ja": "よい助言が、その人の状況に合わなくなるのは何ですか？",
+        "accessible_followups": ["Did the situation change?", "Could the advice be adjusted?"],
+        "full_followups": ["Did the situation change?", "Could the advice be adjusted?"],
+    },
+    (56, 1): {
+        "full": "In an emergency, what makes one person the best first call?",
+        "full_ja": "緊急時に、ある人が最初の電話相手として最適なのはなぜですか？",
+        "full_followups": ["When should you call a professional service first?", "When is a trusted person more useful?"],
+    },
+    (56, 2): {
+        "full": "Which emergencies require a service before a friend or relative?",
+        "full_ja": "友人や親族より先にサービスへ電話すべき緊急事態はどれですか？",
+        "full_followups": ["What could the service do immediately?", "When would you call someone you know too?"],
+    },
+    (56, 3): {
+        "full_followups": ["Which detail would help them act?", "What could wait until later?"],
+    },
+    (56, 4): {
+        "full": "What should someone do first after losing a phone and wallet away from home?",
+        "full_ja": "外出先で携帯電話と財布をなくしたら、最初に何をすべきですか？",
+        "full_followups": ["Which information is needed immediately?", "Who or which service should get it first?"],
+    },
+    (56, 5): {
+        "accessible": "What can an ordinary person safely do while professional help is coming?",
+        "accessible_ja": "専門家の助けが来るまで、普通の人が安全にできることは何ですか？",
+        "accessible_followups": ["What practical help could they give?", "When should they step back?"],
+        "full": "While professional help is coming, what can an ordinary person safely do?",
+        "full_ja": "専門家の助けが来るまでの間、普通の人が安全にできることは何ですか？",
+        "full_followups": ["What practical help could they give?", "When should they step back?"],
+    },
+    (56, 8): {
+        "accessible": "What can someone prepare before an emergency?",
+        "accessible_ja": "緊急事態の前に、何を準備しておけますか？",
+        "full": "What should people prepare before an emergency happens?",
+        "full_ja": "緊急事態が起きる前に、人は何を準備しておくべきですか？",
+        "accessible_followups": ["Which contact detail should be easy to find?", "Who should know what to do?"],
+        "full_followups": ["Which contact detail should be easy to find?", "Who should know what to do?"],
+    },
+}
+for (_topic_no, _prompt_no), _changes in _THREE_SECOND_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
 
 
 def build(topic_no: int, variant: str) -> str:

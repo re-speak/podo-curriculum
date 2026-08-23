@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-full/lessons/106-what-speaking-english-has-made-you-notice/lesson.html`
-- SHA-256: `b99e65ec82738df879f8ebbae0426d6f588a21c88a1c8f02c2bdb31ca8aec1fa`
+- SHA-256: `e779544b903cec54ff1bef74dd6644b005f5eb73892f71496492923df9472a1a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “Which contrast between English and Japanese has become most salient through speaking practice?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which contrast between English and Japanese has become most salient through speaking practice?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which contrast between English and Japanese has become most salient through speaking practice? / 話す練習を通して、英語と日本語のどんな対照が最も目立つようになりましたか？ Follow-up pool: Which experience revealed the contrast? Why does speaking make it more visible?
-- Learning target: Develop the distinct “opening” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A difference you notice” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which contrast between English and Japanese has become most salient through speaking practice?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “話す練習を通して、英語と日本語のどんな対照が最も目立つようになりましたか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which contrast between English and Japanese has become most salient through speaking practice?"]}`
+- Learner action: Answer the standalone question “What has speaking English made you notice about Japanese?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What has speaking English made you notice about Japanese?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What has speaking English made you notice about Japanese?” / “英語を話すことで、日本語について何に気づきましたか？” Tutor follow-ups: “Which experience made the language difference clear?” and “Which feels more direct to you: English or Japanese?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “英語を話すことで、日本語について何に気づきましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What has speaking English made you notice about Japanese?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which specific exchange best demonstrates that contrast?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which specific exchange best demonstrates that contrast?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which specific exchange best demonstrates that contrast? / どの具体的なやり取りが、その対照を最もよく示しますか？ Follow-up pool: How would the English version sound? What expectation shapes the Japanese version?
-- Learning target: Develop the distinct “notice” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “One clear example” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which specific exchange best demonstrates that contrast?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どの具体的なやり取りが、その対照を最もよく示しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which specific exchange best demonstrates that contrast?"]}`
+- Learner action: Answer the standalone question “Which is harder to translate naturally: an English joke or an apology?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is harder to translate naturally: an English joke or an apology?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is harder to translate naturally: an English joke or an apology?” / “自然に訳すのが難しいのは、英語の冗談と謝罪のどちらですか？” Tutor follow-ups: “Does the tone change in Japanese?” and “Which matters more in translation: the exact words or the feeling?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自然に訳すのが難しいのは、英語の冗談と謝罪のどちらですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is harder to translate naturally: an English joke or an apology?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Does the contrast lie mainly in wording, directness, turn-taking, or silence?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Does the contrast lie mainly in wording, directness, turn-taking, or silence?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Does the contrast lie mainly in wording, directness, turn-taking, or silence? / その対照は主に、言葉遣い、直接さ、会話の順番、沈黙のどこにありますか？ Follow-up pool: Which feature resists direct translation? What expectation could cause misunderstanding?
-- Learning target: Develop the distinct “direction” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Words, tone, timing, or silence” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Does the contrast lie mainly in wording, directness, turn-taking, or silence?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “その対照は主に、言葉遣い、直接さ、会話の順番、沈黙のどこにありますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does the contrast lie mainly in wording, directness, turn-taking, or silence?"]}`
+- Learner action: Answer the standalone question “Which is easier to say directly in English: a request, an opinion, or a refusal?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is easier to say directly in English: a request, an opinion, or a refusal?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is easier to say directly in English: a request, an opinion, or a refusal?” / “英語で直接言いやすいのは、お願い、意見、断りのどれですか？” Tutor follow-ups: “How would you say it differently in Japanese?” and “Can a direct answer sound rude?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “英語で直接言いやすいのは、お願い、意見、断りのどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is easier to say directly in English: a request, an opinion, or a refusal?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How can spoken English alter a learner's conversational world?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How can spoken English alter a learner's conversational world?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: How can spoken English alter a learner's conversational world? / 英語を話すことは、学習者の会話の世界をどう変えられますか？ Follow-up pool: Which relationship becomes possible? What barrier can remain despite shared language?
-- Learning target: Develop the distinct “people” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A wider conversational world” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “How can spoken English alter a learner's conversational world?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “英語を話すことは、学習者の会話の世界をどう変えられますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can spoken English alter a learner's conversational world?"]}`
+- Learner action: Answer the standalone question “What kind of conversation becomes possible because of English?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of conversation becomes possible because of English?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of conversation becomes possible because of English?” / “英語があることで、どんな会話ができるようになりますか？” Tutor follow-ups: “Who might have that conversation?” and “Would English help more while travelling or working online?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “英語があることで、どんな会話ができるようになりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of conversation becomes possible because of English?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Which speaking adjustment demands the most sustained effort?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which speaking adjustment demands the most sustained effort?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which speaking adjustment demands the most sustained effort? / 話すときのどの調整に、最も長く努力する必要がありますか？ Follow-up pool: How has the difficulty evolved? Which practice addresses it directly?
-- Learning target: Develop the distinct “difficulty” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The hardest adjustment” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which speaking adjustment demands the most sustained effort?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “話すときのどの調整に、最も長く努力する必要がありますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which speaking adjustment demands the most sustained effort?"]}`
+- Learner action: Answer the standalone question “Which part of speaking English still takes the most effort?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of speaking English still takes the most effort?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of speaking English still takes the most effort?” / “英語を話すとき、今も最も努力が必要な部分は何ですか？” Tutor follow-ups: “What support actually helps?” and “Which is harder: speaking quickly or finding the right word?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “英語を話すとき、今も最も努力が必要な部分は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of speaking English still takes the most effort?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “How has the experience of speaking English compared with your earlier expectations?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How has the experience of speaking English compared with your earlier expectations?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: How has the experience of speaking English compared with your earlier expectations? / 英語を話す経験は、以前の予想と比べてどうでしたか？ Follow-up pool: Which expectation proved accurate? Which expectation changed most?
-- Learning target: Develop the distinct “surprise” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Compared with expectations” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “How has the experience of speaking English compared with your earlier expectations?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “英語を話す経験は、以前の予想と比べてどうでしたか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How has the experience of speaking English compared with your earlier expectations?"]}`
+- Learner action: Answer the standalone question “What surprised you most when English became part of a real conversation?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What surprised you most when English became part of a real conversation?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What surprised you most when English became part of a real conversation?” / “実際の会話で英語を使ったとき、最も驚いたことは何ですか？” Tutor follow-ups: “Was it easier or harder than expected?” and “Which is harder for you: pronunciation or listening?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実際の会話で英語を使ったとき、最も驚いたことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What surprised you most when English became part of a real conversation?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “How can language reshape expression while leaving identity recognizable?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How can language reshape expression while leaving identity recognizable?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: How can language reshape expression while leaving identity recognizable? / 言語は、自分らしさを保ちながら表現をどう変えられますか？ Follow-up pool: Which linguistic choice makes the shift visible? What continuity preserves identity?
-- Learning target: Develop the distinct “identity” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Expression and identity” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “How can language reshape expression while leaving identity recognizable?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “言語は、自分らしさを保ちながら表現をどう変えられますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can language reshape expression while leaving identity recognizable?"]}`
+- Learner action: Answer the standalone question “Do you feel different when you speak English?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Do you feel different when you speak English?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Do you feel different when you speak English?” / “英語を話すとき、いつもと違う自分を感じますか？” Tutor follow-ups: “Are you more direct, friendly, or quiet?” and “Which is easier in English: making jokes or sharing opinions?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “英語を話すとき、いつもと違う自分を感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you feel different when you speak English?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “Knowing what you know now, would you choose the same English-learning path again?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Knowing what you know now, would you choose the same English-learning path again?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Knowing what you know now, would you choose the same English-learning path again? / 今知っていることを踏まえても、同じ英語学習の道をもう一度選びますか？ Follow-up pool: Which part of the path would you preserve? What would you change from the beginning?
-- Learning target: Develop the distinct “flip” angle of What speaking English has made you notice in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Would you start again?” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Knowing what you know now, would you choose the same English-learning path again?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “今知っていることを踏まえても、同じ英語学習の道をもう一度選びますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Knowing what you know now, would you choose the same English-learning path again?"]}`
+- Learner action: Answer the standalone question “What would you practise first if you started learning English again?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you practise first if you started learning English again?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you practise first if you started learning English again?” / “もう一度英語学習を始めるなら、最初に何を練習しますか？” Tutor follow-ups: “Why would you start there?” and “Would you start with listening or speaking?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “もう一度英語学習を始めるなら、最初に何を練習しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you practise first if you started learning English again?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

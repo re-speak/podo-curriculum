@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/12-a-compliment-you-still-remember/lesson.html`
-- SHA-256: `b89c2968990f50146b1e279035632cde2c8299e90c33bed504167f4290e1dc63`
+- SHA-256: `28df991893ae8db2d40b78260b4237fd89abc8b208be56d2c3015f26f847418d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Is there a compliment you still remember?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “When did you hear it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What kind of compliment would stay with you for years?”
-- Learning target: Explore the distinct “A remembered compliment (覚えている褒め言葉)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Is there a compliment you still remember?” opens this angle; “When did you hear it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “When did you hear it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a compliment you still remember?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why has it stayed with you?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of compliment would stay with you for years?"]}`
+- Learner action: Answer the standalone question “Which feels better: praise for your effort or praise for the result?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which feels better: praise for your effort or praise for the result?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which feels better: praise for your effort or praise for the result?” / “努力を褒められることと、結果を褒められることでは、どちらがうれしいですか？” Tutor follow-ups: “What does that kind of praise help you notice?” and “When can the other kind matter more?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “努力を褒められることと、結果を褒められることでは、どちらがうれしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which feels better: praise for your effort or praise for the result?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “What kind of praise do you most appreciate hearing?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Do you prefer praise about effort or results?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What kind of praise do you most appreciate hearing? どんな褒め言葉を言われると、いちばんうれしいですか？
-- Learning target: Explore the distinct “Praise you like (うれしい褒め言葉)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What kind of praise do you most appreciate hearing?” opens this angle; “Do you prefer praise about effort or results?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Do you prefer praise about effort or results?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What kind of praise do you most appreciate hearing?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Do specific details matter?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of praise do you most appreciate hearing?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of compliment can feel awkward instead of nice?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of compliment can feel awkward instead of nice?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of compliment can feel awkward instead of nice?” / “うれしいより、気まずく感じる褒め言葉はどんなものですか？” Tutor follow-ups: “Does the speaker, timing, or wording matter most?” and “Which is more awkward: praise from a stranger or praise in public?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “うれしいより、気まずく感じる褒め言葉はどんなものですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of compliment can feel awkward instead of nice?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “Whose praise would stay with you most?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Have they ever praised you?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Whose praise would stay with you most? 誰から褒められると、一番心に残りますか？
-- Learning target: Explore the distinct “Whose praise matters (心に残る相手)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Whose praise would stay with you most?” opens this angle; “Have they ever praised you?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Have they ever praised you?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Whose praise would stay with you most?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why does that person's view matter?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Whose praise would stay with you most?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Does praise matter more from someone close to you or from an expert?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Does praise matter more from someone close to you or from an expert?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Does praise matter more from someone close to you or from an expert?” / “褒め言葉は、親しい人と専門家のどちらから言われるほうが心に響きますか？” Tutor follow-ups: “Why does that person's praise matter?” and “When might praise from a stranger still feel good?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “褒め言葉は、親しい人と専門家のどちらから言われるほうが心に響きますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does praise matter more from someone close to you or from an expert?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “Would you believe that kind of compliment?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would make it believable?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Would you believe that kind of compliment? そのような褒め言葉を信じられると思いますか？
-- Learning target: Explore the distinct “Did you believe it? (信じられた？)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Would you believe that kind of compliment?” opens this angle; “What would make it believable?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would make it believable?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Would you believe that kind of compliment?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might make it hard to accept?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you believe that kind of compliment?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What makes a compliment feel believable?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a compliment feel believable?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a compliment feel believable?” / “どんな褒め言葉なら信じられますか？” Tutor follow-ups: “Which details show that the person truly noticed?” and “Why can good praise still be hard to accept?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな褒め言葉なら信じられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a compliment feel believable?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “How do you usually respond to praise?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What do you feel but not say?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How do you usually respond to praise? 褒められたとき、普段どう返事をしますか？
-- Learning target: Explore the distinct “Your response (そのときの返事)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How do you usually respond to praise?” opens this angle; “What do you feel but not say?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What do you feel but not say?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How do you usually respond to praise?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Does your answer change with the person?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you usually respond to praise?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What's your natural reaction when someone praises you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's your natural reaction when someone praises you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's your natural reaction when someone praises you?” / “褒められたとき、自然にどんな反応をしますか？” Tutor follow-ups: “Does your reaction change with the person?” and “What response feels warm without rejecting the praise?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “褒められたとき、自然にどんな反応をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's your natural reaction when someone praises you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “Do you remember compliments or criticism better?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Why does that type stay with you?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Do you remember compliments or criticism better? 褒め言葉と批判では、どちらをよく覚えていますか？
-- Learning target: Explore the distinct “What stays longer (長く残るもの)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Do you remember compliments or criticism better?” opens this angle; “Why does that type stay with you?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Why does that type stay with you?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Do you remember compliments or criticism better?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How does it affect your next decision?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you remember compliments or criticism better?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which stays with you longer: a compliment or criticism?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which stays with you longer: a compliment or criticism?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which stays with you longer: a compliment or criticism?” / “褒め言葉と批判では、どちらが長く心に残りますか？” Tutor follow-ups: “Why can one comment outweigh many others?” and “How do you stop an unfair comment from taking over?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “褒め言葉と批判では、どちらが長く心に残りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which stays with you longer: a compliment or criticism?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “Have you given someone a real compliment recently?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What had the person done?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What can make you want to give someone a real compliment?”
-- Learning target: Explore the distinct “Praise you gave (自分が伝えた言葉)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you given someone a real compliment recently?” opens this angle; “What had the person done?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What had the person done?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you given someone a real compliment recently?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What made you want to say it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make you want to give someone a real compliment?"]}`
+- Learner action: Answer the standalone question “What do you notice that makes you want to compliment someone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you notice that makes you want to compliment someone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you notice that makes you want to compliment someone?” / “人のどんなところに気づくと、褒めたくなりますか？” Tutor follow-ups: “Which quiet effort deserves more recognition?” and “What makes a compliment useful rather than polite?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人のどんなところに気づくと、褒めたくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you notice that makes you want to compliment someone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “Is there someone you would like to compliment now?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What exactly would you praise?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Is there someone you would like to compliment now? 今、褒めたい人はいますか？
-- Learning target: Explore the distinct “Someone who deserves it (褒めたい人)” angle of “A compliment you still remember” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Is there someone you would like to compliment now?” opens this angle; “What exactly would you praise?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What exactly would you praise?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there someone you would like to compliment now?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why does that effort deserve recognition?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there someone you would like to compliment now?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What everyday compliment should people give more often?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What everyday compliment should people give more often?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What everyday compliment should people give more often?” / “日常で、もっと多く伝えるとよい褒め言葉は何ですか？” Tutor follow-ups: “What could that compliment help someone notice?” and “Which feels better: 'Good job' or praise about one specific thing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常で、もっと多く伝えるとよい褒め言葉は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What everyday compliment should people give more often?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

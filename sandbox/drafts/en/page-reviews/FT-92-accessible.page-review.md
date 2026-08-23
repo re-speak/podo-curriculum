@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/92-the-superpower-you-would-choose/lesson.html`
-- SHA-256: `33a00cb726198e4e4666091beccd2e0da44956c29d6cc6bf36fd2032d949cf74`
+- SHA-256: `c537052fc9151580c126fda95d7fa3ebb49675472135dec5981cffa28da6c5f6`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which superpower would make ordinary life most interesting?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which superpower would make ordinary life most interesting?”, react or share briefly, then choose at most one relevant probe such as “Which ordinary situation would improve most?”.
-- Visible target or prompt: Which superpower would make ordinary life most interesting? / どの超能力が普通の生活を最も面白くしますか？ Follow-up pool: Which ordinary situation would improve most? What new problem could the power create?
-- Learning target: Explore the distinct “Three seconds” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which ordinary situation would improve most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which ordinary situation would improve most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which superpower would make ordinary life most interesting?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What new problem could the power create?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which superpower would make ordinary life most interesting?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which superpower would make ordinary life most interesting?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which superpower would make ordinary life most interesting?” / “どの超能力が普通の生活を最も面白くしますか？” Tutor follow-ups: “Would flying, stopping time, or reading minds improve daily life most?” and “What problem could that power create?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの超能力が普通の生活を最も面白くしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which superpower would make ordinary life most interesting?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What would be a responsible first use of a superpower?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What would be a responsible first use of a superpower?”, react or share briefly, then choose at most one relevant probe such as “Who, if anyone, would benefit from that response?”.
-- Visible target or prompt: What would be a responsible first use of a superpower? / 超能力を最初に責任を持って使うなら、何をしますか？ Follow-up pool: Who, if anyone, would benefit from that response? What would make it responsible?
-- Learning target: Explore the distinct “The first use” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who, if anyone, would benefit from that response?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who, if anyone, would benefit from that response?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would be a responsible first use of a superpower?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would make it responsible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would be a responsible first use of a superpower?"]}`
+- Learner action: Answer the standalone question “If you got a superpower, what would you do on the first morning?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you got a superpower, what would you do on the first morning?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you got a superpower, what would you do on the first morning?” / “超能力を得たら、最初の朝に何をしますか？” Tutor follow-ups: “Would you test it alone or use it to help someone?” and “What could go wrong?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “超能力を得たら、最初の朝に何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you got a superpower, what would you do on the first morning?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “When should someone keep a superpower secret?” and develop the most interesting concrete detail.
-- Tutor action: Ask “When should someone keep a superpower secret?”, react or share briefly, then choose at most one relevant probe such as “Who might have a genuine reason to know?”.
-- Visible target or prompt: When should someone keep a superpower secret? / 超能力はどんなときに秘密にしておくべきですか？ Follow-up pool: Who might have a genuine reason to know? Which danger could secrecy reduce?
-- Learning target: Explore the distinct “Telling people” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who might have a genuine reason to know?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who might have a genuine reason to know?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When should someone keep a superpower secret?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which danger could secrecy reduce?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When should someone keep a superpower secret?"]}`
+- Learner action: Answer the standalone question “Would you tell someone close to you about a superpower?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you tell someone close to you about a superpower?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you tell someone close to you about a superpower?” / “親しい人に超能力のことを話しますか？” Tutor follow-ups: “Would telling one person make the power safer?” and “What could secrecy protect?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “親しい人に超能力のことを話しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you tell someone close to you about a superpower?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which downside could make a useful superpower not worth having?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which downside could make a useful superpower not worth having?”, react or share briefly, then choose at most one relevant probe such as “Could you switch it off?”.
-- Visible target or prompt: Which downside could make a useful superpower not worth having? / 役立つ超能力でも、持つ価値がなくなる欠点は何ですか？ Follow-up pool: Could you switch it off? Which risk matters most?
-- Learning target: Explore the distinct “The downside” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Could you switch it off?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could you switch it off?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which downside could make a useful superpower not worth having?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which risk matters most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which downside could make a useful superpower not worth having?"]}`
+- Learner action: Answer the standalone question “Which superpower would be annoying in daily life?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which superpower would be annoying in daily life?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which superpower would be annoying in daily life?” / “日常生活では面倒になりそうな超能力は何ですか？” Tutor follow-ups: “Would reading minds or hearing everything become annoying?” and “Could you switch it off?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常生活では面倒になりそうな超能力は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which superpower would be annoying in daily life?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which superpower would you refuse?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which superpower would you refuse?”, react or share briefly, then choose at most one relevant probe such as “What cost makes it unacceptable?”.
-- Visible target or prompt: Which superpower would you refuse? / どの超能力なら断りますか？ Follow-up pool: What cost makes it unacceptable? Could a safer limit change your answer?
-- Learning target: Explore the distinct “A power to refuse” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What cost makes it unacceptable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What cost makes it unacceptable?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which superpower would you refuse?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Could a safer limit change your answer?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which superpower would you refuse?"]}`
+- Learner action: Answer the standalone question “Which useful-looking superpower would you refuse?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which useful-looking superpower would you refuse?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which useful-looking superpower would you refuse?” / “役立ちそうでも断りたい超能力は何ですか？” Tutor follow-ups: “Would reading minds or never sleeping be too costly?” and “Could a safe limit change your answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “役立ちそうでも断りたい超能力は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which useful-looking superpower would you refuse?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What power do you think most people would pick?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What power do you think most people would pick?”, react or share briefly, then choose at most one relevant probe such as “What shared problem would it solve?”.
-- Visible target or prompt: What power do you think most people would pick? / 多くの人はどの力を選ぶと思いますか？ Follow-up pool: What shared problem would it solve? Would people use it as they claim?
-- Learning target: Explore the distinct “Most people's choice” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What shared problem would it solve?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What shared problem would it solve?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What power do you think most people would pick?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Would people use it as they claim?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What power do you think most people would pick?"]}`
+- Learner action: Answer the standalone question “Which superpower would cause the most trouble if everyone had it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which superpower would cause the most trouble if everyone had it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which superpower would cause the most trouble if everyone had it?” / “全員が持つと最も大きな問題を起こす超能力は何ですか？” Tutor follow-ups: “Why would that power become dangerous on a large scale?” and “Would stopping time or reading minds cause more trouble?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “全員が持つと最も大きな問題を起こす超能力は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which superpower would cause the most trouble if everyone had it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What one rule should govern the use of any superpower?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What one rule should govern the use of any superpower?”, react or share briefly, then choose at most one relevant probe such as “Who would enforce the rule?”.
-- Visible target or prompt: What one rule should govern the use of any superpower? / どんな超能力にも必要な一つのルールは何ですか？ Follow-up pool: Who would enforce the rule? What temptation or risk is it meant to stop?
-- Learning target: Explore the distinct “One rule” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who would enforce the rule?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who would enforce the rule?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What one rule should govern the use of any superpower?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What temptation or risk is it meant to stop?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What one rule should govern the use of any superpower?"]}`
+- Learner action: Answer the standalone question “What one rule would you set for using a superpower?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What one rule would you set for using a superpower?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What one rule would you set for using a superpower?” / “超能力を使うために、どんなルールを一つ決めますか？” Tutor follow-ups: “What temptation would the rule control?” and “Should a superpower ever be used without permission?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “超能力を使うために、どんなルールを一つ決めますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What one rule would you set for using a superpower?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What ordinary skill is better than a superpower in real life?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What ordinary skill is better than a superpower in real life?”, react or share briefly, then choose at most one relevant probe such as “Why does it matter more?”.
-- Visible target or prompt: What ordinary skill is better than a superpower in real life? / 現実では、どんな普通の能力が超能力より役立ちますか？ Follow-up pool: Why does it matter more? How can someone develop it?
-- Learning target: Explore the distinct “Ordinary skill” angle of “The superpower you would choose” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why does it matter more?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does it matter more?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What ordinary skill is better than a superpower in real life?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “How can someone develop it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What ordinary skill is better than a superpower in real life?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What ordinary skill is better than a superpower in real life?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What ordinary skill is better than a superpower in real life?” / “現実では、どんな普通の能力が超能力より役立ちますか？” Tutor follow-ups: “Would patience, clear communication, or first aid be a good example?” and “How can someone improve that skill?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “現実では、どんな普通の能力が超能力より役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What ordinary skill is better than a superpower in real life?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

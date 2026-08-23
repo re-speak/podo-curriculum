@@ -112,14 +112,14 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
         # This is intentionally a small lexical regression net around the
         # reviewed failures; it does not pretend to prove semantic continuity.
         forbidden = {
-            11: ("the show",),
+            11: ("that show",),
             14: ("this goal", "that goal", "stopping you now"),
             15: ("this spending", "the spending", "purchase or non-purchase"),
             16: ("finally try it", "was it what", "do it again"),
             17: ("that effort", "small wins like this"),
             18: ("that sound or song", "does the song remind", "music like that"),
             19: ("after finishing a delayed task", "when a task is delayed again"),
-            20: ("which of those things", "in your bag?"),
+            20: ("which of those things",),
         }
         for topic_no, phrases in forbidden.items():
             later = " ".join(
@@ -158,30 +158,33 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
         ft11 = batch.TOPICS[11]
         self.assertEqual(
             ft11["prompts"][1]["accessible"],
-            "When was the last time you watched an episode of a show?",
+            "How many episodes do you give a show before you quit?",
         )
         self.assertEqual(
-            ft11["prompts"][6]["full_followups"],
+            ft11["prompts"][5]["full_followups"],
             [
-                "Which commitment would make you stop?",
-                "What tends to happen when you ignore that limit?",
+                "Which next-day responsibility would make you stop?",
+                "What happens when you ignore that limit?",
             ],
         )
 
         ft12 = batch.TOPICS[12]
         self.assertIn("general compliment", ft12["articles"][1][0])
         self.assertNotIn("sincere", ft12["prompts"][1]["full"].casefold())
-        self.assertIn("いちばんうれしい", ft12["prompts"][1]["ja"])
+        self.assertIn("気まずく", ft12["prompts"][1]["ja"])
 
         ft14 = batch.TOPICS[14]
         self.assertNotIn("than another", ft14["prompts"][2]["full"])
         self.assertEqual(
             ft14["prompts"][4]["accessible_followups"],
-            ["Which kind of goal may need to change?", "What should make someone continue instead?"],
+            ["What warning sign should someone notice?", "Is stopping always the same as failing?"],
         )
         self.assertEqual(
             ft14["prompts"][4]["full_followups"],
-            ft14["prompts"][4]["accessible_followups"],
+            [
+                "How do you know it is time to stop trying?",
+                "Is stopping always the same as failing?",
+            ],
         )
 
         ft15 = batch.TOPICS[15]
@@ -193,9 +196,9 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
             self.assertNotIn("skip", followup.casefold())
         self.assertEqual(
             ft15["prompts"][3]["accessible_followups"][0],
-            "Which benefit from that spending lasts the longest?",
+            "Which benefit lasts longest?",
         )
-        self.assertIn("one good reason", ft15["prompts"][4]["full"].casefold())
+        self.assertIn("decide not to buy", ft15["prompts"][4]["full"].casefold())
         self.assertNotIn("strongest argument", ft15["prompts"][4]["full"].casefold())
 
         self.assertEqual(
@@ -203,7 +206,7 @@ class FreetalkingMeLatelyBatchTests(unittest.TestCase):
             "Overplaying a song can temporarily weaken its emotional effect.",
         )
         self.assertIn("get us moving again", batch.TOPICS[19]["articles"][6][0])
-        self.assertIn("could you do next", batch.TOPICS[19]["prompts"][7]["full"])
+        self.assertIn("easier to restart", batch.TOPICS[19]["prompts"][7]["full"])
         self.assertNotIn("will you decide", batch.TOPICS[19]["prompts"][7]["full"])
 
         ft20_accessible = [row[0] for row in batch.TOPICS[20]["articles"]]

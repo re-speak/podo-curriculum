@@ -2,13 +2,13 @@
 
 FULL_FOLLOWUPS = {
     107: {
-        "saved-time": ("Which expense did the extra effort avoid?", "When would paying instead have been the wiser trade?"),
-        "free-hours": ("Which obligation would you deliberately leave undone?", "How would you protect those hours from being filled again?"),
-        "choice": ("Which current constraint makes that resource scarce?", "What minimum amount of the other resource would still be necessary?"),
-        "first-change": ("Would the first benefit be practical, emotional, or relational?", "How long would it take before the improvement became noticeable?"),
-        "opposite": ("Which emergency would make the rejected resource decisive?", "Would the reversal last or only solve a temporary shortage?"),
-        "ten-hours": ("Which part of life would absorb the lost hours?", "How would the answer change if the schedule were temporary?"),
-        "future": ("Which life-stage change is most likely to alter the balance?", "Would greater predictability matter more than a larger amount?"),
+        "saved-time": ("What did the slower option save?", "When would paying more be worth it?"),
+        "free-hours": ("How would the first hour begin?", "How would you keep the hours from filling up again?"),
+        "choice": ("What would your choice make possible tomorrow?", "What is the best reason to choose the other option?"),
+        "first-change": ("How urgent is the problem?", "Would a small amount make a real difference?"),
+        "opposite": ("What would you do with the first extra hour?", "Would one free afternoon help more than an hour each day?"),
+        "ten-hours": ("Which part of life would lose those hours?", "Would you answer differently if the schedule lasted only one month?"),
+        "future": ("What would the extra time protect?", "Would you make the same choice for a short-term problem?"),
     },
     108: {
         "slow-talk": ("Which sign shows that a conversation has built trust?", "How does mutual attention matter more than its length?"),
@@ -139,19 +139,52 @@ FULL_FOLLOWUPS = {
 }
 
 RECIPROCAL_FOLLOWUPS = {
-    107: (("Which part of your tutor's answer uses time differently?", "What expense would change their choice?"), ("Where do your definitions of enough time differ?", "Which financial threshold would reverse the tutor's answer?")),
-    108: (("Does your tutor value reach or trust more?", "Which friendship need changed the comparison?"), ("How does the tutor distinguish a contact from a close friend?", "Which transition would reverse their preferred circle?")),
-    109: (("Which weather burden matters most to your tutor?", "Would better housing change their season?"), ("Does the tutor weigh climate or infrastructure more heavily?", "Which temperature or daylight threshold reverses their answer?")),
-    110: (("When does your tutor say they think most clearly?", "Which obligation shapes their schedule?"), ("How much of the tutor's rhythm is biological rather than imposed?", "Which fixed commitment would reverse their preference?")),
+    107: (("What did you agree on?", "What was different about your reasons?"), ("Where did your reasons overlap?", "Which difference mattered most?")),
+    108: (("What mattered most in your tutor's choice?", "How was their reason different from yours?"), ("How does the tutor distinguish a contact from a close friend?", "Which transition would reverse their preferred circle?")),
+    109: (("What kind of weather bothers your tutor most?", "Would better housing change their choice of season?"), ("Does the tutor weigh climate or infrastructure more heavily?", "Which temperature or daylight threshold reverses their answer?")),
+    110: (("When does your tutor say they think most clearly?", "What fixed part of their day affects that choice?"), ("How much of the tutor's rhythm is biological rather than imposed?", "Which fixed commitment would reverse their preference?")),
     111: (("What does your tutor always book first?", "Which part of a trip do they leave open?"), ("How does the tutor separate necessary planning from unnecessary control?", "Which travel risk would reverse their style?")),
     112: (("Which travel responsibility does your tutor prefer to share?", "What freedom would they protect when travelling together?"), ("How does the tutor balance autonomy with practical support?", "Which destination or companion would reverse their answer?")),
     113: (("Which daily convenience matters most to your tutor?", "What would they miss in the other setting?"), ("How does the tutor value access against space and quiet?", "Which life-stage change would reverse their location choice?")),
-    114: (("Which loss does your tutor consider less manageable?", "What safe alternative does their answer depend on?"), ("How does the tutor separate convenience from essential infrastructure?", "Which safety condition would reverse their summer choice?")),
+    114: (("Which loss would be harder for your tutor?", "What other safe option would help them?"), ("How does the tutor separate convenience from essential infrastructure?", "Which safety condition would reverse their summer choice?")),
     115: (("Which part of personal time would your tutor protect?", "What would make higher pay worth the cost?"), ("How does the tutor distinguish compensation from sustainable work?", "Which responsibility would reverse their preferred offer?")),
     116: (("Which task would your tutor rather do in person?", "How would they use the time saved from commuting?"), ("How does the tutor assign location according to task purpose?", "Which workspace condition would reverse their preference?")),
     117: (("Which study task would your tutor take to a café?", "What makes home difficult for them?"), ("How does the tutor match stimulation and control to the task?", "Which change in equipment or routine would reverse their setting?")),
-    118: (("Which product would your tutor never buy online?", "When does convenience outweigh inspection for them?"), ("How does the tutor price uncertainty and return friction?", "Which service or delivery condition would reverse their channel?")),
-    119: (("Which ordinary memory would your tutor want to keep clear?", "What cost of perfect recall worries them?"), ("How does the tutor weigh continuity against relief?", "Which kind of memory would reverse their answer?")),
+    118: (("Which product would your tutor never buy online?", "When would convenience matter more to them than seeing the product first?"), ("How does the tutor price uncertainty and return friction?", "Which service or delivery condition would reverse their channel?")),
+    119: (("Which ordinary memory would your tutor want to keep clear?", "What problem with remembering everything worries them most?"), ("How does the tutor weigh continuity against relief?", "Which kind of memory would reverse their answer?")),
     120: (("Does your tutor value privacy or recognition more?", "What would they do with the chosen advantage?"), ("How does the tutor separate respect from public visibility?", "Which level of security or scrutiny would reverse their answer?")),
     121: (("Which skill would your tutor choose to master?", "Where would they prefer broader ability?"), ("How does the tutor balance exploration with deliberate practice?", "Which future task would reverse their learning strategy?")),
 }
+
+# FT107 still carries independently authored Full follow-ups.  Keep them as
+# immediate as the shared Accessible/Full pairs and end each set with a route
+# that does not depend on the learner's first answer.
+FULL_FOLLOWUPS[107].update({
+    "saved-time": ("What did the slower option save money on?", "Which usually costs less: walking or public transport?"),
+    "free-hours": ("What would you do first?", "Which sounds better today: rest, errands, or fun?"),
+    "choice": ("What would your choice make possible tomorrow?", "Which disappears faster in a busy week: money or free time?"),
+    "first-change": ("How urgent would that cost be?", "What's one everyday expense that often surprises people?"),
+    "opposite": ("What would you do with the first extra hour?", "Which helps more after a tiring week: extra time or extra money?"),
+    "ten-hours": ("Which part of life would lose those hours?", "Would you give up one evening a week for higher pay?"),
+    "future": ("What would the extra time protect?", "Which would you protect first: sleep or income?"),
+})
+
+_THREE_SECOND_RECIPROCAL_FOLLOWUPS = {
+    107: ("Which part of your tutor's reason made sense to you?", "Which option would help more on a very busy day?"),
+    108: ("What mattered most in your tutor's choice?", "Which is easier to build first: one close friendship or many contacts?"),
+    109: ("What kind of weather bothers your tutor most?", "Would good heating or good air conditioning change the choice?"),
+    110: ("When does your tutor think most clearly?", "Would a free weekend change the answer?"),
+    111: ("What does your tutor always book first?", "Would they plan more for an expensive trip?"),
+    112: ("Which travel responsibility does your tutor prefer to share?", "Would they travel alone for just one day?"),
+    113: ("Which daily convenience matters most to your tutor?", "Would a shorter commute change the choice?"),
+    114: ("Which loss would be harder for your tutor?", "Would a cooler climate change the choice?"),
+    115: ("Which part of personal time would your tutor protect?", "Would a one-year offer change the choice?"),
+    116: ("Which task would your tutor rather do in person?", "Would a long commute change the answer?"),
+    117: ("Which study task would your tutor take to a cafe?", "Would a video call change the choice?"),
+    118: ("Which product would your tutor never buy online?", "Would free returns change the answer?"),
+    119: ("Which ordinary memory would your tutor want to keep clear?", "Would the choice change if only happy memories stayed vivid?"),
+    120: ("Does your tutor value privacy or recognition more?", "Would the choice change if fame meant no privacy?"),
+    121: ("Which skill would your tutor choose to master?", "Would six months to learn change the answer?"),
+}
+for _number, _followups in _THREE_SECOND_RECIPROCAL_FOLLOWUPS.items():
+    RECIPROCAL_FOLLOWUPS[_number] = (_followups, _followups)

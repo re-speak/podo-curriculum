@@ -61,7 +61,7 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
         self.assertEqual(len(claims), 360)
         self.assertEqual(hashlib.sha256("\n".join(claims).encode()).hexdigest(), "4470b9234f82ee4565e91599e1b22da2770be39f16e6d537c41ec42bd0436d25")
         self.assertEqual(len(prompts), 576)
-        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "c8e625d19255a0375aa5bc32c6f22e56f1680cef1682562ada8faf897fe36162")
+        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "d9547d1d44e0e7aea4210dbc7fb6eebd377a837bf4805ab27c228f14d86b0193")
 
     def test_all_180_rendered_article_claims_have_exact_variant_japanese(self) -> None:
         japanese = []
@@ -163,21 +163,21 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
     def test_exact_accessible_openings_match_authoritative_briefs(self) -> None:
         expected = {
             47: "What helps a friendship last when life changes?",
-            48: "Why can a first impression be completely wrong?",
+            48: "Which is easier to misread at first: a quiet person or a very talkative person?",
             50: "Which activity feels hardest to do alone?",
             51: "You're seated next to someone you've never met. What do you ask?",
             52: "After an ordinary argument, who should reach out first?",
             53: "Why do people's social circles change over time?",
-            54: "What makes someone become the person you talk to most?",
-            55: "Why does some advice stay with people for years?",
-            56: "In an emergency, which need should determine the first call?",
+            54: "What makes someone easy to talk to?",
+            55: "Which is easier to remember: a short piece of advice or a personal story?",
+            56: "What makes someone the right person to call first in an emergency?",
         }
         self.assertEqual({n: row["prompts"][0]["accessible"] for n, row in batch.TOPICS.items()}, expected)
 
     def test_ft49_manual_pair_has_exact_repaired_contract(self) -> None:
         expected_openings = {
             "accessible": "What do people hope an MBTI result will explain?",
-            "full": "What do people expect an MBTI result to reveal about them?",
+            "full": "What can make an MBTI result seem accurate?",
         }
         for variant, (path, _digest) in batch.PRESERVED.items():
             source = path.read_text(encoding="utf-8")
@@ -225,11 +225,11 @@ class FreetalkingPeopleAndTiesBatchTests(unittest.TestCase):
         self.assertEqual(batch.GLOSSES[56]["accessible"][10], ("support network", "support network", "人やサービスを含む支援体制"))
         self.assertEqual(
             batch.TOPICS[54]["prompts"][6]["accessible_followups"][0],
-            "Which stage changes the network most?",
+            "Why does that person become important?",
         )
         self.assertEqual(
             batch.TOPICS[54]["prompts"][6]["full_followups"][0],
-            "Which transition tends to reshape the network most?",
+            "Why does that person become important?",
         )
 
     def test_accessible_gloss_load_remains_small_after_required_repairs(self) -> None:

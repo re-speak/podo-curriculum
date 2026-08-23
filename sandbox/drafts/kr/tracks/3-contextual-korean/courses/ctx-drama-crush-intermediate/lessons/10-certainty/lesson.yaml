@@ -4,7 +4,7 @@ metadata:
   slug: 10-certainty
 
 spec:
-  week: 10                      # → CLASS_WEEK. 코스 안에서 1..N 연속이어야 한다.
+  week: 8                      # → CLASS_WEEK. 코스 안에서 1..N 연속이어야 한다.
 
   title:
     ko: 확신

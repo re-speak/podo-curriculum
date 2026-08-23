@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/44-something-that-made-you-laugh-out-loud/lesson.html`
-- SHA-256: `b219f50cc4096ede361c24518af26500d77e6d6bb85ccfcc72b41fc95d262720`
+- SHA-256: `305868c04a7712a244fb76467e16cfe453686cb605dd5ddd1f6b88da23aab4e7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What kind of moment makes you laugh out loud?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What usually catches you off guard?” rather than asking every follow-up.
-- Visible target or prompt: What kind of moment makes you laugh out loud? どのような瞬間に、声を出して笑いますか？
-- Learning target: Explore the distinct “Real laughter (本当に笑う時)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What usually catches you off guard?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What usually catches you off guard?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of moment makes you laugh out loud?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What is different about a real laugh?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What kind of moment makes you laugh out loud?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of moment makes you laugh out loud?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of moment makes you laugh out loud?” / “どのような瞬間に、声を出して笑いますか？” Tutor follow-ups: “What usually catches you off guard?” and “How is a real laugh different from a polite laugh?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような瞬間に、声を出して笑いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of moment makes you laugh out loud?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What needs to happen before a funny moment works?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How much context is enough?” rather than asking every follow-up.
-- Visible target or prompt: What needs to happen before a funny moment works? 面白い瞬間が成立する前に、何が必要ですか？
-- Learning target: Explore the distinct “The setup (笑いの準備)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How much context is enough?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How much context is enough?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What needs to happen before a funny moment works?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Where does surprise enter?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What needs to happen before a funny moment works?"]}`
+- Learner action: Answer the standalone question “Why does a joke sometimes need background information?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why does a joke sometimes need background information?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why does a joke sometimes need background information?” / “冗談に背景説明が必要なことがあるのはなぜですか？” Tutor follow-ups: “What happens if the listener misses it?” and “Can a facial expression or tone make the joke clear?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “冗談に背景説明が必要なことがあるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why does a joke sometimes need background information?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How can another person's reaction make something funnier?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When does laughter become contagious?” rather than asking every follow-up.
-- Visible target or prompt: How can another person's reaction make something funnier? ほかの人の反応で、どうしてさらに面白くなるのでしょうか？
-- Learning target: Explore the distinct “Other people's laughter (ほかの人の笑い)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When does laughter become contagious?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When does laughter become contagious?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can another person's reaction make something funnier?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Can a reaction be funnier than the original joke?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can another person's reaction make something funnier?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can another person's reaction make something funnier?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can another person's reaction make something funnier?” / “ほかの人の反応で、どうしてさらに面白くなるのでしょうか？” Tutor follow-ups: “When does laughter become contagious?” and “Can a reaction be funnier than the original joke?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの人の反応で、どうしてさらに面白くなるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can another person's reaction make something funnier?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which matters most to you in humour: timing, words, or the situation?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What example shows that best?” rather than asking every follow-up.
-- Visible target or prompt: Which matters most to you in humour: timing, words, or the situation? 笑いでは、タイミング、言葉、状況のどれが自分にとっていちばん大切ですか？
-- Learning target: Explore the distinct “What matters most (いちばん大切なもの)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What example shows that best?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What example shows that best?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which matters most to you in humour: timing, words, or the situation?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would everyone understand the humour?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which matters most to you in humour: timing, words, or the situation?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which matters most to you in humour: timing, words, or the situation?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which matters most to you in humour: timing, words, or the situation?” / “笑いでは、タイミング、言葉、状況のどれが自分にとっていちばん大切ですか？” Tutor follow-ups: “What example shows that best?” and “Would everyone understand the humour?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “笑いでは、タイミング、言葉、状況のどれが自分にとっていちばん大切ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which matters most to you in humour: timing, words, or the situation?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What kind of humour works reliably on you?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What example fits your taste?” rather than asking every follow-up.
-- Visible target or prompt: What kind of humour works reliably on you? どのような笑いなら、普段から自分に合いますか？
-- Learning target: Explore the distinct “What usually works (普段笑うもの)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What example fits your taste?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What example fits your taste?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of humour works reliably on you?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When can the same style fail?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What kind of humour works reliably on you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of humour works reliably on you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of humour works reliably on you?” / “どのような笑いなら、普段から自分に合いますか？” Tutor follow-ups: “What example fits your taste?” and “When can the same style fail?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような笑いなら、普段から自分に合いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of humour works reliably on you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which kind of humour is hardest for you to enjoy?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes it uncomfortable or dull?” rather than asking every follow-up.
-- Visible target or prompt: Which kind of humour is hardest for you to enjoy? どのような笑いが、自分にはいちばん楽しみにくいですか？
-- Learning target: Explore the distinct “Hard to enjoy (楽しみにくい笑い)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes it uncomfortable or dull?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes it uncomfortable or dull?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which kind of humour is hardest for you to enjoy?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could the right person make it work better?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which kind of humour is hardest for you to enjoy?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which kind of humour is hardest for you to enjoy?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which kind of humour is hardest for you to enjoy?” / “どのような笑いが、自分にはいちばん楽しみにくいですか？” Tutor follow-ups: “What makes it uncomfortable or dull?” and “Could the right person make it work better?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような笑いが、自分にはいちばん楽しみにくいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of humour is hardest for you to enjoy?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What allows a funny story to survive the act of retelling?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which detail is essential?” rather than asking every follow-up.
-- Visible target or prompt: What allows a funny story to survive the act of retelling? 面白い話が、語り直しても面白さを保つのはなぜですか？
-- Learning target: Explore the distinct “Retelling it (話し直す)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which detail is essential?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which detail is essential?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What allows a funny story to survive the act of retelling?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which background detail should be cut?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What allows a funny story to survive the act of retelling?"]}`
+- Learner action: Answer the standalone question “What keeps a funny story funny when someone retells it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What keeps a funny story funny when someone retells it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What keeps a funny story funny when someone retells it?” / “面白い話が、語り直しても面白さを保つのはなぜですか？” Tutor follow-ups: “Which detail is essential?” and “Which background detail should be cut?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “面白い話が、語り直しても面白さを保つのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What keeps a funny story funny when someone retells it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What quality makes someone genuinely funny?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What do funny people notice well?” rather than asking every follow-up.
-- Visible target or prompt: What quality makes someone genuinely funny? どのような特徴があると、その人は本当に面白いと感じますか？
-- Learning target: Explore the distinct “A funny person (面白い人)” angle of “Something that made you laugh out loud” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What do funny people notice well?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What do funny people notice well?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What quality makes someone genuinely funny?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When does trying too hard stop working?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What quality makes someone genuinely funny?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What quality makes someone genuinely funny?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What quality makes someone genuinely funny?” / “どのような特徴があると、その人は本当に面白いと感じますか？” Tutor follow-ups: “What details do funny people notice?” and “When does trying too hard stop working?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような特徴があると、その人は本当に面白いと感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What quality makes someone genuinely funny?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

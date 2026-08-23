@@ -1,0 +1,21 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 08-my-treat
+spec:
+  week: 8
+  title:
+    ko: 오늘은 내가 살게
+    en: My treat today
+    ja: 今日は私がおごる
+  decks:
+    lecture: { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+  teaches:
+    patterns:
+      - ~(으)ㄹ게
+      - ~(으)니까
+    canDo: 사겠다고 나서고, 다음을 기약하며 물러선다.
+  scene: 밥을 다 먹고 계산대 앞. 둘 다 카드를 꺼낸다.
+  prerequisites: []
+  source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 8

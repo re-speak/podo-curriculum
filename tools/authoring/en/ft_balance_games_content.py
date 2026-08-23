@@ -237,13 +237,13 @@ ARTICLE_TAILS = {
 
 QUESTION_POOLS = {
     107: (
-        q("saved-time", "Time costs money", "時間で節約", "When have you spent extra time to save money?", "Where does spending time instead of money make the most sense?", "お金を節約するために、時間を多く使うのはどんなときですか？", ("What did the slower option save?", "Would you make the same trade again?")),
-        q("free-hours", "Three free hours", "自由な三時間", "What would you do with three unexpected free hours?", "How would you use three hours that arrived with no obligations attached?", "突然、自由な時間が三時間できたら、何をしますか？", ("What would you do first?", "Who, if anyone, would you spend the time with?")),
-        q("choice", "Choose one", "どちらを選ぶ", "Which feels more useful now: more money or more time?", "At this point, which scarce resource would improve life more: money or time?", "今、より役立つのは、お金と時間のどちらですか？", ("What would it make possible?", "What is the strongest reason for the other side?")),
-        q("first-change", "What changes first", "最初に変わること", "If you got more of your choice, what would change first?", "What would be the first visible change if the resource you chose increased?", "選んだものが増えたら、最初に何が変わりますか？", ("Would a normal weekday look different?", "Would it affect anyone else?")),
-        q("opposite", "The other side", "反対側", "When would the other option matter more?", "Which situation would make the option you rejected more valuable?", "どんなときに、反対の選択のほうが大切ですか？", ("What becomes scarce in that situation?", "How long would the change last?")),
-        q("ten-hours", "Ten extra hours", "週に十時間", "Would you accept more pay if it required ten extra work hours every week?", "How much additional pay could justify losing ten hours every week?", "給料が増えても毎週十時間多く働くなら、受け入れますか？", ("What would those ten hours replace?", "Would a clear end date change the answer?")),
-        q("future", "A future change", "将来の変化", "What future change could make you switch your answer?", "Which change in health, family, or goals could reverse your choice?", "将来、どんな変化があれば答えが逆になりますか？", ("Could you prepare for that change now?", "Would the switch be temporary or lasting?")),
+        q("saved-time", "Time costs money", "時間で節約", "When have you chosen a slower option to save money?", "When have you chosen a slower option because it cost less?", "お金を節約するために、時間のかかる方法を選んだのはいつですか？", ("What did you save money on?", "Would you make the same choice again?")),
+        q("free-hours", "Three free hours", "自由な三時間", "What would you do with three unexpected free hours?", "How would you spend three free hours with no plans?", "突然、自由な時間が三時間できたら、何をしますか？", ("What would you do first?", "Would you spend the time alone or with someone?")),
+        q("choice", "Choose one", "どちらを選ぶ", "Which would help more tomorrow: extra time or extra money?", "Which would improve tomorrow more: extra time or extra money?", "明日、より役立つのは、自由な時間とお金のどちらですか？", ("What would it help you do?", "What is one good reason to choose the other option?")),
+        q("first-change", "Money this month", "今月のお金", "What's one problem extra money could solve this month?", "What problem could extra money solve for you this month?", "今月、お金が増えたら解決できることは何ですか？", ("How urgent is it?", "Would a small amount help?")),
+        q("opposite", "More free time", "自由な時間", "What part of life would extra time improve?", "Which part of your life would benefit most from extra time?", "自由な時間が増えたら、生活のどの部分がよくなりますか？", ("How would you use the time?", "Would one extra hour be enough to help?")),
+        q("ten-hours", "Ten extra hours", "週に十時間", "Would you take a pay raise if it meant working ten more hours each week?", "Would a pay raise be worth ten extra work hours every week?", "給料が上がっても毎週十時間多く働くなら、引き受けますか？", ("What would those ten hours replace?", "Would a short-term schedule change your answer?")),
+        q("future", "When time wins", "時間を選ぶとき", "When would you choose time even if you needed the money?", "When would time matter more even if money was tight?", "お金が必要でも、時間を選ぶのはどんなときですか？", ("What would the time protect?", "Would the choice be temporary or long-term?")),
     ),
     108: (
         q("slow-talk", "A long conversation", "ゆっくり話す", "What makes a long conversation with one friend feel worthwhile?", "Which quality allows one friendship to support a genuinely long conversation?", "一人の友人とゆっくり話すなら、何が大切ですか？", ("What makes it easy to be honest?", "Does frequency matter?")),
@@ -372,3 +372,581 @@ QUESTION_POOLS = {
         q("switch", "A goal that changes the path", "進み方を変える目標", "Which goal would make you switch from depth to breadth, or the reverse?", "What change in task, team, or time horizon would reverse your learning strategy?", "どんな目標なら、深さと広さの選択を変えますか？", ("Would limited time favour one path?", "Would working alone change it?")),
     ),
 }
+
+
+_ORIGINAL_QUESTION_FOLLOWUPS = {
+    number: {item["job"]: item["accessible_followups"] for item in items}
+    for number, items in QUESTION_POOLS.items()
+}
+
+
+def _cq(job, title, title_ja, accessible, japanese, full=None):
+    """Build a cold-open conversation prompt without adding language load."""
+    return q(
+        job, title, title_ja, accessible, accessible if full is None else full,
+        japanese, (),
+    )
+
+
+# FT107 is the approved calibration pilot and stays byte-for-byte source
+# equivalent.  The remaining pools use independent scenes and opinions rather
+# than a sequence of references to "your choice" or "the other option."
+QUESTION_POOLS.update({
+    108: (
+        _cq("slow-talk", "A long conversation", "長く話せる相手", "Who is easiest for you to talk to for hours?", "何時間でも話しやすい相手は誰ですか？"),
+        _cq("crowd", "Meeting new people", "新しい人と会う", "What makes it easy to meet new people?", "新しい人と知り合いやすくするものは何ですか？"),
+        _cq("choice", "Choose a circle", "人間関係を選ぶ", "For one difficult week, would you rather have a hundred friendly contacts or three close friends?", "大変な一週間なら、親しい知り合い百人と親友三人のどちらがよいですか？"),
+        _cq("daily-life", "Many contacts, no close friend", "知り合いは多いが親友はいない", "What would be missing from life with many friendly contacts but no close friend?", "親しい知り合いは多くても親友がいない生活では、何が足りませんか？"),
+        _cq("opposite", "A wide circle helps", "広い人間関係が役立つとき", "When is a wide circle more useful than a few close friends?", "少数の親友より、広い人間関係のほうが役立つのはどんなときですか？"),
+        _cq("new-city", "Starting in a new city", "新しい町で始める", "After moving to a new city, would you build a wide circle or one close friendship first?", "新しい町へ移ったら、広い人間関係と一つの親しい友情のどちらを先に作りますか？"),
+        _cq("change", "Help in a difficult week", "大変な週の助け", "During a difficult week, which helps more: small help from many people or steady help from one person?", "大変な一週間では、多くの人からの小さな助けと、一人からの続く助けのどちらが役立ちますか？"),
+    ),
+    109: (
+        _cq("hard-day", "The harder weather", "より大変な天気", "Which is harder for you: a very hot day or a very cold day?", "とても暑い日ととても寒い日のどちらが大変ですか？"),
+        _cq("perfect-day", "Perfect weather", "完璧な天気", "What would you do outside on a day with perfect weather?", "完璧な天気の日なら、外で何をしたいですか？"),
+        _cq("choice", "One season forever", "一つの季節", "If one season had to last all year, would you choose summer or winter?", "一つの季節が一年中続くなら、夏と冬のどちらを選びますか？"),
+        _cq("daily-life", "Summer every day", "毎日が夏", "Which daily habit would change most if summer never ended?", "夏が終わらなければ、どの日課が最も変わりますか？"),
+        _cq("comfortable-home", "Perfect indoors", "家の中は快適", "If every indoor space were comfortable, which season would you choose?", "すべての室内が快適なら、どの季節を選びますか？"),
+        _cq("daylight", "Warm and dark or cold and bright", "暖かく暗い日か寒く明るい日", "Would you rather have a warm dark day or a cold sunny day?", "暖かく暗い日と、寒く晴れた日のどちらがよいですか？"),
+        _cq("switch", "Too much for a whole year", "一年中は無理な天気", "What's one weather condition you could not accept all year?", "一年中は受け入れられない天候を一つ挙げるとしたら何ですか？"),
+    ),
+    110: (
+        _cq("clear-head", "Your clearest hour", "頭がさえる時間", "When does your mind usually feel clearest?", "頭がいちばんさえるのは、何時ごろですか？"),
+        _cq("free-day", "No schedule tomorrow", "明日は予定なし", "When would you sleep and wake if tomorrow had no schedule?", "明日何も予定がなければ、何時に寝て起きますか？"),
+        _cq("choice", "Early or late", "朝型か夜型", "For your most important tasks, would you rather start early or work late?", "最も大切な作業なら、早く始めるのと遅くまで取り組むのと、どちらがよいですか？"),
+        _cq("whole-day", "Changing a routine", "日課を変える", "Which is hardest to change: sleep, meals, or social plans?", "睡眠、食事、人と会う予定のうち、最も変えにくいのはどれですか？"),
+        _cq("housemate", "Opposite schedules", "反対の生活時間", "What rule helps two people with opposite sleep schedules share a home?", "睡眠時間が反対の二人が一緒に暮らすには、どんなルールが役立ちますか？"),
+        _cq("no-morning-duty", "No morning duties", "朝の予定がない生活", "Would you become more of a night owl if you never had morning duties?", "朝の予定がまったくなければ、もっと夜型になりますか？"),
+        _cq("switch", "A schedule that forces change", "変化を求める予定", "Which important responsibility can force someone to change their sleep schedule?", "どんな大切な責任が、睡眠時間を変えるきっかけになりますか？"),
+    ),
+    111: (
+        _cq("surprise", "A good surprise", "よい予想外", "What kind of surprise can improve a trip?", "どんな予想外の出来事が、旅行をよくすることがありますか？"),
+        _cq("first-decision", "The first decision", "最初の決定", "What would you decide first for a short trip tomorrow?", "明日短い旅行へ行くなら、最初に何を決めますか？"),
+        _cq("choice", "Plan or decide later", "計画か現地で決めるか", "For a three-day trip, would you plan each day or decide as you go?", "三日間の旅行なら、毎日を計画するのと、その場で決めるのと、どちらがよいですか？"),
+        _cq("month", "Too much planning", "計画しすぎる", "What can go wrong when every minute of a trip is planned?", "旅行の一分一分まで計画すると、何がうまくいかなくなることがありますか？"),
+        _cq("hotel-only", "Only the room is booked", "宿だけ予約", "Would one hotel booking make you feel prepared for a week-long trip?", "一週間の旅行で宿だけ予約してあれば、準備できたと感じますか？"),
+        _cq("different-partner", "Two travel styles", "二つの旅行スタイル", "Which two trip decisions should people agree on before travelling together?", "一緒に旅行する前に、どの二つのことを決めておくべきですか？"),
+        _cq("switch", "A trip that needs a plan", "計画が必要な旅行", "What kind of trip needs a detailed plan?", "どんな旅行には詳しい計画が必要ですか？"),
+    ),
+    112: (
+        _cq("alone-time", "The best part of solo travel", "一人旅のよさ", "What's the best part of travelling alone?", "一人旅の最もよいところは何ですか？"),
+        _cq("share-view", "Share the view", "景色を共有", "Who would you want to share a beautiful view with?", "すてきな景色を、誰と共有したいですか？"),
+        _cq("choice", "Alone or together", "一人か誰かと一緒か", "For a new destination, would you rather travel alone or with someone?", "初めての場所なら、一人と誰かとの旅行のどちらを選びますか？"),
+        _cq("every-trip", "The hard part of company", "誰かとの旅行の難しさ", "What's the hardest part of travelling with other people?", "ほかの人と旅行する一番難しいところは何ですか？"),
+        _cq("new-country", "Three days alone", "三日間一人", "Would you spend three days in a new country alone?", "初めての国で三日過ごすなら、一人で行きますか？"),
+        _cq("planner", "Someone else plans", "ほかの人が計画", "How would a companion who planned everything change a trip?", "すべてを計画する同行者がいると、旅行はどう変わりますか？"),
+        _cq("switch", "Better with company", "誰かと行くほうがよい場所", "What kind of destination is better with company?", "どんな旅先なら、誰かと一緒のほうがよいですか？"),
+    ),
+    113: (
+        _cq("convenience", "A useful nearby service", "近くにほしいサービス", "Which nearby service matters most in everyday life?", "日常で、近くにあると最も助かるものは何ですか？"),
+        _cq("window", "Outside your window", "窓の外", "What would you choose to see outside your window?", "窓の外に何が見えたらうれしいですか？"),
+        _cq("choice", "City or quiet town", "都会か静かな町", "For daily life, would you rather live in a busy city or a quiet town?", "日常生活なら、にぎやかな都会と静かな町のどちらに住みたいですか？"),
+        _cq("move", "What you would miss", "恋しくなるもの", "What would you miss first after moving from a city to the countryside?", "都会から田舎へ移ったら、最初に何が恋しくなりますか？"),
+        _cq("no-car", "Living without a car", "車なしの生活", "Which place works better without a car: a city or the countryside?", "車なしで暮らすなら、都会と田舎のどちらがよいですか？"),
+        _cq("small-town", "A well-equipped small town", "便利な小さな町", "Would a small town with a hospital and shops feel convenient enough?", "病院や店がある小さな町なら、十分便利に感じますか？"),
+        _cq("switch", "Commute or quiet", "通勤か静けさ", "Which matters more: a short commute or a quiet home?", "短い通勤と静かな家のどちらが大切ですか？"),
+    ),
+    114: (
+        _cq("outage", "One hour offline", "一時間オフライン", "What becomes difficult after one hour without internet?", "インターネットが一時間使えないと、最初に何が困りますか？"),
+        _cq("cool-day", "A cool day offline", "涼しい日のオフライン", "How would you spend half a cool day without a phone?", "涼しい日にスマホなしで半日過ごすなら、何をしますか？"),
+        _cq("choice", "Lose one for summer", "夏に一つを諦める", "For one summer, would you give up internet or air conditioning?", "一夏の間、インターネットとエアコンのどちらを諦めますか？"),
+        _cq("first-problem", "One day without cooling", "冷房なしの一日", "What would be the first problem during one day without air conditioning?", "エアコンなしで一日過ごすと、最初に何が問題になりますか？"),
+        _cq("cool-spring", "A cool spring day", "涼しい春の日", "On a cool spring day, would you rather lose internet or air conditioning?", "涼しい春の日なら、インターネットとエアコンのどちらを諦めますか？"),
+        _cq("safe-place", "A nearby cool place", "近くの涼しい場所", "Would a safe, cool place nearby make a summer without air conditioning possible?", "近くに安全で涼しい場所があれば、エアコンなしの夏を過ごせますか？"),
+        _cq("switch", "A need, not a comfort", "快適さではなく必要", "At what temperature does air conditioning become a need rather than a comfort?", "何度くらいから、エアコンは快適さではなく必要なものになりますか？"),
+    ),
+    115: (
+        _cq("good-rest", "A restful day off", "休める休日", "What makes a day off feel genuinely restful?", "しっかり休めたと感じるには、何が必要ですか？"),
+        _cq("protected-time", "Time you protect", "守りたい時間", "Which part of the day would you refuse to give up?", "一日の中で、必ず守りたい自分の時間はいつですか？"),
+        _cq("choice", "Time or income", "時間か収入", "For the next year, would you choose more free time or a higher income?", "これから一年、自由な時間と高い収入のどちらを選びますか？"),
+        _cq("only-one", "One extra free hour", "自由な時間を一時間", "What would improve first with one extra free hour every day?", "毎日自由な時間が一時間増えたら、最初に何がよくなりますか？"),
+        _cq("nights-weekends", "High pay, fewer evenings", "高い給料と少ない夜時間", "Would high pay be worth often losing evenings and weekends?", "高い給料でも、夜や週末をよく失うなら受け入れますか？"),
+        _cq("one-year", "One year only", "一年だけ", "Would a clear one-year limit make a demanding high-paid job easier to accept?", "大変でも高収入の仕事が一年だけなら、受け入れやすくなりますか？"),
+        _cq("switch", "A new responsibility", "新しい責任", "Which new responsibility could make a higher salary more important?", "どんな新しい責任ができると、高い給料がより大切になりますか？"),
+    ),
+    116: (
+        _cq("distraction", "At-home distraction", "家で気が散るもの", "What's the biggest distraction when working or studying at home?", "家で仕事や勉強をするとき、いちばん邪魔になるものは何ですか？"),
+        _cq("commute-time", "No commute", "通勤なし", "How would you use the time saved by removing a commute?", "通勤時間がなくなったら、その時間をどう使いますか？"),
+        _cq("choice", "Home or shared workplace", "家か共有の職場", "For focused work, would you choose home or a shared workplace?", "集中する仕事なら、家と共有の職場のどちらを選びますか？"),
+        _cq("one-place", "The same place every day", "毎日同じ場所", "What's hardest about using the same place for work every day?", "毎日同じ場所で仕事をする一番難しいところは何ですか？"),
+        _cq("quiet-office", "A quiet office nearby", "近くて静かな職場", "Would a quiet office fifteen minutes away be better than working at home?", "十五分の場所にある静かな職場は、在宅勤務よりよいですか？"),
+        _cq("team-day", "Worth meeting in person", "会う価値のある作業", "Which task is worth meeting a team in person for?", "どんな作業なら、チームが直接会う価値がありますか？"),
+        _cq("switch", "A better home setup", "よりよい在宅環境", "What feature would make home clearly better than an office?", "どんな特徴があれば、家のほうが職場より明らかによくなりますか？"),
+    ),
+    117: (
+        _cq("best-focus", "A place for focus", "集中できる場所", "What makes a place easy to concentrate in?", "集中しやすい場所には、どんな特徴がありますか？"),
+        _cq("one-hour", "One important hour", "大切な一時間", "Where would you sit to finish one important task in an hour?", "一時間で大切な作業を終えるなら、どこに座りますか？"),
+        _cq("choice", "Café or home", "カフェか家", "For two hours of serious study, would you choose a café or home?", "二時間しっかり勉強するなら、カフェと家のどちらを選びますか？"),
+        _cq("one-month", "The hard part of a café", "カフェの難しさ", "What's hardest about studying in a café?", "カフェで勉強する一番難しいところは何ですか？"),
+        _cq("drink-cost", "Buying a drink", "飲み物を買う", "Would you keep using a quiet café if you had to buy a drink every time?", "静かなカフェでも毎回飲み物を買うなら、通い続けますか？"),
+        _cq("home-desk", "A better home desk", "よりよい家の机", "Would a good desk and lighting at home make you stop using cafés?", "家に良い机と照明があれば、カフェを使わなくなりますか？"),
+        _cq("switch", "A task for home", "家でする課題", "What kind of task is best done at home?", "どんな課題が、家でするのに最も合っていますか？"),
+    ),
+    118: (
+        _cq("photo-match", "Trusting an online product", "オンライン商品への信頼", "What makes an online product feel trustworthy?", "オンラインの商品を信頼するには、何が必要ですか？"),
+        _cq("urgent", "Needed today", "今日必要", "Where would you look first for something you needed today?", "今日必要な物なら、最初にどこを探しますか？"),
+        _cq("choice", "Online or in a shop", "ネットか店頭", "For an important purchase, would you rather buy online or in a shop?", "大切な買い物なら、オンラインと店舗のどちらで買いますか？"),
+        _cq("only-one", "If shops disappeared", "店がなくなったら", "What would you miss most if physical shops disappeared?", "実際の店がなくなったら、何が最も恋しくなりますか？"),
+        _cq("cheap-return", "Cheaper but hard to return", "安いが返品困難", "Would you buy online if it were cheaper but hard to return?", "ネットのほうが安くても返品が難しいなら、買いますか？"),
+        _cq("same-day", "Free delivery today", "当日無料配送", "Would free same-day delivery remove your reason to visit a shop?", "無料で当日に届くなら、店へ行く理由はなくなりますか？"),
+        _cq("switch", "See it first", "先に実物を見る", "Which product would you never buy without seeing it in person?", "実物を見ずには絶対に買わない商品は何ですか？"),
+    ),
+    119: (
+        _cq("photo-memory", "A memory from a photo", "写真で戻る記憶", "What kind of happy memory can a photograph bring back?", "写真を見ると、どんな楽しい記憶が戻ることがありますか？"),
+        _cq("small-moment", "A small moment to keep", "残したい小さな出来事", "Which small ordinary moment is worth remembering for years?", "長く覚えていたい小さな出来事は何ですか？"),
+        _cq("choice", "Perfect recall or relief", "完全な記憶か安心", "Would you rather remember every ordinary detail or be able to forget painful memories?", "普通の細部をすべて覚えることと、つらい記憶を忘れられることなら、どちらがよいですか？"),
+        _cq("work-study", "What perfect memory makes easier", "完全な記憶で楽になること", "What would perfect memory make easier?", "完全な記憶があれば、何が楽になりますか？"),
+        _cq("all-vivid", "Every embarrassment stays", "恥ずかしさも残る", "Would you want perfect memory if every embarrassment stayed vivid too?", "恥ずかしいことも鮮明に残るなら、完全な記憶がほしいですか？"),
+        _cq("lost-lesson", "Forgetting pain and the lesson", "痛みと学びを忘れる", "Would forgetting pain be worth losing part of the lesson too?", "つらさを忘れる代わりに学びの一部も失うなら、その価値はありますか？"),
+        _cq("switch", "A memory that can fade", "薄れてよい記憶", "Which kind of memory should be allowed to fade?", "どんな記憶は、薄れていってもよいですか？"),
+    ),
+    120: (
+        _cq("private-pride", "Private pride", "人に知られない誇り", "What can feel worth doing even when nobody knows?", "誰にも知られなくても、価値があると感じることは何ですか？"),
+        _cq("anonymous-help", "Anonymous help", "名前を出さない助け", "What good thing would you do without putting your name on it?", "名前を出さずによいことをするなら、何をしますか？"),
+        _cq("choice", "Wealth or respect", "富か尊敬", "Would you rather be rich and unknown or respected on an average income?", "裕福で無名の生活と、平均的な収入で尊敬される生活のどちらがよいですか？"),
+        _cq("daily-life", "Rich but unknown", "裕福だが無名", "What would an ordinary day look like if you were rich but nobody knew?", "裕福でも誰にも知られていなければ、普通の一日はどんな一日ですか？"),
+        _cq("constant-rating", "Respected and judged", "尊敬と評価", "Would being respected still appeal if people constantly judged you?", "いつも人から評価されるなら、尊敬される生活は魅力的ですか？"),
+        _cq("family-knows", "Respect from strangers", "知らない人からの尊敬", "Would public respect matter if the people closest to you did not admire you?", "親しい人に尊敬されなくても、世間からの尊敬は大切ですか？"),
+        _cq("switch", "Privacy or recognition", "プライバシーか評価", "Which is harder to live without: privacy or recognition?", "プライバシーと人からの評価のうち、ないとより困るのはどちらですか？"),
+    ),
+    121: (
+        _cq("recent-skill", "A skill you improved", "伸びた技能", "Which skill have you improved most recently?", "最近、いちばん伸びた技能は何ですか？"),
+        _cq("three-skills", "A task that needs range", "幅広さが必要な課題", "What task needs three different skills to go well?", "うまく行うために三つの技能が必要な課題は何ですか？"),
+        _cq("choice", "Depth or breadth", "深さか幅広さ", "Would you rather master one skill or become good at many?", "一つの技能を極めるのと、多くの技能が得意になるのと、どちらがよいですか？"),
+        _cq("one-year", "One year to learn", "学ぶ一年", "With one year to learn, would you study one skill deeply or try five?", "学ぶ時間が一年あるなら、一つを深く学ぶのと五つを試すのと、どちらがよいですか？"),
+        _cq("team", "A strong team", "強いチーム", "Does a strong team need more specialists or more generalists?", "強いチームには、専門家と幅広い技能を持つ人のどちらが多く必要ですか？"),
+        _cq("new-field", "A new field", "新しい分野", "Would you explore widely or focus early in a completely new field?", "全く新しい分野なら、広く試すのと早く一つに集中するのと、どちらがよいですか？"),
+        _cq("switch", "A goal that rewards range", "幅広さが役立つ目標", "Which goal rewards being good at many skills more than being great at one?", "一つを極めるより、多くの技能が得意なほうが役立つ目標は何ですか？"),
+    ),
+})
+
+# Canonical openings for FT113 and FT120 are intentionally identical across
+# levels. Give Full one additional plain-spoken angle so the pair still deepens
+# the conversation without raising the register.
+QUESTION_POOLS[113][3].update(
+    full="Which part of city life would someone miss most after moving to a quiet town?",
+    full_ja="静かな町へ引っ越したら、都会のどんな部分が最も恋しくなりますか？",
+)
+QUESTION_POOLS[120][5].update(
+    full="Would respect from the public mean much if the people closest to you did not share it?",
+    full_ja="世間から尊敬されても、身近な人が同じように思っていなければ、大きな意味がありますか？",
+)
+
+for _number in range(108, 122):
+    for _item in QUESTION_POOLS[_number]:
+        _item["accessible_followups"] = _ORIGINAL_QUESTION_FOLLOWUPS[_number][_item["job"]]
+
+# A few jobs changed enough that their former probes no longer responded to
+# the new printed answer.  Keep two distinct, answer-dependent moves.
+_FOLLOWUP_REVISIONS = {
+    (108, "change"): ("Why would that kind of help matter?", "When would the other kind of help be better?"),
+    (111, "month"): ("Which part of the plan would feel restrictive?", "What would you deliberately leave open?"),
+    (112, "every-trip"): ("Which difference between travellers causes the most friction?", "What could companions agree on before leaving?"),
+    (112, "alone-time"): ("Which freedom matters most?", "What might feel lonely after a few days?"),
+    (113, "move"): ("Which daily routine would become harder?", "What could a small town replace well?"),
+    (115, "only-one"): ("How would you use the extra hour?", "Would one hour be enough to change the day?"),
+    (117, "one-month"): ("Which café distraction is hardest to ignore?", "What makes the café worth using anyway?"),
+    (120, "family-knows"): ("Whose respect matters most?", "Why might public respect still feel valuable?"),
+    (113, "switch"): ("How much extra travel would you accept for a quieter home?", "When would convenience win?"),
+    (116, "switch"): ("Why would that feature improve focus?", "What might an office still do better?"),
+    (120, "switch"): ("Why is your choice hard to live without?", "When might the other need become more important?"),
+}
+for (_number, _job), _followups in _FOLLOWUP_REVISIONS.items():
+    next(item for item in QUESTION_POOLS[_number] if item["job"] == _job)["accessible_followups"] = _followups
+
+
+# Final spoken-question audit.  These overrides keep every page runnable from a
+# cold open and make the probes respond to the learner's actual answer.
+_FINAL_SEMANTIC_REPAIRS = {
+    (108, "change"): {
+        "title": "What a wide circle offers",
+        "title_ja": "広い人間関係のよさ",
+        "accessible": "What can a wide circle of friends offer that three close friends may not?",
+        "full": "When can a wide circle be more useful than a small group of close friends?",
+        "accessible_ja": "広い友人関係には、三人の親しい友人にはないどんなよさがありますか？",
+        "full_ja": "広い友人関係が、少数の親しい友人より役立つのはどんなときですか？",
+        "accessible_followups": ("Which situation makes that useful?", "What can a wide circle still fail to provide?"),
+    },
+    (110, "clear-head"): {
+        "title": "Feeling ready to think",
+        "title_ja": "考える準備が整うとき",
+        "accessible": "What helps you feel awake and ready to think?",
+        "full": "What usually helps your mind become clear and ready to work?",
+        "accessible_ja": "頭が目覚めて、考える準備が整うには何が役立ちますか？",
+        "full_ja": "頭がすっきりして作業の準備が整うには、普段何が役立ちますか？",
+        "accessible_followups": ("Does light, food, movement, or quiet help most?", "What makes it harder?"),
+    },
+    (110, "whole-day"): {
+        "accessible_followups": ("Why is that part hardest to move?", "Which small change could help?"),
+    },
+    (111, "surprise"): {
+        "accessible_followups": ("Why can that surprise improve the trip?", "When would the same surprise be stressful?"),
+    },
+    (111, "different-partner"): {
+        "accessible_followups": ("Which decision causes the most arguments?", "How could people compromise?"),
+    },
+    (111, "switch"): {
+        "accessible_followups": ("What could go wrong without a plan?", "Which part could still stay flexible?"),
+    },
+    (112, "new-country"): {
+        "title": "Enjoying time alone",
+        "title_ja": "一人の時間を楽しむ",
+        "accessible": "What would make three days alone in a new place enjoyable?",
+        "full": "What would make three days alone somewhere new feel worthwhile?",
+        "accessible_ja": "初めての場所で一人で過ごす三日間を、楽しくするものは何ですか？",
+        "full_ja": "初めての場所で一人で過ごす三日間を、価値あるものにするのは何ですか？",
+        "accessible_followups": ("Which part would you plan first?", "When might company still help?"),
+    },
+    (112, "switch"): {
+        "accessible_followups": ("What makes company useful there?", "What kind of companion would fit?"),
+    },
+    (113, "switch"): {
+        "title": "Services or quiet",
+        "title_ja": "便利さか静けさ",
+        "accessible": "Which matters more at home: easy access to services or peace and quiet?",
+        "full": "For everyday life, which matters more: nearby services or a quiet home?",
+        "accessible_ja": "暮らす場所では、便利なサービスへの行きやすさと静けさのどちらが大切ですか？",
+        "full_ja": "日常生活では、近くの便利なサービスと静かな家のどちらが大切ですか？",
+        "accessible_followups": ("Which service would you want nearby?", "What amount of noise would be too much?"),
+    },
+    (114, "cool-day"): {
+        "accessible": "How would you spend half a cool day without internet?",
+        "full": "How would you use half a cool day if the internet stopped working?",
+        "accessible_ja": "涼しい日にインターネットなしで半日過ごすなら、何をしますか？",
+        "full_ja": "涼しい日にインターネットが使えなくなったら、半日をどう過ごしますか？",
+        "accessible_followups": ("Which offline activity would you choose?", "What online service would you miss first?"),
+    },
+    (114, "first-problem"): {
+        "accessible_followups": ("Which daily routine would be affected first?", "What could make the day easier?"),
+    },
+    (114, "switch"): {
+        "title": "A hard summer activity",
+        "title_ja": "夏に大変な活動",
+        "accessible": "Which summer activity is hardest without air conditioning?",
+        "full": "Which part of an ordinary summer day becomes hardest without air conditioning?",
+        "accessible_ja": "エアコンなしでは、夏のどんな活動が最も大変ですか？",
+        "full_ja": "エアコンなしでは、夏の普通の一日のどの部分が最も大変になりますか？",
+        "accessible_followups": ("What cooler place could help?", "What would make the problem less serious?"),
+    },
+    (117, "best-focus"): {
+        "accessible_followups": ("Which feature helps you most?", "Which feature would distract you?"),
+    },
+    (117, "drink-cost"): {
+        "accessible_followups": ("How often would the cost feel reasonable?", "What would make home the better choice?"),
+    },
+    (117, "switch"): {
+        "accessible_followups": ("Why does home suit that task?", "What would improve the home setup?"),
+    },
+    (118, "photo-match"): {
+        "accessible_followups": ("Which detail creates trust?", "What detail would make you doubt it?"),
+    },
+    (118, "only-one"): {
+        "accessible_followups": ("Why would you miss that part?", "Could online shopping replace it at all?"),
+    },
+    (118, "switch"): {
+        "accessible_followups": ("What do you need to check in person?", "What could make an online purchase safe enough?"),
+    },
+    (119, "lost-lesson"): {
+        "title": "Letting a painful memory fade",
+        "title_ja": "つらい記憶が薄れること",
+        "accessible": "Would you rather remember a painful event less clearly or keep every detail?",
+        "full": "Would you rather let a painful memory fade or keep every detail clear?",
+        "accessible_ja": "つらい出来事を少し曖昧に覚えるのと、細部まですべて覚えるのと、どちらがよいですか？",
+        "full_ja": "つらい記憶を薄れさせるのと、細部まではっきり残すのと、どちらがよいですか？",
+        "accessible_followups": ("What could become easier if it faded?", "What might someone still want to remember?"),
+    },
+    (120, "anonymous-help"): {
+        "title": "Helping without credit",
+        "title_ja": "評価を求めない助け",
+        "accessible": "When can doing something anonymously be better than receiving credit?",
+        "full": "When can anonymous help matter more than public credit?",
+        "accessible_ja": "名前を出さずに何かをするほうが、評価されるよりよいのはどんなときですか？",
+        "full_ja": "名前を出さない助けが、人前で評価されることより大切なのはどんなときですか？",
+        "accessible_followups": ("Who could benefit?", "What problem could anonymity avoid?"),
+    },
+    (120, "daily-life"): {
+        "title": "Keeping wealth private",
+        "title_ja": "富を秘密にする生活",
+        "accessible": "What would an ordinary day look like if you were rich but kept your wealth private?",
+        "full": "How might someone live differently if they were rich but kept their wealth private?",
+        "accessible_ja": "裕福でもそのことを秘密にしていたら、普通の一日はどんな一日ですか？",
+        "full_ja": "裕福でもそのことを秘密にしていたら、生活はどう変わるでしょうか？",
+        "accessible_followups": ("Who, if anyone, would they tell?", "What would stay normal?"),
+    },
+    (121, "switch"): {
+        "accessible_followups": ("Which different skills would the goal need?", "Where would deep expertise still help?"),
+    },
+}
+for (_number, _job), _changes in _FINAL_SEMANTIC_REPAIRS.items():
+    next(item for item in QUESTION_POOLS[_number] if item["job"] == _job).update(_changes)
+
+_FINAL_REVIEW_REPAIRS = {
+    (108, "slow-talk"): {
+        "accessible": "Who, if anyone, is easy for you to talk to for hours?",
+        "full": "Who, if anyone, can you talk to for hours without effort?",
+        "accessible_ja": "何時間でも話しやすい相手がいるとしたら、誰ですか？",
+        "full_ja": "無理なく何時間でも話せる相手がいるとしたら、誰ですか？",
+        "accessible_followups": ("What makes a long conversation easy or difficult?", "Does knowing someone well matter?"),
+    },
+    (108, "change"): {
+        "full": "How can a large social circle change the opportunities someone hears about?",
+        "full_ja": "広い人間関係があると、知ることのできる機会はどう変わりますか？",
+        "accessible_followups": ("Which opportunity is a good example?", "What kind of support still needs a close friend?"),
+    },
+    (110, "switch"): {
+        "accessible_followups": ("Why could that responsibility change a schedule?", "What support might make the change easier?"),
+    },
+    (112, "share-view"): {
+        "accessible": "Would you rather enjoy a beautiful view alone or share it with someone?",
+        "full": "Would a beautiful view feel better alone or shared with someone?",
+        "accessible_ja": "すてきな景色は、一人で楽しむのと誰かと共有するのと、どちらがよいですか？",
+        "full_ja": "すてきな景色は、一人で見るのと誰かと共有するのと、どちらがよく感じられますか？",
+        "accessible_followups": ("What is good about your choice?", "Would a photo change anything?"),
+    },
+    (113, "choice"): {
+        "full_ja": "日常生活なら、にぎやかな都会と静かな町のどちらに住みたいですか？",
+    },
+    (113, "small-town"): {
+        "accessible_followups": ("Which service might still be missing?", "How far would you be willing to travel for other needs?"),
+    },
+    (116, "one-place"): {
+        "accessible": "Which part of a normal workday changes most between home and an office?",
+        "full": "Which part of a workday changes most when someone moves between home and an office?",
+        "accessible_ja": "家と職場では、普通の仕事日のどの部分が最も変わりますか？",
+        "full_ja": "家と職場を行き来すると、仕事日のどの部分が最も変わりますか？",
+        "accessible_followups": ("How does it change?", "Which place handles that part better?"),
+    },
+    (116, "quiet-office"): {
+        "accessible_followups": ("Which part of the office would help most?", "What would still make home better?"),
+    },
+    (118, "same-day"): {
+        "accessible_followups": ("Which products still need to be seen in person?", "Would expert help matter?"),
+    },
+    (120, "choice"): {
+        "accessible_followups": ("Which part of that life matters most to you?", "What is attractive about the other life?"),
+    },
+    (120, "daily-life"): {
+        "full": "How might you live differently if you were rich but kept your wealth private?",
+        "full_ja": "裕福でもそのことを秘密にしていたら、生活はどう変わりますか？",
+        "accessible_followups": ("Who, if anyone, would you tell?", "What would stay normal?"),
+    },
+}
+for (_number, _job), _changes in _FINAL_REVIEW_REPAIRS.items():
+    next(item for item in QUESTION_POOLS[_number] if item["job"] == _job).update(_changes)
+
+# Final spoken-language pass.  These repairs remove the remaining hidden or
+# abstract setups.  Every follow-up pair ends with a concrete question that
+# still works after "I don't know", "none", or no matching experience.
+_THREE_SECOND_MAIN_REPAIRS = {
+    (109, "perfect-day"): {
+        "full": "How would you spend a full day outside in perfect weather?",
+        "full_ja": "完璧な天気の日を丸一日外で過ごすなら、何をしますか？",
+    },
+    (107, "first-change"): {
+        "accessible": "What everyday cost could fifty extra dollars help with this month?",
+        "full": "Which everyday cost could fifty extra dollars help cover this month?",
+        "accessible_ja": "今月、追加の五十ドルでどんな日常の支出を助けられますか？",
+        "full_ja": "今月、追加の五十ドルでどの日常の支出を補えますか？",
+    },
+    (107, "future"): {
+        "accessible": "When might someone choose extra time even if money was tight?",
+        "full": "When might someone protect free time even while money was tight?",
+        "accessible_ja": "お金に余裕がなくても、どんなときに時間を選ぶでしょうか？",
+        "full_ja": "お金に余裕がなくても、どんなときに自由な時間を守るでしょうか？",
+    },
+    (110, "no-morning-duty"): {
+        "accessible": "Would you stay up later if you never had morning duties?",
+        "full": "Would you stay up later if nothing required you to wake early?",
+        "accessible_ja": "朝の用事がまったくなければ、もっと夜更かししますか？",
+        "full_ja": "早起きする必要が何もなければ、もっと夜更かししますか？",
+    },
+    (111, "different-partner"): {
+        "accessible": "Which trip decision should people agree on before travelling together?",
+        "full": "Which trip decision should people settle before travelling together?",
+        "accessible_ja": "一緒に旅行する前に、どの旅行の決め事に合意しておくべきですか？",
+        "full_ja": "一緒に旅行する前に、どの旅行の決め事を決めておくべきですか？",
+    },
+    (115, "switch"): {
+        "accessible": "Would caring for someone or facing a large bill make higher pay more important?",
+        "full": "Would care duties or a large bill make higher pay more important?",
+        "accessible_ja": "誰かのケアや大きな支払いが必要になったら、より高い給料が重要になりますか？",
+        "full_ja": "ケアの責任や大きな支払いがあれば、より高い給料が重要になりますか？",
+    },
+    (118, "urgent"): {
+        "accessible": "If you needed a phone charger today, would you look online or in a shop first?",
+        "full": "If you needed a phone charger today, would you check online or visit a shop first?",
+        "accessible_ja": "今日スマートフォンの充電器が必要なら、まずオンラインと店のどちらで探しますか？",
+        "full_ja": "今日スマートフォンの充電器が必要なら、まずオンラインで確認しますか、それとも店へ行きますか？",
+    },
+    (117, "one-hour"): {
+        "full": "Where would you work to finish one difficult task in an hour?",
+        "full_ja": "難しい作業を一時間で終えるなら、どこで取り組みますか？",
+    },
+    (120, "anonymous-help"): {
+        "accessible": "What's one good reason to help someone anonymously?",
+        "full": "What's one good reason to help someone without taking public credit?",
+        "accessible_ja": "名前を出さずに誰かを助けるよい理由は何ですか？",
+        "full_ja": "人前で評価を受けずに誰かを助けるよい理由は何ですか？",
+    },
+    (120, "family-knows"): {
+        "full": "Would public respect matter if the people closest to you did not respect you?",
+        "full_ja": "最も近い人たちに尊敬されていなければ、世間からの尊敬は大切ですか？",
+    },
+    (121, "three-skills"): {
+        "accessible": "What skills do you need to plan a good trip?",
+        "full": "Which skills matter most when planning a complicated trip?",
+        "accessible_ja": "よい旅行を計画するには、どんな技能が必要ですか？",
+        "full_ja": "複雑な旅行を計画するとき、どんな技能が最も重要ですか？",
+    },
+    (121, "switch"): {
+        "accessible": "When is being good at several skills better than mastering one?",
+        "full": "When is being good at several skills more useful than mastering one?",
+        "accessible_ja": "複数の技能が得意なことは、どんなときに一つを極めるよりよいですか？",
+        "full_ja": "複数の技能が得意なことは、どんなときに一つを極めるより役立ちますか？",
+    },
+}
+for (_number, _job), _changes in _THREE_SECOND_MAIN_REPAIRS.items():
+    next(item for item in QUESTION_POOLS[_number] if item["job"] == _job).update(_changes)
+
+_THREE_SECOND_FOLLOWUPS = {
+    107: {
+        "saved-time": ("What did the slower option save money on?", "Which usually costs less: walking or public transport?"),
+        "free-hours": ("What would you do first?", "Which sounds better today: rest, errands, or fun?"),
+        "choice": ("What would your choice help you do?", "Which disappears faster in a busy week: money or free time?"),
+        "first-change": ("How urgent would that cost be?", "What's one everyday expense that often surprises people?"),
+        "opposite": ("How would the extra time help?", "Which helps more after a tiring week: extra time or extra money?"),
+        "ten-hours": ("What would those ten hours replace?", "Would you give up one evening a week for higher pay?"),
+        "future": ("What would the extra time protect?", "Which would you protect first: sleep or income?"),
+    },
+    108: {
+        "slow-talk": ("What makes a long conversation easy or difficult?", "Is a long conversation easier in person or on the phone?"),
+        "crowd": ("What opening question works well?", "Where is it easier to meet people: a class, a party, or online?"),
+        "choice": ("What kind of support would your choice provide?", "Who helps more in a crisis: close friends or many contacts?"),
+        "daily-life": ("Which kind of interaction would disappear?", "Would you share good news with one close friend or a large group first?"),
+        "opposite": ("What kind of support would a wide circle provide?", "Which helps more when job hunting: close friends or many contacts?"),
+        "new-city": ("How would you meet people?", "Where would you start: work, a class, or a hobby group?"),
+        "change": ("Which opportunity is a good example?", "Which brings more new information: one close friend or many contacts?"),
+    },
+    109: {
+        "hard-day": ("Does travel make that weather harder?", "Which bothers you more: strong sun or cold wind?"),
+        "perfect-day": ("Which outdoor place would you visit?", "Would you choose a park, a beach, or a city walk?"),
+        "choice": ("Which activity shapes your answer?", "Which would be harder all year: heat or short winter days?"),
+        "daily-life": ("How would outdoor plans change?", "Which changes more with summer: sleep or clothing?"),
+        "comfortable-home": ("Would daylight still matter?", "Would you rather go outside in rain or snow?"),
+        "daylight": ("Does light affect your mood?", "Which helps your mood more: warmth or sunlight?"),
+        "switch": ("How long could you accept that weather?", "Which is harder to live with: humidity or ice?"),
+    },
+    110: {
+        "clear-head": ("What makes it harder to feel alert?", "Which wakes you up faster: light, food, or movement?"),
+        "free-day": ("How much sleep would that give you?", "Would you sleep later on a completely free day?"),
+        "choice": ("When would you do your hardest work?", "Which is quieter for you: early morning or late night?"),
+        "whole-day": ("Why is that part hardest to move?", "Which is easiest to move: a meal or a bedtime?"),
+        "housemate": ("When would the home need to be quiet?", "Would you set quiet hours at night or in the morning?"),
+        "no-morning-duty": ("Could staying up late affect your health?", "Would you still wake early on weekends?"),
+        "switch": ("Why could that responsibility change a schedule?", "Which changes sleep faster: a new job or a new baby?"),
+    },
+    111: {
+        "surprise": ("When would the same surprise be stressful?", "Would unexpected rain ruin a trip or make it memorable?"),
+        "first-decision": ("What could stay open?", "Which would you book first: transport or a place to stay?"),
+        "choice": ("What would you leave undecided?", "Which is worse: missing a booking or missing a surprise?"),
+        "month": ("Which part of the plan would feel restrictive?", "Would you enjoy a trip with every meal booked?"),
+        "hotel-only": ("What would you do on the first day?", "Would you feel calmer with transport booked too?"),
+        "different-partner": ("How could people compromise?", "Which causes more arguments: money or timing?"),
+        "switch": ("What could go wrong without a plan?", "Which needs more planning: a beach weekend or an international trip?"),
+    },
+    112: {
+        "alone-time": ("Which freedom matters most?", "Would you enjoy one day alone in a new city?"),
+        "share-view": ("What is good about your choice?", "Would you send someone a photo right away?"),
+        "choice": ("Who would be the ideal companion?", "Which is easier with company: safety or decision-making?"),
+        "every-trip": ("What could companions agree on before leaving?", "Which causes more conflict: money, food, or timing?"),
+        "new-country": ("When might company still help?", "Would knowing the local language make solo travel easier?"),
+        "planner": ("What would you still decide yourself?", "Would you let a close friend plan the whole weekend?"),
+        "switch": ("What makes company useful there?", "Which feels safer with company: a city or a remote area?"),
+    },
+    113: {
+        "convenience": ("How often would you use that service?", "Which would you want within walking distance: a supermarket or a train station?"),
+        "window": ("Would you accept a longer commute for that view?", "Would you rather see trees or city lights?"),
+        "choice": ("What would you use most in your chosen place?", "Which would you miss more: quiet or convenience?"),
+        "move": ("Which daily routine would become harder?", "Which is harder without a car: shopping or seeing friends?"),
+        "no-car": ("How would you buy food?", "Could you live comfortably without a car where you are?"),
+        "small-town": ("Which service might still be missing?", "Which matters more nearby: a hospital or a train station?"),
+        "switch": ("Which service would you want nearby?", "Would you accept more noise to live near a station?"),
+    },
+    114: {
+        "outage": ("What could still be done offline?", "Which would you miss first: messages, maps, or payments?"),
+        "cool-day": ("Which offline activity would you choose?", "Would you choose a walk, a book, or a movie?"),
+        "choice": ("Would work, health, or family needs matter most?", "Which is more essential in hot weather: cooling or online access?"),
+        "first-problem": ("What could make the day easier?", "Which suffers first in heat: sleep or concentration?"),
+        "cool-spring": ("What would you do offline?", "Would you still need air conditioning on a cool day?"),
+        "safe-place": ("Would the safe place need to open at night?", "Would a nearby library make the summer easier?"),
+        "switch": ("What cooler place could help?", "Which is harder without cooling: sleeping or working?"),
+    },
+    115: {
+        "good-rest": ("What would you stop doing on a restful day?", "Would you rather rest alone or spend time with people?"),
+        "protected-time": ("How could you protect that time?", "Which would you protect first: sleep or social time?"),
+        "choice": ("Which need is more urgent?", "What makes a week feel too busy?"),
+        "only-one": ("How would the extra hour help?", "Would you use the extra hour for sleep, exercise, or family?"),
+        "nights-weekends": ("Which commitment could not be sacrificed?", "Would losing every weekend be too much?"),
+        "one-year": ("What would the year need to achieve?", "Would you accept the job for three months instead of a year?"),
+        "switch": ("Would the higher pay be needed for long?", "Which cost could make higher pay urgent: rent, health care, or family care?"),
+    },
+    116: {
+        "distraction": ("How could the space be changed?", "Which distracts more at home: noise, chores, or your phone?"),
+        "commute-time": ("Would you use the time the same way every day?", "Would you use the saved commute time for rest, exercise, or something social?"),
+        "choice": ("What kind of work are you imagining?", "Which is quieter for you: home or a workplace?"),
+        "one-place": ("Does that part become easier or harder at home?", "Which changes more: focus or communication?"),
+        "quiet-office": ("Which part of the office would help most?", "Would a short commute make the office more attractive?"),
+        "team-day": ("What should happen that day?", "Which is easier in person: planning or solving a disagreement?"),
+        "switch": ("Why would that feature improve focus?", "Would a private room make home clearly better?"),
+    },
+    117: {
+        "best-focus": ("Which feature helps you most?", "Which helps more: silence or a little background noise?"),
+        "one-hour": ("What important task would you choose?", "Would you choose a desk at home or a quiet cafe?"),
+        "choice": ("What would you bring?", "Which place has fewer distractions for you?"),
+        "one-month": ("What makes the cafe worth using anyway?", "Which cafe noise is hardest to ignore: music or conversations?"),
+        "drink-cost": ("How often would the cost feel reasonable?", "Would one drink per visit feel reasonable?"),
+        "home-desk": ("What else would the room need?", "Would you still visit a cafe for a change of mood?"),
+        "switch": ("Why does home suit that task?", "Which needs more privacy: writing or a video call?"),
+    },
+    118: {
+        "photo-match": ("Which detail creates trust?", "Which do you trust more: customer photos or star ratings?"),
+        "urgent": ("Would price or certainty matter more?", "Would you pay more for the charger today?"),
+        "choice": ("Which product are you imagining?", "Which would you inspect first: shoes or a phone?"),
+        "only-one": ("Why would you miss that part?", "Which would you miss more: trying things on or asking staff?"),
+        "cheap-return": ("What would you check first?", "Would you take the risk for a very cheap item?"),
+        "same-day": ("Would expert help still matter?", "Would you still visit a shop to try on clothes?"),
+        "switch": ("What do you need to check in person?", "Which is riskier online: clothes or electronics?"),
+    },
+    119: {
+        "photo-memory": ("Which detail returns first?", "Which brings back more: a photo or a song?"),
+        "small-moment": ("Why could that ordinary moment matter later?", "Would you record an ordinary day in a diary?"),
+        "choice": ("How would your choice help in daily life?", "Would you rather keep a diary or delete one embarrassing photo?"),
+        "work-study": ("Could too much detail become distracting?", "Would perfect memory help more at work or while studying?"),
+        "all-vivid": ("Would embarrassing memories get easier with time?", "Would you want every embarrassing moment to stay clear?"),
+        "lost-lesson": ("What could become easier if the painful memory faded?", "Can a photograph keep the facts without keeping every feeling?"),
+        "switch": ("Would the answer change over time?", "Should an embarrassing memory fade faster than a happy one?"),
+    },
+    120: {
+        "private-pride": ("Why is it worth doing without praise?", "Which feels better: private pride or public praise?"),
+        "anonymous-help": ("Who could benefit?", "Would you donate anonymously if you could?"),
+        "choice": ("Which part of that life matters most to you?", "Would you prefer a quiet day alone or being thanked in public?"),
+        "daily-life": ("What would stay normal?", "Would you tell one close person about the money?"),
+        "constant-rating": ("Which judgment would feel hardest?", "Would public respect be worth losing some privacy?"),
+        "family-knows": ("Why might public respect still feel valuable?", "Which matters more: respect from family or from strangers?"),
+        "switch": ("Why is that hard to live without?", "Would you leave social media for a month to protect your privacy?"),
+    },
+    121: {
+        "recent-skill": ("What kind of practice helped?", "Which is easier to improve: cooking, exercise, or language?"),
+        "three-skills": ("Which skill is hardest to replace?", "Which part is hardest: choosing a place, budgeting, or organizing?"),
+        "choice": ("Which skill or group of skills do you imagine?", "What skill would you happily practise every week for a year?"),
+        "one-year": ("How would you measure progress?", "Would you rather practise daily or try something new each week?"),
+        "team": ("Who would connect the specialists?", "Would you rather hire one expert or three flexible people?"),
+        "new-field": ("What would you sample first?", "Would you try several topics before choosing one?"),
+        "switch": ("Where would deep expertise still help?", "When is broad knowledge more useful: planning or fixing one technical problem?"),
+    },
+}
+for _number, _rows in _THREE_SECOND_FOLLOWUPS.items():
+    for _job, _followups in _rows.items():
+        next(item for item in QUESTION_POOLS[_number] if item["job"] == _job).update(
+            accessible_followups=_followups,
+        )

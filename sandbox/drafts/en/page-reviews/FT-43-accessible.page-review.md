@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/43-an-embarrassing-memory-that-comes-back-at-night/lesson.html`
-- SHA-256: `4367af90b01657d488ec207b246a9d384b9da4815f99e5e216199464140e319e`
+- SHA-256: `a2b01f279e2f845cb590a3f8f48d778b4db16570d9947fad9c15fb294090a44a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Why can a harmless embarrassing moment replay for years?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What kind of moment tends to stick?” rather than asking every follow-up.
-- Visible target or prompt: Why can a harmless embarrassing moment replay for years? 害のない恥ずかしい出来事が、何年も思い出されるのはなぜですか？
-- Learning target: Explore the distinct “Why it replays (思い出す理由)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What kind of moment tends to stick?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What kind of moment tends to stick?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can a harmless embarrassing moment replay for years?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why can night make it feel louder?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can a harmless embarrassing moment replay for years?"]}`
+- Learner action: Answer the standalone question “Which is more embarrassing: saying the wrong name or messaging the wrong person?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is more embarrassing: saying the wrong name or messaging the wrong person?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is more embarrassing: saying the wrong name or messaging the wrong person?” / “名前を間違えることと、違う人にメッセージを送ることでは、どちらがより恥ずかしいですか？” Tutor follow-ups: “What kind of moment tends to stick?” and “Why can night make it feel louder?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “名前を間違えることと、違う人にメッセージを送ることでは、どちらがより恥ずかしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is more embarrassing: saying the wrong name or messaging the wrong person?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What's one harmless awkward moment that people often replay?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Where is the awkward turning point?” rather than asking every follow-up.
-- Visible target or prompt: What's one harmless awkward moment that people often replay? 人が何度も思い出しやすい、害のない気まずい場面を一つ挙げてください。
-- Learning target: Explore the distinct “A safe example (話しやすい例)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Where is the awkward turning point?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Where is the awkward turning point?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's one harmless awkward moment that people often replay?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why can a small mistake feel so memorable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's one harmless awkward moment that people often replay?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one harmless awkward moment that people often replay?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one harmless awkward moment that people often replay?” / “人が何度も思い出しやすい、害のない気まずい場面を一つ挙げてください。” Tutor follow-ups: “What exactly makes the moment awkward?” and “Why can a small mistake stay in memory?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人が何度も思い出しやすい、害のない気まずい場面を一つ挙げてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one harmless awkward moment that people often replay?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How might age change the way an embarrassing memory feels?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What does experience help someone understand?” rather than asking every follow-up.
-- Visible target or prompt: How might age change the way an embarrassing memory feels? 年齢によって、恥ずかしい記憶の感じ方はどう変わりそうですか？
-- Learning target: Explore the distinct “Age and perspective (年齢と見方)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What does experience help someone understand?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What does experience help someone understand?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How might age change the way an embarrassing memory feels?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which moments feel bigger when people are young?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How might age change the way an embarrassing memory feels?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How might age change the way an embarrassing memory feels?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How might age change the way an embarrassing memory feels?” / “年齢によって、恥ずかしい記憶の感じ方はどう変わりそうですか？” Tutor follow-ups: “What does experience help someone understand?” and “Which moments feel bigger when people are young?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “年齢によって、恥ずかしい記憶の感じ方はどう変わりそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might age change the way an embarrassing memory feels?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Why can an embarrassing moment feel intense even when nobody notices?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How does self-image matter?” rather than asking every follow-up.
-- Visible target or prompt: Why can an embarrassing moment feel intense even when nobody notices? 誰も気づかなくても、なぜ恥ずかしい出来事を強く感じるのでしょうか？
-- Learning target: Explore the distinct “Nobody noticed (誰も気づかない時)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How does self-image matter?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How does self-image matter?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can an embarrassing moment feel intense even when nobody notices?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What reaction might someone imagine?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why can an embarrassing moment feel intense even when nobody notices?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can an embarrassing moment feel intense even when nobody notices?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can an embarrassing moment feel intense even when nobody notices?” / “誰も気づかなくても、なぜ恥ずかしい出来事を強く感じるのでしょうか？” Tutor follow-ups: “Would you worry more about looking rude, foolish, or careless?” and “What reaction might you imagine?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰も気づかなくても、なぜ恥ずかしい出来事を強く感じるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can an embarrassing moment feel intense even when nobody notices?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What would another person probably remember from an embarrassing moment?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How might their view differ?” rather than asking every follow-up.
-- Visible target or prompt: What would another person probably remember from an embarrassing moment? 恥ずかしい出来事について、ほかの人は何を覚えていそうですか？
-- Learning target: Explore the distinct “Another person's memory (ほかの人の記憶)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How might their view differ?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How might their view differ?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would another person probably remember from an embarrassing moment?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which detail would they probably forget?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would another person probably remember from an embarrassing moment?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would another person probably remember from an embarrassing moment?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would another person probably remember from an embarrassing moment?” / “恥ずかしい出来事について、ほかの人は何を覚えていそうですか？” Tutor follow-ups: “How might their view differ?” and “Which detail would they probably forget?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “恥ずかしい出来事について、ほかの人は何を覚えていそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would another person probably remember from an embarrassing moment?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What kinds of trigger bring old embarrassment back?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Could a place, sound, or situation trigger it?” rather than asking every follow-up.
-- Visible target or prompt: What kinds of trigger bring old embarrassment back? どのようなきっかけで、昔の恥ずかしさを思い出しますか？
-- Learning target: Explore the distinct “What brings it back (思い出すきっかけ)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Could a place, sound, or situation trigger it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could a place, sound, or situation trigger it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kinds of trigger bring old embarrassment back?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why do quiet moments leave more room for it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kinds of trigger bring old embarrassment back?"]}`
+- Learner action: Answer the standalone question “What kinds of triggers bring old embarrassment back?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kinds of triggers bring old embarrassment back?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kinds of triggers bring old embarrassment back?” / “どのようなきっかけで、昔の恥ずかしさを思い出しますか？” Tutor follow-ups: “Could a place, sound, or situation bring it back?” and “Why can it return when nothing else is happening?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのようなきっかけで、昔の恥ずかしさを思い出しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kinds of triggers bring old embarrassment back?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What would you say to someone replaying an old mistake?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What might they be taking too seriously?” rather than asking every follow-up.
-- Visible target or prompt: What would you say to someone replaying an old mistake? 昔の失敗を何度も思い出している人に、何と伝えますか？
-- Learning target: Explore the distinct “What you'd say now (今なら言うこと)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What might they be taking too seriously?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What might they be taking too seriously?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you say to someone replaying an old mistake?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which lesson would actually help?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would you say to someone replaying an old mistake?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you say to someone replaying an old mistake?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you say to someone replaying an old mistake?” / “昔の失敗を何度も思い出している人に、何と伝えますか？” Tutor follow-ups: “What might they be taking too seriously?” and “Which lesson would actually help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “昔の失敗を何度も思い出している人に、何と伝えますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you say to someone replaying an old mistake?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “When can an embarrassing memory become funny?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What can change the tone?” rather than asking every follow-up.
-- Visible target or prompt: When can an embarrassing memory become funny? 恥ずかしい記憶は、どのようなときに笑えるものになりますか？
-- Learning target: Explore the distinct “Funny later (あとで笑える時)” angle of “An embarrassing memory that comes back at night” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What can change the tone?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What can change the tone?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When can an embarrassing memory become funny?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes laughter kind rather than dismissive?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When can an embarrassing memory become funny?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When can an embarrassing memory become funny?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When can an embarrassing memory become funny?” / “恥ずかしい記憶は、どのようなときに笑えるものになりますか？” Tutor follow-ups: “What can make the memory feel lighter?” and “What makes it safe to laugh about later?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “恥ずかしい記憶は、どのようなときに笑えるものになりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can an embarrassing memory become funny?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/37-what-you-do-on-a-rainy-day/lesson.html`
-- SHA-256: `5032c21ff078aa9a3f35d791b3efe4b16a79ca1f151bcb4780c6e44aa399111d`
+- SHA-256: `9701217717c588b6ab5a31cf86b8d532fb43269d2e7927798560563f45212fa2`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “It's raining and you have no plans. What happens?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What do you do first?” rather than asking every follow-up.
-- Visible target or prompt: It's raining and you have no plans. What happens? 雨が降っていて、予定はありません。どう過ごしますか？
-- Learning target: Explore the distinct “No plans, just rain (予定のない雨の日)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What do you do first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What do you do first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “It's raining and you have no plans. What happens?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make you leave home anyway?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “It's raining and you have no plans. What happens?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “It's raining and you have no plans. What happens?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “It's raining and you have no plans. What happens?” / “雨が降っていて、予定はありません。どう過ごしますか？” Tutor follow-ups: “What do you do first?” and “What would make you leave home anyway?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “雨が降っていて、予定はありません。どう過ごしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["It's raining and you have no plans. What happens?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What sound, smell, or view would set the mood?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which detail feels most relaxing?” rather than asking every follow-up.
-- Visible target or prompt: What sound, smell, or view would set the mood? どのような音や匂い、景色が、その日の雰囲気を作りますか？
-- Learning target: Explore the distinct “The atmosphere (雨の日の雰囲気)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which detail feels most relaxing?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which detail feels most relaxing?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What sound, smell, or view would set the mood?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which one could become annoying?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What sound, smell, or view would set the mood?"]}`
+- Learner action: Answer the standalone question “On a rainy day, which sets the mood most: the sound, smell, or view?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “On a rainy day, which sets the mood most: the sound, smell, or view?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “On a rainy day, which sets the mood most: the sound, smell, or view?” / “雨の日の雰囲気を最も作るのは、音、匂い、景色のどれですか？” Tutor follow-ups: “Which detail feels most relaxing?” and “Which one could become annoying?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “雨の日の雰囲気を最も作るのは、音、匂い、景色のどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["On a rainy day, which sets the mood most: the sound, smell, or view?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What do you enjoy—or dislike—about rainy days?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How does the feeling change when you have to travel?” rather than asking every follow-up.
-- Visible target or prompt: What do you enjoy—or dislike—about rainy days? 雨の日のどのようなところが好き、または苦手ですか？
-- Learning target: Explore the distinct “How rain feels (雨への気持ち)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How does the feeling change when you have to travel?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How does the feeling change when you have to travel?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do you enjoy—or dislike—about rainy days?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which kind of rain affects your mood most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What do you enjoy—or dislike—about rainy days?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you enjoy—or dislike—about rainy days?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you enjoy—or dislike—about rainy days?” / “雨の日のどのようなところが好き、または苦手ですか？” Tutor follow-ups: “How does the feeling change when you have to travel?” and “Which kind of rain affects your mood most?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “雨の日のどのようなところが好き、または苦手ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you enjoy—or dislike—about rainy days?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What's the best food for a rainy day?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes it fit the weather?” rather than asking every follow-up.
-- Visible target or prompt: What's the best food for a rainy day? 雨の日にいちばん合う食べ物は何ですか？
-- Learning target: Explore the distinct “Rainy-day food (雨の日の食べ物)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes it fit the weather?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes it fit the weather?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's the best food for a rainy day?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would you cook it or get it elsewhere?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's the best food for a rainy day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the best food for a rainy day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the best food for a rainy day?” / “雨の日にいちばん合う食べ物は何ですか？” Tutor follow-ups: “What makes it fit the weather?” and “Would you cook it or get it elsewhere?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “雨の日にいちばん合う食べ物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the best food for a rainy day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What kind of plan would you cancel because of rain?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What amount of rain would change your decision?” rather than asking every follow-up.
-- Visible target or prompt: What kind of plan would you cancel because of rain? 雨なら、どのような予定を中止しますか？
-- Learning target: Explore the distinct “What gets cancelled (中止になること)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What amount of rain would change your decision?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What amount of rain would change your decision?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of plan would you cancel because of rain?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could the plan move indoors instead?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What kind of plan would you cancel because of rain?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of plan would you cancel because of rain?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of plan would you cancel because of rain?” / “雨なら、どのような予定を中止しますか？” Tutor follow-ups: “What amount of rain would change your decision?” and “Could the plan move indoors instead?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “雨なら、どのような予定を中止しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of plan would you cancel because of rain?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which situation involving rain would be most difficult to manage?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would make it manageable?” rather than asking every follow-up.
-- Visible target or prompt: Which situation involving rain would be most difficult to manage? 雨の日のどのような状況が、いちばん大変そうですか？
-- Learning target: Explore the distinct “A difficult situation (大変な雨の場面)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What would make it manageable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would make it manageable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which situation involving rain would be most difficult to manage?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which detail would stay in your memory?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which situation involving rain would be most difficult to manage?"]}`
+- Learner action: Answer the standalone question “Which rainy-day problem would be hardest to deal with?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which rainy-day problem would be hardest to deal with?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which rainy-day problem would be hardest to deal with?” / “雨の日のどのような状況が、いちばん大変そうですか？” Tutor follow-ups: “What would make it manageable?” and “Which detail would stay in your memory?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “雨の日のどのような状況が、いちばん大変そうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which rainy-day problem would be hardest to deal with?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How can rain improve an ordinary day?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which plan might become better indoors?” rather than asking every follow-up.
-- Visible target or prompt: How can rain improve an ordinary day? 雨は、普通の一日をどのようによくすることがありますか？
-- Learning target: Explore the distinct “A better day (よくなる一日)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which plan might become better indoors?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which plan might become better indoors?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can rain improve an ordinary day?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who might enjoy the change most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can rain improve an ordinary day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can rain improve an ordinary day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can rain improve an ordinary day?” / “雨は、普通の一日をどのようによくすることがありますか？” Tutor follow-ups: “Which plan might become better indoors?” and “Who might enjoy the change most?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “雨は、普通の一日をどのようによくすることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can rain improve an ordinary day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would your ideal rainy day look like?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How much company would fit the day?” rather than asking every follow-up.
-- Visible target or prompt: What would your ideal rainy day look like? 理想の雨の日は、どのような一日ですか？
-- Learning target: Explore the distinct “The perfect rainy day (理想の雨の日)” angle of “What you do on a rainy day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How much company would fit the day?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How much company would fit the day?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would your ideal rainy day look like?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What one thing would ruin it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would your ideal rainy day look like?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would your ideal rainy day look like?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would your ideal rainy day look like?” / “理想の雨の日は、どのような一日ですか？” Tutor follow-ups: “How much company would fit the day?” and “What one thing would ruin it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “理想の雨の日は、どのような一日ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would your ideal rainy day look like?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

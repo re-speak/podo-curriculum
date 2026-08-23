@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-accessible/lessons/61-one-thing-your-wedding-would-have-to-include/lesson.html`
-- SHA-256: `e7d001a8161c709e00a13ad216cf4741a43803aab1560041e07e40c0426f24d6`
+- SHA-256: `458119b612ba3c21295ad97e5e5e2c0c1b548571d61959d5cb481db4faaae387`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “If you had a wedding tomorrow, what's the one thing you'd insist on?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What feeling should it create?” rather than asking every follow-up.
-- Visible target or prompt: If you had a wedding tomorrow, what's the one thing you'd insist on? / もし明日結婚式をするなら、絶対に入れたいことは何ですか？
-- Learning target: Explore the distinct “One thing to include (欠かせない一つ)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What feeling should it create?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What feeling should it create?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “If you had a wedding tomorrow, what's the one thing you'd insist on?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who else would it matter to?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “If you had a wedding tomorrow, what's the one thing you'd insist on?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you had a wedding tomorrow, what's the one thing you'd insist on?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you had a wedding tomorrow, what's the one thing you'd insist on?” / “もし明日結婚式をするなら、絶対に入れたいことは何ですか？” Tutor follow-ups: “What would it look or sound like?” and “Who else would care about it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “もし明日結婚式をするなら、絶対に入れたいことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you had a wedding tomorrow, what's the one thing you'd insist on?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which wedding tradition is worth keeping?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What does it mean?” rather than asking every follow-up.
-- Visible target or prompt: Which wedding tradition is worth keeping? / どの結婚式の習慣は残す価値がありますか？
-- Learning target: Explore the distinct “What stays (残すもの)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What does it mean?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What does it mean?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which wedding tradition is worth keeping?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How could it be updated?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which wedding tradition is worth keeping?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which wedding tradition is worth keeping?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which wedding tradition is worth keeping?” / “どの結婚式の習慣は残す価値がありますか？” Tutor follow-ups: “What does it mean?” and “How could it be updated?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの結婚式の習慣は残す価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which wedding tradition is worth keeping?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which common wedding tradition would you remove?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What problem would that solve?” rather than asking every follow-up.
-- Visible target or prompt: Which common wedding tradition would you remove? / よくある結婚式の習慣の中で、どれをなくしたいですか？
-- Learning target: Explore the distinct “What goes (省くもの)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What problem would that solve?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What problem would that solve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which common wedding tradition would you remove?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who might miss it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which common wedding tradition would you remove?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which common wedding tradition would you remove?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which common wedding tradition would you remove?” / “よくある結婚式の習慣の中で、どれをなくしたいですか？” Tutor follow-ups: “What problem would that solve?” and “Who might miss it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “よくある結婚式の習慣の中で、どれをなくしたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which common wedding tradition would you remove?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Who should have the strongest voice in wedding decisions?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which choices can involve family?” rather than asking every follow-up.
-- Visible target or prompt: Who should have the strongest voice in wedding decisions? / 結婚式の決定で、誰の意見を最も強く反映すべきですか？
-- Learning target: Explore the distinct “Who decides (決める人)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which choices can involve family?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which choices can involve family?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who should have the strongest voice in wedding decisions?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which choices belong to the couple?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Who should have the strongest voice in wedding decisions?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who should have the strongest voice in wedding decisions?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who should have the strongest voice in wedding decisions?” / “結婚式の決定で、誰の意見を最も強く反映すべきですか？” Tutor follow-ups: “Which choices can involve family?” and “Which choices belong to the couple?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結婚式の決定で、誰の意見を最も強く反映すべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who should have the strongest voice in wedding decisions?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What makes a wedding detail memorable?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does it need to be expensive?” rather than asking every follow-up.
-- Visible target or prompt: What makes a wedding detail memorable? / 結婚式の一つの演出が心に残るのは、どんなときですか？
-- Learning target: Explore the distinct “A memorable wedding (心に残る結婚式)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Does it need to be expensive?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does it need to be expensive?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes a wedding detail memorable?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could it work at a small wedding?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What makes a wedding detail memorable?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a wedding detail memorable?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a wedding detail memorable?” / “結婚式の一つの演出が心に残るのは、どんなときですか？” Tutor follow-ups: “Does it need to be expensive?” and “Could it work at a small wedding?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結婚式の一つの演出が心に残るのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a wedding detail memorable?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What part of weddings creates the most unnecessary stress?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who usually carries the stress?” rather than asking every follow-up.
-- Visible target or prompt: What part of weddings creates the most unnecessary stress? / 結婚式のどの部分が、最も不必要なストレスを生みますか？
-- Learning target: Explore the distinct “The worst part (大変な部分)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who usually carries the stress?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who usually carries the stress?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What part of weddings creates the most unnecessary stress?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What simple change could reduce it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What part of weddings creates the most unnecessary stress?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of weddings creates the most unnecessary stress?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of weddings creates the most unnecessary stress?” / “結婚式のどの部分が、最も不必要なストレスを生みますか？” Tutor follow-ups: “Who usually carries the stress?” and “What simple change could reduce it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結婚式のどの部分が、最も不必要なストレスを生みますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of weddings creates the most unnecessary stress?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Could a tiny ceremony feel more meaningful than a large wedding?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would the smaller event protect?” rather than asking every follow-up.
-- Visible target or prompt: Could a tiny ceremony feel more meaningful than a large wedding? / ごく小さな式のほうが、大きな結婚式より意味深く感じられることはありますか？
-- Learning target: Explore the distinct “Skipping the event (式をしない選択)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would the smaller event protect?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would the smaller event protect?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Could a tiny ceremony feel more meaningful than a large wedding?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might be lost?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Could a tiny ceremony feel more meaningful than a large wedding?"]}`
+- Learner action: Answer the standalone question “Could a tiny ceremony feel more special than a large wedding?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Could a tiny ceremony feel more special than a large wedding?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Could a tiny ceremony feel more special than a large wedding?” / “ごく小さな式のほうが、大きな結婚式より特別に感じられることはありますか？” Tutor follow-ups: “What would be easier at the smaller wedding?” and “What might people miss?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ごく小さな式のほうが、大きな結婚式より特別に感じられることはありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Could a tiny ceremony feel more special than a large wedding?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What should a wedding be for?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who should feel represented?” rather than asking every follow-up.
-- Visible target or prompt: What should a wedding be for? / 結婚式は何のためにあるべきですか？
-- Learning target: Explore the distinct “What the day is for (式の目的)” angle of “One thing your wedding would have to include” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who should feel represented?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who should feel represented?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What should a wedding be for?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which choice would show that purpose?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What should a wedding be for?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should a wedding be for?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should a wedding be for?” / “結婚式は何のためにあるべきですか？” Tutor follow-ups: “Who is the wedding mainly for?” and “What choice would show that?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結婚式は何のためにあるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should a wedding be for?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -56,18 +56,18 @@ TOC_RETRIEVAL_AUDIT_ONLY = True
 
 BRIEF_OPENINGS = {
     76: "What advice do adults often repeat to children?",
-    77: "Which teacher—real or fictional—stands out to you most, and why?",
+    77: "Which real or fictional teacher stands out to you most?",
     78: "What's the most memorable school nickname you've heard?",
     79: "Which food do many children dislike but learn to enjoy later?",
     80: "What kind of old mistake becomes a story people keep retelling?",
     81: "What travel problem makes the best story afterward?",
-    82: "Choose a place that deserves a return visit. What makes it worth going back?",
-    83: "Which childhood dream job is especially interesting to you?",
+    82: "Which place would you happily visit again?",
+    83: "Which childhood dream job sounds most fun to you now?",
     84: "You can visit one day in the past. Which day do you choose?",
-    85: "What kind of moment can send a life in a completely different direction?",
-    86: "How can the same child seem completely different to different people?",
+    85: "Think of a small choice that changed someone's life. What happened?",
+    86: "What were you like as a child?",
     87: "Which vanished place—local, famous, or personal—would you bring back?",
-    88: "What's a belief that many people once accepted but later proved wrong?",
+    88: "What's something people used to believe that surprises you now?",
 }
 
 
@@ -543,6 +543,726 @@ _revise_prompt(87, "flip", accessible="Which one detail from the place deserves 
 
 _revise_prompt(88, "opening", accessible=BRIEF_OPENINGS[88], accessible_ja="多くの人が以前は信じていたものの、後に間違いだと分かった考えは何ですか？", full="Which once-common belief was overturned most convincingly by later evidence?", full_ja="かつて広く信じられていた考えのうち、後の証拠で最も明確に覆されたものは何ですか？", accessible_followups=("Choose one belief. Why did it seem true?", "How confident were people?"), full_followups=("Which example best shows misplaced certainty?", "What made the claim persuasive at the time?"), safety="corrected-common-belief")
 _revise_prompt(88, "lesson", accessible="What changed after the correction?", accessible_ja="訂正の後、何が変わりましたか？", full="How did the correction change later judgment or behaviour?", full_ja="その訂正は、その後の判断や行動をどう変えましたか？", accessible_followups=("Which habit or judgment shifted?", "Why did the correction matter?"), full_followups=("Which information habit changed most?", "What lasting effect did the revision have?"), safety="correction-consequence")
+
+
+# This final conversational pass is intentionally independent of the narrative
+# ladder above.  Every page can start a useful exchange even when the learner
+# skipped the previous page or has no personal story to continue.  Full keeps
+# the same plain spoken register and deepens the angle without academic wording.
+CONVERSATIONAL_MAIN_REVISIONS = {
+    76: (
+        ("What advice do adults often repeat to children?", "子どもに大人がよく繰り返す助言は何ですか？", "What advice gets passed from one generation of children to the next?", "どんな助言が、子どもたちの世代から次の世代へ受け継がれていますか？"),
+        ("What's a piece of advice you remember word for word?", "言葉どおりに覚えている助言は何ですか？", "What's a piece of advice whose exact words have stayed with you?", "正確な言い方が今も心に残っている助言は何ですか？"),
+        ("What's one piece of childhood advice people often ignore?", "子どもの頃の助言で、よく無視されるものは何ですか？", "Which childhood warning do people often understand only after ignoring it?", "無視した後になって初めて意味が分かることの多い子どもの頃の忠告は何ですか？"),
+        ("Why do adults repeat the same advice to children?", "大人はなぜ子どもに同じ助言を繰り返すのでしょうか？", "Why does some childhood advice survive even when the world changes?", "世の中が変わっても残り続ける子どもの頃の助言があるのはなぜですか？"),
+        ("What childhood advice makes more sense when you get older?", "大人になると、より納得できる子どもの頃の助言は何ですか？", "Which childhood advice becomes more convincing with age?", "年齢を重ねるほど納得できるようになる子どもの頃の助言は何ですか？"),
+        ("What childhood advice would you pass on, change, or drop?", "子どもの頃の助言で、伝えたいもの、変えたいもの、やめたいものは何ですか？", "Which childhood advice deserves to be passed on, rewritten, or left behind?", "子どもの頃の助言で、伝える、言い換える、手放す価値があるものは何ですか？"),
+        ("What reminder can help a child without sounding like nagging?", "口うるさく聞こえずに子どもの役に立つ注意は何ですか？", "How can an adult repeat an important reminder without making a child stop listening?", "子どもが聞かなくならないように、大切な注意を繰り返すにはどうすればよいですか？"),
+        ("What advice do adults need to hear more often?", "大人がもっと聞く必要のある助言は何ですか？", "What advice do adults ignore even though they know it is true?", "本当だと分かっていても、大人が無視しがちな助言は何ですか？"),
+    ),
+    77: (
+        ("Which teacher—real or fictional—stands out to you most, and why?", "実在でも作品の中でも、特に印象に残る先生は誰ですか。なぜですか？", "Which real or fictional teacher has stayed in your mind, and why?", "実在でも作品の中でも、今も心に残っている先生は誰ですか。なぜですか？"),
+        ("What kind of teacher makes students want to learn?", "どんな先生だと、生徒は学びたくなりますか？", "What does a teacher do that makes students curious instead of afraid to be wrong?", "生徒が間違いを恐れず好奇心を持てるように、先生は何をしますか？"),
+        ("What's one small thing a teacher can do that students remember?", "生徒が覚えている、先生の小さな行動には何がありますか？", "What small act from a teacher can matter to a student years later?", "何年後にも生徒にとって大切に思える、先生の小さな行動は何ですか？"),
+        ("Can a strict teacher also be a good teacher?", "厳しい先生でも、よい先生になれますか？", "When does a strict teacher help students, and when does strictness go too far?", "先生の厳しさは、どんなときに生徒の役に立ち、どんなときに行き過ぎますか？"),
+        ("What can a teacher teach that isn't in the textbook?", "先生は教科書にない何を教えられますか？", "What's an important lesson a teacher can leave beyond the subject itself?", "先生が教科そのものを超えて残せる大切な学びは何ですか？"),
+        ("Have you ever understood a teacher better years later?", "何年かたってから、先生のことをより理解できた経験はありますか？", "Why can a teacher's choices make more sense years after the class ends?", "授業が終わって何年かしてから、先生の選択に納得できることがあるのはなぜですか？"),
+        ("If you met a memorable teacher today, what would you say?", "今、記憶に残る先生に会ったら、何と言いますか？", "If you could have one honest conversation with a former teacher, what would you want them to know?", "以前の先生と一度だけ率直に話せるなら、何を知ってほしいですか？"),
+        ("What makes a teacher difficult to learn from?", "どんな先生だと学びにくいですか？", "Which teacher habit can make even an interesting subject hard to learn?", "面白い教科でも学びにくくしてしまう先生の習慣は何ですか？"),
+    ),
+    78: (
+        ("What's the most memorable school nickname you've heard?", "学校のあだ名で、最も印象に残っているものは何ですか？", "Which school nickname has the best story behind it?", "最も面白い由来を持つ学校のあだ名は何ですか？"),
+        ("How do school nicknames usually start?", "学校のあだ名は、ふつうどのように始まりますか？", "What makes a nickname spread from one person to a whole group?", "一人が使い始めたあだ名が、グループ全体に広がるのはなぜですか？"),
+        ("What makes a nickname feel friendly?", "あだ名が親しみのあるものに感じられるのは、どんなときですか？", "What makes the same nickname feel warm to one person and hurtful to another?", "同じあだ名でも、ある人には温かく、別の人には傷つくものに感じられるのはなぜですか？"),
+        ("What can a nickname reveal about a person?", "あだ名は、その人のどんなところを表せますか？", "What can a nickname reveal—and what can it get completely wrong?", "あだ名は何を表せて、何を完全に間違って伝えることがありますか？"),
+        ("Why do some childhood nicknames last into adulthood?", "子どもの頃のあだ名が、大人になっても残ることがあるのはなぜですか？", "Why can an old nickname bring back a whole relationship or time in life?", "昔のあだ名が、人間関係や人生のある時期を丸ごと思い出させるのはなぜですか？"),
+        ("Why do students give one another nicknames?", "生徒はなぜ互いにあだ名をつけるのでしょうか？", "How can nicknames help a group feel close?", "あだ名は、グループの親しさをどう深めますか？"),
+        ("When does a nickname stop being friendly?", "あだ名が親しみのある呼び方ではなくなるのは、どんなときですか？", "Who should decide whether a nickname is still okay to use?", "あだ名を使い続けてよいかは、誰が決めるべきですか？"),
+        ("What would a good nickname for you today say about you?", "今の自分に合うよいあだ名なら、自分の何を表しますか？", "What part of your present self would you want a new nickname to capture?", "新しいあだ名に、今の自分のどんな部分を表してほしいですか？"),
+    ),
+    79: (
+        ("Which food do many children dislike but learn to enjoy later?", "子どもが嫌いでも、後で好きになることの多い食べ物は何ですか？", "Which childhood food dislike often turns into real enjoyment later?", "子どもの頃は嫌いでも、後で本当に好きになることの多い食べ物は何ですか？"),
+        ("Which matters more when children dislike food: taste, smell, or texture?", "子どもが食べ物を嫌うとき、味、匂い、食感のどれが最も大きいですか？", "Which part of a food—taste, smell, texture, or appearance—is hardest to get past?", "食べ物の味、匂い、食感、見た目のうち、最も慣れにくいものは何ですか？"),
+        ("What can make someone suddenly enjoy a food they once hated?", "以前は嫌いだった食べ物を、急に好きになるきっかけは何ですか？", "What experience can completely change someone's opinion of a food?", "どんな経験が、食べ物への考えを完全に変えることがありますか？"),
+        ("Does cooking food differently change whether people like it?", "調理方法が変わると、その食べ物を好きになることはありますか？", "How much can the cook or setting change the way a food tastes?", "作る人や食べる場所によって、食べ物の味わいはどのくらい変わりますか？"),
+        ("What food do people often dislike even after trying it many times?", "何度試しても、苦手なままの人が多い食べ物は何ですか？", "Which food dislike is hardest to change, and why?", "最も変わりにくい食べ物の苦手意識は何ですか。なぜですか？"),
+        ("What food do adults enjoy that children often find strange?", "大人は楽しんでも、子どもが変だと感じることの多い食べ物は何ですか？", "Which adult food preference would surprise a child most?", "大人の食べ物の好みで、子どもが最も驚きそうなものは何ですか？"),
+        ("When should people stop encouraging someone to try a food?", "人に食べ物を試すよう勧めるのをやめるべきなのは、どんなときですか？", "Where is the line between friendly encouragement and pressure to eat?", "食べるように優しく勧めることと、無理に勧めることの境目はどこですか？"),
+        ("What food do you dislike now but might enjoy later?", "今は苦手でも、後で好きになるかもしれない食べ物は何ですか？", "Which of your current food dislikes has the best chance of changing?", "今苦手な食べ物のうち、最も好きになりそうなものは何ですか？"),
+    ),
+    80: (
+        ("What kind of old mistake becomes a story people keep retelling?", "どんな昔の失敗が、何度も語られる話になりますか？", "What makes one old mistake turn into a story that never disappears?", "一つの昔の失敗が、いつまでも消えない話になるのはなぜですか？"),
+        ("What's a small mistake that can turn into a funny story?", "面白い話になりやすい小さな失敗には、何がありますか？", "What kind of harmless mistake gets funnier with time?", "時間がたつほど面白くなる、害のない失敗にはどんなものがありますか？"),
+        ("Why do some mistakes become group stories that everyone remembers?", "失敗の中には、みんなが覚えるグループの話になるものがあるのはなぜですか？", "Why can a group remember one person's mistake differently from the person who made it?", "グループが覚える失敗と、失敗した本人の記憶が違うことがあるのはなぜですか？"),
+        ("What's the best first step after making an embarrassing mistake?", "恥ずかしい失敗をした後、最初に何をするのがよいですか？", "What helps someone recover well from an embarrassing mistake?", "恥ずかしい失敗からうまく立ち直るには、何が役立ちますか？"),
+        ("How can other people's reactions make a mistake feel better or worse?", "周りの反応によって、失敗の感じ方はどうよくなったり悪くなったりしますか？", "Which reaction helps after a mistake, and which reaction makes it harder to move on?", "失敗の後に役立つ反応と、立ち直りにくくする反応は何ですか？"),
+        ("When does an old mistake stop being funny?", "昔の失敗が面白くなくなるのは、どんなときですか？", "What can turn a funny old story into an uncomfortable one?", "昔の面白い話が、気まずい話に変わるのはどんなときですか？"),
+        ("What's one useful habit people learn from a mistake?", "失敗から学べる役立つ習慣を一つ挙げるとしたら何ですか？", "Which lesson from a mistake is worth keeping after the embarrassment fades?", "恥ずかしさが消えた後も残す価値のある、失敗からの学びは何ですか？"),
+        ("When is it fair to tell someone else's embarrassing story?", "ほかの人の恥ずかしい話をしても公平なのは、どんなときですか？", "Whose permission matters before an old mistake becomes a shared story?", "昔の失敗をみんなの話にする前に、誰の許可が大切ですか？"),
+    ),
+    81: (
+        ("What travel problem makes the best story afterward?", "後になると一番面白い話になる旅行トラブルは何ですか？", "Which travel problem is stressful at the time but funny later?", "そのときは大変でも、後で面白くなる旅行トラブルは何ですか？"),
+        ("Which travel plans go wrong most easily?", "どんな旅行計画が最も失敗しやすいですか？", "Which part of a trip is most likely to fall apart first?", "旅行のどの部分が、最初にうまくいかなくなりやすいですか？"),
+        ("What's the hardest travel problem to solve without help?", "助けなしでは解決しにくい旅行トラブルは何ですか？", "Which travel problem can quickly create several new problems?", "どんな旅行トラブルが、すぐにいくつもの新しい問題を生みますか？"),
+        ("What should a traveller do first when a plan falls apart?", "計画が崩れたとき、旅行者は最初に何をするべきですか？", "What first decision matters most when a trip suddenly goes wrong?", "旅行が突然うまくいかなくなったとき、最も大切な最初の決断は何ですか？"),
+        ("Is it easier to handle travel problems alone or with someone else?", "旅行トラブルは、一人と誰かと一緒のどちらが対応しやすいですか？", "How does travelling alone or with someone change the way a problem gets solved?", "一人旅か誰かとの旅行かによって、問題の解決方法はどう変わりますか？"),
+        ("What can turn a bad trip into a good story?", "悪い旅行をよい話に変えるものは何ですか？", "What makes a disappointing trip worth remembering anyway?", "残念な旅行でも、覚えておく価値のあるものにするのは何ですか？"),
+        ("Which travel problem stays stressful even years later?", "何年たってもつらさが残る旅行トラブルは何ですか？", "Which part of a bad trip should people avoid turning into a joke?", "悪い旅行のどんな部分は、冗談にしないほうがよいですか？"),
+        ("What would make you give a place a second chance after a bad trip?", "悪い旅行の後でも、その場所にもう一度行こうと思えるのは何ですか？", "What would need to change before you returned to a place connected to a bad trip?", "悪い旅行と結びついた場所へ戻る前に、何が変わる必要がありますか？"),
+    ),
+    82: (
+        ("Which place would you happily visit again?", "喜んでもう一度訪れたい場所はどこですか？", "Which place would you happily return to, even if the second visit felt different?", "二回目の訪問で感じ方が違っても、喜んで戻りたい場所はどこですか？"),
+        ("What makes a place worth a second visit?", "場所をもう一度訪れる価値のあるものにするのは何ですか？", "What can a second visit reveal that the first visit misses?", "最初の訪問では気づかない、二回目だから分かることは何ですか？"),
+        ("Would you return for the place itself or the memories connected to it?", "その場所自体と、そこに結びついた思い出のどちらのために戻りますか？", "How can you tell whether you miss a place or the person you were there?", "恋しいのが場所なのか、そこにいた頃の自分なのか、どう見分けられますか？"),
+        ("Who can make a return visit better—or would you go alone?", "再訪をもっとよくしてくれる人は誰ですか。それとも一人で行きますか？", "When is a return visit better shared, and when is it better alone?", "再訪はどんなときに誰かと一緒がよく、どんなときに一人がよいですか？"),
+        ("How can a place feel different the second time?", "同じ場所でも、二回目にはどう違って感じられますか？", "What might change more on a return visit: the place or the visitor?", "再訪でより大きく変わっているのは、場所と訪れる人のどちらでしょうか？"),
+        ("What should someone do first when revisiting a favourite place?", "好きな場所を再訪したら、最初に何をするべきですか？", "What is worth repeating on a return visit, and what is better left as a memory?", "再訪で繰り返す価値のあることと、思い出のままにしたほうがよいことは何ですか？"),
+        ("Can high expectations ruin a return visit?", "期待が高すぎると、再訪が台無しになることはありますか？", "How can someone enjoy a return visit without trying to recreate the past?", "過去を再現しようとせずに、再訪を楽しむにはどうすればよいですか？"),
+        ("What feeling from a favourite place would you like in daily life?", "好きな場所で感じるどんな気持ちを、日常生活にも取り入れたいですか？", "Which quality from a favourite place would most improve your ordinary week?", "好きな場所のどんなよさが、普段の一週間を最もよくしますか？"),
+    ),
+    83: (
+        ("Which childhood dream job sounds most fun to you now?", "今聞いて最も楽しそうな子どもの頃の夢の仕事は何ですか？", "Which childhood dream job sounds most fun to you now?", "今聞いて最も楽しそうな子どもの頃の夢の仕事は何ですか？"),
+        ("What makes a dream job exciting to a child?", "夢の仕事が子どもにとってわくわくするのはなぜですか？", "What part of a dream job does a child usually see first?", "子どもは夢の仕事のどんな部分を最初に見ますか？"),
+        ("Where do children's dream jobs usually come from?", "子どもの夢の仕事は、ふつうどこから生まれますか？", "Who or what has the strongest influence on a child's dream job?", "子どもの夢の仕事に最も強く影響する人やものは何ですか？"),
+        ("Why do childhood dream jobs change?", "子どもの頃の夢の仕事が変わるのはなぜですか？", "What new knowledge most often changes a childhood career dream?", "どんな新しい知識が、子どもの頃の仕事の夢を変えやすいですか？"),
+        ("Which childhood dream job can lead to a very different adult career?", "子どもの頃の夢から、全く違う大人の仕事につながることがあるのはどんな仕事ですか？", "How can the value behind a childhood dream survive in a very different career?", "子どもの頃の夢にあった価値は、全く違う仕事の中でどう残りますか？"),
+        ("How can an old dream still shape someone's life after they choose another job?", "別の仕事を選んだ後でも、昔の夢はどのように人生へ影響しますか？", "Which skill from an abandoned dream can remain useful later?", "あきらめた夢から得たどんな技能が、後で役立つことがありますか？"),
+        ("What do adults understand about a dream job that children usually don't?", "夢の仕事について、大人には分かっても子どもには分かりにくいことは何ですか？", "Which hidden part of a dream job becomes clear only with adult experience?", "夢の仕事のどんな見えない部分が、大人の経験を通して初めて分かりますか？"),
+        ("What might a child find surprising about your life now?", "子どもが今のあなたの生活を見たら、何に驚くでしょうか？", "What would your childhood self misunderstand about the life you have now?", "子どもの頃の自分は、今の生活について何を誤解しそうですか？"),
+    ),
+    84: (
+        ("You can visit one day in the past. Which day do you choose?", "過去の一日を訪れられます。どの日を選びますか？", "If you could witness one day in the past, which day would be worth seeing?", "過去の一日を目撃できるなら、どの日を見る価値がありますか？"),
+        ("What kind of day from the past would be most interesting to watch again?", "過去のどんな一日をもう一度見るのが最も面白いですか？", "Would an ordinary day or a famous day reveal more about the past?", "普通の一日と有名な日のどちらが、過去についてより多くを教えてくれますか？"),
+        ("What could revisiting one day help a person understand?", "一日を訪れ直すことで、何を理解できるでしょうか？", "What could one day in the past help someone finally understand?", "過去の一日を見ることで、ようやく何が分かるかもしれませんか？"),
+        ("If you could revisit the past, would you only watch or change one thing?", "過去を訪れられるなら、見るだけにしますか、それとも一つ変えますか？", "If a visit to the past allowed one action, would you observe or step in?", "過去への訪問で一つ行動できるなら、見るだけにしますか、それとも関わりますか？"),
+        ("Who from the past would you most like to spend one ordinary day with?", "過去の誰と、普通の一日を一緒に過ごしたいですか？", "Whose ordinary day would tell you more than a formal interview?", "正式なインタビューより、誰の普通の一日のほうが多くを教えてくれますか？"),
+        ("What question would you ask someone from the past?", "過去の人に、どんな質問をしますか？", "Which question would be worth carrying across time?", "時間を越えて聞く価値のある質問は何ですか？"),
+        ("How might a visit to the past change how you see the present?", "過去への訪問は、現在の見方をどう変えるでしょうか？", "What part of the present might feel different after seeing the past directly?", "過去を直接見た後、現在のどんな部分が違って感じられるでしょうか？"),
+        ("What's one good reason not to revisit the past?", "過去を訪れ直さないほうがよい理由を一つ挙げるとしたら何ですか？", "When might accepting the past be more useful than seeing it again?", "過去をもう一度見るより、受け入れるほうが役立つのはどんなときですか？"),
+    ),
+    85: (
+        ("Think of a small choice that changed someone's life. What happened?", "誰かの人生を変えた小さな選択を考えてください。何が起きましたか？", "Think of a small choice that quietly changed a person's direction. What made it matter?", "人の進む方向を静かに変えた小さな選択を考えてください。なぜ重要だったのでしょうか？"),
+        ("What's an ordinary decision that can change a person's future?", "人の将来を変えることのある普通の決断は何ですか？", "Which ordinary decision can open a path that was not visible before?", "どんな普通の決断が、それまで見えなかった道を開くことがありますか？"),
+        ("Do people usually notice a turning point while it is happening?", "人は転機が起きているとき、ふつうそれに気づきますか？", "Why do some turning points look ordinary until years later?", "転機の中には、何年もたつまで普通に見えるものがあるのはなぜですか？"),
+        ("What small opportunity can open a completely new path?", "全く新しい道を開くことのある小さな機会は何ですか？", "Which opportunity can matter even when it does not look important at first?", "最初は重要に見えなくても、大きな意味を持つ機会は何ですか？"),
+        ("Who can quietly change the direction of another person's life?", "誰が、ほかの人の人生の方向を静かに変えることがありますか？", "How can one person's small action redirect someone else's life?", "一人の小さな行動が、ほかの人の人生をどう変えることがありますか？"),
+        ("How much of a turning point comes from luck?", "転機のどのくらいが運によるものですか？", "How should we divide credit between luck and choice at a turning point?", "転機では、運と選択のどちらにどのくらい意味があると考えるべきですか？"),
+        ("When is it worth changing direction after years on one path?", "何年も一つの道を進んだ後でも、方向を変える価値があるのはどんなときですか？", "What can make changing direction wiser than protecting the time already spent?", "すでに使った時間を守るより、方向を変えるほうが賢いのはどんなときですか？"),
+        ("How can someone tell that it may be time for a new direction?", "新しい方向へ進む時期かもしれないと、どう判断できますか？", "Which signs show that a difficult period is a turning point rather than a temporary problem?", "つらい時期が一時的な問題ではなく転機だと示すものは何ですか？"),
+    ),
+    86: (
+        ("What were you like as a child?", "子どもの頃、あなたはどんな子どもでしたか？", "What part of your childhood personality is easiest to recognize now?", "子どもの頃の性格のどんな部分が、今も最も分かりやすく残っていますか？"),
+        ("What's one childhood trait that often stays into adulthood?", "大人になっても残りやすい子どもの頃の特徴は何ですか？", "Which childhood trait can grow into a strength in adulthood?", "子どもの頃のどんな特徴が、大人になると強みになり得ますか？"),
+        ("Why might family and school friends remember the same child differently?", "家族と学校の友達が、同じ子どもを違って覚えているのはなぜですか？", "What can two different memories of the same child both get right?", "同じ子どもについての二つの違う記憶が、どちらも正しいことがあるのはなぜですか？"),
+        ("What's one small childhood story that can reveal a person's character?", "人の性格が分かる小さな子どもの頃の話には、どんなものがありますか？", "Which ordinary childhood moment can reveal more than a simple label?", "どんな普通の子どもの頃の瞬間が、単純な呼び方より多くを表しますか？"),
+        ("Why can a quiet child be talkative in the right setting?", "静かな子どもでも、合う場所ではよく話すことがあるのはなぜですか？", "How much can a child's behaviour change with the people and setting?", "一緒にいる人や場所によって、子どもの行動はどのくらい変わりますか？"),
+        ("Which childhood trait would you like to keep as an adult?", "子どもの頃のどんな特徴を、大人になっても残したいですか？", "Which childhood quality is easiest for adults to lose but worth protecting?", "大人になると失いやすくても、守る価値のある子どもの頃のよさは何ですか？"),
+        ("Which labels for children can be unfair?", "子どもへのどんな呼び方は不公平になりやすいですか？", "What might a label like 'shy' or 'difficult' fail to show about a child?", "「恥ずかしがり屋」や「難しい子」という呼び方では、子どものどんな部分が見えなくなりますか？"),
+        ("What might your childhood self find surprising about you now?", "子どもの頃の自分は、今のあなたの何に驚くでしょうか？", "What would your childhood self understand about you immediately—and what would seem strange?", "子どもの頃の自分が今のあなたについてすぐ理解することと、不思議に思うことは何ですか？"),
+    ),
+    87: (
+        ("Which vanished place—local, famous, or personal—would you bring back?", "地元、有名な場所、個人的な場所の中で、消えた場所を一つ戻せるならどこですか？", "Which lost place would be most valuable to bring back for one day?", "失われた場所のうち、一日だけ戻す価値が最も高い場所はどこですか？"),
+        ("What detail makes an old place easy to picture?", "昔の場所を思い浮かべやすくする細かな特徴は何ですか？", "Which sound, smell, or small feature can bring a lost place back to mind?", "どんな音、匂い、小さな特徴が、失われた場所を心によみがえらせますか？"),
+        ("Why can ordinary places become important childhood memories?", "普通の場所が、大切な子どもの頃の思い出になるのはなぜですか？", "What can make an ordinary shop, park, or street feel irreplaceable?", "普通の店、公園、通りが、かけがえのないものに感じられるのはなぜですか？"),
+        ("Why do favourite local places disappear?", "地元の好きな場所がなくなるのはなぜですか？", "Which kinds of change are hardest for small local places to survive?", "小さな地元の場所が生き残りにくいのは、どんな変化ですか？"),
+        ("Would you want to know before a favourite place closed?", "好きな場所が閉まる前に、知りたいですか？", "What would you do differently if you knew a favourite place was about to disappear?", "好きな場所がまもなくなくなると知ったら、何を変えて行動しますか？"),
+        ("What makes a good replacement for a place people loved?", "人々が愛した場所のよい代わりになるものは何ですか？", "Can a new place respect what people valued about the old one?", "新しい場所は、古い場所で人々が大切にしたものを尊重できますか？"),
+        ("Can a useful new place still feel like a loss?", "役に立つ新しい場所でも、喪失のように感じることはありますか？", "How can a change be practical and still feel sad?", "変化が実用的でも悲しく感じられるのはなぜですか？"),
+        ("Which small detail from a lost place is worth preserving?", "失われた場所のどんな小さな特徴を残す価値がありますか？", "How should a community remember a place that no longer exists?", "もう存在しない場所を、地域はどのように記憶に残すべきですか？"),
+    ),
+    88: (
+        ("What's something people used to believe that surprises you now?", "昔の人が信じていたことで、今のあなたが驚くものは何ですか？", "What's something people used to believe that surprises you now?", "昔の人が信じていたことで、今のあなたが驚くものは何ですか？"),
+        ("What's a harmless fact people are often confidently wrong about?", "害はないものの、多くの人が自信を持って間違えやすい事実は何ですか？", "Which small misconception is surprisingly hard to correct?", "意外に訂正しにくい小さな思い違いは何ですか？"),
+        ("Why do wrong beliefs sometimes last for years?", "間違った考えが何年も続くことがあるのはなぜですか？", "What lets a wrong belief survive even when better information is available?", "よりよい情報があっても、間違った考えが残るのはなぜですか？"),
+        ("Where do convincing wrong ideas usually come from?", "信じやすい間違った考えは、ふつうどこから来ますか？", "Why can repetition make a weak idea feel true?", "繰り返しによって、根拠の弱い考えが本当に感じられるのはなぜですか？"),
+        ("What kind of evidence is most likely to change someone's mind?", "どんな根拠が、人の考えを最も変えやすいですか？", "What makes a correction easier to accept?", "訂正を受け入れやすくするものは何ですか？"),
+        ("Why is it hard to admit a mistake even when the evidence is clear?", "根拠が明らかでも、間違いを認めにくいのはなぜですか？", "How can embarrassment keep a person defending an idea they doubt?", "恥ずかしさによって、疑っている考えを守り続けてしまうのはなぜですか？"),
+        ("How can being wrong once make someone a better judge later?", "一度間違うことが、後の判断をよくするのはどうしてですか？", "Which checking habit is worth learning from a confident mistake?", "自信を持って間違えた経験から、どんな確認の習慣を学ぶ価値がありますか？"),
+        ("What's one belief you hold lightly because new evidence could change it?", "新しい根拠で変わるかもしれないため、強く決めつけていない考えは何ですか？", "How do you decide how certain to be when the evidence is incomplete?", "根拠が不十分なとき、どのくらい確信するかをどう決めますか？"),
+    ),
+}
+
+for _number, _rows in CONVERSATIONAL_MAIN_REVISIONS.items():
+    if len(_rows) != 8:
+        raise ValueError(f"FT-{_number} must have eight conversational prompts")
+    for _item, (_a, _a_ja, _f, _f_ja) in zip(TOPICS[_number]["prompts"], _rows, strict=True):
+        _item.update(
+            accessible=_a,
+            accessible_ja=_a_ja,
+            full=_f,
+            full_ja=_f_ja,
+            # The simpler probes were already reviewed for distinct jobs.  The
+            # Full deck goes deeper through its main question and article, not
+            # by swapping in needlessly formal tutor language.
+            full_followups=_item["accessible_followups"],
+            safety="standalone-conversation-pool",
+        )
+
+# Keep the short page heading honest when the conversational rewrite changes
+# the angle of the old narrative ladder.
+CONVERSATIONAL_PAGE_TITLES = {
+    (76, 3): ("Advice people ignore", "無視されがちな助言"),
+    (76, 5): ("Advice that makes sense later", "後で分かる助言"),
+    (76, 7): ("A reminder without nagging", "口うるさくない注意"),
+    (77, 2): ("A teacher who makes learning easier", "学びやすくする先生"),
+    (77, 3): ("A small act students remember", "生徒が覚えている小さな行動"),
+    (77, 4): ("Strict but good?", "厳しくてもよい先生か"),
+    (77, 6): ("Understanding a teacher later", "後で分かる先生のこと"),
+    (77, 8): ("Hard to learn from", "学びにくい先生"),
+    (78, 3): ("A friendly nickname", "親しみのあるあだ名"),
+    (78, 4): ("What a nickname shows", "あだ名が表すこと"),
+    (78, 6): ("Why nicknames?", "あだ名をつける理由"),
+    (79, 1): ("Food children learn to enjoy", "後で好きになる食べ物"),
+    (79, 2): ("Taste, smell, or texture", "味、匂い、食感"),
+    (79, 3): ("A sudden change in taste", "好みが急に変わるとき"),
+    (79, 4): ("Cooked differently", "違う調理方法"),
+    (79, 8): ("Might like it later", "後で好きになるかも"),
+    (80, 2): ("A small funny mistake", "面白い話になる小さな失敗"),
+    (80, 3): ("A story the group remembers", "みんなが覚えている話"),
+    (80, 4): ("The first step afterward", "失敗の後の最初の一歩"),
+    (80, 7): ("A useful habit", "役立つ習慣"),
+    (81, 1): ("A good story later", "後でよい話になること"),
+    (81, 2): ("Plans that fail easily", "失敗しやすい計画"),
+    (81, 3): ("Hard to solve alone", "一人では解決しにくいこと"),
+    (81, 6): ("From bad trip to good story", "悪い旅行からよい話へ"),
+    (81, 7): ("Still stressful later", "後でもつらいこと"),
+    (82, 2): ("Worth a second visit", "もう一度行く価値"),
+    (82, 3): ("The place or the memory", "場所か思い出か"),
+    (82, 4): ("Return alone or together", "一人か誰かと再訪するか"),
+    (82, 6): ("The first thing to do", "最初にすること"),
+    (82, 8): ("A feeling to bring home", "日常に持ち帰りたい気持ち"),
+    (83, 5): ("A different adult path", "大人になって選ぶ別の道"),
+    (83, 8): ("A child's surprise", "子どもの自分が驚くこと"),
+    (84, 2): ("A day worth watching again", "もう一度見たい一日"),
+    (84, 5): ("One ordinary day together", "一緒に過ごす普通の一日"),
+    (84, 6): ("A question for the past", "過去の人への質問"),
+    (85, 1): ("A small choice, a new direction", "小さな選択、新しい方向"),
+    (85, 2): ("An ordinary turning point", "日常の転機"),
+    (85, 3): ("Noticing a turning point", "転機に気づくこと"),
+    (85, 4): ("A small opportunity", "小さな機会"),
+    (85, 5): ("Someone who changes a life", "人生を変える人"),
+    (85, 6): ("The role of luck", "運が果たす役割"),
+    (85, 7): ("Changing direction later", "後で方向を変えること"),
+    (85, 8): ("Time for a new direction", "新しい方向へ進むとき"),
+    (86, 1): ("You as a child", "子どもの頃の自分"),
+    (86, 2): ("A trait that stays", "大人になっても残る性格"),
+    (86, 3): ("Different memories of one child", "同じ子どもの違う記憶"),
+    (86, 4): ("A revealing childhood story", "性格が分かる子どもの頃の話"),
+    (86, 5): ("Quiet in one place, talkative in another", "場所で変わる話し方"),
+    (86, 6): ("A trait worth keeping", "残したい子どもの頃の性格"),
+    (86, 7): ("An unfair label", "不公平な決めつけ"),
+    (86, 8): ("Your childhood self's surprise", "子どもの自分が驚くこと"),
+    (87, 2): ("A detail you can picture", "思い浮かべられる一つの特徴"),
+    (87, 3): ("Why ordinary places matter", "普通の場所が大切になる理由"),
+    (87, 4): ("Why local places disappear", "地元の場所がなくなる理由"),
+    (87, 5): ("Knowing before it closes", "閉店前に知ること"),
+    (87, 6): ("A good replacement", "よい代わりの場所"),
+    (87, 7): ("Useful, but still a loss", "便利でも感じる喪失"),
+    (88, 1): ("A surprising old belief", "驚くような昔の考え"),
+    (88, 2): ("A harmless wrong fact", "害のない思い違い"),
+    (88, 3): ("Why wrong beliefs last", "間違った考えが残る理由"),
+    (88, 4): ("Where wrong ideas begin", "間違った考えの始まり"),
+    (88, 5): ("Evidence that changes a mind", "考えを変える証拠"),
+    (88, 6): ("Admitting a mistake", "間違いを認めること"),
+    (88, 7): ("A better judge afterward", "後で判断がよくなること"),
+    (88, 8): ("A belief you hold lightly", "変わるかもしれない考え"),
+}
+for (_number, _index), (_title, _title_ja) in CONVERSATIONAL_PAGE_TITLES.items():
+    TOPICS[_number]["prompts"][_index - 1].update(title=_title, title_ja=_title_ja)
+
+CONVERSATIONAL_FOLLOWUP_REVISIONS = {
+    (84, 4): ("What could change if the visitor stepped in?", "What could they learn by only watching?"),
+    (86, 7): ("What might people miss about the child's situation?", "How could the label be fairer?"),
+    (76, 3): ("Why do people ignore it?", "When does the advice finally make sense?"),
+    (77, 2): ("What does that teacher do when a student makes a mistake?", "How do students respond?"),
+    (77, 3): ("Why might the student remember it?", "Could the same small act help every student?"),
+    (77, 4): ("What kind of strictness helps?", "Which behaviour would go too far?"),
+    (78, 3): ("Whose feelings decide whether it is friendly?", "Can the same nickname change over time?"),
+    (78, 5): ("Who usually keeps using the nickname?", "Would it feel strange from a new friend?"),
+    (78, 6): ("Does a nickname create closeness or show closeness?", "Why might someone prefer their real name?"),
+    (79, 2): ("Which food is a good example?", "Can one bad experience create the dislike?"),
+    (80, 3): ("What makes the group keep telling it?", "How might the person remember it differently?"),
+    (80, 4): ("When is an apology useful?", "What can make the situation worse?"),
+    (80, 7): ("Which mistake can teach that habit?", "How does the habit prevent another problem?"),
+    (81, 2): ("Which part of the plan usually fails first?", "What simple backup could help?"),
+    (81, 3): ("Why is help important in that problem?", "What could someone prepare in advance?"),
+    (81, 5): ("What is easier with another person?", "What can become more complicated?"),
+    (81, 6): ("Does the ending matter most?", "Which detail becomes funny later?"),
+    (82, 1): ("What draws you back?", "What would you do first there?"),
+    (82, 2): ("Does the place need to have changed?", "How soon is too soon to return?"),
+    (82, 3): ("Which memory has the strongest pull?", "Would the place still matter without that memory?"),
+    (83, 1): ("What makes the job sound fun now?", "Which part might be less fun in real life?"),
+    (83, 5): ("Which dream job is a good example?", "What useful skill might carry over?"),
+    (83, 8): ("Which part of your life would be hardest to explain?", "What might your childhood self enjoy?"),
+    (85, 2): ("Why can that decision matter so much?", "Does the result appear quickly or slowly?"),
+    (85, 4): ("Why might someone almost miss the opportunity?", "What could make them say yes?"),
+    (85, 5): ("What small action could have a large effect?", "Would the person know they changed a life?"),
+    (85, 6): ("Which part can a person control?", "Which part can nobody predict?"),
+    (85, 7): ("What makes staying feel safer?", "What could make changing worth the risk?"),
+    (86, 1): ("What is one story that shows it?", "Would your family describe you the same way?"),
+    (86, 2): ("How can that trait look different in an adult?", "When can it become a strength?"),
+    (86, 3): ("Which setting shows the biggest difference?", "Can both memories be accurate?"),
+    (86, 5): ("What makes the child feel safe enough to talk?", "Does being quiet always mean being shy?"),
+    (86, 6): ("Why is that trait worth keeping?", "How might adult life make it harder to protect?"),
+    (87, 2): ("Why does that detail stay in memory?", "Would a photo capture it?"),
+    (87, 3): ("Which ordinary routine gives the place meaning?", "Who might remember the place differently?"),
+    (87, 4): ("Is money, changing habits, or development usually the cause?", "When can a place adapt and survive?"),
+    (87, 5): ("What would you do before the final day?", "Would knowing make the loss easier?"),
+    (88, 2): ("Why does the wrong answer sound believable?", "How could someone check it quickly?"),
+    (88, 3): ("Who benefits from repeating the belief?", "What might finally weaken it?"),
+    (88, 5): ("Does the source of the evidence matter?", "How much evidence is enough?"),
+    (88, 6): ("What makes admitting it feel personal?", "How can someone correct the idea without embarrassing the person?"),
+}
+for (_number, _index), _followups in CONVERSATIONAL_FOLLOWUP_REVISIONS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(
+        accessible_followups=_followups,
+        full_followups=_followups,
+    )
+
+# Final independent semantic review: every printed prompt can start cold, and
+# each private probe follows whichever answer the learner gives.
+FINAL_SEMANTIC_REPAIRS = {
+    (76, 1): dict(full="What advice do adults keep passing on to younger people?", full_ja="大人が若い世代に伝え続けている助言は何ですか？"),
+    (76, 4): dict(accessible="Which childhood rule is worth repeating even when children ignore it?", accessible_ja="子どもが聞き流しても、繰り返す価値があるルールは何ですか？", full="Which childhood rule still deserves to be passed on, even when younger people resist it?", full_ja="若い人が反発しても、伝え続ける価値がある子ども時代のルールは何ですか？", accessible_followups=("Who keeps the advice alive?", "Why do people still find it useful?"), full_followups=("Who keeps the advice alive?", "Why do people still find it useful?")),
+    (76, 6): dict(accessible="What childhood advice would you change before passing it on?", accessible_ja="子どもの頃の助言で、次の人に伝える前に変えたいものは何ですか？", full="Which childhood advice would you rewrite before passing it on?", full_ja="子どもの頃の助言で、次の人に伝える前に言い換えたいものは何ですか？", accessible_followups=("What part would you keep?", "How would you say it differently?"), full_followups=("What part would you keep?", "How would you say it differently?")),
+    (76, 7): dict(accessible_followups=("When would the reminder help most?", "What tone would make a child listen?"), full_followups=("When would the reminder help most?", "What tone would make a child listen?")),
+    (77, 1): dict(accessible="Which real or fictional teacher stands out to you most?", accessible_ja="実在でも作品の中でも、特に印象に残る先生は誰ですか？", full="Which real or fictional teacher has stayed in your mind?", full_ja="実在でも作品の中でも、今も心に残っている先生は誰ですか？", accessible_followups=("What did they do that you remember?", "What kind of student did they teach?"), full_followups=("What did they do that you remember?", "What kind of student did they teach?")),
+    (77, 6): dict(accessible="Why can people understand a teacher better years later?", accessible_ja="何年かたってから、先生のことをより理解できるのはなぜですか？", full="Why can a teacher's choices make more sense years after the class ends?", full_ja="授業が終わって何年かしてから、先生の選択に納得できることがあるのはなぜですか？", accessible_followups=("What can time reveal?", "What might still feel unfair?"), full_followups=("What can time reveal?", "What might still feel unfair?")),
+    (77, 8): dict(title="When the style does not fit", title_ja="教え方が合わないとき", accessible="What can a student do when a teacher's style does not suit them?", accessible_ja="先生の教え方が自分に合わないとき、生徒は何ができますか？", full="How can a student keep learning when a teacher's style does not work for them?", full_ja="先生の教え方が自分に合わなくても、生徒はどう学び続けられますか？", accessible_followups=("Which part can the student change?", "Who could help?"), full_followups=("Which part can the student change?", "Who could help?")),
+    (78, 4): dict(accessible_followups=("What might a nickname show accurately?", "What might it get wrong?"), full_followups=("What might a nickname show accurately?", "What might it get wrong?")),
+    (78, 7): dict(full="When should people stop using a nickname?", full_ja="人はどんなときに、あだ名を使うのをやめるべきですか？", accessible_followups=("Whose feelings matter most?", "Could the nickname ever feel friendly again?"), full_followups=("Whose feelings matter most?", "Could the nickname ever feel friendly again?")),
+    (79, 3): dict(accessible_followups=("What can help the taste seem different?", "Does age or preparation matter more?"), full_followups=("What can help the taste seem different?", "Does age or preparation matter more?")),
+    (79, 6): dict(accessible_followups=("What part seems strange to children?", "What might make it appealing later?"), full_followups=("What part seems strange to children?", "What might make it appealing later?")),
+    (79, 7): dict(accessible_followups=("What kind of encouragement can help?", "What sign shows the person wants you to stop?"), full_followups=("What kind of encouragement can help?", "What sign shows the person wants you to stop?")),
+    (80, 2): dict(accessible="Why do embarrassing mistakes often become funnier with time?", accessible_ja="恥ずかしい失敗が、時間がたつと面白くなることが多いのはなぜですか？", full="Why can a harmless mistake become funnier as time passes?", full_ja="害のない失敗が、時間がたつほど面白くなるのはなぜですか？", accessible_followups=("What changes after time passes?", "When does it stay uncomfortable?"), full_followups=("What changes after time passes?", "When does it stay uncomfortable?")),
+    (80, 5): dict(full="What reaction helps someone move on after a mistake?", full_ja="失敗の後、どんな反応が立ち直る助けになりますか？", accessible_followups=("Who can make the biggest difference?", "What reaction would make it worse?"), full_followups=("Who can make the biggest difference?", "What reaction would make it worse?")),
+    (80, 8): dict(accessible_followups=("What could make the person uncomfortable?", "When should the story stay private?"), full_followups=("What could make the person uncomfortable?", "When should the story stay private?")),
+    (81, 3): dict(full="Which travel problem becomes hardest when no help is available?", full_ja="助けがないと、どんな旅行トラブルが最も解決しにくくなりますか？", accessible_followups=("Why is it hard to solve alone?", "What could a traveller prepare in advance?"), full_followups=("Why is it hard to solve alone?", "What could a traveller prepare in advance?")),
+    (81, 4): dict(accessible_followups=("What information should they check first?", "What action could prevent a second problem?"), full_followups=("What information should they check first?", "What action could prevent a second problem?")),
+    (81, 7): dict(title="Not a joke later", title_ja="後でも冗談にできないこと", accessible="Which part of a bad trip should people avoid turning into a joke?", accessible_ja="悪い旅行のどんな部分は、冗談にしないほうがよいですか？", full="Which travel problem can stay painful even when others think it is funny?", full_ja="周りの人が面白いと思っても、つらさが残る旅行トラブルは何ですか？", accessible_followups=("Who might still feel uncomfortable?", "How can people tell whether joking is okay?"), full_followups=("Who might still feel uncomfortable?", "How can people tell whether joking is okay?")),
+    (81, 8): dict(accessible_followups=("What would you change next time?", "What would make the return worthwhile?"), full_followups=("What would you change next time?", "What would make the return worthwhile?")),
+    (82, 3): dict(full="How can you tell whether you miss a place or the person you were when you were there?", full_ja="恋しいのが場所なのか、そこにいた頃の自分なのか、どう見分けられますか？"),
+    (82, 4): dict(accessible="Would you revisit a favourite place alone or with someone?", accessible_ja="お気に入りの場所を再訪するなら、一人と誰かと一緒のどちらがよいですか？", full="For a return visit, would you rather go alone or share it with someone?", full_ja="再訪するなら、一人で行くのと誰かと一緒に行くのと、どちらがよいですか？", accessible_followups=("What would your choice add to the visit?", "What might you miss about the other option?"), full_followups=("What would your choice add to the visit?", "What might you miss about the other option?")),
+    (82, 6): dict(full="What is worth repeating on a return visit?", full_ja="再訪したとき、もう一度する価値があることは何ですか？", accessible_followups=("Why is it worth repeating?", "What might feel different the second time?"), full_followups=("Why is it worth repeating?", "What might feel different the second time?")),
+    (83, 2): dict(accessible_followups=("Which part attracts children first?", "What difficulty do children often miss?"), full_followups=("Which part attracts children first?", "What difficulty do children often miss?")),
+    (83, 3): dict(accessible_followups=("Which influence is strongest?", "How can that influence shape the dream?"), full_followups=("Which influence is strongest?", "How can that influence shape the dream?")),
+    (83, 4): dict(accessible_followups=("What new information changes the dream?", "What can keep part of the dream alive?"), full_followups=("What new information changes the dream?", "What can keep part of the dream alive?")),
+    (83, 5): dict(title="A skill that carries over", title_ja="後にも役立つ技能", accessible="What useful skill from a childhood dream can help in a different career?", accessible_ja="子どもの頃の夢から得たどんな技能が、違う仕事でも役立ちますか？", full="How can a skill from a childhood dream help in a very different career?", full_ja="子どもの頃の夢から得た技能は、大きく違う仕事でどう役立ちますか？", accessible_followups=("Which skill is a good example?", "Where else could it be useful?"), full_followups=("Which skill is a good example?", "Where else could it be useful?")),
+    (83, 6): dict(full="How can an abandoned childhood dream still shape an adult's choices?", full_ja="諦めた子どもの頃の夢は、大人の選択にどう影響し続けますか？", accessible_followups=("Which part of the old dream can remain?", "Where might it appear in adult life?"), full_followups=("Which part of the old dream can remain?", "Where might it appear in adult life?")),
+    (83, 8): dict(accessible="What might your childhood self find surprising about your life now?", accessible_ja="子どもの頃の自分は、今の生活の何に驚きそうですか？"),
+    (84, 8): dict(accessible_followups=("What could a person focus on in the present?", "What might they gain by leaving the past alone?"), full_followups=("What could a person focus on in the present?", "What might they gain by leaving the past alone?")),
+    (85, 1): dict(full="Think of a small choice that quietly changed a person's direction. What happened?", full_ja="ある人の進む方向を静かに変えた小さな選択を考えてください。何が起きましたか？", accessible_followups=("What changed afterward?", "When did its importance become clear?"), full_followups=("What changed afterward?", "When did its importance become clear?")),
+    (85, 3): dict(accessible="Why are turning points hard to notice while they happen?", accessible_ja="転機は、起きている最中には気づきにくいのはなぜですか？", accessible_followups=("What can make an ordinary moment matter later?", "Which early sign is easy to miss?"), full_followups=("What can make an ordinary moment matter later?", "Which early sign is easy to miss?")),
+    (85, 8): dict(accessible_followups=("Who might notice the need for change first?", "What could be mistaken for a temporary problem?"), full_followups=("Who might notice the need for change first?", "What could be mistaken for a temporary problem?")),
+    (86, 2): dict(accessible_followups=("How might that trait help an adult?", "When might it still cause difficulty?"), full_followups=("How might that trait help an adult?", "When might it still cause difficulty?")),
+    (86, 3): dict(full="Why can two people remember the same child differently?", full_ja="二人の人が同じ子どもを違って覚えていることがあるのはなぜですか？", accessible_followups=("Which setting could explain the difference?", "What might both memories get right?"), full_followups=("Which setting could explain the difference?", "What might both memories get right?")),
+    (86, 8): dict(full="What might your childhood self find strange about you now?", full_ja="子どもの頃の自分は、今の自分の何を不思議に思いそうですか？", accessible_followups=("What part of your life would surprise them?", "What would still feel familiar?"), full_followups=("What part of your life would surprise them?", "What would still feel familiar?")),
+    (87, 4): dict(accessible_followups=("Which usually matters most: money, changing habits, or development?", "What could help a place adapt?"), full_followups=("Which usually matters most: money, changing habits, or development?", "What could help a place adapt?")),
+    (87, 5): dict(accessible="What would you want to do before a favourite place closed?", accessible_ja="お気に入りの場所が閉まる前に、何をしたいですか？", full="What would you do if you knew a favourite place was about to disappear?", full_ja="お気に入りの場所がもうすぐなくなると分かったら、何をしますか？", accessible_followups=("Who would you take there?", "What would you want to remember?"), full_followups=("Who would you take there?", "What would you want to remember?")),
+    (88, 1): dict(accessible_followups=("Why did the belief seem true?", "How confident were people?"), full_followups=("Why did the belief seem true?", "How confident were people?")),
+    (88, 3): dict(accessible_followups=("Why do people keep repeating it?", "What might finally weaken it?"), full_followups=("Why do people keep repeating it?", "What might finally weaken it?")),
+    (88, 4): dict(full="Why can the source of a wrong idea still seem trustworthy?", full_ja="間違った考えの情報源でも、信頼できそうに見えるのはなぜですか？", accessible_followups=("Which sources seem believable?", "How can someone check the original claim?"), full_followups=("Which sources seem believable?", "How can someone check the original claim?")),
+}
+for (_number, _index), _changes in FINAL_SEMANTIC_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+# Final independent read-aloud review.  These probes stay usable after a
+# general, negative, or no-person answer instead of inventing a past event.
+FINAL_REVIEW_REPAIRS = {
+    (76, 2): dict(accessible_followups=("Did anyone explain what it meant?", "Which word made it memorable?"), full_followups=("Did anyone explain what it meant?", "Which word made it memorable?")),
+    (77, 4): dict(full="When does a strict teacher go too far?", full_ja="厳しい先生が行き過ぎるのはどんなときですか？", full_followups=("What effect does it have on students?", "Could the same rule be handled differently?")),
+    (78, 4): dict(full="What can a nickname get wrong about a person?", full_ja="あだ名は、その人について何を間違って伝えることがありますか？", full_followups=("Which part of the person can it hide?", "Why might other people believe it?")),
+    (79, 4): dict(accessible_followups=("Which change in preparation matters most?", "Can company or setting change the taste too?"), full_followups=("Which change in preparation matters most?", "Can company or setting change the taste too?")),
+    (79, 5): dict(accessible_followups=("Why do some dislikes stay strong?", "Could a new way of cooking it help?"), full_followups=("Why do some dislikes stay strong?", "Could a new way of cooking it help?")),
+    (80, 1): dict(accessible_followups=("What makes people keep telling it?", "When should people stop telling it?"), full_followups=("What makes people keep telling it?", "When should people stop telling it?")),
+    (81, 1): dict(accessible_followups=("What usually goes wrong first?", "Why can it become funny later?"), full_followups=("What usually goes wrong first?", "Why can it become funny later?")),
+    (83, 3): dict(full_followups=("How might that influence shape the dream?", "Could another influence change it?")),
+    (83, 4): dict(full_followups=("Which part of the dream might still survive?", "Could the child find a related job instead?")),
+    (83, 5): dict(accessible_followups=("How could someone use that skill in a new job?", "Where else could it be useful?"), full_followups=("How could someone use that skill in a new job?", "Where else could it be useful?")),
+    (86, 5): dict(full_followups=("Which person or setting changes the child's behaviour most?", "Can both quiet and talkative behaviour be genuine?")),
+    (88, 7): dict(full_followups=("When would that habit help most?", "How could someone practise it before a mistake?")),
+}
+for (_number, _index), _changes in FINAL_REVIEW_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+# One-hearing review: each printed question and private follow-up must offer an
+# immediate spoken answer, including a concrete route after "I don't know",
+# "none", or "never".  Full keeps the same idea and deepens the discussion in
+# the probes instead of making the sentence harder to unpack.
+THREE_SECOND_REPAIRS = {
+    (76, 2): dict(
+        accessible_followups=("Did anyone explain what it meant?", "Do lines like 'be kind' or 'work hard' come to mind?"),
+        full_followups=("Did anyone explain what it meant?", "Do lines like 'be kind' or 'work hard' come to mind?"),
+    ),
+    (76, 4): dict(
+        full="Which childhood rule is still worth passing on?",
+        full_ja="今も伝える価値がある子ども時代のルールは何ですか？",
+        accessible_followups=("Why is it still useful?", "Would 'tell the truth' or 'clean up after yourself' be a good example?"),
+        full_followups=("Why is it still useful?", "Would 'tell the truth' or 'clean up after yourself' be a good example?"),
+    ),
+    (76, 6): dict(
+        accessible_followups=("What part would you keep?", "Would you change advice about school, manners, or safety?"),
+        full_followups=("What part would you keep?", "Would you change advice about school, manners, or safety?"),
+    ),
+    (76, 7): dict(
+        full="How can adults give reminders without sounding like they are nagging?",
+        full_ja="大人は、どうすれば小言に聞こえずに注意できますか？",
+        accessible_followups=("Would a calm voice or a short message help more?", "When should the adult stop repeating it?"),
+        full_followups=("Would a calm voice or a short message help more?", "When should the adult stop repeating it?"),
+    ),
+    (76, 5): dict(
+        accessible_followups=("Why can the advice make more sense later?", "Would advice about money or health be a good example?"),
+        full_followups=("Why can the advice make more sense later?", "Would advice about money or health be a good example?"),
+    ),
+    (76, 8): dict(
+        accessible_followups=("Would adults benefit more from advice about rest, money, or kindness?", "Why might they ignore it?"),
+        full_followups=("Would adults benefit more from advice about rest, money, or kindness?", "Why might they ignore it?"),
+    ),
+    (77, 1): dict(
+        accessible_followups=("What did that teacher do?", "Which teacher from a film or book would be another good choice?"),
+        full_followups=("What did that teacher do?", "Which teacher from a film or book would be another good choice?"),
+    ),
+    (77, 2): dict(
+        full="What does a good teacher do when a student makes a mistake?",
+        full_ja="よい先生は、生徒が間違えたときに何をしますか？",
+        accessible_followups=("How can the teacher keep the student interested?", "Would you prefer a hint or a clear correction?"),
+        full_followups=("How can the teacher keep the student interested?", "Would you prefer a hint or a clear correction?"),
+    ),
+    (77, 3): dict(
+        accessible_followups=("Why can a small act stay in a student's memory?", "Would remembering a name or giving encouragement be a good example?"),
+        full_followups=("Why can a small act stay in a student's memory?", "Would remembering a name or giving encouragement be a good example?"),
+    ),
+    (77, 5): dict(
+        accessible_followups=("How could that lesson help later?", "Could a teacher show kindness or confidence without teaching it directly?"),
+        full_followups=("How could that lesson help later?", "Could a teacher show kindness or confidence without teaching it directly?"),
+    ),
+    (77, 6): dict(
+        accessible_followups=("What can people understand later?", "Can you think of a rule that seemed unfair at school?"),
+        full_followups=("What can people understand later?", "Can you think of a rule that seemed unfair at school?"),
+    ),
+    (77, 7): dict(
+        full="What would you like to tell a former teacher?",
+        full_ja="昔の先生に何を伝えたいですか？",
+        accessible_followups=("Would it be thanks, a question, or criticism?", "What should teachers hear from former students?"),
+        full_followups=("Would it be thanks, a question, or criticism?", "What should teachers hear from former students?"),
+    ),
+    (77, 8): dict(
+        accessible_followups=("What could the student try first?", "Could another teacher, classmate, or online lesson help?"),
+        full_followups=("What could the student try first?", "Could another teacher, classmate, or online lesson help?"),
+    ),
+    (78, 1): dict(
+        accessible_followups=("What made it memorable?", "What makes any nickname easy to remember?"),
+        full_followups=("What made it memorable?", "What makes any nickname easy to remember?"),
+    ),
+    (78, 2): dict(
+        accessible_followups=("Does a joke, habit, or appearance usually start it?", "Who helps the nickname spread?"),
+        full_followups=("Does a joke, habit, or appearance usually start it?", "Who helps the nickname spread?"),
+    ),
+    (78, 5): dict(
+        accessible_followups=("Who usually keeps using an old nickname?", "Would it feel strange if a new friend used it?"),
+        full_followups=("Who usually keeps using an old nickname?", "Would it feel strange if a new friend used it?"),
+    ),
+    (78, 4): dict(
+        accessible_followups=("Could a nickname show a skill or a habit?", "What could it get wrong?"),
+        full_followups=("Could a nickname hide a quiet or serious side?", "Why might other people believe it?"),
+    ),
+    (78, 8): dict(
+        accessible_followups=("Would it describe your personality, a skill, or a habit?", "Would you choose it yourself?"),
+        full_followups=("Would it describe your personality, a skill, or a habit?", "Would you choose it yourself?"),
+    ),
+    (79, 1): dict(
+        accessible_followups=("Is the taste, smell, or texture hard for children?", "Why do children's tastes change as they grow?"),
+        full_followups=("Is the taste, smell, or texture hard for children?", "Why do children's tastes change as they grow?"),
+    ),
+    (79, 2): dict(
+        accessible_followups=("Which food shows that best?", "Can one bad meal create a lasting dislike?"),
+        full_followups=("Which food shows that best?", "Can one bad meal create a lasting dislike?"),
+    ),
+    (79, 5): dict(
+        accessible_followups=("Why do some dislikes stay strong?", "Would bitter food or food with a strong smell be a good example?"),
+        full_followups=("Why do some dislikes stay strong?", "Would bitter food or food with a strong smell be a good example?"),
+    ),
+    (79, 7): dict(
+        full="When does friendly encouragement to try food become pressure?",
+        full_ja="食べ物を試すよう親切に勧めることが、プレッシャーになるのはいつですか？",
+        accessible_followups=("What kind of encouragement is okay?", "What sign means the person wants you to stop?"),
+        full_followups=("What kind of encouragement is okay?", "What sign means the person wants you to stop?"),
+    ),
+    (79, 8): dict(
+        accessible_followups=("Could a new recipe change your mind?", "Which strong taste do people often learn to enjoy?"),
+        full_followups=("Could a new recipe change your mind?", "Which strong taste do people often learn to enjoy?"),
+    ),
+    (80, 1): dict(
+        accessible_followups=("Why do people keep telling that kind of story?", "Would a cooking mistake or a wrong message be a good example?"),
+        full_followups=("Why do people keep telling that kind of story?", "Would a cooking mistake or a wrong message be a good example?"),
+    ),
+    (80, 3): dict(
+        accessible_followups=("Why does the group keep telling it?", "Could the person who made the mistake remember it differently?"),
+        full_followups=("Why does the group keep telling it?", "Could the person who made the mistake remember it differently?"),
+    ),
+    (80, 5): dict(
+        accessible_followups=("What reaction helps most?", "Would a quiet joke help, or make things worse?"),
+        full_followups=("What reaction helps most?", "Would a quiet joke help, or make things worse?"),
+    ),
+    (80, 7): dict(
+        accessible_followups=("How could that habit prevent another problem?", "Would checking a message before sending it be a good example?"),
+        full_followups=("How could that habit prevent another problem?", "Would checking a message before sending it be a good example?"),
+    ),
+    (81, 1): dict(
+        accessible_followups=("Why can it become funny later?", "Would getting lost or missing a train make a good story?"),
+        full_followups=("Why can it become funny later?", "Would getting lost or missing a train make a good story?"),
+    ),
+    (81, 2): dict(
+        accessible_followups=("Do transport, weather, or bookings fail most often?", "What simple backup could help?"),
+        full_followups=("Do transport, weather, or bookings fail most often?", "What simple backup could help?"),
+    ),
+    (81, 3): dict(
+        accessible_followups=("Why is that problem hard to solve alone?", "Would losing a phone or passport be harder?"),
+        full_followups=("Why is that problem hard to solve alone?", "Would losing a phone or passport be harder?"),
+    ),
+    (81, 8): dict(
+        accessible="After a bad trip, what would make the place worth visiting again?",
+        accessible_ja="悪い旅行の後でも、その場所をもう一度訪れる価値があると思えるのは何ですか？",
+        full="After a bad trip, what would need to change before the place felt worth another visit?",
+        full_ja="悪い旅行の後、その場所をもう一度訪れる価値があると思うには何が変わる必要がありますか？",
+        accessible_followups=("Would better weather or better planning be enough?", "What could make you choose a different place instead?"),
+        full_followups=("Would better weather or better planning be enough?", "What could make you choose a different place instead?"),
+    ),
+    (82, 2): dict(
+        accessible_followups=("Does the place need to change?", "Would a favourite restaurant or park be worth a quick return?"),
+        full_followups=("Does the place need to change?", "Would a favourite restaurant or park be worth a quick return?"),
+    ),
+    (82, 1): dict(
+        accessible_followups=("Would you choose a restaurant, park, or city?", "What would you do first there?"),
+        full_followups=("Would you choose a restaurant, park, or city?", "What would you do first there?"),
+    ),
+    (82, 3): dict(
+        accessible="When you miss a place, do you miss the place itself or your memories there?",
+        accessible_ja="ある場所が恋しいとき、恋しいのは場所そのものですか、それともそこでの思い出ですか？",
+        full="When you miss a place, do you miss the place itself or the person you were there?",
+        full_ja="ある場所が恋しいとき、恋しいのは場所そのものですか、それともそこでの自分ですか？",
+        accessible_followups=("What would make the place still matter today?", "Would a photo bring back the same feeling?"),
+        full_followups=("What would make the place still matter today?", "Would a photo bring back the same feeling?"),
+    ),
+    (82, 7): dict(
+        full="How can you enjoy a return visit when the place has changed?",
+        full_ja="場所が変わっていても、どうすれば再訪を楽しめますか？",
+        accessible_followups=("What expectation could ruin the visit?", "Would trying one new thing help?"),
+        full_followups=("What expectation could ruin the visit?", "Would trying one new thing help?"),
+    ),
+    (82, 4): dict(
+        accessible_followups=("Would you rather share the visit or have time alone?", "What could be good about the other choice?"),
+        full_followups=("Would you rather share the visit or have time alone?", "What could be good about the other choice?"),
+    ),
+    (82, 6): dict(
+        accessible="What is worth doing again on a return visit?",
+        accessible_ja="再訪したとき、もう一度する価値があることは何ですか？",
+        accessible_followups=("Would you repeat a meal, walk, or photo?", "What might feel different the second time?"),
+        full_followups=("Would you repeat a meal, walk, or photo?", "What might feel different the second time?"),
+    ),
+    (82, 8): dict(
+        accessible="What part of a favourite place would you like to bring into daily life?",
+        accessible_ja="お気に入りの場所のどんな部分を日常生活に取り入れたいですか？",
+        full="What part of a favourite place would improve your ordinary week?",
+        full_ja="お気に入りの場所のどんな部分が、普段の一週間をよりよくしてくれますか？",
+        accessible_followups=("Would you bring home its food, pace, or atmosphere?", "How could you add a small part of it at home?"),
+        full_followups=("Would you bring home its food, pace, or atmosphere?", "How could you add a small part of it at home?"),
+    ),
+    (83, 5): dict(
+        accessible_followups=("Would creativity, confidence, or teamwork be a good example?", "Where else could that skill help?"),
+        full_followups=("Would creativity, confidence, or teamwork be a good example?", "Where else could that skill help?"),
+    ),
+    (83, 1): dict(
+        accessible_followups=("Would astronaut, chef, or athlete sound fun now?", "Which part might be less fun in real life?"),
+        full_followups=("Would astronaut, chef, or athlete sound fun now?", "Which part might be less fun in real life?"),
+    ),
+    (83, 6): dict(
+        accessible_followups=("Could the old dream become a hobby?", "Where might it appear in adult life?"),
+        full_followups=("Could the old dream become a hobby?", "Where might it appear in adult life?"),
+    ),
+    (83, 8): dict(
+        accessible_followups=("Would your work, home, or technology surprise them most?", "What would still feel familiar?"),
+        full_followups=("Would your work, home, or technology surprise them most?", "What would still feel familiar?"),
+    ),
+    (84, 3): dict(
+        accessible="What could one day in the past help someone understand?",
+        accessible_ja="過去の一日を見ることで、何を理解できそうですか？",
+        full="What mystery could one day in the past help solve?",
+        full_ja="過去の一日を見ることで、どんな謎を解けそうですか？",
+        accessible_followups=("Would you want to understand a person or an event?", "What might a visitor still get wrong?"),
+        full_followups=("Would you want to understand a person or an event?", "What might a visitor still get wrong?"),
+    ),
+    (84, 1): dict(
+        accessible_followups=("Would you choose a personal day or a famous event?", "Where would you arrive?"),
+        full_followups=("Would you choose a personal day or a famous event?", "Where would you arrive?"),
+    ),
+    (84, 2): dict(
+        accessible_followups=("Would an ordinary family day or a famous event be more interesting?", "What would you watch first?"),
+        full_followups=("Would an ordinary family day or a famous event be more interesting?", "What would you watch first?"),
+    ),
+    (84, 5): dict(
+        accessible_followups=("What would you want to notice about that person?", "Would a relative or a famous person be more interesting?"),
+        full_followups=("What would you want to notice about that person?", "Would a relative or a famous person be more interesting?"),
+    ),
+    (84, 6): dict(
+        full="What would you ask someone from the past?",
+        full_ja="過去の人に何を聞きたいですか？",
+        accessible_followups=("Would you ask about daily life or an important event?", "What answer might surprise you?"),
+        full_followups=("Would you ask about daily life or an important event?", "What answer might surprise you?"),
+    ),
+    (84, 7): dict(
+        accessible_followups=("Would the present seem easier or harder?", "Could seeing an ordinary past day change your view?"),
+        full_followups=("Would the present seem easier or harder?", "Could seeing an ordinary past day change your view?"),
+    ),
+    (85, 1): dict(
+        accessible_followups=("What changed afterward?", "Could accepting one invitation change a life?"),
+        full_followups=("What changed afterward?", "Could accepting one invitation change a life?"),
+    ),
+    (85, 4): dict(
+        accessible_followups=("Why might someone almost miss it?", "Could a class, trip, or new friendship open a new path?"),
+        full_followups=("Why might someone almost miss it?", "Could a class, trip, or new friendship open a new path?"),
+    ),
+    (85, 5): dict(
+        accessible_followups=("Could a friend, teacher, or stranger do it?", "Would they know they changed the person's life?"),
+        full_followups=("Could a friend, teacher, or stranger do it?", "Would they know they changed the person's life?"),
+    ),
+    (85, 6): dict(
+        full="At a turning point, what comes from luck and what comes from choice?",
+        full_ja="転機では、何が運から生まれ、何が選択から生まれますか？",
+        accessible_followups=("What can the person control?", "Would meeting the right person be luck or choice?"),
+        full_followups=("What can the person control?", "Would meeting the right person be luck or choice?"),
+    ),
+    (85, 7): dict(
+        full="When is changing direction wiser than staying on the same path?",
+        full_ja="同じ道を進み続けるより、方向を変えるほうが賢明なのはいつですか？",
+        accessible_followups=("What makes staying feel safer?", "Would boredom or a new opportunity be enough reason to change?"),
+        full_followups=("What makes staying feel safer?", "Would boredom or a new opportunity be enough reason to change?"),
+    ),
+    (85, 8): dict(
+        full="How can someone tell that it is time for a new direction?",
+        full_ja="新しい方向へ進む時だと、どうすれば分かりますか？",
+        accessible_followups=("Who might notice first?", "Would one bad week be enough reason to change?"),
+        full_followups=("Who might notice first?", "Would one bad week be enough reason to change?"),
+    ),
+    (86, 1): dict(
+        accessible_followups=("What story shows that?", "Would your family call you quiet, active, or curious?"),
+        full_followups=("What story shows that?", "Would your family call you quiet, active, or curious?"),
+    ),
+    (86, 4): dict(
+        accessible_followups=("Could sharing, arguing, or helping show someone's character?", "Who might remember the moment differently?"),
+        full_followups=("Could sharing, arguing, or helping show someone's character?", "Who might remember the moment differently?"),
+    ),
+    (86, 6): dict(
+        full="Which good childhood quality do adults often lose?",
+        full_ja="大人が失いがちな、子どもの頃のよい性質は何ですか？",
+        accessible_followups=("Would curiosity or playfulness be a good example?", "Why is it hard for adults to keep?"),
+        full_followups=("Would curiosity or playfulness be a good example?", "Why is it hard for adults to keep?"),
+    ),
+    (86, 8): dict(
+        accessible_followups=("Would your work, home, or phone surprise your childhood self?", "What would still feel familiar?"),
+        full_followups=("Would your work, home, or phone surprise your childhood self?", "What would still feel familiar?"),
+    ),
+    (87, 1): dict(
+        accessible_followups=("Would you choose a shop, school, park, or famous building?", "Who would enjoy seeing it again?"),
+        full_followups=("Would you choose a shop, school, park, or famous building?", "Who would enjoy seeing it again?"),
+    ),
+    (87, 4): dict(
+        accessible_followups=("Is money or changing habits usually the bigger problem?", "What could help a local place survive?"),
+        full_followups=("Is money or changing habits usually the bigger problem?", "What could help a local place survive?"),
+    ),
+    (87, 5): dict(
+        accessible_followups=("Would you take a photo, buy something, or talk to the owner?", "What do people usually want before a favourite shop closes?"),
+        full_followups=("Would you take a photo, buy something, or talk to the owner?", "What do people usually want before a favourite shop closes?"),
+    ),
+    (87, 6): dict(
+        accessible_followups=("Should it keep the old name, use, or atmosphere?", "When is a completely new place better?"),
+        full_followups=("Should it keep the old name, use, or atmosphere?", "When is a completely new place better?"),
+    ),
+    (87, 8): dict(
+        accessible_followups=("Would you preserve a sign, photo, or recipe?", "Who would value it?"),
+        full_followups=("Would you preserve a sign, photo, or recipe?", "Who would value it?"),
+    ),
+    (88, 1): dict(
+        accessible_followups=("Why did it sound true?", "What did people once believe about health or science?"),
+        full_followups=("Why did it sound true?", "What did people once believe about health or science?"),
+    ),
+    (88, 2): dict(
+        accessible_followups=("Why does the wrong answer sound right?", "Would a myth about food or animals be a good example?"),
+        full_followups=("Why does the wrong answer sound right?", "Would a myth about food or animals be a good example?"),
+    ),
+    (88, 5): dict(
+        accessible_followups=("Would a clear example or a trusted source help more?", "When might a person still refuse to change their mind?"),
+        full_followups=("Would a clear example or a trusted source help more?", "When might a person still refuse to change their mind?"),
+    ),
+    (88, 7): dict(
+        accessible="How can one confident mistake help someone check facts better next time?",
+        accessible_ja="自信を持って間違えた経験は、次に事実をよりよく確認するのにどう役立ちますか？",
+        full="What checking habit can someone learn from being confidently wrong?",
+        full_ja="自信を持って間違えた経験から、どんな確認の習慣を学べますか？",
+        accessible_followups=("Would checking a second source help?", "When is that habit most useful?"),
+        full_followups=("Would checking a second source help?", "When is that habit most useful?"),
+    ),
+    (88, 8): dict(
+        full="How confident should you sound when you are not sure a claim is true?",
+        full_ja="ある主張が本当か確信がないとき、どのくらい自信を持って話すべきですか？",
+        accessible_followups=("Could new evidence change your mind?", "How certain are you about tomorrow's weather?"),
+        full_followups=("Would you say 'maybe' or give a percentage?", "How certain are you about tomorrow's weather?"),
+    ),
+}
+for (_number, _index), _changes in THREE_SECOND_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+# Independent post-generation semantic review.  These final repairs remove
+# duplicated probes and preserve a concrete route after a cold or missing
+# answer without making the Full prompt slower to unpack.
+INDEPENDENT_SEMANTIC_REPAIRS = {
+    (76, 1): dict(
+        accessible_followups=("Who usually gives that advice?", "Do adults repeat 'be careful' or 'work hard' more often?"),
+        full_followups=("Who usually gives that advice?", "Do adults repeat 'be careful' or 'work hard' more often?"),
+    ),
+    (76, 3): dict(
+        accessible_followups=("Why do people ignore it?", "Which is easier for children to ignore: advice about money or health?"),
+        full_followups=("Why do people ignore it?", "Which is easier for children to ignore: advice about money or health?"),
+    ),
+    (77, 4): dict(
+        full_followups=("What effect does it have on students?", "Which is worse: shouting at students or giving too much homework?"),
+    ),
+    (79, 5): dict(
+        full="Which food dislike is hardest to change?",
+        full_ja="最も変わりにくい食べ物の苦手意識は何ですか？",
+    ),
+    (80, 3): dict(
+        full_followups=("Why does the group keep telling it?", "Which changes more over time: the facts or the feelings?"),
+    ),
+    (80, 5): dict(
+        full_followups=("What should a friend say first?", "Would a quiet joke help, or make things worse?"),
+    ),
+    (82, 4): dict(
+        accessible_followups=("What would you want to do first on the return visit?", "Would you rather revisit a restaurant or a park?"),
+        full_followups=("What would you want to do first on the return visit?", "Would you rather revisit a restaurant or a park?"),
+    ),
+    (82, 5): dict(
+        accessible_followups=("Which change matters most?", "Would the place feel more different after one year or ten years?"),
+        full_followups=("Which change matters most?", "Would the place feel more different after one year or ten years?"),
+    ),
+    (83, 2): dict(
+        full_followups=("Why does that part look exciting to a child?", "What difficulty do children often miss?"),
+    ),
+    (83, 3): dict(
+        accessible_followups=("How can that influence shape the dream?", "Can a film make a difficult job look easy?"),
+        full_followups=("How might that influence shape the dream?", "Can a film make a difficult job look easy?"),
+    ),
+    (85, 3): dict(
+        accessible_followups=("What can make an ordinary moment matter later?", "Can a new class or one invitation become a turning point?"),
+        full_followups=("What can make an ordinary moment matter later?", "Can a new class or one invitation become a turning point?"),
+    ),
+    (86, 1): dict(
+        accessible_followups=("What story shows that?", "What do adults usually notice first about a child?"),
+        full_followups=("What story shows that?", "What do adults usually notice first about a child?"),
+    ),
+}
+for (_number, _index), _changes in INDEPENDENT_SEMANTIC_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
 
 CLAIM_ORDER = {number: tuple(f"ft{number}-c{i:02d}" for i in range(1, 11)) for number in TOPIC_NUMBERS}
 

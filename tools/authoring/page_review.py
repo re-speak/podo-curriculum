@@ -17,6 +17,11 @@ import check_deck
 REPO = pathlib.Path(__file__).resolve().parents[2]
 SCHEMA_VERSION = 2
 PAGE_ID_RE = re.compile(r'\bdata-page-id=["\']([^"\']+)["\']')
+TN_MORE_RE = re.compile(
+    r'<ul\b(?=[^>]*\bclass=["\'][^"\']*\btn-more\b[^"\']*["\'])[^>]*>(.*?)</ul>',
+    re.IGNORECASE | re.DOTALL,
+)
+LIST_ITEM_RE = re.compile(r'<li\b[^>]*>(.*?)</li>', re.IGNORECASE | re.DOTALL)
 REQUIRED_PAGE_FIELDS = (
     "learnerAction",
     "tutorAction",
@@ -113,6 +118,40 @@ def page_evidence(path: pathlib.Path) -> dict[str, dict[str, Any]]:
     return evidence
 
 
+def freetalk_question_details(path: pathlib.Path) -> dict[str, dict[str, Any]]:
+    """Extract the complete spoken contract for each Freetalking question page."""
+    source = path.read_text(encoding="utf-8")
+    details: dict[str, dict[str, Any]] = {}
+    for page_id, chunk in check_deck.pages(source):
+        if page_id not in check_deck.FREETALK_QUESTION_PAGES:
+            continue
+        english = [
+            check_deck.plain_text(body)
+            for body in check_deck.class_span_bodies(chunk, "ko")[:1]
+        ]
+        japanese = [
+            check_deck.plain_text(body)
+            for body in check_deck.class_span_bodies(chunk, "ja")[:1]
+        ]
+        followup_list = TN_MORE_RE.search(chunk)
+        followups = (
+            [
+                check_deck.plain_text(body)
+                for body in LIST_ITEM_RE.findall(followup_list.group(1))
+                if check_deck.plain_text(body)
+            ]
+            if followup_list
+            else []
+        )
+        if english and japanese and followups:
+            details[page_id] = {
+                "english": english[0],
+                "japanese": japanese[0],
+                "followups": followups,
+            }
+    return details
+
+
 def scaffold(path: pathlib.Path, audit_path: pathlib.Path | None = None) -> dict[str, Any]:
     evidence = page_evidence(path)
     return {
@@ -160,6 +199,17 @@ def load_review(path: pathlib.Path) -> dict[str, Any]:
     return data
 
 
+def _replace_exact_text(value: Any, old: str, new: str) -> Any:
+    """Replace an extracted prompt while preserving surrounding review prose."""
+    if isinstance(value, str):
+        return value.replace(old, new)
+    if isinstance(value, list):
+        return [_replace_exact_text(item, old, new) for item in value]
+    if isinstance(value, dict):
+        return {key: _replace_exact_text(item, old, new) for key, item in value.items()}
+    return value
+
+
 def refresh_evidence(
     lesson_path: pathlib.Path,
     review_path: pathlib.Path,
@@ -177,11 +227,80 @@ def refresh_evidence(
             f"ledger={ledger_ids} lesson={actual_ids}"
         )
     evidence = page_evidence(lesson_path)
+    question_details = freetalk_question_details(lesson_path)
     review["schemaVersion"] = SCHEMA_VERSION
     review["lesson"] = relative_lesson(lesson_path, review_path)
     review["lessonSha256"] = sha256(lesson_path)
     for page in pages:
-        page["evidence"] = evidence[page["pageId"]]
+        current_evidence = evidence[page["pageId"]]
+        old_evidence = page.get("evidence", {})
+        old_prompts = old_evidence.get("substantivePrompts", []) if isinstance(old_evidence, dict) else []
+        new_prompts = current_evidence.get("substantivePrompts", [])
+        for index, old_prompt in enumerate(old_prompts):
+            if old_prompt and index < len(new_prompts):
+                for key in tuple(page):
+                    if key != "evidence":
+                        page[key] = _replace_exact_text(page[key], old_prompt, new_prompts[index])
+        target_or_prompt = str(page.get("targetOrPrompt", ""))
+        for index, new_prompt in enumerate(new_prompts):
+            old_prompt = old_prompts[index] if index < len(old_prompts) else ""
+            if old_prompt and old_prompt in target_or_prompt:
+                target_or_prompt = target_or_prompt.replace(old_prompt, new_prompt, 1)
+            elif _normalized_text(new_prompt) not in _normalized_text(target_or_prompt):
+                target_or_prompt = f"{target_or_prompt.rstrip()} Visible prompt: {new_prompt}".strip()
+        page["targetOrPrompt"] = target_or_prompt
+        page["evidence"] = current_evidence
+        details = question_details.get(page["pageId"])
+        if details:
+            english = details["english"]
+            japanese = details["japanese"]
+            followups = details["followups"]
+            quoted_followups = " and ".join(f"“{item}”" for item in followups)
+            page["learnerAction"] = (
+                f"Answer the standalone question “{english}” aloud and develop one "
+                "interesting detail, example, or reason."
+            )
+            page["tutorAction"] = (
+                f"Ask “{english}”, react naturally, and use the most relevant "
+                "follow-up instead of forcing both."
+            )
+            page["targetOrPrompt"] = (
+                f"Conversation prompt: “{english}” / “{japanese}” "
+                f"Tutor follow-ups: {quoted_followups}"
+            )
+            page["learningTarget"] = (
+                "Answer and develop this page's distinct conversation question in "
+                "spontaneous English."
+            )
+            page["pedagogicalValue"] = (
+                "The standalone prompt opens one answerable angle, and the follow-ups "
+                "broaden or deepen the learner's answer."
+            )
+            page["failureDiagnosis"] = (
+                "A no, an I-don't-know answer, or a general answer must still leave a "
+                "natural next move; repeated or answer-presuming follow-ups fail the page."
+            )
+            page["nonTargetSupport"] = (
+                f"The Japanese prompt “{japanese}” is meaning-aligned; the English "
+                "follow-ups are tutor-only and do not supply an answer."
+            )
+            page["articleTreatment"] = (
+                "The learner may use an article idea or any relevant example; the page "
+                "does not test article recall."
+            )
+            page["choiceQuality"] = (
+                "No fixed answer is implied; the learner and tutor can contribute "
+                "different defensible views or examples."
+            )
+            page["componentConsistency"] = (
+                "Uses one visible conversation question, one tutor-only follow-up pool, "
+                "and no competing learner task."
+            )
+            page["notes"] = (
+                "Semantic conversation audit completed against the current English "
+                "prompt, Japanese prompt, and tutor follow-ups; visual status is "
+                "recorded separately."
+            )
     write_json(review_path, review)
     return review
 

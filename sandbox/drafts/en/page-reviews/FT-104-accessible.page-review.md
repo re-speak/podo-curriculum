@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-accessible/lessons/104-is-there-a-best-age-to-be/lesson.html`
-- SHA-256: `0aaa4690d61c8196a2aaec404ce0c20330e9c65cfbb3df7cb53d0eae23e8c60e`
+- SHA-256: `3b0d7072f3d085b2ca12a50b377b3a19ac0022e7a2a117b794bea6406027e79d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “Which life stage seems most attractive to freeze in time?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which life stage seems most attractive to freeze in time?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which life stage seems most attractive to freeze in time? / どの人生の段階が、時間を止めるなら最も魅力的ですか？ Follow-up pool: What makes that stage appealing? What does that stage look like at its best?
-- Learning target: Develop the distinct “opening” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A stage to freeze” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which life stage seems most attractive to freeze in time?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どの人生の段階が、時間を止めるなら最も魅力的ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which life stage seems most attractive to freeze in time?"]}`
+- Learner action: Answer the standalone question “If you could stay one age for ten years, which age would you choose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you could stay one age for ten years, which age would you choose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you could stay one age for ten years, which age would you choose?” / “一つの年齢のまま十年間過ごせるなら、何歳を選びますか？” Tutor follow-ups: “What makes that age attractive?” and “Would you rather keep youthful energy or later-life experience?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの年齢のまま十年間過ごせるなら、何歳を選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you could stay one age for ten years, which age would you choose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “What is the strongest advantage of that life stage?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What is the strongest advantage of that life stage?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: What is the strongest advantage of that life stage? / その人生の段階の最も大きな利点は何ですか？ Follow-up pool: Is it health, freedom, belonging, or something else? Who benefits most from it?
-- Learning target: Develop the distinct “good” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The strongest advantage” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “What is the strongest advantage of that life stage?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “その人生の段階の最も大きな利点は何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the strongest advantage of that life stage?"]}`
+- Learner action: Answer the standalone question “Which age gives the best mix of energy and freedom?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which age gives the best mix of energy and freedom?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which age gives the best mix of energy and freedom?” / “どの年齢が、元気さと自由の最もよい組み合わせを持っていますか？” Tutor follow-ups: “Which freedom matters most?” and “Which age seems most independent: twenty, forty, or sixty?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの年齢が、元気さと自由の最もよい組み合わせを持っていますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which age gives the best mix of energy and freedom?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “What is the unavoidable cost of that stage?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What is the unavoidable cost of that stage?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: What is the unavoidable cost of that stage? / その段階の避けられない代償は何ですか？ Follow-up pool: Does the cost come from limits or responsibilities? Can anything reduce it?
-- Learning target: Develop the distinct “bad” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The unavoidable cost” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “What is the unavoidable cost of that stage?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “その段階の避けられない代償は何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the unavoidable cost of that stage?"]}`
+- Learner action: Answer the standalone question “What's hard about the age many people call the best?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's hard about the age many people call the best?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's hard about the age many people call the best?” / “多くの人が最高だと言う年齢にも、どんな大変さがありますか？” Tutor follow-ups: “Why is that part difficult?” and “Which seems harder: being twenty or being sixty?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “多くの人が最高だと言う年齢にも、どんな大変さがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's hard about the age many people call the best?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “What does the present offer that an earlier stage may not?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What does the present offer that an earlier stage may not?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: What does the present offer that an earlier stage may not? / 今だから得られるもので、以前の段階にはないものは何ですか？ Follow-up pool: Is it knowledge, choice, or a relationship? Why did it take time to develop?
-- Learning target: Develop the distinct “now” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “What the present offers” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “What does the present offer that an earlier stage may not?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “今だから得られるもので、以前の段階にはないものは何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What does the present offer that an earlier stage may not?"]}`
+- Learner action: Answer the standalone question “What's one good thing about your age now?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one good thing about your age now?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one good thing about your age now?” / “今の年齢のよいところを一つ挙げるとしたら何ですか？” Tutor follow-ups: “Why is that good thing easy to overlook?” and “What's easier for you now than when you were younger?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今の年齢のよいところを一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one good thing about your age now?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “What later growth might freezing that stage prevent?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What later growth might freezing that stage prevent?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: What later growth might freezing that stage prevent? / その段階で時間を止めると、その後のどんな成長が妨げられますか？ Follow-up pool: Which later experience would disappear? What would never have time to mature?
-- Learning target: Develop the distinct “loss” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Growth that would stop” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “What later growth might freezing that stage prevent?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “その段階で時間を止めると、その後のどんな成長が妨げられますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What later growth might freezing that stage prevent?"]}`
+- Learner action: Answer the standalone question “What is one experience you hope to have when you're older?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is one experience you hope to have when you're older?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is one experience you hope to have when you're older?” / “年を重ねたときに、どんな経験をしてみたいですか？” Tutor follow-ups: “Why would that experience matter?” and “Would you rather see the future or relive the past?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “年を重ねたときに、どんな経験をしてみたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one experience you hope to have when you're older?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Which condition most changes the appeal of a life stage?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which condition most changes the appeal of a life stage?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which condition most changes the appeal of a life stage? / どの条件が、人生の段階の魅力を最も変えますか？ Follow-up pool: Does health, money, or responsibility matter most? How would the ranking change?
-- Learning target: Develop the distinct “condition” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “What changes the answer” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which condition most changes the appeal of a life stage?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どの条件が、人生の段階の魅力を最も変えますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which condition most changes the appeal of a life stage?"]}`
+- Learner action: Answer the standalone question “How do health or money change which age seems best?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How do health or money change which age seems best?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How do health or money change which age seems best?” / “健康やお金によって、どの年齢が最高に見えるかはどう変わりますか？” Tutor follow-ups: “Which matters more for your answer: health or money?” and “Would good health make almost any age feel better?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “健康やお金によって、どの年齢が最高に見えるかはどう変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do health or money change which age seems best?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Can any age really be best for everyone?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Can any age really be best for everyone?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Can any age really be best for everyone? / どの年齢も、本当に誰にとっても最高になれますか？ Follow-up pool: Which value would define best? Who would reasonably disagree?
-- Learning target: Develop the distinct “best” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A best age for everyone” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Can any age really be best for everyone?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どの年齢も、本当に誰にとっても最高になれますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can any age really be best for everyone?"]}`
+- Learner action: Answer the standalone question “Why might the same age feel great for one person and difficult for another?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why might the same age feel great for one person and difficult for another?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why might the same age feel great for one person and difficult for another?” / “同じ年齢でも、一人には最高で、別の人には大変に感じられるのはなぜですか？” Tutor follow-ups: “Which life detail creates that difference?” and “Could age thirty feel different with and without children?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “同じ年齢でも、一人には最高で、別の人には大変に感じられるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might the same age feel great for one person and difficult for another?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “What deserves more credit about the present stage?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What deserves more credit about the present stage?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: What deserves more credit about the present stage? / 今の段階のどんな点を、もっと評価するべきですか？ Follow-up pool: What has become clearer? Which ability is easy to overlook?
-- Learning target: Develop the distinct “flip” angle of Is there a best age to be? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Credit for the present” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “What deserves more credit about the present stage?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “今の段階のどんな点を、もっと評価するべきですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What deserves more credit about the present stage?"]}`
+- Learner action: Answer the standalone question “What's underrated about getting older?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's underrated about getting older?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's underrated about getting older?” / “年を重ねることの、もっと評価されるべき点は何ですか？” Tutor follow-ups: “What has become clearer with age?” and “Which improves more with age: confidence or patience?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “年を重ねることの、もっと評価されるべき点は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's underrated about getting older?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

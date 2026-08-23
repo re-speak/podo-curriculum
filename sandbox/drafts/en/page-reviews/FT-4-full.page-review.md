@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/04-a-table-manner-that-differs/lesson.html`
-- SHA-256: `1875e5a5c32783df017315f0197a83fbdc126ec4c8cf2763d9b7fd0868cd7453`
+- SHA-256: `9f758fbbd36c4b972fce10f297e3a298e29779eae531d9b22582b0722812f5aa`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear on the goal page.
 - Component consistency: Matches the approved FT goal component: title, one short blue instruction box, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals are informational supports, not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article component with one short operating script and one tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two options are mutually exclusive and meaningfully different: delayed essential correction versus correction at natural breaks.
 - Component consistency: Reuses the approved synced single-choice FT style component from the canonical pilot.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors; this is an operating transition.
 - Component consistency: Matches the approved FT question-pool transition with visible flexibility and a concrete tutor-only reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Do you pick your bowl up when you eat?
-- Learning target: Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Do you pick your bowl up when you eat?” opens this specific angle; “When did you learn that habit?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “When did you learn that habit?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Does everyone in your home do the same?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “Do you pick your bowl up when you eat?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Do you pick your bowl up when you eat?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Do you pick your bowl up when you eat?” / “食べるとき、お椀を手に持ちますか？” Tutor follow-ups: “What makes that feel natural to you?” and “How might the answer change in another country?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “食べるとき、お椀を手に持ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you pick your bowl up when you eat?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What might make a guest unsure what to do at someone else's table?”
-- Learning target: Develop the distinct “A confusing moment (迷った場面)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Have you ever been unsure what to do at someone else's table?” opens this specific angle; “What made you hesitate?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What made you hesitate?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “How did you decide what to do?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might make a guest unsure what to do at someone else's table?"]}`
+- Learner action: Answer the standalone question “At someone else's table, what small rule is easiest to miss?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “At someone else's table, what small rule is easiest to miss?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “At someone else's table, what small rule is easiest to miss?” / “ほかの人の食卓で、見落としやすい小さなルールは何ですか？” Tutor follow-ups: “Why do hosts rarely explain it?” and “What do you do when you don't know a table rule?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの人の食卓で、見落としやすい小さなルールは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["At someone else's table, what small rule is easiest to miss?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What other table habit is fixed in your home?
-- Learning target: Develop the distinct “At your table (あなたの食卓)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What other table habit is fixed in your home?” opens this specific angle; “When do you notice someone doing it differently?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “When do you notice someone doing it differently?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Does the rule change for guests?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What other table habit is fixed in your home?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What table habit is normal in your home but unusual elsewhere?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What table habit is normal in your home but unusual elsewhere?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What table habit is normal in your home but unusual elsewhere?” / “自分の家では普通でも、ほかでは珍しい食卓の習慣は何ですか？” Tutor follow-ups: “What does the habit mean at home?” and “At someone else's home, do you follow their rules or yours?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分の家では普通でも、ほかでは珍しい食卓の習慣は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What table habit is normal in your home but unusual elsewhere?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Who usually starts eating first?
-- Learning target: Develop the distinct “Who starts? (誰が始める？)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Who usually starts eating first?” opens this specific angle; “What happens if someone starts early?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What happens if someone starts early?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Is the rule different at a restaurant?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who usually starts eating first?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Who should start eating first at a formal meal?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who should start eating first at a formal meal?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who should start eating first at a formal meal?” / “改まった食事では、誰が最初に食べ始めるべきですか？” Tutor follow-ups: “What does waiting communicate?” and “When is the rule unnecessary?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “改まった食事では、誰が最初に食べ始めるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who should start eating first at a formal meal?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What action at the table feels rude to you?
-- Learning target: Develop the distinct “What feels rude? (失礼に感じること)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What action at the table feels rude to you?” opens this specific angle; “Why does that action bother people?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Why does that action bother people?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Would you correct a visitor?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What action at the table feels rude to you?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What table behavior feels rude even when no harm is meant?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What table behavior feels rude even when no harm is meant?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What table behavior feels rude even when no harm is meant?” / “悪気がなくても、食卓で失礼に感じる行動は何ですか？” Tutor follow-ups: “What might people think the person meant?” and “What could make the moment less awkward?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “悪気がなくても、食卓で失礼に感じる行動は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What table behavior feels rude even when no harm is meant?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Which table habit changes most between countries you know?
-- Learning target: Develop the distinct “Across countries (国をまたぐと)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Which table habit changes most between countries you know?” opens this specific angle; “How could a visitor discover that rule?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “How could a visitor discover that rule?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Would you like to hear what I do differently?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which table habit changes most between countries you know?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which table custom from another country would you like to try?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which table custom from another country would you like to try?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which table custom from another country would you like to try?” / “ほかの国の食卓の習慣で、試してみたいものは何ですか？” Tutor follow-ups: “How would it change the meal?” and “Would you rather try a new table rule or a new food?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの国の食卓の習慣で、試してみたいものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which table custom from another country would you like to try?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Who taught you your table manners?
-- Learning target: Develop the distinct “Who taught you? (誰に教わった？)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Who taught you your table manners?” opens this specific angle; “Which rule did they care about most?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Which rule did they care about most?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Have you kept all of their rules?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who taught you your table manners?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Who taught you a table rule you still follow?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who taught you a table rule you still follow?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who taught you a table rule you still follow?” / “今も守っている食事のルールを、誰に教わりましたか？” Tutor follow-ups: “Why did that lesson stay with you?” and “Do you follow more rules at home or in a restaurant?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今も守っている食事のルールを、誰に教わりましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who taught you a table rule you still follow?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Which table rules do people care less about now?
-- Learning target: Develop the distinct “Still important? (今も大切？)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Which table rules do people care less about now?” opens this specific angle; “Why has that rule weakened?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Why has that rule weakened?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Which rule should not disappear?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which table rules do people care less about now?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which old table manner should disappear?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which old table manner should disappear?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which old table manner should disappear?” / “昔からの食事マナーで、なくなってもよいものは何ですか？” Tutor follow-ups: “Why did the rule exist?” and “Are table manners becoming more relaxed?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “昔からの食事マナーで、なくなってもよいものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which old table manner should disappear?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors; the tutor records one strength and one next focus in a synced text area.
 - Component consistency: Matches the approved FT closing component and keeps owner feedback separate from automated grading.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

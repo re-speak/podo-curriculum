@@ -183,6 +183,71 @@ class PageReviewTest(unittest.TestCase):
             review["pages"][0]["pedagogicalValue"],
         )
 
+    def test_refresh_replaces_changed_prompt_without_erasing_review_context(self) -> None:
+        self.lesson.write_text(
+            '<main><section data-page-id="warm-1">'
+            '<span class="ko">What did you do yesterday?</span>'
+            '</section></main>',
+            encoding="utf-8",
+        )
+        review = page_review.scaffold(self.lesson, self.review_path)
+        review["pages"][0]["targetOrPrompt"] = (
+            "The page asks: What did you do yesterday? The answer is open."
+        )
+        review["pages"][0]["learnerAction"] = (
+            "Answer What did you do yesterday? with one concrete detail."
+        )
+        self.review_path.write_text(json.dumps(review), encoding="utf-8")
+        self.lesson.write_text(
+            '<main><section data-page-id="warm-1">'
+            '<span class="ko">What would you do with a free afternoon?</span>'
+            '</section></main>',
+            encoding="utf-8",
+        )
+
+        page_review.refresh_evidence(self.lesson, self.review_path)
+
+        refreshed = page_review.load_review(self.review_path)
+        target = refreshed["pages"][0]["targetOrPrompt"]
+        self.assertIn("What would you do with a free afternoon?", target)
+        self.assertIn("The answer is open.", target)
+        self.assertNotIn("What did you do yesterday?", target)
+        self.assertEqual(
+            refreshed["pages"][0]["learnerAction"],
+            "Answer What would you do with a free afternoon? with one concrete detail.",
+        )
+
+    def test_refresh_rebinds_complete_freetalk_spoken_contract(self) -> None:
+        self.lesson.write_text(
+            '<main><section data-page-id="warm-1">'
+            '<span class="ko">What would you do with a free afternoon?</span>'
+            '<span class="ja">自由な午後があったら、何をしますか？</span>'
+            '<div class="tutor-note"><ul class="tn-more">'
+            '<li>Would you go out or stay home?</li>'
+            '<li>Who might join you?</li>'
+            '</ul></div></section></main>',
+            encoding="utf-8",
+        )
+        review = self.completed_review()
+        page = review["pages"][0]
+        page["targetOrPrompt"] = (
+            "Old question / 古い質問 Tutor follow-ups: Old follow-up"
+        )
+        page["nonTargetSupport"] = "古い質問 was previously reviewed."
+        self.review_path.write_text(json.dumps(review), encoding="utf-8")
+
+        page_review.refresh_evidence(self.lesson, self.review_path)
+
+        refreshed = page_review.load_review(self.review_path)["pages"][0]
+        self.assertEqual(
+            refreshed["targetOrPrompt"],
+            "Conversation prompt: “What would you do with a free afternoon?” / "
+            "“自由な午後があったら、何をしますか？” Tutor follow-ups: "
+            "“Would you go out or stay home?” and “Who might join you?”",
+        )
+        self.assertIn("自由な午後があったら、何をしますか？", refreshed["nonTargetSupport"])
+        self.assertNotIn("古い質問", json.dumps(refreshed, ensure_ascii=False))
+
     def test_page_coverage_and_order_are_exact(self) -> None:
         review = self.completed_review()
         review["pages"].reverse()

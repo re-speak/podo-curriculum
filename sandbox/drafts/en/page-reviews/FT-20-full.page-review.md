@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/20-one-thing-you-always-carry/lesson.html`
-- SHA-256: `7d1866fdc67d4f18599126f16f5fc9161af4d843bf85b342860ef7d666f5e6de`
+- SHA-256: `603f114883ac9b0ee5576659a2ba85878ecf944c3bf7bbc23d41492045c36239`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Do you have a bag with you today?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What do you usually bring with you?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Which everyday item would be most inconvenient to forget?”
-- Learning target: Explore the distinct “A bag today (今日のかばん)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Do you have a bag with you today?” opens this angle; “What do you usually bring with you?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What do you usually bring with you?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Do you have a bag with you today?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which item would be hardest to go back for?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “Which everyday item would be most inconvenient to forget?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which everyday item would be most inconvenient to forget?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which everyday item would be most inconvenient to forget?” / “日常の持ち物で、忘れるといちばん困る物は何ですか？” Tutor follow-ups: “What need does it meet?” and “How easy would it be to replace?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常の持ち物で、忘れるといちばん困る物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which everyday item would be most inconvenient to forget?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “When you go out, what do you usually carry, if anything?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Do you use a bag or your pockets?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What would you carry for an ordinary day out?”
-- Learning target: Explore the distinct “What you carry (持ち歩く物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “When you go out, what do you usually carry, if anything?” opens this angle; “Do you use a bag or your pockets?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Do you use a bag or your pockets?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When you go out, what do you usually carry, if anything?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do you sometimes choose not to take?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you carry for an ordinary day out?"]}`
+- Learner action: Answer the standalone question “What are the three things you usually take when you go out?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What are the three things you usually take when you go out?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What are the three things you usually take when you go out?” / “出かけるとき、ふつう持っていく三つの物は何ですか？” Tutor follow-ups: “Which item earns its place every day?” and “What changes on a longer day out?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “出かけるとき、ふつう持っていく三つの物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What are the three things you usually take when you go out?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “If you use a bag, what kinds of things are usually in it?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which category takes the most space?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What tends to take up the most space in your bag or pockets?”
-- Learning target: Explore the distinct “What's inside (入っている物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you use a bag, what kinds of things are usually in it?” opens this angle; “Which category takes the most space?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which category takes the most space?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you use a bag, what kinds of things are usually in it?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do you carry without using very often?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What tends to take up the most space in your bag or pockets?"]}`
+- Learner action: Answer the standalone question “Which bulky everyday item is still worth carrying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which bulky everyday item is still worth carrying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which bulky everyday item is still worth carrying?” / “かさばっても持ち歩く価値がある日用品は何ですか？” Tutor follow-ups: “When is it most useful?” and “Would you carry an umbrella, a water bottle, or something else?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “かさばっても持ち歩く価値がある日用品は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which bulky everyday item is still worth carrying?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “What do you use most when you are away from home?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would be hard to replace?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What do you use most when you are away from home? 外出中、いちばんよく使う物は何ですか？
-- Learning target: Explore the distinct “What you use (実際に使う物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What do you use most when you are away from home?” opens this angle; “What would be hard to replace?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would be hard to replace?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What do you use most when you are away from home?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What saves you the most time?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you use most when you are away from home?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What do you reach for most when you're away from home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you reach for most when you're away from home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you reach for most when you're away from home?” / “外出中に、いちばんよく手に取る物は何ですか？” Tutor follow-ups: “Which part of your day depends on it?” and “Could another item replace it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “外出中に、いちばんよく手に取る物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you reach for most when you're away from home?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “If you use a bag, does anything stay there for months without use?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Why has it stayed there?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Which item are you most likely to carry for months without using?”
-- Learning target: Explore the distinct “There for months (何か月もある物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you use a bag, does anything stay there for months without use?” opens this angle; “Why has it stayed there?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Why has it stayed there?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you use a bag, does anything stay there for months without use?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make you finally remove it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which item are you most likely to carry for months without using?"]}`
+- Learner action: Answer the standalone question “What emergency item do people carry but rarely use?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What emergency item do people carry but rarely use?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What emergency item do people carry but rarely use?” / “人が持ち歩いていても、めったに使わない非常用の物は何ですか？” Tutor follow-ups: “How serious would the problem need to be?” and “When does being prepared become too much?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人が持ち歩いていても、めったに使わない非常用の物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What emergency item do people carry but rarely use?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “Is there anything you often forget when you go out?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What helps you remember it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Is there anything you often forget when you go out? 外出するとき、よく忘れる物はありますか？
-- Learning target: Explore the distinct “Always forgotten (いつも忘れる物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Is there anything you often forget when you go out?” opens this angle; “What helps you remember it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What helps you remember it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you often forget when you go out?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do you do when it is missing?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there anything you often forget when you go out?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What do people forget most often when they leave home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do people forget most often when they leave home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do people forget most often when they leave home?” / “家を出るとき、人は何をいちばん忘れやすいですか？” Tutor follow-ups: “Why is that item easy to forget?” and “How does forgetting it change the day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家を出るとき、人は何をいちばん忘れやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do people forget most often when they leave home?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “Has what you carry changed over the past few years?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What did you stop or start carrying?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “How have phones changed what people carry?”
-- Learning target: Explore the distinct “How it changed (変わった持ち物)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Has what you carry changed over the past few years?” opens this angle; “What did you stop or start carrying?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What did you stop or start carrying?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has what you carry changed over the past few years?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What caused that change?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How have phones changed what people carry?"]}`
+- Learner action: Answer the standalone question “Which things did phones replace in people's pockets?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which things did phones replace in people's pockets?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which things did phones replace in people's pockets?” / “スマートフォンは、人が持ち歩いていたどんな物の代わりになりましたか？” Tutor follow-ups: “Which replacement made daily life easier?” and “What was lost when the old item disappeared?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “スマートフォンは、人が持ち歩いていたどんな物の代わりになりましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which things did phones replace in people's pockets?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “What might someone learn about your day from what you carry?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What best represents your routine?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What might someone learn about your day from what you carry? 普段の持ち物から、あなたの一日について何が分かりますか？
-- Learning target: Explore the distinct “What it says (持ち物が語ること)” angle of “One thing you always carry” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What might someone learn about your day from what you carry?” opens this angle; “What best represents your routine?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What best represents your routine?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What might someone learn about your day from what you carry?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might someone misunderstand?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might someone learn about your day from what you carry?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What can you guess about someone from what's in their bag?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can you guess about someone from what's in their bag?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can you guess about someone from what's in their bag?” / “バッグの中身から、その人について何が分かると思いますか？” Tutor follow-ups: “Which item tells you the most?” and “What could make you guess wrong?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “バッグの中身から、その人について何が分かると思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can you guess about someone from what's in their bag?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

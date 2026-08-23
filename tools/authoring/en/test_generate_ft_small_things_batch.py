@@ -388,8 +388,8 @@ class FreetalkingSmallThingsBatchTests(unittest.TestCase):
             39: "What do you really do when you're stressed—not what you should do?",
             40: "Which superstition do you know best, whether or not you follow it?",
             41: "Imagine a Saturday with no plans. How would it begin?",
-            42: "What's a household rule that makes sense in one family but seems strange elsewhere?",
-            43: "Why can a harmless embarrassing moment replay for years?",
+            42: "Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?",
+            43: "Which is more embarrassing: saying the wrong name or messaging the wrong person?",
             44: "What kind of moment makes you laugh out loud?",
             45: "What time did you go to bed last night?",
             46: "What personal rule can make life easier?",
@@ -429,23 +429,23 @@ class FreetalkingSmallThingsBatchTests(unittest.TestCase):
     def test_full_prompt_rewrites_preserve_the_shared_japanese_operation(self) -> None:
         expected = {
             (34, 3): (
-                "How can someone raise a minor irritation without making it sound disproportionate?",
+                "How can someone bring up a small annoyance without making it sound huge?",
                 "ささいな不満を大げさに聞こえないように伝えるには、どのような言い方がよいですか？",
             ),
             (37, 5): (
-                "Which situation involving rain would be most difficult to manage?",
+                "Which rainy-day problem would be hardest to deal with?",
                 "雨の日のどのような状況が、いちばん大変そうですか？",
             ),
             (38, 7): (
-                "What advice would you offer someone who felt completely exhausted?",
+                "What would you say to someone who felt completely exhausted?",
                 "完全に疲れ切っている人に、何と伝えますか？",
             ),
             (39, 5): (
-                "In which situation is your usual coping response most counterproductive?",
+                "When does a usual stress habit make things worse?",
                 "いつものストレスへの対処が、いちばん役に立たないのはどんなときですか？",
             ),
             (44, 6): (
-                "What allows a funny story to survive the act of retelling?",
+                "What keeps a funny story funny when someone retells it?",
                 "面白い話が、語り直しても面白さを保つのはなぜですか？",
             ),
         }
@@ -457,10 +457,10 @@ class FreetalkingSmallThingsBatchTests(unittest.TestCase):
     def test_reviewed_prompt_japanese_is_exact_and_natural(self) -> None:
         expected = {
             (34, 3): "ささいな不満を大げさに聞こえないように伝えるには、どのような言い方がよいですか？",
-            (35, 7): "自分についての少し変わった事実を、楽しい自己紹介でどう使いますか？",
+            (35, 7): "楽しい自己紹介に、どんな少し変わった事実を入れますか？",
             (36, 7): "害のない私的な習慣を人に見せないほうがよいのは、どのようなときですか？",
             (39, 3): "人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？",
-            (40, 1): "その迷信に従ったり破ったりすると、何が起きるとされていますか？",
+            (40, 1): "迷信は、どんなよいことや悪いことを起こすと言われていますか？",
             (42, 1): "家庭の変わった決まりは、日常の中でどのように使われますか？",
             (43, 1): "人が何度も思い出しやすい、害のない気まずい場面を一つ挙げてください。",
             (43, 2): "年齢によって、恥ずかしい記憶の感じ方はどう変わりそうですか？",
