@@ -641,8 +641,15 @@ def render(data: dict) -> None:
         authored = '\n    ' + render_lesson(item, data['courseTitleKo'], item['number'] == 10,
                                                 f'{data["course"]} {item["slug"]}') + '\n'
         rendered = source[:start] + authored + source[end:]
-        yomi_script = '<script src="../../../../../../runtime/js/yomi.js"></script>'
-        if 'class="yomi"' in authored and yomi_script not in rendered:
+        # The path is computed, not written down. The literal here used to be
+        # `../../../../../../runtime/js/yomi.js` — six levels to a directory that
+        # stopped existing when `runtime/` became `shared/`. Worse, the dedupe
+        # test compared against that same dead string, so it never recognised the
+        # correct tag the deck already carried and appended a second, broken one
+        # on every render.
+        depth = len(target.parent.relative_to(REPO).parts)
+        yomi_script = f'<script src="{"../" * depth}shared/js/yomi.js"></script>'
+        if 'class="yomi"' in authored and 'js/yomi.js' not in rendered:
             rendered = rendered.replace('\n\n</body>', f'  {yomi_script}\n\n\n</body>')
         target.write_text(rendered)
         print(f'wrote {target}')
