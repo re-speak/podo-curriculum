@@ -96,7 +96,7 @@ The guiding principles behind every page of the Korean curriculum.
 - **Chat layout:** partner on the left, the learner on the right (green-tinted bubble), one corner sharpened. The learner's bubble takes the tint but *not* the green outline — a speaker is not a choice.
 - **Story characters use photo avatars; tutor/student practice uses a neutral default-icon avatar.**
 - **Show a short speaker name beside every avatar.** An avatar supports recognition; it does not
-  replace an explicit identity. Use the same canonical name throughout the scene (`소희`, `나`,
+  replace an explicit identity. Use the same canonical name throughout the scene (`유진`, `나`,
   `선생님`) and do not add titles or descriptions to individual turns.
 
 ## Visual system

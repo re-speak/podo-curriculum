@@ -1,0 +1,21 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 10-friends-for-long
+spec:
+  week: 10
+  title:
+    ko: 오래 볼 사이
+    en: Friends for the long run
+    ja: ずっと会う仲
+  decks:
+    lecture: { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+  teaches:
+    patterns:
+      - ~(으)ㄴ/는 것 같다
+      - ~자
+    canDo: 잘 맞는 사이라고 말하고, 앞으로도 보자고 약속한다.
+  scene: 처음 만났던 그 편의점 앞. 그새 계절이 바뀌었다.
+  prerequisites: []
+  source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 10

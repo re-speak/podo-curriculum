@@ -26,7 +26,7 @@ marks it used. This is the one file a lesson-writer is expected to edit.
 
 **Practice dialogues** — icon avatars, no photos: `先生` (the tutor) and `私` (the learner).
 **Bonus scenes** — the stranger is `相手`, never a named character.
-**Named third parties in example sentences**: 소희 (the contextual track's love interest — do
+**Named third parties in example sentences**: 유진 (the contextual track's love interest — do
 not reuse her outside 3-contextual-korean).
 
 **The learner has two names, and that is deliberate.** In part 3 they *play* ハルカ opposite
