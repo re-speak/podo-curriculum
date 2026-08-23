@@ -97,6 +97,8 @@ from itertools import permutations
 import vocabulary
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
+# `promote.py` gives each deck of a lesson its own directory.
+DECK_SLOTS = {"lecture", "prestudy"}
 
 EN_END = ".!?"
 JA_END = "。！？"
@@ -1809,11 +1811,25 @@ def check(path):
     lesson_id = meta_content(html, "podo:lesson-id")
     if lesson_id is None:
         errs.append("missing podo:lesson-id")
-    elif "lessons" in path.parts and lesson_id != path.parent.name:
-        # The id must equal its directory only for a deck placed in a course, which
-        # is what the production importer reads. A track-root sample-lesson.html is
-        # a cut of the canonical trial deck and has no course directory to match.
-        errs.append(f"podo:lesson-id {lesson_id!r} != directory {path.parent.name!r}")
+    elif "lessons" in path.parts:
+        # The id must equal its lesson directory only for a deck placed in a
+        # course, which is what the production importer reads. A track-root
+        # sample-lesson.html is a cut of the canonical trial deck and has no
+        # course directory to match.
+        #
+        # A draft sits at `lessons/<slug>/lesson.html`, but `promote.py` writes
+        # each deck into its own slot — `lessons/<slug>/{lecture,prestudy}/
+        # index.html` — so under `courses/` the lesson directory is the
+        # grandparent. Comparing against the parent there called every promoted
+        # deck in the repo broken (1802 of them), which is how `--all` came to
+        # be unusable and why nothing ran the content gate over `courses/`.
+        owner = path.parent
+        if owner.name in DECK_SLOTS:
+            owner = owner.parent
+        # A trial source sits flat at `trial/lessons/<name>.html` with no
+        # directory of its own, so there is no lesson directory to disagree with.
+        if owner.name != "lessons" and lesson_id != owner.name:
+            errs.append(f"podo:lesson-id {lesson_id!r} != directory {owner.name!r}")
     review_id = meta_content(html, "podo:review-id")
     if is_english and not (review_id and re.fullmatch(r"(?:CORE|CTX|FT)-\d+", review_id)):
         errs.append("missing or invalid podo:review-id — use the stable TOC id")
@@ -2064,14 +2080,31 @@ def main():
         ap.error("give a path, or --all")
     for r in roots:
         if r.is_dir():
+            # `sandbox/archive/` is retired experiments — "not part of the read
+            # path: never cite one as precedent, never copy markup out of one".
+            # The exclusion named `_archive`, a directory that no longer exists,
+            # so 46 findings in retired files were counted against every run.
             targets += sorted(p for p in r.rglob("*.html")
-                              if "_archive" not in p.parts and p.name != "viewer.html")
+                              if not {"_archive", "archive"} & set(p.parts)
+                              and p.name != "viewer.html"
+                              and not p.name.startswith("_"))
         elif r.exists():
             targets.append(r)
         else:
             print(f"! no such path: {r}", file=sys.stderr)
 
     decks = [p for p in targets if PAGE_ID.search(p.read_text(encoding="utf-8"))]
+
+    # A deck marked `superseded` is kept as a record of a shape the curriculum
+    # moved away from, and it is not promoted into `courses/`. Holding it to the
+    # contract it was replaced *for* reports real differences that nobody should
+    # act on, and a gate that always prints thirty findings is a gate people
+    # learn to ignore. Say it was skipped rather than skipping it silently.
+    retired = [d for d in decks
+               if meta_content(d.read_text(encoding="utf-8"),
+                               "podo:curriculum-status") == "superseded"]
+    decks = [d for d in decks if d not in retired]
+
     pair_errors, pair_warnings = freetalk_pair_issues(decks)
     n_err = n_warn = 0
     for deck in decks:
@@ -2091,7 +2124,9 @@ def main():
             for w in warns:
                 print(f"  ! {w}")
 
-    print(f"\n{len(decks)} deck(s) checked · {n_err} error(s) · {n_warn} warning(s)")
+    retired_note = f" · {len(retired)} superseded deck(s) skipped" if retired else ""
+    print(f"\n{len(decks)} deck(s) checked · {n_err} error(s) · {n_warn} warning(s)"
+          + retired_note)
     return 1 if n_err else 0
 
 
