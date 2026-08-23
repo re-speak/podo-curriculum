@@ -18,6 +18,26 @@ just by being written down. If a rule would be just as true of English, put it i
 `ux-philosophy.md`; if it follows from the target language being Korean, put it in
 `deltas-kr.md`; and either way check whether `deltas-en.md` needs the answering entry.
 
+## 3-contextual-korean 의 여섯 코스는 손으로 고치지 않는다
+
+`ctx-kpop-*` 넷과 `ctx-banmal-*` 둘, 60개 덱은 `render_contextual_course.py` 가
+만든다. 렌더러는 매번 덱의 `.phone` 본문을 통째로 다시 쓰므로, **덱을 손으로 고치면
+다음 렌더에서 아무 말 없이 사라진다.** `promote.py` 가 `courses/` 에 대해 갖는 관계와
+같지만, 이쪽은 그렇게 적혀 있지 않았다.
+
+실제로 사라졌다. PR #89 · #93 의 문구·말투 정리가 이 60개 덱을 손으로 고쳤고
+매니페스트에는 반영되지 않았다. 2026-08-23 에 이 코스들을 다시 렌더하자 그 수정
+약 290줄이 한꺼번에 되돌아갔다 — 뜻과 쓰임 120줄, 원어민 팁 39줄, 규칙 20줄,
+학습 목표 8줄, 그리고 렌더러 안에 문자열로 박혀 있던 페이지 대본 전부.
+
+되돌아간 것은 전부 매니페스트와 렌더러로 옮겨 담았다. 고치는 자리는 둘 중 하나다:
+
+- 한 과에만 해당하는 말 → `toc/<course>/authoring-manifest.json`
+- 모든 과에 같은 말 → `render_contextual_course.py` 의 페이지 대본
+
+덱을 고쳐서는 안 된다. 고쳤는지 확인하려면 렌더 전후를 비교한다 — 렌더가 지우는 줄이
+있으면 그 줄은 원래 매니페스트에 있어야 했던 것이다.
+
 ## Also true of this folder
 
 - **Shared design system:** `../../../shared/css/lesson-card.css`. White cards on a 1px grey outline; the

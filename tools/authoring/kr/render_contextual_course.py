@@ -443,7 +443,7 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
          f'<span class="j">'
          f'{esc(p2["ja"])}</span></div></div></div>'),
         page('expressions', '먼저 익힐 표현', '先に覚える表現', model_list(item['expressions']),
-             ('장면에 필요한 네 표현을 먼저 확인해요.', '場面に必要な4つの表現を先に確認します。')),
+             ('먼저 핵심 표현 네 개를 볼게요.', 'まず中心表現を4つ見てみましょう。')),
         transition('part1-intro', 'パート 1', p1['pattern'], '最初の表現', p1['ja'], p1['pattern']),
         page('p1-teach', p1.get('teachTitleKo', '첫 번째 표현'), p1.get('teachTitleJa', '最初の表現'),
              f'<p class="section-subtitle pattern-meaning"><span class="meaning-kicker">뜻과 쓰임 '
@@ -456,22 +456,22 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
              ('이번엔 네 문장을 한 줄씩 소리 내어 읽어 볼까요?', '今度は4つの文を、1行ずつ声に出して読んでみましょうか。')),
         page('p1-rule', '모양 확인', '形を確認',
              rule_visual(p1),
-             (p1.get('ruleKo', '문장 속 핵심 표현을 한 덩어리로 확인해요.'), p1.get('ruleJa', '文の中心表現をひとかたまりで確認します。'))),
+             (p1.get('ruleKo', '핵심 표현부터 볼게요.'), p1.get('ruleJa', 'まず中心表現を見てみましょう。'))),
     ]
     if p1.get('choices'):
         pages.append(page('p1-choose', '맞는 형태 고르기', '正しい形を選ぼう',
                           f'<div class="choose-list">{choose_activity("p1", p1["choices"], f"{where} p1")}</div>',
-                          ('배운 형태 변화에 맞는 쪽을 골라 보세요.', '習った形の変化に合うほうを選びましょう。')))
+                          ('맞는 형태를 골라 보세요.', '正しい形を選んでみましょう。')))
     pages.extend([
         page('p1-reorder', '문장 만들기', '文を組み立てよう', p1_reorder,
-             ('흩어진 덩어리를 자연스러운 문장으로 만들어 보세요.', 'ばらばらのかたまりを自然な文に並べましょう。')),
+             ('이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?', '今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。')),
         page('p1-fill', '빈칸 채우기', '穴埋め練習', p1_fill,
              ('핵심 문장을 완성해 보세요.', '中心文を完成させましょう。')),
         page('p1-translate', '한국어로 말하기', '韓国語で言おう', p1_translate,
-             ('일본어를 보고 문장 전체를 한국어로 말해 보세요.', '日本語を見て文全体を韓国語で言いましょう。')),
+             ('이번엔 일본어만 보고 한국어 대사로 바꿔 말해 볼까요?', '今度は日本語だけを見て、韓国語のセリフに変えて言ってみましょうか。')),
         page('p1-write', '내 이야기로 바꾸기', '自分の話に変えよう',
              feedback_activity('p1-write-answer', '自分の状況で一文作ろう'),
-             (p1.get('writeKo', '같은 표현으로 내 상황에 맞는 문장을 만들어 보세요.'), p1.get('writeJa', '同じ表現で自分の状況に合う文を作りましょう。'))),
+             (p1.get('writeKo', '이번엔 같은 표현으로 자신의 이야기를 한 문장 만들어 볼까요?'), p1.get('writeJa', '今度は同じ表現で、自分の話を1文作ってみましょうか。'))),
         transition('part2-intro', 'パート 2', p2['pattern'], '次の表現', p2['ja'], p2['pattern']),
         page('p2-teach', p2.get('teachTitleKo', '두 번째 표현'), p2.get('teachTitleJa', '次の表現'),
              f'<p class="section-subtitle pattern-meaning"><span class="meaning-kicker">뜻과 쓰임 '
@@ -484,34 +484,34 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
              ('이번엔 네 문장을 한 줄씩 소리 내어 읽어 볼까요?', '今度は4つの文を、1行ずつ声に出して読んでみましょうか。')),
         page('p2-rule', '모양 확인', '形を確認',
              rule_visual(p2),
-             (p2.get('ruleKo', '문장 속 핵심 표현을 한 덩어리로 확인해요.'), p2.get('ruleJa', '文の中心表現をひとかたまりで確認します。'))),
+             (p2.get('ruleKo', '핵심 표현부터 볼게요.'), p2.get('ruleJa', 'まず中心表現を見てみましょう。'))),
     ])
     if p2.get('choices'):
         pages.append(page('p2-choose', '맞는 형태 고르기', '正しい形を選ぼう',
                           f'<div class="choose-list">{choose_activity("p2", p2["choices"], f"{where} p2")}</div>',
-                          ('배운 형태 변화에 맞는 쪽을 골라 보세요.', '習った形の変化に合うほうを選びましょう。')))
+                          ('맞는 형태를 골라 보세요.', '正しい形を選んでみましょう。')))
     pages.extend([
         page('p2-reorder', '문장 만들기', '文を組み立てよう', p2_reorder,
-             ('흩어진 덩어리를 자연스러운 문장으로 만들어 보세요.', 'ばらばらのかたまりを自然な文に並べましょう。')),
+             ('이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?', '今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。')),
         page('p2-fill', '빈칸 채우기', '穴埋め練習', p2_fill,
              ('핵심 문장을 완성해 보세요.', '中心文を完成させましょう。')),
         page('p2-translate', '한국어로 말하기', '韓国語で言おう', p2_translate,
-             ('일본어를 보고 문장 전체를 한국어로 말해 보세요.', '日本語を見て文全体を韓国語で言いましょう。')),
+             ('이번엔 일본어만 보고 한국어 대사로 바꿔 말해 볼까요?', '今度は日本語だけを見て、韓国語のセリフに変えて言ってみましょうか。')),
         page('p2-write', '내 이야기로 바꾸기', '自分の話に変えよう',
              feedback_activity('p2-write-answer', '自分の状況で一文作ろう'),
-             (p2.get('writeKo', '같은 표현으로 내 상황에 맞는 문장을 만들어 보세요.'), p2.get('writeJa', '同じ表現で自分の状況に合う文を作りましょう。'))),
+             (p2.get('writeKo', '이번엔 같은 표현으로 자신의 이야기를 한 문장 만들어 볼까요?'), p2.get('writeJa', '今度は同じ表現で、自分の話を1文作ってみましょうか。'))),
         transition('part3-intro', 'パート 3', '장면으로 돌아가기', '場面に戻ろう',
                    '二つの表現を一つの会話で使います。', '장면 복습'),
         page('p3-model', '장면 다시 읽기', 'シーンをもう一度', f'<div class="dialogue">{scene}</div>',
-             ('처음 장면을 같은 순서로 다시 읽어요.', '最初の場面を同じ順番でもう一度読みます。')),
+             ('지금까지 배운 표현으로 처음 장면을 다시 연기해 볼까요?', 'これまでに習った表現で、最初の場面をもう一度演じてみましょうか。')),
         page('p3-complete', '장면 완성하기', '場面を完成しよう', f'<div class="dialogue">{complete}</div>',
-             ('두 핵심 대사를 완성해 장면 전체를 이어 보세요.', '2つの中心せりふを完成させましょう。')),
+             ('핵심 대사 두 개를 완성하고 장면을 이어 보세요.', '中心のセリフを2つ完成させ、場面を続けてみましょう。')),
         page('p3-freetalk', '자유 대화', 'フリートーク',
              f'<div class="dialogue">{turn("선생님", item.get("freeQuestionKo", item["canDoKo"]), item.get("freeQuestionJa", item["canDoJa"]))}'
              f'{open_turn("나", item.get("freePromptJa", "自分の経験を韓国語で話そう"), "p3-freetalk-answer", tall=True)}'
              f'{open_turn("나", item.get("tutorQuestionJa", "先生にも同じことを聞こう"), "p3-freetalk-question", seed=item.get("tutorQuestionKo", "선생님은 어때요?"))}'
              f'{open_turn("선생님", "先生の答え", "p3-freetalk-tutor-answer")}</div>',
-             ('내 이야기를 말하고 선생님에게도 같은 질문을 해 보세요.', '自分の話をし、先生にも同じ質問をしましょう。')),
+             ('자기 이야기를 한 뒤, 저한테도 물어보세요.', '自分の話をしたら、私にも聞いてみてください。')),
         page('native-tip', '원어민 팁', 'ネイティブのひとこと',
              nuance_tip(item)),
     ])
