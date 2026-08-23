@@ -7,6 +7,11 @@
   <meta name="podo:lesson-id" content="trial-3-full">
   <meta name="podo:level" content="중급">
   <meta name="podo:content-version" content="2026-08-05">
+  <!-- 리포트는 대역 없이 한 언어로 간다. 그 언어가 무엇인지 CSS 가 알아야 해서
+       마크업이 선언한다 — 일본어 리포트는 줄바꿈 규칙이 한국어와 반대라
+       (keep-all 이면 일본어 문장은 끊길 자리가 없어 카드를 뚫고 나간다),
+       shared/css/trial.css 의 LINE BREAKING 절이 이 값으로 갈라 준다. -->
+  <meta name="podo:report-language" content="ja">
   <title>体験レッスン 中級 — PODO 韓国語</title>
   <link rel="stylesheet" href="../../../../../shared/css/lesson-card.css">
   <link rel="stylesheet" href="../../../../../shared/css/trial.css">
@@ -219,7 +224,7 @@
          because the drills started. -->
     <div class="section" data-page-id="p1-read">
       <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
-      <p class="section-subtitle"><span class="ko">이번엔 혼자 읽어 보세요.</span><span class="ja">今度はひとりで読んでみましょう。</span></p>
+      <p class="section-subtitle"><span class="ko">이번엔 혼자 한 번 읽어 볼까요?</span><span class="ja">今度はひとりで一度読んでみましょうか。</span></p>
       <div class="model-list">
         <div class="model-line"><span class="korean">그 드라마 <span class="ending">본 적 있어요</span>.</span><span class="translation">あのドラマ、<span class="ending">見たことがあります</span>。</span></div>
         <div class="model-line"><span class="korean">그 카페에 <span class="ending">간 적 있어요</span>.</span><span class="translation">あのカフェに<span class="ending">行ったことがあります</span>。</span></div>
@@ -357,7 +362,7 @@
 
     <div class="section" data-page-id="p1-translate">
       <h2 class="section-title">한국어로 바꿔요 <span class="title-ja">(韓国語にしよう)</span></h2>
-      <p class="section-subtitle"><span class="ko">일본어를 보고, 한국어로 말해 보세요.</span><span class="ja">日本語を見て、韓国語で言ってみましょう。</span></p>
+      <p class="section-subtitle"><span class="ko">이번엔 일본어만 보고 한국어로 바꿔 말해 볼까요?</span><span class="ja">今度は日本語だけを見て、韓国語に変えて言ってみましょうか。</span></p>
       <div class="task-block">
         <div class="answer-box">
           <span class="answer-label">あのカフェに行ったことがあります。</span>
@@ -391,7 +396,7 @@
     <!-- top of the ladder for part 1: their own experience, not the book's -->
     <div class="section" data-page-id="p1-write">
       <h2 class="section-title">내 경험 말하기 <span class="title-ja">(自分の経験を言おう)</span></h2>
-      <p class="section-subtitle"><span class="ko">이번엔 진짜 자기 이야기예요. 해 본 적 있는 걸 한 문장으로 말해 보세요.</span><span class="ja">今度は本当に自分の話です。したことがあることを、1つの文で言ってみましょう。</span></p>
+      <p class="section-subtitle"><span class="ko">이번엔 본인 이야기예요. 해 본 적 있는 걸 한 문장으로 말해 보세요.</span><span class="ja">今度はご自身の話です。したことがあることを、1つの文で言ってみましょう。</span></p>
       <div class="tutor-note">학생이 말한 문장을 여기에 적어 주세요.</div>
       <div class="fb-compose">
         <div class="fb" data-fb="p1-free-experience"><span class="hint"><span class="hint-chip">行く:가다</span><span class="hint-chip">見る:보다</span><span class="hint-chip">食べる:먹다</span><span class="hint-chip">会う:만나다</span><span class="hint-chip">習う:배우다</span><span class="hint-chip">読む:읽다</span><span class="hint-chip">韓国:한국</span><span class="hint-chip">コンサート:콘서트</span></span></div>
@@ -423,7 +428,7 @@
 
     <div class="section" data-page-id="p2-read">
       <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
-      <p class="section-subtitle"><span class="ko">이번엔 혼자 읽어 보세요.</span><span class="ja">今度はひとりで読んでみましょう。</span></p>
+      <p class="section-subtitle"><span class="ko">이번엔 혼자 한 번 읽어 볼까요?</span><span class="ja">今度はひとりで一度読んでみましょうか。</span></p>
       <div class="model-list">
         <div class="model-line"><span class="korean">여기 <span class="ending">앉아도 돼요</span>?</span><span class="translation">ここに<span class="ending">座ってもいいですか</span>？</span></div>
         <div class="model-line"><span class="korean">사진 <span class="ending">찍어도 돼요</span>?</span><span class="translation">写真を<span class="ending">撮ってもいいですか</span>？</span></div>
@@ -575,7 +580,7 @@
 
     <div class="section" data-page-id="p2-translate">
       <h2 class="section-title">한국어로 바꿔요 <span class="title-ja">(韓国語にしよう)</span></h2>
-      <p class="section-subtitle"><span class="ko">일본어를 보고, 한국어로 말해 보세요.</span><span class="ja">日本語を見て、韓国語で言ってみましょう。</span></p>
+      <p class="section-subtitle"><span class="ko">이번엔 일본어만 보고 한국어로 바꿔 말해 볼까요?</span><span class="ja">今度は日本語だけを見て、韓国語に変えて言ってみましょうか。</span></p>
       <div class="task-block">
         <div class="answer-box">
           <span class="answer-label">ここに座ってもいいですか？</span>
@@ -780,17 +785,17 @@
       <!-- 리포트 표지 줄 -->
       <div class="rhead">
         <span class="rhead-k">PODO TRIAL LESSON REPORT</span>
-        <h2 class="rhead-t">포도님의 한국어 실력,<br>꼼꼼하게 진단했어요.</h2>
-        <p class="rhead-m"><span class="rm-date">—</span>・체험 레슨・25분</p>
+        <h2 class="rhead-t">あなたの韓国語の実力を、<br>ていねいに診断しました。</h2>
+        <p class="rhead-m"><span class="rm-date">—</span>・体験レッスン・25分</p>
       </div>
 
       <!-- ① 내 레벨 · 내용은 레벨 체크에 따라 다시 그려진다 -->
       <div class="rsec lvcard">
-        <h3 class="rsec-h">내 레벨</h3>
+        <h3 class="rsec-h">今のレベル</h3>
         <div class="lvbig">
           <div class="lvbig-b">
             <p class="lvbig-n"><b>Lv.1</b><span>/ 10</span></p>
-            <p class="lvbig-l">한글을 <em>하나씩 읽어요</em></p>
+            <p class="lvbig-l">ハングルを <em>一文字ずつ読めます</em></p>
           </div>
           <img class="lvbig-img" src="../assets/levels/lv-1.png" alt="">
         </div>
@@ -808,7 +813,7 @@
         </div>
         <hr class="rline">
         <ul class="chk lv-ev"></ul>
-        <p class="topikrow"><i>TOPIK 1급</i><span>—</span></p>
+        <p class="topikrow"><i>TOPIK 1級</i><span>—</span></p>
         <!-- 레벨 체크 · 이 카드가 보여 주는 값을 바로 여기서 고른다.
              전에는 페이지 맨 위 별도 콘솔이었는데, 고르는 곳과 그려지는 곳이
              떨어져 있으면 튜터가 리포트에서 눈을 떼야 했다.
@@ -822,32 +827,39 @@
              「무엇을 말했나」와 「얼마나 매끄러웠나」를 함께 든다.
              고르고 나면 접힌다: 튜터가 다시 볼 것은 고른 한 줄뿐이다. -->
         <div class="lvcheck">
-          <span class="lvcheck-h">레벨 체크 <small>튜터만 보여요</small></span>
-          <p class="lvcheck-q">오늘 수업에서 학생이 어땠나요?</p>
+          <span class="lvcheck-h">レベルチェック <small>先生のみ表示</small></span>
+          <p class="lvcheck-q">今日のレッスンで、学習者はどうでしたか？</p>
           <div class="lvpick" data-group="level" data-pick="single" data-sync-id="plan-level" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">인사말과 단어 몇 개뿐, 대부분 일본어로 도와가며 했어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">익숙한 주제로 짧은 문장은 만들지만, 자주 막히고 말끝이 흔들렸어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">익숙한 주제는 막힘 없이 이어갔지만, 낯선 주제에서는 멈췄어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">처음 보는 주제에도 이유를 붙여 자기 의견을 말했어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">제 속도로 복잡한 이야기를 해도 바로 알아듣고 받아쳤어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">あいさつと単語がいくつかだけで、ほとんど日本語で補いました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">慣れた話題なら短い文は作れますが、よく詰まり語尾が揺れました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">慣れた話題はつまらず続きましたが、知らない話題では止まりました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">はじめての話題にも理由をつけて自分の意見を言えました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">私の速さで複雑な話をしてもすぐ聞き取って返してきました</span></button>
           </div>
-          <button class="lvcheck-redo" type="button">다시 고르기</button>
+          <button class="lvcheck-redo" type="button">選び直す</button>
         </div>
       </div>
 
       <!-- ② 항목별 진단 · 레이더 + 다섯 줄. 튜터가 고른 항목별 레벨을
            같은 수업을 받은 분들의 평균과 견준다. -->
       <div class="rsec">
-        <h3 class="rsec-h">항목별 진단<small>포도 수강생 평균과 나란히 놓고 봤어요</small></h3>
+        <h3 class="rsec-h">項目別診断<small>ポド受講生の平均と並べて見ました</small></h3>
 
         <div class="radbox">
           <div class="rad-legend">
-            <span><i></i>내 레벨</span>
-            <span><i class="avg"></i>포도 수강생 평균</span>
+            <span><i></i>私のレベル</span>
+            <span><i class="avg"></i>ポド受講生の平均</span>
           </div>
           <!-- viewBox 는 그려지는 내용(축 라벨 포함)에 맞춰 잘라 둔 것이다.
-               넉넉히 잡아 두면 아래에 죽은 여백이 100px 넘게 생긴다. -->
-          <svg id="radar" class="rad" viewBox="-18 -12 244 204" role="img" aria-label="항목별 지금 레벨과 평균 레이더"></svg>
+               넉넉히 잡아 두면 아래에 죽은 여백이 100px 넘게 생긴다 — 그래서
+               세로(-12 204)는 건드리지 않는다.
+               가로만 -18 244 에서 -48 266 으로 넓혔다. 잘라 둔 값이 한국어 축
+               이름에 맞춰져 있었는데(「듣기」 두 자), 일본어로 옮기면서 왼쪽
+               축이 「リスニング」 다섯 자가 됐다. text-anchor 가 end 라 글자가
+               왼쪽으로 자라고, 실측 내용 상자가 x=-46 까지 나가 -18 에서
+               잘려 「ニング」 만 보였다. 축 이름을 상자에 맞춰 줄이는 것은
+               거꾸로다 — 이름은 항목 칩과 코멘트 문장에도 그대로 쓰인다. -->
+          <svg id="radar" class="rad" viewBox="-48 -12 266 204" role="img" aria-label="項目別の現在レベルと平均のレーダー"></svg>
         </div>
 
 
@@ -867,56 +879,56 @@
         <div class="axsteps">
           <div class="axst-chips"></div>
         <div class="axq" data-ax="acc">
-          <p class="axq-h">정확성<small>문법과 말끝이 어땠나요?</small></p>
+          <p class="axq-h">正確さ<small>文法と語尾はどうでしたか？</small></p>
           <div class="axq-opts" data-group="ax-acc" data-pick="single" data-sync-id="ax-acc" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="간단한 단어와 문법으로 기본적인 뜻은 전할 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">단어만 나열해서, 뜻을 제가 짐작했어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="문장이 길어지면 조사와 말끝이 자주 흔들려요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">조사랑 말끝이 자주 틀렸어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="문장이 복잡할 때만 가끔 어순이나 문법이 흔들려요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">긴 문장에서만 가끔 틀렸어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="상황에 맞는 단어와 문법을 대체로 정확하게 써요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">거의 틀리지 않았어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="단어·문법·어순이 문맥에 맞게 정확해요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">틀린 데를 찾기 어려웠어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="簡単な語と文法で、基本的な意味は伝えられます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">単語を並べるだけで、意味は私が推し量りました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="文が長くなると助詞と語尾がよく揺れます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">助詞と語尾がよく間違っていました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="文が複雑なときだけ、たまに語順や文法が揺れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">長い文でだけ、たまに間違いました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="場面に合う語と文法を、おおむね正確に使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">ほとんど間違いませんでした</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="語・文法・語順が文脈に合って正確です"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">間違いを見つけるのが難しいほどでした</span></button>
           </div>
         </div>
         <div class="axq" data-ax="voc">
-          <p class="axq-h">어휘<small>쓸 수 있는 단어가 얼마나 되던가요?</small></p>
+          <p class="axq-h">語彙<small>使える語はどれくらいありましたか？</small></p>
           <div class="axq-opts" data-group="ax-voc" data-pick="single" data-sync-id="ax-voc" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="아주 단순한 단어로 하고 싶은 말을 전할 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">쓸 단어가 없어 자주 멈췄어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="하고 싶은 말에 맞는 단어를 두세 개쯤 알고 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">쉬운 단어로 겨우 돌려 말했어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="하고 싶은 말에 맞는 단어를 골라 쓸 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">하려는 말에 맞는 단어를 찾아 썼어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="하고 싶은 말을 여러 가지 단어로 바꿔 표현할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">같은 말을 여러 가지로 바꿔 썼어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="상황에 맞는 다양한 단어와 표현을 자유롭게 써요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">상황에 딱 맞는 표현까지 골라 썼어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="とても簡単な語で、言いたいことを伝えられます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">使う語がなくて、よく止まりました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="言いたいことに合う語を、二つ三つほど知っています"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">やさしい語で、なんとか言い換えていました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="言いたいことに合う語を選んで使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">言おうとすることに合う語を探して使えました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="言いたいことを、いろいろな語に言い換えられます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">同じことをいろいろに言い換えていました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="場面に合う多様な語と表現を自由に使えます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">場面にぴったり合う表現まで選んで使えました</span></button>
           </div>
         </div>
         <div class="axq" data-ax="flu">
-          <p class="axq-h">유창성<small>말이 얼마나 이어졌나요?</small></p>
+          <p class="axq-h">流暢さ<small>話はどれくらい続きましたか？</small></p>
           <div class="axq-opts" data-group="ax-flu" data-pick="single" data-sync-id="ax-flu" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="익숙한 주제로 더듬더듬 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">자주 멈추고 다시 시작했어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="익숙한 주제라면 천천히 이야기를 주고받을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">말 사이에 쉬는 때가 많았어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="익숙한 주제라면 주저 없이 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">가끔 멈추지만 이어서 말했어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="처음 보는 주제에도 주저 없이 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">거의 안 멈추고 대화를 이어갔어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="어떤 주제든 빠르고 편하게 이야기할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">한국인처럼 편하게 말했어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="慣れた話題なら、たどたどしくでも話せます"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">よく止まっては言い直していました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="慣れた話題なら、ゆっくりやりとりできます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">言葉の間に止まることが多くありました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="慣れた話題なら、ためらわず話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">たまに止まりますが、続けて話せました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="はじめての話題でも、ためらわず話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">ほとんど止まらず会話を続けました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="どんな話題でも、速く楽に話せます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">韓国の方のように楽に話していました</span></button>
           </div>
         </div>
         <div class="axq" data-ax="pron">
-          <p class="axq-h">발음<small>학생 말을 알아듣기 어땠나요?</small></p>
+          <p class="axq-h">発音<small>学習者の話は聞き取りやすかったですか？</small></p>
           <div class="axq-opts" data-group="ax-pron" data-pick="single" data-sync-id="ax-pron" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="아는 단어도 신경 써서 말해야 알아들을 수 있어요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">발음 때문에 알아듣기 어려웠어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="아는 단어는 말할 수 있지만, 처음 보는 단어는 발음이 어려워요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">가끔 알아듣기 어려웠어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="아는 단어는 능숙하고, 처음 보는 단어도 소리 내어 읽을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">알아들을 만하고 대체로 또렷했어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="발음이 능숙하고 억양과 리듬도 알맞아요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">아주 또렷했어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="발음이 또렷하고 억양과 리듬까지 자연스러워요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">한국인처럼 들렸어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="知っている語でも、気をつけて言わないと聞き取れません"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">発音のせいで聞き取りにくいところがありました</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="知っている語は言えますが、はじめての語は発音が難しいです"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">たまに聞き取りにくいところがありました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="知っている語は滑らかで、はじめての語も声に出して読めます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">聞き取れて、おおむねはっきりしていました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="発音が滑らかで、イントネーションとリズムも合っています"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">とてもはっきりしていました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="発音がはっきりしていて、イントネーションとリズムまで自然です"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">韓国の方のように聞こえました</span></button>
           </div>
         </div>
         <div class="axq" data-ax="lis">
-          <p class="axq-h">듣기<small>제 말을 알아듣게 하려고 얼마나 늦췄나요?</small></p>
+          <p class="axq-h">リスニング<small>聞き取ってもらうのに、どれだけ速さを落としましたか？</small></p>
           <div class="axq-opts" data-group="ax-lis" data-pick="single" data-sync-id="ax-lis" data-sync-kind="selection" data-sync-state="on">
-            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="천천히 또박또박 말해도 알아듣기 어려워요"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">제 말을 거의 못 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="천천히 또박또박 말하면 알아들을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">아주 천천히 말해야 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="조금 늦춰 말하면 전체 내용을 알아들을 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">조금 천천히 말하면 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="보통 속도로 말해도 뉘앙스까지 이해할 수 있어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">평소보다 조금만 늦춰도 알아들었어요</span></button>
-            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="한국인 속도로 말해도 뉘앙스까지 정확히 알아들어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">평소 속도로 말해도 알아들었어요</span></button>
+            <button type="button" class="rung-row" data-val="1" data-sync-option="1" data-say="ゆっくりはっきり話しても、聞き取るのが難しいです"><span class="rung" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="rung-t">私の話をほとんど聞き取れませんでした</span></button>
+            <button type="button" class="rung-row" data-val="3" data-sync-option="3" data-say="ゆっくりはっきり話せば聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rung-t">とてもゆっくり話してやっと聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="5" data-sync-option="5" data-say="少し速さを落として話せば、全体の内容を聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rung-t">少しゆっくり話せば聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="7" data-sync-option="7" data-say="ふつうの速さで話してもニュアンスまで理解できます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rung-t">いつもより少し落とすだけで聞き取れました</span></button>
+            <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="韓国の方の速さで話しても、ニュアンスまで正確に聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">いつもの速さで話しても聞き取れました</span></button>
           </div>
         </div>
-          <p class="axq-done">다섯 항목을 다 봤어요. 위를 눌러 다시 고칠 수 있어요.</p>
+          <p class="axq-done">五つの項目を見終わりました。上を押せば直せます。</p>
         </div>
 
         <!-- 다섯 줄 · 좋아요/아쉬운 점 · 추천 모두 renderAspects() 가 그린다 -->
@@ -935,12 +947,12 @@
           <img data-ax="lis" src="../assets/report-icons/ax-lis.svg" alt="">
         </div>
         <div class="axsum">
-          <div class="axs good"><h4><img src="../assets/report-icons/good.svg" alt="">잘하고 있어요!</h4><ul></ul></div>
-          <div class="axs weak"><h4><img src="../assets/report-icons/bad.svg" alt="">아쉬워요!</h4><ul></ul></div>
+          <div class="axs good"><h4><img src="../assets/report-icons/good.svg" alt="">よくできています！</h4><ul></ul></div>
+          <div class="axs weak"><h4><img src="../assets/report-icons/bad.svg" alt="">もう一歩です！</h4><ul></ul></div>
         </div>
         <!-- 코멘트 한 문단 · 잘하는 둘과 아쉬운 둘을 한 문장으로 잇고, 그 둘을
              기르는 방법까지 붙인다. 위 두 상자가 「무엇」 이라면 여기는 「그래서」 다. -->
-        <div class="axtip"><h4><i class="axtip-i" aria-hidden="true">✦</i>체험레슨 코멘트</h4><p></p></div>
+        <div class="axtip"><h4><i class="axtip-i" aria-hidden="true">✦</i>体験レッスンのコメント</h4><p></p></div>
       </div>
 
       <!-- ③ 이대로만 따라오면 돼요 · 기간과 길을 한 덩어리로
@@ -953,37 +965,37 @@
            칸이 아니라, 지금 선 마디가 무슨 코스인지를 따로 펴는 카드다.
            원안: trial/_experiments/trial-report-plan-merge-variations.html ① -->
       <div class="rsec pm-card" data-sync-id="plan-roadstep" data-sync-kind="roadstep">
-        <h3 class="rsec-h">이대로만 따라오면 돼요</h3>
+        <h3 class="rsec-h">このとおり進めば大丈夫</h3>
 
         <div class="pm-fuse">
           <div class="tiles">
             <div class="tile">
-              <span class="tile-k">목표 달성까지</span>
+              <span class="tile-k">目標達成まで</span>
               <span class="tile-v"><img src="../assets/report-icons/cal.svg" alt=""><b class="eta">—</b></span>
             </div>
             <div class="tile">
-              <span class="tile-k">예상 레슨</span>
-              <span class="tile-v"><img src="../assets/report-icons/course.svg" alt=""><b>약 <span class="need">—</span>회</b></span>
+              <span class="tile-k">予想レッスン</span>
+              <span class="tile-v"><img src="../assets/report-icons/course.svg" alt=""><b>約 <span class="need">—</span>回</b></span>
             </div>
           </div>
 
           <!-- 레일 · 말풍선을 떼고 눈금 일곱을 깔았다. 슬라이더가 길 바로 위에
                붙어 있어 「이 지도의 손잡이」 로 읽힌다. -->
           <div class="freq pm-freq pm-rail">
-            <span class="freq-k">매주</span>
+            <span class="freq-k">毎週</span>
             <div class="freq-row">
-              <p class="freq-h"><b class="freq-n">3</b>회</p>
+              <p class="freq-h"><b class="freq-n">3</b>回</p>
               <div class="freq-slot">
                 <span class="pm-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
                 <input class="freq-range" type="range" min="1" max="7" step="1" value="3"
-                       data-sync-id="plan-freq" aria-label="매주 몇 번">
+                       data-sync-id="plan-freq" aria-label="毎週何回">
                 <span class="pm-nums" aria-hidden="true"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i></span>
               </div>
             </div>
           </div>
         </div>
 
-        <a class="rep-jump rj-course" href="#p-goal"><span class="rj-b"><span class="rj-t">—</span><span class="rj-s">눌러서 고르러 가기</span></span></a>
+        <a class="rep-jump rj-course" href="#p-goal"><span class="rj-b"><span class="rj-t">—</span><span class="rj-s">タップして選びに行く</span></span></a>
 
         <!-- 코스 커버 여섯 장 · 마디마다 갈아 끼울 그림을 마크업에 한 번씩 적어
              둔다. 패키저는 마크업의 src 만 번들·평탄화하므로, JS 가 경로를
@@ -1026,8 +1038,8 @@
 
         <div class="road-card pm-road">
           <div class="road">
-            <span class="road-k">추천 코스</span>
-            <svg class="road-svg" viewBox="0 -4 270 122" role="img" aria-label="지금부터 목표까지의 코스 길"></svg>
+            <span class="road-k">おすすめコース</span>
+            <svg class="road-svg" viewBox="0 -4 270 122" role="img" aria-label="今から目標までのコースの道のり"></svg>
           </div>
 
           <div class="curli"></div>
@@ -1035,9 +1047,9 @@
           <!-- 앞뒤로만 움직인다. 로드맵은 순서가 전부라, 목록으로 흩어 놓으면
                「그다음」 이 사라진다. -->
           <div class="rc-nav">
-            <button class="rc-btn rc-prev" type="button">← 이전</button>
+            <button class="rc-btn rc-prev" type="button">← 前へ</button>
             <span class="rc-dots"></span>
-            <button class="rc-btn rc-next" type="button">다음 →</button>
+            <button class="rc-btn rc-next" type="button">次へ →</button>
           </div>
         </div>
       </div>
@@ -1051,8 +1063,8 @@
            덱은 부모 창(보드)으로 보내기만 하고, 백엔드에 남기는 일은 앱이 한다.
            보내는 값과 le_level_test 컬럼 대응: ../report-submit.md -->
       <div class="rep-send">
-        <span class="rep-send-h">리포트 저장 <small>튜터만 보여요</small></span>
-        <button class="rs-btn" type="button" disabled>리포트 저장하기</button>
+        <span class="rep-send-h">レポート保存 <small>先生のみ表示</small></span>
+        <button class="rs-btn" type="button" disabled>レポートを保存する</button>
         <p class="rs-msg"></p>
       </div>
     </div>
@@ -1664,6 +1676,14 @@
 </nav>
 
   <!-- PAGER · 한 장씩 넘기기 + 스크러버. 공유 스크립트. -->
+  <!-- REPORT LOCALE · 리포트에 실릴 문안(레벨표·항목·코스·기간 단위)의 일본어
+       판본. report.js 는 시작할 때 window.PODO_REPORT_LOCALE 을 한 번만 읽으므로
+       **반드시 report.js 보다 먼저** 와야 한다 — 순서가 뒤집히면 한국어 기본표가
+       그대로 그려지고, 아무 에러도 나지 않는다.
+       한국어 판본은 report.js 안의 기본값이 그대로다(사내 확인용으로
+       ../reports/trial-1-report.html 이 그쪽을 부른다). 공유 스크립트. -->
+  <script src="../../../../../shared/js/report-ja.js"></script>
+
   <!-- REPORT · 리포트·안내 페이지의 배선. 공유 스크립트. -->
   <script src="../../../../../shared/js/report.js"></script>
 

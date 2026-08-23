@@ -26,8 +26,7 @@
 <meta name="theme-color" content="#ffffff">
 <title>커리큘럼 카탈로그 · PODO 한국어</title>
 <link rel="icon" href="../favicon.ico" sizes="any">
-<link rel="icon" href="../favicon.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="../favicon.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="../site.css">
 <style>
@@ -190,14 +189,21 @@
   footer { margin-top: 76px; padding: 18px 20px; border-radius: var(--radius-sm); background: var(--surface);
     color: var(--ink-4); font-size: 12px; line-height: 1.8; }
   footer code { color: var(--ink-3); font-size: 11.5px; }
+  .loc { display: flex; gap: 2px; margin-left: auto; padding: 2px; border: 1px solid #e3e7ea;
+    border-radius: 4px; background: #fff; }
+  .loc button { padding: 4px 9px; border: 0; border-radius: 2px; background: transparent;
+    color: #62686e; font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
+  .loc button:hover { color: #16181a; }
+  .loc button[aria-pressed="true"] { background: #16181a; color: #fff; }
 </style>
 </head>
 <body>
-<a class="podo-skip" href="#main">본문으로 건너뛰기</a>
+<a class="podo-skip" href="#main" data-i18n="ui.skip">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.png" width="28" height="28" alt="">PODO Curriculum</a>
+    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
     <nav class="podo-nav" id="nav" aria-label="커리큘럼 탐색"></nav>
+    <div class="loc" id="loc" role="group"></div>
   </div>
 </header>
 <main class="wrap" id="main">
@@ -216,8 +222,8 @@
   <div class="cards" id="cards"></div>
 
   <div class="band">
-    <h2>레벨 사다리</h2>
-    <p>각 트랙이 어느 레벨 구간을 덮는지, 그 구간에 몇 과가 놓여 있는지.</p>
+    <h2 data-i18n="ui.ladder">레벨 사다리</h2>
+    <p data-i18n="ui.ladderP">각 트랙이 어느 레벨 구간을 덮는지, 그 구간에 몇 과가 놓여 있는지.</p>
   </div>
   <div class="ladder">
     <div class="ladder-grid">
@@ -228,16 +234,13 @@
   </div>
 
   <div class="band">
-    <h2 id="decks-h">완성된 레슨 덱</h2>
-    <p>실제 수업 화면이 준비된 과만 모았습니다. 새 탭에서 열립니다.</p>
+    <h2 id="decks-h" data-i18n="ui.readyDecks">완성된 레슨 덱</h2>
+    <p data-i18n="ui.readyDecksP">실제 수업 화면이 준비된 과만 모았습니다. 새 탭에서 열립니다.</p>
   </div>
   <div class="decks" id="decks"></div>
 
   <footer>
     <span id="foot"></span><br>
-    이 페이지는 생성물입니다. <code>enabled: true</code> 인 코스만 실립니다 — 내용을 고치려면
-    <code>courses/</code> 의 <code>course.yaml</code> · <code>lesson.yaml</code> 을 고치고
-    <code>python3 tools/build-catalog.py</code> 를 다시 실행하세요.
   </footer>
 
 </main>
@@ -249,12 +252,47 @@ const LEVELS = DATA.levels;
 const isDark = lv => DATA.ramp[lv] >= 5;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
+/* ---- 표시 언어 (course.html 과 같은 규칙) ------------------------------- */
+const I18N = DATA.i18n, LOCALES = ["ko", "ja", "en"], LS_KEY = "podo-catalog-locale";
+const DEFAULT_LOCALE = "ja";
+function initialLocale() {
+  try { const v = localStorage.getItem(LS_KEY); if (LOCALES.includes(v)) return v; } catch (e) {}
+  return DEFAULT_LOCALE;
+}
+let L = initialLocale();
+const tr = (sec, key) => ((I18N[sec] || {})[key] || {})[L] || ((I18N[sec] || {})[key] || {}).ko || "";
+const loc = o => !o ? "" : (typeof o === "string" ? o : (o[L] || o.ko || o.en || o.ja || ""));
+/** 레벨 눈금 이름. 표에 없으면(영어 코스의 CEFR) 그대로 쓴다. */
+const lvName = lv => ((I18N.level || {})[lv] || {})[L] || lv;
+function paintI18n() {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n").split(".");
+    const v = tr(sec, key); if (v) el.textContent = v;
+  });
+  document.documentElement.lang = L;
+}
+function paintLocaleBar() {
+  const bar = document.getElementById("loc"); if (!bar) return;
+  bar.setAttribute("aria-label", tr("locale", "label"));
+  bar.innerHTML = LOCALES.map(c =>
+    `<button type="button" data-loc="${c}" aria-pressed="${c === L}">` +
+    `${esc((I18N.locale[c] || {})[c] || c)}</button>`).join("");
+}
+function setLocale(next) {
+  if (!LOCALES.includes(next) || next === L) return;
+  L = next;
+  try { localStorage.setItem(LS_KEY, L); } catch (e) {}
+  paintI18n(); paintLocaleBar(); paintPage();
+}
+
+
 /* ---------- 언어마다 다른 자리 ----------
    한 템플릿이 korean/ 과 english/ 를 함께 그린다. 언어 이름이 들어가는 자리는 전부
    DATA.page 에서 온다. */
 {
+
   const P = DATA.page;
-  if (P.title) document.title = P.title;
+  if (P.title) document.title = loc(P.title);
   document.getElementById("brand").href = P.home;
   document.getElementById("nav").innerHTML = P.nav.map(n =>
     `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}"${
@@ -263,38 +301,42 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 
 const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
 
-{
-  const P = DATA.page;
-  document.getElementById("kicker").textContent = P.kicker;
-  document.getElementById("lead").textContent = P.lead;
-  document.getElementById("tracks-h").textContent = P.tracksH;
-  document.getElementById("tracks-p").textContent = P.tracksP;
-  document.getElementById("lfoot").innerHTML = P.lfoot;
-  document.getElementById("foot").textContent = P.foot;
-  document.getElementById("h1").innerHTML = `<b>${DATA.totals.lessons}</b>${P.h1}`;
+const P = DATA.page;
+function paintPage() {
+  document.title = loc(P.title);
+  document.getElementById("kicker").textContent = loc(P.kicker);
+  document.getElementById("lead").textContent = loc(P.lead);
+  document.getElementById("tracks-h").textContent = `${P.trackCount} ${tr("ui","tracksH")}`;
+  document.getElementById("tracks-p").textContent = tr("ui","tracksP");
+  const lf = document.getElementById("lfoot"); if (lf) lf.remove();
+  document.getElementById("foot").textContent = loc(P.foot);
+  document.getElementById("h1").innerHTML = `<b>${DATA.totals.lessons}</b>${loc(P.h1)}`;
+  if (typeof paintCards === "function") paintCards();
   document.getElementById("stats").innerHTML = P.stats
-    .map(([v, u]) => `<div class="stat"><b>${v}</b><span>${esc(u)}</span></div>`).join("");
+    .map(([v, u]) => `<div class="stat"><b>${v}</b><span>${esc(tr("ui", u))}</span></div>`).join("");
 }
 
+function paintCards() {
 document.getElementById("cards").innerHTML = DATA.tracks.map(t => {
-  const span = t.span.length ? (t.span.length === 1 ? t.span[0] : `${t.span[0]} — ${t.span[t.span.length - 1]}`) : "전 레벨";
+  const span = t.span.length ? (t.span.length === 1 ? lvName(t.span[0]) : `${lvName(t.span[0])} — ${lvName(t.span[t.span.length - 1])}`) : tr("ui","allLevels");
   const dot = t.span.length ? t.span[0] : "";
-  const flag = t.status === "open" ? "계속 추가" : "";
+  const flag = t.status === "open" ? tr("ui","keepAdding") : "";
   return `<a class="card" data-status="${esc(t.status)}" href="catalog/${esc(t.id)}" style="--ac:${t.accent};--tint:${t.tint}">
     <span class="card-no">${String(t.no).padStart(2, "0")}</span>
     ${flag ? `<span class="flag">${flag}</span>` : ""}
     <div class="card-head">
       <div class="glyph">${esc(t.glyph)}</div>
-      <div class="card-t">${esc(t.ko)}<span class="card-en">${esc(t.en)}</span>
-        ${t.status === "plan" ? `<span class="card-state">계획만 있음 · 현재 개발하지 않음</span>` : ""}</div>
+      <div class="card-t">${esc(loc({ko:t.ko, ja:t.ja, en:t.en}))}<span class="card-en">${esc(t.en)}</span>
+        ${t.status === "plan" ? `<span class="card-state">${esc(tr("ui","planOnly"))}</span>` : ""}</div>
     </div>
-    <p class="card-d">${esc(t.desc)}</p>
+    <p class="card-d">${esc(loc(t.desc))}</p>
     <div class="card-foot">
-      <div class="card-figs">${t.stats.map(s => `<div><b>${esc(s.v)}</b>${esc(s.k)}</div>`).join("")}</div>
+      <div class="card-figs">${t.stats.map(s => `<div><b>${esc(s.v)}</b>${esc(tr("ui", s.k))}</div>`).join("")}</div>
       <div class="card-lv">${dot ? `<i style="background:${lvColor(dot)}"></i>` : ""}${esc(span)}</div>
     </div>
   </a>`;
 }).join("");
+}
 
 /* ---------- 완성된 덱 ----------
    덱이 있는 과만 여기 실린다 — 목록은 build_catalog.py 가 디스크에서 찾은 lesson.html 이
@@ -302,9 +344,9 @@ document.getElementById("cards").innerHTML = DATA.tracks.map(t => {
 {
   const made = DATA.tracks.filter(t => (t.decks || []).length);
   const n = made.reduce((s, t) => s + t.decks.length, 0);
-  document.getElementById("decks-h").textContent = `완성된 레슨 덱 ${n}`;
+  document.getElementById("decks-h").textContent = `${tr("ui","readyDecks")} ${n}`;
   document.getElementById("decks").innerHTML = made.length ? made.map(t => `<div class="dtrack">
-    <a class="dtrack-h" href="catalog/${esc(t.id)}"><i style="background:${t.accent}"></i>${esc(t.ko)}<em>${t.decks.length}</em></a>
+    <a class="dtrack-h" href="catalog/${esc(t.id)}"><i style="background:${t.accent}"></i>${esc(loc({ko:t.ko, ja:t.ja, en:t.en}))}<em>${t.decks.length}</em></a>
     <div class="dlist">${t.decks.map(d => `<a href="${esc(d.href)}" target="_blank" rel="noopener"
       title="${esc(d.title)}"><em>${String(d.n).padStart(2, "0")}</em>${esc(d.title)}<span class="ext">↗</span></a>`).join("")}</div>
   </div>`).join("") : `<p class="dnone">아직 나와 있는 덱이 없습니다.</p>`;
@@ -325,6 +367,11 @@ document.getElementById("ladder").innerHTML = DATA.tracks.map(t => {
     <div class="lcols">${cells}</div>
   </div>`;
 }).join("");
+document.getElementById("loc").addEventListener("click", e => {
+  const b = e.target.closest("button[data-loc]");
+  if (b) setLocale(b.dataset.loc);
+});
+paintI18n(); paintLocaleBar(); paintPage();
 </script>
 </body>
 </html>

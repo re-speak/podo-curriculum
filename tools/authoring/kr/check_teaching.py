@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the six rules that govern every teaching surface in a deck.
+"""Verify the seven rules that govern every teaching surface in a deck.
 
 They exist because an audit of 535 뜻과 쓰임 boxes found the same four habits
 everywhere, and none of them is visible while you are writing one deck:
@@ -41,6 +41,11 @@ everywhere, and none of them is visible while you are writing one deck:
                  is nothing but the count. A find-all page is exempt: there the
                  number is the stop condition, not a description ('웨'로 읽는
                  글자를 모두 눌러 보세요. 세 개예요.).
+
+  7  COPY        settled, exact Hangul-track copy conventions extracted from
+                 repeated native review: name mixed real-world items as words,
+                 omit visible setup narration, use the established listening
+                 prompt, and make recovery-note subjects explicit.
 
 Rule 5's budget is deliberately loose (the contextual track's own median is 48)
 — it is a backstop against paragraphs, not a style gauge.
@@ -98,7 +103,25 @@ BARE_COUNT = re.compile(
 # tells them when to stop hunting rather than what they are looking at.
 FIND_ALL = re.compile(r"모두.*(눌러|골라|찾)")
 
-RULES = ("anchor", "spoken-ja", "ref", "tail", "length", "count")
+RULES = ("anchor", "spoken-ja", "ref", "tail", "length", "count", "copy")
+
+# Hangul copy conventions extracted from repeated native-review feedback. These
+# are deliberately exact and track-scoped: broader wording choices still need
+# human judgment, while these phrases have one established replacement.
+HANGUL_COPY = (
+    (re.compile(r"간판 읽기|한국에 있다고 상상해 보세요\. 간판"),
+     "마무리 활동은 ‘단어 읽기’ 말투로 통일함"),
+    (re.compile(r"(?:이번엔 |이번에도 |이제 )?색(?:도)?이? 없(?:고|어요)"),
+     "화면에서 보이는 색 제거를 대본으로 설명함"),
+    (re.compile(r"위에 (?:쓴|쓰여져)"),
+     "‘위에 쓰여 있는’으로 자연스럽게 지칭함"),
+    (re.compile(r"제가 읽(?:을게요|어 볼게요)\. 듣고 맞는 쪽을 눌러 보세요\."),
+     "튜터 모델링 뒤에는 ‘잘 듣고’를 씀"),
+    (re.compile(r"말만 할게요\. 듣고 글자 세 개"),
+     "듣고 만들기도 ‘잘 듣고’로 통일함"),
+    (re.compile(r"(?<!정답으로 )표시된 (?:쪽|단어|두 글자|세 개)"),
+     "튜터 메모는 ‘정답으로 표시된’으로 대상을 분명히 함"),
+)
 
 
 def strip(s):
@@ -149,7 +172,9 @@ def check(path, want):
     # English and discuss the lesson — "they are 과 3 과 1 material" tripped the
     # lesson-number rule on a deck that had no reference in it at all.
     src = COMMENT.sub("", Path(path).read_text(encoding="utf-8"))
-    needs_anchor = "/2-core-patterns/" in str(Path(path).as_posix())
+    path_s = str(Path(path).as_posix())
+    needs_anchor = "/2-core-patterns/" in path_s
+    is_hangul = "/1-hangul/" in path_s or "trial-1-hangul" in path_s
     out = []
 
     def hit(rule, pid, detail, text):
@@ -214,6 +239,8 @@ def check(path, want):
         # ---- rule 2b: Japanese in a tutor note needs its Hangul reading ----
         for m in TUTOR.finditer(chunk):
             note = strip(m.group(1))
+            if is_hangul and re.search(r"(?:^|[.!?]\s+)막히면\b", note):
+                hit("copy", pid, "누가 막히는지 ‘학생이’를 밝힘", note)
             for run in re.finditer(r"[぀-ヿ㐀-䶿一-鿿]+", note):
                 if not run.group().strip("っーぁぃぅぇぉゃゅょ"):
                     continue          # 촉음·장음부호는 제 소리가 없다
@@ -241,6 +268,14 @@ def check(path, want):
             ko = strip(KO.search(pm.group(1)).group(1)) if KO.search(pm.group(1)) else ""
             if TAIL.search(ko):
                 hit("tail", pid, "상투적 마무리", ko)
+
+        # ---- rule 7: settled Hangul-track copy conventions ----
+        if is_hangul:
+            visible = strip(chunk)
+            for pattern, detail in HANGUL_COPY:
+                m = pattern.search(visible)
+                if m:
+                    hit("copy", pid, detail, m.group())
 
     return out
 

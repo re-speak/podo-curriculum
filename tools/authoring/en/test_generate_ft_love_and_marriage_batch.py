@@ -776,7 +776,7 @@ class FreetalkingLoveAndMarriageSourceTests(unittest.TestCase):
                 self.assertEqual(review["stages"]["generated"], "pass")
                 self.assertEqual(review["stages"]["mechanicalValidation"], "pass")
                 self.assertEqual(review["stages"]["humanPageAudit"], "pass")
-                self.assertEqual(review["stages"]["ownerApproval"], "pending")
+                self.assertEqual(review["stages"]["ownerApproval"], "pass")
                 self.assertTrue(all(page["verdict"] == "pass" for page in review["pages"]))
                 self.assertTrue(all(page["visual360"] == page["visual480"] for page in review["pages"]))
                 self.assertTrue(all(page["visual360"] in {"pending", "pass"} for page in review["pages"]))

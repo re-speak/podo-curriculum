@@ -1,25 +1,25 @@
 {
   "counts": {
     "decks": 210,
-    "entries": 21231,
+    "entries": 34040,
     "lessonPairs": 105,
     "themes": 11
   },
   "formatVersion": 1,
-  "generator": "korean/tools/build_proofreading_packets.py",
+  "generator": "tools/authoring/kr/build_proofreading_packets.py",
   "htmlIsSourceOfTruth": true,
   "omittedBoilerplateSignatures": {
     "feedback": [
       {
         "decks": 210,
-        "exampleSource": "korean/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/01-what-surprised-me/lesson.html",
+        "exampleSource": "sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/01-what-surprised-me/lesson.html",
         "sha256": "704c3b55e754bc066e5ed9b73dee6818d7a5c75380d14e6acad8a12808c127e3"
       }
     ],
     "lesson-style": [
       {
         "decks": 210,
-        "exampleSource": "korean/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/01-what-surprised-me/lesson.html",
+        "exampleSource": "sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/01-what-surprised-me/lesson.html",
         "sha256": "3e3fe09fc427c422925c5a180892abce646e9f14ddd755991db52c3ece698bcc"
       }
     ]
@@ -29,7 +29,7 @@
       "decks": 20,
       "file": "packets/01-between-two-countries.md",
       "lessonPairs": 10,
-      "sourceSetSha256": "76404b6a24bd1877c9d1845a98d45e6558c267c9822fc25cb8f39e39e5bec0f8",
+      "sourceSetSha256": "36e8cddacc9024b555713749c4020d7960c449a5e864d568b17c1b46f635338c",
       "theme": "두 나라 사이",
       "themeNumber": 1
     },
@@ -37,7 +37,7 @@
       "decks": 20,
       "file": "packets/02-me-lately.md",
       "lessonPairs": 10,
-      "sourceSetSha256": "401501c56863cbacfd32e837f56c71d026df3cc1f0656ece994e7043f95b83a7",
+      "sourceSetSha256": "065faff230d1c4ad88ba17557cab087d8ecb51dca3ba20329b25ae825f93fe51",
       "theme": "요즘의 나",
       "themeNumber": 2
     },
@@ -45,7 +45,7 @@
       "decks": 22,
       "file": "packets/03-things-i-like.md",
       "lessonPairs": 11,
-      "sourceSetSha256": "9dc3dc4a78837be92dbc71600cd844863deec9dc8beed47aff8df39824a84188",
+      "sourceSetSha256": "fe70bae2fa72a8789c07c78e5a09dec2eb288806edcdd2e5c24a69caa87cab53",
       "theme": "좋아하는 것",
       "themeNumber": 3
     },
@@ -53,7 +53,7 @@
       "decks": 20,
       "file": "packets/04-small-things.md",
       "lessonPairs": 10,
-      "sourceSetSha256": "584dcdc022854743940347467949976db81611646c1f33f6773729713de9447b",
+      "sourceSetSha256": "fcd3b29748c7d3f17b6949027693eb3d1f8a141f3e55ea95015c9d593e597905",
       "theme": "사소한 것들",
       "themeNumber": 4
     },
@@ -61,7 +61,7 @@
       "decks": 14,
       "file": "packets/05-people-and-ties.md",
       "lessonPairs": 7,
-      "sourceSetSha256": "67a602baf68d1940ca980c356869a57c95b59377ed05436ac2f77bda7c8d4eba",
+      "sourceSetSha256": "754bcf0a2b6af869ec40df96fab53e8288b86de55ea3ebad87416c24cc4db2f7",
       "theme": "사람과 관계",
       "themeNumber": 5
     },
@@ -69,7 +69,7 @@
       "decks": 14,
       "file": "packets/06-love-and-marriage.md",
       "lessonPairs": 7,
-      "sourceSetSha256": "dd1d6bf80239f4fc4ec2a047562106153438981a0e0447b39093e520a6deefcf",
+      "sourceSetSha256": "013f4a52fb876083cdf249f54585dfddbf00d866e616801761fdf7482ab3d9a9",
       "theme": "연애와 결혼",
       "themeNumber": 6
     },
@@ -77,7 +77,7 @@
       "decks": 18,
       "file": "packets/07-work-and-money.md",
       "lessonPairs": 9,
-      "sourceSetSha256": "e63e8ad1099fd505a7c2a27ea5a2bb6021bf5c3ed30d1a64084b3af29cf4ff0d",
+      "sourceSetSha256": "c34950d5f5e00f1511f90c3d9c18d3ac379f39d332c8587a16c7e10552295ec6",
       "theme": "일과 돈",
       "themeNumber": 7
     },
@@ -85,7 +85,7 @@
       "decks": 20,
       "file": "packets/08-what-came-before.md",
       "lessonPairs": 10,
-      "sourceSetSha256": "06f0e0a610167130cd3e49cce567146ce0380db9a0863dc56756a462d92bff53",
+      "sourceSetSha256": "f453e9592bd0c7665c75b62bf468e1f39a6eb4025cf0473ab995c7deb51b60c5",
       "theme": "지나온 것",
       "themeNumber": 8
     },
@@ -93,7 +93,7 @@
       "decks": 22,
       "file": "packets/09-what-if.md",
       "lessonPairs": 11,
-      "sourceSetSha256": "64914374afb71e4745f9e5752f950c750177d95089a31c1f464809ae4b3f1bce",
+      "sourceSetSha256": "d43141393daa9dca62c4ac418891c085559e417b612cf6acd538b3bf7ed6152d",
       "theme": "만약에",
       "themeNumber": 9
     },
@@ -101,7 +101,7 @@
       "decks": 12,
       "file": "packets/10-worth-thinking-about.md",
       "lessonPairs": 6,
-      "sourceSetSha256": "e60f7f2718a6ac45b73947b4a22b3b14cea493e378a7fc2dd2612594413fba30",
+      "sourceSetSha256": "e071da567d823f1bf7b2d4db2d42d065c3209272e9dfd4aa0a57349a85ef2b26",
       "theme": "생각해 볼 것",
       "themeNumber": 10
     },
@@ -109,10 +109,10 @@
       "decks": 28,
       "file": "packets/11-balance-games.md",
       "lessonPairs": 14,
-      "sourceSetSha256": "4171795388febdf9746a36d38b1fabdab748454eee78eff0312efb19626b635a",
+      "sourceSetSha256": "1501019efd99a49a35f1718ebc156864277ab35abaed3f639b152bf8ea988feb",
       "theme": "밸런스 게임",
       "themeNumber": 11
     }
   ],
-  "track": "korean/tracks/4-freetalking"
+  "track": "sandbox/drafts/kr/tracks/4-freetalking"
 }

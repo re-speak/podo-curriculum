@@ -19,8 +19,7 @@
 <meta name="theme-color" content="#ffffff">
 <title>PODO Curriculum</title>
 <link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" href="favicon.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="favicon.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="site.css">
 <style>
@@ -150,16 +149,23 @@
     .action { flex: 1 1 150px; }
     .home-footer { flex-direction: column; gap: 12px; }
   }
+  .loc { display: flex; gap: 2px; margin-left: auto; padding: 2px; border: 1px solid #e3e7ea;
+    border-radius: 4px; background: #fff; }
+  .loc button { padding: 4px 9px; border: 0; border-radius: 2px; background: transparent;
+    color: #62686e; font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
+  .loc button:hover { color: #16181a; }
+  .loc button[aria-pressed="true"] { background: #16181a; color: #fff; }
 </style>
 </head>
 <body>
-<a class="podo-skip" href="#main">Skip to content</a>
+<a class="podo-skip" href="#main" data-i18n="ui.skip">Skip to content</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
     <a class="podo-brand" href="index.html" aria-current="page">
-      <img src="favicon.png" width="28" height="28" alt="">PODO Curriculum
+      <img src="favicon.svg" width="28" height="28" alt="">PODO Curriculum
     </a>
     <nav class="podo-nav" id="nav" aria-label="Curriculum navigation"></nav>
+    <div class="loc" id="loc" role="group"></div>
   </div>
 </header>
 
@@ -167,13 +173,13 @@
   <header class="intro">
     <div class="spectrum" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
     <div class="intro__copy">
-      <p class="eyebrow">Curriculum library</p>
-      <h1>Speaking curricula for Japanese learners.</h1>
-      <p class="lede">Choose a language to inspect its learning sequence, curriculum tracks, and available lesson decks.</p>
+      <p class="eyebrow" data-i18n="ui.homeKicker">Curriculum library</p>
+      <h1 data-i18n="ui.homeH1">Speaking curricula for Japanese learners.</h1>
+      <p class="lede" data-i18n="ui.homeLead">Choose a language to inspect its learning sequence, curriculum tracks, and available lesson decks.</p>
     </div>
   </header>
 
-  <p class="section-label">Choose a target language</p>
+  <p class="section-label" data-i18n="ui.chooseLang">Choose a target language</p>
   <section class="curricula" id="curricula" aria-label="Available curricula">
   </section>
 
@@ -186,26 +192,64 @@
 const DATA = /*__DATA__*/null;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
+const I18N = DATA.i18n, LOCALES = ["ko", "ja", "en"], LS_KEY = "podo-catalog-locale";
+const DEFAULT_LOCALE = "ja";   /* 지금 학습자는 전부 일본어 화자다 — 기기 설정을 묻지 않는다 */
+function initialLocale() {
+  try { const v = localStorage.getItem(LS_KEY); if (LOCALES.includes(v)) return v; } catch (e) {}
+  return DEFAULT_LOCALE;
+}
+let L = initialLocale();
+const tr = (sec, key) => ((I18N[sec] || {})[key] || {})[L] || ((I18N[sec] || {})[key] || {}).ko || "";
+const loc = o => !o ? "" : (typeof o === "string" ? o : (o[L] || o.ko || o.en || o.ja || ""));
+
+function paintI18n() {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n").split(".");
+    const v = tr(sec, key); if (v) el.textContent = v;
+  });
+  document.documentElement.lang = L;
+}
+function paintLocaleBar() {
+  const bar = document.getElementById("loc");
+  bar.setAttribute("aria-label", tr("locale", "label"));
+  bar.innerHTML = LOCALES.map(c =>
+    `<button type="button" data-loc="${c}" aria-pressed="${c === L}">` +
+    `${esc((I18N.locale[c] || {})[c] || c)}</button>`).join("");
+}
+
 document.getElementById("nav").innerHTML = DATA.nav.map(n =>
   `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}">${esc(n.label)}</a>`).join("");
 
-document.getElementById("foot").textContent = DATA.foot;
-
-/* 카드는 courses/ 에서 센 값으로만 그린다 — 트랙 칩도 실제로 코스가 있는 트랙만 선다.
-   upstream 은 이 숫자들을 손으로 적어 두었고, 그래서 커리큘럼이 자라면 조용히 틀렸다. */
-document.getElementById("curricula").innerHTML = DATA.languages.map(l => `
+/* 카드는 courses/ 에서 센 값으로만 그린다 — 숫자와 말을 떼어 두어, 코스가 늘어도
+   세 언어의 문장을 각각 고칠 일이 없다. */
+function paintCards() {
+  document.getElementById("curricula").innerHTML = DATA.languages.map(l => {
+    const c = l.counts;
+    const counts = `${c.tracks} ${tr("ui","countTracks")} · ${c.courses} ${tr("ui","countCourses")} · ${c.lessons} ${tr("ui","countLessons")}`;
+    return `
   <article class="curriculum${l.modifier ? ` ${esc(l.modifier)}` : ""}">
     <h2 class="curriculum__title">${esc(l.name)}<span lang="${esc(l.nativeLang)}">${esc(l.native)}</span></h2>
     <div class="curriculum__copy">
-      <p>${esc(l.desc)}</p>
-      <div class="meta"><span class="state">${esc(l.state)}</span><span>${esc(l.counts)}</span></div>
+      <p>${esc(loc(l.desc))}</p>
+      <div class="meta"><span class="state">${esc(tr("ui", l.state))}</span><span>${esc(counts)}</span></div>
       <div class="track-list" aria-label="${esc(l.name)} tracks">${
-        l.tracks.map(tr => `<span style="--track:${esc(tr.accent)}">${esc(tr.label)}</span>`).join("")}</div>
+        l.tracks.map(t => `<span style="--track:${esc(t.accent)}">${esc(t.label)}</span>`).join("")}</div>
     </div>
     <div class="actions">
-      <a class="action" href="${esc(l.href)}">Open catalog <span aria-hidden="true">→</span></a>
+      <a class="action" href="${esc(l.href)}">${esc(tr("ui","openCatalog"))} <span aria-hidden="true">→</span></a>
     </div>
-  </article>`).join("");
+  </article>`; }).join("");
+}
+
+document.getElementById("loc").addEventListener("click", e => {
+  const b = e.target.closest("button[data-loc]");
+  if (!b || b.dataset.loc === L) return;
+  L = b.dataset.loc;
+  try { localStorage.setItem(LS_KEY, L); } catch (err) {}
+  paintI18n(); paintLocaleBar(); paintCards();
+});
+
+paintI18n(); paintLocaleBar(); paintCards();
 </script>
 </body>
 </html>
