@@ -290,14 +290,29 @@ def scramble(items: list[str]) -> list[str]:
     unlikely, because with three chunks an unlucky hash would otherwise
     reproduce the tell often enough to be learnable.
     """
+    return [items[i] for i in scramble_order(items)]
+
+
+def scramble_order(items: list[str]) -> tuple[int, ...]:
+    """The permutation `scramble` picks, so pairs can follow the same one.
+
+    Seeded from the chunk text alone. A chip's reading must not change which
+    order the chips come out in — otherwise adding readings would reshuffle
+    thirty already-reviewed decks.
+    """
     n = len(items)
     identity = tuple(range(n))
     rotation = (n - 1, *range(n - 1))
     candidates = [p for p in permutations(range(n)) if p not in (identity, rotation)]
     if not candidates:                      # unreachable: chunks are 3 or 4
-        return list(items)
-    picked = candidates[seed_of(*items) % len(candidates)]
-    return [items[i] for i in picked]
+        return identity
+    return candidates[seed_of(*items) % len(candidates)]
+
+
+def scramble_pairs(pairs: list[tuple[str, str | None]]) -> list[tuple[str, str | None]]:
+    """Disorder (chunk, reading) pairs exactly as `scramble` would the chunks."""
+    order = scramble_order([chunk for chunk, _ in pairs])
+    return [pairs[i] for i in order]
 
 
 def parse_chunks(ko: str, where: str) -> tuple[list[str], str]:
@@ -356,14 +371,44 @@ def rows_of(part: dict, field: str, where: str) -> list:
     return rows
 
 
+def chunk_readings(yomi: str | None, pieces: list[str], where: str) -> list[str | None]:
+    """Line each chunk up with its own kana reading, or give every chunk none.
+
+    A chip is a thing the learner is asked to say, so below 중급 it carries a
+    reading like every other spoken Korean in the deck — `deltas-kr.md`, and the
+    eleven hand-authored sub-중급 contextual decks all do it this way, one
+    `.yomi` inside each `.choice`. This renderer discarded the reading outright
+    and shipped thirty decks whose chips a 초급 learner may not be able to
+    decode.
+
+    The reading is marked with the same `|` as the Korean so the two cannot
+    drift: a row that splits its chunks one way and its reading another is an
+    error here rather than a silently misaligned chip.
+    """
+    if not yomi:
+        return [None] * len(pieces)
+    readings = [piece.strip() for piece in yomi.split(CHUNK_SEP)]
+    if len(readings) != len(pieces):
+        raise ManifestError(
+            f'{where}: {len(pieces)} chunks but {len(readings)} reading(s) — mark the '
+            f'reading with "{CHUNK_SEP}" at the same places as the Korean')
+    if any(not reading for reading in readings):
+        raise ManifestError(f'{where}: an empty reading chunk in {yomi!r}')
+    return readings
+
+
 def reorder_activity(part: str, rows: list, where: str) -> str:
     blocks = []
     for i, value in enumerate(rows, 1):
-        ko, ja, _ = example_values(value)
-        pieces, answer = parse_chunks(ko, f'{where} reorderExamples[{i}]')
+        ko, ja, yomi = example_values(value)
+        spot = f'{where} reorderExamples[{i}]'
+        pieces, answer = parse_chunks(ko, spot)
+        readings = chunk_readings(yomi, pieces, spot)
+        paired = list(zip(pieces, readings))
         chips = ''.join(
-            f'<span class="choice" data-item-id="{part}-o{i}-{j}">{esc(chunk)}</span>'
-            for j, chunk in enumerate(scramble(pieces), 1)
+            f'<span class="choice" data-item-id="{part}-o{i}-{j}">{esc(chunk)}'
+            f'{yomi_span(reading)}</span>'
+            for j, (chunk, reading) in enumerate(scramble_pairs(paired), 1)
         )
         blocks.append(f'<div class="task-block"><div class="answer-box small">'
                       f'<span class="answer-label">{esc(ja)}</span>'

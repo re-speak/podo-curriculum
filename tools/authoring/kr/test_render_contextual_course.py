@@ -22,7 +22,7 @@ def rows(*sentences: str) -> list[list[str]]:
 
 READ = rows('제 최애는 민지예요.', '막내는 혜인이에요.',
             '이 멤버는 하니예요.', '제 최애는 다니엘이에요.')
-REORDER = [['제 | 최애는 | 민지예요.', '私の最推しはミンジです。', 'チェ チェエヌン ミンジイェヨ'],
+REORDER = [['제 | 최애는 | 민지예요.', '私の最推しはミンジです。', 'チェ | チェエヌン | ミンジイェヨ'],
            ['우리 | 이 멤버는 | 혜인이에요.', 'うちのこのメンバーはヘインです。', None],
            ['우리 팀 | 막내는 | 하니예요.', 'うちのチームの末っ子はハニです。', None],
            ['어제 콘서트에서 | 본 멤버는 | 다니엘이에요.', '昨日のコンサートで見たメンバーはダニエルです。', None]]
@@ -275,3 +275,42 @@ class ChoosePositionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ChunkReadingTests(unittest.TestCase):
+    """A chip a sub-중급 learner must say carries its own reading."""
+
+    def test_each_chunk_gets_its_own_reading(self):
+        self.assertEqual(
+            renderer.chunk_readings('チェ | チェエヌン | ミンジイェヨ',
+                                    ['제', '최애는', '민지예요'], 'x'),
+            ['チェ', 'チェエヌン', 'ミンジイェヨ'],
+        )
+
+    def test_a_deck_without_readings_gets_none_per_chunk(self):
+        self.assertEqual(renderer.chunk_readings(None, ['가', '나', '다'], 'x'),
+                         [None, None, None])
+
+    def test_a_reading_split_differently_from_the_korean_is_an_error(self):
+        with self.assertRaises(renderer.ManifestError) as caught:
+            renderer.chunk_readings('チェ | チェエヌン', ['제', '최애는', '민지예요'], 'x')
+        self.assertIn('3 chunks but 2 reading(s)', str(caught.exception))
+
+    def test_an_unsplit_reading_is_an_error_rather_than_one_long_chip(self):
+        with self.assertRaises(renderer.ManifestError):
+            renderer.chunk_readings('チェ チェエヌン ミンジイェヨ',
+                                    ['제', '최애는', '민지예요'], 'x')
+
+    def test_readings_follow_the_chips_through_the_scramble(self):
+        pairs = [('제', 'チェ'), ('최애는', 'チェエヌン'), ('민지예요', 'ミンジイェヨ')]
+        scrambled = renderer.scramble_pairs(pairs)
+        self.assertEqual([c for c, _ in scrambled], renderer.scramble(['제', '최애는', '민지예요']))
+        for chunk, reading in scrambled:
+            self.assertEqual(dict(pairs)[chunk], reading)
+
+    def test_adding_readings_does_not_reshuffle_the_chips(self):
+        chunks = ['우리 팀', '막내는', '하니예요']
+        without = renderer.scramble(chunks)
+        with_readings = [c for c, _ in renderer.scramble_pairs(
+            [(c, f'r{i}') for i, c in enumerate(chunks)])]
+        self.assertEqual(without, with_readings)
