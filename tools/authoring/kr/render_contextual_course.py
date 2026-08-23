@@ -453,7 +453,7 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
              f'{yomi_span(p1.get("yomi"))}'
              f'<span class="translation">{esc(p1["ja"])}</span></div>'),
         page('p1-read', '따라 읽기', '声に出して練習', model_list(rows_of(p1, 'readExamples', f'{where} p1')),
-             ('네 문장을 천천히 따라 읽어 보세요.', '4つの文をゆっくり読んでください。')),
+             ('이번엔 네 문장을 한 줄씩 소리 내어 읽어 볼까요?', '今度は4つの文を、1行ずつ声に出して読んでみましょうか。')),
         page('p1-rule', '모양 확인', '形を確認',
              rule_visual(p1),
              (p1.get('ruleKo', '문장 속 핵심 표현을 한 덩어리로 확인해요.'), p1.get('ruleJa', '文の中心表現をひとかたまりで確認します。'))),
@@ -481,7 +481,7 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
              f'{yomi_span(p2.get("yomi"))}'
              f'<span class="translation">{esc(p2["ja"])}</span></div>'),
         page('p2-read', '따라 읽기', '声に出して練習', model_list(rows_of(p2, 'readExamples', f'{where} p2')),
-             ('네 문장을 천천히 따라 읽어 보세요.', '4つの文をゆっくり読んでください。')),
+             ('이번엔 네 문장을 한 줄씩 소리 내어 읽어 볼까요?', '今度は4つの文を、1行ずつ声に出して読んでみましょうか。')),
         page('p2-rule', '모양 확인', '形を確認',
              rule_visual(p2),
              (p2.get('ruleKo', '문장 속 핵심 표현을 한 덩어리로 확인해요.'), p2.get('ruleJa', '文の中心表現をひとかたまりで確認します。'))),

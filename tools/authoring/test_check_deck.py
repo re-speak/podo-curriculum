@@ -1297,3 +1297,40 @@ class ExemplarFrameFixedMarkerTests(unittest.TestCase):
             self.assertEqual(
                 len(check_deck.exemplar_variation_issues(self.page(near), level="초급")), 1, near
             )
+
+
+class LearnerReadsModelTests(unittest.TestCase):
+    """The tutor may not read a printed model before the learner does — either language."""
+
+    def page(self, ko):
+        return {"p1-read": (
+            'data-page-id="p1-read">'
+            f'<p class="section-subtitle"><span class="ko">{ko}</span>'
+            '<span class="ja">…</span></p>'
+        )}
+
+    def test_korean_tutor_first_fails(self):
+        for ko in ("제가 먼저 읽을게요. 따라 읽어 보세요.",
+                   "먼저 제가 읽어 볼게요.",
+                   "네 문장을 천천히 따라 읽어 보세요.",
+                   "제가 한 줄씩 읽을게요."):
+            with self.subTest(ko=ko):
+                self.assertEqual(len(check_deck.learner_reads_model_issues(self.page(ko))), 1)
+
+    def test_english_tutor_first_fails(self):
+        self.assertEqual(
+            len(check_deck.learner_reads_model_issues(self.page("I'll read each one first."))), 1
+        )
+
+    def test_inviting_the_learner_passes(self):
+        for ko in ("이번엔 네 문장을 한 줄씩 소리 내어 읽어 볼까요?",
+                   "이번엔 혼자 한 번 읽어 볼까요?",
+                   "Please read each sentence aloud."):
+            with self.subTest(ko=ko):
+                self.assertEqual(check_deck.learner_reads_model_issues(self.page(ko)), [])
+
+    def test_only_read_pages_are_judged(self):
+        chunks = {"p1-teach": 'data-page-id="p1-teach"><p class="section-subtitle">'
+                              '<span class="ko">제가 먼저 읽을게요.</span>'
+                              '<span class="ja">…</span></p>'}
+        self.assertEqual(check_deck.learner_reads_model_issues(chunks), [])

@@ -584,6 +584,46 @@ def choice_row_correct_slots(chunk):
     return slots
 
 
+# The tutor announcing they will read the visible model first, in either
+# language. English's own `pilot_operating_issues` already refuses this, but it
+# refuses it with an English regex, so the rule stopped at the language border —
+# and Korean spent a week with three different answers for one page type.
+TUTOR_READS_MODEL = re.compile(
+    r"\bI(?:['’]ll| will) read\b"
+    r"|제가\s*(?:먼저\s*)?(?:한\s*줄씩\s*)?읽"
+    r"|먼저\s*제가\s*읽"
+    r"|따라\s*읽어",
+    re.I,
+)
+
+
+def learner_reads_model_issues(page_chunks):
+    """On a page whose models are already printed, the learner reads them.
+
+    Not the tutor first and the learner after. The model is visible and the
+    learner can decode it, so the first round spends class time re-doing what
+    the page already did — and `ux-philosophy.md` allows exactly two exceptions,
+    a sound the learner cannot yet produce and a dialogue where the two hold
+    different roles. Neither is a `-read` page: those are four printed model
+    sentences with nothing to distinguish and nobody to play.
+    """
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-read", page_id):
+            continue
+        subtitles = SUBTITLE.findall(chunk)
+        if not subtitles:
+            continue
+        spoken = SPAN_KO.search(subtitles[0][1])
+        if spoken and TUTOR_READS_MODEL.search(plain_text(spoken.group(1))):
+            errors.append(
+                f"{page_id}: the tutor reads the model before the learner — the "
+                "model is already on screen, so the learner reads it. Invite them "
+                "to read it themselves instead"
+            )
+    return errors
+
+
 def choice_position_issues(page_chunks):
     """Require the answer to move down the page in a way position cannot predict.
 
@@ -1984,6 +2024,7 @@ def check(path):
         variation_chunks = dict(pages(html))
         errs.extend(choice_branch_coverage_issues(variation_chunks))
         errs.extend(choice_position_issues(variation_chunks))
+        errs.extend(learner_reads_model_issues(variation_chunks))
         errs.extend(exemplar_variation_issues(
             variation_chunks, level=meta_content(html, "podo:level")
         ))
