@@ -374,6 +374,56 @@ def write_json(path: pathlib.Path, data: dict[str, Any]) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+
+def audit_claims(lesson_root: pathlib.Path, review_root: pathlib.Path) -> list[str]:
+    """Hold every `proofread-status="complete"` claim against its ledger.
+
+    The claim and the evidence were never connected to each other, so neither
+    could contradict the other. Every English generator calls
+    `set_proofread_status(head, "complete")` unconditionally — the word is
+    written by a script, not earned by a review — while the ledgers that would
+    back it mostly still carry `visual360: "pending"` beside
+    `humanPageAudit: "pass"`.
+
+    This is the join. It reports rather than decides: what to do about a deck
+    whose claim outruns its ledger is a curriculum question, and the backlog it
+    exposes is real work rather than a mistake to be cleared in one commit.
+    """
+    # Index by the ledger's own `lesson` pointer rather than by deriving a
+    # filename from the review id. Freetalking ships two decks per id
+    # (`FT-105-full`, `FT-105-accessible`), so an id does not name a file.
+    by_lesson: dict[pathlib.Path, pathlib.Path] = {}
+    problems: list[str] = []
+    for review_path in sorted(review_root.rglob("*.json")):
+        try:
+            review = load_review(review_path)
+        except ReviewError:
+            continue
+        raw = review.get("lesson")
+        if isinstance(raw, str):
+            by_lesson[(REPO / raw).resolve()] = review_path
+
+    for lesson in sorted(lesson_root.rglob("lesson.html")):
+        source = lesson.read_text(encoding="utf-8")
+        if check_deck.meta_content(source, "podo:curriculum-status") == "superseded":
+            continue
+        if check_deck.meta_content(source, "podo:proofread-status") != "complete":
+            continue
+        label = check_deck.meta_content(source, "podo:review-id") or str(lesson)
+        ledger = by_lesson.get(lesson.resolve())
+        if ledger is None:
+            problems.append(f"{label}: claims complete, no ledger points at this deck")
+            continue
+        try:
+            errors = validate(lesson, ledger)
+        except ReviewError as exc:
+            errors = [str(exc)]
+        if errors:
+            problems.append(f"{label}: claims complete, ledger does not pass "
+                            f"({len(errors)} problem(s); first: {errors[0][:90]})")
+    return problems
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -404,6 +454,13 @@ def main(argv: list[str] | None = None) -> int:
     corpus_parser.add_argument("reviews", type=pathlib.Path)
     corpus_parser.add_argument("--require-owner", action="store_true")
 
+    claims_parser = subparsers.add_parser(
+        "audit-claims",
+        help="hold every proofread-status=complete claim against its ledger",
+    )
+    claims_parser.add_argument("lessons", type=pathlib.Path)
+    claims_parser.add_argument("reviews", type=pathlib.Path)
+
     args = parser.parse_args(argv)
     try:
         if args.command == "init":
@@ -422,6 +479,12 @@ def main(argv: list[str] | None = None) -> int:
             refresh_evidence(args.lesson, args.review)
             print(f"refreshed {args.review}")
             return 0
+        if args.command == "audit-claims":
+            problems = audit_claims(args.lessons, args.reviews)
+            for problem in problems:
+                print(f"CLAIM: {problem}")
+            print(f"\n{len(problems)} deck(s) claim a proofreading nobody can show")
+            return 1 if problems else 0
         if args.command == "audit-corpus":
             errors = audit_corpus(
                 args.lessons, args.reviews, require_owner=args.require_owner

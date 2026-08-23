@@ -296,6 +296,13 @@ steps:
         # 인용 부호는 아직 게이트가 아니다. 규약을 영어로 넓힌 직후라 한국어 111줄 ·
         # 영어 277줄이 규약 이전에 쓰인 채로 남아 있고, 지금 막으면 모든 PR 이 막힌다.
         # 쓸어낸 뒤 위 목록으로 올린다. 그때까지는 숫자를 보이게만 둔다.
+        # 교정 주장과 원장의 대조. 아직 게이트가 아니다 — 421개 중 395개가 통과하는
+        # 원장 없이 complete 를 주장하고 있고, 그 대부분은 실수가 아니라 아직 하지 않은
+        # 일(360·480px 시각 확인)이다. 숫자를 매 PR 에 보이게 두어 늘어나지 않게 한다.
+        echo "────────── 교정 주장 대조(조언, 게이트 아님) ──────────"
+        python3 tools/authoring/page_review.py audit-claims \
+          sandbox/drafts/en/tracks sandbox/drafts/en/page-reviews | tail -1 || true
+
         echo "────────── 인용 부호(조언, 게이트 아님) ──────────"
         python3 tools/authoring/check_quotes.py --all || true
 

@@ -135,6 +135,35 @@ the next generator.
 - **A scaffold that can be switched off must leave nothing behind when it is.** Anything that hands space to an optional thing is conditional on that thing being shown; with the switch off, the page must be pixel-identical to the design before the scaffold existed. (`:has()` and `+` keep matching an element that is `display:none`, which is how hiding one silently took a card's floor with it.)
 - **A persistent control takes no meaning-bearing colour.** Green would say *correct* and lime would say *brand* on every page at once, and a colour that appears everywhere stops saying anything. A switch shape already carries on and off.
 
+### What a proofread claim means
+
+A deck that declares `podo:proofread-status="complete"` is claiming a human read
+it page by page. That claim has to be backed by a review ledger that passes its
+own checker — hash-bound to the deck's exact bytes, with the machine-extracted
+evidence agreeing and the visual checks at both phone widths marked `pass`.
+Otherwise the field says only that something wrote the word.
+
+Today it mostly says only that. Every English generator calls
+`set_proofread_status(head, "complete")` unconditionally, and
+`page_review.py audit-claims` puts a number on the gap: **395 of 421 English
+decks claim a proofreading no ledger can show** — 236 because the visual audit at
+360px and 480px was never performed, 156 because the deck was regenerated after
+its review and the hash no longer matches, 3 because no ledger exists.
+
+Two rules follow, and the second is the one that keeps being broken:
+
+- **The claim is earned, not written.** A generator may not assert it.
+- **Regenerating a deck invalidates its review.** The ledger is bound to bytes on
+  purpose, so that a content fix cannot quietly inherit the approval of the deck
+  it replaced. When a generator changes, the review is *repeated* on the new
+  bytes — not refreshed. `refresh` exists for the narrow case where the evidence
+  moved and the judgement did not, and reaching for it after a content change is
+  how a stale approval survives.
+
+Korean has the opposite half of this: `build_proofreading_packets.py` runs a real
+native-speaker round with a rigorous issue protocol, and records nothing in the
+deck at all. The two halves are one mechanism.
+
 ## Difficulty arc & cadence
 - **Drill each block before teaching the next.** A teaching page is followed by its own drills, never by another teaching page. The learner should never be carrying more than three or four untested items at once. Batching the drills at the end of an act is what makes a lesson *feel* too fast even when nothing in it was too hard — the problem is rarely the difficulty of a page, it's how much went untested before practice arrived.
 - **A group is drilled alone before it meets another.** Two groups share an activity only after each has been drilled by itself, and after the page that names what they have in common. Mix them earlier and the learner is tested on two things at once with no way to tell which one they got wrong.
