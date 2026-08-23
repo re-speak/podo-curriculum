@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/116-working-from-home-or-going-into-the-office/lesson.html`
-- SHA-256: `862697030e1a30b864a002fa44391c5c9b71afdf78cdcc9022beea2c31d8af6f`
+- SHA-256: `744872761331226ee45241b3212e0a6f3467aa75154be058568ca08d491604f0`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What is the biggest distraction when working or studying at home?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What is the biggest distraction when working or studying at home?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What is the biggest distraction when working or studying at home?” / “家で仕事や勉強をするとき、いちばん邪魔になるものは何ですか？” Follow-ups: “How could the space be changed?” and “Would another location solve it?”
-- Learning target: Develop the distinct “At-home distraction” angle of Working from home or going into the office? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “At-home distraction” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What is the biggest distraction when working or studying at home?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “家で仕事や勉強をするとき、いちばん邪魔になるものは何ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the biggest distraction when working or studying at home?"]}`
+- Learner action: Answer the standalone question “What's the biggest distraction when working or studying at home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the biggest distraction when working or studying at home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the biggest distraction when working or studying at home?” / “家で仕事や勉強をするとき、いちばん邪魔になるものは何ですか？” Tutor follow-ups: “How could the space be changed?” and “Which distracts more at home: noise, chores, or your phone?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家で仕事や勉強をするとき、いちばん邪魔になるものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the biggest distraction when working or studying at home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “How would you use the time saved by removing a commute?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would you use the time saved by removing a commute?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would you use the time saved by removing a commute?” / “通勤時間がなくなったら、その時間をどう使いますか？” Follow-ups: “Would you use it the same way every day?” and “Would it improve rest or relationships?”
-- Learning target: Develop the distinct “Time without a commute” angle of Working from home or going into the office? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Time without a commute” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would you use the time saved by removing a commute?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “通勤時間がなくなったら、その時間をどう使いますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “How would you use the time saved by removing a commute?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How would you use the time saved by removing a commute?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How would you use the time saved by removing a commute?” / “通勤時間がなくなったら、その時間をどう使いますか？” Tutor follow-ups: “Would you use the time the same way every day?” and “Would you use the saved commute time for rest, exercise, or something social?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “通勤時間がなくなったら、その時間をどう使いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you use the time saved by removing a commute?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For focused work, would you choose home or a shared workplace?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For focused work, would you choose home or a shared workplace?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For focused work, would you choose home or a shared workplace?” / “集中して作業するなら、家と共有の職場のどちらを選びますか？” Follow-ups: “Which task shapes the answer?” and “What does the other place offer?”
-- Learning target: Develop the distinct “Home or shared workplace” angle of Working from home or going into the office? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Home or shared workplace” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For focused work, would you choose home or a shared workplace?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “集中して作業するなら、家と共有の職場のどちらを選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “For focused work, would you choose home or a shared workplace?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For focused work, would you choose home or a shared workplace?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For focused work, would you choose home or a shared workplace?” / “集中して作業するなら、家と共有の職場のどちらを選びますか？” Tutor follow-ups: “What kind of work are you imagining?” and “Which is quieter for you: home or a workplace?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “集中して作業するなら、家と共有の職場のどちらを選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For focused work, would you choose home or a shared workplace?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How would your day change if you had to use only that place?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would your day change if you had to use only that place?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would your day change if you had to use only that place?” / “毎日その場所だけで働くなら、一日はどう変わりますか？” Follow-ups: “Would communication change?” and “What would become inconvenient?”
-- Learning target: Develop the distinct “Every day in one place” angle of Working from home or going into the office? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Every day in one place” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would your day change if you had to use only that place?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “毎日その場所だけで働くなら、一日はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would your day change if you had to use only that place?"]}`
+- Learner action: Answer the standalone question “Which part of a normal workday changes most between home and an office?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of a normal workday changes most between home and an office?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of a normal workday changes most between home and an office?” / “家と職場では、普通の仕事日のどの部分が最も変わりますか？” Tutor follow-ups: “Does that part become easier or harder at home?” and “Which changes more: focus or communication?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家と職場では、普通の仕事日のどの部分が最も変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of a normal workday changes most between home and an office?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Would a quiet office fifteen minutes away change your answer?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would a quiet office fifteen minutes away change your answer?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would a quiet office fifteen minutes away change your answer?” / “静かな職場が十五分の場所にあれば、選択は変わりますか？” Follow-ups: “Who would you want to meet there?” and “What if the quiet seat disappeared?”
-- Learning target: Develop the distinct “A quiet office nearby” angle of Working from home or going into the office? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A quiet office nearby” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would a quiet office fifteen minutes away change your answer?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “静かな職場が十五分の場所にあれば、選択は変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a quiet office fifteen minutes away change your answer?"]}`
+- Learner action: Answer the standalone question “Would a quiet office fifteen minutes away be better than working at home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would a quiet office fifteen minutes away be better than working at home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would a quiet office fifteen minutes away be better than working at home?” / “十五分の場所にある静かな職場は、在宅勤務よりよいですか？” Tutor follow-ups: “Which part of the office would help most?” and “Would a short commute make the office more attractive?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “十五分の場所にある静かな職場は、在宅勤務よりよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a quiet office fifteen minutes away be better than working at home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would meeting the team only once a week be enough?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would meeting the team only once a week be enough?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would meeting the team only once a week be enough?” / “週に一日だけチームに会うなら、十分ですか？” Follow-ups: “What should happen that day?” and “Which tasks should stay at home?”
-- Learning target: Develop the distinct “One team day” angle of Working from home or going into the office? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “One team day” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would meeting the team only once a week be enough?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “週に一日だけチームに会うなら、十分ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would meeting the team only once a week be enough?"]}`
+- Learner action: Answer the standalone question “Which task is worth meeting a team in person for?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which task is worth meeting a team in person for?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which task is worth meeting a team in person for?” / “どんな作業なら、チームが直接会う価値がありますか？” Tutor follow-ups: “What would the team need to do together?” and “Which is easier in person: planning or solving a disagreement?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな作業なら、チームが直接会う価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which task is worth meeting a team in person for?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which task or space condition would make you switch locations?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which task or space condition would make you switch locations?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which task or space condition would make you switch locations?” / “どんな作業や空間なら、反対の場所を選びますか？” Follow-ups: “Would the people involved matter?” and “Would the number of days matter?”
-- Learning target: Develop the distinct “Task and space” angle of Working from home or going into the office? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Task and space” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which task or space condition would make you switch locations?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな作業や空間なら、反対の場所を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which task or space condition would make you switch locations?"]}`
+- Learner action: Answer the standalone question “What can make a workday at home feel less lonely?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can make a workday at home feel less lonely?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can make a workday at home feel less lonely?” / “在宅勤務の日に孤独を感じにくくするには、何が役立ちますか？” Tutor follow-ups: “Would a short call with a coworker help?” and “Which would help more: lunch outside or an online chat?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “在宅勤務の日に孤独を感じにくくするには、何が役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make a workday at home feel less lonely?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose working from home or going into the office, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose working from home or going into the office, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose working from home or going into the office, and why.” / “チューターなら在宅で働くことと職場へ行くことのどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which task would your tutor rather do in person?” and “How would they use the time saved from commuting?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターなら在宅で働くことと職場へ行くことのどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose working from home or going into the office, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which task would your tutor rather do in person?” and “Would a long commute change the answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

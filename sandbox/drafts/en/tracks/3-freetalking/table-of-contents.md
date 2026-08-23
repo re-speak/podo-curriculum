@@ -159,7 +159,7 @@ you say anything at the time → has it changed how you see it → what would su
 *Shared:* KR 1-1, rewritten so contact is not required
 
 **2. What people often get wrong about Japan** `両国`
-*Opens:* "What do people from other countries assume about Japan that isn't true?"
+*Opens:* "What do people often get wrong about Japan?"
 *Ladder:* what do they assume → where do they get it → what's the reality → what do *you* assume
 about my country → have you ever been wrong about somewhere → what should people ask instead
 *Moves:* `People think ___, but ___.` **(Core 56)** · `That's only true if ___.` **(Core 57)**
@@ -181,7 +181,7 @@ country's table that would be rude at yours → who taught you → does anyone s
 *Shared:* KR 1-4
 
 **5. A place you would show a visitor** `両国`
-*Opens:* "If I visited for one day, where would you take me — not the famous place."
+*Opens:* "If I visited Japan for one day, where would you take me besides the famous places?"
 *Ladder:* where → why there → when did you find it → who have you taken → what would I not get about
 it → where would you take me in *my* country if you could pick
 *Moves:* `I'd take you to ___.` **(Core 66)** · `It's not famous, but ___.` **(Core 56)**
@@ -221,14 +221,14 @@ topic assumes exposure the learner may not have.
 prepared opinion.*
 
 **9. A purchase that was worth it** `story`
-*Opens:* "What's the best thing you've bought this year?"
+*Opens:* "What's something you bought that was worth the money?"
 *Ladder:* what is it → when → what made you decide → was it expensive, did that matter → what do you
 regret buying → would you buy it again
 *Moves:* `The best thing I've ___ is ___.` `chunk` · `I use it ___.` **(Core 12)**
 *Shared:* KR 2-1
 
 **10. Something you've recently got into** `story`
-*Opens:* "What kind of new interest could easily catch your attention?"
+*Opens:* "What's something new you might enjoy trying?"
 *Ladder:* what → how did you discover it → how often → who knows → do you prefer sharing interests
 or keeping them private → where does it go from here
 *Moves:* `I've been ___ing lately.` **(Core 52)** · `I got into it because ___.` **(Core 54)** `chunk`
@@ -242,7 +242,7 @@ halfway → what's next
 *Shared:* KR 2-3
 
 **12. A compliment you still remember** `story`
-*Opens:* "What kind of compliment would stay with you for years?"
+*Opens:* "Which feels better: praise for your effort or praise for the result?"
 *Ladder:* who and what → did you believe it → how did you respond → do you remember compliments or
 criticism better → when did you last give one → who deserves one from you
 *Moves:* `Someone told me ___.` **(Core 69)** · `I didn't know what to say.` `chunk`
@@ -256,7 +256,7 @@ what do you still need to decide → if the plan fell through, what would you do
 *Shared:* KR 2-5
 
 **14. One thing you still want to do this year** `story`
-*Opens:* "If you could only finish one thing before December, what would it be?"
+*Opens:* "What's one thing you'd like to finish this year?"
 *Ladder:* what → why that one → what's stopping you → what did you already give up on → who would
 notice if you did it → what's the first step this week
 *Moves:* `I want to ___ before ___.` `chunk` · `I keep putting it off.` `chunk`
@@ -277,7 +277,7 @@ first time before that → what do you want to try next
 *Shared:* KR 2-8
 
 **17. A small win nobody noticed** `story`
-*Opens:* "What kind of small win would matter to you even if nobody noticed?"
+*Opens:* "On a difficult day, what small thing feels like a win?"
 *Ladder:* what → why did it matter → who would understand → do you notice these usually → what's
 still going badly → what would count as a good month
 *Moves:* `I finally ___.` `chunk` · `Nobody noticed, but ___.` **(Core 56)**
@@ -310,14 +310,14 @@ always forget → has your bag changed in a few years → what does it say about
 without being asked when they explain something they love.*
 
 **21. A film you never get tired of** `story`
-*Opens:* "What film could you happily watch more than twice?"
+*Opens:* "What kind of film is easiest to watch again?"
 *Ladder:* what → what makes it rewatchable → what might you notice the second time → who would you
 watch it with → what might a new viewer misunderstand → what would you show me first
 *Moves:* `I've seen it ___ times.` **(Core 48)** · `What I like most is ___.` **(Core 103)** `chunk`
 *Shared:* KR 3-1
 
 **22. Something in English you genuinely enjoyed** `story`
-*Opens:* "What kind of English content would feel enjoyable to you instead of like study?"
+*Opens:* "What's one thing in English you enjoy—music, a show, a game, or something else?"
 *Ladder:* what → how old → did you understand it → what did you do next → what got you here → what
 would you recommend to someone starting
 *Moves:* `That's what got me into ___.` `chunk` · `I didn't understand much, but ___.` **(Core 56)**
@@ -331,7 +331,7 @@ what can't you work to → what did you love five years ago → what would surpr
 *Shared:* KR 3-3
 
 **24. Your go-to karaoke song** `story`
-*Opens:* "What song would you choose first at karaoke?"
+*Opens:* "What kind of song is a safe first choice at karaoke?"
 *Ladder:* what → why that one → who taught you it → what's your backup → what would you never sing →
 what should I sing
 *Moves:* `I always go for ___.` **(Core 12)** · `I'd never sing ___.` **(Core 66)**
@@ -352,28 +352,28 @@ can't watch → is there one you changed your mind about → what would you refu
 *Shared:* KR 3-6
 
 **27. A restaurant you want to keep to yourself** `story`
-*Opens:* "What restaurant—real or imagined—would you want to keep to yourself?"
+*Opens:* "Would you tell everyone about a great small restaurant, or keep it quiet?"
 *Ladder:* where → what do you order → how did you find it → who have you taken → what happens if it
 gets popular → what makes a place worth keeping quiet
 *Moves:* `I'd rather keep ___ quiet.` **(Core 97)** `chunk` · `It's been there ___.` **(Core 51)** `chunk`
 *Shared:* KR 3-7
 
 **28. A book you chose for someone else** `story`
-*Opens:* "What book would you choose for someone else, and who would receive it?"
+*Opens:* "Who would you enjoy choosing a book for?"
 *Ladder:* what → who for → why that book → how would you know it fit → what makes a good book gift →
 what would you choose for me
 *Moves:* `I bought it for ___.` **(Core 32)** · `I don't know if they ___.` **(Core 62)**
 *Shared:* KR 3-8
 
 **29. A hobby other people underestimate** `story`
-*Opens:* "What hobby do people underestimate?"
+*Opens:* "What's a hobby that is more interesting than it looks?"
 *Ladder:* what → what do outsiders miss → how did you start → how much time → what's the best moment
 in it → what would convince me to try
 *Moves:* `People think it's ___, but ___.` **(Core 56)** · `The best part is ___.` **(Core 103)** `chunk`
 *Shared:* KR 3-9
 
 **30. Something in your room you would never throw away** `story`
-*Opens:* "What object would you never throw away?"
+*Opens:* "What kind of object is hardest to throw away?"
 *Ladder:* what → how did you get it → how long → who else knows it matters → what have you thrown
 away and regretted → what will you still have in ten years
 *Moves:* `I've had it since ___.` **(Core 51)** `chunk` · `I keep it because ___.` **(Core 54)**
@@ -394,7 +394,7 @@ never wear → who dresses well around you → what would you buy with no budget
 *Shared:* **NEW → KR**
 
 **33. A food you only eat to be polite** `story`
-*Opens:* "Is there something you eat to be polite?"
+*Opens:* "When might someone eat a food just to be polite?"
 *Ladder:* what → where do you have to eat it → has anyone noticed → why not just say so → what does
 everyone love that you don't get → would you say so at a dinner
 *Moves:* `I don't really like it, to be honest.` **(Core 14)** · `I eat it because everyone else does.` **(Core 54)**
@@ -462,14 +462,14 @@ now versus five years ago → company or solitude → plans and freedom
 *Shared:* KR 4-8
 
 **42. A rule that only made sense in your family** `story`
-*Opens:* "What's a household rule that makes sense in one family but seems strange elsewhere?"
+*Opens:* "Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?"
 *Ladder:* a surprising household rule → how it works → discovering differences → why it makes sense →
 rules worth keeping → where rules vary → explaining one to guests → a rule worth being known for
 *Moves:* `We always used to ___.` **(Core 75)** · `I didn't realise until ___.` **(Core 58)**
 *Shared:* KR 4-9
 
 **43. An embarrassing memory that comes back at night** `story`
-*Opens:* "Why can a harmless embarrassing moment replay for years?"
+*Opens:* "Which is more embarrassing: saying the wrong name or messaging the wrong person?"
 *Ladder:* why moments replay → one safe common example → age and perspective → nobody noticed →
 another person's memory → triggers → advice → when it becomes funny
 *Moves:* `I still think about it.` `chunk` · `Nobody else remembers, probably.` `chunk`
@@ -509,7 +509,7 @@ damages them → drifting apart → restarting → what each person brings
 *Shared:* KR 5-1
 
 **48. A first impression that was completely wrong** `story`
-*Opens:* "Why can a first impression be completely wrong?"
+*Opens:* "Which is easier to misread at first: a quiet person or a very talkative person?"
 *Ladder:* why it can be wrong → what shapes it → evidence that changes it → fast or slow revision →
 missing context → positive impressions worsening → quick judgment → what is easy to misread
 *Moves:* `My first impression was ___, but ___.` **(Core 56)** · `It took me ___ to ___.` **(Core 51)** `chunk`
@@ -551,21 +551,21 @@ normal transition or problem → worth renewing → responding thoughtfully
 *Shared:* KR 5-7
 
 **54. The person you talk to most** `story`
-*Opens:* "What makes someone become the person you talk to most?"
+*Opens:* "What makes someone easy to talk to?"
 *Ladder:* main contact → why one becomes central → sustainable rhythm → deeper conversations → easy and
 difficult topics → changing patterns → life stages → staying in touch without duty
 *Moves:* `Probably my ___.` `chunk` · `We mostly talk about ___.` **(Core 12)**
 *Shared:* **NEW → KR**
 
 **55. Advice that stayed with you** `story`
-*Opens:* "Why does some advice stay with people for years?"
+*Opens:* "Which is easier to remember: a short piece of advice or a personal story?"
 *Ladder:* why it stays → memorable wording → who says it → the right moment → understanding later →
 when it helps → worth sharing → why sound advice is ignored
 *Moves:* `Someone once told me to ___.` **(Core 70)** · `It helped because ___.` **(Core 54)**
 *Shared:* **NEW → KR**
 
 **56. The person you would call in an emergency** `story` `深く`
-*Opens:* "In an emergency, which need should determine the first call?"
+*Opens:* "What makes someone the right person to call first in an emergency?"
 *Ladder:* first need → right first contact → essential information → first steps → ordinary support roles →
 changing contacts → distance → a stronger support network
 *Moves:* `There's really only ___.` **(Core 106)** `chunk` · `I've never had to, but ___.` **(Core 48)**
@@ -584,9 +584,9 @@ appearance or habits → what turns charm off → how preferences change → wha
 *Shared:* KR 6-1
 
 **58. A relationship deal-breaker** `story` `深く`
-*Opens:* "What kind of comment can destroy trust in a relationship?"
-*Ladder:* trust-breaking comments → hardest type to forgive → first response → taking time → words
-or attitude → a real apology → what stays off-limits → stating a boundary
+*Opens:* "Which is harder to forgive: a lie, an insult, or a broken promise?"
+*Ladder:* a quick choice → one comment or a pattern → a sincere apology → taking a break → what
+stays off-limits → rebuilding trust → stating a boundary → one green flag
 *Moves:* `The moment someone says ___, I'm done.` **(Core 58)** · `I couldn't get past ___.` `chunk`
 *Shared:* KR 6-2
 
@@ -639,14 +639,14 @@ unexpected payment → what first earnings can teach
 *Shared:* KR 7-1
 
 **65. Something you were proud to finish** `story`
-*Opens:* "What makes finishing something feel genuinely satisfying?"
+*Opens:* "Which feels better: finishing a long job or fixing a small annoying problem?"
 *Ladder:* satisfying effort → recognition → expressing pride → why one result matters → completion
 without pride → work worth being known for
 *Moves:* `I was actually proud of ___.` **(Core 30)** · `Nobody said anything, but ___.` **(Core 56)**
 *Shared:* KR 7-2
 
 **66. A moment when you felt successful** `story`
-*Opens:* "What can make an ordinary moment feel like success?"
+*Opens:* "Which small success feels best: arriving on time, cooking well, or finishing a task?"
 *Ladder:* what comes before → being witnessed → the feeling → what remains → meaningful progress →
 how definitions change
 *Moves:* `It wasn't big, but ___.` **(Core 56)** · `That's when I felt ___.` **(Core 58)**
@@ -730,7 +730,7 @@ would you pass it on → what advice do adults need
 *Shared:* KR 8-1
 
 **77. A teacher you still remember** `story`
-*Opens:* "Which teacher—real or fictional—stands out to you most, and why?"
+*Opens:* "Which real or fictional teacher stands out to you most?"
 *Ladder:* role → one clear moment → how the student felt → what they learned → how the judgment changed
 → what makes teaching difficult
 *Moves:* `We were all terrified of ___.` **(Core 30)** · `Looking back, ___.` `chunk`
@@ -765,14 +765,14 @@ with time → would the traveller return
 *Shared:* KR 8-6
 
 **82. A place you would happily visit again** `story`
-*Opens:* "Choose a place that deserves a return visit. What makes it worth going back?"
+*Opens:* "Which place would you happily visit again?"
 *Ladder:* strongest memory → ideal companion → what may have changed → first priority → expectations
 versus reality → what quality belongs in daily life
 *Moves:* `I'd go back tomorrow.` **(Core 66)** · `It wouldn't be the same, though.` **(Core 66)**
 *Shared:* KR 8-7
 
 **83. What you wanted to be as a child** `story`
-*Opens:* "Which childhood dream job is especially interesting to you?"
+*Opens:* "Which childhood dream job sounds most fun to you now?"
 *Ladder:* what makes it appealing → where the idea comes from → how it changes → what replaces it →
 what value survives → what adulthood reveals
 *Moves:* `I wanted to be ___.` **(Core 30)** · `It's not that far from ___.` **(Core 45)**
@@ -786,14 +786,14 @@ meet → what you would ask → how returning might feel
 *Shared:* KR 8-9
 
 **85. A turning point in your life** `story` `深く`
-*Opens:* "What kind of moment can send a life in a completely different direction?"
+*Opens:* "Think of a small choice that changed someone's life. What happened?"
 *Ladder:* one example → when its importance became clear → plausible alternative → strongest influence
 → what might differ now → luck versus choice
 *Moves:* `That's when everything ___.` **(Core 58)** · `If that hadn't happened, ___.` `chunk`
 *Shared:* KR 8-10
 
 **86. What you were like as a child** `story`
-*Opens:* "How can the same child seem completely different to different people?"
+*Opens:* "What were you like as a child?"
 *Ladder:* choose one child → who describes them → whether the description is fair → one revealing scene
 → differences across settings → what remains in adulthood
 *Moves:* `Apparently I was ___.` **(Core 30)** · `I don't remember it that way.` `chunk`
@@ -807,7 +807,7 @@ change feels → what deserves preserving
 *Shared:* **NEW → KR**
 
 **88. Something you were completely wrong about** `story`
-*Opens:* "What's a belief that many people once accepted but later proved wrong?"
+*Opens:* "What's something people used to believe that surprises you now?"
 *Ladder:* exact claim → why it seemed believable → evidence that corrected it → first reaction → what
 changed afterward → how to judge certainty now
 *Moves:* `I was completely sure that ___.` **(Core 30)** · `It turned out I'd ___.` **(Core 73)** `chunk`
@@ -827,8 +827,8 @@ purchase → possible regret → a new normal → what money cannot solve
 *Shared:* KR 9-1
 
 **90. Three things you would take to a desert island** `choose`
-*Opens:* "Which three useful objects would you take to a desert island?"
-*Ladder:* three useful objects → most important need → final-place trade-off → emotional value →
+*Opens:* "What would feel hardest about your first day on a desert island?"
+*Ladder:* hardest first-day problem → three useful objects → most important need → final-place trade-off → emotional value →
 regretted omission → missing island facts → one companion → value after returning
 *Moves:* `I'd take ___, ___ and ___.` **(Core 66)** · `I'd regret leaving ___.` **(Core 71)**
 *Shared:* KR 9-2
@@ -862,14 +862,14 @@ choice → fair resale rules → hidden costs → value worth paying for
 *Shared:* KR 9-6
 
 **95. Going a week without your phone** `story`
-*Opens:* "Which part of a week with no optional phone use would be hardest?"
+*Opens:* "Which phone feature would you miss most for one week?"
 *Ladder:* hardest part → disrupted routine → hardest function to replace → possible improvement →
 best time for a break → safe support → essential function → habit worth redesigning
 *Moves:* `I'd last about ___.` **(Core 51)** `chunk` · `The hardest part would be ___.` **(Core 103)** `chunk`
 *Shared:* KR 9-7
 
 **96. What you would do if AI did your job** `story`
-*Opens:* "If AI handled all your usual tasks, how would you use the free time?"
+*Opens:* "If AI handled your usual tasks for a week, what would you do with the extra time?"
 *Ladder:* first use of time → three unstructured months → disclosure → role function that remains →
 self-chosen project → identity → tasks people still choose → work that should stay human
 *Moves:* `At first I'd ___.` **(Core 66)** · `After a month I'd probably ___.` **(Core 66)**
@@ -884,7 +884,7 @@ self-image and observer gap → inaccurate animal → context changes → classi
 *Shared:* KR 9-9
 
 **98. Growing up in another country** `story`
-*Opens:* "Which country would offer the most interesting different upbringing?"
+*Opens:* "If you had grown up in another country, which one would you choose?"
 *Ladder:* contrasting upbringing → concrete condition → identity → what would be missed → what might
 not be missed → language and belonging → childhood versus adult migration → what might remain stable
 *Moves:* `I'd want to grow up in ___.` **(Core 66)** · `I'd probably be ___.` **(Core 66)**
@@ -911,35 +911,35 @@ so the topic count does not grow. Each opening asks for a concrete judgment with
 money, work or regret, and each ladder leaves room for the tutor's real view.
 
 **101. How long should a social-media break last?** `opinion`
-*Opens:* "How long does a social-media break need to be before it changes anything?"
+*Opens:* "Would three days away from social media feel too short, too long, or about right?"
 *Ladder:* useful duration → first function missed → what deletion changes → hard-to-replace value →
 when usefulness becomes a time sink → healthy habits → advice for a fourteen-year-old
 *Moves:* `I'd last about ___.` **(Core 51)** `chunk` · `It's not so much ___ as ___.` **(Core 89)** `chunk`
 *Shared:* KR 10-1
 
 **102. What AI gets wrong about human work** `opinion`
-*Opens:* "Which part of human work is easiest for AI to misunderstand?"
+*Opens:* "What is one thing AI does badly when it tries to do human work?"
 *Ladder:* choose one role → missing context → one observable example → useful capability → blind spot
 → responsibility humans keep → how the role may change
 *Moves:* `It still can't ___.` **(Core 18)** · `That suggests that ___.` **(Core 99)** `chunk`
 *Shared:* KR 10-3
 
 **103. How much money is enough?** `opinion` `深く`
-*Opens:* "What does ‘enough money’ need to make possible?"
+*Opens:* "When someone says, ‘I have enough money,’ what do you imagine they can afford?"
 *Ladder:* first constraint removed → what money cannot solve → why needs differ → when money improves
 well-being → attention freed from worry → number, range or conditions → non-financial security
 *Moves:* `That's true up to a point, but ___.` `chunk` · `Overall, I'd say ___.` **(Core 117)** `chunk`
 *Shared:* KR 10-4
 
 **104. Is there a best age to be?** `opinion` `深く`
-*Opens:* "Which life stage seems most attractive to freeze in time?"
+*Opens:* "If you could stay one age for ten years, which age would you choose?"
 *Ladder:* strongest advantage → unavoidable cost → what the present offers → growth a frozen stage
 prevents → conditions that change the answer → can one age be best → what the present deserves
 *Moves:* `If anything, ___.` **(Core 116)** `chunk` · `That's true, but it doesn't account for ___.` **(Core 115)** `chunk`
 *Shared:* KR 10-5
 
 **105. A decision worth revisiting** `opinion` `深く`
-*Opens:* "Which decision from history, fiction or everyday life could have been handled differently?"
+*Opens:* "Would you rather change a movie ending or a real historical decision?"
 *Ladder:* alternative choice → would it work → actual gains and costs → alternative gains and costs →
 why the original made sense → useful regret → what “no regrets” really means
 *Moves:* `I'd have ___ differently.` `chunk` · `It still made sense at the time.` `chunk`
@@ -947,7 +947,7 @@ why the original made sense → useful regret → what “no regrets” really m
 learner choose a historical, fictional or everyday case instead of giving a prepared confession
 
 **106. What speaking English has made you notice** `opinion`
-*Opens:* "What difference between English and Japanese has become more noticeable since you started speaking English?"
+*Opens:* "What has speaking English made you notice about Japanese?"
 *Ladder:* one example → words, tone or silence → who you can speak with → hardest adjustment → biggest
 surprise → expression and identity → what may change next → would you choose the path again
 *Moves:* `I've noticed that ___.` **(Core 49)** · `Overall, it's made me ___.` **(Core 117)** `chunk`
@@ -972,14 +972,14 @@ pick and a reason** — otherwise it is a quiz.*
 **110. Morning person or night owl?** — *"For your most important tasks, would you rather start early or work late?"* `KR 11-4`
 **111. A planned trip or a spontaneous one?** — *"For a three-day trip, would you plan each day or decide as you go?"* `KR 11-5`
 **112. Travelling alone or with other people?** — *"For a new destination, would you rather travel alone or with someone?"* `KR 11-6`
-**113. Life in the city or the countryside?** — *"For everyday life, would you choose a lively city or a quiet rural area?"* `KR 11-7`
+**113. Life in the city or the countryside?** — *"For daily life, would you rather live in a busy city or a quiet town?"* `KR 11-7`
 **114. A summer without internet or air conditioning?** — *"For one summer, would you give up internet or air conditioning?"* `KR 11-8`
 **115. Better work-life balance or a higher salary?** — *"For the next year, would you choose more free time or a higher income?"* `KR 11-9`
 **116. Working from home or going into the office?** — *"For focused work, would you choose home or a shared workplace?"* `KR 11-10`
 **117. Studying in a café or at home?** — *"For two hours of serious study, would you choose a café or home?"* `KR 11-11`
 **118. Shopping online or in a shop?** — *"For an important purchase, would you rather buy online or in a shop?"* `KR 11-12`
 **119. Remembering everything or forgetting bad memories?** — *"Would you rather remember every ordinary detail or be able to forget painful memories?"* `KR 11-13`
-**120. Being rich and anonymous or respected on an ordinary income?** — *"Would you rather be wealthy and anonymous or respected on an ordinary income?"* `KR 11-14` `深く`
+**120. Being rich and anonymous or respected on an ordinary income?** — *"Would you rather be rich and unknown or respected on an average income?"* `KR 11-14` `深く`
 **121. Being great at one thing or good at many?** — *"Would you rather master one skill or become good at many?"* **NEW → KR**
 
 *Every entry's italic line is its `Opens:`* — each one converts an abstract either/or into a

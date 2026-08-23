@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/45-your-real-bedtime/lesson.html`
-- SHA-256: `c87f2edf1cdfbfca93804f1ef729becc780486e824c766e0a01e5c7bd78a3c26`
+- SHA-256: `63657e142a325b76d6cd2b712618e3f823d29b8c223e2b33e731375d4caceafc`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What time did you go to bed last night?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What time did you want to sleep?” rather than asking every follow-up.
-- Visible target or prompt: What time did you go to bed last night? 昨夜は何時に寝ましたか？
-- Learning target: Explore the distinct “Last night's bedtime (昨夜の就寝時間)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What time did you want to sleep?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What time did you want to sleep?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What time did you go to bed last night?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What decided what actually happened?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What time did you go to bed last night?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What time did you go to bed last night?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What time did you go to bed last night?” / “昨夜は何時に寝ましたか？” Tutor follow-ups: “What time did you want to sleep?” and “What decided what actually happened?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “昨夜は何時に寝ましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What time did you go to bed last night?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How did you spend the last hour before trying to sleep?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Did the activity have a clear stopping point?” rather than asking every follow-up.
-- Visible target or prompt: How did you spend the last hour before trying to sleep? 眠ろうとする前の最後の一時間を、どのように過ごしましたか？
-- Learning target: Explore the distinct “The last hour (最後の一時間)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Did the activity have a clear stopping point?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Did the activity have a clear stopping point?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How did you spend the last hour before trying to sleep?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why was it easy or hard to stop?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How did you spend the last hour before trying to sleep?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How did you spend the last hour before trying to sleep?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How did you spend the last hour before trying to sleep?” / “眠ろうとする前の最後の一時間を、どのように過ごしましたか？” Tutor follow-ups: “Did the activity have a clear stopping point?” and “Why was it easy or hard to stop?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “眠ろうとする前の最後の一時間を、どのように過ごしましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How did you spend the last hour before trying to sleep?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How predictable is your bedtime from day to day?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What causes the biggest variation?” rather than asking every follow-up.
-- Visible target or prompt: How predictable is your bedtime from day to day? 毎日の就寝時間は、どのくらい予測できますか？
-- Learning target: Explore the distinct “Your sleep pattern (睡眠のパターン)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What causes the biggest variation?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What causes the biggest variation?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How predictable is your bedtime from day to day?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part stays fairly stable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How predictable is your bedtime from day to day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How predictable is your bedtime from day to day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How predictable is your bedtime from day to day?” / “毎日の就寝時間は、どのくらい予測できますか？” Tutor follow-ups: “What causes the biggest variation?” and “Which part stays fairly stable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “毎日の就寝時間は、どのくらい予測できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How predictable is your bedtime from day to day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How does the time you sleep—or miss sleep—affect the following day?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part of the day changes first?” rather than asking every follow-up.
-- Visible target or prompt: How does the time you sleep—or miss sleep—affect the following day? 眠る時間、または眠れないことは、その後の一日にどう影響しますか？
-- Learning target: Explore the distinct “Does it matter? (問題になる？)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which part of the day changes first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part of the day changes first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How does the time you sleep—or miss sleep—affect the following day?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When does an unusual sleep time matter less?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How does the time you sleep—or miss sleep—affect the following day?"]}`
+- Learner action: Answer the standalone question “How does going to bed late affect the next day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How does going to bed late affect the next day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How does going to bed late affect the next day?” / “遅く寝ると、次の日にどんな影響がありますか？” Tutor follow-ups: “Which part of the day changes first?” and “When does a late night matter less?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “遅く寝ると、次の日にどんな影響がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How does going to bed late affect the next day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What change to your sleep schedule have you considered or tried?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why would the change be worthwhile?” rather than asking every follow-up.
-- Visible target or prompt: Conversation prompt: “Which change to your sleep schedule would be most worth trying?”
-- Learning target: Explore the distinct “Changing the schedule (時間帯を変える)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why would the change be worthwhile?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why would the change be worthwhile?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What change to your sleep schedule have you considered or tried?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes it difficult to maintain?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which change to your sleep schedule would be most worth trying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which change to your sleep schedule would be most worth trying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which change to your sleep schedule would be most worth trying?” / “あなたの睡眠の時間帯で、いちばん試す価値がある変化は何ですか？” Tutor follow-ups: “Why could the change be worthwhile?” and “What would make it difficult to maintain?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたの睡眠の時間帯で、いちばん試す価値がある変化は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which change to your sleep schedule would be most worth trying?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What most often delays or shifts your sleep?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is it a task, a habit, or needed private time?” rather than asking every follow-up.
-- Visible target or prompt: What most often delays or shifts your sleep? 何が原因で、眠る時間が遅れたりずれたりしますか？
-- Learning target: Explore the distinct “What gets in the way (邪魔するもの)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Is it a task, a habit, or needed private time?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is it a task, a habit, or needed private time?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What most often delays or shifts your sleep?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part could happen at a different time?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What most often delays or shifts your sleep?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What most often delays or shifts your sleep?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What most often delays or shifts your sleep?” / “何が原因で、眠る時間が遅れたりずれたりしますか？” Tutor follow-ups: “Is it a task, a habit, or needed private time?” and “Which part could happen at a different time?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “何が原因で、眠る時間が遅れたりずれたりしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What most often delays or shifts your sleep?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which small change seems most likely to improve your rest?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why does it seem realistic?” rather than asking every follow-up.
-- Visible target or prompt: Which small change seems most likely to improve your rest? どの小さな変化が、休息をいちばん改善できそうですか？
-- Learning target: Explore the distinct “A useful change (役立つ変化)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why does it seem realistic?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does it seem realistic?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which small change seems most likely to improve your rest?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What obstacle would it need to overcome?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which small change seems most likely to improve your rest?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which small change seems most likely to improve your rest?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which small change seems most likely to improve your rest?” / “どの小さな変化が、休息をいちばん改善できそうですか？” Tutor follow-ups: “Why does it seem realistic?” and “What obstacle would it need to overcome?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの小さな変化が、休息をいちばん改善できそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which small change seems most likely to improve your rest?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would a realistic, restful wind-down routine look like for you?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When would you start to wind down?” rather than asking every follow-up.
-- Visible target or prompt: What would a realistic, restful wind-down routine look like for you? 無理なく続けられ、しっかり休むことにもつながる、眠る前の過ごし方はどのようなものですか？
-- Learning target: Explore the distinct “A realistic routine (現実的な習慣)” angle of “Your real bedtime” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When would you start to wind down?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When would you start to wind down?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would a realistic, restful wind-down routine look like for you?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would you deliberately leave until later?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would a realistic, restful wind-down routine look like for you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would a realistic, restful wind-down routine look like for you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would a realistic, restful wind-down routine look like for you?” / “無理なく続けられ、しっかり休むことにもつながる、眠る前の過ごし方はどのようなものですか？” Tutor follow-ups: “When would you start to wind down?” and “What would you stop doing before bed?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “無理なく続けられ、しっかり休むことにもつながる、眠る前の過ごし方はどのようなものですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would a realistic, restful wind-down routine look like for you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/79-something-you-hated-as-a-child-but-love-now/lesson.html`
-- SHA-256: `1e73a7fad878b7bd08dd52196724435801b4718416832262a92435aa4b0088bf`
+- SHA-256: `e1c56d91d0492e5d39ee6cb680098a9cb85695381fc78a782a06f198f5c2aa8d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “Which childhood food aversion most often turns into adult enjoyment?” and expand the most interesting detail.
-- Tutor action: Ask “Which childhood food aversion most often turns into adult enjoyment?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which childhood food aversion most often turns into adult enjoyment? / 子どもの頃の食べ物嫌いで、大人になると好みに変わりやすいものは何ですか？ Follow-up pool: Which feature creates the early aversion? What later experience can reverse it?
-- Learning target: Develop the opening angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “opening” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which childhood food aversion most often turns into adult enjoyment?"]}`
+- Learner action: Answer the standalone question “Which childhood food dislike often turns into real enjoyment later?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which childhood food dislike often turns into real enjoyment later?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which childhood food dislike often turns into real enjoyment later?” / “子どもの頃は嫌いでも、後で本当に好きになることの多い食べ物は何ですか？” Tutor follow-ups: “Is the taste, smell, or texture hard for children?” and “Why do children's tastes change as they grow?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “子どもの頃は嫌いでも、後で本当に好きになることの多い食べ物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which childhood food dislike often turns into real enjoyment later?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which feature created the dislike in the chosen example?” and expand the most interesting detail.
-- Tutor action: Ask “Which feature created the dislike in the chosen example?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which feature created the dislike in the chosen example? / 選んだ例では、どの特徴が嫌いな気持ちを生みましたか？ Follow-up pool: Was one version especially bad? Did anyone pressure them to eat it?
-- Learning target: Develop the detail angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “detail” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which feature created the dislike in the chosen example?"]}`
+- Learner action: Answer the standalone question “Which part of a food—taste, smell, texture, or appearance—is hardest to get past?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of a food—taste, smell, texture, or appearance—is hardest to get past?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of a food—taste, smell, texture, or appearance—is hardest to get past?” / “食べ物の味、匂い、食感、見た目のうち、最も慣れにくいものは何ですか？” Tutor follow-ups: “Which food shows that best?” and “Can one bad meal create a lasting dislike?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “食べ物の味、匂い、食感、見た目のうち、最も慣れにくいものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of a food—taste, smell, texture, or appearance—is hardest to get past?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “When did the preference shift, or what has kept the dislike stable?” and expand the most interesting detail.
-- Tutor action: Ask “When did the preference shift, or what has kept the dislike stable?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: When did the preference shift, or what has kept the dislike stable? / 好みはいつ変化しましたか。それとも、何が嫌いなままにしていますか？ Follow-up pool: Did the shift happen abruptly or gradually? Which condition sustained the earlier dislike?
-- Learning target: Develop the timing angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “timing” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When did the preference shift, or what has kept the dislike stable?"]}`
+- Learner action: Answer the standalone question “What experience can completely change someone's opinion of a food?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What experience can completely change someone's opinion of a food?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What experience can completely change someone's opinion of a food?” / “どんな経験が、食べ物への考えを完全に変えることがありますか？” Tutor follow-ups: “What can help the taste seem different?” and “Does age or preparation matter more?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな経験が、食べ物への考えを完全に変えることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What experience can completely change someone's opinion of a food?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Which experience can transform the response to that food?” and expand the most interesting detail.
-- Tutor action: Ask “Which experience can transform the response to that food?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which experience can transform the response to that food? / どんな経験が、その食べ物への反応を変えられますか？ Follow-up pool: Which preparation, person, or setting matters most? What conditions make renewed exposure useful?
-- Learning target: Develop the cause angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “cause” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which experience can transform the response to that food?"]}`
+- Learner action: Answer the standalone question “How much can the cook or setting change the way a food tastes?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How much can the cook or setting change the way a food tastes?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How much can the cook or setting change the way a food tastes?” / “作る人や食べる場所によって、食べ物の味わいはどのくらい変わりますか？” Tutor follow-ups: “Which change in preparation matters most?” and “Can company or setting change the taste too?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “作る人や食べる場所によって、食べ物の味わいはどのくらい変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much can the cook or setting change the way a food tastes?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Which food aversion tends to resist repeated exposure?” and expand the most interesting detail.
-- Tutor action: Ask “Which food aversion tends to resist repeated exposure?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which food aversion tends to resist repeated exposure? / 繰り返し試しても変わりにくい食べ物嫌いは何ですか？ Follow-up pool: What makes that different? Would the person ever try it again?
-- Learning target: Develop the still-no angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “still-no” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which food aversion tends to resist repeated exposure?"]}`
+- Learner action: Answer the standalone question “Which food dislike is hardest to change?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which food dislike is hardest to change?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which food dislike is hardest to change?” / “最も変わりにくい食べ物の苦手意識は何ですか？” Tutor follow-ups: “Why do some dislikes stay strong?” and “Would bitter food or food with a strong smell be a good example?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最も変わりにくい食べ物の苦手意識は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which food dislike is hardest to change?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Which adult preference would most surprise the child in the example?” and expand the most interesting detail.
-- Tutor action: Ask “Which adult preference would most surprise the child in the example?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which adult preference would most surprise the child in the example? / その例の子どもが最も驚きそうな大人の好みは何ですか？ Follow-up pool: Is it the flavour or the setting? What would surprise the child most?
-- Learning target: Develop the reverse angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “reverse” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which adult preference would most surprise the child in the example?"]}`
+- Learner action: Answer the standalone question “Which adult food preference would surprise a child most?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which adult food preference would surprise a child most?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which adult food preference would surprise a child most?” / “大人の食べ物の好みで、子どもが最も驚きそうなものは何ですか？” Tutor follow-ups: “What part seems strange to children?” and “What might make it appealing later?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大人の食べ物の好みで、子どもが最も驚きそうなものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which adult food preference would surprise a child most?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Where is the boundary between inviting someone to try and pressuring them?” and expand the most interesting detail.
-- Tutor action: Ask “Where is the boundary between inviting someone to try and pressuring them?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Where is the boundary between inviting someone to try and pressuring them? / 試してみるよう勧めることと、無理に迫ることの境界はどこですか？ Follow-up pool: What is friendly encouragement? What becomes pressure?
-- Learning target: Develop the respect angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “respect” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where is the boundary between inviting someone to try and pressuring them?"]}`
+- Learner action: Answer the standalone question “When does friendly encouragement to try food become pressure?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When does friendly encouragement to try food become pressure?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When does friendly encouragement to try food become pressure?” / “食べ物を試すよう親切に勧めることが、プレッシャーになるのはいつですか？” Tutor follow-ups: “What kind of encouragement is okay?” and “What sign means the person wants you to stop?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “食べ物を試すよう親切に勧めることが、プレッシャーになるのはいつですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does friendly encouragement to try food become pressure?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “Which current dislike in the chosen example might the person's sixty-year-old self outgrow?” and expand the most interesting detail.
-- Tutor action: Ask “Which current dislike in the chosen example might the person's sixty-year-old self outgrow?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which current dislike in the chosen example might the person's sixty-year-old self outgrow? / 選んだ例で今嫌いなもののうち、その人が六十歳までに克服しそうなものは何ですか？ Follow-up pool: Why might that taste change? Which preference might stay the same?
-- Learning target: Develop the flip angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “flip” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which current dislike in the chosen example might the person's sixty-year-old self outgrow?"]}`
+- Learner action: Answer the standalone question “Which of your current food dislikes has the best chance of changing?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which of your current food dislikes has the best chance of changing?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which of your current food dislikes has the best chance of changing?” / “今苦手な食べ物のうち、最も好きになりそうなものは何ですか？” Tutor follow-ups: “Could a new recipe change your mind?” and “Which strong taste do people often learn to enjoy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今苦手な食べ物のうち、最も好きになりそうなものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which of your current food dislikes has the best chance of changing?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

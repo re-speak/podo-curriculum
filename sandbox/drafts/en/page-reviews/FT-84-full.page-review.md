@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-full/lessons/84-one-day-you-would-go-back-to/lesson.html`
-- SHA-256: `c97dec0727c5664b5fc105bd2223b7ec163f8b6251bd5aa1976389ffe37cd0fb`
+- SHA-256: `2479408c121e2a54546ffe71d47b9af7ba59063d139786f733a9f342f4ae716a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “You may witness one day in the past. Which day is worth the journey?” and expand the most interesting detail.
-- Tutor action: Ask “You may witness one day in the past. Which day is worth the journey?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: You may witness one day in the past. Which day is worth the journey? / 過去の一日を目撃できます。旅をする価値があるのはどの日ですか？ Follow-up pool: What gives that day its significance? Where would the visitor enter the scene?
-- Learning target: Develop the opening angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “opening” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["You may witness one day in the past. Which day is worth the journey?"]}`
+- Learner action: Answer the standalone question “If you could witness one day in the past, which day would be worth seeing?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you could witness one day in the past, which day would be worth seeing?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you could witness one day in the past, which day would be worth seeing?” / “過去の一日を目撃できるなら、どの日を見る価値がありますか？” Tutor follow-ups: “Would you choose a personal day or a famous event?” and “Where would you arrive?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “過去の一日を目撃できるなら、どの日を見る価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you could witness one day in the past, which day would be worth seeing?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which events define the chosen day?” and expand the most interesting detail.
-- Tutor action: Ask “Which events define the chosen day?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which events define the chosen day? / どんな出来事が、その日を特徴づけていますか？ Follow-up pool: Which people shape the day? Where would attention first settle?
-- Learning target: Develop the setting angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “setting” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which events define the chosen day?"]}`
+- Learner action: Answer the standalone question “Would an ordinary day or a famous day reveal more about the past?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would an ordinary day or a famous day reveal more about the past?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would an ordinary day or a famous day reveal more about the past?” / “普通の一日と有名な日のどちらが、過去についてより多くを教えてくれますか？” Tutor follow-ups: “Would an ordinary family day or a famous event be more interesting?” and “What would you watch first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “普通の一日と有名な日のどちらが、過去についてより多くを教えてくれますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would an ordinary day or a famous day reveal more about the past?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “What insight would make witnessing that day worthwhile?” and expand the most interesting detail.
-- Tutor action: Ask “What insight would make witnessing that day worthwhile?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: What insight would make witnessing that day worthwhile? / どんな理解が得られれば、その日を見る価値がありますか？ Follow-up pool: Which uncertainty deserves an answer? What bias might the present-day observer bring?
-- Learning target: Develop the purpose angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “purpose” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What insight would make witnessing that day worthwhile?"]}`
+- Learner action: Answer the standalone question “What mystery could one day in the past help solve?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What mystery could one day in the past help solve?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What mystery could one day in the past help solve?” / “過去の一日を見ることで、どんな謎を解けそうですか？” Tutor follow-ups: “Would you want to understand a person or an event?” and “What might a visitor still get wrong?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “過去の一日を見ることで、どんな謎を解けそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What mystery could one day in the past help solve?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Would you remain an observer or intervene in the day?” and expand the most interesting detail.
-- Tutor action: Ask “Would you remain an observer or intervene in the day?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Would you remain an observer or intervene in the day? / 観察者のままでいますか、それともその日に介入しますか？ Follow-up pool: Which consequence could intervention create? What would disciplined observation preserve?
-- Learning target: Develop the choice angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “choice” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you remain an observer or intervene in the day?"]}`
+- Learner action: Answer the standalone question “If a visit to the past allowed one action, would you observe or step in?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If a visit to the past allowed one action, would you observe or step in?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If a visit to the past allowed one action, would you observe or step in?” / “過去への訪問で一つ行動できるなら、見るだけにしますか、それとも関わりますか？” Tutor follow-ups: “What could change if the visitor stepped in?” and “What could they learn by only watching?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “過去への訪問で一つ行動できるなら、見るだけにしますか、それとも関わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If a visit to the past allowed one action, would you observe or step in?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Whose presence would matter most during the visit?” and expand the most interesting detail.
-- Tutor action: Ask “Whose presence would matter most during the visit?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Whose presence would matter most during the visit? / その訪問で、誰の存在が最も重要ですか？ Follow-up pool: Which detail about them would you study? How might the encounter challenge your assumptions?
-- Learning target: Develop the person angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “person” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Whose presence would matter most during the visit?"]}`
+- Learner action: Answer the standalone question “Whose ordinary day would tell you more than a formal interview?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Whose ordinary day would tell you more than a formal interview?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Whose ordinary day would tell you more than a formal interview?” / “正式なインタビューより、誰の普通の一日のほうが多くを教えてくれますか？” Tutor follow-ups: “What would you want to notice about that person?” and “Would a relative or a famous person be more interesting?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “正式なインタビューより、誰の普通の一日のほうが多くを教えてくれますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Whose ordinary day would tell you more than a formal interview?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Which question would be worth asking across time?” and expand the most interesting detail.
-- Tutor action: Ask “Which question would be worth asking across time?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Which question would be worth asking across time? / 時を越えて尋ねる価値のある質問は何ですか？ Follow-up pool: Why does that question deserve the limited time? How might historical context shape the answer?
-- Learning target: Develop the message angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “message” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which question would be worth asking across time?"]}`
+- Learner action: Answer the standalone question “What would you ask someone from the past?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you ask someone from the past?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you ask someone from the past?” / “過去の人に何を聞きたいですか？” Tutor follow-ups: “Would you ask about daily life or an important event?” and “What answer might surprise you?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “過去の人に何を聞きたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you ask someone from the past?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “How might the visit alter the way you see the present?” and expand the most interesting detail.
-- Tutor action: Ask “How might the visit alter the way you see the present?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: How might the visit alter the way you see the present? / その訪問は、現在の見方をどう変えるかもしれませんか？ Follow-up pool: Which present belief might shift? What new uncertainty could the visit create?
-- Learning target: Develop the effect angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “effect” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might the visit alter the way you see the present?"]}`
+- Learner action: Answer the standalone question “What part of the present might feel different after seeing the past directly?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of the present might feel different after seeing the past directly?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of the present might feel different after seeing the past directly?” / “過去を直接見た後、現在のどんな部分が違って感じられるでしょうか？” Tutor follow-ups: “Would the present seem easier or harder?” and “Could seeing an ordinary past day change your view?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “過去を直接見た後、現在のどんな部分が違って感じられるでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of the present might feel different after seeing the past directly?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “What makes remaining in the present more valuable than revisiting the past?” and expand the most interesting detail.
-- Tutor action: Ask “What makes remaining in the present more valuable than revisiting the past?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: What makes remaining in the present more valuable than revisiting the past? / 過去を再訪するより、今にいるほうが価値があるのはなぜですか？ Follow-up pool: What deserves attention now? Can acceptance be more useful than an answer?
-- Learning target: Develop the flip angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “flip” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes remaining in the present more valuable than revisiting the past?"]}`
+- Learner action: Answer the standalone question “When might accepting the past be more useful than seeing it again?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When might accepting the past be more useful than seeing it again?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When might accepting the past be more useful than seeing it again?” / “過去をもう一度見るより、受け入れるほうが役立つのはどんなときですか？” Tutor follow-ups: “What could a person focus on in the present?” and “What might they gain by leaving the past alone?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “過去をもう一度見るより、受け入れるほうが役立つのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When might accepting the past be more useful than seeing it again?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

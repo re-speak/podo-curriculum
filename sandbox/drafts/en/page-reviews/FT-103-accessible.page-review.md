@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-accessible/lessons/103-how-much-money-is-enough/lesson.html`
-- SHA-256: `bcd43032fecb3e54f399f5536388a1f5ad03d60b6090d546b054d974b9689f87`
+- SHA-256: `0c76f7caff7c75b0c90fb36f4709a0363f440f893076c007eeed4e109cbb44f9`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What does ‘enough money’ need to make possible?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What does ‘enough money’ need to make possible?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: What does ‘enough money’ need to make possible? / 「十分なお金」によって、何が可能になる必要がありますか？ Follow-up pool: Why is that freedom important? What would count as enough protection?
-- Learning target: Develop the distinct “opening” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “What enough makes possible” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “What does ‘enough money’ need to make possible?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “「十分なお金」によって、何が可能になる必要がありますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What does ‘enough money’ need to make possible?"]}`
+- Learner action: Answer the standalone question “When someone says, ‘I have enough money,’ what do you imagine they can afford?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When someone says, ‘I have enough money,’ what do you imagine they can afford?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When someone says, ‘I have enough money,’ what do you imagine they can afford?” / “誰かが「十分なお金がある」と言うとき、何を無理なく払えると想像しますか？” Tutor follow-ups: “Which cost matters most?” and “Would a home and emergency savings count as enough?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰かが「十分なお金がある」と言うとき、何を無理なく払えると想像しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When someone says, ‘I have enough money,’ what do you imagine they can afford?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which constraint should money remove first?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which constraint should money remove first?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which constraint should money remove first? / お金によって最初になくなるべき制約は何ですか？ Follow-up pool: Would it affect time, housing, care, or another need? How quickly would the change appear?
-- Learning target: Develop the distinct “change” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The first constraint removed” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which constraint should money remove first?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “お金によって最初になくなるべき制約は何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which constraint should money remove first?"]}`
+- Learner action: Answer the standalone question “Which money worry would you remove first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which money worry would you remove first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which money worry would you remove first?” / “お金の心配を一つなくせるなら、最初にどれをなくしますか？” Tutor follow-ups: “How would removing that worry change daily life?” and “Which is more stressful: an unexpected bill or rising monthly costs?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金の心配を一つなくせるなら、最初にどれをなくしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which money worry would you remove first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Which important problem remains outside money's reach?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which important problem remains outside money's reach?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which important problem remains outside money's reach? / どんな重要な問題が、お金だけでは解決できませんか？ Follow-up pool: Could money still help indirectly? What different support would matter?
-- Learning target: Develop the distinct “same” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Outside money's reach” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which important problem remains outside money's reach?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どんな重要な問題が、お金だけでは解決できませんか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which important problem remains outside money's reach?"]}`
+- Learner action: Answer the standalone question “What's something important that more money can't fix?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's something important that more money can't fix?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's something important that more money can't fix?” / “お金が増えても解決できない大切なことは何ですか？” Tutor follow-ups: “Could money still help indirectly?” and “Can money buy trust?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金が増えても解決できない大切なことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's something important that more money can't fix?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Why can two households need very different amounts to feel secure?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Why can two households need very different amounts to feel secure?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Why can two households need very different amounts to feel secure? / 二つの世帯が安心するために必要な金額が大きく違うのはなぜですか？ Follow-up pool: Which cost varies most? How do responsibilities change the answer?
-- Learning target: Develop the distinct “example” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Different needs” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Why can two households need very different amounts to feel secure?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “二つの世帯が安心するために必要な金額が大きく違うのはなぜですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can two households need very different amounts to feel secure?"]}`
+- Learner action: Answer the standalone question “Why can the same income feel enough for one person but not another?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can the same income feel enough for one person but not another?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can the same income feel enough for one person but not another?” / “同じ収入でも、一人には十分で、別の人には足りないと感じるのはなぜですか？” Tutor follow-ups: “Which cost varies most?” and “Who usually needs more money: one person or a family of four?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “同じ収入でも、一人には十分で、別の人には足りないと感じるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can the same income feel enough for one person but not another?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “When does money improve well-being most?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “When does money improve well-being most?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: When does money improve well-being most? / お金は、どんなときに幸福を最も高めますか？ Follow-up pool: Which need is being met? When does extra money matter less?
-- Learning target: Develop the distinct “happiness” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Money and well-being” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “When does money improve well-being most?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “お金は、どんなときに幸福を最も高めますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does money improve well-being most?"]}`
+- Learner action: Answer the standalone question “When does extra money make the biggest difference?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When does extra money make the biggest difference?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When does extra money make the biggest difference?” / “お金が増えることが最も大きな違いを生むのは、どんなときですか？” Tutor follow-ups: “Which need is being met?” and “Does extra money matter more for rent or entertainment?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金が増えることが最も大きな違いを生むのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does extra money make the biggest difference?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Where could attention go when money worries take less of it?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Where could attention go when money worries take less of it?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Where could attention go when money worries take less of it? / お金の心配が減ると、注意をどこに向けられますか？ Follow-up pool: Would rest, care, learning, or work change? What would still demand attention?
-- Learning target: Develop the distinct “attention” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Attention after worry” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Where could attention go when money worries take less of it?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “お金の心配が減ると、注意をどこに向けられますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where could attention go when money worries take less of it?"]}`
+- Learner action: Answer the standalone question “If you worried less about money, what would you spend more time thinking about?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you worried less about money, what would you spend more time thinking about?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you worried less about money, what would you spend more time thinking about?” / “お金の心配が減ったら、何について考える時間を増やしたいですか？” Tutor follow-ups: “Why would that deserve more attention?” and “Would you use the extra focus for rest, family, or learning?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金の心配が減ったら、何について考える時間を増やしたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you worried less about money, what would you spend more time thinking about?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Is enough best defined by a number, a range, or a set of conditions?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Is enough best defined by a number, a range, or a set of conditions?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Is enough best defined by a number, a range, or a set of conditions? / 「十分」は、金額、範囲、または条件の組み合わせのどれで最もよく定義できますか？ Follow-up pool: Which condition matters most? When should the definition move?
-- Learning target: Develop the distinct “definition” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A number or conditions” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Is enough best defined by a number, a range, or a set of conditions?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “「十分」は、金額、範囲、または条件の組み合わせのどれで最もよく定義できますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is enough best defined by a number, a range, or a set of conditions?"]}`
+- Learner action: Answer the standalone question “Would you rather have a fixed amount saved or reliable income every month?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you rather have a fixed amount saved or reliable income every month?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you rather have a fixed amount saved or reliable income every month?” / “決まった額の貯金と、毎月の安定した収入のどちらがよいですか？” Tutor follow-ups: “Why does your choice feel safer?” and “What's one bill people need to plan for every month?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “決まった額の貯金と、毎月の安定した収入のどちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather have a fixed amount saved or reliable income every month?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “Which kind of security matters most besides money?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which kind of security matters most besides money?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which kind of security matters most besides money? / お金以外では、どんな安心が最も重要ですか？ Follow-up pool: Can it reduce the amount of money needed? How could someone strengthen it?
-- Learning target: Develop the distinct “flip” angle of How much money is enough? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Security beyond money” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which kind of security matters most besides money?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “お金以外では、どんな安心が最も重要ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of security matters most besides money?"]}`
+- Learner action: Answer the standalone question “What kind of security matters most besides money?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of security matters most besides money?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of security matters most besides money?” / “お金以外では、どんな安心が最も重要ですか？” Tutor follow-ups: “How can that kind of security help?” and “Which gives more security: good health or people you can rely on?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金以外では、どんな安心が最も重要ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of security matters most besides money?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

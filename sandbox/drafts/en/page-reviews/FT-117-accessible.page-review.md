@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/117-studying-in-a-cafe-or-at-home/lesson.html`
-- SHA-256: `34fa6f6d1b395d0e6a4236cf4507ade856cd7df6ed4579677eb414d2e8d5381c`
+- SHA-256: `ecbeff2a7b2e70f5e7e3ca0ab06357b487c862d4be14f763ce7fe126b29c8029`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What makes a place easy to concentrate in?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What makes a place easy to concentrate in?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What makes a place easy to concentrate in?” / “集中しやすい場所には、どんな特徴がありますか？” Follow-ups: “Does sound help or hurt?” and “Would you return there?”
-- Learning target: Develop the distinct “Your best focus” angle of Studying in a café or at home? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Your best focus” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What makes a place easy to concentrate in?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “集中しやすい場所には、どんな特徴がありますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “What makes a place easy to concentrate in?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a place easy to concentrate in?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a place easy to concentrate in?” / “集中しやすい場所には、どんな特徴がありますか？” Tutor follow-ups: “Do you focus better alone or around other people?” and “Which helps more: silence or a little background noise?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “集中しやすい場所には、どんな特徴がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a place easy to concentrate in?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Where would you sit to finish one important task in an hour?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Where would you sit to finish one important task in an hour?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Where would you sit to finish one important task in an hour?” / “一時間で大切な作業を終えるなら、どこに座りますか？” Follow-ups: “What task would it be?” and “Would a longer session change the place?”
-- Learning target: Develop the distinct “One focused hour” angle of Studying in a café or at home? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “One focused hour” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Where would you sit to finish one important task in an hour?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一時間で大切な作業を終えるなら、どこに座りますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “Where would you sit to finish one important task in an hour?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Where would you sit to finish one important task in an hour?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Where would you sit to finish one important task in an hour?” / “一時間で大切な作業を終えるなら、どこに座りますか？” Tutor follow-ups: “What important task would you choose?” and “Would you choose a desk at home or a quiet cafe?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一時間で大切な作業を終えるなら、どこに座りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where would you sit to finish one important task in an hour?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For two hours of serious study, would you choose a café or home?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For two hours of serious study, would you choose a café or home?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For two hours of serious study, would you choose a café or home?” / “二時間しっかり勉強するなら、カフェと家のどちらを選びますか？” Follow-ups: “What would you bring?” and “What is the best feature of the other place?”
-- Learning target: Develop the distinct “Café or home” angle of Studying in a café or at home? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Café or home” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For two hours of serious study, would you choose a café or home?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “二時間しっかり勉強するなら、カフェと家のどちらを選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “For two hours of serious study, would you choose a café or home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For two hours of serious study, would you choose a café or home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For two hours of serious study, would you choose a café or home?” / “二時間しっかり勉強するなら、カフェと家のどちらを選びますか？” Tutor follow-ups: “What would you bring?” and “Which place has fewer distractions for you?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “二時間しっかり勉強するなら、カフェと家のどちらを選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For two hours of serious study, would you choose a café or home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How would your routine change if you used only that place for a month?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would your routine change if you used only that place for a month?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would your routine change if you used only that place for a month?” / “一か月その場所だけで勉強したら、習慣はどう変わりますか？” Follow-ups: “Would the start time change?” and “What would happen when focus broke?”
-- Learning target: Develop the distinct “One place for a month” angle of Studying in a café or at home? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “One place for a month” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would your routine change if you used only that place for a month?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一か月その場所だけで勉強したら、習慣はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would your routine change if you used only that place for a month?"]}`
+- Learner action: Answer the standalone question “What's hardest about studying in a café?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's hardest about studying in a café?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's hardest about studying in a café?” / “カフェで勉強する一番難しいところは何ですか？” Tutor follow-ups: “What makes the cafe worth using anyway?” and “Which cafe noise is hardest to ignore: music or conversations?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “カフェで勉強する一番難しいところは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's hardest about studying in a café?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Would you keep using a quiet café if you had to buy a drink every time?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would you keep using a quiet café if you had to buy a drink every time?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would you keep using a quiet café if you had to buy a drink every time?” / “静かなカフェでも毎回飲み物を買うなら、通い続けますか？” Follow-ups: “What if there were no seat?” and “Would daily visits stay effective?”
-- Learning target: Develop the distinct “The price of a seat” angle of Studying in a café or at home? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “The price of a seat” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would you keep using a quiet café if you had to buy a drink every time?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “静かなカフェでも毎回飲み物を買うなら、通い続けますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “Would you keep using a quiet café if you had to buy a drink every time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you keep using a quiet café if you had to buy a drink every time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you keep using a quiet café if you had to buy a drink every time?” / “静かなカフェでも毎回飲み物を買うなら、通い続けますか？” Tutor follow-ups: “Would you stay longer to make the drink feel worth it?” and “Would a free library be a better choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “静かなカフェでも毎回飲み物を買うなら、通い続けますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you keep using a quiet café if you had to buy a drink every time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would a good desk and lighting at home change your choice?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would a good desk and lighting at home change your choice?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would a good desk and lighting at home change your choice?” / “家に良い机と照明ができたら、選択は変わりますか？” Follow-ups: “What else would the room need?” and “Would you still visit cafés sometimes?”
-- Learning target: Develop the distinct “A better home setup” angle of Studying in a café or at home? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A better home setup” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would a good desk and lighting at home change your choice?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “家に良い机と照明ができたら、選択は変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a good desk and lighting at home change your choice?"]}`
+- Learner action: Answer the standalone question “Would a good desk and lighting at home make you stop using cafés?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would a good desk and lighting at home make you stop using cafés?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would a good desk and lighting at home make you stop using cafés?” / “家に良い机と照明があれば、カフェを使わなくなりますか？” Tutor follow-ups: “What else would the room need?” and “Would you still visit a cafe for a change of mood?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家に良い机と照明があれば、カフェを使わなくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a good desk and lighting at home make you stop using cafés?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which task or room condition would make you switch places?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which task or room condition would make you switch places?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which task or room condition would make you switch places?” / “どんな課題や空間なら、反対の場所を選びますか？” Follow-ups: “Would group work change it?” and “Would a longer session change it?”
-- Learning target: Develop the distinct “Task and setting” angle of Studying in a café or at home? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Task and setting” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which task or room condition would make you switch places?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな課題や空間なら、反対の場所を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which task or room condition would make you switch places?"]}`
+- Learner action: Answer the standalone question “What kind of task is best done at home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of task is best done at home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of task is best done at home?” / “どんな課題が、家でするのに最も合っていますか？” Tutor follow-ups: “Why does home suit that task?” and “Which needs more privacy: writing or a video call?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな課題が、家でするのに最も合っていますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of task is best done at home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose studying in a café or studying at home, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose studying in a café or studying at home, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose studying in a café or studying at home, and why.” / “チューターならカフェで勉強することと家で勉強することのどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which study task would your tutor take to a café?” and “What makes home difficult for them?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターならカフェで勉強することと家で勉強することのどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose studying in a café or studying at home, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which study task would your tutor take to a cafe?” and “Would a video call change the choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/13-your-plans-for-this-weekend/lesson.html`
-- SHA-256: `df9940ea0d88892ee62aeb55e72572e8de9e81da87fe2ce8f1f04fffdeefac74`
+- SHA-256: `6222cc268a389a4fe33f81db7981e9e9efa89864c721e159a733d2ce7984d3dd`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “How are you feeling about this weekend?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Are you hoping to rest or do something?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How are you feeling about this weekend? 今週末について、今どんな気持ちですか？
-- Learning target: Explore the distinct “This weekend (今週末)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How are you feeling about this weekend?” opens this angle; “Are you hoping to rest or do something?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Are you hoping to rest or do something?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How are you feeling about this weekend?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make it feel different from a weekday?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “How are you feeling about this weekend?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How are you feeling about this weekend?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How are you feeling about this weekend?” / “今週末について、今どんな気持ちですか？” Tutor follow-ups: “Are you hoping to rest or do something?” and “What would make it feel different from a weekday?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今週末について、今どんな気持ちですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How are you feeling about this weekend?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “What would make this weekend feel well spent?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Do you need rest, activity, or both?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What would make this weekend feel well spent? 何ができたら、よい週末だったと思えますか？
-- Learning target: Explore the distinct “A good weekend (よい週末)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What would make this weekend feel well spent?” opens this angle; “Do you need rest, activity, or both?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Do you need rest, activity, or both?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What would make this weekend feel well spent?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do you want to avoid?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “What would make this weekend feel well spent?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would make this weekend feel well spent?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would make this weekend feel well spent?” / “今週末を有意義だったと感じるには、何があればよいですか？” Tutor follow-ups: “What would leave you feeling refreshed?” and “What would make the weekend feel wasted?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今週末を有意義だったと感じるには、何があればよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make this weekend feel well spent?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “How much of the weekend is planned already?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would you add if nothing is fixed?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “How much structure would your ideal weekend have?”
-- Learning target: Explore the distinct “The full plan (全体の予定)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How much of the weekend is planned already?” opens this angle; “What would you add if nothing is fixed?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would you add if nothing is fixed?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How much of the weekend is planned already?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How much time do you want to leave open?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much structure would your ideal weekend have?"]}`
+- Learner action: Answer the standalone question “Do you like weekends planned or open?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Do you like weekends planned or open?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Do you like weekends planned or open?” / “週末は予定を決めたいですか、それとも空けておきたいですか？” Tutor follow-ups: “Which plans benefit from structure?” and “When does an open day feel better?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “週末は予定を決めたいですか、それとも空けておきたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you like weekends planned or open?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “Who will you spend time with, if anyone?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What do you enjoy about that choice?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Would you rather spend more of this weekend alone or with someone?”
-- Learning target: Explore the distinct “Who with (誰と)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Who will you spend time with, if anyone?” opens this angle; “What do you enjoy about that choice?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What do you enjoy about that choice?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Who will you spend time with, if anyone?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would you prefer more time alone or with others?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather spend more of this weekend alone or with someone?"]}`
+- Learner action: Answer the standalone question “Which sounds better this weekend: time alone or time with someone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which sounds better this weekend: time alone or time with someone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which sounds better this weekend: time alone or time with someone?” / “今週末は、一人の時間と誰かと過ごす時間のどちらがよさそうですか？” Tutor follow-ups: “What kind of company would fit your mood?” and “How much time alone would you still want?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今週末は、一人の時間と誰かと過ごす時間のどちらがよさそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which sounds better this weekend: time alone or time with someone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “What are you most looking forward to, even if you have no fixed plan?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Why does that part matter now?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What part of this weekend are you most looking forward to?”
-- Learning target: Explore the distinct “Looking forward (楽しみなこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What are you most looking forward to, even if you have no fixed plan?” opens this angle; “Why does that part matter now?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Why does that part matter now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What are you most looking forward to, even if you have no fixed plan?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make it even better?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of this weekend are you most looking forward to?"]}`
+- Learner action: Answer the standalone question “What's one simple thing you would enjoy this weekend?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one simple thing you would enjoy this weekend?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one simple thing you would enjoy this weekend?” / “今週末に楽しめそうな、簡単なことを一つ挙げるとしたら何ですか？” Tutor follow-ups: “Why does that sound good right now?” and “Who, if anyone, would you invite?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今週末に楽しめそうな、簡単なことを一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one simple thing you would enjoy this weekend?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “What could change how you spend the weekend?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would be easiest to adapt?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What could change how you spend the weekend? 何が週末の過ごし方を変える可能性がありますか？
-- Learning target: Explore the distinct “What could change (変わる可能性)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What could change how you spend the weekend?” opens this angle; “What would be easiest to adapt?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would be easiest to adapt?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What could change how you spend the weekend?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would you make a new decision?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What could change how you spend the weekend?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What usually makes you change a weekend plan?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What usually makes you change a weekend plan?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What usually makes you change a weekend plan?” / “週末の予定を変えるのは、ふつうどんな理由からですか？” Tutor follow-ups: “Which change is easy to accept?” and “When does a change improve the weekend?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “週末の予定を変えるのは、ふつうどんな理由からですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually makes you change a weekend plan?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “Is there anything you still need to decide?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What information would help you decide?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Which weekend decisions would you make in advance?”
-- Learning target: Explore the distinct “Still undecided (まだ決めていないこと)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Is there anything you still need to decide?” opens this angle; “What information would help you decide?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What information would help you decide?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you still need to decide?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which option feels best now?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which weekend decisions would you make in advance?"]}`
+- Learner action: Answer the standalone question “What part of a weekend is worth planning ahead?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of a weekend is worth planning ahead?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of a weekend is worth planning ahead?” / “週末のどんなことは、前もって決める価値がありますか？” Tutor follow-ups: “Which decision becomes harder at the last minute?” and “What is better left spontaneous?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “週末のどんなことは、前もって決める価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of a weekend is worth planning ahead?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “If a plan fell through this weekend, how would you use the time instead?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Would you prefer the backup in any way?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “If a plan fell through this weekend, how would you use the time instead?”
-- Learning target: Explore the distinct “If it falls through (予定がなくなったら)” angle of “Your plans for this weekend” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If a plan fell through this weekend, how would you use the time instead?” opens this angle; “Would you prefer the backup in any way?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Would you prefer the backup in any way?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If a plan fell through this weekend, how would you use the time instead?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who would you need to tell, if anyone?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If a plan fell through this weekend, how would you use the time instead?"]}`
+- Learner action: Answer the standalone question “If a plan gets canceled, what's your best backup?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If a plan gets canceled, what's your best backup?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If a plan gets canceled, what's your best backup?” / “予定が中止になったら、いちばんよい代わりの過ごし方は何ですか？” Tutor follow-ups: “Could the backup be better than the original plan?” and “How quickly would you decide what to do?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “予定が中止になったら、いちばんよい代わりの過ごし方は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If a plan gets canceled, what's your best backup?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

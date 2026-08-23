@@ -51,6 +51,19 @@ language.
   non-question page may carry one short operational note only when the tutor cannot infer an
   essential contract from the page—for example, skipping the pre-study article rather than reading
   it in class.
+- **Every Freetalking prompt must pass the one-hearing, three-second test.** This applies to all
+  eight printed prompts and every private follow-up, not only the opening. After hearing the line
+  once, the learner should understand it without mentally rewriting it and should be able to begin
+  a real answer in about three seconds. Familiar vocabulary is not enough: reject abstract
+  packaging (`What risk creates the boundary?`), vague referents, hidden scenarios, meta-questions
+  about how to explain something, unrestricted searches for a memory or example, and choices whose
+  categories overlap. When recall may fail, name two or three concrete footholds in the question or
+  its rescue follow-up. Prefer direct verbs and concrete nouns (`Why wouldn't you trust AI with
+  that?`). Full may invite a deeper answer, but it
+  must not take longer to parse. Proofreading must include saying one plausible first answer aloud;
+  grammaticality, word counts and structural checks do not prove conversational immediacy. Each
+  follow-up set also needs a concrete route after `I don't know`, `none` or `never`; that rescue
+  question must pass the same three-second test.
 
 ### **No katakana readings. Ever. At any level.**
 

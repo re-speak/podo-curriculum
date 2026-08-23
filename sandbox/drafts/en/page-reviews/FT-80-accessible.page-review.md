@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-came-before-accessible/lessons/80-a-mistake-people-still-remind-you-about/lesson.html`
-- SHA-256: `12fc670fe7d0bd55903b6b806cf8a4c4ed6e35baa30db36c7e045a7cfa89a04c`
+- SHA-256: `85684e33488a62cc5be6d673cc1abfe0b566ceb004840b1ed09cdc2b59ed26e9`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What kind of old mistake becomes a story people keep retelling?” and expand the most interesting detail.
-- Tutor action: Ask “What kind of old mistake becomes a story people keep retelling?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: What kind of old mistake becomes a story people keep retelling? / どんな昔の失敗が、何度も語られる話になりますか？ Follow-up pool: Choose one example. What happened? Why did people remember it?
-- Learning target: Develop the opening angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “opening” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
+- Learner action: Answer the standalone question “What kind of old mistake becomes a story people keep retelling?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of old mistake becomes a story people keep retelling?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of old mistake becomes a story people keep retelling?” / “どんな昔の失敗が、何度も語られる話になりますか？” Tutor follow-ups: “Why do people keep telling that kind of story?” and “Would a cooking mistake or a wrong message be a good example?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな昔の失敗が、何度も語られる話になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of old mistake becomes a story people keep retelling?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “What happened in the chosen story?” and expand the most interesting detail.
-- Tutor action: Ask “What happened in the chosen story?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: What happened in the chosen story? / 選んだ話では何が起きましたか？ Follow-up pool: What was supposed to happen? Which detail caused the problem?
-- Learning target: Develop the event angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “event” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What happened in the chosen story?"]}`
+- Learner action: Answer the standalone question “Why do embarrassing mistakes often become funnier with time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do embarrassing mistakes often become funnier with time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do embarrassing mistakes often become funnier with time?” / “恥ずかしい失敗が、時間がたつと面白くなることが多いのはなぜですか？” Tutor follow-ups: “What changes after time passes?” and “When does it stay uncomfortable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “恥ずかしい失敗が、時間がたつと面白くなることが多いのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do embarrassing mistakes often become funnier with time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Who saw it—or who learned about it later?” and expand the most interesting detail.
-- Tutor action: Ask “Who saw it—or who learned about it later?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Who saw it—or who learned about it later? / 誰が見ましたか。それとも、後で誰が知りましたか？ Follow-up pool: How did they find out? Did anyone help?
-- Learning target: Develop the witness angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “witness” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who saw it—or who learned about it later?"]}`
+- Learner action: Answer the standalone question “Why do some mistakes become group stories that everyone remembers?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do some mistakes become group stories that everyone remembers?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do some mistakes become group stories that everyone remembers?” / “失敗の中には、みんなが覚えるグループの話になるものがあるのはなぜですか？” Tutor follow-ups: “Why does the group keep telling it?” and “Could the person who made the mistake remember it differently?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “失敗の中には、みんなが覚えるグループの話になるものがあるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do some mistakes become group stories that everyone remembers?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “What did the person do next?” and expand the most interesting detail.
-- Tutor action: Ask “What did the person do next?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: What did the person do next? / その人は次に何をしましたか？ Follow-up pool: Could the problem be fixed? Did they admit the mistake?
-- Learning target: Develop the repair angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “repair” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What did the person do next?"]}`
+- Learner action: Answer the standalone question “What's the best first step after making an embarrassing mistake?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the best first step after making an embarrassing mistake?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the best first step after making an embarrassing mistake?” / “恥ずかしい失敗をした後、最初に何をするのがよいですか？” Tutor follow-ups: “When is an apology useful?” and “What can make the situation worse?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “恥ずかしい失敗をした後、最初に何をするのがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the best first step after making an embarrassing mistake?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “How did everyone involved react when the mistake became clear?” and expand the most interesting detail.
-- Tutor action: Ask “How did everyone involved react when the mistake became clear?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: How did everyone involved react when the mistake became clear? / 失敗が明らかになったとき、関わった人たちはどう反応しましたか？ Follow-up pool: Whose reaction mattered most? Did the reaction make the situation better or worse?
-- Learning target: Develop the reaction angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “reaction” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How did everyone involved react when the mistake became clear?"]}`
+- Learner action: Answer the standalone question “How can other people's reactions make a mistake feel better or worse?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can other people's reactions make a mistake feel better or worse?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can other people's reactions make a mistake feel better or worse?” / “周りの反応によって、失敗の感じ方はどうよくなったり悪くなったりしますか？” Tutor follow-ups: “What reaction helps most?” and “Would a quiet joke help, or make things worse?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “周りの反応によって、失敗の感じ方はどうよくなったり悪くなったりしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can other people's reactions make a mistake feel better or worse?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Is the story funny now, uncomfortable, or both?” and expand the most interesting detail.
-- Tutor action: Ask “Is the story funny now, uncomfortable, or both?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: Is the story funny now, uncomfortable, or both? / その話は今では面白いですか、気まずいですか、それとも両方ですか？ Follow-up pool: Who is allowed to tell it? Would the person rather retire it?
-- Learning target: Develop the now angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “now” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is the story funny now, uncomfortable, or both?"]}`
+- Learner action: Answer the standalone question “When does an old mistake stop being funny?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When does an old mistake stop being funny?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When does an old mistake stop being funny?” / “昔の失敗が面白くなくなるのは、どんなときですか？” Tutor follow-ups: “Who is allowed to tell it?” and “Would the person rather retire it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “昔の失敗が面白くなくなるのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does an old mistake stop being funny?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “What lasting change came from the mistake?” and expand the most interesting detail.
-- Tutor action: Ask “What lasting change came from the mistake?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: What lasting change came from the mistake? / その失敗から、どんな長く残る変化が生まれましたか？ Follow-up pool: Did it change a habit, rule, or judgment? Why did the story remain memorable?
-- Learning target: Develop the change angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “change” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What lasting change came from the mistake?"]}`
+- Learner action: Answer the standalone question “What's one useful habit people learn from a mistake?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one useful habit people learn from a mistake?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one useful habit people learn from a mistake?” / “失敗から学べる役立つ習慣を一つ挙げるとしたら何ですか？” Tutor follow-ups: “How could that habit prevent another problem?” and “Would checking a message before sending it be a good example?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “失敗から学べる役立つ習慣を一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one useful habit people learn from a mistake?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “What makes an old mistake fair to bring up again?” and expand the most interesting detail.
-- Tutor action: Ask “What makes an old mistake fair to bring up again?”, use at most one useful follow-up, react naturally, and offer a brief real response when it helps the exchange.
-- Visible target or prompt: What makes an old mistake fair to bring up again? / 昔の失敗をもう一度話題にしても公平なのは、どんな場合ですか？ Follow-up pool: Whose permission matters? When should the story stop?
-- Learning target: Develop the flip angle of the selected example in spontaneous conversation.
-- Pedagogical value: Adds the distinct conversational job “flip” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer identifies a need for one contextual follow-up; no particular life history is treated as required knowledge.
-- Non-target support: The Japanese prompt is meaning-aligned; optional English follow-ups remain tutor-only and introduce no answer hints.
-- Article treatment: The prompt can draw on the article or any suitable example, but it does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner can give any relevant, supportable response.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one feedback capture area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes an old mistake fair to bring up again?"]}`
+- Learner action: Answer the standalone question “When is it fair to tell someone else's embarrassing story?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is it fair to tell someone else's embarrassing story?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is it fair to tell someone else's embarrassing story?” / “ほかの人の恥ずかしい話をしても公平なのは、どんなときですか？” Tutor follow-ups: “What could make the person uncomfortable?” and “When should the story stay private?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの人の恥ずかしい話をしても公平なのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is it fair to tell someone else's embarrassing story?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, page job, prompt independence, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

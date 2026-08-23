@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/19-something-youve-been-putting-off/lesson.html`
-- SHA-256: `8df59009c4ff0e5bf32bc2bde14ec66959e1a513c34dbfcad3e1974c4a80d91b`
+- SHA-256: `440f47bdd50a3ed38c4f245d7ea344e7288a431555e84acab848c6f8bba96fb3`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Is there anything you've been meaning to do but haven't?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “When did you first decide to do it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Which kind of task are you most likely to put off?”
-- Learning target: Explore the distinct “Still not done (まだしていないこと)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Is there anything you've been meaning to do but haven't?” opens this angle; “When did you first decide to do it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “When did you first decide to do it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there anything you've been meaning to do but haven't?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What has made it easy to delay?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “Which kind of task are you most likely to put off?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which kind of task are you most likely to put off?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which kind of task are you most likely to put off?” / “あなたはどんな課題を、いちばん先延ばしにしやすいですか？” Tutor follow-ups: “What makes it easy for you to delay?” and “When does it become urgent?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたはどんな課題を、いちばん先延ばしにしやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of task are you most likely to put off?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “When you avoid a task, what do you tend to do instead?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Does that activity actually feel relaxing?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When you avoid a task, what do you tend to do instead? 課題を避けるとき、代わりに何をすることが多いですか？
-- Learning target: Explore the distinct “What you do instead (代わりにすること)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “When you avoid a task, what do you tend to do instead?” opens this angle; “Does that activity actually feel relaxing?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Does that activity actually feel relaxing?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When you avoid a task, what do you tend to do instead?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When does the task return to your mind?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When you avoid a task, what do you tend to do instead?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What do you usually do instead of the task you're avoiding?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you usually do instead of the task you're avoiding?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you usually do instead of the task you're avoiding?” / “やるべきことを避けているとき、代わりに何をしますか？” Tutor follow-ups: “What feeling are you trying to avoid?” and “When does the distraction create more stress?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “やるべきことを避けているとき、代わりに何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you usually do instead of the task you're avoiding?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “When a task gets delayed, how long does it usually stay undone?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What makes the delay grow?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When a task gets delayed, how long does it usually stay undone? 課題を先延ばしにすると、普段どのくらい終わらないままですか？
-- Learning target: Explore the distinct “How long (どのくらい)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “When a task gets delayed, how long does it usually stay undone?” opens this angle; “What makes the delay grow?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What makes the delay grow?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When a task gets delayed, how long does it usually stay undone?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How much does a deadline change it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When a task gets delayed, how long does it usually stay undone?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which gets harder after a delay: starting or finishing?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which gets harder after a delay: starting or finishing?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which gets harder after a delay: starting or finishing?” / “先延ばしにすると、始めることと終わらせることのどちらが難しくなりますか？” Tutor follow-ups: “How does the delay change the task in your mind?” and “What breaks that pattern?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “先延ばしにすると、始めることと終わらせることのどちらが難しくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which gets harder after a delay: starting or finishing?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “What usually stops you from starting?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Is the first step usually clear?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What usually stops you from starting? 普段、何が始めることを止めますか？
-- Learning target: Explore the distinct “The real barrier (本当の障害)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What usually stops you from starting?” opens this angle; “Is the first step usually clear?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Is the first step usually clear?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What usually stops you from starting?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which feeling comes up most often?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually stops you from starting?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which task is easiest to put off: boring, difficult, or unclear?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which task is easiest to put off: boring, difficult, or unclear?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which task is easiest to put off: boring, difficult, or unclear?” / “退屈な仕事、難しい仕事、はっきりしない仕事の中で、いちばん先延ばしにしやすいのはどれですか？” Tutor follow-ups: “Which emotion comes with that kind of task?” and “What first step reduces the resistance?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “退屈な仕事、難しい仕事、はっきりしない仕事の中で、いちばん先延ばしにしやすいのはどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which task is easiest to put off: boring, difficult, or unclear?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “What can happen when a task never gets done?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Who else might be affected?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What can happen when a task never gets done? 課題をずっと終えないと、何が起こりえますか？
-- Learning target: Explore the distinct “If it never gets done (ずっとしなかったら)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What can happen when a task never gets done?” opens this angle; “Who else might be affected?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Who else might be affected?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What can happen when a task never gets done?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would dropping it be the better choice?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can happen when a task never gets done?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What problems can a small unfinished task cause?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What problems can a small unfinished task cause?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What problems can a small unfinished task cause?” / “小さな用事を終わらせないままにすると、どんな問題が起こりますか？” Tutor follow-ups: “Why can a tiny task stay on your mind?” and “Can a tiny task create a lot of stress?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “小さな用事を終わらせないままにすると、どんな問題が起こりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What problems can a small unfinished task cause?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “Have you ever finally done something you had put off?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What finally made you start?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What could finally make you start a task you had put off?”
-- Learning target: Explore the distinct “A past delay (以前の先延ばし)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you ever finally done something you had put off?” opens this angle; “What finally made you start?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What finally made you start?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you ever finally done something you had put off?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What usually ends a delay for you?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What could finally make you start a task you had put off?"]}`
+- Learner action: Answer the standalone question “What can make you start an annoying task right away?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can make you start an annoying task right away?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can make you start an annoying task right away?” / “面倒な用事でも、すぐに始められるのはどんなときですか？” Tutor follow-ups: “Which outside pressure is actually useful?” and “How can you make the first step smaller?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “面倒な用事でも、すぐに始められるのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make you start an annoying task right away?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “If you finish a delayed task, how do you usually feel?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Does the result usually match the worry?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you finish a delayed task, how do you usually feel? 遅れて何かを終えたとき、普段どんな気持ちになりますか？
-- Learning target: Explore the distinct “After a delay (先延ばしのあと)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you finish a delayed task, how do you usually feel?” opens this angle; “Does the result usually match the worry?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Does the result usually match the worry?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you finish a delayed task, how do you usually feel?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What feeling arrives first when it is done?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you finish a delayed task, how do you usually feel?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “How do you reward yourself after finishing something annoying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How do you reward yourself after finishing something annoying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How do you reward yourself after finishing something annoying?” / “面倒なことを終えたあと、どのように自分にご褒美をあげますか？” Tutor follow-ups: “Does the reward improve motivation or only relief?” and “When is finishing itself enough?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “面倒なことを終えたあと、どのように自分にご褒美をあげますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you reward yourself after finishing something annoying?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “If a task gets delayed again, what could you do next?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What's a ten-minute next step?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If a task gets delayed again, what could you do next? また何かを先延ばしにしたら、次に何ができますか？
-- Learning target: Explore the distinct “The next decision (次の判断)” angle of “Something you've been putting off” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If a task gets delayed again, what could you do next?” opens this angle; “What's a ten-minute next step?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What's a ten-minute next step?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If a task gets delayed again, what could you do next?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When is dropping the task the better decision?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If a task gets delayed again, what could you do next?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What's one trick that makes a delayed task easier to restart?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one trick that makes a delayed task easier to restart?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one trick that makes a delayed task easier to restart?” / “先延ばしにしたことを再開しやすくするコツは何ですか？” Tutor follow-ups: “How could you make the task feel easier?” and “How much would you try to finish on the first day back?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “先延ばしにしたことを再開しやすくするコツは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one trick that makes a delayed task easier to restart?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

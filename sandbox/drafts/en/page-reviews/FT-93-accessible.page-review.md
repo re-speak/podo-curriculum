@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/93-the-one-food-you-could-eat-forever/lesson.html`
-- SHA-256: `396a503dcbff3376a7832378a196952957e0b0a392fe6f03b28be5a6a91d23d1`
+- SHA-256: `91559e504f2c9f3907dd96df64ef9636737dd32155ace1e83d2475f1056be992`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which food would be hardest for you to get tired of?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which food would be hardest for you to get tired of?”, react or share briefly, then choose at most one relevant probe such as “Which preparation would keep it interesting?”.
-- Visible target or prompt: Which food would be hardest for you to get tired of? / どの食べ物なら、最も飽きにくいですか？ Follow-up pool: Which preparation would keep it interesting? What quality makes the choice flexible?
-- Learning target: Explore the distinct “One food” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which preparation would keep it interesting?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which preparation would keep it interesting?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which food would be hardest for you to get tired of?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What quality makes the choice flexible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which food would be hardest for you to get tired of?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which food would be hardest for you to get tired of?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which food would be hardest for you to get tired of?” / “どの食べ物なら、最も飽きにくいですか？” Tutor follow-ups: “Would rice, noodles, or bread be hard to get tired of?” and “How could you serve it in different ways?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの食べ物なら、最も飽きにくいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which food would be hardest for you to get tired of?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How does repetition change the enjoyment of a favourite food?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How does repetition change the enjoyment of a favourite food?”, react or share briefly, then choose at most one relevant probe such as “What part would become boring first?”.
-- Visible target or prompt: How does repetition change the enjoyment of a favourite food? / 同じ食べ物を繰り返すと、好きな食べ物の楽しさはどう変わりますか？ Follow-up pool: What part would become boring first? Could changing how it is served help?
-- Learning target: Explore the distinct “Before you got bored” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What part would become boring first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What part would become boring first?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How does repetition change the enjoyment of a favourite food?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Could changing how it is served help?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How does repetition change the enjoyment of a favourite food?"]}`
+- Learner action: Answer the standalone question “How many days would it take for a favourite food to get boring?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How many days would it take for a favourite food to get boring?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How many days would it take for a favourite food to get boring?” / “好きな食べ物でも、何日で飽きると思いますか？” Tutor follow-ups: “Would the taste or repetition become boring first?” and “If you have no favourite food, which everyday food could you eat for a week?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “好きな食べ物でも、何日で飽きると思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How many days would it take for a favourite food to get boring?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which two foods would be the closest rivals for a long-term choice?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which two foods would be the closest rivals for a long-term choice?”, react or share briefly, then choose at most one relevant probe such as “What advantage does each food have?”.
-- Visible target or prompt: Which two foods would be the closest rivals for a long-term choice? / 長期的な選択で、最も競い合う二つの食べ物は何ですか？ Follow-up pool: What advantage does each food have? Which trade-off would decide between them?
-- Learning target: Explore the distinct “The second choice” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What advantage does each food have?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What advantage does each food have?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which two foods would be the closest rivals for a long-term choice?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which trade-off would decide between them?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which two foods would be the closest rivals for a long-term choice?"]}`
+- Learner action: Answer the standalone question “Which two foods would be hardest to choose between?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which two foods would be hardest to choose between?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which two foods would be hardest to choose between?” / “どの二つの食べ物なら、選ぶのが最も難しいですか？” Tutor follow-ups: “Would you compare taste, price, or health?” and “Would you choose pizza or noodles?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの二つの食べ物なら、選ぶのが最も難しいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which two foods would be hardest to choose between?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What other kind of food would you miss most?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What other kind of food would you miss most?”, react or share briefly, then choose at most one relevant probe such as “Would you miss a taste, texture, or occasion?”.
-- Visible target or prompt: What other kind of food would you miss most? / ほかのどんな種類の食べ物がいちばん恋しくなりますか？ Follow-up pool: Would you miss a taste, texture, or occasion? When would the missing food matter most?
-- Learning target: Explore the distinct “What you would miss” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Would you miss a taste, texture, or occasion?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would you miss a taste, texture, or occasion?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What other kind of food would you miss most?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “When would the missing food matter most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What other kind of food would you miss most?"]}`
+- Learner action: Answer the standalone question “Which taste would you miss first if you ate only one food?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which taste would you miss first if you ate only one food?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which taste would you miss first if you ate only one food?” / “一つの食べ物だけを食べたら、最初にどんな味が恋しくなりますか？” Tutor follow-ups: “Would you miss something sweet, spicy, or crunchy?” and “When would you notice it most?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの食べ物だけを食べたら、最初にどんな味が恋しくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which taste would you miss first if you ate only one food?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What food could you give up easily, if any?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What food could you give up easily, if any?”, react or share briefly, then choose at most one relevant probe such as “Why does it matter so little?”.
-- Visible target or prompt: What food could you give up easily, if any? / 簡単に諦められる食べ物があるとすれば、何ですか？ Follow-up pool: Why does it matter so little? Which food would be hardest to lose?
-- Learning target: Explore the distinct “Easy to give up” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why does it matter so little?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does it matter so little?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What food could you give up easily, if any?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which food would be hardest to lose?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What food could you give up easily, if any?"]}`
+- Learner action: Answer the standalone question “What food could you happily never eat again?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What food could you happily never eat again?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What food could you happily never eat again?” / “もう二度と食べなくても平気な食べ物は何ですか？” Tutor follow-ups: “Would a strong-smelling food be a good example?” and “Could a different recipe change your answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “もう二度と食べなくても平気な食べ物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What food could you happily never eat again?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Would a healthy but less exciting food be a better long-term choice?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Would a healthy but less exciting food be a better long-term choice?”, react or share briefly, then choose at most one relevant probe such as “What would make that choice last?”.
-- Visible target or prompt: Would a healthy but less exciting food be a better long-term choice? / 健康的でもあまり刺激のない食べ物のほうが、長期的にはよい選択ですか？ Follow-up pool: What would make that choice last? What enjoyment would you lose?
-- Learning target: Explore the distinct “The boring answer” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would make that choice last?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would make that choice last?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would a healthy but less exciting food be a better long-term choice?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What enjoyment would you lose?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a healthy but less exciting food be a better long-term choice?"]}`
+- Learner action: Answer the standalone question “Would you choose a healthy everyday food or an exciting food that's bad for you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you choose a healthy everyday food or an exciting food that's bad for you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you choose a healthy everyday food or an exciting food that's bad for you?” / “健康的な日常の食べ物と、体によくなくてもわくわくする食べ物のどちらを選びますか？” Tutor follow-ups: “Which choice would be easier to continue?” and “What would you miss about the other food?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “健康的な日常の食べ物と、体によくなくてもわくわくする食べ物のどちらを選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you choose a healthy everyday food or an exciting food that's bad for you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How often would someone need a chance to change a long-term food choice?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How often would someone need a chance to change a long-term food choice?”, react or share briefly, then choose at most one relevant probe such as “Would once a year be enough?”.
-- Visible target or prompt: How often would someone need a chance to change a long-term food choice? / 長期的な食べ物の選択を、どのくらいの頻度で変えられる必要がありますか？ Follow-up pool: Would once a year be enough? What would make you use the change early?
-- Learning target: Explore the distinct “Choosing again” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Would once a year be enough?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would once a year be enough?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How often would someone need a chance to change a long-term food choice?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would make you use the change early?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How often would someone need a chance to change a long-term food choice?"]}`
+- Learner action: Answer the standalone question “What small change can keep a favourite food interesting?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small change can keep a favourite food interesting?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small change can keep a favourite food interesting?” / “好きな食べ物に飽きないための小さな変化は何ですか？” Tutor follow-ups: “Would a new sauce be enough?” and “How often would you need a bigger change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “好きな食べ物に飽きないための小さな変化は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small change can keep a favourite food interesting?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Why can variety matter more than a favourite food?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Why can variety matter more than a favourite food?”, react or share briefly, then choose at most one relevant probe such as “What does variety give us besides taste?”.
-- Visible target or prompt: Why can variety matter more than a favourite food? / なぜ好物より種類の多さが大切になることがありますか？ Follow-up pool: What does variety give us besides taste? Where else does too much repetition change enjoyment?
-- Learning target: Explore the distinct “Variety” angle of “The one food you could eat forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What does variety give us besides taste?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What does variety give us besides taste?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can variety matter more than a favourite food?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Where else does too much repetition change enjoyment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can variety matter more than a favourite food?"]}`
+- Learner action: Answer the standalone question “When is variety better than having one favourite?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is variety better than having one favourite?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is variety better than having one favourite?” / “一つの好物を持つより、種類が多いほうがよいのはどんなときですか？” Tutor follow-ups: “What does variety give us besides taste?” and “Where else does too much repetition change enjoyment?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの好物を持つより、種類が多いほうがよいのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is variety better than having one favourite?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

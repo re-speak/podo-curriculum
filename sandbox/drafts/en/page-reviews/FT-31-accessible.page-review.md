@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/31-what-you-actually-wear/lesson.html`
-- SHA-256: `fd99dffbb30b4f1a5f1a2a5dc62a7a39e2e9bbabaf6da67de9da9de52e3680ae`
+- SHA-256: `059d52ae468f145b1d358afbb89319e420dc47a6aad5e405cbf4a24aad766b29`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
 - Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Generator-owned semantic inspection is complete; root visual inspection at 360px and 480px is still pending.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending.
+- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
 - Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending.
+- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
 - Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending.
+- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What colour is most of your wardrobe?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why does that colour work for you?” rather than asking every follow-up.
-- Visible target or prompt: What colour is most of your wardrobe? 手持ちの服でいちばん多い色は何ですか？
-- Learning target: Explore the distinct “Your main colour (多い色)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why does that colour work for you?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does that colour work for you?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What colour is most of your wardrobe?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which colour do you avoid?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What colour is most of your wardrobe?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What colour is most of your wardrobe?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What colour is most of your wardrobe?” / “手持ちの服でいちばん多い色は何ですか？” Tutor follow-ups: “Why does that colour work for you?” and “Which colour do you avoid?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “手持ちの服でいちばん多い色は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What colour is most of your wardrobe?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What made you choose what you're wearing today?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part was practical?” rather than asking every follow-up.
-- Visible target or prompt: What made you choose what you're wearing today? 今日の服を選んだ理由は何ですか？
-- Learning target: Explore the distinct “What you wore today (今日の服)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which part was practical?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part was practical?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What made you choose what you're wearing today?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would you change for a different plan?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What made you choose what you're wearing today?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What made you choose what you're wearing today?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What made you choose what you're wearing today?” / “今日の服を選んだ理由は何ですか？” Tutor follow-ups: “Which part was practical?” and “What would you change for another plan?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今日の服を選んだ理由は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What made you choose what you're wearing today?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What do you actually wear most often?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes it reliable?” rather than asking every follow-up.
-- Visible target or prompt: What do you actually wear most often? 実際にいちばんよく着るものは何ですか？
-- Learning target: Explore the distinct “What you wear most (いちばん着るもの)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes it reliable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes it reliable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do you actually wear most often?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How many versions of it do you own?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What do you actually wear most often?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you actually wear most often?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you actually wear most often?” / “実際にいちばんよく着るものは何ですか？” Tutor follow-ups: “What makes it reliable?” and “How many versions do you own?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実際にいちばんよく着るものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you actually wear most often?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How has what you wear changed in the past few years?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What caused the biggest change?” rather than asking every follow-up.
-- Visible target or prompt: How has what you wear changed in the past few years? ここ数年で、着る服はどう変わりましたか？
-- Learning target: Explore the distinct “How it changed (変わった好み)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What caused the biggest change?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What caused the biggest change?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How has what you wear changed in the past few years?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which old habit remains?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How has what you wear changed in the past few years?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which has changed how you dress most: work, weather, or comfort?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which has changed how you dress most: work, weather, or comfort?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which has changed how you dress most: work, weather, or comfort?” / “仕事、天気、着心地の中で、服装をいちばん変えたのはどれですか？” Tutor follow-ups: “What changed first?” and “Which old habit remains?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “仕事、天気、着心地の中で、服装をいちばん変えたのはどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which has changed how you dress most: work, weather, or comfort?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which item in your wardrobe gets worn least?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why did you buy or keep it?” rather than asking every follow-up.
-- Visible target or prompt: Which item in your wardrobe gets worn least? 手持ちの服の中で、いちばん着ていないものは何ですか？
-- Learning target: Explore the distinct “Owned but unworn (持っているけれど着ない服)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why did you buy or keep it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why did you buy or keep it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which item in your wardrobe gets worn least?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make you wear it again?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which item in your wardrobe gets worn least?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Why do people keep clothes they rarely wear?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do people keep clothes they rarely wear?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do people keep clothes they rarely wear?” / “人はなぜ、ほとんど着ない服を持ち続けるのでしょうか？” Tutor follow-ups: “Which reason is most common?” and “When should they finally let the clothes go?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人はなぜ、ほとんど着ない服を持ち続けるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do people keep clothes they rarely wear?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What would you never wear?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is the problem style, comfort, or situation?” rather than asking every follow-up.
-- Visible target or prompt: What would you never wear? 絶対に着ないものは何ですか？
-- Learning target: Explore the distinct “Never wear (絶対に着ないもの)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Is the problem style, comfort, or situation?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the problem style, comfort, or situation?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you never wear?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could anyone wear it well, or is the item itself the problem?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would you never wear?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you never wear?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you never wear?” / “絶対に着ないものは何ですか？” Tutor follow-ups: “Is the problem style, comfort, or situation?” and “Could anyone wear it well?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “絶対に着ないものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you never wear?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Whose style do you enjoy looking at?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What do they understand about clothes?” rather than asking every follow-up.
-- Visible target or prompt: Whose style do you enjoy looking at? 誰の服の着こなしを見るのが好きですか？
-- Learning target: Explore the distinct “Style you enjoy (好きな着こなし)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What do they understand about clothes?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What do they understand about clothes?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Whose style do you enjoy looking at?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part of their style would not work for you?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Whose style do you enjoy looking at?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of personal style do you enjoy looking at?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of personal style do you enjoy looking at?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of personal style do you enjoy looking at?” / “どんなファッションを見るのが好きですか？” Tutor follow-ups: “What makes that style interesting?” and “Would you rather look at a simple style or a colorful one?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんなファッションを見るのが好きですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of personal style do you enjoy looking at?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would you buy if your clothing budget had no limit?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would you buy more or buy differently?” rather than asking every follow-up.
-- Visible target or prompt: What would you buy if your clothing budget had no limit? 服の予算に上限がなければ、何を買いますか？
-- Learning target: Explore the distinct “No budget limit (予算がなければ)” angle of “What you actually wear” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Would you buy more or buy differently?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would you buy more or buy differently?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you buy if your clothing budget had no limit?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which practical limit would still remain?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would you buy if your clothing budget had no limit?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you buy if your clothing budget had no limit?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you buy if your clothing budget had no limit?” / “服に使えるお金に制限がなければ、何を買いますか？” Tutor follow-ups: “Would you buy more or buy differently?” and “Which practical limit would remain?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “服に使えるお金に制限がなければ、何を買いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you buy if your clothing budget had no limit?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one strength, one focus, and one useful re-say.
 - Component consistency: Reuses the approved Freetalking feedback component with separate strength, focus, and useful-correction fields.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending.
+- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.

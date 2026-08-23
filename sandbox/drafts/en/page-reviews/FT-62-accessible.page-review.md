@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-accessible/lessons/62-a-breakup-that-was-hard-to-get-over/lesson.html`
-- SHA-256: `83a01ff476eff049734d1101bd8b72a13bd0ba19d940ddbc972efd8e4f5ce5cb`
+- SHA-256: `3131063d26b14b3b74f0adb6f84405ce9088add8a1026dc2a52f54571bf54caa`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Why can some breakups be so hard to get over?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What is lost besides the relationship?” rather than asking every follow-up.
-- Visible target or prompt: Why can some breakups be so hard to get over? / なぜ、立ち直るのがとても難しい別れがあるのでしょうか？
-- Learning target: Explore the distinct “Only what feels safe (話せる範囲で)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What is lost besides the relationship?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What is lost besides the relationship?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can some breakups be so hard to get over?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part can take longest to accept?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why can some breakups be so hard to get over?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can some breakups be so hard to get over?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can some breakups be so hard to get over?” / “なぜ、立ち直るのがとても難しい別れがあるのでしょうか？” Tutor follow-ups: “What else is lost besides the relationship?” and “What can take longest to accept?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “なぜ、立ち直るのがとても難しい別れがあるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can some breakups be so hard to get over?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What changes most after a relationship ends?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which daily routine changes first?” rather than asking every follow-up.
-- Visible target or prompt: What changes most after a relationship ends? / 人間関係が終わった後、最も大きく変わるのは何ですか？
-- Learning target: Explore the distinct “What ended (終わったもの)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which daily routine changes first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which daily routine changes first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What changes most after a relationship ends?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which future plan is hardest to replace?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What changes most after a relationship ends?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What changes most after a relationship ends?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What changes most after a relationship ends?” / “人間関係が終わった後、最も大きく変わるのは何ですか？” Tutor follow-ups: “Which daily routine changes first?” and “Which future plan is hardest to replace?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人間関係が終わった後、最も大きく変わるのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What changes most after a relationship ends?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What affects how long it takes to recover from a breakup?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does the length of the relationship matter?” rather than asking every follow-up.
-- Visible target or prompt: What affects how long it takes to recover from a breakup? / 別れから立ち直るまでの時間には、何が影響しますか？
-- Learning target: Explore the distinct “Time to recover (回復までの時間)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Does the length of the relationship matter?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does the length of the relationship matter?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What affects how long it takes to recover from a breakup?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which sign shows progress?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What affects how long it takes to recover from a breakup?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What affects how long it takes to recover from a breakup?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What affects how long it takes to recover from a breakup?” / “別れから立ち直るまでの時間には、何が影響しますか？” Tutor follow-ups: “Does a long relationship always take longer to recover from?” and “What sign shows progress?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別れから立ち直るまでの時間には、何が影響しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What affects how long it takes to recover from a breakup?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “When is privacy helpful after a breakup, and when is support better?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What can solitude provide?” rather than asking every follow-up.
-- Visible target or prompt: When is privacy helpful after a breakup, and when is support better? / 別れの後、一人でいることが役立つのはいつで、人の支えがよりよいのはいつですか？
-- Learning target: Explore the distinct “Who knew (誰に話したか)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What can solitude provide?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What can solitude provide?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is privacy helpful after a breakup, and when is support better?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What kind of support feels useful?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is privacy helpful after a breakup, and when is support better?"]}`
+- Learner action: Answer the standalone question “After a breakup, when is being alone helpful and when is company better?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “After a breakup, when is being alone helpful and when is company better?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “After a breakup, when is being alone helpful and when is company better?” / “別れのあと、一人でいるほうがよいのはいつで、誰かといるほうがよいのはいつですか？” Tutor follow-ups: “What can solitude provide?” and “What kind of support feels useful?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別れのあと、一人でいるほうがよいのはいつで、誰かといるほうがよいのはいつですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["After a breakup, when is being alone helpful and when is company better?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What genuinely helps someone begin to get over a breakup?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is the help emotional or practical?” rather than asking every follow-up.
-- Visible target or prompt: What genuinely helps someone begin to get over a breakup? / 別れから立ち直り始めるために、本当に役立つのは何ですか？
-- Learning target: Explore the distinct “What helped (助けになったもの)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Is the help emotional or practical?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the help emotional or practical?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What genuinely helps someone begin to get over a breakup?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which common advice does not help?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What genuinely helps someone begin to get over a breakup?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What genuinely helps someone begin to get over a breakup?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What genuinely helps someone begin to get over a breakup?” / “別れから立ち直り始めるために、本当に役立つのは何ですか？” Tutor follow-ups: “Is the help emotional or practical?” and “Which common advice does not help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別れから立ち直り始めるために、本当に役立つのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What genuinely helps someone begin to get over a breakup?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What can people understand about a breakup only later?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which pattern becomes clearer?” rather than asking every follow-up.
-- Visible target or prompt: What can people understand about a breakup only later? / 別れについて、後になって初めて分かることは何ですか？
-- Learning target: Explore the distinct “What is clearer now (今分かること)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which pattern becomes clearer?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which pattern becomes clearer?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can people understand about a breakup only later?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Can hindsight be unfair?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What can people understand about a breakup only later?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can people understand about a breakup only later?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can people understand about a breakup only later?” / “別れについて、後になって初めて分かることは何ですか？” Tutor follow-ups: “What becomes clearer with time?” and “Can people remember the past unfairly?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別れについて、後になって初めて分かることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can people understand about a breakup only later?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What advice sounds kind after a breakup but is not actually helpful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why can it feel dismissive?” rather than asking every follow-up.
-- Visible target or prompt: What advice sounds kind after a breakup but is not actually helpful? / 別れの後、優しく聞こえても実際には役に立たない助言は何ですか？
-- Learning target: Explore the distinct “What to say then (当時伝えること)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why can it feel dismissive?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why can it feel dismissive?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What advice sounds kind after a breakup but is not actually helpful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What could someone say instead?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What advice sounds kind after a breakup but is not actually helpful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What advice sounds kind after a breakup but is not actually helpful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What advice sounds kind after a breakup but is not actually helpful?” / “別れの後、優しく聞こえても実際には役に立たない助言は何ですか？” Tutor follow-ups: “Why can it feel dismissive?” and “What could someone say instead?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別れの後、優しく聞こえても実際には役に立たない助言は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What advice sounds kind after a breakup but is not actually helpful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What is one sign that someone is moving forward without erasing the past?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is the sign emotional or practical?” rather than asking every follow-up.
-- Visible target or prompt: What is one sign that someone is moving forward without erasing the past? / 過去を消さずに前に進んでいることを示すサインは何ですか？
-- Learning target: Explore the distinct “A sign of moving forward (前に進むサイン)” angle of “A breakup that was hard to get over” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Is the sign emotional or practical?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the sign emotional or practical?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is one sign that someone is moving forward without erasing the past?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might still remain difficult?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one sign that someone is moving forward without erasing the past?"]}`
+- Learner action: Answer the standalone question “What's one sign that someone is moving forward after a breakup?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one sign that someone is moving forward after a breakup?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one sign that someone is moving forward after a breakup?” / “別れのあと、前に進んでいると分かるサインは何ですか？” Tutor follow-ups: “Would other people notice the sign?” and “What might still remain difficult?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別れのあと、前に進んでいると分かるサインは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one sign that someone is moving forward after a breakup?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

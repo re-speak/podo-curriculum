@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/18-a-song-you-keep-playing/lesson.html`
-- SHA-256: `79f0d0ee2a71c5fc57a2cbd5bb327087e44291f528a50a447b19efa05e43cf6f`
+- SHA-256: `ea2b3ef64c2876d411d483d265375e048509cd2b656e683ecfd105939fa1ae21`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Is there a song you've been playing a lot lately?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which artist or sound fits your mood lately?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Is there a song you've been playing a lot lately? 最近よく聴いている曲はありますか？
-- Learning target: Explore the distinct “A current song (最近の曲)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Is there a song you've been playing a lot lately?” opens this angle; “Which artist or sound fits your mood lately?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which artist or sound fits your mood lately?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a song you've been playing a lot lately?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When do you usually want to hear it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “Is there a song you've been playing a lot lately?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Is there a song you've been playing a lot lately?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Is there a song you've been playing a lot lately?” / “最近よく聴いている曲はありますか？” Tutor follow-ups: “Which artist or sound fits your mood lately?” and “When do you usually want to hear it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最近よく聴いている曲はありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there a song you've been playing a lot lately?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “What sound or musical detail has caught your attention lately?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What makes it stand out?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What sound or musical detail has caught your attention lately? 最近、どんな音や音楽の細部が気になりましたか？
-- Learning target: Explore the distinct “One detail (一つの細部)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What sound or musical detail has caught your attention lately?” opens this angle; “What makes it stand out?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What makes it stand out?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What sound or musical detail has caught your attention lately?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Does it come from a particular song?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What sound or musical detail has caught your attention lately?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which matters more in a song: lyrics, voice, or beat?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which matters more in a song: lyrics, voice, or beat?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which matters more in a song: lyrics, voice, or beat?” / “曲では、歌詞、声、リズムのどれがいちばん大切ですか？” Tutor follow-ups: “What is one example?” and “What can make you choose differently?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “曲では、歌詞、声、リズムのどれがいちばん大切ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which matters more in a song: lyrics, voice, or beat?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “How long do you usually stay interested in one song?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “How often do you play it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How long do you usually stay interested in one song? 一曲を気に入ると、普段どのくらい聴き続けますか？
-- Learning target: Explore the distinct “How long it lasts (どのくらい続く？)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How long do you usually stay interested in one song?” opens this angle; “How often do you play it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “How often do you play it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How long do you usually stay interested in one song?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes you move to another song?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How long do you usually stay interested in one song?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “When do you get tired of a song you love?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When do you get tired of a song you love?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When do you get tired of a song you love?” / “好きな曲に飽きるのは、どんなときですか？” Tutor follow-ups: “How often is too often?” and “What makes you return later?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “好きな曲に飽きるのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When do you get tired of a song you love?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “Can music bring back a specific memory for you?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which detail comes back first?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Can music bring back a specific memory for you? 音楽を聴いて、具体的な思い出が戻ることはありますか？
-- Learning target: Explore the distinct “A memory (思い出すこと)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Can music bring back a specific memory for you?” opens this angle; “Which detail comes back first?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which detail comes back first?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Can music bring back a specific memory for you?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How does the memory change the song?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can music bring back a specific memory for you?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of memory can a song bring back instantly?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of memory can a song bring back instantly?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of memory can a song bring back instantly?” / “曲を聴くと、どんな思い出がすぐによみがえりますか？” Tutor follow-ups: “Which detail returns first?” and “How does the memory change the song?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “曲を聴くと、どんな思い出がすぐによみがえりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of memory can a song bring back instantly?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “When do you usually listen to music?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What mood are you usually in?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When do you usually listen to music? 普段、いつ音楽を聴きますか？
-- Learning target: Explore the distinct “When you play music (音楽を聴くとき)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “When do you usually listen to music?” opens this angle; “What mood are you usually in?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What mood are you usually in?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When do you usually listen to music?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Does music change what you are doing?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When do you usually listen to music?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What activity is better with music?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What activity is better with music?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What activity is better with music?” / “音楽があるともっとよくなる活動は何ですか？” Tutor follow-ups: “What kind of music fits it?” and “When would silence be better?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “音楽があるともっとよくなる活動は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What activity is better with music?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “Is there a song you played too much years ago?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Can you enjoy it again now?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Why can an old favourite become hard to listen to?”
-- Learning target: Explore the distinct “An old repeat (昔繰り返した曲)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Is there a song you played too much years ago?” opens this angle; “Can you enjoy it again now?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Can you enjoy it again now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Is there a song you played too much years ago?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What usually makes you tire of a song?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can an old favourite become hard to listen to?"]}`
+- Learner action: Answer the standalone question “What can make a favorite song hard to hear?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can make a favorite song hard to hear?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can make a favorite song hard to hear?” / “好きな曲でも、聴くのがつらくなるのはどんな理由からですか？” Tutor follow-ups: “Can a memory change the song?” and “Would time make it easier?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “好きな曲でも、聴くのがつらくなるのはどんな理由からですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make a favorite song hard to hear?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “Would you send a song that fits your current mood to anyone?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would make you share it or keep it private?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Would you send a song that fits your current mood to anyone? 今の気分に合う曲を誰かに送りたいですか？
-- Learning target: Explore the distinct “Sharing music (音楽を共有すること)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Would you send a song that fits your current mood to anyone?” opens this angle; “What would make you share it or keep it private?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would make you share it or keep it private?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Would you send a song that fits your current mood to anyone?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What kind of response would you hope for?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you send a song that fits your current mood to anyone?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What song would you send someone who needed energy?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What song would you send someone who needed energy?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What song would you send someone who needed energy?” / “元気が必要な人に、どんな曲を送りますか？” Tutor follow-ups: “What part gives it energy?” and “When you need energy, do you choose a fast song or a familiar one?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “元気が必要な人に、どんな曲を送りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What song would you send someone who needed energy?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “If you made a playlist of your year, what would go on it?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which song would open it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you made a playlist of your year, what would go on it? 今年のプレイリストを作るなら、何を入れますか？
-- Learning target: Explore the distinct “Your year as a playlist (一年のプレイリスト)” angle of “A song you keep playing” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you made a playlist of your year, what would go on it?” opens this angle; “Which song would open it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which song would open it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you made a playlist of your year, what would go on it?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What part of the year is still missing?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you made a playlist of your year, what would go on it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which song belongs on a playlist about your year?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which song belongs on a playlist about your year?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which song belongs on a playlist about your year?” / “今年を表すプレイリストに、どんな曲を入れますか？” Tutor follow-ups: “What part of the year does it match?” and “Would your year need a happy song or a calm one?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今年を表すプレイリストに、どんな曲を入れますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which song belongs on a playlist about your year?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

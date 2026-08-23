@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-full/lessons/121-being-great-at-one-thing-or-good-at-many/lesson.html`
-- SHA-256: `704c98ce12055ae27abfb0fd2b215c384f22c8fc9c55ff9f7570d4ef7b320661`
+- SHA-256: `7708980fda990bd4f642f4e8244993213a78efd791ecfdc5beb5a911d99ae7ae`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “Which recent improvement came from the clearest practice and feedback?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which recent improvement came from the clearest practice and feedback?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which recent improvement came from the clearest practice and feedback?” / “最近、いちばん伸びた技能は何ですか？” Follow-ups: “Which feedback changed the practice most effectively?” and “What evidence shows that the improvement can transfer?”
-- Learning target: Develop the distinct “A skill that improved” angle of Being great at one thing or good at many? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A skill that improved” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which recent improvement came from the clearest practice and feedback?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “最近、いちばん伸びた技能は何ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which recent improvement came from the clearest practice and feedback?"]}`
+- Learner action: Answer the standalone question “Which skill, if any, have you improved recently?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which skill, if any, have you improved recently?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which skill, if any, have you improved recently?” / “最近、上達した技能があるとしたら何ですか？” Tutor follow-ups: “What helped you improve?” and “Which is easier to improve: cooking, exercise, or language?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最近、上達した技能があるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which skill, if any, have you improved recently?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which real task rewards breadth across several abilities?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which real task rewards breadth across several abilities?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which real task rewards breadth across several abilities?” / “うまく行うために三つの技能が必要な課題は何ですか？” Follow-ups: “Which skill frames the problem and which delivers the result?” and “Where would specialist depth still be indispensable?”
-- Learning target: Develop the distinct “A three-skill task” angle of Being great at one thing or good at many? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A three-skill task” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which real task rewards breadth across several abilities?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “うまく行うために三つの技能が必要な課題は何ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which real task rewards breadth across several abilities?"]}`
+- Learner action: Answer the standalone question “Which skills matter most when planning a complicated trip?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which skills matter most when planning a complicated trip?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which skills matter most when planning a complicated trip?” / “複雑な旅行を計画するとき、どんな技能が最も重要ですか？” Tutor follow-ups: “Which skill is hardest to replace?” and “Which part is hardest: choosing a place, budgeting, or organizing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “複雑な旅行を計画するとき、どんな技能が最も重要ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which skills matter most when planning a complicated trip?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Would you rather develop exceptional depth in one skill or broad ability across many?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would you rather develop exceptional depth in one skill or broad ability across many?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would you rather develop exceptional depth in one skill or broad ability across many?” / “一つの技能の深い専門性と、多くの技能にわたる幅広い能力のどちらを伸ばしたいですか？” Follow-ups: “Which future task rewards the chosen learning shape?” and “What maintenance cost comes with the path you rejected?”
-- Learning target: Develop the distinct “Depth or breadth” angle of Being great at one thing or good at many? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Depth or breadth” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would you rather develop exceptional depth in one skill or broad ability across many?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一つの技能の深い専門性と、多くの技能にわたる幅広い能力のどちらを伸ばしたいですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather develop exceptional depth in one skill or broad ability across many?"]}`
+- Learner action: Answer the standalone question “Would you rather become excellent at one skill or good at many?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you rather become excellent at one skill or good at many?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you rather become excellent at one skill or good at many?” / “一つの技能の深い専門性と、多くの技能にわたる幅広い能力のどちらを伸ばしたいですか？” Tutor follow-ups: “Which skill or group of skills do you imagine?” and “What skill would you happily practise every week for a year?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの技能の深い専門性と、多くの技能にわたる幅広い能力のどちらを伸ばしたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather become excellent at one skill or good at many?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “What would a serious one-year learning plan prioritise under your chosen path?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What would a serious one-year learning plan prioritise under your chosen path?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What would a serious one-year learning plan prioritise under your chosen path?” / “選んだ能力を伸ばすために、一年をどう使いますか？” Follow-ups: “How would exploration and deliberate practice divide the year?” and “Which milestone would justify narrowing or widening the plan?”
-- Learning target: Develop the distinct “One year of practice” angle of Being great at one thing or good at many? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “One year of practice” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What would a serious one-year learning plan prioritise under your chosen path?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだ能力を伸ばすために、一年をどう使いますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would a serious one-year learning plan prioritise under your chosen path?"]}`
+- Learner action: Answer the standalone question “With one year to learn, would you study one skill deeply or try five?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “With one year to learn, would you study one skill deeply or try five?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “With one year to learn, would you study one skill deeply or try five?” / “学ぶ時間が一年あるなら、一つを深く学ぶのと五つを試すのと、どちらがよいですか？” Tutor follow-ups: “How would you measure progress?” and “Would you rather practise daily or try something new each week?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “学ぶ時間が一年あるなら、一つを深く学ぶのと五つを試すのと、どちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["With one year to learn, would you study one skill deeply or try five?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Which mix of deep specialists and broad connectors makes a team resilient?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which mix of deep specialists and broad connectors makes a team resilient?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which mix of deep specialists and broad connectors makes a team resilient?” / “チームには、専門家と幅広い技能を持つ人のどちらが多く必要ですか？” Follow-ups: “Which role connects specialist knowledge across the team?” and “How would the ideal mix change under time pressure?”
-- Learning target: Develop the distinct “Build a team” angle of Being great at one thing or good at many? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Build a team” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which mix of deep specialists and broad connectors makes a team resilient?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “チームには、専門家と幅広い技能を持つ人のどちらが多く必要ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which mix of deep specialists and broad connectors makes a team resilient?"]}`
+- Learner action: Answer the standalone question “On a small team, which is more useful: one specialist or one person who can do several jobs?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “On a small team, which is more useful: one specialist or one person who can do several jobs?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “On a small team, which is more useful: one specialist or one person who can do several jobs?” / “小さなチームでは、一人の専門家と、いくつもの仕事ができる人のどちらが役立ちますか？” Tutor follow-ups: “Why would that person help the team?” and “Can a flexible worker help when a teammate is absent?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “小さなチームでは、一人の専門家と、いくつもの仕事ができる人のどちらが役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["On a small team, which is more useful: one specialist or one person who can do several jobs?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “When entering an unfamiliar field, how long should exploration continue before specialisation?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “When entering an unfamiliar field, how long should exploration continue before specialisation?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “When entering an unfamiliar field, how long should exploration continue before specialisation?” / “まったく新しい分野なら、広く始めますか、深く始めますか？” Follow-ups: “Which foundation must be broad before specialisation begins?” and “What evidence would show that it is time to commit?”
-- Learning target: Develop the distinct “A completely new field” angle of Being great at one thing or good at many? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A completely new field” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “When entering an unfamiliar field, how long should exploration continue before specialisation?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “まったく新しい分野なら、広く始めますか、深く始めますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When entering an unfamiliar field, how long should exploration continue before specialisation?"]}`
+- Learner action: Answer the standalone question “Which new skill would you rather learn: cooking, photography, or first aid?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which new skill would you rather learn: cooking, photography, or first aid?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which new skill would you rather learn: cooking, photography, or first aid?” / “新しく学ぶなら、料理、写真、応急手当のどれがよいですか？” Tutor follow-ups: “Why would that skill be useful?” and “Which is easiest to practise at home: cooking, photography, or first aid?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しく学ぶなら、料理、写真、応急手当のどれがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which new skill would you rather learn: cooking, photography, or first aid?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “What change in task, team, or time horizon would reverse your learning strategy?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What change in task, team, or time horizon would reverse your learning strategy?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What change in task, team, or time horizon would reverse your learning strategy?” / “どんな目標なら、深さと広さの選択を変えますか？” Follow-ups: “Which task complexity or deadline reverses the strategy?” and “Would access to a strong team change the required personal breadth?”
-- Learning target: Develop the distinct “A goal that changes the path” angle of Being great at one thing or good at many? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A goal that changes the path” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What change in task, team, or time horizon would reverse your learning strategy?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな目標なら、深さと広さの選択を変えますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What change in task, team, or time horizon would reverse your learning strategy?"]}`
+- Learner action: Answer the standalone question “When is being good at several skills more useful than mastering one?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is being good at several skills more useful than mastering one?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is being good at several skills more useful than mastering one?” / “複数の技能が得意なことは、どんなときに一つを極めるより役立ちますか？” Tutor follow-ups: “Where would deep expertise still help?” and “When is broad knowledge more useful: planning or fixing one technical problem?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “複数の技能が得意なことは、どんなときに一つを極めるより役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is being good at several skills more useful than mastering one?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor to choose between deep expertise in one skill and broad ability across many skills, then compare the reasons behind both answers.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor to choose between deep expertise in one skill and broad ability across many skills, then compare the reasons behind both answers.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor to choose between deep expertise in one skill and broad ability across many skills, then compare the reasons behind both answers.” / “チューターに一つの技能の深い専門性と多くの技能にわたる幅広い能力のどちらを選ぶか聞き、お互いの理由を比べてください。” Follow-ups: “How does the tutor balance exploration with deliberate practice?” and “Which future task would reverse their learning strategy?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターに一つの技能の深い専門性と多くの技能にわたる幅広い能力のどちらを選ぶか聞き、お互いの理由を比べてください。” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor to choose between deep expertise in one skill and broad ability across many skills, then compare the reasons behind both answers."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which skill would your tutor choose to master?” and “Would six months to learn change the answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

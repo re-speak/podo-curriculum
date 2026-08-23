@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-full/lessons/25-your-go-to-late-night-food/lesson.html`
-- SHA-256: `3f714891d0d9e5a36e167354ac79b878145cefb0c6acb8413d2365afe8358093`
+- SHA-256: `a389d11bfacf4c3133c6e4d32a42c02a70cc7f74696f258b04db48611d4e4102`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
 - Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Generator-owned semantic inspection is complete; root visual inspection at 360px and 480px is still pending.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending.
+- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
 - Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending.
+- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
 - Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending.
+- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “It's 11pm and you're hungry. What do you order?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes that your first choice?” rather than asking every follow-up.
-- Visible target or prompt: It's 11pm and you're hungry. What do you order? 夜11時にお腹がすきました。何を注文しますか？
-- Learning target: Explore the distinct “The 11 p.m. order (夜11時の注文)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes that your first choice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes that your first choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “It's 11pm and you're hungry. What do you order?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Where would you order it from?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “It's 11pm and you're hungry. What do you order?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “It's 11pm and you're hungry. What do you order?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “It's 11pm and you're hungry. What do you order?” / “夜11時にお腹がすきました。何を注文しますか？” Tutor follow-ups: “What makes that your first choice?” and “Where would you order it from?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “夜11時にお腹がすきました。何を注文しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["It's 11pm and you're hungry. What do you order?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What kind of night makes late-night food especially appealing?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What keeps you awake on a night like that?” rather than asking every follow-up.
-- Visible target or prompt: What kind of night makes late-night food especially appealing? どんな夜だと、夜食が特にほしくなりますか？
-- Learning target: Explore the distinct “A late-night situation (夜食がほしくなる時)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What keeps you awake on a night like that?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What keeps you awake on a night like that?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of night makes late-night food especially appealing?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How does your mood affect what you want to eat?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What kind of night makes late-night food especially appealing?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of night makes late-night food especially appealing?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of night makes late-night food especially appealing?” / “どんな夜だと、夜食が特に魅力的に感じますか？” Tutor follow-ups: “Which need matters most then: comfort, speed, or hunger?” and “What makes the meal memorable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな夜だと、夜食が特に魅力的に感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of night makes late-night food especially appealing?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “If you ate late at night, what would you be most likely to choose?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How would it compare with your daytime choice?” rather than asking every follow-up.
-- Visible target or prompt: If you ate late at night, what would you be most likely to choose? 夜遅くに食べるなら、いちばん選びそうなものは何ですか？
-- Learning target: Explore the distinct “Your likely choice (選びそうなもの)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How would it compare with your daytime choice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How would it compare with your daytime choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “If you ate late at night, what would you be most likely to choose?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might make you choose something else?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you ate late at night, what would you be most likely to choose?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which is better late at night: a hot meal or a quick snack?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is better late at night: a hot meal or a quick snack?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is better late at night: a hot meal or a quick snack?” / “夜遅くには、温かい食事と手軽な軽食のどちらがよいですか？” Tutor follow-ups: “How does the next morning affect your choice?” and “Which situation reverses your answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “夜遅くには、温かい食事と手軽な軽食のどちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is better late at night: a hot meal or a quick snack?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What usually decides whether you eat after 10 p.m.?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does hunger or routine matter more?” rather than asking every follow-up.
-- Visible target or prompt: What usually decides whether you eat after 10 p.m.? 夜10時以降に食べるかどうかは、普段何で決まりますか？
-- Learning target: Explore the distinct “What decides it (食べるかどうか)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Does hunger or routine matter more?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does hunger or routine matter more?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What usually decides whether you eat after 10 p.m.?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make a late meal worth it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually decides whether you eat after 10 p.m.?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What decides whether you eat after 10 p.m.?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What decides whether you eat after 10 p.m.?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What decides whether you eat after 10 p.m.?” / “夜10時を過ぎて食べるかどうかは、何で決まりますか？” Tutor follow-ups: “How much does the next day's schedule matter?” and “Which feeling can be mistaken for hunger?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “夜10時を過ぎて食べるかどうかは、何で決まりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What decides whether you eat after 10 p.m.?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “If you shared a late-night meal, who would it be with?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How might that person change the order?” rather than asking every follow-up.
-- Visible target or prompt: If you shared a late-night meal, who would it be with? 誰かと夜食を食べるなら、誰を選びますか？
-- Learning target: Explore the distinct “Who with (一緒に食べる人)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How might that person change the order?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How might that person change the order?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “If you shared a late-night meal, who would it be with?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would be different if you ate alone?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you shared a late-night meal, who would it be with?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Who makes a late-night meal more fun to share?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who makes a late-night meal more fun to share?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who makes a late-night meal more fun to share?” / “夜食を一緒に食べると楽しくなるのは、どんな人ですか？” Tutor follow-ups: “What kind of conversation fits that meal?” and “Could company change what you order?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “夜食を一緒に食べると楽しくなるのは、どんな人ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who makes a late-night meal more fun to share?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What late-night food might you regret in the morning?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What might feel wrong the next day?” rather than asking every follow-up.
-- Visible target or prompt: What late-night food might you regret in the morning? 翌朝に後悔しそうな夜食は何ですか？
-- Learning target: Explore the distinct “The morning after (翌朝)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What might feel wrong the next day?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What might feel wrong the next day?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What late-night food might you regret in the morning?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why could it still be tempting at night?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What late-night food might you regret in the morning?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What late-night food might you regret in the morning?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What late-night food might you regret in the morning?” / “朝になって後悔しそうな夜食は何ですか？” Tutor follow-ups: “Which part creates the regret: amount, spice, or timing?” and “When might it still be worth it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “朝になって後悔しそうな夜食は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What late-night food might you regret in the morning?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What is the best late-night food in Japan?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Where should someone try it?” rather than asking every follow-up.
-- Visible target or prompt: What is the best late-night food in Japan? 日本でいちばんの夜食は何ですか？
-- Learning target: Explore the distinct “Japan's best late-night food (日本の最高の夜食)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Where should someone try it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Where should someone try it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the best late-night food in Japan?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes it especially good late at night?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What is the best late-night food in Japan?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is the best late-night food in Japan?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is the best late-night food in Japan?” / “日本でいちばんよい夜食は何ですか？” Tutor follow-ups: “Why is it better at night?” and “Would a visitor understand why people like it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日本でいちばんよい夜食は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the best late-night food in Japan?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would I not understand about that food at first?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which detail would change my mind?” rather than asking every follow-up.
-- Visible target or prompt: What would I not understand about that food at first? その食べ物について、私が最初は理解できなさそうなことは何ですか？
-- Learning target: Explore the distinct “What I might miss (私に伝わりにくいこと)” angle of “Your go-to late-night food” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which detail would change my mind?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which detail would change my mind?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would I not understand about that food at first?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What should I order with it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would I not understand about that food at first?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What late-night food looks ordinary but makes perfect sense at that hour?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What late-night food looks ordinary but makes perfect sense at that hour?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What late-night food looks ordinary but makes perfect sense at that hour?” / “普通に見えても、夜遅くにはぴったりな食べ物は何ですか？” Tutor follow-ups: “Which detail would a visitor miss?” and “Would it feel as good during the day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “普通に見えても、夜遅くにはぴったりな食べ物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What late-night food looks ordinary but makes perfect sense at that hour?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one strength, one focus, and one useful re-say.
 - Component consistency: Reuses the approved Freetalking feedback component with separate strength, focus, and useful-correction fields.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending.
+- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.

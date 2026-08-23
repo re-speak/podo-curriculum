@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/35-a-useless-fact-about-you/lesson.html`
-- SHA-256: `0da644044a3eaf7d320e0dde8c524f0b01b7a22130b7743644ef2bed65173033`
+- SHA-256: `ce424158ed8491afa8ba64a012b0ec47871ef4a060fe596fc03d92058ae12caf`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What's one fact about you that's interesting but not useful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How did you discover it?” rather than asking every follow-up.
-- Visible target or prompt: What's one fact about you that's interesting but not useful? 自分について、面白いけれど役には立たない事実は何ですか？
-- Learning target: Explore the distinct “One useless fact (役に立たない事実)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How did you discover it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How did you discover it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's one fact about you that's interesting but not useful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What question might it make someone ask?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's one fact about you that's interesting but not useful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one fact about you that's interesting but not useful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one fact about you that's interesting but not useful?” / “自分について、面白いけれど役には立たない事実は何ですか？” Tutor follow-ups: “How did you discover it?” and “Which is more interesting: a food fact, a habit, or a small skill?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分について、面白いけれど役には立たない事実は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one fact about you that's interesting but not useful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How long has that fact been true?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Did it happen by accident or by choice?” rather than asking every follow-up.
-- Visible target or prompt: How long has that fact been true? その事実は、いつから当てはまりますか？
-- Learning target: Explore the distinct “Since when (いつから？)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Did it happen by accident or by choice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Did it happen by accident or by choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How long has that fact been true?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What was different before?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How long has that fact been true?"]}`
+- Learner action: Answer the standalone question “Which has been true longer about you: a food preference or a daily habit?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which has been true longer about you: a food preference or a daily habit?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which has been true longer about you: a food preference or a daily habit?” / “食べ物の好みと毎日の習慣では、どちらがより長く自分に当てはまっていますか？” Tutor follow-ups: “What is one example?” and “Has it ever changed?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “食べ物の好みと毎日の習慣では、どちらがより長く自分に当てはまっていますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which has been true longer about you: a food preference or a daily habit?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Who would be most surprised by that fact?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would they guess instead?” rather than asking every follow-up.
-- Visible target or prompt: Who would be most surprised by that fact? その事実を知って、いちばん驚きそうな人は誰ですか？
-- Learning target: Explore the distinct “Who would be surprised (驚きそうな人)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What would they guess instead?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would they guess instead?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who would be most surprised by that fact?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why has the fact never come up?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would be most surprised by that fact?"]}`
+- Learner action: Answer the standalone question “What fact about you would surprise someone who knows you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What fact about you would surprise someone who knows you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What fact about you would surprise someone who knows you?” / “自分について、知り合いが驚きそうな事実は何ですか？” Tutor follow-ups: “What would they guess instead?” and “Which would surprise people more: a hidden skill, a strong dislike, or an unusual habit?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分について、知り合いが驚きそうな事実は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What fact about you would surprise someone who knows you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What makes the fact useless?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Could it help in one unusual situation?” rather than asking every follow-up.
-- Visible target or prompt: What makes the fact useless? その事実は、なぜ役に立たないのですか？
-- Learning target: Explore the distinct “Why useless (役に立たない理由)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Could it help in one unusual situation?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could it help in one unusual situation?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes the fact useless?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why is it worth remembering anyway?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes the fact useless?"]}`
+- Learner action: Answer the standalone question “Which is more interesting to hear about: a strange skill or a strong dislike?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is more interesting to hear about: a strange skill or a strong dislike?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is more interesting to hear about: a strange skill or a strong dislike?” / “変わった特技と強い苦手意識では、どちらの話がより面白いですか？” Tutor follow-ups: “Why did you choose that one?” and “What example comes to mind?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “変わった特技と強い苦手意識では、どちらの話がより面白いですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is more interesting to hear about: a strange skill or a strong dislike?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “How did the fact become true?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Was there one turning point?” rather than asking every follow-up.
-- Visible target or prompt: Conversation prompt: “How might an unusual fact about you come about?”
-- Learning target: Explore the distinct “How it became true (そうなった経緯)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Was there one turning point?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Was there one turning point?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How did the fact become true?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part of the story explains it best?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might an unusual fact about you come about?"]}`
+- Learner action: Answer the standalone question “Which is easier to share: a strange habit or an unusual preference?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is easier to share: a strange habit or an unusual preference?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is easier to share: a strange habit or an unusual preference?” / “変わった習慣と珍しい好みでは、どちらが話しやすいですか？” Tutor follow-ups: “Which one would you mention first?” and “Which one would surprise a friend more?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “変わった習慣と珍しい好みでは、どちらが話しやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is easier to share: a strange habit or an unusual preference?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What's one genuinely useful fact about you?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When does it become useful?” rather than asking every follow-up.
-- Visible target or prompt: What's one genuinely useful fact about you? 自分について、本当に役に立つ事実は何ですか？
-- Learning target: Explore the distinct “A useful fact (役に立つ事実)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When does it become useful?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When does it become useful?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's one genuinely useful fact about you?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who benefits from knowing it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's one genuinely useful fact about you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one genuinely useful fact about you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one genuinely useful fact about you?” / “自分について、本当に役に立つ事実は何ですか？” Tutor follow-ups: “When does it become useful?” and “Which is more useful to know: someone's schedule, food allergy, or practical skill?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分について、本当に役に立つ事実は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one genuinely useful fact about you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which useless facts make the best conversation starters?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes one easy to ask about?” rather than asking every follow-up.
-- Visible target or prompt: Which useless facts make the best conversation starters? どのような役に立たない事実が、会話のよいきっかけになりますか？
-- Learning target: Explore the distinct “A conversation starter (会話のきっかけ)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes one easy to ask about?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes one easy to ask about?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which useless facts make the best conversation starters?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would a fact feel too personal?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which useless facts make the best conversation starters?"]}`
+- Learner action: Answer the standalone question “Which would start a better conversation: a hidden skill or an unusual food opinion?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which would start a better conversation: a hidden skill or an unusual food opinion?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which would start a better conversation: a hidden skill or an unusual food opinion?” / “人に知られていない特技と珍しい食べ物の好みでは、どちらが会話のきっかけになりますか？” Tutor follow-ups: “What would you ask next?” and “When might it feel too personal?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人に知られていない特技と珍しい食べ物の好みでは、どちらが会話のきっかけになりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which would start a better conversation: a hidden skill or an unusual food opinion?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How would you use your fact in a playful introduction?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What exact sentence would you say?” rather than asking every follow-up.
-- Visible target or prompt: Conversation prompt: “How would you use an unusual fact about yourself in a playful introduction?”
-- Learning target: Explore the distinct “A playful introduction (楽しい自己紹介)” angle of “A useless fact about you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What exact sentence would you say?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What exact sentence would you say?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How would you use your fact in a playful introduction?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What follow-up would you hope to hear?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you use an unusual fact about yourself in a playful introduction?"]}`
+- Learner action: Answer the standalone question “What unusual fact would you include in a playful introduction?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What unusual fact would you include in a playful introduction?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What unusual fact would you include in a playful introduction?” / “楽しい自己紹介に、どんな少し変わった事実を入れますか？” Tutor follow-ups: “What exact sentence would you say?” and “Would a strange habit or a surprising preference be easier to introduce?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “楽しい自己紹介に、どんな少し変わった事実を入れますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What unusual fact would you include in a playful introduction?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

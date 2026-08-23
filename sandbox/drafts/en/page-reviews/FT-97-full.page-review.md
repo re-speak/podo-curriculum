@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/97-the-animal-your-friends-would-choose-for-you/lesson.html`
-- SHA-256: `75ff117b110c7f1b2357355a4b8c2e698b73d7688768125c221c1eda40ee9114`
+- SHA-256: `14115216b07db971e213c6cb13e6ed46125c348c89dddd1cae5ae09ad246beb7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which animal metaphor captures one important part of your personality?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which animal metaphor captures one important part of your personality?”, react or share briefly, then choose at most one relevant probe such as “Which trait does the metaphor illuminate?”.
-- Visible target or prompt: Which animal metaphor captures one important part of your personality? / どの動物の比喩が、あなたの性格の大切な一面を表しますか？ Follow-up pool: Which trait does the metaphor illuminate? Which part of your personality remains outside the comparison?
-- Learning target: Explore the distinct “Their animal for you” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which trait does the metaphor illuminate?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which trait does the metaphor illuminate?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which animal metaphor captures one important part of your personality?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which part of your personality remains outside the comparison?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which animal metaphor captures one important part of your personality?"]}`
+- Learner action: Answer the standalone question “Which animal best represents your personality?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which animal best represents your personality?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which animal best represents your personality?” / “どの動物があなたの性格を最もよく表しますか？” Tutor follow-ups: “Would you choose a dog, cat, fox, or bird?” and “Where does the comparison stop working?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの動物があなたの性格を最もよく表しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which animal best represents your personality?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which complexity in a person's character resists a simple animal metaphor?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which complexity in a person's character resists a simple animal metaphor?”, react or share briefly, then choose at most one relevant probe such as “Which behaviour supports it?”.
-- Visible target or prompt: Which complexity in a person's character resists a simple animal metaphor? / 人の性格のどんな複雑さが、単純な動物の比喩では表せませんか？ Follow-up pool: Which behaviour supports it? Which complexity did it fail to capture?
-- Learning target: Explore the distinct “Your reaction” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which behaviour supports it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which behaviour supports it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which complexity in a person's character resists a simple animal metaphor?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which complexity did it fail to capture?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which complexity in a person's character resists a simple animal metaphor?"]}`
+- Learner action: Answer the standalone question “Which animal would your friends choose for you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which animal would your friends choose for you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which animal would your friends choose for you?” / “友達はあなたにどの動物を選ぶと思いますか？” Tutor follow-ups: “Would they choose a dog, cat, or bird?” and “How is a dog's personality different from a cat's?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “友達はあなたにどの動物を選ぶと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which animal would your friends choose for you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Would you select an animal as your own symbol, or reject the comparison?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Would you select an animal as your own symbol, or reject the comparison?”, react or share briefly, then choose at most one relevant probe such as “Which quality does it symbolize?”.
-- Visible target or prompt: Would you select an animal as your own symbol, or reject the comparison? / 自分の象徴として動物を選びますか。それとも、その比較を断りますか？ Follow-up pool: Which quality does it symbolize? Which complexity defeats every single-animal metaphor?
-- Learning target: Explore the distinct “Your own animal” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which quality does it symbolize?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which quality does it symbolize?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would you select an animal as your own symbol, or reject the comparison?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which complexity defeats every single-animal metaphor?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you select an animal as your own symbol, or reject the comparison?"]}`
+- Learner action: Answer the standalone question “Which animal quality would you like to develop more in yourself?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which animal quality would you like to develop more in yourself?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which animal quality would you like to develop more in yourself?” / “どんな動物の性質を、自分の中でもっと伸ばしたいですか？” Tutor follow-ups: “Would you choose a dog's loyalty, a cat's independence, or a bird's freedom?” and “When would that quality help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな動物の性質を、自分の中でもっと伸ばしたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which animal quality would you like to develop more in yourself?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What can a gap between self-image and an observer's animal metaphor reveal?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What can a gap between self-image and an observer's animal metaphor reveal?”, react or share briefly, then choose at most one relevant probe such as “Which outward behaviour could explain the observer's metaphor?”.
-- Visible target or prompt: What can a gap between self-image and an observer's animal metaphor reveal? / 自己像と観察者の動物の比喩の違いから、何が分かりますか？ Follow-up pool: Which outward behaviour could explain the observer's metaphor? Which internal motive could explain the self-image?
-- Learning target: Explore the distinct “Why the choices differ” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which outward behaviour could explain the observer's metaphor?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which outward behaviour could explain the observer's metaphor?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can a gap between self-image and an observer's animal metaphor reveal?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which internal motive could explain the self-image?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can a gap between self-image and an observer's animal metaphor reveal?"]}`
+- Learner action: Answer the standalone question “What might friends notice in your habits that you overlook in yourself?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What might friends notice in your habits that you overlook in yourself?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What might friends notice in your habits that you overlook in yourself?” / “自分では見落としていても、友人が習慣の中で気づくことは何ですか？” Tutor follow-ups: “Which habit might they notice?” and “Do people notice a person's voice or body language first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分では見落としていても、友人が習慣の中で気づくことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might friends notice in your habits that you overlook in yourself?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which animal comparison would feel fundamentally inaccurate?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which animal comparison would feel fundamentally inaccurate?”, react or share briefly, then choose at most one relevant probe such as “Which associated trait creates the mismatch?”.
-- Visible target or prompt: Which animal comparison would feel fundamentally inaccurate? / どの動物の比較なら、根本的に自分と違うと感じますか？ Follow-up pool: Which associated trait creates the mismatch? Could another cultural meaning make the comparison more plausible?
-- Learning target: Explore the distinct “Not that animal” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which associated trait creates the mismatch?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which associated trait creates the mismatch?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which animal comparison would feel fundamentally inaccurate?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Could another cultural meaning make the comparison more plausible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which animal comparison would feel fundamentally inaccurate?"]}`
+- Learner action: Answer the standalone question “Which animal is least like you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which animal is least like you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which animal is least like you?” / “あなたに最も似ていない動物は何ですか？” Tutor follow-ups: “Would a loud, slow, or highly social animal feel least like you?” and “Could one trait still fit?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたに最も似ていない動物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which animal is least like you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How can context produce different animal metaphors for the same person?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How can context produce different animal metaphors for the same person?”, react or share briefly, then choose at most one relevant probe such as “Which context-dependent behaviour alters the metaphor most?”.
-- Visible target or prompt: How can context produce different animal metaphors for the same person? / 状況によって、同じ人に異なる動物の比喩が生まれるのはなぜですか？ Follow-up pool: Which context-dependent behaviour alters the metaphor most? Which underlying characteristic remains stable across contexts?
-- Learning target: Explore the distinct “A different setting” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which context-dependent behaviour alters the metaphor most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which context-dependent behaviour alters the metaphor most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can context produce different animal metaphors for the same person?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which underlying characteristic remains stable across contexts?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can context produce different animal metaphors for the same person?"]}`
+- Learner action: Answer the standalone question “Which animal fits you on a busy day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which animal fits you on a busy day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which animal fits you on a busy day?” / “忙しい日の自分には、どの動物が合いますか？” Tutor follow-ups: “Which trait does that animal show?” and “On a busy day, do you move quickly or slowly?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “忙しい日の自分には、どの動物が合いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which animal fits you on a busy day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “I'll share three concrete traits from my life. Which animal metaphor fits them best?” and develop the most interesting concrete detail.
-- Tutor action: Ask “I'll share three concrete traits from my life. Which animal metaphor fits them best?”, react or share briefly, then choose at most one relevant probe such as “Which concrete trait carries the greatest weight in your metaphor?”.
-- Visible target or prompt: I'll share three concrete traits from my life. Which animal metaphor fits them best? / 私の生活から具体的な特徴を三つ話します。どの動物の比喩が最も合いますか？ Follow-up pool: Which concrete trait carries the greatest weight in your metaphor? Which limit of the comparison should remain explicit?
-- Learning target: Explore the distinct “Before choosing for me” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which concrete trait carries the greatest weight in your metaphor?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which concrete trait carries the greatest weight in your metaphor?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “I'll share three concrete traits from my life. Which animal metaphor fits them best?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which limit of the comparison should remain explicit?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["I'll share three concrete traits from my life. Which animal metaphor fits them best?"]}`
+- Learner action: Answer the standalone question “I'll share three real traits about myself. Which animal fits them?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “I'll share three real traits about myself. Which animal fits them?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “I'll share three real traits about myself. Which animal fits them?” / “私が自分の本当の特徴を三つ話します。どの動物が合いますか？” Tutor follow-ups: “Which trait has the strongest influence on your choice?” and “What does the animal comparison fail to capture?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “私が自分の本当の特徴を三つ話します。どの動物が合いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["I'll share three real traits about myself. Which animal fits them?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What does every single-animal metaphor leave out about a person?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What does every single-animal metaphor leave out about a person?”, react or share briefly, then choose at most one relevant probe such as “Which contradiction cannot fit the label?”.
-- Visible target or prompt: What does every single-animal metaphor leave out about a person? / 一つの動物の比喩は、人について何を必ず見落としますか？ Follow-up pool: Which contradiction cannot fit the label? Would combining two animals make the metaphor more accurate or merely more complicated?
-- Learning target: Explore the distinct “Beyond one animal” angle of “The animal your friends would choose for you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which contradiction cannot fit the label?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which contradiction cannot fit the label?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What does every single-animal metaphor leave out about a person?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Would combining two animals make the metaphor more accurate or merely more complicated?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What does every single-animal metaphor leave out about a person?"]}`
+- Learner action: Answer the standalone question “What important part of someone could never fit one animal comparison?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What important part of someone could never fit one animal comparison?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What important part of someone could never fit one animal comparison?” / “一つの動物のたとえでは決して表せない、人の大切な部分は何ですか？” Tutor follow-ups: “Could one animal show both kindness and ambition?” and “Would using two animals be fairer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの動物のたとえでは決して表せない、人の大切な部分は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What important part of someone could never fit one animal comparison?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

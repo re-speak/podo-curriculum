@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/64-what-you-did-with-your-first-paycheck/lesson.html`
-- SHA-256: `d3fce9fad561eadd120b951304a39a82358faa3bb7bd6a4db07ad2c5375e9ea6`
+- SHA-256: `d47f4ab507fe3f835999931ff50c15f1f068ecba35d4c1601e38b36fc7d49d14`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “How do people often use their first earnings in a memorable way?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part of the experience made it memorable?” rather than asking every follow-up.
-- Visible target or prompt: How do people often use their first earnings in a memorable way? / 人は初めての収入を、どのように印象に残る形で使うことが多いですか？
-- Learning target: Explore the distinct “First earnings (初めての収入)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which part of the experience made it memorable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part of the experience made it memorable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do people often use their first earnings in a memorable way?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What did the payment make possible that had not been possible before?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do people often use their first earnings in a memorable way?"]}`
+- Learner action: Answer the standalone question “What's a memorable way someone might use a first paycheck?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's a memorable way someone might use a first paycheck?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's a memorable way someone might use a first paycheck?” / “人は初めての収入を、どのように印象に残る形で使うことが多いですか？” Tutor follow-ups: “Which detail would make the memory last?” and “What new choice could even a small payment open up?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人は初めての収入を、どのように印象に残る形で使うことが多いですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's a memorable way someone might use a first paycheck?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Why can the emotional value of first earnings exceed their monetary value?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What shaped that perception?” rather than asking every follow-up.
-- Visible target or prompt: Why can the emotional value of first earnings exceed their monetary value? / なぜ、初めての収入の感情的な価値が、金銭的な価値を上回ることがあるのですか？
-- Learning target: Explore the distinct “The amount (金額)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What shaped that perception?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What shaped that perception?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can the emotional value of first earnings exceed their monetary value?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What could the payment realistically cover?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can the emotional value of first earnings exceed their monetary value?"]}`
+- Learner action: Answer the standalone question “Why can a first paycheck matter even when the amount is small?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can a first paycheck matter even when the amount is small?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can a first paycheck matter even when the amount is small?” / “なぜ、初めての収入の感情的な価値が、金銭的な価値を上回ることがあるのですか？” Tutor follow-ups: “Would the moment matter as much if the amount were tiny?” and “Which ordinary expense could the payment cover?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “なぜ、初めての収入の感情的な価値が、金銭的な価値を上回ることがあるのですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can a first paycheck matter even when the amount is small?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which forms of work can lead to a person's first earnings?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How much time or preparation did it require?” rather than asking every follow-up.
-- Visible target or prompt: Which forms of work can lead to a person's first earnings? / どのような形の仕事が、人の初めての収入につながり得ますか？
-- Learning target: Explore the distinct “The work behind it (お金を得た方法)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How much time or preparation did it require?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How much time or preparation did it require?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which forms of work can lead to a person's first earnings?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part demanded more effort than expected?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which forms of work can lead to a person's first earnings?"]}`
+- Learner action: Answer the standalone question “What kinds of work can lead to someone's first paycheck?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kinds of work can lead to someone's first paycheck?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kinds of work can lead to someone's first paycheck?” / “どのような形の仕事が、人の初めての収入につながり得ますか？” Tutor follow-ups: “Would a short job or a one-time task count?” and “What would someone need to learn before doing that work?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような形の仕事が、人の初めての収入につながり得ますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kinds of work can lead to someone's first paycheck?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What first use can give a paycheck lasting meaning?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which priority made that use come first?” rather than asking every follow-up.
-- Visible target or prompt: What first use can give a paycheck lasting meaning? / どんな最初の使い道が、給料に長く残る意味を与えますか？
-- Learning target: Explore the distinct “What it paid for (使い道)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which priority made that use come first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which priority made that use come first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What first use can give a paycheck lasting meaning?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Was any part saved, shared, or left unspent?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What first use can give a paycheck lasting meaning?"]}`
+- Learner action: Answer the standalone question “Which first-paycheck use feels most memorable: a gift, a treat, savings, or something else?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which first-paycheck use feels most memorable: a gift, a treat, savings, or something else?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which first-paycheck use feels most memorable: a gift, a treat, savings, or something else?” / “初めての給料では、贈り物、ご褒美、貯金、それとも別の使い道のどれがいちばんよい思い出になりますか？” Tutor follow-ups: “What would make that use memorable?” and “Would keeping part of the money change your choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “初めての給料では、贈り物、ご褒美、貯金、それとも別の使い道のどれがいちばんよい思い出になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which first-paycheck use feels most memorable: a gift, a treat, savings, or something else?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Who is most likely to hear about someone's first earnings?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What recognition or advice did they offer?” rather than asking every follow-up.
-- Visible target or prompt: Who is most likely to hear about someone's first earnings? / 誰かの初めての収入について、最も聞きそうなのは誰ですか？
-- Learning target: Explore the distinct “Who knew (誰に話したか)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What recognition or advice did they offer?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What recognition or advice did they offer?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who is most likely to hear about someone's first earnings?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What purpose did privacy serve?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who is most likely to hear about someone's first earnings?"]}`
+- Learner action: Answer the standalone question “Who is most likely to hear about someone's first paycheck?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who is most likely to hear about someone's first paycheck?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who is most likely to hear about someone's first paycheck?” / “誰かの初めての収入について、最も聞きそうなのは誰ですか？” Tutor follow-ups: “Would the first reaction be celebration, advice, or concern?” and “What might make the earner avoid telling anyone?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰かの初めての収入について、最も聞きそうなのは誰ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who is most likely to hear about someone's first paycheck?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How would you divide a modest unexpected payment among current priorities?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would you consume, save, share, or divide it among purposes?” rather than asking every follow-up.
-- Visible target or prompt: How would you divide a modest unexpected payment among current priorities? / 今の優先事項に合わせて、予想外の小額の収入をどう分けますか？
-- Learning target: Explore the distinct “What you would do now (今ならどうするか)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Would you consume, save, share, or divide it among purposes?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would you consume, save, share, or divide it among purposes?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How would you divide a modest unexpected payment among current priorities?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which present priority would determine the choice?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you divide a modest unexpected payment among current priorities?"]}`
+- Learner action: Answer the standalone question “Would you spend, save, share, or split a small unexpected payment?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you spend, save, share, or split a small unexpected payment?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you spend, save, share, or split a small unexpected payment?” / “予想外の少額の収入があったら、使いますか、貯めますか、人と分けますか、それともいくつかに分けますか？” Tutor follow-ups: “Which choice would come first?” and “Why would that choice matter now?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “予想外の少額の収入があったら、使いますか、貯めますか、人と分けますか、それともいくつかに分けますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you spend, save, share, or split a small unexpected payment?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What can first earnings reveal about work, money, or independence?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Did the insight come from earning, spending, or deciding?” rather than asking every follow-up.
-- Visible target or prompt: What can first earnings reveal about work, money, or independence? / 初めての収入は、仕事、お金、自立について何を示し得ますか？
-- Learning target: Explore the distinct “What it taught (学んだこと)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Did the insight come from earning, spending, or deciding?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Did the insight come from earning, spending, or deciding?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can first earnings reveal about work, money, or independence?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How has that lesson influenced a later choice?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can first earnings reveal about work, money, or independence?"]}`
+- Learner action: Answer the standalone question “What can a first paycheck teach someone about independence?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can a first paycheck teach someone about independence?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can a first paycheck teach someone about independence?” / “初めての収入は、仕事、お金、自立について何を示し得ますか？” Tutor follow-ups: “Which lesson comes from earning the money rather than using it?” and “Which lesson could shape a later decision?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “初めての収入は、仕事、お金、自立について何を示し得ますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can a first paycheck teach someone about independence?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What is one meaningful way to recognize a first paycheck without prescribing how it must be used?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which value would the choice express?” rather than asking every follow-up.
-- Visible target or prompt: What is one meaningful way to recognize a first paycheck without prescribing how it must be used? / 使い道を決めつけずに、初めての給料を意味のある形で記念する方法は何ですか？
-- Learning target: Explore the distinct “A meaningful first use (意味のある最初の使い道)” angle of “What you did with your first paycheck” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which value would the choice express?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which value would the choice express?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is one meaningful way to recognize a first paycheck without prescribing how it must be used?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How could the idea remain realistic with a modest amount?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one meaningful way to recognize a first paycheck without prescribing how it must be used?"]}`
+- Learner action: Answer the standalone question “What pressure should someone be free from when deciding what to do with a first paycheck?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What pressure should someone be free from when deciding what to do with a first paycheck?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What pressure should someone be free from when deciding what to do with a first paycheck?” / “初めての給料の使い道を決めるとき、どんなプレッシャーから自由であるべきですか？” Tutor follow-ups: “Why could that pressure feel unfair?” and “How could someone help without controlling the choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “初めての給料の使い道を決めるとき、どんなプレッシャーから自由であるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What pressure should someone be free from when deciding what to do with a first paycheck?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

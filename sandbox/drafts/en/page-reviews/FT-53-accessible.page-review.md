@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-accessible/lessons/53-why-some-friendships-fade/lesson.html`
-- SHA-256: `508cfffb01a8d278d82de79e6a19103762f84d07fa832e9994e6e08c1c679933`
+- SHA-256: `252bbcfaa729187d3f373147febef9fdf24b61a745f43fe3d21db7622c40b28b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Why do people's social circles change over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which life change has the biggest effect?” rather than asking every follow-up.
-- Visible target or prompt: Why do people's social circles change over time? / 人間関係は、時間とともになぜ変わるのでしょうか？
-- Learning target: Explore the distinct “Changing circles (変わる人間関係)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which life change has the biggest effect?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which life change has the biggest effect?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why do people's social circles change over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why can the change happen gradually?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why do people's social circles change over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do people's social circles change over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do people's social circles change over time?” / “人間関係は、時間とともになぜ変わるのでしょうか？” Tutor follow-ups: “Which life change has the biggest effect?” and “Why can the change happen gradually?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人間関係は、時間とともになぜ変わるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do people's social circles change over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which routines make friends see each other more or less often?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which routine is easiest to adjust?” rather than asking every follow-up.
-- Visible target or prompt: Which routines make friends see each other more or less often? / どのような生活習慣によって、友人と会う回数が増えたり減ったりしますか？
-- Learning target: Explore the distinct “Changing routines (変わる習慣)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which routine is easiest to adjust?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which routine is easiest to adjust?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which routines make friends see each other more or less often?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can two busy schedules stay connected?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which routines make friends see each other more or less often?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which routines make friends see each other more or less often?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which routines make friends see each other more or less often?” / “どのような生活習慣によって、友人と会う回数が増えたり減ったりしますか？” Tutor follow-ups: “Which routine is easiest to adjust?” and “How can two busy schedules stay connected?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような生活習慣によって、友人と会う回数が増えたり減ったりしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which routines make friends see each other more or less often?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How can friends drift apart while still caring about each other?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What may disappear first: time, routine, or shared interests?” rather than asking every follow-up.
-- Visible target or prompt: How can friends drift apart while still caring about each other? / お互いを大切に思っていても、友人同士が疎遠になるのはなぜですか？
-- Learning target: Explore the distinct “Drifting apart (疎遠になる)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What may disappear first: time, routine, or shared interests?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What may disappear first: time, routine, or shared interests?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can friends drift apart while still caring about each other?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What can still remain meaningful?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can friends drift apart while still caring about each other?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can friends drift apart while still caring about each other?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can friends drift apart while still caring about each other?” / “お互いを大切に思っていても、友人同士が疎遠になるのはなぜですか？” Tutor follow-ups: “What can still matter to both friends?” and “Could one message make the friendship easier to restart?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お互いを大切に思っていても、友人同士が疎遠になるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can friends drift apart while still caring about each other?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “When is a fading friendship nobody's fault?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which changes happen without a clear choice?” rather than asking every follow-up.
-- Visible target or prompt: When is a fading friendship nobody's fault? / 友情が薄れても、誰も悪くないと言えるのはどんなときですか？
-- Learning target: Explore the distinct “Nobody's fault (誰も悪くない変化)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which changes happen without a clear choice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which changes happen without a clear choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is a fading friendship nobody's fault?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why do people sometimes search for someone to blame?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When is a fading friendship nobody's fault?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is a fading friendship nobody's fault?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is a fading friendship nobody's fault?” / “友情が薄れても、誰も悪くないと言えるのはどんなときですか？” Tutor follow-ups: “Which changes happen without a clear choice?” and “Why do people sometimes search for someone to blame?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “友情が薄れても、誰も悪くないと言えるのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is a fading friendship nobody's fault?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which matters most: distance, time, or people changing?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Can two causes reinforce each other?” rather than asking every follow-up.
-- Visible target or prompt: Which matters most: distance, time, or people changing? / 距離、時間、人の変化のうち、どれが最も大きいですか？
-- Learning target: Explore the distinct “The main cause (主な原因)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Can two causes reinforce each other?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Can two causes reinforce each other?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which matters most: distance, time, or people changing?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which one is easiest to overcome?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which matters most: distance, time, or people changing?"]}`
+- Learner action: Answer the standalone question “What makes friends drift apart fastest: distance, busy lives, or changing interests?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes friends drift apart fastest: distance, busy lives, or changing interests?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes friends drift apart fastest: distance, busy lives, or changing interests?” / “友人が最も早く疎遠になる原因は、距離、忙しい生活、興味の変化のどれですか？” Tutor follow-ups: “Can two causes happen together?” and “Which one is easiest to overcome?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “友人が最も早く疎遠になる原因は、距離、忙しい生活、興味の変化のどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes friends drift apart fastest: distance, busy lives, or changing interests?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Is a fading friendship normal, or is it a problem?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes the difference?” rather than asking every follow-up.
-- Visible target or prompt: Is a fading friendship normal, or is it a problem? / 友情が薄れるのは自然なことですか、それとも問題ですか？
-- Learning target: Explore the distinct “Normal or a problem (自然か問題か)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes the difference?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes the difference?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Is a fading friendship normal, or is it a problem?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When does acceptance become avoidance?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Is a fading friendship normal, or is it a problem?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Is a fading friendship normal, or is it a problem?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Is a fading friendship normal, or is it a problem?” / “友情が薄れるのは自然なことですか、それとも問題ですか？” Tutor follow-ups: “What makes it feel normal?” and “When should someone try to fix it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “友情が薄れるのは自然なことですか、それとも問題ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is a fading friendship normal, or is it a problem?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “When is a faded friendship worth trying to renew?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What could a low-pressure first message say?” rather than asking every follow-up.
-- Visible target or prompt: When is a faded friendship worth trying to renew? / 薄れた友情をもう一度取り戻そうとする価値があるのは、どんなときですか？
-- Learning target: Explore the distinct “Worth renewing (関係を戻す価値)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What could a low-pressure first message say?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What could a low-pressure first message say?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is a faded friendship worth trying to renew?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which response would show that both people are interested?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When is a faded friendship worth trying to renew?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is a faded friendship worth trying to renew?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is a faded friendship worth trying to renew?” / “薄れた友情をもう一度取り戻そうとする価値があるのは、どんなときですか？” Tutor follow-ups: “What could a low-pressure first message say?” and “Which response would show that both people are interested?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “薄れた友情をもう一度取り戻そうとする価値があるのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is a faded friendship worth trying to renew?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How should people respond when a friendship fades?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which relationships deserve new effort?” rather than asking every follow-up.
-- Visible target or prompt: How should people respond when a friendship fades? / 友情が薄れたとき、人はどのように向き合うとよいですか？
-- Learning target: Explore the distinct “Responding to change (変化への向き合い方)” angle of “Why some friendships fade” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which relationships deserve new effort?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which relationships deserve new effort?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should people respond when a friendship fades?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can an old friendship still be valued without restarting it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How should people respond when a friendship fades?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How should people respond when a friendship fades?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How should people respond when a friendship fades?” / “友情が薄れたとき、人はどのように向き合うとよいですか？” Tutor follow-ups: “Which relationships deserve new effort?” and “How can an old friendship still be valued without restarting it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “友情が薄れたとき、人はどのように向き合うとよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should people respond when a friendship fades?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

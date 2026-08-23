@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/15-what-you-spend-the-most-money-on/lesson.html`
-- SHA-256: `a4683d864f59551f8546da726effde2e8703a5b07f07923beb7566c2aa4275b2`
+- SHA-256: `0c748cefc3280494d4c46a315224701dc0bf32289d36d4712ed6056398ce8e7a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Do you ever spend money just for fun?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What kind of thing feels worth buying for enjoyment?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Do you ever spend money just for fun? 楽しみのためだけにお金を使うことはありますか？
-- Learning target: Explore the distinct “Extra spending (楽しみのためのお金)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Do you ever spend money just for fun?” opens this angle; “What kind of thing feels worth buying for enjoyment?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What kind of thing feels worth buying for enjoyment?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Do you ever spend money just for fun?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do you prefer to save for?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “Do you ever spend money just for fun?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Do you ever spend money just for fun?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Do you ever spend money just for fun?” / “楽しみのためだけにお金を使うことはありますか？” Tutor follow-ups: “What kind of thing feels worth buying for enjoyment?” and “What do you prefer to save for?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “楽しみのためだけにお金を使うことはありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you ever spend money just for fun?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “Have you thought about buying something extra recently?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What caught your attention?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Which extra purchases are hardest to resist?”
-- Learning target: Explore the distinct “A recent expense (最近考えた支出)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you thought about buying something extra recently?” opens this angle; “What caught your attention?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What caught your attention?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you thought about buying something extra recently?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What made you buy it or pass it up?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which extra purchases are hardest to resist?"]}`
+- Learner action: Answer the standalone question “What small purchase is hardest to resist?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small purchase is hardest to resist?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small purchase is hardest to resist?” / “どんな小さな買い物がいちばん我慢しにくいですか？” Tutor follow-ups: “What catches your attention?” and “What makes walking away easier?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな小さな買い物がいちばん我慢しにくいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small purchase is hardest to resist?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “If you want to share, about how much can you spend on extras each month?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Has the amount changed recently?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you want to share, about how much can you spend on extras each month? 答えられる範囲で、毎月、自由に使うお金をどのくらいにしていますか？
-- Learning target: Explore the distinct “A comfortable range (答えられる範囲)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you want to share, about how much can you spend on extras each month?” opens this angle; “Has the amount changed recently?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Has the amount changed recently?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you want to share, about how much can you spend on extras each month?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes it go up or down?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you want to share, about how much can you spend on extras each month?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which do you spend more on: convenience, comfort, or fun?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which do you spend more on: convenience, comfort, or fun?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which do you spend more on: convenience, comfort, or fun?” / “便利さ、快適さ、楽しさの中で、どれにいちばんお金を使いますか？” Tutor follow-ups: “What is a typical example?” and “Has that changed recently?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “便利さ、快適さ、楽しさの中で、どれにいちばんお金を使いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which do you spend more on: convenience, comfort, or fun?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “When does extra spending feel worth it to you?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which benefit from that spending lasts the longest?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When does extra spending feel worth it to you? どんなとき、自由に使ったお金に価値があったと感じますか？
-- Learning target: Explore the distinct “When it feels worth it (価値を感じるとき)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “When does extra spending feel worth it to you?” opens this angle; “Which benefit from that spending lasts the longest?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which benefit from that spending lasts the longest?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When does extra spending feel worth it to you?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would it feel like too much?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does extra spending feel worth it to you?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “When does spending extra feel worth it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When does spending extra feel worth it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When does spending extra feel worth it?” / “少し多くお金を使ってもよいと思うのは、どんなときですか？” Tutor follow-ups: “Which benefit lasts longest?” and “When would it feel like too much?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “少し多くお金を使ってもよいと思うのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does spending extra feel worth it?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “What is one good reason not to buy something extra?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which reason matters most to you?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What is one good reason not to buy something extra? 必要ではない物を買わない理由を一つ挙げるなら、何ですか？
-- Learning target: Explore the distinct “A reason not to buy (買わない理由)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What is one good reason not to buy something extra?” opens this angle; “Which reason matters most to you?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which reason matters most to you?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What is one good reason not to buy something extra?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When might buying it still be okay?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one good reason not to buy something extra?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What usually makes you decide not to buy something?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What usually makes you decide not to buy something?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What usually makes you decide not to buy something?” / “物を買わないと決めるのは、ふつうどんな理由からですか？” Tutor follow-ups: “Which reason matters most?” and “When might you buy it anyway?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “物を買わないと決めるのは、ふつうどんな理由からですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually makes you decide not to buy something?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “What kind of spending do you think is a waste?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Why does it feel unnecessary?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What kind of spending do you think is a waste? あなたはどんな支出を無駄だと思いますか？
-- Learning target: Explore the distinct “Your idea of waste (自分が思う無駄)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What kind of spending do you think is a waste?” opens this angle; “Why does it feel unnecessary?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Why does it feel unnecessary?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What kind of spending do you think is a waste?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could it be important to someone else?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of spending do you think is a waste?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of spending looks wasteful to you but useful to someone else?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of spending looks wasteful to you but useful to someone else?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of spending looks wasteful to you but useful to someone else?” / “自分には無駄に見えても、ほかの人には役立ちそうな出費は何ですか？” Tutor follow-ups: “Why might they value it?” and “Which is easier to understand: spending on hobbies or convenience?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分には無駄に見えても、ほかの人には役立ちそうな出費は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of spending looks wasteful to you but useful to someone else?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “Has your view of any kind of spending changed?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What caused your view to change or stay the same?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What can change someone's view of a kind of spending?”
-- Learning target: Explore the distinct “A changed mind (変わった考え)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Has your view of any kind of spending changed?” opens this angle; “What caused your view to change or stay the same?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What caused your view to change or stay the same?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has your view of any kind of spending changed?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Whose opinion influenced you?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can change someone's view of a kind of spending?"]}`
+- Learner action: Answer the standalone question “What life change can completely change a budget?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What life change can completely change a budget?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What life change can completely change a budget?” / “どんな生活の変化で、予算は大きく変わりますか？” Tutor follow-ups: “Which cost would change first?” and “What would become less important?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな生活の変化で、予算は大きく変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What life change can completely change a budget?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “If your budget became tighter, is there any extra expense you would keep?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would you protect first?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If your budget became tighter, is there any extra expense you would keep? 予算が厳しくなったら、それでも残したい支出はありますか？
-- Learning target: Explore the distinct “Your real priority (本当の優先順位)” angle of “What you spend the most money on” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If your budget became tighter, is there any extra expense you would keep?” opens this angle; “What would you protect first?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would you protect first?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If your budget became tighter, is there any extra expense you would keep?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes that expense a priority?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If your budget became tighter, is there any extra expense you would keep?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “If money became tight, what small pleasure would be hard to give up?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If money became tight, what small pleasure would be hard to give up?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If money became tight, what small pleasure would be hard to give up?” / “お金に余裕がなくなったら、どんな小さな楽しみを手放しにくいですか？” Tutor follow-ups: “Why does it matter to you?” and “Could you find a cheaper version?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金に余裕がなくなったら、どんな小さな楽しみを手放しにくいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If money became tight, what small pleasure would be hard to give up?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

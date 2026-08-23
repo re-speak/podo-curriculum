@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-full/lessons/26-a-food-combination-you-just-dont-understand/lesson.html`
-- SHA-256: `06e4162da86216db14c5d23c584dd66e15463619cc4aa7aea0e52f4749b5c054`
+- SHA-256: `0133bc68cbde7fbece4683fc64cea1478d12ce7e68ce4f60d10cb69408917f31`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
 - Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Generator-owned semantic inspection is complete; root visual inspection at 360px and 480px is still pending.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending.
+- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
 - Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending.
+- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
 - Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending.
+- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Pineapple on pizza — yes or no?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would you eat one slice right now?” rather than asking every follow-up.
-- Visible target or prompt: Pineapple on pizza — yes or no? パイナップルのピザは、ありですか、なしですか？
-- Learning target: Explore the distinct “Pineapple on pizza (パイナップルのピザ)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Would you eat one slice right now?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would you eat one slice right now?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Pineapple on pizza — yes or no?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would your answer change if someone else ordered it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Pineapple on pizza — yes or no?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Pineapple on pizza — yes or no?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Pineapple on pizza — yes or no?” / “パイナップルのピザは、ありですか、なしですか？” Tutor follow-ups: “Would you eat one slice right now?” and “Would your answer change if someone else ordered it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “パイナップルのピザは、ありですか、なしですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Pineapple on pizza — yes or no?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What do you think pineapple adds to a pizza?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How might the sweetness work or clash?” rather than asking every follow-up.
-- Visible target or prompt: What do you think pineapple adds to a pizza? パイナップルはピザに何を加えると思いますか？
-- Learning target: Explore the distinct “What pineapple adds (パイナップルの役割)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How might the sweetness work or clash?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How might the sweetness work or clash?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do you think pineapple adds to a pizza?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would texture matter more than flavor?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you think pineapple adds to a pizza?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which would you rather try: sweet-and-salty popcorn or meat with fruit?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which would you rather try: sweet-and-salty popcorn or meat with fruit?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which would you rather try: sweet-and-salty popcorn or meat with fruit?” / “甘じょっぱいポップコーンと果物を使った肉料理なら、どちらを試したいですか？” Tutor follow-ups: “What sounds good about it?” and “What could make the other one work?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “甘じょっぱいポップコーンと果物を使った肉料理なら、どちらを試したいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which would you rather try: sweet-and-salty popcorn or meat with fruit?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What matters most in your answer: taste, texture, or the idea itself?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which detail is hardest to accept?” rather than asking every follow-up.
-- Visible target or prompt: What matters most in your answer: taste, texture, or the idea itself? 答えを決めるうえで、味、食感、組み合わせのイメージのどれがいちばん大切ですか？
-- Learning target: Explore the distinct “Why your side (その立場の理由)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which detail is hardest to accept?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which detail is hardest to accept?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What matters most in your answer: taste, texture, or the idea itself?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What detail might work better than expected?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What matters most in your answer: taste, texture, or the idea itself?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which matters most in a strange food combination: taste, texture, or the idea?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which matters most in a strange food combination: taste, texture, or the idea?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which matters most in a strange food combination: taste, texture, or the idea?” / “変わった食べ合わせでは、味、食感、組み合わせのイメージのどれがいちばん大切ですか？” Tutor follow-ups: “How much can the name influence the first bite?” and “Which part can a skilled cook fix?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “変わった食べ合わせでは、味、食感、組み合わせのイメージのどれがいちばん大切ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which matters most in a strange food combination: taste, texture, or the idea?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Invent an unusual food combination that might actually work.” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would make the flavors work together?” rather than asking every follow-up.
-- Visible target or prompt: Invent an unusual food combination that might actually work. 意外でも、実際には合いそうな食べ合わせを考えてください。
-- Learning target: Explore the distinct “Your own combination (自分の組み合わせ)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What would make the flavors work together?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would make the flavors work together?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Invent an unusual food combination that might actually work.” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who might enjoy it most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Invent an unusual food combination that might actually work."]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which sounds better to try: chocolate with chili, fries with ice cream, or something else?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which sounds better to try: chocolate with chili, fries with ice cream, or something else?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which sounds better to try: chocolate with chili, fries with ice cream, or something else?” / “試すなら、チョコレートと唐辛子、フライドポテトとアイスクリーム、それとも別の組み合わせのどれがよさそうですか？” Tutor follow-ups: “Which contrast makes it sound interesting?” and “How would you serve it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “試すなら、チョコレートと唐辛子、フライドポテトとアイスクリーム、それとも別の組み合わせのどれがよさそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which sounds better to try: chocolate with chili, fries with ice cream, or something else?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which popular food pairing is hardest for you to understand?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What exactly feels wrong about it?” rather than asking every follow-up.
-- Visible target or prompt: Which popular food pairing is hardest for you to understand? 人気はあるけれど、自分にはいちばん理解しにくい食べ合わせは何ですか？
-- Learning target: Explore the distinct “Hard to understand (理解しにくい組み合わせ)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What exactly feels wrong about it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What exactly feels wrong about it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which popular food pairing is hardest for you to understand?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What could make a better version of it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which popular food pairing is hardest for you to understand?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which popular food pairing is hardest for you to understand?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which popular food pairing is hardest for you to understand?” / “人気があっても、いちばん理解しにくい食べ合わせは何ですか？” Tutor follow-ups: “Is the problem flavor, texture, or the idea?” and “What do fans probably enjoy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人気があっても、いちばん理解しにくい食べ合わせは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which popular food pairing is hardest for you to understand?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What food combination could you imagine changing your mind about?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would persuade you to try it again?” rather than asking every follow-up.
-- Visible target or prompt: What food combination could you imagine changing your mind about? どんな食べ合わせなら、考えが変わるかもしれませんか？
-- Learning target: Explore the distinct “A changed mind (変わるかもしれない好み)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What would persuade you to try it again?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would persuade you to try it again?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What food combination could you imagine changing your mind about?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Whose version would you trust?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What food combination could you imagine changing your mind about?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What food combination could you imagine changing your mind about?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What food combination could you imagine changing your mind about?” / “考えが変わるかもしれない食べ合わせは何ですか？” Tutor follow-ups: “What would make you willing to try it again?” and “Could one good meal change your mind?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “考えが変わるかもしれない食べ合わせは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What food combination could you imagine changing your mind about?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What food combination would you refuse to try?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is the limit about one ingredient?” rather than asking every follow-up.
-- Visible target or prompt: What food combination would you refuse to try? どんな食べ合わせなら、試すのを断りますか？
-- Learning target: Explore the distinct “A firm no (絶対に無理)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Is the limit about one ingredient?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the limit about one ingredient?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What food combination would you refuse to try?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could any setting change your answer?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What food combination would you refuse to try?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What food combination would you refuse to try?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What food combination would you refuse to try?” / “絶対に試したくない食べ合わせは何ですか？” Tutor follow-ups: “Where does curiosity stop for you?” and “Is the limit about safety or simply how it feels?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “絶対に試したくない食べ合わせは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What food combination would you refuse to try?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which strange combination would you give one fair chance?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who would you trust to make it?” rather than asking every follow-up.
-- Visible target or prompt: Which strange combination would you give one fair chance? 変わった食べ合わせを一つだけ公平に試すなら、何にしますか？
-- Learning target: Explore the distinct “One fair chance (一度だけ試すなら)” angle of “A food combination you just don't understand” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Who would you trust to make it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who would you trust to make it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which strange combination would you give one fair chance?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would count as a successful first bite?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which strange combination would you give one fair chance?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Who would you trust to choose one strange bite for you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who would you trust to choose one strange bite for you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who would you trust to choose one strange bite for you?” / “変わった食べ物を一口だけ選んでもらうなら、誰を信頼しますか？” Tutor follow-ups: “Would you want a safe surprise or a real challenge?” and “Would liking one bite be enough?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “変わった食べ物を一口だけ選んでもらうなら、誰を信頼しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would you trust to choose one strange bite for you?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one strength, one focus, and one useful re-say.
 - Component consistency: Reuses the approved Freetalking feedback component with separate strength, focus, and useful-correction fields.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending.
+- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.

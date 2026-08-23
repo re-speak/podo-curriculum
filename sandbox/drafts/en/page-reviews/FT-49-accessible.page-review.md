@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-accessible/lessons/49-how-accurate-is-your-mbti/lesson.html`
-- SHA-256: `869062e3aa75757c9d778f432b200d625e16313a90c43a1d99de2f7458a2a392`
+- SHA-256: `a8a9b80bf45188b69a0a42a8eed771b33baf9d618c37c847110916943b7ea9e1`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What do people hope an MBTI result will explain?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why can a simple label feel useful?” rather than asking every follow-up.
-- Visible target or prompt: What do people hope an MBTI result will explain? / 人はMBTIの結果から、何が分かることを期待しますか？
-- Learning target: Explore the distinct “Why people use it (使う理由)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why can a simple label feel useful?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why can a simple label feel useful?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do people hope an MBTI result will explain?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which questions about personality are harder to answer?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What do people hope an MBTI result will explain?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do people hope an MBTI result will explain?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do people hope an MBTI result will explain?” / “人はMBTIの結果から、何が分かることを期待しますか？” Tutor follow-ups: “Why can a simple label feel useful?” and “Which questions about personality are harder to answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人はMBTIの結果から、何が分かることを期待しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do people hope an MBTI result will explain?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which part of an MBTI description tends to feel most convincing?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What kind of example makes a description believable?” rather than asking every follow-up.
-- Visible target or prompt: Which part of an MBTI description tends to feel most convincing? / MBTIの説明では、どの部分がいちばん納得しやすいですか？
-- Learning target: Explore the distinct “A convincing description (納得しやすい説明)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What kind of example makes a description believable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What kind of example makes a description believable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of an MBTI description tends to feel most convincing?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why do people remember the parts that fit?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of an MBTI description tends to feel most convincing?"]}`
+- Learner action: Answer the standalone question “Which part of an MBTI description often sounds believable?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of an MBTI description often sounds believable?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of an MBTI description often sounds believable?” / “MBTIの説明では、どの部分が当たっているように聞こえやすいですか？” Tutor follow-ups: “What kind of example makes a description believable?” and “Which sounds more believable: a social habit, a work habit, or a way of making decisions?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “MBTIの説明では、どの部分が当たっているように聞こえやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of an MBTI description often sounds believable?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “When can MBTI describe someone's behavior especially well?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which situations show a stable pattern?” rather than asking every follow-up.
-- Visible target or prompt: When can MBTI describe someone's behavior especially well? / MBTIが人の行動を特によく表すのは、どんなときですか？
-- Learning target: Explore the distinct “In real life (実生活では)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which situations show a stable pattern?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which situations show a stable pattern?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When can MBTI describe someone's behavior especially well?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When might the same person act differently?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can MBTI describe someone's behavior especially well?"]}`
+- Learner action: Answer the standalone question “When can an MBTI result fit someone surprisingly well?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When can an MBTI result fit someone surprisingly well?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When can an MBTI result fit someone surprisingly well?” / “MBTIの結果が、驚くほどその人に当てはまるのはどんなときですか？” Tutor follow-ups: “Which situations show a stable pattern?” and “When might the same person act differently?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “MBTIの結果が、驚くほどその人に当てはまるのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can an MBTI result fit someone surprisingly well?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How might someone who knows a person well judge that person's MBTI result?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which habits might they notice?” rather than asking every follow-up.
-- Visible target or prompt: How might someone who knows a person well judge that person's MBTI result? / その人をよく知る人は、MBTIの結果をどのように判断すると思いますか？
-- Learning target: Explore the distinct “Other people's view (周りの見方)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which habits might they notice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which habits might they notice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How might someone who knows a person well judge that person's MBTI result?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why might their view differ from the test taker's?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might someone who knows a person well judge that person's MBTI result?"]}`
+- Learner action: Answer the standalone question “Who can judge a personality more clearly: the person or a close friend?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who can judge a personality more clearly: the person or a close friend?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who can judge a personality more clearly: the person or a close friend?” / “性格をより正確に判断できるのは、本人と親しい友人のどちらだと思いますか？” Tutor follow-ups: “Which habits might they notice?” and “Why might their view differ from the test taker's?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “性格をより正確に判断できるのは、本人と親しい友人のどちらだと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who can judge a personality more clearly: the person or a close friend?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What can an MBTI description get wrong about a person?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When is a description too general?” rather than asking every follow-up.
-- Visible target or prompt: What can an MBTI description get wrong about a person? / MBTIの説明は、人のどんなところを間違って表すことがありますか？
-- Learning target: Explore the distinct “What it misses (当たっていないところ)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When is a description too general?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When is a description too general?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can an MBTI description get wrong about a person?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which side of a person can a label miss?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What can an MBTI description get wrong about a person?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can an MBTI description get wrong about a person?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can an MBTI description get wrong about a person?” / “MBTIの説明は、人のどんなところを間違って表すことがありますか？” Tutor follow-ups: “When is a description too general?” and “Which side of a person can a label miss?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “MBTIの説明は、人のどんなところを間違って表すことがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can an MBTI description get wrong about a person?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What role should MBTI play when people first meet?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When can it start an interesting conversation?” rather than asking every follow-up.
-- Visible target or prompt: What role should MBTI play when people first meet? / 初めて会うとき、MBTIはどのような役割を持つとよいですか？
-- Learning target: Explore the distinct “Asking other people (人に聞くこと)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When can it start an interesting conversation?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When can it start an interesting conversation?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What role should MBTI play when people first meet?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What should people avoid assuming?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What role should MBTI play when people first meet?"]}`
+- Learner action: Answer the standalone question “Is asking about MBTI a good way to start a conversation?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Is asking about MBTI a good way to start a conversation?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Is asking about MBTI a good way to start a conversation?” / “MBTIについて聞くことは、会話を始めるよい方法ですか？” Tutor follow-ups: “When can it start an interesting conversation?” and “What should people avoid assuming?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “MBTIについて聞くことは、会話を始めるよい方法ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is asking about MBTI a good way to start a conversation?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Why might a person's MBTI result change over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How could experience change an answer?” rather than asking every follow-up.
-- Visible target or prompt: Why might a person's MBTI result change over time? / 人のMBTI結果が時間とともに変わるのはなぜですか？
-- Learning target: Explore the distinct “Change over time (時間と変化)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How could experience change an answer?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How could experience change an answer?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why might a person's MBTI result change over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which parts of personality may stay more stable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why might a person's MBTI result change over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why might a person's MBTI result change over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why might a person's MBTI result change over time?” / “人のMBTI結果が時間とともに変わるのはなぜですか？” Tutor follow-ups: “How could experience change an answer?” and “Which parts of personality may stay more stable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人のMBTI結果が時間とともに変わるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might a person's MBTI result change over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How can knowing someone's MBTI help—or mislead—the way we treat them?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which expectation could be useful?” rather than asking every follow-up.
-- Visible target or prompt: How can knowing someone's MBTI help—or mislead—the way we treat them? / 相手のMBTIを知ることは、接し方にどう役立ち、どう誤解を生むことがありますか？
-- Learning target: Explore the distinct “Labels and treatment (ラベルと接し方)” angle of “How accurate is your MBTI?” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which expectation could be useful?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which expectation could be useful?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can knowing someone's MBTI help—or mislead—the way we treat them?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can a label hide the individual?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can knowing someone's MBTI help—or mislead—the way we treat them?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can knowing someone's MBTI help—or mislead—the way we treat them?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can knowing someone's MBTI help—or mislead—the way we treat them?” / “相手のMBTIを知ることは、接し方にどう役立ち、どう誤解を生むことがありますか？” Tutor follow-ups: “Which expectation could be useful?” and “How can a label hide the individual?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “相手のMBTIを知ることは、接し方にどう役立ち、どう誤解を生むことがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can knowing someone's MBTI help—or mislead—the way we treat them?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

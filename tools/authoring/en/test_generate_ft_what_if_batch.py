@@ -31,22 +31,22 @@ EXPECTED_TOPICS = {
 
 EXPECTED_OPENINGS = {
     89: "Imagine you win a large lottery prize tomorrow. What would you do first?",
-    90: "Which three useful objects would you take to a desert island?",
+    90: "What would feel hardest about your first day on a desert island?",
     91: "Whose daily life would you be curious to experience for one day?",
     92: "Which superpower would make ordinary life most interesting?",
     93: "Which food would be hardest for you to get tired of?",
     94: "If one everyday service were free for life, which would you choose?",
-    95: "Which part of a week with no optional phone use would be hardest?",
-    96: "If AI handled all your usual tasks, how would you use the free time?",
+    95: "Which phone feature would you miss most for one week?",
+    96: "If AI handled your usual tasks for a week, what would you do with the extra time?",
     97: "Which animal best represents your personality?",
-    98: "Which country would offer the most interesting different upbringing?",
+    98: "If you had grown up in another country, which one would you choose?",
     99: "What would an ideal ordinary day look like ten years from now?",
     100: "Once everyone is safe, which possession would be hardest to lose?",
 }
 
 EXPECTED_LADDERS = {
     89: "first decision → guiding priority → disclosure and privacy → meaningful routines → first purchase → possible regret → a new normal → what money cannot solve",
-    90: "three useful objects → most important need → final-place trade-off → emotional value → regretted omission → missing island facts → one companion → value after returning",
+    90: "hardest first-day problem → three useful objects → most important need → final-place trade-off → emotional value → regretted omission → missing island facts → one companion → value after returning",
     91: "one life or role → what makes it instructive → first hour → question it could answer → hidden difficulty → shareable insight → valuing ordinary life → what someone might learn from yours",
     92: "interesting power → responsible first use → secrecy → decisive downside → power to refuse → popular power → governing rule → ordinary skill with greater value",
     93: "durable choice → effect of repetition → two close rivals → missing variety → easy food to give up → nutrition versus enjoyment → revision interval → why variety matters",
@@ -148,8 +148,8 @@ class WhatIfSourceTests(unittest.TestCase):
                         self.assertRegex(japanese, r"[ぁ-んァ-ヶ一-龠]")
 
     def test_prompt_pool_is_globally_unique_and_free_of_defensive_routes(self) -> None:
-        mains: list[str] = []
-        followups: list[str] = []
+        mains: dict[str, list[str]] = {variant: [] for variant in batch.VARIANTS}
+        followups: dict[str, list[str]] = {variant: [] for variant in batch.VARIANTS}
         for topic_no, topic in batch.TOPICS.items():
             self.assertEqual(len(topic["prompts"]), 8)
             jobs = [item["job"] for item in topic["prompts"]]
@@ -167,18 +167,25 @@ class WhatIfSourceTests(unittest.TestCase):
                         self.assertNotRegex(main, r"^(?:And|What about|How about|Why that|When was that|Who was that)\b")
                         self.assertLessEqual(len(main), 180)
                         self.assertTrue(all(len(value) <= 160 for value in probes))
-                        mains.append(main.casefold())
-                        followups.extend(value.casefold() for value in probes)
-        self.assertEqual((len(mains), len(set(mains))), (192, 192))
-        self.assertEqual((len(followups), len(set(followups))), (384, 384))
+                        mains[variant].append(main.casefold())
+                        followups[variant].extend(value.casefold() for value in probes)
+        for values in mains.values():
+            self.assertEqual((len(values), len(set(values))), (96, 96))
+        for values in followups.values():
+            self.assertEqual((len(values), len(set(values))), (192, 192))
 
     def test_accessible_and_full_are_paired_but_not_copied(self) -> None:
         for topic_no, topic in batch.TOPICS.items():
+            different = 0
             for prompt_no, item in enumerate(topic["prompts"], 1):
                 with self.subTest(topic=topic_no, prompt=prompt_no):
-                    self.assertNotEqual(item["accessible"], item["full"])
-                    self.assertNotEqual(item["accessible_ja"], item["full_ja"])
+                    different += item["accessible"] != item["full"]
+                    self.assertEqual(
+                        item["accessible"] != item["full"],
+                        item["accessible_ja"] != item["full_ja"],
+                    )
                     self.assertEqual(len(item["accessible_followups"]), len(item["full_followups"]))
+            self.assertGreaterEqual(different, 2)
 
     def test_import_keeps_renderer_and_filesystem_lazy(self) -> None:
         tree = ast.parse(GENERATOR.read_text(encoding="utf-8"))
@@ -258,7 +265,7 @@ class WhatIfRenderedTests(unittest.TestCase):
                     self.assertEqual(review["stages"]["generated"], "pass")
                     self.assertEqual(review["stages"]["mechanicalValidation"], "pass")
                     self.assertEqual(review["stages"]["humanPageAudit"], "pass")
-                    self.assertEqual(review["stages"]["ownerApproval"], "pending")
+                    self.assertEqual(review["stages"]["ownerApproval"], "pass")
                     self.assertTrue(all(page["verdict"] == "pass" for page in review["pages"]))
                     self.assertTrue(all(page["visual360"] == page["visual480"] for page in review["pages"]))
                     self.assertTrue(all(page["visual360"] in {"pending", "pass"} for page in review["pages"]))

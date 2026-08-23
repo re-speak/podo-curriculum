@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/70-how-ai-has-changed-your-work/lesson.html`
-- SHA-256: `2603a4da2457359d29293f6b385707289c16cde223e7136905e97c114116a9b6`
+- SHA-256: `34f0cf8cc8a1e991c2e4ae5e6b8d9be4243a33c3b4392d6cacc338be784a8235`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which everyday task has AI changed the most?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which task changed—or stayed the same?” rather than asking every follow-up.
-- Visible target or prompt: Which everyday task has AI changed the most? / AIが最も大きく変えた日常の作業は何ですか？
-- Learning target: Explore the distinct “One actual change (実際の変化)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which task changed—or stayed the same?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which task changed—or stayed the same?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which everyday task has AI changed the most?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What evidence shows the difference?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which everyday task has AI changed the most?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which everyday task has AI changed the most?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which everyday task has AI changed the most?” / “AIが最も大きく変えた日常の作業は何ですか？” Tutor follow-ups: “What changed in that task?” and “What result proves the change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIが最も大きく変えた日常の作業は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which everyday task has AI changed the most?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How was a common AI-assisted task done before and now?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which step disappeared or changed?” rather than asking every follow-up.
-- Visible target or prompt: How was a common AI-assisted task done before and now? / AIが使われるよくある作業は、以前と今でどう変わりましたか？
-- Learning target: Explore the distinct “Before and after (導入前と後)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which step disappeared or changed?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which step disappeared or changed?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How was a common AI-assisted task done before and now?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What kept the process stable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How was a common AI-assisted task done before and now?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How was a common AI-assisted task done before and now?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How was a common AI-assisted task done before and now?” / “AIが使われるよくある作業は、以前と今でどう変わりましたか？” Tutor follow-ups: “Which step disappeared or changed?” and “Which part stayed the same?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIが使われるよくある作業は、以前と今でどう変わりましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How was a common AI-assisted task done before and now?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Does AI usually make results better, worse, or simply different?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which quality changed?” rather than asking every follow-up.
-- Visible target or prompt: Does AI usually make results better, worse, or simply different? / AIは通常、結果をよくしますか、悪くしますか、それとも単に変えますか？
-- Learning target: Explore the distinct “The result (結果)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which quality changed?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which quality changed?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Does AI usually make results better, worse, or simply different?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What still needs a person's judgment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does AI usually make results better, worse, or simply different?"]}`
+- Learner action: Answer the standalone question “For one task you know, what has AI improved most: speed, quality, or neither?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For one task you know, what has AI improved most: speed, quality, or neither?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For one task you know, what has AI improved most: speed, quality, or neither?” / “知っている作業の一つで、AIが最も改善したのは、速さ、質、それともどちらでもないですか？” Tutor follow-ups: “What result shows the improvement?” and “What still needs a person's judgment?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “知っている作業の一つで、AIが最も改善したのは、速さ、質、それともどちらでもないですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For one task you know, what has AI improved most: speed, quality, or neither?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What new work can an AI tool create?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who checks or corrects it?” rather than asking every follow-up.
-- Visible target or prompt: What new work can an AI tool create? / AIツールは、どんな新しい作業を生み出すことがありますか？
-- Learning target: Explore the distinct “Work it created (増えた作業)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who checks or corrects it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who checks or corrects it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What new work can an AI tool create?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What kept the extra burden low?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What new work can an AI tool create?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What new work can an AI tool create?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What new work can an AI tool create?” / “AIツールは、どんな新しい作業を生み出すことがありますか？” Tutor follow-ups: “Who has to check or correct the result?” and “When is checking it more work than doing it yourself?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIツールは、どんな新しい作業を生み出すことがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What new work can an AI tool create?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What is one task or kind of information you would not hand over to AI?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What risk creates the boundary?” rather than asking every follow-up.
-- Visible target or prompt: What is one task or kind of information you would not hand over to AI? / AIに任せない作業や情報を一つ挙げるとしたら何ですか？
-- Learning target: Explore the distinct “A clear boundary (明確な境界)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What risk creates the boundary?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What risk creates the boundary?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is one task or kind of information you would not hand over to AI?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could AI support a smaller part safely?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What is one task or kind of information you would not hand over to AI?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is one task or kind of information you would not hand over to AI?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is one task or kind of information you would not hand over to AI?” / “AIに任せない作業や情報を一つ挙げるとしたら何ですか？” Tutor follow-ups: “Why would you not trust AI with that?” and “Would you give AI a password, medical record, or final hiring decision?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIに任せない作業や情報を一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one task or kind of information you would not hand over to AI?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Who should check AI-assisted work?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What should that person verify?” rather than asking every follow-up.
-- Visible target or prompt: Who should check AI-assisted work? / AIを使った仕事は、誰が確認すべきですか？
-- Learning target: Explore the distinct “Who remains responsible (残る責任)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What should that person verify?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What should that person verify?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who should check AI-assisted work?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What cannot be blamed on the tool?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Who should check AI-assisted work?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who should check AI-assisted work?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who should check AI-assisted work?” / “AIを使った仕事は、誰が確認すべきですか？” Tutor follow-ups: “What fact should the person check?” and “What decision must stay with a person?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIを使った仕事は、誰が確認すべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who should check AI-assisted work?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What is one activity that should stay mainly human?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What human value does it protect?” rather than asking every follow-up.
-- Visible target or prompt: What is one activity that should stay mainly human? / 主に人が行い続けるべき活動を一つ挙げるとしたら何ですか？
-- Learning target: Explore the distinct “Keep it human (人が続けること)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What human value does it protect?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What human value does it protect?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is one activity that should stay mainly human?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could a tool still help at the edge?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one activity that should stay mainly human?"]}`
+- Learner action: Answer the standalone question “Which human skill could weaken if people rely on AI too much?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which human skill could weaken if people rely on AI too much?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which human skill could weaken if people rely on AI too much?” / “AIに頼りすぎると、どんな人の力が弱くなるかもしれませんか？” Tutor follow-ups: “Where do people practice that skill now?” and “How could they keep using it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIに頼りすぎると、どんな人の力が弱くなるかもしれませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which human skill could weaken if people rely on AI too much?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What is one low-risk AI use a curious person could test?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How would they judge whether it helps?” rather than asking every follow-up.
-- Visible target or prompt: What is one low-risk AI use a curious person could test? / 興味のある人が低いリスクで試せるAIの使い方は何ですか？
-- Learning target: Explore the distinct “A useful trial (試す価値のある使い方)” angle of “How AI has changed your work” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How would they judge whether it helps?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How would they judge whether it helps?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is one low-risk AI use a curious person could test?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What information should they keep out?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What is one low-risk AI use a curious person could test?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is one low-risk AI use a curious person could test?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is one low-risk AI use a curious person could test?” / “興味のある人が低いリスクで試せるAIの使い方は何ですか？” Tutor follow-ups: “What result would show that it helped?” and “What private information should stay out?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “興味のある人が低いリスクで試せるAIの使い方は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one low-risk AI use a curious person could test?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
