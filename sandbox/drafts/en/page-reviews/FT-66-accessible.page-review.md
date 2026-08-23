@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/66-a-moment-when-you-felt-successful/lesson.html`
-- SHA-256: `9fea06b2463d82288052f342433ad7bc347e61976b84e2e422cc82b46e5272c0`
+- SHA-256: `239ae3d32fbded7d19b93029a919edc4d8e700fac5ee2455c76cc285dda5102c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What can make an ordinary moment feel like success?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What was happening in that moment?” rather than asking every follow-up.
-- Visible target or prompt: What can make an ordinary moment feel like success? / 普通の瞬間が成功のように感じられるのはどんなときですか？
-- Learning target: Explore the distinct “One successful moment (うまくいった瞬間)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What was happening in that moment?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What was happening in that moment?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can make an ordinary moment feel like success?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What made it count as a small success?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make an ordinary moment feel like success?"]}`
+- Learner action: Answer the standalone question “Which small success feels best: arriving on time, cooking well, or finishing a task?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which small success feels best: arriving on time, cooking well, or finishing a task?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which small success feels best: arriving on time, cooking well, or finishing a task?” / “時間どおりに着くこと、上手に料理すること、作業を終えることでは、どの小さな成功がいちばんうれしいですか？” Tutor follow-ups: “What was happening in that moment?” and “What made it count as a small success?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “時間どおりに着くこと、上手に料理すること、作業を終えることでは、どの小さな成功がいちばんうれしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which small success feels best: arriving on time, cooking well, or finishing a task?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What often happens just before a successful moment?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What problem or goal was in front of the person?” rather than asking every follow-up.
-- Visible target or prompt: What often happens just before a successful moment? / 成功した瞬間の直前には、どんなことが起こることが多いですか？
-- Learning target: Explore the distinct “What was happening (何が起きていたか)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What problem or goal was in front of the person?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What problem or goal was in front of the person?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What often happens just before a successful moment?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which detail changed the mood?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What often happens just before a successful moment?"]}`
+- Learner action: Answer the standalone question “What small action can lead to a successful moment?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small action can lead to a successful moment?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small action can lead to a successful moment?” / “どんな小さな行動が、成功した瞬間につながりますか？” Tutor follow-ups: “What problem could that action solve?” and “Would planning, practice, or asking for help come first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな小さな行動が、成功した瞬間につながりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small action can lead to a successful moment?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Does success matter more when another person sees it?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What did they notice?” rather than asking every follow-up.
-- Visible target or prompt: Does success matter more when another person sees it? / 誰かに見てもらうと、成功はより大切になりますか？
-- Learning target: Explore the distinct “Who was there (そこにいた人)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What did they notice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What did they notice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Does success matter more when another person sees it?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How was the success recognized?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does success matter more when another person sees it?"]}`
+- Learner action: Answer the standalone question “Does a successful moment matter more when another person sees it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Does a successful moment matter more when another person sees it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Does a successful moment matter more when another person sees it?” / “成功した瞬間は、誰かに見てもらうと、より大切に感じられますか？” Tutor follow-ups: “What might the other person notice?” and “How could they show that they noticed?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “成功した瞬間は、誰かに見てもらうと、より大切に感じられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does a successful moment matter more when another person sees it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which feeling best matches success: excitement, relief, confidence, or calm?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Where did that feeling come from?” rather than asking every follow-up.
-- Visible target or prompt: Which feeling best matches success: excitement, relief, confidence, or calm? / 成功に最も合う気持ちは、興奮、安心、自信、落ち着きのどれですか？
-- Learning target: Explore the distinct “How it felt (どう感じたか)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Where did that feeling come from?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Where did that feeling come from?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which feeling best matches success: excitement, relief, confidence, or calm?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Was it stronger than expected?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which feeling best matches success: excitement, relief, confidence, or calm?"]}`
+- Learner action: Answer the standalone question “Does success feel more like excitement, relief, confidence, or calm to you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Does success feel more like excitement, relief, confidence, or calm to you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Does success feel more like excitement, relief, confidence, or calm to you?” / “成功は、興奮、安心、自信、落ち着きのどれに近く感じますか？” Tutor follow-ups: “Why does that feeling fit?” and “Could another success feel different?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “成功は、興奮、安心、自信、落ち着きのどれに近く感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does success feel more like excitement, relief, confidence, or calm to you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “How long does a feeling of success usually last?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What kept it going?” rather than asking every follow-up.
-- Visible target or prompt: How long does a feeling of success usually last? / 成功した感覚は、普通どのくらい続きますか？
-- Learning target: Explore the distinct “Did it last (続いたか)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What kept it going?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What kept it going?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How long does a feeling of success usually last?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What remained important?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How long does a feeling of success usually last?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How long does a feeling of success usually last?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How long does a feeling of success usually last?” / “成功した感覚は、普通どのくらい続きますか？” Tutor follow-ups: “What kept it going?” and “What remained important?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “成功した感覚は、普通どのくらい続きますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How long does a feeling of success usually last?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What would count as a small success for you or someone like you now?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why would that matter now?” rather than asking every follow-up.
-- Visible target or prompt: What would count as a small success for you or someone like you now? / 今の自分や似た状況の人にとって、小さな成功になるのは何ですか？
-- Learning target: Explore the distinct “What would count now (今の成功)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why would that matter now?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why would that matter now?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would count as a small success for you or someone like you now?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What is the smallest visible sign?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would count as a small success for you or someone like you now?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would count as a small success for you or someone like you now?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would count as a small success for you or someone like you now?” / “今の自分や似た状況の人にとって、小さな成功になるのは何ですか？” Tutor follow-ups: “Why would it matter now?” and “What small sign would show progress?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今の自分や似た状況の人にとって、小さな成功になるのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would count as a small success for you or someone like you now?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How can a person's idea of success change over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What matters less now?” rather than asking every follow-up.
-- Visible target or prompt: How can a person's idea of success change over time? / 成功についての考えは、時間とともにどう変わり得ますか？
-- Learning target: Explore the distinct “A changing standard (変わる基準)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What matters less now?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What matters less now?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a person's idea of success change over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which value remains central?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can a person's idea of success change over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can a person's idea of success change over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can a person's idea of success change over time?” / “成功についての考えは、時間とともにどう変わり得ますか？” Tutor follow-ups: “What mattered before but matters less now?” and “What still matters?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “成功についての考えは、時間とともにどう変わり得ますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a person's idea of success change over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How can you recognize someone else's small success without comparing it with yours?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which effort or change could you name?” rather than asking every follow-up.
-- Visible target or prompt: How can you recognize someone else's small success without comparing it with yours? / 自分と比べずに、ほかの人の小さな成功をどう認められますか？
-- Learning target: Explore the distinct “Someone else's success (他の人の成功)” angle of “A moment when you felt successful” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which effort or change could you name?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which effort or change could you name?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can you recognize someone else's small success without comparing it with yours?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What comparison should you avoid?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can you recognize someone else's small success without comparing it with yours?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can you recognize someone else's small success without comparing it with yours?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can you recognize someone else's small success without comparing it with yours?” / “自分と比べずに、ほかの人の小さな成功をどう認められますか？” Tutor follow-ups: “What effort could you mention?” and “What comparison should you avoid?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分と比べずに、ほかの人の小さな成功をどう認められますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can you recognize someone else's small success without comparing it with yours?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

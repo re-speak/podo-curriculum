@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/38-what-helps-when-youre-exhausted/lesson.html`
-- SHA-256: `97064c323207eee01bd2b58fccd4f73bdc5decc4af04817b421cc49a02f66a89`
+- SHA-256: `a7c2cf6c070c91d3a1bb33c740fb70572868de1452750ed62ca317fdecf20728`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “When you feel completely drained, what tends to help most?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How quickly can you tell it's helping?” rather than asking every follow-up.
-- Visible target or prompt: When you feel completely drained, what tends to help most? すっかり気力を使い果たしたとき、何がいちばん助けになりやすいですか？
-- Learning target: Explore the distinct “What actually helps (本当に助けになるもの)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How quickly can you tell it's helping?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How quickly can you tell it's helping?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When you feel completely drained, what tends to help most?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What kind of exhaustion needs something different?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When you feel completely drained, what tends to help most?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When you feel completely drained, what tends to help most?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When you feel completely drained, what tends to help most?” / “すっかり気力を使い果たしたとき、何がいちばん助けになりやすいですか？” Tutor follow-ups: “How quickly can you tell it is helping?” and “When would rest not be enough?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “すっかり気力を使い果たしたとき、何がいちばん助けになりやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When you feel completely drained, what tends to help most?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What do you usually need first: rest, food, quiet, or company?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What does that need change first?” rather than asking every follow-up.
-- Visible target or prompt: What do you usually need first: rest, food, quiet, or company? 普段、最初に必要なのは休息、食事、静けさ、それとも人と過ごすことですか？
-- Learning target: Explore the distinct “What you need first (最初に必要なもの)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What does that need change first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What does that need change first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do you usually need first: rest, food, quiet, or company?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When might a different choice work better?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What do you usually need first: rest, food, quiet, or company?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you usually need first: rest, food, quiet, or company?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you usually need first: rest, food, quiet, or company?” / “普段、最初に必要なのは休息、食事、静けさ、それとも人と過ごすことですか？” Tutor follow-ups: “What gets better first?” and “When might a different choice work better?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “普段、最初に必要なのは休息、食事、静けさ、それとも人と過ごすことですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you usually need first: rest, food, quiet, or company?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How can you tell when a recovery habit is working?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which change appears first in your body or mood?” rather than asking every follow-up.
-- Visible target or prompt: How can you tell when a recovery habit is working? 回復のための習慣が効いていると、どう分かりますか？
-- Learning target: Explore the distinct “Signs of recovery (回復のサイン)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which change appears first in your body or mood?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which change appears first in your body or mood?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can you tell when a recovery habit is working?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How long does the effect need to last?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can you tell when a recovery habit is working?"]}`
+- Learner action: Answer the standalone question “How can you tell that rest is helping?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can you tell that rest is helping?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can you tell that rest is helping?” / “休むことが役立っていると、どう分かりますか？” Tutor follow-ups: “What changes first in your body or mood?” and “What if you still feel tired afterward?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “休むことが役立っていると、どう分かりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can you tell that rest is helping?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What kind of help feels welcome when someone is exhausted?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What kind of help can feel like more work?” rather than asking every follow-up.
-- Visible target or prompt: What kind of help feels welcome when someone is exhausted? 誰かが疲れ切っているとき、どのような助けならうれしく感じますか？
-- Learning target: Explore the distinct “Welcome help (うれしい助け)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What kind of help can feel like more work?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What kind of help can feel like more work?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of help feels welcome when someone is exhausted?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How should someone offer it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What kind of help feels welcome when someone is exhausted?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of help feels welcome when someone is exhausted?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of help feels welcome when someone is exhausted?” / “誰かが疲れ切っているとき、どのような助けならうれしく感じますか？” Tutor follow-ups: “What kind of help can feel like more work?” and “How should someone offer it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰かが疲れ切っているとき、どのような助けならうれしく感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of help feels welcome when someone is exhausted?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What makes exhaustion worse for you?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part can you control?” rather than asking every follow-up.
-- Visible target or prompt: What makes exhaustion worse for you? 何があると、疲れがもっとひどくなりますか？
-- Learning target: Explore the distinct “What makes it worse (悪化させるもの)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which part can you control?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part can you control?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes exhaustion worse for you?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do other people often misunderstand about it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What makes exhaustion worse for you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes exhaustion worse for you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes exhaustion worse for you?” / “何があると、疲れがもっとひどくなりますか？” Tutor follow-ups: “Which part can you control?” and “What do other people often misunderstand about it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “何があると、疲れがもっとひどくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes exhaustion worse for you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What usually uses up your energy fastest?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What early sign appears?” rather than asking every follow-up.
-- Visible target or prompt: What usually uses up your energy fastest? 普段、何をするといちばん早く気力を使い切りますか？
-- Learning target: Explore the distinct “What uses your energy (気力を使うもの)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What early sign appears?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What early sign appears?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What usually uses up your energy fastest?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What helps you preserve some energy?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What usually uses up your energy fastest?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What usually uses up your energy fastest?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What usually uses up your energy fastest?” / “普段、何をするといちばん早く気力を使い切りますか？” Tutor follow-ups: “What early sign appears?” and “What helps you preserve some energy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “普段、何をするといちばん早く気力を使い切りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually uses up your energy fastest?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How do you tell real recovery from a distraction?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How do you feel afterward?” rather than asking every follow-up.
-- Visible target or prompt: How do you tell real recovery from a distraction? 本当の回復と、ただの気晴らしをどう見分けますか？
-- Learning target: Explore the distinct “Help or distraction (回復？気晴らし？)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How do you feel afterward?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How do you feel afterward?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do you tell real recovery from a distraction?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Can the same activity be either one?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you tell real recovery from a distraction?"]}`
+- Learner action: Answer the standalone question “After a break, how can you tell whether it really helped?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “After a break, how can you tell whether it really helped?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “After a break, how can you tell whether it really helped?” / “休憩のあと、本当に役立ったかどうかはどう分かりますか？” Tutor follow-ups: “How do you feel afterward?” and “Can the same activity help one day but not another?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “休憩のあと、本当に役立ったかどうかはどう分かりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["After a break, how can you tell whether it really helped?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would you tell someone who felt completely exhausted?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would you ask before giving advice?” rather than asking every follow-up.
-- Visible target or prompt: What would you tell someone who felt completely exhausted? 完全に疲れ切っている人に、何と伝えますか？
-- Learning target: Explore the distinct “Advice that fits (合う助言)” angle of “What helps when you're exhausted” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What would you ask before giving advice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would you ask before giving advice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you tell someone who felt completely exhausted?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which common suggestion would you avoid?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would you tell someone who felt completely exhausted?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you tell someone who felt completely exhausted?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you tell someone who felt completely exhausted?” / “完全に疲れ切っている人に、何と伝えますか？” Tutor follow-ups: “What would you ask before giving advice?” and “Which common suggestion would you avoid?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “完全に疲れ切っている人に、何と伝えますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you tell someone who felt completely exhausted?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

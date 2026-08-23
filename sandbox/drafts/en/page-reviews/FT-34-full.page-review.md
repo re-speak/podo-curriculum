@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-full/lessons/34-a-tiny-thing-that-always-annoys-you/lesson.html`
-- SHA-256: `4eef1cfb87df9729967cf2a79606ce7f28cbbdd98ebd03d1cab88d2d94294f8e`
+- SHA-256: `75433c3890af59777c2b57117ee031d3418705dc6c54744175fc7db58c95f854`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What's one tiny thing that can become surprisingly annoying?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When does it stand out most?” rather than asking every follow-up.
-- Visible target or prompt: What's one tiny thing that can become surprisingly annoying? 意外なほど気になることがある、ささいなことは何ですか？
-- Learning target: Explore the distinct “One tiny annoyance (ささいな不満)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When does it stand out most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When does it stand out most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's one tiny thing that can become surprisingly annoying?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why can such a small detail get under someone's skin?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's one tiny thing that can become surprisingly annoying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one tiny thing that can become surprisingly annoying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one tiny thing that can become surprisingly annoying?” / “意外なほど気になることがある、ささいなことは何ですか？” Tutor follow-ups: “When is it most annoying?” and “Which is worse: a repeated sound, a small mess, or waiting?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “意外なほど気になることがある、ささいなことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one tiny thing that can become surprisingly annoying?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Where does this kind of annoyance usually happen?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who is most likely to notice it?” rather than asking every follow-up.
-- Visible target or prompt: Where does this kind of annoyance usually happen? そのようなささいな不満は、たいていどこで起きますか？
-- Learning target: Explore the distinct “Where it happens (起きる場所)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Who is most likely to notice it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who is most likely to notice it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Where does this kind of annoyance usually happen?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes that setting matter?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where does this kind of annoyance usually happen?"]}`
+- Learner action: Answer the standalone question “Where do tiny everyday annoyances happen most often?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Where do tiny everyday annoyances happen most often?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Where do tiny everyday annoyances happen most often?” / “ささいな日常の不満は、どこで最も起きやすいですか？” Tutor follow-ups: “Do shared spaces or private spaces cause more small annoyances?” and “Who usually notices first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ささいな日常の不満は、どこで最も起きやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where do tiny everyday annoyances happen most often?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which part is hardest to ignore?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is repetition the real problem, or something else?” rather than asking every follow-up.
-- Visible target or prompt: Which part is hardest to ignore? どの部分がいちばん無視しにくいですか？
-- Learning target: Explore the distinct “Hard to ignore (無視しにくい点)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Is repetition the real problem, or something else?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is repetition the real problem, or something else?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part is hardest to ignore?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How could two people react differently?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part is hardest to ignore?"]}`
+- Learner action: Answer the standalone question “Which part of a small annoyance is hardest to ignore?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of a small annoyance is hardest to ignore?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of a small annoyance is hardest to ignore?” / “小さなイライラのどの部分が、いちばん無視しにくいですか？” Tutor follow-ups: “Is repetition the real problem, or something else?” and “How could two people react differently?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “小さなイライラのどの部分が、いちばん無視しにくいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of a small annoyance is hardest to ignore?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How can someone raise a minor irritation without making it sound disproportionate?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would humour help or make the request less clear?” rather than asking every follow-up.
-- Visible target or prompt: How can someone raise a minor irritation without making it sound disproportionate? ささいな不満を大げさに聞こえないように伝えるには、どのような言い方がよいですか？
-- Learning target: Explore the distinct “How to mention it (伝え方)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Would humour help or make the request less clear?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would humour help or make the request less clear?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can someone raise a minor irritation without making it sound disproportionate?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What exact request could solve the problem?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can someone raise a minor irritation without making it sound disproportionate?"]}`
+- Learner action: Answer the standalone question “How can someone bring up a small annoyance without making it sound huge?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can someone bring up a small annoyance without making it sound huge?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can someone bring up a small annoyance without making it sound huge?” / “ささいな不満を大げさに聞こえないように伝えるには、どのような言い方がよいですか？” Tutor follow-ups: “Would humour help or make the request less clear?” and “What exact request could solve the problem?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ささいな不満を大げさに聞こえないように伝えるには、どのような言い方がよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can someone bring up a small annoyance without making it sound huge?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “When is a small complaint worth speaking up about?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What could happen if nobody mentions it?” rather than asking every follow-up.
-- Visible target or prompt: When is a small complaint worth speaking up about? ささいな不満でも、どのようなときは伝える価値がありますか？
-- Learning target: Explore the distinct “Worth speaking up (伝える価値)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What could happen if nobody mentions it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What could happen if nobody mentions it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is a small complaint worth speaking up about?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Where would you draw the line?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When is a small complaint worth speaking up about?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is a small complaint worth speaking up about?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is a small complaint worth speaking up about?” / “ささいな不満でも、どのようなときは伝える価値がありますか？” Tutor follow-ups: “What could happen if nobody mentions it?” and “Where would you draw the line?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ささいな不満でも、どのようなときは伝える価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is a small complaint worth speaking up about?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which everyday habit is hardest for people to notice in themselves?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How could someone point it out kindly?” rather than asking every follow-up.
-- Visible target or prompt: Which everyday habit is hardest for people to notice in themselves? 日常の習慣のうち、自分ではいちばん気づきにくいものは何ですか？
-- Learning target: Explore the distinct “Our own habits (自分の習慣)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How could someone point it out kindly?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How could someone point it out kindly?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which everyday habit is hardest for people to notice in themselves?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might make the person defensive?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which everyday habit is hardest for people to notice in themselves?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which everyday habit is hardest for people to notice in themselves?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which everyday habit is hardest for people to notice in themselves?” / “日常の習慣のうち、自分ではいちばん気づきにくいものは何ですか？” Tutor follow-ups: “How could someone point it out kindly?” and “What might make the person defensive?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常の習慣のうち、自分ではいちばん気づきにくいものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which everyday habit is hardest for people to notice in themselves?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Why do small annoyances grow when people are stressed or tired?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which annoyances become easier to ignore after a rest?” rather than asking every follow-up.
-- Visible target or prompt: Why do small annoyances grow when people are stressed or tired? ストレスや疲れがあると、なぜささいなことがもっと気になるのでしょうか？
-- Learning target: Explore the distinct “Stress and patience (ストレスと我慢)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which annoyances become easier to ignore after a rest?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which annoyances become easier to ignore after a rest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why do small annoyances grow when people are stressed or tired?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can someone reset before reacting?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why do small annoyances grow when people are stressed or tired?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do small annoyances grow when people are stressed or tired?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do small annoyances grow when people are stressed or tired?” / “ストレスや疲れがあると、なぜささいなことがもっと気になるのでしょうか？” Tutor follow-ups: “Which annoyances become easier to ignore after a rest?” and “How can someone reset before reacting?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ストレスや疲れがあると、なぜささいなことがもっと気になるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do small annoyances grow when people are stressed or tired?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which minor irritation genuinely deserves action, and which calls for tolerance?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What is the smallest useful fix?” rather than asking every follow-up.
-- Visible target or prompt: Which minor irritation genuinely deserves action, and which calls for tolerance? どのささいな不満には対応し、どの不満は受け流すほうがよいですか？
-- Learning target: Explore the distinct “Fix or ignore (直すか受け流すか)” angle of “A tiny thing that always annoys you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What is the smallest useful fix?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What is the smallest useful fix?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which minor irritation genuinely deserves action, and which calls for tolerance?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would patience look like here?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which minor irritation genuinely deserves action, and which calls for tolerance?"]}`
+- Learner action: Answer the standalone question “Which small annoyance is worth fixing, and which is better ignored?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which small annoyance is worth fixing, and which is better ignored?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which small annoyance is worth fixing, and which is better ignored?” / “どのささいな不満には対応し、どの不満は受け流すほうがよいですか？” Tutor follow-ups: “What is the smallest useful fix?” and “When is ignoring it the easier choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのささいな不満には対応し、どの不満は受け流すほうがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which small annoyance is worth fixing, and which is better ignored?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

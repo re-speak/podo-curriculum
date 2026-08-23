@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-full/lessons/98-growing-up-in-another-country/lesson.html`
-- SHA-256: `59202628117b15be737a4d7141121533a23891335bf45f80e77d88b2beaa917d`
+- SHA-256: `23c1d620cc1eeed375d93983920272cff276f5a33b12d2570d6d05845178e5ce`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which country or setting would provide the most revealing contrast in upbringing?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which country or setting would provide the most revealing contrast in upbringing?”, react or share briefly, then choose at most one relevant probe such as “Which concrete condition creates the strongest contrast?”.
-- Visible target or prompt: Which country or setting would provide the most revealing contrast in upbringing? / どの国や環境なら、育った環境の違いを最もよく考えられますか？ Follow-up pool: Which concrete condition creates the strongest contrast? Which uncertainty should prevent a stereotyped prediction?
-- Learning target: Explore the distinct “Another country” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which concrete condition creates the strongest contrast?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which concrete condition creates the strongest contrast?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which country or setting would provide the most revealing contrast in upbringing?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which uncertainty should prevent a stereotyped prediction?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which country or setting would provide the most revealing contrast in upbringing?"]}`
+- Learner action: Answer the standalone question “If you had grown up in another country, which one would you choose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you had grown up in another country, which one would you choose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you had grown up in another country, which one would you choose?” / “別の国で育っていたとしたら、どの国を選びますか？” Tutor follow-ups: “Would you choose a country for its schools, nature, or daily life?” and “What would you want to learn before choosing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別の国で育っていたとしたら、どの国を選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you had grown up in another country, which one would you choose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which concrete condition makes an alternative upbringing worth examining?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which concrete condition makes an alternative upbringing worth examining?”, react or share briefly, then choose at most one relevant probe such as “Which opportunity, institution, language, or daily experience matters?”.
-- Visible target or prompt: Which concrete condition makes an alternative upbringing worth examining? / 別の育った環境を考える価値が生まれる具体的な条件は何ですか？ Follow-up pool: Which opportunity, institution, language, or daily experience matters? Which uncertainty prevents a confident prediction?
-- Learning target: Explore the distinct “Why there” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which opportunity, institution, language, or daily experience matters?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which opportunity, institution, language, or daily experience matters?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which concrete condition makes an alternative upbringing worth examining?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which uncertainty prevents a confident prediction?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which concrete condition makes an alternative upbringing worth examining?"]}`
+- Learner action: Answer the standalone question “Which part of everyday childhood changes most across countries?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of everyday childhood changes most across countries?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of everyday childhood changes most across countries?” / “国によって、子どもの日常生活のどの部分が最も変わりますか？” Tutor follow-ups: “Would school, home, or free time change most?” and “Which difference would a child notice first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “国によって、子どもの日常生活のどの部分が最も変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of everyday childhood changes most across countries?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which parts of identity are most likely to develop differently across upbringings?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which parts of identity are most likely to develop differently across upbringings?”, react or share briefly, then choose at most one relevant probe such as “Which habit or opportunity could plausibly shift?”.
-- Visible target or prompt: Which parts of identity are most likely to develop differently across upbringings? / 育った環境が違うと、アイデンティティのどの部分が最も変わりやすいですか？ Follow-up pool: Which habit or opportunity could plausibly shift? Which temperament or value might remain recognizable?
-- Learning target: Explore the distinct “A different you” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which habit or opportunity could plausibly shift?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which habit or opportunity could plausibly shift?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which parts of identity are most likely to develop differently across upbringings?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which temperament or value might remain recognizable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which parts of identity are most likely to develop differently across upbringings?"]}`
+- Learner action: Answer the standalone question “How might a different school system change how someone studies, speaks, or takes risks?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How might a different school system change how someone studies, speaks, or takes risks?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How might a different school system change how someone studies, speaks, or takes risks?” / “違う学校制度は、学び方、話し方、挑戦の仕方をどう変えるかもしれませんか？” Tutor follow-ups: “Could it change how a child studies or speaks in class?” and “What might stay the same?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “違う学校制度は、学び方、話し方、挑戦の仕方をどう変えるかもしれませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might a different school system change how someone studies, speaks, or takes risks?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which part of your actual upbringing might be hardest to lose?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which part of your actual upbringing might be hardest to lose?”, react or share briefly, then choose at most one relevant probe such as “Which ordinary familiarity might still matter?”.
-- Visible target or prompt: Which part of your actual upbringing might be hardest to lose? / 実際に育った環境のどの部分を失うのが最も難しそうですか？ Follow-up pool: Which ordinary familiarity might still matter? Would the loss concern relationship, place, language, routine, or belonging?
-- Learning target: Explore the distinct “What you would miss” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which ordinary familiarity might still matter?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which ordinary familiarity might still matter?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of your actual upbringing might be hardest to lose?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Would the loss concern relationship, place, language, routine, or belonging?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of your actual upbringing might be hardest to lose?"]}`
+- Learner action: Answer the standalone question “Which food or family custom would you miss from your actual childhood?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which food or family custom would you miss from your actual childhood?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which food or family custom would you miss from your actual childhood?” / “実際の子ども時代の食べ物や家族の習慣で、何が恋しくなりそうですか？” Tutor follow-ups: “Would you miss a food, holiday, or family routine?” and “What do people often miss from childhood?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実際の子ども時代の食べ物や家族の習慣で、何が恋しくなりそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which food or family custom would you miss from your actual childhood?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which element of your actual upbringing, if any, would you be relieved to leave behind?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which element of your actual upbringing, if any, would you be relieved to leave behind?”, react or share briefly, then choose at most one relevant probe such as “Which feature deserves appreciation?”.
-- Visible target or prompt: Which element of your actual upbringing, if any, would you be relieved to leave behind? / 実際に育った環境の中で、手放せて安心するものがあるとすれば何ですか？ Follow-up pool: Which feature deserves appreciation? Which alternative could replace it?
-- Learning target: Explore the distinct “What you would not miss” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which feature deserves appreciation?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which feature deserves appreciation?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which element of your actual upbringing, if any, would you be relieved to leave behind?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which alternative could replace it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which element of your actual upbringing, if any, would you be relieved to leave behind?"]}`
+- Learner action: Answer the standalone question “What part of your actual upbringing would you be happy to leave behind?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of your actual upbringing would you be happy to leave behind?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of your actual upbringing would you be happy to leave behind?” / “実際に育った環境のどんな部分なら、なくてもよいと思いますか？” Tutor follow-ups: “Would you change school pressure, rules, or expectations?” and “If you would change nothing, what would you keep?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実際に育った環境のどんな部分なら、なくてもよいと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of your actual upbringing would you be happy to leave behind?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How does the language of upbringing influence emotional expression and belonging?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How does the language of upbringing influence emotional expression and belonging?”, react or share briefly, then choose at most one relevant probe such as “Which other social condition would shape belonging?”.
-- Visible target or prompt: How does the language of upbringing influence emotional expression and belonging? / 育ったときの言語は、感情表現と所属感にどう影響しますか？ Follow-up pool: Which other social condition would shape belonging? Which meaning might become easier to access or harder to retain?
-- Learning target: Explore the distinct “Language and belonging” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which other social condition would shape belonging?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which other social condition would shape belonging?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How does the language of upbringing influence emotional expression and belonging?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which meaning might become easier to access or harder to retain?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How does the language of upbringing influence emotional expression and belonging?"]}`
+- Learner action: Answer the standalone question “How might a childhood language change the way people express jokes or emotions?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How might a childhood language change the way people express jokes or emotions?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How might a childhood language change the way people express jokes or emotions?” / “子どもの頃に使う言語によって、冗談や感情の表し方はどう変わりますか？” Tutor follow-ups: “Are some feelings easier to express in one language?” and “Is it easier to joke in your first language or another language?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “子どもの頃に使う言語によって、冗談や感情の表し方はどう変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might a childhood language change the way people express jokes or emotions?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which differences separate a counterfactual upbringing from a present migration decision?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which differences separate a counterfactual upbringing from a present migration decision?”, react or share briefly, then choose at most one relevant probe such as “Which difference separates childhood from present migration?”.
-- Visible target or prompt: Which differences separate a counterfactual upbringing from a present migration decision? / 別の国で育ったという反実仮想と、現在の移住の決定を分ける違いは何ですか？ Follow-up pool: Which difference separates childhood from present migration? Which general practical condition would matter most?
-- Learning target: Explore the distinct “Growing up versus moving” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which difference separates childhood from present migration?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which difference separates childhood from present migration?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which differences separate a counterfactual upbringing from a present migration decision?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which general practical condition would matter most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which differences separate a counterfactual upbringing from a present migration decision?"]}`
+- Learner action: Answer the standalone question “Why does growing up in a country shape someone differently from moving there as an adult?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why does growing up in a country shape someone differently from moving there as an adult?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why does growing up in a country shape someone differently from moving there as an adult?” / “ある国で育つことと、大人になって移ることでは、人への影響が違うのはなぜですか？” Tutor follow-ups: “What can a child learn without trying?” and “What would an adult newcomer notice more clearly?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ある国で育つことと、大人になって移ることでは、人への影響が違うのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why does growing up in a country shape someone differently from moving there as an adult?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which part of your identity feels least dependent on where you were raised?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which part of your identity feels least dependent on where you were raised?”, react or share briefly, then choose at most one relevant probe such as “Why does it seem more stable than circumstance?”.
-- Visible target or prompt: Which part of your identity feels least dependent on where you were raised? / 自分らしさのどの部分が、育った場所に最も左右されないと感じますか？ Follow-up pool: Why does it seem more stable than circumstance? Could context still alter how that quality is expressed?
-- Learning target: Explore the distinct “What stays yours” angle of “Growing up in another country” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why does it seem more stable than circumstance?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does it seem more stable than circumstance?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of your identity feels least dependent on where you were raised?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Could context still alter how that quality is expressed?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of your identity feels least dependent on where you were raised?"]}`
+- Learner action: Answer the standalone question “What part of your personality would probably stay the same anywhere?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of your personality would probably stay the same anywhere?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of your personality would probably stay the same anywhere?” / “どこで育っても、自分の性格のどんな部分は同じだと思いますか？” Tutor follow-ups: “Why does that feel less shaped by place?” and “Could another environment still change how it appears?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どこで育っても、自分の性格のどんな部分は同じだと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of your personality would probably stay the same anywhere?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

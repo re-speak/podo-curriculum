@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/65-something-you-were-proud-to-finish/lesson.html`
-- SHA-256: `80f123e6a3fe503ba30e5219175c69fba050dce149a61bb8b7a0b79ce9a06776`
+- SHA-256: `cf6d43c5c1936a8a8cfecfb62b48f16cf7940c89eea1301fdab2a514bfd90b6c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What makes completing an effort feel genuinely meaningful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which sign confirmed that the effort had reached completion?” rather than asking every follow-up.
-- Visible target or prompt: What makes completing an effort feel genuinely meaningful? / 一つの努力を完了することが、本当に意味のあるものになるのは何ですか？
-- Learning target: Explore the distinct “A finished effort (やり終えた努力)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which sign confirmed that the effort had reached completion?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which sign confirmed that the effort had reached completion?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes completing an effort feel genuinely meaningful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What gave the result personal significance?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes completing an effort feel genuinely meaningful?"]}`
+- Learner action: Answer the standalone question “Which feels more satisfying: completing a long project or finally fixing a small annoyance?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which feels more satisfying: completing a long project or finally fixing a small annoyance?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which feels more satisfying: completing a long project or finally fixing a small annoyance?” / “長い仕事を終えることと、小さな困りごとをやっと直すことでは、どちらがより満足できますか？” Tutor follow-ups: “What is the clearest sign that the work is complete?” and “Who benefits from the finished result?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “長い仕事を終えることと、小さな困りごとをやっと直すことでは、どちらがより満足できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which feels more satisfying: completing a long project or finally fixing a small annoyance?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which kind of demanding effort creates the strongest sense of completion?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How long had the effort been underway?” rather than asking every follow-up.
-- Visible target or prompt: Which kind of demanding effort creates the strongest sense of completion? / どのような大変な努力が、最も強い達成感を生みますか？
-- Learning target: Explore the distinct “What you finished (終えたこと)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How long had the effort been underway?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How long had the effort been underway?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which kind of demanding effort creates the strongest sense of completion?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which obstacle came closest to stopping it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of demanding effort creates the strongest sense of completion?"]}`
+- Learner action: Answer the standalone question “What kind of hard project feels best to finish?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of hard project feels best to finish?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of hard project feels best to finish?” / “どのような大変な努力が、最も強い達成感を生みますか？” Tutor follow-ups: “How long might it take?” and “What could almost stop it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような大変な努力が、最も強い達成感を生みますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of hard project feels best to finish?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How does external recognition affect a person's pride in completed work?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which response from other people most affected the person's view of the work?” rather than asking every follow-up.
-- Visible target or prompt: How does external recognition affect a person's pride in completed work? / 周囲からの評価は、完了した仕事への誇りにどう影響しますか？
-- Learning target: Explore the distinct “Who noticed (誰が気づいたか)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which response from other people most affected the person's view of the work?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which response from other people most affected the person's view of the work?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How does external recognition affect a person's pride in completed work?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What confirmed its value to the person who completed it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How does external recognition affect a person's pride in completed work?"]}`
+- Learner action: Answer the standalone question “Can finished work still feel valuable when nobody praises it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Can finished work still feel valuable when nobody praises it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Can finished work still feel valuable when nobody praises it?” / “誰にも褒められなくても、終えた仕事には価値を感じられますか？” Tutor follow-ups: “When can praise add to the pride?” and “What can make the work valuable by itself?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰にも褒められなくても、終えた仕事には価値を感じられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can finished work still feel valuable when nobody praises it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Why can openly expressing pride feel like boasting?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which norm made expression easy or uncomfortable?” rather than asking every follow-up.
-- Visible target or prompt: Why can openly expressing pride feel like boasting? / 誇りを率直に表現することが、自慢のように感じられるのはなぜですか？
-- Learning target: Explore the distinct “Saying it aloud (言葉にする)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which norm made expression easy or uncomfortable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which norm made expression easy or uncomfortable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can openly expressing pride feel like boasting?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What indirect sign could communicate the feeling?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why can openly expressing pride feel like boasting?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can openly expressing pride feel like boasting?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can openly expressing pride feel like boasting?” / “誇りを率直に表現することが、自慢のように感じられるのはなぜですか？” Tutor follow-ups: “Why might someone hide their pride?” and “Could their face, voice, or actions show it instead?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誇りを率直に表現することが、自慢のように感じられるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can openly expressing pride feel like boasting?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What gives one completed effort more significance than another?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Did persistence, quality, growth, or commitment matter most?” rather than asking every follow-up.
-- Visible target or prompt: What gives one completed effort more significance than another? / 一つの完了した努力が、別の努力より大きな意味を持つのは何ですか？
-- Learning target: Explore the distinct “Why it mattered (大切だった理由)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Did persistence, quality, growth, or commitment matter most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Did persistence, quality, growth, or commitment matter most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What gives one completed effort more significance than another?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which deeper value did the achievement express?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What gives one completed effort more significance than another?"]}`
+- Learner action: Answer the standalone question “Why can one finished task matter much more than another?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can one finished task matter much more than another?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can one finished task matter much more than another?” / “一つの完了した努力が、別の努力より大きな意味を持つのは何ですか？” Tutor follow-ups: “Which mattered most: the effort, the result, or keeping a promise?” and “What personal quality does finishing the work show?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの完了した努力が、別の努力より大きな意味を持つのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can one finished task matter much more than another?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What kind of completed result might fail to produce pride?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which standard might the result have failed to meet?” rather than asking every follow-up.
-- Visible target or prompt: What kind of completed result might fail to produce pride? / 完了しても誇りにつながらない結果には、どんなものがありますか？
-- Learning target: Explore the distinct “A result without pride (誇れなかった結果)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which standard might the result have failed to meet?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which standard might the result have failed to meet?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of completed result might fail to produce pride?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could the process still justify a different kind of recognition?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of completed result might fail to produce pride?"]}`
+- Learner action: Answer the standalone question “What can someone finish without feeling proud of it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can someone finish without feeling proud of it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can someone finish without feeling proud of it?” / “完了しても誇りにつながらない結果には、どんなものがありますか？” Tutor follow-ups: “What might be disappointing about the result?” and “Could the effort still deserve praise?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “完了しても誇りにつながらない結果には、どんなものがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can someone finish without feeling proud of it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which kind of completed work would you want associated with your name or contribution?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which quality should define the association?” rather than asking every follow-up.
-- Visible target or prompt: Which kind of completed work would you want associated with your name or contribution? / どんな完成した仕事や貢献と、自分の名前を結びつけたいですか？
-- Learning target: Explore the distinct “What to be known for (何で知られたいか)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which quality should define the association?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which quality should define the association?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which kind of completed work would you want associated with your name or contribution?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would reach, difficulty, or lasting value matter most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of completed work would you want associated with your name or contribution?"]}`
+- Learner action: Answer the standalone question “What kind of finished work would you want people to remember you for?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of finished work would you want people to remember you for?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of finished work would you want people to remember you for?” / “どんな完成した仕事や貢献と、自分の名前を結びつけたいですか？” Tutor follow-ups: “What quality should people notice?” and “Would the size of the project matter?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな完成した仕事や貢献と、自分の名前を結びつけたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of finished work would you want people to remember you for?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How can recognition support earned pride without becoming vague flattery?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which concrete contribution should be named?” rather than asking every follow-up.
-- Visible target or prompt: How can recognition support earned pride without becoming vague flattery? / 曖昧なお世辞ではなく、努力に基づく誇りを支えるにはどうすればよいですか？
-- Learning target: Explore the distinct “Recognizing effort (努力を認める)” angle of “Something you were proud to finish” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which concrete contribution should be named?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which concrete contribution should be named?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can recognition support earned pride without becoming vague flattery?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which question could help the person articulate the achievement?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can recognition support earned pride without becoming vague flattery?"]}`
+- Learner action: Answer the standalone question “How can we praise real effort without sounding empty?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can we praise real effort without sounding empty?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can we praise real effort without sounding empty?” / “曖昧なお世辞ではなく、努力に基づく誇りを支えるにはどうすればよいですか？” Tutor follow-ups: “Which part of the effort deserves attention?” and “What question would help the person talk about the work?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “曖昧なお世辞ではなく、努力に基づく誇りを支えるにはどうすればよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can we praise real effort without sounding empty?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

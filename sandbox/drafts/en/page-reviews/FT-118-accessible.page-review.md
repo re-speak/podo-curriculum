@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/118-shopping-online-or-in-a-shop/lesson.html`
-- SHA-256: `029ca41ba779c1de5434e45b663bdcdf33875342547880f8d3567ac4b9dbeeae`
+- SHA-256: `e5af17e0002629e742dc1b59eaeb33bee3579d057a7683581f5bc832bcb31d47`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What makes an online product feel trustworthy?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What makes an online product feel trustworthy?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What makes an online product feel trustworthy?” / “オンラインの商品を信頼するには、何が必要ですか？” Follow-ups: “How much do reviews matter?” and “What would make you return it?”
-- Learning target: Develop the distinct “The product photo” angle of Shopping online or in a shop? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “The product photo” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What makes an online product feel trustworthy?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “オンラインの商品を信頼するには、何が必要ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes an online product feel trustworthy?"]}`
+- Learner action: Answer the standalone question “What makes you trust a product you see online?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes you trust a product you see online?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes you trust a product you see online?” / “オンラインで見た商品を信頼できるのは、どんなときですか？” Tutor follow-ups: “Does a clear return policy matter?” and “Which do you trust more: customer photos or star ratings?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “オンラインで見た商品を信頼できるのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes you trust a product you see online?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Where would you look first for something you needed today?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Where would you look first for something you needed today?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Where would you look first for something you needed today?” / “今日必要な物なら、最初にどこを探しますか？” Follow-ups: “Would price or certainty matter more?” and “Could delivery be trusted?”
-- Learning target: Develop the distinct “Needed today” angle of Shopping online or in a shop? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Needed today” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Where would you look first for something you needed today?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “今日必要な物なら、最初にどこを探しますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where would you look first for something you needed today?"]}`
+- Learner action: Answer the standalone question “If you needed a phone charger today, would you look online or in a shop first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you needed a phone charger today, would you look online or in a shop first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you needed a phone charger today, would you look online or in a shop first?” / “今日スマートフォンの充電器が必要なら、まずオンラインと店のどちらで探しますか？” Tutor follow-ups: “Would price or certainty matter more?” and “Would you pay more for the charger today?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今日スマートフォンの充電器が必要なら、まずオンラインと店のどちらで探しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you needed a phone charger today, would you look online or in a shop first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For an important purchase, would you rather buy online or in a shop?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For an important purchase, would you rather buy online or in a shop?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For an important purchase, would you rather buy online or in a shop?” / “大切な買い物なら、オンラインと店舗のどちらで買いますか？” Follow-ups: “Which product are you imagining?” and “What is the other method better at?”
-- Learning target: Develop the distinct “Online or in person” angle of Shopping online or in a shop? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Online or in person” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For an important purchase, would you rather buy online or in a shop?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “大切な買い物なら、オンラインと店舗のどちらで買いますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “For an important purchase, would you rather buy online or in a shop?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For an important purchase, would you rather buy online or in a shop?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For an important purchase, would you rather buy online or in a shop?” / “大切な買い物なら、オンラインと店舗のどちらで買いますか？” Tutor follow-ups: “Which product are you imagining?” and “Which would you inspect first: shoes or a phone?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大切な買い物なら、オンラインと店舗のどちらで買いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For an important purchase, would you rather buy online or in a shop?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How would shopping change if you could use only your chosen method?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would shopping change if you could use only your chosen method?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would shopping change if you could use only your chosen method?” / “選んだ買い方しか使えなければ、買い物はどう変わりますか？” Follow-ups: “How would you compare prices?” and “How would returns work?”
-- Learning target: Develop the distinct “Only one method” angle of Shopping online or in a shop? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Only one method” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would shopping change if you could use only your chosen method?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだ買い方しか使えなければ、買い物はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would shopping change if you could use only your chosen method?"]}`
+- Learner action: Answer the standalone question “What would you miss most if physical shops disappeared?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you miss most if physical shops disappeared?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you miss most if physical shops disappeared?” / “実際の店がなくなったら、何が最も恋しくなりますか？” Tutor follow-ups: “Why would you miss that part?” and “Which would you miss more: trying things on or asking staff?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実際の店がなくなったら、何が最も恋しくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you miss most if physical shops disappeared?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Would you buy online if it were cheaper but hard to return?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would you buy online if it were cheaper but hard to return?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would you buy online if it were cheaper but hard to return?” / “ネットのほうが安くても返品が難しいなら、買いますか？” Follow-ups: “What would you check first?” and “Would seeing it in a shop help?”
-- Learning target: Develop the distinct “Cheaper but hard to return” angle of Shopping online or in a shop? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Cheaper but hard to return” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would you buy online if it were cheaper but hard to return?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “ネットのほうが安くても返品が難しいなら、買いますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “Would you buy online if it were cheaper but hard to return?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you buy online if it were cheaper but hard to return?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you buy online if it were cheaper but hard to return?” / “ネットのほうが安くても返品が難しいなら、買いますか？” Tutor follow-ups: “What would you check first?” and “Would you take the risk for a very cheap item?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ネットのほうが安くても返品が難しいなら、買いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you buy online if it were cheaper but hard to return?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would free same-day delivery remove the reason to visit a shop?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would free same-day delivery remove the reason to visit a shop?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would free same-day delivery remove the reason to visit a shop?” / “無料で当日に届くなら、店へ行く理由は残りますか？” Follow-ups: “Which products still need inspection?” and “Would expert help matter?”
-- Learning target: Develop the distinct “Free delivery today” angle of Shopping online or in a shop? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Free delivery today” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would free same-day delivery remove the reason to visit a shop?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “無料で当日に届くなら、店へ行く理由は残りますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would free same-day delivery remove the reason to visit a shop?"]}`
+- Learner action: Answer the standalone question “Would you still visit a shop if same-day delivery were free?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you still visit a shop if same-day delivery were free?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you still visit a shop if same-day delivery were free?” / “当日配送が無料でも、店へ行きますか？” Tutor follow-ups: “Would expert help still matter?” and “Would you still visit a shop to try on clothes?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “当日配送が無料でも、店へ行きますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you still visit a shop if same-day delivery were free?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which product would make you use the other buying method?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which product would make you use the other buying method?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which product would make you use the other buying method?” / “どんな商品なら、反対の買い方を選びますか？” Follow-ups: “Would clothing and electronics differ?” and “Would a gift change the answer?”
-- Learning target: Develop the distinct “A product that changes the method” angle of Shopping online or in a shop? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A product that changes the method” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which product would make you use the other buying method?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな商品なら、反対の買い方を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which product would make you use the other buying method?"]}`
+- Learner action: Answer the standalone question “Which product would you never buy without seeing it in person?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which product would you never buy without seeing it in person?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which product would you never buy without seeing it in person?” / “実物を見ずには絶対に買わない商品は何ですか？” Tutor follow-ups: “What do you need to check in person?” and “Which is riskier online: clothes or electronics?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実物を見ずには絶対に買わない商品は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which product would you never buy without seeing it in person?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose shopping online or shopping in a shop, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose shopping online or shopping in a shop, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose shopping online or shopping in a shop, and why.” / “チューターならオンラインで買うことと店舗で買うことのどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which product would your tutor never buy online?” and “When does convenience outweigh inspection for them?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターならオンラインで買うことと店舗で買うことのどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose shopping online or shopping in a shop, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which product would your tutor never buy online?” and “Would free returns change the answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

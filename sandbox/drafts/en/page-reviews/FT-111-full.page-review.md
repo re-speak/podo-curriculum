@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-full/lessons/111-a-planned-trip-or-a-spontaneous-one/lesson.html`
-- SHA-256: `a2fd1c1635594a4dc052f1da246a554fd6d3c8870a1cb4dea6371f07cd09e4cc`
+- SHA-256: `c616986e3ef1e80c82ab2d45cf8df107f971a81a11f2674a1dbf3999b96f6f60`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “When does an unexpected change improve a trip rather than ruin it?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “When does an unexpected change improve a trip rather than ruin it?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “When does an unexpected change improve a trip rather than ruin it?” / “計画どおりにならなかった旅行を、よいものにするのは何ですか？” Follow-ups: “Which failed plan created access to something better?” and “What kind of disruption would still ruin the trip?”
-- Learning target: Develop the distinct “When a plan fails” angle of A planned trip or a spontaneous one? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “When a plan fails” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “When does an unexpected change improve a trip rather than ruin it?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “計画どおりにならなかった旅行を、よいものにするのは何ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does an unexpected change improve a trip rather than ruin it?"]}`
+- Learner action: Answer the standalone question “What kind of surprise can improve a trip?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of surprise can improve a trip?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of surprise can improve a trip?” / “どんな予想外の出来事が、旅行をよくすることがありますか？” Tutor follow-ups: “When would the same surprise be stressful?” and “Would unexpected rain ruin a trip or make it memorable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな予想外の出来事が、旅行をよくすることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of surprise can improve a trip?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which single decision would you lock in first for a trip beginning tomorrow?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which single decision would you lock in first for a trip beginning tomorrow?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which single decision would you lock in first for a trip beginning tomorrow?” / “明日短い旅行へ行くなら、最初に何を決めますか？” Follow-ups: “Which scarce item deserves commitment before anything else?” and “What information would you wait to learn locally?”
-- Learning target: Develop the distinct “The first decision” angle of A planned trip or a spontaneous one? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “The first decision” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which single decision would you lock in first for a trip beginning tomorrow?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “明日短い旅行へ行くなら、最初に何を決めますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which single decision would you lock in first for a trip beginning tomorrow?"]}`
+- Learner action: Answer the standalone question “What would you decide first for a short trip tomorrow?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you decide first for a short trip tomorrow?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you decide first for a short trip tomorrow?” / “明日短い旅行へ行くなら、最初に何を決めますか？” Tutor follow-ups: “What could stay open?” and “Which would you book first: transport or a place to stay?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “明日短い旅行へ行くなら、最初に何を決めますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you decide first for a short trip tomorrow?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For a short trip, would you rather follow a plan or make decisions as you go?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For a short trip, would you rather follow a plan or make decisions as you go?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For a short trip, would you rather follow a plan or make decisions as you go?” / “短い旅行なら、計画に従うのと、その場で決めるのと、どちらがよいですか？” Follow-ups: “Which risk makes advance planning valuable on this trip?” and “Which discovery would require leaving space open?”
-- Learning target: Develop the distinct “Plan or improvise” angle of A planned trip or a spontaneous one? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Plan or improvise” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For a short trip, would you rather follow a plan or make decisions as you go?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “短い旅行なら、計画に従うのと、その場で決めるのと、どちらがよいですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “For a short trip, would you rather follow a plan or make decisions as you go?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For a short trip, would you rather follow a plan or make decisions as you go?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For a short trip, would you rather follow a plan or make decisions as you go?” / “短い旅行なら、計画に従うのと、その場で決めるのと、どちらがよいですか？” Tutor follow-ups: “What would you leave undecided?” and “Which is worse: missing a booking or missing a surprise?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “短い旅行なら、計画に従うのと、その場で決めるのと、どちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For a short trip, would you rather follow a plan or make decisions as you go?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “What would become easier and harder if every trip used the same planning style?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What would become easier and harder if every trip used the same planning style?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What would become easier and harder if every trip used the same planning style?” / “すべての旅行がそのスタイルなら、何が変わりますか？” Follow-ups: “How would repeated planning affect energy and attention?” and “Which part of travel would become predictable in a bad way?”
-- Learning target: Develop the distinct “Every trip” angle of A planned trip or a spontaneous one? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Every trip” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What would become easier and harder if every trip used the same planning style?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “すべての旅行がそのスタイルなら、何が変わりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would become easier and harder if every trip used the same planning style?"]}`
+- Learner action: Answer the standalone question “What can go wrong when every minute of a trip is planned?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can go wrong when every minute of a trip is planned?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can go wrong when every minute of a trip is planned?” / “旅行の一分一分まで計画すると、何がうまくいかなくなることがありますか？” Tutor follow-ups: “Which part of the plan would feel restrictive?” and “Would you enjoy a trip with every meal booked?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “旅行の一分一分まで計画すると、何がうまくいかなくなることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can go wrong when every minute of a trip is planned?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “If accommodation were the only fixed part of a week-long trip, would that feel freeing or stressful?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “If accommodation were the only fixed part of a week-long trip, would that feel freeing or stressful?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “If accommodation were the only fixed part of a week-long trip, would that feel freeing or stressful?” / “一週間の旅行で宿だけ予約してあれば、気楽ですか？” Follow-ups: “Which uncertainty would feel exciting and which would feel unsafe?” and “What backup would make the open itinerary workable?”
-- Learning target: Develop the distinct “Only the room is booked” angle of A planned trip or a spontaneous one? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Only the room is booked” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “If accommodation were the only fixed part of a week-long trip, would that feel freeing or stressful?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一週間の旅行で宿だけ予約してあれば、気楽ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If accommodation were the only fixed part of a week-long trip, would that feel freeing or stressful?"]}`
+- Learner action: Answer the standalone question “Would one hotel booking make you feel prepared for a week-long trip?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would one hotel booking make you feel prepared for a week-long trip?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would one hotel booking make you feel prepared for a week-long trip?” / “一週間の旅行で宿だけ予約してあれば、準備できたと感じますか？” Tutor follow-ups: “What would you do on the first day?” and “Would you feel calmer with transport booked too?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一週間の旅行で宿だけ予約してあれば、準備できたと感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would one hotel booking make you feel prepared for a week-long trip?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Which decisions must two travellers settle when their planning styles conflict?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which decisions must two travellers settle when their planning styles conflict?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which decisions must two travellers settle when their planning styles conflict?” / “計画のしかたが違う人と、どう旅行しますか？” Follow-ups: “Which decisions require shared consent rather than compromise?” and “How would you divide control without creating resentment?”
-- Learning target: Develop the distinct “A different planner” angle of A planned trip or a spontaneous one? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A different planner” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which decisions must two travellers settle when their planning styles conflict?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “計画のしかたが違う人と、どう旅行しますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which decisions must two travellers settle when their planning styles conflict?"]}`
+- Learner action: Answer the standalone question “Which trip decision should people settle before travelling together?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which trip decision should people settle before travelling together?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which trip decision should people settle before travelling together?” / “一緒に旅行する前に、どの旅行の決め事を決めておくべきですか？” Tutor follow-ups: “How could people compromise?” and “Which causes more arguments: money or timing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一緒に旅行する前に、どの旅行の決め事を決めておくべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which trip decision should people settle before travelling together?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which destination, duration, or risk would reverse your planning preference?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which destination, duration, or risk would reverse your planning preference?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which destination, duration, or risk would reverse your planning preference?” / “どんな旅行なら、反対のスタイルを選びますか？” Follow-ups: “Which destination feature would demand the opposite style?” and “Would cost, access, or safety be the decisive factor?”
-- Learning target: Develop the distinct “A trip that changes the style” angle of A planned trip or a spontaneous one? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A trip that changes the style” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which destination, duration, or risk would reverse your planning preference?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな旅行なら、反対のスタイルを選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which destination, duration, or risk would reverse your planning preference?"]}`
+- Learner action: Answer the standalone question “What kind of trip needs a detailed plan?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of trip needs a detailed plan?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of trip needs a detailed plan?” / “どんな旅行には詳しい計画が必要ですか？” Tutor follow-ups: “What could go wrong without a plan?” and “Which needs more planning: a beach weekend or an international trip?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな旅行には詳しい計画が必要ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of trip needs a detailed plan?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor to choose between a planned trip and a spontaneous trip, then compare the reasons behind both answers.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor to choose between a planned trip and a spontaneous trip, then compare the reasons behind both answers.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor to choose between a planned trip and a spontaneous trip, then compare the reasons behind both answers.” / “チューターに計画的な旅行と行き当たりばったりの旅行のどちらを選ぶか聞き、お互いの理由を比べてください。” Follow-ups: “How does the tutor separate necessary planning from unnecessary control?” and “Which travel risk would reverse their style?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターに計画的な旅行と行き当たりばったりの旅行のどちらを選ぶか聞き、お互いの理由を比べてください。” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor to choose between a planned trip and a spontaneous trip, then compare the reasons behind both answers."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “What does your tutor always book first?” and “Would they plan more for an expensive trip?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/107-more-money-or-more-time/lesson.html`
-- SHA-256: `556ea84009c8c1c51a97ea26001a9151cdbddb424a48e15345c6d8f78ed2afec`
+- SHA-256: `bae8df3964d28d1af18d4f5d051081866e0baf15d2278ae434e540d8beba0d8c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No fixed choice UI appears; the title names two defensible sides for later discussion.
 - Component consistency: Uses the approved Freetalking goal component with no outcome cards, sample answer, or second activity.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; 360/480 screenshot inspection passed.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals offer optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and variant-owned glosses.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; 360/480 screenshot inspection passed.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
 - Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; 360/480 screenshot inspection passed.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No fixed choice set appears; this page establishes one discussion mode.
 - Component consistency: Uses one concise transition with learner-facing pool framing and tutor-only reciprocal guidance.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; 360/480 screenshot inspection passed.
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “When have you spent extra time to save money?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “When have you spent extra time to save money?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “When have you spent extra time to save money?” / “お金を節約するために、時間を多く使うのはどんなときですか？” Follow-ups: “What did the slower option save?” and “Would you make the same trade again?”
-- Learning target: Develop the distinct “Time costs money” angle of More money or more time? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Time costs money” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “When have you spent extra time to save money?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “お金を節約するために、時間を多く使うのはどんなときですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When have you spent extra time to save money?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “Would you take a slower route to save money?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you take a slower route to save money?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you take a slower route to save money?” / “お金を節約するためなら、時間のかかる道を選びますか？” Tutor follow-ups: “How much extra time would be acceptable?” and “Which usually costs less: walking or public transport?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金を節約するためなら、時間のかかる道を選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you take a slower route to save money?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “What would you do with three unexpected free hours?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What would you do with three unexpected free hours?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What would you do with three unexpected free hours?” / “突然、自由な時間が三時間できたら、何をしますか？” Follow-ups: “What would you do first?” and “Who, if anyone, would you spend the time with?”
-- Learning target: Develop the distinct “Three free hours” angle of More money or more time? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Three free hours” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What would you do with three unexpected free hours?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “突然、自由な時間が三時間できたら、何をしますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “What would you do with three unexpected free hours?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you do with three unexpected free hours?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you do with three unexpected free hours?” / “突然、自由な時間が三時間できたら、何をしますか？” Tutor follow-ups: “What would you do first?” and “Which sounds better today: rest, errands, or fun?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “突然、自由な時間が三時間できたら、何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you do with three unexpected free hours?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “If tomorrow came with one extra hour or fifty extra dollars, which would help more?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” / “明日、自由な時間が一時間増えるか、五十ドル増えるなら、どちらがより役立ちますか？” Follow-ups: “What would it make possible?” and “What is the strongest reason for the other side?”
-- Learning target: Develop the distinct “Choose one” angle of More money or more time? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Choose one” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “明日、自由な時間が一時間増えるか、五十ドル増えるなら、どちらがより役立ちますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If tomorrow came with one extra hour or fifty extra dollars, which would help more?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If tomorrow came with one extra hour or fifty extra dollars, which would help more?” / “明日、自由な時間が一時間増えるか、五十ドル増えるなら、どちらがより役立ちますか？” Tutor follow-ups: “What would your choice help you do?” and “Which disappears faster in a busy week: money or free time?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “明日、自由な時間が一時間増えるか、五十ドル増えるなら、どちらがより役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If tomorrow came with one extra hour or fifty extra dollars, which would help more?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “If you got more of your choice, what would change first?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “If you got more of your choice, what would change first?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “If you got more of your choice, what would change first?” / “選んだものが増えたら、最初に何が変わりますか？” Follow-ups: “Would a normal weekday look different?” and “Would it affect anyone else?”
-- Learning target: Develop the distinct “What changes first” angle of More money or more time? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “What changes first” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “If you got more of your choice, what would change first?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだものが増えたら、最初に何が変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you got more of your choice, what would change first?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “What everyday cost could fifty extra dollars help with this month?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What everyday cost could fifty extra dollars help with this month?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What everyday cost could fifty extra dollars help with this month?” / “今月、追加の五十ドルでどんな日常の支出を助けられますか？” Tutor follow-ups: “How urgent would that cost be?” and “What's one everyday expense that often surprises people?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今月、追加の五十ドルでどんな日常の支出を助けられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What everyday cost could fifty extra dollars help with this month?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “When would the other option matter more?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “When would the other option matter more?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “When would the other option matter more?” / “どんなときに、反対の選択のほうが大切ですか？” Follow-ups: “What becomes scarce in that situation?” and “How long would the change last?”
-- Learning target: Develop the distinct “The other side” angle of More money or more time? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “The other side” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “When would the other option matter more?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんなときに、反対の選択のほうが大切ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When would the other option matter more?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “What part of life would extra time improve?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of life would extra time improve?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of life would extra time improve?” / “自由な時間が増えたら、生活のどの部分がよくなりますか？” Tutor follow-ups: “How would the extra time help?” and “Which helps more after a tiring week: extra time or extra money?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自由な時間が増えたら、生活のどの部分がよくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of life would extra time improve?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would you accept more pay if it required ten extra work hours every week?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would you accept more pay if it required ten extra work hours every week?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would you accept more pay if it required ten extra work hours every week?” / “給料が増えても毎週十時間多く働くなら、受け入れますか？” Follow-ups: “What would those ten hours replace?” and “Would a clear end date change the answer?”
-- Learning target: Develop the distinct “Ten extra hours” angle of More money or more time? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Ten extra hours” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would you accept more pay if it required ten extra work hours every week?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “給料が増えても毎週十時間多く働くなら、受け入れますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you accept more pay if it required ten extra work hours every week?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “Would you take a pay raise if it meant working ten more hours each week?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you take a pay raise if it meant working ten more hours each week?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you take a pay raise if it meant working ten more hours each week?” / “給料が上がっても毎週十時間多く働くなら、引き受けますか？” Tutor follow-ups: “What would those ten hours replace?” and “Would you give up one evening a week for higher pay?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “給料が上がっても毎週十時間多く働くなら、引き受けますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you take a pay raise if it meant working ten more hours each week?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “What future change could make you switch your answer?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What future change could make you switch your answer?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What future change could make you switch your answer?” / “将来、どんな変化があれば答えが逆になりますか？” Follow-ups: “Could you prepare for that change now?” and “Would the switch be temporary or lasting?”
-- Learning target: Develop the distinct “A future change” angle of More money or more time? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A future change” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What future change could make you switch your answer?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “将来、どんな変化があれば答えが逆になりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What future change could make you switch your answer?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “When might someone choose extra time even if money was tight?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When might someone choose extra time even if money was tight?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When might someone choose extra time even if money was tight?” / “お金に余裕がなくても、どんなときに時間を選ぶでしょうか？” Tutor follow-ups: “What would the extra time protect?” and “Which would you protect first: sleep or income?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金に余裕がなくても、どんなときに時間を選ぶでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When might someone choose extra time even if money was tight?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose more money or more time, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose more money or more time, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose more money or more time, and why.” / “チューターならもっとお金ともっと時間のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which part of your tutor's answer uses time differently?” and “What expense would change their choice?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターならもっとお金ともっと時間のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose more money or more time, and why."]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which part of your tutor's reason made sense to you?” and “Which option would help more on a very busy day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No fixed choices appear; feedback is selected from the learner’s actual production.
 - Component consistency: Reuses the approved Freetalking feedback component with one strength, one focus, and one re-say.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; 360/480 screenshot inspection passed.

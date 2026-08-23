@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/51-starting-a-conversation-with-a-stranger/lesson.html`
-- SHA-256: `5d5286e2204c1f8bf6c126db760c5121cf08d05fd7c945add7c66a9fb16bb994`
+- SHA-256: `787bbddaba965f20528342c3db6ed378c4262a530847b436f8a0b38ab49a1ae8`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “You're seated beside someone you've never met. How would you open the conversation?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which shared detail would you use?” rather than asking every follow-up.
-- Visible target or prompt: You're seated beside someone you've never met. How would you open the conversation? / 会ったことのない人の隣に座っています。どのように会話を始めますか？
-- Learning target: Explore the distinct “Your opening (最初の一言)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which shared detail would you use?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which shared detail would you use?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “You're seated beside someone you've never met. How would you open the conversation?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How would you keep the opening low-pressure?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “You're seated beside someone you've never met. How would you open the conversation?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “You're seated beside someone you've never met. How would you open the conversation?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “You're seated beside someone you've never met. How would you open the conversation?” / “会ったことのない人の隣に座っています。どのように会話を始めますか？” Tutor follow-ups: “Which shared detail would you use?” and “How would you keep the opening low-pressure?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “会ったことのない人の隣に座っています。どのように会話を始めますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["You're seated beside someone you've never met. How would you open the conversation?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “In which setting would that opening work most naturally?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which immediate context do both people share?” rather than asking every follow-up.
-- Visible target or prompt: In which setting would that opening work most naturally? / その最初の一言は、どのような場面で最も自然に使えますか？
-- Learning target: Explore the distinct “The setting (場面)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which immediate context do both people share?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which immediate context do both people share?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “In which setting would that opening work most naturally?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “In which setting would it feel intrusive?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["In which setting would that opening work most naturally?"]}`
+- Learner action: Answer the standalone question “Where would a simple opening with a stranger feel most natural?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Where would a simple opening with a stranger feel most natural?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Where would a simple opening with a stranger feel most natural?” / “知らない人への簡単な声のかけ方が、最も自然に感じるのはどこですか？” Tutor follow-ups: “What can both people notice in that moment?” and “Where would it feel intrusive?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “知らない人への簡単な声のかけ方が、最も自然に感じるのはどこですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where would a simple opening with a stranger feel most natural?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which topics would you avoid with a stranger?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why might the topic feel intrusive?” rather than asking every follow-up.
-- Visible target or prompt: Which topics would you avoid with a stranger? / 知らない人との会話では、どのような話題を避けますか？
-- Learning target: Explore the distinct “What to avoid (避けたい話題)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why might the topic feel intrusive?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why might the topic feel intrusive?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which topics would you avoid with a stranger?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could a different setting make it appropriate?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which topics would you avoid with a stranger?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which topics would you avoid with a stranger?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which topics would you avoid with a stranger?” / “知らない人との会話では、どのような話題を避けますか？” Tutor follow-ups: “Why might the topic feel intrusive?” and “Could a different setting make it appropriate?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “知らない人との会話では、どのような話題を避けますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which topics would you avoid with a stranger?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What makes a small talk question inviting and easy to answer?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How specific should the opening be?” rather than asking every follow-up.
-- Visible target or prompt: What makes a small talk question inviting and easy to answer? / どのような雑談の質問なら、答えやすく会話に入りやすいですか？
-- Learning target: Explore the distinct “Easy to answer (答えやすさ)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How specific should the opening be?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How specific should the opening be?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes a small talk question inviting and easy to answer?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What allows a brief reply without awkwardness?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a small talk question inviting and easy to answer?"]}`
+- Learner action: Answer the standalone question “What makes a small talk question easy to answer?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a small talk question easy to answer?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a small talk question easy to answer?” / “どんな雑談の質問なら答えやすいですか？” Tutor follow-ups: “Should it be general or specific?” and “How can the other person give a short answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな雑談の質問なら答えやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a small talk question easy to answer?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What kind of opening causes a conversation to stall immediately?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is the problem usually the topic or the delivery?” rather than asking every follow-up.
-- Visible target or prompt: What kind of opening causes a conversation to stall immediately? / どのような最初の一言だと、会話がすぐ止まりますか？
-- Learning target: Explore the distinct “A dead end (続かなかった会話)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Is the problem usually the topic or the delivery?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the problem usually the topic or the delivery?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of opening causes a conversation to stall immediately?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which single follow-up might rescue it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of opening causes a conversation to stall immediately?"]}`
+- Learner action: Answer the standalone question “Which kind of opening makes a conversation die quickly?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which kind of opening makes a conversation die quickly?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which kind of opening makes a conversation die quickly?” / “どのような最初の一言だと、会話がすぐ止まりますか？” Tutor follow-ups: “Is the problem the topic or the way it was said?” and “What simple question might save the conversation?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような最初の一言だと、会話がすぐ止まりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of opening makes a conversation die quickly?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which signals indicate that a stranger is genuinely open to continuing the conversation?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How should a brief answer be interpreted?” rather than asking every follow-up.
-- Visible target or prompt: Which signals indicate that a stranger is genuinely open to continuing the conversation? / どのような反応から、相手が本当に会話を続けたいと分かりますか？
-- Learning target: Explore the distinct “Reading the signals (反応を読む)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How should a brief answer be interpreted?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How should a brief answer be interpreted?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which signals indicate that a stranger is genuinely open to continuing the conversation?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which signal suggests a graceful ending is appropriate?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which signals indicate that a stranger is genuinely open to continuing the conversation?"]}`
+- Learner action: Answer the standalone question “How can you tell that a stranger wants to keep talking?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can you tell that a stranger wants to keep talking?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can you tell that a stranger wants to keep talking?” / “どのような反応から、相手が本当に会話を続けたいと分かりますか？” Tutor follow-ups: “What can a brief answer mean?” and “Which sign suggests it is time to end the conversation politely?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような反応から、相手が本当に会話を続けたいと分かりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can you tell that a stranger wants to keep talking?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How do you respond when an opening fails to create a conversation?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When is one more question appropriate?” rather than asking every follow-up.
-- Visible target or prompt: How do you respond when an opening fails to create a conversation? / 最初の一言から会話が続かなかったとき、どう対応しますか？
-- Learning target: Explore the distinct “When it fails (失敗したとき)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When is one more question appropriate?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When is one more question appropriate?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do you respond when an opening fails to create a conversation?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How would you close the exchange gracefully?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you respond when an opening fails to create a conversation?"]}`
+- Learner action: Answer the standalone question “What can you do when a conversation starter gets no response?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can you do when a conversation starter gets no response?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can you do when a conversation starter gets no response?” / “会話のきっかけに反応がなかったら、何ができますか？” Tutor follow-ups: “Would you try one more question?” and “How would you end politely?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “会話のきっかけに反応がなかったら、何ができますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can you do when a conversation starter gets no response?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which conversation starter could you realistically use this week?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “In which setting could you use it?” rather than asking every follow-up.
-- Visible target or prompt: Which conversation starter could you realistically use this week? / 今週、現実的に使えそうな会話のきっかけは何ですか？
-- Learning target: Explore the distinct “A useful starter (使えるきっかけ)” angle of “Starting a conversation with a stranger” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “In which setting could you use it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “In which setting could you use it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which conversation starter could you realistically use this week?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which reply would give you a natural next question?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which conversation starter could you realistically use this week?"]}`
+- Learner action: Answer the standalone question “Which conversation starter could you actually use this week?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which conversation starter could you actually use this week?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which conversation starter could you actually use this week?” / “今週、実際に使えそうな会話のきっかけは何ですか？” Tutor follow-ups: “Where could you use it?” and “Which reply would give you a natural next question?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今週、実際に使えそうな会話のきっかけは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which conversation starter could you actually use this week?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/54-the-person-you-talk-to-most/lesson.html`
-- SHA-256: `088689b1bb75e3dc6b95d89d1fa6340bba852d0667bd09a8616f66d0bc1922ad`
+- SHA-256: `a0d10686eb695e08d539576f41744ded03ed4d88cf669d4eb55f5e14239af861`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What causes one person to become someone's primary conversational contact?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How strongly does routine shape that role?” rather than asking every follow-up.
-- Visible target or prompt: What causes one person to become someone's primary conversational contact? / どのような理由で、ある人がいちばんよく話す相手になるのでしょうか？
-- Learning target: Explore the distinct “A main contact (よく話す相手)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How strongly does routine shape that role?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How strongly does routine shape that role?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What causes one person to become someone's primary conversational contact?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Can repeated practical contact develop into genuine closeness?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What causes one person to become someone's primary conversational contact?"]}`
+- Learner action: Answer the standalone question “What makes one person especially easy to talk to?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes one person especially easy to talk to?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes one person especially easy to talk to?” / “特に話しやすい人には、どんな特徴がありますか？” Tutor follow-ups: “How much does routine shape the connection?” and “Can regular everyday contact grow into real closeness?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “特に話しやすい人には、どんな特徴がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes one person especially easy to talk to?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Why does one contact sometimes become central within a wider network?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does centrality come mainly from trust, availability, or shared need?” rather than asking every follow-up.
-- Visible target or prompt: Why does one contact sometimes become central within a wider network? / 多くの連絡先の中で、ある相手が中心になることがあるのはなぜですか？
-- Learning target: Explore the distinct “Why that person (その相手である理由)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Does centrality come mainly from trust, availability, or shared need?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does centrality come mainly from trust, availability, or shared need?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why does one contact sometimes become central within a wider network?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which change could quickly alter that role?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why does one contact sometimes become central within a wider network?"]}`
+- Learner action: Answer the standalone question “What makes a short everyday chat feel important?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a short everyday chat feel important?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a short everyday chat feel important?” / “短い日常会話が大切に感じられるのは何ですか？” Tutor follow-ups: “Is it the person, the timing, or the subject?” and “When can a short chat improve your day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “短い日常会話が大切に感じられるのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a short everyday chat feel important?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What rhythm of contact can sustain closeness without creating pressure?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How much silence can a strong relationship comfortably hold?” rather than asking every follow-up.
-- Visible target or prompt: What rhythm of contact can sustain closeness without creating pressure? / 負担を生まずに親しさを保てる連絡の頻度は、どのようなものですか？
-- Learning target: Explore the distinct “A good rhythm (よい頻度)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How much silence can a strong relationship comfortably hold?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How much silence can a strong relationship comfortably hold?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What rhythm of contact can sustain closeness without creating pressure?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When can frequent communication begin to feel obligatory?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What rhythm of contact can sustain closeness without creating pressure?"]}`
+- Learner action: Answer the standalone question “Which makes people feel closer: frequent short messages or occasional long conversations?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which makes people feel closer: frequent short messages or occasional long conversations?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which makes people feel closer: frequent short messages or occasional long conversations?” / “頻繁な短いメッセージと、ときどきの長い会話では、どちらが人をより親しく感じさせますか？” Tutor follow-ups: “How much silence can close people comfortably have?” and “When does frequent contact start to feel like a duty?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “頻繁な短いメッセージと、ときどきの長い会話では、どちらが人をより親しく感じさせますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which makes people feel closer: frequent short messages or occasional long conversations?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which kinds of conversation strengthen a relationship over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does a deeper connection always require personal disclosure?” rather than asking every follow-up.
-- Visible target or prompt: Which kinds of conversation strengthen a relationship over time? / どのような会話が、時間をかけて関係を深めますか？
-- Learning target: Explore the distinct “Deeper connection (関係を深める話題)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Does a deeper connection always require personal disclosure?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does a deeper connection always require personal disclosure?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which kinds of conversation strengthen a relationship over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can ordinary daily exchanges build trust?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kinds of conversation strengthen a relationship over time?"]}`
+- Learner action: Answer the standalone question “What kinds of conversation make people feel closer over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kinds of conversation make people feel closer over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kinds of conversation make people feel closer over time?” / “どのような会話が、時間をかけて関係を深めますか？” Tutor follow-ups: “Do deeper conversations always require personal details?” and “How can ordinary daily talk build trust?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような会話が、時間をかけて関係を深めますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kinds of conversation make people feel closer over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What makes certain subjects easy to discuss with one person but difficult with another?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How does established trust shape the boundary?” rather than asking every follow-up.
-- Visible target or prompt: What makes certain subjects easy to discuss with one person but difficult with another? / 同じ話題でも、相手によって話しやすさが変わるのはなぜですか？
-- Learning target: Explore the distinct “Easy and difficult topics (話しやすい話題と難しい話題)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How does established trust shape the boundary?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How does established trust shape the boundary?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes certain subjects easy to discuss with one person but difficult with another?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When does timing matter more than the subject itself?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes certain subjects easy to discuss with one person but difficult with another?"]}`
+- Learner action: Answer the standalone question “Why is one subject easy to discuss with one person but hard with another?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why is one subject easy to discuss with one person but hard with another?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why is one subject easy to discuss with one person but hard with another?” / “同じ話題でも、相手によって話しやすさが変わるのはなぜですか？” Tutor follow-ups: “What topics need more trust?” and “When can timing matter more than the topic?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “同じ話題でも、相手によって話しやすさが変わるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why is one subject easy to discuss with one person but hard with another?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Why do patterns of communication evolve as people's circumstances change?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which transition has the strongest effect on contact?” rather than asking every follow-up.
-- Visible target or prompt: Why do patterns of communication evolve as people's circumstances change? / 生活状況が変わると、連絡のしかたも変化するのはなぜですか？
-- Learning target: Explore the distinct “Changing patterns (変わる連絡のしかた)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which transition has the strongest effect on contact?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which transition has the strongest effect on contact?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why do patterns of communication evolve as people's circumstances change?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can a new communication medium alter the relationship itself?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do patterns of communication evolve as people's circumstances change?"]}`
+- Learner action: Answer the standalone question “Why might someone's closest daily contact change over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why might someone's closest daily contact change over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why might someone's closest daily contact change over time?” / “日頃いちばんよく話す相手が、時間とともに変わることがあるのはなぜですか？” Tutor follow-ups: “Which life change can cause it?” and “Can messaging someone more often change the relationship?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日頃いちばんよく話す相手が、時間とともに変わることがあるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might someone's closest daily contact change over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How can someone's central contacts shift across different stages of life?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which transition tends to reshape the network most?” rather than asking every follow-up.
-- Visible target or prompt: How can someone's central contacts shift across different stages of life? / 人生の段階が変わると、中心となる連絡相手はどのように移り変わりますか？
-- Learning target: Explore the distinct “Life stages (人生の段階)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which transition tends to reshape the network most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which transition tends to reshape the network most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can someone's central contacts shift across different stages of life?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What significance can a former central contact retain?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can someone's central contacts shift across different stages of life?"]}`
+- Learner action: Answer the standalone question “After a new job or a move, who often becomes the person someone talks to most?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “After a new job or a move, who often becomes the person someone talks to most?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “After a new job or a move, who often becomes the person someone talks to most?” / “新しい仕事や引っ越しのあと、いちばんよく話す相手になりやすいのは誰ですか？” Tutor follow-ups: “Why does that person become important?” and “Who from the past might still matter?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しい仕事や引っ越しのあと、いちばんよく話す相手になりやすいのは誰ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["After a new job or a move, who often becomes the person someone talks to most?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What helps two people stay in touch without turning contact into an obligation?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How much silence can the relationship comfortably hold?” rather than asking every follow-up.
-- Visible target or prompt: What helps two people stay in touch without turning contact into an obligation? / 連絡を義務にせず、二人がつながり続けるには何が役立ちますか？
-- Learning target: Explore the distinct “Staying in touch (連絡を続ける)” angle of “The person you talk to most” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How much silence can the relationship comfortably hold?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How much silence can the relationship comfortably hold?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What helps two people stay in touch without turning contact into an obligation?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which kind of message invites an easy response?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps two people stay in touch without turning contact into an obligation?"]}`
+- Learner action: Answer the standalone question “What helps close friends stay in touch through a long quiet period?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What helps close friends stay in touch through a long quiet period?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What helps close friends stay in touch through a long quiet period?” / “長く連絡がない時期も、親しい友人同士がつながり続けるには何が役立ちますか？” Tutor follow-ups: “What keeps the friendship from feeling forgotten?” and “How can people reconnect without making the gap awkward?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “長く連絡がない時期も、親しい友人同士がつながり続けるには何が役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps close friends stay in touch through a long quiet period?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

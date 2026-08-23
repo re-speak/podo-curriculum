@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-things-i-like-accessible/lessons/29-a-hobby-other-people-underestimate/lesson.html`
-- SHA-256: `88eea0d213d5c936a7b495c4c83afda8d03887e66e217744a97270a40a09d5b0`
+- SHA-256: `241ce59f2f961ec1927f6eabef2aed8bbbc15322942917dce3cb51a13eb9cf89`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
 - Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Generator-owned semantic inspection is complete; root visual inspection at 360px and 480px is still pending.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support and exact glosses; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending.
+- Notes: Article claims, variant wording, Japanese row order, and gloss ownership were reviewed in generator data; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
 - Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending.
+- Notes: Canonical component reuse and wording were mechanically verified; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
 - Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending.
+- Notes: The source now uses the approved flexible pool contract; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What hobby do people underestimate?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which hobby comes closest?” rather than asking every follow-up.
-- Visible target or prompt: What hobby do people underestimate? 人に価値を分かってもらいにくい趣味は何ですか？
-- Learning target: Explore the distinct “A misunderstood hobby (誤解される趣味)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which hobby comes closest?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which hobby comes closest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What hobby do people underestimate?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do people misunderstand about it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What hobby do people underestimate?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What's a hobby that is more interesting than it looks?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's a hobby that is more interesting than it looks?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's a hobby that is more interesting than it looks?” / “見た目より面白い趣味は何ですか？” Tutor follow-ups: “Why might it look boring at first?” and “Which looks least interesting from outside: gardening, collecting, or puzzles?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “見た目より面白い趣味は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's a hobby that is more interesting than it looks?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What do people actually do in that hobby?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part takes the most attention?” rather than asking every follow-up.
-- Visible target or prompt: What do people actually do in that hobby? その趣味では、実際にどんなことをしますか？
-- Learning target: Explore the distinct “What people do (その趣味ですること)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which part takes the most attention?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part takes the most attention?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do people actually do in that hobby?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might a beginner try first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do people actually do in that hobby?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which hobby looks easy but takes real skill?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which hobby looks easy but takes real skill?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which hobby looks easy but takes real skill?” / “簡単そうに見えて、実は技術が必要な趣味は何ですか？” Tutor follow-ups: “Which skill is hidden?” and “Which looks easier than it is: cooking, photography, or gaming?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “簡単そうに見えて、実は技術が必要な趣味は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which hobby looks easy but takes real skill?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What do outsiders miss about the hobby?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which detail takes time to notice?” rather than asking every follow-up.
-- Visible target or prompt: What do outsiders miss about the hobby? その趣味について、外の人は何を見落としていますか？
-- Learning target: Explore the distinct “What outsiders miss (外から見えないもの)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which detail takes time to notice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which detail takes time to notice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do outsiders miss about the hobby?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What looks easier than it really is?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do outsiders miss about the hobby?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What part of a quiet hobby can be exciting?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of a quiet hobby can be exciting?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of a quiet hobby can be exciting?” / “静かな趣味でも、どんなところがわくわくしますか？” Tutor follow-ups: “What does a fan notice?” and “Can a quiet hobby still feel competitive?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “静かな趣味でも、どんなところがわくわくしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of a quiet hobby can be exciting?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What is the best way for a beginner to start?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What might make someone continue after the first try?” rather than asking every follow-up.
-- Visible target or prompt: What is the best way for a beginner to start? 初心者が始めるなら、どんな方法がいちばんよいですか？
-- Learning target: Explore the distinct “How it begins (始め方)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What might make someone continue after the first try?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What might make someone continue after the first try?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the best way for a beginner to start?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who could help a beginner understand it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the best way for a beginner to start?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What can a beginner do in the first hour of a new hobby?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can a beginner do in the first hour of a new hobby?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can a beginner do in the first hour of a new hobby?” / “新しい趣味を始めた最初の一時間に、初心者は何ができますか？” Tutor follow-ups: “What would feel successful?” and “Who or what could help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しい趣味を始めた最初の一時間に、初心者は何ができますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can a beginner do in the first hour of a new hobby?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “How much time does the hobby need before it becomes rewarding?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How could someone make room for it?” rather than asking every follow-up.
-- Visible target or prompt: How much time does the hobby need before it becomes rewarding? その趣味が面白くなるまで、どのくらい時間が必要ですか？
-- Learning target: Explore the distinct “Time for it (必要な時間)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How could someone make room for it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How could someone make room for it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How much time does the hobby need before it becomes rewarding?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would the time begin to feel well spent?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much time does the hobby need before it becomes rewarding?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “How long should someone try a hobby before deciding it's not for them?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How long should someone try a hobby before deciding it's not for them?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How long should someone try a hobby before deciding it's not for them?” / “趣味が自分に合わないと決める前に、どのくらい試すべきですか？” Tutor follow-ups: “What needs time to become fun?” and “When is stopping reasonable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “趣味が自分に合わないと決める前に、どのくらい試すべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How long should someone try a hobby before deciding it's not for them?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What seems like the best moment in the hobby?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How often might that moment happen?” rather than asking every follow-up.
-- Visible target or prompt: What seems like the best moment in the hobby? その趣味で、いちばんよさそうな瞬間は何ですか？
-- Learning target: Explore the distinct “The best moment (最高の瞬間)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How often might that moment happen?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How often might that moment happen?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What seems like the best moment in the hobby?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What has to go right first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What seems like the best moment in the hobby?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What moment makes a hobby feel rewarding?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What moment makes a hobby feel rewarding?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What moment makes a hobby feel rewarding?” / “趣味をやっていてよかったと感じるのは、どんな瞬間ですか？” Tutor follow-ups: “How often does it happen?” and “What has to go right first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “趣味をやっていてよかったと感じるのは、どんな瞬間ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What moment makes a hobby feel rewarding?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Why might people underestimate the hobby?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which image might need correcting?” rather than asking every follow-up.
-- Visible target or prompt: Why might people underestimate the hobby? なぜ人はその趣味を低く評価するかもしれませんか？
-- Learning target: Explore the distinct “What is underestimated (低く見られている点)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which image might need correcting?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which image might need correcting?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why might people underestimate the hobby?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could any criticism be fair?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might people underestimate the hobby?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Why do people judge hobbies from the outside?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do people judge hobbies from the outside?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do people judge hobbies from the outside?” / “なぜ人は、趣味を外から見ただけで判断するのでしょうか？” Tutor follow-ups: “Which image can be misleading?” and “Could any criticism be fair?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “なぜ人は、趣味を外から見ただけで判断するのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do people judge hobbies from the outside?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would convince me to try it once?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What should my first experience be?” rather than asking every follow-up.
-- Visible target or prompt: What would convince me to try it once? 私が一度試してみたくなるように、何を伝えますか？
-- Learning target: Explore the distinct “Convince me to try (私を誘うなら)” angle of “A hobby other people underestimate” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What should my first experience be?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What should my first experience be?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would convince me to try it once?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What difficulty should you warn me about?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would convince me to try it once?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which hobby would you try once if it were completely free?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which hobby would you try once if it were completely free?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which hobby would you try once if it were completely free?” / “すべて無料なら、一度試してみたい趣味は何ですか？” Tutor follow-ups: “What makes it interesting?” and “What difficulty would you expect?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “すべて無料なら、一度試してみたい趣味は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which hobby would you try once if it were completely free?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Prompt, Japanese support, and both follow-up jobs were reviewed in source; root visual inspection is pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one strength, one focus, and one useful re-say.
 - Component consistency: Reuses the approved Freetalking feedback component with separate strength, focus, and useful-correction fields.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending.
+- Notes: Canonical feedback wording and correction loop were preserved; root visual inspection is pending. Post-rewrite visual inspection at 360px and 480px is pending.

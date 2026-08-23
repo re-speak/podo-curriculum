@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/11-a-show-you-cant-stop-watching/lesson.html`
-- SHA-256: `84fbf5f0c6a15d30b513487311a65d901a83938170c6e1830a3389139e0deacd`
+- SHA-256: `cf428163bdbb1cf6b4ef7a3ce717c23833e7cb4abdfd7a35dc47b076ae01e89b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Are you watching any shows at the moment?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What kind of show fits your mood right now?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Are you watching any shows at the moment? 今、何か作品を見ていますか？
-- Learning target: Explore the distinct “Watching now (今見ているもの)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Are you watching any shows at the moment?” opens this angle; “What kind of show fits your mood right now?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What kind of show fits your mood right now?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Are you watching any shows at the moment?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What usually makes you start one?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “Are you watching any shows at the moment?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Are you watching any shows at the moment?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Are you watching any shows at the moment?” / “今、何か作品を見ていますか？” Tutor follow-ups: “What kind of show fits your mood right now?” and “What usually makes you start one?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今、何か作品を見ていますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Are you watching any shows at the moment?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “When was the last time you watched an episode of a show?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What do you remember about that episode?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When was the last time you watched an episode of a show? 最後に作品の一話を見たのはいつですか？
-- Learning target: Explore the distinct “Your last episode (直近のエピソード)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “When was the last time you watched an episode of a show?” opens this angle; “What do you remember about that episode?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What do you remember about that episode?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When was the last time you watched an episode of a show?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What do you watch when you do not want a series?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When was the last time you watched an episode of a show?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “How many episodes do you give a show before you quit?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How many episodes do you give a show before you quit?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How many episodes do you give a show before you quit?” / “作品を見るのをやめる前に、何話くらいまで見ますか？” Tutor follow-ups: “What helps you decide?” and “Have you ever stopped after one episode?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “作品を見るのをやめる前に、何話くらいまで見ますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How many episodes do you give a show before you quit?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “How far do you usually get before you decide to continue a show?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What helps you decide?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How far do you usually get before you decide to continue a show? 作品を見続けるか決めるまで、普段どのくらい見ますか？
-- Learning target: Explore the distinct “How far in (どこまで見る？)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How far do you usually get before you decide to continue a show?” opens this angle; “What helps you decide?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What helps you decide?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How far do you usually get before you decide to continue a show?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Have you ever decided after one episode?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How far do you usually get before you decide to continue a show?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What can keep you watching even when a story is slow?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can keep you watching even when a story is slow?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can keep you watching even when a story is slow?” / “物語の進みが遅くても、見続けたくなるのはどんな要素ですか？” Tutor follow-ups: “Is a character or the mood more important?” and “What makes a slow story feel worth it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “物語の進みが遅くても、見続けたくなるのはどんな要素ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can keep you watching even when a story is slow?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “What usually makes you keep watching a show?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Is the story or a character more important?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What usually makes you keep watching a show? 普段、どんなことがあると作品を見続けますか？
-- Learning target: Explore the distinct “The pull (見続ける理由)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What usually makes you keep watching a show?” opens this angle; “Is the story or a character more important?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Is the story or a character more important?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What usually makes you keep watching a show?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “At what point do you get interested?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually makes you keep watching a show?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which recommendation do you trust more: a friend or an app?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which recommendation do you trust more: a friend or an app?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which recommendation do you trust more: a friend or an app?” / “作品のおすすめは、友人とアプリのどちらをより信頼しますか？” Tutor follow-ups: “What does that source know about your taste?” and “When has it given you a bad choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “作品のおすすめは、友人とアプリのどちらをより信頼しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which recommendation do you trust more: a friend or an app?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “How do you usually find a new show?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Do you trust friends or an app more?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: How do you usually find a new show? 普段、新しい作品をどうやって見つけますか？
-- Learning target: Explore the distinct “Finding a show (作品の見つけ方)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How do you usually find a new show?” opens this angle; “Do you trust friends or an app more?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Do you trust friends or an app more?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How do you usually find a new show?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes a show look interesting?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you usually find a new show?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What makes you stop watching a show halfway?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes you stop watching a show halfway?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes you stop watching a show halfway?” / “作品を途中で見るのをやめるのは、どんな理由からですか？” Tutor follow-ups: “Which problem loses your interest fastest?” and “What could make the show worth trying again?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “作品を途中で見るのをやめるのは、どんな理由からですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes you stop watching a show halfway?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “Have you stopped watching any show halfway?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What usually makes you lose interest?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What usually makes someone stop watching a show halfway?”
-- Learning target: Explore the distinct “A show you dropped (途中でやめた作品)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you stopped watching any show halfway?” opens this angle; “What usually makes you lose interest?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What usually makes you lose interest?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you stopped watching any show halfway?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might make you try it again?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually makes someone stop watching a show halfway?"]}`
+- Learner action: Answer the standalone question “When is watching one more episode a bad idea?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is watching one more episode a bad idea?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is watching one more episode a bad idea?” / “もう一話見るのがよくないのは、どんなときですか？” Tutor follow-ups: “What do you need to do the next day?” and “How late is too late?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “もう一話見るのがよくないのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is watching one more episode a bad idea?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “When does watching another episode become a bad idea?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would you need to do the next day?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: When does watching another episode become a bad idea? もう1話見るのがよくない判断になるのは、どんなときですか？
-- Learning target: Explore the distinct “Enough is enough (見すぎの境目)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “When does watching another episode become a bad idea?” opens this angle; “What would you need to do the next day?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would you need to do the next day?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “When does watching another episode become a bad idea?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How late is too late for you?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does watching another episode become a bad idea?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What makes an ending satisfying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes an ending satisfying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes an ending satisfying?” / “どんな結末なら満足できますか？” Tutor follow-ups: “Do you want every question answered?” and “Can a sad ending still be good?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな結末なら満足できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes an ending satisfying?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “What kind of show would you like to watch next?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Do you want a similar feeling or something different?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What kind of show would you like to watch next? 次はどんな作品を見たいですか？
-- Learning target: Explore the distinct “What's next (次に見るもの)” angle of “A show you can't stop watching” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What kind of show would you like to watch next?” opens this angle; “Do you want a similar feeling or something different?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Do you want a similar feeling or something different?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What kind of show would you like to watch next?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Where would you look for ideas?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of show would you like to watch next?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Do you enjoy a show more when you watch it alone or with someone else?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Do you enjoy a show more when you watch it alone or with someone else?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Do you enjoy a show more when you watch it alone or with someone else?” / “作品は一人で見るほうが楽しめますか、それとも誰かと一緒に見るほうが楽しめますか？” Tutor follow-ups: “What changes when another person is there?” and “Which kind of show is better to share?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “作品は一人で見るほうが楽しめますか、それとも誰かと一緒に見るほうが楽しめますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you enjoy a show more when you watch it alone or with someone else?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

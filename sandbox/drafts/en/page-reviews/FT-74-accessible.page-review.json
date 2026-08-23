@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
   "lesson": "sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/74-what-your-workday-actually-looks-like/lesson.html",
-  "lessonSha256": "336984a8443d850874a9dfad65086e1f38de685666f14b1a980e1be386516498",
+  "lessonSha256": "6756a5e562f423d971d1dd796ea93135a94b051f3d55d1e91da0b2cf8ed402d2",
   "stages": {
     "generated": "pass",
     "mechanicalValidation": "pass",
     "humanPageAudit": "pass",
-    "ownerApproval": "pending"
+    "ownerApproval": "pass"
   },
   "viewports": [
     360,
@@ -28,7 +28,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -52,7 +52,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -76,7 +76,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -100,7 +100,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
@@ -111,209 +111,209 @@
     },
     {
       "pageId": "warm-1",
-      "learnerAction": "Respond aloud to “Choose any recent two-hour period. What filled that time?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which part would another person have seen?” rather than asking every follow-up.",
-      "targetOrPrompt": "Choose any recent two-hour period. What filled that time? / 最近の二時間を一つ選んでください。その時間を何で過ごしましたか？",
-      "learningTarget": "Explore the distinct “A two-hour window (二時間の様子)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which part would another person have seen?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “Which part would another person have seen?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Choose any recent two-hour period. What filled that time?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “What made this period typical or unusual?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “Think about the last two hours. What did you do?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “Think about the last two hours. What did you do?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “Think about the last two hours. What did you do?” / “直近の二時間を思い出してください。何をしましたか？” Tutor follow-ups: “Which part took the longest?” and “Was that a normal two hours for you?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “直近の二時間を思い出してください。何をしましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Choose any recent two-hour period. What filled that time?"
+          "Think about the last two hours. What did you do?"
         ]
       }
     },
     {
       "pageId": "warm-2",
-      "learnerAction": "Respond aloud to “What sequence of activities often fills a typical two-hour period?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which activity usually comes first?” rather than asking every follow-up.",
-      "targetOrPrompt": "What sequence of activities often fills a typical two-hour period? / よくある二時間は、どんな活動の順番で進むことが多いですか？",
-      "learningTarget": "Explore the distinct “Walk through the period (時間の流れ)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which activity usually comes first?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “Which activity usually comes first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What sequence of activities often fills a typical two-hour period?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “Which interruption is most common?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “Which part of your day takes more time than people think?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “Which part of your day takes more time than people think?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “Which part of your day takes more time than people think?” / “一日の中で、人が思うより時間のかかることは何ですか？” Tutor follow-ups: “Which activity usually comes first?” and “Which interruption is most common?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “一日の中で、人が思うより時間のかかることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What sequence of activities often fills a typical two-hour period?"
+          "Which part of your day takes more time than people think?"
         ]
       }
     },
     {
       "pageId": "q1",
-      "learnerAction": "Respond aloud to “Which part of a daily routine usually takes the most time?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “Is the time spent doing, waiting, checking, or coordinating?” rather than asking every follow-up.",
-      "targetOrPrompt": "Which part of a daily routine usually takes the most time? / 日常の流れの中で、普通最も時間がかかるのはどの部分ですか？",
-      "learningTarget": "Explore the distinct “What takes longest (最も時間がかかること)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Is the time spent doing, waiting, checking, or coordinating?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “Is the time spent doing, waiting, checking, or coordinating?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of a daily routine usually takes the most time?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “Could an outsider see why it takes so long?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “What part of your routine do you enjoy most?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “What part of your routine do you enjoy most?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “What part of your routine do you enjoy most?” / “日課の中で、いちばん楽しんでいることは何ですか？” Tutor follow-ups: “What do you like about it?” and “Would you want more time for it?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “日課の中で、いちばん楽しんでいることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Which part of a daily routine usually takes the most time?"
+          "What part of your routine do you enjoy most?"
         ]
       }
     },
     {
       "pageId": "q2",
-      "learnerAction": "Respond aloud to “Which part of a daily routine tends to feel satisfying or frustrating?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “What feature creates that response?” rather than asking every follow-up.",
-      "targetOrPrompt": "Which part of a daily routine tends to feel satisfying or frustrating? / 日常の流れのどの部分が、満足感やストレスを感じやすいですか？",
-      "learningTarget": "Explore the distinct “A part you value (大切に思う部分)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What feature creates that response?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “What feature creates that response?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of a daily routine tends to feel satisfying or frustrating?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “Would a small change alter it?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “What part of your day drains your energy?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “What part of your day drains your energy?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “What part of your day drains your energy?” / “一日の中で、いちばん疲れることは何ですか？” Tutor follow-ups: “Is it physically tiring or mentally tiring?” and “What helps you recover?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “一日の中で、いちばん疲れることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Which part of a daily routine tends to feel satisfying or frustrating?"
+          "What part of your day drains your energy?"
         ]
       }
     },
     {
       "pageId": "q3",
-      "learnerAction": "Respond aloud to “What happens behind the scenes that might surprise an outsider?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “Why is that work easy to miss?” rather than asking every follow-up.",
-      "targetOrPrompt": "What happens behind the scenes that might surprise an outsider? / 表に見えないところで、外の人が驚きそうな何が起きていますか？",
-      "learningTarget": "Explore the distinct “What would surprise an outsider (外からは意外なこと)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Why is that work easy to miss?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “Why is that work easy to miss?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What happens behind the scenes that might surprise an outsider?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “What problem does the hidden work prevent?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “What's one small task that causes a lot of extra work?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “What's one small task that causes a lot of extra work?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “What's one small task that causes a lot of extra work?” / “小さな作業なのに、たくさんの追加の仕事を生むものは何ですか？” Tutor follow-ups: “Why is that work easy to miss?” and “What problem does the hidden work prevent?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “小さな作業なのに、たくさんの追加の仕事を生むものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What happens behind the scenes that might surprise an outsider?"
+          "What's one small task that causes a lot of extra work?"
         ]
       }
     },
     {
       "pageId": "q4",
-      "learnerAction": "Respond aloud to “How do daily work, study, or care routines change over time?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “Which responsibility tends to change most?” rather than asking every follow-up.",
-      "targetOrPrompt": "How do daily work, study, or care routines change over time? / 仕事、勉強、ケアの日常的な流れは、時間とともにどう変わりますか？",
-      "learningTarget": "Explore the distinct “How the routine changed (変わった日課)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Which responsibility tends to change most?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “Which responsibility tends to change most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do daily work, study, or care routines change over time?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “What usually stays stable?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “If you could remove one task from your day, what would it be?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “If you could remove one task from your day, what would it be?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “If you could remove one task from your day, what would it be?” / “一日の中から一つの作業をなくせるなら、何を選びますか？” Tutor follow-ups: “What would become easier if you removed or shortened it?” and “Who else would notice the change?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “一日の中から一つの作業をなくせるなら、何を選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "How do daily work, study, or care routines change over time?"
+          "If you could remove one task from your day, what would it be?"
         ]
       }
     },
     {
       "pageId": "q5",
-      "learnerAction": "Respond aloud to “Which part of a daily routine is most worth cutting or shortening?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “What would improve?” rather than asking every follow-up.",
-      "targetOrPrompt": "Which part of a daily routine is most worth cutting or shortening? / 日常の流れの中で、最もなくす、または短くする価値があるのはどの部分ですか？",
-      "learningTarget": "Explore the distinct “What to remove (減らしたいこと)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “What would improve?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “What would improve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of a daily routine is most worth cutting or shortening?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “What useful function already works?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “What helps a busy day go smoothly?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “What helps a busy day go smoothly?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “What helps a busy day go smoothly?” / “忙しい一日を順調に進めるのに、何が役立ちますか？” Tutor follow-ups: “Do you prepare anything in advance?” and “Who or what helps most?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “忙しい一日を順調に進めるのに、何が役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "Which part of a daily routine is most worth cutting or shortening?"
+          "What helps a busy day go smoothly?"
         ]
       }
     },
     {
       "pageId": "q6",
-      "learnerAction": "Respond aloud to “What question would help an outsider understand this routine fairly?” and develop the most interesting concrete detail.",
-      "tutorAction": "React or share briefly, then choose a relevant probe such as “Who could answer it?” rather than asking every follow-up.",
-      "targetOrPrompt": "What question would help an outsider understand this routine fairly? / 外の人がこの日課を公平に理解するには、どんな質問が役立ちますか？",
-      "learningTarget": "Explore the distinct “See the whole day (一日全体を見る)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.",
-      "pedagogicalValue": "The standalone main prompt opens one answerable conversational job; “Who could answer it?” adds a specific next layer without repeating it.",
-      "failureDiagnosis": "If the answer remains vague after “Who could answer it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.",
-      "nonTargetSupport": "The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.",
-      "articleTreatment": "This prompt stands alone if pre-study was skipped; the article may seed ideas for “What question would help an outsider understand this routine fairly?” but is never required.",
-      "choiceQuality": "There are no artificial distractors or forced frames; “What false assumption might the answer correct?” opens a second nonduplicate conversational direction.",
-      "componentConsistency": "Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.",
+      "learnerAction": "Answer the standalone question “What would surprise someone who followed your routine for a day?” aloud and develop one interesting detail, example, or reason.",
+      "tutorAction": "Ask “What would surprise someone who followed your routine for a day?”, react naturally, and use the most relevant follow-up instead of forcing both.",
+      "targetOrPrompt": "Conversation prompt: “What would surprise someone who followed your routine for a day?” / “あなたの日課を一日体験した人は、何に驚くと思いますか？” Tutor follow-ups: “What would be harder than they expected?” and “What might they enjoy?”",
+      "learningTarget": "Answer and develop this page's distinct conversation question in spontaneous English.",
+      "pedagogicalValue": "The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.",
+      "failureDiagnosis": "A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.",
+      "nonTargetSupport": "The Japanese prompt “あなたの日課を一日体験した人は、何に驚くと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.",
+      "articleTreatment": "The learner may use an article idea or any relevant example; the page does not test article recall.",
+      "choiceQuality": "No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.",
+      "componentConsistency": "Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.",
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],
         "hintChips": [],
         "supportStage": "not-applicable",
         "substantivePrompts": [
-          "What question would help an outsider understand this routine fairly?"
+          "What would surprise someone who followed your routine for a day?"
         ]
       }
     },
@@ -332,7 +332,7 @@
       "visual360": "pending",
       "visual480": "pending",
       "verdict": "pass",
-      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.",
+      "notes": "Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.",
       "evidence": {
         "targetHighlights": [],
         "blankAnswers": [],

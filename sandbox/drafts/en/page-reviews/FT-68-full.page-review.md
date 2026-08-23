@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/68-what-you-do-with-money-you-dont-spend/lesson.html`
-- SHA-256: `9e112999575599dbc5be81ccbd3edc237d5f638a8ddbf9b3403ac9aac7a5f696`
+- SHA-256: `26a5cb8ca0bb1565e916a5bbe2ebf2db9fcea469da536ba5318d4fc6e6f0417a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which purposes can money serve besides immediate spending?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is that purpose regular or occasional?” rather than asking every follow-up.
-- Visible target or prompt: Which purposes can money serve besides immediate spending? / 目の前で使う以外に、お金はどんな目的に使えますか？
-- Learning target: Explore the distinct “Beyond spending (使う以外)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Is that purpose regular or occasional?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is that purpose regular or occasional?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which purposes can money serve besides immediate spending?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which long-term option would carry the greatest value?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which purposes can money serve besides immediate spending?"]}`
+- Learner action: Answer the standalone question “Once essentials are covered, what are the best uses for money left over?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Once essentials are covered, what are the best uses for money left over?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Once essentials are covered, what are the best uses for money left over?” / “必要な支出を終えたら、残ったお金を何に使うのがよいですか？” Tutor follow-ups: “Would you keep it safe, invest it, or leave it ready for an emergency?” and “Which future expense would you prepare for first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “必要な支出を終えたら、残ったお金を何に使うのがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Once essentials are covered, what are the best uses for money left over?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which non-spending purpose deserves the highest priority?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which need or value does it serve?” rather than asking every follow-up.
-- Visible target or prompt: Which non-spending purpose deserves the highest priority? / 使う以外の目的で、最も優先すべきなのは何ですか？
-- Learning target: Explore the distinct “One purpose (一つの目的)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which need or value does it serve?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which need or value does it serve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which non-spending purpose deserves the highest priority?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Is its benefit immediate, future, or both?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which non-spending purpose deserves the highest priority?"]}`
+- Learner action: Answer the standalone question “If a small amount is left after essentials, which purpose should come first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If a small amount is left after essentials, which purpose should come first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If a small amount is left after essentials, which purpose should come first?” / “必要な支出のあとに少額が残ったら、どの目的を最優先にしますか？” Tutor follow-ups: “Which present or future need would the money cover?” and “How would the choice help six months from now?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “必要な支出のあとに少額が残ったら、どの目的を最優先にしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If a small amount is left after essentials, which purpose should come first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which condition most often makes setting money aside realistic?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which event or need can prompt the first step?” rather than asking every follow-up.
-- Visible target or prompt: Which condition most often makes setting money aside realistic? / お金を取っておくことを現実的にする条件は何ですか？
-- Learning target: Explore the distinct “When it began (始めた時期)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which event or need can prompt the first step?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which event or need can prompt the first step?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which condition most often makes setting money aside realistic?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which condition makes it sustainable rather than temporary?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which condition most often makes setting money aside realistic?"]}`
+- Learner action: Answer the standalone question “What helps someone start setting money aside?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What helps someone start setting money aside?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What helps someone start setting money aside?” / “お金を取っておくことを現実的にする条件は何ですか？” Tutor follow-ups: “Would a bill, a goal, or extra income start the new habit?” and “What would help the habit survive a difficult month?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金を取っておくことを現実的にする条件は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps someone start setting money aside?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What determines whether a financial approach remains viable?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which condition has supported it?” rather than asking every follow-up.
-- Visible target or prompt: What determines whether a financial approach remains viable? / お金の扱い方が実行可能であり続けるかを決めるのは何ですか？
-- Learning target: Explore the distinct “How it is going (今の状況)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which condition has supported it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which condition has supported it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What determines whether a financial approach remains viable?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which constraint has limited or prevented it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What determines whether a financial approach remains viable?"]}`
+- Learner action: Answer the standalone question “What makes a saving or investment plan easy to continue?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a saving or investment plan easy to continue?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a saving or investment plan easy to continue?” / “貯蓄や投資の計画を続けやすくするのは何ですか？” Tutor follow-ups: “Could automation make the plan easier?” and “Which change in income or expenses could break the plan?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “貯蓄や投資の計画を続けやすくするのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a saving or investment plan easy to continue?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which influence most strongly shapes how people allocate money they do not spend?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part of that influence is useful?” rather than asking every follow-up.
-- Visible target or prompt: Which influence most strongly shapes how people allocate money they do not spend? / 人が使わないお金をどう配分するかに、最も強く影響するのは何ですか？
-- Learning target: Explore the distinct “Where the idea came from (考えのきっかけ)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which part of that influence is useful?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part of that influence is useful?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which influence most strongly shapes how people allocate money they do not spend?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How has the resulting approach evolved?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which influence most strongly shapes how people allocate money they do not spend?"]}`
+- Learner action: Answer the standalone question “What has the strongest influence on how people save or invest?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What has the strongest influence on how people save or invest?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What has the strongest influence on how people save or invest?” / “人の貯蓄や投資のしかたに、最も強く影響するのは何ですか？” Tutor follow-ups: “Which matters more: family, advice, or past experience?” and “How might the strongest influence change later in life?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人の貯蓄や投資のしかたに、最も強く影響するのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What has the strongest influence on how people save or invest?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which financial practices should be recommended only conditionally?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which circumstances make it appropriate?” rather than asking every follow-up.
-- Visible target or prompt: Which financial practices should be recommended only conditionally? / どの金融行動は、条件付きでのみ勧めるべきですか？
-- Learning target: Explore the distinct “Would it suit someone else (人に合うか)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which circumstances make it appropriate?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which circumstances make it appropriate?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which financial practices should be recommended only conditionally?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which constraint or risk rules it out?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which financial practices should be recommended only conditionally?"]}`
+- Learner action: Answer the standalone question “What money habit can help one person but create trouble for another?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What money habit can help one person but create trouble for another?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What money habit can help one person but create trouble for another?” / “ある人には役立っても、別の人には問題を起こすお金の習慣は何ですか？” Tutor follow-ups: “What kind of person could benefit from that habit?” and “Which situation could make the habit risky?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ある人には役立っても、別の人には問題を起こすお金の習慣は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What money habit can help one person but create trouble for another?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which financial action should require the strictest safeguards?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which risk, duty, or value justifies the boundary?” rather than asking every follow-up.
-- Visible target or prompt: Which financial action should require the strictest safeguards? / どの金融行動に、最も厳しい保護策が必要ですか？
-- Learning target: Explore the distinct “A financial boundary (しないこと)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which risk, duty, or value justifies the boundary?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which risk, duty, or value justifies the boundary?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which financial action should require the strictest safeguards?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can the principle be explained without disclosing private finances?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which financial action should require the strictest safeguards?"]}`
+- Learner action: Answer the standalone question “Where should people be more careful: borrowing money or making an investment?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Where should people be more careful: borrowing money or making an investment?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Where should people be more careful: borrowing money or making an investment?” / “人がより注意すべきなのは、お金を借りるときと投資するときのどちらですか？” Tutor follow-ups: “Who else could be affected by the choice?” and “What would you want to check before deciding?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人がより注意すべきなのは、お金を借りるときと投資するときのどちらですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where should people be more careful: borrowing money or making an investment?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which valuable form of support cannot be reduced to a financial transfer?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What distinctive need does that support meet?” rather than asking every follow-up.
-- Visible target or prompt: Which valuable form of support cannot be reduced to a financial transfer? / 金銭の受け渡しだけでは表せない大切な支援は何ですか？
-- Learning target: Explore the distinct “More than money (お金以外)” angle of “What you do with money you don't spend” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What distinctive need does that support meet?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What distinctive need does that support meet?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which valuable form of support cannot be reduced to a financial transfer?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Can financial resources still help make it possible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which valuable form of support cannot be reduced to a financial transfer?"]}`
+- Learner action: Answer the standalone question “Which kind of human support can money never fully replace?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which kind of human support can money never fully replace?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which kind of human support can money never fully replace?” / “金銭の受け渡しだけでは表せない大切な支援は何ですか？” Tutor follow-ups: “What special need does that support meet?” and “Can financial resources still help make it possible?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “金銭の受け渡しだけでは表せない大切な支援は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of human support can money never fully replace?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

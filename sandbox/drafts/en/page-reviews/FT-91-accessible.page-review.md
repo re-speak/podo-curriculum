@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/91-someone-you-would-trade-lives-with-for-a-day/lesson.html`
-- SHA-256: `5de6eb6111a226754fed8be2eae9bd6f044ddf29714c6e50540ece83f0fc3433`
+- SHA-256: `827926925ff6bc108d40339973d7bf3716492ec241ed33b3cda5eb1bb7c113e5`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Whose daily life would you be curious to experience for one day?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Whose daily life would you be curious to experience for one day?”, react or share briefly, then choose at most one relevant probe such as “Which part of that day would you most want to see?”.
-- Visible target or prompt: Whose daily life would you be curious to experience for one day? / 誰の日常生活を一日体験してみたいですか？ Follow-up pool: Which part of that day would you most want to see? What might surprise you about the routine?
-- Learning target: Explore the distinct “Whose day” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which part of that day would you most want to see?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part of that day would you most want to see?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Whose daily life would you be curious to experience for one day?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What might surprise you about the routine?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Whose daily life would you be curious to experience for one day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Whose daily life would you be curious to experience for one day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Whose daily life would you be curious to experience for one day?” / “誰の日常生活を一日体験してみたいですか？” Tutor follow-ups: “Would you choose a famous person, a doctor, or someone from another country?” and “Which part of their day would you want to see?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰の日常生活を一日体験してみたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Whose daily life would you be curious to experience for one day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What can make another person's daily life worth experiencing for one day?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What can make another person's daily life worth experiencing for one day?”, react or share briefly, then choose at most one relevant probe such as “Which experience would become available?”.
-- Visible target or prompt: What can make another person's daily life worth experiencing for one day? / 別の人の日常を一日体験する価値が生まれるのは何ですか？ Follow-up pool: Which experience would become available? Which pressure would you want to understand?
-- Learning target: Explore the distinct “Why that life” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which experience would become available?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which experience would become available?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can make another person's daily life worth experiencing for one day?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which pressure would you want to understand?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make another person's daily life worth experiencing for one day?"]}`
+- Learner action: Answer the standalone question “Would you choose someone famous or someone with a very different ordinary life?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you choose someone famous or someone with a very different ordinary life?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you choose someone famous or someone with a very different ordinary life?” / “有名な人と、全く違う普通の生活をする人のどちらを選びますか？” Tutor follow-ups: “What would fame let you experience?” and “What could an ordinary life teach instead?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “有名な人と、全く違う普通の生活をする人のどちらを選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you choose someone famous or someone with a very different ordinary life?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What would be the best use of the first hour in another person's life?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What would be the best use of the first hour in another person's life?”, react or share briefly, then choose at most one relevant probe such as “Would the first action be fun or useful?”.
-- Visible target or prompt: What would be the best use of the first hour in another person's life? / 別の人の人生を体験する最初の一時間を、どう使うのがよいですか？ Follow-up pool: Would the first action be fun or useful? What would you avoid doing with someone else's life?
-- Learning target: Explore the distinct “Using the day” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Would the first action be fun or useful?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would the first action be fun or useful?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would be the best use of the first hour in another person's life?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would you avoid doing with someone else's life?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would be the best use of the first hour in another person's life?"]}`
+- Learner action: Answer the standalone question “What's the first thing you would do in another person's life?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the first thing you would do in another person's life?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the first thing you would do in another person's life?” / “ほかの人の生活に入ったら、最初に何をしますか？” Tutor follow-ups: “Would you explore their home, work, or neighbourhood?” and “What would you avoid doing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの人の生活に入ったら、最初に何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the first thing you would do in another person's life?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What question could one day in another life help answer?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What question could one day in another life help answer?”, react or share briefly, then choose at most one relevant probe such as “Could one day really answer it?”.
-- Visible target or prompt: What question could one day in another life help answer? / 別の人生を一日体験すると、どんな疑問の答えが分かりますか？ Follow-up pool: Could one day really answer it? What evidence would be fair to use?
-- Learning target: Explore the distinct “What to learn” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Could one day really answer it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could one day really answer it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What question could one day in another life help answer?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What evidence would be fair to use?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What question could one day in another life help answer?"]}`
+- Learner action: Answer the standalone question “What would you want to learn that an interview couldn't tell you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you want to learn that an interview couldn't tell you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you want to learn that an interview couldn't tell you?” / “インタビューでは分からない何を知りたいですか？” Tutor follow-ups: “What could one day show you?” and “What would still be impossible to know?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “インタビューでは分からない何を知りたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you want to learn that an interview couldn't tell you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What part of another person's daily life might be harder than it looks?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What part of another person's daily life might be harder than it looks?”, react or share briefly, then choose at most one relevant probe such as “Which hidden responsibility might appear?”.
-- Visible target or prompt: What part of another person's daily life might be harder than it looks? / 別の人の日常で、外から見るより大変そうな部分は何ですか？ Follow-up pool: Which hidden responsibility might appear? What might be easier than expected?
-- Learning target: Explore the distinct “The unexpected part” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which hidden responsibility might appear?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which hidden responsibility might appear?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What part of another person's daily life might be harder than it looks?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What might be easier than expected?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of another person's daily life might be harder than it looks?"]}`
+- Learner action: Answer the standalone question “Which attractive life might be much harder in private?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which attractive life might be much harder in private?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which attractive life might be much harder in private?” / “魅力的に見えても、実際にはずっと大変そうな生活は何ですか？” Tutor follow-ups: “Would a celebrity's life or a luxury lifestyle be a good example?” and “What hidden responsibility might appear?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “魅力的に見えても、実際にはずっと大変そうな生活は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which attractive life might be much harder in private?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which lesson from a one-day life exchange would be appropriate to share afterward?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which lesson from a one-day life exchange would be appropriate to share afterward?”, react or share briefly, then choose at most one relevant probe such as “How could you describe the lesson without sharing private details?”.
-- Visible target or prompt: Which lesson from a one-day life exchange would be appropriate to share afterward? / 一日の人生交換から得たどんな学びなら、その後、話してもよいですか？ Follow-up pool: How could you describe the lesson without sharing private details? Who might find the lesson useful?
-- Learning target: Explore the distinct “Telling them” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How could you describe the lesson without sharing private details?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How could you describe the lesson without sharing private details?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which lesson from a one-day life exchange would be appropriate to share afterward?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Who might find the lesson useful?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which lesson from a one-day life exchange would be appropriate to share afterward?"]}`
+- Learner action: Answer the standalone question “What would be unfair to discover about someone during a life swap?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would be unfair to discover about someone during a life swap?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would be unfair to discover about someone during a life swap?” / “人生を交換している間に知ると不公平なことは何ですか？” Tutor follow-ups: “Why should that remain private?” and “Should private messages or medical information stay off-limits?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人生を交換している間に知ると不公平なことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would be unfair to discover about someone during a life swap?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What might make someone value their own ordinary life after a one-day exchange?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What might make someone value their own ordinary life after a one-day exchange?”, react or share briefly, then choose at most one relevant probe such as “What would you value more?”.
-- Visible target or prompt: What might make someone value their own ordinary life after a one-day exchange? / 一日の人生交換の後、自分の普通の生活を大切に感じるのはどんなことですか？ Follow-up pool: What would you value more? Which part of the borrowed life would be hard to leave?
-- Learning target: Explore the distinct “Coming back” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would you value more?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would you value more?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might make someone value their own ordinary life after a one-day exchange?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which part of the borrowed life would be hard to leave?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might make someone value their own ordinary life after a one-day exchange?"]}`
+- Learner action: Answer the standalone question “Which part of your own life might you appreciate more afterward?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of your own life might you appreciate more afterward?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of your own life might you appreciate more afterward?” / “その後、自分の生活のどんな部分をもっと大切に感じそうですか？” Tutor follow-ups: “Would you appreciate your home, free time, or relationships more?” and “What might you miss from the other life?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “その後、自分の生活のどんな部分をもっと大切に感じそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of your own life might you appreciate more afterward?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What could another person learn by experiencing one ordinary day in your life?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What could another person learn by experiencing one ordinary day in your life?”, react or share briefly, then choose at most one relevant probe such as “Which routine might still surprise them?”.
-- Visible target or prompt: What could another person learn by experiencing one ordinary day in your life? / 別の人があなたの普通の一日を体験すると、何を学べますか？ Follow-up pool: Which routine might still surprise them? What would they misunderstand after only one day?
-- Learning target: Explore the distinct “Someone choosing you” angle of “Someone you would trade lives with for a day” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which routine might still surprise them?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which routine might still surprise them?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What could another person learn by experiencing one ordinary day in your life?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would they misunderstand after only one day?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What could another person learn by experiencing one ordinary day in your life?"]}`
+- Learner action: Answer the standalone question “What might another person misunderstand after one day in your life?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What might another person misunderstand after one day in your life?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What might another person misunderstand after one day in your life?” / “あなたの生活を一日体験した人は、何を誤解しそうですか？” Tutor follow-ups: “Which routine might surprise them?” and “What would take longer than one day to understand?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたの生活を一日体験した人は、何を誤解しそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might another person misunderstand after one day in your life?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

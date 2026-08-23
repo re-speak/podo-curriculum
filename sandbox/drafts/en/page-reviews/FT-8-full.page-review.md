@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/08-how-you-spend-new-years-day/lesson.html`
-- SHA-256: `213b1a6e3e86cfed9868569057c698d6978a1ab26e4ba734f38869e7d11137ce`
+- SHA-256: `461c3675a0cec36160cc54aa338b445830b53e7754689b3e580b3f08617bd562`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear on the goal page.
 - Component consistency: Matches the approved FT goal component: title, one short blue instruction box, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals are informational supports, not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article component with one short operating script and one tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two options are mutually exclusive and meaningfully different: delayed essential correction versus correction at natural breaks.
 - Component consistency: Reuses the approved synced single-choice FT style component from the canonical pilot.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors; this is an operating transition.
 - Component consistency: Matches the approved FT question-pool transition with visible flexibility and a concrete tutor-only reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What do you actually do on New Year's Day?
-- Learning target: Develop the distinct “Start here (ここから)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What do you actually do on New Year's Day?” opens this specific angle; “What part of the day came to mind first?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What part of the day came to mind first?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Is that typical for your family?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “What do you actually do on New Year's Day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you actually do on New Year's Day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you actually do on New Year's Day?” / “元日は実際に何をしますか？” Tutor follow-ups: “Which part feels most different from a normal day?” and “Would you rather rest at home or go out on New Year's Day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “元日は実際に何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you actually do on New Year's Day?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What part of New Year's Day do you look forward to most?
-- Learning target: Develop the distinct “Your favorite moment (楽しみな時間)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What part of New Year's Day do you look forward to most?” opens this specific angle; “What makes that moment special?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What makes that moment special?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Would the day feel incomplete without it?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of New Year's Day do you look forward to most?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which part of New Year's Day do you look forward to most?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of New Year's Day do you look forward to most?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of New Year's Day do you look forward to most?” / “元日のどの時間をいちばん楽しみにしていますか？” Tutor follow-ups: “Which feeling or person makes it important?” and “Has that favorite part changed over time?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “元日のどの時間をいちばん楽しみにしていますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of New Year's Day do you look forward to most?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Which part of New Year's Day feels most different from a normal day?
-- Learning target: Develop the distinct “Your day (あなたの一日)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Which part of New Year's Day feels most different from a normal day?” opens this specific angle; “What starts that part of the day?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What starts that part of the day?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “When does it begin to feel normal again?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of New Year's Day feels most different from a normal day?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of food would suit New Year's Day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of food would suit New Year's Day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of food would suit New Year's Day?” / “元日にはどんな食べ物が合うと思いますか？” Tutor follow-ups: “Would you eat it on another day?” and “Would you choose a warm meal or something sweet?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “元日にはどんな食べ物が合うと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of food would suit New Year's Day?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What do you usually eat that day?
-- Learning target: Develop the distinct “What you eat (食べるもの)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What do you usually eat that day?” opens this specific angle; “Who prepares it?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Who prepares it?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Which dish would feel strange to skip?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you usually eat that day?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What's the first thing many people do on New Year's morning?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the first thing many people do on New Year's morning?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the first thing many people do on New Year's morning?” / “元日の朝、多くの人が最初にすることは何ですか？” Tutor follow-ups: “What does the action mean to people?” and “What do you do first on New Year's morning?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “元日の朝、多くの人が最初にすることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the first thing many people do on New Year's morning?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Who do you normally spend the day with?
-- Learning target: Develop the distinct “Who you see (会う人)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Who do you normally spend the day with?” opens this specific angle; “Does everyone stay for the whole day?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Does everyone stay for the whole day?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Who do you contact even if you cannot meet?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who do you normally spend the day with?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which New Year's tradition is becoming less common?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which New Year's tradition is becoming less common?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which New Year's tradition is becoming less common?” / “だんだん行われなくなっている新年の習慣は何ですか？” Tutor follow-ups: “What changed in daily life?” and “Which New Year's tradition do young people still enjoy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “だんだん行われなくなっている新年の習慣は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which New Year's tradition is becoming less common?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What has changed since you were a child?
-- Learning target: Develop the distinct “Since childhood (子どもの頃から)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What has changed since you were a child?” opens this specific angle; “Why did that change happen?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Why did that change happen?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Which old part do you miss?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What has changed since you were a child?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Would you rather spend New Year's Day at home or away?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you rather spend New Year's Day at home or away?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you rather spend New Year's Day at home or away?” / “元日は家で過ごしたいですか、それとも出かけたいですか？” Tutor follow-ups: “What would the ideal day look like?” and “What could make you choose the other option?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “元日は家で過ごしたいですか、それとも出かけたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you rather spend New Year's Day at home or away?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: Which New Year's custom do you skip now?
-- Learning target: Develop the distinct “What you skip (今はしないこと)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “Which New Year's custom do you skip now?” opens this specific angle; “Who in your family still does it?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “Who in your family still does it?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Would you bring it back in the future?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which New Year's custom do you skip now?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which New Year's custom takes too much time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which New Year's custom takes too much time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which New Year's custom takes too much time?” / “時間がかかりすぎる新年の習慣は何ですか？” Tutor follow-ups: “Which part should remain?” and “Which takes more time: cooking, visiting family, or traveling?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “時間がかかりすぎる新年の習慣は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which New Year's custom takes too much time?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the visible question aloud and develop the answer through whichever follow-up becomes interesting.
-- Tutor action: Listen, react or share a brief real response, then choose a relevant probe instead of asking every printed follow-up.
-- Visible target or prompt: What would you most like to know about New Year's Day in my country?
-- Learning target: Develop the distinct “My side (私の国では)” conversational move with reasons, examples, comparison, or personal experience.
-- Pedagogical value: The prompt “What would you most like to know about New Year's Day in my country?” opens this specific angle; “What specific question would you ask me?” moves a first answer toward a concrete reason or example.
-- Failure diagnoses: If the answer stays vague after “What specific question would you ask me?”, the learner needs concrete-detail scaffolding for this idea; grammar accuracy is secondary.
-- Non-target support: The main prompt has an aligned Japanese translation; the English follow-ups remain tutor-only so they do not overload the learner.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support an answer but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced target frames; “Which part would you most like to compare?” gives the tutor a distinct optional branch rather than a repeated script.
-- Component consistency: Matches the approved FT prompt component: one blue bilingual question, tutor-only probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you most like to know about New Year's Day in my country?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What would you most like to ask someone from another country about New Year's Day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you most like to ask someone from another country about New Year's Day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you most like to ask someone from another country about New Year's Day?” / “ほかの国の人に、その国の元日について何をいちばん聞きたいですか？” Tutor follow-ups: “Which answer might surprise you?” and “What would you tell them about Japan in return?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの国の人に、その国の元日について何をいちばん聞きたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you most like to ask someone from another country about New Year's Day?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic inspection covered the exact main prompt and 2 page-specific follow-ups; automated 360px and 480px rendering and root spot inspection passed.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors; the tutor records one strength and one next focus in a synced text area.
 - Component consistency: Matches the approved FT closing component and keeps owner feedback separate from automated grading.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Semantic page inspection and automated 360px and 480px rendering are complete; root spot inspection passed.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

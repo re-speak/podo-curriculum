@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-full/lessons/101-how-long-should-a-social-media-break-last/lesson.html`
-- SHA-256: `cd46a57b584a0877b9ce0ef2c05905ca29d3a734e740c097dd7d887f78a52693`
+- SHA-256: `3bee032253dea55fb8c532765fa1ed4d48e4cfbb7fb57da363733bdafac53cdd`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “How long must a social-media break last before it meaningfully changes behaviour?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How long must a social-media break last before it meaningfully changes behaviour?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: How long must a social-media break last before it meaningfully changes behaviour? / SNSを休むことで行動が意味のある形で変わるには、どのくらいの期間が必要ですか？ Follow-up pool: Which change would demonstrate an effect? What could a shorter experiment still reveal?
-- Learning target: Develop the distinct “opening” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A meaningful break” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “How long must a social-media break last before it meaningfully changes behaviour?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “SNSを休むことで行動が意味のある形で変わるには、どのくらいの期間が必要ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How long must a social-media break last before it meaningfully changes behaviour?"]}`
+- Learner action: Answer the standalone question “Would three days away from social media feel too short, too long, or about right?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would three days away from social media feel too short, too long, or about right?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would three days away from social media feel too short, too long, or about right?” / “SNSから三日間離れるのは、短すぎますか、長すぎますか、それともちょうどよいですか？” Tutor follow-ups: “What would make three days feel useful?” and “Which app would be easiest to leave for three days?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “SNSから三日間離れるのは、短すぎますか、長すぎますか、それともちょうどよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would three days away from social media feel too short, too long, or about right?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which social or practical function would become difficult first?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which social or practical function would become difficult first?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which social or practical function would become difficult first? / どの人間関係上または実用上の機能が最初に難しくなるでしょうか？ Follow-up pool: Which need does that function serve? What alternative could replace it?
-- Learning target: Develop the distinct “miss” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The first missing function” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which social or practical function would become difficult first?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どの人間関係上または実用上の機能が最初に難しくなるでしょうか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which social or practical function would become difficult first?"]}`
+- Learner action: Answer the standalone question “What change would you notice first during three days away from social media?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What change would you notice first during three days away from social media?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What change would you notice first during three days away from social media?” / “SNSから三日間離れている間、最初にどんな変化に気づきますか？” Tutor follow-ups: “Would you miss messages, news, or entertainment first?” and “Which of those do you check most now?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “SNSから三日間離れている間、最初にどんな変化に気づきますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What change would you notice first during three days away from social media?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Which habit tends to change when access to an app is removed?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which habit tends to change when access to an app is removed?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which habit tends to change when access to an app is removed? / アプリを利用しにくくすると、どの習慣が変わりやすいですか？ Follow-up pool: What becomes easier after access is removed? What cue can survive the deletion?
-- Learning target: Develop the distinct “deletion” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “After deleting an app” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which habit tends to change when access to an app is removed?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “アプリを利用しにくくすると、どの習慣が変わりやすいですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which habit tends to change when access to an app is removed?"]}`
+- Learner action: Answer the standalone question “What would you do instead of checking social media?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you do instead of checking social media?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you do instead of checking social media?” / “SNSを確認する代わりに、何をしますか？” Tutor follow-ups: “What would fill the first few minutes instead?” and “When do you check social media most: morning, breaks, or evening?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “SNSを確認する代わりに、何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you do instead of checking social media?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Which distinctive value of social media is least replaceable by another tool?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which distinctive value of social media is least replaceable by another tool?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which distinctive value of social media is least replaceable by another tool? / SNSの独自の価値のうち、ほかの手段で最も代えにくいものは何ですか？ Follow-up pool: What makes the value genuinely distinctive? Which users depend on it most?
-- Learning target: Develop the distinct “value” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Hard to replace” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which distinctive value of social media is least replaceable by another tool?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “SNSの独自の価値のうち、ほかの手段で最も代えにくいものは何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which distinctive value of social media is least replaceable by another tool?"]}`
+- Learner action: Answer the standalone question “Which useful thing on social media is hardest to replace?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which useful thing on social media is hardest to replace?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which useful thing on social media is hardest to replace?” / “SNSの役立つもののうち、最も代えにくいものは何ですか？” Tutor follow-ups: “Why would you miss it?” and “Which would you miss most: messages, news, or videos?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “SNSの役立つもののうち、最も代えにくいものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which useful thing on social media is hardest to replace?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “At what point does useful access become unintended attention loss?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “At what point does useful access become unintended attention loss?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: At what point does useful access become unintended attention loss? / 便利な利用が、意図しない注意力の消費に変わるのはどの時点ですか？ Follow-up pool: Which behaviour marks the change? What boundary could protect attention?
-- Learning target: Develop the distinct “cost” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Useful or a time sink” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “At what point does useful access become unintended attention loss?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “便利な利用が、意図しない注意力の消費に変わるのはどの時点ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["At what point does useful access become unintended attention loss?"]}`
+- Learner action: Answer the standalone question “How can you tell when useful scrolling has turned into wasted time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can you tell when useful scrolling has turned into wasted time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can you tell when useful scrolling has turned into wasted time?” / “役立つスクロールが時間の無駄に変わったと、どう見分けられますか？” Tutor follow-ups: “How do you feel after that kind of scrolling?” and “Do you ever open an app without a clear reason?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “役立つスクロールが時間の無駄に変わったと、どう見分けられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can you tell when useful scrolling has turned into wasted time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Which habits best demonstrate an intentional relationship with social media?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which habits best demonstrate an intentional relationship with social media?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which habits best demonstrate an intentional relationship with social media? / どんな習慣が、SNSを意識的に使う関係を最もよく示しますか？ Follow-up pool: How is each visit given a purpose? Which boundary makes the routine sustainable?
-- Learning target: Develop the distinct “model” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Healthy use” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which habits best demonstrate an intentional relationship with social media?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どんな習慣が、SNSを意識的に使う関係を最もよく示しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which habits best demonstrate an intentional relationship with social media?"]}`
+- Learner action: Answer the standalone question “Which simple rule keeps social media useful without letting it take over?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which simple rule keeps social media useful without letting it take over?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which simple rule keeps social media useful without letting it take over?” / “SNSに時間を奪われず、役立つものに保つ簡単なルールは何ですか？” Tutor follow-ups: “When would that rule be hardest to follow?” and “Which is easier: turning off notifications or setting a time limit?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “SNSに時間を奪われず、役立つものに保つ簡単なルールは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which simple rule keeps social media useful without letting it take over?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which boundary and which freedom would you recommend to a fourteen-year-old?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which boundary and which freedom would you recommend to a fourteen-year-old?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which boundary and which freedom would you recommend to a fourteen-year-old? / 十四歳の人に、どんな境界線とどんな自由を勧めますか？ Follow-up pool: Which boundary could a teenager actually maintain? What responsibility belongs to adults?
-- Learning target: Develop the distinct “teen” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “Advice at fourteen” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which boundary and which freedom would you recommend to a fourteen-year-old?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “十四歳の人に、どんな境界線とどんな自由を勧めますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which boundary and which freedom would you recommend to a fourteen-year-old?"]}`
+- Learner action: Answer the standalone question “Should a fourteen-year-old use a private or public social-media account?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Should a fourteen-year-old use a private or public social-media account?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Should a fourteen-year-old use a private or public social-media account?” / “十四歳なら、SNSのアカウントは非公開と公開のどちらがよいですか？” Tutor follow-ups: “Why would that be safer?” and “Should strangers be able to send messages?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “十四歳なら、SNSのアカウントは非公開と公開のどちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Should a fourteen-year-old use a private or public social-media account?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “Which single social-media function creates enough value to preserve?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which single social-media function creates enough value to preserve?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which single social-media function creates enough value to preserve? / SNSの機能を一つだけ残すなら、十分な価値を生むのはどれですか？ Follow-up pool: What makes that function worth preserving? How could the remaining functions be replaced?
-- Learning target: Develop the distinct “flip” angle of How long should a social-media break last? in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “One function to keep” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which single social-media function creates enough value to preserve?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “SNSの機能を一つだけ残すなら、十分な価値を生むのはどれですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which single social-media function creates enough value to preserve?"]}`
+- Learner action: Answer the standalone question “Which part of social media would you be happiest to lose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of social media would you be happiest to lose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of social media would you be happiest to lose?” / “SNSのどんな部分なら、なくなってもうれしいですか？” Tutor follow-ups: “Why would life be better without it?” and “Would social media feel calmer with no public comments?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “SNSのどんな部分なら、なくなってもうれしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of social media would you be happiest to lose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

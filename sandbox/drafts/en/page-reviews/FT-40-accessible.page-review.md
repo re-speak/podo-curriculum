@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/40-a-superstition-you-follow-anyway/lesson.html`
-- SHA-256: `1f7e34dadda318d5a52d3b8f1dccd0a0e5517cf352e3bc5abaf12c136dfbaa8e`
+- SHA-256: `f80bdcbbfab8eb9227f8dd2dd8b108e8c6efa396b1ad2aa8ce49825ac6a8ad4a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which superstition do you know best, whether or not you follow it?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What action or sign is involved?” rather than asking every follow-up.
-- Visible target or prompt: Which superstition do you know best, whether or not you follow it? 従っているかどうかに関係なく、いちばんよく知っている迷信は何ですか？
-- Learning target: Explore the distinct “A familiar superstition (よく知る迷信)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What action or sign is involved?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What action or sign is involved?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which superstition do you know best, whether or not you follow it?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Where did you first hear it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which superstition do you know best, whether or not you follow it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which superstition do you know best, whether or not you follow it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which superstition do you know best, whether or not you follow it?” / “従っているかどうかに関係なく、いちばんよく知っている迷信は何ですか？” Tutor follow-ups: “What action or sign is involved?” and “Which do you know better: the number 13, breaking a mirror, or a lucky charm?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “従っているかどうかに関係なく、いちばんよく知っている迷信は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which superstition do you know best, whether or not you follow it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What is supposed to happen when someone follows—or breaks—it?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which outcome sounds most dramatic?” rather than asking every follow-up.
-- Visible target or prompt: What is supposed to happen when someone follows—or breaks—it? その迷信に従ったり破ったりすると、何が起きるとされていますか？
-- Learning target: Explore the distinct “What should happen (起きるとされること)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which outcome sounds most dramatic?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which outcome sounds most dramatic?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is supposed to happen when someone follows—or breaks—it?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How is the rule passed on?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is supposed to happen when someone follows—or breaks—it?"]}`
+- Learner action: Answer the standalone question “What good or bad thing is a superstition supposed to cause?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What good or bad thing is a superstition supposed to cause?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What good or bad thing is a superstition supposed to cause?” / “迷信は、どんなよいことや悪いことを起こすと言われていますか？” Tutor follow-ups: “Which result sounds most dramatic?” and “Who usually teaches people the superstition?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “迷信は、どんなよいことや悪いことを起こすと言われていますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What good or bad thing is a superstition supposed to cause?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Why do people keep following a superstition they doubt?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What feeling makes the habit hard to drop?” rather than asking every follow-up.
-- Visible target or prompt: Why do people keep following a superstition they doubt? 人は、疑っている迷信にもなぜ従い続けるのでしょうか？
-- Learning target: Explore the distinct “Why it survives (残る理由)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What feeling makes the habit hard to drop?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What feeling makes the habit hard to drop?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why do people keep following a superstition they doubt?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can family or tradition matter?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why do people keep following a superstition they doubt?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do people keep following a superstition they doubt?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do people keep following a superstition they doubt?” / “人は、疑っている迷信にもなぜ従い続けるのでしょうか？” Tutor follow-ups: “What feeling makes the habit hard to drop?” and “How can family or tradition matter?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人は、疑っている迷信にもなぜ従い続けるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do people keep following a superstition they doubt?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What part of a superstition can feel believable even to a skeptic?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Could coincidence strengthen the belief?” rather than asking every follow-up.
-- Visible target or prompt: What part of a superstition can feel believable even to a skeptic? 迷信のどのような部分なら、疑う人にも信じられそうですか？
-- Learning target: Explore the distinct “A believable part (信じられる部分)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Could coincidence strengthen the belief?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could coincidence strengthen the belief?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What part of a superstition can feel believable even to a skeptic?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Might the rule contain practical wisdom?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of a superstition can feel believable even to a skeptic?"]}`
+- Learner action: Answer the standalone question “What part of a superstition can feel believable even when someone doubts it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of a superstition can feel believable even when someone doubts it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of a superstition can feel believable even when someone doubts it?” / “疑っていても、迷信のどんな部分は信じられそうに感じますか？” Tutor follow-ups: “Could coincidence strengthen the belief?” and “Might the rule contain practical wisdom?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “疑っていても、迷信のどんな部分は信じられそうに感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of a superstition can feel believable even when someone doubts it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What would make you break a superstition on purpose?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would any uneasy feeling remain?” rather than asking every follow-up.
-- Visible target or prompt: What would make you break a superstition on purpose? どのような理由があれば、迷信をわざと破りますか？
-- Learning target: Explore the distinct “Break it on purpose (わざと破る)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Would any uneasy feeling remain?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would any uneasy feeling remain?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would make you break a superstition on purpose?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What evidence would matter most?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would make you break a superstition on purpose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would make you break a superstition on purpose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would make you break a superstition on purpose?” / “どのような理由があれば、迷信をわざと破りますか？” Tutor follow-ups: “Would any uneasy feeling remain?” and “What new information would change your mind?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような理由があれば、迷信をわざと破りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make you break a superstition on purpose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What's a Japanese superstition an outsider might not know?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Where might they encounter it?” rather than asking every follow-up.
-- Visible target or prompt: What's a Japanese superstition an outsider might not know? 外国の人が知らなさそうな日本の迷信は何ですか？
-- Learning target: Explore the distinct “A Japanese example (日本の例)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Where might they encounter it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Where might they encounter it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's a Japanese superstition an outsider might not know?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What background would help them understand it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's a Japanese superstition an outsider might not know?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's a Japanese superstition an outsider might not know?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's a Japanese superstition an outsider might not know?” / “外国の人が知らなさそうな日本の迷信は何ですか？” Tutor follow-ups: “Where might an outsider see it?” and “Which is harder to explain: avoiding four, hiding your thumbs, or not cutting nails at night?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “外国の人が知らなさそうな日本の迷信は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's a Japanese superstition an outsider might not know?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What's the strangest superstition you know?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes it memorable?” rather than asking every follow-up.
-- Visible target or prompt: Conversation prompt: “What's the strangest superstition you know?”
-- Learning target: Explore the distinct “The strangest one (いちばん不思議なもの)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes it memorable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes it memorable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's the strangest superstition you know?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part is hardest to explain?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's the strangest superstition you know?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the strangest superstition you know?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the strangest superstition you know?” / “知っている中で、いちばん不思議な迷信は何ですか？” Tutor follow-ups: “Which detail makes it memorable?” and “Which sounds strangest: a broken mirror, an itchy palm, or a black cat?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “知っている中で、いちばん不思議な迷信は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the strangest superstition you know?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which superstition is worth keeping as a tradition?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What story would survive with it?” rather than asking every follow-up.
-- Visible target or prompt: Which superstition is worth keeping as a tradition? どの迷信は、伝統として残す価値がありますか？
-- Learning target: Explore the distinct “One to keep (残したいもの)” angle of “A superstition you follow anyway” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What story would survive with it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What story would survive with it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which superstition is worth keeping as a tradition?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How would you keep it from becoming harmful?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which superstition is worth keeping as a tradition?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which superstition is worth keeping as a tradition?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which superstition is worth keeping as a tradition?” / “どの迷信は、伝統として残す価値がありますか？” Tutor follow-ups: “How could children learn about it?” and “Which could be a harmless tradition: a lucky charm, a lucky food, or a lucky number?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの迷信は、伝統として残す価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which superstition is worth keeping as a tradition?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/39-what-you-really-do-when-youre-stressed/lesson.html`
-- SHA-256: `0218a1857165f6da43803b0dd9c27166e529e1c1af2f6660d41c75028d0d1e9e`
+- SHA-256: `374d7b19205d15c0f696fd15b90ef5f36572787f70e735b364de387c4b2f0b1e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What do you really do when you're stressed—not what you should do?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What appears first in your behaviour?” rather than asking every follow-up.
-- Visible target or prompt: What do you really do when you're stressed—not what you should do? ストレスがあるとき、するべきことではなく、実際には何をしますか？
-- Learning target: Explore the distinct “The honest answer (正直な答え)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What appears first in your behaviour?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What appears first in your behaviour?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What do you really do when you're stressed—not what you should do?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What helps you stay steady?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What do you really do when you're stressed—not what you should do?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you really do when you're stressed—not what you should do?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you really do when you're stressed—not what you should do?” / “ストレスがあるとき、するべきことではなく、実際には何をしますか？” Tutor follow-ups: “What appears first in your behaviour?” and “What helps you stay steady?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ストレスがあるとき、するべきことではなく、実際には何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you really do when you're stressed—not what you should do?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “When does that reaction show up most often?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What level of stress brings it out?” rather than asking every follow-up.
-- Visible target or prompt: When does that reaction show up most often? その反応は、どのようなときにいちばん現れやすいですか？
-- Learning target: Explore the distinct “When it appears (現れやすい時)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What level of stress brings it out?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What level of stress brings it out?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When does that reaction show up most often?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When does the pattern stay quiet?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When does that reaction show up most often?"]}`
+- Learner action: Answer the standalone question “When do unhelpful stress habits show up most often?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When do unhelpful stress habits show up most often?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When do unhelpful stress habits show up most often?” / “ストレスへのよくない習慣は、どんなときに最も出やすいですか？” Tutor follow-ups: “What level of stress brings the habit out?” and “Does it happen more at work, at home, or while travelling?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ストレスへのよくない習慣は、どんなときに最も出やすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When do unhelpful stress habits show up most often?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What does the habit help with, and what does it make worse?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How long does the relief last?” rather than asking every follow-up.
-- Visible target or prompt: What does the habit help with, and what does it make worse? その習慣は何の助けになり、何を悪化させますか？
-- Learning target: Explore the distinct “Help and cost (助けと代償)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How long does the relief last?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How long does the relief last?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What does the habit help with, and what does it make worse?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What cost appears later?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What does the habit help with, and what does it make worse?"]}`
+- Learner action: Answer the standalone question “What's one stress habit that helps briefly but causes problems later?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one stress habit that helps briefly but causes problems later?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one stress habit that helps briefly but causes problems later?” / “一時的には楽になっても、あとで問題になるストレス時の習慣は何ですか？” Tutor follow-ups: “How long does the relief last?” and “What cost appears later?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一時的には楽になっても、あとで問題になるストレス時の習慣は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one stress habit that helps briefly but causes problems later?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How honestly do people usually describe what they do under stress?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which response sounds better than it really is?” rather than asking every follow-up.
-- Visible target or prompt: How honestly do people usually describe what they do under stress? 人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？
-- Learning target: Explore the distinct “What people say (人が話すこと)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which response sounds better than it really is?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which response sounds better than it really is?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How honestly do people usually describe what they do under stress?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why might someone keep the real habit private?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How honestly do people usually describe what they do under stress?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How honestly do people usually describe what they do under stress?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How honestly do people usually describe what they do under stress?” / “人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？” Tutor follow-ups: “What stress habit do people often hide?” and “Why might someone keep it private?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How honestly do people usually describe what they do under stress?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Compare how you handle stress now with five years ago.” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part has improved?” rather than asking every follow-up.
-- Visible target or prompt: Conversation prompt: “How has the way you handle stress changed over the past five years?”
-- Learning target: Explore the distinct “Then and now (以前と今)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which part has improved?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part has improved?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Compare how you handle stress now with five years ago.” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part has stayed stubborn?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How has the way you handle stress changed over the past five years?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How has the way you handle stress changed over the past five years?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How has the way you handle stress changed over the past five years?” / “ここ5年で、ストレスへの対処法はどう変わりましたか？” Tutor follow-ups: “Which part has improved?” and “Which part has stayed stubborn?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ここ5年で、ストレスへの対処法はどう変わりましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How has the way you handle stress changed over the past five years?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which situation makes your stress habit most unhelpful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which responsibility becomes harder?” rather than asking every follow-up.
-- Visible target or prompt: Conversation prompt: “When is your usual stress response most unhelpful?”
-- Learning target: Explore the distinct “What makes it worse (悪化する条件)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which responsibility becomes harder?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which responsibility becomes harder?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which situation makes your stress habit most unhelpful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who else can be affected?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When is your usual stress response most unhelpful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is your usual stress response most unhelpful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is your usual stress response most unhelpful?” / “いつものストレスへの対処が、いちばん役に立たないのはどんなときですか？” Tutor follow-ups: “Which responsibility becomes harder?” and “Who else can be affected?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “いつものストレスへの対処が、いちばん役に立たないのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is your usual stress response most unhelpful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Second-pass semantic review complete. Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What would you realistically like to do instead?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What is the smallest possible version?” rather than asking every follow-up.
-- Visible target or prompt: What would you realistically like to do instead? 代わりに、現実的には何をしたいですか？
-- Learning target: Explore the distinct “A realistic alternative (現実的な代わり)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What is the smallest possible version?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What is the smallest possible version?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you realistically like to do instead?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make it easier to choose?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you realistically like to do instead?"]}`
+- Learner action: Answer the standalone question “When you feel stressed, what would you rather do?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When you feel stressed, what would you rather do?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When you feel stressed, what would you rather do?” / “ストレスを感じたとき、本当は何をしたいですか？” Tutor follow-ups: “Would five minutes of quiet help?” and “What would make the better choice easier?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ストレスを感じたとき、本当は何をしたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When you feel stressed, what would you rather do?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What sign could help you notice stress earlier?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What could you do at that first sign?” rather than asking every follow-up.
-- Visible target or prompt: What sign could help you notice stress earlier? どのようなサインがあれば、もっと早くストレスに気づけますか？
-- Learning target: Explore the distinct “Notice it sooner (早く気づく)” angle of “What you really do when you're stressed” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What could you do at that first sign?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What could you do at that first sign?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What sign could help you notice stress earlier?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which sign is easiest to ignore?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What sign could help you notice stress earlier?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What sign could help you notice stress earlier?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What sign could help you notice stress earlier?” / “どのようなサインがあれば、もっと早くストレスに気づけますか？” Tutor follow-ups: “What could you do at that first sign?” and “Which sign is easiest to ignore?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのようなサインがあれば、もっと早くストレスに気づけますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What sign could help you notice stress earlier?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

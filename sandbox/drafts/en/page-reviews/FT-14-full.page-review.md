@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-full/lessons/14-one-thing-you-still-want-to-do-this-year/lesson.html`
-- SHA-256: `c817427975bc0ecbb8b2e8d001d9f1712a50e829f3e4de240d7d764a0875cd85`
+- SHA-256: `001f9ca18d1194e16a04b1738739628be01f3c1c3bfa6c792333ea894cb3c871`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “If you could only finish one thing before December, what would it be?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Why would that one matter?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you could only finish one thing before December, what would it be? 12月までに一つだけ終えられるなら、何にしますか？
-- Learning target: Explore the distinct “One goal (一つの目標)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you could only finish one thing before December, what would it be?” opens this angle; “Why would that one matter?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Why would that one matter?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you could only finish one thing before December, what would it be?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might you need to set aside?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you could only finish one thing before December, what would it be?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What's one thing you'd like to finish this year?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one thing you'd like to finish this year?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one thing you'd like to finish this year?” / “今年中に終わらせたいことを一つ挙げるとしたら何ですか？” Tutor follow-ups: “What would completing it change?” and “What might you need to put aside?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今年中に終わらせたいことを一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one thing you'd like to finish this year?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “If you chose a goal, what might be different after you finished it?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which change would matter most?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you chose a goal, what might be different after you finished it? 目標を選ぶなら、終えたあとに何が変わると思いますか？
-- Learning target: Explore the distinct “After it's finished (終えたあと)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you chose a goal, what might be different after you finished it?” opens this angle; “Which change would matter most?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which change would matter most?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you chose a goal, what might be different after you finished it?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who else might notice it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you chose a goal, what might be different after you finished it?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Imagine finishing something important. What would change first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Imagine finishing something important. What would change first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Imagine finishing something important. What would change first?” / “大切なことを終えたと想像してください。最初に何が変わりますか？” Tutor follow-ups: “Which part of daily life would change?” and “Would you celebrate or start the next goal?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大切なことを終えたと想像してください。最初に何が変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Imagine finishing something important. What would change first?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “What makes a goal feel important to you?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What kind of change can a goal create?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What makes a goal feel important to you? 一つの目標が大切に感じられるのは、どんなときですか？
-- Learning target: Explore the distinct “Why a goal matters (目標が大切な理由)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What makes a goal feel important to you?” opens this angle; “What kind of change can a goal create?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What kind of change can a goal create?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What makes a goal feel important to you?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might you be willing to postpone?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a goal feel important to you?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What makes a goal worth your time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a goal worth your time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a goal worth your time?” / “どんな目標なら、時間をかける価値がありますか？” Tutor follow-ups: “How do you know the goal is truly yours?” and “What would you refuse to give up for it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな目標なら、時間をかける価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a goal worth your time?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “What usually stops a goal from moving forward?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Is the main barrier time, money, or uncertainty?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What usually stops a goal from moving forward? 目標が進まないとき、普段何が原因になりますか？
-- Learning target: Explore the distinct “What gets in the way (進めない理由)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What usually stops a goal from moving forward?” opens this angle; “Is the main barrier time, money, or uncertainty?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Is the main barrier time, money, or uncertainty?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What usually stops a goal from moving forward?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part can a person control?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually stops a goal from moving forward?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “Which gets in the way more: time, money, or doubt?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which gets in the way more: time, money, or doubt?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which gets in the way more: time, money, or doubt?” / “目標の邪魔になりやすいのは、時間、お金、自信のなさのどれですか？” Tutor follow-ups: “How does that problem usually appear?” and “What small step could help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “目標の邪魔になりやすいのは、時間、お金、自信のなさのどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which gets in the way more: time, money, or doubt?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “Have you given up on any goal this year?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Which goal changed most this year?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “When can giving up on a goal be the right choice?”
-- Learning target: Explore the distinct “What you dropped (あきらめたこと)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you given up on any goal this year?” opens this angle; “Which goal changed most this year?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Which goal changed most this year?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you given up on any goal this year?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What made you continue, change, or drop it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can giving up on a goal be the right choice?"]}`
+- Learner action: Answer the standalone question “When is dropping a goal a smart decision?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is dropping a goal a smart decision?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is dropping a goal a smart decision?” / “目標をやめることが賢い判断になるのは、どんなときですか？” Tutor follow-ups: “How do you know it is time to stop trying?” and “Is stopping always the same as failing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “目標をやめることが賢い判断になるのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is dropping a goal a smart decision?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “If you completed a personal goal, who might notice?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Would anyone else's daily life change?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “If you completed a personal goal, who might notice?”
-- Learning target: Explore the distinct “Who would notice (気づく人)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you completed a personal goal, who might notice?” opens this angle; “Would anyone else's daily life change?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Would anyone else's daily life change?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you completed a personal goal, who might notice?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Who would you want to tell, if anyone?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you completed a personal goal, who might notice?"]}`
+- Learner action: Answer the standalone question “How can sharing a goal make success feel different?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can sharing a goal make success feel different?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can sharing a goal make success feel different?” / “目標を誰かに話すと、達成したときの気持ちはどう変わりますか？” Tutor follow-ups: “Who, if anyone, would understand the effort?” and “Would you share it with one person or keep it private?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “目標を誰かに話すと、達成したときの気持ちはどう変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can sharing a goal make success feel different?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “What can make it reasonable to change or drop a goal?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What should stay non-negotiable?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What can make it reasonable to change or drop a goal? 目標を変えたりやめたりしてよいのは、どんなときですか？
-- Learning target: Explore the distinct “A realistic limit (現実的な限界)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What can make it reasonable to change or drop a goal?” opens this angle; “What should stay non-negotiable?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What should stay non-negotiable?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What can make it reasonable to change or drop a goal?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When would changing the goal be sensible?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make it reasonable to change or drop a goal?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What kind of goal is okay to change as life changes?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of goal is okay to change as life changes?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of goal is okay to change as life changes?” / “生活が変わったとき、どんな目標なら変えてもよいと思いますか？” Tutor follow-ups: “What should stay important?” and “Is it okay to make a goal smaller when life gets busy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “生活が変わったとき、どんな目標なら変えてもよいと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of goal is okay to change as life changes?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “If you chose a goal, what small step could you take this week?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “When could you do it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: If you chose a goal, what small step could you take this week? 目標を選ぶなら、今週どんな小さな一歩を踏み出せますか？
-- Learning target: Explore the distinct “This week's step (今週の一歩)” angle of “One thing you still want to do this year” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “If you chose a goal, what small step could you take this week?” opens this angle; “When could you do it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “When could you do it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “If you chose a goal, what small step could you take this week?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What could make it easier?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you chose a goal, what small step could you take this week?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What's one useful first step toward a difficult goal?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one useful first step toward a difficult goal?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one useful first step toward a difficult goal?” / “難しい目標に向かう、役に立つ最初の一歩は何ですか？” Tutor follow-ups: “Why is that step small enough to start?” and “What would show that it worked?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “難しい目標に向かう、役に立つ最初の一歩は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one useful first step toward a difficult goal?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
