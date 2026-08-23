@@ -234,8 +234,21 @@ If the learner types, ship an `<input>` or `<textarea>`. If they pick, ship the 
 ### Before you push
 
 ```sh
-python3 tools/validate.py --env stage
+python3 tools/validate.py --env stage          # deployability
+python3 tools/authoring/check_deck.py sandbox/drafts   # content, both languages
 ```
+
+Both local gates are mandatory, and both now run as a required PR check —
+`validate.py` covers deployability (schema, packaging, the `data-sync` contract,
+CDN pins, retirement) and the `authoring-gate` step covers content: the shared
+deck checks, English corpus integrity, and the Korean checkers that make an
+assertion rather than surface a candidate.
+
+**The content gate is new as of 2026-08-22, and its absence is why rules stopped
+at whichever language their author was working in.** A check that does not block
+a merge reaches exactly as far as somebody remembered to run it. `check_quotes.py`
+is deliberately still advisory — the citation convention was only just extended to
+English and predates most of both corpora, so gating it today would block every PR.
 
 This local gate is mandatory. The authenticated contract gate is authoritative in the PR:
 `podo-curriculum-validate` runs lemonboard's own validator automatically for every PR into
