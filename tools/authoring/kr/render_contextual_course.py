@@ -6,15 +6,79 @@ Japanese translation, teaching explanation, reaction and continuity hook lives
 in the manifest and is reviewed there.  The renderer only repeats those facts
 through the canonical 26-page interaction arc without hand-copying runtime
 markup sixty times.
+
+
+Manifest schema — the four sentence sets
+========================================
+
+A part (``p1`` / ``p2``) runs four closed sentence activities, and each one
+draws from its **own** four sentences.  Running read, reorder, fill and
+translate over a single list is four passes over the same four sentences: the
+learner has read the answer three times before being asked to produce it.
+
+Every row is the same compact triple everywhere — ``[ko, ja, yomi?]``, or the
+equivalent ``{"ko": …, "ja": …, "yomi": …}``.  Exactly four rows per list
+(``ux-philosophy.md``: "Four items in every closed sentence activity", and the
+page copy says 네 문장 out loud).  Two of the lists mark one extra thing inside
+``ko`` itself, so an author writes an ordinary sentence and adds one character:
+
+  ``readExamples``       plain sentences, read aloud            → ``p1-read``
+  ``reorderExamples``    ``|`` marks the chunk boundaries       → ``p1-reorder``
+  ``fillExamples``       ``[…]`` marks the blank                → ``p1-fill``
+  ``translateExamples``  plain sentences, produced from the ja  → ``p1-translate``
+
+reorderExamples — the author decides the chunks
+    ``"제 최애는 | 민지예요."`` → chips ``제 최애는`` / ``민지예요``, graded
+    against ``제 최애는 민지예요``.  Three or four chunks, never two, never
+    five: "Reorder four meaningful chunks, not four arbitrary fragments …
+    Decide the boundaries from the sentence."  Word count cannot decide this —
+    it split ``이 멤버는 혜인이에요`` into ``이`` / ``멤버는`` / ``혜인이에요``,
+    tearing a determiner off its noun.  The renderer never invents a boundary;
+    it only refuses a chunking that cannot rebuild its own answer.
+
+fillExamples — the blank holds the pattern, nothing else
+    ``"제 최애는 [민지예요]."`` → ``제 최애는 ▁▁▁.`` with ``민지예요`` as the
+    answer.  Exactly one ``[…]``, and something must survive outside it
+    ("Blanks target only the pattern being practiced").  When the deck carries
+    readings, the yomi marks the same span and the renderer masks it:
+    ``"チェ チェエヌン [ミンジイェヨ]"`` → ``チェ チェエヌン ＿＿＿``.
+
+All four fields are required.  There is no fallback to the old single
+``examples`` list — a silent fallback would let a part keep running four
+activities on one sentence set while looking fine.  ``--check`` reports which
+parts are still missing which field.
 """
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import pathlib
 import re
+from itertools import permutations, product
+
+import check_reorder
+
+
+# activities.js grades a reorder tray with norm(): whitespace and punctuation
+# stripped, then compared.  check_reorder.py already mirrors that exactly, so
+# the chunk validator borrows it instead of deriving a second copy that can
+# drift.
+norm = check_reorder.norm
+
+ACTIVITY_FIELDS = ('readExamples', 'reorderExamples', 'fillExamples', 'translateExamples')
+ROWS_PER_ACTIVITY = 4
+CHUNK_RANGE = (3, 4)
+CHUNK_SEP = '|'
+BLANK_RE = re.compile(r'\[([^\[\]]*)\]')
+TRAILING_PUNCT = re.compile(r'[.!?。？！]+$')
+BLANK_YOMI = '＿＿＿'
+
+
+class ManifestError(ValueError):
+    """A manifest the renderer refuses to guess at."""
 
 
 AVATAR = ('<span class="avatar icon"><svg aria-hidden="true" viewBox="0 0 24 24">'
@@ -150,12 +214,34 @@ def rule_visual(pattern: dict) -> str:
     ) + '</div>'
 
 
-def choose_activity(part: str, choices: list[dict]) -> str:
+def correct_slots(choices: list[dict], where: str) -> list[int]:
+    """Where the right answer sits in each row — not one column, not every other.
+
+    A learner reads a column before they read Korean.  The manifest authors the
+    options in a fixed order, so the placement is the renderer's to decide: it
+    picks one seeded pattern for the whole page, with the constant and the
+    strictly alternating patterns removed from the candidate set.
+    """
+    widths = [len(row['options']) for row in choices]
+    patterns = list(product(*(range(w) for w in widths)))
+    if len(choices) >= 3:
+        alternating = [tuple((start + i) % w for i, w in enumerate(widths)) for start in (0, 1)]
+        kept = [p for p in patterns if len(set(p)) > 1 and p not in alternating]
+        patterns = kept or patterns
+    seed = seed_of(where, *(str(row.get('prefix', '')) + '|'.join(row['options'])
+                            for row in choices))
+    return list(patterns[seed % len(patterns)])
+
+
+def choose_activity(part: str, choices: list[dict], where: str = '') -> str:
     rows = []
-    for i, row in enumerate(choices, 1):
+    slots = correct_slots(choices, where or part)
+    for i, (row, slot) in enumerate(zip(choices, slots), 1):
+        ordered = list(row['options'])
+        ordered.insert(slot, ordered.pop(row['correct']))
         options = []
-        for j, option in enumerate(row['options']):
-            correct = ' data-correct=""' if j == row['correct'] else ''
+        for j, option in enumerate(ordered):
+            correct = ' data-correct=""' if j == slot else ''
             options.append(f'<span class="opt"{correct} data-sync-option="{chr(97 + j)}">'
                            f'{esc(option)}</span>')
         joined = '<span class="sep">/</span>'.join(options)
@@ -182,45 +268,142 @@ def nuance_tip(item: dict) -> str:
             f'<span class="translation">{esc(second["ja"])}</span></div></div>')
 
 
-def chunks(sentence: str) -> list[str]:
-    words = re.sub(r'[.!?]$', '', sentence).split()
-    count = 4 if len(words) >= 7 else 3
-    count = min(count, len(words))
-    groups: list[str] = []
-    for i in range(count):
-        start = round(i * len(words) / count)
-        end = round((i + 1) * len(words) / count)
-        groups.append(' '.join(words[start:end]))
-    return [groups[-1], *groups[:-1]]
+def seed_of(*parts: str) -> int:
+    """A stable integer for a string, so re-rendering never churns the tree.
+
+    random without a seed would reshuffle every deck on every run; the diff
+    would then be unreviewable and a re-render could not be told apart from an
+    edit.  The sentence itself is the seed, so the same sentence always lands
+    the same way and a different sentence lands differently.
+    """
+    digest = hashlib.sha256(''.join(parts).encode('utf-8')).digest()
+    return int.from_bytes(digest, 'big')
 
 
-def activities(part: str, examples: list[dict]) -> tuple[str, str, str]:
-    reorder = []
-    fill = []
-    translate = []
-    for i, value in enumerate(examples, 1):
-        ko, ja, yomi = example_values(value)
-        answer = re.sub(r'[.!?]$', '', ko)
-        ko_chunks = chunks(ko)
+def scramble(items: list[str]) -> list[str]:
+    """Deterministically disorder chips — never identity, never last-to-front.
+
+    The old ``[groups[-1], *groups[:-1]]`` was a fixed rotation: 360 of 360
+    rows in these courses put the last chunk first, so "move the first chip to
+    the end" solved every row without reading any Korean.  Both of those
+    orderings are removed from the candidate set rather than merely made
+    unlikely, because with three chunks an unlucky hash would otherwise
+    reproduce the tell often enough to be learnable.
+    """
+    n = len(items)
+    identity = tuple(range(n))
+    rotation = (n - 1, *range(n - 1))
+    candidates = [p for p in permutations(range(n)) if p not in (identity, rotation)]
+    if not candidates:                      # unreachable: chunks are 3 or 4
+        return list(items)
+    picked = candidates[seed_of(*items) % len(candidates)]
+    return [items[i] for i in picked]
+
+
+def parse_chunks(ko: str, where: str) -> tuple[list[str], str]:
+    """Split an authored ``가 | 나 | 다`` row into chips plus its graded answer."""
+    answer = TRAILING_PUNCT.sub('', ko.replace(CHUNK_SEP, ' ')).strip()
+    answer = re.sub(r'\s+', ' ', answer)
+    pieces = [piece.strip() for piece in TRAILING_PUNCT.sub('', ko).split(CHUNK_SEP)]
+    if any(not piece for piece in pieces):
+        raise ManifestError(f'{where}: an empty chunk — check the "{CHUNK_SEP}" marks in {ko!r}')
+    low, high = CHUNK_RANGE
+    if not low <= len(pieces) <= high:
+        raise ManifestError(
+            f'{where}: {len(pieces)} chunks in {ko!r}; reorder takes {low}–{high} meaning units '
+            f'(mark them with "{CHUNK_SEP}")')
+    if norm(''.join(pieces)) != norm(answer):
+        raise ManifestError(f'{where}: chunks {pieces} do not rebuild {answer!r}')
+    return pieces, answer
+
+
+def parse_blank(ko: str, where: str) -> tuple[str, str, str]:
+    """Split an authored ``제 최애는 [민지예요].`` row into before / blank / after."""
+    found = BLANK_RE.findall(ko)
+    if len(found) != 1:
+        raise ManifestError(
+            f'{where}: {len(found)} blanks marked in {ko!r}; mark exactly one with [ ]')
+    blank = found[0].strip()
+    if not blank:
+        raise ManifestError(f'{where}: the blank is empty in {ko!r}')
+    before, after = BLANK_RE.split(ko, 1)[0], BLANK_RE.split(ko, 1)[2]
+    if not norm(before + after):
+        raise ManifestError(
+            f'{where}: the blank swallows the whole sentence in {ko!r}; '
+            'a blank targets only the pattern being practiced')
+    return before, blank, after
+
+
+def mask_blank(yomi: str | None, where: str) -> str | None:
+    """A reading supports the visible words, so the blank's reading is hidden."""
+    if not yomi:
+        return None
+    if len(BLANK_RE.findall(yomi)) != 1:
+        raise ManifestError(
+            f'{where}: the yomi {yomi!r} must mark the same blank with [ ] '
+            f'(it is rendered as {BLANK_YOMI})')
+    return BLANK_RE.sub(BLANK_YOMI, yomi, count=1)
+
+
+def rows_of(part: dict, field: str, where: str) -> list:
+    rows = part.get(field)
+    if rows is None:
+        raise ManifestError(f'{where}: missing {field}')
+    if not isinstance(rows, list) or len(rows) != ROWS_PER_ACTIVITY:
+        raise ManifestError(
+            f'{where}: {field} holds {len(rows) if isinstance(rows, list) else "no"} rows; '
+            f'{ROWS_PER_ACTIVITY} are required')
+    return rows
+
+
+def reorder_activity(part: str, rows: list, where: str) -> str:
+    blocks = []
+    for i, value in enumerate(rows, 1):
+        ko, ja, _ = example_values(value)
+        pieces, answer = parse_chunks(ko, f'{where} reorderExamples[{i}]')
         chips = ''.join(
             f'<span class="choice" data-item-id="{part}-o{i}-{j}">{esc(chunk)}</span>'
-            for j, chunk in enumerate(ko_chunks, 1)
+            for j, chunk in enumerate(scramble(pieces), 1)
         )
-        reorder.append(f'<div class="task-block"><div class="answer-box small">'
-                       f'<span class="answer-label">{esc(ja)}</span>'
-                       f'{build_zone(f"{part}-order-{i}", answer)}</div>{chips}</div>')
-        fill.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">'
-                    f'{esc(ja)}</span><span class="answer-fill"><span class="korean">'
-                    f'{slot_input(f"{part}-fill-{i}", ko)}</span></span>'
-                    f'{yomi_span("＿＿＿" if yomi else None)}'
-                    f'</div></div>')
-        translate.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">'
-                         f'{esc(ja)}</span>{answer_input(f"{part}-translate-{i}", ko)}'
-                         f'</div></div>')
-    return ''.join(reorder), ''.join(fill), ''.join(translate)
+        blocks.append(f'<div class="task-block"><div class="answer-box small">'
+                      f'<span class="answer-label">{esc(ja)}</span>'
+                      f'{build_zone(f"{part}-order-{i}", answer)}</div>{chips}</div>')
+    return ''.join(blocks)
 
 
-def render_lesson(item: dict, course_name: str, final: bool) -> str:
+def fill_activity(part: str, rows: list, where: str) -> str:
+    blocks = []
+    for i, value in enumerate(rows, 1):
+        ko, ja, yomi = example_values(value)
+        spot = f'{where} fillExamples[{i}]'
+        before, blank, after = parse_blank(ko, spot)
+        reading = yomi_span(mask_blank(yomi, spot))
+        blocks.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">'
+                      f'{esc(ja)}</span><span class="answer-fill"><span class="korean">'
+                      f'{esc(before)}{slot_input(f"{part}-fill-{i}", blank)}{esc(after)}'
+                      f'</span>{reading}</span></div></div>')
+    return ''.join(blocks)
+
+
+def translate_activity(part: str, rows: list) -> str:
+    blocks = []
+    for i, value in enumerate(rows, 1):
+        ko, ja, _ = example_values(value)
+        blocks.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">'
+                      f'{esc(ja)}</span>{answer_input(f"{part}-translate-{i}", ko)}'
+                      f'</div></div>')
+    return ''.join(blocks)
+
+
+def activities(part: str, data: dict, where: str) -> tuple[str, str, str]:
+    """Reorder, fill and translate — each from its own authored sentence set."""
+    return (reorder_activity(part, rows_of(data, 'reorderExamples', where), where),
+            fill_activity(part, rows_of(data, 'fillExamples', where), where),
+            translate_activity(part, rows_of(data, 'translateExamples', where)))
+
+
+def render_lesson(item: dict, course_name: str, final: bool, where: str = '') -> str:
+    where = where or item['slug']
     p1, p2 = item['p1'], item['p2']
     scene_role = item['incoming']['role']
     p1_role = p1.get('responseRole', scene_role)
@@ -242,8 +425,8 @@ def render_lesson(item: dict, course_name: str, final: bool) -> str:
         turn('나', p2['line'], p2['ja'], slot='p3-complete-2'),
         turn(p2_role, p2['responseKo'], p2['responseJa']),
     ])
-    p1_reorder, p1_fill, p1_translate = activities('p1', p1['examples'])
-    p2_reorder, p2_fill, p2_translate = activities('p2', p2['examples'])
+    p1_reorder, p1_fill, p1_translate = activities('p1', p1, f'{where} p1')
+    p2_reorder, p2_fill, p2_translate = activities('p2', p2, f'{where} p2')
     pages = [
         episode_card(item, course_name),
         page('scene', '오늘의 장면', '今日のワンシーン', f'<div class="dialogue">{scene}</div>',
@@ -269,7 +452,7 @@ def render_lesson(item: dict, course_name: str, final: bool) -> str:
              f'<span class="korean">{esc(p1["line"])}</span>'
              f'{yomi_span(p1.get("yomi"))}'
              f'<span class="translation">{esc(p1["ja"])}</span></div>'),
-        page('p1-read', '따라 읽기', '声に出して練習', model_list(p1['examples']),
+        page('p1-read', '따라 읽기', '声に出して練習', model_list(rows_of(p1, 'readExamples', f'{where} p1')),
              ('네 문장을 천천히 따라 읽어 보세요.', '4つの文をゆっくり読んでください。')),
         page('p1-rule', '모양 확인', '形を確認',
              rule_visual(p1),
@@ -277,7 +460,7 @@ def render_lesson(item: dict, course_name: str, final: bool) -> str:
     ]
     if p1.get('choices'):
         pages.append(page('p1-choose', '맞는 형태 고르기', '正しい形を選ぼう',
-                          f'<div class="choose-list">{choose_activity("p1", p1["choices"])}</div>',
+                          f'<div class="choose-list">{choose_activity("p1", p1["choices"], f"{where} p1")}</div>',
                           ('배운 형태 변화에 맞는 쪽을 골라 보세요.', '習った形の変化に合うほうを選びましょう。')))
     pages.extend([
         page('p1-reorder', '문장 만들기', '文を組み立てよう', p1_reorder,
@@ -297,7 +480,7 @@ def render_lesson(item: dict, course_name: str, final: bool) -> str:
              f'<span class="korean">{esc(p2["line"])}</span>'
              f'{yomi_span(p2.get("yomi"))}'
              f'<span class="translation">{esc(p2["ja"])}</span></div>'),
-        page('p2-read', '따라 읽기', '声に出して練習', model_list(p2['examples']),
+        page('p2-read', '따라 읽기', '声に出して練習', model_list(rows_of(p2, 'readExamples', f'{where} p2')),
              ('네 문장을 천천히 따라 읽어 보세요.', '4つの文をゆっくり読んでください。')),
         page('p2-rule', '모양 확인', '形を確認',
              rule_visual(p2),
@@ -305,7 +488,7 @@ def render_lesson(item: dict, course_name: str, final: bool) -> str:
     ])
     if p2.get('choices'):
         pages.append(page('p2-choose', '맞는 형태 고르기', '正しい形を選ぼう',
-                          f'<div class="choose-list">{choose_activity("p2", p2["choices"])}</div>',
+                          f'<div class="choose-list">{choose_activity("p2", p2["choices"], f"{where} p2")}</div>',
                           ('배운 형태 변화에 맞는 쪽을 골라 보세요.', '習った形の変化に合うほうを選びましょう。')))
     pages.extend([
         page('p2-reorder', '문장 만들기', '文を組み立てよう', p2_reorder,
@@ -363,21 +546,100 @@ def render_lesson(item: dict, course_name: str, final: bool) -> str:
     return '\n    '.join(pages)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument('manifest', type=pathlib.Path)
+REPO = pathlib.Path(__file__).resolve().parents[3]
+KR = REPO / "sandbox/drafts/kr"
+TOC = KR / "tracks/3-contextual-korean/toc"
+
+
+def part_report(part: dict, spot: str) -> list[str]:
+    """Every reason this part cannot be rendered, in one pass."""
+    missing: list[str] = []
+    problems: list[str] = []
+    for field in ACTIVITY_FIELDS:
+        try:
+            rows = rows_of(part, field, spot)
+        except ManifestError as exc:
+            (missing.append(field) if part.get(field) is None else problems.append(str(exc)))
+            continue
+        for i, value in enumerate(rows, 1):
+            place = f'{spot} {field}[{i}]'
+            try:
+                ko, _ja, yomi = example_values(value)
+                if field == 'reorderExamples':
+                    parse_chunks(ko, place)
+                elif field == 'fillExamples':
+                    parse_blank(ko, place)
+                    mask_blank(yomi, place)
+            except ManifestError as exc:
+                problems.append(str(exc))
+            except (KeyError, IndexError, TypeError) as exc:
+                problems.append(f'{place}: not a [ko, ja, yomi?] row ({exc})')
+    if missing:
+        problems.insert(0, f'{spot}: missing {", ".join(missing)}')
+    return problems
+
+
+def manifest_report(data: dict) -> tuple[int, list[str]]:
+    parts = 0
+    problems: list[str] = []
+    for item in data['lessons']:
+        for key in ('p1', 'p2'):
+            parts += 1
+            problems += part_report(item.get(key) or {}, f'{item["slug"]} {key}')
+    return parts, problems
+
+
+def check(paths: list[pathlib.Path]) -> int:
+    """Report which manifests still lack the four authored sentence sets."""
+    parts = ready = 0
+    for path in paths:
+        data = json.loads(path.read_text())
+        found, problems = manifest_report(data)
+        blocked = {line.split(':')[0] for line in problems}
+        parts += found
+        ready += found - len(blocked)
+        print(f'{data["course"]} · {found} parts · {found - len(blocked)} ready')
+        for line in problems:
+            print(f'  {line}')
+    print(f'\n{len(paths)} manifest(s) · {parts} parts · {ready} ready · {parts - ready} to author')
+    return 1 if ready < parts else 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('manifest', nargs='*', type=pathlib.Path,
+                        help='authoring-manifest.json files (default with --check: all six)')
+    parser.add_argument('--check', action='store_true',
+                        help='report the parts still missing a sentence set; write nothing')
     args = parser.parse_args()
-    data = json.loads(args.manifest.read_text())
-    root = pathlib.Path(__file__).resolve().parents[3] / "sandbox/drafts/kr"
-    course = root / 'tracks/3-contextual-korean/courses' / data['course']
-    for index, item in enumerate(data['lessons']):
+    paths = args.manifest or sorted(TOC.glob('*/authoring-manifest.json'))
+    if args.check:
+        return check(paths)
+    if not args.manifest:
+        parser.error('name a manifest to render (--check may be run over all of them)')
+    for path in paths:
+        render(json.loads(path.read_text()))
+    return 0
+
+
+def render(data: dict) -> None:
+    course = KR / 'tracks/3-contextual-korean/courses' / data['course']
+    # Refuse the whole course before writing any of it — half a course rendered
+    # from a half-authored manifest is worse than a course that did not move.
+    parts, problems = manifest_report(data)
+    if problems:
+        raise ManifestError(f'{data["course"]}: {len(problems)} problem(s) in {parts} parts\n  '
+                            + '\n  '.join(problems))
+    for item in data['lessons']:
         item.setdefault('learnerRoleJa', data.get('learnerRoleJa', 'この場面で話すあなた'))
         item.setdefault('partnerRoleJa', data.get('partnerRoleJa', '会話の相手'))
         target = course / 'lessons' / item['slug'] / 'lesson.html'
         source = target.read_text()
         start = source.index('  <div class="phone">') + len('  <div class="phone">')
         end = source.index('\n  </div>', start)
-        authored = '\n    ' + render_lesson(item, data['courseTitleKo'], item['number'] == 10) + '\n'
+        authored = '\n    ' + render_lesson(item, data['courseTitleKo'], item['number'] == 10,
+                                                f'{data["course"]} {item["slug"]}') + '\n'
         rendered = source[:start] + authored + source[end:]
         yomi_script = '<script src="../../../../../../runtime/js/yomi.js"></script>'
         if 'class="yomi"' in authored and yomi_script not in rendered:
@@ -387,4 +649,7 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        raise SystemExit(main())
+    except ManifestError as failure:
+        raise SystemExit(f'✗ {failure}')
