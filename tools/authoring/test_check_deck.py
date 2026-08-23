@@ -1267,3 +1267,33 @@ class DeckCheckTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExemplarFrameFixedMarkerTests(unittest.TestCase):
+    """A page may declare its frame is honestly fixed — deliberately, and on the record."""
+
+    def page(self, marker=""):
+        rows = "".join(
+            f'<div class="model-line"><span class="korean">저는 {noun} 아니에요.</span></div>'
+            for noun in ("회사원이", "대학생이", "가수가", "기자가")
+        )
+        return {"p1-read": f'data-page-id="p1-read"{marker}>{rows}'}
+
+    def test_a_one_word_swap_fails_without_the_marker(self):
+        errors = check_deck.exemplar_variation_issues(self.page(), level="초급")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("differ in one word only", errors[0])
+
+    def test_the_marker_clears_it(self):
+        errors = check_deck.exemplar_variation_issues(
+            self.page(' data-exemplar-review="frame-fixed"'), level="초급"
+        )
+        self.assertEqual(errors, [])
+
+    def test_the_marker_is_exact_and_a_near_miss_does_not_count(self):
+        for near in (' data-exemplar-review="frame fixed"',
+                     ' data-exemplar-review=""',
+                     ' data-exemplar-review'):
+            self.assertEqual(
+                len(check_deck.exemplar_variation_issues(self.page(near), level="초급")), 1, near
+            )

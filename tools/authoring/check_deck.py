@@ -694,6 +694,15 @@ def exemplar_variation_issues(page_chunks, *, level):
         varying = exemplar_varying_regions(sentences)
         if max(len(span) for span in varying) > 1:
             continue
+        # A page may declare that its frame is honestly fixed, the same way a
+        # three-chip reorder declares `data-chunk-review="meaningful"`. The case
+        # this exists for is a first-course lesson whose only available subject
+        # is the first person: varying the frame there would spend grammar a
+        # later lesson owns, and the noun swap really is the lesson. Writing the
+        # marker is the author saying so on the record — it is not a way to make
+        # the check quiet, and a page that could vary its frame must.
+        if 'data-exemplar-review="frame-fixed"' in chunk:
+            continue
         swapped = ", ".join(" ".join(span) or "—" for span in varying)
         errors.append(
             f"{page_id}: the exemplars differ in one word only ({swapped}) — "
