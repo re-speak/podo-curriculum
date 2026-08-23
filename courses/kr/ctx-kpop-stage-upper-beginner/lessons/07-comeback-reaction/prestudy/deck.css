@@ -1,2 +1,26 @@
-/* Deck-specific overrides. Shared runtime comes from the CDN
-   pinned in curriculum.yaml (spec.sharedRuntime). */
+/* 티칭 모드 스위치(페이저의 T)를 감춘다. 예습에는 튜터가 없고, 다른 트랙에서
+   이 스위치는 정답을 비춰 주는 물건이다 — 학습자 화면에 있을 이유가 없다.
+   페이저는 런타임이 그리므로 마크업에서 지울 수가 없어 CSS 로 덮는다. */
+.pg-teach { display: none !important; }
+/* 예습 덱 전용 스타일. `make_prestudy.py` 가 덱 옆에 복사하고 링크를 건다.
+   파일럿 동안만 여기 있고, 확정되면 shared/css 로 옮겨 CDN 태그에 실린다
+   (AGENTS.md: 덱은 per-deck CSS 를 갖지 않는다).
+
+   지금 하는 일은 하나뿐이다. 예습은 수업 덱과 **같아 보여야** 하므로,
+   그 밖에는 아무것도 건드리지 않는다.
+
+   소리 관련 규칙(.has-say / .say)은 여기 있었다가 걷어냈다 — 음성은 나중에
+   따로 붙인다. 자리를 심는 도구는 `mark_prestudy_audio.py` 에 그대로 있고,
+   그때 이 파일에 규칙도 같이 돌아온다. */
+
+/* 튜터의 대사(.ko)를 걷어내면 파란 상자에 일본어만 남는다. 그런데 그 일본어는
+   원래 «보조» 로 조판돼 있어(작고 흐림), 유일한 줄이 되고도 부제처럼 읽힌다.
+   그 자리에 올려 준다 — 값은 시스템이 이미 쓰는 일본어 우선 조판과 같다.
+   `.needs-jp` 클래스 자체는 쓰지 않는다: 그건 체험 덱의 세일즈 장용이라
+   라임 배경이 딸려 오고, 라임은 브랜드 크롬만 뜻해야 한다. */
+.section-subtitle .ja {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
